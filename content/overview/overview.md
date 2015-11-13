@@ -1,10 +1,7 @@
 
 
-# Microsoft Graph API overview 
-
->  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
-
-<!--**In this article**
+<!--# Microsoft Graph API overview 
+**In this article**
   
 -	[Overview of Microsoft Graph API](#msg_what_is_unified_api) 
 -	[Common Queries](#msg_queries) 
@@ -13,7 +10,7 @@
 
 <a name="msg_what_is_unified_api"> </a>-->
 
-## Overview of Microsoft Graph API
+# Overview of Microsoft Graph API
 
 Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (**https://graph.microsoft.com**). Using the Microsoft Graph API, you can turn your formerly difficult or complex queries into simple navigations. 
  
@@ -81,6 +78,7 @@ The following diagram shows the Microsoft Graph API developer stack and how it w
 
 ![Microsoft Graph API developer stack.](./images/MicrosoftGraph_DevStack.png)
 
+>  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
 
 <!--<a name="msg_how_learn_unified_api"> </a> 
 ## Learn more about Microsoft Graph API development
