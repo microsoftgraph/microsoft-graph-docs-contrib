@@ -6,7 +6,7 @@ Microsoft Graph provides several optional query parameters that you can use to s
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities.|
 |$expand|string|Comma-separated list of relationships to expand and include in the response.  |
-|$filter|string|Filter string that lets you filter the response based on a set of criteria.|
+|$filter|string|Filters the response based on a set of criteria.|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 |$select|string|Comma-separated list of properties to include in the response.|
 |$skip|int|The number of items to skip in a result set.|
@@ -77,6 +77,15 @@ For example, to return the contents of the root of a drive, ordered largest to s
 GET https://graph.microsoft.com/v1.0/me/drive/items/root/children?orderby=size%20desc
 ``` 
  >  **Note**: **$orderby** cannot be combined with $filter expressions.
+
+### $filter
+You use **$filter** to filter the response data based on a set of criteria.
+
+### $top
+
+### $skip
+
+### $skipToken
 
 ### $count
 The count of related entities can be requested by specifying the **$count** query option.
