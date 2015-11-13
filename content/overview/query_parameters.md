@@ -87,12 +87,13 @@ GET https://graph.microsoft.com/v1.0/me/joinedGroups?orderby=displayName%20desc
 To filter the response data based on a set of criteria, use the **$filter** query option.
 
 ### $top
-You can use **$top** to specify the maximum number of items to return in a result set.
+To specify the maximum number of items to return in a result set, use the **$top** query option.
 
 ### $skip
-To set the number of items to skip before retrieving items in a collection, use  the **$skipr** query option.. 
+To set the number of items to skip before retrieving items in a collection, use  the **$skip** query option. 
 
 ### $skipToken
+To page and specify the next set of results to return, use  the **$skipToken** query option.
 
 ### $count
 The count of related entities can be requested by specifying the **$count** query option.
