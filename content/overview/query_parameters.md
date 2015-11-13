@@ -4,7 +4,7 @@ Microsoft Graph provides several optional query parameters that you can use to s
 
 |Name|Value|Description|
 |:---------------|:--------|:-------|
-|$count|none|The count of related entities can be requested by specifying the $count query option.|
+|$count|none|The count of related entities.|
 |$expand|string|Comma-separated list of relationships to expand and include in the response.  |
 |$filter|string|Filter string that lets you filter the response based on a set of criteria.|
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
@@ -77,3 +77,6 @@ For example, to return the contents of the root of a drive, ordered largest to s
 GET https://graph.microsoft.com/v1.0/me/drive/items/root/children?orderby=size%20desc
 ``` 
  >  **Note**: **$orderby** cannot be combined with $filter expressions.
+
+### $count
+The count of related entities can be requested by specifying the **$count** query option.
