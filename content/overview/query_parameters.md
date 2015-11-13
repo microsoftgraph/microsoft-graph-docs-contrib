@@ -15,8 +15,7 @@ Microsoft Graph provides several optional query parameters that you can use to s
 
 
 ### $select
-You can use the **$select** query string parameter to provide a comma-separated
-list of properties to return.  For example, when retrieving your messages, you might want to select that only the **from** and **subject** properties of messages are returned.
+To specify a subset of properties to return, use the **$select** query option. For example, when retrieving your messages, you might want to select that only the **from** and **subject** properties of messages are returned.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
@@ -73,7 +72,7 @@ The request returns the collection items, with the children collection expanded.
 
 ### $orderby
 
-You can use the **$orderby** query string to control the sort order of the items returned from the API. 
+To specify the sort order of the items returned from the API, use the **$orderby** query option. 
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example,
 `?orderby=name%20desc`.
 
@@ -85,11 +84,13 @@ GET https://graph.microsoft.com/v1.0/me/joinedGroups?orderby=displayName%20desc
  >  **Note**: **$orderby** cannot be combined with $filter expressions.
 
 ### $filter
-You use **$filter** to filter the response data based on a set of criteria.
+To filter the response data based on a set of criteria, use the **$filter** query option.
 
 ### $top
+You can use **$top** to specify the maximum number of items to return in a result set.
 
 ### $skip
+To set the number of items to skip before retrieving items in a collection, use  the **$skipr** query option.. 
 
 ### $skipToken
 
