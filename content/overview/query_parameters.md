@@ -16,7 +16,13 @@ Microsoft Graph provides several optional query parameters that you can use to s
 
 ### $select
 You can use the **$select** query string parameter to provide a comma-separated
-list of properties to return.  For example, when retrieving the children of an item on a drive, you want to select that only the **name** and **size** properties of items are returned.
+list of properties to return.  For example, when retrieving your messages, you might want to select that only the **from** and **subject** properties of messages are returned.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
+```
+
+<!--For example, when retrieving the children of an item on a drive, you want to select that only the **name** and **size** properties of items are returned.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name,size
@@ -25,7 +31,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name,size
 By submitting the request with the `$select=name,size` query string, the objects
 in the response will only have those property values included. 
 
-<!--
+
 ```json
 {
   "value": [
