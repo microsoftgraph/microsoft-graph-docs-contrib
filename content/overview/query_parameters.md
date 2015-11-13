@@ -77,10 +77,10 @@ You can use the **$orderby** query string to control the sort order of the items
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example,
 `?orderby=name%20desc`.
 
-For example, to return the contents of the root of a drive, ordered largest to smallest, the syntax is as follows.
+For example, to return the groups you belong to, ordered by their display name, the syntax is as follows.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/root/children?orderby=size%20desc
+GET https://graph.microsoft.com/v1.0/me/joinedGroups?orderby=displayName%20desc
 ``` 
  >  **Note**: **$orderby** cannot be combined with $filter expressions.
 
