@@ -61,9 +61,8 @@ The request returns the collection items, with the children collection expanded.
 
 >  **Note**: The maximum number of returned objects for a request is 20.
 
+
  <!--The following shows a sample result that is returned in the response body.
-
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
