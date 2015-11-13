@@ -36,7 +36,7 @@ The following are some exqmples of common queries using Microsoft Graph API.
 |   GET my photo	 | `https://graph.microsoft.com/v1.0/me/userPhoto/$value` |
 |   GET my mail |	`https://graph.microsoft.com/v1.0/me/messages` |
 |   GET my manager	| `https://graph.microsoft.com/v1.0/me/manager` |
-|   GET last user to modify file x |	`https://graph.microsoft.com/v1.0/me/drive/root/items/<fileX-id>/lastModifiedByUsere` |
+|   GET last user to modify file x |	`https://graph.microsoft.com/v1.0/me/drive/root/items/<fileX-id>/lastModifiedByUser` |
 |   GET unified groups I’m member of|	`https://graph.microsoft.com/v1.0/me/joinedGroups` |
 |   GET users in my organization	 | `https://graph.microsoft.com/v1.0/users` |
 |   GET group Y conversations |	`https://graph.microsoft.com/v1.0/groups/<groupY-id>/conversations` |
