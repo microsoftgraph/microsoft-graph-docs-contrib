@@ -1,4 +1,4 @@
-# Microsoft Graph API error  response and resource type 
+# Microsoft Graph API error response and resource type 
 
 <!--In this article:
   

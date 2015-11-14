@@ -93,10 +93,10 @@ Using the Microsoft Graph API, you don't have to first discover service endpoint
 
 |   **Operation**                  |  **API**                          |  **Service endpoint** |
 |:-----------------------------|:-----------------------------------------|:-----------------|
-| Discover service endpoints for Office 365 API                |     `Microsoft Graph API`           | Not needed |
-| Get users           |     `Microsoft Graph API` | _https://_**graph.microsoft.com**_/v1.0/contoso.onmicrosoft.com/users_ |
-| Get message collection from the Inbox       |     `Microsoft Graph API`           | _https://_**graph.microsoft.com**_/v1.0/me/messages_  |
-| Get Joe's files   |     `Microsoft Graph API `  | _https://_**graph.microsoft.com**_/v1.0/me/drive/root/children_ |
+| Discover service endpoints for Office 365 API                |     `Microsoft Graph`           | Not needed |
+| Get users           |     `Microsoft Graph` | _https://_**graph.microsoft.com**_/v1.0/contoso.onmicrosoft.com/users_ |
+| Get message collection from the Inbox       |     `Microsoft Graph`           | _https://_**graph.microsoft.com**_/v1.0/me/messages_  |
+| Get Joe's files   |     `Microsoft Graph `  | _https://_**graph.microsoft.com**_/v1.0/me/drive/root/children_ |
 
 <!--| Get TrendingAround, for the current authenticated user           |     `Microsoft Graph API`                     | _https://_**graph.microsoft.com**_/beta/me/trendingaround_   |
 
@@ -126,7 +126,6 @@ Some of the benefits of using Microsoft Graph API  are as follows:
 -	Development tooling and resources for all developers. You can develop using any platform and language 
 -	Mobile development for all platforms using open technologies  
 -	No need for any specialized Exchange, SharePoint, or Azure AD knowledge to access Microsoft Graph API entities
-
 
 <!---<a name="msg_v2auth"> </a>-->
 
