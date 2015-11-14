@@ -190,7 +190,7 @@ The second task is to construct a valid JSON Message object and send it to the *
 
                 var emailBody = new StringContent(postBody, System.Text.Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await client.PostAsync(new Uri("https://graph.microsoft.com/beta/me/SendMail"), emailBody);
+                HttpResponseMessage response = await client.PostAsync(new Uri("https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail"), emailBody);
 
                 if ( !response.IsSuccessStatusCode)
                 {
