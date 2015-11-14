@@ -1,4 +1,4 @@
-# Microsoft Graph API release notes and known issues
+# Microsoft Graph release notes and known issues
 
 
 This article provides information about the new features for developers that are available in the November 2015 release of the Microsoft Graph API, and any known issues that you might want to be aware of. 
@@ -31,12 +31,12 @@ The following Microsoft Graph API preview features are available:
 * Webhooks
 * Insights and relationships: Trending Around and Working With
 * Groups instant access to content after creation
-* v2.0 app authentication model 
+* Converged authentication model for personal accounts as well as work and school accounts
 
 
-## Microsoft Graph API known issues
+## Microsoft Graph known issues
 
-The following are known issues with the Microsoft Graph API.
+The following are known issues with the Microsoft Graph.
 
 <!--## Additional resources 
 

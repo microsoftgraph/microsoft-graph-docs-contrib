@@ -76,28 +76,27 @@ To specify the sort order of the items returned from the API, use the **$orderby
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example,
 `?orderby=name%20desc`.
 
-For example, to return the groups you belong to, ordered by their display name, the syntax is as follows.
+For example, to return the users in the organization ordered by their display name, the syntax is as follows:
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/joinedGroups?$orderby=displayName
+GET https://graph.microsoft.com/v1.0/users?$orderBy=displayName
 ``` 
  >  **Note**: **$orderby** cannot be combined with $filter expressions.
 
 ### $filter
 To filter the response data based on a set of criteria, use the **$filter** query option.
-For example, to return users in an organization filter by display name that starts with "Garth", the syntax is as follows.
+For example, to return users in the organization filter by display name that starts with "Garth", the syntax is as follows.
 
 ```http
-GET https://graph.microsoft.com/v1.0/contoso.com/users?$filter=startswith(displayName,'Garth')
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Garth')
 ```
 
 ### $top
 To specify the maximum number of items to return in a result set, use the **$top** query option. The **$top** query option identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query option. 
-
-For example, to return the first five people you work with, the syntax is as follows.
+For example, to return the first five messages in the user's mailbox, the syntax is as follows:
 
 ```http
-GET https://graph.microsoft.com/beta/me/workingwith?$top=5
+GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
 ### $skip
@@ -105,7 +104,7 @@ To set the number of items to skip before retrieving items in a collection, use 
 For example, to return events sorted by date created, and starting with the 21st event, the syntax is as follows.
 
 ```http
-GET  https://graph.microsoft.com/v1.0/me/events?orderby=CreatedDateTime&$skip=20
+GET  https://graph.microsoft.com/v1.0/me?$orderby=createdDateTime&$skip=20
 ```
 
 ### $skipToken
@@ -116,13 +115,13 @@ Since the value of a **$skipToken** query option identifies an index into a coll
 In some response, you'll see an `@odata.nextLink` value. Some of them include a **$skipToken** value.  The **$skipToken** value is like a marker that tells the service where to resume for the next set of results.  The following is an example of a `@odata.nextLink` value from a response.
 
 ```
-"@odata.nextLink": "https://graph.microsoft.com/v1.0/contoso.com/users?$orderby=displayName&$top=3&$skiptoken=X%2783630372100000000000000000000%27"
+"@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$orderby=displayName&$top=3&$skiptoken=X%2783630372100000000000000000000%27"
 ```
 
 For example, to return the next set of users in your organization, limiting the number to 3 at a time in the results, the syntax is as follows.
 
 ```http
-GET  https://graph.microsoft.com/v1.0/contoso.com/users?$orderby=displayName&$top=3&$skiptoken=X%2783630372100000000000000000000%27
+GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$top=3&$skiptoken=X%2783630372100000000000000000000%27
 ```
 
 ### $count

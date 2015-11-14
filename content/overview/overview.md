@@ -10,13 +10,13 @@
 
 <a name="msg_what_is_unified_api"> </a>-->
 
-# Overview of Microsoft Graph API
+# Overview of Microsoft Graph
 
 Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (**https://graph.microsoft.com**). Using the Microsoft Graph API, you can turn your formerly difficult or complex queries into simple navigations. 
  
 The API gives you:
 
-- A unified developer experience to access services across Office 365 and Microsoft data
+- A unified developer experience to access services across Office 365 and Microsoft cloud
 - Seamless navigation between entities and and the relationships among them 
 - Aggregated data from multiple services in a single response
 - One token to access all resources
@@ -74,7 +74,7 @@ Now, you can use the use Microsoft Graph API to perform the same complex operati
 -	acquire and manage separate access token for each service
 -	deal with siloed services and varying data model.  Currently each service defines entities independent of each other -->
 
-The following diagram shows the Microsoft Graph API developer stack and how it works.
+The following diagram shows the Microsoft Graph developer stack and how it works.
 
 ![Microsoft Graph API developer stack.](./images/MicrosoftGraph_DevStack.png)
 
