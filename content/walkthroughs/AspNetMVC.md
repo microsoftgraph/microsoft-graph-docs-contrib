@@ -1,6 +1,6 @@
 # Call the Microsoft Graph in an ASP.NET MVC app 
 
-In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. This topic won't create an app from scratch. We use code from [Office 365 ASP.NET MVC Connect sample using Microsoft Graph API](https://github.com/OfficeDev/O365-AspNetMVC-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. This topic won't create an app from scratch. We use code from [Office 365 ASP.NET MVC Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-AspNetMVC-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
 
 The following is a screenshot of the send mail page.
 
@@ -125,7 +125,7 @@ After the user signs-in, the Connect sample shows the user an activity for sendi
 
 For example the UnifiedApiHelper.cs file contains the code that:
 
-1)  Get information about the current login user.  The ``GetUserInfoAsync`` method takes a single argument (access token value) to make a call to **https://graph.microsoft.com/beta/me** to get information about the current login user.
+1)  Get information about the current login user.  The ``GetUserInfoAsync`` method takes a single argument (access token value) to make a call to **https://graph.microsoft.com/v1.0/me** to get information about the current login user.
 
  ```c#
  
@@ -160,7 +160,7 @@ For example the UnifiedApiHelper.cs file contains the code that:
 
 
 
-2)  Construct and send the message that the logged in user wants to send via email. The ``SendMessageAsync`` method constructs and sends a POST request to the **https://graph.microsoft.com/beta/me/sendmail** resource URL, using the access token value as one of the arguments. 
+2)  Construct and send the message that the logged in user wants to send via email. The ``SendMessageAsync`` method constructs and sends a POST request to the **https://graph.microsoft.com/v1.0/me/microsoft.graph.sendmail** resource URL, using the access token value as one of the arguments. 
 
 
 ```c#
@@ -258,7 +258,7 @@ The ``CreateEmailObject`` method creates the email object in the required reques
 
 ```
 
-Another task is to construct a valid JSON message string and send it to the ``me/sendmail`` endpoint using an HTTP POST request. Since the email body is to be sent as an HTML document, the request sets the ``ContentType`` value of the email message to HTML, and encodes the content as JSON for the HTTP POST request. The UnifiedApiMessageModels.cs file contains the data or schema contracts between this app and the Office 365 unified API server. 
+Another task is to construct a valid JSON message string and send it to the ``https://graph.microsoft.com/v1.0/me/microsoft.graph.sendmail`` endpoint using an HTTP POST request. Since the email body is to be sent as an HTML document, the request sets the ``ContentType`` value of the email message to HTML, and encodes the content as JSON for the HTTP POST request. The UnifiedApiMessageModels.cs file contains the data or schema contracts between this app and the Office 365 unified API server. 
  
 
 
