@@ -1,6 +1,6 @@
 # Call the Microsoft Graph in a PHP app 
 
-In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph API. We use code from the [Office 365 PHP Connect sample using Microsoft Graph API](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph API. We use code from the [Office 365 PHP Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
 
 ![Office 365 PHP Connect sample screenshot](./images/web-screenshot.png)
 
@@ -127,7 +127,7 @@ The Connect sample sends an email using the **sendMail** endpoint in the Microso
 ```php
 // Send the email request to the sendmail endpoint, 
 // which is in the following URI:
-// https://graph.microsoft.com/beta/me/sendMail
+// https://graph.microsoft.com/v1.0/me/microsoft.graph.sendMail
 // Note that the access token is attached in the Authorization header
 RequestManager::sendPostRequest(
     Constants::RESOURCE_ID . Constants::SENDMAIL_ENDPOINT,
