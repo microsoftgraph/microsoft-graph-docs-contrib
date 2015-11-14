@@ -109,7 +109,7 @@ def get_token_from_code(auth_code, redirect_uri):
 
 With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must append the access code to the **Authorization** header of each request.
 
-The Connect sample sends an email using the ```me/sendMail``` endpoint in the Microsoft Graph API. The code is in the ```call_sendMail_endpoint``` function in the [*connect/graph_service.py*](https://github.com/OfficeDev/O365-Python-Unified-API-Connect/blob/master/connect/graph_service.py) file. This is the code that shows how to append the access code to the Authorization header.
+The Connect sample sends an email using the ```me/microsoft.graph.sendMail``` endpoint in the Microsoft Graph API. The code is in the ```call_sendMail_endpoint``` function in the [*connect/graph_service.py*](https://github.com/OfficeDev/O365-Python-Unified-API-Connect/blob/master/connect/graph_service.py) file. This is the code that shows how to append the access code to the Authorization header.
 
 ```python
 # Set request headers.
