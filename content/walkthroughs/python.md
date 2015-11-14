@@ -1,4 +1,4 @@
-# Call the Microsoft Graph API in a Python app 
+# Call the Microsoft Graph in a Python app 
 
 In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. We use code from the [Office 365 Python Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Python-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
 
@@ -24,9 +24,10 @@ To call the Microsoft Graph API, your Python app must complete the following tas
 <!--<a name="register"></a>-->
 ## Register the application in Azure Active Directory
 
-Before you can start working with Office 365, you need to register your application in Azure Active Directory and set permissions to use Microsoft Graph services.
+Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
+With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
 
-See [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions, and keep in mind the following details.
+Alternatively, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions on how to manually register the app, keep in mind the following details:
 
 * Make sure to specify http://127.0.0.1:8000/connect/get_token/ as the **Sign-on URL**.
 * After you register the application, [configure the **Delegated permissions**](https://github.com/OfficeDev/O365-Python-Unified-API-Connect/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your Python app requires. The Connect sample requires the **Send mail as signed-in user** permission.

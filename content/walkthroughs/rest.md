@@ -22,7 +22,7 @@ There are currently two options:
 
 1. Register using the generally available model for an app that will interact with Office 365 commercial users, work or school accounts:
  
-   In order for your app to access a user's work or school account through the Microsoft Graph API, you first need to    register it with Azure AD. Once you've registered your app, you can manage it through the  [Azure Management Portal](https://manage.windowsazure.com).
+   In order for your app to access a user's work or school account through the Microsoft Graph API, you first need to register it with Azure AD. Once you've registered your app, you can manage it through the  [Azure Management Portal](https://manage.windowsazure.com).
 
 2. Experiment with the latest functionality and register app that works for both consumer and commercial services:
  

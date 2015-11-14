@@ -1,4 +1,4 @@
-# Call the Microsoft Graph API in an iOS App
+# Call the Microsoft Graph in an iOS App
 
 In this article we look at the minimum tasks required to connect your application to Office 365 and calling the Microsoft Graph API. We use code from the [O365-iOS-Unified-API-Connect](https://github.com/OfficeDev/O365-iOS-Unified-API-Connect) to explain the main concepts that you have to implement in your app. This samples covers the core fundamentals for authenticating with Microsoft Azure Active Directory (AAD), and making a simple service call against the Office 365 mail service using the Microsoft Graph API (sending a mail). It's recommended that you clone or download the project from this repository to accompany this article. 
 
@@ -21,9 +21,10 @@ To call the Microsoft Graph API, your iOS app must complete the following:
 
 ## Register the application in Azure Active Directory
 
-Before you can start working with Office 365, you'll need to register your application on Azure Active Directory and set permissions to use Microsoft Graph services.
+Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
+With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
 
-See the section **Register your native app with the Azure Management Portal** in the article [Manually register your app with Azure AD so it can access Office 365 APIs](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually) for instructions on how to register the app, keep in mind the following details:
+Alternatively, see the section **Register your native app with the Azure Management Portal** in the article [Manually register your app with Azure AD so it can access Office 365 APIs](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually) for instructions on how to manually register the app, keep in mind the following details:
 
 * For the registration you'll need to supply a redirect URI. This a required value that specifies where a user will be redirected after a successful authentication attempt. If you don't specify the correct redirect URI, the authentication request will fail.
 * In the registration, the app must be granted the **Send mail as signed-in user permission** for the **Office 365 unified API (preview)**.  

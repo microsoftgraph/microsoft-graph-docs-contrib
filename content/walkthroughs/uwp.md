@@ -1,6 +1,6 @@
 # Call Microsoft Graph in a universal Windows 10 app
 
-This article describes the process of creating a simple universal Windows 10 app that connects a user to Office 365 and sends an email by making a REST call to the Microsoft Graph API. The [O365-UWP-Microsoft-Graph-Connect](https://github.com/OfficeDev/O365-UWP-Unified-API-Connect) sample implements the concepts outlined in this article.
+In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [O365-UWP-Microsoft-Graph-Connect](https://github.com/OfficeDev/O365-UWP-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
 
 ## Sample user interface
 

@@ -1,6 +1,6 @@
-# Call the Microsoft Graph API in an Android app
+# Call the Microsoft Graph in an Android app
 
-This article explains how a simple Android app connects a user to Office 365 and sends an email by making a REST call to the Microsoft Graph API. The [Office 365 Android Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview) sample implements the concepts outlined in this article.
+In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [Office 365 Android Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview) to explain the main concepts that you have to implement in your app.
 
 The following image shows the sample app send mail activity that appears after a user has connected to Office 365.
 
@@ -16,9 +16,10 @@ To call the Microsoft Graph API, the [Office 365 Android Connect sample](https:/
 <!--<a name="register"/>-->
 ## Register the application in Azure Active Directory
 
-Before you can start working with Office 365, you need to register your application on Azure Active Directory and set permissions to use Microsoft Graph services.
+Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
+With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
 
-See  [Manually register your app with Azure AD so it can access Office 365 APIs](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually) for instructions, keep in mind the following details.
+Alternatively, see the section **Register your native app with the Azure Management Portal** in the article [Manually register your app with Azure AD so it can access Office 365 APIs](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually) for instructions on how to manually register the app, keep in mind the following details:
 
 * Configure the **Delegated permissions** that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
 
@@ -78,7 +79,7 @@ interface Constants {
     // Update these two constants with the values for your application:
     String CLIENT_ID = "<Your client id here>";
     String REDIRECT_URI = "<Your redirect uri here>";
-    String UNIFIED_API_ENDPOINT = "https://graph.microsoft.com/beta/";
+    String UNIFIED_API_ENDPOINT = "https://graph.microsoft.com/v1.0/";
     String UNIFIED_ENDPOINT_RESOURCE_ID = "https://graph.microsoft.com/";
 }
 ```
