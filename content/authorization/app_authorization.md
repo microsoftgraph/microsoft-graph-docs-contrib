@@ -118,7 +118,7 @@ grant_type=authorization_code
 | *client_secret*  | string | The key created for your app. This value is the same value in the **Keys** section of the app configuration page on the Azure Management Portal|
 | *redirect_uri*  | string | The redirect URL that the browser is sent to when authentication is complete.  |
 | *code*  | string | The authorization code. The `code` query parameter value returned from the response to the authorization request. |
-| *resource*   | string | The resource you want to access. To call the Microsoft Graph API, set this parameter value to "https://graph.microsoft.com/"|
+| *resource*   | string | The resource you want to access. To call the Microsoft Graph API, set this parameter value to "https://graph.microsoft.com/".|
 
 The following snippet shows an example of the request payload used to acquire the initial OAuth 2.0 access token:
 
@@ -160,15 +160,13 @@ You need to supply this token to any ensuing HTTP requests to access Microsoft G
 The `scope` property value should match the permissions granted for the app during the app's registration.
 
 The access token remains valid within the specified time interval (`3599` in the above example) seconds (or 1 hour) 
-from the time of issuance, as specified in the `expires_in` property. The result also contains a refresh token (`refresh_token`) 
-that must be used to renew an expiring or expired access token. 
+from the time of issuance, as specified in the `expires_in` property. The result also contains a refresh token (`refresh_token`) that must be used to renew an expiring or expired access token. 
 
 <!-- The refresh token expires in 14 days (`1209600` seconds) 
 as specified by the `refresh_token_expires_in` property value. -->
 
 
-In any production code, your app needs to watch for the expiration 
-of these tokens and renew the expiring access token before the refresh token expires. 
+In any production code, your app needs to watch for the expiration of these tokens and renew the expiring access token before the refresh token expires. 
 
 
 <!---<a name="msg_renew_access_token using refresh token"> </a> -->
