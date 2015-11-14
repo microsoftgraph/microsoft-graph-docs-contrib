@@ -42,7 +42,7 @@ The following are some examples of common queries using Microsoft Graph API:
 |   GET unified groups I’m member of|	`https://graph.microsoft.com/v1.0/me/memberOf?$/microsoft.graph.group?$filter=groupTypes/any(a:a eq 'unified')` |
 |   GET users in my organization	 | `https://graph.microsoft.com/v1.0/users` |
 |   GET group conversations |	`https://graph.microsoft.com/v1.0/groups/<id>/conversations` |
-|   GET people releted to me	| `https://graph.microsoft.com/beta/me/people` |
+|   GET people related to me	| `https://graph.microsoft.com/beta/me/people` |
 |   GET my tasks	| `https://graph.microsoft.com/beta/me/tasks` |
 |   GET my notes |	`https://graph.microsoft.com/beta/me/notes/notebooks` |
 |   GET files trending around me |	`https://graph.microsoft.com/beta/me/trendingAround` |
