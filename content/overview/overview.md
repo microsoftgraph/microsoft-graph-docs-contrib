@@ -27,7 +27,7 @@ You can use the API to access fixed entities like users, groups, mail, messages,
 
 ##Common Queries
 
-The following are some exqmples of common queries using Microsoft Graph API.
+The following are some examples of common queries using Microsoft Graph API:
 
 | **Operation**	| **Service endpoint** |
 |:--------------------------|:----------------------------------------|
@@ -36,13 +36,13 @@ The following are some exqmples of common queries using Microsoft Graph API.
 |   GET my photo	 | `https://graph.microsoft.com/v1.0/me/userPhoto/$value` |
 |   GET my mail |	`https://graph.microsoft.com/v1.0/me/messages` |
 |   GET my manager	| `https://graph.microsoft.com/v1.0/me/manager` |
-|   GET last user to modify file x |	`https://graph.microsoft.com/v1.0/me/drive/root/items/<fileX-id>/lastModifiedByUser` |
-|   GET unified groups I’m member of|	`https://graph.microsoft.com/v1.0/me/joinedGroups` |
+|   GET last user to modify file foo.txt |	`https://graph.microsoft.com/v1.0/me/drive/root/items/foo.txt/lastModifiedByUser` |
+|   GET unified groups I’m member of|	`https://graph.microsoft.com/v1.0/me/memberOf?$/microsoft.graph.group?$filter=groupTypes/any(a:a eq 'unified')` |
 |   GET users in my organization	 | `https://graph.microsoft.com/v1.0/users` |
-|   GET group Y conversations |	`https://graph.microsoft.com/v1.0/groups/<groupY-id>/conversations` |
+|   GET group conversations |	`https://graph.microsoft.com/v1.0/groups/<id>/conversations` |
 |   GET my tasks	| `https://graph.microsoft.com/beta/me/tasks` |
-|   GET my notes |	`https://graph.microsoft.com/beta/me/notes` |
-|   GET files trending around me|	`https://graph.microsoft.com/beta/me/trendingAround` |
+|   GET my notes |	`https://graph.microsoft.com/beta/me/notes/notebooks` |
+|   GET files trending around me |	`https://graph.microsoft.com/beta/me/trendingAround` |
 |   GET people I am working with	 | `https://graph.microsoft.com/beta/me/workingWith` |
 
 
