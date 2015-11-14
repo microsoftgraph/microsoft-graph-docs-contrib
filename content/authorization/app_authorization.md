@@ -1,5 +1,5 @@
 
-# Microsoft Graph API app authorization
+# Microsoft Graph app authorization
 
 
 This article discusses how to authenticate a user, get an access token and renew an access token using a refresh token.
@@ -57,15 +57,7 @@ This request returns a `200 OK` response and presents the Azure AD account login
 POST https://login.microsoftonline.com/{tenantId}/login HTTP/1.1
 Accept: text/html, application/xhtml+xml, */*
 Referer: https://login.microsoftonline.com/{teantId}/login
-Accept-Language: en-US
-User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko
 Content-Type: application/x-www-form-urlencoded
-Accept-Encoding: gzip, deflate
-Host: login.microsoftonline.com
-Content-Length: {n}
-Connection: Keep-Alive
-Cache-Control: no-cache
-Cookie: flight-uxoptin=true; x-ms-gateway-slice=productiona; stsservicecookie=ests
 
 login={user-account}&passwd={password}&ctx={ctx value returned from the previous GET response}
 &flowToken={code provisioned from the prior GET response for the app to get an acces token}
@@ -142,21 +134,8 @@ When this request succeeds, a `200 OK` response will be returned. An example is 
 
 ```no-highlight  
 HTTP/1.1 200 OK
-Cache-Control: no-cache, no-store
-Pragma: no-cache
 Content-Type: application/json; charset=utf-8
 Expires: -1
-Server: Microsoft-IIS/8.5
-x-ms-request-id: 878b6d13-f7d6-4186-9a23-3d73f8791f7e
-x-ms-gateway-service-instanceid: ESTSFE_IN_2
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-P3P: CP="DSP CUR OTPi IND OTRi ONL FIN"
-Set-Cookie: flight-uxoptin=true; path=/; secure; HttpOnly
-Set-Cookie: x-ms-gateway-slice=productionb; path=/; secure; HttpOnly
-Set-Cookie: stsservicecookie=ests; path=/; secure; HttpOnly
-X-Powered-By: ASP.NET
-Date: Mon, 16 Mar 2015 23:22:09 GMT
 Content-Length: 2978
 Access-Control-Allow-Origin: *
 
@@ -169,7 +148,7 @@ Access-Control-Allow-Origin: *
     "access_token":"eyJ0eXAiOiJKV1QiLCJhb...",
     "refresh_token":"AAABAAAAvPM1KaPlrEqd...",
     "refresh_token_expires_in":"1209600",
-    "scope": "Calendar.Read Calendar.ReadWrite Directory.AccessAsUser.All Directory.Read.All Directory.ReadWrite.All Files.Read Files.ReadWrite Files.ReadWrite.Selected Group.ReadWrite.All Mail.ReadWrite Mail.Send Sites.Read.All Sites.ReadWrite.All User.Read User.Read.All User.ReadBasic.All User.ReadWrite User.ReadWrite.All",
+    "scope": "Calendar.ReadWrite Directory.Read.All Files.ReadWrite Group.ReadWrite.All Mail.ReadWrite Mail.Send User.ReadBasic.All",
     "id_token":"eyJ0eXAiOiJKV1QiLCJhbGci..."
 }
 ```
@@ -220,7 +199,7 @@ grant_type=refresh_token
 | *redirect_uri*  | string | The redirect URL that the browser is sent to when authentication is complete. This should match the *redirect_uri* value used in the first request. |
 | *client_secret* | string | One of the Keys values created for your application.                                                                                                     |
 | *refresh_token* | string | The refresh token you received previously.    |
-| *resource*   | string | The resource you want to access. It must be valid (not expired). |
+| *resource*      | string | The resource you want to access.|
 
 Note that this request is almost identical to the initial token acquisition request. There are two differences in the request payload, 
 namely, the `grant_type` parameter now has the value of `refresh_token` (instead of `code`).

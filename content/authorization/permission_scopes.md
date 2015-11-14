@@ -1,6 +1,6 @@
-# Microsoft Graph API permission scopes
+# Microsoft Graph permission scopes
 
-The Microsoft Graph API exposes OAuth 2.0 permission scopes that are used to control access that an app has to data. As a developer, you configure your app with the permission scopes appropriate to the access that it requires. Typically you do this through the Azure portal. During sign-in, users or administrators are given an opportunity to consent to allow your app access to their data with the permission scopes you configured. For this reason, you should choose permission scopes that provide the least level of privilege needed by your app. For more details on how to configure permissions for your app and on the consent process, see [Integrating Applications with Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/).
+The Microsoft Graph exposes OAuth 2.0 permission scopes that are used to control access that an app has to data. As a developer, you configure your app with the permission scopes appropriate to the access that it requires. Typically you do this through the Azure portal. During sign-in, users or administrators are given an opportunity to consent to allow your app access to their data with the permission scopes you configured. For this reason, you should choose permission scopes that provide the least level of privilege needed by your app. For more details on how to configure permissions for your app and on the consent process, see [Integrating Applications with Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/).
 
 
 <!---	In this section:
