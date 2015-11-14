@@ -146,7 +146,7 @@ If either attempt to retrieve a token is successful, the ``GetTokenHelperAsync``
 
 ## Send an email with Microsoft Graph
 
-The MailHelper.cs file contains the code that constructs and sends an email. It consists of a single method -- ``ComposeAndSendMailAsync`` -- that constructs and sends a POST request to the **https://graph.microsoft.com/beta/me/SendMail** endpoint. 
+The MailHelper.cs file contains the code that constructs and sends an email. It consists of a single method -- ``ComposeAndSendMailAsync`` -- that constructs and sends a POST request to the **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** endpoint. 
 
 The ``ComposeAndSendMailAsync`` method takes three string values -- ``subject``, ``bodyContent``, and ``recipients`` -- that are passed to it by the MainPage.xaml.cs file. The ``subject`` and ``bodyContent`` strings are stored, along with all other UI strings, in the Resources.resw file. The ``recipients`` string comes from the address box in the app's interface. 
 
@@ -171,7 +171,7 @@ Since the user can potentially pass more than one address, the first task is to 
             }
 ```
 
-The second task is to construct a valid JSON Message object and send it to the **me/SendMail** endpoint through an HTTP POST request. Since the ``bodyContent`` string is an HTML document, the request sets the **ContentType** value to HTML. Also note the call to ``AuthenticationHelper.GetTokenHelperAsync`` to ensure that we have a fresh access token to pass in the request.
+The second task is to construct a valid JSON Message object and send it to the **me/microsoft.graph.SendMail** endpoint through an HTTP POST request. Since the ``bodyContent`` string is an HTML document, the request sets the **ContentType** value to HTML. Also note the call to ``AuthenticationHelper.GetTokenHelperAsync`` to ensure that we have a fresh access token to pass in the request.
 
 ```c#
                 HttpClient client = new HttpClient();
