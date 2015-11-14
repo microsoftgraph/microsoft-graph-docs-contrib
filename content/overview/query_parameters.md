@@ -1,17 +1,17 @@
-# Microsoft Graph API optional query parameters
+# Microsoft Graph optional query parameters
 ## Optional OData query parameters
 Microsoft Graph provides several optional query parameters that you can use to specify and control the amount of data returned in a response. Microsoft Graph supports the following query options. 
 
 |Name|Value|Description|
 |:---------------|:--------|:-------|
-|$count|none|The count of related entities.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response.  |
-|$filter|string|Filters the response based on a set of criteria.|
-|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
 |$select|string|Comma-separated list of properties to include in the response.|
+|$expand|string|Comma-separated list of relationships to expand and include in the response.  |
+|$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
+|$filter|string|Filters the response based on a set of criteria.|
+|$top|int|The number of items to return in a result set.|
 |$skip|int|The number of items to skip in a result set.|
 |$skipToken|string|Paging token that is used to get the next set of results.|
-|$top|int|The number of items to return in a result set.|
+|$count|none|The count of related entities.|
 
 
 ### $select
@@ -48,7 +48,7 @@ in the response will only have those property values included.
 }
 ```--> 
 
-###$expand
+### $expand
 
 In Microsoft Graph API requests, children collections of referenced items are not automatically expanded. This is by design because it reduces network traffic and the time it takes to generate a response from the service. However, in some cases you might want to include those results
 in a response.
@@ -79,21 +79,57 @@ To sort the results in ascending or descending order, append either `asc` or `de
 For example, to return the groups you belong to, ordered by their display name, the syntax is as follows.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/joinedGroups?orderby=displayName%20desc
+GET https://graph.microsoft.com/v1.0/me/joinedGroups?$orderby=displayName
 ``` 
  >  **Note**: **$orderby** cannot be combined with $filter expressions.
 
 ### $filter
 To filter the response data based on a set of criteria, use the **$filter** query option.
+For example, to return users in an organization filter by display name that starts with "Garth", the syntax is as follows.
+
+```http
+GET https://graph.microsoft.com/v1.0/contoso.com/users?$filter=startswith(displayName,'Garth')
+```
 
 ### $top
-To specify the maximum number of items to return in a result set, use the **$top** query option.
+To specify the maximum number of items to return in a result set, use the **$top** query option. The **$top** query option identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query option. 
+
+For example, to return the first five people you work with, the syntax is as follows.
+
+```http
+GET https://graph.microsoft.com/beta/me/workingwith?$top=5
+```
 
 ### $skip
 To set the number of items to skip before retrieving items in a collection, use  the **$skip** query option. 
+For example, to return events sorted by date created, and starting with the 21st event, the syntax is as follows.
+
+```http
+GET  https://graph.microsoft.com/v1.0/me/events?orderby=CreatedDateTime&$skip=20
+```
 
 ### $skipToken
-To page and specify the next set of results to return, use  the **$skipToken** query option.
+To page and specify the next set of results to return, use  the **$skipToken** query option.  The value of a **$skipToken** query option is a token that identifies a starting point in a collection. For example, the value of a **$skipToken** query option could identify the first item in a collection or the 8th item in a collection containing 20 items, or any other position within the collection.
+
+Since the value of a **$skipToken** query option identifies an index into a collection, using it in your query identifies a subset of the items. The subset identified starts from the first item at the index (identified by the value of the **$skipToken** query option) through the last item in the  set.
+
+In some response, you'll see an `@odata.nextLink` value. Some of them include a **$skipToken** value.  The **$skipToken** value is like a marker that tells the service where to resume for the next set of results.  The following is an example of a `@odata.nextLink` value from a response.
+
+```
+"@odata.nextLink": "https://graph.microsoft.com/v1.0/contoso.com/users?$orderby=displayName&$top=3&$skiptoken=X%2783630372100000000000000000000%27"
+```
+
+For example, to return the next set of users in your organization, limiting the number to 3 at a time in the results, the syntax is as follows.
+
+```http
+GET  https://graph.microsoft.com/v1.0/contoso.com/users?$orderby=displayName&$top=3&$skiptoken=X%2783630372100000000000000000000%27
+```
 
 ### $count
-The count of related entities can be requested by specifying the **$count** query option.
+The count of related entities can be requested by specifying the **$count** query option.  The **$count** query option returns the number of items in a collection or if the collection has a filter, the number of items matching the filter.
+
+For example, to get the number or size of your contacts, the syntax is as follows.
+
+```http
+GET  https://graph.microsoft.com/v1.0/me/contacts?$count
+```
