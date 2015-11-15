@@ -1,7 +1,7 @@
 ﻿
 # Paging Microsoft Graph data in your app 
  
-When API requests return too much information to show on one page, use paging to break the information into manageable chunks. 
+When the API requests return too much information to show on one page, you can use paging to break the information into manageable chunks. 
 
 You can page forward and backward in the Microsoft Graph. A response that contains paged results will include a skip token ( **odata.nextLink** ) that allows you to get the next page of results. This skip token can be combined with a **previous-page=true** query argument to page backwards.
 
