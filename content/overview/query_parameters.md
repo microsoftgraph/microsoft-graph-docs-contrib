@@ -81,7 +81,7 @@ For example, to return the users in the organization ordered by their display na
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderBy=displayName
 ``` 
- >  **Note**: **$orderby** can't be used on complex type property. It also can't be combined with $filter expressions.
+ >  **Note**: **$orderby** can't be combined with $filter expressions.
 
 ### $filter
 To filter the response data based on a set of criteria, use the **$filter** query option.
