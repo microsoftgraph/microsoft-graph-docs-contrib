@@ -20,9 +20,9 @@ The Microsoft Graph gives you:
 - Seamless navigation between entities and and the relationships among them 
 - Access to intelligence and insights coming from the Microsoft cloud
 
-All the above using a single authentication token.
+And all this using a single authentication token.
 
-You can use the API to access fixed entities like users, groups, mail, messages, calendars, tasks, notes coming from services like Outlook, OneDrive, Azure Active Directory, Planner, OneNote and others. You can also obtain calculated relationships powered by the Office Graph (only for commercial users) like the list of users you are working with or the documents trending around you.
+You can use the API to access fixed entities like users, groups, mail, messages, calendars, tasks, and notes coming from services like Outlook, OneDrive, Azure Active Directory, Planner, OneNote and others. You can also obtain calculated relationships powered by the Office Graph (only for commercial users) like the list of users you are working with or the documents trending around you.
 
 <!--<a name="msg_queries"> </a>-->
 
@@ -34,7 +34,7 @@ The following are some examples of common queries using Microsoft Graph API:
 |:--------------------------|:----------------------------------------|
 |   GET my profile |	`https://graph.microsoft.com/v1.0/me` |
 |   GET my files|	`https://graph.microsoft.com/v1.0/me/drive/root/children` |
-|   GET my photo	 | `https://graph.microsoft.com/v1.0/me/userPhoto/$value` |
+|   GET my photo	 | `https://graph.microsoft.com/v1.0/me/photo/$value` |
 |   GET my mail |	`https://graph.microsoft.com/v1.0/me/messages` |
 |   GET my calendar |	`https://graph.microsoft.com/v1.0/me/calendar` |
 |   GET my manager	| `https://graph.microsoft.com/v1.0/me/manager` |
