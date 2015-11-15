@@ -90,7 +90,7 @@ The Microsoft Graph service is being rolled out to China, but is not available y
 `isMemberOf` and `getObjectsById` are not available in Microsoft Graph
 
 ### Microsoft Graph permissions
-Please review the permissions topic [here](http://graph.microsoft.io/docs/authorization/permission_scopes)for the latest details on Microsoft Graph supported application and delegated permissions.  In addition, there are the following limitations for `v1.0`:
+Please review the permissions topic [here](http://graph.microsoft.io/docs/authorization/permission_scopes) for the latest details on Microsoft Graph supported application and delegated permissions.  In addition, there are the following limitations for `v1.0`:
 
 |Permission |	Permission type | Limitation |	Alternative |
 |-----------|-----------------|------------|--------------|
@@ -99,7 +99,7 @@ Please review the permissions topic [here](http://graph.microsoft.io/docs/author
 |_User.Read.All_|	Application	|Cannot perform any read operations on other users|	Also select `Directory.Read.All`|
 | _User.ReadWrite.All_ |	Application |	Cannot perform any CRUD operations on `User` other than updating user HD photo and extended profile properties |	Also select`Directory.ReadWrite.All`. **NOTE**: User deletion will not be possible.|
 |_Group.Read.All_	| Application |	Cannot enumerate groups or group memberships.  Can still read group content for Office groups	| Also select `Directory.Read.All` |
-|_Group.ReadWrite.All+	| Application	| Cannot enumerate groups or group memberships, create groups, update group memberships or delete groups.  Can still read and update group content for Office groups.	| Also select `Directory.ReadWrite.All`. **NOTE**:  Group deletion will not be possible.|
+|_Group.ReadWrite.All_	| Application	| Cannot enumerate groups or group memberships, create groups, update group memberships or delete groups.  Can still read and update group content for Office groups.	| Also select `Directory.ReadWrite.All`. **NOTE**:  Group deletion will not be possible.|
 
 Additionally there are the following `/beta` limitations:
 
@@ -112,7 +112,7 @@ Additionally there are the following `/beta` limitations:
 * **$expand** limitations: 
  * No support for `nextLink`
  * No support for more than 1 level of expand
- * No support with extra parameters ($filter, $select)
+ * No support with extra parameters (**$filter**, **$select**)
 * Multiple namespaces are not supported
 * GETs on `$ref` and casting is not supported on users, groups, devices, servicePrincipals and applications.
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the `Accepted` or `RejectedSenders` on a group.
