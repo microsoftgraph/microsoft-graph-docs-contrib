@@ -3,7 +3,7 @@
 
 This article provides information about the new features for developers that are available in the November 2015 release of the Microsoft Graph API, and any known issues that you might want to be aware of. 
 
-  >  **Note**:Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
+  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
 
 ## GA features in Microsoft Graph API
 
@@ -76,7 +76,7 @@ The Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.R
 
 ### Functionality available only in existing Office 365 REST APIs
 #### Synchronization
-Outlook, OneDrive and Azure AD synchronization capabilities (in Azure AD this is also known as Differential Query) are not available in `/v1.0` or `/beta`.  If your application requires synchronization capabilities, please continue to use the existing Office 365 and Azure AD REST APIs, or explore the new webhooks preview feature offered through Microsoft Graph for events, messages and contacts.
+Outlook, OneDrive and Azure AD synchronization capabilities (in Azure AD this is also known as differential query) are not available in `/v1.0` or `/beta`.  If your application requires synchronization capabilities, please continue to use the existing Office 365 and Azure AD REST APIs, or explore the new webhooks preview feature offered through Microsoft Graph for events, messages and contacts.
 
 > **NOTE**:  It is a goal to close the gap between the existing APIs and Microsoft Graph as quickly as possible, including synchronization.
 
@@ -90,7 +90,7 @@ The Microsoft Graph service is being rolled out to China, but is not available y
 `isMemberOf` and `getObjectsById` are not available in Microsoft Graph
 
 ### Microsoft Graph permissions
-Please review the permissions topic [here](http://graph.microsoft.io/docs/authorization/permission_scopes) for the latest details on Microsoft Graph supported application and delegated permissions.  In addition, there are the following limitations for `v1.0`:
+Please review the [permission scopes topic](http://graph.microsoft.io/docs/authorization/permission_scopes) for the latest details on Microsoft Graph supported application and delegated permissions.  In addition, there are the following limitations for `v1.0`:
 
 |Permission |	Permission type | Limitation |	Alternative |
 |-----------|-----------------|------------|--------------|
@@ -114,7 +114,7 @@ Additionally there are the following `/beta` limitations:
  * No support for more than 1 level of expand
  * No support with extra parameters (**$filter**, **$select**)
 * Multiple namespaces are not supported
-* GETs on `$ref` and casting is not supported on users, groups, devices, servicePrincipals and applications.
+* GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the `Accepted` or `RejectedSenders` on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata
 * Cross-workload filtering/search is not available. 
