@@ -109,7 +109,7 @@ The access token is found in the `access_token` field of the JSON payload. The a
 
 ## Calling the Microsoft Graph
 
-Once the app has an access token, it's ready to call the Microsoft Graph. Since this sample app is retrieving messages, it will use an HTTP GET request to the `https://graph.microsoft.com/v1.0/me/messages` endpoint. This will retrieve messages from the inbox.
+Once the app has an access token, it's ready to call the Microsoft Graph. Since this sample app is retrieving messages, it will use an HTTP GET request to the `https://graph.microsoft.com/v1.0/me/messages` endpoint.
 
 ### Refining the request
 
