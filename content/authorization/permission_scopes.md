@@ -3,13 +3,6 @@
 The Microsoft Graph exposes OAuth 2.0 permission scopes that are used to control access that an app has to data. As a developer, you configure your app with the permission scopes appropriate to the access that it requires. Typically you do this through the Azure portal. During sign-in, users or administrators are given an opportunity to consent to allow your app access to their data with the permission scopes you configured. For this reason, you should choose permission scopes that provide the least level of privilege needed by your app. For more details on how to configure permissions for your app and on the consent process, see [Integrating Applications with Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/).
 
 
-<!---	In this section:
-  
--	[Permission scope concepts](#msg_perm_concepts) 
--	[Permission scope details](#msg_perm_details)
-
-<a name="msg_perm_concepts"> </a>  -->
-
 ##Permission scope concepts
 
 ###App-only vs. delegated scopes
@@ -35,51 +28,69 @@ The following tables list the Microsoft Graph API permission scopes and explains
 
 |   **Scope**                  |  **Permission on Azure Management Portal**                          |  **Description** |
 |:-----------------------------|:-----------------------------------------|:-----------------|
-| _User.Read.All_                |     `Read all user's full profiles`           | Allows the app to read a full set of profile properties of other users in your organization on behalf of the signed-in user.|
-| _User.ReadWrite.All_           |     `Read and write all user's full profiles` | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, on behalf of the signed-in user.  |
-| _Directory.Read.All_           |     `Read directory data`                     | Allows the app to read data in your organization's directory, such as users, groups and apps.   |
-| _Directory.ReadWrite.All_      |     `Read and write directory data`           | Allows the app to read and write data in your organization's directory, such as users, and groups, but prohibits user or group deletion.   |
-| _Directory.AccessAsUser.All_   |     `Access directory as the signed-in user`  | Allows the app to access the same information in the directory as the signed-in user.  A native client app can have the user to consent to this permission. But a web app requires the administrator consent. |
-| _Group.Read.All_ |    `Read all groups` | Allows the app to read all group properties and memberships on behalf of the signed-in user, and read group calendar and conversations on public groups and groups the signed in user is a member of.
-| _Group.ReadWrite.All_ |    `Read and write all groups`| Allows the app to create groups on behalf of the signed-in user and read all group properties and memberships.  Additionally allows the app to update group properties and memberships for groups the signed-in user owns.  Also allows the app to read and write group calendar and conversations on public groups and groups the signed-in user is a member of. |
+| _User.Read.All_                |     `Read all user's full profiles`           | Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user.|
+| _User.ReadWrite.All_           |     `Read and write all user's full profiles` | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. |
+| _Directory.Read.All_           |     `Read directory data`                     | Allows the app to read data in your organization's directory, such as users, groups and apps. |
+| _Directory.ReadWrite.All_      |     `Read and write directory data`           | Allows the app to read and write data in your organization's directory, such as users, and groups.  Does not allow user or group deletion. It does not allow the app to delete users or groups, or reset user passwords. |
+| _Directory.AccessAsUser.All_   |     `Access directory as the signed-in user`  | Allows the app to have the same access to information in the directory as the signed-in user.|
+| _Group.Read.All_ |    `Read all groups` | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. |
+| _Group.ReadWrite.All_ |    `Read and write all groups`| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Additionally allows group owners to manage their groups and allows group members to update group content. |
 
 
 ###Permissions not requiring administrator's consent
 
 |   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
 |:---------------|:------------------|:-----------------|
-| _User.Read_       |    `Enable sign-in and read user profile` | Allows users to sign-in to the app, and allows the app to read the profile. It also allow the app to read basic company information of signed-in users. To read the user's manager, directr report, enable `User.ReadBasic.All`. To read a group membership, enable `Group.Read.All`.|
-| _User.ReadWrite_ |    `Read and write access to user profile` | Allows the app to read the profile, group membership, reports and manager of signed-in users. It also allow the app to update profile information on behalf of signed-in users. |
-| _User.ReadBasic.All_ |    `Read all user's basic profiles` | Allows the app to read a basic set of profile properties of other users, including the user's manager and direct reports, in your company or school on behalf of the signed-in user. This includes display name, first and last name, photo, and out of office message. | 
+| _User.Read_       |    `Sign-in and read user profile` | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users. To read the user's manager, direct report, enable `User.ReadBasic.All`. To read a group membership, enable `Group.Read.All`.|
+| _User.ReadWrite_ |    `Read and write access to user profile` | Allows the app to read your profile. It also allows the app to update your profile information on your behalf. |
+| _User.ReadBasic.All_ |    `Read all user's basic profiles` | Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo. | 
 | _Mail.Read_ |    `Read user mail` | Allows the app to read email in user mailboxes. |
-| _Mail.ReadWrite_ |    `Read and write access to user mail` | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail. |
+| _Mail.ReadWrite_ |    `Read and write access to user mail` | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.|
 | _Mail.Send_ |    `Send mail as a user` | Allows the app to send mail as users in the organization. |
 | _Calendars.Read_ |    `Read user calendars`  | Allows the app to read events in user calendars . |
-| _Calendars.ReadWrite_ |    `Have full access to user calendars`  | Allows the app to create, read, update, and delete events in user calendars. 
-| _Files.Read_ |    `Read users' files` | Allows the application to read the current user's files
-| _Files.ReadWrite_ |   `Edit or delete users' files`             | Allows the app to edit or delete the current user's files. |
+| _Calendars.ReadWrite_ |    `Have full access to user calendars`  | Allows the app to create, read, update, and delete events in user calendars. |
+| _Contacts.Read_ |    `Read user contacts`  | Allows the app to read user contacts. |
+| _Contacts.ReadWrite_ |    `Have full access to user contacts`  | Allows the app to create, read, update, and delete user contacts. |
+| _Files.Read_ |    `Read user files and files shared with user` | Allows the app to read the signed-in user's files and files shared with the user.| 
+| _Files.ReadWrite_ |   `Have full access to user files and files shared with user` | Allows the app to read, create, update and delete the signed-in user's files and files shared with the user. |
+| _Files.ReadWrite.AppFolder_ |   `Have full access to the application’s folder` | Allows the app to read, create, update and delete files in the application’s folder.|
+| _Files.ReadWrite.Selected_ |    `Read and write files that the user selects` | Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. |
+| _Files.Read.Selected_ |    `Read files that the user selects`  | Allows the app to read files that the user selects. The app has access for several hours after the user selects a file. |
 | _Sites.Read.All_ |    `Read items in all site collections` | Allows the application to read documents and list  items in all site collections on behalf of the signed-in user. |
-| _Sites.ReadWrite.All_ |    `Edit or delete items in all site collections` | Allows the application to edit or delete documents and list items in all site collections on behalf of the signed-in user. |
+| _openid_ |    `Sign users in`(preview) | Allows users to sign in to the app with their work or school accounts and allows the app to see basic user profile information.|
+| _offline_access_ |    `Access user's data anytime` (preview) | Allows the app to read and update user data, even when they are not currently using the app.|
+
+###App-only permissions requiring administrator's consent
+
+|   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
+|:---------------|:------------------|:-----------------|
+| _Mail.Read_       |    `Read mail in all mailboxes` | Allows the app to read mail in all mailboxes without a signed-in user.|
+| _Mail.ReadWrite_ |    `Read and write mail in all mailboxes` | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. |
+| _Mail.Send_ |    `Send mail as any user` | Allows the app to send mail as any user without a signed-in user. | 
+| _Calendars.Read_ |    `Read calendars in all mailboxes` | Allows the app to read events of all calendars without a signed-in user. |
+| _Calendars.ReadWrite_ |    `Read and write calendars in all mailboxes` | Allows the app to create, read, update, and delete events of all calendars without a signed-in user.|
+| _Contacts.Read_ |    `Read contacts in all mailboxes` | Allows the app to read all contacts in all mailboxes without a signed-in user. |
+| _Contacts.ReadWrite_ |    `Read and write contacts in all mailboxes`  |Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user.|
+| _User.ReadBasic.All_ |    `Read all users' basic profiles`  | Allows the app to read a basic set of profile properties of other users in your organization without a signed-in user. Includes display name, first and last name, photo, and out of office message.|
+| _User.Read.All_ |    `Read all users' full profiles` | Allows the app to read the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.| 
+| _User.ReadWrite.All_ |   `Read and write all users' full profiles` | "Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.|
 
 
+##Preview
 ###Permissions not requiring administrator's consent (preview)
 
 |   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
 |:---------------|:------------------|:-----------------|
-| _Tasks.Read.All_ |    `Read the user's tasks and projects`(preview) | Allows the app to read the user's tasks and projects on behalf of the user. |
-| _Tasks.ReadWrite.All_ |    `Read and write the user's tasks and projects` (preview) | Allows the app to create, read, update and delete the user's tasks and projects on behalf of the user. |
-| _Files.ReadWrite.Selected_ |    `Read and write files that the user selects`(preview) | Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. |
-| _Files.Read.Selected_ |    `Read files that the user selects` (preview) | Allows the app to read files that the user selects. The app has access for several hours after the user selects a file. |
-| _People.Read_ |    `Read users' relevant people lists`(preview) | Allows the app to read a ranked list of relevant people of the signed-in user. The list includes local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype). |
-| _People.ReadWrite_ |    `Read and write users' relevant people lists` (preview) | Allows the app to create, read and write to the ranked list of relevant people of the signed-in user. The list includes local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype). |
-| _openid_ |    `Sign users in`(preview) | Allows users to sign in to the app with their work or school accounts and allows the app to see basic user profile information. |
-| _offline_access_ |    `Read and write user's information` (preview) | Allows the app to see and update user's data, even when the user is not actively using the app. |
-| _Notes.Create_ |    `Create pages in users' notebooks` (preview) | Allows the app to read the titles of notebooks and sections and create new pages, notebooks and sections on behalf of the signed-in user. |
-| _Notes.ReadWrite.CreatedByApp_ |    `Limited notebook access` (preview) | Allows the app to read the titles of notebooks and sections; create new pages; read and write limited to pages created by the app on behalf of the signed-in user. |
-| _Notes.Read_ |    `Read notebooks` (preview) | Allows the app to read the titles of notebooks and sections and read all pages on behalf of the signed-in user. It cannot read password protected sections.. |
-| _Notes.ReadWrite_ |    `Read and write notebooks` (preview) | Allows the app to read the titles of notebooks and sections, read all pages, write all pages and create new pages on behalf of the signed-in user.  It cannot access password protected sections. |
-| _Notes.Read.All_ |    `Read notebooks in your organization` (preview) | Allows the app to read the contents of all notebooks and sections that the signed-in user has access to.   It cannot read password protected sections. |
-| _Notes.ReadWrite.All_ |    `Read and write notebooks in your organization` (preview) | Allows the app to read and write the contents of all notebooks and sections that the signed-in user has access to.  It cannot access password protected sections. |
+| _Tasks.ReadWrite_ |    `Create, read, update and delete user tasks and plans` (preview) | Allows the app to create, read, update and delete tasks and plans (and tasks in them), that are assigned to or shared with the signed-in user.|
+| _People.Read_ |    `Read users' relevant people lists`(preview) | Allows the app to read a ranked list of relevant people of the signed-in user. The list includes local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).|
+| _People.ReadWrite_ |    `Read and write users' relevant people lists`(preview) | Allows the app to create, read and write to the ranked list of relevant people of the signed-in user. The list includes local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).|
+| _Notes.Create_ |    `Create pages in users' notebooks` (preview) | Allows the app to read the titles of notebooks and sections and create new pages, notebooks and sections on behalf of the signed-in user.|
+| _Notes.ReadWrite.CreatedByApp_ |    `Limited notebook access` (preview) | Allows the app to read the titles of notebooks and sections, create new pages on behalf of the signed-in user. Also allows the app to read and update pages created by the app. |
+| _Notes.Read_ |    `Read user notebooks` (preview) | Allows the app to view the titles of OneNote notebooks and sections and to read all pages on behalf of the signed-in user. It cannot view password protected sections. |
+| _Notes.ReadWrite_ |    `Read and write user notebooks` (preview) | Allows the app to read the titles of notebooks and sections, read all pages, write all pages and create new pages on behalf of the signed-in user.  It cannot access password protected sections. |
+| _Notes.Read.All_ |    `Read all notebooks that the user can access` (preview) | Allows the app to read the contents of all notebooks and sections that the signed-in user can access.   It cannot read password protected sections. |
+| _Notes.ReadWrite.All_ |    `Read and write notebooks that the user can access` (preview) | Allows the app to read and write the contents of all notebooks and sections that the signed-in user can access.  It cannot access password protected sections.|
+
 
 <!-- -->
 
