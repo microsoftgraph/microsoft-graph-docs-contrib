@@ -26,9 +26,9 @@ There are currently two options to register your app.
  
   A single authentication service for both work or school and personal accounts is now available in preview. This model provides a single authentication service for both work and school (Azure AD) as well as personal (Microsoft) identities. Now, you only need to implement one authentication flow in your app to enable users to use either work or school accounts, like Office 365 or OneDrive for Business, or personal accounts, like Outlook.com or OneDrive.
    
-Use the  [Application Registration Portal](https://apps.dev.microsoft.com/) to register your app to implement the v2.0 app model preview.
+Use the  [Application Registration Portal](https://apps.dev.microsoft.com/) to register your app to implement converged auth (preview).
 
-Please note that because the v2.0 app model is currently in preview and not ready for use in production apps. For more information on features and functionality of the v2.0 app model that are not yet supported in the public preview period, see [Limitations and restrictions of the V2.0 app model preview](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/).
+Please note that because converged auth is currently in preview and not ready for use in production apps. For more information on features of converged auth that are not yet supported in the public preview period, see [App model v2.0 preview: Limitations & restrictions](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/).
 
 You will get a client ID and secret once you register the app. These values are used in the Authorization Code Grant flow.
 
@@ -52,7 +52,7 @@ The app appends query parameters to this base URL to let Azure AD know what app 
 For example, the request URL for our application that requires read access to mail would look like the following.
 
 ```http
-GET https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=<CLIENT ID>&redirect_uri=http%3A%2F%2Flocalhost/myapp%2F&response_type=code&resource=http%3A%2F%2Fgraph.microsoft.com&scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read
+GET https://login.microsoftonline.com/common/oauth2/authorize?client_id=<CLIENT ID>&redirect_uri=http%3A%2F%2Flocalhost/myapp%2F&response_type=code&resource=http%3A%2F%2Fgraph.microsoft.com&scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read
 ```
 
 Next, redirect the user to the logon URL. The user will be presented with a sign in screen that displays the name of the app. After they sign in, the user will be presented with a list of the permissions the app requires and asked to allow or deny. Assuming they allow the required access, the browser will be redirected to the redirect URI specified in the initial request with the authorization code in the query string.
