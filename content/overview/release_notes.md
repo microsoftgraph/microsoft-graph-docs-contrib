@@ -120,7 +120,8 @@ Additionally there are the following `/beta` limitations:
 * Cross-workload filtering/search is not available. 
 * Full-text search (using **$search**) is only available for some entities, like messages.
 
-<!--## Additional resources 
 
-- [Microsoft Graph API FAQs](\microsoft-graph-api-FAQs.md) 
-- [OneDrive API (preview) release notes](http://aka.ms/odb-api-release-notes)  -->
+   >  ![](./images/GitHub-Mark-64px.png)     **Contribute to this content**:  Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).
+
+             .
+
