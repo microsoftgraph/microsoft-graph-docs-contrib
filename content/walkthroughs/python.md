@@ -1,6 +1,6 @@
 # Call the Microsoft Graph in a Python app 
 
-In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API (formally known as "unified API (preview)"). We use code from the [Office 365 Python Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Python-Microsoft-Graph-Connect) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. We use code from the [Office 365 Python Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Python-Microsoft-Graph-Connect) to explain the main concepts that you have to implement in your app.
 
 ![Office 365 Python Connect sample screenshot](./images/web-screenshot.png)
 
@@ -123,7 +123,7 @@ headers = {
 
 > **Note** The request must also send a **Content-Type** header with a value accepted by the Graph API, for example, `application/json`.
 
-The Microsoft Graph is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/) to explore what else you can accomplish with the Microsoft Graph API.
+The Microsoft Graph is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API.
 
 <!--
 ## Additional resources
