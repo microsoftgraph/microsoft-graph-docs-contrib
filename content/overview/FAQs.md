@@ -1,24 +1,9 @@
 
 # Microsoft Graph Frequently Asked Questions (FAQs)
 
-<!---_**Applies to:** Office 365_ -->
- 
-  > Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
+|![](./images/GitHub-Mark-64px.png) | **Contribute to this content** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).|
+|---|:---|
 
-<!---	
-**In this article**
-  
--	[What platforms are supported by Microsoft Graph API?](#msg_how_use__unified_api)
--	[Why use Microsoft Graph API?](#msg_why_use_unified_api)
--	[What're the benefits of using Microsoft Graph API?](#msg_benefits)
--	[Does Microsoft Graph API support v2.0 app authentication model?](#msg_v2auth) 
-
-
-[What's currently available in Microsoft Graph API](#msg_what_in_unified_api)
--	[What's coming next in Microsoft Graph API?](#msg_what_next_in_unified_api) 
--	[Where can I learn more about Microsoft Graph API development?](#msg_how_learn_unified_api)
-
-<a name="msg_how_use_unified_api"> </a> -->
 
 ## What platforms are supported by Microsoft Graph API?
 <!--
@@ -200,7 +185,7 @@ Some of the actions you can perform with **TrendingAround** and **WorkingWith**:
 -	Find people you're meeting with today through your calendar events, and discover the files they're working on
 -	Get files which are popular in the user's circle.-->
 
-
+  > Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
 
 
 
