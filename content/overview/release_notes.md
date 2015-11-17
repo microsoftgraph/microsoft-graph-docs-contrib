@@ -120,8 +120,8 @@ Additionally there are the following `/beta` limitations:
 * Cross-workload filtering/search is not available. 
 * Full-text search (using **$search**) is only available for some entities, like messages.
 
-
-   >  ![](./images/GitHub-Mark-64px.png)     **Contribute to this content**:  Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).
-
+|  ![](./images/GitHub-Mark-64px.png) | **Contribute to this content** <br /> Use GitHub to [suggest changes]((https://github.com/OfficeDev/microsoft-graph-docs).  |
+|---|:---|
+  
              .
 
