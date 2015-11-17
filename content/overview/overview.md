@@ -60,3 +60,6 @@ The following diagram shows the Microsoft Graph developer stack and how it works
 
 >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [Office365].
 
+|  ![](./images/GitHub-Mark-64px.png) | **Contribute to this content** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).  |
+|---|:---|
+
