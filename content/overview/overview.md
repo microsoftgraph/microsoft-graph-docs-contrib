@@ -1,14 +1,7 @@
 
 
-<!--# Microsoft Graph API overview 
-**In this article**
-  
--	[Overview of Microsoft Graph API](#msg_what_is_unified_api) 
--	[Common Queries](#msg_queries) 
--	[All Office 365 data under one roof](#msg_eoof) 
--	[Learn more about  Microsoft Graph API development](#msg_how_learn_unified_api) 
-
-<a name="msg_what_is_unified_api"> </a>-->
+|  ![](./images/GitHub-Mark-64px.png) | **Contribute to this content** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).  |
+|---|:---|
 
 # Overview of Microsoft Graph
 
@@ -57,8 +50,7 @@ The following diagram shows the Microsoft Graph developer stack and how it works
 
 ![Microsoft Graph API developer stack.](./images/MicrosoftGraph_DevStack.png)
 
+ >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
 
 
-|  ![](./images/GitHub-Mark-64px.png) | **Contribute to this content** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).  |
-|---|:---|
 
