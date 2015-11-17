@@ -91,10 +91,5 @@ With an access token, your app can make authenticated requests to the Microsoft 
 
 The Connect sample sends an email using the ```me/sendMail``` endpoint in the Microsoft Graph API in the [*controllers/mainController.js*](https://github.com/OfficeDev/O365-Angular-Microsoft-Graph-Connect/blob/master/public/controllers/mainController.js) file. 
 
-The Microsoft Graph is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://www.graph.microsoft.io/docs) to explore what else you can accomplish with the Microsoft Graph API.
+The Microsoft Graph is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API.
 
-<!--## Additional resources
-
--  [Office 365 Angular Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Angular-Microsoft-Graph-Connect)
--  [Office Dev Center](http://dev.office.com) 
--  [Microsoft Graph API reference](http://graph.microsoft.io/docs/)-->
