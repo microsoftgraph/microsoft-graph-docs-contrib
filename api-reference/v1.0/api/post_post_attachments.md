@@ -8,7 +8,6 @@ One of the following **scopes** is required to execute this API: _Groups.ReadWri
 ```http
 POST /groups/<id>/threads/<id>/posts/<id>/attachments
 POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/posts/<id>/attachments
 
 ```
 ### Request headers

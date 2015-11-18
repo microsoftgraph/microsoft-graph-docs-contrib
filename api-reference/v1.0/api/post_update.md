@@ -8,7 +8,6 @@ One of the following **scopes** is required to execute this API:
 ```http
 PATCH /groups/<id>/threads/<id>/posts/<id>
 PATCH /groups/<id>/conversations/<id>/threads/<id>/posts/<id>
-PATCH /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/posts/<id>
 ```
 ### Request headers
 | Name       | Type | Description|

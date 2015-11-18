@@ -8,7 +8,6 @@ One of the following **scopes** is required to execute this API: _Groups.Read_
 ```http
 GET /groups/<id>/threads/<id>/posts/<id>/attachments
 GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
-GET /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/posts/<id>/attachments
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
