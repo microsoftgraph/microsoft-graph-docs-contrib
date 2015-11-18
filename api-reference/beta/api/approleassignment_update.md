@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<id | userPrincipalName>/appRoleAssignments/users/<id | userPrincipalName>
-PATCH /servicePrincipals/users/<id | userPrincipalName>/appRoleAssignedTo
-PATCH /groups/users/<id | userPrincipalName>/appRoleAssignments/users/<id | userPrincipalName>
+PATCH /users/<id | userPrincipalName>/appRoleAssignments/<objectId>
+PATCH /servicePrincipals/<objectId>/appRoleAssignedTo
+PATCH /groups/<objectId>/appRoleAssignments/<objectId>
 ```
 ### Request headers
 | Name       | Type | Description|

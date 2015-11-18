@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/manager
-GET /directoryObjects/users/<id | userPrincipalName>
-GET /contacts/users/<id | userPrincipalName>/manager
+GET /directoryObjects/<objectId>
+GET /contacts/<objectId>/manager
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

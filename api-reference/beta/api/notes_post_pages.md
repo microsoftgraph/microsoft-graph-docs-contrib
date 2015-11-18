@@ -15,7 +15,7 @@ Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.
 POST /me/notes/pages
 POST /users/<mail>/notes/pages
 POST /users/<id | userPrincipalName>/notes/pages
-POST /groups/users/<id | userPrincipalName>/notes/pages
+POST /groups/<objectId>/notes/pages
 ```
 
 ### Request headers  

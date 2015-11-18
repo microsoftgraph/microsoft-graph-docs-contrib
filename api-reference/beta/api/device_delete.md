@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /devices/users/<id | userPrincipalName>
+DELETE /devices/<objectId>
 
 ```
 ### Request headers

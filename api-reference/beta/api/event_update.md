@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<id | userPrincipalName>/events/<id>
-PATCH /groups/users/<id | userPrincipalName>/events/<id>
+PATCH /groups/<objectId>/events/<id>
 PATCH /users/<id | userPrincipalName>/calendarView/<id>
 ```
 ### Request headers

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/appRoleAssignments/users/<id | userPrincipalName>
-GET /servicePrincipals/users/<id | userPrincipalName>/appRoleAssignedTo
-GET /groups/users/<id | userPrincipalName>/appRoleAssignments/users/<id | userPrincipalName>
+GET /users/<id | userPrincipalName>/appRoleAssignments/<objectId>
+GET /servicePrincipals/<objectId>/appRoleAssignedTo
+GET /groups/<objectId>/appRoleAssignments/<objectId>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
