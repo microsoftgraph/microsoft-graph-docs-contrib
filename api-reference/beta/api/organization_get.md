@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /organization/<objectId>
+GET /organization/users/<id | userPrincipalName>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -28,7 +28,7 @@ Here is an example of the request.
   "name": "get_organization"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/organization/<objectId>
+GET https://graph.microsoft.com/beta/organization/users/<id | userPrincipalName>
 ```
 ##### Response
 Here is an example of the response.

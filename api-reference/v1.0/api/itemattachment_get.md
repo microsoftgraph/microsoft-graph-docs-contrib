@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/events/<id>/attachments/<id>
-GET /groups/<objectId>/events/<id>/attachments/<id>
+GET /groups/users/<id | userPrincipalName>/events/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
 
 ```

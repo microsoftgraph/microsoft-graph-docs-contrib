@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/<objectId>/Microsoft.Graph.restore
+POST /applications/users/<id | userPrincipalName>/Microsoft.Graph.restore
 
 ```
 ### Request headers
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "application_restore"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/applications/<objectId>/Microsoft.Graph.restore
+POST https://graph.microsoft.com/beta/applications/users/<id | userPrincipalName>/Microsoft.Graph.restore
 Content-type: application/json
 Content-length: 56
 

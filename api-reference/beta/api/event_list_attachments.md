@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/events/<id>/attachments
-GET /groups/<objectId>/events/<id>/attachments
+GET /groups/users/<id | userPrincipalName>/events/<id>/attachments
 GET /users/<id | userPrincipalName>/calendarView/<id>/attachments
 ```
 ### Optional query parameters

@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/conversations/<id>
-GET /groups/<objectId>/conversations/<id>
+GET /groups/users/<id | userPrincipalName>/conversations/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

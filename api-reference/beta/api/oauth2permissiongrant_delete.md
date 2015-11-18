@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /oauth2PermissionGrants/<objectId>
-DELETE /users/<id | userPrincipalName>/oauth2PermissionGrants/<objectId>
-DELETE /drive/root/createdByUser/oauth2PermissionGrants/<objectId>
+DELETE /oauth2PermissionGrants/users/<id | userPrincipalName>
+DELETE /users/<id | userPrincipalName>/oauth2PermissionGrants/users/<id | userPrincipalName>
+DELETE /drive/root/createdByUser/oauth2PermissionGrants/users/<id | userPrincipalName>
 
 ```
 ### Request headers
