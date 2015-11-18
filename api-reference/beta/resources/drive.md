@@ -12,9 +12,7 @@ storage space, and exposes a collection of all the items contained within the dr
 | Method   | Return Type | Description |
 |:-----------------------------------------------|:---------------------------|:-----------------------------------------------------------|
 | [Get drive](../api/drive_get.md)               | [drive](drive.md)          | Read properties of drive resource.         |
-| [Create item](../api/drive_post_items.md)      | [driveitem](driveitem.md)            | Create a new item by posting to the items collection.      |
-| [List items](../api/drive_list_items.md)       | [driveitem](driveitem.md) collection | Get a item object collection.                              |
-| [List special](../api/drive_list_special.md)   | [driveitem](driveitem.md) collection | Get a special object collection.                           |
+| [List items](../api/item_list_children.md)       | [driveitem](driveitem.md) collection | Get a item object collection.      |
 
 
 ### Properties
