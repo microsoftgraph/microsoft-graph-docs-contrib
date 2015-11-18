@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/appRoleAssignments
-GET /users/<id | userPrincipalName>/joinedGroups/<objectId>/appRoleAssignments
-GET /drive/root/createdByUser/joinedGroups/<objectId>/appRoleAssignments
+GET /groups/users/<id | userPrincipalName>/appRoleAssignments
+GET /users/<id | userPrincipalName>/joinedGroups/users/<id | userPrincipalName>/appRoleAssignments
+GET /drive/root/createdByUser/joinedGroups/users/<id | userPrincipalName>/appRoleAssignments
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_approleassignments"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<objectId>/appRoleAssignments
+GET https://graph.microsoft.com/beta/groups/users/<id | userPrincipalName>/appRoleAssignments
 ```
 ##### Response
 Here is an example of the response.

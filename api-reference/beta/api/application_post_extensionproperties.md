@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/<objectId>/extensionProperties
+POST /applications/users/<id | userPrincipalName>/extensionProperties
 
 ```
 ### Request headers

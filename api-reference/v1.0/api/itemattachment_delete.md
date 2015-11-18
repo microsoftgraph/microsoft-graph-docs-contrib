@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 
 ```http
 DELETE /users/<id | userPrincipalName>/events/<id>/attachments/<id>
-DELETE /groups/<objectId>/events/<id>/attachments/<id>
+DELETE /groups/users/<id | userPrincipalName>/events/<id>/attachments/<id>
 DELETE /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
 
 ```

@@ -17,7 +17,7 @@ GET /me/calendarGroup/calendars/<id>/events
 GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/events
 GET /me/calendarGroups/<id>/calendars/<id>/events
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
-GET /groups/<objectId>/calendar/events
+GET /groups/users/<id | userPrincipalName>/calendar/events
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

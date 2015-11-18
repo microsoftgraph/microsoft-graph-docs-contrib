@@ -17,7 +17,7 @@ PATCH /me/calendarGroup/calendars/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
 PATCH /me/calendarGroups/<id>/calendars/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
-PATCH /groups/<objectId>/calendar
+PATCH /groups/users/<id | userPrincipalName>/calendar
 ```
 ### Request headers
 | Name       | Type | Description|

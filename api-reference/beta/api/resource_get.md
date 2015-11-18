@@ -10,7 +10,7 @@ Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or No
 GET /me/notes/resources/<id>
 GET /users/<mail>/notes/resources/<id>
 GET /users/<id | userPrincipalName>/notes/resources/<id>
-GET /groups/<objectId>/notes/resources/<id>
+GET /groups/users/<id | userPrincipalName>/notes/resources/<id>
 ```
 
 ### Request headers
