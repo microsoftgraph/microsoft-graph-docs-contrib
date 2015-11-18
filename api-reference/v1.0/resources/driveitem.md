@@ -22,6 +22,7 @@ For example, if an item behaves as a [folder](folder.md), it will have the **fol
 | [Download content](../api/item_downloadcontent.md)| See API for details| Download the contents for an item.|
 | [Upload content](../api/item_uploadcontent.md)| See API for details| The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.|
 
+
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

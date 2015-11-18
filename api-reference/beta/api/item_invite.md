@@ -1,7 +1,6 @@
 # Send a sharing invitation 
 
 Sends a sharing invitation to an existing item. A sharing invitation creates a unique sharing link and sends an email to the recipient of the invitation that includes the sharing link.
-Using the invite action is more secure than creating a sharing link, because the link is only valid for the recipient of the sharing invitation and cannot be reused by other users.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
@@ -46,7 +45,7 @@ Here is an example of the request.
   "name": "item_invite"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/Microsoft.Graph.invite
+POST https://graph.microsoft.com/beta/drive/root/Microsoft.Graph.invite
 Content-type: application/json
 Content-length: 313
 
