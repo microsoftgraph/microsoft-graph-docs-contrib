@@ -80,7 +80,7 @@ In most cases, a HEAD request will behave the same way as a GET request. There a
 
 1. HEAD requests will only return the corresponding GET request's headers. This is standard practice for a HEAD response.
 2. HEAD requests will not automatically provision a
-[special folder](resources/specialfolder.md). Instead, if a special folder is not present, a `404` error will be returned.
+[special folder](../resources/specialfolder.md). Instead, if a special folder is not present, a `404` error will be returned.
 
 In this example, you can see that requesting the root of your OneDrive will respond with simply `200 OK`.
 

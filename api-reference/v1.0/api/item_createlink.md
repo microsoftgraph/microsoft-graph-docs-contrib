@@ -37,7 +37,7 @@ In the request body, you define the type of sharing link. A `view` link allows t
 
 ### Response
 
-If successful, this method returns a single [Permission](.resources/permission.md)
+If successful, this method returns a single [Permission](../resources/permission.md)
 resource in the response body that represents the requested sharing link permission.
 
 The service will first look at the current permissions and check
