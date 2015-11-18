@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "delete_permission"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
+DELETE https://graph.microsoft.com/beta/drive/root/permissions/<id>
 ```
 ##### Response
 Here is an example of the response.

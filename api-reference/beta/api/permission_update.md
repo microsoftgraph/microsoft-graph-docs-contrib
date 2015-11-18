@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "update_permission"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
+PATCH https://graph.microsoft.com/beta/drive/root/permissions/<id>
 Content-type: application/json
 Content-length: 762
 

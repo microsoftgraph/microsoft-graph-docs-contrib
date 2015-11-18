@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "get_permission"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
+GET https://graph.microsoft.com/beta/drive/root/permissions/<id>
 ```
 ##### Response
 Here is an example of the response.
