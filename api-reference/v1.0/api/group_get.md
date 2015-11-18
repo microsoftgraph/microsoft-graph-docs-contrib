@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of group object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -30,7 +30,9 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/groups/<id>
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -38,9 +40,10 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 ```http
 Content-type: application/json
-Content-length: 211
+Content-length: xxx
 
 {
+  "id": "id-value",
   "description": "description-value",
   "displayName": "displayName-value",
   "groupTypes": [
@@ -48,7 +51,15 @@ Content-length: 211
   ],
   "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "mailNickname-value",
+  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "onPremisesSyncEnabled": "onPremisesSyncEnabled-value",
+  "proxyAddresses": [
+    "proxyAddresses-value"
+   ],
+   "securityEnabled": "securityEnabled-value",
+   "visibility": "visibility-value"
 }
 ```
 
