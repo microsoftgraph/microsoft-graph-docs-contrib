@@ -15,8 +15,8 @@
 |[Activate DirectoryRole](../api/directoryrole_post_directoryroles.md) |[DirectoryRole](directoryrole.md)| Create a new DirectoryRole by posting to the directoryRoles collection.|
 |[List DirectoryRole](../api/directoryrole_list.md) | [DirectoryRole](directoryrole.md) collection |Get directoryRole object collection. |
 |[List DirectoryRoleTemplate](../api/directoryroletemplate_list.md) | [DirectoryRoleTemplate](directoryroletemplate.md) collection |Get directoryRoleTemplate object collection. |
-|[Create drive](../api/drive_post_drives.md) |[drive](drive.md)| Create a new drive by posting to the drives collection.|
 |[List drive](../api/drive_list.md) | [drive](drive.md) collection |Get drive object collection. |
+|[Get drive](../api/drive_get.md) | [drive](drive.md)  |Get drive object properties. |
 |[Create Group](../api/group_post_groups.md) |[Group](group.md)| Create a new Group by posting to the groups collection.|
 |[List Group](../api/group_list.md) | [Group](group.md) collection |Get group object collection. |
 |[Create oAuth2PermissionGrant](../api/oauth2permissiongrant_post_oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new oAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|

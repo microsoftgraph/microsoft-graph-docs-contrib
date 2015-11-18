@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /oauth2PermissionGrants/<objectId>
-PATCH /users/<id | userPrincipalName>/oauth2PermissionGrants/<objectId>
-PATCH /drive/root/createdByUser/oauth2PermissionGrants/<objectId>
+PATCH /oauth2PermissionGrants/<id>
+PATCH /users/<id | userPrincipalName>/oauth2PermissionGrants/<id>
+PATCH /drive/root/createdByUser/oauth2PermissionGrants/<id>
 ```
 ### Request headers
 | Name       | Type | Description|

@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<id | userPrincipalName>/manager
-PATCH /directoryObjects/<objectId>
-PATCH /contacts/<objectId>/manager
+PATCH /directoryObjects/<id>
+PATCH /contacts/<id>/manager
 ```
 ### Request headers
 | Name       | Type | Description|

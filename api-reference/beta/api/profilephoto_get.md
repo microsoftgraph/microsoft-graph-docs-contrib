@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API for:
 GET /me/photo/$value
 GET /users/<id>/photo/$value
 GET /users/<userPrincipalName>/photo/$value
-GET /groups/<objectId>/photo/$value
+GET /groups/<id>/photo/$value
 GET /me/contacts/<id>/photo/$value
 GET /users/<id>/contacts/<id>/photo/$value
 GET /users/<userPrincipalName>/contacts/<id>/photo/$value
@@ -27,7 +27,7 @@ GET /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>/ph
 GET /me/photo
 GET /users/<id>/photo
 GET /users/<userPrincipalName>/photo
-GET /groups/<objectId>/photo
+GET /groups/<id>/photo
 GET /me/contacts/<id>/photo
 GET /users/<id>/contacts/<id>/photo
 GET /users/<userPrincipalName>/contacts/<id>/photo

@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<id | userPrincipalName>/events/<id>/attachments/<id>
-DELETE /groups/<objectId>/events/<id>/attachments/<id>
+DELETE /groups/<id>/events/<id>/attachments/<id>
 DELETE /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
 
 ```

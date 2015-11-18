@@ -17,7 +17,7 @@ POST /me/calendarGroup/calendars/<id>/events
 POST /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/events
 POST /me/calendarGroups/<id>/calendars/<id>/events
 POST /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
-POST /groups/<objectId>/calendar/events
+POST /groups/<id>/calendar/events
 ```
 ### Request headers
 | Name       | Type | Description|

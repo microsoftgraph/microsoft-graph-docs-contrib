@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/<objectId>/owners
+GET /directoryRoles/<id>/owners
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -28,7 +28,7 @@ Here is an example of the request.
   "name": "get_owners"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directoryRoles/<objectId>/owners
+GET https://graph.microsoft.com/beta/directoryRoles/<id>/owners
 ```
 ##### Response
 Here is an example of the response.
