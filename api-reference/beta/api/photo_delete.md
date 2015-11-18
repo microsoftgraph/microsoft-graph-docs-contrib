@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "delete_photo"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<id>/photo
+DELETE https://graph.microsoft.com/beta/users/<id>/photo
 ```
 ##### Response
 Here is an example of the response.

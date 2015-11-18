@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "get_thumbnailset"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/drive/root/thumbnails/<id>
+GET https://graph.microsoft.com/v1.0/drive/root/thumbnails/<id>
 ```
 ##### Response
 Here is an example of the response.

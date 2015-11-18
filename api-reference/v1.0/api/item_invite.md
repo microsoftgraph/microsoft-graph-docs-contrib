@@ -1,6 +1,6 @@
 # Send a sharing invitation 
 
-Sends a sharing invitation to an existing item. A sharing invitation creates a unique sharing link and sends an email to the recipient of the invitation that includes the sharing link.
+Sends a sharing invitation to an existing item. A sharing invitation creates a unique sharing link and sends an email to the recipient of the invitation that includes the sharing link. 
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
@@ -126,6 +126,7 @@ Content-length: 939
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "item: invite",

@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "delete_thumbnailset"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/drive/root/thumbnails/<id>
+DELETE https://graph.microsoft.com/v1.0/drive/root/thumbnails/<id>
 ```
 ##### Response
 Here is an example of the response.

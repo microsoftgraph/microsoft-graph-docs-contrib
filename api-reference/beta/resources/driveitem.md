@@ -10,19 +10,18 @@ For example, if an item behaves as a [folder](folder.md), it will have the **fol
 | [Get item](../api/item_get.md)                       | [driveitem](driveitem.md)                            | Read properties and relationships of item object.                                      |
 | [Create item](../api/item_post_children.md)          | [driveitem](driveitem.md)                            | Create a new item by posting to the children collection.                               |
 | [List children](../api/item_list_children.md)        | [driveitem](driveitem.md) collection                 | Get a children object collection.                                                      |
-| [Create permission](../api/item_post_permissions.md) | [permission](permission.md)                | Create a new permission by posting to the permissions collection.                      |
+| [Create permission](../api/item_invite.md) | [permission](permission.md)                | Create a new permission by sending a sharing invitation.                      |
 | [List permissions](../api/item_list_permissions.md)  | [permission](permission.md) collection     | Get a permission object collection.                                                    |
 | [List thumbnails](../api/item_list_thumbnails.md)    | [thumbnailSet](thumbnailset.md) collection | Get a thumbnailSet object collection.                                                  |
-| [update](../api/item_update.md)                      | [driveitem](driveitem.md)                            | Update item object.                                                                    |
-| [delete](../api/item_delete.md)                      | None                                       | Delete item object.                                                                    |
-| [copy](../api/item_copy.md)                          | [driveitem](driveitem.md)                            | Copy an item to another location in the drive.                                         |
-| [createLink](../api/item_createlink.md)              | [permission](permission.md)                | Create a sharing link to allow users to access the content without signing in.         |
-| [invite](../api/item_invite.md)                      | [permission](permission.md) collection     | Invite users to access the item by adding permissions and sending them a notification. |
-| [search](../api/item_search.md)                      | [driveitem](driveitem.md) collection                 | Search for items matching a query.                                                     |
+| [Update](../api/item_update.md)                      | [driveitem](driveitem.md)                            | Update item object.                                                                    |
+| [Delete](../api/item_delete.md)                      | None                                       | Delete item object.                                                                    |
+| [CreateLink](../api/item_createlink.md)              | [permission](permission.md)                | Create a sharing link to allow users to access the content without signing in.         |
+| [Search](../api/item_search.md)                      | [driveitem](driveitem.md) collection                 | Search for items matching a query.                                                     |
 | [Copy](../api/item_copy.md)                      | [driveitem](driveitem.md)                  | Creates a copy of an item (including any children) on OneDrive, under a new parent.|
 | [Move](../api/item_move.md)                      | [driveitem](driveitem.md)                  | Update the parent folder for an item by ID or path. To move an item, you update its parentReference property.|
 | [Download content](../api/item_downloadcontent.md)| See API for details| Download the contents for an item.|
 | [Upload content](../api/item_uploadcontent.md)| See API for details| The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.|
+
 
 
 ### Properties
