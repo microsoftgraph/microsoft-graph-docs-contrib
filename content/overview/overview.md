@@ -1,9 +1,11 @@
 
 
+
+# Overview of Microsoft Graph
+
 |  ![](./images/GitHub-Mark-64px.png) | **Contribute to this content** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).  |
 |---|:---|
 
-# Overview of Microsoft Graph
 
 Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (**https://graph.microsoft.com**). Using the Microsoft Graph, you can turn formerly difficult or complex queries into simple navigations. 
  
