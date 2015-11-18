@@ -6,9 +6,9 @@ One of the following **scopes** is required to execute this API: _Calendars.Read
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/events/<id>/Microsoft.Graph.decline
-POST /groups/<id>/events/<id>/Microsoft.Graph.decline
-POST /users/<id | userPrincipalName>/calendarView/<id>/Microsoft.Graph.decline
+POST /users/<id | userPrincipalName>/events/<id>/microsoft.graph.decline
+POST /groups/<id>/events/<id>/microsoft.graph.decline
+POST /users/<id | userPrincipalName>/calendarView/<id>/microsoft.graph.decline
 
 ```
 ### Request headers

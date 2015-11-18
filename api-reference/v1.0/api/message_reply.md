@@ -6,9 +6,9 @@ One of the following **scopes** is required to execute this API: _Mail.Send_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/messages/<id>/Microsoft.Graph.reply
-POST /drive/root/createdByUser/messages/<id>/Microsoft.Graph.reply
-POST /drive/root/lastModifiedByUser/messages/<id>/Microsoft.Graph.reply
+POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.reply
+POST /drive/root/createdByUser/messages/<id>/microsoft.graph.reply
+POST /drive/root/lastModifiedByUser/messages/<id>/microsoft.graph.reply
 
 ```
 ### Request headers

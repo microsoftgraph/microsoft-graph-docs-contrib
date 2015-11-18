@@ -6,9 +6,9 @@ One of the following **scopes** is required to execute this API: _Mail.ReadWrite
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/messages/<id>/Microsoft.Graph.move
-POST /drive/root/createdByUser/messages/<id>/Microsoft.Graph.move
-POST /drive/root/lastModifiedByUser/messages/<id>/Microsoft.Graph.move
+POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.move
+POST /drive/root/createdByUser/messages/<id>/microsoft.graph.move
+POST /drive/root/lastModifiedByUser/messages/<id>/microsoft.graph.move
 
 ```
 ### Request headers

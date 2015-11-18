@@ -6,9 +6,9 @@ One of the following **scopes** is required to execute this API: _Calendars.Read
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/events/<id>/Microsoft.Graph.snoozeReminder
-POST /groups/<id>/events/<id>/Microsoft.Graph.snoozeReminder
-POST /users/<id | userPrincipalName>/calendarView/<id>/Microsoft.Graph.snoozeReminder
+POST /users/<id | userPrincipalName>/events/<id>/microsoft.graph.snoozeReminder
+POST /groups/<id>/events/<id>/microsoft.graph.snoozeReminder
+POST /users/<id | userPrincipalName>/calendarView/<id>/microsoft.graph.snoozeReminder
 
 ```
 ### Request headers

@@ -6,7 +6,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/Microsoft.Graph.resetUnseenCount
+POST /groups/<id>/microsoft.graph.resetUnseenCount
 ```
 ### Request headers
 | Name       | Type | Description|

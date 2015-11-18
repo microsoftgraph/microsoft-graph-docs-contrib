@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/mailFolders/<id>/move
-POST /users/<id | userPrincipalName>/mailFolders/<id>/Microsoft.Graph.move
+POST /users/<id | userPrincipalName>/mailFolders/<id>/microsoft.graph.move
 ```
 ### Request headers
 | Header       | Value |

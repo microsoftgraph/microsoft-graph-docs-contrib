@@ -6,7 +6,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/Microsoft.Graph.sendMail
+POST /users/<id | userPrincipalName>/microsoft.graph.sendMail
 ```
 ### Request headers
 | Header       | Value |
