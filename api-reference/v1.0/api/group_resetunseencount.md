@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "group_resetunseencount"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/resetUnseenCount
+POST https://graph.microsoft.com/v1.0/groups/<id>/microsoft.graph.resetUnseenCount
 ```
 
 ##### Response
