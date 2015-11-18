@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/<id>/conversations/<id>
-DELETE /groups/users/<id | userPrincipalName>/conversations/<id>
+DELETE /groups/<objectId>/conversations/<id>
 ```
 ### Request headers
 | Name       | Type | Description|

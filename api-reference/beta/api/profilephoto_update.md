@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API for:
 PATCH /me/photo/$value
 PATCH /users/<id>/photo/$value
 PATCH /users/<userPrincipalName>/photo/$value
-PATCH /groups/users/<id | userPrincipalName>/photo/$value
+PATCH /groups/<objectId>/photo/$value
 PATCH /me/contacts/<id>/photo/$value
 PATCH /users/<id>/contacts/<id>/photo/$value
 PATCH /users/<userPrincipalName>/contacts/<id>/photo/$value

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /organization/users/<id | userPrincipalName>
+DELETE /organization/<objectId>
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "delete_organization"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/organization/users/<id | userPrincipalName>
+DELETE https://graph.microsoft.com/beta/organization/<objectId>
 ```
 ##### Response
 Here is an example of the response.

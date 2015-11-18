@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/calendar/events
-POST /groups/users/<id | userPrincipalName>/calendar/events
+POST /groups/<objectId>/calendar/events
 POST /drive/root/createdByUser/calendar/events
 
 ```

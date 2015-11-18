@@ -10,7 +10,7 @@ Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 DELETE /me/notes/pages/<id>
 DELETE /users/<mail>/notes/pages/<id>
 DELETE /users/<id | userPrincipalName>/notes/pages/<id>
-DELETE /groups/users/<id | userPrincipalName>/notes/pages/<id>
+DELETE /groups/<objectId>/notes/pages/<id>
 ```
 ### Request headers
 | Name       | Type | Description|

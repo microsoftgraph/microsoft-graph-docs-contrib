@@ -10,7 +10,7 @@ Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or No
 GET /me/notes/notebooks/<id>
 GET /users/<mail>/notes/notebooks/<id>
 GET /users/<id | userPrincipalName>/notes/notebooks/<id>
-GET /groups/users/<id | userPrincipalName>/notes/notebooks/<id>
+GET /groups/<objectId>/notes/notebooks/<id>
 ```
 ### Optional query parameters
 This method supports the `select` and `expand` [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

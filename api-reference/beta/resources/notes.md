@@ -17,13 +17,13 @@ Only user and group notebooks on Office 365 are supported. Accessing consumer no
 ```
 https://graph.microsoft.com/beta/me/notes/ (current user)
 https://graph.microsoft.com/beta/users/<mail>/notes/
-https://graph.microsoft.com/beta/users/users/<id | userPrincipalName>/notes/
+https://graph.microsoft.com/beta/users/<objectId>/notes/
 ```
 
 **Group notebooks** To access notebooks that are owned by a group, use the following service root URL:
 
 ```
-https://graph.microsoft.com/beta/groups/users/<id | userPrincipalName>/notes/
+https://graph.microsoft.com/beta/groups/<objectId>/notes/
 ```
 
 The following permission scopes provide levels of access to OneNote notebooks. Choosing permission scopes depends both on the location of the notebooks you're targeting and your app's functionality. 

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /contacts/users/<id | userPrincipalName>/memberOf
+POST /contacts/<objectId>/memberOf
 
 ```
 ### Request headers

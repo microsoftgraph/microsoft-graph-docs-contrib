@@ -17,7 +17,7 @@ DELETE /me/calendarGroup/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
 DELETE /me/calendarGroups/<id>/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
-DELETE /groups/users/<id | userPrincipalName>/calendar
+DELETE /groups/<objectId>/calendar
 ```
 ### Request headers
 | Name           |  Type    | Description|

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/users/<id | userPrincipalName>/appRoleAssignments
-POST /users/<id | userPrincipalName>/joinedGroups/users/<id | userPrincipalName>/appRoleAssignments
-POST /drive/root/createdByUser/joinedGroups/users/<id | userPrincipalName>/appRoleAssignments
+POST /groups/<objectId>/appRoleAssignments
+POST /users/<id | userPrincipalName>/joinedGroups/<objectId>/appRoleAssignments
+POST /drive/root/createdByUser/joinedGroups/<objectId>/appRoleAssignments
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_approleassignment_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/users/<id | userPrincipalName>
+POST https://graph.microsoft.com/beta/groups/<objectId>
 ```
 In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
 ##### Response
