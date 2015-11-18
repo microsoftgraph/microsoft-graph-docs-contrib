@@ -1,4 +1,4 @@
-# Call the Microsoft Graph in an Android app
+# Call Microsoft Graph in an Android app
 
 In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [Office 365 Android Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview) to explain the main concepts that you have to implement in your app.
 

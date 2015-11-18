@@ -1,4 +1,4 @@
-# Call the Microsoft Graph in an ASP.NET MVC app 
+# Call Microsoft Graph in an ASP.NET MVC app 
 
 In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. This topic won't create an app from scratch. We use code from [Office 365 ASP.NET MVC Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-AspNetMVC-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
 
@@ -324,7 +324,7 @@ The **Logout** method (see HomeController.cs file) shows how this is done.
 ```
 
 ##Next steps
-The Microsoft Graph is a very powerful, unifying API that can be used to interact with all kinds of Microsoft data. Check out the [Microsoft Graph API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API. 
-We invite you to explore our other ASP.NET samples on [GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-asp).
+The Microsoft Graph is a very powerful, unifying API that can be used to interact with all kinds of Microsoft data. Check out the Microsoft Graph API reference to explore what else you can accomplish with the Microsoft Graph API. 
+Explore our other ASP.NET samples on [GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-asp).
 
 

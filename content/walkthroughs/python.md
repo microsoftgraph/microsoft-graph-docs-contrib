@@ -1,4 +1,4 @@
-# Call the Microsoft Graph in a Python app 
+# Call Microsoft Graph in a Python app 
 
 In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. We use code from the [Office 365 Python Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Python-Microsoft-Graph-Connect) to explain the main concepts that you have to implement in your app.
 
