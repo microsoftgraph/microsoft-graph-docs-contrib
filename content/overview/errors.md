@@ -45,8 +45,9 @@ to the HTTP status code returned. Here is an example of a full JSON error body.
   "error": {
     "code": "invalidRange",
     "message": "Uploaded fragment overlaps with existing data.",
-    "innererror": {
-      "code": "fragmentOverlap"
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
     }
   }
 }
