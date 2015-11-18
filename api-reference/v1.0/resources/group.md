@@ -33,7 +33,8 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|Return all the groups that the group is a member of. The check is transitive.|
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The check is transitive. |
-
+|[addFavorite](../api/group_addfavorite.md)|None|Add the group to the list of the current user's favorite groups. |
+|[removeFavorite](../api/group_removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. |
 
     
 ### Properties
