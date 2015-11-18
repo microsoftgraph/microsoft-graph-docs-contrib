@@ -324,7 +324,7 @@ The **Logout** method (see HomeController.cs file) shows how this is done.
 ```
 
 ##Next steps
-The Microsoft Graph is a very powerful, unifying API that can be used to interact with all kinds of Microsoft data. Check out the Microsoft Graph API reference to explore what else you can accomplish with the Microsoft Graph API. 
+The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with the Microsoft Graph API.
 Explore our other ASP.NET samples on [GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-asp).
 
 

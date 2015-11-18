@@ -139,7 +139,7 @@ end
 > **Note:** <br />
 > The request must also send a **Content-Type** header with a value accepted by the Microsoft Graph API, for example, `application/json;odata.metadata=minimal;odata.streaming=true`.
 
-The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API.
+The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with the Microsoft Graph API.
 
 <!--## Additional resources
 

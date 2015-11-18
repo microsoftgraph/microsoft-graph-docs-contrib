@@ -136,7 +136,7 @@ To identify our requests to the Graph API, our requests must be signed with an `
 
 `Authorization: Bearer <access token>`
 
-Using `adal-node`, combined with our [authentication logic from the previous section](#authcode), we can now use our access token to sign requests.
+Using `adal-node`, combined with our authentication logic from the previous section, we can now use our access token to sign requests.
 
 ```javascript
 /* GET home page. */

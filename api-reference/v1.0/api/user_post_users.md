@@ -27,7 +27,7 @@ The following table shows the properties that are required when you create a use
 |displayName |string |The name to display in the address book for the user.| 
 |onPremisesImmutableId |string |Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.| 
 |mailNickname |string |The mail alias for the user.|
-|passwordProfile|[PasswordProfile](passwordprofile.md) |The password profile for the user.| 
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.| 
 |userPrincipalName |string |The user principal name (someuser@contoso.com).| 
 
 ### Response

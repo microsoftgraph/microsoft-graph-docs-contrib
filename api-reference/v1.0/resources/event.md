@@ -59,7 +59,7 @@ An event in a calendar.
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](#FileAttachmentResource) and [ItemAttachment](#FileAttachmentResource) attachments for the event. Navigation property. Read-only. Nullable.|
+|attachments|[Attachment](attachment.md) collection|The collection of [fileAttachment](fileAttachment.md) and [itemAttachment](itemAttachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
 
