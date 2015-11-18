@@ -1,13 +1,12 @@
-# group: unsubscribeByMail
-
+# group: addFavorite
+Add the group to the list of the current user's favorite groups.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Group.ReadWrite.All*
+The following **scopes** are required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/microsoft.graph.unsubscribeByMail
+POST /groups/<id>/microsoft.graph.addFavorite
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -15,7 +14,7 @@ POST /groups/<id>/microsoft.graph.unsubscribeByMail
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
-
+Do not supply a request body for this method.
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
@@ -25,18 +24,18 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "group_unsubscribebymail"
+  "name": "group_addfavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/microsoft.graph.unsubscribeByMail
+POST https://graph.microsoft.com/beta/groups/<id>/microsoft.graph.addFavorite
 ```
 
 ##### Response
-##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": false,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -46,7 +45,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "group: unsubscribeByMail",
+  "description": "group: addFavorite",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

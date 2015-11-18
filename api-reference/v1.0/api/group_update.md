@@ -3,6 +3,7 @@
 Update the properties of group object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
+*Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

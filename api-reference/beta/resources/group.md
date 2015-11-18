@@ -131,6 +131,8 @@ Here is a JSON representation of the resource
 |[Checkmembergroups](../api/group_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/group_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/group_getmemberobjects.md)|String collection||
+|[addFavorite](../api/group_addfavorite.md)|None|Add the group to the list of the current user's favorite groups. |
+|[removeFavorite](../api/group_removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

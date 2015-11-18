@@ -3,10 +3,11 @@
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
+*Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/Microsoft.Graph.subscribeByMail
+POST /groups/<id>/microsoft.graph.subscribeByMail
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -27,7 +28,7 @@ Here is an example of the request.
   "name": "group_subscribebymail"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/subscribeByMail
+POST https://graph.microsoft.com/v1.0/groups/<id>/microsoft.graph.subscribeByMail
 ```
 
 ##### Response
