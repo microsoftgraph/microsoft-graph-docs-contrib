@@ -11,7 +11,7 @@
 
 ##Signing in Microsoft account and Azure AD users with a single authentication model
 
-The converged authentication authentication model preview enables you to create apps that accept both work and school (Azure AD) as well as personal (Microsoft account) identities. 
+The converged authentication model preview enables you to create apps that accept both work and school (Azure AD) as well as personal (Microsoft account) identities. 
 
 In the past, an app developer who wanted to support both Microsoft accounts and Azure Active Directory was required to integrate with two completely separate systems. Now you can build apps using the converged authentication model, which allows you to sign users in with both types of accounts. One simple process allows you to immediately reach an audience that spans millions of users with both personal and work/school accounts.   
 

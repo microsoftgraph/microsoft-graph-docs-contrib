@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "create_item_from_drive"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive
+POST https://graph.microsoft.com/beta/drive
 ```
 In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
 ##### Response

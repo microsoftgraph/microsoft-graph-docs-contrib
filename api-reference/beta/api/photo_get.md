@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_photo"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<id>/photo
+GET https://graph.microsoft.com/beta/users/<id>/photo
 ```
 ##### Response
 Here is an example of the response.

@@ -10,7 +10,7 @@ For example, if an item behaves as a [folder](folder.md), it will have the **fol
 | [Get item](../api/item_get.md)                       | [driveitem](driveitem.md)                            | Read properties and relationships of item object.                                      |
 | [Create item](../api/item_post_children.md)          | [driveitem](driveitem.md)                            | Create a new item by posting to the children collection.                               |
 | [List children](../api/item_list_children.md)        | [driveitem](driveitem.md) collection                 | Get a children object collection.                                                      |
-| [Create permission](../api/item_post_permissions.md) | [permission](permission.md)                | Create a new permission by posting to the permissions collection.                      |
+| [Create permission](../api/item_invite.md) | [permission](permission.md)                | Create a new permission by sending a sharing invitation.                      |
 | [List permissions](../api/item_list_permissions.md)  | [permission](permission.md) collection     | Get a permission object collection.                                                    |
 | [List thumbnails](../api/item_list_thumbnails.md)    | [thumbnailSet](thumbnailset.md) collection | Get a thumbnailSet object collection.                                                  |
 | [Update](../api/item_update.md)                      | [driveitem](driveitem.md)                            | Update item object.                                                                    |
@@ -21,6 +21,7 @@ For example, if an item behaves as a [folder](folder.md), it will have the **fol
 | [Move](../api/item_move.md)                      | [driveitem](driveitem.md)                  | Update the parent folder for an item by ID or path. To move an item, you update its parentReference property.|
 | [Download content](../api/item_downloadcontent.md)| See API for details| Download the contents for an item.|
 | [Upload content](../api/item_uploadcontent.md)| See API for details| The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.|
+
 
 ### Properties
 | Property	   | Type	|Description|
