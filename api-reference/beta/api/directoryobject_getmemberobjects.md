@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/manager/Microsoft.Graph.getMemberObjects
-POST /directoryObjects/<objectId>/Microsoft.Graph.getMemberObjects
-POST /contacts/<objectId>/manager/Microsoft.Graph.getMemberObjects
+POST /directoryObjects/<id>/Microsoft.Graph.getMemberObjects
+POST /contacts/<id>/manager/Microsoft.Graph.getMemberObjects
 
 ```
 ### Request headers

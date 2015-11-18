@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<id | userPrincipalName>/events/<id>/extensions/<id>
-DELETE /groups/<objectId>/events/<id>/extensions/<id>
+DELETE /groups/<id>/events/<id>/extensions/<id>
 DELETE /users/<id | userPrincipalName>/contacts/<id>/extensions/<id>
 
 ```

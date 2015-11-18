@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<objectId>/threads/<id>/posts/<id>/Microsoft.Graph.reply
-POST /groups/<objectId>/conversations/<id>/threads/<id>/posts/<id>/Microsoft.Graph.reply
-POST /users/<id | userPrincipalName>/joinedGroups/<objectId>/threads/<id>/posts/<id>/Microsoft.Graph.reply
+POST /groups/<id>/threads/<id>/posts/<id>/Microsoft.Graph.reply
+POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/Microsoft.Graph.reply
+POST /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/posts/<id>/Microsoft.Graph.reply
 
 ```
 ### Request headers

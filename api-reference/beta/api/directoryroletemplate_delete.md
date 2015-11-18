@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directoryRoleTemplates/<objectId>
+DELETE /directoryRoleTemplates/<id>
 
 ```
 ### Request headers

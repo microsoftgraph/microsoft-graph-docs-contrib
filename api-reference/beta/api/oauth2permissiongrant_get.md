@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /oauth2PermissionGrants/<objectId>
-GET /users/<id | userPrincipalName>/oauth2PermissionGrants/<objectId>
-GET /drive/root/createdByUser/oauth2PermissionGrants/<objectId>
+GET /oauth2PermissionGrants/<id>
+GET /users/<id | userPrincipalName>/oauth2PermissionGrants/<id>
+GET /drive/root/createdByUser/oauth2PermissionGrants/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

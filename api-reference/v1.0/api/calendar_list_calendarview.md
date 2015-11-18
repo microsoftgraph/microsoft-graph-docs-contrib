@@ -18,7 +18,7 @@ GET /me/calendarGroup/calendars/<id>/calendarView?startDateTime={start_datetime}
 GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /me/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /groups/<objectId>/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /groups/<id>/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
