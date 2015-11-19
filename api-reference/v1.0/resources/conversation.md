@@ -7,9 +7,8 @@ A conversation is a collection of [threads](#ConversationThreadResource). All th
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get conversation](../api/conversation_get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
-|[Create thread](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md)| Create a new thread by posting to the threads collection.|
 |[List threads](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) collection| Get a thread object collection.|
-|[Update](../api/conversation_update.md) | [conversation](conversation.md)  |Update conversation object. |
+~|[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
 |[Delete](../api/conversation_delete.md) | None |Delete conversation object. |
 
 

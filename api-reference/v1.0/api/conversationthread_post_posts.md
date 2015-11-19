@@ -16,6 +16,7 @@ POST /groups/<id>/conversations/<id>/threads/<id>/posts
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply a JSON representation of [post](../resources/post.md) object.

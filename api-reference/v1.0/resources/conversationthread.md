@@ -6,8 +6,8 @@ A conversationThread is a collection of [posts](post.md) within this thread.
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
-|[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the posts collection.|
-|[List posts](../api/conversationthread_list_posts.md) |[Post](post.md) collection| Get a Post object collection.|
+|[Create Post](../api/conversationthread_post_posts.md) |post](post.md)| Create a new Post by posting to the posts collection.|
+|[List Posts](../api/conversationthread_list_posts.md) |[post](post.md) collection| Get a Post object collection.|
 |[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
 |[Delete](../api/conversationthread_delete.md) | None |Delete conversationThread object. |
 |[reply](../api/conversationthread_reply.md)|None|Reply to this thread by creating a new Post entity|
