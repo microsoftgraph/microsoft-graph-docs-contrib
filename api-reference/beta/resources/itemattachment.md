@@ -45,7 +45,6 @@ Here is a JSON representation of the resource
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get itemAttachment](../api/itemattachment_get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
-|[Update](../api/itemattachment_update.md) | [itemAttachment](itemattachment.md)	|Update itemAttachment object. |
 |[Delete](../api/itemattachment_delete.md) | None |Delete itemAttachment object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

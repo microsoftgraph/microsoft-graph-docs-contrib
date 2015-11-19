@@ -2,10 +2,18 @@
 
 Retrieve the properties and relationships of itemattachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
+
+* If accessing attachments in Messages: _Mail.Read_
+* If accessing attachments in Events: _Calendars.Read_
+* If accessing attachments in Posts: _Groups.Read_
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /users/<id | userPrincipalName>/events/<id>/attachments/<id>
+GET /groups/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
 
 ```
 ### Optional query parameters
@@ -28,7 +36,7 @@ Here is an example of the request.
   "name": "get_itemattachment"
 }-->
 ```http
-
+GET https://graph.microsoft.com/beta/me/events/<id>/attachments/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -42,6 +50,7 @@ Content-type: application/json
 Content-length: 162
 
 {
+"@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "lastModifiedDateTime": "datetime-value",
   "name": "name-value",
   "contentType": "contentType-value",

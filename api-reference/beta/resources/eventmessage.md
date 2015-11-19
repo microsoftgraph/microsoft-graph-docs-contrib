@@ -36,7 +36,7 @@ Here is a JSON representation of the resource
   "isRead": true,
   "isReadReceiptRequested": true,
   "lastModifiedDateTime": "String (timestamp)",
-  "meetingMessageType": "String",
+  "meetingMessageType": "microsoft.graph.meetingMessageType",
   "parentFolderId": "string",
   "receivedDateTime": "String (timestamp)",
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
@@ -99,10 +99,10 @@ Here is a JSON representation of the resource
 |[List extensions](../api/eventmessage_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)	|Update eventMessage object. |
 |[Delete](../api/eventmessage_delete.md) | None |Delete eventMessage object. |
-|[copy](../api/eventmessage_copy.md)|[Message](message.md)||
-|[createForward](../api/eventmessage_createforward.md)|[Message](message.md)||
-|[createReply](../api/eventmessage_createreply.md)|[Message](message.md)||
-|[createReplyAll](../api/eventmessage_createreplyall.md)|[Message](message.md)||
+|[copy](../api/message_copy.md)|[Message](message.md)||
+|[createForward](../api/message_createforward.md)|[Message](message.md)||
+|[createReply](../api/message_createreply.md)|[Message](message.md)||
+|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)||
 |[forward](../api/message_forward.md)|None|Forwards a message. The message is then saved in the Sent Items folder.|
 |[move](../api/message_move.md)|[Message](message.md)|Move the message to a mailFolder.|
 |[reply](../api/message_reply.md)|None|Replys to the sender of a message. The message is then saved in the Sent Items folder.|

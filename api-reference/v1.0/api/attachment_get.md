@@ -46,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 File Attachment
 Content-type: application/json
-Content-length: 162
+Content-length: 199
 
     {
       "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
