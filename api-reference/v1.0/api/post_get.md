@@ -4,8 +4,6 @@ Retrieve the properties and relationships of post object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 
-* Group.Read 
-* Group.ReadWrite
 * Group.Read.All
 * Group.Readwrite.All
 

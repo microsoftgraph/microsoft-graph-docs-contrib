@@ -2,7 +2,10 @@
 
 Update the properties of post object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
+
+* Group.Readwrite.All
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -10,27 +13,18 @@ PATCH /groups/<id>/threads/<id>/posts/<id>
 PATCH /groups/<id>/conversations/<id>/threads/<id>/posts/<id>
 ```
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|body|ItemBody||
+|body|[itemBody](../resources/itemBody.md)||
 |categories|String||
-|changeKey|String||
-|conversationId|String||
-|conversationThreadId|String||
-|createdDateTime|DateTimeOffset||
-|from|Recipient||
-|hasAttachments|Boolean||
-|lastModifiedDateTime|DateTimeOffset||
-|newParticipants|Recipient||
-|receivedDateTime|DateTimeOffset||
-|sender|Recipient||
+|newParticipants|[recipient](../resources/recipient.md)||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [post](../resources/post.md) object in the response body.

@@ -2,7 +2,9 @@
 
 Delete conversationThread.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Group.ReadWrite.All*
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,9 +13,9 @@ DELETE /groups/<id>/conversations/<id>/threads/<id>
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
