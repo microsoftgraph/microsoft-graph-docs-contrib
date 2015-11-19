@@ -8,19 +8,19 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/conversations/<id>/threads
-POST /groups/<id>/conversations/<id>/threads
+
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
-In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
+In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns `201, Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 
 ### Example
 ##### Request

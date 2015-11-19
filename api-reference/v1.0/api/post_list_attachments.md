@@ -2,7 +2,11 @@
 
 Retrieve a list of attachment objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Groups.Read_ 
+One of the following **scopes** is required to execute this API:
+
+* Group.Read.All
+* Group.Readwrite.All
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,9 +16,9 @@ GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -46,14 +50,13 @@ Content-length: 215
   "value": [
     {
       "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "id": "id-value",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
       "contentBytes": "contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
-      "id": "id-value",
       "isInline": false,
-      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }

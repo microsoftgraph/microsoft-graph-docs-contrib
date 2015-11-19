@@ -2,7 +2,10 @@
 
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
+
+* Group.Readwrite.All
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,16 +14,16 @@ POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/microsoft.graph.rep
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|post|Post||
+|post|[post](../resources/post.md)||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.

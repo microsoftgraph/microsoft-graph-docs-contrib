@@ -2,7 +2,9 @@
 
 Use this API to create a new Post.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Group.ReadWrite.All*
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,16 +13,16 @@ POST /groups/<id>/conversations/<id>/threads/<id>/posts
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
-In the request body, supply a JSON representation of [Post](../resources/post.md) object.
+In the request body, supply a JSON representation of [post](../resources/post.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Post](../resources/post.md) object in the response body.
+If successful, this method returns `201, Created` response code and [post](../resources/post.md) object in the response body.
 
 ### Example
 ##### Request
@@ -40,8 +42,6 @@ Content-length: 414
     },
     "content": "content-value"
   },
-  "receivedDateTime": "datetime-value",
-  "hasAttachments": true,
   "from": {
     "emailAddress": {
       "name": "name-value",
@@ -54,7 +54,6 @@ Content-length: 414
       "address": "address-value"
     }
   },
-  "conversationThreadId": "conversationThreadId-value"
 }
 ```
 In the request body, supply a JSON representation of [post](../resources/post.md) object.

@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_drives"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drives
+GET https://graph.microsoft.com/beta/drives
 ```
 ##### Response
 Here is an example of the response.

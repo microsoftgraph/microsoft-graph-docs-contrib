@@ -1,12 +1,9 @@
 # Call Microsoft Graph in an iOS App
 
-In this article we look at the minimum tasks required to connect your application to Office 365 and calling the Microsoft Graph API. We use code from the [O365-iOS-Unified-API-Connect](https://github.com/OfficeDev/O365-iOS-Unified-API-Connect) to explain the main concepts that you have to implement in your app. This samples covers the core fundamentals for authenticating with Microsoft Azure Active Directory (AAD), and making a simple service call against the Office 365 mail service using the Microsoft Graph API (sending a mail). It's recommended that you clone or download the project from this repository to accompany this article. 
+In this article we look at the minimum tasks required to connect your application to Office 365 and calling the Microsoft Graph API. We use code from the [O365-iOS-Microsoft-Graph-Connect](https://github.com/OfficeDev/O365-iOS-Microsoft-Graph-Connect) to explain the main concepts that you have to implement in your app. This samples covers the core fundamentals for authenticating with Microsoft Azure Active Directory (AAD), and making a simple service call against the Office 365 mail service using the Microsoft Graph API (sending a mail). It's recommended that you clone or download the project from this repository to accompany this article. 
 
-The following is the screenshot of the send mail page.
 
-![Office 365 iOS Unified API Connect sample screenshot](./images/iOSConnect.png)
-
-This article references the [Microsoft Azure Active Directory Authentication Library (ADAL) for iOS and OSX](https://github.com/AzureAD/azure-activedirectory-library-for-objc), and the [O365-iOS-Unified-API-Connect](https://github.com/OfficeDev/O365-iOS-Unified-API-Connect) sample authenticates using this library. See this repository for more information on usage and implementation in your iOS project.
+This article references the [Microsoft Azure Active Directory Authentication Library (ADAL) for iOS and OSX](https://github.com/AzureAD/azure-activedirectory-library-for-objc), and the [O365-iOS-Microsoft-Graph-Connect](https://github.com/OfficeDev/O365-iOS-Microsoft-Graph-Connect) sample authenticates using this library. See this repository for more information on usage and implementation in your iOS project.
 
 
 ## Overview
@@ -24,7 +21,7 @@ To call the Microsoft Graph API, your iOS app must complete the following:
 Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
 With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
 
-Alternatively, see the section **Register your native app with the Azure Management Portal** in the article [Manually register your app with Azure AD so it can access Office 365 APIs](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually) for instructions on how to manually register the app, keep in mind the following details:
+Alternatively, see the section **Register your native app with the Azure Management Portal** in the article [Manually register your app with Azure AD so it can access Office 365 APIs](https://msdn.microsoft.com/office/office365/howto/add-common-consent-manually) for instructions on how to manually register the app, keep in mind the following details:
 
 * For the registration you'll need to supply a redirect URI. This a required value that specifies where a user will be redirected after a successful authentication attempt. If you don't specify the correct redirect URI, the authentication request will fail.
 * In the registration, the app must be granted the **Send mail as signed-in user permission** for the **Microsoft Graph**.  
@@ -57,7 +54,7 @@ Then initialize it with the location of the authority ("https://login.microsofto
 	self.context = [ADAuthenticationContext authenticationContextWithAuthority:self.authority]; 
 
 
-In the [O365-iOS-Unified-API-Connect](https://github.com/OfficeDev/O365-iOS-Unified-API-Connect) sample we created a singleton authentication class (**AuthenticationManager**) for demonstration purposes that is initialized with the authority and required parameters. Again, this class is merely an example on how to approach the authentication workflow. A code segment of interest: 
+In the [O365-iOS-Microsoft-Graph-Connect](https://github.com/OfficeDev/O365-iOS-Microsoft-Graph-Connect) sample we created a singleton authentication class (**AuthenticationManager**) for demonstration purposes that is initialized with the authority and required parameters. Again, this class is merely an example on how to approach the authentication workflow. A code segment of interest: 
 
 
 
@@ -98,7 +95,7 @@ token in the cache to authenticate client requests. This will result in a call t
 
 With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must append the access token to the HTTP request header under **Authorization**.
 
-The [O365-iOS-Unified-API-Connect](https://github.com/OfficeDev/O365-iOS-Unified-API-Connect) sample sends an email using the sendMail endpoint in the Microsoft Graph API. Again, our in our sample we created a singleton authentication class (AuthenticationManager) that is initialized with the access token. We'll need the access token to construct our request.
+The [O365-iOS-Microsoft-Graph-Connect](https://github.com/OfficeDev/O365-iOS-Microsoft-Graph-Connect) sample sends an email using the sendMail endpoint in the Microsoft Graph API. Again, our in our sample we created a singleton authentication class (AuthenticationManager) that is initialized with the access token. We'll need the access token to construct our request.
 
 
 
@@ -110,7 +107,7 @@ The [O365-iOS-Unified-API-Connect](https://github.com/OfficeDev/O365-iOS-Unified
     NSData *postData = [self mailContent];
     
 	//Microsoft Graph API endpoint for sending mail
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://graph.microsoft.com/beta/me/sendMail"]];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://graph.microsoft.com/v1.0/me/microsoft.graph.sendmail"]];
 
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
@@ -135,7 +132,7 @@ As you can see, the response is handled with the NSURLConnection delegates, name
 
 ## Next Steps
 
-If access token is expired, or about to expire, you can use ADAuthenticationContext’s **acquireTokenSilentWithResource:clientId:redirectUri:completionBlock:** to acquire a new access token. It's usage is covered in the [O365-iOS-Unified-API-Connect](https://github.com/OfficeDev/O365-iOS-Unified-API-Connect) sample. Also, you can find the code to clear your token cache and stored cookies.  
+If access token is expired, or about to expire, you can use ADAuthenticationContext’s **acquireTokenSilentWithResource:clientId:redirectUri:completionBlock:** to acquire a new access token. It's usage is covered in the [O365-iOS-Microsoft-Graph-Connect](https://github.com/OfficeDev/O365-iOS-Microsoft-Graph-Connect) sample. Also, you can find the code to clear your token cache and stored cookies.  
 
 The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API.
 

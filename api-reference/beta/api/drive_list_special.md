@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_special"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/special
+GET https://graph.microsoft.com/beta/drive/special
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

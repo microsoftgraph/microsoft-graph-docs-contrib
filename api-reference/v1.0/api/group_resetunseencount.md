@@ -14,6 +14,7 @@ POST /groups/<id>/microsoft.graph.resetUnseenCount
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
+Do not supply a request body for this method.
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -27,10 +28,9 @@ Here is an example of the request.
   "name": "group_resetunseencount"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/resetUnseenCount
+POST https://graph.microsoft.com/v1.0/groups/<id>/microsoft.graph.resetUnseenCount
 ```
 
-##### Response
 ##### Response
 Here is an example of the response. 
 <!-- {
