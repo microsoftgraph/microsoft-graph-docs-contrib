@@ -4,9 +4,9 @@ Delete an attachment from a calendar event or mail message.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-* If accessing attachments in Messages: _Mail.ReadWrite_
-* If accessing attachments in Events: _Calendars.ReadWrite_
-* If accessing attachments in Posts: _Groups.Read_
+* If accessing attachments in Messages: *Mail.ReadWrite*
+* If accessing attachments in Events: *Calendars.ReadWrite*
+* If accessing attachments in Posts: *Groups.ReadWrite*
  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
