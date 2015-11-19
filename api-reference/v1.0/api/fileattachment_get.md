@@ -4,8 +4,8 @@ Retrieve the properties and relationships of fileattachment object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-* If accessing attachments in Messages: _Mail.Read_
-* If accessing attachments in Events: _Calendars.Read_
+* If accessing attachments in Messages: *Mail.Read*
+* If accessing attachments in Events: *Calendars.Read*
  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
