@@ -2,7 +2,8 @@
 
 Delete message.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Mail.ReadWrite_ 
+One of the following **scopes** is required to execute this API: 
+*Mail.ReadWrite* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
