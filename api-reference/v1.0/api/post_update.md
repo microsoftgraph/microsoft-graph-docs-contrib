@@ -4,7 +4,6 @@ Update the properties of post object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-* Group.ReadWrite
 * Group.Readwrite.All
  
 ### HTTP request

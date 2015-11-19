@@ -8,23 +8,19 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/<id>/conversations/<id>
-PATCH /groups/<id>/conversations/<id>
+
 ```
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|Indicates whether the Conversation has at least one attachment.|
-|lastDeliveredDateTime|DateTimeOffset||
-|preview|String||
 |topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
-|uniqueSenders|String|All the users that sent a message to this Conversation.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [conversation](../resources/conversation.md) object in the response body.
@@ -42,12 +38,6 @@ Content-length: 181
 
 {
   "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "preview": "preview-value"
 }
 ```
 ##### Response

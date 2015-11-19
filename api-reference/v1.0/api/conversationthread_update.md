@@ -2,7 +2,9 @@
 
 Update the properties of conversationthread object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Group.ReadWrite.All*
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,23 +13,16 @@ PATCH /groups/<id>/conversations/<id>/threads/<id>
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ccRecipients|Recipient||
-|hasAttachments|Boolean||
-|isLocked|Boolean||
-|lastDeliveredDateTime|DateTimeOffset||
-|preview|String||
-|toRecipients|Recipient||
 |topic|String||
-|uniqueSenders|String||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.
@@ -44,28 +39,7 @@ Content-type: application/json
 Content-length: 419
 
 {
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
   "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ]
 }
 ```
 ##### Response

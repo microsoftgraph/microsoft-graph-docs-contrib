@@ -4,8 +4,6 @@ Retrieve a list of attachment objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-* Group.Read 
-* Group.ReadWrite
 * Group.Read.All
 * Group.Readwrite.All
  

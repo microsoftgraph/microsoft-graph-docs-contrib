@@ -4,7 +4,6 @@ Use this API to create a new Attachment.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 
-* Group.ReadWrite
 * Group.Readwrite.All
  
 ### HTTP request
