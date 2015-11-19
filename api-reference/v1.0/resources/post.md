@@ -7,9 +7,10 @@ Represents an individual Post item within a [converstaionThread](conversationthr
 |[Get post](../api/post_get.md) | [post](post.md) |Read properties and relationships of post object.|
 |[Create Attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
 |[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Create](../api/conversationthread_post_posts.md) |[post](post.md)| Create a new Post by posting to the posts collection.|
 |[Update](../api/post_update.md) | [post](post.md)  |Update post object. |
-|[forward](../api/post_forward.md)|None||
-|[reply](../api/post_reply.md)|None||
+|[Forward](../api/post_forward.md)|None||
+|[Reply](../api/post_reply.md)|None||
 
 ### Properties
 | Property	   | Type	|Description|
@@ -32,7 +33,7 @@ Represents an individual Post item within a [converstaionThread](conversationthr
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|inReplyTo|[Post](post.md)| Read-only.|
+|inReplyTo|[post](post.md)| Read-only.|
 
 
 ### JSON representation

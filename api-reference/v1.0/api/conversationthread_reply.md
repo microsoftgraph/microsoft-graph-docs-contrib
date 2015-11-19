@@ -16,6 +16,7 @@ POST /groups/<id>/conversations/<id>/threads/<id>/microsoft.graph.reply
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
@@ -60,12 +61,8 @@ Content-length: 1131
     ],
     "attachments": [
       {
-        "lastModifiedDateTime": "datetime-value",
         "name": "name-value",
         "contentType": "contentType-value",
-        "size": 99,
-        "isInline": true,
-        "id": "id-value"
       }
     ]
   }

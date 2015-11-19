@@ -16,6 +16,7 @@ POST /groups/<id>/conversations/<id>/threads/<id>/posts
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply a JSON representation of [post](../resources/post.md) object.
@@ -42,18 +43,12 @@ Content-length: 414
     },
     "content": "content-value"
   },
-  "from": {
+  "NewParticipants": [{
     "emailAddress": {
       "name": "name-value",
       "address": "address-value"
     }
-  },
-  "sender": {
-    "emailAddress": {
-      "name": "name-value",
-      "address": "address-value"
-    }
-  },
+  }]
 }
 ```
 In the request body, supply a JSON representation of [post](../resources/post.md) object.
