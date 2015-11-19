@@ -42,18 +42,12 @@ Content-length: 414
     },
     "content": "content-value"
   },
-  "from": {
+  "NewParticipants": [{
     "emailAddress": {
       "name": "name-value",
       "address": "address-value"
     }
-  },
-  "sender": {
-    "emailAddress": {
-      "name": "name-value",
-      "address": "address-value"
-    }
-  },
+  }]
 }
 ```
 In the request body, supply a JSON representation of [post](../resources/post.md) object.

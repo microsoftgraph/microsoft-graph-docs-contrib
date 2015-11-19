@@ -60,12 +60,8 @@ Content-length: 1131
     ],
     "attachments": [
       {
-        "lastModifiedDateTime": "datetime-value",
         "name": "name-value",
         "contentType": "contentType-value",
-        "size": 99,
-        "isInline": true,
-        "id": "id-value"
       }
     ]
   }

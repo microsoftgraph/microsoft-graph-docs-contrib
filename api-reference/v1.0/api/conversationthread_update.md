@@ -39,7 +39,7 @@ Content-type: application/json
 Content-length: 419
 
 {
-  "topic": "topic-value",
+  "isLocked": true
 }
 ```
 ##### Response
@@ -75,7 +75,8 @@ Content-length: 419
         "address": "address-value"
       }
     }
-  ]
+  ],
+  "isLocked": "true"
 }
 ```
 
