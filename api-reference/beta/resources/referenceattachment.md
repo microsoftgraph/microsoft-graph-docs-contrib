@@ -34,6 +34,12 @@ Here is a JSON representation of the resource
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |name|String||
 |size|Int32||
+|SourceUrl|String||
+|ProviderType|ReferenceAttachmentProviders||
+|ThumbnailUrl|String||
+|PreviewUrl|String||
+|Permission|ReferenceAttachmentPermissions||
+|IsFolder|Boolean||
 
 ### Relationships
 None
@@ -44,7 +50,6 @@ None
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get referenceAttachment](../api/referenceattachment_get.md) | [referenceAttachment](referenceattachment.md) |Read properties and relationships of referenceAttachment object.|
-|[Update](../api/referenceattachment_update.md) | [referenceAttachment](referenceattachment.md)	|Update referenceAttachment object. |
 |[Delete](../api/referenceattachment_delete.md) | None |Delete referenceAttachment object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

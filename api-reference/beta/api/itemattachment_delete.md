@@ -2,11 +2,17 @@
 
 Delete itemAttachment.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
+
+* If accessing attachments in Messages: _Mail.ReadWrite_
+* If accessing attachments in Events: _Calendars.ReadWrite_
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+DELETE /users/<id | userPrincipalName>/events/<id>/attachments/<id>
+DELETE /groups/<id>/events/<id>/attachments/<id>
+DELETE /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
 
 ```
 ### Request headers

@@ -2,11 +2,13 @@
 
 Delete eventMessage.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Mail.ReadWrite_ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+DELETE /users/<id | userPrincipalName>/messages/<id>
+DELETE /drive/root/createdByUser/messages/<id>
+DELETE /drive/root/lastModifiedByUser/messages/<id>
 
 ```
 ### Request headers
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "delete_eventmessage"
 }-->
 ```http
-
+DELETE https://graph.microsoft.com/beta/me/messages/<id>
 ```
 ##### Response
 Here is an example of the response. 

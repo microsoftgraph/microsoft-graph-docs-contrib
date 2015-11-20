@@ -50,7 +50,6 @@ None
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get fileAttachment](../api/fileattachment_get.md) | [fileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
-|[Update](../api/fileattachment_update.md) | [fileAttachment](fileattachment.md)	|Update fileAttachment object. |
 |[Delete](../api/fileattachment_delete.md) | None |Delete fileAttachment object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

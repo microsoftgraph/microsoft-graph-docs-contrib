@@ -2,7 +2,8 @@
 
 Retrieve the properties and relationships of message object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Mail.Read_  
+One of the following **scopes** is required to execute this API: 
+*Mail.Read*  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

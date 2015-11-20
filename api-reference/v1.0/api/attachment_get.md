@@ -4,9 +4,9 @@ Retrieve the properties and relationships of attachment object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-* If accessing attachments in Messages: _Mail.Read_
-* If accessing attachments in Events: _Calendars.Read_
-* If accessing attachments in Posts: _Groups.Read_
+* If accessing attachments in Messages: *Mail.Read*
+* If accessing attachments in Events: *Calendars.Read*
+* If accessing attachments in Posts: *Groups.Read*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 File Attachment
 Content-type: application/json
-Content-length: 162
+Content-length: 199
 
     {
       "@odata.type": "#Microsoft.OutlookServices.FileAttachment",

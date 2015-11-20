@@ -2,7 +2,6 @@
 
 A message or event that's attached to another message or event.
 
-
 ### Methods
 
 | Method       | Return Type  |Description|

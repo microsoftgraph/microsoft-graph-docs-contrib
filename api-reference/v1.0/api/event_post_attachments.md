@@ -2,7 +2,8 @@
 
 Use this API to create a new Attachment.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_ 
+One of the following **scopes** is required to execute this API: 
+*Calendars.ReadWrite* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
