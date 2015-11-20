@@ -8,7 +8,6 @@ Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/notes/pages/<id>
-DELETE /users/<mail>/notes/pages/<id>
 DELETE /users/<id | userPrincipalName>/notes/pages/<id>
 DELETE /groups/<id>/notes/pages/<id>
 ```

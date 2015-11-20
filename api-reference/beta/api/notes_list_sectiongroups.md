@@ -8,7 +8,6 @@ Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or No
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/notes/sectionGroups
-GET /users/<mail>/notes/sectionGroups
 GET /users/<id | userPrincipalName>/notes/sectionGroups
 GET /groups/<id>/notes/sectionGroups
 ```
