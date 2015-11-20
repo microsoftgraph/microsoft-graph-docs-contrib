@@ -1,6 +1,6 @@
 # Microsoft Graph release notes and known issues
 
-|  ![](./images/GitHub-Mark-64px.png) | **Contribute to this content** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).  |
+|  ![](./images/GitHub-Mark-64px.png) | **Contribute to this content.** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).  |
 |---|:---|
 
 This article provides information about the new features for developers that are available in the November 2015 release of the Microsoft Graph API, and any known issues that you might want to be aware of. 
