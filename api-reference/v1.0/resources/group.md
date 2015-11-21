@@ -18,18 +18,18 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 |[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List calendarView](../api/group_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
-|[Create calendarView](../api/group_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the calendarView collection.|
 |[List conversations](../api/group_list_conversations.md) |[Conversation](conversation.md) collection| Get a Conversation object collection.|
 |[Create conversation](../api/group_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
 |[List acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a acceptedSender object collection.|
-|[Create acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Create a new acceptedSender by posting to the acceptedSenders collection.|
+|[Add acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the acceptSenders collection.|
+|[Remove acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
 |[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a rejectedSender object collection.|
-|[Create rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Create a new rejectedSender by posting to the rejectedSenders collection.|
+|[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
+|[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
 |[List threads](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a thread object collection.|
-|[Create thread](../api/group_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new thread by posting to the threads collection.|
-|[resetUnseenCount](../api/group_resetunseencount.md)|None||
-|[subscribeByMail](../api/group_subscribebymail.md)|None||
-|[unsubscribeByMail](../api/group_unsubscribebymail.md)|None||
+|[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not since since their last visit.|
+|[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations.|
+|[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations.|
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|Return all the groups that the group is a member of. The check is transitive.|
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The check is transitive. |
@@ -41,12 +41,12 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|Default is **false**. Indicates if external members can send email to group.|
-|autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed.|
+|autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.|
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |groupTypes|String collection|Specifies the following on group creation: distribution group, security group, email-enabled security group, or a unified group (aka Office 365 Group).|
 |id|String|The unique identifier for the group. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
-|isSubscribedByMail|Boolean|Default value is **true**. Whether group allows members to subscribe for email conversations.|
+|isSubscribedByMail|Boolean|Default value is **true**. Indicates Whether the current user is subscribed to received email conversations.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter.|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Microsoft Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Microsoft Graph.|
 |mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
@@ -55,25 +55,25 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter.|
 |proxyAddresses|String collection| The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter. |
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Only (pure) security groups can be created using Microsoft Graph. For this reason, the property must be set **true** when creating a group. Supports $filter.|
-|unseenCount|Int32|Count of posts that a specific user has not seen since his last visit.|
+|unseenCount|Int32|Count of posts that the current  user has not seen since his last visit.|
 |visibility|String| Possible values are: `None`, `Private`, `Secret`, `Public`.|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|acceptedSenders|[directoryObject](directoryobject.md) collection|The group's accepted senders. Read-only. Nullable.|
-|calendar|[Calendar](calendar.md)|The group's calendar. Read-only.|
-|calendarView|[Event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
-|conversations|[Conversation](conversation.md) collection|The group's conversations. Read-only. Nullable.|
+|acceptedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
+|calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
+|calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
+|conversations|[conversation](conversation.md) collection|The group's conversations.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |drive|[drive](drive.md)|The group's drive. Read-only.|
-|events|[Event](event.md) collection|The group's events. Read-only. Nullable.|
+|events|[event](event.md) collection|The group's events.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
-|photo|[Photo](photo.md)| The group's profile photo |
-|rejectedSenders|[directoryObject](directoryobject.md) collection|The group's accepted senders. Read-only. Nullable.|
-|threads|[ConversationThread](conversationthread.md) collection| The group's conversation threads. Read-only. Nullable.|
+|photo|[photo](photo.md)| The group's profile photo |
+|rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
+|threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 
 ### JSON representation

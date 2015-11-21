@@ -1,12 +1,13 @@
-# group: removeFavorite
-Remove the group from the list of the current user's favorite groups.
+# Remove acceptedSender
 
+Use this API to Remove a user or group to the acceptedSenders collection.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/microsoft.graph.removeFavorite
+DELETE /groups/<id>/acceptedSenders/$ref?$id=<id>
+
 ```
 ### Request headers
 | Header       | Value |
@@ -15,37 +16,39 @@ POST /groups/<id>/microsoft.graph.removeFavorite
 
 ### Request body
 Do not supply a request body for this method.
+
+
 ### Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ### Example
-Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+Here are a couple of examples of the request.
 <!-- {
   "blockType": "request",
-  "name": "group_removefavorite"
+  "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/microsoft.graph.removeFavorite
+DELETE https://graph.microsoft.com/v1.0/groups/<id>/acceptedSenders/$ref?$id="users/<id>"
+
+DELETE https://graph.microsoft.com/v1.0/groups/<id>/acceptedSenders/$ref?$id="groups/<id>"
 ```
 
 ##### Response
-Here is an example of the response.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "group: removeFavorite",
+  "description": "Create acceptedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
