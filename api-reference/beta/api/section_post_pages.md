@@ -8,7 +8,6 @@ Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/notes/sections/<id>/pages
-POST /users/<mail>/notes/sections/<id>/pages
 POST /users/<id | userPrincipalName>/notes/sections/<id>/pages
 POST /groups/<id>/notes/sections/<id>/pages
 ```

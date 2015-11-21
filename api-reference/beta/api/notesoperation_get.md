@@ -16,7 +16,7 @@ Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or No
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/notes/operations/<id>
-GET /users/<id>/notes/operations/<id>
+GET /users/<id | userPrincipalName>/notes/operations/<id>
 GET /groups/<id>/notes/operations/<id>
 ```
 ### Optional query parameters

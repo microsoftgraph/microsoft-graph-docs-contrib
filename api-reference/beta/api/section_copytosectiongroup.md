@@ -10,7 +10,6 @@ Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/notes/sections/<id>/Microsoft.Graph.copyToSectionGroup
-POST /users/<mail>/notes/sections/<id>/Microsoft.Graph.copyToSectionGroup
 POST /users/<id | userPrincipalName>/notes/sections/<id>/Microsoft.Graph.copyToSectionGroup
 POST /groups/<id>/notes/sections/<id>/Microsoft.Graph.copyToSectionGroup
 ```
