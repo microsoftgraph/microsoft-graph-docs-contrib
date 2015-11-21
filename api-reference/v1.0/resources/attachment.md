@@ -1,12 +1,14 @@
 # attachment resource type
 
-
+A file, message, event, or a link to a file attached to a message or event.
 
 ### Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get attachment](../api/attachment_get.md) | [attachment](attachment.md) |Read properties and relationships of attachment object.|
+|[Add attachment to an event](../api/event_post_attachments.md) | [attachment](attachment.md) |You can add a file attachment or an item attachment to an event.|
+|[Add attachment to a message](../api/message_post_attachments.md) | [attachment](attachment.md) |You can add a file attachment or an item attachment to a message.|
 |[Delete](../api/attachment_delete.md) | None |Delete attachment object. |
 
 

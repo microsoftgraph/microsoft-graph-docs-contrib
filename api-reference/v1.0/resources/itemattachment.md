@@ -1,6 +1,8 @@
 # itemAttachment resource type
 
-A message or event that's attached to another message or event.
+A message or event that's attached to another message or event.  
+
+Derived from [attachment](attachment.md). 
 
 ### Methods
 

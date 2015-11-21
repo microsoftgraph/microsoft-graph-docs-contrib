@@ -2,6 +2,8 @@
 
 A link to a file (such as a text file or Word document) on your OneDrive for Business cloud drive and other supported storage locations, attached to a message or event. The  **ContentBytes** property contains the base64-encoded contents of the file.
 
+Derived from [attachment](attachment.md). 
+
 ### Methods
 
 | Method       | Return Type  |Description|
