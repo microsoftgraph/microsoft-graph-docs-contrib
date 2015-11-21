@@ -2,7 +2,6 @@
 
 Update the photo for signed-in **user**, **group** or a **contact**.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
 One of the following **scopes** is required to execute this API for: 
 * Profile photo of signed-in **user** - *User.ReadWrite.All; User.ReadWrite*
 * Profile photo of a **group** - *Group.ReadWrite.All* 
