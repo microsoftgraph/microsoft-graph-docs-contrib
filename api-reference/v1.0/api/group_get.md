@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<id>
+GET https://graph.microsoft.com/v1.0/me/groups/<id>
 ```
 ##### Response
 Here is an example of the response. 
@@ -39,6 +39,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: xxx
 
