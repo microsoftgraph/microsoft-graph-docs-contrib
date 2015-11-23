@@ -2,7 +2,6 @@
 
 Read the photo and properties of profilePhoto object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
 One of the following **scopes** is required to execute this API for: 
 * Profile photo of signed-in **user** - *User.Read; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; User.Read*
 * Profile photo of a **group** - *Group.Read.All; Group.ReadWrite.All* 

@@ -8,7 +8,6 @@ Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/notes/pages/<id>
-PATCH /users/<mail>/notes/pages/<id>
 PATCH /users/<id | userPrincipalName>/notes/pages/<id>
 PATCH /groups/<id>/notes/pages/<id>
 ```

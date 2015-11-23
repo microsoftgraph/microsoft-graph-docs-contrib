@@ -1,5 +1,8 @@
 # referenceAttachment resource type
 
+A link to a file (such as a text file or Word document) on your OneDrive for Business cloud drive and other supported storage locations, attached to a message or event. The  **ContentBytes** property contains the base64-encoded contents of the file.
+
+Derived from [attachment](attachment.md). 
 
 ### Methods
 
@@ -12,18 +15,13 @@
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentType|String||
-|id|String| Read-only.|
-|isInline|Boolean||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|name|String||
-|size|Int32||
-|SourceUrl|String||
-|ProviderType|ReferenceAttachmentProviders||
-|ThumbnailUrl|String||
-|PreviewUrl|String||
-|Permission|ReferenceAttachmentPermissions||
-|IsFolder|Boolean||
+|contentType|String|The content type of the attachment.|
+|id|String|The attachment ID.  Read-only.|
+|isInline|Boolean|Set to true if this is an inline attachment.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|name|String|The name representing the text that is displayed below the icon representing the embedded attachment. This does not need to be the actual file name.|
+|size|Int32|The size in bytes of the attachment.|
+
 
 ### Relationships
 None
