@@ -1,6 +1,8 @@
 # fileAttachment resource type
 
-A file (such as a text file or Word document) attached to a message or event. The  **ContentBytes** property contains the base64-encoded contents of the file.
+A file (such as a text file or Word document) attached to a message or event. The  **ContentBytes** property contains the base64-encoded contents of the file.  
+
+Derived from [attachment](attachment.md). 
 
 ### Methods
 
