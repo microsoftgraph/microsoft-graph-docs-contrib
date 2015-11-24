@@ -12,13 +12,14 @@ POST /groups/<id>/threads
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json  |
 
 ### Request body
-In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
+In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object containing a [post](../resources/post.md).
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns `201, Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 
 ### Example
 ##### Request
@@ -30,34 +31,23 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/<id>/threads
 Content-type: application/json
-Content-length: 419
 
 {
-  "toRecipients": [
-    {
+  "topic": "New Conversation Thread Topic",
+  "posts": [{
+    "body": {
+      "contentType": "html",
+      "content": "this is body content"
+    },
+    "newParticipants": [{
       "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
+        "name": "Alex Darrow",
+        "address": "alexd@contoso.com"
       }
-    }
-  ],
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ]
+    }]
+  }]
 }
 ```
-In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -66,7 +56,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.conversationthread"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: application/json
 Content-length: 419
 
