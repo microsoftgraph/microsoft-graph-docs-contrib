@@ -44,7 +44,7 @@ The following are known issues with the Microsoft Graph.
 
 ### Users
 #### No instant access after creation
-Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the unified API. During this time, apps will receive a 404 HTTP error response. 
+Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response. 
 
 #### Photo restrictions
 * Reading (GET) and updating (PATCH) a user's profile photo _on v1.0_ [fail](#PhotoIssuesAll).
