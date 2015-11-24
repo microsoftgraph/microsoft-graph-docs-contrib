@@ -66,7 +66,7 @@ The table below lists the authentication scopes to use with the converged authen
 | `openid` |Sign users in |Allows users to sign in to the app and allows the app to see basic user profile information. |
 | `offline_access` |Read and write user's information |Allows the app to see and update user's data, even when the user is not actively using the app. |
 
-**Note**: curretly it is required to pass the resource url of 'https://graph.microsoft.com' as pre-fix for the scope string. This limitation will be addressed in the near future. 
+**Note**: currently it is required to pass the resource url of 'https://graph.microsoft.com' as pre-fix for the scope string. This limitation will be addressed in the near future. 
 
 ##Next steps
 
