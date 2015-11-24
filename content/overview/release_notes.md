@@ -81,6 +81,7 @@ Certain scenarios in reading (GET) and setting or updating (PATCH) a [profile ph
 #### Get Photo
 * User:  On v1.0, GET photo fails, even if the app is granted user.read or any other user.* permission. On the beta endpoint, it works as expected. 
 * Contact and group:  GET photo works with the appropriate contact or group permissions. 
+
 #### Set Photo
 * User and group: On v1.0, PATCH photo fails irrespective of the permissions granted to the app.  On the beta endpoint, it works as expected. 
 * Contact:  PATCH photo works with the appropriate contact permission.
