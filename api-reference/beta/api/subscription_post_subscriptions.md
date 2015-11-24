@@ -36,7 +36,7 @@ Content-length: 208
 
 {
    "changeType": "Created",
-   "notificationURL": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "clientState": "subscription-identifier",  
    "resource": "me/messages"
 }

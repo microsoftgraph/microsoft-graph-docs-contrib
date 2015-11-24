@@ -12,13 +12,14 @@ POST /groups/<id>/conversations
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json  |
 
 ### Request body
-In the request body, supply a JSON representation of [Conversation](../resources/conversation.md) object.
+In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationThread.md) and a [post](../resources/post.md).
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [Conversation](../resources/conversation.md) object in the response body.
+If successful, this method returns `201, Created` response code and [conversation](../resources/conversation.md) object in the response body.
 
 ### Example
 ##### Request
@@ -30,19 +31,25 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/<id>/conversations
 Content-type: application/json
-Content-length: 181
 
 {
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "preview": "preview-value"
+  "topic": "New Conversation Topic",
+  "threads": [{
+    "posts": [{
+      "body": {
+        "contentType": "html",
+        "content": "this is body content"
+      },
+      "newParticipants": [{
+        "emailAddress": {
+          "name": "Alex Darrow",
+          "address": "alexd@contoso.com"
+        }
+      }]
+    }]
+  }]
 }
 ```
-In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
