@@ -10,14 +10,15 @@ One of the following **scopes** is required to execute this API:
 GET /me/calendar
 GET /users/<id | userPrincipalName>/calendar
 GET /groups/<id>/calendar
-GET /drive/root/createdByUser/calendar
+
 GET /me/calendars/<id>
 GET /users/<id | userPrincipalName>/calendars/<id>
+
 GET /me/calendarGroup/calendars/<id>
 GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
+
 GET /me/calendarGroups/<id>/calendars/<id>
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
-GET /groups/<id>/calendar
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

@@ -64,6 +64,7 @@ Content-length: 248
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
+  "meetingMessageType": "meetingMessageType-value"
 }
 ```
 

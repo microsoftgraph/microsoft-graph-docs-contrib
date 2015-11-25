@@ -11,10 +11,23 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<id | userPrincipalName>/events/<id>/attachments/<id>
-DELETE /groups/<id>/events/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
+DELETE /me/events/<id>/attachments/<id>
+DELETE /me/calendars/<id>/events/<id>/attachments/<id>
+DELETE /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>
 
+DELETE /me/messages/<id>/attachments/<id>
+DELETE /me/mailFolders/<id>/messages/<id>/attachments/<id>
+
+DELETE /groups/<id>/events/<id>/attachments/<id>
+DELETE /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
+DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
+
+DELETE /users/<id | userPrincipalName>/events/<id>/attachments/<id>
+DELETE /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments/<id>
+DELETE /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>
+
+DELETE /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
+DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments/<id>
 ```
 ### Request headers
 | Name       | Type | Description|

@@ -7,10 +7,10 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/messages/<id>/attachments
 POST /users/<id | userPrincipalName>/messages/<id>/attachments
-POST /drive/root/createdByUser/messages/<id>/attachments
-POST /drive/root/lastModifiedByUser/messages/<id>/attachments
-
+POST /users/me/mailFolders/<id>/messages/<id>/attachments
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments
 ```
 ### Request headers
 | Name       | Type | Description|
