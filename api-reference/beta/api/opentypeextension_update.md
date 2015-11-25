@@ -1,6 +1,7 @@
 # Update extension
 
 Update an open type data extension with the properties in the request body:
+
 - If a property in the request body matches the name of an existing property in the extension, the data in the 
 extension is updated.
 - Otherwise that property and its data are added to the extension. 
