@@ -203,7 +203,6 @@ Here is a JSON representation of the resource
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get a ownedDevice object collection.|
 |[Create ownedObject](../api/user_post_ownedobjects.md) |[directoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
-|[Create Person](../api/user_post_people.md) |[Person](person.md)| Create a new Person by posting to the people collection.|
 |[List people](../api/user_list_people.md) |[Person](person.md) collection| Get a Person object collection.|
 |[Create photo](../api/user_post_photos.md) |[Photo](photo.md)| Create a new photo by posting to the photos collection.|
 |[List photos](../api/user_list_photos.md) |[Photo](photo.md) collection| Get a photo object collection.|
