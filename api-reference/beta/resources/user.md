@@ -157,7 +157,7 @@ Here is a JSON representation of the resource
 |notes|[Notes](notes.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Requires version 2013-11-08 or newer. Directory objects that are owned by the user. Requires version 2013-11-08 or newer. Read-only. Nullable.|
-|people|[Person](person.md) collection| Read-only. Nullable.|
+|people|[Person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
 |photo|[Photo](photo.md)| Read-only.|
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans shared with the user. |
@@ -203,7 +203,6 @@ Here is a JSON representation of the resource
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get a ownedDevice object collection.|
 |[Create ownedObject](../api/user_post_ownedobjects.md) |[directoryObject](directoryobject.md)| Create a new ownedObject by posting to the ownedObjects collection.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
-|[Create Person](../api/user_post_people.md) |[Person](person.md)| Create a new Person by posting to the people collection.|
 |[List people](../api/user_list_people.md) |[Person](person.md) collection| Get a Person object collection.|
 |[Create photo](../api/user_post_photos.md) |[Photo](photo.md)| Create a new photo by posting to the photos collection.|
 |[List photos](../api/user_list_photos.md) |[Photo](photo.md) collection| Get a photo object collection.|
