@@ -10,7 +10,6 @@ One of the following **scopes** is required to execute this API:
 POST /me/calendar/events
 POST /users/<id | userPrincipalName>/calendar/events
 POST /groups/<id>/calendar/events
-POST /drive/root/createdByUser/calendar/events
 POST /me/calendars/<id>/events
 POST /users/<id | userPrincipalName>/calendars/<id>/events
 POST /me/calendarGroup/calendars/<id>/events

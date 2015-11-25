@@ -7,9 +7,6 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/calendar/calendarView
-GET /groups/<id>/calendar/calendarView
-GET /drive/root/createdByUser/calendar/calendarView
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/<id | userPrincipalName>/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /me/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}

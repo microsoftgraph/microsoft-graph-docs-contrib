@@ -7,9 +7,8 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/messages/<id>
 GET /users/<id | userPrincipalName>/messages/<id>
-GET /drive/root/createdByUser/messages/<id>
-GET /drive/root/lastModifiedByUser/messages/<id>
 
 ```
 ### Optional query parameters
