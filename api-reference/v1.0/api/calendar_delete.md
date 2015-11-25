@@ -10,14 +10,15 @@ One of the following **scopes** is required to execute this API:
 DELETE /me/calendar
 DELETE /users/<id | userPrincipalName>/calendar
 DELETE /groups/<id>/calendar
-DELETE /drive/root/createdByUser/calendar
+
 DELETE /me/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendars/<id>
+
 DELETE /me/calendarGroup/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
+
 DELETE /me/calendarGroups/<id>/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
-DELETE /groups/<id>/calendar
 ```
 ### Request headers
 | Name           |  Type    | Description|

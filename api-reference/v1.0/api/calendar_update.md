@@ -10,14 +10,12 @@ One of the following **scopes** is required to execute this API:
 PATCH /me/calendar
 PATCH /users/<id | userPrincipalName>/calendar
 PATCH /groups/<id>/calendar
-PATCH /drive/root/createdByUser/calendar
 PATCH /me/calendars/<id>
 PATCH /users/<id | userPrincipalName>/calendars/<id>
 PATCH /me/calendarGroup/calendars/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
 PATCH /me/calendarGroups/<id>/calendars/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
-PATCH /groups/<id>/calendar
 ```
 ### Request headers
 | Name       | Type | Description|

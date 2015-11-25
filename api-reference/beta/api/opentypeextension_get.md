@@ -6,6 +6,7 @@ The resource can be a message, calendar event, or contact of the signed-in user'
 Outlook.com. Or, it can be an event for an Office 365 group.
 
 You can get an extension returned in one of two ways:
+
 - Get just the extension in the REST response. You can specify the extension by name or fully qualified name, and
 the extension can be in a user's message, event, or contact, or a group event.
  

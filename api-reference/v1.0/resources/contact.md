@@ -57,7 +57,7 @@ A contact is an item in Outlook where you can organize and save information abou
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|photo|[Photo](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
+|photo|[profilePhoto](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
 
 
 

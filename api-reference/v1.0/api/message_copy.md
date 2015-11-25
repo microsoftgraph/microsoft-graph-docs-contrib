@@ -7,10 +7,10 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /users/me/messages/<id>/microsoft.graph.copy
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.copy
-POST /drive/root/createdByUser/messages/<id>/microsoft.graph.copy
-POST /drive/root/lastModifiedByUser/messages/<id>/microsoft.graph.copy
-
+POST /users/me/mailFolders/<id>/messages/<id>/microsoft.graph.copy
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.copy
 ```
 ### Request headers
 | Name       | Type | Description|

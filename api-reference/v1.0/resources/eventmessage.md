@@ -10,10 +10,9 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage_get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[Create Attachment](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
-|[List attachments](../api/eventmessage_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
 |[Update](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object. |
-|[Delete](../api/eventmessage_delete.md) | None |Delete eventMessage object. |
+|[Delete](../api/message_delete.md) | None |Delete eventMessage object. |
 |[copy](../api/message_copy.md)|[Message](message.md)|Creates a copy of the message in a mailFolder.|
 |[createForward](../api/message_createforward.md)|[Message](message.md)|Create a draft|
 |[createReply](../api/message_createreply.md)|[Message](message.md)|Create a draft reply to the sender of a message.|
