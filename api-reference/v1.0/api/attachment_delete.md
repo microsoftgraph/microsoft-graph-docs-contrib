@@ -49,7 +49,7 @@ example below shows one level of nesting, but a message can be located in a chil
 DELETE /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
 DELETE /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
 ```
-Attachments for a [post](../resources/post.md) in a [thread](../resources/thread.md) belonging to a [conversation](../resources/conversation.md) in a [group](../resources/group.md).
+Attachments for a [post](../resources/post.md) in a [thread](../resources/thread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 DELETE /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
 DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
