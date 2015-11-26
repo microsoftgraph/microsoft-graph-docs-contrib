@@ -9,6 +9,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /me/calendarGroup
 GET /users/<id | userPrincipalName>/calendarGroup
+
 GET /me/calendarGroups/<id>
 GET /users/<id | userPrincipalName>/calendarGroups/<id>
 ```

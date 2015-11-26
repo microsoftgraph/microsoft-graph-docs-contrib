@@ -8,6 +8,7 @@ One of the following **scopes** is required to execute this API: _Calendars.Read
 ```http
 GET /me/calendarGroup/calendars
 GET /users/<id | userPrincipalName>/calendarGroup/calendars
+
 GET /me/calendarGroups/<id>/calendars
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars
 ```

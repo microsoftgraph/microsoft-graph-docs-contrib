@@ -9,8 +9,9 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /me/contacts/<id>
 GET /users/<id | userPrincipalName>/contacts/<id>
-GET /me/contactfolders/<contactFolderId>/contacts/<id>
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>
+
+GET /me/contactfolders/<Id>/contacts/<id>
+GET /users/<id | userPrincipalName>/contactfolders/<id>/contacts/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|

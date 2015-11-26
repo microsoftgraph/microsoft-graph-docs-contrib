@@ -9,8 +9,9 @@ One of the following **scopes** is required to execute this API:
 ```http
 PATCH /me/contacts/<id>
 PATCH /users/<id | userPrincipalName>/contacts/<id>
-PATCH /me/contactFolders/<contactFolderId>/contacts/<id>
-PATCH /users/<id | userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>
+
+PATCH /me/contactFolders/<id>/contacts/<id>
+PATCH /users/<id | userPrincipalName>/contactFolders/<id>/contacts/<id>
 ```
 ### Request headers
 | Header       | Value |

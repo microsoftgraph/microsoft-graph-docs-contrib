@@ -8,6 +8,7 @@ One of the following **scopes** is required to execute this API: _Calendars.Read
 ```http
 PATCH /me/calendarGroup
 PATCH /users/<id | userPrincipalName>/calendarGroup
+
 PATCH /me/calendarGroups/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroups/<id>
 ```

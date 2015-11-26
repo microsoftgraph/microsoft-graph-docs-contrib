@@ -7,10 +7,21 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/events/<id>/attachments
 POST /users/<id | userPrincipalName>/events/<id>/attachments
 POST /groups/<id>/events/<id>/attachments
-POST /users/<id | userPrincipalName>/calendarView/<id>/attachments
 
+POST /me/calendar/events/<id>/attachments
+POST /users/<id | userPrincipalName>/calendar/events/<id>/attachments
+
+POST /me/calendars/<id>/events/<id>/attachments
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments
+
+POST /me/calendargroup/calendars/<id>/events/<id>/attachments
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/attachments
+
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments
 ```
 ### Request headers
 | Name       | Type | Description|
