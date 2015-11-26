@@ -7,10 +7,8 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/messages/<id>/microsoft.graph.send
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.send
-POST /drive/root/createdByUser/messages/<id>/microsoft.graph.send
-POST /drive/root/lastModifiedByUser/messages/<id>/microsoft.graph.send
-
 ```
 ### Request headers
 | Name       | Type | Description|

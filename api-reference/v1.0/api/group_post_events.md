@@ -7,6 +7,7 @@ One of the following **scopes** is required to execute this API: *Group.ReadWrit
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/events
+POST /groups/<id>/calendar/events
 ```
 ### Request headers
 | Header       | Value |

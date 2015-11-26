@@ -6,30 +6,36 @@ One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's or group's default [calendar](../resources/calendar.md).
 ```http
 PATCH /me/calendar
 PATCH /users/<id | userPrincipalName>/calendar
 PATCH /groups/<id>/calendar
-PATCH /drive/root/createdByUser/calendar
+```
+A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+```http
 PATCH /me/calendars/<id>
 PATCH /users/<id | userPrincipalName>/calendars/<id>
+
 PATCH /me/calendarGroup/calendars/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
+```
+A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+```http
 PATCH /me/calendarGroups/<id>/calendars/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
-PATCH /groups/<id>/calendar
 ```
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |name|String|The calendar name.|
 

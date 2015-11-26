@@ -7,10 +7,22 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/events/<id>/microsoft.graph.tentativelyAccept
 POST /users/<id | userPrincipalName>/events/<id>/microsoft.graph.tentativelyAccept
 POST /groups/<id>/events/<id>/microsoft.graph.tentativelyAccept
-POST /users/<id | userPrincipalName>/calendarView/<id>/microsoft.graph.tentativelyAccept
 
+POST /me/calendar/events/<id>/microsoft.graph.tentativelyAccept
+POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.tentativelyAccept
+POST /groups/<id>/calendar/events/<id>/microsoft.graph.tentativelyAccept
+
+POST /me/calendars/<id>/events/<id>/microsoft.graph.tentativelyAccept
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.tentativelyAccept
+
+POST /me/calendargroup/calendars/<id>/events/<id>/microsoft.graph.tentativelyAccept
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/microsoft.graph.tentativelyAccept
+
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.tentativelyAccept
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.tentativelyAccept
 ```
 ### Request headers
 | Name       | Type | Description|

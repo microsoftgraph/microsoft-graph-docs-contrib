@@ -7,9 +7,10 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/messages/<id>
 PATCH /users/<id | userPrincipalName>/messages/<id>
-PATCH /drive/root/createdByUser/messages/<id>
-PATCH /drive/root/lastModifiedByUser/messages/<id>
+PATCH /me/mailFolders/<id>/messages/<id>
+PATCH /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Request headers
 | Name       | Type | Description|
