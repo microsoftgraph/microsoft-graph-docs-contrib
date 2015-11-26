@@ -50,8 +50,6 @@ None
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of person object.|
-|[Update](../api/person_update.md) | [person](person.md)	|Update person object. |
-|[Delete](../api/person_delete.md) | None |Delete person object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

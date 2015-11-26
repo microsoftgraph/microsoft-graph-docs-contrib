@@ -25,11 +25,9 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |groupTypes|String collection||
 |visibility|Boolean||
-|isSubscribedByMail|Boolean||
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Microsoft Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Microsoft Graph.|
 |mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Only (pure) security groups can be created using Microsoft Graph. For this reason, the property must be set **true** when creating a group. Supports $filter.|
-|unseenCount|Int32||
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [group](../resources/group.md) object in the response body.

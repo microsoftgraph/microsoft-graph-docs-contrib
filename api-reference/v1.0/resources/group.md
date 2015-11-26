@@ -27,7 +27,7 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
 |[List threads](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a thread object collection.|
-|[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not since since their last visit.|
+|[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit.|
 |[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations.|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations.|
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
@@ -44,7 +44,7 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.|
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|groupTypes|String collection|Specifies the following on group creation: distribution group, security group, email-enabled security group, or a unified group (aka Office 365 Group).|
+|groupTypes|String collection| Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security enabled groups and email-enabled security groups, do not set this property.|
 |id|String|The unique identifier for the group. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Default value is **true**. Indicates Whether the current user is subscribed to received email conversations.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter.|
@@ -56,7 +56,7 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 |proxyAddresses|String collection| The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter. |
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Only (pure) security groups can be created using Microsoft Graph. For this reason, the property must be set **true** when creating a group. Supports $filter.|
 |unseenCount|Int32|Count of posts that the current  user has not seen since his last visit.|
-|visibility|String| Possible values are: `None`, `Private`, `Secret`, `Public`.|
+|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
 
 ### Relationships
 | Relationship | Type	|Description|
