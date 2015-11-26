@@ -6,17 +6,22 @@ One of the following **scopes** is required to execute this API:
 *Calendars.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's or group's default [calendar](../resources/calendar.md).
 ```http
 GET /me/calendar
 GET /users/<id | userPrincipalName>/calendar
 GET /groups/<id>/calendar
-
+```
+A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+```http
 GET /me/calendars/<id>
 GET /users/<id | userPrincipalName>/calendars/<id>
 
 GET /me/calendarGroup/calendars/<id>
 GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
-
+```
+A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+```http
 GET /me/calendarGroups/<id>/calendars/<id>
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
 ```

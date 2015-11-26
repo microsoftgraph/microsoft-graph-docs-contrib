@@ -1,31 +1,38 @@
 # List calendarView
 
-Retrieve a list of event objects.
+Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, 
+from the calendar.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's or group's default [calendar](../resources/calendar.md).
 ```http
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/<id | userPrincipalName>/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /groups/<id>/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-
+```
+A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+```http
 GET /me/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/<id | userPrincipalName>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 
 GET /me/calendarGroup/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-
+```
+A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+```http
 GET /me/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Prefer  | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
 
 ### Request body
 Do not supply a request body for this method.

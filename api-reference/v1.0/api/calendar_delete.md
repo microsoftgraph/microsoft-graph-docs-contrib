@@ -1,22 +1,21 @@
 # Delete calendar
 
-Delete a calendar.
+Delete a calendar other than the default calendar.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's [calendar](../resources/calendar.md) other than the default calendar in the default [calendarGroup](../resources/calendargroup.md).
 ```http
-DELETE /me/calendar
-DELETE /users/<id | userPrincipalName>/calendar
-DELETE /groups/<id>/calendar
-
 DELETE /me/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendars/<id>
 
 DELETE /me/calendarGroup/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
-
+```
+A [calendar](../resources/calendar.md) other than the default calendar, in a specific [calendarGroup](../resources/calendargroup.md).
+```http
 DELETE /me/calendarGroups/<id>/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
 ```
