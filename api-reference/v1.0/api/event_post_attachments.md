@@ -13,6 +13,7 @@ POST /groups/<id>/events/<id>/attachments
 
 POST /me/calendar/events/<id>/attachments
 POST /users/<id | userPrincipalName>/calendar/events/<id>/attachments
+POST /groups/<id>/calendar/events/<id>/attachments
 
 POST /me/calendars/<id>/events/<id>/attachments
 POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments

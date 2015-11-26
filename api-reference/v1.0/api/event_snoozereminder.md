@@ -13,6 +13,7 @@ POST /groups/<id>/events/<id>/microsoft.graph.snoozeReminder
 
 POST /me/calendar/events/<id>/microsoft.graph.snoozeReminder
 POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.snoozeReminder
+POST /groups/<id>/calendar/events/<id>/microsoft.graph.snoozeReminder
 
 POST /me/calendars/<id>/events/<id>/microsoft.graph.snoozeReminder
 POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.snoozeReminder

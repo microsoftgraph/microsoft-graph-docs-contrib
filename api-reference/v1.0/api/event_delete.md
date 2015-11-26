@@ -13,6 +13,7 @@ DELETE /groups/<id>/events/<id>
 
 DELETE /me/calendar/events/<id>
 DELETE /users/<id | userPrincipalName>/calendar/events/<id>
+DELETE /groups/<id>/calendar/events/<id>/
 
 DELETE /me/calendars/<id>/events/<id>
 DELETE /users/<id | userPrincipalName>/calendars/<id>/events/<id>

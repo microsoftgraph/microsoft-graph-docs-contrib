@@ -13,6 +13,7 @@ POST /groups/<id>/events/<id>/microsoft.graph.accept
 
 POST /me/calendar/events/<id>/microsoft.graph.accept
 POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.accept
+POST /groups/<id>/calendar/events/<id>/microsoft.graph.accept
 
 POST /me/calendars/<id>/events/<id>/microsoft.graph.accept
 POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.accept

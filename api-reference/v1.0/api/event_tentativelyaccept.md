@@ -13,6 +13,7 @@ POST /groups/<id>/events/<id>/microsoft.graph.tentativelyAccept
 
 POST /me/calendar/events/<id>/microsoft.graph.tentativelyAccept
 POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.tentativelyAccept
+POST /groups/<id>/calendar/events/<id>/microsoft.graph.tentativelyAccept
 
 POST /me/calendars/<id>/events/<id>/microsoft.graph.tentativelyAccept
 POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.tentativelyAccept

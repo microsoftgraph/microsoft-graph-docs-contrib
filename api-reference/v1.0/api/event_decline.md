@@ -13,6 +13,7 @@ POST /groups/<id>/events/<id>/microsoft.graph.decline
 
 POST /me/calendar/events/<id>/microsoft.graph.decline
 POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.decline
+POST /groups/<id>/calendar/events/<id>/microsoft.graph.decline
 
 POST /me/calendars/<id>/events/<id>/microsoft.graph.decline
 POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.decline

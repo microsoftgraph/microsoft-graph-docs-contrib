@@ -13,6 +13,7 @@ PATCH /groups/<id>/events/<id>
 
 PATCH /me/calendar/events/<id>
 PATCH /users/<id | userPrincipalName>/calendar/events/<id>
+PATCH /groups/<id>/calendar/events/<id>
 
 PATCH /me/calendars/<id>/events/<id>
 PATCH /users/<id | userPrincipalName>/calendars/<id>/events/<id>
@@ -41,7 +42,6 @@ In the request body, supply the values for relevant fields that should be update
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isReminderOn|Boolean||
 |location|Location|The location of the event.|
-|organizer|Recipient|The organizer of the event.|
 |recurrence|PatternedRecurrence|The recurrence patern for the event.|
 |reminderMinutesBeforeStart|Int32||
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|

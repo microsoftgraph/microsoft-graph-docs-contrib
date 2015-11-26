@@ -13,6 +13,7 @@ GET /groups/<id>/events/<id>/attachments
 
 GET /me/calendar/events/<id>/attachments
 GET /users/<id | userPrincipalName>/calendar/events/<id>/attachments
+GET /groups/<id>/calendar/events/<id>/attachments
 
 GET /me/calendars/<id>/events/<id>/attachments
 GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments

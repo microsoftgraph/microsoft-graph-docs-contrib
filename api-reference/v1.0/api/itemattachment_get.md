@@ -12,10 +12,31 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/events/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/events/<id>/attachments/<id>
 GET /groups/<id>/events/<id>/attachments/<id>
+
+GET /me/calendar/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/calendar/events/<id>/attachments/<id>
+GET /groups/<id>/calendar/events/<id>/attachments/<id>
+
+GET /me/calendars/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments/<id>
+
+GET /me/calendargroup/calendars/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/attachments/<id>
+
+GET /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>
+
+GET /me/messages/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
 
+GET /me/mailFolders/<id>/messages/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments/<id>
+
+GET /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
+GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

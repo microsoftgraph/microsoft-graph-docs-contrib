@@ -9,6 +9,9 @@ One of the following **scopes** is required to execute this API:
 ```http
 PATCH /users/me/messages/<id>
 PATCH /users/<id | userPrincipalName>/messages/<id>
+
+PATCH /me/mailFolders/<id>/messages/<id>
+PATCH /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Request headers
 | Name       | Type | Description|
