@@ -1,5 +1,6 @@
-# Add group owner
-Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
+# Remove owner
+
+Use this API to remove an owner from an Office 365 group, a security group or a mail-enabled security group through the owners navigation property.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
@@ -7,7 +8,7 @@ One of the following **scopes** is required to execute this API: *Group.ReadWrit
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/owners/$ref
+DELETE /groups/<id>/owners/<id>/$ref
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -15,8 +16,7 @@ POST /groups/<id>/owners/$ref
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
-
+Do not supply a request body for this method.
 
 ### Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
@@ -29,15 +29,10 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/owners/$ref
-Content-type: application/json
-Content-length: 30
-
-{
-  "@oadata.id": "https://graph.microsoft.com/v1.0/users/<id>"
-}
+DELETE https://graph.microsoft.com/v1.0/groups/<id>/owners/$ref/<id>
 ```
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
+In the request, specify the `id` of the directory object you want to remove after the $ref segment.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -53,7 +48,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create owner",
+  "description": "Create member",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
