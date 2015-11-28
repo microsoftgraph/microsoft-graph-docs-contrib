@@ -104,7 +104,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
-|photo|[Photo](photo.md)| The user's profile photo. Read-only.|
+|photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 
 
