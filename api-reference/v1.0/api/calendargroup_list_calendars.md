@@ -1,13 +1,17 @@
 # List calendars
 
-Retrieve a list of calendar objects.
+Retrieve a list of calendars belonging to a calendar group.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: _Calendars.Read_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's default [calendarGroup](../resources/calendargroup.md).
 ```http
 GET /me/calendarGroup/calendars
 GET /users/<id | userPrincipalName>/calendarGroup/calendars
+```
+Any [calendarGroup](../resources/calendargroup.md) of a user.
+```http
 GET /me/calendarGroups/<id>/calendars
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars
 ```

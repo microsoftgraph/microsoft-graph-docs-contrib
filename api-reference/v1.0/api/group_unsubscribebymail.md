@@ -1,6 +1,6 @@
 # group: unsubscribeByMail
 
-
+Calling this method will disable the current user to receive email conversations for this group.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
 *Group.ReadWrite.All*

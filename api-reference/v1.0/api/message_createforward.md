@@ -7,10 +7,10 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/messages/<id>/microsoft.graph.createForward
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.createForward
-POST /drive/root/createdByUser/messages/<id>/microsoft.graph.createForward
-POST /drive/root/lastModifiedByUser/messages/<id>/microsoft.graph.createForward
-
+POST /users/me/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
 ```
 ### Request headers
 | Name       | Type | Description|

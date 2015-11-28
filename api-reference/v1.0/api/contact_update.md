@@ -9,8 +9,9 @@ One of the following **scopes** is required to execute this API:
 ```http
 PATCH /me/contacts/<id>
 PATCH /users/<id | userPrincipalName>/contacts/<id>
-PATCH /me/contactFolders/<contactFolderId>/contacts/<id>
-PATCH /users/<id | userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>
+
+PATCH /me/contactFolders/<id>/contacts/<id>
+PATCH /users/<id | userPrincipalName>/contactFolders/<id>/contacts/<id>
 ```
 ### Request headers
 | Header       | Value |
@@ -29,7 +30,6 @@ In the request body, supply the values for relevant fields that should be update
 |businessHomePage|String|The business home page of the contact.|
 |businessPhones|String|The contact's business phone numbers.|
 |categories|String|The categories associated with the contact.|
-|changeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |children|String||
 |companyName|String|The name of the contact's company.|
 |department|String|The contact's department.|

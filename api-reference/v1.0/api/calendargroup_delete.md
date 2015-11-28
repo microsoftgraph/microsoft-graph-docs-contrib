@@ -1,14 +1,12 @@
 # Delete calendarGroup
 
-Delete a calendar group.
+Delete a calendar group other than the default calendar group.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/calendarGroup
-DELETE /users/<id | userPrincipalName>/calendarGroup
 DELETE /me/calendarGroups/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroups/<id>
 ```

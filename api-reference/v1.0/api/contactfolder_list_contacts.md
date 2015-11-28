@@ -7,6 +7,9 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contacts
+GET /users/<id | userPrincipalName>/contacts
+
 GET /me/contactFolders/<id>/contacts
 GET /users/<id | userPrincipalName>/contactFolders/<id>/contacts
 ```

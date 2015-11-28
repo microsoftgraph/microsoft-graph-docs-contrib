@@ -1,27 +1,27 @@
 # List people
 
-Retrieve a list of person objects.
+Retrieve a list of person objects ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
+*People.Read; People.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/people
-GET /drive/root/createdByUser/people
-GET /drive/root/lastModifiedByUser/people
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Accept  | application/json|
 
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [Person](../resources/person.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [person](../resources/person.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.

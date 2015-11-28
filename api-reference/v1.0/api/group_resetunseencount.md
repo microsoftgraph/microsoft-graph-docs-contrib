@@ -1,5 +1,6 @@
 # group: resetUnseenCount
 
+Reset the unseenCount of all the posts that the current user has not seen since their last visit.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 

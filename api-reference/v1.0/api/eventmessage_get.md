@@ -7,10 +7,11 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/messages/<id>
 GET /users/<id | userPrincipalName>/messages/<id>
-GET /drive/root/createdByUser/messages/<id>
-GET /drive/root/lastModifiedByUser/messages/<id>
 
+GET /me/mailFolders/<id>/messages/<id>
+GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

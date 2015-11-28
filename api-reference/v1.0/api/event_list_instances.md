@@ -7,9 +7,22 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/events/<id>/instances
 GET /users/<id | userPrincipalName>/events/<id>/instances
 GET /groups/<id>/events/<id>/instances
-GET /users/<id | userPrincipalName>/calendarView/<id>/instances
+
+GET /me/calendar/events/<id>/instances
+GET /users/<id | userPrincipalName>/calendar/events/<id>/instances
+GET /groups/<id>/calendar/events/<id>/instances
+
+GET /me/calendars/<id>/events/<id>/instances
+GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>/instances
+
+GET /me/calendargroup/calendars/<id>/events/<id>/instances
+GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/instances
+
+GET /me/calendargroups/<id>/calendars/<id>/events/<id>/instances
+GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/instances
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

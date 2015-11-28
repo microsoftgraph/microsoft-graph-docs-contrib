@@ -5,16 +5,21 @@ Update the properties of calendargroup object.
 One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's default [calendarGroup](../resources/calendargroup.md).
 ```http
 PATCH /me/calendarGroup
 PATCH /users/<id | userPrincipalName>/calendarGroup
+```
+Any [calendarGroup](../resources/calendargroup.md) of a user.
+```http
 PATCH /me/calendarGroups/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroups/<id>
 ```
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -22,8 +27,6 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|String|The group name.|
-|changeKey|String|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|classId|Guid|The class identifier.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [calendarGroup](../resources/calendargroup.md) object in the response body.
