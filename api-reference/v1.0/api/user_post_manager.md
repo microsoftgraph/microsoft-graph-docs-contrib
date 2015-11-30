@@ -1,13 +1,14 @@
-# Create manager
+# Assign a manager
 
-Use this API to assing user's manager. You can add user or contact as a manager of a user. 
+Use this API to assign a user's manager.
+> Note: You cannot assign direct reports - instead use this API. 
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *User.ReadWrite* or *User.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id>/manager
+POST /users/<id>/manager/$ref
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -15,11 +16,11 @@ POST /users/<id>/manager
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ### Example
 ##### Request
@@ -29,16 +30,15 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<id>/manager
+POST https://graph.microsoft.com/v1.0/users/<id>/manager/$ref
 Content-type: application/json
 Content-length: xxx
 
 {
-  "directoryObject": {
-  }
+  "@odata.id": "https://graph.microsoft.com/v1.0/users/<id>"
 }
 ```
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -47,13 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.directoryobject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: xxx
-
-{
-    "@odata.id": "<directoryObject_id"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
