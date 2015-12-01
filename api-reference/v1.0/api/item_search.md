@@ -15,9 +15,9 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```
-GET /drive/root/microsoft.graph.search?q=vacation
-GET /drive/items/{item-id}/microsoft.graph.search?q=vacation
-GET /drive/root:/{item-path}:/microsoft.graph.search?q=vacation
+GET /drive/root/microsoft.graph.search(q='vacation')
+GET /drive/items/{item-id}/microsoft.graph.search(q='vacation')
+GET /drive/root:/{item-path}:/microsoft.graph.search(q='vacation')
 ```
 
 ### Optional query parameters
@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "item_search"
 }-->
 ```http
-POST /drive/root/microsoft.graph.search?q={search=text}
+POST /drive/root/microsoft.graph.search(q='{search-query}')
 ```
 
 ##### Response
