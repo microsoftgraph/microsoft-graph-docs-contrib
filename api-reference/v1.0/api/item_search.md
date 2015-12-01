@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "item_search"
 }-->
 ```http
-POST /drive/root/microsoft.graph.search(q='{search-query}')
+GET /drive/root/microsoft.graph.search(q='{search-query}')
 ```
 
 ##### Response
