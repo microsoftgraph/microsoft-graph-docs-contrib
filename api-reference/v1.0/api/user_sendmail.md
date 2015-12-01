@@ -19,8 +19,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|message|Message||
-|saveToSentItems|Boolean||
+|Message|[Message](../resource/message.md)|The message to send.|
+|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Default is true.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -39,7 +39,7 @@ Content-type: application/json
 Content-length: 1944
 
 {
-  "message": {
+  "Message": {
     "receivedDateTime": "datetime-value",
     "sentDateTime": "datetime-value",
     "hasAttachments": true,
@@ -126,7 +126,7 @@ Content-length: 1944
       }
     ]
   },
-  "saveToSentItems": true
+  "SaveToSentItems": true
 }
 ```
 
