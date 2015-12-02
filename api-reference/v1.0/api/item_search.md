@@ -1,11 +1,13 @@
 # Search for an item
 
-Search the hierarchy of items in OneDrive for items matching a query. You can search and/or filter results to find the items your app is looking for.
+Search the hierarchy of items for items matching a query. You can search and/or filter results to find the items your app is looking for.
 
 Search returns matching results from the item specified in the URL and all
 children of that item. Filtering works on the collection of items returned,
 which can be either all children when using search, or just the immediate
 children when using a collection.
+
+To search for the hierarchy of items in OneDrive, insert `/me` in front of each HTTP request. For example, `GET /me/drive/root/microsoft.graph.search(q='vacation')` returns all items in a user's OneDrive that matches the query.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
