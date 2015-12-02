@@ -89,7 +89,7 @@ Content-type: application/json
       }
     ],
     "@search.approximateCount": 12,
-    "@odata.nextLink": "https://api.onedrive.com/drive/root/view.search?query=vacation&skipToken=1asdlnjnkj1nalkm!asd"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/drive/root/microsoft.graph.search(query='vacation')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
 
