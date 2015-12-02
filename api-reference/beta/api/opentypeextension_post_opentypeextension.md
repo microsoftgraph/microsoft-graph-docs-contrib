@@ -165,7 +165,7 @@ extension:
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.  
   
 ```http
-POST /groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions 
+POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions 
 
 {
   "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
@@ -280,7 +280,7 @@ Content-type: application/json
 
 Here is the response from the third example request.
 
-```
+```http
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
     "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
