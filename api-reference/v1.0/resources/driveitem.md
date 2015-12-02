@@ -60,7 +60,6 @@ Instance attributes are properties with special behaviors. This properties are t
 |Property name	|Type	|Description|
 |:--------------|:-----|:----------|
 |@name.conflictBehavior	|string	|The conflict resolution behavior for actions that create a new item. An item will never be returned with this annotation. Write-only.|
-|@content.downloadUrl	|string	|A Url that can be used to download this file's content. Authentication is not required with this URL. Read-only.|
 |@content.sourceUrl	|string	|When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.|
 
 **Note:** The @content.downloadUrl is a short-lived URL and can't be cached. The URL will only be available for a short period of time before it is invalidated.
