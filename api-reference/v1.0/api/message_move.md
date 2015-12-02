@@ -23,7 +23,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|destinationId|String||
+|DestinationId|String||
 
 ### Response
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
@@ -42,7 +42,7 @@ Content-type: application/json
 Content-length: 44
 
 {
-  "destinationId": "destinationId-value"
+  "DestinationId": "destinationId-value"
 }
 ```
 
