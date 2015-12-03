@@ -8,7 +8,7 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get group](../api/group_get.md) | [group](group.md) |Read properties and relationships of group object.|
-|[Create group](../api/group_post_group.md) | [group](group.md) |Create a new group by posting to the groups collection.|
+|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group by posting to the groups collection.|
 |[Update group](../api/group_update.md) | [group](group.md) |Update group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
 |[List members](../api/group_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users, contacts, and groups that are members of this group from the members navigation property.|
