@@ -10,9 +10,9 @@ A file, message, event, or a link to a file attached to a message or event.
 |[Add attachment to an event](../api/event_post_attachments.md) | [attachment](attachment.md) |You can add a file attachment or an item attachment to an event.|
 |[Add attachment to a message](../api/message_post_attachments.md) | [attachment](attachment.md) |You can add a file attachment or an item attachment to a message.|
 |[Add attachment to a post](../api/post_post_attachments.md) | [attachment](attachment.md) |You can add a file attachment or an item attachment to a post.|
-|[List atachments of an event](../api/event_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event. |
-|[List atachments of a message](../api/message_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
-|[List atachments of a post](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
+|[List attachments of an event](../api/event_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event. |
+|[List attachments of a message](../api/message_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
+|[List attachments of a post](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
 |[Delete](../api/attachment_delete.md) | None |Delete attachment object. |
 
 
