@@ -2,8 +2,8 @@
 
 Update the properties of group object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Group.ReadWrite.All*
+The following **scope** is required to execute this API: *Group.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,15 +19,15 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean||
-|autoSubscribeNewMembers|Boolean||
+|allowExternalSenders|Boolean|Default is **false**. Indicates if external members can send email to group.|
+|autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.|
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|groupTypes|String collection||
-|visibility|Boolean||
-|mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Microsoft Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Microsoft Graph.|
+|groupTypes|String collection|Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.|
+|visibility|Boolean|Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
+|mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.|
 |mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Only (pure) security groups can be created using Microsoft Graph. For this reason, the property must be set **true** when creating a group. Supports $filter.|
+|securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter..|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [group](../resources/group.md) object in the response body.

@@ -1,13 +1,23 @@
-# Create Group
+# Create group
 
-Use this API to create a new Group.
+Use this API to create a new group as specified in the request body. You can create one of 3 types of groups:
+- Office 365 group (aka unified group)
+- Dynamic group
+- Security group
+
+
+To create an Office 365 or dynamic group, set the **groupTypes** property as "Unified" and "DynamicMembership" respectively. To create a security-enabled group, 
+do not set the **groupTypes** property and set the **securityEnabled** property to **true**. For more information, see the properties of the 
+[group](../resources/group.md) resource.
+
+At a minimum, you must specify the required properties for the group. You can optionally specify any other writable properties as appropriate, such as **mailEnabled** for
+mail-enabled groups. 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drives
-
+POST /groups
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -15,11 +25,19 @@ POST /drives
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
-In the request body, supply a JSON representation of [Group](../resources/group.md) object.
+In the request body, supply a JSON representation of [group](../resources/group.md) object.
 
+The following table shows the properties that are required when you create a group.
+
+| Parameter | Type | Description|
+|:---------------|:--------|:----------|
+| displayName | string | The name to display in the address book for the group. |
+| mailEnabled | boolean | Set to **true** for mail-enabled groups. |
+| mailNickname | string | The mail alias for the group. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups. Do not set this property if creating an Office 365 group. |
 
 ### Response
-If successful, this method returns `201, Created` response code and [Group](../resources/group.md) object in the response body.
+If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
 
 ### Example
 ##### Request
@@ -55,6 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 244
 
@@ -76,7 +95,7 @@ Content-length: 244
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Group",
+  "description": "Create group",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
