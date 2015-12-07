@@ -23,3 +23,7 @@
 * Describe the authentication flow
  * An even more slimmed down version and link to the [topic in the Azure docs](https://msdn.microsoft.com/en-us/library/azure/dn645543.aspx)
  * Include screenshots where appropriate (maybe where to get an application secret since it's not called application secret in the Azure Management Portal)
+ 
+---
+
+# Call Microsoft Graph in a service or daemon app
