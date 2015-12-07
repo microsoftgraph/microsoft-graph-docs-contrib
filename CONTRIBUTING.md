@@ -40,12 +40,6 @@ You can download the Contribution License Agreement (CLA) [here](https://github.
 
 Once we receive and process your CLA, we'll do our best to review your pull requests within 10 business days.
 
-## Repository organization
-
-The content in the microsoft-graph-docs repository is grouped first by article language, then by topic. The README.md file at the root of each topic directory specifies the structure of the articles within the topic.
-
-Articles within each topic are named by MSDN GUID, not by title. This is a side effect of our document management process and can't be changed at this time. We highly recommend using the table of contents within each topic directory to navigate to the files you wish to view or edit. For more information, please see [README.md](https://github.com/OfficeDev/microsoft-graph-docs/blob/master/README.md).
-
 ## Use GitHub, Git, and this repository
 
 **Note:** Most of the information in this section can be found in [GitHub Help] [] articles.  If you're familiar with Git and GitHub, skip to the **Contribute and edit content** section for the particulars of the code/content flow of this repository.
