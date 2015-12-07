@@ -35,20 +35,18 @@ Content-type: application/json
 Content-length: 364
 
 {
-  "device": {
-    "accountEnabled": true,
-    "alternativeSecurityIds": [
-      {
-        "type": 99,
-        "identityProvider": "identityProvider-value",
-        "key": "key-value"
-      }
-    ],
-    "approximateLastSignInDateTime": "datetime-value",
-    "deviceId": "deviceId-value",
-    "deviceMetadata": "deviceMetadata-value",
-    "deviceVersion": 99
-  }
+  "accountEnabled": true,
+  "alternativeSecurityIds": [
+    {
+      "type": 99,
+      "identityProvider": "identityProvider-value",
+      "key": "key-value"
+    }
+  ],
+  "approximateLastSignInDateTime": "datetime-value",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
+  "deviceVersion": 99
 }
 ```
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
@@ -65,20 +63,18 @@ Content-type: application/json
 Content-length: 364
 
 {
-  "device": {
-    "accountEnabled": true,
-    "alternativeSecurityIds": [
-      {
-        "type": 99,
-        "identityProvider": "identityProvider-value",
-        "key": "key-value"
-      }
-    ],
-    "approximateLastSignInDateTime": "datetime-value",
-    "deviceId": "deviceId-value",
-    "deviceMetadata": "deviceMetadata-value",
-    "deviceVersion": 99
-  }
+  "accountEnabled": true,
+  "alternativeSecurityIds": [
+    {
+      "type": 99,
+      "identityProvider": "identityProvider-value",
+      "key": "key-value"
+    }
+  ],
+  "approximateLastSignInDateTime": "datetime-value",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
+  "deviceVersion": 99
 }
 ```
 

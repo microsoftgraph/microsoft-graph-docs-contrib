@@ -46,30 +46,28 @@ Content-type: application/json
 Content-length: 551
 
 {
-  "user": {
-    "accountEnabled": true,
-    "assignedLicenses": [
-      {
-        "disabledPlans": [
-          "disabledPlans-value"
-        ],
-        "skuId": "skuId-value"
-      }
-    ],
-    "assignedPlans": [
-      {
-        "assignedDateTime": "datetime-value",
-        "capabilityStatus": "capabilityStatus-value",
-        "service": "service-value",
-        "servicePlanId": "servicePlanId-value"
-      }
-    ],
-    "businessPhones": [
-      "businessPhones-value"
-    ],
-    "city": "city-value",
-    "companyName": "companyName-value"
-  }
+  "accountEnabled": true,
+  "assignedLicenses": [
+    {
+      "disabledPlans": [
+        "disabledPlans-value"
+      ],
+      "skuId": "skuId-value"
+    }
+  ],
+  "assignedPlans": [
+    {
+      "assignedDateTime": "datetime-value",
+      "capabilityStatus": "capabilityStatus-value",
+      "service": "service-value",
+      "servicePlanId": "servicePlanId-value"
+    }
+  ],
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "city": "city-value",
+  "companyName": "companyName-value"
 }
 ```
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
@@ -86,30 +84,28 @@ Content-type: application/json
 Content-length: 551
 
 {
-  "user": {
-    "accountEnabled": true,
-    "assignedLicenses": [
-      {
-        "disabledPlans": [
-          "disabledPlans-value"
-        ],
-        "skuId": "skuId-value"
-      }
-    ],
-    "assignedPlans": [
-      {
-        "assignedDateTime": "datetime-value",
-        "capabilityStatus": "capabilityStatus-value",
-        "service": "service-value",
-        "servicePlanId": "servicePlanId-value"
-      }
-    ],
-    "businessPhones": [
-      "businessPhones-value"
-    ],
-    "city": "city-value",
-    "companyName": "companyName-value"
-  }
+  "accountEnabled": true,
+  "assignedLicenses": [
+    {
+      "disabledPlans": [
+        "disabledPlans-value"
+      ],
+      "skuId": "skuId-value"
+    }
+  ],
+  "assignedPlans": [
+    {
+      "assignedDateTime": "datetime-value",
+      "capabilityStatus": "capabilityStatus-value",
+      "service": "service-value",
+      "servicePlanId": "servicePlanId-value"
+    }
+  ],
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "city": "city-value",
+  "companyName": "companyName-value"
 }
 ```
 

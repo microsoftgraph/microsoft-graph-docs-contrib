@@ -41,11 +41,9 @@ Content-type: application/json
 Content-length: 153
 
 {
-  "directoryRole": {
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "roleTemplateId": "roleTemplateId-value"
-  }
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "roleTemplateId": "roleTemplateId-value"
 }
 ```
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
@@ -62,12 +60,10 @@ Content-type: application/json
 Content-length: 175
 
 {
-  "directoryRole": {
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "roleTemplateId": "roleTemplateId-value",
-    "id": "id-value"
-  }
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "roleTemplateId": "roleTemplateId-value",
+  "id": "id-value"
 }
 ```
 
