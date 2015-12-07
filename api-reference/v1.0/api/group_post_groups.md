@@ -5,13 +5,15 @@ Use this API to create a new group as specified in the request body. You can cre
 - Dynamic group
 - Security group
 
+At a minimum, you must specify the properties required for the type of group you're creating. This includes:
 
-To create an Office 365 or dynamic group, set the **groupTypes** property as "Unified" and "DynamicMembership" respectively. To create a security-enabled group, 
-do not set the **groupTypes** property and set the **securityEnabled** property to **true**. For more information, see the properties of the 
-[group](../resources/group.md) resource.
+| Type of group | **groupTypes** property | **securityEnabled** property |
+|:--------------|:------------------------|:-----------------------------|
+| Office 365 | "Unified" | false |
+| Dynamic | "DynamicMembership" | false |
+| Security | Do not set. | true |
 
-At a minimum, you must specify the required properties for the group. You can optionally specify any other writable properties as appropriate, such as **mailEnabled** for
-mail-enabled groups. 
+Specify other writable properties as necessary, such as **mailEnabled** for mail-enabled groups. For more information, see the properties of the [group](../resources/group.md) resource.
 ### Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
 ### HTTP request
