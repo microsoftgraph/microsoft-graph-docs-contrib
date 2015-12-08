@@ -7,14 +7,25 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/calendarView
+GET /users/<id | userPrincipalName>/calendarView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
+
 ```
-### Optional query parameters
+
+### Query parameters
+
+In the request URL, provide the following query parameters with values.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|startDateTime|String|The start date and time of the time range. For example, "2015-11-08T19:00:00.0000000".|
+|endDateTime|String|The end date and time of the time range. For example, "2015-11-08T20:00:00.0000000".|
+
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
 ### Request body
 Do not supply a request body for this method.
