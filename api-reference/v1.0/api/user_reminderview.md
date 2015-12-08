@@ -21,8 +21,8 @@ In the request URL, provide the following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startDateTime|String|The start date and time of the event for which the reminder is set up. For example, "2015-11-08T19:00:00.0000000".|
-|endDateTime|String|The end date and time of the event for which the reminder is set up. For example, "2015-11-08T20:00:00.0000000".|
+|startDateTime|String|The start date and time of the event for which the reminder is set up. It is represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
+|endDateTime|String|The end date and time of the event for which the reminder is set up. It is represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
 
 ### Response
 If successful, this method returns `200, OK` response code and [Reminder](../resources/reminder.md) collection object in the response body.
