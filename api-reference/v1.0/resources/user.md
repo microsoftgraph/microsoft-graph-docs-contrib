@@ -20,7 +20,6 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[Create calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
 |[List calendarGroups](../api/user_list_calendargroups.md) |[CalendarGroup](calendargroup.md) collection| Get a CalendarGroup object collection.|
 |[Create calendarGroup](../api/user_post_calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the calendarGroups collection.|
-|[Create calendarView](../api/user_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the calendarView collection.|
 |[List calendarView](../api/user_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 |[List contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|

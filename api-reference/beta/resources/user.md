@@ -175,7 +175,6 @@ Here is a JSON representation of the resource
 |[List appRoleAssignments](../api/user_list_approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get a appRoleAssignment object collection.|
 |[Create CalendarGroup](../api/user_post_calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the calendarGroups collection.|
 |[List calendarGroups](../api/user_list_calendargroups.md) |[CalendarGroup](calendargroup.md) collection| Get a CalendarGroup object collection.|
-|[Create Event](../api/user_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the calendarView collection.|
 |[List calendarView](../api/user_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Create Calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
