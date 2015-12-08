@@ -36,7 +36,7 @@ The following table shows the properties that are required when you create a gro
 | displayName | string | The name to display in the address book for the group. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. |
 | mailNickname | string | The mail alias for the group. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups. Do not set this property if creating an Office 365 group. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups. Set to **false** if creating an Office 365 group. |
 
 ### Response
 If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
