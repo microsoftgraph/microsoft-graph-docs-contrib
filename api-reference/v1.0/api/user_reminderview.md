@@ -1,9 +1,9 @@
 # user: reminderView
-
+Create a new reminder by posting to the reminderView collection. 
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
-*Mail.Read; Mail.ReadWrite*
+*Calendars.Read; Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,14 +14,15 @@ POST /users/<id | userPrincipalName>/microsoft.graph.reminderView(startDateTime=
 |:-----------|:------|:----------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json  |
+| Prefer | <Time zone>. Optional, UTC assumed if absent.| 
 
 ### Request body
-In the request URL, provide following query parameters with values.
+In the request URL, provide the following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startDateTime|String||
-|endDateTime|String||
+|startDateTime|String|The start date and time of the event for which the reminder is set up. For example, "2015-11-08T19:00:00.0000000".|
+|endDateTime|String|The end date and time of the event for which the reminder is set up. For example, "2015-11-08T20:00:00.0000000".|
 
 ### Response
 If successful, this method returns `200, OK` response code and [Reminder](../resources/reminder.md) collection object in the response body.
