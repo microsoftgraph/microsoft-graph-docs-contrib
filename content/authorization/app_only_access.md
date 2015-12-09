@@ -4,7 +4,7 @@ In this article we look at the minimum tasks required to connect your service or
 
 ## Overview
 
-To call the Microsoft Graph API in a service app, you have to complete the following tasks.
+To call the Microsoft Graph API in a service or daemon app, you have to complete the following tasks.
 
 1. Register the application in Azure Active Directory.
 2. Request an access token from the token issuing endpoint.
@@ -31,18 +31,16 @@ Take note of the following values in the Configure page of your Azure applicatio
 
 Unlike client apps, your service or daemon app is unable to have a user sign in and authorize your application. Instead, your application has to implement the OAuth 2.0 Client Credentials Grant Flow that lets it use its own credentials, its client ID and an application key, to authenticate when calling the Microsoft Graph instead of impersonating a user. Refer to [Service to Service Calls Using Client Credentials](https://msdn.microsoft.com/en-us/library/azure/dn645543.aspx) for details about the authentication flow.
 
-Make an HTTP POST request to the token issuing endpoint with the following parameters, replacing ``<clientId>` and `<clientSecret>` with your app's client ID and application key, respectively.
+Make an HTTP POST request to the token issuing endpoint with the following parameters, replacing `<clientId>` and `<clientSecret>` with your app's client ID and application key, respectively.
 
 ```http
 POST https://login.microsoftonline.com/<tenantId>/oauth2/token HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-{
-  grant_type=client_credentials
-  &client_id=<clientId>
-  &client_secret=<clientSecret>
-  &resource=https://graph.microsoft.com
-}
+grant_type=client_credentials
+&client_id=<clientId>
+&client_secret=<clientSecret>
+&resource=https://graph.microsoft.com
 ```
 
 The response will include an access token and expiry information.
@@ -61,7 +59,7 @@ The response will include an access token and expiry information.
 
 ## Use the access token in a request to the Microsoft Graph API
 
-With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must append the access code to the **Authorization** header of each request.
+With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must append the access token to the **Authorization** header of each request.
 
 For example, a service or daemon app can retrieve all the users in a tenant if it has the *Read all users' full profiles* permission selected in the Azure Management Portal. 
 
