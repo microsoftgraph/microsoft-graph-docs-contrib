@@ -29,7 +29,7 @@ In the request URL, provide the following query parameters with values.
 Do not supply a request body for this method.
 
 ### Response
-If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
+If successful, this method returns `200, OK` response code and a [reminder](../resources/reminder.md) collection object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
+GET https://graph.microsoft.com/beta/me/reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
 ```
 
 ##### Response
@@ -85,6 +85,7 @@ Content-length: 673
 }
 ```
 
+<!-- This file was a manual duplicate of user_reminderview.md in v1.0. There was no such file to be found in the repo for beta.-->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

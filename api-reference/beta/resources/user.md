@@ -215,9 +215,10 @@ Here is a JSON representation of the resource
 |[List workingWith](../api/user_list_workingwith.md) |[User](user.md) collection| Get a User object collection.|
 |[Update](../api/user_update.md) | [user](user.md)  |Update user object. |
 |[Delete](../api/user_delete.md) | None |Delete user object. |
-|[Checkmembergroups](../api/user_checkmembergroups.md)|String collection||
-|[Get MemberGroups](../api/user_getmembergroups.md)|String collection||
-|[Get MemberObjects](../api/user_getmemberobjects.md)|String collection||
+|[checkMembergroups](../api/user_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
+|[getMemberGroups](../api/user_getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
+|[getMemberObjects](../api/user_getmemberobjects.md)|String collection|Return all of the groups and directory roles that the user is a member of. The check is transitive.|
+|[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
