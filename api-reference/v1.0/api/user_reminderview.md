@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 GET /users/<id | userPrincipalName>/microsoft.graph.reminderView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
 ```
 
-### URL Parameters
-In the request URL, provide the following parameters with values.
+### Function Parameters
+In the request URL, provide the following function parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
