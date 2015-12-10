@@ -7,8 +7,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/calendarView(startDateTime=startDateTime-value, endDateTime=endDateTime-value)
-
+GET /users/<id | userPrincipalName>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 ### Query parameters
