@@ -38,6 +38,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
 ### Request body
 Do not supply a request body for this method.
