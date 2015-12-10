@@ -7,24 +7,32 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events/<id>/instances
-GET /users/<id | userPrincipalName>/events/<id>/instances
-GET /groups/<id>/events/<id>/instances
+GET /me/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /groups/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 
-GET /me/calendar/events/<id>/instances
-GET /users/<id | userPrincipalName>/calendar/events/<id>/instances
-GET /groups/<id>/calendar/events/<id>/instances
+GET /me/calendar/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/calendar/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /groups/<id>/calendar/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 
-GET /me/calendars/<id>/events/<id>/instances
-GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>/instances
+GET /me/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 
-GET /me/calendargroup/calendars/<id>/events/<id>/instances
-GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/instances
+GET /me/calendargroup/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 
-GET /me/calendargroups/<id>/calendars/<id>/events/<id>/instances
-GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/instances
+GET /me/calendargroups/<id>/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-### Optional query parameters
+### Query parameters
+
+In the request URL, provide the following required query parameters with values.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
+|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
+
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
 | Name       | Type | Description|
