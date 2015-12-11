@@ -41,7 +41,7 @@ The following are some examples of common queries using Microsoft Graph API:
 |   GET my tasks	| `https://graph.microsoft.com/beta/me/tasks` |
 |   GET my notes |	`https://graph.microsoft.com/beta/me/notes/notebooks` |
 |   GET files trending around me |	`https://graph.microsoft.com/beta/me/trendingAround` |
-|   GET people I am working with	 | `https://graph.microsoft.com/beta/me/workingWith` |
+|   GET people I am working with	 | `https://graph.microsoft.com/beta/user/workingWith` |
 
 
 <!-- <a name="msg_roof"> </a> -->
