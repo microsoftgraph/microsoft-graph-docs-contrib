@@ -1,6 +1,6 @@
 # Call Microsoft Graph in a service or daemon app
 
-In this article we look at the minimum tasks required to connect your service or daemon app to Office 365 and call the Microsoft Graph API.
+In this article we look at the minimum tasks required to connect your single-tenant service or daemon app to Office 365 and call the Microsoft Graph API.
 
 ## Overview
 
