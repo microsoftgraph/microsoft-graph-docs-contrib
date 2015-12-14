@@ -4,7 +4,6 @@ Thank you for your interest in Microsoft Graph documentation!
 
 * [Ways to contribute](#ways-to-contribute)
 * [Before we can accept your pull request](#before-we-can-accept-your-pull-request)
-* [Repository organization](#repository-organization)
 * [Use GitHub, Git, and this repository](#use-github-git-and-this-repository)
 * [How to use Markdown to format your topic](#how-to-use-markdown-to-format-your-topic)
 * [Standard Markdown](#standard-markdown)
