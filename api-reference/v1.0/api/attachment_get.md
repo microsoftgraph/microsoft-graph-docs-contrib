@@ -6,7 +6,7 @@ One of the following **scopes** is required to execute this API:
 
 * If accessing attachments in Messages: *Mail.Read*
 * If accessing attachments in Events: *Calendars.Read*
-* If accessing attachments in Posts: *Groups.Read*
+* If accessing attachments in Group Events or Posts: *Group.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

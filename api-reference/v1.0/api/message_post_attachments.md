@@ -1,16 +1,26 @@
 # Create Attachment
 
-Use this API to create a new Attachment.
+Use this API to add an [attachment](../resources/attachment.md) to a message.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Mail.ReadWrite* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+Attachments for a [message](../resources/message.md) in a user's mailbox.
 ```http
 POST /me/messages/<id>/attachments
 POST /users/<id | userPrincipalName>/messages/<id>/attachments
+```
+Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.
+```http
 POST /users/me/mailFolders/<id>/messages/<id>/attachments
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments
+```
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The 
+example below shows one level of nesting, but a message can be located in a child of a child and so on.
+```http
+GET /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
 ```
 ### Request headers
 | Name       | Type | Description|

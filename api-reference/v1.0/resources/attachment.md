@@ -1,15 +1,19 @@
 # attachment resource type
 
-A file, message, event, or a link to a file attached to a message or event.
+A file, item (contact, event or message), or link to a file, which is attached to an [event](../resources/event.md), 
+[message](../resources/message.md), or [post](../resources/post.md). The  
+corresponding [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), and 
+[referenceAttachment](../resources/referenceattachment.md) resources are all derived from the **attachment**
+resource. 
 
 ### Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get attachment](../api/attachment_get.md) | [attachment](attachment.md) |Read properties and relationships of attachment object.|
-|[Add attachment to an event](../api/event_post_attachments.md) | [attachment](attachment.md) |You can add a file attachment or an item attachment to an event.|
-|[Add attachment to a message](../api/message_post_attachments.md) | [attachment](attachment.md) |You can add a file attachment or an item attachment to a message.|
-|[Add attachment to a post](../api/post_post_attachments.md) | [attachment](attachment.md) |You can add a file attachment or an item attachment to a post.|
+|[Add attachment to an event](../api/event_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event.|
+|[Add attachment to a message](../api/message_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message.|
+|[Add attachment to a post](../api/post_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a post.|
 |[List attachments of an event](../api/event_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event. |
 |[List attachments of a message](../api/message_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
 |[List attachments of a post](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
