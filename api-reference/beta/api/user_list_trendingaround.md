@@ -1,11 +1,13 @@
 # List trendingAround
 
-Retrieve a list of item objects.
+Calculated insight that returns the list of items trending around the user. 
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+*Sites.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/trendingAround
 GET /users/<id | userPrincipalName>/trendingAround
 GET /drive/root/createdByUser/trendingAround
 GET /drive/root/lastModifiedByUser/trendingAround
