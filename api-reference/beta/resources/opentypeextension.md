@@ -44,7 +44,7 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post.md) | [openTypeExtension](opentypeextension.md), or [message](../resources/message.md), [event](../resources/event.md), or [contact](../resources/contact.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.| 
+|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md), or [message](../resources/message.md), [event](../resources/event.md), or [contact](../resources/contact.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.| 
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)	|Update openTypeExtension object. |
 |[Delete](../api/opentypeextension_delete.md) | None |Delete openTypeExtension object. |

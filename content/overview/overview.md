@@ -33,7 +33,7 @@ The following are some examples of common queries using Microsoft Graph API:
 |   GET my mail |	`https://graph.microsoft.com/v1.0/me/messages` |
 |   GET my calendar |	`https://graph.microsoft.com/v1.0/me/calendar` |
 |   GET my manager	| `https://graph.microsoft.com/v1.0/me/manager` |
-|   GET last user to modify file foo.txt |	`https://graph.microsoft.com/v1.0/me/drive/root/items/foo.txt/lastModifiedByUser` |
+|   GET last user to modify file foo.txt |	`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser` |
 |   GET unified groups I’m member of|	`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')` |
 |   GET users in my organization	 | `https://graph.microsoft.com/v1.0/users` |
 |   GET group conversations |	`https://graph.microsoft.com/v1.0/groups/<id>/conversations` |

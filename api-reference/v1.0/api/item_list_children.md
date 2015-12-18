@@ -1,7 +1,7 @@
 # List children
 
 Items with the folder resource may contain one or more child items. This API
-lists the contents of a drive or item's `children` collection using either the root folder, item ID or path.
+lists the contents of a drive or item's `children` collection using either the root folder, item ID or path. To list children for drives that represent a user's OneDrive for Business, insert `/me` before `/drive` in your request. For example, `GET /me/drive/root/children` returns the list of items in a user's OneDrive for Business.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
@@ -23,7 +23,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Name     | Type | Description        |
 |:----------------|:------|:--------------------------------------------|
 | if-none-match | String  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 
 ### Request body
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_children"
 }-->
 ```http
-GET /drive/root/children
+GET /me/drive/root/children
 ```
 
 ### Response

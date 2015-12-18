@@ -1,6 +1,7 @@
 # Get drive
 
-Retrieve the properties and relationships of drive object.
+Retrieve the properties and relationships of drive object. To get properties for a drive that represent a user's OneDrive for Business, insert `/me` before `/drive` in your request. For example, `GET /me/drive` returns properties for a user's OneDrive for Business.
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 
@@ -20,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer \<token\>. Required. |
 
 ### Request body
 Do not supply a request body for this method.

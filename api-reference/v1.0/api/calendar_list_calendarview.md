@@ -26,8 +26,16 @@ A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../r
 GET /me/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+### Query parameters
+
+In the request URL, provide the following required query parameters with values.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
+|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
+
+This method also supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
 | Header       | Value |
 |:---------------|:--------|

@@ -1,11 +1,13 @@
 # Search for an item
 
-Search the hierarchy of items in OneDrive for items matching a query. You can search and/or filter results to find the items your app is looking for.
+Search the hierarchy of items for items matching a query. You can search and/or filter results to find the items your app is looking for.
 
 Search returns matching results from the item specified in the URL and all
 children of that item. Filtering works on the collection of items returned,
 which can be either all children when using search, or just the immediate
 children when using a collection.
+
+To search for the hierarchy of items in OneDrive, insert `/me` in front of each HTTP request. For example, `GET /me/drive/root/microsoft.graph.search(q='vacation')` returns all items in a user's OneDrive that matches the query.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -15,9 +17,9 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```
-GET /drive/root/microsoft.graph.search?q=vacation
-GET /drive/items/{item-id}/microsoft.graph.search?q=vacation
-GET /drive/root:/{item-path}:/microsoft.graph.search?q=vacation
+GET /drive/root/microsoft.graph.search(q='vacation')
+GET /drive/items/{item-id}/microsoft.graph.search(q='vacation')
+GET /drive/root:/{item-path}:/microsoft.graph.search(q='vacation')
 ```
 
 ### Optional query parameters
@@ -46,7 +48,7 @@ Here is an example of the request.
   "name": "item_search"
 }-->
 ```http
-POST /drive/root/microsoft.graph.search?q={search=text}
+GET /drive/root/microsoft.graph.search(q='{search-query}')
 ```
 
 ##### Response
@@ -89,7 +91,7 @@ Content-type: application/json
       }
     ],
     "@search.approximateCount": 12,
-    "@odata.nextLink": "https://api.onedrive.com/drive/root/view.search?query=vacation&skipToken=1asdlnjnkj1nalkm!asd"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/drive/root/microsoft.graph.search(query='vacation')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
 

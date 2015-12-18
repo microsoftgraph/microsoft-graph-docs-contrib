@@ -1,6 +1,6 @@
 # Delete contactFolder
 
-Delete contactFolder.
+Delete contactFolder other than the default contactFolder.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Contacts.ReadWrite*

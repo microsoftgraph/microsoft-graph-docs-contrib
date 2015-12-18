@@ -1,6 +1,6 @@
 # List attachments
 
-Retrieve a list of attachment objects.
+Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -9,6 +9,7 @@ One of the following **scopes** is required to execute this API:
  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+Attachments for a [post](../resources/post.md) in a [thread](../resources/thread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 GET /groups/<id>/threads/<id>/posts/<id>/attachments
 GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments

@@ -1,16 +1,25 @@
 # List attachments
 
-Retrieve a list of attachment objects.
+Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: \
-*Mail.Read* 
+One of the following **scopes** is required to execute this API: *Mail.Read* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+Attachments for a [message](../resources/message.md) in a user's mailbox.
 ```http
 GET /me/messages/<id>/attachments
 GET /users/<id | userPrincipalName>/messages/<id>/attachments
+```
+Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.
+```http
 GET /users/me/mailFolders/<id>/messages/<id>/attachments
 GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments
+```
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The 
+example below shows one level of nesting, but a message can be located in a child of a child and so on.
+```http
+GET /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

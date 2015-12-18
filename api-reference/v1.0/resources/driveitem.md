@@ -32,7 +32,6 @@ For example, if an item behaves as a [folder](folder.md), it will have the **fol
 |createdBy|[identitySet](identityset.md)|Identity of the user, device, and application which created the item. Read-only. |
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only.|
 |deleted|[deleted](deleted.md)| Information about the deleted state of the item. Read-only.|
-|description|String|Provide a user-visible description of the item. Read-write. |
 |eTag|String|eTag for the entire item (metadata + content). Read-only. |
 |file|[file](file.md)|File metadata, if the item is a file. Read-only. |
 |fileSystemInfo|[fileSystemInfo](filesysteminfo.md)|File system information on client. Read-write. |
@@ -101,7 +100,6 @@ Here is a JSON representation of the resource.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "deleted": {"@odata.type": "microsoft.graph.deleted"},
-  "description": "string",
   "eTag": "string",
   "file": {"@odata.type": "microsoft.graph.file"},
   "fileSystemInfo": {"@odata.type": "microsoft.graph.fileSystemInfo"},

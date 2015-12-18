@@ -20,9 +20,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[Create calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
 |[List calendarGroups](../api/user_list_calendargroups.md) |[CalendarGroup](calendargroup.md) collection| Get a CalendarGroup object collection.|
 |[Create calendarGroup](../api/user_post_calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the calendarGroups collection.|
-|[Create calendarView](../api/user_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the calendarView collection.|
 |[List calendarView](../api/user_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
-|[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 |[List contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|
 |[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the contacts collection.|
 |[List contactFolders](../api/user_list_contactfolders.md) |[ContactFolder](contactfolder.md) collection| Get a ContactFolder object collection.|
@@ -38,6 +36,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
+|[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 
 
 

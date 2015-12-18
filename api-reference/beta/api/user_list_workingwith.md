@@ -1,11 +1,13 @@
 # List workingWith
 
-Retrieve a list of user objects.
+Calculated insight for the list of users that a user has been working with.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+*Users.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/workingWith
 GET /users/<id | userPrincipalName>/workingWith
 GET /drive/root/createdByUser/workingWith
 GET /drive/root/lastModifiedByUser/workingWith

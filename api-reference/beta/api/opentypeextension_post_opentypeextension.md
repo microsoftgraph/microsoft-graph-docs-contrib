@@ -102,8 +102,10 @@ just the **openTypeExtension** object.
 ##### Request
 
 The first example creates a message and an extension in the same call. The request body includes the following:
+
 - The **subject**, **body**, and **toRecipients** properties typical of a new message. 
 - And for the extension:
+
   - The type `Microsoft.Graph.OpenTypeExtension`. 
   - The extension name "Com.Contoso.Referral". 
   - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.  
@@ -140,6 +142,7 @@ POST https://graph.microsoft.com/beta/me/messages
 
 The second example creates an extension in the specified message. The request body includes the following for the 
 extension:
+
 - The type `Microsoft.Graph.OpenTypeExtension`. 
 - The extension name "Com.Contoso.Referral".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.  
@@ -160,12 +163,13 @@ POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 
 The third example creates an extension in the specified group event. The request body includes the following for the 
 extension:
+
 - The type `Microsoft.Graph.OpenTypeExtension`. 
 - The extension name "Com.Contoso.Deal".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.  
   
 ```http
-POST /groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions 
+POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions 
 
 {
   "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
@@ -183,6 +187,7 @@ POST /groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/
 
 Here is the response for the first example request. The response body includes properties of the new message, 
 and the following for the new extension:
+
 - The **id** property with the fully qualified name of `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`. 
 - The default property **extensionName** specified in the request.
 - The custom data specified in the request stored as 3 custom properties.
@@ -255,6 +260,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ****
 
 Here is the response for the second example request. The response body includes the following for the new extension:
+
 - The default property **extensionName**.
 - The **id** property with the fully qualified name of `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`. 
 - The custom data to be stored.  
@@ -280,7 +286,7 @@ Content-type: application/json
 
 Here is the response from the third example request.
 
-```
+```http
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
     "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
