@@ -17,7 +17,6 @@ With just a few clicks, you can register your application using the [Application
 
 Alternatively, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions on how to manually register the app, keep in mind the following details:
 
-* Make sure to specify the **Sign-on URL** as a URL that your application can receive access tokens at.
 * After you register the application, configure the **Application Permissions** that your service or daemon app requires.
 
 Take note of the following values in the Configure page of your Azure application because you need these values to configure the OAuth flow in your service or daemon app.
