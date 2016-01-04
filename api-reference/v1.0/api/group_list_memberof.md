@@ -2,7 +2,7 @@
 
 Get groups that the group is a direct member of. 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API: *Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
