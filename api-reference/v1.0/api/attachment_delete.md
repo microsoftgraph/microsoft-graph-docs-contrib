@@ -1,6 +1,6 @@
 # Delete attachment
 
-Delete an attachment from a calendar event or mail message.
+Delete an attachment from a calendar event, mail message, or group post.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
