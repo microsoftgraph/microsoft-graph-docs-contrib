@@ -47,8 +47,7 @@ The following are known issues with the Microsoft Graph.
 Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response. 
 
 #### Photo restrictions
-* Reading (GET) and updating (PATCH) a user's profile photo _on v1.0_ [fail](#PhotoIssuesAll).
-* Reading and updating a user's profile photo is only possible if the user has a mailbox.  Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property.  Failure to read or update a photo, in this case, would result in the following error:
+Reading and updating a user's profile photo is only possible if the user has a mailbox.  Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property.  Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
 	{
@@ -68,26 +67,9 @@ Using Microsoft Graph to create and name a unified group bypasses any unified gr
 #### Group permission scopes
 The Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to groups APIs.  These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups that can be consented by users.
 
-####Updating group photo
-Updating (PATCH) a group's [profile photo] _on v1.0_ [fails](#PhotoIssuesAll). 
-
 ### Contacts
 * Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
 * Personal contact's mobile phone isn’t being returned for a contact. It will be added shortly. In the meantime, it can be accessed through Outlook APIs.
-
-<a name="PhotoIssuesAll"></a>
-### Photos for users, groups, and contacts
-Certain scenarios in reading (GET) and updating (PATCH) a [profile photo](../../api-reference/v1.0/resources/profilephoto.md) for a user or group are not fully supported.
-#### Get Photo
-* User:  On v1.0, GET photo fails, even if the app is granted user.read or any other user.* permission. On the beta endpoint, it works as expected. 
-* Contact and group:  GET photo works with the appropriate contact or group permissions. 
-
-#### Updating Photo
-* User and group: On v1.0, PATCH photo fails irrespective of the permissions granted to the app.  On the beta endpoint, it works as expected. 
-* Contact:  PATCH photo works with the appropriate contact permission.
-
-A change is being rolled out over the next few weeks that will enable full user photo GET and PATCH on v1.0.
-
 
 ### Drives, files and content streaming
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.
