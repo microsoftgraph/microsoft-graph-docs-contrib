@@ -60,6 +60,22 @@ Reading and updating a user's profile photo is only possible if the user has a m
 
  > **NOTE**:  Shortly after GA, storage and retrieval of user profile photos will be enabled, even if the user does not have a mailbox, and this error should disappear.
 
+#### Default contacts folder
+
+In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder. 
+
+A fix will be available. Meanwhile, you can use the following [list contacts](../../api-reference/v1.0/api/user_list_contacts.md) query and the **parentFolderId** property
+as a workaround to get the folder ID of the default contacts folder:
+
+```
+GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
+```
+In the above query:
+1. `/me/contacts?$top=1` gets the properties of a [contact](../../api-reference/v1.0/resources/contact.md) in the default contacts folder.
+2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
+
+
+
 ### Groups
 #### Policy
 Using Microsoft Graph to create and name a unified group bypasses any unified group policies that are configured through Outlook Web App. 
