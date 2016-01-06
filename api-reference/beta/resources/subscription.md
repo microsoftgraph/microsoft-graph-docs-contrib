@@ -30,8 +30,8 @@ Here is a JSON representation of the resource.
 |:---------------|:--------|:----------|
 |changeType|string|Indicates the type of events that will raise a notification. The enumeration values are: Created = 1, Updated = 2, Deleted = 4, Acknowledgment = 8, Missed = 16.|
 |clientState|string|Specifies the value of the ClientState header sent by the service for each notification. The maximum length is 255 characters. The client can check that the notification came from the service by comparing the value set on the ClientState property with the value of the ClientState header received with each notification.|
-|notificationUrl|string|The URL of the client app that will receive the notifications.|
-|resource|string|Specifies the resource that will be monitored for changes. Do not include the base URL ("http://graph.microsoft.com/beta/").|
+|notificationUrl|string|The URL of the client app that will receive the notifications. This URL has to make use of the HTTPS protocol.|
+|resource|string|Specifies the resource that will be monitored for changes. Do not include the base URL ("https://graph.microsoft.com/beta/").|
 |subscriptionExpirationDateTime|[dateTimeOffset](datetimeoffset.md)|Specifies the date and time when the notification subscription expires. The time is in UTC.|
 |subscriptionId|string|Unique identifier for the subscription. Read-only.|
 
