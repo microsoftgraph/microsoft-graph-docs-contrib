@@ -24,7 +24,7 @@ If successful, this method returns `201, Created` response code and [subscriptio
 
 ### Example
 ##### Request
-Here is an example of the request.
+Here is an example of the request to send a notification when the user receives a new mail.
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -65,13 +65,7 @@ Content-length: 252
 }
 ```
 ##### Notification payload
-Here is an example of the notification payload which will be passed to your client app notification URL.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.subscription"
-} -->
+When the user receives a new mail, the notification service sends a notification to your client notification URL with the following payload.
 ```http
 {
    "value":[
