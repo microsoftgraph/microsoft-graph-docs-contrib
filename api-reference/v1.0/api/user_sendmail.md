@@ -1,8 +1,8 @@
 # user: sendMail
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Mail.ReadWrite; Mail.Send*
+One of the following **scopes** is required to execute this API: *Mail.Send*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
