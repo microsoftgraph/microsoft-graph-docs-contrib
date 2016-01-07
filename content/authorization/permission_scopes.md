@@ -28,7 +28,7 @@ The following tables list the Microsoft Graph API permission scopes and explains
 
 |   **Scope**                  |  **Permission on Azure Management Portal**                          |  **Description** |
 |:-----------------------------|:-----------------------------------------|:-----------------|
-| _User.Read.All_                |     `Read all user's full profiles`           | Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user.|
+| _User.Read.All_                |     `Read all user's full profiles`           | Same as User.ReadBasic.All, except that it allows the app to read the full profile of all users in the organization and when reading navigation properties like manager and direct reports. The full profile includes all of the declared properties of the **User** entity. To read the groups that a user is a member of, the app will also require either Group.Read.All or Group.ReadWrite.All. |
 | _User.ReadWrite.All_           |     `Read and write all user's full profiles` | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. |
 | _Directory.Read.All_           |     `Read directory data`                     | Allows the app to read data in your organization's directory, such as users, groups and apps. |
 | _Directory.ReadWrite.All_      |     `Read and write directory data`           | Allows the app to read and write data in your organization's directory, such as users, and groups.  Does not allow user or group deletion. It does not allow the app to delete users or groups, or reset user passwords. |
@@ -41,13 +41,13 @@ The following tables list the Microsoft Graph API permission scopes and explains
 
 |   **Scope**    |  **Permission on Azure Management Portal**   |  **Description** |
 |:---------------|:------------------|:-----------------|
-| _User.Read_       |    `Sign-in and read user profile` | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users. To read the user's manager, direct report, enable `User.ReadBasic.All`. To read a group membership, enable `Group.Read.All`.|
+| _User.Read_       |    `Sign-in and read user profile` | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. The full profile includes all of the declared properties of the User entity. The app cannot read navigation properties, such as manager or direct reports. Also allows the app to read the following basic company information of the signed-in user (through the **TenantDetail** object): tenant ID, tenant display name, and verified domains.|
 | _User.ReadWrite_ |    `Read and write access to user profile` | Allows the app to read your profile. It also allows the app to update your profile information on your behalf. |
-| _User.ReadBasic.All_ |    `Read all user's basic profiles` | Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo. | 
+| _User.ReadBasic.All_ |    `Read all user's basic profiles` | Allows the app to read the basic profile of all users in the organization on behalf of the signed-in user. The following properties comprise a user’s basic profile: display name, first and last name, photo, and email address. To read the groups that a user is a member of, the app will also require Group.Read.All or Group.ReadWrite.All.| 
 | _Mail.Read_ |    `Read user mail` | Allows the app to read email in user mailboxes. |
 | _Mail.ReadWrite_ |    `Read and write access to user mail` | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.|
 | _Mail.Send_ |    `Send mail as a user` | Allows the app to send mail as users in the organization. |
-| _Calendars.Read_ |    `Read user calendars`  | Allows the app to read events in user calendars . |
+| _Calendars.Read_ |    `Read user calendars`  | Allows the app to read events in user calendars .|
 | _Calendars.ReadWrite_ |    `Have full access to user calendars`  | Allows the app to create, read, update, and delete events in user calendars. |
 | _Contacts.Read_ |    `Read user contacts`  | Allows the app to read user contacts. |
 | _Contacts.ReadWrite_ |    `Have full access to user contacts`  | Allows the app to create, read, update, and delete user contacts. |
@@ -73,7 +73,7 @@ The following tables list the Microsoft Graph API permission scopes and explains
 | _Contacts.ReadWrite_ |    `Read and write contacts in all mailboxes`  |Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user.|
 | _User.ReadBasic.All_ |    `Read all users' basic profiles`  | Allows the app to read a basic set of profile properties of other users in your organization without a signed-in user. Includes display name, first and last name, photo, and out of office message.|
 | _User.Read.All_ |    `Read all users' full profiles` | Allows the app to read the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.| 
-| _User.ReadWrite.All_ |   `Read and write all users' full profiles` | "Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.|
+| _User.ReadWrite.All_ |   `Read and write all users' full profiles` | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.|
 
 
 ##Preview
