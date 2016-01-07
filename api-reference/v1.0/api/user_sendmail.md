@@ -19,7 +19,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Message|[Message](../resource/message.md)|The message to send.|
+|Message|[Message](../resources/message.md)|The message to send.|
 |SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Default is true.|
 
 ### Response
