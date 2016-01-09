@@ -1,6 +1,6 @@
 # List events
 
-Retrieve a list of event objects.
+Retrieve a list of [event](../resources/event.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read; Calendars.ReadWrite*

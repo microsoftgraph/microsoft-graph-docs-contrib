@@ -1,6 +1,6 @@
 # Create Event
 
-Use this API to create a new Event.
+Use this API to create a new [event](../resources/event.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.ReadWrite*
