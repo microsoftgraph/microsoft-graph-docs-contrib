@@ -117,12 +117,9 @@ Content-length: 1944
     "id": "id-value",
     "attachments": [
       {
-        "lastModifiedDateTime": "datetime-value",
-        "name": "name-value",
-        "contentType": "contentType-value",
-        "size": 99,
-        "isInline": true,
-        "id": "id-value"
+        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "name": "menu.txt",
+        "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
     ]
   },
