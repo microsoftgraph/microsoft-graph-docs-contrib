@@ -64,23 +64,23 @@ Reading and updating a user's profile photo is only possible if the user has a m
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder. 
 
-A fix will be made available. Meanwhile, you can use the following [list contacts](../../api-reference/v1.0/api/user_list_contacts.md) query and the **parentFolderId** property
+A fix will be made available. Meanwhile, you can use the following [list contacts](http://graph.microsoft.io/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
 as a workaround to get the folder ID of the default contacts folder:
 
 ```
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 ```
 In the above query:
-1. `/me/contacts?$top=1` gets the properties of a [contact](../../api-reference/v1.0/resources/contact.md) in the default contacts folder.
+1. `/me/contacts?$top=1` gets the properties of a [contact](http://graph.microsoft.io/docs/api-reference/v1.0/resources/contact) in the default contacts folder.
 2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
 
 #### Adding and accessing ICS-based calendars in user's mailbox
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API. 
-* [Listing the user's calendars](../../api-reference/v1.0/api/user_list_calendars.md) allows you to get the **name**, **color** and **id** properties of 
-each [calendar](../../api-reference/v1.0/resources/calendar.md) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store
+* [Listing the user's calendars](http://graph.microsoft.io/docs/api-reference/v1.0/api/user_list_calendars) allows you to get the **name**, **color** and **id** properties of 
+each [calendar](http://graph.microsoft.io/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store
 or access the ICS URL in the calendar resource.
-* You can also [list the events](../../api-reference/v1.0/api/calendar_list_events.md) of an ICS-based calendar.
+* You can also [list the events](http://graph.microsoft.io/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
 ### Groups
 #### Policy
@@ -90,7 +90,7 @@ Using Microsoft Graph to create and name a unified group bypasses any unified gr
 The Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to groups APIs.  These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups that can be consented by users.
 
 #### Adding and getting attachments of group posts
-[Adding](../../api-reference/v1.0/api/post_post_attachments.md) attachments to group posts, [listing](../../api-reference/v1.0/api/post_list_attachments.md) and 
+[Adding](http://graph.microsoft.io/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://graph.microsoft.io/docs/api-reference/v1.0/api/post_list_attachments) and 
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
