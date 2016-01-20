@@ -100,7 +100,7 @@ Here is a JSON representation of the resource
   "lastModifiedDateTime": "String (timestamp)",
   "manager": "string",
   "middleName": "string",
-  "mobilePhone1": "string",
+  "mobilePhone": "string",
   "nickName": "string",
   "officeLocation": "string",
   "otherAddress": {"@odata.type": "microsoft.graph.physicalAddress"},

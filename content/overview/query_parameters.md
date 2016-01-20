@@ -73,14 +73,22 @@ The request returns the collection items, with the children collection expanded.
 ### $orderby
 
 To specify the sort order of the items returned from the API, use the **$orderby** query option. 
-To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example,
-`?orderby=name%20desc`.
 
 For example, to return the users in the organization ordered by their display name, the syntax is as follows:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderBy=displayName
 ``` 
+
+You can also sort by complex type entities. The following example gets messages and sorts them by the **address** field of the **from** property, which is of the complext type **emailAddress**:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$orderBy=from/emailAddress/address
+``` 
+
+To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example,
+`?orderby=name%20desc`.
+
  >  **Note**: **$orderby** can't be combined with $filter expressions.
 
 ### $filter
@@ -90,6 +98,13 @@ For example, to return users in the organization filter by display name that sta
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Garth')
 ```
+
+You can also filter by complex type entities. The following example returns messages that has the **address** field of the **from** property equal to "jon@contoso.com". The **from** 
+property is of the complex type **emailAddress**.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
+``` 
 
 ### $top
 To specify the maximum number of items to return in a result set, use the **$top** query option. The **$top** query option identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query option. 
