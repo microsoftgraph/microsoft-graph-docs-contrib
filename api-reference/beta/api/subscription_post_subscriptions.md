@@ -10,8 +10,6 @@ One of the following **scopes**, depending on the target resource, are required 
 POST /subscriptions
 
 ```
-### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name       | Type | Description|
@@ -64,8 +62,20 @@ Content-length: 252
   "subscriptionExpirationDateTime":"2015-11-20T18:23:45.9356913Z"
 }
 ```
+### Subscription validation
+In order to to avoid mistaken subscriptions directing notifications to arbitrary URLs, the subscription notification endpoint must be capable of responding to a validation request. During processing of the `POST` to the `/subscriptions` endpoint, the Microsoft Graph will send a `POST` request back to your `notificationUrl` in the following form: 
+```http
+POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationtoken=<token>
+```
+The notification endpoint must send a response with the value of `<token>` as its body and a content type of `text/plain`, as shown below, within 10 seconds otherwise the creation request will be discarded.
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+Content-length: 7
+<token>
+```
 ##### Notification payload
-When the user receives a new mail, the notification service sends a notification to your client notification URL with the following payload.
+When the user receives a new mail, the notification service sends a notification to your notification URL with the following payload.
 ```http
 {
    "value":[
