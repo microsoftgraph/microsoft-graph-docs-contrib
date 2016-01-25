@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 * If accessing attachments in Messages: *Mail.Read*
 * If accessing attachments in Events: *Calendars.Read*
 * If accessing attachments in Group Events or Posts: *Group.Read.All*
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -43,7 +43,7 @@ Attachments for a [message](../resources/message.md) contained in a top level [m
 GET /me/mailFolders/<id>/messages/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments/<id>
 ```
-Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The 
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
 example below shows one level of nesting, but a message can be located in a child of a child and so on.
 ```http
 GET /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
@@ -80,7 +80,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.fileattachment"
+  "@odata.type": "microsoft.graph.fileAttachment"
 } -->
 ```http
 HTTP/1.1 200 OK

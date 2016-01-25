@@ -65,22 +65,24 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
-### Example
+### Example (file attachment)
+
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_attachment"
+  "name": "get_file_attachment"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/events/<id>/attachments/<id>
 ```
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "@odata.type": "microsoft.graph.fileAttachment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -88,7 +90,6 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",
@@ -101,17 +102,29 @@ Content-length: 199
   "size": 99
 }
 ```
+### Example (item attachment)
 
-#### Item attachment response
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_item_attachment"
+}-->
 ```http
-Item Attachment
-Content-type: application/json
-Content-length: 162
+GET https://graph.microsoft.com/v1.0/me/events/<id>/attachments/<id>
+```
+
+##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "lastModifiedDateTime": "datetime-value",
   "name": "name-value",
   "contentType": "contentType-value",
