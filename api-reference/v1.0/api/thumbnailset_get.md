@@ -5,10 +5,10 @@ Retrieve the properties and relationships of a [thumbnailSet](../resources/thumb
 For more info, see [List thumbnails](item_list_thumbnails.md).
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.Read
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -54,25 +54,21 @@ Content-length: 456
 {
   "id": "id-value",
   "large": {
-    "content": "content-value",
     "height": 99,
     "url": "url-value",
     "width": 99
   },
   "medium": {
-    "content": "content-value",
     "height": 99,
     "url": "url-value",
     "width": 99
   },
   "small": {
-    "content": "content-value",
     "height": 99,
     "url": "url-value",
     "width": 99
   },
   "source": {
-    "content": "content-value",
     "height": 99,
     "url": "url-value",
     "width": 99

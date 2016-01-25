@@ -1,8 +1,8 @@
 # List events
 
-Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters. 
+Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -66,8 +66,7 @@ Content-length: 354
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": {
-        },
+        "response": "",
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",

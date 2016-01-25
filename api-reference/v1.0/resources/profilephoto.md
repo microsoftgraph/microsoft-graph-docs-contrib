@@ -30,7 +30,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.profilephoto"
+  "@odata.type": "microsoft.graph.profilePhoto"
 }-->
 
 ```json

@@ -2,7 +2,7 @@
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *User.ReadWrite.All; Directory.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,15 +42,11 @@ Content-length: 185
 {
   "addLicenses": [
     {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
+      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
       "skuId": "skuId-value"
     }
   ],
-  "removeLicenses": [
-    "removeLicenses-value"
-  ]
+  "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
 }
 ```
 
@@ -70,9 +66,7 @@ Content-length: 491
   "accountEnabled": true,
   "assignedLicenses": [
     {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
+      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
       "skuId": "skuId-value"
     }
   ],
@@ -81,7 +75,7 @@ Content-length: 491
       "assignedDateTime": "datetime-value",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
+      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
     }
   ],
   "businessPhones": [

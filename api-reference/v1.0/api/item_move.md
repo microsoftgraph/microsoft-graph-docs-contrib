@@ -5,7 +5,7 @@ Update the parent folder for an item by ID or path. To move an item, you update 
 You can also move an item into another folder by updating the **parentInfo.id** or **parentInfo.path** property to the ID of the target parent.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
 
@@ -55,8 +55,8 @@ Content-type: application/json
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.item"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveItem"
 } -->
 ```http
 HTTP/1.1 200 OK

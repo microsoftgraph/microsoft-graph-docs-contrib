@@ -60,7 +60,7 @@ Content-length: 110
 
 {
   "name": "name-value",
-  "classId": "classId-value",
+  "classId": "11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

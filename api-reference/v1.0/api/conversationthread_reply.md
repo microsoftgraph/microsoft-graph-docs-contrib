@@ -4,7 +4,7 @@
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All*
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -44,8 +44,7 @@ Content-length: 1131
 {
   "post": {
     "body": {
-      "contentType": {
-      },
+      "contentType": "",
       "content": "content-value"
     },
     "newParticipants": [
@@ -70,7 +69,7 @@ Content-length: 1131
 ```
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

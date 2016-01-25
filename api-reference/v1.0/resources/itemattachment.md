@@ -2,7 +2,7 @@
 
 A contact, event, or message that's attached to another event, message, or post.  
 
-Derived from [attachment](attachment.md). 
+Derived from [attachment](attachment.md).
 
 ### Methods
 
@@ -35,7 +35,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "item"
   ],
-  "@odata.type": "microsoft.graph.itemattachment"
+  "@odata.type": "microsoft.graph.itemAttachment"
 }-->
 
 ```json

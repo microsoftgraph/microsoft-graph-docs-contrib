@@ -2,7 +2,7 @@
 
 Retrieve a list of [event](../resources/event.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.Read; Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,8 +50,7 @@ Content-length: 354
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": {
-        },
+        "response": "",
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",

@@ -18,9 +18,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.responsestatus"
+  "@odata.type": "microsoft.graph.responseStatus"
 }-->
-
 ```json
 {
   "response": "String",

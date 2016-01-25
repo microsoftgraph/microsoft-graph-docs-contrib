@@ -2,7 +2,7 @@
 
 Retrieve a list of event objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All* 
+One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,8 +57,7 @@ Content-length: 354
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": {
-        },
+        "response": "",
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",

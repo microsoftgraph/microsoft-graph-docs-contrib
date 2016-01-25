@@ -1,6 +1,6 @@
-# item resource type
+# DriveItem resource type
 
-The **item** resource represents an item contained in a drive, like a file or folder. The properties of an item provide information about the type of item represented. 
+The **driveItem** resource represents an item contained in a drive, like a file or folder. The properties of an item provide information about the type of item represented.
 For example, if an item behaves as a [folder](folder.md), it will have the **folder** property set to an instance of the folder resource that contains details about the folder.
 
 ### Methods
@@ -75,7 +75,7 @@ Instance attributes are properties with special behaviors. This properties are t
 
 
 **Note:** In OneDrive for Business, the cTag property is not returned, if the item is a folder.
- 
+
 ### JSON representation
 
 Here is a JSON representation of the resource.
@@ -89,7 +89,7 @@ Here is a JSON representation of the resource.
     "permissions",
     "thumbnails"
   ],
-  "@odata.type": "microsoft.graph.item"
+  "@odata.type": "microsoft.graph.driveItem"
 }-->
 
 ```json

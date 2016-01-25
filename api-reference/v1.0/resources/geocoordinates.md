@@ -19,14 +19,14 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.geocoordinates"
+  "@odata.type": "microsoft.graph.geoCoordinates"
 }-->
 
 ```json
 {
   "altitude": 1024,
-  "latitude": 1024,
-  "longitude": 1024
+  "latitude": 26.13246,
+  "longitude": 24.34616
 }
 
 ```

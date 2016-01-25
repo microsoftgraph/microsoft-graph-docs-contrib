@@ -11,8 +11,8 @@ The **thumbnailSet** type is a keyed collection of [thumbnail](thumbnail.md) obj
 |[Update](../api/thumbnailset_update.md) | [thumbnailSet](thumbnailset.md)  |Update thumbnailSet object. |
 |[Delete](../api/thumbnailset_delete.md) | None |Delete thumbnailSet object. |
 
- 
- 
+
+
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -35,7 +35,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "source"
   ],
   "@odata.type": "microsoft.graph.thumbnailset"
 }-->

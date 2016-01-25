@@ -2,7 +2,7 @@
 
 Retrieve a list of post objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All; Group.Read.All*
 
 ### HTTP request
@@ -50,8 +50,7 @@ Content-length: 523
   "value": [
     {
       "body": {
-        "contentType": {
-        },
+        "contentType": "",
         "content": "content-value"
       },
       "receivedDateTime": "datetime-value",

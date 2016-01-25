@@ -94,7 +94,7 @@ GET /drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 | _size_     | string | The size of the thumbnail requested. This can be one of the standard sizes listed below. |
 
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.thumbnail" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -158,7 +158,7 @@ In addition to the normal enumeration of an item's children, this request also
 returns thumbnail metadata for the large thumbnails on all items where a thumbnail
 is available.
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.item", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -271,7 +271,7 @@ thumbnail. If it is not present, then no custom uploaded thumbnail exists.
 GET /drive/items/{item-id}/?expand=thumbnails(select=id,large,medium,small,source)
 ```
 ### Response
-<!-- { "blockType": "response", "@odata.type": "oneDrive.item", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 

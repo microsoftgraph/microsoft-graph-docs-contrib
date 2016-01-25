@@ -2,10 +2,10 @@
 
 Retrieve the properties and relationships of permission object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.Read
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,7 +41,7 @@ GET https://graph.microsoft.com/v1.0/drive/root/permissions/<id>
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.permission"
 } -->
 ```http

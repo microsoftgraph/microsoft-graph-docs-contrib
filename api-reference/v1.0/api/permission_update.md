@@ -1,11 +1,11 @@
 # Update permission
 
-Update the properties of an existing permission object. Only the roles property can be modified. 
+Update the properties of an existing permission object. Only the roles property can be modified.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -86,7 +86,7 @@ Content-length: 762
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.permission"
 } -->
 ```http

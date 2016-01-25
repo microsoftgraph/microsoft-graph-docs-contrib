@@ -61,8 +61,8 @@ can use the `top` query parameter to specify the number of items in the page.
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.item",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveItem",
   "isCollection": true
 } -->
 ```http

@@ -20,7 +20,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.licenseunitsdetail"
+  "@odata.type": "microsoft.graph.licenseUnitsDetail"
 }-->
 
 ```json

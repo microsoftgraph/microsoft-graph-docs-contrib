@@ -43,7 +43,7 @@ Attachments for a [message](../resources/message.md) contained in a top level [m
 GET /me/mailFolders/<id>/messages/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments/<id>
 ```
-Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The 
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
 example below shows one level of nesting, but a message can be located in a child of a child and so on.
 ```http
 GET /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
@@ -83,38 +83,44 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.attachment"
 } -->
 ```http
-File Attachment
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 199
 
-    {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
-      "contentType": "contentType-value",
-      "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
-      "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
-      "id": "id-value",
-      "isInline": false,
-      "isContactPhoto": false,
-      "name": "name-value",
-      "size": 99
-    }
-    
+{
+  "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+  "contentType": "contentType-value",
+  "contentLocation": "contentLocation-value",
+  "contentBytes": "contentBytes-value",
+  "contentId": "null",
+  "lastModifiedDateTime": "2016-01-01T12:00:00Z",
+  "id": "id-value",
+  "isInline": false,
+  "isContactPhoto": false,
+  "name": "name-value",
+  "size": 99
+}
+```
+
+#### Item attachment response
+```http
 Item Attachment
 Content-type: application/json
 Content-length: 162
+HTTP/1.1 200 OK
+Content-type: application/json
 
-    {
-      "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
-      "lastModifiedDateTime": "datetime-value",
-      "name": "name-value",
-      "contentType": "contentType-value",
-      "size": 99,
-      "isInline": true,
-      "id": "id-value"
-    }
+{
+  "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
+}
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
