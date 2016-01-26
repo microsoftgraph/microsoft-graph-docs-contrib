@@ -111,7 +111,12 @@ Here is a JSON representation of the resource
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
   "type": "String",
-  "webLink": "string"
+  "webLink": "string",
+
+  "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
+  "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "instances": [ { "@odata.type": "microsoft.graph.event" }]
+
 }
 
 ```

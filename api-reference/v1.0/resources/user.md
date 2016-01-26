@@ -81,7 +81,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |streetAddress|String|The street address of the user's place of business.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
 |usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
-|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby. 
+|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
 ### Relationships
@@ -136,6 +136,7 @@ Here is a JSON representation of the resource
     "photo",
     "registeredDevices"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.user"
 }-->
 
@@ -182,7 +183,24 @@ Here is a JSON representation of the resource
   "surname": "string",
   "usageLocation": "string",
   "userPrincipalName": "string",
-  "userType": "string"
+  "userType": "string",
+
+  "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "calendarGroups": { "@odata.type": "microsoft.graph.calendarGroup" },
+  "calendarView": { "@odata.type": "microsoft.graph.calendarView" },
+  "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
+  "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],
+  "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "events": [ { "@odata.type": "microsoft.graph.event" } ],
+  "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "manager": { "@odata.type": "microsoft.graph.directoryObject" },
+  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```

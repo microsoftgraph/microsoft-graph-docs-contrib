@@ -2,7 +2,7 @@
 
 Use this API to create a new contact folder.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder"
+  "@odata.type": "microsoft.graph.contactFolder"
 } -->
 ```http
 HTTP/1.1 200 OK

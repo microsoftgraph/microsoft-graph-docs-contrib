@@ -39,7 +39,8 @@ Here is a JSON representation of the resource
     "childFolders",
     "contacts"
   ],
-  "@odata.type": "microsoft.graph.contactfolder"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.contactFolder"
 }-->
 
 ```json
