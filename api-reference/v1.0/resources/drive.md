@@ -46,6 +46,7 @@ Here is a JSON representation of the resource.
     "root",
     "special"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.drive"
 }-->
 

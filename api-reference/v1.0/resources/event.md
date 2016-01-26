@@ -74,6 +74,7 @@ Here is a JSON representation of the resource
     "calendar",
     "instances"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.event"
 }-->
 

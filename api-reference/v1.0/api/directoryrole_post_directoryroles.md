@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryrole"
+  "@odata.type": "microsoft.graph.directoryRole"
 } -->
 ```http
 HTTP/1.1 200 OK

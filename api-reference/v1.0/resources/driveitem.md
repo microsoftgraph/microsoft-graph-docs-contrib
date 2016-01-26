@@ -89,6 +89,7 @@ Here is a JSON representation of the resource.
     "permissions",
     "thumbnails"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.driveItem"
 }-->
 

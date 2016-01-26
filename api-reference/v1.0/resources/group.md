@@ -1,7 +1,7 @@
 # group resource type
 
 Represents an Azure Active Directory group. Inherits from [directoryObject](directoryobject.md).
-    
+
 
 ### Methods
 
@@ -37,7 +37,7 @@ Represents an Azure Active Directory group. Inherits from [directoryObject](dire
 |[addFavorite](../api/group_addfavorite.md)|None|Add the group to the list of the current user's favorite groups. |
 |[removeFavorite](../api/group_removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. |
 
-    
+
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -99,6 +99,7 @@ Here is a JSON representation of the resource
     "rejectedSenders",
     "threads"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.group"
 }-->
 

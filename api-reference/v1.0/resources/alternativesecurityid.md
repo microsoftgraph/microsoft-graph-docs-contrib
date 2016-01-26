@@ -19,6 +19,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.alternativeSecurityId"
 }-->
 

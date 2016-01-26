@@ -54,6 +54,7 @@ Here is a JSON representation of the resource
     "registeredOwners",
     "registeredUsers"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.device"
 }-->
 

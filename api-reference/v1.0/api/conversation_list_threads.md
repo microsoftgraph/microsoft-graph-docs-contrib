@@ -2,7 +2,7 @@
 
 Retrieve a list of conversationThread objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All; Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread",
+  "@odata.type": "microsoft.graph.conversationThread",
   "isCollection": true
 } -->
 ```http

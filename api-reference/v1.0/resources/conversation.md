@@ -37,6 +37,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "threads"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.conversation"
 }-->
 
