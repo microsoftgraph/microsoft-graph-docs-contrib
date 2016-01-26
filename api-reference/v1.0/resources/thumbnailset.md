@@ -37,7 +37,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
     "source"
   ],
-  "@odata.type": "microsoft.graph.thumbnailset"
+  "@odata.type": "microsoft.graph.thumbnailSet"
 }-->
 
 ```json

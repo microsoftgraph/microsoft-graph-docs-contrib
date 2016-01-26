@@ -37,7 +37,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.directoryobject",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": false
 } -->
 ```http

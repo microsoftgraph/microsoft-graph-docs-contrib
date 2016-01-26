@@ -119,7 +119,11 @@ Here is a JSON representation of the resource.
   "specialFolder": {"@odata.type": "microsoft.graph.specialFolder"},
   "video": {"@odata.type": "microsoft.graph.video"},
   "webDavUrl": "string",
-  "webUrl": "string"
+  "webUrl": "string",
+
+  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "permissions": [ {"@odata.type": "microsoft.graph.permissions"} ]
 }
 
 ```

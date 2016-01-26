@@ -70,6 +70,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "photo"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.contact"
 }-->
 

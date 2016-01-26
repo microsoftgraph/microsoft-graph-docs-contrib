@@ -186,9 +186,10 @@ Here is a JSON representation of the resource
   "userType": "string",
 
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarGroups": { "@odata.type": "microsoft.graph.calendarGroup" },
+  "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
   "calendarView": { "@odata.type": "microsoft.graph.calendarView" },
   "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
+  "contacts": [ { "@odata.type": "microsoft.graph.contact" } ],
   "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],
   "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],

@@ -122,7 +122,21 @@ Here is a JSON representation of the resource
   "proxyAddresses": ["string"],
   "securityEnabled": true,
   "unseenCount": 1024,
-  "visibility": "string"
+  "visibility": "string",
+
+  "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
+  "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
+  "conversations": [ { "@odata.type": "microsoft.graph.conversation" }],
+  "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "events": [ { "@odata.type": "microsoft.graph.event" }],
+  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
 
 ```

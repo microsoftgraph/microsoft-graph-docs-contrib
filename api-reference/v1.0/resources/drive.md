@@ -55,7 +55,11 @@ Here is a JSON representation of the resource.
   "driveType": "string",
   "id": "string (identifier)",
   "owner": {"@odata.type": "microsoft.graph.identitySet"},
-  "quota": {"@odata.type": "microsoft.graph.quota"}
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+
+  "root": {"@odata.type": "microsoft.graph.driveItem" },
+  "items": [ {"@odata.type": "microsoft.graph.driveItem" }],
+  "special": [ {"@odata.type": "microsoft.graph.driveItem" }]
 }
 
 ```
