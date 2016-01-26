@@ -2,7 +2,7 @@
 
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Send*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "message_replyall"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/replyAll
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.replyAll
 Content-type: application/json
 Content-length: 32
 
@@ -48,7 +48,7 @@ Content-length: 32
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

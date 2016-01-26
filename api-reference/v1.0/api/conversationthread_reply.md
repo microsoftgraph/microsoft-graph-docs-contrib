@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "conversationthread_reply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/reply
+POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/microsoft.graph.reply
 Content-type: application/json
 Content-length: 1131
 

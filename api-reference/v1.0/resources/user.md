@@ -187,7 +187,7 @@ Here is a JSON representation of the resource
 
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
-  "calendarView": { "@odata.type": "microsoft.graph.calendarView" },
+  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
   "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
   "contacts": [ { "@odata.type": "microsoft.graph.contact" } ],
   "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],

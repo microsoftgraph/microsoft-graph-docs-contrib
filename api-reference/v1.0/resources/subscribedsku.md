@@ -32,7 +32,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.subscribedsku"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.subscribedSku"
 }-->
 
 ```json

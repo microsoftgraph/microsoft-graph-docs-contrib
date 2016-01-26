@@ -123,7 +123,7 @@ Here is a JSON representation of the resource.
 
   "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "permissions": [ {"@odata.type": "microsoft.graph.permissions"} ]
+  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ]
 }
 
 ```

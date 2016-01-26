@@ -2,7 +2,7 @@
 
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Send*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "message_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/forward
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.forward
 Content-type: application/json
 Content-length: 166
 
@@ -57,7 +57,7 @@ Content-length: 166
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

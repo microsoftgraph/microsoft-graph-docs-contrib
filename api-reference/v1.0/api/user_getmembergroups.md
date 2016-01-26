@@ -2,7 +2,7 @@
 Return all the groups that the user is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the user is a direct member of.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *User.Read; User.ReadWrite; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "user_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/v1.0/me/microsoft.graph.getMemberGroups
 Content-type: application/json
 Content-length: 33
 
