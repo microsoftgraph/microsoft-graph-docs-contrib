@@ -44,7 +44,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.thumbnailset"
+  "@odata.type": "microsoft.graph.thumbnailSet"
 } -->
 ```http
 HTTP/1.1 200 OK
