@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 * If accessing attachments in Messages: *Mail.ReadWrite*
 * If accessing attachments in Events: *Calendars.ReadWrite*
 * If accessing attachments in Group Events or Posts: *Group.ReadWrite.All*
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -43,13 +43,13 @@ Attachments for a [message](../resources/message.md) contained in a top level [m
 DELETE /me/mailFolders/<id>/messages/<id>/attachments/<id>
 DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments/<id>
 ```
-Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The 
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
 example below shows one level of nesting, but a message can be located in a child of a child and so on.
 ```http
 DELETE /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
 DELETE /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
 ```
-Attachments for a [post](../resources/post.md) in a [thread](../resources/thread.md) belonging to a [conversation](../resources/conversation.md) of a group.
+Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 DELETE /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
 DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
@@ -77,7 +77,7 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/v1.0/me/events/<id>/attachments/<id>
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

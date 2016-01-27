@@ -49,7 +49,7 @@ example below shows one level of nesting, but a message can be located in a chil
 GET /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
 ```
-Attachments for a [post](../resources/post.md) in a [thread](../resources/thread.md) belonging to a [conversation](../resources/conversation.md) of a group.
+Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 GET /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
 GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>

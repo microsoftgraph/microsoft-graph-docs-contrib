@@ -2,7 +2,7 @@
 
 Update the properties of a device.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Device.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ### HTTP request
@@ -21,7 +21,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. |
-|alternativeSecurityIds|[alternativeSecurityId](alternativesecurityid.md) collection| The **any** operator is required for filter expressions on multi-valued properties. Not nullable.           |
+|alternativeSecurityIds|[alternativeSecurityId](../resources/alternativesecurityid.md) collection| The **any** operator is required for filter expressions on multi-valued properties. Not nullable.           |
 |approximateLastSignInDateTime|DateTimeOffset|            The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |deviceId|Guid|            |
 |deviceMetadata|String||

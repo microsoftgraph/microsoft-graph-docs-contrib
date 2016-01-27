@@ -73,7 +73,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
 |preferredName|String|The preferred name for the user.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
-|proxyAddresses|String collection|For example: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"] The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
+|proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
 |skills|String collection|A list for the user to enumerate their skills.|

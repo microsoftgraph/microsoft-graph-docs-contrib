@@ -17,7 +17,6 @@ For example, if an item behaves as a [folder](folder.md), it will have the **fol
 | [Delete](../api/item_delete.md)                      | None                                       | Delete item object.                                                                    |
 | [CreateLink](../api/item_createlink.md)              | [permission](permission.md)                | Create a sharing link to allow users to access the content without signing in.         |
 | [Search](../api/item_search.md)                      | [driveitem](driveitem.md) collection                 | Search for items matching a query.                                                     |
-| [Copy](../api/item_copy.md)                      | [driveitem](driveitem.md)                  | Creates a copy of an item (including any children) on OneDrive, under a new parent.|
 | [Move](../api/item_move.md)                      | [driveitem](driveitem.md)                  | Update the parent folder for an item by ID or path. To move an item, you update its parentReference property.|
 | [Download content](../api/item_downloadcontent.md)| See API for details| Download the contents for an item.|
 | [Upload content](../api/item_uploadcontent.md)| See API for details| The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.|
@@ -71,7 +70,7 @@ Instance attributes are properties with special behaviors. This properties are t
 |createdByUser|[user](user.md)| Identity of the user, device, and application which created the item. Read-only.|
 |lastModifiedByUser|[user](user.md)| Identity of the user, device, and application which last modified the item. Read-only.|
 |permissions|[permission](permission.md) collection| The set of permissions for the item. Read-only. Nullable.|
-|thumbnails|[thumbnailSet](thumbnailset.md) collection|Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../items/thumbnails.md). Read-only. Nullable.|
+|thumbnails|[thumbnailSet](thumbnailset.md) collection|Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../api/thumbnailset_get.md). Read-only. Nullable.|
 
 
 **Note:** In OneDrive for Business, the cTag property is not returned, if the item is a folder.

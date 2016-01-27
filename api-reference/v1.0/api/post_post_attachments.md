@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
-Attachments for a [post](../resources/post.md) in a [thread](../resources/thread.md) belonging to a [conversation](../resources/conversation.md) of a group.
+Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 POST /groups/<id>/threads/<id>/posts/<id>/attachments
 POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments

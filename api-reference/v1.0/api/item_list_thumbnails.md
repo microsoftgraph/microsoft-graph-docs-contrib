@@ -2,7 +2,7 @@
 
 Retrieve a list of thumbnailSet resources.
 
-An item in a drive can be represented by zero or more [thumbnailSet](resources/thumbnailset.md) objects.
+An item in a drive can be represented by zero or more [thumbnailSet](../resources/thumbnailset.md) objects.
 Each **thumbnailSet** can have one or more **thumbnail** objects, which are images that represent the item. For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large` and custom defined ones such as `c300x400_Crop`. Items have **thumbnailSet** objects that are either generated automatically by OneDrive based off the item or that are defined by a custom uploaded image.
 
 There are many ways to work with thumbnails on OneDrive.
