@@ -37,8 +37,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -63,8 +62,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

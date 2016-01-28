@@ -2,7 +2,7 @@
 
 
  The data needed to reference a OneDrive item across the service.
- 
+
 
 ### Properties
 | Property	   | Type	|Description|
@@ -21,7 +21,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.itemreference"
+  "@odata.type": "microsoft.graph.itemReference"
 }-->
 
 ```json

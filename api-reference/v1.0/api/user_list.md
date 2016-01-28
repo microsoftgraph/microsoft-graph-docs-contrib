@@ -5,7 +5,7 @@ Retrieve a list of user objects.
 > Note: Listing users returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,11 +48,8 @@ Content-type: application/json
 Content-length: 608
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.user",
-      "@odata.id": "users/id-value",
       "businessPhones": [
         "businessPhones-value"
       ],

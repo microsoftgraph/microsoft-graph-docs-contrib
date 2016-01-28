@@ -2,13 +2,13 @@
 
 Delete a thumbnailSet resource.
 
-For more info, see [thumbnailSet](thumbnailset.md).
+For more info, see [thumbnailSet](../resources/thumbnailset.md).
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

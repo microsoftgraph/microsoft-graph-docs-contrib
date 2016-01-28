@@ -6,7 +6,7 @@ One of the following **scopes** is required to execute this API:
 
 * Group.ReadWrite
 * Group.Readwrite.All
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "post_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>/forward
+POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>/microsoft.graph.forward
 Content-type: application/json
 Content-length: 166
 
@@ -57,7 +57,7 @@ Content-length: 166
 ```
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

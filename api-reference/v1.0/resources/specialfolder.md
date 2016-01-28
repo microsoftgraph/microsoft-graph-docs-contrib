@@ -24,7 +24,7 @@ The special folders that are available to all clients are: Documents, Photos, Ca
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.specialfolder"
+  "@odata.type": "microsoft.graph.specialFolder"
 }-->
 ```json
 {

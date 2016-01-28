@@ -2,7 +2,7 @@
 
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Here is an example of the request.
   "name": "event_snoozereminder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/<id>/snoozeReminder
+POST https://graph.microsoft.com/v1.0/me/events/<id>/microsoft.graph.snoozeReminder
 Content-type: application/json
 Content-length: 97
 
@@ -63,7 +63,7 @@ Content-length: 97
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

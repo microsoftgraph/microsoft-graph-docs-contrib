@@ -31,12 +31,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/groups/<id>/rejectedSenders/$ref
 Content-type: application/json
 Content-length: 30
+
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

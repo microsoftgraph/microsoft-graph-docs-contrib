@@ -26,7 +26,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.sharinginvitation"
+  "@odata.type": "microsoft.graph.sharingInvitation"
 }-->
 
 ```json

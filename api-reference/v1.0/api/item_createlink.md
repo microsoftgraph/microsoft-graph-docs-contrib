@@ -8,7 +8,7 @@ link type doesn't already exist. If a sharing link of the specified type already
 exists for the app, the existing sharing link will be returned.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
 
@@ -26,7 +26,7 @@ POST /drive/root:/{item-path}:/microsoft.graph.createLink
 
 
 ### Request body
-In the request body, you define the type of sharing link. A `view` link allows the user to view the item, and an `edit` link allows the user to edit the item. 
+In the request body, you define the type of sharing link. A `view` link allows the user to view the item, and an `edit` link allows the user to edit the item.
 
 | Name   | Type   | Description                                                          |
 |:-------|:-------|:---------------------------------------------------------------------|
@@ -88,8 +88,9 @@ Content-Type: application/json
     "application": {
       "id": "1234",
       "displayName": "Sample Application"
-    }
-  }
+    }    
+  },
+  "shareId": "123kljlkas!21kljla"
 }
 
 ```

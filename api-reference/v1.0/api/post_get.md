@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of post object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
 * Group.Read.All
 * Group.Readwrite.All
@@ -48,8 +48,7 @@ Content-length: 414
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",

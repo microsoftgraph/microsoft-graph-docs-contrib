@@ -2,7 +2,7 @@
 
 Retrieve a list of group objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All* 
+One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -30,9 +30,10 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/groups
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -45,7 +46,6 @@ Content-type: application/json
 Content-length: xxx
 
  {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
   "value": [
     {
       "id": "id-value",
@@ -65,8 +65,7 @@ Content-length: xxx
       ],
       "securityEnabled": "securityEnabled-value",
       "visibility": "visibility-value"
-    },
-    ...
+    }
   ]
 }
 

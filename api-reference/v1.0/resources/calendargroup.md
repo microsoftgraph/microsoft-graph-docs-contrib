@@ -39,7 +39,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "calendars"
   ],
-  "@odata.type": "microsoft.graph.calendargroup"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.calendarGroup"
 }-->
 
 ```json

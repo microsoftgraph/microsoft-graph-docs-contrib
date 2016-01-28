@@ -2,7 +2,7 @@
 
 Get the user's calendar groups.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.Read; Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendargroup",
+  "@odata.type": "microsoft.graph.calendarGroup",
   "isCollection": true
 } -->
 ```http

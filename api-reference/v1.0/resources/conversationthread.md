@@ -1,5 +1,5 @@
 # conversationThread resource type
-A conversationThread is a collection of [posts](post.md) within this thread. 
+A conversationThread is a collection of [posts](post.md) within this thread.
 
 ### Methods
 
@@ -41,7 +41,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "posts"
   ],
-  "@odata.type": "microsoft.graph.conversationthread"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.conversationThread"
 }-->
 
 ```json

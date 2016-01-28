@@ -1,7 +1,7 @@
 # Assign a manager
 
 Use this API to assign a user's manager.
-> Note: You cannot assign direct reports - instead use this API. 
+> Note: You cannot assign direct reports - instead use this API.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *User.ReadWrite* or *User.ReadWrite.All*
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryobject"
+  "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
 HTTP/1.1 204 No Content

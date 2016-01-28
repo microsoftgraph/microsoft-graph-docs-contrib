@@ -2,7 +2,7 @@
 
 A file (such as a text file or Word document) attached to an event, message or post. The  **ContentBytes** property contains the base64-encoded contents of the file.  
 
-Derived from [attachment](attachment.md). 
+Derived from [attachment](attachment.md).
 
 ### Methods
 
@@ -38,7 +38,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.fileattachment"
+  "@odata.type": "microsoft.graph.fileAttachment"
 }-->
 
 ```json

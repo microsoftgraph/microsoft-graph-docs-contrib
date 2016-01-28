@@ -34,7 +34,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread",
+  "@odata.type": "microsoft.graph.conversationThread",
   "isCollection": true
 } -->
 ```http

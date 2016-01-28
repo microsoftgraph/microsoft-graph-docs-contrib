@@ -39,6 +39,7 @@ Here is a JSON representation of the resource
     "calendarView",
     "events"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.calendar"
 }-->
 

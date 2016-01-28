@@ -2,7 +2,7 @@
 
 Use this API to create a new contact.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -64,12 +64,10 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value"
+  "id": "id-value",
   "createdDateTime": "2015-11-09T02:14:32Z",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z",
-  ...
-   "displayName": "Pavel Bansky",
-  ...
+   "displayName": "Pavel Bansky"
 }
 ```
 

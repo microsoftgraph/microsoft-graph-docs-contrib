@@ -1,6 +1,6 @@
 # List directoryRoles
 
-List the directory roles that are activated in the tenant. 
+List the directory roles that are activated in the tenant.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ### HTTP request
@@ -34,7 +34,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryrole",
+  "@odata.type": "microsoft.graph.directoryRole",
   "isCollection": true
 } -->
 ```http

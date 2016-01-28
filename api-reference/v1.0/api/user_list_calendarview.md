@@ -2,7 +2,7 @@
 
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar or from a different calendar.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.Read; Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -59,8 +59,7 @@ Content-length: 354
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": {
-        },
+        "response": "",
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",

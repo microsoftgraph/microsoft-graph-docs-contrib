@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of message object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Read*  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,8 +51,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

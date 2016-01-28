@@ -2,7 +2,7 @@
 
 Update the properties of event object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -68,8 +68,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -93,8 +92,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

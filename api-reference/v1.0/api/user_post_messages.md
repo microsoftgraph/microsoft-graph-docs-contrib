@@ -2,7 +2,7 @@
 
 Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,8 +40,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
@@ -66,8 +65,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

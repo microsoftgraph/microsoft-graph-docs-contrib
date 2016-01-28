@@ -55,7 +55,8 @@ Here is a JSON representation of the resource
     "childFolders",
     "messages"
   ],
-  "@odata.type": "microsoft.graph.mailfolder"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.mailFolder"
 }-->
 
 ```json

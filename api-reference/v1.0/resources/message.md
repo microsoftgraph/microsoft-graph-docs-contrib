@@ -82,6 +82,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "attachments"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.message"
 }-->
 

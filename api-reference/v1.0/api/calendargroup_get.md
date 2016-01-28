@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of calendar group object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendargroup"
+  "@odata.type": "microsoft.graph.calendarGroup"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -51,7 +51,7 @@ Content-length: 110
 
 {
   "name": "name-value",
-  "classId": "classId-value",
+  "classId": "11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

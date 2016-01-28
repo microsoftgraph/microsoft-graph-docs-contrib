@@ -2,7 +2,7 @@
 Check for membership in a list of groups. The check is transitive.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "user_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/me/microsoft.graph.checkMemberGroups
 Content-type: application/json
 Content-length: 44
 

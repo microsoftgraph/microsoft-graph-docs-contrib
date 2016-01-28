@@ -47,8 +47,8 @@ GET /drive/items/{item-id}
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.item"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveItem"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -94,7 +94,7 @@ Accept: application/json
 
 ### Response
 
-<!-- {"blockType": "response", "@odata.type": "oneDrive.item", "truncated": true} -->
+<!-- {"blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true} -->
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -5,7 +5,7 @@ Update the properties of post object.
 One of the following **scopes** is required to execute this API:
 
 * Group.Readwrite.All
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,8 +42,7 @@ Content-length: 414
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",
@@ -77,8 +76,7 @@ Content-length: 414
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",

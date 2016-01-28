@@ -2,7 +2,7 @@
 
 Update the properties of mailfolder object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailfolder"
+  "@odata.type": "microsoft.graph.mailFolder"
 } -->
 ```http
 HTTP/1.1 200 OK

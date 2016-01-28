@@ -2,8 +2,8 @@
 
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Mail.ReadWrite* 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "message_createreply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/createReply
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.createReply
 Content-type: application/json
 Content-length: 248
 
@@ -59,8 +59,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

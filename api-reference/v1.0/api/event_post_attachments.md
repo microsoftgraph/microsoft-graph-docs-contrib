@@ -4,8 +4,8 @@ Use this API to add an [attachment](../resources/attachment.md) to an event. Sin
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
 you can add to under 4MB.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Calendars.ReadWrite* 
+One of the following **scopes** is required to execute this API:
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -44,15 +44,15 @@ In the request body, supply a JSON representation of [Attachment](../resources/a
 ### Response
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
-### Example
+### Example (file attachment)
+
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_attachment_from_event"
+  "name": "create_file_attachment_from_event"
 }-->
 ```http
-Creating file attachment 
 POST https://graph.microsoft.com/v1.0/me/messages/<id>/attachments
 Content-type: application/json
 Content-length: 142
@@ -65,8 +65,31 @@ Content-length: 142
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value"
 }
+```
 
-Creating item attachment 
+In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
+
+##### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP 200 OK
+```
+
+### Example (item attachment)
+
+##### Request
+
+Here is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_event"
+}-->
+```http
 POST https://graph.microsoft.com/v1.0/me/events/<id>/attachments
 Content-type: application/json
 Content-length: 100
@@ -74,10 +97,10 @@ Content-length: 100
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "name": "name-value",
-  "item": "message or event entity"
+  "item": {}
 }
 ```
-In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
+
 ##### Response
 Here is an example of the response.
 <!-- {

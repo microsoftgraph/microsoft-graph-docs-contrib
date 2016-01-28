@@ -2,7 +2,7 @@
 
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Send*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,12 +29,12 @@ Here is an example of the request.
   "name": "message_send"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/send
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.send
 ```
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

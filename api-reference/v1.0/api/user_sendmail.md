@@ -45,8 +45,7 @@ Content-length: 1944
     "hasAttachments": true,
     "subject": "subject-value",
     "body": {
-      "contentType": {
-      },
+      "contentType": "",
       "content": "content-value"
     },
     "bodyPreview": "bodyPreview-value",
@@ -99,8 +98,7 @@ Content-length: 1944
     ],
     "conversationId": "conversationId-value",
     "uniqueBody": {
-      "contentType": {
-      },
+      "contentType": "",
       "content": "content-value"
     },
     "isDeliveryReceiptRequested": true,
@@ -129,7 +127,7 @@ Content-length: 1944
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

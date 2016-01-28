@@ -4,7 +4,7 @@ Use this API to create a new Post.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All*
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,8 +39,7 @@ Content-length: 414
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "NewParticipants": [{
@@ -66,8 +65,7 @@ Content-length: 414
 
 {
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "receivedDateTime": "datetime-value",

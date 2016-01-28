@@ -6,7 +6,7 @@ The **file** resource groups file-related data items into a single structure.
 ### Properties
 | Property | Type                          | Description                                                                                                                                 |
 |:--------------|:------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes    | [HashesType](hashes_facet.md) | Hashes of the file's binary content, if available.                                                                                          |
+| hashes    | [HashesType](hashes.md) | Hashes of the file's binary content, if available.                                                                                          |
 | mimeType  | string                        | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. |
 
 

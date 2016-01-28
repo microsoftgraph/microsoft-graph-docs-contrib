@@ -3,7 +3,7 @@
 Use this API to create a new User.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Directory.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -24,11 +24,11 @@ The following table shows the properties that are required when you create a use
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
 |accountEnabled |boolean |true if the account is enabled; otherwise, false.|
-|displayName |string |The name to display in the address book for the user.| 
-|onPremisesImmutableId |string |Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.| 
+|displayName |string |The name to display in the address book for the user.|
+|onPremisesImmutableId |string |Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.|
 |mailNickname |string |The mail alias for the user.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.| 
-|userPrincipalName |string |The user principal name (someuser@contoso.com).| 
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
+|userPrincipalName |string |The user principal name (someuser@contoso.com).|
 
 ### Response
 If successful, this method returns `201, Created` response code and [user](../resources/user.md) object in the response body.
@@ -49,9 +49,7 @@ Content-length: 551
   "accountEnabled": true,
   "assignedLicenses": [
     {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
+      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
       "skuId": "skuId-value"
     }
   ],
@@ -60,7 +58,7 @@ Content-length: 551
       "assignedDateTime": "datetime-value",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
+      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
     }
   ],
   "businessPhones": [
@@ -87,9 +85,7 @@ Content-length: 551
   "accountEnabled": true,
   "assignedLicenses": [
     {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
+      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
       "skuId": "skuId-value"
     }
   ],
@@ -98,7 +94,7 @@ Content-length: 551
       "assignedDateTime": "datetime-value",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
+      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
     }
   ],
   "businessPhones": [
