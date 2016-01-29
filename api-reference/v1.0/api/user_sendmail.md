@@ -1,5 +1,7 @@
 # user: sendMail
 
+Send the message specified in the request body.
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Mail.Send*
 

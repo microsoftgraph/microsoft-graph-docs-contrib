@@ -13,7 +13,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the messages collection.|
 |[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
 |[Create mailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
-|[sendMail](../api/user_sendmail.md)|None|Send a message|
+|[sendMail](../api/user_sendmail.md)|None|Send the message specified in the request body.|
 |[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Create event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|

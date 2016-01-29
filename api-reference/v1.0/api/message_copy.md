@@ -1,5 +1,6 @@
 # message: copy
 
+Copy a message to a folder.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -23,7 +24,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|destinationId|String||
+|destinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
 
 ### Response
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.

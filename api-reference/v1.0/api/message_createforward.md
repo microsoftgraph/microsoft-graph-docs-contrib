@@ -1,5 +1,7 @@
 # message: createForward
 
+Create a draft of the Forward message. You can then [update](../api/message_update.md) or 
+[send](../api/message_send.md) the draft.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

@@ -11,13 +11,13 @@ A message in a mailFolder.
 |[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Gets all Attachments on a message.|
 |[Update](../api/message_update.md) | [message](message.md) |Update message object.|
 |[Delete](../api/message_delete.md) | None |Delete message object. |
-|[copy](../api/message_copy.md)|[Message](message.md)|Creates a copy of the message in a mailFolder.|
-|[createForward](../api/message_createforward.md)|[Message](message.md)|Create a draft|
-|[createReply](../api/message_createreply.md)|[Message](message.md)|Create a draft reply to the sender of a message.|
-|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Create a draft reply to all recipients of a message.|
-|[forward](../api/message_forward.md)|None|Forwards a message. The message is then saved in the Sent Items folder.|
-|[move](../api/message_move.md)|[Message](message.md)|Move the message to a mailFolder.|
-|[reply](../api/message_reply.md)|None|Replys to the sender of a message. The message is then saved in the Sent Items folder.|
+|[copy](../api/message_copy.md)|[Message](message.md)|Copy a message to a folder.|
+|[createForward](../api/message_createforward.md)|[Message](message.md)|Create a draft of the Forward message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
+|[createReply](../api/message_createreply.md)|[Message](message.md)|Create a draft of the Reply message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
+|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
+|[forward](../api/message_forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
+|[move](../api/message_move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
+|[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 
