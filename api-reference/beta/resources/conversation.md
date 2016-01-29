@@ -1,6 +1,6 @@
 # conversation resource type
 
-A conversation is a collection of [threads](#ConversationThreadResource). All threads and posts in a conversation share the same subject.
+A conversation is a collection of [threads](conversationthread.md). All threads and posts in a conversation share the same subject.
 
 ### JSON representation
 

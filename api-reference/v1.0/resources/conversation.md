@@ -1,6 +1,6 @@
 # conversation resource type
 
-A conversation is a collection of [threads](#ConversationThreadResource). All threads and posts in a conversation share the same subject.
+A conversation is a collection of [threads](conversationthread.md). All threads and posts in a conversation share the same subject.
 
 ### Methods
 
@@ -8,7 +8,7 @@ A conversation is a collection of [threads](#ConversationThreadResource). All th
 |:---------------|:--------|:----------|
 |[Get conversation](../api/conversation_get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[List threads](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) collection| Get a thread object collection.|
-~|[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
+|[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
 |[Delete](../api/conversation_delete.md) | None |Delete conversation object. |
 
 
