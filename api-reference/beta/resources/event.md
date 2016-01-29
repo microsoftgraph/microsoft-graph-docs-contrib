@@ -78,7 +78,7 @@ Here is a JSON representation of the resource
 |originalEndTimeZone|String||
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String||
-|recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence patern for the event.|
+|recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32||
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|

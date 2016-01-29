@@ -1,10 +1,6 @@
-# eventMessage resource type
+# eventMessageRequest resource type
 
-A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message. In particular, 
-[EventMessageRequest](eventMessageRequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property idenfies the type of event message.
-
-An **eventMessage** instance is typically found in the Inbox folder where it arrives as the result of either an event organizer creating a meeting or by an attendee 
-responding to a meeting request. You act on event messages in the same way that you act on Message with minor differences.
+A message that represents a meeting request.
 
 ### JSON representation
 
@@ -15,9 +11,12 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "attachments",
     "event",
-    "extensions"
+    "extensions",
+    "previousLocation",
+    "previousStartDateTime",
+    "previousEndDateTime"
   ],
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventmessagerequest"
 }-->
 
 ```json
@@ -45,12 +44,15 @@ Here is a JSON representation of the resource
   "location": {"@odata.type": "microsoft.graph.location"},
   "meetingMessageType": "microsoft.graph.meetingMessageType",
   "parentFolderId": "string",
+  "previousEndDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "previousLocation": {"@odata.type": "microsoft.graph.location"},
+  "previousStartDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "receivedDateTime": "String (timestamp)",
   "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
-  "startDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "String (timestamp)",
+  "startDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "type": "string",
@@ -73,7 +75,7 @@ Here is a JSON representation of the resource
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
-|id|String||
+|id|String|Read-only.|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Possible values are: `Focused`, `Other`.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
@@ -85,6 +87,9 @@ Here is a JSON representation of the resource
 |location|[Location](location.md)|The location of the requested meeting.|
 |meetingMessageType|String| The type of event message: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
+|previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|The previous end time of the requested meeting.|
+|previousLocation|[Location](location.md)|The previous location of the requested meeting.|
+|previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|The previous start time of the requested meeting.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
@@ -121,7 +126,7 @@ Here is a JSON representation of the resource
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)||
 |[forward](../api/message_forward.md)|None|Forwards a message. The message is then saved in the Sent Items folder.|
 |[move](../api/message_move.md)|[Message](message.md)|Move the message to a mailFolder.|
-|[reply](../api/message_reply.md)|None|Replies to the sender of a message. The message is then saved in the Sent Items folder.|
+|[reply](../api/message_reply.md)|None|Replys to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 
@@ -129,7 +134,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "eventMessage resource",
+  "description": "eventMessageRequest resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
