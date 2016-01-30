@@ -1,5 +1,6 @@
 # event: dismissReminder
 
+Dissmiss a reminder that has been triggered.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

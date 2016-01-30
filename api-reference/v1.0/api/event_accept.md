@@ -1,5 +1,6 @@
 # event: accept
 
+Accept the specified event.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -35,8 +36,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String||
-|sendResponse|Boolean||
+|comment|String|Text included in the response. Optional.|
+|sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
 
 ### Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
@@ -60,7 +61,6 @@ Content-length: 56
 }
 ```
 
-##### Response
 ##### Response
 Here is an example of the response.
 <!-- {

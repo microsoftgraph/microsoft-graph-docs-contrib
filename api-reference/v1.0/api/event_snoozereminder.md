@@ -1,5 +1,6 @@
 # event: snoozeReminder
 
+Postpone a reminder until a new time.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -35,7 +36,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|newReminderTime|DateTimeTimeZone||
+|newReminderTime|DateTimeTimeZone|The new date and time to trigger the reminder.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -61,7 +62,6 @@ Content-length: 97
 }
 ```
 
-##### Response
 ##### Response
 Here is an example of the response.
 <!-- {

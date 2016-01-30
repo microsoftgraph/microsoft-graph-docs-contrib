@@ -16,8 +16,13 @@ POST /users/<id | userPrincipalName>/mailFolders
 | Content-Type  | application/json  |
 
 ### Request body
-In the request body, supply a JSON representation of [MailFolder](../resources/mailfolder.md) object.
+In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a 
+[MailFolder](../resources/mailfolder.md) object.
 
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|parentFolderId|String|The folder ID of the parent folder, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
+|displayName|String|The display name of the new folder.|
 
 ### Response
 If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
@@ -36,13 +41,10 @@ Content-length: 159
 
 {
   "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99
+  "parentFolderId": "parentFolderId-value"
 }
 ```
-In the request body, supply a JSON representation of [mailFolder](../resources/mailfolder.md) object.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
