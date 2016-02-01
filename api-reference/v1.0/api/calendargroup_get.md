@@ -1,6 +1,6 @@
 # Get calendarGroup
 
-Retrieve the properties and relationships of calendar group object.
+Retrieve the properties and relationships of a calendar group object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.Read*

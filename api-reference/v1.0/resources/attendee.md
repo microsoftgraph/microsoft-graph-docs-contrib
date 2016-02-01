@@ -4,7 +4,7 @@ An event attendee.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|status|[ResponseStatus](responsestatus.md)|The response (none, accepted, declined, etc.) and time.|
+|status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `Required`, `Optional`, `Resource`.|
 
 
