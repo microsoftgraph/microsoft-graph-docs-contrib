@@ -6,18 +6,20 @@ An event in a calendar.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
+|[List events](../api/user_list_events.md)|Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
+|[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the instances collection.|
 |[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
-|[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
-|[List attachments](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Event](../api/event_post_instances.md) |[Event](event.md)| Create a new Event by posting to the instances collection.|
-|[List instances](../api/event_list_instances.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Update](../api/event_update.md) | [event](event.md) |Update event object. |
 |[Delete](../api/event_delete.md) | None |Delete event object. |
 |[accept](../api/event_accept.md)|None|Accept the specified event.|
+|[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
 |[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
 |[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
 |[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
-|[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
+|[List instances](../api/event_list_instances.md) |[Event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
+|[List attachments](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
+
 
 
 ### Properties

@@ -6,13 +6,14 @@ A calendar which is a container for events.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
+|[List calendars](../api/user_list_calendars.md)|[calendar](calendar.md) collection|Get all the user's calendars, or the calendars in the default or other specific calendar group.|
+|[Create calendar](../api/user_post_calendars.md) |[calendar](calendar.md)| Create a new calendar in the default calendar group or specified calendar group.|
 |[Get calendar](../api/calendar_get.md) | [calendar](calendar.md) |Read properties and relationships of calendar object.|
-|[Create Event](../api/calendar_post_calendarview.md) |[Event](event.md)| Create a new Event by posting to the calendarView collection.|
-|[List calendarView](../api/calendar_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
-|[Create Event](../api/calendar_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
-|[List events](../api/calendar_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Update](../api/calendar_update.md) | [calendar](calendar.md)  |Update calendar object. |
 |[Delete](../api/calendar_delete.md) | None |Delete calendar object. |
+|[List calendarView](../api/calendar_list_calendarview.md) |[Event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.|
+|[List events](../api/calendar_list_events.md) |[Event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
+|[Create Event](../api/calendar_post_events.md) |[Event](event.md)| Create a new Event in the default or specified calendar.|
 
 
 ### Properties
