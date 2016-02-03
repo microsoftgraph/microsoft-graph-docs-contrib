@@ -1,5 +1,7 @@
 # dateTimeTimeZone resource type
 
+Describes the date, time, and time zone of a point in time.
+
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

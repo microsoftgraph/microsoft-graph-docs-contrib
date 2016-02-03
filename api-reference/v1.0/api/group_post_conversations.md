@@ -1,6 +1,6 @@
 # Create Conversation
 
-Use this API to create a new Conversation.
+Create a new conversation by including a thread and a post.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
