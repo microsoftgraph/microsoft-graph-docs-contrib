@@ -1,11 +1,12 @@
 # List messages
 
-Retrieve a list of message objects.
+Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders/<id>/messages
 GET /users/<id | userPrincipalName>/mailFolders/<id>/messages
 GET /drive/root/createdByUser/mailFolders/<id>/messages
 GET /drive/root/lastModifiedByUser/mailFolders/<id>/messages

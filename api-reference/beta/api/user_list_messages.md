@@ -1,6 +1,6 @@
 # List messages
 
-Retrieve a list of message objects.
+Get all the messages in the signed-in user's mailbox.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

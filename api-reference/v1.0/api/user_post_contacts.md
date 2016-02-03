@@ -1,6 +1,6 @@
 # Create Contact
 
-Use this API to create a new contact.
+Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite*

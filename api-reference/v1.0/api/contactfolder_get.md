@@ -1,6 +1,6 @@
 # Get contactFolder
 
-Retrieve the properties and relationships of contactfolder object.
+Get a contact folder by using the contact folder ID.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite; Contacts.Read*

@@ -59,9 +59,9 @@ MailFolders in Outlook can contain more than one type of items, for example, the
 |:---------------|:--------|:----------|
 |[Get mailFolder](../api/mailfolder_get.md) | [mailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
 |[Create MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Create a new mailFolder under the current one by posting to the childFolders collection.|
-|[List childFolders](../api/mailfolder_list_childfolders.md) |[MailFolder](mailfolder.md) collection| Get the collection of all mailFolders under the current one.|
+|[List childFolders](../api/mailfolder_list_childfolders.md) |[MailFolder](mailfolder.md) collection|Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level folder collection and navigate to another folder. |
 |[Create Message](../api/mailfolder_post_messages.md) |[Message](message.md)| Create a new message in the current mailFolder by posting to the messages collection.|
-|[List messages](../api/mailfolder_list_messages.md) |[Message](message.md) collection| List all messages in the current mailFolder.|
+|[List messages](../api/mailfolder_list_messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.|
 |[Update](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|Update the specified mailFolder object. |
 |[Delete](../api/mailfolder_delete.md) | None |Delete the specified mailFolder object. |
 |[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Copy a mailFolder and its contents to another mailFolder.|

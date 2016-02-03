@@ -1,6 +1,6 @@
 # List contacts
 
-Get the user's personal contacts
+Get a contact collection from the default Contacts folder of the signed-in user.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Contacts.Read; Contacts.ReadWrite*

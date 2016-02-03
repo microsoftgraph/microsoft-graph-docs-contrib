@@ -1,6 +1,6 @@
 # List contacts
 
-Retrieve a list of contact objects.
+Get all the contacts in the signed-in user's mailbox.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

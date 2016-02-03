@@ -1,6 +1,6 @@
 # List messages
 
-Retrieve a list of message objects.
+Get all the messages in the signed-in user's mailbox.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*

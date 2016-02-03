@@ -1,6 +1,8 @@
 # Create ContactFolder
 
-Use this API to create a new ContactFolder.
+Create a new contactFolder as a child of a specified folder. 
+
+You can also [create a new contactFolder under the user's default contact folder](user_post_contactfolders.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite*
