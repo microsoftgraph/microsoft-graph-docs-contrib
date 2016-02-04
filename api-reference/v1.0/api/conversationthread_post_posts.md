@@ -1,6 +1,6 @@
 # Create Post
 
-Create a new post to the specified thread. You can specify both the parent conversation and the thread, or, 
+Create a new post in the specified thread. You can specify both the parent conversation and the thread, or, 
 you can specify the thread without referencing the parent conversation.
 
 ### Prerequisites

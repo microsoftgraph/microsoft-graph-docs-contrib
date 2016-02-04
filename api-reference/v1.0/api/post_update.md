@@ -1,6 +1,7 @@
 # Update post
 
-Update the properties of post object.
+Update the properties of post object. You can specify both the parent conversation and the thread, or, 
+you can specify the thread without referencing the parent conversation.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -22,9 +23,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|body|[itemBody](../resources/itemBody.md)||
-|categories|String||
-|newParticipants|[recipient](../resources/recipient.md)||
+|body|[itemBody](../resources/itemBody.md)|The contents of the post. This is a default property. This property can be null.|
+|categories|String collection|The categories associated with the post.|
+|newParticipants|[recipient](../resources/recipient.md)|Conversation participants that were added to the thread as part of this post.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [post](../resources/post.md) object in the response body.
