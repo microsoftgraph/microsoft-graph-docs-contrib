@@ -1,6 +1,8 @@
 # List posts
 
-Retrieve a list of post objects.
+Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, 
+you can specify the thread without referencing the parent conversation.
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All; Group.Read.All*

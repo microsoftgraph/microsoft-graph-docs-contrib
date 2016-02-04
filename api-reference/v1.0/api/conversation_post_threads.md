@@ -3,13 +3,11 @@
 Create a thread in the specified conversation.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+*Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/conversations/<id>/threads
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/conversations/<id>/threads
-POST /drive/root/createdByUser/joinedGroups/<id>/conversations/<id>/threads
-
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -31,7 +29,7 @@ Here is an example of the request.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/conversations/<id>/threads
+POST https://graph.microsoft.com/v1.0/groups/<id>/conversations/<id>/threads
 Content-type: application/json
 Content-length: 419
 

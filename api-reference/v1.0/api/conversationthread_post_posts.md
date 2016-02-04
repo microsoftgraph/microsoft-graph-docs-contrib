@@ -1,6 +1,8 @@
 # Create Post
 
-Use this API to create a new Post.
+Create a new post to the specified thread. You can specify both the parent conversation and the thread, or, 
+you can specify the thread without referencing the parent conversation.
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All*

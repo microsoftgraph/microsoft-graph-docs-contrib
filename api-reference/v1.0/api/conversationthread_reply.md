@@ -1,5 +1,7 @@
 # conversationThread: reply
 
+Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation 
+in the request, or, you can specify just the thread without the parent conversation.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

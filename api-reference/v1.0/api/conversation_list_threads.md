@@ -1,6 +1,6 @@
 # List threads
 
-Get all threads for the group.
+Get all the threads in a group conversation.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All; Group.Read.All*

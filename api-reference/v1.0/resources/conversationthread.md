@@ -1,17 +1,21 @@
 # conversationThread resource type
-A conversationThread is a collection of [posts](post.md) within this thread.
+A conversationThread is a collection of [posts](post.md).
+
+The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients. 
+A new thread is created when a recipient is removed from the thread. 
 
 ### Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
-|[Create Post](../api/conversationthread_post_posts.md) |post](post.md)| Create a new Post by posting to the posts collection.|
-|[List Posts](../api/conversationthread_list_posts.md) |[post](post.md) collection| Get a Post object collection.|
+|[List threads](../api/group_list_threads.md) | [conversationThread](conversationthread.md) collection |Get all the threads of a group.|
+|[Create thread](../api/group_post_threads.md) | [conversationThread](conversationthread.md) |Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.|
+|[Get conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation. |
 |[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
 |[Delete](../api/conversationthread_delete.md) | None |Delete conversationThread object. |
-|[reply](../api/conversationthread_reply.md)|None|Reply to this thread by creating a new Post entity|
-
+|[reply](../api/conversationthread_reply.md)|None|Reply to this thread by creating a new Post entity.|
+|[Create Post](../api/conversationthread_post_posts.md) |post](post.md)| Create a new post to the specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.|
+|[List Posts](../api/conversationthread_list_posts.md) |[post](post.md) collection| Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.|
 
 ### Properties
 | Property	   | Type	|Description|

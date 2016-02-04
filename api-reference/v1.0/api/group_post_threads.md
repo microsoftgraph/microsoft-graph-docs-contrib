@@ -1,6 +1,8 @@
 # Create thread
 
-Use this API to create a new thread.
+Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are 
+created in the group.
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request

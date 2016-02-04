@@ -10,7 +10,8 @@ A conversation is a collection of [threads](conversationthread.md), and a thread
 |[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new conversation by including a thread and a post.|
 |[Get conversation](../api/conversation_get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
 |[Delete](../api/conversation_delete.md) | None |Delete conversation object. |
-|[List threads](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) collection| Get all threads for the group.|
+|[List conversation threads](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads in a group conversation.|
+|[Create conversation thread](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md) collection| Create a thread in the specified conversation.|
 
 
 ### Properties
