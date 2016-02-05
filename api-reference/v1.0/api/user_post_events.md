@@ -1,6 +1,13 @@
 # Create Event
 
-Use this API to create a new [event](../resources/event.md).
+Create an [event](../resources/event.md) in the user's default calendar. 
+
+You can specify the time zone for each of the start and end times of the event as part of these values, as the 
+**start** and **end** properties are of [DateTimeTimeZone](../resources/datetimetimezone.md) type. 
+
+When the event is created, the server send invitations to all attendees.
+
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
