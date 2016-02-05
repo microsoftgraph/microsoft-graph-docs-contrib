@@ -119,7 +119,7 @@ Europe/Kaliningrad
 
 Asia/Riyadh
 
-Africa//Nairobi
+Africa/Nairobi
 
 Asia/Tehran
 
@@ -165,7 +165,7 @@ Asia/Krasnoyarsk
 
 Asia/Singapore
 
-Australia//Perth
+Australia/Perth
 
 Asia/Taipei
 
