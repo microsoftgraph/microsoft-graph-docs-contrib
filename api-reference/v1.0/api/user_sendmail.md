@@ -1,6 +1,8 @@
 # user: sendMail
 
-Send the message specified in the request body.
+Send the message specified in the request body on the fly. You can optionally save the message in the Sent Items folder.
+
+You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Mail.Send*
@@ -21,8 +23,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|The message to send.|
-|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Default is true.|
+|Message|[Message](../resources/message.md)|The message to send. Required.|
+|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Optional. Default is true.|
 
 ### Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
@@ -117,7 +119,7 @@ Content-length: 1944
     "id": "id-value",
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "#microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
@@ -127,7 +129,6 @@ Content-length: 1944
 }
 ```
 
-##### Response
 ##### Response
 Here is an example of the response.
 <!-- {

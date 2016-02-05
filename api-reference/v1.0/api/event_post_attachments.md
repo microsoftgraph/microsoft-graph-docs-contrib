@@ -58,11 +58,8 @@ Content-type: application/json
 Content-length: 142
 
 {
-  "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+  "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "name-value",
-  "contentType": "contentType-value",
-  "isInline": false,
-  "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value"
 }
 ```
@@ -95,7 +92,7 @@ Content-type: application/json
 Content-length: 100
 
 {
-  "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
+  "@odata.type": "#microsoft.graph.itemAttachment",
   "name": "name-value",
   "item": {}
 }
