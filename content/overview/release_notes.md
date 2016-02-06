@@ -94,11 +94,6 @@ The Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.R
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
-#### Using $expand and $filter to get an extension
-Using `$expand` and `$filter` to [get](http://graph.microsoft.io/docs/api-reference/beta/api/opentypeextension_get) an extension expanded in a resource instance (a user's message, 
-event, contact, or group event) currently returns the error message "When expanding extensions, a filter must be provided to specify which extensions to expand. For example 
-$expand=Extensions($filter=Id eq 'Com.Insightly.CRMOpportunity')." A fix will begin to roll out some time in February 2016.
-
 ### Contacts
 * Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
 * Personal contact's mobile phone isn’t being returned for a contact. It will be added shortly. In the meantime, it can be accessed through Outlook APIs.
