@@ -1,6 +1,9 @@
 # List acceptedSenders
 
-Retrieve a list of Users or Groups that are in the acceptedSenders list for this Group.
+Get a list of Users or Groups that are in the acceptedSenders list for this group.
+
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). 
+This allows only certain users or groups to post when appropriate. The default of this list is the members of the group.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
  *Group.Read.All* or *Group.ReadWrite.All*

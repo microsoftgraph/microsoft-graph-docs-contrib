@@ -1,20 +1,18 @@
-# Delete post
+# Remove rejectedSender
 
-Delete post.
+Remove a user or group from the rejectedSenders list.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/<id>/threads/<id>/posts/<id>
-DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>
-DELETE /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/posts/<id>
+DELETE /groups/<id>/rejectedSenders/$ref?$id=<id>
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -25,14 +23,17 @@ If successful, this method returns `204, No Content` response code. It does not 
 
 ### Example
 ##### Request
-Here is an example of the request.
+Here are a couple of examples of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_post"
+  "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>
+DELETE https://graph.microsoft.com/beta/groups/<id>/rejectedSenders/$ref?$id="users/<id>"
+
+DELETE https://graph.microsoft.com/beta/groups/<id>/rejectedSenders/$ref?$id="groups/<id>"
 ```
+
 ##### Response
 Here is an example of the response. 
 <!-- {
@@ -47,7 +48,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete post",
+  "description": "Create rejectedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

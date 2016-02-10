@@ -29,9 +29,9 @@ Here are a couple of examples of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/<id>/acceptedSenders/$ref?$id="users/<id>"
+DELETE https://graph.microsoft.com/beta/groups/<id>/acceptedSenders/$ref?$id="users/<id>"
 
-DELETE https://graph.microsoft.com/v1.0/groups/<id>/acceptedSenders/$ref?$id="groups/<id>"
+DELETE https://graph.microsoft.com/beta/groups/<id>/acceptedSenders/$ref?$id="groups/<id>"
 ```
 
 ##### Response

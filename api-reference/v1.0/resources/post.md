@@ -8,7 +8,6 @@ Represents an individual Post item within a [converstaionThread](conversationthr
 |[Create](../api/conversationthread_post_posts.md) |[post](post.md)| Create a new post in the specified thread. |
 |[Get post](../api/post_get.md) | [post](post.md) |Get the properties and relationships of a post in a specified thread.|
 |[Update](../api/post_update.md) | [post](post.md)  |Update post object. |
-|[Delete](../api/post_delete.md) | [post](post.md)  |Delete post object. |
 |[Reply](../api/post_reply.md)|None|Reply to a post and add a new post to the specified thread in a group conversation.|
 |[Forward](../api/post_forward.md)|None|Forward a post to a recipient.|
 |[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get a list of Attachment objects attached to a post.|

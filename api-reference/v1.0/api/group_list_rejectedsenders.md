@@ -1,6 +1,8 @@
 # List rejectedSenders
 
-Retrieve a list of Users or Groups that are in the rejectedSenders list for this Group.
+Get a list of users or groups that are in the rejectedSenders list for this group. 
+
+Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:  *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request

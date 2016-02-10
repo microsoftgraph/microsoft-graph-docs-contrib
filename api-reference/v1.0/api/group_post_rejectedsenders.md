@@ -1,6 +1,9 @@
-# Create acceptedSender
+# Create rejectedSender
 
-Use this API to add a new user or group to the rejectedSender list.
+Add a new user or group to the rejectedSender list.
+
+Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot 
+post to conversations of the group (identified in the POST request URL).
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
