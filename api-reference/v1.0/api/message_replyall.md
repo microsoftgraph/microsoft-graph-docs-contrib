@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 POST /users/me/messages/<id>/microsoft.graph.replyAll
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.replyAll
-POST /users/me/mailFolders/<id>/messages/<id>/microsoft.graph.replyAll
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.replyAll
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.replyAll
 ```
 ### Request headers

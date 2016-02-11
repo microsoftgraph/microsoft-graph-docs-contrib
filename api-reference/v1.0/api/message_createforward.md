@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 POST /me/messages/<id>/microsoft.graph.createForward
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.createForward
-POST /users/me/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
 ```
 ### Request headers

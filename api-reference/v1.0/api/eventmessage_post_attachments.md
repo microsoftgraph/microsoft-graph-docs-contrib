@@ -31,7 +31,7 @@ Here is an example of the request.
 }-->
 ```http
 Creating file attachment 
-POST https://graph.microsoft.com/beta/me/messages/<id>/attachments
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/attachments
 Content-type: application/json
 Content-length: 142
 

@@ -1,14 +1,14 @@
-# Delete message
+# Delete eventMessage
 
-Delete message.
+Delete eventMessage.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Mail.ReadWrite* 
+The following **scopes** are required to execute this API: _Mail.ReadWrite_ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/<id>
 DELETE /users/<id | userPrincipalName>/messages/<id>
+
 DELETE /me/mailFolders/<id>/messages/<id>
 DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
@@ -29,7 +29,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_message"
+  "name": "delete_eventmessage"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/<id>
@@ -43,11 +43,12 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete message",
+  "description": "Delete eventMessage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
