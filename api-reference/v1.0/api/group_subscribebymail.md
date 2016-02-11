@@ -1,6 +1,7 @@
 # group: subscribeByMail
 
-Calling this method will enable the current user to receive email conversations for this group.
+Calling this method will enable the current user to receive email notifications for this group, 
+about new posts, events, and files in that group. .
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
@@ -32,7 +33,6 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/groups/<id>/microsoft.graph.subscribeByMail
 ```
 
-##### Response
 ##### Response
 Here is an example of the response. 
 <!-- {

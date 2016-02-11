@@ -1,5 +1,10 @@
 # group: checkMemberGroups
-Check for membership in a list of groups. The check is transitive.
+Check for membership in the specified list of groups. Returns from the list those groups of which 
+the specified group has a direct or transitive membership. 
+
+You can check up to a maximum of 20 groups per request. This function supports Office 365 and other 
+types of groups provisioned in Azure AD. Note that Office 365 Groups cannot contain groups. So membership 
+in an Office 365 Group is always direct. 
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

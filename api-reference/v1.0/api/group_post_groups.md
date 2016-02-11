@@ -1,9 +1,9 @@
 # Create group
 
 Use this API to create a new group as specified in the request body. You can create one of 3 types of groups:
-- Office 365 group (aka unified group)
-- Dynamic group
-- Security group
+* Office 365 group (aka unified group)
+* Dynamic group
+* Security group
 
 At a minimum, you must specify the properties required for the type of group you're creating. This includes:
 

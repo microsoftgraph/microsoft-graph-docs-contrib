@@ -1,6 +1,20 @@
 # Get group
 
-Retrieve the properties and relationships of group object.
+Get some of the properties and relationships of a group object.
+
+The following properties are not returned by default:
+* AccessType
+* EmailAddress
+* AllowExternalSenders
+* AutoSubscribeNewMembers
+* IsSubscribedByMail
+* IsFavorite
+* UnseenCount
+
+You can use the query parameter **$select** to get the value of one or more of these 
+properties for a specific group, except **IsFavorite**. 
+
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request
