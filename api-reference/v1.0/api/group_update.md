@@ -1,6 +1,6 @@
 # Update group
 
-Update the properties of group object.
+Update the properties of a group object.
 ### Prerequisites
 The following **scope** is required to execute this API: *Group.ReadWrite.All*
 
