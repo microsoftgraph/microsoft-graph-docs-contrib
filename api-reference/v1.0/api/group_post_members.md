@@ -1,7 +1,7 @@
 # Add member
 
-Use this API to add one or more members to an Office 365 group, a security group or a mail-enabled security group through the members navigation property. 
-You can add users or other groups. Important: You can only add users to Office 365 groups.
+Use this API to add a member to an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. 
+You can add users or other groups. Important: You can add only users to Office 365 groups.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
