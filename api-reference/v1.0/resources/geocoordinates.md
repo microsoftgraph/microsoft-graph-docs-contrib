@@ -1,14 +1,17 @@
 # geoCoordinates resource type
 
-The geographic coordinates and elevation of the location.
+The geographic coordinates and elevation of a location. 
+
+This resource groups geographic location-related data on OneDrive into a single structure. It is available 
+on the **location** property of item resources that have an associated geographic location.
 
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|altitude|Double|The altitude of the location.|
-|latitude|Double|The latitude of the location.|
-|longitude|Double|The longitude of the location.|
+|altitude|Double|The altitude (height), in feet,  above sea level for the item.|
+|latitude|Double|The latitude, in decimal, for the item.|
+|longitude|Double|The longitude, in decimal, for the item.|
 
 ### JSON representation
 

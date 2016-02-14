@@ -1,6 +1,6 @@
 # physicalAddress resource type
 
-The physical address of a contact.
+Represents the street address of a resource such as a contact or event.
 
 
 ### Properties
