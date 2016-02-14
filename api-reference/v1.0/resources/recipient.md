@@ -1,6 +1,6 @@
 # recipient resource type
 
-A sender or receiver for a message.
+Represents information about a user in the sending or receiving end of an event, message or group post. 
 
 ### Properties
 | Property	   | Type	|Description|
