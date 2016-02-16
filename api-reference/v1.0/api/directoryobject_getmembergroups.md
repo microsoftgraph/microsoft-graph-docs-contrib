@@ -4,7 +4,7 @@ Return all the groups that the specified user, directory object, or contact is a
 transitive.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -55,6 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
 

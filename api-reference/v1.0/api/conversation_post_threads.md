@@ -2,7 +2,7 @@
 
 Create a thread in the specified conversation.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -64,9 +64,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread"
+  "@odata.type": "microsoft.graph.conversationThread"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 419
 

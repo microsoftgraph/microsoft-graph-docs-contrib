@@ -4,7 +4,7 @@ Check for membership in a specified list of groups, and returns from that list t
 of which the specified user or directory object is a member. This function is transitive.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -56,6 +56,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
 
