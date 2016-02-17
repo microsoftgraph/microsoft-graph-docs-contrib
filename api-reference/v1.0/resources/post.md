@@ -1,11 +1,12 @@
 # post resource type
 Represents an individual Post item within a [converstaionThread](conversationthread.md) entity.
+
+A new post is created when you create a new conversation or thread, or when you reply to a thread or to a post.
 ### Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List posts](../api/conversationthread_list_posts.md) | [post](post.md) |Get the posts of the specified thread. |
-|[Create](../api/conversationthread_post_posts.md) |[post](post.md)| Create a new post in the specified thread. |
 |[Get post](../api/post_get.md) | [post](post.md) |Get the properties and relationships of a post in a specified thread.|
 |[Reply](../api/post_reply.md)|None|Reply to a post and add a new post to the specified thread in a group conversation.|
 |[Forward](../api/post_forward.md)|None|Forward a post to a recipient.|

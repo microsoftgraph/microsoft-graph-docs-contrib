@@ -25,7 +25,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|The post that is being replied to.|
+|post|[post](../resources/post.md)|The new post that is being replied with.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
