@@ -147,7 +147,6 @@ Access-Control-Allow-Origin: *
     "resource":"https://graph.microsoft.com/",
     "access_token":"eyJ0eXAiOiJKV1QiLCJhb...",
     "refresh_token":"AAABAAAAvPM1KaPlrEqd...",
-    "refresh_token_expires_in":"1209600",
     "scope": "Calendar.ReadWrite Directory.Read.All Files.ReadWrite Group.ReadWrite.All Mail.ReadWrite Mail.Send User.ReadBasic.All",
     "id_token":"eyJ0eXAiOiJKV1QiLCJhbGci..."
 }
