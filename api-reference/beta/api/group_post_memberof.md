@@ -7,8 +7,6 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/memberOf
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/memberOf
-POST /drive/root/createdByUser/joinedGroups/<id>/memberOf
 
 ```
 ### Request headers
