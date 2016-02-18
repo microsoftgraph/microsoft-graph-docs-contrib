@@ -1,6 +1,11 @@
 # Create thread
 
-Create a thread in the specified conversation.
+Create a new thread in the specified conversation. 
+
+A thread and post are created in the group. Use [reply thread](conversationthread_reply.md) to further post 
+to that thread. 
+
+Alternatively, if you get the post ID, you can also [reply](post_reply.md) to that post in that thread.
 ### Prerequisites
 The following **scopes** are required to execute this API:
 *Group.ReadWrite.All*
@@ -34,67 +39,27 @@ Content-type: application/json
 Content-length: 419
 
 {
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
   "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
+  "posts": [{
+      "body": {
+        "contentType": "html",
+        "content": "this is body content"
       }
-    }
-  ]
+  }]
 }
 ```
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+If successful, this method returns `201, Created` response code and the `id` of the new thread in the response body.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.conversationThread"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 419
-
-{
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ]
-}
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

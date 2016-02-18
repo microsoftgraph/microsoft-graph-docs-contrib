@@ -47,7 +47,7 @@ Content-length: 32
 }
 ```
 
-##### Response
+
 ##### Response
 Here is an example of the response.
 <!-- {
