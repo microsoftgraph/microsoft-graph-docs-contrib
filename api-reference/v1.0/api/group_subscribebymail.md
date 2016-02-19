@@ -1,7 +1,7 @@
 # group: subscribeByMail
 
 Calling this method will enable the current user to receive email notifications for this group, 
-about new posts, events, and files in that group. .
+about new posts, events, and files in that group. Supported for only Office 365 groups.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 

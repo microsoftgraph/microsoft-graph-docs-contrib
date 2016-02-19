@@ -1,5 +1,5 @@
 # group: addFavorite
-Add the group to the list of the current user's favorite groups.
+Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
