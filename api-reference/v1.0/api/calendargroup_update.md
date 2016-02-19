@@ -5,11 +5,6 @@ Update the properties of calendargroup object.
 One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
-A user's default [calendarGroup](../resources/calendargroup.md).
-```http
-PATCH /me/calendarGroup
-PATCH /users/<id | userPrincipalName>/calendarGroup
-```
 Any [calendarGroup](../resources/calendargroup.md) of a user.
 ```http
 PATCH /me/calendarGroups/<id>
