@@ -8,9 +8,9 @@ A group of calendars.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List calendars](../api/user_list_calendargroups.md) |[Calendar](calendar.md) collection| Get the user's calendar groups.|
-|[Create Calendar](../api/user_post_calendargroups.md) |[Calendar](calendar.md)| Create a new calendar group.|
-|[Get calendarGroup](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Read properties and relationships of a calendar group object.|
+|[List calendar groups](../api/user_list_calendargroups.md) |[Calendar](calendar.md) collection| Get the user's calendar groups.|
+|[Create calendar group](../api/user_post_calendargroups.md) |[Calendar](calendar.md)| Create a new calendar group.|
+|[Get calendar group](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Read properties and relationships of a calendar group object.|
 |[Update](../api/calendargroup_update.md) | [calendarGroup](calendargroup.md) |Update calendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | None |Delete calendarGroup object. |
 |[List calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| List calendars in a calendar group.|
