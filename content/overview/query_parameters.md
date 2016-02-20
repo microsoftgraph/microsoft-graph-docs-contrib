@@ -11,7 +11,7 @@ Microsoft Graph provides several optional query parameters that you can use to s
 |$top|int|The number of items to return in a result set.|
 |$skip|int|The number of items to skip in a result set.|
 |$skipToken|string|Paging token that is used to get the next set of results.|
-|$count|none|The count of related entities.|
+|$count|none|A collection and the number of items in the collection.|
 
 
 ### $select
@@ -57,7 +57,6 @@ You can use the **$expand** query string parameter to instruct the API to expand
 
 For example, to retrieve the root drive information and the top level items in a drive, you use the **$expand** parameter. This example also uses a **$select** statement to only return the _id_ and _name_ properties of the children items.
 
-
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
@@ -65,6 +64,13 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 The request returns the collection items, with the children collection expanded.
 
 >  **Note**: The maximum number of returned objects for a request is 20.
+
+> Also, if you query on the [user](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource, you can use **$expand** to get the properties of one children collection 
+at a time. The following example gets up to 20 **user** objects, each with the **directReports** children collection expanded:
+```http
+GET https://graph.microsoft.com/v1.0/users?$expand=directReports
+```
+Some other resources may have a limit as well, so always check for possible errors.
 
 
 <!---The following shows a sample result that is returned in the response body.-->
@@ -140,10 +146,10 @@ GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$top=3&$skiptok
 ```
 
 ### $count
-The count of related entities can be requested by specifying the **$count** query option.  The **$count** query option returns the number of items in a collection or if the collection has a filter, the number of items matching the filter.
-
-For example, to get the number or size of your contacts, the syntax is as follows.
-
+Use **$count** as a query parameter as in the following example:
 ```http
-GET  https://graph.microsoft.com/v1.0/me/contacts?$count
+GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
+which would return both the **contacts** collection, and the number of items in the **contacts** collection in the `@odata.id` property.
+
+Note: This is not supported for [directoryObject](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directoryobject) collections.
