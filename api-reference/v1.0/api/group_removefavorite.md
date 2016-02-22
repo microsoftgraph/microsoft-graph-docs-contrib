@@ -1,5 +1,5 @@
 # group: removeFavorite
-Remove the group from the list of the current user's favorite groups.
+Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*

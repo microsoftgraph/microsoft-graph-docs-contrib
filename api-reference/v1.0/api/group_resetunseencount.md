@@ -1,6 +1,7 @@
 # group: resetUnseenCount
 
-Reset the unseenCount of all the posts that the current user has not seen since their last visit.
+Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for 
+only Office 365 groups.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
