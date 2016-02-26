@@ -50,23 +50,24 @@ in the response will only have those property values included.
 
 ### $expand
 
-In Microsoft Graph API requests, children collections of referenced items are not automatically expanded. This is by design because it reduces network traffic and the time it takes to generate a response from the service. However, in some cases you might want to include those results
-in a response.
+In Microsoft Graph API requests, navigations to an object or collection of the referenced item are not automatically expanded. This is by design because it reduces network traffic and 
+the time it takes to generate a response from the service. However, in some cases you might want to include those results in a response.
 
-You can use the **$expand** query string parameter to instruct the API to expand a children collection and include those results.
+You can use the **$expand** query string parameter to instruct the API to expand a child object or collection and include those results.
 
-For example, to retrieve the root drive information and the top level items in a drive, you use the **$expand** parameter. This example also uses a **$select** statement to only return the _id_ and _name_ properties of the children items.
+For example, to retrieve the root drive information and the top level children items in a drive, you use the **$expand** parameter. This example also uses a **$select** statement to only 
+return the _id_ and _name_ properties of the children items.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
-The request returns the collection items, with the children collection expanded.
+>  **Note**: The maximum number of expanded objects for a request is 20. 
 
->  **Note**: The maximum number of returned objects for a request is 20.
+> Also, if you query on the [user](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource, you can use **$expand** to get the properties of only one child object 
+or collection at a time. 
 
-> Also, if you query on the [user](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource, you can use **$expand** to get the properties of one children collection 
-at a time. The following example gets up to 20 **user** objects, each with the **directReports** children collection expanded:
+The following example gets **user** objects, each with up to 20 **directReport** objects in the **directReports** collection expanded:
 ```http
 GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 ```
