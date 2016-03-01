@@ -2,10 +2,11 @@
 
 Create a new thread in the specified conversation. 
 
-A thread and post are created in the group. Use [reply thread](conversationthread_reply.md) to further post 
-to that thread. 
+A thread and post are created as specified. Use [reply thread](conversationthread_reply.md) to further post 
+to that thread. Or, if you get the post ID, you can also [reply](post_reply.md) to that post in that thread.
 
-Alternatively, if you get the post ID, you can also [reply](post_reply.md) to that post in that thread.
+Note: You can also [start a new conversation by first creating a thread](group_post_threads.md).
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 *Group.ReadWrite.All*

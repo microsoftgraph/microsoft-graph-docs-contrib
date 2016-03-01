@@ -5,6 +5,8 @@ Start a new conversation by first creating a thread.
 A new conversation, conversation thread, and post are created in the group. 
 Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that thread.
 
+Note: You can also [start a new thread in an existing conversation](conversation_post_threads.md). 
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
