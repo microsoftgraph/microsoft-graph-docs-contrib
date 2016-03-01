@@ -8,6 +8,7 @@ The duration of an event.
 |:---------------|:--------|:----------|
 |endDate|Date|The end date of the series.|
 |numberOfOccurrences|Int32|How many times to repeat the event.|
+|recurrenceTimeZone|String |Time zone for the **startDate** and **endDate** properties. |
 |startDate|Date|The start date of the series.|
 |type|String|The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2. Possible values are: `EndDate`, `NoEnd`, `Numbered`.||
 
