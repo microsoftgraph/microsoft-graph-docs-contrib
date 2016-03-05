@@ -6,10 +6,10 @@ One of the following **scopes** is required to execute this API:
 
 * Group.Read.All
 * Group.Readwrite.All
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
-Attachments for a [post](../resources/post.md) in a [thread](../resources/thread.md) belonging to a [conversation](../resources/conversation.md) of a group.
+Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 GET /groups/<id>/threads/<id>/posts/<id>/attachments
 GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments

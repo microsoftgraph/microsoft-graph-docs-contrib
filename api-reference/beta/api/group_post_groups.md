@@ -52,16 +52,14 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "group": {
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "groupTypes": [
-      "groupTypes-value"
-    ],
-    "mail": "mail-value",
-    "mailEnabled": true,
-    "mailNickname": "mailNickname-value"
-  }
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "groupTypes": [
+    "groupTypes-value"
+  ],
+  "mail": "mail-value",
+  "mailEnabled": true,
+  "mailNickname": "mailNickname-value"
 }
 ```
 In the request body, supply a JSON representation of [group](../resources/group.md) object.
@@ -78,16 +76,14 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "group": {
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "groupTypes": [
-      "groupTypes-value"
-    ],
-    "mail": "mail-value",
-    "mailEnabled": true,
-    "mailNickname": "mailNickname-value"
-  }
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "groupTypes": [
+    "groupTypes-value"
+  ],
+  "mail": "mail-value",
+  "mailEnabled": true,
+  "mailNickname": "mailNickname-value"
 }
 ```
 

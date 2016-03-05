@@ -1,8 +1,8 @@
 # List contactFolders
 
-Get the contact folder collection from the Contacts folder.
+Get the contact folder collection in the default Contacts folder of the signed-in user.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Contacts.Read; Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder",
+  "@odata.type": "microsoft.graph.contactFolder",
   "isCollection": true
 } -->
 ```http

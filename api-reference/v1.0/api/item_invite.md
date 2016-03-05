@@ -1,12 +1,12 @@
-# Send a sharing invitation 
+# Send a sharing invitation
 
-Sends a sharing invitation to an existing item. A sharing invitation creates a unique sharing link and sends an email to the recipient of the invitation that includes the sharing link. 
+Sends a sharing invitation to an existing item. A sharing invitation creates a unique sharing link and sends an email to the recipient of the invitation that includes the sharing link.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
-  
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,7 +71,7 @@ Content-length: 313
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.permission",
   "isCollection": true
 } -->

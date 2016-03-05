@@ -14,14 +14,14 @@ GET /users/<id | userPrincipalName>/manager
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
 | Header       | Value|
-|:-----------|:------|:----------|
+|:-----------|:------|
 | Authorization  | Bearer <token>. Required.  |
 | Accept  | application/json|
 
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.

@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of a directoryroletemplate object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,7 +34,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryroletemplate"
+  "@odata.type": "microsoft.graph.directoryRoleTemplate"
 } -->
 ```http
 HTTP/1.1 200 OK

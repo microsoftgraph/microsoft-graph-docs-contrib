@@ -8,12 +8,13 @@ A group of calendars.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get calendarGroup](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Read properties and relationships of calendarGroup object.|
-|[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
-|[List calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
+|[List calendar groups](../api/user_list_calendargroups.md) |[Calendar](calendar.md) collection| Get the user's calendar groups.|
+|[Create calendar group](../api/user_post_calendargroups.md) |[Calendar](calendar.md)| Create a new calendar group.|
+|[Get calendar group](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Read properties and relationships of a calendar group object.|
 |[Update](../api/calendargroup_update.md) | [calendarGroup](calendargroup.md) |Update calendarGroup object. |
 |[Delete](../api/calendargroup_delete.md) | None |Delete calendarGroup object. |
-
+|[List calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| List calendars in a calendar group.|
+|[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar in a calendar group.|
 
 
 ### Properties
@@ -39,7 +40,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "calendars"
   ],
-  "@odata.type": "microsoft.graph.calendargroup"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.calendarGroup"
 }-->
 
 ```json

@@ -40,7 +40,7 @@ GET /drive/items/{item-id}/content
 ```
 
 ##### Response
-Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file. This is the same URL available through the @content.downloadUrl property on an item.  
+Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file. This is the same URL available through the **@microsoft.graph.downloadUrl** property on an item.  
 To download the contents of the file your application will need to follow the Location header in the response.  
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an Authorization header to download.  
 

@@ -38,15 +38,15 @@ Here is a JSON representation of the resource
 
 ### Methods
 
-| Method		   | Return Type	|Description|
+| Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get contactFolder](../api/contactfolder_get.md) | [contactFolder](contactfolder.md) |Read properties and relationships of contactFolder object.|
-|[Create ContactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the childFolders collection.|
-|[List childFolders](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| Get a ContactFolder object collection.|
-|[Create Contact](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the contacts collection.|
-|[List contacts](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|
-|[Update](../api/contactfolder_update.md) | [contactFolder](contactfolder.md)	|Update contactFolder object. |
+|[Get contactFolder](../api/contactfolder_get.md) | [contactFolder](contactfolder.md) |Get a contact folder by using the contact folder ID.|
+|[Update](../api/contactfolder_update.md) | [contactFolder](contactfolder.md) |Update contactFolder object. |
 |[Delete](../api/contactfolder_delete.md) | None |Delete contactFolder object. |
+|[List childFolders](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
+|[Create child contactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new contactFolder as a child of a specified folder.|
+|[List contacts in folder](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| Get all the contacts in the signed-in user's mailbox (`.../me/contacts`), or from the specified contact folder.|
+|[Create contact in folder](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

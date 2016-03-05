@@ -1,14 +1,30 @@
 # List calendars
 
-Get the user's calendars. To get the user's default calendar, use /calendar shortcut property. To get a different calendar, specify the calendar ID as the index of the calendars collection.
+Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read; Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+
+All the user's calendars.
 ```http
+GET /me/calendars
 GET /users/<id | userPrincipalName>/calendars
 ```
+
+The user's calendars in the default [calendarGroup](../resources/calendarGroup.md).
+```http
+GET /me/calendargroups/{calendar_group_id}/calendars
+GET /users/<id | userPrincipalName>/calendarGroup/calendars
+```
+
+The user's calendars in a specific [calendarGroup](../resources/calendarGroup.md).
+```http
+GET /me/calendarGroups/{calendar_group_id}/calendars
+GET /users/<id | userPrincipalName>/calendarGroups/{calendar_group_id}/calendars
+```
+
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers

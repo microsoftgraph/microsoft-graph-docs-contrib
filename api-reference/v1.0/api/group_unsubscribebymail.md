@@ -1,6 +1,7 @@
 # group: unsubscribeByMail
 
-Calling this method will disable the current user to receive email conversations for this group.
+Calling this method will disable the current user to receive email notifications
+for this group about new posts, events, and files in that group. Supported for only Office 365 groups. 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
 *Group.ReadWrite.All*
@@ -31,7 +32,6 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/groups/<id>/microsoft.graph.unsubscribeByMail
 ```
 
-##### Response
 ##### Response
 Here is an example of the response. 
 <!-- {

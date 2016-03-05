@@ -1,5 +1,7 @@
 # dateTimeTimeZone resource type
 
+Describes the date, time, and time zone of a point in time.
+
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -8,12 +10,12 @@
 
 
 The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.
- 
-Etc/GMT+12 
 
-Etc/GMT+11 
+Etc/GMT+12
 
-Pacific/Honolulu 
+Etc/GMT+11
+
+Pacific/Honolulu
 
 America/Anchorage
 
@@ -117,7 +119,7 @@ Europe/Kaliningrad
 
 Asia/Riyadh
 
-Africa//Nairobi
+Africa/Nairobi
 
 Asia/Tehran
 
@@ -163,7 +165,7 @@ Asia/Krasnoyarsk
 
 Asia/Singapore
 
-Australia//Perth
+Australia/Perth
 
 Asia/Taipei
 
@@ -216,7 +218,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.datetimetimezone"
+  "@odata.type": "microsoft.graph.dateTimeTimeZone"
 }-->
 
 ```json

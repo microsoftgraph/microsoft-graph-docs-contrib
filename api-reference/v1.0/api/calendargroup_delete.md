@@ -1,8 +1,12 @@
 # Delete calendarGroup
 
 Delete a calendar group other than the default calendar group.
+
+**Note** Outlook.com supports only the default calendar group which is accessible by the /me/calendars shortcut. You cannot 
+delete any calendar group in Outlook.com.
+
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +43,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "truncated": true
 } -->
 ```http
-Status code: 204
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

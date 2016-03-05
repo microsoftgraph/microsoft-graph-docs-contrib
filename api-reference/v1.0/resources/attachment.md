@@ -1,10 +1,10 @@
 # attachment resource type
 
-A file, item (contact, event or message), or link to a file, which is attached to an [event](../resources/event.md), 
+A file, item (contact, event or message), or link to a file, which is attached to an [event](../resources/event.md),
 [message](../resources/message.md), or [post](../resources/post.md). The  
-corresponding [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), and 
+corresponding [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), and
 [referenceAttachment](../resources/referenceattachment.md) resources are all derived from the **attachment**
-resource. 
+resource.
 
 ### Methods
 
@@ -42,6 +42,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.attachment"
 }-->
 

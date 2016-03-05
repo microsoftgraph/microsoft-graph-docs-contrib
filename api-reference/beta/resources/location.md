@@ -1,16 +1,15 @@
 # location resource type
 
-The **location** resource groups geographic location-related data on OneDrive into a single structure.
-
-It is available on the location property of item resources that have an associated geographic location.
+Represents location information of an event.
 
 
 ### Properties
-| Property  | Type   | Description                                                    |
-|:----------|:-------|:---------------------------------------------------------------|
-| altitude  | Double | The altitude (height), in feet,  above sea level for the item. |
-| latitude  | Double | The latitude, in decimal, for the item.                        |
-| longitude | Double | The longitude, in decimal, for the item.                       |
+| Property  | Type   | Description                                                     |
+|:----------|:-------|:----------------------------------------------------------------|
+| address | [physicalAddress](physicalAddress.md) |The street address of the location. |
+| coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) |The geographic coordinates, elevation, and their degree of accuracy for a physical location. |
+| displayName  | String | The name associated with the location.                       |
+| locationEmailAddress | String | Optional email address of the location.              |
 
 
 ### JSON representation
@@ -25,7 +24,9 @@ It is available on the location property of item resources that have an associat
 ```json
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "displayName": "string"
+  "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "displayName": "string",
+  "locationEmailAddress": "string"
 }
 
 ```

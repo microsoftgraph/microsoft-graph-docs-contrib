@@ -147,7 +147,6 @@ Access-Control-Allow-Origin: *
     "resource":"https://graph.microsoft.com/",
     "access_token":"eyJ0eXAiOiJKV1QiLCJhb...",
     "refresh_token":"AAABAAAAvPM1KaPlrEqd...",
-    "refresh_token_expires_in":"1209600",
     "scope": "Calendar.ReadWrite Directory.Read.All Files.ReadWrite Group.ReadWrite.All Mail.ReadWrite Mail.Send User.ReadBasic.All",
     "id_token":"eyJ0eXAiOiJKV1QiLCJhbGci..."
 }
@@ -213,8 +212,7 @@ The successful response returns the payload of an JSON string similar to the fol
     "resource":"https://graph.microsoft.com/",
     "access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOi...", 
     "refresh_token":"AAABAAAAvPM1KaPlrEqdFSBzj...",
-    "refresh_token_expires_in":"1209600",
-    "scope":"Graph.Read",
+   "scope":"Graph.Read",
     "pwd_exp":"6553342",
     "pwd_url":"https://portal.microsoftonline.com/ChangePassword.aspx"
 }

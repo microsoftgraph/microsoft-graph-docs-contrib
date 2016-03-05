@@ -1,8 +1,9 @@
 # event: snoozeReminder
 
+Postpone a reminder until a new time.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +36,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|newReminderTime|DateTimeTimeZone||
+|newReminderTime|DateTimeTimeZone|The new date and time to trigger the reminder.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -49,7 +50,7 @@ Here is an example of the request.
   "name": "event_snoozereminder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/<id>/snoozeReminder
+POST https://graph.microsoft.com/v1.0/me/events/<id>/microsoft.graph.snoozeReminder
 Content-type: application/json
 Content-length: 97
 
@@ -62,8 +63,7 @@ Content-length: 97
 ```
 
 ##### Response
-##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

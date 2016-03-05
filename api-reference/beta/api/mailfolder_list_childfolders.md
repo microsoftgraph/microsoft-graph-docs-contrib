@@ -1,11 +1,13 @@
 # List childFolders
 
-Retrieve a list of mailfolder objects.
+Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level 
+folder collection and navigate to another folder.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders/<id>/childFolders
 GET /users/<id | userPrincipalName>/mailFolders/<id>/childFolders
 GET /drive/root/createdByUser/mailFolders/<id>/childFolders
 GET /drive/root/lastModifiedByUser/mailFolders/<id>/childFolders

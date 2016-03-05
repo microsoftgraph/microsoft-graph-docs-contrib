@@ -1,15 +1,16 @@
 # message: forward
 
+Forward a message. The message is saved in the Sent Items folder.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Send*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/microsoft.graph.forward
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.forward
-POST /users/me/mailFolders/<id>/messages/<id>/microsoft.graph.forward
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.forward
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.forward
 ```
 ### Request headers
@@ -23,8 +24,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String||
-|toRecipients|Recipient||
+|comment|String|A comment to include. Can be an empty string.|
+|toRecipients|[Recipient](..\resources\recipient.md) collection|The list of recipients.|
 
 ### Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
@@ -38,7 +39,7 @@ Here is an example of the request.
   "name": "message_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/forward
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.forward
 Content-type: application/json
 Content-length: 166
 
@@ -57,7 +58,7 @@ Content-length: 166
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -21,7 +21,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
     "application"
   ],
-  "@odata.type": "microsoft.graph.sharinglink"
+  "@odata.type": "microsoft.graph.sharingLink"
 }-->
 
 ```json

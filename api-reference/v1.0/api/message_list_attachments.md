@@ -12,7 +12,7 @@ GET /users/<id | userPrincipalName>/messages/<id>/attachments
 ```
 Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.
 ```http
-GET /users/me/mailFolders/<id>/messages/<id>/attachments
+GET /me/mailFolders/<id>/messages/<id>/attachments
 GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments
 ```
 Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The 

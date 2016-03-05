@@ -43,13 +43,13 @@ Attachments for a [message](../resources/message.md) contained in a top level [m
 GET /me/mailFolders/<id>/messages/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments/<id>
 ```
-Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The 
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
 example below shows one level of nesting, but a message can be located in a child of a child and so on.
 ```http
 GET /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
 ```
-Attachments for a [post](../resources/post.md) in a [thread](../resources/thread.md) belonging to a [conversation](../resources/conversation.md) of a group.
+Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 GET /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
 GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
@@ -65,56 +65,75 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
-### Example
+### Example (file attachment)
+
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_attachment"
+  "name": "get_file_attachment"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/events/<id>/attachments/<id>
 ```
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "@odata.type": "microsoft.graph.fileAttachment"
 } -->
 ```http
-File Attachment
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 199
 
-    {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
-      "contentType": "contentType-value",
-      "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
-      "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
-      "id": "id-value",
-      "isInline": false,
-      "isContactPhoto": false,
-      "name": "name-value",
-      "size": 99
-    }
-    
-Item Attachment
-Content-type: application/json
-Content-length: 162
-
-    {
-      "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
-      "lastModifiedDateTime": "datetime-value",
-      "name": "name-value",
-      "contentType": "contentType-value",
-      "size": 99,
-      "isInline": true,
-      "id": "id-value"
-    }
+{
+  "contentType": "contentType-value",
+  "contentLocation": "contentLocation-value",
+  "contentBytes": "contentBytes-value",
+  "contentId": "null",
+  "lastModifiedDateTime": "2016-01-01T12:00:00Z",
+  "id": "id-value",
+  "isInline": false,
+  "isContactPhoto": false,
+  "name": "name-value",
+  "size": 99
+}
 ```
+### Example (item attachment)
+
+##### Request
+Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_item_attachment"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/events/<id>/attachments/<id>
+```
+
+##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

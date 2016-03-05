@@ -9,21 +9,21 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
 |[Update user](../api/user_update.md) | [user](user.md) |Update user object. |
 |[Delete user](../api/user_delete.md) | None |Delete user object. |
-|[List messages](../api/user_list_messages.md) |[Message](message.md) collection| Get a Message object collection.|
+|[List messages](../api/user_list_messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox.|
 |[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the messages collection.|
-|[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
+|[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get the mail folder collection under the root folder of the signed-in user. |
 |[Create mailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
-|[sendMail](../api/user_sendmail.md)|None|Send a message|
-|[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
+|[sendMail](../api/user_sendmail.md)|None|Send the message specified in the request body.|
+|[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.|
 |[Create event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
 |[Create calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
 |[List calendarGroups](../api/user_list_calendargroups.md) |[CalendarGroup](calendargroup.md) collection| Get a CalendarGroup object collection.|
 |[Create calendarGroup](../api/user_post_calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the calendarGroups collection.|
 |[List calendarView](../api/user_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
-|[List contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|
+|[List contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user.|
 |[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the contacts collection.|
-|[List contactFolders](../api/user_list_contactfolders.md) |[ContactFolder](contactfolder.md) collection| Get a ContactFolder object collection.|
+|[List contactFolders](../api/user_list_contactfolders.md) |[ContactFolder](contactfolder.md) collection| Get the contact folder collection in the default Contacts folder of the signed-in user.|
 |[Create ContactFolder](../api/user_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user_list_manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
@@ -73,7 +73,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
 |preferredName|String|The preferred name for the user.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
-|proxyAddresses|String collection|For example: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"] The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
+|proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
 |skills|String collection|A list for the user to enumerate their skills.|
@@ -81,7 +81,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |streetAddress|String|The street address of the user's place of business.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
 |usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
-|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby. 
+|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
 ### Relationships
@@ -136,6 +136,7 @@ Here is a JSON representation of the resource
     "photo",
     "registeredDevices"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.user"
 }-->
 
@@ -182,7 +183,25 @@ Here is a JSON representation of the resource
   "surname": "string",
   "usageLocation": "string",
   "userPrincipalName": "string",
-  "userType": "string"
+  "userType": "string",
+
+  "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
+  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
+  "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
+  "contacts": [ { "@odata.type": "microsoft.graph.contact" } ],
+  "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],
+  "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "events": [ { "@odata.type": "microsoft.graph.event" } ],
+  "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "manager": { "@odata.type": "microsoft.graph.directoryObject" },
+  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```

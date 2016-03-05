@@ -2,14 +2,14 @@
 
 Retrieve the properties and relationships of message object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Read*  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/<id>
 GET /users/<id | userPrincipalName>/messages/<id>
-GET /users/me/mailFolders/<id>/messages/<id>
+GET /me/mailFolders/<id>/messages/<id>
 GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Optional query parameters
@@ -51,8 +51,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

@@ -1,10 +1,11 @@
 # Get conversationThread
 
-Retrieve the properties and relationships of conversationthread object.
+Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, 
+you can specify the thread without referencing the parent conversation. 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All; Group.Read.All*
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -38,7 +39,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread"
+  "@odata.type": "microsoft.graph.conversationThread"
 } -->
 ```http
 HTTP/1.1 200 OK

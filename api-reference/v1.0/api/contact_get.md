@@ -97,6 +97,7 @@ Content-length: 1977
   "assistantName": null,
   "manager": null,
   "homePhones": [],
+  "mobilePhone": null,
   "businessPhones": [
     "+1 918 555 0101"
   ],

@@ -1,6 +1,8 @@
 # Create Conversation
 
-Use this API to create a new Conversation.
+Create a new conversation by including a thread and a post. 
+
+Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that conversation.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request

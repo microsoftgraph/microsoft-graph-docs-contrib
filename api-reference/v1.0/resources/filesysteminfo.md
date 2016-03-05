@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filesysteminfo"
+  "@odata.type": "microsoft.graph.fileSystemInfo"
 }-->
 
 ```json

@@ -1,8 +1,15 @@
 # Create Event
 
-Use this API to create a new Event.
+Create an [event](../resources/event.md) in the user's default calendar. 
+
+You can specify the time zone for each of the start and end times of the event as part of these values, as the 
+**start** and **end** properties are of [DateTimeTimeZone](../resources/datetimetimezone.md) type. 
+
+When the event is created, the server send invitations to all attendees.
+
+
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -10,10 +17,10 @@ One of the following **scopes** is required to execute this API:
 POST /users/<id | userPrincipalName>/events
 ```
 ### Request headers
-| Header       | Value|
-|:-----------|:------|:----------|
+| Header       | Value |
+|:-----------|:------|
 | Authorization  | Bearer <token>. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -38,8 +45,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -64,8 +70,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

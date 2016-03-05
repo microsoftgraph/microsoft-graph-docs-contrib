@@ -1,8 +1,8 @@
 # List messages
 
-Retrieve list of messages in a mailfolder object.
+Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -52,8 +52,7 @@ Content-length: 317
       "hasAttachments": true,
       "subject": "subject-value",
       "body": {
-        "contentType": {
-        },
+        "contentType": "",
         "content": "content-value"
       },
       "bodyPreview": "bodyPreview-value"

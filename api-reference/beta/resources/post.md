@@ -67,8 +67,6 @@ Here is a JSON representation of the resource
 |[List attachments](../api/post_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
 |[Create Extension](../api/post_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the extensions collection.|
 |[List extensions](../api/post_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
-|[Update](../api/post_update.md) | [post](post.md)	|Update post object. |
-|[Delete](../api/post_delete.md) | None |Delete post object. |
 |[forward](../api/post_forward.md)|None||
 |[reply](../api/post_reply.md)|None||
 

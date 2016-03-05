@@ -1,6 +1,6 @@
 # conversation resource type
 
-A conversation is a collection of [threads](#ConversationThreadResource). All threads and posts in a conversation share the same subject.
+A conversation is a collection of [threads](conversationthread.md). All threads and posts in a conversation share the same subject.
 
 ### JSON representation
 
@@ -29,7 +29,7 @@ Here is a JSON representation of the resource
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Indicates whether the Conversation has at least one attachment.|
-|id|String|The group's unique identifier. Read-only.|
+|id|String|The conversation's unique identifier. Read-only.|
 |lastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |preview|String||
 |topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|

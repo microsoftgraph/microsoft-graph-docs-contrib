@@ -179,23 +179,23 @@ Here is a JSON representation of the resource
 |[Create Calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
 |[Create ContactFolder](../api/user_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
-|[List contactFolders](../api/user_list_contactfolders.md) |[ContactFolder](contactfolder.md) collection| Get a ContactFolder object collection.|
+|[List contactFolders](../api/user_list_contactfolders.md) |[ContactFolder](contactfolder.md) collection| Get all the contact folders in the signed-in user's mailbox.|
 |[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the contacts collection.|
-|[List contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get a Contact object collection.|
+|[List contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get all the contacts in the signed-in user's mailbox.|
 |[Create createdObject](../api/user_post_createdobjects.md) |[directoryObject](directoryobject.md)| Create a new createdObject by posting to the createdObjects collection.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get a createdObject object collection.|
 |[Create directReport](../api/user_post_directreports.md) |[directoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get a directReport object collection.|
 |[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
-|[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
+|[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.|
 |[Create Group](../api/user_post_joinedgroups.md) |[Group](group.md)| Create a new Group by posting to the joinedGroups collection.|
 |[List joinedGroups](../api/user_list_joinedgroups.md) |[Group](group.md) collection| Get a Group object collection.|
 |[Create MailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
-|[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get a MailFolder object collection.|
+|[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get all the mail folders in the signed-in user's mailbox.|
 |[Create memberOf](../api/user_post_memberof.md) |[directoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
 |[List memberOf](../api/user_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get a memberOf object collection.|
 |[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the messages collection.|
-|[List messages](../api/user_list_messages.md) |[Message](message.md) collection| Get a Message object collection.|
+|[List messages](../api/user_list_messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox.|
 |[Create oAuth2PermissionGrant](../api/user_post_oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md)| Create a new oAuth2PermissionGrant by posting to the oauth2PermissionGrants collection.|
 |[List oauth2PermissionGrants](../api/user_list_oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Get a oAuth2PermissionGrant object collection.|
 |[Create ownedDevice](../api/user_post_owneddevices.md) |[directoryObject](directoryobject.md)| Create a new ownedDevice by posting to the ownedDevices collection.|

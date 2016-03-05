@@ -3,7 +3,7 @@
 Copy a mailfolder and its contents to another mailfolder.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "mailfolder_copy"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/<id>/copy
+POST https://graph.microsoft.com/v1.0/me/mailFolders/<id>/microsoft.graph.copy
 Content-type: application/json
 Content-length: 44
 
@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailfolder"
+  "@odata.type": "microsoft.graph.mailFolder"
 } -->
 ```http
 HTTP/1.1 200 OK

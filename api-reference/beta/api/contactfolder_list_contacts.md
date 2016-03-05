@@ -1,12 +1,17 @@
 # List contacts
 
-Retrieve a list of contact objects.
+Get all the contacts in the signed-in user's mailbox (`.../me/contacts`), or from the specified contact folder.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contacts
+GET /users/<id | userPrincipalName>/contacts
+
+GET /me/contactFolders/<id>/contacts
 GET /users/<id | userPrincipalName>/contactFolders/<id>/contacts
+
 GET /drive/root/createdByUser/contactFolders/<id>/contacts
 GET /drive/root/lastModifiedByUser/contactFolders/<id>/contacts
 ```

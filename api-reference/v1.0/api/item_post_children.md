@@ -2,10 +2,10 @@
 
 Use this API to create a new item in a collection.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -43,8 +43,8 @@ In the request body, supply a JSON representation of [item](../resources/driveit
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.item"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveItem"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -52,7 +52,6 @@ Content-type: application/json
 Content-length: 3179
 
 {
-  "content": "content-value",
   "createdBy": {
     "application": {
       "displayName": "displayName-value",

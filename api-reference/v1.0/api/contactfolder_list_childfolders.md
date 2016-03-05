@@ -1,8 +1,8 @@
 # List childFolders
 
-Retrieve a list of contactfolder objects.
+Get a collection of child folders under the specified contact folder.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Contacts.Read; Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder",
+  "@odata.type": "microsoft.graph.contactFolder",
   "isCollection": true
 } -->
 ```http

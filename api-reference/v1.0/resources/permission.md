@@ -40,6 +40,7 @@ Here is a JSON representation of the resource
     "invitation",
     "inheritedFrom"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.permission"
 }-->
 

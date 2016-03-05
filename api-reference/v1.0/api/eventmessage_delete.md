@@ -1,15 +1,16 @@
-# Delete post
+# Delete eventMessage
 
-Delete post.
+Delete eventMessage.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Mail.ReadWrite_ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/<id>/threads/<id>/posts/<id>
-DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>
-DELETE /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/posts/<id>
+DELETE /me/messages/<id>
+DELETE /users/<id | userPrincipalName>/messages/<id>
 
+DELETE /me/mailFolders/<id>/messages/<id>
+DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -28,10 +29,10 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_post"
+  "name": "delete_eventmessage"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>
+DELETE https://graph.microsoft.com/v1.0/me/messages/<id>
 ```
 ##### Response
 Here is an example of the response. 
@@ -47,7 +48,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete post",
+  "description": "Delete eventMessage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

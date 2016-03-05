@@ -1,6 +1,9 @@
 # List threads
 
-Retrieve a list of conversationthreads in this group.
+Get all the threads of a group.
+
+Note: You can also [get all the threads of a conversation](conversaton_list_threads.md).
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API:  *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request
@@ -34,7 +37,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread",
+  "@odata.type": "microsoft.graph.conversationThread",
   "isCollection": true
 } -->
 ```http

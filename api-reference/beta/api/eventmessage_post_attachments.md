@@ -6,10 +6,8 @@ The following **scopes** are required to execute this API:  _Mail.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/messages/<id>/attachments
 POST /users/<id | userPrincipalName>/messages/<id>/attachments
-POST /drive/root/createdByUser/messages/<id>/attachments
-POST /drive/root/lastModifiedByUser/messages/<id>/attachments
-
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -33,7 +31,7 @@ Here is an example of the request.
 }-->
 ```http
 Creating file attachment 
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/attachments
+POST https://graph.microsoft.com/beta/me/messages/<id>/attachments
 Content-type: application/json
 Content-length: 142
 

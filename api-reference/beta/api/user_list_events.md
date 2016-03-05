@@ -1,6 +1,6 @@
 # List events
 
-Retrieve a list of event objects.
+Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

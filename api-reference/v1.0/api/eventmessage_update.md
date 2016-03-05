@@ -2,12 +2,12 @@
 
 Update the properties of eventmessage object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Mail.ReadWrite* 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/me/messages/<id>
+PATCH /me/messages/<id>
 PATCH /users/<id | userPrincipalName>/messages/<id>
 
 PATCH /me/mailFolders/<id>/messages/<id>
@@ -62,11 +62,10 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
-  "bodyPreview": "bodyPreview-value"
+  "bodyPreview": "bodyPreview-value",
   "meetingMessageType": "meetingMessageType-value"
 }
 ```

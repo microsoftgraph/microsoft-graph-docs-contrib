@@ -11,8 +11,21 @@ Microsoft Graph provides several optional query parameters that you can use to s
 |$top|int|The number of items to return in a result set.|
 |$skip|int|The number of items to skip in a result set.|
 |$skipToken|string|Paging token that is used to get the next set of results.|
-|$count|none|The count of related entities.|
+|$count|none|A collection and the number of items in the collection.|
 
+
+**Encoding query parameters**
+
+- If you are trying out query parameters in the [Microsoft Graph Explorer](https://graphexplorer2.azurewebsites.net/), you can just copy and paste the examples below without applying 
+any URL-encoding to the query string. The following example works fine _in the Graph Explorer_ without encoding the space and quote characters:
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
+``` 
+- In general, when specifying query parameters _in your app_, make sure you appropriately encode characters that are [reserved for special meanings in an URI](https://tools.ietf.org/html/rfc3986#section-2.2).
+For example, encode the space and quote characters in the last example, as shown below:
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address%20eq%20%27jon@contoso.com%27
+```
 
 ### $select
 To specify a subset of properties to return, use the **$select** query option. For example, when retrieving your messages, you might want to select that only the **from** and **subject** properties of messages are returned.
@@ -50,21 +63,28 @@ in the response will only have those property values included.
 
 ### $expand
 
-In Microsoft Graph API requests, children collections of referenced items are not automatically expanded. This is by design because it reduces network traffic and the time it takes to generate a response from the service. However, in some cases you might want to include those results
-in a response.
+In Microsoft Graph API requests, navigations to an object or collection of the referenced item are not automatically expanded. This is by design because it reduces network traffic and 
+the time it takes to generate a response from the service. However, in some cases you might want to include those results in a response.
 
-You can use the **$expand** query string parameter to instruct the API to expand a children collection and include those results.
+You can use the **$expand** query string parameter to instruct the API to expand a child object or collection and include those results.
 
-For example, to retrieve the root drive information and the top level items in a drive, you use the **$expand** parameter. This example also uses a **$select** statement to only return the _id_ and _name_ properties of the children items.
-
+For example, to retrieve the root drive information and the top level children items in a drive, you use the **$expand** parameter. This example also uses a **$select** statement to only 
+return the _id_ and _name_ properties of the children items.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
-The request returns the collection items, with the children collection expanded.
+>  **Note**: The maximum number of expanded objects for a request is 20. 
 
->  **Note**: The maximum number of returned objects for a request is 20.
+> Also, if you query on the [user](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource, you can use **$expand** to get the properties of only one child object 
+or collection at a time. 
+
+The following example gets **user** objects, each with up to 20 **directReport** objects in the **directReports** collection expanded:
+```http
+GET https://graph.microsoft.com/v1.0/users?$expand=directReports
+```
+Some other resources may have a limit as well, so always check for possible errors.
 
 
 <!---The following shows a sample result that is returned in the response body.-->
@@ -73,14 +93,22 @@ The request returns the collection items, with the children collection expanded.
 ### $orderby
 
 To specify the sort order of the items returned from the API, use the **$orderby** query option. 
-To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example,
-`?orderby=name%20desc`.
 
 For example, to return the users in the organization ordered by their display name, the syntax is as follows:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderBy=displayName
 ``` 
+
+You can also sort by complex type entities. The following example gets messages and sorts them by the **address** field of the **from** property, which is of the complext type **emailAddress**:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$orderBy=from/emailAddress/address
+``` 
+
+To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example,
+`?orderby=name%20desc`.
+
  >  **Note**: **$orderby** can't be combined with $filter expressions.
 
 ### $filter
@@ -90,6 +118,13 @@ For example, to return users in the organization filter by display name that sta
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Garth')
 ```
+
+You can also filter by complex type entities. The following example returns messages that has the **address** field of the **from** property equal to "jon@contoso.com". The **from** 
+property is of the complex type **emailAddress**.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
+``` 
 
 ### $top
 To specify the maximum number of items to return in a result set, use the **$top** query option. The **$top** query option identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query option. 
@@ -125,10 +160,10 @@ GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$top=3&$skiptok
 ```
 
 ### $count
-The count of related entities can be requested by specifying the **$count** query option.  The **$count** query option returns the number of items in a collection or if the collection has a filter, the number of items matching the filter.
-
-For example, to get the number or size of your contacts, the syntax is as follows.
-
+Use **$count** as a query parameter as in the following example:
 ```http
-GET  https://graph.microsoft.com/v1.0/me/contacts?$count
+GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
+which would return both the **contacts** collection, and the number of items in the **contacts** collection in the `@odata.id` property.
+
+Note: This is not supported for [directoryObject](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directoryobject) collections.

@@ -4,7 +4,7 @@ Items with the folder resource may contain one or more child items. This API
 lists the contents of a drive or item's `children` collection using either the root folder, item ID or path. To list children for drives that represent a user's OneDrive for Business, insert `/me` before `/drive` in your request. For example, `GET /me/drive/root/children` returns the list of items in a user's OneDrive for Business.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.Read
 
@@ -47,8 +47,8 @@ GET /me/drive/root/children
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.item",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveItem",
   "isCollection": true
 } -->
 ```http

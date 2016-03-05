@@ -1,33 +1,34 @@
 # post resource type
 Represents an individual Post item within a [converstaionThread](conversationthread.md) entity.
+
+A new post is created when you create a new conversation or thread, or when you reply to a thread or to a post.
 ### Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get post](../api/post_get.md) | [post](post.md) |Read properties and relationships of post object.|
-|[Create Attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
-|[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create](../api/conversationthread_post_posts.md) |[post](post.md)| Create a new Post by posting to the posts collection.|
-|[Update](../api/post_update.md) | [post](post.md)  |Update post object. |
-|[Forward](../api/post_forward.md)|None||
-|[Reply](../api/post_reply.md)|None||
+|[List posts](../api/conversationthread_list_posts.md) | [post](post.md) |Get the posts of the specified thread. |
+|[Get post](../api/post_get.md) | [post](post.md) |Get the properties and relationships of a post in a specified thread.|
+|[Reply](../api/post_reply.md)|None|Reply to a post and add a new post to the specified thread in a group conversation.|
+|[Forward](../api/post_forward.md)|None|Forward a post to a recipient.|
+|[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get a list of Attachment objects attached to a post.|
+|[Create Attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Add an attachment to a post. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|body|[itemBody](itembody.md)||
-|categories|String collection||
-|changeKey|String||
-|conversationId|String||
-|conversationThreadId|String||
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|from|[recipient](recipient.md)||
-|hasAttachments|Boolean||
+|body|[itemBody](itembody.md)|The contents of the post. This is a default property. This property can be null.|
+|categories|String collection|The categories associated with the post.|
+|changeKey|String|Identifies the version of the post. Every time the post is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|conversationId|String|Unique ID of the conversation. Read-only.|
+|conversationThreadId|String|Unique ID of the conversation thread. Read-only.|
+|createdDateTime|Specifies when the post was created. DateTimeOffset|The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|from|[recipient](recipient.md)|Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default property.|
+|hasAttachments|Boolean|Indicates whether the post has at least one attachment. This is a default property.|
 |id|String| Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|newParticipants|[recipient](recipient.md) collection||
-|receivedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|sender|[recipient](recipient.md)||
+|lastModifiedDateTime|DateTimeOffset|Specifies when the post was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|newParticipants|[recipient](recipient.md) collection|Conversation participants that were added to the thread as part of this post.|
+|receivedDateTime|DateTimeOffset|Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|sender|[recipient](recipient.md)|Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.|
 
 ### Relationships
 | Relationship | Type	|Description|

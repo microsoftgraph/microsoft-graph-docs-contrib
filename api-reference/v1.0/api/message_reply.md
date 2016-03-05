@@ -1,15 +1,16 @@
 # message: reply
 
+Reply to the sender of a message. The message is then saved in the Sent Items folder.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Send*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/microsoft.graph.reply
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.reply
-POST /users/me/mailFolders/<id>/messages/<id>/microsoft.graph.reply
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.reply
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.reply
 ```
 ### Request headers
@@ -23,7 +24,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String||
+|comment|String|A comment to include. Can be an empty string.|
 
 ### Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
@@ -37,7 +38,7 @@ Here is an example of the request.
   "name": "message_reply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/reply
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.reply
 Content-type: application/json
 Content-length: 32
 
@@ -48,7 +49,7 @@ Content-length: 32
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 # List contactFolders
 
-Retrieve a list of contactfolder objects.
+Get all the contact folders in the signed-in user's mailbox.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

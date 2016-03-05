@@ -63,7 +63,7 @@ Here is a JSON representation of the resource
 |categories|String collection|The categories associated with the event.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|end|[DateTimeTimeZone](datetimetimezone.md)|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". |
+|end|[DateTimeTimeZone](datetimetimezone.md)|The date and time that the event ends.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars.|
 |id|String| Read-only.|
@@ -78,14 +78,14 @@ Here is a JSON representation of the resource
 |originalEndTimeZone|String||
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String||
-|recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence patern for the event.|
+|recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32||
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
 |sensitivity|String| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
 |seriesMasterId|String|The categories assigned to the item.|
 |showAs|String|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
-|start|[DateTimeTimeZone](datetimetimezone.md)|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
+|start|[DateTimeTimeZone](datetimetimezone.md)|The start time of the event.|
 |subject|String|The text of the event's subject line.|
 |type|String|The event type: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Possible values are: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
 |webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
@@ -93,7 +93,7 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](#FileAttachmentResource) and [ItemAttachment](#FileAttachmentResource) attachments for the event. Navigation property. Read-only. Nullable.|
+|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md) and [ItemAttachment](itemattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|

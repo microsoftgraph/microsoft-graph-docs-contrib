@@ -1,8 +1,20 @@
 # List groups
 
-Retrieve a list of group objects.
+List all the groups available in an organization, including but not limited to Office 365 Groups.
+
+To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:
+```
+GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
+```
+
+You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** 
+values, as shown in the following example:
+```
+GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
+```
+
 ### Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All* 
+One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -30,9 +42,10 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/groups
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -45,7 +58,6 @@ Content-type: application/json
 Content-length: xxx
 
  {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
   "value": [
     {
       "id": "id-value",
@@ -65,8 +77,7 @@ Content-length: xxx
       ],
       "securityEnabled": "securityEnabled-value",
       "visibility": "visibility-value"
-    },
-    ...
+    }
   ]
 }
 

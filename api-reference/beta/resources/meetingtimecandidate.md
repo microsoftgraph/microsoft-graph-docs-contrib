@@ -1,6 +1,7 @@
 # meetingTimeCandidate resource type
 
-
+A meeting suggestion that includes information like meeting time, attendance likelihood, individual 
+availability, and available meeting locations.
 
 ### JSON representation
 
@@ -28,12 +29,12 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[AttendeeAvailability](attendeeavailability.md) collection||
-|confidence|Double||
-|locations|[Location](location.md) collection||
-|meetingTimeSlot|[TimeSlot](timeslot.md)||
-|organizerAvailability|String| Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
-|score|Int32||
+|attendeeAvailability|[AttendeeAvailability](attendeeavailability.md) collection|An array that shows the availability status of each attendee for this meeting suggestion.|
+|confidence|Double|A percentage that represents the likelhood of all the attendees attending.|
+|locations|[Location](location.md) collection|An array that specifies the name and geographic location of each meeting location for this meeting suggestion.|
+|meetingTimeSlot|[TimeSlot](timeslot.md)|A time period suggested for the meeting.|
+|organizerAvailability|String| Availability of the meeting organizer for this meeting suggestion. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|score|Int32|The numerical order of this meeting suggestion, among those that have the same level of confidence.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

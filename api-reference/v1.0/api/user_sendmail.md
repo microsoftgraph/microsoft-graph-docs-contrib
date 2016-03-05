@@ -1,8 +1,12 @@
 # user: sendMail
 
+Send the message specified in the request body on the fly. You can optionally save the message in the Sent Items folder.
+
+You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
+
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Mail.ReadWrite; Mail.Send*
+One of the following **scopes** is required to execute this API: *Mail.Send*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,11 +23,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Message|[Message](../resource/message.md)|The message to send.|
-|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Default is true.|
+|Message|[Message](../resources/message.md)|The message to send. Required.|
+|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Optional. Default is true.|
 
 ### Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -34,7 +38,7 @@ Here is an example of the request.
   "name": "user_sendmail"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/sendMail
+POST https://graph.microsoft.com/v1.0/me/microsoft.graph.sendMail
 Content-type: application/json
 Content-length: 1944
 
@@ -45,8 +49,7 @@ Content-length: 1944
     "hasAttachments": true,
     "subject": "subject-value",
     "body": {
-      "contentType": {
-      },
+      "contentType": "",
       "content": "content-value"
     },
     "bodyPreview": "bodyPreview-value",
@@ -99,8 +102,7 @@ Content-length: 1944
     ],
     "conversationId": "conversationId-value",
     "uniqueBody": {
-      "contentType": {
-      },
+      "contentType": "",
       "content": "content-value"
     },
     "isDeliveryReceiptRequested": true,
@@ -117,12 +119,9 @@ Content-length: 1944
     "id": "id-value",
     "attachments": [
       {
-        "lastModifiedDateTime": "datetime-value",
-        "name": "name-value",
-        "contentType": "contentType-value",
-        "size": 99,
-        "isInline": true,
-        "id": "id-value"
+        "@odata.type": "#microsoft.graph.fileAttachment",
+        "name": "menu.txt",
+        "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
     ]
   },
@@ -131,14 +130,13 @@ Content-length: 1944
 ```
 
 ##### Response
-##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

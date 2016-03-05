@@ -1,43 +1,45 @@
 # group resource type
 
-Represents an Azure Active Directory group. Inherits from [directoryObject](directoryobject.md).
-    
+Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
+Inherits from [directoryObject](directoryobject.md).
+
 
 ### Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
+|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group or security group.|
 |[Get group](../api/group_get.md) | [group](group.md) |Read properties and relationships of group object.|
-|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group by posting to the groups collection.|
-|[Update group](../api/group_update.md) | [group](group.md) |Update group object. |
+|[Update group](../api/group_update.md) | [group](group.md) |Update the properties of a group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
-|[List members](../api/group_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users, contacts, and groups that are members of this group from the members navigation property.|
-|[Create member](../api/group_post_members.md) |[directoryObject](directoryobject.md)| Add a user, contact, or group to this group by posting to the members navigation property (supported for security groups and mail-enabled security groups only).|
-|[List memberOf](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups that this group is a direct member of from the memberOf navigation property.|
-|[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the owners navigation property.|
-|[Create owner](../api/group_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner for the group by posting to the owners navigation property (supported for security groups and mail-enabled security groups only).|
+|[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
+|[Add owner](../api/group_post_owners.md) |[directoryObject](directoryobject.md)| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
+|[List members](../api/group_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
+|[Add member](../api/group_post_members.md) |[directoryObject](directoryobject.md)| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
+|[Remove member](../api/group_delete_members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
+|[List memberOf](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups that this group is a direct member of, from the **memberOf** navigation property.|
+|[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Check for membership in a list of groups. The function is transitive.|
+|[getMemberGroups](../api/group_getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
+|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The function is transitive. |
 |[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
-|[List calendarView](../api/group_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
+|[List calendarView](../api/group_list_calendarview.md) |[Event](event.md) collection| Get a collection of events in a specified time window.|
 |[List conversations](../api/group_list_conversations.md) |[Conversation](conversation.md) collection| Get a Conversation object collection.|
 |[Create conversation](../api/group_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
-|[List acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a acceptedSender object collection.|
-|[Add acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the acceptSenders collection.|
+|[List threads](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get all the threads of a group.|
+|[List acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the acceptedSenders list for this group.|
+|[Add acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Add a User or Group to the acceptSenders collection.|
 |[Remove acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
-|[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a rejectedSender object collection.|
+|[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
-|[List threads](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a thread object collection.|
-|[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit.|
-|[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations.|
-|[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations.|
-|[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
-|[getMemberGroups](../api/group_getmembergroups.md)|String collection|Return all the groups that the group is a member of. The check is transitive.|
-|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The check is transitive. |
-|[addFavorite](../api/group_addfavorite.md)|None|Add the group to the list of the current user's favorite groups. |
-|[removeFavorite](../api/group_removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. |
+|[addFavorite](../api/group_addfavorite.md)|None|Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.|
+|[removeFavorite](../api/group_removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups.|
+|[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for only Office 365 groups.|
+|[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
+|[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
 
-    
+
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -99,6 +101,7 @@ Here is a JSON representation of the resource
     "rejectedSenders",
     "threads"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.group"
 }-->
 
@@ -121,7 +124,20 @@ Here is a JSON representation of the resource
   "proxyAddresses": ["string"],
   "securityEnabled": true,
   "unseenCount": 1024,
-  "visibility": "string"
+  "visibility": "string",
+  "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
+  "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
+  "conversations": [ { "@odata.type": "microsoft.graph.conversation" }],
+  "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "events": [ { "@odata.type": "microsoft.graph.event" }],
+  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
 
 ```

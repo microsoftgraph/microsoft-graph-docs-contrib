@@ -1,8 +1,14 @@
 # group: getMemberGroups
-Return all the groups that the group is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the group is a direct member of.
+Return all the groups that the specified group is a member of. The check is transitive, unlike reading the 
+[memberOf](../api/group_list_memberof.md) navigation 
+property, which returns only the groups that the group is a direct member of.
+
+This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each 
+request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is 
+always direct.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -32,7 +38,7 @@ Here is an example of the request.
   "name": "group_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/getMemberGroups
+POST https://graph.microsoft.com/v1.0/groups/<id>/microsoft.graph.getMemberGroups
 Content-type: application/json
 Content-length: 33
 

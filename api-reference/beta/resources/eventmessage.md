@@ -1,6 +1,10 @@
 # eventMessage resource type
 
-A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.
+A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message. In particular, 
+[EventMessageRequest](eventMessageRequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property idenfies the type of event message.
+
+An **eventMessage** instance is typically found in the Inbox folder where it arrives as the result of either an event organizer creating a meeting or by an attendee 
+responding to a meeting request. You act on event messages in the same way that you act on Message with minor differences.
 
 ### JSON representation
 
@@ -26,6 +30,7 @@ Here is a JSON representation of the resource
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "String (timestamp)",
+  "endDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
@@ -33,17 +38,22 @@ Here is a JSON representation of the resource
   "inferenceClassification": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
+  "isOutOfDate": "Boolean",
   "isRead": true,
   "isReadReceiptRequested": true,
   "lastModifiedDateTime": "String (timestamp)",
+  "location": {"@odata.type": "microsoft.graph.location"},
   "meetingMessageType": "microsoft.graph.meetingMessageType",
   "parentFolderId": "string",
   "receivedDateTime": "String (timestamp)",
+  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
+  "startDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "String (timestamp)",
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "type": "string",
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
   "webLink": "string"
 }
@@ -60,6 +70,7 @@ Here is a JSON representation of the resource
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
+|endDateTime|[DateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String||
@@ -67,17 +78,22 @@ Here is a JSON representation of the resource
 |inferenceClassification|String| Possible values are: `Focused`, `Other`.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
+|isOutOfDate|Boolean|Indicates whether this meeting request has been made out-of-date by a more recent request.|
 |isRead|Boolean|Indicates whether the message has been read.|
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
+|location|[Location](location.md)|The location of the requested meeting.|
 |meetingMessageType|String| The type of event message: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
+|recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
 |sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
+|startDateTime|[DateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
+|type|String|The type of requested meeting: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
 
@@ -105,7 +121,7 @@ Here is a JSON representation of the resource
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)||
 |[forward](../api/message_forward.md)|None|Forwards a message. The message is then saved in the Sent Items folder.|
 |[move](../api/message_move.md)|[Message](message.md)|Move the message to a mailFolder.|
-|[reply](../api/message_reply.md)|None|Replys to the sender of a message. The message is then saved in the Sent Items folder.|
+|[reply](../api/message_reply.md)|None|Replies to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 

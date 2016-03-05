@@ -1,15 +1,17 @@
 # message: createForward
 
+Create a draft of the Forward message. You can then [update](../api/message_update.md) or 
+[send](../api/message_send.md) the draft.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/microsoft.graph.createForward
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.createForward
-POST /users/me/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
 ```
 ### Request headers
@@ -32,7 +34,7 @@ Here is an example of the request.
   "name": "message_createforward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/createForward
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.createForward
 Content-type: application/json
 Content-length: 248
 
@@ -71,8 +73,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

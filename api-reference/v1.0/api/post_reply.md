@@ -1,11 +1,13 @@
 # post: reply
 
+Reply to a post and add a new post to the specified thread in a group conversation. You can specify 
+both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-* Group.Readwrite.All
- 
+*Group.Readwrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,7 +25,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)||
+|post|[post](../resources/post.md)|The new post that is being replied with.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -44,8 +46,7 @@ Content-length: 1131
 {
   "post": {
     "body": {
-      "contentType": {
-      },
+      "contentType": "",
       "content": "content-value"
     },
     "receivedDateTime": "datetime-value",
@@ -97,7 +98,7 @@ Content-length: 1131
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

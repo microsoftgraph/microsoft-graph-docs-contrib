@@ -1,6 +1,6 @@
 # itemBody resource type
 
-The body content of a message or event.
+Represents properties of the body of an item, such as a message, event or group post.
 
 ### JSON representation
 
@@ -24,7 +24,7 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|content|String|The content of the message or event.|
+|content|String|The content of the item.|
 |contentType|String|The type of the content. Possible values are `Text` and `HTML`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

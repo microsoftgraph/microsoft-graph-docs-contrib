@@ -21,7 +21,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.serviceplaninfo"
+  "@odata.type": "microsoft.graph.servicePlanInfo"
 }-->
 
 ```json

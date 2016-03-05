@@ -2,7 +2,7 @@
 
 Retrieve a list of thumbnailSet resources.
 
-An item in a drive can be represented by zero or more [thumbnailSet](resources/thumbnailset.md) objects.
+An item in a drive can be represented by zero or more [thumbnailSet](../resources/thumbnailset.md) objects.
 Each **thumbnailSet** can have one or more **thumbnail** objects, which are images that represent the item. For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large` and custom defined ones such as `c300x400_Crop`. Items have **thumbnailSet** objects that are either generated automatically by OneDrive based off the item or that are defined by a custom uploaded image.
 
 There are many ways to work with thumbnails on OneDrive.
@@ -54,7 +54,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.thumbnailset",
+  "@odata.type": "microsoft.graph.thumbnailSet",
   "isCollection": true
 } -->
 ```http
@@ -94,7 +94,7 @@ GET /drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 | _size_     | string | The size of the thumbnail requested. This can be one of the standard sizes listed below. |
 
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.thumbnail" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -158,7 +158,7 @@ In addition to the normal enumeration of an item's children, this request also
 returns thumbnail metadata for the large thumbnails on all items where a thumbnail
 is available.
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.item", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -271,7 +271,7 @@ thumbnail. If it is not present, then no custom uploaded thumbnail exists.
 GET /drive/items/{item-id}/?expand=thumbnails(select=id,large,medium,small,source)
 ```
 ### Response
-<!-- { "blockType": "response", "@odata.type": "oneDrive.item", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 

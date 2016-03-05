@@ -12,11 +12,11 @@ OneNote support is in preview, so the version is always `beta`.
 
 Only user and group notebooks on Office 365 are supported. Accessing consumer notebooks on OneDrive or SharePoint site-hosted notebooks is currently not supported. 
 
-**User notebooks** To access personal notebooks on OneDrive or OneDrive for Business, use one of the following service root URLs:
+**User notebooks** To access personal notebooks on OneDrive for Business, use one of the following service root URLs:
 
 ```
 https://graph.microsoft.com/beta/me/notes/ (current user)
-https://graph.microsoft.com/beta/users/<mail>/notes/
+https://graph.microsoft.com/beta/users/<userPrincipalName>/notes/
 https://graph.microsoft.com/beta/users/<id>/notes/
 ```
 
@@ -30,19 +30,19 @@ The following permission scopes provide levels of access to OneNote notebooks. C
 
 **Scopes for personal notebooks in OneDrive for Business that are owned by the current user**
 
-| Scope (enterprise) | Permission in Azure portal | Description |  
-|:-------|:------|:------|  
-| Notes.Create | Create pages in user notebooks (preview) | Can view the titles of your notebooks and sections; create new pages in any location. Cannot view or edit existing pages. |  
-| Notes.ReadWrite.CreatedByApp | Limited notebook access (preview) | Can view the titles of your notebooks and sections; create new pages; view and modify pages created by the app. Cannot view or modify pages created by other apps or in password protected sections. |  
-| Notes.Read | Read user notebooks (preview) | Can view the contents of your notebooks and sections. Cannot create new pages; modify existing pages; access password protected sections. |  
-| Notes.ReadWrite | Read and write user notebooks (preview) | Can view the titles of your notebooks and sections; view and modify all your pages; create new pages. Cannot access password protected sections. |  
+| Scope (enterprise) | Permission in Azure portal | Description |
+|:-------|:------|:------|
+| Notes.Create | Create pages in user notebooks (preview) | Can view the titles of your notebooks and sections; create new pages in any location. Cannot view or edit existing pages. |
+| Notes.ReadWrite.CreatedByApp | Limited notebook access (preview) | Can view the titles of your notebooks and sections; create new pages; view and modify pages created by the app. Cannot view or modify pages created by other apps or in password protected sections. |
+| Notes.Read | Read user notebooks (preview) | Can view the contents of your notebooks and sections. Cannot create new pages; modify existing pages; access password protected sections. |
+| Notes.ReadWrite | Read and write user notebooks (preview) | Can view the titles of your notebooks and sections; view and modify all your pages; create new pages. Cannot access password protected sections. |
 
 **Scopes for personal notebooks shared by other users and group notebooks that the current user can access**
 
-| Scope (enterprise) | Permission in Azure portal | Description |  
-|:-------|:------|:------| 
-| Notes.Read.All | Read all notebooks that the user can access (preview) | Can view the contents of notebooks and sections in all notebooks that the signed-in user has access to. Cannot create new pages; modify existing pages; access password protected sections. |  
-| Notes.ReadWrite.All | Read and write notebooks that the user can access (preview) | Can view the titles of notebooks and sections; view and modify all pages; create new pages in all notebooks that the signed-in user has access to. Cannot access password protected sections. |  
+| Scope (enterprise) | Permission in Azure portal | Description |
+|:-------|:------|:------|
+| Notes.Read.All | Read all notebooks that the user can access (preview) | Can view the contents of notebooks and sections in all notebooks that the signed-in user has access to. Cannot create new pages; modify existing pages; access password protected sections. |
+| Notes.ReadWrite.All | Read and write notebooks that the user can access (preview) | Can view the titles of notebooks and sections; view and modify all pages; create new pages in all notebooks that the signed-in user has access to. Cannot access password protected sections. |
 
 **Note:** Accessing SharePoint site notebooks through the Graph API is currently not supported.
 
@@ -50,10 +50,10 @@ The following permission scopes provide levels of access to OneNote notebooks. C
 
 If you're accessing group notebooks, you'll need a Groups permission scope to get the group ID. Currently, these permissions require administrator rights, but less restrictive access for a narrower scope will be available soon.
 
-| Scope (enterprise) | Permission in Azure portal | Description |  
-|:-------|:------|:------|  
-| Group.Read.All | Read all groups | Can read all group properties and memberships; read group calendar and conversations on public groups and groups the signed in user is a member of. |  
-| Group.ReadWrite.All | Read and write all groups | Can create groups on behalf of the signed-in user and read all group properties and memberships; update group properties and memberships for groups the signed-in user owns; read and write group calendar and conversations on public groups and groups the signed-in user is a member of. |  
+| Scope (enterprise) | Permission in Azure portal | Description |
+|:-------|:------|:------|
+| Group.Read.All | Read all groups | Can read all group properties and memberships; read group calendar and conversations on public groups and groups the signed in user is a member of. |
+| Group.ReadWrite.All | Read and write all groups | Can create groups on behalf of the signed-in user and read all group properties and memberships; update group properties and memberships for groups the signed-in user owns; read and write group calendar and conversations on public groups and groups the signed-in user is a member of. |
 
 <!-- {
   "blockType": "resource",

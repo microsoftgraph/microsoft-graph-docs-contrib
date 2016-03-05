@@ -1,10 +1,10 @@
 # Update conversationthread
 
-Update the properties of conversationthread object.
+Lock or unlock a thread, to allow or avoid further posting to the thread.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All*
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,7 +23,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|topic|String||
+|isLocked|Boolean|Indicates if the thread is locked. Set to `true` to disallow posting.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.
@@ -40,6 +40,7 @@ Content-type: application/json
 Content-length: 419
 
 {
+  "@odata.type":"#Microsoft.OutlookServices.ConversationThread",
   "isLocked": true
 }
 ```
@@ -48,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread"
+  "@odata.type": "microsoft.graph.conversationThread"
 } -->
 ```http
 HTTP/1.1 200 OK

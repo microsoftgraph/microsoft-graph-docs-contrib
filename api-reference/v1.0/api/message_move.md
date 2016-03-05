@@ -1,15 +1,16 @@
 # message: move
 
+Move a message to a folder. This creates a new copy of the message in the destination folder.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Mail.ReadWrite* 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/microsoft.graph.move
 POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.move
-POST /users/me/mailFolders/<id>/messages/<id>/microsoft.graph.move
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.move
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.move
 ```
 ### Request headers
@@ -23,7 +24,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DestinationId|String||
+|DestinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
 
 ### Response
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
@@ -37,7 +38,7 @@ Here is an example of the request.
   "name": "message_move"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/move
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.move
 Content-type: application/json
 Content-length: 44
 
@@ -64,8 +65,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

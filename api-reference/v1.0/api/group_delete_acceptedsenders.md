@@ -1,6 +1,6 @@
 # Remove acceptedSender
 
-Use this API to Remove a user or group to the acceptedSenders collection.
+Remove a user or group from the acceptedSenders list. 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request

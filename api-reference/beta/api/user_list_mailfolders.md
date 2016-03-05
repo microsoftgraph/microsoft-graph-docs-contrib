@@ -1,6 +1,6 @@
 # List mailFolders
 
-Retrieve a list of mailfolder objects.
+Get all the mail folders in the signed-in user's mailbox.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

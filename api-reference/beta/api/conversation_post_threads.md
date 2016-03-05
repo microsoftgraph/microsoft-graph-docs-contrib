@@ -1,6 +1,6 @@
 # Create thread
 
-Use this API to create a new thread.
+Create a thread in the specified conversation.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

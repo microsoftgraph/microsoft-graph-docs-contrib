@@ -1,8 +1,8 @@
 # List mailFolders
 
-Get user's mail folders
+Get the mail folder collection under the root folder of the signed-in user. 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailfolder",
+  "@odata.type": "microsoft.graph.mailFolder",
   "isCollection": true
 } -->
 ```http

@@ -1,6 +1,6 @@
 # Create Event
 
-Use this API to create a new Event.
+Use this API to create a new [event](../resources/event.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
@@ -37,8 +37,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -63,8 +62,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

@@ -1,8 +1,8 @@
 # List events
 
-Retrieve a list of event objects.
+Retrieve a list of [event](../resources/event.md) objects.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,8 +49,7 @@ Content-length: 354
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": {
-        },
+        "response": "",
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",

@@ -1,8 +1,9 @@
 # event: decline
 
+Decline invitation to the specified event.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,8 +36,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String||
-|sendResponse|Boolean||
+|comment|String|Text included in the response. Optional.|
+|sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
 
 ### Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
@@ -50,7 +51,7 @@ Here is an example of the request.
   "name": "event_decline"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/<id>/decline
+POST https://graph.microsoft.com/v1.0/me/events/<id>/microsoft.graph.decline
 Content-type: application/json
 Content-length: 56
 
@@ -62,7 +63,7 @@ Content-length: 56
 
 ##### Response
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

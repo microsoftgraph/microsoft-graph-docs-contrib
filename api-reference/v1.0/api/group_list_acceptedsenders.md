@@ -1,6 +1,10 @@
 # List acceptedSenders
 
-Retrieve a list of Users or Groups that are in the acceptedSenders list for this Group.
+Get a list of users or groups that are in the acceptedSenders list for this group.
+
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). 
+Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, 
+otherwise you will get an error.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
  *Group.Read.All* or *Group.ReadWrite.All*
@@ -35,7 +39,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryobject",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 ```http

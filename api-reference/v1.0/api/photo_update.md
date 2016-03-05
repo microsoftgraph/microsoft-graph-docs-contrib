@@ -2,7 +2,7 @@
 
 Update the properties of photo object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -48,7 +48,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.photo"
+  "@odata.type": "microsoft.graph.profilePhoto"
 } -->
 ```http
 HTTP/1.1 200 OK

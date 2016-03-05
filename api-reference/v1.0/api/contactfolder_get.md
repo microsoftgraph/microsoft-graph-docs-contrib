@@ -1,8 +1,8 @@
 # Get contactFolder
 
-Retrieve the properties and relationships of contactfolder object.
+Get a contact folder by using the contact folder ID.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite; Contacts.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder"
+  "@odata.type": "microsoft.graph.contactFolder"
 } -->
 ```http
 HTTP/1.1 200 OK

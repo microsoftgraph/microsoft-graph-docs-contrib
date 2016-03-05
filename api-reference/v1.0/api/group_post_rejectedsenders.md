@@ -1,6 +1,10 @@
-# Create acceptedSender
+# Create rejectedSender
 
-Use this API to add a new user or group to the rejectedSender list.
+Add a new user or group to the rejectedSender list.
+
+Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot 
+post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same 
+user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
@@ -31,12 +35,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/groups/<id>/rejectedSenders/$ref
 Content-type: application/json
 Content-length: 30
+
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -18,7 +18,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
   "onClickTelemtryUrl"
   ],
-  "@odata.type": "microsoft.graph.searchresult"
+  "@odata.type": "microsoft.graph.searchResult"
 }-->
 
 ```json

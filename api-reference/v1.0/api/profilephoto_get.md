@@ -2,10 +2,11 @@
 
 Read the photo and properties of profilePhoto object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API for: 
+One of the following **scopes** is required to execute this API for:
+
 * Profile photo of signed-in **user** - *User.Read; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; User.Read*
-* Profile photo of a **group** - *Group.Read.All; Group.ReadWrite.All* 
-* Photo of a **contact** - *Contacts.Read; Contacts.ReadWrite* 
+* Profile photo of a **group** - *Group.Read.All; Group.ReadWrite.All*
+* Photo of a **contact** - *Contacts.Read; Contacts.ReadWrite*
 ### HTTP request to get the photo
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,7 +58,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.photo"
+  "@odata.type": "microsoft.graph.profilePhoto"
 } -->
 ```http
 HTTP/1.1 200 OK

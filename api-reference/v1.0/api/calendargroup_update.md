@@ -5,11 +5,6 @@ Update the properties of calendargroup object.
 One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
-A user's default [calendarGroup](../resources/calendargroup.md).
-```http
-PATCH /me/calendarGroup
-PATCH /users/<id | userPrincipalName>/calendarGroup
-```
 Any [calendarGroup](../resources/calendargroup.md) of a user.
 ```http
 PATCH /me/calendarGroups/<id>
@@ -51,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendargroup"
+  "@odata.type": "microsoft.graph.calendarGroup"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -60,7 +55,7 @@ Content-length: 110
 
 {
   "name": "name-value",
-  "classId": "classId-value",
+  "classId": "11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

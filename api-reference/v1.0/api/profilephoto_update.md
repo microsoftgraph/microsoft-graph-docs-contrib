@@ -1,10 +1,12 @@
 # Update profilephoto
 
-Update the photo for signed-in **user**, **group** or a **contact**.
+Update the photo for signed-in **user**, **group** or a **contact**. Since there
+is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
+you can add to under 4MB.
 ### Prerequisites
-One of the following **scopes** is required to execute this API for: 
+One of the following **scopes** is required to execute this API for:
 * Profile photo of signed-in **user** - *User.ReadWrite.All; User.ReadWrite*
-* Profile photo of a **group** - *Group.ReadWrite.All* 
+* Profile photo of a **group** - *Group.ReadWrite.All*
 * Photo of a **contact** - *Contacts.ReadWrite*
 ### HTTP request to update the photo
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.profilephoto"
+  "@odata.type": "microsoft.graph.profilePhoto"
 } -->
 ```http
 HTTP/1.1 200 OK
