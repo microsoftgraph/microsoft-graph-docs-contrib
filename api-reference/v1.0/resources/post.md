@@ -1,7 +1,12 @@
 # post resource type
 Represents an individual Post item within a [converstaionThread](conversationthread.md) entity.
 
-A new post is created when you create a new conversation or thread, or when you reply to a thread or to a post.
+A new post is created when you:
+- [Reply to an existing post](../api/post_reply.md) 
+- [Reply to an existing thread](../api/conversationthread_reply.md) 
+- [Create a thread in a new conversation](../api/group_post_threads.md)
+- [Create a new conversation](../api/group_post_conversations.md)
+ 
 ### Methods
 
 | Method       | Return Type  |Description|
