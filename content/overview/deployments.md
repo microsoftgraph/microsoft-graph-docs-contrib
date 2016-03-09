@@ -11,7 +11,7 @@ This article provides information about Microsoft Graph operated by 21Vianet, an
 ### Service root endpoints
 | Microsoft Graph operated by 21Vianet | Microsoft Graph|
 |---------------------------|----------------|
-| https://microsoftgraph.chinacloudapi.cn | https://graph,microsoft.com|
+| https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
 
 ### Microsoft Graph Explorer
 | Microsoft Graph operated by 21Vianet | Microsoft Graph|
@@ -19,7 +19,7 @@ This article provides information about Microsoft Graph operated by 21Vianet, an
 |https://graphexplorerchina.azurewebsites.net| https://graphexplorer2.azurewebsites.net|
 
 ### Azure OpenID Connect and OAuth2.0
-Acquiring tokens for sign-in or to call Microsoft Graph in China are different from those outside of China. 
+The endpoints used to acquire tokens for sign-in or to call Microsoft Graph operated by 21Vianet from those of other offerings. 
 
 | Microsoft Graph operated by 21Vianet | Microsoft Graph|
 |---------------------------|----------------|
