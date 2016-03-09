@@ -6,7 +6,7 @@ This article provides information about the different sovereign cloud instances 
 
 ## Microsoft Graph operated by 21Vianet in China
 
-This article provides information about Microsoft Graph operated by 21Vianet, and the capabilities that are available to developers.
+This section provides information about Microsoft Graph operated by 21Vianet, and the capabilities that are available to developers.
 
 ### Service root endpoints
 | Microsoft Graph operated by 21Vianet | Microsoft Graph|
@@ -19,7 +19,7 @@ This article provides information about Microsoft Graph operated by 21Vianet, an
 |https://graphexplorerchina.azurewebsites.net| https://graphexplorer2.azurewebsites.net|
 
 ### Azure OpenID Connect and OAuth2.0
-The endpoints used to acquire tokens for sign-in or to call Microsoft Graph operated by 21Vianet from those of other offerings. 
+The endpoints used to acquire tokens for sign-in or to call Microsoft Graph operated by 21Vianet differ from those of other offerings. 
 
 | Microsoft Graph operated by 21Vianet | Microsoft Graph|
 |---------------------------|----------------|
