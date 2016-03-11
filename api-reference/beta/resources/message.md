@@ -106,19 +106,20 @@ When a message is being composed, in most cases, the From and Sender properties 
 |[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
 |[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
 |[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Extension](../api/message_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the extensions collection.|
-|[List extensions](../api/message_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/message_update.md) | [message](message.md)	|Update message object. |
 |[Delete](../api/message_delete.md) | None |Delete message object. |
-|[copy](../api/message_copy.md)|[Message](message.md)||
-|[createForward](../api/message_createforward.md)|[Message](message.md)||
-|[createReply](../api/message_createreply.md)|[Message](message.md)||
-|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)||
-|[forward](../api/message_forward.md)|None||
-|[move](../api/message_move.md)|[Message](message.md)||
-|[reply](../api/message_reply.md)|None||
-|[replyAll](../api/message_replyall.md)|None||
-|[send](../api/message_send.md)|None||
+|[copy](../api/message_copy.md)|[Message](message.md)|Copy a message to a folder.|
+|[createForward](../api/message_createforward.md)|[Message](message.md)|Create a draft of the Forward message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
+|[createReply](../api/message_createreply.md)|[Message](message.md)|Create a draft of the Reply message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
+|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
+|[forward](../api/message_forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
+|[move](../api/message_move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
+|[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
+|[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
+|[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Create openTypeExtension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get openTypeExtension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
