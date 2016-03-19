@@ -8,8 +8,8 @@ An event in a calendar.
 |:---------------|:--------|:----------|
 |[List events](../api/user_list_events.md)|[Event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
 |[Create Event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the instances collection.|
-|[Get event](../api/event_get.md) | [Event](event.md) |Read properties and relationships of event object.|
-|[Update](../api/event_update.md) | [Event](event.md) |Update event object. |
+|[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
+|[Update](../api/event_update.md) | [event](event.md) |Update event object. |
 |[Delete](../api/event_delete.md) | None |Delete event object. |
 |[accept](../api/event_accept.md)|None|Accept the specified event.|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
