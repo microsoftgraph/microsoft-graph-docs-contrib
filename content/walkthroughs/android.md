@@ -33,7 +33,7 @@ You need these values to configure the authentication code in your app.
 ## Gradle dependencies in the Connect sample
 The sample takes dependencies on the libraries shown in the following build.gradle snippet
 
-```
+```gradle
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.1'
