@@ -1,6 +1,6 @@
 # Create plan
 
-Use this API to create a new plan. Read the [overview](tasks_overview.md) to understand the relationship between group, plan and task.
+Use this API to create a new plan. Read the [overview](../resources/tasks_overview.md) to understand the relationship between group, plan and task.
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
