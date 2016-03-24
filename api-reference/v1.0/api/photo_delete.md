@@ -2,10 +2,10 @@
 
 Delete a photo.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * File.ReadWrite
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "delete_photo"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<id | userPrincipalName>/photo
+DELETE https://graph.microsoft.com/v1.0/users/<id|userPrincipalName>/photo
 ```
 ##### Response
 Here is an example of the response.

@@ -2,7 +2,7 @@
 
 Get user's manager. Returns the user or contact assigned as the user's manager.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
 ### HTTP request
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_manager"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users/<id | userPrincipalName>/manager
+GET https://graph.microsoft.com/beta/users/<id|userPrincipalName>/manager
 ```
 ##### Response
 Here is an example of the response.
