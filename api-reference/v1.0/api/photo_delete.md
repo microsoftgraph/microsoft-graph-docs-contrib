@@ -33,7 +33,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_photo"
+"name": "delete_photo"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/<id|userPrincipalName>/photo
