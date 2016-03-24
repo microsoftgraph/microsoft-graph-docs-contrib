@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_photo"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/<id | userPrincipalName>/photo
+PATCH https://graph.microsoft.com/v1.0/users/<id|userPrincipalName>/photo
 Content-type: application/json
 Content-length: 53
 

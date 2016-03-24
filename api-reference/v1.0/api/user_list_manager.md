@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_manager"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<id | userPrincipalName>/manager
+GET https://graph.microsoft.com/v1.0/users/<id|userPrincipalName>/manager
 ```
 ##### Response
 Here is an example of the response.

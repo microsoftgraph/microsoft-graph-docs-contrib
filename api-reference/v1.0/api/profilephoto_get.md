@@ -51,7 +51,7 @@ Here is an example of the request.
   "name": "get_photo"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<id | userPrincipalName>/photo
+GET https://graph.microsoft.com/v1.0/users/<id|userPrincipalName>/photo
 ```
 ##### Response
 Here is an example of the response.
