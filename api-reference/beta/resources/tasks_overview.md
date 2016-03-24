@@ -14,7 +14,7 @@ GET /groups/<id>/plans
 ```
 When creating a new plan, you need to make a group its owner by simply setting the `owner` property on a plan object to the id of a group object if the group does not already own a plan. 
 
-***Note that you need to ensure that the user who is creating the plan is a member of the group. When you create a new group using the API, you are not automatically added to the group as a member. This has to be done using a separate API call.** 
+**Note that you need to ensure that the user who is creating the plan is a member of the group. When you create a new group using the API, you are not automatically added to the group as a member. This has to be done using a separate API call.** 
 
 ### Plans
 Plans are the containers of tasks. 
