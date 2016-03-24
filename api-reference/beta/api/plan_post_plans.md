@@ -1,6 +1,9 @@
 # Create plan
 
-Use this API to create a new plan. Read the [overview](../resources/tasks_overview.md) to understand the relationship between group, plan and task.
+Use this API to create a new plan. 
+
+Note that you need to have created a group and be a member of it before you can make the group an owner of the plan. Read the [overview](../resources/tasks_overview.md) to understand the relationship between group, plan and task.
+
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
