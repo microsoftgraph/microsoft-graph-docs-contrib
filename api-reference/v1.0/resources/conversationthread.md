@@ -1,8 +1,8 @@
 # conversationThread resource type
 A conversationThread is a collection of [posts](post.md).
 
-The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients. 
-A new thread is created when a recipient is removed from the thread. 
+The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients.
+A new thread is created when a recipient is removed from the thread.
 
 ### Methods
 
@@ -14,7 +14,7 @@ A new thread is created when a recipient is removed from the thread.
 |[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
 |[Delete](../api/conversationthread_delete.md) | None |Delete conversationThread object. |
 |[reply](../api/conversationthread_reply.md)|None|Reply to this thread by creating a new Post entity.|
-|[Create Post](../api/conversationthread_post_posts.md) |post](post.md)| Create a new post in the specified thread. |
+|[Create Post](../api/conversationthread_reply.md) |post](post.md)| Create a new post in the specified thread. |
 |[List Posts](../api/conversationthread_list_posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
 
 ### Properties

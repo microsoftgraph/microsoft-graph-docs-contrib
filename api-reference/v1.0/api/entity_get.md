@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of entity object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,7 +23,7 @@ If successful, this method returns a `200 OK` response code and [entity](../reso
 ##### Request
 Here is an example of the request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_entity"
 }-->
 ```http
@@ -32,7 +32,7 @@ Here is an example of the request.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.entity"
 } -->

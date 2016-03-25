@@ -26,7 +26,7 @@ A new post is created when you:
 |changeKey|String|Identifies the version of the post. Every time the post is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |conversationId|String|Unique ID of the conversation. Read-only.|
 |conversationThreadId|String|Unique ID of the conversation thread. Read-only.|
-|createdDateTime|Specifies when the post was created. DateTimeOffset|The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|Specifies when the post was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default property.|
 |hasAttachments|Boolean|Indicates whether the post has at least one attachment. This is a default property.|
 |id|String| Read-only.|
