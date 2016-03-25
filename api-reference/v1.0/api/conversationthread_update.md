@@ -79,7 +79,7 @@ Content-length: 419
       }
     }
   ],
-  "isLocked": "true"
+  "isLocked": true 
 }
 ```
 

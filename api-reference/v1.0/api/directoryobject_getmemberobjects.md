@@ -1,10 +1,10 @@
 # directoryObject: getMemberObjects
 
-Returns all the groups and directory objects that a user, contact, or directory 
+Returns all the groups and directory objects that a user, contact, or directory
 object is a member of. This function is transitive.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -55,6 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
 
