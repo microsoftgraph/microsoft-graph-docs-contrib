@@ -1,6 +1,6 @@
 # Update calendar
 
-Update the properties of calendar object.
+Update the properties of a Calendar object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.ReadWrite*
@@ -40,7 +40,7 @@ In the request body, supply the values for relevant fields that should be update
 |name|String|The calendar name.|
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [Calendar](../resources/calendar.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
