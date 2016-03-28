@@ -2,7 +2,7 @@
 
 Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 
-To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
+To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md) or 
 [get the instances of an event](event_list_instances.md).
 
 ### Prerequisites
@@ -30,7 +30,7 @@ GET /me/calendarGroups/<id>/calendars/<id>/events
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
 ```
 ### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData query parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -40,7 +40,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -52,7 +52,10 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me/calendar/events
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
