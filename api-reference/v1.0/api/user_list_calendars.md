@@ -1,6 +1,6 @@
 # List calendars
 
-Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. 
+Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group, or get the calendars from a specific calendar group. 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read; Calendars.ReadWrite*
@@ -26,17 +26,17 @@ GET /users/<id | userPrincipalName>/calendarGroups/{calendar_group_id}/calendars
 ```
 
 ### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData query parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer \<token>\. Required.  |
 | Accept  | application/json|
 
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [Calendar](../resources/calendar.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -48,7 +48,10 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me/calendars
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
