@@ -1,6 +1,6 @@
 # Create Calendar
 
-Use this API to create a new calendar in a calendar group.
+Create a new calendar in a calendar group.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
 ### HTTP request
@@ -46,7 +46,7 @@ Content-length: 78
   }
 }
 ```
-In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
+In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
