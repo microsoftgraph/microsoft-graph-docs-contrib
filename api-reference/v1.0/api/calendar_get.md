@@ -1,6 +1,6 @@
 # Get calendar
 
-Retrieve the properties and relationships of calendar object.
+Retrieve the properties and relationships of the calendar object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read*
@@ -26,7 +26,7 @@ GET /me/calendarGroups/<id>/calendars/<id>
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
 ```
 ### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData query parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -47,7 +47,10 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me/calendar
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+> Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
