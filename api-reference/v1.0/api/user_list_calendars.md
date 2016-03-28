@@ -1,6 +1,6 @@
 # List calendars
 
-Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group, or get the calendars from a specific calendar group. 
+Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read; Calendars.ReadWrite*
