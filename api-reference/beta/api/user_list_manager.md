@@ -25,21 +25,13 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 ### Example
 ##### Request
 Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_manager"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/users/<id|userPrincipalName>/manager
 ```
 ##### Response
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryobject",
-  "isCollection": true
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -48,7 +40,6 @@ Content-type: application/json
   "objectType": "User",
   "id": "111048d2-2761-4347-b978-07354283363b",
   "accountEnabled": true,
-  ...
   "city": "San Diego",
   "country": "United States",
   "department": "Sales & Marketing",
@@ -57,13 +48,11 @@ Content-type: application/json
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
   "mailNickname": "SaraD",
-  ...
   "state": "CA",
   "streetAddress": "9256 Towne Center Dr., Suite 400",
   "surname": "Davis",
   "usageLocation": "US",
-  "userPrincipalName": "SaraD@contoso.onmicrosoft.com",
-  ...
+  "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
 }
 ```
 

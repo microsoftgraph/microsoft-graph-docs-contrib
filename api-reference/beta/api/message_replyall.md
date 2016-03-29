@@ -1,30 +1,33 @@
 # message: replyAll
 
+Reply to all recipients of a message. The message is then saved in the Sent Items folder.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.Send*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/messages/<id>/Microsoft.Graph.replyAll
-POST /drive/root/createdByUser/messages/<id>/Microsoft.Graph.replyAll
-POST /drive/root/lastModifiedByUser/messages/<id>/Microsoft.Graph.replyAll
-
+POST /users/me/messages/<id>/microsoft.graph.replyAll
+POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.replyAll
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.replyAll
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.replyAll
 ```
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String||
+|comment|String|A comment to include. Can be an empty string.|
 
 ### Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -35,7 +38,7 @@ Here is an example of the request.
   "name": "message_replyall"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/<id>/replyAll
+POST https://graph.microsoft.com/beta/me/messages/<id>/microsoft.graph.replyAll
 Content-type: application/json
 Content-length: 32
 
@@ -44,8 +47,9 @@ Content-length: 32
 }
 ```
 
+
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

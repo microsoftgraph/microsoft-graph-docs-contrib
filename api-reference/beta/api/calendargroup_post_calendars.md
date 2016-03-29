@@ -1,20 +1,25 @@
 # Create Calendar
 
-Use this API to create a new Calendar.
+Use this API to create a new Calendar in a calendar group.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's default [calendarGroup](../resources/calendargroup.md).
 ```http
+POST /me/calendarGroup/calendars
+POST /users/<id | userPrincipalName>/calendarGroup/calendars
+```
+Any [calendarGroup](../resources/calendargroup.md) of a user.
+```http
+POST /me/calendarGroups/<id>/calendars
 POST /users/<id | userPrincipalName>/calendarGroups/<id>/calendars
-POST /drive/root/createdByUser/calendarGroups/<id>/calendars
-POST /drive/root/lastModifiedByUser/calendarGroups/<id>/calendars
-
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
@@ -38,8 +43,7 @@ Content-length: 78
 {
   "name": "name-value",
   "color": {
-  },
-  "changeKey": "changeKey-value"
+  }
 }
 ```
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
@@ -51,6 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.calendar"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 98
 

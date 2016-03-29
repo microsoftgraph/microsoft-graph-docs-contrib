@@ -2,14 +2,11 @@
 
 Delete group.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: _Group.ReadWrite.All_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/<id>
-DELETE /users/<id | userPrincipalName>/joinedGroups/<id>
-DELETE /drive/root/createdByUser/joinedGroups/<id>
-
 ```
 ### Request headers
 | Name       | Type | Description|

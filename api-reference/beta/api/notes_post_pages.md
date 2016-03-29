@@ -37,12 +37,8 @@ Here is an example of the request.
 
 In the `../notes/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../notes/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_page_from_notes"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-<<<<<<< HEAD
 POST https://graph.microsoft.com/beta/me/notes/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
@@ -83,12 +79,9 @@ Content-Type:application/pdf
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.page"
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 312
 

@@ -1,20 +1,26 @@
 # Create Event
 
-Use this API to create a new Event.
+Create an [event](../resources/event.md) in the user's default calendar. 
+
+You can specify the time zone for each of the start and end times of the event as part of these values, as the 
+**start** and **end** properties are of [DateTimeTimeZone](../resources/datetimetimezone.md) type. 
+
+When the event is created, the server send invitations to all attendees.
+
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/events
-POST /drive/root/createdByUser/events
-POST /drive/root/lastModifiedByUser/events
-
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:-----------|:------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -39,8 +45,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -57,6 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 285
 
@@ -64,8 +70,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

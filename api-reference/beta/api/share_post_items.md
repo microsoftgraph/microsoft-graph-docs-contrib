@@ -2,7 +2,7 @@
 
 Use this API to create a new item.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,11 +15,11 @@ POST /shares/<id>/items
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
-In the request body, supply a JSON representation of [item](../resources/item.md) object.
+In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [item](../resources/item.md) object in the response body.
+If successful, this method returns `201, Created` response code and [item](../resources/driveitem.md) object in the response body.
 
 ### Example
 ##### Request
@@ -63,9 +63,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.driveitem"
+  "@odata.type": "microsoft.graph.driveItem"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 504
 

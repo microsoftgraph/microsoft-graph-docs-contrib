@@ -3,7 +3,7 @@
 Delete an open type data extension from the specified instance of a resource. 
 
 The resource can be a message, calendar event, or contact of the signed-in user's on Office 365 or
-Outlook.com. Or, it can be an event for an Office 365 group.
+Outlook.com. Or, it can be an event or post for an Office 365 group.
 
 ### Prerequisites
 
@@ -20,16 +20,19 @@ deleting the extension from:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/<id>/extensions/<extensionId>
-DELETE /users/<id>/messages/<id>/extensions/<extensionId>
+DELETE /users/<id|userPrincipalName>/messages/<id>/extensions/<extensionId>
+DELETE /me/mailFolders/<id>/messages/<id>/extensions/<extensionId>
 
 DELETE /me/events/<id>/extensions/<extensionId>
-DELETE /users/<id>/events/<id>/extensions/<extensionId>
+DELETE /users/<id|userPrincipalName>/events/<id>/extensions/<extensionId>
 
 DELETE /me/contacts/<id>/extensions/<extensionId>
-DELETE /users/<id>/contacts/<id>/extensions/<extensionId>
+DELETE /users/<id|userPrincipalName>/contacts/<id>/extensions/<extensionId>
 
 DELETE /groups/<id>/events/<id>/extensions/<extensionId>
 
+DELETE /groups/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
+DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
 ```
 
 ### Parameters
@@ -66,6 +69,7 @@ DELETE https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDU
 
 The second example deletes an extension in the specified group event.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVlN17IsAAA=')/extensions('Com.Contoso.Referral')
 ```

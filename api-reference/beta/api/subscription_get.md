@@ -2,11 +2,11 @@
 
 Retrieve the properties and relationships of a subscription.
 ### Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, or *Contacts.Read* 
+One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read* or *Groups.Read.All* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /subscriptions/<subscriptionId>
+GET /subscriptions/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -28,13 +28,13 @@ Here is an example of the request.
   "name": "get_subscription"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/subscriptions/<subscriptionId>
+GET https://graph.microsoft.com/beta/subscriptions/<id>
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": false,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 ```http
@@ -43,12 +43,12 @@ Content-type: application/json
 Content-length: 252
 
 {
-  "subscriptionId":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
+  "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource":"me/messages",
-  "changeType":"Created",
+  "changeType":"created,updated",
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "subscriptionExpirationDateTime":"2015-11-20T18:23:45.9356913Z"
+  "expirationDateTime":"2016-11-20T18:23:45.9356913Z"
 }
 ```
 

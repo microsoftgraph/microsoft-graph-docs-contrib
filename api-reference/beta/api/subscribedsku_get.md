@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of subscribedsku object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -10,7 +10,6 @@ GET /subscribedSkus/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -35,16 +34,16 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.subscribedsku"
+  "@odata.type": "microsoft.graph.subscribedSku"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 428
+Content-length: 450
 
 {
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
-  "id": "id-value",
   "prepaidUnits": {
     "enabled": 99,
     "suspended": 99,
@@ -58,7 +57,8 @@ Content-length: 428
       "appliesTo": "appliesTo-value"
     }
   ],
-  "skuId": "skuId-value"
+  "skuId": "skuId-value",
+  "skuPartNumber": "skuPartNumber-value"
 }
 ```
 

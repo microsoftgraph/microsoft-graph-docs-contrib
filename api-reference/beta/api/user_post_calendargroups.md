@@ -2,23 +2,21 @@
 
 Use this API to create a new CalendarGroup.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/calendarGroups
-POST /drive/root/createdByUser/calendarGroups
-POST /drive/root/lastModifiedByUser/calendarGroups
-
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json  |
 
 ### Request body
 In the request body, supply a JSON representation of [CalendarGroup](../resources/calendargroup.md) object.
-
 
 ### Response
 If successful, this method returns `201, Created` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
@@ -47,9 +45,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendargroup"
+  "@odata.type": "microsoft.graph.calendarGroup"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 110
 

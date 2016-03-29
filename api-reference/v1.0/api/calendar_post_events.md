@@ -1,6 +1,6 @@
 # Create Event
 
-Use this API to create a new event in the default or the specified calendar.
+Use this API to create a new Event in the default or the specified calendar.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
@@ -28,15 +28,15 @@ POST /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
 ### Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer \<token>. Required.  |
+| Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
 ### Request body
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.
+If successful, this method returns `201, Created` response code and [Event](../resources/event.md) object in the response body.
 
 ### Example
 ##### Request
@@ -63,10 +63,7 @@ Content-length: 285
 ```
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 ##### Response
-Here is an example of the response. 
-
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

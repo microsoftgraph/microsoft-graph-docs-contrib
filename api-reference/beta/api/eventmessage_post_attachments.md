@@ -2,12 +2,12 @@
 
 Use this API to create a new Attachment.
 ### Prerequisites
-The following **scopes** are required to execute this API:  _Mail.ReadWrite_ 
+The following **scopes** are required to execute this API:  _Mail.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/attachments
-POST /users/<id | userPrincipalName>/messages/<id>/attachments
+POST /users/<id|userPrincipalName>/messages/<id>/attachments
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -18,22 +18,20 @@ POST /users/<id | userPrincipalName>/messages/<id>/attachments
 ### Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
-
 ### Response
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
-### Example
+### Example (file attachment)
+
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_attachment_from_eventmessage"
+  "name": "create_file_attachment_from_eventmessage"
 }-->
 ```http
-Creating file attachment 
 POST https://graph.microsoft.com/beta/me/messages/<id>/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
@@ -43,11 +41,31 @@ Content-length: 142
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value"
 }
+```
 
-Creating item attachment 
+##### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.attachment"
+} -->
+```http
+HTTP 201 Created
+```
+
+
+### Example (item attachment)
+
+##### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_eventmessage"
+}-->
+```http
 POST https://graph.microsoft.com/v1.0/me/events/<id>/attachments
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
@@ -55,7 +73,7 @@ Content-length: 100
   "item": "message or event entity"
 }
 ```
-In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

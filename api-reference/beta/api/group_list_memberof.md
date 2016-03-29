@@ -1,18 +1,19 @@
 # List memberOf
 
-Retrieve a list of directoryobject objects.
+Get groups that the group is a direct member of. 
+
+This operation is not transitive. Unlike getting a user's Office 365 Groups, this 
+returns all types of groups, not just Office 365 groups. 
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/memberOf
-GET /users/<id | userPrincipalName>/joinedGroups/<id>/memberOf
-GET /drive/root/createdByUser/joinedGroups/<id>/memberOf
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -37,10 +38,11 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryobject",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 55
 

@@ -1,12 +1,12 @@
-# Create oAuth2PermissionGrant
+# Create oAuth2Permissiongrant
 
-Use this API to create a new oAuth2PermissionGrant.
+Use this API to create a new oAuth2Permissiongrant.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/<id>/oauth2PermissionGrants
+POST /servicePrincipals/<id>/oAuth2Permissiongrants
 
 ```
 ### Request headers
@@ -15,21 +15,21 @@ POST /servicePrincipals/<id>/oauth2PermissionGrants
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
-In the request body, supply a JSON representation of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
+In the request body, supply a JSON representation of [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
+If successful, this method returns `201, Created` response code and [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object in the response body.
 
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_oauth2permissiongrant_from_serviceprincipal"
+  "name": "create_oAuth2Permissiongrant_from_serviceprincipal"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/<id>/oauth2PermissionGrants
+POST https://graph.microsoft.com/beta/servicePrincipals/<id>/oAuth2Permissiongrants
 Content-type: application/json
 Content-length: 180
 
@@ -41,15 +41,16 @@ Content-length: 180
   "resourceId": "resourceId-value"
 }
 ```
-In the request body, supply a JSON representation of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
+In the request body, supply a JSON representation of [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oauth2permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 200
 
@@ -67,7 +68,7 @@ Content-length: 200
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create oAuth2PermissionGrant",
+  "description": "Create oAuth2Permissiongrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

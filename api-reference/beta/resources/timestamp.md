@@ -11,7 +11,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timestamp"
+  "@odata.type": "microsoft.graph.timeStamp"
 }-->
 
 ```json

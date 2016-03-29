@@ -1,30 +1,33 @@
 # message: copy
 
+Copy a message to a folder.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/messages/<id>/Microsoft.Graph.copy
-POST /drive/root/createdByUser/messages/<id>/Microsoft.Graph.copy
-POST /drive/root/lastModifiedByUser/messages/<id>/Microsoft.Graph.copy
-
+POST /me/messages/<id>/microsoft.graph.copy
+POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.copy
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.copy
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.copy
 ```
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|destinationId|String||
+|destinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
 
 ### Response
-If successful, this method returns `200, OK` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -35,7 +38,7 @@ Here is an example of the request.
   "name": "message_copy"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/<id>/copy
+POST https://graph.microsoft.com/beta/me/messages/<id>/microsoft.graph.copy
 Content-type: application/json
 Content-length: 44
 
@@ -52,6 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 248
 
@@ -61,8 +65,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

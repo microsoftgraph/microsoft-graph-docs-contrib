@@ -1,12 +1,13 @@
-# Create DirectoryRole
+# Activate directoryRole
 
-Use this API to create a new DirectoryRole.
+Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators  and the implicit Users directory roles are activated by default. To access and assign members to another directory role, you must first activate it with its corresponding directory role template ([directoryRoleTemplate](../resources/directoryroletemplate.md)).
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryObjects
+POST /directoryRoles
 
 ```
 ### Request headers
@@ -15,11 +16,17 @@ POST /directoryObjects
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
-In the request body, supply a JSON representation of [DirectoryRole](../resources/directoryrole.md) object.
+In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
+
+The following table shows the properties that are required when you activate a directory role.
+
+|Required parameter | Type | Description|
+|:---------|:---------|:---------|
+|roleTemplateId | string | The ID of the [directoryRoleTemplate](../resources/directoryroletemplate.md) that the role is based on. This is the only property that may be specified in the request.|
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [DirectoryRole](../resources/directoryrole.md) object in the response body.
+If successful, this method returns `201, Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 
 ### Example
 ##### Request
@@ -34,11 +41,9 @@ Content-type: application/json
 Content-length: 153
 
 {
-  "directoryRole": {
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "roleTemplateId": "roleTemplateId-value"
-  }
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "roleTemplateId": "roleTemplateId-value"
 }
 ```
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
@@ -47,19 +52,18 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryrole"
+  "@odata.type": "microsoft.graph.directoryRole"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 175
 
 {
-  "directoryRole": {
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "roleTemplateId": "roleTemplateId-value",
-    "id": "id-value"
-  }
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "roleTemplateId": "roleTemplateId-value",
+  "id": "id-value"
 }
 ```
 
@@ -67,7 +71,7 @@ Content-length: 175
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create DirectoryRole",
+  "description": "Create directoryRole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

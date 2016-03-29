@@ -12,7 +12,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oauth2permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
 }-->
 
 ```json

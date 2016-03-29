@@ -1,22 +1,24 @@
 # Get user
 
 Retrieve the properties and relationships of user object.
+
+> Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>
-GET /drive/root/createdByUser
-GET /drive/root/lastModifiedByUser
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value|
+|:-----------|:------|
+| Authorization  | Bearer <token>. Required.|
+| Accept  | application/json|
 
 ### Request body
 Do not supply a request body for this method.
@@ -40,32 +42,24 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 491
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [
-        "disabledPlans-value"
-      ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
   "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+       "businessPhones-value"
+   ],
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "jobTitle": "jobTitle-value",
+   "mail": "mail-value",
+   "mobilePhone": "mobilePhone-value",
+   "officeLocation": "officeLocation-value",
+   "preferredLanguage": "preferredLanguage-value",
+   "surname": "surname-value",
+   "userPrincipalName": "userPrincipalName-value",
+   "id": "id-value"
 }
 ```
 

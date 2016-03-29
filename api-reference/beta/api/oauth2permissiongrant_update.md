@@ -1,14 +1,14 @@
-# Update oauth2permissiongrant
+# Update oAuth2Permissiongrant
 
-Update the properties of oauth2permissiongrant object.
+Update the properties of oAuth2Permissiongrant object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /oauth2PermissionGrants/<id>
-PATCH /users/<id | userPrincipalName>/oauth2PermissionGrants/<id>
-PATCH /drive/root/createdByUser/oauth2PermissionGrants/<id>
+PATCH /oAuth2Permissiongrants/<id>
+PATCH /users/<id | userPrincipalName>/oAuth2Permissiongrants/<id>
+PATCH /drive/root/createdByUser/oAuth2Permissiongrants/<id>
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -29,16 +29,16 @@ In the request body, supply the values for relevant fields that should be update
 |startTime|DateTimeOffset||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_oauth2permissiongrant"
+  "name": "update_oAuth2Permissiongrant"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/oauth2PermissionGrants/<id>
+PATCH https://graph.microsoft.com/beta/oAuth2Permissiongrants/<id>
 Content-type: application/json
 Content-length: 180
 
@@ -55,9 +55,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oauth2permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 200
 
@@ -75,7 +76,7 @@ Content-length: 200
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update oauth2permissiongrant",
+  "description": "Update oAuth2Permissiongrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

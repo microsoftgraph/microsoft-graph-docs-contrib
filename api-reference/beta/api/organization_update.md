@@ -1,12 +1,13 @@
 # Update organization
 
-Update the properties of organization object.
+Update the properties of the currently authenticated organization.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /organization
+
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -27,7 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
 |displayName|String|The display name for the tenant.|
 |marketingNotificationEmails|String|                                        **Notes**: not nullable.            |
-|objectType|String|A string that identifies the object type. For tenants the value is always “Company”. Inherited from [directoryObject].|
+|objectType|String|A string that identifies the object type. For tenants the value is always “Company”. Inherited from [directoryObject](../resources/directoryobject.md).|
 |postalCode|String|            |
 |preferredLanguage|String|            |
 |provisionedPlans|ProvisionedPlan|                                        **Notes**: not nullable.            |
@@ -52,142 +53,54 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization
 Content-type: application/json
-Content-length: 1647
+Content-length: 411
 
 {
   "assignedPlans": [
     {
-      "assignedTimestamp": "datetime-value",
+      "assignedDateTime": "datetime-value",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "servicePlanId-value"
     }
   ],
+  "businessPhones": [
+    "businessPhones-value"
+  ],
   "city": "city-value",
-  "companyLastDirSyncTime": "datetime-value",
   "country": "country-value",
   "countryLetterCode": "countryLetterCode-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "marketingNotificationEmails": [
-    "marketingNotificationEmails-value"
-  ],
-  "postalCode": "postalCode-value",
-  "preferredLanguage": "preferredLanguage-value",
-  "provisionedPlans": [
-    {
-      "capabilityStatus": "capabilityStatus-value",
-      "provisioningStatus": "provisioningStatus-value",
-      "service": "service-value"
-    }
-  ],
-  "provisioningErrors": [
-    {
-      "errorDetail": "errorDetail-value",
-      "resolved": true,
-      "service": "service-value",
-      "timestamp": "datetime-value"
-    }
-  ],
-  "securityComplianceNotificationMails": [
-    "securityComplianceNotificationMails-value"
-  ],
-  "securityComplianceNotificationPhones": [
-    "securityComplianceNotificationPhones-value"
-  ],
-  "state": "state-value",
-  "street": "street-value",
-  "technicalNotificationMails": [
-    "technicalNotificationMails-value"
-  ],
-  "telephoneNumber": "telephoneNumber-value",
-  "verifiedDomains": [
-    {
-      "capabilities": "capabilities-value",
-      "default": true,
-      "id": "id-value",
-      "initial": true,
-      "name": "name-value",
-      "type": "type-value"
-    }
-  ],
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  "displayName": "displayName-value"
 }
 ```
 ##### Response
-Here is an example of the response.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.organization"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1647
+Content-length: 411
 
 {
   "assignedPlans": [
     {
-      "assignedTimestamp": "datetime-value",
+      "assignedDateTime": "datetime-value",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "servicePlanId-value"
     }
   ],
+  "businessPhones": [
+    "businessPhones-value"
+  ],
   "city": "city-value",
-  "companyLastDirSyncTime": "datetime-value",
   "country": "country-value",
   "countryLetterCode": "countryLetterCode-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "marketingNotificationEmails": [
-    "marketingNotificationEmails-value"
-  ],
-  "postalCode": "postalCode-value",
-  "preferredLanguage": "preferredLanguage-value",
-  "provisionedPlans": [
-    {
-      "capabilityStatus": "capabilityStatus-value",
-      "provisioningStatus": "provisioningStatus-value",
-      "service": "service-value"
-    }
-  ],
-  "provisioningErrors": [
-    {
-      "errorDetail": "errorDetail-value",
-      "resolved": true,
-      "service": "service-value",
-      "timestamp": "datetime-value"
-    }
-  ],
-  "securityComplianceNotificationMails": [
-    "securityComplianceNotificationMails-value"
-  ],
-  "securityComplianceNotificationPhones": [
-    "securityComplianceNotificationPhones-value"
-  ],
-  "state": "state-value",
-  "street": "street-value",
-  "technicalNotificationMails": [
-    "technicalNotificationMails-value"
-  ],
-  "telephoneNumber": "telephoneNumber-value",
-  "verifiedDomains": [
-    {
-      "capabilities": "capabilities-value",
-      "default": true,
-      "id": "id-value",
-      "initial": true,
-      "name": "name-value",
-      "type": "type-value"
-    }
-  ],
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  "displayName": "displayName-value"
 }
 ```
 

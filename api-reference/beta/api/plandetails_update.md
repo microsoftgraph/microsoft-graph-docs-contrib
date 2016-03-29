@@ -30,7 +30,7 @@ In the request body, supply the values for relevant fields that should be update
 |category3Description|String|Description of the category (or label) that can be applied to the task.|
 |category4Description|String|Description of the category (or label) that can be applied to the task.|
 |category5Description|String|Description of the category (or label) that can be applied to the task.|
-|sharedWith|[userIdCollection](../resources/useridcollection.md)| List of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.|
+|sharedWith|[userIdCollection](../resources/useridcollection.md)| List of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the group's plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.|
 
 ### Response
 If successful, this method returns a `204 No Content` response code.

@@ -1,8 +1,8 @@
 # Get directoryRole
 
-Retrieve the properties and relationships of directoryrole object.
+Retrieve the properties of a directoryrole object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -10,7 +10,6 @@ GET /directoryRoles/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -35,9 +34,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryrole"
+  "@odata.type": "microsoft.graph.directoryRole"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 142
 

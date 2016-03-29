@@ -2,7 +2,7 @@
 
 Retrieve a list of item objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,26 +19,19 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [item](../resources/item.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [item](../resources/driveitem.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_items"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/shares/<id>/items
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.driveitem",
-  "isCollection": true
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 550
 

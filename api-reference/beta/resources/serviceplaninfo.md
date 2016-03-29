@@ -1,6 +1,15 @@
 # servicePlanInfo resource type
 
-Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [SubscribedSku] entity is a collection of **ServicePlanInfo**.
+Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [subscribedSku](subscribedsku.md) entity is a collection of **servicePlanInfo**.
+
+
+### Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|servicePlanId|Guid|The unique identifier of the service plan.|
+|servicePlanName|String|The name of the service plan.|
+|provisioningStatus|String|The provisioning status of the service plan.|
+|appliesTo|String||
 
 
 ### JSON representation
@@ -12,7 +21,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.serviceplaninfo"
+  "@odata.type": "microsoft.graph.servicePlanInfo"
 }-->
 
 ```json
@@ -24,11 +33,6 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|servicePlanId|Guid|The unique identifier of the service plan.|
-|servicePlanName|String|The name of the service plan.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

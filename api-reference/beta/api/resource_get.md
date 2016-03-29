@@ -3,7 +3,7 @@
 Retrieve the binary data of a file or image [resource](../resources/resource.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
+Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,7 +20,7 @@ GET /groups/<id>/notes/resources/<id>/content
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and the image or file binary data in the response body. 
+If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.
 
 Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.
 ### Example
@@ -34,11 +34,11 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/me/notes/resources/<id>/content
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.resource"
+  "@odata.type": "stream"
 } -->
 ```http
 HTTP/1.1 200 OK

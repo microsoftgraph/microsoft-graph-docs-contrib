@@ -1,22 +1,21 @@
 # List contactFolders
 
 Get all the contact folders in the signed-in user's mailbox.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Contacts.Read; Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/contactFolders
-GET /drive/root/createdByUser/contactFolders
-GET /drive/root/lastModifiedByUser/contactFolders
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -37,10 +36,11 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder",
+  "@odata.type": "microsoft.graph.contactFolder",
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 145
 

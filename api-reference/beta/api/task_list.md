@@ -31,21 +31,13 @@ If successful, this method returns a `200 OK` response code and collection of [t
 ### Example
 ##### Request
 Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_tasks"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/tasks?$filter=createdBy eq 'me'
 ```
 ##### Response
 Here is an example of the response. 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.task",
-  "isCollection": true
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

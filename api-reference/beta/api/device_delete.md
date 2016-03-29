@@ -2,7 +2,8 @@
 
 Delete device.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

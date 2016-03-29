@@ -2,14 +2,15 @@
 
 Delete message.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Mail.ReadWrite* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/messages/<id>
 DELETE /users/<id | userPrincipalName>/messages/<id>
-DELETE /drive/root/createdByUser/messages/<id>
-DELETE /drive/root/lastModifiedByUser/messages/<id>
-
+DELETE /me/mailFolders/<id>/messages/<id>
+DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -42,7 +43,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

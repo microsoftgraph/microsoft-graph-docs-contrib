@@ -2,21 +2,20 @@
 
 Retrieve the properties and relationships of conversation object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Group.ReadWrite.All; Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/conversations/<id>
-GET /users/<id | userPrincipalName>/joinedGroups/<id>/conversations/<id>
-GET /drive/root/createdByUser/joinedGroups/<id>/conversations/<id>
+
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -40,6 +39,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.conversation"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
 
