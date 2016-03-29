@@ -2,17 +2,31 @@
 
 Retrieve the properties and relationships of calendar object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Calendars.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's or group's default [calendar](../resources/calendar.md).
 ```http
+GET /me/calendar
 GET /users/<id | userPrincipalName>/calendar
 GET /groups/<id>/calendar
-GET /drive/root/createdByUser/calendar
+```
+A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+```http
+GET /me/calendars/<id>
+GET /users/<id | userPrincipalName>/calendars/<id>
+
+GET /me/calendarGroup/calendars/<id>
+GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
+```
+A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+```http
+GET /me/calendarGroups/<id>/calendars/<id>
+GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -40,6 +54,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.calendar"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 98
 

@@ -27,6 +27,7 @@ In the request body, supply the values for relevant fields that should be update
 |ccRecipients|Recipient collection|The Cc recipients for the message. Updatable only if IsDraft = true.|
 |from|Recipient|The mailbox owner and sender of the message. Updatable only if IsDraft = true.|
 |importance|String|The importance of the message. Possible values are: `Low`, `Normal`, `High`.|
+|internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). Updatable only if IsDraft = true.|
 |isRead|Boolean|Indicates whether the message has been read.|
 |replyTo|Recipient collection|The email addresses to use when replying. Updatable only if IsDraft = true.|
 |sender|Recipient|The account that is actually used to generate the message. Updatable only if IsDraft = true.|

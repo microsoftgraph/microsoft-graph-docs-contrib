@@ -1,8 +1,11 @@
 # Create registeredUser
 
-Use this API to create a new registeredUser.
+Add a registered user for the device.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -44,9 +47,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryobject"
+  "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 51
 

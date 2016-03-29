@@ -2,7 +2,7 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -48,7 +48,7 @@ Content-length: 56
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.application"
 } -->
 ```http
@@ -90,9 +90,9 @@ Content-length: 2150
     }
   ],
   "knownClientApplications": [
-    "knownClientApplications-value"
+    "guid"
   ],
-  "mainLogo": "mainLogo-value",
+  "mainLogo": "stream",
   "logoutUrl": "logoutUrl-value",
   "oauth2AllowImplicitFlow": true,
   "oauth2AllowUrlPathMatching": true,

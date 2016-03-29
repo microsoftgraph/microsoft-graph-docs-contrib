@@ -2,11 +2,11 @@
 
 Update the properties of photo object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<id>/photo
+PATCH /users/<id | userPrincipalName>/photo
 PATCH /groups/<id>/photo
 PATCH /drive/root/createdByUser/photo
 ```
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_photo"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/<id>/photo
+PATCH https://graph.microsoft.com/beta/users/<id|userPrincipalName>/photo
 Content-type: application/json
 Content-length: 53
 
@@ -48,7 +48,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.photo"
+  "@odata.type": "microsoft.graph.profilePhoto"
 } -->
 ```http
 HTTP/1.1 200 OK

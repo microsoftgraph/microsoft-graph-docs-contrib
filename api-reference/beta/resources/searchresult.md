@@ -5,9 +5,10 @@ The **searchResult** resource indicates than an item is the response to a search
 
 
 ### Properties
-| Property         | Type     | Description                                                                                                                             |
-|:----------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| onClickTelemetryUrl | String | A callback URL that is used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item. |
+
+| Property            | Type   | Description                                                                                                                                                                         |
+|:--------------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| onClickTelemetryUrl | String | A callback URL that is used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results. |
 
 ### JSON representation
 
@@ -18,14 +19,13 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
   "onClickTelemtryUrl"
   ],
-  "@odata.type": "microsoft.graph.searchresult"
+  "@odata.type": "microsoft.graph.searchResult"
 }-->
 
 ```json
 {
-  "onClickTelemetryUrl": "string"
+  "onClickTelemetryUrl": "url"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

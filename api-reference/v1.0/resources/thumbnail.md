@@ -1,14 +1,22 @@
 # thumbnail resource type
 
-The **thumbnail** resource type represents a thumbnail for an image, video, document, or any file or folder on OneDrive that has a graphical representation.
+The **thumbnail** resource type represents a thumbnail for an image, video,
+document, or any file or folder on OneDrive that has a graphical representation.
 
 ### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|content|Stream|The content stream.|
-|height|Int32|The height of the thumbnail, in pixels.|
-|url|String|The URL used to fetch the thumbnail content.|
-|width|Int32|The width of the thumbnail, in pixels.|
+
+| Property | Type   | Description                                  |
+|:---------|:-------|:---------------------------------------------|
+| height   | Int32  | The height of the thumbnail, in pixels.      |
+| url      | String | The URL used to fetch the thumbnail content. |
+| width    | Int32  | The width of the thumbnail, in pixels.       |
+
+
+## Relationships
+
+| Name    | Type   | Description         |
+|:--------|:-------|:--------------------|
+| content | Stream | The content stream. |
 
 
 ### JSON representation
@@ -17,20 +25,17 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "content"
-  ],
+  "optionalProperties": ["content", "height", "width"],
   "@odata.type": "microsoft.graph.thumbnail"
 }-->
 
 ```json
 {
-  "content": "stream",
-  "height": 1024,
   "url": "string",
-  "width": 1024
+  "height": 1024,
+  "width": 1024,
+  "content": "stream"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

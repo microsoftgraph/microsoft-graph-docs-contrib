@@ -1,22 +1,24 @@
 # List acceptedSenders
 
-Retrieve a list of directoryobject objects.
+Get a list of users or groups that are in the acceptedSenders list for this group.
+
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). 
+Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, 
+otherwise you will get an error.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+ *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/acceptedSenders
-GET /users/<id | userPrincipalName>/joinedGroups/<id>/acceptedSenders
-GET /drive/root/createdByUser/joinedGroups/<id>/acceptedSenders
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -37,10 +39,11 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryobject",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 55
 

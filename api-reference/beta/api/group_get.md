@@ -1,18 +1,29 @@
 # Get group
 
-Retrieve the properties and relationships of group object.
+Get some of the properties and relationships of a group object.
+
+The following properties are not returned by default:
+* AccessType
+* EmailAddress
+* AllowExternalSenders
+* AutoSubscribeNewMembers
+* IsSubscribedByMail
+* IsFavorite
+* UnseenCount
+
+You can use the query parameter **$select** to get the value of one or more of these 
+properties for a specific group, except **IsFavorite**. 
+
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>
-GET /users/<id | userPrincipalName>/joinedGroups/<id>
-GET /drive/root/createdByUser/joinedGroups/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -30,20 +41,24 @@ Here is an example of the request.
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>
+GET https://graph.microsoft.com/beta/me/groups/<id>
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 211
+Content-length: xxx
 
 {
+  "id": "id-value",
   "description": "description-value",
   "displayName": "displayName-value",
   "groupTypes": [
@@ -51,7 +66,15 @@ Content-length: 211
   ],
   "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "mailNickname-value",
+  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "onPremisesSyncEnabled": true,
+  "proxyAddresses": [
+    "proxyAddresses-value"
+   ],
+   "securityEnabled": true,
+   "visibility": "visibility-value"
 }
 ```
 

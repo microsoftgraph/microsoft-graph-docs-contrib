@@ -1,18 +1,18 @@
 # Get calendarGroup
 
-Retrieve the properties and relationships of calendargroup object.
+Retrieve the properties and relationships of a calendar group object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+Any [calendarGroup](../resources/calendargroup.md) of a user.
 ```http
+GET /me/calendarGroups/<id>
 GET /users/<id | userPrincipalName>/calendarGroups/<id>
-GET /drive/root/createdByUser/calendarGroups/<id>
-GET /drive/root/lastModifiedByUser/calendarGroups/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -37,15 +37,16 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendargroup"
+  "@odata.type": "microsoft.graph.calendarGroup"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 110
 
 {
   "name": "name-value",
-  "classId": "classId-value",
+  "classId": "11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

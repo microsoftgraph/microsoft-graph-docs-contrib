@@ -1,20 +1,20 @@
 # Create Message
 
-Use this API to create a new Message.
+Use this API to create a new Message in a mailfolder.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/mailFolders/<id>/messages
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages
-POST /drive/root/createdByUser/mailFolders/<id>/messages
-POST /drive/root/lastModifiedByUser/mailFolders/<id>/messages
-
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
@@ -41,8 +41,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
@@ -57,6 +56,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 248
 
@@ -66,8 +66,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

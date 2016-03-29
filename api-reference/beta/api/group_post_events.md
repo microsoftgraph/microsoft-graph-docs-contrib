@@ -1,20 +1,18 @@
 # Create Event
 
-Use this API to create a new Event.
+Use this API to create a new [event](../resources/event.md).
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/events
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/events
-POST /drive/root/createdByUser/joinedGroups/<id>/events
-
+POST /groups/<id>/calendar/events
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -39,8 +37,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",
@@ -57,6 +54,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 285
 
@@ -64,8 +62,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

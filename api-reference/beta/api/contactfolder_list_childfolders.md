@@ -1,18 +1,17 @@
 # List childFolders
 
-Retrieve a list of contactfolder objects.
+Get a collection of child folders under the specified contact folder.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Contacts.Read; Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders/<id>/childFolders
 GET /users/<id | userPrincipalName>/contactFolders/<id>/childFolders
-GET /drive/root/createdByUser/contactFolders/<id>/childFolders
-GET /drive/root/lastModifiedByUser/contactFolders/<id>/childFolders
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -37,10 +36,11 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder",
+  "@odata.type": "microsoft.graph.contactFolder",
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 145
 

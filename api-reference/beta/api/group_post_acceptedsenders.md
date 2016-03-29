@@ -1,27 +1,28 @@
 # Create acceptedSender
 
-Use this API to create a new acceptedSender.
+Add a new user or group to the acceptedSender list.
+
+Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post 
+to conversations of the group . Make sure you do not specify the same user or group 
+in the accepted senders and rejected senders lists, otherwise you will get an error.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/acceptedSenders
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/acceptedSenders
-POST /drive/root/createdByUser/joinedGroups/<id>/acceptedSenders
-
+POST /groups/<id>/acceptedSenders/$ref
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply the id of a user or group object.
 
 
 ### Response
-If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
+This method returns `204, No Content` response code and no response body.
 
 ### Example
 ##### Request
@@ -31,32 +32,22 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/acceptedSenders
+POST https://graph.microsoft.com/beta/groups/<id>/acceptedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 ```
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryobject"
+  "truncated": true
 } -->
 ```http
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

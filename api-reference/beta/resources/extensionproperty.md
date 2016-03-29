@@ -1,6 +1,6 @@
 # extensionProperty resource type
 
-Allows an application to define and use a set of additional properties that can be added to directory objects (users, groups, tenant details, devices, applications, and service principals) without the application requiring an external data store. For more information about extension properties, see [Azure AD Graph API Directory Schema Extensions](https://msdn.microsoft.com/en-us/library/azure/dn720459.aspx). Inherits from [directoryObject].
+Allows an application to define and use a set of additional properties that can be added to directory objects (users, groups, tenant details, devices, applications, and service principals) without the application requiring an external data store. For more information about extension properties, see [Azure AD Graph API Directory Schema Extensions](https://msdn.microsoft.com/en-us/library/azure/dn720459.aspx). Inherits from [directoryObject](directoryobject.md).
 
 
 ### JSON representation
@@ -33,7 +33,7 @@ Here is a JSON representation of the resource
 |dataType|String|Specifies the type of the directory extension property being added.   Supported types are: Integer, LargeInteger, DateTime (must be specified in ISO 8601 - DateTime is stored in UTC), Binary, Boolean, and String.|
 |isSyncedFromOnPremises|Boolean|Indicates whether the extension property is synced from the on premises directory.                            **Notes**: not nullable.            |
 |name|String|Specifies the display name for the directory extension property.                            **Notes**: not nullable.            |
-|id|String|The unique identifier for the permission scope. Inherited from [directoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             Read-only.|
+|id|String|The unique identifier for the permission scope. Inherited from [directoryObject](directoryobject.md).                            **Notes**: **key**, immutable, not nullable, unique.             Read-only.|
 |targetObjects|String collection|The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “organization”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.            |
 
 ### Relationships

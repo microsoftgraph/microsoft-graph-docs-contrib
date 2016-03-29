@@ -2,22 +2,60 @@
 
 Retrieve the properties and relationships of fileattachment object.
 ### Prerequisites
-The following **scopes** are required to execute this API:
+One of the following **scopes** is required to execute this API:
 
-* If accessing attachments in Messages: _Mail.Read_
-* If accessing attachments in Events: _Calendars.Read_
-* If accessing attachments in Posts: _Groups.Read_
- 
+* If accessing attachments in Messages: *Mail.Read*
+* If accessing attachments in Events: *Calendars.Read*
+* If accessing attachments in Group Events or Posts: *Group.Read.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 ```http
+GET /me/events/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/events/<id>/attachments/<id>
 GET /groups/<id>/events/<id>/attachments/<id>
+
+GET /me/calendar/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/calendar/events/<id>/attachments/<id>
+GET /groups/<id>/calendar/events/<id>/attachments/<id>
+```
+Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
+```http
+GET /me/calendars/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments/<id>
+
+GET /me/calendargroup/calendars/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/attachments/<id>
+```
+Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
+```http
+GET /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>
+```
+Attachments for a [message](../resources/message.md) in a user's mailbox.
+```http
+GET /me/messages/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
+```
+Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.
+```http
+GET /me/mailFolders/<id>/messages/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments/<id>
+```
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
+example below shows one level of nesting, but a message can be located in a child of a child and so on.
+```http
+GET /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
+GET /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
+```
+Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
+```http
+GET /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
+GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -42,13 +80,15 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.fileattachment"
+  "@odata.type": "microsoft.graph.fileAttachment"
 } -->
 ```http
-File Attachment
+HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 199
+Content-length: 215
 
+{
+  "value": [
     {
       "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
       "contentType": "contentType-value",
@@ -62,21 +102,8 @@ Content-length: 199
       "name": "name-value",
       "size": 99
     }
-    
-Item Attachment
-Content-type: application/json
-Content-length: 162
-
-    {
-      "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
-      "lastModifiedDateTime": "datetime-value",
-      "name": "name-value",
-      "contentType": "contentType-value",
-      "size": 99,
-      "isInline": true,
-      "id": "id-value"
-    }
-
+  ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

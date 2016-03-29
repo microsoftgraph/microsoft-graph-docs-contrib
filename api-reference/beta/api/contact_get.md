@@ -6,13 +6,21 @@ One of the following **scopes** is required to execute this API:
 *Contacts.Read; Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A [contact](../resources/contact.md) from user's default [contactFolder](../resources/contactfolder.md).
 ```http
 GET /me/contacts/<id>
-GET /users/<id>/contacts/<id>
-GET /users/<userPrincipalName>/contacts/<id>
-GET /me/contactfolders/<contactFolderId>/contacts/<id>
-GET /users/<id>/contactfolders/<contactFolderId>/contacts/<id>
-GET /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>
+GET /users/<id | userPrincipalName>/contacts/<id>
+```
+A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).
+```http
+GET /me/contactfolders/<Id>/contacts/<id>
+GET /users/<id | userPrincipalName>/contactfolders/<id>/contacts/<id>
+```
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+example below shows one level of nesting, but a contact can be located in a child of a child and so on.
+```http
+GET /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>
+GET /users/<id | userPrincipalName>/contactFolders/<id>/childFolders/<id>/contacts/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -21,9 +29,9 @@ GET /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -47,10 +55,10 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.contact"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 210
-
 Content-length: 1977
+
 {
   "id": "AAMkAGI2THk0AAA=",
   "createdDateTime": "2014-10-19T23:08:24Z",
@@ -89,7 +97,7 @@ Content-length: 1977
   "assistantName": null,
   "manager": null,
   "homePhones": [],
-  "mobilePhone1": null,
+  "mobilePhone": null,
   "businessPhones": [
     "+1 918 555 0101"
   ],

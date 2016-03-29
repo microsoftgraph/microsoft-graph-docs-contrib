@@ -1,15 +1,29 @@
 # event: dismissReminder
 
+Dissmiss a reminder that has been triggered.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/events/<id>/Microsoft.Graph.dismissReminder
-POST /groups/<id>/events/<id>/Microsoft.Graph.dismissReminder
-POST /users/<id | userPrincipalName>/calendarView/<id>/Microsoft.Graph.dismissReminder
+POST /me/events/<id>/microsoft.graph.dismissReminder
+POST /users/<id | userPrincipalName>/events/<id>/microsoft.graph.dismissReminder
+POST /groups/<id>/events/<id>/microsoft.graph.dismissReminder
 
+POST /me/calendar/events/<id>/microsoft.graph.dismissReminder
+POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.dismissReminder
+POST /groups/<id>/calendar/events/<id>/microsoft.graph.dismissReminder
+
+POST /me/calendars/<id>/events/<id>/microsoft.graph.dismissReminder
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.dismissReminder
+
+POST /me/calendargroup/calendars/<id>/events/<id>/microsoft.graph.dismissReminder
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/microsoft.graph.dismissReminder
+
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.dismissReminder
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.dismissReminder
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -30,11 +44,12 @@ Here is an example of the request.
   "name": "event_dismissreminder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/<id>/dismissReminder
+POST https://graph.microsoft.com/beta/me/events/<id>/microsoft.graph.dismissReminder
 ```
 
 ##### Response
-Here is an example of the response. 
+##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

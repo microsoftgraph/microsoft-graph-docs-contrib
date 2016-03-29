@@ -12,7 +12,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.keycredential"
+  "@odata.type": "microsoft.graph.keyCredential"
 }-->
 
 ```json

@@ -1,6 +1,6 @@
 # notesOperation resource type
 
-The status of certain long-running OneNote operations. 
+The status of certain long-running OneNote operations.
 
 ### JSON representation
 
@@ -29,10 +29,10 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdDateTime|[dateTimeOffset](datetimeoffset.md)|The start time of the operation.|
+|createdDateTime| DateTimeOffset |The start time of the operation.|
 |error|[notesOperationError](notesoperationerror.md)|The error returned by the operation.|
 |id|string|The operation id. Read-only.|
-|lastActionDateTime|[dateTimeOffset](datetimeoffset.md)|The time of the last action of the operation.|
+|lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
 |resourceId|string|The resource id.|
 |resourceLocation|string|The resource URI for the object. For example, the resource URI for a copied page or section. |
 |status|string|The current status of the operation: `notstarted`, `running`, `completed`, `failed` |

@@ -1,22 +1,41 @@
 # List events
 
-Retrieve a list of event objects.
+Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
+
+To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
+[get the instances of an event](event_list_instances.md).
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's or group's default [calendar](../resources/calendar.md).
 ```http
+GET /me/calendar/events
 GET /users/<id | userPrincipalName>/calendar/events
 GET /groups/<id>/calendar/events
-GET /drive/root/createdByUser/calendar/events
+```
+A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+```http
+GET /me/calendars/<id>/events
+GET /users/<id | userPrincipalName>/calendars/<id>/events
+
+GET /me/calendarGroup/calendars/<id>/events
+GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/events
+```
+A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+```http
+GET /me/calendarGroups/<id>/calendars/<id>/events
+GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Prefer  | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
 
 ### Request body
 Do not supply a request body for this method.
@@ -41,6 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 354
 
@@ -50,8 +70,7 @@ Content-length: 354
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": {
-        },
+        "response": "",
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",

@@ -2,14 +2,27 @@
 
 Delete event.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Calendars.ReadWrite* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/events/<id>
 DELETE /users/<id | userPrincipalName>/events/<id>
 DELETE /groups/<id>/events/<id>
-DELETE /users/<id | userPrincipalName>/calendarView/<id>
 
+DELETE /me/calendar/events/<id>
+DELETE /users/<id | userPrincipalName>/calendar/events/<id>
+DELETE /groups/<id>/calendar/events/<id>/
+
+DELETE /me/calendars/<id>/events/<id>
+DELETE /users/<id | userPrincipalName>/calendars/<id>/events/<id>
+
+DELETE /me/calendargroup/calendars/<id>/events/<id>
+DELETE /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>
+
+DELETE /me/calendargroups/<id>/calendars/<id>/events/<id>
+DELETE /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -21,7 +34,7 @@ Do not supply a request body for this method.
 
 
 ### Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ### Example
 ##### Request

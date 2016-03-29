@@ -1,27 +1,12 @@
 # profilePhoto resource type
 A profile photo of a user, group or an Outlook contact. It's binary data not encoded in base-64.
 
+### Methods
 
-### JSON representation
-
-Here is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.profilephoto"
-}-->
-
-```json
-{
-  "id": "240X240",
-  "height": 240,
-  "width": 240
-}
-
-```
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Read the photo and properties of **profilePhoto**. |
+|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Update the photo. |
 
 
 ### Properties
@@ -36,13 +21,27 @@ Here is a JSON representation of the resource.
 None
 
 
-### Methods
+### JSON representation
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Read the photo and properties of **profilePhoto**. |
-|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Update the photo. |
+Here is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.profilePhoto"
+}-->
+
+```json
+{
+  "id": "240X240",
+  "height": 240,
+  "width": 240
+}
+
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

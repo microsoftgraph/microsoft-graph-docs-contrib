@@ -1,25 +1,29 @@
 # message: createForward
 
+Create a draft of the Forward message. You can then [update](../api/message_update.md) or 
+[send](../api/message_send.md) the draft.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/messages/<id>/Microsoft.Graph.createForward
-POST /drive/root/createdByUser/messages/<id>/Microsoft.Graph.createForward
-POST /drive/root/lastModifiedByUser/messages/<id>/Microsoft.Graph.createForward
-
+POST /me/messages/<id>/microsoft.graph.createForward
+POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.createForward
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
 ```
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -30,7 +34,25 @@ Here is an example of the request.
   "name": "message_createforward"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/<id>/createForward
+POST https://graph.microsoft.com/beta/me/messages/<id>/microsoft.graph.createForward
+Content-type: application/json
+Content-length: 248
+
+{
+  "comment": "Comment-value",
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "address": "address-value"
+      }
+    },
+    {
+      "emailAddress": {
+        "address": "address-value"
+      }
+    }
+  ]
+}
 ```
 
 ##### Response
@@ -41,6 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 248
 
@@ -50,8 +73,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

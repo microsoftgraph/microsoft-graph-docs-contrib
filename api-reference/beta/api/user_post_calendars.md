@@ -2,19 +2,18 @@
 
 Use this API to create a new Calendar.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/calendars
-POST /drive/root/createdByUser/calendars
-POST /drive/root/lastModifiedByUser/calendars
-
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json  |
 
 ### Request body
 In the request body, supply a JSON representation of [Calendar](../resources/calendar.md) object.
@@ -51,6 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.calendar"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 98
 

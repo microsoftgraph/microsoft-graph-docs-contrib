@@ -1,28 +1,32 @@
 # post: forward
 
+Forward a post to a recipient. You can specify both the parent conversation and thread in the request, 
+or, you can specify just the parent thread without the parent conversation. 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+
+*Group.ReadWrite*, *Group.Readwrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/threads/<id>/posts/<id>/forward
-POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/forward
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/posts/<id>/forward
+POST /groups/<id>/threads/<id>/posts/<id>/microsoft.graph.forward
+POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/microsoft.graph.forward
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String||
-|toRecipients|Recipient||
+|comment|String|Optional comment that is forwarded together with the post.|
+|toRecipients|[recipient](../resources/recipient.md) collection|The recipients to whom the threaded is forwarded to.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -36,7 +40,7 @@ Here is an example of the request.
   "name": "post_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>/forward
+POST https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>/microsoft.graph.forward
 Content-type: application/json
 Content-length: 166
 
@@ -54,7 +58,7 @@ Content-length: 166
 ```
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

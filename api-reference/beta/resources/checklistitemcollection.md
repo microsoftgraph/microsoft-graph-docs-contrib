@@ -13,7 +13,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.checklistitemcollection"
+  "@odata.type": "microsoft.graph.checklistItemCollection"
 }-->
 
 ```json

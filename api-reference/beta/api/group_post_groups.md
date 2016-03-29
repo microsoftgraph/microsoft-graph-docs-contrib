@@ -1,17 +1,19 @@
 # Create group
 
 Use this API to create a new group as specified in the request body. You can create one of 3 types of groups:
-- Office 365 group (aka unified group)
-- Dynamic group
-- Security group
+* Office 365 group (aka unified group)
+* Dynamic group
+* Security group
 
+At a minimum, you must specify the properties required for the type of group you're creating. This includes:
 
-To create an Office 365 or dynamic group, set the **groupTypes** property as "Unified" and "DynamicMembership" respectively. To create a security-enabled group, 
-do not set the **groupTypes** property and set the **securityEnabled** property to **true**. For more information, see the properties of the 
-[group](../resources/group.md) resource.
+| Type of group | **groupTypes** property | **securityEnabled** property |
+|:--------------|:------------------------|:-----------------------------|
+| Office 365 | "Unified" | false |
+| Dynamic | "DynamicMembership" | false |
+| Security | Do not set. | true |
 
-At a minimum, you must specify the required properties for the group. You can optionally specify any other writable properties as appropriate, such as **mailEnabled** for
-mail-enabled groups. 
+Specify other writable properties as necessary, such as **mailEnabled** for mail-enabled groups. For more information, see the properties of the [group](../resources/group.md) resource.
 ### Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
 ### HTTP request
@@ -34,7 +36,7 @@ The following table shows the properties that are required when you create a gro
 | displayName | string | The name to display in the address book for the group. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. |
 | mailNickname | string | The mail alias for the group. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups. Do not set this property if creating an Office 365 group. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups. Set to **false** if creating an Office 365 group. |
 
 ### Response
 If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
@@ -57,9 +59,9 @@ Content-length: 244
   "groupTypes": [
     "groupTypes-value"
   ],
-  "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "mailNickname-value",
+  "securityEnabled": false
 }
 ```
 In the request body, supply a JSON representation of [group](../resources/group.md) object.
@@ -83,7 +85,8 @@ Content-length: 244
   ],
   "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "mailNickname-value",
+  "securityEnabled": false
 }
 ```
 

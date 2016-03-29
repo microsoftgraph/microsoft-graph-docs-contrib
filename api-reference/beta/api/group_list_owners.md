@@ -1,18 +1,15 @@
 # List owners
 
-Retrieve a list of directoryobject objects.
+Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/owners
-GET /users/<id | userPrincipalName>/joinedGroups/<id>/owners
-GET /drive/root/createdByUser/joinedGroups/<id>/owners
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -37,10 +34,11 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryobject",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 55
 

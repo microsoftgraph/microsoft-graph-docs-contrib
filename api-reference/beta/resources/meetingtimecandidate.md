@@ -12,7 +12,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.meetingtimecandidate"
+  "@odata.type": "microsoft.graph.meetingTimeCandidate"
 }-->
 
 ```json
@@ -22,19 +22,21 @@ Here is a JSON representation of the resource
   "locations": [{"@odata.type": "microsoft.graph.location"}],
   "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "organizerAvailability": "String",
-  "score": 1024
+  "score": 1024,
+  "suggestionHint": "String"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[AttendeeAvailability](attendeeavailability.md) collection|An array that shows the availability status of each attendee for this meeting suggestion.|
+|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) collection|An array that shows the availability status of each attendee for this meeting suggestion.|
 |confidence|Double|A percentage that represents the likelhood of all the attendees attending.|
-|locations|[Location](location.md) collection|An array that specifies the name and geographic location of each meeting location for this meeting suggestion.|
-|meetingTimeSlot|[TimeSlot](timeslot.md)|A time period suggested for the meeting.|
+|locations|[location](location.md) collection|An array that specifies the name and geographic location of each meeting location for this meeting suggestion.|
+|meetingTimeSlot|[timeSlot](timeslot.md)|A time period suggested for the meeting.|
 |organizerAvailability|String| Availability of the meeting organizer for this meeting suggestion. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |score|Int32|The numerical order of this meeting suggestion, among those that have the same level of confidence.|
+|suggestionHint|String|Reason for suggesting the meeting time.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

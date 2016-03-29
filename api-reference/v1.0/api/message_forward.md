@@ -25,7 +25,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
-|toRecipients|[Recipient](..\resources\recipient.md) collection|The list of recipients.|
+|toRecipients|[Recipient](../resources/recipient.md) collection|The list of recipients.|
 
 ### Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.

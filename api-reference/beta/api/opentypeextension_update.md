@@ -7,7 +7,8 @@ extension is updated.
 - Otherwise that property and its data are added to the extension. 
 
 The extension can be in a message, event, or contact in the signed-in user's mailbox on Office 365 or
-Outlook.com. 
+Outlook.com. Or, it can be an event or post for an Office 365 group. Data in an extension can be primitive types, 
+or arrays of primitive types.
 
 
 ### Prerequisites
@@ -18,19 +19,26 @@ creating the extension in:
 - _Mail.ReadWrite_
 - _Calendars.ReadWrite_
 - _Contacts.ReadWrite_
+- _Group.ReadWrite.All_
  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 
 ```http
 PATCH /me/messages/<id>/extensions/<extensionId>
-PATCH /users/<id>/messages/<id>/extensions/<extensionId>
+PATCH /users/<id|userPrincipalName>/messages/<id>/extensions/<extensionId>
+PATCH /me/mailFolders/<id>/messages/<id>/extensions/<extensionId>
 
 PATCH /me/events/<id>/extensions/<extensionId>
-PATCH /users/<id>/events/<id>/extensions/<extensionId>
+PATCH /users/<id|userPrincipalName>/events/<id>/extensions/<extensionId>
 
 PATCH /me/contacts/<id>/extensions/<extensionId>
-PATCH /users/<id>/contacts/<id>/extensions/<extensionId>
+PATCH /users/<id|userPrincipalName>/contacts/<id>/extensions/<extensionId>
+
+PATCH /groups/<id>/events/<id>/extensions/<extensionId>
+
+PATCH /groups/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
+PATCH /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
 ```
 
 
@@ -51,7 +59,8 @@ PATCH /users/<id>/contacts/<id>/extensions/<extensionId>
 ### Request body
 
 Provide a JSON body of an [openTypeExtension](../resources/openTypeExtension.md) object, with the 
-following required name-value pairs, and any custom data to change or add to that extension:
+following required name-value pairs, and any custom data to change or add to that extension. 
+The data in the JSON payload can be primitive types, or arrays of primitive types.
 
 | Name       | Value |
 |:---------------|:----------|
@@ -61,17 +70,16 @@ following required name-value pairs, and any custom data to change or add to tha
 
 ### Response
 
-If successful, this method returns a `200 Ok` response code and the updated
+If successful, this method returns a `200 OK` response code and the updated
 [openTypeExtension](../resources/openTypeExtension.md) object.
 
 
 ### Example
-##### Request
+#### Request 1
 
-<a name="originalExample"></a>
+The first example shows how to update an extension in a message. The extension is initially represented by the following JSON payload:
 
-Each of the following 2 examples updates an extension represented by the following JSON payload:
-
+<!-- { "blockType": "ignored" } -->
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
@@ -85,24 +93,27 @@ Each of the following 2 examples updates an extension represented by the followi
     "expirationDate": "2015-12-03T10:00:00Z"
 }
 ```
- 
-The first example references the extension by its name:
 
+You can reference the extension by its name:
+
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
 ```
 
-The second example references the extension by its fully qualified name:
+Or you can reference the extension by its fully qualified name:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
-You can use either example request and the following request body to update the [original extension](#originalExample) by:
+You can use either example request and the following request body to update the above extension by:
 - Changing `companyName` from `Wingtip Toys` to `Wingtip Toys (USA)`
 - Changing `dealValue` from `500050` to `500100`
 - Adding new data as the custom property `updated`
 
+<!-- { "blockType": "ignored" } -->
 ```http
 {
     "@odata.type": "Microsoft.Graph.OpenTypeExtension",
@@ -114,20 +125,12 @@ You can use either example request and the following request body to update the 
 } 
 ```
 
-****
 
+#### Response 1
 
+Here is the response which is the same regardless of the way used to reference the extension.
 
-##### Response
-
-Here is the response for either the first or second example request.
-
-<!-- {  
-  "blockType": "response",  
-  "truncated": true,  
-  "@odata.type": "microsoft.graph.opentypeextension"  
-} --> 
-
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -146,7 +149,85 @@ Content-type: application/json
 }
 ```
 
+****
 
+#### Request 2
+
+The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, 
+with an `expirationDate` value of `2015-07-03T13:04:00Z`:
+
+<!-- { "blockType": "ignored" } -->
+```http
+{
+    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
+    "extensionName": "Com.Contoso.Estimate",
+    "companyName": "Contoso",
+    "expirationDate": "2015-07-03T13:04:00Z",
+    "DealValue": 1010100,
+    "Strings@odata.type": "#Collection(String)",
+    "topPicks": [
+        "Employees only",
+        "Add spouse or guest",
+        "Add family"
+    ]
+}
+```
+
+The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:
+
+<!-- {
+  "blockType": "request",
+  "name": "update_opentypeextension"
+}-->
+```http
+PATCH https://graph.microsoft-ppe.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate')
+Content-type: application/json
+
+{
+   "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+   "extensionName": "Com.Contoso.Estimate",
+   "companyName": "Contoso",
+   "expirationDate": "2016-07-30T11:00:00.000Z",
+   "DealValue": 1010100,
+   "topPicks": [
+       "Employees only",
+       "Add spouse or guest",
+       "Add family"
+    ]
+}
+```
+
+#### Response 2
+
+Here is the response of the second example which shows the updated `expirationDate` in the extension.
+
+<!-- {  
+  "blockType": "response",  
+  "truncated": true,  
+  "@odata.type": "microsoft.graph.opentypeextension"  
+} --> 
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft-ppe.com/testExchangeBeta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
+    "extensionName": "Com.Contoso.Estimate",
+    "companyName": "Contoso",
+    "expirationDate": "2016-07-30T11:00:00Z",
+    "DealValue": 1010100,
+    "Strings@odata.type": "#Collection(String)",
+    "topPicks": [
+        "Employees only",
+        "Add spouse or guest",
+        "Add family"
+    ]
+}
+```
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

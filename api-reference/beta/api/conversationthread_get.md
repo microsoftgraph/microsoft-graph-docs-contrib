@@ -1,22 +1,24 @@
 # Get conversationThread
 
-Retrieve the properties and relationships of conversationthread object.
+Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, 
+you can specify the thread without referencing the parent conversation. 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Group.ReadWrite.All; Group.Read.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/threads/<id>
 GET /groups/<id>/conversations/<id>/threads/<id>
-GET /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>
+
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -37,9 +39,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread"
+  "@odata.type": "microsoft.graph.conversationThread"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 419
 

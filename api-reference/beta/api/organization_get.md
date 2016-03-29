@@ -1,16 +1,16 @@
 # Get organization
 
-Retrieve the properties and relationships of organization object.
+Retrieve the properties and relationships of currently authenticated organization.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /organization
+
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -31,77 +31,33 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/organization
 ```
 ##### Response
-Here is an example of the response.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.organization"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1647
+Content-length: 411
 
 {
   "assignedPlans": [
     {
-      "assignedTimestamp": "datetime-value",
+      "assignedDateTime": "datetime-value",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "servicePlanId-value"
     }
   ],
+  "businessPhones": [
+    "businessPhones-value"
+  ],
   "city": "city-value",
-  "companyLastDirSyncTime": "datetime-value",
   "country": "country-value",
   "countryLetterCode": "countryLetterCode-value",
-  "dirSyncEnabled": true,
-  "displayName": "displayName-value",
-  "marketingNotificationEmails": [
-    "marketingNotificationEmails-value"
-  ],
-  "postalCode": "postalCode-value",
-  "preferredLanguage": "preferredLanguage-value",
-  "provisionedPlans": [
-    {
-      "capabilityStatus": "capabilityStatus-value",
-      "provisioningStatus": "provisioningStatus-value",
-      "service": "service-value"
-    }
-  ],
-  "provisioningErrors": [
-    {
-      "errorDetail": "errorDetail-value",
-      "resolved": true,
-      "service": "service-value",
-      "timestamp": "datetime-value"
-    }
-  ],
-  "securityComplianceNotificationMails": [
-    "securityComplianceNotificationMails-value"
-  ],
-  "securityComplianceNotificationPhones": [
-    "securityComplianceNotificationPhones-value"
-  ],
-  "state": "state-value",
-  "street": "street-value",
-  "technicalNotificationMails": [
-    "technicalNotificationMails-value"
-  ],
-  "telephoneNumber": "telephoneNumber-value",
-  "verifiedDomains": [
-    {
-      "capabilities": "capabilities-value",
-      "default": true,
-      "id": "id-value",
-      "initial": true,
-      "name": "name-value",
-      "type": "type-value"
-    }
-  ],
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  "displayName": "displayName-value"
 }
 ```
 
