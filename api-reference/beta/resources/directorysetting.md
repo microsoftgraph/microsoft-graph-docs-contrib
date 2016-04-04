@@ -1,13 +1,25 @@
 # directorySetting resource type
 
+Directory settings can be created based on the available [directorySettingTemplates](directorySettingTemplate.md), and changed from their preset defaults. These settings can govern entity or feature behaviors, both at a tenant-wide level or at a specific entity level. When the same setting is defined at both the tenant-wide and specific entity level, the specific entity level setting may opt-out from the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be members of groups, but a specific group setting may opt-out and not allow guests as members of the group. Currently system defined settings are only govern Office groups behavior.
+
+
+### Methods
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Create setting](../api/directorysetting_get.md) | [directorySetting](directorysetting.md) |Create a directorySetting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template.|
+|[Get setting](../api/directorysetting_get.md) | [directorySetting](directorysetting.md) |Read properties of a specific directorySetting object.|
+|[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all directorySetting objects.|
+|[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a directorySetting object. |
+|[Delete setting](../api/directorysetting_delete.md) | None |Delete a directorySetting object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|string||
-|id|string| Read-only.|
-|templateId|string||
-|values|settingValue collection||
+|displayName|string|Display name of this group of settings, which comes from the associated template. Read-only.|
+|id|string| Unique identifier for these settings. Read-only.|
+|templateSettingId|string| Unique identifier for the template used to create this group of settings. Read-only.|
+|values|[settingValue](settingvalue.md) collection| Collection of name value pairs. Must contain and set all the settings defined in the template.|
 
 ### Relationships
 None
@@ -29,7 +41,7 @@ Here is a JSON representation of the resource.
 {
   "displayName": "string",
   "id": "string (identifier)",
-  "templateId": "string",
+  "templateSettingId": "string",
   "values": [{"@odata.type": "microsoft.graph.settingValue"}]
 }
 
