@@ -7,9 +7,9 @@ Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/notes/pages/<id>
-PATCH /users/<id | userPrincipalName>/notes/pages/<id>
-PATCH /groups/<id>/notes/pages/<id>
+PATCH /me/notes/pages/<id>/content
+PATCH /users/<id | userPrincipalName>/notes/pages/<id>/content
+PATCH /groups/<id>/notes/pages/<id>/content
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "update_page"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/notes/pages/<id>
+PATCH https://graph.microsoft.com/beta/me/notes/pages/<id>/content
 Content-type: application/json
 Content-length: 312
 
