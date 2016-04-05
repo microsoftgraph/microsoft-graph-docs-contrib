@@ -53,7 +53,6 @@ The following tables list the Microsoft Graph API permission scopes and explains
 | _Contacts.ReadWrite_ |    `Have full access to user contacts`  | Allows the app to create, read, update, and delete user contacts. |
 | _Files.Read_ |    `Read user files and files shared with user` | Allows the app to read the signed-in user's files and files shared with the user.| 
 | _Files.ReadWrite_ |   `Have full access to user files and files shared with user` | Allows the app to read, create, update and delete the signed-in user's files and files shared with the user. |
-| _Files.ReadWrite.AppFolder_ |   `Have full access to the application’s folder` | Allows the app to read, create, update and delete files in the application’s folder.|
 | _Files.ReadWrite.Selected_ |    `Read and write files that the user selects` | Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. |
 | _Files.Read.Selected_ |    `Read files that the user selects`  | Allows the app to read files that the user selects. The app has access for several hours after the user selects a file. |
 | _Sites.Read.All_ |    `Read items in all site collections` | Allows the application to read documents and list  items in all site collections on behalf of the signed-in user. |
