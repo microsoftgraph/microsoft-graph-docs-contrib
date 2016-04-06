@@ -7,7 +7,7 @@ Directory settings can be created based on the available [directorySettingTempla
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create setting](../api/directorysetting_get.md) | [directorySetting](directorysetting.md) |Create a directorySetting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template.|
+|[Create setting](../api/directorysetting_post_settings.md) | [directorySetting](directorysetting.md) |Create a directorySetting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template.|
 |[Get setting](../api/directorysetting_get.md) | [directorySetting](directorysetting.md) |Read properties of a specific directorySetting object.|
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all directorySetting objects.|
 |[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a directorySetting object. |
