@@ -14,6 +14,8 @@ Thank you for your interest in Microsoft Graph documentation!
 You can contribute to [Microsoft Graph documentation](http://graph.microsoft.io) in these ways:
 
 * Contribute to articles via the [public Office developer docs repo](https://github.com/OfficeDev/microsoft-graph-docs)
+	* Send separate pull requests into /beta and/or /v1.0 branches. This step is required to ensure that version branches are update to date with the latest changes. 
+	* In addition, send separate pull requests to /master branch. This step is to ensure the Microsoft Grph website documentation site gets updated with the latest changes. 
 * Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/microsoft-graph-docs/issues)
 * Add documentation requests to the [Office Developer Platform UserVoice](http://officespdev.uservoice.com)
 
