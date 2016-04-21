@@ -16,11 +16,7 @@ POST /workbook/worksheets(<id|name>)/protection/unprotect
 
 
 ### Request body
-In the request body, provide a JSON object with the following parameters.
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|password|string|Optional. sheet protection password.|
+None
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -35,12 +31,6 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)/protection/unprotect
-Content-type: application/json
-Content-length: 34
-
-{
-  "password": "password-value"
-}
 ```
 
 ##### Response
