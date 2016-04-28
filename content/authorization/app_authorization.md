@@ -149,10 +149,6 @@ The `scope` property value should match the permissions granted for the app duri
 The access token remains valid within the specified time interval (`3599` in the above example) seconds (or 1 hour) 
 from the time of issuance, as specified in the `expires_in` property. The result also contains a refresh token (`refresh_token`) that must be used to renew an expiring or expired access token. 
 
-<!-- The refresh token expires in 14 days (`1209600` seconds) 
-as specified by the `refresh_token_expires_in` property value. -->
-
-
 In any production code, your app needs to watch for the expiration of these tokens and renew the expiring access token before the refresh token expires. 
 
 
@@ -208,8 +204,8 @@ The successful response returns the payload of an JSON string similar to the fol
  
 Other than the missing `id_token` property, this response body has the identical syntax and semantics as that of 
 the initial token-acquiring response. The life times of the newly returned `access_token` and `refresh_token` values 
-are extended. The new expiration times are the number of seconds, specified in the `expires_in` and `refresh_token_expires_in` 
-values, respectively, from the time when the token-refreshing request was submitted successfully. 
+are extended. The new expiration time for the access token is the number of seconds, specified in the `expires_in` 
+value, from the time when the token-refreshing request was submitted successfully. 
  
 When the refresh token expires, you cannot renew any expired access token using the just-described POST request. 
 Instead, you must restart the [app authorization and authentication](#msg_get_app_authorized) process.
