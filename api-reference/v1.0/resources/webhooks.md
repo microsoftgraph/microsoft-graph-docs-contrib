@@ -16,7 +16,7 @@ Apps should renew their subscriptions before they expire. They can also unsubscr
 See the following code samples on GitHub.
 
 * [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET -Webhooks)
+* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 
 Let's take a look at the subscription process.
 
@@ -122,7 +122,7 @@ The notification object has the following properties:
 * clientState - The clientState property specified in the subscription request.
 * changeType - The event type that caused the notification. For example, *created* on mail receive, or *updated* on marking a message read.
 * resource - The URI of the resource relative to `https://graph.microsoft.com`. 
-* resourceData - The object dependent on the resource being subscribed to.
+* resourceData - The object dependent on the resource being subscribed to.  For example, for Outlook resources:
   * @odata.type - The OData entity type in Microsoft Graph that describes the represented object.
   * @odata.id - The OData identifier of the object.
   * @odata.etag - The HTTP entity tag that represents a version of the object.
@@ -161,6 +161,7 @@ After your application starts receiving notifications it must process them. The 
 
 1. Validate the `clientState` property. The clientState property in the notification must match the one submitted with the subscription request.
   > Note: If this isn't true, you shouldn't consider this a valid notification. You should also investigate where the notification comes from and take appropriate action.
+
 2. Update your application based on your business logic.
 3. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry resending the notification a number of times.
   > You should send a `202 - Accepted` status code even if the clientState property doesn't match the one submitted with the subscription request.
