@@ -8,22 +8,22 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/events/<id>/microsoft.graph.snoozeReminder
-POST /users/<id | userPrincipalName>/events/<id>/microsoft.graph.snoozeReminder
-POST /groups/<id>/events/<id>/microsoft.graph.snoozeReminder
+POST /me/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/events/<id>/snoozeReminder
+POST /groups/<id>/events/<id>/snoozeReminder
 
-POST /me/calendar/events/<id>/microsoft.graph.snoozeReminder
-POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.snoozeReminder
-POST /groups/<id>/calendar/events/<id>/microsoft.graph.snoozeReminder
+POST /me/calendar/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/calendar/events/<id>/snoozeReminder
+POST /groups/<id>/calendar/events/<id>/snoozeReminder
 
-POST /me/calendars/<id>/events/<id>/microsoft.graph.snoozeReminder
-POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.snoozeReminder
+POST /me/calendars/<id>/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/snoozeReminder
 
-POST /me/calendargroup/calendars/<id>/events/<id>/microsoft.graph.snoozeReminder
-POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/microsoft.graph.snoozeReminder
+POST /me/calendargroup/calendars/<id>/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/snoozeReminder
 
-POST /me/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.snoozeReminder
-POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.snoozeReminder
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/snoozeReminder
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "event_snoozereminder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/<id>/microsoft.graph.snoozeReminder
+POST https://graph.microsoft.com/beta/me/events/<id>/snoozeReminder
 Content-type: application/json
 Content-length: 97
 

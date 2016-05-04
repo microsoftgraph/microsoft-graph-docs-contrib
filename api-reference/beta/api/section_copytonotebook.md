@@ -8,9 +8,9 @@ Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/sections/<id>/Microsoft.Graph.copyToNotebook
-POST /users/<id | userPrincipalName>/notes/sections/<id>/Microsoft.Graph.copyToNotebook
-POST /groups/<id>/notes/sections/<id>/Microsoft.Graph.copyToNotebook
+POST /me/notes/sections/<id>/copyToNotebook
+POST /users/<id | userPrincipalName>/notes/sections/<id>/copyToNotebook
+POST /groups/<id>/notes/sections/<id>/copyToNotebook
 ```
 ### Request headers
 | Name       | Type | Description|

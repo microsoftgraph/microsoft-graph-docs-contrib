@@ -74,7 +74,7 @@ HTTP/1.1 201 Created
 ### Subscription validation
 In order to to avoid mistaken subscriptions directing notifications to arbitrary URLs, the subscription notification endpoint must be capable of responding to a validation request. During processing of the `POST` to the `/subscriptions` endpoint, the Microsoft Graph will send a `POST` request back to your `notificationUrl` in the following form: 
 ```http
-POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationtoken=<token>
+POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationToken=<token>
 ```
 The notification endpoint must send a 200 response with the value of `<token>` as its body and a content type of `text/plain`, as shown below, within 10 seconds otherwise the creation request will be discarded.
 ```http
@@ -95,7 +95,7 @@ Depending on the subscribed resource, an additional resourceData field may provi
    "value":[
       {
          "subscriptionId":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-         "subscriptionExpirationDateTime":"\"2015-11-20T18:23:45.9356913Z\"",
+         "subscriptionExpirationDateTime":"2015-11-20T18:23:45.9356913Z",
          "clientState":"subscription-identifier",
          "changeType":"Created",
          "resource":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",

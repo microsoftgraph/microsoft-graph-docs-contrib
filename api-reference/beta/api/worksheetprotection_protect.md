@@ -21,7 +21,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |options|WorksheetProtectionOptions|Optional. sheet protection options.|
-
+|password|string|Optional. sheet protection password.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -52,7 +52,8 @@ Content-length: 383
     "allowSort": true,
     "allowAutoFilter": true,
     "allowPivotTables": true
-  }
+  },
+  "password": "password-value"
 }
 ```
 

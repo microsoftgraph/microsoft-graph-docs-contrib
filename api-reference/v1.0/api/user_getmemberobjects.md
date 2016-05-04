@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/microsoft.graph.getMemberObjects
+POST /users/<id | userPrincipalName>/getMemberObjects
 ```
 ### Request headers
 | Header       | Value |
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "user_getmemberobjects"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/microsoft.graph.getMemberObjects
+POST https://graph.microsoft.com/v1.0/me/getMemberObjects
 Content-type: application/json
 Content-length: 33
 

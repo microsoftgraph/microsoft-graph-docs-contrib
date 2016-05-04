@@ -8,9 +8,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/manager/Microsoft.Graph.checkMemberGroups
-POST /directoryObjects/<id>/Microsoft.Graph.checkMemberGroups
-POST /contacts/<id>/manager/Microsoft.Graph.checkMemberGroups
+POST /users/<id | userPrincipalName>/manager/checkMemberGroups
+POST /directoryObjects/<id>/checkMemberGroups
+POST /contacts/<id>/manager/checkMemberGroups
 ```
 ### Request headers
 | Name       | Type | Description|

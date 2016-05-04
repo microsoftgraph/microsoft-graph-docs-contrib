@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/threads/<id>/posts/<id>/microsoft.graph.forward
-POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/microsoft.graph.forward
+POST /groups/<id>/threads/<id>/posts/<id>/forward
+POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/forward
 
 ```
 ### Request headers
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "post_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>/microsoft.graph.forward
+POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>/forward
 Content-type: application/json
 Content-length: 166
 

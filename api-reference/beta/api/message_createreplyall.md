@@ -18,10 +18,10 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/microsoft.graph.createReplyAll
-POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.createReplyAll
-POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.createReplyAll
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.createReplyAll
+POST /me/messages/<id>/createReplyAll
+POST /users/<id | userPrincipalName>/messages/<id>/createReplyAll
+POST /me/mailFolders/<id>/messages/<id>/createReplyAll
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/createReplyAll
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -49,7 +49,7 @@ Here is an example of the request.
   "name": "message_createreplyall"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaKAAA=/microsoft.graph.createReplyAll
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaKAAA=/createReplyAll
 Content-Type: application/json
 
 {

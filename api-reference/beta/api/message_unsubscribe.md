@@ -1,20 +1,20 @@
-# group: subscribeByMail
+# message: unsubscribe
 
-Calling this method will enable the current user to receive email notifications for this group, 
-about new posts, events, and files in that group. Supported for only Office 365 groups.
 
 ### Prerequisites
-One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
-*Group.ReadWrite.All*
+The following **scopes** are required to execute this API:  _Mail.Send_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/subscribeByMail
+POST /users/<id | userPrincipalName>/messages/<id>/unsubscribe
+POST /drive/root/createdByUser/messages/<id>/unsubscribe
+POST /drive/root/lastModifiedByUser/messages/<id>/unsubscribe
+
 ```
 ### Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
 
@@ -27,10 +27,10 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "group_subscribebymail"
+  "name": "message_unsubscribe"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/subscribeByMail
+POST https://graph.microsoft.com/beta/me/messages/<id>/unsubscribe
 ```
 
 ##### Response
@@ -47,7 +47,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "group: subscribeByMail",
+  "description": "message: unsubscribe",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

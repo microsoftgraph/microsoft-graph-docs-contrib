@@ -54,7 +54,7 @@ Here is an example of the request searching the signed in user's OneDrive
   "name": "item_search"
 }-->
 ```http
-GET /me/drive/root/microsoft.graph.search(q='{search-query}')
+GET /me/drive/root/search(q='{search-query}')
 ```
 
 ##### Response
@@ -90,7 +90,7 @@ Content-type: application/json
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!456" }
       }
     ],
-    "@odata.nextLink": "https://graph.microsoft.com/beta/drive/root/microsoft.graph.search(query='vacation')&skipToken=1asdlnjnkj1nalkm!asd"
+    "@odata.nextLink": "https://graph.microsoft.com/beta/drive/root/search(query='vacation')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
 

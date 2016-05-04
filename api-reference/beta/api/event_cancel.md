@@ -17,22 +17,22 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/events/<id>/microsoft.graph.cancel
-POST /users/<id | userPrincipalName>/events/<id>/microsoft.graph.cancel
-POST /groups/<id>/events/<id>/microsoft.graph.cancel
+POST /me/events/<id>/cancel
+POST /users/<id | userPrincipalName>/events/<id>/cancel
+POST /groups/<id>/events/<id>/cancel
 
-POST /me/calendar/events/<id>/microsoft.graph.cancel
-POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.cancel
-POST /groups/<id>/calendar/events/<id>/microsoft.graph.cancel
+POST /me/calendar/events/<id>/cancel
+POST /users/<id | userPrincipalName>/calendar/events/<id>/cancel
+POST /groups/<id>/calendar/events/<id>/cancel
 
-POST /me/calendars/<id>/events/<id>/microsoft.graph.cancel
-POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.cancel
+POST /me/calendars/<id>/events/<id>/cancel
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/cancel
 
-POST /me/calendargroup/calendars/<id>/events/<id>/microsoft.graph.cancel
-POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/microsoft.graph.cancel
+POST /me/calendargroup/calendars/<id>/events/<id>/cancel
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/cancel
 
-POST /me/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.cancel
-POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.cancel
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/cancel
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/cancel
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -59,7 +59,7 @@ Here is an example of the request.
   "name": "event_cancel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/<id>/microsoft.graph.cancel
+POST https://graph.microsoft.com/beta/me/events/<id>/cancel
 Content-type: application/json
 
 {

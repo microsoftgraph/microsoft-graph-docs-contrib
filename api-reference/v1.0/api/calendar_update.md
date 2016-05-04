@@ -1,10 +1,6 @@
 # Update calendar
 
-<<<<<<< HEAD
-Update the properties of a Calendar object.
-=======
-Update the properties of a calendar object.
->>>>>>> refs/remotes/origin/master
+Update the properties of calendar object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.ReadWrite*
@@ -32,11 +28,11 @@ PATCH /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
 ### Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer\<token>\. Required.  |
+| Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
 ### Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -44,7 +40,7 @@ In the request body, supply the values for relevant fields that should be update
 |name|String|The calendar name.|
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [Calendar](../resources/calendar.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -64,11 +60,7 @@ Content-length: 48
 }
 ```
 ##### Response
-Here is an example of the response. 
-
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
