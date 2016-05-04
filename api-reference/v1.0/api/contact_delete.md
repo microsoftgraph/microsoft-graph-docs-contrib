@@ -1,12 +1,12 @@
 # Delete contact
 
-Delete contact.
+Delete a contact.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
-A [contact](../resources/contact.md) from user's default [contactFolder](../resources/contactfolder.md).
+A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).
 ```http
 DELETE /me/contacts/<id>
 DELETE /users/<id | userPrincipalName>/contacts/<id>
@@ -16,7 +16,7 @@ A [contact](../resources/contact.md) from a user's top level [contactFolder](../
 DELETE /me/contactFolders/<id>/contacts/<id>
 DELETE /users/<id | userPrincipalName>/contactFolders/<id>/contacts/<id>
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
 DELETE /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>

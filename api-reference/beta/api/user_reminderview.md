@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/microsoft.graph.reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /users/<id | userPrincipalName>/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 
 ### Function Parameters
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/microsoft.graph.reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET https://graph.microsoft.com/beta/me/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 
 ##### Response

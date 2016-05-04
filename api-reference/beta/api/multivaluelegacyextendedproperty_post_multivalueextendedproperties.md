@@ -64,10 +64,10 @@ POST /users/<id|userPrincipalName>/contactFolders
 
 POST /groups/<id>/events
 
-POST /groups/<id>/threads/<id>/posts/<id>/microsoft.graph.reply
-POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/microsoft.graph.reply
-POST /groups/<id>/threads/<id>/microsoft.graph.reply
-POST /groups/<id>/conversations/<id>/threads/<id>/microsoft.graph.reply
+POST /groups/<id>/threads/<id>/posts/<id>/reply
+POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/reply
+POST /groups/<id>/threads/<id>/reply
+POST /groups/<id>/conversations/<id>/threads/<id>/reply
 POST /groups/<id>/threads
 POST /groups/<id>/conversations
 ```

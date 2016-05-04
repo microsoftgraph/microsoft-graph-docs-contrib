@@ -8,22 +8,22 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/events/<id>/microsoft.graph.accept
-POST /users/<id | userPrincipalName>/events/<id>/microsoft.graph.accept
-POST /groups/<id>/events/<id>/microsoft.graph.accept
+POST /me/events/<id>/accept
+POST /users/<id | userPrincipalName>/events/<id>/accept
+POST /groups/<id>/events/<id>/accept
 
-POST /me/calendar/events/<id>/microsoft.graph.accept
-POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.accept
-POST /groups/<id>/calendar/events/<id>/microsoft.graph.accept
+POST /me/calendar/events/<id>/accept
+POST /users/<id | userPrincipalName>/calendar/events/<id>/accept
+POST /groups/<id>/calendar/events/<id>/accept
 
-POST /me/calendars/<id>/events/<id>/microsoft.graph.accept
-POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.accept
+POST /me/calendars/<id>/events/<id>/accept
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/accept
 
-POST /me/calendargroup/calendars/<id>/events/<id>/microsoft.graph.accept
-POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/microsoft.graph.accept
+POST /me/calendargroup/calendars/<id>/events/<id>/accept
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/accept
 
-POST /me/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.accept
-POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.accept
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/accept
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/accept
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -51,7 +51,7 @@ Here is an example of the request.
   "name": "event_accept"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/<id>/microsoft.graph.accept
+POST https://graph.microsoft.com/v1.0/me/events/<id>/accept
 Content-type: application/json
 Content-length: 56
 

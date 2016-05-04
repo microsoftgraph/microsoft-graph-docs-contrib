@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/<id>/Microsoft.Graph.getMemberGroups
+POST /servicePrincipals/<id>/getMemberGroups
 
 ```
 ### Request headers

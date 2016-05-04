@@ -17,9 +17,9 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/items/{item-id}/microsoft.graph.createLink
-POST /me/drive/root:/{item-path}:/microsoft.graph.createLink
-POST /groups/<id>/drive/items/<item-id>/microsoft.graph.createLink
+POST /me/drive/items/{item-id}/createLink
+POST /me/drive/root:/{item-path}:/createLink
+POST /groups/<id>/drive/items/<item-id>/createLink
 ```
 
 ### Request headers
@@ -80,7 +80,7 @@ Here is an example of the request.
   "name": "item_createlink"
 }-->
 ```http
-POST /drive/root:/{item-path}:/microsoft.graph.createLink
+POST /drive/root:/{item-path}:/createLink
 Content-type: application/json
 
 {

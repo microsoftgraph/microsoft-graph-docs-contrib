@@ -8,10 +8,10 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/microsoft.graph.copy
-POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.copy
-POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.copy
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.copy
+POST /me/messages/<id>/copy
+POST /users/<id | userPrincipalName>/messages/<id>/copy
+POST /me/mailFolders/<id>/messages/<id>/copy
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/copy
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "message_copy"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.copy
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/copy
 Content-type: application/json
 Content-length: 44
 

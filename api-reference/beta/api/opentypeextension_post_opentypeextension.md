@@ -41,10 +41,10 @@ POST /users/<id|userPrincipalName>/contacts
 
 POST /groups/<id>/events
 
-POST /groups/<id>/threads/<id>/posts/<id>/microsoft.graph.reply
-POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/microsoft.graph.reply
-POST /groups/<id>/threads/<id>/microsoft.graph.reply
-POST /groups/<id>/conversations/<id>/threads/<id>/microsoft.graph.reply
+POST /groups/<id>/threads/<id>/posts/<id>/reply
+POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/reply
+POST /groups/<id>/threads/<id>/reply
+POST /groups/<id>/conversations/<id>/threads/<id>/reply
 POST /groups/<id>/threads
 POST /groups/<id>/conversations
 ```
@@ -368,7 +368,7 @@ the **body** of the new post, and the following data for the new extension:
   "name": "post_opentypeextension_4"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/microsoft.graph.reply 
+POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/reply 
 
 {
   "post": {

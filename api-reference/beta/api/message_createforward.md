@@ -15,10 +15,10 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/microsoft.graph.createForward
-POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.createForward
-POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.createForward
+POST /me/messages/<id>/createForward
+POST /users/<id | userPrincipalName>/messages/<id>/createForward
+POST /me/mailFolders/<id>/messages/<id>/createForward
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/createForward
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -47,7 +47,7 @@ Here is an example of the request.
   "name": "message_createforward"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/microsoft.graph.createForward
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/createForward
 Content-Type: application/json
 
 {

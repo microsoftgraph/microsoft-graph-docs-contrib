@@ -9,8 +9,8 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/microsoft.graph.send
-POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.send
+POST /me/messages/<id>/send
+POST /users/<id | userPrincipalName>/messages/<id>/send
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "message_send"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.send
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/send
 ```
 
 ##### Response

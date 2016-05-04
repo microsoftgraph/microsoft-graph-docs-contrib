@@ -8,22 +8,22 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/events/<id>/microsoft.graph.decline
-POST /users/<id | userPrincipalName>/events/<id>/microsoft.graph.decline
-POST /groups/<id>/events/<id>/microsoft.graph.decline
+POST /me/events/<id>/decline
+POST /users/<id | userPrincipalName>/events/<id>/decline
+POST /groups/<id>/events/<id>/decline
 
-POST /me/calendar/events/<id>/microsoft.graph.decline
-POST /users/<id | userPrincipalName>/calendar/events/<id>/microsoft.graph.decline
-POST /groups/<id>/calendar/events/<id>/microsoft.graph.decline
+POST /me/calendar/events/<id>/decline
+POST /users/<id | userPrincipalName>/calendar/events/<id>/decline
+POST /groups/<id>/calendar/events/<id>/decline
 
-POST /me/calendars/<id>/events/<id>/microsoft.graph.decline
-POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/microsoft.graph.decline
+POST /me/calendars/<id>/events/<id>/decline
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/decline
 
-POST /me/calendargroup/calendars/<id>/events/<id>/microsoft.graph.decline
-POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/microsoft.graph.decline
+POST /me/calendargroup/calendars/<id>/events/<id>/decline
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/decline
 
-POST /me/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.decline
-POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/microsoft.graph.decline
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/decline
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/decline
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -51,7 +51,7 @@ Here is an example of the request.
   "name": "event_decline"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/<id>/microsoft.graph.decline
+POST https://graph.microsoft.com/beta/me/events/<id>/decline
 Content-type: application/json
 Content-length: 56
 

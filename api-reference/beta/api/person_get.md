@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of a person object.
 ### Prerequisites
-The following **scopes** are required to execute this API: *People.Read*; *People.ReadWrite*
+The following **scopes** are required to execute this API: *People.Read*; *User.ReadBasic.All*
  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -24,7 +24,6 @@ GET /users/<id>/people/<id>
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 Do not supply a request body for this method.
@@ -32,7 +31,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [person](../resources/person.md) object in the response body.
 ### Examples
 #### Browse
-The following request gets the people most relevant to the user, based on communication, collaboration, and business relationships. By default, each response returns 10 records, but you can change this using the *$top* parameter.
+The following request gets the people most relevant to the user, based on communication, collaboration, and business relationships. By default, each response returns 10 records, but you can change this using the *$top* parameter. This request requires the *People.Read* scope.
+
 <!-- {
   "blockType": "request",
   "name": "get_person"
@@ -115,6 +115,7 @@ GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddress
 ```
 
 #### Search people
+Search requests require the *People.Read* scope.
 
 ##### Using search to select people
 
@@ -139,9 +140,9 @@ The following request does a search for a person named "Hermaini Hall." Because 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 ```
-#### Relevant people
+#### Related people
 
-The following request gets the people most relevant to another person in the user's organization. In this example, Nestor Kellum's relevant people are displayed.
+The following request gets the people most relevant to another person in the user's organization. This request requires the *User.ReadBasic.All* scope. In this example, Nestor Kellum's relevant people are displayed.
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
