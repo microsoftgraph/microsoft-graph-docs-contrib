@@ -5,9 +5,10 @@ is currently a limit of 4MB on the total size of each REST request, this limits 
 you can add to under 4MB.
 ### Prerequisites
 One of the following **scopes** is required to execute this API for:
-* Profile photo of signed-in **user** - *User.ReadWrite.All; User.ReadWrite*
-* Profile photo of a **group** - *Group.ReadWrite.All*
-* Photo of a **contact** - *Contacts.ReadWrite*
+
+- Profile photo of signed-in **user** - *User.ReadWrite*
+- Profile photo of a **group** - *Group.ReadWrite.All*
+- Photo of a **contact** - *Contacts.ReadWrite*
 ### HTTP request to update the photo
 <!-- { "blockType": "ignored" } -->
 ```http
