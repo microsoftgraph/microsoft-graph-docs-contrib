@@ -94,10 +94,13 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md) and [ItemAttachment](itemattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
+|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md), and [referenceAttachment](referenceAttachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
-|extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the event. Read-only. Nullable.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
+
 
 ### Methods
 

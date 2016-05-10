@@ -63,9 +63,12 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|extensions|[Extension](extension.md) collection| Read-only. Nullable.|
-|inReplyTo|[Post](post.md)| Read-only.|
+|attachments|[Attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceAttachment.md) attachments for the post. Read-only. Nullable.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the post. Read-only. Nullable.|
+|inReplyTo|[Post](post.md)|The earlier post that this post is replying to in the [conversationThread](conversationthread.md). Read-only.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the post. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the post. Read-only. Nullable.|
+
 
 ### Methods
 
