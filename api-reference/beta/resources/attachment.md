@@ -1,4 +1,4 @@
-chart# attachment resource type
+# attachment resource type
 
 A file, item (contact, event or message), or link to a file, which is attached to an [event](../resources/event.md),
 [message](../resources/message.md), or [post](../resources/post.md). The  
