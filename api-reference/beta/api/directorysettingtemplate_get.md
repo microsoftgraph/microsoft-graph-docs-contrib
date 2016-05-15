@@ -1,6 +1,6 @@
 # Get a directory setting template
 
-A directory setting template represents a template of directory settings from which directory settings may be created within a tenant. This operation allows retrieval of the properties of the directorySettingTemplate object.
+A directory setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
 ### Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ### HTTP request
