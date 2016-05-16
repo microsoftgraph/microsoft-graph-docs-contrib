@@ -2,7 +2,7 @@
 
 Delete a subscription.
 ### Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read* or *Groups.Read.All* 
+One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read* or *Group.Read.All* 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
