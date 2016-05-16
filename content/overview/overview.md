@@ -19,7 +19,7 @@ And all this using a single authentication token.
 
 You can use the API to access fixed entities like users, groups, mail, messages, calendars, tasks, and notes coming from services like Outlook, OneDrive, Azure Active Directory, Planner, OneNote and others. You can also obtain calculated relationships powered by the Office Graph (only for commercial users) like the list of users you are working with or the documents trending around you.
 
-Microsoft Graph exposes two endpoints. A generally available endpoint /v1.0 and a preview endpoint /beta.  You can use /v1.0 in your production applications but not /beta.  The preview endpoint /beta is where we offer the latest features for developer to experiment and provide feedback, APIs in beta are not ready for production use and we might change at any point in time.
+Microsoft Graph exposes two endpoints. A generally available endpoint /v1.0 and a preview endpoint /beta.  You can use /v1.0 in your production applications but not /beta.  The preview endpoint /beta is where we offer the latest features for developer to experiment and provide feedback, APIs in beta might change at any point and are not ready for production use.
 
 <!--<a name="msg_queries"> </a>-->
 
