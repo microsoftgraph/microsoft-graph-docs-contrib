@@ -1,27 +1,26 @@
 # List overrides
 
-Retrieve a list of inferenceclassificationoverride objects.
+Get the overrides that a user has set up to always classify messages from certain senders in specific ways.
+
+Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Mail.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/inferenceClassification/overrides
-GET /drive/root/createdByUser/inferenceClassification/overrides
-GET /drive/root/lastModifiedByUser/inferenceClassification/overrides
+GET /me/inferenceClassification/overrides
+GET /users/<id>/inferenceClassification/overrides
 ```
-### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name       | Type | Description|
-|:-----------|:------|:----------|
+|:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [InferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -37,24 +36,30 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.inferenceclassificationoverride",
+  "@odata.type": "microsoft.graph.inferenceClassificationOverride",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 190
 
 {
   "value": [
     {
-      "classifyAs": {
-      },
+      "classifyAs": "focused",
       "senderEmailAddress": {
-        "name": "name-value",
-        "address": "address-value"
+        "name": "Fanny Downs",
+        "address": "fannyd@adatum.onmicrosoft.com"
       },
-      "id": "id-value"
+      "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
+    },
+    {
+      "classifyAs": "other",
+      "senderEmailAddress": {
+        "name": "Randi Welch",
+        "address": "randiw@adatum.onmicrosoft.com"
+      },
+      "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
     }
   ]
 }
