@@ -43,7 +43,7 @@ The following example changes the override for the SMTP address randiw@adatum.on
   "name": "update_inferenceclassificationoverride"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/inferenceClassification/overrides/<id>
+PATCH https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/<id>
 Content-type: application/json
 
 {

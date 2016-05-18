@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "create_inferenceclassificationoverride_from_inferenceclassification"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/inferenceClassification/overrides
+POST https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 Content-type: application/json
 
 {
