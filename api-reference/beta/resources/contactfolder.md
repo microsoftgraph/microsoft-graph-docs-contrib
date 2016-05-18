@@ -26,6 +26,7 @@ A folder that contains contacts.
 |displayName|String|The folder's display name.|
 |id|String|Unique identifier of the contact folder. Read-only.|
 |parentFolderId|String|The ID of the folder's parent folder.|
+|wellKnownName|string|The name of the folder if the folder is a recognized folder. Currently `contacts` is the only recognized contacts folder.|
 
 ### Relationships
 | Relationship | Type	|Description|
@@ -54,7 +55,8 @@ Here is a JSON representation of the resource
 {
   "displayName": "string",
   "id": "string (identifier)",
-  "parentFolderId": "string"
+  "parentFolderId": "string",
+  "wellKnownName": "string"
 }
 
 ```

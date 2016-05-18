@@ -49,6 +49,7 @@ Content-length: 145
     {
       "parentFolderId": "parentFolderId-value",
       "displayName": "displayName-value",
+      "wellKnownName": "wellKnownName-value",
       "id": "id-value"
     }
   ]
