@@ -22,6 +22,8 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 
 ### Properties
@@ -62,7 +64,7 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
 |event|[Event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
-
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 
 
 ### JSON representation

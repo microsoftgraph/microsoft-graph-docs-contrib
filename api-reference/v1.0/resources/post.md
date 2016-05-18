@@ -17,6 +17,8 @@ A new post is created when you:
 |[Forward](../api/post_forward.md)|None|Forward a post to a recipient.|
 |[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get a list of Attachment objects attached to a post.|
 |[Create Attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Add an attachment to a post. |
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 ### Properties
 | Property	   | Type	|Description|
@@ -39,6 +41,7 @@ A new post is created when you:
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 |inReplyTo|[post](post.md)| Read-only.|
 
 

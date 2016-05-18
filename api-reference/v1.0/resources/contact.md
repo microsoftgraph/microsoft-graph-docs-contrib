@@ -10,6 +10,8 @@ A contact is an item in Outlook where you can organize and save information abou
 |[Create](../api/user_post_contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
 |[Update](../api/contact_update.md) | [contact](contact.md) |Update contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete contact object. |
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 
 ### Properties
@@ -57,8 +59,8 @@ A contact is an item in Outlook where you can organize and save information abou
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|extensions|[extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
-
 
 
 ### JSON representation
