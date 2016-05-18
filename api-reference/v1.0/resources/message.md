@@ -20,6 +20,8 @@ A message in a mailFolder.
 |[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 
 ### Properties
@@ -73,6 +75,7 @@ When a message is being composed, in most cases, the From and Sender properties 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection|The [fileAttachment](fileattachment.md) and [itemAttachment](itemattachment.md) attachments for the message.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 
 
 ### JSON representation

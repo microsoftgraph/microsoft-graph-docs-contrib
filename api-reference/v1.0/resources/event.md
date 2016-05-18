@@ -19,6 +19,8 @@ An event in a calendar.
 |[List instances](../api/event_list_instances.md) |[event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
 |[List attachments](../api/event_list_attachments.md) |[attachment](attachment.md) collection| Get a Attachment object collection.|
 |[Create Attachment](../api/event_post_attachments.md) |[attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 
 
@@ -63,7 +65,9 @@ An event in a calendar.
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileAttachment.md) and [itemAttachment](itemAttachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 |instances|[event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
+
 
 ### JSON representation
 
