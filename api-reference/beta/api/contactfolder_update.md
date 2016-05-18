@@ -23,6 +23,8 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |displayName|String|The folder's display name.|
 |parentFolderId|String|The ID of the folder's parent folder.|
+|wellKnownName|string|The name of the folder if the folder is a recognized folder. Currently `contacts` is the only recognized contacts folder.|
+
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [contactFolder](../resources/contactfolder.md) object in the response body.
@@ -58,6 +60,7 @@ Content-length: 104
 {
   "parentFolderId": "parentFolderId-value",
   "displayName": "displayName-value",
+  "wellKnownName": "wellKnownName-value",
   "id": "id-value"
 }
 ```

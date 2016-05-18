@@ -46,7 +46,8 @@ Content-length: 104
 {
   "displayName": "Finance",
   "id": "AAMkAGI2TKI5AAA=",
-  "parentFolderId": "AAMkAGI2AAEOAAA="
+  "parentFolderId": "AAMkAGI2AAEOAAA=",
+  "wellKnownName": null
 }
 ```
 

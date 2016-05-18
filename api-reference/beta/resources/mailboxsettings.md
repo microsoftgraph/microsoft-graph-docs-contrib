@@ -1,13 +1,13 @@
 # mailboxSettings resource type
 
-Settings for the primary mailbox of the signed-in user. They include settings for sending automatic replies to incoming messages.
+Settings for the primary mailbox of the signed-in user.
 
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the 
-signed-in user.|
+|automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
+|timeZone|string|The default time zone for the user's mailbox.|
 
 ### JSON representation
 
@@ -23,7 +23,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"}
+  "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
+  "timeZone": "string"
 }
 
 ```
