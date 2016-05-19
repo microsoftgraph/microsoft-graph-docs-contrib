@@ -271,5 +271,5 @@ The [MSGraphAPIController.java](https://github.com/microsoftgraph/android-java-c
 ## Next steps
 The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API.
 
-We've published many Android samples for Office 365. Each of these samples build on the concepts we introduce in the Connect sample. If you want to do more with your Android apps, see [more of our Android samples for Office 365](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) in the Office GitHub organization.
+We've published many Android samples for Office 365. Each of these samples build on the concepts we introduce in the Connect sample. If you want to do more with your Android apps, see [more of our Android samples for Office 365](http://aka.ms/androidgraphsamples) in the Office GitHub organization.
  
