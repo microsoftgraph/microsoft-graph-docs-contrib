@@ -1,6 +1,6 @@
 # Call Microsoft Graph in an ASP.NET MVC app
 
-In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. This topic won't create an app from scratch. We use code from [Office 365 ASP.NET MVC Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-AspNetMVC-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. This topic won't create an app from scratch. We use code from [Office 365 ASP.NET MVC Connect sample using Microsoft Graph](https://github.com/microsoftgraph/aspnet-connect-rest-sample) to explain the main concepts that you have to implement in your app.
 
 The following is a screenshot of the send mail page.
 
@@ -25,7 +25,7 @@ With just a few clicks, you can register your application to access a user's wor
 See [Register your brower-based web app with the Azure Management Portal](https://msdn.microsoft.com/office/office365/HowTo/add-common-consent-manually#bk_RegisterWebApp) for alternative instructions, and keep in mind the following details.
 
 * Make sure to specify http://localhost:55065/ as the **Sign-on URL**.
-* After you register the application, [configure the **Delegated permissions**](https://github.com/OfficeDev/O365-AspNetMVC-Unified-API-Connect/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your Angular app requires. The Connect sample requires the **Send mail as signed-in user** permission.
+* After you register the application, [configure the **Delegated permissions**](https://github.com/microsoftgraph/aspnet-connect-rest-sample/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your Angular app requires. The Connect sample requires the **Send mail as signed-in user** permission.
 
 Take note of the following values in the **Configure** page of your Azure application because you need these values to configure in your app.
 
@@ -325,6 +325,6 @@ The **Logout** method (see HomeController.cs file) shows how this is done.
 
 ##Next steps
 The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with the Microsoft Graph API.
-Explore our other ASP.NET samples on [GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-asp).
+Explore our other ASP.NET samples on [GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=asp).
 
 
