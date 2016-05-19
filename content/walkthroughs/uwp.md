@@ -1,6 +1,6 @@
 # Call Microsoft Graph in a universal Windows 10 app
 
-In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [O365-UWP-Microsoft-Graph-Connect](https://github.com/OfficeDev/O365-UWP-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [Office 365 Connect Sample for UWP Using Microsoft Graph](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample) to explain the main concepts that you have to implement in your app.
 
 ## Sample user interface
 
@@ -31,7 +31,7 @@ Windows 10 provides each application with a unique URI and ensures that messages
 
 That method is triggered in the sample by the **copy redirect URI** button, but you can also follow the pattern in the [AzureAD-NativeClient-UWP-WAM](https://github.com/Azure-Samples/AzureAD-NativeClient-UWP-WAM) sample, where the string is defined in the MainPage class declaration and you can fetch it by using the Visual Studio debugger. 
 
-Follow the steps in the [Register and configure the app](https://github.com/OfficeDev/O365-UWP-Unified-API-Connect#register) of the sample's Readme in order to register your app after you've gotten the redirect URI value.
+Follow the steps in the [Register and configure the app](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample#register) of the sample's Readme in order to register your app after you've gotten the redirect URI value.
 
 You'll need the client ID value from the **Configure** page of your Azure application when you configure your app for authentication.
 
