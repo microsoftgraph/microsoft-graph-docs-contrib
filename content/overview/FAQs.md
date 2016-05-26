@@ -1,10 +1,6 @@
 
 # Microsoft Graph Frequently Asked Questions (FAQs)
 
-|![](./images/GitHub-Mark-64px.png) | **Contribute to this content.** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).|
-|---|:---|
-
-
 ## What platforms are supported by Microsoft Graph API?
 <!--
 Apps can use the Microsoft Graph API to perform create, read, update, and delete (CRUD) operations on data sources and entities, giving them seamless access to work data. 
