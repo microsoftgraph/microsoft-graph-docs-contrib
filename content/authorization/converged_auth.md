@@ -1,4 +1,4 @@
-﻿# Authenticate Microsoft Graph endpoints using the v2 authentication  endpoint
+﻿# Authenticate Microsoft Graph endpoints using the v2 authentication endpoint
 
 
 <!--
@@ -10,9 +10,9 @@ There are features and functionality of the converged authentication model that 
 
 By using the v2 authentication endpoint, you can create apps that accept both work and school (Azure AD) as well as personal (Microsoft account) identities.
 
-In the past, an app developer who wanted to support both Microsoft accounts and Azure Active Directory was required to integrate with two completely separate systems. Now you can build apps using the v2 authentication endpoint, which allows you to sign users in with both types of accounts. One simple process allows you to immediately reach an audience that spans millions of users with both personal and work/school accounts.   
+In the past, an app developer who wanted to support both Microsoft accounts and Azure Active Directory were required to integrate with two completely separate systems. Using the v2 authentication endpoint, developers can now support both types of accounts with a single integration. One simple process to immediately reach an audience that spans millions of users with both personal and work/school accounts.   
 
-Now, your apps can use the v2 authentication endpoint to access Microsoft Graph endpoints that are available for both work or school or personal accounts, such as:
+Once integrated with the v2 authentication endpoint, your apps can instantly access the Microsoft Graph endpoints available for both personal and work/school accounts such as: 
 
 | Data              | Endpoint                                       |
 |:------------------|:-----------------------------------------------|
@@ -22,12 +22,11 @@ Now, your apps can use the v2 authentication endpoint to access Microsoft Graph 
 | Outlook calendars | `https://graph.microsoft.com/v1.0/me/events`   |
 | OneDrive          | `https://graph.microsoft.com/v1.0/me/drive`    |
 
-As well as endpoints available on the Microsoft Graph for work or school accounts only, such as groups and tasks.
-
+*Note that some Microsoft Graph endpoints such as groups and tasks are not applicable to personal accounts*  
 
 ## Microsoft Graph API authentication scopes
 
-The v2 authentication endpoint supports all permission scopes listed for use with Azure AD authentication in the [Microsoft Graph permission scopes](/permission_scopes.md) topic. However, the v2 authentication endpoint does not currently support app-only scopes.
+The v2 authentication endpoint supports all permission scopes listed for use with Azure AD authentication in the [Microsoft Graph permission scopes](permission_scopes.md) topic. However, the v2 authentication endpoint does not currently support app-only scopes.
 
 **Note**: Currently, you are required to pass the resource url of 'https://graph.microsoft.com' as prefix for the scope string. For example, to use the `Files.Read` scope you would specify the scope as `https://graph.microsoft.com/Files.Read`.
 
