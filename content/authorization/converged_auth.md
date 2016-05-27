@@ -10,9 +10,9 @@ There are features and functionality of the converged authentication model that 
 
 By using the v2 authentication endpoint, you can create apps that accept both work and school (Azure AD) as well as personal (Microsoft account) identities.
 
-In the past, an app developer who wanted to support both Microsoft accounts and Azure Active Directory were required to integrate with two completely separate systems. Using the v2 authentication endpoint, developers can now support both types of accounts with a single integration. One simple process to immediately reach an audience that spans millions of users with both personal and work/school accounts.   
+In the past, if you wanted to develop an app to support both Microsoft accounts and Azure Active Directory, you had to integrate with two completely separate systems. Using the v2 authentication endpoint, you can now support both types of accounts with a single integration. One simple process to immediately reach an audience that spans millions of users with both personal and work/school accounts.   
 
-Once integrated with the v2 authentication endpoint, your apps can instantly access the Microsoft Graph endpoints available for both personal and work/school accounts such as: 
+After you integrate your apps with the v2 authentication endpoint, they can instantly access the Microsoft Graph endpoints available for both personal and work/school accounts, such as: 
 
 | Data              | Endpoint                                       |
 |:------------------|:-----------------------------------------------|
@@ -22,13 +22,13 @@ Once integrated with the v2 authentication endpoint, your apps can instantly acc
 | Outlook calendars | `https://graph.microsoft.com/v1.0/me/events`   |
 | OneDrive          | `https://graph.microsoft.com/v1.0/me/drive`    |
 
-*Note that some Microsoft Graph endpoints such as groups and tasks are not applicable to personal accounts*  
+ >**Note:** Some Microsoft Graph endpoints such as groups and tasks are not applicable to personal accounts.  
 
 ## Microsoft Graph API authentication scopes
 
 The v2 authentication endpoint supports all permission scopes listed for use with Azure AD authentication in the [Microsoft Graph permission scopes](permission_scopes.md) topic. However, the v2 authentication endpoint does not currently support app-only scopes.
 
-**Note**: Currently, you are required to pass the resource url of 'https://graph.microsoft.com' as prefix for the scope string. For example, to use the `Files.Read` scope you would specify the scope as `https://graph.microsoft.com/Files.Read`.
+>**Note:** Currently, you are required to pass the resource URL 'https://graph.microsoft.com' as the prefix for the scope string. For example, to use the `Files.Read` scope, specify the scope as `https://graph.microsoft.com/Files.Read`.
 
 For more information about using scopes with the v2 authentication endpoint, and how it differs from using resources in Azure AD, see [Scopes, not resources](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-compare/#scopes-not-resources).
 
@@ -66,4 +66,4 @@ The table below lists the authentication scopes to use with the converged authen
 
 [Limitations and restrictions in the v2 authentication model](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
-More [v2 authentication endpoint documentation](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=app+model+v2.0) on [azure.microsoft.com](https://azure.microsoft.com)
+[Microsoft Azure v2 authentication endpoint documentation](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=app+model+v2.0)
