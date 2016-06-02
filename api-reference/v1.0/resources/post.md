@@ -1,5 +1,5 @@
 # post resource type
-Represents an individual Post item within a [converstaionThread](conversationthread.md) entity.
+Represents an individual Post item within a [conversationThread](conversationthread.md) entity.
 
 A new post is created when you:
 - [Reply to an existing post](../api/post_reply.md) 
