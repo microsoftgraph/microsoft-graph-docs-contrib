@@ -7,6 +7,7 @@
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[Create application](../api/application_post_extensionproperties.md) |[application](application.md)| Create a new application.|
 |[Create device](../api/device_post_devices.md) |[device](device.md)| Create a new device by posting to the devices collection.|
 |[List device](../api/device_list.md) | [device](device.md) collection |Get device object collection. |
 |[Activate directoryRole](../api/directoryrole_post_directoryroles.md) | [directoryRole](directoryrole.md) |Activate a directory role. |
