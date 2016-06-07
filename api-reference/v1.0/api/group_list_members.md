@@ -3,7 +3,7 @@
 Get a list of the group's direct members. A group can have users, contacts, and other groups as members.
 This operation is not transitive.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All* or *Directory.Read.All* or *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.AccessAsUser.All*, *User.ReadBasic.All*, or *User.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

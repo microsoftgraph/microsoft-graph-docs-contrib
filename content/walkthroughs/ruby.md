@@ -1,6 +1,6 @@
 # Call Microsoft Graph in a Ruby app 
 
-In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph API. We use code from the [Office 365 Ruby Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Ruby-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph API. We use code from the [Office 365 Ruby Connect sample using Microsoft Graph](https://github.com/microsoftgraph/ruby-connect-rest-sample) to explain the main concepts that you have to implement in your app.
 
 ![Office 365 Ruby Connect sample screenshot](./images/web-screenshot.png)
 
@@ -22,8 +22,8 @@ With just a few clicks, you can register your application to access a user's wor
 
 Alternatively, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions on how to manually register the app, keep in mind the following details:
 
-* Specify a route in your Ruby app as the **Sign-on URL** in step 6. In the case of the Connect sample, this is [`/auth/azureactivedirectory/callback`](https://github.com/OfficeDev/O365-Ruby-Unified-API-Connect/blob/master/app/controllers/pages_controller.rb#L38).
-* [Configure the **Delegated permissions**](https://github.com/OfficeDev/O365-Ruby-Unified-API-Connect/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
+* Specify a route in your Ruby app as the **Sign-on URL** in step 6. In the case of the Connect sample, this is [`/auth/azureactivedirectory/callback`](https://github.com/microsoftgraph/ruby-connect-rest-sample/blob/master/app/controllers/pages_controller.rb#L41).
+* [Configure the **Delegated permissions**](https://github.com/microsoftgraph/ruby-connect-rest-sample/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
 
 Take note of the following values in the **Configure** page of your Azure application.
 
@@ -38,12 +38,12 @@ You need these values as parameters in the OAuth flow in your app.
 
 Your app needs to redirect the browser to the sign-in page to get an authorization code and continue the OAuth flow.
 
-In the Connect sample, redirection is handled by the OmniAuth library. Our app just delegates execution to the [`/auth/azureactivedirectory`](https://github.com/OfficeDev/O365-Ruby-Unified-API-Connect/blob/master/app/controllers/pages_controller.rb#L30) route managed by OmniAuth.
+In the Connect sample, redirection is handled by the OmniAuth library. Our app just delegates execution to the [`/auth/azureactivedirectory`](https://github.com/microsoftgraph/ruby-connect-rest-sample/blob/master/app/controllers/pages_controller.rb#L30) route managed by OmniAuth.
 
 <!--<a name="authcode"/>-->
 ## Receive an authorization code in your reply URL page
 
-After the user signs-in, the flow returns the browser to the reply URL in your app. Azure appends an authorization code to the query string. The Connect sample uses the [`/auth/azureactivedirectory/callback`](https://github.com/OfficeDev/O365-Ruby-Unified-API-Connect/blob/master/app/controllers/pages_controller.rb#L38) route for this purpose.
+After the user signs-in, the flow returns the browser to the reply URL in your app. Azure appends an authorization code to the query string. The Connect sample uses the [`/auth/azureactivedirectory/callback`](https://github.com/microsoftgraph/ruby-connect-rest-sample/blob/master/app/controllers/pages_controller.rb#L38) route for this purpose.
 
 The authorization code is provided in the `code` query string variable. The Connect sample saves the code to a local variable to use it later.
 
@@ -59,7 +59,7 @@ Once you have the authorization code, you can use it along the client ID, key, a
 > **Note:** <br />
 > The request must also specify a resource that we are trying to consume. In the case of Microsoft Graph, the resource value is `https://graph.microsoft.com`.
 
-Again, the Connect sample delegates this task to the OmniAuth library. The [`acquire_access_token`](https://github.com/OfficeDev/O365-Ruby-Unified-API-Connect/blob/master/app/controllers/pages_controller.rb#L62) function calls the library and passes the authentication code saved in the previous section along with the reply URL, client ID, client secret and resource ID.
+Again, the Connect sample delegates this task to the OmniAuth library. The [`acquire_access_token`](https://github.com/microsoftgraph/ruby-connect-rest-sample/blob/master/app/controllers/pages_controller.rb#L65) function calls the library and passes the authentication code saved in the previous section along with the reply URL, client ID, client secret and resource ID.
 
 ```ruby
 def acquire_access_token(auth_code, reply_url)
@@ -79,7 +79,7 @@ end
 
 With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must provide the access token in the **Authorization** header of each request.
 
-The Connect sample sends an email using the **sendMail** endpoint in the Microsoft Graph API. The code is in the [`send_mail`](https://github.com/OfficeDev/O365-Ruby-Unified-API-Connect/blob/master/app/controllers/pages_controller.rb#L82) function. This is the code that shows how to send the access code in the Authorization header.
+The Connect sample sends an email using the **sendMail** endpoint in the Microsoft Graph API. The code is in the [`send_mail`](https://github.com/microsoftgraph/ruby-connect-rest-sample/blob/master/app/controllers/pages_controller.rb#L82) function. This is the code that shows how to send the access code in the Authorization header.
 
 ```ruby
 def send_mail
@@ -143,6 +143,6 @@ The Microsoft Graph API is a very powerful, unifiying API that can be used to in
 
 <!--## Additional resources
 
--  [Office 365 Ruby Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Ruby-Unified-API-Connect)
+-  [Office 365 Ruby Connect sample using Microsoft Graph](https://github.com/microsoftgraph/ruby-connect-rest-sample)
 -  [Office Dev Center](http://dev.office.com) 
--  [Microsoft Graph API reference](https://msdn.microsoft.com/office/office365/howto/office-365-unified-api-reference)-->
+-  [Microsoft Graph API reference](http://graph.microsoft.io/en-us/docs)-->

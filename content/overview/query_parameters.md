@@ -14,6 +14,19 @@ Microsoft Graph provides several optional query parameters that you can use to s
 |$count|none|A collection and the number of items in the collection.|
 
 
+**Encoding query parameters**
+
+- If you are trying out query parameters in the [Microsoft Graph Explorer](https://graphexplorer2.azurewebsites.net/), you can just copy and paste the examples below without applying 
+any URL-encoding to the query string. The following example works fine _in the Graph Explorer_ without encoding the space and quote characters:
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
+``` 
+- In general, when specifying query parameters _in your app_, make sure you appropriately encode characters that are [reserved for special meanings in an URI](https://tools.ietf.org/html/rfc3986#section-2.2).
+For example, encode the space and quote characters in the last example, as shown below:
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address%20eq%20%27jon@contoso.com%27
+```
+
 ### $select
 To specify a subset of properties to return, use the **$select** query option. For example, when retrieving your messages, you might want to select that only the **from** and **subject** properties of messages are returned.
 
@@ -50,23 +63,24 @@ in the response will only have those property values included.
 
 ### $expand
 
-In Microsoft Graph API requests, children collections of referenced items are not automatically expanded. This is by design because it reduces network traffic and the time it takes to generate a response from the service. However, in some cases you might want to include those results
-in a response.
+In Microsoft Graph API requests, navigations to an object or collection of the referenced item are not automatically expanded. This is by design because it reduces network traffic and 
+the time it takes to generate a response from the service. However, in some cases you might want to include those results in a response.
 
-You can use the **$expand** query string parameter to instruct the API to expand a children collection and include those results.
+You can use the **$expand** query string parameter to instruct the API to expand a child object or collection and include those results.
 
-For example, to retrieve the root drive information and the top level items in a drive, you use the **$expand** parameter. This example also uses a **$select** statement to only return the _id_ and _name_ properties of the children items.
+For example, to retrieve the root drive information and the top level children items in a drive, you use the **$expand** parameter. This example also uses a **$select** statement to only 
+return the _id_ and _name_ properties of the children items.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
-The request returns the collection items, with the children collection expanded.
+>  **Note**: The maximum number of expanded objects for a request is 20. 
 
->  **Note**: The maximum number of returned objects for a request is 20.
+> Also, if you query on the [user](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource, you can use **$expand** to get the properties of only one child object 
+or collection at a time. 
 
-> Also, if you query on the [user](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource, you can use **$expand** to get the properties of one children collection 
-at a time. The following example gets up to 20 **user** objects, each with the **directReports** children collection expanded:
+The following example gets **user** objects, each with up to 20 **directReport** objects in the **directReports** collection expanded:
 ```http
 GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 ```

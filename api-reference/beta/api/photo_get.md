@@ -2,14 +2,14 @@
 
 Retrieve the properties and relationships of photo object.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 
   * Files.Read
- 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id>/photo
+GET /users/<id | userPrincipalName>/photo
 GET /groups/<id>/photo
 GET /drive/root/createdByUser/photo
 ```
@@ -33,14 +33,14 @@ Here is an example of the request.
   "name": "get_photo"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users/<id>/photo
+GET https://graph.microsoft.com/beta/users/<id|userPrincipalName>/photo
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.photo"
+  "@odata.type": "microsoft.graph.profilePhoto"
 } -->
 ```http
 HTTP/1.1 200 OK

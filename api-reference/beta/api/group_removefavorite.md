@@ -1,17 +1,17 @@
 # group: removeFavorite
-Remove the group from the list of the current user's favorite groups.
+Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Group.ReadWrite.All*
+One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/microsoft.graph.removeFavorite
+POST /groups/<id>/removeFavorite
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 Do not supply a request body for this method.
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "group_removefavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/microsoft.graph.removeFavorite
+POST https://graph.microsoft.com/beta/groups/<id>/removeFavorite
 ```
 
 ##### Response

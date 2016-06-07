@@ -2,12 +2,13 @@
 
 Create a new thread in the specified conversation. 
 
-A thread and post are created in the group. Use [reply thread](conversationthread_reply.md) to further post 
-to that thread. 
+A thread and post are created as specified. Use [reply thread](conversationthread_reply.md) to further post 
+to that thread. Or, if you get the post ID, you can also [reply](post_reply.md) to that post in that thread.
 
-Alternatively, if you get the post ID, you can also [reply](post_reply.md) to that post in that thread.
+Note: You can also [start a new conversation by first creating a thread](group_post_threads.md).
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +37,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/<id>/conversations/<id>/threads
 Content-type: application/json
-Content-length: 419
 
 {
   "topic": "topic-value",
@@ -56,10 +56,16 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread"
+  "@odata.type": "microsoft.graph.conversationThread"
 } -->
 ```http
 HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 346
+
+{
+  "id": "thread-id-value"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

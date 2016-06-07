@@ -1,22 +1,26 @@
 # List events
 
-Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.
+Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
+instance meetings and series masters.
+
+To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
+[get the instances of an event](event_list_instances.md).
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.Read; Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/events
 GET /users/<id | userPrincipalName>/events
-GET /drive/root/createdByUser/events
-GET /drive/root/lastModifiedByUser/events
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Accept  | application/json|
 
 ### Request body
 Do not supply a request body for this method.
@@ -41,6 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 354
 
@@ -50,8 +55,7 @@ Content-length: 354
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": {
-        },
+        "response": "",
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",

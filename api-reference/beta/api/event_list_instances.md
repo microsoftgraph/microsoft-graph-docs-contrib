@@ -1,22 +1,46 @@
 # List instances
 
-Retrieve a list of event objects.
+Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the 
+occurrences and exceptions of the event in the specified time range.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/events/<id>/instances
-GET /groups/<id>/events/<id>/instances
-GET /users/<id | userPrincipalName>/calendarView/<id>/instances
-```
-### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+GET /me/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /groups/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 
+GET /me/calendar/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/calendar/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /groups/<id>/calendar/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+
+GET /me/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+
+GET /me/calendargroup/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+
+GET /me/calendargroups/<id>/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
+```
+### Query parameters
+
+In the request URL, provide the following required query parameters with values.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
+|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
+
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
 ### Request body
 Do not supply a request body for this method.
@@ -41,6 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 354
 
@@ -50,8 +75,7 @@ Content-length: 354
       "originalStartTimeZone": "originalStartTimeZone-value",
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
-        "response": {
-        },
+        "response": "",
         "time": "datetime-value"
       },
       "iCalUId": "iCalUId-value",

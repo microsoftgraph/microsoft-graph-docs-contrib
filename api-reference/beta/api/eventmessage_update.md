@@ -2,13 +2,16 @@
 
 Update the properties of eventmessage object.
 ### Prerequisites
-The following **scopes** are required to execute this API: _Mail.ReadWrite_ 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/messages/<id>
 PATCH /users/<id | userPrincipalName>/messages/<id>
-PATCH /drive/root/createdByUser/messages/<id>
-PATCH /drive/root/lastModifiedByUser/messages/<id>
+
+PATCH /me/mailFolders/<id>/messages/<id>
+PATCH /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -20,19 +23,11 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient|Updatable only if IsDraft = true|
-|categories|String||
-|ccRecipients|Recipient|Updatable only if IsDraft = true|
-|from|Recipient|Updatable only if IsDraft = true|
-|importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|isRead|Boolean||
-|replyTo|Recipient|Updatable only if IsDraft = true|
-|sender|Recipient|Updatable only if IsDraft = true|
-|toRecipients|Recipient|Updatable only if IsDraft = true|
-|body|ItemBody|Updatable only if IsDraft = true|
-|isDeliveryReceiptRequested|Boolean||
-|isReadReceiptRequested|Boolean||
-|subject|String|Updatable only if IsDraft = true|
+|categories|String|The categories associated with the message.|
+|importance|String|The importance of the message. Possible values are: `Low`, `Normal`, `High`.|
+|isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
+|isRead|Boolean|Indicates whether the message has been read.|
+|isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [eventMessage](../resources/eventmessage.md) object in the response body.
@@ -44,18 +39,12 @@ Here is an example of the request.
   "name": "update_eventmessage"
 }-->
 ```http
-
-PATCH https://graph.microsoft.com/api/me/messages/<id>
+PATCH https://graph.microsoft.com/beta/me/messages/<id>
 Content-type: application/json
 Content-length: 248
 
 {
-  "subject": "subject-value",
-  "body": {
-    "contentType": {
-    },
-    "content": "content-value"
-  }
+  "isRead": "true",
 }
 ```
 ##### Response
@@ -66,6 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.eventmessage"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 248
 
@@ -75,11 +65,11 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
-  "bodyPreview": "bodyPreview-value"
+  "bodyPreview": "bodyPreview-value",
+  "meetingMessageType": "meetingMessageType-value"
 }
 ```
 

@@ -1,15 +1,18 @@
 # Delete calendarGroup
 
-Delete calendarGroup.
+Delete a calendar group other than the default calendar group.
+
+**Note** Outlook.com supports only the default calendar group which is accessible by the /me/calendars shortcut. You cannot 
+delete any calendar group in Outlook.com.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/calendarGroups/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroups/<id>
-DELETE /drive/root/createdByUser/calendarGroups/<id>
-DELETE /drive/root/lastModifiedByUser/calendarGroups/<id>
-
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -34,7 +37,7 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/beta/me/calendarGroups/<id>
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true

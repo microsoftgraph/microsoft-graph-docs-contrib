@@ -2,17 +2,18 @@
 
 Retrieve the properties and relationships of message object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.Read*  
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/messages/<id>
 GET /users/<id | userPrincipalName>/messages/<id>
-GET /drive/root/createdByUser/messages/<id>
-GET /drive/root/lastModifiedByUser/messages/<id>
+GET /me/mailFolders/<id>/messages/<id>
+GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -40,6 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 248
 
@@ -49,8 +51,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"

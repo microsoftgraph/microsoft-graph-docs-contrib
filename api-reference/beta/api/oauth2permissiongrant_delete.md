@@ -1,14 +1,14 @@
-# Delete oAuth2PermissionGrant
+# Delete oAuth2Permissiongrant
 
-Delete oAuth2PermissionGrant.
+Delete oAuth2Permissiongrant.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /oauth2PermissionGrants/<id>
-DELETE /users/<id | userPrincipalName>/oauth2PermissionGrants/<id>
-DELETE /drive/root/createdByUser/oauth2PermissionGrants/<id>
+DELETE /oAuth2Permissiongrants/<id>
+DELETE /users/<id | userPrincipalName>/oAuth2Permissiongrants/<id>
+DELETE /drive/root/createdByUser/oAuth2Permissiongrants/<id>
 
 ```
 ### Request headers
@@ -28,10 +28,10 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_oauth2permissiongrant"
+  "name": "delete_oAuth2Permissiongrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/<id>
+DELETE https://graph.microsoft.com/beta/oAuth2Permissiongrants/<id>
 ```
 ##### Response
 Here is an example of the response. 
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete oAuth2PermissionGrant",
+  "description": "Delete oAuth2Permissiongrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

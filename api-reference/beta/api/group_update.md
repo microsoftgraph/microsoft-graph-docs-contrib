@@ -1,14 +1,13 @@
 # Update group
 
-Update the properties of group object.
+Update the properties of a group object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scope** is required to execute this API: *Group.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/<id>
-PATCH /users/<id | userPrincipalName>/joinedGroups/<id>
-PATCH /drive/root/createdByUser/joinedGroups/<id>
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -20,24 +19,15 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|accessType|String| Possible values are: `None`, `Private`, `Secret`, `Public`.|
-|allowExternalSenders|Boolean||
-|autoSubscribeNewMembers|Boolean||
-|description|String|An optional description for the group.|
-|onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
-|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. |
-|groupTypes|String||
-|isFavorite|Boolean||
-|visibility|Boolean||
-|isSubscribedByMail|Boolean||
-|onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory.|
-|mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com".|
-|mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **false** when creating a group and it cannot be updated using Azure AD Graph.|
-|mailNickname|String|The mail alias for the group. This property must be specified when a group is created.|
-|onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud.                            **Notes**: Requires version 1.5 or newer.            |
-|proxyAddresses|String|                                        **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
-|securityEnabled|Boolean|Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Only (pure) security groups can be created using Azure AD Graph. For this reason, the property must be set **true** when creating a group.|
-|unseenCount|Int32||
+|allowExternalSenders|Boolean|Default is **false**. Indicates if external members can send email to group.|
+|autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.|
+|description|String|An optional description for the group. |
+|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
+|groupTypes|String collection|Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.|
+|visibility|Boolean|Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
+|mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.|
+|mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
+|securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter..|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [group](../resources/group.md) object in the response body.
@@ -72,6 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
 

@@ -2,18 +2,19 @@
 
 Update the properties of contactfolder object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/contactFolders/<id>
 PATCH /users/<id | userPrincipalName>/contactFolders/<id>
-PATCH /drive/root/createdByUser/contactFolders/<id>
-PATCH /drive/root/lastModifiedByUser/contactFolders/<id>
 ```
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -22,6 +23,8 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |displayName|String|The folder's display name.|
 |parentFolderId|String|The ID of the folder's parent folder.|
+|wellKnownName|string|The name of the folder if the folder is a recognized folder. Currently `contacts` is the only recognized contacts folder.|
+
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [contactFolder](../resources/contactfolder.md) object in the response body.
@@ -47,15 +50,17 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder"
+  "@odata.type": "microsoft.graph.contactFolder"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 104
 
 {
   "parentFolderId": "parentFolderId-value",
   "displayName": "displayName-value",
+  "wellKnownName": "wellKnownName-value",
   "id": "id-value"
 }
 ```

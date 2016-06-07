@@ -1,6 +1,6 @@
 # Call Microsoft Graph with a Node.js app
 
-In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. We use code from the [Office 365 Node.js Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Nodejs-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to connect your application to Office 365 and call the Microsoft Graph API. We use code from the [Office 365 Node.js Connect sample using Microsoft Graph](https://github.com/microsoftgraph/nodejs-connect-rest-sample) to explain the main concepts that you have to implement in your app.
 
 ![Office 365 Node.js Connect sample screenshot](./images/web-screenshot.png)
 
@@ -23,8 +23,8 @@ With just a few clicks, you can register your application to access a user's wor
 
 Alternatively, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions on how to manually register the app, keep in mind the following details:
 
-* Specify a page in your Node.js app as the **Sign-on URL** in step 6. In the case of the Connect sample, the URL is http://localhost:8080/login, which maps to the [/login](https://github.com/OfficeDev/O365-Nodejs-Unified-API-Connect/blob/master/routes/index.js#L33) route.
-* [Configure the **Delegated permissions**](https://github.com/OfficeDev/O365-Nodejs-Unified-API-Connect/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
+* Specify a page in your Node.js app as the **Sign-on URL** in step 6. In the case of the Connect sample, the URL is http://localhost:8080/login, which maps to the [/login](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/routes/index.js#L33) route.
+* [Configure the **Delegated permissions**](https://github.com/microsoftgraph/nodejs-connect-rest-sample/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
 
 Take note of the following values in the **Configure** page of your Azure application.
 
@@ -50,7 +50,7 @@ For issues, source code, and the latest in upcoming features and fixes, see adal
 
 Your app needs to redirect the browser to the sign-in page to get an authorization code and continue the OAuth 2.0 flow.
 
-In the Connect sample, the authentication URL from [`authHelper.js#getAuthUrl`](https://github.com/OfficeDev/O365-Nodejs-Unified-API-Connect/blob/master/authHelper.js#L17) is redirected by the [`login.hbs#login`](https://github.com/OfficeDev/O365-Nodejs-Unified-API-Connect/blob/master/views/login.hbs#L2) function through a client-side `onclick` event.
+In the Connect sample, the authentication URL from [`authHelper.js#getAuthUrl`](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/authHelper.js#L17) is redirected by the [`login.hbs#login`](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/views/login.hbs#L2) function through a client-side `onclick` event.
 
 **authHelper.js#getAuthUrl**
 ```javascript
@@ -85,7 +85,7 @@ router.get('/<application reply url>', function (req, res, next) {
 });
 ```
 
-See the [relevant code](https://github.com/OfficeDev/O365-Nodejs-Unified-API-Connect/blob/master/routes/index.js#L34) in the Connect sample
+See the [relevant code](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/routes/index.js#L34) in the Connect sample
 
 <!--<a name="accesstoken"/>-->
 ## Use `adal-node` to request an access token
@@ -99,7 +99,7 @@ To request an access token, adal-node provides two callback functions.
 | `AuthenticationContext.acquireTokenWithAuthorizationCode` | `authCode`, `redirect_uri`, `resource`, `client_id`, `client_secret`, `callback` | provides an access token for a specified resource based on the authorization code returned during login |
 | `AuthenticationContext.acquireTokenWithRefreshToken`      | `token`, `client_id`, `client_secret`, `resource`, `callback`                    | provides an access token for a specified resourced based on a refresh token                             |
 
-In the Connect sample, requests are routed through [`authHelper.js`](https://github.com/OfficeDev/O365-Nodejs-Unified-API-Connect/blob/master/authHelper.js) so that the `client_id` and `client_secret` can be added.
+In the Connect sample, requests are routed through [`authHelper.js`](https://github.com/microsoftgraph/nodejs-connect-rest-sample/blob/master/authHelper.js) so that the `client_id` and `client_secret` can be added.
 
 ```javascript
 // The application registration (must match Azure AD config)

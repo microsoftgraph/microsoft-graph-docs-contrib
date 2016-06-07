@@ -1,12 +1,12 @@
 # Update contact
 
-Update the properties of contact object.
+Update the properties of a contact object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
-A [contact](../resources/contact.md) from user's default [contactFolder](../resources/contactfolder.md).
+A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).
 ```http
 PATCH /me/contacts/<id>
 PATCH /users/<id | userPrincipalName>/contacts/<id>
@@ -16,7 +16,7 @@ A [contact](../resources/contact.md) from a user's top level [contactFolder](../
 PATCH /me/contactFolders/<id>/contacts/<id>
 PATCH /users/<id | userPrincipalName>/contactFolders/<id>/contacts/<id>
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
 PATCH /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>
@@ -39,7 +39,7 @@ In the request body, supply the values for relevant fields that should be update
 |businessHomePage|String|The business home page of the contact.|
 |businessPhones|String|The contact's business phone numbers.|
 |categories|String|The categories associated with the contact.|
-|children|String||
+|children|String|The names of the contact's children.|
 |companyName|String|The name of the contact's company.|
 |department|String|The contact's department.|
 |displayName|String|The contact's display name.|
@@ -69,7 +69,7 @@ In the request body, supply the values for relevant fields that should be update
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [contact](../resources/contact.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.

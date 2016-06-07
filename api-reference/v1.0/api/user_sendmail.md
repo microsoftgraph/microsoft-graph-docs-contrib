@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API: *Mail.Send*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/microsoft.graph.sendMail
+POST /users/<id | userPrincipalName>/sendMail
 ```
 ### Request headers
 | Header       | Value |
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "user_sendmail"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/microsoft.graph.sendMail
+POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
 Content-length: 1944
 

@@ -1,24 +1,33 @@
 # Create MailFolder
 
-Use this API to create a new MailFolder.
+Use this API to create a new child mailfolder.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/mailFolders/<id>/childFolders
 POST /users/<id | userPrincipalName>/mailFolders/<id>/childFolders
-POST /drive/root/createdByUser/mailFolders/<id>/childFolders
-POST /drive/root/lastModifiedByUser/mailFolders/<id>/childFolders
-
 ```
+
+Specify the parent folder in the query URL as a folder ID, or the `Inbox`, `Drafts`, `SentItems`, or 
+`DeletedItems` well-known folder name.
+
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
-In the request body, supply a JSON representation of [MailFolder](../resources/mailfolder.md) object.
+In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a 
+[MailFolder](../resources/mailfolder.md) object.
 
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|displayName|String|The display name of the new folder.|
 
 ### Response
 If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
@@ -37,21 +46,18 @@ Content-length: 159
 
 {
   "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99
 }
 ```
-In the request body, supply a JSON representation of [mailFolder](../resources/mailfolder.md) object.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailfolder"
+  "@odata.type": "microsoft.graph.mailFolder"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 179
 

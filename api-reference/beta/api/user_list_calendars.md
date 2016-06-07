@@ -1,22 +1,37 @@
 # List calendars
 
-Retrieve a list of calendar objects.
+Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Calendars.Read; Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+
+All the user's calendars.
 ```http
+GET /me/calendars
 GET /users/<id | userPrincipalName>/calendars
-GET /drive/root/createdByUser/calendars
-GET /drive/root/lastModifiedByUser/calendars
 ```
+
+The user's calendars in the default [calendarGroup](../resources/calendarGroup.md).
+```http
+GET /me/calendargroups/{calendar_group_id}/calendars
+GET /users/<id | userPrincipalName>/calendarGroup/calendars
+```
+
+The user's calendars in a specific [calendarGroup](../resources/calendarGroup.md).
+```http
+GET /me/calendarGroups/{calendar_group_id}/calendars
+GET /users/<id | userPrincipalName>/calendarGroups/{calendar_group_id}/calendars
+```
+
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Accept  | application/json|
 
 ### Request body
 Do not supply a request body for this method.
@@ -41,6 +56,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 147
 

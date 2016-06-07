@@ -1,6 +1,6 @@
 # oAuth2Permission resource type
 
-Represents an OAuth 2.0 delegated permission scope. The specified OAuth 2.0 delegated permission scopes may be requested by client applications (through the **requiredResourceAccess** collection on the [application] object) when calling a resource application. The **appRoles** property of the [servicePrincipal](serviceprincipal.md) entity and of the [application] entity is a collection of **oAuth2Permission**.
+Represents an OAuth 2.0 delegated permission scope. The specified OAuth 2.0 delegated permission scopes may be requested by client applications (through the **requiredResourceAccess** collection on the [application](application.md) object) when calling a resource application. The **appRoles** property of the [servicePrincipal](serviceprincipal.md) entity and of the [application](application.md) entity is a collection of **oAuth2Permission**.
 
 
 ### JSON representation
@@ -12,7 +12,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oauth2permission"
+  "@odata.type": "microsoft.graph.oAuth2Permission"
 }-->
 
 ```json

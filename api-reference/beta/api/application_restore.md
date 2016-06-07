@@ -2,11 +2,11 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/<id>/Microsoft.Graph.restore
+POST /applications/<id>/restore
 
 ```
 ### Request headers
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "application_restore"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/applications/<id>/Microsoft.Graph.restore
+POST https://graph.microsoft.com/beta/applications/<id>/restore
 Content-type: application/json
 Content-length: 56
 
@@ -48,7 +48,7 @@ Content-length: 56
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.application"
 } -->
 ```http
@@ -90,9 +90,9 @@ Content-length: 2150
     }
   ],
   "knownClientApplications": [
-    "knownClientApplications-value"
+    "guid"
   ],
-  "mainLogo": "mainLogo-value",
+  "mainLogo": "stream",
   "logoutUrl": "logoutUrl-value",
   "oauth2AllowImplicitFlow": true,
   "oauth2AllowUrlPathMatching": true,

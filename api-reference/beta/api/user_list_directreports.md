@@ -1,22 +1,22 @@
 # List directReports
 
-Retrieve a list of directoryobject objects.
+Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*User.Read; User.ReadWrite; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/directReports
-GET /drive/root/createdByUser/directReports
-GET /drive/root/lastModifiedByUser/directReports
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value|
+|:-----------|:------|
+| Authorization  | Bearer <token>. Required.  |
+| Accept  | application/json|
 
 ### Request body
 Do not supply a request body for this method.
@@ -37,10 +37,11 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryobject",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 55
 

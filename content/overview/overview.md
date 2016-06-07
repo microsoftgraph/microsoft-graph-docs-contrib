@@ -3,10 +3,6 @@
 
 # Overview of Microsoft Graph
 
-|  ![](./images/GitHub-Mark-64px.png) | **Contribute to this content.** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).  |
-|---|:---|
-
-
 Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (**https://graph.microsoft.com**). Using the Microsoft Graph, you can turn formerly difficult or complex queries into simple navigations. 
  
 The Microsoft Graph gives you:
@@ -18,6 +14,8 @@ The Microsoft Graph gives you:
 And all this using a single authentication token.
 
 You can use the API to access fixed entities like users, groups, mail, messages, calendars, tasks, and notes coming from services like Outlook, OneDrive, Azure Active Directory, Planner, OneNote and others. You can also obtain calculated relationships powered by the Office Graph (only for commercial users) like the list of users you are working with or the documents trending around you.
+
+Microsoft Graph exposes two endpoints. A generally available endpoint /v1.0 and a preview endpoint /beta.  You can use /v1.0 in your production applications but not /beta.  The preview endpoint /beta is where we offer the latest features for developer to experiment and provide feedback, APIs in beta might change at any point and are not ready for production use.
 
 <!--<a name="msg_queries"> </a>-->
 

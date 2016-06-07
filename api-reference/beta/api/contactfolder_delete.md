@@ -1,15 +1,14 @@
 # Delete contactFolder
 
-Delete contactFolder.
+Delete contactFolder other than the default contactFolder.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/contactFolders/<id>
 DELETE /users/<id | userPrincipalName>/contactFolders/<id>
-DELETE /drive/root/createdByUser/contactFolders/<id>
-DELETE /drive/root/lastModifiedByUser/contactFolders/<id>
-
 ```
 ### Request headers
 | Name       | Type | Description|

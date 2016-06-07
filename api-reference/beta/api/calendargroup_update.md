@@ -2,26 +2,25 @@
 
 Update the properties of calendargroup object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: _Calendars.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+Any [calendarGroup](../resources/calendargroup.md) of a user.
 ```http
+PATCH /me/calendarGroups/<id>
 PATCH /users/<id | userPrincipalName>/calendarGroups/<id>
-PATCH /drive/root/createdByUser/calendarGroups/<id>
-PATCH /drive/root/lastModifiedByUser/calendarGroups/<id>
 ```
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|changeKey|String|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|classId|Guid|The class identifier.|
 |name|String|The group name.|
 
 ### Response
@@ -36,12 +35,10 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/calendarGroups/<id>
 Content-type: application/json
-Content-length: 90
+Content-length: 30
 
 {
-  "name": "name-value",
-  "classId": "classId-value",
-  "changeKey": "changeKey-value"
+  "name": "name-value"
 }
 ```
 ##### Response
@@ -49,15 +46,16 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendargroup"
+  "@odata.type": "microsoft.graph.calendarGroup"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 110
 
 {
   "name": "name-value",
-  "classId": "classId-value",
+  "classId": "11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
   "changeKey": "changeKey-value",
   "id": "id-value"
 }

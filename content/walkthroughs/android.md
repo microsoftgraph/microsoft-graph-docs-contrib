@@ -1,6 +1,6 @@
 # Call Microsoft Graph in an Android app
 
-In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [Office 365 Android Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [Office 365 Android Connect sample using Microsoft Graph](https://github.com/microsoftgraph/android-java-connect-rest-sample) to explain the main concepts that you have to implement in your app.
 
 The following image shows the sample app send mail activity that appears after a user has connected to Office 365.
 
@@ -8,7 +8,7 @@ The following image shows the sample app send mail activity that appears after a
 
 ## Overview
 
-To call the Microsoft Graph API, the [Office 365 Android Connect sample](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview) completes the following tasks.
+To call the Microsoft Graph API, the [Office 365 Android Connect sample](https://github.com/microsoftgraph/android-java-connect-rest-sample) completes the following tasks.
 
 1. Authenticate a user and get an access token by calling methods on the Azure Active Directory library.
 2. Creates a mail message request as a REST operation on the Microsoft Graph API endpoint.
@@ -33,7 +33,7 @@ You need these values to configure the authentication code in your app.
 ## Gradle dependencies in the Connect sample
 The sample takes dependencies on the libraries shown in the following build.gradle snippet
 
-```
+```gradle
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.1'
@@ -55,10 +55,10 @@ The connect sample uses the Azure app registration values and a user's ID to aut
 * Prompted authentication. Used when a user ID is not cached in stored preferences on the Android device
 * Silent authentication. Used when a user ID is cached and prompting is not necessary.
 
-The [AuthenticationManager.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/AuthenticationManager.java) class provides an `isConnected()` helper method to find any cached user ID and determine the authentication behavior to use.
+The [AuthenticationManager.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/AuthenticationManager.java) class provides an `isConnected()` helper method to find any cached user ID and determine the authentication behavior to use.
 
 
-```android
+```java
     private boolean isConnected(){
         SharedPreferences settings = this
                 .mContextActivity
@@ -71,9 +71,9 @@ The [AuthenticationManager.java](https://github.com/OfficeDev/O365-Android-Unifi
 
 With either behavior, The ADAL authentication flow needs the client ID and redirect URL you get in the Azure registration process. The sample keeps these strings in source code and retrieves them before the authentication manager object authenticates the user.
 
-The [`Constants.java`](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/Constants.java) interface exposes two static strings for client ID and redirect URL.
+The [`Constants.java`](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/Constants.java) interface exposes two static strings for client ID and redirect URL.
 
-```android
+```java
 interface Constants {
     String AUTHORITY_URL = "https://login.microsoftonline.com/common";
     // Update these two constants with the values for your application:
@@ -84,9 +84,9 @@ interface Constants {
 }
 ```
 ### Construct the AuthenticationManager class
-The [AuthenticationManager.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/AuthenticationManager.java) constructor takes no arguments, but sets a class string field from the Constants.java file with the URL of the Graph endpoint. This resource string is used for both authentication behaviors.
+The [AuthenticationManager.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/AuthenticationManager.java) constructor takes no arguments, but sets a class string field from the Constants.java file with the URL of the Graph endpoint. This resource string is used for both authentication behaviors.
 
-```android
+```java
     private AuthenticationManager() {
         mResourceId = Constants.UNIFIED_ENDPOINT_RESOURCE_ID;
     }
@@ -94,7 +94,7 @@ The [AuthenticationManager.java](https://github.com/OfficeDev/O365-Android-Unifi
 
 ### Prompted authentication
 
-The [AuthenticationManager.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/AuthenticationManager.java) class provides an `authenticatePrompt()` method to acquire the access token used for REST calls on the unified endpoint.
+The [AuthenticationManager.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/AuthenticationManager.java) class provides an `authenticatePrompt()` method to acquire the access token used for REST calls on the unified endpoint.
 
 The ADAL library `acquireToken()` method is asynchronous. The method arguments include a reference to the context of the current activity along with the resource, client ID, and redirect URL. The current activity reference lets the ADAL library show a credential challenge page in the activity.
 If authentication succeeds, the ADAL library invokes the `onSuccess()` callback. This callback does two things
@@ -103,7 +103,7 @@ If authentication succeeds, the ADAL library invokes the `onSuccess()` callback.
 * Stores the user's ID in stored preferences.
 
 
-```android
+```java
     /**
      * Calls acquireToken to prompt the user for credentials.
      *
@@ -154,13 +154,13 @@ If authentication succeeds, the ADAL library invokes the `onSuccess()` callback.
 ```
 
 ###Silent authentication
-The The [AuthenticationManager.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/AuthenticationManager.java) class provides an `authenticateSilent()` method to acquire the access token used for REST calls on the unified endpoint.
+The The [AuthenticationManager.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/AuthenticationManager.java) class provides an `authenticateSilent()` method to acquire the access token used for REST calls on the unified endpoint.
 
 The ADAL library `acquireTokenSilent()` method is asynchronous. In addition to the Azure registration client ID and resource id, it takes the user ID that is stored in shared preferences. The helper method, `getUserId()` gets the
 User ID from storage.
 
 If authentication succeeds, the `onSuccess()` method is invoked. `onSuccess` stores the access token in `mAccessToken`. When making a REST call to send a mail message, the sample puts this access token in an authorization header.
-```android
+```java
     /**
      * Calls acquireTokenSilent with the user id stored in shared preferences.
      * In case of an error, it falls back to {@link AuthenticationManager#authenticatePrompt(AuthenticationCallback)}.
@@ -205,12 +205,12 @@ If authentication succeeds, the `onSuccess()` method is invoked. `onSuccess` sto
 <!--<a name="sendmail"/>-->
 ## Send an email message using Office 365
 
-After the user signs-in to Azure, the Connect sample shows the user an activity for sending a mail message. The Connect sample uses the [`UnifiedAPIController.java`](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/UnifiedAPIController.java) class to send the message when the users clicks the Send mail button.
+After the user signs-in to Azure, the Connect sample shows the user an activity for sending a mail message. The Connect sample uses the [`MSGraphAPIController.java`](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/MSGraphAPIController.java) class to send the message when the users clicks the Send mail button.
 
 ### REST adapter helper class
-The [RESTHelper.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/RESTHelper.java) class provides a method for injecting an authorization header into every REST call the sample makes. It uses the access token provided by the authentication manager.
+The [RESTHelper.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/RESTHelper.java) class provides a method for injecting an authorization header into every REST call the sample makes. It uses the access token provided by the authentication manager.
 
-```android
+```java
        //This method catches outgoing REST calls and injects the Authorization and host headers before
         //sending to REST endpoint
         RequestInterceptor requestInterceptor = new RequestInterceptor() {
@@ -224,10 +224,10 @@ The [RESTHelper.java](https://github.com/OfficeDev/O365-Android-Unified-API-Conn
         };
 ```
 ### UnifiedAPIController class
-The [UnifiedAPIController.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/UnifiedAPIController.java) class generates the REST request in the `sendMail()` method.
+The [MSGraphAPIController.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/MSGraphAPIController.java) class generates the REST request in the `sendMail()` method.
 
 
-```android
+```java
     /**
      * Sends an email message using the Unified API on Office 365. The mail is sent
      * from the address of the signed in user.
@@ -256,9 +256,9 @@ The [UnifiedAPIController.java](https://github.com/OfficeDev/O365-Android-Unifie
 
 ```
 ### The UnifiedAPIService interface
-The [UnifiedAPIService.java](https://github.com/OfficeDev/O365-Android-Unified-API-Connect-Preview/blob/master/app/src/main/java/com/microsoft/office365/connectunified/UnifiedAPIService.java) interface provides method signatures for the REST calls made by the sample using Retrofit annotations.
+The [MSGraphAPIController.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/MSGraphAPIController.java) interface provides method signatures for the REST calls made by the sample using Retrofit annotations.
 
-```android
+```java
     @POST("/me/sendMail")
     void sendMail(
             @Header("Content-type") String contentTypeHeader,
@@ -271,5 +271,5 @@ The [UnifiedAPIService.java](https://github.com/OfficeDev/O365-Android-Unified-A
 ## Next steps
 The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API.
 
-We've published many Android samples for Office 365. Each of these samples build on the concepts we introduce in the Connect sample. If you want to do more with your Android apps, see [more of our Android samples for Office 365](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Android) in the Office GitHub organization.
+We've published many Android samples for Office 365. Each of these samples build on the concepts we introduce in the Connect sample. If you want to do more with your Android apps, see [more of our Android samples for Office 365](http://aka.ms/androidgraphsamples) in the Office GitHub organization.
  

@@ -1,6 +1,14 @@
 # provisionedPlan resource type
 
-The **provisionedPlans** property of the [User] entity and the [organization] entity is a collection of **ProvisionedPlan**.
+The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.
+
+
+### Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|capabilityStatus|String|For example, “Enabled”.|
+|provisioningStatus|String|For example, “Success”.|
+|service|String|The name of the service; for example, “AccessControlS2S”|
 
 
 ### JSON representation
@@ -23,12 +31,6 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|capabilityStatus|String|For example, “Enabled”.|
-|provisioningStatus|String|For example, “Success”.|
-|service|String|The name of the service; for example, “AccessControlS2S”|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

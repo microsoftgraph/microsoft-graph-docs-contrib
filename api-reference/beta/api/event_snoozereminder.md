@@ -1,27 +1,42 @@
 # event: snoozeReminder
 
+Postpone a reminder until a new time.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/events/<id>/Microsoft.Graph.snoozeReminder
-POST /groups/<id>/events/<id>/Microsoft.Graph.snoozeReminder
-POST /users/<id | userPrincipalName>/calendarView/<id>/Microsoft.Graph.snoozeReminder
+POST /me/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/events/<id>/snoozeReminder
+POST /groups/<id>/events/<id>/snoozeReminder
 
+POST /me/calendar/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/calendar/events/<id>/snoozeReminder
+POST /groups/<id>/calendar/events/<id>/snoozeReminder
+
+POST /me/calendars/<id>/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/snoozeReminder
+
+POST /me/calendargroup/calendars/<id>/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/snoozeReminder
+
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/snoozeReminder
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/snoozeReminder
 ```
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|newReminderTime|DateTimeTimeZone||
+|newReminderTime|DateTimeTimeZone|The new date and time to trigger the reminder.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -48,7 +63,7 @@ Content-length: 97
 ```
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

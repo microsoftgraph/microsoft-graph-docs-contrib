@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /contacts/<id>/Microsoft.Graph.getMemberGroups
+POST /contacts/<id>/getMemberGroups
 
 ```
 ### Request headers
@@ -51,6 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
 

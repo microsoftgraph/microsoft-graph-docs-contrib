@@ -1,30 +1,29 @@
 # user: getMemberObjects
-
+Return all of the groups and directory roles that the user is a member of. The check is transitive.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*User.Read; User.ReadWrite; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/Microsoft.Graph.getMemberObjects
-POST /drive/root/createdByUser/Microsoft.Graph.getMemberObjects
-POST /drive/root/lastModifiedByUser/Microsoft.Graph.getMemberObjects
-
+POST /users/<id | userPrincipalName>/getMemberObjects
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json  |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean||
+|securityEnabledOnly|Boolean|**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups and directory roles that the user is a member of should be returned. Note: The function can only be called on a user if the parameter is **true**.|
 
 ### Response
-If successful, this method returns `200, OK` response code and String collection object in the response body.
+If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups and directory roles that the user is a member of.
 
 ### Example
 Here is an example of how to call this API.
@@ -53,6 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
 

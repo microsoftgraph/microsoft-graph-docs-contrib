@@ -1,27 +1,28 @@
 # mailFolder: copy
 
+Copy a mailfolder and its contents to another mailfolder.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/mailFolders/<id>/Microsoft.Graph.copy
-POST /drive/root/createdByUser/mailFolders/<id>/Microsoft.Graph.copy
-POST /drive/root/lastModifiedByUser/mailFolders/<id>/Microsoft.Graph.copy
-
+POST /me/mailFolders/<id>/copy
+POST /users/<id | userPrincipalName>/mailFolders/<id>/copy
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|destinationId|String||
+|destinationId|String|The folder ID, or the *Inbox*, *Drafts*, *SentItems*, or *DeletedItems* well-known folder name.|
 
 ### Response
 If successful, this method returns `200, OK` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
@@ -49,9 +50,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailfolder"
+  "@odata.type": "microsoft.graph.mailFolder"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 179
 

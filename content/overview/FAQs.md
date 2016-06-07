@@ -1,10 +1,6 @@
 
 # Microsoft Graph Frequently Asked Questions (FAQs)
 
-|![](./images/GitHub-Mark-64px.png) | **Contribute to this content.** <br /> Use GitHub to [suggest changes](https://github.com/OfficeDev/microsoft-graph-docs).|
-|---|:---|
-
-
 ## What platforms are supported by Microsoft Graph API?
 <!--
 Apps can use the Microsoft Graph API to perform create, read, update, and delete (CRUD) operations on data sources and entities, giving them seamless access to work data. 
@@ -95,9 +91,9 @@ Some of the benefits of using Microsoft Graph API  are as follows:
 
 <!---<a name="msg_v2auth"> </a>-->
 
-## Does Microsoft Graph API support v2.0 app authentication model?
+## Does Microsoft Graph API support v2.0 app authentication endpoint?
 
-Yes, in preview. For more information see [Authenticate Microsoft Graph endpoints using the v2.0 app model preview](http://graph.microsoft.io/docs/authorization/converged_auth).
+Yes. For more information see [Authenticate Microsoft Graph endpoints using the v2 authentication endpoint](http://graph.microsoft.io/docs/authorization/converged_auth).
 
 
 

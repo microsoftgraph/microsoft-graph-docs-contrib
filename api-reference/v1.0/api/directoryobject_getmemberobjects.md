@@ -1,16 +1,16 @@
 # directoryObject: getMemberObjects
 
-Returns all the groups and directory objects that a user, contact, or directory 
+Returns all the groups and directory objects that a user, contact, or directory
 object is a member of. This function is transitive.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/manager/Microsoft.Graph.getMemberObjects
-POST /directoryObjects/<id>/Microsoft.Graph.getMemberObjects
-POST /contacts/<id>/manager/Microsoft.Graph.getMemberObjects
+POST /users/<id | userPrincipalName>/manager/getMemberObjects
+POST /directoryObjects/<id>/getMemberObjects
+POST /contacts/<id>/manager/getMemberObjects
 
 ```
 ### Request headers
@@ -55,6 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 39
 

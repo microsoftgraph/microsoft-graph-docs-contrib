@@ -1,30 +1,33 @@
 # conversationThread: reply
 
+Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation 
+in the request, or, you can specify just the thread without the parent conversation.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Group.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/threads/<id>/reply
 POST /groups/<id>/conversations/<id>/threads/<id>/reply
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/reply
-
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|post|Post||
+|post|[post](../resources/post.md)|The new post that is being replied with.|
 
 ### Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -42,65 +45,21 @@ Content-length: 1131
 {
   "post": {
     "body": {
-      "contentType": {
-      },
+      "contentType": "",
       "content": "content-value"
-    },
-    "receivedDateTime": "datetime-value",
-    "hasAttachments": true,
-    "from": {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    },
-    "sender": {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    },
-    "conversationThreadId": "conversationThreadId-value",
-    "newParticipants": [
-      {
-        "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
-        }
-      }
-    ],
-    "conversationId": "conversationId-value",
-    "createdDateTime": "datetime-value",
-    "lastModifiedDateTime": "datetime-value",
-    "changeKey": "changeKey-value",
-    "categories": [
-      "categories-value"
-    ],
-    "id": "id-value",
-    "inReplyTo": {
-    },
-    "attachments": [
-      {
-        "lastModifiedDateTime": "datetime-value",
-        "name": "name-value",
-        "contentType": "contentType-value",
-        "size": 99,
-        "isInline": true,
-        "id": "id-value"
-      }
-    ]
+    }
   }
 }
 ```
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

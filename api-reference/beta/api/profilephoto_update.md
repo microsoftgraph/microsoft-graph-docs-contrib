@@ -1,31 +1,30 @@
 # Update profilephoto
 
-Update the photo for a **user**, **group** or a **contact**.
+Update the photo for signed-in **user**, **group** or a **contact**. Since there
+is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
+you can add to under 4MB.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
-One of the following **scopes** is required to execute this API for: 
-* Profile photo of signed-in **user** - *User.ReadWrite.All; User.ReadWrite*
-* Profile photo of a **group** - *Group.ReadWrite.All* 
-* Photo of a **contact** - *Contacts.ReadWrite*
+One of the following **scopes** is required to execute this API for:
+
+- Profile photo of signed-in **user** - *User.ReadWrite*
+- Profile photo of a **group** - *Group.ReadWrite.All*
+- Photo of a **contact** - *Contacts.ReadWrite*
 ### HTTP request to update the photo
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/photo/$value
-PATCH /users/<id>/photo/$value
-PATCH /users/<userPrincipalName>/photo/$value
+PATCH /users/<id | userPrincipalName>/photo/$value
 PATCH /groups/<id>/photo/$value
 PATCH /me/contacts/<id>/photo/$value
-PATCH /users/<id>/contacts/<id>/photo/$value
-PATCH /users/<userPrincipalName>/contacts/<id>/photo/$value
+PATCH /users/<id | userPrincipalName>/contacts/<id>/photo/$value
 PATCH /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
-PATCH /users/<id>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
-PATCH /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>/photo/$value
+PATCH /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
 ```
 ### Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Content-Type  | image/jpeg  |
+| Content-Type  | image/jpeg. Required.  |
 
 ### Request body
 In the request body, include the binary data of the photo in the request body.
@@ -51,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.profilephoto"
+  "@odata.type": "microsoft.graph.profilePhoto"
 } -->
 ```http
 HTTP/1.1 200 OK

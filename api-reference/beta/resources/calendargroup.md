@@ -4,27 +4,19 @@ A group of calendars.
 
 **Note** Outlook.com supports only the default calendar group which is accessible by the ../me/calendars shortcut. You cannot delete that calendar group.
 
-### JSON representation
+### Methods
 
-Here is a JSON representation of the resource
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[List calendar groups](../api/user_list_calendargroups.md) |[Calendar](calendar.md) collection| Get the user's calendar groups.|
+|[Create calendar group](../api/user_post_calendargroups.md) |[Calendar](calendar.md)| Create a new calendar group.|
+|[Get calendar group](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Read properties and relationships of a calendar group object.|
+|[Update](../api/calendargroup_update.md) | [calendarGroup](calendargroup.md) |Update calendarGroup object. |
+|[Delete](../api/calendargroup_delete.md) | None |Delete calendarGroup object. |
+|[List calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| List calendars in a calendar group.|
+|[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar in a calendar group.|
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "calendars"
-  ],
-  "@odata.type": "microsoft.graph.calendargroup"
-}-->
 
-```json
-{
-  "changeKey": "string",
-  "classId": "guid",
-  "id": "string (identifier)",
-  "name": "string"
-}
-
-```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -38,15 +30,30 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |calendars|[Calendar](calendar.md) collection|The calendars in the calendar group. Navigation property. Read-only. Nullable.|
 
-### Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get calendarGroup](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Read properties and relationships of calendarGroup object.|
-|[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
-|[List calendars](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
-|[Update](../api/calendargroup_update.md) | [calendarGroup](calendargroup.md) |Update calendarGroup object. |
-|[Delete](../api/calendargroup_delete.md) | None |Delete calendarGroup object. |
+### JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "calendars"
+  ],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.calendarGroup"
+}-->
+
+```json
+{
+  "changeKey": "string",
+  "classId": "guid",
+  "id": "string (identifier)",
+  "name": "string"
+}
+
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

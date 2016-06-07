@@ -1,15 +1,19 @@
 # Create thread
 
-Create a thread in the specified conversation.
+Create a new thread in the specified conversation.
+
+A thread and post are created as specified. Use [reply thread](conversationthread_reply.md) to further post
+to that thread. Or, if you get the post ID, you can also [reply](post_reply.md) to that post in that thread.
+
+Note: You can also [start a new conversation by first creating a thread](group_post_threads.md).
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
+*Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/conversations/<id>/threads
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/conversations/<id>/threads
-POST /drive/root/createdByUser/joinedGroups/<id>/conversations/<id>/threads
-
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -33,68 +37,34 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/<id>/conversations/<id>/threads
 Content-type: application/json
-Content-length: 419
 
 {
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
   "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
+  "posts": [{
+      "body": {
+        "contentType": "html",
+        "content": "this is body content"
       }
-    }
-  ]
+  }]
 }
 ```
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+If successful, this method returns `201, Created` response code and the `id` of the new thread in the response body.
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationthread"
+  "@odata.type": "microsoft.graph.conversationThread"
 } -->
 ```http
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 419
+Content-length: 346
 
 {
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ]
+  "id": "thread-id-value"
 }
 ```
 

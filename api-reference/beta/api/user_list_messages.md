@@ -1,22 +1,21 @@
 # List messages
 
-Get all the messages in the signed-in user's mailbox.
+Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.Read; Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/messages
-GET /drive/root/createdByUser/messages
-GET /drive/root/lastModifiedByUser/messages
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Accept  | application/json|
 
 ### Request body
 Do not supply a request body for this method.
@@ -41,6 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 317
 
@@ -52,8 +52,7 @@ Content-length: 317
       "hasAttachments": true,
       "subject": "subject-value",
       "body": {
-        "contentType": {
-        },
+        "contentType": "",
         "content": "content-value"
       },
       "bodyPreview": "bodyPreview-value"

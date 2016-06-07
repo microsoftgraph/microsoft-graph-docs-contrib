@@ -11,7 +11,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.externalreference"
+  "@odata.type": "microsoft.graph.externalReference"
 }-->
 
 ```json

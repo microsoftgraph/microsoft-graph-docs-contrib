@@ -2,23 +2,31 @@
 
 Update the properties of contact object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
 *Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A [contact](../resources/contact.md) from user's default [contactFolder](../resources/contactfolder.md).
 ```http
 PATCH /me/contacts/<id>
-PATCH /users/<id>/contacts/<id>
-PATCH /users/<userPrincipalName>/contacts/<id>
-PATCH /me/contactFolders/<contactFolderId>/contacts/<id>
-PATCH /users/<id>/contactFolders/<contactFolderId>/contacts/<id>
-PATCH /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts/<id>
+PATCH /users/<id | userPrincipalName>/contacts/<id>
+```
+A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).
+```http
+PATCH /me/contactFolders/<id>/contacts/<id>
+PATCH /users/<id | userPrincipalName>/contactFolders/<id>/contacts/<id>
+```
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
+example below shows one level of nesting, but a contact can be located in a child of a child and so on.
+```http
+PATCH /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>
+PATCH /users/<id | userPrincipalName>/contactFolders/<id>/childFolders/<id>/contacts/<id>
 ```
 ### Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -31,7 +39,6 @@ In the request body, supply the values for relevant fields that should be update
 |businessHomePage|String|The business home page of the contact.|
 |businessPhones|String|The contact's business phone numbers.|
 |categories|String|The categories associated with the contact.|
-|changeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |children|String||
 |companyName|String|The name of the contact's company.|
 |department|String|The contact's department.|
@@ -47,7 +54,7 @@ In the request body, supply the values for relevant fields that should be update
 |jobTitle|String|The contact’s job title.|
 |manager|String|The name of the contact's manager.
 |middleName|String|The contact's middle name.|
-|mobilePhone1|String|The contact's mobile phone number.|
+|mobilePhone|String|The contact's mobile phone number.|
 |nickName|String|The contact's nickname.|
 |officeLocation|String|The location of the contact's office.|
 |otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|Other addresses for the contact.|
@@ -135,7 +142,7 @@ Content-length: 1977
   "assistantName": null,
   "manager": null,
   "homePhones": [],
-  "mobilePhone1": null,
+  "mobilePhone": null,
   "businessPhones": [
     "+1 918 555 0101"
   ],

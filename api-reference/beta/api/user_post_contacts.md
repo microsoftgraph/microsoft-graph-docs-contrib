@@ -1,18 +1,16 @@
 # Create Contact
 
-Use this API to create a new Contact.
+Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/contacts
-POST /users/<id>/contacts
-POST /users/<userPrincipalName>/contacts
+POST /users/<id | userPrincipalName>/contacts
 POST /me/contactFolders/<contactFolderId>/contacts
-POST /users/<id>/contactFolders/<contactFolderId>/contacts
-POST /users/<userPrincipalName>/contactFolders/<contactFolderId>/contacts
+POST /users/<id | userPrincipalName>/contactFolders/<contactFolderId>/contacts
 ```
 ### Request headers
 | Header       | Value |
@@ -37,7 +35,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/contacts
 Content-type: application/json
-Content-length: 210
 
 {
   "givenName": "Pavel",
@@ -67,12 +64,10 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value"
+  "id": "id-value",
   "createdDateTime": "2015-11-09T02:14:32Z",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z",
-  ...
-   "displayName": "Pavel Bansky",
-  ...
+   "displayName": "Pavel Bansky"
 }
 ```
 

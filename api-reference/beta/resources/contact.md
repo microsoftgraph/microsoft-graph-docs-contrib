@@ -104,8 +104,11 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contact. Read-only. Nullable.|
 |photo|[Photo](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
+
 
 ### Methods
 
@@ -113,10 +116,11 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get contact](../api/contact_get.md) | [contact](contact.md) |Read properties and relationships of contact object.|
 |[Create](../api/user_post_contacts.md) | [contact](contact.md) |Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.|
-|[Create Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the extensions collection.|
-|[List extensions](../api/contact_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/contact_update.md) | [contact](contact.md) |Update contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete contact object. |
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

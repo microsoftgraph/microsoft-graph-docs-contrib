@@ -6,10 +6,11 @@ The following **scopes** are required to execute this API: _Mail.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/messages/<id>
 DELETE /users/<id | userPrincipalName>/messages/<id>
-DELETE /drive/root/createdByUser/messages/<id>
-DELETE /drive/root/lastModifiedByUser/messages/<id>
 
+DELETE /me/mailFolders/<id>/messages/<id>
+DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
 ### Request headers
 | Name       | Type | Description|

@@ -1,18 +1,17 @@
 # Get contactFolder
 
-Retrieve the properties and relationships of contactfolder object.
+Get a contact folder by using the contact folder ID.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Contacts.ReadWrite; Contacts.Read*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders/<id>
 GET /users/<id | userPrincipalName>/contactFolders/<id>
-GET /drive/root/createdByUser/contactFolders/<id>
-GET /drive/root/lastModifiedByUser/contactFolders/<id>
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -37,16 +36,18 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder"
+  "@odata.type": "microsoft.graph.contactFolder"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 104
 
 {
-  "parentFolderId": "parentFolderId-value",
-  "displayName": "displayName-value",
-  "id": "id-value"
+  "displayName": "Finance",
+  "id": "AAMkAGI2TKI5AAA=",
+  "parentFolderId": "AAMkAGI2AAEOAAA=",
+  "wellKnownName": null
 }
 ```
 

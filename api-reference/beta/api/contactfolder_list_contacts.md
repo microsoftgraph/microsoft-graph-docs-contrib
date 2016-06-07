@@ -1,8 +1,10 @@
 # List contacts
 
-Get all the contacts in the signed-in user's mailbox (`.../me/contacts`), or from the specified contact folder.
+Get all the contacts in the signed-in user's mailbox (.../me/contacts), or from the specified contact folder.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Contacts.Read; Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,13 +13,9 @@ GET /users/<id | userPrincipalName>/contacts
 
 GET /me/contactFolders/<id>/contacts
 GET /users/<id | userPrincipalName>/contactFolders/<id>/contacts
-
-GET /drive/root/createdByUser/contactFolders/<id>/contacts
-GET /drive/root/lastModifiedByUser/contactFolders/<id>/contacts
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -46,6 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 263
 

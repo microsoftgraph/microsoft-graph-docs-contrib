@@ -1,20 +1,21 @@
 # Create ContactFolder
 
-Use this API to create a new ContactFolder.
+Create a new contactFolder under the user's default contacts folder.
+
+You can also [create a new contactfolder as a child of any specified contact folder](contactfolder_post_childfolders.md).
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Contacts.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/contactFolders
-POST /drive/root/createdByUser/contactFolders
-POST /drive/root/lastModifiedByUser/contactFolders
-
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json  |
 
 ### Request body
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
@@ -46,9 +47,10 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contactfolder"
+  "@odata.type": "microsoft.graph.contactFolder"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 104
 

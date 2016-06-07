@@ -1,18 +1,22 @@
 # List calendars
 
-Retrieve a list of calendar objects.
+Retrieve a list of calendars belonging to a calendar group.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: _Calendars.Read_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's default [calendarGroup](../resources/calendargroup.md).
 ```http
+GET /me/calendarGroup/calendars
+GET /users/<id | userPrincipalName>/calendarGroup/calendars
+```
+Any [calendarGroup](../resources/calendargroup.md) of a user.
+```http
+GET /me/calendarGroups/<id>/calendars
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars
-GET /drive/root/createdByUser/calendarGroups/<id>/calendars
-GET /drive/root/lastModifiedByUser/calendarGroups/<id>/calendars
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-
 ### Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -41,6 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 147
 

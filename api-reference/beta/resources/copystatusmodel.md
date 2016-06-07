@@ -25,7 +25,7 @@ Here is a JSON representation of the resource.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdDateTime|[dateTimeOffset](datetimeoffset.md)||
+|createdDateTime| DateTimeOffset ||
 |id|string||
 |status|string||
 

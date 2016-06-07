@@ -1,20 +1,35 @@
 # Create Event
 
-Use this API to create a new Event.
+Use this API to create a new Event in the default or the specified calendar.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+A user's or group's default [calendar](../resources/calendar.md).
 ```http
+POST /me/calendar/events
 POST /users/<id | userPrincipalName>/calendar/events
 POST /groups/<id>/calendar/events
-POST /drive/root/createdByUser/calendar/events
+```
+A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+```http
+POST /me/calendars/<id>/events
+POST /users/<id | userPrincipalName>/calendars/<id>/events
 
+POST /me/calendarGroup/calendars/<id>/events
+POST /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/events
+```
+A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+```http
+POST /me/calendarGroups/<id>/calendars/<id>/events
+POST /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ### Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
@@ -39,11 +54,9 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
-  "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
@@ -57,6 +70,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 285
 
@@ -64,8 +78,7 @@ Content-length: 285
   "originalStartTimeZone": "originalStartTimeZone-value",
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
-    "response": {
-    },
+    "response": "",
     "time": "datetime-value"
   },
   "iCalUId": "iCalUId-value",

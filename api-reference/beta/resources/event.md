@@ -71,15 +71,16 @@ Here is a JSON representation of the resource
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
 |isOrganizer|Boolean|Set to true if the message sender is also the organizer.|
-|isReminderOn|Boolean||
+|isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|The location of the event.|
+|OnlineMeetingUrl|String|A URL for an online meeting.|
 |organizer|[Recipient](recipient.md)|The organizer of the event.|
-|originalEndTimeZone|String||
+|originalEndTimeZone|String|The end time zone that was set when the event was created.|
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|originalStartTimeZone|String||
+|originalStartTimeZone|String|The start time zone that was set when the event was created.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
-|reminderMinutesBeforeStart|Int32||
+|reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
 |sensitivity|String| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
@@ -93,29 +94,34 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md) and [ItemAttachment](itemattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
+|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md), and [referenceAttachment](referenceAttachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
-|extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the event. Read-only. Nullable.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
+
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[List events](../api/user_list_events.md)|[Event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
 |[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
-|[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
-|[List attachments](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Extension](../api/event_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the extensions collection.|
-|[List extensions](../api/event_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
-|[Create Event](../api/event_post_instances.md) |[Event](event.md)| Create a new Event by posting to the instances collection.|
-|[List instances](../api/event_list_instances.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Update](../api/event_update.md) | [event](event.md)	|Update event object. |
 |[Delete](../api/event_delete.md) | None |Delete event object. |
+|[cancel](../api/event_cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. | 
 |[accept](../api/event_accept.md)|None|Accept the specified event.|
+|[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
 |[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
 |[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
 |[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
-|[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
+|[List instances](../api/event_list_instances.md) |[Event](event.md) collection| Get a Event object collection.|
+|[List attachments](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

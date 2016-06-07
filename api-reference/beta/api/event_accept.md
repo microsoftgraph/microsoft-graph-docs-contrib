@@ -1,31 +1,46 @@
 # event: accept
 
+Accept the specified event.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Calendars.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/events/<id>/Microsoft.Graph.accept
-POST /groups/<id>/events/<id>/Microsoft.Graph.accept
-POST /users/<id | userPrincipalName>/calendarView/<id>/Microsoft.Graph.accept
+POST /me/events/<id>/accept
+POST /users/<id | userPrincipalName>/events/<id>/accept
+POST /groups/<id>/events/<id>/accept
 
+POST /me/calendar/events/<id>/accept
+POST /users/<id | userPrincipalName>/calendar/events/<id>/accept
+POST /groups/<id>/calendar/events/<id>/accept
+
+POST /me/calendars/<id>/events/<id>/accept
+POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/accept
+
+POST /me/calendargroup/calendars/<id>/events/<id>/accept
+POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/accept
+
+POST /me/calendargroups/<id>/calendars/<id>/events/<id>/accept
+POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/accept
 ```
 ### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String||
-|sendResponse|Boolean||
+|comment|String|Text included in the response. Optional.|
+|sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
 
 ### Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -47,7 +62,7 @@ Content-length: 56
 ```
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

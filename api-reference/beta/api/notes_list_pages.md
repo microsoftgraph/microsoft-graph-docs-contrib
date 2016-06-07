@@ -31,22 +31,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example
 ##### Request
 Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_pages"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/notes/pages
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.page",
-  "isCollection": true
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 393
 

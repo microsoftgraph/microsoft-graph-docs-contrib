@@ -8,10 +8,10 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/microsoft.graph.forward
-POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.forward
-POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.forward
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.forward
+POST /me/messages/<id>/forward
+POST /users/<id | userPrincipalName>/messages/<id>/forward
+POST /me/mailFolders/<id>/messages/<id>/forward
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/forward
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -25,7 +25,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
-|toRecipients|[Recipient](..\resources\recipient.md) collection|The list of recipients.|
+|toRecipients|[Recipient](../resources/recipient.md) collection|The list of recipients.|
 
 ### Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "message_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/microsoft.graph.forward
+POST https://graph.microsoft.com/v1.0/me/messages/<id>/forward
 Content-type: application/json
 Content-length: 166
 

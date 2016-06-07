@@ -1,27 +1,31 @@
 # post: reply
 
+Reply to a post and add a new post to the specified thread in a group conversation. You can specify 
+both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+
+*Group.Readwrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/threads/<id>/posts/<id>/Microsoft.Graph.reply
-POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/Microsoft.Graph.reply
-POST /users/<id | userPrincipalName>/joinedGroups/<id>/threads/<id>/posts/<id>/Microsoft.Graph.reply
+POST /groups/<id>/threads/<id>/posts/<id>/reply
+POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/reply
 
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
 
 ### Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|post|Post||
+|post|[post](../resources/post.md)|The new post that is being replied with.|
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -42,8 +46,7 @@ Content-length: 1131
 {
   "post": {
     "body": {
-      "contentType": {
-      },
+      "contentType": "",
       "content": "content-value"
     },
     "receivedDateTime": "datetime-value",
@@ -94,7 +97,8 @@ Content-length: 1131
 ```
 
 ##### Response
-Here is an example of the response. 
+##### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

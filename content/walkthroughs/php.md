@@ -1,6 +1,6 @@
 # Call Microsoft Graph in a PHP app 
 
-In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph API. We use code from the [Office 365 PHP Connect sample using Microsoft Graph](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph API. We use code from the [Office 365 PHP Connect sample using Microsoft Graph](https://github.com/microsoftgraph/php-connect-rest-sample) to explain the main concepts that you have to implement in your app.
 
 ![Office 365 PHP Connect sample screenshot](./images/web-screenshot.png)
 
@@ -22,8 +22,8 @@ With just a few clicks, you can register your application to access a user's wor
 
 Alternatively, see the section [Register your web server app with the Azure Management Portal](https://msdn.microsoft.com/office/office365/HowTo/add-common-consent-manually#bk_RegisterServerApp) for instructions on how to manually register the app, keep in mind the following details:
 
-* Specify a page in your PHP app as the **Sign-on URL** in step 6. In the case of the Connect sample, this page is [`Callback.php`](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect/blob/master/app/Callback.php).
-* [Configure the **Delegated permissions**](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
+* Specify a page in your PHP app as the **Sign-on URL** in step 6. In the case of the Connect sample, this page is [`Callback.php`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/app/callback.php).
+* [Configure the **Delegated permissions**](https://github.com/microsoftgraph/php-connect-rest-sample/wiki/Grant-permissions-to-the-Connect-application-in-Azure) that your app requires. The Connect sample requires **Send mail as signed-in user** permission.
 
 Take note of the following values in the **Configure** page of your Azure application.
 
@@ -38,7 +38,7 @@ You need these values as parameters in the OAuth flow in your app.
 
 Your app needs to redirect the browser to the sign-in page to get an authorization code and continue the OAuth flow.
 
-In the Connect sample, the code that redirects the browser is in the [`AuthenticationManager.connect`](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect/blob/master/app/AuthenticationManager.php#L49) function.
+In the Connect sample, the code that redirects the browser is in the [`AuthenticationManager.connect`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/AuthenticationManager.php#L41) function.
 
 ```php
 // Redirect the browser to the authorization endpoint. Auth endpoint is
@@ -57,7 +57,7 @@ exit();
 <!--<a name="authcode"/>-->
 ## Receive an authorization code in your reply URL page
 
-After the user signs-in, the flow returns the browser to the reply URL in your app. Azure appends an authorization code to the query string. The Connect sample uses the [`Callback.php`](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect/blob/master/app/Callback.php) page for this purpose.
+After the user signs-in, the flow returns the browser to the reply URL in your app. Azure appends an authorization code to the query string. The Connect sample uses the [`Callback.php`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/app/callback.php) page for this purpose.
 
 The authorization code is provided in the `code` query string variable. The Connect sample saves the code to a session variable to use it later.
 
@@ -75,7 +75,7 @@ Once you have the authorization code, you can use it along the client ID, key, a
 > **Note:** <br />
 > The request must also specify a resource that we are trying to consume. In the case of Microsoft Graph API, the resource value is `https://graph.microsoft.com`.
 
-The Connect sample requests a token using the code in the [`AuthenticationManager.acquireToken`](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect/blob/master/app/AuthenticationManager.php#L70) function. Here is the most relevant code.
+The Connect sample requests a token using the code in the [`AuthenticationManager.acquireToken`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/AuthenticationManager.php#L62) function. Here is the most relevant code.
 
 ```php
 $tokenEndpoint = Constants::AUTHORITY_URL . Constants::TOKEN_ENDPOINT;
@@ -122,7 +122,7 @@ Your PHP app can now use the session variable `access_token` to issue authentica
 
 With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must provide the access token in the **Authorization** header of each request.
 
-The Connect sample sends an email using the **sendMail** endpoint in the Microsoft Graph API. The code is in the [`MailManager.sendWelcomeMail`](https://github.com/OfficeDev/O365-PHP-Unified-API-Connect/blob/master/app/MailManager.php#L46) function. This is the code that shows how to send the access code in the Authorization header.
+The Connect sample sends an email using the **sendMail** endpoint in the Microsoft Graph API. The code is in the [`MailManager.sendWelcomeMail`](https://github.com/microsoftgraph/php-connect-rest-sample/blob/master/src/MailManager.php#L40) function. This is the code that shows how to send the access code in the Authorization header.
 
 ```php
 // Send the email request to the sendmail endpoint, 

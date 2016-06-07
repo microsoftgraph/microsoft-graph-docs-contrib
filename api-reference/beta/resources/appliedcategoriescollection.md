@@ -14,7 +14,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.appliedcategoriescollection"
+  "@odata.type": "microsoft.graph.appliedCategoriesCollection"
 }-->
 
 ```json

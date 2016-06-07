@@ -20,6 +20,8 @@ A message in a mailFolder.
 |[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 
 ### Properties
@@ -37,6 +39,8 @@ A message in a mailFolder.
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String||
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
+|inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
+|internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
 |isRead|Boolean|Indicates whether the message has been read.|
@@ -71,6 +75,7 @@ When a message is being composed, in most cases, the From and Sender properties 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection|The [fileAttachment](fileattachment.md) and [itemAttachment](itemattachment.md) attachments for the message.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 
 
 ### JSON representation
@@ -100,6 +105,8 @@ Here is a JSON representation of the resource
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
+  "inferenceClassification": "String",
+  "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,

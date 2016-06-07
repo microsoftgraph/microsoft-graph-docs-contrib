@@ -1,20 +1,21 @@
 # Create Message
 
-Use this API to create a new Message.
+Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
+
+You can include an [attachment](../resources/attachment.md) while creating the draft in the same **Post** call.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API:
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/messages
-POST /drive/root/createdByUser/messages
-POST /drive/root/lastModifiedByUser/messages
-
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer <token>. Required.  |
+| Content-Type  | application/json  |
 
 ### Request body
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
@@ -41,11 +42,17 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
-  "bodyPreview": "bodyPreview-value"
+  "bodyPreview": "bodyPreview-value",
+  "attachments": [
+      {
+        "@odata.type": "#microsoft.graph.fileAttachment",
+        "name": "menu.txt",
+        "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+      }
+  ]
 }
 ```
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
@@ -57,6 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 248
 
@@ -66,11 +74,17 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": {
-    },
+    "contentType": "",
     "content": "content-value"
   },
-  "bodyPreview": "bodyPreview-value"
+  "bodyPreview": "bodyPreview-value",
+  "attachments": [
+      {
+        "@odata.type": "#microsoft.graph.fileAttachment",
+        "name": "menu.txt",
+        "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+      }
+  ]
 }
 ```
 

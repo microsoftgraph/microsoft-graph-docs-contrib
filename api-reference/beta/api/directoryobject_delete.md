@@ -2,7 +2,9 @@
 
 Delete directoryObject.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: _Directory.AccessAsUser.All_
+
+**NOTE:** Users, groups, and contacts are types of directory object. As a result,if you need to delete users, the following **scope** can and should be used: _User.ReadWrite.All_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,7 +31,7 @@ Here is an example of the request.
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/manager
+DELETE https://graph.microsoft.com/beta/directoryObject/<id>
 ```
 ##### Response
 Here is an example of the response. 

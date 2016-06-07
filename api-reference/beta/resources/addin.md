@@ -11,13 +11,13 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.addin"
+  "@odata.type": "microsoft.graph.addIn"
 }-->
 
 ```json
 {
   "id": "guid",
-  "properties": [{"@odata.type": "microsoft.graph.keyValue"}],
+  "properties": [{"@odata.type": "microsoft.graph.keyvalue"}],
   "type": "string"
 }
 

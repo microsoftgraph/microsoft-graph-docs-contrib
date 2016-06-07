@@ -2,7 +2,7 @@
 
 Delete entity.
 ### Prerequisites
-One of the following **scopes** is required to execute this API: 
+One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -25,16 +25,16 @@ If successful, this method returns `204, No Content` response code. It does not 
 ##### Request
 Here is an example of the request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "delete_entity"
 }-->
 ```http
 
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true
 } -->
 ```http

@@ -2,14 +2,13 @@
 
 Delete mailFolder.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: 
+*Mail.ReadWrite*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/mailFolders/<id>
 DELETE /users/<id | userPrincipalName>/mailFolders/<id>
-DELETE /drive/root/createdByUser/mailFolders/<id>
-DELETE /drive/root/lastModifiedByUser/mailFolders/<id>
-
 ```
 ### Request headers
 | Name       | Type | Description|
