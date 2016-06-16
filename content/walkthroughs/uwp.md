@@ -8,11 +8,11 @@ The sample contains a very simple user interface, consisting of a top command ba
 
 The **send mail** button is disabled when the user has not connected:
 
-![](images/SignedOut.png)
+![Screen showing the connect button enabled and the send mail button disabled](images/SignedOut.png)
 
 The top command bar contains a disconnect button when the user has connected:
 
-![](images/SignedIn.png)
+![Screen showing the connected user's email address and the send mail button enabled](images/SignedIn.png)
 
 All of the sample's UI strings are stored in the Resources.resw file inside the Assets folder.
 
