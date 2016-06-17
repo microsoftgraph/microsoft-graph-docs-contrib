@@ -55,6 +55,7 @@ By default, each meeting time suggestion is returned in UTC.
 ### Example
 
 The following example shows how to find time to meet at a pre-determined location, and request a reason for each suggestion, by specifying the following parameters in the request body:
+
 - **attendees**
 - **locationConstraint**
 - **timeConstraint**
