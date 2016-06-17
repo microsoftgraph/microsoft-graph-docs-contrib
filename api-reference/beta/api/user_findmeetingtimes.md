@@ -23,9 +23,10 @@ POST /me/findMeetingTimes
 POST /users/<id|userPrincipalName>/findMeetingTimes
 ```
 ### Request headers
-| Name       | Description|
+| Name       | Value|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
+| Prefer: outlook.timezone | A string representing a specific time zone for the response, for example, "Pacific Standard Time". |
 
 
 ### Request body
@@ -38,7 +39,7 @@ calculates the best possible meeting times, and returns any meeting suggestions.
 |:---------------|:--------|:----------|
 |attendees|[attendeeBase](../resources/attendeebase.md) collection|A collection of attendees or resources for the meeting. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer.|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place.|
-|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|The start and end time range in which the meeting should occur.|
+|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|The start and end time range in which the meeting should occur. You can specify a time zone as part of the **start** and **end** properties for this parameter. However, this time zone affects only the **timeConstraint** parameter; the time values returned in the response, if any, are still in UTC by default. You can use the `Prefer: outlook.timezone` request header to specify a specific time zone for the time values in the response. |
 |meetingDuration|Edm.Duration|The length of the meeting, denoted in [ISO8601](http://www.iso.org/iso/iso8601) format. For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, 'H' is the hour designator. If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes. |
 |maxCandidates|Edm.Int32|The maximum number of meeting time suggestions to be returned.|
 |isOrganizerOptional|Edm.Boolean|`True` if the organizer's attendance is not necessary, `false` otherwise.|
@@ -63,6 +64,9 @@ The following example shows how to find time to meet at a pre-determined locatio
 - **returnSuggestionHints**
 
 By setting the **returnSuggestionHints** parameter, you also get an explanation in the **suggestionHint** property for each suggestion, if **findMeetingTimes** returns any suggestion.
+
+Notice that the request specifies time in the PST time zone, and the response returns meeting time suggestions in UTC, by default. You can use the `Prefer: outlook.timezone` request 
+header to specify PST as well for the time values in the response.
 
 ##### Request
 Here is the example request.
@@ -133,12 +137,12 @@ Content-type: application/json
          "meetingTimeSlot":{
             "start":{
                "date":"2016-06-20",
-               "time":"11:00:00.0000000",
+               "time":"15:00:00.0000000",
                "timeZone":"UTC"
             },
             "end":{
                "date":"2016-06-20",
-               "time":"13:00:00.0000000",
+               "time":"17:00:00.0000000",
                "timeZone":"UTC"
             }
          },
@@ -166,12 +170,12 @@ Content-type: application/json
          "meetingTimeSlot":{
             "start":{
                "date":"2016-06-20",
-               "time":"15:00:00.0000000",
+               "time":"17:00:00.0000000",
                "timeZone":"UTC"
             },
             "end":{
                "date":"2016-06-20",
-               "time":"17:00:00.0000000",
+               "time":"19:00:00.0000000",
                "timeZone":"UTC"
             }
          },
