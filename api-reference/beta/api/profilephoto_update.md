@@ -1,8 +1,11 @@
 # Update profilephoto
 
-Update the photo for signed-in **user**, **group** or a **contact**. Since there
+Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
 you can add to under 4MB.
+
+Use only PUT for this operation in the beta version.
+
 ### Prerequisites
 One of the following **scopes** is required to execute this API for:
 
@@ -13,13 +16,13 @@ One of the following **scopes** is required to execute this API for:
 ### HTTP request to update the photo
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/photo/$value
-PATCH /users/<id | userPrincipalName>/photo/$value
-PATCH /groups/<id>/photo/$value
-PATCH /me/contacts/<id>/photo/$value
-PATCH /users/<id | userPrincipalName>/contacts/<id>/photo/$value
-PATCH /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
-PATCH /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
+PUT /me/photo/$value
+PUT /users/<id | userPrincipalName>/photo/$value
+PUT /groups/<id>/photo/$value
+PUT /me/contacts/<id>/photo/$value
+PUT /users/<id | userPrincipalName>/contacts/<id>/photo/$value
+PUT /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
+PUT /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
 ```
 ### Request headers
 | Header       | Value |
@@ -40,7 +43,7 @@ Here is an example of the request.
   "name": "update_profilephoto"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/photo/$value
+PUT https://graph.microsoft.com/beta/me/photo/$value
 Content-type: image/jpeg
 
 Binary data for the image
