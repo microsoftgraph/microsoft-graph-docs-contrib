@@ -111,7 +111,7 @@ content-length: 169
 Here, instead of the entire property sets on the `user` entity, only the `aboutMe`, `displayName` and `skills` properties, are returned.
 
 ###Traversal to another resource via relationship
-A manager holds a `directReports` relatioinship with  the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
+A manager holds a `directReports` relationship with the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
