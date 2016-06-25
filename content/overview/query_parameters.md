@@ -100,7 +100,7 @@ For example, to return the users in the organization ordered by their display na
 GET https://graph.microsoft.com/v1.0/users?$orderBy=displayName
 ``` 
 
-You can also sort by complex type entities. The following example gets messages and sorts them by the **address** field of the **from** property, which is of the complext type **emailAddress**:
+You can also sort by complex type entities. The following example gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderBy=from/emailAddress/address
