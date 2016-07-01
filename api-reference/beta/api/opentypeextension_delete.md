@@ -1,6 +1,6 @@
-# Delete extension
+# Delete data extension
 
-Delete an open type data extension from the specified instance of a resource. 
+Delete a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
 
 The resource can be a message, calendar event, or contact of the signed-in user's on Office 365 or
 Outlook.com. Or, it can be an event or post for an Office 365 group.

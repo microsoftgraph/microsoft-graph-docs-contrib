@@ -1,6 +1,6 @@
-# Create extension
+# Create data extension
 
-Create an open type data extension and add custom properties in a new or existing instance of a resource. 
+Create a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties in a new or existing instance of a resource. 
 
 The resource can be a message, calendar event, or contact in the signed-in user's mailbox on Office 365 or
 Outlook.com. Or, it can be an event or post for an Office 365 group. 
