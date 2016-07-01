@@ -3,6 +3,7 @@
 Create one or more single-value extended properties in a new or existing instance of a resource. 
 
 The following user resources are supported:
+
 - [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
 - [event](../resources/event.md)
@@ -11,6 +12,7 @@ The following user resources are supported:
 - [contactFolder](../resources/contactfolder.md) 
 
 As well as the following group resources:
+
 - group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)
 - group [post](../resources/post.md) 

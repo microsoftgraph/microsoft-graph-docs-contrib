@@ -7,6 +7,7 @@ property. This is currently the only way to get the [singleValueLegacyExtendedPr
 object that represents an extended property.
 
 The following user resources are supported:
+
 - [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
 - [event](../resources/event.md)
@@ -15,6 +16,7 @@ The following user resources are supported:
 - [contactFolder](../resources/contactfolder.md) 
 
 As well as the following group resources:
+
 - group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)
 - group [post](../resources/post.md) 
@@ -25,6 +27,7 @@ Office 365 Data Extensions or extended properties, and how to specify extended p
 ### Prerequisites
 One of the following **scopes** is required to execute this API, depending on the resource you're
 getting:
+
 - _Mail.Read_
 - _Calendars.Read_
 - _Contacts.Read_
