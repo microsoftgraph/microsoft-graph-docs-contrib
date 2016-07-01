@@ -1,6 +1,6 @@
-# Get extension
+# Get data extension
 
-Get a specific **openTypeExtension** object or objects identified by name or fully qualified name.
+Get a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
 
 Resources that support open type Office 365 data extensions include a message, calendar event, or contact of the 
 signed-in user's on Office 365 or Outlook.com. Or, it can be an event or post for an Office 365 group.
