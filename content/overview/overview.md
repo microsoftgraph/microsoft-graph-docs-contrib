@@ -8,7 +8,7 @@ Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs
 The Microsoft Graph gives you:
 
 - A unified API endpoint for accessing aggregated data from multiple Microsoft cloud services in a single response 
-- Seamless navigation between entities and and the relationships among them 
+- Seamless navigation between entities and the relationships among them 
 - Access to intelligence and insights coming from the Microsoft cloud
 
 And all this using a single authentication token.
