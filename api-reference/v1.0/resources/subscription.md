@@ -24,7 +24,7 @@ Here is a JSON representation of the resource.
   "resource": "string",
   "expirationDateTime": "string (timestamp)",
   "id": "string (identifier)",
-  "clientState": "string",
+  "clientState": "string"
 }
 
 ```
