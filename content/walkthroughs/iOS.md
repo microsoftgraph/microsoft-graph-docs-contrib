@@ -21,7 +21,7 @@ To call the Microsoft Graph API, your iOS app must complete the following:
 Before you can start working with Office 365, you need to register your application and set permissions to use Microsoft Graph services.
 With just a few clicks, you can register your application to access a user's work or school account using the [Application Registration Tool](https://dev.office.com/app-registration). To manage it you will need to go to the [Microsoft Azure Management portal](https://manage.windowsazure.com)
 
-Alternatively, see the section **Register your native app with the Azure Management Portal** in the article [Manually register your app with Azure AD so it can access Office 365 APIs](https://msdn.microsoft.com/office/office365/howto/add-common-consent-manually) for instructions on how to manually register the app, keep in mind the following details:
+Alternatively, see the section **Register your native app with the Azure Management Portal** in the article [Manually register your app with Azure AD so it can access Office 365 APIs](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually) for instructions on how to manually register the app, keep in mind the following details:
 
 * For the registration you'll need to supply a redirect URI. This a required value that specifies where a user will be redirected after a successful authentication attempt. If you don't specify the correct redirect URI, the authentication request will fail.
 * In the registration, the app must be granted the **Send mail as signed-in user permission** for the **Microsoft Graph**.  
