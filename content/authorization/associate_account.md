@@ -14,7 +14,7 @@ This article guides you through associating your Office 365 account with Azure A
 If you don't have an existing Office 365 for business account, you can:
 
 - Sign up for an [Office 365 for business plans](http://products.office.com/en-us/business/compare-office-365-for-business-plans) listed above, or
-- Start with a [trial of an Office 365 Developer account](https://profile.microsoft.com/RegSysProfileCenter/wizardnp.aspx?wizid=14b845d0-938c-45af-b061-f798fbb4d170&lcid=1033).
+- [Join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://profile.microsoft.com/RegSysProfileCenter/wizardnp.aspx?wizid=14b845d0-938c-45af-b061-f798fbb4d170&lcid=1033).
 
 **Microsoft Azure subscription** 
 
