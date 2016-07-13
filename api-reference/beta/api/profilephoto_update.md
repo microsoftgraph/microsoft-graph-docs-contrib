@@ -1,6 +1,6 @@
 # Update profilephoto
 
-Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there
+Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
 you can add to under 4MB.
 
@@ -9,7 +9,8 @@ Use only PUT for this operation in the beta version.
 ### Prerequisites
 One of the following **scopes** is required to execute this API for:
 
-- Profile photo of signed-in **user** - *User.ReadWrite*
+-	Profile photo of any user in the tenant including the signed-in user - User.ReadWrite.All
+-	Profile photo of specifically the signed-in user - User.ReadWrite, User.ReadWrite.All
 - Profile photo of a **group** - *Group.ReadWrite.All*
 - Photo of a **contact** - *Contacts.ReadWrite*
 
