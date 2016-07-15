@@ -29,7 +29,7 @@ The following are some examples of common queries using Microsoft Graph API:
 |   GET my files|	`https://graph.microsoft.com/v1.0/me/drive/root/children` |
 |   GET my photo	 | `https://graph.microsoft.com/v1.0/me/photo/$value` |
 |   GET my mail |	`https://graph.microsoft.com/v1.0/me/messages` |
-|   GET my high imprtance email | `https://graph.microsoft.com/v1.0/me/messages?$filter=importance%20eq%20'high'` |
+|   GET my high importance email | `https://graph.microsoft.com/v1.0/me/messages?$filter=importance%20eq%20'high'` |
 |   GET my calendar |	`https://graph.microsoft.com/v1.0/me/calendar` |
 |   GET my manager	| `https://graph.microsoft.com/v1.0/me/manager` |
 |   GET last user to modify file foo.txt |	`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser` |
