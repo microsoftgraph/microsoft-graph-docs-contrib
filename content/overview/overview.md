@@ -29,6 +29,7 @@ The following are some examples of common queries using Microsoft Graph API:
 |   GET my files|	`https://graph.microsoft.com/v1.0/me/drive/root/children` |
 |   GET my photo	 | `https://graph.microsoft.com/v1.0/me/photo/$value` |
 |   GET my mail |	`https://graph.microsoft.com/v1.0/me/messages` |
+|   GET my high imprtance email | `https://graph.microsoft.com/v1.0/me/messages?$filter=importance%20eq%20'high'` |
 |   GET my calendar |	`https://graph.microsoft.com/v1.0/me/calendar` |
 |   GET my manager	| `https://graph.microsoft.com/v1.0/me/manager` |
 |   GET last user to modify file foo.txt |	`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser` |
@@ -36,11 +37,10 @@ The following are some examples of common queries using Microsoft Graph API:
 |   GET users in my organization	 | `https://graph.microsoft.com/v1.0/users` |
 |   GET group conversations |	`https://graph.microsoft.com/v1.0/groups/<id>/conversations` |
 |   GET people related to me	| `https://graph.microsoft.com/beta/me/people` |
-|   GET my tasks	| `https://graph.microsoft.com/beta/me/tasks` |
-|   GET my notes |	`https://graph.microsoft.com/beta/me/notes/notebooks` |
 |   GET files trending around me |	`https://graph.microsoft.com/beta/me/trendingAround` |
 |   GET people I am working with	 | `https://graph.microsoft.com/beta/me/workingWith` |
-
+|   GET my tasks	| `https://graph.microsoft.com/beta/me/tasks` |
+|   GET my notes |	`https://graph.microsoft.com/beta/me/notes/notebooks` |
 
 <!-- <a name="msg_roof"> </a> -->
 
