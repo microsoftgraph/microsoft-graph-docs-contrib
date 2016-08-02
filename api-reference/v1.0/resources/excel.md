@@ -648,6 +648,7 @@ content-type: application/json;odata.metadata
     ]
   ]
 }
+```
 
 #### Add a table column 
 
