@@ -78,6 +78,7 @@ Here is a JSON representation of the resource
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection|The extension properties associated with the application. Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
+|policy|[policy](policy.md) collection|The policies assigned to this application.|
 
 ### Methods
 
