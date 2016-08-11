@@ -51,8 +51,7 @@ Content-length: 383
     "allowSort": true,
     "allowAutoFilter": true,
     "allowPivotTables": true
-  },
-  "password": "password-value"
+  }
 }
 ```
 
