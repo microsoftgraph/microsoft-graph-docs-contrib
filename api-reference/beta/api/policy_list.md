@@ -29,8 +29,7 @@ The following example retrieves all policies.
 Here is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/applications/policies
-Content-Type: application/json
+GET https://graph.microsoft.com/beta/policies
 ```
 
 ##### Response
@@ -39,16 +38,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
-[
-	{
-		"id":"id-value",
-		"alternativeIdentifier":null,
-		"definition":["policy-definition"],
-		"displayName":"name-value",
-		"isOrganizationDefault":boolean-value,
-		"keyCredentials":[key-credentials],
-		"type":"type-value"
-	}
-]
+{
+	"value":[
+		{
+			"id":"id-value",
+			"alternativeIdentifier":null,
+			"definition":["policy-definition"],
+			"displayName":"name-value",
+			"isOrganizationDefault":boolean-value,
+			"keyCredentials":[key-credentials],
+			"type":"type-value"
+		}
+	]
+}
 ```

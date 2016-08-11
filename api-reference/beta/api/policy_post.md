@@ -25,7 +25,7 @@ The following table shows the properties that are required when you create a pol
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|String|The stringified version of the [policy](../resources/policy.md) object.|
+|definition|String|The string version of the [policy](../resources/policy.md) object.|
 |displayName|String|A custom name for the policy.|
 |type|String|Specifies the type of policy. Currently must be either **"NamingPolicy"** or "TokenLifetimePolicy"|
 
@@ -33,7 +33,7 @@ The following table shows the properties that are required when you create a pol
 If successful, this method returns `201, Created` response code and [policy](../resources/policy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.  
 
 ### Example
-The following example creates a new token lifetime Policy. notice the stringified definition parameter
+The following example creates a new token lifetime Policy. Notice the string definition parameter
 has escaped double quotes.
 
 ##### Request

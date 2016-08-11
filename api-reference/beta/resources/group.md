@@ -86,7 +86,6 @@ Inherits from [directoryObject](directoryobject.md).
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans owned by the group. A group can own no more than one plan. |
-|policy|[policy](policy.md) collection|The policies that govern the naming of this group's displayName and mailNickname.|
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
 |settings|[directorySetting](directorySetting.md) collection| Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.|
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|

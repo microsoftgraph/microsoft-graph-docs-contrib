@@ -44,24 +44,17 @@ Cache-Control: private
 Content-Type: application/json
 
 {
-	"@odata.type":"#microsoft.graph.policy",
-	"id":"id-value",
-	"alternativeIdentifier":null,
-	"definition":["policy-definition"],
-	"displayName":"name-value",
-	"isOrganizationDefault":boolean-value,
-	"keyCredentials":[key-credentials],
-	"type":"type-value"
+	"value":[
+		{
+			"@odata.type":"#microsoft.graph.policy",
+			"id":"id-value",
+			"alternativeIdentifier":null,
+			"definition":["policy-definition"],
+			"displayName":"name-value",
+			"isOrganizationDefault":boolean-value,
+			"keyCredentials":[key-credentials],
+			"type":"type-value"
+		}
+	]
 }
-
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "message: createReply",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

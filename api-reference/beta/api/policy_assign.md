@@ -2,7 +2,7 @@
 
 Assigns a [policy](../resources/policy.md) to an application or service principal.
 
->Note: Currently, policy assignment only applies to token lifetime Policy, and not naming policy. Naming policies cannot be assigned to groups, as they are globally enforced across all groups within the entire organization and not to specific groups. The different types of policies can be found in [policy](../resources/policy.md).
+>Note: Currently, policy assignment only applies to token lifetime Policy, and not naming policy. Naming policies cannot be assigned to groups, as they are globally enforced across all groups within the entire organization. The different types of policies can be found in [policy](../resources/policy.md).
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
