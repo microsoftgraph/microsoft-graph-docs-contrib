@@ -12,18 +12,18 @@ OneNote support is in preview, so the version is always `beta`.
 
 Only user and group notebooks on Office 365 are supported. Accessing consumer notebooks on OneDrive or SharePoint site-hosted notebooks is currently not supported. 
 
-**User notebooks** To access personal notebooks on OneDrive for Business, use one of the following service root URLs:
+**User notebooks** To access personal notebooks on OneDrive for Business, use one of the following URLs:
 
 ```
-https://graph.microsoft.com/beta/me/notes/ (current user)
-https://graph.microsoft.com/beta/users/<userPrincipalName>/notes/
-https://graph.microsoft.com/beta/users/<id>/notes/
+https://graph.microsoft.com/beta/me/notes/<notebooks | sections | sectionGroups | pages> 
+https://graph.microsoft.com/beta/users/<userPrincipalName>/notes/<notebooks | sections | sectionGroups | pages> 
+https://graph.microsoft.com/beta/users/<id>/notes/<notebooks | sections | sectionGroups | pages> 
 ```
 
 **Group notebooks** To access notebooks that are owned by a group, use the following service root URL:
 
 ```
-https://graph.microsoft.com/beta/groups/<id>/notes/
+https://graph.microsoft.com/beta/groups/<id>/notes/<notebooks | sections | sectionGroups | pages> 
 ```
 
 The following permission scopes provide levels of access to OneNote notebooks. Choosing permission scopes depends both on the location of the notebooks you're targeting and your app's functionality. 
@@ -48,7 +48,7 @@ The following permission scopes provide levels of access to OneNote notebooks. C
 
 **Scopes for groups**
 
-If you're accessing group notebooks, you'll need a Groups permission scope to get the group ID. Currently, these permissions require administrator rights, but less restrictive access for a narrower scope will be available soon.
+If you're accessing group notebooks, you'll need a Groups permission scope to get the group ID. Currently, these permissions require administrator rights.
 
 | Scope (enterprise) | Permission in Azure portal | Description |
 |:-------|:------|:------|
