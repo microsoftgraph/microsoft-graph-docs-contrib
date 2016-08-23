@@ -66,7 +66,7 @@ Content-length: 551
   "id": "7b92124c-9fa9-406f-8b8e-225df8376ba9",
   "inviteRedeemUrl": "https://invitations.microsoft.com/redeem/?tenant=04dcc6ab-388a-4559-b527-fbec656300ea&user=7b92124c-9fa9-406f-8b8e-225df8376ba9&ticket=VV9dmiExBsfRIVNFjb9ITj9VXAd07Ypv4gTg%2f8PiuJs%3d&lc=1033&ver=2.0",
   "invitedUserDisplayName": "yyy",
-  "invitedUserEmailAddress": ""yyy@test.com",
+  "invitedUserEmailAddress": "yyy@test.com",
   "sendInvitationMessage": false,
   "invitedUserMessageInfo": {
      "messageLanguage": null,
