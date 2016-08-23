@@ -45,8 +45,11 @@ Content-type: application/json
       "name": "Pavel Bansky"
     }
   ],
-  "businessPhones": [
-    "+1 732 555 0102"
+  "phones" : [
+    {
+      "number": "+1 732 555 0102",
+      "type": "business"
+    }
   ]
 }
 ```
