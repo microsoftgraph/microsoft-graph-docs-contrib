@@ -22,7 +22,7 @@ Represents an Azure AD invitation object.
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|invitedToGroups|List<[Groups](group.md)>|The groups user is invited you. Currently we only support one group per request.|
+|invitedToGroups|List<[Group](group.md)>|The groups user is invited you. Currently we only support one group per request.|
 |invitedUser|[User](user.md)|The user created as part of the invitation. Read-Only|
 
 ### JSON representation
