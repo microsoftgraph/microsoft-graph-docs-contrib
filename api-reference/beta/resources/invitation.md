@@ -13,7 +13,7 @@ Represents an Azure AD invitation object.
 |:---------------|:--------|:----------|
 |invitedUserDispayName|String|The display name of the user being invited.|
 |invitedUserEmailAddress|String|The email address of the user being invited.|
-|invitedUserMessageInfo|[invitedUserMessageInfo](invitedUserMessageInfo.md)|Additonal message information of the user being invited.|
+|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Additonal message information of the user being invited.|
 |sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited or not.|
 |inviteRedirectUrl|String|The URL user should be redirected to once he redeems his invitation.|
 |inviteRedeemUrl|String|The URL user can use to redeem his invitation. Read-Only|
@@ -22,7 +22,7 @@ Represents an Azure AD invitation object.
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|invitedToGroups|List<[Groups](groups.md)>|The groups user is invited you. Currently we only support one group per request.|
+|invitedToGroups|List<[Groups](group.md)>|The groups user is invited you. Currently we only support one group per request.|
 |invitedUser|[User](user.md)|The user created as part of the invitation. Read-Only|
 
 ### JSON representation
