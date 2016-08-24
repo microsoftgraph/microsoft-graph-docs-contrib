@@ -4,15 +4,6 @@ Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (
 
 A GET operation looks for the specified photo in the user's mailbox on Exchange Online.
 
-The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', 
-'120x120', '240x240', '360x360','432x432', '504x504', and '648x648'. 
-
-You can get the metadata of the largest available photo, or specify a size to get the metadata 
-for that photo size. If the size you request is not available, you can still get a smaller size that 
-the user has uploaded and made available. For example, if the user uploads a photo that is 504x504 pixels, 
-then all but the 648x648 size of photo will be available for download. If the specified size is not available 
-in the user's mailbox, the size of '1x1' is returned with the rest of metadata.
-
 ### Prerequisites
 One of the following **scopes** is required to execute this API for:
 
@@ -43,24 +34,6 @@ GET /users/<id | userPrincipalName>/contacts/<id>/photo
 GET /me/contactfolders/<contactFolderId>/contacts/<id>/photo
 GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo
 ```
-
-### HTTP request to get the metadata for a specific photo size
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/photo/<size>
-GET /users/<id | userPrincipalName>/photo/<size>
-GET /groups/<id>/photo/<size>
-GET /me/contacts/<id>/photo/<size>
-GET /users/<id | userPrincipalName>/contacts/<id>/photo/<size>
-GET /me/contactfolders/<contactFolderId>/contacts/<id>/photo/<size>
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/<size>
-```
-
-### Parameters
-| Parameter       | Type | Description|
-|:-----------|:------|:----------|
-|_URL parameters_| | |
-| size  | string  | A photo size. |
 
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
