@@ -48,13 +48,13 @@ GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<i
 ### HTTP request to get the metadata for a specific photo size
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/photo/<size>
-GET /users/<id | userPrincipalName>/photo/<size>
-GET /groups/<id>/photo/<size>
-GET /me/contacts/<id>/photo/<size>
-GET /users/<id | userPrincipalName>/contacts/<id>/photo/<size>
-GET /me/contactfolders/<contactFolderId>/contacts/<id>/photo/<size>
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/<size>
+GET /me/photos/<size>
+GET /users/<id | userPrincipalName>/photos/<size>
+GET /groups/<id>/photos/<size>
+GET /me/contacts/<id>/photos/<size>
+GET /users/<id | userPrincipalName>/contacts/<id>/photos/<size>
+GET /me/contactfolders/<contactFolderId>/contacts/<id>/photos/<size>
+GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photos/<size>
 ```
 
 ### Parameters
@@ -95,6 +95,20 @@ Content-Type: image/jpg
 Contains the binary data of the requested photo. The HTTP response code is 200.
 
 ##### Request 2
+This request gets the 48x48 photo for the signed-in user.
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/photos/48x48/$value
+Content-Type: image/jpg
+```
+
+##### Response 2
+Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
+
+##### Request 3
 This request gets the metadata of the user photo of the signed-in user.
 
 <!-- {
@@ -104,7 +118,7 @@ This request gets the metadata of the user photo of the signed-in user.
 GET https://graph.microsoft.com/beta/me/photo
 ```
 
-##### Response 2
+##### Response 3
 The following response data shows the photo metadata. Note: The response object shown here may be truncated for brevity.
 
 <!-- {
