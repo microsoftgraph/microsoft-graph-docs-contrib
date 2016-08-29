@@ -82,7 +82,7 @@ in **remoteItem** in the following format:
 
 <!-- {"blockType": "ignored"} -->
 ```http
-GET /drives/<remoteItem.driveId>/items/<id>
+GET /drives/<remoteItem.parentReference.driveId>/items/<id>
 ```
 
 <!-- {
