@@ -2,19 +2,19 @@
 
 Represents the user that is a member of a scoped-role.
 
-### Methods
+## Methods
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|string|Display name of the user.|
 |id|string|Unique identifier of the user.|
 |userPrincipalName|string|User principal name of the user.|
 
-### Relationships
+## Relationships
 None
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

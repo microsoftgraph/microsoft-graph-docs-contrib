@@ -9,22 +9,22 @@ If an override exists for a sender and the sender changes his/her display name, 
 If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride_delete.md) the existing override and [creating](inferenceclassification_post_overrides.md) a new one with 
 the new SMTP address is the only way to "update" the override for this sender.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/inferenceClassification/overrides/<id>
 PATCH /users/<id>/inferenceClassification/overrides/<id>
 ```
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, supply the new value for **classifyAs**. For best performance you shouldn't include existing values that are not changing.
 
 | Property	   | Type	|Description|
@@ -32,9 +32,9 @@ In the request body, supply the new value for **classifyAs**. For best performan
 |classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
-### Example
+## Example
 ##### Request
 The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.
 

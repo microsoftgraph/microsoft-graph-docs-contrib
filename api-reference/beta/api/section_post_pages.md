@@ -1,31 +1,31 @@
 # Create page
 
 Create a new [page](../resources/page.md) in the specified section.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:   
 Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/notes/sections/<id>/pages
 POST /users/<id | userPrincipalName>/notes/sections/<id>/pages
 POST /groups/<id>/notes/sections/<id>/pages
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 | Content-Type | string | `text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type. |
 
-### Request body
+## Request body
 In the request body, supply the page HTML content.
 
 The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.
 
-### Response
+## Response
 If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 

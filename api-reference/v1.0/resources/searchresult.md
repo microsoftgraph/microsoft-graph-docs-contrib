@@ -4,13 +4,13 @@ The **searchResult** resource indicates than an item is the response to a search
 
 
 
-### Properties
+## Properties
 
 | Property            | Type   | Description                                                                                                                                                                         |
 |:--------------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | onClickTelemetryUrl | String | A callback URL that is used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

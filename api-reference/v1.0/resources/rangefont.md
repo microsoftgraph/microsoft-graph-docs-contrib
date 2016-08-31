@@ -3,14 +3,14 @@
 This object represents the font attributes (font name, font size, color, etc.) for an object.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
 |[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)	|Update RangeFont object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |bold|boolean|Represents the bold status of font.|
@@ -20,11 +20,11 @@ This object represents the font attributes (font name, font size, color, etc.) f
 |size|double|Font size.|
 |underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

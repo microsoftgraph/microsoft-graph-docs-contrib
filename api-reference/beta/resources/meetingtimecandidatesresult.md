@@ -12,7 +12,7 @@ The following are the possible reasons that [findMeetingTimes](../api/user_findm
 | organizerUnavailable | The **isOrganizerOptional** parameter is false and yet the organizer is not available during the requested time window. |
 | unknown | The reason for not returning any meeting suggestions is not known.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |emptySuggestionsHint|String|A reason for not returning any meeting suggestions. Possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`.|

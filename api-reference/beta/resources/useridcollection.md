@@ -4,7 +4,7 @@ The UserIdCollection* resource represents the list of users ids that a [plan](pl
 
 *Note that this is an Open Type.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

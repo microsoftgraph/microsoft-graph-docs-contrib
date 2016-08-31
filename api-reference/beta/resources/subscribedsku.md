@@ -3,12 +3,12 @@
 Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [directoryObject](directoryobject.md).
 
 
-### Methods
+## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Read properties and relationships of subscribedSku object.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |capabilityStatus|String||
@@ -20,10 +20,10 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 |skuPartNumber|String||
 |appliesTo|String||
 
-### Relationships
+## Relationships
 None
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

@@ -1,10 +1,10 @@
 # Create Event
 
 Use this API to create a new Event in the default or the specified calendar.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's or group's default [calendar](../resources/calendar.md).
 ```http
@@ -25,20 +25,20 @@ A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../r
 POST /me/calendarGroups/<id>/calendars/<id>/events
 POST /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Event](../resources/event.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

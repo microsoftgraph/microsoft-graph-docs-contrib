@@ -5,24 +5,24 @@ Classification of a user's messages to enable focus on those that are more relev
 For more information, see [Manage Focused Inbox](manage_focused_inbox.md).
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Create inferenceClassificationOverride](../api/inferenceclassification_post_overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified as specified in the override.|
 |[List overrides](../api/inferenceclassification_list_overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md) collection| Get the overrides that a user has set up to always classify messages from certain senders in specific ways.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string| Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |overrides|[inferenceClassificationOverride](inferenceclassificationoverride.md) collection| A set of overrides for a user to always classify messages from specific senders in certain ways: `focused`, or `other`. Read-only. Nullable.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

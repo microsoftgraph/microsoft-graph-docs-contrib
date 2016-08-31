@@ -3,7 +3,7 @@
 Represents a point of a series in a chart.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -11,17 +11,17 @@ Represents a point of a series in a chart.
 |[List](../api/chartpoint_list.md) | [ChartPoint](chartpoint.md) collection |Get chartPoint object collection. |
 |[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Retrieve a point based on its position within the series.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |value|object|Returns the value of a chart point. Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |format|[ChartPointFormat](chartpointformat.md)|Encapsulates the format properties chart point. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

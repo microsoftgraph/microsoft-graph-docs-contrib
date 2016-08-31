@@ -4,21 +4,21 @@ Send the message specified in the request body on the fly. You can optionally sa
 
 You can include an [attachment](../resources/attachment.md) in the same **sendMail** action call.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Mail.Send*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/sendMail
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -26,10 +26,10 @@ In the request body, provide a JSON object with the following parameters.
 |Message|[Message](../resources/message.md)|The message to send. Required.|
 |SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Optional. Default is true.|
 
-### Response
+## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

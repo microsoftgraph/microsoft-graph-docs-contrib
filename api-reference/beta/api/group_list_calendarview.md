@@ -1,14 +1,14 @@
 # List calendarView
 
 Retrieve a list of event objects.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-### Query parameters
+## Query parameters
 
 In the request URL, provide the following required query parameters with values.
 
@@ -18,17 +18,17 @@ In the request URL, provide the following required query parameters with values.
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
 
 This method also supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

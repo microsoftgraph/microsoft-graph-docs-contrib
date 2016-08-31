@@ -1,7 +1,7 @@
 # Get itemAttachment
 
 Retrieve the properties and relationships of itemattachment object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 * If accessing attachments in Messages: *Mail.Read*
@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 * If accessing attachments in Group Events or Posts: *Group.Read.All*
 
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 ```http
@@ -55,18 +55,18 @@ Attachments for a [post](../resources/post.md) in a [thread](../resources/conver
 GET /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
 GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [itemAttachment](../resources/itemattachment.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

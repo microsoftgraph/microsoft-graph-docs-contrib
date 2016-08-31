@@ -2,7 +2,7 @@
 
 The **Audio** resource groups audio-related data on an item into a single structure.
 
-### Properties
+## Properties
 
 | Property          | Type    | Description                                                          |
 |:------------------|:--------|:---------------------------------------------------------------------|
@@ -23,7 +23,7 @@ The **Audio** resource groups audio-related data on an item into a single struct
 | trackCount        | number  | The total number of tracks on the original disc for this audio file. |
 | year              | number  | The year the audio file was recorded.                                |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

@@ -3,7 +3,7 @@
 
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -15,7 +15,7 @@
 |[Update](../api/connectorgroup_update.md) | [connectorGroup](connectorgroup.md)	|Update connectorGroup object. |
 |[Delete](../api/connectorgroup_delete.md) | None |Delete connectorGroup object. All connectors must be remove before a conector group can be deleted. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| The type of connectors that will be used with the group. Possible values are: `applicationProxy`.|
@@ -23,13 +23,13 @@
 |isDefault|Boolean| Indicates if the connectorGroup is the default connector group. Only a single connector Group can be the default connectorGroup and is set by the system.|
 |name|String| The name associated with the connectorGroup.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |applications|[application](application.md) collection| Read-only. Nullable.|
 |members|[connector](connector.md) collection| Read-only. Nullable.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

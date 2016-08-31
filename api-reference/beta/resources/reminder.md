@@ -2,7 +2,7 @@
 
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |changeKey|String|Identifies the version of the reminder. Every time the reminder is changed, **changeKey** changes as well. This allows Exchange to apply changes to the correct version of the object.|
@@ -15,7 +15,7 @@
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the reminder is set to occur.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

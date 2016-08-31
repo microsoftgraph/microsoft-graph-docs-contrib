@@ -3,17 +3,17 @@
 Manages the filtering of a table's column.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Apply](../api/filter_apply.md)|None|Apply the given filter criteria on the given column.|
 |[Clear](../api/filter_clear.md)|None|Clear the filter on the given column.|
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |criteria|[FilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|

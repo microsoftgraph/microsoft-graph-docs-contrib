@@ -3,7 +3,7 @@
 Represents an application. Any application that outsources authentication to Azure AD must be registered in a directory. This involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more.  For more information, see [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Inherits from [directoryObject](directoryObject.md).
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -46,7 +46,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property     | Type |Description|
 |:---------------|:--------|:----------|
 |appId|String|The unique identifier for the application.|
@@ -73,7 +73,7 @@ Here is a JSON representation of the resource
 |samlMetadataUrl|String|The URL to the SAML metadata for the application.|
 |onPremisesPublishing|[onPremisesPublishing](onpremisespublishing.md)| The on-premises publishing settings used with Azure AD Application Proxy|
 
-### Relationships
+## Relationships
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
@@ -81,7 +81,7 @@ Here is a JSON representation of the resource
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the applicaiton is using with Azure AD Application Proxy. Nullable.|
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|

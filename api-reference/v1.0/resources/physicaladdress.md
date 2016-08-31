@@ -3,7 +3,7 @@
 Represents the street address of a resource such as a contact or event.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |city|String|The city.|
@@ -12,7 +12,7 @@ Represents the street address of a resource such as a contact or event.
 |state|String|The state.|
 |street|String|The street.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

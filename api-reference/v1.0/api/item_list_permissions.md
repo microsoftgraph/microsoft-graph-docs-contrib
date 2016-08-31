@@ -17,13 +17,13 @@ be available for every caller.
 * Permission properties that contain secrets (e.g. `shareId` and `webUrl`)
   are only returned for callers that are able to create the Permission.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/root/permissions
@@ -31,7 +31,7 @@ GET /me/drive/items/<id>/permissions
 GET /groups/<id>/drive/items/<id>/permissions
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -39,14 +39,14 @@ GET /groups/<id>/drive/items/<id>/permissions
 | if-none-match | string | If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned. |
 
 
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters)
 to help customize the response.
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of
 [permission](../resources/permission.md) objects in the response body.
 
@@ -57,7 +57,7 @@ Callers can differentiate if the permission is inherited or not by checking the
 **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md)
 resource referencing the ancestor that the permission is inherited from.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

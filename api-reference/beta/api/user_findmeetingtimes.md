@@ -14,22 +14,22 @@ and `resource` for a resource in the corresponding **type** property, as part of
 [timeConstraint](../resources/timeConstraint.md). 
 
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Calendars.Read*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/findMeetingTimes
 POST /users/<id|userPrincipalName>/findMeetingTimes
 ```
-### Request headers
+## Request headers
 | Name       | Value|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 | Prefer: outlook.timezone | A string representing a specific time zone for the response, for example, "Pacific Standard Time". |
 
 
-### Request body
+## Request body
 All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body. 
 Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action 
 calculates the best possible meeting times, and returns any meeting suggestions.
@@ -45,7 +45,7 @@ calculates the best possible meeting times, and returns any meeting suggestions.
 |isOrganizerOptional|Edm.Boolean|`True` if the organizer's attendance is not necessary, `false` otherwise.|
 |returnSuggestionHints|Edm.Boolean|`True` to return a reason for each meeting suggestion in the **suggestionHint** property. The default is `false` to not return that property.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and a [meetingTimeCandidatesResult](../resources/meetingtimecandidatesresult.md) in the response body. 
 
 A **meetingTimeCandidatesResult** includes a collection of meeting suggestions and an **emptySuggestionsHint** property. Each suggestion is defined 
@@ -53,7 +53,7 @@ as a [meetingTimeCandidate](../resources/meetingtimecandidate.md), with attendee
 
 By default, each meeting time suggestion is returned in UTC. 
 
-### Example
+## Example
 
 The following example shows how to find time to meet at a pre-determined location, and request a reason for each suggestion, by specifying the following parameters in the request body:
 

@@ -2,14 +2,14 @@
 
 The recurrence pattern and range.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |pattern|[RecurrencePattern](recurrencepattern.md)|The frequency of an event.|
 |range|[RecurrenceRange](recurrencerange.md)|The duration of an event.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

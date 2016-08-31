@@ -1,31 +1,31 @@
 # Delete bucket
 
 Delete bucket.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
  
 Group.ReadWrite.All
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /buckets/<id>
 
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Value should be set to "Bearer (access-token)" |
 | If-Match | string | Value should be set to the ETag of the object |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

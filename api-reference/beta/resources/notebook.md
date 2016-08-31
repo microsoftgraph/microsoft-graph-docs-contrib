@@ -2,7 +2,7 @@
 
 A OneNote notebook.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -33,7 +33,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|String|The user who created the notebook. Read-only.|
@@ -50,13 +50,13 @@ Here is a JSON representation of the resource
 |self|String|The endpoint where you can get details about the notebook. Read-only.|
 |userRole|String|Possible values are: `Owner`, `Contributor`, `Reader`, `None`. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in the notebook. Read-only. Nullable.|
 |sections|[Section](section.md) collection|The sections in the notebook. Read-only. Nullable.|
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

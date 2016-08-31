@@ -2,27 +2,27 @@
 
 Use this API to get the members list (user and group) in an administrative unit.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 
-### HTTP request
+## HTTP request
 
 ```http
 GET /administrativeUnits/<id>/members
 GET /administrativeUnits/<id>/members/$ref
 ```
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <token>. Required.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md) and/or [group](../resources/group.md) objects in the response body.  Instead, if you put `$ref` at the end of the request, the response will contain a collection of `@odata.id` links/URLs to the members.
 
-### Examples
+## Examples
 ##### List member objects
 The following request will list the members of the administrative unit, returning a collection of users and/or groups.
 

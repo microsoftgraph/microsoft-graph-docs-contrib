@@ -3,7 +3,7 @@
 Represents a privileged role assignment for a particular user. 
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -15,7 +15,7 @@ Represents a privileged role assignment for a particular user.
 |[makeEligible](../api/privilegedroleassignment_makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Make the role assignment as eligible.|
 |[my](../api/privilegedroleassignment_my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) collection|Get the current user's privileged role assignments.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.|
@@ -25,12 +25,12 @@ Represents a privileged role assignment for a particular user.
 |roleId|string|Role identifier. In GUID string format.|
 |userId|string|User identifier. In GUID string format.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Read-only. Nullable. The associated role information.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

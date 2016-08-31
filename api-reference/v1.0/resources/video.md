@@ -13,7 +13,7 @@ The **video** resource indicates an item is a video media file and provides deta
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

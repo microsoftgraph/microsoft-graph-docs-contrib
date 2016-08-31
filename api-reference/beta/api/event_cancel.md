@@ -11,10 +11,10 @@ error message:
 This action differs from [Delete](event_delete.md) in that **Cancel** is available to only the organizer, and lets
 the organizer send a custom message to the attendees about the cancellation.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/<id>/cancel
@@ -34,23 +34,23 @@ POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/ca
 POST /me/calendargroups/<id>/calendars/<id>/events/<id>/cancel
 POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/cancel
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment about the cancellation sent to all the attendees. Optional.|
 
-### Response
+## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

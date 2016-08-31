@@ -12,10 +12,10 @@ and then [send](../api/message_send.md) the draft message.
 - You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying 
 neither will return an HTTP 400 Bad Request error.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Send*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/forward
@@ -23,13 +23,13 @@ POST /users/<id | userPrincipalName>/messages/<id>/forward
 POST /me/mailFolders/<id>/messages/<id>/forward
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/forward
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -38,10 +38,10 @@ In the request body, provide a JSON object with the following parameters.
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-### Response
+## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
-### Example
+## Example
 The following example sets the **isDeliveryReceiptRequested** property to true, adds a comment and forwards the message.
 ##### Request
 Here is an example of the request.

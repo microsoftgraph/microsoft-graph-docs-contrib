@@ -3,14 +3,14 @@
 Settings for the primary mailbox of the signed-in user.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
 |language|[localeInfo](localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeZone|string|The default time zone for the user's mailbox.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

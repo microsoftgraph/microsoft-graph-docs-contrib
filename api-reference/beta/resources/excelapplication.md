@@ -3,23 +3,23 @@
 Represents the Excel application that manages the workbook.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Application](../api/excelapplication_get.md) | [Application](application.md) |Read properties and relationships of application object.|
 |[Calculate](../api/excelapplication_calculate.md)|None|Recalculate all currently opened workbooks in Excel.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |calculationMode|string|Returns the calculation mode used in the workbook. Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`. Read-only.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

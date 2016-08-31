@@ -4,7 +4,7 @@ Here is the list of methods that are provided by [Privileged Identity Management
 
 The service is built on top of OData. To filter the results from the query, use the standard OData ``$filter`` expressions in the URIs.
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

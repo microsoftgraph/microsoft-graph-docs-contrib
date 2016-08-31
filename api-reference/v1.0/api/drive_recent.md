@@ -4,7 +4,7 @@ List a set of items that have been recently used by the signed in user. This lis
 includes items that are in the user's drive as well as items they have access to
 from other drives.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
@@ -16,16 +16,16 @@ One of the following **scopes** is required to execute this API:
 GET /me/drive/recent
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Authorization | string | Bearer <token>. Required.                                                                                                                                                                         |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Example
+## Example
 
 <!-- { "blockType": "request", "name": "drive-recent", "scopes": "files.read" } -->
 ```http

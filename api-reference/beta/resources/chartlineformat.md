@@ -3,7 +3,7 @@
 Enapsulates the formatting options for line elements.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -11,16 +11,16 @@ Enapsulates the formatting options for line elements.
 |[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
 |[Clear](../api/chartlineformat_clear.md)|None|Clear the line format of a chart element.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |color|string|HTML color code representing the color of lines in the chart.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

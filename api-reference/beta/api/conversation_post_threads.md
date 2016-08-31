@@ -7,27 +7,27 @@ to that thread. Or, if you get the post ID, you can also [reply](post_reply.md) 
 
 Note: You can also [start a new conversation by first creating a thread](group_post_threads.md).
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API:
 *Group.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/conversations/<id>/threads
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

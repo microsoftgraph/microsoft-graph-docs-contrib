@@ -3,33 +3,33 @@
 Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation 
 in the request, or, you can specify just the thread without the parent conversation.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/threads/<id>/reply
 POST /groups/<id>/conversations/<id>/threads/<id>/reply
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |post|[post](../resources/post.md)|The new post that is being replied with.|
 
-### Response
+## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

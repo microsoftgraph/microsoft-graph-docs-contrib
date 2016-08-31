@@ -1,10 +1,10 @@
 # Update event
 
 Update the properties of event object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/events/<id>
@@ -24,12 +24,12 @@ PATCH /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>
 PATCH /me/calendargroups/<id>/calendars/<id>/events/<id>
 PATCH /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -50,9 +50,9 @@ In the request body, supply the values for relevant fields that should be update
 |start|DateTimeTimeZone|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
 |subject|String|The text of the event's subject line.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

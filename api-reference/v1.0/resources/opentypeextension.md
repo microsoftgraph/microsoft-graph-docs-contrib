@@ -12,7 +12,7 @@ The **extensionName** property is the only pre-defined, writable property for al
 sure extension names are unique is to use a reverse domain name system (DNS) method that is dependent on 
 _your own domain_, for example, `Com.Contoso.Contact`. Do not use the Microsoft domain in an extension name.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -31,17 +31,17 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |extensionName|String|A unique text identifier for an open type data extension. Required.|
 |id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

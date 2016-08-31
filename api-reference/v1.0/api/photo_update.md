@@ -1,9 +1,9 @@
 # Update photo
 
 Update the properties of photo object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<id | userPrincipalName>/photo
@@ -11,21 +11,21 @@ PATCH /groups/<id>/photo
 PATCH /drive/root/createdByUser/photo
 ```
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [photo](../resources/photo.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

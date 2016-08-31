@@ -1,10 +1,10 @@
 # Get resource
 
 Retrieve the binary data of a file or image [resource](../resources/resource.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:  
 Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/notes/resources/<id>/content
@@ -12,18 +12,18 @@ GET /users/<id | userPrincipalName>/notes/resources/<id>/content
 GET /groups/<id>/notes/resources/<id>/content
 ```
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.
 
 Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

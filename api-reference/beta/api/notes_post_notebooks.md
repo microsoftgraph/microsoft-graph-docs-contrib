@@ -1,32 +1,32 @@
 # Create notebook
 
 Create a new OneNote [notebook](../resources/notebook.md).
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:   
 Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/notes/notebooks
 POST /users/<id | userPrincipalName>/notes/notebooks
 POST /groups/<id>/notes/notebooks
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 | Content-Type | string | `application/json` |
 
-### Request body
+## Request body
 In the request body, supply a name for the notebook. 
 
 Notebook names must be unique. The name cannot contain more than 128 characters or contain the following characters:  ?*\/:<>|'"
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

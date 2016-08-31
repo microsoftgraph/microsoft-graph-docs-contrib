@@ -5,30 +5,30 @@ Use this API to create a new plan.
 Note that you need to have created a group and be a member of it before you can make the group an owner of the plan. Read the [overview](../resources/tasks_overview.md) to understand the relationship between group, plan and task.
 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
  
 Group.ReadWrite.All
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /plans
 
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Value should be set to "Bearer (access-token)" |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [plan](../resources/plan.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [plan](../resources/plan.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

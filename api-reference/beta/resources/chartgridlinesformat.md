@@ -3,13 +3,13 @@
 Encapsulates the format properties for chart gridlines.
 
 
-### Methods
+## Methods
 None
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |line|[ChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|

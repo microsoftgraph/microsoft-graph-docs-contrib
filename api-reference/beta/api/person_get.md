@@ -1,16 +1,16 @@
 # Get person
 
 Retrieve the properties and relationships of a person object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *People.Read*; *User.ReadBasic.All*
  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/people/<id>
 GET /users/<id>/people/<id>
 ```
-### Optional query parameters
+## Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.|
@@ -20,16 +20,16 @@ GET /users/<id>/people/<id>
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
 |$top|int|Number of results to be returned.|
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <code>|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [person](../resources/person.md) object in the response body.
-### Examples
+## Examples
 #### Browse
 The following request gets the people most relevant to the user, based on communication, collaboration, and business relationships. By default, each response returns 10 records, but you can change this using the *$top* parameter. This request requires the *People.Read* scope.
 

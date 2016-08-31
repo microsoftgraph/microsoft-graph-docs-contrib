@@ -3,10 +3,10 @@
 Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the 
 occurrences and exceptions of the event in the specified time range.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.Read*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -26,7 +26,7 @@ GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/ins
 GET /me/calendargroups/<id>/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-### Query parameters
+## Query parameters
 
 In the request URL, provide the following required query parameters with values.
 
@@ -36,17 +36,17 @@ In the request URL, provide the following required query parameters with values.
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
 
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

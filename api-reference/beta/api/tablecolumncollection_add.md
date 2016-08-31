@@ -1,22 +1,22 @@
 # TableColumnCollection: add
 
 Adds a new column to the table.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables(<id|name>)/columns/add
 POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns/add
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -24,10 +24,10 @@ In the request body, provide a JSON object with the following parameters.
 |index|number|Specifies the relative position of the new column. The previous column at this position is shifted to the right. The index value should be equal to or less than the last column's index value, so it cannot be used to append a column at the end of the table. Zero-indexed.|
 |values|(boolean or string or number)|Optional. A 2-dimensional array of unformatted values of the table column.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

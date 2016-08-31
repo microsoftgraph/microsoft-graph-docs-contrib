@@ -5,24 +5,24 @@ An extended property that contains a collection of values.
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 Office 365 Data Extensions or extended properties, and how to specify extended properties.
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Post](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md), but not group [post](../resources/post.md). | Create a **multiValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
 |[Get](../api/multivaluelegacyextendedproperty_get.md) |A supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)) expanded with a [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand`.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string|The property identifier. Read-only.|
 |value|string collection|A collection of property values.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

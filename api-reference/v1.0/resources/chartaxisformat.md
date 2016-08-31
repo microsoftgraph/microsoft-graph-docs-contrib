@@ -3,12 +3,12 @@
 Encapsulates the format properties for the chart axis.
 
 
-### Methods
+## Methods
 None
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |font|[ChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|

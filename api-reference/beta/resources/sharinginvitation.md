@@ -3,7 +3,7 @@
 Represents information about a sharing invitation for a set of permissions. This object is read-only.
 
 
-### Properties
+## Properties
 
 | Property Name  | Type                          | Description                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
@@ -11,7 +11,7 @@ Represents information about a sharing invitation for a set of permissions. This
 | invitedBy      | [identitySet](identityset.md) | Provides information about who sent the invitation that created this permission, if that information is available. Read-only. |
 | signInRequired | Boolean                       | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.                     |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

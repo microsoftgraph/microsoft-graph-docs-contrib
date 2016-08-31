@@ -2,7 +2,7 @@
 
 The Plan resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [tasks](task.md). It also can have a collection of [buckets](bucket.md). Each plan object has a [details](plandetails.md) object which can contain more information about the plan. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -28,7 +28,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|String|Read-only. User id by which the plan is created.|
@@ -36,7 +36,7 @@ Here is a JSON representation of the resource
 |owner|String|[Group](group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
 |title|String| Required. Title of the plan. This is usually set the name of the group owning the plan.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedToTaskBoard|[planTaskBoard](plantaskboard.md)| Read-only. Used to render the task board view correctly when grouped by assignedTo.|
@@ -46,7 +46,7 @@ Here is a JSON representation of the resource
 |progressTaskBoard|[planTaskBoard](plantaskboard.md)| Read-only. Used to render the task board view correctly when grouped by progress.|
 |tasks|[task](task.md) collection| Read-only. Nullable. Collection of tasks in the plan. |
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
