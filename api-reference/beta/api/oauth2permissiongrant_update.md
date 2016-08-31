@@ -1,21 +1,21 @@
 # Update oAuth2Permissiongrant
 
 Update the properties of oAuth2Permissiongrant object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /oAuth2Permissiongrants/<id>
 PATCH /users/<id | userPrincipalName>/oAuth2Permissiongrants/<id>
 PATCH /drive/root/createdByUser/oAuth2Permissiongrants/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -28,9 +28,9 @@ In the request body, supply the values for relevant fields that should be update
 |scope|String||
 |startTime|DateTimeOffset||
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

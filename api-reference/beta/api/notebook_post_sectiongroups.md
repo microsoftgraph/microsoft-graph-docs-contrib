@@ -1,31 +1,31 @@
 # Create sectionGroup
 
 Create a new [section group](../resources/sectiongroup.md) in the specified notebook.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:   
 Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/notes/notebooks/<id>/sectionGroups
 POST /users/<id | userPrincipalName>/notes/notebooks/<id>/sectionGroups
 POST /groups/<id>/notes/notebooks/<id>/sectionGroups
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 | Content-Type | string | `application/json` |
 
-### Request body
+## Request body
 In the request body, supply a name for the section group.
 
 Within the same hierarchy level, section group names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?*\/:<>|&#''%~
 
-### Response
+## Response
 If successful, this method returns `201 Created` response code and a [sectionGroup](../resources/sectiongroup.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

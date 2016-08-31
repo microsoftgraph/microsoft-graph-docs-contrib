@@ -1,23 +1,23 @@
 # Delete subscription
 
 Delete a subscription.
-### Prerequisites
+## Prerequisites
 One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read* or *Group.Read.All* 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /subscriptions/<subscriptionId>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `204 No Content` response code.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

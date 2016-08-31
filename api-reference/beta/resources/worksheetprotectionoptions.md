@@ -2,7 +2,7 @@
 
 Represents the options in sheet protection.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowAutoFilter|boolean|Represents the worksheet protection option of allowing using auto filter feature.|
@@ -18,7 +18,7 @@ Represents the options in sheet protection.
 |allowSort|boolean|Represents the worksheet protection option of allowing using sort feature.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

@@ -1,21 +1,21 @@
 # Update administrativeunit
 
 Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /administrativeUnits/<id>
 ```
-### Optional request headers
-### Request headers
+## Optional request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <token>. Required.|
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -24,9 +24,9 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|string|Display name for the administrative unit.|
 |visibility|string|Visibility for the administrative unit. If not set then the default is "public". Can be set to "HiddenMembership", which hides the membership from non-members.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [administrativeUnit](../resources/administrativeunit.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

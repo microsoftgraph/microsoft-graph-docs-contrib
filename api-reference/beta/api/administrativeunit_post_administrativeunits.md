@@ -1,27 +1,27 @@
 # Create administrativeUnit
 
 Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits
 
 ```
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <token>. Required.|
-### Request body
+## Request body
 In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

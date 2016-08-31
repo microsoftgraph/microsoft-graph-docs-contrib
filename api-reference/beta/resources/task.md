@@ -2,7 +2,7 @@
 
 The Task resource represents a task in Office 365. A task is contained in a [plan](plan.md) and can be assigned to a [bucket](bucket.md) in a plan. Each task object has a [details](taskdetails.md) object which can contain more information about the task. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |appliedCategories|[appliedCategoriesCollection](appliedcategoriescollection.md)|The categories to which the task has been applied. See appliedCategoriesCollection for possible values. |
@@ -64,7 +64,7 @@ Here is a JSON representation of the resource
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |title|String|Required. Title of the task. |
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[taskBoardTaskFormat](taskboardtaskformat.md)| Read-only. Used to render the task correctly in the task board view when grouped by assignedTo. |
@@ -72,7 +72,7 @@ Here is a JSON representation of the resource
 |details|[taskDetails](taskdetails.md)| Read-only. Additional details about the task. Contains `description`, `references`, `checklist` etc. |
 |progressTaskBoardFormat|[taskBoardTaskFormat](taskboardtaskformat.md)| Read-only. Used to render the task correctly in the task board view when grouped by progress. |
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

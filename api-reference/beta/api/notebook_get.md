@@ -1,32 +1,32 @@
 # Get notebook
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:  
 Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/notes/notebooks/<id>
 GET /users/<id | userPrincipalName>/notes/notebooks/<id>
 GET /groups/<id>/notes/notebooks/<id>
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the `select` and `expand` [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 | Accept | string | `application/json` | 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a [notebook](../resources/notebook.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

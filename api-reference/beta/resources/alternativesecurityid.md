@@ -2,7 +2,7 @@
 
 Contains an alternative security ID associated with a device. The **alternativeSecurityIds** property of the [Device](device.md) entity is a collection of **alternativeSecurityId**.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |identityProvider|String|            |
@@ -10,7 +10,7 @@ Contains an alternative security ID associated with a device. The **alternativeS
 |type|Int32|            |
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

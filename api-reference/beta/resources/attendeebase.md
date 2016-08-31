@@ -2,7 +2,7 @@
 
 The type of attendee.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -20,7 +20,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |type|String| The type of attendee. Possible values are: `Required`, `Optional`, `Resource`. Currently if the attendee is a person, [findMeetingTimes](../api/user_findmeetingtimes.md) always considers the person is of the `Required` type.|

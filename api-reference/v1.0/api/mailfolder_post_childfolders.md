@@ -2,10 +2,10 @@
 
 Use this API to create a new child mailfolder.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/mailFolders/<id>/childFolders
@@ -15,13 +15,13 @@ POST /users/<id | userPrincipalName>/mailFolders/<id>/childFolders
 Specify the parent folder in the query URL as a folder ID, or the `Inbox`, `Drafts`, `SentItems`, or 
 `DeletedItems` well-known folder name.
 
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a 
 [MailFolder](../resources/mailfolder.md) object.
 
@@ -29,10 +29,10 @@ In the request body, provide a JSON object with the following parameters. **disp
 |:---------------|:--------|:----------|
 |displayName|String|The display name of the new folder.|
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

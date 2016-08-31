@@ -5,7 +5,7 @@ A user will always have at least one Drive available--the default Drive.
 The drive resource also represents a document library in a SharePoint site or
 Office 365 group.
 
-### Methods
+## Methods
 
 The following methods are available for drive resources.
 
@@ -20,7 +20,7 @@ The following methods are available for drive resources.
 | [Search items in a drive](../api/item_search.md)          | [driveItem](driveitem.md) collection | Search for items matching keywords in a drive.          |
 
 
-### Properties
+## Properties
 
 | Property  | Type                          | Description                                                                                          |
 |:----------|:------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -29,7 +29,7 @@ The following methods are available for drive resources.
 | owner     | [identitySet](identityset.md) | The user account that owns the drive.                                                                                                                    |
 | quota     | [quota](quota.md)             | Information about the drive's storage space quota.                                                                                                       |
 
-### Relationships
+## Relationships
 
 | Relationship | Type |Description |
 |:--------|:---------------------------|:-------------------------------------------------------------------------|
@@ -37,7 +37,7 @@ The following methods are available for drive resources.
 | root    | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.                                 |
 | special | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

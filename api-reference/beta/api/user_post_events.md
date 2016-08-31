@@ -8,28 +8,28 @@ You can specify the time zone for each of the start and end times of the event a
 When the event is created, the server send invitations to all attendees.
 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/events
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:-----------|:------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Event](../resources/event.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

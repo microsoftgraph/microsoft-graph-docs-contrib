@@ -2,7 +2,7 @@
 
 The time periods for an activity of the specified nature.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -21,7 +21,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |activityDomain|String|The nature of the activity, optional. Possible values are: `unknown`, `work`, `personal`. Currently [findMeetingTimes](../api/user_findmeetingtimes.md) always assumes the value is `work` and returns any meeting suggestions only during the work hours of the organizer or attendee.|

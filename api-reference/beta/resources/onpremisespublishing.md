@@ -3,7 +3,7 @@
 
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |customDomainCertificate|String|Details of the certificate associated with the applicaiton when a custom domain is in use. Null when using the default domain.|
@@ -13,7 +13,7 @@
 |isOnPremPublishingEnabled|Boolean|Indicates if the application is currently being published or not.|
 |isTranslateHostHeaderEnabled|Boolean|Indicates if the application should translate urls in the reponse headers. This includes setting the correct site for cookies.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

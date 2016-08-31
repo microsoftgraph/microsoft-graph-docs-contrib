@@ -2,21 +2,21 @@
 
 Use this API to create a new User.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Directory.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
 The following table shows the properties that are required when you create a user.
@@ -30,10 +30,10 @@ The following table shows the properties that are required when you create a use
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
 |userPrincipalName |string |The user principal name (someuser@contoso.com).|
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [user](../resources/user.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

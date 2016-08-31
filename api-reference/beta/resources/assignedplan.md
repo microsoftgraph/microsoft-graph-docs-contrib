@@ -3,7 +3,7 @@
 The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -12,7 +12,7 @@ The **assignedPlans** property of both the [user](user.md) entity and the [organ
 |servicePlanId|Guid|A GUID that identifies the service plan.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

@@ -2,7 +2,7 @@
 
 A section in a OneNote notebook. Sections can contain pages.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -30,7 +30,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|String|The user who created the section. Read-only.|
@@ -43,14 +43,14 @@ Here is a JSON representation of the resource.
 |pagesUrl|String|The `pages` endpoint where you can get details for all the pages in the section. Read-only.|
 |self|String|The endpoint where you can get details about the section. Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |pages|[Page](page.md) collection|The collection of pages in the section.  Read-only. Nullable.|
 |parentNotebook|[Notebook](notebook.md)|The notebook that contains the section.  Read-only.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|The section group that contains the section.  Read-only.|
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

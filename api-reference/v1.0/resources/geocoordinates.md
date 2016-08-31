@@ -7,7 +7,7 @@ structure. It is available on the **location** property of item resources that
 have an associated geographic location.
 
 
-### Properties
+## Properties
 
 | Property  | Type   | Description                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
@@ -15,7 +15,7 @@ have an associated geographic location.
 | latitude  | Double | The latitude, in decimal, for the item.                        |
 | longitude | Double | The longitude, in decimal, for the item.                       |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

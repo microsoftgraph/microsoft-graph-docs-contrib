@@ -7,10 +7,10 @@ add an attachment to a message that is being [created and sent on the fly](../ap
 
 Since there is currently a limit of 4MB on the total size of each REST request, this limits the 
 size of the attachment you can add to under 4MB.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for a [message](../resources/message.md) in a user's mailbox.
 ```http
@@ -28,20 +28,20 @@ example below shows one level of nesting, but a message can be located in a chil
 POST /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
 POST /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
-### Example (file attachment)
+## Example (file attachment)
 
 ##### Request
 Here is an example of the request.
@@ -72,7 +72,7 @@ Here is an example of the response.
 HTTP 200 OK
 ```
 
-### Example (item attachment)
+## Example (item attachment)
 
 ##### Request
 Here is an example of the request.

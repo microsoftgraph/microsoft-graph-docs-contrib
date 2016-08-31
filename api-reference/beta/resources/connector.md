@@ -8,14 +8,14 @@
 
 -->
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get connector](../api/connector_get.md) | [connector](connector.md) |Read properties and relationships of connector object.|
 |[List memberOf](../api/connector_list_memberof.md) |[connectorGroup](connectorgroup.md) collection| Get the connectorGroup object associated with the connector.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |externalIp|String|The external IP address as detected by the service for the connector machine. Read-only|
@@ -23,12 +23,12 @@
 |machineName|String| The name of the machine that the connector is running on. <BR>Read-only|
 |status|string| Indicates the status of the connector. Possible values are: `active`, `inactive`. Read-only |
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |memberOf|[connectorGroup](connectorgroup.md) collection| The connectorGroup that the connect is a member of.<br>Read-only. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

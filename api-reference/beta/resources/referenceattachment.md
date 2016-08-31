@@ -4,7 +4,7 @@ A link to a folder or file (such as a text file or Word document) on a OneDrive 
 
 Derived from [attachment](attachment.md).
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -12,7 +12,7 @@ Derived from [attachment](attachment.md).
 |[Delete](../api/attachment_delete.md) | None |Delete referenceAttachment object. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |contentType|String|The content type of the attachment. Optional.|
@@ -30,12 +30,12 @@ Derived from [attachment](attachment.md).
 
 
 
-### Relationships
+## Relationships
 None
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

@@ -3,9 +3,9 @@
 Returns all the groups and directory objects that a user, contact, or directory
 object is a member of. This function is transitive.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API:
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/manager/getMemberObjects
@@ -13,22 +13,22 @@ POST /directoryObjects/<id>/getMemberObjects
 POST /contacts/<id>/manager/getMemberObjects
 
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean||
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

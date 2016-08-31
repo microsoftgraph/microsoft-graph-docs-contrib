@@ -7,7 +7,7 @@ Let's look at an example. Imagine that Contoso Corp is made up of two divisions 
 This topic provides descriptions of the declared properties and navigation properties exposed by the administrativeUnit entity, as well as the operations and functions that can be called on the administrativeUnits resource.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -25,7 +25,7 @@ This topic provides descriptions of the declared properties and navigation prope
 |[Get a scoped-role administrator](../api/administrativeunit_get_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a specific scoped-role administrator.|
 |[Remove a scoped-role administrator](../api/administrativeunit_delete_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a scoped-role administrator.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |description|string|An optional description for the administrative unit.|
@@ -33,13 +33,13 @@ This topic provides descriptions of the declared properties and navigation prope
 |id|string|Unique identifier for the administrative unit. Read-only.|
 |visibility|string|Controls whether the adminstrative unit and its members are hidden or public. Can be set to HiddenMembership or Public. If not set, default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the adminstrative unit.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |members|[directoryObject](directoryObject.md) collection|Users and groups that are members of this Adminsitrative Unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).|
 |scopedAdministrators|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped administrators of this Administrative Unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

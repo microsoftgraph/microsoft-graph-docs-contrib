@@ -2,27 +2,27 @@
 
 Use this API to create a new [scopedRoleMembership](../resources/scopedrolemembership.md). NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are supported for scoped-role memberships.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/<id>/scopedAdministrators
 ```
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <token>. Required.|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

@@ -67,7 +67,7 @@ If you're accessing group notebooks, you'll need a Groups permission scope to ge
   "@odata.type": "microsoft.graph.notes"
 }-->
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |notebooks|[Notebook](notebook.md) collection|The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.|
@@ -78,7 +78,7 @@ If you're accessing group notebooks, you'll need a Groups permission scope to ge
 |sections|[Section](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

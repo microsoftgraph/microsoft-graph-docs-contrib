@@ -1,10 +1,10 @@
 # Delete calendar
 
 Delete a calendar other than the default calendar.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's [calendar](../resources/calendar.md) other than the default calendar in the default [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -19,19 +19,19 @@ A [calendar](../resources/calendar.md) other than the default calendar, in a spe
 DELETE /me/calendarGroups/<id>/calendars/<id>
 DELETE /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
 ```
-### Request headers
+## Request headers
 | Name           |  Type    | Description|
 |:---------------|:---------|:----------|
 | Authorization  |  string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

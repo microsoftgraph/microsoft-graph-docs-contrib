@@ -1,30 +1,30 @@
 # List registeredOwners
 
 Retrieve a list of users that are registered owners of the device.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 - *Device.ReadWrite.All* and *User.ReadBasic.All*
 - *Directory.Read.All*
 - *Directory.ReadWrite.All* 
 - *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/<id>/registeredOwners
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

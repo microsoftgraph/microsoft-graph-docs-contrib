@@ -3,7 +3,7 @@
 The **thumbnail** resource type represents a thumbnail for an image, video,
 document, or any file or folder on OneDrive that has a graphical representation.
 
-### Properties
+## Properties
 
 | Property | Type   | Description                                  |
 |:---------|:-------|:---------------------------------------------|
@@ -19,7 +19,7 @@ document, or any file or folder on OneDrive that has a graphical representation.
 | content | Stream | The content stream. |
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

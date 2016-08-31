@@ -3,10 +3,10 @@
 Use this API to add an [attachment](../resources/attachment.md) to an event. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
 you can add to under 4MB.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 ```http
@@ -31,20 +31,20 @@ Attachments for an [event](../resources/event.md) in a [calendar](../resources/c
 POST /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments
 POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
-### Example (file attachment)
+## Example (file attachment)
 
 ##### Request
 Here is an example of the request.
@@ -76,7 +76,7 @@ Here is an example of the response.
 HTTP 200 OK
 ```
 
-### Example (item attachment)
+## Example (item attachment)
 
 ##### Request
 

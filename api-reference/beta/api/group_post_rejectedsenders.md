@@ -5,26 +5,26 @@ Add a new user or group to the rejectedSender list.
 Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot 
 post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same 
 user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/rejectedSenders/$ref
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 
-### Request body
+## Request body
 In the request body, supply the id of a user or group object.
 
 
-### Response
+## Response
 This method returns `204, No Content` response code and no response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

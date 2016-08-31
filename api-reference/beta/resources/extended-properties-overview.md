@@ -38,7 +38,7 @@ a single-value extended property to get all the instances that have that propert
 **Note** You cannot use the REST API to get all the extended properties of a specific instance in one call.
   
 
-### id Formats
+## id Formats
 
 When creating a single-value or multi-value extended property, you can specify **id** in one of two formats, 
 based on either a string name or numeric identifier, and on the actual type of value or values of the property. Since 
@@ -65,7 +65,7 @@ property uses a character string or numeric value in its [MAPI property identifi
 | "*{_type_} {_guid_} **Id** {_id_}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
 
 
-### REST API operations
+## REST API operations
  
 Single-value extended property operations:
 - [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)

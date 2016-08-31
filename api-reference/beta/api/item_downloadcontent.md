@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
   * Files.Read
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,7 +18,7 @@ GET /me/drive/root:/{item-path and filename}:/content
 GET /groups/<id>/drive/items/<item-id>/content
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Value  | Description                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -27,10 +27,10 @@ GET /groups/<id>/drive/items/<item-id>/content
 | Range         | range  | Range of bytes returned in the response.                                                                                                                 |
 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Example
+## Example
 Here is an example of how to call this API.
 
 
@@ -56,7 +56,7 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-### Range downloads
+## Range downloads
 
 To download a partial range of an item, you use the Range HTTP header as
 specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Note that you

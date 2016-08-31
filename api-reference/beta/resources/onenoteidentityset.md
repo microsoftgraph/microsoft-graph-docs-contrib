@@ -10,7 +10,7 @@ Currently it contains a single key, _**user**_.  In future, keys such as the dev
 
 In future, this type will be merged with [IdentitySet](identityset.md)
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -28,7 +28,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |user|[oneNoteIdentity](onenoteidentity.md)|A OneNoteIdentity resource that represents a user.|

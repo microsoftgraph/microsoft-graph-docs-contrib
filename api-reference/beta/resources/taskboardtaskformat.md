@@ -2,7 +2,7 @@
 
 The TaskBoardTaskFormat resource represents the information used to render a task correctly in a task board view. Each [task](task.md) will have three taskBoardTaskFormat objects as there can be three task board views that a task is in.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -22,18 +22,18 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Id of the task. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service. |
 |orderHint|String| Used to set the relative order of tasks in the vertical on the task board view. Consider three tasks in the order of: `'O'`, `'P'`, `'Q'`. To move `'P'` to the top of the vertical, set its `'orderHint'` to smaller than that of `'O'`. The comparison is an ordinal string comparison.|
 |type|String| Read-only. Used to set the type of task board view in which this object is used to render the task. Possible values are: `progress`, `assignedTo`, `bucket`. |
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

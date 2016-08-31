@@ -3,23 +3,23 @@ Copies a notebook to the Notebooks folder in the destination Documents library. 
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:   
 Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/notes/notebooks/<id>/copyNotebook
 POST /users/<id | userPrincipalName>/notes/notebooks/<id>/copyNotebook
 POST /groups/<id>/notes/notebooks/<id>/copyNotebook
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 | Content-Type | string | `application/json` |
 
-### Request body
+## Request body
 In the request body, provide a JSON object that contains the parameters that your operation needs. It's okay to send an empty body if none are needed.
 
 | Parameter	   | Type	|Description|
@@ -28,10 +28,10 @@ In the request body, provide a JSON object that contains the parameters that you
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
 
-### Response
+## Response
 If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](notesoperation_get.md).
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

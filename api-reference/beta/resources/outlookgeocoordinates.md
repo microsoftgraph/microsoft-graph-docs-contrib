@@ -2,7 +2,7 @@
 
 The geographic coordinates, elevation, and their degree of accuracy for a physical location.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -24,7 +24,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accuracy|double|The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.|

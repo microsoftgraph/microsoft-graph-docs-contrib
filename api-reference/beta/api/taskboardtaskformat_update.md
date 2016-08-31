@@ -1,35 +1,35 @@
 # Update taskboardtaskformat
 
 Update the properties of taskboardtaskformat object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
  
 Group.ReadWrite.All
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /tasks/<id>/bucketTaskBoardFormat
 PATCH /tasks/<id>/progressTaskBoardFormat
 PATCH /tasks/<id>/assignedToTaskBoardFormat
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Value should be set to "Bearer (access-token)" |
 | If-Match | string | Value should be set to the ETag of the object |
 | Prefer | string | Value should be set to "return=representation" so that the updated object is returned in the response. This is advised so that the client can get the new ETag value of the updated object without doing an additional GET |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |orderHint|String|Used to set the relative order of tasks in the vertical on the task board view. Consider three tasks in the order of: `'O'`, `'P'`, `'Q'`. To move `'P'` to the top of the vertical, set its `'orderHint'` to smaller than that of `'O'`. The comparison is an ordinal string comparison.|
 
-### Response
+## Response
 If successful, this method returns a `204 No Content` response code.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

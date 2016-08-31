@@ -9,7 +9,7 @@ will be returned.
 
 Items inherit permissions from their ancestors.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
@@ -22,14 +22,14 @@ POST /me/drive/root:/{item-path}:/createLink
 POST /groups/<id>/drive/items/<item-id>/createLink
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer <token>. Required. |
 
 
-### Request body
+## Request body
 The body of the request defines the type of sharing link your application is
 looking for. The request should be a JSON object with this property.
 
@@ -38,7 +38,7 @@ looking for. The request should be a JSON object with this property.
 | **type** | string | The type of sharing link to create. Either `view`, `edit`, or `embed`. |
 | **scope** | string | The scope of link to create. Either `anonymous` or `organization`. Optional. |
 
-### Link types
+## Link types
 The following values are allowed for the **type** parameter.
 
 | Type value | Description                                                                                  |
@@ -47,7 +47,7 @@ The following values are allowed for the **type** parameter.
 | `edit`     | Creates a read-write link to the item.                                                       |
 | `embed`    | Creates an embeddable link to the item. This option is only available for OneDrive Personal. |
 
-### Scope types
+## Scope types
 The following values are allowed for the **scope** parameter. This is an
 optional parameter. If the **scope** parameter is not specified, the most permissive
 link available will be created.
@@ -57,7 +57,7 @@ link available will be created.
 | `anonymous`    | Creates a link to the item accessible to anyone. Anonymous links may be disabled by the tenant administrator.                 |
 | `organization` | Creates a link to the item accessible within an organization. Organization link scope is not available for OneDrive Personal. |
 
-### Response
+## Response
 
 If successful, this method returns a single [Permission](../resources/permission.md)
 resource in the response body that represents the requested sharing link permission.
@@ -69,7 +69,7 @@ calling application.
 The response will be `201 Created` if a new sharing link is created for the
 item or  `200 OK` if an existing link is returned.
 
-### Example
+## Example
 Here is an example of how to call this API.
 
 ##### Request
@@ -118,7 +118,7 @@ similar to anonymous links, except they only work for members of the owning
 tenant. To create a company sharable link, use the **scope** parameter with a
 value of `organization`.
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
 ```http
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-### HTTP response
+## HTTP response
 
 The response will be `201 Created` if a new sharing link is created for the
 item or `200 OK` if an existing link is returned.
@@ -156,7 +156,7 @@ Content-Type: application/json
 }
 ```
 
-### Embeddable links
+## Embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an
 `<iframe>` HTML element. When an embed link is created the `webHtml`
@@ -164,7 +164,7 @@ property contains the HTML code for an `<iframe>` to host the content.
 
 **Note:** Embed links are only supported for OneDrive Personal.
 
-### Programming Notes
+## Programming Notes
 
 Sharing links created using this action do not expire. They are visible in the
 sharing permissions for the item and can be removed by an owner of the item.

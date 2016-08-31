@@ -1,22 +1,22 @@
 # privilegedRoleAssignment: makePermanent
 Make the role assignment as permanent.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
 
 The requestor needs to have _Privileged Role Administrator_ role. 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignments/<id>/makePermanent
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -25,10 +25,10 @@ In the request body, provide a JSON object with the following parameters.
 |ticketNumber|string|Optional. The ticket number that is associated with this action.|
 |ticketSystem|string|Optional. The ticket system.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

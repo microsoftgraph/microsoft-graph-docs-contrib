@@ -1,25 +1,25 @@
 # Get directoryObject
 
 Retrieve the properties and relationships of directoryobject object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: _Directory.Read.All_ OR _Directory.AccessAsUser.All_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryObjects/<id>
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

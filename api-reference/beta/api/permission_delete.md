@@ -5,12 +5,12 @@ Delete a permission. Only permissions that are not inherited can be deleted. The
 they have created.
 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,21 +18,21 @@ DELETE /me/drive/root/permissions/<id>
 DELETE /me/drive/items/<id>/permissions/<id>
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Authorization | string | Bearer <token>. Required.                                                                                                                                                                         |
 | if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not
 return anything in the response body.
 
-### Example
+## Example
 
 ##### Request
 

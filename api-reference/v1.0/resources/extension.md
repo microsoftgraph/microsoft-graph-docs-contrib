@@ -2,7 +2,7 @@
 
 An abstract type to support the OData v4 open type [openTypeExtension](openTypeExtension.md).
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -20,16 +20,16 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 See the methods of the derived type [openTypeExtension](openTypeExtension.md) for actually supported methods.
 

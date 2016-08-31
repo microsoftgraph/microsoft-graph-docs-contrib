@@ -4,7 +4,7 @@ The ChecklistItemCollection* resource represents the collection of checklist ite
 
 *Note that this is an Open Type.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -55,7 +55,7 @@ Here is a JSON representation of the resource
 ```
 
 
-### Properties
+## Properties
 Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](checklistitem.md) objects. Example is shown above. To remove an item in the checklist, set the value of the property to `null`.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

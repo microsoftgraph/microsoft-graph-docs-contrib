@@ -3,7 +3,7 @@
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
 
-### Methods
+## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
@@ -44,7 +44,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
@@ -89,7 +89,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|The user's primary calendar. Read-only.|
@@ -122,7 +122,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

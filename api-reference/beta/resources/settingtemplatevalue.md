@@ -3,7 +3,7 @@
 Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |defaultValue|string|Default value for the setting. Read-only.|
@@ -11,7 +11,7 @@ Represents an individual template setting definition, including the default valu
 |name|string|Name of the setting. Read-only.|
 |type|string|Type of the setting. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

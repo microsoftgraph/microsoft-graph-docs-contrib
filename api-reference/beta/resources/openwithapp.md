@@ -2,7 +2,7 @@
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -24,7 +24,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |app|[identity](identity.md)||

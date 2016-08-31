@@ -2,7 +2,7 @@
 
 The PlanTaskBoard resource represents the information used to render a plan's task board view correctly. Each [plan](plan.md) will have three planTaskBoard objects as there can be three task board views for a plan.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -21,17 +21,17 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Id of the plan. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service. |
 |type|String| Read-only. Used to set the type of task board view in which this object is used to render. Possible values are: `progress`, `assignedTo`, `bucket`.|
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

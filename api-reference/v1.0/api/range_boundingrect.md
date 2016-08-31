@@ -1,9 +1,9 @@
 # Range: BoundingRect
 
 Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/BoundingRect
@@ -11,23 +11,23 @@ POST /workbook/worksheets(<id|name>)/range(<address>)/BoundingRect
 POST /workbook/tables(<id|name>)/columns(<id|name>)/range/BoundingRect
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |anotherRange|string|The range object or address or range name.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

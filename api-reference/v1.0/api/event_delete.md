@@ -1,10 +1,10 @@
 # Delete event
 
 Delete event.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.ReadWrite* 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/<id>
@@ -24,19 +24,19 @@ DELETE /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>
 DELETE /me/calendargroups/<id>/calendars/<id>/events/<id>
 DELETE /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

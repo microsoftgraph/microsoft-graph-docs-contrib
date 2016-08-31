@@ -1,21 +1,21 @@
 # assignLicense
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *User.ReadWrite.All; Directory.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/assignLicense
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -23,10 +23,10 @@ In the request body, provide a JSON object with the following parameters.
 |addLicenses|AssignedLicense|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
 |removeLicenses|Guid|A collection of GUIDs that identify the licenses to remove.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [user](../resources/user.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

@@ -2,7 +2,7 @@
 
 The duration of an event.
 
-### Properties
+## Properties
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -13,7 +13,7 @@ The duration of an event.
 |type|String|The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2. Possible values are: `EndDate`, `NoEnd`, `Numbered`.||
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

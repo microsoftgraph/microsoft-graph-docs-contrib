@@ -1,26 +1,26 @@
 # Create a directory setting on groups
 
 Use this API to create a new directory setting for the group.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/settings
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <token>. Required|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

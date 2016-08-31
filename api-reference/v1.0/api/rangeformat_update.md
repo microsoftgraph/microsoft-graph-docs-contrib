@@ -1,22 +1,22 @@
 # Update rangeformat
 
 Update the properties of rangeformat object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format
 PATCH /workbook/worksheets(<id|name>)/range(<address>)/format
 PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -27,9 +27,9 @@ In the request body, supply the values for relevant fields that should be update
 |verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [RangeFormat](../resources/rangeformat.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

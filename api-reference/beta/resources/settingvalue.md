@@ -3,13 +3,13 @@
 A setting represented by a name/value pair.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|string|Name of the setting (as defined by the directorySettingTemplate).|
 |value|string|Value of the setting.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

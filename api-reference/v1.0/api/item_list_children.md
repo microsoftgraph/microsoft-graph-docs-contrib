@@ -4,35 +4,35 @@ Items with the folder property may contain child items. This API
 lists the contents of a **driveItem's** `children` collection using either the
 root driveItem, driveItem ID or path.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 ```http
 GET /me/drive/root/children
 GET /me/drive/items/{item-id}/children
 GET /me/drive/root:/{item-path}:/children
 ```
 
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query
 Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help
 customize the response.
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Authorization | string | Bearer {token}. Required.                                                                                                                                |
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Example
+## Example
 Here is an example of how to call this API.
 
 ##### Request
@@ -47,7 +47,7 @@ users OneDrive.
 GET /me/drive/root/children
 ```
 
-### Response
+## Response
 
 Here is an example of the response.
 <!-- {

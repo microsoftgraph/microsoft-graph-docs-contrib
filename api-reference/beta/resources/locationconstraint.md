@@ -2,7 +2,7 @@
 
 The conditions stated by a client for the location of a meeting.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -22,7 +22,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |isRequired|Boolean|The client requests the service to include in the response a meeting location for the meeting.|

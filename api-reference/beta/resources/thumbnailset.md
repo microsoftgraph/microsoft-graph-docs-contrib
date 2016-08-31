@@ -5,13 +5,13 @@ objects. It is used to represent a set of thumbnails associated with a single
 file on OneDrive.
 
 
-### Methods
+## Methods
 
 | Method                                         | Return Type                     | Description                                               |
 |:-----------------------------------------------|:--------------------------------|:----------------------------------------------------------|
 | [Get thumbnailSet](../api/thumbnailset_get.md) | [thumbnailSet](thumbnailset.md) | Read properties and relationships of thumbnailSet object. |
 
-### Properties
+## Properties
 
 | Property | Type                      | Description                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
@@ -22,7 +22,7 @@ file on OneDrive.
 | source   | [thumbnail](thumbnail.md) | A custom thumbnail image or the original image used to generate other thumbnails. |
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

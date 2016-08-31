@@ -3,7 +3,7 @@
 Represents a column in a table.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -19,7 +19,7 @@ Represents a column in a table.
 |[Add](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|Adds a new column to the table.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|int|Returns a unique key that identifies the column within the table. Read-only.|
@@ -27,12 +27,12 @@ Represents a column in a table.
 |name|string|Returns the name of the table column. Read-only.|
 |values|json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |filter|[Filter](filter.md)|Retrieve the filter applied to the column. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
