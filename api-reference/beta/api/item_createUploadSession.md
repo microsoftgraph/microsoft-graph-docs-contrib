@@ -133,7 +133,7 @@ The **nextExpectedRanges** property indicates ranges of the file that have not b
 * The `nextExpectedRanges` property won't always list all of the missing ranges.
 * On successful fragment writes, it will return the next range to start from (eg. "523-").
 * On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
-  You can [request upload status](#request-upload-status) to get a more detailed list of missing ranges.
+  You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
 
 
 ## Completing a file
