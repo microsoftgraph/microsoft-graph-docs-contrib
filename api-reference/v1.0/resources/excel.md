@@ -24,6 +24,7 @@ Following sections provide important programming details related to Excel REST A
 * [Blank Input and Output](#blank-input-and-output)
 * [Unbounded-Range](#unbounded-range)
 * [Large-Range](#large-range)
+* [Workbook functions](#workbook-functions)
 * [Error information](#error-information)
 
 
@@ -1213,6 +1214,41 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
 
 {
   "values" : "Sample text"
+}
+```
+
+## Workbook functions 
+the workbook functions can be accessed through a collection of functions offered in the /functions resource. An example is shown below. 
+
+##### Request
+<!-- { "blockType": "ignored" } -->
+```http
+https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{
+    "rate": 4.5,
+    "nper": 12,
+    "pv": -1250
+}
+```
+
+
+##### Response 
+
+<!-- { "blockType": "ignored" } -->
+```http 
+HTTP code: 200, OK
+content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+    "@odata.type": "#microsoft.graph.workbookFunctionResult",
+    "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/workbook/functions/pmt()",
+    "error": null,
+    "value": 5625.00000734125
 }
 ```
 
