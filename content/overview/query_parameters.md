@@ -139,7 +139,7 @@ To set the number of items to skip before retrieving items in a collection, use 
 For example, to return events sorted by date created, and starting with the 21st event, the syntax is as follows.
 
 ```http
-GET  https://graph.microsoft.com/v1.0/me?$orderby=createdDateTime&$skip=20
+GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
 ### $skipToken
