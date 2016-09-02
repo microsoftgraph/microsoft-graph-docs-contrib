@@ -3,7 +3,7 @@
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
 
-## JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource
 
@@ -48,7 +48,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-## Properties
+### Properties
 | Property     | Type |Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the service principal account is enabled; otherwise, **false**.            |
@@ -71,7 +71,7 @@ Here is a JSON representation of the resource
 |servicePrincipalNames|String collection|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/en-us/library/azure/dn132633.aspx).The **any** operator is required for filter expressions on multi-valued properties.  Not nullable. |
 |tags|String collection| Not nullable. |
 
-## Relationships
+### Relationships
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Principals (users, groups, and service principals) that are assigned to this service principal. Read-only.|
@@ -83,7 +83,7 @@ Here is a JSON representation of the resource
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Read-only. Nullable.|
 |policy|[policy](policy.md) collection|The policies assigned to this service principal.|
 
-## Methods
+### Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
