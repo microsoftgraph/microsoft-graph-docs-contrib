@@ -8,7 +8,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "uploadUrl". "nextExpectedRanges" ],
+  "optionalProperties": [ "uploadUrl", "nextExpectedRanges" ],
   "@odata.type": "microsoft.graph.uploadSession"
 }-->
 
@@ -21,6 +21,7 @@ Here is a JSON representation of the resource
 
 ```
 ## Properties
+
 
 | Property	         | Type              |Description|
 |:-------------------|:------------------|:----------|
