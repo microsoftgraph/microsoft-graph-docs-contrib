@@ -2,10 +2,10 @@
 
 Tentatively accept the specified event.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/<id>/tentativelyAccept
@@ -25,13 +25,13 @@ POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/te
 POST /me/calendargroups/<id>/calendars/<id>/events/<id>/tentativelyAccept
 POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/tentativelyAccept
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -39,10 +39,10 @@ In the request body, provide a JSON object with the following parameters.
 |comment|String|Text included in the response. Optional.|
 |sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
 
-### Response
+## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

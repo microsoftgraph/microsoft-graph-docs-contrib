@@ -3,7 +3,7 @@
 Represents an Excel table.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -26,7 +26,7 @@ Represents an Excel table.
 
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|int|Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.|
@@ -35,7 +35,7 @@ Represents an Excel table.
 |showTotals|boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
 |style|string|Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |columns|[TableColumn](tablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
@@ -43,7 +43,7 @@ Represents an Excel table.
 |sort|[TableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
 |worksheet|[Worksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

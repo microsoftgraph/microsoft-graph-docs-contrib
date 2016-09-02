@@ -3,7 +3,7 @@
 Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -12,10 +12,10 @@ Workbook is the top level object which contains related workbook objects such as
 |[List tables](../api/workbook_list_tables.md) |[Table](table.md) collection| Get a Table object collection.|
 |[List worksheets](../api/workbook_list_worksheets.md) |[Worksheet](worksheet.md) collection| Get a Worksheet object collection.|
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |names|[NamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|

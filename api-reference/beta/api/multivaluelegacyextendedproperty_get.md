@@ -24,7 +24,7 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 Office 365 Data Extensions or extended properties, and how to specify extended properties.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API, depending on the resource you're
 getting:
 
@@ -33,7 +33,7 @@ getting:
 - _Contacts.Read_
 - _Group.Read.All_ 
  
-### HTTP request
+## HTTP request
 
 Get a resource instance expanded with the extended property which matches a filter on the 
 **id** property. Make sure you apply 
@@ -92,28 +92,28 @@ GET /groups/<id>/threads/<id>/posts/<id>?$expand=multiValueExtendedProperties($f
 GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code. 
 
 The response body includes an object representing the requested resource instance, expanded with the matching 
 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object.
 
-### Example
+## Example
 ##### Request
 This example gets and expands the specified event by including a multi-value extended property. The filter returns the 
 extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation`

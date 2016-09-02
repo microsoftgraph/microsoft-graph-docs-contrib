@@ -1,29 +1,29 @@
 # Create privilegedRoleAssignment
 
 Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
 The requestor needs to have _Privileged Role Administrator_ role. 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignments
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

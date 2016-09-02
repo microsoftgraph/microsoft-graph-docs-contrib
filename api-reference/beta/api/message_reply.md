@@ -13,10 +13,10 @@ and then [send](../api/message_send.md) the reply.
 you should send the reply to the recipients in **replyTo** and not the recipient in the **from** property. 
 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Send*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/reply
@@ -24,13 +24,13 @@ POST /users/<id | userPrincipalName>/messages/<id>/reply
 POST /me/mailFolders/<id>/messages/<id>/reply
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/reply
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -38,10 +38,10 @@ In the request body, provide a JSON object with the following parameters.
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-### Response
+## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
-### Example
+## Example
 The following example includes a comment and adds a recipient to the reply message.
 ##### Request
 Here is an example of the request.

@@ -7,23 +7,23 @@ You can enable, configure, or disable one or more of these settings as part of [
 
 **Note** You cannot create or delete any mailbox settings.
 
-### Prerequisites
+## Prerequisites
 The following **scope** is required to execute this API:
 *Mailboxsettings.ReadWrite*  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/mailboxSettings
 PATCH /users/<id|userPrincipalName>/mailboxSettings
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply the values for the relevant properties that should be updated. Existing properties that are not included in the 
 request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you 
 shouldn't include existing values that haven't changed. The following are the writable/updatable properties:
@@ -34,9 +34,9 @@ shouldn't include existing values that haven't changed. The following are the wr
 |language|[localeInfo](../resources/localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeZone|string|The default time zone for the user's mailbox.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxSettings.md) object in the response body.
-### Example
+## Example
 ##### Request
 The following example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property:
 **status**, **scheduledStartDateTime** and **scheduledEndDateTime**.

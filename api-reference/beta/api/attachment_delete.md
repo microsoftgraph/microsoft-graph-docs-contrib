@@ -1,14 +1,14 @@
 # Delete attachment
 
 Delete an attachment from a calendar event, mail message, or group post.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 * If accessing attachments in Messages: *Mail.ReadWrite*
 * If accessing attachments in Events: *Calendars.ReadWrite*
 * If accessing attachments in Group Events or Posts: *Group.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 ```http
@@ -54,19 +54,19 @@ Attachments for a [post](../resources/post.md) in a [thread](../resources/conver
 DELETE /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
 DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

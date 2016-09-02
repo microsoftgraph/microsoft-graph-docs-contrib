@@ -3,24 +3,24 @@
 Forward a post to a recipient. You can specify both the parent conversation and thread in the request, 
 or, you can specify just the parent thread without the parent conversation. 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *Group.ReadWrite*, *Group.Readwrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/threads/<id>/posts/<id>/forward
 POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/forward
 
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -28,10 +28,10 @@ In the request body, provide a JSON object with the following parameters.
 |comment|String|Optional comment that is forwarded together with the post.|
 |toRecipients|[recipient](../resources/recipient.md) collection|The recipients to whom the threaded is forwarded to.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

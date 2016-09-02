@@ -1,21 +1,21 @@
 # Update device
 
 Update the properties of a device.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Device.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -34,9 +34,9 @@ In the request body, supply the values for relevant fields that should be update
 |isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**.|
 |isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app such as Intune; otherwise, **false**.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [device](../resources/device.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

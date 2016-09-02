@@ -3,7 +3,7 @@
 An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -20,7 +20,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |[List](../api/worksheet_list.md) | [Worksheet](worksheet.md) collection |Get worksheet object collection. |
 |[Add](../api/worksheetcollection_add.md)|[Worksheet](worksheet.md)|Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string|Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.|
@@ -28,14 +28,14 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |position|int|The zero-based position of the worksheet within the workbook.|
 |visibility|string|The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |charts|[Chart](chart.md) collection|Returns collection of charts that are part of the worksheet. Read-only.|
 |protection|[WorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
 |tables|[Table](table.md) collection|Collection of tables that are part of the worksheet. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

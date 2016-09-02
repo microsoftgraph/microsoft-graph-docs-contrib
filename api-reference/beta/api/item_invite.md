@@ -4,26 +4,26 @@ Sends a sharing invitation to an existing item. A sharing invitation creates a
 unique sharing link and sends an email to the recipient of the invitation that
 includes the sharing link.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/items/<item-id>/invite
 POST /groups/<group-id>/drive/items/<item-id>/invite
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer <token>. Required. |
 
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type                                                        | Description                                                                                                |
@@ -35,11 +35,11 @@ In the request body, provide a JSON object with the following parameters.
 | roles          | String collection                                           | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
 
 
-### Response
+## Response
 If successful, this method returns `200 OK` response code and
 [permission](../resources/permission.md) collection object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

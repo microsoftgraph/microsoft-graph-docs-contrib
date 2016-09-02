@@ -3,13 +3,13 @@
 Encapsulates the format properties for the chart data labels.
 
 
-### Methods
+## Methods
 None
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Represents the fill format of the current chart data label. Read-only.|

@@ -1,9 +1,9 @@
 # Range: insert
 
 Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/insert
@@ -11,23 +11,23 @@ POST /workbook/worksheets(<id|name>)/range(<address>)/insert
 POST /workbook/tables(<id|name>)/columns(<id|name>)/range/insert
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |shift|string|Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

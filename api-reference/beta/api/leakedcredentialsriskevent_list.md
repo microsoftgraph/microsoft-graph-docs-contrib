@@ -1,24 +1,24 @@
 # List leakedCredentialsRiskEvents
 
 Retrieve a list of leakedcredentialsriskevent objects.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /leakedCredentialsRiskEvents
 ```
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <code>|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [leakedCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

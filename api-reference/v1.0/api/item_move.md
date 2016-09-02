@@ -6,7 +6,7 @@ its parentReference property.
 You can also move an item into another folder by updating the **parentInfo.id**
 or **parentInfo.path** property to the ID of the target parent.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
@@ -19,7 +19,7 @@ PATCH /me/drive/root:/{item-path}
 PATCH /groups/<id>/drive/<item-id>
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -27,7 +27,7 @@ PATCH /groups/<id>/drive/<item-id>
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 
-### Request body
+## Request body
 In the request body, supply the new value for the **parentReference** property.
 Existing properties that are not included in the request body will maintain
 their previous values or be recalculated based on changes to other property
@@ -38,11 +38,11 @@ changed.
 `"id:" "root"` syntax. You either need to use the real ID of the root folder, or
 use `{"path": "/drive/root"}` for the parent reference.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated
 [item](../resources/driveitem.md) object in the response body.
 
-### Example
+## Example
 This example moves a folder to a new parent path.
 
 <!-- {
@@ -59,7 +59,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+## Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",

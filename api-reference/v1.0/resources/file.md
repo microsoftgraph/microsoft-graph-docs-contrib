@@ -3,7 +3,7 @@
 The **file** resource groups file-related data items into a single structure.
 
 
-### Properties
+## Properties
 
 | Property | Type                    | Description                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -11,7 +11,7 @@ The **file** resource groups file-related data items into a single structure.
 | mimeType | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

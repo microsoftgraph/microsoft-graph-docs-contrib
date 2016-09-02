@@ -3,29 +3,29 @@
 Create a new contactFolder as a child of a specified folder. 
 
 You can also [create a new contactFolder under the user's default contact folder](user_post_contactfolders.md).
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/contactFolders/<id>/childFolders
 POST /users/<id | userPrincipalName>/contactFolders/<id>/childFolders
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

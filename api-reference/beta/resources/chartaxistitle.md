@@ -3,25 +3,25 @@
 Represents the title of a chart axis.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [ChartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
 |[Update](../api/chartaxistitle_update.md) | [ChartAxisTitle](chartaxistitle.md)	|Update ChartAxisTitle object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |text|string|Represents the axis title.|
 |visible|boolean|A boolean that specifies the visibility of an axis title.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |format|[ChartAxisTitleFormat](chartaxistitleformat.md)|Represents the formatting of chart axis title. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

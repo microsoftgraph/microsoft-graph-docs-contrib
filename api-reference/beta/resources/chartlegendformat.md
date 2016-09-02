@@ -3,13 +3,13 @@
 Encapsulates the format properties of a chart legend.
 
 
-### Methods
+## Methods
 None
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Represents the fill format of an object, which includes background formating information. Read-only.|

@@ -7,7 +7,7 @@ A message that represents a meeting request, meeting cancel message, meeting acc
 An **eventMessage** instance is typically found in the Inbox folder where it arrives as the result of either an event organizer creating a meeting or by an attendee 
 responding to a meeting request. You act on event messages in the same way that you act on Message with minor differences.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource  
 
@@ -67,7 +67,7 @@ Here is a JSON representation of the resource
 
 ```
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|The Bcc: recipients for the message.|
@@ -112,7 +112,7 @@ Here is a JSON representation of the resource
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
 
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceAttachment.md) attachments for the message. Read-only. Nullable.|
@@ -122,7 +122,7 @@ Here is a JSON representation of the resource
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the eventMessage. Read-only. Nullable.|
 
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|

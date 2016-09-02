@@ -1,27 +1,27 @@
 # privilegedRoleAssignment: makeEligible
 Make the role assignment as eligible. If the role assignment is already eligible before the call, it does nothing. If the role assignment is permanent and the requestor is different from the target user, the role assignment will become eligible and the role will be deactivated for the target user. If the requestor is the target user and the role is Security Administrator or Privileged Role Administrator, the role will be activated with the default expiration.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
 
 The requestor needs to have _Privileged Role Administrator_ role. 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignments/<id>/makeEligible
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

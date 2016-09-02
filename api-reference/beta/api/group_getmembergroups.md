@@ -7,29 +7,29 @@ This function supports Office 365 and other types of groups provisioned in Azure
 request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is 
 always direct.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/getMemberGroups
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean|**true** to specify that only security groups that the group is a member of should be returned; **false** to specify that all groups that the group is a member of should be returned.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

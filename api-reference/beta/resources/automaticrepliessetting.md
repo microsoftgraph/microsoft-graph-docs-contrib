@@ -5,7 +5,7 @@ signed-in user. For example, an automatic reply to notify that the signed-in use
 respond to emails. 
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |externalAudience|String| The set of audience external to the signed-in user's organization who will receive the **ExternalReplyMessage**, if **Status** is `AlwaysEnabled` or `Scheduled`. Possible values are: `none`, `contactsOnly`, `all`.|
@@ -15,7 +15,7 @@ respond to emails.
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.|
 |status|String|Configurations status for automatic replies. Possible values are: `disabled`, `alwaysEnabled`, `scheduled`.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

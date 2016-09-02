@@ -1,27 +1,27 @@
 # Add group owner
 Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/owners/$ref
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

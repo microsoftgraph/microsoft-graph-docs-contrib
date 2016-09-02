@@ -2,14 +2,14 @@
 
 An aggregation of information about a person from across mail, contacts and social networks. People can be local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of a person object.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |birthday|string|The person's birthday.|
@@ -34,11 +34,11 @@ An aggregation of information about a person from across mail, contacts and soci
 |websites|[website](website.md) collection|The person's websites.|
 |yomiCompany|string|The phonetic Japanese name of the person's company.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

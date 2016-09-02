@@ -2,7 +2,7 @@
 
 Links for opening a OneNote page.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -21,7 +21,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Opens the page in the OneNote native client if it's installed.|

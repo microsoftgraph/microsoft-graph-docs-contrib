@@ -3,7 +3,7 @@
 Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the [requiredResourceAccess](requiredResourceAccess.md) type is a collection of **ResourceAccess**.
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -22,7 +22,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|Guid|The unique identifier for one of the [oAuth2Permission](oauth2permission.md) or [appRole](approle.md) instances that the resource application exposes.|

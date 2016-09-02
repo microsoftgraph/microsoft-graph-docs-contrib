@@ -2,7 +2,7 @@
 
 The ExternalReference resource represents the metadata of a reference (attachments such as file, URL). It is the value of property-value pairs in the [externalReferenceCollection](externalreferencecollection.md).
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -24,7 +24,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |alias|String| A name alias to describe the reference. |

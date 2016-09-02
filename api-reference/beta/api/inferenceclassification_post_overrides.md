@@ -9,28 +9,28 @@ as specified in the override.
 - The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.
 - The POST operation supports creating only one override at a time.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/inferenceClassification/overrides
 POST /users/<id>/inferenceClassification/overrides
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

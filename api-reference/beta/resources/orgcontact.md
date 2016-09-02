@@ -2,7 +2,7 @@
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |city|String||
@@ -64,14 +64,14 @@ Here is a JSON representation of the resource
 |surname|String||
 |businessPhones|String||
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |directReports|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)| Read-only.|
 |memberOf|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

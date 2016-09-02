@@ -3,28 +3,28 @@
 Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
 You can include an [attachment](../resources/attachment.md) while creating the draft in the same **Post** call.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/messages
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

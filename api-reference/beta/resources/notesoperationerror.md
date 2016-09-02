@@ -2,7 +2,7 @@
 
 An error from a failed OneNote operation.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -21,7 +21,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |code|string|The error code.|

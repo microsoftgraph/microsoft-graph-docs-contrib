@@ -3,26 +3,26 @@
 Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or 
 a forward draft. The message is then saved in the Sent Items folder.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Send*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/send
 POST /users/<id | userPrincipalName>/messages/<id>/send
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 
-### Response
+## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

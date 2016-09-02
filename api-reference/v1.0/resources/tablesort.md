@@ -3,7 +3,7 @@
 Manages sorting operations on Table objects.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -12,18 +12,18 @@ Manages sorting operations on Table objects.
 |[Clear](../api/tablesort_clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
 |[Reapply](../api/tablesort_reapply.md)|None|Reapplies the current sorting parameters to the table.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |matchCase|boolean|Represents whether the casing impacted the last sort of the table. Read-only.|
 |method|string|Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |fields|[SortField](sortfield.md)|Represents the current conditions used to last sort the table. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

@@ -1,9 +1,9 @@
 # Range: Row
 
 Gets a row contained in the range.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/Row
@@ -11,23 +11,23 @@ POST /workbook/worksheets(<id|name>)/range(<address>)/Row
 POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Row
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |row|number|Row number of the range to be retrieved. Zero-indexed.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

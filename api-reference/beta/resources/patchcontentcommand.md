@@ -2,7 +2,7 @@
 
 The changes to make to a OneNote page in a PATCH request.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource, which is sent in the body of the [PATCH pages/<id>`](../api/page_update.md) request. 
 
@@ -24,7 +24,7 @@ Here is a JSON representation of the resource, which is sent in the body of the 
 
 ```
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |action|String|The action to perform on the target element. Possible values are: `replace`, `append`, `insert`, or `prepend`.|

@@ -2,7 +2,7 @@
 
 A calendar which is a container for events.
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -20,7 +20,7 @@ A calendar which is a container for events.
 |[Get calendar with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Get a calendar that contains a multi-value extended property by using `$expand`. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
@@ -29,7 +29,7 @@ A calendar which is a container for events.
 |isDefaultCalendar|Boolean|True if this calendar is the user's default calendar, false otherwise.|
 |name|String|The calendar name.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Navigation property. Read-only.|
@@ -37,7 +37,7 @@ A calendar which is a container for events.
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

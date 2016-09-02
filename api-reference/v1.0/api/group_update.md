@@ -1,20 +1,20 @@
 # Update group
 
 Update the properties of a group object.
-### Prerequisites
+## Prerequisites
 The following **scope** is required to execute this API: *Group.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -29,9 +29,9 @@ In the request body, supply the values for relevant fields that should be update
 |mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter..|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [group](../resources/group.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

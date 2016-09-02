@@ -2,7 +2,7 @@
 
 Represents a condition in a sorting operation.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ascending|boolean|Represents whether the sorting is done in an ascending fashion.|
@@ -11,12 +11,12 @@ Represents a condition in a sorting operation.
 |key|int|Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).|
 |sortOn|string|Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |icon|[Icon](icon.md)|Represents the icon that is the target of the condition if the sorting is on the cell's icon.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

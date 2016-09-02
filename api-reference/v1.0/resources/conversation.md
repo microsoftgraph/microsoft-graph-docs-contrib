@@ -2,7 +2,7 @@
 
 A conversation is a collection of [threads](conversationthread.md), and a thread contains posts to that thread. All threads and posts in a conversation share the same subject.
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -14,7 +14,7 @@ A conversation is a collection of [threads](conversationthread.md), and a thread
 |[Create conversation thread](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md) collection| Create a thread in the specified conversation.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Indicates whether any of the posts within this Conversation has at least one attachment.|
@@ -24,13 +24,13 @@ A conversation is a collection of [threads](conversationthread.md), and a thread
 |topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
 |uniqueSenders|String collection|All the users that sent a message to this Conversation.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |threads|[conversationThread](conversationthread.md) collection|A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

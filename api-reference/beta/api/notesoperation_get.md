@@ -9,30 +9,30 @@ If the status is `completed`, the `resourceLocation` property contains the resou
 
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:  
 Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/notes/operations/<id>
 GET /users/<id | userPrincipalName>/notes/operations/<id>
 GET /groups/<id>/notes/operations/<id>
 ```
-### Optional query parameters
+## Optional query parameters
 None.
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 | Accept | string | `application/json` | 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [notesOperation](../resources/notesoperation.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

@@ -3,7 +3,7 @@
 Represents a row in a table.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -15,17 +15,17 @@ Represents a row in a table.
 |[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|Gets a row based on its position in the collection.|
 |[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Adds a new row to the table.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|int|Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.|
 |values|json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

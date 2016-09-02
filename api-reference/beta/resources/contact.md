@@ -3,7 +3,7 @@
 A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders.
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -57,7 +57,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assistantName|String|The name of the contact's assistant.|
@@ -97,7 +97,7 @@ Here is a JSON representation of the resource
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact.|
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
@@ -106,7 +106,7 @@ Here is a JSON representation of the resource
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

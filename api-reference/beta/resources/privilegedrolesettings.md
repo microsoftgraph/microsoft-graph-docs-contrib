@@ -3,12 +3,12 @@
 Represents the settings for a privileged role.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get privilegedRoleSettings](../api/privilegedrolesettings_get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|The duration when the role is activated.|
@@ -21,11 +21,11 @@ Represents the settings for a privileged role.
 |notificationToUserOnElevation|boolean|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated.|
 |ticketingInfoOnElevation|boolean|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

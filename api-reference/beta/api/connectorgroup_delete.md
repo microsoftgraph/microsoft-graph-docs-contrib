@@ -1,29 +1,29 @@
 # Delete connectorGroup
 
 Delete a connectorGroup.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All Or Directory.AccessAsUser.All*
 
 > **Note:** The connector group must not have any connectors associated with it.
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /connectorGroups/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer. Required|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

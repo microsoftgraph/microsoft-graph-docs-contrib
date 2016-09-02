@@ -2,26 +2,26 @@
 
 Use this API to get a specific member (user or group) in an administrative unit.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 
-### HTTP request
+## HTTP request
 
 ```http
 GET /administrativeUnits/<id>/members/<id>
 ```
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <token>. Required.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) or [group](../resources/group.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 

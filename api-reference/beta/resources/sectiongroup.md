@@ -2,7 +2,7 @@
 
 A section group in a OneNote notebook. Section groups can contain sections and section groups.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdBy|String|The user who created the section group. Read-only.|
@@ -44,7 +44,7 @@ Here is a JSON representation of the resource.
 |sectionsUrl|String|The URL for the `sections` navigation property, which returns all the sections in the section group. Read-only.|
 |self|String|The endpoint where you can get details about the section group. Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|The notebook that contains the section group. Read-only.|
@@ -52,7 +52,7 @@ Here is a JSON representation of the resource.
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in the section. Read-only. Nullable.|
 |sections|[Section](section.md) collection|The sections in the section group. Read-only. Nullable.|
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

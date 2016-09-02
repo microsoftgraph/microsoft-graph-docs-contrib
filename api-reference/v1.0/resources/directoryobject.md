@@ -3,7 +3,7 @@
 Represents an Azure Active Directory object. The **directoryObject** type is the base type for many other directory entity types.
 
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -11,16 +11,16 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 |[Delete](../api/directoryobject_delete.md) | None |Delete a directory object. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String|A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde. Key. Not nullable. Read-only.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

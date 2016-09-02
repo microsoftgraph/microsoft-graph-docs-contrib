@@ -7,13 +7,13 @@ deleted.
 
 See [view changes for an item](../api/item_delta.md) for more information.
 
-### Properties
+## Properties
 
 | Property | Type   | Description                               |
 |:---------|:-------|:------------------------------------------|
 | state    | String | Represents the state of the deleted item. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

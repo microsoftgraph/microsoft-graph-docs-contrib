@@ -9,7 +9,7 @@ When creating a file attachment, include the following in the request body:
 
 Derived from [attachment](attachment.md).
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -17,7 +17,7 @@ Derived from [attachment](attachment.md).
 |[Delete](../api/attachment_delete.md) | None |Delete fileAttachment object. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |contentBytes|Binary|The binary contents of the file.|
@@ -30,11 +30,11 @@ Derived from [attachment](attachment.md).
 |name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.|
 |size|Int32|The size in bytes of the attachment.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

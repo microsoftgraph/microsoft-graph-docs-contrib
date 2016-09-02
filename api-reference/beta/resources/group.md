@@ -4,7 +4,7 @@ Represents an Azure Active Directory group, which can be an Office 365 group, dy
 Inherits from [directoryObject](directoryobject.md).
 
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -47,7 +47,7 @@ Inherits from [directoryObject](directoryobject.md).
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|Default is **false**. Indicates if external members can send email to group. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.|
@@ -69,7 +69,7 @@ Inherits from [directoryObject](directoryobject.md).
 |unseenCount|Int32|Count of posts that the current  user has not seen since his last visit.|
 |visibility|String| Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
@@ -91,7 +91,7 @@ Inherits from [directoryObject](directoryobject.md).
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

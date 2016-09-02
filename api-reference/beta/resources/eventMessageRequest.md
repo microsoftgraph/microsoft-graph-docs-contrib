@@ -2,7 +2,7 @@
 
 A message that represents a meeting request.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -61,7 +61,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|The Bcc: recipients for the message.|
@@ -102,14 +102,14 @@ Here is a JSON representation of the resource
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
 |event|[Event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
 |extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

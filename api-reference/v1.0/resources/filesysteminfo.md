@@ -6,14 +6,14 @@ used to specify the last modified date or created date of the item as it was on
 the local device.
 
 
-### Properties
+## Properties
 
 | Property                 | Type           | Description                                                   |
 |:-------------------------|:---------------|:--------------------------------------------------------------|
 | **createdDateTime**      | DateTimeOffset | The UTC date and time the file was created on a client.       |
 | **lastModifiedDateTime** | DateTimeOffset | The UTC date and time the file was last modified on a client. |
 
-### Notes
+## Notes
 
 Values for createdDateTime and lastModifiedDateTime vary from the same
 properties on the [driveitem](driveitem.md) resource. The values on the item
@@ -29,7 +29,7 @@ the `fileSystemInfo` facet will show the original created date on Monday.
 These properties are read/write. If you are uploading a file and know the
 local client values for these fields, you should include them in the request.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

@@ -1,9 +1,9 @@
 # Delete eventMessage
 
 Delete eventMessage.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Mail.ReadWrite_ 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/<id>
@@ -12,19 +12,19 @@ DELETE /users/<id | userPrincipalName>/messages/<id>
 DELETE /me/mailFolders/<id>/messages/<id>
 DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

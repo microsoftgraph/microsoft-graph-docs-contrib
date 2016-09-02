@@ -20,7 +20,7 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 Office 365 Data Extensions or extended properties, and how to specify extended properties.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API, depending on the resource you're
 creating the extended property in:
@@ -30,7 +30,7 @@ creating the extended property in:
 - _Contacts.ReadWrite_
 - _Group.ReadWrite.All_
  
-### HTTP request
+## HTTP request
 You can create extended properties in a new or existing resource instance.
 
 To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
@@ -104,7 +104,7 @@ PATCH /groups/<id>/events/<id>
 ```
 
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
@@ -115,13 +115,13 @@ PATCH /groups/<id>/events/<id>
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
 
 
-### Request headers
+## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer %token%|
 | Content-Type | application/json |
 
-### Request body
+## Request body
 
 Provide a JSON body of each [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) object in the 
 **multiValueExtendedProperties** collection property of the resource instance.
@@ -130,7 +130,7 @@ When creating an extended property in a _new_ resource instance, in addition to 
 new **multiValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
 [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
-### Response
+## Response
 
 #### Response code
 An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post, 
@@ -149,7 +149,7 @@ When creating an extended property in a _new_ group post, the response includes 
 the extended property. You cannot create an extended property in an existing group post.
 
 
-### Example
+## Example
 ##### Request 1
 
 The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally 

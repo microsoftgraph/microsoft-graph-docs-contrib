@@ -3,7 +3,7 @@
 Represents location information of an event.
 
 
-### Properties
+## Properties
 | Property  | Type   | Description                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicalAddress.md) |The street address of the location. |
@@ -11,7 +11,7 @@ Represents location information of an event.
 
 
 
-### JSON representation
+## JSON representation
 
 <!-- {
   "blockType": "resource",

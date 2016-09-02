@@ -2,12 +2,12 @@
 
 Use this API to create a new item in a collection.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /drive/root/children
@@ -16,21 +16,21 @@ POST /drives/<id>/root/children
 
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer <token>. Required. |
 
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [item](../resources/driveitem.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [item](../resources/driveitem.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

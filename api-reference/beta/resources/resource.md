@@ -42,14 +42,14 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
     type="media-type" ... />
 ```
 
-### Properties
+## Properties
 None.
 
-### Relationships
+## Relationships
 None.
 
 
-### Methods
+## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get resource binary data](../api/resource_get.md) | Stream |Retrieve the binary data of a file or image resource.|

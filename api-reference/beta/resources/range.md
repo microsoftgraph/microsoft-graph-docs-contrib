@@ -3,7 +3,7 @@
 Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -27,7 +27,7 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |[Merge](../api/range_merge.md)|None|Merge the range cells into one region in the worksheet.|
 |[Unmerge](../api/range_unmerge.md)|None|Unmerge the range cells into separate cells.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|string|Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4). Read-only.|
@@ -48,14 +48,14 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |valueTypes|string|Represents the type of data of each cell. Possible values are: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean`, `Error`. Read-only.|
 |values|json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |format|[RangeFormat](rangeformat.md)|Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.|
 |sort|[RangeSort](rangesort.md)|The worksheet containing the current range. Read-only.|
 |worksheet|[Worksheet](worksheet.md)|The worksheet containing the current range. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

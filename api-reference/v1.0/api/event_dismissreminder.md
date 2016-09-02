@@ -2,10 +2,10 @@
 
 Dissmiss a reminder that has been triggered.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/<id>/dismissReminder
@@ -25,17 +25,17 @@ POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/di
 POST /me/calendargroups/<id>/calendars/<id>/events/<id>/dismissReminder
 POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/dismissReminder
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

@@ -3,13 +3,13 @@
 encapsulates the format properties for the chart series
 
 
-### Methods
+## Methods
 None
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Represents the fill format of a chart series, which includes background formating information. Read-only.|

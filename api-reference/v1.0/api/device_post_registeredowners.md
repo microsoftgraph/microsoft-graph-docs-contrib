@@ -1,29 +1,29 @@
 # Create registeredOwner
 
 Add a user as a registered owner of the device.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:  
 *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/<id>/registeredOwners
 
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

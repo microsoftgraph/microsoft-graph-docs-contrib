@@ -1,16 +1,16 @@
 # user: reminderView
 Return a list of calendar reminders within the specified start and end times. 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read; Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 
-### Function Parameters
+## Function Parameters
 In the request URL, provide the following function parameters with values.
 
 | Parameter	   | Type	|Description|
@@ -19,19 +19,19 @@ In the request URL, provide the following function parameters with values.
 |endDateTime|String|The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".|
 
 
-### Request headers
+## Request headers
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer <token>. Required.  |
 | Prefer | <Time-zone>. Optional, UTC assumed if absent.| 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

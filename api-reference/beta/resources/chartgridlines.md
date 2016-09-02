@@ -3,24 +3,24 @@
 Represents major or minor gridlines on a chart axis.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ChartGridlines](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |Read properties and relationships of chartGridlines object.|
 |[Update](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)	|Update ChartGridlines object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |visible|boolean|Boolean value representing if the axis gridlines are visible or not.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |format|[ChartGridlinesFormat](chartgridlinesformat.md)|Represents the formatting of chart gridlines. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

@@ -1,28 +1,28 @@
 # Create ChartSeries
 
 Use this API to create a new ChartSeries.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets(<id|name>)/charts(<name>)/series
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [ChartSeries](../resources/chartseries.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [ChartSeries](../resources/chartseries.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {
