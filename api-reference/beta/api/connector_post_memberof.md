@@ -1,27 +1,27 @@
 # Add Connector to connectorGroup
 
 Use this API to add a connector to a new connectorGroup.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All Or Directory.AccessAsUser.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /connectors/<id>/memberOf
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer. Required|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

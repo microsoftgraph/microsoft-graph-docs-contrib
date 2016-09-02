@@ -1,9 +1,9 @@
 # RangeFormat: autofitColumns
 
 Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/autofitColumns
@@ -11,18 +11,18 @@ POST /workbook/worksheets(<id|name>)/range(<address>)/format/autofitColumns
 POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/autofitColumns
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

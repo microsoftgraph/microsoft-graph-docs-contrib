@@ -6,7 +6,7 @@ Represents an Azure AD policy. Policies are custom rules that can be enforced on
 
 The different types of policies are described in further detail below.
 
-### Methods
+## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 | [Get policy](../api/policy_get.md) |Policy|Read properties and relationships of user object.|
@@ -18,7 +18,7 @@ The different types of policies are described in further detail below.
 |[List assigned policies](../api/policy_list_assigned.md)|Policy collection|Get all policy objects assigned to an application or service principal.|
 
 
-### Common Properties
+## Common Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |definition|String|The string version of the specific policy. See below. Required.|
@@ -56,7 +56,7 @@ The properties below form the JSON object that represents a token lifetime polic
 |MaxAgeSessionMultiFactor|String|Controls how long a user can continue to use session tokens to get new ID/session tokens after the last time they authenticated successfully with multi factors.|10 minutes|until-revoked|365 or until-revoked|
 |Version|Integer|Set value of 1. Required.|None|None|None|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -82,7 +82,7 @@ The properties below form the JSON object that represents a naming policy. This 
 |Type|String|Type of blocked words policy. Currently only accepts "CustomBlockedWordPolicy"|
 |Version|String|Set value of "1.0". Required|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

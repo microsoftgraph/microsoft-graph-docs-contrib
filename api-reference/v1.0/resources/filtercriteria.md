@@ -2,7 +2,7 @@
 
 Represents the filtering criteria applied to a column.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

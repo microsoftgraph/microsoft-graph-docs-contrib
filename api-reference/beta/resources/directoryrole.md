@@ -4,7 +4,7 @@ Represents an Azure AD directory role. Azure AD directory roles are also known a
 
 By default, directory roles are scoped to be tenant-wide.  However, directory roles (currently only the *user account admin* and *helpdesk admin*) may also be scoped to [administrative units](administrativeunit.md).
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -14,7 +14,7 @@ By default, directory roles are scoped to be tenant-wide.  However, directory ro
 |[List scoped administrators](../api/directoryrole_list_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership object collection.|
 <!--|[Remove member](../api/directoryrole_delete_members.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role by posting to the members navigation property.|-->
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |description|String|The description for the directory role. Read-only. |
@@ -22,13 +22,13 @@ By default, directory roles are scoped to be tenant-wide.  However, directory ro
 |id|String|The unique identifier for the directory role. Inherited from [directoryObject](directoryobject.md). Key, Not nullable, Read-only.|
 |roleTemplateId|String| The **id** of the [directoryRoleTemplate](directoryroletemplate.md) that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only. |
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |members|[directoryObject](directoryobject.md) collection|Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable.|
 |scopedAdministrators|[scopedRoleMembership](scopedrolemembership.md) collection| Administrators of this directory role that are scoped to [administrative units](administrativeunit.md). Read-only. Nullable.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

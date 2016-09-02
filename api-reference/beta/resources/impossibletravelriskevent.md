@@ -3,13 +3,13 @@
 A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) where two account sign-ins occur from locations atypical for the user and it would be impossible to travel between the locations in the duration between the sign-ins. Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get impossibleTravelRiskEvent](../api/impossibletravelriskevent_get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |Read properties and relationships of impossibleTravelRiskEvent object.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| The date and time that the risk event was closed|
@@ -31,12 +31,12 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 |userId|string| The id of the user at risk|
 |userPrincipalName|string| The user principal name of the user at risk|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Read-only. Nullable.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

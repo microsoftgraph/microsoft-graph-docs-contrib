@@ -6,14 +6,14 @@ you can add to under 4MB.
 
 You can use either PATCH or PUT for this operation in version 1.0.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API for:
 
 - Profile photo of signed-in **user** - *User.ReadWrite*
 - Profile photo of a **group** - *Group.ReadWrite.All*
 - Photo of a **contact** - *Contacts.ReadWrite*
 
-### HTTP request to update the photo
+## HTTP request to update the photo
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/photo/$value
@@ -32,18 +32,18 @@ PUT /users/<id | userPrincipalName>/contacts/<id>/photo/$value
 PUT /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
 PUT /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | image/jpeg. Required.  |
 
-### Request body
+## Request body
 In the request body, include the binary data of the photo in the request body.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

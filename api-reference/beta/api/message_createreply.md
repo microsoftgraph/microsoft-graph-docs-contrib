@@ -10,10 +10,10 @@ all in one **createReply** call. You can then [update](../api/message_update.md)
 - If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](http://www.rfc-editor.org/info/rfc2822)), you should 
 send the reply to the recipients in **replyTo**, and not the recipients in **from**. 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/createReply
@@ -21,13 +21,13 @@ POST /users/<id | userPrincipalName>/messages/<id>/createReply
 POST /me/mailFolders/<id>/messages/<id>/createReply
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/createReply
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -35,10 +35,10 @@ In the request body, provide a JSON object with the following parameters.
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
 
-### Example
+## Example
 The following example creates a reply draft, adds a comment and a recipient in the request body.
 ##### Request
 Here is an example of the request.

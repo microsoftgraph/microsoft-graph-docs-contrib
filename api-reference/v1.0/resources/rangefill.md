@@ -3,7 +3,7 @@
 Represents the background of a range object.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -11,16 +11,16 @@ Represents the background of a range object.
 |[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)	|Update RangeFill object. |
 |[Clear](../api/rangefill_clear.md)|None|Resets the range background.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |color|string|HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

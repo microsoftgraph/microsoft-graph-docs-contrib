@@ -1,22 +1,22 @@
 # Update rangeborder
 
 Update the properties of rangeborder object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/borders(<sideIndex>)
 PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/borders(<sideIndex>)
 PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders(<sideIndex>)
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -25,9 +25,9 @@ In the request body, supply the values for relevant fields that should be update
 |style|string|One of the constants of line style specifying the line style for the border. Possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
 |weight|string|Specifies the weight of the border around a range. Possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [RangeBorder](../resources/rangeborder.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

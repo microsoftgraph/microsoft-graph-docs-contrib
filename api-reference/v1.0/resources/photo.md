@@ -4,7 +4,7 @@ The **photo** resource provides photo and camera properties, for example,
 EXIF metadata, on a [driveItem](driveitem.md).
 
 
-### Properties
+## Properties
 | Property                | Type                      | Description                                                     |
 |:------------------------|:--------------------------|:----------------------------------------------------------------|
 | **takenDateTime**       | DateTimeOffset            | Represents the date and time the photo was taken. Read-only.               |
@@ -16,7 +16,7 @@ EXIF metadata, on a [driveItem](driveitem.md).
 | **focalLength**         | Double                    | The focal length from the camera. Read-only.                               |
 | **iso**                 | Int32                     | The ISO value from the camera. Read-only.                                  |
 
-### JSON representation
+## JSON representation
 
 <!-- {
   "blockType": "resource",

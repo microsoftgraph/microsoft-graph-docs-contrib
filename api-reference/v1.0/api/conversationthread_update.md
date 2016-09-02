@@ -1,33 +1,33 @@
 # Update conversationthread
 
 Lock or unlock a thread, to allow or avoid further posting to the thread.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Group.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/<id>/threads/<id>
 PATCH /groups/<id>/conversations/<id>/threads/<id>
 
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |isLocked|Boolean|Indicates if the thread is locked. Set to `true` to disallow posting.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

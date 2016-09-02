@@ -2,7 +2,7 @@
 
 The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |enabled|Int32|            |
@@ -11,7 +11,7 @@ The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

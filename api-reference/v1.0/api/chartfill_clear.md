@@ -1,9 +1,9 @@
 # ChartFill: clear
 
 Clear the fill color of a chart element.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
@@ -11,18 +11,18 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/title/format/fill/clear
 POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/clear
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

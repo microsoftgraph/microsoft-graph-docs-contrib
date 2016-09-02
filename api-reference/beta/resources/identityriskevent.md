@@ -10,13 +10,13 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get identityRiskEvent](../api/identityriskevent_get.md) | [identityRiskEvent](identityriskevent.md) |Read properties and relationships of identityRiskEvent object.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| The date and time that the risk event was closed|
@@ -30,12 +30,12 @@ Complete information about risk events can be found in the [Azure AD Identity Pr
 |userId|string| The id of the user at risk|
 |userPrincipalName|string| The user principal name of the user at risk|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Read-only. Nullable.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

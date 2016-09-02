@@ -1,20 +1,20 @@
 # List attachments
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 * Group.Read.All
 * Group.Readwrite.All
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 GET /groups/<id>/threads/<id>/posts/<id>/attachments
 GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 In particular, you can use the $expand query parameter to include all of the post attachments
@@ -23,16 +23,16 @@ inline with the rest of the post properties. For example:
 ```
 GET https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>?$expand=attachments
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

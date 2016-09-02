@@ -13,7 +13,7 @@ and files have a [**file facet**](file.md). Images have an
 Items with the **folder** facet act as containers of items and therefore
 have a `children` reference pointing to a collection of items under the folder.
 
-### Methods
+## Methods
 
 | Method                                                 | Return Type                                | Description                                                                                                                             |
 |:-------------------------------------------------------|:-------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +34,7 @@ have a `children` reference pointing to a collection of items under the folder.
 | [List permissions](../api/item_list_permissions.md)    | [permission](permission.md) collection     | Get a permission object collection.                                                                                                     |
 | [Delete permission](../api/permission_delete.md) | None                                       | Remove a permission from an item.                                                                                                       |
 
-### Properties
+## Properties
 
 | Property             | Type                                | Description                                                                                                                                                               |
 |:---------------------|:------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -74,7 +74,7 @@ is changed. The eTag value is only modified when the folder's properties are
 changed, except for properties that are derived from descendants (like
 **childCount** or **lastModifiedDateTime**).
 
-### Instance Attributes
+## Instance Attributes
 
 Instance attributes are properties with special behaviors. This properties are
 temporary and either a) define behavior the service should perform or b) provide
@@ -90,7 +90,7 @@ short-term property values, like a download URL for an item that expires.
 cached. The URL will only be available for a short period of time before it is
 invalidated.
 
-### Relationships
+## Relationships
 
 | Relationship       | Type                                       | Description                                                                                                                                                                       |
 |:-------------------|:-------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -100,7 +100,7 @@ invalidated.
 | permissions        | [permission](permission.md) collection     | The set of permissions for the item. Read-only. Nullable.                                                                                                                         |
 | thumbnails         | [thumbnailSet](thumbnailset.md) collection | Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../api/thumbnailset_get.md). Read-only. Nullable. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

@@ -2,7 +2,7 @@
 
 The upload session provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -20,7 +20,8 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
+
 | Property	         | Type              |Description|
 |:-------------------|:------------------|:----------|
 | expirationDateTime | DateTime          | The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached. |

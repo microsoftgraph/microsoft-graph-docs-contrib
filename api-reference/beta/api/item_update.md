@@ -5,7 +5,7 @@ Update the metadata for a driveItem by ID or path.
 You can also use update to move an item to another parent by updating the
 item's **parentReference** property.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
@@ -18,25 +18,25 @@ PATCH /me/drive/root:/{item-path}
 PATCH /groups/<id>/drive/items/<item-id>
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Authorization | string | Bearer <token>. Required.                                                                                                                                           |
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
-### Request body
+## Request body
 In the request body, supply the values for properties that should be
 updated. Existing properties that are not included in the request body
 will maintain their previous values or be recalculated based on changes to other
 property values. For best performance your app should not include properties
 that haven't changed.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated
 [item](../resources/driveitem.md) object in the response body.
 
-### Example
+## Example
 This example renames the file and adds a description to the driveItem.
 
 <!-- {
@@ -53,7 +53,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+## Response
 Here is an example of the response. This response is truncated for readability.
 
 <!-- {

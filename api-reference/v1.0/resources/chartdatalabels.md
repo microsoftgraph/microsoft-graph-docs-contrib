@@ -3,14 +3,14 @@
 Represents a collection of all the data labels on a chart point.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ChartDataLabels](../api/chartdatalabels_get.md) | [ChartDataLabels](chartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
 |[Update](../api/chartdatalabels_update.md) | [ChartDataLabels](chartdatalabels.md)	|Update ChartDataLabels object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |position|string|DataLabelPosition value that represents the position of the data label. Possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
@@ -22,12 +22,12 @@ Represents a collection of all the data labels on a chart point.
 |showSeriesName|boolean|Boolean value representing if the data label series name is visible or not.|
 |showValue|boolean|Boolean value representing if the data label value is visible or not.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |format|[ChartDataLabelFormat](chartdatalabelformat.md)|Represents the format of chart data labels, which includes fill and font formatting. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

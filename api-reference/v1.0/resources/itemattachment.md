@@ -4,14 +4,14 @@ A contact, event, or message that's attached to another event, message, or post.
 
 Derived from [attachment](attachment.md).
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get itemAttachment](../api/itemattachment_get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
 |[Delete](../api/attachment_delete.md) | None |Delete itemAttachment object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |contentType|String|The content type of the attachment.|
@@ -21,12 +21,12 @@ Derived from [attachment](attachment.md).
 |name|String|The display name of the attachment.|
 |size|Int32|The size in bytes of the attachment.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|The attached message or event. Navigation property.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

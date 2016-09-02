@@ -6,29 +6,29 @@ You can check up to a maximum of 20 groups per request. This function supports O
 types of groups provisioned in Azure AD. Note that Office 365 Groups cannot contain groups. So membership 
 in an Office 365 Group is always direct. 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/checkMemberGroups
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |groupIds|String|An array of group ids|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

@@ -11,7 +11,7 @@ Outlook.com. Or, it can be an event or post for an Office 365 group. Data in an 
 or arrays of primitive types.
 
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API, depending on the resource you're
 creating the extension in:
@@ -21,7 +21,7 @@ creating the extension in:
 - _Contacts.ReadWrite_
 - _Group.ReadWrite.All_
  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -42,7 +42,7 @@ PATCH /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extens
 ```
 
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
@@ -50,13 +50,13 @@ PATCH /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extens
 |extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
 
-### Request headers
+## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer %token%|
 | Content-Type | application/json |
 
-### Request body
+## Request body
 
 Provide a JSON body of an [openTypeExtension](../resources/openTypeExtension.md) object, with the 
 following required name-value pairs, and any custom data to change or add to that extension. 
@@ -68,13 +68,13 @@ The data in the JSON payload can be primitive types, or arrays of primitive type
 | extensionName | %unique_string% |
 
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and the updated
 [openTypeExtension](../resources/openTypeExtension.md) object.
 
 
-### Example
+## Example
 #### Request 1
 
 The first example shows how to update an extension in a message. The extension is initially represented by the following JSON payload:

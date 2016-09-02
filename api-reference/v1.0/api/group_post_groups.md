@@ -14,19 +14,19 @@ At a minimum, you must specify the properties required for the type of group you
 | Security | Do not set. | true |
 
 Specify other writable properties as necessary, such as **mailEnabled** for mail-enabled groups. For more information, see the properties of the [group](../resources/group.md) resource.
-### Prerequisites
+## Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [group](../resources/group.md) object.
 
 The following table shows the properties that are required when you create a group.
@@ -38,10 +38,10 @@ The following table shows the properties that are required when you create a gro
 | mailNickname | string | The mail alias for the group. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups. Set to **false** if creating an Office 365 group. |
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

@@ -2,7 +2,7 @@
 
  The data needed to reference a [driveItem](driveitem.md) using the API.
 
-### Properties
+## Properties
 
 | Property | Type   | Description                                                                   |
 |:---------|:-------|:------------------------------------------------------------------------------|
@@ -10,7 +10,7 @@
 | id       | String | Unique identifier of the item in the drive. Read-only.            |
 | path     | String | Path that can be used to navigate to the item. Read-only.                     |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

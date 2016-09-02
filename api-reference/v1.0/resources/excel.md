@@ -24,10 +24,11 @@ Following sections provide important programming details related to Excel REST A
 * [Blank Input and Output](#blank-input-and-output)
 * [Unbounded-Range](#unbounded-range)
 * [Large-Range](#large-range)
+* [Workbook functions](#workbook-functions)
 * [Error information](#error-information)
 
 
-### Authorization and scopes
+## Authorization and scopes
 
 The standard OAuth2 based authorization used across mechanism applies to Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
 Please refer to the authorization section of the docs to learn more.  
@@ -40,7 +41,7 @@ One of the following scopes is required to execute Excel API:
 * Files.ReadWrite
 
 
-### The Basics
+## The Basics
 
 Excel REST APIs allow web and mobile applications to read and modify workbook stored on the supported storage platforms (OneDrive, SharePoint, etc.). `Workbook` (or Excel file) is the top level object, which consists of all other Excel objects through relationships. A workbook is addressed through drive API by identifying the location of the file in the URL. Example:
 
@@ -107,7 +108,7 @@ workbook-session-id: {session-id}
 ```
 [top](#excel-rest-api)
 
-### Worksheet operations
+## Worksheet operations
 
 #### List worksheets part of the workbook 
 Request 
@@ -224,7 +225,7 @@ content-type: application/json;odata.metadata
 ```
 [top](#excel-rest-api)
 
-### Chart operations
+## Chart operations
 
 #### List charts that are part of the worksheet 
 
@@ -365,7 +366,7 @@ Response
 HTTP code: 204, No Content
 ```
 
-### Table operations 
+## Table operations 
 
 #### Get list of tables 
 
@@ -505,7 +506,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-### Get list of table columns
+## Get list of table columns
 
 Request
 <!-- { "blockType": "ignored" } -->
@@ -804,7 +805,7 @@ HTTP code: 204, No Content
 
 [top](#excel-rest-api)
 
-### Range operations
+## Range operations
 
 #### Get Range 
 
@@ -1038,7 +1039,7 @@ HTTP code: 204, No Content
 
 [top](#excel-rest-api)
 
-### Named items
+## Named items
 Request
 
 <!-- { "blockType": "ignored" } -->
@@ -1083,7 +1084,7 @@ content-type: application/json
 }
 ```
 
-### Understanding nulls in Excel API
+## Understanding nulls in Excel API
 
 #### null input in 2-D Array
 
@@ -1133,7 +1134,7 @@ Example: A Range can consist of one of more cells. In cases where the individual
 ```
 [top](#excel-rest-api)
 
-### Blank Input and Output
+## Blank Input and Output
 
 Blank values in update requests are treated as instruction to clear or reset the respective property. Blank value is represented by two double quotation marks with no space in-between. `""`
 
@@ -1161,7 +1162,7 @@ For read operations, expect to receive blank values if the contents of the cells
 ```
 [top](#excel-rest-api)
 
-### Unbounded Range
+## Unbounded Range
 
 #### Read
 
@@ -1190,14 +1191,14 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A:B")
 When an update operation is attempted on such a Range, the API will return an error.
 
 
-### Large Range
+## Large Range
 
 Large Range implies a Range whose size is too large for a single API call. Many factors such as number of cells, values, numberFormat, formulas, etc. contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.
 
 To avoid such a condition, using read or write for large Range in multiple smaller range sizes is recommended.
 
 
-### Single Input Copy
+## Single Input Copy
 
 To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.
 
@@ -1216,7 +1217,42 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
 }
 ```
 
-### Error information 
+## Workbook functions 
+the workbook functions can be accessed through a collection of functions offered in the /functions resource. An example is shown below. 
+
+##### Request
+<!-- { "blockType": "ignored" } -->
+```http
+https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{
+    "rate": 4.5,
+    "nper": 12,
+    "pv": -1250
+}
+```
+
+
+##### Response 
+
+<!-- { "blockType": "ignored" } -->
+```http 
+HTTP code: 200, OK
+content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+    "@odata.type": "#microsoft.graph.workbookFunctionResult",
+    "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/workbook/functions/pmt()",
+    "error": null,
+    "value": 5625.00000734125
+}
+```
+
+## Error information 
 
 Errors are returned with HTTP error code along with an error object. An error `code` and `message` are returned that provides explaination of the reason. 
 An example is shown below:

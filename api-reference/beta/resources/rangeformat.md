@@ -3,7 +3,7 @@
 A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -14,7 +14,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 |[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 |[Autofitrows](../api/rangeformat_autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |columnWidth|double|Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.|
@@ -23,7 +23,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 |verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |borders|[RangeBorder](rangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
@@ -31,7 +31,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 |font|[RangeFont](rangefont.md)|Returns the font object defined on the overall range selected Read-only.|
 |protection|[FormatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

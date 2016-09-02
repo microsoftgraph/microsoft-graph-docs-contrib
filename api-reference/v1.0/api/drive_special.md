@@ -15,36 +15,36 @@ recreated when written to again.
 **Note:**  If you have read-only permissions and request a special folder that
 doesn't exist, you'll receive a `403 Forbidden` error.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/special/<name>
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters)
 to help customize the response.
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer <token>. Required. |
 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md)
 object in the response body.
 
-### Example
+## Example
 
 ##### Request
 Here is an example of the request for the user's drives.
@@ -77,7 +77,7 @@ Content-type: application/json
 }
 ```
 
-### Example HEAD requests for special folders
+## Example HEAD requests for special folders
 
 If you request a special folder that doesn't exist by using a GET request,
 the special folder will be automatically created for you. You can test to see

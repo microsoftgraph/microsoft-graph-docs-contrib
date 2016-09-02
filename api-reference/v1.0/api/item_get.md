@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API:
   * Files.Read
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/items/<item-id>
@@ -16,12 +16,12 @@ GET /me/drive/root:/<item-path>
 GET /groups/<group-id>/drive/items/<item-id>
 ```
 
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query
 Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help
 customize the response.
 
-### Request headers
+## Request headers
 
 | Name          | Value  | Description                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -29,14 +29,14 @@ customize the response.
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and
 [item](../resources/driveitem.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 
 ##### Request
@@ -90,7 +90,7 @@ Content-type: application/json
 }
 ```
 
-### Notes
+## Notes
 
 You can use the [`expand`](https://dev.onedrive.com/odata/optional-query-parameters.htm#expanding-collections)
 query string parameter to include the children of an item in the same call as
@@ -109,7 +109,7 @@ are a couple differences:
 In this example, you can see that requesting the root resource of a drive will
 respond with simply `200 OK`.
 
-### HTTP request
+## HTTP request
 
 <!-- {"blockType": "request", "name": "head-root"} -->
 ```
@@ -117,7 +117,7 @@ HEAD /me/drive/root
 Accept: application/json
 ```
 
-### Response
+## Response
 
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true} -->
 ```

@@ -3,7 +3,7 @@
 The frequency of an event.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|The day of the month that the event occurs on.|
@@ -14,7 +14,7 @@ The frequency of an event.
 |month|Int32|The month that the event occurs on.  This is a number from 1 to 12.|
 |type|String|The recurrence pattern type: `Daily`, `Weekly`, `AbsoluteMonthly`, `RelativeMonthly`, `AbsoluteYearly`, `RelativeYearly`.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

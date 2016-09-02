@@ -3,16 +3,16 @@
 Manages sorting operations on Range objects.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Apply](../api/rangesort_apply.md)|None|Perform a sort operation.|
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 None
 
 

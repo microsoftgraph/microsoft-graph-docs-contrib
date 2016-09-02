@@ -1,29 +1,29 @@
 # List plans
 
 Retrieve a list of [plan](../resources/plan.md) objects owned by the group. Today, a group can own no more than one plan.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 Groups.ReadWrite.All AND Tasks.ReadWrite
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/plans
 ```
-### Optional query parameters
+## Optional query parameters
 None
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Value should be set to "Bearer (access-token)" |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [plan](../resources/plan.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

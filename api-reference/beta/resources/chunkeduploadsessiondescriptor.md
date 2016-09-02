@@ -1,14 +1,14 @@
 # chunkedUploadSessionDescriptor resource type
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|String||
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

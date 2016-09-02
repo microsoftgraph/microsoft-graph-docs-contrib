@@ -2,7 +2,7 @@
 
 The Bucket resource represents a bucket (or "custom column") for tasks in a plan in Office 365. It is contained in a [plan](plan.md) and can have a collection of [tasks](task.md).
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -23,7 +23,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Id of the bucket. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
@@ -31,12 +31,12 @@ Here is a JSON representation of the resource
 |orderHint|String| Used to set the relative order of the buckets in the task board view. Consider three buckets in the order of: `'E'`, `'F'`, `'G'`. To make `'F'` the first bucket, set its `'orderHint'` to smaller than that of `'x'`. The comparison is an ordinal string comparison.|
 |planId|String| Plan id to which the bucket belongs. |
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |tasks|[task](task.md) collection| Read-only. Nullable. Collection of tasks in the bucket. |
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

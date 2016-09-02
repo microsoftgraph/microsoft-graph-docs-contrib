@@ -3,7 +3,7 @@
 Represents a chart object in a workbook.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -19,7 +19,7 @@ Represents a chart object in a workbook.
 |[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Gets a chart based on its position in the collection.|
 |[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Creates a new chart.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |height|double|Represents the height, in points, of the chart object.|
@@ -29,7 +29,7 @@ Represents a chart object in a workbook.
 |top|double|Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).|
 |width|double|Represents the width, in points, of the chart object.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |axes|[ChartAxes](chartaxes.md)|Represents chart axes. Read-only.|
@@ -40,7 +40,7 @@ Represents a chart object in a workbook.
 |title|[ChartTitle](charttitle.md)|Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.|
 |worksheet|[Worksheet](worksheet.md)|The worksheet containing the current chart. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

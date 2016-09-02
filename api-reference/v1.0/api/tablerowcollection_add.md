@@ -1,22 +1,22 @@
 # TableRowCollection: add
 
 Adds a new row to the table.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables(<id|name>)/rows/add
 POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows/add
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -24,10 +24,10 @@ In the request body, provide a JSON object with the following parameters.
 |index|number|Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.|
 |values|(boolean or string or number)|Optional. A 2-dimensional array of unformatted values of the table row.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

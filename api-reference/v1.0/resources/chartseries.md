@@ -3,7 +3,7 @@
 Represents a series in a chart.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -14,18 +14,18 @@ Represents a series in a chart.
 |[List](../api/chartseries_list.md) | [ChartSeries](chartseries.md) collection |Get chartSeries object collection. |
 |[Itemat](../api/chartseriescollection_itemat.md)|[ChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|string|Represents the name of a series in a chart.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |format|[ChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
 |points|[ChartPoints](chartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

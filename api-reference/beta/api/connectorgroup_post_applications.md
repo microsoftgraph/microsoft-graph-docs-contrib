@@ -1,27 +1,27 @@
 # Create application
 
 Use this API to create a new application.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All Or Directory.AccessAsUser.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /connectorGroups/<id>/applications
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer. Required|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [application](../resources/application.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

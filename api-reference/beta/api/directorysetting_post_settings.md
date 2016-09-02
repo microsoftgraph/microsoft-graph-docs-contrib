@@ -1,27 +1,27 @@
 # Create a directory setting
 
 Use this API to create a new setting, based on the templates available in directorySettingTemplates. These settings can be at the tenant-level or at an object level (currently only for groups). The creation request must provide settingValues for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /settings
 POST /groups/<id>/settings
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <token>. Required.|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.  However, the display name for the setting will be set based on the referenced settings template name.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

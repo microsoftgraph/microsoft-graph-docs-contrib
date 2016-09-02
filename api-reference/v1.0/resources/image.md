@@ -3,14 +3,14 @@
 The **image** resource is available on items that represent a bitmap or image.
 
 
-### Properties
+## Properties
 
 | Property   | Type  | Description                                |
 |:-----------|:------|:-------------------------------------------|
 | **height** | Int32 | Height of the image, in pixels. Read-only. |
 | **width**  | Int32 | Width of the image, in pixels. Read-only.  |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

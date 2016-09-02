@@ -3,13 +3,13 @@
 The statistics summary for a particular role.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get privilegedRoleSummary](../api/privilegedrolesummary_get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |Read properties and relationships of privilegedRoleSummary object.|
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|The number of users that have the role assigned and the role is activated.|
@@ -19,11 +19,11 @@ The statistics summary for a particular role.
 |status|string| Possible values are: `ok`, `bad`. The value depends on the ratio of (managedCount / usersCount). If the ratio is less than a predefined threshold, `ok` is returned. Otherwise, `bad` is returned.|
 |usersCount|int32|The number of users that are assigned with the role.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

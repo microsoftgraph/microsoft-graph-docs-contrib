@@ -1,22 +1,22 @@
 # Update chartaxistitle
 
 Update the properties of chartaxistitle object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
 PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/title
 PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/title
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -24,9 +24,9 @@ In the request body, supply the values for relevant fields that should be update
 |text|string|Represents the axis title.|
 |visible|boolean|A boolean that specifies the visibility of an axis title.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [ChartAxisTitle](../resources/chartaxistitle.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

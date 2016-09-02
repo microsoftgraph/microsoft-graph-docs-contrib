@@ -6,7 +6,7 @@ See [Extended properties overview](../resources/extended-properties-overview.md)
 Office 365 Data Extensions or extended properties, and how to specify extended properties. 
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -14,17 +14,17 @@ Office 365 Data Extensions or extended properties, and how to specify extended p
 |[Get](../api/singlevaluelegacyextendedproperty_get.md) |One or a collection of supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)), or one such instance expanded with a [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand` or `$filter`.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string|The property identifier. Read-only.|
 |value|string|A property value.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

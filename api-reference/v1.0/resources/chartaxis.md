@@ -3,14 +3,14 @@
 Represents a single axis in a chart.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
 |[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)	|Update ChartAxis object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |majorUnit|object|Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.|
@@ -18,7 +18,7 @@ Represents a single axis in a chart.
 |minimum|object|Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
 |minorUnit|object|Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |format|[ChartAxisFormat](chartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
@@ -26,7 +26,7 @@ Represents a single axis in a chart.
 |minorGridlines|[ChartGridlines](chartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
 |title|[ChartAxisTitle](chartaxistitle.md)|Represents the axis title. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

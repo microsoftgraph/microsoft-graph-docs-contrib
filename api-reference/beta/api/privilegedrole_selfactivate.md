@@ -1,24 +1,24 @@
 # privilegedRole: selfActivate
 Activate the role that is assigned to the requestor.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
 The requestor can only call ```selfActivate``` for the role that is assigned to him.
  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoles/<id>/selfActivate
 ```
 
 Note that ``<id>`` is the target role id.
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -28,10 +28,10 @@ In the request body, provide a JSON object with the following parameters.
 |ticketNumber|string|Optional. The ticket number that is used to tracking this role activation.|
 |ticketSystem|string|Optional. The ticket system.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

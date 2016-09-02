@@ -3,7 +3,7 @@
 Directory settings can be created based on the available [directorySettingTemplates](directorySettingTemplate.md), and changed from their preset defaults. These settings can govern entity or feature behaviors, both at a tenant-wide level or at a specific entity level. When the same setting is defined at both the tenant-wide and specific entity level, the specific entity level setting may opt-out from the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but a specific group setting may opt-out and not allow guests to be invited by members of the group. Currently system defined settings are only govern Office groups behavior.
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -13,7 +13,7 @@ Directory settings can be created based on the available [directorySettingTempla
 |[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a setting object. Only settingValues can be changed in an update.|
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|string|Display name of this group of settings, which comes from the associated template. Read-only.|
@@ -21,11 +21,11 @@ Directory settings can be created based on the available [directorySettingTempla
 |templateId|string| Unique identifier for the template used to create this group of settings. Read-only.|
 |values|[settingValue](settingvalue.md) collection| Collection of name value pairs. Must contain and set all the settings defined in the template.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

@@ -2,10 +2,10 @@
 
 Copy a message to a folder.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/copy
@@ -13,23 +13,23 @@ POST /users/<id | userPrincipalName>/messages/<id>/copy
 POST /me/mailFolders/<id>/messages/<id>/copy
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/copy
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |destinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

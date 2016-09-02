@@ -1,10 +1,10 @@
 # Update contact
 
 Update the properties of contact object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Contacts.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 A [contact](../resources/contact.md) from user's default [contactFolder](../resources/contactfolder.md).
 ```http
@@ -22,13 +22,13 @@ example below shows one level of nesting, but a contact can be located in a chil
 PATCH /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>
 PATCH /users/<id | userPrincipalName>/contactFolders/<id>/childFolders/<id>/contacts/<id>
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -66,9 +66,9 @@ In the request body, supply the values for relevant fields that should be update
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

@@ -24,7 +24,7 @@ One of the following **scopes** is required to execute this API:
   * Files.Read
   * Files.Readwrite
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/root/delta
@@ -32,21 +32,21 @@ GET /me/drive/items/{item-id}/delta
 GET /me/drive/root:/{item-path}:/delta
 ```
 
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters)
 to help customize the response.
 
-### Request headers
+## Request headers
 
 | Name          | Value  | Description               |
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer <token>. Required. |
 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and
 [driveItem](../resources/driveitem.md) collection in the response body.
 
@@ -59,7 +59,7 @@ one of the following properties:
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
 
-### Example (Initial Request)
+## Example (Initial Request)
 Here is an example of how to call this API to establish your local state.
 
 ##### Request

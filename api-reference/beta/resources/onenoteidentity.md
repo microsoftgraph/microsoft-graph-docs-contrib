@@ -7,7 +7,7 @@ The OneNoteIdentity type represents an identity of a _user_.
 In future, this type will be merged with [Identity](identity.md)
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -26,7 +26,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|string|The identity's display name.|

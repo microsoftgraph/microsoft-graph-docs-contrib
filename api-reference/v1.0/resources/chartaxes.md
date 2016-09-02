@@ -3,13 +3,13 @@
 Represents the chart axes.
 
 
-### Methods
+## Methods
 None
 
-### Properties
+## Properties
 None
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |categoryAxis|[ChartAxis](chartaxis.md)|Represents the category axis in a chart. Read-only.|

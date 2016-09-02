@@ -2,7 +2,7 @@
 
 The status of certain long-running OneNote operations.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -26,7 +26,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |The start time of the operation.|
@@ -37,11 +37,11 @@ Here is a JSON representation of the resource.
 |resourceLocation|string|The resource URI for the object. For example, the resource URI for a copied page or section. |
 |status|string|The current status of the operation: `notstarted`, `running`, `completed`, `failed` |
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

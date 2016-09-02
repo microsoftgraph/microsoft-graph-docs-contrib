@@ -2,13 +2,13 @@
 
 Update the properties of an existing permission object. Only the roles property can be modified.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,7 +17,7 @@ PATCH /me/drive/items/<id>/permissions/<id>
 PATCH /groups/<group-id>/drive/items/<item-id>/permissions/<id>
 ```
 
-### Request headers
+## Request headers
 
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -25,7 +25,7 @@ PATCH /groups/<group-id>/drive/items/<item-id>/permissions/<id>
 | if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be
 updated. Existing properties that are not included in the request body will
 maintain their previous values or be recalculated based on changes to other
@@ -37,11 +37,11 @@ haven't changed.
 | **roles**    | String | An array of permission types. |
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated
 [permission](../resources/permission.md) object in the response body.
 
-### Example
+## Example
 
 ##### Request
 

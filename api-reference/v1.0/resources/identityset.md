@@ -4,7 +4,7 @@ The **identitySet** type is a keyed collection of [identity](identity.md)
 objects. It is used to represent a set of identities associated with various
 events for an item, such as _created by_ or _last modified by_.
 
-### Properties
+## Properties
 
 | Property    | Type                    | Description                                           |
 |:------------|:------------------------|:------------------------------------------------------|
@@ -12,7 +12,7 @@ events for an item, such as _created by_ or _last modified by_.
 | device      | [identity](identity.md) | An identity resource that represents the device.      |
 | user        | [identity](identity.md) | An identity resource that represents a user.          |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

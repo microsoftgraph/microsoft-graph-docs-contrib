@@ -1,6 +1,6 @@
 # Azure AD Identity Protection Service Root
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

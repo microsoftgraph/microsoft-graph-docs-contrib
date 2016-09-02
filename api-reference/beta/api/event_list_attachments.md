@@ -2,10 +2,10 @@
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Calendars.Read* 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 ```http
@@ -30,7 +30,7 @@ Attachments for an [event](../resources/event.md) in a [calendar](../resources/c
 GET /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments
 GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 In particular, you can use the $expand query parameter to include all of the event attachments
@@ -41,16 +41,16 @@ GET https://graph.microsoft.com/beta/me/events/<id>?$expand=attachments
 ```
 
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

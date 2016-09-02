@@ -1,25 +1,25 @@
 # Update taskdetails
 
 Update the properties of taskdetails object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
  
 Group.ReadWrite.All
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /tasks/<id>/details
 
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Value should be set to "Bearer (access-token)"|
 | If-Match | string | Value should be set to the ETag of the object |
 | Prefer | string | Value should be set to "return=representation" so that the updated object is returned in the response. This is advised so that the client can get the new ETag value of the updated object without doing an additional GET |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -30,9 +30,9 @@ In the request body, supply the values for relevant fields that should be update
 |previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |references|[externalReferenceCollection](../resources/externalreferencecollection.md)|The collection of references on the task. |
 
-### Response
+## Response
 If successful, this method returns a `204 No Content` response code.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

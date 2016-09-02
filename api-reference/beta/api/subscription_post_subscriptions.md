@@ -1,9 +1,9 @@
 # Create subscription
 
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
-### Prerequisites
+## Prerequisites
 One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All* or *Files.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -11,16 +11,16 @@ POST /subscriptions
 
 ```
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and a [subscription](../resources/subscription.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request to send a notification when the user receives a new mail.
 <!-- {
@@ -75,7 +75,7 @@ Content-length: 252
   "expirationDateTime":"2016-11-20T18:23:45.9356913Z"
 }
 ```
-### Subscription validation
+## Subscription validation
 In order to to avoid mistaken subscriptions directing notifications to arbitrary URLs, the subscription notification endpoint must be capable of responding to a validation request. During processing of the `POST` to the `/subscriptions` endpoint, the Microsoft Graph will send a `POST` request back to your `notificationUrl` in the following form:
 ```http
 POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationToken=<token>
