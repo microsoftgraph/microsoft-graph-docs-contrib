@@ -4,7 +4,7 @@ Represents an Azure AD invitation object. This is an invitation for an external 
 
 If you set sendInvitatiionMessage, the create invitation API sends the redemption URL to the invited user. You can also customize the message that will sent to the user. If you wish to send the URL yourselves, you can set the sendInvitaitonMessage to false and get the redeem URL from the response to craft your own email.
 
-Optionally, you can add the user to a group.
+Optionally, you can add the user to a group. This assigns the created user to the group.
 
 
 ### Methods
