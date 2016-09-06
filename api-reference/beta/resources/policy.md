@@ -1,12 +1,11 @@
 # policy resource type
 
-Represents an Azure AD policy. Policies are custom rules that can be enforced on applications, service principals, groups, or the entire organization they are assigned to. The available policy types are:
+Represents an Azure AD policy. Policies are custom rules that can be enforced on applications, service principals, groups, or the entire organization they are assigned to. There is currently only one type of policy available:
 - Token Lifetime Policy: specifies the lifetime duration of tokens issued for applications and service principals
-- Naming Policy: specifies the set of forbidden words in displayName and mailNickname of groups.
 
-The different types of policies are described in further detail below.
+This policy is described in further detail below.
 
-## Methods
+### Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 | [Get policy](../api/policy_get.md) |Policy|Read properties and relationships of user object.|
@@ -18,13 +17,13 @@ The different types of policies are described in further detail below.
 |[List assigned policies](../api/policy_list_assigned.md)|Policy collection|Get all policy objects assigned to an application or service principal.|
 
 
-## Common Properties
+### Common Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |definition|String|The string version of the specific policy. See below. Required.|
 |displayName|String|A custom name for the policy. Required.|
 |IsOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
-|type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy" or "NamingPolicy". Required.|
+|type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy". Required.|
 
 #### Common Relationships
 |Relationship|Type|Description|
@@ -56,7 +55,7 @@ The properties below form the JSON object that represents a token lifetime polic
 |MaxAgeSessionMultiFactor|String|Controls how long a user can continue to use session tokens to get new ID/session tokens after the last time they authenticated successfully with multi factors.|10 minutes|until-revoked|365 or until-revoked|
 |Version|Integer|Set value of 1. Required.|None|None|None|
 
-## JSON representation
+### JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -67,33 +66,4 @@ Here is a JSON representation of the resource.
   "isOrganizationDefault":false,
   "type":"TokenLifetimePolicy",
 }
-
-```
-## Naming Policy
-Specifies the set of words that are banned from being used in [Group](../resources/group.md) displayName and mailNickname. This type of policy is globally enforced when groups are created and updated across the entire organization, so they cannot be assigned to specific groups. Additionally, no action is performed on previously created groups that contain blocked words in their displayName and/or mailNickname.
-
-#### Properties
-The properties below form the JSON object that represents a naming policy. This JSON object must be **stringified with quotations escaped** to be inserted into the "definition" common policy property. An example is shown below.
-
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|Active|Boolean|Determines if the policy is active and needs to be evaluated.|
-|PolicyTerms|String collection|Collection of blocked words.|
-|Type|String|Type of blocked words policy. Currently only accepts "CustomBlockedWordPolicy"|
-|Version|String|Set value of "1.0". Required|
-
-## JSON representation
-
-Here is a JSON representation of the resource.
-
-```json
-{
-    "definition": [
-        "{\"Policies\":[{ \"Active\":true,\"Type\":\"CustomBlockedWordPolicy\",\"Version\":\"1.0\",\"PolicyTerms\":{\"BlockedWords\":[\"some\",\"blocked\",\"words\",\"abc\",\"bcd\"]}}]}"
-    ],
-    "displayName": "BadWordPolicy",
-    "isOrganizationDefault":false,
-    "type": "NamingPolicy"
-}
-
 ```
