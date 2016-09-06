@@ -5,7 +5,7 @@ A subscription allows a client app to receive notifications about data on the Mi
 1. Conversations from Office Groups.
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -24,11 +24,11 @@ Here is a JSON representation of the resource.
   "resource": "string",
   "expirationDateTime": "string (timestamp)",
   "id": "string (identifier)",
-  "clientState": "string",
+  "clientState": "string"
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |changeType|string|Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list.|
@@ -38,7 +38,7 @@ Here is a JSON representation of the resource.
 |clientState|string|Specifies the value of the `clientState` property sent by the service in each notification. The maximum length is 255 characters. The client can check that the notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each notification.|
 |id|string|Unique identifier for the subscription. Read-only.|
 
-### Maximum Expiration Times Per Resource
+## Maximum Expiration Times Per Resource
 | Resource | Maximum Expiration Time |
 |:---------------------|:--------------------|
 |Mail| 4230 minutes.|
@@ -46,11 +46,11 @@ Here is a JSON representation of the resource.
 |Contacts| 4230 minutes.|
 |Group conversations| 4230 minutes.|
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

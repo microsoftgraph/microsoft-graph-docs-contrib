@@ -26,7 +26,7 @@ The **quota** resource provides details about drive quota.
 | `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

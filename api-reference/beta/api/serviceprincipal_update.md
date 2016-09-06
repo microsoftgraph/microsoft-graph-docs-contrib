@@ -1,19 +1,19 @@
 # Update serviceprincipal
 
 Update the properties of serviceprincipal object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API:
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /servicePrincipals/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -37,9 +37,9 @@ In the request body, supply the values for relevant fields that should be update
 |servicePrincipalNames|String|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/en-us/library/azure/dn132633.aspx).                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
 |tags|String|                                        **Notes**: not nullable.            |
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

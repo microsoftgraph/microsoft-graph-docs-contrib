@@ -2,7 +2,7 @@
 
 The TaskDetails resource represents the additional information about a task. Each [task](task.md) object has a details object.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -25,7 +25,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |checklist|[checklistItemCollection](checklistitemcollection.md)| The collection of checklist items on the task.|
@@ -35,11 +35,11 @@ Here is a JSON representation of the resource
 |previewType|String| This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |references|[externalReferenceCollection](externalreferencecollection.md)| The collection of references on the task. |
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

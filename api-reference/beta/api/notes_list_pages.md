@@ -1,34 +1,34 @@
 # List pages
 
 Retrieve a list of [page](../resources/page.md) objects.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:  
 Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/notes/pages
 GET /users/<id | userPrincipalName>/notes/pages
 GET /groups/<id>/notes/pages
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 The default query for pages returns the top 20 pages ordered by `lastModifiedTime desc`. If the default query returns more than 20 pages, the response contains an `@odata.nextLink` that you can use to page through the result set. The maximum number of pages returned for a `top` request is 100.
 
 The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 | Accept | string | `application/json` |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- { "blockType": "ignored" } -->

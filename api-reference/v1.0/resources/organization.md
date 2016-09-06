@@ -2,14 +2,14 @@
 
 Represents an Azure Active Directory tenant. Only the read and update operations are supported on tenants; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization_get.md) | [organization](organization.md) |Read properties and relationships of organization object.|
 |[Update](../api/organization_update.md) | [organization](organization.md)  |Update organization object. (Only the **marketingNotificationMails** and **technicalNotificationMails** properties can be updated.) |
 
-### Properties
+## Properties
 
 | Property                             | Type                                                              | Description                                                                                                                                                                                                                                                                          |
 |:-------------------------------------|:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,10 +36,10 @@ Represents an Azure Active Directory tenant. Only the read and update operations
 | telephoneNumber                      | String                                                            |                                                                                                                                                                                                                                                                                      |
 | verifiedDomains                      | [VerifiedDomain](verifieddomain.md) collection                    | The collection of domains associated with this tenant. Not nullable.                                                                                                                                                                                                                 |
 
-### Relationships
+## Relationships
 None
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

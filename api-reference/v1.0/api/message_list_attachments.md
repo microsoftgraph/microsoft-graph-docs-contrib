@@ -1,9 +1,9 @@
 # List attachments
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Mail.Read* 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for a [message](../resources/message.md) in a user's mailbox.
 ```http
@@ -21,18 +21,18 @@ example below shows one level of nesting, but a message can be located in a chil
 GET /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
 GET /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

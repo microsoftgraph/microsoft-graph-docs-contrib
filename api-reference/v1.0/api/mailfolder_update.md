@@ -1,31 +1,31 @@
 # Update mailfolder
 
 Update the properties of mailfolder object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/mailFolders/<id>
 PATCH /users/<id | userPrincipalName>/mailFolders/<id>
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json. Required.  |
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The mailFolder's display name.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [mailFolder](../resources/mailfolder.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

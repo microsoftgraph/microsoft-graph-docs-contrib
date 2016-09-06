@@ -3,26 +3,26 @@
 Get the overrides that a user has set up to always classify messages from certain senders in specific ways.
 
 Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Mail.Read*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/inferenceClassification/overrides
 GET /users/<id>/inferenceClassification/overrides
 ```
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 An empty collection is returned if the user doesn't have any overrides set up.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

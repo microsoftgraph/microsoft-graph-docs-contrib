@@ -2,7 +2,7 @@
 
 A time period.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -21,7 +21,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |end|[timeStamp](timestamp.md)|The time a period begins.|

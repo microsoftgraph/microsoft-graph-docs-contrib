@@ -2,33 +2,33 @@
 
 Calculated insight that returns the list of items trending around a user.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 *Sites.Read.All*
 
-### HTTP request
+## HTTP request
 ```http
 GET /me/trendingAround
 GET /users/<id | userPrincipalName>/trendingAround
 GET /drive/root/createdByUser/trendingAround
 GET /drive/root/lastModifiedByUser/trendingAround
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Header         | Value                      |
 |:---------------|:---------------------------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type   | application/json           |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a 200 OK response code and collection of [driveItem](../resources/driveItem.md) objects in the response body.
 
-### Example
+## Example
 ##### Request
 ```http
 GET https://graph.microsoft.com/beta/me/trendingAround

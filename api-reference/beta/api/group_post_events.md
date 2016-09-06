@@ -1,27 +1,27 @@
 # Create Event
 
 Use this API to create a new [event](../resources/event.md).
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/events
 POST /groups/<id>/calendar/events
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Event](../resources/event.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

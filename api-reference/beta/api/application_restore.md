@@ -1,30 +1,30 @@
 # application: restore
 
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API:
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/<id>/restore
 
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |identifierUris|String||
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [application](../resources/application.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

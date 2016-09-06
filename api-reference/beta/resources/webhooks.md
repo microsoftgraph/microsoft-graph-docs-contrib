@@ -8,6 +8,7 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * Events
 * Contacts
 * Group conversations
+* Drive root items
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
@@ -16,7 +17,7 @@ Apps should renew their subscriptions before they expire. They can also unsubscr
 See the following code samples on GitHub.
 
 * [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
+* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET -Webhooks)
 
 Let's take a look at the subscription process.
 
@@ -34,15 +35,18 @@ Client must store the subscription ID to correlate a notification with the corre
 
 ## Characteristics of subscriptions
 
-You can create subscriptions for resources such as messages, events, and contacts.
+You can create subscriptions for resources such as messages, events, contacts, and drive root items.
 
 You can create a subscription to a specific folder:
-`https://graph.microsoft.com/v1.0/me/mailfolders('inbox')/messages`
+`https://graph.microsoft.com/beta/me/mailfolders('inbox')/messages`
 
 Or to a top-level resource:
-`https://graph.microsoft.com/v1.0/me/messages`
+`https://graph.microsoft.com/beta/me/messages`
 
-Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission.
+Or on a drive root item:
+`https://graph.microsoft.com/beta/me/drive/root`
+
+Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for Drive root items.
 
 Subscriptions expire. The current longest expiration time is three days minus 9-0 minutes from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 
@@ -68,18 +72,18 @@ The client should discard the validation token after providing it in the respons
 ## Subscription request example
 
 ```
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
+  "notificationURL": "https://webhook.azurewebsites.net/notificationClient",
   "resource": "/me/mailfolders('inbox')/messages",
   "expirationDateTime": "2016-03-20T11:00:00.0000000Z",
   "clientState": "SecretClientState"
 }
 ```
 
-The changeType, notificationUrl, resource, and expirationDateTime properties are required. See [subscription resource type](subscription.md) for property definitions and values. Although clientState is not required, you must include it to comply with our recommended notification handling process.
+The changeType, notificationURL, resource, and expirationDateTime properties are required. See [subscription resource type](subscription.md) for property definitions and values. Although clientState is not required, you must include it to comply with our recommended notification handling process.
 
 If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body.
 
@@ -90,7 +94,7 @@ The client can renew a subscription with a specific expiration date of up to thr
 ## Subscription renewal example
 
 ```
-PATCH https://graph.microsoft.com/v1.0/subscriptions/<id>;
+PATCH https://graph.microsoft.com/beta/subscriptions/<id>;
 Content-Type: application/json
 {
   "expirationDateTime": "2016-03-22T11:00:00.0000000Z"
@@ -104,7 +108,7 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subs
 The client can stop receiving notifications by deleting the subscription using its ID.
 
 ```
-DELETE https://graph.microsoft.com/v1.0/subscriptions/<id>
+DELETE https://graph.microsoft.com/beta/subscriptions/<id>
 ```
 
 If successful, Microsoft Graph returns a `204 No Content` code.
@@ -161,7 +165,6 @@ After your application starts receiving notifications it must process them. The 
 
 1. Validate the `clientState` property. The clientState property in the notification must match the one submitted with the subscription request.
   > Note: If this isn't true, you shouldn't consider this a valid notification. You should also investigate where the notification comes from and take appropriate action.
-
 2. Update your application based on your business logic.
 3. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry resending the notification a number of times.
   > You should send a `202 - Accepted` status code even if the clientState property doesn't match the one submitted with the subscription request.

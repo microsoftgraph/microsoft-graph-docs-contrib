@@ -3,7 +3,7 @@
 Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [subscribedSku](subscribedsku.md) entity is a collection of **servicePlanInfo**.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|The unique identifier of the service plan.|
@@ -12,7 +12,7 @@ Contains information about a service plan associated with a subscribed SKU. The 
 |appliesTo|String||
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

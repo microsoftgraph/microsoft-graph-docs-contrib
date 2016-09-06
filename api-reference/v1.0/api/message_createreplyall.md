@@ -3,10 +3,10 @@
 Create a draft of the Reply All message. You can then [update](../api/message_update.md) or 
 [send](../api/message_send.md) the draft.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/createReplyAll
@@ -14,18 +14,18 @@ POST /users/<id | userPrincipalName>/messages/<id>/createReplyAll
 POST /me/mailFolders/<id>/messages/<id>/createReplyAll
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/createReplyAll
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

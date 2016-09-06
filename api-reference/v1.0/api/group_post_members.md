@@ -3,27 +3,27 @@
 Use this API to add a member to an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. 
 You can add users or other groups. Important: You can add only users to Office 365 groups.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/members/$ref
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

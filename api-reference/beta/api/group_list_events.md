@@ -1,26 +1,26 @@
 # List events
 
 Retrieve a list of [event](../resources/event.md) objects.
-### Prerequisites
-One of the following **scopes** is required to execute this API:
-### HTTP request
+## Prerequisites
+One of the following **scopes** is required to execute this API: _Group.Read.All_ or _Group.ReadWrite.All_
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<id>/events
 GET /groups/<id>/calendar/events
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
-If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
-### Example
+## Response
+If successful, this method returns a `200 OK` response code and a collection of [Event](../resources/event.md) objects in the response body.
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

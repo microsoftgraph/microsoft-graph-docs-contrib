@@ -2,7 +2,7 @@
 
 A url that opens a OneNote page or notebook.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -20,7 +20,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |href|String|The url of the link.|

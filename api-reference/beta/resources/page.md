@@ -2,7 +2,7 @@
 
 A page in a OneNote notebook.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|Stream|The page's HTML content.|
@@ -46,13 +46,13 @@ Here is a JSON representation of the resource.
 |self|String|The endpoint where you can get details about the page. Read-only.|
 |title|String|The title of the page. |
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|The notebook that contains the page.  Read-only.|
 |parentSection|[Section](section.md)|The section that contains the page. Read-only.|
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

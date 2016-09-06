@@ -3,22 +3,22 @@
 Renew a subscription by extending its expiry time.
 
 Subscriptions to resources expire at dates proscribed by the individual resource types.  In order not to miss notifications, subscriptions should be renewed well in advance of their expiry date.  See [subscription](../resources/subscription.md) for individual expiry dates.
-### Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read* or *Groups.Read.All* 
-### HTTP request
+## Prerequisites
+One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All* or *Files.ReadWrite*
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /subscriptions/<id>
 ```
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

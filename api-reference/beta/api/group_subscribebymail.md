@@ -3,25 +3,25 @@
 Calling this method will enable the current user to receive email notifications for this group, 
 about new posts, events, and files in that group. Supported for only Office 365 groups.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
 *Group.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/subscribeByMail
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 
-### Request body
+## Request body
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

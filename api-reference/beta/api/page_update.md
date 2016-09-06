@@ -1,28 +1,28 @@
 # Update page
 
 Update the content of a OneNote page.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:   
 Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/notes/pages/<id>/content
 PATCH /users/<id | userPrincipalName>/notes/pages/<id>/content
 PATCH /groups/<id>/notes/pages/<id>/content
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
 | Content-Type | string | `application/json` |
 
-### Request body
+## Request body
 In the request body, supply an array of [patchContentCommand](../resources/patchcontentcommand.md) objects that represent the changes to the page. For more information and examples, see <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Update OneNote pages</a>.
 
-### Response
+## Response
 If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

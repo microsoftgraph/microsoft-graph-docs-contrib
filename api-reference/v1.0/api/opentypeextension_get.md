@@ -1,6 +1,6 @@
-# Get extension
+# Get data extension
 
-Get a specific **openTypeExtension** object or objects identified by name or fully qualified name.
+Get a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
 
 Resources that support open type Office 365 data extensions include a message, calendar event, or contact of the 
 signed-in user's on Office 365 or Outlook.com. Or, it can be an event or post for an Office 365 group.
@@ -13,7 +13,7 @@ Depending on the resource type, there are a few ways to get a data extension.
 |Find and expand resource instances with a specific extension. |Message, event, contact, group event|Resource instances expanded with the data extension.|
 
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API, depending on the resource you're
 getting the extension from:
@@ -23,7 +23,7 @@ getting the extension from:
 - _Contacts.Read_
 - _Group.Read.All_
  
-### HTTP request
+## HTTP request
 
 
 To get a specific extension in a known resource instance:
@@ -79,7 +79,7 @@ GET /groups/<Id>/events?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expan
 ```
 
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
@@ -87,7 +87,7 @@ GET /groups/<Id>/events?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expan
 |extensionId|string|Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.|
 
 
-### Optional query parameters
+## Optional query parameters
 
 Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
 
@@ -98,18 +98,18 @@ Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.a
 |$expand|string|Expands a resource instance to include an extension. |
 
 
-### Request headers
+## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer %token%|
 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body.
 Depending on the GET query, the exact response body differs.
-### Example
+## Example
 
 #### Request 1
 

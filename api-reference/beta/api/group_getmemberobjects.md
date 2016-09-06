@@ -1,29 +1,29 @@
 # group: getMemberObjects
-Return all of the groups and directory roles that the group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned.
+Return all of the groups and administrative units that the group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned.
 
-### Prerequisites
-One of the following **scopes** is required to execute this API:
-### HTTP request
+## Prerequisites
+One of the following **scopes** is required to execute this API: *Group.Read.All* or *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<id>/getMemberObjects
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean|**true** to specify that only security groups that the group is a member of should be returned; **false** to specify that all groups that the group is a member of should be returned.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

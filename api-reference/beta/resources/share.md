@@ -2,7 +2,7 @@
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -22,19 +22,19 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |name|String||
 |owner|[identitySet](identityset.md)||
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |items|[driveItem](driveitem.md) collection| Read-only. Nullable.|
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

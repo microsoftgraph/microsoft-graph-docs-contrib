@@ -22,7 +22,7 @@ For this URL:
 - `{resource}` is resource segment or path, such as
   - `users`, `groups`, `devices`, `organization`
   - The alias `me`, which resolves to the signed-in user
-   - The resources belonging to a user, such as `me\events`, `me\drive` or `me\messages`
+   - The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`
   - The alias `myOrganization`, which resolves to the tenant of the organization signed-in user
 - `[odata_query_parameters]` represents additional OData query parameters such as `$filter` and `$select` 
 
@@ -111,7 +111,7 @@ content-length: 169
 Here, instead of the entire property sets on the `user` entity, only the `aboutMe`, `displayName` and `skills` properties, are returned.
 
 ###Traversal to another resource via relationship
-A manager holds a `directReports` relatioinship with  the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
+A manager holds a `directReports` relationship with the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1

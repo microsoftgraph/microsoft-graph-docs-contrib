@@ -2,7 +2,7 @@
 
 A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders.
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -14,7 +14,7 @@ A contact is an item in Outlook where you can organize and save information abou
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assistantName|String|The name of the contact's assistant.|
@@ -56,14 +56,14 @@ A contact is an item in Outlook where you can organize and save information abou
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact.|
 |yomiSurname|String|The phonetic Japanese surname (last name)  of the contact.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

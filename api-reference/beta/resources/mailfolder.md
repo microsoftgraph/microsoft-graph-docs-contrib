@@ -3,7 +3,7 @@
 A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFolders can contain messages and child mailFolders.
 
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -22,7 +22,7 @@ A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFol
 |[Get mailFolder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |childFolderCount|Int32|The number of immediate child mailFolders in the current mailFolder.|
@@ -42,7 +42,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 MailFolders in Outlook can contain more than one type of items, for example, the Inbox can contain meeting request items which are distinct from mail items. TotalItemCount and UnreadItemCount include items in a mailFolder irrespective of their item types.
 
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
@@ -51,7 +51,7 @@ MailFolders in Outlook can contain more than one type of items, for example, the
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

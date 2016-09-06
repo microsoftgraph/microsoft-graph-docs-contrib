@@ -100,7 +100,7 @@ For example, to return the users in the organization ordered by their display na
 GET https://graph.microsoft.com/v1.0/users?$orderBy=displayName
 ``` 
 
-You can also sort by complex type entities. The following example gets messages and sorts them by the **address** field of the **from** property, which is of the complext type **emailAddress**:
+You can also sort by complex type entities. The following example gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderBy=from/emailAddress/address
@@ -139,7 +139,7 @@ To set the number of items to skip before retrieving items in a collection, use 
 For example, to return events sorted by date created, and starting with the 21st event, the syntax is as follows.
 
 ```http
-GET  https://graph.microsoft.com/v1.0/me?$orderby=createdDateTime&$skip=20
+GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
 ### $skipToken

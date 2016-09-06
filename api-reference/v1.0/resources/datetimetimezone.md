@@ -2,7 +2,7 @@
 
 Describes the date, time, and time zone of a point in time.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |DateTime|String|A single point of time in a combined date and time representation (`<date>T<time>`).|
@@ -209,7 +209,7 @@ Pacific/Apia
 
 Pacific/Kiritimati
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

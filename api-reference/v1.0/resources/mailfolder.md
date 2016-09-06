@@ -3,7 +3,7 @@
 A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFolders can contain messages and child mailFolders.
 
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -18,7 +18,7 @@ A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFol
 |[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |childFolderCount|Int32|The number of immediate child mailFolders in the current mailFolder.|
@@ -38,14 +38,14 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 MailFolders in Outlook can contain more than one type of items, for example, the Inbox can contain meeting request items which are distinct from mail items. TotalItemCount and UnreadItemCount include items in a mailFolder irrespective of their item types.
 
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
 |messages|[Message](message.md) collection|The collection of messages in the mailFolder.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

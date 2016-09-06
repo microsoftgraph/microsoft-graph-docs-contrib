@@ -1,27 +1,27 @@
 # Create CalendarGroup
 
 Use this API to create a new CalendarGroup.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id | userPrincipalName>/calendarGroups
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [CalendarGroup](../resources/calendargroup.md) object.
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

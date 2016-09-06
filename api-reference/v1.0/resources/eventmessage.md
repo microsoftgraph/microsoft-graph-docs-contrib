@@ -5,7 +5,7 @@ A message that represents a meeting request, meeting cancel message, meeting acc
 An EventMessage is typically found in the Inbox folder where it arrives as the results of either an event organizer creating a meeting or by an attendee responding to a meeting request. You act on event messages in the same way that you act on Message, with some minor differences described in the following table.
 
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -26,7 +26,7 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|The Bcc: recipients for the message.|
@@ -59,7 +59,7 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
 
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
@@ -67,7 +67,7 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource  
 

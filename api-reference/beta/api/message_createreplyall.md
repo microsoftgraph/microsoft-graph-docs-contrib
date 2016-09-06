@@ -12,10 +12,10 @@ all in one **createReplyAll** call. You can then [update](../api/message_update.
 **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/createReplyAll
@@ -23,13 +23,13 @@ POST /users/<id | userPrincipalName>/messages/<id>/createReplyAll
 POST /me/mailFolders/<id>/messages/<id>/createReplyAll
 POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/createReplyAll
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -37,10 +37,10 @@ In the request body, provide a JSON object with the following parameters.
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply-all message.|
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.
 
-### Example
+## Example
 The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.
 ##### Request
 Here is an example of the request.

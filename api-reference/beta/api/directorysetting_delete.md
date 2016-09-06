@@ -1,9 +1,9 @@
 # Delete a directory setting
 
 Delete a directory setting.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Delete a specific tenant-wide or group setting
 ```http
@@ -11,19 +11,19 @@ DELETE /settings/<id>
 DELETE /groups/<id>/settings/<id>
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <token>. Required.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

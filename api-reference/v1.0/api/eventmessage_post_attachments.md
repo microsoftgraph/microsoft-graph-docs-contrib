@@ -1,28 +1,28 @@
 # Create Attachment
 
 Use this API to create a new Attachment.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API:  _Mail.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/<id>/attachments
 POST /users/<id | userPrincipalName>/messages/<id>/attachments
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
-### Example (File attachment)
+## Example (File attachment)
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 HTTP/1.1 201 Created
 ```
 
-### Example (item attachment)
+## Example (item attachment)
 
 ##### Request
 <!-- {

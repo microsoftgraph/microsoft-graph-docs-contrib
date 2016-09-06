@@ -2,7 +2,7 @@
 
 Date and time information for a point in time.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -22,7 +22,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |date|Date|The date portion of the timestamp.|

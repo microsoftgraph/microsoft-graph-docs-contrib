@@ -3,7 +3,7 @@
 Provides information on a sharing link for an item.
 
 
-### Properties
+## Properties
 
 | Property    | Type                    | Description                                                                                                                                                                                             |
 |:------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -30,7 +30,7 @@ This table defines the possible values for the **type** property:
 | `organization` | The sharing link is available for anyone within the same organization (tenant) to use. Not available for OneDrive Personal. |
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

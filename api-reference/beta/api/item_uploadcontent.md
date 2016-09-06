@@ -1,10 +1,11 @@
 # Upload or replace the contents of a driveItem
 
-The simple upload API allows you to provide the contents of a new file or update
-the contents of an existing file in a single API call. This method only supports
-files up to 4MB in size.
+The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
+This method only supports files up to 4MB in size.
 
-### Prerequisites
+To upload large files see [Upload large files with an upload session](item_createUploadSession.md).
+
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.ReadWrite
@@ -18,15 +19,15 @@ PUT /me/drive/items/{parent-id}/children/{filename}/content
 PUT /groups/<id>/drive/items/<parent-id>/children/<filename>/content
 ```
 
-### Request body
+## Request body
 The contents of the request body should be the binary stream of the file to be
 uploaded.
 
-### Response
+## Response
 If successful, this method returns a [driveItem](../resources/driveitem.md) object
 in the response body for the newly created file.
 
-### Example
+## Example
 This example uploads a file by path to the signed-in user's OneDrive.
 
 <!-- {
@@ -40,7 +41,7 @@ Content-type: text/plain
 The contents of the file goes here.
 ```
 
-### Response
+## Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",

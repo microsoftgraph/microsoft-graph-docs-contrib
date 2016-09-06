@@ -1,16 +1,16 @@
 # identity resource type
 
-The **identity** resource represents an identity of an _actor_. For example, and
+The **identity** resource represents an identity of an _actor_. For example, an
 actor can be a user, device, or application.
 
-### Properties
+## Properties
 
 | Property    | Type   | Description                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [find changes](../api/item_delta.md) |
 | id          | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

@@ -4,7 +4,7 @@ A group of calendars.
 
 **Note** Outlook.com supports only the default calendar group which is accessible by the ../me/calendars shortcut. You cannot delete that calendar group.
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -17,7 +17,7 @@ A group of calendars.
 |[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar in a calendar group.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|String|The group name.|
@@ -25,13 +25,13 @@ A group of calendars.
 |classId|Guid|The class identifier. Read-only.|
 |id|String|The group's unique identifier. Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |calendars|[Calendar](calendar.md) collection|The calendars in the calendar group. Navigation property. Read-only. Nullable.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

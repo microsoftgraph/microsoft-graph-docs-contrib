@@ -20,14 +20,14 @@ Here are the most common ones:
 * Determine if a custom uploaded thumbnail exists
 
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
   * Files.Read
   * Files.ReadWrite
 
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -35,24 +35,24 @@ GET /me/drive/root:/{item-path}:/thumbnails
 GET /me/drive/items/{item-id}/thumbnails
 GET /groups/<id>/drive/items/<item-id>/thumbnails
 ```
-### Request headers
+## Request headers
 
 | Name          | Type   | Description               |
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer <token>. Required. |
 
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters)
 to help customize the response.
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of
 [thumbnailSet](../resources/thumbnailset.md) objects in the response body.
 
-### Example
+## Example
 
 ##### Request
 
@@ -97,14 +97,14 @@ Content-type: application/json
 Retrieve the metadata for a single thumbnail and size by addressing
 it directly in a request.
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "request", "name": "get-one-thumbnail" } -->
 ```http
 GET /me/drive/items/<item-id>/thumbnails/<thumb-id>/<size>
 ```
 
-### Path parameters
+## Path parameters
 
 | Name         | Type   | Description                                                                         |
 |:-------------|:-------|:------------------------------------------------------------------------------------|
@@ -130,14 +130,14 @@ Content-Type: application/json
 You can directly retrieve the content of the thumbnail by requesting the
 **content** property of the thumbnail.
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "request", "name":"get-thumbnail-content" } -->
 ```http
 GET /me/drive/items/<item-id>/thumbnails/<thumb-id>/<size>/content
 ```
 
-### Response
+## Response
 
 The service responds with a redirect to the thumbnail URL.
 
@@ -150,7 +150,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 Thumbnail URLs are cache-safe. The URL will change, if the item
 changes in a way that requires a new thumbnail to be generated.
 
-### Size values
+## Size values
 
 This table defines the possible thumbnail sizes. While you can
 request any arbitrary thumbnail size, the defined values are likely to exist and

@@ -3,31 +3,31 @@
 Use this API to add an [attachment](../resources/attachment.md) to a post. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
 you can add to under 4MB.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 * Group.ReadWrite.All
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 POST /groups/<id>/threads/<id>/posts/<id>/attachments
 POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
-### Example (file attachment)
+## Example (file attachment)
 
 ##### Request
 Here is an example of the request.
@@ -71,7 +71,7 @@ Content-length: 162
 }
 ```
 
-### Example (item attachment)
+## Example (item attachment)
 
 ##### Request
 <!-- {

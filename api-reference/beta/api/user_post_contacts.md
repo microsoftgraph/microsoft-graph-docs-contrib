@@ -1,10 +1,10 @@
 # Create Contact
 
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Contacts.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/contacts
@@ -12,20 +12,20 @@ POST /users/<id | userPrincipalName>/contacts
 POST /me/contactFolders/<contactFolderId>/contacts
 POST /users/<id | userPrincipalName>/contactFolders/<contactFolderId>/contacts
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Contact](../resources/contact.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -45,8 +45,11 @@ Content-type: application/json
       "name": "Pavel Bansky"
     }
   ],
-  "businessPhones": [
-    "+1 732 555 0102"
+  "phones" : [
+    {
+      "number": "+1 732 555 0102",
+      "type": "business"
+    }
   ]
 }
 ```

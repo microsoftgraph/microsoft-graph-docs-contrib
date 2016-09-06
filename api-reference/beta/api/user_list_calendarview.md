@@ -1,16 +1,16 @@
 # List calendarView
 
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar or from a different calendar.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.Read; Calendars.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<id | userPrincipalName>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-### Query parameters
+## Query parameters
 
 In the request URL, provide the following required query parameters with values.
 
@@ -20,17 +20,17 @@ In the request URL, provide the following required query parameters with values.
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
 
 This method also supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 | Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarView
+GET https://graph.microsoft.com/v1.0/me/calendarView
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -75,7 +75,7 @@ Content-length: 354
 <!-- {
   "type": "#page.annotation",
   "description": "List calendarView",
-  "keywords": "",
+  "keywords": "calendar",
   "section": "documentation",
   "tocPath": ""
 }-->

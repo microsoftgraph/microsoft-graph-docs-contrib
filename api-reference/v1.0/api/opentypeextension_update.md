@@ -1,6 +1,6 @@
-# Update extension
+# Update data extension
 
-Update an open type data extension with the properties in the request body:
+Update a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) with the properties in the request body:
 
 - If a property in the request body matches the name of an existing property in the extension, the data in the 
 extension is updated.
@@ -11,7 +11,7 @@ Outlook.com. Or, it can be an event or post for an Office 365 group. Data in an 
 or arrays of primitive types.
 
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API, depending on the resource you're
 creating the extension in:
@@ -21,7 +21,7 @@ creating the extension in:
 - _Contacts.ReadWrite_
 - _Group.ReadWrite.All_
  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -42,7 +42,7 @@ PATCH /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extens
 ```
 
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
@@ -50,13 +50,13 @@ PATCH /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extens
 |extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
 
-### Request headers
+## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer %token%|
 | Content-Type | application/json |
 
-### Request body
+## Request body
 
 Provide a JSON body of an [openTypeExtension](../resources/openTypeExtension.md) object, with the 
 following required name-value pairs, and any custom data to change or add to that extension. 
@@ -68,13 +68,13 @@ The data in the JSON payload can be primitive types, or arrays of primitive type
 | extensionName | %unique_string% |
 
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and the updated
 [openTypeExtension](../resources/openTypeExtension.md) object.
 
 
-### Example
+## Example
 #### Request 1
 
 The first example shows how to update an extension in a message. The extension is initially represented by the following JSON payload:
@@ -159,7 +159,7 @@ with an `expirationDate` value of `2015-07-03T13:04:00Z`:
 <!-- { "blockType": "ignored" } -->
 ```http
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
     "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
     "extensionName": "Com.Contoso.Estimate",
@@ -182,7 +182,7 @@ The following is the request and request body to change the `expirationDate` to 
   "name": "update_opentypeextension"
 }-->
 ```http
-PATCH https://graph.microsoft-ppe.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate')
+PATCH https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate')
 Content-type: application/json
 
 {

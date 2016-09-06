@@ -3,7 +3,7 @@
 The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|For example, “Enabled”.|
@@ -11,7 +11,7 @@ The **provisionedPlans** property of the [user](user.md) entity and the [organiz
 |service|String|The name of the service; for example, “AccessControlS2S”|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

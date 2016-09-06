@@ -6,7 +6,7 @@ corresponding [fileAttachment](../resources/fileattachment.md), [itemAttachment]
 [referenceAttachment](../resources/referenceattachment.md) resources are all derived from the **attachment**
 resource.
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -20,7 +20,7 @@ resource.
 |[Delete](../api/attachment_delete.md) | None |Delete attachment object. |
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |contentType|String|The MIME type.|
@@ -30,10 +30,10 @@ resource.
 |name|String|The display name of the attachment. This does not need to be the actual file name.|
 |size|Int32|The length of the attachment in bytes.|
 
-### Relationships
+## Relationships
 None
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

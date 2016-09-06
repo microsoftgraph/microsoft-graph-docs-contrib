@@ -5,7 +5,7 @@ objects. It is used to represent a set of thumbnails associated with a single
 file on OneDrive.
 
 
-### Methods
+## Methods
 
 | Method                                         | Return Type                     | Description                                               |
 |:-----------------------------------------------|:--------------------------------|:----------------------------------------------------------|
@@ -13,7 +13,7 @@ file on OneDrive.
 
 
 
-### Properties
+## Properties
 
 | Property | Type                      | Description                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
@@ -23,10 +23,10 @@ file on OneDrive.
 | small    | [thumbnail](thumbnail.md) | A 48x48 cropped thumbnail.                                                        |
 | source   | [thumbnail](thumbnail.md) | A custom thumbnail image or the original image used to generate other thumbnails. |
 
-### Relationships
+## Relationships
 None
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

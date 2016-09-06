@@ -13,7 +13,7 @@ and files have a [**file facet**](file.md). Images have an
 Items with the **folder** facet act as containers of items and therefore
 have a `children` reference pointing to a collection of items under the folder.
 
-### Methods
+## Methods
 
 | Method                                                 | Return Type                                | Description                                                                                                                             |
 |:-------------------------------------------------------|:-------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +34,7 @@ have a `children` reference pointing to a collection of items under the folder.
 | [List permissions](../api/item_list_permissions.md)    | [permission](permission.md) collection     | Get a permission object collection.                                                                                                     |
 | [Delete permission](../api/permission_delete.md) | None                                       | Remove a permission from an item.                                                                                                       |
 
-### Properties
+## Properties
 
 | Property             | Type                                | Description                                                                                                                                                               |
 |:---------------------|:------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -60,6 +60,7 @@ have a `children` reference pointing to a collection of items under the folder.
 | remoteItem           | [remoteItem](remoteitem.md)         | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.                                                                        |
 | searchResult         | [searchResult](searchresult.md)     | Search metadata, if the item is from a search result. Read-only.                                                                                                          |
 | shared               | [shared](shared.md)                 | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.                                               |
+| sharepointIds        | [sharepointIds](sharepointIds.md)   | Provides interop between items in OneDrive for Business and SharePoint with the full set of item identifiers. Read-only. |
 | size                 | Int64                               | Size of the item in bytes. Read-only.                                                                                                                                     |
 | specialFolder        | [specialFolder](specialfolder.md)   | If the current item is also available as a special folder, this facet is returned. Read-only.                                                                             |
 | video                | [video](video.md)                   | Video metadata, if the item is a video. Read-only.                                                                                                                        |
@@ -73,7 +74,7 @@ is changed. The eTag value is only modified when the folder's properties are
 changed, except for properties that are derived from descendants (like
 **childCount** or **lastModifiedDateTime**).
 
-### Instance Attributes
+## Instance Attributes
 
 Instance attributes are properties with special behaviors. This properties are
 temporary and either a) define behavior the service should perform or b) provide
@@ -89,7 +90,7 @@ short-term property values, like a download URL for an item that expires.
 cached. The URL will only be available for a short period of time before it is
 invalidated.
 
-### Relationships
+## Relationships
 
 | Relationship       | Type                                       | Description                                                                                                                                                                       |
 |:-------------------|:-------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -99,7 +100,7 @@ invalidated.
 | permissions        | [permission](permission.md) collection     | The set of permissions for the item. Read-only. Nullable.                                                                                                                         |
 | thumbnails         | [thumbnailSet](thumbnailset.md) collection | Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../api/thumbnailset_get.md). Read-only. Nullable. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

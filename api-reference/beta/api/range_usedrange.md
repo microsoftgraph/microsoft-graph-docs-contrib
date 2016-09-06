@@ -1,9 +1,9 @@
 # Range: UsedRange
 
 Returns the used range of the given range object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/UsedRange
@@ -11,23 +11,23 @@ POST /workbook/worksheets(<id|name>)/range(<address>)/UsedRange
 POST /workbook/tables(<id|name>)/columns(<id|name>)/range/UsedRange
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|Optional. Considers only cells with values as used cells.|
 
-### Response
+## Response
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

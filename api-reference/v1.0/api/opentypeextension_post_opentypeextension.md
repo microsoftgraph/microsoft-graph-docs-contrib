@@ -1,12 +1,12 @@
-# Create extension
+# Create data extension
 
-Create an open type data extension and add custom properties in a new or existing instance of a resource. 
+Create a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties in a new or existing instance of a resource. 
 
 The resource can be a message, calendar event, or contact in the signed-in user's mailbox on Office 365 or
 Outlook.com. Or, it can be an event or post for an Office 365 group. 
 
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API, depending on the resource you're
 creating the extension in:
@@ -16,7 +16,7 @@ creating the extension in:
 - _Contacts.ReadWrite_
 - _Group.ReadWrite.All_
  
-### HTTP request
+## HTTP request
 You can create an extension in a new or existing resource instance.
 
 To create an extension in a _new_ resource instance, use the same REST request as creating the
@@ -71,20 +71,20 @@ POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions
 ```
 
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id|string|A unique identifier for an object in the corresponding collection. Required.|
 
 
-### Request headers
+## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer %token%|
 | Content-Type | application/json |
 
-### Request body
+## Request body
 
 Provide a JSON body of an [openTypeExtension](../resources/openTypeExtension.md), with the following required
 name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types, or arrays of 
@@ -99,7 +99,7 @@ When creating an extension in a _new_ resource instance, in addition to the
 new **openTypeExtension** object, provide a JSON representation of that resource instance ([message](../resources/message.md), 
 [event](../resources/event.md), [contact](../resources/contact.md), or [group post](../resources/post.md) object).
 
-### Response
+## Response
 
 #### Response code
 An operation successful in creating an extension returns the same response code as when the operation is used to
@@ -118,7 +118,7 @@ the **openTypeExtension** object.
  
 
 
-### Example
+## Example
 ##### Request 1
 
 The first example creates a message and an extension in the same call. The request body includes the following:

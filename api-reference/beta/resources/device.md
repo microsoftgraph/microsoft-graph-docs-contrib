@@ -2,7 +2,7 @@
 
 Represents a device registered in the directory. Inherits from [directoryObject](directoryobject.md).
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -16,7 +16,7 @@ Represents a device registered in the directory. Inherits from [directoryObject]
 
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. |
@@ -36,7 +36,7 @@ Represents a device registered in the directory. Inherits from [directoryObject]
 |onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
@@ -44,7 +44,7 @@ Represents a device registered in the directory. Inherits from [directoryObject]
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

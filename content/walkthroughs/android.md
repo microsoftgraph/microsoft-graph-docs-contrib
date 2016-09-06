@@ -71,7 +71,7 @@ The [AuthenticationManager.java](https://github.com/microsoftgraph/android-java-
 
 With either behavior, The ADAL authentication flow needs the client ID and redirect URL you get in the Azure registration process. The sample keeps these strings in source code and retrieves them before the authentication manager object authenticates the user.
 
-The [`Constants.java`](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/Constants.java) interface exposes two static strings for client ID and redirect URL.
+The [Constants.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/Constants.java) interface exposes two static strings for client ID and redirect URL.
 
 ```java
 interface Constants {
@@ -205,7 +205,7 @@ If authentication succeeds, the `onSuccess()` method is invoked. `onSuccess` sto
 <!--<a name="sendmail"/>-->
 ## Send an email message using Office 365
 
-After the user signs-in to Azure, the Connect sample shows the user an activity for sending a mail message. The Connect sample uses the [`MSGraphAPIController.java`](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/MSGraphAPIController.java) class to send the message when the users clicks the Send mail button.
+After the user signs-in to Azure, the Connect sample shows the user an activity for sending a mail message. The Connect sample uses the [MSGraphAPIController.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/MSGraphAPIController.java) class to send the message when the users clicks the Send mail button.
 
 ### REST adapter helper class
 The [RESTHelper.java](https://github.com/microsoftgraph/android-java-connect-rest-sample/blob/master/app/src/main/java/com/microsoft/office365/connectmicrosoftgraph/RESTHelper.java) class provides a method for injecting an authorization header into every REST call the sample makes. It uses the access token provided by the authentication manager.
@@ -269,7 +269,7 @@ The [MSGraphAPIController.java](https://github.com/microsoftgraph/android-java-c
 ```
 
 ## Next steps
-The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [API reference](http://graph.microsoft.io/docs/api-reference/v1.0) to explore what else you can accomplish with the Microsoft Graph API.
+The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [Microsoft Graph Documentation](http://graph.microsoft.io/docs) to explore what else you can accomplish with the Microsoft Graph API.
 
 We've published many Android samples for Office 365. Each of these samples build on the concepts we introduce in the Connect sample. If you want to do more with your Android apps, see [more of our Android samples for Office 365](http://aka.ms/androidgraphsamples) in the Office GitHub organization.
  

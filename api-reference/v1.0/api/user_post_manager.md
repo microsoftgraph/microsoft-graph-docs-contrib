@@ -3,26 +3,26 @@
 Use this API to assign a user's manager.
 > Note: You cannot assign direct reports - instead use this API.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *User.ReadWrite* or *User.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /users/<id>/manager/$ref
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

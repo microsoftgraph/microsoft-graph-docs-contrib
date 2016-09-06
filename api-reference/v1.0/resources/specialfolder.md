@@ -16,12 +16,12 @@ recreated when written to again.
 **Note:** If your app has only requested **Files.Read** scope and requests a
 special folder that doesn't exist, the response will be a `403 Forbidden` error.
 
-### Properties
+## Properties
 | Property  | Type   | Description                                                            |
 |:----------|:-------|:-----------------------------------------------------------------------|
 | name      | string | The unique identifier for this item in the `/drive/special` collection |
 
-### JSON representation
+## JSON representation
 
 <!-- {
   "blockType": "resource",

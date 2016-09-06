@@ -3,11 +3,11 @@
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
 from the user's primary calendar `(../me/calendarview)` or from a specified calendar.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.Read*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's or group's default [calendar](../resources/calendar.md).
 ```http
@@ -31,7 +31,7 @@ GET /me/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_dat
 GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-### Query parameters
+## Query parameters
 
 In the request URL, provide the following required query parameters with values.
 
@@ -41,17 +41,17 @@ In the request URL, provide the following required query parameters with values.
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
 
 This method also supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 | Prefer  | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

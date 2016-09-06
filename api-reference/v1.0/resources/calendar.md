@@ -2,7 +2,7 @@
 
 A calendar which is a container for events.
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -16,7 +16,7 @@ A calendar which is a container for events.
 |[Create Event](../api/calendar_post_events.md) |[Event](event.md)| Create a new Event in the default or specified calendar.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|String|The calendar name.|
@@ -24,13 +24,13 @@ A calendar which is a container for events.
 |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |id|String|The group's unique identifier. Read-only.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |calendarView|[Event](event.md) collection|The calendar view for the calendar. Navigation property. Read-only.|
 |events|[Event](event.md) collection|The events in the calendar. Navigation property. Read-only.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

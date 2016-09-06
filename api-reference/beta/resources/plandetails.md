@@ -2,7 +2,7 @@
 
 The PlanDetails resource represents the additional information about a plan. Each [plan](plan.md) object has a details object.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -27,7 +27,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |category0Description|String| Description of the category (or label) that can be applied to the task. |
@@ -39,11 +39,11 @@ Here is a JSON representation of the resource
 |id|String| Read-only. Id of the plan. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
 |sharedWith|[userIdCollection](useridcollection.md)| List of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group. |
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

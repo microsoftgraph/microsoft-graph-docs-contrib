@@ -2,7 +2,7 @@
 
 The ChecklistItem resource represents an item in the checklist of a task. The checklist on a task is represented by the [checklistItemCollection](checklistitemcollection.md).
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -24,7 +24,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |isChecked|Boolean| Value is `true` if the item is checked and `false` otherwise. |

@@ -1,28 +1,28 @@
 # Create Chart
 
 Use this API to create a new Chart.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets(<id|name>)/charts/
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [Chart](../resources/chart.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [Chart](../resources/chart.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

@@ -1,10 +1,10 @@
 # Get contact
 
 Retrieve the properties and relationships of a contact object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 *Contacts.Read; Contacts.ReadWrite*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).
 ```http
@@ -22,22 +22,22 @@ example below shows one level of nesting, but a contact can be located in a chil
 GET /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>
 GET /users/<id | userPrincipalName>/contactFolders/<id>/childFolders/<id>/contacts/<id>
 ```
-### Optional query parameters
+## Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$expand|string|Comma-separated list of relationships to expand and include in the response. See the relationships table of the [contact](../resources/contact.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [contact](../resources/contact.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

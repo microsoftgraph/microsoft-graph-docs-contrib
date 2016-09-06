@@ -1,15 +1,15 @@
 # entity resource type
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 
-### Relationships
+## Relationships
 None
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

@@ -4,7 +4,7 @@ A conversationThread is a collection of [posts](post.md).
 The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients.
 A new thread is created when a recipient is removed from the thread.
 
-### Methods
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
@@ -16,7 +16,7 @@ A new thread is created when a recipient is removed from the thread.
 |[reply](../api/conversationthread_reply.md)|None|Reply to this thread by creating a new Post entity.|
 |[List Posts](../api/conversationthread_list_posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
@@ -29,13 +29,13 @@ A new thread is created when a recipient is removed from the thread.
 |preview|String|A short summary from the body of the latest post in this converstaion.|
 |isLocked|Boolean|Indicates if the thread is locked.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |posts|[post](post.md) collection| Read-only. Nullable.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

@@ -3,6 +3,7 @@
 Create one or more single-value extended properties in a new or existing instance of a resource. 
 
 The following user resources are supported:
+
 - [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
 - [event](../resources/event.md)
@@ -11,6 +12,7 @@ The following user resources are supported:
 - [contactFolder](../resources/contactfolder.md) 
 
 As well as the following group resources:
+
 - group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)
 - group [post](../resources/post.md) 
@@ -18,7 +20,7 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 Office 365 Data Extensions or extended properties, and how to specify extended properties.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API, depending on the resource you're
 creating the extended property in:
@@ -28,7 +30,7 @@ creating the extended property in:
 - _Contacts.ReadWrite_
 - _Group.ReadWrite.All_
  
-### HTTP request
+## HTTP request
 You can create extended properties in a new or existing resource instance.
 
 To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
@@ -102,24 +104,24 @@ PATCH /groups/<id>/events/<id>
 ```
 
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|id|string|A unique identifier for an object in the corresponding collection. Required.|
+|id|string|A unique identifier for an object, represented by its **id** property, in the corresponding collection. Required.|
 |_Body parameters_|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| An array of one or more single-valued extended properties. |
-|propertyId|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
 
 
-### Request headers
+## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer %token%|
 | Content-Type | application/json |
 
-### Request body
+## Request body
 
 Provide a JSON body of each [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) object in the 
 **singleValueExtendedProperties** collection property of the resource instance.
@@ -128,7 +130,7 @@ When creating an extended property in a _new_ resource instance, in addition to 
 new **singleValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
 [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
-### Response
+## Response
 
 #### Response code
 An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post, 
@@ -147,13 +149,14 @@ a response code but not the new post nor the extended property.
 
 
 
-### Example
+## Example
 ##### Request 1
 
 The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally 
 include for a new event, the request body includes the **singleValueExtendedProperties** collection that contains one single-value 
 extended property, and the following for the property:
-- **propertyId** specifies the property type as `String`, the GUID, and the property named `Fun`.
+
+- **id** specifies the property type as `String`, the GUID, and the property named `Fun`.
 - **value** specifies `Food` as the value of the `Fun` property. 
 
 <!-- { "blockType": "ignored" } -->
@@ -186,7 +189,7 @@ Content-Type: application/json
   ],
   "singleValueExtendedProperties": [
      {
-           "propertyId":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
+           "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
      }
   ]
@@ -209,7 +212,7 @@ To see the newly created extended property, [get the event expanded with the ext
 The second example creates one single-value extended property for the specified existing message. That extended property is the only
 element in the **singleValueExtendedProperties** array. The request body includes the following for the 
 extended property:
-- **propertyId** specifies the property type as `String`, the GUID, and the property named `Color`.
+- **id** specifies the property type as `String`, the GUID, and the property named `Color`.
 - **value** specifies `Green` as the value of the `Color` property.
 
 <!-- { "blockType": "ignored" } -->
@@ -221,7 +224,7 @@ Content-Type: application/json
 {
   "singleValueExtendedProperties": [
       {
-         "propertyId":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
+         "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"
       }
     ]

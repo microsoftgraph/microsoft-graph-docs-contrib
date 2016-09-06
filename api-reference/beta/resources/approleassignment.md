@@ -3,7 +3,7 @@
 Used to record when a user or group is assigned to an application. In this case, the role assignment will result in an application tile showing up on the user's app access panel. This entity may also be used to grant another application (modeled as a service principal) access to a resource application in a particular role. You can create, read, update, and delete role assignments.
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -27,7 +27,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|The time when the grant was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -38,11 +38,11 @@ Here is a JSON representation of the resource
 |resourceDisplayName|String|The display name of the resource to which the assignment was made.|
 |resourceId|Guid|The unique identifier (**id**) for the target resource (service principal) for which the assignment was made.|
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

@@ -2,7 +2,7 @@
 
 Information about an error or warning for a OneNote operation.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -21,7 +21,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |message|String|The message describing the condition that triggered the error or warning.|

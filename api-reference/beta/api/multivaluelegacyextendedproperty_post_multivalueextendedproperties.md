@@ -3,6 +3,7 @@
 Create one or more multi-value extended properties in a new or existing instance of a resource. 
 
 The following user resources are supported:
+
 - [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
 - [event](../resources/event.md)
@@ -11,6 +12,7 @@ The following user resources are supported:
 - [contactFolder](../resources/contactfolder.md) 
 
 As well as the following group resources:
+
 - group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)
 - group [post](../resources/post.md) 
@@ -18,7 +20,7 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 Office 365 Data Extensions or extended properties, and how to specify extended properties.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API, depending on the resource you're
 creating the extended property in:
@@ -28,7 +30,7 @@ creating the extended property in:
 - _Contacts.ReadWrite_
 - _Group.ReadWrite.All_
  
-### HTTP request
+## HTTP request
 You can create extended properties in a new or existing resource instance.
 
 To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
@@ -102,24 +104,24 @@ PATCH /groups/<id>/events/<id>
 ```
 
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
-|id|string|A unique identifier for an object in the corresponding collection. Required.|
+|id|string|A unique identifier for an object, represented by its **id** property, in the corresponding collection. Required.|
 |_Body parameters_|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| An array of one or more multi-valued extended properties. |
-|propertyId|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
 
 
-### Request headers
+## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer %token%|
 | Content-Type | application/json |
 
-### Request body
+## Request body
 
 Provide a JSON body of each [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) object in the 
 **multiValueExtendedProperties** collection property of the resource instance.
@@ -128,7 +130,7 @@ When creating an extended property in a _new_ resource instance, in addition to 
 new **multiValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
 [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
-### Response
+## Response
 
 #### Response code
 An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post, 
@@ -147,13 +149,14 @@ When creating an extended property in a _new_ group post, the response includes 
 the extended property. You cannot create an extended property in an existing group post.
 
 
-### Example
+## Example
 ##### Request 1
 
 The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally 
 include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property. 
 The request body includes the following for that multi-value extended property:
-- **propertyId** which specifies the property as an array of strings with the specified GUID and the name `Recreation`. 
+
+- **id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`. 
 - **value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.
  
 
@@ -194,7 +197,7 @@ Content-Type: application/json
   ],
   "multiValueExtendedProperties": [
      {
-           "propertyId":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
+           "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
            "value": ["Food", "Hiking", "Swimming"]
      }
   ]
@@ -217,7 +220,7 @@ To see the newly created extended property, [get the event expanded with the ext
 The second example creates one multi-value extended property for the specified message. That extended property is the only
 element in the **multiValueExtendedProperties** collection. The request body includes the following for the 
 extended property:
-- **propertyId** specifies the property as an array of strings with the specified GUID and the name `Palette`.
+- **id** specifies the property as an array of strings with the specified GUID and the name `Palette`.
 - **value** specifies `Palette` as an array of 3 string values, `["Green", "Aqua", "Blue"]`.
 
 <!-- { "blockType": "ignored" } -->
@@ -229,7 +232,7 @@ Content-Type: application/json
 {
   "multiValueExtendedProperties": [
       {
-         "propertyId":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
+         "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
          "value":["Green", "Aqua", "Blue"]
       }
     ]

@@ -3,7 +3,7 @@
 Contains a password credential associated with an application or a service principal. The **passwordCredentials** property of the [servicePrincipal](serviceprincipal.md) entity and of the [application](application.md) entity is a collection of **passwordCredential**.
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -25,7 +25,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binary|            |

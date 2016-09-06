@@ -1,11 +1,11 @@
-# Delete extension
+# Delete data extension
 
-Delete an open type data extension from the specified instance of a resource. 
+Delete a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
 
 The resource can be a message, calendar event, or contact of the signed-in user's on Office 365 or
 Outlook.com. Or, it can be an event or post for an Office 365 group.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API, depending on the resource you're
 deleting the extension from:
@@ -16,7 +16,7 @@ deleting the extension from:
 - _Group.ReadWrite.All_
 
  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/<id>/extensions/<extensionId>
@@ -35,7 +35,7 @@ DELETE /groups/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
 DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
 ```
 
-### Parameters
+## Parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |_URL parameters_|
@@ -43,20 +43,20 @@ DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<exten
 |extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
 
-### Request headers
+## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer %token%|
 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 The first example references an extension by its name and deletes the extension in the specified message.
 <!-- {

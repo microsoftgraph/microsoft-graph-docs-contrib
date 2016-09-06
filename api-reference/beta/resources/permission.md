@@ -6,7 +6,7 @@ Permissions have a number of different forms. The **permission**
 resource represents these different forms through properties on the
 **permission** resource.
 
-### Methods
+## Methods
 
 | Method                                              | Return Type                            | Description                                             |
 |:----------------------------------------------------|:---------------------------------------|:--------------------------------------------------------|
@@ -17,7 +17,7 @@ resource represents these different forms through properties on the
 | [Delete](../api/permission_delete.md)               | None                                   | Delete permission object.                               |
 
 
-### Properties
+## Properties
 
 | Property      | Type                                      | Description                                                                                                                           |
 |:--------------|:------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|
@@ -30,14 +30,14 @@ resource represents these different forms through properties on the
 | shareId       | String                                    | A unique token for this permission. Read-only. |
 
 
-### Roles enumeration
+## Roles enumeration
 
 | Role  | Details                                                                        |
 |:------|:-------------------------------------------------------------------------------|
 | read  | Provides the ability to read the metadata and contents of the item.            |
 | write | Provides the ability to read and modify the metadata and contents of the item. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

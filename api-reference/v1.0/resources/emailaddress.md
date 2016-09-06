@@ -2,7 +2,7 @@
 
 The name and email address of a contact or message recipient.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|String|The email address of the person or entity.|
@@ -10,7 +10,7 @@ The name and email address of a contact or message recipient.
 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

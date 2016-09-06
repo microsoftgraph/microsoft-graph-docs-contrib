@@ -3,7 +3,7 @@
 Represents the OAuth 2.0 delegated permission scopes that have been granted to an application (represented by a service principal) as part of the user or admin consent process. 
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -28,7 +28,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |clientId|String||
@@ -40,11 +40,11 @@ Here is a JSON representation of the resource
 |scope|String||
 |startTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
-### Relationships
+## Relationships
 None
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|

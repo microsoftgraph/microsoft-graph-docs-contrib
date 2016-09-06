@@ -1,26 +1,26 @@
 # Get application
 
 Retrieve the properties and relationships of application object.
-### Prerequisites
-The following **scopes** are required to execute this API: 
-### HTTP request
+## Prerequisites
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/<id>
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [application](../resources/application.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

@@ -1,15 +1,18 @@
 # profilePhoto resource type
-A profile photo of a user, group or an Outlook contact. It's binary data not encoded in base-64.
+A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.
 
-### Methods
+The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', 
+'240x240', '360x360','432x432', '504x504', and '648x648'. 
+
+## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Read the photo and properties of **profilePhoto**. |
-|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Update the photo. |
+|[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (profilePhoto properties).|
+|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.|
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string|Read-only.|
@@ -17,11 +20,11 @@ A profile photo of a user, group or an Outlook contact. It's binary data not enc
 |width|int32|The width of the photo. Read-only.|
 
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

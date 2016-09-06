@@ -3,7 +3,7 @@
 Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |capabilities|String|For example, “Email”, “OfficeCommunicationsOnline”.|
@@ -13,7 +13,7 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 |type|String|For example, “Managed”.|
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

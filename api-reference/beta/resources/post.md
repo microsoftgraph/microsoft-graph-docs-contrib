@@ -10,7 +10,7 @@ A new post is created when you:
 - [Create a new conversation](../api/group_post_conversations.md)
  
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -42,7 +42,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|The contents of the post. This is a default property. This property can be null.|
@@ -60,7 +60,7 @@ Here is a JSON representation of the resource
 |sender|[recipient](recipient.md)|Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.|
 
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceAttachment.md) attachments for the post. Read-only. Nullable.|
@@ -70,7 +70,7 @@ Here is a JSON representation of the resource
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the post. Read-only. Nullable.|
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -82,6 +82,11 @@ Here is a JSON representation of the resource
 |[Create Attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Add an attachment to a post. |
 |[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[post](post.md)  |Create one or more single-value extended properties in a new or existing post.   |
+|[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | Get posts that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
+|[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
