@@ -1,10 +1,10 @@
-# invitation resource type
+# Invitation manager
 
-Represents an Azure AD invitation object. This is an invitation for an external user to the tenant. This will create a invitation object and a corresponding user object in the directory. Please note that invited   For the invited user to be a functional member of the tenant, he has to go through redemption process. Creating an invitaion would return a redemption URL in the response (inviteRedeemUrl). Currently, there is no API to do the redemption process. The invited user has to go through the redemption process interactively in a browser by visiting the redemption URL. 
+Use the invitation manager to create an invite, in order to add an external user to the organization's directory. The invitation process follows these steps:
 
-If you set sendInvitatiionMessage, the create invitation API sends the redemption URL to the invited user. You can also customize the message that will sent to the user. If you wish to send the URL yourselves, you can set the sendInvitaitonMessage to false and get the redeem URL from the response to craft your own email.
-
-Optionally, you can add the user to a group. This assigns the created user to the group.
+1. Create an invitation: Creating an invitation will return a redemption URL in the response (inviteRedeemUrl).
+2. Send the invitation: Creating the invitation can automatically send an invitation email to the invited user, or the app can choose to send the inviteRedeemUrl link to the invited user, using whatever communications mechanism it desires.
+3. Redeem the invitation: Currently, there is no API to perform the redemption process. The invited user has to click on the inviteRedeemUrl link sent in the communication in the step above, and go through the interactive redemption process in a browser. Once completed, the invited user becomes an external user in the organization.
 
 
 ### Methods
@@ -26,7 +26,7 @@ Optionally, you can add the user to a group. This assigns the created user to th
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|invitedToGroups|List<[Groups](groups.md)>|The groups user is invited to. Currently we only support one group per request.|
+|invitedToGroups|List<[Group](group.md)>|The groups user is invited to. Currently we only support one group per request.|
 |invitedUser|[User](user.md)|The user created as part of the invitation. Read-Only|
 
 ### JSON representation
