@@ -1,13 +1,14 @@
-# invitation resource type
+# Configuring the invitation message
 
-Represents an invited users' additonal message object.
+The invitedUserMessageInfo object allows you to configure the invitation message.
+
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |ccRecipients|[Recipients](recipients.md)|Additional recipients the invitation message should be sent to.|
 |customizedMessageBody|String|Customized message body you want to send if you don't want the default message.|
-|messageLanguage|String|The language you want to send the default message. If the customizedMessageBody is specified we just send that. This will ignored.|
+|messageLanguage|String|The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639.|
 
 
 ### JSON representation

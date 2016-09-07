@@ -15,11 +15,11 @@ Use the invitation manager to create an invite, in order to add an external user
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|invitedUserDispayName|String|The display name of the user being invited.|
-|invitedUserEmailAddress|String|The email address of the user being invited.|
-|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Additonal message information of the user being invited.|
-|sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited or not.|
-|inviteRedirectUrl|String|The URL user should be redirected to once the invitation is redeemed.|
+|invitedUserDisplayName|String|The display name of the user being invited.|
+|invitedUserEmailAddress|String|The email address of the user being invited. Required.|
+|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Additional configuration for the message being sent to the invited user, including customizing message text, language and cc recipient list.|
+|sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited or not. The default is false.|
+|inviteRedirectUrl|String|The URL user should be redirected to once the invitation is redeemed. Required.|
 |inviteRedeemUrl|String|The URL user can use to redeem his invitation. Read-Only|
 |status|Boolean|The status of his invitation. Possible values:Completed, InProgress, and Error|
 
