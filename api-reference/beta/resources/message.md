@@ -66,7 +66,7 @@ Here is a JSON representation of the resource
 |flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
-|id|String||
+|id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused`, `other`.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|

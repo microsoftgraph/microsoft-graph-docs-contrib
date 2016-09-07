@@ -128,6 +128,9 @@ The notification object has the following properties:
   * @odata.etag - The HTTP entity tag that represents a version of the object.
   * Id - The identifier of the object.
 
+
+> Note: The Id value provided in resourceData is valid at the time the notification was queued. Some actions, such as moving a message to another folder, may result in a resource's Id being changed. 
+
 ## Notification example
 
 When the user receives an email, Microsoft Graph sends a notification like the following:
