@@ -1,18 +1,17 @@
 # Create Invitation
 
 Use this API to create a new Invitation.
-The request body contains the invitation to create. 
 
 The invitation process uses the following flow:
 
 * An invitation is created
 * An invitation is sent to the invited user (containing an invitation link)
-* The invited user click on the invitation link, signs in and redeems the invitation and creation of the user entity representing the invited user completes
+* The invited user clicks on the invitation link, signs in and redeems the invitation and creation of the user entity representing the invited user completes
 * The user is redirected to a specific page after redemption completes
 
 When creating a new invitation you have a couple of options available:
-1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the inviteRedeemUrl returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using invitedUserMessageInfo complex type (Reference) invitedusermessageinfo.md.
-2. When the invited user redeems their invitation, a user entity (of userType Guest) is created and can now be used to control access to resources. Additionally, if a group is specified in the invitedToGroups property during creation, then on redemption that invited user will also be added as a member of the specified group.
+1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
+2. When the invited user redeems their invitation, a user entity (of userType Guest) is created and can now be used to control access to resources. Additionally, if a group is specified in the *invitedToGroups* property during creation, then on redemption that invited user will also be added as a member of the specified group.
 
 ### Prerequisites
 The following **scopes** are required to execute this API:
