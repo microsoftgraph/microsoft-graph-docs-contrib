@@ -34,7 +34,7 @@ Content-type: application/json
 Content-length: 30
 
 {
-  "@oadata.id": "https://graph.microsoft.com/v1.0/users/<id>"
+  "@odata.id": "https://graph.microsoft.com/v1.0/users/<id>"
 }
 ```
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
