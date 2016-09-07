@@ -6,6 +6,8 @@ Use the invitation manager to create an invite, in order to add an external user
 2. Send the invitation: Creating the invitation can automatically send an invitation email to the invited user, or the app can choose to send the inviteRedeemUrl link to the invited user, using whatever communications mechanism it desires.
 3. Redeem the invitation: Currently, there is no API to perform the redemption process. The invited user has to click on the inviteRedeemUrl link sent in the communication in the step above, and go through the interactive redemption process in a browser. Once completed, the invited user becomes an external user in the organization.
 
+The create invitation API can automatically send an email containing the redemption URL to the invited user, by setting the sendInvitationMessage to true. You can also customize the message that will be sent to the invited user. Instead, if you wish to send the redemption URL, you can set the sendInvitationMessage to false and use the redeem URL from the response to craft your own communication.
+
 
 ### Methods
 | Method       | Return Type  |Description|
@@ -26,7 +28,7 @@ Use the invitation manager to create an invite, in order to add an external user
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|invitedToGroups|List<[Group](group.md)>|The groups user is invited to. Currently we only support one group per request.|
+|invitedToGroups|List<[Group](group.md)>|The groups the user is invited to. Currently, only one group is supported per request. Once the invitation is redeemed, the invited user will be added as a member to the specified group.|
 |invitedUser|[User](user.md)|The user created as part of the invitation. Read-Only|
 
 ### JSON representation
