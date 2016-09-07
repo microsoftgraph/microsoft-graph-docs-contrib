@@ -7,7 +7,7 @@ Represents the street address of a resource such as a contact or event.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |city|String|The city.|
-|countryOrRegion|String|The country or region.|
+|countryOrRegion|String|The country or region. It's a free-format string value, for example, "United States".|
 |postalCode|String|The postal code.|
 |state|String|The state.|
 |street|String|The street.|
