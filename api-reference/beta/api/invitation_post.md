@@ -1,4 +1,4 @@
-# Create Invitation
+# Create invitation
 
 Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
 
