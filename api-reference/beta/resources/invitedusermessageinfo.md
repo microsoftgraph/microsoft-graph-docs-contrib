@@ -1,6 +1,6 @@
 # Configuring the invitation message
 
-The invitedUserMessageInfo object allows you to configure the invitation message.
+The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.
 
 
 ### Properties
