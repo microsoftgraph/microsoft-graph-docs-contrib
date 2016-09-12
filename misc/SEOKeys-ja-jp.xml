@@ -1,0 +1,1186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Menu>
+  <Item text="概要" url="/ja-jp/overview/overview" SEOKeyword="概要、Microsoft Graph API、概要" SEODescription="Microsoft Graph により、インテリジェントな Microsoft クラウド経由でデジタル作業とデジタル ライフのデータにアクセスするアプリケーションを使用できます。開発者にとっての大きな利点: Microsoft クラウドからのデータ、インテリジェンス、インサイトにアクセスするための統合 API エンドポイント。">
+    <Item text="API を呼び出す" url="/ja-jp/overview/call_api" SEOKeyword="API を呼び出す、Microsoft Graph API、概要" SEODescription="Microsoft Graph についてよく寄せられる質問にお答えします。" />
+    <Item text="クエリ パラメーター" url="/ja-jp/overview/query_parameters" SEOKeyword="クエリ パラメーター、Microsoft Graph API、概要" SEODescription="Microsoft Graph は OData v4 に準拠し、サポートされる OData クエリ パラメーターに関する情報を提供します" />
+    <Item text="ページング" url="/ja-jp/overview/paging" SEOKeyword="ページング, Microsoft Graph API, 概要" SEODescription="Microsoft Graph でページングを実装する。" />
+    <Item text="エラー" url="/ja-jp/overview/errors" SEOKeyword="エラー、Microsoft Graph API、概要" SEODescription="Microsoft Graph API サービスのエラーは、標準の HTTP 状態 コード、および JSON エラー応答オブジェクトを使用して返されます。" />
+    <Item text="独立した展開" url="/ja-jp/overview/deployments" SEOKeyword="独立した展開" SEODescription="独立した展開" />
+    <Item text="リリース ノート" url="/ja-jp/overview/release_notes" SEOKeyword="リリース ノート、Microsoft Graph API、概要" SEODescription="Microsoft Graph API の 2015年 11 月のリリースで使用できる開発者向けの新機能、および既知の問題です。" />
+    <Item text="FAQ" url="/ja-jp/overview/faqs" SEOKeyword="FAQ、Microsoft Graph API、概要" SEODescription="Microsoft Graph についてよく寄せられる質問にお答えします。" />
+  </Item>
+  <Item text="承認" url="/ja-jp/authorization/app_authorization">
+    <Item text="アクセス許可のスコープ" url="/ja-jp/authorization/permission_scopes" SEOKeyword="アクセス許可スコープ、Microsoft Graph API、概要" SEODescription="Microsoft Graph API は、アプリケーションがデータに対して持っているアクセス権を制御するために使用されている OAuth 2.0 のアクセス許可スコープを公開します。開発者は、通常は Azure ポータルを使用することにより、必要とされるアクセス権に適切なアクセス許可スコープを指定してアプリを構成します。" />
+    <Item text="アプリ専用" url="/ja-jp/authorization/app_only" />
+    <Item text="Office 365 アカウントに関連付ける" url="/ja-jp/authorization/associate_account" SEOKeyword="Office 365 アカウントに関連付ける、Microsoft Graph API、概要" SEODescription="Microsoft Azure の管理ポータルを使用して、Office 365 のユーザー、ロール、アプリを管理します。" />
+    <Item text="v2 認証エンドポイント" url="/ja-jp/authorization/converged_auth" SEOKeyword="v2 認証エンドポイント、Microsoft Graph API、概要" SEODescription="v2 認証エンドポイントを使用すると、職場または学校 (Azure AD) ID と、個人 (Microsoft アカウント) ID の両方を受け入れるアプリを作成できます。" />
+  </Item>
+  <Item text="チュートリアル" url="/ja-jp/platform/rest">
+    <Item text="ASP.NET MVC" url="/ja-jp/platform/aspnetmvc" SEOKeyword=".NET、ASP.NET MVC、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、ASP.NET MVC アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="UWP" url="/ja-jp/platform/uwp" SEOKeyword="UWP、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、Windows ユニバーサル プラットフォーム アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="iOS" url="/ja-jp/platform/ios" SEOKeyword="iOS、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、iOS アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="Android" url="/ja-jp/platform/android" SEOKeyword="Android、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、Android アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="角度" url="/ja-jp/platform/angular" SEOKeyword="角度、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、Angular アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="Node.js" url="/ja-jp/platform/nodejs" SEOKeyword="Node.js、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、Node.js アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="PHP" url="/ja-jp/platform/php" SEOKeyword="PHP、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、PHP アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="Python" url="/ja-jp/platform/python" SEOKeyword="Python、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、Python アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="Ruby" url="/ja-jp/platform/ruby" SEOKeyword="Ruby、Microsoft Graph API、チュートリアル" SEODescription="Microsoft Graph を使用して、Ruby アプリの Microsoft クラウド データにアクセスする" />
+  </Item>
+  <Item text="/v1.0 参照" url="/ja-jp/api-reference/v1.0/">
+    <Item text="ユーザー" url="/ja-jp/api-reference/v1.0/resources/user" SEOKeyword="Users API、Microsoft Graph API、Users API" SEODescription="Azure AD ユーザー アカウントを表します。DirectoryObject から継承します。">
+      <Item text="ユーザー" url="/ja-jp/api-reference/v1.0/resources/user" SEOKeyword="Users API、Microsoft Graph API、Users API" SEODescription="Azure AD ユーザー アカウントを表します。DirectoryObject から継承します。">
+        <Item text="ユーザーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list" SEOKeyword="ユーザーを一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのリストを取得します。" />
+        <Item text="ユーザーを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_users" SEOKeyword="ユーザーを作成する、Microsoft Graph API、ユーザー API" SEODescription="この API を使用して、新しいユーザーを作成します。" />
+        <Item text="ユーザーを取得する" url="/ja-jp/api-reference/v1.0/api/user_get" SEOKeyword="ユーザーを取得する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのプロパティと関係を取得します。" />
+        <Item text="ユーザーを更新する" url="/ja-jp/api-reference/v1.0/api/user_update" SEOKeyword="ユーザーを更新する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのプロパティを更新します。" />
+        <Item text="ユーザーを削除する" url="/ja-jp/api-reference/v1.0/api/user_delete" SEOKeyword="ユーザーを削除する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーを削除します。" />
+      </Item>
+      <Item text="写真" url="/ja-jp/api-reference/v1.0/resources/profilephoto" SEOKeyword="ユーザーの人物、Microsoft Graph API、ユーザー API" SEODescription="ユーザー写真 API">
+        <Item text="写真を取得する" url="/ja-jp/api-reference/v1.0/api/profilephoto_get" />
+        <Item text="写真を更新する" url="/ja-jp/api-reference/v1.0/api/profilephoto_update" />
+      </Item>
+      <Item text="メール" url="/ja-jp/api-reference/v1.0/resources/message" SEOKeyword="ユーザーのメール、Microsoft Graph API、ユーザー API" SEODescription="メール API">
+        <Item text="メッセージを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_messages" SEOKeyword="メッセージを一覧表示する、Microsoft Graph API、Users API" SEODescription="メッセージ オブジェクトのリストを取得します。" />
+        <Item text="メッセージを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_messages" SEOKeyword="メッセージを作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しいメッセージを作成します。" />
+        <Item text="オーバーライドを一覧表示する" url="/ja-jp/api-reference/v1.0/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを一覧表示します。" />
+        <Item text="オーバーライドを作成する" url="/ja-jp/api-reference/v1.0/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを作成します。" />
+        <Item text="メール フォルダーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_mailfolders" SEOKeyword="mailFolders を一覧表示する、Microsoft Graph API、Users API" SEODescription="mailfolder オブジェクトのリストを取得します。" />
+        <Item text="メール フォルダーを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_mailfolders" SEOKeyword="MailFolder を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい MailFolder を作成します。" />
+        <Item text="メールを送信する" url="/ja-jp/api-reference/v1.0/api/user_sendmail" SEOKeyword="ユーザー: sendMail、Microsoft Graph API、ユーザー API" SEODescription="" />
+      </Item>
+      <Item text="予定表" url="/ja-jp/api-reference/v1.0/resources/event" SEOKeyword="ユーザーの予定表、Microsoft Graph API、ユーザー API" SEODescription="予定表 API">
+        <Item text="イベントを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+        <Item text="予定表を一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_calendars" SEOKeyword="予定表を一覧表示する、Microsoft Graph API、Users API" SEODescription="予定表オブジェクトのリストを取得します。" />
+        <Item text="予定表を作成する" url="/ja-jp/api-reference/v1.0/api/user_post_calendars" SEOKeyword="予定表を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい予定表を作成します。" />
+        <Item text="予定表グループを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_calendargroups" SEOKeyword="calendarGroups を一覧表示する、Microsoft Graph API、Users API" SEODescription="calendargroup オブジェクトのリストを取得します。" />
+        <Item text="予定表グループを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_calendargroups" SEOKeyword="CalendarGroup を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい CalendarGroup を作成します。" />
+        <Item text="予定表ビューを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="通知ビュー" url="/ja-jp/api-reference/v1.0/api/user_reminderview" SEOKeyword="ユーザー: reminderView、Microsoft Graph API、ユーザー API" SEODescription="" />
+      </Item>
+      <Item text="連絡先" url="/ja-jp/api-reference/v1.0/resources/contact" SEOKeyword="ユーザーの連絡先、Microsoft Graph API、ユーザー API" SEODescription="連絡先 API">
+        <Item text="連絡先を一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_contacts" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、Users API" SEODescription="連絡先オブジェクトのリストを取得します。" />
+        <Item text="連絡先を作成する" url="/ja-jp/api-reference/v1.0/api/user_post_contacts" SEOKeyword="連絡先を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい連絡先を作成します。" />
+        <Item text="連絡先フォルダーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_contactfolders" SEOKeyword="contactFolders を一覧表示する、Microsoft Graph API、Users API" SEODescription="contactfolder オブジェクトのリストを取得します。" />
+        <Item text="連絡先フォルダーを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_contactfolders" SEOKeyword="ContactFolder を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい ContactFolder を作成します。" />
+      </Item>
+      <Item text="ドライブ" url="/ja-jp/api-reference/v1.0/resources/drive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="ドライブ API">
+        <Item text="ドライブを取得する" url="/ja-jp/api-reference/v1.0/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="子を一覧表示する" url="/ja-jp/api-reference/v1.0/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="グループ" url="/ja-jp/api-reference/v1.0/resources/group" SEOKeyword="ユーザー グループ、Microsoft Graph API、ユーザー API" SEODescription="Groups API">
+        <Item text="memberOf を一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="組織階層" url="/ja-jp/api-reference/v1.0/resources/organization" SEOKeyword="ユーザーの組織構造、Microsoft Graph API、ユーザー API" SEODescription="ユーザーの組織構成を取得する。">
+        <Item text="直属の部下を一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_directreports" SEOKeyword="directReports を一覧表示する、Microsoft Graph API、Users API" SEODescription="Directoryobject オブジェクトのリストを取得します。" />
+        <Item text="マネージャーを取得する" url="/ja-jp/api-reference/v1.0/api/user_list_manager" SEOKeyword="マネージャーを取得する、Microsoft Graph API、Users API" SEODescription="マネージャーを取得する。" />
+        <Item text="マネージャーを割り当てる" url="/ja-jp/api-reference/v1.0/api/user_post_manager" SEOKeyword="directReport を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい directReport を作成します。" />
+      </Item>
+      <Item text="ディレクトリ オブジェクト" url="/ja-jp/api-reference/v1.0/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト, Microsoft Graph API, ユーザー API" SEODescription="Directory Objects API。">
+        <Item text="所有されているデバイスを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_owneddevices" SEOKeyword="ownedDevices を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="登録されているデバイスを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_registereddevices" SEOKeyword="registeredDevices を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="所有されているオブジェクトを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_ownedobjects" SEOKeyword="ownedObjects を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="作成されたオブジェクトを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_createdobjects" SEOKeyword="createdObjects を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="ライセンスを割り当てる" url="/ja-jp/api-reference/v1.0/api/user_assignlicense" SEOKeyword="ユーザー: assignLicense, Microsoft Graph API, ユーザー API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバー オブジェクトを取得する" url="/ja-jp/api-reference/v1.0/api/user_getmemberobjects" SEOKeyword="ユーザー: getMemberObjects, Microsoft Graph API, ユーザー API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバー グループを取得する" url="/ja-jp/api-reference/v1.0/api/user_getmembergroups" SEOKeyword="ユーザー: getMemberGroups, Microsoft Graph API, ユーザー API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバー グループをチェックする" url="/ja-jp/api-reference/v1.0/api/user_checkmembergroups" SEOKeyword="ユーザー: checkMemberGroups, Microsoft Graph API, ユーザー API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+      </Item>
+    </Item>
+    <Item text="データ拡張機能" url="/ja-jp/api-reference/v1.0/resources/opentypeextension" SEOKeyword="拡張 API、Microsoft Graph API、拡張 API" SEODescription="">
+      <Item text="opentypeextension" url="/ja-jp/api-reference/v1.0/resources/opentypeextension" SEOKeyword="拡張 API、Microsoft Graph API、拡張 API" SEODescription="">
+        <Item text="openTypeExtension を作成する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="openTypeExtension を取得する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="opentypeextension を更新する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_update" SEOKeyword="opentypeextension を更新する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティを更新します。" />
+        <Item text="openTypeExtension を削除する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_delete" SEOKeyword="openTypeExtension を削除する、Microsoft Graph API、opentypeextension API" SEODescription="openTypeExtension を削除します。" />
+      </Item>
+    </Item>
+    <Item text="OneDrive" url="/ja-jp/api-reference/v1.0/resources/drive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="OneDrive API">
+      <Item text="ドライブ" url="/ja-jp/api-reference/v1.0/resources/drive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="ドライブ API">
+        <Item text="ドライブを取得する" url="/ja-jp/api-reference/v1.0/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="子を一覧表示する" url="/ja-jp/api-reference/v1.0/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="最近使ったファイル" url="/ja-jp/api-reference/v1.0/api/drive_recent" SEOKeyword="最近使ったファイル、Microsoft Graph API、ドライブ API" SEODescription="最近使ったファイルを取得する。" />
+        <Item text="自分と共有" url="/ja-jp/api-reference/v1.0/api/drive_sharedwithme" SEOKeyword="共有アイテムのファイル、Microsoft Graph API、ドライブ API" SEODescription="共有アイテムのファイルを取得する。" />
+        <Item text="特殊なフォルダー" url="/ja-jp/api-reference/v1.0/api/drive_special" SEOKeyword="特殊なフォルダー、Microsoft Graph API、ドライブ API" SEODescription="特殊なフォルダーを取得する。" />
+      </Item>
+      <Item text="driveitem" url="/ja-jp/api-reference/v1.0/resources/driveitem" SEOKeyword="項目 API、Microsoft Graph API、項目 API" SEODescription="項目リソースは、ファイルやフォルダーと同様に、ドライブに含まれる項目を表します。">
+        <Item text="子を一覧表示する" url="/ja-jp/api-reference/v1.0/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="項目を取得する" url="/ja-jp/api-reference/v1.0/api/item_get" SEOKeyword="項目を取得する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティと関係を取得します。" />
+        <Item text="項目を作成する" url="/ja-jp/api-reference/v1.0/api/item_post_children" SEOKeyword="子を作成する、Microsoft Graph API、OneDrive Drive API" SEODescription="この API を使用して、新しい子を作成します。" />
+        <Item text="項目を更新する" url="/ja-jp/api-reference/v1.0/api/item_update" SEOKeyword="項目を更新する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティを更新します。" />
+        <Item text="項目を削除する" url="/ja-jp/api-reference/v1.0/api/item_delete" SEOKeyword="項目を削除する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目を削除します。" />
+        <Item text="項目を移動する" url="/ja-jp/api-reference/v1.0/api/item_move" SEOKeyword="項目を移動する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目をコピーする" url="/ja-jp/api-reference/v1.0/api/item_copy" SEOKeyword="項目をコピーする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目をダウンロードする" url="/ja-jp/api-reference/v1.0/api/item_downloadcontent" SEOKeyword="項目をダウンロードする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目をアップロードする" url="/ja-jp/api-reference/v1.0/api/item_uploadcontent" SEOKeyword="項目をアップロードする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目を検索する" url="/ja-jp/api-reference/v1.0/api/item_search" SEOKeyword="項目を検索する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="共有リンクを作成する" url="/ja-jp/api-reference/v1.0/api/item_createlink" SEOKeyword="リンク項目を作成する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="アクセス許可を取得する" url="/ja-jp/api-reference/v1.0/api/permission_get" SEOKeyword="アクセス許可を取得する、Microsoft Graph API、アクセス許可 API" SEODescription="アクセス許可オブジェクトのプロパティと関係を取得します。" />
+        <Item text="アクセス許可を更新する" url="/ja-jp/api-reference/v1.0/api/permission_update" SEOKeyword="アクセス許可を更新する、Microsoft Graph API、アクセス許可 API" SEODescription="アクセス許可オブジェクトのプロパティを更新します。" />
+        <Item text="アクセス許可を削除する" url="/ja-jp/api-reference/v1.0/api/permission_delete" SEOKeyword="アクセス許可を削除する、Microsoft Graph API、permission API" SEODescription="アクセス許可を削除します。" />
+        <Item text="thumbnailSet を取得する" url="/ja-jp/api-reference/v1.0/api/thumbnailset_get" SEOKeyword="thumbnailSet を取得する、Microsoft Graph API、thumbnailset API" SEODescription="" />
+        <Item text="変更履歴の記録" url="/ja-jp/api-reference/v1.0/api/item_delta" SEOKeyword="変更履歴の記録, Microsoft Graph API" SEODescription="" />
+      </Item>
+    </Item>
+    <Item text="Excel" url="/ja-jp/api-reference/v1.0/resources/excel" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+      <Item text="ブック" url="/ja-jp/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="テーブルを一覧表示する" url="/ja-jp/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+        <Item text="ワークシートを一覧表示する" url="/ja-jp/api-reference/v1.0/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
+        <Item text="名前を一覧表示する" url="/ja-jp/api-reference/v1.0/api/workbook_list_names" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="ワークシート" url="/ja-jp/api-reference/v1.0/resources/worksheet" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="ワークシートを追加する" url="/ja-jp/api-reference/v1.0/api/worksheetcollection_add" SEOKeyword="" SEODescription="" />
+        <Item text="ワークシートを取得する" url="/ja-jp/api-reference/v1.0/api/worksheet_get" SEOKeyword="" SEODescription="" />
+        <Item text="usedrange を取得する" url="/ja-jp/api-reference/v1.0/api/worksheet_usedrange" SEOKeyword="" SEODescription="" />
+        <Item text="ワークシートを更新する" url="/ja-jp/api-reference/v1.0/api/worksheet_update" SEOKeyword="" SEODescription="" />
+        <Item text="セルを取得する" url="/ja-jp/api-reference/v1.0/api/worksheet_cell" SEOKeyword="" SEODescription="" />
+        <Item text="範囲を取得する" url="/ja-jp/api-reference/v1.0/api/worksheet_range" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを一覧表示する" url="/ja-jp/api-reference/v1.0/api/worksheet_list_tables" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを追加する" url="/ja-jp/api-reference/v1.0/api/worksheet_post_tables" SEOKeyword="" SEODescription="" />
+        <Item text="グラフを一覧表示する" url="/ja-jp/api-reference/v1.0/api/worksheet_list_charts" SEOKeyword="" SEODescription="" />
+        <Item text="グラフを追加する" url="/ja-jp/api-reference/v1.0/api/worksheet_post_charts" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="範囲" url="/ja-jp/api-reference/v1.0/resources/range" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="範囲を取得する" url="/ja-jp/api-reference/v1.0/api/range_get" SEOKeyword="" SEODescription="" />
+        <Item text="結合する" url="/ja-jp/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
+        <Item text="結合を解除する" url="/ja-jp/api-reference/v1.0/api/range_unmerge" SEOKeyword="" SEODescription="" />
+        <Item text="解除する" url="/ja-jp/api-reference/v1.0/api/range_clear" SEOKeyword="" SEODescription="" />
+        <Item text="削除する" url="/ja-jp/api-reference/v1.0/api/range_delete" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="テーブル" url="/ja-jp/api-reference/v1.0/resources/table" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="テーブルの追加" url="/ja-jp/api-reference/v1.0/api/tablecollection_add" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを取得する" url="/ja-jp/api-reference/v1.0/api/table_get" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを更新する" url="/ja-jp/api-reference/v1.0/api/table_update" SEOKeyword="" SEODescription="" />
+        <Item text="範囲を取得する" url="/ja-jp/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
+        <Item text="行を一覧表示する" url="/ja-jp/api-reference/v1.0/api/table_list_rows" SEOKeyword="" SEODescription="" />
+        <Item text="列を一覧表示する" url="/ja-jp/api-reference/v1.0/api/table_list_columns" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="グラフ" url="/ja-jp/api-reference/v1.0/resources/chart" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="グラフを取得する" url="/ja-jp/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+        <Item text="グラフの画像を取得する" url="/ja-jp/api-reference/v1.0/api/chart_image" SEOKeyword="" SEODescription="" />
+        <Item text="データをリセットする" url="/ja-jp/api-reference/v1.0/api/chart_setdata" SEOKeyword="" SEODescription="" />
+        <Item text="位置データを設定する" url="/ja-jp/api-reference/v1.0/api/chart_setposition" SEOKeyword="" SEODescription="" />
+        <Item text="グラフを更新する" url="/ja-jp/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="nameditem" url="/ja-jp/api-reference/v1.0/resources/nameditem" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="nameditem を一覧表示する" url="/ja-jp/api-reference/v1.0/api/nameditem_get" SEOKeyword="" SEODescription="" />
+        <Item text="リストの範囲" url="/ja-jp/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
+      </Item>
+    </Item>
+    <Item text="Outlook メール" url="/ja-jp/api-reference/v1.0/resources/message" SEOKeyword="ユーザーのメール、Microsoft Graph API、ユーザー API" SEODescription="Outlook メール API">
+      <Item text="message" url="/ja-jp/api-reference/v1.0/resources/message" SEOKeyword="ユーザーのメール、Microsoft Graph API、ユーザー API" SEODescription="Mail API">
+        <Item text="メッセージを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_messages" SEOKeyword="メッセージを一覧表示する、Microsoft Graph API、Users API" SEODescription="メッセージ オブジェクトのリストを取得します。" />
+        <Item text="メッセージを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_messages" SEOKeyword="メッセージを作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しいメッセージを作成します。" />
+        <Item text="メッセージを取得する" url="/ja-jp/api-reference/v1.0/api/message_get" SEOKeyword="メッセージを取得する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="メッセージを更新する" url="/ja-jp/api-reference/v1.0/api/message_update" SEOKeyword="メッセージを更新する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージ オブジェクトのプロパティを更新します。" />
+        <Item text="メッセージを削除する" url="/ja-jp/api-reference/v1.0/api/message_delete" SEOKeyword="メッセージを削除する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージを削除します。" />
+        <Item text="メッセージを送信する" url="/ja-jp/api-reference/v1.0/api/message_send" SEOKeyword="メッセージを送信する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージを送信する" />
+        <Item text="メッセージをコピーする" url="/ja-jp/api-reference/v1.0/api/message_copy" SEOKeyword="メッセージをコピーする、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージをコピーする" />
+        <Item text="メッセージを移動する" url="/ja-jp/api-reference/v1.0/api/message_move" SEOKeyword="メッセージを移動する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージを移動する" />
+        <Item text="メッセージの返信を作成する" url="/ja-jp/api-reference/v1.0/api/message_createreply" SEOKeyword="メッセージの返信を作成する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="メッセージに返信する" url="/ja-jp/api-reference/v1.0/api/message_reply" SEOKeyword="メッセージに返信する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージに返信する" />
+        <Item text="全員にメッセージの返信を作成する" url="/ja-jp/api-reference/v1.0/api/message_createreplyall" SEOKeyword="全員にメッセージの返信を作成する、Microsoft Graph API、Outlook Mail API" SEODescription="全員にメッセージの返信を作成する" />
+        <Item text="メッセージを全員に返信する" url="/ja-jp/api-reference/v1.0/api/message_replyall" SEOKeyword="メッセージを全員に返信する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージを全員に返信する" />
+        <Item text="転送メッセージを作成する" url="/ja-jp/api-reference/v1.0/api/message_createforward" SEOKeyword="転送メッセージを作成する、Microsoft Graph API、Outlook Mail API" SEODescription="転送メッセージを作成する" />
+        <Item text="メッセージを転送する" url="/ja-jp/api-reference/v1.0/api/message_forward" SEOKeyword="メッセージを転送する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージを転送する" />
+        <Item text="メールを送信する" url="/ja-jp/api-reference/v1.0/api/user_sendmail" SEOKeyword="ユーザー: sendMail、Microsoft Graph API、ユーザー API" SEODescription="メールを送信する" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/v1.0/api/message_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Mail API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/v1.0/api/message_post_attachments" SEOKeyword="添付ファイルを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="openTypeExtension を作成する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="openTypeExtension を取得する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="優先受信トレイ" url="/ja-jp/api-reference/v1.0/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="">
+        <Item text="オーバーライドを作成する" url="/ja-jp/api-reference/v1.0/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを作成します。" />
+        <Item text="オーバーライドを一覧表示する" url="/ja-jp/api-reference/v1.0/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを一覧表示します。" />
+        <Item text="オーバーライドを更新する" url="/ja-jp/api-reference/v1.0/api/inferenceclassificationoverride_update" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを更新します。" />
+        <Item text="オーバーライドを削除する" url="/ja-jp/api-reference/v1.0/api/inferenceclassificationoverride_delete" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを削除します。" />
+      </Item>
+      <Item text="メール フォルダー" url="/ja-jp/api-reference/v1.0/resources/mailfolder" SEOKeyword="mailfolder API、Microsoft Graph API、mailfolder API" SEODescription="Mail Folder API">
+        <Item text="メール フォルダーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_mailfolders" SEOKeyword="mailFolders を一覧表示する、Microsoft Graph API、Users API" SEODescription="mailfolder オブジェクトのリストを取得します。" />
+        <Item text="メール フォルダーを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_mailfolders" SEOKeyword="MailFolder を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい MailFolder を作成します。" />
+        <Item text="メール フォルダーを取得する" url="/ja-jp/api-reference/v1.0/api/mailfolder_get" SEOKeyword="mailFolder を取得する、Microsoft Graph API、Outlook Mail API" SEODescription="mailfolder オブジェクトのプロパティと関係を取得します。" />
+        <Item text="メール フォルダーを更新する" url="/ja-jp/api-reference/v1.0/api/mailfolder_update" SEOKeyword="mailfolder を更新する、Microsoft Graph API、Outlook Mail API" SEODescription="mailfolder オブジェクトのプロパティを更新します。" />
+        <Item text="メール フォルダーを削除する" url="/ja-jp/api-reference/v1.0/api/mailfolder_delete" SEOKeyword="mailFolder を削除する、Microsoft Graph API、Outlook Mail API" SEODescription="mailFolder を削除します。" />
+        <Item text="メール フォルダーをコピーする" url="/ja-jp/api-reference/v1.0/api/mailfolder_copy" SEOKeyword="mailFolder: copy、Microsoft Graph API、mailfolder API" SEODescription="メール フォルダーをコピーする" />
+        <Item text="メール フォルダーを移動する" url="/ja-jp/api-reference/v1.0/api/mailfolder_move" SEOKeyword="mailFolder: move、Microsoft Graph API、mailfolder API" SEODescription="メール フォルダーを移動する" />
+        <Item text="フォルダー内のメッセージを一覧表示する" url="/ja-jp/api-reference/v1.0/api/mailfolder_list_messages" SEOKeyword="メッセージを一覧表示する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージ オブジェクトのリストを取得します。" />
+        <Item text="フォルダーにメッセージを作成する" url="/ja-jp/api-reference/v1.0/api/mailfolder_post_messages" SEOKeyword="フォルダーにメッセージを作成する、Microsoft Graph API、Outlook Mail API" SEODescription="この API を使用して、新しいメッセージを作成します。" />
+        <Item text="子フォルダーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/mailfolder_list_childfolders" SEOKeyword="childFolders を一覧表示する、Microsoft Graph API、Outlook Mail API" SEODescription="mailfolder オブジェクトのリストを取得します。" />
+        <Item text="メールの子フォルダーを作成する" url="/ja-jp/api-reference/v1.0/api/mailfolder_post_childfolders" SEOKeyword="mailFolder を作成する、Microsoft Graph API、Outlook Mail API" SEODescription="この API を使用して、新しい MailFolder を作成します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/v1.0/resources/attachment" SEOKeyword="添付ファイル API、Microsoft Graph API、添付ファイル API" SEODescription="Attachments API">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/attachment_get" SEOKeyword="添付ファイルを取得する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイル オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/v1.0/resources/fileattachment" SEOKeyword="fileattachment API、Microsoft Graph API、fileattachment API" SEODescription="メッセージまたはイベントに添付されたファイル (テキスト ファイルや Word 文書など) です。ContentBytes プロパティには、base64 でエンコードされたファイルの内容が含まれています。">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/fileattachment_get" SEOKeyword="fileAttachment を取得する、Microsoft Graph API、fileattachment API" SEODescription="fileattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="項目の添付ファイル" url="/ja-jp/api-reference/v1.0/resources/itemattachment" SEOKeyword="itemattachment API、Microsoft Graph API、itemattachment API" SEODescription="別のメッセージまたはイベントに添付されたメッセージまたはイベントです。">
+        <Item text="項目の添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/itemattachment_get" SEOKeyword="itemAttachment を取得する、Microsoft Graph API、itemattachment API" SEODescription="itemattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="項目の添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイルの参照" url="/ja-jp/api-reference/v1.0/resources/referenceattachment" SEOKeyword="referenceattachment API、Microsoft Graph API、referenceattachment API" SEODescription="">
+        <Item text="添付ファイルの参照を取得する" url="/ja-jp/api-reference/v1.0/api/referenceattachment_get" SEOKeyword="referenceAttachment を取得する、Microsoft Graph API、referenceattachment API" SEODescription="referenceattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルの参照を削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+    </Item>
+    <Item text="Outlook の予定表" url="/ja-jp/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook Calendar API、Microsoft Graph API、Outlook Calendar API" SEODescription="イベントのコンテナーである予定表です。">
+      <Item text="event" url="/ja-jp/api-reference/v1.0/resources/event" SEOKeyword="ユーザーの予定表、Microsoft Graph API、ユーザー API" SEODescription="予定表 API">
+        <Item text="イベントを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+        <Item text="イベントを取得する" url="/ja-jp/api-reference/v1.0/api/event_get" SEOKeyword="イベントを取得する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのプロパティと関係を取得します。" />
+        <Item text="イベントを更新する" url="/ja-jp/api-reference/v1.0/api/event_update" SEOKeyword="イベントを更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのプロパティを更新します。" />
+        <Item text="イベントを削除する" url="/ja-jp/api-reference/v1.0/api/event_delete" SEOKeyword="イベントを削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベントを削除します。" />
+        <Item text="イベントを承認" url="/ja-jp/api-reference/v1.0/api/event_accept" SEOKeyword="イベントを承認する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベントを承認する" />
+        <Item text="仮承諾" url="/ja-jp/api-reference/v1.0/api/event_tentativelyaccept" SEOKeyword="イベント: tentativelyAccept、Microsoft Graph API、イベント API" SEODescription="イベントの仮承諾" />
+        <Item text="イベントを辞退する" url="/ja-jp/api-reference/v1.0/api/event_decline" SEOKeyword="イベント: 辞退、Microsoft Graph API、イベント API" SEODescription="イベントを辞退する" />
+        <Item text="通知を消す" url="/ja-jp/api-reference/v1.0/api/event_dismissreminder" SEOKeyword="イベント: dismissReminder、Microsoft Graph API、イベント API" SEODescription="通知を消す" />
+        <Item text="アラームを再通知する" url="/ja-jp/api-reference/v1.0/api/event_snoozereminder" SEOKeyword="イベント: snoozeReminder、Microsoft Graph API、イベント API" SEODescription="アラームを再通知する" />
+        <Item text="イベント インスタンスを一覧表示する" url="/ja-jp/api-reference/v1.0/api/event_list_instances" SEOKeyword="イベント インスタンスを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/v1.0/api/event_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/v1.0/api/event_post_attachments" SEOKeyword="添付ファイルを作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="openTypeExtension を作成する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="openTypeExtension を取得する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="イベント メッセージ" url="/ja-jp/api-reference/v1.0/resources/eventmessage" SEOKeyword="eventmessage API、Microsoft Graph API、eventmessage API" SEODescription="会議出席依頼、会議中止メッセージ、会議承諾メッセージ、会議仮承諾メッセージ、または会議辞退メッセージを表すメッセージです。">
+        <Item text="イベント メッセージを取得する" url="/ja-jp/api-reference/v1.0/api/eventmessage_get" SEOKeyword="イベント メッセージを取得する、Microsoft Graph API、Outlook Calendar API" SEODescription="eventmessage オブジェクトのプロパティと関係を取得します。" />
+        <Item text="イベント メッセージを更新する" url="/ja-jp/api-reference/v1.0/api/eventmessage_update" SEOKeyword="イベント メッセージを更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="eventmessage オブジェクトのプロパティを更新します。" />
+        <Item text="イベント メッセージを削除する" url="/ja-jp/api-reference/v1.0/api/eventmessage_delete" SEOKeyword="イベント メッセージを削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="eventMessage を削除します。" />
+        <Item text="イベント メッセージを送信する" url="/ja-jp/api-reference/v1.0/api/message_send" SEOKeyword="イベント メッセージを送信する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント メッセージを送信する" />
+        <Item text="イベント メッセージをコピーする" url="/ja-jp/api-reference/v1.0/api/message_copy" SEOKeyword="イベント メッセージをコピーする、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント メッセージをコピーする" />
+        <Item text="イベント メッセージを移動する" url="/ja-jp/api-reference/v1.0/api/message_move" SEOKeyword="イベント メッセージを移動する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント メッセージを移動する" />
+        <Item text="返信を作成する" url="/ja-jp/api-reference/v1.0/api/message_createreply" SEOKeyword="返信を作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="返信を作成する" />
+        <Item text="イベント メッセージに返信する" url="/ja-jp/api-reference/v1.0/api/message_reply" SEOKeyword="イベント メッセージに返信する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント メッセージに返信する" />
+        <Item text="ReplyAll を作成する" url="/ja-jp/api-reference/v1.0/api/message_createreplyall" SEOKeyword="ReplyAll を作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="ReplyAll を作成する" />
+        <Item text="ReplyAll イベント メッセージ" url="/ja-jp/api-reference/v1.0/api/message_replyall" SEOKeyword="ReplyAll イベント メッセージ、Microsoft Graph API、Outlook Calendar API" SEODescription="ReplyAll イベント メッセージ" />
+        <Item text="転送を作成する" url="/ja-jp/api-reference/v1.0/api/message_createforward" SEOKeyword="転送を作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="転送を作成する" />
+        <Item text="イベント メッセージを転送する" url="/ja-jp/api-reference/v1.0/api/message_forward" SEOKeyword="イベント メッセージを転送する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント メッセージを転送する" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/v1.0/api/eventmessage_post_attachments" SEOKeyword="添付ファイルを作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/v1.0/api/eventmessage_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="openTypeExtension を作成する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="openTypeExtension を取得する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="予定表" url="/ja-jp/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook Calendar API、Microsoft Graph API、Outlook Calendar API" SEODescription="イベントのコンテナーである予定表です。">
+        <Item text="予定表を一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_calendars" SEOKeyword="予定表を一覧表示する、Microsoft Graph API、Users API" SEODescription="予定表オブジェクトのリストを取得します。" />
+        <Item text="予定表を作成する" url="/ja-jp/api-reference/v1.0/api/user_post_calendars" SEOKeyword="予定表を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい予定表を作成します。" />
+        <Item text="予定表を取得する" url="/ja-jp/api-reference/v1.0/api/calendar_get" SEOKeyword="予定表を取得する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表オブジェクトのプロパティと関係を取得します。" />
+        <Item text="予定表を更新する" url="/ja-jp/api-reference/v1.0/api/calendar_update" SEOKeyword="予定表を更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表オブジェクトのプロパティを更新します。" />
+        <Item text="予定表を削除する" url="/ja-jp/api-reference/v1.0/api/calendar_delete" SEOKeyword="予定表を削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表を削除します。" />
+        <Item text="予定表ビューを一覧表示する" url="/ja-jp/api-reference/v1.0/api/calendar_list_calendarview" SEOKeyword="予定表ビューを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを一覧表示する" url="/ja-jp/api-reference/v1.0/api/calendar_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを作成する" url="/ja-jp/api-reference/v1.0/api/calendar_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、予定表 API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+        <Item text="通知ビュー" url="/ja-jp/api-reference/v1.0/api/user_reminderview" SEOKeyword="ユーザー: reminderView、Microsoft Graph API、ユーザー API" SEODescription="通知ビュー" />
+      </Item>
+      <Item text="予定表の表示" url="/ja-jp/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。">
+        <Item text="予定表ビューを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="通知ビュー" url="/ja-jp/api-reference/v1.0/api/user_reminderview" SEOKeyword="ユーザー: reminderView、Microsoft Graph API、ユーザー API" SEODescription="通知ビュー" />
+      </Item>
+      <Item text="予定表グループ" url="/ja-jp/api-reference/v1.0/resources/calendargroup" SEOKeyword="calendargroup API、Microsoft Graph API、calendargroup API" SEODescription="予定表のグループです。">
+        <Item text="予定表グループを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_calendargroups" SEOKeyword="calendarGroups を一覧表示する、Microsoft Graph API、Users API" SEODescription="calendargroup オブジェクトのリストを取得します。" />
+        <Item text="予定表グループを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_calendargroups" SEOKeyword="CalendarGroup を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい CalendarGroup を作成します。" />
+        <Item text="予定表グループを取得する" url="/ja-jp/api-reference/v1.0/api/calendargroup_get" SEOKeyword="calendarGroup を取得する、Microsoft Graph API、Outlook Calendar API" SEODescription="calendargroup オブジェクトのプロパティと関係を取得します。" />
+        <Item text="予定表グループを更新する" url="/ja-jp/api-reference/v1.0/api/calendargroup_update" SEOKeyword="予定表グループを更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="calendargroup オブジェクトのプロパティを更新します。" />
+        <Item text="予定表グループを削除する" url="/ja-jp/api-reference/v1.0/api/calendargroup_delete" SEOKeyword="calendarGroup を削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="calendarGroup を削除します。" />
+        <Item text="予定表グループ内の予定表を一覧表示する" url="/ja-jp/api-reference/v1.0/api/calendargroup_list_calendars" SEOKeyword="予定表を一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表オブジェクトのリストを取得します。" />
+        <Item text="予定表グループで予定表を作成する" url="/ja-jp/api-reference/v1.0/api/calendargroup_post_calendars" SEOKeyword="予定表グループを作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="この API を使用して、新しい予定表を作成します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/v1.0/resources/attachment" SEOKeyword="添付ファイル API、Microsoft Graph API、添付ファイル API" SEODescription="Attachment API">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/attachment_get" SEOKeyword="添付ファイルを取得する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイル オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/v1.0/resources/fileattachment" SEOKeyword="fileattachment API、Microsoft Graph API、fileattachment API" SEODescription="メッセージまたはイベントに添付されたファイル (テキスト ファイルや Word 文書など) です。ContentBytes プロパティには、base64 でエンコードされたファイルの内容が含まれています。">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/fileattachment_get" SEOKeyword="fileAttachment を取得する、Microsoft Graph API、fileattachment API" SEODescription="fileattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="項目の添付ファイル" url="/ja-jp/api-reference/v1.0/resources/itemattachment" SEOKeyword="itemattachment API、Microsoft Graph API、itemattachment API" SEODescription="別のメッセージまたはイベントに添付されたメッセージまたはイベントです。">
+        <Item text="項目の添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/itemattachment_get" SEOKeyword="itemAttachment を取得する、Microsoft Graph API、itemattachment API" SEODescription="itemattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="項目の添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイルの参照" url="/ja-jp/api-reference/v1.0/resources/referenceattachment" SEOKeyword="referenceattachment API、Microsoft Graph API、referenceattachment API" SEODescription="添付ファイルの参照">
+        <Item text="添付ファイルの参照を取得する" url="/ja-jp/api-reference/v1.0/api/referenceattachment_get" SEOKeyword="referenceAttachment を取得する、Microsoft Graph API、referenceattachment API" SEODescription="referenceattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルの参照を削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+    </Item>
+    <Item text="個人用連絡先" url="/ja-jp/api-reference/v1.0/resources/contact" SEOKeyword="ユーザーの連絡先、Microsoft Graph API、ユーザー API" SEODescription="個人用連絡先 API">
+      <Item text="連絡先" url="/ja-jp/api-reference/v1.0/resources/contact" SEOKeyword="ユーザーの連絡先、Microsoft Graph API、ユーザー API" SEODescription="連絡先">
+        <Item text="連絡先を一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_contacts" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、Users API" SEODescription="連絡先オブジェクトのリストを取得します。" />
+        <Item text="連絡先を作成する" url="/ja-jp/api-reference/v1.0/api/user_post_contacts" SEOKeyword="連絡先を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい連絡先を作成します。" />
+        <Item text="連絡先を取得する" url="/ja-jp/api-reference/v1.0/api/contact_get" SEOKeyword="連絡先を取得する、Microsoft Graph API、連絡先 API" SEODescription="連絡先オブジェクトのプロパティと関係を取得します。" />
+        <Item text="連絡先を更新する" url="/ja-jp/api-reference/v1.0/api/contact_update" SEOKeyword="連絡先を更新する、Microsoft Graph API、連絡先 API" SEODescription="連絡先オブジェクトのプロパティを更新します。" />
+        <Item text="連絡先を削除する" url="/ja-jp/api-reference/v1.0/api/contact_delete" SEOKeyword="連絡先を削除する、Microsoft Graph API、連絡先 API" SEODescription="連絡先を削除します。" />
+        <Item text="openTypeExtension を作成する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="openTypeExtension を取得する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="連絡先フォルダー" url="/ja-jp/api-reference/v1.0/resources/contactfolder" SEOKeyword="contactfolder API、Microsoft Graph API、contactfolder API" SEODescription="連絡先が格納されたフォルダーです。">
+        <Item text="連絡先フォルダーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/user_list_contactfolders" SEOKeyword="contactFolders を一覧表示する、Microsoft Graph API、Users API" SEODescription="contactfolder オブジェクトのリストを取得します。" />
+        <Item text="連絡先フォルダーを作成する" url="/ja-jp/api-reference/v1.0/api/user_post_contactfolders" SEOKeyword="ContactFolder を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい ContactFolder を作成します。" />
+        <Item text="連絡先フォルダーを取得する" url="/ja-jp/api-reference/v1.0/api/contactfolder_get" SEOKeyword="contactFolder を取得する、Microsoft Graph API、contactfolder API" SEODescription="contactfolder オブジェクトのプロパティと関係を取得します。" />
+        <Item text="連絡先フォルダーを更新する" url="/ja-jp/api-reference/v1.0/api/contactfolder_update" SEOKeyword="contactfolder を更新する、Microsoft Graph API、contactfolder API" SEODescription="contactfolder オブジェクトのプロパティを更新します。" />
+        <Item text="連絡先フォルダーを削除する" url="/ja-jp/api-reference/v1.0/api/contactfolder_delete" SEOKeyword="contactFolder を削除する、Microsoft Graph API、contactfolder API" SEODescription="contactFolder を削除します。" />
+        <Item text="子フォルダーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/contactfolder_list_childfolders" SEOKeyword="childFolders を一覧表示する、Microsoft Graph API、contactfolder API" SEODescription="contactfolder オブジェクトのリストを取得します。" />
+        <Item text="子フォルダーを作成する" url="/ja-jp/api-reference/v1.0/api/contactfolder_post_childfolders" SEOKeyword="ContactFolder を作成する、Microsoft Graph API、contactfolder API" SEODescription="この API を使用して、新しい ContactFolder を作成します。" />
+        <Item text="フォルダー内の連絡先を一覧表示する" url="/ja-jp/api-reference/v1.0/api/contactfolder_list_contacts" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、contactfolder API" SEODescription="連絡先オブジェクトのリストを取得します。" />
+        <Item text="フォルダーに連絡先を作成する" url="/ja-jp/api-reference/v1.0/api/contactfolder_post_contacts" SEOKeyword="連絡先を作成する、Microsoft Graph API、contactfolder API" SEODescription="この API を使用して、新しい連絡先を作成します。" />
+      </Item>
+    </Item>
+    <Item text="グループ" url="/ja-jp/api-reference/v1.0/resources/group" SEOKeyword="ユーザー グループ、Microsoft Graph API、ユーザー API" SEODescription="Groups API">
+      <Item text="グループ" url="/ja-jp/api-reference/v1.0/resources/group" SEOKeyword="ユーザー グループ、Microsoft Graph API、ユーザー API" SEODescription="Groups API">
+        <Item text="グループを一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list" SEOKeyword="グループを一覧表示する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのリストを取得します。" />
+        <Item text="グループの作成" url="/ja-jp/api-reference/v1.0/api/group_post_groups" />
+        <Item text="グループを取得する" url="/ja-jp/api-reference/v1.0/api/group_get" SEOKeyword="グループを取得する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="グループを更新する" url="/ja-jp/api-reference/v1.0/api/group_update" SEOKeyword="グループを更新する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティを更新します。" />
+        <Item text="グループを削除する" url="/ja-jp/api-reference/v1.0/api/group_delete" SEOKeyword="グループを削除する、Microsoft Graph API、Groups API" SEODescription="グループを削除します。" />
+        <Item text="所有者を一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_owners" SEOKeyword="所有者を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="所有者を追加する" url="/ja-jp/api-reference/v1.0/api/group_post_owners" SEOKeyword="所有者を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい所有者を作成します。" />
+        <Item text="所有者を削除する" url="/ja-jp/api-reference/v1.0/api/group_delete_owners" />
+        <Item text="メンバーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_members" SEOKeyword="メンバーを一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバーを追加する" url="/ja-jp/api-reference/v1.0/api/group_post_members" SEOKeyword="メンバーを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいメンバーを作成します。" />
+        <Item text="メンバーを削除する" url="/ja-jp/api-reference/v1.0/api/group_delete_members" SEOKeyword="メンバーを削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいメンバーを削除します。" />
+        <Item text="memberOf を一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバー オブジェクトを取得する" url="/ja-jp/api-reference/v1.0/api/group_getmemberobjects" SEOKeyword="グループ: getMemberObjects、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="メンバー グループを取得する" url="/ja-jp/api-reference/v1.0/api/group_getmembergroups" SEOKeyword="グループ: getMemberGroups、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="メンバー グループをチェックする" url="/ja-jp/api-reference/v1.0/api/group_checkmembergroups" SEOKeyword="グループ: checkMemberGroups、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="お気に入りに追加" url="/ja-jp/api-reference/v1.0/api/group_addfavorite" />
+        <Item text="お気に入りを削除する" url="/ja-jp/api-reference/v1.0/api/group_removefavorite" />
+        <Item text="メールで購読する" url="/ja-jp/api-reference/v1.0/api/group_subscribebymail" SEOKeyword="グループ: subscribeByMail、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="メールでの購読を中止する" url="/ja-jp/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="グループ: unsubscribeByMail、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="見えないカウントをリセットする" url="/ja-jp/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="グループ: resetUnseenCount、Microsoft Graph API、グループ API" SEODescription="" />
+      </Item>
+      <Item text="写真" url="/ja-jp/api-reference/v1.0/resources/profilephoto" SEOKeyword="ユーザーの人物、Microsoft Graph API、ユーザー API" SEODescription="Photo API">
+        <Item text="写真を取得する" url="/ja-jp/api-reference/v1.0/api/profilephoto_get" />
+        <Item text="写真を更新する" url="/ja-jp/api-reference/v1.0/api/profilephoto_update" />
+      </Item>
+      <Item text="会話" url="/ja-jp/api-reference/v1.0/resources/conversation" SEOKeyword="グループ会話を取得する、Microsoft Graph API、グループ API" SEODescription="会話">
+        <Item text="会話を一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_conversations" SEOKeyword="会話を一覧表示する、Microsoft Graph API、Groups API" SEODescription="会話オブジェクトのリストを取得します。" />
+        <Item text="会話を作成する" url="/ja-jp/api-reference/v1.0/api/group_post_conversations" SEOKeyword="会話を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい会話を作成します。" />
+        <Item text="グループ会話を取得する" url="/ja-jp/api-reference/v1.0/api/conversation_get" SEOKeyword="グループ会話を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話オブジェクトのプロパティと関係を取得します。" />
+        <Item text="グループ会話を削除する" url="/ja-jp/api-reference/v1.0/api/conversation_delete" SEOKeyword="グループ会話を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話を削除します。" />
+        <Item text="会話スレッドを一覧表示する" url="/ja-jp/api-reference/v1.0/api/conversation_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Groups API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
+        <Item text="会話スレッドを作成する" url="/ja-jp/api-reference/v1.0/api/conversation_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
+        <Item text="承認済み送信者を一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_acceptedsenders" SEOKeyword="acceptedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="承認済み送信者を作成する" url="/ja-jp/api-reference/v1.0/api/group_post_acceptedsenders" SEOKeyword="acceptedSender を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい acceptedSender を作成します。" />
+        <Item text="承認済み送信者を削除する" url="/ja-jp/api-reference/v1.0/api/group_delete_acceptedsenders" SEOKeyword="acceptedSender を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい acceptedSender を削除します。" />
+        <Item text="拒否する送信者を一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_rejectedsenders" SEOKeyword="rejectedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="rejectedSenders のリストを取得します。" />
+        <Item text="拒否する送信元を作成する" url="/ja-jp/api-reference/v1.0/api/group_post_rejectedsenders" SEOKeyword="rejectedSender を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい rejectedSender を作成します。" />
+        <Item text="拒否する送信元を削除する" url="/ja-jp/api-reference/v1.0/api/group_delete_rejectedsenders" SEOKeyword="rejectedSender を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい rejectedSender を削除します。" />
+      </Item>
+      <Item text="会話スレッド" url="/ja-jp/api-reference/v1.0/resources/conversationthread" SEOKeyword="conversationthread API、Microsoft Graph API、conversationthread API" SEODescription="会話スレッド">
+        <Item text="スレッドを一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
+        <Item text="スレッドを作成する" url="/ja-jp/api-reference/v1.0/api/group_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Outlook 会話 API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
+        <Item text="会話スレッドを取得する" url="/ja-jp/api-reference/v1.0/api/conversationthread_get" SEOKeyword="conversationThread を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティと関係を取得します。" />
+        <Item text="会話スレッドを更新する" url="/ja-jp/api-reference/v1.0/api/conversationthread_update" SEOKeyword="conversationthread を更新する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティを更新します。" />
+        <Item text="会話スレッドを削除する" url="/ja-jp/api-reference/v1.0/api/conversationthread_delete" SEOKeyword="conversationThread を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationThread を削除します。" />
+        <Item text="会話のスレッドに返信する" url="/ja-jp/api-reference/v1.0/api/conversationthread_reply" SEOKeyword="conversationThread: 返信、Microsoft Graph API、conversationthread API" SEODescription="" />
+      </Item>
+      <Item text="投稿" url="/ja-jp/api-reference/v1.0/resources/post" SEOKeyword="投稿 API、Microsoft Graph API、投稿 API" SEODescription="投稿">
+        <Item text="投稿を一覧表示する" url="/ja-jp/api-reference/v1.0/api/conversationthread_list_posts" SEOKeyword="スレッドの投稿を一覧表示する、Microsoft Graph API、Outlook 会話 API" SEODescription="投稿オブジェクトのリストを取得します。" />
+        <Item text="投稿を取得する" url="/ja-jp/api-reference/v1.0/api/post_get" SEOKeyword="投稿を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="投稿オブジェクトのプロパティと関係を取得します。" />
+        <Item text="返信を一覧表示する" url="/ja-jp/api-reference/v1.0/api/post_reply" SEOKeyword="投稿: 応答、Microsoft Graph API、投稿 API" SEODescription="" />
+        <Item text="投稿を転送する" url="/ja-jp/api-reference/v1.0/api/post_forward" SEOKeyword="投稿: 転送、Microsoft Graph API、投稿 API" SEODescription="" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/v1.0/api/post_list_attachments" SEOKeyword="添付ファイルの投稿を一覧表示する、Microsoft Graph API、Outlook 会話 API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/v1.0/api/post_post_attachments" SEOKeyword="投稿の添付ファイルを作成する、Microsoft Graph API、Outlook 会話 API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="openTypeExtension を作成する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="openTypeExtension を取得する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/v1.0/resources/attachment" SEOKeyword="添付ファイル API、Microsoft Graph API、添付ファイル API" SEODescription="Attachment">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/attachment_get" SEOKeyword="添付ファイルを取得する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイル オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/v1.0/resources/fileattachment" SEOKeyword="fileattachment API、Microsoft Graph API、fileattachment API" SEODescription="メッセージまたはイベントに添付されたファイル (テキスト ファイルや Word 文書など) です。ContentBytes プロパティには、base64 でエンコードされたファイルの内容が含まれています。">
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/fileattachment_get" SEOKeyword="fileAttachment を取得する、Microsoft Graph API、fileattachment API" SEODescription="fileattachment オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="項目の添付ファイル" url="/ja-jp/api-reference/v1.0/resources/itemattachment" SEOKeyword="itemattachment API、Microsoft Graph API、itemattachment API" SEODescription="別のメッセージまたはイベントに添付されたメッセージまたはイベントです。">
+        <Item text="項目の添付ファイルを取得する" url="/ja-jp/api-reference/v1.0/api/itemattachment_get" SEOKeyword="itemAttachment を取得する、Microsoft Graph API、itemattachment API" SEODescription="itemattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="項目の添付ファイルを削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイルの参照" url="/ja-jp/api-reference/v1.0/resources/referenceattachment" SEOKeyword="referenceattachment API、Microsoft Graph API、referenceattachment API" SEODescription="">
+        <Item text="添付ファイルの参照を取得する" url="/ja-jp/api-reference/v1.0/api/referenceattachment_get" SEOKeyword="referenceAttachment を取得する、Microsoft Graph API、referenceattachment API" SEODescription="referenceattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルの参照を削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="予定表" url="/ja-jp/api-reference/v1.0/resources/event" SEOKeyword="ユーザーの予定表、Microsoft Graph API、ユーザー API" SEODescription="予定表">
+        <Item text="イベントを一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを作成する" url="/ja-jp/api-reference/v1.0/api/group_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、グループ API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+        <Item text="予定表ビューを一覧表示する" url="/ja-jp/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/v1.0/api/event_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/v1.0/api/event_post_attachments" SEOKeyword="添付ファイルを作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="openTypeExtension を作成する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="openTypeExtension を取得する" url="/ja-jp/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="ドライブ" url="/ja-jp/api-reference/v1.0/resources/drive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="ドライブ">
+        <Item text="ドライブを取得する" url="/ja-jp/api-reference/v1.0/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="子を一覧表示する" url="/ja-jp/api-reference/v1.0/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+      </Item>
+    </Item>
+    <Item text="ディレクトリ" url="/ja-jp/api-reference/v1.0/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
+      <Item text="ディレクトリ オブジェクト" url="/ja-jp/api-reference/v1.0/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="directoryObject を取得する" url="/ja-jp/api-reference/v1.0/api/directoryobject_get" SEOKeyword="directoryObject を取得する、Microsoft Graph API、Directory API" SEODescription="directoryobject オブジェクトのプロパティと関係を取得します。" />
+        <Item text="directoryObject を削除する" url="/ja-jp/api-reference/v1.0/api/directoryobject_delete" SEOKeyword="directoryObject を削除する、Microsoft Graph API、Directory API" SEODescription="directoryObject を削除します。" />
+        <Item text="メンバー オブジェクトを取得する" url="/ja-jp/api-reference/v1.0/api/directoryObject_getmemberobjects" SEOKeyword="directoryObject: getMemberObjects、Microsoft Graph API、Directory API" SEODescription="" />
+        <Item text="メンバー グループを取得する" url="/ja-jp/api-reference/v1.0/api/directoryObject_getmembergroups" SEOKeyword="directoryObject: getMemberGroups、Microsoft Graph API、Directory API" SEODescription="" />
+        <Item text="メンバー グループをチェックする" url="/ja-jp/api-reference/v1.0/api/directoryObject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups、Microsoft Graph API、Directory API" SEODescription="" />
+      </Item>
+      <Item text="ディレクトリ ロール" url="/ja-jp/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API、Microsoft Graph API、directoryrole API" SEODescription="Azure AD ディレクトリ ロールを表します。Azure AD ディレクトリ ロールは、管理者ロールとも呼ばれます。ディレクトリ (管理者) ロールの詳細については、「Azure AD での管理者ロールの割り当て」(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) を参照してください。">
+        <Item text="directoryRoles を一覧表示する" url="/ja-jp/api-reference/v1.0/api/directoryrole_list" SEOKeyword="directoryRoles を一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのリストを取得します。" />
+        <Item text="DirectoryRole を有効にする" url="/ja-jp/api-reference/v1.0/api/directoryrole_post_directoryroles" SEOKeyword="DirectoryRole を作成する、Microsoft Graph API、Directory API" SEODescription="この API を使用して、新しい DirectoryRole を作成します。" />
+        <Item text="directoryRole を取得する" url="/ja-jp/api-reference/v1.0/api/directoryrole_get" SEOKeyword="directoryRole を取得する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのプロパティと関係を取得します。" />
+        <Item text="directoryrole を更新する" url="/ja-jp/api-reference/v1.0/api/directoryrole_update" SEOKeyword="directoryrole を更新する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのプロパティを更新します。" />
+        <Item text="directoryRole を削除する" url="/ja-jp/api-reference/v1.0/api/directoryrole_delete" SEOKeyword="directoryRole を削除する、Microsoft Graph API、Directory API" SEODescription="directoryRole を削除します。" />
+        <Item text="メンバーを一覧表示する" url="/ja-jp/api-reference/v1.0/api/directoryrole_list_members" SEOKeyword="メンバーを一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバーを追加する" url="/ja-jp/api-reference/v1.0/api/directoryrole_post_members" SEOKeyword="メンバーを作成する、Microsoft Graph API、Directory API" SEODescription="この API を使用して、新しいメンバーを作成します。" />
+      </Item>
+      <Item text="ディレクトリ ロール テンプレート" url="/ja-jp/api-reference/v1.0/resources/directoryroletemplate" SEOKeyword="directoryroletemplate API、Microsoft Graph API、directoryroletemplate API" SEODescription="ディレクトリ ロール テンプレートを表します。ディレクトリ ロール テンプレートは、ディレクトリ ロール (DirectoryRole) のプロパティ値を指定します。テナントでアクティブにすることがあるディレクトリの役割ごとに、関連付けられているディレクトリ ロール テンプレート オブジェクトがあります。">
+        <Item text="directoryRoleTemplates を一覧表示する" url="/ja-jp/api-reference/v1.0/api/directoryroletemplate_list" SEOKeyword="directoryRoleTemplates を一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryroletemplate オブジェクトのリストを取得します。" />
+        <Item text="directoryRoleTemplate を取得する" url="/ja-jp/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="directoryRoleTemplate を取得する、Microsoft Graph API、Directory API" SEODescription="directoryroletemplate オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="デバイス" url="/ja-jp/api-reference/v1.0/resources/device" SEOKeyword="デバイス API、Microsoft Graph API、デバイス API" SEODescription="ディレクトリに登録されているデバイスを表します。DirectoryObject から継承します。">
+        <Item text="デバイスを一覧表示する" url="/ja-jp/api-reference/v1.0/api/device_list" SEOKeyword="デバイスを一覧表示する、Microsoft Graph API、Device API" SEODescription="デバイス オブジェクトのリストを取得します。" />
+        <Item text="デバイスを作成する" url="/ja-jp/api-reference/v1.0/api/device_post_devices" SEOKeyword="デバイスを作成する、Microsoft Graph API、Device API" SEODescription="この API を使用して、新しいデバイスを作成します。" />
+        <Item text="デバイスを取得する" url="/ja-jp/api-reference/v1.0/api/device_get" SEOKeyword="デバイスを取得する、Microsoft Graph API、Device API" SEODescription="デバイス オブジェクトのプロパティと関係を取得します。" />
+        <Item text="デバイスを更新する" url="/ja-jp/api-reference/v1.0/api/device_update" SEOKeyword="デバイスを更新する、Microsoft Graph API、Device API" SEODescription="デバイス オブジェクトのプロパティを更新します。" />
+        <Item text="デバイスを削除する" url="/ja-jp/api-reference/v1.0/api/device_delete" SEOKeyword="デバイスを削除する、Microsoft Graph API、Device API" SEODescription="デバイスを削除します。" />
+        <Item text="registeredOwners を一覧表示する" url="/ja-jp/api-reference/v1.0/api/device_list_registeredowners" SEOKeyword="registeredOwners を一覧表示する、Microsoft Graph API、Device API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="registeredUsers を一覧表示する" url="/ja-jp/api-reference/v1.0/api/device_list_registeredusers" SEOKeyword="registeredUsers を一覧表示する、Microsoft Graph API、Device API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="組織" url="/ja-jp/api-reference/v1.0/resources/organization" SEOKeyword="ユーザーの組織構造、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="組織の詳細を取得する" url="/ja-jp/api-reference/v1.0/api/organization_get" SEOKeyword="tenantDetail を取得する、Microsoft Graph API、Directory API" SEODescription="tenantdetail オブジェクトのプロパティと関係を取得します。" />
+        <Item text="組織の詳細を更新する" url="/ja-jp/api-reference/v1.0/api/organization_update" SEOKeyword="tenantdetail を更新する、Microsoft Graph API、Directory API" SEODescription="tenantdetail オブジェクトのプロパティを更新します。" />
+      </Item>
+      <Item text="購読している sku" url="/ja-jp/api-reference/v1.0/resources/subscribedsku" SEOKeyword="subscribedsku API、Microsoft Graph API、subscribedsku API" SEODescription="購読している SKU では読み取り操作のみがサポートされ、作成、更新、削除はサポートされません。クエリのフィルター式はサポートされていません。DirectoryObject から継承します。">
+        <Item text="subscribedSkus を一覧表示する" url="/ja-jp/api-reference/v1.0/api/subscribedsku_list" SEOKeyword="subscribedSkus を一覧表示する、Microsoft Graph API、subscribedsku API" SEODescription="subscribedsku オブジェクトのリストを取得します。" />
+        <Item text="subscribedSku を取得する" url="/ja-jp/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="subscribedSku を取得する、Microsoft Graph API、subscribedsku API" SEODescription="subscribedsku オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+    </Item>
+    <Item text="Webhooks" url="/ja-jp/api-reference/v1.0/resources/webhooks" SEOKeyword="洞察、Microsoft Graph API、ユーザー API" SEODescription="">
+      <Item text="サブスクリプション" url="/ja-jp/api-reference/v1.0/resources/subscription" SEOKeyword="洞察、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="サブスクリプションを取得する" url="/ja-jp/api-reference/v1.0/api/subscription_get" SEOKeyword="サブスクリプションを一覧表示する、Microsoft Graph API、webhoooks API" SEODescription="サブスクリプションのリストを取得します。" />
+        <Item text="サブスクリプションを作成する" url="/ja-jp/api-reference/v1.0/api/subscription_post_subscriptions" />
+        <Item text="サブスクリプションを更新する" url="/ja-jp/api-reference/v1.0/api/subscription_update" />
+        <Item text="サブスクリプションを削除する" url="/ja-jp/api-reference/v1.0/api/subscription_delete" />
+      </Item>
+    </Item>
+  </Item>
+
+  <Item text="/beta 参照" url="/ja-jp/api-reference/beta/">
+    <Item text="ユーザー" url="/ja-jp/api-reference/beta/resources/user" SEOKeyword="Users API、Microsoft Graph API、Users API" SEODescription="Azure AD ユーザー アカウントを表します。DirectoryObject から継承します。">
+      <Item text="ユーザー" url="/ja-jp/api-reference/beta/resources/user" SEOKeyword="Users API、Microsoft Graph API、Users API" SEODescription="Azure AD ユーザー アカウントを表します。DirectoryObject から継承します。">
+        <Item text="ユーザーを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list" SEOKeyword="ユーザーを一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのリストを取得します。" />
+        <Item text="ユーザーを作成する" url="/ja-jp/api-reference/beta/api/user_post_users" SEOKeyword="ユーザーを作成する、Microsoft Graph API、ユーザー API" SEODescription="この API を使用して、新しいユーザーを作成します。" />
+        <Item text="ユーザーを取得する" url="/ja-jp/api-reference/beta/api/user_get" SEOKeyword="ユーザーを取得する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのプロパティと関係を取得します。" />
+        <Item text="ユーザーを更新する" url="/ja-jp/api-reference/beta/api/user_update" SEOKeyword="ユーザーを更新する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのプロパティを更新します。" />
+        <Item text="ユーザーを削除する" url="/ja-jp/api-reference/beta/api/user_delete" SEOKeyword="ユーザーを削除する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーを削除します。" />
+      </Item>
+      <Item text="写真" url="/ja-jp/api-reference/beta/resources/profilephoto" SEOKeyword="ユーザーの人物、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="写真を取得する" url="/ja-jp/api-reference/beta/api/profilephoto_get" />
+        <Item text="写真を更新する" url="/ja-jp/api-reference/beta/api/profilephoto_update" />
+      </Item>
+      <Item text="メール" url="/ja-jp/api-reference/beta/resources/message" SEOKeyword="ユーザーのメール、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="メッセージを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_messages" SEOKeyword="メッセージを一覧表示する、Microsoft Graph API、Users API" SEODescription="メッセージ オブジェクトのリストを取得します。" />
+        <Item text="メッセージを作成する" url="/ja-jp/api-reference/beta/api/user_post_messages" SEOKeyword="メッセージを作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しいメッセージを作成します。" />
+        <Item text="オーバーライドを一覧表示する" url="/ja-jp/api-reference/beta/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを一覧表示します。" />
+        <Item text="オーバーライドを作成する" url="/ja-jp/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを作成します。" />
+        <Item text="メール フォルダーを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_mailfolders" SEOKeyword="mailFolders を一覧表示する、Microsoft Graph API、Users API" SEODescription="mailfolder オブジェクトのリストを取得します。" />
+        <Item text="メール フォルダーを作成する" url="/ja-jp/api-reference/beta/api/user_post_mailfolders" SEOKeyword="MailFolder を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい MailFolder を作成します。" />
+        <Item text="メールを送信する" url="/ja-jp/api-reference/beta/api/user_sendmail" SEOKeyword="ユーザー: sendMail、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="自動応答の設定を取得する" url="/ja-jp/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="ユーザー: 自動応答の設定を取得する、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="自動応答の設定を更新する" url="/ja-jp/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="ユーザー: 自動応答の設定を更新する、Microsoft Graph API、ユーザー API" SEODescription="" />
+      </Item>
+      <Item text="予定表" url="/ja-jp/api-reference/beta/resources/event" SEOKeyword="ユーザーの予定表、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="イベントを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを作成する" url="/ja-jp/api-reference/beta/api/user_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+        <Item text="予定表を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_calendars" SEOKeyword="予定表を一覧表示する、Microsoft Graph API、Users API" SEODescription="予定表オブジェクトのリストを取得します。" />
+        <Item text="予定表を作成する" url="/ja-jp/api-reference/beta/api/user_post_calendars" SEOKeyword="予定表を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい予定表を作成します。" />
+        <Item text="予定表グループを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_calendargroups" SEOKeyword="calendarGroups を一覧表示する、Microsoft Graph API、Users API" SEODescription="calendargroup オブジェクトのリストを取得します。" />
+        <Item text="予定表グループを作成する" url="/ja-jp/api-reference/beta/api/user_post_calendargroups" SEOKeyword="CalendarGroup を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい CalendarGroup を作成します。" />
+        <Item text="予定表ビューを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="通知ビュー" url="/ja-jp/api-reference/beta/api/user_reminderview" SEOKeyword="ユーザー: reminderView、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="会議の日時を検索する" url="/ja-jp/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="ユーザー: 会議の日時、Microsoft Graph API、ユーザー API" SEODescription="" />
+      </Item>
+      <Item text="contacts" url="/ja-jp/api-reference/beta/resources/contact" SEOKeyword="ユーザーの連絡先、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="連絡先を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_contacts" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、Users API" SEODescription="連絡先オブジェクトのリストを取得します。" />
+        <Item text="連絡先を作成する" url="/ja-jp/api-reference/beta/api/user_post_contacts" SEOKeyword="連絡先を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい連絡先を作成します。" />
+        <Item text="連絡先フォルダーを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_contactfolders" SEOKeyword="contactFolders を一覧表示する、Microsoft Graph API、Users API" SEODescription="contactfolder オブジェクトのリストを取得します。" />
+        <Item text="連絡先フォルダーを作成する" url="/ja-jp/api-reference/beta/api/user_post_contactfolders" SEOKeyword="ContactFolder を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい ContactFolder を作成します。" />
+      </Item>
+      <Item text="ドライブ" url="/ja-jp/api-reference/beta/resources/drive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="ドライブを取得する" url="/ja-jp/api-reference/beta/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="子を一覧表示する" url="/ja-jp/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="ユーザー" url="/ja-jp/api-reference/beta/resources/person" SEOKeyword="ユーザーの人物、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="ユーザーを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_people" SEOKeyword="ユーザーを一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="人物オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="tasks" url="/ja-jp/api-reference/beta/resources/task" SEOKeyword="ユーザー タスク、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="タスクを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_tasks" SEOKeyword="タスクを一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="タスク オブジェクトのリストを取得します。" />
+        <Item text="計画を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_plans" SEOKeyword="計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="計画オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="メモ" url="/ja-jp/api-reference/beta/resources/notebook" SEOKeyword="ユーザーのメモ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="ノートブックを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_notebooks" SEOKeyword="ノートブックを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="notebook(../resources/notebook.md) オブジェクトのリストを取得します。" />
+        <Item text="ノートブックを作成する" url="/ja-jp/api-reference/beta/api/notes_post_notebooks" SEOKeyword="ノートブックを作成する、Microsoft Graph API、ノーツ API" SEODescription="新しい OneNote ノートブックを作成します (../resources/notebook.md)。" />
+      </Item>
+      <Item text="洞察" url="/ja-jp/api-reference/beta/resources/" SEOKeyword="洞察、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="trendingAround を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_trendingaround" SEOKeyword="trendingAround を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="workingWith を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_workingwith" SEOKeyword="workingWith を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="グループ" url="/ja-jp/api-reference/beta/resources/organization" SEOKeyword="グループ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="memberOf を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="組織階層" url="/ja-jp/api-reference/beta/resources/organization" SEOKeyword="グループ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="直属の部下を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_directreports" SEOKeyword="directReports を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="マネージャーを取得する" url="/ja-jp/api-reference/beta/api/user_list_manager" SEOKeyword="マネージャーを取得する、Microsoft Graph API、Users API" SEODescription="マネージャーを取得する。" />
+        <Item text="マネージャーを割り当てる" url="/ja-jp/api-reference/beta/api/user_post_manager" SEOKeyword="directReport を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい directReport を作成します。" />
+      </Item>
+      <Item text="ディレクトリ オブジェクト" url="/ja-jp/api-reference/beta/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="所有されているデバイスを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_owneddevices" SEOKeyword="ownedDevices を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="登録されているデバイスを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_registereddevices" SEOKeyword="registeredDevices を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="所有されているオブジェクトを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_ownedobjects" SEOKeyword="ownedObjects を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="スコープが限定された管理者メンバーシップを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_scopedadministratorof" SEOKeyword="対象の管理者メンバーシップを一覧表示する、Microsoft Graph API、Users API" SEODescription="対象の管理者メンバーシップ オブジェクトの一覧を取得します。" />
+
+        <Item text="作成されたオブジェクトを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_createdobjects" SEOKeyword="createdObjects を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="アプリケーションの役割の割り当てを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_approleassignments" SEOKeyword="appRoleAssignments を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="approleassignment オブジェクトのリストを取得します。" />
+        <Item text="アプリケーションの役割の割り当てを作成する" url="/ja-jp/api-reference/beta/api/user_post_approleassignments" SEOKeyword="AppRoleAssignment を作成する、Microsoft Graph API、ユーザー API" SEODescription="この API を使用して、新しい AppRoleAssignment を作成します。" />
+        <Item text="OAuth2 のアクセス許可の付与を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_oauth2permissiongrants" SEOKeyword="oauth2PermissionGrants を一覧表示する、Microsoft Graph API、Users API" SEODescription="oauth2permissiongrant オブジェクトのリストを取得します。" />
+        <Item text="OAuth2 のアクセス許可の付与を作成する" url="/ja-jp/api-reference/beta/api/user_post_oauth2permissiongrants" SEOKeyword="OAuth2PermissionGrant を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい OAuth2PermissionGrant を作成します。" />
+        <Item text="ライセンスを割り当てる" url="/ja-jp/api-reference/beta/api/user_assignlicense" SEOKeyword="ユーザー: assignLicense、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="メンバー オブジェクトを取得する" url="/ja-jp/api-reference/beta/api/user_getmemberobjects" SEOKeyword="ユーザー: getMemberObjects、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="メンバー グループを取得する" url="/ja-jp/api-reference/beta/api/user_getmembergroups" SEOKeyword="ユーザー: getMemberGroups、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="メンバー グループをチェックする" url="/ja-jp/api-reference/beta/api/user_checkmembergroups" SEOKeyword="ユーザー: checkMemberGroups、Microsoft Graph API、ユーザー API" SEODescription="" />
+      </Item>
+    </Item>
+    <Item text="ユーザー" url="/ja-jp/api-reference/beta/resources/people" SEOKeyword="デバイス API、Microsoft Graph API、デバイス API" SEODescription="ディレクトリに登録されているデバイスを表します。DirectoryObject から継承します。">
+      <Item text="人物" url="/ja-jp/api-reference/beta/resources/person" SEOKeyword="ユーザーの人物、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="ユーザーを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_people" SEOKeyword="ユーザーを一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="人物オブジェクトのリストを取得します。" />
+        <Item text="人物を取得する" url="/ja-jp/api-reference/beta/api/person_get" SEOKeyword="人物を取得する、Microsoft Graph API、人物 API" SEODescription="人物オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+    </Item>
+    <Item text="タスク" url="/ja-jp/api-reference/beta/resources/task" SEOKeyword="ユーザー タスク、Microsoft Graph API、ユーザー API" SEODescription="">
+      <Item text="タスク" url="/ja-jp/api-reference/beta/resources/task" SEOKeyword="ユーザー タスク、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="タスクを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_tasks" SEOKeyword="タスクを一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="タスク オブジェクトのリストを取得します。" />
+        <Item text="タスクを作成する" url="/ja-jp/api-reference/beta/api/user_post_tasks" SEOKeyword="タスクを作成する、Microsoft Graph API、ユーザー API" SEODescription="この API を使用して、新しいタスクを作成します。" />
+        <Item text="タスクを取得する" url="/ja-jp/api-reference/beta/api/task_get" SEOKeyword="タスクを取得する、Microsoft Graph API、タスク" SEODescription="" />
+        <Item text="タスクを更新する" url="/ja-jp/api-reference/beta/api/task_update" SEOKeyword="タスクを更新する、Microsoft Graph API、タスク" SEODescription="" />
+        <Item text="タスクを削除する" url="/ja-jp/api-reference/beta/api/task_delete" SEOKeyword="タスクを削除する、Microsoft Graph API、タスク" SEODescription="" />
+      </Item>
+      <Item text="タスクボード タスク形式" url="/ja-jp/api-reference/beta/resources/taskboardtaskformat" SEOKeyword="taskboardtaskformat API、Microsoft Graph API、taskboardtaskformat API" SEODescription="">
+        <Item text="taskBoardTaskFormat" url="/ja-jp/api-reference/beta/api/taskboardtaskformat_get" SEOKeyword="taskBoardTaskFormat を取得する、Microsoft Graph API、taskboardtaskformat API" SEODescription="taskboardtaskformat オブジェクトのプロパティと関係を取得します。" />
+        <Item text="taskboardtaskformat を更新する" url="/ja-jp/api-reference/beta/api/taskboardtaskformat_update" SEOKeyword="taskboardtaskformat を更新する、Microsoft Graph API、taskboardtaskformat API" SEODescription="taskboardtaskformat オブジェクトのプロパティを更新します。" />
+      </Item>
+      <Item text="タスクの詳細" url="/ja-jp/api-reference/beta/resources/taskdetails" SEOKeyword="taskdetails API、Microsoft Graph API、taskdetails API" SEODescription="">
+        <Item text="taskDetails を取得する" url="/ja-jp/api-reference/beta/api/taskdetails_get" SEOKeyword="taskDetails を取得する、Microsoft Graph API、taskdetails API" SEODescription="taskdetails オブジェクトのプロパティと関係を取得します。" />
+        <Item text="taskdetails を更新する" url="/ja-jp/api-reference/beta/api/taskdetails_update" SEOKeyword="taskdetails を更新する、Microsoft Graph API、taskdetails API" SEODescription="taskdetails オブジェクトのプロパティを更新します。" />
+      </Item>
+      <Item text="バケット" url="/ja-jp/api-reference/beta/resources/bucket" SEOKeyword="バケット API、Microsoft Graph API、バケット API" SEODescription="">
+        <Item text="バケットを作成する" url="/ja-jp/api-reference/beta/api/bucket_post_buckets" SEOKeyword="バケットを作成する、Microsoft Graph API、バケット API" SEODescription="この API を使用して、新しいバケットを作成します。" />
+        <Item text="バケットを取得する" url="/ja-jp/api-reference/beta/api/bucket_get" SEOKeyword="バケットを取得する、Microsoft Graph API、バケット API" SEODescription="バケット オブジェクトのプロパティと関係を取得します。" />
+        <Item text="バケットを更新する" url="/ja-jp/api-reference/beta/api/bucket_update" SEOKeyword="バケットを更新する、Microsoft Graph API、バケット API" SEODescription="バケット オブジェクトのプロパティを更新します。" />
+        <Item text="バケットを削除する" url="/ja-jp/api-reference/beta/api/bucket_delete" SEOKeyword="バケットを削除する、Microsoft Graph API、バケット API" SEODescription="バケットを削除します。" />
+        <Item text="バケットのタスクを一覧表示する" url="/ja-jp/api-reference/beta/api/bucket_list_tasks" SEOKeyword="タスクを一覧表示する、Microsoft Graph API、バケット API" SEODescription="タスク オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="計画" url="/ja-jp/api-reference/beta/resources/plan" SEOKeyword="計画 API、Microsoft Graph API、計画 API" SEODescription="">
+        <Item text="計画を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_plans" SEOKeyword="計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="計画オブジェクトのリストを取得します。" />
+        <Item text="計画を作成する" url="/ja-jp/api-reference/beta/api/user_post_plans" SEOKeyword="計画を作成する、Microsoft Graph API、ユーザー API" SEODescription="この API を使用して、新しい計画を作成します。" />
+        <Item text="計画を取得する" url="/ja-jp/api-reference/beta/api/plan_get" SEOKeyword="計画を取得する、Microsoft Graph API、計画 API" SEODescription="計画オブジェクトのプロパティと関係を取得します。" />
+        <Item text="計画を更新する" url="/ja-jp/api-reference/beta/api/plan_update" SEOKeyword="計画を更新する、Microsoft Graph API、計画 API" SEODescription="計画オブジェクトのプロパティを更新します。" />
+        <Item text="計画を削除する" url="/ja-jp/api-reference/beta/api/plan_delete" SEOKeyword="計画を削除する、Microsoft Graph API、計画 API" SEODescription="計画を削除します。" />
+        <Item text="計画バケットを一覧表示する" url="/ja-jp/api-reference/beta/api/plan_list_buckets" SEOKeyword="バケットを一覧表示する、Microsoft Graph API、計画 API" SEODescription="バケット オブジェクトのリストを取得します。" />
+        <Item text="計画タスクを一覧表示する" url="/ja-jp/api-reference/beta/api/plan_list_tasks" SEOKeyword="タスクを一覧表示する、Microsoft Graph API、計画 API" SEODescription="タスク オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="計画の詳細" url="/ja-jp/api-reference/beta/resources/plandetails" SEOKeyword="plandetails API、Microsoft Graph API、plandetails API" SEODescription="">
+        <Item text="planDetails を取得する" url="/ja-jp/api-reference/beta/api/plandetails_get" SEOKeyword="planDetails を取得する、Microsoft Graph API、plandetails API" SEODescription="plandetails オブジェクトのプロパティと関係を取得します。" />
+        <Item text="plandetails を更新する" url="/ja-jp/api-reference/beta/api/plandetails_update" SEOKeyword="plandetails を更新する、Microsoft Graph API、plandetails API" SEODescription="plandetails オブジェクトのプロパティを更新します。" />
+      </Item>
+      <Item text="タスクボードを計画します。" url="/ja-jp/api-reference/beta/resources/plantaskboard" SEOKeyword="plantaskboard API、Microsoft Graph API、plantaskboard API" SEODescription="">
+        <Item text="planTaskBoard を取得する" url="/ja-jp/api-reference/beta/api/plantaskboard_get" SEOKeyword="planTaskBoard を取得する、Microsoft Graph API、plantaskboard API" SEODescription="plantaskboard オブジェクトのプロパティと関係を取得します。" />
+        <Item text="planTaskBoard を削除する" url="/ja-jp/api-reference/beta/api/plantaskboard_delete" SEOKeyword="planTaskBoard を削除する、Microsoft Graph API、plantaskboard API" SEODescription="planTaskBoard を削除します。" />
+      </Item>
+    </Item>
+    <Item text="OneNote" url="/ja-jp/api-reference/beta/resources/note" SEOKeyword="OneNote API、Microsoft Graph API" SEODescription="">
+      <Item text="メモ" url="/ja-jp/api-reference/beta/resources/notes" SEOKeyword="ノーツ API、Microsoft Graph API、ノーツ API" SEODescription="">
+        <Item text="ノートブックを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_notebooks" SEOKeyword="ノートブックを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="notebook(../resources/notebook.md) オブジェクトのリストを取得します。" />
+        <Item text="ノートブックを作成する" url="/ja-jp/api-reference/beta/api/notes_post_notebooks" SEOKeyword="ノートブックを作成する、Microsoft Graph API、ノーツ API" SEODescription="新しい OneNote ノートブックを作成します (../resources/notebook.md)。" />
+        <Item text="セクションを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_sections" SEOKeyword="セクションを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="section(../resources/section.md) オブジェクトのリストを取得します。" />
+        <Item text="セクション グループを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_sectiongroups" SEOKeyword="sectionGroups を一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="sectionGroup(../resources/sectiongroup.md) オブジェクトのリストを取得します。" />
+        <Item text="ページを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_pages" SEOKeyword="ページを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="page(../resources/page.md) オブジェクトのリストを取得します。" />
+        <Item text="ページを作成する" url="/ja-jp/api-reference/beta/api/notes_post_pages" SEOKeyword="ページを作成する、Microsoft Graph API、ノーツ API" SEODescription="既定のノートブックの既定のセクションで OneNote の新しいページを作成します。" />
+      </Item>
+      <Item text="notebooks" url="/ja-jp/api-reference/beta/resources/notebook" SEOKeyword="ユーザーのメモ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="ノートブックを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_notebooks" SEOKeyword="ノートブックを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="notebook(../resources/notebook.md) オブジェクトのリストを取得します。" />
+        <Item text="ノートブックを作成する" url="/ja-jp/api-reference/beta/api/notes_post_notebooks" SEOKeyword="ノートブックを作成する、Microsoft Graph API、ノーツ API" SEODescription="新しい OneNote ノートブックを作成します (../resources/notebook.md)。" />
+        <Item text="ノートブックを取得する" url="/ja-jp/api-reference/beta/api/notebook_get" SEOKeyword="ノートブックを取得する、Microsoft Graph API、ノートブック API" SEODescription="ノートブック(../resources/notebook.md) オブジェクトのプロパティと関係を取得します。" />
+        <Item text="ノートブックをコピーする" url="/ja-jp/api-reference/beta/api/notebook_copynotebook" SEOKeyword="ノートブック: copyNotebook、Microsoft Graph API、ノートブック API" SEODescription="" />
+        <Item text="セクションを一覧表示する" url="/ja-jp/api-reference/beta/api/notebook_list_sections" SEOKeyword="sections を一覧表示する、Microsoft Graph API、ノートブック API" SEODescription="section(../resources/section.md) オブジェクトのリストを取得します。" />
+        <Item text="セクションを作成する" url="/ja-jp/api-reference/beta/api/notebook_post_sections" SEOKeyword="セクションを作成する、Microsoft Graph API、ノートブック API" SEODescription="指定されたノートブックに新しい section(../resources/section.md) を作成します。" />
+        <Item text="セクション グループを一覧表示する" url="/ja-jp/api-reference/beta/api/notebook_list_sectiongroups" SEOKeyword="sectionGroups を一覧表示する、Microsoft Graph API、ノートブック API" SEODescription="指定されたノートブックから section groups(../resources/sectiongroup.md) のリストを取得します。" />
+        <Item text="セクション グループを作成する" url="/ja-jp/api-reference/beta/api/notebook_post_sectiongroups" SEOKeyword="sectionGroup を作成する、Microsoft Graph API、ノートブック API" SEODescription="指定されたノートブックで新しいセクション グループを作成します (../resources/sectiongroup.md)。" />
+      </Item>
+      <Item text="セクション" url="/ja-jp/api-reference/beta/resources/section" SEOKeyword="セクション API、Microsoft Graph API、セクション API" SEODescription="OneNote ノートブックのセクションです。セクションには、ページを含めることができます。">
+        <Item text="セクションを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_sections" SEOKeyword="セクションを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="section(../resources/section.md) オブジェクトのリストを取得します。" />
+        <Item text="セクションを作成する" url="/ja-jp/api-reference/beta/api/notebook_post_sections" SEOKeyword="セクションを作成する、Microsoft Graph API、ノートブック API" SEODescription="指定されたノートブックに新しい section(../resources/section.md) を作成します。" />
+        <Item text="セクションを取得する" url="/ja-jp/api-reference/beta/api/section_get" SEOKeyword="セクションを取得する、Microsoft Graph API、セクション API" SEODescription="セクション(../resources/section.md) オブジェクトのプロパティと関係を取得します。" />
+        <Item text="ページを一覧表示する" url="/ja-jp/api-reference/beta/api/section_list_pages" SEOKeyword="ページを一覧表示する、Microsoft Graph API、セクション API" SEODescription="指定されたセクションからの page(../resources/page.md) オブジェクトのリストを取得します。" />
+        <Item text="ページを作成する" url="/ja-jp/api-reference/beta/api/section_post_pages" SEOKeyword="ページを作成する、Microsoft Graph API、セクション API" SEODescription="指定されたセクションに新しい page(./resources/page.md) を作成します。" />
+        <Item text="ノートブックにコピーする" url="/ja-jp/api-reference/beta/api/section_copytonotebook" SEOKeyword="セクション: copyToNotebook、Microsoft Graph API、セクション API" SEODescription="" />
+        <Item text="セクション グループにコピーする" url="/ja-jp/api-reference/beta/api/section_copytosectiongroup" SEOKeyword="セクション: copyToSectionGroup、Microsoft Graph API、セクション API" SEODescription="" />
+      </Item>
+      <Item text="セクション グループ" url="/ja-jp/api-reference/beta/resources/sectiongroup" SEOKeyword="sectiongroup API、Microsoft Graph API、sectiongroup API" SEODescription="OneNote ノートブックのセクション グループです。セクション グループには、セクションとセクション グループを含めることができます。">
+        <Item text="セクション グループを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_sectiongroups" SEOKeyword="sectionGroups を一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="sectionGroup(../resources/sectiongroup.md) オブジェクトのリストを取得します。" />
+        <Item text="セクション グループを作成する" url="/ja-jp/api-reference/beta/api/notebook_post_sectiongroups" SEOKeyword="sectionGroup を作成する、Microsoft Graph API、ノートブック API" SEODescription="指定されたノートブックで新しいセクション グループを作成します (../resources/sectiongroup.md)。" />
+        <Item text="セクション グループを取得する" url="/ja-jp/api-reference/beta/api/sectiongroup_get" SEOKeyword="sectionGroup を取得する、Microsoft Graph API、sectiongroup API" SEODescription="sectionGroup(../resources/sectiongroup.md) オブジェクトのプロパティと関係を取得します。" />
+        <Item text="セクションを一覧表示する" url="/ja-jp/api-reference/beta/api/sectiongroup_list_sections" SEOKeyword="セクションを一覧表示する、Microsoft Graph API、sectiongroup API" SEODescription="section(../resources/section.md) オブジェクトのリストを取得します。" />
+        <Item text="セクションを作成する" url="/ja-jp/api-reference/beta/api/sectiongroup_post_sections" SEOKeyword="セクションを作成する、Microsoft Graph API、sectiongroup API" SEODescription="指定されたノートブックに新しい section(../resources/section.md) を作成します。" />
+      </Item>
+      <Item text="ページ" url="/ja-jp/api-reference/beta/resources/page" SEOKeyword="ページ API、Microsoft Graph API、ページ API" SEODescription="OneNote ノートブックのページです。">
+        <Item text="ページを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_pages" SEOKeyword="ページを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="page(../resources/page.md) オブジェクトのリストを取得します。" />
+        <Item text="ページを作成する" url="/ja-jp/api-reference/beta/api/section_post_pages" SEOKeyword="ページを作成する、Microsoft Graph API、セクション API" SEODescription="指定されたセクションに新しい page(./resources/page.md) を作成します。" />
+        <Item text="ページを取得する" url="/ja-jp/api-reference/beta/api/page_get" SEOKeyword="ページを取得する、Microsoft Graph API、ページ API" SEODescription="page(../resources/page.md) オブジェクトのプロパティと関係を取得します。" />
+        <Item text="ページを更新する" url="/ja-jp/api-reference/beta/api/page_update" SEOKeyword="ページを更新する、Microsoft Graph API、ページ API" SEODescription="ページ オブジェクトのプロパティを更新します。" />
+        <Item text="ページを削除する" url="/ja-jp/api-reference/beta/api/page_delete" SEOKeyword="page を削除する、Microsoft Graph API、ページ API" SEODescription="OneNote のページを削除する" />
+        <Item text="セクションにコピーする" url="/ja-jp/api-reference/beta/api/page_copytosection" SEOKeyword="ページ: copyToSection、Microsoft Graph API、ページ API" SEODescription="" />
+      </Item>
+      <Item text="リソース" url="/ja-jp/api-reference/beta/resources/resource" SEOKeyword="リソース API、Microsoft Graph API、リソース API" SEODescription="イメージまたは OneNote のページ上の他のファイル リソースです。">
+        <Item text="リソースを取得する" url="/ja-jp/api-reference/beta/api/resource_get" SEOKeyword="リソースを取得する、Microsoft Graph API、リソース API" SEODescription="ファイルまたはイメージ リソース(../resources/resource.md) オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+    </Item>
+    <Item text="データ拡張機能" url="/ja-jp/api-reference/beta/resources/opentypeextension" SEOKeyword="拡張 API、Microsoft Graph API、拡張 API" SEODescription="">
+      <Item text="opentypeextension" url="/ja-jp/api-reference/beta/resources/opentypeextension" SEOKeyword="拡張 API、Microsoft Graph API、拡張 API" SEODescription="">
+        <Item text="openTypeExtension を作成する" url="/ja-jp/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="openTypeExtension を取得する" url="/ja-jp/api-reference/beta/api/opentypeextension_get" SEOKeyword="openTypeExtension を取得する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティと関係を取得します。" />
+        <Item text="opentypeextension を更新する" url="/ja-jp/api-reference/beta/api/opentypeextension_update" SEOKeyword="opentypeextension を更新する、Microsoft Graph API、opentypeextension API" SEODescription="opentypeextension オブジェクトのプロパティを更新します。" />
+        <Item text="openTypeExtension を削除する" url="/ja-jp/api-reference/beta/api/opentypeextension_delete" SEOKeyword="openTypeExtension を削除する、Microsoft Graph API、opentypeextension API" SEODescription="openTypeExtension を削除します。" />
+      </Item>
+    </Item>
+    <Item text="Webhooks" url="/ja-jp/api-reference/beta/resources/webhooks" SEOKeyword="洞察、Microsoft Graph API、ユーザー API" SEODescription="">
+      <Item text="サブスクリプション" url="/ja-jp/api-reference/beta/resources/subscription" SEOKeyword="洞察、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="サブスクリプションを取得する" url="/ja-jp/api-reference/beta/api/subscription_get" SEOKeyword="サブスクリプションを一覧表示する、Microsoft Graph API、webhoooks API" SEODescription="サブスクリプションのリストを取得します。" />
+        <Item text="サブスクリプションを作成する" url="/ja-jp/api-reference/beta/api/subscription_post_subscriptions" />
+        <Item text="サブスクリプションを更新する" url="/ja-jp/api-reference/beta/api/subscription_update" />
+        <Item text="サブスクリプションを削除する" url="/ja-jp/api-reference/beta/api/subscription_delete" />
+      </Item>
+    </Item>
+    <Item text="Excel" url="/ja-jp/api-reference/beta/resources/excel" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+      <Item text="ブック" url="/ja-jp/api-reference/beta/resources/workbook" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="テーブルを一覧表示する" url="/ja-jp/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+        <Item text="ワークシートを一覧表示する" url="/ja-jp/api-reference/beta/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
+        <Item text="名前を一覧表示する" url="/ja-jp/api-reference/beta/api/workbook_list_names" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="ワークシート" url="/ja-jp/api-reference/beta/resources/worksheet" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="ワークシートを追加する" url="/ja-jp/api-reference/beta/api/worksheetcollection_add" SEOKeyword="" SEODescription="" />
+        <Item text="ワークシートを取得する" url="/ja-jp/api-reference/beta/api/worksheet_get" SEOKeyword="" SEODescription="" />
+        <Item text="usedrange を取得する" url="/ja-jp/api-reference/beta/api/worksheet_usedrange" SEOKeyword="" SEODescription="" />
+        <Item text="ワークシートを更新する" url="/ja-jp/api-reference/beta/api/worksheet_update" SEOKeyword="" SEODescription="" />
+        <Item text="セルを取得する" url="/ja-jp/api-reference/beta/api/worksheet_cell" SEOKeyword="" SEODescription="" />
+        <Item text="範囲を取得する" url="/ja-jp/api-reference/beta/api/worksheet_range" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを一覧表示する" url="/ja-jp/api-reference/beta/api/worksheet_list_tables" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを追加する" url="/ja-jp/api-reference/beta/api/worksheet_post_tables" SEOKeyword="" SEODescription="" />
+        <Item text="グラフを一覧表示する" url="/ja-jp/api-reference/beta/api/worksheet_list_charts" SEOKeyword="" SEODescription="" />
+        <Item text="グラフを追加する" url="/ja-jp/api-reference/beta/api/worksheet_post_charts" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="範囲" url="/ja-jp/api-reference/beta/resources/range" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="範囲を取得する" url="/ja-jp/api-reference/beta/api/range_get" SEOKeyword="" SEODescription="" />
+        <Item text="結合する" url="/ja-jp/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
+        <Item text="結合を解除する" url="/ja-jp/api-reference/beta/api/range_unmerge" SEOKeyword="" SEODescription="" />
+        <Item text="解除する" url="/ja-jp/api-reference/beta/api/range_clear" SEOKeyword="" SEODescription="" />
+        <Item text="削除する" url="/ja-jp/api-reference/beta/api/range_delete" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="テーブル" url="/ja-jp/api-reference/beta/resources/table" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="テーブルの追加" url="/ja-jp/api-reference/beta/api/tablecollection_add" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを取得する" url="/ja-jp/api-reference/beta/api/table_get" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを更新する" url="/ja-jp/api-reference/beta/api/table_update" SEOKeyword="" SEODescription="" />
+        <Item text="範囲を取得する" url="/ja-jp/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
+        <Item text="行を一覧表示する" url="/ja-jp/api-reference/beta/api/table_list_rows" SEOKeyword="" SEODescription="" />
+        <Item text="列を一覧表示する" url="/ja-jp/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="グラフ" url="/ja-jp/api-reference/beta/resources/chart" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="グラフを取得する" url="/ja-jp/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
+        <Item text="グラフの画像を取得する" url="/ja-jp/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
+        <Item text="データをリセットする" url="/ja-jp/api-reference/beta/api/chart_setdata" SEOKeyword="" SEODescription="" />
+        <Item text="位置データを設定する" url="/ja-jp/api-reference/beta/api/chart_setposition" SEOKeyword="" SEODescription="" />
+        <Item text="グラフを更新する" url="/ja-jp/api-reference/beta/api/chart_update" SEOKeyword="" SEODescription="" />
+      </Item>
+      <Item text="nameditem" url="/ja-jp/api-reference/beta/resources/nameditem" SEOKeyword="Excel API、Microsoft Graph API、Excel API" SEODescription="">
+        <Item text="nameditem を一覧表示する" url="/ja-jp/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
+        <Item text="リストの範囲" url="/ja-jp/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
+      </Item>
+    </Item>
+    <Item text="OneDrive" url="/ja-jp/api-reference/beta/resources/drive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="">
+      <Item text="ドライブ" url="/ja-jp/api-reference/beta/resources/drive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="ドライブを取得する" url="/ja-jp/api-reference/beta/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="子を一覧表示する" url="/ja-jp/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="最近使ったファイル" url="/ja-jp/api-reference/beta/api/drive_recent" SEOKeyword="最近使ったファイル、Microsoft Graph API、ドライブ API" SEODescription="最近使ったファイルを取得する。" />
+        <Item text="自分と共有" url="/ja-jp/api-reference/beta/api/drive_sharedwithme" SEOKeyword="共有アイテムのファイル、Microsoft Graph API、ドライブ API" SEODescription="共有アイテムのファイルを取得する。" />
+        <Item text="特殊なフォルダー" url="/ja-jp/api-reference/beta/api/drive_special" SEOKeyword="特殊なフォルダー、Microsoft Graph API、ドライブ API" SEODescription="特殊なフォルダーを取得する。" />
+      </Item>
+      <Item text="driveitem" url="/ja-jp/api-reference/beta/resources/driveitem" SEOKeyword="項目 API、Microsoft Graph API、項目 API" SEODescription="項目リソースは、ファイルやフォルダーと同様に、ドライブに含まれる項目を表します。">
+        <Item text="子を一覧表示する" url="/ja-jp/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="項目を取得する" url="/ja-jp/api-reference/beta/api/item_get" SEOKeyword="項目を取得する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティと関係を取得します。" />
+        <Item text="項目を作成する" url="/ja-jp/api-reference/beta/api/item_post_children" SEOKeyword="子を作成する、Microsoft Graph API、OneDrive Drive API" SEODescription="この API を使用して、新しい子を作成します。" />
+        <Item text="項目を更新する" url="/ja-jp/api-reference/beta/api/item_update" SEOKeyword="項目を更新する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティを更新します。" />
+        <Item text="項目を削除する" url="/ja-jp/api-reference/beta/api/item_delete" SEOKeyword="項目を削除する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目を削除します。" />
+        <Item text="項目を移動する" url="/ja-jp/api-reference/beta/api/item_move" SEOKeyword="項目を移動する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目をコピーする" url="/ja-jp/api-reference/v1.0/api/item_copy" SEOKeyword="項目をコピーする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目をダウンロードする" url="/ja-jp/api-reference/beta/api/item_downloadcontent" SEOKeyword="項目をダウンロードする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目をアップロードする" url="/ja-jp/api-reference/beta/api/item_uploadcontent" SEOKeyword="項目をアップロードする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目を検索する" url="/ja-jp/api-reference/beta/api/item_search" SEOKeyword="項目を検索する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="共有リンクを作成する" url="/ja-jp/api-reference/beta/api/item_createlink" SEOKeyword="リンク項目を作成する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="アクセス許可を取得する" url="/ja-jp/api-reference/beta/api/permission_get" SEOKeyword="アクセス許可を取得する、Microsoft Graph API、アクセス許可 API" SEODescription="アクセス許可オブジェクトのプロパティと関係を取得します。" />
+        <Item text="アクセス許可を更新する" url="/ja-jp/api-reference/beta/api/permission_update" SEOKeyword="アクセス許可を更新する、Microsoft Graph API、アクセス許可 API" SEODescription="アクセス許可オブジェクトのプロパティを更新します。" />
+        <Item text="アクセス許可を削除する" url="/ja-jp/api-reference/beta/api/permission_delete" SEOKeyword="アクセス許可を削除する、Microsoft Graph API、permission API" SEODescription="アクセス許可を削除します。" />
+        <Item text="thumbnailSet を取得する" url="/ja-jp/api-reference/beta/api/thumbnailset_get" SEOKeyword="thumbnailSet を取得する、Microsoft Graph API、thumbnailset API" SEODescription="" />
+        <Item text="変更履歴の記録" url="/ja-jp/api-reference/v1.0/api/item_delta" SEOKeyword="変更履歴の記録、Microsoft Graph API" SEODescription="" />
+        <Item text="アクセス許可を追加する" url="/ja-jp/api-reference/v1.0/api/item_invite" SEOKeyword="アクセス許可を追加する、Microsoft Graph API" SEODescription="" />
+      </Item>
+    </Item>
+    <Item text="Outlook メール" url="/ja-jp/api-reference/beta/resources/message" SEOKeyword="ユーザーのメール、Microsoft Graph API、ユーザー API" SEODescription="">
+      <Item text="message" url="/ja-jp/api-reference/beta/resources/message" SEOKeyword="ユーザーのメール、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="メッセージを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_messages" SEOKeyword="メッセージを一覧表示する、Microsoft Graph API、Users API" SEODescription="メッセージ オブジェクトのリストを取得します。" />
+        <Item text="メッセージを作成する" url="/ja-jp/api-reference/beta/api/user_post_messages" SEOKeyword="メッセージを作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しいメッセージを作成します。" />
+        <Item text="メッセージを取得する" url="/ja-jp/api-reference/beta/api/message_get" SEOKeyword="メッセージを取得する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="メッセージを更新する" url="/ja-jp/api-reference/beta/api/message_update" SEOKeyword="メッセージを更新する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージ オブジェクトのプロパティを更新します。" />
+        <Item text="メッセージを削除する" url="/ja-jp/api-reference/beta/api/message_delete" SEOKeyword="メッセージを削除する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージを削除します。" />
+        <Item text="メッセージを送信する" url="/ja-jp/api-reference/beta/api/message_send" SEOKeyword="メッセージを送信する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="メッセージをコピーする" url="/ja-jp/api-reference/beta/api/message_copy" SEOKeyword="メッセージをコピーする、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="メッセージを移動する" url="/ja-jp/api-reference/beta/api/message_move" SEOKeyword="メッセージを移動する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="メッセージの返信を作成する" url="/ja-jp/api-reference/beta/api/message_createreply" SEOKeyword="メッセージの返信を作成する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="メッセージに返信する" url="/ja-jp/api-reference/beta/api/message_reply" SEOKeyword="メッセージに返信する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="全員にメッセージの返信を作成する" url="/ja-jp/api-reference/beta/api/message_createreplyall" SEOKeyword="全員にメッセージの返信を作成する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="メッセージを全員に返信する" url="/ja-jp/api-reference/beta/api/message_replyall" SEOKeyword="メッセージを全員に返信する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="転送メッセージを作成する" url="/ja-jp/api-reference/beta/api/message_createforward" SEOKeyword="転送メッセージを作成する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="メッセージを転送する" url="/ja-jp/api-reference/beta/api/message_forward" SEOKeyword="メッセージを転送する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
+        <Item text="メールを送信する" url="/ja-jp/api-reference/beta/api/user_sendmail" SEOKeyword="ユーザー: sendMail、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="自動応答の設定を取得する" url="/ja-jp/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="ユーザー: 自動応答の設定を取得する、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="自動応答の設定を更新する" url="/ja-jp/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="ユーザー: 自動応答の設定を更新する、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/beta/api/message_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Mail API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/beta/api/message_post_attachments" SEOKeyword="添付ファイルを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="データ拡張機能を作成する" url="/ja-jp/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="データ拡張機能を作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を作成します。" />
+        <Item text="データ拡張機能を取得する" url="/ja-jp/api-reference/beta/api/opentypeextension_get" SEOKeyword="データ拡張機能を取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を取得します。" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つメッセージを取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つメッセージを取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+      <Item text="優先受信トレイ" url="/ja-jp/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="">
+        <Item text="オーバーライドを作成する" url="/ja-jp/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを作成します。" />
+        <Item text="オーバーライドを一覧表示する" url="/ja-jp/api-reference/beta/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを一覧表示します。" />
+        <Item text="オーバーライドを更新する" url="/ja-jp/api-reference/beta/api/inferenceclassificationoverride_update" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを更新します。" />
+        <Item text="オーバーライドを削除する" url="/ja-jp/api-reference/beta/api/inferenceclassificationoverride_delete" SEOKeyword="Microsoft Graph、優先受信トレイ" SEODescription="SMTP アドレスで示される送信者のオーバーライドを削除します。" />
+      </Item>
+      <Item text="メール フォルダー" url="/ja-jp/api-reference/beta/resources/mailfolder" SEOKeyword="mailfolder API、Microsoft Graph API、mailfolder API" SEODescription="">
+        <Item text="メール フォルダーを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_mailfolders" SEOKeyword="mailFolders を一覧表示する、Microsoft Graph API、Users API" SEODescription="mailfolder オブジェクトのリストを取得します。" />
+        <Item text="メール フォルダーを作成する" url="/ja-jp/api-reference/beta/api/user_post_mailfolders" SEOKeyword="MailFolder を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい MailFolder を作成します。" />
+        <Item text="メール フォルダーを取得する" url="/ja-jp/api-reference/beta/api/mailfolder_get" SEOKeyword="mailFolder を取得する、Microsoft Graph API、Outlook Mail API" SEODescription="mailfolder オブジェクトのプロパティと関係を取得します。" />
+        <Item text="メール フォルダーを更新する" url="/ja-jp/api-reference/beta/api/mailfolder_update" SEOKeyword="mailfolder を更新する、Microsoft Graph API、Outlook Mail API" SEODescription="mailfolder オブジェクトのプロパティを更新します。" />
+        <Item text="メール フォルダーを削除する" url="/ja-jp/api-reference/beta/api/mailfolder_delete" SEOKeyword="mailFolder を削除する、Microsoft Graph API、Outlook Mail API" SEODescription="mailFolder を削除します。" />
+        <Item text="メール フォルダーをコピーする" url="/ja-jp/api-reference/beta/api/mailfolder_copy" SEOKeyword="mailFolder: copy、Microsoft Graph API、mailfolder API" SEODescription="" />
+        <Item text="メール フォルダーを移動する" url="/ja-jp/api-reference/beta/api/mailfolder_move" SEOKeyword="mailFolder: move、Microsoft Graph API、mailfolder API" SEODescription="" />
+        <Item text="フォルダー内のメッセージを一覧表示する" url="/ja-jp/api-reference/beta/api/mailfolder_list_messages" SEOKeyword="メッセージを一覧表示する、Microsoft Graph API、Outlook Mail API" SEODescription="メッセージ オブジェクトのリストを取得します。" />
+        <Item text="フォルダーにメッセージを作成する" url="/ja-jp/api-reference/beta/api/mailfolder_post_messages" SEOKeyword="フォルダーにメッセージを作成する、Microsoft Graph API、Outlook Mail API" SEODescription="この API を使用して、新しいメッセージを作成します。" />
+        <Item text="子フォルダーを一覧表示する" url="/ja-jp/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="childFolders を一覧表示する、Microsoft Graph API、Outlook Mail API" SEODescription="mailfolder オブジェクトのリストを取得します。" />
+        <Item text="メールの子フォルダーを作成する" url="/ja-jp/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="mailFolder を作成する、Microsoft Graph API、Outlook Mail API" SEODescription="この API を使用して、新しい MailFolder を作成します。" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つフォルダーを取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つフォルダーを取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/beta/resources/attachment" SEOKeyword="添付ファイル API、Microsoft Graph API、添付ファイル API" SEODescription="">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/attachment_get" SEOKeyword="添付ファイルを取得する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイル オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/beta/resources/fileattachment" SEOKeyword="fileattachment API、Microsoft Graph API、fileattachment API" SEODescription="メッセージまたはイベントに添付されたファイル (テキスト ファイルや Word 文書など) です。ContentBytes プロパティには、base64 でエンコードされたファイルの内容が含まれています。">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/fileattachment_get" SEOKeyword="fileAttachment を取得する、Microsoft Graph API、fileattachment API" SEODescription="fileattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="項目の添付ファイル" url="/ja-jp/api-reference/beta/resources/itemattachment" SEOKeyword="itemattachment API、Microsoft Graph API、itemattachment API" SEODescription="別のメッセージまたはイベントに添付されたメッセージまたはイベントです。">
+        <Item text="項目の添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/itemattachment_get" SEOKeyword="itemAttachment を取得する、Microsoft Graph API、itemattachment API" SEODescription="itemattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="項目の添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイルの参照" url="/ja-jp/api-reference/beta/resources/referenceattachment" SEOKeyword="referenceattachment API、Microsoft Graph API、referenceattachment API" SEODescription="">
+        <Item text="添付ファイルの参照を取得する" url="/ja-jp/api-reference/beta/api/referenceattachment_get" SEOKeyword="referenceAttachment を取得する、Microsoft Graph API、referenceattachment API" SEODescription="referenceattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルの参照を削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+    </Item>
+    <Item text="Outlook の予定表" url="/ja-jp/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API、Microsoft Graph API、Outlook Calendar API" SEODescription="イベントのコンテナーである予定表です。">
+      <Item text="event" url="/ja-jp/api-reference/beta/resources/event" SEOKeyword="ユーザーの予定表、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="イベントを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを作成する" url="/ja-jp/api-reference/beta/api/user_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+        <Item text="イベントを取得する" url="/ja-jp/api-reference/beta/api/event_get" SEOKeyword="イベントを取得する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのプロパティと関係を取得します。" />
+        <Item text="イベントを更新する" url="/ja-jp/api-reference/beta/api/event_update" SEOKeyword="イベントを更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのプロパティを更新します。" />
+        <Item text="イベントを削除する" url="/ja-jp/api-reference/beta/api/event_delete" SEOKeyword="イベントを削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベントを削除します。" />
+        <Item text="イベントをキャンセルする" url="/ja-jp/api-reference/beta/api/event_cancel" SEOKeyword="イベントをキャンセルする、Microsoft Graph API、Outlook Calendar API" SEODescription="イベントをキャンセルします。" />
+        <Item text="イベントを承認する" url="/ja-jp/api-reference/beta/api/event_accept" SEOKeyword="イベント、Microsoft グラフ API、Outlook の予定表の API を承認する" SEODescription="" />
+        <Item text="仮承諾" url="/ja-jp/api-reference/beta/api/event_tentativelyaccept" SEOKeyword="イベントevent: tentativelyAccept、Microsoft Graph API、イベント API" SEODescription="" />
+        <Item text="イベントを辞退する" url="/ja-jp/api-reference/beta/api/event_decline" SEOKeyword="イベント: 辞退、Microsoft Graph API、イベント API" SEODescription="" />
+        <Item text="通知を消す" url="/ja-jp/api-reference/beta/api/event_dismissreminder" SEOKeyword="イベント: dismissReminder、Microsoft Graph API、イベント API" SEODescription="" />
+        <Item text="アラームを再通知する" url="/ja-jp/api-reference/beta/api/event_snoozereminder" SEOKeyword="イベント: snoozeReminder、Microsoft Graph API、イベント API" SEODescription="" />
+        <Item text="イベント インスタンスを一覧表示する" url="/ja-jp/api-reference/beta/api/event_list_instances" SEOKeyword="イベント インスタンスを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/beta/api/event_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/beta/api/event_post_attachments" SEOKeyword="添付ファイルを作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="データ拡張機能を作成する" url="/ja-jp/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="データ拡張機能を作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を作成します。" />
+        <Item text="データ拡張機能を取得する" url="/ja-jp/api-reference/beta/api/opentypeextension_get" SEOKeyword="データ拡張機能を取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を取得します。" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つイベントを取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つイベントを取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+      <Item text="イベント メッセージ" url="/ja-jp/api-reference/beta/resources/eventmessage" SEOKeyword="eventmessage API、Microsoft Graph API、eventmessage API" SEODescription="会議出席依頼、会議中止メッセージ、会議承諾メッセージ、会議仮承諾メッセージ、または会議辞退メッセージを表すメッセージです。">
+        <Item text="イベント メッセージを取得する" url="/ja-jp/api-reference/beta/api/eventmessage_get" SEOKeyword="イベント メッセージを取得する、Microsoft Graph API、Outlook Calendar API" SEODescription="eventmessage オブジェクトのプロパティと関係を取得します。" />
+        <Item text="イベント メッセージを更新する" url="/ja-jp/api-reference/beta/api/eventmessage_update" SEOKeyword="イベント メッセージを更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="eventmessage オブジェクトのプロパティを更新します。" />
+        <Item text="イベント メッセージを削除する" url="/ja-jp/api-reference/beta/api/eventmessage_delete" SEOKeyword="イベント メッセージを削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="eventMessage を削除します。" />
+        <Item text="イベント メッセージを送信する" url="/ja-jp/api-reference/beta/api/message_send" SEOKeyword="イベント メッセージを送信する、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="イベント メッセージをコピーする" url="/ja-jp/api-reference/beta/api/message_copy" SEOKeyword="イベント メッセージをコピーする、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="イベント メッセージを移動する" url="/ja-jp/api-reference/beta/api/message_move" SEOKeyword="イベント メッセージを移動する、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="返信を作成する" url="/ja-jp/api-reference/beta/api/message_createreply" SEOKeyword="返信を作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="イベント メッセージに返信する" url="/ja-jp/api-reference/beta/api/message_reply" SEOKeyword="イベント メッセージに返信する、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="ReplyAll を作成する" url="/ja-jp/api-reference/beta/api/message_createreplyall" SEOKeyword="ReplyAll を作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="ReplyAll イベント メッセージ" url="/ja-jp/api-reference/beta/api/message_replyall" SEOKeyword="ReplyAll イベント メッセージ、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="転送を作成する" url="/ja-jp/api-reference/beta/api/message_createforward" SEOKeyword="転送を作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="イベント メッセージを転送する" url="/ja-jp/api-reference/beta/api/message_forward" SEOKeyword="イベント メッセージを転送する、Microsoft Graph API、Outlook Calendar API" SEODescription="" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/beta/api/eventmessage_post_attachments" SEOKeyword="添付ファイルを作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/beta/api/eventmessage_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="データ拡張機能を作成する" url="/ja-jp/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="データ拡張機能を作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を作成します。" />
+        <Item text="データ拡張機能を取得する" url="/ja-jp/api-reference/beta/api/opentypeextension_get" SEOKeyword="データ拡張機能を取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を取得します。" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つメッセージを取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つメッセージを取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+      <Item text="予定表" url="/ja-jp/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API、Microsoft Graph API、Outlook Calendar API" SEODescription="イベントのコンテナーである予定表です。">
+        <Item text="予定表を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_calendars" SEOKeyword="予定表を一覧表示する、Microsoft Graph API、Users API" SEODescription="予定表オブジェクトのリストを取得します。" />
+        <Item text="予定表を作成する" url="/ja-jp/api-reference/beta/api/user_post_calendars" SEOKeyword="予定表を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい予定表を作成します。" />
+        <Item text="予定表を取得する" url="/ja-jp/api-reference/beta/api/calendar_get" SEOKeyword="予定表を取得する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表オブジェクトのプロパティと関係を取得します。" />
+        <Item text="予定表を更新する" url="/ja-jp/api-reference/beta/api/calendar_update" SEOKeyword="予定表を更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表オブジェクトのプロパティを更新します。" />
+        <Item text="予定表を削除する" url="/ja-jp/api-reference/beta/api/calendar_delete" SEOKeyword="予定表を削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表を削除します。" />
+        <Item text="予定表ビューを一覧表示する" url="/ja-jp/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="予定表ビューを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを一覧表示する" url="/ja-jp/api-reference/beta/api/calendar_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="会議の日時を検索する" url="/ja-jp/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="会議の日時、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを作成する" url="/ja-jp/api-reference/beta/api/calendar_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、予定表 API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+        <Item text="通知ビュー" url="/ja-jp/api-reference/beta/api/user_reminderview" SEOKeyword="ユーザー: reminderView、Microsoft Graph API、ユーザー API" SEODescription="" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つ予定表を取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つ予定表を取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+      <Item text="予定表の表示" url="/ja-jp/api-reference/beta/api/user_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。">
+        <Item text="予定表ビューを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="通知ビュー" url="/ja-jp/api-reference/beta/api/user_reminderview" SEOKeyword="ユーザー: reminderView、Microsoft Graph API、ユーザー API" SEODescription="" />
+      </Item>
+      <Item text="予定表グループ" url="/ja-jp/api-reference/beta/resources/calendargroup" SEOKeyword="calendargroup API、Microsoft Graph API、calendargroup API" SEODescription="予定表のグループです。">
+        <Item text="予定表グループを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_calendargroups" SEOKeyword="calendarGroups を一覧表示する、Microsoft Graph API、Users API" SEODescription="calendargroup オブジェクトのリストを取得します。" />
+        <Item text="予定表グループを作成する" url="/ja-jp/api-reference/beta/api/user_post_calendargroups" SEOKeyword="CalendarGroup を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい CalendarGroup を作成します。" />
+        <Item text="予定表グループを取得する" url="/ja-jp/api-reference/beta/api/calendargroup_get" SEOKeyword="calendarGroup を取得する、Microsoft Graph API、Outlook Calendar API" SEODescription="calendargroup オブジェクトのプロパティと関係を取得します。" />
+        <Item text="予定表グループを更新する" url="/ja-jp/api-reference/beta/api/calendargroup_update" SEOKeyword="予定表グループを更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="calendargroup オブジェクトのプロパティを更新します。" />
+        <Item text="予定表グループを削除する" url="/ja-jp/api-reference/beta/api/calendargroup_delete" SEOKeyword="calendarGroup を削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="calendarGroup を削除します。" />
+        <Item text="予定表グループ内の予定表を一覧表示する" url="/ja-jp/api-reference/beta/api/calendargroup_list_calendars" SEOKeyword="予定表を一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表オブジェクトのリストを取得します。" />
+        <Item text="予定表グループで予定表を作成する" url="/ja-jp/api-reference/beta/api/calendargroup_post_calendars" SEOKeyword="予定表グループを作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="この API を使用して、新しい予定表を作成します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/beta/resources/attachment" SEOKeyword="添付ファイル API、Microsoft Graph API、添付ファイル API" SEODescription="">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/attachment_get" SEOKeyword="添付ファイルを取得する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイル オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/beta/resources/fileattachment" SEOKeyword="fileattachment API、Microsoft Graph API、fileattachment API" SEODescription="メッセージまたはイベントに添付されたファイル (テキスト ファイルや Word 文書など) です。ContentBytes プロパティには、base64 でエンコードされたファイルの内容が含まれています。">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/fileattachment_get" SEOKeyword="fileAttachment を取得する、Microsoft Graph API、fileattachment API" SEODescription="fileattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="項目の添付ファイル" url="/ja-jp/api-reference/beta/resources/itemattachment" SEOKeyword="itemattachment API、Microsoft Graph API、itemattachment API" SEODescription="別のメッセージまたはイベントに添付されたメッセージまたはイベントです。">
+        <Item text="項目の添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/itemattachment_get" SEOKeyword="itemAttachment を取得する、Microsoft Graph API、itemattachment API" SEODescription="itemattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="項目の添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイルの参照" url="/ja-jp/api-reference/beta/resources/referenceattachment" SEOKeyword="referenceattachment API、Microsoft Graph API、referenceattachment API" SEODescription="">
+        <Item text="添付ファイルの参照を取得する" url="/ja-jp/api-reference/beta/api/referenceattachment_get" SEOKeyword="referenceAttachment を取得する、Microsoft Graph API、referenceattachment API" SEODescription="referenceattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルの参照を削除する" url="/ja-jp/api-reference/v1.0/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+    </Item>
+    <Item text="個人用連絡先" url="/ja-jp/api-reference/beta/resources/contact" SEOKeyword="ユーザーの連絡先、Microsoft Graph API、ユーザー API" SEODescription="">
+      <Item text="連絡先" url="/ja-jp/api-reference/beta/resources/contact" SEOKeyword="ユーザーの連絡先、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="連絡先を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_contacts" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、Users API" SEODescription="連絡先オブジェクトのリストを取得します。" />
+        <Item text="連絡先を作成する" url="/ja-jp/api-reference/beta/api/user_post_contacts" SEOKeyword="連絡先を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい連絡先を作成します。" />
+        <Item text="連絡先を取得する" url="/ja-jp/api-reference/beta/api/contact_get" SEOKeyword="連絡先を取得する、Microsoft Graph API、連絡先 API" SEODescription="連絡先オブジェクトのプロパティと関係を取得します。" />
+        <Item text="連絡先を更新する" url="/ja-jp/api-reference/beta/api/contact_update" SEOKeyword="連絡先を更新する、Microsoft Graph API、連絡先 API" SEODescription="連絡先オブジェクトのプロパティを更新します。" />
+        <Item text="連絡先を削除する" url="/ja-jp/api-reference/beta/api/contact_delete" SEOKeyword="連絡先を削除する、Microsoft Graph API、連絡先 API" SEODescription="連絡先を削除します。" />
+        <Item text="データ拡張機能を作成する" url="/ja-jp/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="データ拡張機能を作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を作成します。" />
+        <Item text="データ拡張機能を取得する" url="/ja-jp/api-reference/beta/api/opentypeextension_get" SEOKeyword="データ拡張機能を取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を取得します。" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つ連絡先を取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つ連絡先を取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+      <Item text="連絡先フォルダー" url="/ja-jp/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API、Microsoft Graph API、contactfolder API" SEODescription="連絡先が格納されたフォルダーです。">
+        <Item text="連絡先フォルダーを一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_contactfolders" SEOKeyword="contactFolders を一覧表示する、Microsoft Graph API、Users API" SEODescription="contactfolder オブジェクトのリストを取得します。" />
+        <Item text="連絡先フォルダーを作成する" url="/ja-jp/api-reference/beta/api/user_post_contactfolders" SEOKeyword="ContactFolder を作成する、Microsoft Graph API、Users API" SEODescription="この API を使用して、新しい ContactFolder を作成します。" />
+        <Item text="連絡先フォルダーを取得する" url="/ja-jp/api-reference/beta/api/contactfolder_get" SEOKeyword="contactFolder を取得する、Microsoft Graph API、contactfolder API" SEODescription="contactfolder オブジェクトのプロパティと関係を取得します。" />
+        <Item text="連絡先フォルダーを更新する" url="/ja-jp/api-reference/beta/api/contactfolder_update" SEOKeyword="contactfolder を更新する、Microsoft Graph API、contactfolder API" SEODescription="contactfolder オブジェクトのプロパティを更新します。" />
+        <Item text="連絡先フォルダーを削除する" url="/ja-jp/api-reference/beta/api/contactfolder_delete" SEOKeyword="contactFolder を削除する、Microsoft Graph API、contactfolder API" SEODescription="contactFolder を削除します。" />
+        <Item text="子フォルダーを一覧表示する" url="/ja-jp/api-reference/beta/api/contactfolder_list_childfolders" SEOKeyword="childFolders を一覧表示する、Microsoft Graph API、contactfolder API" SEODescription="contactfolder オブジェクトのリストを取得します。" />
+        <Item text="子フォルダーを作成する" url="/ja-jp/api-reference/beta/api/contactfolder_post_childfolders" SEOKeyword="ContactFolder を作成する、Microsoft Graph API、contactfolder API" SEODescription="この API を使用して、新しい ContactFolder を作成します。" />
+        <Item text="フォルダー内の連絡先を一覧表示する" url="/ja-jp/api-reference/beta/api/contactfolder_list_contacts" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、contactfolder API" SEODescription="連絡先オブジェクトのリストを取得します。" />
+        <Item text="フォルダーに連絡先を作成する" url="/ja-jp/api-reference/beta/api/contactfolder_post_contacts" SEOKeyword="連絡先を作成する、Microsoft Graph API、contactfolder API" SEODescription="この API を使用して新しい連絡先を作成します。" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つフォルダーを取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つフォルダーを取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+    </Item>
+    <Item text="グループ" url="/ja-jp/api-reference/beta/resources/group" SEOKeyword="Groups API、Microsoft Graph API、Groups API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
+      <Item text="グループ" url="/ja-jp/api-reference/beta/resources/group" SEOKeyword="Groups API、Microsoft Graph API、Groups API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
+        <Item text="グループを一覧表示する" url="/ja-jp/api-reference/beta/api/group_list" SEOKeyword="グループを一覧表示する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのリストを取得します。" />
+        <Item text="グループの作成" url="/ja-jp/api-reference/beta/api/group_post_groups" />
+        <Item text="グループを取得する" url="/ja-jp/api-reference/beta/api/group_get" SEOKeyword="グループを取得する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="グループを更新する" url="/ja-jp/api-reference/beta/api/group_update" SEOKeyword="グループを更新する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティを更新します。" />
+        <Item text="グループを削除する" url="/ja-jp/api-reference/beta/api/group_delete" SEOKeyword="グループを削除する、Microsoft Graph API、Groups API" SEODescription="グループを削除します。" />
+        <Item text="所有者を一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_owners" SEOKeyword="所有者を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="所有者を追加する" url="/ja-jp/api-reference/beta/api/group_post_owners" SEOKeyword="所有者を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい所有者を作成します。" />
+        <Item text="メンバーを一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_members" SEOKeyword="メンバーを一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバーを追加する" url="/ja-jp/api-reference/beta/api/group_post_members" SEOKeyword="メンバーを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいメンバーを作成します。" />
+        <Item text="メンバーを削除する" url="/ja-jp/api-reference/beta/api/group_delete_members" SEOKeyword="メンバーを削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいメンバーを削除します。" />
+        <Item text="memberOf を一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバー オブジェクトを取得する" url="/ja-jp/api-reference/beta/api/group_getmemberobjects" SEOKeyword="グループ: getMemberObjects、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="メンバー グループを取得する" url="/ja-jp/api-reference/beta/api/group_getmembergroups" SEOKeyword="グループ: getMemberGroups、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="メンバー グループをチェックする" url="/ja-jp/api-reference/beta/api/group_checkmembergroups" SEOKeyword="グループ: checkMemberGroups、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="お気に入りに追加" url="/ja-jp/api-reference/beta/api/group_addfavorite" SEOKeyword="グループ: addFavorite、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="お気に入りを削除する" url="/ja-jp/api-reference/beta/api/group_removefavorite" SEOKeyword="グループ: removeFavorite、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="メールで購読する" url="/ja-jp/api-reference/beta/api/group_subscribebymail" SEOKeyword="グループ: subscribeByMail、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="メールでの購読を中止する" url="/ja-jp/api-reference/beta/api/group_unsubscribebymail" SEOKeyword="グループ: unsubscribeByMail、Microsoft Graph API、グループ API" SEODescription="" />
+        <Item text="見えないカウントをリセットする" url="/ja-jp/api-reference/beta/api/group_resetunseencount" SEOKeyword="グループ: resetUnseenCount、Microsoft Graph API、グループ API" SEODescription="" />
+      </Item>
+      <Item text="写真" url="/ja-jp/api-reference/beta/resources/profilephoto" SEOKeyword="ユーザーの人物、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="写真を取得する" url="/ja-jp/api-reference/v1.0/api/profilephoto_get" />
+        <Item text="写真を更新する" url="/ja-jp/api-reference/v1.0/api/profilephoto_update" />
+      </Item>
+      <Item text="会話" url="/ja-jp/api-reference/beta/resources/conversation" SEOKeyword="会話 API、Microsoft Graph API、会話 API" SEODescription="">
+        <Item text="会話を一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_conversations" SEOKeyword="会話を一覧表示する、Microsoft Graph API、Groups API" SEODescription="会話オブジェクトのリストを取得します。" />
+        <Item text="会話を作成する" url="/ja-jp/api-reference/beta/api/group_post_conversations" SEOKeyword="会話を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい会話を作成します。" />
+        <Item text="グループ会話を取得する" url="/ja-jp/api-reference/beta/api/conversation_get" SEOKeyword="グループ会話を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話オブジェクトのプロパティと関係を取得します。" />
+        <Item text="グループ会話を削除する" url="/ja-jp/api-reference/beta/api/conversation_delete" SEOKeyword="グループ会話を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話を削除します。" />
+        <Item text="会話スレッドを一覧表示する" url="/ja-jp/api-reference/beta/api/conversation_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Groups API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
+        <Item text="会話スレッドを作成する" url="/ja-jp/api-reference/beta/api/conversation_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
+        <Item text="承認済み送信者を一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_acceptedsenders" SEOKeyword="acceptedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="承認済み送信者を作成する" url="/ja-jp/api-reference/beta/api/group_post_acceptedsenders" SEOKeyword="acceptedSender を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい acceptedSender を作成します。" />
+        <Item text="承認済み送信者を削除する" url="/ja-jp/api-reference/beta/api/group_delete_acceptedsenders" SEOKeyword="acceptedSender を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい acceptedSender を削除します。" />
+        <Item text="拒否する送信者を一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_rejectedsenders" SEOKeyword="rejectedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="rejectedSenders のリストを取得します。" />
+        <Item text="拒否する送信元を作成する" url="/ja-jp/api-reference/beta/api/group_post_rejectedsenders" SEOKeyword="rejectedSender を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい rejectedSender を作成します。" />
+        <Item text="拒否する送信元を削除する" url="/ja-jp/api-reference/beta/api/group_delete_rejectedsenders" SEOKeyword="rejectedSender を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい rejectedSender を削除します。" />
+      </Item>
+      <Item text="会話スレッド" url="/ja-jp/api-reference/beta/resources/conversationthread" SEOKeyword="conversationthread API、Microsoft Graph API、conversationthread API" SEODescription="">
+        <Item text="スレッドを一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
+        <Item text="スレッドを作成する" url="/ja-jp/api-reference/beta/api/group_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Outlook 会話 API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
+        <Item text="会話スレッドを取得する" url="/ja-jp/api-reference/beta/api/conversationthread_get" SEOKeyword="conversationThread を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティと関係を取得します。" />
+        <Item text="会話スレッドを更新する" url="/ja-jp/api-reference/beta/api/conversationthread_update" SEOKeyword="conversationthread を更新する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティを更新します。" />
+        <Item text="会話スレッドを削除する" url="/ja-jp/api-reference/beta/api/conversationthread_delete" SEOKeyword="conversationThread を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationThread を削除します。" />
+        <Item text="会話のスレッドに返信する" url="/ja-jp/api-reference/beta/api/conversationthread_reply" SEOKeyword="conversationThread: 返信、Microsoft Graph API、conversationthread API" SEODescription="" />
+      </Item>
+      <Item text="投稿" url="/ja-jp/api-reference/beta/resources/post" SEOKeyword="投稿 API、Microsoft Graph API、投稿 API" SEODescription="">
+        <Item text="投稿を一覧表示する" url="/ja-jp/api-reference/beta/api/conversationthread_list_posts" SEOKeyword="スレッドの投稿を一覧表示する、Microsoft Graph API、Outlook 会話 API" SEODescription="投稿オブジェクトのリストを取得します。" />
+        <Item text="投稿を取得する" url="/ja-jp/api-reference/beta/api/post_get" SEOKeyword="投稿を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="投稿オブジェクトのプロパティと関係を取得します。" />
+        <Item text="返信を一覧表示する" url="/ja-jp/api-reference/beta/api/post_reply" SEOKeyword="投稿: 応答、Microsoft Graph API、投稿 API" SEODescription="" />
+        <Item text="投稿を転送する" url="/ja-jp/api-reference/beta/api/post_forward" SEOKeyword="投稿: 転送、Microsoft Graph API、投稿 API" SEODescription="" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/beta/api/post_list_attachments" SEOKeyword="添付ファイルの投稿を一覧表示する、Microsoft Graph API、Outlook 会話 API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/beta/api/post_post_attachments" SEOKeyword="投稿の添付ファイルを作成する、Microsoft Graph API、Outlook 会話 API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="データ拡張機能を作成する" url="/ja-jp/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="データ拡張機能を作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を作成します。" />
+        <Item text="データ拡張機能を取得する" url="/ja-jp/api-reference/beta/api/opentypeextension_get" SEOKeyword="データ拡張機能を取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を取得します。" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つ投稿を取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つ投稿を取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/beta/resources/attachment" SEOKeyword="添付ファイル API、Microsoft Graph API、添付ファイル API" SEODescription="">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/attachment_get" SEOKeyword="添付ファイルを取得する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイル オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイル" url="/ja-jp/api-reference/beta/resources/fileattachment" SEOKeyword="fileattachment API、Microsoft Graph API、fileattachment API" SEODescription="メッセージまたはイベントに添付されたファイル (テキスト ファイルや Word 文書など) です。ContentBytes プロパティには、base64 でエンコードされたファイルの内容が含まれています。">
+        <Item text="添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/fileattachment_get" SEOKeyword="fileAttachment を取得する、Microsoft Graph API、fileattachment API" SEODescription="fileattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="項目の添付ファイル" url="/ja-jp/api-reference/beta/resources/itemattachment" SEOKeyword="itemattachment API、Microsoft Graph API、itemattachment API" SEODescription="別のメッセージまたはイベントに添付されたメッセージまたはイベントです。">
+        <Item text="項目の添付ファイルを取得する" url="/ja-jp/api-reference/beta/api/itemattachment_get" SEOKeyword="itemAttachment を取得する、Microsoft Graph API、itemattachment API" SEODescription="itemattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="項目の添付ファイルを削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="添付ファイルの参照" url="/ja-jp/api-reference/beta/resources/referenceattachment" SEOKeyword="referenceattachment API、Microsoft Graph API、referenceattachment API" SEODescription="">
+        <Item text="添付ファイルの参照を取得する" url="/ja-jp/api-reference/beta/api/referenceattachment_get" SEOKeyword="referenceAttachment を取得する、Microsoft Graph API、referenceattachment API" SEODescription="referenceattachment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="添付ファイルの参照を削除する" url="/ja-jp/api-reference/beta/api/attachment_delete" SEOKeyword="添付ファイルを削除する、Microsoft Graph API、添付ファイル API" SEODescription="添付ファイルを削除します。" />
+      </Item>
+      <Item text="予定表" url="/ja-jp/api-reference/beta/resources/event" SEOKeyword="ユーザーの予定表、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="イベントを一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="イベントを作成する" url="/ja-jp/api-reference/beta/api/group_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、グループ API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+        <Item text="予定表ビューを一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを一覧表示する" url="/ja-jp/api-reference/beta/api/event_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
+        <Item text="添付ファイルを作成する" url="/ja-jp/api-reference/beta/api/event_post_attachments" SEOKeyword="添付ファイルを作成する、Microsoft Graph API、Outlook Calendar API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
+        <Item text="データ拡張機能を作成する" url="/ja-jp/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="データ拡張機能を作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を作成します。" />
+        <Item text="データ拡張機能を取得する" url="/ja-jp/api-reference/beta/api/opentypeextension_get" SEOKeyword="データ拡張機能を取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、データ拡張機能を取得します。" />
+        <Item text="単一値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEOKeyword="単一値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値の拡張プロパティを作成します。" />
+        <Item text="単一値のプロパティを持つイベントを取得する" url="/ja-jp/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEOKeyword="単一値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、単一値のプロパティを持つメッセージを取得します。" />
+        <Item text="複数値の拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEOKeyword="複数値の拡張プロパティを作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値の拡張プロパティを作成します。" />
+        <Item text="複数値のプロパティを持つイベントを取得する" url="/ja-jp/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEOKeyword="複数値のプロパティを持つメッセージを取得する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、複数値のプロパティを持つメッセージを取得します。" />
+      </Item>
+      <Item text="ドライブ" url="/ja-jp/api-reference/beta/resources/drive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="ドライブを取得する" url="/ja-jp/api-reference/beta/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
+        <Item text="子を一覧表示する" url="/ja-jp/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="計画" url="/ja-jp/api-reference/beta/resources/plans" SEOKeyword="グループ予定表、Microsoft Graph API、グループ API" SEODescription="">
+        <Item text="計画を一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_plans" SEOKeyword="計画を一覧表示する、Microsoft Graph API、グループ API" SEODescription="計画オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="メモ" url="/ja-jp/api-reference/beta/resources/notebook" SEOKeyword="ユーザーのメモ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="ノートブックを一覧表示する" url="/ja-jp/api-reference/beta/api/notes_list_notebooks" SEOKeyword="ノートブックを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="notebook(../resources/notebook.md) オブジェクトのリストを取得します。" />
+        <Item text="ノートブックを作成する" url="/ja-jp/api-reference/beta/api/notes_post_notebooks" SEOKeyword="ノートブックを作成する、Microsoft Graph API、ノーツ API" SEODescription="新しい OneNote ノートブックを作成します (../resources/notebook.md)。" />
+      </Item>
+      <Item text="ディレクトリ オブジェクト" url="/ja-jp/api-reference/beta/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="アプリの役割の割り当てを一覧表示する" url="/ja-jp/api-reference/beta/api/group_list_approleassignments" SEOKeyword="appRoleAssignments を一覧表示する、Microsoft Graph API、グループ API" SEODescription="approleassignment オブジェクトのリストを取得します。" />
+        <Item text="アプリケーションの役割の割り当てを作成する" url="/ja-jp/api-reference/beta/api/group_post_approleassignments" SEOKeyword="AppRoleAssignment を作成する、Microsoft Graph API、グループ API" SEODescription="この API を使用して、新しい AppRoleAssignment を作成します。" />
+      </Item>
+    </Item>
+    <Item text="組織の連絡先" url="/ja-jp/api-reference/beta/resources/orgcontact" SEOKeyword="orgcontact API、Microsoft Graph API、orgcontact API" SEODescription="">
+      <Item text="連絡先" url="/ja-jp/api-reference/beta/resources/orgcontact" SEOKeyword="orgcontact API、Microsoft Graph API、orgcontact API" SEODescription="">
+        <Item text="組織の連絡先を一覧表示する" url="/ja-jp/api-reference/beta/api/orgcontact_list" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、組織の連絡先 API" SEODescription="orgcontact オブジェクトのリストを取得します。" />
+        <Item text="組織の連絡先を取得する" url="/ja-jp/api-reference/beta/api/orgcontact_get" SEOKeyword="orgContact を取得する、Microsoft Graph API、Organizational 連絡先 API" SEODescription="orgcontact オブジェクトのプロパティと関係を取得します。" />
+        <Item text="組織の連絡先を更新する" url="/ja-jp/api-reference/beta/api/orgcontact_update" SEOKeyword="orgcontact を更新する、Microsoft Graph API、Organizational contact API" SEODescription="orgcontact オブジェクトのプロパティを更新します。" />
+        <Item text="組織の連絡先を削除する" url="/ja-jp/api-reference/beta/api/orgcontact_delete" SEOKeyword="orgContact を削除する、Microsoft Graph API、Organizational 連絡先 API" SEODescription="orgContact を削除します。" />
+      </Item>
+      <Item text="グループ" url="/ja-jp/api-reference/beta/resources/group" SEOKeyword="Groups API、Microsoft Graph API、Groups API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
+        <Item text="memberOf を一覧表示する" url="/ja-jp/api-reference/beta/api/orgcontact_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、組織の連絡先 API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバー グループを取得する" url="/ja-jp/api-reference/beta/api/orgcontact_getmembergroups" SEOKeyword="orgContact: getMemberGroups、Microsoft Graph API、組織の連絡先 API" SEODescription="" />
+        <Item text="メンバー グループをチェックする" url="/ja-jp/api-reference/beta/api/orgcontact_checkmembergroups" SEOKeyword="orgContact: checkMemberGroups、Microsoft Graph API、Organizational 連絡先 API" SEODescription="" />
+      </Item>
+      <Item text="組織階層" url="/ja-jp/api-reference/beta/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="直属の部下を一覧表示する" url="/ja-jp/api-reference/beta/api/orgcontact_list_directreports" SEOKeyword="directReports を一覧表示する、Microsoft Graph API、組織の連絡先 API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="ディレクトリ オブジェクト" url="/ja-jp/api-reference/beta/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="メンバー オブジェクトを取得する" url="/ja-jp/api-reference/beta/api/orgcontact_getmemberobjects" SEOKeyword="orgContact: getMemberObjects、Microsoft Graph API、組織の連絡先 API" SEODescription="" />
+      </Item>
+    </Item>
+    <Item text="ディレクトリ" url="/ja-jp/api-reference/beta/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
+      <Item text="ディレクトリ オブジェクト" url="/ja-jp/api-reference/beta/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="directoryObject を取得する" url="/ja-jp/api-reference/beta/api/directoryobject_get" SEOKeyword="directoryObject を取得する、Microsoft Graph API、Directory API" SEODescription="directoryobject オブジェクトのプロパティと関係を取得します。" />
+        <Item text="directoryObject を削除する" url="/ja-jp/api-reference/beta/api/directoryobject_delete" SEOKeyword="directoryObject を削除する、Microsoft Graph API、Directory API" SEODescription="directoryObject を削除します。" />
+        <Item text="メンバー オブジェクトを取得する" url="/ja-jp/api-reference/beta/api/directoryObject_getmemberobjects" SEOKeyword="directoryObject: getMemberObjects、Microsoft Graph API、Directory API" SEODescription="" />
+        <Item text="メンバー グループを取得する" url="/ja-jp/api-reference/beta/api/directoryObject_getmembergroups" SEOKeyword="directoryObject: getMemberGroups、Microsoft Graph API、Directory API" SEODescription="" />
+        <Item text="メンバー グループをチェックする" url="/ja-jp/api-reference/beta/api/directoryObject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups、Microsoft Graph API、Directory API" SEODescription="" />
+      </Item>
+      <Item text="ディレクトリ ロール" url="/ja-jp/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API、Microsoft Graph API、directoryrole API" SEODescription="Azure AD ディレクトリ ロールを表します。Azure AD ディレクトリ ロールは、管理者ロールとも呼ばれます。ディレクトリ (管理者) ロールの詳細については、「Azure AD での管理者ロールの割り当て」(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) を参照してください。">
+        <Item text="directoryRoles を一覧表示する" url="/ja-jp/api-reference/beta/api/directoryrole_list" SEOKeyword="directoryRoles を一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのリストを取得します。" />
+        <Item text="DirectoryRole を有効にする" url="/ja-jp/api-reference/beta/api/directoryrole_post_directoryroles" SEOKeyword="DirectoryRole を作成する、Microsoft Graph API、Directory API" SEODescription="この API を使用して、新しい DirectoryRole を作成します。" />
+        <Item text="directoryRole を取得する" url="/ja-jp/api-reference/beta/api/directoryrole_get" SEOKeyword="directoryRole を取得する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのプロパティと関係を取得します。" />
+        <Item text="メンバーを一覧表示する" url="/ja-jp/api-reference/beta/api/directoryrole_list_members" SEOKeyword="メンバーを一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="メンバーを追加する" url="/ja-jp/api-reference/beta/api/directoryrole_post_members" SEOKeyword="メンバーを作成する、Microsoft Graph API、Directory API" SEODescription="この API を使用して、新しいメンバーを作成します。" />
+        <Item text="対象の管理者を一覧表示する" url="/ja-jp/api-reference/beta/api/directoryrole_list_scopedadministrators " SEOKeyword="対象の管理者を一覧表示する、Microsoft Graph API、Directory API" SEODescription="この API を使用して、対象の管理者を一覧表示します。" />
+
+      </Item>
+      <Item text="ディレクトリ ロール テンプレート" url="/ja-jp/api-reference/beta/resources/directoryroletemplate" SEOKeyword="directoryroletemplate API、Microsoft Graph API、directoryroletemplate API" SEODescription="ディレクトリ ロール テンプレートを表します。ディレクトリ ロール テンプレートは、ディレクトリ ロール (DirectoryRole) のプロパティ値を指定します。テナントでアクティブにすることがあるディレクトリの役割ごとに、関連付けられているディレクトリ ロール テンプレート オブジェクトがあります。">
+        <Item text="directoryRoleTemplates を一覧表示する" url="/ja-jp/api-reference/beta/api/directoryroletemplate_list" SEOKeyword="directoryRoleTemplates を一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryroletemplate オブジェクトのリストを取得します。" />
+        <Item text="directoryRoleTemplate を取得する" url="/ja-jp/api-reference/beta/api/directoryroletemplate_get" SEOKeyword="directoryRoleTemplate を取得する、Microsoft Graph API、Directory API" SEODescription="directoryroletemplate オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="ディレクトリ設定" url="/ja-jp/api-reference/beta/resources/directorysetting" SEOKeyword="directorySetting API、Microsoft Graph API、directorysetting API" SEODescription="テナント全体のレベルで、または特定のエンティティのレベルで、エンティティまたは機能の動作を管理します。">
+        <Item text="設定を作成する" url="/ja-jp/api-reference/beta/api/directorysetting_post_settings" SEOKeyword="directorySetting を作成する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのリストを取得します。" />
+        <Item text="設定を取得する" url="/ja-jp/api-reference/beta/api/directorysetting_get" SEOKeyword="directorySetting を取得する、Microsoft Graph API、Directory API" SEODescription="この API を使用して、新しい DirectoryRole を作成します。" />
+        <Item text="設定を一覧表示する" url="/ja-jp/api-reference/beta/api/directorysetting_list" SEOKeyword="directorySetting を一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのプロパティと関係を取得します。" />
+        <Item text="設定を更新する" url="/ja-jp/api-reference/beta/api/directorysetting_update" SEOKeyword="directorySetting を更新する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのプロパティを更新します。" />
+        <Item text="設定を削除する" url="/ja-jp/api-reference/beta/api/directorysetting_delete" SEOKeyword="directorySetting を削除する、Microsoft Graph API、Directory API" SEODescription="directoryRole を削除します。" />
+      </Item>
+      <Item text="ディレクトリ設定テンプレート" url="/ja-jp/api-reference/beta/resources/directorysettingtemplate" SEOKeyword="Directorysettingtemplate API、Microsoft Graph API、directorysettingtemplate API" SEODescription="ディレクトリ ロール テンプレートを表す。ディレクトリ ロール テンプレートは、ディレクトリ ロール (DirectoryRole) のプロパティ値を指定します。テナントでアクティブにすることがあるディレクトリの役割ごとに、関連付けられているディレクトリ ロール テンプレート オブジェクトがあります。">
+        <Item text="directorySettingTemplate を一覧表示する" url="/ja-jp/api-reference/beta/api/directorysettingtemplate_list" SEOKeyword="directorySettingTemplate を一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryroletemplate オブジェクトのリストを取得します。" />
+        <Item text="directorySettingTemplate を取得する" url="/ja-jp/api-reference/beta/api/directorysettingtemplate_get" SEOKeyword="directorySettingTemplate を取得する、Microsoft Graph API、Directory API" SEODescription="directoryroletemplate オブジェクトのプロパティと関係を取得します。" />
+      </Item>
+      <Item text="管理単位" url="/ja-jp/api-reference/beta/resources/administrativeunit" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="管理単位は、ユーザーおよびグループ ディレクトリ オブジェクトの概念上のコンテナーを提供します。管理単位を使用することにより、会社の管理者は管理単位に含まれるかまたは該当するユーザーおよびグループの管理責任を、地域または部署の管理者に委任することができます。">
+        <Item text="管理単位を作成する" url="/ja-jp/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="新しい administrativeUnit を作成するための API。" />
+        <Item text="管理単位を一覧表示する" url="/ja-jp/api-reference/beta/api/administrativeunit_list" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトを一覧表示するための API。" />
+        <Item text="管理単位を取得する" url="/ja-jp/api-reference/beta/api/administrativeunit_get" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトを取得するための API。" />
+        <Item text="管理単位を更新する" url="/ja-jp/api-reference/beta/api/administrativeunit_update" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトを取得するための API。" />
+        <Item text="管理単位を削除する" url="/ja-jp/api-reference/beta/api/administrativeunit_delete" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトを削除するための API。" />
+        <Item text="メンバーを追加する" url="/ja-jp/api-reference/beta/api/administrativeunit_post_members" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトにメンバーを追加するための API。" />
+        <Item text="メンバーを一覧表示する" url="/ja-jp/api-reference/beta/api/administrativeunit_list_members" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトからメンバーを一覧表示するための API。" />
+        <Item text="メンバーを取得する" url="/ja-jp/api-reference/beta/api/administrativeunit_get_members" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトからメンバーを取得するための API。" />
+        <Item text="メンバーを削除する" url="/ja-jp/api-reference/beta/api/administrativeunit_delete_members" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトからメンバーを削除するための API。" />
+        <Item text="対象のロールの管理者を追加する" url="/ja-jp/api-reference/beta/api/administrativeunit_post_scopedadministrators" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトに、対象のロールの管理者を追加するための API" />
+        <Item text="対象のロールの管理者を一覧表示する" url="/ja-jp/api-reference/beta/api/administrativeunit_list_scopedadministrators" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を一覧表示するための API。" />
+        <Item text="対象のロールの管理者を取得する" url="/ja-jp/api-reference/beta/api/administrativeunit_get_scopedadministrators" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を取得するための API。" />
+        <Item text="対象のロールの管理者を削除する" url="/ja-jp/api-reference/beta/api/administrativeunit_delete_scopedadministrators" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を削除するための API。" />
+      </Item>
+      <Item text="アプリケーション" url="/ja-jp/api-reference/beta/resources/application" SEOKeyword="アプリケーション API、Microsoft Graph API、アプリケーション API" SEODescription="">
+        <Item text="アプリケーションを一覧表示する" url="/ja-jp/api-reference/beta/api/application_list" SEOKeyword="アプリケーションを一覧表示する、Microsoft Graph API、アプリケーション API" SEODescription="アプリケーション オブジェクトのリストを取得します。" />
+        <Item text="アプリケーションを作成する" url="/ja-jp/api-reference/beta/api/application_post_applications" SEOKeyword="アプリケーションを作成する、Microsoft Graph API、アプリケーション API" SEODescription="この API を使用して、新しいアプリケーションを作成します。" />
+        <Item text="アプリケーションを取得する" url="/ja-jp/api-reference/beta/api/application_get" SEOKeyword="アプリケーションを取得する、Microsoft Graph API、アプリケーション API" SEODescription="アプリケーション オブジェクトのプロパティと関係を取得します。" />
+        <Item text="アプリケーションを更新する" url="/ja-jp/api-reference/beta/api/application_update" SEOKeyword="アプリケーションを更新する、Microsoft Graph API、アプリケーション API" SEODescription="アプリケーション オブジェクトのプロパティを更新します。" />
+        <Item text="アプリケーションを削除する" url="/ja-jp/api-reference/beta/api/application_delete" SEOKeyword="アプリケーションを削除する、Microsoft Graph API、アプリケーション API" SEODescription="アプリケーションを削除します。" />
+        <Item text="所有者を一覧表示する" url="/ja-jp/api-reference/beta/api/application_list_owners" SEOKeyword="所有者を一覧表示する、Microsoft Graph API、アプリケーション API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="所有者を割り当てる" url="/ja-jp/api-reference/beta/api/application_post_owners" SEOKeyword="所有者を作成する、Microsoft Graph API、アプリケーション API" SEODescription="この API を使用して、新しい所有者を作成します。" />
+        <Item text="拡張機能プロパティを一覧表示する" url="/ja-jp/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="extensionProperties を一覧表示する、Microsoft Graph API、アプリケーション API" SEODescription="extensionproperty オブジェクトのリストを取得します。" />
+        <Item text="拡張プロパティを作成する" url="/ja-jp/api-reference/beta/api/application_post_extensionproperties" SEOKeyword="ExtensionProperty を作成する、Microsoft Graph API、アプリケーション API" SEODescription="この API を使用して、新しい ExtensionProperty を作成します。" />
+        <Item text="アプリケーションを復元する" url="/ja-jp/api-reference/beta/api/application_restore" SEOKeyword="アプリケーション: 復元、API、Microsoft Graph API、アプリケーション API" SEODescription="" />
+      </Item>
+      <Item text="アプリケーションの役割の割り当て" url="/ja-jp/api-reference/beta/resources/approleassignment" SEOKeyword="approleassignment API、Microsoft Graph API、approleassignment API" SEODescription="ユーザーまたはグループがアプリケーションに割り当てられるときの記録に使用します。この例では、ロールの割り当てにより、アプリケーション タイルが、ユーザー アプリケーションのアクセス パネル上に表示されます。特定のロールで、リソース アプリケーションに別の (サービス プリンシパルとしてモデル化された) アプリケーションのアクセス権を付与する場合にも、このエンティティを使用できます。ロールの割り当ての作成、読み取り、更新、および削除ができます。DirectoryObject から継承します。">
+        <Item text="appRoleAssignment を一覧表示する" url="/ja-jp/api-reference/beta/api/user_list_approleassignment" SEOKeyword="アプリケーションを一覧表示する、Microsoft Graph API、アプリケーション API" SEODescription="アプリケーション オブジェクトのリストを取得します。" />
+        <Item text="appRoleAssignment を作成する" url="/ja-jp/api-reference/beta/api/user_post_approleassignment" SEOKeyword="アプリケーションを一覧表示する、Microsoft Graph API、アプリケーション API" SEODescription="アプリケーション オブジェクトのリストを取得します。" />
+        <Item text="appRoleAssignment を取得する" url="/ja-jp/api-reference/beta/api/approleassignment_get" SEOKeyword="appRoleAssignment を取得する、Microsoft Graph API、approleassignment API" SEODescription="approleassignment オブジェクトのプロパティと関係を取得します。" />
+        <Item text="approleassignment を更新する" url="/ja-jp/api-reference/beta/api/approleassignment_update" SEOKeyword="approleassignment を更新する、Microsoft Graph API、approleassignment API" SEODescription="approleassignment オブジェクトのプロパティを更新します。" />
+        <Item text="appRoleAssignment を削除する" url="/ja-jp/api-reference/beta/api/approleassignment_delete" SEOKeyword="appRoleAssignment を削除する、Microsoft Graph API、approleassignment API" SEODescription="appRoleAssignment を削除します。" />
+      </Item>
+      <Item text="oauth2 のアクセス許可の付与" url="/ja-jp/api-reference/beta/resources/oauth2permissiongrant" SEOKeyword="oauth2permissiongrant API、Microsoft Graph API、oauth2permissiongrant API" SEODescription="ユーザーまたは管理者の同意プロセスの一部としてアプリケーションに付与された (サービス プリンシパルによって表される) OAuth 2.0 の委任されたアクセス許可スコープを表します。">
+        <Item text="oauth2 のアクセス許可の付与を一覧表示する" url="/ja-jp/api-reference/beta/api/oauth2permissiongrant_list" SEOKeyword="oauth2PermissionGrants を一覧表示する、Microsoft Graph API、oauth2permissiongrant API" SEODescription="oauth2permissiongrant オブジェクトのリストを取得します。" />
+        <Item text="oauth2 のアクセス許可の付与を作成する" url="/ja-jp/api-reference/beta/api/oauth2permissiongrant_post_oauth2permissiongrants" SEOKeyword="OAuth2PermissionGrant を作成する、Microsoft Graph API、oauth2permissiongrant API" SEODescription="この API を使用して、新しい OAuth2PermissionGrant を作成します。" />
+        <Item text="oauth2 のアクセス許可の付与を取得する" url="/ja-jp/api-reference/beta/api/oauth2permissiongrant_get" SEOKeyword="oAuth2PermissionGrant を取得する、Microsoft Graph API、oauth2permissiongrant API" SEODescription="oauth2permissiongrant オブジェクトのプロパティと関係を取得します。" />
+        <Item text="oauth2 のアクセス許可の付与を更新する" url="/ja-jp/api-reference/beta/api/oauth2permissiongrant_update" SEOKeyword="oauth2permissiongrant を更新する、Microsoft Graph API、oauth2permissiongrant API" SEODescription="oauth2permissiongrant オブジェクトのプロパティを更新します。" />
+        <Item text="OAuth2 のアクセス許可の付与を削除する" url="/ja-jp/api-reference/beta/api/oauth2permissiongrant_delete" SEOKeyword="oAuth2PermissionGrant を削除する、Microsoft Graph API、oauth2permissiongrant API" SEODescription="oAuth2PermissionGrant を削除します。" />
+      </Item>
+      <Item text="デバイス" url="/ja-jp/api-reference/beta/resources/device" SEOKeyword="デバイス API、Microsoft Graph API、デバイス API" SEODescription="ディレクトリに登録されているデバイスを表します。DirectoryObject から継承します。">
+        <Item text="デバイスを一覧表示する" url="/ja-jp/api-reference/beta/api/device_list" SEOKeyword="デバイスを一覧表示する、Microsoft Graph API、Device API" SEODescription="デバイス オブジェクトのリストを取得します。" />
+        <Item text="デバイスを作成する" url="/ja-jp/api-reference/beta/api/device_post_devices" SEOKeyword="デバイスを作成する、Microsoft Graph API、Device API" SEODescription="この API を使用して、新しいデバイスを作成します。" />
+        <Item text="デバイスを取得する" url="/ja-jp/api-reference/beta/api/device_get" SEOKeyword="デバイスを取得する、Microsoft Graph API、Device API" SEODescription="デバイス オブジェクトのプロパティと関係を取得します。" />
+        <Item text="デバイスを更新する" url="/ja-jp/api-reference/beta/api/device_update" SEOKeyword="デバイスを更新する、Microsoft Graph API、Device API" SEODescription="デバイス オブジェクトのプロパティを更新します。" />
+        <Item text="デバイスを削除する" url="/ja-jp/api-reference/beta/api/device_delete" SEOKeyword="デバイスを削除する、Microsoft Graph API、Device API" SEODescription="デバイスを削除します。" />
+        <Item text="registeredOwners を一覧表示する" url="/ja-jp/api-reference/beta/api/device_list_registeredowners" SEOKeyword="registeredOwners を一覧表示する、Microsoft Graph API、Device API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="registeredUsers を一覧表示する" url="/ja-jp/api-reference/beta/api/device_list_registeredusers" SEOKeyword="registeredUsers を一覧表示する、Microsoft Graph API、Device API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+      </Item>
+      <Item text="拡張プロパティ" url="/ja-jp/api-reference/beta/resources/extensionproperty" SEOKeyword="extensionproperty API、Microsoft Graph API、extensionproperty API" SEODescription="アプリケーションが外部データ ストアを必要とすることなく、ディレクトリのオブジェクト (ユーザー、グループ、テナントの詳細情報、デバイス、アプリケーション、サービス プリンシパル) に追加できるその他のプロパティのセットを定義して使用することを、アプリケーションに許可します。拡張プロパティの詳細については、「Azure AD Graph API ディレクトリ スキーマ拡張機能」(https://msdn.microsoft.com/ja-jp/library/azure/dn720459.aspx) を参照してください。DirectoryObject から継承します。">
+        <Item text="extensionProperty を取得する" url="/ja-jp/api-reference/beta/api/extensionproperty_get" SEOKeyword="extensionProperty を取得する、Microsoft Graph API、extensionproperty API" SEODescription="extensionproperty オブジェクトのプロパティと関係を取得します。" />
+        <Item text="extensionproperty を更新する" url="/ja-jp/api-reference/beta/api/extensionproperty_update" SEOKeyword="extensionproperty を更新する、Microsoft Graph API、extensionproperty API" SEODescription="extensionproperty オブジェクトのプロパティを更新します。" />
+        <Item text="extensionProperty を削除する" url="/ja-jp/api-reference/beta/api/extensionproperty_delete" SEOKeyword="extensionProperty を削除する、Microsoft Graph API、extensionproperty API" SEODescription="extensionProperty を削除します。" />
+      </Item>
+      <Item text="組織" url="/ja-jp/api-reference/beta/resources/organization" SEOKeyword="グループ、Microsoft Graph API、ユーザー API" SEODescription="">
+        <Item text="組織の詳細を取得する" url="/ja-jp/api-reference/beta/api/organization_get" SEOKeyword="tenantDetail を取得する、Microsoft Graph API、Directory API" SEODescription="tenantdetail オブジェクトのプロパティと関係を取得します。" />
+        <Item text="組織の詳細を更新する" url="/ja-jp/api-reference/beta/api/organization_update" SEOKeyword="tenantdetail を更新する、Microsoft Graph API、Directory API" SEODescription="tenantdetail オブジェクトのプロパティを更新します。" />
+      </Item>
+      <Item text="購読している sku" url="/ja-jp/api-reference/beta/resources/subscribedsku" SEOKeyword="subscribedsku API、Microsoft Graph API、subscribedsku API" SEODescription="購読している SKU では読み取り操作のみがサポートされ、作成、更新、削除はサポートされません。クエリのフィルター式はサポートされていません。DirectoryObject から継承します。">
+        <Item text="subscribedSkus を一覧表示する" url="/ja-jp/api-reference/beta/api/subscribedsku_list" SEOKeyword="subscribedSkus を一覧表示する、Microsoft Graph API、subscribedsku API" SEODescription="subscribedsku オブジェクトのリストを取得します。" />
+        <Item text="subscribedSku を取得する" url="/ja-jp/api-reference/beta/api/subscribedsku_get" SEOKeyword="subscribedSku を取得する、Microsoft Graph API、subscribedsku API" SEODescription="subscribedsku オブジェクトのプロパティとリレーションシップを取得します。" />
+      </Item>
+    </Item>
+    <Item text="Privileged Identity Management" url="/ja-jp/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Azure Active Directory Privileged Identity Management">
+      <Item text="特権ロール" url="/ja-jp/api-reference/beta/resources/privilegedrole" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="特権のある AAD ロール オブジェクト">
+        <Item text="特権ロールを一覧表示する" url="/ja-jp/api-reference/beta/api/privilegedrole_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="privilegedRole オブジェクトのリストを取得します。" />
+        <Item text="特権ロールを取得する" url="/ja-jp/api-reference/beta/api/privilegedrole_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="privilegedRole オブジェクトを取得します。" />
+        <Item text="ロールの割り当てを一覧表示する" url="/ja-jp/api-reference/beta/api/privilegedrole_list_assignments" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="privilegedRoleAssignment オブジェクトのリストを取得します。" />
+        <Item text="自分でロールをアクティブ化する" url="/ja-jp/api-reference/beta/api/privilegedrole_selfactivate" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, アクティブ化" SEODescription="自分でロールの割り当てをアクティブにします。" />
+        <Item text="自分でロールを非アクティブ化する" url="/ja-jp/api-reference/beta/api/privilegedrole_selfdeactivate" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, 非アクティブ化" SEODescription="自分でロールの割り当てを非アクティブにします。" />
+        <Item text="ロールの設定を取得する" url="/ja-jp/api-reference/beta/api/privilegedrolesettings_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, 設定" SEODescription="ロールの設定を取得します。" />
+        <Item text="ロールの概要を取得する" url="/ja-jp/api-reference/beta/api/privilegedrolesummary_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, 概要" SEODescription="ロールの概要データを取得します。" />
+      </Item>
+      <Item text="特権ロールの割り当て" url="/ja-jp/api-reference/beta/resources/privilegedroleassignment" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, ロール" SEODescription="特権ロールの割り当てオブジェクト">
+        <Item text="ロールの割り当てを一覧表示する" url="/ja-jp/api-reference/beta/api/privilegedroleassignment_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, ロール" SEODescription="privilegedRoleAssignment オブジェクトのリストを取得します。" />
+        <Item text="ロールの割り当てを取得する" url="/ja-jp/api-reference/beta/api/privilegedroleassignment_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, ロール" SEODescription="privilegedRoleAssignment オブジェクトを取得します。" />
+        <Item text="ロールの割り当てを作成する" url="/ja-jp/api-reference/beta/api/privilegedroleassignment_post_privilegedroleassignments" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, ロール" SEODescription="privilegedRoleAssignment オブジェクトを作成します。" />
+        <Item text="ロールの割り当てを削除する" url="/ja-jp/api-reference/beta/api/privilegedroleassignment_delete" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="privilegedRoleAssignment オブジェクトを削除します。" />
+        <Item text="自分のロールの割り当てを取得する" url="/ja-jp/api-reference/beta/api/privilegedroleassignment_my" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="要求元に割り当てられた privilegedRoleAssignment オブジェクトのリストを取得します。" />
+        <Item text="ロールの割り当てを有効にする" url="/ja-jp/api-reference/beta/api/privilegedroleassignment_makeeligible" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="ロールの割り当てを有効にします。" />
+        <Item text="ロールの割り当てを永続的にする" url="/ja-jp/api-reference/beta/api/privilegedroleassignment_makepermanent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="ロールの割り当てを永続的にします。" />
+      </Item>
+      <Item text="監査イベント" url="/ja-jp/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, 監査" SEODescription="Privileged Identity Management からの監査イベント">
+        <Item text="監査イベントを一覧表示する" url="/ja-jp/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, 監査" SEODescription="監査イベントのリストを取得します。" />
+      </Item>
+    </Item>
+    <Item text="Identity Protection" url="/ja-jp/api-reference/beta/resources/identityProtection_root" SEOKeyword="Identity Protection API、Azure AD、AADIP、Microsoft Graph API、Identity Protection" SEODescription="Azure Active Directory Identity Protection を使用して、そのデータに対してクエリを実行する API">
+      <Item text="ID リスク イベント" url="/ja-jp/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API、Azure AD、AADIP、Microsoft Graph API、Identity Protection、イベント リスク、ID リスク" SEODescription="Azure AD Identity Protection のリスク イベント データに対してクエリを実行する">
+        <Item text="identityRiskEvent を一覧表示する" url="/ja-jp/api-reference/beta/api/identityriskevent_list" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、identityRiskEvent API" SEODescription="IdentityRiskEvent オブジェクトのリストを取得します。" />
+        <Item text="identityRiskEvent を取得する" url="/ja-jp/api-reference/beta/api/identityriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、identityRiskEvent API" SEODescription="IdentityRiskEvent オブジェクトを取得します。" />
+        <Item text="anonymousIpRiskEvent を一覧表示する" url="/ja-jp/api-reference/beta/api/anonymousipriskevent_list" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、anonymousIpRiskEvent API" SEODescription="anonymousIpRiskEvent オブジェクトのリストを取得します。" />
+        <Item text="anonymousIpRiskEvent を取得する" url="/ja-jp/api-reference/beta/api/anonymousipriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、anonymousIpRiskEvent API" SEODescription="anonymousIpRiskEvent オブジェクトを取得します。" />
+        <Item text="impossibleTravelRiskEvent を一覧表示する" url="/ja-jp/api-reference/beta/api/impossibletravelriskevent_list" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、impossibleTravelRiskEvent API" SEODescription="impossibleTravelRiskEvent オブジェクトのリストを取得します。" />
+        <Item text="impossibleTravelRiskEvent を取得する" url="/ja-jp/api-reference/beta/api/impossibletravelriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、impossibleTravelRiskEvent API" SEODescription="impossibleTravelRiskEvent オブジェクトを取得します。" />
+        <Item text="leakedCredentialsRiskEvent を一覧表示する" url="/ja-jp/api-reference/beta/api/leakedcredentialsriskevent_list" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、leakedCredentialsRiskEvent API" SEODescription="leakedCredentialsRiskEvent オブジェクトのリストを取得します。" />
+        <Item text="leakedCredentialsRiskEvent を取得する" url="/ja-jp/api-reference/beta/api/leakedcredentialsriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、leakedCredentialsRiskEvent API" SEODescription="leakedCredentialsRiskEvent オブジェクトを取得します。" />
+        <Item text="malwareRiskEvent を一覧表示する" url="/ja-jp/api-reference/beta/api/malwareriskevent_list" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、malwareRiskEvent API" SEODescription="malwareRiskEvent オブジェクトのリストを取得します。" />
+        <Item text="malwareRiskEvent を取得する" url="/ja-jp/api-reference/beta/api/malwareriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、malwareRiskEvent API" SEODescription="malwareRiskEvent オブジェクトを取得します。" />
+        <Item text="suspiciousIpRiskEvent を一覧表示する" url="/ja-jp/api-reference/beta/api/suspiciousipriskevent_list" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、suspiciousIpRiskEvent API" SEODescription="suspiciousIpRiskEvent オブジェクトのリストを取得します。" />
+        <Item text="suspiciousIpRiskEvent を取得する" url="/ja-jp/api-reference/beta/api/suspiciousipriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、suspiciousIpRiskEvent API" SEODescription="suspiciousIpRiskEvent オブジェクトを取得します。" />
+        <Item text="unfamiliarLocationRiskEvent を一覧表示する" url="/ja-jp/api-reference/beta/api/unfamiliarlocationriskevent_list" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、unfamiliarLocationRiskEvent API" SEODescription="unfamiliarLocationRiskEvent オブジェクトのリストを取得します。" />
+        <Item text="unfamiliarLocationRiskEvent を取得する" url="/ja-jp/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、unfamiliarLocationRiskEvent API" SEODescription="unfamiliarLocationRiskEvent オブジェクトを取得します。" />
+      </Item>
+    </Item>
+  </Item>
+</Menu>
