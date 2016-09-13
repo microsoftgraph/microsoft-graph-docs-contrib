@@ -12,7 +12,7 @@ Thank you for your interest in Microsoft Graph documentation!
 
 ## Ways to contribute
 
-You can contribute to [Microsoft Graph documentation](http://graph.microsoft.io) in these ways:
+You can contribute to [Microsoft Graph documentation](http://graph.microsoft.io/docs) in these ways:
 
 * Contribute to articles via the [public Office developer docs repo](https://github.com/OfficeDev/microsoft-graph-docs)
 * Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/microsoft-graph-docs/issues)
