@@ -1,17 +1,10 @@
-# Create Invitation
+# Create invitation
 
-Use this API to create a new Invitation.
+Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
 
-The invitation process uses the following flow:
-
-* An invitation is created
-* An invitation is sent to the invited user (containing an invitation link)
-* The invited user clicks on the invitation link, signs in and redeems the invitation and creation of the user entity representing the invited user completes
-* The user is redirected to a specific page after redemption completes
-
-When creating a new invitation you have a couple of options available:
+When creating a new invitation you have several options available:
 1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
-2. When the invited user redeems their invitation, a user entity (of userType Guest) is created and can now be used to control access to resources. Additionally, if a group is specified in the *invitedToGroups* property during creation, then on redemption that invited user will also be added as a member of the specified group.
+2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. Additionally, if a group is specified in the *invitedToGroups* property during creation, then on redemption that invited user will also be added as a member of the specified group. The invited user has to go through redemption process to access any resources he has been invited to.
 
 ### Prerequisites
 The following **scopes** are required to execute this API:
@@ -30,14 +23,14 @@ POST /invitations
 | Content-Type  | application/json  |
 
 ### Request body
-In the request body, supply a JSON representation of [invitation](../resources/invitation.md) object.
+In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.
 
 The following table shows the properties that are required when you create a invitation.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
 |invitedUserEmailAddress |string | The email address of the user you are inviting.|
-|inviteRedirectUrl |string |The URL user should be redirected to after redemption.|
+|inviteRedirectUrl |string |The URL that the user will be redirected to after redemption.|
 
 
 ### Response
@@ -60,7 +53,7 @@ Content-length: 551
   "inviteRedirectUrl": "https://myapp.com"
 }
 ```
-In the request body, supply a JSON representation of [invitation](../resources/invitation.md) object.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -69,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.invitations"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: application/json
 Content-length: 551
 

@@ -1,18 +1,20 @@
-# Invitation manager
+# invitation manager
 
-Use the invitation manager to create an invite, in order to add an external user to the organization's directory. The invitation process follows these steps:
+Use the invitation manager to create an invite, in order to add an external user to the organization. 
 
-1. Create an invitation: Creating an invitation will return a redemption URL in the response (*inviteRedeemUrl*).
-2. Send the invitation: Creating the invitation can automatically send an invitation email to the invited user, or the app can choose to send the *inviteRedeemUrl* link to the invited user, using whatever communications mechanism it desires.
-3. Redeem the invitation: Currently, there is no API to perform the redemption process. The invited user has to click on the *inviteRedeemUrl* link sent in the communication in the step above, and go through the interactive redemption process in a browser. Once completed, the invited user becomes an external user in the organization.
+The invitation process uses the following flow:
+* An invitation is created
+* An invitation is sent to the invited user (containing an invitation link)
+* The invited user clicks on the invitation link, signs in and redeems the invitation and creation of the user entity representing the invited user completes
+* The user is redirected to a specific page after redemption completes
 
-The create invitation API can automatically send an email containing the redemption URL to the invited user, by setting the *sendInvitationMessage* to true. You can also customize the message that will be sent to the invited user. Instead, if you wish to send the redemption URL, you can set the *sendInvitationMessage* to false and use the redeem URL from the response to craft your own communication.
+Creating an invitation will return a redemption URL in the response (*inviteRedeemUrl*). The create invitation API can automatically send an email containing the redemption URL to the invited user, by setting the *sendInvitationMessage* to true. You can also customize the message that will be sent to the invited user. Instead, if you wish to send the redemption URL through some other means, you can set the *sendInvitationMessage* to false and use the redeem URL from the response to craft your own communication. Currently, there is no API to perform the redemption process. The invited user has to click on the *inviteRedeemUrl* link sent in the communication in the step above, and go through the interactive redemption process in a browser. Once completed, the invited user becomes an external user in the organization.
 
 
 ### Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create invitation](../api/invitation_post.md) | [invitation](invitation.md) | Write properties and relationships of invitation object.|
+|[Create invitation](../api/invitation_post.md) | invitation | Write properties and relationships of invitation object.|
 
 ### Properties
 | Property	   | Type	|Description|
@@ -47,7 +49,8 @@ Here is a JSON representation of the resource
 
   "invitedToGroups": [{"@odata.type": "microsoft.graph.group"}],
   "invitedUser": [{"@odata.type": "microsoft.graph.User"}]
-}```
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
