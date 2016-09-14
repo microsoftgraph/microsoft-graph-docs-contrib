@@ -93,26 +93,31 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
   "assistantName": null,
   "manager": null,
-  "homePhones": [],
-  "mobilePhone": null,
-  "businessPhones": [
-    "+1 918 555 0101"
-  ],
-  "homeAddress": {},
-  "businessAddress": {
-      "street": "10 Contoso Way",
-      "city": "Redmond",
-      "state": "WA",
-      "countryOrRegion": "USA",
-      "postalCode": "98075"  
-  },
-  "otherAddress": {},
+  "phones": [{
+    "type": "business",
+    "number": "+1 918 555 0101"
+  }],
+  "postalAddresses": [{
+    "type": "business",
+    "postOfficeBox": "P.O. Box 100",
+    "street": "123 Some street",
+    "city": "Seattle",
+    "state": "WA",
+    "countryOrRegion": "USA",
+    "postalCode": "98121"
+  }],
   "spouseName": null,
   "personalNotes": null,
-  "children": []
+  "children": [], 
+  "gender": null,
+  "websites": [{
+      "type": "work",
+      "address": "http://www.contoso.com",
+      "name": "Contoso"
+  }],
+  "weddingAnniversary": null
 }
 ```
 
