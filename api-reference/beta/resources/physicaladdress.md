@@ -12,7 +12,7 @@ Represents the street address of a resource such as a contact or event.
 |postOfficeBox|String|The post office box number if there is one.|
 |state|String|The state.|
 |street|String|The street.|
-|type|String|The type of address. Possible values are: home, business, other.|
+|type|String|The type of address. Possible values are: `home`, `business`, `other`, `unknown`.|
 
 ## JSON representation
 
