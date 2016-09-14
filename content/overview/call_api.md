@@ -108,7 +108,7 @@ content-length: 169
 
 Here, instead of the entire property sets on the `user` entity, only the `aboutMe`, `displayName`, and `skills` properties are returned.
 
-###Traverse to another resource via relationship
+##Traverse to another resource via relationship
 A manager holds a `directReports` relationship with the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
 
 ```no-highlight 
@@ -256,7 +256,7 @@ content-length: 986
 }
 ```
 
-##Calling OData actions or functions
+##Call OData actions or functions
 Microsoft Graph also supports OData actions and functions to manipulate the resources. 
 For example, the following HTTPS POST request lets the signed-in user (`me`) send an email message:
 ```no-highlight 
