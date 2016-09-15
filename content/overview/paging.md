@@ -3,7 +3,7 @@
  
 When Microsoft Graph requests return too much information to show on one page, you can use paging to break the information into manageable chunks. 
 
-You can page forward and backward in Microsoft Graph responses. A response that contains paged results will include a skip token ( **odata.nextLink** ) that allows you to get the next page of results. This skip token can be combined with a **previous-page=true** query argument to page backward.
+You can page forward and backward in Microsoft Graph responses. A response that contains paged results will include a skip token (**odata.nextLink**) that allows you to get the next page of results. This skip token can be combined with a **previous-page=true** query argument to page backward.
 
 The follow request example shows paging forward:
 
