@@ -8,7 +8,7 @@
 
 <a name="msg_error_response"> </a> -->
 
-Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error
+Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error
 response object.
 
 ## HTTP status codes
