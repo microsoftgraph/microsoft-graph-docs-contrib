@@ -45,11 +45,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "accountEnabled":"false",
+  "accountEnabled":false,
   "alternativeSecurityIds":
   [
     {
-      "type":"2",
+      "type": 2,
       "key":"Y3YxN2E1MWFlYw==",
       "identityProvider": null
     }
