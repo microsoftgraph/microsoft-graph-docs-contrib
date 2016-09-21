@@ -48,7 +48,7 @@ Content-type: application/json
       "accountEnabled": true,
       "alternativeSecurityIds": [
         {
-          "type": 99,
+          "type": 2,
           "identityProvider": "identityProvider-value",
           "key": "key-value"
         }
