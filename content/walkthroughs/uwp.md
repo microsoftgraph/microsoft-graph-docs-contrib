@@ -31,7 +31,7 @@ Windows 10 provides each application with a unique URI and ensures that messages
 
 That method is triggered in the sample by the **copy redirect URI** button, but you can also follow the pattern in the [AzureAD-NativeClient-UWP-WAM](https://github.com/Azure-Samples/AzureAD-NativeClient-UWP-WAM) sample, where the string is defined in the MainPage class declaration and you can fetch it by using the Visual Studio debugger. 
 
-Follow the steps in the [Register and configure the app](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth#register) of the sample's Readme in order to register your app after you've gotten the redirect URI value.
+Follow the steps in the [Register and configure the app](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample#register) of the sample's Readme in order to register your app after you've gotten the redirect URI value.
 
 You'll need the client ID value from the **Configure** page of your Azure application when you configure your app for authentication.
 
