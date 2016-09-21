@@ -1,6 +1,6 @@
 # Call Microsoft Graph in a universal Windows 10 app
 
-In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [Microsoft Graph Connect Sample for UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth) to explain the main concepts that you have to implement in your app.
+In this article we look at the minimum tasks required to get an access token from Azure Active Directory (AD) and call the Microsoft Graph. We use code from the [Office 365 Connect Sample for UWP Using Microsoft Graph](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample) to explain the main concepts that you have to implement in your app.
 
 ## Sample user interface
 
