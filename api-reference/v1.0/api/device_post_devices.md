@@ -36,11 +36,11 @@ POST https://graph.microsoft.com/v1.0/devices
 Content-type: application/json
 
 {
-  "accountEnabled":"false",
+  "accountEnabled":false,
   "alternativeSecurityIds":
   [
     {
-      "type":"2",
+      "type":2,
       "key":"Y3YxN2E1MWFlYw=="
     }
   ],
