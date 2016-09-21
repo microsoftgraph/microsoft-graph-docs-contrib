@@ -8,9 +8,12 @@
 
 <a name="msg_error_response"> </a> -->
 
-##Status code
-Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error
-response object. The following HTTP status codes should be expected.
+Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error
+response object.
+
+## HTTP status codes
+
+The following table lists and describes the HTTP status codes that can be returned.
 
 | Status code | Status message                  | Description                                                                                                                            |
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,8 +39,7 @@ response object. The following HTTP status codes should be expected.
 | 509         | Bandwidth Limit Exceeded        | Your app has been throttled for exceeding the maximum bandwidth cap. Your app can retry the request again after more time has elapsed. |
 
 The error response is a single JSON object that contains a single property
-named **error**. This object includes all of the details of the error. You may use the information returned here instead of, or in addition
-to the HTTP status code returned. Here is an example of a full JSON error body.
+named **error**. This object includes all the details of the error. You can use the information returned here instead of or in addition to the HTTP status code. The following is an example of a full JSON error body.
 
 <!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
 ```json
@@ -55,7 +57,7 @@ to the HTTP status code returned. Here is an example of a full JSON error body.
 
 <!--<a name="msg_error_resource_type"> </a> -->
 
-# Error resource type
+## Error resource type
 
 The error resource is returned whenever an error occurs in the processing of a request.
 
@@ -63,7 +65,7 @@ Error responses follow the definition in the
 [OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)
 specification for error responses.
 
-## JSON Representation
+### JSON representation
 
 The error resource is composed of these resources:
 
@@ -103,7 +105,7 @@ properties:
 
 <!--<a name="msg_code_property"> </a> -->
 
-##Code property
+#### Code property
 
 The `code` property contains one of the following possible values. Your apps should be
 prepared to handle any one of these errors.
@@ -126,7 +128,7 @@ prepared to handle any one of these errors.
 | **quotaLimitReached**     | The user has reached their quota limit.
 | **unauthenticated**       | The caller is not authenticated.
 
-The `innererror` object may recursively contain more `innererror` objects
+The `innererror` object might recursively contain more `innererror` objects
 with additional, more specific error codes. When handling an error, apps
 should loop through all the error codes available and use the most detailed
 one that they understand. Some of the more detailed codes are listed at the
@@ -149,7 +151,7 @@ public bool IsError(string expectedErrorCode)
 }
 ```
 
-For a complete example for properly handling errors, take a look at
+For an example that shows how to properly handle errors, see
 [Error Code Handling](https://gist.github.com/rgregg/a1866be15e685983b441).
 
 The `message` property at the root contains an error message intended for the
@@ -159,11 +161,11 @@ directly to the user. When handling errors, your code should not key off of
 dynamic information specific to the failed request. You should only code
 against error codes returned in `code` properties.
 
-### Detailed error codes
-Below are some additional errors that your app may encounter within the nested
-`innererror` objects. Apps are not required to handle these, but may if they
-choose. The service may add new error codes or stop returning old ones at any
-time, so it is important that all apps be able to handle the basic error codes in the preceding section](#code-property).
+#### Detailed error codes
+The following are some additional errors that your app might encounter within the nested
+`innererror` objects. Apps are not required to handle these, but can if they
+choose. The service might add new error codes or stop returning old ones at any
+time, so it is important that all apps be able to handle the [basic error codes](#code-property).
 
 | Code                               | Description
 |:-----------------------------------|:----------------------------------------------------------

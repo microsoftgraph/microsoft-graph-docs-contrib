@@ -163,7 +163,7 @@ Content-length: 1977
       "address": "http://www.contoso.com",
       "name": "Contoso"
   }],
-  "weddingAnniversary": null,
+  "weddingAnniversary": null
 }
 ```
 

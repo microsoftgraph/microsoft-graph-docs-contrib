@@ -1,25 +1,25 @@
 ﻿
 # Paging Microsoft Graph data in your app 
  
-When the API requests return too much information to show on one page, you can use paging to break the information into manageable chunks. 
+When Microsoft Graph requests return too much information to show on one page, you can use paging to break the information into manageable chunks. 
 
-You can page forward and backward in the Microsoft Graph. A response that contains paged results will include a skip token ( **odata.nextLink** ) that allows you to get the next page of results. This skip token can be combined with a **previous-page=true** query argument to page backwards.
+You can page forward and backward in Microsoft Graph responses. A response that contains paged results will include a skip token (**odata.nextLink**) that allows you to get the next page of results. This skip token can be combined with a **previous-page=true** query argument to page backward.
 
-The follow example request demonstrates paging forward:
+The follow request example shows paging forward:
 
 ```
 https://graph.microsoft.com/v1.0/users?$top=5$skiptoken=X'4453707402.....0000'
 ```
 The **$skiptoken** parameter from the previous response is included, and allows you to get the next page of results.
 
-The following example request demonstrates paging backward:
+The following request example shows paging backward:
 
 ```
 https://graph.microsoft.com/v1.0/users?$top=5$skiptoken=X'4453707.....00000'&previous-page=true
 ```
 The **$skiptoken** parameter from the previous response is included. When this is combined with the **&previous-page=true** parameter, the previous page of results will be retrieved.
 
-The following steps demonstrate the request/response flow to page forward and backward:
+The following are the request/response steps to page forward and backward:
 
 1. A request is made to get a list of the first 10 users out of 15. The response contains a skip token to indicate the final page of 10 users.
 2. To get the final 5 users, another request is made that contains the skip token returned from the previous response.
