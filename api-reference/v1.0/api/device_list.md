@@ -46,11 +46,11 @@ Content-type: application/json
 {
   "value": [
     {
-      "accountEnabled":"false",
+      "accountEnabled":false,
       "alternativeSecurityIds":
       [
         {
-          "type":"2",
+          "type":2,
           "key":"Y3YxN2E1MWFlYw==",
           "identityProvider": null
         }
