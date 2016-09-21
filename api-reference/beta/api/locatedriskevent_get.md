@@ -2,11 +2,12 @@
 
 Retrieve the properties and relationships of a locatedriskevent object.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
+*IdentityRiskEvent.Read.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /locatedRiskEvents/<id> 
+GET /locatedRiskEvents/<id>
 ```
 
 ## Request headers
@@ -42,17 +43,17 @@ Content-type: application/json
 Content-length: 237
 
 {
-  "closedDateTime": "2016-01-29T20:03:57.7872426Z", 
-  "createdDateTime": "2016-01-29T00:01:49.126468Z", 
-  "id": "27b91217-a6ca-edff-da2b-c46feaf0228f-a6653179-3c7b-4e99-bb4c-dddeb18adfc1-42445d4d-fe22-9840-cf9d-72f6ce8cd056", 
-  "ipAddress": "176.10.104.240", 
-  "location": "Bern, CH", 
-  "riskEventDateTime": "2016-01-29T00:00:56.2255665Z", 
-  "riskEventStatus": "remediated", 
-  "riskLevel": "medium", 
-  "riskType": "UnfamiliarLocationRiskEvent", 
-  "userDisplayName": "Jon Doe", 
-  "userId": "a6653179-3c7b-4e99-bb4c-dddeb18adfc1", 
+  "closedDateTime": "2016-01-29T20:03:57.7872426Z",
+  "createdDateTime": "2016-01-29T00:01:49.126468Z",
+  "id": "27b91217-a6ca-edff-da2b-c46feaf0228f-a6653179-3c7b-4e99-bb4c-dddeb18adfc1-42445d4d-fe22-9840-cf9d-72f6ce8cd056",
+  "ipAddress": "176.10.104.240",
+  "location": "Bern, CH",
+  "riskEventDateTime": "2016-01-29T00:00:56.2255665Z",
+  "riskEventStatus": "remediated",
+  "riskLevel": "medium",
+  "riskType": "UnfamiliarLocationRiskEvent",
+  "userDisplayName": "Jon Doe",
+  "userId": "a6653179-3c7b-4e99-bb4c-dddeb18adfc1",
   "userPrincipalName": "jon@contoso.com"
 }
 ```

@@ -1,12 +1,10 @@
 # Search for an item
 
-Search the hierarchy of items for items matching a query. You can search and/or
-filter results to find the items your app is looking for.
+Search the hierarchy of items for items matching a query.
+You can search and/or filter results to find the items your app is looking for.
 
-Search returns matching results from the item specified in the URL and all
-children of that item. Filtering works on the collection of items returned,
-which can be either all children when using search, or just the immediate
-children when using a collection.
+Search returns matching results from the item specified in the URL and all children of that item.
+Filtering works on the collection of items returned, which can be either all children when using search, or just the immediate children when using a collection.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -20,18 +18,11 @@ One of the following **scopes** is required to execute this API:
 GET /me/drive/root/search(q='vacation')
 GET /me/drive/items/{item-id}/search(q='vacation')
 GET /me/drive/root:/{item-path}:/search(q='vacation')
+GET /me/drive/search(q='vacation')
 ```
 
 ## Optional query parameters
-This method supports the [OData Query
-Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help
-customize the response.
-
-## Request headers
-
-| Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer <token>. Required. |
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 
 ## Request body

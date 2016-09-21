@@ -7,26 +7,26 @@ Use this API to create a new group as specified in the request body. You can cre
 
 At a minimum, you must specify the properties required for the type of group you're creating. This includes:
 
-| Type of group | **groupTypes** property | **securityEnabled** property |
-|:--------------|:------------------------|:-----------------------------|
-| Office 365 | "Unified" | false |
-| Dynamic | "DynamicMembership" | false |
-| Security | Do not set. | true |
+| Type of group | **groupTypes** property | **securityEnabled** property | **mailEnabled** property |
+|:--------------|:------------------------|:-----------------------------|:-------------------------|
+| Office 365 | "Unified" | false | true |
+| Dynamic | "DynamicMembership" | true | false |
+| Security | Do not set. | true | false |
 
-Specify other writable properties as necessary, such as **mailEnabled** for mail-enabled groups. For more information, see the properties of the [group](../resources/group.md) resource.
-## Prerequisites
+For more information, see the properties of the [group](../resources/group.md) resource.
+### Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
-## HTTP request
+### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
-## Request headers
+### Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
 
-## Request body
+### Request body
 In the request body, supply a JSON representation of [group](../resources/group.md) object.
 
 The following table shows the properties that are required when you create a group.
@@ -38,10 +38,10 @@ The following table shows the properties that are required when you create a gro
 | mailNickname | string | The mail alias for the group. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups. Set to **false** if creating an Office 365 group. |
 
-## Response
+### Response
 If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
 
-## Example
+### Example
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -57,7 +57,7 @@ Content-length: 244
   "description": "description-value",
   "displayName": "displayName-value",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
   "mailEnabled": true,
   "mailNickname": "mailNickname-value",
@@ -73,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 244
 
@@ -81,7 +81,7 @@ Content-length: 244
   "description": "description-value",
   "displayName": "displayName-value",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
   "mail": "mail-value",
   "mailEnabled": true,
