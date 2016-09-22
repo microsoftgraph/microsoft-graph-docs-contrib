@@ -50,10 +50,10 @@ Content-type: application/json
       "givenName":"First",
       "jobTitle":null,
       "mail":"first@example.com",
-      officeLocation":null,
+      "officeLocation":null,
       "preferredLanguage":"en-US",
       "surname":"Last",
-      "userPrincipalName":"first@example.com"}
+      "userPrincipalName":"first@example.com"
     }
   ]
 }
