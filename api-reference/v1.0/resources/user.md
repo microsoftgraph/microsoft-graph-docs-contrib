@@ -1,32 +1,30 @@
 # user resource type
 
-Represents an Azure AD or Microsoft Account user account. Inherits from [directoryObject](directoryobject.md).
+Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
 
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create user](../api/user_post_users.md) | [user](user.md) | Create a user object.|
-|[Get user](../api/user_get.md) | [user](user.md) |Read properties of a user object.|
-|[List users](../api/user_list.md) | [user](user.md) collection|Retrieve a list of user objects.|
-|[Update user](../api/user_update.md) | [user](user.md) |Update a user object. |
-|[Delete user](../api/user_delete.md) | None |Delete a user object. |
-|[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the messages collection.|
+|[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
+|[Update user](../api/user_update.md) | [user](user.md) |Update user object. |
+|[Delete user](../api/user_delete.md) | None |Delete user object. |
 |[List messages](../api/user_list_messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox.|
-|[sendMail](../api/user_sendmail.md)|None|Send the message specified in the request body.|
-|[Create mailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
+|[Create Message](../api/user_post_messages.md) |[Message](message.md)| Create a new Message by posting to the messages collection.|
 |[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get the mail folder collection under the root folder of the signed-in user. |
-|[Create event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
+|[Create mailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
+|[sendMail](../api/user_sendmail.md)|None|Send the message specified in the request body.|
 |[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.|
-|[Create calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
+|[Create event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
-|[Create calendarGroup](../api/user_post_calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the calendarGroups collection.|
+|[Create calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
 |[List calendarGroups](../api/user_list_calendargroups.md) |[CalendarGroup](calendargroup.md) collection| Get a CalendarGroup object collection.|
+|[Create calendarGroup](../api/user_post_calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the calendarGroups collection.|
 |[List calendarView](../api/user_list_calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
-|[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the contacts collection.|
 |[List contacts](../api/user_list_contacts.md) |[Contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user.|
-|[Create ContactFolder](../api/user_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
+|[Create Contact](../api/user_post_contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the contacts collection.|
 |[List contactFolders](../api/user_list_contactfolders.md) |[ContactFolder](contactfolder.md) collection| Get the contact folder collection in the default Contacts folder of the signed-in user.|
+|[Create ContactFolder](../api/user_post_contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user_list_manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
 |[List memberOf](../api/user_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and directory roles that the user is a direct member of from the memberOf navigation property.|
@@ -38,7 +36,7 @@ Represents an Azure AD or Microsoft Account user account. Inherits from [directo
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
-|[List reminders](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
+|[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 
 
 
@@ -67,24 +65,24 @@ Represents an Azure AD or Microsoft Account user account. Inherits from [directo
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters cannot be used when specifying this property. Supports $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.|
-|onPremisesSyncEnabled|Boolean| **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only. |
+|onPremisesSyncEnabled|Boolean| **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only |
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
-|pastProjects|String collection|A list of past projects the user has worked on.|
+|pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
 |preferredName|String|The preferred name for the user.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
-|proxyAddresses|String collection|A list of email addresses for the user. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter.          |
-|responsibilities|String collection|A list of the user's responsibilities.|
-|schools|String collection|A list of the schools the user has attended.|
-|skills|String collection|A list of the user's skills.|
+|proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
+|responsibilities|String collection|A list for the user to enumerate their responsibilities.|
+|schools|String collection|A list for the user to enumerate the schools they have attended.|
+|skills|String collection|A list for the user to enumerate their skills.|
 |state|String|The state or province in the user's address. Supports $filter.|
 |streetAddress|String|The street address of the user's place of business.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
 |usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
-|userType|String|A string value that can be used to classify user types in a directory, such as “Member” and “Guest”. Supports $filter.          |
+|userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
 ## Relationships
 | Relationship | Type	|Description|

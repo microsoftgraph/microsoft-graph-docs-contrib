@@ -1,9 +1,8 @@
 # List subscribedSkus
-Retrieve a list of service SKUs that a company is subscribed to.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
 
-*User.Read*; *Directory.Read.All*; *Directory.AccessAsUser*
+Retrieve a list of subscribedsku objects.
+## Prerequisites
+One of the following **scopes** is required to execute this API: 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,7 +13,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer token. Required. |
+| Authorization  | string  | Bearer <token>. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -28,7 +27,7 @@ Here is an example of the request.
   "name": "get_subscribedskus"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/subscribedSkus
+GET https://graph.microsoft.com/beta/subscribedSkus
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -41,53 +40,30 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 547
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscribedSkus",
-    "value": [
+  "value": [
+    {
+      "capabilityStatus": "capabilityStatus-value",
+      "consumedUnits": 99,
+      "prepaidUnits": {
+        "enabled": 99,
+        "suspended": 99,
+        "warning": 99
+      },
+      "servicePlans": [
         {
-            "capabilityStatus": "Enabled",
-            "consumedUnits": 14,
-            "id": "48a80680-7326-48cd-9935-b556b81d3a4e_c7df2760-2c81-4ef7-b578-5b5392b571df",
-            "prepaidUnits": {
-                "enabled": 25,
-                "suspended": 0,
-                "warning": 0
-            },
-            "servicePlans": [
-                {
-                    "servicePlanId": "8c098270-9dd4-4350-9b30-ba4703f3b36b",
-                    "servicePlanName": "ADALLOM_S_O365",
-                    "provisioningStatus": "Success",
-                    "appliesTo": "User"
-                }
-            ],
-            "skuId": "c7df2760-2c81-4ef7-b578-5b5392b571df",
-            "skuPartNumber": "ENTERPRISEPREMIUM",
-            "appliesTo": "User"
-        },
-        {
-            "capabilityStatus": "Suspended",
-            "consumedUnits": 14,
-            "id": "48a80680-7326-48cd-9935-b556b81d3a4e_d17b27af-3f49-4822-99f9-56a661538792",
-            "prepaidUnits": {
-                "enabled": 0,
-                "suspended": 25,
-                "warning": 0
-            },
-            "servicePlans": [
-                {
-                    "servicePlanId": "f9646fb2-e3b2-4309-95de-dc4833737456",
-                    "servicePlanName": "CRMSTANDARD",
-                    "provisioningStatus": "Disabled",
-                    "appliesTo": "User"
-                }
-            ],
-            "skuId": "d17b27af-3f49-4822-99f9-56a661538792",
-            "skuPartNumber": "CRMSTANDARD",
-            "appliesTo": "User"
+          "servicePlanId": "servicePlanId-value",
+          "servicePlanName": "servicePlanName-value",
+          "provisioningStatus": "provisioningStatus-value",
+          "appliesTo": "appliesTo-value"
         }
-    ]
+      ],
+      "skuId": "skuId-value",
+      "skuPartNumber": "skuPartNumber-value"
+    }
+  ]
 }
 ```
 
