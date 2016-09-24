@@ -24,10 +24,10 @@ POST /serviceprincipals/<id>/policies/$ref
 | Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
 ### Request body
-In the request body, provide a link to the policy to be assigned.
+In the request body, provide a JSON representation of the policy object to be added.
 
 ### Response
-If successful, this method returns `204, No Content` response code. 
+If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ### Example
 The following example assigns a policy to an application.
