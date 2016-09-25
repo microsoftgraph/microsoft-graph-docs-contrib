@@ -1192,7 +1192,7 @@ You can access the workbook functions through a collection of functions included
 ##### Request
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
