@@ -2,7 +2,7 @@
 
 You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files.
 
-You can access users through Microsoft Graph in two ways:
+You can access [users](user.md) through Microsoft Graph in two ways:
 
 - By their ID, `/users/<id>` 
 - By using the `/me` alias for the signed-in user, which is the same as `/users/<signed-in user's id>`
@@ -20,14 +20,20 @@ One of the following [permissions](https://graph.microsoft.io/en-us/docs/authori
 - Directory.AccessAsUser.All
 
 ## Common properties
-
+The following represent the default set of properties that are returned when getting a user or listing users.  These are a subset of all available properties. To get more user properties, use the `$select` query parameter. 
 | Property | Description |
 |----------|-------------|
-| displayName | The name displayed in the address book for the user.|
+|id | The unique identifier for the user.|
+|businessPhones | The user's phone numbers.|
+|displayName | The name displayed in the address book for the user.|
 |givenName| The first name of the user. |
-|surname| The last name of the user. |
+|jobTitle | The user's job title.|
 |mail| The user's email address. |
-|photo| The user's profile photo. |
+|mobilePhone | The user's cellphone number.|
+|officeLocation | The user's physical office location.|
+|preferredLanguage | The user's language of preference.|
+|surname| The last name of the user. |
+|userPrincipalName| The user's principal name. |
 
 For details and a list of all the properties, see the [user](user.md) object.
 
