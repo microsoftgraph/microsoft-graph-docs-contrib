@@ -2,13 +2,6 @@
 
 Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
-
-## Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[functions](#functions)|Function result object |Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. This returns the function result as a JSON object.|
-
 ## Properties
 None
 
@@ -19,10 +12,9 @@ None
 |tables|[Table](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[Worksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
 
+## Functions
 
-### Functions 
-
-Workbook functions can be invoked by specifying the function name and providing the input parameters in the request body. The name of the specific function being invoked is provided as the last segment in the request URL following `/workbook/functions/` segments. The function's resulting `value` and any potential `error` strings are returned in the function result object. 
+[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
 
 The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
 
