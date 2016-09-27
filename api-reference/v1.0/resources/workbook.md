@@ -7,7 +7,7 @@ Workbook is the top level object which contains related workbook objects such as
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[functions](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)|Function result object |Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. This returns the function result as a JSON object.|
+|[functions](#functions)|Function result object |Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. This returns the function result as a JSON object.|
 
 ## Properties
 None
