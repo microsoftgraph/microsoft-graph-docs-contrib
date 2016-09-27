@@ -14,7 +14,7 @@ Microsoft Graph provides several optional query parameters that you can use to s
 
 These parameters are compatible with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
 
->  **Note**: In addition, on the **beta** preview version of the Microsoft Graph, you can omit the **$** prefix for a simpler experience; for example, instead of **$expand**, you can simply use **expand**. You can refer to [our blog post](http://dev.office.com/queryparametersinMicrosoftGraph) for more details and examples.  
+>  **Note**: On the Microsoft Graph **beta** endpoint, you can omit the **$** prefix for a simpler experience. For example, instead of **$expand**, you can use **expand**. For more details and examples, see [Supporting query parameters without $ prefixes in Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).  
 
 **Encoding query parameters**
 
