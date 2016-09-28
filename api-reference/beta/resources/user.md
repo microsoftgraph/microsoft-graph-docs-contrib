@@ -38,9 +38,9 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[findmeetingtimes](../api/user_findmeetingtimes.md)|[meetingTimeCandidate](meetingtimecandidate.md)|Find time and locations to meet based on attendee availability, location or time constraints.|
+|[getMailTips](../api/user_getmailtips.md)|[mailTips](mailtips.md) collection|Return the MailTips of one or more recipients as available to the signed-in user. |
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive. |
-|[invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md)| None |Invalidates all of the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This will force the user to sign in to those applications again.|
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 
 
@@ -79,11 +79,9 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
 |preferredName|String|The preferred name for the user.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
-|proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.|
-|refreshTokensValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md) to reset.|
+|proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
-|showInAddressList|Boolean|**true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|
 |skills|String collection|A list for the user to enumerate their skills.|
 |state|String|The state or province in the user's address. Supports $filter.|
 |streetAddress|String|The street address of the user's place of business.|
@@ -118,6 +116,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans shared with the user. |
+|sharepoint|[sharepoint](sharepoint.md)| Access to the user's SharePoint site. Read-only. |
 |scopedAdministratorOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role adminstrative unit memberships for this user. Read-only. Nullable.|
 |tasks|[task](task.md) collection| Read-only. Nullable. Tasks assigned to the user. |
 |trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
@@ -152,7 +151,8 @@ Here is a JSON representation of the resource
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "registeredDevices"
+    "registeredDevices",
+    "sharepoint"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.user"
@@ -221,7 +221,8 @@ Here is a JSON representation of the resource
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sharepoint": { "@odata.type": "microsoft.graph.sharepoint" }
 }
 
 ```
