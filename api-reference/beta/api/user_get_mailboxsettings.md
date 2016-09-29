@@ -1,6 +1,6 @@
-# Get automatic reply settings
+# Get user mailbox settings
 
-Get the settings of the user's mailbox. This includes settings for automatic replies (notify people automatically upon 
+Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies (notify people automatically upon 
 receipt of their email), locale (language and country/region), and time zone.
 
 You can view all mailbox settings, or, get specific settings.
@@ -10,14 +10,14 @@ The following **scope** is required to execute this API:
 *Mailboxsettings.ReadWrite*  
 
 ## HTTP request
-To get all mailbox settings which include automatic replies settings.
+To get all mailbox settings which include automatic replies settings:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/<id|userPrincipalName>/mailboxSettings
 ```
 
-To get specific settings - for example, only the automatic replies settings, locale, or time zone.
+To get specific settings - for example, only the automatic replies settings, locale, or time zone:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
