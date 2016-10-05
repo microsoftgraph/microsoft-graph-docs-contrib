@@ -13,6 +13,10 @@ A folder that contains contacts.
 |[Create child contactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new contactFolder as a child of a specified folder.|
 |[List contacts in folder](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
 |[Create contact in folder](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |Create one or more single-value extended properties in a new or existing contactFolder.   |
+|[Get contactFolder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Get contactFolders that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | Create one or more multi-value extended properties in a new or existing contactFolder.  |
+|[Get contactFolder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Get a contactFolder that contains a multi-value extended property by using `$expand`. |
 
 
 

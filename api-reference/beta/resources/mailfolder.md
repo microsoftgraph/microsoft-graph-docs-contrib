@@ -59,7 +59,9 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
-    "messages"
+    "messages",
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
