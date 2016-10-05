@@ -20,18 +20,18 @@ A message in a mailFolder.
 |[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
-|_**Attachments**_| | |
+|**Attachments**| | |
 |[Create attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
 |[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Gets all attachments on a message.|
-|_**Data extensions**_| | |
+|**Data extensions**| | |
 |[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
-|_**Extended properties**_| | |
+|**Extended properties**| | |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
 |[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
 |[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
-|_**Mailbox settings**_| | |
+|**Mailbox settings**| | |
 |[Get mailbox settings](../api/mailboxsettings_get.md) | [mailboxSettings](mailboxsettings.md) | Get the user's **mailboxSettings**. This includes settings for automatic replies, locale (language and country/region), and time zone. |
 |[Update mailbox settings](../api/mailboxsettings_update.md) | [mailboxSettings](mailboxsettings.md) | Update one or more settings for the user's mailbox. This includes settings for automatic replies, locale, or time zone. |
 
