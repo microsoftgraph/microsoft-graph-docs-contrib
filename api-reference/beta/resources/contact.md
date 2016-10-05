@@ -11,7 +11,9 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "photo"
+    "multiValueExtendedProperties",
+    "photo",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->

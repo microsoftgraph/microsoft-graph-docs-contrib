@@ -45,7 +45,9 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
-    "contacts"
+    "contacts",
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.contactFolder"

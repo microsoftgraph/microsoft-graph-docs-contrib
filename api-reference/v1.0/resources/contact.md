@@ -76,7 +76,10 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "photo"
+    "extensions",
+    "multiValueExtendedProperties",
+    "photo",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.contact"
