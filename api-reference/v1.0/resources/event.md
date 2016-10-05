@@ -17,13 +17,13 @@ An event in a calendar.
 |[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
 |[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
 |[List instances](../api/event_list_instances.md) |[event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
-|_**Attachments**_| | |
+|**Attachments**| | |
 |[List attachments](../api/event_list_attachments.md) |[attachment](attachment.md) collection| Get a Attachment object collection.|
 |[Create attachment](../api/event_post_attachments.md) |[attachment](attachment.md)| Create a new attachment by posting to the attachments collection.|
-|_**Data extensions**_| | |
+|**Data extensions**| | |
 |[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
-|_**Extended properties**_| | |
+|**Extended properties**| | |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
 |[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
