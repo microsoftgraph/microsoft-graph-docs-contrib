@@ -10,7 +10,6 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage_get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
 |[Update](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)  |Update eventMessage object. |
 |[Delete](../api/message_delete.md) | None |Delete eventMessage object. |
 |[copy](../api/message_copy.md)|[Message](message.md)|Copy a message to a folder.|
@@ -22,8 +21,14 @@ An EventMessage is typically found in the Inbox folder where it arrives as the r
 |[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Create attachment](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
+|[List attachments](../api/eventmessage_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
 |[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[eventMessage](eventMessage.md)  |Create one or more single-value extended properties in a new or existing eventMessage.   |
+|[Get eventMessage with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [eventMessage](eventMessage.md) | Get eventMessages that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [eventMessage](eventMessage.md) | Create one or more multi-value extended properties in a new or existing eventMessage.  |
+|[Get eventMessage with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [eventMessage](eventMessage.md) | Get an eventMessage that contains a multi-value extended property by using `$expand`. |
 
 
 ## Properties
@@ -77,7 +82,10 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "attachments",
-    "event"
+    "event",
+    "extensions",
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.eventmessage"
 }-->
