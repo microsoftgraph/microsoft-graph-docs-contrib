@@ -3,6 +3,7 @@
 Use the invitation manager to create an invite, in order to add an external user to the organization. 
 
 The invitation process uses the following flow:
+
 * An invitation is created
 * An invitation is sent to the invited user (containing an invitation link)
 * The invited user clicks on the invitation link, signs in and redeems the invitation and creation of the user entity representing the invited user completes
