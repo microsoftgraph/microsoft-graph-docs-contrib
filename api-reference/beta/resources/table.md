@@ -62,11 +62,16 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": 1024,
-  "name": "string",
+  "highlightFirstColumn": true,
+  "highlightLastColumn": true,
+  "id": "String (identifier)",
+  "name": "String",
+  "showBandedColumns": true,
+  "showBandedRows": true,
+  "showFilterButton": true,
   "showHeaders": true,
   "showTotals": true,
-  "style": "string"
+  "style": "String"
 }
 
 ```

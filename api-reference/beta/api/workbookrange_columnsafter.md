@@ -1,6 +1,6 @@
 # workbookRange: columnsAfter
 
-Get columns after a given range.
+Gets a certain number of columns to the right of the given range.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,

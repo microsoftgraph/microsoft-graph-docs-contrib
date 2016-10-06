@@ -1,5 +1,5 @@
 # workbookRange: resizedRange
-
+Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,
@@ -7,7 +7,7 @@ Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/drive/root/workbook/worksheets/<id>/range/resizedRange(deltarows={n}, deltaColumns={n})
 
 ```
 ### Request headers
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "workbookrange_resizedrange"
 }-->
 ```http
-
+POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/<id>/range/resizedRange(deltarows={n}, deltaColumns={n})
 ```
 
 ##### Response

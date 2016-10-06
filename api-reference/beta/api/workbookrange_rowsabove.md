@@ -1,6 +1,6 @@
 # workbookRange: rowsAbove
 
-Get rows above a given range.
+Gets a certain number of rows above a given range.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,

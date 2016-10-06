@@ -1,21 +1,26 @@
-# workbookRange: visibleView
+# workbookRangeView: itemAt
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: _Files.Read,
-Files.ReadWrite_
+The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/<id>/range(address={address})/visibleView
+
+
 ```
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer <code>|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
+In the request URL, provide following query parameters with values.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|index|Int32||
 
 ### Response
 If successful, this method returns `200, OK` response code and [workbookRangeView](../resources/workbookrangeview.md) object in the response body.
@@ -26,10 +31,10 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "workbookrange_visibleview"
+  "name": "workbookrangeview_itemat"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/<id>/range(addres='A1:Z10')/visibleView
+
 ```
 
 ##### Response
@@ -53,3 +58,13 @@ Content-length: 194
   "index": 99
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "workbookRangeView: itemAt",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

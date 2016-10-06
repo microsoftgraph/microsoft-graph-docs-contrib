@@ -19,7 +19,7 @@ Represents an Excel PivotTable.
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[workbookWorksheet](workbookworksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
+|worksheet|[worksheet](worksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ### JSON representation
 
