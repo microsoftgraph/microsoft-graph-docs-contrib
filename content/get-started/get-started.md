@@ -25,6 +25,16 @@ To explore the finished Connect samples, visit the [Microsoft Graph repo](https:
 	</td> 
   </tr>
   <tr>
+    <td>AngularJS</td>
+    <td>
+		<a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+	</td> 
+    <td>
+		<a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST sample</a> or 
+		<a href="https://github.com/microsoftgraph/angular-connect-sample">SDK sample</a>
+	</td> 
+  </tr>
+  <tr>
     <td>ASP.NET</td>
     <td>
 		<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST sample</a>
