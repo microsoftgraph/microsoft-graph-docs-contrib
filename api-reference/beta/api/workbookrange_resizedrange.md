@@ -7,7 +7,7 @@ Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/<id>/range/resizedRange(deltarows={n}, deltaColumns={n})
+POST /me/drive/root/workbook/worksheets/<id>/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
 ### Request headers
@@ -15,6 +15,13 @@ POST /me/drive/root/workbook/worksheets/<id>/range/resizedRange(deltarows={n}, d
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+
+### Parameters
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|deltarows|Int32|The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it|
+|deltaColumns|Int32|The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.|
 
 ### Request body
 In the request URL, provide following query parameters with values.
@@ -25,7 +32,7 @@ In the request URL, provide following query parameters with values.
 |deltaColumns|Int32||
 
 ### Response
-If successful, this method returns `200, OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
+If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.

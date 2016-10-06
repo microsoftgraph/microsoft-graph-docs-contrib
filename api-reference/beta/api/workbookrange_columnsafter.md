@@ -17,10 +17,17 @@ POST /me/drive/root/workbook/worksheets/<id>/range/columnsAfter(count=n)
 | Authorization  | Bearer {code}|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
+### Parameters
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|count|Int32|The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1|
+
+
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
+If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.

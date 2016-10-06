@@ -6,6 +6,9 @@ RangeView represents a set of visible cells of the parent range.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List rows](../api/workbookrangeview_list_rows.md) |[workbookRangeView](workbookrangeview.md) collection| Get a workbookRangeView object collection.|
+|[Get workbookRangeView](../api/workbookrangeview_get.md) | [workbookRangeView](workbookrangeview.md) |Read properties and relationships of workbookRangeView object.|
+
+
 
 ### Properties
 | Property	   | Type	|Description|
