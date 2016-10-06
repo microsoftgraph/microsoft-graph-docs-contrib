@@ -2,7 +2,8 @@
 
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
 ## Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* or *Files.ReadWrite.All*
+One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* or *Files.ReadWrite.All*. ***Note:*** Currently webhooks only supports delegated permissions in the v1.0 endpoint.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
