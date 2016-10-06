@@ -17,7 +17,7 @@ Apps should renew their subscriptions before they expire. They can also unsubscr
 See the following code samples on GitHub.
 
 * [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET -Webhooks)
+* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 
 Let's take a look at the subscription process.
 
@@ -46,7 +46,7 @@ Or to a top-level resource:
 Or on a drive root item:
 `https://graph.microsoft.com/beta/me/drive/root`
 
-Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for Drive root items.
+Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for OneDrive drive root items and drives associated with SharePoint sites require `Files.ReadWrite.All`. 
 
 Subscriptions expire. The current longest expiration time is three days minus 9-0 minutes from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 
