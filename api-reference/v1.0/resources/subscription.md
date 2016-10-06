@@ -1,4 +1,4 @@
-# subscription resource type
+# Subscription Resource Type
 A subscription allows a client app to receive notifications about data on the Microsoft Graph. Currently subscriptions are enabled for the following datasets:
 
 1. Mail, events, and contacts from Outlook
