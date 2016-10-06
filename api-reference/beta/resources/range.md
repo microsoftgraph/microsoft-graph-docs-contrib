@@ -12,8 +12,8 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |[Boundingrect](../api/range_boundingrect.md)|[Range](range.md)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".|
 |[Cell](../api/range_cell.md)|[Range](range.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.|
 |[Column](../api/range_column.md)|[Range](range.md)|Gets a column contained in the range.|
-|[Columnsafter](../api/workbookrange_columnsafter.md)|[workbookRange](workbookrange.md)||
-|[Columnsbefore](../api/workbookrange_columnsbefore.md)|[workbookRange](workbookrange.md)||
+|[Columnsafter](../api/workbookrange_columnsafter.md)|[workbookRange](workbookrange.md)|Get columns before the range.|
+|[Columnsbefore](../api/workbookrange_columnsbefore.md)|[workbookRange](workbookrange.md)|Get columns after the range.|
 |[Entirecolumn](../api/range_entirecolumn.md)|[Range](range.md)|Gets an object that represents the entire column of the range.|
 |[Entirerow](../api/range_entirerow.md)|[Range](range.md)|Gets an object that represents the entire row of the range.|
 |[Intersection](../api/range_intersection.md)|[Range](range.md)|Gets the range object that represents the rectangular intersection of the given ranges.|
@@ -22,16 +22,16 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |[Lastrow](../api/range_lastrow.md)|[Range](range.md)|Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".|
 |[Offsetrange](../api/range_offsetrange.md)|[Range](range.md)|Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.|
 |[Row](../api/range_row.md)|[Range](range.md)|Gets a row contained in the range.|
-|[Rowsabove](../api/workbookrange_rowsabove.md)|[workbookRange](workbookrange.md)||
-|[Rowsbelow](../api/workbookrange_rowsbelow.md)|[workbookRange](workbookrange.md)||
+|[Rowsabove](../api/workbookrange_rowsabove.md)|[workbookRange](workbookrange.md)|Get rows above the tange|
+|[Rowsbelow](../api/workbookrange_rowsbelow.md)|[workbookRange](workbookrange.md)|Get rows below the range|
 |[Usedrange](../api/range_usedrange.md)|[Range](range.md)|Returns the used range of the given range object.|
 |[Clear](../api/range_clear.md)|None|Clear range values, format, fill, border, etc.|
 |[Delete](../api/range_delete.md)|None|Deletes the cells associated with the range.|
 |[Insert](../api/range_insert.md)|[Range](range.md)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
 |[Merge](../api/range_merge.md)|None|Merge the range cells into one region in the worksheet.|
-|[Resizedrange](../api/workbookrange_resizedrange.md)|[workbookRange](workbookrange.md)||
+|[Resizedrange](../api/workbookrange_resizedrange.md)|[workbookRange](workbookrange.md)|Get resized range based on delta row/columns.|
 |[Unmerge](../api/range_unmerge.md)|None|Unmerge the range cells into separate cells.|
-|[Visibleview](../api/workbookrange_visibleview.md)|[workbookRangeView](workbookrangeview.md)||
+|[Visibleview](../api/workbookrange_visibleview.md)|[workbookRangeView](workbookrangeview.md)|Get the range visible from a filtered range.|
 
 ## Properties
 | Property	   | Type	|Description|

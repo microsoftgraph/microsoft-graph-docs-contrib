@@ -2,7 +2,8 @@
 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Files.Read,
+Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -43,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRange"
+  "@odata.type": "microsoft.graph.range"
 } -->
 ```http
 HTTP/1.1 200 OK

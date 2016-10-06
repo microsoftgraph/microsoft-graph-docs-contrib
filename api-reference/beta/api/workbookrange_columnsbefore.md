@@ -1,26 +1,23 @@
 # workbookRange: columnsBefore
 
+Get columns before a given range.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Files.Read,
+Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-
+POST /me/drive/root/workbook/worksheets/<id>/range/columnsBefore(count=n)
 
 ```
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
-In the request URL, provide following query parameters with values.
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|count|Int32||
 
 ### Response
 If successful, this method returns `200, OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
@@ -31,10 +28,10 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "workbookrange_columnsbefore"
+  "name": "workbookrange_columnsBefore"
 }-->
 ```http
-
+POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/<id>/range/columnsBefore(count=2)
 ```
 
 ##### Response
@@ -42,7 +39,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookRange"
+  "@odata.type": "microsoft.graph.range"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -58,13 +55,3 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "workbookRange: columnsBefore",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

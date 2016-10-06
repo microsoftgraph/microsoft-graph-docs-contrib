@@ -1,40 +1,31 @@
-# workbookRangeView resource type
-
-
-
+# rangeView resource type
+RangeView represents a set of visible cells of the parent range.
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookRangeView](../api/workbookrangeview_get.md) | [workbookRangeView](workbookrangeview.md) |Read properties and relationships of workbookRangeView object.|
-|[Create workbookRangeView](../api/workbookrangeview_post_rows.md) |[workbookRangeView](workbookrangeview.md)| Create a new workbookRangeView by posting to the rows collection.|
+|[Get RangeView](../api/workbookrangeview_get.md) | [workbookRangeView](workbookrangeview.md) |Read properties and relationships of workbookRangeView object.|
 |[List rows](../api/workbookrangeview_list_rows.md) |[workbookRangeView](workbookrangeview.md) collection| Get a workbookRangeView object collection.|
-|[Update](../api/workbookrangeview_update.md) | [workbookRangeView](workbookrangeview.md)	|Update workbookRangeView object. |
-|[Delete](../api/workbookrangeview_delete.md) | None |Delete workbookRangeView object. |
-|[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)||
-|[Range](../api/workbookrangeview_range.md)|[workbookRange](workbookrange.md)||
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|cellAddresses|Json||
-|columnCount|Int32||
-|formulas|Json||
-|formulasLocal|Json||
-|formulasR1C1|Json||
-|id|String| Read-only.|
-|index|Int32||
-|numberFormat|Json||
-|rowCount|Int32||
-|text|Json||
-|valueTypes|Json||
-|values|Json||
+|columnCount|Int32|Returns the number of visible columns. Read-only.|
+|formulas|Json|Represents the formula in A1-style notation.	|
+|formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.	|
+|formulasR1C1|Json|Represents the formula in R1C1-style notation.	|
+|index|Int32|Index of the range.|
+|numberFormat|Json|Represents Excel's number format code for the given cell. Read-only.	|
+|rowCount|Int32|Returns the number of visible rows. Read-only.	|
+|text|Json|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.	|
+|valueTypes|Json|Represents the type of data of each cell. Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
+|values|Json|Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.	|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|rows|[workbookRangeView](workbookrangeview.md) collection| Read-only. Nullable.|
+|rows|[workbookRangeView](workbookrangeview.md) collection| Represents a collection of range views associated with the range. Read-only.	Read-only.|
 
 ### JSON representation
 
@@ -63,15 +54,3 @@ Here is a JSON representation of the resource.
   "valueTypes": "Json",
   "values": "Json"
 }
-
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "workbookRangeView resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -1,20 +1,21 @@
 # workbookPivotTable: refresh
 
+Refreshes the PivotTable.
+
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Files.Read,
+Files.ReadWrite_
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /drive/root/workbook/worksheets/<id>/pivotTables/<id>/refresh
 POST /me/drive/root/workbook/worksheets/<id>/pivotTables/<id>/refresh
-POST /workbooks/<id>/workbook/worksheets/<id>/pivotTables/<id>/refresh
-
 ```
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
@@ -35,22 +36,12 @@ POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/<id>/pivot
 ```
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "workbookPivotTable: refresh",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -1,28 +1,25 @@
-# workbookPivotTable resource type
+# pivotTable resource type
 
-
-
+Represents an Excel PivotTable.
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get workbookPivotTable](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Read properties and relationships of workbookPivotTable object.|
-|[Update](../api/workbookpivottable_update.md) | [workbookPivotTable](workbookpivottable.md)	|Update workbookPivotTable object. |
-|[Delete](../api/workbookpivottable_delete.md) | None |Delete workbookPivotTable object. |
-|[Refresh](../api/workbookpivottable_refresh.md)|None||
-|[Refreshall](../api/workbookpivottable_refreshall.md)|None||
+|[Refresh](../api/workbookpivottable_refresh.md)|None|Refreshes the PivotTable.	|
+|[Refreshall](../api/workbookpivottable_refreshall.md)|None|Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.|
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
-|name|String||
+|id|String| Id of the PivotTable.	Read-only.|
+|name|String|Name of the PivotTable.	|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[workbookWorksheet](workbookworksheet.md)| Read-only. Nullable.|
+|worksheet|[workbookWorksheet](workbookworksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ### JSON representation
 
@@ -43,13 +40,3 @@ Here is a JSON representation of the resource.
 }
 
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "workbookPivotTable resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
