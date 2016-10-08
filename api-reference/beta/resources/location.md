@@ -7,8 +7,10 @@ Represents location information of an event.
 | Property  | Type   | Description                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicalAddress.md) |The street address of the location. |
+| coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) | The geographic coordinates and elevation of the location. |
 | displayName  | String | The name associated with the location.                       |
-
+| locationEmailAddress | String | Optional email address of the location. |
+| locationUri | String | Optional URI representing the location. |
 
 
 ## JSON representation
@@ -23,7 +25,10 @@ Represents location information of an event.
 ```json
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "displayName": "string"
+  "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "displayName": "string",
+  "locationEmailAddress": "string",
+  "locationUri": "string"
 }
 
 ```
