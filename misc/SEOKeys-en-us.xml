@@ -17,18 +17,18 @@
 		<Item text="Call Microsoft Graph in a service or daemon app" url="/en-us/authorization/app_only" SEODescription="Connect your single-tenant service or daemon app to Office 365 and call the Microsoft Graph API." />
 	</Item>
   </Item>
-  <Item text="Get started" url="/en-us/platform/get-started">
-    <Item text="ASP.NET MVC" url="/en-us/platform/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
-    <Item text="UWP" url="/en-us/platform/uwp" SEOKeyword="UWP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Windows Universal Platfrom app" />
-    <Item text="iOS" url="/en-us/platform/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
-    <Item text="Android" url="/en-us/platform/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
-    <Item text="Angular" url="/en-us/platform/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Angular app" />
-    <Item text="Node.js" url="/en-us/platform/nodejs" SEOKeyword="Node.js, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Node.js app" />
-    <Item text="PHP" url="/en-us/platform/php" SEOKeyword="PHP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a PHP app" />
-    <Item text="Python" url="/en-us/platform/python" SEOKeyword="Python, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Python app" />
-    <Item text="Ruby" url="/en-us/platform/ruby" SEOKeyword="Ruby, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Ruby app" />
-    <Item text="REST" url="/en-us/platform/rest" SEOKeyword="REST, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a REST" />
-    <Item text="Xamarin" url="/en-us/platform/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
+  <Item text="Get started" url="/en-us/get-started/get-started">
+    <Item text="ASP.NET MVC" url="/en-us/get-started/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
+    <Item text="UWP" url="/en-us/get-started/uwp" SEOKeyword="UWP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Windows Universal Platfrom app" />
+    <Item text="iOS" url="/en-us/get-started/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
+    <Item text="Android" url="/en-us/get-started/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
+    <Item text="Angular" url="/en-us/get-started/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Angular app" />
+    <Item text="Node.js" url="/en-us/get-started/nodejs" SEOKeyword="Node.js, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Node.js app" />
+    <Item text="PHP" url="/en-us/get-started/php" SEOKeyword="PHP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a PHP app" />
+    <Item text="Python" url="/en-us/get-started/python" SEOKeyword="Python, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Python app" />
+    <Item text="Ruby" url="/en-us/get-started/ruby" SEOKeyword="Ruby, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Ruby app" />
+    <Item text="REST" url="/en-us/get-started/rest" SEOKeyword="REST, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a REST" />
+    <Item text="Xamarin" url="/en-us/get-started/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
   </Item>
   <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
     <Item text="Users" url="/en-us/api-reference/v1.0/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
@@ -629,8 +629,8 @@
         <Item text="List bucket tasks" url="/en-us/api-reference/beta/api/bucket_list_tasks" SEOKeyword="List tasks, Microsoft Graph API, bucket API" SEODescription="Retrieve a list of task objects." />
       </Item>
       <Item text="plan" url="/en-us/api-reference/beta/resources/plan" SEOKeyword="plan API, Microsoft Graph API, plan API" SEODescription="">
-        <Item text="List plans" url="/en-us/api-reference/beta/api/user_list_plans" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
-        <Item text="Create plan" url="/en-us/api-reference/beta/api/user_post_plans" SEOKeyword="Create plan, Microsoft Graph API, user API" SEODescription="Use this API to create a new plan." />
+        <Item text="List plans" url="/en-us/api-reference/beta/api/plan_list" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
+        <Item text="Create plan" url="/en-us/api-reference/beta/api/plan_post_plans" SEOKeyword="Create plan, Microsoft Graph API, user API" SEODescription="Use this API to create a new plan." />
         <Item text="Get plan" url="/en-us/api-reference/beta/api/plan_get" SEOKeyword="Get plan, Microsoft Graph API, plan API" SEODescription="Retrieve the properties and relationships of plan object." />
         <Item text="Update plan" url="/en-us/api-reference/beta/api/plan_update" SEOKeyword="Update plan, Microsoft Graph API, plan API" SEODescription="Update the properties of plan object." />
         <Item text="Delete plan" url="/en-us/api-reference/beta/api/plan_delete" SEOKeyword="Delete plan, Microsoft Graph API, plan API" SEODescription="Delete plan." />
