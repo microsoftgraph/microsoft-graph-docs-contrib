@@ -10,7 +10,7 @@ You can use Microsoft Graph to:
 
 **Microsoft Graph development stack**
 
-![Microsoft Graph API development stack.](./images/MicrosoftGraph_DevStack.png)
+![A diagram that shows the layers of the Microsoft Graph developer stack. At the bottom is the data layer, which includes users, groups, file, mail, calendars, personal contacts, tasks, org contacts, people, Excel, and notes. The next layer is authentication and authorization. Next is the development environment of your choice, including the Android, iOS, and Visual Studio Microsoft Graph API SDKs. The final layer is your solution, which uses the technology of your choice, including .NET, JS, HTML, and Ruby, and is hosted on Microsoft Azure or another hosting platform.](./images/MicrosoftGraph_DevStack.png)
 
 <!--<a name="msg_queries"> </a>-->
 
@@ -25,7 +25,7 @@ Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint inclu
 |   GET my photo	 | [`https://graph.microsoft.com/v1.0/me/photo/$value`](/graph-explorer/#?request=me%2Fphoto%2F%24value&version=v1.0) |
 |   GET my mail |	[`https://graph.microsoft.com/v1.0/me/messages`](/graph-explorer/#?request=me%2Fmessages&version=v1.0) |
 |   GET my high importance email | [`https://graph.microsoft.com/v1.0/me/messages?$filter=importance%20eq%20'high'`](/graph-explorer/#?request=me%2Fmessages%3F%24filter%3Dimportance%2520eq%2520'high'&version=v1.0) |
-|   GET my calendar |	[`https://graph.microsoft.com/v1.0/me/calendar`](/graph-explorer/#?request=me%2Fcalendar&version=v1.0)) |
+|   GET my calendar |	[`https://graph.microsoft.com/v1.0/me/calendar`](/graph-explorer/#?request=me%2Fcalendar&version=v1.0) |
 |   GET my manager	| [`https://graph.microsoft.com/v1.0/me/manager`](/graph-explorer/#?request=me%2Fmanager&version=v1.0) |
 |   GET last user to modify file foo.txt |	[`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser`](/graph-explorer/#?request=me%2Fdrive%2Froot%2Froot%2Fchildren%2Ffoo.txt%2FlastModifiedByUser&version=v1.0) |
 |   GET unified groups I’m member of|	[`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](/graph-explorer/#?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified'&version=v1.0)) |
