@@ -4,19 +4,19 @@ Microsoft Graph exposes multiple APIs from Office 365 and other Microsoft cloud 
  
 You can use Microsoft Graph to:
 
-- Access data from multiple Microsoft cloud services, including Azure Active Directory, Exchange, SharePoint, OneDrive, OneNote, and Planner.
+- Access data from multiple Microsoft cloud services, including Azure Active Directory, Exchange Online as part of Office 365, SharePoint, OneDrive, OneNote, and Planner.
 - Navigate between entities and relationships.
 - Access intelligence and insights from the Microsoft cloud (for commercial users).
 
-**Microsoft Graph developer stack**
+**Microsoft Graph development stack**
 
-![Microsoft Graph API developer stack.](./images/MicrosoftGraph_DevStack.png)
+![Microsoft Graph API development stack.](./images/MicrosoftGraph_DevStack.png)
 
 <!--<a name="msg_queries"> </a>-->
 
 ##Common Microsoft Graph queries
 
-Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint includes the resources that you can access in your production app. The /beta endpoint includes APIs that are currently in preview. The following table lists some common queries that you can use to access the Microsoft Graph API.
+Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint includes the resources that you can access in your production app. The [/beta](http://graph.microsoft.io/en-us/docs/api-reference/beta/beta-overview) endpoint includes APIs that are currently in preview. The following table lists some common queries that you can use to access the Microsoft Graph API.
 
 | **Operation**	| **Service endpoint** |
 |:--------------------------|:----------------------------------------|
@@ -43,9 +43,9 @@ Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint inclu
 
 ##Explore Microsoft Graph
 
-- Get started using Microsoft Graph and the platform of your choice.
+- [Get started](../get-started/get-started) using Microsoft Graph and the platform of your choice.
 - Discover the resources and operations that you can use in your production apps by browsing the TOC.
-- Preview the new beta APIs.
+- Preview the new [/beta APIs](http://graph.microsoft.io/en-us/docs/api-reference/beta/beta-overview).
 - Visit the [Microsoft Graph Explorer](https://graph.microsoft.io/en-us/graph-explorer).
 
  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with [MicrosoftGraph] and [office365].
