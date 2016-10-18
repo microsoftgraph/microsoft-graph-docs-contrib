@@ -40,12 +40,24 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "1919-1991-112-1",
-      "name": "Team A Subsite"
+      "id": "da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
+      "name": "Team A Subsite",
+      "description": "",
+      "createdDateTime": "2016-10-18T03:05:59Z",
+      "lastModifiedDateTime": 2016-10-18T10:40:59Z",
+      "webUrl": "https://contoso.sharepoint.com/sites/site/subsiteA",
+      "siteCollectionId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
+      "siteId": "712a596e-90a1-49e3-9b48-bfa80bee8740"
     },
     {
-      "id": "1919-1991-122-2",
-      "name": "Team B Subsite"
+      "id": "da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
+      "name": "Team B Subsite",
+      "description": "",
+      "createdDateTime": "2016-10-18T03:05:59Z",
+      "lastModifiedDateTime": 2016-10-18T10:40:59Z",
+      "webUrl": "https://contoso.sharepoint.com/sites/site/subsiteB",
+      "siteCollectionId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
+      "siteId": "0271110f-634f-4300-a841-3a8a2e851851"
     }
   ]
 }
