@@ -32,4 +32,4 @@ IF NOT DEFINED APIDOCS_PATH (
 ::remarked below line as we are not going to use walkthroughs folder
 ::%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\content\walkthroughs --output %DEPLOYMENT_TARGET_DIR%\platform --template %DEPLOYMENT_TEMPLATE% --format mustache --insert-gitInfo true --gitUrl https://github.com/OfficeDev/microsoft-graph-docs/tree/master/content/walkthroughs
 
-%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\get-started --output %DEPLOYMENT_TARGET_DIR%\platform --template %DEPLOYMENT_TEMPLATE% --format mustache --insert-gitInfo true --gitUrl https://github.com/OfficeDev/microsoft-graph-docs/tree/master/get-started
+%APIDOCS_PATH%\apidocs.exe publish --path %DEPLOYMENT_SOURCE%\get-started --output %DEPLOYMENT_TARGET_DIR%\get-started --template %DEPLOYMENT_TEMPLATE% --format mustache --insert-gitInfo true --gitUrl https://github.com/OfficeDev/microsoft-graph-docs/tree/master/get-started
