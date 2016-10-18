@@ -54,7 +54,7 @@ Content-type: application/json
       "name": "Team B Subsite",
       "description": "",
       "createdDateTime": "2016-10-18T03:05:59Z",
-      "lastModifiedDateTime": 2016-10-18T10:40:59Z",
+      "lastModifiedDateTime": "2016-10-18T10:40:59Z",
       "webUrl": "https://contoso.sharepoint.com/sites/site/subsiteB",
       "siteCollectionId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
       "siteId": "0271110f-634f-4300-a841-3a8a2e851851"
