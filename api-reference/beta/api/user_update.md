@@ -78,7 +78,7 @@ Content-length: 491
   ],
   "assignedPlans": [
     {
-      "assignedDateTime": "datetime-value",
+      "assignedDateTime": "2016-10-19T10:37:00Z",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
@@ -113,7 +113,7 @@ Content-length: 491
   ],
   "assignedPlans": [
     {
-      "assignedDateTime": "datetime-value",
+      "assignedDateTime": "2016-10-19T10:37:00Z",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "servicePlanId-value"

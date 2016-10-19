@@ -41,7 +41,7 @@ Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",
-  "birthday": "datetime-value",
+  "birthday": "2016-10-19T10:37:00Z",
   "fileAs": "fileAs-value",
   "displayName": "displayName-value",
   "givenName": "givenName-value",
@@ -63,7 +63,7 @@ Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",
-  "birthday": "datetime-value",
+  "birthday": "2016-10-19T10:37:00Z",
   "fileAs": "fileAs-value",
   "displayName": "displayName-value",
   "givenName": "givenName-value",

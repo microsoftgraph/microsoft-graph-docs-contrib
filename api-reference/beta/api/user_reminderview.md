@@ -61,11 +61,11 @@ Content-length: 673
     {
       "eventId": "eventId-value",
       "eventStartTime": {
-        "dateTime": "dateTime-value",
+        "dateTime": "2016-10-19T10:37:00Z",
         "timeZone": "timeZone-value"
       },
       "eventEndTime": {
-        "dateTime": "dateTime-value",
+        "dateTime": "2016-10-19T10:37:00Z",
         "timeZone": "timeZone-value"
       },
       "changeKey": "changeKey-value",

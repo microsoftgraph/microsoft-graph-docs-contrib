@@ -50,7 +50,7 @@ Content-length: 504
         "id": "id-value"
       }
     },
-    "createdDateTime": "datetime-value",
+    "createdDateTime": "2016-10-19T10:37:00Z",
     "cTag": "cTag-value",
     "description": "description-value",
     "eTag": "eTag-value"
@@ -87,7 +87,7 @@ Content-length: 504
         "id": "id-value"
       }
     },
-    "createdDateTime": "datetime-value",
+    "createdDateTime": "2016-10-19T10:37:00Z",
     "cTag": "cTag-value",
     "description": "description-value",
     "eTag": "eTag-value"

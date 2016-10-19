@@ -46,7 +46,7 @@ Content-length: 201
 {
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
+  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],

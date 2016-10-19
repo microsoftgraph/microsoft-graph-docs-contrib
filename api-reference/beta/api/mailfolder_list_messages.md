@@ -48,8 +48,8 @@ Content-length: 317
 {
   "value": [
     {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
+      "receivedDateTime": "2016-10-19T10:37:00Z",
+      "sentDateTime": "2016-10-19T10:37:00Z",
       "hasAttachments": true,
       "subject": "subject-value",
       "body": {

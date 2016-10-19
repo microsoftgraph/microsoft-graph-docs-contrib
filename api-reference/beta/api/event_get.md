@@ -78,17 +78,17 @@ Content-length: 285
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
     "response": "",
-    "time": "datetime-value"
+    "time": "2016-10-19T10:37:00Z"
   },
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true,
   "start": {
-    "dateTime": "datetime-value",
+    "dateTime": "2016-10-19T10:37:00Z",
     "timeZone": "timezone-value"
   },
   "end": {
-    "dateTime": "datetime-value",
+    "dateTime": "2016-10-19T10:37:00Z",
     "timeZone": "timezone-value"
   },        
   "location": {
