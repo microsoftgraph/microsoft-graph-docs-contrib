@@ -58,6 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",

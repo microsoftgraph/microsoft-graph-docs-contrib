@@ -15,14 +15,14 @@ The invitedUserMessageInfo object allows you to configure the [invitation](invit
 
 Here is a JSON representation of the resource
 
+<!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->
 ```json
 {
-  "ccRecipients":[{"@odata.type": "microsoft.graph.Recipients"}],
+  "ccRecipients": [ {"@odata.type": "microsoft.graph.recipient"} ],
   "customizedMessageBody": "string",
   "messageLanguage": "string"
 }
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2016-22-25 14:57:30 UTC -->

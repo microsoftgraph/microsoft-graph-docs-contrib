@@ -45,7 +45,7 @@ The **baseItem** resource has the following properties.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/baseItem",
-  "tocBookmarks" {
+  "tocBookmarks": {
     "Site": "#"
   }
 } -->

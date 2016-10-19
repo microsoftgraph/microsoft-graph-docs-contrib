@@ -99,7 +99,7 @@ The **site** resource has the following relationships to other resources.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/Site",
-  "tocBookmarks" {
+  "tocBookmarks": {
     "Site": "#"
   }
 } -->
