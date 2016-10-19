@@ -57,10 +57,10 @@ Register an app on the Microsoft App Registration Portal. This generates the app
          
    b. Copy the graph-js-sdk-web.js file from the **/starter-project/node_modules/msgraph-sdk-javascript/lib** folder to the **/starter-project/public/scripts** folder.
    
-   c. In the **public/index.html** file, add the following code inside the **head** element:
+   c. In the **public/index.html** file, add the following code to the **head** element above the `<!-- App code. -->` section:
    
         <!--Include Graph SDK -->
-        <script src="/scripts/graph-sdk-web.js"></script>
+        <script src="/scripts/graph-js-sdk-web.js"></script>
 
   
 ## Authenticate the user and get an access token
@@ -129,7 +129,7 @@ Now back to building the app.
           delete localStorage.user;
         },
 
-4. If you're using the SDK, open app.js and add the following code to the bottom of the file. This initializes the Microsoft Graph SDK.
+4. **If you're using the Microsoft Graph SDK,** open app.js and add the following code to the bottom of the file. This initializes the SDK.
 
         var authToken;
         var graphClient = MicrosoftGraph.init({
@@ -181,7 +181,7 @@ If you're using the Microsoft Graph SDK, read on. If you're using REST, see the 
               authToken = auth.access_token;
 
               // This header has been added to identify our sample in the Microsoft Graph service. If extracting this code for your project please remove.
-              $http.defaults.headers.common.SampleID = 'angular-connect-rest-sample';
+              $http.defaults.headers.common.SampleID = 'angular-connect-starter';
 
               if (localStorage.getItem('user') === null) {
 
