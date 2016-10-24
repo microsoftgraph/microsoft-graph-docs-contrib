@@ -53,14 +53,14 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 5. **If you're using the Microsoft Graph SDK**, install and reference the SDK.  
    a. In the command prompt, run the following command to install the SDK.
         
-        npm install msgraph-sdk-javascript
+        bower install msgraph-sdk-javascript
          
    b. Copy the graph-js-sdk-web.js file from the **/starter-project/node_modules/msgraph-sdk-javascript/lib** folder to the **/starter-project/public/scripts** folder.
    
    c. In the **public/index.html** file, add the following code to the **head** element above the `<!-- App code. -->` section:
    
         <!--Include Graph SDK -->
-        <script src="/scripts/graph-js-sdk-web.js"></script>
+        <script src="/bower_components/hello/dist/hello.all.js"></script>
 
   
 ## Authenticate the user and get an access token
