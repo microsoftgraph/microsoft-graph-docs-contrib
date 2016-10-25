@@ -45,7 +45,7 @@ Content-length: 180
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
-  "expiryTime": "datetime-value",
+  "expiryTime": "2016-10-19T10:37:00Z",
   "principalId": "principalId-value",
   "resourceId": "resourceId-value"
 }
@@ -65,7 +65,7 @@ Content-length: 200
 {
   "clientId": "clientId-value",
   "consentType": "consentType-value",
-  "expiryTime": "datetime-value",
+  "expiryTime": "2016-10-19T10:37:00Z",
   "id": "id-value",
   "principalId": "principalId-value",
   "resourceId": "resourceId-value"

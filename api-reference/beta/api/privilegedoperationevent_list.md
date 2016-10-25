@@ -64,7 +64,7 @@ Content-length: 227
 Here is an example of the request using $filter to get the audit events that have ``requestType`` as ``Elevate``.
 <!-- { "blockType": "request" } -->
 ```http
-GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType eq 'Elevate'
+GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Elevate'
 ```
 ##### Response 2
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

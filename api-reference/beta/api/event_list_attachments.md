@@ -81,7 +81,7 @@ Content-length: 215
       "contentLocation": "contentLocation-value",
       "contentBytes": "contentBytes-value",
       "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
+      "lastModifiedDateTime": "2016-10-19T10:37:00Z",
       "id": "id-value",
       "isInline": false,
       "isContactPhoto": false,

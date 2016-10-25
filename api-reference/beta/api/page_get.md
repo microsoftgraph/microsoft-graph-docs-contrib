@@ -65,7 +65,7 @@ Content-length: 312
   },
   "contentUrl": "contentUrl-value",
   "content": "content-value",
-  "lastModifiedTime": "datetime-value"
+  "lastModifiedTime": "2016-10-19T10:37:00Z"
 }
 ```
 

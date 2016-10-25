@@ -55,7 +55,7 @@ Content-length: 237
       "userId": "userId-value",
       "roleId": "roleId-value",
       "isElevated": true,
-      "expirationDateTime": "datetime-value",
+      "expirationDateTime": "2016-10-19T10:37:00Z",
       "resultMessage": "resultMessage-value"
     }
   ]

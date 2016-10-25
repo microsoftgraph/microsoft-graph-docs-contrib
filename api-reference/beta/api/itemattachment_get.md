@@ -90,7 +90,7 @@ Content-length: 162
 
 {
 "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
-  "lastModifiedDateTime": "datetime-value",
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,

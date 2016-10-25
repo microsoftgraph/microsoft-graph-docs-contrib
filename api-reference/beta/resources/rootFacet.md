@@ -23,7 +23,7 @@ The **Root** resource has no properties.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/Root",
-  "tocBookmarks" {
+  "tocBookmarks": {
     "Root": "#"
   }
 } -->

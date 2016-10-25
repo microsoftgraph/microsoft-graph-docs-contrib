@@ -6,7 +6,6 @@ RangeView represents a set of visible cells of the parent range.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List rows](../api/workbookrangeview_list_rows.md) |[workbookRangeView](workbookrangeview.md) collection| Get a workbookRangeView object collection.|
-|[Get workbookRangeView](../api/workbookrangeview_get.md) | [workbookRangeView](workbookrangeview.md) |Read properties and relationships of workbookRangeView object.|
 |[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|Get a range view item based in index.|
 |[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Return the range object associated with the range view|
 
@@ -35,9 +34,7 @@ RangeView represents a set of visible cells of the parent range.
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->
 ```json
@@ -55,3 +52,4 @@ Here is a JSON representation of the resource.
   "valueTypes": "Json",
   "values": "Json"
 }
+```

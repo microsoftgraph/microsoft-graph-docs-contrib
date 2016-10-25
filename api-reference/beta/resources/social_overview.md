@@ -30,13 +30,13 @@ Include the next sentence when supporting events.
 
 - Create mentions in a new message
 
-  - [Create and send mentions as part of a new message](../api/user_sendmail.md#request-2)
-  - [Create mentions as part of a message draft](../api/user_post_messages.md#request-2)
+  - [Create and send mentions as part of a new message](../api/user_sendmail.md)
+  - [Create mentions as part of a message draft](../api/user_post_messages.md)
 
 - Get information about mentions in a message
 
   - [Get all the messages in the signed-in user's mailbox that mention the user](../api/user_list_messages.md#request-2)
-  - [Get details of each mention in a message](../api/message_get.md#request-2)
+  - [Get details of each mention in a message](../api/message_get.md)
 
 - [Delete a mention](../api/message_delete.md#request-2) in a message
 

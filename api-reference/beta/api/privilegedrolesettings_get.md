@@ -46,9 +46,9 @@ Content-type: application/json
 Content-length: 228
 
 {
-  "minElevationDuration": "datetime-value",
-  "maxElavationDuration": "datetime-value",
-  "elevationDuration": "datetime-value",
+  "minElevationDuration": "2016-10-19T10:37:00Z",
+  "maxElavationDuration": "2016-10-19T10:37:00Z",
+  "elevationDuration": "2016-10-19T10:37:00Z",
   "id": "id-value",
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true

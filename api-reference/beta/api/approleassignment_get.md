@@ -45,7 +45,7 @@ Content-type: application/json
 Content-length: 253
 
 {
-  "creationTimestamp": "datetime-value",
+  "creationTimestamp": "2016-10-19T10:37:00Z",
   "id": "id-value",
   "principalDisplayName": "principalDisplayName-value",
   "principalId": "principalId-value",
