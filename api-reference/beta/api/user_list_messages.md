@@ -1,11 +1,11 @@
 # List messages
 
-Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). 
+Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
 
 In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
 
 Note that by default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
-to [find details of each mention in a message](message_get.md).
+to [find details of each mention in a message](../api/message_get.md#request-2).
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
