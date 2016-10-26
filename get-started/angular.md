@@ -36,9 +36,9 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 5. Under **Platforms**, choose **Add Platform** > **Web**.
 
-7. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:8080/login* as the Redirect URI. 
+6. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:8080* as the Redirect URI. 
 
-8. Choose **Save**.
+7. Choose **Save**.
 
 
 ## Configure the project
@@ -46,18 +46,16 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 2. In a command prompt, run the following commands in the root directory of the starter project. This installs the project dependencies.
 
         npm install  
-        bower install hello
+        bower install
     
 3. In the starter project files, in the **public/scripts** folder, open config.js.
 4. In the **clientId** field, replace the **ENTER_YOUR_CLIENT_ID** placeholder value with the application ID you just copied.
 5. **If you're using the Microsoft Graph SDK**, install and reference the SDK.  
    a. In the command prompt, run the following command to install the SDK.
         
-        bower install msgraph-sdk-javascript
+        bower install https://github.com/microsoftgraph/msgraph-sdk-javascript.git
          
-   b. Copy the graph-js-sdk-web.js file from the **/starter-project/node_modules/msgraph-sdk-javascript/lib** folder to the **/starter-project/public/scripts** folder.
-   
-   c. In the **public/index.html** file, add the following code to the **head** element above the `<!-- App code. -->` section:
+   b. In the **public/index.html** file, add the following code to the **head** element above the `<!-- App code. -->` section:
    
         <!--Include Graph SDK -->
         <script src="/bower_components/hello/dist/hello.all.js"></script>
