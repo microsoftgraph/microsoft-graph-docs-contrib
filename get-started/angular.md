@@ -58,7 +58,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
    b. In the **public/index.html** file, add the following code to the **head** element above the `<!-- App code. -->` section:
    
         <!--Include Graph SDK -->
-        <script src="/bower_components/hello/dist/hello.all.js"></script>
+        <script src="./bower_components/msgraph-sdk-javascript/lib/graph-js-sdk-web.js"></script>
 
   
 ## Authenticate the user and get an access token
