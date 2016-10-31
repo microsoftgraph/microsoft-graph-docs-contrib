@@ -2,7 +2,7 @@
 
 This article describes the tasks required to get an access token from Azure AD and call Microsoft Graph. It walks you through the [Microsoft Graph Connect Sample for Python](https://github.com/microsoftgraph/python3-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph API. The article describes how to access Microsoft Graph by using direct REST calls.
 
-![Office 365 Python Connect sample screenshot](../images/web-screenshot.png)
+![Office 365 Python Connect sample screenshot](./images/web-screenshot.png)
 
 > **Note** This walkthrough and the sample that it's based on use the Azure AD endpoint. Check back soon for updated versions that use the Azure AD v2.0 endpoint.
 
