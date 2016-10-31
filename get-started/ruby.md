@@ -6,7 +6,7 @@ To download a version of the Connect sample that uses the Azure AD endpoint, see
 
 The following image shows the app you'll create. 
 
-![Microsoft Ruby on Rails Connect sample screenshot](./images/Microsoft-Graph-Ruby-Connect-UI.png)
+![Microsoft Ruby on Rails Connect sample screenshot](../images/Microsoft-Graph-Ruby-Connect-UI.png)
 
 **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast, or download the [Ruby REST Connect sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) that this article is based on.
 

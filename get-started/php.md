@@ -4,7 +4,7 @@ This article describes the tasks required to get an access token from the Azure 
 
 To use Microsoft Graph in your PHP app, you need to show the Microsoft sign in page to your users. The following screenshot shows a sign in page for Microsoft accounts.
 
-![Sign in page for Microsoft accounts](images/MicrosoftSignIn.png)
+![Sign in page for Microsoft accounts](../images/MicrosoftSignIn.png)
 
 **Don't feel like building an app?** Get up and running fast by downloading the [Connect Sample for PHP](https://github.com/microsoftgraph/php-connect-rest-sample) that this article is based on.
 

@@ -8,7 +8,7 @@ This article describes the tasks required to get an access token from the Azure 
 
 To use Microsoft Graph in your app for Android, you need to show the Microsoft sign in page to your users, as shown in the following screenshot.
 
-![Sign in page for Microsoft accounts on Android](images/AndroidConnect.png)
+![Sign in page for Microsoft accounts on Android](../images/AndroidConnect.png)
 
 **Don't feel like building an app?** Get up and running fast by downloading the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) that this article is based on.
 
