@@ -12,7 +12,7 @@ The Microsoft Graph supports two authentication providers:
 
 > To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and use the [Azure Management Portal](https://aka.ms/aadapplist) to manage your apps.
 
-![Microsoft Graph application stack, with authentication shown as a layer between your app and the various Microsoft Graph resources.](../images/MSGraph_DevStack_v2Auth.png)
+![Microsoft Graph application stack, with authentication shown as a layer between your app and the various Microsoft Graph resources.](./images/MSGraph_DevStack_v2Auth.png)
 
 ## Deciding between the Azure AD and Azure AD v2.0 endpoints
 

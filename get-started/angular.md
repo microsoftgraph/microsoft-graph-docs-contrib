@@ -4,7 +4,7 @@ This article describes the tasks required to get an access token from the Azure 
 
 The following image shows the app you'll create. 
 
-![The web app after login showing the "Send mail" button](../images/angular-connect-sample.png)
+![The web app after login showing the "Send mail" button](./images/angular-connect-sample.png)
 
 
 **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.

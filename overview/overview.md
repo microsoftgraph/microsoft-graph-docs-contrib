@@ -10,7 +10,7 @@ You can use Microsoft Graph to:
 
 **Microsoft Graph development stack**
 
-![A diagram that shows the layers of the Microsoft Graph development stack. At the bottom is the data layer, which includes users, groups, file, mail, calendars, personal contacts, tasks, org contacts, people, Excel, and notes. The next layer is authentication and authorization. Next is the development environment of your choice, including the Android, iOS, and Visual Studio Microsoft Graph API SDKs. The final layer is your solution, which uses the technology of your choice, including .NET, JS, HTML, and Ruby, and is hosted on Microsoft Azure or another hosting platform.](../images/MicrosoftGraph_DevStack.png)
+![A diagram that shows the layers of the Microsoft Graph development stack. At the bottom is the data layer, which includes users, groups, file, mail, calendars, personal contacts, tasks, org contacts, people, Excel, and notes. The next layer is authentication and authorization. Next is the development environment of your choice, including the Android, iOS, and Visual Studio Microsoft Graph API SDKs. The final layer is your solution, which uses the technology of your choice, including .NET, JS, HTML, and Ruby, and is hosted on Microsoft Azure or another hosting platform.](./images/MicrosoftGraph_DevStack.png)
 
 <!--<a name="msg_queries"> </a>-->
 
