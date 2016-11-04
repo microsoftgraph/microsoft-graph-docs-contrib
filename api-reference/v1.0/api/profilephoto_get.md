@@ -4,6 +4,8 @@ Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (
 
 A GET operation looks for the specified photo in the user's mailbox on Exchange Online.
 
+> **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API for:
 
