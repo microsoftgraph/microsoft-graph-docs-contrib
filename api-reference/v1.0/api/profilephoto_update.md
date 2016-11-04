@@ -6,6 +6,9 @@ you can add to under 4MB.
 
 You can use either PATCH or PUT for this operation in version 1.0.
 
+> **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
+
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API for:
 
