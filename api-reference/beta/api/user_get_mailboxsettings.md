@@ -34,7 +34,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer `<token>`. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -137,7 +137,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get automatic reply settings",
+  "description": "Get mailbox settings",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
