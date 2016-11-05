@@ -31,9 +31,6 @@ A message in a mailFolder.
 |[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
 |[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
-|**Mailbox settings**| | |
-|[Get mailbox settings](../api/mailboxsettings_get.md) | [mailboxSettings](mailboxsettings.md) | Get the user's **mailboxSettings**. This includes settings for automatic replies, locale (language and country/region), and time zone. |
-|[Update mailbox settings](../api/mailboxsettings_update.md) | [mailboxSettings](mailboxsettings.md) | Update one or more settings for the user's mailbox. This includes settings for automatic replies, locale, or time zone. |
 
 
 ## Properties
@@ -141,6 +138,12 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
+- [Get mailbox settings](../api/user_get_mailboxsettings.md) 
+- [Update mailbox settings](../api/user_update_mailboxsettings.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
