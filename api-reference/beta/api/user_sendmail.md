@@ -1,6 +1,6 @@
-# user: sendMail
+# Send mail
 
-Send the message specified in the request body on the fly. You can optionally save the message in the Sent Items folder.
+Send the message specified in the request body. You can optionally save the message in the Sent Items folder.
 
 In the same **sendMail** action call, you can:
 
