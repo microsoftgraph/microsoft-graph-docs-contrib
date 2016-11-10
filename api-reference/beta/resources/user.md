@@ -79,8 +79,10 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |preferredName|String|The preferred name for the user.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
 |proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
+|refreshTokensValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md) to reset.|
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
+|showInAddressList|Boolean|**true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|
 |skills|String collection|A list for the user to enumerate their skills.|
 |state|String|The state or province in the user's address. Supports $filter.|
 |streetAddress|String|The street address of the user's place of business.|
