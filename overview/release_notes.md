@@ -18,7 +18,7 @@ Reading and updating a user's profile photo is only possible if the user has a m
 	}
 ```
 
- > **NOTE**:  Shortly after GA, storage and retrieval of user profile photos will be enabled, even if the user does not have a mailbox, and this error should disappear.
+ > **Note**:  Shortly after GA, storage and retrieval of user profile photos will be enabled, even if the user does not have a mailbox, and this error should disappear.
 
 #### Default contacts folder
 
@@ -69,7 +69,7 @@ Some functionality is not yet available in Microsoft Graph. If you don't see the
 #### Synchronization
 Outlook, OneDrive and Azure AD synchronization capabilities (in Azure AD this is also known as differential query) are not available in `/v1.0` or `/beta`.  If your application requires synchronization capabilities, please continue to use the existing Office 365 and Azure AD REST APIs, or explore the new webhooks preview feature offered through Microsoft Graph for events, messages and contacts.
 
-> **NOTE**: Our goal is to close the gap between the existing APIs and Microsoft Graph as quickly as possible, including synchronization.
+> **Note**: Our goal is to close the gap between the existing APIs and Microsoft Graph as quickly as possible, including synchronization.
 
 #### Batching
 Batching is not supported by Microsoft Graph. You can, however, use the Outlook beta endpoint and 
@@ -114,6 +114,4 @@ Additionally there are the following `/beta` limitations:
 
   >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
 
-  
-             .
 

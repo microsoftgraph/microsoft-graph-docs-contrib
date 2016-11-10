@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 POST /me/drive/items/{item-id}/copy
 POST /me/drive/root:/{path}:/copy
 POST /groups/{group-id}/drive/items/{item-id}/copy
+POST /drives/{drive-id}/items/{item-id}/copy
 ```
 
 ## Request body
