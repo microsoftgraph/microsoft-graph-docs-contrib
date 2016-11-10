@@ -44,7 +44,8 @@ Include the next sentence when supporting events.
 
 ## Access social data around and about a user
 
-Use the Office Graph to get social insights into individual users across Office 365.
+Office Graph encapsulates the relationships between different entities in Office 365. Use Office Graph to get social insights
+into individual users across Office 365.
 
 - List the items [trending around](../api/user_list_trendingaround.md) a user
 - List users who have been [working with](../api/user_list_workingwith.md) a user
