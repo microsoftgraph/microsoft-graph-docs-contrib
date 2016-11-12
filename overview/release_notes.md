@@ -49,6 +49,24 @@ Using Microsoft Graph to create and name a unified group bypasses any unified gr
 #### Group permission scopes
 The Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to groups APIs.  These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups that can be consented by users.
 
+Also, only a subset of the API pertaining to group memberships, [directory settings](../resources/directorysetting.md) and group files support both app-only 
+and delegated permissions. All other group API supports only delegated permissions. 
+
+Examples of group API that support app-only and delegated permissions:
+* Get group property **onPremisesLastSyncDateTime**
+* List or add owners
+* List, add, or remove member
+* Get or check member groups
+* Get drive or list children of a driveItem
+
+Examples of group API that support only delegated permissions:
+* Get or update group properties **allowExternalSenders** or **autoSubscribeNewMembers**
+* List, get, create, or delete group, conversation, or event
+* Get or update group photo
+* Subscribe or unsubscribe by mail
+
+
+
 #### Adding and getting attachments of group posts
 [Adding](http://graph.microsoft.io/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://graph.microsoft.io/docs/api-reference/v1.0/api/post_list_attachments) and 
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
