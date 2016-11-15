@@ -7,7 +7,9 @@ This article describes known issues with the Microsoft Graph. For information ab
 Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response. 
 
 #### Photo restrictions
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property. Failure to read or update a photo, in this case, would result in the following error:
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property 
+(using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property. 
+Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
 	{
@@ -44,27 +46,25 @@ or access the ICS URL in the calendar resource.
 
 ## Groups
 #### Policy
-Using Microsoft Graph to create and name a unified group bypasses any unified group policies that are configured through Outlook Web App. 
+Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App. 
 
 #### Group permission scopes
-The Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to groups APIs.  These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups that can be consented by users.
+Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to groups APIs.  
+These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups that can be consented by users.
 
-Also, only a subset of the API pertaining to group memberships, [directory settings](../resources/directorysetting.md) and group files support both app-only 
-and delegated permissions. All other group API supports only delegated permissions. 
+Also, only the API for core group administration and management supports access using delegated or app-only permissions. 
+All other features of the group API support only delegated permissions. 
 
-Examples of group API that support app-only and delegated permissions:
-* Get group property **onPremisesLastSyncDateTime**
-* List or add owners
-* List, add, or remove member
-* Get or check member groups
-* Get drive or list children of a driveItem
+Examples of group features that support delegated and app-only permissions: 
+* Create and delete groups
+* Group [directory settings](../resources/directorysetting.md), type and synchronization
+* Group owners and membership
 
-Examples of group API that support only delegated permissions:
-* Get or update group properties **allowExternalSenders** or **autoSubscribeNewMembers**
-* List, get, create, or delete group, conversation, or event
-* Get or update group photo
-* Subscribe or unsubscribe by mail
 
+Examples of group features that support only delegated permissions:
+* Group conversations, events, photo
+* External senders, accepted or rejected senders, group subscription
+* User favorites and unseen count
 
 
 #### Adding and getting attachments of group posts
