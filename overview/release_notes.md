@@ -56,7 +56,8 @@ Also, only the API for core group administration and management supports access 
 All other features of the group API support only delegated permissions. 
 
 Examples of group features that support delegated and app-only permissions: 
-* Create and delete groups
+* Creating and deleting groups
+* Getting and updating group properties pertaining to group administration or management
 * Group [directory settings](../resources/directorysetting.md), type and synchronization
 * Group owners and membership
 
