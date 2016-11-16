@@ -38,6 +38,7 @@ In the above query:
 
 #### Adding and accessing ICS-based calendars in user's mailbox
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
+
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API. 
 * [Listing the user's calendars](http://graph.microsoft.io/docs/api-reference/v1.0/api/user_list_calendars) allows you to get the **name**, **color** and **id** properties of 
 each [calendar](http://graph.microsoft.io/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store
@@ -56,6 +57,7 @@ Also, only the API for core group administration and management supports access 
 All other features of the group API support only delegated permissions. 
 
 Examples of group features that support delegated and app-only permissions: 
+
 * Creating and deleting groups
 * Getting and updating group properties pertaining to group administration or management
 * Group [directory settings](../resources/directorysetting.md), type and synchronization
@@ -63,6 +65,7 @@ Examples of group features that support delegated and app-only permissions:
 
 
 Examples of group features that support only delegated permissions:
+
 * Group conversations, events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
