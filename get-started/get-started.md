@@ -66,7 +66,8 @@ To explore the finished Connect samples, see [Microsoft Graph](https://github.co
     <td>
 		<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST sample</a>
 	</td>     
-	<td>
+	<td>	
+		<a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK sample</a> or 
 		<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST sample</a>
 	</td> 
   </tr>
