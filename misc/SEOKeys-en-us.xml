@@ -119,7 +119,7 @@
         <Item text="Copy item" url="/en-us/api-reference/v1.0/api/item_copy" SEOKeyword="Copy item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Download" url="/en-us/api-reference/v1.0/api/item_downloadcontent" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Upload" url="/en-us/api-reference/v1.0/api/item_uploadcontent" SEOKeyword="Upload item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-        <Item text="Resumable Upload" url="/en-us/api-reference/v1.0/api/item_createUploadSession" SEOKeyword="large file upload, resumable upload, microsoft graph api, onedrive drive api, fragments, files" />
+        <Item text="Resumable Upload" url="/en-us/api-reference/v1.0/api/item_createuploadsession" SEOKeyword="large file upload, resumable upload, microsoft graph api, onedrive drive api, fragments, files" />
         <Item text="Search items" url="/en-us/api-reference/v1.0/api/item_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Track changes" url="/en-us/api-reference/v1.0/api/item_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
       </Item>
@@ -773,7 +773,7 @@
         <Item text="Copy item" url="/en-us/api-reference/beta/api/item_copy" SEOKeyword="Copy item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Download" url="/en-us/api-reference/beta/api/item_downloadcontent" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Upload" url="/en-us/api-reference/beta/api/item_uploadcontent" SEOKeyword="Upload item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-        <Item text="Resumable Upload" url="/en-us/api-reference/beta/api/item_createUploadSession" SEOKeyword="large file upload, resumable upload, microsoft graph api, onedrive drive api, fragments, files" />
+        <Item text="Resumable Upload" url="/en-us/api-reference/beta/api/item_createuploadsession" SEOKeyword="large file upload, resumable upload, microsoft graph api, onedrive drive api, fragments, files" />
         <Item text="Search items" url="/en-us/api-reference/beta/api/item_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Track changes" url="/en-us/api-reference/beta/api/item_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
       </Item>
@@ -790,20 +790,20 @@
     <Item text="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
-        <Item text="Get by URL" url="/en-us/api-reference/beta/api/baseItem_getByUrl" SEOKeyword="sharepoint, getbyurl, site" SEODescription="" />
+        <Item text="Get by URL" url="/en-us/api-reference/beta/api/baseitem_getbyurl" SEOKeyword="sharepoint, getbyurl, site" SEODescription="" />
         <Item text="Get lists" url="/en-us/api-reference/beta/api/lists_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
 		<Item text="List subsites" url="/en-us/api-reference/beta/api/subsites_list" SEOKeyword="sharepoint, list subsites" SEODescription="" />
       </Item>
       <Item text="Lists" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint, list, lists, microsoft graph api, sharepoint list api">
         <Item text="Get list" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
-        <Item text="Get by URL" url="/en-us/api-reference/beta/api/baseItem_getByUrl" SEOKeyword="sharepoint, getbyurl, site" SEODescription="" />
-        <Item text="Get items" url="/en-us/api-reference/beta/api/listItems_list" SEOKeyword="sharepoint, list items, get items, get listitems" SEODescription="" />
+        <Item text="Get by URL" url="/en-us/api-reference/beta/api/baseitem_getbyurl" SEOKeyword="sharepoint, getbyurl, site" SEODescription="" />
+        <Item text="Get items" url="/en-us/api-reference/beta/api/listitems_list" SEOKeyword="sharepoint, list items, get items, get listitems" SEODescription="" />
       </Item>
-      <Item text="ListItems" url="/en-us/api-reference/beta/resources/listItem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
-        <Item text="Get item" url="/en-us/api-reference/beta/api/listItem_get" SEOKeyword="sharepoint, get item, microsoft graph api, sharepoint list api" SEODescription="" />
-        <Item text="Create item" url="/en-us/api-reference/beta/api/listItem_create" SEOKeyword="sharepoint, create item, create, microsoft graph api, sharepoint list api" SEODescription="" />
-        <Item text="Update item" url="/en-us/api-reference/beta/api/listItem_update" SEOKeyword="sharepoint, update item, update, microsoft graph api, sharepoint list api" SEODescription="" />
-        <Item text="Delete item" url="/en-us/api-reference/beta/api/listItem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
+      <Item text="ListItems" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
+        <Item text="Get item" url="/en-us/api-reference/beta/api/listitem_get" SEOKeyword="sharepoint, get item, microsoft graph api, sharepoint list api" SEODescription="" />
+        <Item text="Create item" url="/en-us/api-reference/beta/api/listitem_create" SEOKeyword="sharepoint, create item, create, microsoft graph api, sharepoint list api" SEODescription="" />
+        <Item text="Update item" url="/en-us/api-reference/beta/api/listitem_update" SEOKeyword="sharepoint, update item, update, microsoft graph api, sharepoint list api" SEODescription="" />
+        <Item text="Delete item" url="/en-us/api-reference/beta/api/listitem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
       </Item>
     </Item>
     <Item text="Outlook mail" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
@@ -1210,7 +1210,7 @@
           <Item text="Delete policy" url="/en-us/api-reference/beta/api/policy_delete" SEODescription="Delete an existing policy." />
           <Item text="Assign policy" url="/en-us/api-reference/beta/api/policy_assign" SEODescription="Assign policies to an organization entities like applications and service principals." />
           <Item text="List assigned policies" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="List an entity’s assigned policies." />
-          <Item text="List applied to applications" url="/en-us/api-reference/beta/api/policy_list_appliesTo" SEODescription="List the applications and service principals with the given policy applied." />
+          <Item text="List applied to applications" url="/en-us/api-reference/beta/api/policy_list_appliesto" SEODescription="List the applications and service principals with the given policy applied." />
         </Item>
       <Item text="device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
