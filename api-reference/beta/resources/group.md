@@ -45,7 +45,8 @@ Inherits from [directoryObject](directoryobject.md).
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
 |[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a setting object. |
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
-|[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get a endpoint object collection.|
+|[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
+|[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 
 ## Properties
 | Property	   | Type	|Description|
