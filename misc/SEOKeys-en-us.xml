@@ -476,8 +476,6 @@
         <Item text="List directoryRoles" url="/en-us/api-reference/v1.0/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
         <Item text="Enable DirectoryRole" url="/en-us/api-reference/v1.0/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
         <Item text="Get directoryRole" url="/en-us/api-reference/v1.0/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
-        <Item text="Update directoryrole" url="/en-us/api-reference/v1.0/api/directoryrole_update" SEOKeyword="Update directoryrole, Microsoft Graph API, Directory API" SEODescription="Update the properties of directoryrole object." />
-        <Item text="Delete directoryRole" url="/en-us/api-reference/v1.0/api/directoryrole_delete" SEOKeyword="Delete directoryRole, Microsoft Graph API, Directory API" SEODescription="Delete directoryRole." />
         <Item text="List members" url="/en-us/api-reference/v1.0/api/directoryrole_list_members" SEOKeyword="List members, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="Add member" url="/en-us/api-reference/v1.0/api/directoryrole_post_members" SEOKeyword="Create member, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new member." />
       </Item>
