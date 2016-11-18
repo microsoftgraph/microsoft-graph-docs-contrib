@@ -1,9 +1,10 @@
-# Get ServiceEndpoint
+# Get endpoint
 
-Retrieve the properties of a specific resource URL for a specific group.
+Retrieve the properties and relationships of a specific endpoint object.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -21,13 +22,13 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [ServiceEndpoint](../resources/serviceendpoint.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [Endpoint](../resources/endpoint.md) object in the response body.
 ### Example
 ##### Request
 
 <!-- {
   "blockType": "request",
-  "name": "get_serviceendpoint"
+  "name": "get_endpoint"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/groups/<id>/endpoints/<id>
@@ -37,7 +38,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ServiceEndpoint"
+  "@odata.type": "microsoft.graph.Endpoint"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -58,7 +59,7 @@ Content-length: 208
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get ServiceEndpoint",
+  "description": "Get Endpoint",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

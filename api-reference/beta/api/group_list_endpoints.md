@@ -1,6 +1,6 @@
-# List ServiceEndpoints
+# List endpoints
 
-Retrieve a list of serviceEndpoint objects.
+Retrieve a list of endpoint objects.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
@@ -21,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [ServiceEndpoint](../resources/serviceendpoint.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Endpoint](../resources/endpoint.md) objects in the response body.
 ### Example
 ##### Request
 
@@ -37,7 +37,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ServiceEndpoint",
+  "@odata.type": "microsoft.graph.Endpoint",
   "isCollection": true
 } -->
 ```http

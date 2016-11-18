@@ -45,8 +45,7 @@ Inherits from [directoryObject](directoryobject.md).
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
 |[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a setting object. |
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
-|[List ServiceEndpoints](../api/group_list_endpoints.md) |[ServiceEndpoint](serviceendpoint.md) collection| Get a ServiceEndpoint object collection.|
-|[Create ServiceEndpoint](../api/group_post_endpoints.md) |[ServiceEndpoint](serviceendpoint.md)| Create a new ServiceEndpoint by posting to the endpoints collection.|
+|[List endpoints](../api/group_list_endpoints.md) |[ServiceEndpoint](serviceendpoint.md) collection| Get a ServiceEndpoint object collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -83,7 +82,7 @@ Inherits from [directoryObject](directoryobject.md).
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |drive|[drive](drive.md)|The group's drive. Read-only.|
-|endpoints|[ServiceEndpoint](serviceendpoint.md) collection| Read-only. Nullable.|
+|endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
 |events|[event](event.md) collection|The group's events.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
