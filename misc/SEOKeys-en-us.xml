@@ -476,8 +476,6 @@
         <Item text="List directoryRoles" url="/en-us/api-reference/v1.0/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
         <Item text="Enable DirectoryRole" url="/en-us/api-reference/v1.0/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
         <Item text="Get directoryRole" url="/en-us/api-reference/v1.0/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
-        <Item text="Update directoryrole" url="/en-us/api-reference/v1.0/api/directoryrole_update" SEOKeyword="Update directoryrole, Microsoft Graph API, Directory API" SEODescription="Update the properties of directoryrole object." />
-        <Item text="Delete directoryRole" url="/en-us/api-reference/v1.0/api/directoryrole_delete" SEOKeyword="Delete directoryRole, Microsoft Graph API, Directory API" SEODescription="Delete directoryRole." />
         <Item text="List members" url="/en-us/api-reference/v1.0/api/directoryrole_list_members" SEOKeyword="List members, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="Add member" url="/en-us/api-reference/v1.0/api/directoryrole_post_members" SEOKeyword="Create member, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new member." />
       </Item>
@@ -608,7 +606,6 @@
     </Item>
     <Item text="Tasks" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
       <Item text="task" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List tasks" url="/en-us/api-reference/beta/api/user_list_tasks" SEOKeyword="List tasks, Microsoft Graph API, user API" SEODescription="Retrieve a list of task objects." />
         <Item text="Create task" url="/en-us/api-reference/beta/api/user_post_tasks" SEOKeyword="Create task, Microsoft Graph API, user API" SEODescription="Use this API to create a new task." />
         <Item text="Get task" url="/en-us/api-reference/beta/api/task_get" SEOKeyword="Get task, Microsoft Graph API, tasks" SEODescription="" />
         <Item text="Update task" url="/en-us/api-reference/beta/api/task_update" SEOKeyword="Update task, Microsoft Graph API, tasks" SEODescription="" />
