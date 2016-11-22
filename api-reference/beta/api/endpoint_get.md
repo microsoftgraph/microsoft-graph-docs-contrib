@@ -1,6 +1,6 @@
 # Get endpoint
 
-Retrieve the properties and relationships of a specific endpoint object.
+Retrieve the properties and relationships of a specific [endpoint](../resources/endpoint.md) object.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*

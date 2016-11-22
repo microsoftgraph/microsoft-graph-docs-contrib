@@ -1,6 +1,6 @@
 # List endpoints
 
-Retrieve a list of endpoint objects.
+Retrieve a list of [endpoint](../resources/endpoint.md) objects.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*

@@ -1,23 +1,23 @@
 # Endpoint resource type
 
-When a new Office 365 group is created, additional resources are also created as part of the Office 365 group. These include things like a group mailbox for conversations and a group OneDrive folder for documents and files. Further information about these Office 365 group resources, including their associated resource URLs can now be read using the *endpoints* navigation on the group entity-type. This allows applications to understand these resources, and even embed the resource URL experiences in their own experiences. 
+Endpoints represent URLs for resources associated with an entity.  For example, when a new Office 365 group is created, additional resources are also created as part of the Office 365 group. These include things like a group mailbox for conversations and a group OneDrive folder for documents and files. Further information about these Office 365 group resources, including their associated resource URLs can now be read using the *endpoints* navigation on the group entity-type. This allows applications to understand these resources, and even embed the resource URL experiences in their own experiences. 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get a endpoint object collection. |
-|[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) |Read properties and relationships of endpoint object.|
+|[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
+|[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) |Read properties and relationships of an endpoint object.|
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| capability     | String  | Represents the capability that is associated with this resource. (e.g. Messages, Conversations, etc.)  Not nullable. Read-only. |
+| capability     | String  | Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.)  Not nullable. Read-only. |
 | id             | String  | Unique identifier for the endpoint; Key. Not nullable. Read-only.|
-| providerId     | String  | Application id of the underlying service that is publishing the URL. Not nullable. Read-only.|
+| providerId     | String  | Application id of the publishing underlying service. Not nullable. Read-only.|
 | providerName   | String  | Name of the publishing underlying service. Read-only.|
-| providerResourceId|String| For resource URLs, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.|
-| uri            | String  | Actual URL for the resource. Not nullable. Read-only.|
+| providerResourceId|String| For unified groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.|
+| uri            | String  | URL of the published resource. Not nullable. Read-only.|
 
 ### Relationships
 
