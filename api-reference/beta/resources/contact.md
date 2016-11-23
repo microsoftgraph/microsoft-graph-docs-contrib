@@ -31,6 +31,7 @@ Here is a JSON representation of the resource
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
   "fileAs": "string",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "gender": "string",
   "generation": "string",
   "givenName": "string",
@@ -73,6 +74,7 @@ Here is a JSON representation of the resource
 |displayName|String|The contact's display name.|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the contact. |
 |gender |String |The contact's gender. |
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|

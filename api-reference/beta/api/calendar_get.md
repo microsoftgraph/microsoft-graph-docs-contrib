@@ -39,6 +39,7 @@ If successful, this method returns a `200 OK` response code and [calendar](../re
 ## Example
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_calendar"
@@ -46,6 +47,7 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/me/calendar
 ```
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -56,6 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",

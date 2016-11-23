@@ -57,8 +57,8 @@ If-Match: W/"JzEtMDAwMDAwMDAwMDAwMDAwOC8yMDE1LTEwLTIyVDE4OjExOjU2LjExMzU1NDYrMDA
   "orderHint": "orderHint-value",
   "assigneePriority": "assigneePriority-value",
   "percentComplete": 99,
-  "startDateTime": "datetime-value",
-  "dueDateTime": "datetime-value",
+  "startDateTime": "2016-10-19T10:37:00Z",
+  "dueDateTime": "2016-10-19T10:37:00Z",
   "previewType": "previewType-value",
   "appliedCategories": {
   },

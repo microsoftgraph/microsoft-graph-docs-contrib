@@ -49,7 +49,7 @@ Content-length: 1131
       "contentType": "",
       "content": "content-value"
     },
-    "receivedDateTime": "datetime-value",
+    "receivedDateTime": "2016-10-19T10:37:00Z",
     "hasAttachments": true,
     "from": {
       "emailAddress": {
@@ -73,8 +73,8 @@ Content-length: 1131
       }
     ],
     "conversationId": "conversationId-value",
-    "createdDateTime": "datetime-value",
-    "lastModifiedDateTime": "datetime-value",
+    "createdDateTime": "2016-10-19T10:37:00Z",
+    "lastModifiedDateTime": "2016-10-19T10:37:00Z",
     "changeKey": "changeKey-value",
     "categories": [
       "categories-value"
@@ -84,7 +84,7 @@ Content-length: 1131
     },
     "attachments": [
       {
-        "lastModifiedDateTime": "datetime-value",
+        "lastModifiedDateTime": "2016-10-19T10:37:00Z",
         "name": "name-value",
         "contentType": "contentType-value",
         "size": 99,

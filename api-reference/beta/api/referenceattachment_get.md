@@ -89,7 +89,7 @@ Content-length: 215
 
 {
   "contentType": "contentType-value",
-  "lastModifiedDateTime": "datetime-value",
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
   "id": "id-value",
   "isInline": false,
   "name": "name-value",

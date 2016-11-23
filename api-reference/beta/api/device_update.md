@@ -57,7 +57,7 @@ Content-length: 322
       "key": "key-value"
     }
   ],
-  "approximateLastSignInDateTime": "datetime-value",
+  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
   "deviceVersion": 99
@@ -84,7 +84,7 @@ Content-length: 322
       "key": "key-value"
     }
   ],
-  "approximateLastSignInDateTime": "datetime-value",
+  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
   "deviceVersion": 99

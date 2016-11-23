@@ -1,6 +1,6 @@
 # List messages
 
-Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). 
+Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
 
 In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
 
@@ -36,7 +36,7 @@ the signed-in user.
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Accept  | application/json|
+| Content-Type   | application/json  | 
 
 ## Request body
 Do not supply a request body for this method.
@@ -68,8 +68,8 @@ Content-length: 317
 {
   "value": [
     {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
+      "receivedDateTime": "2016-10-19T10:37:00Z",
+      "sentDateTime": "2016-10-19T10:37:00Z",
       "hasAttachments": true,
       "subject": "subject-value",
       "body": {

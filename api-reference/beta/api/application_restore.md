@@ -81,9 +81,9 @@ Content-length: 2150
   "keyCredentials": [
     {
       "customKeyIdentifier": "customKeyIdentifier-value",
-      "endDate": "datetime-value",
+      "endDate": "2016-10-19T10:37:00Z",
       "keyId": "keyId-value",
-      "startDate": "datetime-value",
+      "startDate": "2016-10-19T10:37:00Z",
       "type": "type-value",
       "usage": "usage-value",
       "value": "value-value"
@@ -112,9 +112,9 @@ Content-length: 2150
   "passwordCredentials": [
     {
       "customKeyIdentifier": "customKeyIdentifier-value",
-      "endDate": "datetime-value",
+      "endDate": "2016-10-19T10:37:00Z",
       "keyId": "keyId-value",
-      "startDate": "datetime-value",
+      "startDate": "2016-10-19T10:37:00Z",
       "value": "value-value"
     }
   ],
@@ -136,7 +136,7 @@ Content-length: 2150
   "samlMetadataUrl": "samlMetadataUrl-value",
   "objectType": "objectType-value",
   "objectId": "objectId-value",
-  "deletionTimestamp": "datetime-value"
+  "deletionTimestamp": "2016-10-19T10:37:00Z"
 }
 ```
 

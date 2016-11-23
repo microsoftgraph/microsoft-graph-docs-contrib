@@ -56,7 +56,7 @@ Content-length: 97
 
 {
   "newReminderTime": {
-    "dateTime": "dateTime-value",
+    "dateTime": "2016-10-19T10:37:00Z",
     "timeZone": "timeZone-value"
   }
 }

@@ -62,7 +62,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "lastModifiedDateTime": "datetime-value",
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,
@@ -103,7 +103,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "lastModifiedDateTime": "datetime-value",
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,
@@ -120,7 +120,8 @@ Here is an example of a request that adds a reference attachment to an existing 
 The attachment points to a folder on OneDrive.
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_message"
+  "name": "create_reference_attachment_from_post",
+  "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
 ```
@@ -142,7 +143,8 @@ Content-length: 319
 Here is an example of a full response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
 ```http
 HTTP 201 Created

@@ -55,7 +55,7 @@ Content-length: 523
         "contentType": "",
         "content": "content-value"
       },
-      "receivedDateTime": "datetime-value",
+      "receivedDateTime": "2016-10-19T10:37:00Z",
       "hasAttachments": true,
       "from": {
         "emailAddress": {

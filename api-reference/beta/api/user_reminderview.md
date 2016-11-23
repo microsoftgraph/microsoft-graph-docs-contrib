@@ -23,6 +23,7 @@ In the request URL, provide the following function parameters with values.
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type   | application/json |
 | Prefer | <Time-zone>. Optional, UTC assumed if absent.| 
 
 ## Request body
@@ -40,7 +41,7 @@ Here is an example of the request.
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET https://graph.microsoft.com/beta/me/reminderView?startDateTime=startDateTime-value&endDateTime=endDateTime-value
 ```
 
 ##### Response
@@ -61,11 +62,11 @@ Content-length: 673
     {
       "eventId": "eventId-value",
       "eventStartTime": {
-        "dateTime": "dateTime-value",
+        "dateTime": "2016-10-19T10:37:00Z",
         "timeZone": "timeZone-value"
       },
       "eventEndTime": {
-        "dateTime": "dateTime-value",
+        "dateTime": "2016-10-19T10:37:00Z",
         "timeZone": "timeZone-value"
       },
       "changeKey": "changeKey-value",

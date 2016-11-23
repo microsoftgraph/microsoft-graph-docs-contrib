@@ -17,6 +17,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type   | application/json  | 
 
 ## Request body
 Do not supply a request body for this method.
@@ -49,7 +50,7 @@ Content-length: 263
   "value": [
     {
       "parentFolderId": "parentFolderId-value",
-      "birthday": "datetime-value",
+      "birthday": "2016-10-19T10:37:00Z",
       "fileAs": "fileAs-value",
       "displayName": "displayName-value",
       "givenName": "givenName-value",

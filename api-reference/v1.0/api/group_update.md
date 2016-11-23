@@ -17,6 +17,14 @@ PATCH /groups/<id>
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
+> **Note**
+
+- You can update **allowExternalSenders** and **autoSubscribeNewMembers** by specifying only one or both these properties in their own PATCH request, 
+without including the other properties in the table below.
+- Only a subset of the group API pertaining to core group administration and management support app-only 
+and delegated permissions. All other members of the group API, including updating  **allowExternalSenders** and **autoSubscribeNewMembers**, 
+support only delegated permissions. See [known issues](https://graph.microsoft.io/en-us/docs/overview/release_notes#groups) for examples.
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|Default is **false**. Indicates if external members can send email to group.|

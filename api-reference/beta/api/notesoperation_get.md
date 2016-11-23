@@ -57,8 +57,8 @@ Content-length: 215
 {
   "id": "id-value",
   "status": "status-value",
-  "createdDateTime": "datetime-value",
-  "lastActionDateTime": "datetime-value",
+  "createdDateTime": "2016-10-19T10:37:00Z",
+  "lastActionDateTime": "2016-10-19T10:37:00Z",
   "resourceLocation": "resourceLocation-value",
   "resourceId": "resourceId-value"
 }
