@@ -3,7 +3,7 @@
 Use this API to create a new directory role member.
 
 ## Prerequisites
-The following **scopes** is required to execute this API: *Directory.AccessAsUser.All*
+The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
