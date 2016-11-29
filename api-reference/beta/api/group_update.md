@@ -31,6 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 
 
 **Note**
+
 - You can update **allowExternalSenders** and **autoSubscribeNewMembers** by specifying only one or both these properties in their own PATCH request, 
 without including the other properties in the table above.
 - Only a subset of the group API pertaining to core group administration and management support application 
