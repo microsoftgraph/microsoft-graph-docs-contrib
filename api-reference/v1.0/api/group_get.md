@@ -7,7 +7,6 @@ Get the properties and relationships of a group object.
 The following represent the default set of properties that are returned when getting or listing groups. 
 These are a subset of all available properties. 
 
-* classification
 * description
 * displayName
 * groupTypes
