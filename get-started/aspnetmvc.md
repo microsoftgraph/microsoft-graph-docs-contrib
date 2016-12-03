@@ -12,7 +12,7 @@ The [Azure AD v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/art
 
 **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
 
-To download a version of the Connect sample that uses the Azure AD endpoint and accesses Microsoft Graph using REST calls, see [Office 365 Connect ASP.NET MVC sample](https://github.com/microsoftgraph/aspnet-connect-rest-sample).
+To download a version of the Connect sample that uses the Azure AD endpoint and accesses Microsoft Graph using REST calls, see [Office 365 Connect ASP.NET MVC sample](https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth).
 
 
 ## Prerequisites
