@@ -2011,7 +2011,7 @@
 		</Item>
 		<Item text="IPv4 range" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ipv4range"/>
 		<Item text="Key value" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keyvalue"/>
-		<Item text="Localized notification message" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localizednotificationmessage"/\>
+		<Item text="Localized notification message" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localizednotificationmessage"/>
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_get"/>
