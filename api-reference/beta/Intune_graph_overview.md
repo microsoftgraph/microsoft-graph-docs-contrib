@@ -1,7 +1,7 @@
 # Working with Intune in Microsoft Graph 
  
 Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.  To understand what's available in Intune is to start here: https://docs.microsoft.com/en-us/intune/understand-explore/introduction-to-microsoft-intune.   
-In short, with Intune you can: 
+In short, with Intune you can:  
 * **Manage the mobile devices** your workforce uses to access company data. 
 * **Manage the mobile apps** your workforce uses. 
 * **Protect your company information** by helping to control the way your workforce accesses and shares it. 
