@@ -1,4 +1,4 @@
-# How to protect your company app date with Microsoft Intune
+# How to protect your company app data with Microsoft Intune
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 
