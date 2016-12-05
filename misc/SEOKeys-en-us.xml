@@ -1274,7 +1274,7 @@
       </Item>
     </Item>
  
-	<Item text="Intune" url="/en-us/api-reference/beta/Intune_graph_overview">
+	<Item text="Intune" url="/en-us/api-reference/beta/intune_graph_overview">
 
 		<Item text="Manage apps" url="/en-us/api-reference/beta/intune_apps_app_conceptual">
 			<Item text="Android LOB app" url="/en-us/api-reference/beta/resources/intune_apps_androidlobapp">
