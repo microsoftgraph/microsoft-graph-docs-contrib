@@ -1449,7 +1449,7 @@
 			<Item text="List mobile app content files" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_list_mobileappcontentfile"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_update"/>
 		</Item>
-		<Item text="Mobile app content dile" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontentfile">
+		<Item text="Mobile app content file" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontentfile">
 			<Item text="Commit" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_commit"/>
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_delete"/>
@@ -2731,7 +2731,7 @@
 		</Item>
 	</Item>
 
-	<Item text="Telecom expense management" url="/en-us/api-reference/beta/intune _tem_conceptual">
+	<Item text="Telecom expense management" url="/en-us/api-reference/beta/intune_tem_conceptual">
 		<Item text="Device management" url="/en-us/api-reference/beta/resources/intune_tem_devicemanagement">
 			<Item text="Create Telecom expense partner" url="/en-us/api-reference/beta/api/intune_tem_devicemanagement_create_telecomexpensemanagementpartner"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_tem_devicemanagement_get"/>
