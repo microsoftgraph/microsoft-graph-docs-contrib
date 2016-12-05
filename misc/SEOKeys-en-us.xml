@@ -2402,8 +2402,7 @@
 			<Item text="List device configuration group assignment" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsvpnconfiguration_list_deviceconfigurationgroupassignment"/>
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsvpnconfiguration_list_deviceconfigurationuserstatus"/>
 		</Item>
-	</Item>
-
+	
 	<Item text="App protection" url="/en-us/api-reference/beta/intune_app_protection_conceptual">
 		<Item text="Android managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_create"/>
@@ -2746,6 +2745,6 @@
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_tem_telecomexpensemanagementpartner_update"/>
 		</Item>
 	</Item>
-
+</Item>
 	</Item>
 </Menu>
