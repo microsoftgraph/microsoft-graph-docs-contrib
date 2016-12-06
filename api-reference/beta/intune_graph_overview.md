@@ -30,13 +30,13 @@ Here is an example of how you can determine whether an application is installed 
 
 The following sections provide the reference documentation for the Intune Graph API and resources:
 
-- [Managed apps](intune_apps_conceptual.md)
+- [Managed apps](intune_apps_app_conceptual.md)
 - [Company terms and conditions](intune_company_conceptual.md)
 - [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)
 - [Device configuration](intune_device_configuration_conceptual.md)
 - [App protection](intune_app_protection_conceptual.md)
 - [Enroll devices for management](intune_onboarding_conceptual.md)
-- [Role-based access control](intune_rbac_conceptual.md)
+- [Role-based access control](intune-rbac-conceptual.md)
 - [Telecom expense management](intune_tem_conceptual.md)
 
 ## To use the Table of Contents on the Microsoft Graph site
