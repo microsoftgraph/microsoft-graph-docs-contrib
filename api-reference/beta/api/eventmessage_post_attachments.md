@@ -1,4 +1,4 @@
-# Add Attachment
+# Add attachment
 
 Use this API to create a new Attachment.
 ## Prerequisites
