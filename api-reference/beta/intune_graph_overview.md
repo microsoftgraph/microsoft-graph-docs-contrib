@@ -1,8 +1,8 @@
 # Working with Intune in Microsoft Graph  
 
-Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.  To understand what's available in Intune is to start here: https://docs.microsoft.com/en-us/intune/understand-explore/introduction-to-microsoft-intune.   
+Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.  To understand what's available in Intune, start here: [Introduction to Microsoft Intune](https://docs.microsoft.com/en-us/intune/understand-explore/introduction-to-microsoft-intune).   
 
-In short, with Intune you can:  
+In short, with Intune you can: 
 
 * **Manage the mobile devices** your workforce uses to access company data. 
 * **Manage the mobile apps** your workforce uses. 
@@ -20,11 +20,29 @@ Intune provides data into the Microsoft Graph in the same way as other cloud ser
 
 Here is an example of how you can determine whether an application is installed on a user's device: 
 
-1 - Get from Azure Active Directory a list of devices registered to a user: https://graph.microsoft.com/<version>/<user>/ownedDevices 
+1. Get from Azure Active Directory a list of devices registered to a user: https://graph.microsoft.com/<version>/<user>/ownedDevices 
 
-2 - Then view the list of applications for your tenant: https://graph.microsoft.com/<version>/deviceAppManagement/mobileApps  
+2. Then view the list of applications for your tenant: https://graph.microsoft.com/<version>/deviceAppManagement/mobileApps  
 
-3 -Take the ID from the application and determine the installation state for the application (and therefore user) https://graph.microsoft.com/<version>/deviceAppManagement/mobileAppInstallState.
+3. Take the ID from the application and determine the installation state for the application (and therefore user) https://graph.microsoft.com/<version>/deviceAppManagement/mobileAppInstallState.
 
+## Sections of the Intune Graph API documentation
 
-The sections below provide the reference documentation for Intune Resources and API.   
+The following sections provide the reference documentation for the Intune Graph API and resources:
+
+- [Managed apps](intune_apps_app_conceptual.md)
+- [Company terms and conditions](intune_company_conceptual.md)
+- [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)
+- [Device configuration](intune_device_configuration_conceptual.md)
+- [App protection](intune_app_protection_conceptual.md)
+- [Enroll devices for management](intune_onboarding_conceptual.md)
+- [Role-based access control](intune-rbac-conceptual.md)
+- [Telecom expense management](intune_tem_conceptual.md)
+
+## To use the Table of Contents on the Microsoft Graph site
+  
+You can browse the Table of Contents (in the left pane of the site) to find the parts of the Intune Graph API and resource documentation you want to see.
+
+1. Click **/Beta Reference** to open the beta docs.
+2. Scroll down and click **Intune**.
+3. Continue to click subsections below **Intune** for the parts of the API you want to see.
