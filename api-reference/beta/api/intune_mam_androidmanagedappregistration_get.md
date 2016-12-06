@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppRegistrations/<id>
-GET /users/<id>/managedAppRegistrations/<id>
+GET /managedAppRegistrations/{id}
+GET /users/{id}/managedAppRegistrations/{id}
 ```
 
 ### Optional query parameters
@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and [androidManagedA
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppRegistrations/<id>
+GET https://graph.microsoft.com/beta/managedAppRegistrations/{id}
 ```
 
 ##### Response

@@ -7,22 +7,22 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/events/<id>
-DELETE /users/<id | userPrincipalName>/events/<id>
-DELETE /groups/<id>/events/<id>
+DELETE /me/events/{id}
+DELETE /users/{id | userPrincipalName}/events/{id}
+DELETE /groups/{id}/events/{id}
 
-DELETE /me/calendar/events/<id>
-DELETE /users/<id | userPrincipalName>/calendar/events/<id>
-DELETE /groups/<id>/calendar/events/<id>/
+DELETE /me/calendar/events/{id}
+DELETE /users/{id | userPrincipalName}/calendar/events/{id}
+DELETE /groups/{id}/calendar/events/{id}/
 
-DELETE /me/calendars/<id>/events/<id>
-DELETE /users/<id | userPrincipalName>/calendars/<id>/events/<id>
+DELETE /me/calendars/{id}/events/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-DELETE /me/calendargroup/calendars/<id>/events/<id>
-DELETE /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>
+DELETE /me/calendargroup/calendars/{id}/events/{id}
+DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
-DELETE /me/calendargroups/<id>/calendars/<id>/events/<id>
-DELETE /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>
+DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
+DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "delete_event"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/events/<id>
+DELETE https://graph.microsoft.com/beta/me/events/{id}
 ```
 ##### Response
 Here is an example of the response. 

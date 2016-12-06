@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceManagement/roleAssignments/
-GET /deviceManagement/roleDefinitions/<id>/roleAssignments/
+GET /deviceManagement/roleDefinitions/{id}/roleAssignments/
 ```
 
 ### Request headers

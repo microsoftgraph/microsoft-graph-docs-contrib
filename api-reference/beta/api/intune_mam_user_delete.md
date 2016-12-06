@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /users/<id>
+DELETE /users/{id}
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/users/<id>
+DELETE https://graph.microsoft.com/beta/users/{id}
 ```
 
 ##### Response

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/<id>/oAuth2Permissiongrants
+POST /servicePrincipals/{id}/oAuth2Permissiongrants
 
 ```
 ## Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_oAuth2Permissiongrant_from_serviceprincipal"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/<id>/oAuth2Permissiongrants
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/oAuth2Permissiongrants
 Content-type: application/json
 Content-length: 180
 

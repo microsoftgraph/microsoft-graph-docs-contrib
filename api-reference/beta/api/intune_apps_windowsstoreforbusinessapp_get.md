@@ -10,10 +10,10 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceAppManagement/mobileApps/<id>
-GET /deviceAppManagement/mobileApps/<id>/userStatuses/<id>/app/
-GET /deviceAppManagement/mobileApps/<id>/deviceStatuses/<id>/app/
-GET /deviceAppManagement/mobileApps/<id>/groupAssignments/<id>/app/
+GET /deviceAppManagement/mobileApps/{id}
+GET /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/app/
+GET /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}/app/
+GET /deviceAppManagement/mobileApps/{id}/groupAssignments/{id}/app/
 ```
 
 ### Optional query parameters
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [windowsStoreFor
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}
 ```
 
 ##### Response

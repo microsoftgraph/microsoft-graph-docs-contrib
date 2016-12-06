@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /termsAndConditions/<id>
-GET /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions/
-GET /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions/
+GET /termsAndConditions/{id}
+GET /termsAndConditions/{id}/groupAssignments/{id}/termsAndConditions/
+GET /termsAndConditions/{id}/acceptanceStatuses/{id}/termsAndConditions/
 ```
 
 ### Optional query parameters
@@ -33,7 +33,7 @@ If successful, this method returns a `200 OK` response code and [termsAndConditi
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/termsAndConditions/<id>
+GET https://graph.microsoft.com/beta/termsAndConditions/{id}
 ```
 
 ##### Response

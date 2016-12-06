@@ -20,12 +20,12 @@ One of the following **scopes** is required to execute this API for:
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /me/photo/$value
-PUT /users/<id | userPrincipalName>/photo/$value
-PUT /groups/<id>/photo/$value
-PUT /me/contacts/<id>/photo/$value
-PUT /users/<id | userPrincipalName>/contacts/<id>/photo/$value
-PUT /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
-PUT /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
+PUT /users/{id | userPrincipalName}/photo/$value
+PUT /groups/{id}/photo/$value
+PUT /me/contacts/{id}/photo/$value
+PUT /users/{id | userPrincipalName}/contacts/{id}/photo/$value
+PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
 ## Request headers
 | Header       | Value |

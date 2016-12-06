@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "create_chart_from_worksheet"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts
 Content-type: application/json
 Content-length: 52
 

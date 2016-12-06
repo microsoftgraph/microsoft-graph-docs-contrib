@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate/
-POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSEnterpriseWiFiConfiguration/rootCertificateForServerValidation/
+POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/
+POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSEnterpriseWiFiConfiguration/rootCertificateForServerValidation/
 ```
 
 ### Request headers
@@ -44,7 +44,7 @@ If successful, this method returns a `201 Created` response code and a [macOSTru
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/
 Content-type: application/json
 Content-length: 337
 

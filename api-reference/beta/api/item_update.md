@@ -40,7 +40,7 @@ This example renames the file and adds a description to the driveItem.
   "name": "update_item"
 }-->
 ```http
-PATCH /me/drive/items/<item-id>
+PATCH /me/drive/items/{item-id}
 Content-type: application/json
 
 {

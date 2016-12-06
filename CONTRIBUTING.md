@@ -52,7 +52,7 @@ Once we receive and process your CLA, we'll do our best to review your pull requ
 3.	Create your own fork of this repository. To do this, at the top of the page,  click the **Fork** button.
 4.	Copy your fork to your local machine. To do this, go open GitBash. At the command prompt enter:
 
-		git clone https://github.com/<your user name>/microsoft-graph-docs.git
+		git clone https://github.com/{your user name}/microsoft-graph-docs.git
 
 	Next, create a reference to the root repository by entering these commands:
 

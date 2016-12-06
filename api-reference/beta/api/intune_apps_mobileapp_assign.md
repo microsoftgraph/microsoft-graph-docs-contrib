@@ -10,10 +10,10 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/<id>/assign
-POST /deviceAppManagement/mobileApps/<id>/userStatuses/<id>/app//assign
-POST /deviceAppManagement/mobileApps/<id>/deviceStatuses/<id>/app//assign
-POST /deviceAppManagement/mobileApps/<id>/groupAssignments/<id>/app//assign
+POST /deviceAppManagement/mobileApps/{id}/assign
+POST /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/app//assign
+POST /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}/app//assign
+POST /deviceAppManagement/mobileApps/{id}/groupAssignments/{id}/app//assign
 ```
 
 ### Request headers
@@ -39,7 +39,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>/assign
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/assign
 
 Content-type: application/json
 Content-length: 266

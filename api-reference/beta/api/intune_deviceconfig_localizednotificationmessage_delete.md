@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/deviceCompliancePolicies/<id>/scheduledActionsForRule/<id>/scheduledActionConfigurations/<id>/notificationMessageTemplate//localizedNotificationMessages/<id>
+DELETE /deviceManagement/deviceCompliancePolicies/{id}/scheduledActionsForRule/{id}/scheduledActionConfigurations/{id}/notificationMessageTemplate//localizedNotificationMessages/{id}
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/<id>/scheduledActionsForRule/<id>/scheduledActionConfigurations/<id>/notificationMessageTemplate//localizedNotificationMessages/<id>
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}/scheduledActionsForRule/{id}/scheduledActionConfigurations/{id}/notificationMessageTemplate//localizedNotificationMessages/{id}
 ```
 
 ##### Response

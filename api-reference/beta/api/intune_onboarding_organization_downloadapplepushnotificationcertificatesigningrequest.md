@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /organization/<id>/downloadApplePushNotificationCertificateSigningRequest
+GET /organization/{id}/downloadApplePushNotificationCertificateSigningRequest
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this function returns a `200 OK` response code and a String in th
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/organization/<id>/downloadApplePushNotificationCertificateSigningRequest
+GET https://graph.microsoft.com/beta/organization/{id}/downloadApplePushNotificationCertificateSigningRequest
 ```
 
 ##### Response

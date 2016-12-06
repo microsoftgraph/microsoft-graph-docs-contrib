@@ -6,7 +6,7 @@ One of the following **scopes** is required to execute this API: _Group.ReadWrit
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/<id>
+DELETE /groups/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -28,7 +28,7 @@ Here is an example of the request.
   "name": "delete_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/<id>
+DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
 ##### Response
 Here is an example of the response. 

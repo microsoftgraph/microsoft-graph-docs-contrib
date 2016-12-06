@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/checkMemberGroups
+POST /groups/{id}/checkMemberGroups
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "group_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/checkMemberGroups
+POST https://graph.microsoft.com/beta/groups/{id}/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 

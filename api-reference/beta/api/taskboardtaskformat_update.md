@@ -9,9 +9,9 @@ Group.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /tasks/<id>/bucketTaskBoardFormat
-PATCH /tasks/<id>/progressTaskBoardFormat
-PATCH /tasks/<id>/assignedToTaskBoardFormat
+PATCH /tasks/{id}/bucketTaskBoardFormat
+PATCH /tasks/{id}/progressTaskBoardFormat
+PATCH /tasks/{id}/assignedToTaskBoardFormat
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "update_taskboardtaskformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/tasks/<id>/bucketTaskBoardFormat
+PATCH https://graph.microsoft.com/beta/tasks/{id}/bucketTaskBoardFormat
 Content-type: application/json
 Content-length: 36
 If-Match: W/"JzEtMDAwMDAwMDAwMDAwMDAwOC8yMDE1LTEwLTIyVDE4OjExOjU2LjExMzU1NDYrMDA6MDAn"

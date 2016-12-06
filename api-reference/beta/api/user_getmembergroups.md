@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/getMemberGroups
+POST /users/{id | userPrincipalName}/getMemberGroups
 ```
 ## Request headers
 | Header       | Value |

@@ -9,7 +9,7 @@ The requestor needs to have _Privileged Role Administrator_ role.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /privilegedRoleAssignments/<id>
+DELETE /privilegedRoleAssignments/{id}
 ```
 
 Note that ``<id>`` is in the format of 'userId_roleId', where userId is the GUID string for Azure AD user id, and roleId is the GUID string for Azure administrator role id.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "delete_privilegedroleassignment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/<id>
+DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

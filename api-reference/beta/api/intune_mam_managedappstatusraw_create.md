@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedAppStatuses/<id>
+POST /managedAppStatuses/{id}
 ```
 
 ### Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a `201 Created` response code and a [managedA
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppStatuses/<id>
+POST https://graph.microsoft.com/beta/managedAppStatuses/{id}
 Content-type: application/json
 Content-length: 210
 

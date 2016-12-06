@@ -15,13 +15,13 @@ You can get the binary data of a resource, but getting a JSON representation of 
 Get the binary data of a specific resource by sending a GET request to the resource's `content` endpoint:
 
 ```
-GET ../notes/resources/<id>/content
+GET ../notes/resources/{id}/content
 ```
 
 The file's resource URI is returned when you get a page's HTML content using the following request:
 
 ```
-GET ../notes/pages/<id>/content
+GET ../notes/pages/{id}/content
 ```
 
 In the page HTML, an `img` tag includes endpoints for the original image resource in the `data-fullres-src` attribute and the optimized image in the `src` attribute:

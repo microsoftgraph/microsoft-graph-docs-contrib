@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API: *Directory.AccessAsUs
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /administrativeUnits/<id>
+PATCH /administrativeUnits/{id}
 ```
 ## Optional request headers
 ## Request headers
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/administrativeUnits/<id>
+PATCH https://graph.microsoft.com/beta/administrativeUnits/{id}
 Content-type: application/json
 Content-length: 114
 

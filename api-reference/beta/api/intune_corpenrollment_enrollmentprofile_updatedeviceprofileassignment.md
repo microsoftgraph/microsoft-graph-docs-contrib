@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/enrollmentProfiles/<id>/updateDeviceProfileAssignment
+POST /deviceManagement/enrollmentProfiles/{id}/updateDeviceProfileAssignment
 ```
 
 ### Request headers
@@ -36,7 +36,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/<id>/updateDeviceProfileAssignment
+POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{id}/updateDeviceProfileAssignment
 
 Content-type: application/json
 Content-length: 51

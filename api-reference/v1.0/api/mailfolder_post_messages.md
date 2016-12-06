@@ -7,8 +7,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/mailFolders/<id>/messages
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages
+POST /me/mailFolders/{id}/messages
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## Request headers
 | Header       | Value |
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_message_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/<id>/messages
+POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages
 Content-type: application/json
 Content-length: 248
 

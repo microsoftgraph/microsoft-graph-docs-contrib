@@ -32,7 +32,7 @@ You request an authorization code by sending a GET request to the Azure AD v2.0 
 1- Start with the base URL:
 
 ```
-https://login.microsoftonline.com/<tenant>/oauth2/v2.0/authorize
+https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize
 ```
 
 The *tenant* segment in the path controls who can sign into the application. Allowed values are *common*, *organizations*, *consumers*, and tenant identifiers. For more information, see [Protocol endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/#endpoints).

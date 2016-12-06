@@ -7,7 +7,7 @@ The following **scope** is required to execute this API: *Directory.AccessAsUser
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/<id>/members/$ref
+POST /directoryRoles/{id}/members/$ref
 
 ```
 ## Request headers
@@ -30,11 +30,11 @@ If successful, this method returns `204, No Content` response code.
   "name": "create_directoryobject_from_directoryrole"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/<id>/members
+POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/<id>"
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
 

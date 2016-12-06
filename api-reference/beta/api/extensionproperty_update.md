@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /applications/<id>/extensionProperties/<id>
+PATCH /applications/{id}/extensionProperties/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_extensionproperty"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/<id>/extensionProperties/<id>
+PATCH https://graph.microsoft.com/beta/applications/{id}/extensionProperties/{id}
 Content-type: application/json
 Content-length: 188
 

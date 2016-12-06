@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /termsAndConditions/<id>/groupAssignments/<id>
+POST /termsAndConditions/{id}/groupAssignments/{id}
 ```
 
 ### Request headers
@@ -37,7 +37,7 @@ If successful, this method returns a `201 Created` response code and a [termsAnd
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/termsAndConditions/<id>/groupAssignments/<id>
+POST https://graph.microsoft.com/beta/termsAndConditions/{id}/groupAssignments/{id}
 Content-type: application/json
 Content-length: 120
 

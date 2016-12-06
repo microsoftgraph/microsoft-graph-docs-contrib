@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
-GET /users/<id>/managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
+GET /users/{id}/managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
 ```
 
 ### Request headers

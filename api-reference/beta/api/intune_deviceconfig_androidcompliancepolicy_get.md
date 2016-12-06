@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceCompliancePolicies/<id>
-GET /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy/
-GET /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>/deviceCompliancePolicy/
+GET /deviceManagement/deviceCompliancePolicies/{id}
+GET /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
+GET /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
 ```
 
 ### Optional query parameters
@@ -33,7 +33,7 @@ If successful, this method returns a `200 OK` response code and [androidComplian
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/<id>
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
 ```
 
 ##### Response

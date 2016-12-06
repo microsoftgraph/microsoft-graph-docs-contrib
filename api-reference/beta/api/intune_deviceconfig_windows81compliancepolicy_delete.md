@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/deviceCompliancePolicies/<id>
-DELETE /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy/
-DELETE /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>/deviceCompliancePolicy/
+DELETE /deviceManagement/deviceCompliancePolicies/{id}
+DELETE /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
+DELETE /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
 ```
 
 ### Request headers
@@ -31,7 +31,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/<id>
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
 ```
 
 ##### Response

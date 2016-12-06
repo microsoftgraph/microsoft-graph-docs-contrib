@@ -9,7 +9,7 @@ Group.Read.All, Group.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /tasks/<id>
+GET /tasks/{id}
 
 ```
 ## Optional query parameters
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "get_task"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/tasks/<id>
+GET https://graph.microsoft.com/beta/tasks/{id}
 ```
 ##### Response
 Here is an example of the response. 

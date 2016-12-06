@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/<id>
-POST /deviceConfigurationAssignments/<id>/deviceConfiguration/
-POST /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>/deviceConfiguration/
+POST /deviceManagement/deviceConfigurations/{id}
+POST /deviceConfigurationAssignments/{id}/deviceConfiguration/
+POST /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
 ```
 
 ### Request headers
@@ -46,7 +46,7 @@ If successful, this method returns a `201 Created` response code and a [windows8
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
 Content-type: application/json
 Content-length: 353
 

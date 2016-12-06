@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_worksheet"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)
 Content-type: application/json
 Content-length: 100
 

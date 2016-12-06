@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /detectedapps/<id>
-POST /detectedapps/<id>/managedDevices/<id>/detectedApps/<id>
+POST /detectedapps/{id}
+POST /detectedapps/{id}/managedDevices/{id}/detectedApps/{id}
 ```
 
 ### Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [detected
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/detectedapps/<id>
+POST https://graph.microsoft.com/beta/detectedapps/{id}
 Content-type: application/json
 Content-length: 167
 

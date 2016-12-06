@@ -6,7 +6,7 @@ One of the following **scopes**, depending on the target resource, are required 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /subscriptions/<id>
+DELETE /subscriptions/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -25,7 +25,7 @@ Here is an example of the request.
   "name": "delete_subscription"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/subscriptions/<id>
+DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 ##### Response
 Here is an example of the response.

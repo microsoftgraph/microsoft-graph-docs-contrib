@@ -11,12 +11,12 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceConfigurationGroupAssignment/
-GET /deviceManagement/deviceConfigurations/<id>/groupAssignments/
-GET /deviceManagement/deviceConfigurations/<id>/rootCertificate//groupAssignments/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/
+GET /deviceManagement/deviceConfigurations/{id}/groupAssignments/
+GET /deviceManagement/deviceConfigurations/{id}/rootCertificate//groupAssignments/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/
 ```
 
 ### Request headers

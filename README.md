@@ -57,7 +57,7 @@ Articles within each topic are named by MSDN GUID, not by title. This is a side 
 3.	Create your own fork of this repository. To do this, at the top of the page,  click the **Fork** button.
 4.	Copy your fork to your local machine. To do this, go open GitBash. At the command prompt enter:
 
-		git clone https://github.com/<your user name>/microsoft-graph-docs.git
+		git clone https://github.com/{your user name}/microsoft-graph-docs.git
 
 	Next, create a reference to the root repository by entering these commands:
 

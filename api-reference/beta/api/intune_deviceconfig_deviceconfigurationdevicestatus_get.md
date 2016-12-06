@@ -10,12 +10,12 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/<id>/deviceStatuses/<id>
-GET /deviceManagement/deviceConfigurations/<id>/rootCertificate//deviceStatuses/<id>
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/<id>
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/<id>
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/<id>
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/<id>
+GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses/{id}
+GET /deviceManagement/deviceConfigurations/{id}/rootCertificate//deviceStatuses/{id}
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/{id}
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/{id}
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/{id}
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/{id}
 ```
 
 ### Optional query parameters
@@ -36,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [deviceConfigura
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/deviceStatuses/<id>
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/deviceStatuses/{id}
 ```
 
 ##### Response

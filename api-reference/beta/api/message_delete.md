@@ -12,19 +12,19 @@ One of the following **scopes** is required to execute this API:
 To delete the specified message:
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/messages/<id>
-DELETE /users/<id | userPrincipalName>/messages/<id>
-DELETE /me/mailFolders/<id>/messages/<id>
-DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
+DELETE /me/messages/{id}
+DELETE /users/{id | userPrincipalName}/messages/{id}
+DELETE /me/mailFolders/{id}/messages/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
 To delete a specific [mention](../resources/mention.md) in a message:
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/messages/<id>/mentions/<id>
-DELETE /users/<id | userPrincipalName>/messages/<id>/mentions/<id>
-DELETE /me/mailFolders/<id>/messages/<id>/mentions/<id>
-DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/mentions/<id>
+DELETE /me/messages/{id}/mentions/{id}
+DELETE /users/{id | userPrincipalName}/messages/{id}/mentions/{id}
+DELETE /me/mailFolders/{id}/messages/{id}/mentions/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{id}
 ```
 
 ## Request headers
@@ -47,7 +47,7 @@ The first example deletes the specified message.
   "name": "delete_message"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/messages/<id>
+DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```
 ##### Response 1
 Here is an example of the response. 
@@ -66,7 +66,7 @@ The next example deletes a certain **mention** in the specified message.
   "name": "delete_mention_in_message"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/messages/<id>/mentions/<id>
+DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ```
 ##### Response 2
 Here is an example of the response. 

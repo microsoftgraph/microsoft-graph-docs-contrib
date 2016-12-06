@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 <!-- { "blockType": "ignored" } -->
 Delete a specific tenant-wide or group setting
 ```http
-DELETE /settings/<id>
-DELETE /groups/<id>/settings/<id>
+DELETE /settings/{id}
+DELETE /groups/{id}/settings/{id}
 
 ```
 ## Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_directorysetting"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/settings/<id>
+DELETE https://graph.microsoft.com/beta/settings/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

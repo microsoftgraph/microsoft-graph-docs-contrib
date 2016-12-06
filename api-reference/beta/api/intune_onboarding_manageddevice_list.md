@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedDevices/
-GET /users/<id>/managedDevices/
-GET /detectedapps/<id>/managedDevices/
+GET /users/{id}/managedDevices/
+GET /detectedapps/{id}/managedDevices/
 ```
 
 ### Request headers

@@ -8,8 +8,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/<id>/threads/<id>
-PATCH /groups/<id>/conversations/<id>/threads/<id>
+PATCH /groups/{id}/threads/{id}
+PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 ```
 ## Request headers
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "update_conversationthread"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 Content-type: application/json
 Content-length: 419
 

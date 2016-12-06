@@ -9,7 +9,7 @@ Group.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /plans/<id>/details
+PATCH /plans/{id}/details
 
 ```
 ## Request headers
@@ -42,7 +42,7 @@ Here is an example of the request.
   "name": "update_plandetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/plans/<id>/details
+PATCH https://graph.microsoft.com/beta/plans/{id}/details
 Content-type: application/json
 Content-length: 381
 If-Match: W/"JzEtMDAwMDAwMDAwMDAwMDAwOC8yMDE1LTEwLTIyVDE4OjExOjU2LjExMzU1NDYrMDA6MDAn"

@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /organization/<id>/uploadApplePushNotificationCertificate
+POST /organization/{id}/uploadApplePushNotificationCertificate
 ```
 
 ### Request headers
@@ -37,7 +37,7 @@ If successful, this action returns a `200 OK` response code and a [organization]
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/<id>/uploadApplePushNotificationCertificate
+POST https://graph.microsoft.com/beta/organization/{id}/uploadApplePushNotificationCertificate
 
 Content-type: application/json
 Content-length: 135

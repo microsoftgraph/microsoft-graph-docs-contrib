@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /termsAndConditions/<id>
-PATCH /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions/
-PATCH /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions/
+PATCH /termsAndConditions/{id}
+PATCH /termsAndConditions/{id}/groupAssignments/{id}/termsAndConditions/
+PATCH /termsAndConditions/{id}/acceptanceStatuses/{id}/termsAndConditions/
 ```
 
 ### Request headers
@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and an updated [term
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/termsAndConditions/<id>
+PATCH https://graph.microsoft.com/beta/termsAndConditions/{id}
 Content-type: application/json
 Content-length: 216
 

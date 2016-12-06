@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate/
+DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate/
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate/
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate/
 ```
 
 ##### Response

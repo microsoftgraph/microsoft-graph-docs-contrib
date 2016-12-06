@@ -10,7 +10,7 @@ Today, each group can own no more than one plan.
 To get the plans owned by a group, make the HTTP request below.
 
 ```http
-GET /groups/<id>/plans
+GET /groups/{id}/plans
 ```
 When creating a new plan, you need to make a group its owner by simply setting the `owner` property on a plan object to the id of a group object if the group does not already own a plan. 
 
@@ -22,13 +22,13 @@ To create a task in a group, set the `planId` property on the task object to the
 To retrieve the tasks in a plan, make the HTTP request below.
 
 ```http
-GET /plans/<id>/tasks
+GET /plans/{id}/tasks
 ```
 Each plan also has a plan details object which is created together with the plan object. 
 To access the plan details object, make the following HTTP request.
 
 ```http
-GET /plans/<id>/details
+GET /plans/{id}/details
 ```
 
 ## Tasks
@@ -37,7 +37,7 @@ It also has a task details object which is created together with the task object
 To access the task details object, make the following HTTP request.
 
 ```http
-GET /tasks/<id>/details
+GET /tasks/{id}/details
 ```
 
 ## API reference

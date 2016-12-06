@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /policies/<id>
+GET /policies/{id}
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -29,7 +29,7 @@ The following example retrieves a specific policy.
 Here is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/policies/<id>
+GET https://graph.microsoft.com/beta/policies/{id}
 ```
 
 ##### Response

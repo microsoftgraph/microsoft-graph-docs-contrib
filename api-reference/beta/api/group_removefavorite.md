@@ -6,7 +6,7 @@ One of the following **scopes** is required to execute this API: *Group.ReadWrit
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/removeFavorite
+POST /groups/{id}/removeFavorite
 ```
 ## Request headers
 | Header       | Value |
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "group_removefavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/removeFavorite
+POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 ```
 
 ##### Response

@@ -8,16 +8,16 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 A user's [calendar](../resources/calendar.md) other than the default calendar in the default [calendarGroup](../resources/calendargroup.md).
 ```http
-DELETE /me/calendars/<id>
-DELETE /users/<id | userPrincipalName>/calendars/<id>
+DELETE /me/calendars/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}
 
-DELETE /me/calendarGroup/calendars/<id>
-DELETE /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
+DELETE /me/calendarGroup/calendars/{id}
+DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 A [calendar](../resources/calendar.md) other than the default calendar, in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
-DELETE /me/calendarGroups/<id>/calendars/<id>
-DELETE /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
+DELETE /me/calendarGroups/{id}/calendars/{id}
+DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## Request headers
 | Name           |  Type    | Description|

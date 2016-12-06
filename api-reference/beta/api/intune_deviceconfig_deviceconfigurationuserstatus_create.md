@@ -10,12 +10,12 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/<id>/userStatuses/<id>
-POST /deviceManagement/deviceConfigurations/<id>/rootCertificate//userStatuses/<id>
-POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//userStatuses/<id>
-POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//userStatuses/<id>
-POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//userStatuses/<id>
-POST /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//userStatuses/<id>
+POST /deviceManagement/deviceConfigurations/{id}/userStatuses/{id}
+POST /deviceManagement/deviceConfigurations/{id}/rootCertificate//userStatuses/{id}
+POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//userStatuses/{id}
+POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//userStatuses/{id}
+POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//userStatuses/{id}
+POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//userStatuses/{id}
 ```
 
 ### Request headers
@@ -43,7 +43,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/userStatuses/<id>
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/userStatuses/{id}
 Content-type: application/json
 Content-length: 165
 

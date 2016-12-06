@@ -7,8 +7,8 @@ One of the following **scopes** is required to execute this API: _Calendars.Read
 <!-- { "blockType": "ignored" } -->
 Any [calendarGroup](../resources/calendargroup.md) of a user.
 ```http
-PATCH /me/calendarGroups/<id>
-PATCH /users/<id | userPrincipalName>/calendarGroups/<id>
+PATCH /me/calendarGroups/{id}
+PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 ## Request headers
 | Header       | Value |
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_calendargroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/calendarGroups/<id>
+PATCH https://graph.microsoft.com/beta/me/calendarGroups/{id}
 Content-type: application/json
 Content-length: 30
 

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /oAuth2Permissiongrants/<id>
-PATCH /users/<id | userPrincipalName>/oAuth2Permissiongrants/<id>
-PATCH /drive/root/createdByUser/oAuth2Permissiongrants/<id>
+PATCH /oAuth2Permissiongrants/{id}
+PATCH /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
+PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "update_oAuth2Permissiongrant"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/oAuth2Permissiongrants/<id>
+PATCH https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 Content-type: application/json
 Content-length: 180
 

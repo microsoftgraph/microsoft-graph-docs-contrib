@@ -8,19 +8,19 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).
 ```http
-PATCH /me/contacts/<id>
-PATCH /users/<id | userPrincipalName>/contacts/<id>
+PATCH /me/contacts/{id}
+PATCH /users/{id | userPrincipalName}/contacts/{id}
 ```
 A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).
 ```http
-PATCH /me/contactFolders/<id>/contacts/<id>
-PATCH /users/<id | userPrincipalName>/contactFolders/<id>/contacts/<id>
+PATCH /me/contactFolders/{id}/contacts/{id}
+PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
 A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
-PATCH /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>
-PATCH /users/<id | userPrincipalName>/contactFolders/<id>/childFolders/<id>/contacts/<id>
+PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## Request headers
 | Header       | Value |
@@ -78,7 +78,7 @@ Here is an example of the request.
   "name": "update_contact"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/contacts/<id>
+PATCH https://graph.microsoft.com/v1.0/me/contacts/{id}
 Content-type: application/json
 Content-length: 1977
 

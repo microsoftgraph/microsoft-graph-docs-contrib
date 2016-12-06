@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
-GET /groups/<id>/threads/<id>/posts/<id>/attachments
-GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
+GET /groups/{id}/threads/{id}/posts/{id}/attachments
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>/attachments
+GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachments
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
