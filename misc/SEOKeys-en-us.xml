@@ -1547,7 +1547,8 @@
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_windowsstoreforbusinessapp_update"/>
 		</Item>
 	</Item>
-	<Item text="Company" url="/en-us/api-reference/beta/intune_company_conceptual"/>
+	</Item>
+	<Item text="Company" url="/en-us/api-reference/beta/intune_company_conceptual">
 		<Item text="Terms and conditions" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditions">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_delete"/>
@@ -1572,9 +1573,7 @@
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_list"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_update"/>
 		</Item>
-
-	</Item>
-
+		</Item>
 	<Item text="Corporate Enrollment" url="/en-us/api-reference/beta/intune_corporate_enrollment_conceptual">
 		<Item text="DEP enrollment profile" url="/en-us/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_create"/>
