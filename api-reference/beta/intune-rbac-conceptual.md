@@ -1,6 +1,7 @@
 # Role based access control in Microsoft Intune
 
 Intune's role based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.   Here are some key concepts to know:
+
 * **Resource** – Resources are the Intune entities exposed through Microsoft Graph for which you grant permissions. For example, Policy and Mobile application are resources.
 *	**Permissions** – An action that can be performed on a Resource.  For example, **Create**, **Read**, **Update**, **Delete**, and **Assign** are actions that you can do on a Resource.
 *	**Member** – An Azure Active Directory Security Group which has the specified permissions.
