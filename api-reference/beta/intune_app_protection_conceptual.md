@@ -4,4 +4,4 @@ Microsoft Intune app protection policies help protect your company data and prev
 
 You can use Intune app protection policies to help protect your company’s data. Because Intune app protection policies can be used independent of any mobile-device management (MDM) solution, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department.
 
-For more details see [What is Microsoft Intune app protection policy?](https://go.microsoft.com/fwlink/?linkid=836758).
+For more details see [What is Microsoft Intune app protection policy?](https://go.microsoft.com/fwlink/?linkid=837538).
