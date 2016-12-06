@@ -1289,8 +1289,8 @@
 				<Item text="List user app install status" url="/en-us/api-reference/beta/api/intune_apps_androidlobapp_list_userappinstallstatus"/>
 				<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_androidlobapp_update"/>
 			</Item>
-		<Item text="Android minimum operating system" url="/en-us/api-reference/beta/resources/intune_apps_androidminimumoperatingsystem">
-			<Item text="Android store app" url="/en-us/api-reference/beta/resources/intune_apps_androidstoreapp"/>
+		<Item text="Android minimum operating system" url="/en-us/api-reference/beta/resources/intune_apps_androidminimumoperatingsystem"/>
+		<Item text="Android store app" url="/en-us/api-reference/beta/resources/intune_apps_androidstoreapp">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_androidstoreapp_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_androidstoreapp_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_androidstoreapp_get"/>
