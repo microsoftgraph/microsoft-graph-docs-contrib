@@ -82,7 +82,6 @@ and is expected to be widely available by the end of January 2016.
 
 ### Drives, files and content streaming
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.
-* Upload and download of files (files in Office groups, drives, or mail file attachments) is limited to 4 MB.
 
 ## Functionality available only in Office 365 REST APIs
 
