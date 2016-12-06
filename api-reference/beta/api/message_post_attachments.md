@@ -1,4 +1,4 @@
-# Create Attachment
+# Add Attachment
 
 Use this API to add an [attachment](../resources/attachment.md) to a message. 
 
