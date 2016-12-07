@@ -4,7 +4,7 @@ Represents app protection and configuration status for the organization.
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List managedAppStatuss](../api/intune_mam_managedappstatus_list.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md) collection|List properties and relationships of the [managedAppStatus](../resources/intune_mam_managedappstatus.md) objects.|
+|[List managedAppStatuses](../api/intune_mam_managedappstatus_list.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md) collection|List properties and relationships of the [managedAppStatus](../resources/intune_mam_managedappstatus.md) objects.|
 |[Get managedAppStatus](../api/intune_mam_managedappstatus_get.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md)|Read properties and relationships of the [managedAppStatus](../resources/intune_mam_managedappstatus.md) object.|
 
 ### Properties

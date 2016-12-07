@@ -1,4 +1,4 @@
-﻿# List mobileAppInstallStatuss
+﻿# List mobileAppInstallStatuses
 List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
