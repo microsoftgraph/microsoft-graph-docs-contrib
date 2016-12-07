@@ -14,8 +14,8 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |[Update windowsStoreForBusinessApp](../api/intune_apps_windowsstoreforbusinessapp_update.md)|[windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md)|Update the properties of a [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) object.|
 |[List mobileAppCategories](../api/intune_apps_windowsstoreforbusinessapp_list_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Get the mobileAppCategories from the categories navigation property.|
 |[List mobileAppGroupAssignments](../api/intune_apps_windowsstoreforbusinessapp_list_mobileappgroupassignment.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Get the mobileAppGroupAssignments from the groupAssignments navigation property.|
-|[List mobileAppInstallStatuss](../api/intune_apps_windowsstoreforbusinessapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuss from the deviceStatuses navigation property.|
-|[List userAppInstallStatuss](../api/intune_apps_windowsstoreforbusinessapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuss from the userStatuses navigation property.|
+|[List mobileAppInstallStatuses](../api/intune_apps_windowsstoreforbusinessapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
+|[List userAppInstallStatuses](../api/intune_apps_windowsstoreforbusinessapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
