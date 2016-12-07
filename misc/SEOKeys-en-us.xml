@@ -20,7 +20,7 @@
   <Item text="Get started" url="/en-us/get-started/get-started">
     <Item text="ASP.NET MVC" url="/en-us/get-started/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
     <Item text="UWP" url="/en-us/get-started/uwp" SEOKeyword="UWP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Windows Universal Platfrom app" />
-    <Item text="IOS" url="/en-us/get-started/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
+    <Item text="iOS" url="/en-us/get-started/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
     <Item text="Android" url="/en-us/get-started/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
     <Item text="Angular" url="/en-us/get-started/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Angular app" />
     <Item text="Node.js" url="/en-us/get-started/nodejs" SEOKeyword="Node.js, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Node.js app" />
@@ -1315,8 +1315,8 @@
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_deviceappmanagement_update"/>
 		</Item>
 		<Item text="File encryption info" url="/en-us/api-reference/beta/resources/intune_apps_fileencryptioninfo"/>
-		<Item text="IOS device type" url="/en-us/api-reference/beta/resources/intune_apps_iosdevicetype"/>
-		<Item text="IOS LOB application" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
+		<Item text="iOS device type" url="/en-us/api-reference/beta/resources/intune_apps_iosdevicetype"/>
+		<Item text="iOS LOB application" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_get"/>
@@ -1328,8 +1328,8 @@
 			<Item text="List user app install status" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_list_userappinstallstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_update"/>
 		</Item>
-		<Item text="IOS minimum operating system" url="/en-us/api-reference/beta/resources/intune_apps_iosminimumoperatingsystem"/>
-		<Item text="IOS mobile app configuration" url="/en-us/api-reference/beta/resources/intune_apps_iosmobileappconfiguration">
+		<Item text="iOS minimum operating system" url="/en-us/api-reference/beta/resources/intune_apps_iosminimumoperatingsystem"/>
+		<Item text="iOS mobile app configuration" url="/en-us/api-reference/beta/resources/intune_apps_iosmobileappconfiguration">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_get"/>
@@ -1339,7 +1339,7 @@
 			<Item text="List MDM app configuration group assignment" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_list_mdmappconfiggroupassignment"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_update"/>
 		</Item>
-		<Item text="IOS store application" url="/en-us/api-reference/beta/resources/intune_apps_iosstoreapp">
+		<Item text="iOS store application" url="/en-us/api-reference/beta/resources/intune_apps_iosstoreapp">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_get"/>
@@ -1350,7 +1350,7 @@
 			<Item text="List user app install status" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_list_userappinstallstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_update"/>
 		</Item>
-		<Item text="IOS VPP application" url="/en-us/api-reference/beta/resources/intune_apps_iosvppapp">
+		<Item text="iOS VPP application" url="/en-us/api-reference/beta/resources/intune_apps_iosvppapp">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_get"/>
@@ -1406,7 +1406,7 @@
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationuserstatus_list"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationuserstatus_update"/>
 		</Item>
-		<Item text="IOS store application" url="/en-us/api-reference/beta/resources/intune_apps_managediosstoreapp">
+		<Item text="iOS store application" url="/en-us/api-reference/beta/resources/intune_apps_managediosstoreapp">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_managediosstoreapp_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_managediosstoreapp_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_managediosstoreapp_get"/>
@@ -1895,14 +1895,14 @@
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_update"/>
 		</Item>
 		<Item text="Extended key usage" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage"/>
-		<Item text="IOS certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
+		<Item text="iOS certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_get"/>
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list"/>
 			<Item text="List device configuration device status" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list_deviceconfigurationdevicestatus"/>
 			<Item text="List device configuration group assignment" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list_deviceconfigurationgroupassignment"/>
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list_deviceconfigurationuserstatus"/>
 		</Item>
-		<Item text="IOS compliance policy" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscompliancepolicy">
+		<Item text="iOS compliance policy" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscompliancepolicy">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscompliancepolicy_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscompliancepolicy_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscompliancepolicy_get"/>
@@ -1913,7 +1913,7 @@
 			<Item text="Devicecomplianceuserstatus" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscompliancepolicy_list_devicecomplianceuserstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscompliancepolicy_update"/>
 		</Item>
-		<Item text="IOS custom configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscustomconfiguration">
+		<Item text="iOS custom configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscustomconfiguration">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscustomconfiguration_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscustomconfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscustomconfiguration_get"/>
@@ -1923,7 +1923,7 @@
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscustomconfiguration_list_deviceconfigurationuserstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscustomconfiguration_update"/>
 		</Item>
-		<Item text="IOS EAS email profile configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioseasemailprofileconfiguration">
+		<Item text="iOS EAS email profile configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioseasemailprofileconfiguration">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioseasemailprofileconfiguration_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioseasemailprofileconfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioseasemailprofileconfiguration_get"/>
@@ -1934,7 +1934,7 @@
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioseasemailprofileconfiguration_list_deviceconfigurationuserstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioseasemailprofileconfiguration_update"/>
 		</Item>
-		<Item text="IOS enterprise Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosenterprisewificonfiguration">
+		<Item text="iOS enterprise Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosenterprisewificonfiguration">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosenterprisewificonfiguration_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosenterprisewificonfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosenterprisewificonfiguration_get"/>
@@ -1946,7 +1946,7 @@
 			<Item text="List iOS trusted root certificate" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosenterprisewificonfiguration_list_iostrustedrootcertificate"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosenterprisewificonfiguration_update"/>
 		</Item>
-		<Item text="IOS general device configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosgeneraldeviceconfiguration">
+		<Item text="iOS general device configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosgeneraldeviceconfiguration">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosgeneraldeviceconfiguration_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosgeneraldeviceconfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosgeneraldeviceconfiguration_get"/>
@@ -1956,7 +1956,7 @@
 			<Item text="List device configuration group assignment" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosgeneraldeviceconfiguration_list_deviceconfigurationuserstatus"/>
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosgeneraldeviceconfiguration_update"/>
 		</Item>
-		<Item text="IOS PKCS certificate profile" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iospkcscertificateprofile">
+		<Item text="iOS PKCS certificate profile" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iospkcscertificateprofile">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_iospkcscertificateprofile_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_iospkcscertificateprofile_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_iospkcscertificateprofile_get"/>
@@ -1966,7 +1966,7 @@
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_iospkcscertificateprofile_list_deviceconfigurationuserstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_iospkcscertificateprofile_update"/>
 		</Item>
-		<Item text="IOS SCEP certificate profile" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosscepcertificateprofile">
+		<Item text="iOS SCEP certificate profile" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosscepcertificateprofile">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosscepcertificateprofile_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosscepcertificateprofile_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosscepcertificateprofile_get"/>
@@ -1977,7 +1977,7 @@
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosscepcertificateprofile_list_deviceconfigurationuserstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosscepcertificateprofile_update"/>
 		</Item>
-		<Item text="IOS trusted root certificate" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iostrustedrootcertificate">
+		<Item text="iOS trusted root certificate" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iostrustedrootcertificate">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_iostrustedrootcertificate_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_iostrustedrootcertificate_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_iostrustedrootcertificate_get"/>
@@ -1987,7 +1987,7 @@
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_iostrustedrootcertificate_list_deviceconfigurationuserstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_iostrustedrootcertificate_update"/>
 		</Item>
-		<Item text="IOS VPN configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosvpnconfiguration">
+		<Item text="iOS VPN configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosvpnconfiguration">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosvpnconfiguration_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosvpnconfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosvpnconfiguration_get"/>
@@ -1998,7 +1998,7 @@
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosvpnconfiguration_list_deviceconfigurationuserstatus"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosvpnconfiguration_update"/>
 		</Item>
-		<Item text="IOS Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioswificonfiguration">
+		<Item text="iOS Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioswificonfiguration">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioswificonfiguration_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioswificonfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioswificonfiguration_get"/>
@@ -2448,7 +2448,7 @@
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_mam_directoryobject_list"/>
 			<Item text="Updatemobileappidentifierdeployments" url="/en-us/api-reference/beta/api/intune_mam_directoryobject_update"/>
 		</Item>
-		<Item text="IOS managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappprotection">
+		<Item text="iOS managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappprotection">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_get"/>
@@ -2458,7 +2458,7 @@
 			<Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_list_mobileappidentifierdeployment"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_update"/>
 		</Item>
-		<Item text="IOS managed app registration" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappregistration">
+		<Item text="iOS managed app registration" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappregistration">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_get"/>
@@ -2467,7 +2467,7 @@
 			<Item text="List managed app policy" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_list_managedapppolicy"/>
 			<Item text="Updatemobileappidentifierdeployments" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_update"/>
 		</Item>
-		<Item text="IOS mobile app identifier" url="/en-us/api-reference/beta/resources/intune_mam_iosmobileappidentifier"/>
+		<Item text="iOS mobile app identifier" url="/en-us/api-reference/beta/resources/intune_mam_iosmobileappidentifier"/>
 		<Item text="Key value pair" url="/en-us/api-reference/beta/resources/intune_mam_keyvaluepair"/>
 		<Item text="Managed app configuration" url="/en-us/api-reference/beta/resources/intune_mam_managedappconfiguration">
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_managedappconfiguration_get"/>
