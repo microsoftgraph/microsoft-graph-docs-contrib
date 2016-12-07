@@ -14,8 +14,8 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 |[Update managedIOSStoreApp](../api/intune_apps_managediosstoreapp_update.md)|[managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md)|Update the properties of a [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object.|
 |[List mobileAppCategories](../api/intune_apps_managediosstoreapp_list_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Get the mobileAppCategories from the categories navigation property.|
 |[List mobileAppGroupAssignments](../api/intune_apps_managediosstoreapp_list_mobileappgroupassignment.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Get the mobileAppGroupAssignments from the groupAssignments navigation property.|
-|[List mobileAppInstallStatuss](../api/intune_apps_managediosstoreapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuss from the deviceStatuses navigation property.|
-|[List userAppInstallStatuss](../api/intune_apps_managediosstoreapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuss from the userStatuses navigation property.|
+|[List mobileAppInstallStatuses](../api/intune_apps_managediosstoreapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
+|[List userAppInstallStatuses](../api/intune_apps_managediosstoreapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 
 ### Properties
 |Property|Type|Description|
