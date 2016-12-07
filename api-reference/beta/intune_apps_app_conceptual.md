@@ -35,7 +35,7 @@ You can use Intune app protection policies to help protect your company’s data
 
 For more details see [What is Microsoft Intune app protection policy?](https://go.microsoft.com/fwlink/?linkid=837538).
 # Retire
-You can wipe apps and data from I devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
+You can wipe apps and data from devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
 
 
 For more details, see [What is app management](https://go.microsoft.com/fwlink/?linkid=836753).
