@@ -129,12 +129,6 @@ Content-type: application/json
 }
 ```
 
-## Remarks
-
-**Note:** In OneDrive for Business and SharePoint, search does not return the following properties:
-
-* `parentReference`
-
 
 
 
