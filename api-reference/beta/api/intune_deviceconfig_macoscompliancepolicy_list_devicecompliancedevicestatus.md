@@ -1,5 +1,5 @@
-﻿# List deviceComplianceDeviceStatuss
-Get the deviceComplianceDeviceStatuss from the deviceStatuses navigation property.
+﻿# List deviceComplianceDeviceStatuses
+Get the deviceComplianceDeviceStatuses from the deviceStatuses navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

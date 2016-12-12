@@ -1,4 +1,4 @@
-﻿# List deviceConfigurationUserStatuss
+﻿# List deviceConfigurationUserStatuses
 List properties and relationships of the [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

@@ -1,5 +1,5 @@
-﻿# List termsAndConditionsAcceptanceStatuss
-Get the termsAndConditionsAcceptanceStatuss from the acceptanceStatuses navigation property.
+﻿# List termsAndConditionsAcceptanceStatuses
+Get the termsAndConditionsAcceptanceStatuses from the acceptanceStatuses navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

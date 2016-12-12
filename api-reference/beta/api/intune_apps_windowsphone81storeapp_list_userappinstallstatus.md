@@ -1,5 +1,5 @@
-﻿# List userAppInstallStatuss
-Get the userAppInstallStatuss from the userStatuses navigation property.
+﻿# List userAppInstallStatuses
+Get the userAppInstallStatuses from the userStatuses navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

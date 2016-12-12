@@ -1,4 +1,4 @@
-﻿# List deviceComplianceDeviceStatuss
+﻿# List deviceComplianceDeviceStatuses
 List properties and relationships of the [deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

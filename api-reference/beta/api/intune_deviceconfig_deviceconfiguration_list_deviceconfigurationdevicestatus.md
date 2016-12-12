@@ -1,5 +1,5 @@
-﻿# List deviceConfigurationDeviceStatuss
-Get the deviceConfigurationDeviceStatuss from the deviceStatuses navigation property.
+﻿# List deviceConfigurationDeviceStatuses
+Get the deviceConfigurationDeviceStatuses from the deviceStatuses navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

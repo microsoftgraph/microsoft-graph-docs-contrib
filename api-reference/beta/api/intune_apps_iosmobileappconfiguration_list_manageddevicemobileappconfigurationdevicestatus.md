@@ -1,5 +1,5 @@
-﻿# List managedDeviceMobileAppConfigurationDeviceStatuss
-Get the managedDeviceMobileAppConfigurationDeviceStatuss from the deviceStatuses navigation property.
+﻿# List managedDeviceMobileAppConfigurationDeviceStatuses
+Get the managedDeviceMobileAppConfigurationDeviceStatuses from the deviceStatuses navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

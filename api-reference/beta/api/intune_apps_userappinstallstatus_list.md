@@ -1,4 +1,4 @@
-﻿# List userAppInstallStatuss
+﻿# List userAppInstallStatuses
 List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:

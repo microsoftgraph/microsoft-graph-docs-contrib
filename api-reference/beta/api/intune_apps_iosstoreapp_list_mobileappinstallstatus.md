@@ -1,5 +1,5 @@
-﻿# List mobileAppInstallStatuss
-Get the mobileAppInstallStatuss from the deviceStatuses navigation property.
+﻿# List mobileAppInstallStatuses
+Get the mobileAppInstallStatuses from the deviceStatuses navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 

@@ -1,4 +1,4 @@
-﻿# List termsAndConditionsAcceptanceStatuss
+﻿# List termsAndConditionsAcceptanceStatuses
 List properties and relationships of the [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
