@@ -15,7 +15,7 @@ The following **scopes** are required to execute this API: *Mail.ReadWrite*
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/inferenceClassification/overrides
-POST /users/<id>/inferenceClassification/overrides
+POST /users/{id}/inferenceClassification/overrides
 ```
 ## Request headers
 | Name       | Type | Description|

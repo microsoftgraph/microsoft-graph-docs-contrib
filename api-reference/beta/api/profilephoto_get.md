@@ -31,35 +31,35 @@ One of the following **scopes** is required to execute this API for:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
-GET /users/<id | userPrincipalName>/photo/$value
-GET /groups/<id>/photo/$value
-GET /me/contacts/<id>/photo/$value
-GET /users/<id | userPrincipalName>/contacts/<id>/photo/$value
-GET /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
+GET /users/{id | userPrincipalName}/photo/$value
+GET /groups/{id}/photo/$value
+GET /me/contacts/{id}/photo/$value
+GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
 ## HTTP request to get the metadata of the photo
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
-GET /users/<id | userPrincipalName>/photo
-GET /groups/<id>/photo
-GET /me/contacts/<id>/photo
-GET /users/<id | userPrincipalName>/contacts/<id>/photo
-GET /me/contactfolders/<contactFolderId>/contacts/<id>/photo
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo
+GET /users/{id | userPrincipalName}/photo
+GET /groups/{id}/photo
+GET /me/contacts/{id}/photo
+GET /users/{id | userPrincipalName}/contacts/{id}/photo
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
 ## HTTP request to get the metadata for a specific photo size
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/photos/<size>
-GET /users/<id | userPrincipalName>/photos/<size>
-GET /groups/<id>/photos/<size>
-GET /me/contacts/<id>/photos/<size>
-GET /users/<id | userPrincipalName>/contacts/<id>/photos/<size>
-GET /me/contactfolders/<contactFolderId>/contacts/<id>/photos/<size>
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photos/<size>
+GET /me/photos/{size}
+GET /users/{id | userPrincipalName}/photos/{size}
+GET /groups/{id}/photos/{size}
+GET /me/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## Parameters

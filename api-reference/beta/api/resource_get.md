@@ -7,9 +7,9 @@ Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or No
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/resources/<id>/content
-GET /users/<id | userPrincipalName>/notes/resources/<id>/content
-GET /groups/<id>/notes/resources/<id>/content
+GET /me/notes/resources/{id}/content
+GET /users/{id | userPrincipalName}/notes/resources/{id}/content
+GET /groups/{id}/notes/resources/{id}/content
 ```
 
 ## Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_resource"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/resources/<id>/content
+GET https://graph.microsoft.com/beta/me/notes/resources/{id}/content
 ```
 ##### Response
 Here is an example of the response.

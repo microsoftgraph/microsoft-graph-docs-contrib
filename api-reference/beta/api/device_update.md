@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /devices/<id>
+PATCH /devices/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "update_device"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/devices/<id>
+PATCH https://graph.microsoft.com/beta/devices/{id}
 Content-type: application/json
 Content-length: 322
 

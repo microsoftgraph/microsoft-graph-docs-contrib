@@ -7,8 +7,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/mailFolders/<id>
-DELETE /users/<id | userPrincipalName>/mailFolders/<id>
+DELETE /me/mailFolders/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "delete_mailfolder"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/mailFolders/<id>
+DELETE https://graph.microsoft.com/beta/me/mailFolders/{id}
 ```
 ##### Response
 Here is an example of the response. 

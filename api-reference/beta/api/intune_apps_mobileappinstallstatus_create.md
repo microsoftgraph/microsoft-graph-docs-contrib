@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/<id>/deviceStatuses/<id>
-POST /deviceAppManagement/mobileApps/<id>/userStatuses/<id>/deviceStatuses/<id>
+POST /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}
+POST /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/deviceStatuses/{id}
 ```
 
 ### Request headers
@@ -44,7 +44,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>/deviceStatuses/<id>
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}
 Content-type: application/json
 Content-length: 310
 

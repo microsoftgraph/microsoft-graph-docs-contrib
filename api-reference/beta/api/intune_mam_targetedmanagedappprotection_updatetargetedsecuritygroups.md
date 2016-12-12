@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedAppPolicies/<id>/updateTargetedSecurityGroups
-POST /managedAppRegistrations/<id>/appliedPolicies/<id>/updateTargetedSecurityGroups
-POST /managedAppRegistrations/<id>/intendedPolicies/<id>/updateTargetedSecurityGroups
+POST /managedAppPolicies/{id}/updateTargetedSecurityGroups
+POST /managedAppRegistrations/{id}/appliedPolicies/{id}/updateTargetedSecurityGroups
+POST /managedAppRegistrations/{id}/intendedPolicies/{id}/updateTargetedSecurityGroups
 ```
 
 ### Request headers
@@ -38,7 +38,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppPolicies/<id>/updateTargetedSecurityGroups
+POST https://graph.microsoft.com/beta/managedAppPolicies/{id}/updateTargetedSecurityGroups
 
 Content-type: application/json
 Content-length: 164

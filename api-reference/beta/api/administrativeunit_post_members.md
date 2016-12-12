@@ -10,7 +10,7 @@ The following **scopes** are required to execute this API: *Directory.AccessAsUs
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits/<id>/members/$ref
+POST /administrativeUnits/{id}/members/$ref
 ```
 ## Request headers
 | Name      |Description|
@@ -28,12 +28,12 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 
 ```http
-POST https://graph.microsoft.com/beta/administrativeUnits/<id>/members/$ref
+POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 Content-type: application/json
 Content-length: 109
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/groups/<id>"
+  "@odata.id":"https://graph.microsoft.com/beta/groups/{id}"
 }
 
 ```

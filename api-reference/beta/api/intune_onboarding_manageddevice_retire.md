@@ -11,9 +11,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedDevices/<id>/retire
-POST /users/<id>/managedDevices/<id>/retire
-POST /detectedapps/<id>/managedDevices/<id>/retire
+POST /managedDevices/{id}/retire
+POST /users/{id}/managedDevices/{id}/retire
+POST /detectedapps/{id}/managedDevices/{id}/retire
 ```
 
 ### Request headers
@@ -32,7 +32,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedDevices/<id>/retire
+POST https://graph.microsoft.com/beta/managedDevices/{id}/retire
 ```
 
 ##### Response

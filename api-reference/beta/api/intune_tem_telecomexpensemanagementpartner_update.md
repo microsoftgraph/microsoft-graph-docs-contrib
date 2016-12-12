@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/telecomExpenseManagementPartners/<id>
+PATCH /deviceManagement/telecomExpenseManagementPartners/{id}
 ```
 
 ### Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [tele
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners/<id>
+PATCH https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners/{id}
 Content-type: application/json
 Content-length: 178
 

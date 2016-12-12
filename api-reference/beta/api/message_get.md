@@ -11,19 +11,19 @@ One of the following **scopes** is required to execute this API:
 To get the specified message:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/<id>
-GET /users/<id | userPrincipalName>/messages/<id>
-GET /me/mailFolders/<id>/messages/<id>
-GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
+GET /me/messages/{id}
+GET /users/{id | userPrincipalName}/messages/{id}
+GET /me/mailFolders/{id}/messages/{id}
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
 To get a message and expand all mentions in the message:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/<id>?$expand=mentions
-GET /users/<id | userPrincipalName>/messages/<id>?$expand=mentions
-GET /me/mailFolders/<id>/messages/<id>?$expand=mentions
-GET /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>?$expand=mentions
+GET /me/messages/{id}?$expand=mentions
+GET /users/{id | userPrincipalName}/messages/{id}?$expand=mentions
+GET /me/mailFolders/{id}/messages/{id}?$expand=mentions
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=mentions
 ```
 
 ## Optional query parameters
@@ -51,7 +51,7 @@ The first example gets the specified message.
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/<id>
+GET https://graph.microsoft.com/beta/me/messages/{id}
 ```
 ##### Response 1
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceCompliancePolicyGroupAssignment/
-GET /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/
+GET /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/
 ```
 
 ### Request headers

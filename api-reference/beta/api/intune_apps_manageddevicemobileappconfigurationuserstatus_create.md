@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /iosMobileAppConfigurations/<id>/userStatuses/<id>
+POST /iosMobileAppConfigurations/{id}/userStatuses/{id}
 ```
 
 ### Request headers
@@ -38,7 +38,7 @@ If successful, this method returns a `201 Created` response code and a [managedD
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/iosMobileAppConfigurations/<id>/userStatuses/<id>
+POST https://graph.microsoft.com/beta/iosMobileAppConfigurations/{id}/userStatuses/{id}
 Content-type: application/json
 Content-length: 181
 

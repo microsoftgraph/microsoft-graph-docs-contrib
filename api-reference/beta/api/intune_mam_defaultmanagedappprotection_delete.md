@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /managedAppPolicies/<id>
-DELETE /managedAppRegistrations/<id>/appliedPolicies/<id>
-DELETE /managedAppRegistrations/<id>/intendedPolicies/<id>
+DELETE /managedAppPolicies/{id}
+DELETE /managedAppRegistrations/{id}/appliedPolicies/{id}
+DELETE /managedAppRegistrations/{id}/intendedPolicies/{id}
 ```
 
 ### Request headers
@@ -31,7 +31,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/managedAppPolicies/<id>
+DELETE https://graph.microsoft.com/beta/managedAppPolicies/{id}
 ```
 
 ##### Response

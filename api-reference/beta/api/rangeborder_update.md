@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "update_rangeborder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/range/format/borders(<sideIndex>)
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/borders(<sideIndex>)
 Content-type: application/json
 Content-length: 136
 

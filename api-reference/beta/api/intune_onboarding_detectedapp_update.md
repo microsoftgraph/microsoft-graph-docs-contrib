@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /detectedapps/<id>
-PATCH /detectedapps/<id>/managedDevices/<id>/detectedApps/<id>
+PATCH /detectedapps/{id}
+PATCH /detectedapps/{id}/managedDevices/{id}/detectedApps/{id}
 ```
 
 ### Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [dete
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/detectedapps/<id>
+PATCH https://graph.microsoft.com/beta/detectedapps/{id}
 Content-type: application/json
 Content-length: 117
 

@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API: *Directory.Read.All* 
 ## HTTP request
 
 ```http
-GET /administrativeUnits/<id>/members/<id>
+GET /administrativeUnits/{id}/members/{id}
 ```
 ## Request headers
 | Name      |Description|
@@ -26,7 +26,7 @@ If successful, this method returns a `200 OK` response code and a [user](../reso
 Here is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/administrativeUnits/<id>/members/<id>
+GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### Response

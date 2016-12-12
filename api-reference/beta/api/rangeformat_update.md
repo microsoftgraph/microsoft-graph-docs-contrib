@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "update_rangeformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/range/format
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format
 Content-type: application/json
 Content-length: 96
 

@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryObjects/<id>
+GET /directoryObjects/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and [directoryObject
   "name": "get_directoryobject"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryObject/<id>
+GET https://graph.microsoft.com/v1.0/directoryObject/{id}
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

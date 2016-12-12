@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /connectorGroups/<id>
+PATCH /connectorGroups/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "update_connectorgroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/{ver}/connectorGroups/<id>
+PATCH https://graph.microsoft.com/{ver}/connectorGroups/{id}
 Content-type: application/json
 Content-length: 99
 

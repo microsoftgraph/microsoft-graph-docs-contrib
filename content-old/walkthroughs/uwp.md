@@ -45,7 +45,7 @@ The App.xaml file contains the key/value pairs that your app will need in order 
     <Application.Resources>
         <!-- Add your client id here. -->
         <x:String x:Key="ida:ClientID"><your client id></x:String>
-        <x:String x:Key="ida:AADInstance">https://login.microsoftonline.com/</x:String>
+        <x:String x:Key="ida:AADInstance">https://login.microsoftonline.com/{/x:String}
         <!-- Add your developer tenant domain here. -->
         <x:String x:Key="ida:Domain">yourtenant.onmicrosoft.com</x:String>
     </Application.Resources>

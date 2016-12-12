@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/roleDefinitions/<id>
-PATCH /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>/roleDefinition/
+PATCH /deviceManagement/roleDefinitions/{id}
+PATCH /deviceManagement/roleDefinitions/{id}/roleAssignments/{id}/roleDefinition/
 ```
 
 ### Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [role
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/<id>
+PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{id}
 Content-type: application/json
 Content-length: 264
 

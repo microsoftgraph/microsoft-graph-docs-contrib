@@ -9,7 +9,7 @@ The requestor needs to have _Privileged Role Administrator_ role.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedRoleAssignments/<id>/makeEligible
+POST /privilegedRoleAssignments/{id}/makeEligible
 ```
 ## Request headers
 | Name       | Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "privilegedroleassignment_makeeligible"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/privilegedRoleAssignments/<id>/makeEligible
+POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makeEligible
 ```
 
 ##### Response

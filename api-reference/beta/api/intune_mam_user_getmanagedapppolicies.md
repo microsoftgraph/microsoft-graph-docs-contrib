@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /users/<id>/getManagedAppPolicies
+GET /users/{id}/getManagedAppPolicies
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this function returns a `200 OK` response code and a [managedAppP
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/users/<id>/getManagedAppPolicies
+GET https://graph.microsoft.com/beta/users/{id}/getManagedAppPolicies
 ```
 
 ##### Response

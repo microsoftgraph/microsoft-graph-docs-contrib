@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_icon"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/sort/fields/icon
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/sort/fields/icon
 Content-type: application/json
 Content-length: 39
 

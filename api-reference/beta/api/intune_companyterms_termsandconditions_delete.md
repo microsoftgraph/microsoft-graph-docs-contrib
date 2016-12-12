@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /termsAndConditions/<id>
-DELETE /termsAndConditions/<id>/groupAssignments/<id>/termsAndConditions/
-DELETE /termsAndConditions/<id>/acceptanceStatuses/<id>/termsAndConditions/
+DELETE /termsAndConditions/{id}
+DELETE /termsAndConditions/{id}/groupAssignments/{id}/termsAndConditions/
+DELETE /termsAndConditions/{id}/acceptanceStatuses/{id}/termsAndConditions/
 ```
 
 ### Request headers
@@ -31,7 +31,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/termsAndConditions/<id>
+DELETE https://graph.microsoft.com/beta/termsAndConditions/{id}
 ```
 
 ##### Response

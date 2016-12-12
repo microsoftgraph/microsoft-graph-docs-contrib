@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/threads/<id>/posts/<id>/reply
-POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/reply
+POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 
 ```
 ## Request headers
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "post_reply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts/<id>/reply
+POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/reply
 Content-type: application/json
 Content-length: 1131
 

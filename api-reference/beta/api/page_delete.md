@@ -7,9 +7,9 @@ Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/notes/pages/<id>
-DELETE /users/<id | userPrincipalName>/notes/pages/<id>
-DELETE /groups/<id>/notes/pages/<id>
+DELETE /me/notes/pages/{id}
+DELETE /users/{id | userPrincipalName}/notes/pages/{id}
+DELETE /groups/{id}/notes/pages/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -28,7 +28,7 @@ Here is an example of the request.
   "name": "delete_page"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/notes/pages/<id>
+DELETE https://graph.microsoft.com/beta/me/notes/pages/{id}
 ```
 ##### Response
 Here is an example of the response.

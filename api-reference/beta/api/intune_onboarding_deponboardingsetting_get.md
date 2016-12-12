@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /organization/<id>/depOnboardingSettings/<id>
+GET /organization/{id}/depOnboardingSettings/{id}
 ```
 
 ### Optional query parameters
@@ -31,7 +31,7 @@ If successful, this method returns a `200 OK` response code and [depOnboardingSe
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/organization/<id>/depOnboardingSettings/<id>
+GET https://graph.microsoft.com/beta/organization/{id}/depOnboardingSettings/{id}
 ```
 
 ##### Response

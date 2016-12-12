@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/invalidateAllRefreshTokens
-POST /users/<id | userPrincipalName>/invalidateAllRefreshTokens
+POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 ```
 ## Request headers
 | Header       | Value |

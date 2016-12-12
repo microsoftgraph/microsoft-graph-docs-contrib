@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events
-GET /users/<id | userPrincipalName>/events
+GET /users/{id | userPrincipalName}/events
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

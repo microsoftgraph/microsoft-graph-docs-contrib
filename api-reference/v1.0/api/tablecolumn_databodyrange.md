@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "tablecolumn_databodyrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables(<id|name>)/columns(<id|name>)/DataBodyRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/DataBodyRange
 ```
 
 ##### Response

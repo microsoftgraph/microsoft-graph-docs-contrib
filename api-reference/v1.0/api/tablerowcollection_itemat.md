@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "tablerowcollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables(<id|name>)/rows/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows/ItemAt
 Content-type: application/json
 Content-length: 20
 

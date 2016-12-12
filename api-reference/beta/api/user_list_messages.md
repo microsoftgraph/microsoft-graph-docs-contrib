@@ -16,14 +16,14 @@ To get all the messages in the user's mailbox:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/messages
+GET /users/{id | userPrincipalName}/messages
 ```
 
 To get all the messages in the user's mailbox that include a **mention** of the signed-in user.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/messages?$filter=mentionsPreview/isMentioned eq true
+GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned eq true
 ```
 
 ## Optional query parameters

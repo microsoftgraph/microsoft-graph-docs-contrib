@@ -42,54 +42,54 @@ Get a resource instance expanded with the extended property which matches a filt
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/messages/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/mailFolders/<id>/messages/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **mailFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/mailFolders/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get an **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/events/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **calendar** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/calendars/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **contact** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contacts/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/contacts/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/contactFolders/<id>/contacts/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/contactFolders/<id>/contacts/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **contactFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contactfolders/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/contactFolders/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a group **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/events/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get a group **post** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/threads/<id>/posts/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 ## Parameters

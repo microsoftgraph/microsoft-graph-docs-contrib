@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
 Content-type: application/json
 Content-length: 32
 

@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /shares/<id>/items
+POST /shares/{id}/items
 
 ```
 ## Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_driveitem_from_share"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/shares/<id>/items
+POST https://graph.microsoft.com/beta/shares/{id}/items
 Content-type: application/json
 Content-length: 504
 

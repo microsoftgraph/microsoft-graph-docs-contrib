@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 
 ```http
-POST /applications/<id>/policies/$ref
-POST /serviceprincipals/<id>/policies/$ref
+POST /applications/{id}/policies/$ref
+POST /serviceprincipals/{id}/policies/$ref
 ```
 
 > Note: The "id" in the request is the "id" property of the application or service principal, not the "appid" property.
@@ -36,10 +36,10 @@ The following example assigns a policy to an application.
 Here is an example of the request.
 
 ```http
-POST /applications/<id>/policies/$ref
+POST /applications/{id}/policies/$ref
 Content-type: application/json
 {
-    "@odata.id":"https://graph.microsoft.com/beta/policies/<policyid>"
+    "@odata.id":"https://graph.microsoft.com/beta/policies/{policyid}"
 }
 ```
 

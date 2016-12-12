@@ -16,10 +16,10 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/createReply
-POST /users/<id | userPrincipalName>/messages/<id>/createReply
-POST /me/mailFolders/<id>/messages/<id>/createReply
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/createReply
+POST /me/messages/{id}/createReply
+POST /users/{id | userPrincipalName}/messages/{id}/createReply
+POST /me/mailFolders/{id}/messages/{id}/createReply
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
 ## Request headers
 | Name       | Type | Description|

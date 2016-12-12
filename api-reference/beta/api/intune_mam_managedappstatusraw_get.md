@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppStatuses/<id>
+GET /managedAppStatuses/{id}
 ```
 
 ### Optional query parameters
@@ -31,7 +31,7 @@ If successful, this method returns a `200 OK` response code and [managedAppStatu
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppStatuses/<id>
+GET https://graph.microsoft.com/beta/managedAppStatuses/{id}
 ```
 
 ##### Response

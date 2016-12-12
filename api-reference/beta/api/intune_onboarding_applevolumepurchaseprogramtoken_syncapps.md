@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /organization/<id>/appleVolumePurchaseProgramTokens/<id>/syncApps
+POST /organization/{id}/appleVolumePurchaseProgramTokens/{id}/syncApps
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this action returns a `200 OK` response code and a [appleVolumePu
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/<id>/appleVolumePurchaseProgramTokens/<id>/syncApps
+POST https://graph.microsoft.com/beta/organization/{id}/appleVolumePurchaseProgramTokens/{id}/syncApps
 ```
 
 ##### Response

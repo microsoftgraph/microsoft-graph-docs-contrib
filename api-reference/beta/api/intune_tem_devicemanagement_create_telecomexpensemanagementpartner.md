@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/telecomExpenseManagementPartners/<id>
+POST /deviceManagement/telecomExpenseManagementPartners/{id}
 ```
 
 ### Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [telecomE
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners/<id>
+POST https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners/{id}
 Content-type: application/json
 Content-length: 248
 

@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_tablecolumn_from_table"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables(<id|name>)/columns
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns
 Content-type: application/json
 Content-length: 81
 

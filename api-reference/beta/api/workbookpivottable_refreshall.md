@@ -8,7 +8,7 @@ Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/<id>/pivotTables/refreshAll
+POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "workbookpivottable_refreshall"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/<id>/pivotTables/refreshAll
+POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ```
 
 ##### Response

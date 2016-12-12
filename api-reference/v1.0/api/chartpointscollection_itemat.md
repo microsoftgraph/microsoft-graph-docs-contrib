@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "chartpointscollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points/ItemAt
 Content-type: application/json
 Content-length: 20
 
