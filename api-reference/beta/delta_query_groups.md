@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-The same [permission scopes](../authorization/permission_scopes.md) that are required to read a specific resource are also required to perform delta query on that resource.
+The same [permission scopes](../../authorization/permission_scopes.md) that are required to read a specific resource are also required to perform delta query on that resource.
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
