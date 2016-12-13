@@ -179,20 +179,11 @@
       </Item>
     </Item>
     <Item text="Attachment" url="/en-us/api-reference/v1.0/resources/attachment">
+		<Item text="FileAttachment resource" url="/en-us/api-reference/v1.0/api/attachment_get" />
+		<Item text="ItemAttachment resource" url="/en-us/api-reference/v1.0/resources/itemattachment" />
+		<Item text="ReferenceAttachment resource" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
 		<Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
 		<Item text="Delete attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
-		<Item text="File attachment" url="/en-us/api-reference/v1.0/resources/fileattachment" >
-			<Item text="Get file attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
-			<Item text="Delete file attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
-		</Item>
-		<Item text="Item attachment" url="/en-us/api-reference/v1.0/resources/itemattachment" >
-			<Item text="Get item attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
-			<Item text="Delete item attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
-		</Item>
-		<Item text="Reference attachment" url="/en-us/api-reference/v1.0/resources/referenceattachment" >
-			<Item text="Get reference attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
-			<Item text="Delete reference attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
-		</Item>
 	</Item>
 	<Item text="Outlook mail" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Outlook Mail APIs">
       <Item text="Message" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Mail APIs">
@@ -772,20 +763,11 @@
       </Item>
     </Item>
 	 <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
+		<Item text="FileAttachment resource" url="/en-us/api-reference/beta/api/attachment_get" />
+		<Item text="ItemAttachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
+		<Item text="ReferenceAttachment resource" url="/en-us/api-reference/beta/resources/referenceattachment" />
 		<Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
 		<Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
-		<Item text="File attachment" url="/en-us/api-reference/beta/resources/fileattachment" >
-			<Item text="Get file attachment" url="/en-us/api-reference/beta/api/attachment_get" />
-			<Item text="Delete file attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
-		</Item>
-		<Item text="Item attachment" url="/en-us/api-reference/beta/resources/itemattachment" >
-			<Item text="Get item attachment" url="/en-us/api-reference/beta/api/attachment_get" />
-			<Item text="Delete item attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
-		</Item>
-		<Item text="Reference attachment" url="/en-us/api-reference/beta/resources/referenceattachment" >
-			<Item text="Get reference attachment" url="/en-us/api-reference/beta/api/attachment_get" />
-			<Item text="Delete reference attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
-		</Item>
 	</Item>
     <Item text="Outlook mail" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
       <Item text="Message" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
