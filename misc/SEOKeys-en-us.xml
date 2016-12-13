@@ -34,8 +34,10 @@
 	<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	<Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
 	<Item text="Sovereign deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
-  </Item>
+  
   <Item text="horizontalline" url="/" IsSeparation="true" />
+  </Item>
+  
   <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
     <Item text="Users" url="/en-us/api-reference/v1.0/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
       <Item text="User" url="/en-us/api-reference/v1.0/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
@@ -473,10 +475,11 @@
         <Item text="Update subscription" url="/en-us/api-reference/v1.0/api/subscription_update" />
         <Item text="Delete subscription" url="/en-us/api-reference/v1.0/api/subscription_delete" />
       </Item>
-    </Item>
+    <Item text="horizontalline" url="/" IsSeparation="true" />
+	</Item>
   <!--</Item>-->
 
-  <Item text="horizontalline" url="/" IsSeparation="true" />
+  
   <Item text="Beta reference" url="/en-us/api-reference/beta/beta-overview">
     <Item text="Users" url="/en-us/api-reference/beta/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
       <Item text="User" url="/en-us/api-reference/beta/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
