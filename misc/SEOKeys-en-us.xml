@@ -179,6 +179,8 @@
       </Item>
     </Item>
     <Item text="Attachment" url="/en-us/api-reference/v1.0/resources/attachment">
+		<Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
+		<Item text="Delete attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
 		<Item text="File attachment" url="/en-us/api-reference/v1.0/resources/fileattachment" >
 			<Item text="Get file attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
 			<Item text="Delete file attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
@@ -770,6 +772,8 @@
       </Item>
     </Item>
 	 <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
+		<Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
+		<Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
 		<Item text="File attachment" url="/en-us/api-reference/beta/resources/fileattachment" >
 			<Item text="Get file attachment" url="/en-us/api-reference/beta/api/attachment_get" />
 			<Item text="Delete file attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
