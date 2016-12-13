@@ -245,6 +245,65 @@
 	  </Item> 
     </Item>
     <Item text="Outlook calendar" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
+	   <Item text="Event" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar API">
+        <Item text="List events" url="/en-us/api-reference/v1.0/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Create event" url="/en-us/api-reference/v1.0/api/user_post_events" SEOKeyword="Create Event, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Event." />
+        <Item text="Get event" url="/en-us/api-reference/v1.0/api/event_get" SEOKeyword="Get event, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of event object." />
+        <Item text="Update event" url="/en-us/api-reference/v1.0/api/event_update" SEOKeyword="Update event, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of event object." />
+        <Item text="Delete event" url="/en-us/api-reference/v1.0/api/event_delete" SEOKeyword="Delete event, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete event." />
+        <Item text="Accept events" url="/en-us/api-reference/v1.0/api/event_accept" SEOKeyword="Accept events, Microsoft Graph API, Outlook Calendar API" SEODescription="Accept events" />
+        <Item text="Tentatively accept" url="/en-us/api-reference/v1.0/api/event_tentativelyaccept" SEOKeyword="event: tentativelyAccept, Microsoft Graph API, event API" SEODescription="Tentatively accept events" />
+        <Item text="Decline events" url="/en-us/api-reference/v1.0/api/event_decline" SEOKeyword="event: decline, Microsoft Graph API, event API" SEODescription="Decline events" />
+        <Item text="Dismiss reminder" url="/en-us/api-reference/v1.0/api/event_dismissreminder" SEOKeyword="event: dismissReminder, Microsoft Graph API, event API" SEODescription="Dismiss reminder" />
+        <Item text="Snooze reminder" url="/en-us/api-reference/v1.0/api/event_snoozereminder" SEOKeyword="event: snoozeReminder, Microsoft Graph API, event API" SEODescription="Snooze reminder" />
+        <Item text="List event instances" url="/en-us/api-reference/v1.0/api/event_list_instances" SEOKeyword="List event instances, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
+        <Item text="List attachments" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
+        <Item text="Add attachment" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+      </Item>
+      <Item text="Event message" url="/en-us/api-reference/v1.0/resources/eventmessage" SEOKeyword="eventmessage API, Microsoft Graph API, eventmessage API" SEODescription="A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.">
+        <Item text="Get event message" url="/en-us/api-reference/v1.0/api/eventmessage_get" SEOKeyword="Get event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of eventmessage object." />
+        <Item text="Update event message" url="/en-us/api-reference/v1.0/api/eventmessage_update" SEOKeyword="Update event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of eventmessage object." />
+        <Item text="Delete event message" url="/en-us/api-reference/v1.0/api/eventmessage_delete" SEOKeyword="Delete event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete eventMessage." />
+        <Item text="Send event message" url="/en-us/api-reference/v1.0/api/message_send" SEOKeyword="Send event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Send event message" />
+        <Item text="Copy event message" url="/en-us/api-reference/v1.0/api/message_copy" SEOKeyword="Copy event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Copy event message" />
+        <Item text="Move event message" url="/en-us/api-reference/v1.0/api/message_move" SEOKeyword="Move event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Move event message" />
+        <Item text="Create Reply" url="/en-us/api-reference/v1.0/api/message_createreply" SEOKeyword="Create Reply, Microsoft Graph API, Outlook Calendar API" SEODescription="Create Reply" />
+        <Item text="Reply event message" url="/en-us/api-reference/v1.0/api/message_reply" SEOKeyword="Reply event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Reply event message" />
+        <Item text="Create ReplyAll" url="/en-us/api-reference/v1.0/api/message_createreplyall" SEOKeyword="Create ReplyAll, Microsoft Graph API, Outlook Calendar API" SEODescription="Create ReplyAll" />
+        <Item text="ReplyAll event message" url="/en-us/api-reference/v1.0/api/message_replyall" SEOKeyword="ReplyAll event message, Microsoft Graph API, Outlook Calendar API" SEODescription="ReplyAll event message" />
+        <Item text="Create Forward" url="/en-us/api-reference/v1.0/api/message_createforward" SEOKeyword="Create Forward, Microsoft Graph API, Outlook Calendar API" SEODescription="Create Forward" />
+        <Item text="Forward event message" url="/en-us/api-reference/v1.0/api/message_forward" SEOKeyword="Forward event message, Microsoft Graph API, Outlook Calendar API" SEODescription="Forward event message" />
+        <Item text="Add attachment" url="/en-us/api-reference/v1.0/api/eventmessage_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
+        <Item text="List attachments" url="/en-us/api-reference/v1.0/api/eventmessage_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
+        <Item text="Create data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+        <Item text="Get data extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
+      </Item>
+      <Item text="Calendar" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
+        <Item text="List calendars" url="/en-us/api-reference/v1.0/api/user_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendar objects." />
+        <Item text="Create calendar" url="/en-us/api-reference/v1.0/api/user_post_calendars" SEOKeyword="Create Calendar, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Calendar." />
+        <Item text="Get calendar" url="/en-us/api-reference/v1.0/api/calendar_get" SEOKeyword="Get calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of calendar object." />
+        <Item text="Update calendar" url="/en-us/api-reference/v1.0/api/calendar_update" SEOKeyword="Update calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of calendar object." />
+        <Item text="Delete calendar" url="/en-us/api-reference/v1.0/api/calendar_delete" SEOKeyword="Delete calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete calendar." />
+        <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/calendar_list_calendarview" SEOKeyword="List calendar view, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
+        <Item text="List events" url="/en-us/api-reference/v1.0/api/calendar_list_events" SEOKeyword="List events, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Create Event" url="/en-us/api-reference/v1.0/api/calendar_post_events" SEOKeyword="Create Event, Microsoft Graph API, calendar API" SEODescription="Use this API to create a new Event." />
+        <Item text="Reminder view" url="/en-us/api-reference/v1.0/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="Reminder view" />
+      </Item>
+      <Item text="Calendar view" url="/en-us/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects.">
+        <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Reminder view" url="/en-us/api-reference/v1.0/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="Reminder view" />
+      </Item>
+      <Item text="Calendar group" url="/en-us/api-reference/v1.0/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="A group of calendars.">
+        <Item text="List calendar groups" url="/en-us/api-reference/v1.0/api/user_list_calendargroups" SEOKeyword="List calendarGroups, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendargroup objects." />
+        <Item text="Create calendar group" url="/en-us/api-reference/v1.0/api/user_post_calendargroups" SEOKeyword="Create CalendarGroup, Microsoft Graph API, Users API" SEODescription="Use this API to create a new CalendarGroup." />
+        <Item text="Get calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_get" SEOKeyword="Get calendarGroup, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of calendargroup object." />
+        <Item text="Update calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_update" SEOKeyword="Update calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of calendargroup object." />
+        <Item text="Delete calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_delete" SEOKeyword="Delete calendarGroup, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete calendarGroup." />
+        <Item text="List calendars in calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of calendar objects." />
+        <Item text="Create calendar in calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_post_calendars" SEOKeyword="Create calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Calendar." />
+      </Item>
 	  <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
 		<Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
