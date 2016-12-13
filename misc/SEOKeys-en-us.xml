@@ -825,8 +825,6 @@
         <Item text="List child folders" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="List childFolders, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail child folder" url="/en-us/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="Create mailFolder, Microsoft Graph API, Outlook Mail API" SEODescription="Use this API to create a new MailFolder." />
       </Item>
-        <Item text="Get reference attachment" url="/en-us/api-reference/beta/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
-        <Item text="Delete reference attachment" url="/en-us/api-reference/beta/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
 	   <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
 		<Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
@@ -901,9 +899,6 @@
         <Item text="List calendars in calendar group" url="/en-us/api-reference/beta/api/calendargroup_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of calendar objects." />
         <Item text="Create calendar in calendar group" url="/en-us/api-reference/beta/api/calendargroup_post_calendars" SEOKeyword="Create calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Calendar." />
       </Item>
-        <Item text="Get reference attachment" url="/en-us/api-reference/beta/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
-        <Item text="Delete reference attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
-      </Item>
 	   <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
 		<Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
@@ -914,7 +909,7 @@
 			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
 		</Item>	  
 	  </Item>  
-
+	</Item>
     <Item text="Personal contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
       <Item text="Contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
         <Item text="List contacts" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
