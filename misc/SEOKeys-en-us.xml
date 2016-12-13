@@ -782,6 +782,7 @@
 			<Item text="Get reference attachment" url="/en-us/api-reference/beta/api/attachment_get" />
 			<Item text="Delete reference attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
 		</Item>
+	</Item>
     <Item text="Outlook mail" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
       <Item text="Message" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
         <Item text="List messages" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
@@ -826,7 +827,6 @@
       </Item>
         <Item text="Get reference attachment" url="/en-us/api-reference/beta/api/referenceattachment_get" SEOKeyword="Get referenceAttachment, Microsoft Graph API, referenceattachment API" SEODescription="Retrieve the properties and relationships of referenceattachment object." />
         <Item text="Delete reference attachment" url="/en-us/api-reference/beta/api/attachment_delete" SEOKeyword="Delete attachment, Microsoft Graph API, attachment API" SEODescription="Delete attachment." />
-      </Item>
 	   <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
 		<Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
@@ -835,7 +835,7 @@
 	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
 			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-		</Item>	  
+		</Item>		
 	  </Item>  
     </Item>
     <Item text="Outlook calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
