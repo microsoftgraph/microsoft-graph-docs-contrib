@@ -6,7 +6,7 @@ The following **scope** is required to execute this API: *Directory.AccessAsUser
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/<id>/members
+POST /directoryRoles/{id}/members
 
 ```
 ## Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_directoryrole"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/directoryRoles/<id>/members
+POST https://graph.microsoft.com/beta/directoryRoles/{id}/members
 Content-type: application/json
 Content-length: 30
 

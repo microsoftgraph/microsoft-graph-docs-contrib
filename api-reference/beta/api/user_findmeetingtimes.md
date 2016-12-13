@@ -20,7 +20,7 @@ One of the following **scopes** is required to execute this API: *Calendars.Read
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/findMeetingTimes
-POST /users/<id|userPrincipalName>/findMeetingTimes
+POST /users/{id|userPrincipalName}/findMeetingTimes
 ```
 ## Request headers
 | Name       | Value|

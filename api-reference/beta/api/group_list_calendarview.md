@@ -6,7 +6,7 @@ One of the following **scopes** is required to execute this API: *Group.Read.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 ## Query parameters
 
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/calendarView
+GET https://graph.microsoft.com/beta/groups/{id}/calendarView
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

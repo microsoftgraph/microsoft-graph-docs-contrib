@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "chartfill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
 ```
 
 ##### Response

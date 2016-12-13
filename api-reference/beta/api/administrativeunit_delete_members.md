@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API: *Directory.AccessAsUs
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeUnits/<id>/members/<id>/$ref
+DELETE /administrativeUnits/{id}/members/{id}/$ref
 ```
 ## Request headers
 | Name      |Description|
@@ -26,7 +26,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request. In the example below, id1 represents the identifier for the target administrative unit, and id2 represents the unique identifier for the member user or group to be removed from the targetted administrative unit. 
 
 ```http
-DELETE https://graph.microsoft.com/beta/administrativeUnits/<id1>/members/<id2>/$ref
+DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref
 ```
 
 ##### Response

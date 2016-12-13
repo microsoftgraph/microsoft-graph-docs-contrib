@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /mobileAppGroupAssignments/
-GET /deviceAppManagement/mobileApps/<id>/groupAssignments/
+GET /deviceAppManagement/mobileApps/{id}/groupAssignments/
 ```
 
 ### Request headers

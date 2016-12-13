@@ -9,7 +9,7 @@ The following **scopes** is required to execute this API: _Directory.AccessAsUse
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directoryObjects/<id>
+DELETE /directoryObjects/{id}
 
 ```
 ## Request headers
@@ -32,7 +32,7 @@ If successful, this method returns `204, No Content` response code. It does not 
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryObject/<id>
+DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
 ```
 ##### Response
 

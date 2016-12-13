@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API: *Mail.Send*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/sendMail
+POST /users/{id | userPrincipalName}/sendMail
 ```
 ## Request headers
 | Header       | Value |

@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedAppRegistrations/<id>
-POST /users/<id>/managedAppRegistrations/<id>
+POST /managedAppRegistrations/{id}
+POST /users/{id}/managedAppRegistrations/{id}
 ```
 
 ### Request headers
@@ -49,7 +49,7 @@ If successful, this method returns a `201 Created` response code and a [iosManag
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppRegistrations/<id>
+POST https://graph.microsoft.com/beta/managedAppRegistrations/{id}
 Content-type: application/json
 Content-length: 596
 

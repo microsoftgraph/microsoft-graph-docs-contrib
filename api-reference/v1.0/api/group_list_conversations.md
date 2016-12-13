@@ -6,7 +6,7 @@ One of the following **scopes** is required to execute this API: *Group.Read.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/conversations
+GET /groups/{id}/conversations
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_conversations"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<id>/conversations
+GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

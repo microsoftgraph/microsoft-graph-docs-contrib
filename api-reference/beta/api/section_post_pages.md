@@ -7,9 +7,9 @@ Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/notes/sections/<id>/pages
-POST /users/<id | userPrincipalName>/notes/sections/<id>/pages
-POST /groups/<id>/notes/sections/<id>/pages
+POST /me/notes/sections/{id}/pages
+POST /users/{id | userPrincipalName}/notes/sections/{id}/pages
+POST /groups/{id}/notes/sections/{id}/pages
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -31,7 +31,7 @@ Here is an example of the request.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/notes/sections/<id>/pages
+POST https://graph.microsoft.com/beta/me/notes/sections/{id}/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 

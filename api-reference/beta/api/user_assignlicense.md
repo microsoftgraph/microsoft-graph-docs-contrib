@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/assignLicense
+POST /users/{id | userPrincipalName}/assignLicense
 ```
 ## Request headers
 | Header       | Value |

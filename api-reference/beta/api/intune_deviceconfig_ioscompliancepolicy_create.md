@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/<id>
-POST /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy/
-POST /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>/deviceCompliancePolicy/
+POST /deviceManagement/deviceCompliancePolicies/{id}
+POST /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
+POST /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
 ```
 
 ### Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [iosCompl
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/<id>
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
 Content-type: application/json
 Content-length: 770
 

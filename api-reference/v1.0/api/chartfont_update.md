@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "update_chartfont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/format/font
 Content-type: application/json
 Content-length: 134
 

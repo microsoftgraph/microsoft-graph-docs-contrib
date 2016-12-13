@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedAppPolicies/<id>/mobileAppIdentifierDeployments/<id>
+PATCH /managedAppPolicies/{id}/mobileAppIdentifierDeployments/{id}
 ```
 
 ### Request headers
@@ -38,7 +38,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppPolicies/<id>/mobileAppIdentifierDeployments/<id>
+PATCH https://graph.microsoft.com/beta/managedAppPolicies/{id}/mobileAppIdentifierDeployments/{id}
 Content-type: application/json
 Content-length: 126
 

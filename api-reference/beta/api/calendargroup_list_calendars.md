@@ -8,12 +8,12 @@ One of the following **scopes** is required to execute this API: _Calendars.Read
 A user's default [calendarGroup](../resources/calendargroup.md).
 ```http
 GET /me/calendarGroup/calendars
-GET /users/<id | userPrincipalName>/calendarGroup/calendars
+GET /users/{id | userPrincipalName}/calendarGroup/calendars
 ```
 Any [calendarGroup](../resources/calendargroup.md) of a user.
 ```http
-GET /me/calendarGroups/<id>/calendars
-GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars
+GET /me/calendarGroups/{id}/calendars
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarGroups/<id>/calendars
+GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

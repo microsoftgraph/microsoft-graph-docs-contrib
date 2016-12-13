@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API: *Directory.AccessAsUs
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits/<id>/scopedAdministrators
+POST /administrativeUnits/{id}/scopedAdministrators
 ```
 ## Request headers
 | Name      |Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "create_scopedrolemembership_from_administrativeunit"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/administrativeUnits/<id>/scopedAdministrators
+POST https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedAdministrators
 Content-type: application/json
 Content-length: 272
 

@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/roleDefinitions/<id>
-POST /deviceManagement/roleDefinitions/<id>/roleAssignments/<id>/roleDefinition/
+POST /deviceManagement/roleDefinitions/{id}
+POST /deviceManagement/roleDefinitions/{id}/roleAssignments/{id}/roleDefinition/
 ```
 
 ### Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [roleDefi
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/<id>
+POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{id}
 Content-type: application/json
 Content-length: 317
 

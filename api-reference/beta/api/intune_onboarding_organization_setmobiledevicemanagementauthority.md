@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /organization/<id>/setMobileDeviceManagementAuthority
+POST /organization/{id}/setMobileDeviceManagementAuthority
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this action returns a `200 OK` response code and a Int32 in the r
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/<id>/setMobileDeviceManagementAuthority
+POST https://graph.microsoft.com/beta/organization/{id}/setMobileDeviceManagementAuthority
 ```
 
 ##### Response

@@ -10,8 +10,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/threads/<id>/posts
-GET /groups/<id>/conversations/<id>/threads/<id>/posts
+GET /groups/{id}/threads/{id}/posts
+GET /groups/{id}/conversations/{id}/threads/{id}/posts
 
 ```
 ## Optional query parameters
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_posts"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<id>/threads/<id>/posts
+GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

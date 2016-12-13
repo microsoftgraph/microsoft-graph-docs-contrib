@@ -7,7 +7,7 @@ The following **scope** is required to execute this API: *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/<id>
+PATCH /groups/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -49,7 +49,7 @@ Here is an example of the request.
   "name": "update_group"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/groups/<id>
+PATCH https://graph.microsoft.com/beta/groups/{id}
 Content-type: application/json
 Content-length: 211
 

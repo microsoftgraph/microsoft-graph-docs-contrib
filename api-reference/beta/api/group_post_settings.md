@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/settings
+POST /groups/{id}/settings
 ```
 ## Request headers
 | Name       | Description|
@@ -28,7 +28,7 @@ Here is an example of the request.
   "name": "create_directorysetting_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/settings
+POST https://graph.microsoft.com/beta/groups/{id}/settings
 Content-type: application/json
 Content-length: 222
 

@@ -5,7 +5,7 @@ The entry point for OneNote resources.
 All calls to the OneNote service through the Microsoft Graph API use this service root URL:
 
 ```
-https://graph.microsoft.com/<version>/<location>/notes/ 
+https://graph.microsoft.com/{version}/{location}/notes/ 
 ```
 
 OneNote support is in preview, so the version is always `beta`. 
@@ -15,15 +15,15 @@ Only user and group notebooks on Office 365 are supported. Accessing consumer no
 **User notebooks** To access personal notebooks on OneDrive for Business, use one of the following URLs:
 
 ```
-https://graph.microsoft.com/beta/me/notes/<notebooks | sections | sectionGroups | pages> 
-https://graph.microsoft.com/beta/users/<userPrincipalName>/notes/<notebooks | sections | sectionGroups | pages> 
-https://graph.microsoft.com/beta/users/<id>/notes/<notebooks | sections | sectionGroups | pages> 
+https://graph.microsoft.com/beta/me/notes/{notebooks | sections | sectionGroups | pages} 
+https://graph.microsoft.com/beta/users/{userPrincipalName}/notes/{notebooks | sections | sectionGroups | pages} 
+https://graph.microsoft.com/beta/users/{id}/notes/{notebooks | sections | sectionGroups | pages} 
 ```
 
 **Group notebooks** To access notebooks that are owned by a group, use the following service root URL:
 
 ```
-https://graph.microsoft.com/beta/groups/<id>/notes/<notebooks | sections | sectionGroups | pages> 
+https://graph.microsoft.com/beta/groups/{id}/notes/{notebooks | sections | sectionGroups | pages} 
 ```
 
 The following permission scopes provide levels of access to OneNote notebooks. Choosing permission scopes depends both on the location of the notebooks you're targeting and your app's functionality. 

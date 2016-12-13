@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /devices/<id>/registeredUsers
+POST /devices/{id}/registeredUsers
 
 ```
 ## Request headers
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/devices/<id>/registeredUsers
+POST https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
 Content-type: application/json
 Content-length: 30
 

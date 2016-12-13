@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "rangesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/names(<name>)/range/sort/apply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/sort/apply
 Content-type: application/json
 Content-length: 358
 

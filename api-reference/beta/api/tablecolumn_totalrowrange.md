@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "tablecolumn_totalrowrange"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/columns(<id|name>)/TotalRowRange
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/TotalRowRange
 ```
 
 ##### Response

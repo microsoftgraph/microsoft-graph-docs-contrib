@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceAppManagement/mobileApps/<id>/microsoft.graph.iosVppApp/vppToken/
+PATCH /deviceAppManagement/mobileApps/{id}/microsoft.graph.iosVppApp/vppToken/
 ```
 
 ### Request headers
@@ -45,7 +45,7 @@ If successful, this method returns a `200 OK` response code and an updated [appl
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/<id>/microsoft.graph.iosVppApp/vppToken/
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/microsoft.graph.iosVppApp/vppToken/
 Content-type: application/json
 Content-length: 411
 

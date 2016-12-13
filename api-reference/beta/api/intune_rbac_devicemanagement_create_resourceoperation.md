@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/resourceOperations/<id>
+POST /deviceManagement/resourceOperations/{id}
 ```
 
 ### Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a `201 Created` response code and a [resource
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/resourceOperations/<id>
+POST https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{id}
 Content-type: application/json
 Content-length: 178
 

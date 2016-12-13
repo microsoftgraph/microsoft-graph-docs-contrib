@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "update_chartgridlines"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
 Content-type: application/json
 Content-length: 21
 

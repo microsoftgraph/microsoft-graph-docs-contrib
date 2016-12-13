@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_chartaxistitle"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
 Content-type: application/json
 Content-length: 45
 

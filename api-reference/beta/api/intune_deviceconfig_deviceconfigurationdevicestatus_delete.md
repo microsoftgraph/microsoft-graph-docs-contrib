@@ -10,12 +10,12 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/deviceConfigurations/<id>/deviceStatuses/<id>
-DELETE /deviceManagement/deviceConfigurations/<id>/rootCertificate//deviceStatuses/<id>
-DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/<id>
-DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/<id>
-DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/<id>
-DELETE /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/<id>
+DELETE /deviceManagement/deviceConfigurations/{id}/deviceStatuses/{id}
+DELETE /deviceManagement/deviceConfigurations/{id}/rootCertificate//deviceStatuses/{id}
+DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/{id}
+DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/{id}
+DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/{id}
+DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/{id}
 ```
 
 ### Request headers
@@ -34,7 +34,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/deviceStatuses/<id>
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/deviceStatuses/{id}
 ```
 
 ##### Response

@@ -13,9 +13,9 @@ One of the following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMemberGroups
-POST /users/<id | userPrincipalName>/getMemberGroups
-POST /groups/<id>/getMemberGroups
-POST /directoryObjects/<id>/getMemberGroups
+POST /users/{id | userPrincipalName}/getMemberGroups
+POST /groups/{id}/getMemberGroups
+POST /directoryObjects/{id}/getMemberGroups
 ```
 ## Request headers
 | Name       | Type | Description|

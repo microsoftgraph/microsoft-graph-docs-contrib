@@ -10,12 +10,12 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/<id>/deviceStatuses/<id>
-PATCH /deviceManagement/deviceConfigurations/<id>/rootCertificate//deviceStatuses/<id>
-PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/<id>
-PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/<id>
-PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/<id>
-PATCH /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/<id>
+PATCH /deviceManagement/deviceConfigurations/{id}/deviceStatuses/{id}
+PATCH /deviceManagement/deviceConfigurations/{id}/rootCertificate//deviceStatuses/{id}
+PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/{id}
+PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/{id}
+PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/{id}
+PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/{id}
 ```
 
 ### Request headers
@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/deviceStatuses/<id>
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/deviceStatuses/{id}
 Content-type: application/json
 Content-length: 97
 

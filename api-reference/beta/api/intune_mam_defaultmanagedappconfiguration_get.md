@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/<id>
-GET /managedAppRegistrations/<id>/appliedPolicies/<id>
-GET /managedAppRegistrations/<id>/intendedPolicies/<id>
+GET /managedAppPolicies/{id}
+GET /managedAppRegistrations/{id}/appliedPolicies/{id}
+GET /managedAppRegistrations/{id}/intendedPolicies/{id}
 ```
 
 ### Optional query parameters
@@ -33,7 +33,7 @@ If successful, this method returns a `200 OK` response code and [defaultManagedA
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/<id>
+GET https://graph.microsoft.com/beta/managedAppPolicies/{id}
 ```
 
 ##### Response

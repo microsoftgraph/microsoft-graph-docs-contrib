@@ -8,12 +8,12 @@ One of the following **scopes** is required to execute this API: _Calendars.Read
 A user's default [calendarGroup](../resources/calendargroup.md).
 ```http
 POST /me/calendarGroup/calendars
-POST /users/<id | userPrincipalName>/calendarGroup/calendars
+POST /users/{id | userPrincipalName}/calendarGroup/calendars
 ```
 Any [calendarGroup](../resources/calendargroup.md) of a user.
 ```http
-POST /me/calendarGroups/<id>/calendars
-POST /users/<id | userPrincipalName>/calendarGroups/<id>/calendars
+POST /me/calendarGroups/{id}/calendars
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ```
 ## Request headers
 | Header       | Value |
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "create_calendar_from_calendargroup"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendarGroups/<id>/calendars
+POST https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 Content-type: application/json
 Content-length: 78
 

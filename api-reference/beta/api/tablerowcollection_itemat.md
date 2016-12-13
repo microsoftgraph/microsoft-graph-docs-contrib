@@ -35,7 +35,7 @@ Here is an example of the request. Returns 1st row.
   "name": "tablerowcollection_itemat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/rows/ItemAt(0)
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/rows/ItemAt(0)
 ```
 
 ##### Response

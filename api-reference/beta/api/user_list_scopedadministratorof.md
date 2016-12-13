@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API: *Directory.Read.All* 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/scopedAdministratorOf
-GET /users/<id>/scopedAdministratorOf
+GET /users/{id}/scopedAdministratorOf
 
 ```
 ## Optional query parameters

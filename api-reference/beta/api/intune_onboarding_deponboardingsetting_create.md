@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /organization/<id>/depOnboardingSettings/<id>
+POST /organization/{id}/depOnboardingSettings/{id}
 ```
 
 ### Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [depOnboa
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/<id>/depOnboardingSettings/<id>
+POST https://graph.microsoft.com/beta/organization/{id}/depOnboardingSettings/{id}
 Content-type: application/json
 Content-length: 379
 

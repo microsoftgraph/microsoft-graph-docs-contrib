@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "update_chartdatalabels"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/datalabels
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/datalabels
 Content-type: application/json
 Content-length: 134
 

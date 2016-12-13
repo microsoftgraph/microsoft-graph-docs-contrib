@@ -8,7 +8,7 @@ The requestor can only call ```selfDeactivate``` for the role that is assigned t
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedRoles/<id>/selfDeactivate
+POST /privilegedRoles/{id}/selfDeactivate
 ```
 
 Note that ``<id>`` is the target role id.
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "privilegedrole_selfdeactivate"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/privilegedRoles/<id>/selfDeactivate
+POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 ```
 
 ##### Response

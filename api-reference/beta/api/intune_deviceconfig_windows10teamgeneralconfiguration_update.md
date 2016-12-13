@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/<id>
-PATCH /deviceConfigurationAssignments/<id>/deviceConfiguration/
-PATCH /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{id}
+PATCH /deviceConfigurationAssignments/{id}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
 ```
 
 ### Request headers
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
 Content-type: application/json
 Content-length: 825
 

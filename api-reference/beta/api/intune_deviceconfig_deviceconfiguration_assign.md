@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/<id>/assign
-POST /deviceConfigurationAssignments/<id>/deviceConfiguration//assign
-POST /deviceManagement/deviceConfigurations/<id>/groupAssignments/<id>/deviceConfiguration//assign
+POST /deviceManagement/deviceConfigurations/{id}/assign
+POST /deviceConfigurationAssignments/{id}/deviceConfiguration//assign
+POST /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration//assign
 ```
 
 ### Request headers
@@ -38,7 +38,7 @@ If successful, this action returns a `200 OK` response code and a [deviceConfigu
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/assign
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/assign
 
 Content-type: application/json
 Content-length: 245

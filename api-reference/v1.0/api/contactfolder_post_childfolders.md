@@ -9,8 +9,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/contactFolders/<id>/childFolders
-POST /users/<id | userPrincipalName>/contactFolders/<id>/childFolders
+POST /me/contactFolders/{id}/childFolders
+POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ```
 ## Request headers
 | Header       | Value |
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "create_contactfolder_from_contactfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/contactFolders/<id>/childFolders
+POST https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 Content-type: application/json
 Content-length: 84
 

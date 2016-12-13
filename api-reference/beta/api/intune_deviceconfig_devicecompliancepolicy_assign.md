@@ -10,9 +10,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/<id>/assign
-POST /deviceCompliancePolicyAssignments/<id>/deviceCompliancePolicy//assign
-POST /deviceManagement/deviceCompliancePolicies/<id>/groupAssignments/<id>/deviceCompliancePolicy//assign
+POST /deviceManagement/deviceCompliancePolicies/{id}/assign
+POST /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy//assign
+POST /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy//assign
 ```
 
 ### Request headers
@@ -38,7 +38,7 @@ If successful, this action returns a `200 OK` response code and a [deviceComplia
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/<id>/assign
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}/assign
 
 Content-type: application/json
 Content-length: 251

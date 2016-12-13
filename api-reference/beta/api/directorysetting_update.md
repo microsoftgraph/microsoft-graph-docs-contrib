@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 <!-- { "blockType": "ignored" } -->
 Update a tenant-wide or group specific setting.
 ```http
-PATCH /settings/<id>
-PATCH /groups/<id>/settings/<id>
+PATCH /settings/{id}
+PATCH /groups/{id}/settings/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "update_directorysetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/settings/<id>
+PATCH https://graph.microsoft.com/beta/settings/{id}
 Content-type: application/json
 Content-length: 178
 

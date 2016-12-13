@@ -10,12 +10,12 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/<id>/deviceStatuses/
-GET /deviceManagement/deviceConfigurations/<id>/rootCertificate//deviceStatuses/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/
+GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses/
+GET /deviceManagement/deviceConfigurations/{id}/rootCertificate//deviceStatuses/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatuses/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatuses/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//deviceStatuses/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatuses/
 ```
 
 ### Request headers
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/deviceStatuses/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/deviceStatuses/
 ```
 
 ##### Response

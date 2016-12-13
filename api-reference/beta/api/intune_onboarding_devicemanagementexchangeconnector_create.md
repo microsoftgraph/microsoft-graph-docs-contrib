@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/exchangeConnectors/<id>
+POST /deviceManagement/exchangeConnectors/{id}
 ```
 
 ### Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/<id>
+POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/{id}
 Content-type: application/json
 Content-length: 292
 

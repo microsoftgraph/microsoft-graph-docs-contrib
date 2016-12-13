@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "table_reapplyfilters"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables(<id|name>)/reapplyFilters
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/reapplyFilters
 ```
 
 ##### Response

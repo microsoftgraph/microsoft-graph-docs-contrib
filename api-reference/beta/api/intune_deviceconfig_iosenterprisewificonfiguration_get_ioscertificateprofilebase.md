@@ -10,10 +10,10 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosVpnConfiguration/identityCertificate/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosEasEmailProfileConfiguration/identityCertificate/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosEasEmailProfileConfiguration/smimeSigningCertificate/
-GET /deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosVpnConfiguration/identityCertificate/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosEasEmailProfileConfiguration/identityCertificate/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosEasEmailProfileConfiguration/smimeSigningCertificate/
+GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/
 ```
 
 ### Optional query parameters
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [iosCertificateP
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/<id>/microsoft.graph.iosVpnConfiguration/identityCertificate/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosVpnConfiguration/identityCertificate/
 ```
 
 ##### Response

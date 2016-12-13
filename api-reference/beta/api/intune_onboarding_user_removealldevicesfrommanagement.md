@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /users/<id>/removeAllDevicesFromManagement
+POST /users/{id}/removeAllDevicesFromManagement
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/users/<id>/removeAllDevicesFromManagement
+POST https://graph.microsoft.com/beta/users/{id}/removeAllDevicesFromManagement
 ```
 
 ##### Response
