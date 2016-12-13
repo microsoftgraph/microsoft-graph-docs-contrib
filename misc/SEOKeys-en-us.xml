@@ -27,9 +27,9 @@
   </Item>
   <Item text="Concepts" url="/en-us/concepts" >
 	<Item text="Delta query (preview)" url="/en-us/concepts/delta_query_overview" >
-		<Item text="Messages (preview)" url="/en-us/concepts/delta_query_messages" />
-		<Item text="Groups (preview)" url="/en-us/concepts/delta_query_groups" />
-		<Item text="Users (preview)" url="/en-us/concepts/delta_query_users" />
+		<Item text="Example: Messages (preview)" url="/en-us/concepts/delta_query_messages" />
+		<Item text="Example: Groups (preview)" url="/en-us/concepts/delta_query_groups" />
+		<Item text="Example: Users (preview)" url="/en-us/concepts/delta_query_users" />
 	</Item>
 	<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	<Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
