@@ -185,9 +185,9 @@
       </Item>
     </Item>
     <Item text="Attachment" url="/en-us/api-reference/v1.0/resources/attachment">
-		<Item text="FileAttachment resource" url="/en-us/api-reference/v1.0/resources/fileattachment" />
-		<Item text="ItemAttachment resource" url="/en-us/api-reference/v1.0/resources/itemattachment" />
-		<Item text="ReferenceAttachment resource" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
+		<Item text="File attachment resource" url="/en-us/api-reference/v1.0/resources/fileattachment" />
+		<Item text="Item attachment resource" url="/en-us/api-reference/v1.0/resources/itemattachment" />
+		<Item text="Reference attachment resource" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
 		<Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
 		<Item text="Delete attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
 	</Item>
@@ -770,9 +770,9 @@
       </Item>
     </Item>
 	 <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
-		<Item text="FileAttachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
-		<Item text="ItemAttachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
-		<Item text="ReferenceAttachment resource" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		<Item text="File attachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
+		<Item text="Item attachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
+		<Item text="Reference attachment resource" url="/en-us/api-reference/beta/resources/referenceattachment" />
 		<Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
 		<Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
 	</Item>
