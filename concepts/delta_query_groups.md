@@ -8,10 +8,10 @@ Delta query supports both full synchronization that retrieves all of the groups 
 ## Tracking group changes
 
 Tracking group changes is a round of one or more GET requests with the **delta** function. You make a GET
-request much like the way you [get groups](../api-reference/beta/api/group_list.md), except that you include the following:
+request much like the way you [list groups](../api-reference/beta/api/group_list.md), except that you include the following:
 
 - The **delta** function.
-- A [state token](./delta_query_overview.md#state-tokens-and-other-query-parameters-in-a-delta-query) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
+- A [state token](./delta_query_overview.md#state-tokens) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
 
 ## Example
 
@@ -37,7 +37,7 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 
 ### Initial response
 
-If successful, this method returns `200, OK` response code and [group](./resources/group.md) collection object in the response body. Anticipate that the initial response contains all the entire collection of groups. The response will also include a state token which is either a nextLink URL or a deltaLink URL.
+If successful, this method returns `200, OK` response code and [group](../api-reference/beta/resources/group.md) collection object in the response body. Anticipate that the initial response contains all the entire collection of groups. The response will also include a state token which is either a nextLink URL or a deltaLink URL.
 
 In this example, a nextLink URL is returned indicating there are additional pages of data to be retrieved in the session. The $select query parameter from the initial request is encoded into the nextLink URL.
 
