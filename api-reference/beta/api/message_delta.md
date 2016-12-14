@@ -33,7 +33,7 @@ _Id_ property is always returned.
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 | Content-Type  | application/json |
-| Prefer | odata.maxpagesize={_x_} |
+| Prefer | odata.maxpagesize={x} |
 
 
 ### Response

@@ -3,8 +3,9 @@
 <!-- Add links to delta function and overview topic in first sentence.
 Also add link to overview and other how-to sample topics in See Also section -->
 
-Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of **delta** function 
-calls. Delta data enables you to maintain and synchronize a local store of a user's messages, 
+Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of 
+[delta](../../../api-reference/beta/api/message_delta.md) function calls. Delta data enables you to maintain 
+and synchronize a local store of a user's messages, 
 without having to fetch the entire set of the user's messages from the server every time.
 
 Delta query supports both full synchronization that retrieves all of the messages in a folder (for example, the user's Inbox), 
@@ -251,7 +252,6 @@ Prefer: odata.maxpagesize=2
 
 
 
-<!-- Add links to other how-to sample topics for delta query
 ## See also
+[Microsoft Graph delta query](../Concepts/delta_query_overview.md)
 
--->
