@@ -37,7 +37,7 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 
 ### Initial response
 
-If successful, this method returns `200, OK` response code and [group](../api-reference/beta/resources/group.md) collection object in the response body. Anticipate that the initial response contains all the entire collection of groups. The response will also include a state token which is either a nextLink URL or a deltaLink URL.
+If successful, this method returns `200, OK` response code and [group](../api-reference/beta/resources/group.md) collection object in the response body. Assuming the entire set of groups is too large, the response will also include a nextLink state token.
 
 In this example, a nextLink URL is returned indicating there are additional pages of data to be retrieved in the session. The $select query parameter from the initial request is encoded into the nextLink URL.
 
@@ -47,7 +47,7 @@ Content-type: application/json
 Content-length: 292
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(displayName,description)",
   "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ",
   "value": [
     {
@@ -66,7 +66,7 @@ Content-length: 292
 
 ## nextLink request
 
-The second request specifies the `skipToken` returned from the previous response. Notice that it no longer has to specify the same `$select` parameter as in the initial request, as the `skipToken` encodes and includes it.
+The second request specifies the `skipToken` returned from the previous response. Notice the `$select` parameter is not required, as the `skipToken` encodes and includes it.
 
 ``` http
 GET https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 
 ## nextLink response
 
-The response contains a `nextLink` and another `skipToken`, indicating there are more groups available. You continue making requests using the nextLink URL until a deltaLink URL is included in the response.
+The response contains a `nextLink` and another `skipToken`, indicating there are more groups available. You continue making requests using the nextLink URL until a deltaLink URL is returned in the response.
 
 ```http
 HTTP/1.1 200 OK

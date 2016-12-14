@@ -2,7 +2,7 @@
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
-## Using Delta Query <a id="using-delta-query"></a>
+## Using Delta Query
 
 The typical call pattern is as follows:
 
