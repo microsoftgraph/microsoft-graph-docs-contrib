@@ -41,8 +41,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive. |
 |[invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md)| None |Invalidates all of the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This will force the user to sign in to those applications again.| 
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
-|[Delta](../concepts/delta_query_users.md)|user collection| Get incremental changes for users. |
-
+|[Delta](../api/user_delta.md)|user collection| Get incremental changes for users. |
 
 ## Properties
 | Property	   | Type	|Description|

@@ -4,10 +4,10 @@ Delta query enables applications to discover newly created, updated, or deleted 
 
 ## Using Delta Query <a id="using-delta-query"></a>
 
-Perform a request using the *delta* function with an optional token parameter. The typical call pattern is as follows:
+The typical call pattern is as follows:
 
 1.  The application begins by calling the delta function on the desired resource.
-2.  Microsoft Graph will send a response containing the requested resource and nextLink URL or a deltaLink URL.
+2.  Microsoft Graph will send a response containing the requested resource and a [state token](#state-tokens).
 
      a.  If a nextLink URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the nextLink URL until a deltaLink URL is included in the response.
 
@@ -16,9 +16,16 @@ Perform a request using the *delta* function with an optional token parameter. T
 3.  When the application needs to learn about changes to the resource, it makes a new request using the deltaLink URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
 4.  Microsoft Graph returns a response describing changes to the resource since the previous request and either a nextLink URL or a deltaLink URL.
 
+### State tokens
+
+- A delta query GET request can return one of two possible tokens: _deltaToken_ or _skipToken_. 
+- Each token reflects the state and represents a snapshot in time of the resource. Applying the latest token as a query parameter in a GET request identifies where you are in that round of change tracking. 
+- State tokens also encode and include other query parameters (such as `$select`) 
+specified in the initial delta query request, so that you won't have to repeat them in subsequent delta query requests.
+
 ### Optional Query Parameters
 
-If a client uses query parameter, it must be specified in the initial request. Microsoft Graph will automatically encode the specified parameter(s) into the nextLink or deltaLink provided in the response. The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
+If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph will automatically encode the specified parameter(s) into the nextLink or deltaLink provided in the response. The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
 
 There are several resource specific behaviors that will occur with different query parameters for Users, Groups, Organizational Contacts, or Administrative Units:
 
