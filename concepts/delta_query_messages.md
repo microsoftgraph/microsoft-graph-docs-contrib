@@ -21,7 +21,7 @@ request much like the way you [get messages](https://graph.microsoft.io/en-us/do
 except that you include the following:
 
 - The **delta** function.
-- A [state token](#state-tokens-and-other-query-parameters) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call for that folder.
+- A [state token](#state-tokens-and-other-query-parameters-in-a-delta-query) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call for that folder.
 
 
 ### State tokens and other query parameters in a delta query

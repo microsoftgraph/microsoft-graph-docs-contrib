@@ -4,7 +4,7 @@ Get a set of messages that have been added, deleted, or updated in a specified f
 
 A **delta** function call is similar to a GET request for messages in a folder, except that by appropriately 
 applying state tokens in one or more of these calls, you can [query for incremental changes in the messages in 
-that folder](../../concepts/delta_query_messages.md). This allows you to maintain and synchronize a local store of a user's messages without 
+that folder](../../../concepts/delta_query_messages.md). This allows you to maintain and synchronize a local store of a user's messages without 
 having to fetch the entire set of messages from the server every time.  
 
 ### Prerequisites
@@ -35,7 +35,6 @@ _Id_ property is always returned.
 | Content-Type  | application/json |
 | Prefer | odata.maxpagesize={_x_} |
 
-### Request body
 
 ### Response
 If successful, this method returns `200, OK` response code and [message](../resources/message.md) collection object in the response body.
@@ -44,8 +43,9 @@ If successful, this method returns `200, OK` response code and [message](../reso
 ##### Request
 The following example shows how to make a single **delta** function call.
 
-To track changes in the messages in a folder, you would typically make a round of one or more **delta** function calls to get the set
-of incremental changes since the last delta query.   
+To track changes in the messages in a folder, you would make one or more **delta** function calls to get the set
+of incremental changes since the last delta query. For an example that shows a round of delta query calls, see 
+[Get incremental changes to messages in a folder (preview)](../../../concepts/delta_query_messages.md).
  
 <!-- {
   "blockType": "request",
@@ -60,7 +60,8 @@ Prefer: odata.maxpagesize=2
 ##### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_  
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header), 
-and which would indicate whether you should continue with the round or you have completed this round.
+and which would indicate whether you should continue with the round or you have completed getting all the changes 
+for that round.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

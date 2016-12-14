@@ -4,7 +4,7 @@ A message in a mailbox folder.
 
 ## Delta query support
 
-This resource supports [delta query](../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/message_delta.md) function.
 
 ## JSON representation
