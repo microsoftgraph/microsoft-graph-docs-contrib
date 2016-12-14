@@ -9,7 +9,8 @@ without having to fetch the entire set of the user's messages from the server ev
 
 Delta query supports both full synchronization that retrieves all of the messages in a folder (for example, the user's Inbox), 
 and incremental synchronization that retrieves all of the messages that have changed in that folder since 
-the last full synchronization. 
+the last synchronization. Typically, you would do an initial full synchronization of all the messages in a folder, and 
+subsequently, get incremental changes to that folder periodically. 
 
 ## Track message changes in a folder
 
@@ -19,8 +20,8 @@ Tracking message changes in a mail folder typically is a round of one or more GE
 request much like the way you [get messages](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_messages), 
 except that you include the following:
 
-- The **delta** function
-- A [state token](#state-tokens-and-other-query-parameters) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call for that folder
+- The **delta** function.
+- A [state token](#state-tokens-and-other-query-parameters) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call for that folder.
 
 
 ### State tokens and other query parameters in a delta query
@@ -36,8 +37,8 @@ specified in the initial delta query request, so that you won't have to repeat t
 
 ### Optional request header
 
-Each delta query GET request returns a collection of one or more messages in the response. You can specify 
-the optional request header _Prefer: odata.maxpagesize={x}_ to set the maximum number of messages returned.
+Each delta query GET request returns a collection of one or more messages in the response. You can optionally specify 
+the request header, _Prefer: odata.maxpagesize={x}_, to set the maximum number of messages returned.
 
 
 **Notes for using query parameters in a delta query for messages**
@@ -90,11 +91,13 @@ The following example shows a series of 3 requests to synchronize a specific fol
 - [Sample second request](#sample-second-request) and [response](#sample-second-response)
 - [Sample third request](#sample-third-request) and [final response](#sample-third-and-final-response)
 
+See also what you'll do in the [next round](#the-next-round).
+
 
 ### Sample initial request
 
 In this example, the specified folder is being synchronized for the first time, so the initial sync request does not include any state token. 
-Anticipate that the collections of messages returned from this round will represent all the messages in that folder.
+Anticipate that this round will return all the messages in that folder.
 
 The first request specifies the following:
 - A `$select` parameter to return the **Subject** and **Sender** properties for each message in the response.
@@ -200,6 +203,7 @@ more messages to sync in the folder.
 ### Sample third request
 
 The third request continues to use the latest `skipToken` returned from the last sync request. 
+Save the `deltaToken` and use it in the request URL to [synchronize that folder in the next round](#the-next-round). 
 
 ```
 GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
@@ -211,8 +215,6 @@ Prefer: odata.maxpagesize=2
 The third response returns the only remaining message in the folder, and a `deltaToken` which indicates 
 synchronization is complete for this folder. 
 
-Save the `deltaToken` and use it in the request URL to synchronize that folder next time. With this `deltaToken` starting the next round, 
-you will be able to get only those messages that have since changed (by being added, deleted, or updated) in that folder.
 
 ```
 {
@@ -234,6 +236,20 @@ you will be able to get only those messages that have since changed (by being ad
     ]
 }
 ```
+
+
+### The next round
+
+Using the `deltaToken` from the [last request](#sample-third-request) in the last round, 
+you will be able to get only those messages that have changed (by being added, deleted, or updated) since then in that folder.
+Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
+
+```
+GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+Prefer: odata.maxpagesize=2
+```
+
+
 
 <!-- Add links to other how-to sample topics for delta query
 ## See also
