@@ -62,7 +62,7 @@ Delta query is currently supported in preview on the Microsoft Graph /beta endpo
 
 ## Prerequisites
 
-The same [permission scopes](../authorization/permission_scopes) that are required to read a specific resource are also required to perform delta query on that resource.
+The same [permission scopes](../authorization/permission_scopes.md) that are required to read a specific resource are also required to perform delta query on that resource.
 
 ## Known Limitations
 
