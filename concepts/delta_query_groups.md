@@ -143,4 +143,4 @@ GET https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1
 ```
 
 ## See also
-[Microsoft Graph delta query](../Concepts/delta_query_overview.md) overview.
+[Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.

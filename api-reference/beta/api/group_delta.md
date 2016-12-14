@@ -1,6 +1,6 @@
 # Delta query for groups
 
-[Delta query](../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to groups, perform a request using the *delta* function. See [Using Delta Query](../concepts/delta_query_overview.md#using-delta-query) for details.
+[Delta query](../../../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to groups, perform a request using the *delta* function. See [Using Delta Query](../../../concepts/delta_query_overview.md#using-delta-query) for details.
 
 ## Prerequisites
 

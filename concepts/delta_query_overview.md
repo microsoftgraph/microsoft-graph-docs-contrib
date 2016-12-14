@@ -20,7 +20,7 @@ The typical call pattern is as follows:
 
 - A delta query GET request can return one of two possible tokens: _deltaToken_ or _skipToken_. 
 - Each token reflects the state and represents a snapshot in time of the resource. Applying the latest token as a query parameter in a GET request identifies where you are in that round of change tracking. 
-- State tokens also encode and include other query parameters (such as `$select`) 
+- State tokens also encode and include other query parameters (such as `$select` if the resource supports it) 
 specified in the initial delta query request, so that you won't have to repeat them in subsequent delta query requests.
 
 ### Optional Query Parameters
@@ -68,36 +68,8 @@ The same [permission scopes](../../authorization/permission_scopes) that are req
 
 Tracking changes to relationships on Users, Groups, Organizational Contacts, and Administrative Units is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* and has selected the *members* relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered in January 2017.
 
-## HTTP Request Examples 
+## Delta query request examples 
 
-### Initial Request
-
-GET /users/delta
-
-GET /groups/delta
-
-GET /me/mailFolders/delta
-
-GET /me/mailFolders('{folder\_id}')/messages/delta
-
-*Request body*
-
-Do not supply a request body for this function.
-
-*Response*
-
-If successful, this method returns a 200 OK response code and a collection of resources in the response body.
-
-In addition to the collection of resources, the response will also include one of the following properties:
-
-
-| Name               | Value  | Description                  |
-|--------------------|--------|------------------------------|
-| @odata.nextLink    | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.
-| @odata.deltaLink   | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.
-
-## Example (Last page in a set)
-
-## Example (Subsequent Request)
-
-
+- [Get incremental changes to messages in a folder (preview)](./delta_query_messages.md)
+- [Get incremental changes to groups (preview)](./delta_query_groups.md)
+- [Get incremental changes to users (preview)](./delta_query_users.md)
