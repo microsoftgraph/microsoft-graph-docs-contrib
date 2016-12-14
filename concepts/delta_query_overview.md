@@ -1,6 +1,6 @@
 #  Microsoft Graph Delta Query
 
-Delta query allows applications to track changes occurring to Microsoft Graph resources. Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
 ## Using Delta Query <a id="using-delta-query"></a>
 
@@ -18,10 +18,9 @@ Perform a request using the *delta* function with an optional token parameter. T
 
 ### Optional Query Parameters
 
-If a client uses query parameter, it must be specified in the initial request. Microsoft Graph will automatically encode the specified parameter(s) into the nextLink or deltaLink provided in the response, which will continue for all subsequent requests. The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
+If a client uses query parameter, it must be specified in the initial request. Microsoft Graph will automatically encode the specified parameter(s) into the nextLink or deltaLink provided in the response. The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
 
 There are several resource specific behaviors that will occur with different query parameters for Users, Groups, Organizational Contacts, or Administrative Units:
-
 
 -   If a select query parameter is used, this indicates that the client prefers to only track changes on the properties or relationships specified in the select statement. This means that if a change occurs to a property that is not selected, the resource for which that property changed will not appear in the delta response after a subsequent request.
 -   Expand is not supported.
@@ -46,9 +45,9 @@ Delta query is currently supported in preview on the Microsoft Graph /beta endpo
 -   Outlook Mail (Messages and mailFolder)
 -   Outlook Calendar
 -   Groups
--   Personal Contacts &lt;need to confirm&gt;
--   Organizational Contacts &lt;need to confirm&gt;
--   Administrative Units &lt;need to confirm&gt;
+-   Personal Contacts
+-   Organizational Contacts
+-   Administrative Units
 -   Drive Items\*
 
 > \* Tracking changes to drives and their children is already supported in v1.0. The usage pattern is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:
@@ -56,7 +55,7 @@ Delta query is currently supported in preview on the Microsoft Graph /beta endpo
 
 ## Prerequisites
 
-The same [permission scopes](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes) that are required to read a specific resource are also required to perform delta query on that resource.
+The same [permission scopes](../../authorization/permission_scopes) that are required to read a specific resource are also required to perform delta query on that resource.
 
 ## Known Limitations
 
@@ -93,3 +92,5 @@ In addition to the collection of resources, the response will also include one o
 ## Example (Last page in a set)
 
 ## Example (Subsequent Request)
+
+
