@@ -242,7 +242,7 @@
 			<Item text="Create multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
 			<Item text="Get multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
 		</Item>
-	  </Item> 
+	  </Item>
     </Item>
     <Item text="Outlook calendar" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
 	   <Item text="Event" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar API">
@@ -308,7 +308,7 @@
 		<Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
 			<Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
-		</Item>	
+		</Item>
 		<Item text="Multi-value extended property" url="/en-us/api-reference/v1.0/resources/multivaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
 			<Item text="Get multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
@@ -423,7 +423,7 @@
 	  <Item text="Multi-value extended property" url="/en-us/api-reference/v1.0/resources/multivaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
 			<Item text="Get multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-		</Item>	  
+		</Item>
 	  </Item>
       <Item text="Drive" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive">
         <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
@@ -570,7 +570,7 @@
         <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
         <Item text="Get person" url="/en-us/api-reference/beta/api/person_get" SEOKeyword="Get person, Microsoft Graph API, person API" SEODescription="Retrieve the properties and relationships of person object." />
       </Item>
-	 <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />    
+	 <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />
     </Item>
     <Item text="Planner tasks" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
       <Item text="Task" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
@@ -828,8 +828,8 @@
 	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
 			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-		</Item>		
-	  </Item>  
+		</Item>
+	  </Item>
     </Item>
     <Item text="Outlook calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
       <Item text="Event" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
@@ -902,8 +902,8 @@
 	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
 			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-		</Item>	  
-	  </Item>  
+		</Item>
+	  </Item>
 	</Item>
     <Item text="Personal contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
       <Item text="Contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
@@ -934,8 +934,8 @@
 	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
 			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-		</Item>	  
-	  </Item> 
+		</Item>
+	  </Item>
     </Item>
     <Item text="Groups" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Group" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
@@ -1012,7 +1012,7 @@
 	  <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
 			<Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
 			<Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-		</Item>	  
+		</Item>
 	  </Item>
       <Item text="Drive" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="">
         <Item text="Get drive" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
@@ -1200,10 +1200,10 @@
         <Item text="Get unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve an unfamiliarLocationRiskEvent object." />
       </Item>
     </Item>
- 
-	<Item text="Intune" url="/en-us/api-reference/beta/intune_graph_overview">
 
-		<Item text="Manage apps" url="/en-us/api-reference/beta/intune_apps_app_conceptual">
+	<Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
+
+		<Item text="Manage apps" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
 			<Item text="Android LOB app" url="/en-us/api-reference/beta/resources/intune_apps_androidlobapp">
 				<Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_androidlobapp_create"/>
 				<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_androidlobapp_delete"/>
@@ -1475,7 +1475,7 @@
 		</Item>
 	</Item>
 	</Item>
-	<Item text="Company" url="/en-us/api-reference/beta/intune_company_conceptual">
+	<Item text="Company" url="/en-us/api-reference/beta/resources/intune_company_conceptual">
 		<Item text="Terms and conditions" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditions">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_delete"/>
@@ -1501,7 +1501,7 @@
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_update"/>
 		</Item>
 		</Item>
-	<Item text="Corporate Enrollment" url="/en-us/api-reference/beta/intune_corporate_enrollment_conceptual">
+	<Item text="Corporate Enrollment" url="/en-us/api-reference/beta/resources/intune_corporate_enrollment_conceptual">
 		<Item text="DEP enrollment profile" url="/en-us/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_delete"/>
@@ -1562,7 +1562,7 @@
 
 	</Item>
 
-	<Item text="Device configuration" url="/en-us/api-reference/beta/intune_device_configuration_conceptual">
+	<Item text="Device configuration" url="/en-us/api-reference/beta/resources/intune_device_configuration_conceptual">
 		<Item text="Android certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidcertificateprofilebase">
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcertificateprofilebase_get"/>
 			<Item text="Get android trusted root certificate" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcertificateprofilebase_get_androidtrustedrootcertificate"/>
@@ -1943,7 +1943,7 @@
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_get"/>
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_list"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_update"/>
-		
+
 		<Item text="MacOS certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get"/>
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list"/>
@@ -2329,7 +2329,7 @@
 			<Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsvpnconfiguration_list_deviceconfigurationuserstatus"/>
 		</Item>
 	</Item>
-	<Item text="App protection" url="/en-us/api-reference/beta/intune_app_protection_conceptual">
+	<Item text="App protection" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
 		<Item text="Android managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_create"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_delete"/>
@@ -2489,7 +2489,7 @@
 
 	</Item>
 
-	<Item text="Onboarding" url="/en-us/api-reference/beta/intune_onboarding_conceptual">
+	<Item text="Onboarding" url="/en-us/api-reference/beta/resources/intune_onboarding_conceptual">
 		<Item text="Apple push notification certificate setting" url="/en-us/api-reference/beta/resources/intune_onboarding_applepushnotificationcertificatesetting"/>
 		<Item text="Apple volume purchase program token" url="/en-us/api-reference/beta/resources/intune_onboarding_applevolumepurchaseprogramtoken">
 			<Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_create"/>
@@ -2618,7 +2618,7 @@
 		</Item>
 	</Item>
 
-	<Item text="Role based access control" url="/en-us/api-reference/beta/intune-rbac-conceptual">
+	<Item text="Role based access control" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">
 		<Item text="Device management" url="/en-us/api-reference/beta/resources/intune_rbac_devicemanagement">
 			<Item text="Create resource operation" url="/en-us/api-reference/beta/api/intune_rbac_devicemanagement_create_resourceoperation"/>
 			<Item text="Create role assignment" url="/en-us/api-reference/beta/api/intune_rbac_devicemanagement_create_roleassignment"/>
@@ -2656,7 +2656,7 @@
 		</Item>
 	</Item>
 
-	<Item text="Telecom expense management" url="/en-us/api-reference/beta/intune_tem_conceptual">
+	<Item text="Telecom expense management" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
 		<Item text="Device management" url="/en-us/api-reference/beta/resources/intune_tem_devicemanagement">
 			<Item text="Create Telecom expense partner" url="/en-us/api-reference/beta/api/intune_tem_devicemanagement_create_telecomexpensemanagementpartner"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_tem_devicemanagement_get"/>
