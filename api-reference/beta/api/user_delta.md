@@ -89,11 +89,7 @@ Content-length: 608
         "businessPhones-value"
       ],
       "city": "city-value",
-      "companyName": "companyName-value",
-      "proxyAddresses": [
-        "proxyAddresses-value"
-      ],
-      "userPrincipalName":"user@company.com"
+      "companyName": "companyName-value"
     }
   ]
 }

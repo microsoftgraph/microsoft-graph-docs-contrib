@@ -17,7 +17,6 @@ To begin tracking changes, you make a request including the delta function on th
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/delta
-Authorization: <token>
 ```
 ### Request headers
 | Name       | Description|
@@ -53,6 +52,12 @@ GET https://graph.microsoft.com/beta/groups/delta
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -61,24 +66,18 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
   "value":[
     {
-      "classification":null,
-      "createdDateTime":"2016-11-21T23:22:56Z",
+      "classification": "classification-value",
+      "createdDateTime":"datetime-value",
       "description":"Test group 1",
       "displayName":"TestGroup1",
-      "visibility":"Public",
-      "id":"ec22655c-8eb2-432a-b4ea-8b8a254bffff"
+      "groupTypes": [
+        "groupTypes-value"
+      ],
+      "mail": "mail-value"
     }
   ]
 }
 ```
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "isCollection": true
-} -->
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
