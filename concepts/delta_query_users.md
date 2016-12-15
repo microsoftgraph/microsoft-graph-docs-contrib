@@ -18,7 +18,7 @@ The following example shows a series  requests to track changes to users:
 1. [Initial request](#initial-request) and [response](#initial-response)
 2. [nextLink request](#nextlink-request) and [response](#nextlink-response)
 3. [Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)
-4. [deltaLink request](#deltalink-request)
+4. [deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)
 
 ## Initial request
 
@@ -42,7 +42,6 @@ In this example, a nextLink URL is returned indicating there are additional page
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users(displayName,givenName,surname)",
@@ -79,7 +78,6 @@ The response contains a `nextLink` and another `skipToken`, indicating there are
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
@@ -116,7 +114,6 @@ When the deltaLink URL is returned, there is no more data about the existing sta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
@@ -146,5 +143,42 @@ Using the `deltaToken` from the [last response](#final-nextlink-response), you w
 GET https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
+## deltaLink response
+
+If no changes have occurred, the same `deltatoken` is returned with no results.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "value": []
+}
+```
+
+If changes have occurred, the same `deltatoken` is returned including a collection of changed users.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "value": [
+    {
+      "displayName":"Testuser7",
+      "givenName":"Joe",
+      "surname":"Doe",
+      "id":"25dcffff-959e-4ece-9973-e5d9b800e8cc"
+    },
+    {
+      "removed":"changed",
+      "id":"8ffff70c-1c63-4860-b963-e34ec660931d"
+    }
+}
+```
 ## See also
 [Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.
