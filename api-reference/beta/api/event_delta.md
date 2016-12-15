@@ -1,39 +1,76 @@
 # event: delta
 
+Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
+of the user's primary calendar.
+
+A **delta** function call for events is similar to a `GET /calendarview` request for 
+a range of dates in the user's primary calendar, except that by appropriately 
+applying [state tokens](../../../concepts/delta_query_overview.md#state-tokens) in one or more of these calls, 
+you can query for incremental changes in that calender view. This allows you to maintain and synchronize 
+a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
+from the server every time.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: _Calendars.Read_; _Calendars.ReadWrite_ 
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/events/<id>/delta
-POST /me/calendarView/<id>/delta
-POST /users/<id>/events/<id>/delta
+GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
 
 ```
-### Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
-| Content-Type  | application/json |
 
-### Request body
+### Query parameters
+
+In the request URL, provide the following required query parameters with values.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
+|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
+
+When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
+a `GET /calendarview` request. `$select` is not supported in this case. 
+
+
+### Request headers
+| Name       | Type | Description |
+|:---------------|:----------|:----------|
+| Authorization  | string  | Bearer {code}. Required.|
+| Content-Type  | string  | application/json. Required. |
+| Prefer | string  | odata.maxpagesize={x}. Optional. |
+| Prefer | string | {Time zone}. Optional, UTC assumed if absent.|
+
 
 ### Response
-If successful, this method returns `200, OK` response code and [event](../resources/event.md) collection object in the response body.
+If successful, this method returns a `200, OK` response code and [event](../resources/event.md) collection object in the response body.
 
 ### Example
 ##### Request
+
+The following example shows how to make a single **delta** function call, and limit the maximum number of events 
+in the response body to 2.
+
+To track changes in a calendar view, you would make one or more **delta** function calls, with 
+appropriate [state tokens](../../../concepts/delta_query_overview.md#state-tokens), to get the set of incremental changes since the last delta query. 
+
 <!-- {
   "blockType": "request",
   "name": "event_delta"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/<id>/delta
+GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
+
+Prefer: odata.maxpagesize=2
 ```
 
 ##### Response
+If the request is successful, the response would include a state token, which is either a _skipToken_ 
+(in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
+Respectively, they indicate whether you should continue with the round or you have completed 
+getting all the changes for that round.
+
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -47,6 +84,7 @@ Content-type: application/json
 Content-length: 359
 
 {
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "originalStartTimeZone": "originalStartTimeZone-value",
