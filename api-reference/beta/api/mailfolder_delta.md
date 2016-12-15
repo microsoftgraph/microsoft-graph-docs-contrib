@@ -52,6 +52,8 @@ returning **mailFolder** rather than **message** collections.
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/delta
+
+Prefer: odata.maxpagesize=2
 ```
 
 ##### Response
@@ -92,7 +94,7 @@ Content-length: 254
 
 ### See also
 
-- [Microsoft Graph delta query](../../../concepts/delta_query_overview.md)
+- [Microsoft Graph delta query (preview)](../../../concepts/delta_query_overview.md)
 - [Get incremental changes to messages in a folder (preview)](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

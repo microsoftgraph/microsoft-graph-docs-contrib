@@ -64,6 +64,8 @@ If the request is successful, the response would include a state token, which is
 Respectively, they indicate whether you should continue with the round or you have completed 
 getting all the changes for that round.
 
+The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
+
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -77,9 +79,9 @@ Content-type: application/json
 Content-length: 337
 
 {
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('{id}')/messages/delta?$skiptoken={_skipToken_}",
   "value": [
     {
-      "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('{id}')/messages/delta?$skiptoken={_skipToken_}",
       "receivedDateTime": "datetime-value",
       "sentDateTime": "datetime-value",
       "hasAttachments": true,
@@ -96,7 +98,7 @@ Content-length: 337
 
 ### See also
 
-- [Microsoft Graph delta query](../../../concepts/delta_query_overview.md)
+- [Microsoft Graph delta query (preview)](../../../concepts/delta_query_overview.md)
 - [Get incremental changes to messages in a folder (preview)](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
