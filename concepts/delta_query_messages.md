@@ -1,10 +1,7 @@
 # Get incremental changes to messages in a folder (preview)
 
-<!-- Add links to delta function and overview topic in first sentence.
-Also add link to overview and other how-to sample topics in See Also section -->
-
 Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of 
-[delta](../../../api-reference/beta/api/message_delta.md) function calls. Delta data enables you to maintain 
+[delta](../api-reference/beta/api/message_delta.md) function calls. Delta data enables you to maintain 
 and synchronize a local store of a user's messages, 
 without having to fetch the entire set of the user's messages from the server every time.
 
@@ -22,30 +19,17 @@ request much like the way you [get messages](https://graph.microsoft.io/en-us/do
 except that you include the following:
 
 - The **delta** function.
-- A [state token](#state-tokens-and-other-query-parameters-in-a-delta-query) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call for that folder.
+- A state token (_deltaToken_ or _skipToken_) from the previous GET **delta** function call for that folder.
 
+A state token takes a snapshot of the messages in the folder, and identifies where you are in 
+that round of change tracking. It also encodes any query parameter in your initial delta query GET request, saving 
+you from repeating those parameters in subsequent requests. 
+See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use these tokens.
 
-### State tokens and other query parameters in a delta query
-
-**Why use state tokens?**
-
-- A delta query GET request can return one of two possible tokens: _deltaToken_ or _skipToken_. 
-- Each token reflects the state and represents a snapshot in time of the messages in the folder. Applying the latest 
-token as a query parameter in a GET request identifies where you are in that round of change tracking. 
-- State tokens also encode and include other query parameters (such as `$select`) 
-specified in the initial delta query request, so that you won't have to repeat them in subsequent delta query requests on the same folder.
-
-
-### Optional request header
-
-Each delta query GET request returns a collection of one or more messages in the response. You can optionally specify 
-the request header, _Prefer: odata.maxpagesize={x}_, to set the maximum number of messages returned.
-
-
-**Notes for using query parameters in a delta query for messages**
+### Use query parameters in a delta query for messages
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
-_Id_ property is always returned. 
+_id_ property is always returned. 
 - Delta query support `$select`, `$top`, and `$expand` for messages. 
 - There is limited support for `$filter` and `$orderby`:
   * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` 
@@ -53,6 +37,12 @@ _Id_ property is always returned.
   * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
   an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.
+
+
+### Optional request header
+
+Each delta query GET request returns a collection of one or more messages in the response. You can optionally specify 
+the request header, _Prefer: odata.maxpagesize={x}_, to set the maximum number of messages in a response.
 
 <!--
 ### Iterative process 
@@ -84,7 +74,7 @@ since the completion of the very first round.
 
 -->
 
-##Example to synchronize messages in a folder
+## Example to synchronize messages in a folder
 
 The following example shows a series of 3 requests to synchronize a specific folder which contains 5 messages:
 
@@ -98,7 +88,7 @@ See also what you'll do in the [next round](#the-next-round).
 ### Sample initial request
 
 In this example, the specified folder is being synchronized for the first time, so the initial sync request does not include any state token. 
-Anticipate that this round will return all the messages in that folder.
+This round will return all the messages in that folder.
 
 The first request specifies the following:
 - A `$select` parameter to return the **Subject** and **Sender** properties for each message in the response.
@@ -112,13 +102,10 @@ Prefer: odata.maxpagesize=2
 
 ### Sample initial response
 
-The initial response includes a `Preference-Applied: odata.track-changes` header, 
-indicating that this folder supports synchronization. The response also includes 
-two messages and a `skipToken`.
+The response includes two messages and a `@odata.nextLink` response header with a `skipToken`. 
+The `skipToken` indicates there are more messages in the folder to get.
 
 ```
-Preference-Applied: odata.track-changes
-
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
     "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
@@ -165,7 +152,7 @@ Prefer: odata.maxpagesize=2
 ### Sample second response 
 
 The second response returns the next 2 messages in the folder, a `nextLink` and another `skipToken`, indicating there are 
-more messages to sync in the folder.
+more messages to get from the folder.
 
 ```
 {
@@ -253,5 +240,7 @@ Prefer: odata.maxpagesize=2
 
 
 ## See also
-[Microsoft Graph delta query](../Concepts/delta_query_overview.md)
 
+- [Microsoft Graph delta query](../Concepts/delta_query_overview.md)
+- [Get incremental changes for groups (preview)](../Concepts/delta_query_groups.md)
+- [Get incremental changes for users (preview)](../Concepts/delta_query_users.md)
