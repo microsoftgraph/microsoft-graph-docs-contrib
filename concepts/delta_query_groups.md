@@ -20,7 +20,7 @@ The following example shows a series  requests to track changes to groups:
 1. [Initial request](#initial-request) and [response](#initial-response)
 2. [nextLink request](#nextlink-request) and [response](#nextlink-response)
 3. [Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)
-4. [deltaLink request](#deltalink-request)
+4. [deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)
 
 ## Initial request
 
@@ -44,7 +44,6 @@ In this example, a nextLink URL is returned indicating there are additional page
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(displayName,description)",
@@ -79,7 +78,6 @@ The response contains a `nextLink` and another `skipToken`, indicating there are
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
@@ -114,7 +112,6 @@ When the deltaLink URL is returned, there is no more data about the existing sta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
@@ -140,6 +137,40 @@ Using the `deltaToken` from the [last response](#final-nextlink-response), you w
 
 ``` http
 GET https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
+```
+
+## deltaLink response
+
+If no changes have occurred, the same `deltatoken` is returned with no results.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "value": []
+}
+```
+
+If changes have occurred, the same `deltatoken` is returned including a collection of changed groups.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "value": [
+    {
+      "displayName":"TestGroup7",
+      "description":"Employees in test group 7",
+      "id":"f764235c-ffff-4843-a14a-1d8826967260"
+    }
+  ]
+}
 ```
 
 ## See also
