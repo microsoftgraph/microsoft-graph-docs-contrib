@@ -52,12 +52,7 @@ GET https://graph.microsoft.com/beta/users/delta
 
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
