@@ -52,39 +52,34 @@ GET https://graph.microsoft.com/beta/users/delta
 
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- { "blockType": "ignored" } -->
+<!-- { 
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true 
+} --> 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 608
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
   "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "accountEnabled": true,
-      "assignedLicenses": [
-        {
-          "disabledPlans": [
-            "disabledPlans-value"
-          ],
-          "skuId": "skuId-value"
-        }
-      ],
-      "assignedPlans": [
-        {
-          "assignedDateTime": "datetime-value",
-          "capabilityStatus": "capabilityStatus-value",
-          "service": "service-value",
-          "servicePlanId": "servicePlanId-value"
-        }
-      ],
       "businessPhones": [
-        "businessPhones-value"
+          "businessPhones-value"
       ],
-      "city": "city-value",
-      "companyName": "companyName-value"
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "mail": "mail-value",
+      "mobilePhone": "mobilePhone-value",
+      "officeLocation": "officeLocation-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "surname": "surname-value",
+      "userPrincipalName": "userPrincipalName-value",
+      "id": "id-value"
     }
   ]
 }
