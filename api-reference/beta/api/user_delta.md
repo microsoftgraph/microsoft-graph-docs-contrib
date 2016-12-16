@@ -61,7 +61,6 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 608
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
