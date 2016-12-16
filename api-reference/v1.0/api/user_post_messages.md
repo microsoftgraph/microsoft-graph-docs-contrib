@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/messages
+POST /users/{id | userPrincipalName}/messages
 ```
 ## Request headers
 | Header       | Value |
@@ -23,7 +23,7 @@ In the request body, supply a JSON representation of [Message](../resources/mess
 If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
-##### Request
+##### Request 1
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -47,7 +47,7 @@ Content-length: 248
 }
 ```
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
-##### Response
+##### Response 1
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -55,7 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 248
 

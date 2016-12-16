@@ -7,10 +7,10 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/messages/<id>
-PATCH /users/<id | userPrincipalName>/messages/<id>
-PATCH /me/mailFolders/<id>/messages/<id>
-PATCH /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
+PATCH /me/messages/{id}
+PATCH /users/{id | userPrincipalName}/messages/{id}
+PATCH /me/mailFolders/{id}/messages/{id}
+PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -48,7 +48,7 @@ Here is an example of the request.
   "name": "update_message"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/messages/<id>
+PATCH https://graph.microsoft.com/v1.0/me/messages/{id}
 Content-type: application/json
 Content-length: 248
 

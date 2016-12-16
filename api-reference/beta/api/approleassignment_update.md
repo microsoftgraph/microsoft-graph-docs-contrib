@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<id | userPrincipalName>/appRoleAssignments/<id>
-PATCH /servicePrincipals/<id>/appRoleAssignedTo
-PATCH /groups/<id>/appRoleAssignments/<id>
+PATCH /users/{id | userPrincipalName}/appRoleAssignments/{id}
+PATCH /servicePrincipals/{id}/appRoleAssignedTo
+PATCH /groups/{id}/appRoleAssignments/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -38,12 +38,12 @@ Here is an example of the request.
   "name": "update_approleassignment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/appRoleAssignments/<id>
+PATCH https://graph.microsoft.com/beta/appRoleAssignments/{id}
 Content-type: application/json
 Content-length: 233
 
 {
-  "creationTimestamp": "datetime-value",
+  "creationTimestamp": "2016-10-19T10:37:00Z",
   "principalDisplayName": "principalDisplayName-value",
   "principalId": "principalId-value",
   "principalType": "principalType-value",
@@ -63,7 +63,7 @@ Content-type: application/json
 Content-length: 253
 
 {
-  "creationTimestamp": "datetime-value",
+  "creationTimestamp": "2016-10-19T10:37:00Z",
   "id": "id-value",
   "principalDisplayName": "principalDisplayName-value",
   "principalId": "principalId-value",

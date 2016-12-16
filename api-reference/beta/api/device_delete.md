@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API: *Directory.Acce
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /devices/<id>
+DELETE /devices/{id}
 
 ```
 ## Request headers
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "delete_device"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/devices/<id>
+DELETE https://graph.microsoft.com/beta/devices/{id}
 ```
 ##### Response
 Here is an example of the response. 

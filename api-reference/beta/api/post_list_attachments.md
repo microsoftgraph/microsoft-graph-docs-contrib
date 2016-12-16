@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
-GET /groups/<id>/threads/<id>/posts/<id>/attachments
-GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments
+GET /groups/{id}/threads/{id}/posts/{id}/attachments
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -21,7 +21,7 @@ In particular, you can use the $expand query parameter to include all of the pos
 inline with the rest of the post properties. For example:
 
 ```
-GET https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>?$expand=attachments
+GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand=attachments
 ```
 ## Request headers
 | Header       | Value |
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/threads/<id>/posts/<id>/attachments
+GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -64,7 +64,7 @@ Content-length: 215
       "contentLocation": "contentLocation-value",
       "contentBytes": "contentBytes-value",
       "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
+      "lastModifiedDateTime": "2016-10-19T10:37:00Z",
       "isInline": false,
       "name": "name-value",
       "size": 99

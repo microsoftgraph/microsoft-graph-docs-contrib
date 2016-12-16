@@ -9,21 +9,21 @@ One of the following **scopes** is required to execute this API:
 A user's or group's default [calendar](../resources/calendar.md).
 ```http
 PATCH /me/calendar
-PATCH /users/<id | userPrincipalName>/calendar
-PATCH /groups/<id>/calendar
+PATCH /users/{id | userPrincipalName}/calendar
+PATCH /groups/{id}/calendar
 ```
 A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
 ```http
-PATCH /me/calendars/<id>
-PATCH /users/<id | userPrincipalName>/calendars/<id>
+PATCH /me/calendars/{id}
+PATCH /users/{id | userPrincipalName}/calendars/{id}
 
-PATCH /me/calendarGroup/calendars/<id>
-PATCH /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
+PATCH /me/calendarGroup/calendars/{id}
+PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
-PATCH /me/calendarGroups/<id>/calendars/<id>
-PATCH /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
+PATCH /me/calendarGroups/{id}/calendars/{id}
+PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## Request headers
 | Header       | Value |
@@ -52,12 +52,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/calendar
 Content-type: application/json
-Content-length: 48
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Social events"
 }
 ```
 ##### Response
@@ -70,15 +67,25 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "isDefaultCalendar": false,
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "id":"AAMkADJmMVAAA=",
+    "name":"Social events",
+    "color":"auto",
+    "hexColor": "",
+    "isDefaultCalendar":false,
+    "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "isShared":false,
+    "isSharedWithMe":false,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API: *Group.ReadWrit
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/conversations
+POST /groups/{id}/conversations
 ```
 ## Request headers
 | Header       | Value |
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/conversations
+POST https://graph.microsoft.com/beta/groups/{id}/conversations
 Content-type: application/json
 
 {
@@ -67,7 +67,7 @@ Content-length: 201
 {
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
+  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],

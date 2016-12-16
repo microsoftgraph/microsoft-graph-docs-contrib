@@ -9,21 +9,21 @@ One of the following **scopes** is required to execute this API:
 A user's or group's default [calendar](../resources/calendar.md).
 ```http
 POST /me/calendar/events
-POST /users/<id | userPrincipalName>/calendar/events
-POST /groups/<id>/calendar/events
+POST /users/{id | userPrincipalName}/calendar/events
+POST /groups/{id}/calendar/events
 ```
 A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
 ```http
-POST /me/calendars/<id>/events
-POST /users/<id | userPrincipalName>/calendars/<id>/events
+POST /me/calendars/{id}/events
+POST /users/{id | userPrincipalName}/calendars/{id}/events
 
-POST /me/calendarGroup/calendars/<id>/events
-POST /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/events
+POST /me/calendarGroup/calendars/{id}/events
+POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
-POST /me/calendarGroups/<id>/calendars/<id>/events
-POST /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
+POST /me/calendarGroups/{id}/calendars/{id}/events
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Request headers
 | Header       | Value |
@@ -55,7 +55,7 @@ Content-length: 285
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
     "response": "",
-    "time": "datetime-value"
+    "time": "2016-10-19T10:37:00Z"
   },
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
@@ -79,7 +79,7 @@ Content-length: 285
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
     "response": "",
-    "time": "datetime-value"
+    "time": "2016-10-19T10:37:00Z"
   },
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,

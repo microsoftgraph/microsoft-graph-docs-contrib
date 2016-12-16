@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "tablecollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/add
 Content-type: application/json
 Content-length: 54
 
@@ -59,7 +59,7 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "showHeaders": true,
   "showTotals": true,

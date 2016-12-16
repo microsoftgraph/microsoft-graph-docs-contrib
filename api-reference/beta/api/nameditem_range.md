@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "nameditem_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/Range
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/Range
 ```
 
 ##### Response

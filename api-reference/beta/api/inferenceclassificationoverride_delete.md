@@ -1,13 +1,13 @@
 # Delete inferenceClassificationOverride
 
-Delete an override specified by its ID.
+Delete a [Focused Inbox](../resources/manage_focused_inbox.md) override specified by its ID.
 ## Prerequisites
 The following **scopes** are required to execute this API: *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/inferenceClassification/overrides/<id>
-DELETE /users/<id>/inferenceClassification/overrides/<id>
+DELETE /me/inferenceClassification/overrides/{id}
+DELETE /users/{id}/inferenceClassification/overrides/{id}
 ```
 ## Request headers
 | Name       | Type | Description|

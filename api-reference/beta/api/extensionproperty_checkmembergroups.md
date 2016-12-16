@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/<id>/extensionProperties/<id>/checkMemberGroups
+POST /applications/{id}/extensionProperties/{id}/checkMemberGroups
 
 ```
 ## Request headers
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "extensionproperty_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/applications/<id>/extensionProperties/<id>/checkMemberGroups
+POST https://graph.microsoft.com/beta/applications/{id}/extensionProperties/{id}/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 

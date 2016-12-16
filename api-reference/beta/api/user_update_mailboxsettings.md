@@ -14,14 +14,14 @@ The following **scope** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/mailboxSettings
-PATCH /users/<id|userPrincipalName>/mailboxSettings
+PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer `<token>`. Required. |
 
 ## Request body
 In the request body, supply the values for the relevant properties that should be updated. Existing properties that are not included in the 
@@ -103,7 +103,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get automatic reply settings",
+  "description": "Update mailbox settings",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "tablesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/sort/apply
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/sort/apply
 Content-type: application/json
 Content-length: 298
 

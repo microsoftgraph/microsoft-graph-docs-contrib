@@ -19,20 +19,20 @@ deleting the extension from:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/messages/<id>/extensions/<extensionId>
-DELETE /users/<id|userPrincipalName>/messages/<id>/extensions/<extensionId>
-DELETE /me/mailFolders/<id>/messages/<id>/extensions/<extensionId>
+DELETE /me/messages/{id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+DELETE /me/mailFolders/{id}/messages/{id}/extensions/{extensionId}
 
-DELETE /me/events/<id>/extensions/<extensionId>
-DELETE /users/<id|userPrincipalName>/events/<id>/extensions/<extensionId>
+DELETE /me/events/{id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
 
-DELETE /me/contacts/<id>/extensions/<extensionId>
-DELETE /users/<id|userPrincipalName>/contacts/<id>/extensions/<extensionId>
+DELETE /me/contacts/{id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 
-DELETE /groups/<id>/events/<id>/extensions/<extensionId>
+DELETE /groups/{id}/events/{id}/extensions/{extensionId}
 
-DELETE /groups/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
-DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
+DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
 ```
 
 ## Parameters

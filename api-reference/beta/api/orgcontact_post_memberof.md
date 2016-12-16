@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /contacts/<id>/memberOf
+POST /contacts/{id}/memberOf
 
 ```
 ## Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_orgcontact"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/contacts/<id>/memberOf
+POST https://graph.microsoft.com/beta/contacts/{id}/memberOf
 Content-type: application/json
 Content-length: 30
 

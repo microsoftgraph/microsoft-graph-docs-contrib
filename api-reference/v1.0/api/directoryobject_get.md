@@ -1,12 +1,17 @@
 # Get directoryObject
 
-Retrieve the properties and relationships of directoryobject object.
+Retrieve the properties and relationships of directoryObject object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: _Directory.Read.All_ OR _Directory.AccessAsUser.All_
+One of the following **scopes** is required to execute this API: 
+- _Directory.Read.All_ 
+- _Directory.AccessAsUser.All_
+
+> Note: Permission scopes are listed in least privilege required order.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryObjects/<id>
+GET /directoryObjects/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -21,16 +26,16 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_directoryobject"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryObject/<id>
+GET https://graph.microsoft.com/v1.0/directoryObject/{id}
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -39,7 +44,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 22
 
 {
   "id": "id-value"

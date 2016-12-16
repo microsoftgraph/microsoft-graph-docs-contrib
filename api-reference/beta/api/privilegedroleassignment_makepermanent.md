@@ -9,7 +9,7 @@ The requestor needs to have _Privileged Role Administrator_ role.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedRoleAssignments/<id>/makePermanent
+POST /privilegedRoleAssignments/{id}/makePermanent
 ```
 ## Request headers
 | Name       | Description|
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "privilegedroleassignment_makepermanent"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/privilegedRoleAssignments/<id>/makePermanent
+POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makePermanent
 Content-type: application/json
 Content-length: 110
 
@@ -65,7 +65,7 @@ Content-length: 184
   "userId": "userId-value",
   "roleId": "roleId-value",
   "isElevated": true,
-  "expirationDateTime": "datetime-value",
+  "expirationDateTime": "2016-10-19T10:37:00Z",
   "resultMessage": "resultMessage-value"
 }
 ```

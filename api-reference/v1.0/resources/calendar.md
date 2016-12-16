@@ -14,6 +14,10 @@ A calendar which is a container for events.
 |[List calendarView](../api/calendar_list_calendarview.md) |[Event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.|
 |[List events](../api/calendar_list_events.md) |[Event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
 |[Create Event](../api/calendar_post_events.md) |[Event](event.md)| Create a new Event in the default or specified calendar.|
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[calendar](calendar.md)  |Create one or more single-value extended properties in a new or existing calendar.   |
+|[Get calendar with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Get calendars that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [calendar](calendar.md) | Create one or more multi-value extended properties in a new or existing calendar.  |
+|[Get calendar with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Get a calendar that contains a multi-value extended property by using `$expand`. |
 
 
 ## Properties
@@ -29,6 +33,8 @@ A calendar which is a container for events.
 |:---------------|:--------|:----------|
 |calendarView|[Event](event.md) collection|The calendar view for the calendar. Navigation property. Read-only.|
 |events|[Event](event.md) collection|The events in the calendar. Navigation property. Read-only.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
 
 ## JSON representation
 
@@ -38,7 +44,9 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "calendarView",
-    "events"
+    "events",
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.calendar"

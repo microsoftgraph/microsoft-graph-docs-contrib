@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API: *Directory.Read.All* 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/<id>/scopedAdministrators
+GET /administrativeUnits/{id}/scopedAdministrators
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "get_scopedadministrators"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/administrativeUnits/<id>/scopedAdministrators
+GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedAdministrators
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

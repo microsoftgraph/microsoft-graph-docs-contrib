@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "tablerow_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables(<id|name>)/rows(<index>)/Range
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)/Range
 ```
 
 ##### Response

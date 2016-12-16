@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API: *Group.ReadWrit
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/members/$ref
+POST /groups/{id}/members/$ref
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -31,12 +31,12 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/members/$ref
+POST https://graph.microsoft.com/beta/groups/{id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/<id>"
+  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
 In the request body, supply a JSON representation of the `id` of the [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object you want to add.

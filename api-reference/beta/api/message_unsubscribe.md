@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:  _Mail.Send_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/messages/<id>/unsubscribe
-POST /drive/root/createdByUser/messages/<id>/unsubscribe
-POST /drive/root/lastModifiedByUser/messages/<id>/unsubscribe
+POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
+POST /drive/root/createdByUser/messages/{id}/unsubscribe
+POST /drive/root/lastModifiedByUser/messages/{id}/unsubscribe
 
 ```
 ## Request headers
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "message_unsubscribe"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/<id>/unsubscribe
+POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 ```
 
 ##### Response

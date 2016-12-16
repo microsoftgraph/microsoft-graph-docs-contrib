@@ -1,6 +1,6 @@
-# Get automatic reply settings
+# Get user mailbox settings
 
-Get the settings of the user's mailbox. This includes settings for automatic replies (notify people automatically upon 
+Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies (notify people automatically upon 
 receipt of their email), locale (language and country/region), and time zone.
 
 You can view all mailbox settings, or, get specific settings.
@@ -10,31 +10,31 @@ The following **scope** is required to execute this API:
 *Mailboxsettings.ReadWrite*  
 
 ## HTTP request
-To get all mailbox settings which include automatic replies settings.
+To get all mailbox settings which include automatic replies settings:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
-GET /users/<id|userPrincipalName>/mailboxSettings
+GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-To get specific settings - for example, only the automatic replies settings, locale, or time zone.
+To get specific settings - for example, only the automatic replies settings, locale, or time zone:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
-GET /users/<id|userPrincipalName>/mailboxSettings/automaticRepliesSetting
+GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 
 GET /me/mailboxSettings/language
-GET /users/<id|userPrincipalName>/mailboxSettings/language
+GET /users/{id|userPrincipalName}/mailboxSettings/language
 
 GET /me/mailboxSettings/timeZone
-GET /users/<id|userPrincipalName>/mailboxSettings/timeZone
+GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer `<token>`. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -137,7 +137,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get automatic reply settings",
+  "description": "Get mailbox settings",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

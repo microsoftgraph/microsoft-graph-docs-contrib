@@ -8,8 +8,8 @@ Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or No
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/notes/pages
-GET /users/<id | userPrincipalName>/notes/pages
-GET /groups/<id>/notes/pages
+GET /users/{id | userPrincipalName}/notes/pages
+GET /groups/{id}/notes/pages
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -58,7 +58,7 @@ Content-length: 393
       },
       "contentUrl": "contentUrl-value",
       "content": "content-value",
-      "lastModifiedTime": "datetime-value"
+      "lastModifiedTime": "2016-10-19T10:37:00Z"
     }
   ]
 }

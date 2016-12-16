@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "worksheetprotection_unprotect"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/worksheets(<id|name>)/protection/unprotect
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/protection/unprotect
 Content-type: application/json
 Content-length: 34
 

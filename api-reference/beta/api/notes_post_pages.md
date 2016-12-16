@@ -13,8 +13,8 @@ Notes.Create, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, or Notes.ReadWrite.
 
 ```http
 POST /me/notes/pages
-POST /users/<id | userPrincipalName>/notes/pages
-POST /groups/<id>/notes/pages
+POST /users/{id | userPrincipalName}/notes/pages
+POST /groups/{id}/notes/pages
 ```
 
 ## Request headers  
@@ -98,7 +98,7 @@ Content-length: 312
   },
   "contentUrl": "contentUrl-value",
   "content": "content-value",
-  "lastModifiedTime": "datetime-value"
+  "lastModifiedTime": "2016-10-19T10:37:00Z"
 }
 ```
 

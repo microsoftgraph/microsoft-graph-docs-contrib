@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API: *Group.ReadWrit
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/unsubscribeByMail
+POST /groups/{id}/unsubscribeByMail
 ```
 ## Request headers
 | Header       | Value |
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "group_unsubscribebymail"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/unsubscribeByMail
+POST https://graph.microsoft.com/v1.0/groups/{id}/unsubscribeByMail
 ```
 
 ##### Response

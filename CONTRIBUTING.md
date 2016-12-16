@@ -13,10 +13,10 @@ Thank you for your interest in Microsoft Graph documentation!
 
 You can contribute to [Microsoft Graph documentation](http://graph.microsoft.io) in these ways:
 
-* Contribute to articles via the [public Office developer docs repo](https://github.com/OfficeDev/microsoft-graph-docs)
+* Contribute to articles via the [public Microsoft Graph developer docs repo](https://github.com/microsoftgraph/microsoft-graph-docs)
 	* Send separate pull requests into /beta and/or /v1.0 branches. This step is required to ensure that version branches are update to date with the latest changes. 
 	* In addition, send separate pull requests to /master branch. This step is to ensure the Microsoft Grph website documentation site gets updated with the latest changes. 
-* Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/microsoft-graph-docs/issues)
+* Report documentation bugs via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
 * Add documentation requests to the [Office Developer Platform UserVoice](http://officespdev.uservoice.com)
 
 ##Before we can accept your pull request
@@ -37,7 +37,7 @@ As a community member, **you must sign the Contribution License Agreement (CLA) 
 
 Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Office Developer and Office Developer Content Publishing teams will be able to review and consider your contributions and you will get credit if we do.
 
-You can download the Contribution License Agreement (CLA) [here](https://github.com/OfficeDev/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf). Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
+You can download the Contribution License Agreement (CLA) [here](https://github.com/microsoftgraph/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf). Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
 
 Once we receive and process your CLA, we'll do our best to review your pull requests within 10 business days.
 
@@ -52,12 +52,12 @@ Once we receive and process your CLA, we'll do our best to review your pull requ
 3.	Create your own fork of this repository. To do this, at the top of the page,  click the **Fork** button.
 4.	Copy your fork to your local machine. To do this, go open GitBash. At the command prompt enter:
 
-		git clone https://github.com/<your user name>/microsoft-graph-docs.git
+		git clone https://github.com/{your user name}/microsoft-graph-docs.git
 
 	Next, create a reference to the root repository by entering these commands:
 
 		cd microsoft-graph-docs
-		git remote add upstream https://github.com/OfficeDev/microsoft-graph-docs.git
+		git remote add upstream https://github.com/microsoftgraph/microsoft-graph-docs.git
 		git fetch upstream
 
 Congratulations! You've now set up your repository. You won't need to repeat these steps again.
@@ -80,7 +80,7 @@ Limit each branch to a single concept/article to streamline the workflow and red
 #### Create a new branch
 
 1.	Open GitBash.
-2.	Type `git pull upstream master:<new branch name>` at the prompt. This creates a new branch locally that's copied from the latest OfficeDev master branch. **Note:** For internal contributors, replace `master` in the command with the branch for the publishing date you're targeting.
+2.	Type `git pull upstream master:<new branch name>` at the prompt. This creates a new branch locally that's copied from the latest *microsoftgraph* master branch. **Note:** For internal contributors, replace `master` in the command with the branch for the publishing date you're targeting.
 3.	Type `git push origin <new branch name>` at the prompt. This will alert GitHub to the new branch. You should now see the new branch in your fork of the repository on GitHub.
 4.	Type `git checkout <new branch name>` to switch to your new branch.
 
@@ -108,18 +108,18 @@ When you're finished with your work and are ready to have it merged into the cen
 1.	In GitBash, type `git push origin <new branch name>` at the command prompt. In your local repository, `origin` refers to your GitHub repository that you cloned the local repository from. This command pushes the current state of your new branch, including all commits made in the previous steps, to your GitHub fork.
 2.	On the GitHub site, navigate in your fork to the new branch.
 3.	Click the **Pull Request** button at the top of the page.
-4.	Ensure that the Base branch is `OfficeDev/microsoft-graph-docs@master` and the Head branch is `<your username>/microsoft-graph-docs@<branch name>`.
+4.	Ensure that the Base branch is `microsoftgraph/microsoft-graph-docs@master` and the Head branch is `<your username>/microsoft-graph-docs@<branch name>`.
 5.	Click the **Update Commit Range** button.
 6.	Give your pull request a Title, and describe all the changes you're making. If your bug fixes a UserVoice item or GitHub issue, be sure to reference that issue in the description.
 7.	Submit the pull request.
 
-One of the site administrators will now process your pull request. Your pull request will surface on the OfficeDev/microsoft-graph-docs site under Issues. When the pull request is accepted, the issue will be resolved.
+One of the site administrators will now process your pull request. Your pull request will surface on the microsoftgraph/microsoft-graph-docs site under Issues. When the pull request is accepted, the issue will be resolved.
 
 #### Create a new branch after merge
 
 After a branch is successfully merged (i.e., your pull request is accepted), don't continue working in the local branch that was successfully merged upstream. This can lead to merge conflicts if you submit another pull request. Instead, if you want to do another update, create a new local branch from the successfully merged upstream branch.
 
-For example, suppose your local branch X was successfully merged into the OfficeDev/microsoft-graph-docs master branch and you want to make additional updates to the content that was merged. Create a new local branch, X2, from the OfficeDev/microsoft-graph-docs master branch. To do this, open GitBash and execute the following commands:
+For example, suppose your local branch X was successfully merged into the microsoftgraph/microsoft-graph-docs master branch and you want to make additional updates to the content that was merged. Create a new local branch, X2, from the microsoftgraph/microsoft-graph-docs master branch. To do this, open GitBash and execute the following commands:
 
 	cd microsoft-graph-docs
 	git pull upstream master:X2
@@ -206,4 +206,4 @@ By using references grouped at the bottom of your file, you can easily find, edi
 [Set Up Git]: http://help.github.com/win-set-up-git/
 [Markdown Home]: http://daringfireball.net/projects/markdown/
 [Markdown Pad]: http://markdownpad.com/
-[OfficeDev/microsoft-graph-docs issues]: https://github.com/OfficeDev/microsoft-graph-docs/issues
+[microsoftgraph/microsoft-graph-docs issues]: https://github.com/microsoftgraph/microsoft-graph-docs/issues

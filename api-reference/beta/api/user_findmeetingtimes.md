@@ -1,7 +1,7 @@
 # user: findMeetingTimes
 Find meeting time suggestions based on organizer and attendee availability, and time or location constraints specified as parameters.
 
-If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsHint** property. 
+If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. 
 Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 
 **Note**
@@ -15,12 +15,12 @@ and `resource` for a resource in the corresponding **type** property, as part of
 
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Calendars.Read*
+One of the following **scopes** is required to execute this API: *Calendars.Read.Shared* or *Calendars.ReadWrite.Shared*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/findMeetingTimes
-POST /users/<id|userPrincipalName>/findMeetingTimes
+POST /users/{id|userPrincipalName}/findMeetingTimes
 ```
 ## Request headers
 | Name       | Value|
@@ -43,15 +43,43 @@ calculates the best possible meeting times, and returns any meeting suggestions.
 |meetingDuration|Edm.Duration|The length of the meeting, denoted in [ISO8601](http://www.iso.org/iso/iso8601) format. For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, 'H' is the hour designator. If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes. |
 |maxCandidates|Edm.Int32|The maximum number of meeting time suggestions to be returned.|
 |isOrganizerOptional|Edm.Boolean|`True` if the organizer's attendance is not necessary, `false` otherwise.|
-|returnSuggestionHints|Edm.Boolean|`True` to return a reason for each meeting suggestion in the **suggestionHint** property. The default is `false` to not return that property.|
+|returnSuggestionReasons|Edm.Boolean|`True` to return a reason for each meeting suggestion in the **suggestionReason** property. The default is `false` to not return that property.|
+|minimumAttendeePercentage|Edm.Double| The minimum required [confidence](#the-confidence-of-a-meeting-suggestion) for a time slot to be returned in the response. It is a % value ranging from 0 to 100. |
 
 ## Response
-If successful, this method returns `200, OK` response code and a [meetingTimeCandidatesResult](../resources/meetingtimecandidatesresult.md) in the response body. 
+If successful, this method returns `200, OK` response code and a [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) in the response body. 
 
-A **meetingTimeCandidatesResult** includes a collection of meeting suggestions and an **emptySuggestionsHint** property. Each suggestion is defined 
-as a [meetingTimeCandidate](../resources/meetingtimecandidate.md), with attendees having on the average a confidence level of 50% chance or higher to attend. 
+A **meetingTimeSuggestionsResult** includes a collection of meeting suggestions and an **emptySuggestionsReason** property. Each suggestion is defined 
+as a [meetingTimeSuggestion](../resources/meetingTimeSuggestion.md), with attendees having on the average a confidence level of 50% to attend, 
+or a specific % that you have specified in the **minimumAttendeePercentage** parameter. 
 
 By default, each meeting time suggestion is returned in UTC. 
+
+### The confidence of a meeting suggestion
+
+The **confidence** property of a **meetingTimeSuggestion** ranges from 0% to 100%, and represents the chance that all the attendees attend the meeting, 
+based on each of their individual free/busy status:
+
+- For each attendee, a free status for a specified meeting time period corresponds to 100% chance of attendance, unknown status 49%, and busy status 0%.
+- The confidence of a meeting time suggestion is computed by averaging the chance of attendance over all the attendees specified for that meeting.
+- If there are multiple meeting time suggestions, the **findMeetingTimes** action first orders the suggestions by their computed confidence value from 
+high to low. If there are suggestions with the same confidence, the action then orders these suggestions chronologically.
+- You can use the **minimumAttendeePercentage** optional parameter for **findMeetingTimes** to specify only meeting time suggestions of at least 
+certain confidence level should be returned. For example, you can specify a **minimumAttendeePercentage** of 80% if you want only 
+suggestions that have an 80% chance or more that all the attendees are attending. If you do not specify **minimumAttendeePercentage**, 
+**findMeetingTimes** assumes a value of 50%.
+
+As an example, if a meeting time suggestion involves 3 attendees with the following free/busy status:
+
+|**Attendee**|**Free/busy status**|**% Chance of attendance**|
+|:-----|:-----|:-----|
+|Dana | Free | 100% |
+|John | Unknown | 49% |
+|Fanny | Busy | 0% |
+
+Then the confidence of the meeting time suggestion, which is the average chance of attendance, is (100% + 49% + 0%)/3 = 49.66%.
+
+If you specify a **minimumAttendeePercentage** of 80% in a **findMeetingTimes** operation, because 49.66% < 80%, the operation will not suggest this time in the response.
 
 ## Example
 
@@ -61,9 +89,10 @@ The following example shows how to find time to meet at a pre-determined locatio
 - **locationConstraint**
 - **timeConstraint**
 - **meetingDuration**
-- **returnSuggestionHints**
+- **returnSuggestionReasons**
+- **minimumAttendeePercentage**
 
-By setting the **returnSuggestionHints** parameter, you also get an explanation in the **suggestionHint** property for each suggestion, if **findMeetingTimes** returns any suggestion.
+By setting the **returnSuggestionReasons** parameter, you also get an explanation in the **suggestionReason** property for each suggestion, if **findMeetingTimes** returns any suggestion.
 
 Notice that the request specifies time in the PST time zone, and the response returns meeting time suggestions in UTC, by default. You can use the `Prefer: outlook.timezone` request 
 header to specify PST as well for the time values in the response.
@@ -76,14 +105,22 @@ Here is the example request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/findMeetingTimes
-
+Content-type: application/json
 
 { 
   "attendees": [ 
     { 
       "type": "required",  
       "emailAddress": { 
-        "address": "alexd@contoso.onmicrosoft.com" 
+        "name": "Fanny Downs",
+        "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
+      } 
+    },
+    { 
+      "type": "optional",  
+      "emailAddress": { 
+        "name": "Dana Swope",
+        "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
       } 
     } 
   ],  
@@ -92,6 +129,7 @@ POST https://graph.microsoft.com/beta/me/findMeetingTimes
     "suggestLocation": "false",  
     "locations": [ 
       { 
+        "resolveAvailability": "false",
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -100,20 +138,19 @@ POST https://graph.microsoft.com/beta/me/findMeetingTimes
     "timeslots": [ 
       { 
         "start": { 
-          "date": "2016-06-20",  
-          "time": "7:00:00",  
+          "dateTime": "2016-10-20T07:00:00",  
           "timeZone": "Pacific Standard Time" 
         },  
         "end": { 
-          "date": "2016-06-20",  
-          "time": "17:00:00",  
+          "dateTime": "2016-10-20T17:00:00",  
           "timeZone": "Pacific Standard Time" 
         } 
       } 
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionHints": "true"
+  "returnSuggestionReasons": "true",
+  "minimumAttendeePercentage": "60"
 }
 ```
 
@@ -122,7 +159,7 @@ Here is an example response. Note: The response object shown here may be truncat
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.meetingTimeCandidatesResult",
+  "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
 } -->
 ```http
@@ -131,18 +168,16 @@ Content-type: application/json
 
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.meetingTimeCandidatesResult",
-   "meetingTimeSlots":[
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
+   "meetingTimeSuggestions":[
       {
          "meetingTimeSlot":{
             "start":{
-               "date":"2016-06-20",
-               "time":"15:00:00.0000000",
+               "dateTime":"2016-10-20T15:00:00.0000000",
                "timeZone":"UTC"
             },
             "end":{
-               "date":"2016-06-20",
-               "time":"17:00:00.0000000",
+               "dateTime":"2016-10-20T17:00:00.0000000",
                "timeZone":"UTC"
             }
          },
@@ -153,7 +188,18 @@ Content-type: application/json
                "attendee":{
                   "type":"required",
                   "emailAddress":{
-                     "address":"alexd@contoso.onmicrosoft.com"
+                    "name": "Fanny Downs",
+                    "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
+                  }
+               },
+               "availability":"free"
+            },
+            {
+               "attendee":{
+                  "type":"required",
+                  "emailAddress":{
+                    "name": "Dana Swope",
+                    "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
                   }
                },
                "availability":"free"
@@ -164,18 +210,16 @@ Content-type: application/json
                "displayName":"Conf room Hood"
             }
          ],
-         "suggestionHint":"Suggested because it is one of the nearest times when all attendees are available."
+         "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available."
       },
       {
          "meetingTimeSlot":{
             "start":{
-               "date":"2016-06-20",
-               "time":"17:00:00.0000000",
+               "dateTime":"2016-10-20T17:00:00.0000000",
                "timeZone":"UTC"
             },
             "end":{
-               "date":"2016-06-20",
-               "time":"19:00:00.0000000",
+               "dateTime":"2016-10-20T19:00:00.0000000",
                "timeZone":"UTC"
             }
          },
@@ -186,10 +230,21 @@ Content-type: application/json
                "attendee":{
                   "type":"required",
                   "emailAddress":{
-                     "address":"alexd@contoso.onmicrosoft.com"
+                    "name": "Fanny Downs",
+                    "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
                   }
                },
                "availability":"free"
+            },
+            {
+               "attendee":{
+                  "type":"required",
+                  "emailAddress":{
+                    "name": "Dana Swope",
+                    "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
+                  }
+               },
+               "availability":"unknown"
             }
          ],
          "locations":[
@@ -197,10 +252,10 @@ Content-type: application/json
                "displayName":"Conf room Hood"
             }
          ],
-         "suggestionHint":"Suggested because it is one of the nearest times when all attendees are available."
+         "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available."
       }
    ],
-   "emptySuggestionsHint":""
+   "emptySuggestionsReason":""
 }
 ```
 

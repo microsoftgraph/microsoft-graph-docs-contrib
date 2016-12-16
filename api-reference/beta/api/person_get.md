@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API: *People.Read*; *User.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/people/<id>
-GET /users/<id>/people/<id>
+GET /me/people/{id}
+GET /users/{id}/people/{id}
 ```
 ## Optional query parameters
 |Name|Value|Description|

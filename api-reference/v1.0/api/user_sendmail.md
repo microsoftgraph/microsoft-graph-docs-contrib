@@ -1,6 +1,6 @@
-# user: sendMail
+# Send mail
 
-Send the message specified in the request body on the fly. You can optionally save the message in the Sent Items folder.
+Send the message specified in the request body. You can optionally save the message in the Sent Items folder.
 
 You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API: *Mail.Send*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/sendMail
+POST /users/{id | userPrincipalName}/sendMail
 ```
 ## Request headers
 | Header       | Value |

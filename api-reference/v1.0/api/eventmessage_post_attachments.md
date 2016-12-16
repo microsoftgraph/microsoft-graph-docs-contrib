@@ -1,4 +1,4 @@
-# Create Attachment
+# Add attachment
 
 Use this API to create a new Attachment.
 ## Prerequisites
@@ -6,8 +6,8 @@ The following **scopes** are required to execute this API:  _Mail.ReadWrite_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/attachments
-POST /users/<id | userPrincipalName>/messages/<id>/attachments
+POST /me/messages/{id}/attachments
+POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "create_file_attachment_from_eventmessage"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/attachments
+POST https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 Content-type: application/json
 Content-length: 142
 
@@ -65,7 +65,7 @@ HTTP/1.1 201 Created
   "name": "create_item_attachment_from_eventmessage"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/<id>/attachments
+POST https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 Content-type: application/json
 Content-length: 100
 

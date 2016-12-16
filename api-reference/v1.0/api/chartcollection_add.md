@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts
+POST /workbook/worksheets(<id|name>)/charts/add
 
 ```
 ## Request headers
@@ -36,14 +36,14 @@ Here is an example of the request.
   "name": "chartcollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts/add
 Content-type: application/json
 Content-length: 94
 
 {
-  "type": "type-value",
-  "sourceData": "sourceData-value",
-  "seriesBy": "seriesBy-value"
+  "type": "ColumnStacked",
+  "sourceData": "A1:B1",
+  "seriesBy": "Auto"
 }
 ```
 

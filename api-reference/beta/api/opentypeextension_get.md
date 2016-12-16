@@ -29,36 +29,36 @@ getting the extension from:
 To get a specific extension in a known resource instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/<Id>/extensions/<extensionId>
-GET /users/<Id|userPrincipalName>/messages/<Id>/extensions/<extensionId>
-GET /me/mailFolders/<Id>/messages/<Id>/extensions/<extensionId>
+GET /me/messages/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /me/mailFolders/{Id}/messages/{Id}/extensions/{extensionId}
 
-GET /me/events/<Id>/extensions/<extensionId>
-GET /users/<Id|userPrincipalName>/events/<Id>/extensions/<extensionId>
+GET /me/events/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
 
-GET /me/contacts/<Id>/extensions/<extensionId>
-GET /users/<Id|userPrincipalName>/contacts/<Id>/extensions/<extensionId>
+GET /me/contacts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 
-GET /groups/<Id>/events/<Id>/extensions/<extensionId>
+GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 
-GET /groups/<Id>/threads/<Id>/posts/<Id>/extensions/<extensionId>
-GET /groups/<Id>/conversations/<Id>/threads/<Id>/posts/<Id>/extensions/<extensionId>
+GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/conversations/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
 ```
 
 To get a known resource instance expanded with an extension that matches a filter on the **id** property:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/<Id>?$expand=extensions($filter=id eq '<extensionId>')
-GET /users/<Id|userPrincipalName>/messages/<Id>?$expand=extensions($filter=id eq '<extensionId>')
-GET /me/mailFolders/<Id>/messages/<Id>?$expand=extensions($filter=id eq '<extensionId>')
+GET /me/messages/{Id}?$expand=extensions($filter=id eq '<extensionId>')
+GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '<extensionId>')
+GET /me/mailFolders/{Id}/messages/{Id}?$expand=extensions($filter=id eq '<extensionId>')
 
-GET /me/events/<Id>?$expand=extensions($filter=id eq '<extensionId>')
-GET /users/<Id|userPrincipalName>/events/<Id>?$expand=extensions($filter=id eq '<extensionId>')
+GET /me/events/{Id}?$expand=extensions($filter=id eq '<extensionId>')
+GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '<extensionId>')
 
-GET /me/contacts/<Id>?$expand=extensions($filter=id eq '<extensionId>')
-GET /users/<Id|userPrincipalName>/contacts/<Id>?$expand=extensions($filter=id eq '<extensionId>')
+GET /me/contacts/{Id}?$expand=extensions($filter=id eq '<extensionId>')
+GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '<extensionId>')
 
-GET /groups/<Id>/events/<Id>?$expand=extensions($filter=id eq '<extensionId>')
+GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '<extensionId>')
 ```
 
 To filter for resource instances that contain an extension matching a filter on the **id** property, and get these instances expanded 
@@ -66,16 +66,16 @@ with the extension:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
-GET /users/<Id|userPrincipalName>/messages?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
-GET /me/mailFolders/<Id>/messages?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
+GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
+GET /me/mailFolders/{Id}/messages?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
 
 GET /me/events?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
-GET /users/<Id|userPrincipalName>/events?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
+GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
 
 GET /me/contacts?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
-GET /users/<Id|userPrincipalName>/contacts?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
+GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
 
-GET /groups/<Id>/events?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
+GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '<extensionId>')&$expand=Extensions($filter=id eq '<extensionId>')
 ```
 
 

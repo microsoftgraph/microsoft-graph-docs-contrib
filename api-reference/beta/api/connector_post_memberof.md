@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectors/<id>/memberOf
+POST /connectors/{id}/memberOf
 
 ```
 ## Request headers
@@ -29,12 +29,12 @@ Here is an example of the request.
   "name": "create_connectorgroup_from_connector"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectors/<id>/memberOf
+POST https://graph.microsoft.com/{ver}/connectors/{id}/memberOf
 Content-type: application/json
 Content-length: 99
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/connectorGroups/<id>"
+  "@odata.id": "https://graph.microsoft.com/{ver}/connectorGroups/{id}"
 }
 ```
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/events/<id>/extensions/<id>
-GET /groups/<id>/events/<id>/extensions/<id>
-GET /users/<id | userPrincipalName>/contacts/<id>/extensions/<id>
+GET /users/{id | userPrincipalName}/events/{id}/extensions/{id}
+GET /groups/{id}/events/{id}/extensions/{id}
+GET /users/{id | userPrincipalName}/contacts/{id}/extensions/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_extension"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/events/<id>/extensions/<id>
+GET https://graph.microsoft.com/beta/me/events/{id}/extensions/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

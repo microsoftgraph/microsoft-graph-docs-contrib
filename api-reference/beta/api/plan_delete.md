@@ -9,7 +9,7 @@ Group.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /plans/<id>
+DELETE /plans/{id}
 
 ```
 ## Request headers
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "delete_plan"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/plans/<id>
+DELETE https://graph.microsoft.com/beta/plans/{id}
 If-Match: W/"JzEtMDAwMDAwMDAwMDAwMDAwOC8yMDE1LTEwLTIyVDE4OjExOjU2LjExMzU1NDYrMDA6MDAn"
 ```
 ##### Response

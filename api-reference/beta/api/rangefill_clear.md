@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "rangefill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/range/format/fill/clear
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/fill/clear
 ```
 
 ##### Response

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<id | userPrincipalName>/events/<id>/extensions/<id>
-DELETE /groups/<id>/events/<id>/extensions/<id>
-DELETE /users/<id | userPrincipalName>/contacts/<id>/extensions/<id>
+DELETE /users/{id | userPrincipalName}/events/{id}/extensions/{id}
+DELETE /groups/{id}/events/{id}/extensions/{id}
+DELETE /users/{id | userPrincipalName}/contacts/{id}/extensions/{id}
 
 ```
 ## Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_extension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/events/<id>/extensions/<id>
+DELETE https://graph.microsoft.com/beta/me/events/{id}/extensions/{id}
 ```
 ##### Response
 Here is an example of the response. 

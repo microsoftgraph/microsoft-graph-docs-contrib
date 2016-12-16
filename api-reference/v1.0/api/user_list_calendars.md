@@ -10,19 +10,19 @@ One of the following **scopes** is required to execute this API:
 All the user's calendars.
 ```http
 GET /me/calendars
-GET /users/<id | userPrincipalName>/calendars
+GET /users/{id | userPrincipalName}/calendars
 ```
 
 The user's calendars in the default [calendarGroup](../resources/calendarGroup.md).
 ```http
 GET /me/calendargroups/{calendar_group_id}/calendars
-GET /users/<id | userPrincipalName>/calendarGroup/calendars
+GET /users/{id | userPrincipalName}/calendarGroup/calendars
 ```
 
 The user's calendars in a specific [calendarGroup](../resources/calendarGroup.md).
 ```http
 GET /me/calendarGroups/{calendar_group_id}/calendars
-GET /users/<id | userPrincipalName>/calendarGroups/{calendar_group_id}/calendars
+GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 ```
 
 ## Optional query parameters
@@ -31,7 +31,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Accept  | application/json|
+| Content-Type   | application/json | 
 
 ## Request body
 Do not supply a request body for this method.
@@ -64,8 +64,7 @@ Content-length: 147
   "value": [
     {
       "name": "name-value",
-      "color": {
-      },
+      "color": "auto",
       "changeKey": "changeKey-value",
       "id": "id-value"
     }

@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /impossibleTravelRiskEvents/<id>
+GET /impossibleTravelRiskEvents/{id}
 ```
 ## Request headers
 | Name      |Description|

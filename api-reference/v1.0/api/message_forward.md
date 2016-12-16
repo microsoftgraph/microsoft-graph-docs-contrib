@@ -8,10 +8,10 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/forward
-POST /users/<id | userPrincipalName>/messages/<id>/forward
-POST /me/mailFolders/<id>/messages/<id>/forward
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/forward
+POST /me/messages/{id}/forward
+POST /users/{id | userPrincipalName}/messages/{id}/forward
+POST /me/mailFolders/{id}/messages/{id}/forward
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "message_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/<id>/forward
+POST https://graph.microsoft.com/v1.0/me/messages/{id}/forward
 Content-type: application/json
 Content-length: 166
 

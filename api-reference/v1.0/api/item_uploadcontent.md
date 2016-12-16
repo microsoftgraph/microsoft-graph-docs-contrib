@@ -1,8 +1,9 @@
 # Upload or replace the contents of a driveItem
 
-The simple upload API allows you to provide the contents of a new file or update
-the contents of an existing file in a single API call. This method only supports
-files up to 4MB in size.
+The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
+This method only supports files up to 4MB in size.
+
+To upload large files see [Upload large files with an upload session](item_createUploadSession.md).
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -15,7 +16,7 @@ One of the following **scopes** is required to execute this API:
 PUT /me/drive/items/{parent-id}:/{filename}:/content
 PUT /me/drive/root:/{parent-path}/{filename}:/content
 PUT /me/drive/items/{parent-id}/children/{filename}/content
-PUT /groups/<id>/drive/items/<parent-id>/children/<filename>/content
+PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
 ```
 
 ## Request body

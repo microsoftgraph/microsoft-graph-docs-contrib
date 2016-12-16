@@ -9,7 +9,7 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /connectorGroups/<id>
+DELETE /connectorGroups/{id}
 ```
 ## Request headers
 | Name       | Description|
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_connectorgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/{ver}/connectorGroups/<id>
+DELETE https://graph.microsoft.com/{ver}/connectorGroups/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

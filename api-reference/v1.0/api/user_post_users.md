@@ -79,7 +79,7 @@ Content-type: application/json
     "officeLocation": null,
     "preferredLanguage": null,
     "surname": null,
-    "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com"
+    "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
 

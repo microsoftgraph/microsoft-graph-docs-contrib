@@ -1,4 +1,4 @@
-# Create Attachment
+# Add attachment
 
 Use this API to add an [attachment](../resources/attachment.md) to a message. 
 
@@ -14,19 +14,19 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 Attachments for a [message](../resources/message.md) in a user's mailbox.
 ```http
-POST /me/messages/<id>/attachments
-POST /users/<id | userPrincipalName>/messages/<id>/attachments
+POST /me/messages/{id}/attachments
+POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
 Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.
 ```http
-POST /me/mailFolders/<id>/messages/<id>/attachments
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments
+POST /me/mailFolders/{id}/messages/{id}/attachments
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
 Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
 example below shows one level of nesting, but a message can be located in a child of a child and so on.
 ```http
-POST /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
-POST /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
+POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
+POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "create_file_attachment_from_message"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/<id>/attachments
+POST https://graph.microsoft.com/beta/me/messages/{id}/attachments
 Content-type: application/json
 Content-length: 142
 
@@ -75,7 +75,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "lastModifiedDateTime": "datetime-value",
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,
@@ -94,7 +94,7 @@ Here is an example of the request.
 }-->
 
 ```
-POST https://graph.microsoft.com/beta/me/messages/<id>/attachments
+POST https://graph.microsoft.com/beta/me/messages/{id}/attachments
 Content-type: application/json
 Content-length: 100
 
@@ -118,7 +118,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "lastModifiedDateTime": "datetime-value",
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,
@@ -134,7 +134,8 @@ Here is an example of a request that adds a reference attachment to an existing 
 The attachment points to a folder on OneDrive.
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_message"
+  "name": "create_reference_attachment_from_message",
+  "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
 ```
@@ -156,7 +157,8 @@ Content-length: 319
 Here is an example of a full response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
 ```http
 HTTP 201 Created
