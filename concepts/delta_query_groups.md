@@ -11,7 +11,7 @@ Tracking group changes is a round of one or more GET requests with the **delta**
 request much like the way you [list groups](../api-reference/beta/api/group_list.md), except that you include the following:
 
 - The **delta** function.
-- A [state token](./delta_query_overview.md#state-tokens) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
+- A [state token](./delta_query_overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
 
 ## Example
 

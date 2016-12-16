@@ -1,6 +1,6 @@
 # group: delta
 
-[Delta query](../../../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to groups, perform a request using the *delta* function. See [Using Delta Query](../../../concepts/delta_query_overview.md#using-delta-query) for details.
+[Delta query](../../../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to groups, perform a request using the *delta* function. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ If successful, this method returns `200, OK` response code and [group](../resour
 - If a deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource.
 
 See:
-- [Using Delta Query](../../../concepts/delta_query_overview.md#using-delta-query) for more details
+- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details
 - [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for an example requests.
     
 ### Example
