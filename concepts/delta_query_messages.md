@@ -91,6 +91,7 @@ In this example, the specified folder is being synchronized for the first time, 
 This round will return all the messages in that folder.
 
 The first request specifies the following:
+
 - A `$select` parameter to return the **Subject** and **Sender** properties for each message in the response.
 - The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 messages at a time.
 
