@@ -1,6 +1,6 @@
 # List messages
 
-Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).
+Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
@@ -21,6 +21,9 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.
+
+The default page size for this request is 10 messages.
+
 ## Example
 ##### Request
 Here is an example of the request.
