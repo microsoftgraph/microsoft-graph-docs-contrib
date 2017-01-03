@@ -1,6 +1,6 @@
 # List messages
 
-Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
+Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
 
 In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
 
@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 *Mail.Read; Mail.ReadWrite*
 ## HTTP request
 
-To get all the messages in the user's mailbox:
+To get the messages in the user's mailbox:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,9 +42,12 @@ the signed-in user.
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.
+
+The default page size for this request is 10 messages. 
+
 ## Example
 ##### Request 1
-The first example gets all the  messages in the signed-in user's mailbox.
+The first example gets the top 10 messages in the signed-in user's mailbox.
 <!-- {
   "blockType": "request",
   "name": "get_messages"
