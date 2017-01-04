@@ -5,7 +5,11 @@ Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that h
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
+  * Files.Read.All
+  * Files.ReadWrite.All
+
+**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite scopes, some properties may be missing.
+Additionally, without one of the  **All** scopes, shared items returned from this API will not be accessible.
 
 ## HTTP request
 
