@@ -7,8 +7,6 @@ If a sharing link of the specified type already exists for the app, the existing
 
 DriveItem resources inherit permissions from their ancestors.
 
-For OneDrive for Business and SharePoint document libraries, sharing links are only available on files. folders cannot be shared with a sharing link.
-
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -156,7 +154,6 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
 * Links are visible in the sharing permissions for the item and can be removed by an owner of the item.
 * Links always point to the current version of a item unless the item is checked out (SharePoint only).
-* For SharePoint and OneDrive for Business (drives with a **driveType** of  `business` or `documentLibrary`), links can only be created for driveItems with a non-null `file` file. 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
