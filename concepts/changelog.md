@@ -4,17 +4,17 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## December 2016
 
-### Intune APIs
-
-**Change type**|**Endpoint**|**Description**|
-|:-------------|:-----------|:--------------|
-|Addition|Beta|Added resources and method APIs for Microsoft Intune. This is a large set of resources and methods to support the public preview of Intune on Azure Portal. For information about the Intune service, see the [Intune documentation](https://go.microsoft.com/fwlink/?linkid=836405). For information about the Intuen resources and APIs, see [Working with Intune in Microsoft Graph](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview).|
-
 ### Excel APIs
 
 **Change type**|**Endpoint**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|v1.0|Added workbookPivotTable resource, refresh and refreshAll action on pivotTables, workbookRangeView resource, visibleView action on the filtered range to return workbookRangeView to the user, get rows collection and range resource off of visibleView, columnsAfter, columnsBefore, resizedRange, rowsAbove, and rowsBelow functions off of range resource, and new table properties.|
+
+### Intune APIs
+
+**Change type**|**Endpoint**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Added resources and method APIs for Microsoft Intune. This is a large set of resources and methods to support the public preview of Intune on Azure Portal. For information about the Intune service, see the [Intune documentation](https://go.microsoft.com/fwlink/?linkid=836405). For information about the Intune resources and APIs, see [Working with Intune in Microsoft Graph](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview).|
 
 ## October 2016
 
