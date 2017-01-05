@@ -30,7 +30,7 @@ Here is an example of how you can determine whether an application is installed 
 
 3. Take the ID from the application and determine the installation state for the application (and therefore user):
 
-  https://graph.microsoft.com/{version}/deviceAppManagement/mobileApps/{id}/deviceStatuses/.
+  https://graph.microsoft.com/{version}/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
 ## Sections of the Intune Graph API documentation
 
