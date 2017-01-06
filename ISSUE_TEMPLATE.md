@@ -1,11 +1,9 @@
+Thank you for helping us to improve the Microsoft Graph documentation.
 
-
-Thanks for reporting this issue with the documentation to us.
-
-Note to help us to better serve your needs:
-- Have a question/need help/experiencing? We encourage you to log your question/issue on **Stack Overflow** with the tag [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) or [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph)
-- If you have a feature suggestion, please use our [**User Voice**](https://officespdev.uservoice.com/) and vote for your suggestions there.
-- If you have an issue with the documentation, please fill out the form/template below or feel free to make the suggested edit and submit a Pull Request. A Graph team member will then review and merge with the official documentation.
+So that we can better assist you, please note the following:
+- If you have a question, need help, or are experiencing an issue with your code, we encourage you to post your question or issue on **Stack Overflow**. Tag your question with [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) or [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph).
+- If you have a feature suggestion, please post your idea on our [**User Voice**](https://officespdev.uservoice.com/) page, and vote for your suggestions there.
+- If you have an issue with the documentation, please provide the information here, or feel free to submit a pull pequest with your suggested changes. We will review your contributions and update our documentation accordingly.
 
 ------------
  
