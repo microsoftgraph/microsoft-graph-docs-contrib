@@ -254,3 +254,21 @@ Added support for dynamic group membership through the public preview API, inclu
 |Addition|v1.0|Added _inferenceClassification_ resource type.|
 |Addition|Beta|Added _timeZone_ to _mailboxsettings_.|
 |Addition|Beta|Added API _findMeetingTimesOLD _to _user_.|
+
+## April 2016
+
+### General
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0 and Beta|Added support for honoring _Accept-Encoding:gzip_.|
+|Addition|v1.0|Added support for cast segment in expand path. For example, 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'.|
+|Addition|Beta|Added support for PATCH request against structural properties. For example: 'PATCH /me/mailboxSettings'.|
+|Addition|Beta|Azure Active Directory is now used as a fallback for /beta/users/id/photo requests when Outlook is unable to service the request, for example when the user has no mailbox license or the tenant does not have an Exchange Online subscription. NOTE: this fallback is available for both GET and PATCH.|
+|Addition|Beta|Added support for cast segment in expand path. For example: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'.|
+
+### OneDrive
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Fix|v1.0|Fixed the issue that OneDrive createLink requests failing with 500 and "Unsupported extension property type."|
