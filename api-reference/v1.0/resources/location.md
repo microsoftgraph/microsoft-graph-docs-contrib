@@ -8,6 +8,7 @@ Represents location information of an event.
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicalAddress.md) |The street address of the location. |
 | displayName  | String | The name associated with the location.                       |
+| locationEmailAddress | String | Optional email address of the location.              |
 
 
 
@@ -23,7 +24,8 @@ Represents location information of an event.
 ```json
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "displayName": "string"
+  "displayName": "string",
+  "locationEmailAddress": "string"
 }
 
 ```

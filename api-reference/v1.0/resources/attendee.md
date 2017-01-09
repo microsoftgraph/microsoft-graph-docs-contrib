@@ -1,11 +1,15 @@
 # attendee resource type
 
 An event attendee.
+
+Derived from [attendeeBase](attendeebase.md).
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `Required`, `Optional`, `Resource`.|
+|emailAddress|[emailAddress](emailAddress.md)|Includes the name and SMTP address of the attendee.|
 
 
 ## JSON representation
@@ -23,7 +27,8 @@ Here is a JSON representation of the resource
 ```json
 {
   "status": {"@odata.type": "microsoft.graph.responseStatus"},
-  "type": "String"
+  "type": "String",
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
 }
 
 ```
