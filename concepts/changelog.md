@@ -272,3 +272,199 @@ Added support for dynamic group membership through the public preview API, inclu
 |**Change type**|**Endpoint**|**Description**|
 |:--------------|:-----------|:--------------|
 |Fix|v1.0|Fixed the issue that OneDrive createLink requests failing with 500 and "Unsupported extension property type."|
+
+## March 2016
+
+### Calendar
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties.|
+|Addition|Beta|Added _suggestionHint_ property to _meetingTimeCandidate _.|
+|Addition|Beta|Added _locationUri_ property to _location_.|
+|Addition|Beta|Added _type_ and _postOfficeBox_ to _physicalAddress _.|
+|Change|Beta|_findMeetingTimes_ now takes new parameter _ReturnSuggestionHints_.|
+|Change|Beta|_findMeetingTimes_ now returns a collection of _meetingTimeCandidate_.|
+
+### Drive
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0 and beta|Added _recent_ function to list a set of items that have been recently used by the signed in user. This list includes items that are in the user's drive as well as items they have access tofrom other drives. Example: GET /me/drive/recent.|
+|Addition|v1.0 and beta|Added _sharedWithMe_ function to list the set of items that are shared with the current user. Example: GET /me/drive/sharedWithMe.|
+
+### DriveItem
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0 and beta|Added _remoteItem_ type to provide a link to an item in another drive.|
+|Addition|v1.0 and beta|Added _sharingInvitation_ type to provide details of any associated sharing invitation for this permission.|
+|Addition|v1.0 and beta|Added _delta_ function to track changes to items in a drive. Example: GET /me/drive/items/{item-id}/delta|
+|Addition|v1.0 and beta|Added _copy_ that creates a copy of a _driveItem_ (including any children), under a new parent or with a new name. Example: POST /me/drive/items/{item-id}/copy.|
+|Addition|v1.0 and beta|_conflictBehavior_ instance attributes is now applicable to _driveItem_.|
+|Addition|Beta|Added _invite_ function to send a sharing invitation to an existing item. A sharing invitation creates a unique sharing link and sends an email to the recipient of the invitation that includes the sharing link. Example: POST /drive/items/{item-id}/invite.
+
+### Event
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added new property _onlineMeetingUrl_ and new method _cancel_.|
+
+### Event messages
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added _startDateTime_, _endDateTime_, _location_, _type_, _recurrence_, _isOutOfDate_, _conversationIndex_, _unsubscribe_, _unsubscribeData_, _unsubscribeEnabled_ and _flag_ properties to _eventmessage_ object.|
+|Addition|Beta|Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties.|
+|Addition|Beta|Added new method _unsubscribe_.|
+
+### Excel
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|We are adding new Excel REST APIs that let you read and modify data in an Excel workbook. It is now possible to build smart apps that allows users to get value out of the content stored in an Excel workbook by providing insights into the data. Take advantage of analytical powers of Excel, create tables and charts and extract visually appealing chart image - all from within your app. For details, see [Working with Excel in Microsoft Graph](http://graph.microsoft.io/en-us/docs/api-reference/beta/resources/excel).|
+
+### General
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0 and beta|Improved error message when resolving tenant alias and rejected JWT (AAD) tokens.|
+|Addition|v1.0 and beta|The location of the authorization service endpoint is now returned in the _www-authenticate_ header when a request is received with an empty bearer token.|
+Addition|v1.0 and beta|The ability to filter on an entity’s id property is now fixed. Example: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Previously, any POST requests to service actions and functions require prefixing the action or function name with the microsoft.graph prefix. For example: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>The prefix is now no longer required (although it can still be specified). So the following would now also work: POST https://graph.microsoft.com/v1.0/me/getMemberGroups.|
+|Change|Beta|Cleaned up subscription property names.|
+|Addition|Beta|We’ve added the capability to discover (through _directorySettingTemplates_) and override the default behavior (by creating a _setting_ from the template) for entities and their associated functionality. Initially this only template provided is to control behaviors on Office groups.|
+
+### Mail folder
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added _wellKnownName_ and _userConfigurations_ properties.|
+|Addition|Beta|Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties|
+
+### Messages
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0|Added _mobilePhone_ property.|
+|Addition|v1.0 and beta|Added _internetMessageId_ property. The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt).|
+|Change|Beta|Renamed _mobilePhone1_ property to _mobilePhone_.|
+|Change|Beta|_createReply_ and _createReplyAll _take new parameter _Message_ and _comment_.|
+|Change|Beta|_createForward _takes new parameter _Message _, _ToRecipients_ and _comment_.|
+|Change|Beta|_reply_, _replyAll_and _forward_ take new parameter _Message_.|
+
+### Permission
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0 and beta|Added _sharingInvitation_ property to provide details of any associated sharing invitation for this permission.|
+
+### Person
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added new properties _birthday_, _personNotes_, _isFavorite_, _phones_, _permission_, _postalAddresses_,_websites_,_yomiCompany_, _department_, _profession_, _mailboxType_ and _personType_.|
+|Addition|Beta|Added new enum types _physicalAddressType_, _webSite _, _phone_ and _webSiteType_.|
+
+### Reference attachment
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added new properties _sourceUrl_, _providerType_, _thumbnailUrl_, _previewUrl_, _permission_ and _isFolder_.|
+|Addition|Beta|Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties.|
+|Addition|Beta|Added new enum types _referenceAttachmentProvider _and _referenceAttachmentPermission_.|
+
+### Subscriptions
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0|Webhooks are now GA on V1.0 endpoint via the _/Subscriptions_ resource. Create, Read, Renew and Delete subscriptions to receive notifications on data from Outlook and Office 365 group conversations.|
+
+### User
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added _mailboxSettings_ property and corresponding types.|
+
+## February 2016
+
+## DriveItem
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0 and beta|New _remoteItem_ property on driveItem for Microsoft accounts.|
+
+## General
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Change|v1.0 and beta|-_/me/drive_ now works for both Microsoft accounts and Work and School accounts.|
+|Change|v1.0 and beta|Drive requests for accounts whose OneDrive storage was provisioned on demand work more reliably and work in more scenarios where tenant default SharePoint sites use non-standard names.|
+|Deletion|Beta|Removed various unimplemented types from the beta schema to more closely match the 1.0 schema.|
+
+### Subscriptions
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|notificationUrl validation on subscription creation. For details, see[Microsoft Graph WebHooks Update - January 2016](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016).|
+|Addition|Beta|Subscription entities can now be deleted: DELETE https://graph.microsoft.com/beta/subscriptions/|
+
+## Users
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Change|v1.0 and beta|_displayName_ is now returned for Microsoft accounts.|
+
+## January 2016
+
+### Contacts
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|v1.0|Added mobilePhone property to personal contacts entity-set.|
+
+### directoryObjects
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Fix|v1.0 and beta|Fixed calling actions that are bound to directoryObjects, which were failing with the following error: “The return type from the operation is not possible with the given entity set.”. This applies to the following actions: _microsoft.graph.checkMemberObjects_, _microsoft.graph.getMemberObjects_, _microsoft.graph.checkMemberGroups_, _microsoft.graph.assignLicense_, _microsoft.graph.changePassword_.|
+
+## December 2015
+
+### Contacts
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added mobilePhone property to personal contacts entity-set.|
+
+### General
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Fix|v1.0 and beta|Fixed requests using $filter expressions that specified the same property more than once, which were failing with the following 500 error: “An item with the same key has already been added”.|
+|Fix|v1.0 and beta|Fixed case insensitivity for action parameter names and values.|
+|Fix|v1.0 and beta|Fixed request processing for payloads containing null values for some embedded complex properties, which were failing with a null reference exception.|
+|Addition|v1.0 and beta|Added support for complex type property sorting and filtering.|
+|Addition|v1.0 and beta|Added authorization_uri property in the www-authenticate header on a 401 response. This uri can be used to start the token acquisition flow.|
+|Addition|v1.0 and beta|Improved error messages across users and groups.|
+
+### Groups
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Fix|v1.0 and beta|Fixed calling the following group actions: _microsoft.graph.addFavorite_, _microsoft.graph.removeFavorite_ and _microsoft.graph.resetUnseenCount_.|
+
+### Messages
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Addition|Beta|Added eventMessageRequest subtype of eventMessage and startDateTime, endDateTime, location, type, recurrence and isOutOfDate properties to eventMessage type.|
+
+### Users
+
+|**Change type**|**Endpoint**|**Description**|
+|:--------------|:-----------|:--------------|
+|Fix|v1.0 and beta|Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe|
+|Fix|v1.0 and beta|Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: “Could not find a property named ‘businessPhones’ on type ‘Microsoft.OutlookServices.Reminder’“.|
+|Fix|v1.0 and beta|Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error.|
+
+
