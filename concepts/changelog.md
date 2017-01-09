@@ -2,7 +2,25 @@
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
+## January 2017
+
+### Outlook calendar
+
+**Change type**|**Endpoint**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0|New action [findMeetingTimes](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_findmeetingtimes) for the [user](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource.|
+|Addition|v1.0|New complex type [attendeeBase](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendeebase) which consists of a type property for the attendee type.|
+|Addition|v1.0|New complex types:<br/>[attendeeAvailability](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendeeavailability)<br/>[locationConstraint](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/locationconstraint) <br/>[locationConstraintItem](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/locationconstraintitem)<br/>[meetingTimeSuggestion](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/meetingtimesuggestion)<br/>[meetingTimeSuggestionsResult](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/meetingtimesuggestionsresult)<br/>[timeConstraint](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/timeconstraint)<br/>[timeSlot](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/timeslot)|
+|Change|v1.0|The [attendee](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendee) complex type is now derived from attendeeBase, which in turn is derived from [recipient](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/recipient). Including the inherited properties, it consists of the same **status**, **type** and **emailAddress** properties as before.|
+|Addition|Beta|hexColor added to the [calendar](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/calendar) resource.|
+
 ## December 2016
+
+### Delta query
+
+**Change type**|**Endpoint**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|A new delta function add to the following entities to perform [delta query](https://graph.microsoft.io/en-us/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_message)<br/>[Get incremental changes to users (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_users)|
 
 ### Excel APIs
 
