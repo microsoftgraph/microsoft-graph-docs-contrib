@@ -18,9 +18,9 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ### Delta query
 
-|**Change type**|**Endpoint**|**Description**|
-|:-------------|:-----------|:--------------|
-|Addition|Beta|A new delta function add to the following entities to perform [delta query](https://graph.microsoft.io/en-us/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_message)<br/>[Get incremental changes to users (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_users)|
+|**Endpoint**|**Description**|
+|:-----------|:--------------|
+|Beta|A new delta function add to the following entities to perform [delta query](https://graph.microsoft.io/en-us/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_message)<br/>[Get incremental changes to users (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_users)|
 
 ### Excel APIs
 
