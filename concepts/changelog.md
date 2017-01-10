@@ -405,13 +405,13 @@ Addition|v1.0 and beta|The ability to filter on an entity’s id property is now
 
 ## February 2016
 
-## DriveItem
+### DriveItem
 
 |**Change type**|**Endpoint**|**Description**|
 |:--------------|:-----------|:--------------|
 |Addition|v1.0 and beta|New _remoteItem_ property on driveItem for Microsoft accounts.|
 
-## General
+### General
 
 |**Change type**|**Endpoint**|**Description**|
 |:--------------|:-----------|:--------------|
@@ -426,7 +426,7 @@ Addition|v1.0 and beta|The ability to filter on an entity’s id property is now
 |Addition|Beta|notificationUrl validation on subscription creation. For details, see[Microsoft Graph WebHooks Update - January 2016](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016).|
 |Addition|Beta|Subscription entities can now be deleted: DELETE https://graph.microsoft.com/beta/subscriptions/|
 
-## Users
+### Users
 
 |**Change type**|**Endpoint**|**Description**|
 |:--------------|:-----------|:--------------|
