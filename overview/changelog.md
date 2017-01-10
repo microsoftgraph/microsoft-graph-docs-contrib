@@ -46,7 +46,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ### Invitation APIs
 
-**Change type**|**Endpoint**|**Description**|
+|**Change type**|**Endpoint**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|Beta|Added invitedUserType property to the invitation entity type, that defines the type of user (“Guest” or “Member”) that is invited.|
 |Deletion|Beta|We will be removing the invitedToGroups property from the invitation entity-type on 11/11/2016. This means that you will no longer be able to add an invited user to a group using this API. Instead, use the [add member API](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/group_post_members) to add a user to a group.|
