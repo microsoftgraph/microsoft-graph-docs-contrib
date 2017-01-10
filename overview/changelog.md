@@ -6,7 +6,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ### Outlook calendar
 
-**Change type**|**Endpoint**|**Description**|
+|**Change type**|**Endpoint**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|v1.0|New action [findMeetingTimes](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_findmeetingtimes) for the [user](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource.|
 |Addition|v1.0|New complex type [attendeeBase](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendeebase) which consists of a type property for the attendee type.|
@@ -18,19 +18,19 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ### Delta query
 
-**Change type**|**Endpoint**|**Description**|
+|**Change type**|**Endpoint**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|Beta|A new delta function add to the following entities to perform [delta query](https://graph.microsoft.io/en-us/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_message)<br/>[Get incremental changes to users (preview)](https://graph.microsoft.io/en-us/docs/concepts/delta_query_users)|
 
 ### Excel APIs
 
-**Change type**|**Endpoint**|**Description**|
+|**Change type**|**Endpoint**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|v1.0|Added workbookPivotTable resource, refresh and refreshAll action on pivotTables, workbookRangeView resource, visibleView action on the filtered range to return workbookRangeView to the user, get rows collection and range resource off of visibleView, columnsAfter, columnsBefore, resizedRange, rowsAbove, and rowsBelow functions off of range resource, and new table properties.|
 
 ### Intune APIs
 
-**Change type**|**Endpoint**|**Description**|
+|**Change type**|**Endpoint**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|Beta|Added resources and method APIs for Microsoft Intune. This is a large set of resources and methods to support the public preview of Intune on Azure Portal. For information about the Intune service, see the [Intune documentation](https://go.microsoft.com/fwlink/?linkid=836405). For information about the Intune resources and APIs, see [Working with Intune in Microsoft Graph](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview).|
 
@@ -38,7 +38,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ### Authorization provider
 
-**Change type**|**Endpoint**|**Description**|
+|**Change type**|**Endpoint**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|v1.0 and beta|The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon & long running processes in business scenarios](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-client-creds/).|
 |Addition|v1.0 and beta|The v2.0 auth endpoint now supports [permission scopes that require administrator's consent](http://graph.microsoft.io/en-us/docs/authorization/permission_scopes#permission-scope-details), via the [admin consent endpoint](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes).|
@@ -405,13 +405,13 @@ Addition|v1.0 and beta|The ability to filter on an entity’s id property is now
 
 ## February 2016
 
-## DriveItem
+### DriveItem
 
 |**Change type**|**Endpoint**|**Description**|
 |:--------------|:-----------|:--------------|
 |Addition|v1.0 and beta|New _remoteItem_ property on driveItem for Microsoft accounts.|
 
-## General
+### General
 
 |**Change type**|**Endpoint**|**Description**|
 |:--------------|:-----------|:--------------|
@@ -426,7 +426,7 @@ Addition|v1.0 and beta|The ability to filter on an entity’s id property is now
 |Addition|Beta|notificationUrl validation on subscription creation. For details, see[Microsoft Graph WebHooks Update - January 2016](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016).|
 |Addition|Beta|Subscription entities can now be deleted: DELETE https://graph.microsoft.com/beta/subscriptions/|
 
-## Users
+### Users
 
 |**Change type**|**Endpoint**|**Description**|
 |:--------------|:-----------|:--------------|
