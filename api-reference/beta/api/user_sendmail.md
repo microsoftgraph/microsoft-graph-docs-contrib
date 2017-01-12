@@ -1,6 +1,6 @@
 # Send mail
 
-Send the message specified in the request body. You can optionally save the message in the Sent Items folder.
+Send the message specified in the request body. The message is saved in the Sent Items folder by default.
 
 In the same **sendMail** action call, you can:
 
@@ -27,7 +27,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |Message|[Message](../resources/message.md)|The message to send. Required.|
-|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Optional. Default is true.|
+|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.|
 
 If you want to use **mention** to call out another user in the new message:
 
@@ -49,32 +49,31 @@ Here is an example of the request to create and send a message on the fly.
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 1944
+Content-length: 512
 
 {
-  "Message": {
-    "subject": "subject-value",
+  "message": {
+    "subject": "Meet for lunch?",
     "body": {
-      "contentType": "",
-      "content": "content-value"
+      "contentType": "Text",
+      "content": "The new cafeteria is open."
     },
     "toRecipients": [
       {
         "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
+          "address": "fannyd@contoso.onmicrosoft.com"
         }
       }
     ],
-    "attachments": [
+    "ccRecipients": [
       {
-        "@odata.type": "#microsoft.graph.fileAttachment",
-        "name": "menu.txt",
-        "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+        "emailAddress": {
+          "address": "danas@contoso.onmicrosoft.com"
+        }
       }
-    ]
+    ],
   },
-  "SaveToSentItems": true
+  "saveToSentItems": "false"
 }
 ```
 
