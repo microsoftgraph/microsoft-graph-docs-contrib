@@ -1,4 +1,4 @@
-# Working with Intune in Microsoft Graph  
+# Working with Intune in Microsoft Graph  > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.  To understand what's available in Intune, start here: [Introduction to Microsoft Intune](https://docs.microsoft.com/en-us/intune/understand-explore/introduction-to-microsoft-intune).   
 
@@ -22,15 +22,15 @@ Here is an example of how you can determine whether an application is installed 
 
 1. Get from Azure Active Directory a list of devices registered to a user: 
 
-    https://graph.microsoft.com/{version}/{user}/ownedDevices 
+    https://graph.microsoft.com/beta/{user}/ownedDevices 
 
 2. Then view the list of applications for your tenant: 
 
-    https://graph.microsoft.com/{version}/deviceAppManagement/mobileApps  
+    https://graph.microsoft.com/beta/deviceAppManagement/mobileApps  
 
 3. Take the ID from the application and determine the installation state for the application (and therefore user):
 
-    https://graph.microsoft.com/{version}/deviceAppManagement/mobileApps/{id}/deviceStatuses/
+    https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
 ## Sections of the Intune Graph API documentation
 
