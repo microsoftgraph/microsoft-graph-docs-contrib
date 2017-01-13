@@ -1,41 +1,2 @@
 # Manage apps using Microsoft Intune> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-
-Intune offers solutions that enable IT Pros to manage mobile apps, such as:
-
-* Publishing mobile apps to employees
-* Configuring apps
-* Controlling how corporate data is used and shared in mobile apps
-* Removing corporate data from mobile apps
-* Updating mobile apps
-* Reporting on mobile app inventory
-* Tracking mobile app usage
-
-Managing apps involves tasks such as:
-##  Add
-You can use Intune to deploy apps to a wide variety of devices that you manage. The first step in app deployment is to add the apps, which you want to manage and deploy, to Intune. While you can work with many different app types, the basic procedures are the same.
-For more details, see [How to add and deploy apps](https://go.microsoft.com/fwlink/?linkid=836754).
-## Deploy
-You deploy apps to get the apps on the devices that you manage.  After adding apps, you then deploy it to users. For more details, see [How to add and deploy apps](https://go.microsoft.com/fwlink/?linkid=836754).
-
-##  Configure
-
-Use app configuration policies in Microsoft Intune to supply settings that might be required when users run an app. For example, an app might require users to specify:
-
-* A custom port number.
-* Language settings.
-* Security settings.
-* Branding settings such as a * company logo.
-
-For more details, see [How to use app configuration policies](https://go.microsoft.com/fwlink/?linkid=836757).
-
-## Protect
-Microsoft Intune app protection policies help protect your company data and prevent data loss.
-
-You can use Intune app protection policies to help protect your company’s data. Because Intune app protection policies can be used independent of any mobile-device management (MDM) solution, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department.
-
-For more details see [What is Microsoft Intune app protection policy?](https://go.microsoft.com/fwlink/?linkid=837538).
-## Retire
-You can wipe apps and data from devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
-
-
-For more details, see [What is app management](https://go.microsoft.com/fwlink/?linkid=836753).
+Intune offers solutions that enable IT Pros to manage mobile apps, such as:* Publishing mobile apps to employees* Configuring apps* Controlling how corporate data is used and shared in mobile apps* Removing corporate data from mobile apps* Updating mobile apps* Reporting on mobile app inventory* Tracking mobile app usageTo manage mobile apps in Intune, the following Graph resources are available:- [Android LOB app](intune_apps_androidlobapp.md)- [Android minimum operating system](intune_apps_androidminimumoperatingsystem.md)- [Android store app](intune_apps_androidstoreapp.md)- [App configuration setting](intune_apps_appconfigurationsettingitem.md)- [Apple VPP token](intune_apps_applevolumepurchaseprogramtoken.md)- [Device application management](intune_apps_deviceappmanagement.md)- [File encryption info](intune_apps_fileencryptioninfo.md)- [iOS device type](intune_apps_iosdevicetype.md)- [iOS LOB application](intune_apps_ioslobapp.md)- [iOS minimum operating system](intune_apps_iosminimumoperatingsystem.md)- [iOS mobile app configuration](intune_apps_iosmobileappconfiguration.md)- [iOS store application](intune_apps_iosstoreapp.md)- [iOS VPP application](intune_apps_iosvppapp.md)- [Android store app](intune_apps_managedandroidstoreapp.md)- [Application](intune_apps_managedapp.md)- [Mobile app configuration](intune_apps_manageddevicemobileappconfiguration.md)- [Mobile app configuration device status](intune_apps_manageddevicemobileappconfigurationdevicestatus.md)- [Mobile app configuration user status](intune_apps_manageddevicemobileappconfigurationuserstatus.md)- [iOS store application](intune_apps_managediosstoreapp.md)- [MDM application group assignment](intune_apps_mdmappconfiggroupassignment.md)- [MIME content](intune_apps_mimecontent.md)- [Mobile app](intune_apps_mobileapp.md)- [Mobile app category](intune_apps_mobileappcategory.md)- [Mobile app content](intune_apps_mobileappcontent.md)- [Mobile app content file](intune_apps_mobileappcontentfile.md)- [Mobile app group assignment](intune_apps_mobileappgroupassignment.md)- [Mobile app install status](intune_apps_mobileappinstallstatus.md)- [Mobile app install summary](intune_apps_mobileappinstallsummary.md)- [Mobile app VPP group assignment](intune_apps_mobileappvppgroupassignment.md)- [Mobile LOB app](intune_apps_mobilelobapp.md)- [User app installation status](intune_apps_userappinstallstatus.md)- [VPP licensing type](intune_apps_vpplicensingtype.md)- [Wep app](intune_apps_webapp.md)- [Windows Phone 8_1 Store app](intune_apps_windowsphone81storeapp.md)- [Windows Store app](intune_apps_windowsstoreapp.md)- [Windows Store for Business App](intune_apps_windowsstoreforbusinessapp.md)
