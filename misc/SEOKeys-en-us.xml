@@ -4,6 +4,7 @@
     <Item text="Query parameters" url="/en-us/overview/query_parameters" SEOKeyword="Query parameters, Microsoft Graph API, Overview" SEODescription="Microsoft Graph is OData v4 compliant, provides information about supported OData query parameters" />   
     <Item text="Errors" url="/en-us/overview/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
     <Item text="Known issues" url="/en-us/overview/release_notes" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="New features for developers that are available in the November 2015 release of the Microsoft Graph API, as well as any known issues." />
+    <Item text="Changelog" url="/en-us/overview/changelog" />
   </Item>
   <Item text="Get started" url="/en-us/get-started/get-started">
     <Item text="ASP.NET MVC" url="/en-us/get-started/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
@@ -70,7 +71,8 @@
         <Item text="Create calendar group" url="/en-us/api-reference/v1.0/api/user_post_calendargroups" SEOKeyword="Create CalendarGroup, Microsoft Graph API, Users API" SEODescription="Use this API to create a new CalendarGroup." />
         <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Reminder view" url="/en-us/api-reference/v1.0/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
-      </Item>
+		<Item text="Find meeting times" url="/en-us/api-reference/v1.0/api/user_findmeetingtimes" />
+	  </Item>
       <Item text="Contacts" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Contacts API">
         <Item text="List contacts" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
         <Item text="Create contact" url="/en-us/api-reference/v1.0/api/user_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Contact." />
@@ -290,7 +292,8 @@
         <Item text="List events" url="/en-us/api-reference/v1.0/api/calendar_list_events" SEOKeyword="List events, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create Event" url="/en-us/api-reference/v1.0/api/calendar_post_events" SEOKeyword="Create Event, Microsoft Graph API, calendar API" SEODescription="Use this API to create a new Event." />
         <Item text="Reminder view" url="/en-us/api-reference/v1.0/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="Reminder view" />
-      </Item>
+		<Item text="Find meeting times" url="/en-us/api-reference/v1.0/api/user_findmeetingtimes" />
+	  </Item>
       <Item text="Calendar view" url="/en-us/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects.">
         <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Reminder view" url="/en-us/api-reference/v1.0/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="Reminder view" />
@@ -574,7 +577,7 @@
     </Item>
     <Item text="Planner tasks" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
       <Item text="Task" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Create task" url="/en-us/api-reference/beta/api/user_post_tasks" SEOKeyword="Create task, Microsoft Graph API, user API" SEODescription="Use this API to create a new task." />
+        <Item text="Create task" url="/en-us/api-reference/beta/api/task_post_tasks" SEOKeyword="Create task, Microsoft Graph API, user API" SEODescription="Use this API to create a new task." />
         <Item text="Get task" url="/en-us/api-reference/beta/api/task_get" SEOKeyword="Get task, Microsoft Graph API, tasks" SEODescription="" />
         <Item text="Update task" url="/en-us/api-reference/beta/api/task_update" SEOKeyword="Update task, Microsoft Graph API, tasks" SEODescription="" />
         <Item text="Delete task" url="/en-us/api-reference/beta/api/task_delete" SEOKeyword="Delete task, Microsoft Graph API, tasks" SEODescription="" />
