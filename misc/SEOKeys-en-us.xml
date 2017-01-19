@@ -612,7 +612,6 @@
       </Item>
       <Item text="Plan taskboard" url="/en-us/api-reference/beta/resources/plantaskboard" SEOKeyword="plantaskboard API, Microsoft Graph API, plantaskboard API" SEODescription="">
         <Item text="Get planTaskBoard" url="/en-us/api-reference/beta/api/plantaskboard_get" SEOKeyword="Get planTaskBoard, Microsoft Graph API, plantaskboard API" SEODescription="Retrieve the properties and relationships of plantaskboard object." />
-        <Item text="Delete planTaskBoard" url="/en-us/api-reference/beta/api/plantaskboard_delete" SEOKeyword="Delete planTaskBoard, Microsoft Graph API, plantaskboard API" SEODescription="Delete planTaskBoard." />
       </Item>
     </Item>
     <Item text="OneNote" url="/en-us/api-reference/beta/resources/note" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
