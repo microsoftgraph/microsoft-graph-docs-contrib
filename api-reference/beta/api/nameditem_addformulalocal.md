@@ -1,4 +1,4 @@
-# Add Named Item
+# Add Named Item FormulaLocal
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Prerequisites
