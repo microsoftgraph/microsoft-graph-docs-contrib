@@ -4,94 +4,104 @@ This article describes the tasks required to get an access token from Azure AD a
 
 ![Office 365 Python Connect sample screenshot](./images/web-screenshot.png)
 
-> **Note** This walkthrough and the sample that it's based on use the Azure AD endpoint. Check back soon for updated versions that use the Azure AD v2.0 endpoint.
-
 ##  Prerequisites
 
-  * An Office 365 for business account. You can sign up for [an Office 365 Developer subscription](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account) that includes the resources that you need to start building Office 365 apps.
-  * The [Microsoft Graph Connect Sample for Python](https://github.com/microsoftgraph/python3-connect-rest-sample)
+* [Python 3.5.2](https://www.python.org/downloads/)
+* [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
+* [Flask-Script 0.4](http://flask-script.readthedocs.io/en/latest/)
+* A [Microsoft account](https://www.outlook.com/) or an [Office 365 for business account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
+* The [Microsoft Graph Connect Sample for Python](https://github.com/microsoftgraph/python3-connect-rest-sample)
 
 ## Register the application in Azure Active Directory
 
 First, you need to register your application and set permissions to use Microsoft Graph. This lets users sign into the application with work or school accounts.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
-3. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
-4. Click on **App registrations** and choose **Add**.
-5. Enter a friendly name for the application, for example 'MSGraphConnectPython' and select 'Web app/API' as the **Application Type**. For the Sign-on URL, enter ‘http://127.0.0.1:8000/connect/get_token/’. Click on **Create** to create the application.
-6. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
-7. Find the Application ID value and copy it to the clipboard.
-8. Configure Permissions for your application:
-9. In the **Settings** menu, choose the **Required permissions** section, click on **Add**, then **Select an API**, and select **Microsoft Graph**.
-10. Then, click on Select Permissions and select **Sign in and read user profile** and **Send mail as a user**. Click **Select** and then **Done**.
-11. In the **Settings** menu, choose the **Keys** section. Enter a description and select a duration for the key. Click **Save**.
-12. **Important**: Copy the key value. You won't be able to access this value again once you leave this pane. You will use this value as your app secret.
+## Register the application
 
-## Redirect the browser to the sign in page
+Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app for authentication.
 
-Your app needs to redirect the browser to the sign in page to begin the OAuth flow and get an authorization code. 
+1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
-In the Connect sample, the following code (located in [*connect/auth_helper.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/auth_helper.py)) builds the URL that the app needs to redirect the user to and is piped to the view where it can be used for redirection. 
+2. Choose **Add an app**.
+
+3. Enter a name for the app, and choose **Create application**.
+
+	The registration page displays, listing the properties of your app.
+
+4. Copy the application ID. This is the unique identifier for your app.
+
+5. Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog.
+
+	You'll use the application ID and app secret to configure the app.
+
+6. Under **Platforms**, choose **Add platform** > **Web**.
+
+7. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:5000/login/authorized* as the Redirect URI.
+
+	The **Allow Implicit Flow** option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the **id_token**) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
+
+	The redirect URI *http://localhost:5000/login/authorized* is the value that the OmniAuth middleware is configured to use once it has processed the authentication request.
+
+8. Choose **Save**.
+
+## Create OAuth client
+
+Your app needs to register an instance of the Flask-OAuth client that you'll use to start the OAuth flow and get an access token. 
+
+In the Connect sample, the following code (located in [*connect/__init__.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/__init__.py)) registers the client with all of the required values, including the application id (client_id), application secret (client_secret) and the authorization URL used to authenticate the user.
 
 ```python
-# This function creates the signin URL that the app will
-# direct the user to in order to sign in to Office 365 and
-# give the app consent.
-def get_signin_url(redirect_uri):
-  # Build the query parameters for the signin URL.
-  params = { 'client_id': client_id,
-             'redirect_uri': redirect_uri,
-             'response_type': 'code'
-           }
-
-  authorize_url = '{0}{1}'.format(authority, '/common/oauth2/authorize?{0}')
-  signin_url = authorize_url.format(urlencode(params))
-  return signin_url
+	# Put your consumer key and consumer secret into a config file
+	# and don't check it into github!!
+	microsoft = oauth.remote_app(
+		'microsoft',
+		consumer_key=client_id,
+		consumer_secret=client_secret,
+		request_token_params={'scope': 'User.Read Mail.Send'},
+		base_url='https://graph.microsoft.com/v1.0/',
+		request_token_url=None,
+		access_token_method='POST',
+		access_token_url='https://login.microsoftonline.com/common/oauth2/v2.0/token',
+		authorize_url='https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
+	)
 ```
 
 <!--<a name="authCode"></a>-->
 ## Receive an authorization code in your reply URL page
 
-After the user signs in, the browser is redirected to your reply URL, the ```get_token``` function in [*connect/views.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/views.py), with an authorization code appended to the query string as the ```code``` variable. 
-
-The Connect sample gets the code from the query string so it can then exchange it for an access token.
+After the user signs in, the browser is redirected to your reply URL, the ```login/authorized``` route in [*connect/__init__.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/__init__.py), with an access token in the response. The sample stores the token as a session variable.
 
 ```python
-auth_code = request.GET['code']
+	@app.route('/login/authorized')
+	def authorized():
+		response = microsoft.authorized_response()
+	
+		if response is None:
+			return "Access Denied: Reason=%s\nError=%s" % (
+				request.args['error'], 
+				request.args['error_description']
+			)
+	
+		# Check response for state
+		if str(session['state']) != str(request.args['state']):
+			raise Exception('State has been messed with, end authentication')
+		# Remove state session variable to prevent reuse.
+		session['state'] = ""
+			
+		# Okay to store this in a local variable, encrypt if it's going to client
+		# machine or database. Treat as a password. 
+		session['microsoft_token'] = (response['access_token'], '')
+		# Store the token in another session variable for easy access
+		session['access_token'] = response['access_token']
+		meResponse = microsoft.get('me')
+		meData = json.dumps(meResponse.data)
+		me = json.loads(meData)
+		userName = me['displayName']
+		userEmailAddress = me['userPrincipalName']
+		session['alias'] = userName
+		session['userEmailAddress'] = userEmailAddress
+		return redirect('main')
 ```
-
-<!--<a name="accessToken"></a>-->
-## Request an access token from the token issuing endpoint
-
-Once you have the authorization code, you can use it along the client ID, key, and reply URL values that you got from Azure Active Directory to request an access token. 
-
-> **Note** The request must also specify a resource that you are trying to consume. In the case of Microsoft Graph, the resource value is `https://graph.microsoft.com`.
-
-The Connect sample requests a token in the ```get_token_from_code``` function in the [*connect/auth_helper.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/auth_helper.py) file.
-
-```python
-# This function passes the authorization code to the token
-# issuing endpoint, gets the token, and then returns it.
-def get_token_from_code(auth_code, redirect_uri):
-  # Build the post form for the token request
-  post_data = { 'grant_type': 'authorization_code',
-                'code': auth_code,
-                'redirect_uri': redirect_uri,
-                'client_id': client_id,
-                'client_secret': client_secret,
-                'resource': 'https://graph.microsoft.com'
-              }
-              
-  r = requests.post(token_url, data = post_data)
-  
-  try:
-    return r.json()
-  except:
-    return 'Error retrieving token: {0} - {1}'.format(r.status_code, r.text)
-```
-
-> **Note** The response provides more information than just the access token. For example, your app can get a refresh token to request new access tokens without having the user explicitly sign in again.
 
 <!--<a name="request"></a>-->
 ## Use the access token in a request to the Microsoft Graph API
@@ -101,13 +111,13 @@ With an access token, your app can make authenticated requests to the Microsoft 
 The Connect sample sends an email using the ```me/microsoft.graph.sendMail``` endpoint in the Microsoft Graph API. The code is in the ```call_sendMail_endpoint``` function in the [*connect/graph_service.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/graph_service.py) file. This is the code that shows how to append the access code to the Authorization header.
 
 ```python
-# Set request headers.
-headers = { 
-  'User-Agent' : 'python_tutorial/1.0',
-  'Authorization' : 'Bearer {0}'.format(access_token),
-  'Accept' : 'application/json',
-  'Content-Type' : 'application/json'
-}
+	# Set request headers.
+	headers = { 
+	  'User-Agent' : 'python_tutorial/1.0',
+	  'Authorization' : 'Bearer {0}'.format(access_token),
+	  'Accept' : 'application/json',
+	  'Content-Type' : 'application/json'
+	}
 ```
 
 > **Note** The request must also send a **Content-Type** header with a value accepted by the Graph API, for example, `application/json`.
