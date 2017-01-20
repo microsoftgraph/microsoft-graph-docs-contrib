@@ -1065,7 +1065,7 @@
         <Item text="Get directoryRole" url="/en-us/api-reference/beta/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
         <Item text="List members" url="/en-us/api-reference/beta/api/directoryrole_list_members" SEOKeyword="List members, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="Add member" url="/en-us/api-reference/beta/api/directoryrole_post_members" SEOKeyword="Create member, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new member." />
-        <Item text="List scoped administrators" url="/en-us/api-reference/beta/api/directoryrole_list_scopedadministrators " SEOKeyword="List scoped administrators, Microsoft Graph API, Directory API" SEODescription="Use this API to list scoped administrators." />
+        <Item text="List scoped administrators" url="/en-us/api-reference/beta/api/directoryrole_list_scopedadministrators" SEOKeyword="List scoped administrators, Microsoft Graph API, Directory API" SEODescription="Use this API to list scoped administrators." />
 
       </Item>
       <Item text="Directory role template" url="/en-us/api-reference/beta/resources/directoryroletemplate" SEOKeyword="directoryroletemplate API, Microsoft Graph API, directoryroletemplate API" SEODescription="Represents a directory role template. A directory role template specifies the property values of a directory role (DirectoryRole). There is an associated directory role template object for each of the directory roles that may be activated in a tenant.">
