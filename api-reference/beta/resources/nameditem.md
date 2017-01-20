@@ -45,9 +45,12 @@ Here is a JSON representation of the resource.
 ```json
 {
   "name": "string",
+  "comment": "string",
+  "scope": "string",
   "type": "string",
   "value": {"@odata.type": "microsoft.graph.range"},
   "visible": true
+  
 }
 
 ```
