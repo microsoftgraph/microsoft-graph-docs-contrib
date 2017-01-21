@@ -71,7 +71,7 @@ Content-length: 109
   "scope": "Workbook",
   "type": "String",
   "visible": true,
-  "value" " "=A10+B10"
+  "value": "=A10+B10"
 }
 ```
 
