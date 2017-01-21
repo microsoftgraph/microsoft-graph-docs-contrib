@@ -1,11 +1,13 @@
 # List calendarView
 
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
-from the user's primary calendar `(../me/calendarview)` or from a specified calendar.
+from the default calendar `(../me/calendarview)` of a user or group, or some other calendar of the user's.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
-*Calendars.Read*
+
+* Events in a user's calendar: _Calendars.Read_ or _Calendars.ReadWrite_
+* Events in a group calendar: _Group.Read.All_ or _Group.ReadWrite.All_
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
