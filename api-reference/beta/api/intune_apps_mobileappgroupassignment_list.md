@@ -1,4 +1,7 @@
-﻿# List mobileAppGroupAssignments> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List mobileAppGroupAssignments
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -11,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /mobileAppGroupAssignments/
-GET /deviceAppManagement/mobileApps/{id}/groupAssignments/
+GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/
 ```
 
 ### Request headers

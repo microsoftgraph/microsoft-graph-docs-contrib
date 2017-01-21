@@ -1,4 +1,7 @@
-﻿# Delete windowsPhone81CompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Delete windowsPhone81CompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Deletes a [windowsPhone81CompliancePolicy](../resources/intune_deviceconfig_windowsphone81compliancepolicy.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/deviceCompliancePolicies/{id}
-DELETE /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-DELETE /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+DELETE /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/
+DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/
 ```
 
 ### Request headers
@@ -31,7 +34,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ##### Response

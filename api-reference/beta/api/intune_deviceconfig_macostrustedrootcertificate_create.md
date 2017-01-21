@@ -1,4 +1,7 @@
-﻿# Create macOSTrustedRootCertificate> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create macOSTrustedRootCertificate
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/
-POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSEnterpriseWiFiConfiguration/rootCertificateForServerValidation/
+POST /deviceManagement/deviceConfigurations/
 ```
 
 ### Request headers
@@ -44,7 +46,7 @@ If successful, this method returns a `201 Created` response code and a [macOSTru
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
 Content-length: 337
 

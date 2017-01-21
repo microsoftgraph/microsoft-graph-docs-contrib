@@ -1,4 +1,7 @@
-﻿# Update windowsPhone81TrustedRootCertificate> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update windowsPhone81TrustedRootCertificate
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [windowsPhone81TrustedRootCertificate](../resources/intune_deviceconfig_windowsphone81trustedrootcertificate.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//microsoft.graph.windowsPhone81SCEPCertificateProfile/rootCertificate/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//microsoft.graph.windowsPhone81SCEPCertificateProfile/rootCertificate/
 ```
 
 ### Request headers
@@ -43,7 +46,7 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//microsoft.graph.windowsPhone81SCEPCertificateProfile/rootCertificate/
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//microsoft.graph.windowsPhone81SCEPCertificateProfile/rootCertificate/
 Content-type: application/json
 Content-length: 271
 

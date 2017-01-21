@@ -1,4 +1,7 @@
-﻿# List directoryObjects> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List directoryObjects
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/{id}/targetedSecurityGroups/
-GET /managedAppPolicies/{id}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/
-GET /managedAppPolicies/{id}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/
+GET /managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/
+GET /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/
+GET /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/
 ```
 
 ### Request headers
@@ -31,7 +34,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/{id}/targetedSecurityGroups/
+GET https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/
 ```
 
 ##### Response

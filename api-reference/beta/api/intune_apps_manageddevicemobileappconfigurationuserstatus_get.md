@@ -1,4 +1,7 @@
-﻿# Get managedDeviceMobileAppConfigurationUserStatus> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get managedDeviceMobileAppConfigurationUserStatus
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /iosMobileAppConfigurations/{id}/userStatuses/{id}
+GET /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/userStatuses/{managedDeviceMobileAppConfigurationUserStatusId}
 ```
 
 ### Optional query parameters
@@ -31,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [managedDeviceMo
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/iosMobileAppConfigurations/{id}/userStatuses/{id}
+GET https://graph.microsoft.com/beta/iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/userStatuses/{managedDeviceMobileAppConfigurationUserStatusId}
 ```
 
 ##### Response
@@ -39,14 +42,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 257
+Content-Length: 388
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus",
     "id": "44960944-0944-4496-4409-964444099644",
+    "userDisplayName": "User Display Name value",
+    "devicesCount": 12,
     "status": "notApplicable",
-    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+    "userPrincipalName": "User Principal Name value"
   }
 }
 ```

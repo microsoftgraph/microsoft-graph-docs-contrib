@@ -1,4 +1,7 @@
-﻿# Update managedAppPolicyDeploymentSummary> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update managedAppPolicyDeploymentSummary
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedAppPolicies/{id}/deploymentSummary/
+PATCH /managedAppPolicies/{managedAppPoliciesId}/deploymentSummary/
 ```
 
 ### Request headers
@@ -41,13 +44,13 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppPolicies/{id}/deploymentSummary/
+PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/deploymentSummary/
 Content-type: application/json
 Content-length: 467
 
 {
   "displayName": "Display Name value",
-  "configurationDeployedUserCount": 30,
+  "configurationDeployedUserCount": 14,
   "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
   "configurationDeploymentSummaryPerApp": [
     {
@@ -55,7 +58,7 @@ Content-length: 467
       "mobileAppIdentifier": {
         "@odata.type": "microsoft.graph.mobileAppIdentifier"
       },
-      "configurationAppliedUserCount": 29
+      "configurationAppliedUserCount": 13
     }
   ],
   "version": "Version value"
@@ -72,7 +75,7 @@ Content-Length: 588
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
   "displayName": "Display Name value",
-  "configurationDeployedUserCount": 30,
+  "configurationDeployedUserCount": 14,
   "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
   "configurationDeploymentSummaryPerApp": [
     {
@@ -80,7 +83,7 @@ Content-Length: 588
       "mobileAppIdentifier": {
         "@odata.type": "microsoft.graph.mobileAppIdentifier"
       },
-      "configurationAppliedUserCount": 29
+      "configurationAppliedUserCount": 13
     }
   ],
   "id": "61f2f688-f688-61f2-88f6-f26188f6f261",

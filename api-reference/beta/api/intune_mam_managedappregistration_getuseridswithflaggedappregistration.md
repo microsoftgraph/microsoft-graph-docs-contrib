@@ -1,5 +1,8 @@
-﻿# getUserIdsWithFlaggedAppRegistration function> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Read user IDs with flagged app registrations.
+﻿# getUserIdsWithFlaggedAppRegistration function
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -11,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
-GET /users/{id}/managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
+GET /users/{usersId}/managedAppRegistrations//getUserIdsWithFlaggedAppRegistration
 ```
 
 ### Request headers
@@ -44,3 +47,6 @@ Content-Length: 58
   "Get User Ids With Flagged App Registration value"
 ]
 ```
+
+
+

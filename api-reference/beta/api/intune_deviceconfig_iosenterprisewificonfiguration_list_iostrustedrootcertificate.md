@@ -1,4 +1,7 @@
-﻿# List iosTrustedRootCertificates> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List iosTrustedRootCertificates
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Get the iosTrustedRootCertificates from the rootCertificatesForServerValidation navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/teacherRootCertificates/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/studentRootCertificates/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/
 ```
 
 ### Request headers
@@ -29,7 +34,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/teacherRootCertificates/
 ```
 
 ##### Response

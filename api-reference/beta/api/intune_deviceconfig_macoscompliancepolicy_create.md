@@ -1,4 +1,7 @@
-﻿# Create macOSCompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create macOSCompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [macOSCompliancePolicy](../resources/intune_deviceconfig_macoscompliancepolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/{id}
-POST /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-POST /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+POST /deviceManagement/deviceCompliancePolicies/
 ```
 
 ### Request headers
@@ -50,9 +51,9 @@ If successful, this method returns a `201 Created` response code and a [macOSCom
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/
 Content-type: application/json
-Content-length: 485
+Content-length: 481
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -62,10 +63,10 @@ Content-length: 485
   "version": 7,
   "passwordRequired": true,
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric"
 }
 ```
@@ -75,7 +76,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 593
+Content-Length: 589
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -87,10 +88,10 @@ Content-Length: 593
   "version": 7,
   "passwordRequired": true,
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric"
 }
 ```

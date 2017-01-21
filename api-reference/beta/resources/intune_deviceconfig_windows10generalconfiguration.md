@@ -1,4 +1,6 @@
-﻿# windows10GeneralConfiguration resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# windows10GeneralConfiguration resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10GeneralConfiguration resource.
 
@@ -15,6 +17,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_windows10generalconfiguration_list_deviceconfigurationgroupassignment.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
 |[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_windows10generalconfiguration_list_deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Get the deviceConfigurationDeviceStatuses from the deviceStatuses navigation property.|
 |[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_windows10generalconfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
+|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_windows10generalconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 
 ### Properties
 |Property|Type|Description|
@@ -70,7 +73,10 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
 |edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Edge browser.|
 |edgeCookiePolicy|String|Indicates which cookies to block in the Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
+|edgeBlockDeveloperTools|Boolean|Indicates whether or not to block developer tools in the Edge browser.|
 |edgeBlockSendingDoNotTrackHeader|Boolean|Indicates whether or not to Block the user from sending the do not track header.|
+|edgeBlockExtensions|Boolean|Indicates whether or not to block extensions in the Edge browser.|
+|edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.|
 |edgeBlockJavaScript|Boolean|Indicates whether or not to Block the user from using JavaScript.|
 |edgeBlockPasswordManager|Boolean|Indicates whether or not to Block password manager.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
@@ -78,7 +84,20 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.|
 |edgeRequireSmartScreen|Boolean|Indicates whether or not to Require the user to use the smart screen filter.|
 |edgeEnterpriseModeSiteListLocation|String|Indicates the enterprise mode site list location. Could be a local file, local network or http location.|
+|edgeFirstRunUrl|String|The first run URL for when Edge browser is opened for the first time.|
+|edgeHomepageUrls|String collection|The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.|
+|edgeBlockAccessToAboutFlags|Boolean|Indicates whether or not to prevent access to about flags on Edge browser.|
+|smartScreenBlockPromptOverride|Boolean|Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.|
+|smartScreenBlockPromptOverrideForFiles|Boolean|Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files|
+|webRtcBlockLocalhostIpAddress|Boolean|Indicates whether or not user's localhost IP address is displayed while making phone calls using the WebRTC|
 |internetSharingBlocked|Boolean|Indicates whether or not to Block the user from using internet sharing.|
+|settingsBlockAddProvisioningPackage|Boolean|Indicates whether or not to block the user from installing provisioning packages.|
+|settingsBlockRemoveProvisioningPackage|Boolean|Indicates whether or not to block the runtime configuration agent from removing provisioning packages.|
+|settingsBlockChangeSystemTime|Boolean|Indicates whether or not to block the user from changing date and time settings.|
+|settingsBlockEditDeviceName|Boolean|Indicates whether or not to block the user from editing the device name.|
+|settingsBlockChangeRegion|Boolean|Indicates whether or not to block the user from changing the region settings.|
+|settingsBlockChangeLanguage|Boolean|Indicates whether or not to block the user from changing the language settings.|
+|settingsBlockChangePowerSleep|Boolean|Indicates whether or not to block the user from changing power and sleep settings.|
 |locationServicesBlocked|Boolean|Indicates whether or not to Block the user from location services.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to Block action center notifications over lock screen.|
 |microsoftAccountBlocked|Boolean|Indicates whether or not to Block a Microsoft account.|
@@ -104,6 +123,15 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |wiFiBlocked|Boolean|Indicates whether or not to Block the user from using Wi-Fi.|
 |wiFiBlockManualConfiguration|Boolean|Indicates whether or not to Block the user from using Wi-Fi manual configuration.|
 |windowsStoreBlocked|Boolean|Indicates whether or not to Block the user from using the Windows store.|
+|appsAllowTrustedAppsSideloading|String|Indicates whether apps from AppX packages signed with a trusted certificate can be side loaded. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|windowsStoreBlockAutoUpdate|Boolean|Indicates whether or not to block automatic update of apps from Windows Store.|
+|developerUnlockSetting|String|Indicates whether or not to allow developer unlock. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|sharedUserAppDataAllowed|Boolean|Indicates whether or not to block multiple users of the same app to share data.|
+|appsBlockWindowsStoreOriginatedApps|Boolean|Indicates whether or not to disable the launch of all apps from Windows Store that came pre-installed or were downloaded.|
+|windowsStoreEnablePrivateStoreOnly|Boolean|Indicates whether or not to enable Private Store Only.|
+|storageRestrictAppDataToSystemVolume|Boolean|Indicates whether application data is restricted to the system drive.|
+|storageRestrictAppInstallToSystemVolume|Boolean|Indicates whether the installation of applications is restricted to the system drive.|
+|gameDvrBlocked|Boolean|Indicates whether or not to block DVR and broadcasting.|
 
 ### Relationships
 |Relationship|Type|Description|
@@ -111,6 +139,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ### JSON Representation
 Here is a JSON representation of the resource.
@@ -180,7 +209,10 @@ Here is a JSON representation of the resource.
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "String",
+  "edgeBlockDeveloperTools": true,
   "edgeBlockSendingDoNotTrackHeader": true,
+  "edgeBlockExtensions": true,
+  "edgeBlockInPrivateBrowsing": true,
   "edgeBlockJavaScript": true,
   "edgeBlockPasswordManager": true,
   "edgeBlockPopups": true,
@@ -188,7 +220,22 @@ Here is a JSON representation of the resource.
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "String",
+  "edgeFirstRunUrl": "String",
+  "edgeHomepageUrls": [
+    "String"
+  ],
+  "edgeBlockAccessToAboutFlags": true,
+  "smartScreenBlockPromptOverride": true,
+  "smartScreenBlockPromptOverrideForFiles": true,
+  "webRtcBlockLocalhostIpAddress": true,
   "internetSharingBlocked": true,
+  "settingsBlockAddProvisioningPackage": true,
+  "settingsBlockRemoveProvisioningPackage": true,
+  "settingsBlockChangeSystemTime": true,
+  "settingsBlockEditDeviceName": true,
+  "settingsBlockChangeRegion": true,
+  "settingsBlockChangeLanguage": true,
+  "settingsBlockChangePowerSleep": true,
   "locationServicesBlocked": true,
   "lockScreenBlockActionCenterNotifications": true,
   "microsoftAccountBlocked": true,
@@ -213,7 +260,16 @@ Here is a JSON representation of the resource.
   "wiFiBlockAutomaticConnectHotspots": true,
   "wiFiBlocked": true,
   "wiFiBlockManualConfiguration": true,
-  "windowsStoreBlocked": true
+  "windowsStoreBlocked": true,
+  "appsAllowTrustedAppsSideloading": "String",
+  "windowsStoreBlockAutoUpdate": true,
+  "developerUnlockSetting": "String",
+  "sharedUserAppDataAllowed": true,
+  "appsBlockWindowsStoreOriginatedApps": true,
+  "windowsStoreEnablePrivateStoreOnly": true,
+  "storageRestrictAppDataToSystemVolume": true,
+  "storageRestrictAppInstallToSystemVolume": true,
+  "gameDvrBlocked": true
 }
 ```
 

@@ -1,4 +1,7 @@
-﻿# Update roleDefinition> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update roleDefinition
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [roleDefinition](../resources/intune_rbac_roledefinition.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/roleDefinitions/{id}
-PATCH /deviceManagement/roleDefinitions/{id}/roleAssignments/{id}/roleDefinition/
+PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}
+PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/
 ```
 
 ### Request headers
@@ -41,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated [role
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
 Content-length: 264
 

@@ -1,4 +1,7 @@
-﻿# Update deviceCompliancePolicyGroupAssignment> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update deviceCompliancePolicyGroupAssignment
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceCompliancePolicyGroupAssignment/{id}
-PATCH /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}
+PATCH /deviceCompliancePolicyGroupAssignment/{deviceCompliancePolicyGroupAssignmentId}
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}
 ```
 
 ### Request headers
@@ -38,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceCompliancePolicyGroupAssignment/{id}
+PATCH https://graph.microsoft.com/beta/deviceCompliancePolicyGroupAssignment/{deviceCompliancePolicyGroupAssignmentId}
 Content-type: application/json
 Content-length: 48
 

@@ -1,16 +1,19 @@
-﻿# uploadDepToken action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Upload a new Apple DEP token.
+﻿# uploadDepToken action
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+**TODO: Determine scopes **
 ### HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /organization/{id}/uploadDepToken
+POST /organization/{organizationId}/uploadDepToken
 ```
 
 ### Request headers
@@ -37,7 +40,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{id}/uploadDepToken
+POST https://graph.microsoft.com/beta/organization/{organizationId}/uploadDepToken
 
 Content-type: application/json
 Content-length: 69
@@ -53,3 +56,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+

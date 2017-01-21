@@ -1,4 +1,7 @@
-﻿# Get windows10CertificateProfileBase> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get windows10CertificateProfileBase
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Get the [windows10CertificateProfileBase](../resources/intune_deviceconfig_windows10certificateprofilebase.md) from the identityCertificate navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate/
 ```
 
 ### Optional query parameters
@@ -31,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [windows10Certif
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate/
 ```
 
 ##### Response
@@ -50,11 +53,11 @@ Content-Length: 668
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "renewalThresholdPercentage": 26,
+    "renewalThresholdPercentage": 10,
     "keyStorageProvider": "useTpmKspOtherwiseFail",
     "subjectNameFormat": "commonNameIncludingEmail",
     "subjectAlternativeNameType": "userPrincipalName",
-    "certificateValidityPeriodValue": 30,
+    "certificateValidityPeriodValue": 14,
     "certificateValidityPeriodScale": "months"
   }
 }

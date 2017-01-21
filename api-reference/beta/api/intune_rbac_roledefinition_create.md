@@ -1,4 +1,7 @@
-﻿# Create roleDefinition> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create roleDefinition
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [roleDefinition](../resources/intune_rbac_roledefinition.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/roleDefinitions/{id}
-POST /deviceManagement/roleDefinitions/{id}/roleAssignments/{id}/roleDefinition/
+POST /deviceManagement/roleDefinitions/
 ```
 
 ### Request headers
@@ -41,7 +43,7 @@ If successful, this method returns a `201 Created` response code and a [roleDefi
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/
 Content-type: application/json
 Content-length: 317
 

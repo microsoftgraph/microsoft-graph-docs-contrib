@@ -1,4 +1,7 @@
-﻿# List androidCompliancePolicies> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List androidCompliancePolicies
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1227
+Content-Length: 1166
 
 {
   "value": [
@@ -50,12 +53,11 @@ Content-Length: 1227
       "displayName": "Display Name value",
       "version": 7,
       "passwordRequired": true,
-      "passwordMinimumLength": 21,
+      "passwordMinimumLength": 5,
       "passwordRequiredType": "alphabetic",
-      "passwordMinutesOfInactivityBeforeLock": 37,
-      "passwordExpirationDays": 22,
-      "passwordPreviousPasswordBlockCount": 34,
-      "storageRequireRemovableStorageEncryption": true,
+      "passwordMinutesOfInactivityBeforeLock": 5,
+      "passwordExpirationDays": 6,
+      "passwordPreviousPasswordBlockCount": 2,
       "securityPreventInstallAppsFromUnknownSources": true,
       "securityDisableUsbDebugging": true,
       "requireAppVerify": true,

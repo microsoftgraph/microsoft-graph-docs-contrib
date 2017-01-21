@@ -1,4 +1,7 @@
-﻿# Get managedAppPolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get managedAppPolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/{id}
-GET /managedAppRegistrations/{id}/appliedPolicies/{id}
-GET /managedAppRegistrations/{id}/intendedPolicies/{id}
+GET /managedAppPolicies/{managedAppPoliciesId}
+GET /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{managedAppPolicyId}
+GET /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}
 ```
 
 ### Optional query parameters
@@ -33,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [managedAppPolic
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/{id}
+GET https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}
 ```
 
 ##### Response
@@ -41,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 337
+Content-Length: 336
 
 {
   "value": {
@@ -49,7 +52,7 @@ Content-Length: 337
     "displayName": "Display Name value",
     "description": "Description value",
     "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-    "deployedAppCount": 16,
+    "deployedAppCount": 0,
     "id": "3c7b9675-9675-3c7b-7596-7b3c75967b3c",
     "version": "Version value"
   }

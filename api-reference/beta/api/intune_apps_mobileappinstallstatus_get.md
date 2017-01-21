@@ -1,4 +1,7 @@
-﻿# Get mobileAppInstallStatus> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get mobileAppInstallStatus
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}
-GET /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/deviceStatuses/{id}
+GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
+GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/deviceStatuses/{mobileAppInstallStatusId}
 ```
 
 ### Optional query parameters
@@ -32,7 +35,7 @@ If successful, this method returns a `200 OK` response code and [mobileAppInstal
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
 ```
 
 ##### Response
@@ -49,7 +52,7 @@ Content-Length: 396
     "deviceName": "Device Name value",
     "deviceId": "Device Id value",
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-    "mobileAppInstallStatusValue": 27,
+    "mobileAppInstallStatusValue": 11,
     "errorCode": 9,
     "deviceType": 10,
     "osVersion": "Os Version value"

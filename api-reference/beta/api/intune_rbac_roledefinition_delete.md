@@ -1,4 +1,7 @@
-﻿# Delete roleDefinition> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Delete roleDefinition
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Deletes a [roleDefinition](../resources/intune_rbac_roledefinition.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/roleDefinitions/{id}
-DELETE /deviceManagement/roleDefinitions/{id}/roleAssignments/{id}/roleDefinition/
+DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}
+DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/
 ```
 
 ### Request headers
@@ -30,7 +33,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{id}
+DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}
 ```
 
 ##### Response

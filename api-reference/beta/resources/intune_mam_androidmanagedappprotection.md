@@ -1,4 +1,6 @@
-﻿# androidManagedAppProtection resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# androidManagedAppProtection resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device
 
@@ -74,8 +76,8 @@ Here is a JSON representation of the resource.
   "deployedAppCount": 1024,
   "id": "String (identifier)",
   "version": "String",
-  "periodOfflineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
-  "periodOnlineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeAccessCheck": "String (duration)",
+  "periodOnlineBeforeAccessCheck": "String (duration)",
   "allowedInboundDataTransferSources": "String",
   "allowedOutboundDataTransferDestinations": "String",
   "organizationalCredentialsRequired": true,
@@ -84,7 +86,7 @@ Here is a JSON representation of the resource.
   "deviceComplianceRequired": true,
   "managedBrowserToOpenLinksRequired": true,
   "saveAsBlocked": true,
-  "periodOfflineBeforeWipeIsEnforced": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeWipeIsEnforced": "String (duration)",
   "pinRequired": true,
   "maximumPinRetries": 1024,
   "simplePinBlocked": true,

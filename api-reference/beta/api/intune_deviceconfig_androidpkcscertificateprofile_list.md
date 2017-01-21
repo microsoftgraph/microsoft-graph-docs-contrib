@@ -1,4 +1,7 @@
-﻿# List androidPkcsCertificateProfiles> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List androidPkcsCertificateProfiles
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [androidPkcsCertificateProfile](../resources/intune_deviceconfig_androidpkcscertificateprofile.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -49,10 +52,10 @@ Content-Length: 1075
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "renewalThresholdPercentage": 26,
+      "renewalThresholdPercentage": 10,
       "subjectNameFormat": "commonNameIncludingEmail",
       "subjectAlternativeNameType": "userPrincipalName",
-      "certificateValidityPeriodValue": 30,
+      "certificateValidityPeriodValue": 14,
       "certificateValidityPeriodScale": "months",
       "extendedKeyUsages": [
         {

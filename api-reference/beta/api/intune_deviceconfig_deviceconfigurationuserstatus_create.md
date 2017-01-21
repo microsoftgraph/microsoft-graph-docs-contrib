@@ -1,4 +1,7 @@
-﻿# Create deviceConfigurationUserStatus> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create deviceConfigurationUserStatus
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,12 +13,12 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}/userStatuses/{id}
-POST /deviceManagement/deviceConfigurations/{id}/rootCertificate//userStatuses/{id}
-POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//userStatuses/{id}
-POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//userStatuses/{id}
-POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//userStatuses/{id}
-POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//userStatuses/{id}
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//userStatuses/
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//userStatuses/
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//userStatuses/
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate//userStatuses/
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//userStatuses/
 ```
 
 ### Request headers
@@ -31,8 +34,11 @@ The following table shows the properties that are required when you create a dev
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
+|userDisplayName|String|User name of the DevicePolicyStatus.|
+|devicesCount|Int32|Devices count for that user.|
 |status|String|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
+|userPrincipalName|String|UserPrincipalName.|
 
 
 
@@ -43,14 +49,17 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/userStatuses/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/
 Content-type: application/json
-Content-length: 165
+Content-length: 290
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserStatus",
+  "userDisplayName": "User Display Name value",
+  "devicesCount": 12,
   "status": "notApplicable",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -59,13 +68,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 214
+Content-Length: 339
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserStatus",
   "id": "7e323db2-3db2-7e32-b23d-327eb23d327e",
+  "userDisplayName": "User Display Name value",
+  "devicesCount": 12,
   "status": "notApplicable",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

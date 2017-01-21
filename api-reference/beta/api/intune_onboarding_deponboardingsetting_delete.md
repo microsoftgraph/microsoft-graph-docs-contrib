@@ -1,4 +1,7 @@
-﻿# Delete depOnboardingSetting> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Delete depOnboardingSetting
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Deletes a [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /organization/{id}/depOnboardingSettings/{id}
+DELETE /organization/{organizationId}/depOnboardingSettings/{depOnboardingSettingId}
 ```
 
 ### Request headers
@@ -29,7 +32,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/organization/{id}/depOnboardingSettings/{id}
+DELETE https://graph.microsoft.com/beta/organization/{organizationId}/depOnboardingSettings/{depOnboardingSettingId}
 ```
 
 ##### Response

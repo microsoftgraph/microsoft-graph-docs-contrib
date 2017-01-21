@@ -1,4 +1,7 @@
-﻿# List androidGeneralDeviceConfigurations> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List androidGeneralDeviceConfigurations
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [androidGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2482
+Content-Length: 2479
 
 {
   "value": [
@@ -78,11 +81,11 @@ Content-Length: 2482
       "nfcBlocked": true,
       "passwordBlockFingerprintUnlock": true,
       "passwordBlockTrustAgents": true,
-      "passwordExpirationDays": 22,
-      "passwordMinimumLength": 21,
-      "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-      "passwordPreviousPasswordBlockCount": 34,
-      "passwordSignInFailureCountBeforeFactoryReset": 44,
+      "passwordExpirationDays": 6,
+      "passwordMinimumLength": 5,
+      "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+      "passwordPreviousPasswordBlockCount": 2,
+      "passwordSignInFailureCountBeforeFactoryReset": 12,
       "passwordRequiredType": "alphabetic",
       "passwordRequired": true,
       "powerOffBlocked": true,

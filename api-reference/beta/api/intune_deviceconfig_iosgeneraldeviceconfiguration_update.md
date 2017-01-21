@@ -1,4 +1,7 @@
-﻿# Update iosGeneralDeviceConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update iosGeneralDeviceConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{id}
-PATCH /deviceConfigurationAssignments/{id}/deviceConfiguration/
-PATCH /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
 ### Request headers
@@ -67,7 +70,7 @@ The following table shows the properties that are required when you create a [io
 |diagnosticDataBlockSubmissionModification|Boolean|Indicates whether or not to allow diagnostics submission settings modification when the device is in supervised mode (iOS 9.3.2 and later).|
 |documentsBlockManagedDocumentsInUnmanagedApps|Boolean|Indicates whether or not to block the user from viewing managed documents in unmanaged apps.|
 |documentsBlockUnmanagedDocumentsInManagedApps|Boolean|Indicates whether or not to block the user from viewing unmanaged documents in managed apps.|
-|emailInDomainSuffixes|String collection|Any email address that does not have a suffix that matches any item listed here will be considered out-of-domain.|
+|emailInDomainSuffixes|String collection|An email address lacking a suffix that matches any of these strings will be considered out-of-domain.|
 |enterpriseAppBlockTrust|Boolean|Indicates whether or not to block the user from trusting an enterprise app.|
 |enterpriseAppBlockTrustModification|Boolean|Indicates whether or not to block the user from modifying the enterprise app trust settings.|
 |faceTimeBlocked|Boolean|Indicates whether or not to block the user from using FaceTime.|
@@ -104,13 +107,13 @@ The following table shows the properties that are required when you create a [io
 |kioskModeAllowVoiceOverSettings|Boolean|Indicates whether or not to allow access to the voice over settings while in kiosk mode.|
 |kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode.|
 |kioskModeAllowZoomSettings|Boolean|Indicates whether or not to allow access to the zoom settings while in kiosk mode.|
-|kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Only KioskModeManagedAppId or this can be set (not both).|
+|kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.|
 |kioskModeRequireAssistiveTouch|Boolean|Indicates whether or not to require assistive touch while in kiosk mode.|
 |kioskModeRequireColorInversion|Boolean|Indicates whether or not to require color inversion while in kiosk mode.|
 |kioskModeRequireMonoAudio|Boolean|Indicates whether or not to require mono audio while in kiosk mode.|
 |kioskModeRequireVoiceOver|Boolean|Indicates whether or not to require voice over while in kiosk mode.|
 |kioskModeRequireZoom|Boolean|Indicates whether or not to require zoom while in kiosk mode.|
-|kioskModeManagedAppId|String|Managed app id of the app to use for kiosk mode. Only KioskModeAppStoreUrl or this can be set (not both).|
+|kioskModeManagedAppId|String|Managed app id of the app to use for kiosk mode. If KioskModeManagedAppId is specified then KioskModeAppStoreUrl will be ignored.|
 |lockScreenBlockControlCenter|Boolean|Indicates whether or not to block the user from using control center on the lock screen.|
 |lockScreenBlockNotificationView|Boolean|Indicates whether or not to block the user from using the notification view on the lock screen.|
 |lockScreenBlockPassbook|Boolean|Indicates whether or not to block the user from using passbook when the device is locked.|
@@ -166,9 +169,9 @@ If successful, this method returns a `200 OK` response code and an updated [iosG
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6816
+Content-length: 6810
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -326,13 +329,13 @@ Content-length: 6816
   "passcodeBlockFingerprintUnlock": true,
   "passcodeBlockModification": true,
   "passcodeBlockSimple": true,
-  "passcodeExpirationDays": 22,
-  "passcodeMinimumLength": 21,
-  "passcodeMinutesOfInactivityBeforeLock": 37,
-  "passcodeMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passcodeMinimumCharacterSetCount": 32,
-  "passcodePreviousPasscodeBlockCount": 34,
-  "passcodeSignInFailureCountBeforeWipe": 36,
+  "passcodeExpirationDays": 6,
+  "passcodeMinimumLength": 5,
+  "passcodeMinutesOfInactivityBeforeLock": 5,
+  "passcodeMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passcodeMinimumCharacterSetCount": 0,
+  "passcodePreviousPasscodeBlockCount": 2,
+  "passcodeSignInFailureCountBeforeWipe": 4,
   "passcodeRequiredType": "alphanumeric",
   "passcodeRequired": true,
   "podcastsBlocked": true,
@@ -364,7 +367,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6992
+Content-Length: 6986
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -525,13 +528,13 @@ Content-Length: 6992
   "passcodeBlockFingerprintUnlock": true,
   "passcodeBlockModification": true,
   "passcodeBlockSimple": true,
-  "passcodeExpirationDays": 22,
-  "passcodeMinimumLength": 21,
-  "passcodeMinutesOfInactivityBeforeLock": 37,
-  "passcodeMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passcodeMinimumCharacterSetCount": 32,
-  "passcodePreviousPasscodeBlockCount": 34,
-  "passcodeSignInFailureCountBeforeWipe": 36,
+  "passcodeExpirationDays": 6,
+  "passcodeMinimumLength": 5,
+  "passcodeMinutesOfInactivityBeforeLock": 5,
+  "passcodeMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passcodeMinimumCharacterSetCount": 0,
+  "passcodePreviousPasscodeBlockCount": 2,
+  "passcodeSignInFailureCountBeforeWipe": 4,
   "passcodeRequiredType": "alphanumeric",
   "passcodeRequired": true,
   "podcastsBlocked": true,
