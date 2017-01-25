@@ -64,8 +64,9 @@ getting attachments of group posts currently return the error message "The OData
 and is expected to be widely available by the end of January 2016.
 
 
-#### Setting the **allowExternalSenders** property
-There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`. 
+#### Setting the allowExternalSenders property
+There is currently an issue that prevents setting the **allowExternalSenders** property of a group 
+in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
 
 ## Contacts
