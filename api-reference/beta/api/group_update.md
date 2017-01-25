@@ -31,10 +31,10 @@ In the request body, supply the values for relevant fields that should be update
 
 **Note**
 
-- You can update **allowExternalSenders** and **autoSubscribeNewMembers** by specifying only one or both these properties in their own PATCH request, 
+- You can update **autoSubscribeNewMembers** by specifying it in its own PATCH request, 
 without including the other properties in the table above.
 - Only a subset of the group API pertaining to core group administration and management support application 
-and delegated permissions. All other members of the group API, including updating  **allowExternalSenders** and **autoSubscribeNewMembers**, 
+and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, 
 support only delegated permissions. See [known issues](https://graph.microsoft.io/en-us/docs/overview/release_notes#group-permission-scopes) for examples.
 
 
