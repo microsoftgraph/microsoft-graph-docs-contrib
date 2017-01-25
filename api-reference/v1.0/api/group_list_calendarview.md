@@ -1,6 +1,7 @@
 # List calendarView
 
-Retrieve a list of event objects.
+Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
+from the default calendar of a group.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ## HTTP request
