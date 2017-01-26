@@ -66,15 +66,14 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fileAttachment"
 } -->
 ```http
 HTTP 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": " ... ",
-    "@odata.type": "#microsoft.graph.fileAttachment",
     "id": " ... ",
     "lastModifiedDateTime": "2017-01-26T08:48:28Z",
     "name": "smile.gif",
