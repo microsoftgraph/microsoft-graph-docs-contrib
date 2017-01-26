@@ -113,6 +113,13 @@ GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
 
+## Messages
+#### The comment parameter for creating a draft
+The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md), 
+[createReplyAll](../api-reference/v1.0/api/message_createreplyall), [createForward](../api-reference/v1.0/api/message_createforward.md)) 
+does not become part of the body of the resultant message draft.  
+
+
 ## Drives, files and content streaming
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.
 
