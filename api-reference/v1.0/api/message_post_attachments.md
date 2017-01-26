@@ -69,7 +69,8 @@ Here is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP 201 OK
+HTTP 201 Created
+Content-type: application/json
 
 {
     "@odata.context": " ... ",
