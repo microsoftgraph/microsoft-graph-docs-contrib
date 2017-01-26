@@ -16,7 +16,7 @@ One of the following **scopes** is required to execute this API:
 PUT /me/drive/items/{parent-id}:/{filename}:/content
 PUT /me/drive/root:/{parent-path}/{filename}:/content
 PUT /me/drive/items/{parent-id}/children/{filename}/content
-PUT /groups/<id>/drive/items/<parent-id>/children/<filename>/content
+PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
 ```
 
 ## Request body

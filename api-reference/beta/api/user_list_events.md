@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events
-GET /users/<id | userPrincipalName>/events
+GET /users/{id | userPrincipalName}/events
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -20,7 +20,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Accept  | application/json|
+| Content-Type   | application/json  | 
 
 ## Request body
 Do not supply a request body for this method.
@@ -56,7 +56,7 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "datetime-value"
+        "time": "2016-10-19T10:37:00Z"
       },
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,

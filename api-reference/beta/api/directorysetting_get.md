@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API: *Directory.Read.All* 
 <!-- { "blockType": "ignored" } -->
 Get a specific tenant-wide or group setting
 ```http
-GET /settings/<id>
-GET /groups/<id>/settings/<id>
+GET /settings/{id}
+GET /groups/{id}/settings/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_directorysetting"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/settings/<id>
+GET https://graph.microsoft.com/beta/settings/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

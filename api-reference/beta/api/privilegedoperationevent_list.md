@@ -29,7 +29,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
 ## Example
 ##### Request 1
 Here is an example of the request.
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents
 ```
@@ -62,9 +62,9 @@ Content-length: 227
 
 ##### Request 2
 Here is an example of the request using $filter to get the audit events that have ``requestType`` as ``Elevate``.
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request" } -->
 ```http
-GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType eq 'Elevate'
+GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Elevate'
 ```
 ##### Response 2
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

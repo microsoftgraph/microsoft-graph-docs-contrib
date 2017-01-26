@@ -26,7 +26,7 @@ As well as the following group resources:
 - group [post](../resources/post.md) 
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
-Office 365 Data Extensions or extended properties, and how to specify extended properties.
+Office 365 data extensions or extended properties, and how to specify extended properties.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API, depending on the resource you're
@@ -47,54 +47,54 @@ Get a resource instance expanded with the extended property which matches a filt
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/messages/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/mailFolders/<id>/messages/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **mailFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/mailFolders/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get an **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/events/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **calendar** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/calendars/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **contact** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contacts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/contacts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/contactFolders/<id>/contacts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/contactFolders/<id>/contacts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a **contactFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contactfolders/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/<id|userPrincipalName>/contactFolders/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 Get a group **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/events/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get a group **post** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/threads/<id>/posts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /groups/<id>/conversations/<id>/threads/<id>/posts/<id>?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 #### GET resource instances using `$filter`
@@ -109,53 +109,53 @@ Get **message** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/<id|userPrincipalName>/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /me/mailFolders/<id>/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get **mailFolder** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/<id|userPrincipalName>/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 Get **event** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/<id|userPrincipalName>/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get **calendar** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/<id|userPrincipalName>/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get **contact** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/<id|userPrincipalName>/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /me/contactFolders/<id>/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/<id|userPrincipalName>/contactFolders/<id>/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get **contactFolder** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/<id|userPrincipalName>/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get group **event** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 Get group **post** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/threads/<id>/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /groups/<id>/conversations/<id>/threads/<id>/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 ## Parameters

@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "rangeformat_autofitcolumns"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/range/format/autofitColumns
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitColumns
 ```
 
 ##### Response

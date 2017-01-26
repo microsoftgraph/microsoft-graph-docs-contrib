@@ -4,8 +4,8 @@ You can use Microsoft Graph to build compelling app experiences based on users, 
 
 You can access [users](user.md) through Microsoft Graph in two ways:
 
-- By their ID, `/users/<id>` 
-- By using the `/me` alias for the signed-in user, which is the same as `/users/<signed-in user's id>`
+- By their ID, `/users/{id | userPrincipalName}` 
+- By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`
 
 ## Authorization
 One of the following [permissions](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
@@ -21,6 +21,7 @@ One of the following [permissions](https://graph.microsoft.io/en-us/docs/authori
 
 ## Common properties
 The following represent the default set of properties that are returned when getting a user or listing users.  These are a subset of all available properties. To get more user properties, use the `$select` query parameter. 
+
 | Property | Description |
 |----------|-------------|
 |id | The unique identifier for the user.|
@@ -43,10 +44,10 @@ For details and a list of all the properties, see the [user](user.md) object.
 | Path    | Description |
 |---------|-------------|
 |[`/users`](../api/user_list.md) | Lists users in the organization. |
-|[`/users/<id>`](../api/user_get.md) | Gets a specific user by id. |
-|[`/users/<id>/photo/$value`](../api/profilephoto_get.md)| Gets the user's profile photo. |
-|[`/users/<id>/manager`](../api/user_list_manager.md) | Gets the user's manager. |
-|[`/users/<id>/messages`](../api/user_list_messages.md)| Lists the user's email messages in their primary inbox. |
-|[`/users/<id>/events`](../api/user_list_events.md) | Lists the user's upcoming events in their calendar. |
-|[`/users/<id>/drive`](../api/drive_get.md)| Gets the user's OneDrive file store. |
-|[`/users/<id>/memberOf`](../api/user_list_memberof.md)| Lists the groups that the user is a member of. |
+|[`/users/{id}`](../api/user_get.md) | Gets a specific user by id. |
+|[`/users/{id}/photo/$value`](../api/profilephoto_get.md)| Gets the user's profile photo. |
+|[`/users/{id}/manager`](../api/user_list_manager.md) | Gets the user's manager. |
+|[`/users/{id}/messages`](../api/user_list_messages.md)| Lists the user's email messages in their primary inbox. |
+|[`/users/{id}/events`](../api/user_list_events.md) | Lists the user's upcoming events in their calendar. |
+|[`/users/{id}/drive`](../api/drive_get.md)| Gets the user's OneDrive file store. |
+|[`/users/{id}/memberOf`](../api/user_list_memberof.md)| Lists the groups that the user is a member of. |

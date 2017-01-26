@@ -45,6 +45,8 @@ based on either a string name or numeric identifier, and on the actual type of v
 extended properties are in most cases inter-operating with defined MAPI properties not exposed in the 
 Microsoft Graph API metadata, for simplicity, the format you choose should reflect whether the corresponding MAPI 
 property uses a character string or numeric value in its [MAPI property identifier](https://msdn.microsoft.com/en-us/library/office/cc815528.aspx).
+You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID, 
+in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
 
 **Note** After you have chosen one format for the **id**, you should access that extended property by only that format.
 
@@ -68,10 +70,12 @@ property uses a character string or numeric value in its [MAPI property identifi
 ## REST API operations
  
 Single-value extended property operations:
+
 - [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)
 - [Get one or a collection of resource instances with an extended property using `$expand` or `$filter`](../api/singlevaluelegacyextendedproperty_get.md)
 
 Multi-value extended property operations:
+
 - [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
 - [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty_get.md)
 

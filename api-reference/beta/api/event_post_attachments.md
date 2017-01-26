@@ -1,4 +1,4 @@
-# Create Attachment
+# Add attachment
 
 Use this API to add an [attachment](../resources/attachment.md) to an event. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
@@ -10,26 +10,26 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 ```http
-POST /me/events/<id>/attachments
-POST /users/<id | userPrincipalName>/events/<id>/attachments
-POST /groups/<id>/events/<id>/attachments
+POST /me/events/{id}/attachments
+POST /users/{id | userPrincipalName}/events/{id}/attachments
+POST /groups/{id}/events/{id}/attachments
 
-POST /me/calendar/events/<id>/attachments
-POST /users/<id | userPrincipalName>/calendar/events/<id>/attachments
-POST /groups/<id>/calendar/events/<id>/attachments
+POST /me/calendar/events/{id}/attachments
+POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
+POST /groups/{id}/calendar/events/{id}/attachments
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
 ```http
-POST /me/calendars/<id>/events/<id>/attachments
-POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments
+POST /me/calendars/{id}/events/{id}/attachments
+POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 
-POST /me/calendargroup/calendars/<id>/events/<id>/attachments
-POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/attachments
+POST /me/calendargroup/calendars/{id}/events/{id}/attachments
+POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
 ```http
-POST /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments
-POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments
+POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
+POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -53,7 +53,7 @@ Here is an example of the request.
   "name": "create_file_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/<id>/attachments
+POST https://graph.microsoft.com/beta/me/events/{id}/attachments
 Content-type: application/json
 Content-length: 142
 
@@ -79,7 +79,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "lastModifiedDateTime": "datetime-value",
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,
@@ -99,7 +99,7 @@ Here is an example of the request.
   "name": "create_item_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/<id>/attachments
+POST https://graph.microsoft.com/beta/me/events/{id}/attachments
 Content-type: application/json
 Content-length: 100
 
@@ -123,7 +123,7 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "lastModifiedDateTime": "datetime-value",
+  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
   "name": "name-value",
   "contentType": "contentType-value",
   "size": 99,
@@ -139,7 +139,8 @@ Here is an example of a request that adds a reference attachment to an existing 
 The attachment points to a folder on OneDrive.
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_event"
+  "name": "create_reference_attachment_from_event",
+  "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
 ```
@@ -161,7 +162,8 @@ Content-length: 319
 Here is an example of a full response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
 ```http
 HTTP 201 Created

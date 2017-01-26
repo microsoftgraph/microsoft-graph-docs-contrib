@@ -9,26 +9,26 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 ```http
-GET /me/events/<id>/attachments
-GET /users/<id | userPrincipalName>/events/<id>/attachments
-GET /groups/<id>/events/<id>/attachments
+GET /me/events/{id}/attachments
+GET /users/{id | userPrincipalName}/events/{id}/attachments
+GET /groups/{id}/events/{id}/attachments
 
-GET /me/calendar/events/<id>/attachments
-GET /users/<id | userPrincipalName>/calendar/events/<id>/attachments
-GET /groups/<id>/calendar/events/<id>/attachments
+GET /me/calendar/events/{id}/attachments
+GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments
+GET /groups/{id}/calendar/events/{id}/attachments
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
 ```http
-GET /me/calendars/<id>/events/<id>/attachments
-GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments
+GET /me/calendars/{id}/events/{id}/attachments
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 
-GET /me/calendargroup/calendars/<id>/events/<id>/attachments
-GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/attachments
+GET /me/calendargroup/calendars/{id}/events/{id}/attachments
+GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
 ```http
-GET /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments
-GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments
+GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
+GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -37,7 +37,7 @@ In particular, you can use the $expand query parameter to include all of the eve
 inline with the rest of the event properties. For example:
 
 ```
-GET https://graph.microsoft.com/beta/me/events/<id>?$expand=attachments
+GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 ```
 
 
@@ -58,7 +58,7 @@ Here is an example of the request.
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/events/<id>/attachments
+GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -81,7 +81,7 @@ Content-length: 215
       "contentLocation": "contentLocation-value",
       "contentBytes": "contentBytes-value",
       "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
+      "lastModifiedDateTime": "2016-10-19T10:37:00Z",
       "id": "id-value",
       "isInline": false,
       "isContactPhoto": false,

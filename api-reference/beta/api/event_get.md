@@ -22,22 +22,22 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events/<id>
-GET /users/<id | userPrincipalName>/events/<id>
-GET /groups/<id>/events/<id>
+GET /me/events/{id}
+GET /users/{id | userPrincipalName}/events/{id}
+GET /groups/{id}/events/{id}
 
-GET /me/calendar/events/<id>
-GET /users/<id | userPrincipalName>/calendar/events/<id>
-GET /groups/<id>/calendar/events/<id>
+GET /me/calendar/events/{id}
+GET /users/{id | userPrincipalName}/calendar/events/{id}
+GET /groups/{id}/calendar/events/{id}
 
-GET /me/calendars/<id>/events/<id>
-GET /users/<id | userPrincipalName>/calendars/<id>/events/<id>
+GET /me/calendars/{id}/events/{id}
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-GET /me/calendargroup/calendars/<id>/events/<id>
-GET /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>
+GET /me/calendargroup/calendars/{id}/events/{id}
+GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
-GET /me/calendargroups/<id>/calendars/<id>/events/<id>
-GET /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>
+GET /me/calendargroups/{id}/calendars/{id}/events/{id}
+GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -59,7 +59,7 @@ Here is an example of the request.
   "name": "get_event"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/events/<id>
+GET https://graph.microsoft.com/beta/me/events/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -78,17 +78,17 @@ Content-length: 285
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
     "response": "",
-    "time": "datetime-value"
+    "time": "2016-10-19T10:37:00Z"
   },
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true,
   "start": {
-    "dateTime": "datetime-value",
+    "dateTime": "2016-10-19T10:37:00Z",
     "timeZone": "timezone-value"
   },
   "end": {
-    "dateTime": "datetime-value",
+    "dateTime": "2016-10-19T10:37:00Z",
     "timeZone": "timezone-value"
   },        
   "location": {

@@ -18,7 +18,7 @@ As well as the following group resources:
 - group [post](../resources/post.md) 
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
-Office 365 Data Extensions or extended properties, and how to specify extended properties.
+Office 365 data extensions or extended properties, and how to specify extended properties.
 
 ## Prerequisites
 
@@ -46,32 +46,32 @@ The following is the syntax of the requests.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages
-POST /users/<id|userPrincipalName>/messages
-POST /me/mailFolders/<id>/messages
+POST /users/{id|userPrincipalName}/messages
+POST /me/mailFolders/{id}/messages
 
 POST /me/mailFolders
-POST /users/<id|userPrincipalName>/mailFolders
+POST /users/{id|userPrincipalName}/mailFolders
 
 POST /me/events
-POST /users/<id|userPrincipalName>/events
+POST /users/{id|userPrincipalName}/events
 
 POST /me/calendars
-POST /users/<id|userPrincipalName>/calendars
+POST /users/{id|userPrincipalName}/calendars
 
 POST /me/contacts
-POST /users/<id|userPrincipalName>/contacts
+POST /users/{id|userPrincipalName}/contacts
 
 POST /me/contactFolders
-POST /users/<id|userPrincipalName>/contactFolders
+POST /users/{id|userPrincipalName}/contactFolders
 
-POST /groups/<id>/events
+POST /groups/{id}/events
 
-POST /groups/<id>/threads/<id>/posts/<id>/reply
-POST /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/reply
-POST /groups/<id>/threads/<id>/reply
-POST /groups/<id>/conversations/<id>/threads/<id>/reply
-POST /groups/<id>/threads
-POST /groups/<id>/conversations
+POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
+POST /groups/{id}/threads/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/reply
+POST /groups/{id}/threads
+POST /groups/{id}/conversations
 ```
 
 To create one or more extended properties in an existing resource instance, specify the instance in the
@@ -81,26 +81,26 @@ request, and include the extended property in the request body.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/messages/<id>
-PATCH /users/<id|userPrincipalName>/messages/<id>
-PATCH /me/mailFolders/<id>/messages/<id>
+PATCH /me/messages/{id}
+PATCH /users/{id|userPrincipalName}/messages/{id}
+PATCH /me/mailFolders/{id}/messages/{id}
 
-PATCH /me/mailFolders/<id>
-PATCH /users/<id|userPrincipalName>/mailFolders/<id>
+PATCH /me/mailFolders/{id}
+PATCH /users/{id|userPrincipalName}/mailFolders/{id}
 
-PATCH /me/events/<id>
-PATCH /users/<id|userPrincipalName>/events/<id>
+PATCH /me/events/{id}
+PATCH /users/{id|userPrincipalName}/events/{id}
 
-PATCH /me/calendars/<id>
-PATCH /users/<id|userPrincipalName>/calendars/<id>
+PATCH /me/calendars/{id}
+PATCH /users/{id|userPrincipalName}/calendars/{id}
 
-PATCH /me/contacts/<id>
-PATCH /users/<id|userPrincipalName>/contacts/<id>
+PATCH /me/contacts/{id}
+PATCH /users/{id|userPrincipalName}/contacts/{id}
 
-PATCH /me/contactFolders/<id>
-PATCH /users/<id|userPrincipalName>/contactFolders/<id>
+PATCH /me/contactFolders/{id}
+PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 
-PATCH /groups/<id>/events/<id>
+PATCH /groups/{id}/events/{id}
 ```
 
 

@@ -14,8 +14,8 @@ The following **scopes** are required to execute this API: *Mail.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/inferenceClassification/overrides/<id>
-PATCH /users/<id>/inferenceClassification/overrides/<id>
+PATCH /me/inferenceClassification/overrides/{id}
+PATCH /users/{id}/inferenceClassification/overrides/{id}
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ The following example changes the override for the SMTP address randiw@adatum.on
   "name": "update_inferenceclassificationoverride"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/<id>
+PATCH https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/{id}
 Content-type: application/json
 
 {

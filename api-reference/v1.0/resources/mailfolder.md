@@ -16,6 +16,10 @@ A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFol
 |[Delete](../api/mailfolder_delete.md) | None |Delete the specified mailFolder object. |
 |[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Copy a mailFolder and its contents to another mailFolder.|
 |[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
+|[Get mailFolder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [mailFolder](mailFolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
+|[Get mailFolder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
 
 
 ## Properties
@@ -43,6 +47,8 @@ MailFolders in Outlook can contain more than one type of items, for example, the
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
 |messages|[Message](message.md) collection|The collection of messages in the mailFolder.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
 
 
 ## JSON representation
@@ -53,7 +59,9 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
-    "messages"
+    "messages",
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"

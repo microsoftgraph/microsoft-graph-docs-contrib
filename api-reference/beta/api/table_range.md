@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "table_range"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/Range
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/Range
 ```
 
 ##### Response

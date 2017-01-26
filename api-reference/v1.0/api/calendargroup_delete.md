@@ -11,8 +11,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/calendarGroups/<id>
-DELETE /users/<id | userPrincipalName>/calendarGroups/<id>
+DELETE /me/calendarGroups/{id}
+DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "delete_calendargroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/<id>
+DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

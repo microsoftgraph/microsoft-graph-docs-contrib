@@ -2,7 +2,7 @@
 
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
 
-OneDrive users will always have a tleast one drive available, their default drive.
+OneDrive users will always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.
 
 ## JSON representation
@@ -56,7 +56,7 @@ The following methods are available for drive resources.
 | [Get root folder for a drive](../api/item_get.md)         | `GET /drives/{drive-id}/root`        |
 | [List items in a drive](../api/item_list_children.md)     | `GET /me/drive/root/children`        |
 | [List changes in a drive](../api/item_delta.md)           | `GET /me/drive/root/delta`           |
-| [Search items in a drive](../api/item_search.md)          | `GET /me/drive/search(q='text')      |
+| [Search items in a drive](../api/item_search.md)          | `GET /me/drive/search(q='text')`     |
 
 
 

@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "tablesort_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables(<id|name>)/sort/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/sort/clear
 ```
 
 ##### Response

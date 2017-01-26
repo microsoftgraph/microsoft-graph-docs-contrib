@@ -9,8 +9,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/threads/<id>
-GET /groups/<id>/conversations/<id>/threads/<id>
+GET /groups/{id}/threads/{id}
+GET /groups/{id}/conversations/{id}/threads/{id}
 
 ```
 ## Optional query parameters
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "get_conversationthread"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/threads/<id>
+GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -57,7 +57,7 @@ Content-length: 419
   ],
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
+  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],

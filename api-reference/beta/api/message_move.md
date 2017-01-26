@@ -8,10 +8,10 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/move
-POST /users/<id | userPrincipalName>/messages/<id>/move
-POST /me/mailFolders/<id>/messages/<id>/move
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/move
+POST /me/messages/{id}/move
+POST /users/{id | userPrincipalName}/messages/{id}/move
+POST /me/mailFolders/{id}/messages/{id}/move
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "message_move"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/<id>/move
+POST https://graph.microsoft.com/beta/me/messages/{id}/move
 Content-type: application/json
 Content-length: 44
 
@@ -60,8 +60,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
+  "receivedDateTime": "2016-10-19T10:37:00Z",
+  "sentDateTime": "2016-10-19T10:37:00Z",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {

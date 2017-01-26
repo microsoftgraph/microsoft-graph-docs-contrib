@@ -8,10 +8,10 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/contacts
-POST /users/<id | userPrincipalName>/contacts
+POST /users/{id | userPrincipalName}/contacts
 
-POST /me/contactFolders/<id>/contacts
-POST /users/<id | userPrincipalName>/contactFolders/<id>/contacts
+POST /me/contactFolders/{id}/contacts
+POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ```
 ## Request headers
 ## Request headers
@@ -35,13 +35,13 @@ Here is an example of the request.
   "name": "create_contact_from_contactfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/contactFolders/<id>/contacts
+POST https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts
 Content-type: application/json
 Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",
-  "birthday": "datetime-value",
+  "birthday": "2016-10-19T10:37:00Z",
   "fileAs": "fileAs-value",
   "displayName": "displayName-value",
   "givenName": "givenName-value",
@@ -63,7 +63,7 @@ Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",
-  "birthday": "datetime-value",
+  "birthday": "2016-10-19T10:37:00Z",
   "fileAs": "fileAs-value",
   "displayName": "displayName-value",
   "givenName": "givenName-value",

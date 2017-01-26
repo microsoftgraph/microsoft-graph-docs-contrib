@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /oAuth2Permissiongrants/<id>
-DELETE /users/<id | userPrincipalName>/oAuth2Permissiongrants/<id>
-DELETE /drive/root/createdByUser/oAuth2Permissiongrants/<id>
+DELETE /oAuth2Permissiongrants/{id}
+DELETE /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
+DELETE /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 
 ```
 ## Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_oAuth2Permissiongrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/oAuth2Permissiongrants/<id>
+DELETE https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 ```
 ##### Response
 Here is an example of the response. 

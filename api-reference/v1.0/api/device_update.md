@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API: *Directory.Acce
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /devices/<id>
+PATCH /devices/{id}
 ```
 > Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
 
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "update_device"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/devices/<id>
+PATCH https://graph.microsoft.com/v1.0/devices/{id}
 Content-type: application/json
 
 {

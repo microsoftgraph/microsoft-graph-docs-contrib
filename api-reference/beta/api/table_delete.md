@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "table_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/delete
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/delete
 ```
 
 ##### Response

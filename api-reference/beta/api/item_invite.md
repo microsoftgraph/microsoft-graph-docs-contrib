@@ -11,8 +11,10 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/drive/items/{item-id}/invite
 POST /drive/items/{item-id}/invite
 POST /drives/{drive-id}/items/{item-id}/invite
+POST /groups/{group-id}/drive/items/{item-id}/invite
 ```
 
 ## Request body
@@ -52,7 +54,7 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "edit" ]
+  "roles": [ "write" ]
 }
 ```
 
@@ -82,7 +84,7 @@ Content-type: application/json
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "edit" ]
+      "roles": [ "write" ]
     }
   ]
 }
@@ -91,7 +93,7 @@ Content-type: application/json
 ## Remarks
 
 * [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem. 
-
+* For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -9,8 +9,6 @@ A message in a mailFolder.
 |[List messages](../api/user_list_messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). |
 |[Create message](../api/user_post_messages.md) | [message](message.md) | [Create](../api/user_post_messages.md#request-1) a draft of a new message. |
 |[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
-|[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
-|[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Gets all Attachments on a message.|
 |[Update](../api/message_update.md) | [message](message.md) |Update message object.|
 |[Delete](../api/message_delete.md) | None |Delete message object. |
 |[copy](../api/message_copy.md)|[Message](message.md)|Copy a message to a folder.|
@@ -22,8 +20,17 @@ A message in a mailFolder.
 |[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|**Attachments**| | |
+|[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Gets all attachments on a message.|
+|[Add attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
+|**Data extensions**| | |
 |[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
 |[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
+|**Extended properties**| | |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
+|[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
+|[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
 
 
 ## Properties
@@ -55,7 +62,7 @@ A message in a mailFolder.
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
-|uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
+|uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message. uniqueBody is not provided by default but can be retrieved for a given message by use of the ?$select=uniqueBody query.|
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
 
 **Removing script from the Body property**
@@ -78,6 +85,8 @@ When a message is being composed, in most cases, the From and Sender properties 
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection|The [fileAttachment](fileattachment.md) and [itemAttachment](itemattachment.md) attachments for the message.|
 |extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the contact. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Read-only. Nullable.|
 
 
 ## JSON representation
@@ -87,7 +96,10 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments"
+    "attachments",
+    "extensions",
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.message"
@@ -126,6 +138,12 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
+- [Get mailbox settings](../api/user_get_mailboxsettings.md) 
+- [Update mailbox settings](../api/user_update_mailboxsettings.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

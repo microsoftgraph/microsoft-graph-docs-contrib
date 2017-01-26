@@ -18,10 +18,10 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/forward
-POST /users/<id | userPrincipalName>/messages/<id>/forward
-POST /me/mailFolders/<id>/messages/<id>/forward
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/forward
+POST /me/messages/{id}/forward
+POST /users/{id | userPrincipalName}/messages/{id}/forward
+POST /me/mailFolders/{id}/messages/{id}/forward
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ```
 ## Request headers
 | Name       | Type | Description|

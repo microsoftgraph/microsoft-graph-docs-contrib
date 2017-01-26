@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMailTips
-POST /users/<id|userPrincipalName>/getMailTips
+POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailtips"
+  "@odata.type": "microsoft.graph.mailTips"
 } -->
 ```http
 HTTP/1.1 200 OK

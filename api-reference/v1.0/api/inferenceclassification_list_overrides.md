@@ -9,7 +9,7 @@ The following **scopes** are required to execute this API: *Mail.Read*
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/inferenceClassification/overrides
-GET /users/<id>/inferenceClassification/overrides
+GET /users/{id}/inferenceClassification/overrides
 ```
 
 ## Request headers

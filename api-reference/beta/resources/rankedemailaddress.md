@@ -18,7 +18,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.rankedemailaddress"
+  "@odata.type": "microsoft.graph.rankedEmailAddress"
 }-->
 
 ```json
@@ -26,7 +26,6 @@ Here is a JSON representation of the resource.
   "address": "string",
   "rank": 1024
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/contactFolders
+GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -15,6 +15,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
+| Content-Type   | application/json  | 
 
 ## Request body
 Do not supply a request body for this method.

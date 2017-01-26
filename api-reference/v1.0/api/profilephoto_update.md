@@ -6,6 +6,9 @@ you can add to under 4MB.
 
 You can use either PATCH or PUT for this operation in version 1.0.
 
+> **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
+
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API for:
 
@@ -17,20 +20,20 @@ One of the following **scopes** is required to execute this API for:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/photo/$value
-PATCH /users/<id | userPrincipalName>/photo/$value
-PATCH /groups/<id>/photo/$value
-PATCH /me/contacts/<id>/photo/$value
-PATCH /users/<id | userPrincipalName>/contacts/<id>/photo/$value
-PATCH /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
-PATCH /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
+PATCH /users/{id | userPrincipalName}/photo/$value
+PATCH /groups/{id}/photo/$value
+PATCH /me/contacts/{id}/photo/$value
+PATCH /users/{id | userPrincipalName}/contacts/{id}/photo/$value
+PATCH /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+PATCH /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 
 PUT /me/photo/$value
-PUT /users/<id | userPrincipalName>/photo/$value
-PUT /groups/<id>/photo/$value
-PUT /me/contacts/<id>/photo/$value
-PUT /users/<id | userPrincipalName>/contacts/<id>/photo/$value
-PUT /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
-PUT /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
+PUT /users/{id | userPrincipalName}/photo/$value
+PUT /groups/{id}/photo/$value
+PUT /me/contacts/{id}/photo/$value
+PUT /users/{id | userPrincipalName}/contacts/{id}/photo/$value
+PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
 ## Request headers
 | Header       | Value |

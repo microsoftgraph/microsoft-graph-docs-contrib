@@ -1,0 +1,4 @@
+# Role-based access control in Microsoft Intune> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+
+Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.   The following Graph resources are available to manage role-based access control in Intune:
+- [Device management](intune_rbac_devicemanagement.md)- [Permission](intune_rbac_permission.md)- [Resource operation](intune_rbac_resourceoperation.md)- [Role assignment](intune_rbac_roleassignment.md)- [Role definition](intune_rbac_roledefinition.md)

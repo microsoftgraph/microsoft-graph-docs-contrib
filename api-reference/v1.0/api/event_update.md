@@ -7,22 +7,22 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/events/<id>
-PATCH /users/<id | userPrincipalName>/events/<id>
-PATCH /groups/<id>/events/<id>
+PATCH /me/events/{id}
+PATCH /users/{id | userPrincipalName}/events/{id}
+PATCH /groups/{id}/events/{id}
 
-PATCH /me/calendar/events/<id>
-PATCH /users/<id | userPrincipalName>/calendar/events/<id>
-PATCH /groups/<id>/calendar/events/<id>
+PATCH /me/calendar/events/{id}
+PATCH /users/{id | userPrincipalName}/calendar/events/{id}
+PATCH /groups/{id}/calendar/events/{id}
 
-PATCH /me/calendars/<id>/events/<id>
-PATCH /users/<id | userPrincipalName>/calendars/<id>/events/<id>
+PATCH /me/calendars/{id}/events/{id}
+PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-PATCH /me/calendargroup/calendars/<id>/events/<id>
-PATCH /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>
+PATCH /me/calendargroup/calendars/{id}/events/{id}
+PATCH /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
-PATCH /me/calendargroups/<id>/calendars/<id>/events/<id>
-PATCH /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>
+PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
+PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -42,6 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |location|[Location](../resources/location.md)|The location of the event.|
+|onlineMeetingUrl|String|A URL for an online meeting.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|The recurrence patern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
@@ -60,7 +61,7 @@ Here is an example of the request.
   "name": "update_event"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/events/<id>
+PATCH https://graph.microsoft.com/v1.0/me/events/{id}
 Content-type: application/json
 Content-length: 285
 

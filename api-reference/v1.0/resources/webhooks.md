@@ -8,6 +8,7 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * Events
 * Contacts
 * Group conversations
+* Drive root items
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
@@ -34,7 +35,7 @@ Client must store the subscription ID to correlate a notification with the corre
 
 ## Characteristics of subscriptions
 
-You can create subscriptions for resources such as messages, events, and contacts.
+You can create subscriptions for resources such as messages, events, contacts, and drive root items.
 
 You can create a subscription to a specific folder:
 `https://graph.microsoft.com/v1.0/me/mailfolders('inbox')/messages`
@@ -42,9 +43,12 @@ You can create a subscription to a specific folder:
 Or to a top-level resource:
 `https://graph.microsoft.com/v1.0/me/messages`
 
-Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission.
+Or on a drive root item:
+`https://graph.microsoft.com/v1.0/me/drive/root`
 
-Subscriptions expire. The current longest expiration time is three days minus 9-0 minutes from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
+Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for OneDrive Drive root items and drives associated with SharePoint sites require `Files.ReadWrite.All`.
+
+Subscriptions expire. The current longest expiration time is three days minus 90 minutes (4230 in total) from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 
 ## Notification URL validation
 
@@ -60,7 +64,7 @@ Microsoft Graph validates the notification URL in a subscription request before 
 2. The client must provide a response with the following characteristics within 10 seconds:
 
   * An 200 (OK) status code.
-  * The content type must be plain/text. 
+  * The content type must be text/plain. 
   * The body must include the validation token provided by Microsoft Graph.
 
 The client should discard the validation token after providing it in the response.
@@ -90,7 +94,7 @@ The client can renew a subscription with a specific expiration date of up to thr
 ## Subscription renewal example
 
 ```
-PATCH https://graph.microsoft.com/v1.0/subscriptions/<id>;
+PATCH https://graph.microsoft.com/v1.0/subscriptions/{id};
 Content-Type: application/json
 {
   "expirationDateTime": "2016-03-22T11:00:00.0000000Z"
@@ -104,7 +108,7 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subs
 The client can stop receiving notifications by deleting the subscription using its ID.
 
 ```
-DELETE https://graph.microsoft.com/v1.0/subscriptions/<id>
+DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 
 If successful, Microsoft Graph returns a `204 No Content` code.
@@ -143,11 +147,11 @@ When the user receives an email, Microsoft Graph sends a notification like the f
     "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
     "clientState":"SecretClientState",
     "changeType":"Created",
-    "resource":"Users/<user_guid>@<tenant_guid>/Messages/<long_id_string>",
+    "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
     "resourceData":
     {
       "@odata.type":"#Microsoft.Graph.Message",
-      "@odata.id":"Users/<user_guid>@<tenant_guid>/Messages/<long_id_string>",
+      "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
       "Id":"<long_id_string>"
     }

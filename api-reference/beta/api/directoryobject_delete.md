@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API: _Directory.Acce
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directoryObjects/<id>
+DELETE /directoryObjects/{id}
 
 ```
 ## Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/directoryObject/<id>
+DELETE https://graph.microsoft.com/beta/directoryObject/{id}
 ```
 ##### Response
 Here is an example of the response. 

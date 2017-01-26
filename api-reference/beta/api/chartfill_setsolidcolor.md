@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "chartfill_setsolidcolor"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/setSolidColor
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/setSolidColor
 Content-type: application/json
 Content-length: 28
 

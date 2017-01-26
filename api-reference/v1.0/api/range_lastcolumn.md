@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "range_lastcolumn"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/names(<name>)/range/LastColumn
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
 ```
 
 ##### Response

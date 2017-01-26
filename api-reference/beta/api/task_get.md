@@ -9,7 +9,7 @@ Group.Read.All, Group.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /tasks/<id>
+GET /tasks/{id}
 
 ```
 ## Optional query parameters
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "get_task"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/tasks/<id>
+GET https://graph.microsoft.com/beta/tasks/{id}
 ```
 ##### Response
 Here is an example of the response. 
@@ -56,14 +56,14 @@ ETag: W/"JzEtMDAwMDAwMDAwMDAwMDAwOC8yMDE1LTEwLTIyVDE4OjExOjU2LjExMzU1NDYrMDA6MDA
   "orderHint": "orderHint-value",
   "assigneePriority": "assigneePriority-value",
   "percentComplete": 99,
-  "startDateTime": "datetime-value",
-  "assignedDateTime": "datetime-value",
-  "createdDateTime": "datetime-value",
+  "startDateTime": "2016-10-19T10:37:00Z",
+  "assignedDateTime": "2016-10-19T10:37:00Z",
+  "createdDateTime": "2016-10-19T10:37:00Z",
   "assignedBy": "assignedBy-value",
-  "dueDateTime": "datetime-value",
+  "dueDateTime": "2016-10-19T10:37:00Z",
   "hasDescription": true,
   "previewType": "previewType-value",
-  "completedDateTime": "datetime-value",
+  "completedDateTime": "2016-10-19T10:37:00Z",
   "appliedCategories": {
   },
   "conversationThreadId": "conversationThreadId-value",

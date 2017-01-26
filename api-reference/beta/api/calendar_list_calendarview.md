@@ -1,34 +1,36 @@
 # List calendarView
 
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
-from the user's primary calendar `(../me/calendarview)` or from a specified calendar.
+from the default calendar `(../me/calendarview)` of a user or group, or some other calendar of the user's.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
-*Calendars.Read*
+
+* Events in a user's calendar: _Calendars.Read_ or _Calendars.ReadWrite_
+* Events in a group calendar: _Group.Read.All_ or _Group.ReadWrite.All_
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's or group's default [calendar](../resources/calendar.md).
 ```http
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/<id | userPrincipalName>/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /groups/<id>/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id | userPrincipalName}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /groups/{id}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
 ```http
-GET /me/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/<id | userPrincipalName>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /me/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id | userPrincipalName}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 
-GET /me/calendarGroup/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /me/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
-GET /me/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /me/calendarGroups/{id}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 ## Query parameters
@@ -81,7 +83,7 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "response-value",
-        "time": "datetime-value"
+        "time": "2016-10-19T10:37:00Z"
       },
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,

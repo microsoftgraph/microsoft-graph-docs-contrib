@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/appRoleAssignments/<id>
-GET /servicePrincipals/<id>/appRoleAssignedTo
-GET /groups/<id>/appRoleAssignments/<id>
+GET /users/{id | userPrincipalName}/appRoleAssignments/{id}
+GET /servicePrincipals/{id}/appRoleAssignedTo
+GET /groups/{id}/appRoleAssignments/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_approleassignment"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/appRoleAssignments/<id>
+GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -45,7 +45,7 @@ Content-type: application/json
 Content-length: 253
 
 {
-  "creationTimestamp": "datetime-value",
+  "creationTimestamp": "2016-10-19T10:37:00Z",
   "id": "id-value",
   "principalDisplayName": "principalDisplayName-value",
   "principalId": "principalId-value",

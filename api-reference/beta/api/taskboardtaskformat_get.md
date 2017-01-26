@@ -9,9 +9,9 @@ Group.Read.All, Group.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /tasks/<id>/bucketTaskBoardFormat
-GET /tasks/<id>/progressTaskBoardFormat
-GET /tasks/<id>/assignedToTaskBoardFormat
+GET /tasks/{id}/bucketTaskBoardFormat
+GET /tasks/{id}/progressTaskBoardFormat
+GET /tasks/{id}/assignedToTaskBoardFormat
 ```
 ## Optional query parameters
 None
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_taskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/tasks/<id>/bucketTaskBoardFormat
+GET https://graph.microsoft.com/beta/tasks/{id}/bucketTaskBoardFormat
 ```
 ##### Response
 Here is an example of the response. 

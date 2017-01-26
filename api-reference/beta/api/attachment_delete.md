@@ -12,47 +12,47 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 ```http
-DELETE /me/events/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/events/<id>/attachments/<id>
-DELETE /groups/<id>/events/<id>/attachments/<id>
+DELETE /me/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+DELETE /groups/{id}/events/{id}/attachments/{id}
 
-DELETE /me/calendar/<id>/events/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/calendar/events/<id>/attachments/<id>
-DELETE /groups/<id>/calendar/events/<id>/attachments/<id>
+DELETE /me/calendar/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
+DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
 ```http
-DELETE /me/calendars/<id>/events/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/calendars/<id>/events/<id>/attachments/<id>
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
 
-DELETE /me/calendargroup/calendars/<id>/events/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/attachments/<id>
+DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
 ```http
-DELETE /me/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/attachments/<id>
+DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
 Attachments for a [message](../resources/message.md) in a user's mailbox.
 ```http
-DELETE /me/messages/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/messages/<id>/attachments/<id>
+DELETE /me/messages/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
 Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.
 ```http
-DELETE /me/mailFolders/<id>/messages/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/attachments/<id>
+DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
 example below shows one level of nesting, but a message can be located in a child of a child and so on.
 ```http
-DELETE /me/mailFolders/<id>/childFolders/<id>/.../messages/<id>/attachments/<id>
-DELETE /users/<id | userPrincipalName>/mailFolders/<id>/childFolders/<id>/messages/<id>/attachments/<id>
+DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
-DELETE /groups/<id>/threads/<id>/posts/<id>/attachments/<id>
-DELETE /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/attachments/<id>
+DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
+DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -68,13 +68,13 @@ If successful, this method returns `204, No Content` response code. It does not 
 
 ## Example
 ##### Request
-Here is an example of the request.
+Here is an example of the request to delete an attachment on an event.
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/events/<id>/attachments/<id>
+DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```
 ##### Response
 Here is an example of the response.

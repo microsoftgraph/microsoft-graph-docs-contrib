@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API: *User.ReadWrite
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /users/<id>/manager/$ref
+PUT /users/{id}/manager/$ref
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -30,12 +30,12 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<id>/manager/$ref
+PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
 Content-type: application/json
 Content-length: xxx
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/users/<id>"
+  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
