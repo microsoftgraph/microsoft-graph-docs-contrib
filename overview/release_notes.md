@@ -64,8 +64,9 @@ getting attachments of group posts currently return the error message "The OData
 and is expected to be widely available by the end of January 2016.
 
 
-#### Setting the **allowExternalSenders** property
-There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`. 
+#### Setting the allowExternalSenders property
+There is currently an issue that prevents setting the **allowExternalSenders** property of a group 
+in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
 
 ## Contacts
@@ -111,6 +112,13 @@ since GET /contacts in the `/beta` version applies to all the contacts in the us
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
+
+## Messages
+#### The comment parameter for creating a draft
+The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md), 
+[createReplyAll](../api-reference/v1.0/api/message_createreplyall), [createForward](../api-reference/v1.0/api/message_createforward.md)) 
+does not become part of the body of the resultant message draft.  
+
 
 ## Drives, files and content streaming
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.
