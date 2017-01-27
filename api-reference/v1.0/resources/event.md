@@ -56,7 +56,7 @@ An event in a calendar.
 |originalEndTimeZone|String|The end time zone that was set when the event was created.|
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String|The start time zone that was set when the event was created. |
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence patern for the event.|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
