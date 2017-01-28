@@ -53,9 +53,9 @@ An event in a calendar.
 |location|[location](location.md)|The location of the event.|
 |onlineMeetingUrl|String|A URL for an online meeting.|
 |organizer|[recipient](recipient.md)|The organizer of the event.|
-|originalEndTimeZone|String|The end time zone that was set when the event was created.|
+|originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom`indicates that a legacy custom time zone was set in desktop Outlook.|
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|originalStartTimeZone|String|The start time zone that was set when the event was created. |
+|originalStartTimeZone|String|The start time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
