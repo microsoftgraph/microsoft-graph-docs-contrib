@@ -4,7 +4,7 @@ You can use Microsoft Graph to build compelling app experiences based on users, 
 
 You can access [users](user.md) through Microsoft Graph in two ways:
 
-- By their ID, `/users/{id}` 
+- By their ID, `/users/{id | userPrincipalName}` 
 - By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`
 
 ## Authorization
