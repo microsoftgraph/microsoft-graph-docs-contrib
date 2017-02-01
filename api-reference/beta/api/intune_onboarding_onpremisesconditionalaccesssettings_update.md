@@ -6,7 +6,7 @@ Update the properties of a [onPremisesConditionalAccessSettings](../resources/in
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+** DeviceManagementConfiguration.ReadWrite.All **
 ### HTTP Request
 <!-- {
   "blockType": "ignored"

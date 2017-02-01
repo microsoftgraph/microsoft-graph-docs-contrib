@@ -6,7 +6,8 @@ Update the properties of a [managedDeviceOverview](../resources/intune_onboardin
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+** DeviceManagementManagedDevices.ReadWrite.All **
+
 ### HTTP Request
 <!-- {
   "blockType": "ignored"

@@ -6,7 +6,8 @@ Get the [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onp
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+** DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All **
+
 ### HTTP Request
 <!-- {
   "blockType": "ignored"

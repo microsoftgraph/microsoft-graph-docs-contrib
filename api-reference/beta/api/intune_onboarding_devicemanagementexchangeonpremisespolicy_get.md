@@ -6,7 +6,8 @@ Read properties and relationships of the [deviceManagementExchangeOnPremisesPoli
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+**DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All **
+
 ### HTTP Request
 <!-- {
   "blockType": "ignored"

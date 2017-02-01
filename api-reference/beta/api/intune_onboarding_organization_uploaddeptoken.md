@@ -6,7 +6,8 @@ Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
-**TODO: Determine scopes **
+** DeviceManagementConfiguration.ReadWrite.All **
+
 ### HTTP Request
 <!-- {
   "blockType": "ignored"
