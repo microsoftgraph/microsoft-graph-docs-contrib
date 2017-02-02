@@ -3,9 +3,9 @@
 This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](http://graph.microsoft.io/en-us/changelog).
 
 ## Graph Explorer
-Microsoft Account logins have been turned off into the Graph Explorer due to a service issue. We are actively working on a fix and will respond back when it is ready again.  
+We have turned off Microsoft Account logons to the Graph Explorer due to a service issue. We are actively working on a fix and will update this text when it's ready.  
 
-There was an issue with Internet Explorer and Edge sign-ins not working. That issue has been resolved as of 2/2.
+Signins with Internet Explorer and Microsoft Edge were not working. That issue has been resolved as of February 2, 2017.
 
 ## Users
 #### No instant access after creation
