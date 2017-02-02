@@ -19,10 +19,12 @@ The typical call pattern is as follows:
 ### State tokens
 
 A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header. 
-The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_. State tokens are completely opaque to 
-the client; the following is all you need to know about them:
+The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_. 
+
+These tokens are completely opaque to the client. The following is all you need to know about them:
+
 - Each token reflects the state and represents a snapshot of the resource in that round of change tracking. 
-- State tokens also encode and include other query parameters (such as `$select` if the resource supports it) 
+- These state tokens also encode and include other query parameters (such as `$select` if the resource supports it) 
 specified in the initial delta query request, so that you won't have to repeat them in subsequent delta query requests.
 - When carrying out delta query, you can simply copy and apply the `nextLink` or `deltaLink` URL as is to the next **delta** function call 
 without having to inspect the contents of the URL, including its state token.
@@ -83,6 +85,7 @@ In other words, tracking group membership for users is not yet supported. The Mi
 
 ## Delta query request examples 
 
+- [Get incremental changes to events in a calendar view (preview)](../Concepts/delta_query_events.md)
 - [Get incremental changes to messages in a folder (preview)](./delta_query_messages.md)
 - [Get incremental changes to groups (preview)](./delta_query_groups.md)
 - [Get incremental changes to users (preview)](./delta_query_users.md)
