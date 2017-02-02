@@ -2,6 +2,11 @@
 
 This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](http://graph.microsoft.io/en-us/changelog).
 
+## Graph Explorer
+Microsoft Account logins have been turned off into the Graph Explorer due to a service issue. We are actively working on a fix and will respond back when it is ready again.  
+
+There was an issue with Internet Explorer and Edge sign-ins not working. That issue has been resolved as of 2/2.
+
 ## Users
 #### No instant access after creation
 Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response. 
