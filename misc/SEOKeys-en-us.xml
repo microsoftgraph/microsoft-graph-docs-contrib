@@ -2749,8 +2749,8 @@
 			<Item text="Get encryption public key" url="/en-us/api-reference/beta/api/intune_onboarding_organization_getencryptionpublickey"/>
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_organization_list"/>
 			<Item text="List Apple volume purchase program token" url="/en-us/api-reference/beta/api/intune_onboarding_organization_list_applevolumepurchaseprogramtoken"/>
-api/intune_onboarding_onpremisesconditionalaccesssettings_get			<Item text="List sideloading key" url="/en-us/api-reference/beta/api/intune_onboarding_organization_list_sideloadingkey"/>
-			<Item text="Set mobile device management authority" api/intune_onboarding_onpremisesconditionalaccesssettings_updateurl="/en-us/api-reference/beta/api/intune_onboarding_organization_setmobiledevicemanagementauthority"/>
+      <Item text="List sideloading key" url="/en-us/api-reference/beta/api/intune_onboarding_organization_list_sideloadingkey"/>
+			<Item text="Set mobile device management authority" url="/en-us/api-reference/beta/api/intune_onboarding_organization_setmobiledevicemanagementauthority"/>
 			<Item text="Sync with Apple device enrollment program" url="/en-us/api-reference/beta/api/intune_onboarding_organization_syncwithappledeviceenrollmentprogram"/>
 			<Item text="Toggle on-premises certifcate connector" url="/en-us/api-reference/beta/api/intune_onboarding_organization_toggleonpremisescertificateconnector"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_organization_update"/>
