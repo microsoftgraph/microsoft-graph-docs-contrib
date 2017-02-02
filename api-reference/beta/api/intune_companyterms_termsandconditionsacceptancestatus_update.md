@@ -1,4 +1,7 @@
-﻿# Update termsAndConditionsAcceptanceStatus> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update termsAndConditionsAcceptanceStatus
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /termsAndConditions/{id}/acceptanceStatuses/{id}
+PATCH /termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 ```
 
 ### Request headers
@@ -25,10 +28,10 @@ The following table shows the properties that are required when you create a [te
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity.|
-|userDisplayName|String|The name of the user that this acceptance status is for.|
-|acceptedVersion|Int32|The version of the terms that were accepted. 0 if never accepted.|
-|acceptedDateTime|DateTimeOffset|The date and time that the terms were accepted.|
+|id|String|Unique identifier of the entity.|
+|userDisplayName|String|Display name of the user whose acceptance the entity represents.|
+|acceptedVersion|Int32|Most recent version number of the T&C accepted by the user.|
+|acceptedDateTime|DateTimeOffset|DateTime when the terms were last accepted by the user.|
 
 
 
@@ -39,7 +42,7 @@ If successful, this method returns a `200 OK` response code and an updated [term
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/termsAndConditions/{id}/acceptanceStatuses/{id}
+PATCH https://graph.microsoft.com/beta/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 Content-type: application/json
 Content-length: 138
 

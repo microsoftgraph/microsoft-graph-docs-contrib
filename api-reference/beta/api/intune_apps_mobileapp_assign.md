@@ -1,5 +1,8 @@
-﻿# assign action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Assigns properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) object.
+﻿# assign action
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -10,10 +13,10 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/{id}/assign
-POST /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/app//assign
-POST /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}/app//assign
-POST /deviceAppManagement/mobileApps/{id}/groupAssignments/{id}/app//assign
+POST /deviceAppManagement/mobileApps/{mobileAppId}/assign
+POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app//assign
+POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app//assign
+POST /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app//assign
 ```
 
 ### Request headers
@@ -39,7 +42,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/assign
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assign
 
 Content-type: application/json
 Content-length: 266
@@ -61,3 +64,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+

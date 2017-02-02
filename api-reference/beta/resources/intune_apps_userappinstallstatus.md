@@ -1,6 +1,8 @@
-﻿# userAppInstallStatus resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# userAppInstallStatus resource type
 
-Contains properties for the installation summary for a user.
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Contains properties for the installation status for a user.
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|

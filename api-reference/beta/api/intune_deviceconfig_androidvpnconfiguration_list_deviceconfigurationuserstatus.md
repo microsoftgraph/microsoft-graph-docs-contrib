@@ -1,4 +1,7 @@
-﻿# List deviceConfigurationUserStatuses> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List deviceConfigurationUserStatuses
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Get the deviceConfigurationUserStatuses from the userStatuses navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,12 +13,12 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/{id}/userStatuses/
-GET /deviceManagement/deviceConfigurations/{id}/rootCertificate//userStatuses/
-GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//userStatuses/
-GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//userStatuses/
-GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//userStatuses/
-GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//userStatuses/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//userStatuses/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//userStatuses/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//userStatuses/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate//userStatuses/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//userStatuses/
 ```
 
 ### Request headers
@@ -34,7 +37,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/userStatuses/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/
 ```
 
 ##### Response
@@ -42,15 +45,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 263
+Content-Length: 400
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceConfigurationUserStatus",
       "id": "7e323db2-3db2-7e32-b23d-327eb23d327e",
+      "userDisplayName": "User Display Name value",
+      "devicesCount": 12,
       "status": "notApplicable",
-      "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+      "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+      "userPrincipalName": "User Principal Name value"
     }
   ]
 }

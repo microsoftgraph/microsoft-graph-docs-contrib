@@ -1,4 +1,7 @@
-﻿# Get windows10MobileCompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get windows10MobileCompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceCompliancePolicies/{id}
-GET /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-GET /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+GET /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/
+GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/
 ```
 
 ### Optional query parameters
@@ -33,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [windows10Mobile
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ##### Response
@@ -41,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1034
+Content-Length: 1029
 
 {
   "value": {
@@ -54,12 +57,12 @@ Content-Length: 1034
     "version": 7,
     "passwordRequired": true,
     "passwordBlockSimple": true,
-    "passwordMinimumLength": 21,
-    "passwordMinimumCharacterSetCount": 32,
+    "passwordMinimumLength": 5,
+    "passwordMinimumCharacterSetCount": 0,
     "passwordRequiredType": "alphanumeric",
-    "passwordPreviousPasswordBlockCount": 34,
-    "passwordExpirationDays": 22,
-    "passwordMinutesOfInactivityBeforeLock": 37,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordExpirationDays": 6,
+    "passwordMinutesOfInactivityBeforeLock": 5,
     "passwordRequireToUnlockFromIdle": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",

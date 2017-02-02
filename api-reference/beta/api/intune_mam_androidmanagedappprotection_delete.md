@@ -1,4 +1,7 @@
-﻿# Delete androidManagedAppProtection> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Delete androidManagedAppProtection
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Deletes a [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /managedAppPolicies/{id}
-DELETE /managedAppRegistrations/{id}/appliedPolicies/{id}
-DELETE /managedAppRegistrations/{id}/intendedPolicies/{id}
+DELETE /managedAppPolicies/{managedAppPoliciesId}
+DELETE /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{managedAppPolicyId}
+DELETE /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}
 ```
 
 ### Request headers
@@ -31,7 +34,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/managedAppPolicies/{id}
+DELETE https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}
 ```
 
 ##### Response

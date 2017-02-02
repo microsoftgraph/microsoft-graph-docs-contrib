@@ -1,4 +1,7 @@
-﻿# Get windowsPhone81CertificateProfileBase> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get windowsPhone81CertificateProfileBase
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Get the [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) from the identityCertificate navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/
 ```
 
 ### Optional query parameters
@@ -31,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [windowsPhone81C
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/
 ```
 
 ##### Response
@@ -50,11 +53,11 @@ Content-Length: 873
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "renewalThresholdPercentage": 26,
+    "renewalThresholdPercentage": 10,
     "keyStorageProvider": "useTpmKspOtherwiseFail",
     "subjectNameFormat": "commonNameIncludingEmail",
     "subjectAlternativeNameType": "userPrincipalName",
-    "certificateValidityPeriodValue": 30,
+    "certificateValidityPeriodValue": 14,
     "certificateValidityPeriodScale": "months",
     "extendedKeyUsages": [
       {

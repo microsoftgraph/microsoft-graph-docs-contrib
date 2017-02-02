@@ -1,6 +1,8 @@
-﻿# wipeByDeviceTag action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Wipe by device tag of the [user](../resources/intune_mam_user.md) objects.
+﻿# wipeByDeviceTag action
 
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -11,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /users/{id}/wipeByDeviceTag
+POST /users/{usersId}/wipeByDeviceTag
 ```
 
 ### Request headers
@@ -37,7 +39,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/wipeByDeviceTag
+POST https://graph.microsoft.com/beta/users/{usersId}/wipeByDeviceTag
 
 Content-type: application/json
 Content-length: 39
@@ -52,3 +54,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+

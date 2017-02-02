@@ -1,4 +1,7 @@
-﻿# Delete importedAppleDeviceIdentity> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Delete importedAppleDeviceIdentity
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Deletes a [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/importedAppleDeviceIdentities/{id}
+DELETE /deviceManagement/importedAppleDeviceIdentities/{importedAppleDeviceIdentityId}
 ```
 
 ### Request headers
@@ -29,7 +32,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/importedAppleDeviceIdentities/{id}
+DELETE https://graph.microsoft.com/beta/deviceManagement/importedAppleDeviceIdentities/{importedAppleDeviceIdentityId}
 ```
 
 ##### Response

@@ -1,4 +1,6 @@
-﻿# deviceComplianceScheduledActionForRule resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# deviceComplianceScheduledActionForRule resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Scheduled Action for Rule
 ### Methods
@@ -15,6 +17,7 @@ Scheduled Action for Rule
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
+|ruleName|String|Name of the rule which this scheduled action applies to.|
 
 ### Relationships
 |Relationship|Type|Description|
@@ -32,7 +35,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "ruleName": "String"
 }
 ```
 

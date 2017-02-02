@@ -1,4 +1,7 @@
-﻿# Get roleDefinition> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get roleDefinition
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Get the [roleDefinition](../resources/intune_rbac_roledefinition.md) from the roleDefinition navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/roleDefinitions/{id}
-GET /deviceManagement/roleDefinitions/{id}/roleAssignments/{id}/roleDefinition/
+GET /deviceManagement/roleDefinitions/{roleDefinitionId}
+GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/
 ```
 
 ### Optional query parameters
@@ -32,7 +35,7 @@ If successful, this method returns a `200 OK` response code and [roleDefinition]
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}
 ```
 
 ##### Response

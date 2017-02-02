@@ -1,4 +1,7 @@
-﻿# Create user> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create user
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [user](../resources/intune_onboarding_user.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /users/{id}
+POST /users/
 ```
 
 ### Request headers
@@ -37,13 +40,13 @@ If successful, this method returns a `201 Created` response code and a [user](..
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/users/{id}
+POST https://graph.microsoft.com/beta/users/
 Content-type: application/json
-Content-length: 78
+Content-length: 77
 
 {
   "@odata.type": "#microsoft.graph.user",
-  "deviceEnrollmentLimit": 21
+  "deviceEnrollmentLimit": 5
 }
 ```
 
@@ -52,12 +55,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 127
+Content-Length: 126
 
 {
   "@odata.type": "#microsoft.graph.user",
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3",
-  "deviceEnrollmentLimit": 21
+  "deviceEnrollmentLimit": 5
 }
 ```
 

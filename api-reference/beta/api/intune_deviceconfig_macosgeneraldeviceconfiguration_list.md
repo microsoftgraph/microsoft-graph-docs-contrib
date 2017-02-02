@@ -1,4 +1,7 @@
-﻿# List macOSGeneralDeviceConfigurations> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List macOSGeneralDeviceConfigurations
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1232
+Content-Length: 1227
 
 {
   "value": [
@@ -63,12 +66,12 @@ Content-Length: 1232
         "Email In Domain Suffixes value"
       ],
       "passwordBlockSimple": true,
-      "passwordExpirationDays": 22,
-      "passwordMinimumCharacterSetCount": 32,
-      "passwordMinimumLength": 21,
-      "passwordMinutesOfInactivityBeforeLock": 37,
-      "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-      "passwordPreviousPasswordBlockCount": 34,
+      "passwordExpirationDays": 6,
+      "passwordMinimumCharacterSetCount": 0,
+      "passwordMinimumLength": 5,
+      "passwordMinutesOfInactivityBeforeLock": 5,
+      "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+      "passwordPreviousPasswordBlockCount": 2,
       "passwordRequiredType": "alphanumeric",
       "passwordRequired": true
     }

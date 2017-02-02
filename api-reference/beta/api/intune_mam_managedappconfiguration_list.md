@@ -1,4 +1,7 @@
-﻿# List managedAppConfigurations> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List managedAppConfigurations
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -11,8 +14,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedAppPolicies/
-GET /managedAppRegistrations/{id}/appliedPolicies/
-GET /managedAppRegistrations/{id}/intendedPolicies/
+GET /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/
+GET /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/
 ```
 
 ### Request headers
@@ -39,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 556
+Content-Length: 555
 
 {
   "value": [
@@ -48,7 +51,7 @@ Content-Length: 556
       "displayName": "Display Name value",
       "description": "Description value",
       "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-      "deployedAppCount": 16,
+      "deployedAppCount": 0,
       "id": "2ed27cb5-7cb5-2ed2-b57c-d22eb57cd22e",
       "version": "Version value",
       "customSettings": [

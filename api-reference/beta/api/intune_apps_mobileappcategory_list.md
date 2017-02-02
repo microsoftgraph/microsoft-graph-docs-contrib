@@ -1,4 +1,7 @@
-﻿# List mobileAppCategories> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List mobileAppCategories
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -11,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceAppManagement/mobileAppCategories/
-GET /deviceAppManagement/mobileApps/{id}/categories/
+GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/
 ```
 
 ### Request headers
@@ -38,14 +41,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 193
+Content-Length: 261
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.mobileAppCategory",
       "id": "d85d9cee-9cee-d85d-ee9c-5dd8ee9c5dd8",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
     }
   ]
 }

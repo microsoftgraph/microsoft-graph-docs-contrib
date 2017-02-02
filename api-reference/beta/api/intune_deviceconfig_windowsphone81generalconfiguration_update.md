@@ -1,4 +1,7 @@
-﻿# Update windowsPhone81GeneralConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update windowsPhone81GeneralConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{id}
-PATCH /deviceConfigurationAssignments/{id}/deviceConfiguration/
-PATCH /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
 ### Request headers
@@ -73,9 +76,9 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1491
+Content-length: 1487
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -104,12 +107,12 @@ Content-length: 1491
   "microsoftAccountBlocked": true,
   "nfcBlocked": true,
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passwordMinimumCharacterSetCount": 32,
-  "passwordPreviousPasswordBlockCount": 34,
-  "passwordSignInFailureCountBeforeFactoryReset": 44,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordPreviousPasswordBlockCount": 2,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true,
   "screenCaptureBlocked": true,
@@ -128,7 +131,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1672
+Content-Length: 1668
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",
@@ -160,12 +163,12 @@ Content-Length: 1672
   "microsoftAccountBlocked": true,
   "nfcBlocked": true,
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passwordMinimumCharacterSetCount": 32,
-  "passwordPreviousPasswordBlockCount": 34,
-  "passwordSignInFailureCountBeforeFactoryReset": 44,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordPreviousPasswordBlockCount": 2,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true,
   "screenCaptureBlocked": true,
