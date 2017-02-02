@@ -63,14 +63,14 @@ the request header, _Prefer: odata.maxpagesize={x}_, to set the maximum number o
 The following example shows a series of 3 requests to synchronize the user's default calendar in a specific time range. 
 There are 5 events in that calendar view.
 
-- [Step 1: sample initial request](#step-1:-sample-initial-request) and [response](#sample-initial-response)
-- [Step 2: sample second request](#step-2:-sample-second-request) and [response](#sample-second-response)
-- [Step 3: sample third request](#step-3:-sample-third-request) and [final response](#sample-third-and-final-response)
+- [Step 1: sample initial request](#step-1-sample-initial-request) and [response](#sample-initial-response)
+- [Step 2: sample second request](#step-2-sample-second-request) and [response](#sample-second-response)
+- [Step 3: sample third request](#step-3-sample-third-request) and [final response](#sample-third-and-final-response)
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties
 are returned. 
 
-See also what you'll do in the [next round](#the-next-round:-sample-first-response).
+See also what you'll do in the [next round](#the-next-round-sample-first-response).
 
 
 ### Step 1: sample initial request
@@ -280,7 +280,7 @@ Prefer: odata.maxpagesize=2
 
 The third response returns the only remaining event in the calendar view, and a `deltaLink` URL which indicates 
 synchronization is complete for this calendar view. Save and use the `deltaLink` URL to 
-[synchronize that calendar view in the next round](#the-next-round:-sample-request).
+[synchronize that calendar view in the next round](#the-next-round-sample-request).
 
 
 <!-- {
@@ -334,7 +334,7 @@ Content-type: application/json
 
 ### The next round: sample first request
 
-Using the `deltaLink` from the [last request](#step-3:-sample-third-request) in the last round, 
+Using the `deltaLink` from the [last request](#step-3-sample-third-request) in the last round, 
 you will be able to get only those events that have changed (by being added, deleted, or updated) in that calendar view since then.
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
