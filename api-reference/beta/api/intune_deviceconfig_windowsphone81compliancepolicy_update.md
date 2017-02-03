@@ -1,4 +1,7 @@
-﻿# Update windowsPhone81CompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update windowsPhone81CompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [windowsPhone81CompliancePolicy](../resources/intune_deviceconfig_windowsphone81compliancepolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceCompliancePolicies/{id}
-PATCH /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-PATCH /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+PATCH /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/
 ```
 
 ### Request headers
@@ -54,9 +57,9 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 607
+Content-length: 602
 
 {
   "description": "Description value",
@@ -64,12 +67,12 @@ Content-length: 607
   "displayName": "Display Name value",
   "version": 7,
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinimumCharacterSetCount": 32,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
   "passwordRequiredType": "alphanumeric",
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
@@ -82,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 784
+Content-Length: 779
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",
@@ -93,12 +96,12 @@ Content-Length: 784
   "displayName": "Display Name value",
   "version": 7,
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinimumCharacterSetCount": 32,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
   "passwordRequiredType": "alphanumeric",
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",

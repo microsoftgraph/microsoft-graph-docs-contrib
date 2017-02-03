@@ -1,4 +1,6 @@
-﻿# managedDeviceMobileAppConfigurationDeviceStatus resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# managedDeviceMobileAppConfigurationDeviceStatus resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties, inherited properties and actions for an MDM mobile app configuration status for a device.
 ### Methods
@@ -14,8 +16,10 @@ Contains properties, inherited properties and actions for an MDM mobile app conf
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
+|deviceDisplayName|String|Device name of the DevicePolicyStatus.|
 |status|String|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
+|userPrincipalName|String|UserPrincipalName.|
 
 ### Relationships
 None
@@ -31,8 +35,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus",
   "id": "String (identifier)",
+  "deviceDisplayName": "String",
   "status": "String",
-  "lastReportedDateTime": "String (timestamp)"
+  "lastReportedDateTime": "String (timestamp)",
+  "userPrincipalName": "String"
 }
 ```
 

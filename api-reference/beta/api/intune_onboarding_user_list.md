@@ -1,4 +1,7 @@
-﻿# List users> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List users
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [user](../resources/intune_onboarding_user.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,14 +40,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 172
+Content-Length: 171
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.user",
       "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3",
-      "deviceEnrollmentLimit": 21
+      "deviceEnrollmentLimit": 5
     }
   ]
 }

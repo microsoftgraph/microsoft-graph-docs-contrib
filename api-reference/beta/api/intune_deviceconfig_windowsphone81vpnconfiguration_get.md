@@ -1,4 +1,7 @@
-﻿# Get windowsPhone81VpnConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get windowsPhone81VpnConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [windowsPhone81VpnConfiguration](../resources/intune_deviceconfig_windowsphone81vpnconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/{id}
-GET /deviceConfigurationAssignments/{id}/deviceConfiguration/
-GET /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
 ### Optional query parameters
@@ -33,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [windowsPhone81V
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ##### Response

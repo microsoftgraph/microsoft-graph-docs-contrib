@@ -1,4 +1,7 @@
-﻿# Update directoryObject> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update directoryObject
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [directoryObject](../resources/intune_mam_directoryobject.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedAppPolicies/{id}/targetedSecurityGroups/{id}
-PATCH /managedAppPolicies/{id}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{id}
-PATCH /managedAppPolicies/{id}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{id}
+PATCH /managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/{directoryObjectId}
+PATCH /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{directoryObjectId}
+PATCH /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{directoryObjectId}
 ```
 
 ### Request headers
@@ -38,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [dire
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppPolicies/{id}/targetedSecurityGroups/{id}
+PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/{directoryObjectId}
 Content-type: application/json
 Content-length: 2
 

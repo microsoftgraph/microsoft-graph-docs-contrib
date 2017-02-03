@@ -1,4 +1,7 @@
-﻿# Update androidCompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update androidCompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceCompliancePolicies/{id}
-PATCH /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-PATCH /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+PATCH /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/
 ```
 
 ### Request headers
@@ -39,7 +42,6 @@ The following table shows the properties that are required when you create a [an
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordExpirationDays|Int32|Number of days before the password expires.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
-|storageRequireRemovableStorageEncryption|Boolean|Indicates whether or not to require removable storage encryption.|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
@@ -60,9 +62,9 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 928
+Content-length: 871
 
 {
   "description": "Description value",
@@ -70,12 +72,11 @@ Content-length: 928
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
-  "passwordMinimumLength": 21,
+  "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordExpirationDays": 22,
-  "passwordPreviousPasswordBlockCount": 34,
-  "storageRequireRemovableStorageEncryption": true,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordExpirationDays": 6,
+  "passwordPreviousPasswordBlockCount": 2,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "requireAppVerify": true,
@@ -94,7 +95,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1098
+Content-Length: 1041
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -105,12 +106,11 @@ Content-Length: 1098
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
-  "passwordMinimumLength": 21,
+  "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordExpirationDays": 22,
-  "passwordPreviousPasswordBlockCount": 34,
-  "storageRequireRemovableStorageEncryption": true,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordExpirationDays": 6,
+  "passwordPreviousPasswordBlockCount": 2,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "requireAppVerify": true,

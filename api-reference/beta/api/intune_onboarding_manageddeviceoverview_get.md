@@ -1,4 +1,7 @@
-﻿# Get managedDeviceOverview> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get managedDeviceOverview
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [managedDeviceOverview](../resources/intune_onboarding_manageddeviceoverview.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -39,21 +42,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 482
+Content-Length: 478
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.managedDeviceOverview",
     "id": "42a91653-1653-42a9-5316-a9425316a942",
-    "enrolledDeviceCount": 19,
-    "mdmEnrolledCount": 16,
-    "dualEnrolledDeviceCount": 23,
+    "enrolledDeviceCount": 3,
+    "mdmEnrolledCount": 0,
+    "dualEnrolledDeviceCount": 7,
     "deviceOperatingSystemSummary": {
       "@odata.type": "microsoft.graph.deviceOperatingSystemSummary",
       "androidCount": 12,
       "iosCount": 8,
       "macOSCount": 10,
-      "windowsMobileCount": 18,
+      "windowsMobileCount": 2,
       "windowsCount": 12
     }
   }

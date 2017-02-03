@@ -1,4 +1,7 @@
-﻿# Create deviceComplianceActionItem> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create deviceComplianceActionItem
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/{id}/scheduledActionsForRule/{id}/scheduledActionConfigurations/{id}
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/
 ```
 
 ### Request headers
@@ -38,13 +41,13 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}/scheduledActionsForRule/{id}/scheduledActionConfigurations/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/
 Content-type: application/json
-Content-length: 128
+Content-length: 127
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
-  "gracePeriodHours": 16,
+  "gracePeriodHours": 0,
   "actionType": "notification"
 }
 ```
@@ -54,12 +57,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 177
+Content-Length: 176
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "id": "e01a1893-1893-e01a-9318-1ae093181ae0",
-  "gracePeriodHours": 16,
+  "gracePeriodHours": 0,
   "actionType": "notification"
 }
 ```

@@ -1,4 +1,7 @@
-﻿# Get organization> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get organization
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [organization](../resources/intune_onboarding_organization.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /organization/{id}
+GET /organization/{organizationId}
 ```
 
 ### Optional query parameters
@@ -31,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [organization](.
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/organization/{id}
+GET https://graph.microsoft.com/beta/organization/{organizationId}
 ```
 
 ##### Response
@@ -39,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4015
+Content-Length: 4010
 
 {
   "value": {
@@ -85,8 +88,8 @@ Content-Length: 4015
     },
     "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {
       "@odata.type": "microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings",
-      "pinMinimumLength": 16,
-      "pinMaximumLength": 16,
+      "pinMinimumLength": 0,
+      "pinMaximumLength": 0,
       "pinUppercaseLettersUsage": "required",
       "pinLowercaseLettersUsage": "required",
       "pinSpecialCharactersUsage": "required",
@@ -94,11 +97,11 @@ Content-Length: 4015
       "securityDeviceRequired": true,
       "unlockWithBiometricsEnabled": true,
       "mobilePinSignInEnabled": true,
-      "pinPreviousBlockCount": 21,
-      "pinExpirationInDays": 19,
+      "pinPreviousBlockCount": 5,
+      "pinExpirationInDays": 3,
       "enhancedBiometrics": "enabled"
     },
-    "defaultDeviceEnrollmentLimit": 28,
+    "defaultDeviceEnrollmentLimit": 12,
     "intuneBrand": {
       "@odata.type": "microsoft.graph.intuneBrand",
       "displayName": "Display Name value",
@@ -135,7 +138,7 @@ Content-Length: 4015
       "enrollmentError": "Enrollment Error value",
       "lastConnectorConnectionTime": "2017-01-01T00:02:50.2393584-08:00",
       "connectorVersion": "Connector Version value",
-      "lastUploadVersion": 17
+      "lastUploadVersion": 1
     }
   }
 }

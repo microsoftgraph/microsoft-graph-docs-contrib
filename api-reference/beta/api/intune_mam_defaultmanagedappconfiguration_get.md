@@ -1,4 +1,7 @@
-﻿# Get defaultManagedAppConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get defaultManagedAppConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [defaultManagedAppConfiguration](../resources/intune_mam_defaultmanagedappconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/{id}
-GET /managedAppRegistrations/{id}/appliedPolicies/{id}
-GET /managedAppRegistrations/{id}/intendedPolicies/{id}
+GET /managedAppPolicies/{managedAppPoliciesId}
+GET /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{managedAppPolicyId}
+GET /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}
 ```
 
 ### Optional query parameters
@@ -33,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [defaultManagedA
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/{id}
+GET https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}
 ```
 
 ##### Response
@@ -41,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 521
+Content-Length: 520
 
 {
   "value": {
@@ -49,7 +52,7 @@ Content-Length: 521
     "displayName": "Display Name value",
     "description": "Description value",
     "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-    "deployedAppCount": 16,
+    "deployedAppCount": 0,
     "id": "6f83d45c-d45c-6f83-5cd4-836f5cd4836f",
     "version": "Version value",
     "customSettings": [

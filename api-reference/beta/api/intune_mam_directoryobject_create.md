@@ -1,4 +1,7 @@
-﻿# Create directoryObject> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create directoryObject
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [directoryObject](../resources/intune_mam_directoryobject.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedAppPolicies/{id}/targetedSecurityGroups/{id}
-POST /managedAppPolicies/{id}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/{id}
-POST /managedAppPolicies/{id}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/{id}
+POST /managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/
+POST /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppProtection/targetedSecurityGroups/
+POST /managedAppPolicies/{managedAppPoliciesId}/microsoft.graph.targetedManagedAppConfiguration/targetedSecurityGroups/
 ```
 
 ### Request headers
@@ -38,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [director
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppPolicies/{id}/targetedSecurityGroups/{id}
+POST https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/targetedSecurityGroups/
 Content-type: application/json
 Content-length: 57
 

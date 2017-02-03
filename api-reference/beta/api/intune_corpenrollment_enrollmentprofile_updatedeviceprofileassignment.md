@@ -1,5 +1,8 @@
-﻿# updateDeviceProfileAssignment action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Updates the assigned device profile.
+﻿# updateDeviceProfileAssignment action
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/enrollmentProfiles/{id}/updateDeviceProfileAssignment
+POST /deviceManagement/enrollmentProfiles/{enrollmentProfileId}/updateDeviceProfileAssignment
 ```
 
 ### Request headers
@@ -36,7 +39,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{id}/updateDeviceProfileAssignment
+POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{enrollmentProfileId}/updateDeviceProfileAssignment
 
 Content-type: application/json
 Content-length: 51
@@ -53,3 +56,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+

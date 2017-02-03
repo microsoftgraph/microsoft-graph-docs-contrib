@@ -1,4 +1,7 @@
-﻿# Create windowsPhone81SCEPCertificateProfile> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create windowsPhone81SCEPCertificateProfile
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [windowsPhone81SCEPCertificateProfile](../resources/intune_deviceconfig_windowsphone81scepcertificateprofile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}
-POST /deviceConfigurationAssignments/{id}/deviceConfiguration/
-POST /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+POST /deviceManagement/deviceConfigurations/
 ```
 
 ### Request headers
@@ -54,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a [windowsP
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
 Content-length: 854
 
@@ -64,11 +65,11 @@ Content-length: 854
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 26,
+  "renewalThresholdPercentage": 10,
   "keyStorageProvider": "useTpmKspOtherwiseFail",
   "subjectNameFormat": "commonNameIncludingEmail",
   "subjectAlternativeNameType": "userPrincipalName",
-  "certificateValidityPeriodValue": 30,
+  "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
     {
@@ -101,11 +102,11 @@ Content-Length: 962
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 26,
+  "renewalThresholdPercentage": 10,
   "keyStorageProvider": "useTpmKspOtherwiseFail",
   "subjectNameFormat": "commonNameIncludingEmail",
   "subjectAlternativeNameType": "userPrincipalName",
-  "certificateValidityPeriodValue": 30,
+  "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
     {

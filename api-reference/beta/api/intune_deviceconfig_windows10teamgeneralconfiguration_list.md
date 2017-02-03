@@ -1,4 +1,7 @@
-﻿# List windows10TeamGeneralConfigurations> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List windows10TeamGeneralConfigurations
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [windows10TeamGeneralConfiguration](../resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1114
+Content-Length: 1113
 
 {
   "value": [
@@ -53,7 +56,7 @@ Content-Length: 1114
       "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
       "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
       "maintenanceWindowBlocked": true,
-      "maintenanceWindowDurationInHours": 32,
+      "maintenanceWindowDurationInHours": 0,
       "maintenanceWindowStartTime": "11:59:09.3130000",
       "miracastChannel": "one",
       "miracastBlocked": true,

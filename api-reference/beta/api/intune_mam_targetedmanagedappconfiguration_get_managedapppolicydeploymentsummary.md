@@ -1,4 +1,7 @@
-﻿# Get managedAppPolicyDeploymentSummary> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get managedAppPolicyDeploymentSummary
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Get the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) from the deploymentSummary navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/{id}/deploymentSummary/
+GET /managedAppPolicies/{managedAppPoliciesId}/deploymentSummary/
 ```
 
 ### Optional query parameters
@@ -31,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [managedAppPolic
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/{id}/deploymentSummary/
+GET https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/deploymentSummary/
 ```
 
 ##### Response
@@ -45,7 +48,7 @@ Content-Length: 637
   "value": {
     "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
     "displayName": "Display Name value",
-    "configurationDeployedUserCount": 30,
+    "configurationDeployedUserCount": 14,
     "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
     "configurationDeploymentSummaryPerApp": [
       {
@@ -53,7 +56,7 @@ Content-Length: 637
         "mobileAppIdentifier": {
           "@odata.type": "microsoft.graph.mobileAppIdentifier"
         },
-        "configurationAppliedUserCount": 29
+        "configurationAppliedUserCount": 13
       }
     ],
     "id": "61f2f688-f688-61f2-88f6-f26188f6f261",

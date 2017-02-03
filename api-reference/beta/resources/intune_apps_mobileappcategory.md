@@ -1,4 +1,6 @@
-﻿# mobileAppCategory resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# mobileAppCategory resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for a single Intune app category.
 ### Methods
@@ -15,6 +17,7 @@ Contains properties for a single Intune app category.
 |---|---|---|
 |id|String|The key of the entity.|
 |displayName|String|The name of the app category.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.|
 
 ### Relationships
 None
@@ -30,7 +33,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.mobileAppCategory",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 

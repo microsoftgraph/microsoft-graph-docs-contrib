@@ -1,4 +1,7 @@
-﻿# Update organization> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update organization
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [organization](../resources/intune_onboarding_organization.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /organization/{id}
+PATCH /organization/{organizationId}
 ```
 
 ### Request headers
@@ -43,9 +46,9 @@ If successful, this method returns a `200 OK` response code and an updated [orga
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/organization/{id}
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}
 Content-type: application/json
-Content-length: 3708
+Content-length: 3703
 
 {
   "applePushNotificationCertificateSetting": {
@@ -88,8 +91,8 @@ Content-length: 3708
   },
   "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {
     "@odata.type": "microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings",
-    "pinMinimumLength": 16,
-    "pinMaximumLength": 16,
+    "pinMinimumLength": 0,
+    "pinMaximumLength": 0,
     "pinUppercaseLettersUsage": "required",
     "pinLowercaseLettersUsage": "required",
     "pinSpecialCharactersUsage": "required",
@@ -97,11 +100,11 @@ Content-length: 3708
     "securityDeviceRequired": true,
     "unlockWithBiometricsEnabled": true,
     "mobilePinSignInEnabled": true,
-    "pinPreviousBlockCount": 21,
-    "pinExpirationInDays": 19,
+    "pinPreviousBlockCount": 5,
+    "pinExpirationInDays": 3,
     "enhancedBiometrics": "enabled"
   },
-  "defaultDeviceEnrollmentLimit": 28,
+  "defaultDeviceEnrollmentLimit": 12,
   "intuneBrand": {
     "@odata.type": "microsoft.graph.intuneBrand",
     "displayName": "Display Name value",
@@ -138,7 +141,7 @@ Content-length: 3708
     "enrollmentError": "Enrollment Error value",
     "lastConnectorConnectionTime": "2017-01-01T00:02:50.2393584-08:00",
     "connectorVersion": "Connector Version value",
-    "lastUploadVersion": 17
+    "lastUploadVersion": 1
   }
 }
 ```
@@ -148,7 +151,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3808
+Content-Length: 3803
 
 {
   "@odata.type": "#microsoft.graph.organization",
@@ -193,8 +196,8 @@ Content-Length: 3808
   },
   "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {
     "@odata.type": "microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings",
-    "pinMinimumLength": 16,
-    "pinMaximumLength": 16,
+    "pinMinimumLength": 0,
+    "pinMaximumLength": 0,
     "pinUppercaseLettersUsage": "required",
     "pinLowercaseLettersUsage": "required",
     "pinSpecialCharactersUsage": "required",
@@ -202,11 +205,11 @@ Content-Length: 3808
     "securityDeviceRequired": true,
     "unlockWithBiometricsEnabled": true,
     "mobilePinSignInEnabled": true,
-    "pinPreviousBlockCount": 21,
-    "pinExpirationInDays": 19,
+    "pinPreviousBlockCount": 5,
+    "pinExpirationInDays": 3,
     "enhancedBiometrics": "enabled"
   },
-  "defaultDeviceEnrollmentLimit": 28,
+  "defaultDeviceEnrollmentLimit": 12,
   "intuneBrand": {
     "@odata.type": "microsoft.graph.intuneBrand",
     "displayName": "Display Name value",
@@ -243,7 +246,7 @@ Content-Length: 3808
     "enrollmentError": "Enrollment Error value",
     "lastConnectorConnectionTime": "2017-01-01T00:02:50.2393584-08:00",
     "connectorVersion": "Connector Version value",
-    "lastUploadVersion": 17
+    "lastUploadVersion": 1
   }
 }
 ```

@@ -1,6 +1,8 @@
-﻿# defaultDeviceEnrollmentWindowsHelloForBusinessSettings resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# defaultDeviceEnrollmentWindowsHelloForBusinessSettings resource type
 
-Windows Hello for Business settings applied with lowest priority to all users regardless of group membership.
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Device Enrollment Windows Hello for Business settings
 ### Properties
 |Property|Type|Description|
 |---|---|---|
@@ -44,3 +46,6 @@ Here is a JSON representation of the resource.
   "enhancedBiometrics": "String"
 }
 ```
+
+
+

@@ -1,5 +1,8 @@
-﻿# rebootNow action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Reboot a [managedDevice](../resources/intune_onboarding_manageddevice.md) object.
+﻿# rebootNow action
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedDevices/{id}/rebootNow
-POST /users/{id}/managedDevices/{id}/rebootNow
-POST /detectedapps/{id}/managedDevices/{id}/rebootNow
+POST /managedDevices/{managedDevicesId}/rebootNow
+POST /users/{usersId}/managedDevices/{managedDeviceId}/rebootNow
+POST /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}/rebootNow
 ```
 
 ### Request headers
@@ -31,7 +34,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedDevices/{id}/rebootNow
+POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/rebootNow
 ```
 
 ##### Response
@@ -39,3 +42,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+

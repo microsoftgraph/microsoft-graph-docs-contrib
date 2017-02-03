@@ -1,4 +1,7 @@
-﻿# Update deviceConfigurationGroupAssignment> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update deviceConfigurationGroupAssignment
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,13 +13,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceConfigurationGroupAssignment/{id}
-PATCH /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}
-PATCH /deviceManagement/deviceConfigurations/{id}/rootCertificate//groupAssignments/{id}
-PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/{id}
-PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/{id}
-PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/{id}
-PATCH /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/{id}
+PATCH /deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
 ```
 
 ### Request headers
@@ -43,7 +46,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/{id}
+PATCH https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
 Content-type: application/json
 Content-length: 48
 

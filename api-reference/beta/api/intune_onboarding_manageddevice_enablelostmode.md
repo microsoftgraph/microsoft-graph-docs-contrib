@@ -1,6 +1,8 @@
-﻿# enableLostMode action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Enable lost mode for a [managedDevice](../resources/intune_onboarding_manageddevice.md) object.
+﻿# enableLostMode action
 
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -11,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedDevices/{id}/enableLostMode
-POST /users/{id}/managedDevices/{id}/enableLostMode
-POST /detectedapps/{id}/managedDevices/{id}/enableLostMode
+POST /managedDevices/{managedDevicesId}/enableLostMode
+POST /users/{usersId}/managedDevices/{managedDeviceId}/enableLostMode
+POST /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}/enableLostMode
 ```
 
 ### Request headers
@@ -41,7 +43,7 @@ If successful, this action returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedDevices/{id}/enableLostMode
+POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/enableLostMode
 
 Content-type: application/json
 Content-length: 103
@@ -58,3 +60,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+

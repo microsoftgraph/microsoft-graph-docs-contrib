@@ -1,4 +1,7 @@
-﻿# Create windows10TeamGeneralConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create windows10TeamGeneralConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [windows10TeamGeneralConfiguration](../resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}
-POST /deviceConfigurationAssignments/{id}/deviceConfiguration/
-POST /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+POST /deviceManagement/deviceConfigurations/
 ```
 
 ### Request headers
@@ -55,9 +56,9 @@ If successful, this method returns a `201 Created` response code and a [windows1
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 897
+Content-length: 896
 
 {
   "@odata.type": "#microsoft.graph.windows10TeamGeneralConfiguration",
@@ -69,7 +70,7 @@ Content-length: 897
   "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
   "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
   "maintenanceWindowBlocked": true,
-  "maintenanceWindowDurationInHours": 32,
+  "maintenanceWindowDurationInHours": 0,
   "maintenanceWindowStartTime": "11:59:09.3130000",
   "miracastChannel": "one",
   "miracastBlocked": true,
@@ -85,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1005
+Content-Length: 1004
 
 {
   "@odata.type": "#microsoft.graph.windows10TeamGeneralConfiguration",
@@ -99,7 +100,7 @@ Content-Length: 1005
   "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
   "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
   "maintenanceWindowBlocked": true,
-  "maintenanceWindowDurationInHours": 32,
+  "maintenanceWindowDurationInHours": 0,
   "maintenanceWindowStartTime": "11:59:09.3130000",
   "miracastChannel": "one",
   "miracastBlocked": true,

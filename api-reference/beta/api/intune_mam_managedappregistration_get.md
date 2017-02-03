@@ -1,4 +1,7 @@
-﻿# Get managedAppRegistration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get managedAppRegistration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [managedAppRegistration](../resources/intune_mam_managedappregistration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppRegistrations/{id}
-GET /users/{id}/managedAppRegistrations/{id}
+GET /managedAppRegistrations/{managedAppRegistrationsId}
+GET /users/{usersId}/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
 ### Optional query parameters
@@ -32,7 +35,7 @@ If successful, this method returns a `200 OK` response code and [managedAppRegis
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppRegistrations/{id}
+GET https://graph.microsoft.com/beta/managedAppRegistrations/{managedAppRegistrationsId}
 ```
 
 ##### Response

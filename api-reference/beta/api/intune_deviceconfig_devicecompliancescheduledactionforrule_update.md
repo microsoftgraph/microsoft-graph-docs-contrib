@@ -1,4 +1,7 @@
-﻿# Update deviceComplianceScheduledActionForRule> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update deviceComplianceScheduledActionForRule
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceCompliancePolicies/{id}/scheduledActionsForRule/{id}
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 ```
 
 ### Request headers
@@ -26,6 +29,7 @@ The following table shows the properties that are required when you create a [de
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
+|ruleName|String|Name of the rule which this scheduled action applies to.|
 
 
 
@@ -36,11 +40,13 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}/scheduledActionsForRule/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 Content-type: application/json
-Content-length: 2
+Content-length: 37
 
-{}
+{
+  "ruleName": "Rule Name value"
+}
 ```
 
 ##### Response
@@ -48,11 +54,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 129
+Content-Length: 163
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",
-  "id": "f0075d5e-5d5e-f007-5e5d-07f05e5d07f0"
+  "id": "f0075d5e-5d5e-f007-5e5d-07f05e5d07f0",
+  "ruleName": "Rule Name value"
 }
 ```
 

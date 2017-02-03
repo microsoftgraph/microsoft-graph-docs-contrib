@@ -1,4 +1,7 @@
-﻿# Create androidTrustedRootCertificate> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create androidTrustedRootCertificate
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}/rootCertificate/
-POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.androidCertificateProfileBase/rootCertificate/
-POST /deviceManagement/deviceConfigurations/{id}/microsoft.graph.androidEnterpriseWiFiConfiguration/rootCertificateForServerValidation/
+POST /deviceManagement/deviceConfigurations/
 ```
 
 ### Request headers
@@ -45,7 +46,7 @@ If successful, this method returns a `201 Created` response code and a [androidT
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/rootCertificate/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
 Content-length: 339
 

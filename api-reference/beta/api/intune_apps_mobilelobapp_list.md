@@ -1,4 +1,7 @@
-﻿# List mobileLobApps> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List mobileLobApps
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [mobileLobApp](../resources/intune_apps_mobilelobapp.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1340
+Content-Length: 1335
 
 {
   "value": [
@@ -63,12 +66,12 @@ Content-Length: 1340
       "uploadState": 11,
       "installSummary": {
         "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-        "installedDeviceCount": 20,
-        "failedDeviceCount": 17,
-        "notInstalledDeviceCount": 23,
-        "installedUserCount": 18,
+        "installedDeviceCount": 4,
+        "failedDeviceCount": 1,
+        "notInstalledDeviceCount": 7,
+        "installedUserCount": 2,
         "failedUserCount": 15,
-        "notInstalledUserCount": 21
+        "notInstalledUserCount": 5
       },
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",

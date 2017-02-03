@@ -1,4 +1,7 @@
-﻿# List macOSCompliancePolicies> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List macOSCompliancePolicies
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [macOSCompliancePolicy](../resources/intune_deviceconfig_macoscompliancepolicy.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 682
+Content-Length: 678
 
 {
   "value": [
@@ -51,10 +54,10 @@ Content-Length: 682
       "version": 7,
       "passwordRequired": true,
       "passwordBlockSimple": true,
-      "passwordExpirationDays": 22,
-      "passwordMinimumLength": 21,
-      "passwordMinutesOfInactivityBeforeLock": 37,
-      "passwordPreviousPasswordBlockCount": 34,
+      "passwordExpirationDays": 6,
+      "passwordMinimumLength": 5,
+      "passwordMinutesOfInactivityBeforeLock": 5,
+      "passwordPreviousPasswordBlockCount": 2,
       "passwordRequiredType": "alphanumeric"
     }
   ]

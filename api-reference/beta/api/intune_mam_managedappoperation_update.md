@@ -1,4 +1,7 @@
-﻿# Update managedAppOperation> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update managedAppOperation
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [managedAppOperation](../resources/intune_mam_managedappoperation.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedAppRegistrations/{id}/operations/{id}
+PATCH /managedAppRegistrations/{managedAppRegistrationsId}/operations/{managedAppOperationId}
 ```
 
 ### Request headers
@@ -40,7 +43,7 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppRegistrations/{id}/operations/{id}
+PATCH https://graph.microsoft.com/beta/managedAppRegistrations/{managedAppRegistrationsId}/operations/{managedAppOperationId}
 Content-type: application/json
 Content-length: 165
 
