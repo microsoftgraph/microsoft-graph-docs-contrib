@@ -1,4 +1,7 @@
-﻿# List iosCompliancePolicies> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List iosCompliancePolicies
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 991
+Content-Length: 986
 
 {
   "value": [
@@ -50,11 +53,11 @@ Content-Length: 991
       "displayName": "Display Name value",
       "version": 7,
       "passcodeBlockSimple": true,
-      "passcodeExpirationDays": 22,
-      "passcodeMinimumLength": 21,
-      "passcodeMinutesOfInactivityBeforeLock": 37,
-      "passcodePreviousPasscodeBlockCount": 34,
-      "passcodeMinimumCharacterSetCount": 32,
+      "passcodeExpirationDays": 6,
+      "passcodeMinimumLength": 5,
+      "passcodeMinutesOfInactivityBeforeLock": 5,
+      "passcodePreviousPasscodeBlockCount": 2,
+      "passcodeMinimumCharacterSetCount": 0,
       "passcodeRequiredType": "alphanumeric",
       "passcodeRequired": true,
       "osMinimumVersion": "Os Minimum Version value",

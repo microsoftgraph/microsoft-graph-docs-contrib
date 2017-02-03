@@ -1,4 +1,7 @@
-﻿# Delete androidTrustedRootCertificate> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Delete androidTrustedRootCertificate
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Deletes a [androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/deviceConfigurations/{id}/rootCertificate/
-DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.androidCertificateProfileBase/rootCertificate/
-DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.androidEnterpriseWiFiConfiguration/rootCertificateForServerValidation/
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate/
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidCertificateProfileBase/rootCertificate/
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidEnterpriseWiFiConfiguration/rootCertificateForServerValidation/
 ```
 
 ### Request headers
@@ -31,7 +34,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/rootCertificate/
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate/
 ```
 
 ##### Response

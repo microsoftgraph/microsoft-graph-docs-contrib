@@ -1,5 +1,8 @@
-﻿# assign action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Assign the [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) object.
+﻿# assign action
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}/assign
-POST /deviceConfigurationAssignments/{id}/deviceConfiguration//assign
-POST /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration//assign
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
+POST /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration//assign
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration//assign
 ```
 
 ### Request headers
@@ -38,7 +41,7 @@ If successful, this action returns a `200 OK` response code and a [deviceConfigu
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 
 Content-type: application/json
 Content-length: 245
@@ -68,3 +71,6 @@ Content-Length: 134
   }
 ]
 ```
+
+
+

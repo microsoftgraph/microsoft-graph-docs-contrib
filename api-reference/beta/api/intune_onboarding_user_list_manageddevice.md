@@ -1,4 +1,7 @@
-﻿# List managedDevices> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List managedDevices
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Get the managedDevices from the managedDevices navigation property.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -11,8 +14,8 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedDevices/
-GET /users/{id}/managedDevices/
-GET /detectedapps/{id}/managedDevices/
+GET /users/{usersId}/managedDevices/
+GET /detectedapps/{detectedappsId}/managedDevices/
 ```
 
 ### Request headers
@@ -39,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2156
+Content-Length: 2204
 
 {
   "value": [
@@ -51,8 +54,8 @@ Content-Length: 2156
       "hardwareInformation": {
         "@odata.type": "microsoft.graph.hardwareInformation",
         "serialNumber": "Serial Number value",
-        "totalStorageSpace": 17,
-        "freeStorageSpace": 16,
+        "totalStorageSpace": 1,
+        "freeStorageSpace": 0,
         "imei": "Imei value",
         "meid": "Meid value",
         "manufacturer": "Manufacturer value",
@@ -81,7 +84,7 @@ Content-Length: 2156
       "deviceType": "windowsRT",
       "complianceState": "compliant",
       "jailBroken": "Jail Broken value",
-      "managementAgents": 16,
+      "managementAgents": 0,
       "managementAgent": "mdm",
       "osVersion": "Os Version value",
       "easActivated": true,
@@ -92,7 +95,8 @@ Content-Length: 2156
       "lostModeState": "enabled",
       "activationLockBypassCode": "Activation Lock Bypass Code value",
       "emailAddress": "Email Address value",
-      "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value"
+      "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+      "deviceRegistrationState": "smsidConflict"
     }
   ]
 }

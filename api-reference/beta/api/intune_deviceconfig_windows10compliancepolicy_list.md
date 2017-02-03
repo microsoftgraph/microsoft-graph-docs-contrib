@@ -1,4 +1,7 @@
-﻿# List windows10CompliancePolicies> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List windows10CompliancePolicies
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1014
+Content-Length: 1263
 
 {
   "value": [
@@ -49,15 +52,20 @@ Content-Length: 1014
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
       "version": 7,
-      "passwordMinutesOfInactivityBeforeLock": 37,
-      "passwordExpirationDays": 22,
-      "passwordMinimumLength": 21,
-      "passwordMinimumCharacterSetCount": 32,
+      "passwordRequired": true,
+      "passwordBlockSimple": true,
+      "passwordRequiredToUnlockFromIdle": true,
+      "passwordMinutesOfInactivityBeforeLock": 5,
+      "passwordExpirationDays": 6,
+      "passwordMinimumLength": 5,
+      "passwordMinimumCharacterSetCount": 0,
       "passwordRequiredType": "alphanumeric",
-      "passwordPreviousPasswordBlockCount": 34,
+      "passwordPreviousPasswordBlockCount": 2,
       "requireHealthyDeviceReport": true,
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
+      "mobileOsMinimumVersion": "Mobile Os Minimum Version value",
+      "mobileOsMaximumVersion": "Mobile Os Maximum Version value",
       "earlyLaunchAntiMalwareDriverEnabled": true,
       "bitLockerEnabled": true,
       "secureBootEnabled": true,

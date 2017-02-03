@@ -1,4 +1,7 @@
-﻿# Create windowsStoreForBusinessApp> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create windowsStoreForBusinessApp
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,10 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/{id}
-POST /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/app/
-POST /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}/app/
-POST /deviceAppManagement/mobileApps/{id}/groupAssignments/{id}/app/
+POST /deviceAppManagement/mobileApps/
 ```
 
 ### Request headers
@@ -55,9 +55,9 @@ If successful, this method returns a `201 Created` response code and a [windowsS
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
 Content-type: application/json
-Content-length: 979
+Content-length: 972
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreForBusinessApp",
@@ -79,15 +79,15 @@ Content-length: 979
   "uploadState": 11,
   "installSummary": {
     "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 20,
-    "failedDeviceCount": 17,
-    "notInstalledDeviceCount": 23,
-    "installedUserCount": 18,
+    "installedDeviceCount": 4,
+    "failedDeviceCount": 1,
+    "notInstalledDeviceCount": 7,
+    "installedUserCount": 2,
     "failedUserCount": 15,
-    "notInstalledUserCount": 21
+    "notInstalledUserCount": 5
   },
-  "usedLicenseCount": 16,
-  "totalLicenseCount": 17
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1
 }
 ```
 
@@ -96,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1087
+Content-Length: 1080
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreForBusinessApp",
@@ -120,15 +120,15 @@ Content-Length: 1087
   "uploadState": 11,
   "installSummary": {
     "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 20,
-    "failedDeviceCount": 17,
-    "notInstalledDeviceCount": 23,
-    "installedUserCount": 18,
+    "installedDeviceCount": 4,
+    "failedDeviceCount": 1,
+    "notInstalledDeviceCount": 7,
+    "installedUserCount": 2,
     "failedUserCount": 15,
-    "notInstalledUserCount": 21
+    "notInstalledUserCount": 5
   },
-  "usedLicenseCount": 16,
-  "totalLicenseCount": 17
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1
 }
 ```
 

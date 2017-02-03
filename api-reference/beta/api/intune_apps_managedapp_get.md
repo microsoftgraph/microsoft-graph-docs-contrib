@@ -1,4 +1,7 @@
-﻿# Get managedApp> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get managedApp
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [managedApp](../resources/intune_apps_managedapp.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,10 +13,10 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceAppManagement/mobileApps/{id}
-GET /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/app/
-GET /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}/app/
-GET /deviceAppManagement/mobileApps/{id}/groupAssignments/{id}/app/
+GET /deviceAppManagement/mobileApps/{mobileAppId}
+GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
+GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
+GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app/
 ```
 
 ### Optional query parameters
@@ -34,7 +37,7 @@ If successful, this method returns a `200 OK` response code and [managedApp](../
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ##### Response
@@ -42,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1166
+Content-Length: 1161
 
 {
   "value": {
@@ -67,12 +70,12 @@ Content-Length: 1166
     "uploadState": 11,
     "installSummary": {
       "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-      "installedDeviceCount": 20,
-      "failedDeviceCount": 17,
-      "notInstalledDeviceCount": 23,
-      "installedUserCount": 18,
+      "installedDeviceCount": 4,
+      "failedDeviceCount": 1,
+      "notInstalledDeviceCount": 7,
+      "installedUserCount": 2,
       "failedUserCount": 15,
-      "notInstalledUserCount": 21
+      "notInstalledUserCount": 5
     },
     "appAvailability": "lineOfBusiness",
     "version": "Version value"

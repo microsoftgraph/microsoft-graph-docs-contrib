@@ -1,4 +1,7 @@
-﻿# Create macOSGeneralDeviceConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create macOSGeneralDeviceConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [macOSGeneralDeviceConfiguration](../resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}
-POST /deviceConfigurationAssignments/{id}/deviceConfiguration/
-POST /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+POST /deviceManagement/deviceConfigurations/
 ```
 
 ### Request headers
@@ -35,7 +36,7 @@ The following table shows the properties that are required when you create a mac
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|List that is in the CompliantAppsList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|emailInDomainSuffixes|String collection|Any email address that does not have a suffix that matches any item listed here will be considered out-of-domain.|
+|emailInDomainSuffixes|String collection|An email address lacking a suffix that matches any of these strings will be considered out-of-domain.|
 |passwordBlockSimple|Boolean|Block simple passwords.|
 |passwordExpirationDays|Int32|Number of days before the password expires.|
 |passwordMinimumCharacterSetCount|Int32|Number of character sets a password must contain.|
@@ -55,9 +56,9 @@ If successful, this method returns a `201 Created` response code and a [macOSGen
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 975
+Content-length: 970
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -79,12 +80,12 @@ Content-length: 975
     "Email In Domain Suffixes value"
   ],
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumCharacterSetCount": 32,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordExpirationDays": 6,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true
 }
@@ -95,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1083
+Content-Length: 1078
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -119,12 +120,12 @@ Content-Length: 1083
     "Email In Domain Suffixes value"
   ],
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumCharacterSetCount": 32,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordExpirationDays": 6,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true
 }

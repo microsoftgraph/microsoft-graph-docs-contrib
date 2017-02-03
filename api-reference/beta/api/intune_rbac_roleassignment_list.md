@@ -1,4 +1,7 @@
-﻿# List roleAssignments> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List roleAssignments
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [roleAssignment](../resources/intune_rbac_roleassignment.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -11,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceManagement/roleAssignments/
-GET /deviceManagement/roleDefinitions/{id}/roleAssignments/
+GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/
 ```
 
 ### Request headers

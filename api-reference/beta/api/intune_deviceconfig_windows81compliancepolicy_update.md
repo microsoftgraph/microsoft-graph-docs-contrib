@@ -1,4 +1,7 @@
-﻿# Update windows81CompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update windows81CompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceCompliancePolicies/{id}
-PATCH /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-PATCH /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+PATCH /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/
 ```
 
 ### Request headers
@@ -33,6 +36,8 @@ The following table shows the properties that are required when you create a [wi
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|passwordRequired|Boolean|Require a password to unlock Windows device.|
+|passwordBlockSimple|Boolean|Indicates whether or not to block simple password.|
 |passwordExpirationDays|Int32|Password expiration in days.|
 |passwordMinimumLength|Int32|The minimum password length.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
@@ -52,21 +57,23 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 546
+Content-length: 602
 
 {
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinimumCharacterSetCount": 32,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
   "passwordRequiredType": "alphanumeric",
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordPreviousPasswordBlockCount": 2,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "storageRequireEncryption": true
@@ -78,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 718
+Content-Length: 774
 
 {
   "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
@@ -88,12 +95,14 @@ Content-Length: 718
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinimumCharacterSetCount": 32,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
   "passwordRequiredType": "alphanumeric",
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordPreviousPasswordBlockCount": 2,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "storageRequireEncryption": true

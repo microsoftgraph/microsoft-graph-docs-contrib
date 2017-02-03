@@ -1,4 +1,7 @@
-﻿# Create mobileAppGroupAssignment> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create mobileAppGroupAssignment
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /mobileAppGroupAssignments/{id}
-POST /deviceAppManagement/mobileApps/{id}/groupAssignments/{id}
+POST /mobileAppGroupAssignments/
+POST /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/
 ```
 
 ### Request headers
@@ -39,7 +42,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/mobileAppGroupAssignments/{id}
+POST https://graph.microsoft.com/beta/mobileAppGroupAssignments/
 Content-type: application/json
 Content-length: 148
 

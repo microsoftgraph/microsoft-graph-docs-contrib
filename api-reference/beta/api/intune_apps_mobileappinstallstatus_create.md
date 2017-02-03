@@ -1,4 +1,7 @@
-﻿# Create mobileAppInstallStatus> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create mobileAppInstallStatus
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}
-POST /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/deviceStatuses/{id}
+POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
+POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/deviceStatuses/
 ```
 
 ### Request headers
@@ -44,7 +47,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
 Content-type: application/json
 Content-length: 310
 
@@ -53,7 +56,7 @@ Content-length: 310
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "mobileAppInstallStatusValue": 27,
+  "mobileAppInstallStatusValue": 11,
   "errorCode": 9,
   "deviceType": 10,
   "osVersion": "Os Version value"
@@ -73,7 +76,7 @@ Content-Length: 359
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "mobileAppInstallStatusValue": 27,
+  "mobileAppInstallStatusValue": 11,
   "errorCode": 9,
   "deviceType": 10,
   "osVersion": "Os Version value"

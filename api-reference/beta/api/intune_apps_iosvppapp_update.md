@@ -1,4 +1,7 @@
-﻿# Update iosVppApp> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update iosVppApp
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [iosVppApp](../resources/intune_apps_iosvppapp.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,10 +13,10 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceAppManagement/mobileApps/{id}
-PATCH /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/app/
-PATCH /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}/app/
-PATCH /deviceAppManagement/mobileApps/{id}/groupAssignments/{id}/app/
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app/
 ```
 
 ### Request headers
@@ -59,9 +62,9 @@ If successful, this method returns a `200 OK` response code and an updated [iosV
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1316
+Content-length: 1309
 
 {
   "displayName": "Display Name value",
@@ -82,15 +85,15 @@ Content-length: 1316
   "uploadState": 11,
   "installSummary": {
     "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 20,
-    "failedDeviceCount": 17,
-    "notInstalledDeviceCount": 23,
-    "installedUserCount": 18,
+    "installedDeviceCount": 4,
+    "failedDeviceCount": 1,
+    "notInstalledDeviceCount": 7,
+    "installedUserCount": 2,
     "failedUserCount": 15,
-    "notInstalledUserCount": 21
+    "notInstalledUserCount": 5
   },
-  "usedLicenseCount": 16,
-  "totalLicenseCount": 17,
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "licensingType": {
@@ -111,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1472
+Content-Length: 1465
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -135,15 +138,15 @@ Content-Length: 1472
   "uploadState": 11,
   "installSummary": {
     "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 20,
-    "failedDeviceCount": 17,
-    "notInstalledDeviceCount": 23,
-    "installedUserCount": 18,
+    "installedDeviceCount": 4,
+    "failedDeviceCount": 1,
+    "notInstalledDeviceCount": 7,
+    "installedUserCount": 2,
     "failedUserCount": 15,
-    "notInstalledUserCount": 21
+    "notInstalledUserCount": 5
   },
-  "usedLicenseCount": 16,
-  "totalLicenseCount": 17,
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "licensingType": {

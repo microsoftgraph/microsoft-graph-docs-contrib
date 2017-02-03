@@ -1,4 +1,7 @@
-﻿# Create sideLoadingKey> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create sideLoadingKey
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /organization/{id}/sideLoadingKeys/{id}
+POST /organization/{organizationId}/sideLoadingKeys/
 ```
 
 ### Request headers
@@ -41,7 +44,7 @@ If successful, this method returns a `201 Created` response code and a [sideLoad
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{id}/sideLoadingKeys/{id}
+POST https://graph.microsoft.com/beta/organization/{organizationId}/sideLoadingKeys/
 Content-type: application/json
 Content-length: 246
 

@@ -1,4 +1,7 @@
-﻿# Update managedDeviceMobileAppConfigurationDeviceStatus> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update managedDeviceMobileAppConfigurationDeviceStatus
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /iosMobileAppConfigurations/{id}/deviceStatuses/{id}
+PATCH /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 ```
 
 ### Request headers
@@ -26,8 +29,10 @@ The following table shows the properties that are required when you create a [ma
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
+|deviceDisplayName|String|Device name of the DevicePolicyStatus.|
 |status|String|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
+|userPrincipalName|String|UserPrincipalName.|
 
 
 
@@ -38,13 +43,15 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/iosMobileAppConfigurations/{id}/deviceStatuses/{id}
+PATCH https://graph.microsoft.com/beta/iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 Content-type: application/json
-Content-length: 97
+Content-length: 203
 
 {
+  "deviceDisplayName": "Device Display Name value",
   "status": "notApplicable",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -53,13 +60,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 232
+Content-Length: 338
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus",
   "id": "477d3651-3651-477d-5136-7d4751367d47",
+  "deviceDisplayName": "Device Display Name value",
   "status": "notApplicable",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

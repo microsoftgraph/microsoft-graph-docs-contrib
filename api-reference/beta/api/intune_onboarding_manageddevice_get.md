@@ -1,4 +1,7 @@
-﻿# Get managedDevice> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get managedDevice
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [managedDevice](../resources/intune_onboarding_manageddevice.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedDevices/{id}
-GET /users/{id}/managedDevices/{id}
-GET /detectedapps/{id}/managedDevices/{id}
+GET /managedDevices/{managedDevicesId}
+GET /users/{usersId}/managedDevices/{managedDeviceId}
+GET /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}
 ```
 
 ### Optional query parameters
@@ -33,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [managedDevice](
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedDevices/{id}
+GET https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 ```
 
 ##### Response
@@ -41,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2044
+Content-Length: 2090
 
 {
   "value": {
@@ -52,8 +55,8 @@ Content-Length: 2044
     "hardwareInformation": {
       "@odata.type": "microsoft.graph.hardwareInformation",
       "serialNumber": "Serial Number value",
-      "totalStorageSpace": 17,
-      "freeStorageSpace": 16,
+      "totalStorageSpace": 1,
+      "freeStorageSpace": 0,
       "imei": "Imei value",
       "meid": "Meid value",
       "manufacturer": "Manufacturer value",
@@ -82,7 +85,7 @@ Content-Length: 2044
     "deviceType": "windowsRT",
     "complianceState": "compliant",
     "jailBroken": "Jail Broken value",
-    "managementAgents": 16,
+    "managementAgents": 0,
     "managementAgent": "mdm",
     "osVersion": "Os Version value",
     "easActivated": true,
@@ -93,7 +96,8 @@ Content-Length: 2044
     "lostModeState": "enabled",
     "activationLockBypassCode": "Activation Lock Bypass Code value",
     "emailAddress": "Email Address value",
-    "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value"
+    "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+    "deviceRegistrationState": "smsidConflict"
   }
 }
 ```

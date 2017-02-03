@@ -1,4 +1,7 @@
-﻿# List organizations> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List organizations
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [organization](../resources/intune_onboarding_organization.md) objects.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -37,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4217
+Content-Length: 4212
 
 {
   "value": [
@@ -84,8 +87,8 @@ Content-Length: 4217
       },
       "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {
         "@odata.type": "microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings",
-        "pinMinimumLength": 16,
-        "pinMaximumLength": 16,
+        "pinMinimumLength": 0,
+        "pinMaximumLength": 0,
         "pinUppercaseLettersUsage": "required",
         "pinLowercaseLettersUsage": "required",
         "pinSpecialCharactersUsage": "required",
@@ -93,11 +96,11 @@ Content-Length: 4217
         "securityDeviceRequired": true,
         "unlockWithBiometricsEnabled": true,
         "mobilePinSignInEnabled": true,
-        "pinPreviousBlockCount": 21,
-        "pinExpirationInDays": 19,
+        "pinPreviousBlockCount": 5,
+        "pinExpirationInDays": 3,
         "enhancedBiometrics": "enabled"
       },
-      "defaultDeviceEnrollmentLimit": 28,
+      "defaultDeviceEnrollmentLimit": 12,
       "intuneBrand": {
         "@odata.type": "microsoft.graph.intuneBrand",
         "displayName": "Display Name value",
@@ -134,7 +137,7 @@ Content-Length: 4217
         "enrollmentError": "Enrollment Error value",
         "lastConnectorConnectionTime": "2017-01-01T00:02:50.2393584-08:00",
         "connectorVersion": "Connector Version value",
-        "lastUploadVersion": 17
+        "lastUploadVersion": 1
       }
     }
   ]
