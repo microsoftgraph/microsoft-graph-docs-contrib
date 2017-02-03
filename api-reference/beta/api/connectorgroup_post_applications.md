@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectorGroups/<id>/applications
+POST /connectorGroups/{id}/applications
 
 ```
 ## Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups/<id>/applications
+POST https://graph.microsoft.com/{ver}/connectorGroups/{id}/applications
 Content-type: application/json
 Content-length: 329
 

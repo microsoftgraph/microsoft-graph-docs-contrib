@@ -6,8 +6,8 @@ One of the following **scopes** is required to execute this API: *Group.ReadWrit
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/events
-POST /groups/<id>/calendar/events
+POST /groups/{id}/events
+POST /groups/{id}/calendar/events
 ```
 ## Request headers
 | Header       | Value |
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_event_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/<id>/events
+POST https://graph.microsoft.com/beta/groups/{id}/events
 Content-type: application/json
 Content-length: 285
 

@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "worksheet_usedrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/worksheets(<id|name>)/UsedRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/UsedRange
 Content-type: application/json
 Content-length: 24
 

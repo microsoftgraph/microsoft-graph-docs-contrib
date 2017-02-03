@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "tablerowcollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/rows/add
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/rows/add
 Content-type: application/json
 Content-length: 51
 

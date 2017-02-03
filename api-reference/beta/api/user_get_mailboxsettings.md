@@ -14,20 +14,20 @@ To get all mailbox settings which include automatic replies settings:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
-GET /users/<id|userPrincipalName>/mailboxSettings
+GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
 To get specific settings - for example, only the automatic replies settings, locale, or time zone:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
-GET /users/<id|userPrincipalName>/mailboxSettings/automaticRepliesSetting
+GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 
 GET /me/mailboxSettings/language
-GET /users/<id|userPrincipalName>/mailboxSettings/language
+GET /users/{id|userPrincipalName}/mailboxSettings/language
 
 GET /me/mailboxSettings/timeZone
-GET /users/<id|userPrincipalName>/mailboxSettings/timeZone
+GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

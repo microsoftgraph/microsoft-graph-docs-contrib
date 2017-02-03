@@ -7,8 +7,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/contactFolders/<id>
-PATCH /users/<id | userPrincipalName>/contactFolders/<id>
+PATCH /me/contactFolders/{id}
+PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## Request headers
 | Header       | Value |
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_contactfolder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/contactFolders/<id>
+PATCH https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 Content-type: application/json
 Content-length: 84
 

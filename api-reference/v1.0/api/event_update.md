@@ -7,22 +7,22 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/events/<id>
-PATCH /users/<id | userPrincipalName>/events/<id>
-PATCH /groups/<id>/events/<id>
+PATCH /me/events/{id}
+PATCH /users/{id | userPrincipalName}/events/{id}
+PATCH /groups/{id}/events/{id}
 
-PATCH /me/calendar/events/<id>
-PATCH /users/<id | userPrincipalName>/calendar/events/<id>
-PATCH /groups/<id>/calendar/events/<id>
+PATCH /me/calendar/events/{id}
+PATCH /users/{id | userPrincipalName}/calendar/events/{id}
+PATCH /groups/{id}/calendar/events/{id}
 
-PATCH /me/calendars/<id>/events/<id>
-PATCH /users/<id | userPrincipalName>/calendars/<id>/events/<id>
+PATCH /me/calendars/{id}/events/{id}
+PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-PATCH /me/calendargroup/calendars/<id>/events/<id>
-PATCH /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>
+PATCH /me/calendargroup/calendars/{id}/events/{id}
+PATCH /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
-PATCH /me/calendargroups/<id>/calendars/<id>/events/<id>
-PATCH /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>
+PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
+PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -61,7 +61,7 @@ Here is an example of the request.
   "name": "update_event"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/events/<id>
+PATCH https://graph.microsoft.com/v1.0/me/events/{id}
 Content-type: application/json
 Content-length: 285
 

@@ -3,6 +3,10 @@
 Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
 
+## Delta query support
+
+This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/group_delta.md) function.
 
 ## Methods
 
@@ -47,11 +51,12 @@ Inherits from [directoryObject](directoryobject.md).
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
 |[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
+|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.|
+|allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.|
 |classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorySetting.md) value, based on the [template definition](directorySettingTemplate.md).|
 |description|String|An optional description for the group.|
@@ -128,7 +133,7 @@ Here is a JSON representation of the resource
 ```json
 {
   "accessType": "string",
-  "allowExternalSenders": true,
+  "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
   "description": "string",
   "displayName": "string",

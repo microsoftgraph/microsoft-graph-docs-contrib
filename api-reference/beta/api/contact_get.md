@@ -6,21 +6,21 @@ One of the following **scopes** is required to execute this API:
 *Contacts.Read; Contacts.ReadWrite*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-A [contact](../resources/contact.md) from user's default [contactFolder](../resources/contactfolder.md).
+A [contact](../resources/contact.md) in the user's mailbox.
 ```http
-GET /me/contacts/<id>
-GET /users/<id | userPrincipalName>/contacts/<id>
+GET /me/contacts/{id}
+GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).
+A [contact](../resources/contact.md) from a top level [contactFolder](../resources/contactfolder.md) of the user's.
 ```http
-GET /me/contactfolders/<Id>/contacts/<id>
-GET /users/<id | userPrincipalName>/contactfolders/<id>/contacts/<id>
+GET /me/contactfolders/{Id}/contacts/{id}
+GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
-GET /me/contactFolder/<id>/childFolders/<id>/.../contacts/<id>
-GET /users/<id | userPrincipalName>/contactFolders/<id>/childFolders/<id>/contacts/<id>
+GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## Optional query parameters
 |Name|Value|Description|
@@ -45,7 +45,7 @@ Here is an example of the request.
   "name": "get_contact"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/contacts/<id>
+GET https://graph.microsoft.com/beta/me/contacts/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

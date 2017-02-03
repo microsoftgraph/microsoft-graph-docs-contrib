@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/conversations/<id>
+GET /groups/{id}/conversations/{id}
 
 ```
 ## Optional query parameters
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "get_conversation"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<id>/conversations/<id>
+GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

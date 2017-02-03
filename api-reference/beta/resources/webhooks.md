@@ -94,7 +94,7 @@ The client can renew a subscription with a specific expiration date of up to thr
 ## Subscription renewal example
 
 ```
-PATCH https://graph.microsoft.com/beta/subscriptions/<id>;
+PATCH https://graph.microsoft.com/beta/subscriptions/{id};
 Content-Type: application/json
 {
   "expirationDateTime": "2016-03-22T11:00:00.0000000Z"
@@ -108,7 +108,7 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subs
 The client can stop receiving notifications by deleting the subscription using its ID.
 
 ```
-DELETE https://graph.microsoft.com/beta/subscriptions/<id>
+DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 
 If successful, Microsoft Graph returns a `204 No Content` code.
@@ -147,11 +147,11 @@ When the user receives an email, Microsoft Graph sends a notification like the f
     "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
     "clientState":"SecretClientState",
     "changeType":"Created",
-    "resource":"Users/<user_guid>@<tenant_guid>/Messages/<long_id_string>",
+    "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
     "resourceData":
     {
       "@odata.type":"#Microsoft.Graph.Message",
-      "@odata.id":"Users/<user_guid>@<tenant_guid>/Messages/<long_id_string>",
+      "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
       "Id":"<long_id_string>"
     }

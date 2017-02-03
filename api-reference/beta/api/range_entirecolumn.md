@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "range_entirecolumn"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/range/EntireColumn
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
 ```
 
 ##### Response

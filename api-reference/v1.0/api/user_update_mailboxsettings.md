@@ -14,7 +14,7 @@ The following **scope** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/mailboxSettings
-PATCH /users/<id|userPrincipalName>/mailboxSettings
+PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

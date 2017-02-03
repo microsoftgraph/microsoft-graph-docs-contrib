@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "chart_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/delete
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/delete
 ```
 
 ##### Response

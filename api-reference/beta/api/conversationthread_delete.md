@@ -8,8 +8,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/<id>/threads/<id>
-DELETE /groups/<id>/conversations/<id>/threads/<id>
+DELETE /groups/{id}/threads/{id}
+DELETE /groups/{id}/conversations/{id}/threads/{id}
 
 ```
 ## Request headers
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "delete_conversationthread"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/<id>/threads/<id>
+DELETE https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ```
 ##### Response
 Here is an example of the response. 

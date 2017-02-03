@@ -79,7 +79,7 @@ function login() {
 After the user signs in, the flow returns the browser to the reply URL in your app. The authorization code is provided in the `code` query string variable.
 
 ```javascript
-router.get('/<application reply url>', function (req, res, next) {
+router.get('/{application reply url}', function (req, res, next) {
   var authCode = req.query.code;
   // your router's implementation
 });
@@ -140,7 +140,7 @@ Using `adal-node`, combined with our authentication logic from the previous sect
 
 ```javascript
 /* GET home page. */
-router.get('/<application reply url>', function (req, res, next) {
+router.get('/{application reply url}', function (req, res, next) {
     var authCode = req.query.code;
     authHelper.getTokenFromCode('https://graph.microsoft.com/', req.query.code, function (token) {
         if (token !== null) {

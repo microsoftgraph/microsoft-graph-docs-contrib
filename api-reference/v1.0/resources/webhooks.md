@@ -48,7 +48,7 @@ Or on a drive root item:
 
 Creating a subscription in most cases requires read scope to the resource. For example, to get notifications messages, your app needs the `mail.read` permission. Please note that currently the `Files.ReadWrite` permission is required for OneDrive Drive root items and drives associated with SharePoint sites require `Files.ReadWrite.All`.
 
-Subscriptions expire. The current longest expiration time is three days minus 9-0 minutes from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
+Subscriptions expire. The current longest expiration time is three days minus 90 minutes (4230 in total) from the time of creation. Apps need to renew their subscriptions before the expiration time. Otherwise they'll need to create a new subscription.
 
 ## Notification URL validation
 
@@ -94,7 +94,7 @@ The client can renew a subscription with a specific expiration date of up to thr
 ## Subscription renewal example
 
 ```
-PATCH https://graph.microsoft.com/v1.0/subscriptions/<id>;
+PATCH https://graph.microsoft.com/v1.0/subscriptions/{id};
 Content-Type: application/json
 {
   "expirationDateTime": "2016-03-22T11:00:00.0000000Z"
@@ -108,7 +108,7 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subs
 The client can stop receiving notifications by deleting the subscription using its ID.
 
 ```
-DELETE https://graph.microsoft.com/v1.0/subscriptions/<id>
+DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 
 If successful, Microsoft Graph returns a `204 No Content` code.
@@ -147,11 +147,11 @@ When the user receives an email, Microsoft Graph sends a notification like the f
     "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
     "clientState":"SecretClientState",
     "changeType":"Created",
-    "resource":"Users/<user_guid>@<tenant_guid>/Messages/<long_id_string>",
+    "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
     "resourceData":
     {
       "@odata.type":"#Microsoft.Graph.Message",
-      "@odata.id":"Users/<user_guid>@<tenant_guid>/Messages/<long_id_string>",
+      "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
       "Id":"<long_id_string>"
     }

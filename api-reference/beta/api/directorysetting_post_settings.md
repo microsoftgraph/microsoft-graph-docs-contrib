@@ -7,7 +7,7 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /settings
-POST /groups/<id>/settings
+POST /groups/{id}/settings
 ```
 ## Request headers
 | Name       | Description|

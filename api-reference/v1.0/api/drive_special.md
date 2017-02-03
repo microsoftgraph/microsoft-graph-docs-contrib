@@ -24,7 +24,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/special/<name>
+GET /me/drive/special/{name}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters)
@@ -54,7 +54,7 @@ Here is an example of the request for the user's drives.
   "name": "get_drive_special"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/special/<name>
+GET https://graph.microsoft.com/v1.0/me/drive/special/{name}
 ```
 
 ##### Response

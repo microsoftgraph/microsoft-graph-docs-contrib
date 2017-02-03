@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "application_calculate"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/application/calculate
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application/calculate
 Content-type: application/json
 Content-length: 48
 

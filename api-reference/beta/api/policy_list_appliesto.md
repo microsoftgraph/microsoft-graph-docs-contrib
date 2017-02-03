@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API:
 
 ### HTTP request
 ```http
-GET /policies/<id>/appliesTo
+GET /policies/{id}/appliesTo
 ```
 
 ### Request headers
@@ -29,7 +29,7 @@ The following example retrieves the applications and service principals with a s
 Here is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/policies/<id>/appliesTo
+GET https://graph.microsoft.com/beta/policies/{id}/appliesTo
 ```
 
 ##### Response

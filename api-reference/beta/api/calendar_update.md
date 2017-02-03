@@ -9,21 +9,21 @@ One of the following **scopes** is required to execute this API:
 A user's or group's default [calendar](../resources/calendar.md).
 ```http
 PATCH /me/calendar
-PATCH /users/<id | userPrincipalName>/calendar
-PATCH /groups/<id>/calendar
+PATCH /users/{id | userPrincipalName}/calendar
+PATCH /groups/{id}/calendar
 ```
 A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
 ```http
-PATCH /me/calendars/<id>
-PATCH /users/<id | userPrincipalName>/calendars/<id>
+PATCH /me/calendars/{id}
+PATCH /users/{id | userPrincipalName}/calendars/{id}
 
-PATCH /me/calendarGroup/calendars/<id>
-PATCH /users/<id | userPrincipalName>/calendarGroup/calendars/<id>
+PATCH /me/calendarGroup/calendars/{id}
+PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
-PATCH /me/calendarGroups/<id>/calendars/<id>
-PATCH /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>
+PATCH /me/calendarGroups/{id}/calendars/{id}
+PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## Request headers
 | Header       | Value |
@@ -74,6 +74,7 @@ Content-type: application/json
     "id":"AAMkADJmMVAAA=",
     "name":"Social events",
     "color":"auto",
+    "hexColor": "",
     "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,

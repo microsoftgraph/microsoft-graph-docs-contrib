@@ -6,11 +6,11 @@ The following **scopes** are required to execute this API: _Mail.ReadWrite_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/messages/<id>
-DELETE /users/<id | userPrincipalName>/messages/<id>
+DELETE /me/messages/{id}
+DELETE /users/{id | userPrincipalName}/messages/{id}
 
-DELETE /me/mailFolders/<id>/messages/<id>
-DELETE /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>
+DELETE /me/mailFolders/{id}/messages/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "delete_eventmessage"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/messages/<id>
+DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 ```
 ##### Response
 Here is an example of the response. 

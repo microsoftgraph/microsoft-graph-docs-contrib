@@ -8,7 +8,7 @@ Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/<id>/range/rowsAbove(count=n)
+POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ```
 ### Request headers
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "workbookrange_rowsAbove"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/<id>/range/rowsAbove(count=2)
+POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
 ```
 
 ##### Response

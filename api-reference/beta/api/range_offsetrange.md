@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "range_offsetrange"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/names(<name>)/range/OffsetRange
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
 Content-type: application/json
 Content-length: 49
 

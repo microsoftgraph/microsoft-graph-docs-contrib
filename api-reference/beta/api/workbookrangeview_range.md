@@ -8,7 +8,7 @@ Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/<id>/range(addres={address})/visibleView/range
+GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/range
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "workbookrangeview_range"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/<id>/range(addres='A1:Z10')/visibleView/range
+GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/range
 ```
 
 ##### Response

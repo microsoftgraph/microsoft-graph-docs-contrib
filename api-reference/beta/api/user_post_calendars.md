@@ -7,7 +7,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/calendars
+POST /users/{id | userPrincipalName}/calendars
 ```
 ## Request headers
 | Header       | Value |
@@ -60,6 +60,7 @@ Content-type: application/json
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "isShared":false,
     "isSharedWithMe":false,
     "canEdit":true,
