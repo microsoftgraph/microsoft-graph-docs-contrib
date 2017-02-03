@@ -1,4 +1,7 @@
-﻿# Create windows81CompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create windows81CompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/{id}
-POST /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-POST /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+POST /deviceManagement/deviceCompliancePolicies/
 ```
 
 ### Request headers
@@ -33,6 +34,8 @@ The following table shows the properties that are required when you create a win
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|passwordRequired|Boolean|Require a password to unlock Windows device.|
+|passwordBlockSimple|Boolean|Indicates whether or not to block simple password.|
 |passwordExpirationDays|Int32|Password expiration in days.|
 |passwordMinimumLength|Int32|The minimum password length.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
@@ -52,9 +55,9 @@ If successful, this method returns a `201 Created` response code and a [windows8
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/
 Content-type: application/json
-Content-length: 610
+Content-length: 666
 
 {
   "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
@@ -62,12 +65,14 @@ Content-length: 610
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinimumCharacterSetCount": 32,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
   "passwordRequiredType": "alphanumeric",
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordPreviousPasswordBlockCount": 2,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "storageRequireEncryption": true
@@ -79,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 718
+Content-Length: 774
 
 {
   "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
@@ -89,12 +94,14 @@ Content-Length: 718
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinimumCharacterSetCount": 32,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
   "passwordRequiredType": "alphanumeric",
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordPreviousPasswordBlockCount": 2,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "storageRequireEncryption": true

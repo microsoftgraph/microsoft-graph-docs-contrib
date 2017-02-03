@@ -1,4 +1,7 @@
-﻿# Update managedDevice> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update managedDevice
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [managedDevice](../resources/intune_onboarding_manageddevice.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedDevices/{id}
-PATCH /users/{id}/managedDevices/{id}
-PATCH /detectedapps/{id}/managedDevices/{id}
+PATCH /managedDevices/{managedDevicesId}
+PATCH /users/{usersId}/managedDevices/{managedDeviceId}
+PATCH /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}
 ```
 
 ### Request headers
@@ -53,6 +56,7 @@ The following table shows the properties that are required when you create a [ma
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
 |emailAddress|String|Email(s) for the user associated with the device|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
+|deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `smsidConflict`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `resetCert`, `notRegisteredPendingEnrollment`, `unknown`.|
 
 
 
@@ -63,9 +67,9 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedDevices/{id}
+PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 Content-type: application/json
-Content-length: 1826
+Content-length: 1870
 
 {
   "userId": "User Id value",
@@ -73,8 +77,8 @@ Content-length: 1826
   "hardwareInformation": {
     "@odata.type": "microsoft.graph.hardwareInformation",
     "serialNumber": "Serial Number value",
-    "totalStorageSpace": 17,
-    "freeStorageSpace": 16,
+    "totalStorageSpace": 1,
+    "freeStorageSpace": 0,
     "imei": "Imei value",
     "meid": "Meid value",
     "manufacturer": "Manufacturer value",
@@ -103,7 +107,7 @@ Content-length: 1826
   "deviceType": "windowsRT",
   "complianceState": "compliant",
   "jailBroken": "Jail Broken value",
-  "managementAgents": 16,
+  "managementAgents": 0,
   "managementAgent": "mdm",
   "osVersion": "Os Version value",
   "easActivated": true,
@@ -114,7 +118,8 @@ Content-length: 1826
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
   "emailAddress": "Email Address value",
-  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value"
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "deviceRegistrationState": "smsidConflict"
 }
 ```
 
@@ -123,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1927
+Content-Length: 1971
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -133,8 +138,8 @@ Content-Length: 1927
   "hardwareInformation": {
     "@odata.type": "microsoft.graph.hardwareInformation",
     "serialNumber": "Serial Number value",
-    "totalStorageSpace": 17,
-    "freeStorageSpace": 16,
+    "totalStorageSpace": 1,
+    "freeStorageSpace": 0,
     "imei": "Imei value",
     "meid": "Meid value",
     "manufacturer": "Manufacturer value",
@@ -163,7 +168,7 @@ Content-Length: 1927
   "deviceType": "windowsRT",
   "complianceState": "compliant",
   "jailBroken": "Jail Broken value",
-  "managementAgents": 16,
+  "managementAgents": 0,
   "managementAgent": "mdm",
   "osVersion": "Os Version value",
   "easActivated": true,
@@ -174,7 +179,8 @@ Content-Length: 1927
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
   "emailAddress": "Email Address value",
-  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value"
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "deviceRegistrationState": "smsidConflict"
 }
 ```
 

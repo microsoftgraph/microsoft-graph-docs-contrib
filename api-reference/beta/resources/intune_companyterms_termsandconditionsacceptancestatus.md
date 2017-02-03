@@ -1,6 +1,8 @@
-﻿# termsAndConditionsAcceptanceStatus resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# termsAndConditionsAcceptanceStatus resource type
 
-The acceptance status for a user targeted a terms and conditions.
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal.
 ### Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -14,10 +16,10 @@ The acceptance status for a user targeted a terms and conditions.
 ### Properties
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity.|
-|userDisplayName|String|The name of the user that this acceptance status is for.|
-|acceptedVersion|Int32|The version of the terms that were accepted. 0 if never accepted.|
-|acceptedDateTime|DateTimeOffset|The date and time that the terms were accepted.|
+|id|String|Unique identifier of the entity.|
+|userDisplayName|String|Display name of the user whose acceptance the entity represents.|
+|acceptedVersion|Int32|Most recent version number of the T&C accepted by the user.|
+|acceptedDateTime|DateTimeOffset|DateTime when the terms were last accepted by the user.|
 
 ### Relationships
 |Relationship|Type|Description|

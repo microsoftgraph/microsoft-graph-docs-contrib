@@ -1,4 +1,7 @@
-﻿# Get windows10GeneralConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Get windows10GeneralConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Read properties and relationships of the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/{id}
-GET /deviceConfigurationAssignments/{id}/deviceConfiguration/
-GET /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
 ### Optional query parameters
@@ -33,7 +36,7 @@ If successful, this method returns a `200 OK` response code and [windows10Genera
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ##### Response
@@ -41,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3986
+Content-Length: 5132
 
 {
   "value": {
@@ -68,7 +71,7 @@ Content-Length: 3986
     "copyPasteBlocked": true,
     "cortanaBlocked": true,
     "defenderBlockEndUserAccess": true,
-    "defenderDaysBeforeDeletingQuarantinedMalware": 44,
+    "defenderDaysBeforeDeletingQuarantinedMalware": 12,
     "defenderSystemScanSchedule": "everyday",
     "defenderFilesAndFoldersToExclude": [
       "Defender Files And Folders To Exclude value"
@@ -76,7 +79,7 @@ Content-Length: 3986
     "defenderFileExtensionsToExclude": [
       "Defender File Extensions To Exclude value"
     ],
-    "defenderScanMaxCpu": 18,
+    "defenderScanMaxCpu": 2,
     "defenderMonitorFileActivity": "disable",
     "defenderProcessesToExclude": [
       "Defender Processes To Exclude value"
@@ -93,7 +96,7 @@ Content-Length: 3986
     "defenderScanMappedNetworkDrivesDuringFullScan": true,
     "defenderScanRemovableDrivesDuringFullScan": true,
     "defenderScanScriptsLoadedInInternetExplorer": true,
-    "defenderSignatureUpdateIntervalInHours": 38,
+    "defenderSignatureUpdateIntervalInHours": 6,
     "defenderScanType": "disabled",
     "defenderScheduledScanTime": "11:59:10.9990000",
     "defenderScheduledQuickScanTime": "11:58:49.3840000",
@@ -103,7 +106,10 @@ Content-Length: 3986
     "edgeBlockAutofill": true,
     "edgeBlocked": true,
     "edgeCookiePolicy": "allow",
+    "edgeBlockDeveloperTools": true,
     "edgeBlockSendingDoNotTrackHeader": true,
+    "edgeBlockExtensions": true,
+    "edgeBlockInPrivateBrowsing": true,
     "edgeBlockJavaScript": true,
     "edgeBlockPasswordManager": true,
     "edgeBlockPopups": true,
@@ -111,21 +117,36 @@ Content-Length: 3986
     "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
     "edgeRequireSmartScreen": true,
     "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
+    "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
+    "edgeHomepageUrls": [
+      "Edge Homepage Urls value"
+    ],
+    "edgeBlockAccessToAboutFlags": true,
+    "smartScreenBlockPromptOverride": true,
+    "smartScreenBlockPromptOverrideForFiles": true,
+    "webRtcBlockLocalhostIpAddress": true,
     "internetSharingBlocked": true,
+    "settingsBlockAddProvisioningPackage": true,
+    "settingsBlockRemoveProvisioningPackage": true,
+    "settingsBlockChangeSystemTime": true,
+    "settingsBlockEditDeviceName": true,
+    "settingsBlockChangeRegion": true,
+    "settingsBlockChangeLanguage": true,
+    "settingsBlockChangePowerSleep": true,
     "locationServicesBlocked": true,
     "lockScreenBlockActionCenterNotifications": true,
     "microsoftAccountBlocked": true,
     "microsoftAccountBlockSettingsSync": true,
     "nfcBlocked": true,
-    "passwordExpirationDays": 22,
-    "passwordMinimumLength": 21,
-    "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-    "passwordMinimumCharacterSetCount": 32,
-    "passwordPreviousPasswordBlockCount": 34,
+    "passwordExpirationDays": 6,
+    "passwordMinimumLength": 5,
+    "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+    "passwordMinimumCharacterSetCount": 0,
+    "passwordPreviousPasswordBlockCount": 2,
     "passwordRequired": true,
     "passwordRequireWhenResumeFromIdleState": true,
     "passwordRequiredType": "alphanumeric",
-    "passwordSignInFailureCountBeforeFactoryReset": 44,
+    "passwordSignInFailureCountBeforeFactoryReset": 12,
     "prereleaseFeatures": "settingsOnly",
     "resetProtectionModeBlocked": true,
     "screenCaptureBlocked": true,
@@ -136,7 +157,16 @@ Content-Length: 3986
     "wiFiBlockAutomaticConnectHotspots": true,
     "wiFiBlocked": true,
     "wiFiBlockManualConfiguration": true,
-    "windowsStoreBlocked": true
+    "windowsStoreBlocked": true,
+    "appsAllowTrustedAppsSideloading": "blocked",
+    "windowsStoreBlockAutoUpdate": true,
+    "developerUnlockSetting": "blocked",
+    "sharedUserAppDataAllowed": true,
+    "appsBlockWindowsStoreOriginatedApps": true,
+    "windowsStoreEnablePrivateStoreOnly": true,
+    "storageRestrictAppDataToSystemVolume": true,
+    "storageRestrictAppInstallToSystemVolume": true,
+    "gameDvrBlocked": true
   }
 }
 ```

@@ -1,4 +1,7 @@
-﻿# Update detectedApp> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update detectedApp
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [detectedApp](../resources/intune_onboarding_detectedapp.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /detectedapps/{id}
-PATCH /detectedapps/{id}/managedDevices/{id}/detectedApps/{id}
+PATCH /detectedapps/{detectedappsId}
+PATCH /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}/detectedApps/{detectedAppId}
 ```
 
 ### Request headers
@@ -41,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated [dete
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/detectedapps/{id}
+PATCH https://graph.microsoft.com/beta/detectedapps/{detectedappsId}
 Content-type: application/json
 Content-length: 117
 

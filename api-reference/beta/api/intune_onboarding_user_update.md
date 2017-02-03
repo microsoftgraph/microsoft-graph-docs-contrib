@@ -1,4 +1,7 @@
-﻿# Update user> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update user
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [user](../resources/intune_onboarding_user.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /users/{id}
+PATCH /users/{usersId}
 ```
 
 ### Request headers
@@ -37,12 +40,12 @@ If successful, this method returns a `200 OK` response code and an updated [user
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}
+PATCH https://graph.microsoft.com/beta/users/{usersId}
 Content-type: application/json
-Content-length: 35
+Content-length: 34
 
 {
-  "deviceEnrollmentLimit": 21
+  "deviceEnrollmentLimit": 5
 }
 ```
 
@@ -51,12 +54,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 127
+Content-Length: 126
 
 {
   "@odata.type": "#microsoft.graph.user",
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3",
-  "deviceEnrollmentLimit": 21
+  "deviceEnrollmentLimit": 5
 }
 ```
 

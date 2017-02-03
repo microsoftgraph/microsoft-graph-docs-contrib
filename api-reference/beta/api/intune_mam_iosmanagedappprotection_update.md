@@ -1,4 +1,7 @@
-﻿# Update iosManagedAppProtection> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update iosManagedAppProtection
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /managedAppPolicies/{id}
-PATCH /managedAppRegistrations/{id}/appliedPolicies/{id}
-PATCH /managedAppRegistrations/{id}/intendedPolicies/{id}
+PATCH /managedAppPolicies/{managedAppPoliciesId}
+PATCH /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{managedAppPolicyId}
+PATCH /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}
 ```
 
 ### Request headers
@@ -49,7 +52,7 @@ The following table shows the properties that are required when you create a [io
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
-|allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `box`, `dropbox`, `googleDrive`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -66,18 +69,18 @@ If successful, this method returns a `200 OK` response code and an updated [iosM
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppPolicies/{id}
+PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}
 Content-type: application/json
-Content-length: 1262
+Content-length: 1191
 
 {
   "displayName": "Display Name value",
   "description": "Description value",
   "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-  "deployedAppCount": 16,
+  "deployedAppCount": 0,
   "version": "Version value",
-  "periodOfflineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
-  "periodOnlineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
+  "periodOnlineBeforeAccessCheck": "PT35.0018757S",
   "allowedInboundDataTransferSources": "managedApps",
   "allowedOutboundDataTransferDestinations": "managedApps",
   "organizationalCredentialsRequired": true,
@@ -86,11 +89,11 @@ Content-length: 1262
   "deviceComplianceRequired": true,
   "managedBrowserToOpenLinksRequired": true,
   "saveAsBlocked": true,
-  "periodOfflineBeforeWipeIsEnforced": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeWipeIsEnforced": "-PT3M22.1587532S",
   "pinRequired": true,
-  "maximumPinRetries": 17,
+  "maximumPinRetries": 1,
   "simplePinBlocked": true,
-  "minimumPinLength": 16,
+  "minimumPinLength": 0,
   "pinCharacterSet": "numeric",
   "allowedDataStorageLocations": [
     "sharePoint"
@@ -98,7 +101,7 @@ Content-length: 1262
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
-  "targetedSecurityGroupsCount": 27,
+  "targetedSecurityGroupsCount": 11,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],
@@ -111,18 +114,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1373
+Content-Length: 1302
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
   "displayName": "Display Name value",
   "description": "Description value",
   "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-  "deployedAppCount": 16,
+  "deployedAppCount": 0,
   "id": "5bc789cb-89cb-5bc7-cb89-c75bcb89c75b",
   "version": "Version value",
-  "periodOfflineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
-  "periodOnlineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
+  "periodOnlineBeforeAccessCheck": "PT35.0018757S",
   "allowedInboundDataTransferSources": "managedApps",
   "allowedOutboundDataTransferDestinations": "managedApps",
   "organizationalCredentialsRequired": true,
@@ -131,11 +134,11 @@ Content-Length: 1373
   "deviceComplianceRequired": true,
   "managedBrowserToOpenLinksRequired": true,
   "saveAsBlocked": true,
-  "periodOfflineBeforeWipeIsEnforced": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeWipeIsEnforced": "-PT3M22.1587532S",
   "pinRequired": true,
-  "maximumPinRetries": 17,
+  "maximumPinRetries": 1,
   "simplePinBlocked": true,
-  "minimumPinLength": 16,
+  "minimumPinLength": 0,
   "pinCharacterSet": "numeric",
   "allowedDataStorageLocations": [
     "sharePoint"
@@ -143,7 +146,7 @@ Content-Length: 1373
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
-  "targetedSecurityGroupsCount": 27,
+  "targetedSecurityGroupsCount": 11,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],

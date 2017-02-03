@@ -1,4 +1,7 @@
-﻿# Create windows10VpnConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create windows10VpnConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [windows10VpnConfiguration](../resources/intune_deviceconfig_windows10vpnconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}
-POST /deviceConfigurationAssignments/{id}/deviceConfiguration/
-POST /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+POST /deviceManagement/deviceConfigurations/
 ```
 
 ### Request headers
@@ -62,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [windows1
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
 Content-length: 3076
 

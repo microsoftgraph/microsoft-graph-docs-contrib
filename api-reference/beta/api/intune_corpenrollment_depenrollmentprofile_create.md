@@ -1,4 +1,7 @@
-﻿# Create depEnrollmentProfile> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create depEnrollmentProfile
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/enrollmentProfiles/{id}
+POST /deviceManagement/enrollmentProfiles/
 ```
 
 ### Request headers
@@ -61,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [depEnrol
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/
 Content-type: application/json
 Content-length: 1153
 

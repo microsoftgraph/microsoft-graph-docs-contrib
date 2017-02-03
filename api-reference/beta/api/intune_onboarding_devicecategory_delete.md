@@ -1,4 +1,7 @@
-﻿# Delete deviceCategory> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Delete deviceCategory
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Deletes a [deviceCategory](../resources/intune_onboarding_devicecategory.md).
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /deviceManagement/deviceCategories/{id}
+DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
+DELETE /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}/deviceCategory/
 ```
 
 ### Request headers
@@ -29,7 +33,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{id}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
 ##### Response

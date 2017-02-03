@@ -1,4 +1,7 @@
-﻿# Create windowsUpdateForBusinessConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create windowsUpdateForBusinessConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{id}
-POST /deviceConfigurationAssignments/{id}/deviceConfiguration/
-POST /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+POST /deviceManagement/deviceConfigurations/
 ```
 
 ### Request headers
@@ -56,9 +57,9 @@ If successful, this method returns a `201 Created` response code and a [windowsU
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 890
+Content-length: 888
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -74,8 +75,8 @@ Content-length: 890
   "installationSchedule": {
     "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
   },
-  "qualityUpdatesDeferralPeriodInDays": 34,
-  "featureUpdatesDeferralPeriodInDays": 34,
+  "qualityUpdatesDeferralPeriodInDays": 2,
+  "featureUpdatesDeferralPeriodInDays": 2,
   "qualityUpdatesPaused": true,
   "featureUpdatesPaused": true,
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
@@ -89,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 998
+Content-Length: 996
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -107,8 +108,8 @@ Content-Length: 998
   "installationSchedule": {
     "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
   },
-  "qualityUpdatesDeferralPeriodInDays": 34,
-  "featureUpdatesDeferralPeriodInDays": 34,
+  "qualityUpdatesDeferralPeriodInDays": 2,
+  "featureUpdatesDeferralPeriodInDays": 2,
   "qualityUpdatesPaused": true,
   "featureUpdatesPaused": true,
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",

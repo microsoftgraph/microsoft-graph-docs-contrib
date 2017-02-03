@@ -1,4 +1,7 @@
-﻿# Create mobileAppIdentifierDeployment> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create mobileAppIdentifierDeployment
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /managedAppPolicies/{id}/mobileAppIdentifierDeployments/{id}
+POST /managedAppPolicies/{managedAppPoliciesId}/mobileAppIdentifierDeployments/
 ```
 
 ### Request headers
@@ -38,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ##### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppPolicies/{id}/mobileAppIdentifierDeployments/{id}
+POST https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/mobileAppIdentifierDeployments/
 Content-type: application/json
 Content-length: 194
 

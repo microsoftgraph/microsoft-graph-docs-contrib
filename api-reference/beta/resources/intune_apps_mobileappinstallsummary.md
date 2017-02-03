@@ -1,6 +1,8 @@
-﻿# mobileAppInstallSummary resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# mobileAppInstallSummary resource type
 
-Contains properties for the installation summaryof a mobile app for a device.
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Contains properties for the installation summary of a mobile app for a device.
 ### Properties
 |Property|Type|Description|
 |---|---|---|

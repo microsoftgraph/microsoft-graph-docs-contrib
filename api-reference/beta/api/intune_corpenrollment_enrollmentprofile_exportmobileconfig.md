@@ -1,5 +1,8 @@
-﻿# exportMobileConfig function> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Exports the device configuration from an [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object.
+﻿# exportMobileConfig function
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
 
@@ -10,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceManagement/enrollmentProfiles/{id}/exportMobileConfig
+GET /deviceManagement/enrollmentProfiles/{enrollmentProfileId}/exportMobileConfig
 ```
 
 ### Request headers
@@ -29,7 +32,7 @@ If successful, this function returns a `200 OK` response code and a String in th
 ##### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{id}/exportMobileConfig
+GET https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{enrollmentProfileId}/exportMobileConfig
 ```
 
 ##### Response
@@ -41,3 +44,6 @@ Content-Length: 26
 
 Export Mobile Config value
 ```
+
+
+

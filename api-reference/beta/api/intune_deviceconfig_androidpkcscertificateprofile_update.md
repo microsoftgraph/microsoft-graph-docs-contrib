@@ -1,4 +1,7 @@
-﻿# Update androidPkcsCertificateProfile> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update androidPkcsCertificateProfile
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [androidPkcsCertificateProfile](../resources/intune_deviceconfig_androidpkcscertificateprofile.md) object.
 ### Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,9 +13,9 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{id}
-PATCH /deviceConfigurationAssignments/{id}/deviceConfiguration/
-PATCH /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
 ### Request headers
@@ -52,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ##### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
 Content-length: 778
 
@@ -61,10 +64,10 @@ Content-length: 778
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 26,
+  "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameIncludingEmail",
   "subjectAlternativeNameType": "userPrincipalName",
-  "certificateValidityPeriodValue": 30,
+  "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
     {
@@ -94,10 +97,10 @@ Content-Length: 954
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 26,
+  "renewalThresholdPercentage": 10,
   "subjectNameFormat": "commonNameIncludingEmail",
   "subjectAlternativeNameType": "userPrincipalName",
-  "certificateValidityPeriodValue": 30,
+  "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
   "extendedKeyUsages": [
     {
