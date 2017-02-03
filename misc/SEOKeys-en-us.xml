@@ -28,6 +28,7 @@
   </Item>
   <Item text="Concepts" url="/en-us/concepts" >
 	<Item text="Delta query (preview)" url="/en-us/concepts/delta_query_overview" >
+		<Item text="Example: Events (preview)" url="/en-us/concepts/delta_query_events" />
 		<Item text="Example: Messages (preview)" url="/en-us/concepts/delta_query_messages" />
 		<Item text="Example: Groups (preview)" url="/en-us/concepts/delta_query_groups" />
 		<Item text="Example: Users (preview)" url="/en-us/concepts/delta_query_users" />
@@ -295,7 +296,7 @@
 		<Item text="Find meeting times" url="/en-us/api-reference/v1.0/api/user_findmeetingtimes" />
 	  </Item>
       <Item text="Calendar view" url="/en-us/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects.">
-        <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
+        <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/calendar_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Reminder view" url="/en-us/api-reference/v1.0/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="Reminder view" />
       </Item>
       <Item text="Calendar group" url="/en-us/api-reference/v1.0/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="A group of calendars.">
@@ -514,7 +515,7 @@
         <Item text="Create calendar" url="/en-us/api-reference/beta/api/user_post_calendars" SEOKeyword="Create Calendar, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Calendar." />
         <Item text="List calendar groups" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="List calendarGroups, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendargroup objects." />
         <Item text="Create calendar group" url="/en-us/api-reference/beta/api/user_post_calendargroups" SEOKeyword="Create CalendarGroup, Microsoft Graph API, Users API" SEODescription="Use this API to create a new CalendarGroup." />
-        <Item text="List calendar view" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
+        <Item text="List calendar view" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Find meeting times" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="user: meeting times, Microsoft Graph API, user API" SEODescription="" />
       </Item>
@@ -614,7 +615,7 @@
         <Item text="Get planTaskBoard" url="/en-us/api-reference/beta/api/plantaskboard_get" SEOKeyword="Get planTaskBoard, Microsoft Graph API, plantaskboard API" SEODescription="Retrieve the properties and relationships of plantaskboard object." />
       </Item>
     </Item>
-    <Item text="OneNote" url="/en-us/api-reference/beta/resources/note" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
+    <Item text="OneNote" url="/en-us/api-reference/beta/resources/notes" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
       <Item text="Notes" url="/en-us/api-reference/beta/resources/notes" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/notes_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/notes_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
