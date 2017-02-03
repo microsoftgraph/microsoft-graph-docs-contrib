@@ -35,8 +35,8 @@ includes the encoded, desired parameters.
 |:---------------|:--------|:----------|
 |startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
-| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md#state-tokens) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
-| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md#state-tokens) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
+| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
+| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
 When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
 a `GET /calendarview` request. `$select` is not supported in this case. 

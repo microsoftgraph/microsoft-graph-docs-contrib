@@ -3,7 +3,7 @@
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
 
 A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately 
-applying [state tokens](../../../concepts/delta_query_overview.md#state-tokens) in one or more of these calls, 
+applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls, 
 you can query for incremental changes in the contacts in 
 that folder. This allows you to maintain and synchronize a local store of a user's contacts without 
 having to fetch the entire set of contacts from the server every time.  
@@ -28,8 +28,8 @@ includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md#state-tokens) returned in the `deltaLink` URL of the previous **delta** function call for the same contact collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md#state-tokens) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same contact collection. |
+| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same contact collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same contact collection. |
 
 
 #### OData query parameters
