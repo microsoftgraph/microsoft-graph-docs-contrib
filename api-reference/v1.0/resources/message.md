@@ -45,7 +45,7 @@ A message in a mailFolder.
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
-|hasAttachments|Boolean|Indicates whether the message has attachments.|
+|hasAttachments|Boolean|Indicates whether the message has non-inline attachments. The value can be false if the only attachments for a given message are inline.|
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
