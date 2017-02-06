@@ -20,7 +20,7 @@ Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint inclu
 
 | **Operation**	| **Service endpoint** |
 |:--------------------------|:----------------------------------------|
-|   GET my profile |	[`https://graph.microsoft.com/v1.0/me`](/graph-explorer/#?request=me&version=v1.0) |
+|   GET my profile |	[`https://graph.microsoft.com/v1.0/me`](https://graph.microsoft.io/en-us/graph-explorer/?request=me&version=v1.0) |
 |   GET my files | [`https://graph.microsoft.com/v1.0/me/drive/root/children`](/graph-explorer/#?request=me%2Fdrive%2Froot%2Fchildren&version=v1.0) |
 |   GET my photo	 | [`https://graph.microsoft.com/v1.0/me/photo/$value`](/graph-explorer/#?request=me%2Fphoto%2F%24value&version=v1.0) |
 |   GET my mail |	[`https://graph.microsoft.com/v1.0/me/messages`](/graph-explorer/#?request=me%2Fmessages&version=v1.0) |
