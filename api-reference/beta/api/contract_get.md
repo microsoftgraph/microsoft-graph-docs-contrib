@@ -1,6 +1,7 @@
 # Get Contract
 
 Retrieve the properties and relationships of contract object.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -14,8 +15,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer &lt;code&gt;|
 
 ### Request body
 Do not supply a request body for this method.
