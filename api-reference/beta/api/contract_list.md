@@ -1,13 +1,13 @@
-# Get Contract
+# List contracts
 
-Retrieve the properties and relationships of [contract](../resources/contract.md) object.
+Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /contracts/{id}
+GET /contracts
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -20,7 +20,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Contract](../resources/contract.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [Contract](../resources/contract.md) objects in the response body.
 ### Example
 ##### Request
 
@@ -29,26 +29,30 @@ If successful, this method returns a `200 OK` response code and [Contract](../re
   "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/contracts/{id}
+GET https://graph.microsoft.com/beta/contracts
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract"
+  "@odata.type": "microsoft.graph.Contract",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 186
 
 {
-  "contractType": "contractType-value",
-  "customerId": "customerId-value",
-  "defaultDomainName": "defaultDomainName-value",
-  "displayName": "displayName-value",
-  "id": "id-value"
+    "value": [
+    {
+      "contractType": "contractType-value",
+      "customerId": "customerId-value",
+      "defaultDomainName": "defaultDomainName-value",
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  ]
 }
 ```
 
