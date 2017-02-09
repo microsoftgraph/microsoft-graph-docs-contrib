@@ -10,7 +10,9 @@ The following **scopes** are required to execute this API:
 GET /contracts
 ```
 ### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response. 
+
+> Filtering is supported for customerId, defaultDomainName, and displayName.
 
 ### Request headers
 | Name      |Description|

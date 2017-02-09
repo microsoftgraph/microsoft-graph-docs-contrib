@@ -1,22 +1,22 @@
 # Contract resource type
 Represents an existing partnership that the partner tenant has with a customer tenant.
-> Exists in partner tenants only. Partner tenants are Azure AD tenants that belong to Microsoft partners who are either part of Office 365 Syndication, Microsoft Cloud Solution Provider, or Microsoft Advisor partner programs. 
+> Exists in partner tenants only. Partner tenants are Azure AD tenants that belong to Microsoft partners who are either part of [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication, or Microsoft Advisor partner programs. 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get contract](../api/contract_get.md) | Contract |Read properties and relationships of contract object.|
+|[Get contract](../api/contract_get.md) | Contract |Read properties of a specific contract object. |
 |[List contracts](../api/contract_list.md) | Contract collection | List of contracts in the partner tenant. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contractType|String|Type of the contract.</br></br>Possible values are:</br> *SyndicationPartner*: Partner that exclusively resells and manages O365 and Intune for this customer. They resell and support their customers.</br> *BreadthPartner*: Partner has the ability to provide administrative support for this customer. However, the partner is not allowed to resell to the customer.</br>*ResellerPartner*: Partner that is similar to a syndication partner, except that the partner doesn’t have exclusive access to a tenant. **(pa) Should this be removed or moved to SyndicationPartner? It's confusing ->** In the syndication case, the customer cannot buy additional direct subscriptions from Microsoft or from other partners.|
+|contractType|String|Type of contract.</br></br>Possible values are:</br> *SyndicationPartner*: Partner that exclusively resells and manages O365 and Intune for this customer. They resell and support their customers.</br> *BreadthPartner*: Partner has the ability to provide administrative support for this customer. However, the partner is not allowed to resell to the customer.</br>*ResellerPartner*: Partner that is similar to a syndication partner, except that the partner doesn’t have exclusive access to a tenant. In the syndication case, the customer cannot buy additional direct subscriptions from Microsoft or from other partners.|
 |customerId|Guid|The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the customer tenant's organization resource. |
 |defaultDomainName|String|A copy of the customer tenant's default domain name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's default domain name changes.|
 |displayName|String|A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.|
-|id|String| The unique identifier for the partnership. Inherited from [directoryObject](directoryobject.md). Read-only.|
+|id|String| The unique identifier for the partnership. Read-only.|
 
 ### Relationships
 None
