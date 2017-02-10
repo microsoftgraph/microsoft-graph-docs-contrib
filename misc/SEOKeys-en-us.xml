@@ -1,4 +1,4 @@
-<Menu>
+/<Menu>
   <Item text="Overview" url="/en-us/overview/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud.">
     <Item text="Call the API" url="/en-us/overview/call_api" SEOKeyword="Call the API, Microsoft Graph API, Overview" SEODescription="Answers to some frequently-asked questions about the Microsoft Graph." />
     <Item text="Query parameters" url="/en-us/overview/query_parameters" SEOKeyword="Query parameters, Microsoft Graph API, Overview" SEODescription="Microsoft Graph is OData v4 compliant, provides information about supported OData query parameters" />
@@ -26,7 +26,7 @@
 	<Item text="Register your application with the Azure AD v2.0 endpoint" url="/en-us/authorization/auth_register_app_v2" SEODescription="Register your app on the Microsoft App Registration Portal." />
 	<Item text="Azure AD" url="/en-us/authorization/app_authorization" SEODescription="Authenticate your Microsoft Graph app using Azure AD." />
   </Item>
-  <Item text="Concepts" url="/en-us/concepts" >
+  <Item text="Concepts" url="/en-us/concepts/concepts" >
 	<Item text="Delta query (preview)" url="/en-us/concepts/delta_query_overview" >
 		<Item text="Example: Events (preview)" url="/en-us/concepts/delta_query_events" />
 		<Item text="Example: Messages (preview)" url="/en-us/concepts/delta_query_messages" />
