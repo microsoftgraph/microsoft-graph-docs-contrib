@@ -8,7 +8,7 @@ Files.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/<id>/range(addres={address})/visibleView/range
+GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/range
 
 ```
 ### Request headers
@@ -20,7 +20,7 @@ GET me/drive/root/workbook/worksheets/<id>/range(addres={address})/visibleView/r
 ### Request body
 
 ### Response
-If successful, this method returns `200, OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
+If successful, this method returns `200, OK` response code and [workbookRangeView](../resources/workbookrangeview.md) object in the response body.
 
 ### Example
 Here is an example of how to call this API.
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "workbookrangeview_range"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/<id>/range(addres='A1:Z10')/visibleView/range
+GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/range
 ```
 
 ##### Response

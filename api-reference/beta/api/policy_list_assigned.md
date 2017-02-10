@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /applications/<id>/policies
+GET /applications/{id}/policies
 ```
 
 > Note: The "id" in the request is the "id" property of the application or service principal, not the "appid" property.
@@ -32,7 +32,7 @@ The following example retrieves the policies assigned to an application.
 Here is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/applications/<id>/policies
+GET https://graph.microsoft.com/beta/applications/{id}/policies
 ```
 
 ##### Response

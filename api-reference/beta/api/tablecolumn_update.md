@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "update_tablecolumn"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/tables(<id|name>)/columns(<id|name>)
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)
 Content-type: application/json
 Content-length: 81
 

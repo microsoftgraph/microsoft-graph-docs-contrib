@@ -8,7 +8,7 @@ One of the following **scopes**, depending on the target resource, are required 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /subscriptions/<id>
+PATCH /subscriptions/{id}
 ```
 
 ## Request headers
@@ -26,7 +26,7 @@ Here is an example of the request.
   "name": "update_subscription"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/subscriptions/<id>
+PATCH https://graph.microsoft.com/beta/subscriptions/{id}
 Content-type: application/json
 
 {

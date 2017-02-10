@@ -8,22 +8,22 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/events/<id>/tentativelyAccept
-POST /users/<id | userPrincipalName>/events/<id>/tentativelyAccept
-POST /groups/<id>/events/<id>/tentativelyAccept
+POST /me/events/{id}/tentativelyAccept
+POST /users/{id | userPrincipalName}/events/{id}/tentativelyAccept
+POST /groups/{id}/events/{id}/tentativelyAccept
 
-POST /me/calendar/events/<id>/tentativelyAccept
-POST /users/<id | userPrincipalName>/calendar/events/<id>/tentativelyAccept
-POST /groups/<id>/calendar/events/<id>/tentativelyAccept
+POST /me/calendar/events/{id}/tentativelyAccept
+POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
+POST /groups/{id}/calendar/events/{id}/tentativelyAccept
 
-POST /me/calendars/<id>/events/<id>/tentativelyAccept
-POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/tentativelyAccept
+POST /me/calendars/{id}/events/{id}/tentativelyAccept
+POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
 
-POST /me/calendargroup/calendars/<id>/events/<id>/tentativelyAccept
-POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/tentativelyAccept
+POST /me/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
+POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
 
-POST /me/calendargroups/<id>/calendars/<id>/events/<id>/tentativelyAccept
-POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/tentativelyAccept
+POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
+POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -51,7 +51,7 @@ Here is an example of the request.
   "name": "event_tentativelyaccept"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/<id>/tentativelyAccept
+POST https://graph.microsoft.com/beta/me/events/{id}/tentativelyAccept
 Content-type: application/json
 Content-length: 56
 

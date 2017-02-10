@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 
 ```http
-PATCH /policies/<id>
+PATCH /policies/{id}
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -37,7 +37,7 @@ The following example updates the definition of the token lifetime policy and se
 Here is an example of the request.
 
 ```http
-PATCH https://graph.microsoft.com/beta/policies/<id>
+PATCH https://graph.microsoft.com/beta/policies/{id}
 Content-Type: application/json
 {
 	"definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"],

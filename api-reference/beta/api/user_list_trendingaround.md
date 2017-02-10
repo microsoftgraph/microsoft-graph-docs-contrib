@@ -9,7 +9,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 ```http
 GET /me/trendingAround
-GET /users/<id | userPrincipalName>/trendingAround
+GET /users/{id | userPrincipalName}/trendingAround
 GET /drive/root/createdByUser/trendingAround
 GET /drive/root/lastModifiedByUser/trendingAround
 ```

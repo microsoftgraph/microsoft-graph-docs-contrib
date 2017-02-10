@@ -24,7 +24,9 @@ Here is a JSON representation of the resource
   "createdBy": "string",
   "id": "string (identifier)",
   "owner": "string",
-  "title": "string"
+  "title": "string",
+  "createdDateTime":"DateTimeOffset",
+  "iVisibleInPlannerWebClient":"Boolean",
 }
 
 ```
@@ -35,6 +37,8 @@ Here is a JSON representation of the resource
 |id|String| Read-only. Id of the plan. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service. |
 |owner|String|[Group](group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
 |title|String| Required. Title of the plan. This is usually set the name of the group owning the plan.|
+|createdDateTime|DateTimeOffset| Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|iVisibleInPlannerWebClient|Boolean| Read-only. Value is `true` if the plan is shown on Planner Web Client and `false` otherwise. |
 
 ## Relationships
 | Relationship | Type	|Description|

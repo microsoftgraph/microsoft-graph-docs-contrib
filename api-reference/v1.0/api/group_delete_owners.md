@@ -8,7 +8,7 @@ One of the following **scopes** is required to execute this API: *Group.ReadWrit
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/<id>/owners/<id>/$ref
+DELETE /groups/{id}/owners/{id}/$ref
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/<id>/owners/$ref/<id>
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref/{id}
 ```
 In the request, specify the `id` of the directory object you want to remove after the $ref segment.
 

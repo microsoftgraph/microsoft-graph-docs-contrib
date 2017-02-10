@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/conversations/<id>/threads
+GET /groups/{id}/conversations/{id}/threads
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "get_threads"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/conversations/<id>/threads
+GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -58,7 +58,7 @@ Content-length: 536
       ],
       "topic": "topic-value",
       "hasAttachments": true,
-      "lastDeliveredDateTime": "datetime-value",
+      "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
       "uniqueSenders": [
         "uniqueSenders-value"
       ],

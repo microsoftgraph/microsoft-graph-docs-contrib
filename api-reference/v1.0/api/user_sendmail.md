@@ -1,6 +1,6 @@
-# user: sendMail
+# Send mail
 
-Send the message specified in the request body on the fly. You can optionally save the message in the Sent Items folder.
+Send the message specified in the request body. The message is saved in the Sent Items folder by default.
 
 You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API: *Mail.Send*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/sendMail
+POST /users/{id | userPrincipalName}/sendMail
 ```
 ## Request headers
 | Header       | Value |
@@ -24,7 +24,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |Message|[Message](../resources/message.md)|The message to send. Required.|
-|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Optional. Default is true.|
+|SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
 
 ## Response
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
@@ -40,92 +40,31 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
-Content-length: 1944
+Content-length: 512
 
 {
-  "Message": {
-    "receivedDateTime": "datetime-value",
-    "sentDateTime": "datetime-value",
-    "hasAttachments": true,
-    "subject": "subject-value",
+  "message": {
+    "subject": "Meet for lunch?",
     "body": {
-      "contentType": "",
-      "content": "content-value"
-    },
-    "bodyPreview": "bodyPreview-value",
-    "importance": {
-    },
-    "parentFolderId": "parentFolderId-value",
-    "sender": {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    },
-    "from": {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
+      "contentType": "Text",
+      "content": "The new cafeteria is open."
     },
     "toRecipients": [
       {
         "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
+          "address": "fannyd@contoso.onmicrosoft.com"
         }
       }
     ],
     "ccRecipients": [
       {
         "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
+          "address": "danas@contoso.onmicrosoft.com"
         }
       }
     ],
-    "bccRecipients": [
-      {
-        "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
-        }
-      }
-    ],
-    "replyTo": [
-      {
-        "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
-        }
-      }
-    ],
-    "conversationId": "conversationId-value",
-    "uniqueBody": {
-      "contentType": "",
-      "content": "content-value"
-    },
-    "isDeliveryReceiptRequested": true,
-    "isReadReceiptRequested": true,
-    "isRead": true,
-    "isDraft": true,
-    "webLink": "webLink-value",
-    "createdDateTime": "datetime-value",
-    "lastModifiedDateTime": "datetime-value",
-    "changeKey": "changeKey-value",
-    "categories": [
-      "categories-value"
-    ],
-    "id": "id-value",
-    "attachments": [
-      {
-        "@odata.type": "#microsoft.graph.fileAttachment",
-        "name": "menu.txt",
-        "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
-      }
-    ]
   },
-  "SaveToSentItems": true
+  "saveToSentItems": "false"
 }
 ```
 

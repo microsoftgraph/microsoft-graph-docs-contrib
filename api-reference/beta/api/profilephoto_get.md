@@ -2,7 +2,7 @@
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
-A GET operation first looks for the specified photo in the user's mailbox on Exchange Online, and if 
+A GET photo operation first looks for the specified photo in the user's mailbox on Exchange Online, and if 
 it's not available there, then looks in Azure Active Directory (AAD).
 
 The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
@@ -13,6 +13,11 @@ If the size you request is not available, you can still get a smaller size that 
 For example, if the user uploads a photo that is 504x504 pixels, then all but the 648x648 size of photo will be available for download.
 If the specified size is not available in the user's mailbox or in AAD, the size of '1x1' is returned with the rest of 
 metadata.
+
+> **Note** The GET photo operation in beta supports a user's work, school, or personal mailboxes. The GET photo metadata operation,
+however, supports only the user's work or school mailboxes and not personal mailboxes.
+
+
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API for:
@@ -26,35 +31,35 @@ One of the following **scopes** is required to execute this API for:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
-GET /users/<id | userPrincipalName>/photo/$value
-GET /groups/<id>/photo/$value
-GET /me/contacts/<id>/photo/$value
-GET /users/<id | userPrincipalName>/contacts/<id>/photo/$value
-GET /me/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo/$value
+GET /users/{id | userPrincipalName}/photo/$value
+GET /groups/{id}/photo/$value
+GET /me/contacts/{id}/photo/$value
+GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
 ## HTTP request to get the metadata of the photo
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
-GET /users/<id | userPrincipalName>/photo
-GET /groups/<id>/photo
-GET /me/contacts/<id>/photo
-GET /users/<id | userPrincipalName>/contacts/<id>/photo
-GET /me/contactfolders/<contactFolderId>/contacts/<id>/photo
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photo
+GET /users/{id | userPrincipalName}/photo
+GET /groups/{id}/photo
+GET /me/contacts/{id}/photo
+GET /users/{id | userPrincipalName}/contacts/{id}/photo
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
 ## HTTP request to get the metadata for a specific photo size
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/photos/<size>
-GET /users/<id | userPrincipalName>/photos/<size>
-GET /groups/<id>/photos/<size>
-GET /me/contacts/<id>/photos/<size>
-GET /users/<id | userPrincipalName>/contacts/<id>/photos/<size>
-GET /me/contactfolders/<contactFolderId>/contacts/<id>/photos/<size>
-GET /users/<id | userPrincipalName>/contactfolders/<contactFolderId>/contacts/<id>/photos/<size>
+GET /me/photos/{size}
+GET /users/{id | userPrincipalName}/photos/{size}
+GET /groups/{id}/photos/{size}
+GET /me/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## Parameters

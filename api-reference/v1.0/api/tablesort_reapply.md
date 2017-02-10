@@ -30,7 +30,7 @@ Here is an example of the request.
   "name": "tablesort_reapply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables(<id|name>)/sort/reapply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/sort/reapply
 ```
 
 ##### Response

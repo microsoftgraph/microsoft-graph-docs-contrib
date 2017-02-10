@@ -9,7 +9,7 @@ Group.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /tasks/<id>/details
+PATCH /tasks/{id}/details
 
 ```
 ## Request headers
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "update_taskdetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/tasks/<id>/details
+PATCH https://graph.microsoft.com/beta/tasks/{id}/details
 Content-type: application/json
 Content-length: 181
 If-Match: W/"JzEtMDAwMDAwMDAwMDAwMDAwOC8yMDE1LTEwLTIyVDE4OjExOjU2LjExMzU1NDYrMDA6MDAn"
@@ -52,8 +52,7 @@ If-Match: W/"JzEtMDAwMDAwMDAwMDAwMDAwOC8yMDE1LTEwLTIyVDE4OjExOjU2LjExMzU1NDYrMDA
   "references": {
   },
   "checklist": {
-  },
-  "id": "id-value"
+  }
 }
 ```
 ##### Response

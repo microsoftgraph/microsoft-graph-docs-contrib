@@ -6,9 +6,9 @@ All top-level file system objects in OneDrive are returned as item resources.
 **DriveItems** can be accessed by their **id** using the `/items/{item-id}` syntax, or by their file system path using the `/drive/root:/path/to/file` syntax.
 
 Items have facets modeled as properties that provide data about the item's identities and capabilities. 
-Folders have a [**folder** facet](folder.md) and files have a [**file facet**](file.md). 
+Folders have a [**folder facet**](folder.md) and files have a [**file facet**](file.md). 
 Images have an [**image facet**](image.md) in addition to their file facet.
-Images taken with a camera (photos) ahave a [**photo facet**](photo.md) that identifies the item as a photo and provdes the properties of when the photo was taken and with what device.
+Images taken with a camera (photos) have a [**photo facet**](photo.md) that identifies the item as a photo and provides the properties of when the photo was taken and with what device.
 
 Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of items under the folder.
 
@@ -105,7 +105,7 @@ These properties are temporary and either a) define behavior the service should 
 
 | Property name                     | Type   | Description                                                                                                                                                         |
 |:----------------------------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. An item will never be returned with this annotation. Write-only.                               |
+| @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. An item will never be returned with this annotation. Write-only.                               |
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.                                                    |
 | @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only. |
 

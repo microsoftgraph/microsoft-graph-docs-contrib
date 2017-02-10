@@ -35,12 +35,12 @@ Here is an example of the request.
   "name": "update_table"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/tables(<id|name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)
 Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "showHeaders": true,
   "showTotals": true,
@@ -60,7 +60,7 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "showHeaders": true,
   "showTotals": true,

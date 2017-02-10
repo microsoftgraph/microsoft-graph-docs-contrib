@@ -2,6 +2,8 @@
 
 The conditions stated by a client for the location of a meeting.
 
+Derived from [location](location.md).
+
 ## JSON representation
 
 Here is a JSON representation of the resource
@@ -39,7 +41,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "locationConstraint resource",
+  "description": "locationConstraintItem resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

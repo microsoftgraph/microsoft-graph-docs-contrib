@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "range_row"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/<id>/workbook/names(<name>)/range/Row
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Row
 Content-type: application/json
 Content-length: 18
 

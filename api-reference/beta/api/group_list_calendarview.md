@@ -1,12 +1,13 @@
 # List calendarView
 
-Retrieve a list of event objects.
+Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
+from the default calendar of a group.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 ## Query parameters
 
@@ -36,7 +37,7 @@ Here is an example of the request.
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/calendarView
+GET https://graph.microsoft.com/beta/groups/{id}/calendarView
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -58,7 +59,7 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "datetime-value"
+        "time": "2016-10-19T10:37:00Z"
       },
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,

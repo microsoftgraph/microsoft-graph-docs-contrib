@@ -1,16 +1,19 @@
 # List memberOf
 
-Get groups and directory roles that the user is a direct member of. 
+Get [groups](../resources/group.md) and [directory roles](../resources/directoryrole.md) that the user is a direct member of. 
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API: 
-*User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+*Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/memberOf
+GET /users/{id | userPrincipalName}/memberOf
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response. $filter is not supported. 
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -42,12 +45,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.group",
+      "id": "id-value",
+      "createdDateTime": null,
+      "description": "All users at the company",
+      "displayName": "All Users",
+      "groupTypes": [],
+      "mailEnabled": false,
+      "securityEnabled": true,
     }
   ]
 }

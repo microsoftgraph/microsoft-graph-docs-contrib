@@ -8,22 +8,22 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/events/<id>/dismissReminder
-POST /users/<id | userPrincipalName>/events/<id>/dismissReminder
-POST /groups/<id>/events/<id>/dismissReminder
+POST /me/events/{id}/dismissReminder
+POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
+POST /groups/{id}/events/{id}/dismissReminder
 
-POST /me/calendar/events/<id>/dismissReminder
-POST /users/<id | userPrincipalName>/calendar/events/<id>/dismissReminder
-POST /groups/<id>/calendar/events/<id>/dismissReminder
+POST /me/calendar/events/{id}/dismissReminder
+POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
+POST /groups/{id}/calendar/events/{id}/dismissReminder
 
-POST /me/calendars/<id>/events/<id>/dismissReminder
-POST /users/<id | userPrincipalName>/calendars/<id>/events/<id>/dismissReminder
+POST /me/calendars/{id}/events/{id}/dismissReminder
+POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
 
-POST /me/calendargroup/calendars/<id>/events/<id>/dismissReminder
-POST /users/<id | userPrincipalName>/calendargroup/calendars/<id>/events/<id>/dismissReminder
+POST /me/calendargroup/calendars/{id}/events/{id}/dismissReminder
+POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/dismissReminder
 
-POST /me/calendargroups/<id>/calendars/<id>/events/<id>/dismissReminder
-POST /users/<id | userPrincipalName>/calendargroups/<id>/calendars/<id>/events/<id>/dismissReminder
+POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
+POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -44,7 +44,7 @@ Here is an example of the request.
   "name": "event_dismissreminder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/<id>/dismissReminder
+POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```
 
 ##### Response

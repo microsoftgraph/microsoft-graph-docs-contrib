@@ -9,8 +9,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<id | userPrincipalName>/photo
-DELETE /groups/<id>/photo
+DELETE /users/{id | userPrincipalName}/photo
+DELETE /groups/{id}/photo
 DELETE /drive/root/createdByUser/photo
 
 ```
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "delete_photo"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/<id|userPrincipalName>/photo
+DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
 ##### Response
 Here is an example of the response.

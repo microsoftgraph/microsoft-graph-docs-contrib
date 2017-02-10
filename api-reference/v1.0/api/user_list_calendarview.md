@@ -1,13 +1,34 @@
 # List calendarView
 
-Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar or from a different calendar.
+Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's default calendar, 
+or from some other calendar of the user's.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Calendars.Read; Calendars.ReadWrite*
 ## HTTP request
+
+A user's default [calendar](../resources/calendar.md).
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id | userPrincipalName}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+```
+
+A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id | userPrincipalName}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+
+GET /me/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+```
+
+A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendarGroups/{id}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 ## Query parameters
@@ -24,6 +45,7 @@ This method also supports the [OData Query Parameters](http://graph.microsoft.io
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer <token>. Required. |
+| Content-Type   | string  | application/json | 
 | Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
 
 ## Request body
@@ -38,7 +60,7 @@ Here is an example of the request.
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarView
+GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000 
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

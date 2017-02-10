@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 
 ```http
-DELETE /policies/<id>
+DELETE /policies/{id}
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -29,7 +29,7 @@ The following example deletes a policy.
 Here is an example of the request.
 
 ```http
-DELETE https://graph.microsoft.com/beta/policies/<id>
+DELETE https://graph.microsoft.com/beta/policies/{id}
 ```
 
 ##### Response

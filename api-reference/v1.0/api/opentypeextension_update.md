@@ -25,20 +25,20 @@ creating the extension in:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/messages/<id>/extensions/<extensionId>
-PATCH /users/<id|userPrincipalName>/messages/<id>/extensions/<extensionId>
-PATCH /me/mailFolders/<id>/messages/<id>/extensions/<extensionId>
+PATCH /me/messages/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /me/mailFolders/{id}/messages/{id}/extensions/{extensionId}
 
-PATCH /me/events/<id>/extensions/<extensionId>
-PATCH /users/<id|userPrincipalName>/events/<id>/extensions/<extensionId>
+PATCH /me/events/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
 
-PATCH /me/contacts/<id>/extensions/<extensionId>
-PATCH /users/<id|userPrincipalName>/contacts/<id>/extensions/<extensionId>
+PATCH /me/contacts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 
-PATCH /groups/<id>/events/<id>/extensions/<extensionId>
+PATCH /groups/{id}/events/{id}/extensions/{extensionId}
 
-PATCH /groups/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
-PATCH /groups/<id>/conversations/<id>/threads/<id>/posts/<id>/extensions/<extensionId>
+PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+PATCH /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
 ```
 
 

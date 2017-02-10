@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "chartlineformat_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/<id>/workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
 ```
 
 ##### Response

@@ -14,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id | userPrincipalName>/events
+POST /users/{id | userPrincipalName}/events
 ```
 ## Request headers
 | Header       | Value |
@@ -46,7 +46,7 @@ Content-length: 285
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
     "response": "",
-    "time": "datetime-value"
+    "time": "2016-10-19T10:37:00Z"
   },
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
@@ -71,7 +71,7 @@ Content-length: 285
   "originalEndTimeZone": "originalEndTimeZone-value",
   "responseStatus": {
     "response": "",
-    "time": "datetime-value"
+    "time": "2016-10-19T10:37:00Z"
   },
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,

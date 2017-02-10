@@ -3,6 +3,7 @@ Microsoft Graph provides several optional query parameters that you can use to s
 
 |Name|Value|Description|
 |:---------------|:--------|:-------|
+|$search|string|A property and value pair separated by a colon. | 
 |$select|string|Comma-separated list of properties to include in the response.|
 |$expand|string|Comma-separated list of relationships to expand and include in the response.  |
 |$orderby|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
@@ -28,6 +29,33 @@ For example, encode the space and quote characters in the last example, as shown
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address%20eq%20%27jon@contoso.com%27
 ```
+
+
+### $search
+To restrict the results of a request that match a search criterion, use the **$search** query parameter. 
+
+>  **Note**: You can currently search messages but not contacts or events. A **$search** request returns up to 250 results. You cannot use **$filter** or **$orderby** in a search request.
+
+Search criteria are expressed using Advanced Query Syntax (AQS). The results are sorted by the date and time that the message was sent.
+
+You can specify the following properties on a **message** in a **$search** criterion:
+**attachments**, **bccRecipients**, **body**, **category**, **ccRecipients**, **content**, **from**, **hasAttachments**, **participants**, **receivedDateTime**, **sender**, **subject**, **toRecipients**
+
+If you do a search on messages and specify only a value, the search is carried out on the default search properties of **from**, **subject** and **body**.
+
+The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties: 
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
+```
+
+The next example searches all messages in the user's Inbox that were sent from a specific email address:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
+```
+
+
 
 ### $select
 To specify a different set of properties to return than the default set provided by the Graph, use the **$select** query option.

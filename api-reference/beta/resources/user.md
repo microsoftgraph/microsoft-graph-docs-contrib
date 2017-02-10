@@ -2,6 +2,10 @@
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
+## Delta query support
+
+This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/user_delta.md) function.
 
 ## Methods
 | Method       | Return Type  |Description|
@@ -14,8 +18,6 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| Get the mail folder collection under the root folder of the signed-in user. |
 |[Create mailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
 |[sendMail](../api/user_sendmail.md)|None|Send the message specified in the request body.|
-|[Get mailbox settings](../api/mailboxsettings_get.md) |[mailboxSettings](../resources/mailboxSettings.md) | Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies, locale, and time zone. |
-|[Update mailbox settings](../api/mailboxsettings_update.md) |[mailboxSettings](../resources/mailboxSettings.md) | Update one or more settings for the user's mailbox. This includes settings for automatic replies, locale, and time zone.|
 |[List events](../api/user_list_events.md) |[Event](event.md) collection| Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.|
 |[Create event](../api/user_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
@@ -41,9 +43,9 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[getMailTips](../api/user_getmailtips.md)|[mailTips](mailtips.md) collection|Return the MailTips of one or more recipients as available to the signed-in user. |
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive. |
+|[invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md)| None |Invalidates all of the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This will force the user to sign in to those applications again.| 
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
-
-
+|[delta](../api/user_delta.md)|user collection| Get incremental changes for users. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -63,7 +65,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title. Supports $filter.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
-|mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. They include settings for sending automatic replies to incoming messages, locale and time zone.|
+|mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user_get_mailboxsettings.md) or [update](../api/user_update_mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
@@ -80,8 +82,10 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |preferredName|String|The preferred name for the user.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
 |proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
+|refreshTokensValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md) to reset.|
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
+|showInAddressList|Boolean|**true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|
 |skills|String collection|A list for the user to enumerate their skills.|
 |state|String|The state or province in the user's address. Supports $filter.|
 |streetAddress|String|The street address of the user's place of business.|

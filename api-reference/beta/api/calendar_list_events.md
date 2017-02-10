@@ -13,21 +13,21 @@ One of the following **scopes** is required to execute this API:
 A user's or group's default [calendar](../resources/calendar.md).
 ```http
 GET /me/calendar/events
-GET /users/<id | userPrincipalName>/calendar/events
-GET /groups/<id>/calendar/events
+GET /users/{id | userPrincipalName}/calendar/events
+GET /groups/{id}/calendar/events
 ```
 A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
 ```http
-GET /me/calendars/<id>/events
-GET /users/<id | userPrincipalName>/calendars/<id>/events
+GET /me/calendars/{id}/events
+GET /users/{id | userPrincipalName}/calendars/{id}/events
 
-GET /me/calendarGroup/calendars/<id>/events
-GET /users/<id | userPrincipalName>/calendarGroup/calendars/<id>/events
+GET /me/calendarGroup/calendars/{id}/events
+GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
-GET /me/calendarGroups/<id>/calendars/<id>/events
-GET /users/<id | userPrincipalName>/calendarGroups/<id>/calendars/<id>/events
+GET /me/calendarGroups/{id}/calendars/{id}/events
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -71,7 +71,7 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "datetime-value"
+        "time": "2016-10-19T10:37:00Z"
       },
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,

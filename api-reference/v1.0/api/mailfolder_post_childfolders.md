@@ -8,8 +8,8 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/mailFolders/<id>/childFolders
-POST /users/<id | userPrincipalName>/mailFolders/<id>/childFolders
+POST /me/mailFolders/{id}/childFolders
+POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
 Specify the parent folder in the query URL as a folder ID, or the `Inbox`, `Drafts`, `SentItems`, or 
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "create_mailfolder_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/<id>/childFolders
+POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders
 Content-type: application/json
 Content-length: 159
 
