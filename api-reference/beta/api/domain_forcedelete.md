@@ -1,0 +1,73 @@
+# domain: forceDelete
+
+Deletes a domain using an asynchronous operation. A URL link to check the status of the delete operation is provided in the response. By using the status link, a client can poll for the result of the delete operation. 
+
+The following actions are performed as part of this operation: 
+* Rename UPN, EmailAddress, and ProxyAddress of users that have references to the deleted domain.
+* Rename EmailAddress of groups that have references to the deleted domain. 
+* Rename AppIndentifierUrls of applications that have references to the deleted domain. 
+* If the number of objects to be renamed is greater than 100, an error is returned. 
+* If one of the applications to be renamed is a multi-tenant app, an error is returned.
+
+> If a [DELETE request is performed on the domain resource](domain_delete.md), an HTTP Response code of 400 is returned with a link suggesting the forceDelete API. 
+
+### Prerequisites
+The following **scopes** are required to execute this API: 
+### HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+POST /domains/<id>/forceDelete
+
+```
+### Request headers
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer &lt;code&gt;|
+| Content-Type  | application/json |
+
+### Request body
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|disableUserAccounts|Boolean| Option to disable renamed user accounts. </br>*True* (default): User accounts renamed as part of this operation are disabled. </br>*False*: User accounts renamed as part of this operation are not disabled. |
+
+### Response
+If successful, this method returns `200, OK` response code. 
+
+### Example
+##### Request
+<!-- {
+  "blockType": "request",
+  "name": "domain_forcedelete"
+}-->
+```http
+POST https://graph.microsoft.com/beta/domains/<id>/forceDelete
+Content-type: application/json
+Content-length: 33
+
+{
+  "disableUserAccounts": true
+}
+```
+
+##### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
+
+```http
+HTTP/1.1 200 OK
+```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "domain: forcedelete",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
