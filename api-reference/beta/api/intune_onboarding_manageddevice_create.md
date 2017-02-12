@@ -1,27 +1,30 @@
-﻿# Create managedDevice> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create managedDevice
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [managedDevice](../resources/intune_onboarding_manageddevice.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /managedDevices/{id}
-POST /users/{id}/managedDevices/{id}
-POST /detectedapps/{id}/managedDevices/{id}
+POST /managedDevices/
+POST /users/{usersId}/managedDevices/
+POST /detectedapps/{detectedappsId}/managedDevices/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a managedDevice object.
 The following table shows the properties that are required when you create a managedDevice.
 
@@ -53,19 +56,20 @@ The following table shows the properties that are required when you create a man
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
 |emailAddress|String|Email(s) for the user associated with the device|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
+|deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `smsidConflict`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `resetCert`, `notRegisteredPendingEnrollment`, `unknown`.|
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [managedDevice](../resources/intune_onboarding_manageddevice.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedDevices/{id}
+POST https://graph.microsoft.com/beta/managedDevices/
 Content-type: application/json
-Content-length: 1878
+Content-length: 1922
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -74,8 +78,8 @@ Content-length: 1878
   "hardwareInformation": {
     "@odata.type": "microsoft.graph.hardwareInformation",
     "serialNumber": "Serial Number value",
-    "totalStorageSpace": 17,
-    "freeStorageSpace": 16,
+    "totalStorageSpace": 1,
+    "freeStorageSpace": 0,
     "imei": "Imei value",
     "meid": "Meid value",
     "manufacturer": "Manufacturer value",
@@ -104,7 +108,7 @@ Content-length: 1878
   "deviceType": "windowsRT",
   "complianceState": "compliant",
   "jailBroken": "Jail Broken value",
-  "managementAgents": 16,
+  "managementAgents": 0,
   "managementAgent": "mdm",
   "osVersion": "Os Version value",
   "easActivated": true,
@@ -115,16 +119,17 @@ Content-length: 1878
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
   "emailAddress": "Email Address value",
-  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value"
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "deviceRegistrationState": "smsidConflict"
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1927
+Content-Length: 1971
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -134,8 +139,8 @@ Content-Length: 1927
   "hardwareInformation": {
     "@odata.type": "microsoft.graph.hardwareInformation",
     "serialNumber": "Serial Number value",
-    "totalStorageSpace": 17,
-    "freeStorageSpace": 16,
+    "totalStorageSpace": 1,
+    "freeStorageSpace": 0,
     "imei": "Imei value",
     "meid": "Meid value",
     "manufacturer": "Manufacturer value",
@@ -164,7 +169,7 @@ Content-Length: 1927
   "deviceType": "windowsRT",
   "complianceState": "compliant",
   "jailBroken": "Jail Broken value",
-  "managementAgents": 16,
+  "managementAgents": 0,
   "managementAgent": "mdm",
   "osVersion": "Os Version value",
   "easActivated": true,
@@ -175,7 +180,8 @@ Content-Length: 1927
   "lostModeState": "enabled",
   "activationLockBypassCode": "Activation Lock Bypass Code value",
   "emailAddress": "Email Address value",
-  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value"
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "deviceRegistrationState": "smsidConflict"
 }
 ```
 

@@ -1,10 +1,12 @@
-﻿# windows81VpnProxyServer resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# windows81VpnProxyServer resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 VPN Proxy Server.
 
 Inherits from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
@@ -13,9 +15,9 @@ Inherits from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.m
 |automaticallyDetectProxySettings|Boolean|Automatically detect proxy settings.|
 |bypassProxyServerForLocalAddress|Boolean|Bypass proxy server for local address.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

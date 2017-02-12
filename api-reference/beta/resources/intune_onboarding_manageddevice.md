@@ -1,7 +1,9 @@
-﻿# managedDevice resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# managedDevice resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Devices that are managed or pre-enrolled through Intune
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List managedDevices](../api/intune_onboarding_manageddevice_list.md)|[managedDevice](../resources/intune_onboarding_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_onboarding_manageddevice.md) objects.|
@@ -16,8 +18,9 @@ Devices that are managed or pre-enrolled through Intune
 |[bypassActivationLock action](../api/intune_onboarding_manageddevice_bypassactivationlock.md)|None|Not yet documented|
 |[rebootNow action](../api/intune_onboarding_manageddevice_rebootnow.md)|None|Not yet documented|
 |[List detectedApps](../api/intune_onboarding_manageddevice_list_detectedapp.md)|[detectedApp](../resources/intune_onboarding_detectedapp.md) collection|Get the detectedApps from the detectedApps navigation property.|
+|[Get deviceCategory](../api/intune_onboarding_manageddevice_get_devicecategory.md)|[deviceCategory](../resources/intune_onboarding_devicecategory.md)|Get the [deviceCategory](../resources/intune_onboarding_devicecategory.md) from the deviceCategory navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Unique Identifier for the device|
@@ -46,13 +49,15 @@ Devices that are managed or pre-enrolled through Intune
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
 |emailAddress|String|Email(s) for the user associated with the device|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
+|deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `smsidConflict`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `resetCert`, `notRegisteredPendingEnrollment`, `unknown`.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |detectedApps|[detectedApp](../resources/intune_onboarding_detectedapp.md) collection|All applications currently installed on the device|
+|deviceCategory|[deviceCategory](../resources/intune_onboarding_devicecategory.md)|Device category|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -110,7 +115,8 @@ Here is a JSON representation of the resource.
   "lostModeState": "String",
   "activationLockBypassCode": "String",
   "emailAddress": "String",
-  "azureActiveDirectoryDeviceId": "String"
+  "azureActiveDirectoryDeviceId": "String",
+  "deviceRegistrationState": "String"
 }
 ```
 

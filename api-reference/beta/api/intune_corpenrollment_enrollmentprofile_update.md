@@ -1,25 +1,28 @@
-﻿# Update enrollmentProfile> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update enrollmentProfile
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceManagement/enrollmentProfiles/{id}
+PATCH /deviceManagement/enrollmentProfiles/{enrollmentProfileId}
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object.
 The following table shows the properties that are required when you create a [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md).
 
@@ -33,14 +36,14 @@ The following table shows the properties that are required when you create a [en
 
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{enrollmentProfileId}
 Content-type: application/json
 Content-length: 201
 
@@ -52,7 +55,7 @@ Content-length: 201
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

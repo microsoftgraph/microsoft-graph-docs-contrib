@@ -1,10 +1,12 @@
-﻿# importedAppleDeviceIdentityResult resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# importedAppleDeviceIdentityResult resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The importedAppleDeviceIdentityResult resource represents the result of attempting to import Apple devices identities.
 
 Inherits from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List importedAppleDeviceIdentityResults](../api/intune_corpenrollment_importedappledeviceidentityresult_list.md)|[importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) collection|List properties and relationships of the [importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) objects.|
@@ -13,7 +15,7 @@ Inherits from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_i
 |[Delete importedAppleDeviceIdentityResult](../api/intune_corpenrollment_importedappledeviceidentityresult_delete.md)|None|Deletes a [importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md).|
 |[Update importedAppleDeviceIdentityResult](../api/intune_corpenrollment_importedappledeviceidentityresult_update.md)|[importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md)|Update the properties of a [importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md)|
@@ -29,9 +31,9 @@ Inherits from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_i
 |platform|String|The platform of the Device. Inherited from [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

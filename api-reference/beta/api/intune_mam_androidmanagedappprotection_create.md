@@ -1,27 +1,30 @@
-﻿# Create androidManagedAppProtection> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create androidManagedAppProtection
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /managedAppPolicies/{id}
-POST /managedAppRegistrations/{id}/appliedPolicies/{id}
-POST /managedAppRegistrations/{id}/intendedPolicies/{id}
+POST /managedAppPolicies/
+POST /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/
+POST /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a androidManagedAppProtection object.
 The following table shows the properties that are required when you create a androidManagedAppProtection.
 
@@ -49,7 +52,7 @@ The following table shows the properties that are required when you create a and
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
-|allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `box`, `dropbox`, `googleDrive`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -60,26 +63,26 @@ The following table shows the properties that are required when you create a and
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppPolicies/{id}
+POST https://graph.microsoft.com/beta/managedAppPolicies/
 Content-type: application/json
-Content-length: 1338
+Content-length: 1267
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
   "displayName": "Display Name value",
   "description": "Description value",
   "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-  "deployedAppCount": 16,
+  "deployedAppCount": 0,
   "version": "Version value",
-  "periodOfflineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
-  "periodOnlineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
+  "periodOnlineBeforeAccessCheck": "PT35.0018757S",
   "allowedInboundDataTransferSources": "managedApps",
   "allowedOutboundDataTransferDestinations": "managedApps",
   "organizationalCredentialsRequired": true,
@@ -88,11 +91,11 @@ Content-length: 1338
   "deviceComplianceRequired": true,
   "managedBrowserToOpenLinksRequired": true,
   "saveAsBlocked": true,
-  "periodOfflineBeforeWipeIsEnforced": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeWipeIsEnforced": "-PT3M22.1587532S",
   "pinRequired": true,
-  "maximumPinRetries": 17,
+  "maximumPinRetries": 1,
   "simplePinBlocked": true,
-  "minimumPinLength": 16,
+  "minimumPinLength": 0,
   "pinCharacterSet": "numeric",
   "allowedDataStorageLocations": [
     "sharePoint"
@@ -100,7 +103,7 @@ Content-length: 1338
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
-  "targetedSecurityGroupsCount": 27,
+  "targetedSecurityGroupsCount": 11,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],
@@ -109,23 +112,23 @@ Content-length: 1338
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1387
+Content-Length: 1316
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
   "displayName": "Display Name value",
   "description": "Description value",
   "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-  "deployedAppCount": 16,
+  "deployedAppCount": 0,
   "id": "cf517ced-7ced-cf51-ed7c-51cfed7c51cf",
   "version": "Version value",
-  "periodOfflineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
-  "periodOnlineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
+  "periodOnlineBeforeAccessCheck": "PT35.0018757S",
   "allowedInboundDataTransferSources": "managedApps",
   "allowedOutboundDataTransferDestinations": "managedApps",
   "organizationalCredentialsRequired": true,
@@ -134,11 +137,11 @@ Content-Length: 1387
   "deviceComplianceRequired": true,
   "managedBrowserToOpenLinksRequired": true,
   "saveAsBlocked": true,
-  "periodOfflineBeforeWipeIsEnforced": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeWipeIsEnforced": "-PT3M22.1587532S",
   "pinRequired": true,
-  "maximumPinRetries": 17,
+  "maximumPinRetries": 1,
   "simplePinBlocked": true,
-  "minimumPinLength": 16,
+  "minimumPinLength": 0,
   "pinCharacterSet": "numeric",
   "allowedDataStorageLocations": [
     "sharePoint"
@@ -146,7 +149,7 @@ Content-Length: 1387
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
-  "targetedSecurityGroupsCount": 27,
+  "targetedSecurityGroupsCount": 11,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],

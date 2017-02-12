@@ -1,26 +1,29 @@
-﻿# Create iosManagedAppRegistration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create iosManagedAppRegistration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /managedAppRegistrations/{id}
-POST /users/{id}/managedAppRegistrations/{id}
+POST /managedAppRegistrations/
+POST /users/{usersId}/managedAppRegistrations/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a iosManagedAppRegistration object.
 The following table shows the properties that are required when you create a iosManagedAppRegistration.
 
@@ -34,7 +37,7 @@ The following table shows the properties that are required when you create a ios
 |deviceType|String|Host device type Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceTag|String|App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceName|String|Host device name Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md) Possible values are: `none`, `rootedDevice`.|
 |userId|String|The user Id to who this app registration belongs. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
@@ -42,14 +45,14 @@ The following table shows the properties that are required when you create a ios
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppRegistrations/{id}
+POST https://graph.microsoft.com/beta/managedAppRegistrations/
 Content-type: application/json
 Content-length: 596
 
@@ -73,7 +76,7 @@ Content-length: 596
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

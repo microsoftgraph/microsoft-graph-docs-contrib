@@ -1,45 +1,48 @@
-﻿# Create termsAndConditionsAcceptanceStatus> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create termsAndConditionsAcceptanceStatus
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /termsAndConditions/{id}/acceptanceStatuses/{id}
+POST /termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a termsAndConditionsAcceptanceStatus object.
 The following table shows the properties that are required when you create a termsAndConditionsAcceptanceStatus.
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity.|
-|userDisplayName|String|The name of the user that this acceptance status is for.|
-|acceptedVersion|Int32|The version of the terms that were accepted. 0 if never accepted.|
-|acceptedDateTime|DateTimeOffset|The date and time that the terms were accepted.|
+|id|String|Unique identifier of the entity.|
+|userDisplayName|String|Display name of the user whose acceptance the entity represents.|
+|acceptedVersion|Int32|Most recent version number of the T&C accepted by the user.|
+|acceptedDateTime|DateTimeOffset|DateTime when the terms were last accepted by the user.|
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/termsAndConditions/{id}/acceptanceStatuses/{id}
+POST https://graph.microsoft.com/beta/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
 Content-type: application/json
 Content-length: 211
 
@@ -51,7 +54,7 @@ Content-length: 211
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

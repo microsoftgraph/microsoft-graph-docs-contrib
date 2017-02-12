@@ -1,10 +1,12 @@
-﻿# iosGeneralDeviceConfiguration resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# iosGeneralDeviceConfiguration resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the iosGeneralDeviceConfiguration resource.
 
 Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List iosGeneralDeviceConfigurations](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list.md)|[iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) collection|List properties and relationships of the [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) objects.|
@@ -15,8 +17,9 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[List deviceConfigurationGroupAssignments](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list_deviceconfigurationgroupassignment.md)|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Get the deviceConfigurationGroupAssignments from the groupAssignments navigation property.|
 |[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list_deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Get the deviceConfigurationDeviceStatuses from the deviceStatuses navigation property.|
 |[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
+|[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -59,7 +62,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |diagnosticDataBlockSubmissionModification|Boolean|Indicates whether or not to allow diagnostics submission settings modification when the device is in supervised mode (iOS 9.3.2 and later).|
 |documentsBlockManagedDocumentsInUnmanagedApps|Boolean|Indicates whether or not to block the user from viewing managed documents in unmanaged apps.|
 |documentsBlockUnmanagedDocumentsInManagedApps|Boolean|Indicates whether or not to block the user from viewing unmanaged documents in managed apps.|
-|emailInDomainSuffixes|String collection|Any email address that does not have a suffix that matches any item listed here will be considered out-of-domain.|
+|emailInDomainSuffixes|String collection|An email address lacking a suffix that matches any of these strings will be considered out-of-domain.|
 |enterpriseAppBlockTrust|Boolean|Indicates whether or not to block the user from trusting an enterprise app.|
 |enterpriseAppBlockTrustModification|Boolean|Indicates whether or not to block the user from modifying the enterprise app trust settings.|
 |faceTimeBlocked|Boolean|Indicates whether or not to block the user from using FaceTime.|
@@ -96,13 +99,13 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |kioskModeAllowVoiceOverSettings|Boolean|Indicates whether or not to allow access to the voice over settings while in kiosk mode.|
 |kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode.|
 |kioskModeAllowZoomSettings|Boolean|Indicates whether or not to allow access to the zoom settings while in kiosk mode.|
-|kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Only KioskModeManagedAppId or this can be set (not both).|
+|kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.|
 |kioskModeRequireAssistiveTouch|Boolean|Indicates whether or not to require assistive touch while in kiosk mode.|
 |kioskModeRequireColorInversion|Boolean|Indicates whether or not to require color inversion while in kiosk mode.|
 |kioskModeRequireMonoAudio|Boolean|Indicates whether or not to require mono audio while in kiosk mode.|
 |kioskModeRequireVoiceOver|Boolean|Indicates whether or not to require voice over while in kiosk mode.|
 |kioskModeRequireZoom|Boolean|Indicates whether or not to require zoom while in kiosk mode.|
-|kioskModeManagedAppId|String|Managed app id of the app to use for kiosk mode. Only KioskModeAppStoreUrl or this can be set (not both).|
+|kioskModeManagedAppId|String|Managed app id of the app to use for kiosk mode. If KioskModeManagedAppId is specified then KioskModeAppStoreUrl will be ignored.|
 |lockScreenBlockControlCenter|Boolean|Indicates whether or not to block the user from using control center on the lock screen.|
 |lockScreenBlockNotificationView|Boolean|Indicates whether or not to block the user from using the notification view on the lock screen.|
 |lockScreenBlockPassbook|Boolean|Indicates whether or not to block the user from using passbook when the device is locked.|
@@ -149,14 +152,15 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |voiceDialingBlocked|Boolean|Indicates whether or not to block voice dialing.|
 |wallpaperBlockModification|Boolean|Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -14,17 +14,27 @@ subsequently, get incremental changes to that folder periodically.
 
 Delta query is a per-folder operation. To track the changes of the messages in a folder hierarchy, you need to track each folder individually. 
 
-Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. You make the GET
-request much like the way you [get messages](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_messages), 
-except that you include the following:
+Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. The initial GET 
+request is very much like the way you [get messages](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_messages), 
+except that you include the **delta** function:
 
-- The **delta** function.
-- A state token (_deltaToken_ or _skipToken_) from the previous GET **delta** function call for that folder.
+```
+GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
+```
 
-A state token takes a snapshot of the messages in the folder, and identifies where you are in 
-that round of change tracking. It also encodes any query parameter in your initial delta query GET request, saving 
-you from repeating those parameters in subsequent requests. 
-See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use these tokens.
+A GET request with the **delta** function returns either:
+
+- A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or 
+- A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
+
+These tokens are [state tokens](../delta_query_overview.md#state-tokens) that are completely opaque to the client. 
+To proceed with a round of change tracking, simply copy and apply the URL returned from the last GET 
+request to the next **delta** function call for the same folder. A `deltaLink` returned in a response 
+signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL
+when you begin the next round.
+
+See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `nextLink` and 
+`deltaLink` URLs.
 
 ### Use query parameters in a delta query for messages
 
@@ -95,6 +105,10 @@ The first request specifies the following:
 - A `$select` parameter to return the **Subject** and **Sender** properties for each message in the response.
 - The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 messages at a time.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_messages_delta_1"
+}-->
 ```
 GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
 Prefer: odata.maxpagesize=2
@@ -103,9 +117,15 @@ Prefer: odata.maxpagesize=2
 
 ### Sample initial response
 
-The response includes two messages and a `@odata.nextLink` response header with a `skipToken`. 
-The `skipToken` indicates there are more messages in the folder to get.
+The response includes two messages and an `@odata.nextLink` response header. 
+The `nextLink` URL indicates there are more messages in the folder to get.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message",
+  "isCollection": true
+} -->
 ```
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
@@ -141,10 +161,13 @@ The `skipToken` indicates there are more messages in the folder to get.
 
 ### Sample second request
 
-The second request specifies the `skipToken` returned from the previous response. Notice that it no longer has to specify
-the same `$select` parameter as in the initial request, as the `skipToken` encodes and includes it.
+The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify
+the same `$select` parameter as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes it.
 
-
+<!-- {
+  "blockType": "request",
+  "name": "get_messages_delta_2"
+}-->
 ```
 GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
@@ -152,9 +175,15 @@ Prefer: odata.maxpagesize=2
 
 ### Sample second response 
 
-The second response returns the next 2 messages in the folder, a `nextLink` and another `skipToken`, indicating there are 
+The second response returns the next 2 messages in the folder and another `nextLink`, indicating there are 
 more messages to get from the folder.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message",
+  "isCollection": true
+} -->
 ```
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
@@ -191,9 +220,12 @@ more messages to get from the folder.
 
 ### Sample third request
 
-The third request continues to use the latest `skipToken` returned from the last sync request. 
-Save the `deltaToken` and use it in the request URL to [synchronize that folder in the next round](#the-next-round). 
+The third request continues to use the latest `nextLink` URL returned from the last sync request. 
 
+<!-- {
+  "blockType": "request",
+  "name": "get_messages_delta_3"
+}-->
 ```
 GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
@@ -201,10 +233,16 @@ Prefer: odata.maxpagesize=2
 
 ### Sample third and final response
 
-The third response returns the only remaining message in the folder, and a `deltaToken` which indicates 
-synchronization is complete for this folder. 
+The third response returns the only remaining message in the folder, and a `deltaLink` URL which indicates 
+synchronization is complete for the time being for this folder. Save and use the `deltaLink` URL to 
+[synchronize the same folder in the next round](#the-next-round).
 
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message",
+  "isCollection": true
+} -->
 ```
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
@@ -229,10 +267,14 @@ synchronization is complete for this folder.
 
 ### The next round
 
-Using the `deltaToken` from the [last request](#sample-third-request) in the last round, 
-you will be able to get only those messages that have changed (by being added, deleted, or updated) since then in that folder.
+Using the `deltaLink` from the [last request](#sample-third-request) in the last round, 
+you will be able to get only those messages that have changed (by being added, deleted, or updated) in that folder since then.
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
+<!-- {
+  "blockType": "request",
+  "name": "get_messages_delta_next"
+}-->
 ```
 GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
@@ -243,5 +285,6 @@ Prefer: odata.maxpagesize=2
 ## See also
 
 - [Microsoft Graph delta query](../Concepts/delta_query_overview.md)
-- [Get incremental changes for groups (preview)](../Concepts/delta_query_groups.md)
-- [Get incremental changes for users (preview)](../Concepts/delta_query_users.md)
+- [Get incremental changes to events in a calendar view (preview)](../Concepts/delta_query_events.md)
+- [Get incremental changes to groups (preview)](../Concepts/delta_query_groups.md)
+- [Get incremental changes to users (preview)](../Concepts/delta_query_users.md)

@@ -1,25 +1,28 @@
-﻿# Update managedAppPolicyDeploymentSummary> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update managedAppPolicyDeploymentSummary
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /managedAppPolicies/{id}/deploymentSummary/
+PATCH /managedAppPolicies/{managedAppPoliciesId}/deploymentSummary/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.
 The following table shows the properties that are required when you create a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md).
 
@@ -34,20 +37,20 @@ The following table shows the properties that are required when you create a [ma
 
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppPolicies/{id}/deploymentSummary/
+PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/deploymentSummary/
 Content-type: application/json
 Content-length: 467
 
 {
   "displayName": "Display Name value",
-  "configurationDeployedUserCount": 30,
+  "configurationDeployedUserCount": 14,
   "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
   "configurationDeploymentSummaryPerApp": [
     {
@@ -55,14 +58,14 @@ Content-length: 467
       "mobileAppIdentifier": {
         "@odata.type": "microsoft.graph.mobileAppIdentifier"
       },
-      "configurationAppliedUserCount": 29
+      "configurationAppliedUserCount": 13
     }
   ],
   "version": "Version value"
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
@@ -72,7 +75,7 @@ Content-Length: 588
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
   "displayName": "Display Name value",
-  "configurationDeployedUserCount": 30,
+  "configurationDeployedUserCount": 14,
   "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
   "configurationDeploymentSummaryPerApp": [
     {
@@ -80,7 +83,7 @@ Content-Length: 588
       "mobileAppIdentifier": {
         "@odata.type": "microsoft.graph.mobileAppIdentifier"
       },
-      "configurationAppliedUserCount": 29
+      "configurationAppliedUserCount": 13
     }
   ],
   "id": "61f2f688-f688-61f2-88f6-f26188f6f261",

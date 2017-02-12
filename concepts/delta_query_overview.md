@@ -1,4 +1,4 @@
-#  Microsoft Graph delta query (preview)
+#  Use delta query to track changes in Microsoft Graph data (preview)
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
@@ -18,10 +18,17 @@ The typical call pattern is as follows:
 
 ### State tokens
 
-- A delta query GET request can return one of two possible tokens: a _skipToken_ (in a `nextLink` response header), or a _deltaToken_ (in a `deltaLink` response header).
-- Each token reflects the state and represents a snapshot in time of the resource. Applying the latest token as a query parameter in a GET request identifies where you are in that round of change tracking. 
-- State tokens also encode and include other query parameters (such as `$select` if the resource supports it) 
+A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header. 
+The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_. 
+
+These tokens are completely opaque to the client. The following is all you need to know about them:
+
+- Each token reflects the state and represents a snapshot of the resource in that round of change tracking. 
+- These state tokens also encode and include other query parameters (such as `$select` if the resource supports it) 
 specified in the initial delta query request, so that you won't have to repeat them in subsequent delta query requests.
+- When carrying out delta query, you can simply copy and apply the `nextLink` or `deltaLink` URL as is to the next **delta** function call 
+without having to inspect the contents of the URL, including its state token.
+
 
 ### Optional query parameters
 
@@ -74,10 +81,11 @@ The same [permissions](../authorization/permission_scopes.md) that are required 
 
 Tracking changes to relationships on users and groups is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* 
 and has selected the **members** relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. 
-In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered in January 2017.
+In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered in February 2017.
 
 ## Delta query request examples 
 
+- [Get incremental changes to events in a calendar view (preview)](../Concepts/delta_query_events.md)
 - [Get incremental changes to messages in a folder (preview)](./delta_query_messages.md)
 - [Get incremental changes to groups (preview)](./delta_query_groups.md)
 - [Get incremental changes to users (preview)](./delta_query_users.md)
