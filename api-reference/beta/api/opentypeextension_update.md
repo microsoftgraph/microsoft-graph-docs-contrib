@@ -8,31 +8,21 @@ extension is updated.
 
 The data in an extension can be primitive types, or arrays of primitive types.
 
-You can update a data extension in any one of the following resources:
-
-- [event](../resources/event.md)
-- [group event](../resources/event.md)
-- [group post](../resources/post.md)
-- [message](../resources/message.md)
-- [personal contact](../resources/contact.md)
-
-
 ## Prerequisites
 
-One of the following **scopes** is required to execute this API, depending on the resource that 
+One of the following **permissions** is required to execute this API, depending on the resource that 
 the extension was created in:
 
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
-- _Mail.ReadWrite_
+|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
+| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
  
-To verify the exact permission to use for a resource, see the corresponding topic for creating or updating an instance of that resource.
-
 ## HTTP request
 
 In the request, identify the resource instance, use the **extensions** 
-navigation property of that instance to identify the extension, and do a `PATCH` to that extension instance.
+navigation property of that instance to identify the extension, and do a `PATCH` on that extension instance.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -43,7 +33,7 @@ PATCH /groups/{id}/events/{id}/extensions/{extensionId}
 PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
 ```
 
->**Note:** Some resources support identifying an instance in multiple ways which support updating an extension as well. 
+>**Note:** Some resources support identifying an instance in multiple ways all of which support updating an extension. 
 The above section includes only a subset of the 
 supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below. 
 

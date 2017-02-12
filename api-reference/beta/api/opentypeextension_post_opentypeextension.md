@@ -3,28 +3,16 @@
 Create a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties 
 in a new or existing instance of a supported resource. 
 
-You can create a data extension in any one of the following resources:
-
-- [event](../resources/event.md)
-- [group event](../resources/event.md)
-- [group post](../resources/post.md)
-- [message](../resources/message.md)
-- [personal contact](../resources/contact.md)
-
-
-
 ## Prerequisites
 
 One of the following **permissions** is required to execute this API, depending on the resource you're
-creating the extension in:
+creating the extension in.
 
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
-- _Mail.ReadWrite_
-
-
-To verify the exact permission to use for a resource, see the corresponding topic for creating or updating an instance of that resource.
+|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
+| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
 
 
 ## HTTP request
@@ -32,7 +20,6 @@ To verify the exact permission to use for a resource, see the corresponding topi
 ### Create an extension in a new resource instance
 
 Use the same REST request as creating the instance. 
-
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -43,9 +30,9 @@ POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 ```
 
->**Note:** Some resources support creation in more than one way which supports creating an extension as well. The above section includes only a subset of the 
+>**Note:** Some resources support creation in multiple ways all of which support creating an extension. The above section includes only a subset of the 
 supported syntax. For a more complete description of the ways to create a resource instance, see the corresponding
-topic below. 
+topic below.
 
 - [Create a contact](../api/user_post_contacts.md)
 - [Create an event](../api/user_post_events.md)
@@ -68,9 +55,9 @@ POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
 ```
 
->**Note:** Some resources support identifying an instance in more than one way which supports creating an extension as well. 
+>**Note:** Some resources support identifying an instance in multiple ways all of which support creating an extension. 
 The above section includes only a subset of the 
-supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below. 
+supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below.
 
 - [Get a contact](../api/contact_get.md)
 - [Get an event](../api/event_get.md)
@@ -134,8 +121,8 @@ Refer to the corresponding topics for creating the instance, as listed [above](#
 
 | Scenario       | Resource  | Response body |
 |:---------------|:----------|:--------------|
-| Creating an extension in a _new_ resource instance | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Includes the new instance expanded with the [openTypeExtension](../resources/openTypeExtension.md) object. |
-| Creating an extension while implicitly creating a group post | [post](../resources/post.md) | The response includes only a response code but not a response body. |
+| Creating an extension while explicitly creating a _new_ resource instance | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Includes the new instance expanded with the [openTypeExtension](../resources/openTypeExtension.md) object. |
+| Creating an extension while implicitly creating a resource instance | [post](../resources/post.md) | The response includes only a response code but not a response body. |
 | Creating an extension in an _existing_ resource instance | All supported resources | Includes the **openTypeExtension** object. |
 
 

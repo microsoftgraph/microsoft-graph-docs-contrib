@@ -12,20 +12,19 @@ You can delete a data extension in any one of the following resources:
 
 ## Prerequisites
 
-One of the following **scopes** is required to execute this API, depending on the resource you're
+One of the following **permissions** is required to execute this API, depending on the resource you're
 deleting the extension from:
 
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
-- _Mail.ReadWrite_
-
-To verify the exact permission to use for a resource, see the corresponding topic for creating or updating an instance of that resource.
+|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
+| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
  
 ## HTTP request
 
 In the request, identify the resource instance, use the **extensions** 
-navigation property of that instance to identify the extension, and do a `DELETE` to that extension instance.
+navigation property of that instance to identify the extension, and do a `DELETE` on that extension instance.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,7 +35,7 @@ DELETE /groups/{id}/events/{id}/extensions/{extensionId}
 DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
 ```
 
->**Note:** Some resources support identifying an instance in multiple ways which support deleting an extension as well. 
+>**Note:** Some resources support identifying an instance in multiple ways all of which support deleting an extension. 
 The above section includes only a subset of the 
 supported syntax. You can find a more complete description of the ways to identify an existing instance in the corresponding `GET` topic below. 
 
