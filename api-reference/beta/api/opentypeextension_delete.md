@@ -2,14 +2,6 @@
 
 Delete a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
 
-You can delete a data extension in any one of the following resources:
-
-- [event](../resources/event.md)
-- [group event](../resources/event.md)
-- [group post](../resources/post.md)
-- [message](../resources/message.md)
-- [personal contact](../resources/contact.md)
-
 ## Prerequisites
 
 One of the following **permissions** is required to execute this API, depending on the resource you're
