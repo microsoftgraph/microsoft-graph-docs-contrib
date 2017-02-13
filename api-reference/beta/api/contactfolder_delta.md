@@ -17,7 +17,23 @@ GET /me/contactFolders/delta
 GET /users/<id>/contactFolders/delta
 ```
 
-### Optional query parameters
+### Query parameters
+
+Tracking changes in contact folders incurs a round of one or more **delta** function calls. If you use any query parameter 
+(other than `$deltatoken` and `$skiptoken`), you must specify 
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
+into the token portion (`skiptoken` or `$deltatoken`) of the `nextLink` or `deltaLink` URL provided in the response. 
+You only need to specify any desired query parameters once upfront. 
+In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+includes the encoded, desired parameters.
+
+| Query parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same contact folder collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same contact folder collection. |
+
+
+#### OData query parameters
 
 You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 

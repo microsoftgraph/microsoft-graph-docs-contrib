@@ -1,10 +1,12 @@
-﻿# managedIOSStoreApp resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# managedIOSStoreApp resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties and inherited properties for an iOS store app that you can manage with an Intune app protection policy.
 
 Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List managedIOSStoreApps](../api/intune_apps_managediosstoreapp_list.md)|[managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) collection|List properties and relationships of the [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) objects.|
@@ -17,7 +19,7 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 |[List mobileAppInstallStatuses](../api/intune_apps_managediosstoreapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
 |[List userAppInstallStatuses](../api/intune_apps_managediosstoreapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -39,7 +41,7 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |bundleId|String|The app's bundle ID.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -47,7 +49,7 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,44 +1,47 @@
-﻿# Delete deviceConfigurationGroupAssignment> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Delete deviceConfigurationGroupAssignment
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Deletes a [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md).
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-DELETE /deviceConfigurationGroupAssignment/{id}
-DELETE /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}
-DELETE /deviceManagement/deviceConfigurations/{id}/rootCertificate//groupAssignments/{id}
-DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/{id}
-DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/{id}
-DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/{id}
-DELETE /deviceManagement/deviceConfigurations/{id}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/{id}
+DELETE /deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `204 No Content` response code.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/{id}
+DELETE https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 204 No Content

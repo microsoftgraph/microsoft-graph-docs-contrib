@@ -1,10 +1,12 @@
-﻿# locateDeviceActionResult resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# locateDeviceActionResult resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Locate device action result
 
 Inherits from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |actionName|String|Action name Inherited from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)|
@@ -13,9 +15,9 @@ Inherits from [deviceActionResult](../resources/intune_onboarding_deviceactionre
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune_onboarding_deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune_onboarding_devicegeolocation.md)|device location|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

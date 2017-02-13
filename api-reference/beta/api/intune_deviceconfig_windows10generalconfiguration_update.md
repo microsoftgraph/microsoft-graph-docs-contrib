@@ -1,27 +1,30 @@
-﻿# Update windows10GeneralConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update windows10GeneralConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{id}
-PATCH /deviceConfigurationAssignments/{id}/deviceConfiguration/
-PATCH /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
 The following table shows the properties that are required when you create a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md).
 
@@ -78,7 +81,10 @@ The following table shows the properties that are required when you create a [wi
 |edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
 |edgeBlocked|Boolean|Indicates whether or not to Block the user from using the Edge browser.|
 |edgeCookiePolicy|String|Indicates which cookies to block in the Edge browser. Possible values are: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
+|edgeBlockDeveloperTools|Boolean|Indicates whether or not to block developer tools in the Edge browser.|
 |edgeBlockSendingDoNotTrackHeader|Boolean|Indicates whether or not to Block the user from sending the do not track header.|
+|edgeBlockExtensions|Boolean|Indicates whether or not to block extensions in the Edge browser.|
+|edgeBlockInPrivateBrowsing|Boolean|Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.|
 |edgeBlockJavaScript|Boolean|Indicates whether or not to Block the user from using JavaScript.|
 |edgeBlockPasswordManager|Boolean|Indicates whether or not to Block password manager.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
@@ -86,7 +92,20 @@ The following table shows the properties that are required when you create a [wi
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.|
 |edgeRequireSmartScreen|Boolean|Indicates whether or not to Require the user to use the smart screen filter.|
 |edgeEnterpriseModeSiteListLocation|String|Indicates the enterprise mode site list location. Could be a local file, local network or http location.|
+|edgeFirstRunUrl|String|The first run URL for when Edge browser is opened for the first time.|
+|edgeHomepageUrls|String collection|The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.|
+|edgeBlockAccessToAboutFlags|Boolean|Indicates whether or not to prevent access to about flags on Edge browser.|
+|smartScreenBlockPromptOverride|Boolean|Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.|
+|smartScreenBlockPromptOverrideForFiles|Boolean|Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files|
+|webRtcBlockLocalhostIpAddress|Boolean|Indicates whether or not user's localhost IP address is displayed while making phone calls using the WebRTC|
 |internetSharingBlocked|Boolean|Indicates whether or not to Block the user from using internet sharing.|
+|settingsBlockAddProvisioningPackage|Boolean|Indicates whether or not to block the user from installing provisioning packages.|
+|settingsBlockRemoveProvisioningPackage|Boolean|Indicates whether or not to block the runtime configuration agent from removing provisioning packages.|
+|settingsBlockChangeSystemTime|Boolean|Indicates whether or not to block the user from changing date and time settings.|
+|settingsBlockEditDeviceName|Boolean|Indicates whether or not to block the user from editing the device name.|
+|settingsBlockChangeRegion|Boolean|Indicates whether or not to block the user from changing the region settings.|
+|settingsBlockChangeLanguage|Boolean|Indicates whether or not to block the user from changing the language settings.|
+|settingsBlockChangePowerSleep|Boolean|Indicates whether or not to block the user from changing power and sleep settings.|
 |locationServicesBlocked|Boolean|Indicates whether or not to Block the user from location services.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to Block action center notifications over lock screen.|
 |microsoftAccountBlocked|Boolean|Indicates whether or not to Block a Microsoft account.|
@@ -112,19 +131,28 @@ The following table shows the properties that are required when you create a [wi
 |wiFiBlocked|Boolean|Indicates whether or not to Block the user from using Wi-Fi.|
 |wiFiBlockManualConfiguration|Boolean|Indicates whether or not to Block the user from using Wi-Fi manual configuration.|
 |windowsStoreBlocked|Boolean|Indicates whether or not to Block the user from using the Windows store.|
+|appsAllowTrustedAppsSideloading|String|Indicates whether apps from AppX packages signed with a trusted certificate can be side loaded. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|windowsStoreBlockAutoUpdate|Boolean|Indicates whether or not to block automatic update of apps from Windows Store.|
+|developerUnlockSetting|String|Indicates whether or not to allow developer unlock. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|sharedUserAppDataAllowed|Boolean|Indicates whether or not to block multiple users of the same app to share data.|
+|appsBlockWindowsStoreOriginatedApps|Boolean|Indicates whether or not to disable the launch of all apps from Windows Store that came pre-installed or were downloaded.|
+|windowsStoreEnablePrivateStoreOnly|Boolean|Indicates whether or not to enable Private Store Only.|
+|storageRestrictAppDataToSystemVolume|Boolean|Indicates whether application data is restricted to the system drive.|
+|storageRestrictAppInstallToSystemVolume|Boolean|Indicates whether the installation of applications is restricted to the system drive.|
+|gameDvrBlocked|Boolean|Indicates whether or not to block DVR and broadcasting.|
 
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and an updated [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3607
+Content-length: 4699
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -147,7 +175,7 @@ Content-length: 3607
   "copyPasteBlocked": true,
   "cortanaBlocked": true,
   "defenderBlockEndUserAccess": true,
-  "defenderDaysBeforeDeletingQuarantinedMalware": 44,
+  "defenderDaysBeforeDeletingQuarantinedMalware": 12,
   "defenderSystemScanSchedule": "everyday",
   "defenderFilesAndFoldersToExclude": [
     "Defender Files And Folders To Exclude value"
@@ -155,7 +183,7 @@ Content-length: 3607
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 18,
+  "defenderScanMaxCpu": 2,
   "defenderMonitorFileActivity": "disable",
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
@@ -172,7 +200,7 @@ Content-length: 3607
   "defenderScanMappedNetworkDrivesDuringFullScan": true,
   "defenderScanRemovableDrivesDuringFullScan": true,
   "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 38,
+  "defenderSignatureUpdateIntervalInHours": 6,
   "defenderScanType": "disabled",
   "defenderScheduledScanTime": "11:59:10.9990000",
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
@@ -182,7 +210,10 @@ Content-length: 3607
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "allow",
+  "edgeBlockDeveloperTools": true,
   "edgeBlockSendingDoNotTrackHeader": true,
+  "edgeBlockExtensions": true,
+  "edgeBlockInPrivateBrowsing": true,
   "edgeBlockJavaScript": true,
   "edgeBlockPasswordManager": true,
   "edgeBlockPopups": true,
@@ -190,21 +221,36 @@ Content-length: 3607
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
+  "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
+  "edgeHomepageUrls": [
+    "Edge Homepage Urls value"
+  ],
+  "edgeBlockAccessToAboutFlags": true,
+  "smartScreenBlockPromptOverride": true,
+  "smartScreenBlockPromptOverrideForFiles": true,
+  "webRtcBlockLocalhostIpAddress": true,
   "internetSharingBlocked": true,
+  "settingsBlockAddProvisioningPackage": true,
+  "settingsBlockRemoveProvisioningPackage": true,
+  "settingsBlockChangeSystemTime": true,
+  "settingsBlockEditDeviceName": true,
+  "settingsBlockChangeRegion": true,
+  "settingsBlockChangeLanguage": true,
+  "settingsBlockChangePowerSleep": true,
   "locationServicesBlocked": true,
   "lockScreenBlockActionCenterNotifications": true,
   "microsoftAccountBlocked": true,
   "microsoftAccountBlockSettingsSync": true,
   "nfcBlocked": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passwordMinimumCharacterSetCount": 32,
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequired": true,
   "passwordRequireWhenResumeFromIdleState": true,
   "passwordRequiredType": "alphanumeric",
-  "passwordSignInFailureCountBeforeFactoryReset": 44,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
   "prereleaseFeatures": "settingsOnly",
   "resetProtectionModeBlocked": true,
   "screenCaptureBlocked": true,
@@ -215,16 +261,25 @@ Content-length: 3607
   "wiFiBlockAutomaticConnectHotspots": true,
   "wiFiBlocked": true,
   "wiFiBlockManualConfiguration": true,
-  "windowsStoreBlocked": true
+  "windowsStoreBlocked": true,
+  "appsAllowTrustedAppsSideloading": "blocked",
+  "windowsStoreBlockAutoUpdate": true,
+  "developerUnlockSetting": "blocked",
+  "sharedUserAppDataAllowed": true,
+  "appsBlockWindowsStoreOriginatedApps": true,
+  "windowsStoreEnablePrivateStoreOnly": true,
+  "storageRestrictAppDataToSystemVolume": true,
+  "storageRestrictAppInstallToSystemVolume": true,
+  "gameDvrBlocked": true
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3783
+Content-Length: 4875
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -250,7 +305,7 @@ Content-Length: 3783
   "copyPasteBlocked": true,
   "cortanaBlocked": true,
   "defenderBlockEndUserAccess": true,
-  "defenderDaysBeforeDeletingQuarantinedMalware": 44,
+  "defenderDaysBeforeDeletingQuarantinedMalware": 12,
   "defenderSystemScanSchedule": "everyday",
   "defenderFilesAndFoldersToExclude": [
     "Defender Files And Folders To Exclude value"
@@ -258,7 +313,7 @@ Content-Length: 3783
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 18,
+  "defenderScanMaxCpu": 2,
   "defenderMonitorFileActivity": "disable",
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
@@ -275,7 +330,7 @@ Content-Length: 3783
   "defenderScanMappedNetworkDrivesDuringFullScan": true,
   "defenderScanRemovableDrivesDuringFullScan": true,
   "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 38,
+  "defenderSignatureUpdateIntervalInHours": 6,
   "defenderScanType": "disabled",
   "defenderScheduledScanTime": "11:59:10.9990000",
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
@@ -285,7 +340,10 @@ Content-Length: 3783
   "edgeBlockAutofill": true,
   "edgeBlocked": true,
   "edgeCookiePolicy": "allow",
+  "edgeBlockDeveloperTools": true,
   "edgeBlockSendingDoNotTrackHeader": true,
+  "edgeBlockExtensions": true,
+  "edgeBlockInPrivateBrowsing": true,
   "edgeBlockJavaScript": true,
   "edgeBlockPasswordManager": true,
   "edgeBlockPopups": true,
@@ -293,21 +351,36 @@ Content-Length: 3783
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
+  "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
+  "edgeHomepageUrls": [
+    "Edge Homepage Urls value"
+  ],
+  "edgeBlockAccessToAboutFlags": true,
+  "smartScreenBlockPromptOverride": true,
+  "smartScreenBlockPromptOverrideForFiles": true,
+  "webRtcBlockLocalhostIpAddress": true,
   "internetSharingBlocked": true,
+  "settingsBlockAddProvisioningPackage": true,
+  "settingsBlockRemoveProvisioningPackage": true,
+  "settingsBlockChangeSystemTime": true,
+  "settingsBlockEditDeviceName": true,
+  "settingsBlockChangeRegion": true,
+  "settingsBlockChangeLanguage": true,
+  "settingsBlockChangePowerSleep": true,
   "locationServicesBlocked": true,
   "lockScreenBlockActionCenterNotifications": true,
   "microsoftAccountBlocked": true,
   "microsoftAccountBlockSettingsSync": true,
   "nfcBlocked": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passwordMinimumCharacterSetCount": 32,
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequired": true,
   "passwordRequireWhenResumeFromIdleState": true,
   "passwordRequiredType": "alphanumeric",
-  "passwordSignInFailureCountBeforeFactoryReset": 44,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
   "prereleaseFeatures": "settingsOnly",
   "resetProtectionModeBlocked": true,
   "screenCaptureBlocked": true,
@@ -318,7 +391,16 @@ Content-Length: 3783
   "wiFiBlockAutomaticConnectHotspots": true,
   "wiFiBlocked": true,
   "wiFiBlockManualConfiguration": true,
-  "windowsStoreBlocked": true
+  "windowsStoreBlocked": true,
+  "appsAllowTrustedAppsSideloading": "blocked",
+  "windowsStoreBlockAutoUpdate": true,
+  "developerUnlockSetting": "blocked",
+  "sharedUserAppDataAllowed": true,
+  "appsBlockWindowsStoreOriginatedApps": true,
+  "windowsStoreEnablePrivateStoreOnly": true,
+  "storageRestrictAppDataToSystemVolume": true,
+  "storageRestrictAppInstallToSystemVolume": true,
+  "gameDvrBlocked": true
 }
 ```
 

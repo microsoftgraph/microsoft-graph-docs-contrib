@@ -1,7 +1,9 @@
-﻿# managedDeviceMobileAppConfigurationUserStatus resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# managedDeviceMobileAppConfigurationUserStatus resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties, inherited properties and actions for an MDM mobile app configuration status for a user.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List managedDeviceMobileAppConfigurationUserStatuses](../api/intune_apps_manageddevicemobileappconfigurationuserstatus_list.md)|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) collection|List properties and relationships of the [managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) objects.|
@@ -10,16 +12,19 @@ Contains properties, inherited properties and actions for an MDM mobile app conf
 |[Delete managedDeviceMobileAppConfigurationUserStatus](../api/intune_apps_manageddevicemobileappconfigurationuserstatus_delete.md)|None|Deletes a [managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md).|
 |[Update managedDeviceMobileAppConfigurationUserStatus](../api/intune_apps_manageddevicemobileappconfigurationuserstatus_update.md)|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md)|Update the properties of a [managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
+|userDisplayName|String|User name of the DevicePolicyStatus.|
+|devicesCount|Int32|Devices count for that user.|
 |status|String|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
+|userPrincipalName|String|UserPrincipalName.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -31,8 +36,11 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus",
   "id": "String (identifier)",
+  "userDisplayName": "String",
+  "devicesCount": 1024,
   "status": "String",
-  "lastReportedDateTime": "String (timestamp)"
+  "lastReportedDateTime": "String (timestamp)",
+  "userPrincipalName": "String"
 }
 ```
 

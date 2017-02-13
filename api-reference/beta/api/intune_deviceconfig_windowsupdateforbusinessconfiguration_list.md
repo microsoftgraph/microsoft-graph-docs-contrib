@@ -1,10 +1,13 @@
-﻿# List windowsUpdateForBusinessConfigurations> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List windowsUpdateForBusinessConfigurations
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) objects.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
@@ -13,31 +16,31 @@ One of the following **scopes** is required to execute this API:
 GET /deviceManagement/deviceConfigurations/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a collection of [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) objects in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1119
+Content-Length: 1117
 
 {
   "value": [
@@ -57,8 +60,8 @@ Content-Length: 1119
       "installationSchedule": {
         "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
       },
-      "qualityUpdatesDeferralPeriodInDays": 34,
-      "featureUpdatesDeferralPeriodInDays": 34,
+      "qualityUpdatesDeferralPeriodInDays": 2,
+      "featureUpdatesDeferralPeriodInDays": 2,
       "qualityUpdatesPaused": true,
       "featureUpdatesPaused": true,
       "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",

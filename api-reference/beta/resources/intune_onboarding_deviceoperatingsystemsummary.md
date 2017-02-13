@@ -1,7 +1,9 @@
-﻿# deviceOperatingSystemSummary resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# deviceOperatingSystemSummary resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Device operating system summary.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |androidCount|Int32|Number of android device count.|
@@ -10,9 +12,9 @@ Device operating system summary.
 |windowsMobileCount|Int32|Number of Windows mobile device count.|
 |windowsCount|Int32|Number of Windows device count.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,7 +1,9 @@
-﻿# vpnOnDemandRule resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# vpnOnDemandRule resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 VPN On-Demand Rule definition.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |ssids|String collection|Network Service Set Identifiers (SSIDs).|
@@ -12,9 +14,9 @@ VPN On-Demand Rule definition.
 |domains|String collection|Domains (Only applicable when Action is evaluate connection).|
 |probeRequiredUrl|String|Probe Required Url (Only applicable when Action is evaluate connection and DomainAction is connect if needed).|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

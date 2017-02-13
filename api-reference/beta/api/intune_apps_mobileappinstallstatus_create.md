@@ -1,26 +1,29 @@
-﻿# Create mobileAppInstallStatus> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create mobileAppInstallStatus
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}
-POST /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/deviceStatuses/{id}
+POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
+POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/deviceStatuses/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a mobileAppInstallStatus object.
 The following table shows the properties that are required when you create a mobileAppInstallStatus.
 
@@ -37,14 +40,14 @@ The following table shows the properties that are required when you create a mob
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
 Content-type: application/json
 Content-length: 310
 
@@ -53,14 +56,14 @@ Content-length: 310
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "mobileAppInstallStatusValue": 27,
+  "mobileAppInstallStatusValue": 11,
   "errorCode": 9,
   "deviceType": 10,
   "osVersion": "Os Version value"
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
@@ -73,7 +76,7 @@ Content-Length: 359
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "mobileAppInstallStatusValue": 27,
+  "mobileAppInstallStatusValue": 11,
   "errorCode": 9,
   "deviceType": 10,
   "osVersion": "Os Version value"

@@ -1,7 +1,9 @@
-﻿# fileEncryptionInfo resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# fileEncryptionInfo resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for file encryption information for the content version of a line of business app.
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |encryptionKey|Binary|The key used to encrypt the file content.|
@@ -12,9 +14,9 @@ Contains properties for file encryption information for the content version of a
 |fileDigest|Binary|The file digest prior to encryption.|
 |fileDigestAlgorithm|String|The file digest algorithm.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

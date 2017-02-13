@@ -1,51 +1,54 @@
-﻿# Update appleVolumePurchaseProgramToken> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update appleVolumePurchaseProgramToken
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceAppManagement/mobileApps/{id}/microsoft.graph.iosVppApp/vppToken/
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/vppToken/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md) object.
 The following table shows the properties that are required when you create a [appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md).
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Not yet documented|
-|organizationName|String|The organization associated with the Apple Volume Purchase Program Token.|
-|volumePurchaseProgramTokenAccountType|String|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`.|
+|id|String|This is automatically generated when the appleVolumePurchaseProgramToken is created. It is the Key of the entity.|
+|organizationName|String|The organization associated with the Apple Volume Purchase Program Token|
+|volumePurchaseProgramTokenAccountType|String|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |appleId|String|The apple Id associated with the given Apple Volume Purchase Program Token.|
 |expirationDateTime|DateTimeOffset|The expiration date time of the Apple Volume Purchase Program Token.|
 |lastSyncDateTime|DateTimeOffset|The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.|
 |token|String|The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
-|state|String|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`.|
-|lastSyncStatus|String|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
+|state|String|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`. Possible values are: `unknown`, `valid`, `expired`, `invalid`.|
+|lastSyncStatus|String|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
 
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and an updated [appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/microsoft.graph.iosVppApp/vppToken/
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/vppToken/
 Content-type: application/json
 Content-length: 411
 
@@ -62,7 +65,7 @@ Content-length: 411
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

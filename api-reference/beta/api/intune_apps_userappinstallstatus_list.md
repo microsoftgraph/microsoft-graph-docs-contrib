@@ -1,43 +1,46 @@
-﻿# List userAppInstallStatuses> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List userAppInstallStatuses
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /deviceAppManagement/mobileApps/{id}/userStatuses/
+GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a collection of [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/userStatuses/
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 295
+Content-Length: 292
 
 {
   "value": [
@@ -45,9 +48,9 @@ Content-Length: 295
       "@odata.type": "#microsoft.graph.userAppInstallStatus",
       "id": "14959a2a-9a2a-1495-2a9a-95142a9a9514",
       "userName": "User Name value",
-      "installedDeviceCount": 20,
-      "failedDeviceCount": 17,
-      "notInstalledDeviceCount": 23
+      "installedDeviceCount": 4,
+      "failedDeviceCount": 1,
+      "notInstalledDeviceCount": 7
     }
   ]
 }

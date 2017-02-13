@@ -1,27 +1,30 @@
-﻿# Update macOSVpnConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update macOSVpnConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [macOSVpnConfiguration](../resources/intune_deviceconfig_macosvpnconfiguration.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{id}
-PATCH /deviceConfigurationAssignments/{id}/deviceConfiguration/
-PATCH /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [macOSVpnConfiguration](../resources/intune_deviceconfig_macosvpnconfiguration.md) object.
 The following table shows the properties that are required when you create a [macOSVpnConfiguration](../resources/intune_deviceconfig_macosvpnconfiguration.md).
 
@@ -50,14 +53,14 @@ The following table shows the properties that are required when you create a [ma
 
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and an updated [macOSVpnConfiguration](../resources/intune_deviceconfig_macosvpnconfiguration.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
 Content-length: 1593
 
@@ -118,7 +121,7 @@ Content-length: 1593
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

@@ -2,6 +2,11 @@
 
 This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](http://graph.microsoft.io/en-us/changelog).
 
+## Graph Explorer
+We have turned off Microsoft Account logons to the Graph Explorer due to a service issue. We are actively working on a fix and will update this text when it's ready.  
+
+Signins with Internet Explorer and Microsoft Edge were not working. That issue has been resolved as of February 2, 2017.
+
 ## Users
 #### No instant access after creation
 Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response. 
@@ -22,19 +27,6 @@ Failure to read or update a photo, in this case, would result in the following e
 
  > **Note**:  Shortly after GA, storage and retrieval of user profile photos will be enabled, even if the user does not have a mailbox, and this error should disappear.
 
-#### Default contacts folder
-
-In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder. 
-
-A fix will be made available. Meanwhile, you can use the following [list contacts](http://graph.microsoft.io/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
-as a workaround to get the folder ID of the default contacts folder:
-
-```
-GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
-```
-In the above query:
-1. `/me/contacts?$top=1` gets the properties of a [contact](http://graph.microsoft.io/docs/api-reference/v1.0/resources/contact) in the default contacts folder.
-2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
 
 #### Adding and accessing ICS-based calendars in user's mailbox
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
@@ -76,21 +68,70 @@ Examples of group features that support only delegated permissions:
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
-## Contacts
-* Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
-* Personal contact's mobile phone isn’t being returned for a contact. It will be added shortly. In the meantime, it can be accessed through Outlook APIs.
 
-### Drives, files and content streaming
+#### Setting the allowExternalSenders property
+There is currently an issue that prevents setting the **allowExternalSenders** property of a group 
+in a POST or PATCH operation, in both `/v1.0` and `/beta`.
+
+
+## Contacts
+
+#### Organization contacts available in only beta
+Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
+
+#### Default contacts folder
+
+In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder. 
+
+A fix will be made available. Meanwhile, you can use the following [list contacts](http://graph.microsoft.io/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
+as a workaround to get the folder ID of the default contacts folder:
+
+```
+GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
+```
+In the above query:
+1. `/me/contacts?$top=1` gets the properties of a [contact](http://graph.microsoft.io/docs/api-reference/v1.0/resources/contact) in the default contacts folder.
+2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
+
+
+#### Accessing contacts via a contact folder in beta
+In the `/beta` version, there is currently an issue that prevents accessing a [contact](../api-reference/beta/resources/contact.md) 
+by specifying its parent folder in the REST request URL, as shown in the 2 scenarios below.
+
+* Accessing a contact from a top level [contactFolder](../api-reference/beta/resources/contactfolder.md) of the user's.
+```http
+GET /me/contactfolders/{id}/contacts/{id}
+GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
+```
+* Accessing a contact contained in a child folder of a **contactFolder**.  The 
+example below shows one level of nesting, but a contact can be located in a child of a child and so on.
+```http
+GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
+```
+
+As an alternative, you can simply [get](../api-reference/beta/api/contact_get.md) the contact by specifying its ID as shown below, 
+since GET /contacts in the `/beta` version applies to all the contacts in the user's mailbox:
+
+```http
+GET /me/contacts/{id}
+GET /users/{id | userPrincipalName}/contacts/{id}
+```
+
+## Messages
+#### The comment parameter for creating a draft
+The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md), 
+[createReplyAll](../api-reference/v1.0/api/message_createreplyall), [createForward](../api-reference/v1.0/api/message_createforward.md)) 
+does not become part of the body of the resultant message draft.  
+
+
+## Drives, files and content streaming
 * First time access to a user's personal drive through the Microsoft Graph before the user accesses their personal site through a browser leads to a 401 response.
 
 ## Functionality available only in Office 365 REST APIs
 
 Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog).
 
-#### Synchronization
-Outlook, OneDrive and Azure AD synchronization capabilities (in Azure AD this is also known as differential query) are not available in `/v1.0` or `/beta`.  If your application requires synchronization capabilities, please continue to use the existing Office 365 and Azure AD REST APIs, or explore the new webhooks preview feature offered through Microsoft Graph for events, messages and contacts.
-
-> **Note**: Our goal is to close the gap between the existing APIs and Microsoft Graph as quickly as possible, including synchronization.
 
 #### Batching
 Batching is not supported by Microsoft Graph. You can, however, use the Outlook beta endpoint and 

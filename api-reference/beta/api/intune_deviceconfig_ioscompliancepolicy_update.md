@@ -1,27 +1,30 @@
-﻿# Update iosCompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update iosCompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceManagement/deviceCompliancePolicies/{id}
-PATCH /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-PATCH /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+PATCH /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) object.
 The following table shows the properties that are required when you create a [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md).
 
@@ -49,16 +52,16 @@ The following table shows the properties that are required when you create a [io
 
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and an updated [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 712
+Content-length: 707
 
 {
   "description": "Description value",
@@ -66,11 +69,11 @@ Content-length: 712
   "displayName": "Display Name value",
   "version": 7,
   "passcodeBlockSimple": true,
-  "passcodeExpirationDays": 22,
-  "passcodeMinimumLength": 21,
-  "passcodeMinutesOfInactivityBeforeLock": 37,
-  "passcodePreviousPasscodeBlockCount": 34,
-  "passcodeMinimumCharacterSetCount": 32,
+  "passcodeExpirationDays": 6,
+  "passcodeMinimumLength": 5,
+  "passcodeMinutesOfInactivityBeforeLock": 5,
+  "passcodePreviousPasscodeBlockCount": 2,
+  "passcodeMinimumCharacterSetCount": 0,
   "passcodeRequiredType": "alphanumeric",
   "passcodeRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
@@ -81,12 +84,12 @@ Content-length: 712
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 878
+Content-Length: 873
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -97,11 +100,11 @@ Content-Length: 878
   "displayName": "Display Name value",
   "version": 7,
   "passcodeBlockSimple": true,
-  "passcodeExpirationDays": 22,
-  "passcodeMinimumLength": 21,
-  "passcodeMinutesOfInactivityBeforeLock": 37,
-  "passcodePreviousPasscodeBlockCount": 34,
-  "passcodeMinimumCharacterSetCount": 32,
+  "passcodeExpirationDays": 6,
+  "passcodeMinimumLength": 5,
+  "passcodeMinutesOfInactivityBeforeLock": 5,
+  "passcodePreviousPasscodeBlockCount": 2,
+  "passcodeMinimumCharacterSetCount": 0,
   "passcodeRequiredType": "alphanumeric",
   "passcodeRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
