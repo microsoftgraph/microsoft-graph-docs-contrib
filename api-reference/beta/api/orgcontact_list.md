@@ -1,12 +1,13 @@
-# Get orgContact
+# List orgContacts
+Retrieve the list of organizational contacts for this organization.
 
-Retrieve the properties and relationships of orgcontact object.
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /contacts/{id}
+GET /contacts
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -19,23 +20,24 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [orgContact](../resources/orgcontact.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [orgContact](../resources/orgcontact.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_orgcontact"
+  "name": "list_orgcontact"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/contacts/{id}
+GET https://graph.microsoft.com/beta/contacts
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact"
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -43,14 +45,18 @@ Content-type: application/json
 Content-length: 222
 
 {
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value",
-  "country": "country-value",
-  "department": "department-value",
-  "displayName": "displayName-value"
+  "value": [
+    {
+      "businessPhones": [
+        "businessPhones-value"
+      ],
+      "city": "city-value",
+      "companyName": "companyName-value",
+      "country": "country-value",
+      "department": "department-value",
+      "displayName": "displayName-value"
+    }
+  ]
 }
 ```
 
@@ -58,7 +64,7 @@ Content-length: 222
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get orgContact",
+  "description": "List orgContact",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
