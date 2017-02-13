@@ -2,7 +2,7 @@
 Return all of the groups and administrative units that the group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API: One of the following **scopes** is required to execute this API: *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
