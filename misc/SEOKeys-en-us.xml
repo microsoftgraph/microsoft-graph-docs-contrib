@@ -542,8 +542,6 @@
       </Item>
       <Item text="Insights" url="/en-us/api-reference/beta/resources/" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
         <Item text="List trendingAround" url="/en-us/api-reference/beta/api/user_list_trendingaround" SEOKeyword="List trendingAround, Microsoft Graph API, user API" SEODescription="Retrieve a list of item objects." />
-        <Item text="List workingWith" url="/en-us/api-reference/beta/api/user_list_workingwith" SEOKeyword="List workingWith, Microsoft Graph API, user API" SEODescription="Retrieve a list of user objects." />
-      </Item>
       <Item text="Groups" url="/en-us/api-reference/beta/resources/organization" SEOKeyword="groups, Microsoft Graph API, user API" SEODescription="">
         <Item text="List memberOf" url="/en-us/api-reference/beta/api/user_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>
