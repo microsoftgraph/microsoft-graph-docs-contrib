@@ -542,7 +542,8 @@
       </Item>
       <Item text="Insights" url="/en-us/api-reference/beta/resources/" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
         <Item text="List trendingAround" url="/en-us/api-reference/beta/api/user_list_trendingaround" SEOKeyword="List trendingAround, Microsoft Graph API, user API" SEODescription="Retrieve a list of item objects." />
-      <Item text="Groups" url="/en-us/api-reference/beta/resources/organization" SEOKeyword="groups, Microsoft Graph API, user API" SEODescription="">
+      </Item>
+	  <Item text="Groups" url="/en-us/api-reference/beta/resources/organization" SEOKeyword="groups, Microsoft Graph API, user API" SEODescription="">
         <Item text="List memberOf" url="/en-us/api-reference/beta/api/user_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>
       <Item text="Org hierarchy" url="/en-us/api-reference/beta/resources/organization" SEOKeyword="groups, Microsoft Graph API, user API" SEODescription="">
@@ -555,12 +556,7 @@
         <Item text="List registered devices" url="/en-us/api-reference/beta/api/user_list_registereddevices" SEOKeyword="List registeredDevices, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="List owned objects" url="/en-us/api-reference/beta/api/user_list_ownedobjects" SEOKeyword="List ownedObjects, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="List scoped administrator memberships" url="/en-us/api-reference/beta/api/user_list_scopedadministratorof" SEOKeyword="List scoped administrator memberships, Microsoft Graph API, Users API" SEODescription="Retrieve a list of scoped adminstrator membership objects." />
-
         <Item text="List created objects" url="/en-us/api-reference/beta/api/user_list_createdobjects" SEOKeyword="List createdObjects, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
-        <Item text="List app role assignments" url="/en-us/api-reference/beta/api/user_list_approleassignments" SEOKeyword="List appRoleAssignments, Microsoft Graph API, user API" SEODescription="Retrieve a list of approleassignment objects." />
-        <Item text="Create app role assignment" url="/en-us/api-reference/beta/api/user_post_approleassignments" SEOKeyword="Create AppRoleAssignment, Microsoft Graph API, user API" SEODescription="Use this API to create a new AppRoleAssignment." />
-        <Item text="List OAuth2 permission grants" url="/en-us/api-reference/beta/api/user_list_oauth2permissiongrants" SEOKeyword="List oauth2PermissionGrants, Microsoft Graph API, Users API" SEODescription="Retrieve a list of oauth2permissiongrant objects." />
-        <Item text="Create OAuth2 permission grant" url="/en-us/api-reference/beta/api/user_post_oauth2permissiongrants" SEOKeyword="Create OAuth2PermissionGrant, Microsoft Graph API, Users API" SEODescription="Use this API to create a new OAuth2PermissionGrant." />
         <Item text="Assign license" url="/en-us/api-reference/beta/api/user_assignlicense" SEOKeyword="user: assignLicense, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Get member objects" url="/en-us/api-reference/beta/api/user_getmemberobjects" SEOKeyword="user: getMemberObjects, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Get member groups" url="/en-us/api-reference/beta/api/user_getmembergroups" SEOKeyword="user: getMemberGroups, Microsoft Graph API, user API" SEODescription="" />
@@ -1027,8 +1023,6 @@
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/notes_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
       </Item>
       <Item text="Directory object" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List app role assignments" url="/en-us/api-reference/beta/api/group_list_approleassignments" SEOKeyword="List appRoleAssignments, Microsoft Graph API, group API" SEODescription="Retrieve a list of approleassignment objects." />
-        <Item text="Create app role assignment" url="/en-us/api-reference/beta/api/group_post_approleassignments" SEOKeyword="Create AppRoleAssignment, Microsoft Graph API, group API" SEODescription="Use this API to create a new AppRoleAssignment." />
       </Item>
     </Item>
     <Item text="Organizational contacts" url="/en-us/api-reference/beta/resources/orgcontact" SEOKeyword="orgcontact API, Microsoft Graph API, orgcontact API" SEODescription="">
@@ -1114,15 +1108,11 @@
         <Item text="Restore application" url="/en-us/api-reference/beta/api/application_restore" SEOKeyword="application: restore, Microsoft Graph API, application API" SEODescription="" />
       </Item>
       <Item text="App role assignment" url="/en-us/api-reference/beta/resources/approleassignment" SEOKeyword="approleassignment API, Microsoft Graph API, approleassignment API" SEODescription="Used to record when a user or group is assigned to an application. In this case, the role assignment will result in an application tile showing up on the user app access panel. This entity may also be used to grant another application (modeled as a service principal) access to a resource application in a particular role. You can create, read, update, and delete role assignments. Inherits from DirectoryObject.">
-        <Item text="List appRoleAssignment" url="/en-us/api-reference/beta/api/user_list_approleassignment" SEOKeyword="List applications, Microsoft Graph API, application API" SEODescription="Retrieve a list of application objects." />
-        <Item text="Create appRoleAssignment" url="/en-us/api-reference/beta/api/user_post_approleassignment" SEOKeyword="List applications, Microsoft Graph API, application API" SEODescription="Retrieve a list of application objects." />
         <Item text="Get appRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_get" SEOKeyword="Get appRoleAssignment, Microsoft Graph API, approleassignment API" SEODescription="Retrieve the properties and relationships of approleassignment object." />
         <Item text="Update approleassignment" url="/en-us/api-reference/beta/api/approleassignment_update" SEOKeyword="Update approleassignment, Microsoft Graph API, approleassignment API" SEODescription="Update the properties of approleassignment object." />
         <Item text="Delete appRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_delete" SEOKeyword="Delete appRoleAssignment, Microsoft Graph API, approleassignment API" SEODescription="Delete appRoleAssignment." />
       </Item>
       <Item text="Oauth2 permission grant" url="/en-us/api-reference/beta/resources/oauth2permissiongrant" SEOKeyword="oauth2permissiongrant API, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Represents the OAuth 2.0 delegated permission scopes that have been granted to an application (represented by a service principal) as part of the user or admin consent process.">
-        <Item text="List oauth2 permission grants" url="/en-us/api-reference/beta/api/oauth2permissiongrant_list" SEOKeyword="List oauth2PermissionGrants, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Retrieve a list of oauth2permissiongrant objects." />
-        <Item text="Create oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_post_oauth2permissiongrants" SEOKeyword="Create OAuth2PermissionGrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Use this API to create a new OAuth2PermissionGrant." />
         <Item text="Get oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_get" SEOKeyword="Get oAuth2PermissionGrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Retrieve the properties and relationships of oauth2permissiongrant object." />
         <Item text="Update oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_update" SEOKeyword="Update oauth2permissiongrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Update the properties of oauth2permissiongrant object." />
         <Item text="Delete oauth2 permission grant" url="/en-us/api-reference/beta/api/oauth2permissiongrant_delete" SEOKeyword="Delete oAuth2PermissionGrant, Microsoft Graph API, oauth2permissiongrant API" SEODescription="Delete oAuth2PermissionGrant." />
@@ -1271,7 +1261,6 @@
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_get"/>
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_list"/>
-			<Item text="List mobile app configuration device status" url="/en-us/api-reference/beta/pi/intune_apps_ioslobappprovisioningconfiguration_list_manageddevicemobileappconfigurationdevicestatus"/>
 			<Item text="List mobile app configuration user status" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_list_manageddevicemobileappconfigurationuserstatus"/>
 			<Item text="List mobile app configuration group assignment" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_list_mdmappconfiggroupassignment"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_update"/>
@@ -2390,7 +2379,6 @@
 			<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_delete"/>
 			<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_get"/>
       <Item text="Get device compliance overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_get_devicecompliancedeviceoverview"/>
-      <Item text="Get device configuration overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_get_deviceconfigurationdeviceoverview"/>
 			<Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list"/>
 			<Item text="List device compliance device status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecompliancedevicestatus"/>
 			<Item text="List device compliance group assingment" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecompliancepolicygroupassignment"/>
