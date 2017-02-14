@@ -1,32 +1,25 @@
 # domainDnsSrvRecord resource type
 
-
-
+Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
 
 ### Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get domaindnssrvrecord](../api/domaindnssrvrecord_get.md) | [domainDnsSrvRecord](domaindnssrvrecord.md) |Read properties and relationships of domainDnsSrvRecord object.|
-|[Update](../api/domaindnssrvrecord_update.md) | [domainDnsSrvRecord](domaindnssrvrecord.md)	|Update domaindnssrvrecord object. |
-|[Delete](../api/domaindnssrvrecord_delete.md) | None |Delete domainDnsSrvRecord object. |
+Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|canonicalName|String||
-|id|String| Read-only.|
-|isOptional|Boolean||
-|label|String||
-|nameTarget|String||
-|port|Int32||
-|priority|Int32||
-|protocol|String||
-|recordType|String||
-|service|String||
-|supportedService|String||
-|ttl|Int32||
-|weight|Int32||
+|id|String| Unique identifier assigned to this entity. Not nullable, Read-only.|
+|isOptional|Boolean| If false, the SRV record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. |
+|label|String| Value used when configuring the *name* property of the SRV record at the DNS host. |
+|nameTarget|String| Value to use when configuring the *Target* property of the SRV record at the DNS host. |
+|port|Int32| Value to use when configuring the *port* property of the SRV record at the DNS host. |
+|priority|Int32| Value to use when configuring the *priority* property of the SRV record at the DNS host. |
+|protocol|String| Value to use when configuring the *protocol* property of the SRV record at the DNS host. |
+|recordType|String|  Type of DNS record. The value is always *Srv*. Key |
+|service|String| Value to use when configuring the *service* property of the SRV record at the DNS host. |
+|supportedService|String| Microsoft Online Service or feature that has a dependency on this SRV record.</br></br>Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|ttl|Int32| Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable |
+|weight|Int32| Value to use when configuring the *weight* property of the SRV record at the DNS host. |
 
 ### Relationships
 None

@@ -1,32 +1,17 @@
 # domainDnsUnavailableRecord resource type
 
-
-
+When you query for the navigation property **serviceConfigurationRecords** for a [Domain](domain.md) entity, you may get back one or more [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md), and/or [DomainDnsTxtRecord](domaindnstxtrecord.md) entities. These entities indicate what DNS records you must add to the zone file of the domain, before the domain can be used by Microsoft Online Services. When it is not possible to generate such entities, a DomainDnsUnavailableRecord Entity is returned instead. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
 
 ### Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get domaindnsunavailablerecord](../api/domaindnsunavailablerecord_get.md) | [domainDnsUnavailableRecord](domaindnsunavailablerecord.md) |Read properties and relationships of domainDnsUnavailableRecord object.|
-|[Update](../api/domaindnsunavailablerecord_update.md) | [domainDnsUnavailableRecord](domaindnsunavailablerecord.md)	|Update domaindnsunavailablerecord object. |
-|[Delete](../api/domaindnsunavailablerecord_delete.md) | None |Delete domainDnsUnavailableRecord object. |
+Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|canonicalName|String||
-|description|String||
-|id|String| Read-only.|
-|isOptional|Boolean||
-|label|String||
-|recordType|String||
-|supportedService|String||
-|text|String||
-|ttl|Int32||
+|description|String|Provides the reason why the **DomainDnsUnavailableRecord** entity is returned. |
 
 ### Relationships
 None
-
 
 ### JSON representation
 

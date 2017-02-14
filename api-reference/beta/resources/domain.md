@@ -6,17 +6,17 @@ Represents a domain associated with the tenant.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get domain](../api/domain_get.md) | [domain](domain.md) |Read properties and relationships of domain object.|
+|[Get domain](../api/domain_get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
 |[Create domainNameReference](../api/domain_post_domainnamereferences.md) |[directoryObject](directoryobject.md)| Create a new domainNameReference by posting to the domainNameReferences collection.|
-|[List domainnamereferences](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Get a domainNameReference object collection.|
+|[List domainNameReferences](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Get a domainNameReference object collection.|
 |[Create domainDnsRecord](../api/domain_post_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md)| Create a new domainDnsRecord by posting to the serviceConfigurationRecords collection.|
-|[List serviceconfigurationrecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection| Get a domainDnsRecord object collection.|
+|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection| Get a domainDnsRecord object collection.|
 |[Create domainDnsRecord](../api/domain_post_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md)| Create a new domainDnsRecord by posting to the verificationDnsRecords collection.|
-|[List verificationdnsrecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection| Get a domainDnsRecord object collection.|
-|[Update](../api/domain_update.md) | [domain](domain.md)	|Update domain object. |
-|[Delete](../api/domain_delete.md) | None |Delete domain object. |
-|[Forcedelete](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
-|[Verify](../api/domain_verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
+|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection| Get a domainDnsRecord object collection.|
+|[Update domain](../api/domain_update.md) | [domain](domain.md)	|Update domain object. |
+|[Delete domain](../api/domain_delete.md) | None |Delete domain object. |
+|[ForceDelete domain](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
+|[Verify domain](../api/domain_verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
 
 ### Properties
 | Property	   | Type	|Description|

@@ -1,32 +1,24 @@
 # domainDnsMxRecord resource type
 
-
-
+Represents a MX record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
 
 ### Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get domaindnsmxrecord](../api/domaindnsmxrecord_get.md) | [domainDnsMxRecord](domaindnsmxrecord.md) |Read properties and relationships of domainDnsMxRecord object.|
-|[Update](../api/domaindnsmxrecord_update.md) | [domainDnsMxRecord](domaindnsmxrecord.md)	|Update domaindnsmxrecord object. |
-|[Delete](../api/domaindnsmxrecord_delete.md) | None |Delete domainDnsMxRecord object. |
+Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|canonicalName|String||
-|id|String| Read-only.|
-|isOptional|Boolean||
-|label|String||
-|mailExchange|String||
-|preference|Int32||
-|recordType|String||
-|supportedService|String||
-|ttl|Int32||
+|id|String| Unique identifier assigned to this entity. Not nullable, Read-only.|
+|isOptional|Boolean| If false, the MX record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. |
+|label|String| Value used when configuring the *alias/host/name* property of the MX record at the DNS host. |
+|mailExchange|String| Value used when configuring the *answer/destination/value* of the MX record at the DNS host.|
+|preference|Int32| Value used when configuring the *Preference/Priority* property of the MX record at the DNS host. |
+|recordType|String| Type of DNS record. The value is always *Mx*. Key |
+|supportedService|String| Microsoft Online Service or feature that has a dependency on this MX record.</br></br>Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|ttl|Int32| Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable |
 
 ### Relationships
 None
-
 
 ### JSON representation
 
