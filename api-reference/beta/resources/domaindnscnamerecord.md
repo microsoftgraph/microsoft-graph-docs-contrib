@@ -1,26 +1,26 @@
 # domainDnsCnameRecord resource type
 
-
+Represents a CNAME record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity.
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get domaindnscnamerecord](../api/domaindnscnamerecord_get.md) | [domainDnsCnameRecord](domaindnscnamerecord.md) |Read properties and relationships of domainDnsCnameRecord object.|
-|[Update](../api/domaindnscnamerecord_update.md) | [domainDnsCnameRecord](domaindnscnamerecord.md)	|Update domaindnscnamerecord object. |
-|[Delete](../api/domaindnscnamerecord_delete.md) | None |Delete domainDnsCnameRecord object. |
+|[Get domainDnsCnameRecord](../api/domaindnscnamerecord_get.md) | [domainDnsCnameRecord](domaindnscnamerecord.md) |Read properties and relationships of a domainDnsCnameRecord object.|
+|[Update](../api/domaindnscnamerecord_update.md) | [domainDnsCnameRecord](domaindnscnamerecord.md)	|Update a domainDnsCnameRecord object. |
+|[Delete](../api/domaindnscnamerecord_delete.md) | None |Delete a domainDnsCnameRecord object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|canonicalName|String||
-|id|String| Read-only.|
-|isOptional|Boolean||
-|label|String||
-|recordType|String||
-|supportedService|String||
-|ttl|Int32||
+|canonicalName|String| The canonical name of the CNAME record. Used to configure the CNAME record at the DNS host. |
+|id|String| Unique identifier assigned to this entity. Not nullable, Read-only|
+|isOptional|Boolean| If false, the CNAME record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. Not nullable |
+|label|String| Value used when configuring the name of the CNAME record at the DNS host. |
+|recordType|String| Type of DNS record. The value is always *CName*. Key|
+|supportedService|String| Microsoft Online Service or feature that has a dependency on this CNAME record.</br></br>Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|ttl|Int32| Value to use when configuring the time-to-live (ttl) property of the CNAME record at the DNS host. Not nullable |
 
 ### Relationships
 None

@@ -29,15 +29,15 @@ Represents a domain associated with the tenant.
 |isDefault|Boolean| True if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable |
 |isInitial|Boolean| True if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable |
 |isRoot|Boolean| For subdomains, this represents the root domain. Only root domains need to be verified, and all subdomains will be automatically verified. Not nullable |
-|isVerified|Boolean||
-|supportedServices|String collection||
+|isVerified|Boolean| True if the domain has completed domain ownership verification. Not nullable |
+|supportedServices|String collection| The capabilities assigned to the domain.</br></br>Can include 0, 1 or more of following values: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*,	*FullRedelegation*,	*SharePointPublic*,	*OrgIdAuthentication*,	*Yammer*,	*Intune*</br>Most of these values are read-only.</br></br> The values which you can add/remove using Graph API include: *Email*,	*OfficeCommunicationsOnline*,	*Yammer*</br>Not nullable|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |domainNameReferences|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| Read-only. Nullable.|
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| Read-only. Nullable.|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.</br>Read-only. Nullable.|
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.</br>Read-only. Nullable.|
 
 ### JSON representation
 
