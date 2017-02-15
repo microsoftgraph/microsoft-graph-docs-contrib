@@ -42,8 +42,6 @@ Here is an example of the response. Note: The response object shown here may be 
 HTTP/1.1 204 No Content
 ```
 
-a
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
