@@ -12,7 +12,7 @@ The following actions are performed as part of this operation: 
 > If a [DELETE request is performed on the domain resource](domain_delete.md), an HTTP Response code of 400 is returned with a link suggesting the forceDelete API. 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: **Directory.ReadWrite.All**
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,7 +42,7 @@ If successful, this method returns `200, OK` response code.
   "name": "domain_forcedelete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/domains/<id>/forceDelete
+POST https://graph.microsoft.com/beta/domains/contoso.com/forceDelete
 Content-type: application/json
 Content-length: 33
 

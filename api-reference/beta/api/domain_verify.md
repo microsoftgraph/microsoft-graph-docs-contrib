@@ -1,9 +1,11 @@
 # domain: verify
 
-Validates the ownership of the domain.
+Validates the ownership of the domain. 
+
+> **Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,8 +15,7 @@ POST /domains/<id>/verify
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer &lt;code&gt;|
 | Content-Type  | application/json |
 
 ### Request body
@@ -29,7 +30,7 @@ If successful, this method returns `200, OK` response code and [domain](../resou
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/domains/<id>/verify
+POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 ```
 
 ##### Response
@@ -50,7 +51,8 @@ Content-length: 192
   "isAdminManaged": true,
   "isDefault": true,
   "isInitial": true,
-  "isRoot": true
+  "isRoot": true,
+  "name": "contoso.com"
 }
 ```
 

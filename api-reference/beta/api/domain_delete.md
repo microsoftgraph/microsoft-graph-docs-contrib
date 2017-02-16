@@ -1,8 +1,11 @@
 # Delete domain
 
-Delete domain.
+Delete a domain from a tenant. 
+
+> Deleted domains are not recoverable.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,16 +15,14 @@ DELETE /domains/<id>
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer &lt;code&gt;|
 | Content-Type  | application/json |
 
 ### Request body
 Do not supply a request body for this method.
 
-
 ### Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204, No Content` response code. It does not return a response body.
 
 ### Example
 ##### Request
@@ -31,7 +32,7 @@ If successful, this method returns `204, No Content` response code. It does not 
   "name": "delete_domain"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/domains/<id>
+DELETE https://graph.microsoft.com/beta/domains/contoso.com
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

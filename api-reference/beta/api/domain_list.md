@@ -1,8 +1,9 @@
 # List domains
 
 Retrieve a list of domain objects.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,11 +15,12 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer &lt;code&gt;|
+| Accept         | application/json; |
 
 ### Request body
 Do not supply a request body for this method.
+
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [domain](../resources/domain.md) objects in the response body.
 ### Example
@@ -52,7 +54,12 @@ Content-length: 245
       "isAdminManaged": true,
       "isDefault": true,
       "isInitial": true,
-      "isRoot": true
+      "isRoot": true,
+      "name": "contoso.onmicrosoft.com",
+      "supportedServices": [
+        "Email",
+        "OfficeCommunicationsOnline"
+      ]
     }
   ]
 }

@@ -1,37 +1,28 @@
 # Update domain
 
 Update the properties of domain object.
+
+> **Important:** Only verified domains can be updated.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/<id>
 ```
-### Optional request headers
+### Request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer &lt;code&gt;|
 | Content-Type  | application/json |
 
 ### Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
-
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|authenticationType|String||
-|availabilityStatus|String||
-|forceDeleteState|forceDeleteState||
-|isAdminManaged|Boolean||
-|isDefault|Boolean||
-|isInitial|Boolean||
-|isRoot|Boolean||
-|isVerified|Boolean||
-|supportedServices|String||
+In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [domain](../resources/domain.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and no response body.
 ### Example
 ##### Request
 
@@ -40,39 +31,26 @@ If successful, this method returns a `200 OK` response code and updated [domain]
   "name": "update_domain"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/domains/<id>
+PATCH https://graph.microsoft.com/beta/domains/contoso.com
 Content-type: application/json
-Content-length: 192
 
 {
-  "authenticationType": "authenticationType-value",
-  "availabilityStatus": "availabilityStatus-value",
-  "isAdminManaged": true,
   "isDefault": true,
-  "isInitial": true,
-  "isRoot": true
+  "supportedServices": [
+    "Email",
+    "OfficeCommunicationsOnline"
+  ]
 }
 ```
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.domain"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 192
-
-{
-  "authenticationType": "authenticationType-value",
-  "availabilityStatus": "availabilityStatus-value",
-  "isAdminManaged": true,
-  "isDefault": true,
-  "isInitial": true,
-  "isRoot": true
-}
+HTTP/1.1 200 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

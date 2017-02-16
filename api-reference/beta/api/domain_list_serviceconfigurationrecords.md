@@ -1,12 +1,13 @@
 # List serviceConfigurationRecords
 
-Retrieve a list of domaindnsrecord objects.
+Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain. The returned records need to be added to the zone file of the domain.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/<id>/serviceConfigurationRecords
+GET /domains/contoso.com/serviceConfigurationRecords
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -14,8 +15,8 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer &lt;code&gt;|
+| Content-Type  | application/json |
 
 ### Request body
 Do not supply a request body for this method.
@@ -29,7 +30,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_serviceconfigurationrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/<id>/serviceConfigurationRecords
+GET https://graph.microsoft.com/beta/domains/contoso.com/serviceConfigurationRecords
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -47,12 +48,21 @@ Content-length: 220
 {
   "value": [
     {
-      "isOptional": true,
-      "label": "label-value",
-      "recordType": "recordType-value",
-      "supportedService": "supportedService-value",
-      "ttl": 99,
-      "id": "id-value"
+      "isOptional": false,
+      "label": "contoso.com",
+      "recordType": "Mx",
+      "supportedService": "Email",
+      "ttl": 3600,
+      "mailExchange": "contoso-com.mail.protection.outlook.com",
+      "preference": 0
+    },
+    {
+      "isOptional": false,
+      "label": "contoso.com",
+      "recordType": "Txt",
+      "supportedServices": "Email",
+      "ttl": 3600,
+      "text": "v=spf1 include: spf.protection.outlook.com ~all"
     }
   ]
 }

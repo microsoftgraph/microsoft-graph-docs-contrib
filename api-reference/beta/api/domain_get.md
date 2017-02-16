@@ -1,8 +1,9 @@
 # Get domain
 
-Retrieve the properties and relationships of domain object.
+Retrieve the properties and relationships of domain object. Specify the domain with its fully qualified domain name.
+
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,8 +15,8 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer &lt;code&gt;|
+| Content-Type  | application/json |
 
 ### Request body
 Do not supply a request body for this method.
@@ -29,7 +30,7 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/<id>
+GET https://graph.microsoft.com/beta/domains/contoso.onmicrosoft.com
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -46,6 +47,7 @@ Content-length: 192
 {
   "authenticationType": "authenticationType-value",
   "availabilityStatus": "availabilityStatus-value",
+  "id": "contoso.onmicrosoft.com",
   "isAdminManaged": true,
   "isDefault": true,
   "isInitial": true,

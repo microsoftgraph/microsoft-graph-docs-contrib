@@ -2,11 +2,20 @@
 
 Represents a domain associated with the tenant.
 
+Use domain operations to associate domains to a tenant and get records to verify domain ownership.  Domain operations enable registrars to automate domain association for services such as Office 365. For example, as part of domain sign up, a registrar can enable a vanity domain for email, websites, authentication, etc.   
+
+To associate a domain with a tenant:
+1. [Associate](../api/domain_post_domains.md) a domain with a tenant. 
+2. [Verify](../api/domain_list_verificationdnsrecords.md) ownership of the domain.
+3. |[Indicate](../api/domain_update.md) the supported services you plan to use with the domain.
+4. [Configure](../api/domain_list_serviceconfigurationrecords.md) the domain for supported services.
+
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get domain](../api/domain_get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
+|[Create domain](../api/domain_post_domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
 |[Create domainNameReference](../api/domain_post_domainnamereferences.md) |[directoryObject](directoryobject.md)| Create a new domainNameReference by posting to the domainNameReferences collection.|
 |[List domainNameReferences](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Get a domainNameReference object collection.|
 |[Create domainDnsRecord](../api/domain_post_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md)| Create a new domainDnsRecord by posting to the serviceConfigurationRecords collection.|
@@ -21,7 +30,7 @@ Represents a domain associated with the tenant.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|authenticationType|String| Indicates what authentication type the domain is configured for. The value is either *Managed* or *Federated*. |
+|authenticationType|String| Indicates what authentication type the domain is configured for. The value is either *Managed* or *Federated*. Not nullable |
 |availabilityStatus|String| This property is always null except when the [verify](../api/domain_verify.md) action is used. When the [verify](../api/domain_verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either *AvailableImmediately* or *EmailVerifiedDomainTakeoverScheduled*.|
 |forceDeleteState|[forceDeleteState](forcedeletestate.md)| Status of the forceDelete action. |
 |id|String| The fully qualified name of the domain. **Notes:** Read-only, key, immutable, not nullable, unique |
@@ -33,6 +42,9 @@ Represents a domain associated with the tenant.
 |supportedServices|String collection| The capabilities assigned to the domain.</br></br>Can include 0, 1 or more of following values: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*,	*FullRedelegation*,	*SharePointPublic*,	*OrgIdAuthentication*,	*Yammer*,	*Intune*</br>Most of these values are read-only.</br></br> The values which you can add/remove using Graph API include: *Email*,	*OfficeCommunicationsOnline*,	*Yammer*</br>Not nullable|
 
 ### Relationships
+
+Relationships between a domain and other objects in the directory such as its verification records and service configuration records are exposed through navigation properties. You can read these relationships by targeting these navigation properties in your requests. 
+
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |domainNameReferences|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
