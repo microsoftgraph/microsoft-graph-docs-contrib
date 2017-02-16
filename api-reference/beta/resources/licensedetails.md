@@ -13,10 +13,10 @@ Contains information about a license assigned to a user.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| The unique identifier for the license detail object. Read-only. Key. Not nullable. |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| Information about the service plans assigned with the license. Not nullable. |
-|skuId|Guid| Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related [SubscribedSku](subscribedsku.md) object.|
-|skuPartNumber|String| Unique SKU display name. Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium". |
+|id|String| The unique identifier for the license detail object. Read-only, Key, Not nullable |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| Information about the service plans assigned with the license. Read-only, Not nullable |
+|skuId|Guid| Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related [SubscribedSku](subscribedsku.md) object. Read-only |
+|skuPartNumber|String| Unique SKU display name. Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium". Read-only |
 
 ### Relationships
 None
