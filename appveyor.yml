@@ -14,6 +14,8 @@ test_script:
 
     & $apidocs $parms
 
+    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+
     # check documents in each api reference set
 
     $path = $env:APPVEYOR_BUILD_FOLDER + "\api-reference"
