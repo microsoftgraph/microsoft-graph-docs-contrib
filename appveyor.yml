@@ -10,21 +10,7 @@ test_script:
 
     # check links at the root of the repository
     
-    if ([string]::IsNullOrEmpty($env:APPVEYOR_PULL_REQUEST_NUMBER)) 
-    
-    {
-
     $parms = "check-links", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $env:APPVEYOR_BUILD_FOLDER, "--relax-string-validation", "--ignore-warnings"
-
-    }
-
-    else
-
-    {
-
-    $parms = "check-links", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $env:APPVEYOR_BUILD_FOLDER, "--relax-string-validation", "--ignore-warnings", "--changes-since-branch-only", $env:APPVEYOR_REPO_BRANCH
-
-    }
 
     & $apidocs $parms
 
