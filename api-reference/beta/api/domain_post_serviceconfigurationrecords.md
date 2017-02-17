@@ -1,6 +1,6 @@
 # Create domainDnsRecord
 
-Use this API to create a new domainDnsRecord.
+Use this API to create a new serviceConfigurationRecord.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

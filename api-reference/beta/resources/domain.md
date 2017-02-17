@@ -17,10 +17,7 @@ To associate a domain with a tenant:
 |[Get domain](../api/domain_get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
 |[Create domain](../api/domain_post_domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
 |[Create domainNameReference](../api/domain_post_domainnamereferences.md) |[directoryObject](directoryobject.md)| Create a new domainNameReference by posting to the domainNameReferences collection.|
-|[List domainNameReferences](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Get a domainNameReference object collection.|
-|[Create domainDnsRecord](../api/domain_post_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md)| Create a new domainDnsRecord by posting to the serviceConfigurationRecords collection.|
 |[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection| Get a domainDnsRecord object collection.|
-|[Create domainDnsRecord](../api/domain_post_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md)| Create a new domainDnsRecord by posting to the verificationDnsRecords collection.|
 |[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection| Get a domainDnsRecord object collection.|
 |[Update domain](../api/domain_update.md) | [domain](domain.md)	|Update domain object. |
 |[Delete domain](../api/domain_delete.md) | None |Delete domain object. |
