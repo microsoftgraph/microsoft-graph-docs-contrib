@@ -52,7 +52,7 @@ Examples of group features that support delegated and app-only permissions:
 
 * Creating and deleting groups
 * Getting and updating group properties pertaining to group administration or management
-* Group [directory settings](../api-reference/v1.0/resources/directorysetting.md), type and synchronization
+* Group [directory settings](../api-reference/v1.0/resources/directoryobject.md), type and synchronization
 * Group owners and membership
 
 
