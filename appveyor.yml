@@ -1,6 +1,5 @@
 version: 1.0.{build}
-nuget:
-  account_feed: true
+clone_depth: 1
 build_script:
 - ps: nuget install MarkdownScanner.BinaryTools
 test_script:
@@ -8,6 +7,16 @@ test_script:
     $pkgfolder = Get-ChildItem -Directory | Where-Object {$_.name -match "MarkdownScanner.BinaryTools."}
 
     $apidocs = $pkgfolder.name + "\tools\apidocs.exe"
+
+    # check links at the root of the repository
+    
+    $parms = "check-links", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $env:APPVEYOR_BUILD_FOLDER, "--relax-string-validation", "--ignore-warnings"
+
+    & $apidocs $parms
+
+    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+
+    # check documents in each api reference set
 
     $path = $env:APPVEYOR_BUILD_FOLDER + "\api-reference"
 
@@ -22,9 +31,9 @@ test_script:
     {
     
       # Run the checks on all files
-    
-      $parms = "check-all", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings"
-    
+  
+      $parms = "check-docs", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings"
+
     }
     
     else 
@@ -33,11 +42,11 @@ test_script:
     
       # Run the checks only on files changed since the master branch
     
-      $parms = "check-all", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings", "--changes-since-branch-only", $env:APPVEYOR_REPO_BRANCH
+      $parms = "check-docs", "--appveyor-url", $env:APPVEYOR_API_URL, "--path", $reference, "--relax-string-validation", "--ignore-warnings", "--changes-since-branch-only", $env:APPVEYOR_REPO_BRANCH
     
     }
 
-    & $apidocs $parms
+    & $apidocs $parms    
 
     if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
 
