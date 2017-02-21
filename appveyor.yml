@@ -1,5 +1,6 @@
 version: 1.0.{build}
-clone_depth: 1
+nuget:
+  account_feed: true
 build_script:
 - ps: nuget install MarkdownScanner.BinaryTools
 test_script:
