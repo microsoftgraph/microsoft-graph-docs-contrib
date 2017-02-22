@@ -1,10 +1,13 @@
-﻿# List windows10GeneralConfigurations> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List windows10GeneralConfigurations
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 List properties and relationships of the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) objects.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
@@ -13,31 +16,31 @@ One of the following **scopes** is required to execute this API:
 GET /deviceManagement/deviceConfigurations/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a collection of [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) objects in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4184
+Content-Length: 5384
 
 {
   "value": [
@@ -65,7 +68,7 @@ Content-Length: 4184
       "copyPasteBlocked": true,
       "cortanaBlocked": true,
       "defenderBlockEndUserAccess": true,
-      "defenderDaysBeforeDeletingQuarantinedMalware": 44,
+      "defenderDaysBeforeDeletingQuarantinedMalware": 12,
       "defenderSystemScanSchedule": "everyday",
       "defenderFilesAndFoldersToExclude": [
         "Defender Files And Folders To Exclude value"
@@ -73,7 +76,7 @@ Content-Length: 4184
       "defenderFileExtensionsToExclude": [
         "Defender File Extensions To Exclude value"
       ],
-      "defenderScanMaxCpu": 18,
+      "defenderScanMaxCpu": 2,
       "defenderMonitorFileActivity": "disable",
       "defenderProcessesToExclude": [
         "Defender Processes To Exclude value"
@@ -90,7 +93,7 @@ Content-Length: 4184
       "defenderScanMappedNetworkDrivesDuringFullScan": true,
       "defenderScanRemovableDrivesDuringFullScan": true,
       "defenderScanScriptsLoadedInInternetExplorer": true,
-      "defenderSignatureUpdateIntervalInHours": 38,
+      "defenderSignatureUpdateIntervalInHours": 6,
       "defenderScanType": "disabled",
       "defenderScheduledScanTime": "11:59:10.9990000",
       "defenderScheduledQuickScanTime": "11:58:49.3840000",
@@ -100,7 +103,10 @@ Content-Length: 4184
       "edgeBlockAutofill": true,
       "edgeBlocked": true,
       "edgeCookiePolicy": "allow",
+      "edgeBlockDeveloperTools": true,
       "edgeBlockSendingDoNotTrackHeader": true,
+      "edgeBlockExtensions": true,
+      "edgeBlockInPrivateBrowsing": true,
       "edgeBlockJavaScript": true,
       "edgeBlockPasswordManager": true,
       "edgeBlockPopups": true,
@@ -108,21 +114,36 @@ Content-Length: 4184
       "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
       "edgeRequireSmartScreen": true,
       "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
+      "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
+      "edgeHomepageUrls": [
+        "Edge Homepage Urls value"
+      ],
+      "edgeBlockAccessToAboutFlags": true,
+      "smartScreenBlockPromptOverride": true,
+      "smartScreenBlockPromptOverrideForFiles": true,
+      "webRtcBlockLocalhostIpAddress": true,
       "internetSharingBlocked": true,
+      "settingsBlockAddProvisioningPackage": true,
+      "settingsBlockRemoveProvisioningPackage": true,
+      "settingsBlockChangeSystemTime": true,
+      "settingsBlockEditDeviceName": true,
+      "settingsBlockChangeRegion": true,
+      "settingsBlockChangeLanguage": true,
+      "settingsBlockChangePowerSleep": true,
       "locationServicesBlocked": true,
       "lockScreenBlockActionCenterNotifications": true,
       "microsoftAccountBlocked": true,
       "microsoftAccountBlockSettingsSync": true,
       "nfcBlocked": true,
-      "passwordExpirationDays": 22,
-      "passwordMinimumLength": 21,
-      "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-      "passwordMinimumCharacterSetCount": 32,
-      "passwordPreviousPasswordBlockCount": 34,
+      "passwordExpirationDays": 6,
+      "passwordMinimumLength": 5,
+      "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+      "passwordMinimumCharacterSetCount": 0,
+      "passwordPreviousPasswordBlockCount": 2,
       "passwordRequired": true,
       "passwordRequireWhenResumeFromIdleState": true,
       "passwordRequiredType": "alphanumeric",
-      "passwordSignInFailureCountBeforeFactoryReset": 44,
+      "passwordSignInFailureCountBeforeFactoryReset": 12,
       "prereleaseFeatures": "settingsOnly",
       "resetProtectionModeBlocked": true,
       "screenCaptureBlocked": true,
@@ -133,7 +154,16 @@ Content-Length: 4184
       "wiFiBlockAutomaticConnectHotspots": true,
       "wiFiBlocked": true,
       "wiFiBlockManualConfiguration": true,
-      "windowsStoreBlocked": true
+      "windowsStoreBlocked": true,
+      "appsAllowTrustedAppsSideloading": "blocked",
+      "windowsStoreBlockAutoUpdate": true,
+      "developerUnlockSetting": "blocked",
+      "sharedUserAppDataAllowed": true,
+      "appsBlockWindowsStoreOriginatedApps": true,
+      "windowsStoreEnablePrivateStoreOnly": true,
+      "storageRestrictAppDataToSystemVolume": true,
+      "storageRestrictAppInstallToSystemVolume": true,
+      "gameDvrBlocked": true
     }
   ]
 }

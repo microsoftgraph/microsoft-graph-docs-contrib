@@ -2,6 +2,11 @@
 
 This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](http://graph.microsoft.io/en-us/changelog).
 
+## Graph Explorer
+We have turned off Microsoft Account logons to the Graph Explorer due to a service issue. We are actively working on a fix and will update this text when it's ready.  
+
+Signins with Internet Explorer and Microsoft Edge were not working. That issue has been resolved as of February 2, 2017.
+
 ## Users
 #### No instant access after creation
 Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response. 
@@ -47,7 +52,7 @@ Examples of group features that support delegated and app-only permissions:
 
 * Creating and deleting groups
 * Getting and updating group properties pertaining to group administration or management
-* Group [directory settings](../resources/directorysetting.md), type and synchronization
+* Group [directory settings](../api-reference/v1.0/resources/directoryobject.md), type and synchronization
 * Group owners and membership
 
 
@@ -116,7 +121,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ## Messages
 #### The comment parameter for creating a draft
 The **comment** parameter for creating a reply or forward draft ([createReply](../api-reference/v1.0/api/message_createreply.md), 
-[createReplyAll](../api-reference/v1.0/api/message_createreplyall), [createForward](../api-reference/v1.0/api/message_createforward.md)) 
+[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) 
 does not become part of the body of the resultant message draft.  
 
 
@@ -169,6 +174,6 @@ Additionally there are the following `/beta` limitations:
 * Cross-workload filtering/search is not available. 
 * Full-text search (using **$search**) is only available for some entities, like messages.
 
-  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with [MicrosoftGraph] and [office365].
+  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
 
 

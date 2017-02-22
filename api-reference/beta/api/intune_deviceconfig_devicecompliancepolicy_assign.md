@@ -1,27 +1,30 @@
-﻿# assign action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Assign the [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) object.
-### Prerequisites
+﻿# assign action
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/{id}/assign
-POST /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy//assign
-POST /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy//assign
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
+POST /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy//assign
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy//assign
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply JSON representation of the parameters.
 The following table shows the parameters that can be used with this action.
 
@@ -31,14 +34,14 @@ The following table shows the parameters that can be used with this action.
 
 
 
-### Response
+## Response
 If successful, this action returns a `200 OK` response code and a [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) collection in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 
 Content-type: application/json
 Content-length: 251
@@ -54,7 +57,7 @@ Content-length: 251
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
@@ -68,3 +71,6 @@ Content-Length: 137
   }
 ]
 ```
+
+
+

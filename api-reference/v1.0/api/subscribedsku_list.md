@@ -1,16 +1,17 @@
 # List subscribedSkus
-Retrieve a list of service SKUs that a company is subscribed to.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+Retrieve the list of commercial subscriptions that an organization has acquired.
 
-*User.Read*; *Directory.Read.All*; *Directory.AccessAsUser*
+## Prerequisites
+One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /subscribedSkus
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method does **not** support the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response (e.g. $filter is not supported here).
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|

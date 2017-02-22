@@ -1,27 +1,30 @@
-﻿# Update macOSGeneralDeviceConfiguration> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Update macOSGeneralDeviceConfiguration
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Update the properties of a [macOSGeneralDeviceConfiguration](../resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{id}
-PATCH /deviceConfigurationAssignments/{id}/deviceConfiguration/
-PATCH /deviceManagement/deviceConfigurations/{id}/groupAssignments/{id}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a [macOSGeneralDeviceConfiguration](../resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md) object.
 The following table shows the properties that are required when you create a [macOSGeneralDeviceConfiguration](../resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md).
 
@@ -35,7 +38,7 @@ The following table shows the properties that are required when you create a [ma
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
 |compliantAppListType|String|List that is in the CompliantAppsList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|emailInDomainSuffixes|String collection|Any email address that does not have a suffix that matches any item listed here will be considered out-of-domain.|
+|emailInDomainSuffixes|String collection|An email address lacking a suffix that matches any of these strings will be considered out-of-domain.|
 |passwordBlockSimple|Boolean|Block simple passwords.|
 |passwordExpirationDays|Int32|Number of days before the password expires.|
 |passwordMinimumCharacterSetCount|Int32|Number of character sets a password must contain.|
@@ -48,16 +51,16 @@ The following table shows the properties that are required when you create a [ma
 
 
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and an updated [macOSGeneralDeviceConfiguration](../resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{id}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 905
+Content-length: 900
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -78,23 +81,23 @@ Content-length: 905
     "Email In Domain Suffixes value"
   ],
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumCharacterSetCount": 32,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordExpirationDays": 6,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1083
+Content-Length: 1078
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -118,12 +121,12 @@ Content-Length: 1083
     "Email In Domain Suffixes value"
   ],
   "passwordBlockSimple": true,
-  "passwordExpirationDays": 22,
-  "passwordMinimumCharacterSetCount": 32,
-  "passwordMinimumLength": 21,
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordMinutesOfInactivityBeforeScreenTimeout": 46,
-  "passwordPreviousPasswordBlockCount": 34,
+  "passwordExpirationDays": 6,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true
 }

@@ -1,10 +1,12 @@
-﻿# omaSettingDateTime resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# omaSettingDateTime resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 OMA Settings DateTime definition.
 
 Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
@@ -12,9 +14,9 @@ Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|DateTimeOffset|Value.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

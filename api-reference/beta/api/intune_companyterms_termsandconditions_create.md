@@ -1,52 +1,53 @@
-﻿# Create termsAndConditions> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create termsAndConditions
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /termsAndConditions/{id}
-POST /termsAndConditions/{id}/groupAssignments/{id}/termsAndConditions/
-POST /termsAndConditions/{id}/acceptanceStatuses/{id}/termsAndConditions/
+POST /termsAndConditions/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a termsAndConditions object.
 The following table shows the properties that are required when you create a termsAndConditions.
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity.|
+|id|String|Unique identifier of the T&C policy.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |modifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
-|displayName|String|Admin provided name of the term.|
-|description|String|Admin provided description of the term.|
-|title|String|Admin provided title of the term.|
-|bodyText|String|Admin provided body text of the term.|
-|acceptanceStatement|String|Admin provided acceptance statement of the term.|
-|version|Int32|Version of the term.|
+|displayName|String|Administrator-supplied name for the T&C policy. |
+|description|String|Administrator-supplied description of the T&C policy.|
+|title|String|Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.|
+|bodyText|String|Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.|
+|acceptanceStatement|String|Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.|
+|version|Int32|Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.|
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/termsAndConditions/{id}
+POST https://graph.microsoft.com/beta/termsAndConditions/
 Content-type: application/json
 Content-length: 273
 
@@ -61,7 +62,7 @@ Content-length: 273
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

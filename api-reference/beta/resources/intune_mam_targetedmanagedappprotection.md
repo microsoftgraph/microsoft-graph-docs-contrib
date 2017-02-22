@@ -1,10 +1,12 @@
-﻿# targetedManagedAppProtection resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# targetedManagedAppProtection resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Policy used to configure detailed management settings targeted to specific security groups
 
 Inherits from [managedAppProtection](../resources/intune_mam_managedappprotection.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List targetedManagedAppProtections](../api/intune_mam_targetedmanagedappprotection_list.md)|[targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) collection|List properties and relationships of the [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) objects.|
@@ -14,7 +16,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |[Get managedAppPolicyDeploymentSummary](../api/intune_mam_targetedmanagedappprotection_get_managedapppolicydeploymentsummary.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Get the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) from the deploymentSummary navigation property.|
 |[List directoryObjects](../api/intune_mam_targetedmanagedappprotection_list_directoryobject.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Get the directoryObjects from the targetedSecurityGroups navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -46,14 +48,14 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property.|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -70,8 +72,8 @@ Here is a JSON representation of the resource.
   "deployedAppCount": 1024,
   "id": "String (identifier)",
   "version": "String",
-  "periodOfflineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
-  "periodOnlineBeforeAccessCheck": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeAccessCheck": "String (duration)",
+  "periodOnlineBeforeAccessCheck": "String (duration)",
   "allowedInboundDataTransferSources": "String",
   "allowedOutboundDataTransferDestinations": "String",
   "organizationalCredentialsRequired": true,
@@ -80,7 +82,7 @@ Here is a JSON representation of the resource.
   "deviceComplianceRequired": true,
   "managedBrowserToOpenLinksRequired": true,
   "saveAsBlocked": true,
-  "periodOfflineBeforeWipeIsEnforced": "<Unknown Primitive Type Edm.Duration>",
+  "periodOfflineBeforeWipeIsEnforced": "String (duration)",
   "pinRequired": true,
   "maximumPinRetries": 1024,
   "simplePinBlocked": true,

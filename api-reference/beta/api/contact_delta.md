@@ -3,7 +3,8 @@
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
 
 A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately 
-applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in 
+applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls, 
+you can query for incremental changes in the contacts in 
 that folder. This allows you to maintain and synchronize a local store of a user's contacts without 
 having to fetch the entire set of contacts from the server every time.  
 
@@ -16,7 +17,22 @@ GET /me/contactFolders/{id}/contacts/delta
 GET /users/<id>/contactFolders/{id}/contacts/delta
 ```
 
-### Optional query parameters
+### Query parameters
+
+Tracking changes in contacts incurs a round of one or more **delta** function calls. If you use any query parameter 
+(other than `$deltatoken` and `$skiptoken`), you must specify 
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
+into the token portion of the `nextLink` or `deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront. 
+In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+includes the encoded, desired parameters.
+
+| Query parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same contact collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same contact collection. |
+
+
+#### OData query parameters
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 

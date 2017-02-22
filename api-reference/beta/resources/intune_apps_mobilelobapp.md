@@ -1,10 +1,12 @@
-﻿# mobileLobApp resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# mobileLobApp resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 An abstract base class containing properties for all mobile line of business apps.
 
 Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List mobileLobApps](../api/intune_apps_mobilelobapp_list.md)|[mobileLobApp](../resources/intune_apps_mobilelobapp.md) collection|List properties and relationships of the [mobileLobApp](../resources/intune_apps_mobilelobapp.md) objects.|
@@ -15,7 +17,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |[List userAppInstallStatuses](../api/intune_apps_mobilelobapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
 |[List mobileAppContents](../api/intune_apps_mobilelobapp_list_mobileappcontent.md)|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|Get the mobileAppContents from the contentVersions navigation property.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -38,7 +40,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |size|Int64|The total size, including all uploaded files.|
 |identityVersion|String|The identity version.|
 
-### Relationships
+## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -47,7 +49,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |contentVersions|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|The list of content versions for this app.|
 
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

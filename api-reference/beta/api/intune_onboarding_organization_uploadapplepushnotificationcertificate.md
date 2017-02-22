@@ -1,25 +1,28 @@
-﻿# uploadApplePushNotificationCertificate action> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
-Upload an Apple MDM push certificate.
-### Prerequisites
+﻿# uploadApplePushNotificationCertificate action
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Not yet documented
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementServiceConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /organization/{id}/uploadApplePushNotificationCertificate
+POST /organization/{organizationId}/uploadApplePushNotificationCertificate
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply JSON representation of the parameters.
 The following table shows the parameters that can be used with this action.
 
@@ -30,14 +33,14 @@ The following table shows the parameters that can be used with this action.
 
 
 
-### Response
+## Response
 If successful, this action returns a `200 OK` response code and a [organization](../resources/intune_onboarding_organization.md) in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{id}/uploadApplePushNotificationCertificate
+POST https://graph.microsoft.com/beta/organization/{organizationId}/uploadApplePushNotificationCertificate
 
 Content-type: application/json
 Content-length: 135
@@ -48,12 +51,12 @@ Content-length: 135
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3808
+Content-Length: 3803
 
 {
   "@odata.type": "#microsoft.graph.organization",
@@ -98,8 +101,8 @@ Content-Length: 3808
   },
   "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {
     "@odata.type": "microsoft.graph.defaultDeviceEnrollmentWindowsHelloForBusinessSettings",
-    "pinMinimumLength": 16,
-    "pinMaximumLength": 16,
+    "pinMinimumLength": 0,
+    "pinMaximumLength": 0,
     "pinUppercaseLettersUsage": "required",
     "pinLowercaseLettersUsage": "required",
     "pinSpecialCharactersUsage": "required",
@@ -107,11 +110,11 @@ Content-Length: 3808
     "securityDeviceRequired": true,
     "unlockWithBiometricsEnabled": true,
     "mobilePinSignInEnabled": true,
-    "pinPreviousBlockCount": 21,
-    "pinExpirationInDays": 19,
+    "pinPreviousBlockCount": 5,
+    "pinExpirationInDays": 3,
     "enhancedBiometrics": "enabled"
   },
-  "defaultDeviceEnrollmentLimit": 28,
+  "defaultDeviceEnrollmentLimit": 12,
   "intuneBrand": {
     "@odata.type": "microsoft.graph.intuneBrand",
     "displayName": "Display Name value",
@@ -148,7 +151,10 @@ Content-Length: 3808
     "enrollmentError": "Enrollment Error value",
     "lastConnectorConnectionTime": "2017-01-01T00:02:50.2393584-08:00",
     "connectorVersion": "Connector Version value",
-    "lastUploadVersion": 17
+    "lastUploadVersion": 1
   }
 }
 ```
+
+
+

@@ -1,7 +1,9 @@
-﻿# deviceManagementExchangeConnector resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# deviceManagementExchangeConnector resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Entity which represents a connection to an Exchange environment.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List deviceManagementExchangeConnectors](../api/intune_onboarding_devicemanagementexchangeconnector_list.md)|[deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) collection|List properties and relationships of the [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) objects.|
@@ -11,7 +13,7 @@ Entity which represents a connection to an Exchange environment.
 |[Update deviceManagementExchangeConnector](../api/intune_onboarding_devicemanagementexchangeconnector_update.md)|[deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md)|Update the properties of a [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) object.|
 |[sync action](../api/intune_onboarding_devicemanagementexchangeconnector_sync.md)|None|Not yet documented|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Not yet documented|
@@ -21,9 +23,9 @@ Entity which represents a connection to an Exchange environment.
 |serverName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|String|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

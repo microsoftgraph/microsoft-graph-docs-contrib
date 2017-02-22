@@ -1,10 +1,12 @@
-﻿# depEnrollmentProfile resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# depEnrollmentProfile resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The depEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
 
 Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)
 
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List depEnrollmentProfiles](../api/intune_corpenrollment_depenrollmentprofile_list.md)|[depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) collection|List properties and relationships of the [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) objects.|
@@ -13,7 +15,7 @@ Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentp
 |[Delete depEnrollmentProfile](../api/intune_corpenrollment_depenrollmentprofile_delete.md)|None|Deletes a [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md).|
 |[Update depEnrollmentProfile](../api/intune_corpenrollment_depenrollmentprofile_update.md)|[depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md)|Update the properties of a [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object.|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|The GUID for the object Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
@@ -43,9 +45,9 @@ Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentp
 |macOSFileVaultDisabled|Boolean|Indicates if Mac OS file vault is disabled|
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,27 +1,28 @@
-﻿# Create androidCompliancePolicy> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create androidCompliancePolicy
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) object.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementConfiguration.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/{id}
-POST /deviceCompliancePolicyAssignments/{id}/deviceCompliancePolicy/
-POST /deviceManagement/deviceCompliancePolicies/{id}/groupAssignments/{id}/deviceCompliancePolicy/
+POST /deviceManagement/deviceCompliancePolicies/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a androidCompliancePolicy object.
 The following table shows the properties that are required when you create a androidCompliancePolicy.
 
@@ -39,7 +40,6 @@ The following table shows the properties that are required when you create a and
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordExpirationDays|Int32|Number of days before the password expires.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
-|storageRequireRemovableStorageEncryption|Boolean|Indicates whether or not to require removable storage encryption.|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
@@ -53,16 +53,16 @@ The following table shows the properties that are required when you create a and
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{id}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/
 Content-type: application/json
-Content-length: 990
+Content-length: 933
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -71,12 +71,11 @@ Content-length: 990
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
-  "passwordMinimumLength": 21,
+  "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordExpirationDays": 22,
-  "passwordPreviousPasswordBlockCount": 34,
-  "storageRequireRemovableStorageEncryption": true,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordExpirationDays": 6,
+  "passwordPreviousPasswordBlockCount": 2,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "requireAppVerify": true,
@@ -90,12 +89,12 @@ Content-length: 990
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1098
+Content-Length: 1041
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -106,12 +105,11 @@ Content-Length: 1098
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
-  "passwordMinimumLength": 21,
+  "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
-  "passwordMinutesOfInactivityBeforeLock": 37,
-  "passwordExpirationDays": 22,
-  "passwordPreviousPasswordBlockCount": 34,
-  "storageRequireRemovableStorageEncryption": true,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordExpirationDays": 6,
+  "passwordPreviousPasswordBlockCount": 2,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "requireAppVerify": true,

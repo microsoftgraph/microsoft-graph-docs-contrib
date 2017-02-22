@@ -1,7 +1,9 @@
-﻿# importedDeviceIdentity resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# importedDeviceIdentity resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration.
-### Methods
+## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[List importedDeviceIdentities](../api/intune_corpenrollment_importeddeviceidentity_list.md)|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) collection|List properties and relationships of the [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) objects.|
@@ -11,7 +13,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 |[Update importedDeviceIdentity](../api/intune_corpenrollment_importeddeviceidentity_update.md)|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|Update the properties of a [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) object.|
 |[importDeviceIdentityList action](../api/intune_corpenrollment_importeddeviceidentity_importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) collection|Not yet documented|
 
-### Properties
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Id of the imported device identity|
@@ -24,9 +26,9 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 |enrollmentState|String|The state of the device in Intune Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |platform|String|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

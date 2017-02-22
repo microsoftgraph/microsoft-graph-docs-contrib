@@ -1,7 +1,9 @@
-﻿# defaultDeviceEnrollmentRestrictions resource type> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# defaultDeviceEnrollmentRestrictions resource type
 
-Enrollment restrictions applied with lowest priority to all users regardless of group membership.
-### Properties
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Device Enrollment Restrictions
+## Properties
 |Property|Type|Description|
 |---|---|---|
 |iosRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on iOS enrollment|
@@ -10,9 +12,9 @@ Enrollment restrictions applied with lowest priority to all users regardless of 
 |androidRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Windows Desktop enrollment|
 |macRestrictions|[deviceEnrollmentPlatformRestrictions](../resources/intune_onboarding_deviceenrollmentplatformrestrictions.md)|Restrictions on Mac enrollment|
 
-### Relationships
+## Relationships
 None
-### JSON Representation
+## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -50,3 +52,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+

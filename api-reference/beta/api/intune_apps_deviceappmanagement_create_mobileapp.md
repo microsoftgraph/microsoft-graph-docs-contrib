@@ -1,28 +1,28 @@
-﻿# Create mobileApp> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# Create mobileApp
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Create a new [mobileApp](../resources/intune_apps_mobileapp.md) by posting to the mobileApps collection.
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 *DeviceManagementApps.ReadWrite.All*
-### HTTP Request
+## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/{id}
-POST /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/app/
-POST /deviceAppManagement/mobileApps/{id}/deviceStatuses/{id}/app/
-POST /deviceAppManagement/mobileApps/{id}/groupAssignments/{id}/app/
+POST /deviceAppManagement/mobileApps/
 ```
 
-### Request headers
+## Request headers
 |Header|Value|
 |---|---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of a mobileApp object.
 The following table shows the properties that are required when you create a mobileApp.
 
@@ -46,16 +46,16 @@ The following table shows the properties that are required when you create a mob
 
 
 
-### Response
+## Response
 If successful, this method returns a `201 Created` response code and a [mobileApp](../resources/intune_apps_mobileapp.md) object in the response body.
 
-### Example
-##### Request
+## Example
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
 Content-type: application/json
-Content-length: 907
+Content-length: 902
 
 {
   "@odata.type": "#microsoft.graph.mobileApp",
@@ -77,22 +77,22 @@ Content-length: 907
   "uploadState": 11,
   "installSummary": {
     "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 20,
-    "failedDeviceCount": 17,
-    "notInstalledDeviceCount": 23,
-    "installedUserCount": 18,
+    "installedDeviceCount": 4,
+    "failedDeviceCount": 1,
+    "notInstalledDeviceCount": 7,
+    "installedUserCount": 2,
     "failedUserCount": 15,
-    "notInstalledUserCount": 21
+    "notInstalledUserCount": 5
   }
 }
 ```
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1015
+Content-Length: 1010
 
 {
   "@odata.type": "#microsoft.graph.mobileApp",
@@ -116,12 +116,12 @@ Content-Length: 1015
   "uploadState": 11,
   "installSummary": {
     "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 20,
-    "failedDeviceCount": 17,
-    "notInstalledDeviceCount": 23,
-    "installedUserCount": 18,
+    "installedDeviceCount": 4,
+    "failedDeviceCount": 1,
+    "notInstalledDeviceCount": 7,
+    "installedUserCount": 2,
     "failedUserCount": 15,
-    "notInstalledUserCount": 21
+    "notInstalledUserCount": 5
   }
 }
 ```
