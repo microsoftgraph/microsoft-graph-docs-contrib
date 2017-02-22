@@ -3,7 +3,7 @@
 Retrieve a list of domain objects.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All*
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,7 +15,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | Bearer &lt;code&gt; Required|
 | Accept         | application/json; |
 
 ### Request body
@@ -55,7 +55,7 @@ Content-length: 245
       "isDefault": true,
       "isInitial": true,
       "isRoot": true,
-      "name": "contoso.onmicrosoft.com",
+      "name": "contoso.com",
       "supportedServices": [
         "Email",
         "OfficeCommunicationsOnline"

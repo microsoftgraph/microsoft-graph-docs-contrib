@@ -5,17 +5,20 @@ Update the properties of domain object.
 > **Important:** Only verified domains can be updated.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
+The following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /domains/<id>
+PATCH /domains/{id}
+
+> For {id}, specify the domain with its fully qualified domain name.
+
 ```
 ### Request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | Bearer &lt;code&gt; Required|
 | Content-Type  | application/json |
 
 ### Request body

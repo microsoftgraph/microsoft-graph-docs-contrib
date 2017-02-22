@@ -1,21 +1,27 @@
 # domain: verify
 
-Validates the ownership of the domain. 
+Validates the ownership of the domain.
 
 > **Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All*
+
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
 ### HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /domains/<id>/verify
-
+POST /domains/{id}/verify
 ```
+
+> For {id}, specify the domain with its fully qualified domain name.
+
 ### Request headers
+
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | Bearer &lt;code&gt; Required|
 | Content-Type  | application/json |
 
 ### Request body

@@ -5,24 +5,26 @@ Deletes a domain using an asynchronous operation. A URL link to check the status
 The following actions are performed as part of this operation: 
 * Rename UPN, EmailAddress, and ProxyAddress of users that have references to the deleted domain.
 * Rename EmailAddress of groups that have references to the deleted domain. 
-* Rename AppIndentifierUrls of applications that have references to the deleted domain. 
+* Rename indentifierUris of applications that have references to the deleted domain. 
 * If the number of objects to be renamed is greater than 100, an error is returned. 
 * If one of the applications to be renamed is a multi-tenant app, an error is returned.
 
 > If a [DELETE request is performed on the domain resource](domain_delete.md), an HTTP Response code of 400 is returned with a link suggesting the forceDelete API. 
 
 ### Prerequisites
-The following **scopes** are required to execute this API: **Directory.ReadWrite.All**
+The following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /domains/<id>/forceDelete
-
+POST /domains/{id}/forceDelete
 ```
+
+> For {id}, specify the domain with its fully qualified domain name.
+
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | Bearer &lt;code&gt; Required|
 | Content-Type  | application/json |
 
 ### Request body
@@ -30,7 +32,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| Option to disable renamed user accounts. </br>*True* (default): User accounts renamed as part of this operation are disabled. </br>*False*: User accounts renamed as part of this operation are not disabled. |
+|disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user will not be allowed to sign in. </br>*True* (default): User accounts renamed as part of this operation are disabled. </br>*False*: User accounts renamed as part of this operation are not disabled. |
 
 ### Response
 If successful, this method returns `200, OK` response code. 

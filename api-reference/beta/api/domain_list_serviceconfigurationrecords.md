@@ -1,9 +1,11 @@
 # List serviceConfigurationRecords
 
-Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain. The returned records need to be added to the zone file of the domain.
+Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.
+
+> Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All*
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,7 +17,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | Bearer &lt;code&gt; Required|
 | Content-Type  | application/json |
 
 ### Request body

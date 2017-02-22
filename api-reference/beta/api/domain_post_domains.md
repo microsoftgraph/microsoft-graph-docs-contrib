@@ -1,37 +1,38 @@
 # Create domain
 
-Adds a domain to the tenant.  
+Adds a domain to the tenant.
+
+**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain_list_verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
+The following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
-
 ```
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | Bearer &lt;code&gt; Required|
 | Content-Type  | application/json |
 
 ### Request body
 In the request body, supply a JSON representation of [domain](../resources/domain.md) object.
 
-> The request body contains the name property for the new domain. Name is the only property that can be specified and it is required. The name property value is the fully qualified domain name to create.
+> The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.
 
 ### Response
 If successful, this method returns `201, Created` response code and [domain](../resources/domain.md) object in the response body.
 
-> **Important:** If the domain being created is a sub-domain of an existing verified domain in the tenant, it will be created as a verified domain (isVerified property is true); otherwise, it will be created as an unverified domain (isVerified property is false).
-
 ### Example
 ##### Request
 
+In the request body, supply a JSON representation of [domain](../resources/domain.md) object.
+
 <!-- {
   "blockType": "request",
-  "name": "create_domain_from_domains"
+  "id": "create_domain_from_domains"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/domains
@@ -39,10 +40,10 @@ Content-type: application/json
 Content-length: 192
 
 {
-  "name": "contoso.com"
+  "id": "contoso.com"
 }
 ```
-In the request body, supply a JSON representation of [domain](../resources/domain.md) object.
+
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -58,6 +59,7 @@ Content-length: 192
 {
   "authenticationType": "authenticationType-value",
   "availabilityStatus": "availabilityStatus-value",
+  "id": "contoso.com",
   "isAdminManaged": true,
   "isDefault": true,
   "isInitial": true,

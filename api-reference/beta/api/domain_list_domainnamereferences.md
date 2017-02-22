@@ -2,11 +2,15 @@
 
 Retrieve a list of directoryobject objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/<id>/domainNameReferences
+GET /domains/{id}/domainNameReferences
+
+> For {id}, specify the domain with its fully qualified domain name.
+
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -14,8 +18,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Authorization  | Bearer &lt;code&gt; Required |
 
 ### Request body
 Do not supply a request body for this method.
@@ -29,7 +32,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/<id>/domainNameReferences
+GET https://graph.microsoft.com/beta/domains/{id}/domainNameReferences
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
