@@ -8,6 +8,9 @@ Represents an Azure Active Directory tenant. Only the read and update operations
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization_get.md) | [organization](organization.md) |Read properties and relationships of organization object.|
 |[Update](../api/organization_update.md) | [organization](organization.md)  |Update organization object. (Only the **marketingNotificationMails** and **technicalNotificationMails** properties can be updated.) |
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.  Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name. Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
 
 ## Properties
 | Property	   | Type	|Description|

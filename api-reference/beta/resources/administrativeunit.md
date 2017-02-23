@@ -24,6 +24,9 @@ This topic provides descriptions of the declared properties and navigation prope
 |[List scoped-role administrators](../api/administrativeunit_list_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the list of scoped-role adminstrators.|
 |[Get a scoped-role administrator](../api/administrativeunit_get_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a specific scoped-role administrator.|
 |[Remove a scoped-role administrator](../api/administrativeunit_delete_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a scoped-role administrator.|
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.  Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name. Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
 
 ## Properties
 | Property	   | Type	|Description|

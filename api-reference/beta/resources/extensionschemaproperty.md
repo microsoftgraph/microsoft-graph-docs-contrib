@@ -1,13 +1,24 @@
 # ExtensionSchemaProperty resource type
 
-
+User the extensionSchemaProperty resource to define a property's name and its type, as part of a schema extension definition.
 
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|String||
-|type|String||
+|name|String| Name of the strongly typed property defined as part of a schema extension.|
+|type|String| Type of the property that is defined as part of a schema extension.  Allowed values are *Binary, Boolean, DateTime, Integer* or *String*.  See the table below for more details.|
+
+#### Supported property data types 
+The following data types are supported when defining a property in a schema extension:
+
+| Property Type | Remarks |
+|-------------|------------|
+| Binary | 256 bytes maximum. |
+| Boolean | Not supported for messages, events and posts. |
+| DateTime | Must be specified in ISO 8601 format. Will be stored in UTC. |
+| Integer | 32-bit value. Not supported for messages, events and posts. |
+| String | 256 characters maximum. |
 
 ### JSON representation
 
@@ -23,8 +34,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "name": "String",
-  "type": "String"
+  "name": "StockKeepingUnits",
+  "type": "Integer"
 }
 
 ```
