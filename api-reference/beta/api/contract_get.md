@@ -3,7 +3,7 @@
 Retrieve the properties and relationships of [contract](../resources/contract.md) object.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** are required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All*, or *Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

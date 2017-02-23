@@ -16,7 +16,7 @@ Represents an existing partnership that the partner tenant has with a customer t
 |customerId|Guid|The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the customer tenant's organization resource. |
 |defaultDomainName|String|A copy of the customer tenant's default domain name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's default domain name changes.|
 |displayName|String|A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.|
-|id|String| The unique identifier for the partnership. Read-only.|
+|id|String| The unique identifier for the partnership. Key, read-only |
 
 ### Relationships
 None
