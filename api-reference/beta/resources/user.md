@@ -46,6 +46,13 @@ by providing a [delta](../api/user_delta.md) function.
 |[invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md)| None |Invalidates all of the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This will force the user to sign in to those applications again.| 
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 |[delta](../api/user_delta.md)|user collection| Get incremental changes for users. |
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.  Examples are provided for *messages, events, contacts* and *posts*, but the same methods are also supported for *user*, *group* and *device* resource types.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name. Examples are provided for *messages, events, contacts* and *posts*, but the same methods are also supported for *user*, *group* and *device* resource types.|
+|**Schema extensions**| | |
+|[Create schema extension](../api/schemaextension_post_schemaextension.md) |[schemaExtension](schemaextension.md)| Create a schema extension definition so that you can use it to add typed custom data to a resource.|
+|[List schema extensions](../api/schemaextension_list.md) |[schemaExtension](schemaextension.md) collection| List schema extension definitions that you can use to add typed custom data to a resource.|
+|[Add schema extension values]((../../../concepts/extensibility_schema_groups.md)) || This topic shows you how to create and read schema extension values on a *group* resource.  These methods are also supported for the *device, event, message, post* and *user* resource types.  So you can update the example requests in the topic using any of those resources.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -107,6 +114,7 @@ by providing a [delta](../api/user_delta.md) function.
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
+|extensions|[Extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
 |joinedGroups|[Group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
