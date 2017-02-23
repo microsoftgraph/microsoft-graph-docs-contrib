@@ -10,7 +10,7 @@ Microsoft Graph offers 2 types of extensions. Choose the extension type that bes
 > NOTE: You should not use this feature to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 
 ## Open extensions
-Open extensions gives you an easy way to directly add untyped properties to a resource in the Microsoft Graph. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](extension.md) abstract type.  Each extension has an additional **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom date. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) method that is dependent on _your own domain_, for example, `Com.Contoso.Contact`. Do not use the Microsoft domain in an extension name.
+Open extensions gives you an easy way to directly add untyped properties to a resource in the Microsoft Graph. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](../api-reference/beta/resources/extension.md) abstract type.  Each extension has an additional **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom date. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) method that is dependent on _your own domain_, for example, `Com.Contoso.Contact`. Do not use the Microsoft domain in an extension name.
 
 Open extension example: [Add custom data to Users using Open Extensions (preview)](extensibility_open_users.md)
 
@@ -51,7 +51,7 @@ Additionally, to create and manage schema extension definitions, an application 
 
 Both forms of extensibility are currently supported in preview on the Microsoft Graph /beta endpoint for the following resources only:
 
- - [administrative unit](../api-reference/beta/resources/admistrativeunit.md) (coming soon  for schema extensions)
+ - [administrative unit](../api-reference/beta/resources/administrativeunit.md) (coming soon  for schema extensions)
  - [calendar event](../api-reference/beta/resources/event.md)
  - An Office 365 group [calendar event](../api-reference/beta/resources/event.md) or conversation thread [post](../api-reference/beta/resources/post.md)
  - [device](../api-reference/beta/resources/device.md)
