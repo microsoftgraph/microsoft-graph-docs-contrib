@@ -19,8 +19,8 @@ To associate a domain with a tenant:
 |[List domainNameReference](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
 |[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
 |[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
-|[Update domain](../api/domain_update.md) | [domain](domain.md)	|Update domain object. |
-|[Delete domain](../api/domain_delete.md) | None |Delete domain object. |
+|[Update domain](../api/domain_update.md) | [domain](domain.md)	|Updates a domain|
+|[Delete domain](../api/domain_delete.md) | None |Deletes a domain|
 |[ForceDelete domain](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain_verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
 
