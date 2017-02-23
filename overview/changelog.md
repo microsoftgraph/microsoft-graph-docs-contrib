@@ -9,7 +9,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|Beta|New entity:</br>[Endpoint](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
-|Change  |Beta|New [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) navigation property on [groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group). |
+|Change  |Beta|New [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) navigation property on [groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) |
 
 ### Intune APIs
 
