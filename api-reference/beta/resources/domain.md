@@ -2,10 +2,10 @@
 
 Represents a domain associated with the tenant.
 
-Use domain operations to associate domains to a tenant and get records to verify domain ownership.  Domain operations enable registrars to automate domain association for services such as Office 365. For example, as part of domain sign up, a registrar can enable a vanity domain for email, websites, authentication, etc.   
+Use domain operations to associate domains to a tenant, verify domain ownership, and configure supported services.  Domain operations enable registrars to automate domain association for services such as Office 365. For example, as part of domain sign up, a registrar can enable a vanity domain for email, websites, authentication, etc.
 
 To associate a domain with a tenant:
-1. [Associate](../api/domain_post_domains.md) a domain with a tenant. 
+1. [Associate](../api/domain_post_domains.md) a domain with a tenant.
 2. [Verify](../api/domain_list_verificationdnsrecords.md) ownership of the domain. Verification records can be added to the domain through the domain registrar or DNS server configuration.
 3. [Indicate](../api/domain_update.md) the supported services you plan to use with the domain.
 4. [Configure](../api/domain_list_serviceconfigurationrecords.md) the domain for supported services. Configuration records can be added to the domain through the domain registrar or DNS server configuration.
@@ -16,9 +16,9 @@ To associate a domain with a tenant:
 |:---------------|:--------|:----------|
 |[Get domain](../api/domain_get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
 |[Create domain](../api/domain_post_domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
-|[Create domainNameReference](../api/domain_post_domainnamereferences.md) |[directoryObject](directoryobject.md)| Create a new domainNameReference by posting to the domainNameReferences collection.|
-|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection| Get a domainDnsRecord object collection.|
-|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection| Get a domainDnsRecord object collection.|
+|[List domainNameReference](../api/domain_post_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
+|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
+|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
 |[Update domain](../api/domain_update.md) | [domain](domain.md)	|Update domain object. |
 |[Delete domain](../api/domain_delete.md) | None |Delete domain object. |
 |[ForceDelete domain](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|

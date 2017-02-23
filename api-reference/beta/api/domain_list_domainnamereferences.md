@@ -1,6 +1,7 @@
 # List domainNameReferences
 
-Retrieve a list of directoryobject objects.
+Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain. The returned list will contain all directory objects that have a dependency on the domain.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 
@@ -32,7 +33,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/{id}/domainNameReferences
+GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -45,12 +46,19 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+        "odata.type": "Microsoft.DirectoryServices.User",
+        "objectType": "User",
+        "objectId": "567a0db6-289c-43f7-a650-2645c03cbbbb",
+        "accountEnabled": true,
+        "displayName": "TestUser1",
+        "facsimileTelephoneNumber": null,
+        "mailNickname": "testuser1",
+        "mobile": null,
+        "userPrincipalName": "testuser1@contoso.com"
     }
   ]
 }
