@@ -1,4 +1,4 @@
-# GET: SfbClientActivity
+# GET: SfbDeviceUsage
 
 Retrieve the reports of Sky for Business Client Activity.
 
@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/SfbClientActivity(view=view-value, period=period-value, date=date-value)
+GET /reports/SfbDeviceUsage(view=view-value, period=period-value, date=date-value)
 ```
 
 ## Request headers
@@ -66,11 +66,11 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_sfbclientactivity"
+  "name": "reportroot_sfbdeviceusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/SfbClientActivity(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/SfbDeviceUsage(view='Detail',period='D7',date=null)
 ```
 
 ### Response
@@ -91,20 +91,20 @@ Data as of,User principal name,Last activity date (UTC),Windows,Windows Phone,An
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_sfbclientactivity"
+  "name": "reportroot_sfbdeviceusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/SfbClientActivity(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/SfbClientActivity(view='Distribution',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/SfbClientActivity(view='Users',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/SfbDeviceUsage(view='Detail',period=null,date='2017-02-02')
+GET https://graph.microsoft.com/beta/reports/SfbDeviceUsage(view='Distribution',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/SfbDeviceUsage(view='Users',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: SfbClientActivity",
+  "description": "ReportRoot: SfbDeviceUsage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

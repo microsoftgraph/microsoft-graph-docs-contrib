@@ -1,6 +1,6 @@
-# GET: ExchangeUserActivity
+# GET: EmailActivity
 
-Retrieve the reports of Exchange User Activity.
+Retrieve the reports of Exchange Email Activity.
 
 > Note: You can go to [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44) to check the meaning of different views.
 
@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/ExchangeUserActivity(view=view-value, period=period-value, date=date-value)
+GET /reports/EmailActivity(view=view-value, period=period-value, date=date-value)
 ```
 
 ## Request headers
@@ -66,11 +66,11 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_exchangeuseractivity"
+  "name": "reportroot_emailactivity"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/ExchangeUserActivity(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Detail',period='D7',date=null)
 ```
 
 ### Response
@@ -91,20 +91,20 @@ Data as of,User principal name,User display name,Deleted,Deleted date,Last activ
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_exchangeuseractivity"
+  "name": "reportroot_emailactivity"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/ExchangeUserActivity(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/ExchangeUserActivity(view='Activity',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/ExchangeUserActivity(view='Users',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Detail',period=null,date='2017-02-02')
+GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Activity',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Users',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: ExchangeUserActivity",
+  "description": "ReportRoot: EmailActivity",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

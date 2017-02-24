@@ -1,8 +1,8 @@
-# GET: SharePointUserActivity
+# GET: OneDriveUsage
 
-Retrieve the reports of SharePoint User Activity.
+Retrieve the reports of OneDrive Storage.
 
-> Note: You can go to [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f) to check the meaning of different views.
+> Note: You can go to [Office 365 Reports - OneDrive for Business usage](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680) to check the meaning of different views.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/SharePointUserActivity(view=view-value, period=period-value, date=date-value)
+GET /reports/OneDriveUsage(view=view-value, period=period-value, date=date-value)
 ```
 
 ## Request headers
@@ -41,8 +41,9 @@ In the request URL, provide following query parameters with values.
 The following **ViewType** are available in this report:
 
 - Detail
+- Account
 - Files
-- Users
+- Storage
 
 The following **PeriodType** are available in this report:
 
@@ -66,11 +67,11 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_sharepointuseractivity"
+  "name": "reportroot_onedriveusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/SharePointUserActivity(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/OneDriveUsage(view='Detail',period='D7',date=null)
 ```
 
 ### Response
@@ -84,27 +85,28 @@ Here is an example of the response. Note: The response object shown here may be 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Files viewed or edited,Files synced,Files shared internally,Files shared externally,Products assigned,Reporting period in days
+Data as of,Site URL,Site owner,Deleted,Last activity date (UTC),Files,Files viewed or edited,Storage used (B),Storage allocated (B),Reporting period in days
 ```
 
 ### Other valid requests
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_sharepointuseractivity"
+  "name": "reportroot_onedriveusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/SharePointUserActivity(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/SharePointUserActivity(view='Files',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/SharePointUserActivity(view='Users',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/OneDriveUsage(view='Detail',period=null,date='2017-02-02')
+GET https://graph.microsoft.com/beta/reports/OneDriveUsage(view='Account',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/OneDriveUsage(view='Files',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/OneDriveUsage(view='Storage',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: SharePointUserActivity",
+  "description": "ReportRoot: OneDriveUsage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

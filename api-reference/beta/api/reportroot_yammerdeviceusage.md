@@ -1,8 +1,8 @@
-# Get: ExchangeClientActivity
+# GET: YammerDeviceUsage
 
-Retrieve the reports of Exchange Client Activity.
+Retrieve the reports of Yammer Client Activity.
 
-> Note: You can go to [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d) to check the meaning of different views.
+> Note: You can go to [Office 365 Reports - Yammer device usage](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38) to check the meaning of different views.
 
 ## Prerequisites
 
@@ -17,14 +17,14 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/ExchangeClientActivity(view=view-value, period=period-value, date=date-value)
+GET /reports/YammerDeviceUsage(view=view-value, period=period-value, date=date-value)
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Required|
+| Authorization  | Bearer. required|
 
 ## Request body
 
@@ -41,9 +41,8 @@ In the request URL, provide following query parameters with values.
 The following **ViewType** are available in this report:
 
 - Detail
-- Apps
+- Distribution
 - Users
-- Versions
 
 The following **PeriodType** are available in this report:
 
@@ -64,14 +63,14 @@ Here is an example of how to call this API.
 
 ### Request
 
-Here is an example of the request to get **detail** view with period of 7 days.
+Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_exchangeclientactivity"
+  "name": "reportroot_yammerdeviceusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/ExchangeClientActivity(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Detail',period='D7',date=null)
 ```
 
 ### Response
@@ -85,28 +84,27 @@ Here is an example of the response. Note: The response object shown here may be 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,User principal name,User display name,Deleted,Deleted date,Last activity date (UTC),Mail (iOS/Mac),Outlook (Mac),Outlook (Windows),Outlook (mobile),Other (mobile),Outlook on the web,POP3,IMAP4,SMTP,Reporting period in days
+Data as of,User name,Display name,User state,State change date (UTC),Last activity date (UTC),Web,Windows Phone,Android Phone,iPhone,iPad,Other,Reporting period in days
 ```
 
 ### Other valid requests
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_exchangeclientactivity"
+  "name": "reportroot_yammerdeviceusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/ExchangeClientActivity(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/ExchangeClientActivity(view='Apps',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/ExchangeClientActivity(view='Users',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/ExchangeClientActivity(view='Versions',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Detail',period=null,date='2017-02-02')
+GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Distribution',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Users',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: ExchangeClientActivity",
+  "description": "ReportRoot: YammerDeviceUsage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -6,23 +6,23 @@ Represent an Office 365 usage report object. It is a stream, which will return a
 
 |Method|Return Type|Description|
 |:---------------|:--------|:----------|
-|Get [ExchangeClientActivity](../api/reportroot_exchangeclientactivity.md)|[Report](report.md)|Get all the reports of ExchangeClientActivity|
-|Get [ExchangeUserActivity](../api/reportroot_exchangeuseractivity.md)|[Report](report.md)|Get all the reports of ExchangeUserActivity|
-|Get [MailboxStorage](../api/reportroot_mailboxstorage.md)|[Report](report.md)|Get all the reports of MailboxStorage|
+|Get [EmailAppUsage](../api/reportroot_emailappusage.md)|[Report](report.md)|Get all the reports of EmailAppUsage|
+|Get [EmailActivity](../api/reportroot_emailactivity.md)|[Report](report.md)|Get all the reports of EmailActivity|
+|Get [MailboxUsage](../api/reportroot_mailboxusage.md)|[Report](report.md)|Get all the reports of MailboxUsage|
 |Get [Office365ActiveUsers](../api/reportroot_office365activeusers.md)|[Report](report.md)|Get all the reports of Office365ActiveUsers|
 |Get [Office365GroupsActivity](../api/reportroot_office365groupsactivity.md)|[Report](report.md)|Get all the reports of Office365GroupsActivity|
-|Get [OfficeActivations](../api/reportroot_officeactivations.md)|[Report](report.md)|Get all the reports of OfficeActivations|
-|Get [OneDriveStorage](../api/reportroot_onedrivestorage.md)|[Report](report.md)|Get all the reports of OneDriveStorage|
-|Get [OneDriveUserActivity](../api/reportroot_onedriveuseractivity.md)|[Report](report.md)|Get all the reports of OneDriveUserActivity|
-|Get [SfbClientActivity](../api/reportroot_sfbclientactivity.md)|[Report](report.md)|Get all the reports of SfbClientActivity|
+|Get [Office365Activations](../api/reportroot_office365activations.md)|[Report](report.md)|Get all the reports of Office365Activations|
+|Get [OneDriveUsage](../api/reportroot_onedriveusage.md)|[Report](report.md)|Get all the reports of OneDriveUsage|
+|Get [OneDriveActivity](../api/reportroot_onedriveactivity.md)|[Report](report.md)|Get all the reports of OneDriveActivity|
+|Get [SfbDeviceUsage](../api/reportroot_sfbdeviceusage.md)|[Report](report.md)|Get all the reports of SfbDeviceUsage|
 |Get [SfbOrganizerActivity](../api/reportroot_sfborganizeractivity.md)|[Report](report.md)|Get all the reports of SfbOrganizerActivity|
 |Get [SfbP2PActivity](../api/reportroot_sfbp2pactivity.md)|[Report](report.md)|Get all the reports of SfbP2PActivity|
 |Get [SfbParticipantActivity](../api/reportroot_sfbparticipantactivity.md)|[Report](report.md)|Get all the reports of SfbParticipantActivity|
-|Get [SfbUserActivity](../api/reportroot_sfbuseractivity.md)|[Report](report.md)|Get all the reports of SfbUserActivity|
-|Get [SharePointSiteStorage](../api/reportroot_sharepointsitestorage.md)|[Report](report.md)|Get all the reports of SharePointSiteStorage|
-|Get [SharePointUserActivity](../api/reportroot_sharepointuseractivity.md)|[Report](report.md)|Get all the reports of SharePointUserActivity|
-|Get [YammerClientActivity](../api/reportroot_yammerclientactivity.md)|[Report](report.md)|Get all the reports of YammerClientActivity|
-|Get [YammerUserActivity](../api/reportroot_yammeruseractivity.md)|[Report](report.md)|Get all the reports of YammerUserActivity|
+|Get [SfbActivity](../api/reportroot_sfbactivity.md)|[Report](report.md)|Get all the reports of SfbActivity|
+|Get [SharePointSiteUsage](../api/reportroot_sharepointsiteusage.md)|[Report](report.md)|Get all the reports of SharePointSiteUsage|
+|Get [SharePointActivity](../api/reportroot_sharepointactivity.md)|[Report](report.md)|Get all the reports of SharePointActivity|
+|Get [YammerDeviceUsage](../api/reportroot_yammerdeviceusage.md)|[Report](report.md)|Get all the reports of YammerDeviceUsage|
+|Get [YammerActivity](../api/reportroot_yammeractivity.md)|[Report](report.md)|Get all the reports of YammerActivity|
 
 ## Properties
 

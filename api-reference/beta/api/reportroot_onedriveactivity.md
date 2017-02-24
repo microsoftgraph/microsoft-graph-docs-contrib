@@ -1,4 +1,4 @@
-# GET: OneDriveUserActivity
+# GET: OneDriveActivity
 
 Retrieve the reports of OneDrive User Activity.
 
@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/OneDriveUserActivity(view=view-value, period=period-value, date=date-value)
+GET /reports/OneDriveActivity(view=view-value, period=period-value, date=date-value)
 ```
 
 ## Request headers
@@ -66,11 +66,11 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_onedriveuseractivity"
+  "name": "reportroot_onedriveactivity"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/OneDriveUserActivity(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/OneDriveActivity(view='Detail',period='D7',date=null)
 ```
 
 ### Response
@@ -91,20 +91,20 @@ Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Fil
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_onedriveuseractivity"
+  "name": "reportroot_onedriveactivity"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/OneDriveUserActivity(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/OneDriveUserActivity(view='Files',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/OneDriveUserActivity(view='Users',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/OneDriveActivity(view='Detail',period=null,date='2017-02-02')
+GET https://graph.microsoft.com/beta/reports/OneDriveActivity(view='Files',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/OneDriveActivity(view='Users',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: OneDriveUserActivity",
+  "description": "ReportRoot: OneDriveActivity",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

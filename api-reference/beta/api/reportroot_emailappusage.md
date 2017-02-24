@@ -1,8 +1,8 @@
-# GET: YammerUserActivity
+# Get: EmailAppUsage
 
-Retrieve the reports of Yammer User Activity.
+Retrieve the reports of Exchange Email App Usage.
 
-> Note: You can go to [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a) to check the meaning of different views.
+> Note: You can go to [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d) to check the meaning of different views.
 
 ## Prerequisites
 
@@ -17,20 +17,20 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/YammerUserActivity(view=view-value, period=period-value, date=date-value)
+GET /reports/EmailAppUsage(view=view-value, period=period-value, date=date-value)
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. required|
+| Authorization  | Bearer. Required|
 
 ## Request body
 
 In the request URL, provide following query parameters with values.
 
-| Parameter  |Type|Description|
+| Parameter   | Type|Description|
 |:---------------|:--------|:----------|
 |view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
@@ -41,8 +41,9 @@ In the request URL, provide following query parameters with values.
 The following **ViewType** are available in this report:
 
 - Detail
-- Activity
+- Apps
 - Users
+- Versions
 
 The following **PeriodType** are available in this report:
 
@@ -63,14 +64,14 @@ Here is an example of how to call this API.
 
 ### Request
 
-Here is an example of the request.
+Here is an example of the request to get **detail** view with period of 7 days.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_yammeruseractivity"
+  "name": "reportroot_emailappusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/YammerUserActivity(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/EmailAppUsage(view='Detail',period='D7',date=null)
 ```
 
 ### Response
@@ -84,27 +85,28 @@ Here is an example of the response. Note: The response object shown here may be 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,User name,Display name,User state,State change date (UTC),Last activity date (UTC),Posted,Read,Liked,Products assigned,Reporting period in days
+Data as of,User principal name,User display name,Deleted,Deleted date,Last activity date (UTC),Mail (iOS/Mac),Outlook (Mac),Outlook (Windows),Outlook (mobile),Other (mobile),Outlook on the web,POP3,IMAP4,SMTP,Reporting period in days
 ```
 
 ### Other valid requests
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_yammeruseractivity"
+  "name": "reportroot_emailappusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/ExchangeUserActivity(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/YammerUserActivity(view='Activity',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/YammerUserActivity(view='Users',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/EmailAppUsage(view='Detail',period=null,date='2017-02-02')
+GET https://graph.microsoft.com/beta/reports/EmailAppUsage(view='Apps',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/EmailAppUsage(view='Users',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/EmailAppUsage(view='Versions',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: YammerUserActivity",
+  "description": "ReportRoot: EmailAppUsage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

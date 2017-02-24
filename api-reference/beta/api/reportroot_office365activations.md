@@ -1,6 +1,6 @@
-# ReportRoot: OfficeActivations
+# ReportRoot: Office365Activations
 
-Retrieve the reports of Office Activations.
+Retrieve the reports of Office 365 Activations.
 
 > Note: You can go to [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60) to check the meaning of different views.
 
@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/OfficeActivations(view=view-value)
+GET /reports/Office365Activations(view=view-value)
 ```
 
 ## Request headers
@@ -53,11 +53,11 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_officeactivations"
+  "name": "reportroot_office365activations"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/OfficeActivations(view='Detail')
+GET https://graph.microsoft.com/beta/reports/Office365Activations(view='Detail')
 ```
 
 ### Response
@@ -78,19 +78,19 @@ Data as of,User principal name,User display name,Product license,Last activity d
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_officeactivations"
+  "name": "reportroot_office365activations"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/OfficeActivations(view='Activations',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/OfficeActivations(view='Users',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/Office365Activations(view='Activations',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/Office365Activations(view='Users',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: OfficeActivations",
+  "description": "ReportRoot: Office365Activations",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

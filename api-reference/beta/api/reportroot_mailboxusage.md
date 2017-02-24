@@ -1,8 +1,8 @@
-# GET: SharePointSiteStorage
+# GET: MailboxUsage
 
-Retrieve the reports of SharePoint Site Storage.
+Retrieve the reports of Exchange Mailbox Usage.
 
-> Note: You can go to [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213) to check the meaning of different views.
+> Note: You can go to [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729) to check the meaning of different views.
 
 ## Prerequisites
 
@@ -17,14 +17,14 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/SharePointSiteStorage(view=view-value, period=period-value, date=date-value)
+GET /reports/MailboxStorage(view=view-value, period=period-value, date=date-value)
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. required|
+| Authorization  | Bearer. Required|
 
 ## Request body
 
@@ -41,8 +41,8 @@ In the request URL, provide following query parameters with values.
 The following **ViewType** are available in this report:
 
 - Detail
-- Files
-- Sites
+- Mailbox
+- Quota
 - Storage
 
 The following **PeriodType** are available in this report:
@@ -67,11 +67,11 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_sharepointsitestorage"
+  "name": "reportroot_mailboxusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/SharePointSiteStorage(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Detail',period='D7',date=null)
 ```
 
 ### Response
@@ -85,28 +85,28 @@ Here is an example of the response. Note: The response object shown here may be 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,Site URL,Site owner,Deleted,Last activity date (UTC),Files,Files viewed or edited,Storage used (B),Storage allocated (B),Reporting period in days
+Data as of,User principal name,DisplayName,Deleted,Deleted date,CreatedDate,Last activity date (UTC),Item count,Storage used (B),Issue warning quota (B),Prohibit send quota (B),Prohibit send/receive quota (B),Reporting period in days
 ```
 
 ### Other valid requests
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_sharepointsitestorage"
+  "name": "reportroot_mailboxusage"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/SharePointSiteStorage(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/SharePointSiteStorage(view='Files',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/SharePointSiteStorage(view='Sites',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/SharePointSiteStorage(view='Storage',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Detail',period=null,date='2017-02-02')
+GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Mailbox',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Quota',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Storage',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: SharePointSiteStorage",
+  "description": "ReportRoot: MailboxUsage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

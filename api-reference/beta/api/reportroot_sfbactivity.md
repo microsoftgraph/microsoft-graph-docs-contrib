@@ -1,8 +1,8 @@
-# GET: MailboxStorage
+# GET: SfbActivity
 
-Retrieve the reports of Exchange Mailbox Storage.
+Retrieve the reports of Sky for Business User Activity.
 
-> Note: You can go to [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729) to check the meaning of different views.
+> Note: You can go to [Office 365 Reports - Skype for Business activity](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424) to check the meaning of different views.
 
 ## Prerequisites
 
@@ -17,14 +17,14 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/MailboxStorage(view=view-value, period=period-value, date=date-value)
+GET /reports/SfbActivity(view=view-value, period=period-value, date=date-value)
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Required|
+| Authorization  | Bearer. required|
 
 ## Request body
 
@@ -41,9 +41,8 @@ In the request URL, provide following query parameters with values.
 The following **ViewType** are available in this report:
 
 - Detail
-- Mailbox
-- Quota
-- Storage
+- Activity
+- Users
 
 The following **PeriodType** are available in this report:
 
@@ -67,11 +66,11 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reportroot_mailboxstorage"
+  "name": "reportroot_sfbactivity"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/MailboxStorage(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/SfbActivity(view='Detail',period='D7',date=null)
 ```
 
 ### Response
@@ -85,28 +84,27 @@ Here is an example of the response. Note: The response object shown here may be 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,User principal name,DisplayName,Deleted,Deleted date,CreatedDate,Last activity date (UTC),Item count,Storage used (B),Issue warning quota (B),Prohibit send quota (B),Prohibit send/receive quota (B),Reporting period in days
+Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),P2P - total sessions,Conference organized - total sessions,Conference participated - total sessions,P2P - last activity date,Conference organized - last activity date,Conference participated - Last activity date,P2P - IM,P2P - audio,P2P - audio minutes,P2P - video,P2P - video minutes,P2P - app sharing,P2P - file transfers,Conference organized - IM,Conference organized - audio/video,Conference organized - audio/video minutes,Conference organized - app sharing,Conference organized - web,Conference organized dial-in/out 3rd party,Conference organized dial-in/out Microsoft,Conference organized dial-in Microsoft minutes,Conference organized dial-out Microsoft minutes,Conference participated - IM,Conference participated - audio/video,Conference participated - audio/video minutes,Conference participated - app sharing,Conference participated - web,Conference participated - dial-in,Products assigned,Reporting period in days
 ```
 
 ### Other valid requests
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_mailboxstorage"
+  "name": "reportroot_sfbactivity"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/MailboxStorage(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/MailboxStorage(view='Mailbox',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/MailboxStorage(view='Quota',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/MailboxStorage(view='Storage',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/SfbActivity(view='Detail',period=null,date='2017-02-02')
+GET https://graph.microsoft.com/beta/reports/SfbActivity(view='Activity',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/SfbActivity(view='Users',period='D7',date=null)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ReportRoot: MailboxStorage",
+  "description": "ReportRoot: SfbActivity",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
