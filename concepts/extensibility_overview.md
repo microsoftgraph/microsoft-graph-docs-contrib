@@ -64,6 +64,7 @@ Both forms of extensibility are currently supported in preview on the Microsoft 
 ## Known limitations for extensions
 -   Filtering on schema extension property values is not yet supported.
 -   Change tracking (Delta Query) is not supported for open or schema extension properties.
+-   Creating a resource and an open extension (using ```POST``) at the same time is not supported for administrative unit, device, group, organization or user.
 -   Deleting registered schema will remove access to data. This is a temporary limitation.
 -   Deleting registered schema is possible at all times, however in future deletion will only be possible for schemas in the *InDevelopment* state.
 -   To remove a schema extension Removing a property value (by setting to null) will remove the property from the extension complex type.

@@ -123,8 +123,8 @@ Here is a JSON representation of the resource
 |[Delete](../api/contact_delete.md) | None |Delete contact object. |
 |[delta](../api/contact_delta.md)|[contact](contact.md) collection| Get a set of contacts that have been added, deleted, or updated in a specified folder.|
 |**Open extensions**| | |
-|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.  Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
-|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name. Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Extended properties**| | |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contact](contact.md)  |Create one or more single-value extended properties in a new or existing contact.   |
 |[Get contact with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Get contacts that contain a single-value extended property by using `$expand` or `$filter`. |

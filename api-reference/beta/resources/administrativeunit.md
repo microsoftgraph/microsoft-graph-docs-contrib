@@ -25,8 +25,8 @@ This topic provides descriptions of the declared properties and navigation prope
 |[Get a scoped-role administrator](../api/administrativeunit_get_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a specific scoped-role administrator.|
 |[Remove a scoped-role administrator](../api/administrativeunit_delete_scopedadministrators.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a scoped-role administrator.|
 |**Open extensions**| | |
-|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.  Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
-|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name. Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -39,6 +39,7 @@ This topic provides descriptions of the declared properties and navigation prope
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for this Administrative Unit. Nullable.|
 |members|[directoryObject](directoryObject.md) collection|Users and groups that are members of this Adminsitrative Unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).|
 |scopedAdministrators|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped administrators of this Administrative Unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 

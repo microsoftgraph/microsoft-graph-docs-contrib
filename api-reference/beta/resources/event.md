@@ -132,12 +132,10 @@ Here is a JSON representation of the resource
 |[List attachments](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get all attachments on an event.|
 |[Add attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Add a new attachment to an event by posting to the attachments collection.|
 |**Open extensions**| | |
-|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.  Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
-|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name. Examples are provided for *messages, events, personal contacts* and *posts*, but the same methods are also supported for *user*, *group*, *administrativeUnit*, *organization* and *device* resource types.|
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
-|[Create schema extension](../api/schemaextension_post_schemaextensions.md) |[schemaExtension](schemaextension.md)| Create a schema extension definition so that you can use it to add typed custom data to a resource.|
-|[List schema extensions](../api/schemaextension_list.md) |[schemaExtension](schemaextension.md) collection| List schema extension definitions that you can use to add typed custom data to a resource.|
-|[Add schema extension values]((../../../concepts/extensibility_schema_groups.md) || This topic shows you how to create and read schema extension values on a *group* resource.  These methods are also supported for the *device, event, message, post* and *user* resource types.  So you can update the example requests in the topic using any of those resources.|
+|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
 |[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
