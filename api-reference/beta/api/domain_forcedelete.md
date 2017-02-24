@@ -9,8 +9,6 @@ The following actions are performed as part of this operation: 
 * If the number of objects to be renamed is greater than 100, an error is returned. 
 * If one of the applications to be renamed is a multi-tenant app, an error is returned.
 
-> If a [DELETE request is performed on the domain resource](domain_delete.md), an HTTP Response code of 400 is returned with a link suggesting to use the forceDelete API. 
-
 ### Prerequisites
 The following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 ### HTTP request
