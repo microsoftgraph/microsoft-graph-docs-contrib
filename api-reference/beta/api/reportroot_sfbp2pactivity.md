@@ -36,7 +36,7 @@ In the request URL, provide following query parameters with values.
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
 |date|String|Date parameter is not available here, should set to null.|
 
-> Note: All the **Detail** reports of Sky for Business have been merged into [SfbUserActivity](reportroot_sfbuseractivity.md).
+> Note: All the **Detail** reports of Sky for Business have been merged into [SfbActivity](reportroot_sfbactivity.md).
 
 The following **ViewType** are available in this report:
 
