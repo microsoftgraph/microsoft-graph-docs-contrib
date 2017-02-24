@@ -117,9 +117,18 @@ The following tables list the Microsoft Graph permission scopes and explains the
 
 |   **Scope**    |  **Permission**   |  **Description** |
 |:---------------|:------------------|:-----------------|
-| _IdentityRiskEvent.Read.All_ |   Read identity risk event information  (preview) | Allows the app to read identity risk event information for all users in your organization on behalf of the signed-in user.|
-
-
+| _IdentityRiskEvent.Read.All_ |   Read identity risk event information  (preview) | Allows the app to read identity risk event information for all users in your organization on behalf of the signed-in user. |
+| _DeviceManagementServiceConfiguration.Read.All_ | Read Microsoft Intune configuration (preview) | Allows the app to read Microsoft Intune service properties including device enrollment and third party service connection configuration. |
+| _DeviceManagementServiceConfiguration.ReadWrite.All_ | Read and write Microsoft Intune configuration (preview) | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration. |
+| _DeviceManagementConfiguration.Read.All_ | Read Microsoft Intune device configuration and policies (preview) | Allows the app to read properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. |
+| _DeviceManagementConfiguration.ReadWrite.All_ | Read and write Microsoft Intune device configuration and policies (preview) | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. |
+| _DeviceManagementApps.Read.All_ | Read Microsoft Intune apps (preview) | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. |
+| _DeviceManagementApps.ReadWrite.All_ | Read and write Microsoft Intune apps (preview) | Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. |
+| _DeviceManagementRBAC.Read.All_ | Read Microsoft Intune RBAC settings (preview) | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. |
+| _DeviceManagementRBAC.ReadWrite.All_ | Read and write Microsoft Intune RBAC settings (preview) | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. |
+| _DeviceManagementManagedDevices.Read.All_ | Read Microsoft Intune devices (preview) | Allows the app to read the properties of devices managed by Microsoft Intune. |
+| _DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices (preview) | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. |
+| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Perform user-impacting remote actions on Microsoft Intune devices (preview) | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune. |
 
 ###Permissions not requiring administrator's consent (preview)
 
