@@ -2,22 +2,22 @@
 
 Use this API to create a new schemaExtension.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /schemaExtensions
 ```
 
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <token>. Required. |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [schemaExtension](../resources/schemaextension.md) object.
 
 The following table shows the properties that are required when you create a schema extension.
@@ -29,10 +29,10 @@ The following table shows the properties that are required when you create a sch
 |properties|[ExtensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.|
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

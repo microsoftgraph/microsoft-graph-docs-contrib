@@ -1,12 +1,12 @@
 # Update schemaextension
 
 Update the properties of a [schemaExtension](../resources/schemaextension.md) resource.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /schemaExtensions/<id>
+PATCH /schemaExtensions/{id}
 ```
 ### Optional request headers
 | Name      |Description|
@@ -14,7 +14,7 @@ PATCH /schemaExtensions/<id>
 | Authorization  | Bearer <token>. Required. |
 | Content-Type   | application/json | 
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -25,9 +25,9 @@ In the request body, supply the values for relevant fields that should be update
 |status|String|The lifecycle state of the schema extension. Possible states transitions are from *InDevelopment* to *Available*, *Available* to *Deprecated* and *Deprecated* to *Available*.|
 |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.  Only additive changes are permitted.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and updated [schemaExtension](../resources/schemaextension.md) object in the response body.
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "update_schemaextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/schemaExtensions/<id>
+PATCH https://graph.microsoft.com/beta/schemaExtensions/{id}
 Content-type: application/json
 Content-length: 201
 

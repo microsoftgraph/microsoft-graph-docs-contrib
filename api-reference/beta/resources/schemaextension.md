@@ -4,7 +4,7 @@ With schema extensions define a schema that you can use to extend a resource typ
 
 The [schema extension example](../../../concepts/extensibility_schema_groups.md) shows how you can use schema extensions to add custom data to a group.
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -14,7 +14,7 @@ The [schema extension example](../../../concepts/extensibility_schema_groups.md)
 |[Update](../api/schemaextension_update.md) | [schemaExtension](schemaextension.md)	|Update a schemaExtension definition. |
 |[Delete](../api/schemaextension_delete.md) | None |Delete a schemaExtension definition. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
@@ -25,7 +25,7 @@ The [schema extension example](../../../concepts/extensibility_schema_groups.md)
 |status|String|The lifecycle state of the schema extension. Possible states are *InDevelopment*, *Available*, and *Deprecated*. Automatically set to *InDevelopment* on creation.|
 |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Currently this is *user, device, event, group, message, post*, with *administrativeUnit, organization* and *contact* coming soon. |
 
-#### Lifecycle details
+## Lifecycle details
 When you create a schema extension definition, the application used (for creation) is marked as the owner of the schema extension. Only this application can update and delete the schema extension definition. The schema extension may be updated with non-breaking changes. The schema extension can be in various different lifecycle states. You can change the lifecycle state through a PATCH operation.
 
 | State | Lifecycle state behavior |
@@ -35,7 +35,7 @@ When you create a schema extension definition, the application used (for creatio
 | Deprecated |  When the schema extension is *Deprecated*, apps can still read and update extension properties based on the schema extension. The schema extension is not available to be viewed and cannot be used to create new properties. The schema extension cannot be updated or deleted. You can move a schema extension from *Deprecated* back to the *Available* state. |
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

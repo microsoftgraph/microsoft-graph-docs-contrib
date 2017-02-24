@@ -39,7 +39,7 @@ The following data types are supported when defining a property in a schema exte
 | Integer | 32-bit value. Not supported for messages, events and posts. |
 | String | 256 characters maximum. |
 
-### Azure AD directory Schema extensions
+### Azure AD directory schema extensions
 Azure AD Graph API already supports schema extensions. Any data created through directory schema extensions will not be accessible through Microsoft Graph schema extensions. However, properties based on Azure AD directory schema extensions may still be created, read, updated and deleted through Microsoft Graph (using the syntax for Azure AD Graph directory schema extensions).  Registering directory schema extensions through Microsoft Graph is not possible currently.  We will be working to align these models, so that in the future you can access any existing directory schema extensions through Microsoft Graph schema extensions. 
 
 ## Permissions

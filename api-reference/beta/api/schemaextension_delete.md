@@ -2,29 +2,29 @@
 
 Delete a schemaExtension.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /schemaExtensions/<id>
+DELETE /schemaExtensions/{id}
 ```
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <token>. Required. |
 | Content-Type   | application/json | 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "delete_schemaextension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/schemaExtensions/<id>
+DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
