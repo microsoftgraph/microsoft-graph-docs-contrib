@@ -106,7 +106,7 @@ Content-length: 420
 ```
 
 ## 3. Create a new group with extended data 
-Next we'll create a brand new group that is extended with extra data based on the *graphlearn_courses* schema extension definition that we just registered.  This is a standard ```POST``` to the *group* resource, with the additional *graphlearn_courses* resource defined in the payload.  The response will not mirror back any data extensions.  For that we need to explicitly *$select* the extension by name.
+Create a brand new group that is extended with extra data using the *graphlearn_courses* schema extension definition that we just registered.  This is a standard ```POST``` to the *group* resource, with the additional *graphlearn_courses* resource defined in the payload.  The response will not mirror back any data extensions.  We need to explicitly ```$select``` the extension by name.
 
 ##### Request
 ```http
@@ -139,7 +139,7 @@ Content-length: 420
     "groupTypes": [
         "Unified"
     ],
-    "mail": "newMan201703@raphlearn.com",
+    "mail": "newMan201703@graphlearn.com",
     "mailEnabled": true,
     "mailNickname": "newMan201703",
     "securityEnabled": false,

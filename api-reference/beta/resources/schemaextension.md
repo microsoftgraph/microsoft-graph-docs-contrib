@@ -1,8 +1,8 @@
 # schemaExtension resource type
 
-With schema extensions define a schema that you can use to extend a resource type. Once created, the schema definition is available for use on the targeted resource type.  You can then use the schema extension definition to add strongly typed custom data to a resource (either as part of creation or update of the resource). The added custom data shows up as a complex type with the unique id of the schema definition it's created from.
+Schema extensions allow you to define a schema you can use to extend a resource type. Schema extension definitions let you add strongly-typed custom data to a resource. The custom data appears as a complex type on the extended resource.
 
-The [schema extension example](../../../concepts/extensibility_schema_groups.md) shows how you can use schema extensions to add custom data to a group.
+The [schema extension example](../../../concepts/extensibility_schema_groups.md) shows how you to use schema extensions to add custom data to a group.
 
 ## Methods
 

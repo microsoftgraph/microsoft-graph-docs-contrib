@@ -8,12 +8,12 @@ For this scenario we're going to show you how to:
 1. Add an open extension, representing some roaming profile information about the user.
 2. Query that user and this time also get back the roaming profile.
 3. Change the roaming profile information (the open extension value).
-3. Delete an open extension value.
+4. Delete an open extension value.
 
->NOTE: This topic shows you how to add, read, update and delete open extensions on a *user* resource.  These methods are also supported for the *device, event, group, message* and *post* resource types.  So you can update the example requests below using any of those resources. The responses shown in teh examples below may be truncated for brevity. 
+>NOTE: This topic shows you how to add, read, update and delete open extensions on a *user* resource.  These methods are also supported for the *device, event, group, message* and *post* resource types.  Simply update the example requests below using any of those resource types. The responses shown in the examples below may be truncated for brevity. 
 
 ## 1. Add roaming profile information
-Now imagine that the user has signs in to the app and configures the look and feel of the app.  These app settings should roam so that the user gets the same experience whatever device they sign into the app from.  Here we'll see how to add the roaming profile information to a user resource.
+Now imagine that the user signs in to the app and configures the look and feel of the app.  These app settings should roam so that the user gets the same experience whatever device they sign into the app from.  Here we'll see how to add the roaming profile information to a user resource.
 
 ##### Request
 ```http

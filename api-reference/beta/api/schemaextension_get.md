@@ -2,7 +2,7 @@
 Retrieve the properties of a specific schemaExtension resource.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -15,7 +15,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <token>. Required. |
+| Authorization  | Bearer &lt;token&gt;. Required. |
 | Content-Type   | application/json | 
 
 ## Request body

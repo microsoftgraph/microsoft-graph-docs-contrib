@@ -1,6 +1,6 @@
 # ExtensionSchemaProperty resource type
 
-User the extensionSchemaProperty resource to define a property's name and its type, as part of a schema extension definition.
+Use the extensionSchemaProperty resource to define a property's name and its type, as part of a schema extension definition.
 
 
 ### Properties
