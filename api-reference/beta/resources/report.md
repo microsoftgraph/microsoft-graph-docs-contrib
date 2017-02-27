@@ -1,6 +1,6 @@
 # report resource type
 
-Represent an Office 365 usage report object. It is a stream, which will return a csv file.
+Represents an Office 365 usage report object. It is a stream, which will return a CSV file.
 
 ## Methods
 
@@ -36,7 +36,7 @@ None
 
 ### CSV representation
 
-Here is a CSV representation of the resource.
+Here is a CSV representation of the "Users" view of report Office365 Active Users.
 
 <!-- {
   "blockType": "resource",
@@ -47,9 +47,14 @@ Here is a CSV representation of the resource.
 }-->
 
 ```csv
-Column1Name,Column2Name
-column1Row0Val,column2Row0Val
-column1Row1Val,column2Row1Val
+Data as of,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Yammer
+2017-02-15,2052,1928,767,1262,1505,195
+2017-02-16,2065,1934,738,1263,1499,189
+2017-02-17,2051,1925,727,1247,1451,247
+2017-02-18,2023,1893,653,1167,1429,197
+2017-02-19,1779,1635,275,636,573,112
+2017-02-20,1405,1257,152,409,124,68
+2017-02-21,1617,1478,656,1187,1370,109
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

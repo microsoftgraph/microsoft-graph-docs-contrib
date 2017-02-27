@@ -1,6 +1,6 @@
-# GET: Office365GroupsActivity
+# GET: Office365GroupsActivity report
 
-Retrieve the reports of Office 365 Groups Activity.
+Retrieve the reports of Office 365 Groups Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40) to check the meaning of different views.
 
@@ -17,8 +17,14 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/Office365GroupsActivity(view=view-value, period=period-value, date=date-value)
+GET /reports/Office365GroupsActivity(view=view-value, period=period-value, date=date-value)/content
 ```
+
+## Request headers
+
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer <token\>. Required.|
 
 ## Request body
 
@@ -28,9 +34,10 @@ In the request URL, provide following query parameters with values.
 |:---------------|:--------|:----------|
 |view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
-|date|String|A string represented date, format YYYY-MM-DD. Only available when view type is **Detail**. If you call in with date parameter, you will only get back the set of users that did an activity on that day in that product and this data is retained only for 30 days.|
+|date|String|Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days and is ignored unless view type is **Detail**|
 
 > Note: When view type is **Detail**, the period parameter will be ignored. For other view types, date parameter will be ignored.
+> If you call with **Detail** view along with **PeriodType**, the return data is a list of all users that are licensed for the product with their respective last activity date.
 
 The following **ViewType** are available in this report:
 
@@ -46,11 +53,14 @@ The following **PeriodType** are available in this report:
 - D90
 - D180
 
-> Note: If you call with **Detail** view along with **PeriodType**, the return data is a list of all users that are licensed for the product with their respective last activity date.
-
 ## Response
 
-If successful, this method returns `200, OK` response code and [Report](../resources/report.md) object in the response body.
+If successful, this method returns `302 Found` response redirecting to a pre-authenticated download URL for the report.
+
+To download the contents of the file your application will need to follow the `Location` header in the response.
+Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
+
+Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
 ## Example
 
@@ -65,16 +75,28 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detail',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detail',period='D7')/content
 ```
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "@odata.type": "stream"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Report"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -90,10 +112,10 @@ ContentDate,Group Name,Group Owner,Type,Last activity date (UTC),Deleted,Message
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detail',period=null,date='2017-02-02')
-GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Activity',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Groups',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Storage',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detail',date='2017-02-02')/content
+GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Activity',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Groups',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Storage',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

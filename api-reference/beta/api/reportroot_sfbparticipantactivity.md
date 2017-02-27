@@ -1,6 +1,6 @@
-# GET: SfbParticipantActivity
+# GET: SfbParticipantActivity report
 
-Retrieve the reports of Sky for Business Participant Activity.
+Retrieve the reports of Sky for Business Participant Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b) to check the meaning of different views.
 
@@ -17,14 +17,14 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/SfbOrganizerActivity(view=view-value, period=period-value, date=null)
+GET /reports/SfbOrganizerActivity(view=view-value, period=period-value)/content
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. required|
+| Authorization  | Bearer <token\>. Required.|
 
 ## Request body
 
@@ -53,7 +53,12 @@ The following **PeriodType** are available in this report:
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [Report](../resources/report.md) object in the response body.
+If successful, this method returns `302 Found` response redirecting to a pre-authenticated download URL for the report.
+
+To download the contents of the file your application will need to follow the `Location` header in the response.
+Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
+
+Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
 ## Example
 
@@ -68,16 +73,28 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/SfbParticipantActivity(view='Users',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/SfbParticipantActivity(view='Users',period='D7')/content
 ```
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "@odata.type": "stream"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/I0bJ_HpgnSeYRg4sXTiKqdfeXU0t__XDezYGO-NQw
+```
+
+Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Report"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -93,8 +110,8 @@ Data as of,IM,Audio/Video,Application sharing,Web,Dial-in/out-3rd party
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/SfbParticipantActivity(view='Activity',period='D7',date=null)
-GET https://graph.microsoft.com/beta/reports/SfbParticipantActivity(view='Minutes',period='D7',date=null)
+GET https://graph.microsoft.com/beta/reports/SfbParticipantActivity(view='Activity',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/SfbParticipantActivity(view='Minutes',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
