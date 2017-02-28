@@ -1,8 +1,16 @@
-# schemaExtension resource type
+# schemaExtension resource type (schema extensions)
 
 Schema extensions allow you to define a schema you can use to extend a resource type. Schema extension definitions let you add strongly-typed custom data to a resource. The custom data appears as a complex type on the extended resource.
 
 The [schema extension example](../../../concepts/extensibility_schema_groups.md) shows how you to use schema extensions to add custom data to a group.
+
+Schema extensions are supported for the following resource types:
+
+ - a [message](message.md) and [event](event.md) 
+ - an **event** or [post](post.md) for an Office 365 group
+ - a [device](device.md)
+ - a [group](group.md)
+ - a [user](user.md)
 
 ## Methods
 
@@ -19,7 +27,6 @@ The [schema extension example](../../../concepts/extensibility_schema_groups.md)
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
 |id|String|The unique identifier for the schema extension definition. The value must be a concatenation of one of your verified domains (e.g. contoso.com) and a name for the schema extension - e.g. *contoso_mySchema*. |
-|name|String|Friendly name for schema extension.|
 |owner|String|The appId of the application that created the schema extension. Read-only.|
 |properties|[ExtensionSchemaProperty](extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |status|String|The lifecycle state of the schema extension. Possible states are *InDevelopment*, *Available*, and *Deprecated*. Automatically set to *InDevelopment* on creation.|
@@ -51,7 +58,6 @@ Here is a JSON representation of the resource.
 {
   "description": "String",
   "id": "String (identifier)",
-  "name": "String",
   "owner": "String",
   "properties": [{"@odata.type": "microsoft.graph.ExtensionSchemaProperty"}],
   "status": "String",

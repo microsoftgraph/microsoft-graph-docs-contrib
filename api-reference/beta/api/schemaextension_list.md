@@ -49,7 +49,7 @@ Content-length: 274
 {
   "value": [
     {
-      "name": "name-value",
+      "id": "id-value",
       "description": "description-value",
       "targetTypes": [
         "targetTypes-value"

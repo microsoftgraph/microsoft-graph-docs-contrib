@@ -25,7 +25,7 @@ The following table shows the properties that are required when you create a sch
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
-|id|String|The unique identifier for the schema extension definition. The value must be a concatenation of one of your verified domains (e.g. contoso.com) and a name for the schema extension - e.g. *contoso_mySchema*. |
+|id|String|The unique identifier for the schema extension definition. The value must be a concatenation of one of your verified domains (e.g. contoso.com) and a name for the schema extension - e.g. *contoso_mySchema*. This property cannot be changed after creation. |
 |properties|[ExtensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.|
 
@@ -45,7 +45,7 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "name": "name-value",
+  "id": "id-value",
   "description": "description-value",
   "targetTypes": [
     "targetTypes-value"
@@ -72,7 +72,7 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "name": "name-value",
+  "id": "id-value",
   "description": "description-value",
   "targetTypes": [
     "targetTypes-value"

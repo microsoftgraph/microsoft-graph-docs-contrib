@@ -22,7 +22,6 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
-|name|String|Friendly name for schema extension.|
 |properties|[ExtensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition. Only additive changes are permitted. |
 |status|String|The lifecycle state of the schema extension. Possible states transitions are from *InDevelopment* to *Available*, *Available* to *Deprecated* and *Deprecated* to *Available*.|
 |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.  Only additive changes are permitted.|
@@ -44,8 +43,8 @@ Content-length: 201
 {
   "properties": [
     {
-      "name":"name-value",
-      "type":"type-value"
+      "name":"new-name-value",
+      "type":"new-type-value"
     },
     {
       "name":"additional-name-value",
@@ -67,7 +66,7 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "name": "name-value",
+  "id": "id-value",
   "description": "description-value",
   "targetTypes": [
     "targetTypes-value"
@@ -76,6 +75,10 @@ Content-length: 201
     {
       "name":"name-value",
       "type":"type-value"
+    },
+    {
+      "name":"new-name-value",
+      "type":"new-type-value"
     },
     {
       "name":"additional-name-value",

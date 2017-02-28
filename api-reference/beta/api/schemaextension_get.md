@@ -46,7 +46,7 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "name": "name-value",
+  "id": "id-value",
   "description": "description-value",
   "targetTypes": [
     "targetTypes-value"
