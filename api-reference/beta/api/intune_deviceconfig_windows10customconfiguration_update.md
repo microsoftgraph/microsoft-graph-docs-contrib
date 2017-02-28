@@ -49,7 +49,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 375
+Content-length: 401
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -58,10 +58,11 @@ Content-length: 375
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSetting",
+      "@odata.type": "microsoft.graph.omaSettingInteger",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "value": 5
     }
   ]
 }
@@ -72,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 550
+Content-Length: 576
 
 {
   "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
@@ -84,10 +85,11 @@ Content-Length: 550
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSetting",
+      "@odata.type": "microsoft.graph.omaSettingInteger",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "value": 5
     }
   ]
 }

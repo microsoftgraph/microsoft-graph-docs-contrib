@@ -33,10 +33,11 @@ The following table shows the properties that are required when you create a mob
 |deviceName|String|Device name|
 |deviceId|String|Device ID|
 |lastSyncDateTime|DateTimeOffset|Last sync date time|
-|mobileAppInstallStatusValue|Int32|The install state of the app.|
+|mobileAppInstallStatusValue|String|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`, `notApplicable`.|
 |errorCode|Int32|The error code for install failures.|
-|deviceType|Int32|Device Type|
 |osVersion|String|OS Version|
+|osDescription|String|OS Description|
+|userName|String|Device User Name|
 
 
 
@@ -49,17 +50,18 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
 Content-type: application/json
-Content-length: 310
+Content-length: 373
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "mobileAppInstallStatusValue": 11,
+  "mobileAppInstallStatusValue": "failed",
   "errorCode": 9,
-  "deviceType": 10,
-  "osVersion": "Os Version value"
+  "osVersion": "Os Version value",
+  "osDescription": "Os Description value",
+  "userName": "User Name value"
 }
 ```
 
@@ -68,7 +70,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 359
+Content-Length: 422
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -76,10 +78,11 @@ Content-Length: 359
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "mobileAppInstallStatusValue": 11,
+  "mobileAppInstallStatusValue": "failed",
   "errorCode": 9,
-  "deviceType": 10,
-  "osVersion": "Os Version value"
+  "osVersion": "Os Version value",
+  "osDescription": "Os Description value",
+  "userName": "User Name value"
 }
 ```
 

@@ -24,7 +24,14 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsInformationProtectionCorporateNetworkLocation",
   "name": "String",
   "protectedLocation": {
-    "@odata.type": "microsoft.graph.windowsInformationProtectionProtectedLocation"
+    "@odata.type": "microsoft.graph.windowsInformationProtectionProtectedLocationEnterpriseCloudResources",
+    "values": [
+      {
+        "@odata.type": "microsoft.graph.enterpriseCloudResource",
+        "address": "String",
+        "proxyServerUri": "String"
+      }
+    ]
   }
 }
 ```

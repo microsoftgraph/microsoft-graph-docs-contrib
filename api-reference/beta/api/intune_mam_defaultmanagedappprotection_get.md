@@ -44,13 +44,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1501
+Content-Length: 1628
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
     "displayName": "Display Name value",
     "description": "Description value",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
     "deployedAppCount": 0,
     "id": "77064c51-4c51-7706-514c-0677514c0677",

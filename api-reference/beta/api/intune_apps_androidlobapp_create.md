@@ -49,7 +49,6 @@ The following table shows the properties that are required when you create a and
 |identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |identityName|String|The Identity Name.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
-|manifest|Binary|The manifest information.|
 
 
 
@@ -62,7 +61,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
 Content-type: application/json
-Content-length: 1408
+Content-length: 1377
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -106,8 +105,7 @@ Content-length: 1408
     "v4_4": true,
     "v5_0": true,
     "v5_1": true
-  },
-  "manifest": "bWFuaWZlc3Q="
+  }
 }
 ```
 
@@ -116,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1516
+Content-Length: 1485
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -162,8 +160,7 @@ Content-Length: 1516
     "v4_4": true,
     "v5_0": true,
     "v5_1": true
-  },
-  "manifest": "bWFuaWZlc3Q="
+  }
 }
 ```
 
