@@ -8,7 +8,7 @@ This article provides information about the different sovereign cloud instances 
 
 This section provides information about Microsoft Graph operated by 21Vianet, and the capabilities that are available to developers. 
 
-### Service root endpoints
+### Microsoft Graph service root endpoints
 | Microsoft Graph operated by 21Vianet | Microsoft Graph|
 |---------------------------|----------------|
 | https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
