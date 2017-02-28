@@ -676,7 +676,7 @@
     </Item>
     <Item text="Schema Extensions" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
         <Item text="List schema extensions" url="/en-us/api-reference/beta/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
-        <Item text="Create schema extension" url="/en-us/api-reference/beta/api/schemaextension_post_schemaextension" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
+        <Item text="Create schema extension" url="/en-us/api-reference/beta/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
         <Item text="Get schema extension" url="/en-us/api-reference/beta/api/schemaextension_get" SEOKeyword="Get schema extension, Microsoft Graph API" SEODescription="Retrieve the properties of a schema extension definition." />
         <Item text="Update schema extension" url="/en-us/api-reference/beta/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
         <Item text="Delete schema extension" url="/en-us/api-reference/beta/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />

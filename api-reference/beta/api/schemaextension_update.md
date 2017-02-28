@@ -1,6 +1,6 @@
 # Update schemaextension
 
-Update the properties of a [schemaExtension](../resources/schemaextension.md) resource.
+Update the properties of a schema extension definition by updating the [schemaExtension](../resources/schemaextension.md) resource.
 
 ## Prerequisites
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*

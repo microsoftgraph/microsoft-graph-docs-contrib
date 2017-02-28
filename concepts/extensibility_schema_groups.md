@@ -19,7 +19,7 @@ First, as a developer, we might want to find any other schema extension definiti
 
 ##### Request
 ```http
-GET https://graph.microsoft.com/beta/schemaExtensions/$filter=id eq 'graphlearn_test')
+GET https://graph.microsoft.com/beta/schemaExtensions/$filter=id eq 'graphlearn_test'
 ```
 ##### Response
 ```http
@@ -168,6 +168,8 @@ Content-length: 230
 ```http
 HTTP/1.1 204 No Content
 ```
+
+>NOTE: Since the extension data is modeled as a complex type, the values of the complex type extension can be updated with another ```PATCH`` operation.
 
 ## 5. Get a group and its extension data
 To get the group **and** its extension data, we need to use $select to specify the extension by name, in this case by *graphlearn_courses*.
