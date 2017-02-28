@@ -2,6 +2,14 @@
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
+## March 2017
+
+### Add custom data to Microsoft Graph
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://graph.microsoft.io/en-us/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to Users using Open Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_open_users.md)<br/>[Add custom data to Groups using Schema Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_schema_groups.md)|
+
 ## February 2017
 
 ### Directory APIs
@@ -379,7 +387,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |:--------------|:-----------|:--------------|
 |Addition|v1.0 and beta|Improved error message when resolving tenant alias and rejected JWT (AAD) tokens.|
 |Addition|v1.0 and beta|The location of the authorization service endpoint is now returned in the _www-authenticate_ header when a request is received with an empty bearer token.|
-Addition|v1.0 and beta|The ability to filter on an entity’s id property is now fixed. Example: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Previously, any POST requests to service actions and functions require prefixing the action or function name with the microsoft.graph prefix. For example: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>The prefix is now no longer required (although it can still be specified). So the following would now also work: POST https://graph.microsoft.com/v1.0/me/getMemberGroups.|
+|Addition|v1.0 and beta|The ability to filter on an entity’s id property is now fixed. Example: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Previously, any POST requests to service actions and functions require prefixing the action or function name with the microsoft.graph prefix. For example: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>The prefix is now no longer required (although it can still be specified). So the following would now also work: POST https://graph.microsoft.com/v1.0/me/getMemberGroups.|
 |Change|Beta|Cleaned up subscription property names.|
 |Addition|Beta|We’ve added the capability to discover (through _directorySettingTemplates_) and override the default behavior (by creating a _setting_ from the template) for entities and their associated functionality. Initially this only template provided is to control behaviors on Office groups.|
 

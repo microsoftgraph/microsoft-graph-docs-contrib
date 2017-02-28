@@ -1,23 +1,17 @@
-# openTypeExtension resource type (data extensions)
+# Open extensions
 
-Office 365 data extensions are represented by the **openTypeExtension** resource. 
+Open extensions (formerly known as Office 365 data extensions) gives you an easy way to directly add untyped properties to a resource in the Microsoft Graph. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](extension.md) abstract type.  Each extension has an additional **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom date. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) method that is dependent on _your own domain_, for example, `Com.Contoso.Contact`. Do not use the Microsoft domain in an extension name.
 
-**openTypeExtension** is an OData v4 open type which contains properties that you can specify at runtime. You can use
-it to extend an instance of an entity type that is already defined in the Entity Data Model (EDM) - for example, a message or 
-event - by dynamically specifying custom properties and values in a JSON payload. This makes the definition of such 
-entity types more flexible, saving you time to define new entity types just for this purpose.
+Open extension example: [Add custom data to Users using Open Extensions (preview)](../../../concepts/extensibility_open_users.md)
 
-You can create data extensions of the **openTypeExtension** type in a [message](message.md), [event](event.md), or [contact](contact.md) in the signed-in user's
-mailbox, or in an **event** or [post](post.md) for an Office 365 group. In the individual-user context, the user's 
-account can be in Office 365 or a Microsoft account (Hotmail.com, Live.com, MSN.com, Outlook.com and Passport.com).
+Open extensions are supported for:
+ - a [message](message.md), [event](event.md), or [contact](contact.md) 
+ - an **event** or [post](post.md) for an Office 365 group
+ - a [device](device.md)
+ - a [group](group.md)
+ - a [user](user.md)
 
-This resource is derived from the [extension](extension.md) abstract type and has the additional **extensionName** property.
-The **extensionName** property is the only pre-defined, writable property for all extensions. One way to help make 
-sure extension names are unique is to use a reverse domain name system (DNS) method that is dependent on 
-_your own domain_, for example, `Com.Contoso.Contact`. Do not use the Microsoft domain in an extension name.
-
-
-### Use Office 365 data extensions or extended properties?
+### Use open extensions (for Outlook resources) or extended properties?
 
 Data extensions is the recommended solution for most scenarios involving storing and accessing custom data. If, however, 
 you need to access custom data for Outlook MAPI properties that are not already exposed through the 
