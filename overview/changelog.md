@@ -4,7 +4,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## February 2017
 
-### Intune APIs (2/27/2017)
+### Intune APIs
 
 |Change type|Version|Description|
 |---|---|---|
@@ -43,7 +43,20 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |Change|Beta|Removed the **bundleIdentifier**, **notificationsEnabled** and **showInLockScreen** properties from the [iosNotificationSettings](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_deviceconfig_iosnotificationsettings.md) complex type|
 
 
-### Intune APIs (2/13/2017)
+
+## January 2017
+
+### Outlook calendar
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0|New action [findMeetingTimes](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_findmeetingtimes) for the [user](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource.|
+|Addition|v1.0|New complex type [attendeeBase](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendeebase) which consists of a type property for the attendee type.|
+|Addition|v1.0|New complex types:<br/>[attendeeAvailability](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendeeavailability)<br/>[locationConstraint](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/locationconstraint) <br/>[locationConstraintItem](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/locationconstraintitem)<br/>[meetingTimeSuggestion](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/meetingtimesuggestion)<br/>[meetingTimeSuggestionsResult](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/meetingtimesuggestionsresult)<br/>[timeConstraint](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/timeconstraint)<br/>[timeSlot](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/timeslot)|
+|Change|v1.0|The [attendee](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendee) complex type is now derived from attendeeBase, which in turn is derived from [recipient](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/recipient). Including the inherited properties, it consists of the same **status**, **type** and **emailAddress** properties as before.|
+|Addition|Beta|hexColor added to the [calendar](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/calendar) resource.|
+
+### Intune APIs
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
@@ -65,18 +78,6 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |Change|Beta|Added the **lastModifiedDateTime** property to the [mobileAppCategory](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_apps_mobileappcategory) entity.|
 |Change|Beta|Added the **brandingOptions**, **defaultLocale**, **displayName**, **fromEmailAddress**, **lastModifiedDateTime**, **localizedNotificationMessages** properties to the [notificationMessageTemplate](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_notification_notificationmessagetemplate) entity.|
 |Change|Beta|Added the **appsAllowTrustedAppsSideloading**, **appsBlockWindowsStoreOriginatedApps**, **developerUnlockSetting**, **edgeBlockAccessToAboutFlags**, **edgeBlockDeveloperTools**, **edgeBlockExtensions**, **edgeBlockInPrivateBrowsing**, **edgeFirstRunUrl**, **edgeHomepageUrls**, **gameDvrBlocked**, **settingsBlockAddProvisioningPackage**, **settingsBlockChangeLanguage**, **settingsBlockChangePowerSleep**, **settingsBlockChangeRegion**, **settingsBlockChangeSystemTime**, **settingsBlockEditDeviceName**, **settingsBlockRemoveProvisioningPackage**, **sharedUserAppDataAllowed**, **smartScreenBlockPromptOverride**, **smartScreenBlockPromptOverrideForFiles**, **storageRestrictAppDataToSystemVolume**, **storageRestrictAppInstallToSystemVolume**, **webRtcBlockLocalhostIpAddress**, **windowsStoreBlockAutoUpdate** and **windowsStoreEnablePrivateStoreOnly** properties to the [windows10GeneralConfiguration](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) entity.|
-
-## January 2017
-
-### Outlook calendar
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-|Addition|v1.0|New action [findMeetingTimes](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_findmeetingtimes) for the [user](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource.|
-|Addition|v1.0|New complex type [attendeeBase](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendeebase) which consists of a type property for the attendee type.|
-|Addition|v1.0|New complex types:<br/>[attendeeAvailability](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendeeavailability)<br/>[locationConstraint](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/locationconstraint) <br/>[locationConstraintItem](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/locationconstraintitem)<br/>[meetingTimeSuggestion](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/meetingtimesuggestion)<br/>[meetingTimeSuggestionsResult](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/meetingtimesuggestionsresult)<br/>[timeConstraint](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/timeconstraint)<br/>[timeSlot](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/timeslot)|
-|Change|v1.0|The [attendee](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/attendee) complex type is now derived from attendeeBase, which in turn is derived from [recipient](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/recipient). Including the inherited properties, it consists of the same **status**, **type** and **emailAddress** properties as before.|
-|Addition|Beta|hexColor added to the [calendar](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/calendar) resource.|
 
 ## December 2016
 
