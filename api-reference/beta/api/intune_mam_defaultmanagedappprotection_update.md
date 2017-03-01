@@ -32,7 +32,9 @@ The following table shows the properties that are required when you create a [de
 |---|---|---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|lastModifiedTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|lastModifiedTime|DateTimeOffset|DEPRECATED: Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -72,11 +74,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}
 Content-type: application/json
-Content-length: 1289
+Content-length: 1353
 
 {
   "displayName": "Display Name value",
   "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
   "deployedAppCount": 0,
   "version": "Version value",
@@ -120,12 +123,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1404
+Content-Length: 1527
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
   "displayName": "Display Name value",
   "description": "Description value",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
   "deployedAppCount": 0,
   "id": "77064c51-4c51-7706-514c-0677514c0677",

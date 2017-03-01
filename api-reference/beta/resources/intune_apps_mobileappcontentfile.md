@@ -25,6 +25,7 @@ Contains properties for a single installer file that is associated with a given 
 |size|Int64|The size of the file prior to encryption.|
 |sizeEncrypted|Int64|The size of the file after encryption.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
+|manifest|Binary|The manifest information.|
 
 ## Relationships
 None
@@ -46,7 +47,8 @@ Here is a JSON representation of the resource.
   "name": "String",
   "size": 1024,
   "sizeEncrypted": 1024,
-  "azureStorageUriExpirationDateTime": "String (timestamp)"
+  "azureStorageUriExpirationDateTime": "String (timestamp)",
+  "manifest": "binary"
 }
 ```
 

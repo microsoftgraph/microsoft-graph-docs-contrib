@@ -16,9 +16,11 @@ One of the following **scopes** is required to execute this API:
 POST /deviceConfigurationGroupAssignment/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//groupAssignments/
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//groupAssignments/
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//rootCertificate//groupAssignments/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate//groupAssignments/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/
 ```
 

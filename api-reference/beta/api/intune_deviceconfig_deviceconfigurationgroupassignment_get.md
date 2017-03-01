@@ -16,9 +16,11 @@ One of the following **scopes** is required to execute this API:
 GET /deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10VpnConfiguration/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
 ```
 

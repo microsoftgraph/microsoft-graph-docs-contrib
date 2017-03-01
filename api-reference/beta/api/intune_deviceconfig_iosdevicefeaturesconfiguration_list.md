@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1483
+Content-Length: 2528
 
 {
   "value": [
@@ -52,21 +52,52 @@ Content-Length: 1483
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "deviceSharingAssetTagInformation": "Device Sharing Asset Tag Information value",
-      "deviceSharingLockScreenFootnote": "Device Sharing Lock Screen Footnote value",
-      "homeScreenLayoutDockIcons": [
+      "airPrintDestinations": [
         {
-          "@odata.type": "microsoft.graph.iosHomeScreenItem",
-          "displayName": "Display Name value"
+          "@odata.type": "microsoft.graph.airPrintDestination",
+          "ipAddress": "Ip Address value",
+          "resourcePath": "Resource Path value"
         }
       ],
-      "homeScreenLayoutPages": [
+      "assetTagTemplate": "Asset Tag Template value",
+      "lockScreenFootnote": "Lock Screen Footnote value",
+      "homeScreenDockIcons": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+          "displayName": "Display Name value",
+          "pages": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+              "apps": [
+                {
+                  "@odata.type": "microsoft.graph.iosHomeScreenApp",
+                  "displayName": "Display Name value",
+                  "bundleID": "Bundle ID value"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "homeScreenPages": [
         {
           "@odata.type": "microsoft.graph.iosHomeScreenPage",
           "icons": [
             {
-              "@odata.type": "microsoft.graph.iosHomeScreenItem",
-              "displayName": "Display Name value"
+              "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+              "displayName": "Display Name value",
+              "pages": [
+                {
+                  "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+                  "apps": [
+                    {
+                      "@odata.type": "microsoft.graph.iosHomeScreenApp",
+                      "displayName": "Display Name value",
+                      "bundleID": "Bundle ID value"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -74,11 +105,13 @@ Content-Length: 1483
       "notificationSettings": [
         {
           "@odata.type": "microsoft.graph.iosNotificationSettings",
-          "bundleIdentifier": "Bundle Identifier value",
-          "notificationsEnabled": true,
+          "bundleID": "Bundle ID value",
+          "appName": "App Name value",
+          "publisher": "Publisher value",
+          "enabled": true,
           "showInNotificationCenter": true,
-          "showInLockScreen": true,
-          "alertType": "none",
+          "showOnLockScreen": true,
+          "alertType": "banner",
           "badgesEnabled": true,
           "soundsEnabled": true
         }

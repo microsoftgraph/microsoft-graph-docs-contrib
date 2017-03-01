@@ -42,13 +42,13 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 229
+Content-length: 176
 
 {
   "settings": {
     "@odata.type": "microsoft.graph.deviceManagementSettings",
-    "windowsCommercialId": "Windows Commercial Id value",
-    "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00"
+    "deviceComplianceCheckinThresholdDays": 4,
+    "isScheduledActionEnabled": true
   }
 }
 ```
@@ -58,15 +58,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 333
+Content-Length: 280
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
   "id": "0b283420-3420-0b28-2034-280b2034280b",
   "settings": {
     "@odata.type": "microsoft.graph.deviceManagementSettings",
-    "windowsCommercialId": "Windows Commercial Id value",
-    "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00"
+    "deviceComplianceCheckinThresholdDays": 4,
+    "isScheduledActionEnabled": true
   }
 }
 ```
