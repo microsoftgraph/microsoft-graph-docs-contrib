@@ -1,6 +1,6 @@
-# Delete data extension
+# Delete open extension
 
-Delete a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
+Delete a open extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
 
 ## Prerequisites
 
@@ -9,9 +9,11 @@ deleting the extension from:
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
-| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [administrativeunit](../resources/administrativeunit.md) | _Directory.AccessAsUser.All_ | [device](../resources/device.md) | _Devices.ReadWrite.All_ |
+| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group](../resources/group.md) | _Group.ReadWrite.All_ |
+| [group event](../resources/event.md) | _Group.ReadWrite.All_ | [group post](../resources/post.md) | _Group.ReadWrite.All_ |
+| [message](../resources/message.md) | _Mail.ReadWrite_ | [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | 
+| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ | [user](../resources/user.md) | _Directory.AccessAsUser.All_ |
  
 ## HTTP request
 
@@ -20,11 +22,16 @@ navigation property of that instance to identify the extension, and do a `DELETE
 
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+DELETE /groups/{id}/extensions/{extensionId}
 DELETE /groups/{id}/events/{id}/extensions/{extensionId}
 DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+DELETE /administrativeUnits/{Id}/extensions/{extensionId}
+DELETE /devices/{Id}/extensions/{extensionId}
+DELETE /organization/{Id}/extensions/{extensionId}
 ```
 
 >**Note:** Some resources support identifying an instance in multiple ways all of which support deleting an extension. 

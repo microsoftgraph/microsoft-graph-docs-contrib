@@ -1,6 +1,6 @@
 # List schemaExtensions
 
-Retrieve a list of schemaExtension resources and their properties.
+Retrieve a list of schema extension definitions by getting the [schemaExtension](../resources/schemaextension.md) resources and their properties.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.AccessAsUser.All*
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_schemaextensions"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/schemaExtensions
+GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -49,19 +49,19 @@ Content-length: 274
 {
   "value": [
     {
-      "name": "name-value",
-      "description": "description-value",
+      "id":"graphlearn_test",
+      "description": "Yet another test schema",
       "targetTypes": [
-        "targetTypes-value"
+          "User", "Group"
       ],
+      "status": "InDevelopment",
+      "owner": "24d3b144-21ae-4080-943f-7067b395b913",
       "properties": [
-        {
-          "name":"name-value",
-          "type":"type-value"
-        }
-      ],
-      "status": "status-value",
-      "owner": "owner-value"
+          {
+              "name": "testName",
+              "type": "String"
+          }
+      ]
     }
   ]
 }

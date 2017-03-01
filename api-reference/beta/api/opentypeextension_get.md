@@ -1,15 +1,14 @@
-# Get data extension
+# Get open extension
 
-Get a data extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
+Get an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
 
-The following table lists the three scenarios where you can get a data extension from a supported resource instance.
+The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [contact](../resources/contact.md), [event](../resources/event.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md) | Data extension only.|
-|Get a known resource instance expanded with a specific extension.|Contact, event, group event, message|A resource instance expanded with the data extension.|
-|Find and expand resource instances with a specific extension. |Contact, event, group event, message|Resource instances expanded with the data extension.|
-
+|Get a specific extension from a known resource instance.| [administrativeunit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Personal contact, event, group event, message|A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. | Personal contact, event, group event, message|Resource instances expanded with the open extension.|
 
 ## Prerequisites
 
@@ -17,9 +16,11 @@ One of the following **permissions** is required to execute this API, depending 
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.Read_ | [group event](../resources/event.md) | _Calendars.Read_ | 
-| [group post](../resources/post.md) | _Group.Read.All_ | [message](../resources/message.md) | _Mail.Read_ | 
-| [personal contact](../resources/contact.md) | _Contacts.Read_ |
+| [administrativeunit](../resources/administrativeunit.md) | _Directory.Read.All_ | [device](../resources/device.md) | _Directory.Read.All_ |
+| [event](../resources/event.md) | _Calendars.Read_ | [group](../resources/group.md) | _Group.Read.All_ |
+| [group event](../resources/event.md) | _Group.Read.All_ | [group post](../resources/post.md) | _Group.Read.All_ |
+| [message](../resources/message.md) | _Mail.Read_ | [organization](../resources/organization.md) | _Directory.Read.All_ | 
+| [personal contact](../resources/contact.md) | _Contacts.Read_ | [user](../resources/user.md) | _User.Read.All_ |
 
 
 ## HTTP request
@@ -36,13 +37,17 @@ navigation property of that instance.
 
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+GET /administrativeUnits/{Id}/extensions/{extensionId}
+GET /devices/{Id}/extensions/{extensionId}
+GET /organization/{Id}/extensions/{extensionId}
 ```
-
 
 ### Get a known resource instance expanded with a matching extension 
 
