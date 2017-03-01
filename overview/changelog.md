@@ -2,6 +2,14 @@
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
+## March 2017
+
+### Directory APIs
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Added support for [deleted items](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory) (recycle bin) for users and groups. New entity:</br>[directory](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory) |
+
 ## February 2017
 
 ### Intune APIs
