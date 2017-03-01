@@ -37,7 +37,7 @@ The organization resource represents an instance of global settings and resource
 |---|---|---|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|Intune only supports using 1 DEP token per tenant. This collections will support potential future development of multiple DEP tokens per-tenant.|
 |appleVolumePurchaseProgramTokens|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|Not yet documented|
-|sideLoadingKeys|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|Not yet documented|
+|sideLoadingKeys|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|Side Loading Keys that are required for the WinPhone8.1 Apps installation.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

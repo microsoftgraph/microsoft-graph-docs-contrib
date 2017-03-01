@@ -41,7 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 809
+Content-Length: 852
 
 {
   "value": [
@@ -60,7 +60,8 @@ Content-Length: 809
       ],
       "userId": "User Id value",
       "appIdentifier": {
-        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+        "@odata.type": "microsoft.graph.iosMobileAppIdentifier",
+        "bundleId": "Bundle Id value"
       },
       "id": "47632c19-2c19-4763-192c-6347192c6347",
       "version": "Version value"

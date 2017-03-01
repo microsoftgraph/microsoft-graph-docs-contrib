@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+DELETE /deviceComplianceScheduledActionForRule/{deviceComplianceScheduledActionForRuleId}
 DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 ```
 
@@ -32,7 +33,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
+DELETE https://graph.microsoft.com/beta/deviceComplianceScheduledActionForRule/{deviceComplianceScheduledActionForRuleId}
 ```
 
 ### Response

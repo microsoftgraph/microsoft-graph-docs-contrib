@@ -15,6 +15,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/
 POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.mobileLobApp/contentVersions/
+POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileLobApp/contentVersions/
 ```
 
 ## Request headers

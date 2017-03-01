@@ -17,7 +17,9 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 |---|---|---|
 |displayName|String|Policy display name.|
 |description|String|The policy's description.|
-|lastModifiedTime|DateTimeOffset|Last time the policy was modified.|
+|createdDateTime|DateTimeOffset|The date and time the policy was created.|
+|lastModifiedDateTime|DateTimeOffset|Last time the policy was modified.|
+|lastModifiedTime|DateTimeOffset|DEPRECATED: Last time the policy was modified.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
@@ -41,6 +43,8 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managedAppPolicy",
   "displayName": "String",
   "description": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedTime": "String (timestamp)",
   "deployedAppCount": 1024,
   "id": "String (identifier)",

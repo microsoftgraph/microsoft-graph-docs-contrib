@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 608
+Content-Length: 828
 
 {
   "value": [
@@ -50,6 +50,8 @@ Content-Length: 608
       "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",
       "displayName": "Display Name value",
       "description": "Description value",
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
       "deployedAppCount": 0,
       "id": "2444e029-e029-2444-29e0-442429e04424",
@@ -61,7 +63,10 @@ Content-Length: 608
           "value": "Value value"
         }
       ],
-      "numberOfTargetedSecurityGroups": 14
+      "targetedSecurityGroupIds": [
+        "Targeted Security Group Ids value"
+      ],
+      "targetedSecurityGroupsCount": 11
     }
   ]
 }
