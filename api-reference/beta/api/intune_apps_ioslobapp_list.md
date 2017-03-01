@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1817
+Content-Length: 1782
 
 {
   "value": [
@@ -89,8 +89,7 @@ Content-Length: 1817
         "v9_0": true,
         "v10_0": true
       },
-      "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-      "manifest": "bWFuaWZlc3Q="
+      "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
     }
   ]
 }

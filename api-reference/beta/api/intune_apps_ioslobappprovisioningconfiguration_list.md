@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /iosMobileAppConfigurations/
+GET /deviceAppManagement/iosLobAppProvisioningConfigurations/
 ```
 
 ## Request headers
@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/iosMobileAppConfigurations/
+GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/
 ```
 
 ### Response
@@ -40,33 +40,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 955
+Content-Length: 550
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
       "id": "e2a23631-3631-e2a2-3136-a2e23136a2e2",
-      "settingXml": "Setting Xml value",
-      "settings": [
-        {
-          "@odata.type": "microsoft.graph.appConfigurationSettingItem",
-          "appConfigKey": "App Config Key value",
-          "appConfigKeyType": "integerType",
-          "appConfigKeyValue": "App Config Key Value value"
-        }
-      ],
-      "targetedMobileApps": [
-        "Targeted Mobile Apps value"
-      ],
+      "expiration": "2016-12-31T23:58:07.1690227-08:00",
+      "payloadFileName": "Payload File Name value",
+      "payload": "cGF5bG9hZA==",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
-      "version": 7,
-      "expiration": "2016-12-31T23:58:07.1690227-08:00",
-      "payloadFileName": "Payload File Name value",
-      "payload": "cGF5bG9hZA=="
+      "version": 7
     }
   ]
 }

@@ -34,7 +34,6 @@ The following table shows the properties that are required when you create a win
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|applyToWindows10Mobile|Boolean|Indicates whether or not to apply this configuration to Windows 10 mobile.|
 |applyOnlyToWindowsPhone81|Boolean|Value indicating whether this policy only applies to Windows Phone 8.1.|
 |appsBlockCopyPaste|Boolean|Indicates whether or not to block copy paste.|
 |bluetoothBlocked|Boolean|Indicates whether or not to block bluetooth.|
@@ -76,7 +75,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 1560
+Content-length: 1525
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",
@@ -84,7 +83,6 @@ Content-length: 1560
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "applyToWindows10Mobile": true,
   "applyOnlyToWindowsPhone81": true,
   "appsBlockCopyPaste": true,
   "bluetoothBlocked": true,
@@ -130,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1668
+Content-Length: 1633
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",
@@ -140,7 +138,6 @@ Content-Length: 1668
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "applyToWindows10Mobile": true,
   "applyOnlyToWindowsPhone81": true,
   "appsBlockCopyPaste": true,
   "bluetoothBlocked": true,
