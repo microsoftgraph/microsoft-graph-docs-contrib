@@ -60,7 +60,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1371
+Content-length: 1717
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -73,7 +73,9 @@ Content-length: 1371
       "title": "Title value",
       "mode": "exempt",
       "template": {
-        "@odata.type": "microsoft.graph.windowsInformationProtectionAppRuleTemplate"
+        "@odata.type": "microsoft.graph.windowsInformationProtectionAppRuleStoreAppTemplate",
+        "publisher": "Publisher value",
+        "productName": "Product Name value"
       }
     }
   ],
@@ -86,7 +88,14 @@ Content-length: 1371
       "@odata.type": "microsoft.graph.windowsInformationProtectionCorporateNetworkLocation",
       "name": "Name value",
       "protectedLocation": {
-        "@odata.type": "microsoft.graph.windowsInformationProtectionProtectedLocation"
+        "@odata.type": "microsoft.graph.windowsInformationProtectionProtectedLocationEnterpriseCloudResources",
+        "values": [
+          {
+            "@odata.type": "microsoft.graph.enterpriseCloudResource",
+            "address": "Address value",
+            "proxyServerUri": "Proxy Server Uri value"
+          }
+        ]
       }
     }
   ],
@@ -110,7 +119,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1568
+Content-Length: 1914
 
 {
   "@odata.type": "#microsoft.graph.windows10WindowsInformationProtectionConfiguration",
@@ -126,7 +135,9 @@ Content-Length: 1568
       "title": "Title value",
       "mode": "exempt",
       "template": {
-        "@odata.type": "microsoft.graph.windowsInformationProtectionAppRuleTemplate"
+        "@odata.type": "microsoft.graph.windowsInformationProtectionAppRuleStoreAppTemplate",
+        "publisher": "Publisher value",
+        "productName": "Product Name value"
       }
     }
   ],
@@ -139,7 +150,14 @@ Content-Length: 1568
       "@odata.type": "microsoft.graph.windowsInformationProtectionCorporateNetworkLocation",
       "name": "Name value",
       "protectedLocation": {
-        "@odata.type": "microsoft.graph.windowsInformationProtectionProtectedLocation"
+        "@odata.type": "microsoft.graph.windowsInformationProtectionProtectedLocationEnterpriseCloudResources",
+        "values": [
+          {
+            "@odata.type": "microsoft.graph.enterpriseCloudResource",
+            "address": "Address value",
+            "proxyServerUri": "Proxy Server Uri value"
+          }
+        ]
       }
     }
   ],

@@ -44,7 +44,6 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |identityName|String|The Identity Name.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
-|manifest|Binary|The manifest information.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -108,8 +107,7 @@ Here is a JSON representation of the resource.
     "v4_4": true,
     "v5_0": true,
     "v5_1": true
-  },
-  "manifest": "binary"
+  }
 }
 ```
 
