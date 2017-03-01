@@ -33,9 +33,9 @@
 		<Item text="Example: Groups (preview)" url="/en-us/concepts/delta_query_groups" />
 		<Item text="Example: Users (preview)" url="/en-us/concepts/delta_query_users" />
 	</Item>
-	<Item text="Adding custom data to Microsoft Graph (preview)" url="/en-us/concepts/extensibility_overview" >
-		<Item text="Example: Add custom data to Users using Open Extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
-		<Item text="Example: Add custom data to Groups using Schema Extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
+	<Item text="Add custom data to resources" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
+		<Item text="Example: Add custom data with Open Extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
+		<Item text="Example: Add custom data with Schema Extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
 	</Item>
 	<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	<Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />

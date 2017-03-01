@@ -1,4 +1,4 @@
-# Adding custom data to Microsoft Graph (preview)
+# Add custom data to resources
 
 Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights. While we’re constantly growing these data sets by adding new Microsoft cloud services, there's now a way for you to **extend** Microsoft Graph with your own custom application data. You can add custom properties to Microsoft Graph resources without requiring an external data store. For example, you might decide to keep your app lightweight and store app specific user profile data in Microsoft Graph by extending the user object. Alternatively, you might want to retain your app’s existing user profile store and link its records to users in Microsoft Graph by adding an app specific identifier to the user resource.
 
@@ -26,9 +26,11 @@ Both forms of extensibility are currently supported in preview on the Microsoft 
 ## Open extensions
 Open extensions gives you an easy way to directly add untyped properties to a resource in the Microsoft Graph. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](../api-reference/beta/resources/extension.md) abstract type.  Each extension has an additional **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
 
+>NOTE: Open extensions for administrative units, devices, groups, organization and users are only available in preview.
+
 Open extension example: [Add custom data to Users using Open Extensions (preview)](extensibility_open_users.md)
 
-## Schema extensions
+## Schema extensions (preview)
 With schema extensions, you can define the schema that you want to extend a resource class with (also known an entity-type). Schema extension definitions let you add strongly-typed custom data to a resource. This schema definition must be given a unique name based on one of your directory's verified domain names along with your extension name, for example `contoso_mySchema`. The custom data appears as a complex type (named with the unique `id` of the schema definition that it's created from) on the extended resource. Even better, your schema is also discoverable for other app developers to find and use, and to build further experiences on top of.
 
 Schema extension example: [Add custom data to Groups using Schema Extensions (preview)](extensibility_schema_groups.md)
@@ -39,7 +41,7 @@ When your app creates a schema extension definition, it is marked as the owner o
 | State | Lifecycle state behavior |
 |-------------|------------|
 | InDevelopment | Initial state after creation.  In this state, only the owning app can use the schema extension to add data to the targeted resource. The schema extension can be updated with additive changes and it can be deleted. Only the owning app can extend resources with this schema definition and only in the same directory where the owning app is registered. You can move the schema extension from *InDevelopment* to the *Available* state. |
-| Available |  The schema extension schema is available for use by all apps and can be used by any app to extend resources (as long as that app has permissions to that resource). The schema extension can be updated with additive changes but it can **not** be deleted. You can move the schema extension from *Available* to the *Deprecated* state. | 
+| Available |  The schema extension schema is available for use by all apps and can be used by any app to extend resources (as long as that app has permissions to that resource). The schema extension can be updated with additive changes but it can **not** be deleted. You can move the schema extension from *Available* to the *Deprecated* state. |
 | Deprecated |  When the schema extension is *Deprecated*, applications can still read and update extension properties based on the schema extension. The schema extension is not available to be viewed and cannot be used to create new properties. The schema extension cannot be updated or deleted. You can move a schema extension from *Deprecated* back to the *Available* state. |
 
 ### Supported property data types 
@@ -54,7 +56,7 @@ The following data types are supported when defining a property in a schema exte
 | String | 256 characters maximum. |
 
 ### Azure AD directory schema extensions
-Azure AD Graph API already supports schema extensions. Any data created through directory schema extensions will not be accessible through Microsoft Graph schema extensions. However, properties based on Azure AD directory schema extensions may still be created, read, updated and deleted through Microsoft Graph (using the syntax for Azure AD Graph directory schema extensions).  Registering directory schema extensions through Microsoft Graph is not possible currently.  We will be working to align these models, so that in the future you can access any existing directory schema extensions through Microsoft Graph schema extensions. 
+Azure AD Graph API already supports schema extensions. Any data created through Azure AD directory schema extensions will not be accessible through Microsoft Graph schema extensions. However, properties based on Azure AD directory schema extensions may still be created, read, updated and deleted through Microsoft Graph (using the syntax for Azure AD Graph directory schema extensions).  Creating and managing Azure AD directory schema extensions through Microsoft Graph is not possible currently.  We will be working to align these models, so that in the future you can manage and access any existing directory schema extensions through Microsoft Graph schema extensions.
 
 ## Permissions
 The same [permission scopes](../authorization/permission_scopes.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource.  For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
