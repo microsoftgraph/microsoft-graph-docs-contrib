@@ -9,7 +9,7 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directory/{id}
+DELETE /directory/deletedItems/{id}
 ```
 ### Request headers
 | Name       | Description|
@@ -31,7 +31,7 @@ If successful, this method returns `204, No Content` response code. It does not 
   "name": "delete_directory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/directory/
+DELETE https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
