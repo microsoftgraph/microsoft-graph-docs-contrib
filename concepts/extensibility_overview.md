@@ -11,17 +11,20 @@ Microsoft Graph offers two types of extensions. Choose the extension type that b
 
 ## Supported Resources
 
-Both forms of extensibility are currently supported in preview on the Microsoft Graph /beta endpoint for the following resources only:
+The following table shows the current support for open and schema extensions and whether they are in generally availability (GA /v1.0) or in preview (/beta). 
 
- - [administrative unit](../api-reference/beta/resources/administrativeunit.md) (coming soon for schema extensions)
- - [calendar event](../api-reference/beta/resources/event.md)
- - An Office 365 group [calendar event](../api-reference/beta/resources/event.md) or conversation thread [post](../api-reference/beta/resources/post.md)
- - [device](../api-reference/beta/resources/device.md)
- - [group](../api-reference/beta/resources/group.md)
- - [message](../api-reference/beta/resources/message.md)
- - [organization](../api-reference/beta/resources/organization.md) (coming soon  for schema extensions)
- - [personal contact](../api-reference/beta/resources/contact.md) (coming soon  for schema extensions)
- - [user](../api-reference/beta/resources/user.md) 
+| | Open extensions | Schema extensions |
+|---------------|-------|-------|
+| [administrative unit](../api-reference/beta/resources/administrativeunit.md) | Preview only | Coming soon |
+|  [calendar event](../api-reference/beta/resources/event.md) | GA | Preview only |
+|  Group [calendar event](../api-reference/beta/resources/event.md) | GA | Preview only |
+|  Group conversation thread [post](../api-reference/beta/resources/post.md) | GA | Preview only |
+|  [device](../api-reference/beta/resources/device.md) | Preview only | Preview only |
+|  [group](../api-reference/beta/resources/group.md) | Preview only | Preview only |
+|  [message](../api-reference/beta/resources/message.md) | GA | Preview only |
+|  [organization](../api-reference/beta/resources/organization.md) | Preview only | Coming soon |
+|  [personal contact](../api-reference/beta/resources/contact.md)| Preview only | Coming soon |
+|  [user](../api-reference/beta/resources/user.md) | Preview only | Preview only |
 
 ## Open extensions
 Open extensions gives you an easy way to directly add untyped properties to a resource in the Microsoft Graph. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](../api-reference/beta/resources/extension.md) abstract type.  Each extension has an additional **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
@@ -55,8 +58,10 @@ The following data types are supported when defining a property in a schema exte
 | Integer | 32-bit value. Not supported for messages, events and posts. |
 | String | 256 characters maximum. |
 
+>NOTE: Multi-value properties are not currently supported.
+
 ### Azure AD directory schema extensions
-Azure AD Graph API already supports schema extensions. Any data created through Azure AD directory schema extensions will not be accessible through Microsoft Graph schema extensions. However, properties based on Azure AD directory schema extensions may still be created, read, updated and deleted through Microsoft Graph (using the syntax for Azure AD Graph directory schema extensions).  Creating and managing Azure AD directory schema extensions through Microsoft Graph is not possible currently.  We will be working to align these models, so that in the future you can manage and access any existing directory schema extensions through Microsoft Graph schema extensions.
+Creating, reading, updating and deleting [Azure AD directory schema extensions](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions) values on resources is supported through Microsoft Graph.  However, creating and managing Azure AD directory schema extensions definitions is not supported currently through Microsoft Graph.
 
 ## Permissions
 The same [permission scopes](../authorization/permission_scopes.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource.  For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
