@@ -51,6 +51,12 @@ POST /devices/{id}/extensions
 POST /organization/{id}/extensions
 ```
 
+For example, you can identify an existing message in the signed-in user's mailbox as follows:
+<!-- { "blockType": "ignored" } -->
+```http
+/me/messages/{id}
+```
+
 To create an extension in an existing message instance in that mailbox, build upon that URL, 
 do a `POST` on the **extensions** navigation property of that instance, like below:
 <!-- { "blockType": "ignored" } -->
