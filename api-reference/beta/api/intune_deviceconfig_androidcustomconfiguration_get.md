@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 597
+Content-Length: 625
 
 {
   "value": {
@@ -57,10 +57,11 @@ Content-Length: 597
     "version": 7,
     "omaSettings": [
       {
-        "@odata.type": "microsoft.graph.omaSetting",
+        "@odata.type": "microsoft.graph.omaSettingInteger",
         "displayName": "Display Name value",
         "description": "Description value",
-        "omaUri": "Oma Uri value"
+        "omaUri": "Oma Uri value",
+        "value": 5
       }
     ]
   }
