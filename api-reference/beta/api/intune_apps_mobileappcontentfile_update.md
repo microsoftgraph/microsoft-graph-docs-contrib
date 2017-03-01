@@ -36,6 +36,7 @@ The following table shows the properties that are required when you create a [mo
 |size|Int64|The size of the file prior to encryption.|
 |sizeEncrypted|Int64|The size of the file after encryption.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
+|manifest|Binary|The manifest information.|
 
 
 
@@ -48,7 +49,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 Content-type: application/json
-Content-length: 216
+Content-length: 247
 
 {
   "azureStorageUri": "Azure Storage Uri value",
@@ -56,7 +57,8 @@ Content-length: 216
   "name": "Name value",
   "size": 4,
   "sizeEncrypted": 13,
-  "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00"
+  "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
+  "manifest": "bWFuaWZlc3Q="
 }
 ```
 
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 383
+Content-Length: 414
 
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -76,7 +78,8 @@ Content-Length: 383
   "name": "Name value",
   "size": 4,
   "sizeEncrypted": 13,
-  "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00"
+  "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
+  "manifest": "bWFuaWZlc3Q="
 }
 ```
 

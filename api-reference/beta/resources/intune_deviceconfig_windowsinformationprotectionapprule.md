@@ -26,7 +26,9 @@ Here is a JSON representation of the resource.
   "title": "String",
   "mode": "String",
   "template": {
-    "@odata.type": "microsoft.graph.windowsInformationProtectionAppRuleTemplate"
+    "@odata.type": "microsoft.graph.windowsInformationProtectionAppRuleStoreAppTemplate",
+    "publisher": "String",
+    "productName": "String"
   }
 }
 ```

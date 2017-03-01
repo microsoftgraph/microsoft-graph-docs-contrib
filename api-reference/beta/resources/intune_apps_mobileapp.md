@@ -9,7 +9,6 @@ An abstract class containing the base properties for Intune mobile apps.
 |[List mobileApps](../api/intune_apps_mobileapp_list.md)|[mobileApp](../resources/intune_apps_mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) objects.|
 |[Get mobileApp](../api/intune_apps_mobileapp_get.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) object.|
 |[assign action](../api/intune_apps_mobileapp_assign.md)|None|Not yet documented|
-|[assignCategories action](../api/intune_apps_mobileapp_assigncategories.md)|None|Not yet documented|
 |[List mobileAppCategories](../api/intune_apps_mobileapp_list_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Get the mobileAppCategories from the categories navigation property.|
 |[List mobileAppGroupAssignments](../api/intune_apps_mobileapp_list_mobileappgroupassignment.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Get the mobileAppGroupAssignments from the groupAssignments navigation property.|
 |[List mobileAppInstallStatuses](../api/intune_apps_mobileapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|

@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /iosMobileAppConfigurations/
+POST /deviceAppManagement/iosLobAppProvisioningConfigurations/
 ```
 
 ## Request headers
@@ -28,18 +28,15 @@ The following table shows the properties that are required when you create a ios
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|settingXml|String|mdm app configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|targetedMobileApps|String collection|the associated app. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|expiration|DateTimeOffset|Optional profile expiration date	ime.|
+|id|String|Key of the entity.|
+|expiration|DateTimeOffset|Optional profile expiration date ime.|
 |payloadFileName|String|Payload file name (*.mobileprovision | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
+|createdDateTime|DateTimeOffset|DateTime the object was created.|
+|description|String|Admin provided description of the Device Configuration.|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
+|displayName|String|Admin provided name of the device configuration.|
+|version|Int32|Version of the device configuration.|
 
 
 
@@ -50,31 +47,19 @@ If successful, this method returns a `201 Created` response code and a [iosLobAp
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/iosMobileAppConfigurations/
+POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/
 Content-type: application/json
-Content-length: 726
+Content-length: 369
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
-  "settingXml": "Setting Xml value",
-  "settings": [
-    {
-      "@odata.type": "microsoft.graph.appConfigurationSettingItem",
-      "appConfigKey": "App Config Key value",
-      "appConfigKeyType": "integerType",
-      "appConfigKeyValue": "App Config Key Value value"
-    }
-  ],
-  "targetedMobileApps": [
-    "Targeted Mobile Apps value"
-  ],
+  "expiration": "2016-12-31T23:58:07.1690227-08:00",
+  "payloadFileName": "Payload File Name value",
+  "payload": "cGF5bG9hZA==",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
-  "version": 7,
-  "expiration": "2016-12-31T23:58:07.1690227-08:00",
-  "payloadFileName": "Payload File Name value",
-  "payload": "cGF5bG9hZA=="
+  "version": 7
 }
 ```
 
@@ -83,31 +68,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 834
+Content-Length: 477
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
   "id": "e2a23631-3631-e2a2-3136-a2e23136a2e2",
-  "settingXml": "Setting Xml value",
-  "settings": [
-    {
-      "@odata.type": "microsoft.graph.appConfigurationSettingItem",
-      "appConfigKey": "App Config Key value",
-      "appConfigKeyType": "integerType",
-      "appConfigKeyValue": "App Config Key Value value"
-    }
-  ],
-  "targetedMobileApps": [
-    "Targeted Mobile Apps value"
-  ],
+  "expiration": "2016-12-31T23:58:07.1690227-08:00",
+  "payloadFileName": "Payload File Name value",
+  "payload": "cGF5bG9hZA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
-  "version": 7,
-  "expiration": "2016-12-31T23:58:07.1690227-08:00",
-  "payloadFileName": "Payload File Name value",
-  "payload": "cGF5bG9hZA=="
+  "version": 7
 }
 ```
 

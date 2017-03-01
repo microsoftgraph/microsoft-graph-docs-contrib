@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1769
+Content-Length: 2151
 
 {
   "value": [
@@ -58,7 +58,9 @@ Content-Length: 1769
           "title": "Title value",
           "mode": "exempt",
           "template": {
-            "@odata.type": "microsoft.graph.windowsInformationProtectionAppRuleTemplate"
+            "@odata.type": "microsoft.graph.windowsInformationProtectionAppRuleStoreAppTemplate",
+            "publisher": "Publisher value",
+            "productName": "Product Name value"
           }
         }
       ],
@@ -71,7 +73,14 @@ Content-Length: 1769
           "@odata.type": "microsoft.graph.windowsInformationProtectionCorporateNetworkLocation",
           "name": "Name value",
           "protectedLocation": {
-            "@odata.type": "microsoft.graph.windowsInformationProtectionProtectedLocation"
+            "@odata.type": "microsoft.graph.windowsInformationProtectionProtectedLocationEnterpriseCloudResources",
+            "values": [
+              {
+                "@odata.type": "microsoft.graph.enterpriseCloudResource",
+                "address": "Address value",
+                "proxyServerUri": "Proxy Server Uri value"
+              }
+            ]
           }
         }
       ],

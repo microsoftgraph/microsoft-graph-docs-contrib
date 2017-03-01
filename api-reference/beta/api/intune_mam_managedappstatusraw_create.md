@@ -31,7 +31,7 @@ The following table shows the properties that are required when you create a man
 |displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |id|String|Key of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |version|String|Version of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|content|[managedAppSummary](../resources/intune_mam_managedappsummary.md)|Status report content.|
+|content|[Json](../resources/intune_mam_json.md)|Status report content.|
 
 
 
@@ -44,14 +44,14 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/managedAppStatuses/
 Content-type: application/json
-Content-length: 210
+Content-length: 197
 
 {
   "@odata.type": "#microsoft.graph.managedAppStatusRaw",
   "displayName": "Display Name value",
   "version": "Version value",
   "content": {
-    "@odata.type": "microsoft.graph.managedAppSummary"
+    "@odata.type": "microsoft.graph.Json"
   }
 }
 ```
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 259
+Content-Length: 246
 
 {
   "@odata.type": "#microsoft.graph.managedAppStatusRaw",
@@ -69,7 +69,7 @@ Content-Length: 259
   "id": "80847581-7581-8084-8175-848081758480",
   "version": "Version value",
   "content": {
-    "@odata.type": "microsoft.graph.managedAppSummary"
+    "@odata.type": "microsoft.graph.Json"
   }
 }
 ```
