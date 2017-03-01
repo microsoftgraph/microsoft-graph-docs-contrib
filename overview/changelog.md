@@ -10,6 +10,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |:-------------|:-----------|:--------------|
 |Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://graph.microsoft.io/en-us/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to Users using Open Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_open_users.md)<br/>[Add custom data to Groups using Schema Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_schema_groups.md)|
 
+### Directory APIs
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Added operations on [domains](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain).<br/>New entities:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>New actions:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verify]
+
 ## February 2017
 
 ### Directory APIs
