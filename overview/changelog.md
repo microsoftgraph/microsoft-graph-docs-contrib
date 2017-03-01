@@ -10,13 +10,13 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |:-------------|:-----------|:--------------|
 |Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://graph.microsoft.io/en-us/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to Users using Open Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_open_users.md)<br/>[Add custom data to Groups using Schema Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_schema_groups.md)|
 
-## February 2017
-
 ### Directory APIs
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|Beta|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
+
+## February 2017
 
 ### Intune APIs
 
