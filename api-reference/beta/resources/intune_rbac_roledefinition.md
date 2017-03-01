@@ -19,7 +19,7 @@ The Role Definition resource. The role definition is the foundation of role base
 |id|String|Key of the entity. This is read-only and automatically generated.|
 |displayName|String|Display Name of the Role definition.|
 |description|String|Description of the Role definition.|
-|permissions|[permission](../resources/intune_rbac_permission.md) collection|List of Resource Permissions this role is allowed to perform. These must match the actionName that is defined as part of the resourcePermission.|
+|permissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Resource Permissions this role is allowed to perform. These must match the actionName that is defined as part of the resourcePermission.|
 |isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.|
 
 ## Relationships
@@ -43,7 +43,7 @@ Here is a JSON representation of the resource.
   "description": "String",
   "permissions": [
     {
-      "@odata.type": "microsoft.graph.permission",
+      "@odata.type": "microsoft.graph.rolePermission",
       "actions": [
         "String"
       ]

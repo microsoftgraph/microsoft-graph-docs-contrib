@@ -9,7 +9,7 @@ Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreen
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Name of Application or Folder (optional) Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
+|displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
 |pages|[iosHomeScreenFolderPage](../resources/intune_deviceconfig_ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type|
 
 ## Relationships

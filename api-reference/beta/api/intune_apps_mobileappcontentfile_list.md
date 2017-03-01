@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 452
+Content-Length: 487
 
 {
   "value": [
@@ -53,7 +53,8 @@ Content-Length: 452
       "name": "Name value",
       "size": 4,
       "sizeEncrypted": 13,
-      "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00"
+      "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
+      "manifest": "bWFuaWZlc3Q="
     }
   ]
 }

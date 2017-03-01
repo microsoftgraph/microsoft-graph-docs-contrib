@@ -29,10 +29,6 @@ The following table shows the properties that are required when you create a [no
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
-|displayName|String|Display name for the Notification Message Template.|
-|defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
-|brandingOptions|String|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
 
 
@@ -45,14 +41,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}/notificationMessageTemplate/
 Content-type: application/json
-Content-length: 195
+Content-length: 2
 
-{
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "displayName": "Display Name value",
-  "defaultLocale": "Default Locale value",
-  "brandingOptions": "includeCompanyLogo"
-}
+{}
 ```
 
 ### Response
@@ -60,15 +51,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 310
+Content-Length: 118
 
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
-  "id": "e1db399b-399b-e1db-9b39-dbe19b39dbe1",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "displayName": "Display Name value",
-  "defaultLocale": "Default Locale value",
-  "brandingOptions": "includeCompanyLogo"
+  "id": "e1db399b-399b-e1db-9b39-dbe19b39dbe1"
 }
 ```
 
