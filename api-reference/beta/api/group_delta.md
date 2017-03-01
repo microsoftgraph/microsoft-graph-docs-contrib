@@ -21,7 +21,7 @@ GET /groups/delta
 
 ### Query parameters
 
-Tracking changes in messages incurs a round of one or more **delta** function calls. If you use any query parameter 
+Tracking changes in groups incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
 into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
@@ -31,8 +31,8 @@ includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same message collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same message collection. |
+| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same group collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same group collection. |
 
 ### Optional query parameters
 
@@ -40,7 +40,7 @@ This method supports OData Query Parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
-- Delta query support `$select`, `$top`, and `$expand` for messages. 
+- Delta query support `$select`, `$top`, and `$expand` for groups. 
 - There is limited support for `$filter` and `$orderby`:
   * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` 
   or `$filter=receivedDateTime+gt+{value}`.
