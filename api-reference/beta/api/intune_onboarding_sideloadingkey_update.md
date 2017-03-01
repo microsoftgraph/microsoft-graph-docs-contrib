@@ -28,12 +28,12 @@ The following table shows the properties that are required when you create a [si
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Not yet documented|
-|value|String|Not yet documented|
-|displayName|String|Not yet documented|
-|description|String|Not yet documented|
-|totalActivation|Int32|Not yet documented|
-|lastUpdatedDateTime|String|Not yet documented|
+|id|String|Side Loading Key Unique Id.|
+|value|String|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
+|displayName|String|Side Loading Key Name displayed to the ITPro Admins.|
+|description|String|Side Loading Key description displayed to the ITPro Admins..|
+|totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
+|lastUpdatedDateTime|String|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
 
 
 

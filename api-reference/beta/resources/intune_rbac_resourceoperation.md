@@ -11,6 +11,7 @@ This defines an operation or action that can be performed on an Intune resource 
 |[Create resourceOperation](../api/intune_rbac_resourceoperation_create.md)|[resourceOperation](../resources/intune_rbac_resourceoperation.md)|Create a new [resourceOperation](../resources/intune_rbac_resourceoperation.md) object.|
 |[Delete resourceOperation](../api/intune_rbac_resourceoperation_delete.md)|None|Deletes a [resourceOperation](../resources/intune_rbac_resourceoperation.md).|
 |[Update resourceOperation](../api/intune_rbac_resourceoperation_update.md)|[resourceOperation](../resources/intune_rbac_resourceoperation.md)|Update the properties of a [resourceOperation](../resources/intune_rbac_resourceoperation.md) object.|
+|[getScopesForUser function](../api/intune_rbac_resourceoperation_getscopesforuser.md)|String collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

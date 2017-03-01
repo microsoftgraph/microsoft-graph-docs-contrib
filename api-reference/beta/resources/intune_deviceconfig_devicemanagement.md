@@ -39,8 +39,8 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "settings": {
     "@odata.type": "microsoft.graph.deviceManagementSettings",
-    "windowsCommercialId": "String",
-    "windowsCommercialIdLastModifiedTime": "String (timestamp)"
+    "deviceComplianceCheckinThresholdDays": 1024,
+    "isScheduledActionEnabled": true
   }
 }
 ```

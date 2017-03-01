@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1117
+Content-Length: 1211
 
 {
   "value": [
@@ -58,7 +58,9 @@ Content-Length: 1117
       "microsoftUpdateServiceAllowed": true,
       "driversExcluded": true,
       "installationSchedule": {
-        "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
+        "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
+        "scheduledInstallDay": "everyday",
+        "scheduledInstallTime": "11:59:31.3170000"
       },
       "qualityUpdatesDeferralPeriodInDays": 2,
       "featureUpdatesDeferralPeriodInDays": 2,

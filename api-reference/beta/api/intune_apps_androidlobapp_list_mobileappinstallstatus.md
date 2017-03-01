@@ -1,4 +1,7 @@
-﻿# List mobileAppInstallStatuses> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+﻿# List mobileAppInstallStatuses
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Get the mobileAppInstallStatuses from the deviceStatuses navigation property.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -10,8 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /deviceAppManagement/mobileApps/{id}/deviceStatuses/
-GET /deviceAppManagement/mobileApps/{id}/userStatuses/{id}/deviceStatuses/
+GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
+GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/deviceStatuses/
 ```
 
 ## Request headers
@@ -30,7 +33,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
 ```
 
 ### Response
@@ -38,7 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 428
+Content-Length: 495
 
 {
   "value": [
@@ -48,10 +51,11 @@ Content-Length: 428
       "deviceName": "Device Name value",
       "deviceId": "Device Id value",
       "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-      "mobileAppInstallStatusValue": 27,
+      "mobileAppInstallStatusValue": "failed",
       "errorCode": 9,
-      "deviceType": 10,
-      "osVersion": "Os Version value"
+      "osVersion": "Os Version value",
+      "osDescription": "Os Description value",
+      "userName": "User Name value"
     }
   ]
 }

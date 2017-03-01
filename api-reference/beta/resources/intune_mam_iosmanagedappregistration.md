@@ -67,7 +67,8 @@ Here is a JSON representation of the resource.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.iosMobileAppIdentifier",
+    "bundleId": "String"
   },
   "id": "String (identifier)",
   "version": "String"

@@ -34,11 +34,12 @@ The following table shows the properties that are required when you create a ios
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceSharingAssetTagInformation|String|Asset tag information for the device, displayed on the login window and lock screen.|
-|deviceSharingLockScreenFootnote|String|A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.|
-|homeScreenLayoutDockIcons|[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock|
-|homeScreenLayoutPages|[iosHomeScreenPage](../resources/intune_deviceconfig_ioshomescreenpage.md) collection|A list of pages on the Home Screen|
-|notificationSettings|[iosNotificationSettings](../resources/intune_deviceconfig_iosnotificationsettings.md) collection|Notification settings for each bundle identifier. Applicable to devices in supervised mode only (iOS 9.3 and later).|
+|airPrintDestinations|[airPrintDestination](../resources/intune_deviceconfig_airprintdestination.md) collection|An array of AirPrint printers that should always be shown. Inherited from [appleDeviceFeaturesConfigurationBase](../resources/intune_deviceconfig_appledevicefeaturesconfigurationbase.md)|
+|assetTagTemplate|String|Asset tag information for the device, displayed on the login window and lock screen.|
+|lockScreenFootnote|String|A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.|
+|homeScreenDockIcons|[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock|
+|homeScreenPages|[iosHomeScreenPage](../resources/intune_deviceconfig_ioshomescreenpage.md) collection|A list of pages on the Home Screen|
+|notificationSettings|[iosNotificationSettings](../resources/intune_deviceconfig_iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later).|
 
 
 
@@ -51,7 +52,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 1190
+Content-length: 2103
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -59,21 +60,52 @@ Content-length: 1190
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deviceSharingAssetTagInformation": "Device Sharing Asset Tag Information value",
-  "deviceSharingLockScreenFootnote": "Device Sharing Lock Screen Footnote value",
-  "homeScreenLayoutDockIcons": [
+  "airPrintDestinations": [
     {
-      "@odata.type": "microsoft.graph.iosHomeScreenItem",
-      "displayName": "Display Name value"
+      "@odata.type": "microsoft.graph.airPrintDestination",
+      "ipAddress": "Ip Address value",
+      "resourcePath": "Resource Path value"
     }
   ],
-  "homeScreenLayoutPages": [
+  "assetTagTemplate": "Asset Tag Template value",
+  "lockScreenFootnote": "Lock Screen Footnote value",
+  "homeScreenDockIcons": [
+    {
+      "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+      "displayName": "Display Name value",
+      "pages": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+          "apps": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenApp",
+              "displayName": "Display Name value",
+              "bundleID": "Bundle ID value"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "homeScreenPages": [
     {
       "@odata.type": "microsoft.graph.iosHomeScreenPage",
       "icons": [
         {
-          "@odata.type": "microsoft.graph.iosHomeScreenItem",
-          "displayName": "Display Name value"
+          "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+          "displayName": "Display Name value",
+          "pages": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+              "apps": [
+                {
+                  "@odata.type": "microsoft.graph.iosHomeScreenApp",
+                  "displayName": "Display Name value",
+                  "bundleID": "Bundle ID value"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -81,11 +113,13 @@ Content-length: 1190
   "notificationSettings": [
     {
       "@odata.type": "microsoft.graph.iosNotificationSettings",
-      "bundleIdentifier": "Bundle Identifier value",
-      "notificationsEnabled": true,
+      "bundleID": "Bundle ID value",
+      "appName": "App Name value",
+      "publisher": "Publisher value",
+      "enabled": true,
       "showInNotificationCenter": true,
-      "showInLockScreen": true,
-      "alertType": "none",
+      "showOnLockScreen": true,
+      "alertType": "banner",
       "badgesEnabled": true,
       "soundsEnabled": true
     }
@@ -98,7 +132,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1298
+Content-Length: 2211
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -108,21 +142,52 @@ Content-Length: 1298
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deviceSharingAssetTagInformation": "Device Sharing Asset Tag Information value",
-  "deviceSharingLockScreenFootnote": "Device Sharing Lock Screen Footnote value",
-  "homeScreenLayoutDockIcons": [
+  "airPrintDestinations": [
     {
-      "@odata.type": "microsoft.graph.iosHomeScreenItem",
-      "displayName": "Display Name value"
+      "@odata.type": "microsoft.graph.airPrintDestination",
+      "ipAddress": "Ip Address value",
+      "resourcePath": "Resource Path value"
     }
   ],
-  "homeScreenLayoutPages": [
+  "assetTagTemplate": "Asset Tag Template value",
+  "lockScreenFootnote": "Lock Screen Footnote value",
+  "homeScreenDockIcons": [
+    {
+      "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+      "displayName": "Display Name value",
+      "pages": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+          "apps": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenApp",
+              "displayName": "Display Name value",
+              "bundleID": "Bundle ID value"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "homeScreenPages": [
     {
       "@odata.type": "microsoft.graph.iosHomeScreenPage",
       "icons": [
         {
-          "@odata.type": "microsoft.graph.iosHomeScreenItem",
-          "displayName": "Display Name value"
+          "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+          "displayName": "Display Name value",
+          "pages": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+              "apps": [
+                {
+                  "@odata.type": "microsoft.graph.iosHomeScreenApp",
+                  "displayName": "Display Name value",
+                  "bundleID": "Bundle ID value"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -130,11 +195,13 @@ Content-Length: 1298
   "notificationSettings": [
     {
       "@odata.type": "microsoft.graph.iosNotificationSettings",
-      "bundleIdentifier": "Bundle Identifier value",
-      "notificationsEnabled": true,
+      "bundleID": "Bundle ID value",
+      "appName": "App Name value",
+      "publisher": "Publisher value",
+      "enabled": true,
       "showInNotificationCenter": true,
-      "showInLockScreen": true,
-      "alertType": "none",
+      "showOnLockScreen": true,
+      "alertType": "banner",
       "badgesEnabled": true,
       "soundsEnabled": true
     }

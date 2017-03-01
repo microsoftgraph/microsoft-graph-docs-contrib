@@ -46,7 +46,6 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |expirationDateTime|DateTimeOffset|The expiration time.|
-|manifest|Binary|The manifest information.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -111,8 +110,7 @@ Here is a JSON representation of the resource.
     "v9_0": true,
     "v10_0": true
   },
-  "expirationDateTime": "String (timestamp)",
-  "manifest": "binary"
+  "expirationDateTime": "String (timestamp)"
 }
 ```
 
