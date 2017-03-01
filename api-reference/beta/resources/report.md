@@ -6,23 +6,23 @@ Represents an Office 365 usage report object. It is a stream, which will return 
 
 |Method|Return Type|Description|
 |:---------------|:--------|:----------|
-|Get [EmailAppUsage](../api/reportroot_emailappusage.md)|[Report](report.md)|Get all the reports of EmailAppUsage|
-|Get [EmailActivity](../api/reportroot_emailactivity.md)|[Report](report.md)|Get all the reports of EmailActivity|
-|Get [MailboxUsage](../api/reportroot_mailboxusage.md)|[Report](report.md)|Get all the reports of MailboxUsage|
-|Get [Office365ActiveUsers](../api/reportroot_office365activeusers.md)|[Report](report.md)|Get all the reports of Office365ActiveUsers|
-|Get [Office365GroupsActivity](../api/reportroot_office365groupsactivity.md)|[Report](report.md)|Get all the reports of Office365GroupsActivity|
-|Get [Office365Activations](../api/reportroot_office365activations.md)|[Report](report.md)|Get all the reports of Office365Activations|
-|Get [OneDriveUsage](../api/reportroot_onedriveusage.md)|[Report](report.md)|Get all the reports of OneDriveUsage|
-|Get [OneDriveActivity](../api/reportroot_onedriveactivity.md)|[Report](report.md)|Get all the reports of OneDriveActivity|
-|Get [SfbDeviceUsage](../api/reportroot_sfbdeviceusage.md)|[Report](report.md)|Get all the reports of SfbDeviceUsage|
-|Get [SfbOrganizerActivity](../api/reportroot_sfborganizeractivity.md)|[Report](report.md)|Get all the reports of SfbOrganizerActivity|
-|Get [SfbP2PActivity](../api/reportroot_sfbp2pactivity.md)|[Report](report.md)|Get all the reports of SfbP2PActivity|
-|Get [SfbParticipantActivity](../api/reportroot_sfbparticipantactivity.md)|[Report](report.md)|Get all the reports of SfbParticipantActivity|
-|Get [SfbActivity](../api/reportroot_sfbactivity.md)|[Report](report.md)|Get all the reports of SfbActivity|
-|Get [SharePointSiteUsage](../api/reportroot_sharepointsiteusage.md)|[Report](report.md)|Get all the reports of SharePointSiteUsage|
-|Get [SharePointActivity](../api/reportroot_sharepointactivity.md)|[Report](report.md)|Get all the reports of SharePointActivity|
-|Get [YammerDeviceUsage](../api/reportroot_yammerdeviceusage.md)|[Report](report.md)|Get all the reports of YammerDeviceUsage|
-|Get [YammerActivity](../api/reportroot_yammeractivity.md)|[Report](report.md)|Get all the reports of YammerActivity|
+|Get [EmailAppUsage](../api/reportroot_emailappusage.md) report|[Report](report.md)|Get all the reports of EmailAppUsage|
+|Get [EmailActivity](../api/reportroot_emailactivity.md) report|[Report](report.md)|Get all the reports of EmailActivity|
+|Get [MailboxUsage](../api/reportroot_mailboxusage.md) report|[Report](report.md)|Get all the reports of MailboxUsage|
+|Get [Office365ActiveUsers](../api/reportroot_office365activeusers.md) report|[Report](report.md)|Get all the reports of Office365ActiveUsers|
+|Get [Office365GroupsActivity](../api/reportroot_office365groupsactivity.md) report|[Report](report.md)|Get all the reports of Office365GroupsActivity|
+|Get [Office365Activations](../api/reportroot_office365activations.md) report|[Report](report.md)|Get all the reports of Office365Activations|
+|Get [OneDriveUsage](../api/reportroot_onedriveusage.md) report|[Report](report.md)|Get all the reports of OneDriveUsage|
+|Get [OneDriveActivity](../api/reportroot_onedriveactivity.md) report|[Report](report.md)|Get all the reports of OneDriveActivity|
+|Get [SfbDeviceUsage](../api/reportroot_sfbdeviceusage.md) report|[Report](report.md)|Get all the reports of SfbDeviceUsage|
+|Get [SfbOrganizerActivity](../api/reportroot_sfborganizeractivity.md) report|[Report](report.md)|Get all the reports of SfbOrganizerActivity|
+|Get [SfbP2PActivity](../api/reportroot_sfbp2pactivity.md) report|[Report](report.md)|Get all the reports of SfbP2PActivity|
+|Get [SfbParticipantActivity](../api/reportroot_sfbparticipantactivity.md) report|[Report](report.md)|Get all the reports of SfbParticipantActivity|
+|Get [SfbActivity](../api/reportroot_sfbactivity.md) report|[Report](report.md)|Get all the reports of SfbActivity|
+|Get [SharePointSiteUsage](../api/reportroot_sharepointsiteusage.md) report|[Report](report.md)|Get all the reports of SharePointSiteUsage|
+|Get [SharePointActivity](../api/reportroot_sharepointactivity.md) report|[Report](report.md)|Get all the reports of SharePointActivity|
+|Get [YammerDeviceUsage](../api/reportroot_yammerdeviceusage.md) report|[Report](report.md)|Get all the reports of YammerDeviceUsage|
+|Get [YammerActivity](../api/reportroot_yammeractivity.md) report|[Report](report.md)|Get all the reports of YammerActivity|
 
 ## Properties
 

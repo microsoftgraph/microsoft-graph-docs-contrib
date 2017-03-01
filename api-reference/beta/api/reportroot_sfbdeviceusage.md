@@ -1,6 +1,6 @@
 # GET: SfbDeviceUsage report
 
-Retrieve the reports of Sky for Business Client Activity. The response will be a CSV file in a binary stream.
+Retrieve the reports of Skype for Business Client Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3) to check the meaning of different views.
 
