@@ -54,7 +54,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedAppRegistrations/{managedAppRegistrationsId}
 Content-type: application/json
-Content-length: 532
+Content-length: 577
 
 {
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
@@ -69,7 +69,8 @@ Content-length: 532
   ],
   "userId": "User Id value",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "Package Id value"
   },
   "version": "Version value"
 }
@@ -80,7 +81,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 708
+Content-Length: 753
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -97,7 +98,8 @@ Content-Length: 708
   ],
   "userId": "User Id value",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "Package Id value"
   },
   "id": "0e064997-4997-0e06-9749-060e9749060e",
   "version": "Version value"

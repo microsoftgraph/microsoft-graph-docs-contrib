@@ -21,7 +21,7 @@ Inherits from [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |id|String|Key of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |version|String|Version of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|content|[managedAppSummary](../resources/intune_mam_managedappsummary.md)|Status report content.|
+|content|[Json](../resources/intune_mam_json.md)|Status report content.|
 
 ## Relationships
 None
@@ -40,7 +40,7 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "version": "String",
   "content": {
-    "@odata.type": "microsoft.graph.managedAppSummary"
+    "@odata.type": "microsoft.graph.Json"
   }
 }
 ```

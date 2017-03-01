@@ -6,7 +6,7 @@ Represents an item on the iOS Home Screen
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Name of Application or Folder (optional)|
+|displayName|String|Name of the app|
 
 ## Relationships
 None

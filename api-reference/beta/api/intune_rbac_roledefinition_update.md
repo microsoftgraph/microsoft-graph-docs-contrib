@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a [ro
 |id|String|Key of the entity. This is read-only and automatically generated.|
 |displayName|String|Display Name of the Role definition.|
 |description|String|Description of the Role definition.|
-|permissions|[permission](../resources/intune_rbac_permission.md) collection|List of Resource Permissions this role is allowed to perform. These must match the actionName that is defined as part of the resourcePermission.|
+|permissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Resource Permissions this role is allowed to perform. These must match the actionName that is defined as part of the resourcePermission.|
 |isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.|
 
 
@@ -46,14 +46,14 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
-Content-length: 264
+Content-length: 268
 
 {
   "displayName": "Display Name value",
   "description": "Description value",
   "permissions": [
     {
-      "@odata.type": "microsoft.graph.permission",
+      "@odata.type": "microsoft.graph.rolePermission",
       "actions": [
         "Actions value"
       ]
@@ -68,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 366
+Content-Length: 370
 
 {
   "@odata.type": "#microsoft.graph.roleDefinition",
@@ -77,7 +77,7 @@ Content-Length: 366
   "description": "Description value",
   "permissions": [
     {
-      "@odata.type": "microsoft.graph.permission",
+      "@odata.type": "microsoft.graph.rolePermission",
       "actions": [
         "Actions value"
       ]
