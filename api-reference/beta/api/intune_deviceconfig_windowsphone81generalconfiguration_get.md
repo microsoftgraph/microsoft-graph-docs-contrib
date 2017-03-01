@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1777
+Content-Length: 1740
 
 {
   "value": {
@@ -55,7 +55,6 @@ Content-Length: 1777
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "applyToWindows10Mobile": true,
     "applyOnlyToWindowsPhone81": true,
     "appsBlockCopyPaste": true,
     "bluetoothBlocked": true,

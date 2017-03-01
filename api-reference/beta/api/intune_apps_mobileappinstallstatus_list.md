@@ -41,7 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 428
+Content-Length: 495
 
 {
   "value": [
@@ -51,10 +51,11 @@ Content-Length: 428
       "deviceName": "Device Name value",
       "deviceId": "Device Id value",
       "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-      "mobileAppInstallStatusValue": 11,
+      "mobileAppInstallStatusValue": "failed",
       "errorCode": 9,
-      "deviceType": 10,
-      "osVersion": "Os Version value"
+      "osVersion": "Os Version value",
+      "osDescription": "Os Description value",
+      "userName": "User Name value"
     }
   ]
 }

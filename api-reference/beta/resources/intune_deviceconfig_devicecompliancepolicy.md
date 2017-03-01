@@ -9,11 +9,13 @@ This is the base class for Compliance policy. Compliance policies are platform s
 |[List deviceCompliancePolicies](../api/intune_deviceconfig_devicecompliancepolicy_list.md)|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) collection|List properties and relationships of the [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) objects.|
 |[Get deviceCompliancePolicy](../api/intune_deviceconfig_devicecompliancepolicy_get.md)|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|Read properties and relationships of the [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) object.|
 |[assign action](../api/intune_deviceconfig_devicecompliancepolicy_assign.md)|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) collection|Not yet documented|
+|[scheduleActionsForRules action](../api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules.md)|None|Not yet documented|
 |[List deviceCompliancePolicyGroupAssignments](../api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancepolicygroupassignment.md)|[deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) collection|Get the deviceCompliancePolicyGroupAssignments from the groupAssignments navigation property.|
 |[List deviceComplianceScheduledActionForRules](../api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancescheduledactionforrule.md)|[deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) collection|Get the deviceComplianceScheduledActionForRules from the scheduledActionsForRule navigation property.|
 |[List deviceComplianceDeviceStatuses](../api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancedevicestatus.md)|[deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) collection|Get the deviceComplianceDeviceStatuses from the deviceStatuses navigation property.|
 |[List deviceComplianceUserStatuses](../api/intune_deviceconfig_devicecompliancepolicy_list_devicecomplianceuserstatus.md)|[deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md) collection|Get the deviceComplianceUserStatuses from the userStatuses navigation property.|
 |[Get deviceComplianceDeviceOverview](../api/intune_deviceconfig_devicecompliancepolicy_get_devicecompliancedeviceoverview.md)|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|Get the [deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md) from the deviceStatusOverview navigation property.|
+|[Get deviceComplianceUserOverview](../api/intune_deviceconfig_devicecompliancepolicy_get_devicecomplianceuseroverview.md)|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|Get the [deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md) from the userStatusOverview navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,6 +35,7 @@ This is the base class for Compliance policy. Compliance policies are platform s
 |deviceStatuses|[deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) collection|List of DeviceComplianceDeviceStatus.|
 |userStatuses|[deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md) collection|List of DeviceComplianceUserStatus.|
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|Device compliance devices status overview|
+|userStatusOverview|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|Device compliance users status overview|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

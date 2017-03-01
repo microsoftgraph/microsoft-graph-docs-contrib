@@ -61,7 +61,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 812
+Content-length: 898
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -74,7 +74,9 @@ Content-length: 812
   "microsoftUpdateServiceAllowed": true,
   "driversExcluded": true,
   "installationSchedule": {
-    "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
+    "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
+    "scheduledInstallDay": "everyday",
+    "scheduledInstallTime": "11:59:31.3170000"
   },
   "qualityUpdatesDeferralPeriodInDays": 2,
   "featureUpdatesDeferralPeriodInDays": 2,
@@ -91,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 996
+Content-Length: 1082
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -107,7 +109,9 @@ Content-Length: 996
   "microsoftUpdateServiceAllowed": true,
   "driversExcluded": true,
   "installationSchedule": {
-    "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
+    "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
+    "scheduledInstallDay": "everyday",
+    "scheduledInstallTime": "11:59:31.3170000"
   },
   "qualityUpdatesDeferralPeriodInDays": 2,
   "featureUpdatesDeferralPeriodInDays": 2,
