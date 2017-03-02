@@ -27,9 +27,6 @@ One of the following **permissions** is required to execute this API, depending 
 
 This section lists the syntax for each of the three `GET` scenarios described above.
 
->**Note:** Some resources support identifying an instance in multiple ways, all of which support getting 
-an extension. The syntax in each of the next three sections below represents only a subset of what's supported. 
-
 ### Get a specific extension in a known resource instance
 
 Use the same REST request as getting the resource instance, and identify the extension using the **extensions** 
@@ -76,24 +73,9 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
-### Complete syntax
-
-You can find more complete descriptions of the ways to identify 
-an existing resource instance in the corresponding `GET` topic below: 
-
-- [Get a contact](../api/contact_get.md)
-- [Get an event](../api/event_get.md)
-- [Get a group event](../api/event_get.md)
-- [Get a group post](../api/post_get.md)
-- [Get a message](../api/message_get.md) 
-
-And you can find more complete descriptions of the ways to get 
-a supported resource collection in the corresponding topic below:
-
-- [List contacts](../api/User_list_contacts.md)
-- [List events](../api/user_list_events.md)
-- [List group events](../api/group_list_events.md)
-- [List messages](../api/user_list_messages.md) 
+>**Note:** The above syntax shows some common ways to identify a resource instance or collection, 
+in order to get an extension from it. All other GET syntax that allows you to identify these resource 
+instances or collections supports getting open extensions from them in a similar way.
 
 
 ## Parameters

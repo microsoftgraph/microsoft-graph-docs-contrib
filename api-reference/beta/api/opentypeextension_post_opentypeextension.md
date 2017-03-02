@@ -31,6 +31,9 @@ POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 ```
 
+>**Note:** The above syntax shows some common ways to create the supported resource instances. All other POST syntax 
+that allows you to create these resource instances supports creating open extensions in them in a similar way.
+
 See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.
 
 ### Create an extension in an existing resource instance
@@ -51,18 +54,8 @@ POST /devices/{id}/extensions
 POST /organization/{id}/extensions
 ```
 
-For example, you can identify an existing message in the signed-in user's mailbox as follows:
-<!-- { "blockType": "ignored" } -->
-```http
-/me/messages/{id}
-```
-
-To create an extension in an existing message instance in that mailbox, build upon that URL, 
-do a `POST` on the **extensions** navigation property of that instance, like below:
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/extensions
-```
+>**Note:** The above syntax shows some common ways to identify a resource instance, in order to create an 
+extension in it. All other GET syntax that allows you to identify these resource instances supports creating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
 
