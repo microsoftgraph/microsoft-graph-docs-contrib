@@ -34,8 +34,8 @@
   		<Item text="Example: Users (preview)" url="/en-us/concepts/delta_query_users" />
   	</Item>
   	<Item text="Add custom data to resources" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
-  		<Item text="Example: Add custom data with Open Extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
-  		<Item text="Example: Add custom data with Schema Extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
+  		<Item text="Example: Add custom data with open extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
+  		<Item text="Example: Add custom data with schema extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
   	</Item>
   	<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
   	<Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
@@ -1219,6 +1219,28 @@
       </Item>
     </Item>
 
+	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
+		<Item text="Office 365 usage reports" url="/en-us/api-reference/beta/resources/report" >
+			<Item text="Get EmailAppUsage report" url="/en-us/api-reference/beta/api/reportroot_emailappusage" SEOKeyword="Get Email App Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Email App Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get EmailActivity report" url="/en-us/api-reference/beta/api/reportroot_emailactivity" SEOKeyword="Get Email Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Exchange Email Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get MailboxUsage report" url="/en-us/api-reference/beta/api/reportroot_mailboxusage" SEOKeyword="Get Mailbox Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Mailbox Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Office365ActiveUsers report" url="/en-us/api-reference/beta/api/reportroot_office365activeusers" SEOKeyword="Get Office 365 Active Users report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Active Users reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Office365GroupsActivity report" url="/en-us/api-reference/beta/api/reportroot_office365groupsactivity" SEOKeyword="Get Office 365 Groups Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Groups Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get Office365Activations report" url="/en-us/api-reference/beta/api/reportroot_office365activations" SEOKeyword="Get Office 365 Activations report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Activations reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get OneDriveUsage report" url="/en-us/api-reference/beta/api/reportroot_onedriveusage" SEOKeyword="Get OneDrive Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the OneDrive Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get OneDriveActivity report" url="/en-us/api-reference/beta/api/reportroot_onedriveactivity" SEOKeyword="Get OneDrive Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the OneDrive Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SfbDeviceUsage report" url="/en-us/api-reference/beta/api/reportroot_sfbdeviceusage" SEOKeyword="Get Skype for Business Device Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Device Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SfbOrganizerActivity report" url="/en-us/api-reference/beta/api/reportroot_sfborganizeractivity" SEOKeyword="Get Skype for Business Organizer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Organizer Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SfbP2PActivity report" url="/en-us/api-reference/beta/api/reportroot_sfbp2pactivity" SEOKeyword="Get Skype for Business Peer to Peer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Peer to Peer Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SfbParticipantActivity report" url="/en-us/api-reference/beta/api/reportroot_sfbparticipantactivity" SEOKeyword="Get Skype for Business Participant Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Participant Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SfbActivity report" url="/en-us/api-reference/beta/api/reportroot_sfbactivity" SEOKeyword="Get Skype for Business User Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business User Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SharePointSiteUsage report" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="Get SharePoint Site Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the SharePoint Site Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get SharePointActivity report" url="/en-us/api-reference/beta/api/reportroot_sharepointactivity" SEOKeyword="Get SharePoint Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the SharePoint Activity reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get YammerDeviceUsage report" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Get Yammer Device Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Device Usage reports. The response will be a CSV file in a binary stream." />
+			<Item text="Get YammerActivity report" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Get Yammer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Activity reports. The response will be a CSV file in a binary stream." />
+		</Item>
+	</Item>
+	
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
       <Item text="Manage apps" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
         <Item text="Android LOB app" url="/en-us/api-reference/beta/resources/intune_apps_androidlobapp">
