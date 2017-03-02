@@ -1,6 +1,6 @@
 # Delete open extension
 
-Delete a open extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
+Delete an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
 
 ## Prerequisites
 
