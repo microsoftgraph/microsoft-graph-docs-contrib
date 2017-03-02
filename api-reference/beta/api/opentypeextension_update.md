@@ -41,7 +41,7 @@ PATCH /organization/{Id}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 
-All other GET syntax that allows you to identify these resource instances supports updating open extensions in them in a similar way.
+All other syntax that allows you to identify these resource instances supports updating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.
 

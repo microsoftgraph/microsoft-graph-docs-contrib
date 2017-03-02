@@ -55,7 +55,7 @@ POST /organization/{id}/extensions
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to create an 
-extension in it. All other GET syntax that allows you to identify these resource instances supports creating open extensions in them in a similar way.
+extension in it. All other syntax that allows you to identify these resource instances supports creating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
 

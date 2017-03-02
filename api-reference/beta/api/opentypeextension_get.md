@@ -74,7 +74,7 @@ GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expan
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance or collection, 
-in order to get an extension from it. All other GET syntax that allows you to identify these resource 
+in order to get an extension from it. All other syntax that allows you to identify these resource 
 instances or collections supports getting open extensions from them in a similar way.
 
 
