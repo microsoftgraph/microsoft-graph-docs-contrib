@@ -1,4 +1,4 @@
-# Add custom data to Groups using Schema Extensions (preview)
+# Add custom data to groups using schema extensions (preview)
 
 We're going to walk you through an example to demonstrate how to use *schema extensions*. 
 
@@ -12,7 +12,7 @@ For this scenario, we're going to show you how to:
 4. Add or update custom data to an existing group based on a schema extension definition
 5. Read back a group and the extension data
 
->NOTE: This topic shows you how to create and read schema extension values on a *group* resource (steps 3-5).  These methods are also supported for the *device, event, message, post,* and *user* resource types.  So you can update the example requests below using any of those resources.
+>**Note:** This topic shows you how to create and read schema extension values on a *group* resource (steps 3-5).  These methods are also supported for the *device, event, message, post,* and *user* resource types.  So you can update the example requests below using any of those resources.
 
 ## 1. View available schema extensions
 First, as a developer, we might want to find any other schema extension definitions that our app could reuse.  This can be done by querying the *schemaExtensions* resource.  In the example below, we're going to query for a specific schema extension by *id*.

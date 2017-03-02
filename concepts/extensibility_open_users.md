@@ -1,4 +1,4 @@
-# Add custom data to Users using Open Extensions (preview)
+# Add custom data to users using open extensions (preview)
 We're going to walk you through an example to demonstrate how to use *open extensions*. 
 
 Imagine you're building an application that is available on lots of different client platforms, such as desktop and mobile.  You want to let users configure their UI experience so it’s consistent no matter which device they use to sign in to your app. This is a common requirement for most apps. 
@@ -10,7 +10,7 @@ For this scenario, we're going to show you how to:
 3. Change the user's roaming profile information (the open extension value).
 4. Delete the user's roaming profile information.
 
->NOTE: This topic shows you how to add, read, update and delete open extensions on a *user* resource.  These methods are also supported for the *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* and *organizaton* resource types.  Simply update the example requests below using any of those resource types. The responses shown in the examples below may be truncated for brevity. 
+>**Note:** This topic shows you how to add, read, update and delete open extensions on a *user* resource.  These methods are also supported for the *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* and *organizaton* resource types.  Simply update the example requests below using any of those resource types. The responses shown in the examples below may be truncated for brevity. 
 
 ## 1. Add roaming profile information
 The user signs in to the app and configures the look and feel of the app.  These app settings should roam so that the user gets the same experience on whatever device they sign in to the app from.  Here we'll see how to add the roaming profile information to a user resource.
@@ -73,7 +73,7 @@ Content-length: 420
     ]
 }
 ```
-> NOTE: If you have multiple extensions, you can filter on the *id* to get the extension that you are interested in.
+>**Note:** If you have multiple extensions, you can filter on the *id* to get the extension that you are interested in.
 
 ## 3. Change roaming profile information
 The user may choose to change their roaming profile information.  This update can be done with a ```PATCH``` on the open extension value. 

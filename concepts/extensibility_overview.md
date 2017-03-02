@@ -7,7 +7,7 @@ Microsoft Graph offers two types of extensions. Choose the extension type that b
 *  **Open extensions**: A good way for developers to get started with extending resources with custom data.
 *  **Schema extensions**: A more versatile mechanism for developers who care about storing typed data, making their schema discoverable and shareable, being able to filter, and in the future being able to perform input data validation and authorization.
 
-> IMPORTANT: You should not use this feature to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
+>**Important:** You should not use this feature to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 
 ## Supported Resources
 
@@ -29,7 +29,7 @@ The following table shows the current support for open and schema extensions and
 ## Open extensions
 Open extensions gives you an easy way to directly add untyped properties to a resource in the Microsoft Graph. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](../api-reference/beta/resources/extension.md) abstract type.  Each extension has an additional **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
 
->NOTE: Open extensions for administrative units, devices, groups, organization and users are only available in preview.
+>**Note:** Open extensions for administrative units, devices, groups, organization and users are only available in preview.
 
 Open extension example: [Add custom data to Users using Open Extensions (preview)](extensibility_open_users.md)
 
@@ -58,7 +58,7 @@ The following data types are supported when defining a property in a schema exte
 | Integer | 32-bit value. Not supported for messages, events and posts. |
 | String | 256 characters maximum. |
 
->NOTE: Multi-value properties are not currently supported.
+>**Note:** Multi-value properties are not currently supported.
 
 ### Azure AD directory schema extensions
 Creating, reading, updating and deleting [Azure AD directory schema extensions](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions) values on resources is supported through Microsoft Graph.  However, creating and managing Azure AD directory schema extensions definitions is not supported currently through Microsoft Graph.
