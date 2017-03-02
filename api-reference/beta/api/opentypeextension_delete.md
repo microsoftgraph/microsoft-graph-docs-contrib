@@ -35,7 +35,7 @@ DELETE /organization/{Id}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
-All other GET syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
+All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
 ## Parameters
 |**Parameter**|**Type**|**Description**|
