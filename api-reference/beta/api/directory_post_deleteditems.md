@@ -1,13 +1,11 @@
 # Restore deletedItem
 
-Restores a [deleted item](../resources/directory.md).
+Restores a recently [deleted item](../resources/deleteditems.md). Currently, only a group can be restored. If a group was accidentally deleted, you can restore the group from deleted items. The group will be fully restored including memberships and data.
 
-> **Important**: Deleted groups in the Recycle bin will be permanently deleted after 30 days.
+Deleted items will remain available for up to 30 days. After 30 days, the items are permanently deleted.
 
 ### Prerequisites
-The following **scopes** are required to execute this API:
-* For users: *User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-* For groups: *Group.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+The following **scopes** are required to execute this API: *Group.ReadWrite.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

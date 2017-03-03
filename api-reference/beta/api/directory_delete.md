@@ -1,11 +1,14 @@
 # Delete deletedItem
 
-Permanently delete an item in [deleted items](../resources/directory.md).
+Permanently deletes an item from [deleted items](../resources/deleteditems.md).
+
+You can permanently delete a group or an application from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
 
 ### Prerequisites
-The following **scopes** are required to execute this API:
-* For users: *User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-* For groups: *Group.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+One of the following **scopes** are required to execute this API:
+* For applications: *Directory.ReadWrite.All*
+* For groups: *Group.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

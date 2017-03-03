@@ -1,20 +1,18 @@
 # Get deletedItem
 
-Retrieve the properties of an item in [deleted items](../resources/directory.md).
+Retrieve the properties of a recently deleted item in [deleted items](../resources/deleteditems.md).
 
 ### Prerequisites
 One of the following **scopes** are required to execute this API:
-* For users: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-* For groups: *Group.Read.All or Group.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+* For applications: *Directory.Read.All*
+* For groups: *Group.Read.All; Directory.Read.All*
+* For users: *User.Read.All; Directory.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deletedItems/Microsoft.Graph.Group/{id}
-GET /directory/deletedItems/Microsoft.Graph.User/{id}
+GET /directory/deletedItems/{id}
 ```
-
-This API currently supports retrieving object types of groups (Microsoft.Graph.Group) or users (Microsoft.Graph.User) from deleted items. The type is specified as part of the URI.
 
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -28,7 +26,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [directory](../resources/directory.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [directory](../resources/deleteditems.md) object in the response body.
 ### Example
 ##### Request
 
@@ -37,7 +35,7 @@ If successful, this method returns a `200 OK` response code and [directory](../r
   "name": "get_directory"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directory/deletedItems/Microsoft.Graph.Group/46cc6179-19d0-473e-97ad-6ff84347bbbb
+GET https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

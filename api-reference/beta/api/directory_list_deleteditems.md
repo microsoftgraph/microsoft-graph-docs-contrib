@@ -1,20 +1,22 @@
 # List deletedItems
 
-Retrieve a list of [deleted items](../resources/directory.md).
+Retrieve a list of recently deleted items of a specific type in [deleted items](../resources/deleteditems.md).
+
+You can retrieve object types of applications, groups, and users from deleted items. The type is specified in the URI and is required. Calling GET /directory/deletedItems without a type is not supported.
 
 ### Prerequisites
-The following **scopes** are required to execute this API:
-* For users: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-* For groups: *Group.Read.All or Group.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+One of the following **scopes** are required to execute this API:
+* For applications: *Directory.Read.All*
+* For groups: *Group.Read.All; Directory.Read.All*
+* For users: *User.Read.All; Directory.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http 
+GET /directory/deletedItems/Microsoft.Graph.Application
 GET /directory/deletedItems/Microsoft.Graph.Group
 GET /directory/deletedItems/Microsoft.Graph.User
 ```
-
-This API currently supports retrieving object types of groups (Microsoft.Graph.Group) or users (Microsoft.Graph.User) from deleted items. The type is specified as part of the URI.
 
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
