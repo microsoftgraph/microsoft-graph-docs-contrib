@@ -1,6 +1,6 @@
 # Delete schemaExtension
 
-Delete a schemaExtension.
+Delete a schema extension definition [schemaExtension](../resources/schemaExtension.md) resource.
 
 ## Prerequisites
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
