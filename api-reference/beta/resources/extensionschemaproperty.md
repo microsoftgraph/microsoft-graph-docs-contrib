@@ -29,7 +29,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ExtensionSchemaProperty"
+  "@odata.type": "microsoft.graph.extensionSchemaProperty"
 }-->
 
 ```json
@@ -44,7 +44,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ExtensionSchemaProperty resource",
+  "description": "extensionSchemaProperty resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
