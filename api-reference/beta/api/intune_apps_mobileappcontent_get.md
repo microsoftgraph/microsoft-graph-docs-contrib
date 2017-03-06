@@ -15,6 +15,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.mobileLobApp/contentVersions/{mobileAppContentId}
+GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileLobApp/contentVersions/{mobileAppContentId}
 ```
 
 ## Optional query parameters

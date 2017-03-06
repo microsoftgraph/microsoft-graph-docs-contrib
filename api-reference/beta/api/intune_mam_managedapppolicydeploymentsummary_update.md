@@ -46,7 +46,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}/deploymentSummary/
 Content-type: application/json
-Content-length: 467
+Content-length: 516
 
 {
   "displayName": "Display Name value",
@@ -56,7 +56,8 @@ Content-length: 467
     {
       "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+        "packageId": "Package Id value"
       },
       "configurationAppliedUserCount": 13
     }
@@ -70,7 +71,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 588
+Content-Length: 637
 
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
@@ -81,7 +82,8 @@ Content-Length: 588
     {
       "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+        "packageId": "Package Id value"
       },
       "configurationAppliedUserCount": 13
     }

@@ -23,8 +23,20 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosHomeScreenPage",
   "icons": [
     {
-      "@odata.type": "microsoft.graph.iosHomeScreenItem",
-      "displayName": "String"
+      "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+      "displayName": "String",
+      "pages": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+          "apps": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenApp",
+              "displayName": "String",
+              "bundleID": "String"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
