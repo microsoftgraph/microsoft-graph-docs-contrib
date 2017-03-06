@@ -8,7 +8,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://graph.microsoft.io/en-us/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to Users using Open Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_open_users.md)<br/>[Add custom data to Groups using Schema Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_schema_groups.md)|
+|Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://graph.microsoft.io/en-us/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to users using Open Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_open_users)<br/>[Add custom data to groups using Schema Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_schema_groups)|
 
 ## February 2017
 
