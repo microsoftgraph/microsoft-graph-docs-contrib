@@ -89,7 +89,7 @@ Content-length: 420
     "properties": [
         {
             "name": "courseId",
-            "type": "Integer"
+            "type": "String"
         },
         {
             "name": "courseName",

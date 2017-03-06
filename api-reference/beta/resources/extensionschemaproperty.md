@@ -34,7 +34,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "name": "StockKeepingUnits",
+  "name": "String",
   "type": "String"
 }
 
