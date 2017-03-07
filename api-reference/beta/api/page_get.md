@@ -23,7 +23,7 @@ GET /users/{id | userPrincipalName}/notes/pages/{id}
 GET /groups/{id}/notes/pages/{id}
 ```
 ## Optional query parameters
-This method supports the `select` and `expand` [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the `select` and `expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.
 

@@ -207,7 +207,7 @@ To explore a wide range of projects that connect to Microsoft Graph over a broad
 
 ### Get Started  
 
-The [Get Started](http://graph.microsoft.io/en-us/docs/platform/get-started) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
+The [Get Started](http://developer.microsoft.com/en-us/graph/docs/platform/get-started) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
 
 ## See also
 

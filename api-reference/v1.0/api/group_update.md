@@ -36,7 +36,7 @@ In the request body, supply the values for relevant fields that should be update
 without including the other properties in the table above.
 - Only a subset of the group API pertaining to core group administration and management support application 
 and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, 
-support only delegated permissions. See [known issues](https://graph.microsoft.io/en-us/docs/overview/release_notes#group-permission-scopes) for examples.
+support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [group](../resources/group.md) object in the response body.
