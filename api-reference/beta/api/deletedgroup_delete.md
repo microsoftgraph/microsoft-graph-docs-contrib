@@ -15,7 +15,7 @@ DELETE /directory/deletedItems/{id}
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt; Required|
+| Authorization  | Bearer &lt;code&gt; *Required*|
 | Accept  | application/json |
 
 ### Request body
