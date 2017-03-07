@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API: *Group.Read.All* or *
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/endpoints/<id>
+GET /groups/{id}/endpoints/{id}
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -16,7 +16,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <token>. Required.|
+| Authorization  | Bearer &lt;token&gt; Required.|
 | Content-Type   | Application/Json |
 
 ### Request body
@@ -31,7 +31,7 @@ If successful, this method returns a `200 OK` response code and [Endpoint](../re
   "name": "get_endpoint"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/<id>/endpoints/<id>
+GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
