@@ -16,7 +16,7 @@ You can use Microsoft Graph to:
 
 ##Common Microsoft Graph queries
 
-Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint includes the resources that you can access in your production app. The [/beta](http://graph.microsoft.io/en-us/docs/api-reference/beta/beta-overview) endpoint includes APIs that are currently in preview. The following table lists some common queries that you can use to access the Microsoft Graph API.
+Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint includes the resources that you can access in your production app. The [/beta](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/beta-overview) endpoint includes APIs that are currently in preview. The following table lists some common queries that you can use to access the Microsoft Graph API.
 
 | **Operation**	| **Service endpoint** |
 |:--------------------------|:----------------------------------------|
@@ -43,9 +43,9 @@ Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint inclu
 
 ## Explore Microsoft Graph
 
-- [Get started](https://graph.microsoft.io/en-us/docs/get-started/get-started) using Microsoft Graph and the platform of your choice.
+- [Get started](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started) using Microsoft Graph and the platform of your choice.
 - Discover the resources and operations that you can use in your production apps by browsing the TOC.
-- Preview the new [/beta APIs](https://graph.microsoft.io/en-us/docs/api-reference/beta/beta-overview).
+- Preview the new [/beta APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/beta-overview).
 - Visit the [Microsoft Graph Explorer](https://graph.microsoft.io/graph-explorer).
 - Check out our [Microsoft Graph snippets samples](https://github.com/search?q=org%3Amicrosoftgraph+snippets-sample).
 

@@ -58,7 +58,7 @@ In this step, you'll register an app on the Microsoft App Registration Portal. T
 
 3. Locate the app configuration keys in the **appSettings** element. Replace the ENTER_YOUR_CLIENT_ID and ENTER_YOUR_SECRET placeholder values with the values you just copied.
 
-The redirect URI is the URL of the project that you registered. The requested [permission scopes](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes) allow the app to get user profile information and send an email.
+The redirect URI is the URL of the project that you registered. The requested [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) allow the app to get user profile information and send an email.
 
 
 ## Authenticate the user and get an access token
