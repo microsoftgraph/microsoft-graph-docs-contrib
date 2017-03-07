@@ -14,7 +14,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Addition|Beta|Added support for [deleted items](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/deleteditems)  for applications, users, and groups. |
+|Addition|Beta|Added support for [restoring and permanently deleting groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/deleteditems). |
 
 ## February 2017
 

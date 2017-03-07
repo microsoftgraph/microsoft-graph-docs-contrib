@@ -1,21 +1,20 @@
 # Deleted items
 
-When a user or an administrator deletes a user, a group, or an application, the item gets added to the deleted items "container". Here are some examples of operations that you can perform on deleted items:
+When a [group is deleted](../api/group_delete.md), the item is added to the deleted items "container". You can perform the following operations on deleted items:
 
-* You can view a list of deleted items of a given type.
-* If a group was accidentally deleted, you can restore the group from deleted items. The group will be fully restored including memberships and data.
-* You can permanently delete a group or an application from deleted items. But, once an item is permanently deleted, it cannot be restored.
+* If a group was accidentally deleted, you can restore the group from deleted items. The group will be fully restored including all memberships and data.
+* You can permanently delete a group from deleted items. But, once an item is permanently deleted, it cannot be restored.
 
 Deleted items will remain available for up to 30 days. After 30 days, the items are permanently deleted.
 
 ### Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get deletedItem](../api/directory_get.md) | [directoryObject](directoryobject.md) | Gets the properties of deleted item. |
-|[Restore deletedItem](../api/directory_post_deleteditems.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. This is currently supported for groups. |
-|[List deletedItems](../api/directory_list_deleteditems.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items.|
-|[Delete deletedItem](../api/directory_delete.md) | None | Permanently deletes an item. This is currently supported for groups and applications. |
+| Method         | Return Type | Description |
+|:---------------|:------------|:------------|
+|[Get deleted group](../api/deletedgroup_get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted group. |
+|[Restore deleted group](../api/deletedgroup_post_deleteditems.md) |[directoryObject](directoryobject.md)| Restores a recently deleted group. |
+|[List deleted groups](../api/deletedgroup_list_deleteditems.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted groups. |
+|[Permanently delete a group](../api/deletedgroup_delete.md) | None | Permanently deletes a group. |
 
 ### Properties
 | Property   | Type |Description|
@@ -25,7 +24,7 @@ Deleted items will remain available for up to 30 days. After 30 days, the items 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted users, groups, and applications. Read-only. Nullable.|
+|deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted groups. Read-only. Nullable.|
 
 ### JSON representation
 
