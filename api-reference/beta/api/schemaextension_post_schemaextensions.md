@@ -1,6 +1,6 @@
 # Create schemaExtension
 
-Use this API to create a new schemaExtension.
+Use this API to create a new [schemaExtension](../resources/schemaextension.md) to define a schema extension you can use to extend a resource type. Schema extension definitions let you add strongly-typed custom data to a resource. For example, [Define a schema extension that describes a training course](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course) and then use the schema extension definition to [Create a new group with training course data](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data) or [Add training course data to an existing group](../../../concepts/extensibility_schema_groups.md#4-add-or-update-custom-data-to-an-existing-group).
 
 ## Prerequisites
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
@@ -25,8 +25,8 @@ The following table shows the properties that are required when you create a sch
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
-|id|String|The unique identifier for the schema extension definition. The value must be a concatenation of one of your verified domains (e.g. contoso.com) and a name for the schema extension - e.g. *contoso_mySchema*. |
-|properties|[ExtensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
+|id|String|The unique identifier for the schema extension definition. The value must be a concatenation of one of your verified domains (e.g. contoso.com) and a name for the schema extension - e.g. *contoso_mySchema*. This property cannot be changed after creation. |
+|properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.|
 
 ## Response
@@ -42,20 +42,27 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/schemaExtensions
 Content-type: application/json
-Content-length: 201
 
 {
-  "name": "name-value",
-  "description": "description-value",
-  "targetTypes": [
-    "targetTypes-value"
-  ],
-  "properties": [
-    {
-      "name":"name-value",
-      "type":"type-value"
-    }
-  ],
+    "id":"graphlearn_courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
 }
 ```
 In the request body, supply a JSON representation of [schemaExtension](../resources/schemaextension.md) object.
@@ -69,22 +76,30 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
+Content-length: 420
 
 {
-  "name": "name-value",
-  "description": "description-value",
-  "targetTypes": [
-    "targetTypes-value"
-  ],
-  "properties": [
-    {
-      "name":"name-value",
-      "type":"type-value"
-    }
-  ],
-  "status": "InDevelopment",
-  "owner": "owner-value"
+    "id": "graphlearn_course",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "status": "InDevelopment",
+    "owner": "24d3b144-21ae-4080-943f-7067b395b913",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "String"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
 }
 ```
 

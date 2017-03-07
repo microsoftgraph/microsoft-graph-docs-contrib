@@ -8,7 +8,16 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://graph.microsoft.io/en-us/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to Users using Open Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_open_users.md)<br/>[Add custom data to Groups using Schema Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_schema_groups.md)|
+|Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://graph.microsoft.io/en-us/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to users using Open Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_open_users)<br/>[Add custom data to groups using Schema Extensions (preview)](https://graph.microsoft.io/en-us/docs/concepts/extensibility_schema_groups)|
+
+### Directory APIs
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|New entity:</br>[Endpoint](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
+|Change  |Beta|New [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) navigation property on [groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) |
+|Addition|Beta|New entity:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
+|Change  |Beta|New [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) navigation property on [users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) |
 
 ### Directory APIs
 
