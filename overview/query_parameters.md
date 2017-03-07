@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 >  **Note**: The maximum number of expanded objects for a request is 20. 
 
-> Also, if you query on the [user](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) resource, you can use **$expand** to get the properties of only one child object 
+> Also, if you query on the [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) resource, you can use **$expand** to get the properties of only one child object 
 or collection at a time. 
 
 The following example gets **user** objects, each with up to 20 **directReport** objects in the **directReports** collection expanded:
@@ -204,4 +204,4 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 This would return both the **contacts** collection, and the number of items in the **contacts** collection in the `@odata.count` property.
 
->**Note:** This is not supported for [directoryObject](http://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directoryobject) collections.
+>**Note:** This is not supported for [directoryObject](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject) collections.

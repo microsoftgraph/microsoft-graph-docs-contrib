@@ -71,7 +71,7 @@ Delta query is currently supported in preview on the Microsoft Graph /beta endpo
 
 
 > \* Tracking changes to drives and their children is already supported in v1.0. The usage pattern is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:
-<https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/item_delta>
+<https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
 
 ## Prerequisites
 

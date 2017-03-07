@@ -31,7 +31,7 @@ For more information about using scopes with the Azure AD v2.0 endpoint, and how
 
 The [Connect samples in the Microsoft Graph repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) provide simple examples of how to authenticate users and connect to Microsoft Graph across a wide range of platforms.
 
-In addition, the [Get Started](http://graph.microsoft.io/en-us/docs/platform/get-started) section contains articles that describe how to create these sample apps, including the authentication libraries used on each platform.
+In addition, the [Get Started](http://developer.microsoft.com/en-us/graph/docs/platform/get-started) section contains articles that describe how to create these sample apps, including the authentication libraries used on each platform.
 
 ## See also
 
