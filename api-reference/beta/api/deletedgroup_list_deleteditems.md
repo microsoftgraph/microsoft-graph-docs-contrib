@@ -1,4 +1,4 @@
-# List deletedItems
+# List deleted groups
 
 Retrieve a list of recently deleted groups in [deleted items](../resources/deleteditems.md).
 
