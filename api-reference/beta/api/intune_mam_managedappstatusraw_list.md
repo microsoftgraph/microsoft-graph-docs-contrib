@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 320
+Content-Length: 307
 
 {
   "value": [
@@ -50,7 +50,7 @@ Content-Length: 320
       "id": "80847581-7581-8084-8175-848081758480",
       "version": "Version value",
       "content": {
-        "@odata.type": "microsoft.graph.managedAppSummary"
+        "@odata.type": "microsoft.graph.Json"
       }
     }
   ]

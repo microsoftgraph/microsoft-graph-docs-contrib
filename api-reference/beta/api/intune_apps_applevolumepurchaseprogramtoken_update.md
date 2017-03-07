@@ -29,15 +29,6 @@ The following table shows the properties that are required when you create a [ap
 |Property|Type|Description|
 |---|---|---|
 |id|String|This is automatically generated when the appleVolumePurchaseProgramToken is created. It is the Key of the entity.|
-|organizationName|String|The organization associated with the Apple Volume Purchase Program Token|
-|volumePurchaseProgramTokenAccountType|String|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
-|appleId|String|The apple Id associated with the given Apple Volume Purchase Program Token.|
-|expirationDateTime|DateTimeOffset|The expiration date time of the Apple Volume Purchase Program Token.|
-|lastSyncDateTime|DateTimeOffset|The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.|
-|token|String|The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.|
-|lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
-|state|String|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`. Possible values are: `unknown`, `valid`, `expired`, `invalid`.|
-|lastSyncStatus|String|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
 
 
 
@@ -50,19 +41,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/vppToken/
 Content-type: application/json
-Content-length: 411
+Content-length: 2
 
-{
-  "organizationName": "Organization Name value",
-  "volumePurchaseProgramTokenAccountType": "education",
-  "appleId": "Apple Id value",
-  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "state": "valid",
-  "lastSyncStatus": "inProgress"
-}
+{}
 ```
 
 ### Response
@@ -70,20 +51,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 530
+Content-Length: 122
 
 {
   "@odata.type": "#microsoft.graph.appleVolumePurchaseProgramToken",
-  "id": "7284da05-da05-7284-05da-847205da8472",
-  "organizationName": "Organization Name value",
-  "volumePurchaseProgramTokenAccountType": "education",
-  "appleId": "Apple Id value",
-  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "state": "valid",
-  "lastSyncStatus": "inProgress"
+  "id": "7284da05-da05-7284-05da-847205da8472"
 }
 ```
 
