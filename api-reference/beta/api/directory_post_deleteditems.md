@@ -10,7 +10,7 @@ The following **scopes** are required to execute this API: *Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directory/deletedItems/{id}/restore
+POST /directory/deleteditems/{id}/restore
 ```
 
 ### Request headers
@@ -33,7 +33,7 @@ If successful, this method returns `200 OK` response code and [directoryObject](
   "name": "create_directoryobject_from_directory"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
 ```
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 ##### Response

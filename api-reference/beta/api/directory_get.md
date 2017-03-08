@@ -8,7 +8,7 @@ One of the following **scopes** are required to execute this API: *Group.Read.Al
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deletedItems/{id}
+GET /directory/deleteditems/{id}
 ```
 
 ### Optional query parameters
@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and [directory](../r
   "name": "get_directory"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

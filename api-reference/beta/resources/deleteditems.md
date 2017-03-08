@@ -24,7 +24,7 @@ Deleted items will remain available for up to 30 days. After 30 days, the items 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted groups. Read-only. Nullable.|
+|deleteditems|[directoryObject](directoryobject.md) collection| Recently deleted groups. Read-only. Nullable.|
 
 ### JSON representation
 

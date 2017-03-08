@@ -11,7 +11,7 @@ One of the following **scopes** are required to execute this API: *Group.Read.Al
 GET /directory/deleteditems/Microsoft.Graph.Group
 ```
 
-The type *Microsoft.Graph.Group* is required in the URI. Calling GET /directory/deletedItems without a type is not supported.
+The type *Microsoft.Graph.Group* is required in the URI. Calling GET /directory/deleteditems without a type is not supported.
 
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -69,7 +69,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List deletedItems",
+  "description": "List deleteditems",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
