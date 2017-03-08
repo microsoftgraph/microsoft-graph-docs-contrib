@@ -32,10 +32,10 @@ Failure to read or update a photo, in this case, would result in the following e
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API. 
-* [Listing the user's calendars](http://graph.microsoft.io/docs/api-reference/v1.0/api/user_list_calendars) allows you to get the **name**, **color** and **id** properties of 
-each [calendar](http://graph.microsoft.io/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store
+* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) allows you to get the **name**, **color** and **id** properties of 
+each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store
 or access the ICS URL in the calendar resource.
-* You can also [list the events](http://graph.microsoft.io/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
+* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
 ## Groups
 #### Policy
@@ -64,7 +64,7 @@ Examples of group features that support only delegated permissions:
 
 
 #### Adding and getting attachments of group posts
-[Adding](http://graph.microsoft.io/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://graph.microsoft.io/docs/api-reference/v1.0/api/post_list_attachments) and 
+[Adding](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) and 
 getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
 and is expected to be widely available by the end of January 2016.
 
@@ -83,14 +83,14 @@ Only personal contacts are currently supported. Organizational contacts are not 
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder. 
 
-A fix will be made available. Meanwhile, you can use the following [list contacts](http://graph.microsoft.io/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
+A fix will be made available. Meanwhile, you can use the following [list contacts](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts) query and the **parentFolderId** property
 as a workaround to get the folder ID of the default contacts folder:
 
 ```
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 ```
 In the above query:
-1. `/me/contacts?$top=1` gets the properties of a [contact](http://graph.microsoft.io/docs/api-reference/v1.0/resources/contact) in the default contacts folder.
+1. `/me/contacts?$top=1` gets the properties of a [contact](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) in the default contacts folder.
 2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
 
 
@@ -138,13 +138,13 @@ Batching is not supported by Microsoft Graph. You can, however, use the Outlook 
 [batch Outlook REST calls](https://msdn.microsoft.com/en-us/office/office365/api/batch-outlook-rest-requests). 
 
 #### Availability in China
-The Microsoft Graph service is operated by 21Vianet (and now available in China). Please review [Microsoft Graph sovereign cloud deployments](http://graph.microsoft.io/docs/overview/deployments) for more details including restrictions.
+The Microsoft Graph service is operated by 21Vianet (and now available in China). Please review [Microsoft Graph sovereign cloud deployments](http://developer.microsoft.com/en-us/graph/docs/overview/deployments) for more details including restrictions.
 
 #### Service actions and functions
 `isMemberOf` and `getObjectsById` are not available in Microsoft Graph
 
 ## Microsoft Graph permissions
-For the latest information about Microsoft Graph supported application and delegated permissions, see [Permission scopes](http://graph.microsoft.io/docs/authorization/permission_scopes). In addition, the following limitations apply to `v1.0`:
+For the latest information about Microsoft Graph supported application and delegated permissions, see [Permission scopes](http://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes). In addition, the following limitations apply to `v1.0`:
 
 |Permission |	Permission type | Limitation |	Alternative |
 |-----------|-----------------|------------|--------------|
