@@ -8,7 +8,7 @@ One of the following **scopes** are required to execute this API: *Group.Read.Al
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /directory/deletedItems/Microsoft.Graph.Group
+GET /directory/deleteditems/Microsoft.Graph.Group
 ```
 
 The type *Microsoft.Graph.Group* is required in the URI. Calling GET /directory/deletedItems without a type is not supported.
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_deleteditems"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directory/deletedItems/Microsoft.Graph.Group
+GET https://graph.microsoft.com/beta/directory/deleteditems/Microsoft.Graph.Group
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -52,7 +52,6 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
   "value": [
     {
-
       "id":"46cc6179-19d0-473e-97ad-6ff84347bbbb",
       "displayName":"SampleGroup",
       "groupTypes":["Unified"],
