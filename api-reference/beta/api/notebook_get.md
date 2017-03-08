@@ -12,7 +12,7 @@ GET /users/{id | userPrincipalName}/notes/notebooks/{id}
 GET /groups/{id}/notes/notebooks/{id}
 ```
 ## Optional query parameters
-This method supports the `select` and `expand` [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the `select` and `expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 

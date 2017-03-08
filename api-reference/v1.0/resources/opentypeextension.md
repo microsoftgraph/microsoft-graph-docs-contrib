@@ -21,7 +21,7 @@ _your own domain_, for example, `Com.Contoso.Contact`. Do not use the Microsoft 
 
 Data extensions is the recommended solution for most scenarios involving storing and accessing custom data. If, however, 
 you need to access custom data for Outlook MAPI properties that are not already exposed through the 
-[Microsoft Graph API metadata](http://graph.microsoft.io/en-us/docs/overview/call_api), you can use 
+[Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api), you can use 
 [extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata 
 exposes at https://graph.microsoft.com/v1.0/$metadata.
 
