@@ -1,6 +1,6 @@
-# Deleted items
+# Directory resource type
 
-When a [group is deleted](../api/group_delete.md), the item is added to the deleted items "container". You can perform the following operations on deleted items:
+Represents a deleted item in the directory. When a [group is deleted](../api/group_delete.md), the item is added to the deleted items "container". You can perform the following operations on deleted items:
 
 * If a group was accidentally deleted, you can restore the group from deleted items. The group will be fully restored including all memberships and data.
 * You can permanently delete a group from deleted items. But, once an item is permanently deleted, it cannot be restored.

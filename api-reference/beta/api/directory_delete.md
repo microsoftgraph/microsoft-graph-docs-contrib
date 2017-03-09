@@ -1,6 +1,6 @@
 # Permanently delete a group
 
-Permanently deletes an item from [deleted items](../resources/deleteditems.md).
+Permanently deletes an item from [deleted items](../resources/directory.md).
 
 You can permanently delete a group from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
 

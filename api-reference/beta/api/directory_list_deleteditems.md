@@ -1,6 +1,6 @@
 # List deleted groups
 
-Retrieve a list of recently deleted groups in [deleted items](../resources/deleteditems.md).
+Retrieve a list of recently deleted groups in [deleted items](../resources/directory.md).
 
 ### Prerequisites
 One of the following **scopes** are required to execute this API: *Group.Read.All; Directory.Read.All*
