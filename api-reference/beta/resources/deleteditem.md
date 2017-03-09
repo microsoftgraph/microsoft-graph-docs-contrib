@@ -1,4 +1,4 @@
-# Directory resource type
+# deletedItem resource type
 
 Represents a deleted item in the directory. When a [group is deleted](../api/group_delete.md), the item is added to the deleted items "container". You can perform the following operations on deleted items:
 
@@ -11,10 +11,10 @@ Deleted items will remain available for up to 30 days. After 30 days, the items 
 
 | Method         | Return Type | Description |
 |:---------------|:------------|:------------|
-|[Get deleted group](../api/directory_get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted group. |
-|[Restore deleted group](../api/directory_post_deleteditems.md) |[directoryObject](directoryobject.md)| Restores a recently deleted group. |
-|[List deleted groups](../api/directory_list_deleteditems.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted groups. |
-|[Permanently delete a group](../api/directory_delete.md) | None | Permanently deletes a group. |
+|[Get deleted group](../api/deleteditem_get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted group. |
+|[Restore deleted group](../api/deleteditem_post_deleteditems.md) |[directoryObject](directoryobject.md)| Restores a recently deleted group. |
+|[List deleted groups](../api/deleteditem_list_deleteditems.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted groups. |
+|[Permanently delete a group](../api/deleteditem_delete.md) | None | Permanently deletes a group. |
 
 ### Properties
 | Property   | Type |Description|
