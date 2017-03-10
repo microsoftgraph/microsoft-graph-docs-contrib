@@ -17,7 +17,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/MailboxStorage(view=view-value, period=period-value, date=date-value)/content
+GET /reports/MailboxStorage(view=view-value, period=period-value)/content
 ```
 
 ## Request headers
@@ -34,10 +34,8 @@ In the request URL, provide following query parameters with values.
 |:---------------|:--------|:----------|
 |view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
-|date|String|Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days and is ignored unless view type is **Detail**|
 
-> Note: When view type is **Detail**, the period parameter will be ignored. For other view types, date parameter will be ignored.
-> If you call with **Detail** view along with **PeriodType**, the return data is a list of all users that are licensed for the product with their respective last activity date.
+> Note: If you call with **Detail** view along with **PeriodType**, the return data is a list of all users that are licensed for the product with their respective last activity date.
 
 The following **ViewType** are available in this report:
 
@@ -112,7 +110,6 @@ Data as of,User principal name,DisplayName,Deleted,Deleted date,CreatedDate,Last
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Detail',date='2017-02-02')/content
 GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Mailbox',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Quota',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Storage',period='D7')/content
