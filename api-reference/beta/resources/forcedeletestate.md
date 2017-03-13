@@ -7,7 +7,7 @@ Represents the status of the [forceDelete](../api/domain_forcedelete.md) action.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |lastActionDateTime|DateTimeOffset| Timestamp for when last activity occurred. It is updated when the operation is scheduled, the async task starts, and when the operation completes.|
-|status|String| Current status of the operation. *Scheduled*: Operation has been scheduled but has not started.</br>*InProgress*: Task has started and is in progress.</br>*Failed*|
+|status|String| Current status of the operation. *Scheduled*: Operation has been scheduled but has not started.</br>*InProgress*: Task has started and is in progress.</br>*Failed*: Operation to delete the has failed.|
 
 ### JSON representation
 

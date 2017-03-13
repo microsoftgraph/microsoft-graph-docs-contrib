@@ -1,6 +1,6 @@
 # domain: forceDelete
 
-Deletes a domain using an asynchronous operation. A URL link to check the status of the delete operation is provided in the response. By using the status link, a client can poll for the result of the delete operation. 
+Deletes a domain using an asynchronous operation.
 
 The following actions are performed as part of this operation: 
 * Renames the UPN, EmailAddress, and ProxyAddress of users with references to the deleted domain.
@@ -8,6 +8,8 @@ The following actions are performed as part of this operation: 
 * Renames the indentifierUris of applications with references to the deleted domain. 
 * If the number of objects to be renamed is greater than 100, an error is returned. 
 * If one of the applications to be renamed is a multi-tenant app, an error is returned.
+
+After the domain deletion completes, API operations for the deleted domain will return a error responses.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
