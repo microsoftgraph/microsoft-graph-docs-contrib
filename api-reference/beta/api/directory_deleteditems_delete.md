@@ -1,11 +1,11 @@
-# Permanently delete a group
+# Permanently delete item: Groups
 
 Permanently deletes an item from [deleted items](../resources/deleteditem.md).
 
 You can permanently delete a group from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Group.ReadWrite.All*
+The following **scope** is required to execute this API: *Group.ReadWrite.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

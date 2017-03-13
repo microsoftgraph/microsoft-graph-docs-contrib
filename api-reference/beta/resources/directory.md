@@ -1,4 +1,4 @@
-# deletedItem resource type
+# directory resource type (deleted items)
 
 Represents a deleted item in the directory. When a [group is deleted](../api/group_delete.md), the item is added to the deleted items "container". You can perform the following operations on deleted items:
 
