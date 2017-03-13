@@ -1,5 +1,5 @@
 # Get schemaExtension
-Retrieve the properties of a specific schemaExtension resource.
+Retrieve the properties of a specific schema extension definition by getting the [schemaExtension](../resources/schemaextension.md) resource.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.AccessAsUser.All*
@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API: *Directory.Read
 GET /schemaExtensions/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_schemaextension"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/schemaExtensions/{id}
+GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -46,19 +46,19 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "name": "name-value",
-  "description": "description-value",
-  "targetTypes": [
-    "targetTypes-value"
-  ],
-  "properties": [
-    {
-      "name":"name-value",
-      "type":"type-value"
-    }
-  ],
-  "status": "status-value",
-  "owner": "owner-value"
+    "id":"graphlearn_test",
+    "description": "Yet another test schema",
+    "targetTypes": [
+        "User", "Group"
+    ],
+    "status": "InDevelopment",
+    "owner": "24d3b144-21ae-4080-943f-7067b395b913",
+    "properties": [
+        {
+            "name": "testName",
+            "type": "String"
+        }
+    ]
 }
 ```
 

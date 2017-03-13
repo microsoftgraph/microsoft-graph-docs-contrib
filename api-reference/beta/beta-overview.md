@@ -15,10 +15,10 @@ Microsoft Graph API requests to the beta endpoint use the following pattern:
 	https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
-For details, see [Calling the Microsoft Graph API](https://graph.microsoft.io/en-us/docs/overview/call_api).
+For details, see [Calling the Microsoft Graph API](https://developer.microsoft.com/en-us/graph/docs/overview/call_api).
 
 ##See also
-- [Overview of Microsoft Graph](https://graph.microsoft.io/en-us/docs/overview/overview)
+- [Overview of Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/overview/overview)
 - [Microsoft Graph explorer](https://graph.microsoft.io/en-us/graph-explorer)
 - [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started)
 

@@ -71,7 +71,7 @@ Delta query is currently supported in preview on the Microsoft Graph /beta endpo
 
 
 > \* Tracking changes to drives and their children is already supported in v1.0. The usage pattern is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:
-<https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/item_delta>
+<https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ The same [permissions](../authorization/permission_scopes.md) that are required 
 
 Tracking changes to relationships on users and groups is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* 
 and has selected the **members** relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. 
-In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered in February 2017.
+In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered in March 2017.
 
 ## Delta query request examples 
 

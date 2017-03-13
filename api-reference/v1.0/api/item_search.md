@@ -20,7 +20,7 @@ GET /groups/{group-id}/drive/root/search(q='{search-text}')
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request body
 Do not supply a request body for this method.
