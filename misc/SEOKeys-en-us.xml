@@ -955,25 +955,29 @@
     </Item>
     <Item text="Groups" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Group" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
-        <Item text="List groups" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="List groups, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of group objects." />
-        <Item text="Create group" url="/en-us/api-reference/beta/api/group_post_groups" />
-        <Item text="Get group" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
-        <Item text="Update group" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Update group, Microsoft Graph API, Groups API" SEODescription="Update the properties of group object." />
-        <Item text="Delete group" url="/en-us/api-reference/beta/api/group_delete" SEOKeyword="Delete group, Microsoft Graph API, Groups API" SEODescription="Delete group." />
-        <Item text="List owners" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="List owners, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
-        <Item text="Add owner" url="/en-us/api-reference/beta/api/group_post_owners" SEOKeyword="Create owner, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new owner." />
-        <Item text="List members" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="List members, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
-        <Item text="Add member" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="Create member, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new member." />
-        <Item text="Remove member" url="/en-us/api-reference/beta/api/group_delete_members" SEOKeyword="Remove member, Microsoft Graph API, Groups API" SEODescription="Use this API to remove member." />
-        <Item text="List memberOf" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
-        <Item text="Get member objects" url="/en-us/api-reference/beta/api/group_getmemberobjects" SEOKeyword="group: getMemberObjects, Microsoft Graph API, group API" SEODescription="" />
-        <Item text="Get member groups" url="/en-us/api-reference/beta/api/group_getmembergroups" SEOKeyword="group: getMemberGroups, Microsoft Graph API, group API" SEODescription="" />
-        <Item text="Check member groups" url="/en-us/api-reference/beta/api/group_checkmembergroups" SEOKeyword="group: checkMemberGroups, Microsoft Graph API, group API" SEODescription="" />
         <Item text="Add favorite" url="/en-us/api-reference/beta/api/group_addfavorite" SEOKeyword="group: addFavorite, Microsoft Graph API, group API" SEODescription="" />
-        <Item text="Remove favorite" url="/en-us/api-reference/beta/api/group_removefavorite" SEOKeyword="group: removeFavorite, Microsoft Graph API, group API" SEODescription="" />
-        <Item text="Subscribe by mail" url="/en-us/api-reference/beta/api/group_subscribebymail" SEOKeyword="group: subscribeByMail, Microsoft Graph API, group API" SEODescription="" />
-        <Item text="Unsubscribe by mail" url="/en-us/api-reference/beta/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail, Microsoft Graph API, group API" SEODescription="" />
-        <Item text="Reset unseen count" url="/en-us/api-reference/beta/api/group_resetunseencount" SEOKeyword="group: resetUnseenCount, Microsoft Graph API, group API" SEODescription="" />
+		<Item text="Add member" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="Create member, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new member." />
+		<Item text="Add owner" url="/en-us/api-reference/beta/api/group_post_owners" SEOKeyword="Create owner, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new owner." />
+		<Item text="Check member groups" url="/en-us/api-reference/beta/api/group_checkmembergroups" SEOKeyword="group: checkMemberGroups, Microsoft Graph API, group API" SEODescription="" />
+		<Item text="Create group" url="/en-us/api-reference/beta/api/group_post_groups" />
+		<Item text="Delete group" url="/en-us/api-reference/beta/api/group_delete" SEOKeyword="Delete group, Microsoft Graph API, Groups API" SEODescription="Delete group." />
+		<Item text="Get deleted groups" url="/en-us/api-reference/beta/api/directory_deleteditems_get" />
+		<Item text="Get group" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
+		<Item text="Get member groups" url="/en-us/api-reference/beta/api/group_getmembergroups" SEOKeyword="group: getMemberGroups, Microsoft Graph API, group API" SEODescription="" />
+		<Item text="Get member objects" url="/en-us/api-reference/beta/api/group_getmemberobjects" SEOKeyword="group: getMemberObjects, Microsoft Graph API, group API" SEODescription="" />	
+		<Item text="List deleted groups" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
+		<Item text="List groups" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="List groups, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of group objects." />
+        <Item text="List member of" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="List members" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="List members, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="List owners" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="List owners, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
+		<Item text="Permanently delete groups" url="en-us/api-reference/beta/api/directory_deleteditems_delete" />
+		<Item text="Remove favorite" url="/en-us/api-reference/beta/api/group_removefavorite" SEOKeyword="group: removeFavorite, Microsoft Graph API, group API" SEODescription="" />
+		<Item text="Remove member" url="/en-us/api-reference/beta/api/group_delete_members" SEOKeyword="Remove member, Microsoft Graph API, Groups API" SEODescription="Use this API to remove member." />
+		<Item text="Reset unseen count" url="/en-us/api-reference/beta/api/group_resetunseencount" SEOKeyword="group: resetUnseenCount, Microsoft Graph API, group API" SEODescription="" />
+		<Item text="Restore deleted groups" url="en-us/api-reference/beta/api/directory_deleteditems_restore" />
+		<Item text="Subscribe by mail" url="/en-us/api-reference/beta/api/group_subscribebymail" SEOKeyword="group: subscribeByMail, Microsoft Graph API, group API" SEODescription="" />
+		<Item text="Unsubscribe by mail" url="/en-us/api-reference/beta/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail, Microsoft Graph API, group API" SEODescription="" />
+		<Item text="Update group" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Update group, Microsoft Graph API, Groups API" SEODescription="Update the properties of group object." />        
       </Item>
       <Item text="Photo" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
         <Item text="Get photo" url="/en-us/api-reference/v1.0/api/profilephoto_get" />
