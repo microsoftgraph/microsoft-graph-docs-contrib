@@ -35,11 +35,8 @@ In the request URL, provide following query parameters with values.
 |view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
 |period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
 
-> Note: If you call with **Detail** view along with **PeriodType**, the return data is a list of all users that are licensed for the product with their respective last activity date.
-
 The following **ViewType** are available in this report:
 
-- Detail
 - Mailbox
 - Quota
 - Storage
@@ -73,7 +70,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Detail',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Mailbox',period='D7')/content
 ```
 
 ### Response
@@ -99,7 +96,7 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,User principal name,DisplayName,Deleted,Deleted date,CreatedDate,Last activity date (UTC),Item count,Storage used (B),Issue warning quota (B),Prohibit send quota (B),Prohibit send/receive quota (B),Reporting period in days
+Data as of,Total,Active,Last activity date (UTC),Reporting period in days
 ```
 
 ### Other valid requests
@@ -110,7 +107,6 @@ Data as of,User principal name,DisplayName,Deleted,Deleted date,CreatedDate,Last
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Mailbox',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Quota',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Storage',period='D7')/content
 ```
