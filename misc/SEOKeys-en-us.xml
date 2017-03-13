@@ -970,11 +970,11 @@
         <Item text="List member of" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="List members" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="List members, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="List owners" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="List owners, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
-		<Item text="Permanently delete group" url="en-us/api-reference/beta/api/directory_deleteditems_delete" />
+		<Item text="Permanently delete group" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
 		<Item text="Remove favorite" url="/en-us/api-reference/beta/api/group_removefavorite" SEOKeyword="group: removeFavorite, Microsoft Graph API, group API" SEODescription="" />
 		<Item text="Remove member" url="/en-us/api-reference/beta/api/group_delete_members" SEOKeyword="Remove member, Microsoft Graph API, Groups API" SEODescription="Use this API to remove member." />
 		<Item text="Reset unseen count" url="/en-us/api-reference/beta/api/group_resetunseencount" SEOKeyword="group: resetUnseenCount, Microsoft Graph API, group API" SEODescription="" />
-		<Item text="Restore deleted group" url="en-us/api-reference/beta/api/directory_deleteditems_restore" />
+		<Item text="Restore deleted group" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
 		<Item text="Subscribe by mail" url="/en-us/api-reference/beta/api/group_subscribebymail" SEOKeyword="group: subscribeByMail, Microsoft Graph API, group API" SEODescription="" />
 		<Item text="Unsubscribe by mail" url="/en-us/api-reference/beta/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail, Microsoft Graph API, group API" SEODescription="" />
 		<Item text="Update group" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Update group, Microsoft Graph API, Groups API" SEODescription="Update the properties of group object." />        
