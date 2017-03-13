@@ -1,8 +1,10 @@
-# deletedItem resource type
+# directory resource type (deleted items)
 
-Represents a deleted item in the directory. When a [group is deleted](../api/group_delete.md), the item is added to the deleted items "container". You can perform the following operations on deleted items:
+Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". 
 
-* If a group was accidentally deleted, you can restore the group from deleted items. The group will be fully restored including all memberships and data.
+Currently, deleted items functionality is only supported for groups. You can perform the following operations on deleted items:
+
+* If an group was accidentally deleted, you can restore the group from deleted items. The group will be fully restored including all memberships and data.
 * You can permanently delete a group from deleted items. But, once an item is permanently deleted, it cannot be restored.
 
 Deleted items will remain available for up to 30 days. After 30 days, the items are permanently deleted.
@@ -11,10 +13,10 @@ Deleted items will remain available for up to 30 days. After 30 days, the items 
 
 | Method         | Return Type | Description |
 |:---------------|:------------|:------------|
-|[Get deleted group](../api/deleteditem_get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted group. |
-|[Restore deleted group](../api/deleteditem_post_deleteditems.md) |[directoryObject](directoryobject.md)| Restores a recently deleted group. |
-|[List deleted groups](../api/deleteditem_list_deleteditems.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted groups. |
-|[Permanently delete a group](../api/deleteditem_delete.md) | None | Permanently deletes a group. |
+|[Get deleted item](../api/directory_deleteditems_get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted item. |
+|[Restore deleted item](../api/directory_deleteditems_restore.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. |
+|[List deleted items](../api/directory_deleteditems_list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
+|[Permanently delete an item](../api/directory_deleteditems_delete.md) | None | Permanently deletes an item. |
 
 ### Properties
 | Property   | Type |Description|
