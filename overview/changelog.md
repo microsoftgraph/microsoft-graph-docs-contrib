@@ -14,7 +14,6 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-
 |Addition|Beta|Added support for [restoring and permanently deleting groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory).<br/>New entity: directory with deleteditems navigation property. |
 |Addition|Beta|New entity:</br>[Endpoint](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
 |Change  |Beta|New [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) navigation property on [groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) |
