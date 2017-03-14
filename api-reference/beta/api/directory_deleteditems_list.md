@@ -2,7 +2,7 @@
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for groups.
+Currently, deleted items functionality is only supported for the [group](../resources/group.md) resource.
 
 ### Prerequisites
 One of the following **scopes** are required to execute this API: *Group.Read.All; Directory.Read.All*

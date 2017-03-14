@@ -1,13 +1,8 @@
 # directory resource type (deleted items)
 
-Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". 
+Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
-Currently, deleted items functionality is only supported for groups. You can perform the following operations on deleted items:
-
-* If an group was accidentally deleted, you can restore the group from deleted items. The group will be fully restored including all memberships and data.
-* You can permanently delete a group from deleted items. But, once an item is permanently deleted, it cannot be restored.
-
-Deleted items will remain available for up to 30 days. After 30 days, the items are permanently deleted.
+Currently, deleted items functionality is only supported for the [group](group.md) resource.
 
 ### Methods
 

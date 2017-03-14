@@ -2,7 +2,7 @@
 
 Restores a recently deleted item from [deleted items](../resources/directory.md). 
 
-Currently, deleted items functionality is only supported for groups. If a group was accidentally deleted, you can fully restore the group including memberships and data.
+Currently, deleted items functionality is only supported for the [group](../resources/group.md) resource. If a group was accidentally deleted, you can fully restore the group including memberships and data.
 
 A recently deleted group will remain available for up to 30 days. After 30 days, the group is permanently deleted.
 
