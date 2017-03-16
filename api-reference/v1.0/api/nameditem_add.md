@@ -42,7 +42,7 @@ Here is an example of the request.
   "name": "NamedItemcollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/add
 Content-type: application/json
 Content-length: 54
 
