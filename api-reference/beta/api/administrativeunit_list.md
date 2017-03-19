@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeUgit nit",
+  "@odata.type": "microsoft.graph.administrativeUnit",
   "isCollection": true
 } -->
 ```http
