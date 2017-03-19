@@ -12,10 +12,16 @@ For this scenario, we're going to show you how to:
 4. Add or update custom data to an existing group based on a schema extension definition
 5. Read back a group and the extension data
 
->**Note:** This topic shows you how to create and read schema extension values on a *group* resource (steps 3-5).  These methods are also supported for the *device, event, message, post,* and *user* resource types.  So you can update the example requests below using any of those resources.
+>**Note:** This topic shows you how to create and read schema extension values on a **group** resource (steps 3-5).  The same methods are supported for the **device**, **event**, **message**, **post**, and **user** 
+resource types as well.  So you can carry out similar operations as the example requests below on any of those resources.
 
 ## 1. View available schema extensions
-First, as a developer, we might want to find any other schema extension definitions that our app could reuse.  This can be done by querying the *schemaExtensions* resource.  In the example below, we're going to query for a specific schema extension by *id*.
+First, as a developer, you might want to find any other schema extension definitions that our app could reuse.  This can be done by querying the **schemaExtension** resource.  
+In the example below, you're going to query for a specific schema extension by *id*.
+
+Notice that the extension returned in the response has **Available** as the **status** value, which indicates that any app which has permission to the resources in the **targetTypes** property can use and update the extension
+with additive changes. In general, this operation returns any schema extensions that satisfy the specified filter regardless of **status**, so do check the extension status before using it.
+
 
 ##### Request
 ```http
@@ -34,7 +40,7 @@ Content-length: 420
             "targetTypes": [
                 "User", "Group"
             ],
-            "status": "InDevelopment",
+            "status": "Available",
             "owner": "24d3b144-21ae-4080-943f-7067b395b913",
             "properties": [
                 {
@@ -47,7 +53,13 @@ Content-length: 420
 }
 ```
 ## 2. Register a schema extension definition that describes a training course
-If we can't find a schema extension that *is* appropriate for our needs, we'll go ahead and register a new definition for our training course on the *group* resource.  The creation request needs to contain a unique id which is a concatenation of one of the verified domains in our tenant (graphlearn.com) and a name for our schema extension (courses) - *graphlearn_courses*.  The request also needs a description (to enable discoverability), target types (defining which resources this extension applies to), and the properties that will make up my schema.  In this case, we need to specify a courseId, courseName and courseType.
+If you can't find a schema extension that *is* appropriate for your needs, you can create and register a new extension definition for training courses on the **group** resource.  
+Provide a unique value for **id** which is a concatenation of one of the [verified domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx) 
+in your tenant (graphlearn.com) and a name for the schema extension (courses) - `graphlearn_courses`.  Also specify a description (to enable discoverability), target types 
+(defining which resources this extension applies to), and the custom properties that will make up the schema.  In this example, specify the `courseId`, `courseName` and `courseType` custom properties and their types.
+
+Notice that when you initially create a schema extension, its status is `InDevelopment`. While you're developing the extension, you can keep it in this status, during which only your app that created it can
+update it with additive changes or delete it. When you are ready to share the extension for use by other apps, set **status** to `Available`.
 
 ##### Request
 ```http
@@ -195,3 +207,8 @@ Content-length: 326
     }
 }
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
