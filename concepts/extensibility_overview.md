@@ -32,7 +32,7 @@ The following table shows the current support for open and schema extensions and
 |  [user](../api-reference/beta/resources/user.md) | Preview only | Preview only |
 
 ## Open extensions
-[Open extensions](../api-reference/beta/api/opentypeextension.md) (formerly known as Office 365 data extensions) are 
+[Open extensions](../api-reference/beta/resources/opentypeextension.md) (formerly known as Office 365 data extensions) are 
 [open types](http://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to 
 add untyped app data directly to a resource instance. 
 

@@ -210,5 +210,5 @@ Content-length: 326
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+- [Add custom data to resources using extensions](extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](extensibility_open_users.md)

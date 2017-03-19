@@ -109,5 +109,5 @@ HTTP/1.1 204 No content
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](extensibility_overview.md)
+- [Add custom data to groups using schema extensions (preview)](extensibility_schema_groups.md)
