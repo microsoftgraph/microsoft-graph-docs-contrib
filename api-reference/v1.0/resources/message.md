@@ -2,11 +2,14 @@
 
 A message in a mailFolder.
 
+This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+
+
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List messages](../api/user_list_messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (excluding the Deleted Items and Clutter folders). |
+|[List messages](../api/user_list_messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). |
 |[Create message](../api/user_post_messages.md) | [message](message.md) | [Create](../api/user_post_messages.md#request-1) a draft of a new message. |
 |[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
 |[Update](../api/message_update.md) | [message](message.md) |Update message object.|
@@ -143,6 +146,9 @@ Here is a JSON representation of the resource
 
 - [Get mailbox settings](../api/user_get_mailboxsettings.md) 
 - [Update mailbox settings](../api/user_update_mailboxsettings.md)
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
