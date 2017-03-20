@@ -1,6 +1,13 @@
 # Create schemaExtension
 
-Use this API to create a new [schemaExtension](../resources/schemaextension.md) to define a schema extension you can use to extend a resource type. Schema extension definitions let you add strongly-typed custom data to a resource. For example, [Define a schema extension that describes a training course](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course) and then use the schema extension definition to [Create a new group with training course data](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data) or [Add training course data to an existing group](../../../concepts/extensibility_schema_groups.md#4-add-or-update-custom-data-to-an-existing-group).
+Use this API to create and define a new [schemaExtension](../resources/schemaextension.md) to extend a resource type. 
+
+Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the 
+[state](../../../concepts/extensibility_overview.md#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension. 
+
+See examples of how to [define a schema extension that describes a training course](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course), 
+use the schema extension definition to [create a new group with training course data](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data), and 
+[add training course data to an existing group](../../../concepts/extensibility_schema_groups.md#4-add-or-update-custom-data-to-an-existing-group).
 
 ## Prerequisites
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
@@ -102,6 +109,12 @@ Content-length: 420
     ]
 }
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
