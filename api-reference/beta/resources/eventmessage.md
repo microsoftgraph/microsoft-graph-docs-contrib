@@ -2,7 +2,7 @@
 
 A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message. In particular, 
 **eventMessage** is derived from [message](message.md), and, 
-[eventMessageRequest](eventMessageRequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property idenfies the type of event message.
+[eventMessageRequest](eventMessageRequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property identifies the type of event message.
 
 An **eventMessage** instance is typically found in the Inbox folder where it arrives as the result of either an event organizer creating a meeting or by an attendee 
 responding to a meeting request. You act on event messages in the same way that you act on Message with minor differences.
