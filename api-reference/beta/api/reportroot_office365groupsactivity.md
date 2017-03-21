@@ -1,4 +1,4 @@
-# GET Office365GroupsActivity report
+# Get Office365GroupsActivity report
 
 Retrieve the reports of Office 365 Groups Activity. The response will be a CSV file in a binary stream.
 

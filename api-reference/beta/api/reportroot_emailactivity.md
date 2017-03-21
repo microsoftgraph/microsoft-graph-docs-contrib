@@ -1,4 +1,4 @@
-# GET EmailActivity report
+# Get EmailActivity report
 
 Retrieve the Exchange Email Activity reports. The response will be a CSV file in a binary stream.
 

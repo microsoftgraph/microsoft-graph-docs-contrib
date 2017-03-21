@@ -1,4 +1,4 @@
-# GET SfbP2PActivity report
+# Get SfbP2PActivity report
 
 Retrieve the reports of Skype for Business Peer to Peer Activity. The response will be a CSV file in a binary stream.
 

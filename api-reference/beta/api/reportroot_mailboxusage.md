@@ -1,4 +1,4 @@
-# GET MailboxUsage report
+# Get MailboxUsage report
 
 Retrieve the reports of Exchange Mailbox Usage. The response will be a CSV file in a binary stream.
 

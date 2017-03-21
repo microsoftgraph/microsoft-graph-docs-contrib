@@ -1,4 +1,4 @@
-# GET EmailAppUsage report
+# Get EmailAppUsage report
 
 Retrieve the reports of Exchange Email App Usage. The response will be a CSV file in a binary stream.
 

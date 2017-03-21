@@ -1,4 +1,4 @@
-# GET YammerDeviceUsage report
+# Get YammerDeviceUsage report
 
 Retrieve the reports of Yammer Client Activity. The response will be a CSV file in a binary stream.
 

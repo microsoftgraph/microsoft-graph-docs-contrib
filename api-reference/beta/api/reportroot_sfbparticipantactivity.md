@@ -1,4 +1,4 @@
-# GET SfbParticipantActivity report
+# Get SfbParticipantActivity report
 
 Retrieve the reports of Skype for Business Participant Activity. The response will be a CSV file in a binary stream.
 

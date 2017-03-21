@@ -1,4 +1,4 @@
-# GET SfbDeviceUsage report
+# Get SfbDeviceUsage report
 
 Retrieve the reports of Skype for Business Client Activity. The response will be a CSV file in a binary stream.
 

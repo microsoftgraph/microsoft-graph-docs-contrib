@@ -1,4 +1,4 @@
-# GET Office365Activations report
+# Get Office365Activations report
 
 Retrieve the reports of Office 365 Activations. The response will be a CSV file in a binary stream.
 

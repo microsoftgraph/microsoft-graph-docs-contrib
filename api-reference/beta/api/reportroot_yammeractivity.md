@@ -1,4 +1,4 @@
-# GET YammerActivity report
+# Get YammerActivity report
 
 Retrieve the reports of Yammer User Activity. The response will be a CSV file in a binary stream.
 

@@ -1,4 +1,4 @@
-# GET SfbOrganizerActivity report
+# Get SfbOrganizerActivity report
 
 Retrieve the reports of Skype for Business Organizer Activity. The response will be a CSV file in a binary stream.
 

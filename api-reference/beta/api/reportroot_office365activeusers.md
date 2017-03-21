@@ -1,4 +1,4 @@
-# GET Office365ActiveUsers report
+# Get Office365ActiveUsers report
 
 Retrieve the reports of Office 365 Active Users. The response will be a CSV file in a binary stream.
 
