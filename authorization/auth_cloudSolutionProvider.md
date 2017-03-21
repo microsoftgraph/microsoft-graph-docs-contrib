@@ -80,4 +80,4 @@ When you create a new customer using the [Partner Center API](https://partnercen
 To avoid this problem, we recommend that your partner app should should wait **three minutes** after customer creation before calling Azure AD to acquire a token (to call Microsoft Graph). This should cover most cases. 
 However, if after waiting three minutes you still recieve an authorization error, please wait an additional 60 seconds and try again.
 
-> **NOTE:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won’t contain the pre-consented permission claims.
+> **NOTE:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an -0=hour and won’t contain the pre-consented permission claims.
