@@ -4,11 +4,19 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## March 2017
 
-### Add custom data to Microsoft Graph
+### Add custom data to Microsoft Graph using schema extensions
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to users using Open Extensions (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users)<br/>[Add custom data to groups using Schema Extensions (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups)|
+|Addition|Beta|Extend Microsoft Graph with application data by using [schema extensions](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups)|
+|Addition|Beta|Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview) for details.|
+
+### Add custom data to Microsoft Graph using open extensions
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change| v1.0 and beta | Renamed former "Office 365 data extensions" as "open extensions". |
+|Addition|Beta|Added resources that support [open extensions](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>administrative unit<br/>device<br/>group<br/>organization<br/>user<br/>See the following example:<br/>[Add custom data to users using open extensions (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users)|
 
 ### Directory APIs
 
