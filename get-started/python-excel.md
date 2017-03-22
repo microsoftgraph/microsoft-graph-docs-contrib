@@ -1,5 +1,5 @@
 # Introduction to Working with Excel in Python
-This blog post details what is needed to begin making requests to the Excel REST API from a Python web app. This includes an outline of: configuration steps, authorization, request formulation as well as examples of common Excel REST API scenarios.
+This walkthrough details what is needed to begin making requests to the Excel REST API from a Python web app. This includes an outline of: configuration steps, authorization, request formulation as well as examples of common Excel REST API scenarios.
 
 
 ##  Prerequisites
