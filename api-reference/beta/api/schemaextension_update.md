@@ -1,9 +1,12 @@
 # Update schemaExtension
 
-Update the properties of a schema extension definition by updating the [schemaExtension](../resources/schemaextension.md) resource.
+Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).
 
-Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the `InDevelopment` or `Available` status. 
-That means the app cannot remove custom properties or target resource types from the definition. The owner app can, however, change the description of the extension.
+The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 
+[supporting resource types](../../../concepts/extensibility_overview.md#supported-resources).
+
+Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status. 
+That means the app cannot remove custom properties or target resource types from the definition. The app can, however, change the description of the extension.
 
 ## Prerequisites
 The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
