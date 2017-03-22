@@ -1,5 +1,5 @@
 # Get schemaExtension
-Retrieve the properties of a specific schema extension definition by getting the [schemaExtension](../resources/schemaextension.md) resource.
+Get the properties of the specified [schemaExtension](../resources/schemaextension.md) definition.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.AccessAsUser.All*
