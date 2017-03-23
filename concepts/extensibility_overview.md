@@ -16,11 +16,11 @@ Microsoft Graph offers two types of extensions. Choose the extension type that b
 
 ## Supported Resources
 
-The following table shows the current support for open and schema extensions and whether they are in generally availability (GA /v1.0) or in preview (/beta). 
+The following table shows the current support for open and schema extensions and whether they are in general availability (GA /v1.0 and /beta) or only in preview (/beta). 
 
-| | Open extensions | Schema extensions |
+| Resource | Open extensions | Schema extensions |
 |---------------|-------|-------|
-| [administrative unit](../api-reference/beta/resources/administrativeunit.md) | Preview only | Coming soon |
+| [Administrative unit](../api-reference/beta/resources/administrativeunit.md) | Preview only | Coming soon |
 |  [calendar event](../api-reference/beta/resources/event.md) | GA | Preview only |
 |  Group [calendar event](../api-reference/beta/resources/event.md) | GA | Preview only |
 |  Group conversation thread [post](../api-reference/beta/resources/post.md) | GA | Preview only |
@@ -28,7 +28,7 @@ The following table shows the current support for open and schema extensions and
 |  [group](../api-reference/beta/resources/group.md) | Preview only | Preview only |
 |  [message](../api-reference/beta/resources/message.md) | GA | Preview only |
 |  [organization](../api-reference/beta/resources/organization.md) | Preview only | Coming soon |
-|  [personal contact](../api-reference/beta/resources/contact.md)| GA | Coming soon |
+|  [Personal contact](../api-reference/beta/resources/contact.md)| GA | Coming soon |
 |  [user](../api-reference/beta/resources/user.md) | Preview only | Preview only |
 
 ## Open extensions
@@ -59,10 +59,10 @@ be discoverable by other apps. These apps can in turn use the extension for thei
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 
 - If you already have a vanity `.com` domain that you have verified with your tenant, you can use the domain name along with the schema name 
-to define a unique name, in this format {_domainName_}_{_schemaName_}. For example, if your vanity domain is contoso.com then you can define 
+to define a unique name, in this format \{_domainName_\}\_\{_schemaName_\}. For example, if your vanity domain is contoso.com then you can define 
 an **id** of, `contoso_mySchema`.  This is the preferred option.
 - If you don’t have a verified vanity domain, you can just set the **id** to a schema name (without a domain name prefix), for example, `mySchema`. 
-Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext{*8-random-alphanumeric-chars*}_{*schema-name*}`.  For example, `extkvbmkofy_mySchema`.
+Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext\{_8-random-alphanumeric-chars_\}\_\{_schema-name_\}`.  For example, `extkvbmkofy_mySchema`.
 
 You will see this unique name in **id** used as the name of the complex type which will store your custom data on the extended resource instance. 
 

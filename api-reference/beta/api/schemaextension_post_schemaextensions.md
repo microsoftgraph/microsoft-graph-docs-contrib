@@ -32,7 +32,7 @@ The following table shows the properties that are required when you create a sch
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
-|id|String|The unique identifier for the schema extension definition. <br> You can assign a value in one of two ways: <br> - Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, {_domainName_}_{_schemaName_}. As an example, `contoso_mySchema`. <br> - Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: `ext{*8-random-alphanumeric-chars*}_{*schema-name*}`. An example would be `extkvbmkofy_mySchema`.  <br> This property cannot be changed after creation. |
+|id|String|The unique identifier for the schema extension definition. <br> You can assign a value in one of two ways: <br> - Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_domainName_\}\_\{_schemaName_\}. As an example, `contoso_mySchema`. <br> - Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: `ext\{_8-random-alphanumeric-chars_\}\_\{_schema-name_\}`. An example would be `extkvbmkofy_mySchema`.  <br> This property cannot be changed after creation. |
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |targetTypes|String collection|Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.|
 
@@ -150,7 +150,7 @@ Content-type: application/json
 
 ### Response 2
 The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. 
-The value in **id** in the response is based on the format, `ext{*8-random-alphanumeric-chars*}_{*schema-name*}`. 
+The value in **id** in the response is based on the format, `ext\{_8-random-alphanumeric-chars_\}\_\{_schema-name_\}`. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
