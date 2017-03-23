@@ -10,16 +10,16 @@ Open extensions are supported by the following resources in the corresponding ve
 
 | Resource | Version |
 |---------------|-------|
-| [Administrative unit](administrativeunit.md)  | Preview only |
+| [Administrative unit](../../beta/resources/administrativeunit.md)  | Preview only |
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
-| [device](device.md) | Preview only |
-| [group](group.md) | Preview only |
+| [device](../../beta/resources/device.md) | Preview only |
+| [group](../../beta/resources/group.md) | Preview only |
 | [message](message.md) | GA |
-| [organization](organization.md) | Preview only |
+| [organization](../../beta/resources/organization.md) | Preview only |
 | [Personal contact](contact.md) | GA |
-| [user](user.md) | Preview only |
+| [user](../../beta/resources/user.md) | Preview only |
 
 
 ### Use open extensions (for Outlook resources) or extended properties?
