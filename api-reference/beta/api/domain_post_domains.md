@@ -14,7 +14,7 @@ POST /domains
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt; Required|
+| Authorization  | Bearer &lt;token&gt Required|
 | Content-Type  | application/json |
 
 ### Request body
