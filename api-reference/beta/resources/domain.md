@@ -64,13 +64,13 @@ Here is a JSON representation of the resource.
 {
   "authenticationType": "String",
   "availabilityStatus": "String",
-  "forceDeleteState": {"@odata.type": "microsoft.graph.forceDeleteState"},
   "id": "String (identifier)",
   "isAdminManaged": true,
   "isDefault": true,
   "isInitial": true,
   "isRoot": true,
   "isVerified": true,
+  "state": {"@odata.type": "microsoft.graph.domainState"},
   "supportedServices": ["String"]
 }
 
