@@ -21,7 +21,7 @@ POST /domains/{id}/verify
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt Required|
+| Authorization  | Bearer &lt;token&gt; Required|
 | Content-Type  | application/json |
 
 ### Request body
