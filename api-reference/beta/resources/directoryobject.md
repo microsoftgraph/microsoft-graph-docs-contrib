@@ -9,16 +9,17 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 |:---------------|:--------|:----------|
 |[Get directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Read the properties  of a directory object.|
 |[Delete](../api/directoryobject_delete.md) | None |Delete a directory object. |
-
+|[Get directory objects by ids](../api/directoryobject_getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |id|String|A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde. Key. Not nullable. Read-only.|
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
