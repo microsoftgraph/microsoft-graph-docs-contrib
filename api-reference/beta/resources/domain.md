@@ -29,7 +29,7 @@ To associate a domain with a tenant:
 |:---------------|:--------|:----------|
 |authenticationType|String| Indicates the configured authentication type for the domain. The value is either *Managed* or *Federated*.</br> *Managed* indicates a cloud managed domain where Azure AD performs user authentication.</br>*Federated* indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable |
 |availabilityStatus|String| This property is always null except when the [verify](../api/domain_verify.md) action is used. When the [verify](../api/domain_verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either *AvailableImmediately* or *EmailVerifiedDomainTakeoverScheduled*.|
-|forceDeleteState|[forceDeleteState](forcedeletestate.md)| Status of the forceDelete action. |
+|state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique |
 |isAdminManaged|Boolean| The value of the property is false if the DNS record management of the domain has been delegated to Office 365. Otherwise, the value is true. Not nullable |
 |isDefault|Boolean| True if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable |
