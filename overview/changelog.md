@@ -4,23 +4,42 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## March 2017
 
-### Directory APIs
+### Add domain operations to Microsoft Graph
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|Beta|Added operations on [domains](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain).<br/>New entities:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>New actions:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
 (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) |
+
+### Add custom data to Microsoft Graph using schema extensions
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Extend Microsoft Graph with application data by using [schema extensions](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups)|
+|Addition|Beta|Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview) for details.|
+
+### Add custom data to Microsoft Graph using open extensions
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change| v1.0 and beta | Renamed former "Office 365 data extensions" as "open extensions". |
+|Addition|Beta|Added resources that support [open extensions](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>administrative unit<br/>device<br/>group<br/>organization<br/>user<br/>See the following example:<br/>[Add custom data to users using open extensions (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users)|
+
+### Directory APIs
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
 |Addition|Beta|Added support for [restoring and permanently deleting groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory).<br/>New entity: directory with deleteditems navigation property. |
 |Addition|Beta|New entity:</br>[Endpoint](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
 |Change  |Beta|New [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) navigation property on [groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) |
 |Addition|Beta|New entity:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
 |Change  |Beta|New [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) navigation property on [users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) |
 
-### Add custom data to Microsoft Graph
+### Reports APIs
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Addition|Beta|Extend Microsoft Graph with application data by [adding custom properties to Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following for examples:<br/>[Add custom data to users using Open Extensions (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users)<br/>[Add custom data to groups using Schema Extensions (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups)|
+|Addition|Beta|Introduced the new preview API for Office 365 Reports. You can use it to get usage reports of how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all. For more details, see [report](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report).|
 
 ## February 2017
 

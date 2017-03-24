@@ -16,11 +16,11 @@ Microsoft Graph offers two types of extensions. Choose the extension type that b
 
 ## Supported Resources
 
-The following table shows the current support for open and schema extensions and whether they are in generally availability (GA /v1.0) or in preview (/beta). 
+The following table shows the current support for open and schema extensions and whether they are in general availability (GA /v1.0 and /beta) or only in preview (/beta). 
 
-| | Open extensions | Schema extensions |
+| Resource | Open extensions | Schema extensions |
 |---------------|-------|-------|
-| [administrative unit](../api-reference/beta/resources/administrativeunit.md) | Preview only | Coming soon |
+| [Administrative unit](../api-reference/beta/resources/administrativeunit.md) | Preview only | Coming soon |
 |  [calendar event](../api-reference/beta/resources/event.md) | GA | Preview only |
 |  Group [calendar event](../api-reference/beta/resources/event.md) | GA | Preview only |
 |  Group conversation thread [post](../api-reference/beta/resources/post.md) | GA | Preview only |
@@ -28,7 +28,7 @@ The following table shows the current support for open and schema extensions and
 |  [group](../api-reference/beta/resources/group.md) | Preview only | Preview only |
 |  [message](../api-reference/beta/resources/message.md) | GA | Preview only |
 |  [organization](../api-reference/beta/resources/organization.md) | Preview only | Coming soon |
-|  [personal contact](../api-reference/beta/resources/contact.md)| GA | Coming soon |
+|  [Personal contact](../api-reference/beta/resources/contact.md)| GA | Coming soon |
 |  [user](../api-reference/beta/resources/user.md) | Preview only | Preview only |
 
 ## Open extensions
@@ -56,19 +56,16 @@ Open extension example: [Add custom data to users using open extensions (preview
 Then, use it to extend resource instances with strongly-typed custom data. In addition, you can control the [status](#schema-extensions-lifecycle) of your schema extension and let it 
 be discoverable by other apps. These apps can in turn use the extension for their data and build further experiences on top of it.
 
-When creating a schema extension, you must assign its **id** a unique name based on one of your directory's verified domain names 
-along with a schema name, for example `contoso_mySchema`. The custom data appears in a complex type (named with the string value in the unique **id**) on the extended resource instance. 
+When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 
-<!--
-When creating a schema extension, you must assign a unique name to its **id**:
+- If you already have a vanity `.com` domain that you have verified with your tenant, you can use the domain name along with the schema name 
+to define a unique name, in this format \{_domainName_\}\_\{_schemaName_\}. For example, if your vanity domain is contoso.com then you can define 
+an **id** of, `contoso_mySchema`.  This is the preferred option.
+- If you don’t have a verified vanity domain, you can just set the **id** to a schema name (without a domain name prefix), for example, `mySchema`. 
+Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext\{_8-random-alphanumeric-chars_\}\_\{_schema-name_\}`.  For example, `extkvbmkofy_mySchema`.
 
--If you already have a [verified domain](https://technet.microsoft.com/en-us/library/office-365-domains.aspx), 
-you can use the domain name along with a schema name, for example, assign **id** as `contoso_mySchema`.
-- If you don't have a verified domain or vanity domain, you can set **id** to just a the schema name, for example, mySchema.  Microsoft Graph will assign a string ID for you based on that name, in
-this format: `ext{8-random-alphanumeric-chars}_{schema-name}`.  For example, `extkvbmkofy_mySchema`.
+You will see this unique name in **id** used as the name of the complex type which will store your custom data on the extended resource instance. 
 
-The custom data appears in a complex type (named with the string value in the unique **id**) on the extended resource instance. 
--->
 
 Unlike open extensions, managing schema extension definitions ([list](../api-reference/beta/api/schemaextension_list.md), [create](../api-reference/beta/api/schemaextension_post_schemaextensions.md), 
 [get](../api-reference/beta/api/schemaextension_get.md), [update](../api-reference/beta/api/schemaextension_update.md), and [delete](../api-reference/beta/api/schemaextension_delete.md)) 
@@ -78,9 +75,9 @@ Since schema extensions are accessible as complex types in instances of the targ
 do CRUD operations on the data in a schema extension in the following ways:
 
 - Use the resource `POST` method to specify custom data when creating a new resource instance.
+- Use the resource `GET` method to read the custom data.
 - Use the resource `PATCH` method to add or update custom data in an existing resource instance.
-- Use the resource `GET` method to read the custom data.  
-- Set the complex type to null to delete the custom data in the resource instance. 
+- Use the resource `PATCH` method to set the complex type to null, to delete the custom data in the resource instance. 
 
 Schema extension example: [Add custom data to groups using schema extensions (preview)](extensibility_schema_groups.md)
 
@@ -140,6 +137,6 @@ Additionally, to create and manage schema extension definitions, an application 
 
 ## See also
 
-[Domain verification and managing DNS records](https://technet.microsoft.com/en-us/library/office-365-domains.aspx#Domain verification and managing DNS records)
+[Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [Adding and verifying a domain for an Office 365 tenant](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

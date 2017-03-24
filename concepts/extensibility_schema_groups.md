@@ -17,7 +17,7 @@ resource types as well.  So you can carry out similar operations as the example 
 
 ## 1. View available schema extensions
 First, as a developer, you might want to find any other schema extension definitions that our app could reuse.  This can be done by querying the **schemaExtension** resource.  
-In the example below, you're going to query for a specific schema extension by *id*.
+In the example below, you're going to query for a specific schema extension by **id**.
 
 Notice that the extension returned in the response has **Available** as the **status** value, which indicates that any app which has permission to the resources in the **targetTypes** property can use and update the extension
 with additive changes. In general, this operation returns any schema extensions that satisfy the specified filter regardless of **status**, so do check the extension status before using it.
@@ -54,12 +54,17 @@ Content-length: 420
 ```
 ## 2. Register a schema extension definition that describes a training course
 If you can't find a schema extension that *is* appropriate for your needs, you can create and register a new extension definition for training courses on the **group** resource.  
-Provide a unique value for **id** which is a concatenation of one of the [verified domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx) 
-in your tenant (graphlearn.com) and a name for the schema extension (courses) - `graphlearn_courses`.  Also specify a description (to enable discoverability), target types 
-(defining which resources this extension applies to), and the custom properties that will make up the schema.  In this example, specify the `courseId`, `courseName` and `courseType` custom properties and their types.
 
-Notice that when you initially create a schema extension, its status is `InDevelopment`. While you're developing the extension, you can keep it in this status, during which only your app that created it can
-update it with additive changes or delete it. When you are ready to share the extension for use by other apps, set **status** to `Available`.
+When creating a schema extension definition, you should provide a string for the **id** property. There are two ways to do this. The following example shows the preferred
+way, which uses a vanity domain name (`graphlearn.com`) that has been verified with your tenant. Concatenate the verified domain name (`graphlearn`) with a name 
+for the schema extension (`courses`), and assign **id** with the resultant string, `graphlearn_courses`.  Also, specify a description (to enable discoverability), target types 
+(defining which resources this extension applies to), and the custom properties that make up the schema.  In this example, 
+specify the `courseId`, `courseName` and `courseType` custom properties and their types.
+
+See an [example of the other way to assign **id** in the request](../api-reference/beta/api/schemaextension_post_schemaextensions.md#request-2), that requires you to provide only a schema name.
+
+Notice that when you initially create a schema extension, its status is **InDevelopment**. While you're developing the extension, you can keep it in this status, 
+during which only your app that created it can update it with additive changes or delete it. When you are ready to share the extension for use by other apps, set **status** to **Available**.
 
 ##### Request
 ```http
@@ -118,7 +123,9 @@ Content-length: 420
 ```
 
 ## 3. Create a new group with extended data 
-Create a new group that is extended with extra data using the *graphlearn_courses* schema extension definition that we just registered.  This is a standard ```POST``` to the *group* resource, with the additional *graphlearn_courses* complex type extension defined in the request body.  The response will not mirror back any data extensions.  We need to explicitly ```$select``` the extension by name using a ```GET``` operation.
+Create a new group that is extended with extra data using the `graphlearn_courses` schema extension definition that we just registered.  This is a standard ```POST``` 
+to the **group** resource, with the additional `graphlearn_courses` complex type extension defined in the request body.  The response will not mirror back any data extensions. 
+We need to explicitly ```$select``` the extension by name using a ```GET``` operation.
 
 ##### Request
 ```http
@@ -161,7 +168,7 @@ Content-length: 420
 ```
 
 ## 4. Add or update custom data to an existing group
-Similar to the last example, we can extend an existing group resource with the additional *graphlearn_courses* complex type extension defined in the body of a ```PATCH``` request.  
+Similar to the last example, we can extend an existing group resource with the additional `graphlearn_courses` complex type extension defined in the body of a ```PATCH``` request.  
 
 ##### Request
 ```http
@@ -184,7 +191,7 @@ HTTP/1.1 204 No Content
 If you want to update the values of the extension data, put the entire extension complex type in the body of a ```PATCH``` request (similar to adding custom data to an existing resource).
 
 ## 5. Get a group and its extension data
-To get the group **and** its extension data, we need to use $select to specify the extension by name, in this case by *graphlearn_courses*.
+To get the group **and** its extension data, we need to use `$select` to specify the extension by name, in this case by `graphlearn_courses`.
 
 #### Request
 ```http
@@ -212,3 +219,11 @@ Content-length: 326
 
 - [Add custom data to resources using extensions](extensibility_overview.md)
 - [Add custom data to users using open extensions (preview)](extensibility_open_users.md)
+- [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Adding and Verifying a Domain for the NEW Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [schemaExtension resource type](../api-reference/beta/resources/schemaextension.md)
+- [List schemaExtensions](../api-reference/beta/api/schemaextension_list.md)
+- [Create schemaExtension](../api-reference/beta/api/schemaextension_post_schemaextensions.md)
+- [Get schemaExtension](../api-reference/beta/api/schemaextension_get.md)
+- [Update schemaExtension](../api-reference/beta/api/schemaextension_update.md)
+- [Delete schemaExtension](../api-reference/beta/api/schemaextension_delete.md))
