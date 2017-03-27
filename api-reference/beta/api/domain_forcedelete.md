@@ -5,11 +5,11 @@ Deletes a domain using an asynchronous operation.
 The following actions are performed as part of this operation: 
 * Renames the UPN, EmailAddress, and ProxyAddress of users with references to the deleted domain.
 * Renames the EmailAddress of groups with references to the deleted domain. 
-* Renames the indentifierUris of applications with references to the deleted domain. 
+* Renames the identifierUris of applications with references to the deleted domain. 
 * If the number of objects to be renamed is greater than 100, an error is returned. 
 * If one of the applications to be renamed is a multi-tenant app, an error is returned.
 
-After the domain deletion completes, API operations for the deleted domain will return a error responses. To verify deletion of a domain, you can perform a [get domain](domain_get.md). If the domain was successfully deleted, an error code will be returned in the response.
+After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain_get.md). If the domain was successfully deleted, an error code will be returned in the response.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
