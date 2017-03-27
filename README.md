@@ -12,7 +12,7 @@ Thank you for your interest in Microsoft Graph documentation!
 
 ## Ways to contribute
 
-You can contribute to [Microsoft Graph documentation](http://graph.microsoft.io/docs) in these ways:
+You can contribute to [Microsoft Graph documentation](http://developer.microsoft.com/en-us/graph/docs) in these ways:
 
 * Contribute to articles via the [public Microsoft Graph developer docs repo](https://github.com/microsoftgraph/microsoft-graph-docs)
 * Report documentation bugs via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
@@ -143,7 +143,7 @@ Once your changes are successfully merged into the central repository, you can d
 To delete your branch follow these steps:
 
 1.	In GitBash type `git checkout master` at the command prompt.  This ensures that you aren't in the branch to be deleted (which isn't allowed).
-2.	Next, type `git branch -d <branch name>` at the command prompt.  This deletes the branch on your local machine only if it has been successfully merged to the upstream repository. (You can override this behavior with the `–D` flag, but first be sure you want to do this.)
+2.	Next, type `git branch -d <branch name>` at the command prompt.  This deletes the branch on your local machine only if it has been successfully merged to the upstream repository. (You can override this behavior with the `???D` flag, but first be sure you want to do this.)
 3.	Finally, type `git push origin :<branch name>` at the command prompt (a space before the colon and no space after it).  This will delete the branch on your github fork.  
 
 Congratulations, you have successfully contributed to the project.

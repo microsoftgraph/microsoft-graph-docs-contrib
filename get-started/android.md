@@ -217,7 +217,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     ```
 
 ### Call Microsoft Graph using the Microsoft Graph REST API
-The [Microsoft Graph REST API](http://graph.microsoft.io/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. Follow these steps to use the REST API.
+The [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. Follow these steps to use the REST API.
 
 1. Add Internet permissions to your app. Open the **AndroidManifest** file and add the following child to the manifest element.
     ```xml

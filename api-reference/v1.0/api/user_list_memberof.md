@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 GET /users/{id | userPrincipalName}/memberOf
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response. $filter is not supported. 
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response. $filter is not supported. 
 
 ## Request headers
 | Header       | Value |

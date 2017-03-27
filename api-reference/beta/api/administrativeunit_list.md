@@ -10,7 +10,7 @@ The following **scopes** are required to execute this API: *Directory.Read.All* 
 GET /administrativeUnits
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -36,7 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit",
+  "@odata.type": "microsoft.graph.administrativeUnit",
   "isCollection": true
 } -->
 ```http

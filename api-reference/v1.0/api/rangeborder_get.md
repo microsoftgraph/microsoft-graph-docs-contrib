@@ -11,7 +11,7 @@ GET /workbook/worksheets(<id|name>)/range(<address>)/format/borders(<sideIndex>)
 GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders(<sideIndex>)
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

@@ -11,7 +11,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/line
 GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

@@ -27,7 +27,7 @@ One of the following **scopes** is required to execute this API:
 GET /me/drive/special/{name}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters)
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
 to help customize the response.
 
 ## Request headers
@@ -80,7 +80,7 @@ Content-type: application/json
 ## Remarks
 
 To request the children of a special folder, you can request the `children`
-collection or use the [expand](http://graph.microsoft.io/docs/overview/query_parameters) option
+collection or use the [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) option
 to expand the children collection.
 
 

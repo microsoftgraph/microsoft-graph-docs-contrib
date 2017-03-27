@@ -2,6 +2,8 @@
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
+This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+
 ## Delta query support
 
 This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
@@ -38,6 +40,7 @@ by providing a [delta](../api/user_delta.md) function.
 |[List scopedAdministratorOf](../api/user_list_scopedadministratorof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role adminstrative units memberships for this user.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
+|[List licenseDetails](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[findmeetingtimes](../api/user_findmeetingtimes.md)|[meetingTimeCandidate](meetingtimecandidate.md)|Find time and locations to meet based on attendee availability, location or time constraints.|
 |[getMailTips](../api/user_getmailtips.md)|[mailTips](mailtips.md) collection|Return the MailTips of one or more recipients as available to the signed-in user. |
@@ -236,6 +239,13 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

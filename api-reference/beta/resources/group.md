@@ -3,6 +3,8 @@
 Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
 
+This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+
 ## Delta query support
 
 This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
@@ -49,6 +51,8 @@ by providing a [delta](../api/group_delta.md) function.
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
 |[Update setting](../api/directorysetting_update.md) | [directorySetting](directorysetting.md)	|Update a setting object. |
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
+|[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
+|[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
@@ -91,6 +95,7 @@ by providing a [delta](../api/group_delta.md) function.
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |drive|[drive](drive.md)|The group's drive. Read-only.|
+|endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
 |events|[event](event.md) collection|The group's events.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the group. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
@@ -170,6 +175,12 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
