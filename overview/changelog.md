@@ -4,6 +4,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## March 2017
 
+### Add contracts to Microsoft Graph
+
+|**Change type**|**Version**|**Description**| 
+|:-------------|:-----------|:--------------| 
+|Addition|Beta|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) | 
+
 ### Add custom data to Microsoft Graph using schema extensions
 
 |**Change type**|**Version**|**Description**|
