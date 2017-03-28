@@ -32,7 +32,7 @@ To associate a domain with a tenant:
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-|authenticationType|String| Indicates the configured authentication type for the domain. The value is either *Managed* or *Federated*.</br> *Managed* indicates a cloud managed domain where Azure AD performs user authentication.</br>*Federated* indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable |
+|authenticationType|String| Indicates the configured authentication type for the domain. The value is either *Managed* or *Federated*.<br> *Managed* indicates a cloud managed domain where Azure AD performs user authentication.<br>*Federated* indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable |
 |availabilityStatus|String| This property is always null except when the [verify](../api/domain_verify.md) action is used. When the [verify](../api/domain_verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either *AvailableImmediately* or *EmailVerifiedDomainTakeoverScheduled*.|
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique |
 |isAdminManaged|Boolean| The value of the property is false if the DNS record management of the domain has been delegated to Office 365. Otherwise, the value is true. Not nullable |
@@ -40,7 +40,7 @@ To associate a domain with a tenant:
 |isInitial|Boolean| True if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable |
 |isRoot|Boolean| True if the domain is a verified root domain. Otherwise, false if the domain is a subdomain or unverified. Not nullable |
 |isVerified|Boolean| True if the domain has completed domain ownership verification. Not nullable |
-|supportedServices|String collection| The capabilities assigned to the domain.</br></br>Can include 0, 1 or more of following values: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*,	*SharePointPublic*,	*OrgIdAuthentication*,	*Yammer*,	*Intune*</br>Most of these values are read-only.</br></br> The values which you can add/remove using Graph API include: *Email*,	*OfficeCommunicationsOnline*,	*Yammer*</br>Not nullable|
+|supportedServices|String collection| The capabilities assigned to the domain.<br><br>Can include 0, 1 or more of following values: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*,	*SharePointPublic*,	*OrgIdAuthentication*,	*Yammer*,	*Intune*<br>Most of these values are read-only.<br><br> The values which you can add/remove using Graph API include: *Email*,	*OfficeCommunicationsOnline*,	*Yammer*<br>Not nullable|
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
 
 ### Relationships
@@ -50,8 +50,8 @@ Relationships between a domain and other objects in the directory such as its ve
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |domainNameReferences|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.</br>Read-only. Nullable.|
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.</br>Read-only. Nullable.|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.<br>Read-only. Nullable.|
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.<br>Read-only. Nullable.|
 
 ### JSON representation
 
