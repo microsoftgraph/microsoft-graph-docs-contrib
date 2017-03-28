@@ -386,7 +386,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |:--------------|:-----------|:--------------|
 |Addition|v1.0|Added _inferenceClassification_ resource type.|
 |Addition|Beta|Added _timeZone_ to _mailboxsettings_.|
-|Addition|Beta|Added API _findMeetingTimesOLD _to _user_.|
+|Addition|Beta|Added API _findMeetingTimes_to _user_.|
 
 ## April 2016
 
@@ -413,7 +413,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
 |Addition|Beta|Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties.|
-|Addition|Beta|Added _suggestionHint_ property to _meetingTimeCandidate _.|
+|Addition|Beta|Added _suggestionHint_ property to _meetingTimeCandidate_.|
 |Addition|Beta|Added _locationUri_ property to _location_.|
 |Addition|Beta|Added _type_ and _postOfficeBox_ to _physicalAddress _.|
 |Change|Beta|_findMeetingTimes_ now takes new parameter _ReturnSuggestionHints_.|
@@ -481,8 +481,8 @@ Added support for dynamic group membership through the public preview API, inclu
 |Addition|v1.0|Added _mobilePhone_ property.|
 |Addition|v1.0 and beta|Added _internetMessageId_ property. The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt).|
 |Change|Beta|Renamed _mobilePhone1_ property to _mobilePhone_.|
-|Change|Beta|_createReply_ and _createReplyAll _take new parameter _Message_ and _comment_.|
-|Change|Beta|_createForward _takes new parameter _Message _, _ToRecipients_ and _comment_.|
+|Change|Beta|_createReply_ and _createReplyAll_take new parameter _Message_ and _comment_.|
+|Change|Beta|_createForward_ takes new parameter _Message_, _ToRecipients_ and _comment_.|
 |Change|Beta|_reply_, _replyAll_and _forward_ take new parameter _Message_.|
 
 ### Permission
@@ -504,7 +504,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |:--------------|:-----------|:--------------|
 |Addition|Beta|Added new properties _sourceUrl_, _providerType_, _thumbnailUrl_, _previewUrl_, _permission_ and _isFolder_.|
 |Addition|Beta|Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties.|
-|Addition|Beta|Added new enum types _referenceAttachmentProvider _and _referenceAttachmentPermission_.|
+|Addition|Beta|Added new enum types _referenceAttachmentProvider_and _referenceAttachmentPermission_.|
 
 ### Subscriptions
 
