@@ -1,16 +1,16 @@
-# Introduction to Working with Excel in Python
-This walkthrough details what is needed to begin making requests to the Excel REST API from a Python web app. This includes an outline of: configuration steps, authorization, request formulation as well as examples of common Excel REST API scenarios.
+# Use Microsoft Graph to access Excel in a Python app
 
+This walkthrough describes how to make requests to the Excel REST API from a Python web app. 
 
 ##  Prerequisites
 
 * [Python 3.5.2](https://www.python.org/downloads/)
 * [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
-* An [Office 365 for business account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
+* A [Work or school account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
 
 
 ## Developing for Excel
-The Microsoft Graph API can be used to read and update Excel workbooks stored in supported online storage platforms including OneDrive and SharePoint. The `Workbook` (or Excel file) resource contains all the other Excel resources and your app can access them via simple navigations. 
+You can use the Microsoft Graph API to read and update workbooks stored in supported online storage platforms including, OneDrive and SharePoint. The `Workbook` (or Excel file) resource contains all the other Excel resources and your app can access them via simple navigations. 
 
 You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook. For example, 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
@@ -34,17 +34,17 @@ Excel APIs can be called in one of two modes:
 
 To represent the session in the API, use the `workbook-session-id: {session-id}` header. 
 
-# Getting Started
+## Getting started
 
-## Register the application in Azure Active Directory
+### Register the application in Azure Active Directory
 
-First, you need to register your application and set permissions to use Microsoft Graph. This lets users sign into the application with work or school accounts.
+First, you need to register your application and set permissions to use Microsoft Graph. This lets users sign in to the application with work or school accounts.
 
-## Register the application
+### Register the application
 
 Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app for authentication.
 
-1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
+1. Sign in to the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
 2. Choose **Add an app**.
 
@@ -62,11 +62,11 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 7. Make sure the **Allow Implicit Flow** check box is selected, and enter your app's Redirect URI.
 
-	The **Allow Implicit Flow** option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the **id_token**) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
+	The **Allow Implicit Flow** option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in information (the **id_token**) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
 
 8. Choose **Save**.
 
-## Create OAuth client
+### Create OAuth client
 
 Your app needs to register an instance of the Flask-OAuth client that you'll use to start the OAuth flow and get an access token. 
 
@@ -86,7 +86,7 @@ Your app needs to register an instance of the Flask-OAuth client that you'll use
 	)
 ```
 
-## Receive an authorization code in your reply URL page
+### Receive an authorization code in your reply URL page
 
 After the user signs in, the browser is redirected to your reply URL. Upon successful authorization, the access token (which will be used to authorize further requests) will be returned in the response body. 
 
@@ -114,9 +114,9 @@ After the user signs in, the browser is redirected to your reply URL. Upon succe
 		session['access_token'] = response['access_token']
 ```
 
-## Making Requests to Excel API
+## Making requests to the Excel API
 
-### Request Headers 
+### Request headers 
 With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must append the access token to the **Authorization** header of each request.
 
 ```python
@@ -173,526 +173,10 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-## Common Excel API Scenarios
+## [Common Excel API scenarios](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
 
-### Listing worksheets in a workbook
-#### Request 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
-accept: Application/Json 
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-```
-
-#### Response
-
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 200, OK
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets",
-  "value": [
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)",
-      "id": "{00000000-0001-0000-0000-000000000000}",
-      "name": "Sheet1",
-      "position": 0,
-      "visibility": "Visible"
-    },
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B00000000-0001-0000-0100-000000000000%7D%27)",
-      "id": "{00000000-0001-0000-0100-000000000000}",
-      "name": "Sheet57664",
-      "position": 1,
-      "visibility": "Visible"
-    }
-  ]
-}
-```
-### Adding a new worksheet
-
-#### Request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
-content-type: Application/Json 
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-
-{ "name": "Sheet32243" }
-```
-
-#### Response 
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 201, Created
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
-  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
-  "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
-  "name": "Sheet32243",
-  "position": 5,
-  "visibility": "Visible"
-}
-```
-
-### Listing charts in a worksheet
-
-#### Request
-<!-- { "blockType": "ignored" } -->
-```http 
-GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
-accept: Application/Json 
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id} 
-```
-
-#### Response
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 200, OK
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts",
-  "value": [
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)/charts(%27%7B00000000-0008-0000-0100-000003000000%7D%27)",
-      "height": 235.5,
-      "id": "{00000000-0008-0000-0100-000003000000}",
-      "left": 276.0,
-      "name": "Chart 2",
-      "top": 0.0,
-      "width": 401.25
-   }
-  ]
-}
-```
-
-### Adding a chart
-
-#### Request
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts/Add
-content-type: Application/Json 
-accept: application/Json 
-authorization: Bearer {access-token} 
-
-{ "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
-```
-
-#### Response 
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 201, Created
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#chart",
-  "@odata.type": "#microsoft.graph.chart",
-  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)/charts(%27%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D%27)",
-  "height": 216.0,
-  "id": "{2D421098-FA19-41F7-8528-EE7B00E4BB42}",
-  "left": 0.0,
-  "name": "Chart 2",
-  "top": 0.0,
-  "width": 360.0
-}
-```
-
-### Updating chart source
-
-#### Request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
-content-type: Application/Json 
-accept: application/Json 
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-
-{ "sourceData": "A1:C4", "seriesBy": "Auto" }
-```
-
-#### Response
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 204, No Content
-```
-
-### Getting a chart image
-
-#### Request 
-<!-- { "blockType": "ignored" } -->
-```http
-GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id} 
-```
-
-#### Response
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 200, OK
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#Edm.String",
-  "value": "{base-64-string}"
-}
-```
-
-### Listing tables
-
-#### Request 
-<!-- { "blockType": "ignored" } -->
-```http
-GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
-accept: Application/Json 
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-```
-
-#### Response
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 200, OK
-content-type: application/json;odata.metadata 
-```
-### Listing table columns
-
-#### Request
-<!-- { "blockType": "ignored" } -->
-```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-```
-
-#### Response 
-
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 200, OK 
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/columns",
-  "value": [
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/columns(%271%27)",
-      "id": "1",
-      "index": 0,
-      "name": "Date",
-      "values": [
-        [
-          "Date"
-        ],
-        [
-          42019
-       ],
-        [
-          42020
-        ],
-        [
-          42021
-        ],
-        [
-          42022
-        ],
-        [
-          42023
-        ],
-        [
-          42024
-        ]
-      ]
-    },
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/columns(%272%27)",
-      "id": "2",
-      "index": 1,
-      "name": "High (F)",
-      "values": [
-        [
-          "High (F)"
-        ],
-        [
-          53
-        ],
-        [
-          45
-        ],
-        [
-          50
-        ],
-        [
-          43
-        ],
-        [
-          45
-        ],
-        [
-          52
-        ]
-      ]
-    },
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/columns(%273%27)",
-      "id": "3",
-      "index": 2,
-      "name": "Low (F)",
-      "values": [
-        [
-          "Low (F)"
-        ],
-        [
-          34
-        ],
-        [
-          39
-        ],
-        [
-          31
-        ],
-        [
-          39
-        ],
-        [
-          41
-        ],
-        [
-          40
-        ]
-      ]
-    }
-  ]
-}
-```
-
-### Listing table rows
-
-#### Request 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-```
-
-#### Response
-
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 200, OK
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/rows",
-  "value": [
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows/itemAt(0)",
-      "index": 0,
-      "values": [
-        [
-          42019,
-          53,
-          34
-       ]
-      ]
-    },
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows/itemAt(1)",
-      "index": 1,
-      "values": [
-        [
-          42020,
-          45,
-          39
-        ]
-      ]
-    },
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows/itemAt(2)",
-      "index": 2,
-      "values": [
-        [
-          42021,
-          50,
-          31
-        ]
-      ]
-    },
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows/itemAt(3)",
-      "index": 3,
-      "values": [
-        [
-          42022,
-          43,
-          39
-        ]
-      ]
-    },
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows/itemAt(4)",
-      "index": 4,
-      "values": [
-        [
-          42023,
-          45,
-          41
-        ]
-      ]
-    },
-    {
-      "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows/itemAt(5)",
-      "index": 5,
-      "values": [
-        [
-          42024,
-          52,
-          40
-        ]
-      ]
-    }
-  ]
-}
-```
-### Adding a table row
-
-#### Request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
-content-type: Application/Json 
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-
-{ "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
-```
-
-#### Response 
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 201, Created
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('4')/rows/$entity",
-  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%274%27)/rows(null)",
-  "index": 6,
-  "values": [
-    [
-      "Jan-15-2016",
-      49,
-      37
-    ]
-  ]
-}
-```
-### Adding a table column
-
-#### Request 
-<!-- { "blockType": "ignored" } -->
-```http 
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
-content-type: Application/Json 
-accept: application/Json 
-
-
-{ "values": [ [ "Status" ], [ "Open" ], [ "Closed" ] ], "index": 2 }
-```
-
-#### Response 
-
-<!-- { "blockType": "ignored" } -->
-```http 
-HTTP code: 201, Created
-content-type: application/json;odata.metadata 
-
-{
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables('2')/columns/$entity",
-  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)/columns(%274%27)",
-  "id": "4",
-  "index": 2,
-  "name": "Status",
-  "values": [
-    [
-      "Status"
-    ],
-    [
-      "Open"
-    ],
-    [
-      "Closed"
-    ]
-  ]
-}
-```
-### Sorting a table
-
-#### Request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-
-{
-"fields" : [
-  { "key": 0,
-   "ascending": true
-  }
-]
-}
-```
-
-
-#### Response
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 204, No Content
-```
-
-### Filtering a table
-
-#### Request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
-
-{
-"criteria" : 
-  { "filterOn": "custom",
-   "criterion1": ">15",
-   "operator": "and",
-   "criterion2": "<50"
-   
-  }
-}
-```
-
-#### Response
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP code: 204, No Content
-```
-
-
-## Learn More
-The Excel REST API in Microsoft Graph is a very powerful API that can be used to interact with the data in the Excel workbook. Check out the API reference to explore what else you can accomplish with the Excel REST API.
+## Next steps
+The Excel REST API in Microsoft Graph provides a powerful way to access and interact with data in Excel workbooks. Explore what else is possible with the Excel REST API and other services in Microsoft Graph.
 
 * [Microsoft Graph Documentation](https://graph.microsoft.io/en-us/docs)
 * [Get started with Microsoft Graph in a Python app](https://graph.microsoft.io/en-us/docs/get-started/python)
