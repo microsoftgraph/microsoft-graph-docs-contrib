@@ -9,7 +9,7 @@ One of the following **scopes** is required to execute this API:
 GET /directoryRoleTemplates/{id}
 ```
 ## Optional query parameters
-This method does **not** support the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response (e.g. $filter is not supported here).
+This method does **not** support the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response (e.g. $filter is not supported here).
 
 ## Request headers
 | Name       | Type | Description|

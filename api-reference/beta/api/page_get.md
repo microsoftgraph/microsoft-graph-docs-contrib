@@ -2,12 +2,21 @@
 
 Retrieve the properties and relationships of a [page](../resources/page.md) object.
 
+**Getting page information**
+
+Access a page's metadata by page identifier:
+
+```
+GET /me/notes/pages/{id}
+```
+
 **Getting page content**
 
 You can use the page's `content` endpoint to get the HTML content of a page:
 
 ```
 GET /me/notes/pages/{id}/content[?includeIDs=true]
+GET /me/notes/pages/{id}/$value[?includeIDs=true]
 ```
 
 The `includeIDs=true` query option is used to [update pages](../api/page_update.md).
@@ -23,7 +32,7 @@ GET /users/{id | userPrincipalName}/notes/pages/{id}
 GET /groups/{id}/notes/pages/{id}
 ```
 ## Optional query parameters
-This method supports the `select` and `expand` [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the `select` and `expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.
 

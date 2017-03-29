@@ -3,7 +3,7 @@
 Retrieve a list of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by 
 the user's communication, collaboration and business relationships.
 ## Prerequisites
-The following **scopes** are required to execute this API: *People.Read*; *People.ReadWrite*
+The following **scopes** are required to execute this API: *People.Read*
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API: *People.Read*; *Peopl
 GET /users/{id | userPrincipalName}/people
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 
 ## Request headers
