@@ -415,7 +415,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |Addition|Beta|Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties.|
 |Addition|Beta|Added _suggestionHint_ property to _meetingTimeCandidate_.|
 |Addition|Beta|Added _locationUri_ property to _location_.|
-|Addition|Beta|Added _type_ and _postOfficeBox_ to _physicalAddress _.|
+|Addition|Beta|Added _type_ and _postOfficeBox_ to _physicalAddress_.|
 |Change|Beta|_findMeetingTimes_ now takes new parameter _ReturnSuggestionHints_.|
 |Change|Beta|_findMeetingTimes_ now returns a collection of _meetingTimeCandidate_.|
 
@@ -483,7 +483,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |Change|Beta|Renamed _mobilePhone1_ property to _mobilePhone_.|
 |Change|Beta|_createReply_ and _createReplyAll_take new parameter _Message_ and _comment_.|
 |Change|Beta|_createForward_ takes new parameter _Message_, _ToRecipients_ and _comment_.|
-|Change|Beta|_reply_, _replyAll_and _forward_ take new parameter _Message_.|
+|Change|Beta|_reply_, _replyAll_ and _forward_ take new parameter _Message_.|
 
 ### Permission
 
@@ -496,7 +496,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
 |Addition|Beta|Added new properties _birthday_, _personNotes_, _isFavorite_, _phones_, _permission_, _postalAddresses_,_websites_,_yomiCompany_, _department_, _profession_, _mailboxType_ and _personType_.|
-|Addition|Beta|Added new enum types _physicalAddressType_, _webSite _, _phone_ and _webSiteType_.|
+|Addition|Beta|Added new enum types _physicalAddressType_, _webSite_, _phone_ and _webSiteType_.|
 
 ### Reference attachment
 
@@ -504,7 +504,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |:--------------|:-----------|:--------------|
 |Addition|Beta|Added new properties _sourceUrl_, _providerType_, _thumbnailUrl_, _previewUrl_, _permission_ and _isFolder_.|
 |Addition|Beta|Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties.|
-|Addition|Beta|Added new enum types _referenceAttachmentProvider_and _referenceAttachmentPermission_.|
+|Addition|Beta|Added new enum types _referenceAttachmentProvider_ and _referenceAttachmentPermission_.|
 
 ### Subscriptions
 
