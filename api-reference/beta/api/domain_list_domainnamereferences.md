@@ -3,28 +3,35 @@
 Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain. The returned list will contain all directory objects that have a dependency on the domain.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
+One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/domainNameReferences
+```
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-```
 ### Optional query parameters
+
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
+
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; Required |
+| Authorization  | Bearer &lt;token&gt; *Required* |
 
 ### Request body
+
 Do not supply a request body for this method.
+
 ### Response
+
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+
 ### Example
 ##### Request
 
@@ -35,6 +42,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ```http
 GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 ```
+
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

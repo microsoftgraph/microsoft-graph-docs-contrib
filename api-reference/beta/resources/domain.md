@@ -23,8 +23,8 @@ To associate a domain with a tenant:
 |[List domainNameReference](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
 |[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
 |[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
-|[Update domain](../api/domain_update.md) | [domain](domain.md)	|Updates a domain|
-|[Delete domain](../api/domain_delete.md) | None |Deletes a domain|
+|[Update domain](../api/domain_update.md) | [domain](domain.md) |Updates a domain.|
+|[Delete domain](../api/domain_delete.md) | None |Deletes a domain.|
 |[ForceDelete domain](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain_verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
 
@@ -40,7 +40,7 @@ To associate a domain with a tenant:
 |isInitial|Boolean| True if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable |
 |isRoot|Boolean| True if the domain is a verified root domain. Otherwise, false if the domain is a subdomain or unverified. Not nullable |
 |isVerified|Boolean| True if the domain has completed domain ownership verification. Not nullable |
-|supportedServices|String collection| The capabilities assigned to the domain.<br><br>Can include 0, 1 or more of following values: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*,	*SharePointPublic*,	*OrgIdAuthentication*,	*Yammer*,	*Intune*<br>Most of these values are read-only.<br><br> The values which you can add/remove using Graph API include: *Email*,	*OfficeCommunicationsOnline*,	*Yammer*<br>Not nullable|
+|supportedServices|String collection| The capabilities assigned to the domain.<br><br>Can include 0, 1 or more of following values: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> The values which you can add/remove using Graph API include: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Not nullable|
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
 
 ### Relationships
@@ -49,9 +49,9 @@ Relationships between a domain and other objects in the directory such as its ve
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.<br>Read-only. Nullable.|
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.<br>Read-only. Nullable.|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| Read-only, Nullable|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.<br>Read-only, Nullable |
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.<br>Read-only, Nullable|
 
 ### JSON representation
 

@@ -1,24 +1,29 @@
 # Get domain
 
-Retrieve the properties and relationships of domain object. 
+Retrieve the properties and relationships of domain object.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
+One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
 ### HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}
+```
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-```
 ### Optional query parameters
+
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
+
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; Required|
+| Authorization  | Bearer &lt;token&gt; *Required* |
 | Content-Type  | application/json |
 
 ### Request body

@@ -3,24 +3,33 @@
 Retrieve the properties and relationships of [contract](../resources/contract.md) object.
 
 ### Prerequisites
+
 One of the following **scopes** are required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All*, or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contracts/{id}
 ```
+
 ### Optional query parameters
+
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
+
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+| Authorization  | Bearer &lt;token&gt; *Required* |
 
 ### Request body
+
 Do not supply a request body for this method.
+
 ### Response
+
 If successful, this method returns a `200 OK` response code and [Contract](../resources/contract.md) object in the response body.
+
 ### Example
 ##### Request
 
@@ -31,6 +40,7 @@ If successful, this method returns a `200 OK` response code and [Contract](../re
 ```http
 GET https://graph.microsoft.com/beta/contracts/{id}
 ```
+
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
