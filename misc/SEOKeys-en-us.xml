@@ -1103,6 +1103,10 @@
         <Item text="Create extension property" url="/en-us/api-reference/beta/api/application_post_extensionproperties" SEOKeyword="Create ExtensionProperty, Microsoft Graph API, application API" SEODescription="Use this API to create a new ExtensionProperty." />
         <Item text="Restore application" url="/en-us/api-reference/beta/api/application_restore" SEOKeyword="application: restore, Microsoft Graph API, application API" SEODescription="" />
       </Item>
+	 <Item text="Contracts" url="/en-us/api-reference/beta/resources/contract" >
+		<Item text="Get contract" url="/en-us/api-reference/beta/api/contract_get" />
+		<Item text="List contracts" url="/en-us/api-reference/beta/api/contract_list" />
+	 </Item>
 	 <Item text="Deleted items" url="/en-us/api-reference/beta/resources/directory" >
 		<Item text="Get deleted item" url="/en-us/api-reference/beta/api/directory_deleteditems_get" />
 		<Item text="List deleted items" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
@@ -1119,11 +1123,12 @@
         <Item text="List registeredUsers" url="/en-us/api-reference/beta/api/device_list_registeredusers" SEOKeyword="List registeredUsers, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>	 
 	 <Item text="Directory object" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Get directoryObject" url="/en-us/api-reference/beta/api/directoryobject_get" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryobject object." />
-        <Item text="Delete directoryObject" url="/en-us/api-reference/beta/api/directoryobject_delete" SEOKeyword="Delete directoryObject, Microsoft Graph API, Directory API" SEODescription="Delete directoryObject." />
+        <Item text="Get directory object" url="/en-us/api-reference/beta/api/directoryobject_get" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryobject object." />
+        <Item text="Delete directory object" url="/en-us/api-reference/beta/api/directoryobject_delete" SEOKeyword="Delete directoryObject, Microsoft Graph API, Directory API" SEODescription="Delete directoryObject." />
         <Item text="Get member objects" url="/en-us/api-reference/beta/api/directoryobject_getmemberobjects" SEOKeyword="directoryObject: getMemberObjects, Microsoft Graph API, Directory API" SEODescription="" />
         <Item text="Get member groups" url="/en-us/api-reference/beta/api/directoryobject_getmembergroups" SEOKeyword="directoryObject: getMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
         <Item text="Check member groups" url="/en-us/api-reference/beta/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
+        <Item text="Get directoryObjects by ids" url="/en-us/api-reference/beta/api/directoryobject_getbyids" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>
       <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
         <Item text="List directoryRoles" url="/en-us/api-reference/beta/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
@@ -1149,7 +1154,15 @@
         <Item text="List directorySettingTemplates" url="/en-us/api-reference/beta/api/directorysettingtemplate_list" SEOKeyword="List directorySettingTemplates, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryroletemplate objects." />
         <Item text="Get directorySettingTemplate" url="/en-us/api-reference/beta/api/directorysettingtemplate_get" SEOKeyword="Get directorySettingTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
       </Item>
-      <Item text="Extension property" url="/en-us/api-reference/beta/resources/extensionproperty" SEOKeyword="extensionproperty API, Microsoft Graph API, extensionproperty API" SEODescription="Allows an application to define and use a set of additional properties that can be added to directory objects (users, groups, tenant details, devices, applications, and service principals) without the application requiring an external data store. For more information about extension properties, see Azure AD Graph API Directory Schema Extensions(https://msdn.microsoft.com/en-us/library/azure/dn720459.aspx). Inherits from DirectoryObject.">
+      <Item text="Domains" url="/en-us/api-reference/beta/resources/domain" >
+		<Item text="List domains" url="/en-us/api-reference/beta/api/domain_list" />
+		<Item text="Create domain" url="/en-us/api-reference/beta/api/domain_post_domains" />
+		<Item text="Delete domain" url="/en-us/api-reference/beta/api/domain_forcedelete" />
+		<Item text="Get domain" url="/en-us/api-reference/beta/api/domain_get" />
+		<Item text="Update domain" url="/en-us/api-reference/beta/api/domain_update" />
+		<Item text="Verify domain" url="/en-us/api-reference/beta/api/domain_verify" />
+	  </Item>
+	  <Item text="Extension property" url="/en-us/api-reference/beta/resources/extensionproperty" SEOKeyword="extensionproperty API, Microsoft Graph API, extensionproperty API" SEODescription="Allows an application to define and use a set of additional properties that can be added to directory objects (users, groups, tenant details, devices, applications, and service principals) without the application requiring an external data store. For more information about extension properties, see Azure AD Graph API Directory Schema Extensions(https://msdn.microsoft.com/en-us/library/azure/dn720459.aspx). Inherits from DirectoryObject.">
         <Item text="Get extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_get" SEOKeyword="Get extensionProperty, Microsoft Graph API, extensionproperty API" SEODescription="Retrieve the properties and relationships of extensionproperty object." />
         <Item text="Update extensionproperty" url="/en-us/api-reference/beta/api/extensionproperty_update" SEOKeyword="Update extensionproperty, Microsoft Graph API, extensionproperty API" SEODescription="Update the properties of extensionproperty object." />
         <Item text="Delete extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_delete" SEOKeyword="Delete extensionProperty, Microsoft Graph API, extensionproperty API" SEODescription="Delete extensionProperty." />
