@@ -2,11 +2,12 @@
 
 Validates the ownership of the domain.
 
-> **Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
+> **Important:**
+> Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
 
 ### Prerequisites
 
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 
 ### HTTP request
 
@@ -21,7 +22,7 @@ POST /domains/{id}/verify
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt; Required|
+| Authorization  | Bearer &lt;token&gt; *Required*|
 | Content-Type  | application/json |
 
 ### Request body

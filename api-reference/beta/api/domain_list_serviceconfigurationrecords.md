@@ -2,28 +2,37 @@
 
 Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.
 
-> Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
+Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
+One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/contoso.com/serviceConfigurationRecords
 ```
+
 ### Optional query parameters
+
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
+
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; Required|
+| Authorization  | Bearer &lt;token&gt; *Required* |
 | Content-Type  | application/json |
 
 ### Request body
+
 Do not supply a request body for this method.
+
 ### Response
+
 If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.
+
 ### Example
 ##### Request
 
