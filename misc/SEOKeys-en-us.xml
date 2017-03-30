@@ -1334,13 +1334,6 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_appreportingoverviewstatus_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_appreportingoverviewstatus_update"/>
         </Item>
-        <item text="App provisioning configuration group assignment" url="/en-us/api-reference/beta/resources/intune_apps_appprovisioningconfiggroupassignment">
-          <item text="List" url="/en-us/api-reference/beta/api/intune_apps_appprovisioningconfiggroupassignment_list"/>
-          <item text="Get" url="/en-us/api-reference/beta/api/intune_apps_appprovisioningconfiggroupassignment_get"/>
-          <item text="Create" url="/en-us/api-reference/beta/api/intune_apps_appprovisioningconfiggroupassignment_create"/>
-          <item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_appprovisioningconfiggroupassignment_delete"/>
-          <item text="Update" url="/en-us/api-reference/beta/api/intune_apps_appprovisioningconfiggroupassignment_update"/>
-        </item>
         <Item text="Apple VPP token" url="/en-us/api-reference/beta/resources/intune_apps_applevolumepurchaseprogramtoken">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_applevolumepurchaseprogramtoken_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_applevolumepurchaseprogramtoken_update"/>
@@ -1438,13 +1431,6 @@
           <Item text="List mobile app install status" url="/en-us/api-reference/beta/api/intune_apps_managedapp_list_mobileappinstallstatus"/>
           <Item text="List user app install status" url="/en-us/api-reference/beta/api/intune_apps_managedapp_list_userappinstallstatus"/>
         </Item>
-        <item text="Enterprise certificate" url="/en-us/api-reference/beta/resources/intune_apps_enterprisecertificate">
-          <item text="List" url="/en-us/api-reference/beta/api/intune_apps_enterprisecertificate_list"/>
-          <item text="Get" url="/en-us/api-reference/beta/api/intune_apps_enterprisecertificate_get"/>
-          <item text="Create" url="/en-us/api-reference/beta/api/intune_apps_enterprisecertificate_create"/>
-          <item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_enterprisecertificate_delete"/>
-          <item text="Update" url="/en-us/api-reference/beta/api/intune_apps_enterprisecertificate_update"/>
-        </item>
         <item text="Managed device mobile app configuration device summary" url="/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
 	        <item text="Get" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get"/>
         	<item text="Update" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_update"/>
@@ -1501,13 +1487,6 @@
           <item text="List user app install statuses" url="/en-us/api-reference/beta/api/intune_apps_managedandroidlobapp_list_userappinstallstatus"/>
           <item text="List mobile app contents" url="/en-us/api-reference/beta/api/intune_apps_managedandroidlobapp_list_mobileappcontent"/>
         </item>
-        <item text="Managed device app provisioning configuration device status" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappprovisioningconfigurationdevicestatus">
-          <item text="List" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappprovisioningconfigurationdevicestatus_list"/>
-          <item text="Get" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappprovisioningconfigurationdevicestatus_get"/>
-          <item text="Create" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappprovisioningconfigurationdevicestatus_create"/>
-          <item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappprovisioningconfigurationdevicestatus_delete"/>
-          <item text="Update" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappprovisioningconfigurationdevicestatus_update"/>
-        </item>
         <item text="Managed iOS LOB app" url="/en-us/api-reference/beta/resources/intune_apps_managedioslobapp">
           <item text="List" url="/en-us/api-reference/beta/api/intune_apps_managedioslobapp_list"/>
           <item text="Get" url="/en-us/api-reference/beta/api/intune_apps_managedioslobapp_get"/>
@@ -1541,6 +1520,8 @@
           <Item text="Assign" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_assign"/>
           <Item text="Assign categories" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_assigncategories"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_get"/>
+          <Item text="Get mobile app count" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_getmobileappcount"/>
+          <Item text="Get top mobile apps" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_gettopmobileapps"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list"/>
           <Item text="List mobile app categories" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list_mobileappcategory"/>
           <Item text="List mobile app group assignments" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list_mobileappgroupassignment"/>
@@ -1587,10 +1568,6 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_mobileappinstallstatus_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_mobileappinstallstatus_update"/>
         </Item>
-        <item text="Mobile app install summary" url="/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallsummary">
- 	        <item text="Get" url="/en-us/api-reference/beta/api/intune_apps_mobileappinstallsummary_get"/>
-        	<item text="Update" url="/en-us/api-reference/beta/api/intune_apps_mobileappinstallsummary_update"/>
-        </item>
         <item text="Mobile app provisioning configuration group assignment" url="/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappprovisioningconfiggroupassignment">
  	        <item text="List" url="/en-us/api-reference/beta/api/intune_apps_mobileappprovisioningconfiggroupassignment_list"/>
         	<item text="Get" url="/en-us/api-reference/beta/api/intune_apps_mobileappprovisioningconfiggroupassignment_get"/>
@@ -1626,10 +1603,6 @@
         	<item text="Get mobile app install summary" url="/en-us/api-reference/beta/api/intune_apps_officesuiteapp_get_mobileappinstallsummary"/>
         	<item text="List mobile app install statuses" url="/en-us/api-reference/beta/api/intune_apps_officesuiteapp_list_mobileappinstallstatus"/>
         	<item text="List user app install statuses" url="/en-us/api-reference/beta/api/intune_apps_officesuiteapp_list_userappinstallstatus"/>
-        </item>
-        <item text="Symantec certificate" url="/en-us/api-reference/beta/resources/intune_apps_symanteccertificate">
-          <item text="Get" url="/en-us/api-reference/beta/api/intune_apps_symanteccertificate_get"/>
-          <item text="Update" url="/en-us/api-reference/beta/api/intune_apps_symanteccertificate_update"/>
         </item>
         <item text="Symantec code signing certificate" url="/en-us/graph/docs/api-reference/beta/resources/intune_apps_symanteccodesigningcertificate">
  	        <item text="Get" url="/en-us/api-reference/beta/api/intune_apps_symanteccodesigningcertificate_get"/>
@@ -1815,6 +1788,7 @@
           <Item text="List imported Apple identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_list_importedappledeviceidentity"/>
           <Item text="List imported device identity" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_list_importeddeviceidentity"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_update"/>
+          <Item text="Verify Windows enrollment auto discovery" url="/en-us/api-reference/beta/api/intune_corpenrollment_devicemanagement_verifywindowsenrollmentautodiscovery"/>
         </Item>
         <Item text="Enrollment profile" url="/en-us/api-reference/beta/resources/intune_corpenrollment_enrollmentprofile">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_create"/>
@@ -2770,17 +2744,6 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_update"/>
         </Item>
         <Item text="Windows 10 proxy server" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver"/>
-        <Item text="Windows 10 Windows Information Protection configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10windowsinformationprotectionconfiguration">
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_delete"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_get"/>
-          <Item text="Get device configuration overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_get_deviceconfigurationdeviceoverview"/>
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_list"/>
-          <Item text="List device configuration device status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_list_deviceconfigurationdevicestatus"/>
-          <Item text="List device configuration group assignment" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_list_deviceconfigurationgroupassignment"/>
-          <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_list_deviceconfigurationuserstatus"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10windowsinformationprotectionconfiguration_update"/>
-        </Item>
         <Item text="Windows 8.1 cerficate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows81certificateprofilebase">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get"/>
           <Item text="Get device configuration overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get_deviceconfigurationdeviceoverview"/>
@@ -2992,7 +2955,9 @@
           <Item text="List directory object" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_list_directoryobject"/>
           <Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_list_mobileappidentifierdeployment"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_update"/>
-        </Item>
+          <item text="Update mobile app identifier deployments" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_androidmanagedappprotection_updatemobileappidentifierdeployments"/>
+          <item text="Update targeted security groups" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_androidmanagedappprotection_updatetargetedsecuritygroups"/>
+      </Item>
         <Item text="Android managed app registration" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappregistration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappregistration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappregistration_delete"/>
@@ -3003,15 +2968,6 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappregistration_update"/>
         </Item>
         <Item text="Android mobile app identifier" url="/en-us/api-reference/beta/resources/intune_mam_androidmobileappidentifier"/>
-        <Item text="Default managed app configuration" url="/en-us/api-reference/beta/resources/intune_mam_defaultmanagedappconfiguration">
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappconfiguration_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappconfiguration_delete"/>
-          <Item text="Get managed app deployment summary" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappconfiguration_get"/>
-          <Item text="Get managed app policy deployment summary" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappconfiguration_get_managedapppolicydeploymentsummary"/>
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappconfiguration_list"/>
-          <Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappconfiguration_list_mobileappidentifierdeployment"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappconfiguration_update"/>
-        </Item>
         <Item text="Default managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_defaultmanagedappprotection">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappprotection_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappprotection_delete"/>
@@ -3037,6 +2993,8 @@
           <Item text="List directory object" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_list_directoryobject"/>
           <Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_list_mobileappidentifierdeployment"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_update"/>
+          <Item text="Update mobile app identifier deployments" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_iosmanagedappprotection_updatemobileappidentifierdeployments"/>
+          <item text="Update targeted security groups" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_iosmanagedappprotection_updatetargetedsecuritygroups"/>
         </Item>
         <Item text="iOS managed app registration" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappregistration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_create"/>
@@ -3045,7 +3003,7 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_list"/>
           <Item text="List managed app operation" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_list_managedappoperation"/>
           <Item text="List managed app policy" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_list_managedapppolicy"/>
-          <Item text="Updatemobileappidentifierdeployments" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_update"/>
+          <Item text="Update mobile app identifier deployments" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_update"/>
         </Item>
         <Item text="iOS mobile app identifier" url="/en-us/api-reference/beta/resources/intune_mam_iosmobileappidentifier"/>
         <Item text="Key value pair" url="/en-us/api-reference/beta/resources/intune_mam_keyvaluepair"/>
@@ -3130,6 +3088,7 @@
           <Item text="List directory object" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_directoryobject"/>
           <Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_mobileappidentifierdeployment"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_update"/>
+          <item text="Update mobile app identifier deployments" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_targetedManagedAppConfiguration_updatemobileappidentifierdeployments"/>
           <Item text="Update target security groups" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_updatetargetedsecuritygroups"/>
         </Item>
         <Item text="Targeted managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_targetedmanagedappprotection">
@@ -3150,6 +3109,7 @@
           <Item text="List managed app registration" url="/en-us/api-reference/beta/api/intune_mam_user_list_managedappregistration"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_user_update"/>
           <Item text="Wipe by device tag" url="/en-us/api-reference/beta/api/intune_mam_user_wipebydevicetag"/>
+          <Item text="Wipe managed app registration by device tag" url="/en-us/api-reference/beta/api/intune_mam_user_wipemanagedappregistrationbydevicetag"/>
         </Item>
         <item text="Windows Information Protection" url="/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotection">
  	        <item text="List" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_list"/>
@@ -3264,6 +3224,7 @@
             <Item text="Locate device" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_locatedevice"/>
             <Item text="Reboot now" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_rebootnow"/>
             <Item text="Remote lock" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_remotelock"/>
+            <Item text="Recover passcode" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_recoverpasscode"/>
             <Item text="Reset passcode" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_resetpasscode"/>
             <Item text="Retire" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_retire"/>
             <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_update"/>
@@ -3291,6 +3252,7 @@
             <Item text="Get encryption public key" url="/en-us/api-reference/beta/api/intune_onboarding_organization_getencryptionpublickey"/>
             <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_organization_list"/>
             <Item text="List Apple volume purchase program token" url="/en-us/api-reference/beta/api/intune_onboarding_organization_list_applevolumepurchaseprogramtoken"/>
+            <Item text="Remove Apple push notification certificate" url="/en-us/graph/docs/api-reference/beta/api/intune_onboarding_organization_removeapplepushnotificationcertificate"/>
             <Item text="List sideloading key" url="/en-us/api-reference/beta/api/intune_onboarding_organization_list_sideloadingkey"/>
             <Item text="Set mobile device management authority" url="/en-us/api-reference/beta/api/intune_onboarding_organization_setmobiledevicemanagementauthority"/>
             <Item text="Sync with Apple device enrollment program" url="/en-us/api-reference/beta/api/intune_onboarding_organization_syncwithappledeviceenrollmentprogram"/>
