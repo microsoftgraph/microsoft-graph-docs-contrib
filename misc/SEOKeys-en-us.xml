@@ -1521,7 +1521,6 @@
           <Item text="Assign" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_assign"/>
           <Item text="Assign categories" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_assigncategories"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_get"/>
-          <Item text="Get mobile app count" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_getmobileappcount"/>
           <Item text="Get top mobile apps" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_gettopmobileapps"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list"/>
           <Item text="List mobile app categories" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list_mobileappcategory"/>

@@ -9,7 +9,6 @@ An abstract class containing the base properties for Intune mobile apps.
 |[List mobileApps](../api/intune_apps_mobileapp_list.md)|[mobileApp](../resources/intune_apps_mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) objects.|
 |[Get mobileApp](../api/intune_apps_mobileapp_get.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) object.|
 |[assign action](../api/intune_apps_mobileapp_assign.md)|None|Not yet documented|
-|[getMobileAppCount function](../api/intune_apps_mobileapp_getmobileappcount.md)|Int64|Not yet documented|
 |[getTopMobileApps function](../api/intune_apps_mobileapp_gettopmobileapps.md)|[mobileApp](../resources/intune_apps_mobileapp.md) collection|Not yet documented|
 |[List mobileAppCategories](../api/intune_apps_mobileapp_list_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Get the mobileAppCategories from the categories navigation property.|
 |[List mobileAppGroupAssignments](../api/intune_apps_mobileapp_list_mobileappgroupassignment.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Get the mobileAppGroupAssignments from the groupAssignments navigation property.|
@@ -75,6 +74,3 @@ Here is a JSON representation of the resource.
   "uploadState": 1024
 }
 ```
-
-
-
