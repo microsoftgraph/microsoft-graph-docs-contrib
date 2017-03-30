@@ -3161,14 +3161,6 @@
             <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_deponboardingsetting_list"/>
             <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_deponboardingsetting_update"/>
           </Item>
-          <Item text="Detected app" url="/en-us/api-reference/beta/resources/intune_onboarding_detectedapp">
-            <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_detectedapp_create"/>
-            <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_detectedapp_delete"/>
-            <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_detectedapp_get"/>
-            <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_detectedapp_list"/>
-            <Item text="List managed device" url="/en-us/api-reference/beta/api/intune_onboarding_detectedapp_list_manageddevice"/>
-            <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_detectedapp_update"/>
-          </Item>
           <Item text="Device action result" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceactionresult"/>
           <Item text="Device app management" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceappmanagement">
             <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deviceappmanagement_get"/>
@@ -3212,29 +3204,6 @@
           <Item text="Hardware information" url="/en-us/api-reference/beta/resources/intune_onboarding_hardwareinformation"/>
           <Item text="Intune brand" url="/en-us/api-reference/beta/resources/intune_onboarding_intunebrand"/>
           <Item text="Located device action result" url="/en-us/api-reference/beta/resources/intune_onboarding_locatedeviceactionresult"/>
-          <Item text="Managed device" url="/en-us/api-reference/beta/resources/intune_onboarding_manageddevice">
-            <Item text="By pass activation lock" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_bypassactivationlock"/>
-            <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_create"/>
-            <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_delete"/>
-            <Item text="Disable lost mode" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_disablelostmode"/>
-            <Item text="Enable lost mode" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_enablelostmode"/>
-            <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_get"/>
-            <Item text="Get device category" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_get_devicecategory"/>
-            <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_list"/>
-            <Item text="List detected app" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_list_detectedapp"/>
-            <Item text="Locate device" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_locatedevice"/>
-            <Item text="Reboot now" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_rebootnow"/>
-            <Item text="Remote lock" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_remotelock"/>
-            <Item text="Recover passcode" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_recoverpasscode"/>
-            <Item text="Reset passcode" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_resetpasscode"/>
-            <Item text="Retire" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_retire"/>
-            <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_update"/>
-            <Item text="Wipe" url="/en-us/api-reference/beta/api/intune_onboarding_manageddevice_wipe"/>
-          </Item>
-          <Item text="Managed device overview" url="/en-us/api-reference/beta/resources/intune_onboarding_manageddeviceoverview">
-            <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_manageddeviceoverview_get"/>
-            <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_manageddeviceoverview_update"/>
-          </Item>
           <Item text="MIME content" url="/en-us/api-reference/beta/resources/intune_onboarding_mimecontent"/>
           <Item text="On-premises conditional access settings" url="/en-us/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings">
             <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_onpremisesconditionalaccesssettings_get"/>
@@ -3262,13 +3231,6 @@
             <Item text="Update Apple push notification certificate" url="/en-us/api-reference/beta/api/intune_onboarding_organization_uploadapplepushnotificationcertificate"/>
             <Item text="Upload DEP token" url="/en-us/api-reference/beta/api/intune_onboarding_organization_uploaddeptoken"/>
           </Item>
-          <Item text="Remote action audit" url="/en-us/api-reference/beta/resources/intune_onboarding_remoteactionaudit">
-            <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_remoteactionaudit_create"/>
-            <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_remoteactionaudit_delete"/>
-            <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_remoteactionaudit_get"/>
-            <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_remoteactionaudit_list"/>
-            <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_remoteactionaudit_update"/>
-          </Item>
           <Item text="Reset action passcode result" url="/en-us/api-reference/beta/resources/intune_onboarding_resetpasscodeactionresult"/>
           <Item text="RGB color" url="/en-us/api-reference/beta/resources/intune_onboarding_rgbcolor"/>
           <Item text="Sideloading key" url="/en-us/api-reference/beta/resources/intune_onboarding_sideloadingkey">
@@ -3277,15 +3239,6 @@
             <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get"/>
             <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list"/>
             <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update"/>
-          </Item>
-          <Item text="User" url="/en-us/api-reference/beta/resources/intune_onboarding_user">
-            <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_user_create"/>
-            <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_user_delete"/>
-            <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_user_get"/>
-            <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_user_list"/>
-            <Item text="List managed device" url="/en-us/api-reference/beta/api/intune_onboarding_user_list_manageddevice"/>
-            <Item text="Retire all devices" url="/en-us/api-reference/beta/api/intune_onboarding_user_removealldevicesfrommanagement"/>
-            <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_user_update"/>
           </Item>
         </Item>
       <Item text="Role based access control" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">
