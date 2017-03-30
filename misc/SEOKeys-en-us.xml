@@ -3229,17 +3229,6 @@
           </Item>
           <Item text="Device enrollment platform restrictions" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictions"/>
           <Item text="Device geolocation" url="/en-us/api-reference/beta/resources/intune_onboarding_devicegeolocation"/>
-          <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagement">
-            <Item text="Create device category" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_create_devicecategory"/>
-            <Item text="Create device management Exchnage connector" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_create_devicemanagementexchangeconnector"/>
-            <Item text="Create remote action audit" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_create_remoteactionaudit"/>
-            <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_get"/>
-            <Item text="Get device management Exchange On-Premises policy" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_get_devicemanagementexchangeonpremisespolicy"/>
-            <Item text="List device category" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_list_devicecategory"/>
-            <Item text="List device management Exchange connector" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_list_devicemanagementexchangeconnector"/>
-            <Item text="List remote action audit" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_list_remoteactionaudit"/>
-            <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagement_update"/>
-          </Item>
           <Item text="Device management Exchange connector" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
             <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_create"/>
             <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_delete"/>
