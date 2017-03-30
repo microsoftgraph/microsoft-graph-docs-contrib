@@ -7,29 +7,36 @@ You cannot use an associated domain with your Azure AD tenant until ownership is
 Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
+One of the following **scopes** are required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/verificationDnsRecords
+```
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-```
 ### Optional query parameters
+
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
+
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; Required|
+| Authorization  | Bearer &lt;token&gt; *Required* |
 | Content-Type  | application/json |
 
 ### Request body
+
 Do not supply a request body for this method.
 
 ### Response
+
 If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.
+
 ### Example
 ##### Request
 
@@ -40,7 +47,9 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ```http
 GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 ```
+
 ##### Response
+
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

@@ -5,8 +5,11 @@ Adds a domain to the tenant.
 **Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain_list_verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
 ### Prerequisites
-The following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+
+One of the following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
@@ -14,7 +17,7 @@ POST /domains
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt; Required|
+| Authorization  | Bearer &lt;token&gt; *Required*|
 | Content-Type  | application/json |
 
 ### Request body
