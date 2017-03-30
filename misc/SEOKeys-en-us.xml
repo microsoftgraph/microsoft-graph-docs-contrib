@@ -3069,7 +3069,6 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_managedappconfiguration_list"/>
           <Item text="List mobile app identifier deployment" url="/en-us/api-reference/beta/api/intune_mam_managedappconfiguration_list_mobileappidentifierdeployment"/>
         </Item>
-        <Item text="Managed app deployment summary" url="/en-us/api-reference/beta/resources/intune_mam_managedappdeploymentsummary"/>
         <Item text="Managed app diagnostic status" url="/en-us/api-reference/beta/resources/intune_mam_managedappdiagnosticstatus"/>
         <Item text="Managed app operation" url="/en-us/api-reference/beta/resources/intune_mam_managedappoperation">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_managedappoperation_create"/>
@@ -3114,7 +3113,6 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_update"/>
         </Item>
-        <Item text="Managed app summary" url="/en-us/api-reference/beta/resources/intune_mam_managedappsummary"/>
         <Item text="Mobile app identifier" url="/en-us/api-reference/beta/resources/intune_mam_mobileappidentifier"/>
         <Item text="Mobile app identifier deployment" url="/en-us/api-reference/beta/resources/intune_mam_mobileappidentifierdeployment">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_create"/>
