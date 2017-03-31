@@ -43,7 +43,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkAppConfigurationSchemas/
 Content-type: application/json
-Content-length: 859
+Content-length: 857
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkAppConfigurationSchema",
@@ -66,7 +66,7 @@ Content-length: 859
       "selections": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",
-          "name": "Name value",
+          "key": "Key value",
           "value": "Value value"
         }
       ]
@@ -80,7 +80,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 908
+Content-Length: 906
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkAppConfigurationSchema",
@@ -104,7 +104,7 @@ Content-Length: 908
       "selections": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",
-          "name": "Name value",
+          "key": "Key value",
           "value": "Value value"
         }
       ]

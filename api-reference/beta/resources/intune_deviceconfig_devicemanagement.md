@@ -16,6 +16,7 @@ Singleton entity that acts as a container for all device management functionalit
 |[Get deviceCompliancePolicyDeviceStateSummary](../api/intune_deviceconfig_devicemanagement_get_devicecompliancepolicydevicestatesummary.md)|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|Get the [deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) from the deviceCompliancePolicyDeviceStateSummary navigation property.|
 |[List complianceSettingStateSummaries](../api/intune_deviceconfig_devicemanagement_list_compliancesettingstatesummary.md)|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) collection|Get the complianceSettingStateSummaries from the complianceSettingStateSummaries navigation property.|
 |[Create complianceSettingStateSummary](../api/intune_deviceconfig_devicemanagement_create_compliancesettingstatesummary.md)|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md)|Create a new [complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) by posting to the complianceSettingStateSummaries collection.|
+|[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_devicemanagement_get_deviceconfigurationdevicestatesummary.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Get the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) from the deviceConfigurationDeviceStateSummaries navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,6 +32,7 @@ Singleton entity that acts as a container for all device management functionalit
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|The software update status summary.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
 |complianceSettingStateSummaries|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
+|deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device compliance state summary for this account.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

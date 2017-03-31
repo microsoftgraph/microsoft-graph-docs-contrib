@@ -6,7 +6,7 @@ Generic type for string key value pairs.
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|name|String|Name for this key-value pair|
+|key|String|Name for this key-value pair|
 |value|String|Value for this key-value pair|
 
 ## Relationships
@@ -22,7 +22,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.keyValuePair",
-  "name": "String",
+  "key": "String",
   "value": "String"
 }
 ```
