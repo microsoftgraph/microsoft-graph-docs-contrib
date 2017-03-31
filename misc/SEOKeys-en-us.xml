@@ -2942,7 +2942,7 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsvpnconfiguration_list_deviceconfigurationuserstatus"/>
         </Item>
       </Item>
-      <item text="Device management" url="/en-us/api-reference/beta/resources/intune_devicemmanagement_conceptual">
+      <item text="Device management" url="/en-us/api-reference/beta/resources/intune_devicefe_conceptual">
         <item text="Apple push notification certificate" url="/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_applepushnotificationcertificate">
         	<item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_get"/>
         	<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_update"/>
