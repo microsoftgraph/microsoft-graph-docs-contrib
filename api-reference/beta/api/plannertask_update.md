@@ -27,10 +27,10 @@ In the request body, supply the values for relevant fields that should be update
 |assignments|plannerAssignments||
 |bucketId|String||
 |checklistItemCount|Int32||
-|completedBy|String||
+|completedBy|identitySet||
 |completedDateTime|DateTimeOffset||
 |conversationThreadId|String||
-|createdBy|String||
+|createdBy|identitySet||
 |createdDateTime|DateTimeOffset||
 |dueDateTime|DateTimeOffset||
 |hasDescription|Boolean||
@@ -54,10 +54,23 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/<id>
 Content-type: application/json
-Content-length: 204
+Content-length: 458
 
 {
-  "createdBy": "createdBy-value",
+  "createdBy": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
   "planId": "planId-value",
   "bucketId": "bucketId-value",
   "title": "title-value",
@@ -75,10 +88,23 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 204
+Content-length: 458
 
 {
-  "createdBy": "createdBy-value",
+  "createdBy": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
   "planId": "planId-value",
   "bucketId": "bucketId-value",
   "title": "title-value",

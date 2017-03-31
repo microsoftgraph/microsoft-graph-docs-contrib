@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 PATCH /planner/tasks/<id>/progressTaskBoardFormat
 PATCH /me/planner/tasks/<id>/progressTaskBoardFormat
-PATCH /users/<id>/planner/tasks/<id>/progressTaskBoardFormat
+PATCH /planner/plans/<id>/tasks/<id>/progressTaskBoardFormat
 ```
 ### Optional request headers
 | Name       | Description|

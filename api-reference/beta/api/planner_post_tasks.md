@@ -32,10 +32,23 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/planner/tasks
 Content-type: application/json
-Content-length: 204
+Content-length: 458
 
 {
-  "createdBy": "createdBy-value",
+  "createdBy": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
   "planId": "planId-value",
   "bucketId": "bucketId-value",
   "title": "title-value",
@@ -54,10 +67,23 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 204
+Content-length: 458
 
 {
-  "createdBy": "createdBy-value",
+  "createdBy": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
   "planId": "planId-value",
   "bucketId": "bucketId-value",
   "title": "title-value",
