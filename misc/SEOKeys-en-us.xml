@@ -2255,6 +2255,7 @@
           <Item text="Create device compliance policy" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_create_devicecompliancepolicy"/>
           <Item text="Create device configuration" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_create_deviceconfiguration"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_get"/>
+          <Item text="Get device configuration device state summary" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_get_deviceconfigurationdevicestatesummary"/>
           <Item text="List device compliance policy" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_list_devicecompliancepolicy"/>
           <Item text="List device configuration" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_list_deviceconfiguration"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_update"/>
