@@ -1,5 +1,6 @@
 # plannerPlan resource type
 
+The plannerPlan resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [plannerTasks](plannerTask.md). It can also have a collection of [plannerBuckets](plannerBucket.md). Each plan object has a [details](plannerPlanDetails.md) object which can contain more information about the plan. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
 
 
@@ -8,9 +9,7 @@
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of plannerPlan object.|
-|[Create plannerBucket](../api/plannerplan_post_buckets.md) |[plannerBucket](plannerbucket.md)| Create a new plannerBucket by posting to the buckets collection.|
 |[List buckets](../api/plannerplan_list_buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a plannerBucket object collection.|
-|[Create plannerTask](../api/plannerplan_post_tasks.md) |[plannerTask](plannertask.md)| Create a new plannerTask by posting to the tasks collection.|
 |[List tasks](../api/plannerplan_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a plannerTask object collection.|
 |[Update](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md)	|Update plannerPlan object. |
 |[Delete](../api/plannerplan_delete.md) | None |Delete plannerPlan object. |
@@ -18,19 +17,19 @@
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|String||
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|id|String| Read-only.|
-|isVisibleInPlannerWebClient|Boolean||
-|owner|String||
-|title|String||
+|createdBy|String|Read-only. User id of user by which the plan is created.|
+|createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id|String| Read-only. Id of the plan. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|isVisibleInPlannerWebClient|Boolean|Read-only. Value is `true` if the plan is shown on Planner Web Client and `false` otherwise.|
+|owner|String|[Group](group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
+|title|String|Required. Title of the plan. This is usually set the name of the group owning the plan.|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable.|
-|details|[plannerPlanDetails](plannerplandetails.md)| Read-only. Nullable.|
-|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable.|
+|buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable. Collection of buckets in the plan.|
+|details|[plannerPlanDetails](plannerplandetails.md)| Read-only. Nullable. Additional details about the plan.|
+|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Collection of tasks in the plan.|
 
 ### JSON representation
 
