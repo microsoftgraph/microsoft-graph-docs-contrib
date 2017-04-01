@@ -1,14 +1,14 @@
 # plannerAssignment resource type
 
-
+The plannerAssignment resource represents the assignment of a task to a user. [TS] this needs work.
 
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|assignedBy|[identitySet](identityset.md)||
-|assignedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|orderHint|String||
+|assignedBy|[identitySet](identityset.md)|The identity of the user that performed the assignment of the task, i.e. the assignor.|
+|assignedDateTime|DateTimeOffset|The time at which the task was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](order_hint_format.md).|
 
 ### JSON representation
 

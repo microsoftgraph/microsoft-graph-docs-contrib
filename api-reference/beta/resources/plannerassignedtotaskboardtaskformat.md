@@ -1,6 +1,6 @@
 # plannerAssignedToTaskBoardTaskFormat resource type
 
-
+The plannerAssignedToTaskBoardTaskFormat resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to). Each [task](plannertask.md) will have one plannerAssignedToTaskBoardTaskFormat object associated with it.
 
 
 ### Methods
@@ -9,14 +9,13 @@
 |:---------------|:--------|:----------|
 |[Get plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat_get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |Read properties and relationships of plannerAssignedToTaskBoardTaskFormat object.|
 |[Update](../api/plannerassignedtotaskboardtaskformat_update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)	|Update plannerAssignedToTaskBoardTaskFormat object. |
-|[Delete](../api/plannerassignedtotaskboardtaskformat_delete.md) | None |Delete plannerAssignedToTaskBoardTaskFormat object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](plannerorderhintsbyassignee.md)||
-|unassignedOrderHint|String||
+|id|String| Read-only. Id of the task. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](plannerorderhintsbyassignee.md)|Dictionary of hints used to order tasks on the AssignedTo view of the Task Board. The key of each entry is one of the users the task is assigned to and the value is the order hint. The format of each value is defined as outlined [here](planner_order_hint_format.md).|
+|unassignedOrderHint|String|Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined [here](planner_order_hint_format.md).|
 
 ### Relationships
 None

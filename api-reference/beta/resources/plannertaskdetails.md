@@ -1,6 +1,6 @@
 # plannerTaskDetails resource type
 
-
+The plannerTaskDetails resource represents the additional information about a task. Each [task](plannertask.md) object has a details object.
 
 
 ### Methods
@@ -9,16 +9,17 @@
 |:---------------|:--------|:----------|
 |[Get plannerTaskDetails](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |Read properties and relationships of plannerTaskDetails object.|
 |[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)	|Update plannerTaskDetails object. |
-|[Delete](../api/plannertaskdetails_delete.md) | None |Delete plannerTaskDetails object. |
+
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|checklist|[plannerChecklistItems](plannerchecklistitems.md)||
-|description|String||
-|id|String| Read-only.|
-|previewType|string| Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
-|references|[plannerExternalReferences](plannerexternalreferences.md)||
+|checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
+|completedBy|String|User id by which the task is completed. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|description|String|Description of the task|
+|id|String| Read-only. Id of the task. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|references|[plannerExternalReferences](plannerexternalreferences.md)|The collection of references on the task.|
 
 ### Relationships
 None

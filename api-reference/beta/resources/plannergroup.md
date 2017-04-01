@@ -1,7 +1,7 @@
 # plannerGroup resource type
 
 
-
+[TS]
 
 ### Methods
 

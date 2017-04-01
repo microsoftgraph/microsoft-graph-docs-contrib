@@ -1,6 +1,6 @@
 # plannerTask resource type
 
-
+The plannerTask resource represents a Planner task in Office 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
 
 ### Methods
@@ -14,37 +14,37 @@
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32||
-|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)||
-|assigneePriority|String||
-|assignments|[plannerAssignments](plannerassignments.md)||
-|bucketId|String||
-|checklistItemCount|Int32||
-|completedBy|[identitySet](identityset.md)||
-|completedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|conversationThreadId|String||
-|createdBy|[identitySet](identityset.md)||
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|dueDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|hasDescription|Boolean||
-|id|String| Read-only.|
-|orderHint|String||
-|percentComplete|Int32||
-|planId|String||
-|previewType|string| Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
-|referenceCount|Int32||
-|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|title|String||
+|activeChecklistItemCount|Int32|Number of checklist items with value set to 'false', representing incomplete items.|
+|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](plannerappliedcategories.md) for possible values.|
+|assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
+|assignments|[plannerAssignments](plannerassignments.md)|The set of assignees the task is assigned to.|
+|bucketId|String|Bucket id to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service. |
+|checklistItemCount|Int32|Number of checklist items that are present on the task.|
+|completedBy|[identitySet](identityset.md)|Identity of the user that completed the task.|
+|completedDateTime|DateTimeOffset|Read-only. Date and time at which the `'percentComplete'` of the task is set to `'100'`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|conversationThreadId|String|Thread id of the conversation on the task. This is the id of the conversation thread object created in the group.|
+|createdBy|[identitySet](identityset.md)|Identity of the user that created the task.|
+|createdDateTime|DateTimeOffset|Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a non-empty description and `false` otherwise.|
+|id|String|Read-only. Id of the task. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
+|percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
+|planId|String|Plan id to which the task belongs. Once set, this cannot be updated.|
+|previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|referenceCount|Int32|Number of external references that exist on the task.|
+|startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|title|String|Title of the task.|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable.|
-|bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Read-only. Nullable.|
-|completedByUser|[user](user.md)| Read-only. Nullable.|
-|createdByUser|[user](user.md)| Read-only. Nullable.|
-|details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable.|
-|progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable.|
+|assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.|
+|bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.|
+|completedByUser|[user](user.md)| Read-only. Nullable. User that marked the task complete.|
+|createdByUser|[user](user.md)| Read-only. Nullable. User that created the task.|
+|details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. Additional details about the task.|
+|progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ### JSON representation
 

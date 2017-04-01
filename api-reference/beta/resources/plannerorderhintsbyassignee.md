@@ -1,7 +1,7 @@
 # plannerOrderHintsByAssignee resource type
 
 
-
+[TS]
 
 ### Properties
 None

@@ -1,6 +1,6 @@
 # plannerBucketTaskBoardTaskFormat resource type
 
-
+The plannerBucketTaskBoardTaskFormat resource represents the information used to render a task correctly in the Buckets view of the Task Board (a view organized by tasks within the buckets they are assigned to). Each [task](plannertask.md) will have one plannerBucketTaskBoardTaskFormat object associated with it.
 
 
 ### Methods
@@ -9,13 +9,12 @@
 |:---------------|:--------|:----------|
 |[Get plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Read properties and relationships of plannerBucketTaskBoardTaskFormat object.|
 |[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)	|Update plannerBucketTaskBoardTaskFormat object. |
-|[Delete](../api/plannerbuckettaskboardtaskformat_delete.md) | None |Delete plannerBucketTaskBoardTaskFormat object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
-|orderHint|String||
+|id|String| Read-only. Id of the task. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|orderHint|String|Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).|
 
 ### Relationships
 None

@@ -1,6 +1,6 @@
 # planner resource type
 
-
+The planner resource is the entry point for the Planner object model. It returns a singleton planner resource. 
 
 
 ### Methods
@@ -9,12 +9,8 @@
 |:---------------|:--------|:----------|
 |[Get planner](../api/planner_get.md) | [planner](planner.md) |Read properties and relationships of planner object.|
 |[Create plannerBucket](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| Create a new plannerBucket by posting to the buckets collection.|
-|[List buckets](../api/planner_list_buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a plannerBucket object collection.|
 |[Create plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new plannerPlan by posting to the plans collection.|
-|[List plans](../api/planner_list_plans.md) |[plannerPlan](plannerplan.md) collection| Get a plannerPlan object collection.|
 |[Create plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Create a new plannerTask by posting to the tasks collection.|
-|[List tasks](../api/planner_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a plannerTask object collection.|
-|[Delete](../api/planner_delete.md) | None |Delete planner object. |
 
 ### Properties
 | Property	   | Type	|Description|
@@ -24,9 +20,9 @@
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable.|
-|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable.|
-|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable.|
+|buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable. Returns a collection of the specified buckets|
+|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns a collection of the specified plans|
+|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns a collection of the specified tasks|
 
 ### JSON representation
 
