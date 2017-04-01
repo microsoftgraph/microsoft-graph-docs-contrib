@@ -18,10 +18,9 @@
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|String||
+|createdBy|[identitySet](identityset.md)||
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String| Read-only.|
-|isVisibleInPlannerWebClient|Boolean||
 |owner|String||
 |title|String||
 
@@ -29,6 +28,7 @@
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable.|
+|createdByUser|[user](user.md)| Read-only. Nullable.|
 |details|[plannerPlanDetails](plannerplandetails.md)| Read-only. Nullable.|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable.|
 
@@ -46,10 +46,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "createdBy": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isVisibleInPlannerWebClient": true,
   "owner": "String",
   "title": "String"
 }
