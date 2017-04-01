@@ -1,14 +1,14 @@
-# Get plannerProgressTaskBoardTaskFormat
+# List plans
 
-Retrieve the properties and relationships of plannerprogresstaskboardtaskformat object.
+Retrieve a list of plannerplan objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>/progressTaskBoardFormat
-GET /me/planner/tasks/<id>/progressTaskBoardFormat
-GET /planner/plans/<id>/tasks/<id>/progressTaskBoardFormat
+GET /groups/<id>/planner/plans
+GET /me/joinedGroups/<id>/planner/plans
+GET /users/<id>/joinedGroups/<id>/planner/plans
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -22,32 +22,53 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_plannerprogresstaskboardtaskformat"
+  "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/tasks/<id>/progressTaskBoardFormat
+GET https://graph.microsoft.com/beta/groups/<id>/planner/plans
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.plannerProgressTaskBoardTaskFormat"
+  "@odata.type": "microsoft.graph.plannerPlan",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 56
+Content-length: 502
 
 {
-  "id": "id-value",
-  "orderHint": "orderHint-value"
+  "value": [
+    {
+      "createdBy": {
+        "application": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "device": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        },
+        "user": {
+          "displayName": "displayName-value",
+          "id": "id-value"
+        }
+      },
+      "createdDateTime": "datetime-value",
+      "owner": "owner-value",
+      "title": "title-value",
+      "id": "id-value"
+    }
+  ]
 }
 ```
 
@@ -55,7 +76,7 @@ Content-length: 56
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get plannerProgressTaskBoardTaskFormat",
+  "description": "List plans",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

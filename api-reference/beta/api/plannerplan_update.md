@@ -21,9 +21,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|String||
+|createdBy|identitySet||
 |createdDateTime|DateTimeOffset||
-|isVisibleInPlannerWebClient|Boolean||
 |owner|String||
 |title|String||
 
@@ -39,14 +38,26 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/planner/plans/<id>
 Content-type: application/json
-Content-length: 166
+Content-length: 381
 
 {
-  "createdBy": "createdBy-value",
+  "createdBy": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
   "createdDateTime": "datetime-value",
   "owner": "owner-value",
-  "title": "title-value",
-  "isVisibleInPlannerWebClient": true
+  "title": "title-value"
 }
 ```
 ##### Response
@@ -59,14 +70,26 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 186
+Content-length: 401
 
 {
-  "createdBy": "createdBy-value",
+  "createdBy": {
+    "application": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "device": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    },
+    "user": {
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  },
   "createdDateTime": "datetime-value",
   "owner": "owner-value",
   "title": "title-value",
-  "isVisibleInPlannerWebClient": true,
   "id": "id-value"
 }
 ```

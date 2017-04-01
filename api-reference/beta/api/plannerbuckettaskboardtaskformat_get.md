@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /planner/tasks/<id>/bucketTaskBoardFormat
 GET /me/planner/tasks/<id>/bucketTaskBoardFormat
-GET /users/<id>/planner/tasks/<id>/bucketTaskBoardFormat
+GET /planner/plans/<id>/tasks/<id>/bucketTaskBoardFormat
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

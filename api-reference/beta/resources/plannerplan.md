@@ -23,6 +23,7 @@ The plannerPlan resource represents a plan in Office 365. A plan can be owned by
 |isVisibleInPlannerWebClient|Boolean|Read-only. Value is `true` if the plan is shown on Planner Web Client and `false` otherwise.|
 |owner|String|[Group](group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
 |title|String|Required. Title of the plan. This is usually set the name of the group owning the plan.|
+|createdBy|[identitySet](identityset.md)||
 
 ### Relationships
 | Relationship | Type	|Description|
@@ -30,6 +31,7 @@ The plannerPlan resource represents a plan in Office 365. A plan can be owned by
 |buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable. Collection of buckets in the plan.|
 |details|[plannerPlanDetails](plannerplandetails.md)| Read-only. Nullable. Additional details about the plan.|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Collection of tasks in the plan.|
+|createdByUser|[user](user.md)| Read-only. Nullable.|
 
 ### JSON representation
 
@@ -46,6 +48,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "createdBy": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isVisibleInPlannerWebClient": true,
