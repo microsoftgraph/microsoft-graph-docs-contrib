@@ -42,7 +42,11 @@ Here is a JSON representation of the resource
   {
     "@odata.type": "microsoft.graph.externalReference", // required in PATCH requests to edit the references on a task
     "alias": "Agile Team Annual Report",
-    "lastModifiedBy": "1e9955d2-6acd-45bf-86d3-b546fdc795eb",
+    "lastModifiedBy": {
+      "user": {
+        "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
+      }
+    },
     "lastModifiedDateTime": "2015-09-21T17:45:12.039Z",
     "previewPriority": "0009005756397228702",
     "type": "PowerPoint"

@@ -40,7 +40,11 @@ Here is a JSON representation of the resource
   {
     "@odata.type": "microsoft.graph.checklistItem", // required in PATCH requests to edit the checklist on a task
     "isChecked": true,
-    "lastModifiedBy": "4e971521-101a-4311-94f4-0917d7218b4e",
+    "lastModifiedBy": {
+      "user": {
+        "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
+      }
+    },
     "lastModifiedByDateTime": "2015-09-21T17:45:12.039Z",
     "orderHint": "0009005756397228702",
     "title": "Get stamps"
@@ -49,7 +53,11 @@ Here is a JSON representation of the resource
   {
      "@odata.type": "microsoft.graph.checklistItem",
     "isChecked": false,
-    "lastModifiedBy": "4e971521-101a-4311-94f4-0917d7218b4e",
+    "lastModifiedBy": {
+      "user": {
+        "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
+      }
+    },
     "lastModifiedByDateTime": "2015-09-21T17:45:12.039Z",
     "orderHint": "0004105723397228784",
     "title": "Mail card at UPS"

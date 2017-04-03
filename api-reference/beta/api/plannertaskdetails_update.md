@@ -45,8 +45,27 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   "description": "description-value",
   "previewType": "previewType-value",
   "references": {
+    "http%3A//www%2Emicrosoft%2Ecom":{ // create new item
+      "alias": "String",
+      "previewPriority": "String",
+      "type": "String"
+    },
+    "http%3A//developer%2Emicrosoft%2Ecom":{ // update existing item
+      "previewPriority": "String",
+    },
+    "http%3A//www%2Ebing%2Ecom": null // remove existing item
   },
   "checklist": {
+    "95e27074-6c4a-447a-aa24-9d718a0b86fa":{ // create new item
+      "@odata.type": "microsoft.graph.plannerChecklistItem"
+      "orderHint": "String",
+      "title": "New item"
+    },
+    "f9dbaa2b-98c7-48f3-8ee0-bad8c9ab695e":{ // update existing item
+      "@odata.type": "microsoft.graph.plannerChecklistItem"
+      "isChecked": true,
+    },
+    "a93c93c5-10a6-4167-9551-8bafa09967a7" : null // remove existing item
   }
 }
 ```
