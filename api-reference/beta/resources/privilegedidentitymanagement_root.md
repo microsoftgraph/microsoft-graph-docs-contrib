@@ -8,6 +8,8 @@ The service is built on top of OData. To filter the results from the query, use 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[Create privilegedApproval](../api/privilegedapproval_post_privilegedapproval.md) |[privilegedApproval](privilegedapproval.md)| Create a new privilegedApproval by posting to the privilegedApproval collection.|
+|[List privilegedApproval](../api/privilegedapproval_list.md) | [privilegedApproval](privilegedapproval.md) collection |Get privilegedApproval object collection. |
 |[List privilegedOperationEvent](../api/privilegedoperationevent_list.md) | [privilegedOperationEvent](privilegedoperationevent.md) collection |Get privilegedOperationEvent object collection. |
 |[Get privilegedRole](../api/privilegedrole_get.md) |[privilegedRole](privilegedrole.md)| Get a privilegedRole object.|
 |[List privilegedRole](../api/privilegedrole_list.md) | [privilegedRole](privilegedrole.md) collection |Get privilegedRole object collection. |
