@@ -2,20 +2,22 @@
 
 Retrieve a list of plannertask objects.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API:
+
+Group.Read.All
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/tasks
 ```
 ### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method requires createdBy [filter](http://graph.microsoft.io/docs/overview/query_parameters) to be specified.
 
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 Do not supply a request body for this method.

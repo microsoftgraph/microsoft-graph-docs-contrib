@@ -1,20 +1,20 @@
-# Update plannerprogresstaskboardtaskformat
+# Update plannerProgressTaskBoardTaskFormat
 
-Update the properties of plannerprogresstaskboardtaskformat object.
+Update the properties of plannerProgressTaskBoardTaskFormat object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+
+Group.ReadWrite.All
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/progressTaskBoardFormat
-PATCH /me/planner/tasks/<id>/progressTaskBoardFormat
-PATCH /planner/plans/<id>/tasks/<id>/progressTaskBoardFormat
 ```
 ### Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| If-Match  | Last known ETag value for the plannerProgressTaskBoardTaskFormat to be updated. Required.|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.

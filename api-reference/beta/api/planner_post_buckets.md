@@ -1,8 +1,12 @@
 # Create plannerBucket
 
 Use this API to create a new plannerBucket.
+
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+
+Group.ReadWrite.All
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,11 +17,9 @@ POST /planner/buckets
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.
-
 
 ### Response
 If successful, this method returns `201, Created` response code and [plannerBucket](../resources/plannerbucket.md) object in the response body.

@@ -1,23 +1,20 @@
 # Get plannerBucket
 
-Retrieve the properties and relationships of plannerbucket object.
+Retrieve the properties and relationships of plannerBucket object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+
+Group.Read.All
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/buckets/<id>
-GET /planner/plans/<id>/buckets/<id>
-GET /me/planner/plans/<id>/buckets/<id>
 ```
-### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 Do not supply a request body for this method.

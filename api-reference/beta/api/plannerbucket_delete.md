@@ -3,19 +3,19 @@
 Delete plannerBucket.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+
+Group.ReadWrite.All
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /planner/buckets/<id>
-DELETE /planner/plans/<id>/buckets/<id>
-DELETE /me/planner/plans/<id>/buckets/<id>
-
 ```
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| If-Match  | Last known ETag value for the plannerBucket to be deleted. Required.|
 
 ### Request body
 Do not supply a request body for this method.

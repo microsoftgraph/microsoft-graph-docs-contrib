@@ -1,8 +1,10 @@
 # List tasks
 
-Retrieve a list of plannertask objects.
+Retrieve a list of plannertask objects assigned to a User.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+
+Group.Read.All
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -10,14 +12,11 @@ GET /me/planner/tasks
 GET /users/<id>/planner/tasks
 GET /drive/root/createdByUser/planner/tasks
 ```
-### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 Do not supply a request body for this method.

@@ -3,21 +3,19 @@
 Retrieve the properties and relationships of plannertaskdetails object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+
+Groups.Read.All
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/tasks/<id>/details
-GET /me/planner/tasks/<id>/details
-GET /planner/plans/<id>/tasks/<id>/details
 ```
-### Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 Do not supply a request body for this method.

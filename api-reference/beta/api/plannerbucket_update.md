@@ -3,18 +3,19 @@
 Update the properties of plannerbucket object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+
+Group.ReadWrite.All
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/buckets/<id>
-PATCH /planner/plans/<id>/buckets/<id>
-PATCH /me/planner/plans/<id>/buckets/<id>
 ```
 ### Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| If-Match  | Last known ETag value for the plannerBucket to be updated. Required.|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.

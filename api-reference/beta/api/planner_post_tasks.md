@@ -3,6 +3,9 @@
 Use this API to create a new plannerTask.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
+
+Group.ReadWrite.All
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,11 +16,10 @@ POST /planner/tasks
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ### Request body
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
-
+The plannerTask planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.
 
 ### Response
 If successful, this method returns `201, Created` response code and [plannerTask](../resources/plannertask.md) object in the response body.
