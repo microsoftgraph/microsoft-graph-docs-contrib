@@ -8,8 +8,7 @@ Represents an approval that is requested in Privileged Identity Management for g
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get privilegedApproval](../api/privilegedapproval_get.md) | [privilegedApproval](privilegedapproval.md) |Read properties and relationships of privilegedApproval object.|
-|[Update](../api/privilegedapproval_update.md) | [privilegedApproval](privilegedapproval.md)	|Update privilegedApproval object. |
-|[Delete](../api/privilegedapproval_delete.md) | None |Delete privilegedApproval object. |
+|[List privilegedApproval objects](../api/privilegedApproval_list.md) | [privilegedApproval](privilegedApproval.md) collection|Get the collection of privilegedApproval.|
 |[Myrequests](../api/privilegedapproval_myrequests.md)|[privilegedApproval](privilegedapproval.md)||
 |[Requestapproval](../api/privilegedapproval_requestapproval.md)|[privilegedApproval](privilegedapproval.md)||
 |[Updateapprovalstate](../api/privilegedapproval_updateapprovalstate.md)|[privilegedApproval](privilegedapproval.md)||
