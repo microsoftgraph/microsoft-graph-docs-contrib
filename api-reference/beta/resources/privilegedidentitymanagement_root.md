@@ -8,8 +8,6 @@ The service is built on top of OData. To filter the results from the query, use 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create privilegedApproval](../api/privilegedapproval_post_privilegedapproval.md) |[privilegedApproval](privilegedapproval.md)| Create a new privilegedApproval by posting to the privilegedApproval collection.|
-|[List privilegedApproval](../api/privilegedapproval_list.md) | [privilegedApproval](privilegedapproval.md) collection |Get privilegedApproval object collection. |
 |[List privilegedOperationEvent](../api/privilegedoperationevent_list.md) | [privilegedOperationEvent](privilegedoperationevent.md) collection |Get privilegedOperationEvent object collection. |
 |[Get privilegedRole](../api/privilegedrole_get.md) |[privilegedRole](privilegedrole.md)| Get a privilegedRole object.|
 |[List privilegedRole](../api/privilegedrole_list.md) | [privilegedRole](privilegedrole.md) collection |Get privilegedRole object collection. |
@@ -25,6 +23,11 @@ The service is built on top of OData. To filter the results from the query, use 
 |[my](../api/privilegedroleassignment_my.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Get the requestor's role assignments. |
 |[Get privilegedRoleSettings](../api/privilegedrolesettings_get.md) | [privilegedRoleSettings](../resources/privilegedrolesettings.md)|Retrieve the properties of privilegedRoleSettings object. |
 |[Get privilegedRoleSummary](../api/privilegedrolesummary_get.md) | [privilegedRoleSummary](../resources/privilegedrolesummary.md)|Retrieve the privilegedRoleSummary object. |
+|[Get privilegedApproval](../api/privilegedApproval_get.md) |[privilegedApproval](privilegedApproval.md)| Get a privilegedApproval object.|
+|[List privilegedApproval](../api/privilegedapproval_list.md) | [privilegedApproval](privilegedapproval.md) collection |Get privilegedApproval object collection. |
+|[myrequests](../api/privilegedapproval_myrequests.md) | [privilegedApproval](privilegedApproval.md) collection|Get the requestor's approval requests. |
+|[myrequests](../api/privilegedapproval_myrequests.md) | [privilegedApproval](privilegedApproval.md) collection|Request approval. |
+|[updateapprovalstate](../api/privilegedapproval_updateapprovalstate.md) | [privilegedApproval](privilegedApproval.md) collection|Update approval state. |
 
 
 

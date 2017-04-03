@@ -9,9 +9,9 @@ Represents an approval that is requested in Privileged Identity Management for g
 |:---------------|:--------|:----------|
 |[Get privilegedApproval](../api/privilegedapproval_get.md) | [privilegedApproval](privilegedapproval.md) |Read properties and relationships of privilegedApproval object.|
 |[List privilegedApproval objects](../api/privilegedApproval_list.md) | [privilegedApproval](privilegedApproval.md) collection|Get the collection of privilegedApproval.|
-|[Myrequests](../api/privilegedapproval_myrequests.md)|[privilegedApproval](privilegedapproval.md)||
-|[Requestapproval](../api/privilegedapproval_requestapproval.md)|[privilegedApproval](privilegedapproval.md)||
-|[Updateapprovalstate](../api/privilegedapproval_updateapprovalstate.md)|[privilegedApproval](privilegedapproval.md)||
+|[Myrequests](../api/privilegedapproval_myrequests.md)|[privilegedApproval](privilegedapproval.md)|Get the requestor's approval requests.|
+|[Requestapproval](../api/privilegedapproval_requestapproval.md)|[privilegedApproval](privilegedapproval.md)|Request approval.|
+|[Updateapprovalstate](../api/privilegedapproval_updateapprovalstate.md)|[privilegedApproval](privilegedapproval.md)|Update approval state.|
 
 ### Properties
 | Property	   | Type	|Description|
