@@ -1,29 +1,27 @@
 # plannerUser resource type
 
-
+The plannerUser resource provide access to Planner resources for a [user](user.md). It doesn't contain any usable properties.
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerUser](../api/planneruser_get.md) | [plannerUser](planneruser.md) |Read properties and relationships of plannerUser object.|
 |[Create plannerPlan](../api/planneruser_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new plannerPlan by posting to the plans collection.|
 |[List plans](../api/planneruser_list_plans.md) |[plannerPlan](plannerplan.md) collection| Get a plannerPlan object collection.|
 |[Create plannerTask](../api/planneruser_post_tasks.md) |[plannerTask](plannertask.md)| Create a new plannerTask by posting to the tasks collection.|
 |[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a plannerTask object collection.|
-|[Delete](../api/planneruser_delete.md) | None |Delete plannerUser object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
+|id|String| Read-only. Identifier of the planenrUser|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable.|
-|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable.|
+|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.|
+|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.|
 
 ### JSON representation
 

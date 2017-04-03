@@ -1,26 +1,23 @@
 # plannerGroup resource type
 
-
-[TS]
+The plannerGroup resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerGroup](../api/plannergroup_get.md) | [plannerGroup](plannergroup.md) |Read properties and relationships of plannerGroup object.|
 |[Create plannerPlan](../api/plannergroup_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new plannerPlan by posting to the plans collection.|
 |[List plans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerplan.md) collection| Get a plannerPlan object collection.|
-|[Delete](../api/plannergroup_delete.md) | None |Delete plannerGroup object. |
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
+|id|String| Read-only. Identifier of the plannerGroup|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable.|
+|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.|
 
 ### JSON representation
 

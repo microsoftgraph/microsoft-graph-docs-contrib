@@ -1,13 +1,12 @@
 # planner resource type
 
-The planner resource is the entry point for the Planner object model. It returns a singleton planner resource. 
+The planner resource is the entry point for the Planner object model. It returns a singleton planner resource.  It doesn't contain any usable properties.
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get planner](../api/planner_get.md) | [planner](planner.md) |Read properties and relationships of planner object.|
 |[Create plannerBucket](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| Create a new plannerBucket by posting to the buckets collection.|
 |[Create plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new plannerPlan by posting to the plans collection.|
 |[Create plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Create a new plannerTask by posting to the tasks collection.|
@@ -15,7 +14,7 @@ The planner resource is the entry point for the Planner object model. It returns
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
+|id|String| Read-only. Identifier of the planner resource.|
 
 ### Relationships
 | Relationship | Type	|Description|

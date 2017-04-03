@@ -6,7 +6,7 @@ The plannerUserIds* resource represents the list of users ids that a [plan](plan
 
 
 ### Properties
-Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean. [TS]
+Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.
 
 
 ## JSON representation
