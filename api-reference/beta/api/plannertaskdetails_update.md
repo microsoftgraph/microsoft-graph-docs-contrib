@@ -21,10 +21,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|checklist|plannerChecklistItems||
-|description|String||
-|previewType|string| Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
-|references|plannerExternalReferences||
+|checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|The collection of checklist items on the task.|
+|description|String|Description of the task|
+|previewType|string|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|The collection of references on the task.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.
@@ -39,6 +39,7 @@ Here is an example of the request.
 PATCH https://graph.microsoft.com/beta/planner/tasks/<id>/details
 Content-type: application/json
 Content-length: 123
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
   "description": "description-value",

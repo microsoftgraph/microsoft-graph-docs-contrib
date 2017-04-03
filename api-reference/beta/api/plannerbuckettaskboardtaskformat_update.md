@@ -22,7 +22,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|orderHint|String||
+|orderHint|String|Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object in the response body.
@@ -37,6 +37,7 @@ Here is an example of the request.
 PATCH https://graph.microsoft.com/beta/planner/tasks/<id>/bucketTaskBoardFormat
 Content-type: application/json
 Content-length: 36
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
   "orderHint": "orderHint-value"

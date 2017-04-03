@@ -22,9 +22,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|String||
-|orderHint|String||
-|planId|String||
+|name|String|Name of the bucket.|
+|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
+|planId|String|Plan id to which the bucket belongs.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [plannerBucket](../resources/plannerbucket.md) object in the response body.
@@ -39,6 +39,7 @@ Here is an example of the request.
 PATCH https://graph.microsoft.com/beta/planner/buckets/<id>
 Content-type: application/json
 Content-length: 88
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
   "name": "name-value",

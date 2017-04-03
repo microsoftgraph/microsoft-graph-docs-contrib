@@ -21,7 +21,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|orderHint|String||
+|orderHint|String|Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined [here](../resources/planner_order_hint_format.md).|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.
@@ -36,6 +36,7 @@ Here is an example of the request.
 PATCH https://graph.microsoft.com/beta/planner/tasks/<id>/progressTaskBoardFormat
 Content-type: application/json
 Content-length: 36
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
   "orderHint": "orderHint-value"

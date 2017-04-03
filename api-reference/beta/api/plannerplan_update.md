@@ -21,10 +21,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|identitySet||
-|createdDateTime|DateTimeOffset||
-|owner|String||
-|title|String||
+|owner|String|[Group](group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
+|title|String|Title of the plan.|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [plannerPlan](../resources/plannerplan.md) object in the response body.
@@ -39,23 +37,9 @@ Here is an example of the request.
 PATCH https://graph.microsoft.com/beta/planner/plans/<id>
 Content-type: application/json
 Content-length: 381
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
-  "createdBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    }
-  },
-  "createdDateTime": "datetime-value",
   "owner": "owner-value",
   "title": "title-value"
 }
