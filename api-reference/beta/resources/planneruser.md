@@ -7,9 +7,7 @@ The plannerUser resource provide access to Planner resources for a [user](user.m
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create plannerPlan](../api/planneruser_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new plannerPlan by posting to the plans collection.|
 |[List plans](../api/planneruser_list_plans.md) |[plannerPlan](plannerplan.md) collection| Get a plannerPlan object collection.|
-|[Create plannerTask](../api/planneruser_post_tasks.md) |[plannerTask](plannertask.md)| Create a new plannerTask by posting to the tasks collection.|
 |[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a plannerTask object collection.|
 
 ### Properties

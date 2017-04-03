@@ -42,29 +42,23 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 502
+Content-length: 438
 
 {
   "value": [
     {
       "createdBy": {
         "application": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "device": {
-          "displayName": "displayName-value",
-          "id": "id-value"
+          "id": "95e27074-6c4a-447a-aa24-9d718a0b86fa"
         },
         "user": {
-          "displayName": "displayName-value",
-          "id": "id-value"
+          "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
         }
       },
-      "createdDateTime": "datetime-value",
-      "owner": "owner-value",
+      "createdDateTime": "2015-03-30T18:36:49.2407981Z",
+      "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
       "title": "title-value",
-      "id": "id-value"
+      "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
     }
   ]
 }

@@ -21,7 +21,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|owner|String|[Group](group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
+|owner|String|[Group](../resources/group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
 |title|String|Title of the plan.|
 
 ### Response
@@ -40,7 +40,7 @@ Content-length: 381
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
-  "owner": "owner-value",
+  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
   "title": "title-value"
 }
 ```
@@ -54,27 +54,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
+Content-length: 357
 
 {
   "createdBy": {
     "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "id": "95e27074-6c4a-447a-aa24-9d718a0b86fa"
     },
     "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
     }
   },
-  "createdDateTime": "datetime-value",
-  "owner": "owner-value",
+  "createdDateTime": "2015-03-30T18:36:49.2407981Z",
+  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
   "title": "title-value",
-  "id": "id-value"
+  "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
 

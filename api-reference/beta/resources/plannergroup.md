@@ -6,7 +6,6 @@ The plannerGroup resource provides access to Planner resources for a [group](gro
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create plannerPlan](../api/plannergroup_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new plannerPlan by posting to the plans collection.|
 |[List plans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerplan.md) collection| Get a plannerPlan object collection.|
 
 ### Properties

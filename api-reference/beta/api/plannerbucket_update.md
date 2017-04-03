@@ -23,7 +23,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |name|String|Name of the bucket.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
+|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner_order_hint_format.md).|
 |planId|String|Plan id to which the bucket belongs.|
 
 ### Response

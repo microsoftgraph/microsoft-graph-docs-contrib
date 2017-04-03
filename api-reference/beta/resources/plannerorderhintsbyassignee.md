@@ -9,6 +9,14 @@ Properties cannot be removed from this type. The service will automatically remo
 
 Example:
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.plannerOrderHintsByAssignee"
+}-->
+
 ```json
 {
   "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47": "String",
