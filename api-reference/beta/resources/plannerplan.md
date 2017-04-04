@@ -29,7 +29,6 @@ The plannerPlan resource represents a plan in Office 365. A plan can be owned by
 |buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable. Collection of buckets in the plan.|
 |details|[plannerPlanDetails](plannerplandetails.md)| Read-only. Nullable. Additional details about the plan.|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Collection of tasks in the plan.|
-|createdByUser|[user](user.md)| Read-only. Nullable. The user that created the Plan|
 
 ### JSON representation
 

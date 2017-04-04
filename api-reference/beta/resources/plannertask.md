@@ -41,8 +41,6 @@ The plannerTask resource represents a Planner task in Office 365. A Planner task
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.|
-|completedByUser|[user](user.md)| Read-only. Nullable. User that marked the task complete.|
-|createdByUser|[user](user.md)| Read-only. Nullable. User that created the task.|
 |details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. Additional details about the task.|
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
