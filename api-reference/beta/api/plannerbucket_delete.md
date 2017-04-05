@@ -1,10 +1,10 @@
 # Delete plannerBucket
 
-Delete plannerBucket.
+Delete **plannerBucket**.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.ReadWrite.All
+*Group.ReadWrite.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -15,7 +15,7 @@ DELETE /planner/buckets/<id>
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
-| If-Match  | Last known ETag value for the plannerBucket to be deleted. Required.|
+| If-Match  | Last known ETag value for the **plannerBucket** to be deleted. Required.|
 
 ### Request body
 Do not supply a request body for this method.

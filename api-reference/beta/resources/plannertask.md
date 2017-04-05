@@ -1,15 +1,15 @@
 # plannerTask resource type
 
-The plannerTask resource represents a Planner task in Office 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
+The **plannerTask** resource represents a Planner task in Office 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerTask](../api/plannertask_get.md) | [plannerTask](plannertask.md) |Read properties and relationships of plannerTask object.|
-|[Update](../api/plannertask_update.md) | [plannerTask](plannertask.md)	|Update plannerTask object. |
-|[Delete](../api/plannertask_delete.md) | None |Delete plannerTask object. |
+|[Get plannerTask](../api/plannertask_get.md) | [plannerTask](plannertask.md) |Read properties and relationships of **plannerTask** object.|
+|[Update](../api/plannertask_update.md) | [plannerTask](plannertask.md)	|Update **plannerTask** object. |
+|[Delete](../api/plannertask_delete.md) | None |Delete **plannerTask** object. |
 
 ### Properties
 | Property	   | Type	|Description|

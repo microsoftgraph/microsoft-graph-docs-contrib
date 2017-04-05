@@ -1,11 +1,11 @@
 # List plans
 
-Retrieve a list of plannerplan objects shared with a [user](../resources/user.md) object.
+Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.Read.All
+*Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

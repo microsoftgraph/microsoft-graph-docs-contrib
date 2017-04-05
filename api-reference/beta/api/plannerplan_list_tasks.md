@@ -1,10 +1,10 @@
 # List tasks
 
-Retrieve a list of plannertask objects associated to a [plannerPlan](../resources/plannerplan.md) object.
+Retrieve a list of **plannertask** objects associated to a [plannerPlan](../resources/plannerplan.md) object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.Read.All
+*Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

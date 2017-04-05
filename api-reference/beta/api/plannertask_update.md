@@ -1,10 +1,10 @@
 # Update plannertask
 
-Update the properties of plannertask object.
+Update the properties of **plannertask** object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.ReadWrite.All
+*Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,7 +14,7 @@ PATCH /planner/tasks/<id>
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer <code>|
-| If-Match  | Last known ETag value for the plannerTask to be updated. Required.|
+| If-Match  | Last known ETag value for the **plannerTask** to be updated. Required.|
 
 ### Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.

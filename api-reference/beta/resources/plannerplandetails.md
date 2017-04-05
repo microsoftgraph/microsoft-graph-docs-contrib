@@ -1,15 +1,15 @@
 # plannerPlanDetails resource type
 
 
-The plannerPlanDetails resource represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
+The **plannerPlanDetails** resource represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerPlanDetails](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |Read properties and relationships of plannerPlanDetails object.|
-|[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)	|Update plannerPlanDetails object. |
+|[Get plannerPlanDetails](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |Read properties and relationships of **plannerPlanDetails** object.|
+|[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)	|Update **plannerPlanDetails** object. |
 
 
 ### Properties

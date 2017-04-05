@@ -1,10 +1,10 @@
 # List buckets
 
-Retrieve a list of plannerbucket objects contained by a [plannerPlan](../resources/plannerplan.md) object.
+Retrieve a list of **plannerbucket** objects contained by a [plannerPlan](../resources/plannerplan.md) object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.Read.All
+*Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

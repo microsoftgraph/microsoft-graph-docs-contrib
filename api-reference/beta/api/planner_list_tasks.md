@@ -1,10 +1,10 @@
 # List tasks
 
-Retrieve a list of plannertask objects.
+Retrieve a list of **plannertask** objects.
 ### Prerequisites
 The following **scopes** are required to execute this API:
 
-Group.Read.All
+*Group.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

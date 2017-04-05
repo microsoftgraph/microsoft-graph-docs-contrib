@@ -1,14 +1,14 @@
 # plannerTaskDetails resource type
 
-The plannerTaskDetails resource represents the additional information about a task. Each [task](plannertask.md) object has a details object.
+The **plannerTaskDetails** resource represents the additional information about a task. Each [task](plannertask.md) object has a details object.
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerTaskDetails](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |Read properties and relationships of plannerTaskDetails object.|
-|[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)	|Update plannerTaskDetails object. |
+|[Get plannerTaskDetails](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |Read properties and relationships of **plannerTaskDetails** object.|
+|[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)	|Update **plannerTaskDetails** object. |
 
 
 ### Properties

@@ -1,11 +1,11 @@
 # Create plannerBucket
 
-Use this API to create a new plannerBucket.
+Use this API to create a new **plannerBucket**.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.ReadWrite.All
+*Group.ReadWrite.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

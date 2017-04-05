@@ -1,10 +1,10 @@
 # Get plannerTask
 
-Retrieve the properties and relationships of plannertask object.
+Retrieve the properties and relationships of **plannertask** object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.Read.all
+*Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

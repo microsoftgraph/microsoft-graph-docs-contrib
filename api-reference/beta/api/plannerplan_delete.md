@@ -1,10 +1,10 @@
 # Delete plannerPlan
 
-Delete plannerPlan.
+Delete **plannerPlan**.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.ReadWrite.All
+*Group.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,7 +15,7 @@ DELETE /planner/plans/<id>
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer <code>|
-| If-Match  | Last known ETag value for the plannerPlan to be deleted. Required.|
+| If-Match  | Last known ETag value for the **plannerPlan** to be deleted. Required.|
 
 ### Request body
 Do not supply a request body for this method.

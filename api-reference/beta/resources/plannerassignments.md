@@ -1,12 +1,12 @@
 # plannerAssignments resource type
 
-The plannerAssignments resource represents assignments of a [plannerTask](plannertask.md) resource. This type is an open type. Each property name in this type 
+The **plannerAssignments** resource represents assignments of a [plannerTask](plannertask.md) resource. This type is an open type. Each property name in this type 
 is the id of a user object a task is assigned to. The users can be assigned to tasks with creating new properties named with their id, with a [plannerassignment](plannerassignment.md)
 object with orderHint property populated as the value. The assignees can be unassigned from the task by setting the propety named with their id to null.
 
 
 ### Properties
-Properties of an Open Type can be defined by the client. In this case though, the client must provide assigned user's ids as property names. The property must be set to a plannerAssignment object to create or modify assignees, and to null to remove them.
+Properties of an Open Type can be defined by the client. In this case though, the client must provide assigned user's ids as property names. The property must be set to a **plannerAssignment** object to create or modify assignees, and to null to remove them.
 
 Example:
 

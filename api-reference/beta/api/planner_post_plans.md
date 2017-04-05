@@ -1,11 +1,11 @@
 # Create plannerPlan
 
-Use this API to create a new plannerPlan.
+Use this API to create a new **plannerPlan**.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.ReadWrite.All
+*Group.ReadWrite.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -20,7 +20,7 @@ POST /planner/plans
 
 ### Request body
 In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.
-The plannerPlan owner property must be set to an id of a [group](../resources/group.md) object.
+The **plannerPlan** owner property must be set to an id of a [group](../resources/group.md) object.
 
 ### Response
 If successful, this method returns `201, Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.

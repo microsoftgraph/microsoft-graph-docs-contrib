@@ -1,20 +1,20 @@
 # planner resource type
 
-The planner resource is the entry point for the Planner object model. It returns a singleton planner resource.  It doesn't contain any usable properties.
+The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties.
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create plannerBucket](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| Create a new plannerBucket by posting to the buckets collection.|
-|[Create plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new plannerPlan by posting to the plans collection.|
-|[Create plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Create a new plannerTask by posting to the tasks collection.|
+|[Create plannerBucket](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| Create a new **plannerBucket** by posting to the buckets collection.|
+|[Create plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new **plannerPlan** by posting to the plans collection.|
+|[Create plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Create a new **plannerTask** by posting to the tasks collection.|
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Identifier of the planner resource.|
+|id|String| Read-only. Identifier of the **planner** resource.|
 
 ### Relationships
 | Relationship | Type	|Description|

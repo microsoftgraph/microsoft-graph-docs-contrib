@@ -1,10 +1,10 @@
 # List plans
 
-Retrieve a list of plannerplan objects owned by a [group](../resources/group.md) object.
+Retrieve a list of **plannerplan** objects owned by a [group](../resources/group.md) object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.Read.All
+*Group.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

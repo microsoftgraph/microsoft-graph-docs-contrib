@@ -1,10 +1,10 @@
 # Get plannerAssignedToTaskBoardTaskFormat
 
-Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
+Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.Read.All
+*Group.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

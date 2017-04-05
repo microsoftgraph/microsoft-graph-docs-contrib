@@ -1,10 +1,10 @@
 # List plans
 
-Retrieve a list of plannerplan objects.
+Retrieve a list of **plannerplan** objects.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.Read.All
+*Group.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

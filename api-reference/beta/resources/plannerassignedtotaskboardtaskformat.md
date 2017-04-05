@@ -1,14 +1,14 @@
 # plannerAssignedToTaskBoardTaskFormat resource type
 
-The plannerAssignedToTaskBoardTaskFormat resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to). Each [task](plannertask.md) will have one plannerAssignedToTaskBoardTaskFormat object associated with it.
+The **plannerAssignedToTaskBoardTaskFormat** resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to). Each [task](plannertask.md) will have one **plannerAssignedToTaskBoardTaskFormat** object associated with it.
 
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat_get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |Read properties and relationships of plannerAssignedToTaskBoardTaskFormat object.|
-|[Update](../api/plannerassignedtotaskboardtaskformat_update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)	|Update plannerAssignedToTaskBoardTaskFormat object. |
+|[Get plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat_get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |Read properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.|
+|[Update](../api/plannerassignedtotaskboardtaskformat_update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)	|Update **plannerAssignedToTaskBoardTaskFormat** object. |
 
 ### Properties
 | Property	   | Type	|Description|

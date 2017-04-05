@@ -1,10 +1,10 @@
 # Get plannerPlanDetails
 
-Retrieve the properties and relationships of plannerplandetails object.
+Retrieve the properties and relationships of **plannerplandetails** object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 
-Group.Read.All
+*Group.Read.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

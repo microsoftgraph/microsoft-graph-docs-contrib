@@ -1,6 +1,6 @@
 # plannerOrderHintsByAssignee resource type
 
-The plannerOrderHintsByAssignee is a resource that contains [ordering hints](planner_order_hint_format.md) for assignees in a [plannerTask](plannerTask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.
+The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner_order_hint_format.md) for assignees in a [plannerTask](plannerTask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.
 This type is an open type. The properties are the ids of users assigned to the task, and the values are order hints.
 
 ### Properties

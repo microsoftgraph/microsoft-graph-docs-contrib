@@ -1,6 +1,6 @@
 # plannerCategoryDescriptions resource type
 
-The plannerCategoryDescriptions resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined. 
+The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined. 
 
 
 ### Properties
