@@ -132,7 +132,7 @@ With an access token, your app can make authenticated requests to the Microsoft 
 ### Getting an Excel Session
 #### Request 
 
-Pass a JSON object by setting the `persistchanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](http://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
+Pass a JSON object by setting the `persistChanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](http://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
 
 ```python
  	# Replace the id with your Excel workbook's drive id
