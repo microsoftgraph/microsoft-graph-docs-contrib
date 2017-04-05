@@ -75,14 +75,14 @@ Your app needs to register an instance of the Flask-OAuth client that you'll use
 	# and don't check it into github!
 	microsoft = oauth.remote_app(
 		'microsoft',
-		consumer_key=client_id,
-		consumer_secret=client_secret,
-		request_token_params={'scope': 'User.Read Files.ReadWrite'},
-		base_url='https://graph.microsoft.com/v1.0/',
-		request_token_url=None,
-		access_token_method='POST',
-		access_token_url='https://login.microsoftonline.com/common/oauth2/v2.0/token',
-		authorize_url='https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
+		consumer_key = client_id,
+		consumer_secret = client_secret,
+		request_token_params = {'scope': 'User.Read Files.ReadWrite'},
+		base_url = 'https://graph.microsoft.com/v1.0/',
+		request_token_url = None,
+		access_token_method = 'POST',
+		access_token_url = 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
+		authorize_url = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
 	)
 ```
 
@@ -121,10 +121,10 @@ With an access token, your app can make authenticated requests to the Microsoft 
 ```python
 	# Set request headers.
 	headers = { 
-	  'User-Agent' : 'python_tutorial/1.0',
-	  'Authorization' : 'Bearer {0}'.format(access_token),
-	  'Accept' : 'application/json',
-	  'Content-Type' : 'application/json'
+		'User-Agent' : 'python_tutorial/1.0',
+		'Authorization' : 'Bearer {0}'.format(access_token),
+	 	'Accept' : 'application/json',
+	 	'Content-Type' : 'application/json'
 	}
 ```
 > **Note** The request must also send a **Content-Type** header with a value accepted by the Graph API, for example, `application/json`.
@@ -139,17 +139,17 @@ Pass a JSON object by setting the `persistChanges` value to `true` or `false`. W
 	url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
 	# Set request headers
 	headers = { 
-	  'User-Agent' : 'python_tutorial/1.0',
-	  'Authorization' : 'Bearer {0}'.format(access_token),
-	  'Accept' : 'application/json',
-	  'Content-Type' : 'application/json'
+		'User-Agent' : 'python_tutorial/1.0',
+		'Authorization' : 'Bearer {0}'.format(access_token),
+		'Accept' : 'application/json',
+		'Content-Type' : 'application/json'
 	}
 	# Specify type of session
 	body = {
-	  'persistChanges': True
+		'persistChanges': True
 	}
 	
-	response = requests.post(url, headers=headers, json=body)
+	response = requests.post(url, headers = headers, json = body)
 ```
 
 #### Response
@@ -160,9 +160,9 @@ HTTP code: 201, Created
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
-  "id": "{session-id}",
-  "persistChanges": true
+	"@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
+	"id": "{session-id}",
+	"persistChanges": true
 }
 ```
 
