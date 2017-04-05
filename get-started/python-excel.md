@@ -68,7 +68,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 ### Create OAuth client
 
-Your app needs to register an instance of the Flask-OAuth client that you'll use to start the OAuth flow and get an access token. Note the "Files.ReadWrite" scope is needed to obtain an Excel session with changes persisted.
+Your app needs to register an instance of the Flask-OAuth client that you'll use to start the OAuth flow and get an access token. Note the "Files.ReadWrite" scope is required to obtain an Excel session that supports persisted changes.
 
 ```python
 	# Put your consumer key and consumer secret into a config file
@@ -94,7 +94,6 @@ After the user signs in, the browser is redirected to your reply URL. Upon succe
 	@app.route('/login/authorized')
 	def authorized():
 		response = microsoft.authorized_response()
-	
 		if response is None:
 			return "Access Denied: Reason=%s\nError=%s" % (
 				request.args['error'], 
@@ -137,8 +136,7 @@ Pass a JSON object by setting the `persistchanges` value to `true` or `false`. W
 
 ```python
  	# Replace the id with your Excel workbook's drive id
-	url = 'https://graph.micrsooft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
-	
+	url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
 	# Set request headers
 	headers = { 
 	  'User-Agent' : 'python_tutorial/1.0',
@@ -146,7 +144,6 @@ Pass a JSON object by setting the `persistchanges` value to `true` or `false`. W
 	  'Accept' : 'application/json',
 	  'Content-Type' : 'application/json'
 	}
-	
 	# Specify type of session
 	body = {
 	  'persistChanges': True
