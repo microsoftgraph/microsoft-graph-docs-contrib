@@ -185,6 +185,33 @@ The session ID returned from the previous call is passed as a header on subseque
 	response = requests.get(url, headers = headers)
 ```
 
+#### Response
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 200, OK
+content-type: application/json;odata.metadata 
+
+{
+	"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8473b867-3e4e-4e44-8d09-	8c6da362080f')/drive/items('01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE')/workbook/worksheets",
+	"value": [
+	{
+		"@odata.id": "/users('8473b867-3e4e-4e44-8d09-8c6da362080f')/drive/items('01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)",
+		"id": "{00000000-0001-0000-0000-000000000000}",
+		"name": "Session 1",
+		"position": 0,
+		"visibility": "Visible"
+	},
+	{
+		"@odata.id": "/users('8473b867-3e4e-4e44-8d09-8c6da362080f')/drive/items('01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE')/workbook/worksheets(%27%7B00000000-0001-0000-0100-000000000000%7D%27)",
+		"id": "{00000000-0001-0000-0100-000000000000}",
+		"name": "Session 2",
+		"position": 1,
+		"visibility": "Visible"
+	}]
+}
+```
+
 ## [Common Excel API scenarios](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
 
 ## Next steps
