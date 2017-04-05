@@ -174,12 +174,11 @@ The session ID returned from the previous call is passed as a header on subseque
 ```python
 	# Replace the id with your Excel workbook's drive id
 	url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/worksheets'
-	# Set request headers
+	# Set request headers - note the session header 
 	headers = { 
 		'User-Agent' : 'python_tutorial/1.0',
 		'Authorization' : 'Bearer {0}'.format(access_token),
 		'Accept' : 'application/json',
-		'Content-Type' : 'application/json',
 		'Workbook-Session-Id': 'cluster=PP1&session=12.a04039942e021.A272...'
 	}
 	
