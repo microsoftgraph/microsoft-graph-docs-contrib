@@ -68,7 +68,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 ### Create OAuth client
 
-Your app needs to register an instance of the Flask-OAuth client that you'll use to start the OAuth flow and get an access token. 
+Your app needs to register an instance of the Flask-OAuth client that you'll use to start the OAuth flow and get an access token. Note the "Files.ReadWrite" scope is needed to obtain an Excel session with changes persisted.
 
 ```python
 	# Put your consumer key and consumer secret into a config file
@@ -77,7 +77,7 @@ Your app needs to register an instance of the Flask-OAuth client that you'll use
 		'microsoft',
 		consumer_key=client_id,
 		consumer_secret=client_secret,
-		request_token_params={'scope': 'User.Read Mail.Send'},
+		request_token_params={'scope': 'User.Read Files.ReadWrite'},
 		base_url='https://graph.microsoft.com/v1.0/',
 		request_token_url=None,
 		access_token_method='POST',
@@ -133,19 +133,27 @@ With an access token, your app can make authenticated requests to the Microsoft 
 ### Getting an Excel Session
 #### Request 
 
-Pass a JSON object by setting the `persistchanges` value to `true` or `false`. 
+Pass a JSON object by setting the `persistchanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](http://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
 
-<!-- { "blockType": "ignored" } -->
-```http
-POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/createSession
-content-type: Application/Json 
-authorization: Bearer {access-token}
-
-{ "persistChanges": true }
+```python
+ 	# Replace the id with your Excel workbook's drive id
+	url = 'https://graph.micrsooft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
+	
+	# Set request headers
+	headers = { 
+	  'User-Agent' : 'python_tutorial/1.0',
+	  'Authorization' : 'Bearer {0}'.format(access_token),
+	  'Accept' : 'application/json',
+	  'Content-Type' : 'application/json'
+	}
+	
+	# Specify type of session
+	body = {
+	  'persistChanges': True
+	}
+	
+	response = requests.post(url, headers=headers, json=body)
 ```
-
-When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.  
-
 
 #### Response
 
@@ -164,7 +172,7 @@ content-type: application/json;odata.metadata
 #### Usage 
 
 The session ID returned from the previous call is passed as a header on subsequent API requests in  
-`workbook-session-id` HTTP header. 
+`workbook-session-id` HTTP header. For instance, to list worksheets in the Excel workbook.
 
 <!-- { "blockType": "ignored" } -->
 ```http
