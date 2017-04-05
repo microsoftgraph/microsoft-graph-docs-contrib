@@ -212,11 +212,15 @@ content-type: application/json;odata.metadata
 }
 ```
 
-## [Common Excel API scenarios](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
-
 ## Next steps
-The Excel REST API in Microsoft Graph provides a powerful way to access and interact with data in Excel workbooks. Explore what else is possible with the Excel REST API and other services in Microsoft Graph.
+
+### Interacting with Excel
+With the **Workbook-Session-Id** HTTP header, you can begin issuing requests to fetch data, create charts, and much more. 
+* [Common Excel API scenarios](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
+* [Working with Excel in Microsoft Graph](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/excel)
+
+### Learn more about Microsoft Graph
+The Excel REST API in Microsoft Graph provides a powerful way to access and interact with data in Excel workbooks. Explore what else is possible with Microsoft Graph.
 
 * [Microsoft Graph Documentation](https://graph.microsoft.io/en-us/docs)
 * [Get started with Microsoft Graph in a Python app](https://graph.microsoft.io/en-us/docs/get-started/python)
-* [Working with Excel in Microsoft Graph](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/excel)
