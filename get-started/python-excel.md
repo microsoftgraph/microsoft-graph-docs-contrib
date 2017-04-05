@@ -168,14 +168,22 @@ content-type: application/json;odata.metadata
 
 #### Usage 
 
-The session ID returned from the previous call is passed as a header on subsequent API requests in  
-`workbook-session-id` HTTP header. For instance, to list worksheets in the Excel workbook.
+The session ID returned from the previous call is passed as a header on subsequent API requests in the
+**Workbook-Session-Id** HTTP header. For instance, to list worksheets in that Excel workbook.
 
-<!-- { "blockType": "ignored" } -->
-```http
-GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets
-authorization: Bearer {access-token} 
-workbook-session-id: {session-id}
+```python
+	# Replace the id with your Excel workbook's drive id
+	url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/worksheets'
+	# Set request headers
+	headers = { 
+		'User-Agent' : 'python_tutorial/1.0',
+		'Authorization' : 'Bearer {0}'.format(access_token),
+		'Accept' : 'application/json',
+		'Content-Type' : 'application/json',
+		'Workbook-Session-Id': 'cluster=PP1&session=12.a04039942e021.A272...'
+	}
+	
+	response = requests.get(url, headers = headers)
 ```
 
 ## [Common Excel API scenarios](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
