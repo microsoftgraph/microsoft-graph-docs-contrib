@@ -2,6 +2,12 @@
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
+## April 2017
+
+|**Change type**|**Version**|**Description**| 
+|:-------------|:-----------|:--------------| 
+|Addition|Beta|New [Planner API](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/planner_overview) and associated new resources:<br />[plannerPlan](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/plannerPlan) <br />[plannerTask](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/plannerTask) <br />[plannerPlanDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/plannerTaskDetails) <br />[plannerBucket](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat) | 
+
 ## March 2017
 
 ### Add contracts to Microsoft Graph
