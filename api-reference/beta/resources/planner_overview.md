@@ -38,7 +38,7 @@ Aside from task and plan data, the Planner API also provides resources to provid
 | Tasks are shown as	  | Tasks are ordered with information from|
 |:------------------|:----------|
 |Flat list (tasks in a plan)| `orderHint` property on tasks|
-|Flat list (tasks assigned to a user): `assigneePriority` property on tasks|
+|Flat list (tasks assigned to a user)| `assigneePriority` property on tasks|
 |Board view with columns for assignees (assigned to task board)| [assignedToTaskBoardTaskFormat](plannerassignedToTaskBoardTaskFormat.md) object|
 |Board view with columns for progress of the task towards completion (progress task board)| [progressTaskBoardTaskFormat](plannerprogressTaskBoardTaskFormat.md) object|
 |Board view with custom columns of tasks (bucket task board):|[bucketTaskBoardTaskFormat](plannerbucketTaskBoardTaskFormat.md) object|
