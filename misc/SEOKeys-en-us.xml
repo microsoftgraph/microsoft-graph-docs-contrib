@@ -629,7 +629,7 @@
 		<Item text="Get progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_get" />
 		<Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
-	  <Item text="Deprecated APIs" url="/en-us/api-reference/beta/resources/task" >
+	  <Item text="Deprecated APIs" url="/en-us/api-reference/beta/resources/tasks_overview" >
 		  <Item text="Task" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
 			<Item text="Create task" url="/en-us/api-reference/beta/api/task_post_tasks" SEOKeyword="Create task, Microsoft Graph API, user API" SEODescription="Use this API to create a new task." />
 			<Item text="Get task" url="/en-us/api-reference/beta/api/task_get" SEOKeyword="Get task, Microsoft Graph API, tasks" SEODescription="" />
