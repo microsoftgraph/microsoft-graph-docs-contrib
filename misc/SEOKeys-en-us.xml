@@ -2957,51 +2957,51 @@
       </item>
       <item text="Device category" url="/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_devicecategory">
         <item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicecategory_get"/>
-  			<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicecategory_update"/>
+  		<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicecategory_update"/>
       </item>
       <item text="Device management" url="/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_devicemanagement">
         <item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_get"/>
-  			<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_update"/>
-  			<item text="List remote action audits" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_list_remoteactionaudit"/>
-  			<item text="Create remote action audit" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_create_remoteactionaudit"/>
-  			<item text="Get apple push notification certificate" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_get_applepushnotificationcertificate"/>
+  		<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_update"/>
+  		<item text="List remote action audits" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_list_remoteactionaudit"/>
+  		<item text="Create remote action audit" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_create_remoteactionaudit"/>
+  		<item text="Get apple push notification certificate" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_get_applepushnotificationcertificate"/>
       </item>
       <item text="Managed device" url="/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice">
         <item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_list"/>
-  			<item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_get"/>
-  			<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_update"/>
-  			<item text="Retire" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_retire"/>
-  			<item text="Wipe" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_wipe"/>
-  			<item text="Reset passcode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_resetpasscode"/>
-  			<item text="Remote lock" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_remotelock"/>
-  			<item text="Enable lost mode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_enablelostmode"/>
-  			<item text="Disable lost mode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_disablelostmode"/>
-  			<item text="Locate device" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_locatedevice"/>
-  			<item text="Bypass activation lock" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_bypassactivationlock"/>
-  			<item text="Reboot now" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_rebootnow"/>
-  			<item text="Recover passcode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_recoverpasscode"/>
-  			<item text="List detected apps" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_list_detectedapp"/>
-  			<item text="Get device category" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_get_devicecategory"/>
+  		<item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_get"/>
+  		<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_update"/>
+  		<item text="Retire" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_retire"/>
+  		<item text="Wipe" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_wipe"/>
+  		<item text="Reset passcode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_resetpasscode"/>
+  		<item text="Remote lock" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_remotelock"/>
+  		<item text="Enable lost mode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_enablelostmode"/>
+  		<item text="Disable lost mode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_disablelostmode"/>
+  		<item text="Locate device" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_locatedevice"/>
+  		<item text="Bypass activation lock" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_bypassactivationlock"/>
+  		<item text="Reboot now" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_rebootnow"/>
+  		<item text="Recover passcode" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_recoverpasscode"/>
+  		<item text="List detected apps" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_list_detectedapp"/>
+  		<item text="Get device category" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_get_devicecategory"/>
       </item>
       <item text="Managed device overview" url="/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddeviceoverview">
         <item text="Get managedDeviceOverview" url="/en-us/api-reference/beta/api/intune_devicefe_manageddeviceoverview_get"/>
-  			<item text="Update managedDeviceOverview" url="/en-us/api-reference/beta/api/intune_devicefe_manageddeviceoverview_update"/>
+  		<item text="Update managedDeviceOverview" url="/en-us/api-reference/beta/api/intune_devicefe_manageddeviceoverview_update"/>
       </item>
       <item text="Remote action audit" url="/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_remoteactionaudit">
         <item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_list"/>
-  			<item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_get"/>
-  			<item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_create"/>
-  			<item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_delete"/>
-  			<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_update"/>
+  		<item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_get"/>
+  		<item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_create"/>
+  		<item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_delete"/>
+  		<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_remoteactionaudit_update"/>
       </item>
       <item text="User" url="/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_user">
         <item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_user_list"/>
-  			<item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_user_get"/>
-  			<item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_user_create"/>
-  			<item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_user_delete"/>
-  			<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_user_update"/>
-  			<item text="Remove all devices from management" url="/en-us/api-reference/beta/api/intune_devicefe_user_removealldevicesfrommanagement"/>
-  			<item text="List managed devices" url="/en-us/api-reference/beta/api/intune_devicefe_user_list_manageddevice"/>
+  		<item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_user_get"/>
+  		<item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_user_create"/>
+  		<item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_user_delete"/>
+  		<item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_user_update"/>
+  		<item text="Remove all devices from management" url="/en-us/api-reference/beta/api/intune_devicefe_user_removealldevicesfrommanagement"/>
+  		<item text="List managed devices" url="/en-us/api-reference/beta/api/intune_devicefe_user_list_manageddevice"/>
       </item>
     </item>
     <Item text="App protection" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
