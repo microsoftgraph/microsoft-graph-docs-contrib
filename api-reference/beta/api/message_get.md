@@ -72,7 +72,7 @@ The first example gets the specified message. It does not specify any header to 
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
 ```
 ##### Response 1
-Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default format of HTML.
+Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
 Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
