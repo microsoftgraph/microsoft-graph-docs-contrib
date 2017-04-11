@@ -56,7 +56,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value"
