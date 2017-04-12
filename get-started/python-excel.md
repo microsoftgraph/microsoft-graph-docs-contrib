@@ -12,7 +12,7 @@ This walkthrough describes how to make requests to the Excel REST API from a Pyt
 
 * [Python 3.5.2](https://www.python.org/downloads/)
 * [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
-* A [work or school account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
+* A [work or school account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)<!-- This link target doesn't match the link title. Please verify that this is what you want to link to and update the text, or update the URL as appropriate. -->
 
 
 ## Authorization and scopes
