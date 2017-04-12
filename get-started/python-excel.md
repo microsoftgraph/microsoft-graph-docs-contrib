@@ -1,23 +1,21 @@
 # Use Microsoft Graph to access Excel in a Python app
 
-This walkthrough describes how to make requests to the Excel REST API from a Python web app. 
-
-##  Prerequisites
-
-* [Python 3.5.2](https://www.python.org/downloads/)
-* [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
-* A [Work or school account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
-
-
-## Developing for Excel
 You can use the Microsoft Graph API to read and update workbooks stored in supported online storage platforms including, OneDrive and SharePoint. The `Workbook` (or Excel file) resource contains all the other Excel resources and your app can access them via simple navigations. 
 
 You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook. For example, 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 returns a collection of worksheet objects that are part of the workbook.    
 
+This walkthrough describes how to make requests to the Excel REST API from a Python web app. 
 
-### Authorization and scopes
+##  Prerequisites
+
+* [Python 3.5.2](https://www.python.org/downloads/)
+* [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
+* A [work or school account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)<!-- This link target doesn't match the link title. Please verify that this is what you want to link to and update the text, or update the URL as appropriate. -->
+
+
+## Authorization and scopes
 You can use the [Azure AD v2.0 endpoint](https://graph.microsoft.io/en-us/docs/authorization/converged_auth) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
 One of the following [permission scopes](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes) is required to use the Excel resource:
@@ -25,7 +23,7 @@ One of the following [permission scopes](https://graph.microsoft.io/en-us/docs/a
 * Files.Read 
 * Files.ReadWrite
 
-### Sessions and persistence
+## Sessions and persistence
 
 Excel APIs can be called in one of two modes: 
 
@@ -34,9 +32,7 @@ Excel APIs can be called in one of two modes:
 
 To represent the session in the API, use the `workbook-session-id: {session-id}` header. 
 
-## Getting started
-
-### Register the application in Azure Active Directory
+## Register the application in Azure Active Directory
 
 First, you need to register your application and set permissions to use Microsoft Graph. This lets users sign in to the application with work or school accounts.
 
@@ -54,7 +50,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 4. Copy the application ID. This is the unique identifier for your app.
 
-5. Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog.
+5. Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog box.
 
 	You'll use the application ID and app secret to configure the app.
 
@@ -68,7 +64,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 ### Create OAuth client
 
-Your app needs to register an instance of the Flask-OAuth client that you'll use to start the OAuth flow and get an access token. Note the "Files.ReadWrite" scope is required to obtain an Excel session that supports persisted changes.
+Your app needs to register an instance of the Flask-OAuth client that you'll use to start the OAuth flow and get an access token. Note that the *Files.ReadWrite* scope is required to obtain an Excel session that supports persisted changes.
 
 ```python
 	# Put your consumer key and consumer secret into a config file
@@ -88,7 +84,7 @@ Your app needs to register an instance of the Flask-OAuth client that you'll use
 
 ### Receive an authorization code in your reply URL page
 
-After the user signs in, the browser is redirected to your reply URL. Upon successful authorization, the access token (which will be used to authorize further requests) will be returned in the response body. 
+After the user signs in, the browser is redirected to your reply URL. Upon successful authorization, the access token (which will be used to authorize additional requests) will be returned in the response body. 
 
 ```python
 	@app.route('/login/authorized')
@@ -113,7 +109,7 @@ After the user signs in, the browser is redirected to your reply URL. Upon succe
 		session['access_token'] = response['access_token']
 ```
 
-## Making requests to the Excel API
+## Make requests to the Excel API
 
 ### Request headers 
 With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must append the access token to the **Authorization** header of each request.
@@ -214,13 +210,11 @@ content-type: application/json;odata.metadata
 
 ## Next steps
 
-### Interacting with Excel
 With the **Workbook-Session-Id** HTTP header, you can begin issuing requests to fetch data, create charts, and much more. 
-* [Common Excel API scenarios](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
-* [Working with Excel in Microsoft Graph](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/excel)
+* [Common Excel API scenarios](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
+* [Working with Excel in Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/excel)
 
-### Learn more about Microsoft Graph
 The Excel REST API in Microsoft Graph provides a powerful way to access and interact with data in Excel workbooks. Explore what else is possible with Microsoft Graph.
 
-* [Microsoft Graph Documentation](https://graph.microsoft.io/en-us/docs)
-* [Get started with Microsoft Graph in a Python app](https://graph.microsoft.io/en-us/docs/get-started/python)
+* [Overview of Microsoft Graph](https://developer.microsoft.com/graph/docs)
+* [Get started with Microsoft Graph in a Python app](https://developer.microsoft.com/graph/docs/get-started/python)
