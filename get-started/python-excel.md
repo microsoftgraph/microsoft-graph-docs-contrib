@@ -211,6 +211,7 @@ content-type: application/json;odata.metadata
 ## Next steps
 
 With the **Workbook-Session-Id** HTTP header, you can begin issuing requests to fetch data, create charts, and much more. 
+
 * [Common Excel API scenarios](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
 * [Working with Excel in Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/excel)
 
