@@ -26,8 +26,7 @@ All the supported parameters are listed below. Depending on your scenario, speci
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) collection|A collection of attendees or resources for the meeting. Since findMeetingTimes assumes that any attendee who is a person is always required, specify `required` for a person 
-and `resource` for a resource in the corresponding **type** property. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer. Optional.|
+|attendees|[attendeeBase](../resources/attendeebase.md) collection|A collection of attendees or resources for the meeting. Since findMeetingTimes assumes that any attendee who is a person is always required, specify `required` for a person and `resource` for a resource in the corresponding **type** property. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer. Optional.|
 |isOrganizerOptional|Edm.Boolean|Specify `True` if the organizer doesn't necessarily have to attend. The default is `false`. Optional.|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place. Optional.|
 |maxCandidates|Edm.Int32|The maximum number of meeting time suggestions to be returned. Optional.|
