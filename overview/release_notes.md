@@ -37,6 +37,9 @@ each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1
 or access the ICS URL in the calendar resource.
 * You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
+#### Using delta query
+For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
 ## Groups
 #### Policy
 Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App. 
@@ -72,6 +75,9 @@ and is expected to be widely available by the end of January 2016.
 #### Setting the allowExternalSenders property
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group 
 in a POST or PATCH operation, in both `/v1.0` and `/beta`.
+
+#### Using delta query
+For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
 ## Application and ServicePrincipal
 If you are currently using application or servicePrincipal resources in preview, potential breaking changes are planned over the coming few months. The changes will be released in preview (beta) first. The changes include property changes and structure changes in the response json. The changes will release in preview (beta) prior to releasing to v1.0. Documentation will be updated when the changes are available in preview.
@@ -178,4 +184,6 @@ Additionally there are the following `/beta` limitations:
 
   >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
 
+## Delta query
 
+Tracking changes to relationships on users and groups is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* and has selected the *members* relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered soon.
