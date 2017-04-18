@@ -4,6 +4,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## April 2017
 
+### Add onPremises properties to user entity
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|Beta|Added new onPremises properties onPremisesDomainName, OnPremisesSamAccountName, and onPremisesUserPrincipalName to the [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) entity. |
+
 |**Change type**|**Version**|**Description**| 
 |:-------------|:-----------|:--------------|
 |Change|Beta|Added **HiddenMembership** as an additional value for the visibility property to the [Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) entity |
