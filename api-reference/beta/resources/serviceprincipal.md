@@ -2,8 +2,6 @@
 
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
-> **Important:** For upcoming important changes, see the [application and servicePrincipal section](../../../overview/release_notes.md#application-and-serviceprincipal) in the known issues article.
-
 ### JSON representation
 
 Here is a JSON representation of the resource
