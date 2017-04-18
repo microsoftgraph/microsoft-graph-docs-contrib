@@ -79,6 +79,9 @@ in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 #### Using delta query
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+## Application and ServicePrincipal
+If you are currently using application or servicePrincipal resources in preview, potential breaking changes are planned over the coming few months. The changes will be released in preview (beta) first. The changes include property changes and structure changes in the response json. The changes will release in preview (beta) prior to releasing to v1.0. Documentation will be updated when the changes are available in preview.
+
 ## Contacts
 
 #### Organization contacts available in only beta
