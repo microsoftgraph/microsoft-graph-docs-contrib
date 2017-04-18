@@ -73,6 +73,8 @@ and is expected to be widely available by the end of January 2016.
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group 
 in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
+## Application and ServicePrincipal
+If you are currently using application or servicePrincipal resources in preview, potential breaking changes are planned over the coming few months. The changes will be released in preview (beta) first. The changes include property changes and structure changes in the response json. The changes will release in preview (beta) prior to releasing to v1.0. Documentation will be updated when the changes are available in preview.
 
 ## Contacts
 
