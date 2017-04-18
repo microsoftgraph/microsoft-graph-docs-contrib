@@ -2,7 +2,7 @@
 
 > **Note:** This topic applies **only** to Microsoft Cloud Solution Provider (CSP) application developers. The [Microsoft Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) program enables Microsoft’s partners to resell and manage Microsoft Online services to customers.
 
-This topic describes how to enable application access to Partner-Managed customer data via Microsoft Graph using either the [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) or the [service to service client credentials flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
+This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) or the [service to service client credentials flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
 **Important:** Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](..\beta\resources\intune_graph_overview) resources.
 
@@ -14,7 +14,7 @@ AAdditionally, as a partner developer, you can build a **partner-managed app** t
 
 ## How to set-up a partner-managed application
 
-An application is viewed as *Partner-Managed* when it is granted elevated permissions to access your customers' data. Note that partner-managed apps can *only* be configured on Partner tenants.
+An application is viewed as *partner-managed* when it is granted elevated permissions to access your customers' data. Note that partner-managed apps can *only* be configured on Partner tenants.
 
 The initial steps required here follow most of the same steps used to register and configure a multi-tenant application:
 
@@ -24,19 +24,19 @@ The initial steps required here follow most of the same steps used to register a
 
     1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
     ```PowerShell
-    > Connect-AzureAd
+    Connect-AzureAd
     ```
     2. Find the group that represents the Adminagents.
     ```PowerShell
-    > $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'"
+    $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'"
     ```
     3. Find the service principal that has the same *appId* as your app.
     ```PowerShell
-    > $sp = Get-AzureADServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
+    $sp = Get-AzureADServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
     ```
     4. Finally, add the service principal to the Adminagents group.
     ```PowerShell
-    > Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
+    Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
     ```
 
 ## Token acquisition flows
@@ -46,7 +46,7 @@ Token acquisition flows for partner-managed apps - [authorization code grant flo
 Apart from pre-consented access to all your customer tenants, partner-managed apps have one additional capability. It allows for your agents to use your app to access your customers' tenant data (using delegated admin privileges). Conceptually it works like this:
 
 1. Your agent signs in to your app with their user credentials issued from your partner tenant.
-2. Your app requests an access token for the intended Partner-Managed customer tenant.
+2. Your app requests an access token for the intended partner-managed customer tenant.
 3. Your app uses the access token to call Microsoft Graph.
 
 This is a slight variation on the [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code). To see how this would look, imagine your partner tenant is *partner.com* (which is the home tenant for your agents) and one of your customers is *customer.com*:
