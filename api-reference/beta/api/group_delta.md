@@ -61,9 +61,9 @@ If successful, this method returns `200, OK` response code and [group](../resour
 
 - If a deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource.
 
-See:
-- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details
-- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for an example requests.
+See:</br>
+- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details</br>
+- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for an example requests.</br>
     
 ### Example
 ##### Request
