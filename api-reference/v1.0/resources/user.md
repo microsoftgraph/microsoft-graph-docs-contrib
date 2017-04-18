@@ -6,6 +6,8 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
+|[List users](../api/user_list.md) |[user](user.md) collection| Get a list of user objects.|
+|[Create user](../api/user_post_users.md) |[user](user.md)| Create a new user object.|
 |[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
 |[Update user](../api/user_update.md) | [user](user.md) |Update user object. |
 |[Delete user](../api/user_delete.md) | None |Delete user object. |
@@ -48,7 +50,9 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|businessPhones|String collection|The contact's business phone numbers.|
 |city|String|The city in which the user is located. Supports $filter.|
+|companyName|String|The company name which the user is associated.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
@@ -204,6 +208,7 @@ Here is a JSON representation of the resource
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "ownedObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
