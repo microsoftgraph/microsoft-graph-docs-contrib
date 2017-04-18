@@ -5,6 +5,8 @@ Use this API to get the members list (user and group) in an administrative unit.
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*.
 
+> Note: To list the members of a hidden membership in an administrative unit, the *Member.Read.Hidden* scope is required.
+
 ## HTTP request
 
 ```http
