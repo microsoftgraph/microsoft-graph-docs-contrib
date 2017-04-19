@@ -4,13 +4,21 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## April 2017
 
+### Application and ServicePrincipal resource type schema changes
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|Beta|Removed properties from application and servicePrincipal resource types: knownClientApplications and publicClient  |
+|Change|Beta|Renamed properties from application and servicePrincipal resource types: appId to id, identifierUris to applicationAliases, availableToOtherOrganizations to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, replyUrls to redirectUrls |
+|Change|Beta|API responses that return application and servicePrincipal resource types are restructured and some properties are grouped. Affected APIs include  |
+
 ### Add onPremises properties to user entity
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Change|Beta|Added new onPremises properties onPremisesDomainName, OnPremisesSamAccountName, and onPremisesUserPrincipalName to the [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) entity. |
 
-|**Change type**|**Version**|**Description**| 
+|**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Change|Beta|Added **HiddenMembership** as an additional value for the visibility property to the [Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) entity |
 |Addition|Beta|Added new [Planner API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/planner_overview).<br />New resources:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat) | 
