@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1724
+Content-Length: 2132
 
 {
   "value": [
@@ -76,9 +76,15 @@ Content-Length: 1724
       "contactSyncBlocked": true,
       "printBlocked": true,
       "fingerprintBlocked": true,
+      "disableAppPinIfDevicePinIsSet": true,
+      "minimumRequiredOsVersion": "Minimum Required Os Version value",
+      "minimumWarningOsVersion": "Minimum Warning Os Version value",
+      "minimumRequiredAppVersion": "Minimum Required App Version value",
+      "minimumWarningAppVersion": "Minimum Warning App Version value",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
+      "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
       "customSettings": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",

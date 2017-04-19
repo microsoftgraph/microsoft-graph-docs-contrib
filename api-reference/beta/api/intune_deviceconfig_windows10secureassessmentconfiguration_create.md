@@ -6,7 +6,7 @@ Create a new [windows10SecureAssessmentConfiguration](../resources/intune_device
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -89,3 +89,6 @@ Content-Length: 531
   "allowTextSuggestion": true
 }
 ```
+
+
+

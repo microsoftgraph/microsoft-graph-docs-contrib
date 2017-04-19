@@ -6,14 +6,14 @@ Read properties and relationships of the [cloudPkiSubscription](../resources/int
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /cloudPkiSubscriptions/{cloudPkiSubscriptionsId}
+GET /deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
 ```
 
 ## Optional query parameters
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [cloudPkiSubscri
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/cloudPkiSubscriptions/{cloudPkiSubscriptionsId}
+GET https://graph.microsoft.com/beta/deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
 ```
 
 ### Response

@@ -39,7 +39,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
 |productIds|String collection|The Product Ids that represent the Office365 Suite SKU.|
-|excludedOfficeApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the Apps which are excluded from the selected Office365 Product Id.|
+|excludedApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the Apps which are excluded from the selected Office365 Product Id.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -83,7 +83,7 @@ Here is a JSON representation of the resource.
   "productIds": [
     "String"
   ],
-  "excludedOfficeApps": {
+  "excludedApps": {
     "@odata.type": "microsoft.graph.excludedApps",
     "access": true,
     "excel": true,

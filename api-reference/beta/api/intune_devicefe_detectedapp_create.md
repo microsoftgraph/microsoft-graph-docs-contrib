@@ -6,7 +6,7 @@ Create a new [detectedApp](../resources/intune_devicefe_detectedapp.md) object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /detectedapps/
-POST /managedDevices/{managedDevicesId}/detectedApps/
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/
 ```
 
 ## Request headers
