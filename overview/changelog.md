@@ -8,7 +8,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Addition|Beta|Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](https://graph.microsoft.io/en-us/docs/authorization/auth_cloudSolutionProvider). |
+|Addition|Beta|Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](https://graph.microsoft.io/en-us/docs/authorization/auth_cloudsolutionprovider). |
 
 ### Added onPremises properties to user entity
 

@@ -18,7 +18,7 @@ An application is viewed as *partner-managed* when it is granted elevated permis
 
 The initial steps required here follow most of the same steps used to register and configure a multi-tenant application:
 
-1. [Register your application](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration) in your Partner tenant using the [Azure Portal](https://portal.azure.com). To function as a partner-managed app, an application must be configured as a [multi-tenant app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant).
+1. [Register your application](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration) in your Partner tenant using the [Azure Portal](https://portal.azure.com). To function as a partner-managed app, an application must be configured as a [multi-tenant app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant). Additionally, if your app is deployed and sold in multiple geographic regions you will need to register your app in each of those regions as described <a href="#region">here</a>.
 2. Configure your multi-tenant app, again through the Azure Portal, with the *required permissions* it needs using a least privileged approach.
 3. Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the Adminagents group in your Partner tenant, using Azure AD powershell V2. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).  Follow these steps to find the Adminagents group, the **servicePrincipal** and add it to the group.
 
@@ -70,13 +70,12 @@ This is a slight variation on the [authorization code grant flow](https://docs.m
     Authorization: Bearer <token>
     ```
 
-## Other considerations
-
-### Register your app in the regions you support
+## Register your app in the regions you support
+<a name="region"></a>
 
 CSP customer engagement is currently limited to a single region. Partner-managed applications carry the same limitation. This means you must have a separate tenant for each region you sell in. For example, if your partner-managed app is registered in a tenant in the US but your customer is in the EU – the partner-managed app will not work.  Each of your regional partner tenants must maintain their own set of partner-managed apps to manage customers within the same region. This might require additional logic in your app (prior to sign-in) to get your customers' sign-in username to decide which region-specific partner-managed app identity to use, to serve the user.
 
-### Calling Microsoft Graph immediately after customer creation
+## Calling Microsoft Graph immediately after customer creation
 
 When you create a new customer using the [Partner Center API](https://partnercenter.microsoft.com/en-us/partner/developer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to 3 minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay may be experienced when an existing customer accepts your invitation. This is because pre-consent relies on the partner relationship being present in the customer tenant.
 
