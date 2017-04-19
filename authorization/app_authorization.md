@@ -1,7 +1,7 @@
 ﻿
 # Microsoft Graph app authentication using Azure AD
 
-This article presents a detailed look at an example authentication and authorization flow for a Microsoft Graph app. This example uses Azure Active Directory (Azure AD) and the authentication provider, and the <a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">Authorization Code Grant Flow</a> as the auth flow. This example will show you how to use Azure AD in a Microsoft Graph app to authenticate a user, get an access token, and renew an access token using a refresh token.
+This article presents a detailed look at an example authentication and authorization flow for a Microsoft Graph app. This example uses Azure Active Directory (Azure AD) as the authentication provider, and the <a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">Authorization Code Grant Flow</a> as the auth flow. This example will show you how to use Azure AD in a Microsoft Graph app to authenticate a user, get an access token, and renew an access token using a refresh token.
 
 For code grant flows, the authentication process can be broken down to two basic steps:
 
