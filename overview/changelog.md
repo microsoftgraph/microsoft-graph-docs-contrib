@@ -4,11 +4,19 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## April 2017
 
-### Add onPremises properties to user entity
+### Added preview support for Cloud Solution Provider developers
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Change|Beta|Added new onPremises properties onPremisesDomainName, OnPremisesSamAccountName, and onPremisesUserPrincipalName to the [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) entity. |
+|Addition|Beta|Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](https://graph.microsoft.io/en-us/docs/authorization/auth_cloudsolutionprovider). |
+
+### Added onPremises properties to user entity
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Added new onPremises properties onPremisesDomainName, OnPremisesSamAccountName, and onPremisesUserPrincipalName to the [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) entity. |
+
+### New Planner APIs and an update to the group visibility property
 
 |**Change type**|**Version**|**Description**| 
 |:-------------|:-----------|:--------------|
