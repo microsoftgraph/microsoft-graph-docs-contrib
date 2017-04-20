@@ -6,7 +6,7 @@ List properties and relationships of the [organization](../resources/intune_onbo
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4212
+Content-Length: 4802
 
 {
   "value": [
@@ -62,27 +62,37 @@ Content-Length: 4212
         "iosRestrictions": {
           "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
           "platformBlocked": true,
-          "personalDeviceEnrollmentBlocked": true
+          "personalDeviceEnrollmentBlocked": true,
+          "osMinimumVersion": "Os Minimum Version value",
+          "osMaximumVersion": "Os Maximum Version value"
         },
         "windowsRestrictions": {
           "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
           "platformBlocked": true,
-          "personalDeviceEnrollmentBlocked": true
+          "personalDeviceEnrollmentBlocked": true,
+          "osMinimumVersion": "Os Minimum Version value",
+          "osMaximumVersion": "Os Maximum Version value"
         },
         "windowsMobileRestrictions": {
           "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
           "platformBlocked": true,
-          "personalDeviceEnrollmentBlocked": true
+          "personalDeviceEnrollmentBlocked": true,
+          "osMinimumVersion": "Os Minimum Version value",
+          "osMaximumVersion": "Os Maximum Version value"
         },
         "androidRestrictions": {
           "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
           "platformBlocked": true,
-          "personalDeviceEnrollmentBlocked": true
+          "personalDeviceEnrollmentBlocked": true,
+          "osMinimumVersion": "Os Minimum Version value",
+          "osMaximumVersion": "Os Maximum Version value"
         },
         "macRestrictions": {
           "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
           "platformBlocked": true,
-          "personalDeviceEnrollmentBlocked": true
+          "personalDeviceEnrollmentBlocked": true,
+          "osMinimumVersion": "Os Minimum Version value",
+          "osMaximumVersion": "Os Maximum Version value"
         }
       },
       "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {

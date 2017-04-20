@@ -20,6 +20,8 @@ Hardware information of a given device.
 |operatingSystemLanguage|String|Operating system language of the device|
 |isSupervised|Boolean|Supervised mode of the device|
 |isEncrypted|Boolean|Encryption status of the device|
+|isSharedDevice|Boolean|Shared iPad|
+|sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune_devicefe_sharedappledeviceuser.md) collection|All users on the shared Apple device|
 
 ## Relationships
 None
@@ -47,7 +49,17 @@ Here is a JSON representation of the resource.
   "wifiMac": "String",
   "operatingSystemLanguage": "String",
   "isSupervised": true,
-  "isEncrypted": true
+  "isEncrypted": true,
+  "isSharedDevice": true,
+  "sharedDeviceCachedUsers": [
+    {
+      "@odata.type": "microsoft.graph.sharedAppleDeviceUser",
+      "userPrincipalName": "String",
+      "dataToSync": true,
+      "dataQuota": 1024,
+      "dataUsed": 1024
+    }
+  ]
 }
 ```
 

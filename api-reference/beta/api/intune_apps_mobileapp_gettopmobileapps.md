@@ -13,11 +13,8 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /mobileApps/{mobileAppsId}/getTopMobileApps
-GET /deviceAppManagement/mobileApps/{mobileAppId}/getTopMobileApps
-GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app//getTopMobileApps
-GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app//getTopMobileApps
-GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app//getTopMobileApps
+GET /mobileApps//getTopMobileApps
+GET /deviceAppManagement/mobileApps//getTopMobileApps
 ```
 
 ## Request headers
@@ -44,13 +41,13 @@ If successful, this function returns a `200 OK` response code and a [mobileApp](
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}/getTopMobileApps
+GET https://graph.microsoft.com/beta/mobileApps//getTopMobileApps
 
 Content-type: application/json
-Content-length: 41
+Content-length: 47
 
 {
-  "status": "failed",
+  "status": "Status value",
   "count": 5
 }
 ```

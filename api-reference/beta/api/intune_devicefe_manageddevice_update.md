@@ -6,7 +6,7 @@ Update the properties of a [managedDevice](../resources/intune_devicefe_managedd
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,8 +14,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /managedDevices/{managedDevicesId}
-PATCH /users/{usersId}/managedDevices/{managedDeviceId}
-PATCH /managedDevices/{managedDevicesId}/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice/
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user//managedDevices/{managedDeviceId}
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Request headers
@@ -58,10 +59,14 @@ The following table shows the properties that are required when you create a [ma
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
 |deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `smsidConflict`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `resetCert`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Device category display name|
-|isSupervised|Boolean|Not yet documented|
+|isSupervised|Boolean|Device supervised status|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange.|
 |exchangeAccessState|String|The Access State of the device in Exchange. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
+|remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
+|isEncrypted|Boolean|Device encryption status|
+|model|String|Model of the device|
+|manufacturer|String|Manufacturer of the device|
 
 
 
@@ -74,7 +79,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 Content-type: application/json
-Content-length: 2176
+Content-length: 2642
 
 {
   "userId": "User Id value",
@@ -94,7 +99,17 @@ Content-length: 2176
     "wifiMac": "Wifi Mac value",
     "operatingSystemLanguage": "Operating System Language value",
     "isSupervised": true,
-    "isEncrypted": true
+    "isEncrypted": true,
+    "isSharedDevice": true,
+    "sharedDeviceCachedUsers": [
+      {
+        "@odata.type": "microsoft.graph.sharedAppleDeviceUser",
+        "userPrincipalName": "User Principal Name value",
+        "dataToSync": true,
+        "dataQuota": 9,
+        "dataUsed": 8
+      }
+    ]
   },
   "ownerType": "company",
   "deviceActionResults": [
@@ -131,7 +146,11 @@ Content-length: 2176
   "isSupervised": true,
   "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
   "exchangeAccessState": "unknown",
-  "exchangeAccessStateReason": "unknown"
+  "exchangeAccessStateReason": "unknown",
+  "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+  "isEncrypted": true,
+  "model": "Model value",
+  "manufacturer": "Manufacturer value"
 }
 ```
 
@@ -140,7 +159,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2277
+Content-Length: 2743
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -162,7 +181,17 @@ Content-Length: 2277
     "wifiMac": "Wifi Mac value",
     "operatingSystemLanguage": "Operating System Language value",
     "isSupervised": true,
-    "isEncrypted": true
+    "isEncrypted": true,
+    "isSharedDevice": true,
+    "sharedDeviceCachedUsers": [
+      {
+        "@odata.type": "microsoft.graph.sharedAppleDeviceUser",
+        "userPrincipalName": "User Principal Name value",
+        "dataToSync": true,
+        "dataQuota": 9,
+        "dataUsed": 8
+      }
+    ]
   },
   "ownerType": "company",
   "deviceActionResults": [
@@ -199,7 +228,11 @@ Content-Length: 2277
   "isSupervised": true,
   "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
   "exchangeAccessState": "unknown",
-  "exchangeAccessStateReason": "unknown"
+  "exchangeAccessStateReason": "unknown",
+  "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+  "isEncrypted": true,
+  "model": "Model value",
+  "manufacturer": "Manufacturer value"
 }
 ```
 
