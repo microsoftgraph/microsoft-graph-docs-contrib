@@ -6,7 +6,7 @@ List properties and relationships of the [sharedPCConfiguration](../resources/in
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1141
+Content-Length: 1165
 
 {
   "value": [
@@ -65,6 +65,7 @@ Content-Length: 1141
       "disableEduPolicies": true,
       "disablePowerPolicies": true,
       "disableSignInOnResume": true,
+      "enabled": true,
       "idleTimeBeforeSleepInSeconds": 12,
       "kioskAppDisplayName": "Kiosk App Display Name value",
       "kioskAppUserModelId": "Kiosk App User Model Id value",

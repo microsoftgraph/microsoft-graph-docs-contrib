@@ -6,7 +6,7 @@ List properties and relationships of the [detectedApp](../resources/intune_devic
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /detectedapps/
-GET /managedDevices/{managedDevicesId}/detectedApps/
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/
 ```
 
 ## Request headers

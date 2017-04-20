@@ -6,7 +6,7 @@ Read properties and relationships of the [windowsUpdateForBusinessConfiguration]
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1208
+Content-Length: 1247
 
 {
   "value": {
@@ -72,7 +72,8 @@ Content-Length: 1208
     "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
     "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
     "businessReadyUpdatesOnly": "all",
-    "restartMode": "onBatteryWithAtLeast40PercentCharge"
+    "restartMode": "onBatteryWithAtLeast40PercentCharge",
+    "previewBuildSetting": "allowed"
   }
 }
 ```
