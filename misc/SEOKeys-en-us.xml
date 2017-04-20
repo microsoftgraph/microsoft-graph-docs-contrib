@@ -1403,18 +1403,18 @@
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_deviceappmanagement_update"/>
       </Item>
       <Item text="Device install state" url="en-us/api-reference/beta/resources/intune_books_deviceinstallstate">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_update.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_update"/>
       </Item>
       <Item text="E-book group assignment" url="en-us/api-reference/beta/resources/intune_books_ebookgroupassignment">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_update.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_ebookgroupassignment_update"/>
       </Item>
       <Item text="Enterprise code signing certificate" url="/en-us/api-reference/beta/resources/intune_apps_enterprisecodesigningcertificate">
         <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_enterprisecodesigningcertificate_list"/>
@@ -1482,14 +1482,14 @@
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_update"/>
       </Item>
       <Item text="iOS VPP e-book" url="en-us/api-reference/beta/resources/intune_books_iosvppebook">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_update.md"/>
-        <Item text="List e-book group assignments" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_ebookgroupassignment.md"/>
-        <Item text="List device install states" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_deviceinstallstate.md"/>
-        <Item text="List user install state summaries" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_userinstallstatesummary.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_update"/>
+        <Item text="List e-book group assignments" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_ebookgroupassignment"/>
+        <Item text="List device install states" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_deviceinstallstate"/>
+        <Item text="List user install state summaries" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_userinstallstatesummary"/>
       </Item>
       <Item text="Managed device mobile app configuration device summary" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get"/>
@@ -1500,11 +1500,11 @@
       	<Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationusersummary_update"/>
       </Item>
       <Item text="Managed e-book" url="en-us/api-reference/beta/resources/intune_books_managedebook">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_managedebook_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_managedebook_get.md"/>
-        <Item text="List e-book group assignments" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_ebookgroupassignment.md"/>
-        <Item text="List device install states" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_deviceinstallstate.md"/>
-        <Item text="List user install state summaries" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_userinstallstatesummary.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_managedebook_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_managedebook_get"/>
+        <Item text="List e-book group assignments" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_ebookgroupassignment"/>
+        <Item text="List device install states" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_deviceinstallstate"/>
+        <Item text="List user install state summaries" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_userinstallstatesummary"/>
       </Item>
       <Item text="Mobile app configuration" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
         <Item text="Assign" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign"/>
@@ -1684,12 +1684,12 @@
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_userappinstallstatus_update"/>
       </Item>
       <Item text="User install state summary" url="en-us/api-reference/beta/resources/intune_books_userinstallstatesummary">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_update.md"/>
-        <Item text="List device install states" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_list_deviceinstallstate.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_update"/>
+        <Item text="List device install states" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_list_deviceinstallstate"/>
       </Item>
       <Item text="VPP licensing type" url="/en-us/api-reference/beta/resources/intune_apps_vpplicensingtype"/>
       <Item text="Wep app" url="/en-us/api-reference/beta/resources/intune_apps_webapp">
@@ -1964,18 +1964,18 @@
         <Item text="Get trusted root certificate" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcertificateprofilebase_get_androidforworktrustedrootcertificate"/>
       </Item>
       <Item text="Android for Work compliance policy" url="en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_update.md"/>
-        <Item text="List device compliance policy group assignments" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_devicecompliancepolicygroupassignment.md"/>
-        <Item text="List device compliance scheduled action for rules" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_devicecompliancescheduledactionforrule.md"/>
-        <Item text="List device compliance device statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_devicecompliancedevicestatus.md"/>
-        <Item text="List device compliance user statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_devicecomplianceuserstatus.md"/>
-        <Item text="Get device compliance device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_get_devicecompliancedeviceoverview.md"/>
-        <Item text="Get device compliance user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_get_devicecomplianceuseroverview.md"/>
-        <Item text="List setting state device summaries" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_settingstatedevicesummary.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_update"/>
+        <Item text="List device compliance policy group assignments" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_devicecompliancepolicygroupassignment"/>
+        <Item text="List device compliance scheduled action for rules" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_devicecompliancescheduledactionforrule"/>
+        <Item text="List device compliance device statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_devicecompliancedevicestatus"/>
+        <Item text="List device compliance user statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_devicecomplianceuserstatus"/>
+        <Item text="Get device compliance device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_get_devicecompliancedeviceoverview"/>
+        <Item text="Get device compliance user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_get_devicecomplianceuseroverview"/>
+        <Item text="List setting state device summaries" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcompliancepolicy_list_settingstatedevicesummary"/>
       </Item>
       <Item text="Android for Work custom configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkcustomconfiguration">
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkcustomconfiguration_create"/>
@@ -2280,7 +2280,7 @@
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancescheduledactionforrule_update"/>
       </Item>
       <Item text="Device compliance setting state" url="en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancesettingstate_list.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancesettingstate_list"/>
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancesettingstate_get"/>
       </Item>
       <Item text="Device compliance user overview" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview">
@@ -2704,7 +2704,7 @@
         <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus"/>
       </Item>
       <Item text="Setting state device summary" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list.md"/>
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list"/>
       	<Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_get"/>
       	<Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_create"/>
       	<Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_delete"/>
@@ -3071,30 +3071,30 @@
   	    <Item text="Get apple push notification certificate" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagement_get_applepushnotificationcertificate"/>
       </Item>
       <Item text="Device management script" url="en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscript">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_update.md"/>
-        <Item text="Assign action" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_assign.md"/>
-        <Item text="List device management script group assignments" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list_devicemanagementscriptgroupassignment.md"/>
-        <Item text="List device management script states" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list_devicemanagementscriptstate.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_update"/>
+        <Item text="Assign action" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_assign"/>
+        <Item text="List device management script group assignments" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list_devicemanagementscriptgroupassignment"/>
+        <Item text="List device management script states" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list_devicemanagementscriptstate"/>
       </Item>
       <Item text="Device management script group assignment" url="en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptgroupassignment">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_update.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_update"/>
       </Item>
       <Item text="Device management script state" url="en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptstate">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_update.md"/>
-        <Item text="Get managedDevice" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get_manageddevice.md"/>
-        <Item text="Get user" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get_user.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_update"/>
+        <Item text="Get managedDevice" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get_manageddevice"/>
+        <Item text="Get user" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get_user"/>
       </Item>
       <Item text="Managed device" url="/en-us/api-reference/beta/resources/intune_devicefe_manageddevice">
         <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_list"/>
@@ -3138,16 +3138,16 @@
         <Item text="List managed devices" url="/en-us/api-reference/beta/api/intune_devicefe_user_list_manageddevice"/>
       </Item>
       <Item text="Windows management app" url="en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapp">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_list_windowsmanagementapphealthstate.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_get.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_update.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_list_windowsmanagementapphealthstate"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_get"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_update"/>
       </Item>
       <Item text="Windows management app health state" url="en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapphealthstate">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_list.md"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_get.md"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_create.md"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_delete.md"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_update.md"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_update"/>
       </Item>
     </Item>
     <Item text="App protection" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
