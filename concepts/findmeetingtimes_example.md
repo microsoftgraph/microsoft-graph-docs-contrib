@@ -31,11 +31,11 @@ require 100% attendance. The following shows the users' free/busy schedule.
 
 ### Organizer's calendar
 
-![The organizer's work calendar for April 17-21 showing free-busy times](../findmeetingtimes_organizer_free_busy.jpg "The organizer's work calendar for April 17-21 showing free-busy times")
+![The organizer's work calendar for April 17-21 showing free-busy times](./images/findmeetingtimes_organizer_free_busy.jpg "The organizer's work calendar for April 17-21 showing free-busy times")
 
 ### Attendee's calendar
 
-![The attendee's work calendar for April 17-21 showing free-busy times](../findmeetingtimes_attendee_free_busy.jpg "The attendee's work calendar for April 17-21 showing free-busy times")
+![The attendee's work calendar for April 17-21 showing free-busy times](./images/findmeetingtimes_attendee_free_busy.jpg "The attendee's work calendar for April 17-21 showing free-busy times")
 
 The example makes 2 calls to **findMeetingTimes**:
 
