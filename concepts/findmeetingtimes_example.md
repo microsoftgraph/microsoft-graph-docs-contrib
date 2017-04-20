@@ -31,11 +31,11 @@ require 100% attendance. The following shows the users' free/busy schedule.
 
 ### Organizer's calendar
 
-![The organizer's work calendar for April 17-21 showing free-busy times](findmeetingtimes_organizer_free_busy.jpg "The organizer's work calendar for April 17-21 showing free-busy times")
+![The organizer's work calendar for April 17-21 showing free-busy times](../findmeetingtimes_organizer_free_busy.jpg "The organizer's work calendar for April 17-21 showing free-busy times")
 
 ### Attendee's calendar
 
-![The attendee's work calendar for April 17-21 showing free-busy times](findmeetingtimes_attendee_free_busy.jpg "The organizer's work calendar for April 17-21 showing free-busy times")
+![The attendee's work calendar for April 17-21 showing free-busy times](../findmeetingtimes_attendee_free_busy.jpg "The attendee's work calendar for April 17-21 showing free-busy times")
 
 The example makes 2 calls to **findMeetingTimes**:
 
@@ -243,5 +243,6 @@ by specifying the **minimumAttendeePercentage** optional parameter. Learn more a
 and other [parameters](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body), and apply them as appropriate for meetings of larger sizes.
 
 After getting meeting time suggestions, you may want to:
+
 - [Create an event and send it as a meeting request](../api-reference/v1.0/api/user_post_events.md) 
 - [Add an attachment](../api-reference/v1.0/api/event_post_attachments.md) to the event
