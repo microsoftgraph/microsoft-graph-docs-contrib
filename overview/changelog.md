@@ -8,9 +8,15 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Change|Beta|Removed properties from application and servicePrincipal resource types: knownClientApplications and publicClient  |
-|Change|Beta|Renamed properties from application and servicePrincipal resource types: appId to id, identifierUris to applicationAliases, availableToOtherOrganizations to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, replyUrls to redirectUrls |
-|Change|Beta|API responses that return application and servicePrincipal resource types are restructured and some properties are grouped. Affected APIs include  |
+|Change|Beta| [application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/application) removed properties: knownClientApplications and publicClient |
+|Change|Beta| [application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/application) renamed properties: appId to id, identifierUris to applicationAliases, availableToOtherOrganizations to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, replyUrls to redirectUrls|
+|Addition|Beta|Added new complex types:<br/>[api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api)<br/>
+[informationalurl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalurl)<br/>
+[installedclient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient)<br/>
+[preauthorizedapplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication)<br/>
+[web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web)<br/> 
+[permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope.)<br />
+|
 
 ### Add onPremises properties to user entity
 
