@@ -6,7 +6,7 @@ Create a new [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_io
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create a ios
 |cellularBlockDataRoaming|Boolean|Indicates whether or not to block data roaming.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|Indicates whether or not to block global background fetch while roaming.|
 |cellularBlockPerAppDataModification|Boolean|Indicates whether or not to allow changes to cellular app data usage settings when the device is in supervised mode.|
+|cellularBlockPersonalHotspot|Boolean|Indicates whether or not to block Personal Hotspot.|
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |certificatesBlockUntrustedTlsCertificates|Boolean|Indicates whether or not to block untrusted TLS certificates.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).|
@@ -130,6 +131,7 @@ The following table shows the properties that are required when you create a ios
 |messagesBlocked|Boolean|Indicates whether or not to block the user from using the Messages app on the supervised device.|
 |notificationsBlockSettingsModification|Boolean|Indicates whether or not to allow notifications settings modification (iOS 9.3 and later).|
 |passcodeBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
+|passcodeBlockFingerprintModification|Boolean|Block modification of registered Touch ID fingerprints when in supervised mode.|
 |passcodeBlockModification|Boolean|Indicates whether or not to allow passcode modification on the supervised device (iOS 9.0 and later).|
 |passcodeBlockSimple|Boolean|Indicates whether or not to block simple passcodes.|
 |passcodeExpirationDays|Int32|Number of days before the passcode expires.|
@@ -170,7 +172,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 7138
+Content-length: 7228
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -215,6 +217,7 @@ Content-length: 7138
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
+  "cellularBlockPersonalHotspot": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
@@ -336,6 +339,7 @@ Content-length: 7138
   "messagesBlocked": true,
   "notificationsBlockSettingsModification": true,
   "passcodeBlockFingerprintUnlock": true,
+  "passcodeBlockFingerprintModification": true,
   "passcodeBlockModification": true,
   "passcodeBlockSimple": true,
   "passcodeExpirationDays": 6,
@@ -376,7 +380,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7246
+Content-Length: 7336
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -423,6 +427,7 @@ Content-Length: 7246
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
+  "cellularBlockPersonalHotspot": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
@@ -544,6 +549,7 @@ Content-Length: 7246
   "messagesBlocked": true,
   "notificationsBlockSettingsModification": true,
   "passcodeBlockFingerprintUnlock": true,
+  "passcodeBlockFingerprintModification": true,
   "passcodeBlockModification": true,
   "passcodeBlockSimple": true,
   "passcodeExpirationDays": 6,

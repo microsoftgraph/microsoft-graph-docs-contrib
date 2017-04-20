@@ -6,7 +6,7 @@ Read properties and relationships of the [androidGeneralDeviceConfiguration](../
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -94,7 +94,7 @@ Content-Length: 2347
     "powerOffBlocked": true,
     "factoryResetBlocked": true,
     "screenCaptureBlocked": true,
-    "deviceSharingBlocked": true,
+    "deviceSharingAllowed": true,
     "storageBlockGoogleBackup": true,
     "storageBlockRemovableStorage": true,
     "storageRequireDeviceEncryption": true,

@@ -6,7 +6,7 @@ Not yet documented
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementManagedDevices.PriviligedOperation.All; DeviceManagementApps.ReadWrite.All*
+*DeviceManagementManagedDevices.PriviligedOperation.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,8 +14,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /managedDevices/{managedDevicesId}/rebootNow
-POST /users/{usersId}/managedDevices/{managedDeviceId}/rebootNow
-POST /managedDevices/{managedDevicesId}/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/rebootNow
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//rebootNow
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user//managedDevices/{managedDeviceId}/rebootNow
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/rebootNow
 ```
 
 ## Request headers

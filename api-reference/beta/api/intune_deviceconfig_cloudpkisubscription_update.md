@@ -6,14 +6,14 @@ Update the properties of a [cloudPkiSubscription](../resources/intune_deviceconf
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /cloudPkiSubscriptions/{cloudPkiSubscriptionsId}
+PATCH /deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/cloudPkiSubscriptions/{cloudPkiSubscriptionsId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
 Content-type: application/json
 Content-length: 749
 
