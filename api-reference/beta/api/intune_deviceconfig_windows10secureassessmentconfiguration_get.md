@@ -19,7 +19,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -57,9 +57,9 @@ Content-Length: 574
     "version": 7,
     "launchUri": "Launch Uri value",
     "configurationAccount": "Configuration Account value",
-    "blockPrinting": true,
-    "blockScreenCapture": true,
-    "blockTextSuggestion": true
+    "allowPrinting": true,
+    "allowScreenCapture": true,
+    "allowTextSuggestion": true
   }
 }
 ```

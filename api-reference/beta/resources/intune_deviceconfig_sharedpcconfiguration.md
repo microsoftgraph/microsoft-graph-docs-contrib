@@ -19,6 +19,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_sharedpcconfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_sharedpcconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_sharedpcconfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_sharedpcconfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,9 +34,10 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |allowedAccounts|String|Indicates which type of accounts are allowed to use on a shared PC. Possible values are: `guest`, `domain`.|
 |allowLocalStorage|Boolean|Specifies whether local storage is allowed on a shared PC.|
 |disableAccountManager|Boolean|Disables the account manager for shared PC mode.|
-|disableEduPolicies|Boolean|Specifies whether the default shared PC education environment policies should be disabled.|
+|disableEduPolicies|Boolean|Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true.|
 |disablePowerPolicies|Boolean|Specifies whether the default shared PC power policies should be disabled.|
 |disableSignInOnResume|Boolean|Disables the requirement to sign in whenever the device wakes up from sleep mode.|
+|enabled|Boolean|Enables shared PC mode and applies the shared pc policies.|
 |idleTimeBeforeSleepInSeconds|Int32|Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring.|
 |kioskAppDisplayName|String|Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.|
 |kioskAppUserModelId|String|Specifies the application user model ID of the app to use with assigned access.|
@@ -49,6 +51,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -80,6 +83,7 @@ Here is a JSON representation of the resource.
   "disableEduPolicies": true,
   "disablePowerPolicies": true,
   "disableSignInOnResume": true,
+  "enabled": true,
   "idleTimeBeforeSleepInSeconds": 1024,
   "kioskAppDisplayName": "String",
   "kioskAppUserModelId": "String",

@@ -14,8 +14,6 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/teacherRootCertificates/{iosTrustedRootCertificateId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/studentRootCertificates/{iosTrustedRootCertificateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/{iosTrustedRootCertificateId}
 ```
 

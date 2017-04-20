@@ -14,8 +14,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedAppPolicies/
-GET /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/
-GET /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/
+GET /deviceAppManagement/managedAppPolicies/
+GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/
+GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/
 ```
 
 ## Request headers
@@ -42,7 +43,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1553
+Content-Length: 1887
 
 {
   "value": [
@@ -78,6 +79,11 @@ Content-Length: 1553
       "contactSyncBlocked": true,
       "printBlocked": true,
       "fingerprintBlocked": true,
+      "disableAppPinIfDevicePinIsSet": true,
+      "minimumRequiredOsVersion": "Minimum Required Os Version value",
+      "minimumWarningOsVersion": "Minimum Warning Os Version value",
+      "minimumRequiredAppVersion": "Minimum Required App Version value",
+      "minimumWarningAppVersion": "Minimum Warning App Version value",
       "targetedSecurityGroupsCount": 11,
       "targetedSecurityGroupIds": [
         "Targeted Security Group Ids value"

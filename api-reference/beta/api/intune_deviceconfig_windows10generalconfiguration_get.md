@@ -19,7 +19,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5132
+Content-Length: 7914
 
 {
   "value": {
@@ -55,6 +55,17 @@ Content-Length: 5132
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "networkProxyApplySettingsDeviceWide": true,
+    "networkProxyDisableAutoDetect": true,
+    "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
+    "networkProxyServer": {
+      "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+      "address": "Address value",
+      "exceptions": [
+        "Exceptions value"
+      ],
+      "useForLocalAddresses": true
+    },
     "accountsBlockAddingNonMicrosoftAccountEmail": true,
     "antiTheftModeBlocked": true,
     "automaticUpdateMode": "notifyDownload",
@@ -63,6 +74,7 @@ Content-Length: 5132
     "bluetoothBlocked": true,
     "bluetoothBlockAdvertising": true,
     "bluetoothBlockDiscoverableMode": true,
+    "bluetoothDeviceName": "Bluetooth Device Name value",
     "cameraBlocked": true,
     "cellularBlockDataWhenRoaming": true,
     "cellularBlockVpn": true,
@@ -103,6 +115,7 @@ Content-Length: 5132
     "deviceManagementBlockFactoryResetOnMobile": true,
     "deviceManagementBlockManualUnenroll": true,
     "diagnosticsDataSubmissionMode": "none",
+    "oneDriveDisableFileSync": true,
     "edgeBlockAutofill": true,
     "edgeBlocked": true,
     "edgeCookiePolicy": "allow",
@@ -112,12 +125,16 @@ Content-Length: 5132
     "edgeBlockInPrivateBrowsing": true,
     "edgeBlockJavaScript": true,
     "edgeBlockPasswordManager": true,
+    "safeSearchFilter": "strict",
     "edgeBlockPopups": true,
     "edgeBlockSearchSuggestions": true,
     "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
     "edgeRequireSmartScreen": true,
     "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
     "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
+    "edgeSearchEngine": {
+      "@odata.type": "microsoft.graph.edgeSearchEngineBase"
+    },
     "edgeHomepageUrls": [
       "Edge Homepage Urls value"
     ],
@@ -133,6 +150,16 @@ Content-Length: 5132
     "settingsBlockChangeRegion": true,
     "settingsBlockChangeLanguage": true,
     "settingsBlockChangePowerSleep": true,
+    "settingsBlockSettingsApp": true,
+    "settingsBlockSystemPage": true,
+    "settingsBlockDevicesPage": true,
+    "settingsBlockNetworkInternetPage": true,
+    "settingsBlockPersonalizationPage": true,
+    "settingsBlockAccountsPage": true,
+    "settingsBlockTimeLanguagePage": true,
+    "settingsBlockEaseOfAccessPage": true,
+    "settingsBlockPrivacyPage": true,
+    "settingsBlockUpdateSecurityPage": true,
     "locationServicesBlocked": true,
     "lockScreenBlockActionCenterNotifications": true,
     "microsoftAccountBlocked": true,
@@ -157,6 +184,10 @@ Content-Length: 5132
     "wiFiBlockAutomaticConnectHotspots": true,
     "wiFiBlocked": true,
     "wiFiBlockManualConfiguration": true,
+    "wiFiScanInterval": 0,
+    "wirelessDisplayBlockProjectionToThisDevice": true,
+    "wirelessDisplayBlockUserInputFromReceiver": true,
+    "wirelessDisplayRequirePinForPairing": true,
     "windowsStoreBlocked": true,
     "appsAllowTrustedAppsSideloading": "blocked",
     "windowsStoreBlockAutoUpdate": true,
@@ -166,7 +197,37 @@ Content-Length: 5132
     "windowsStoreEnablePrivateStoreOnly": true,
     "storageRestrictAppDataToSystemVolume": true,
     "storageRestrictAppInstallToSystemVolume": true,
-    "gameDvrBlocked": true
+    "gameDvrBlocked": true,
+    "experienceBlockDeviceDiscovery": true,
+    "experienceBlockErrorDialogWhenNoSIM": true,
+    "experienceBlockTaskSwitcher": true,
+    "experienceBlockWindowsSpotlight": true,
+    "experienceBlockWindowsTips": true,
+    "experienceBlockConsumerSpecificFeatures": true,
+    "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s",
+    "startMenuMode": "fullScreen",
+    "logonBlockFastUserSwitching": true,
+    "startBlockUnpinningAppsFromTaskbar": true,
+    "startMenuPinnedFolderDocuments": "hide",
+    "startMenuPinnedFolderDownloads": "hide",
+    "startMenuPinnedFolderFileExplorer": "hide",
+    "startMenuPinnedFolderHomeGroup": "hide",
+    "startMenuPinnedFolderMusic": "hide",
+    "startMenuPinnedFolderNetwork": "hide",
+    "startMenuPinnedFolderPersonalFolder": "hide",
+    "startMenuPinnedFolderPictures": "hide",
+    "startMenuPinnedFolderSettings": "hide",
+    "startMenuPinnedFolderVideos": "hide",
+    "startMenuAppListVisibility": "collapse",
+    "startMenuHideFrequentlyUsedApps": true,
+    "startMenuHideRecentJumpLists": true,
+    "startMenuHideRecentlyAddedApps": true,
+    "startMenuHideRestartOptions": true,
+    "startMenuHideUserTile": true,
+    "startMenuHidePowerButton": true,
+    "startMenuLayoutEdgeAssetsXml": "c3RhcnRNZW51TGF5b3V0RWRnZUFzc2V0c1htbA==",
+    "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
+    "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/"
   }
 }
 ```

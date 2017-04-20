@@ -49,6 +49,8 @@ The following table shows the properties that are required when you create a [wi
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|String|Business ready updates only or regular updates allowed too Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
+|restartMode|String|Set restart mode allowed level to power or battery Possible values are: `userDefined`, `onBatteryWithAtLeast40PercentCharge`, `connectedToPowerSupply`.|
+|previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 
 
 
@@ -61,7 +63,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 898
+Content-length: 992
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -84,7 +86,9 @@ Content-length: 898
   "featureUpdatesPaused": true,
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
-  "businessReadyUpdatesOnly": "all"
+  "businessReadyUpdatesOnly": "all",
+  "restartMode": "onBatteryWithAtLeast40PercentCharge",
+  "previewBuildSetting": "allowed"
 }
 ```
 
@@ -93,7 +97,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1082
+Content-Length: 1176
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -119,7 +123,9 @@ Content-Length: 1082
   "featureUpdatesPaused": true,
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
-  "businessReadyUpdatesOnly": "all"
+  "businessReadyUpdatesOnly": "all",
+  "restartMode": "onBatteryWithAtLeast40PercentCharge",
+  "previewBuildSetting": "allowed"
 }
 ```
 

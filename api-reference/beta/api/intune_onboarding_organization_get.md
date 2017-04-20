@@ -17,7 +17,7 @@ GET /organization/{organizationId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4010
+Content-Length: 4580
 
 {
   "value": {
@@ -63,27 +63,37 @@ Content-Length: 4010
       "iosRestrictions": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
         "platformBlocked": true,
-        "personalDeviceEnrollmentBlocked": true
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value"
       },
       "windowsRestrictions": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
         "platformBlocked": true,
-        "personalDeviceEnrollmentBlocked": true
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value"
       },
       "windowsMobileRestrictions": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
         "platformBlocked": true,
-        "personalDeviceEnrollmentBlocked": true
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value"
       },
       "androidRestrictions": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
         "platformBlocked": true,
-        "personalDeviceEnrollmentBlocked": true
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value"
       },
       "macRestrictions": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
         "platformBlocked": true,
-        "personalDeviceEnrollmentBlocked": true
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value"
       }
     },
     "defaultDeviceEnrollmentWindowsHelloForBusinessSettings": {

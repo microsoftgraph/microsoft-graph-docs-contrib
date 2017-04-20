@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7869
+Content-Length: 8165
 
 {
   "value": [
@@ -60,8 +60,14 @@ Content-Length: 7869
       "appleWatchBlockPairing": true,
       "appleWatchForceWristDetection": true,
       "appleNewsBlocked": true,
-      "appsSingleAppModeBundleIds": [
-        "Apps Single App Mode Bundle Ids value"
+      "appsSingleAppModeList": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
       ],
       "appsVisibilityList": [
         {
@@ -83,6 +89,7 @@ Content-Length: 7869
       "cellularBlockDataRoaming": true,
       "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
       "cellularBlockPerAppDataModification": true,
+      "cellularBlockPersonalHotspot": true,
       "cellularBlockVoiceRoaming": true,
       "certificatesBlockUntrustedTlsCertificates": true,
       "classroomAppBlockRemoteScreenObservation": true,
@@ -204,6 +211,7 @@ Content-Length: 7869
       "messagesBlocked": true,
       "notificationsBlockSettingsModification": true,
       "passcodeBlockFingerprintUnlock": true,
+      "passcodeBlockFingerprintModification": true,
       "passcodeBlockModification": true,
       "passcodeBlockSimple": true,
       "passcodeExpirationDays": 6,

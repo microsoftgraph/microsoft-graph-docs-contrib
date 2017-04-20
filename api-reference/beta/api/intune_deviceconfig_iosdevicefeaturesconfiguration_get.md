@@ -19,7 +19,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2372
+Content-Length: 2898
 
 {
   "value": {
@@ -63,6 +63,17 @@ Content-Length: 2372
       }
     ],
     "assetTagTemplate": "Asset Tag Template value",
+    "contentFilterSettings": {
+      "@odata.type": "microsoft.graph.iosWebContentFilterSpecificWebsitesAccess",
+      "specificWebsitesOnly": [
+        {
+          "@odata.type": "microsoft.graph.iosBookmark",
+          "url": "Url value",
+          "bookmarkFolder": "Bookmark Folder value",
+          "displayName": "Display Name value"
+        }
+      ]
+    },
     "lockScreenFootnote": "Lock Screen Footnote value",
     "homeScreenDockIcons": [
       {
@@ -71,6 +82,7 @@ Content-Length: 2372
         "pages": [
           {
             "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+            "displayName": "Display Name value",
             "apps": [
               {
                 "@odata.type": "microsoft.graph.iosHomeScreenApp",
@@ -85,6 +97,7 @@ Content-Length: 2372
     "homeScreenPages": [
       {
         "@odata.type": "microsoft.graph.iosHomeScreenPage",
+        "displayName": "Display Name value",
         "icons": [
           {
             "@odata.type": "microsoft.graph.iosHomeScreenFolder",
@@ -92,6 +105,7 @@ Content-Length: 2372
             "pages": [
               {
                 "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+                "displayName": "Display Name value",
                 "apps": [
                   {
                     "@odata.type": "microsoft.graph.iosHomeScreenApp",

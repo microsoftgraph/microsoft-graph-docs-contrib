@@ -14,7 +14,6 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
-PATCH /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}/deviceCategory/
 ```
 
 ## Request headers

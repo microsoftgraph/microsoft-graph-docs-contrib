@@ -14,7 +14,6 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
-DELETE /detectedapps/{detectedappsId}/managedDevices/{managedDeviceId}/deviceCategory/
 ```
 
 ## Request headers

@@ -19,7 +19,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupA
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 932
+Content-Length: 978
 
 {
   "value": {
@@ -67,7 +67,8 @@ Content-Length: 932
     "osMaximumVersion": "Os Maximum Version value",
     "securityBlockJailbrokenDevices": true,
     "deviceThreatProtectionEnabled": true,
-    "deviceThreatProtectionRequiredSecurityLevel": "low"
+    "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "managedEmailProfileRequired": true
   }
 }
 ```

@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
+POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a `201 Created` response code and a [termsAnd
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
+POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/
 Content-type: application/json
 Content-length: 211
 

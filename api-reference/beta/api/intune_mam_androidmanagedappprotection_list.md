@@ -13,9 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/
-GET /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/
-GET /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/
+GET /deviceAppManagement/androidManagedAppProtections/
 ```
 
 ## Request headers
@@ -34,7 +32,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/
+GET https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections/
 ```
 
 ### Response
@@ -42,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1620
+Content-Length: 1954
 
 {
   "value": [
@@ -78,6 +76,11 @@ Content-Length: 1620
       "contactSyncBlocked": true,
       "printBlocked": true,
       "fingerprintBlocked": true,
+      "disableAppPinIfDevicePinIsSet": true,
+      "minimumRequiredOsVersion": "Minimum Required Os Version value",
+      "minimumWarningOsVersion": "Minimum Warning Os Version value",
+      "minimumRequiredAppVersion": "Minimum Required App Version value",
+      "minimumWarningAppVersion": "Minimum Warning App Version value",
       "targetedSecurityGroupsCount": 11,
       "targetedSecurityGroupIds": [
         "Targeted Security Group Ids value"

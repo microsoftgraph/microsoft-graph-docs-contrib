@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /organization/{organizationId}/sideLoadingKeys/
+POST /deviceAppManagement/sideLoadingKeys/
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ If successful, this method returns a `201 Created` response code and a [sideLoad
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/sideLoadingKeys/
+POST https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/
 Content-type: application/json
 Content-length: 246
 

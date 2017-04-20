@@ -19,7 +19,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1149
+Content-Length: 1247
 
 {
   "value": {
@@ -71,7 +71,9 @@ Content-Length: 1149
     "featureUpdatesPaused": true,
     "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
     "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
-    "businessReadyUpdatesOnly": "all"
+    "businessReadyUpdatesOnly": "all",
+    "restartMode": "onBatteryWithAtLeast40PercentCharge",
+    "previewBuildSetting": "allowed"
   }
 }
 ```

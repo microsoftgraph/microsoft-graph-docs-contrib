@@ -54,9 +54,9 @@ Content-Length: 612
       "version": 7,
       "launchUri": "Launch Uri value",
       "configurationAccount": "Configuration Account value",
-      "blockPrinting": true,
-      "blockScreenCapture": true,
-      "blockTextSuggestion": true
+      "allowPrinting": true,
+      "allowScreenCapture": true,
+      "allowTextSuggestion": true
     }
   ]
 }

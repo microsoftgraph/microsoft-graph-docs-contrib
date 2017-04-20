@@ -13,6 +13,7 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+POST /mobileApps/
 POST /deviceAppManagement/mobileApps/
 ```
 
@@ -42,9 +43,10 @@ The following table shows the properties that are required when you create a win
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |usedLicenseCount|Int32|The number of Windows Store for Business licenses in use.|
 |totalLicenseCount|Int32|The total number of Windows Store for Business licenses.|
+|productKey|String|The app product key|
+|licenseType|String|The app license type Possible values are: `offline`, `online`.|
 
 
 
@@ -55,9 +57,9 @@ If successful, this method returns a `201 Created` response code and a [windowsS
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+POST https://graph.microsoft.com/beta/mobileApps/
 Content-type: application/json
-Content-length: 972
+Content-length: 760
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreForBusinessApp",
@@ -77,17 +79,10 @@ Content-length: 972
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "usedLicenseCount": 0,
-  "totalLicenseCount": 1
+  "totalLicenseCount": 1,
+  "productKey": "Product Key value",
+  "licenseType": "online"
 }
 ```
 
@@ -96,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1080
+Content-Length: 868
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreForBusinessApp",
@@ -118,17 +113,10 @@ Content-Length: 1080
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
-  "installSummary": {
-    "@odata.type": "microsoft.graph.mobileAppInstallSummary",
-    "installedDeviceCount": 4,
-    "failedDeviceCount": 1,
-    "notInstalledDeviceCount": 7,
-    "installedUserCount": 2,
-    "failedUserCount": 15,
-    "notInstalledUserCount": 5
-  },
   "usedLicenseCount": 0,
-  "totalLicenseCount": 1
+  "totalLicenseCount": 1,
+  "productKey": "Product Key value",
+  "licenseType": "online"
 }
 ```
 

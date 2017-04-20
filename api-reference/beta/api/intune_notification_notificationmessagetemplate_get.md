@@ -17,7 +17,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 394
+Content-Length: 341
 
 {
   "value": {
@@ -50,7 +50,6 @@ Content-Length: 394
     "id": "e1db399b-399b-e1db-9b39-dbe19b39dbe1",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
-    "fromEmailAddress": "From Email Address value",
     "defaultLocale": "Default Locale value",
     "brandingOptions": "includeCompanyLogo"
   }

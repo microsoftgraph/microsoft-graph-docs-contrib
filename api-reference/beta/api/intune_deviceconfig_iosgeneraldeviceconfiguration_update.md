@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create a [io
 |appleWatchBlockPairing|Boolean|Indicates whether or not to allow Apple Watch pairing when the device is in supervised mode (iOS 9.0 and later).|
 |appleWatchForceWristDetection|Boolean|Indicates whether or not to force a paired Apple Watch to use Wrist Detection (iOS 8.2 and later).|
 |appleNewsBlocked|Boolean|Indicates whether or not to block the user from using News when the device is in supervised mode (iOS 9.0 and later).|
-|appsSingleAppModeBundleIds|String collection|Gets or sets the list of app bundle IDs allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later.|
+|appsSingleAppModeList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Gets or sets the list of iOS apps allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later.|
 |appsVisibilityList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later).|
 |appsVisibilityListType|String|Type of list that is in the AppsVisibilityList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Boolean|Indicates whether or not to block the automatic downloading of apps purchased on other devices when the device is in supervised mode (iOS 9.0 and later).|
@@ -57,6 +57,7 @@ The following table shows the properties that are required when you create a [io
 |cellularBlockDataRoaming|Boolean|Indicates whether or not to block data roaming.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|Indicates whether or not to block global background fetch while roaming.|
 |cellularBlockPerAppDataModification|Boolean|Indicates whether or not to allow changes to cellular app data usage settings when the device is in supervised mode.|
+|cellularBlockPersonalHotspot|Boolean|Indicates whether or not to block Personal Hotspot.|
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |certificatesBlockUntrustedTlsCertificates|Boolean|Indicates whether or not to block untrusted TLS certificates.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).|
@@ -132,6 +133,7 @@ The following table shows the properties that are required when you create a [io
 |messagesBlocked|Boolean|Indicates whether or not to block the user from using the Messages app on the supervised device.|
 |notificationsBlockSettingsModification|Boolean|Indicates whether or not to allow notifications settings modification (iOS 9.3 and later).|
 |passcodeBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
+|passcodeBlockFingerprintModification|Boolean|Block modification of registered Touch ID fingerprints when in supervised mode.|
 |passcodeBlockModification|Boolean|Indicates whether or not to allow passcode modification on the supervised device (iOS 9.0 and later).|
 |passcodeBlockSimple|Boolean|Indicates whether or not to block simple passcodes.|
 |passcodeExpirationDays|Int32|Number of days before the passcode expires.|
@@ -172,7 +174,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6896
+Content-length: 7160
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -187,8 +189,14 @@ Content-length: 6896
   "appleWatchBlockPairing": true,
   "appleWatchForceWristDetection": true,
   "appleNewsBlocked": true,
-  "appsSingleAppModeBundleIds": [
-    "Apps Single App Mode Bundle Ids value"
+  "appsSingleAppModeList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
   ],
   "appsVisibilityList": [
     {
@@ -210,6 +218,7 @@ Content-length: 6896
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
+  "cellularBlockPersonalHotspot": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
@@ -331,6 +340,7 @@ Content-length: 6896
   "messagesBlocked": true,
   "notificationsBlockSettingsModification": true,
   "passcodeBlockFingerprintUnlock": true,
+  "passcodeBlockFingerprintModification": true,
   "passcodeBlockModification": true,
   "passcodeBlockSimple": true,
   "passcodeExpirationDays": 6,
@@ -371,7 +381,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7072
+Content-Length: 7336
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -389,8 +399,14 @@ Content-Length: 7072
   "appleWatchBlockPairing": true,
   "appleWatchForceWristDetection": true,
   "appleNewsBlocked": true,
-  "appsSingleAppModeBundleIds": [
-    "Apps Single App Mode Bundle Ids value"
+  "appsSingleAppModeList": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
   ],
   "appsVisibilityList": [
     {
@@ -412,6 +428,7 @@ Content-Length: 7072
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
+  "cellularBlockPersonalHotspot": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
@@ -533,6 +550,7 @@ Content-Length: 7072
   "messagesBlocked": true,
   "notificationsBlockSettingsModification": true,
   "passcodeBlockFingerprintUnlock": true,
+  "passcodeBlockFingerprintModification": true,
   "passcodeBlockModification": true,
   "passcodeBlockSimple": true,
   "passcodeExpirationDays": 6,

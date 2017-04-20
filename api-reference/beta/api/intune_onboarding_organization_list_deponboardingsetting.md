@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 489
+Content-Length: 572
 
 {
   "value": [
@@ -51,7 +51,9 @@ Content-Length: 489
       "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
-      "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00"
+      "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00",
+      "shareTokenWithSchoolDataSyncService": true,
+      "lastSyncErrorCode": 1
     }
   ]
 }

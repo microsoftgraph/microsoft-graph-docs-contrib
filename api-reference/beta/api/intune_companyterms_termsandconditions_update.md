@@ -14,8 +14,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /termsAndConditions/{termsAndConditionsId}
-PATCH /termsAndConditions/{termsAndConditionsId}/groupAssignments/{termsAndConditionsGroupAssignmentId}/termsAndConditions/
-PATCH /termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}/termsAndConditions/
+PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}
+PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments/{termsAndConditionsGroupAssignmentId}/termsAndConditions/
+PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}/termsAndConditions/
 ```
 
 ## Request headers

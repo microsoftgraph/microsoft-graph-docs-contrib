@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 986
+Content-Length: 1034
 
 {
   "value": [
@@ -64,7 +64,8 @@ Content-Length: 986
       "osMaximumVersion": "Os Maximum Version value",
       "securityBlockJailbrokenDevices": true,
       "deviceThreatProtectionEnabled": true,
-      "deviceThreatProtectionRequiredSecurityLevel": "low"
+      "deviceThreatProtectionRequiredSecurityLevel": "secured",
+      "managedEmailProfileRequired": true
     }
   ]
 }

@@ -19,7 +19,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7473
+Content-Length: 7753
 
 {
   "value": {
@@ -63,8 +63,14 @@ Content-Length: 7473
     "appleWatchBlockPairing": true,
     "appleWatchForceWristDetection": true,
     "appleNewsBlocked": true,
-    "appsSingleAppModeBundleIds": [
-      "Apps Single App Mode Bundle Ids value"
+    "appsSingleAppModeList": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
     ],
     "appsVisibilityList": [
       {
@@ -86,6 +92,7 @@ Content-Length: 7473
     "cellularBlockDataRoaming": true,
     "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
     "cellularBlockPerAppDataModification": true,
+    "cellularBlockPersonalHotspot": true,
     "cellularBlockVoiceRoaming": true,
     "certificatesBlockUntrustedTlsCertificates": true,
     "classroomAppBlockRemoteScreenObservation": true,
@@ -207,6 +214,7 @@ Content-Length: 7473
     "messagesBlocked": true,
     "notificationsBlockSettingsModification": true,
     "passcodeBlockFingerprintUnlock": true,
+    "passcodeBlockFingerprintModification": true,
     "passcodeBlockModification": true,
     "passcodeBlockSimple": true,
     "passcodeExpirationDays": 6,

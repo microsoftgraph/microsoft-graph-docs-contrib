@@ -13,13 +13,11 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedAppPolicies/{managedAppPoliciesId}
-GET /managedAppRegistrations/{managedAppRegistrationsId}/appliedPolicies/{managedAppPolicyId}
-GET /managedAppRegistrations/{managedAppRegistrationsId}/intendedPolicies/{managedAppPolicyId}
+GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -36,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [iosManagedAppPr
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ```
 
 ### Response
@@ -44,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1516
+Content-Length: 1912
 
 {
   "value": {
@@ -79,11 +77,17 @@ Content-Length: 1516
     "contactSyncBlocked": true,
     "printBlocked": true,
     "fingerprintBlocked": true,
+    "disableAppPinIfDevicePinIsSet": true,
+    "minimumRequiredOsVersion": "Minimum Required Os Version value",
+    "minimumWarningOsVersion": "Minimum Warning Os Version value",
+    "minimumRequiredAppVersion": "Minimum Required App Version value",
+    "minimumWarningAppVersion": "Minimum Warning App Version value",
     "targetedSecurityGroupsCount": 11,
     "targetedSecurityGroupIds": [
       "Targeted Security Group Ids value"
     ],
-    "appDataEncryptionType": "afterDeviceRestart"
+    "appDataEncryptionType": "afterDeviceRestart",
+    "minimumRequiredSdkVersion": "Minimum Required Sdk Version value"
   }
 }
 ```

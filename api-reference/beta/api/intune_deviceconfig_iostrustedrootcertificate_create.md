@@ -13,8 +13,6 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/teacherRootCertificates/
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/studentRootCertificates/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/
 ```
 
@@ -48,7 +46,7 @@ If successful, this method returns a `201 Created` response code and a [iosTrust
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEducationDeviceConfiguration/teacherRootCertificates/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/
 Content-type: application/json
 Content-length: 335
 

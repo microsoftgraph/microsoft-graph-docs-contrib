@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1367
+Content-Length: 1441
 
 {
   "value": [
@@ -77,7 +77,9 @@ Content-Length: 1367
       "diagnosticsDisabled": true,
       "macOSRegistrationDisabled": true,
       "macOSFileVaultDisabled": true,
-      "awaitDeviceConfiguredConfirmation": true
+      "awaitDeviceConfiguredConfirmation": true,
+      "sharedIPadMaximumUserCount": 10,
+      "enableSharedIPad": true
     }
   ]
 }

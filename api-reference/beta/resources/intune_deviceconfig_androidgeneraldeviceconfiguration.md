@@ -19,6 +19,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[List deviceConfigurationUserStatuses](../api/intune_deviceconfig_androidgeneraldeviceconfiguration_list_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Get the deviceConfigurationUserStatuses from the userStatuses navigation property.|
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_androidgeneraldeviceconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_androidgeneraldeviceconfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
+|[List settingStateDeviceSummaries](../api/intune_deviceconfig_androidgeneraldeviceconfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -55,19 +56,19 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset.|
-|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`.|
+|passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`.|
 |passwordRequired|Boolean|Indicates whether or not to require a password.|
 |powerOffBlocked|Boolean|Indicates whether or not to block powering off the device.|
 |factoryResetBlocked|Boolean|Indicates whether or not to block user performing a factory reset.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to block screenshots.|
-|deviceSharingBlocked|Boolean|Indicates whether or not to block device sharing mode.|
+|deviceSharingAllowed|Boolean|Indicates whether or not to allow device sharing mode.|
 |storageBlockGoogleBackup|Boolean|Indicates whether or not to block Google Backup.|
 |storageBlockRemovableStorage|Boolean|Indicates whether or not to block removable storage usage.|
 |storageRequireDeviceEncryption|Boolean|Indicates whether or not to require device encryption.|
 |storageRequireRemovableStorageEncryption|Boolean|Indicates whether or not to require removable storage encryption.|
 |voiceAssistantBlocked|Boolean|Indicates whether or not to block the use of the Voice Assistant.|
 |voiceDialingBlocked|Boolean|Indicates whether or not to block voice dialing.|
-|webBrowserAllowPopups|Boolean|Indicates whether or not to allow popups within the web browser.|
+|webBrowserBlockPopups|Boolean|Indicates whether or not to block popups within the web browser.|
 |webBrowserBlockAutofill|Boolean|Indicates whether or not to block the web browser's auto fill feature.|
 |webBrowserBlockJavaScript|Boolean|Indicates whether or not to block JavaScript within the web browser.|
 |webBrowserBlocked|Boolean|Indicates whether or not to block the web browser.|
@@ -82,6 +83,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -139,14 +141,14 @@ Here is a JSON representation of the resource.
   "powerOffBlocked": true,
   "factoryResetBlocked": true,
   "screenCaptureBlocked": true,
-  "deviceSharingBlocked": true,
+  "deviceSharingAllowed": true,
   "storageBlockGoogleBackup": true,
   "storageBlockRemovableStorage": true,
   "storageRequireDeviceEncryption": true,
   "storageRequireRemovableStorageEncryption": true,
   "voiceAssistantBlocked": true,
   "voiceDialingBlocked": true,
-  "webBrowserAllowPopups": true,
+  "webBrowserBlockPopups": true,
   "webBrowserBlockAutofill": true,
   "webBrowserBlockJavaScript": true,
   "webBrowserBlocked": true,
