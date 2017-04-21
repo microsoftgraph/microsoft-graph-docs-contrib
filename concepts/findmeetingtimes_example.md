@@ -1,7 +1,7 @@
 # Find possible meeting times on the Outlook calendar
 
 In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use 
-[findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) to identify possible times to meet, taking into consideration time, location, and other constraints.   
+[findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) to identify possible times to meet, while satisfying time, location, and other constraints.   
 
 The **findMeetingTimes** action lets you specify conditions such as the meeting date/time range, duration, optional or required attendees, and
 nature of the activity (**activityDomain**). The action takes into account the attendees' and organizer's normal work schedules and free/busy status, and suggests 
@@ -55,6 +55,8 @@ The two calls to **findMeetingTimes** include the following parameters. All [par
 
 ### First request
 
+Look for a 2-hour free time slot for both users over April 18-20.
+
 <!-- {
   "blockType": "request",
   "name": "findmeetingtimes_example_first"
@@ -106,7 +108,7 @@ Content-type: application/json
 ```
 
 ### First response
-
+There is no 2-hour time slot during the work hours of April 18-20 when both users are available.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,7 +131,7 @@ Content-Length: 184
 ```
 
 ### Second request
-
+Look for a 2-hour time slot on April 21.
 <!-- {
   "blockType": "request",
   "name": "findmeetingtimes_example_second"
@@ -181,7 +183,7 @@ Content-type: application/json
 ```
 
 ### Second response
-
+The second **findMeetingTimes** request suggests April 21, 2-4pm for both users to meet.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -244,5 +246,5 @@ and other [parameters](../api-reference/v1.0/api/user_findmeetingtimes.md#reques
 
 After getting meeting time suggestions, you may want to:
 
-- [Create an event and send it as a meeting request](../api-reference/v1.0/api/user_post_events.md) 
-- [Add an attachment](../api-reference/v1.0/api/event_post_attachments.md) to the event
+1. [Create an event and send it as a meeting request](../api-reference/v1.0/api/user_post_events.md) 
+2. [Add an attachment](../api-reference/v1.0/api/event_post_attachments.md) to the event
