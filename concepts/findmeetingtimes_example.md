@@ -1,12 +1,12 @@
 # Find possible meeting times on the Outlook calendar
 
 In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use 
-[findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) to identify possible times to meet, while satisfying time, location, and other constraints.   
+[findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) to identify any possible meeting times that satisfy time, location, and other constraints.   
 
 The **findMeetingTimes** action lets you specify conditions such as the meeting date/time range, duration, optional or required attendees, and
 nature of the activity (**activityDomain**). The action takes into account the attendees' and organizer's normal work schedules and free/busy status, and suggests 
 times that are appropriate for the participants and type of activity. For instance, suggestions for a work-related activity always occur 
-during the work hours of the organizer and attendees, and suggestions where required attendees are available bubble up higher.
+during the work hours of the organizer and attendees, and suggestions where required attendees are available are ordered higher up in the suggested list.
 
 In Office 365, work hours and time zones are configurable per mailbox. The **findMeetingTimes** action handles time zone variations among the organizer 
 and attendees. By default, **findMeetingTimes** returns suggestions in UTC. You can use the following request header to have **findMeetingTimes** return suggestions 
