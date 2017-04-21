@@ -13,7 +13,7 @@ POST /servicePrincipals/{id}/getMemberGroups
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt; *Required*  |
+| Authorization  | string  | Bearer <token>. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

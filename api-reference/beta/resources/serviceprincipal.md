@@ -25,45 +25,43 @@ Here is a JSON representation of the resource
 {
   "accountEnabled": true,
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
-  "appDisplayName": "String",
-  "appId": "String",
-  "appOwnerOrganizationId": "Guid",
+  "appDisplayName": "string",
+  "appId": "string",
+  "appOwnerOrganizationId": "guid",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
-  "displayName": "String",
-  "errorUrl": "String",
-  "homepage": "String",
-  "id": "String (identifier)",
+  "displayName": "string",
+  "errorUrl": "string",
+  "homepage": "string",
+  "id": "string (identifier)",
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
-  "logoutUrl": "String",
+  "logoutUrl": "string",
   "oauth2Permissions": [{"@odata.type": "microsoft.graph.oAuth2Permission"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
-  "preferredTokenSigningKeyThumbprint": "String",
-  "publisherName": "String",
-  "replyUrls": ["String"],
-  "samlMetadataUrl": "String",
-  "servicePrincipalNames": ["String"],
-  "tags": ["String"]
+  "preferredTokenSigningKeyThumbprint": "string",
+  "publisherName": "string",
+  "replyUrls": ["string"],
+  "samlMetadataUrl": "string",
+  "servicePrincipalNames": ["string"],
+  "tags": ["string"]
 }
 
 ```
 ### Properties
-| Property | Type | Description |
+| Property     | Type |Description|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true** if the service principal account is enabled; otherwise, **false**. |
-|addIns|[addIn](addin.md) collection| Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. |
+|accountEnabled|Boolean| **true** if the service principal account is enabled; otherwise, **false**.            |
 |appDisplayName|String|The display name exposed by the associated application.|
 |appId|String|The unique identifier for the associated application (its **appId** property).|
-|appOwnerOrganizationId|Guid||
 |appRoleAssignmentRequired|Boolean|Specifies whether an **appRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application. Not nullable. |
 |appRoles|[appRole](approle.md) collection|The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
 |displayName|String|The display name for the service principal.|
-|errorUrl|String| |
-|homepage|String|The URL to the homepage of the associated application.|
-|id|String|The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
-|keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the service principal. Not nullable. |
-|logoutUrl|String| |
+|errorUrl|String|            |
+|homepage|String|The URL to the homepage of the associated   application.|
+|keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the service principal. Not nullable.            |
+|logoutUrl|String|            |
 |oauth2Permissions|[oAuth2Permission](oauth2permission.md) collection|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [application](application.md) entity. Not nullable.            |
+|id|String|The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the service principal. Not nullable. |
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions. |
 |publisherName|String|The display name of the tenant in which the associated application is specified.|
@@ -86,7 +84,7 @@ Here is a JSON representation of the resource
 
 ### Methods
 
-| Method | Return Type  |Description|
+| Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get servicePrincipal](../api/serviceprincipal_get.md) | [servicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
 |[Create appRoleAssignment](../api/serviceprincipal_post_approleassignments.md) |[appRoleAssignment](approleassignment.md)| Create a new appRoleAssignment by posting to the appRoleAssignments collection.|
