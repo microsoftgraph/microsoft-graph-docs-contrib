@@ -6,7 +6,7 @@ Create a new [user](../resources/intune_devicefe_user.md) object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

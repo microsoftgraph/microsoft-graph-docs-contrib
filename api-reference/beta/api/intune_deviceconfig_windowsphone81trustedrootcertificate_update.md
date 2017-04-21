@@ -6,7 +6,7 @@ Update the properties of a [windowsPhone81TrustedRootCertificate](../resources/i
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

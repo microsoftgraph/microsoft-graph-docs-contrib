@@ -6,14 +6,14 @@ Deletes a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscr
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-DELETE /cloudPkiSubscriptions/{cloudPkiSubscriptionsId}
+DELETE /deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
 ```
 
 ## Request headers
@@ -32,7 +32,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/cloudPkiSubscriptions/{cloudPkiSubscriptionsId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
 ```
 
 ### Response

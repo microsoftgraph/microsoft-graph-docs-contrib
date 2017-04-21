@@ -6,7 +6,7 @@ Not yet documented
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementManagedDevices.PriviligedOperation.All; DeviceManagementApps.ReadWrite.All*
+*DeviceManagementManagedDevices.PriviligedOperation.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 POST /users/{usersId}/removeAllDevicesFromManagement
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user//removeAllDevicesFromManagement
 ```
 
 ## Request headers
