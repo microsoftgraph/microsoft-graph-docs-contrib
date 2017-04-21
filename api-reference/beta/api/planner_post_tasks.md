@@ -23,7 +23,7 @@ The **plannerTask** planId property must be set to an existing [plannerPlan](../
 
 ### Response
 If successful, this method returns `201, Created` response code and [plannerTask](../resources/plannertask.md) object in the response body.
-Common error cases in Planner API are described [here](../resources/planner_overview.md#Common error conditions).
+Common error cases in Planner API are described [here](../resources/planner_overview.md).
 
 ### Example
 ##### Request
