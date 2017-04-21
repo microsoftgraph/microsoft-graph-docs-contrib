@@ -6,7 +6,7 @@ Update the properties of a [detectedApp](../resources/intune_devicefe_detectedap
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,7 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /detectedapps/{detectedappsId}
-PATCH /managedDevices/{managedDevicesId}/detectedApps/{detectedAppId}
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}
 ```
 
 ## Request headers

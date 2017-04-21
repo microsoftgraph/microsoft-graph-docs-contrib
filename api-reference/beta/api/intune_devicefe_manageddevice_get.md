@@ -6,7 +6,7 @@ Read properties and relationships of the [managedDevice](../resources/intune_dev
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,8 +14,9 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedDevices/{managedDevicesId}
-GET /users/{usersId}/managedDevices/{managedDeviceId}
-GET /managedDevices/{managedDevicesId}/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice/
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user//managedDevices/{managedDeviceId}
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Optional query parameters
@@ -44,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2410
+Content-Length: 2904
 
 {
   "value": {
@@ -67,7 +68,17 @@ Content-Length: 2410
       "wifiMac": "Wifi Mac value",
       "operatingSystemLanguage": "Operating System Language value",
       "isSupervised": true,
-      "isEncrypted": true
+      "isEncrypted": true,
+      "isSharedDevice": true,
+      "sharedDeviceCachedUsers": [
+        {
+          "@odata.type": "microsoft.graph.sharedAppleDeviceUser",
+          "userPrincipalName": "User Principal Name value",
+          "dataToSync": true,
+          "dataQuota": 9,
+          "dataUsed": 8
+        }
+      ]
     },
     "ownerType": "company",
     "deviceActionResults": [
@@ -104,7 +115,11 @@ Content-Length: 2410
     "isSupervised": true,
     "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
     "exchangeAccessState": "unknown",
-    "exchangeAccessStateReason": "unknown"
+    "exchangeAccessStateReason": "unknown",
+    "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+    "isEncrypted": true,
+    "model": "Model value",
+    "manufacturer": "Manufacturer value"
   }
 }
 ```

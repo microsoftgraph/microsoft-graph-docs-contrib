@@ -41,7 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1128
+Content-Length: 1113
 
 {
   "value": [
@@ -70,7 +70,7 @@ Content-Length: 1128
       "size": 4,
       "identityVersion": "Identity Version value",
       "commandLine": "Command Line value",
-      "productCode": "<Unknown Primitive Type Edm.Guid>"
+      "productCode": "Product Code value"
     }
   ]
 }
