@@ -12,6 +12,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |[Delete appleVolumePurchaseProgramToken](../api/intune_onboarding_applevolumepurchaseprogramtoken_delete.md)|None|Deletes a [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md).|
 |[Update appleVolumePurchaseProgramToken](../api/intune_onboarding_applevolumepurchaseprogramtoken_update.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Update the properties of a [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.|
 |[syncApps action](../api/intune_onboarding_applevolumepurchaseprogramtoken_syncapps.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Not yet documented|
+|[syncLicenses action](../api/intune_onboarding_applevolumepurchaseprogramtoken_synclicenses.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

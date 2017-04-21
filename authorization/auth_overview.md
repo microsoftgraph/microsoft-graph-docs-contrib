@@ -35,7 +35,7 @@ The following table summarizes the major features that the Azure AD and Azure AD
    </tr>
   <tr>
     <td>App types supported</td>
-    <td style="vertical-align: text-top;"><p>Web apps</p><p>Web APIs</p><p>Mobile and native apps</p><p>Single Page App (SPA)</p><p>Standalone Web APIs</p><p>Daemons/Server Side Apps</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">more information</a></p></td> 
+    <td style="vertical-align: text-top;"><p>Web apps</p><p>Web APIs</p><p>Mobile and native apps</p><p>Single Page App (SPA)</p><p>Standalone Web APIs</p><p>Daemons/Server Side apps</p><p>Cloud Solution Provider apps</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">more information</a></p></td> 
     <td style="vertical-align: text-top;"><p>Web apps</p><p>Web APIs</p><p>Mobile and native apps</p><p>Single Page App (SPA)</p><p>Daemons/Server Side Apps</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/" target="_newtab">more information</a></td>
    </tr>
   <tr>

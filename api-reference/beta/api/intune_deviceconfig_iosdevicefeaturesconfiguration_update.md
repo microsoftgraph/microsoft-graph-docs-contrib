@@ -6,7 +6,7 @@ Update the properties of a [iosDeviceFeaturesConfiguration](../resources/intune_
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -38,6 +38,7 @@ The following table shows the properties that are required when you create a [io
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |airPrintDestinations|[airPrintDestination](../resources/intune_deviceconfig_airprintdestination.md) collection|An array of AirPrint printers that should always be shown. Inherited from [appleDeviceFeaturesConfigurationBase](../resources/intune_deviceconfig_appledevicefeaturesconfigurationbase.md)|
 |assetTagTemplate|String|Asset tag information for the device, displayed on the login window and lock screen.|
+|contentFilterSettings|[iosWebContentFilterBase](../resources/intune_deviceconfig_ioswebcontentfilterbase.md)|Gets or sets iOS Web Content Filter settings, supervised mode only|
 |lockScreenFootnote|String|A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.|
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock|
 |homeScreenPages|[iosHomeScreenPage](../resources/intune_deviceconfig_ioshomescreenpage.md) collection|A list of pages on the Home Screen|
@@ -54,7 +55,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2178
+Content-length: 2532
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -69,6 +70,17 @@ Content-length: 2178
     }
   ],
   "assetTagTemplate": "Asset Tag Template value",
+  "contentFilterSettings": {
+    "@odata.type": "microsoft.graph.iosWebContentFilterSpecificWebsitesAccess",
+    "specificWebsitesOnly": [
+      {
+        "@odata.type": "microsoft.graph.iosBookmark",
+        "url": "Url value",
+        "bookmarkFolder": "Bookmark Folder value",
+        "displayName": "Display Name value"
+      }
+    ]
+  },
   "lockScreenFootnote": "Lock Screen Footnote value",
   "homeScreenDockIcons": [
     {
@@ -136,7 +148,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2355
+Content-Length: 2709
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -154,6 +166,17 @@ Content-Length: 2355
     }
   ],
   "assetTagTemplate": "Asset Tag Template value",
+  "contentFilterSettings": {
+    "@odata.type": "microsoft.graph.iosWebContentFilterSpecificWebsitesAccess",
+    "specificWebsitesOnly": [
+      {
+        "@odata.type": "microsoft.graph.iosBookmark",
+        "url": "Url value",
+        "bookmarkFolder": "Bookmark Folder value",
+        "displayName": "Display Name value"
+      }
+    ]
+  },
   "lockScreenFootnote": "Lock Screen Footnote value",
   "homeScreenDockIcons": [
     {

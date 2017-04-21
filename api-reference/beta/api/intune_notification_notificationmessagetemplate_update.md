@@ -6,7 +6,7 @@ Update the properties of a [notificationMessageTemplate](../resources/intune_not
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.ReadWrite.All*
+*DeviceManagementServiceConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -31,7 +31,6 @@ The following table shows the properties that are required when you create a [no
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
 |displayName|String|Display name for the Notification Message Template.|
-|fromEmailAddress|String|Email Address for the Notification Message Template to send from.|
 |defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
 |brandingOptions|String|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
@@ -46,12 +45,11 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 Content-type: application/json
-Content-length: 246
+Content-length: 195
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
-  "fromEmailAddress": "From Email Address value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo"
 }
@@ -62,14 +60,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 361
+Content-Length: 310
 
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
   "id": "e1db399b-399b-e1db-9b39-dbe19b39dbe1",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
-  "fromEmailAddress": "From Email Address value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo"
 }
