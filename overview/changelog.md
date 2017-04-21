@@ -4,6 +4,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## April 2017
 
+### Application and servicePrincipal API changes
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|Beta| We are planning to update the application and servicePrincipal APIs in preview (beta). The first set of changes are targeted for May 8th. The changes includes property renaming and restructuring. Some properties (appRoles, addIns, etc.) will not be available until the changes are complete. The changes will release in preview (beta) prior to releasing to v1.0. Documentation will be updated when the changes are available in preview. |
+
 ### Added preview support for Cloud Solution Provider developers
 
 |**Change type**|**Version**|**Description**|
