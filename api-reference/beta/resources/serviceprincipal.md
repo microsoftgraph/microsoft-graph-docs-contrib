@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the service principal account is enabled; otherwise, **false**. |
-|addIns|[addIn](addin.md) collection| |
+|addIns|[addIn](addin.md) collection| Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. |
 |appDisplayName|String|The display name exposed by the associated application.|
 |appId|String|The unique identifier for the associated application (its **appId** property).|
 |appOwnerOrganizationId|Guid||

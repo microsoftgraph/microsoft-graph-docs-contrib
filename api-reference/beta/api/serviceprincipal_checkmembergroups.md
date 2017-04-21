@@ -2,7 +2,7 @@
 
 
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,7 +12,7 @@ POST /servicePrincipals/{id}/checkMemberGroups
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt; *Required*  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

@@ -2,7 +2,7 @@
 
 
 ## Prerequisites
-The following **scopes** are required to execute this API:
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,7 +12,7 @@ POST /applications/{id}/restore
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt; *Required*  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -45,98 +45,21 @@ Content-length: 56
 ```
 
 ##### Response
-Here is an example of the response.
+
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2150
+Content-length: 22
 
 {
-  "appId": "appId-value",
-  "appRoles": [
-    {
-      "allowedMemberTypes": [
-        "allowedMemberTypes-value"
-      ],
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "id": "id-value",
-      "isEnabled": true,
-      "value": "value-value"
-    }
-  ],
-  "availableToOtherTenants": true,
-  "displayName": "displayName-value",
-  "errorUrl": "errorUrl-value",
-  "groupMembershipClaims": "groupMembershipClaims-value",
-  "homepage": "homepage-value",
-  "identifierUris": [
-    "identifierUris-value"
-  ],
-  "keyCredentials": [
-    {
-      "customKeyIdentifier": "customKeyIdentifier-value",
-      "endDate": "2016-10-19T10:37:00Z",
-      "keyId": "keyId-value",
-      "startDate": "2016-10-19T10:37:00Z",
-      "type": "type-value",
-      "usage": "usage-value",
-      "value": "value-value"
-    }
-  ],
-  "knownClientApplications": [
-    "guid"
-  ],
-  "mainLogo": "stream",
-  "logoutUrl": "logoutUrl-value",
-  "oauth2AllowImplicitFlow": true,
-  "oauth2AllowUrlPathMatching": true,
-  "oauth2Permissions": [
-    {
-      "adminConsentDescription": "adminConsentDescription-value",
-      "adminConsentDisplayName": "adminConsentDisplayName-value",
-      "id": "id-value",
-      "isEnabled": true,
-      "type": "type-value",
-      "userConsentDescription": "userConsentDescription-value",
-      "userConsentDisplayName": "userConsentDisplayName-value",
-      "value": "value-value"
-    }
-  ],
-  "oauth2RequirePostResponse": true,
-  "passwordCredentials": [
-    {
-      "customKeyIdentifier": "customKeyIdentifier-value",
-      "endDate": "2016-10-19T10:37:00Z",
-      "keyId": "keyId-value",
-      "startDate": "2016-10-19T10:37:00Z",
-      "value": "value-value"
-    }
-  ],
-  "publicClient": true,
-  "replyUrls": [
-    "replyUrls-value"
-  ],
-  "requiredResourceAccess": [
-    {
-      "resourceAppId": "resourceAppId-value",
-      "resourceAccess": [
-        {
-          "id": "id-value",
-          "type": "type-value"
-        }
-      ]
-    }
-  ],
-  "samlMetadataUrl": "samlMetadataUrl-value",
-  "objectType": "objectType-value",
-  "objectId": "objectId-value",
-  "deletionTimestamp": "2016-10-19T10:37:00Z"
+  "id": "id-value"
 }
 ```
 

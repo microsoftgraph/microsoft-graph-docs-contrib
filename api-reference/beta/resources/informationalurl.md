@@ -1,5 +1,7 @@
 # informationalUrl resource type
 
+Basic profile information of the application.
+
 ### Properties
 
 | Property | Type | Description |

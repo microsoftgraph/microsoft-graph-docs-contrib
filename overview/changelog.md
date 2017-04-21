@@ -4,19 +4,13 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## April 2017
 
-### Application and ServicePrincipal resource type schema changes
+### Application and servicePrincipal changes
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Change|Beta| [application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/application) removed properties: knownClientApplications and publicClient |
-|Change|Beta| [application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/application) renamed properties: appId to id, identifierUris to applicationAliases, availableToOtherOrganizations to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, replyUrls to redirectUrls|
-|Addition|Beta|Added new complex types:<br/>[api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api)<br/>
-[informationalurl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalurl)<br/>
-[installedclient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient)<br/>
-[preauthorizedapplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication)<br/>
-[web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web)<br/> 
-[permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope.)<br />
-|
+|Change|Beta| Removed properties knownClientApplications and publicClient from [application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/application) entity. |
+|Change|Beta| Renamed properties appId to id, identifierUris to applicationAliases, availableToOtherOrganizations to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, replyUrls to redirectUrls in [application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/application) entity. |
+|Addition|Beta|Added new complex types: [api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api), [informationalurl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalurl), [installedclient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient), [preauthorizedapplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication), [web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web), [permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope.) |
 
 ### Add onPremises properties to user entity
 

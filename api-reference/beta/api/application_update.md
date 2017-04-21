@@ -2,7 +2,8 @@
 
 Update the properties of application object.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,7 +12,7 @@ PATCH /applications/{id}
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt; *Required*  |
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -87,7 +88,7 @@ Content-length: 636
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,22 +97,29 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 636
+Content-length: 1044
 
 {
-  "addIns": [
-    {
-      "id": "id-value",
-      "type": "type-value",
-      "properties": [
-        {
-          "key": "key-value",
-          "value": "value-value"
-        }
-      ]
-    }
+  "api": {
+    "acceptedAccessTokenVersion": 99,
+    "publishedPermissionScopes": [
+      {
+        "adminConsentDescription": "adminConsentDescription-value",
+        "adminConsentDisplayName": "adminConsentDisplayName-value",
+        "id": "id-value",
+        "isEnabled": true,
+        "origin": "origin-value",
+        "type": "type-value",
+        "userConsentDescription": "userConsentDescription-value",
+        "userConsentDisplayName": "userConsentDisplayName-value",
+        "value": "value-value"
+      }
+    ]
+  },
+  "allowPublicClient": true,
+  "applicationAliases": [
+    "applicationAliases-value"
   ],
-  "appId": "appId-value",
   "appRoles": [
     {
       "allowedMemberTypes": [
@@ -125,9 +133,12 @@ Content-length: 636
       "value": "value-value"
     }
   ],
-  "availableToOtherOrganizations": true,
-  "displayName": "displayName-value",
-  "errorUrl": "errorUrl-value"
+  "createdDateTime": "datetime-value",
+  "installedClients": {
+    "redirectUrls": [
+      "redirectUrls-value"
+    ]
+  }
 }
 ```
 

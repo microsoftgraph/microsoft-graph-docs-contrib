@@ -2,7 +2,7 @@
 
 Use this API to create a new Application.
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -74,25 +74,32 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.application"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 717
+Content-length: 1145
 
 {
   "application": {
-    "addIns": [
-      {
-        "id": "id-value",
-        "type": "type-value",
-        "properties": [
-          {
-            "key": "key-value",
-            "value": "value-value"
-          }
-        ]
-      }
+    "api": {
+      "acceptedAccessTokenVersion": 99,
+      "publishedPermissionScopes": [
+        {
+          "adminConsentDescription": "adminConsentDescription-value",
+          "adminConsentDisplayName": "adminConsentDisplayName-value",
+          "id": "id-value",
+          "isEnabled": true,
+          "origin": "origin-value",
+          "type": "type-value",
+          "userConsentDescription": "userConsentDescription-value",
+          "userConsentDisplayName": "userConsentDisplayName-value",
+          "value": "value-value"
+        }
+      ]
+    },
+    "allowPublicClient": true,
+    "applicationAliases": [
+      "applicationAliases-value"
     ],
-    "appId": "appId-value",
     "appRoles": [
       {
         "allowedMemberTypes": [
@@ -106,9 +113,12 @@ Content-length: 717
         "value": "value-value"
       }
     ],
-    "availableToOtherOrganizations": true,
-    "displayName": "displayName-value",
-    "errorUrl": "errorUrl-value"
+    "createdDateTime": "datetime-value",
+    "installedClients": {
+      "redirectUrls": [
+        "redirectUrls-value"
+      ]
+    }
   }
 }
 ```
@@ -117,7 +127,7 @@ Content-length: 717
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Application",
+  "description": "Create application",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
