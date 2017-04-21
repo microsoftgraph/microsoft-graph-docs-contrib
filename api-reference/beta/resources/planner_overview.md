@@ -47,3 +47,38 @@ The custom columns in the bucket task board are represented by [bucket](plannerb
 
 All the ordering is controlled by the principles identified in [Planner order hints](planner_order_hint_format.md).
 
+## Common error conditions
+
+The information in this section supplements the information on [general error cases](../../../overview/errors.md) specifically for the Planner API.
+
+### 400 Bad request
+
+There are several common cases where the `POST` and `PATCH` requests can get a 400 status code. Common problems include:
+* Open Type properties are not of correct types, or the type isn't specified. For example, [plannerAssignments](plannerAssignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
+* Order hint values do not have the [correct format](planner_order_hint_format.md). For example, an order hint value is being set directly to the value returned to the client.
+* The data is logically inconsistent. For example, start date of task is later than due date of the task.
+
+### 403 Forbidden
+
+In addition to the generic error cases, Planner API also returns this status code when a service defined limit has been exceeded. If this is the case, `code` property on the error resource type will indicate the type of the limit exceeded by the request.
+The possible values for the limit types include:
+
+| code  | Description|
+|:------------------|:----------|
+|MaximumProjectsOwnedByUser|Maximum number of Plans owned by a group limit has been exceeded. This limit is based on `owner` property on [plannerPlan](plannerPlan.md) resource.|
+|MaximumProjectsSharedWithUser|Maximum number of Plans shared with a user limit has been exceeded.  This limit is based on `sharedWith` property on [plannerPlanDetails](plannerPlanDetails.md) resource.|
+|MaximumTasksCreatedByUser|Maximum number of Tasks created by a user limit has been exceeded. This limit is based on `createdBy` property on [plannerTask](plannerTask.md) resource.|
+|MaximumTasksAssignedToUser|Maximum number of Tasks assigned to a user limit has been exceeded. This limit is based on `assignments` property on [plannerTask](plannerTask.md) resource.|
+|MaximumTasksInProject| Maximum number of Tasks in a Plan limit has been exceeded. This limit is based on `planId` property on [plannerTask](plannerTask.md) resource.|
+|MaximumActiveTasksInProject| Maximum number of Tasks that aren't completed in a Plan limit has been exceeded. This limit is based on `planId` and `percentComplete` properties on [plannerTask](plannerTask.md) resource.|
+|MaximumBucketsInProject|Maximum number of Buckets in a Plan limit has been exceeded. This limit is based on `planId` property on [plannerBucket](plannerBucket.md) resource.|
+|MaximumUsersSharedWithProject| `sharedWith` property on [plannerPlanDetails](plannerPlanDetails.md) resource contains too many values.|
+|MaximumReferencesOnTask| `references` property on [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.|
+|MaximumChecklistItemsOnTask| `checklist` property on [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.|
+|MaximumAssigneesInTasks| `assignments` property on [plannerTask](plannerTask.md) resource contains too many values.|
+
+### 412 Precondition Failed 
+
+All `POST`, `PATCH` and `DELETE` requests in Planner API require `If-Match` header to be specified with the last etag value seen of the resource that is subject to the request.
+Additionally, 412 status code can be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and obtain a new etag.
+
