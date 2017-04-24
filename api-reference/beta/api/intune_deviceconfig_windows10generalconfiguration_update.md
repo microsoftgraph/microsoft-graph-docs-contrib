@@ -6,7 +6,7 @@ Update the properties of a [windows10GeneralConfiguration](../resources/intune_d
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -36,6 +36,10 @@ The following table shows the properties that are required when you create a [wi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|networkProxyApplySettingsDeviceWide|Boolean|If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.|
+|networkProxyDisableAutoDetect|Boolean|Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.|
+|networkProxyAutomaticConfigurationUrl|String|Address to the proxy auto-config (PAC) script you want to use.|
+|networkProxyServer|[windows10NetworkProxyServer](../resources/intune_deviceconfig_windows10networkproxyserver.md)|Specifies manual proxy server settings.|
 |accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.|
 |antiTheftModeBlocked|Boolean|Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).|
 |automaticUpdateMode|String|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
@@ -44,6 +48,7 @@ The following table shows the properties that are required when you create a [wi
 |bluetoothBlocked|Boolean|Whether or not to Block the user from using bluetooth.|
 |bluetoothBlockAdvertising|Boolean|Whether or not to Block the user from using bluetooth advertising.|
 |bluetoothBlockDiscoverableMode|Boolean|Whether or not to Block the user from using bluetooth discoverable mode.|
+|bluetoothDeviceName|String|Specify the device’s Bluetooth name. If not configured, the default local radio name is used.|
 |cameraBlocked|Boolean|Whether or not to Block the user from accessing the camera of the device.|
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
@@ -143,6 +148,10 @@ The following table shows the properties that are required when you create a [wi
 |wiFiBlockAutomaticConnectHotspots|Boolean|Indicating whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.|
 |wiFiBlocked|Boolean|Indicates whether or not to Block the user from using Wi-Fi.|
 |wiFiBlockManualConfiguration|Boolean|Indicates whether or not to Block the user from using Wi-Fi manual configuration.|
+|wiFiScanInterval|Int32|Specify how often devices scan for Wi-Fi networks. Supported values are 1-500, where 100 = default, and 500 = low frequency.|
+|wirelessDisplayBlockProjectionToThisDevice|Boolean|Indicates whether or not to allow other devices from discovering this PC for projection.|
+|wirelessDisplayBlockUserInputFromReceiver|Boolean|Indicates whether or not to allow user input from wireless display receiver.|
+|wirelessDisplayRequirePinForPairing|Boolean|Indicates whether or not to require a PIN for new devices to initiate pairing.|
 |windowsStoreBlocked|Boolean|Indicates whether or not to Block the user from using the Windows store.|
 |appsAllowTrustedAppsSideloading|String|Indicates whether apps from AppX packages signed with a trusted certificate can be side loaded. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |windowsStoreBlockAutoUpdate|Boolean|Indicates whether or not to block automatic update of apps from Windows Store.|
@@ -153,6 +162,9 @@ The following table shows the properties that are required when you create a [wi
 |storageRestrictAppDataToSystemVolume|Boolean|Indicates whether application data is restricted to the system drive.|
 |storageRestrictAppInstallToSystemVolume|Boolean|Indicates whether the installation of applications is restricted to the system drive.|
 |gameDvrBlocked|Boolean|Indicates whether or not to block DVR and broadcasting.|
+|experienceBlockDeviceDiscovery|Boolean|Indicates whether or not to enable device discovery UX.|
+|experienceBlockErrorDialogWhenNoSIM|Boolean|Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.|
+|experienceBlockTaskSwitcher|Boolean|Indicates whether or not to enable task switching on the device.|
 |experienceBlockWindowsSpotlight|Boolean|Allows IT admins to turn off all Windows Spotlight features|
 |experienceBlockWindowsTips|Boolean|Allows IT admins to turn off the popup of Windows Tips.|
 |experienceBlockConsumerSpecificFeatures|Boolean|Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.|
@@ -160,6 +172,26 @@ The following table shows the properties that are required when you create a [wi
 |startMenuMode|String|Allows admins to decide how the Start menu is displayed. Possible values are: `userDefined`, `fullScreen`, `nonFullScreen`.|
 |logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
+|startMenuPinnedFolderDocuments|String|Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderDownloads|String|Enforces the visibility (Show/Hide) of the Downloads folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderFileExplorer|String|Enforces the visibility (Show/Hide) of the FileExplorer shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderHomeGroup|String|Enforces the visibility (Show/Hide) of the HomeGroup folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderMusic|String|Enforces the visibility (Show/Hide) of the Music folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderNetwork|String|Enforces the visibility (Show/Hide) of the Network folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPersonalFolder|String|Enforces the visibility (Show/Hide) of the PersonalFolder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPictures|String|Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderSettings|String|Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderVideos|String|Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
+|startMenuAppListVisibility|String|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
+|startMenuHideFrequentlyUsedApps|Boolean|Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.|
+|startMenuHideRecentJumpLists|Boolean|Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.|
+|startMenuHideRecentlyAddedApps|Boolean|Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.|
+|startMenuHideRestartOptions|Boolean|Enabling this policy hides “Restart/Update and Restart” from appearing in the power button in the start menu.|
+|startMenuHideUserTile|Boolean|Enabling this policy hides the user tile from appearing in the start menu.|
+|startMenuHidePowerButton|Boolean|Enabling this policy hides the power button from appearing in the start menu.|
+|startMenuLayoutEdgeAssetsXml|Binary|This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.|
+|personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
+|personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 
 
 
@@ -172,13 +204,24 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5570
+Content-length: 7359
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "networkProxyApplySettingsDeviceWide": true,
+  "networkProxyDisableAutoDetect": true,
+  "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
+  "networkProxyServer": {
+    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+    "address": "Address value",
+    "exceptions": [
+      "Exceptions value"
+    ],
+    "useForLocalAddresses": true
+  },
   "accountsBlockAddingNonMicrosoftAccountEmail": true,
   "antiTheftModeBlocked": true,
   "automaticUpdateMode": "notifyDownload",
@@ -187,6 +230,7 @@ Content-length: 5570
   "bluetoothBlocked": true,
   "bluetoothBlockAdvertising": true,
   "bluetoothBlockDiscoverableMode": true,
+  "bluetoothDeviceName": "Bluetooth Device Name value",
   "cameraBlocked": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
@@ -296,6 +340,10 @@ Content-length: 5570
   "wiFiBlockAutomaticConnectHotspots": true,
   "wiFiBlocked": true,
   "wiFiBlockManualConfiguration": true,
+  "wiFiScanInterval": 0,
+  "wirelessDisplayBlockProjectionToThisDevice": true,
+  "wirelessDisplayBlockUserInputFromReceiver": true,
+  "wirelessDisplayRequirePinForPairing": true,
   "windowsStoreBlocked": true,
   "appsAllowTrustedAppsSideloading": "blocked",
   "windowsStoreBlockAutoUpdate": true,
@@ -306,13 +354,36 @@ Content-length: 5570
   "storageRestrictAppDataToSystemVolume": true,
   "storageRestrictAppInstallToSystemVolume": true,
   "gameDvrBlocked": true,
+  "experienceBlockDeviceDiscovery": true,
+  "experienceBlockErrorDialogWhenNoSIM": true,
+  "experienceBlockTaskSwitcher": true,
   "experienceBlockWindowsSpotlight": true,
   "experienceBlockWindowsTips": true,
   "experienceBlockConsumerSpecificFeatures": true,
   "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s",
   "startMenuMode": "fullScreen",
   "logonBlockFastUserSwitching": true,
-  "startBlockUnpinningAppsFromTaskbar": true
+  "startBlockUnpinningAppsFromTaskbar": true,
+  "startMenuPinnedFolderDocuments": "hide",
+  "startMenuPinnedFolderDownloads": "hide",
+  "startMenuPinnedFolderFileExplorer": "hide",
+  "startMenuPinnedFolderHomeGroup": "hide",
+  "startMenuPinnedFolderMusic": "hide",
+  "startMenuPinnedFolderNetwork": "hide",
+  "startMenuPinnedFolderPersonalFolder": "hide",
+  "startMenuPinnedFolderPictures": "hide",
+  "startMenuPinnedFolderSettings": "hide",
+  "startMenuPinnedFolderVideos": "hide",
+  "startMenuAppListVisibility": "collapse",
+  "startMenuHideFrequentlyUsedApps": true,
+  "startMenuHideRecentJumpLists": true,
+  "startMenuHideRecentlyAddedApps": true,
+  "startMenuHideRestartOptions": true,
+  "startMenuHideUserTile": true,
+  "startMenuHidePowerButton": true,
+  "startMenuLayoutEdgeAssetsXml": "c3RhcnRNZW51TGF5b3V0RWRnZUFzc2V0c1htbA==",
+  "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
+  "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/"
 }
 ```
 
@@ -321,7 +392,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5746
+Content-Length: 7535
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -331,6 +402,17 @@ Content-Length: 5746
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "networkProxyApplySettingsDeviceWide": true,
+  "networkProxyDisableAutoDetect": true,
+  "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
+  "networkProxyServer": {
+    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+    "address": "Address value",
+    "exceptions": [
+      "Exceptions value"
+    ],
+    "useForLocalAddresses": true
+  },
   "accountsBlockAddingNonMicrosoftAccountEmail": true,
   "antiTheftModeBlocked": true,
   "automaticUpdateMode": "notifyDownload",
@@ -339,6 +421,7 @@ Content-Length: 5746
   "bluetoothBlocked": true,
   "bluetoothBlockAdvertising": true,
   "bluetoothBlockDiscoverableMode": true,
+  "bluetoothDeviceName": "Bluetooth Device Name value",
   "cameraBlocked": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
@@ -448,6 +531,10 @@ Content-Length: 5746
   "wiFiBlockAutomaticConnectHotspots": true,
   "wiFiBlocked": true,
   "wiFiBlockManualConfiguration": true,
+  "wiFiScanInterval": 0,
+  "wirelessDisplayBlockProjectionToThisDevice": true,
+  "wirelessDisplayBlockUserInputFromReceiver": true,
+  "wirelessDisplayRequirePinForPairing": true,
   "windowsStoreBlocked": true,
   "appsAllowTrustedAppsSideloading": "blocked",
   "windowsStoreBlockAutoUpdate": true,
@@ -458,13 +545,36 @@ Content-Length: 5746
   "storageRestrictAppDataToSystemVolume": true,
   "storageRestrictAppInstallToSystemVolume": true,
   "gameDvrBlocked": true,
+  "experienceBlockDeviceDiscovery": true,
+  "experienceBlockErrorDialogWhenNoSIM": true,
+  "experienceBlockTaskSwitcher": true,
   "experienceBlockWindowsSpotlight": true,
   "experienceBlockWindowsTips": true,
   "experienceBlockConsumerSpecificFeatures": true,
   "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s",
   "startMenuMode": "fullScreen",
   "logonBlockFastUserSwitching": true,
-  "startBlockUnpinningAppsFromTaskbar": true
+  "startBlockUnpinningAppsFromTaskbar": true,
+  "startMenuPinnedFolderDocuments": "hide",
+  "startMenuPinnedFolderDownloads": "hide",
+  "startMenuPinnedFolderFileExplorer": "hide",
+  "startMenuPinnedFolderHomeGroup": "hide",
+  "startMenuPinnedFolderMusic": "hide",
+  "startMenuPinnedFolderNetwork": "hide",
+  "startMenuPinnedFolderPersonalFolder": "hide",
+  "startMenuPinnedFolderPictures": "hide",
+  "startMenuPinnedFolderSettings": "hide",
+  "startMenuPinnedFolderVideos": "hide",
+  "startMenuAppListVisibility": "collapse",
+  "startMenuHideFrequentlyUsedApps": true,
+  "startMenuHideRecentJumpLists": true,
+  "startMenuHideRecentlyAddedApps": true,
+  "startMenuHideRestartOptions": true,
+  "startMenuHideUserTile": true,
+  "startMenuHidePowerButton": true,
+  "startMenuLayoutEdgeAssetsXml": "c3RhcnRNZW51TGF5b3V0RWRnZUFzc2V0c1htbA==",
+  "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
+  "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/"
 }
 ```
 

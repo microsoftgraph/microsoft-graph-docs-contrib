@@ -6,7 +6,7 @@ Get the [roleDefinition](../resources/intune_rbac_roledefinition.md) from the ro
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
+*DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

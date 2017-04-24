@@ -2,7 +2,6 @@
 
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
-
 ### JSON representation
 
 Here is a JSON representation of the resource

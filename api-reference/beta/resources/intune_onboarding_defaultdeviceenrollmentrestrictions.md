@@ -28,27 +28,37 @@ Here is a JSON representation of the resource.
   "iosRestrictions": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
     "platformBlocked": true,
-    "personalDeviceEnrollmentBlocked": true
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String"
   },
   "windowsRestrictions": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
     "platformBlocked": true,
-    "personalDeviceEnrollmentBlocked": true
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String"
   },
   "windowsMobileRestrictions": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
     "platformBlocked": true,
-    "personalDeviceEnrollmentBlocked": true
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String"
   },
   "androidRestrictions": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
     "platformBlocked": true,
-    "personalDeviceEnrollmentBlocked": true
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String"
   },
   "macRestrictions": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictions",
     "platformBlocked": true,
-    "personalDeviceEnrollmentBlocked": true
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String"
   }
 }
 ```

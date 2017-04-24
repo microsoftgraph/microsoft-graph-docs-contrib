@@ -43,12 +43,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 317
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.mobileAppVppGroupAssignment",
     "targetGroupId": "Target Group Id value",
+    "vpnConfigurationId": "Vpn Configuration Id value",
     "id": "89a8674a-674a-89a8-4a67-a8894a67a889",
     "installIntent": "notApplicable",
     "useDeviceLicensing": true

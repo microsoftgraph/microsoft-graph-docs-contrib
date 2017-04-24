@@ -6,7 +6,7 @@ Read properties and relationships of the [resourceOperation](../resources/intune
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
+*DeviceManagementRBAC.ReadWrite.All; DeviceManagementRBAC.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
