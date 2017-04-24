@@ -8,6 +8,7 @@ Apple push notification certificate.
 |---|---|---|
 |[Get applePushNotificationCertificate](../api/intune_devicefe_applepushnotificationcertificate_get.md)|[applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md)|Read properties and relationships of the [applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md) object.|
 |[Update applePushNotificationCertificate](../api/intune_devicefe_applepushnotificationcertificate_update.md)|[applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md)|Update the properties of a [applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md) object.|
+|[downloadApplePushNotificationCertificateSigningRequest function](../api/intune_devicefe_applepushnotificationcertificate_downloadapplepushnotificationcertificatesigningrequest.md)|String|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
