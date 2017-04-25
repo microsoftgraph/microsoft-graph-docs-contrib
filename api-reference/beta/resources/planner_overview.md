@@ -55,6 +55,8 @@ Each resource has a separate etag. Etag values for different resources, includin
 The client apps are expected to handle twoversioning related error status codes 409 and 412 by reading the latest version of the item, and resolving the conflicting changes.
 
 <a id="errors" />
+
+
 ## Common Planner error conditions
 
 In addition to [general errors](../../../overview/errors.md) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
