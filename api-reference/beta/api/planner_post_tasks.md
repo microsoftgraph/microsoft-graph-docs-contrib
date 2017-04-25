@@ -35,28 +35,18 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/planner/tasks
 Content-type: application/json
-Content-length: 458
+Content-length: 285
 
 {
-  "createdBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+  "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
+  "bucketId": "hsOf2dhOJkqyYYZEtdzDe2QAIUCR",
+  "title": "Update client list",
+  "assignments": {
+    "fbab97d0-4932-4511-b675-204639209557": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "orderHint": " !"
     }
   },
-  "planId": "planId-value",
-  "bucketId": "bucketId-value",
-  "title": "title-value",
-  "orderHint": "orderHint-value",
-  "assigneePriority": "assigneePriority-value"
 }
 ```
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
@@ -70,28 +60,32 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 458
+Content-length: 677
 
 {
   "createdBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
     "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "id": "6463a5ce-2119-4198-9f2a-628761df4a62"
     }
   },
-  "planId": "planId-value",
-  "bucketId": "bucketId-value",
-  "title": "title-value",
-  "orderHint": "orderHint-value",
-  "assigneePriority": "assigneePriority-value"
+  "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
+  "bucketId": "hsOf2dhOJkqyYYZEtdzDe2QAIUCR",
+  "title": "Update client list",
+  "orderHint": "85752723360752+",
+  "createdDateTime": "2015-03-25T18:36:49.2407981Z",
+  "assignments": {
+    "fbab97d0-4932-4511-b675-204639209557": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "assignedBy": {
+        "user": {
+          "id": "6463a5ce-2119-4198-9f2a-628761df4a62"
+        }
+      },
+      "assignedDateTime": "2015-03-25T18:36:49.2407981Z",
+      "orderHint": "RWk1"
+    }
+  },
+  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
 

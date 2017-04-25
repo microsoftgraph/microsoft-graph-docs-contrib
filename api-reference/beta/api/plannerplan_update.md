@@ -36,11 +36,10 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/planner/plans/<id>
 Content-type: application/json
-Content-length: 381
+Content-length: 29
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
   "title": "title-value"
 }
 ```

@@ -35,11 +35,11 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/<id>/progressTaskBoardFormat
 Content-type: application/json
-Content-length: 36
+Content-length: 34
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
-  "orderHint": "orderHint-value"
+  "orderHint": "A6673H Ejkl!"
 }
 ```
 ##### Response
@@ -52,11 +52,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 56
+Content-length: 68
 
 {
-  "id": "id-value",
-  "orderHint": "orderHint-value"
+  "id": "hsOf2dhOJkqyYYZEtdzDe2QAIUCR",
+  "orderHint": "C3665D"
 }
 ```
 

@@ -40,11 +40,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 56
+Content-length: 76
 
 {
-  "id": "id-value",
-  "orderHint": "orderHint-value"
+  "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh",
+  "orderHint": "85752723360752+"
 }
 ```
 

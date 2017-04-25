@@ -36,38 +36,37 @@ Here is an example of the request.
   "name": "update_plannertaskdetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/planner/tasks/<id>/details
+PATCH https://graph.microsoft.com/beta/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
 Content-type: application/json
-Content-length: 123
+Content-length: 857
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
-  "description": "description-value",
-  "previewType": "previewType-value",
+  "previewType": "noPreview",
   "references": {
-    "http%3A//www%2Emicrosoft%2Ecom":{ // create new item
+    "http%3A//developer%2Emicrosoft%2Ecom":{
       "@odata.type": "microsoft.graph.plannerExternalReference",
-      "alias": "String",
-      "previewPriority": "String",
-      "type": "String"
+      "alias": "Documentation",
+      "previewPriority": " !",
+      "type": "Other"
     },
-    "http%3A//developer%2Emicrosoft%2Ecom":{ // update existing item
+    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer":{
       "@odata.type": "microsoft.graph.plannerExternalReference",
-      "previewPriority": "String",
+      "previewPriority": "  !!",
     },
-    "http%3A//www%2Ebing%2Ecom": null // remove existing item
+    "http%3A//www%2Ebing%2Ecom": null
   },
   "checklist": {
-    "95e27074-6c4a-447a-aa24-9d718a0b86fa":{ // create new item
+    "95e27074-6c4a-447a-aa24-9d718a0b86fa":{
       "@odata.type": "microsoft.graph.plannerChecklistItem",
-      "orderHint": "String",
-      "title": "New item"
+      "title": "Update task details",
+      "ischecked": true
     },
-    "f9dbaa2b-98c7-48f3-8ee0-bad8c9ab695e":{ // update existing item
+    "d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff":{
       "@odata.type": "microsoft.graph.plannerChecklistItem",
       "isChecked": true,
     },
-    "a93c93c5-10a6-4167-9551-8bafa09967a7": null // remove existing item
+    "a93c93c5-10a6-4167-9551-8bafa09967a7": null
   }
 }
 ```
@@ -81,16 +80,64 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 143
+Content-length: 1793
 
 {
-  "description": "description-value",
-  "previewType": "previewType-value",
+  "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
+  "previewType": "automatic",
   "references": {
+    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer": {
+      "@odata.type": "#microsoft.graph.plannerExternalReference",
+      "alias": "Graph Explorer",
+      "type": "Other",
+      "previewPriority": "8599273",
+      "lastModifiedBy": {
+        "user": {
+          "id": "fbab97d0-4932-4511-b675-204639209557"
+        }
+      },
+      "lastModifiedDateTime": "2017-04-24T22:52:29.814Z"
+    },
+    "http%3A//developer%2Emicrosoft%2Ecom": {
+      "@odata.type": "#microsoft.graph.plannerExternalReference",
+      "alias": "Documentation",
+      "type": "Other",
+      "previewPriority": "90727736",
+      "lastModifiedBy": {
+        "user": {
+          "id": "fbab97d0-4932-4511-b675-204639209557"
+        }
+      },
+      "lastModifiedDateTime": "2017-04-24T22:52:29.814Z"
+    }
   },
   "checklist": {
+    "d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff": {
+      "@odata.type": "#microsoft.graph.plannerChecklistItem",
+      "isChecked": true,
+      "title": "Try reading task details",
+      "orderHint": "a93c93c5^",
+      "lastModifiedBy": {
+        "user": {
+          "id": "fbab97d0-4932-4511-b675-204639209557"
+        }
+      },
+      "lastModifiedDateTime": "2017-04-24T22:52:29.814Z"
+    },
+    "95e27074-6c4a-447a-aa24-9d718a0b86f": {
+      "@odata.type": "#microsoft.graph.plannerChecklistItem",
+      "isChecked": true,
+      "title": "Update task details",
+      "orderHint": "8587094707721254251P]",
+      "lastModifiedBy": {
+        "user": {
+          "id": "fbab97d0-4932-4511-b675-204639209557"
+        }
+      },
+      "lastModifiedDateTime": "2017-04-24T22:52:29.814Z"
+    }
   },
-  "id": "id-value"
+  "id": "gcrYAaAkgU2EQUvpkNNXLGQAGTtu"
 }
 ```
 

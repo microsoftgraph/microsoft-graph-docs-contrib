@@ -47,9 +47,17 @@ The custom columns in the bucket task board are represented by [bucket](plannerb
 
 All the ordering is controlled by the principles identified in [Planner order hints](planner_order_hint_format.md).
 
-## Common error conditions
+## Planner resource versioning
 
-The information in this section supplements the information on [general error cases](../../../overview/errors.md) specifically for the Planner API.
+Planner versions all resources using etags. These etags are returned with `@odata.etag` property on each resource, and `PATCH` and `DETELE` requests require the last etag known by the client to be specified with `If-Match` header.
+Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which etag for the same resource is newer by calculating which etag value is greater in ordinal string comparison. 
+Each resource has a separate etag. Etag values for different resources, including those with containment relationships, cannot be compared.
+The client apps are expected to handle twoversioning related error status codes 409 and 412 by reading the latest version of the item, and resolving the conflicting changes.
+
+
+## Common Planner error conditions
+
+In addition to [general errors](../../../overview/errors.md) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
 
 ### 400 Bad request
 
@@ -60,10 +68,10 @@ There are several common cases where the `POST` and `PATCH` requests can get a 4
 
 ### 403 Forbidden
 
-In addition to the generic error cases, Planner API also returns this status code when a service defined limit has been exceeded. If this is the case, `code` property on the error resource type will indicate the type of the limit exceeded by the request.
+In addition to the general errors, the Planner API also returns this status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
 The possible values for the limit types include:
 
-| code  | Description|
+| Value  | Description|
 |:------------------|:----------|
 |MaximumProjectsOwnedByUser|Maximum number of Plans owned by a group limit has been exceeded. This limit is based on `owner` property on [plannerPlan](plannerPlan.md) resource.|
 |MaximumProjectsSharedWithUser|Maximum number of Plans shared with a user limit has been exceeded.  This limit is based on `sharedWith` property on [plannerPlanDetails](plannerPlanDetails.md) resource.|

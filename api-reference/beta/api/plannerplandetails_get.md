@@ -28,7 +28,7 @@ Here is an example of the request.
   "name": "get_plannerplandetails"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/plans/<id>/details
+GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -40,20 +40,22 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 197
+Content-length: 373
 
 {
   "sharedWith": {
+    "aaa27244-1db4-476a-a5cb-004607466324" : true,
+    "6463a5ce-2119-4198-9f2a-628761df4a62" : true
   },
   "categoryDescriptions": {
-    "category1": "1-value",
-    "category2": "2-value",
-    "category3": "3-value",
-    "category4": "4-value",
-    "category5": "5-value",
-    "category6": "6-value"
+    "category1": "Indoors",
+    "category2": "Outdoors",
+    "category3": null,
+    "category4": null,
+    "category5": "Needs materials",
+    "category6": "Needs equipment"
   },
-  "id": "id-value"
+  "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
 

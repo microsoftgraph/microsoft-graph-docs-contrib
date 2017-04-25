@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "get_plannerbuckettaskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/tasks/<id>/bucketTaskBoardFormat
+GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/bucketTaskBoardFormat
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -41,11 +41,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 56
+Content-length: 76
 
 {
-  "id": "id-value",
-  "orderHint": "orderHint-value"
+  "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh",
+  "orderHint": "85752723360752+"
 }
 ```
 
