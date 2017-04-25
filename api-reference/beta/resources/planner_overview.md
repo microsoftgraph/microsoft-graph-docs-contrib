@@ -56,7 +56,6 @@ The client apps are expected to handle twoversioning related error status codes 
 
 <a id="errors" />
 
-
 ## Common Planner error conditions
 
 In addition to [general errors](../../../overview/errors.md) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
