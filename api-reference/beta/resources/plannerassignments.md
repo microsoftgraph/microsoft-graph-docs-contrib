@@ -10,13 +10,21 @@ Properties of an Open Type can be defined by the client. In this case though, th
 
 Example:
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.plannerAssignments"
+}-->
+
 ```json
 {
   "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47": null,
   "4e98f8f1-bb03-4015-b8e0-19bb370949d8": { 
-	"@odata.type": "microsoft.graph.plannerAssignment"
-	"orderHint": "String"
-	}
+      "@odata.type": "microsoft.graph.plannerAssignment",
+      "orderHint": "String"
+    }
 }
 ```
 This example removes user with ID ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 from the assignees list of the task, while changing the order of the assignee with user ID 4e98f8f1-bb03-4015-b8e0-19bb370949d8. 
