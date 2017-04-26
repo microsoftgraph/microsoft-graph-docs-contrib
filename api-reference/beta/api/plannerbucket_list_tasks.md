@@ -22,7 +22,7 @@ Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [plannerTask](../resources/plannertask.md) objects in the response body.
 
-This method can return any of the [HTTP status codes](../../../overview/errors.md). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#errors).
+This method can return any of the [HTTP status codes](../../../overview/errors.md). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
 
 ### Example
 ##### Request
@@ -63,7 +63,7 @@ Content-length: 833
       "createdDateTime": "2015-03-25T18:36:49.2407981Z",
       "assignments": {
         "fbab97d0-4932-4511-b675-204639209557": {
-          "@odata.type": "#microsoft.graph.plannerAssignment",
+          "@odata.type": "#microsoft.graph.plannerassignment",
           "assignedBy": {
             "user": {
               "id": "1e9955d2-6acd-45bf-86d3-b546fdc795eb"
