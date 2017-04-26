@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 GET /planner/tasks
 ```
 ### Optional query parameters
-This method requires createdBy [filter](http://graph.microsoft.io/docs/overview/query_parameters) to be specified.
+This method requires planId [filter](http://graph.microsoft.io/docs/overview/query_parameters) to be specified.
 
 ### Request headers
 | Name      |Description|
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_tasks"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/tasks
+GET https://graph.microsoft.com/beta/planner/tasks?$filter=planId eq 'xqQg5FS2LkCp935s-FIFm2QAFkHM'
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
