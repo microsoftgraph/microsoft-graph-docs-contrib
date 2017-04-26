@@ -54,8 +54,6 @@ Planner allows changes to older versions of resources, if the intended change do
 Each resource has a separate etag. Etag values for different resources, including those with containment relationships, cannot be compared.
 The client apps are expected to handle two versioning related error status codes 409 and 412 by reading the latest version of the item, and resolving the conflicting changes.
 
-<a id="errors" />
-
 ## Common Planner error conditions
 
 In addition to [general errors](../../../overview/errors.md) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
