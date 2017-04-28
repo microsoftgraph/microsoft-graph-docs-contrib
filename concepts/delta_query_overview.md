@@ -1,4 +1,4 @@
-#  Use delta query to track changes in Microsoft Graph data (preview)
+#  Use delta query to track changes in Microsoft Graph data
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
@@ -7,9 +7,9 @@ Delta query enables applications to discover newly created, updated, or deleted 
 The typical call pattern is as follows:
 
 1.  The application begins by calling a GET request with the delta function on the desired resource.
-2.  Microsoft Graph will send a response containing the requested resource and a [state token](#state-tokens).
+2.  Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
 
-     a.  If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
+     a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
 
      b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
      
@@ -49,22 +49,22 @@ and only appear when the client explicitly chooses to track changes to the relat
 
 -   Removed instances are represented using only their **id** and an `@removed` node. The `@removed` node may include additional information about why the instance was removed.
 
-> **Note on future change**: Removed instances currently appear with the `@removed` node in the following format *“@removed” : “reason for removal”*. However, there will be a breaking change introduced in the future. Before delta query moves from /beta to /v1.0, an object will be nested inside of the removed node to give more information. For example, *@removed {reason: “reason for removal”}*. This object can be extended in the future to include additional metadata about the removal.
+> **Note on future change**: Removed instances currently appear with the `@removed` node in the following format *“@removed” : “reason for removal”*. However, there will be a breaking change introduced in the future. Before delta query moves from /v1.0 to /v1.0, an object will be nested inside the removed node to give more information. For example, *@removed {reason: “reason for removal”}*. This object can be extended in the future to include additional metadata about the removal.
 
 ## Supported resources
 
-Delta query is currently supported in preview on the Microsoft Graph /beta endpoint for the following resources:
+Delta query is currently supported for the following resources:
 
 | **Resource collection** | **API** |
 |:------ | :------ |
-| Events in a calendar view (date range) of the primary calendar | [delta](../api-reference/beta/api/event_delta.md) function of the [event](../api-reference/beta/resources/event.md) resource |
-| Groups | [delta](../api-reference/beta/api/group_delta.md) function of the [group](../api-reference/beta/resources/group.md) resource |
-| Mail folders | [delta](../api-reference/beta/api/mailfolder_delta.md) function of the [mailFolder](../api-reference/beta/resources/mailFolder.md) resource |
-| Messages in a folder | [delta](../api-reference/beta/api/message_delta.md) function of the [message](../api-reference/beta/resources/message.md) resource | 
-| Personal contact folders | [delta](../api-reference/beta/api/contactfolder_delta.md) function of the [contactFolder](../api-reference/beta/resources/contactfolder.md) resource |
-| Personal contacts in a folder | [delta](../api-reference/beta/api/contact_delta.md) function of the [contact](../api-reference/beta/resources/contact.md) resource |
-| Users | [delta](../api-reference/beta/api/user_delta.md) function of the [user](../api-reference/beta/resources/user.md) resource | 
-| Drive items\* | [delta](../api-reference/beta/api/item_delta.md) function of the [driveItem](../api-reference/beta/resources/driveItem.md) resource |
+| Events in a calendar view (date range) of the primary calendar | [delta](../api-reference/v1.0/api/event_delta.md) function of the [event](../api-reference/v1.0/resources/event.md) resource |
+| Groups | [delta](../api-reference/v1.0/api/group_delta.md) function of the [group](../api-reference/v1.0/resources/group.md) resource |
+| Mail folders | [delta](../api-reference/v1.0/api/mailfolder_delta.md) function of the [mailFolder](../api-reference/v1.0/resources/mailFolder.md) resource |
+| Messages in a folder | [delta](../api-reference/v1.0/api/message_delta.md) function of the [message](../api-reference/v1.0/resources/message.md) resource | 
+| Personal contact folders | [delta](../api-reference/v1.0/api/contactfolder_delta.md) function of the [contactFolder](../api-reference/v1.0/resources/contactfolder.md) resource |
+| Personal contacts in a folder | [delta](../api-reference/v1.0/api/contact_delta.md) function of the [contact](../api-reference/v1.0/resources/contact.md) resource |
+| Users | [delta](../api-reference/v1.0/api/user_delta.md) function of the [user](../api-reference/v1.0/resources/user.md) resource | 
+| Drive items\* | [delta](../api-reference/v1.0/api/item_delta.md) function of the [driveItem](../api-reference/v1.0/resources/driveItem.md) resource |
 
 
 > \* Tracking changes to drives and their children is already supported in v1.0. The usage pattern is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:

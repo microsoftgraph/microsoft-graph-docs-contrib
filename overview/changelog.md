@@ -2,6 +2,13 @@
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
+## May 2017
+
+### Delta query change
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+
 ## April 2017
 
 ### Application and servicePrincipal API changes

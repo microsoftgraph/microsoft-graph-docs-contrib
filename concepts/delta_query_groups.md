@@ -1,4 +1,4 @@
-# Get incremental changes for groups (preview)
+# Get incremental changes for groups
 
 [Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](../api-reference/beta/api/group_delta.md) function calls. Delta query enables you discover changes to groups 
 without having to fetch the entire set of groups from Microsoft Graph and compare changes.
@@ -35,9 +35,9 @@ Note the following:
 GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description
 ```
 
-### Initial response
+## Initial response
 
-If successful, this method returns `200, OK` response code and [group](../api-reference/beta/resources/group.md) collection object in the response body. Assuming the entire set of groups is too large, the response will also include a nextLink state token.
+If successful, this method returns `200 OK` response code and [group](../api-reference/beta/resources/group.md) collection object in the response body. Assuming the entire set of groups is too large, the response will also include a nextLink state token.
 
 In this example, a nextLink URL is returned indicating there are additional pages of data to be retrieved in the session. The $select query parameter from the initial request is encoded into the nextLink URL.
 
