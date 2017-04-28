@@ -18,7 +18,7 @@ actions such as copy, move, or send.
 Message bodies can be in HTML or text format.
 
 You can use well-known folder names such as `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users.
-For example, you can get messages in the Outlook **Sent Items** folder of the signed-in user, without first getting the folder ID.
+For example, you can get messages in the Outlook **Sent Items** folder of the signed-in user, without first getting the folder ID:
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
@@ -28,7 +28,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 The **message** resource exposes properties such as **categories**, **conversationId**, **flag**, and **importance** that correspond to features 
 available in the UI, allowing apps to automate or integrate with the built-in Outlook user experience. 
 
-The Microsoft Graph API also provides methods and actions that support common use cases of messages. 
+The Microsoft Graph API also provides methods and actions that support common use cases of messages, as listed in the following table.
 
 | Use cases		   | REST resources	| See also |
 |:---------------|:--------|:----------|
