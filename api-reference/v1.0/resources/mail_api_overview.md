@@ -12,7 +12,7 @@ or the `me` shortcut alias for the signed-in user.
 Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
 Messages and mail folders are identified by their **id** property, obtainable from `GET` operations. 
 
->**Note:** In general, do not assume that **message** and **mailfolder** IDs are unique and unchanging within a mailbox. They might change after certain 
+>**Note:** In general, do not assume that **message** and **mailfolder** IDs are unique and immutable within a mailbox. They might change after certain 
 actions such as copy, move, or send. 
 
 Message bodies can be in HTML or text format.
