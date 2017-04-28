@@ -201,7 +201,7 @@
     <Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
     <Item text="Delete attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
   </Item>
-  <Item text="Outlook mail" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Outlook Mail APIs">
+  <Item text="Outlook mail" url="/en-us/api-reference/v1.0/resources/mail_api_overview" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Outlook Mail APIs">
     <Item text="Message" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Mail APIs">
       <Item text="List messages" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
       <Item text="Create message" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Create Message, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Message." />
@@ -844,7 +844,7 @@
       <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
       <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
     </Item>
-    <Item text="Outlook mail" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Outlook mail" url="/en-us/api-reference/beta/resources/mail_api_overview" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
       <Item text="Message" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
         <Item text="List messages" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
         <Item text="Create message" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Create Message, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Message." />
