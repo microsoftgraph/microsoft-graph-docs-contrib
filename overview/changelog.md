@@ -8,7 +8,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Change|Beta| Adminstrative unit APIs will be updated in preview (beta). The first set of changes will be applied on May xx, 2017. The changes include the following property renaming:<br />- roleMemberInfo property type to identity complex type for scopedRoleMembership entity<br />- Navigation property scopedAdministratorOf to scopedRoleMemberOf for user entity<br />- Navigation property scopedAdministrators to scopedRoleMembers for administrativeUnit entity<br />- Navigation property scopedAdministrators to scopedMembers for directoryRole entity |
+|Change|Beta| Adminstrative unit APIs will be updated in preview (beta). The first set of changes will be applied on May 3, 2017. The changes include the following property renaming:<br />- roleMemberInfo property type to identity complex type for scopedRoleMembership entity<br />- Navigation property scopedAdministratorOf to scopedRoleMemberOf for user entity<br />- Navigation property scopedAdministrators to scopedRoleMembers for administrativeUnit entity<br />- Navigation property scopedAdministrators to scopedMembers for directoryRole entity |
 
 ### Application and servicePrincipal API changes
 
