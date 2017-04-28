@@ -38,8 +38,9 @@
   		<Item text="Example: Add custom data with open extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
   		<Item text="Example: Add custom data with schema extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
   	</Item>
-  	<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
   	<Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
+	<Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
+	<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
   	<Item text="Sovereign deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
   </Item>
   <Item text="horizontalline" url="/" IsSeparation="true" />

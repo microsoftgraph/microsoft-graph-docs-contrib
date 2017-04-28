@@ -24,6 +24,8 @@ In the request body, supply a JSON representation of [plannerBucket](../resource
 ### Response
 If successful, this method returns `201, Created` response code and [plannerBucket](../resources/plannerbucket.md) object in the response body.
 
+This method can return any of the [HTTP status codes](../../../overview/errors.md). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
+
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,12 +36,12 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/planner/buckets
 Content-type: application/json
-Content-length: 88
+Content-length: 92
 
 {
-  "name": "name-value",
-  "planId": "planId-value",
-  "orderHint": "orderHint-value"
+  "name": "Advertising",
+  "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
+  "orderHint": " !"
 }
 ```
 In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.
@@ -53,13 +55,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 108
+Content-length: 145
 
 {
-  "name": "name-value",
-  "planId": "planId-value",
-  "orderHint": "orderHint-value",
-  "id": "id-value"
+  "name": "Advertising",
+  "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
+  "orderHint": "85752723360752+",
+  "id": "hsOf2dhOJkqyYYZEtdzDe2QAIUCR"
 }
 ```
 
