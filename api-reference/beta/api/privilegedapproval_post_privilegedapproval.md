@@ -1,12 +1,13 @@
-# privilegedApproval: requestApproval
-Request approval
+# Create privilegedApproval
 
+Use this API to create a new privilegedApproval.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedApproval/<id>/requestApproval
+POST /privilegedApproval
 
 ```
 ### Request headers
@@ -15,35 +16,33 @@ POST /privilegedApproval/<id>/requestApproval
 | Authorization  | Bearer <code>|
 
 ### Request body
-In the request body, provide a JSON object with the following parameters.
+In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|approvalDurationInHours|Double||
-|requestorReason|String||
 
 ### Response
-If successful, this method returns `200, OK` response code and [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
+If successful, this method returns `201, Created` response code and [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
 
 ### Example
-Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "privilegedapproval_requestapproval"
+  "name": "create_privilegedapproval_from_privilegedapproval"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/privilegedApproval/<id>/requestApproval
+POST https://graph.microsoft.com/beta/privilegedApproval
 Content-type: application/json
-Content-length: 81
+Content-length: 180
 
 {
-  "approvalDurationInHours": 1,
-  "requestorReason": "requestorReason-value"
+  "userId": "userId-value",
+  "roleId": "roleId-value",
+  "approvalType": "approvalType-value",
+  "approvalState": "approvalState-value",
+  "approvalDuration": "datetime-value"
 }
 ```
-
+In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -52,9 +51,9 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.privilegedApproval"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 193
+Content-length: 200
 
 {
   "id": "id-value",
@@ -62,7 +61,7 @@ Content-length: 193
   "roleId": "roleId-value",
   "approvalType": "approvalType-value",
   "approvalState": "approvalState-value",
-  "approvalDurationInHours": 1
+  "approvalDuration": "datetime-value"
 }
 ```
 
@@ -70,7 +69,7 @@ Content-length: 193
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "privilegedApproval: requestApproval",
+  "description": "Create privilegedApproval",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
