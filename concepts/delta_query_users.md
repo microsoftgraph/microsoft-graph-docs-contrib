@@ -175,9 +175,12 @@ Content-type: application/json
       "id":"25dcffff-959e-4ece-9973-e5d9b800e8cc"
     },
     {
-      "removed":"changed",
-      "id":"8ffff70c-1c63-4860-b963-e34ec660931d"
+      "id":"8ffff70c-1c63-4860-b963-e34ec660931d",
+      "@removed": {
+         "reason": "changed"
+      }
     }
+  ]
 }
 ```
 ## See also

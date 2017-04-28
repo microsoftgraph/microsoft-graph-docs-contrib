@@ -47,9 +47,7 @@ For users and groups, there are restrictions on using some query parameters:
 -   Changes to relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`, 
 and only appear when the client explicitly chooses to track changes to the relationship by using the `$select` parameter.
 
--   Removed instances are represented using only their **id** and an `@removed` node. The `@removed` node may include additional information about why the instance was removed.
-
-> **Note on future change**: Removed instances currently appear with the `@removed` node in the following format *“@removed” : “reason for removal”*. However, there will be a breaking change introduced in the future. Before delta query moves from /v1.0 to /v1.0, an object will be nested inside the removed node to give more information. For example, *@removed {reason: “reason for removal”}*. This object can be extended in the future to include additional metadata about the removal.
+-   Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}. Possible @removed reasons can be *changed* or *deleted*. *Changed* indicates the item was deleted and may be restored from [deletedItems](../api-reference/beta/resources/directory.md). *Deleted* indicates the item is [permanently deleted](../api-reference/beta/api/directory_deleteditems_delete.md).
 
 ## Supported resources
 
