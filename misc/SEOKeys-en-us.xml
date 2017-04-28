@@ -595,7 +595,6 @@
 		  <Item text="List plan tasks" url="/en-us/api-reference/beta/api/plannerplan_list_tasks" />
 		  <Item text="List plan buckets" url="/en-us/api-reference/beta/api/plannerplan_list_buckets" />
 		  <Item text="Update plan" url="/en-us/api-reference/beta/api/plannerplan_update" />
-		  <Item text="Delete plan" url="/en-us/api-reference/beta/api/plannerplan_delete" />
 	  </Item>
 	  <Item text="Task" url="/en-us/api-reference/beta/resources/plannertask" >
 		  <Item text="Create task" url="/en-us/api-reference/beta/api/planner_post_tasks" />
