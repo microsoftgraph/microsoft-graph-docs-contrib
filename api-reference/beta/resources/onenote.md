@@ -8,7 +8,7 @@ All calls to the OneNote service through the Microsoft Graph API use this servic
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-The location can be user notebooks on Office 365 and consumer OneDrive and group notebooks on Office 365. SharePoint site-hosted notebooks is currently not supported. 
+The location can be user notebooks on Office 365 or consumer OneDrive, and group notebooks on Office 365. SharePoint site-hosted notebooks are currently not supported. 
 
 **User notebooks** To access personal notebooks on consumer OneDrive or OneDrive for Business, use one of the following URLs:
 
