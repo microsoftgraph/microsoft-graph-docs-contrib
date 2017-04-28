@@ -84,7 +84,7 @@ by providing a [delta](../api/group_delta.md) function.
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter.|
 |theme|String|Specifies an Office 365 group's color theme. Possible values are **Teal**, **Purple**, **Green**, **Blue**, **Pink**, **Orange** or **Red**.|
 |unseenCount|Int32|Count of posts that the current  user has not seen since his last visit.|
-|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
+|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, **HiddenMembership**, or empty (which is interpreted as **Public**).|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -100,7 +100,7 @@ by providing a [delta](../api/group_delta.md) function.
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the group. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
-|notes|[Notes](notes.md)| Read-only.|
+|onenote|[OneNote](onenote.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
@@ -127,7 +127,7 @@ Here is a JSON representation of the resource
     "events",
     "memberOf",
     "members",
-    "notes",
+    "onenote",
     "owners",
     "photo",
     "photos",    

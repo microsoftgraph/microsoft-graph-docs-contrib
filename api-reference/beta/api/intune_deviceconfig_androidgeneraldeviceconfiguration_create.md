@@ -6,7 +6,7 @@ Create a new [androidGeneralDeviceConfiguration](../resources/intune_deviceconfi
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -65,7 +65,7 @@ The following table shows the properties that are required when you create a and
 |powerOffBlocked|Boolean|Indicates whether or not to block powering off the device.|
 |factoryResetBlocked|Boolean|Indicates whether or not to block user performing a factory reset.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to block screenshots.|
-|deviceSharingBlocked|Boolean|Indicates whether or not to block device sharing mode.|
+|deviceSharingAllowed|Boolean|Indicates whether or not to allow device sharing mode.|
 |storageBlockGoogleBackup|Boolean|Indicates whether or not to block Google Backup.|
 |storageBlockRemovableStorage|Boolean|Indicates whether or not to block removable storage usage.|
 |storageRequireDeviceEncryption|Boolean|Indicates whether or not to require device encryption.|
@@ -137,7 +137,7 @@ Content-length: 2102
   "powerOffBlocked": true,
   "factoryResetBlocked": true,
   "screenCaptureBlocked": true,
-  "deviceSharingBlocked": true,
+  "deviceSharingAllowed": true,
   "storageBlockGoogleBackup": true,
   "storageBlockRemovableStorage": true,
   "storageRequireDeviceEncryption": true,
@@ -207,7 +207,7 @@ Content-Length: 2210
   "powerOffBlocked": true,
   "factoryResetBlocked": true,
   "screenCaptureBlocked": true,
-  "deviceSharingBlocked": true,
+  "deviceSharingAllowed": true,
   "storageBlockGoogleBackup": true,
   "storageBlockRemovableStorage": true,
   "storageRequireDeviceEncryption": true,
