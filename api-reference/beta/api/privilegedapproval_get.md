@@ -49,7 +49,7 @@ Content-length: 193
   "roleId": "roleId-value",
   "approvalType": "approvalType-value",
   "approvalState": "approvalState-value",
-  "approvalDurationInHours": 99
+  "approvalDuration": "datetime-value"
 }
 ```
 
