@@ -28,7 +28,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 The **message** resource exposes properties such as **categories**, **conversationId**, **flag**, and **importance** that correspond to features 
 available in the UI, allowing apps to automate or integrate with the built-in Outlook user experience. 
 
-The Microsoft Graph API also provides methods and actions that support common use cases of messages, as listed in the following table.
+The Microsoft Graph API also provides methods and actions that support common use cases of messages.
 
 | Use cases		   | REST resources	| See also |
 |:---------------|:--------|:----------|
