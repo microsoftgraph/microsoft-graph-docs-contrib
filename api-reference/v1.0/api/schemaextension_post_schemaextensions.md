@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of the [schemaExtension](../re
   "name": "create_schemaextension_from_schemaextensions_1"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/schemaExtensions
+POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
 
 {
@@ -122,7 +122,7 @@ properties in the [schemaExtension](../resources/schemaextension.md) object. Mic
   "name": "create_schemaextension_from_schemaextensions_2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/schemaExtensions
+POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
 
 {

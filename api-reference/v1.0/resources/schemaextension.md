@@ -6,7 +6,6 @@ The [schema extension example](../../../concepts/extensibility_schema_groups.md)
 
 Schema extensions are supported for the following resource types:
 
- - [administrativeUnit](administrativeunit.md)
  - [contact](contact.md)
  - [device](device.md)
  - [event](event.md) 
@@ -34,7 +33,7 @@ Schema extensions are supported for the following resource types:
 |owner|String|The appId of the application that created the schema extension. Read-only.|
 |properties|[extensionSchemaProperty](extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |status|String|The lifecycle state of the schema extension. Possible states are **InDevelopment**, **Available**, and **Deprecated**. Automatically set to **InDevelopment** on creation. [Schema extensions](../../../concepts/extensibility_overview.md#schema-extensions) provides more information on the possible state transitions and behaviors.|
-|targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from **administrativeUnit**, **contact**, **device**, **event**, **group**, **message**, **organization**, **post**, or **user**.|
+|targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from **contact**, **device**, **event**, **group**, **message**, **organization**, **post**, or **user**.|
 
 ## JSON representation
 

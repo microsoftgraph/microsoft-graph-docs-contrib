@@ -22,16 +22,16 @@ navigation property of that instance to identify the extension, and do a `DELETE
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+DELETE /administrativeUnits/{Id}/extensions/{extensionId}
+DELETE /devices/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 DELETE /groups/{id}/extensions/{extensionId}
 DELETE /groups/{id}/events/{id}/extensions/{extensionId}
 DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /administrativeUnits/{Id}/extensions/{extensionId}
-DELETE /devices/{Id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 DELETE /organization/{Id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
