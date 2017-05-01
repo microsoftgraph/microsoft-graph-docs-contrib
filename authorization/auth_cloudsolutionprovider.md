@@ -38,7 +38,7 @@ Finally grant your partner-managed app those configured permissions for all your
 2. Find the group that represents the *Adminagents*.
 
 ```PowerShell
-    $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'
+    $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'"
 ```
 
 3. Find the service principal that has the same *appId* as your app.
