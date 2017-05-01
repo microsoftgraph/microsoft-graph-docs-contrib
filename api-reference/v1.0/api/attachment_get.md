@@ -110,7 +110,6 @@ Content-length: 199
   "lastModifiedDateTime": "2016-01-01T12:00:00Z",
   "id": "id-value",
   "isInline": false,
-  "isContactPhoto": false,
   "name": "name-value",
   "size": 99
 }
