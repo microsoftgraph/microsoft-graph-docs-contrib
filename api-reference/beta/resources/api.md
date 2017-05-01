@@ -23,7 +23,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "acceptedAccessTokenVersion": 1024,
+  "acceptedAccessTokenVersion": 1,
   "publishedPermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}]
 }
 

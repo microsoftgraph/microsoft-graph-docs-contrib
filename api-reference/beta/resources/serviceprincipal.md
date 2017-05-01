@@ -29,7 +29,6 @@ Here is a JSON representation of the resource
   "appId": "string",
   "appOwnerOrganizationId": "guid",
   "appRoleAssignmentRequired": true,
-  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "displayName": "string",
   "errorUrl": "string",
   "homepage": "string",

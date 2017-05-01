@@ -20,7 +20,6 @@ Here is a JSON representation of the resource
 {
   "allowPublicClient": true,
   "api": {"@odata.type": "microsoft.graph.api"},
-  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "applicationAliases": ["String"],
   "createdDateTime": "String (timestamp)",
   "displayName": "String",

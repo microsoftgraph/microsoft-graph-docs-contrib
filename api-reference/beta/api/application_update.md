@@ -69,19 +69,6 @@ Content-length: 636
     }
   ],
   "appId": "appId-value",
-  "appRoles": [
-    {
-      "allowedMemberTypes": [
-        "allowedMemberTypes-value"
-      ],
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "id": "id-value",
-      "isEnabled": true,
-      "origin": "origin-value",
-      "value": "value-value"
-    }
-  ],
   "availableToOtherOrganizations": true,
   "displayName": "displayName-value",
   "errorUrl": "errorUrl-value"
@@ -101,14 +88,13 @@ Content-length: 1044
 
 {
   "api": {
-    "acceptedAccessTokenVersion": 99,
+    "acceptedAccessTokenVersion": 1,
     "publishedPermissionScopes": [
       {
         "adminConsentDescription": "adminConsentDescription-value",
         "adminConsentDisplayName": "adminConsentDisplayName-value",
         "id": "id-value",
         "isEnabled": true,
-        "origin": "origin-value",
         "type": "type-value",
         "userConsentDescription": "userConsentDescription-value",
         "userConsentDisplayName": "userConsentDisplayName-value",
@@ -119,19 +105,6 @@ Content-length: 1044
   "allowPublicClient": true,
   "applicationAliases": [
     "applicationAliases-value"
-  ],
-  "appRoles": [
-    {
-      "allowedMemberTypes": [
-        "allowedMemberTypes-value"
-      ],
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "id": "id-value",
-      "isEnabled": true,
-      "origin": "origin-value",
-      "value": "value-value"
-    }
   ],
   "createdDateTime": "datetime-value",
   "installedClients": {
