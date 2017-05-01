@@ -6,7 +6,7 @@ Read properties and relationships of the [iosGeneralDeviceConfiguration](../reso
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7659
+Content-Length: 7753
 
 {
   "value": {
@@ -92,6 +92,7 @@ Content-Length: 7659
     "cellularBlockDataRoaming": true,
     "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
     "cellularBlockPerAppDataModification": true,
+    "cellularBlockPersonalHotspot": true,
     "cellularBlockVoiceRoaming": true,
     "certificatesBlockUntrustedTlsCertificates": true,
     "classroomAppBlockRemoteScreenObservation": true,
@@ -213,6 +214,7 @@ Content-Length: 7659
     "messagesBlocked": true,
     "notificationsBlockSettingsModification": true,
     "passcodeBlockFingerprintUnlock": true,
+    "passcodeBlockFingerprintModification": true,
     "passcodeBlockModification": true,
     "passcodeBlockSimple": true,
     "passcodeExpirationDays": 6,

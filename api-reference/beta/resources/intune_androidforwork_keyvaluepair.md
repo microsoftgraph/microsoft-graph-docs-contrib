@@ -2,7 +2,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Generic type for string key value pairs.
+Key value pair for storing custom settings
 ## Properties
 |Property|Type|Description|
 |---|---|---|

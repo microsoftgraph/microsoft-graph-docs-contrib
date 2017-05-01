@@ -6,7 +6,7 @@ Get the deviceConfigurationGroupAssignments from the groupAssignments navigation
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -48,14 +48,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 215
+Content-Length: 244
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceConfigurationGroupAssignment",
       "id": "561d26c5-26c5-561d-c526-1d56c5261d56",
-      "targetGroupId": "Target Group Id value"
+      "targetGroupId": "Target Group Id value",
+      "excludeGroup": true
     }
   ]
 }

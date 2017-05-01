@@ -6,21 +6,14 @@ Update the properties of a [deviceConfigurationDeviceStateSummary](../resources/
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceConfigurationDeviceStateSummaries/
+PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries/
 ```
 
 ## Request headers
@@ -53,7 +46,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceConfigurationDeviceStateSummaries/
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationDeviceStateSummaries/
 Content-type: application/json
 Content-length: 214
 

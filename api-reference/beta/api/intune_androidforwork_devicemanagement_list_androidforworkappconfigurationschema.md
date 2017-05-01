@@ -6,7 +6,7 @@ Get the androidForWorkAppConfigurationSchemas from the androidForWorkAppConfigur
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All*
+*DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

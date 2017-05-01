@@ -23,6 +23,11 @@ The service is built on top of OData. To filter the results from the query, use 
 |[my](../api/privilegedroleassignment_my.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Get the requestor's role assignments. |
 |[Get privilegedRoleSettings](../api/privilegedrolesettings_get.md) | [privilegedRoleSettings](../resources/privilegedrolesettings.md)|Retrieve the properties of privilegedRoleSettings object. |
 |[Get privilegedRoleSummary](../api/privilegedrolesummary_get.md) | [privilegedRoleSummary](../resources/privilegedrolesummary.md)|Retrieve the privilegedRoleSummary object. |
+|[Get privilegedApproval](../api/privilegedApproval_get.md) |[privilegedApproval](privilegedApproval.md)| Get a privilegedApproval object.|
+|[List privilegedApproval](../api/privilegedapproval_list.md) | [privilegedApproval](privilegedapproval.md) collection |Get privilegedApproval object collection. |
+|[Create privilegedApproval](../api/privilegedapproval_post_privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)	|Create privilegedApproval object. |
+|[Update privilegedApproval](../api/privilegedapproval_update.md) | [privilegedApproval](privilegedapproval.md)	|Update privilegedApproval object. |
+|[myrequests](../api/privilegedapproval_myrequests.md) | [privilegedApproval](privilegedApproval.md) collection|Get the requestor's approval requests. |
 
 
 

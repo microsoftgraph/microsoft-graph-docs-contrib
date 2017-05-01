@@ -2,6 +2,9 @@
 
 An event in a calendar.
 
+This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -35,8 +38,8 @@ An event in a calendar.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) collection|The collection of attendees for the event.|
-|body|[itemBody](itembody.md)|The body of the message associated with the event.|
-|bodyPreview|String|The preview of the message associated with the event.|
+|body|[itemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
+|bodyPreview|String|The preview of the message associated with the event. It is in text format.|
 |categories|String collection|The categories associated with the event.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -145,8 +148,8 @@ Here is a JSON representation of the resource
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

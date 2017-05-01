@@ -6,21 +6,14 @@ Read properties and relationships of the [deviceConfigurationDeviceStateSummary]
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceConfigurationDeviceStateSummaries/
+GET /deviceManagement/deviceConfigurationDeviceStateSummaries/
 ```
 
 ## Optional query parameters
@@ -41,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [deviceConfigura
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceConfigurationDeviceStateSummaries/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationDeviceStateSummaries/
 ```
 
 ### Response

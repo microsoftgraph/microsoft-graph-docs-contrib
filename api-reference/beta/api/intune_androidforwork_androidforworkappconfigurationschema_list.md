@@ -6,7 +6,7 @@ List properties and relationships of the [androidForWorkAppConfigurationSchema](
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
+*DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

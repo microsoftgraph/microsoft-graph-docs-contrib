@@ -2,10 +2,13 @@
 
 This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](http://graph.microsoft.io/en-us/changelog).
 
+## Graph Quick Start
+April 30th, 2017 - There is a bug in quick-start flows have a bug in them in the Redirect URL is not properly configured for Asp.Net MVC, Node.js, Angular, PHP, Python, and Ruby. We are working to get the fix deployed to production. To workaround this issue, please see our [Getting Started Walkthroughs](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)
+
 ## Graph Explorer
 We have turned off Microsoft Account logons to the Graph Explorer due to a service issue. We are actively working on a fix and will update this text when it's ready.  
 
-Signins with Internet Explorer and Microsoft Edge were not working. That issue has been resolved as of February 2, 2017.
+Sign-ins with Internet Explorer and Microsoft Edge were not working. That issue has been resolved as of February 2, 2017.
 
 ## Users
 #### No instant access after creation
@@ -36,6 +39,9 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store
 or access the ICS URL in the calendar resource.
 * You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
+
+#### Using delta query
+For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
 ## Groups
 #### Policy
@@ -73,6 +79,8 @@ and is expected to be widely available by the end of January 2016.
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group 
 in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
+#### Using delta query
+For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
 ## Contacts
 
@@ -176,4 +184,6 @@ Additionally there are the following `/beta` limitations:
 
   >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
 
+## Delta query
 
+Tracking changes to relationships on users and groups is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* and has selected the *members* relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered soon.

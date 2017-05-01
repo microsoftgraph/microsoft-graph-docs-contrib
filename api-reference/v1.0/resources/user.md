@@ -1,6 +1,9 @@
-# user resource type
+﻿# user resource type
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+
+This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+
 
 
 ## Methods
@@ -37,6 +40,11 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
+|**Schema extensions**| | |
+|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 
 
@@ -103,6 +111,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|
 |messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
+|onenote|[OneNote](onenote.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
@@ -133,6 +142,7 @@ Here is a JSON representation of the resource
     "memberOf",
     "messages",
     "oauth2PermissionGrants",
+    "onenote",
     "ownedDevices",
     "ownedObjects",
     "photo",
@@ -209,6 +219,12 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
