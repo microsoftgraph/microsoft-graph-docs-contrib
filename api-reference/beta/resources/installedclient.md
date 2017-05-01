@@ -1,6 +1,6 @@
 # installedClient resource type
 
-Specifies settings for non Web App or Web Api (e.g. Mobile or other public client such as an installed application running on a desktop device)
+Specifies settings for non Web App or Web Api. (e.g. Mobile or other public client such as an installed application running on a desktop device)
 
 ### Properties
 

@@ -1,6 +1,7 @@
 # Get application
 
 Retrieve the properties and relationships of application object.
+
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request

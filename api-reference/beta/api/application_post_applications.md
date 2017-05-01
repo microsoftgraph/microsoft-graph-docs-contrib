@@ -1,6 +1,7 @@
 # Create Application
 
-Use this API to create a new Application.
+Use this API to create a new application.
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
@@ -13,7 +14,7 @@ POST /applications
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  | Bearer &lt;token&gt; *Required* |
 
 ## Request body
 In the request body, supply a JSON representation of [application](../resources/application.md) object.

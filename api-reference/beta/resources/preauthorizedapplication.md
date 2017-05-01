@@ -6,7 +6,7 @@
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|appId|String||
+|appId|String| The unique identifier for the application. |
 |permissionIds|String collection||
 
 ### JSON representation

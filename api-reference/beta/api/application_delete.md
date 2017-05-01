@@ -1,6 +1,7 @@
 # Delete application
 
-Delete application.
+Deletes an application.
+
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request

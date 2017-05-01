@@ -42,14 +42,14 @@ Here is a JSON representation of the resource
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |allowPublicClient|Boolean| |
-|api|[api](api.md)| |
+|api|[api](api.md)| Specifies settings for a Web API application. |
 |appRoles|[appRole](approle.md) collection|The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable.|
 |applicationAliases|String collection| |
 |createdDateTime|DateTimeOffset| |
 |displayName|String|The display name for the application. |
 |id|String|The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
-|info|[informationalUrl](informationalurl.md)| |
-|installedClients|[installedClient](installedclient.md)| |
+|info|[informationalUrl](informationalurl.md)| Basic profile information of the application. |
+|installedClients|[installedClient](installedclient.md)| Specifies settings for non Web App or Web Api. |
 |keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the application Not nullable. |
 |logo|Stream|The main logo for the application. Not nullable. |
 |orgRestrictions|String collection| The organizational tenantIds to which the application is restricted.  If the collection is empty, the application is multi-tenant (not restricted). If the collection contains tenantIds, the application is restricted to the organizational tenantIds in the collection. Specifying other tenants but not the tenantId where the application is registered implies that the application's own tenantId is indirectly included. |
@@ -57,7 +57,7 @@ Here is a JSON representation of the resource
 |preAuthorizedApplications|[preAuthorizedApplication](preauthorizedapplication.md) collection| |
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
 |tags|String collection| |
-|web|[web](web.md)| |
+|web|[web](web.md)| Specifies settings for a web application. |
 
 ### Relationships
 

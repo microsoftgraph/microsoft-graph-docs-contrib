@@ -1,6 +1,6 @@
 # List owners
 
-Retrieve a list of directoryobject objects.
+Retrieve a list of directoryObject objects.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
