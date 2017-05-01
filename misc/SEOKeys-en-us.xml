@@ -372,6 +372,50 @@
         <Item text="Get resource" url="/en-us/api-reference/beta/api/resource_get" SEOKeyword="Get resource, Microsoft Graph API, resource API" SEODescription="Retrieve the properties and relationships of a file or image resource(../resources/resource.md) object." />
       </Item>
     </Item>
+  <Item text="Planner" url="/en-us/api-reference/v1.0/resources/planner_overview" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
+      <Item text="Plan" url="/en-us/api-reference/v1.0/resources/plannerplan" >
+		  <Item text="Create plan" url="/en-us/api-reference/v1.0/api/planner_post_plans" />
+		  <Item text="List plans for group" url="/en-us/api-reference/v1.0/api/plannergroup_list_plans" />
+		  <Item text="Get plan" url="/en-us/api-reference/v1.0/api/plannerplan_get" />
+		  <Item text="List plan tasks" url="/en-us/api-reference/v1.0/api/plannerplan_list_tasks" />
+		  <Item text="List plan buckets" url="/en-us/api-reference/v1.0/api/plannerplan_list_buckets" />
+		  <Item text="Update plan" url="/en-us/api-reference/v1.0/api/plannerplan_update" />
+	  </Item>
+	  <Item text="Task" url="/en-us/api-reference/v1.0/resources/plannertask" >
+		  <Item text="Create task" url="/en-us/api-reference/v1.0/api/planner_post_tasks" />
+		  <Item text="Get tasks for user" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" />
+		  <Item text="Get task" url="/en-us/api-reference/v1.0/api/plannertask_get" />
+		  <Item text="Update task" url="/en-us/api-reference/v1.0/api/plannertask_update" />
+		  <Item text="Delete task" url="/en-us/api-reference/v1.0/api/plannertask_delete" />	  
+	  </Item>
+	  <Item text="Task details" url="/en-us/api-reference/v1.0/resources/plannertaskdetails" >
+		  <Item text="Get task details" url="/en-us/api-reference/v1.0/api/plannertaskdetails_get" />
+		  <Item text="Update task details" url="/en-us/api-reference/v1.0/api/plannertaskdetails_update" />	  
+	  </Item>
+	  <Item text="Plan details" url="/en-us/api-reference/v1.0/resources/plannerplandetails" >
+		<Item text="Get plan details" url="/en-us/api-reference/v1.0/api/plannerplandetails_get" />
+		<Item text="Update plan details" url="/en-us/api-reference/v1.0/api/plannerplandetails_update" />	  
+	  </Item>
+	  <Item text="Bucket" url="/en-us/api-reference/v1.0/resources/plannerbucket" >
+		  <Item text="Create bucket" url="/en-us/api-reference/v1.0/api/planner_post_buckets" />
+		  <Item text="Get bucket" url="/en-us/api-reference/v1.0/api/plannerbucket_get" />
+		  <Item text="List bucket tasks" url="/en-us/api-reference/v1.0/api/plannerbucket_list_tasks" />
+		  <Item text="Update bucket" url="/en-us/api-reference/v1.0/api/plannerbucket_update" />
+		  <Item text="Delete bucket" url="/en-us/api-reference/v1.0/api/plannerbucket_delete" />
+	  </Item>
+	  <Item text="Assigned to task board format" url="/en-us/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat" >
+		  <Item text="Get assigned to task board format" url="/en-us/api-reference/v1.0/api/plannerassignedtotaskboardtaskformat_get" />
+		  <Item text="Update assigned to task board format" url="/en-us/api-reference/v1.0/api/plannerassignedtotaskboardtaskformat_update" />	  
+	  </Item>
+	  <Item text="Bucket task board task format" url="/en-us/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat" >
+		<Item text="Get bucket task board format" url="/en-us/api-reference/v1.0/api/plannerbuckettaskboardtaskformat_get" />
+		<Item text="Update bucket task board format" url="/en-us/api-reference/v1.0/api/plannerbuckettaskboardtaskformat_update" />	  
+	  </Item>
+	  <Item text="Progress task board task format" url="/en-us/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat" >
+		<Item text="Get progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_get" />
+		<Item text="Update progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
+	  </Item>
+    </Item>
   <Item text="Personal contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Personal contacts API">
     <Item text="Contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Contact">
       <Item text="List contacts" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
