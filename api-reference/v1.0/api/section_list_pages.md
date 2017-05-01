@@ -1,15 +1,17 @@
 # List pages
 
-Retrieve a list of [page](../resources/page.md) objects.
+Retrieve a list of [page](../resources/page.md) objects from the specified section.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+
+Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/pages
-GET /users/{id | userPrincipalName}/notes/pages
-GET /groups/{id}/notes/pages
+GET /me/onenote/sections/{id}/pages
+GET /users/{id | userPrincipalName}/onenote/sections/{id}/pages
+GET /groups/{id}/onenote/sections/{id}/pages
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -33,7 +35,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/pages
+GET https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
@@ -58,7 +60,7 @@ Content-length: 393
       },
       "contentUrl": "contentUrl-value",
       "content": "content-value",
-      "lastModifiedTime": "2016-10-19T10:37:00Z"
+      "lastModifiedDateTime": "2016-10-19T10:37:00Z"
     }
   ]
 }

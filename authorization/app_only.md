@@ -17,7 +17,7 @@ Before you can start working with Office 365, you need to register your applicat
 
 ## Request an access token from the token issuing endpoint
 
-Unlike client apps, your service or daemon app is unable to have a user sign in and authorize your application. Instead, your application has to implement the OAuth 2.0 Client Credentials Grant Flow that lets it use its own credentials, its client ID and an application key, to authenticate when calling the Microsoft Graph instead of impersonating a user. For details about the authentication flow, see [Service to Service Calls Using Client Credentials](https://msdn.microsoft.com/en-us/library/azure/dn645543.aspx).
+Unlike client apps, your service or daemon app is unable to have a user sign in and authorize your application. Instead, your application has to implement the OAuth 2.0 Client Credentials Grant Flow that lets it use its own credentials, its client ID and an application key, to authenticate when calling the Microsoft Graph instead of impersonating a user. For details about the authentication flow, see [Service to Service Calls Using Client Credentials](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
 Make an HTTP POST request to the token issuing endpoint with the following parameters, replacing `<clientId>` and `<clientSecret>` with your app's client ID and application key, respectively.
 

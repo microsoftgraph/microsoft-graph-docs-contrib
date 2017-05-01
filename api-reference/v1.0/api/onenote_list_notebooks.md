@@ -1,22 +1,24 @@
-# List sectionGroups
+# List notebooks
 
-Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
+Retrieve a list of [notebook](../resources/notebook.md) objects.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
-Notes.Read, Notes.ReadWrite.CreatedByApp, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
+
+Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/notes/sectionGroups
-GET /users/{id | userPrincipalName}/notes/sectionGroups
-GET /groups/{id}/notes/sectionGroups
+GET /me/onenote/notebooks
+GET /users/{id | userPrincipalName}/onenote/notebooks
+GET /groups/{id}/onenote/notebooks
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
-The default sort order is `name asc`.
+The default sort order is `name asc`. 
 
-The default query expands `parentNotebook` and selects its `id`, `name`, and `self` properties. Valid `expand` values for section groups are `sections`, `sectionGroups`, `parentNotebook`, and `parentSectionGroup`.
+Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 
 ## Request headers
 | Name       | Type | Description|
@@ -27,44 +29,47 @@ The default query expands `parentNotebook` and selects its `id`, `name`, and `se
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [sectionGroup](../resources/sectiongroup.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [notebook](../resources/notebook.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_sectiongroups"
+  "name": "get_notebooks"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/notes/sectionGroups
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup",
+  "@odata.type": "microsoft.graph.notebook",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 378
+Content-length: 369
 
 {
   "value": [
     {
+      "isDefault": true,
+      "userRole": {
+      },
+      "isShared": true,
       "sectionsUrl": "sectionsUrl-value",
       "sectionGroupsUrl": "sectionGroupsUrl-value",
-      "name": "name-value",
-      "createdBy": "createdBy-value",
-      "createdByIdentity": {
-        "user": {
-          "id": "id-value",
-          "displayName": "displayName-value"
+      "links": {
+        "oneNoteClientUrl": {
+          "href": "href-value"
+        },
+        "oneNoteWebUrl": {
+          "href": "href-value"
         }
-      },
-      "lastModifiedBy": "lastModifiedBy-value"
+      }
     }
   ]
 }
@@ -74,7 +79,7 @@ Content-length: 378
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List sectionGroups",
+  "description": "List notebooks",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -10,7 +10,7 @@ The **plannerBucket** resource represents a bucket (or "custom column") for task
 |:---------------|:--------|:----------|
 |[Get plannerBucket](../api/plannerbucket_get.md) | [plannerBucket](plannerbucket.md) |Read properties and relationships of **plannerBucket** object.|
 |[List plannerTasks](../api/plannerbucket_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
-|[Create](../api/planner_post_buckets.md) | [bucket](bucket.md)	| Create a new **plannerBucket** object. |
+|[Create](../api/planner_post_buckets.md) | [plannerBucket](plannerbucket.md)	| Create a new **plannerBucket** object. |
 |[Update](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)	|Update **plannerBucket** object. |
 |[Delete](../api/plannerbucket_delete.md) | None |Delete **plannerBucket** object. |
 
