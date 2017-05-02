@@ -2,9 +2,9 @@
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
-
-
+This resource supports:
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 ## Methods
 | Method       | Return Type  |Description|

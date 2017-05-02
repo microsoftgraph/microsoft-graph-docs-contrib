@@ -72,13 +72,9 @@ Delta query is currently supported for the following resources:
 
 The same [permissions](../authorization/permission_scopes.md) that are required to read a specific resource are also required to perform delta query on that resource.
 
-## Known limitations
-
-For known limitations using delta query, see the [delta query section](../overview/release_notes.md#delta-query) in the known issues article.
-
 ## Delta query request examples 
 
-- [Get incremental changes to events in a calendar view (preview)](../Concepts/delta_query_events.md)
-- [Get incremental changes to messages in a folder (preview)](./delta_query_messages.md)
-- [Get incremental changes to groups (preview)](./delta_query_groups.md)
-- [Get incremental changes to users (preview)](./delta_query_users.md)
+- [Get incremental changes to events in a calendar view](../Concepts/delta_query_events.md)
+- [Get incremental changes to messages in a folder](./delta_query_messages.md)
+- [Get incremental changes to groups](./delta_query_groups.md)
+- [Get incremental changes to users](./delta_query_users.md)
