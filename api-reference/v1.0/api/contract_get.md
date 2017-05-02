@@ -38,7 +38,7 @@ If successful, this method returns a `200 OK` response code and [Contract](../re
   "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/contracts/{id}
+GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
 
 ##### Response
