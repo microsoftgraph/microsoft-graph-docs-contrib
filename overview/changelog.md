@@ -4,6 +4,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
+### Add contracts to Microsoft Graph
+
+|**Change type**|**Version**|**Description**| 
+|:-------------|:-----------|:--------------| 
+|Addition|V1.0|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) | 
+
 ### Planner APIs
 
 |**Change type**|**Version**|**Description**| 
