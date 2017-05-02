@@ -2,10 +2,13 @@
 
 This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](http://graph.microsoft.io/en-us/changelog).
 
+## Graph Quick Start
+April 30th, 2017 - There is a bug in quick-start flows have a bug in them in the Redirect URL is not properly configured for Asp.Net MVC, Node.js, Angular, PHP, Python, and Ruby. We are working to get the fix deployed to production. To workaround this issue, please see our [Getting Started Walkthroughs](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)
+
 ## Graph Explorer
 We have turned off Microsoft Account logons to the Graph Explorer due to a service issue. We are actively working on a fix and will update this text when it's ready.  
 
-Signins with Internet Explorer and Microsoft Edge were not working. That issue has been resolved as of February 2, 2017.
+Sign-ins with Internet Explorer and Microsoft Edge were not working. That issue has been resolved as of February 2, 2017.
 
 ## Users
 #### No instant access after creation
