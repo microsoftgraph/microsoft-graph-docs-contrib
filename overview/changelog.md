@@ -4,11 +4,11 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
-### Delta query change
+### Add delta query to V1.0
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-
+|Addition|v1.0| Add to V1.0 |
 
 ### Planner APIs
 

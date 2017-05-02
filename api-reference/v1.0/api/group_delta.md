@@ -68,7 +68,7 @@ See:</br>
   "name": "group_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/delta
+GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
 ##### Response
@@ -85,7 +85,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
   "value":[
     {
       "classification": "classification-value",
