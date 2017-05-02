@@ -4,6 +4,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
+### Add domain operations to Microsoft Graph
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|V1.0|Added operations on [domains](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain).<br/>New entities:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>New actions:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_forcedelete)</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
+
 ### Planner APIs
 
 |**Change type**|**Version**|**Description**| 
