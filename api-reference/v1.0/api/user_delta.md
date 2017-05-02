@@ -39,7 +39,7 @@ This method supports OData Query Parameters to help customize the response.
 _id_ property is always returned. 
 - Delta query support `$select`, `$top`, and `$expand` for messages. 
 - There is limited support for `$filter` and `$orderby`:
-  * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` 
+  * The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}` 
   or `$filter=receivedDateTime+gt+{value}`.
   * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
   an `$orderby` expression, the return order is not guaranteed. 
