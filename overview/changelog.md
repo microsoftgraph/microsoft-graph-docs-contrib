@@ -4,11 +4,19 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
-### Add contracts to Microsoft Graph
+### Add contracts to V1.0
 
 |**Change type**|**Version**|**Description**| 
 |:-------------|:-----------|:--------------| 
-|Addition|V1.0|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) | 
+|Addition|V1.0|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
+
+### Add LicenseDetails to V1.0
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0|New entity:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/licensedetails) |
+|Change  |v1.0|New [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails) navigation property on [users](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) |
+
 
 ### Planner APIs
 
