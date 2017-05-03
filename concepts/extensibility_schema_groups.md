@@ -15,7 +15,7 @@ For this scenario, we're going to show you how to:
 5. Read back a group and the extension data.
 
 >**Note:** This topic shows you how to create and read schema extension values on a **group** resource (steps 3-5).  The same methods are supported for the 
-**administrativeUnit", **device**, **event**, **message**, **organization**, **post**, and **user** 
+**administrativeUnit**, **device**, **event**, **message**, **organization**, **post**, and **user** 
 resource types as well.  So you can carry out similar operations as the example requests below on any of those resources. Note that **administrativeUnit" is 
 available only in the beta endpoint.
 
@@ -202,7 +202,7 @@ To remove a schema extension from a resource instance, set the extension complex
 
 
 ## 5. Get a group and its extension data
-A handy way to look for a group (or groups) that has a certain schema extension is to use `$filter` to match for specific extension property values,
+A handy way to look for a group (or groups) is to use `$filter` to match for specific extension property values,
 such as an extension name or ID. 
 
 Then, to get the custom data in a group, use `$select` to include the extension by name (in this case by `graphlearn_courses`).
@@ -223,15 +223,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-length: 326
 {
-	"displayName": "New Managers March 2017",
-    "id": "14429ae5-3e74-41a2-9fa8-028fbb984637",
-	"description": "New Managers training course for March 2017",
-	"graphlearn_courses": {
+  "value": [
+    {
+	  "displayName": "New Managers March 2017",
+      "id": "14429ae5-3e74-41a2-9fa8-028fbb984637",
+	  "description": "New Managers training course for March 2017",
+	  "graphlearn_courses": {
         "@odata.type": "#microsoft.graph.ComplexExtensionValue",
 	    "courseId":"123",
 	    "courseName":"New Managers",
 	    "courseType":"Online"
+      }
     }
+  ]
 }
 ```
 
