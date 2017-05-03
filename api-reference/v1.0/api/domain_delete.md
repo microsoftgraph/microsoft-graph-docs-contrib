@@ -3,11 +3,12 @@
 Deletes a domain from a tenant.
 
 > **Important:**
-> Deleted domains are not recoverable.
+> - Deleted domains are not recoverable.<br />
+> - Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](v1.0/api/domain_list_domainnamereferences.md) API.
 
 ### Prerequisites
 
-One of the following **scopes** are required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
