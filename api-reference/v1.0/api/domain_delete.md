@@ -4,7 +4,7 @@ Deletes a domain from a tenant.
 
 > **Important:**
 > - Deleted domains are not recoverable.<br />
-> - Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](v1.0/api/domain_list_domainnamereferences.md) API.
+> - Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](domain_list_domainnamereferences.md) API.
 
 ### Prerequisites
 
