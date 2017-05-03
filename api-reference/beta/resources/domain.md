@@ -14,7 +14,7 @@ To associate a domain with a tenant:
 
 4. [Indicate](../api/domain_update.md) the supported services you plan to use with the domain.
 
-5. [Configure](../api/domain_list_serviceconfigurationrecords.md) supported services by retrieving a list of objects needed to enable services for the domain. Add the configuration record details to the domain's zone file using the domain registrar or DNS server configuration.
+5. [Configure](../api/domain_list_serviceconfigurationrecords.md) supported services by retrieving a list of records needed to enable services for the domain. Add the configuration record details to the domain's zone file using the domain registrar or DNS server configuration.
 
 ### Methods
 

@@ -14,7 +14,7 @@ To associate a domain with a tenant:
 
 4. [Indicate](../api/domain_update.md) the supported services you plan to use with the domain.
 
-5. [Configure](../api/domain_list_serviceconfigurationrecords.md) supported services by retrieving a list of objects needed to enable services for the domain. Add the configuration record details to the domain's zone file using the domain registrar or DNS server configuration.
+5. [Configure](../api/domain_list_serviceconfigurationrecords.md) supported services by retrieving a list of records needed to enable services for the domain. Add the configuration record details to the domain's zone file using the domain registrar or DNS server configuration.
 
 ### Methods
 
@@ -27,7 +27,6 @@ To associate a domain with a tenant:
 |[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
 |[Update domain](../api/domain_update.md) | [domain](domain.md) |Updates a domain.|
 |[Delete domain](../api/domain_delete.md) | None |Deletes a domain.|
-|[ForceDelete domain](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain_verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
 
 ### Properties
