@@ -77,6 +77,7 @@ by providing a [delta](../api/group_delta.md) function.
 |membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains "**DynamicMembership**"). For more information about the syntax of the membership rule, please refer to [Membership Rules syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
 |membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are "On" or "Paused"|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Supports $filter.|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection||
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only. |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter.|
 |preferredLanguage|String|The preferred language for an Office 365 group. Should follow ISO 639-1 Code; for example "en-US".|
@@ -153,6 +154,7 @@ Here is a JSON representation of the resource
   "mailEnabled": true,
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "proxyAddresses": ["string"],

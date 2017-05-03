@@ -32,6 +32,7 @@ Here is a JSON representation of the resource
   "mobilePhone": "string",
   "officeLocation": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "proxyAddresses": ["string"],
@@ -47,11 +48,12 @@ Here is a JSON representation of the resource
 |city|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|Boolean||
+|onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
 |displayName|String||
 |givenName|String||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection||
 |mail|String||
 |mailNickname|String||
 |mobilePhone|String||
