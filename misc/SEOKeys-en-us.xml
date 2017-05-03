@@ -122,6 +122,13 @@
     <Item text="Update open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_update" SEOKeyword="Update data extension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
     <Item text="Delete open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_delete" SEOKeyword="Delete data extension, Microsoft Graph API, opentypeextension API" SEODescription="Delete data extension." />
   </Item>
+  <Item text="Schema Extensions" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
+      <Item text="List schema extensions" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
+      <Item text="Create schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
+      <Item text="Get schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_get" SEOKeyword="Get schema extension, Microsoft Graph API" SEODescription="Retrieve the properties of a schema extension definition." />
+      <Item text="Update schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
+      <Item text="Delete schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />
+    </Item>
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="OneDrive APIs">
     <Item text="Drives" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive API">
       <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
