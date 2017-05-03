@@ -121,7 +121,7 @@ The app calls Microsoft Graph to get user information and to send an email on th
 		   });
 		}
 
-1. Replace the **getSharingLink** function with the following code. This configures and sends the GET request to the */me/drive/items/[file id]/createLink* endpoint and processes the result. The result is a sharing link to the file that will be included in the message.
+1. Replace the **getSharingLink** function with the following code. This configures and sends the GET request to the */me/drive/items/{file id}/createLink* endpoint and processes the result. The result is a sharing link to the file that will be included in the message.
 
 		function getSharingLink(accessToken, id, callback) {
 		  request
