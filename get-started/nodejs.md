@@ -51,7 +51,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 		npm install
 
-1. In the starter project files, open authHelper.js.
+1. In the starter project files, open utils\config.js.
 
 
 1. In the **credentials** field, replace the **ENTER\_YOUR\_CLIENT\_ID** and **ENTER\_YOUR\_SECRET** placeholder values with the values you just copied.
@@ -73,184 +73,117 @@ The app uses the [oauth](https://www.npmjs.com/package/oauth) middleware to auth
     
    >**Important** The simple authentication and token handling in this project is for sample purposes only. In a production app, you should construct a more robust way of handling authentication, including validation and secure token handling.
 
-Now back to building the app.
-
-1. In authHelper.js, replace the *getTokenFromCode* function with the following code. This gets an access token using an authorization code.
-
-		function getTokenFromCode(code, callback) {
-			var OAuth2 = OAuth.OAuth2;
-			var oauth2 = new OAuth2(
-				credentials.client_id,
-				credentials.client_secret,
-				credentials.authority,
-				credentials.authorize_endpoint,
-				credentials.token_endpoint
-			);
-
-			oauth2.getOAuthAccessToken(
-				code,
-				{
-					grant_type: 'authorization_code',
-					redirect_uri: credentials.redirect_uri,
-					response_mode: 'form_post',
-					nonce: uuid.v4(),
-					state: 'abcd'
-				},
-				function (e, accessToken, refreshToken) {
-					callback(e, accessToken, refreshToken);
-				}
-			);
-		}
-
-1. Replace the **getTokenFromRefreshToken** function with the following code. This gets an access token using a refresh token.
-
-		function getTokenFromRefreshToken(refreshToken, callback) {
-			var OAuth2 = OAuth.OAuth2;
-			var oauth2 = new OAuth2(
-				credentials.client_id,
-				credentials.client_secret,
-				credentials.authority,
-				credentials.authorize_endpoint,
-				credentials.token_endpoint
-			);
-
-			oauth2.getOAuthAccessToken(
-				refreshToken,
-				{
-					grant_type: 'refresh_token',
-					redirect_uri: credentials.redirect_uri,
-					response_mode: 'form_post',
-					nonce: uuid.v4(),
-					state: 'abcd'
-				},
-				function (e, accessToken) {
-					callback(e, accessToken);
-				}
-			);
-		}
-
 Now you're ready to add code to call Microsoft Graph. 
 
 ## Call Microsoft Graph
 The app calls Microsoft Graph to get user information and to send an email on the user's behalf. These calls are initiated from the index.js controller in response to UI events.
 
-1. Open requestUtil.js.
+1. Open utils\graphHelper.js.
 
 1. Replace the **getUserData** function with the following code. This configures and sends the GET request to the */me* endpoint and processes the response.
 
 		function getUserData(accessToken, callback) {
-			var options = {
-				host: 'graph.microsoft.com',
-				path: '/v1.0/me',
-				method: 'GET',
-				headers: {
-					'Content-Type': 'application/json',
-					Accept: 'application/json',
-					Authorization: 'Bearer ' + accessToken
-				}
-			};
+		  request
+		   .get('https://graph.microsoft.com/v1.0/me')
+		   .set('Authorization', 'Bearer ' + accessToken)
+		   .end((err, res) => {
+		     callback(err, res);
+		   });
+		}
 
-			https.get(options, function (response) {
-				var body = '';
-				response.on('data', function (d) {
-					body += d;
-				});
-				response.on('end', function () {
-					var error;
-					if (response.statusCode === 200) {
-						callback(null, JSON.parse(body));
-					} else {
-						error = new Error();
-						error.code = response.statusCode;
-						error.message = response.statusMessage;
-						// The error body sometimes includes an empty space
-						// before the first character, remove it or it causes an error.
-						body = body.trim();
-						error.innerError = JSON.parse(body).error;
-						callback(error, null);
-					}
-				});
-			}).on('error', function (e) {
-				callback(e, null);
-			});
+1. Replace the **getProfilePhoto** function with the following code. This configures and sends the GET request to the */me/photo/$value* endpoint and processes the response. Note that profile photos aren't currently available for MSA accounts.
+	
+		function getProfilePhoto(accessToken, callback) {
+		  // Get the profile photo of the current user (from the user's mailbox on Exchange Online).
+		  // This operation in version 1.0 supports only work or school mailboxes, not personal mailboxes.
+		  request
+		   .get('https://graph.microsoft.com/v1.0/me/photo/$value')
+		   .set('Authorization', 'Bearer ' + accessToken)
+		   .end((err, res) => {
+		     // Returns 200 OK and the photo in the body. If no photo exists, returns 404 Not Found.
+		     callback(err, res.body);
+		   });
+		}
+
+1. Replace the **uploadFile** function with the following code. This configures and sends the PUT request to the */me/drive/root/children/mypic.jpg/content* endpoint. If the file exists, this requests updates the content. If it doesn't exist, it creates the file and uploads the contents of the profile photo. 
+
+		function uploadFile(accessToken, file, callback) {
+		  // This operation only supports files up to 4MB in size.
+		  // To upload larger files, see `https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/item_createUploadSession`.
+		  request
+		   .put('https://graph.microsoft.com/v1.0/me/drive/root/children/mypic.jpg/content')
+		   .send(file)
+		   .set('Authorization', 'Bearer ' + accessToken)
+		   .set('Content-Type', 'image/jpg')
+		   .end((err, res) => {
+		     // Returns 200 OK and the file metadata in the body.
+		     callback(err, res.body);
+		   });
+		}
+
+1. Replace the **getSharingLink** function with the following code. This configures and sends the GET request to the */me/drive/items/{file id}/createLink* endpoint and processes the result. The result is a sharing link to the file that will be included in the message.
+
+		function getSharingLink(accessToken, id, callback) {
+		  request
+		   .post('https://graph.microsoft.com/v1.0/me/drive/items/' + id + '/createLink')
+		   .send({ type: 'view' })
+		   .set('Authorization', 'Bearer ' + accessToken)
+		   .set('Content-Type', 'application/json')
+		   .end((err, res) => {
+		     // Returns 200 OK and the permission with the link in the body.
+		     callback(err, res.body.link);
+		   });
 		}
 
 1. Replace the **postSendMail** function with the following code. This configures and sends the POST request to the */me/sendMail* endpoint and processes the response.
 
-		function postSendMail(accessToken, mailBody, callback) {
-			var outHeaders = {
-				'Content-Type': 'application/json',
-				Authorization: 'Bearer ' + accessToken,
-				'Content-Length': mailBody.length
-			};
-			var options = {
-				host: 'graph.microsoft.com',
-				path: '/v1.0/me/sendMail',
-				method: 'POST',
-				headers: outHeaders
-			};
-
-			// Set up the request
-			var post = https.request(options, function (response) {
-				var body = '';
-				response.on('data', function (d) {
-					body += d;
-				});
-				response.on('end', function () {
-					var error;
-					if (response.statusCode === 202) {
-						callback(null);
-					} else {
-						error = new Error();
-						error.code = response.statusCode;
-						error.message = response.statusMessage;
-						// The error body sometimes includes an empty space
-						// before the first character, remove it or it causes an error.
-						body = body.trim();
-						error.innerError = JSON.parse(body).error;
-						// Note: If you receive a 500 - Internal Server Error
-						// while using a Microsoft account (outlook.com, hotmail.com or live.com),
-						// it's possible that your account has not been migrated to support this flow.
-						// Check the inner error object for code 'ErrorInternalServerTransientError'.
-						// You can try using a newly created Microsoft account or contact support.
-						callback(error);
-					}
-				});
-			});
-			
-			// write the outbound data to it
-			post.write(mailBody);
-			// we're done!
-			post.end();
-
-			post.on('error', function (e) {
-				callback(e);
-			});
+		function postSendMail(accessToken, message, callback) {
+		  request
+		   .post('https://graph.microsoft.com/v1.0/me/sendMail')
+		   .send(message)
+		   .set('Authorization', 'Bearer ' + accessToken)
+		   .set('Content-Type', 'application/json')
+		   .set('Content-Length', message.length)
+		   .end((err, res) => {
+		     // Returns 202 if successful.
+		     // Note: If you receive a 500 - Internal Server Error
+		     // while using a Microsoft account (outlook.com, hotmail.com or live.com),
+		     // it's possible that your account has not been migrated to support this flow.
+		     // Check the inner error object for code 'ErrorInternalServerTransientError'.
+		     // You can try using a newly created Microsoft account or contact support.
+		     callback(err, res);
+		   });
 		}
-  
-1. Open emailer.js.
+
+1. Open utils\emailer.js.
 
 1. Replace the **wrapEmail** function with the following code. This builds the payload that represents the email message to send.
 
-		function wrapEmail(content, recipient) {
-			var emailAsPayload = {
-				Message: {
-					Subject: 'Welcome to Office 365 development with Node.js and the Office 365 Connect sample',
-					Body: {
-						ContentType: 'HTML',
-						Content: content
-					},
-					ToRecipients: [
-						{
-							EmailAddress: {
-								Address: recipient
-							}
-						}
-					]
-				},
-				SaveToSentItems: true
-			};
-			return emailAsPayload;
+		function wrapEmail(content, recipient, file) {
+		  const attachments = [{
+		    '@odata.type': '#microsoft.graph.fileAttachment',
+		    ContentBytes: file,
+		    Name: 'mypic.jpg'
+		  }];
+		  const emailAsPayload = {
+		    Message: {
+		      Subject: 'Welcome to Microsoft Graph development with Node.js and the Microsoft Graph Connect sample',
+		      Body: {
+		        ContentType: 'HTML',
+		        Content: content
+		      },
+		      ToRecipients: [
+		        {
+		          EmailAddress: {
+		            Address: recipient
+		          }
+		        }
+		      ]
+		    },
+		    SaveToSentItems: true,
+		    Attachments: attachments
+		  };
+		  return emailAsPayload;
 		}
 
 ## Run the app
