@@ -49,7 +49,11 @@ For users and groups beta (preview) APIs, scoping filters allow you to track cha
 -   Changes to relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`, 
 and only appear when the client explicitly chooses to track changes to the relationship by using the `$select` parameter.
 
--   Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}. Possible @removed reasons can be *changed* or *deleted*. *Changed* indicates the item was deleted and may be restored from [deletedItems](../api-reference/beta/resources/directory.md). *Deleted* indicates the item is [permanently deleted](../api-reference/beta/api/directory_deleteditems_delete.md).
+Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
+
+Possible @removed reasons can be *changed* or *deleted*.
+- *Changed* indicates the item was deleted and may be restored from [deletedItems](../api-reference/beta/resources/directory.md).
+- *Deleted* indicates the item is [permanently deleted](../api-reference/beta/api/directory_deleteditems_delete.md).
 
 ## Supported resources
 
