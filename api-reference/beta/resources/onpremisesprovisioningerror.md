@@ -1,16 +1,15 @@
 # onPremisesProvisioningError resource type
 
-
-
+Represents directory sync errors during provisioning. When a User, Group, Contact or PublicFolder contains a collection of onPremisesProvisioningErrors, it often indicates key end-user is not functioning correctly. For example, the user cannot sign in or the user cannot send or receive email.
 
 ### Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |category|String||
-|occurredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|occurredDateTime|DateTimeOffset| The date and time at which the error occurred. |
 |propertyCausingError|String||
-|value|String||
+|value|String| A description of the error. |
 
 ### JSON representation
 
