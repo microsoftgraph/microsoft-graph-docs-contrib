@@ -31,8 +31,8 @@ The following table shows the current support for open and schema extensions and
 |  [Personal contact](../api-reference/v1.0/resources/contact.md)| GA | GA |
 |  [User](../api-reference/v1.0/resources/user.md) | GA | GA |
 
-You can use extensions on all these resources on work or school accounts.
-In addition, you can use extensions on these resources - **event**, **post**, **group**, **message**, **contact**, and **user** - on a personal account. 
+You can use extensions on all these resources when signed-in with a work or school account.
+In addition, you can use extensions on these resources - **event**, **post**, **group**, **message**, **contact**, and **user** - when signed-in with a personal account. 
 
 
 ## Open extensions
@@ -93,9 +93,9 @@ Depending on the current state, the owner app may be able to update or delete th
 
 | State | Lifecycle state behavior |
 |-------------|------------|
-| InDevelopment | - Initial state after creation. The owner app is still developing the schema extension. <br> - In this state, only the owner app can extend resource instances with this schema definition, and only in the same directory where the owner app is registered. <br> - Only the owner app can update the extension definition with additive changes or delete it. <br> - The owner app can move the extension from **InDevelopment** to the **Available** state. |
-| Available | - The schema extension is available for use by all apps in any tenant. <br> - Once the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance, or updating an existing instance. <br> - Only the owner app can update the extension definition with additive changes. <br> - No app can delete the extension definition in this state. <br> - The owner app can move the schema extension from **Available** to the **Deprecated** state. |
-| Deprecated | - The schema extension definition can no longer be read or modified. <br> - No app can view, update, add new properties, or delete the extension. <br> - Apps can, however, still read, update, or delete extension _property values_. <br> - The owner app can move the schema extension from **Deprecated** back to the **Available** state. |
+| InDevelopment | - Initial state after creation. The owner app is still developing the schema extension. <br>- In this state, only the owner app can extend resource instances with this schema definition, and only in the same directory where the owner app is registered. <br>- Only the owner app can update the extension definition with additive changes or delete it. <br>- The owner app can move the extension from **InDevelopment** to the **Available** state. |
+| Available | - The schema extension is available for use by all apps in any tenant. <br>- Once the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance, or updating an existing instance. <br>- Only the owner app can update the extension definition with additive changes. <br>- No app can delete the extension definition in this state. <br>- The owner app can move the schema extension from **Available** to the **Deprecated** state. |
+| Deprecated | - The schema extension definition can no longer be read or modified. <br>- No app can view, update, add new properties, or delete the extension. <br>- Apps can, however, still read, update, or delete existing extension _property values_. <br>- The owner app can move the schema extension from **Deprecated** back to the **Available** state. |
 
 
 ### Supported property data types 
@@ -109,7 +109,7 @@ The following data types are supported when defining a property in a schema exte
 | Integer | 32-bit value. Not supported for messages, events and posts. |
 | String | 256 characters maximum. |
 
->**Note:** Multi-value properties are currently not supported.
+>**Note:** Multi-value properties are not supported.
 
 ### Azure AD directory schema extensions
 Azure AD supports a similar type of extensions, known as [directory schema extensions](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), 
@@ -124,7 +124,7 @@ Additionally, to create and manage schema extension definitions, an application 
 ## Known limitations for extensions
 -   You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.  
 -   Change tracking (delta query) is not supported for open or schema extension properties.
--   Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource, to 100.
+-   Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
 
 ## Extension examples
 [Add custom data to users using open extensions](extensibility_open_users.md)

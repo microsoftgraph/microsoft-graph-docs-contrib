@@ -6,9 +6,9 @@ The following table lists the three scenarios where you can get an open extensio
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [contact](../resources/contact.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), or [user](../resources/user.md) | Open extension only.|
-|Get a known resource instance expanded with a specific extension.|Contact, device, event, group, group event, group post, message, organization, or user |A resource instance expanded with the open extension.|
-|Find and expand resource instances with a specific extension. |Contact, device, event, group, group event, group post, message, organization, or user|Resource instances expanded with the open extension.|
+|Get a specific extension from a known resource instance.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Device, event, group, group event, group post, message, organization, personal contact, user |A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. |Event, group event, message, personal contact|Resource instances expanded with the open extension.|
 
 
 ## Prerequisites
@@ -42,7 +42,7 @@ GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
-GET /organizations/{Id}/extensions/{extensionId}
+GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
@@ -61,7 +61,7 @@ GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /organizations/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')
 ```
@@ -74,15 +74,10 @@ with the extension.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /groups?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /organizations?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance or collection, 
