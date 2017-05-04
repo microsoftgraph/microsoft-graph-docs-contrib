@@ -122,6 +122,13 @@
     <Item text="Update open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_update" SEOKeyword="Update data extension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
     <Item text="Delete open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_delete" SEOKeyword="Delete data extension, Microsoft Graph API, opentypeextension API" SEODescription="Delete data extension." />
   </Item>
+  <Item text="Schema Extensions" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
+      <Item text="List schema extensions" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
+      <Item text="Create schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
+      <Item text="Get schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_get" SEOKeyword="Get schema extension, Microsoft Graph API" SEODescription="Retrieve the properties of a schema extension definition." />
+      <Item text="Update schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
+      <Item text="Delete schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />
+    </Item>
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="OneDrive APIs">
     <Item text="Drives" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive API">
       <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
@@ -549,7 +556,11 @@
     </Item>
   </Item>
   <Item text="Directory" url="/en-us/api-reference/v1.0/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
-    <Item text="Device" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
+    <Item text="Contracts" url="/en-us/api-reference/v1.0/resources/contract" >
+		<Item text="Get contract" url="/en-us/api-reference/v1.0/api/contract_get" />
+		<Item text="List contracts" url="/en-us/api-reference/v1.0/api/contract_list" />
+	 </Item>
+	<Item text="Device" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="List devices" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
       <Item text="Create Device" url="/en-us/api-reference/v1.0/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
       <Item text="Get device" url="/en-us/api-reference/v1.0/api/device_get" SEOKeyword="Get device, Microsoft Graph API, Device API" SEODescription="Retrieve the properties and relationships of device object." />
@@ -576,7 +587,15 @@
       <Item text="List directoryRoleTemplates" url="/en-us/api-reference/v1.0/api/directoryroletemplate_list" SEOKeyword="List directoryRoleTemplates, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryroletemplate objects." />
       <Item text="Get directoryRoleTemplate" url="/en-us/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="Get directoryRoleTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
     </Item>
-    <Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
+    <Item text="Domains" url="/en-us/api-reference/v1.0/resources/domain" >
+		<Item text="List domains" url="/en-us/api-reference/v1.0/api/domain_list" />
+		<Item text="Create domain" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
+		<Item text="Delete domain" url="/en-us/api-reference/v1.0/api/domain_forcedelete" />
+		<Item text="Get domain" url="/en-us/api-reference/v1.0/api/domain_get" />
+		<Item text="Update domain" url="/en-us/api-reference/v1.0/api/domain_update" />
+		<Item text="Verify domain" url="/en-us/api-reference/v1.0/api/domain_verify" />
+	  </Item>
+	<Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
         <Item text="Create invitation" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
       </Item>
     <Item text="Organization" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="user organizational structure, Microsoft Graph API, user API" SEODescription="">

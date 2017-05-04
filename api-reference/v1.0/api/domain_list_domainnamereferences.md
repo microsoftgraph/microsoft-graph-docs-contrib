@@ -1,16 +1,15 @@
-# Get domain
+# List domainNameReferences
 
-Retrieve the properties and relationships of domain object.
+Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain. The returned list will contain all directory objects that have a dependency on the domain.
 
 ### Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 
 ### HTTP request
-
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{id}
+GET /domains/{id}/domainNameReferences
 ```
 
 > For {id}, specify the domain with its fully qualified domain name.
@@ -24,42 +23,52 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer &lt;token&gt; *Required* |
-| Content-Type  | application/json |
 
 ### Request body
+
 Do not supply a request body for this method.
+
 ### Response
-If successful, this method returns a `200 OK` response code and [domain](../resources/domain.md) object in the response body.
+
+If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+
 ### Example
 ##### Request
 
 <!-- {
   "blockType": "request",
-  "name": "get_domain"
+  "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com
+GET https://graph.microsoft.com/V1.0/domains/contoso.com/domainNameReferences
 ```
+
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 192
 
 {
-  "authenticationType": "authenticationType-value",
-  "availabilityStatus": "availabilityStatus-value",
-  "id": "contoso.com",
-  "isAdminManaged": true,
-  "isDefault": true,
-  "isInitial": true,
-  "isRoot": true
+  "value": [
+    {
+        "odata.type": "Microsoft.DirectoryServices.User",
+        "objectType": "User",
+        "objectId": "567a0db6-289c-43f7-a650-2645c03cbbbb",
+        "accountEnabled": true,
+        "displayName": "TestUser1",
+        "facsimileTelephoneNumber": null,
+        "mailNickname": "testuser1",
+        "mobile": null,
+        "userPrincipalName": "testuser1@contoso.com"
+    }
+  ]
 }
 ```
 
@@ -67,7 +76,7 @@ Content-length: 192
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get domain",
+  "description": "List domainNameReferences",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
