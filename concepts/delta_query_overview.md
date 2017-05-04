@@ -46,14 +46,15 @@ For users and groups beta (preview) APIs, scoping filters allow you to track cha
 
 -   Updated instances are represented by their **id** with *at least* the properties that have been updated, but additional properties may be included.
 
--   Changes to relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`, 
-and only appear when the client explicitly chooses to track changes to the relationship by using the `$select` parameter.
+-   Changes to relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request. For tracked changes, the annotations only appear when the client explicitly chooses to track changes to the relationship by using the `$select` parameter.
 
 Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
 
 Possible @removed reasons can be *changed* or *deleted*.
 - *Changed* indicates the item was deleted and may be restored from [deletedItems](../api-reference/beta/resources/directory.md).
 - *Deleted* indicates the item is [permanently deleted](../api-reference/beta/api/directory_deleteditems_delete.md).
+
+@removed object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these object in the responses.
 
 ## Supported resources
 
