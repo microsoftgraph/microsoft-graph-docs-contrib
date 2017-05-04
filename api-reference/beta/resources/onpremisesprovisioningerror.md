@@ -1,14 +1,14 @@
 # onPremisesProvisioningError resource type
 
-Represents directory sync errors during provisioning. When a User, Group, Contact contains a collection of onPremisesProvisioningErrors, it often indicates key end-user is not functioning correctly. For example, the user cannot sign in or the user cannot send or receive email.
+Represents directory synchronization errors for users, groups, or contacts when synchronizing non-Azure directories to Azure Active Directory.
 
 ### Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|category|String| Category of the provisioning error. Note: At this time, there is only one possible value. Possible value: *PropertyConflict* |
+|category|String| Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: *PropertyConflict* - indicates a property value is not unique. Other objects contain the same value for the property. |
 |occurredDateTime|DateTimeOffset| The date and time at which the error occurred. |
-|propertyCausingError|String| Name of the directory property causing the error. Possible values: *UserPrincipalName* or *ProxyAddress* |
+|propertyCausingError|String| Name of the directory property causing the error. Current possible values: *UserPrincipalName* or *ProxyAddress* |
 |value|String| Value of the property causing the error. |
 
 ### JSON representation
