@@ -1,6 +1,6 @@
 # onPremisesProvisioningError resource type
 
-Represents directory synchronization errors for users, groups, or contacts when synchronizing non-Azure directories to Azure Active Directory.
+Represents directory synchronization errors for users, groups, or contacts when synchronizing on-premises directories to Azure Active Directory.
 
 ### Properties
 
