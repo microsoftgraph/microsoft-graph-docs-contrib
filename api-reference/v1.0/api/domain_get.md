@@ -1,9 +1,6 @@
-# domain: verify
+# Get domain
 
-Validates the ownership of the domain.
-
-> **Important:**
-> Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
+Retrieve the properties and relationships of domain object.
 
 ### Prerequisites
 
@@ -13,33 +10,36 @@ One of the following **scopes** is required to execute this API: *Directory.Read
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /domains/{id}/verify
+GET /domains/{id}
 ```
 
 > For {id}, specify the domain with its fully qualified domain name.
 
+### Optional query parameters
+
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+
 ### Request headers
 
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt; *Required*|
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer &lt;token&gt; *Required* |
 | Content-Type  | application/json |
 
 ### Request body
-
+Do not supply a request body for this method.
 ### Response
-If successful, this method returns `200, OK` response code and [domain](../resources/domain.md) object in the response body.
-
+If successful, this method returns a `200 OK` response code and [domain](../resources/domain.md) object in the response body.
 ### Example
 ##### Request
+
 <!-- {
   "blockType": "request",
-  "name": "domain_verify"
+  "name": "get_domain"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/domains/contoso.com/verify
+GET https://graph.microsoft.com/V1.0/domains/contoso.com
 ```
-
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -55,11 +55,11 @@ Content-length: 192
 {
   "authenticationType": "authenticationType-value",
   "availabilityStatus": "availabilityStatus-value",
+  "id": "contoso.com",
   "isAdminManaged": true,
   "isDefault": true,
   "isInitial": true,
-  "isRoot": true,
-  "name": "contoso.com"
+  "isRoot": true
 }
 ```
 
@@ -67,7 +67,7 @@ Content-length: 192
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "domain: verify",
+  "description": "Get domain",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
