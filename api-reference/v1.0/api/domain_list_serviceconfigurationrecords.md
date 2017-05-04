@@ -1,10 +1,8 @@
-# List verificationDnsRecords
+# List serviceConfigurationRecords
 
-Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.
+Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.
 
-You cannot use an associated domain with your Azure AD tenant until ownership is verified. To verify the ownership of the domain, retrieve the domain verification records and add the details to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
-
-Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
+Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
 
 ### Prerequisites
 
@@ -13,10 +11,8 @@ One of the following **scopes** is required to execute this API: *Directory.Read
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{id}/verificationDnsRecords
+GET /domains/contoso.com/serviceConfigurationRecords
 ```
-
-> For {id}, specify the domain with its fully qualified domain name.
 
 ### Optional query parameters
 
@@ -42,14 +38,12 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 <!-- {
   "blockType": "request",
-  "name": "get_verificationdnsrecords"
+  "name": "get_serviceconfigurationrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/V1.0/domains/contoso.com/serviceConfigurationRecords
 ```
-
 ##### Response
-
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -70,7 +64,16 @@ Content-length: 220
       "recordType": "Mx",
       "supportedService": "Email",
       "ttl": 3600,
-      "id": "id-value"
+      "mailExchange": "contoso-com.mail.protection.outlook.com",
+      "preference": 0
+    },
+    {
+      "isOptional": false,
+      "label": "contoso.com",
+      "recordType": "Txt",
+      "supportedServices": "Email",
+      "ttl": 3600,
+      "text": "v=spf1 include: spf.protection.outlook.com ~all"
     }
   ]
 }
@@ -80,7 +83,7 @@ Content-length: 220
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List verificationDnsRecords",
+  "description": "List serviceConfigurationRecords",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

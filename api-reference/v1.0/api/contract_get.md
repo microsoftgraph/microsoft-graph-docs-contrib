@@ -1,19 +1,16 @@
-# Get domain
+# Get Contract
 
-Retrieve the properties and relationships of domain object.
+Retrieve the properties and relationships of [contract](../resources/contract.md) object.
 
 ### Prerequisites
 
-One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
+One of the following **scopes** are required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All*, or *Directory.AccessAsUser.All*
 
 ### HTTP request
-
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{id}
+GET /contracts/{id}
 ```
-
-> For {id}, specify the domain with its fully qualified domain name.
 
 ### Optional query parameters
 
@@ -24,42 +21,44 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer &lt;token&gt; *Required* |
-| Content-Type  | application/json |
 
 ### Request body
+
 Do not supply a request body for this method.
+
 ### Response
-If successful, this method returns a `200 OK` response code and [domain](../resources/domain.md) object in the response body.
+
+If successful, this method returns a `200 OK` response code and [Contract](../resources/contract.md) object in the response body.
+
 ### Example
 ##### Request
 
 <!-- {
   "blockType": "request",
-  "name": "get_domain"
+  "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com
+GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
+
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "@odata.type": "microsoft.graph.Contract"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 192
+Content-length: 186
 
 {
-  "authenticationType": "authenticationType-value",
-  "availabilityStatus": "availabilityStatus-value",
-  "id": "contoso.com",
-  "isAdminManaged": true,
-  "isDefault": true,
-  "isInitial": true,
-  "isRoot": true
+  "contractType": "contractType-value",
+  "customerId": "customerId-value",
+  "defaultDomainName": "defaultDomainName-value",
+  "displayName": "displayName-value",
+  "id": "id-value"
 }
 ```
 
@@ -67,7 +66,7 @@ Content-length: 192
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get domain",
+  "description": "Get Contract",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

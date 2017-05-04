@@ -62,28 +62,6 @@ The `Scopes` value stores the Microsoft Graph permission scopes that the app wil
 IdentityClientApp = new PublicClientApplication(ClientID);
 ```
 
-## Install the Microsoft Authentication Library (MSAL)
-
-The [Microsoft Authentication Library](https://www.nuget.org/packages/Microsoft.Identity.Client) contains classes and methods that make it easy to authenticate users through the v2.0 authentication endpoint.
-
-1. In the Solution Explorer right-click the **XamarinConnect (Portable)** project and select **Manage NuGet Packages...**
-2. Click Browse and search for Microsoft.Identity.Client.
-3. Select the latest version of the Microsoft Authentication Library and click **Install**.
-
-Perform these same steps for the **XamarinConnect.Droid**, **XamarinConnect.iOS**, and **XamarinConnect.UWP** projects. Your app will not build if MSAL isn't installed in all four projects.
-
-## Install the Microsoft Graph Client Library
-
-1. In the Solution Explorer right-click the **XamarinConnect (Portable)** project and select **Manage NuGet Packages...**
-2. Click Browse and search for Microsoft.Graph.
-3. Select the latest version of the Microsoft Graph Client Library and click **Install**.
-
-## Update the Newtonsoft.JSON Library
-
-1. In the Solution Explorer right-click the **XamarinConnect (Portable)** project and select **Manage NuGet Packages...**
-2. Click Installed and search for NewtonSoft.JSON.
-3. Select version 9.0.1 of the NewtonSoft.JSON Library and click **Install**.
-
 ## Create the AuthenticationHelper.cs class
 
 Open the AuthenticationHelper.cs file inside the **XamarinConnect (Portable)** project. This file will contain all of the authentication code, along with additional logic that stores user information and forces authentication only when the user has disconnected from the app. This class contains at least three methods: `GetTokenForUserAsync`, `Signout`, and `GetAuthenticatedClient`.

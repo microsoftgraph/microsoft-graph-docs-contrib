@@ -38,7 +38,7 @@ In the request body, supply a JSON representation of [domain](../resources/domai
   "id": "create_domain_from_domains"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/domains
+POST https://graph.microsoft.com/V1.0/domains
 Content-type: application/json
 Content-length: 192
 
