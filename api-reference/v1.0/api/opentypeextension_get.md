@@ -50,20 +50,29 @@ GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 
 ### Get a known resource instance expanded with a matching extension 
 
-Use the same REST request as getting the resource instance, look for an extension that matches a 
-filter on its **id** property, and expand the instance with the extension.
+For the event, group event, message, personal contact resource types, you can use the same REST request as getting the resource instance, 
+look for an extension that matches a filter on its **id** property, and expand the instance with the extension. The response includes 
+most of the resource properties.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')
+```
+
+
+For the device, group, group post, organization, and user resource types, you must also use a `$select` parameter to include
+the **id** property and any other properties you want from the resource instance:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
 ### Filter for resource instances expanded with a matching extension 
