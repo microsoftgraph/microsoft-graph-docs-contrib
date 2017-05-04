@@ -41,22 +41,22 @@ Here is a JSON representation of the resource
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolean| |
-|api|[api](api.md)| Specifies settings for a Web API application. |
+|allowPublicClient|Boolean| Specifies if the application can act as a public client. For example,  an installed application running on a mobile device. Default value is *false*. |
+|api|[api](api.md)| Specifies settings for an API application. |
 |appRoles|[appRole](approle.md) collection|The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable.|
-|applicationAliases|String collection| |
-|createdDateTime|DateTimeOffset| |
+|applicationAliases|String collection| The URIs that identify the application. For more information see, [Application Objects and Service Principal Objects](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). The *any* operator is required for filter expressions on multi-valued properties. Not nullable. |
+|createdDateTime|DateTimeOffset| The date and time the application was registered in the tenant. |
 |displayName|String|The display name for the application. |
 |id|String|The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
 |info|[informationalUrl](informationalurl.md)| Basic profile information of the application. |
-|installedClients|[installedClient](installedclient.md)| Specifies settings for non Web App or Web Api. |
+|installedClients|[installedClient](installedclient.md)| Specifies settings for installed clients such as desktop or mobile devices. |
 |keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the application Not nullable. |
 |logo|Stream|The main logo for the application. Not nullable. |
 |orgRestrictions|String collection| The organizational tenantIds to which the application is restricted.  If the collection is empty, the application is multi-tenant (not restricted). If the collection contains tenantIds, the application is restricted to the organizational tenantIds in the collection. Specifying other tenants but not the tenantId where the application is registered implies that the application's own tenantId is indirectly included. |
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
-|preAuthorizedApplications|[preAuthorizedApplication](preauthorizedapplication.md) collection| |
+|preAuthorizedApplications|[preAuthorizedApplication](preauthorizedapplication.md) collection| Lists applications and requested permissions for implicit consent. Requires an admin to have provided consent to the application. preAuthorizedApplications will not require the user to consent to the requested permissions. |
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
-|tags|String collection| |
+|tags|String collection| Custom strings that can be used to categorize and identify the application. |
 |web|[web](web.md)| Specifies settings for a web application. |
 
 ### Relationships

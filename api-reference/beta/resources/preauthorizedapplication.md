@@ -1,13 +1,13 @@
 # preAuthorizedApplication resource type
 
-
+Represents an application and requested permissions for implicit consent. Requires an admin to have provided consent to the application. preAuthorizedApplications will not require the user to consent to the requested permissions.
 
 ### Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|appId|String| The unique identifier for the application. |
-|permissionIds|String collection||
+|id|String| The unique identifier for the application. |
+|permissionIds|String collection| The unique identifier for either the [oAuth2Permission](oauth2permission.md) or [appRole](approle.md) the application requires. |
 
 ### JSON representation
 
