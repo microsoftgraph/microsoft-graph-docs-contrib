@@ -62,6 +62,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|businessPhones|String collection|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
 |city|String|The city in which the user is located. Supports $filter.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
 |department|String|The name for the department in which the user works. Supports $filter.|
@@ -69,6 +70,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|imAddresses|String collection|The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title. Supports $filter.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
