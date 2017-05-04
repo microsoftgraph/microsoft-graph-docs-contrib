@@ -22,6 +22,7 @@ Here is a JSON representation of the resource
   "api": {"@odata.type": "microsoft.graph.api"},
   "applicationAliases": ["String"],
   "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
@@ -46,6 +47,7 @@ Here is a JSON representation of the resource
 |appRoles|[appRole](approle.md) collection|The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable.|
 |applicationAliases|String collection| The URIs that identify the application. For more information see, [Application Objects and Service Principal Objects](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). The *any* operator is required for filter expressions on multi-valued properties. Not nullable. |
 |createdDateTime|DateTimeOffset| The date and time the application was registered in the tenant. |
+|deletedDateTime|DateTimeOffset| The date and time the application was deleted. |
 |displayName|String|The display name for the application. |
 |id|String|The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
 |info|[informationalUrl](informationalurl.md)| Basic profile information of the application. |
