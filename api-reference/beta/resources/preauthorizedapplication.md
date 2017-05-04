@@ -1,6 +1,6 @@
 # preAuthorizedApplication resource type
 
-Represents an application and requested permissions for implicit consent. Requires an admin to have provided consent to the application. preAuthorizedApplications will not require the user to consent to the requested permissions.
+Represents an application and requested permissions for implicit consent. Requires an admin to have provided consent to the application. preAuthorizedApplications do not require the user to consent to the requested permissions.
 
 ### Properties
 
