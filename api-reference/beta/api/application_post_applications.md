@@ -49,8 +49,7 @@ Content-length: 717
       }
     ],
     "availableToOtherOrganizations": true,
-    "displayName": "displayName-value",
-    "errorUrl": "errorUrl-value"
+    "displayName": "displayName-value"
 }
 ```
 In the request body, supply a JSON representation of [application](../resources/application.md) object.

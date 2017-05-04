@@ -46,7 +46,7 @@ Here is a JSON representation of the resource
 |api|[api](api.md)| Specifies settings for an API application. |
 |appRoles|[appRole](approle.md) collection|The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable.|
 |applicationAliases|String collection| The URIs that identify the application. For more information see, [Application Objects and Service Principal Objects](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). The *any* operator is required for filter expressions on multi-valued properties. Not nullable. |
-|createdDateTime|DateTimeOffset| The date and time the application was registered in the tenant. |
+|createdDateTime|DateTimeOffset| The date and time the application was registered. |
 |deletedDateTime|DateTimeOffset| The date and time the application was deleted. |
 |displayName|String|The display name for the application. |
 |id|String|The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |

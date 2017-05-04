@@ -6,7 +6,7 @@ Specifies settings for a web application.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-|logoutUrl|String| |
+|logoutUrl|String| Specifies the URL that is called at application logout. |
 |oauth2AllowImplicitFlow|Boolean| Specifies whether this web application can request tokens using the oAuth 2.0 implicit flow. The default is false. |
 |redirectUrls|String collection| Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. |
 

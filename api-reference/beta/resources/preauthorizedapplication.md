@@ -6,8 +6,8 @@ Represents an application and requested permissions for implicit consent. Requir
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id|String| The unique identifier for the application. |
-|permissionIds|String collection| The unique identifier for either the [oAuth2Permission](oauth2permission.md) or [appRole](approle.md) the application requires. |
+|appId|String| The unique identifier for the application. |
+|permissionIds|String collection| The unique identifier for either the [publishedPermissionScope](permissionscope.md) or [appRole](approle.md) the application requires. |
 
 ### JSON representation
 

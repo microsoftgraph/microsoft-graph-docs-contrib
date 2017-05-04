@@ -23,13 +23,12 @@ In the request body, supply the values for relevant fields that should be update
 |appRoles|appRole|The collection of application roles that an application may declare. These roles can be assigned to users, groups or service principals.                              **Notes**: Requires version 1.5, not nullable.|
 |availableToOtherOrganizations|Boolean|                **true** if the application is shared with other tenants; otherwise, **false**.|
 |displayName|String|The display name for the application.|
-|errorUrl|String|                              |
 |groupMembershipClaims|String|A bitmask that configures the "groups" claim issued in a user or OAuth 2.0 access token that the application expects. The bitmask values are: 0: None, 1: Security groups and Azure AD roles, 2: Reserved, and 4: Reserved. Setting the bitmask to 7 will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of.                              **Notes**: Requires version 1.5.|
 |homepage|String|The URL to the applicationâ€™s homepage.|
 |identifierUris|String|The URIs that identify the application. For more information see, [Application Objects and Service Principal Objects](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-objects/).                              **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).|
 |keyCredentials|keyCredential|The collection of key credentials associated with the application                              **Notes:** not nullable|
 |knownClientApplications|Guid|Client applications that are tied to this resource application. Consent to any of the known client applications will result in implicit consent to the resource application through a combined consent dialog (showing the OAuth permission scopes required by the client and the resource).                              **Notes**: Requires version 1.5, not nullable.|
-|logoutUrl|String|                              |
+|logoutUrl|String| Specifies the URL that is called at application logout. |
 |mainLogo|Stream|The main logo for the application.                              **Notes:** not nullable|
 |oauth2AllowImplicitFlow|Boolean|Specifies whether this web application can request OAuth2.0 implicit flow tokens. The default is **false**.                              **Notes**: Requires version 1.5, not nullable.|
 |oauth2AllowUrlPathMatching|Boolean|Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow path matching of the redirect URI against the application's **replyUrls**. The default is **false**.                              **Notes**: Requires version 1.5, not nullable.|
@@ -70,8 +69,7 @@ Content-length: 636
   ],
   "appId": "appId-value",
   "availableToOtherOrganizations": true,
-  "displayName": "displayName-value",
-  "errorUrl": "errorUrl-value"
+  "displayName": "displayName-value"
 }
 ```
 ##### Response
