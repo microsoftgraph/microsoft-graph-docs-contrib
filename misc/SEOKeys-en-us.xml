@@ -90,6 +90,13 @@
       <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
       <Item text="List children" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
     </Item>
+	<Item text="Tasks" url="/en-us/api-reference/v1.0/resources/plannerplan" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List tasks" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
+      </Item>
+	<Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+      </Item>  
     <Item text="Groups" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
       <Item text="List memberOf" url="/en-us/api-reference/v1.0/api/user_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
     </Item>
@@ -115,6 +122,13 @@
     <Item text="Update open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_update" SEOKeyword="Update data extension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
     <Item text="Delete open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_delete" SEOKeyword="Delete data extension, Microsoft Graph API, opentypeextension API" SEODescription="Delete data extension." />
   </Item>
+  <Item text="Schema Extensions" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
+      <Item text="List schema extensions" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
+      <Item text="Create schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
+      <Item text="Get schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_get" SEOKeyword="Get schema extension, Microsoft Graph API" SEODescription="Retrieve the properties of a schema extension definition." />
+      <Item text="Update schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
+      <Item text="Delete schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />
+    </Item>
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="OneDrive APIs">
     <Item text="Drives" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive API">
       <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
@@ -201,7 +215,7 @@
     <Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
     <Item text="Delete attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
   </Item>
-  <Item text="Outlook mail" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Outlook Mail APIs">
+  <Item text="Outlook mail" url="/en-us/api-reference/v1.0/resources/mail_api_overview" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Outlook Mail APIs">
     <Item text="Message" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Mail APIs">
       <Item text="List messages" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
       <Item text="Create message" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Create Message, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Message." />
@@ -325,6 +339,97 @@
       </Item>
     </Item>
   </Item>
+  <Item text="OneNote" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
+      <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
+        <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+        <Item text="List sections" url="/en-us/api-reference/v1.0/api/onenote_list_sections" SEOKeyword="List sections, Microsoft Graph API, notes API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
+        <Item text="List section groups" url="/en-us/api-reference/v1.0/api/onenote_list_sectiongroups" SEOKeyword="List sectionGroups, Microsoft Graph API, notes API" SEODescription="Retrieve a list of sectionGroup(../resources/sectiongroup.md) objects." />
+        <Item text="List pages" url="/en-us/api-reference/v1.0/api/onenote_list_pages" SEOKeyword="List pages, Microsoft Graph API, notes API" SEODescription="Retrieve a list of page(../resources/page.md) objects." />
+        <Item text="Create page" url="/en-us/api-reference/v1.0/api/onenote_post_pages" SEOKeyword="Create page, Microsoft Graph API, notes API" SEODescription="Create a new OneNote page in the default section of the default notebook." />
+      </Item>
+      <Item text="Notebooks" url="/en-us/api-reference/v1.0/resources/notebook" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+        <Item text="Get notebook" url="/en-us/api-reference/v1.0/api/notebook_get" SEOKeyword="Get notebook, Microsoft Graph API, notebook API" SEODescription="Retrieve the properties and relationships of a notebook(../resources/notebook.md) object." />
+        <Item text="Copy notebook" url="/en-us/api-reference/v1.0/api/notebook_copynotebook" SEOKeyword="notebook: copyNotebook, Microsoft Graph API, notebook API" SEODescription="" />
+        <Item text="List sections" url="/en-us/api-reference/v1.0/api/notebook_list_sections" SEOKeyword="List sections, Microsoft Graph API, notebook API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
+        <Item text="Create section" url="/en-us/api-reference/v1.0/api/notebook_post_sections" SEOKeyword="Create section, Microsoft Graph API, notebook API" SEODescription="Create a new section(../resources/section.md) in the specified notebook." />
+        <Item text="List section groups" url="/en-us/api-reference/v1.0/api/notebook_list_sectiongroups" SEOKeyword="List sectionGroups, Microsoft Graph API, notebook API" SEODescription="Retrieve a list of section groups(../resources/sectiongroup.md) from the specified notebook." />
+        <Item text="Create section group" url="/en-us/api-reference/v1.0/api/notebook_post_sectiongroups" SEOKeyword="Create sectionGroup, Microsoft Graph API, notebook API" SEODescription="Create a new section group(../resources/sectiongroup.md) in the specified notebook." />
+      </Item>
+      <Item text="Sections" url="/en-us/api-reference/v1.0/resources/section" SEOKeyword="section API, Microsoft Graph API, section API" SEODescription="A section in a OneNote notebook. Section can contain pages.">
+        <Item text="List sections" url="/en-us/api-reference/v1.0/api/onenote_list_sections" SEOKeyword="List sections, Microsoft Graph API, notes API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
+        <Item text="Create section" url="/en-us/api-reference/v1.0/api/notebook_post_sections" SEOKeyword="Create section, Microsoft Graph API, notebook API" SEODescription="Create a new section(../resources/section.md) in the specified notebook." />
+        <Item text="Get section" url="/en-us/api-reference/v1.0/api/section_get" SEOKeyword="Get section, Microsoft Graph API, section API" SEODescription="Retrieve the properties and relationships of a section(../resources/section.md) object." />
+        <Item text="List pages" url="/en-us/api-reference/v1.0/api/section_list_pages" SEOKeyword="List pages, Microsoft Graph API, section API" SEODescription="Retrieve a list of page(../resources/page.md) objects from the specified section." />
+        <Item text="Create page" url="/en-us/api-reference/v1.0/api/section_post_pages" SEOKeyword="Create page, Microsoft Graph API, section API" SEODescription="Create a new page(../resources/page.md) in the specified section." />
+        <Item text="Copy to notebook" url="/en-us/api-reference/v1.0/api/section_copytonotebook" SEOKeyword="section: copyToNotebook, Microsoft Graph API, section API" SEODescription="" />
+        <Item text="Copy to section group" url="/en-us/api-reference/v1.0/api/section_copytosectiongroup" SEOKeyword="section: copyToSectionGroup, Microsoft Graph API, section API" SEODescription="" />
+      </Item>
+      <Item text="Section groups" url="/en-us/api-reference/v1.0/resources/sectiongroup" SEOKeyword="sectiongroup API, Microsoft Graph API, sectiongroup API" SEODescription="A section group in a OneNote notebook. Section groups can contain sections and section groups.">
+        <Item text="List section groups" url="/en-us/api-reference/v1.0/api/onenote_list_sectiongroups" SEOKeyword="List sectionGroups, Microsoft Graph API, notes API" SEODescription="Retrieve a list of sectionGroup(../resources/sectiongroup.md) objects." />
+        <Item text="Create section group" url="/en-us/api-reference/v1.0/api/notebook_post_sectiongroups" SEOKeyword="Create sectionGroup, Microsoft Graph API, notebook API" SEODescription="Create a new section group(../resources/sectiongroup.md) in the specified notebook." />
+        <Item text="Get section group" url="/en-us/api-reference/v1.0/api/sectiongroup_get" SEOKeyword="Get sectionGroup, Microsoft Graph API, sectiongroup API" SEODescription="Retrieve the properties and relationships of a sectionGroup(../resources/sectiongroup.md) object." />
+        <Item text="List sections" url="/en-us/api-reference/v1.0/api/sectiongroup_list_sections" SEOKeyword="List sections, Microsoft Graph API, sectiongroup API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
+        <Item text="Create section" url="/en-us/api-reference/v1.0/api/sectiongroup_post_sections" SEOKeyword="Create section, Microsoft Graph API, sectiongroup API" SEODescription="Create a new section(../resources/section.md) in the specified notebook." />
+      </Item>
+      <Item text="Pages" url="/en-us/api-reference/v1.0/resources/page" SEOKeyword="page API, Microsoft Graph API, page API" SEODescription="A page in a OneNote notebook.">
+        <Item text="List pages" url="/en-us/api-reference/v1.0/api/onenote_list_pages" SEOKeyword="List pages, Microsoft Graph API, notes API" SEODescription="Retrieve a list of page(../resources/page.md) objects." />
+        <Item text="Create page" url="/en-us/api-reference/v1.0/api/section_post_pages" SEOKeyword="Create page, Microsoft Graph API, section API" SEODescription="Create a new page(../resources/page.md) in the specified section." />
+        <Item text="Get page" url="/en-us/api-reference/v1.0/api/page_get" SEOKeyword="Get page, Microsoft Graph API, page API" SEODescription="Retrieve the properties and relationships of a page(../resources/page.md) object." />
+        <Item text="Update page" url="/en-us/api-reference/v1.0/api/page_update" SEOKeyword="Update page, Microsoft Graph API, page API" SEODescription="Update the properties of page object." />
+        <Item text="Delete page" url="/en-us/api-reference/v1.0/api/page_delete" SEOKeyword="Delete page, Microsoft Graph API, page API" SEODescription="Delete a OneNote page." />
+        <Item text="Copy to section" url="/en-us/api-reference/v1.0/api/page_copytosection" SEOKeyword="page: copyToSection, Microsoft Graph API, page API" SEODescription="" />
+      </Item>
+      <Item text="Resources" url="/en-us/api-reference/v1.0/resources/resource" SEOKeyword="resource API, Microsoft Graph API, resource API" SEODescription="An image or other file resource on a OneNote page.">
+        <Item text="Get resource" url="/en-us/api-reference/v1.0/api/resource_get" SEOKeyword="Get resource, Microsoft Graph API, resource API" SEODescription="Retrieve the properties and relationships of a file or image resource(../resources/resource.md) object." />
+      </Item>
+    </Item>
+  <Item text="Planner" url="/en-us/api-reference/v1.0/resources/planner_overview" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
+      <Item text="Plan" url="/en-us/api-reference/v1.0/resources/plannerplan" >
+		  <Item text="Create plan" url="/en-us/api-reference/v1.0/api/planner_post_plans" />
+		  <Item text="List plans for group" url="/en-us/api-reference/v1.0/api/plannergroup_list_plans" />
+		  <Item text="Get plan" url="/en-us/api-reference/v1.0/api/plannerplan_get" />
+		  <Item text="List plan tasks" url="/en-us/api-reference/v1.0/api/plannerplan_list_tasks" />
+		  <Item text="List plan buckets" url="/en-us/api-reference/v1.0/api/plannerplan_list_buckets" />
+		  <Item text="Update plan" url="/en-us/api-reference/v1.0/api/plannerplan_update" />
+	  </Item>
+	  <Item text="Task" url="/en-us/api-reference/v1.0/resources/plannertask" >
+		  <Item text="Create task" url="/en-us/api-reference/v1.0/api/planner_post_tasks" />
+		  <Item text="Get tasks for user" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" />
+		  <Item text="Get task" url="/en-us/api-reference/v1.0/api/plannertask_get" />
+		  <Item text="Update task" url="/en-us/api-reference/v1.0/api/plannertask_update" />
+		  <Item text="Delete task" url="/en-us/api-reference/v1.0/api/plannertask_delete" />	  
+	  </Item>
+	  <Item text="Task details" url="/en-us/api-reference/v1.0/resources/plannertaskdetails" >
+		  <Item text="Get task details" url="/en-us/api-reference/v1.0/api/plannertaskdetails_get" />
+		  <Item text="Update task details" url="/en-us/api-reference/v1.0/api/plannertaskdetails_update" />	  
+	  </Item>
+	  <Item text="Plan details" url="/en-us/api-reference/v1.0/resources/plannerplandetails" >
+		<Item text="Get plan details" url="/en-us/api-reference/v1.0/api/plannerplandetails_get" />
+		<Item text="Update plan details" url="/en-us/api-reference/v1.0/api/plannerplandetails_update" />	  
+	  </Item>
+	  <Item text="Bucket" url="/en-us/api-reference/v1.0/resources/plannerbucket" >
+		  <Item text="Create bucket" url="/en-us/api-reference/v1.0/api/planner_post_buckets" />
+		  <Item text="Get bucket" url="/en-us/api-reference/v1.0/api/plannerbucket_get" />
+		  <Item text="List bucket tasks" url="/en-us/api-reference/v1.0/api/plannerbucket_list_tasks" />
+		  <Item text="Update bucket" url="/en-us/api-reference/v1.0/api/plannerbucket_update" />
+		  <Item text="Delete bucket" url="/en-us/api-reference/v1.0/api/plannerbucket_delete" />
+	  </Item>
+	  <Item text="Assigned to task board format" url="/en-us/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat" >
+		  <Item text="Get assigned to task board format" url="/en-us/api-reference/v1.0/api/plannerassignedtotaskboardtaskformat_get" />
+		  <Item text="Update assigned to task board format" url="/en-us/api-reference/v1.0/api/plannerassignedtotaskboardtaskformat_update" />	  
+	  </Item>
+	  <Item text="Bucket task board task format" url="/en-us/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat" >
+		<Item text="Get bucket task board format" url="/en-us/api-reference/v1.0/api/plannerbuckettaskboardtaskformat_get" />
+		<Item text="Update bucket task board format" url="/en-us/api-reference/v1.0/api/plannerbuckettaskboardtaskformat_update" />	  
+	  </Item>
+	  <Item text="Progress task board task format" url="/en-us/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat" >
+		<Item text="Get progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_get" />
+		<Item text="Update progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
+	  </Item>
+    </Item>
   <Item text="Personal contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Personal contacts API">
     <Item text="Contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Contact">
       <Item text="List contacts" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
@@ -442,9 +547,20 @@
       <Item text="Get drive" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
       <Item text="List children" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
     </Item>
+	<Item text="Plans" url="/en-us/api-reference/v1.0/resources/plannerplan" SEOKeyword="group calendar, Microsoft Graph API, group API" SEODescription="">
+        <Item text="List plans" url="/en-us/api-reference/v1.0/api/plannergroup_list_plans" SEOKeyword="List plans, Microsoft Graph API, group API" SEODescription="Retrieve a list of plan objects." />
+      </Item>
+	<Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+    </Item>
   </Item>
   <Item text="Directory" url="/en-us/api-reference/v1.0/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
-    <Item text="Device" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
+    <Item text="Contracts" url="/en-us/api-reference/v1.0/resources/contract" >
+		<Item text="Get contract" url="/en-us/api-reference/v1.0/api/contract_get" />
+		<Item text="List contracts" url="/en-us/api-reference/v1.0/api/contract_list" />
+	 </Item>
+	<Item text="Device" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="List devices" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
       <Item text="Create Device" url="/en-us/api-reference/v1.0/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
       <Item text="Get device" url="/en-us/api-reference/v1.0/api/device_get" SEOKeyword="Get device, Microsoft Graph API, Device API" SEODescription="Retrieve the properties and relationships of device object." />
@@ -471,7 +587,15 @@
       <Item text="List directoryRoleTemplates" url="/en-us/api-reference/v1.0/api/directoryroletemplate_list" SEOKeyword="List directoryRoleTemplates, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryroletemplate objects." />
       <Item text="Get directoryRoleTemplate" url="/en-us/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="Get directoryRoleTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
     </Item>
-    <Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
+    <Item text="Domains" url="/en-us/api-reference/v1.0/resources/domain" >
+		<Item text="List domains" url="/en-us/api-reference/v1.0/api/domain_list" />
+		<Item text="Create domain" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
+		<Item text="Delete domain" url="/en-us/api-reference/v1.0/api/domain_forcedelete" />
+		<Item text="Get domain" url="/en-us/api-reference/v1.0/api/domain_get" />
+		<Item text="Update domain" url="/en-us/api-reference/v1.0/api/domain_update" />
+		<Item text="Verify domain" url="/en-us/api-reference/v1.0/api/domain_verify" />
+	  </Item>
+	<Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
         <Item text="Create invitation" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
       </Item>
     <Item text="Organization" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="user organizational structure, Microsoft Graph API, user API" SEODescription="">
@@ -547,9 +671,9 @@
       <Item text="Tasks" url="/en-us/api-reference/beta/resources/plannerplan" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
         <Item text="List tasks" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
       </Item>
-      <Item text="Notes" url="/en-us/api-reference/beta/resources/notebook" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List notebooks" url="/en-us/api-reference/beta/api/notes_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
-        <Item text="Create notebook" url="/en-us/api-reference/beta/api/notes_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+      <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
       </Item>
       <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
         <Item text="List trending" url="/en-us/api-reference/beta/api/insights_list_trending" />
@@ -595,7 +719,6 @@
 		  <Item text="List plan tasks" url="/en-us/api-reference/beta/api/plannerplan_list_tasks" />
 		  <Item text="List plan buckets" url="/en-us/api-reference/beta/api/plannerplan_list_buckets" />
 		  <Item text="Update plan" url="/en-us/api-reference/beta/api/plannerplan_update" />
-		  <Item text="Delete plan" url="/en-us/api-reference/beta/api/plannerplan_delete" />
 	  </Item>
 	  <Item text="Task" url="/en-us/api-reference/beta/resources/plannertask" >
 		  <Item text="Create task" url="/en-us/api-reference/beta/api/planner_post_tasks" />
@@ -671,18 +794,18 @@
 		  </Item>
 		</Item>
     </Item>
-    <Item text="OneNote" url="/en-us/api-reference/beta/resources/notes" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
-      <Item text="Notes" url="/en-us/api-reference/beta/resources/notes" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
-        <Item text="List notebooks" url="/en-us/api-reference/beta/api/notes_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
-        <Item text="Create notebook" url="/en-us/api-reference/beta/api/notes_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
-        <Item text="List sections" url="/en-us/api-reference/beta/api/notes_list_sections" SEOKeyword="List sections, Microsoft Graph API, notes API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
-        <Item text="List section groups" url="/en-us/api-reference/beta/api/notes_list_sectiongroups" SEOKeyword="List sectionGroups, Microsoft Graph API, notes API" SEODescription="Retrieve a list of sectionGroup(../resources/sectiongroup.md) objects." />
-        <Item text="List pages" url="/en-us/api-reference/beta/api/notes_list_pages" SEOKeyword="List pages, Microsoft Graph API, notes API" SEODescription="Retrieve a list of page(../resources/page.md) objects." />
-        <Item text="Create page" url="/en-us/api-reference/beta/api/notes_post_pages" SEOKeyword="Create page, Microsoft Graph API, notes API" SEODescription="Create a new OneNote page in the default section of the default notebook." />
+    <Item text="OneNote" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
+      <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
+        <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+        <Item text="List sections" url="/en-us/api-reference/beta/api/onenote_list_sections" SEOKeyword="List sections, Microsoft Graph API, notes API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
+        <Item text="List section groups" url="/en-us/api-reference/beta/api/onenote_list_sectiongroups" SEOKeyword="List sectionGroups, Microsoft Graph API, notes API" SEODescription="Retrieve a list of sectionGroup(../resources/sectiongroup.md) objects." />
+        <Item text="List pages" url="/en-us/api-reference/beta/api/onenote_list_pages" SEOKeyword="List pages, Microsoft Graph API, notes API" SEODescription="Retrieve a list of page(../resources/page.md) objects." />
+        <Item text="Create page" url="/en-us/api-reference/beta/api/onenote_post_pages" SEOKeyword="Create page, Microsoft Graph API, notes API" SEODescription="Create a new OneNote page in the default section of the default notebook." />
       </Item>
       <Item text="Notebooks" url="/en-us/api-reference/beta/resources/notebook" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List notebooks" url="/en-us/api-reference/beta/api/notes_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
-        <Item text="Create notebook" url="/en-us/api-reference/beta/api/notes_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+        <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
         <Item text="Get notebook" url="/en-us/api-reference/beta/api/notebook_get" SEOKeyword="Get notebook, Microsoft Graph API, notebook API" SEODescription="Retrieve the properties and relationships of a notebook(../resources/notebook.md) object." />
         <Item text="Copy notebook" url="/en-us/api-reference/beta/api/notebook_copynotebook" SEOKeyword="notebook: copyNotebook, Microsoft Graph API, notebook API" SEODescription="" />
         <Item text="List sections" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="List sections, Microsoft Graph API, notebook API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
@@ -691,7 +814,7 @@
         <Item text="Create section group" url="/en-us/api-reference/beta/api/notebook_post_sectiongroups" SEOKeyword="Create sectionGroup, Microsoft Graph API, notebook API" SEODescription="Create a new section group(../resources/sectiongroup.md) in the specified notebook." />
       </Item>
       <Item text="Sections" url="/en-us/api-reference/beta/resources/section" SEOKeyword="section API, Microsoft Graph API, section API" SEODescription="A section in a OneNote notebook. Section can contain pages.">
-        <Item text="List sections" url="/en-us/api-reference/beta/api/notes_list_sections" SEOKeyword="List sections, Microsoft Graph API, notes API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
+        <Item text="List sections" url="/en-us/api-reference/beta/api/onenote_list_sections" SEOKeyword="List sections, Microsoft Graph API, notes API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
         <Item text="Create section" url="/en-us/api-reference/beta/api/notebook_post_sections" SEOKeyword="Create section, Microsoft Graph API, notebook API" SEODescription="Create a new section(../resources/section.md) in the specified notebook." />
         <Item text="Get section" url="/en-us/api-reference/beta/api/section_get" SEOKeyword="Get section, Microsoft Graph API, section API" SEODescription="Retrieve the properties and relationships of a section(../resources/section.md) object." />
         <Item text="List pages" url="/en-us/api-reference/beta/api/section_list_pages" SEOKeyword="List pages, Microsoft Graph API, section API" SEODescription="Retrieve a list of page(../resources/page.md) objects from the specified section." />
@@ -700,14 +823,14 @@
         <Item text="Copy to section group" url="/en-us/api-reference/beta/api/section_copytosectiongroup" SEOKeyword="section: copyToSectionGroup, Microsoft Graph API, section API" SEODescription="" />
       </Item>
       <Item text="Section groups" url="/en-us/api-reference/beta/resources/sectiongroup" SEOKeyword="sectiongroup API, Microsoft Graph API, sectiongroup API" SEODescription="A section group in a OneNote notebook. Section groups can contain sections and section groups.">
-        <Item text="List section groups" url="/en-us/api-reference/beta/api/notes_list_sectiongroups" SEOKeyword="List sectionGroups, Microsoft Graph API, notes API" SEODescription="Retrieve a list of sectionGroup(../resources/sectiongroup.md) objects." />
+        <Item text="List section groups" url="/en-us/api-reference/beta/api/onenote_list_sectiongroups" SEOKeyword="List sectionGroups, Microsoft Graph API, notes API" SEODescription="Retrieve a list of sectionGroup(../resources/sectiongroup.md) objects." />
         <Item text="Create section group" url="/en-us/api-reference/beta/api/notebook_post_sectiongroups" SEOKeyword="Create sectionGroup, Microsoft Graph API, notebook API" SEODescription="Create a new section group(../resources/sectiongroup.md) in the specified notebook." />
         <Item text="Get section group" url="/en-us/api-reference/beta/api/sectiongroup_get" SEOKeyword="Get sectionGroup, Microsoft Graph API, sectiongroup API" SEODescription="Retrieve the properties and relationships of a sectionGroup(../resources/sectiongroup.md) object." />
         <Item text="List sections" url="/en-us/api-reference/beta/api/sectiongroup_list_sections" SEOKeyword="List sections, Microsoft Graph API, sectiongroup API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
         <Item text="Create section" url="/en-us/api-reference/beta/api/sectiongroup_post_sections" SEOKeyword="Create section, Microsoft Graph API, sectiongroup API" SEODescription="Create a new section(../resources/section.md) in the specified notebook." />
       </Item>
       <Item text="Pages" url="/en-us/api-reference/beta/resources/page" SEOKeyword="page API, Microsoft Graph API, page API" SEODescription="A page in a OneNote notebook.">
-        <Item text="List pages" url="/en-us/api-reference/beta/api/notes_list_pages" SEOKeyword="List pages, Microsoft Graph API, notes API" SEODescription="Retrieve a list of page(../resources/page.md) objects." />
+        <Item text="List pages" url="/en-us/api-reference/beta/api/onenote_list_pages" SEOKeyword="List pages, Microsoft Graph API, notes API" SEODescription="Retrieve a list of page(../resources/page.md) objects." />
         <Item text="Create page" url="/en-us/api-reference/beta/api/section_post_pages" SEOKeyword="Create page, Microsoft Graph API, section API" SEODescription="Create a new page(../resources/page.md) in the specified section." />
         <Item text="Get page" url="/en-us/api-reference/beta/api/page_get" SEOKeyword="Get page, Microsoft Graph API, page API" SEODescription="Retrieve the properties and relationships of a page(../resources/page.md) object." />
         <Item text="Update page" url="/en-us/api-reference/beta/api/page_update" SEOKeyword="Update page, Microsoft Graph API, page API" SEODescription="Update the properties of page object." />
@@ -844,7 +967,7 @@
       <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
       <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
     </Item>
-    <Item text="Outlook mail" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Outlook mail" url="/en-us/api-reference/beta/resources/mail_api_overview" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
       <Item text="Message" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
         <Item text="List messages" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
         <Item text="Create message" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Create Message, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Message." />
@@ -1094,9 +1217,9 @@
       <Item text="Plans" url="/en-us/api-reference/beta/resources/plannerplan" SEOKeyword="group calendar, Microsoft Graph API, group API" SEODescription="">
         <Item text="List plans" url="/en-us/api-reference/beta/api/plannergroup_list_plans" SEOKeyword="List plans, Microsoft Graph API, group API" SEODescription="Retrieve a list of plan objects." />
       </Item>
-      <Item text="Notes" url="/en-us/api-reference/beta/resources/notebook" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List notebooks" url="/en-us/api-reference/beta/api/notes_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
-        <Item text="Create notebook" url="/en-us/api-reference/beta/api/notes_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
+      <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
+        <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
       </Item>
       <Item text="Directory object" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       </Item>

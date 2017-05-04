@@ -1,6 +1,6 @@
 # plannerPlan resource type
 
-The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [plannerTasks](plannerTask.md). It can also have a collection of [plannerBuckets](plannerBucket.md). Each plan object has a [details](plannerPlanDetails.md) object which can contain more information about the plan. See [overview](tasks_overview.md) for more information regarding relationships between group, plan and task.
+The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [plannerTasks](plannerTask.md). It can also have a collection of [plannerBuckets](plannerBucket.md). Each plan object has a [details](plannerPlanDetails.md) object which can contain more information about the plan. See [overview](planner_overview.md) for more information regarding relationships between group, plan and task.
 
 
 
@@ -12,7 +12,6 @@ The **plannerPlan** resource represents a plan in Office 365. A plan can be owne
 |[List buckets](../api/plannerplan_list_buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List tasks](../api/plannerplan_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Update](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
-|[Delete](../api/plannerplan_delete.md) | None |Delete **plannerPlan** object. |
 
 ### Properties
 | Property	   | Type	|Description|
