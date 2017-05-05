@@ -29,8 +29,6 @@ In order to successfully build this example, we'll walk you through setting the 
 
 2. Choose the "Access Office 365 Services with Microsoft Graph" provider and follow the wizard and select the scopes above.  You can also follow this same step to change the permisssions at a later time.
 
-[ADD GIF SCREENSHOT SHOWING FLOW]
-
 ## Call the Microsoft Graph
 
 The Starter sample is configured to send a simple email. Let's now leverage the power of Microsoft Graph to update it to send an email with the link to the signed-in user's profile photo uploaded on OneDrive.
