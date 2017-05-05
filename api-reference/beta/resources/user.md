@@ -64,6 +64,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
+|deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
@@ -185,6 +186,7 @@ Here is a JSON representation of the resource
   "city": "string",
   "companyName": "string",
   "country": "string",
+  "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
   "givenName": "string",
