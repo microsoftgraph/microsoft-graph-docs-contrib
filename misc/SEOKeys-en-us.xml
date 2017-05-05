@@ -41,8 +41,8 @@
   		<Item text="Get changes to users" url="/en-us/concepts/delta_query_users" />
   	</Item>
   <Item text="Add custom data" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
-  		<Item text="Open extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
-  		<Item text="Schema extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
+  		<Item text="Open extensions" url="/en-us/concepts/extensibility_open_users" />
+  		<Item text="Schema extensions" url="/en-us/concepts/extensibility_schema_groups" />
   	</Item>
   <Item text="Access data in different environments" url="/en-us/concepts/" >
 	<Item text="National clouds" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
