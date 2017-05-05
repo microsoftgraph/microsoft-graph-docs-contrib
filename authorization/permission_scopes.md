@@ -13,7 +13,7 @@ Permission scopes can be either app-only or delegated. App-only scopes (also kno
 Delegated permission scopes are for apps that act on behalf of a user. These scopes delegate the privileges of the signed-in user, allowing the app to act as the user. The actual privileges granted to the app will be the least privileged combination (the intersection) of the privileges granted by the scope and those possessed by the signed-in user. For example, if the permission scope grants delegated privileges to write all directory objects, but the signed-in user has privileges only to update their own user profile, the app will only be able to write the signed-in user's profile but no other objects.
 
 > **Note**: For groups, only a subset of the API pertaining to core group administration and management support both app-only 
-and delegated permissions. All other members of the group API support only delegated permissions. See [known issues](../overview/release_notes.md) for examples.
+and delegated permissions. All other members of the group API support only delegated permissions. See known issues for examples.
 
 ## Full and basic profiles for users and groups
 
@@ -39,7 +39,7 @@ The following tables list the Microsoft Graph permission scopes and explains the
 - The **Description** column describes the full set of privileges granted by the scope. For delegated scopes, the actual access granted to the app will be the least privileged combination (intersection) of the access granted by the scope and the privileges of the signed-in user. 
 - The scopes are grouped according to whether the permissions require an administrator's consent.
 
-  > **Note**: See [Known issues](../overview/release_notes.md) for `v1.0` and `beta` permission scope limitations.
+  > **Note**: See Known issues for `v1.0` and `beta` permission scope limitations.
   
 ###Permissions requiring administrator's consent
 
@@ -99,8 +99,8 @@ The following tables list the Microsoft Graph permission scopes and explains the
 | _Directory.ReadWrite.All_ | Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion. |
 | _Files.Read.All_ | Read all files that user can access | Allows the app to read all files in all site collections without a signed in user. |
 | _Files.ReadWrite.All_ | Have full access to all files user can access | Allows the app to read, create, update and delete all files in all site collections without a signed in user. |
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Note that not all group API supports access using app-only permissions. See [known issues](../overview/release_notes.md) for examples. |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. Note that not all group API supports access using app-only permissions. See [known issues](../overview/release_notes.md) for examples.|
+| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Note that not all group API supports access using app-only permissions. See known issues for examples. |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. Note that not all group API supports access using app-only permissions. See known issues for examples.|
 | _Mail.Read_       |    Read mail in all mailboxes | Allows the app to read mail in all mailboxes without a signed-in user.|
 | _Mail.ReadWrite_ |    Read and write mail in all mailboxes | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. |
 | _Mail.Send_ |    Send mail as any user | Allows the app to send mail as any user without a signed-in user. | 
