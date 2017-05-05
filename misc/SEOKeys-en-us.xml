@@ -1,49 +1,57 @@
 <Menu>
-  <Item text="Overview" url="/en-us/overview/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud.">
-    <Item text="Call the API" url="/en-us/overview/call_api" SEOKeyword="Call the API, Microsoft Graph API, Overview" SEODescription="Answers to some frequently-asked questions about the Microsoft Graph." />
-    <Item text="Query parameters" url="/en-us/overview/query_parameters" SEOKeyword="Query parameters, Microsoft Graph API, Overview" SEODescription="Microsoft Graph is OData v4 compliant, provides information about supported OData query parameters" />
-    <Item text="Errors" url="/en-us/overview/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
-    <Item text="Known issues" url="/en-us/overview/release_notes" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="New features for developers that are available in the November 2015 release of the Microsoft Graph API, as well as any known issues." />
-    <Item text="Changelog" url="/en-us/overview/changelog" />
-  </Item>
-  <Item text="Get started" url="/en-us/get-started/get-started">
-    <Item text="ASP.NET MVC" url="/en-us/get-started/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
-    <Item text="UWP" url="/en-us/get-started/uwp" SEOKeyword="UWP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Windows Universal Platfrom app" />
-    <Item text="iOS" url="/en-us/get-started/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
-    <Item text="Android" url="/en-us/get-started/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
-    <Item text="Angular" url="/en-us/get-started/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Angular app" />
-    <Item text="Node.js" url="/en-us/get-started/nodejs" SEOKeyword="Node.js, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Node.js app" />
-    <Item text="PHP" url="/en-us/get-started/php" SEOKeyword="PHP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a PHP app" />
-    <Item text="Python" url="/en-us/get-started/python" SEOKeyword="Python, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Python app" />
-    <Item text="Ruby" url="/en-us/get-started/ruby" SEOKeyword="Ruby, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Ruby app" />
-    <Item text="REST" url="/en-us/get-started/rest" SEOKeyword="REST, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a REST" />
-    <Item text="Xamarin" url="/en-us/get-started/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
-  </Item>
-  <Item text="Authorization" url="/en-us/authorization/auth_overview" SEODescription="Provides an overview of Microsoft Graph app authentication, including Azure AD and the Azure AD v2.0 endpoint." >
-    <Item text="Permission scopes" url="/en-us/authorization/permission_scopes" SEOKeyword="Permission Scopes, Microsoft Graph API, Overview" SEODescription="The Microsoft Graph API exposes OAuth 2.0 permission scopes that are used to control access that an app has to data. As a developer, you configure your app with the permission scopes appropriate to the access that it requires, typically by using the Azure portal." />
-    <Item text="Call Microsoft Graph in a service or daemon app" url="/en-us/authorization/app_only" SEODescription="Connect your single-tenant service or daemon app to Office 365 and call the Microsoft Graph API." />
-    <Item text="Call Microsoft Graph from a CSP app (preview)" url="/en-us/authorization/auth_cloudsolutionprovider" SEODescription="Configure pre-consent for a Cloud Solution Provider CSP app and call the Microsoft Graph API." />
-    <Item text="Azure AD v2.0 endpoint" url="/en-us/authorization/converged_auth" SEODescription="Use the Azure AD v2.0 endpoint to create apps that accept both work and school (Azure Active Directory) as well as personal (Microsoft account) identities." />
-    <Item text="Register your application with the Azure AD v2.0 endpoint" url="/en-us/authorization/auth_register_app_v2" SEODescription="Register your app on the Microsoft App Registration Portal." />
-    <Item text="Azure AD" url="/en-us/authorization/app_authorization" SEODescription="Authenticate your Microsoft Graph app using Azure AD." />
-  </Item>
-  <Item text="Concepts" url="/en-us/concepts" >
-  	<Item text="Delta query (preview)" url="/en-us/concepts/delta_query_overview" >
-  		<Item text="Example: Events (preview)" url="/en-us/concepts/delta_query_events" />
-  		<Item text="Example: Messages (preview)" url="/en-us/concepts/delta_query_messages" />
-  		<Item text="Example: Groups (preview)" url="/en-us/concepts/delta_query_groups" />
-  		<Item text="Example: Users (preview)" url="/en-us/concepts/delta_query_users" />
-  	</Item>
-  	<Item text="Add custom data to resources" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
-  		<Item text="Example: Add custom data with open extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
-  		<Item text="Example: Add custom data with schema extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
-  	</Item>
-  	<Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
+  <Item text="Overview" url="/en-us/overview/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." />    
+  <Item text="Featured scenarios" url="/en-us/concepts/" > 
+	<Item text="Connect with the Bot Framework" url="/en-us/concepts/" />
 	<Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
-	<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
-  	<Item text="Sovereign deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
   </Item>
-  <Item text="horizontalline" url="/" IsSeparation="true" />
+  <Item text="Build your first app" url="/en-us/concepts/get-started">
+    <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
+    <Item text="Angular" url="/en-us/concepts/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Angular app" />
+    <Item text="ASP.NET MVC" url="/en-us/concepts/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
+	<Item text="Connect Visual Studio to Microsoft Graph" url="/en-us/concepts/office_365_connected_services" />
+	<Item text="iOS" url="/en-us/concepts/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
+	<Item text="Node.js" url="/en-us/concepts/nodejs" SEOKeyword="Node.js, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Node.js app" />
+    <Item text="PHP" url="/en-us/concepts/php" SEOKeyword="PHP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a PHP app" />
+    <Item text="Python" url="/en-us/concepts/python" SEOKeyword="Python, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Python app" />
+    <Item text="Ruby" url="/en-us/concepts/ruby" SEOKeyword="Ruby, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Ruby app" />
+    <Item text="REST" url="/en-us/concepts/rest" SEOKeyword="REST, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a REST" />
+    <Item text="UWP" url="/en-us/concepts/uwp" SEOKeyword="UWP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Windows Universal Platfrom app" />
+	<Item text="Xamarin" url="/en-us/concepts/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
+  </Item>
+  <Item text="Get auth tokens" url="/en-us/concepts/auth_overview" SEODescription="Provides an overview of Microsoft Graph app authentication, including Azure AD and the Azure AD v2.0 endpoint." >
+    <Item text="Register your app" url="/en-us/concepts/auth_register_app_v2" SEODescription="Register your app on the Microsoft App Registration Portal." />
+	<Item text="Get access on behalf of users" url="/en-us/concepts/auth_v2_user" />
+	<Item text="Get access as a service" url="/en-us/concepts/auth_v2_service" />
+	<Item text="Permissions" url="/en-us/concepts/permissions_reference" />
+	<Item text="Manage app access (CSPs)" url="/en-us/concepts/auth_cloudsolutionprovider" SEODescription="Configure pre-consent for a Cloud Solution Provider CSP app and call the Microsoft Graph API." />
+  </Item>
+  <Item text="Use the API" url="/en-us/concepts/" >
+	<Item text="Traverse the graph" url="/en-us/concepts/" />
+	<Item text="Get data in pages" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
+	<Item text="Customize responses" url="/en-us/concepts/query_parameters" SEOKeyword="Query parameters, Microsoft Graph API, Overview" SEODescription="Microsoft Graph is OData v4 compliant, provides information about supported OData query parameters" />
+	<Item text="Batch requests" url="/en-us/concepts/" />
+	<Item text="Throttling" url="/en-us/concepts/" />
+	<Item text="Versioning" url="/en-us/concepts/" />
+	<Item text="Errors" url="/en-us/concepts/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
+  </Item>
+  <Item text="Track changes" url="/en-us/concepts/delta_query_overview" >
+  		<Item text="Get changes to events" url="/en-us/concepts/delta_query_events" />
+  		<Item text="Get changes to groups" url="/en-us/concepts/delta_query_groups" />
+		<Item text="Get changes to messages" url="/en-us/concepts/delta_query_messages" />
+  		<Item text="Get changes to users" url="/en-us/concepts/delta_query_users" />
+  	</Item>
+  <Item text="Add custom data" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
+  		<Item text="Open extensions (preview)" url="/en-us/concepts/extensibility_open_users" />
+  		<Item text="Schema extensions (preview)" url="/en-us/concepts/extensibility_schema_groups" />
+  	</Item>
+  <Item text="Access data in different environments" url="/en-us/concepts/" >
+	<Item text="National clouds" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
+	<Item text="On-premises (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
+  </Item>
+  <Item text="Known issues" url="/en-us/concepts/known_issues" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="Known issues with the Microsoft Graph API." />
+  <Item text="Changelog" url="/en-us/concepts/changelog" />
+ 
+ <Item text="horizontalline" url="/" IsSeparation="true" />
 
   <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
   <Item text="Users" url="/en-us/api-reference/v1.0/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
