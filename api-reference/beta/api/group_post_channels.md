@@ -34,8 +34,8 @@ POST https://graph.microsoft.com/beta/groups/{id}/channels
 Content-type: application/json
 
 {
-  "displayName": "Architecture Discussion"
-  "description": "This channel is where we debate all future architecture plans",
+  "displayName": "Architecture Discussion",
+  "description": "This channel is where we debate all future architecture plans"
 }
 ```
 ##### Response
@@ -51,8 +51,8 @@ Content-type: application/json
 Content-length: 201
 {
   "id": "id-value",
-  "displayName": "Architecture Discussion"
-  "description": "This channel is where we debate all future architecture plans",
+  "displayName": "Architecture Discussion",
+  "description": "This channel is where we debate all future architecture plans"
 }
 ```
 
