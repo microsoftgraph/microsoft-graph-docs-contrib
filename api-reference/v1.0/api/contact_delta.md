@@ -68,7 +68,7 @@ returning **contact** rather than **message** collections.
   "name": "contact_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts/delta?$select=displayName
+GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
 
 Prefer: odata.maxpagesize=2
 ```
@@ -94,7 +94,7 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/contactfolders('{id}')/contacts/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/contactfolders('{id}')/contacts/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "parentFolderId": "parentFolderId-value",
@@ -110,7 +110,7 @@ Content-length: 337
 
 ### See also
 
-- [Microsoft Graph delta query](../../../concepts/delta_query_overview.md)
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
 - [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
