@@ -1,6 +1,6 @@
 # Use the Microsoft Graph API
 
-Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth_register_app_v2.md) and [get authentication tokens for a user](auth_v2_user,md) or [service](auth_v2_service.md), you can make requests to the Microsoft Graph API.
+Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth_register_app_v2.md) and [get authentication tokens for a user](auth_v2_user.md) or [service](auth_v2_service.md), you can make requests to the Microsoft Graph API.
 
 To read from or write to a resource such as a user or an email message, you construct a request that looks like the following.
 
@@ -10,10 +10,10 @@ https://graph.microsoft.com/{version}/{resource}?query-parameters
 
 The components of a request include:
 
-* [HTTP method](#http-method) - The HTTP method used on the request to Microsoft Graph.
+* [HTTP method](#http-methods) - The HTTP method used on the request to Microsoft Graph.
 * [`{version}`](#version) - The version of the Microsoft Graph API your application is using.
 * [`{resource}`](#resource) - The resource in Microsoft Graph that you're referencing.
-* [query-parameters](#query-parameters) - An optional set of parameters to modify the request or response.
+* [query-parameters](#query-parameters-optional) - An optional set of parameters to modify the request or response.
 
 After you make a request, a response is returned that includes: 
 
@@ -46,13 +46,13 @@ Microsoft Graph currently supports two versions: `v1.0` and `beta`.
 
 We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [UserVoice](https://officespdev.uservoice.com/) page.
 
-For more information about API versions, see [Versioning](versioning.md).
+For more information about API versions, see Versioning.
 
 ## Resource
 
 Your URL will include the resource or resources you are interacting with in the request, such as `me`, `users`, `groups`, `drives`, and `sites`. Each of the top-level resources also include **relationships**, which you can use to access additional resources, like `me/messages` or `me/drive`. You can also interact with resources using **methods**; for example, to send an email, use `me/sendMail`.
 
-For more information about how to navigate resource relationships and methods, see [Traverse the graph](traverse-the-graph.md). 
+For more information about how to navigate resource relationships and methods, see Traverse the graph. 
 
 Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic. 
 
@@ -68,7 +68,7 @@ For example, adding the following filter parameter restricts the messages return
 https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
 ```
 
-For more information about query parameters, see [Customize responses](query_parameters).
+For more information about query parameters, see [Customize responses](query_parameters.md).
 
 ## Next steps
 
