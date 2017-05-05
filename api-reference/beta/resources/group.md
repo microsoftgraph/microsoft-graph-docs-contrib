@@ -94,6 +94,8 @@ by providing a [delta](../api/group_delta.md) function.
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
+|createdDateTime|DateTimeOffset| The date and time the group was created. |
+|deletedDateTime|DateTimeOffset| The date and time the group was deleted. |
 |drive|[drive](drive.md)|The group's drive. Read-only.|
 |endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
 |events|[event](event.md) collection|The group's events.|
@@ -143,6 +145,8 @@ Here is a JSON representation of the resource
   "accessType": "string",
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
