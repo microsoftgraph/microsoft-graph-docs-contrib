@@ -1,6 +1,6 @@
 <Menu>
   <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." />    
-  <Item text="Featured scenarios" url="/en-us/concepts/features_scenarios" > 
+  <Item text="Featured scenarios" url="/en-us/concepts/featured_scenarios" > 
 	<Item text="Connect with the Bot Framework" url="/en-us/" />
 	<Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
   </Item>
