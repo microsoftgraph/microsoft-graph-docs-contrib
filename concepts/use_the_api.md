@@ -1,6 +1,6 @@
 # Use the Microsoft Graph API
 
-Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app]() and [get authentication tokens](), you can make requests to the Microsoft Graph API.
+Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth_register_app_v2.md) and [get authentication tokens for a user](auth_v2_user,md) or [service](auth_v2_service.md), you can make requests to the Microsoft Graph API.
 
 To read from or write to a resource such as a user or an email message, you construct a request that looks like the following.
 
@@ -56,7 +56,7 @@ For more information about how to navigate resource relationships and methods, s
 
 Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic. 
 
-For details about permissions, see [Permissions reference]().
+For details about permissions, see [Permissions reference](permissions_reference.md).
 
 ## Query parameters (optional)
 
