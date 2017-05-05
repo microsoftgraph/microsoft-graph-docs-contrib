@@ -2,7 +2,7 @@
 
 To get an access token to use when calling Microsoft Graph, your app must be registered with Azure AD. When you register your app, Azure AD assigns it an application ID, which uniquely identifies it within Azure AD identity management system. Depending on the kind of app you register, you may also be assigned or asked to enter a redirect URI, and you may need to create an application secret, either a password or key-value pair that your app can use to authenticate with Azure AD. 
 
-> **Note:** This article primarily covers registering apps with the Azure AD v2.0 endpoint. To register your app with the Azure AD endpoint, see [Azure AD endpoint considerations](#Azure-AD-endpoint-considerations) below.
+> **Note:** This article primarily covers registering apps with the Azure AD v2.0 endpoint. To register your app with the Azure AD endpoint, see [Azure AD endpoint considerations](#azure-ad-endpoint-considerations) below.
 > 
 > Also, be aware that if you've previously registered apps in the Microsoft Azure Management portal, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure Management portal. 
 
@@ -77,7 +77,7 @@ To register your app, follow these steps; be sure to copy the indicated values t
 
 	3. Specify one or more Redirect URLs.
 		
-		The redirect URL is the location in your app that the Azure AD v2.0 endpoint calls when it has processed the authentication request. For service apps that provide an in-app administrator consent experience, you might also specify a redirect URL that the Azure AD endpoint should call with the result of a request to the `/adminconsent` endpoint. For more information, see [Get access as a service](azure_ad_v2_service_auth). 
+		The redirect URL is the location in your app that the Azure AD v2.0 endpoint calls when it has processed the authentication request. For service apps that provide an in-app administrator consent experience, you might also specify a redirect URL that the Azure AD endpoint should call with the result of a request to the `/adminconsent` endpoint. For more information, see [Get access as a service](auth_v2_service). 
 	
 	4. Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog box.
 		> **Important** You must copy the app secret before you close the **New password generated** dialog. After you close the dialog, you cannot retrieve the secret. 

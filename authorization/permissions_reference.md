@@ -33,7 +33,7 @@ The _constraint_ element of the name determines the potential extent of access y
 
 * **All** grants permission for the app to perform the operations on all of the resources of the specified type in a directory. For example, _User.Read.All_ potentially grants the app privileges to read the profiles of all of the users in a directory. 
 * **Shared** grants permission for the app to perform the operations on resources that other users have shared with the signed-in user. This constraint is mainly used with Outlook resources like mail, calendars, and contacts. For example, _Mail.Read.Shared_, grants privileges to read mail in the mailbox of the signed-in user as well as mail in mailboxes that other users in the organization have shared with the signed-in user.
-* **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](./permissions-reference#files-permissions) and is only valid for Microsoft accounts.
+* **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
 > **Note**: In delegated scenarios, the effective permissions granted to your app may be constrained by the privileges of the signed-in user in the organization.
@@ -737,7 +737,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 <a name="permission-scenarios"></a>
 ## Permission scenarios
 
-This section shows some common scenarios that target [user](../api-reference/v1.0/resources/user) and [group](../api-reference/v1.0/resources/user) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform some operations will depend on whether a permission is an Application or Delegated permission. In the case of Delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information on Application permissions and Delegated permissions and an app's effective permissions, see [Overview](#overview).
+This section shows some common scenarios that target [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform some operations will depend on whether a permission is an Application or Delegated permission. In the case of Delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information on Application permissions and Delegated permissions and an app's effective permissions, see [Overview](#overview).
 
 ### Access scenarios on the User resource
 

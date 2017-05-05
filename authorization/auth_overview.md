@@ -84,15 +84,15 @@ For apps that use the Azure AD endpoint, you'll also pre-configure the Microsoft
 
 Once you've registered your app, you're ready to get started!
 
-- To learn more about getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](azure-ad-v2-user-auth.md).
-- To learn more about getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](azure-ad-v2-user-auth.md).
+- To learn more about getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
+- To learn more about getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_user.md).
 - If you're ready to jump into code, check out one of the Microsoft Graph samples listed in [Resources for implementing authentication in your Microsoft Graph app](#resources-for-implementing-authentication-in-your-microsoft-graph-app)
 
 
-> **Note** Both Azure AD and Azure AD v2.0 also support the WS-Federation and Security Assertion Markup Language (SAML) 2.0 protocols. For more information, see [Resources for Azure AD and Azure AD 2.0 endpoints](#Resources-for-Azure-AD-and-Azure-AD-2.0-endpoints).
+> **Note** Both Azure AD and Azure AD v2.0 also support the WS-Federation and Security Assertion Markup Language (SAML) 2.0 protocols. For more information, see [Resources for Azure AD and Azure AD 2.0 endpoints](#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 > 
 
-## Resources for Azure AD and Azure AD 2.0 endpoints
+## Deciding between the Azure AD and Azure AD v2.0 endpoints
 
 The following table summarizes the major features that the Azure AD and Azure AD v2.0 endpoints support, and provides links to additional information. The relative importance of these features--and therefore, which authentication provider you choose to implement in your app--will primarily depend on:
 
