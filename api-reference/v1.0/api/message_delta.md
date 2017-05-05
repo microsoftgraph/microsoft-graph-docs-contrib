@@ -69,7 +69,7 @@ of incremental changes since the last delta query. For an example that shows a r
   "name": "message_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 Prefer: odata.maxpagesize=2
 ```
@@ -95,7 +95,7 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('{id}')/messages/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('{id}')/messages/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "receivedDateTime": "datetime-value",
@@ -114,7 +114,7 @@ Content-length: 337
 
 ### See also
 
-- [Microsoft Graph delta query](../../../concepts/delta_query_overview.md)
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
 - [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
