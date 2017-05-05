@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 ```
 In the request, specify the `id` of the directory object you want to remove after the $ref segment.
 
