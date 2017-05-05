@@ -14,27 +14,41 @@ Additionally, as a partner developer, you can build a **partner-managed app** to
 
 ## How to set-up a partner-managed application
 
-An application is viewed as *partner-managed* when it is granted elevated permissions to access your customers' data. Note that partner-managed apps can *only* be configured on Partner tenants.
+An application is viewed as *partner-managed* when it is granted elevated permissions to access your customers' data.
+
+> **Note:** Partner-managed apps can *only* be configured on Partner tenants, and in order to manage customer tenant resources, partner-managed apps **must** be configured as **multi-tenant applications**.
+
+### Register and configure a multi-tenant app
 
 The initial steps required here follow most of the same steps used to register and configure a multi-tenant application:
 
 1. [Register your application](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration) in your Partner tenant using the [Azure Portal](https://portal.azure.com). To function as a partner-managed app, an application must be configured as a [multi-tenant app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant). Additionally, if your app is deployed and sold in multiple geographic regions you will need to register your app in each of those regions as described <a href="#region">here</a>.
 2. Configure your multi-tenant app, again through the Azure Portal, with the *required permissions* it needs using a least privileged approach.
-3. Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the Adminagents group in your Partner tenant, using Azure AD powershell V2. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).  Follow these steps to find the Adminagents group, the **servicePrincipal** and add it to the group.
 
-    1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
+### Pre-consent your app for all your customers
+
+Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using Azure AD powershell V2. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).  Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
+
+1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
+
     ```PowerShell
     Connect-AzureAd
     ```
-    2. Find the group that represents the Adminagents.
+
+2. Find the group that represents the *Adminagents*.
+
     ```PowerShell
     $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'"
     ```
-    3. Find the service principal that has the same *appId* as your app.
+
+3. Find the service principal that has the same *appId* as your app.
+
     ```PowerShell
     $sp = Get-AzureADServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
     ```
-    4. Finally, add the service principal to the Adminagents group.
+
+4. Finally, add the service principal to the *Adminagents* group.
+
     ```PowerShell
     Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
     ```
@@ -49,19 +63,19 @@ Apart from pre-consented access to all your customer tenants, partner-managed ap
 2. Your app requests an access token for the intended partner-managed customer tenant.
 3. Your app uses the access token to call Microsoft Graph.
 
-This is a slight variation on the [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code). To see how this would look, imagine your partner tenant is *partner.com* (which is the home tenant for your agents) and one of your customers is *customer.com*:
+This is a standard [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code), except that your agents must sign-in using their partner accounts. To see how this would look, imagine your partner tenant is *partner.com* (which is the home tenant for your agents) and one of your customers is *customer.com*:
 
-1. [Acquire an authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Your app makes a request to the ```/authorize``` endpoint, specifying ```common``` or ```partner.com``` for the target tenant.
+1. [Acquire an authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Your app makes a request to the ```/authorize``` endpoint and must use a **customer tenant**, in our example ```customer.com```, for the target tenant. Your agents would still sign-in with their ```username@partner.com``` account.
 
-   ```http
-   GET https://login.microsoftonline.com/common/oauth2/authorize
-   ```
+    ```http
+    GET https://login.microsoftonline.com/customer.com/oauth2/authorize
+    ```
 
 2. [Aquire an access token using the authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
 
-   ```http
-   POST https://login.microsoftonline.com/customer.com/oauth2/token
-   ```
+    ```http
+    POST https://login.microsoftonline.com/customer.com/oauth2/token
+    ```
 
 3. Now you have an access token, call Microsoft Graph, putting the access token in the HTTP authorization header:
 
@@ -82,4 +96,4 @@ When you create a new customer using the [Partner Center API](https://partnercen
 To avoid this problem, we recommend that your partner app should should wait **three minutes** after customer creation before calling Azure AD to acquire a token (to call Microsoft Graph). This should cover most cases. 
 However, if after waiting three minutes you still recieve an authorization error, please wait an additional 60 seconds and try again.
 
-> **NOTE:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an -0=hour and won’t contain the pre-consented permission claims.
+> **Note:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won’t contain the pre-consented permission claims.
