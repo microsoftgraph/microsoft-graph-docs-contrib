@@ -117,7 +117,7 @@ on a few [directoryObject](../api-reference/v1.0/resources/directoryObject.md) r
 to add, get, update and delete _data_ in the properties of these extensions.
 
 ## Permissions
-The same [permissions](../permissions_reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource.  For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
+The same [permissions](./permissions_reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource.  For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
 
 Additionally, to create and manage schema extension definitions, an application must be granted the *Directory.AccessAsUser.All* permission.
  
