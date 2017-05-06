@@ -163,7 +163,7 @@ The Microsoft Graph service is operated by 21Vianet (and now available in China)
 `isMemberOf` and `getObjectsById` are not available in Microsoft Graph
 
 ## Microsoft Graph permissions
-For the latest information about Microsoft Graph supported application and delegated permissions, see [Permission scopes](http://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes). In addition, the following limitations apply to `v1.0`:
+For the latest information about Microsoft Graph supported application and delegated permissions, see [Permission scopes](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference). In addition, the following limitations apply to `v1.0`:
 
 |Permission |	Permission type | Limitation |	Alternative |
 |-----------|-----------------|------------|--------------|
