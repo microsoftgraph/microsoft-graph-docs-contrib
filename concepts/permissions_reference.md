@@ -8,7 +8,6 @@
 
 ---
 
-<a name="overview"></a>
 ## Overview
 Microsoft Graph exposes granular permissions that control the access that apps have to resources like users, groups, and mail and to the APIs that operate on them like sending mail on behalf of a user or reading and writing a user's profile. As a developer, you decide which permissions for Microsoft Graph your app requests. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed or during sign-up. 
 
@@ -48,7 +47,7 @@ Not all permissions are valid for both Microsoft accounts and work or school acc
 User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not. If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific user or group (for example, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); however, it cannot perform queries against the `/users` or `/groups` resource set that potentially return more than a single resource. With the appropriate permissions, the app cam read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
 
 ---
-<a name="calendars-permissions"></a>
+
 ## Calendars permissions
 
 #### Delegated permissions
@@ -91,7 +90,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="contacts-permissions"></a>
 ## Contacts permissions
 
 #### Delegated permissions
@@ -130,7 +128,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="device-permissions"></a>
 ## Device permissions
 
 #### Delegated permissions
@@ -156,7 +153,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="microsoft-intune-device-management-permissions"></a>
 ## Microsoft Intune Device Management permissions
 
 #### Delegated permissions
@@ -203,7 +199,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="directory-permissions"></a>
 ## Directory permissions
 
 #### Delegated permissions
@@ -257,7 +252,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="files-permissions"></a>
 ## Files permissions
 
 #### Delegated permissions
@@ -305,7 +299,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="group-permissions"></a>
 ## Group permissions
 
 #### Delegated permissions
@@ -350,7 +343,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="identity-risk-event-permissions"></a>
 ## Identity Risk Event permissions
 
 #### Delegated permissions
@@ -382,7 +374,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="mail-permissions"></a>
 ## Mail permissions
 
 #### Delegated permissions
@@ -436,7 +427,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="member-permissions"></a>
 ## Member permissions
 
 #### Delegated permissions
@@ -463,7 +453,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="notes-permissions"></a>
 ## Notes permissions
 #### Delegated permissions
 
@@ -511,7 +500,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="openid-permissions"></a>
 ## OpenID permissions
 
 #### Delegated permissions
@@ -527,18 +515,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 None.
 
-### Remarks
-
-
-### Example usage
-#### Delegated
-
-
-For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
 ---
 
-<a name="people-permissions"></a>
 ## People permissions
 
 #### Delegated permissions
@@ -562,7 +540,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="reports-permissions"></a>
 ## Reports permissions
 
 #### Delegated permissions
@@ -590,7 +567,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="sites-permissions"></a>
 ## Sites permissions
 
 #### Delegated permissions
@@ -618,7 +594,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="tasks-permissions"></a>
 ## Tasks permissions
 
 #### Delegated permissions
@@ -634,18 +609,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 None.
 
-### Remarks
-
-
-### Example usage
-#### Delegated
-
-
-For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
 ---
 
-<a name="user-permissions"></a>
 ## User permissions
 
 #### Delegated permissions
@@ -734,7 +699,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-<a name="permission-scenarios"></a>
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform some operations will depend on whether a permission is an Application or Delegated permission. In the case of Delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information on Application permissions and Delegated permissions and an app's effective permissions, see [Overview](#overview).
