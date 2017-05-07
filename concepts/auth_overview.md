@@ -49,7 +49,7 @@ https://login.microsoftonline.com/common/oauth2/v2.0/token
 ```
 Azure AD exposes two sets of endpoints, Azure AD v1.0 and Azure AD v2.0. Azure AD v1.0 is often just referred to as Azure AD. The main difference between them is that Azure AD v1.0 supports only work or school accounts (that is, accounts that are associated with an Azure AD tenant), while Azure AD v2.0 also supports Microsoft accounts (_Live.com_ or _outlook.com_ accounts). This means that if you use Azure AD v1.0, your app can target only organizations, but with Azure AD v2.0 it can target both consumers and organizations. 
 
-Tokens between v1.0 and v2.0 are not interchangeable. Because the Azure AD v2.0 endpoint is newer and features are still being added, there are some important limitations that you need to factor into your decision on which endpoint to use for your app in production. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](#deciding-between-the-azure-ad-and-Azure-ad-v20-endpoints).
+Tokens between v1.0 and v2.0 are not interchangeable. Because the Azure AD v2.0 endpoint is newer and features are still being added, there are some important limitations that you need to factor into your decision on which endpoint to use for your app in production. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
 ## What's the difference between OAuth 2.0 and OpenID Connect?
 
