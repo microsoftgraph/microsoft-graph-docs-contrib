@@ -29,7 +29,7 @@ with additive changes. In general, this operation returns any schema extensions 
 
 ##### Request
 ```http
-GET https://graph.microsoft.com/v1.0/schemaExtensions/$filter=id eq 'graphlearn_test'
+GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
 ##### Response
 ```http
