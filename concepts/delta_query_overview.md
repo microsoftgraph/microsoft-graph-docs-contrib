@@ -77,7 +77,7 @@ Delta query is currently supported for the following resources:
 
 ## Prerequisites
 
-The same [permissions](../authorization/permission_scopes.md) that are required to read a specific resource are also required to perform delta query on that resource.
+The same [permissions](./permissions_reference.md) that are required to read a specific resource are also required to perform delta query on that resource.
 
 ## Delta query request examples 
 

@@ -11,6 +11,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |Addition|v1.0| Add delta function support to V1.0. Add to the following entities to perform [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_message)<br/>[Get incremental changes to users](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 |Change|Beta| Add additional optional query filtering capability (by id) to [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_delta.md) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_delta.md). |
 
+### Add deletedDateTime property
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|beta|Added deletedDateTime property to [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) entity.
+|Change|beta|Added deletedDateTime property to [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) entity.
+|Change|beta|Added deletedDateTime property to [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) entity.
+
 ### Add domain operations to v1.0
 
 |**Change type**|**Version**|**Description**|
