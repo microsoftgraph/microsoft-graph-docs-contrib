@@ -1,7 +1,11 @@
 # group resource type
 
-Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
+Represents an Azure Active Directory group, which can be an Office 365 group, Microsoft Team, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
+
+> **Microsoft Teams and the group APIs**:
+> * Microsoft Teams are built upon Office 365 groups.  All the following methods for groups can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  There are also some methods specific to Microsoft Teams, which are clearly labelled as such.
+> * Care must be taken if using the group APIs in a Microsoft Teams app - e.g. as part inside a 'tab' or 'bot' running inside Microsoft Teams - rather than in a standalone app.  This is because of differing consent models. Typically, users can directly consent to your Microsoft Teams app within a specific team.  However, currently [enterprise admins must also consent to your app (as registered in Azure AD) using the group APIs](../../../overview/release_notes.md), at which point it then has API access all of the groups/teams for each user.  You should ensure your Microsoft Teams app copes with not having the permissions it needs, and that it respects the user's intention about which teams it should operate in.  Note that these considerations do not apply if your are just using non-group [user APIs](user.md) that the user can always consent to themselves.
 
 This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 
@@ -20,6 +24,7 @@ by providing a [delta](../api/group_delta.md) function.
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
 |[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
 |[Add owner](../api/group_post_owners.md) |[directoryObject](directoryobject.md)| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
+|[Remove owner](../api/group_delete_owners.md) | None |Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the **owners** navigation property.|
 |[List members](../api/group_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
 |[Add member](../api/group_post_members.md) |[directoryObject](directoryobject.md)| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
 |[Remove member](../api/group_delete_members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
@@ -46,6 +51,8 @@ by providing a [delta](../api/group_delta.md) function.
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
 |[List photos](../api/group_list_photos.md) |[Photo](photo.md) collection| Get a photo object collection.|
+|[List channel](../api/group_list_channels.md) |[Channel](channel.md) collection| Get a channel object collection.|
+|[Create channel](../api/group_post_channels.md) |[Channel](channel.md)| Create a new Channel by posting to the channels collection.|
 |[Create setting](../api/directorysetting_post_settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
 |[Get setting](../api/directorysetting_get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
@@ -94,6 +101,8 @@ by providing a [delta](../api/group_delta.md) function.
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
+|createdDateTime|DateTimeOffset| The date and time the group was created. |
+|deletedDateTime|DateTimeOffset| The date and time the group was deleted. |
 |drive|[drive](drive.md)|The group's drive. Read-only.|
 |endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
 |events|[event](event.md) collection|The group's events.|
@@ -143,6 +152,8 @@ Here is a JSON representation of the resource
   "accessType": "string",
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],

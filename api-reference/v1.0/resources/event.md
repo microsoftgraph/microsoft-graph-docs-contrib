@@ -2,7 +2,11 @@
 
 An event in a calendar.
 
-This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+This resource supports:
+
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/event_delta.md) function.
 
 
 ## Methods
@@ -17,6 +21,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[accept](../api/event_accept.md)|None|Accept the specified event.|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
 |[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
+|[delta](../api/event_delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
 |[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
 |[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
 |[List instances](../api/event_list_instances.md) |[event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
@@ -147,6 +152,8 @@ Here is a JSON representation of the resource
 
 ## See also
 
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
+- [Get incremental changes to events in a folder](../../../concepts/delta_query_events.md)
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
 - [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
 - [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
