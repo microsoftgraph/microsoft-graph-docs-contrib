@@ -332,7 +332,7 @@ For the Azure AD v2.0 endpoint:
 For the Azure AD endpoint: 
 
 - The easiest place to start is in the [Azure AD Developer's guide overview](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing. 
-- For samples listed by client or server authentication library, see [Azure Active Directory Authentication Libraries].(https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries). 
+- For samples listed by client or server authentication library, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries). 
 - For samples listed by app type and platform, see [Azure Active Directory Code Samples](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-code-samples).
 - Or you can explore Azure AD samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory). Note: you cannot qualify your search by endpoint version. 
 
