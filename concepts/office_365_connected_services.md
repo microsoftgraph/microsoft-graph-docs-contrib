@@ -4,15 +4,13 @@ You can use the Connected Services in Visual Studio to configure your app to cal
 
 ## Set up and get the starter project
 
-1. To use the Office 365 Connected Services with Microsoft Graph, download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already.
+To use the Office 365 Connected Services with Microsoft Graph, download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already.
 
     >**Note:** If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
 
-2. You will also need an Office 365 subscription. To get a free trial, join the [Office 365 Developer program](https://dev.office.com/devprogram).
+You will also need an Office 365 subscription. To get a free trial, join the [Office 365 Developer program](https://dev.office.com/devprogram).
 
-3. Clone the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice) repository on GitHub. This sample includes the references that you need to authenticate against Microsoft Graph. 
-
-4. Open the sample in Visual Studio 2017 Preview.
+Clone the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice) repository on GitHub. This sample includes the references that you need to authenticate against Microsoft Graph. Open the sample in Visual Studio 2017 Preview.
 
 ## Add the Connected Service
 
@@ -57,7 +55,7 @@ Choose the **Sign-in** link on the top right, and then choose **Send Email**.
 This will send an email that includes a link to your profile photo.
 
 
-## Drill in
+## Explore the code
 
 You can now use Visual Studio 2017 to connect to and configure your services. The starter sample creates the scaffolding and references for you.  
 
