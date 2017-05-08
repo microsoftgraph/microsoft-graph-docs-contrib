@@ -1,55 +1,36 @@
 # Overview of Microsoft Graph
 
-Microsoft Graph exposes multiple APIs from Office 365 and other Microsoft cloud services through a single endpoint:  **https://graph.microsoft.com**. Microsoft Graph simplifies queries that would otherwise be more complex. 
- 
-You can use Microsoft Graph to:
+You can use the Microsoft Graph API interact with the data of millions of users in the Microsoft cloud. Use Microsoft Graph to build apps for organizations and consumers that connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
-- Access data from multiple Microsoft cloud services, including Azure Active Directory, Exchange Online as part of Office 365, SharePoint, OneDrive, OneNote, Planner and Microsoft Teams.
-- Navigate between entities and relationships.
-- Access intelligence and insights from the Microsoft cloud (for commercial users).
+## What can you do with Microsoft Graph? 
 
-**Microsoft Graph development stack**
+You can use Microsoft Graph to build experiences around the user's unique context to help them be more productive. Imagine an app that...
 
-![A diagram that shows the layers of the Microsoft Graph development stack. At the bottom is the data layer, which includes users, groups, file, mail, calendars, personal contacts, tasks, org contacts, people, Excel, and notes. The next layer is authentication and authorization. Next is the development environment of your choice, including the Android, iOS, and Visual Studio Microsoft Graph API SDKs. The final layer is your solution, which uses the technology of your choice, including .NET, JS, HTML, and Ruby, and is hosted on Microsoft Azure or another hosting platform.](./images/MicrosoftGraph_DevStack.png)
+- Looks at your next meeting and helps you prepare for it by providing profile information for attendees, including their job titles and who they work with, as well as information on the latest documents and projects they're working on.
+- Scans your calendar, and suggests the best times for the next team meeting.
+- Fetches the latest sales projection chart from an Excel file in your OneDrive and lets you update the forecast in real time, all from your phone.
+- Subscribes to changes in your calendar, sends you an alert when you’re spending too much time in meetings, and provides recommendations for the ones you could miss or delegate based on how relevant the attendees are to you.
+- Helps you sort out personal and work information on your phone; for example, by categorizing pictures that should go to your personal OneDrive and business receipts that should go to your OneDrive for Business.
 
-<!--<a name="msg_queries"> </a>-->
+You can do all this and more with the Microsoft Graph API.
 
-##Common Microsoft Graph queries
+## What's in the graph?
 
-Microsoft Graph exposes two endpoints: /v1.0 and /beta. The /v1.0 endpoint includes the resources that you can access in your production app. The [/beta](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/beta-overview) endpoint includes APIs that are currently in preview. The following table lists some common queries that you can use to access the Microsoft Graph API.
+Microsoft Graph is made up of resources connected by relationships. For example, a user can be connected to a group through a [memberOf](../api-reference/v1.0/api/user_list_memberof.md) relationship, and to another user through a [manager](../api-reference/v1.0/api/user_list_manager.md) relationship. Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
 
-| **Operation**	| **Service endpoint** |
-|:--------------------------|:----------------------------------------|
-|   GET my profile |	[`https://graph.microsoft.com/v1.0/me`](https://graph.microsoft.io/en-us/graph-explorer/?request=me&version=v1.0) |
-|   GET my files | [`https://graph.microsoft.com/v1.0/me/drive/root/children`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren&version=v1.0) |
-|   GET my photo	 | [`https://graph.microsoft.com/v1.0/me/photo/$value`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fphoto%2F%24value&version=v1.0) |
-|   GET my mail |	[`https://graph.microsoft.com/v1.0/me/messages`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fmessages&version=v1.0) |
-|   GET my high importance email | [`https://graph.microsoft.com/v1.0/me/messages?$filter=importance%20eq%20'high'`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fmessages%3F%24filter%3Dimportance%2520eq%2520'high'&version=v1.0) |
-|   GET my calendar |	[`https://graph.microsoft.com/v1.0/me/calendar`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fcalendar&version=v1.0) |
-|   GET my manager	| [`https://graph.microsoft.com/v1.0/me/manager`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fmanager&version=v1.0) |
-|   GET last user to modify file foo.txt |	[`https://graph.microsoft.com/v1.0/me/drive/root/children/foo.txt/lastModifiedByUser`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fdrive%2Froot%2Fchildren%2Ffoo.txt%2FlastModifiedByUser&version=v1.0) |
-|   GET unified groups I’m member of|	[`https://graph.microsoft.com/v1.0/me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2FmemberOf%2F%24%2Fmicrosoft.graph.group%3F%24filter%3DgroupTypes%2Fany(a%3Aa%2520eq%2520'unified')&version=v1.0) |
-|   GET users in my organization	 | [`https://graph.microsoft.com/v1.0/users`](https://graph.microsoft.io/en-us/graph-explorer/?request=users&version=v1.0) |
-|   GET group conversations |	`https://graph.microsoft.com/v1.0/groups/{id}/conversations`|
-|   GET people related to me	| [`https://graph.microsoft.com/beta/me/people`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fpeople&version=beta)  |
-|   GET items trending around me |	[`https://graph.microsoft.com/beta/me/insights/trending`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
-|   GET my tasks	| [`https://graph.microsoft.com/beta/me/tasks`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Ftasks&version=beta) |
-|   GET my notes |	[`https://graph.microsoft.com/beta/me/notes/notebooks`](https://graph.microsoft.io/en-us/graph-explorer/?request=me%2Fnotes%2Fnotebooks&version=beta) |
+You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](../api-reference/beta/resources/insights_trending.md) a particular user, or get the most relevant [people](../api-reference/beta/api/user_list_people.md) around a user.
 
+Discover the possibilities in the relationships within Microsoft Graph.
 
->**Note:** The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps. 
+![An image showing the primary resources and relationships that are part of the graph](images/microsoft_graph.png)
 
-<!-- <a name="msg_roof"> </a> -->
+## Next steps
 
-## Explore Microsoft Graph
+- Check out some [Featured scenarios](featured_scenarios.md).
+- Try a sample request in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+- Use the [quick start](https://developer.microsoft.com/en-us/graph/graph-explorer) to set up a ready-to-run sample app.
+- Find out how to [get an auth token](auth_overview.md) in your app.
+- Start [using the API](use_the_api.md).
 
-- [Get started](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started) using Microsoft Graph and the platform of your choice.
-- Discover the resources and operations that you can use in your production apps by browsing the TOC.
-- Preview the new [/beta APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/beta-overview).
-- Visit the [Microsoft Graph Explorer](https://graph.microsoft.io/graph-explorer).
-- Check out our [Microsoft Graph snippets samples](https://github.com/search?q=org%3Amicrosoftgraph+snippets-sample).
-
- >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph} and {office365}.
-
-
+Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph}.
 
