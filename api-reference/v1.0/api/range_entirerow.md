@@ -10,8 +10,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/EntireRow
-GET /workbook/worksheets(<id|name>)/range(<address>)/EntireRow
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range/EntireRow
+GET /workbook/worksheets/{id|name}/range(<address>)/EntireRow
+GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 
 ```
 ## Request headers

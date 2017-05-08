@@ -9,7 +9,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/title
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 ```
 ## Optional request headers
 | Name       | Description|
@@ -36,7 +36,7 @@ Here is an example of the request.
   "name": "update_charttitle"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/title
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/title
 Content-type: application/json
 Content-length: 64
 

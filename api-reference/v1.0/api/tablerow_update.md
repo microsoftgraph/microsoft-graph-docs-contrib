@@ -9,8 +9,8 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)/rows(<index>)
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)
+PATCH /workbook/tables/{id|name}/rows(<index>)
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
 ```
 ## Optional request headers
 | Name       | Description|
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "update_tablerow"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)
 Content-type: application/json
 Content-length: 45
 

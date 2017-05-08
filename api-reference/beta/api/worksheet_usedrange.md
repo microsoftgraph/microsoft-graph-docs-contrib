@@ -9,7 +9,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/UsedRange
+GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
 ## Request headers
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/UsedRange
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
 Content-type: application/json
 Content-length: 24
 
