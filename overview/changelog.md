@@ -11,6 +11,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |Addition|beta|New entity: [OnPremisesProvisioningError](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/OnPremisesProvisioningError) |
 |Change  |beta|Added OnPremisesProvisioningError property to [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user), [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group), and [orgcontact](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) |
 
+### Add deletedDateTime property
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|beta|Added deletedDateTime property to [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) entity.
+|Change|beta|Added deletedDateTime property to [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) entity.
+|Change|beta|Added deletedDateTime property to [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) entity.
+
 ### Add domain operations to v1.0
 
 |**Change type**|**Version**|**Description**|
