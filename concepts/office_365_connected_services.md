@@ -32,15 +32,15 @@ The starter sample is configured to send a simple email. You can use Microsoft G
 
 2. Find and **Uncomment** calls to the SDK in the following methods. This shows how to call Microsoft Graph to get a profile photo, upload a file to OneDrive, and get a sharing link.
 
-    ``` C#
+    ```csharp
         GetCurrentUserPhotoStream(GraphServiceClient graphClient)
     ```
     
-    ``` C#
+    ```csharp
         UploadFileToOneDrive(GraphServiceClient graphClient, byte[] file)
     ```
 
-    ```C#
+    ```csharp
         GetSharingLink(GraphServiceClient graphClient, string Id)
     ```
  
