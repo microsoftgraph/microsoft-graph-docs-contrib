@@ -1,18 +1,18 @@
 ﻿# Get access tokens from Azure Active Directory to call Microsoft Graph
 
-Your app must acquire an access token from Azure Active Directory (Azure AD) that it can attach to requests that it sends to Microsoft Graph. Azure AD is Microsoft's cloud identity service and Microsoft Graph requires an access token issued by Azure AD to grant your app access to Office 365 and directory resources. The access token contains information (or claims) about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To acquire an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the resources it needs in Microsoft Graph. 
+To call Microsoft Graph, your app must acquire an access token from Azure Active Directory (Azure AD), Microsoft's cloud identity service. Microsoft Graph requires an access token issued by Azure AD to grant your app access to Office 365 and directory resources. The access token contains information (or claims) about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To acquire an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the resources it needs in Microsoft Graph. 
 
 This topic provides a brief introductory overview of access tokens, Azure AD, the Azure AD and Azure AD v2.0 endpoints, and how your app can get access tokens from them. If you are already familiar with integrating an app with Azure AD to get tokens, then you can skip ahead to [Resources for implementing authentication in your Microsoft Graph app](#resources-for-implementing-authentication-in-your-microsoft-graph-app) for information and samples specific to Microsoft Graph. 
 
 ## What is an access token and how do I use it?
 
-Access tokens issued by Azure AD are base 64 encoded JSON Web Tokens (JWT). They contain information that Web APIs that are secured by Azure AD, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque. 
+Access tokens issued by Azure AD are base 64 encoded JSON Web Tokens (JWT). They contain information that Web APIs secured by Azure AD, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque. 
 
 Here's an example of an Azure AD access token:
 
 `EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/oeJX6U8nnL9nJ5pHLVuPWD0aNnTPTJD8Y4oQTp5zLhDIIfaJCaGcQperULVF7K6yX8MhHxIBwek418rKIp11om0SWBXOYSGOM0rNNN59qNiKwLNK+MPUf7ObcRBN5I5vg8jB7IMoz66jrNmT2uiWCyI8MmYDZgAACPoaZ9REyqke+AE1/x1ZX0w7OamUexKF8YGZiw+cDpT/BP1GsONnwI4a8M7HsBtDgZPRd6/Hfqlq3HE2xLuhYX8bAc1MUr0gP9KuH6HDQNlIV4KaRZWxyRo1wmKHOF5G5wTHrtxg8tnXylMc1PKOtaXIU4JJZ1l4x/7FwhPmg9M86PBPWr5zwUj2CVXC7wWlL/6M89Mlh8yXESMO3AIuAmEMKjqauPrgi9hAdI2oqnLZWCRL9gcHBida1y0DTXQhcwMv1ORrk65VFHtVgYAegrxu3NDoJiDyVaPZxDwTYRGjPII3va8GALAMVy5xou2ikzRvJjW7Gm3XoaqJCTCExN4m5i/Dqc81Gr4uT7OaeypYTUjnwCh7aMhsOTDJehefzjXhlkn//2eik+NivKx/BTJBEdT6MR97Wh/ns/VcK7QTmbjwbU2cwLngT7Ylq+uzhx54R9JMaSLhnw+/nIrcVkG77Hi3neShKeZmnl5DC9PuwIbtNvVge3Q+V0ws2zsL3z7ndz4tTMYFdvR/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==`
 
-To use an access token to call Microsoft Graph, you add it as a Bearer token to the Authorization header in an HTML request. For example, here's a call that returns the profile information of the signed-in user (the access token has been truncated for readability in this example):
+To call Microsoft Graph with the access token, you attach it as a Bearer token to the Authorization header in an HTML request. For example, here's a call that returns the profile information of the signed-in user (the access token has been truncated for readability in this example):
 
 ```
 HTTP/1.1
@@ -52,7 +52,7 @@ https://login.microsoftonline.com/common/oauth2/v2.0/token
 ```
 Azure AD exposes two sets of endpoints, Azure AD and Azure AD v2.0. The main difference between them is that Azure AD endpoint supports only work or school accounts (that is, accounts that are associated with an Azure AD tenant), while Azure AD v2.0 also supports Microsoft accounts (_Live.com_ or _outlook.com_ accounts). This means that if you use Azure AD v1.0, your app can target only organizations, but with Azure AD v2.0 it can target both consumers and organizations. 
 
-Tokens between Azure AD and Azure AD v2.0 are not interchangeable. Because the Azure AD v2.0 endpoint is newer and features are still being added, there are some important limitations that you need to factor into your decision about which endpoint to use for your app in production. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+Tokens between Azure AD and Azure AD v2.0 are not interchangeable. Because the Azure AD v2.0 endpoint is newer and features are still being added, there are some important limitations that you need to factor into your decision about which endpoint to use for your app in production. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](#appendix-deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
 ## What's the difference between OAuth 2.0 and OpenID Connect?
 
@@ -97,7 +97,12 @@ For the Azure AD v2.0 endpoint:
 
 For a complete list of Microsoft client libraries, Microsoft server middleware, and compatible third-party libraries, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
-For the Azure AD endpoint, the Active Directory Authentication Library (ADAL) client libraries are available on a slightly larger number of platforms. Server middleware is available for .NET core and ASP.NET, as well as Node.js. For more information, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
+For the Azure AD endpoint:
+
+- Active Directory Authentication Library (ADAL) client libraries are available on a slightly larger number of platforms. 
+- Server middleware from Microsoft is available for .NET core and ASP.NET, as well as Node.js. 
+
+For a complete list of Microsoft client libraries and server middleware, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
 
 ## Get Started
 Once you've registered your app, you're ready to get started!
@@ -105,9 +110,41 @@ Once you've registered your app, you're ready to get started!
 - To learn more about getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
 - To learn more about getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_user.md).
 - If you're ready to jump into code, check out the documentation and samples listed in [Resources for implementing authentication in your Microsoft Graph app](#resources-for-implementing-authentication-in-your-microsoft-graph-app).
+- If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth_cloudsolutionprovider).
 
 
-## Deciding between the Azure AD and Azure AD v2.0 endpoints
+## Resources for implementing authentication in your Microsoft Graph app 
+
+You can use the following resources to help you implement authentication and authorization with Azure AD in your app. You can explore the appropriate samples and walk-throughs based on the type of app you're building and the platforms that you're developing for. 
+
+### Microsoft Graph Connect samples 
+
+Microsoft publishes Connect samples for Microsoft Graph for a wide variety of platforms, including: Android, Angular.JS, ASP.NET, iOS (Obj-C and Swift), Node.JS, PHP, Python, Ruby, UWP, and Xamarin. You can use these samples to examine code that uses various authentication libraries to get tokens from Azure AD. Currently, most samples use third-party authentication libraries; however, the ASP.NET and UWP samples use Microsoft libraries.
+
+For Microsoft Graph:
+
+- The [Build your first app](get-started.md) section contains detailed articles that show you how to create Connect apps using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. Available samples are listed by platform and authentication endpoint.
+- To quickly get a running sample on your platform of choice, see [Microsoft Graph Quick Start](https://developer.microsoft.com/en-us/graph/Quick-Start).
+- Visit the [Microsoft Graph repo](https://github.com/microsoftgraph) on GitHub to see all the samples available for Microsoft Graph. 
+
+### Azure Active Directory samples and documentation 
+The Azure AD documentation contains articles and samples that specifically focus on authentication and authorization with Azure AD.
+
+For the Azure AD v2.0 endpoint: 
+
+- The easiest place to start is in the [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing. 
+- For samples listed by client or server authentication library, see [Azure Active Directory v2.0 Authentication Libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries). 
+- Or you can explore Azure AD samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory). Note: you cannot qualify your search by endpoint version. 
+
+For the Azure AD endpoint: 
+
+- The easiest place to start is in the [Azure AD Developer's guide overview](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing. 
+- For samples listed by client or server authentication library, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries). 
+- For samples listed by app type and platform, see [Azure Active Directory Code Samples](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-code-samples).
+- Or you can explore Azure AD samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory). Note: you cannot qualify your search by endpoint version. 
+
+<a name="deciding-between-the-azure-ad-and-azure-ad-v20-endpoints"></a>
+## Appendix: Deciding between the Azure AD and Azure AD v2.0 endpoints
 
 Azure AD exposes two sets of endpoints, Azure AD and Azure AD v2.0, where you can get access tokens to use when you call Microsoft Graph. Tokens received from each endpoint are not interchangeable, so before you begin development, you need to decide which endpoint makes the best sense for your scenario.
 
@@ -209,134 +246,6 @@ The following table a provides quick reference for some of the major features th
     <td></td>
   </tr>
 </table> 
-
-## Resources for implementing authentication in your Microsoft Graph app 
-
-You can use the following resources to help you implement authentication and authorization with Azure AD in your app. You can explore the appropriate samples and walk-throughs based on the type of app you're building and the platforms that you're developing for. 
-
-### Connect samples by authentication provider and platform
-
-The following table lists the Connect samples by authentication provider and platform, and notes whether they connect to Microsoft Graph using REST or a Microsoft Graph client library.
-
-<table>
-  <tr>
-    <th>Platform</th>
-    <th>Azure AD endpoint</th> 
-    <th>Azure AD v2.0 endpoint</th>
-  </tr>
-  <tr>
-    <td>Android</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST sample</a> or 
-		<a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">SDK sample</a>
-	</td> 
-    <td>
-		<a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK sample</a>
-	</td> 
-  </tr>
-  <tr>
-    <td>ASP.NET</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST sample</a>
-	</td>     
-	<td>
-		<a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK sample</a>
-	</td> 
-  </tr>
-  <tr>
-    <td>iOS (Obj-C)</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST sample</a>
-	</td>     
-	<td>
-		<a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK sample</a>
-	</td> 
-  </tr>
-  <tr>
-    <td>iOS (Swift)</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">REST sample</a>
-	</td>     
-	<td>
-		<a href="https://github.com/microsoftgraph/ios-swift-connect-sample">SDK sample</a>
-	</td> 
-  </tr>
-  <tr>
-    <td>Node.js</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST sample</a>
-	</td>     
-	<td>
-		<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST sample</a>
-	</td> 
-  </tr>
-  <tr>
-    <td>PHP</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST sample</a>
-	</td>     
-	<td>
-		<a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST sample</a>
-	</td> 
-  </tr>
-  <tr>
-    <td>Python</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/python3-connect-rest-sample">REST sample</a>
-	</td>     
-	<td>
-	</td> 
-  </tr>
-  <tr>
-    <td>Ruby</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">REST sample</a>
-	</td>     
-	<td>
-		<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">REST sample</a>
-	</td> 
-  </tr>
-  <tr>
-    <td>UWP</td>
-    <td>
-		<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST sample</a>
-	</td>     
-	<td>
-		<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST sample</a> or 
-		<a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK sample</a>
-	</td> 
-  </tr>
-  <tr>
-    <td>Xamarin</td>
-    <td>
-	</td>     
-	<td>
-		<a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">SDK sample</a>
-	</td> 
-  </tr>
-</table>
-
-To explore a wide range of projects that connect to Microsoft Graph over a broad assortment of technologies, visit the [Microsoft Graph repo](https://github.com/microsoftgraph) on GitHub. 
-
-### Build your first app section 
-
-The [Build your first app](get-started.md) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
-
-### Azure Active Directory samples and documentation 
-The Azure AD documentation contains articles and samples that can help you implement authentication flows with Azure AD.
-
-For the Azure AD v2.0 endpoint: 
-
-- The easiest place to start is in the [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing. 
-- For samples listed by client or server authentication library, see [Azure Active Directory v2.0 Authentication Libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries). 
-- Or you can explore Azure AD samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory). Note: you cannot qualify your search by endpoint version. 
-
-For the Azure AD endpoint: 
-
-- The easiest place to start is in the [Azure AD Developer's guide overview](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing. 
-- For samples listed by client or server authentication library, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries). 
-- For samples listed by app type and platform, see [Azure Active Directory Code Samples](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-code-samples).
-- Or you can explore Azure AD samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory). Note: you cannot qualify your search by endpoint version. 
 
 
 ## See also
