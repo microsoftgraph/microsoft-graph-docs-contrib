@@ -709,7 +709,7 @@
         <Item text="Get member objects" url="/en-us/api-reference/beta/api/user_getmemberobjects" SEOKeyword="user: getMemberObjects, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Get member groups" url="/en-us/api-reference/beta/api/user_getmembergroups" SEOKeyword="user: getMemberGroups, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Check member groups" url="/en-us/api-reference/beta/api/user_checkmembergroups" SEOKeyword="user: checkMemberGroups, Microsoft Graph API, user API" SEODescription="" />
-		<Item text="Get objects by IDs" url="/en-us/api-reference/v1.0/api/directoryobject_getbyids" />
+		<Item text="Get objects by IDs" url="/en-us/api-reference/beta/api/directoryobject_getbyids" />
       </Item>
     </Item>
     <Item text="People and social" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
