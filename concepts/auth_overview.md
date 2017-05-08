@@ -318,7 +318,7 @@ To explore a wide range of projects that connect to Microsoft Graph over a broad
 
 ### Build your first app section 
 
-The [Build your first app](get_started.md) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
+The [Build your first app](get-started.md) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
 
 ### Azure Active Directory samples and documentation 
 The Azure AD documentation contains articles and samples that can help you implement authentication flows with Azure AD.
