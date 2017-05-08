@@ -37,7 +37,7 @@ To get started, you'll need:
 	The registration page displays, listing the properties of your app.
  
 4. Under **Platforms**, select **Add platform**.
-5. Select **Mobile platform**.
+5. Select **Native Application**.
 6. Copy the Client Id to the clipboard. You'll need to enter this value into the sample app.
 
 	The app id is a unique identifier for your app. 

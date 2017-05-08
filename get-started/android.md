@@ -34,7 +34,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 4. Copy the application ID. This is the unique identifier for your app. 
 
-5. Choose **Add Platform** and **Mobile application**.
+5. Choose **Add Platform** and **Native Application**.
 
     > **Note:** The Application Registration Portal provides a Redirect URI with a value of *urn:ietf:wg:oauth:2.0:oob*. However, you'll use the default Redirect URI value of *https://login.microsoftonline.com/common/oauth2/nativeclient*.
 

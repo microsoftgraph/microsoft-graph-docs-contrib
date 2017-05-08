@@ -1,21 +1,21 @@
 # ListItem resource
 
 This resource represents an item in a SharePoint **[list][]**.
-Columns in the list are available through the `columnSet` dictionary.
+Column values in the list are available through the `fieldValueSet` dictionary.
 
 ## Tasks on a listItem
 
 The following tasks are available for **listItem** resources.
-All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}`.
+All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
 
 | Common task                    | HTTP method
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
-| [Get column values][Get]       | GET /items/{item-id}?expand=columnSet
+| [Get column values][Get]       | GET /items/{item-id}?expand=fields
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
-| [Update column values][Update] | PATCH /items/{item-id}/columnSet
+| [Update column values][Update] | PATCH /items/{item-id}/fields
 
 [Get]: ../api/listItem_get.md
 [Create]: ../api/listItem_create.md
@@ -25,16 +25,16 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 ## JSON representation
 
 Here is a JSON representation of a **listItem** resource.
-Properties after the blank line are inherited from **[baseItem][]**.
+
 <!-- { "blockType": "resource", 
        "@odata.type": "microsoft.graph.listItem",
        "keyProperty": "id" } -->
 
 ```json
 {
-  "listItemId": 1,
-  "columnSet": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
 
+  /* inherited from baseItem */
   "id": "string",
   "name": "name of resource",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
@@ -74,7 +74,7 @@ The following properties are inherited from **[baseItem][]**.
 
 | Relationship name | Type              | Description
 |:------------------|:------------------|:-------------------------------------
-| **columnSet**     | [fieldValueSet][] | A collection of child items if the current item is a container / folder.
+| **fields**        | [fieldValueSet][] | The values of the columns set on this list item.
 | **driveItem**     | [driveItem][]     | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
 
 [baseItem]: baseItem.md
