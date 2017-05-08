@@ -2,7 +2,7 @@
 
 > **Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors. 
 
-This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/graph/docs/authorization/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Microsoft Graph Connect Sample for Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) sample to explain the main concepts that you have to implement in an app that uses Microsoft Graph. The article also describes how to access Microsoft Graph by using the [Microsoft Graph Client Library](http://www.nuget.org/packages/Microsoft.Graph/).
+This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Microsoft Graph Connect Sample for Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) sample to explain the main concepts that you have to implement in an app that uses Microsoft Graph. The article also describes how to access Microsoft Graph by using the [Microsoft Graph Client Library](http://www.nuget.org/packages/Microsoft.Graph/).
 
 This is the app you'll create.
 
@@ -40,7 +40,7 @@ If you want to run the iOS project in this sample, you'll need the following:
 	The registration page displays, listing the properties of your app.
  
 4. Under **Platforms**, select **Add platform**.
-5. Select **Mobile platform**.
+5. Select **Native Application**.
 6. Copy the application id. You'll need to enter this values into the sample app.
 
 	The application id is a unique identifier for your app. The redirect URI is a unique URI provided by Windows 10 for each application to ensure that messages sent to that URI are only sent to that application. 
@@ -60,128 +60,6 @@ The `Scopes` value stores the Microsoft Graph permission scopes that the app wil
 
 ```
 IdentityClientApp = new PublicClientApplication(ClientID);
-```
-
-## Install the Microsoft Authentication Library (MSAL)
-
-The [Microsoft Authentication Library](https://www.nuget.org/packages/Microsoft.Identity.Client) contains classes and methods that make it easy to authenticate users through the v2.0 authentication endpoint.
-
-1. In the Solution Explorer right-click the **XamarinConnect (Portable)** project and select **Manage NuGet Packages...**
-2. Click Browse and search for Microsoft.Identity.Client.
-3. Select the latest version of the Microsoft Authentication Library and click **Install**.
-
-Perform these same steps for the **XamarinConnect.Droid**, **XamarinConnect.iOS**, and **XamarinConnect.UWP** projects. Your app will not build if MSAL isn't installed in all four projects.
-
-## Install the Microsoft Graph Client Library
-
-1. In the Solution Explorer right-click the **XamarinConnect (Portable)** project and select **Manage NuGet Packages...**
-2. Click Browse and search for Microsoft.Graph.
-3. Select the latest version of the Microsoft Graph Client Library and click **Install**.
-
-## Update the Newtonsoft.JSON Library
-
-1. In the Solution Explorer right-click the **XamarinConnect (Portable)** project and select **Manage NuGet Packages...**
-2. Click Installed and search for NewtonSoft.JSON.
-3. Select version 9.0.1 of the NewtonSoft.JSON Library and click **Install**.
-
-## Create the AuthenticationHelper.cs class
-
-Open the AuthenticationHelper.cs file inside the **XamarinConnect (Portable)** project. This file will contain all of the authentication code, along with additional logic that stores user information and forces authentication only when the user has disconnected from the app. This class contains at least three methods: `GetTokenForUserAsync`, `Signout`, and `GetAuthenticatedClient`.
-
-The `GetTokenHelperAsync` method runs when the user authenticates and subsequently every time the app makes a call to Microsoft Graph.
-
-**Using declarations**
-
-Make sure you have these declarations at the top of the file:
-
-```
-using Microsoft.Graph;
-using System;
-using System.Diagnostics;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
-using Microsoft.Identity.Client;
-```
-
-**Class fields**
-
-Make sure you have these fields inside the AuthenticationHelper class:
-
-```
-public static string TokenForUser = null;
-public static DateTimeOffset expiration;
-private static GraphServiceClient graphClient = null;
-```
-
-The sample stores the `GraphServicesClient` in a field so that you only have to construct it once. It stores the expiration `DateTimeOffset` of the access token so that it doesn't fetch a new token until the existing token is about to expire.
-
-**GetTokenForUserAsync**
-
-The `GetTokenForUserAsync` method uses the `PublicClientApplicationClass` instantiated in the **App.cs** file to get an access token for the user. If the user hasn't already authenticated, it launches the authentication UI.
-
-```
-        public static async Task<string> GetTokenForUserAsync()
-        {
-            if (TokenForUser == null || expiration <= DateTimeOffset.UtcNow.AddMinutes(5))
-            {
-                AuthenticationResult authResult = await App.IdentityClientApp.AcquireTokenAsync(App.Scopes);
-
-                TokenForUser = authResult.Token;
-                expiration = authResult.ExpiresOn;
-            }
-
-            return TokenForUser;
-        }
-```
-
-**Signout**
-
-The `Signout` method signs out all users logged in through the `PublicClientApplication` (only one user, in this case) and nullifies the `TokenForUser` value. It also nullifies the `GraphServicesClient` value.
-
-```
-        public static void SignOut()
-        {
-            foreach (var user in App.IdentityClientApp.Users)
-            {
-                user.SignOut();
-            }
-            graphClient = null;
-            TokenForUser = null;
-
-        }
-``` 
-
-**GetAuthenticatedClient**
-
-Finally, you'll need a method that creates a `GraphServicesClient`. This method  creates a client that uses the `GetTokenForUserAsync` method for every call through the client to Microsoft Graph.
-
-```
-        public static GraphServiceClient GetAuthenticatedClient()
-        {
-            if (graphClient == null)
-            {
-                // Create Microsoft Graph client.
-                try
-                {
-                    graphClient = new GraphServiceClient(
-                        "https://graph.microsoft.com/v1.0",
-                        new DelegateAuthenticationProvider(
-                            async (requestMessage) =>
-                            {
-                                var token = await GetTokenForUserAsync();
-                                requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);
-                            }));
-                    return graphClient;
-                }
-
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("Could not create a graph client: " + ex.Message);
-                }
-            }
-
-            return graphClient;
-        }
 ```
 
 ## Send an email with Microsoft Graph

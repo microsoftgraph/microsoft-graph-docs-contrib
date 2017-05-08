@@ -8,7 +8,7 @@ The following table lists the three scenarios where you can get an open extensio
 |:-----|:-----|:-----|
 |Get a specific extension from a known resource instance.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Open extension only.|
 |Get a known resource instance expanded with a specific extension.|Device, event, group, group event, group post, message, organization, personal contact, user |A resource instance expanded with the open extension.|
-|Find and expand resource instances with a specific extension. |Event, group event, message, personal contact|Resource instances expanded with the open extension.|
+|Find and expand resource instances with a specific extension. |Event, group event, group post, message, personal contact|Resource instances expanded with the open extension.|
 
 
 ## Prerequisites
@@ -50,7 +50,7 @@ GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 
 ### Get a known resource instance expanded with a matching extension 
 
-For the event, group event, message, personal contact resource types, you can use the same REST request as getting the resource instance, 
+For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, 
 look for an extension that matches a filter on its **id** property, and expand the instance with the extension. The response includes 
 most of the resource properties.
 
@@ -58,19 +58,19 @@ most of the resource properties.
 ```http
 GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
 
-For the device, group, group post, organization, and user resource types, you must also use a `$select` parameter to include
+For the device, group, organization, and user resource types, you must also use a `$select` parameter to include
 the **id** property and any other properties you want from the resource instance:
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
@@ -85,6 +85,7 @@ with the extension.
 ```http
 GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
