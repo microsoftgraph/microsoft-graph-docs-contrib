@@ -1,4 +1,4 @@
-﻿# Authentication and Authorization with Azure Active Directory for Microsoft Graph
+﻿# Get access tokens from Azure Active Directory to call Microsoft Graph
 
 Your app must acquire an access token from Azure Active Directory (Azure AD) that it can attach to requests that it sends to Microsoft Graph. This access token will contain information about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To acquire an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the resources it needs in Microsoft Graph. 
 
@@ -35,6 +35,7 @@ For a complete list of Microsoft Graph permissions, as well as the differences b
 Your app gets access tokens from Azure Active Directory (Azure AD), Microsoft's cloud identity service. To get an access token, your app exchanges HTTP requests and responses with Azure AD using industry-standard protocols defined in the OAuth 2.0 and OpenID Connect 1.0 specifications. These protocols describe the Azure AD endpoints and exchanges with them -- or flows -- that your app uses to securely authenticate with Azure AD and get access tokens.  
 
 On a very simple level, to get an access token, your app exchanges HTTP requests with the following endpoints:
+
 - The `/authorize` endpoint, where your app can send a user to authenticate with Azure AD and consent to the permissions your app needs.
 - The `/token` endpoint where your app can get an access token once user consent has been granted.
 
@@ -47,9 +48,9 @@ https://login.microsoftonline.com/common/oauth2/v2.0/authorize
 https://login.microsoftonline.com/common/oauth2/v2.0/token
 
 ```
-Azure AD exposes two sets of endpoints, Azure AD v1.0 and Azure AD v2.0. Azure AD v1.0 is often just referred to as Azure AD. The main difference between them is that Azure AD v1.0 supports only work or school accounts (that is, accounts that are associated with an Azure AD tenant), while Azure AD v2.0 also supports Microsoft accounts (_Live.com_ or _outlook.com_ accounts). This means that if you use Azure AD v1.0, your app can target only organizations, but with Azure AD v2.0 it can target both consumers and organizations. 
+Azure AD exposes two sets of endpoints, Azure AD and Azure AD v2.0. The main difference between them is that Azure AD endpoint supports only work or school accounts (that is, accounts that are associated with an Azure AD tenant), while Azure AD v2.0 also supports Microsoft accounts (_Live.com_ or _outlook.com_ accounts). This means that if you use Azure AD v1.0, your app can target only organizations, but with Azure AD v2.0 it can target both consumers and organizations. 
 
-Tokens between v1.0 and v2.0 are not interchangeable. Because the Azure AD v2.0 endpoint is newer and features are still being added, there are some important limitations that you need to factor into your decision on which endpoint to use for your app in production. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+Tokens between Azure AD and Azure AD v2.0 are not interchangeable. Because the Azure AD v2.0 endpoint is newer and features are still being added, there are some important limitations that you need to factor into your decision about which endpoint to use for your app in production. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
 ## What's the difference between OAuth 2.0 and OpenID Connect?
 
@@ -88,20 +89,20 @@ Like most developers, you will probably use authentication libraries to manage y
 
 For the Azure AD v2.0 endpoint: 
 
-- Microsoft Authentication Library (MSAL) client libraries are available for .NET, JavaScript, Android, and Objective-c (iOS). All platforms are in production preview, and, in the event breaking changes are introduced, Microsoft guarantees a path to upgrade.
+- Microsoft Authentication Library (MSAL) client libraries are available for .NET, JavaScript, Android, and Objective-c. All platforms are in production preview, and, in the event breaking changes are introduced, Microsoft guarantees a path to upgrade.
 - Server middleware from Microsoft is available for .NET core and ASP.NET (OWIN OpenID Connect and OAuth) and Node.js (Microsoft Azure AD Passport.js). 
 - The v2.0 endpoint will be compatible with many third-party authentication libraries.
 
-For a complete list of Microsoft client libraries, Microsoft middleware, and compatible third-party libraries, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+For a complete list of Microsoft client libraries, Microsoft server middleware, and compatible third-party libraries, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
-For the Azure AD v1.0, the Active Directory Authentication Library (ADAL) client libraries are available on a slightly larger number of platforms. Server middleware is available for .NET core and ASP.NET, as well as Node.js. For more information, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)
+For the Azure AD endpoint, the Active Directory Authentication Library (ADAL) client libraries are available on a slightly larger number of platforms. Server middleware is available for .NET core and ASP.NET, as well as Node.js. For more information, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
 
 ## Get Started
 Once you've registered your app, you're ready to get started!
 
 - To learn more about getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
 - To learn more about getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_user.md).
-- If you're ready to jump into code, check out one of the Microsoft Graph samples listed in [Resources for implementing authentication in your Microsoft Graph app](#resources-for-implementing-authentication-in-your-microsoft-graph-app).
+- If you're ready to jump into code, check out the documentation and samples listed in [Resources for implementing authentication in your Microsoft Graph app](#resources-for-implementing-authentication-in-your-microsoft-graph-app).
 
 
 ## Deciding between the Azure AD and Azure AD v2.0 endpoints
@@ -127,7 +128,11 @@ Because Azure AD v2.0 is newer than Azure AD and functionality is still being ad
 
 For more information about differences between the Azure AD v2.0 endpoint and the Azure AD endpoint, see [What's different about the v2.0 endpoint?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare).
 
-The following table a provides quick reference for some of the major features that the Azure AD and Azure AD v2.0 endpoints support, and provides links to additional information. However, it is not a comprehensive reference. **Before making any decision about developing a production-ready app, consult [Should I use the v2.0 endpoint?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations) in the Azure Active Directory documentation. This topic has the most comprehensive and up-to-date information.**
+The following table a provides quick reference for some of the major features that the Azure AD and Azure AD v2.0 endpoints support, and provides links to additional information. However, it is not a comprehensive reference. 
+
+>**Important**
+>
+>**Before making a decision about which endpoint to use when developing an app for production, consult [Should I use the v2.0 endpoint?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations) in the Azure Active Directory documentation. That article has the most comprehensive and current information about the limitations of the Azure AD v2.0 endpoint.**
 
 
 <table style="width:100%">
@@ -137,14 +142,19 @@ The following table a provides quick reference for some of the major features th
     <th>Azure AD v2.0 endpoint</th>
    </tr>
   <tr>
-    <td>Grant types supported</td>
-    <td style="vertical-align: text-top;"><p>Authorization code</p><p>Implicit</p><p>Client credentials</p><p>Resource owner password credentials</p></td> 
-    <td style="vertical-align: text-top;"><p>Authorization code</p><p>Implicit</p><p>Client credentials</p></td>
-   </tr>
+    <td>Account types</td>
+    <td> <p>work or school accounts</p></td> 
+    <td><p>work or school accounts</p><p>Microsoft accounts</p> </td>
+  </tr>
   <tr>
     <td>App types supported</td>
     <td style="vertical-align: text-top;"><p>Web apps</p><p>Web APIs</p><p>Mobile and native apps</p><p>Single Page App (SPA)</p><p>Daemons/Server Side Apps</p><p>Standalone Web APIs</p><p>Cloud Solution Provider apps</p><p><a href="https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">more information</a></p></td> 
     <td style="vertical-align: text-top;"><p>Web apps</p><p>Web APIs</p><p>Mobile and native apps</p><p>Single Page App (SPA)</p><p>Daemons/Server Side Apps</p><p><a href="https://azure.microsoft.com/documentation/articles/active-directory-v2-flows/" target="_newtab">more information</a></td>
+   </tr>
+  <tr>
+    <td>Grant types supported</td>
+    <td style="vertical-align: text-top;"><p>Authorization code</p><p>Implicit</p><p>Client credentials</p><p>Resource owner password credentials</p></td> 
+    <td style="vertical-align: text-top;"><p>Authorization code</p><p>Implicit</p><p>Client credentials</p></td>
    </tr>
   <tr>
     <td>Conditional access device policies</td>
@@ -162,14 +172,14 @@ The following table a provides quick reference for some of the major features th
     <td>No</td>
    </tr>
   <tr>
+    <td>Windows integrated authentication for federated tenants</td>
+    <td>Supported</td> 
+    <td><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-limitations#restrictions-for-work-and-school-accounts" target="_newtab">Not supported</a></td>
+   </tr>
+  <tr>
     <td>Permissions</td>
     <td>Static: Specified during app registration </td> 
     <td><a href ="https://azure.microsoft.com/documentation/articles/active-directory-v2-compare/#scopes-not-resources" target="_newtab">Dynamic:</a> Request during app runtime; includes incremental consent</td>
-  </tr>
-  <tr>
-    <td>Account types</td>
-    <td> <p>work or school accounts</p></td> 
-    <td><p>work or school accounts</p><p>Microsoft accounts</p> </td>
   </tr>
   <tr>
     <td>App ID </td>
@@ -178,13 +188,18 @@ The following table a provides quick reference for some of the major features th
   </tr>
   <tr>
     <td>Registration portal </td>
-    <td><a href ="https://manage.windowsazure.com/" target="_newtab">Microsoft Azure Management</a></td> 
-    <td><a href ="https://apps.dev.microsoft.com" target="_newtab">Microsoft Application Registration</a></td>
+    <td><a href ="https://portal.azure.com/" target="_newtab">Azure portal</a></td> 
+    <td><a href ="https://apps.dev.microsoft.com" target="_newtab">Microsoft App Registration portal</a></td>
   </tr>
   <tr>
-    <td>Client libraries </td>
-    <td>Active Directory Authentication (ADAL) SDKs for most development platforms</td> 
-    <td><p><a href="https://www.nuget.org/packages/Microsoft.Identity.Client" target="_newtab">Microsoft Authentication Library (Preview)</a></p><p><a href="https://azure.microsoft.com/documentation/articles/active-directory-v2-limitations/#restrictions-on-libraries-amp-sdks" target="_newtab">Open source OAuth 2.0 libraries (list)</a></p> </td>
+    <td>Client authentication libraries </td>
+    <td><p>Active Directory Authentication Library (ADAL) for .NET, Android, JavaScript, Objective-C, Java, and Node.js</p><p><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries" target="_newtab">more information</a></p> </td> 
+    <td><p>Microsoft Authentication Library (MSAL) for .NET, Android, JavaScript, Objective-C, Java</p><p>Third party authentication libraries (list)</p><p><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries" target="_newtab">more information</a></p> </td>
+  </tr>
+  <tr>
+    <td>Server authentication libraries </td>
+    <td><p>.NET/ASP.NET: OWIN middleware for OAuth 2.0, OpenID Connect, and WS-Federation</p><p>Node.js: Azure AD Passport.js</p><p><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries" target="_newtab">more information</a></p> </td> 
+    <td><p>.NET/ASP.NET: OWIN middleware for OAuth 2.0 and OpenID Connect</p><p>Node.js: Azure AD Passport.js</p><p><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries" target="_newtab">more information</a></p> </td>
   </tr>
   <tr>
     <td>Other features </td>
@@ -195,9 +210,7 @@ The following table a provides quick reference for some of the major features th
 
 ## Resources for implementing authentication in your Microsoft Graph app 
 
-After you register your app with the appropriate authentication portal, and have the app registration information (app ID, app secret, if applicable, and redirect URI) that you need to establish your app's identity, you're ready to implement authentication in your app. 
-
-Again, this will vary depending on the type of app you're building, your development platform, the authentication flow you choose, and any specific authentication requirements for your app. 
+You can use the following resources to help you implement authentication and authorization with Azure AD in your app. You can explore the appropriate samples and walk-throughs based on the type of app you're building and the platforms that you're developing for. 
 
 ### Connect samples by authentication provider and platform
 
@@ -303,9 +316,26 @@ The following table lists the Connect samples by authentication provider and pla
 
 To explore a wide range of projects that connect to Microsoft Graph over a broad assortment of technologies, visit the [Microsoft Graph repo](https://github.com/microsoftgraph) on GitHub. 
 
-### Get Started  
+### Build your first app section 
 
-The [Get Started](http://developer.microsoft.com/graph/docs/platform/get-started) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
+The [Build your first app](get-started.md) section contains detailed articles that show you how to create the apps listed in the table using the Azure AD v2.0 endpoint, and covers the authentication libraries used on each platform. 
+
+### Azure Active Directory samples and documentation 
+The Azure AD documentation contains articles and samples that can help you implement authentication flows with Azure AD.
+
+For the Azure AD v2.0 endpoint: 
+
+- The easiest place to start is in the [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing. 
+- For samples listed by client or server authentication library, see [Azure Active Directory v2.0 Authentication Libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries). 
+- Or you can explore Azure AD samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory). Note: you cannot qualify your search by endpoint version. 
+
+For the Azure AD endpoint: 
+
+- The easiest place to start is in the [Azure AD Developer's guide overview](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing. 
+- For samples listed by client or server authentication library, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries). 
+- For samples listed by app type and platform, see [Azure Active Directory Code Samples](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-code-samples).
+- Or you can explore Azure AD samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory). Note: you cannot qualify your search by endpoint version. 
+
 
 ## See also
 
