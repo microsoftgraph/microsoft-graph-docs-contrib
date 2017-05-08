@@ -8,7 +8,7 @@ Your app must be registered with Azure AD. Registering your app establishes a un
 
 For the Azure AD v2.0 endpoint, you register your app with the [Microsoft App Registration Portal](https://apps.dev.microsoft.com). You can use either a Microsoft account or a work or school account to register your app. Depending on the type of app you are developing, you will need to copy one or more properties during registration to use when you configure authentication and authorization for your app. 
 
-The following screenshot shows an example Web app registration that has been configured with a password and Implicit Grant. 
+The following screenshot shows an example Web app registration that has been configured with a password and Implicit Flow. 
 ![Web app registration with password and Implicit Grant.](./images/v2-web-registration.png)
 
 To register your app, follow these steps; be sure to copy the indicated values to use when configuring authorization for your app:
@@ -42,9 +42,9 @@ To register your app, follow these steps; be sure to copy the indicated values t
 
 	1. Select **Web**.
 
-	2. If you’re using the OpenID Connect Hybrid flow or if your app is a single page app (SPA), make sure the **Allow Implicit Flow** check box is selected. (The OpenID Connect hybrid flow is the default flow used by the OpenID Connect OWIN middleware.)
+	2. Depending on the type of authentication flow you're using, you may have to make sure the **Allow Implicit Flow** check box is selected. 
 		
-		The **Allow Implicit Flow** option enables the OpenID Connect Hybrid and Implicit flows. The Hybrid flow enables the app to receive both sign-in info (the id token) and artifacts (in this case, an authorization code) that the app uses to obtain an access token. For single page apps, the Implicit flow enables the app to receive sign-in info and the access token directly. 
+		The **Allow Implicit Flow** option enables the OpenID Connect Hybrid and Implicit flows. The Hybrid flow enables the app to receive both sign-in info (the id token) and artifacts (in this case, an authorization code) that the app uses to obtain an access token. The Hybrid flow is the default flow used by the OWIN OpenID Connect middleware. For single page apps (SPA), the Implicit flow enables the app to receive sign-in info and the access token. 
 
 	3. Specify a Redirect URL.
 		
