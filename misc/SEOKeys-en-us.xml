@@ -120,6 +120,7 @@
       <Item text="Get member objects" url="/en-us/api-reference/v1.0/api/user_getmemberobjects" SEOKeyword="user: getMemberObjects, Microsoft Graph API, user API" SEODescription="Retrieve a list of directoryobject objects." />
       <Item text="Get member groups" url="/en-us/api-reference/v1.0/api/user_getmembergroups" SEOKeyword="user: getMemberGroups, Microsoft Graph API, user API" SEODescription="Retrieve a list of directoryobject objects." />
       <Item text="Check member groups" url="/en-us/api-reference/v1.0/api/user_checkmembergroups" SEOKeyword="user: checkMemberGroups, Microsoft Graph API, user API" SEODescription="Retrieve a list of directoryobject objects." />
+	  <Item text="Get objects by IDs" url="/en-us/api-reference/v1.0/api/directoryobject_getbyids" />
     </Item>
   </Item>
   <Item text="Open extensions" url="/en-us/api-reference/v1.0/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, extension API" SEODescription="">
@@ -587,6 +588,7 @@
       <Item text="Get member objects" url="/en-us/api-reference/v1.0/api/directoryobject_getmemberobjects" SEOKeyword="directoryObject: getMemberObjects, Microsoft Graph API, Directory API" SEODescription="" />
       <Item text="Get member groups" url="/en-us/api-reference/v1.0/api/directoryobject_getmembergroups" SEOKeyword="directoryObject: getMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
       <Item text="Check member groups" url="/en-us/api-reference/v1.0/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
+	  <Item text="Get objects by IDs" url="/en-us/api-reference/v1.0/api/directoryobject_getbyids" />
     </Item>
     <Item text="Directory role" url="/en-us/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
       <Item text="List directory roles" url="/en-us/api-reference/v1.0/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
@@ -713,6 +715,7 @@
         <Item text="Get member objects" url="/en-us/api-reference/beta/api/user_getmemberobjects" SEOKeyword="user: getMemberObjects, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Get member groups" url="/en-us/api-reference/beta/api/user_getmembergroups" SEOKeyword="user: getMemberGroups, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Check member groups" url="/en-us/api-reference/beta/api/user_checkmembergroups" SEOKeyword="user: checkMemberGroups, Microsoft Graph API, user API" SEODescription="" />
+		<Item text="Get objects by IDs" url="/en-us/api-reference/beta/api/directoryobject_getbyids" />
       </Item>
     </Item>
     <Item text="People and social" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
