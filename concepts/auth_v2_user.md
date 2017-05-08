@@ -1,15 +1,15 @@
 ﻿# Get access on behalf of users
-To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD, and attach that access token to requests that it sends to Microsoft Graph. The exact flow that you will use to get the access_token will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. In this topic, we will walk through an authorization example using the OAuth 2.0 Authorization Code Grant flow. This is a common flow used by Native apps and also by some Web apps to get an access token from Azure AD. 
+To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 Authorization Code Grant flow. In this topic, we will walk through an example using this flow. 
 
 ## Authentication and Authorization steps
 
-The basic steps required to authenticate and authorize a user for Microsoft Graph using the OAuth 2.0 Authorization Code Grant flow with the Azure AD v2.0 endpoint are:
+The basic steps required to use the OAuth 2.0 Authorization Code Grant flow to get an access token from the Azure AD v2.0 endpoint are:
 
-1. Register your app with Azure AD
-2. Get authorization 
-3. Get an access token
-4. Use the access token to call Microsoft Graph
-5. Use a refresh token to get a new access token (some scenarios)
+1. Register your app with Azure AD. 
+2. Get authorization. 
+3. Get an access token.
+4. Call Microsoft Graph with the access token.
+5. Use a refresh token to get a new access token.
 
 ## 1. Register your app
 To use the Azure v2.0 endpoint, you must register your app at the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/). You can use either a Microsoft account or a work or school account to register an app. 
@@ -20,20 +20,18 @@ The following screenshot shows an example Web app registration.
 To configure an app to use the OAuth 2.0 Authorization Code Grant flow, you'll need to save the following values when registering the app:
 
 - The Application Id assigned by the app registration portal.
-- An Application Secret, either a password or a key-value pair (certificate). This is not required for Native apps. 
-- A Redirect URL for your app to receive responses.
+- An Application Secret, either a password or a public/private key pair (certificate). This is not required for Native apps. 
+- A Redirect URL for your app to receive responses from Azure AD.
 
 For steps on how to configure an app using the Microsoft App Registration Portal, see [Register your app](./auth_register_app_v2.md).
 
 ## 2. Get authorization
-To call Microsoft Graph your app needs an access_token from Azure AD. The first step to getting an access_token for many OpenID Connect and OAuth 2.0 flows is to redirect the user to the Azure AD v2.0 `/authorize` endpoint. Azure AD will sign the user in and ensure their consent for the permissions your app requests. Once consent is obtained, Azure AD will return an authorization_code to your app that it can redeem at the Azure AD v2.0 `/token` endpoint for an access_token.
+The first step to getting an access token for many OpenID Connect and OAuth 2.0 flows is to redirect the user to the Azure AD v2.0 `/authorize` endpoint. Azure AD will sign the user in and ensure their consent for the permissions your app requests. In the Authorization Code Grant flow, after consent is obtained, Azure AD will return an authorization_code to your app that it can redeem at the Azure AD v2.0 `/token` endpoint for an access token.
 
 ### Authorization request 
 The following shows an example request to the `/authorize` endpoint. 
 
-In this example:
-- The Microsoft Graph permissions requested are for _User.Read_ and _Mail.Read_, which will allow the app to read the profile and mail of the signed-in user. 
-- The _offline\_access_ permission is requested so that the app can get a refresh token, which it can use to get a new access_token when the current one expires. 
+With the Azure AD v2.0 endpoint, permissions are requested using the `scope` parameter. In this example, the Microsoft Graph permissions requested are for _User.Read_ and _Mail.Read_, which will allow the app to read the profile and mail of the signed-in user. The _offline\_access_ permission is requested so that the app can get a refresh token, which it can use to get a new access token when the current one expires. 
 
 ```
 // Line breaks for legibility only
@@ -60,7 +58,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
  
 ### Consent experience
 
-At this point, the user will be asked to enter their credentials and complete the authentication.  The v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter.  If the user has not consented to any of those permissions and if an administrator has not previously consented on behalf of all users in the organization, Azure AD will ask the user to consent to the required permissions.  
+At this point, the user will be asked to enter their credentials to authenticate with Azure AD. The v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter.  If the user has not consented to any of those permissions and if an administrator has not previously consented on behalf of all users in the organization, Azure AD will ask the user to consent to the required permissions.  
 
 Here is an example of the consent dialog presented for a Microsoft account:
 
@@ -71,7 +69,7 @@ Here is an example of the consent dialog presented for a Microsoft account:
 > <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20user.read%20mail.read&state=12345" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize...</a>
 
 ### Authorization response
-If the user consents to the permissions your app requested, the response will contain the authorization code in the `code` parameter. This is an example of a successful response to the request above. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
+If the user consents to the permissions your app requested, the response will contain the authorization code in the `code` parameter. Here is an example of a successful response to the request above. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
 
 ```
 GET http://localhost/myapp/?
@@ -84,7 +82,7 @@ code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d
 | state |If a state parameter is included in the request, the same value should appear in the response. The app should verify that the state values in the request and response are identical. |
 
 ## 3. Get a token
-Your app can use the authorization `code` received in the previous step to request an access_token by sending a `POST` request to the `/token` endpoint.
+Your app uses the authorization `code` received in the previous step to request an access token by sending a `POST` request to the `/token` endpoint.
 
 ### Token request
 ```
@@ -113,7 +111,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_secret |required for web apps |The application secret that you created in the app registration portal for your app.  It should not be used in a native app, because client_secrets cannot be reliably stored on devices.  It is required for web apps and web APIs, which have the ability to store the client_secret securely on the server side. |
 
 ### Token response
-Although the access_token is opaque to your app, the response contains a list of the permissions that the access_token is good for in the `scope` parameter. 
+Although the access token is opaque to your app, the response contains a list of the permissions that the access token is good for in the `scope` parameter. 
 
 ```
 {
@@ -130,7 +128,7 @@ Although the access_token is opaque to your app, the response contains a list of
 | scope |A space separated list of the Microsoft Graph permissions that the access_token is valid for. |
 | expires_in |How long the access token is valid (in seconds). |
 | access_token |The requested access token. Your app can use this token to call Microsoft Graph. |
-| refresh_token |An OAuth 2.0 refresh token. Your app can use this token acquire additional access tokens after the current access token expires.  Refresh_tokens are long-lived, and can be used to retain access to resources for extended periods of time.  For more detail, refer to the [v2.0 token reference](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
+| refresh_token |An OAuth 2.0 refresh token. Your app can use this token acquire additional access tokens after the current access token expires.  Refresh tokens are long-lived, and can be used to retain access to resources for extended periods of time.  For more detail, refer to the [v2.0 token reference](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
 
 ## 4. Use the access token to call Microsoft Graph
 
@@ -174,7 +172,7 @@ Content-Length: 407
 
 ## 5. Use the refresh token to get a new access token
 
-Access_tokens are short lived, and you must refresh them after they expire to continue accessing resources.  You can do so by submitting another `POST` request to the `/token` endpoint, this time providing the `refresh_token` instead of the `code`:
+Access tokens are short lived, and you must refresh them after they expire to continue accessing resources.  You can do so by submitting another `POST` request to the `/token` endpoint, this time providing the `refresh_token` instead of the `code`.
 
 ### Request
 ```
@@ -202,7 +200,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_secret |required for web apps |The application secret that you created in the app registration portal for your app.  It should not be used in a native app, because client_secrets cannot be reliably stored on devices.  It is required for web apps and web APIs, which have the ability to store the client_secret securely on the server side. |
 
 ### Response
-A successful token response will look like:
+A successful token response will look similar to the following.
 
 ```
 {
