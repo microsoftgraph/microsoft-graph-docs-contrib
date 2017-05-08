@@ -1,6 +1,8 @@
 ﻿# Get access tokens from Azure Active Directory to call Microsoft Graph
 
-Your app must acquire an access token from Azure Active Directory (Azure AD) that it can attach to requests that it sends to Microsoft Graph. This access token will contain information about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To acquire an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the resources it needs in Microsoft Graph. 
+Your app must acquire an access token from Azure Active Directory (Azure AD) that it can attach to requests that it sends to Microsoft Graph. Azure AD is Microsoft's cloud identity service and Microsoft Graph requires an access token issued by Azure AD to grant your app access to Office 365 and directory resources. The access token contains information (or claims) about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To acquire an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the resources it needs in Microsoft Graph. 
+
+This topic provides a brief introductory overview of access tokens, Azure AD, the Azure AD and Azure AD v2.0 endpoints, and how your app can get access tokens from them. If you are already familiar with integrating an app with Azure AD to get tokens, then you can skip ahead to [Resources for implementing authentication in your Microsoft Graph app](#resources-for-implementing-authentication-in-your-microsoft-graph-app) for information and samples specific to Microsoft Graph. 
 
 ## What is an access token and how do I use it?
 
