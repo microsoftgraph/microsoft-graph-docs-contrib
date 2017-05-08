@@ -2,18 +2,21 @@
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [group](../resources/group.md) resource.
+Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
 
 ### Prerequisites
-One of the following **scopes** are required to execute this API: *Group.Read.All; Directory.Read.All*
+One of the following **scopes** is required to execute this API: 
+* For users: *User.Read.All; Directory.Read.All*
+* For groups: *Group.Read.All; Directory.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/Microsoft.Graph.Group
+GET /directory/deletedItems/Microsoft.Graph.User
 ```
 
-The type *Microsoft.Graph.Group* is required in the URI. Calling GET /directory/deleteditems without a type is not supported.
+This API currently supports retrieving object types of groups (Microsoft.Graph.Group) or users (Microsoft.Graph.User) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deleteditems without a type is not supported.
 
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

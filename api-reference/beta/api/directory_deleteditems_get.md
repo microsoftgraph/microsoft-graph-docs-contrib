@@ -2,10 +2,12 @@
 
 Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [group](../resources/group.md) resource.
+Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
 
 ### Prerequisites
-One of the following **scopes** are required to execute this API: *Group.Read.All; Directory.Read.All*
+One of the following **scopes** is required to execute this API: 
+* For users: *User.Read.All; Directory.Read.All*
+* For groups: *Group.Read.All; Directory.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
