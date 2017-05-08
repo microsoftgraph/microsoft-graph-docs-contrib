@@ -9,7 +9,7 @@ Some common uses for this function are to:
 
 ## Prerequisites
 
-One of the following **scopes** are required to execute this API: _Directory.Read.All_
+One of the following **scopes** is required to execute this API: _Directory.Read.All_; _Directory.AccessAsUser.All_
 
 ## HTTP request
 
