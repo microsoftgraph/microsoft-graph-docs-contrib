@@ -9,8 +9,8 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/convertToRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/convertToRange
+POST /workbook/tables/{id|name}/convertToRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 
 ```
 ## Request headers
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "table_converttorange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/convertToRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/convertToRange
 ```
 
 ##### Response

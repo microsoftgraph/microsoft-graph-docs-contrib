@@ -10,8 +10,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/autofitRows
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/autofitRows
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/autofitRows
+POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitRows
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
 ```
 ## Request headers

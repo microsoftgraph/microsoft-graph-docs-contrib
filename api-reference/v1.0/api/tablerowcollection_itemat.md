@@ -9,8 +9,8 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows/ItemAt
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows/ItemAt
+POST /workbook/tables/{id|name}/rows/ItemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 
 ```
 ## Request headers
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "tablerowcollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/ItemAt
 Content-type: application/json
 Content-length: 20
 

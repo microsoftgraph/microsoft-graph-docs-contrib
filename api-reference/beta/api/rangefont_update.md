@@ -10,8 +10,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/font
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/font
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/font
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/font
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## Optional request headers
 | Name       | Description|
