@@ -1,4 +1,4 @@
-# Call Office 365 services in Visual Studio with the Microsoft Graph API
+ # Call Office 365 services in Visual Studio with the Microsoft Graph API
 
 You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
 
@@ -6,7 +6,7 @@ You can use the Connected Services in Visual Studio to configure your app to cal
 
 To use the Office 365 Connected Services with Microsoft Graph, download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already.
 
-    >**Note:** If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
+    > Note: If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
 
 You will also need an Office 365 subscription. To get a free trial, join the [Office 365 Developer program](https://dev.office.com/devprogram).
 
