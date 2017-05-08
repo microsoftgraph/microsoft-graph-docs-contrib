@@ -110,7 +110,7 @@ Once you've registered your app, you're ready to get started!
 - To learn more about getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
 - To learn more about getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_user.md).
 - If you're ready to jump into code, check out the documentation and samples listed in [Resources for implementing authentication in your Microsoft Graph app](#resources-for-implementing-authentication-in-your-microsoft-graph-app).
-- If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth_cloudsolutionprovider).
+- If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth_cloudsolutionprovider.md).
 
 
 ## Resources for implementing authentication in your Microsoft Graph app 
@@ -143,7 +143,6 @@ For the Azure AD endpoint:
 - For samples listed by app type and platform, see [Azure Active Directory Code Samples](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-code-samples).
 - Or you can explore Azure AD samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory). Note: you cannot qualify your search by endpoint version. 
 
-<a name="deciding-between-the-azure-ad-and-azure-ad-v20-endpoints"></a>
 ## Appendix: Deciding between the Azure AD and Azure AD v2.0 endpoints
 
 Azure AD exposes two sets of endpoints, Azure AD and Azure AD v2.0, where you can get access tokens to use when you call Microsoft Graph. Tokens received from each endpoint are not interchangeable, so before you begin development, you need to decide which endpoint makes the best sense for your scenario.
