@@ -8,10 +8,10 @@
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
     <Item text="Angular" url="/en-us/concepts/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Angular app" />
     <Item text="ASP.NET MVC" url="/en-us/concepts/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
-	<Item text="Connect Visual Studio to Microsoft Graph" url="/en-us/concepts/office_365_connected_services" />
 	<Item text="iOS" url="/en-us/concepts/ios" SEOKeyword="iOS, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an iOS app" />
 	<Item text="Node.js" url="/en-us/concepts/nodejs" SEOKeyword="Node.js, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Node.js app" />
-    <Item text="PHP" url="/en-us/concepts/php" SEOKeyword="PHP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a PHP app" />
+    <Item text="Office 365 Connected Services" url="/en-us/concepts/office_365_connected_services" />
+	<Item text="PHP" url="/en-us/concepts/php" SEOKeyword="PHP, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a PHP app" />
     <Item text="Python" url="/en-us/concepts/python" SEOKeyword="Python, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Python app" />
     <Item text="Ruby" url="/en-us/concepts/ruby" SEOKeyword="Ruby, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Ruby app" />
     <Item text="REST" url="/en-us/concepts/rest" SEOKeyword="REST, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a REST" />
@@ -44,10 +44,8 @@
   		<Item text="Open extensions" url="/en-us/concepts/extensibility_open_users" />
   		<Item text="Schema extensions" url="/en-us/concepts/extensibility_schema_groups" />
   	</Item>
-  <Item text="Access data in different environments" url="/en-us/concepts/accss-data-in-different-environments" >
-	<Item text="National clouds" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
-	<Item text="On-premises (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
-  </Item>
+  <Item text="National cloud deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
+  <Item text="On-premises deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
   <Item text="Known issues" url="/en-us/concepts/known_issues" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="Known issues with the Microsoft Graph API." />
   <Item text="Changelog" url="/en-us/concepts/changelog" />
  
