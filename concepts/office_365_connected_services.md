@@ -4,17 +4,15 @@ You can use the Connected Services in Visual Studio to configure your app to cal
 
 ## Prerequisites
 
-To use the Office 365 Connected Services with Microsoft Graph, download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already.
+- To use the Office 365 Connected Services with Microsoft Graph, download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already.
 
->**Note:** If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
+    >**Note:** If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
 
-You will also need an Office 365 subscription. To get a free trial, join the [Office 365 Developer program](https://dev.office.com/devprogram).
+- You will also need an Office 365 subscription. To get a free trial, join the [Office 365 Developer program](https://dev.office.com/devprogram).
 
 ## Get the starter project
 
-Clone the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice) repository on GitHub. This sample includes the references that you need to authenticate against Microsoft Graph. 
-
-Open the sample in Visual Studio 2017 Preview.
+Clone the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice) repository on GitHub. This sample includes the references that you need to authenticate against Microsoft Graph. After you clone the starter project, open the sample in Visual Studio 2017 Preview.
 
 ## Add the Connected Service
 
@@ -48,7 +46,7 @@ The starter sample is configured to send a simple email. You can use Microsoft G
         GetSharingLink(GraphServiceClient graphClient, string Id)
     ```
  
-> Tip: Each comment starts with '//Uncomment:'
+> **Tip:** Each comment starts with '//Uncomment:'
  
 
 ## Run the sample
