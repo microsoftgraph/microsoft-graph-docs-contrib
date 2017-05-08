@@ -10,7 +10,7 @@ You can also get valuable insights and intelligence about the data from Microsof
 
 Discover the possibilities in the relationships within Microsoft Graph.
 
-![An image showing the primary resources and relationships that are part of the graph](images/microsoft_graph_800.png)
+![An image showing the primary resources and relationships that are part of the graph](images/microsoft_graph_600.png)
 
 ## What can you do with Microsoft Graph? 
 
