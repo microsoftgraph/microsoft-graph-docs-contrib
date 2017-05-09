@@ -56,7 +56,7 @@ content-length: 982
 ```
 
 ## Read specific properties of a resource
-To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](#) query parameter to the previous request, as shown in the following example. 
+To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query_parameters.md) query parameter to the previous request, as shown in the following example. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
