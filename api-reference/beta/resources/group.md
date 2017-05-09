@@ -20,6 +20,7 @@ by providing a [delta](../api/group_delta.md) function.
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
 |[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
 |[Add owner](../api/group_post_owners.md) |[directoryObject](directoryobject.md)| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
+|[Remove owner](../api/group_delete_owners.md) | None |Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the **owners** navigation property.|
 |[List members](../api/group_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
 |[Add member](../api/group_post_members.md) |[directoryObject](directoryobject.md)| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
 |[Remove member](../api/group_delete_members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
@@ -100,13 +101,14 @@ by providing a [delta](../api/group_delta.md) function.
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the group. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
-|notes|[Notes](notes.md)| Read-only.|
+|onenote|[OneNote](onenote.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans owned by the group. A group can own no more than one plan. |
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
 |settings|[directorySetting](directorySetting.md) collection| Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.|
+|sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 
@@ -127,7 +129,7 @@ Here is a JSON representation of the resource
     "events",
     "memberOf",
     "members",
-    "notes",
+    "onenote",
     "owners",
     "photo",
     "photos",    
@@ -171,6 +173,7 @@ Here is a JSON representation of the resource
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
   "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
 
