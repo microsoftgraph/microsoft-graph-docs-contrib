@@ -42,7 +42,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 | Change | Beta | Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. <br/> Added the **folderView** resource type and the **view** property to the **folder** resource type. <br/> Added the **listItem** navigation property to **driveItem**. <br/> Added the **list** navigation property to **drive**.
 
 
-### Extensions - open extensions
+### Extensions (open extensions)
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
@@ -52,7 +52,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |Addition|Beta|Support for `$expand` to [get open extensions](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) in [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit).|
 
 
-### Extensions - schema extensions 
+### Extensions (schema extensions) 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
@@ -83,6 +83,16 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |:-------------|:-----------|:--------------|
 |Change|Beta|Support getting a **message** body in plain text, as an alternative to the default HTML format. See [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/message_get) and [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages) events for details.|
 
+
+### Outlook tasks
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|New **outlook** navigation property added to [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user), to access Outlook tasks.|
+|Addition|Beta|New entities - [outlookuser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser), [outlookTaskGroup](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlooktaskgroup), [outlookTaskFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlooktaskfolder), and [outlookTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlooktask) - and their methods support organizing and accessing Outlook tasks. | 
+|Addition|Beta|Outlook tasks support attachments ([attachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/attachment), [fileAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/fileattachment), [itemAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemattachment), and [referenceAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/referenceattachment) resources). |
+|Addition|Beta|Outlook tasks support [extended properties](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/extended-properties-overview) ([singleValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/singlevaluelegacyextendedproperty) and [multiValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/multivaluelegacyextendedproperty) resources). |
+
 ### Planner APIs
 
 |**Change type**|**Version**|**Description**| 
@@ -103,6 +113,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |**Change type**|**Version**|**Description**|
 |:--------------|:----------|:--------------|
 | Addition      | v1.0      | Releasing the Sites API in v1.0 (previously only in beta).<br/> Added the **site** and **siteCollection** resource types.
+
 
 
 ## April 2017
