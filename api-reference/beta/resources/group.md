@@ -135,6 +135,7 @@ Here is a JSON representation of the resource
     "createdOnBehalfOf",
     "drive",
     "events",
+    "extensions",
     "memberOf",
     "members",
     "onenote",

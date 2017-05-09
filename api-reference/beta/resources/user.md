@@ -160,6 +160,7 @@ Here is a JSON representation of the resource
     "directReports",
     "drive",
     "events",
+    "extensions",
     "joinedGroups",
     "mailFolders",
     "manager",
