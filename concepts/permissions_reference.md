@@ -5,7 +5,9 @@ Microsoft Graph exposes permissions over the following resources:
 
 [Calendars permissions](#calendars-permissions) | [Contacts permissions](#contacts-permissions) | [Device permissions](#device-permissions) | [Microsoft Intune Device Management permissions](#microsoft-intune-device-management-permissions) | [Directory permissions](#directory-permissions) |  [Files permissions](#files-permissions) | [Group permissions](#group-permissions) | [Identity Risk Event permissions](#identity-risk-event-permissions) |  [Mail permissions](#mail-permissions) |  [Member permissions](#member-permissions) |  [Notes permissions](#notes-permissions) | [OpenID permissions](#openid-permissions) | [People permissions](#people-permissions) | [Reports permissions](#reports-permissions) |  [Sites permissions](#sites-permissions) | [Tasks permissions](#tasks-permissions) | [User permissions](#user-permissions)
 
-For permissions required for some common app scenarios involving user and group resources, see [Permission scenarios](#permission-scenarios).
+For some common app scenarios involving permissions for user and group resources, see [Permission scenarios](#permission-scenarios).
+
+## Overview
 
 ### Delegated permissions, Application permissions, and effective permissions
 Microsoft Graph has two types of permissions: **Delegated permissions** and **Application permissions**. 
