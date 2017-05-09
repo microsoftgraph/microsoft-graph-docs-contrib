@@ -2,7 +2,7 @@
 
 [Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](../api-reference/v1.0/api/user_delta.md) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.
 
-Delta query supports both full synchronization that retrieves all of the users in a tenant, and incremental synchronization that retrieves only the users that have changed since the last synchronization. Typically, you would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.
+Clients using synchronizing users with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.
 
 ## Tracking user changes
 

@@ -51,8 +51,8 @@ For users and groups beta (preview) APIs, scoping filters allow you to track cha
 Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
 
 Possible @removed reasons can be *changed* or *deleted*.
-- *Changed* indicates the item was deleted and may be restored from [deletedItems](../api-reference/beta/resources/directory.md).
-- *Deleted* indicates the item is [permanently deleted](../api-reference/beta/api/directory_deleteditems_delete.md).
+- *Changed* indicates the item was deleted and can be restored from [deletedItems](../api-reference/beta/resources/directory.md).
+- *Deleted* indicates the item is deleted and cannot be restored.
 
 @removed object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these object in the responses.
 

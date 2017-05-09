@@ -40,6 +40,9 @@ each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1
 or access the ICS URL in the calendar resource.
 * You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
+#### Using delta query
+For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
 ## Groups
 
 ## Groups and (beta) Microsoft Teams
@@ -195,5 +198,12 @@ Additionally there are the following `/beta` limitations:
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata
 * Cross-workload filtering/search is not available. 
 * Full-text search (using **$search**) is only available for some entities, like messages.
+
+## Delta query
+
+1.	OData context is sometimes returned incorrectly when tracking changes to relationships.
+2.	Schema extensions (legacy) are not returned with $Select statement, but are returned without $Select.
+3.	Clients cannot track changes to open extensions or registered schema extensions.
+
 
   >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.

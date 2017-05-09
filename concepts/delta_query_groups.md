@@ -3,7 +3,7 @@
 [Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](../api-reference/v1.0/api/group_delta.md) function calls. Delta query enables you discover changes to groups 
 without having to fetch the entire set of groups from Microsoft Graph and compare changes.
 
-Delta query supports both full synchronization that retrieves all of the groups in a tenant, and incremental synchronization that retrieves only the groups that have changed since the last synchronization. Typically, you would do an initial full synchronization of all the groups in a tenant, and subsequently, get incremental changes to groups periodically. 
+Clients using synchronizing groups with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the groups in a tenant, and subsequently, get incremental changes to groups periodically. 
 
 ## Tracking group changes
 
