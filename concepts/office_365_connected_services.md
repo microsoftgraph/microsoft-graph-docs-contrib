@@ -54,7 +54,10 @@ Build and run the sample. Next, choose the **Sign-in** link on the top right, an
 
 This will send an email that includes a link to your profile photo.
 
->Note: If your stop and re-run the sample from Visual Studio, you may need to explicitly sign out for the sample to work.
+**Notes:**
+- If your stop and re-run the sample from Visual Studio, you may need to explicitly sign out for the sample to work.
+- If you get an exception indicating the "User is not authenticated", you many need to go back and repeat the Add Connected Service step above.
+    
 
 ## Explore the code
 
