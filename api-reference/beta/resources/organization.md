@@ -54,7 +54,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "extensions"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.organization"

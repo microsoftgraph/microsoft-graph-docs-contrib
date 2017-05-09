@@ -4,12 +4,7 @@
 
 ## Prerequisites
 
-[Permissions](../../../concepts/permissions_reference.md) required to perform delta query for users can be one of the following: 
-*User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-
-## Known Limitations
-
-For known limitations using delta query, see the [delta query section](../../../overview/release_notes.md#delta-query) in the known issues article.
+One of the following **scopes** is required to execute this API: *User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
 ### HTTP request
 
@@ -43,8 +38,7 @@ This method supports OData Query Parameters to help customize the response.
 _id_ property is always returned. 
 - Delta query support `$select`, `$top`, and `$expand` for messages. 
 - There is limited support for `$filter` and `$orderby`:
-  * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` 
-  or `$filter=receivedDateTime+gt+{value}`.
+  * The only supported `$filter` expression is for tracking changes on one or two specific users:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`
   * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
   an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.

@@ -1,17 +1,7 @@
 # Microsoft Graph permissions reference 
+Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed or during sign-up. 
 
-[Overview](#overview)
-
-[Calendars permissions](#calendars-permissions) | [Contacts permissions](#contacts-permissions) | [Device permissions](#device-permissions) | [Microsoft Intune Device Management permissions](#microsoft-intune-device-management-permissions) | [Directory permissions](#directory-permissions) |  [Files permissions](#files-permissions) | [Group permissions](#group-permissions) | [Identity Risk Event permissions](#identity-risk-event-permissions) |  [Mail permissions](#mail-permissions) |  [Member permissions](#member-permissions) |  [Notes permissions](#notes-permissions) | [OpenID permissions](#openid-permissions) | [People permissions](#people-permissions) | [Reports permissions](#reports-permissions) |  [Sites permissions](#sites-permissions) | [Tasks permissions](#tasks-permissions) | [User permissions](#user-permissions)
-
-[Permission scenarios](#permission-scenarios)
-
----
-
-## Overview
-Microsoft Graph exposes granular permissions that control the access that apps have to resources like users, groups, and mail and to the APIs that operate on them like sending mail on behalf of a user or reading and writing a user's profile. As a developer, you decide which permissions for Microsoft Graph your app requests. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed or during sign-up. 
-
-### Delegated permissions, Application permissions, and effective permissions
+## Delegated permissions, Application permissions, and effective permissions
 Microsoft Graph has two types of permissions: **Delegated permissions** and **Application permissions**. 
 
 - **Delegated permissions** are used by apps that have a signed-in user present. For these apps either the user or an administrator consents to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Microsoft Graph. Some Delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require administrator consent.  
@@ -20,9 +10,10 @@ Microsoft Graph has two types of permissions: **Delegated permissions** and **Ap
 
 _Effective permissions_ are the permissions that your app will have when making requests to Microsoft Graph. It is important to understand the difference between the Delegated and Application permissions that your app is granted and its effective permissions when making calls to Microsoft Graph.
 
-- For Delegated permissions, the _effective permissions_ of your app will be the least privileged intersection of the Delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
+- For Delegated permissions, the _effective permissions_ of your app will be the least privileged intersection of the Delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
    
   For example, assume your app has been granted the _User.ReadWrite.All_ Delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user is not in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization because the user that it has permission to act on behalf of does not have those privileges.
+  
 - For Application permissions, the _effective permissions_ of your app will be the full level of privileges implied by the permission. For example, an app that has the _User.ReadWrite.All_ Application permission can update the profile of every user in the organization. 
 
 ### Microsoft Graph permission names
@@ -678,7 +669,6 @@ The _User.ReadBasic.All_ permission constrains app access to a limited set of pr
 - surname
 - userPrincipalName
 
-
 To read the group memberships of a user (`memberOf`), the app must have either [_Group.Read.All_](#group-permissions) or [_Group.ReadWrite.All_](#group-permissions). However, if the user also has membership in a [directoryRole](../api-reference/v1.0/resources/directoryrole.md) or an [administrativeUnit](../api-reference/beta/resources/administrativeunit.md), the app will need effective permissions to read those resources too, or Microsoft Graph will return an error. This means the app will also need [Directory permissions](#directory-permissions), and, for Delegated permissions, the signed-in user will also need sufficient privileges in the organization to access directory roles and administrative units. 
 
 ### Example usage
@@ -701,7 +691,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ## Permission scenarios
 
-This section shows some common scenarios that target [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform some operations will depend on whether a permission is an Application or Delegated permission. In the case of Delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information on Application permissions and Delegated permissions and an app's effective permissions, see [Overview](#overview).
+This section shows some common scenarios that target [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an Application or Delegated permission. In the case of Delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](#delegated-permissions-application-permissions-and-effective-permissions).
 
 ### Access scenarios on the User resource
 

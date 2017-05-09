@@ -3,17 +3,20 @@
 Gets a row based on its position in the collection.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows/ItemAt
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows/ItemAt
+POST /workbook/tables/{id|name}/rows/ItemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -35,7 +38,7 @@ Here is an example of the request.
   "name": "tablerowcollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/ItemAt
 Content-type: application/json
 Content-length: 20
 

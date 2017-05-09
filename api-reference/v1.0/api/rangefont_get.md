@@ -3,12 +3,15 @@
 Retrieve the properties and relationships of rangefont object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/font
-GET /workbook/worksheets(<id|name>)/range(<address>)/format/font
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/font
+GET /workbook/worksheets/{id|name}/range(<address>)/format/font
+GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -16,7 +19,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
