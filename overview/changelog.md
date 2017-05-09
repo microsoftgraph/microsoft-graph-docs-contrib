@@ -4,6 +4,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
+### Added user support for deleted items
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Added support for [restoring and permanently deleting users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory). |
+
 ### OnPremisesProvisioningError
 
 |**Change type**|**Version**|**Description**|
