@@ -23,7 +23,7 @@ You're now ready to add the Microsoft Graph service to your Visual Studio projec
 2. Choose the **Access Office 365 Services with Microsoft Graph** provider. Follow the wizard. Select the following permissions (you can change the permisssions later):
 
     - For the **File** APIs, set permissions to **Have full access to your files**.
-    - For the **Mail** APIs, set permissions to **Send mail as you**.
+     - For the **Mail** APIs, set permissions to **Send mail as you**.
     - For the **User** APIs, set permissions to **Sign you in and read your profile**.
 
 ## Call the Microsoft Graph API
@@ -50,10 +50,11 @@ The starter sample is configured to send a simple email. You can use Microsoft G
  
 
 ## Run the sample
-Build and run the sample. Next, choose the **Sign-in** link on the top right, and then choose **Send Email**.
+Build and run the sample. Next, choose the **Sign-in** link on the top right, and then choose **Get email address** followed by **Send email**.
 
 This will send an email that includes a link to your profile photo.
 
+>Note: If your stop and re-run the sample from Visual Studio, you may need to explicitly sign out for the sample to work.
 
 ## Explore the code
 
