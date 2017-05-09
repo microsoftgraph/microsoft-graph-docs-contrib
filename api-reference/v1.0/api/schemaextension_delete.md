@@ -20,7 +20,7 @@ DELETE /schemaExtensions/{id}
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer &lt;token&gt;. Required. |
-| Content-Type   | application/json | 
+ 
 
 ## Request body
 Do not supply a request body for this method.
@@ -40,7 +40,7 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
