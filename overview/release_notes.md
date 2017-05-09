@@ -67,18 +67,21 @@ Examples of group features that support only delegated permissions:
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
 
-#### Teams in Microsoft Teams (beta)
+#### Working with Microsoft Teams data (beta)
+
+##### Teams in Microsoft Teams (beta)
 
 Microsoft Teams are built upon Office 365 groups.  All group APIs can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  Future API releases will support this.
 
-#### Microsoft Teams channels (beta)
+##### Microsoft Teams channels (beta)
 
-Currently, you can read and create channels, but you cannot update or delete them.  Future API releases will support this.
+Currently, you can [read](../api-reference/beta/api/group_list_channels.md) and [create](../api-reference/beta/api/group_post_channels.md) channels, but you cannot update or delete them.  Future API releases will support this.
 
-#### Microsoft Teams chat threads and chat messages (beta)
+##### Microsoft Teams chat threads and chat messages (beta)
 
-Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them.  You also cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
+Currently, you can [create chat threads in channels](../api-reference/beta/api/channel_post_chatthreads.md), but you cannot read existing chat threads or add replies to them.  You also cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
 
+Further, when creating a chat thread, the contentType must be specified as an integer rather than a string: 0 for "text" or 1 for "html".  Future API releases will fix this.
 
 #### Adding and getting attachments of group posts
 [Adding](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) attachments to group posts, [listing](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) and 

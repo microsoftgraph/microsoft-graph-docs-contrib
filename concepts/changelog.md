@@ -4,7 +4,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
-### Add deletedDateTime property
+### Added deletedDateTime property
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
@@ -12,30 +12,108 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |Change|beta|Added deletedDateTime property to [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) entity.
 |Change|beta|Added deletedDateTime property to [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) entity.
 
-### Add domain operations to v1.0
+### Added domain operations to v1.0
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|V1.0|Added operations on [domains](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain).<br/>New entities:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>New actions:</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
 
-### Add contracts to v1.0
+### Added contracts to v1.0
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|V1.0|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
-### Add LicenseDetails to V1.0
+### Added licenseDetails to V1.0
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Addition|v1.0|New entity:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/licensedetails) |
 |Change  |v1.0|New [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails) navigation property on [users](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) |
 
+
+### Drive API
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:----------|:--------------|
+| Addition | v1.0 | Added the **baseItem** resource type, consisting of basic properties from **driveItem**.
+| Addition | v1.0 and Beta | Added the **sourceItemId** property to **thumbnail**. <br/> Added the **siteUrl** property to **sharepointIds**. <br/> Added the **sharedBy** and **sharedDateTime** properties to **shared**. <br/> Added the **shared** property to **remoteItem**. <br/> Added the **sharepointIds** property to **drive** and **itemReference**. <br/> Added **lastAccessedDateTime** to **fileSystemInfo**. <br/> Added the **driveItem** and **site** navigation properties to **sharedDriveItem**. <br/> Added the **parentReference** property to **baseItem**.
+| Change | v1.0 and Beta | Changed **driveItem** and **sharedDriveItem** to inherit from **baseItem**. <br/> Marked **identity** as an Open Type.
+| Change | Beta | Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. <br/> Added the **folderView** resource type and the **view** property to the **folder** resource type. <br/> Added the **listItem** navigation property to **driveItem**. <br/> Added the **list** navigation property to **drive**.
+
+
+### Extensions (open extensions)
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0| Support for [openTypeExtension](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/opentypeextension) in the following resources - [device](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group),[organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). |
+|Addition|v1.0 and beta|When the user is signed-in with a personal Microsoft account, support for open extensions in the following resources - event, post, group, message, contact, and user. (This is in addition to these resources, plus device, group, organization and user, supporting open extensions when the user signs in using a work or school account.)|
+|Addition|v1.0 and beta|Support for `$expand` to [get open extensions](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) in the following resources: [device](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group),[organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [post](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post), [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user).|
+|Addition|Beta|Support for `$expand` to [get open extensions](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) in [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit).|
+
+
+### Extensions (schema extensions) 
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0|New resource [schemaExtension](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/schemaextension) and CRUD methods to manage extension definitions for the following resources: [contact](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact), [device](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event), [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group), [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message), [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [post](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post), [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). Note that support for [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) is still limited to the beta version as before.|
+|Addition|v1.0|The existing POST, GET, and PATCH methods of the following resources - [contact](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact), [device](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event), [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group), [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message), [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [post](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post), [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) - now support adding, getting, and updating or deleting custom data stored as schema extensions in the corresponding resource instances.|
+|Addition|v1.0 and beta| You can now use `$filter` to look for resource instances with properties that match specific extension property values, such as extension name. See this [example](https://devx.microsoft-tst.com/en-us/graph/docs/concepts/extensibility_schema_groups#5-get-a-group-and-its-extension-data) for details. |
+|Change|v1.0 and beta| [Deleting a schema extension definition](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/schemaextension_delete) no longer affects accessing custom data that has been added based on that definition. |
+|Change|v1.0 and beta| You can now set a schema extension complex type to null, to remove a schema extension from a resource instance. |
+
+
+### Group
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:----------|:--------------|
+| Addition | v1.0 and beta | Added the **drives** and **sites** navigation properties to **group**.
+
+
+### Outlook calendar
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0 and beta|For **findMeetingTimes**, added new enum value **unrestricted** that you specify as the **activityDomain** property, part of the **timeConstraint** parameter. This lets **findMeetingTimes** look for times appropriate for the type of activity you're scheduling for. See details in the [request body](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body) section.|
+|Addition|Beta|Support getting an **event** body in plain text, as an alternative to the default HTML format. See [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get) and [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events) events for details.|
+
+### Outlook mail
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|Beta|Support getting a **message** body in plain text, as an alternative to the default HTML format. See [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/message_get) and [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages) events for details.|
+
+
+### Outlook tasks
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|New **outlook** navigation property added to [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user), to access Outlook tasks.|
+|Addition|Beta|New entities - [outlookuser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser), [outlookTaskGroup](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlooktaskgroup), [outlookTaskFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlooktaskfolder), and [outlookTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlooktask) - and their methods support organizing and accessing Outlook tasks. | 
+|Addition|Beta|Outlook tasks support attachments ([attachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/attachment), [fileAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/fileattachment), [itemAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemattachment), and [referenceAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/referenceattachment) resources). |
+|Addition|Beta|Outlook tasks support [extended properties](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/extended-properties-overview) ([singleValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/singlevaluelegacyextendedproperty) and [multiValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/multivaluelegacyextendedproperty) resources). |
+
 ### Planner APIs
 
 |**Change type**|**Version**|**Description**| 
 |:-------------|:-----------|:--------------|
 |Addition|v1.0|Added [Planner API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/planner_overview).<br />New resources:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat) | 
+
+
+### SharePoint Lists API
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:----------|:--------------|
+| Change | beta | Removed the **sharepoint** navigation properties. Sites are now accessed directly through the **sites** navigation property. <br/> Removed the **fieldDefinition** resource. It has been replaced by **columnDefinition**. <br/> Removed the **siteCollectionId** and **siteId** properties from **site**. Use **sharepointIds** instead. <br/> Removed the **listItemId** property from **listItem**. Use **sharepointIds** instead. <br/> Renamed the **columnSet** property on **listItem** to **fields**. <br/> Changed **site** resources to use the SharePoint hostname as part of their ID.
+| Addition | beta | Added the **booleanColumn**, **calculatedColumn**, **choiceColumn**, **dateTimeColumn**, **lookupColumn**, **numberColumn**, **personOrGroupColumn**, and **textColumn** resource types. <br/> Added the **displayName** property to **site**. <br/> Added the **columns** navigation property to **site**. <br/> Added the **list** and **listItem** navigation properties to **sharedDriveItem**. <br/> Added the **sharepointIds** property to **list** and **listItem**, and **site**. <br/> Added the **columnDefinition** resource type.
+
+
+### SharePoint Sites API
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:----------|:--------------|
+| Addition      | v1.0      | Releasing the Sites API in v1.0 (previously only in beta).<br/> Added the **site** and **siteCollection** resource types.
+
 
 
 ## April 2017

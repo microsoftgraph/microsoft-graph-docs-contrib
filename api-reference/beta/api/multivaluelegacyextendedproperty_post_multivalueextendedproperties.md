@@ -9,7 +9,9 @@ The following user resources are supported:
 - [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
+- [Outlook task](../resources/outlooktask.md)
+- [Outlook task folder](../resources/outlooktaskfolder.md)
 
 As well as the following group resources:
 
@@ -28,6 +30,7 @@ creating the extended property in:
 - _Mail.ReadWrite_
 - _Calendars.ReadWrite_
 - _Contacts.ReadWrite_
+- _Tasks.ReadWrite_
 - _Group.ReadWrite.All_
  
 ## HTTP request
@@ -39,6 +42,7 @@ Note that some resources support creation in more than one way. For more informa
 see the corresponding topics for creating a [message](../resources/message.md), [mailFolder](../api/user_post_mailfolders.md),
 [event](../api/user_post_events.md), [calendar](../api/user_post_calendars.md),
 [contact](../api/user_post_contacts.md), [contactFolder](../api/user_post_contactfolders.md),
+[Outlook task](../resources/outlooktask.md), [Outlook task folder](../resources/outlooktaskfolder.md),
 [group event](../api/group_post_events.md), and [group post](../resources/post.md). 
  
 The following is the syntax of the requests. 
@@ -63,6 +67,18 @@ POST /users/{id|userPrincipalName}/contacts
 
 POST /me/contactFolders
 POST /users/{id|userPrincipalName}/contactFolders
+
+POST /me/outlook/tasks
+POST /users/{id|userPrincipalName}/outlook/tasks
+POST /me/outlook/taskFolders/{id}/tasks
+POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
+POST /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
+POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
+
+POST /me/outlook/taskFolders
+POST /users/{id|userPrincipalName}/outlook/taskFolders
+POST /me/outlook/taskGroups/{id}/taskFolders
+POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 POST /groups/{id}/events
 
@@ -99,6 +115,18 @@ PATCH /users/{id|userPrincipalName}/contacts/{id}
 
 PATCH /me/contactFolders/{id}
 PATCH /users/{id|userPrincipalName}/contactFolders/{id}
+
+PATCH /me/outlook/tasks/{id}
+PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
+PATCH /me/outlook/taskFolders/{id}/tasks/{id}
+PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
+PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
+PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
+
+PATCH /me/outlook/taskFolders/{id}
+PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
+PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
+PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 PATCH /groups/{id}/events/{id}
 ```

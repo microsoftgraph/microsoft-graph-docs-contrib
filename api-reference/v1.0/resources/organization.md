@@ -45,7 +45,10 @@ This resource lets you add your own data to custom properties using [extensions]
 | verifiedDomains                      | [VerifiedDomain](verifieddomain.md) collection                    | The collection of domains associated with this tenant. Not nullable.                                                                                                                                                                                                                 |
 
 ## Relationships
-None
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization. Read-only. Nullable.|
+
 
 ## JSON representation
 
@@ -54,7 +57,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "extensions"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.organization"

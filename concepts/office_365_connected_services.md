@@ -2,17 +2,17 @@
 
 You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
 
-## Set up and get the starter project
+## Get set up
 
-1. To use the Office 365 Connected Services with Microsoft Graph, download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already.
+To use the Office 365 Connected Services with Microsoft Graph, you'll need to do the following:
 
-    >**Note:** If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
+- Download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already. If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
 
-2. You will also need an Office 365 subscription. To get a free trial, join the [Office 365 Developer program](https://dev.office.com/devprogram).
+- Get an Office 365 subscription. To get a free trial, join the [Office 365 Developer program](https://dev.office.com/devprogram).
 
-3. Clone the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice) repository on GitHub. This sample includes the references that you need to authenticate against Microsoft Graph. 
+## Get the starter project
 
-4. Open the sample in Visual Studio 2017 Preview.
+Clone the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice) repository on GitHub. This sample includes the references that you need to authenticate against Microsoft Graph. After you clone the starter project, open the sample in Visual Studio 2017 Preview.
 
 ## Add the Connected Service
 
@@ -34,30 +34,28 @@ The starter sample is configured to send a simple email. You can use Microsoft G
 
 2. Find and **Uncomment** calls to the SDK in the following methods. This shows how to call Microsoft Graph to get a profile photo, upload a file to OneDrive, and get a sharing link.
 
-    ``` C#
+    ```csharp
         GetCurrentUserPhotoStream(GraphServiceClient graphClient)
     ```
     
-    ``` C#
+    ```csharp
         UploadFileToOneDrive(GraphServiceClient graphClient, byte[] file)
     ```
 
-    ```C#
+    ```csharp
         GetSharingLink(GraphServiceClient graphClient, string Id)
     ```
  
-> Tip: Each comment starts with '//Uncomment:'
+> **Tip:** Each comment starts with '//Uncomment:'
  
 
 ## Run the sample
-Build and run the sample.  
-
-Choose the **Sign-in** link on the top right, and then choose **Send Email**.
+Build and run the sample. Next, choose the **Sign-in** link on the top right, and then choose **Send Email**.
 
 This will send an email that includes a link to your profile photo.
 
 
-## Drill in
+## Explore the code
 
 You can now use Visual Studio 2017 to connect to and configure your services. The starter sample creates the scaffolding and references for you.  
 
@@ -78,5 +76,5 @@ The starter sample includes the following files:
 
 ## Need help?
 
-If you need help, post your questions on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your post with {Microsoft Graph}.
+If you need help, post your questions on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your post with {microsoftgraph}.
 
