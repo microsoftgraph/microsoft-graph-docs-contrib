@@ -84,7 +84,7 @@ content-length: 169
 Here, instead of the entire property sets on the `user` entity, only the `aboutMe`, `displayName`, and `skills` basic properties are returned.
 
 ## Read specific properties of the resources in a collection
-In addition to reading specific properties of a single resource, you can also apply the similar [$select](#) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each.
+In addition to reading specific properties of a single resource, you can also apply the similar [$select](query_parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each.
 For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request.
 
 ```no-highlight 
