@@ -12,7 +12,7 @@ To use the Office 365 Connected Services with Microsoft Graph, you'll need to do
 
 ## Get the starter project
 
-Clone the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice) repository on GitHub. This sample includes the references that you need to authenticate against Microsoft Graph. After you clone the starter project, open the sample in Visual Studio 2017 Preview.
+**Download** the [Microsoft Graph ASP.NET Connected Services Sample](https://github.com/microsoftgraph/aspnet-connect-sample/archive/Office365connectedservice.zip). This sample includes the references that you need to authenticate against Microsoft Graph. After you download the starter project, unzip, and open the sample in Visual Studio 2017 Preview.
 
 ## Add the Connected Service
 
