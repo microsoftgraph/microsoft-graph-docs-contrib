@@ -1,6 +1,6 @@
 ﻿# Featured scenarios for Microsoft Graph
 
-Check out some common and features scenarios for working with the Microsoft Graph API. Try out some of the popular requests listed in the following table. The links take you to our [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+Check out some common and featured scenarios for working with the Microsoft Graph API. Explore the topics in this section, and try out some of the popular requests listed in the following table. The links take you to our [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 
 ## Popular requests
@@ -24,4 +24,4 @@ Check out some common and features scenarios for working with the Microsoft Grap
 
 ## Next steps
 
-Check out the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), and try our [Quick Start](https://developer.microsoft.com/en-us/graph/quick-start) to get up and running fast. Learn more about how to [use the API](use_the_api.md) to build your first app.
+Try out some more calls in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), and use our [Quick Start](https://developer.microsoft.com/en-us/graph/quick-start) to get up and running fast. Learn more about how to [use the API](use_the_api.md) to build your first app.
