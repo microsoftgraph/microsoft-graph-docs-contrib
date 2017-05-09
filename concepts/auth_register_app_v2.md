@@ -1,12 +1,12 @@
 ﻿# Register your app with the Azure AD v2.0 endpoint
 
-Your app must be registered with Azure AD. Registering your app establishes a unique application ID and other values that your app uses to authenticate with Azure AD and get tokens. 
+Your app must be registered with Azure AD. Registering your app establishes a unique application ID and other values that your app uses to authenticate with Azure AD and get tokens. For the Azure AD v2.0 endpoint, you register your app with the [Microsoft App Registration Portal](https://apps.dev.microsoft.com). You can use either a Microsoft account or a work or school account to register your app. Depending on the type of app you are developing, you will need to copy one or more properties during registration to use when you configure authentication and authorization for your app. 
+
 
 > **Note:** This article primarily covers registering apps with the Azure AD v2.0 endpoint. For information about registering your app with the Azure AD endpoint, see [Azure AD endpoint considerations](#azure-ad-endpoint-considerations) below.
 > 
 > Also, be aware that if you've previously registered apps in the Microsoft Azure Management portal, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure Management portal. 
 
-For the Azure AD v2.0 endpoint, you register your app with the [Microsoft App Registration Portal](https://apps.dev.microsoft.com). You can use either a Microsoft account or a work or school account to register your app. Depending on the type of app you are developing, you will need to copy one or more properties during registration to use when you configure authentication and authorization for your app. 
 
 The following screenshot shows an example Web app registration that has been configured with a password and Implicit Flow. 
 ![Web app registration with password and Implicit Grant.](./images/v2-web-registration.png)
