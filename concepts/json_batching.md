@@ -103,37 +103,9 @@ The status code on a batch response is typically `200` or `400`. If the batch re
 
 In addition to the `responses` property, there may be a `nextLink` property in the batch response. This allows Microsoft Graph to return a batch response as soon as any of the individual requests has completed. To ensure that all individual responses have been received, continue to follow the `nextLink` as long as it exists.
 
-## Grouping requests with `atomicityGroup`
-
-> Note: Microsoft Graph does not support transactions in JSON batch at this point. // TODO: Link to known issues.
-
-The `atomicityGroup` property allows individual requests to be grouped in a transaction. To create an atomicity group, supply the same value for all individual requests in the group. Grouped requests must be adjacent in the JSON batch. When grouped, requests are executed as part of a transaction, and must all succeed for the transaction to succeed. For instance, the following request removes a member from one group and adds them to another in the same transaction.
-
-```json
-{
-  "requests": [
-    {
-      "id": "1",
-      "atomicityGroup": "a",
-      "method": "POST",
-      "url": "/groups/{groupId}/members/$ref",
-      "body": {
-        "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{userId}"
-      }
-    },
-    {
-      "id": "2",
-      "atomicityGroup": "a",
-      "method": "DELETE",
-      "url": "/groups/{groupId}/members/{userId}/$ref"
-    }
-  ]
-}
-```
-
 ## Sequencing requests with `dependsOn`
 
-Individual requests can be executed in a specified order by using the `dependsOn` property. This property is an array of strings that refers to either an `id` or an `atomicityGroup`. For this reason, the values for `id` must be unique and must not conflict with any `atomicityGroup`. For instance, in the following request, the client is specifying that requests 1 and 3 should be run first, then request 2 and atomicity group a, then request 7.
+Individual requests can be executed in a specified order by using the `dependsOn` property. This property is an array of strings that reference the `id` of a different individual request. For this reason, the values for `id` must be unique. For instance, in the following request, the client is specifying that requests 1 and 3 should be run first, then request 2, then request 4.
 
 ```json
 {
@@ -156,21 +128,7 @@ Individual requests can be executed in a specified order by using the `dependsOn
     },
     {
       "id": "4",
-      "atomicityGroup": "a",
-      "dependsOn": [ "1", "3" ],
-      "method": "GET",
-      "url": "..."
-    },
-    {
-      "id": "5",
-      "atomicityGroup": "a",
-      "dependsOn": [ "3" ],
-      "method": "GET",
-      "url": "..."
-    },
-    {
-      "id": "6",
-      "dependsOn": [ "2", "a" ],
+      "dependsOn": [ "2" ],
       "method": "GET",
       "url": "..."
     }
@@ -186,8 +144,11 @@ An additional use case for JSON batching is to bypass URL length limitations. In
 
 ## Additional details
 
-For further detail on the JSON batch request/response format, see // TODO: Link to public JSON batch spec.
+For further detail on the JSON batch request/response format, see the [OData JSON Format Version 4.01 specification][odata-4.01-json]], section 18. Note that this specification is currently in a draft version, but is unexpected to change.
 
 ## Known issues
 
-// TODO
+See [known issues][batching-known-issues] for a list of current limitations on batching.
+
+[batching-known-issues]: https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#json-batching
+[odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
