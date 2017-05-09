@@ -1,4 +1,4 @@
-﻿# Get access without a signed-in user
+﻿# Get access without a user
 Service and daemon apps run on a server without the presence of a signed-in user. An example of such an app might be an email archival service that wakes up and runs overnight. Service apps typically use the OAuth 2.0 Client Credentials Grant flow to get an access token from Azure AD. In this topic, we will walk through the basic steps to configure a service app and use the OAuth Client Credentials Grant flow to get an access token from Azure AD to call Microsoft Graph. 
 
 ## Authentication and Authorization steps
