@@ -4,6 +4,26 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
+### Add delta query to V1.0
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0| Add delta function support to V1.0. Add to the following entities to perform [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Get incremental changes to users](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
+|Change|Beta| Add additional optional query filtering capability (by id) to [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_delta). |
+
+### Added user support for deleted items
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Added support for [restoring and permanently deleting users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory). |
+
+### OnPremisesProvisioningError
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|beta|New entity: [OnPremisesProvisioningError](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/onpremisesprovisioningerror) |
+|Change  |beta|Added OnPremisesProvisioningError property to [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user), [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group), and [orgcontact](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) |
+
 ### Added deletedDateTime property
 
 |**Change type**|**Version**|**Description**|
@@ -128,7 +148,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Change|Beta| The [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) and [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) APIs will be updated in preview (beta). The first set of changes will be applied on May 8, 2017. The changes include property renaming and restructuring. Some properties (such as appRoles and addIns) will not be available until the changes are completed. The changes will be released in preview (beta) prior to releasing to v1.0. |
+|Change|Beta| The [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) and [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) APIs will be updated in preview (beta). The first set of changes will be applied on May 15, 2017. The changes include property renaming and restructuring. Some properties (such as appRoles and addIns) will not be available until the changes are completed. The changes will be released in preview (beta) prior to releasing to v1.0. |
 
 ### Added preview support for Cloud Solution Provider developers
 
@@ -422,7 +442,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-|Addition|Beta|A new delta function add to the following entities to perform [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_message)<br/>[Get incremental changes to users (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
+|Addition|Beta|A new delta function add to the following entities to perform [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Get incremental changes to users (preview)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 
 ### Excel APIs
 
