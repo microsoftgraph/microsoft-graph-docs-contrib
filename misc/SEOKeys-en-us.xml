@@ -1144,11 +1144,11 @@
 			<Item text="Create task folder in group" url="/en-us/api-reference/beta/api/outlooktaskfolder_post_tasks" />
 		</Item>
 		<Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" >
-			<Item text="Single-value extended properties" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty" >
+			<Item text="Single-value extended properties" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" >
 				<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" />
 				<Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" />
 			</Item>
-			<Item text="Multivalue extended properties" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty" >
+			<Item text="Multivalue extended properties" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" >
 				<Item text="Create multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" />
 				<Item text="Get multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" />
 			</Item>
