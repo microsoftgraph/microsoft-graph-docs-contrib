@@ -717,18 +717,20 @@
       <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
         <Item text="Trending" url="/en-us/api-reference/beta/resources/insights_trending" >
           <Item text="List trending" url="/en-us/api-reference/beta/api/insights_list_trending" />
-        <Item text="Used" url="/en-us/api-reference/beta/resources/insights_used" >
+        </Item>
+		<Item text="Used" url="/en-us/api-reference/beta/resources/insights_used" >
 			<Item text="List used" url="/en-us/api-reference/beta/api/insights_list_used" />
 		<Item text="Shared" url="/en-us/api-reference/beta/resources/insights_shared" >
 			<Item text="List shared" url="/en-us/api-reference/beta/api/insights_list_shared" />
 		</Item>
       </Item>
-      <Item text="Person" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
+      </Item>
+	  <Item text="Person" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
         <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
         <Item text="Get person" url="/en-us/api-reference/beta/api/person_get" SEOKeyword="Get person, Microsoft Graph API, person API" SEODescription="Retrieve the properties and relationships of person object." />
       </Item>
       <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />
-    </Item>
+	</Item>
     <Item text="Planner" url="/en-us/api-reference/beta/resources/planner_overview" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
       <Item text="Plan" url="/en-us/api-reference/beta/resources/plannerplan" >
 		  <Item text="Create plan" url="/en-us/api-reference/beta/api/planner_post_plans" />
@@ -1112,7 +1114,47 @@
         </Item>
       </Item>
     </Item>
-    <Item text="Personal contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Outlook tasks" url="/en-us/api-reference/beta/resources/outlooktask" >
+		<Item text="Outlook task" url="/en-us/api-reference/beta/resources/outlooktask" >
+			<Item text="List" url="/en-us/api-reference/beta/api/outlookuser_list_tasks" />
+			<Item text="Create" url="/en-us/api-reference/beta/api/outlookuser_post_tasks" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/outlooktask_get" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/outlooktask_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/outlooktask_delete" />
+			<Item text="Complete" url="/en-us/api-reference/beta/api/outlooktask_complete" />
+			<Item text="List attachments" url="/en-us/api-reference/beta/api/outlooktask_list_attachments" />
+			<Item text="Add attachment" url="/en-us/api-reference/beta/api/outlooktask_post_attachments" />
+		</Item>
+		<Item text="Outlook task folder" url="/en-us/api-reference/beta/resources/outlooktaskfolder" >
+			<Item text="List" url="/en-us/api-reference/beta/api/outlookuser_list_taskfolders" />
+			<Item text="Create" url="/en-us/api-reference/beta/api/outlookuser_post_taskfolders" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/outlooktaskfolder_get" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/outlooktaskfolder_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/outlooktaskfolder_delete" />
+			<Item text="List tasks in folder" url="/en-us/api-reference/beta/api/outlooktaskfolder_list_tasks" />
+			<Item text="Create tasks in folder" url="/en-us/api-reference/beta/api/outlooktaskfolder_post_tasks" />
+		</Item>
+		<Item text="Outlook task group" url="/en-us/api-reference/beta/resources/outlooktaskgroup" >
+			<Item text="List" url="/en-us/api-reference/beta/api/outlookuser_list_taskgroups" />
+			<Item text="Create" url="/en-us/api-reference/beta/api/outlookuser_post_taskgroups" />
+			<Item text="Get" url="/en-us/api-reference/beta/api/outlooktaskgroup_get" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/outlooktaskgroup_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/outlooktaskfolder_delete" />
+			<Item text="List task folders in group" url="/en-us/api-reference/beta/api/outlooktaskfolder_list_tasks" />
+			<Item text="Create task folder in group" url="/en-us/api-reference/beta/api/outlooktaskfolder_post_tasks" />
+		</Item>
+		<Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" >
+			<Item text="Single-value extended properties" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty" >
+				<Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" />
+				<Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" />
+			</Item>
+			<Item text="Multivalue extended properties" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty" >
+				<Item text="Create multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" />
+				<Item text="Get multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" />
+			</Item>
+		</Item>
+	</Item>
+	<Item text="Personal contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
       <Item text="Contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
         <Item text="List contacts" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
         <Item text="Create contact" url="/en-us/api-reference/beta/api/user_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Contact." />
