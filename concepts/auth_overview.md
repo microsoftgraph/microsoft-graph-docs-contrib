@@ -1,8 +1,8 @@
-﻿# Get access tokens from Azure Active Directory to call Microsoft Graph
+﻿# Get access tokens to call Microsoft Graph
 
-To call Microsoft Graph, your app must acquire an access token from Azure Active Directory (Azure AD), Microsoft's cloud identity service. Microsoft Graph requires an access token issued by Azure AD to grant your app access to Office 365 and directory resources. The access token contains information (or claims) about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To acquire an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the resources it needs in Microsoft Graph. 
+To call Microsoft Graph, your app must acquire an access token from Azure Active Directory (Azure AD), Microsoft's cloud identity service. The access token contains information (or claims) about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To acquire an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the resources it needs in Microsoft Graph. 
 
-This topic provides a brief introductory overview of access tokens, Azure AD, and how your app can get access tokens. If you are already familiar with integrating an app with Azure AD to get tokens, then you can skip ahead to [Next Steps](#next-steps) for information and samples specific to Microsoft Graph. 
+This topic provides an overview of access tokens, Azure AD, and how your app can get access tokens. If you are already familiar with integrating an app with Azure AD to get tokens, then you can skip ahead to [Next Steps](#next-steps) for information and samples specific to Microsoft Graph. 
 
 ## What is an access token and how do I use it?
 
@@ -60,24 +60,14 @@ OAuth 2.0 is an authorization protocol. It defines how your app can get access t
 
 OpenID Connect extends OAuth 2.0 to provide an identity layer. With OpenID Connect, in addition to an access token, your app can also get an id token from Azure AD. OpenID Connect id tokens contain claims about the user's identity and details about how and where they were authenticated. OpenID Connect flows are typically used by Web apps, including single page apps (SPAs). These apps can use the id token to customize their behavior for the user they've requested an access token for, and, in many cases, will integrate with Azure AD to outsource sign-in of their users to Azure AD and to enable experiences like Single Sign-on (SSO).
 
-## What kind of tokens can I get from Azure AD?
-Basically there are three kinds of token and another artifact called an authorization code that you need to be aware of. All tokens returned from Azure AD are base-64 encoded and signed. 
-
-- **access token**: You always need an access token to call Microsoft Graph. This token is opaque to your app and is returned by both OpenID Connect and OAuth 2.0 flows.
-- **authorization code**: Returned by some OAuth 2.0 and Open ID Connect flows. This is an opaque code returned to your app by Azure AD after a user has consented to the permissions your app needs. The code can be redeemed at the `/token` endpoint for an access token, and, depending on the original authorization request that returned the code, a refresh token and/or an id token.
-- **id token**: A token, typically a JWT, that is returned by Open ID Connect flows. Your app (or the authentication library it is using) can read this token. It contains claims about the user's identity and details about their authentication with Azure AD.
-- **refresh token**: An opaque token returned by Azure AD in some OAuth 2.0 and Open ID Connect flows. Your app can send the refresh token directly to the `/token` endpoint to get a new access token without having to prompt the user for consent again. 
-
 ## What kind of apps can I call Microsoft Graph from?
-The following table describes the kinds of apps that you can call Microsoft Graph from. In the last column, _v1_ refers to the Azure AD endpoint and _v2_ refers to the Azure AD v2.0 endpoint. 
+You can call Microsoft Graph from the following kinds of apps: 
 
-| App Type | Description | Typical Authentication Flow | Endpoint Support |
-| --- | --- | --- | --- |
-| Native/Mobile app | Apps that run on a device such as a desktop, tablet, or mobile phone. These apps use the operating system (OS) native to the device like iOS, Android, or Windows for user presentation and to make calls to Microsoft Graph on behalf of a user.  | OAuth 2.0 Authorization Code Grant | v1/v2 |
-| Web App | Apps that run on a server and interact with the signed-in user through a user-agent, usually a Web browser. Most of the presentation layer is handled on the server. Calls to Microsoft Graph are made from the server-side on behalf of a user. | Open ID Connect Hybrid Flow <br/></br> OAuth 2.0/Open ID Connect Authorization Code Grant | v1/v2 |
-| Single Page App (SPA) | Web apps with rich user experiences that handle much of the presentation layer through client-side scripting in the browser. Calls to Microsoft Graph are made from client-side script using technologies like AJAX and frameworks like Angular.js on behalf of a user. | OAuth 2.0/Open ID Connect Implicit Grant | v1/v2 |
-| Service/Daemon | Service apps that run on a server without the presence of a user. They make calls to Microsoft Graph under their own identity. | OAuth 2.0 Client Credentials Grant | v1/v2 |
-| Web API | Stand-alone or back end Web API that calls Microsoft Graph on behalf of a user. | OAuth 2.0 on-behalf-of | v1 only |
+- Native/Mobile apps: Apps that run on a device such as a desktop, tablet, or mobile phone. These apps use the operating system (OS) native to the device like iOS, Android, or Windows for user presentation and to make calls to Microsoft Graph on behalf of a user.
+- Web Apps: Apps that run on a server and interact with the signed-in user through a user-agent, usually a Web browser. Most of the presentation layer is handled on the server. Calls to Microsoft Graph are made from the server-side on behalf of a user.
+- Single Page Apps (SPA): Web apps with rich user experiences that handle much of the presentation layer through client-side scripting in the browser. Calls to Microsoft Graph are made from client-side script using technologies like AJAX and frameworks like Angular.js. Calls are made on behalf of a user.
+- Services/Daemons: Background services and daemons that run on a server without the presence of a user and make calls to Microsoft Graph under their own identity.
+- Web APIs: Standalone or back-end Web APIs that call Microsoft Graph on behalf of a user. This scenario is not supported by tokens acquired from the Azure AD v2.0 endpoint.
 
 ## How do I get my app talking to Azure AD and Microsoft Graph?
 Before your app can get a token from Azure AD, it must be registered. For the Azure AD v2.0 endpoint, you use the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/). For the Azure AD endpoint, you use the [Azure portal](https://azure.portal.com/). Registration integrates your app with Azure AD and establishes the coordinates and identifiers that it uses to get tokens. These are:
@@ -130,7 +120,7 @@ Azure AD exposes two sets of endpoints, Azure AD and Azure AD v2.0, where you ca
 The main difference between Azure AD and Azure AD v2.0 is that:
 
 * Azure AD supports only work or school accounts; that is, accounts that are associated with an Azure AD tenant. This means that your app can target only organizations.
-* Azure AD v2.0 supports both work and school accounts and Microsoft accounts (_live.com_ or _outlook.com_ accounts). This means that your app can target both consumers and organizations using the v2.0 endpoint. 
+* Azure AD v2.0 supports both work and school accounts and Microsoft accounts like _live.com_ or _outlook.com_ accounts. This means that your app can target both consumers and organizations using the v2.0 endpoint. 
 
 There are some additional advantages with Azure AD v2.0. For example:
 
@@ -152,16 +142,15 @@ For more information about differences between the Azure AD v2.0 endpoint and th
 
 ## Next steps
 
-### Get Started
 Once you've registered your app, you're ready to get started!
 
-- To learn more about getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
-- To learn more about getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_user.md).
+- For quick steps on getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
+- For quick steps on getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_user.md).
+- To see the permissions that you can use with Microsoft Graph, see [Permissions](permissions_reference.md).
 - If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth_cloudsolutionprovider.md).
-- If you're ready to jump into code, check out the documentation and samples listed below.
 
 
-You can use the following resources to help you implement authentication and authorization with Azure AD in your app. You can explore the appropriate samples and walk-throughs based on the type of app you're building and the platforms that you're developing for. 
+If you're ready to jump into code, you can use the following resources to help you implement authentication and authorization with Azure AD in your app.
 
 ### Microsoft Graph Connect samples 
 
