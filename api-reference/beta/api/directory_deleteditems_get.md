@@ -6,8 +6,8 @@ Currently, deleted items functionality is only supported for the [group](../reso
 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
-* For users: *User.Read.All; Directory.Read.All*
-* For groups: *Group.Read.All; Directory.Read.All*
+* For users: *User.Read.All; User.ReadWrite.All; Directory.Read.All*
+* For groups: *Group.Read.All; Group.ReadWrite.All; Directory.Read.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
