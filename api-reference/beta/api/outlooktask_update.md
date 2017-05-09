@@ -32,22 +32,22 @@ maintain their previous values or be recalculated based on changes to other prop
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedTo|String|The name of the person who has been assigned the task.|
-|body|[itemBody](itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
+|body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
 |categories|String collection|The categories associated with the task.|
 |changeKey|String|The version of the task.|
-|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone that the task was finished.|
+|completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
+|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
 |hasAttachments|Boolean|Set to true if the task has attachments.|
 |importance|string|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |owner|String|The name of the person who created the task.|
 |parentFolderId|String|The unique identifier for the task's parent folder.|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the task.|
-|reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time for a reminder alert of the task to occur.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
+|reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the task to occur.|
 |sensitivity|string|Indicates the level of privacy for the task. Possible values are: `normal`, `personal`, `private`, `confidential`.|
-|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone when the task is to begin.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone when the task is to begin.|
 |status|string|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |subject|String|A brief description or title of the task.|
 
