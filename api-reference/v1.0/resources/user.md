@@ -111,6 +111,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |drives|[drive](drive.md) collection. | A collection of drives available for this user. Read-only. |
 |events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Read-only. Nullable.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
 |mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
@@ -141,6 +142,7 @@ Here is a JSON representation of the resource
     "directReports",
     "drive",
     "events",
+    "extensions",
     "joinedGroups",
     "mailFolders",
     "manager",
