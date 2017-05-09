@@ -47,6 +47,7 @@ This resource lets you add your own data to custom properties using [extensions]
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable.|
 |registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
 
@@ -59,6 +60,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "extensions",
     "registeredOwners",
     "registeredUsers"
   ],

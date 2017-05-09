@@ -3,17 +3,20 @@
 Returns the range object associated with the entire row.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows(<index>)/Range
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)/Range
+POST /workbook/tables/{id|name}/rows(<index>)/Range
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/Range
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -30,7 +33,7 @@ Here is an example of the request.
   "name": "tablerow_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)/Range
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/Range
 ```
 
 ##### Response
