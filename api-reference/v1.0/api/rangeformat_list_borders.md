@@ -10,8 +10,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/borders
-GET /workbook/worksheets(<id|name>)/range(<address>)/format/borders
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders
+GET /workbook/worksheets/{id|name}/range(<address>)/format/borders
+GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.

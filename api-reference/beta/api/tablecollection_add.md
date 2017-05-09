@@ -10,7 +10,7 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/add
-POST /workbook/worksheets(<id|name>)/tables/add
+POST /workbook/worksheets/{id|name}/tables/add
 
 ```
 ## Request headers

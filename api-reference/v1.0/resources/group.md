@@ -82,6 +82,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.|
 |drive|[drive](drive.md)|The group's drive. Read-only.|
 |events|[event](event.md) collection|The group's calendar events.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the group. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups) Nullable.|
 |onenote|[OneNote](onenote.md)| Read-only.|
@@ -107,6 +108,7 @@ Here is a JSON representation of the resource
     "createdOnBehalfOf",
     "drive",
     "events",
+    "extensions",
     "memberOf",
     "members",
     "onenote",

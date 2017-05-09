@@ -10,6 +10,13 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |:-------------|:-----------|:--------------|
 |Addition|Beta|Added support for [restoring and permanently deleting users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory). |
 
+### OnPremisesProvisioningError
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|beta|New entity: [OnPremisesProvisioningError](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/OnPremisesProvisioningError) |
+|Change  |beta|Added OnPremisesProvisioningError property to [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user), [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group), and [orgcontact](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) |
+
 ### Add deletedDateTime property
 
 |**Change type**|**Version**|**Description**|

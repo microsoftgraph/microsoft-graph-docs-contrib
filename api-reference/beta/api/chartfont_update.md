@@ -9,9 +9,9 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/format/font
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/font
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 ```
 ## Optional request headers
 | Name       | Description|
@@ -41,7 +41,7 @@ Here is an example of the request.
   "name": "update_chartfont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/format/font
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
 Content-type: application/json
 Content-length: 134
 

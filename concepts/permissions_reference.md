@@ -1,15 +1,13 @@
 # Microsoft Graph permissions reference 
+Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed or during sign-up. 
 
-[Overview](#overview)
+Microsoft Graph exposes permissions over the following resources:
 
 [Calendars permissions](#calendars-permissions) | [Contacts permissions](#contacts-permissions) | [Device permissions](#device-permissions) | [Microsoft Intune Device Management permissions](#microsoft-intune-device-management-permissions) | [Directory permissions](#directory-permissions) |  [Files permissions](#files-permissions) | [Group permissions](#group-permissions) | [Identity Risk Event permissions](#identity-risk-event-permissions) |  [Mail permissions](#mail-permissions) |  [Member permissions](#member-permissions) |  [Notes permissions](#notes-permissions) | [OpenID permissions](#openid-permissions) | [People permissions](#people-permissions) | [Reports permissions](#reports-permissions) |  [Sites permissions](#sites-permissions) | [Tasks permissions](#tasks-permissions) | [User permissions](#user-permissions)
 
-[Permission scenarios](#permission-scenarios)
-
----
+For some common app scenarios involving permissions for user and group resources, see [Permission scenarios](#permission-scenarios).
 
 ## Overview
-Microsoft Graph exposes granular permissions that control the access that apps have to resources like users, groups, and mail and to the APIs that operate on them like sending mail on behalf of a user or reading and writing a user's profile. As a developer, you decide which permissions for Microsoft Graph your app requests. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed or during sign-up. 
 
 ### Delegated permissions, Application permissions, and effective permissions
 Microsoft Graph has two types of permissions: **Delegated permissions** and **Application permissions**. 
@@ -20,7 +18,7 @@ Microsoft Graph has two types of permissions: **Delegated permissions** and **Ap
 
 _Effective permissions_ are the permissions that your app will have when making requests to Microsoft Graph. It is important to understand the difference between the Delegated and Application permissions that your app is granted and its effective permissions when making calls to Microsoft Graph.
 
-- For Delegated permissions, the _effective permissions_ of your app will be the least privileged intersection of the Delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
+- For Delegated permissions, the _effective permissions_ of your app will be the least privileged intersection of the Delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
    
   For example, assume your app has been granted the _User.ReadWrite.All_ Delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user is not in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization because the user that it has permission to act on behalf of does not have those privileges.
 - For Application permissions, the _effective permissions_ of your app will be the full level of privileges implied by the permission. For example, an app that has the _User.ReadWrite.All_ Application permission can update the profile of every user in the organization. 
