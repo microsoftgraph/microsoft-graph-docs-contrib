@@ -3,9 +3,9 @@
 Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
-
-
+This resource supports:
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 ## Methods
 
@@ -43,6 +43,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for only Office 365 groups.|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
+|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
