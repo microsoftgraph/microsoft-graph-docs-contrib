@@ -43,6 +43,9 @@ or access the ICS URL in the calendar resource.
 #### Using delta query
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+#### Webhooks
+User webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
+
 ## Groups
 
 ## Groups and (beta) Microsoft Teams
@@ -98,6 +101,9 @@ in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
 #### Using delta query
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+#### Webhooks
+Group webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
 
 ## Contacts
 
@@ -204,6 +210,5 @@ Additionally there are the following `/beta` limitations:
 1.	OData context is sometimes returned incorrectly when tracking changes to relationships.
 2.	Schema extensions (legacy) are not returned with $Select statement, but are returned without $Select.
 3.	Clients cannot track changes to open extensions or registered schema extensions.
-
 
   >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
