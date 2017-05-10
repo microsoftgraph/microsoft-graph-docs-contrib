@@ -193,8 +193,8 @@ Additionally there are the following `/beta` limitations:
 
 ## Delta query
 
-1.	OData context is sometimes returned incorrectly when tracking changes to relationships.
-2.	Schema extensions (legacy) are not returned with $Select statement, but are returned without $Select.
-3.	Clients cannot track changes to open extensions or registered schema extensions.
+* OData context is sometimes returned incorrectly when tracking changes to relationships.
+* Schema extensions (legacy) are not returned with $Select statement, but are returned without $Select.
+* Clients cannot track changes to open extensions or registered schema extensions.
 
   >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
