@@ -1,6 +1,6 @@
 # Combine multiple requests in one HTTP call using JSON batching (preview)
 
-JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client may want to compose a view of unrelated data such as:
+JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
 
 1. An image stored in OneDrive
 2. A list of Planner tasks
@@ -8,9 +8,9 @@ JSON batching allows you to optimize your application by combining multiple requ
 
 Combining these three individual requests into a single batch request can save the application significant network latency.
 
-## Our first JSON batch request
+## First JSON batch request
 
-Let's look at how we would construct the JSON batch request for the previous example. In this scenario, the individual requests are not interdependent in any way and so can be placed into the batch request in any order.
+First you construct the JSON batch request for the previous example. In this scenario, the individual requests are not interdependent in any way and therefore can be placed into the batch request in any order.
 
 ```http
 POST https://graph.microsoft.com/beta/$batch
@@ -40,7 +40,7 @@ Content-Type: application/json
 }
 ```
 
-Responses to the batched requests may appear in a different order. The `id` property can be used to correlate individual requests and responses.
+Responses to the batched requests might appear in a different order. The `id` property can be used to correlate individual requests and responses.
 
 ```http
 200 OK
@@ -87,25 +87,25 @@ A JSON batch request body consists of a single JSON object with one required pro
 
 The `id` property functions primarily as a correlation value to associate individual responses with requests. This allows the server to process requests in the batch in the most efficient order.
 
-The `method` and `url` properties are exactly what you would see at the start of any given HTTP request: the method is the HTTP method, and the URL is the resource URL the individual request would typically be sent to.
+The `method` and `url` properties are exactly what you would see at the start of any given HTTP request. The method is the HTTP method, and the URL is the resource URL the individual request would typically be sent to.
 
-Individual requests can optionally also contain a `headers` property and a `body` property. Both of these properties are typically JSON objects, as shown in the previous example. In some cases, the `body` may be a base64 URL-encoded value rather than a JSON object, for example, when the body is an image. In these cases, the `headers` object must contain a value for `content-type`.
+Individual requests can optionally also contain a `headers` property and a `body` property. Both of these properties are typically JSON objects, as shown in the previous example. In some cases, the `body` might be a base64 URL-encoded value rather than a JSON object - for example, when the body is an image. In these cases, the `headers` object must contain a value for `content-type`.
 
 ## Response format
 
-The response format for JSON batch requests is similar to the request format. The key differences are as follows.
+The response format for JSON batch requests is similar to the request format. The following are the key differences:
 
 * The property in the main JSON object is named `responses` as opposed to `requests`.
-* Individual responses may appear in a different order than the requests.
+* Individual responses might appear in a different order than the requests.
 * Rather than `method` and `url`, individual responses have a `status` property. The value of `status` is a number that represents the HTTP status code.
 
 The status code on a batch response is typically `200` or `400`. If the batch request itself is malformed, the status code is `400`. If the batch request is parseable, the status code is `200`. A `200` status code on the batch response does not indicate that the individual requests inside the batch succeeded. This is why each individual response in the `responses` property has a status code.
 
-In addition to the `responses` property, there may be a `nextLink` property in the batch response. This allows Microsoft Graph to return a batch response as soon as any of the individual requests has completed. To ensure that all individual responses have been received, continue to follow the `nextLink` as long as it exists.
+In addition to the `responses` property, there might be a `nextLink` property in the batch response. This allows Microsoft Graph to return a batch response as soon as any of the individual requests has completed. To ensure that all individual responses have been received, continue to follow the `nextLink` as long as it exists.
 
-## Sequencing requests with `dependsOn`
+## Sequencing requests with the dependsOn property
 
-Individual requests can be executed in a specified order by using the `dependsOn` property. This property is an array of strings that reference the `id` of a different individual request. For this reason, the values for `id` must be unique. For instance, in the following request, the client is specifying that requests 1 and 3 should be run first, then request 2, then request 4.
+Individual requests can be executed in a specified order by using the `dependsOn` property. This property is an array of strings that reference the `id` of a different individual request. For this reason, the values for `id` must be unique. For example, in the following request, the client is specifying that requests 1 and 3 should be run first, then request 2, then request 4.
 
 ```json
 {
@@ -140,15 +140,17 @@ If an individual request fails, any request that depends on that request fails w
 
 ## Bypassing URL length limitations with batching
 
-An additional use case for JSON batching is to bypass URL length limitations. In cases where the filter clause is complex, URL length may surpass limitations built into browsers or other HTTP clients. JSON batch can be used as a workaround for executing these sorts of requests because the lengthy URL simply becomes part of the request payload.
-
-## Additional details
-
-For further detail on the JSON batch request/response format, see the [OData JSON Format Version 4.01 specification][odata-4.01-json]], section 18. Note that this specification is currently in a draft version, but is unexpected to change.
+An additional use case for JSON batching is to bypass URL length limitations. In cases where the filter clause is complex, the URL length might surpass limitations built into browsers or other HTTP clients. You can use JSON batching as a workaround for running these requests because the lengthy URL simply becomes part of the request payload.
 
 ## Known issues
 
-See [known issues][batching-known-issues] for a list of current limitations on batching.
+For a list of current limitations related to batching, see [known issues][batching-known-issues].
 
-[batching-known-issues]: https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#json-batching
+[batching-known-issues]: https://developer.microsoft.com/en-us/graph/docs/concepts/known_issues#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
+
+
+## See also
+
+For more information about the JSON batch request/response format, see the [OData JSON Format Version 4.01 specification][odata-4.01-json], section 18. Note that this specification is currently in a draft version, but is not expected to change.
+
