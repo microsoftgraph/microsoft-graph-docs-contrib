@@ -34,6 +34,9 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+#### Webhooks
+User webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
+
 ## Groups and (beta) Microsoft Teams
 
 ### Policy
@@ -87,6 +90,9 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+#### Webhooks
+Group webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
 
 ## Contacts
 
@@ -165,7 +171,9 @@ does not become part of the body of the resultant message draft.
 
 ## Delta query
 
-Tracking changes to relationships on users and groups is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* and has selected the *members* relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered soon.
+* OData context is sometimes returned incorrectly when tracking changes to relationships.
+* Schema extensions (legacy) are not returned with $Select statement, but are returned without $Select.
+* Clients cannot track changes to open extensions or registered schema extensions.
 
 ## Extensions
 
