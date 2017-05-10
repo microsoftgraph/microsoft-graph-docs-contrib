@@ -37,7 +37,9 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 ### Webhooks
 User webhooks work with only [application permissions](../concepts/permissions_reference.md). 
 
-## Groups and (beta) Microsoft Teams
+## Groups and Microsoft Teams
+
+>**Note** Microsoft Teams is now in preview status available in only the Microsoft Graph beta endpoint.
 
 ### Policy
 
