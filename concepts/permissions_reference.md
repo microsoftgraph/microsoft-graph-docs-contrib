@@ -601,7 +601,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 None.
 
 ### Remarks
-_Tasks_ permissions are used to control access for Outlook tasks. Access for Microsoft Planner tasks is controlled by [_Group_ permissions](group-permissions).
+_Tasks_ permissions are used to control access for Outlook tasks. Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
 
 ---
 
