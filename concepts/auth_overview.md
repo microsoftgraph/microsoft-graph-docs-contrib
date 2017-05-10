@@ -68,10 +68,7 @@ You can call Microsoft Graph from the following kinds of apps:
 - **Web Apps**: Apps that run on a server and interact with the signed-in user through a user-agent, usually a Web browser. Most of the presentation layer is handled on the server, and calls to Microsoft Graph are made from the server-side on behalf of a user.
 - **Single Page Apps (SPA)**: Web apps with rich user experiences that handle much of the presentation layer through client-side scripting in the browser. Calls to Microsoft Graph are made from client-side script using technologies like AJAX and frameworks like Angular.js. Calls are made on behalf of a user.
 - **Background Services/Daemons**: Background services and daemons that run on a server without the presence of a user and make calls to Microsoft Graph under their own identity.
-- **Web APIs**: A multi-tiered topology in which a client app authenticates a user with Azure AD and gets an access token for the Web API. It then calls the Web API on behalf of the user, which, in turn, must call Microsoft Graph on behalf of the user. This topology is fully supported by the Azure AD endpoint; however, support is limited for the Azure AD v2.0 endpoint: 
-
-  - if the client app and the Web API share the same Application Id, for example, in scenarios where a native app implements functionality in a **back-end Web API**, the topology is supported.
-  - if the client app and the Web API do not share the same Application Id, a **standalone Web API**, the topology is not supported. 
+- **Web APIs**: A client app calls a Web API (secured by Azure AD), which then calls Microsoft Graph. Supported by the Azure AD endpoint. For the Azure AD v2.0 endpoint, only supported if the client and the Web API have the same Application Id; for example, a native app that calls a Web API back end. 
 
 ## How do I get my app talking to Azure AD and Microsoft Graph?
 Before your app can get a token from Azure AD, it must be registered. For the Azure AD v2.0 endpoint, you use the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) to register your app. For the Azure AD endpoint, you use the [Azure portal](https://azure.portal.com/). Registration integrates your app with Azure AD and establishes the coordinates and identifiers that it uses to get tokens. These are:
