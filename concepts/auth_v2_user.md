@@ -220,31 +220,37 @@ A successful token response will look similar to the following.
 | refresh_token |A new OAuth 2.0 refresh token. You should replace the old refresh token with this newly acquired refresh token to ensure your refresh tokens remain valid for as long as possible. |
 
 ## Supported app scenarios and additional resources
-You can call Microsoft Graph on behalf of a signed-in user from the following kinds of apps: 
+You can call Microsoft Graph on behalf of a user from the following kinds of apps: 
 
-- Native/Mobile apps - Apps that run on a device such as a desktop, tablet, or mobile phone. These apps use the operating system (OS) native to the device like iOS, Android, or Windows for user presentation and to make back-end Web calls to Microsoft Graph. These apps typically use either the OAuth 2.0 Authorization Code Grant (authorization only) or OpenID Connect Authorization Code Flow (for authentication and/or authorization). For information about using the Authorization Code Flow with Azure AD v2.0, see [v2.0 Protocols - OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
-- Web apps - Apps that run on a server and interact with the signed-in user through a user-agent, usually a Web browser. Most of the presentation layer is handled on the server. Calls to Microsoft Graph are made from the server-side. Web apps typically use OAuth 2.0 Authorization Code Grant (authorization only) or either the OpenID Connect Authorization Code Flow or Hybrid Flow (authentication and authorization). For information about using OpenID Connect with Web apps, see [Azure Active Directory v2.0 and the OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oidc).
-- Single Page apps (SPA) - Web apps with rich user experiences that handle much of the presentation layer through client-side scripting in the browser. Calls to Microsoft Graph are made from client-side script using technologies like AJAX. SPAs typically use OAuth 2.0 Implicit Grant (authorization only) or OpenID Connect Implicit Flow (authentication and authorization). For information about using the Implicit Flow with SPAs, see [v2.0 Protocols - SPAs using the implicit flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-implicit). 
+- Native/Mobile apps 
+- Web apps
+- Single page apps (SPA)
+- Back-end Web APIs: For example, in scenarios where a client app, like a native app, implements functionality in a Web API back end. With the Azure AD v2.0 endpoint, both the client app and the back-end Web API must have the same Application Id. 
 
-> **Note**: Calling Microsoft Graph from within a Web API (on behalf of OAuth 2.0 flow), is not currently supported by the Azure AD v2.0 endpoint. For this scenario, you need to use the Azure AD endpoint. For more information, see [Azure AD endpoint considerations](#Azure AD endpoint considerations). 
+For more information about supported app types with the Azure AD v2.0 endpoint, see [Types of apps](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
 
-Rather than implement code at the protocol level, most developers will use an authentication library to handle details of authentication and authorization with Azure AD. Using an authentication library abstracts many the details of protocol implementation, token and response validation, token caching and refresh, following best practice security measures during protocol interactions, etc. away from the developer, and lets you concentrate your development efforts on your app. Microsoft publishes the open-source Microsoft Authentication Library (MSAL) for acquiring tokens from Azure AD v2.0. Currently MSAL is in general availability for .NET and MSAL libraries for iOS, Android, and JavaScript are in preview. For use with Web apps, Microsoft also publishes open-source OWIN middleware libraries that support OAuth 2.0, OpenID Connect, and session cookies. 
+> **Note**: Calling Microsoft Graph from a [standalone Web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) is not currently supported by the Azure AD v2.0 endpoint. For this scenario, you need to use the Azure AD endpoint.
 
-For more information about recommended Microsoft and third-party authentication libraries and server middleware for Azure AD v2.0, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+For more information about getting access to Microsoft Graph on behalf of a user from the Azure AD v2.0 endpoint:
+
+- For links to protocol documentation and getting started articles for different kinds of apps, see the [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview). 
+- For detailed explanations of authentication flows, see [v2.0 protocols](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols).
+- For more information about recommended Microsoft and third-party authentication libraries and server middleware for Azure AD v2.0, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
 ## Azure AD endpoint considerations
 There are several differences between using the Azure AD endpoint and the Azure AD v2.0 endpoint. For example:
 
-- The Azure AD endpoint only supports work or school accounts. You cannot write apps that target Microsoft accounts with the Azure AD endpoint. 
+- You use the [Azure portal](https://portal.azure.com) to configure your app. For more information about configuring apps with the Azure portal, see [Integrating applications with Azure Active Directory: Adding an application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)
 - Your app will require a different application Id (client Id) for each platform.
 - If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the [Azure portal](https://portal.azure.com).
 - With the Azure AD endpoint, all permissions that your app needs must be configured by the developer. The Azure AD endpoint does not support dynamic (incremental) consent.
 - The Azure AD endpoint uses a `resource` parameter in authorization and token requests to specify the resource, such as Microsoft Graph, for which it wants permissions. The endpoint does not support the `scope` parameter. 
-- The Azure AD endpoint does not expose a specific endpoint for administrator consent. Instead apps use the `prompt=admin_consent` parameter in the authorization request to obtain administrator consent for an organization.
+- The Azure AD endpoint does not expose a specific endpoint for administrator consent. Instead apps use the `prompt=admin_consent` parameter in the authorization request to obtain administrator consent for an organization. For more information, see **Triggering the Azure AD consent framework at runtime** in [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 
-For information about using the Azure AD endpoint with different kinds of apps, see the **Get Started** links in the [Azure Active Directory developers guide](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The guide contains links to overview topics, code walk-throughs, and protocol documentation for each type of app supported by the Azure AD endpoint.
+For more information about getting access to Microsoft Graph on behalf of a user from the Azure AD endpoint:
 
-For information about the Active Directory Authentication Library (ADAL) and server middleware available for use with the Azure AD endpoint, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
+- For information about using the Azure AD endpoint with different kinds of apps, see the **Get Started** links in the [Azure Active Directory developers guide](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The guide contains links to overview topics, code walk-throughs, and protocol documentation for different kinds of app supported by the Azure AD endpoint.
+- For information about the Active Directory Authentication Library (ADAL) and server middleware available for use with the Azure AD endpoint, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
 
 
  
