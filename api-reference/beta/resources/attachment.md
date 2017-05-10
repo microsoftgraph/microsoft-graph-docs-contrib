@@ -1,7 +1,7 @@
 # attachment resource type
 
 You can add related content to an [event](../resources/event.md),
-[message](../resources/message.md), or [post](../resources/post.md) in the form of an attachment.
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) in the form of an attachment.
 
 **attachment** is the base resource for the following derived types of attachments:
 
@@ -16,14 +16,16 @@ The following methods apply to any of the derived types of attachments (**fileAt
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get attachment](../api/attachment_get.md) | [attachment](attachment.md) |Read the properties and relationships of an attachment, attached to an event, message, or post.|
+|[Get attachment](../api/attachment_get.md) | [attachment](attachment.md) |Read the properties and relationships of an attachment, attached to an event, message, Outlook task, or post.|
 |[Add attachment to an event](../api/event_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event.|
 |[Add attachment to a message](../api/message_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message.|
+|[Add attachment to an Outlook task](../api/outlooktask_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an Outlook task.|
 |[Add attachment to a post](../api/post_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a post.|
 |[List attachments of an event](../api/event_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event. |
 |[List attachments of a message](../api/message_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
+|[List attachments of an Outlook task](../api/outlooktask_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
 |[List attachments of a post](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
-|[Delete](../api/attachment_delete.md) | None |Delete an attachment on an event, message, or post. |
+|[Delete](../api/attachment_delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
 
 
 ## Properties

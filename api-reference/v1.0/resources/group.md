@@ -3,6 +3,9 @@
 Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
 
+This resource supports:
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 ## Methods
 
@@ -40,6 +43,12 @@ Inherits from [directoryObject](directoryobject.md).
 |[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for only Office 365 groups.|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
+|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
+|**Schema extensions**| | |
+|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 
 ## Properties
@@ -47,6 +56,7 @@ Inherits from [directoryObject](directoryobject.md).
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.|
+|createdDateTime|DateTimeOffset| The date and time the group was created. |
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |groupTypes|String collection| Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property. Supports $filter.|
@@ -73,8 +83,10 @@ Inherits from [directoryObject](directoryobject.md).
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.|
 |drive|[drive](drive.md)|The group's drive. Read-only.|
 |events|[event](event.md) collection|The group's calendar events.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the group. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups) Nullable.|
+|onenote|[OneNote](onenote.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 10 owners. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups). Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
@@ -97,8 +109,10 @@ Here is a JSON representation of the resource
     "createdOnBehalfOf",
     "drive",
     "events",
+    "extensions",
     "memberOf",
     "members",
+    "onenote",
     "owners",
     "photo",
     "rejectedSenders",
@@ -112,6 +126,7 @@ Here is a JSON representation of the resource
 {
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
@@ -144,6 +159,12 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
+- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

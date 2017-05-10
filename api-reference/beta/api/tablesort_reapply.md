@@ -3,17 +3,20 @@
 Reapplies the current sorting parameters to the table.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/sort/reapply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/reapply
+POST /workbook/tables/{id|name}/sort/reapply
+POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -30,7 +33,7 @@ Here is an example of the request.
   "name": "tablesort_reapply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/sort/reapply
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/reapply
 ```
 
 ##### Response

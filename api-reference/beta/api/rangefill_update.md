@@ -3,17 +3,20 @@
 Update the properties of rangefill object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/fill
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/fill
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/fill
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -53,9 +56,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 28
 
-{
-  "color": "color-value"
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

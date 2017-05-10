@@ -1,7 +1,7 @@
 # Get attachment
 
 Read the properties and relationships of an attachment, attached to an [event](../resources/event.md), 
-[message](../resources/message.md), or [post](../resources/post.md). 
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). 
 
 An attachment can be one of the following types:
 
@@ -15,9 +15,10 @@ resource.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-* If accessing attachments in Messages: *Mail.Read*
-* If accessing attachments in Events: *Calendars.Read*
-* If accessing attachments in Group Events or Posts: *Group.Read.All*
+* If accessing attachments in messages: *Mail.Read*
+* If accessing attachments in events: *Calendars.Read*
+* If accessing attachments in Outlook tasks: *Tasks.Read*
+* If accessing attachments in group events or posts: *Group.Read.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -60,6 +61,19 @@ example below shows one level of nesting, but a message can be located in a chil
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
+
+Attachments for an [Outlook task](../resources/outlooktask.md) in the user's mailbox, or in a specified task folder or task group.
+```http
+GET /me/outlook/tasks/<id>/attachments/{id}
+GET /users/<id>/outlook/tasks/<id>/attachments/{id}
+
+GET /me/outlook/taskFolders/<id>/tasks/<id>/attachments/{id}
+GET /users/<id>/outlook/taskFolders/<id>/tasks/<id>/attachments/{id}
+
+GET /me/outlook/taskGroups/<id>/taskFolders/<id>/tasks/<id>/attachments/{id}
+GET /users/<id>/outlook/taskGroups/<id>/taskFolders/<id>/tasks/<id>/attachments/{id}
+```
+
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
