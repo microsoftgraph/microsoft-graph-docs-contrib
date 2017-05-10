@@ -311,7 +311,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 Group functionality is not supported on Microsoft accounts. 
 
-For Office 365 groups, Group permissions grant the app access to the contents of the group; for example, conversations, files, notes, and so on. Group permissions are also used to control access to [Office 365 Planner](../api-reference/beta/resources/planner_overview.md) resources and APIs.
+For Office 365 groups, Group permissions grant the app access to the contents of the group; for example, conversations, files, notes, and so on. Group permissions are also used to control access to [Microsoft Planner](../api-reference/beta/resources/planner_overview.md) resources and APIs.
 
 For Application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](../overview/release_notes.md).
 
@@ -599,6 +599,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 #### Application permissions
 
 None.
+
+### Remarks
+_Tasks_ permissions are used to control access for Outlook tasks. Access for Microsoft Planner tasks is controlled by [_Group_ permissions](group-permissions).
 
 ---
 
