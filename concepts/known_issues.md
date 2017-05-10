@@ -34,7 +34,7 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
-#### Webhooks
+### Webhooks
 User webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
 
 ## Groups and (beta) Microsoft Teams
@@ -91,7 +91,7 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
-#### Webhooks
+### Webhooks
 Group webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
 
 ## Contacts
@@ -172,7 +172,7 @@ does not become part of the body of the resultant message draft.
 ## Delta query
 
 * OData context is sometimes returned incorrectly when tracking changes to relationships.
-* Schema extensions (legacy) are not returned with $Select statement, but are returned without $Select.
+* Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
 
 ## Extensions
