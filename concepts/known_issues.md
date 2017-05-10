@@ -10,7 +10,7 @@ Users can be created immediately through a POST on the user entity. An Office 36
 
 ### Photo restrictions
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) will no longer be accessible through the Microsoft Graph user photo property.
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](../api-reference/v1.0/resources/user.md) resource.
 Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
@@ -27,7 +27,7 @@ Failure to read or update a photo, in this case, would result in the following e
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) allows you to get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
 ### Using delta query
@@ -35,7 +35,7 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
 ### Webhooks
-User webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
+User webhooks work with only [application permissions](../concepts/permissions_reference.md). 
 
 ## Groups and (beta) Microsoft Teams
 
@@ -43,10 +43,10 @@ User webhooks will only work with [Application permissions](../concepts/permissi
 
 Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App. 
 
-### Permission scopes for groups and (beta) Microsoft Teams
+### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permission scopes (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
-These permission scopes must be consented to by an administrator (which is a change from preview).  In the future we plan to add new scopes for groups and teams that can be consented by users.
+Microsoft Graph exposes two permission (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
+These permission must be consented to by an administrator (which is a change from preview).  In the future we plan to add new permissions for groups and teams that can be consented by users.
 
 Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
 
@@ -64,17 +64,17 @@ Examples of group features that support only delegated permissions:
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
 
-### Teams in Microsoft Teams (beta)
+### Teams in Microsoft Teams (preview)
 
 Microsoft Teams are built upon Office 365 groups.  All group APIs can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  Future API releases will support this.
 
-### Microsoft Teams channels (beta)
+### Microsoft Teams channels (preview)
 
 Currently, you can read and create channels, but you cannot update or delete them.  Future API releases will support this.
 
-### Microsoft Teams chat threads and chat messages (beta)
+### Microsoft Teams chat threads and chat messages (preview)
 
-Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them.  You also cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
+Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them.  As weel, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
 
 
 ### Adding and getting attachments of group posts
@@ -92,7 +92,7 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
 ### Webhooks
-Group webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
+Group webhooks works only with [Application permissions](../concepts/permissions_reference.md). 
 
 ## Contacts
 
@@ -205,21 +205,21 @@ Microsoft Graph does not currently support transactional processing of individua
 
 ### URIs must be relative
 
-All URIs must be relative. Microsoft Graph will make these URLs absolute by using the version endpoint included in the batch URL.
+Always specify relative URIs in batch requests. Microsoft Graph then makes these URLs absolute by using the version endpoint included in the batch URL.
 
 ### Limit on batch size
 
-JSON batch requests are currently limited to 5 individual requests. We will raise this limit as JSON batching matures.
+JSON batch requests are currently limited to 5 individual requests. As JSON batching matures, this limit will be raised.
 
 ### Simplified dependencies
 
 Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
 
-1. Parallel; no individual request states a dependency in the `dependsOn` property.
-2. Serial; all individual requests depend on the previous individual request.
-3. Same; all individual requests that state a dependency in the `dependsOn` property, state the same dependency.
+1. Parallel - no individual request states a dependency in the `dependsOn` property.
+2. Serial - all individual requests depend on the previous individual request.
+3. Same - all individual requests that state a dependency in the `dependsOn` property, state the same dependency.
 
-We will remove these limitations as JSON batching matures.
+As JSON batching matures, these limitations will be removed.
 
 ## Cloud Solution Provider apps must use Azure AD endpoint
 
