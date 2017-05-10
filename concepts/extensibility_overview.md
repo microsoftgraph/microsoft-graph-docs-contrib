@@ -46,7 +46,7 @@ One way to do this is to use a reverse domain name system (DNS) format that is d
 Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
 
 You can [create an open extension](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md) in a resource instance and store custom data to it all in the same operation 
-(note [known limitation below](#known-limitations-for-extensions) for some of the supported resources).
+(note [known limitation below](known_issues.md#extensions) for some of the supported resources).
 You can subsequently [read](../api-reference/v1.0/api/opentypeextension_get.md), [update](../api-reference/v1.0/api/opentypeextension_update.md), or [delete](../api-reference/v1.0/api/opentypeextension_delete.md) 
 the extension and its data.
 

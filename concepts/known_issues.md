@@ -169,20 +169,53 @@ Tracking changes to relationships on users and groups is only supported within t
 
 ## Extensions
 
-#### Open extension limitations
+### Change tracking is not supported
 
-- You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
+Change tracking (delta query) is not supported for open or schema extension properties.
 
-#### Schema extension limitations
+### Creating a resource and open extension at the same time
 
-- Change tracking (delta query) is not supported for open or schema extension properties.
-- Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
+You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
+
+### Limit of 100 schema extension property values allowed per resource instance
+
+Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
+
+## JSON Batching
+
+### No nested batch
+
+JSON batch requests must not contain any nested batch requests.
+
+### All individual requests must be synchronous
+
+All requests contained in a batch request must be executed synchronously. If present, the `respond-async` preference will be ignored.
+
+### No transactions
+
+Microsoft Graph does not currently support transactional processing of individual requests. The `atomicityGroup` property on individual requests will be ignored.
+
+### URIs must be relative
+
+All URIs must be relative. Microsoft Graph will make these URLs absolute by using the version endpoint included in the batch URL.
+
+### Limit on batch size
+
+JSON batch requests are currently limited to 5 individual requests. We will raise this limit as JSON batching matures.
+
+### Simplified dependencies
+
+Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
+
+1. Parallel; no individual request states a dependency in the `dependsOn` property.
+2. Serial; all individual requests depend on the previous individual request.
+3. Same; all individual requests that state a dependency in the `dependsOn` property, state the same dependency.
+
+We will remove these limitations as JSON batching matures.
 
 ## Cloud Solution Provider apps must use Azure AD endpoint
 
 Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
-
-## Batching
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs
 
