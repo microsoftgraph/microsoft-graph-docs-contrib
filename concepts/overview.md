@@ -28,7 +28,7 @@ You can do all this and more with the Microsoft Graph API.
 
 - Check out some [Featured scenarios](featured_scenarios.md).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
-- Use the [quick start](https://developer.microsoft.com/en-us/graph/graph-explorer) to set up a ready-to-run sample app.
+- Use the [quick start](https://developer.microsoft.com/en-us/graph/quick-start) to set up a ready-to-run sample app.
 - Find out how to [get an auth token](auth_overview.md) in your app.
 - Start [using the API](use_the_api.md).
 
