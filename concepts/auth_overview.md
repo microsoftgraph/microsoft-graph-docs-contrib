@@ -6,7 +6,7 @@ This topic provides an overview of access tokens, Azure AD, and how your app can
 
 ## What is an access token and how do I use it?
 
-Access tokens issued by Azure AD are base 64 encoded JSON Web Tokens (JWT). They contain information (claims) that Web APIs secured by Azure AD, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque. 
+Access tokens issued by Azure AD are base 64 encoded JSON Web Tokens (JWT). They contain information (claims) that Web APIs secured by Azure AD, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque. You should always transmit access tokens over a secure channel, such as transport layer security (HTTPS).
 
 Here's an example of an Azure AD access token:
 
@@ -20,6 +20,7 @@ Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
 Host: graph.microsoft.com`
 GET https://graph.microsoft.com/v1.0/me/
 ```
+
 ## What are Microsoft Graph permissions?
 Microsoft Graph exposes a rich set of granular permissions over the resources it controls. These permissions are expressed as strings and grant apps access to Microsoft Graph resources like users, groups, user mail, etc. For example:
 
@@ -52,7 +53,7 @@ https://login.microsoftonline.com/common/oauth2/v2.0/token
 ```
 Azure AD exposes two sets of endpoints, Azure AD and Azure AD v2.0. The main difference between them is that Azure AD endpoint supports only work or school accounts (that is, accounts that are associated with an Azure AD tenant), while Azure AD v2.0 also supports Microsoft accounts like _Live.com_ or _outlook.com_ accounts. This means that if you use the Azure AD endpoint, your app can target only organizations, but with Azure AD v2.0 it can target both consumers and organizations. 
 
-Tokens between Azure AD and Azure AD v2.0 are not interchangeable. Because the Azure AD v2.0 endpoint is newer and features are still being added, there are some important limitations that you need to factor into your decision about which endpoint to use for your app in production. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+Tokens from the Azure AD endpoint are not interchangeable with those from the Azure AD v2.0 endpoint, so before you begin work on an app for production, you must choose between the endpoints. Because the Azure AD v2.0 endpoint is newer and features are still being added, there are some important limitations that you need to factor into your decision about which endpoint to use for your app in production. For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
 ## What's the difference between OAuth 2.0 and OpenID Connect?
 
@@ -67,10 +68,10 @@ You can call Microsoft Graph from the following kinds of apps:
 - **Web Apps**: Apps that run on a server and interact with the signed-in user through a user-agent, usually a Web browser. Most of the presentation layer is handled on the server, and calls to Microsoft Graph are made from the server-side on behalf of a user.
 - **Single Page Apps (SPA)**: Web apps with rich user experiences that handle much of the presentation layer through client-side scripting in the browser. Calls to Microsoft Graph are made from client-side script using technologies like AJAX and frameworks like Angular.js. Calls are made on behalf of a user.
 - **Background Services/Daemons**: Background services and daemons that run on a server without the presence of a user and make calls to Microsoft Graph under their own identity.
-- **Web APIs**: A multi-tiered topology in which a client app authenticates a user with Azure AD and gets an access token for the Web API. It then calls the Web API on behalf of the user, which, in turn, must call Microsoft Graph on behalf of the user. This topology is fully supported by the Azure AD endpoint; however, support is limited for the v2.0 endpoint: 
+- **Web APIs**: A multi-tiered topology in which a client app authenticates a user with Azure AD and gets an access token for the Web API. It then calls the Web API on behalf of the user, which, in turn, must call Microsoft Graph on behalf of the user. This topology is fully supported by the Azure AD endpoint; however, support is limited for the Azure AD v2.0 endpoint: 
 
-  - if the client app and the Web API share the same Application Id, for example, in scenarios where a native app implements functionality in a **back-end Web API**, the scenario is supported.
-  - if the client app and the Web API do not share the same Application Id, a **standalone Web API**, the scenario is not supported. 
+  - if the client app and the Web API share the same Application Id, for example, in scenarios where a native app implements functionality in a **back-end Web API**, the topology is supported.
+  - if the client app and the Web API do not share the same Application Id, a **standalone Web API**, the topology is not supported. 
 
 ## How do I get my app talking to Azure AD and Microsoft Graph?
 Before your app can get a token from Azure AD, it must be registered. For the Azure AD v2.0 endpoint, you use the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) to register your app. For the Azure AD endpoint, you use the [Azure portal](https://azure.portal.com/). Registration integrates your app with Azure AD and establishes the coordinates and identifiers that it uses to get tokens. These are:
@@ -128,12 +129,12 @@ The main difference between Azure AD and Azure AD v2.0 is that:
 There are some additional advantages with Azure AD v2.0. For example:
 
 * Your app can use a single Application Id for multiple platforms. This simplifies app management for both developers and administrators.
-* [Support for dynamic/incremental consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent). With this feature your app can request additional permissions during runtime, pairing the request for the user's consent  with the functionality that requires it. This provides a much more comfortable experience for users than having to consent to a long list of permissions when they sign-in for the first time.  
+* [Support for dynamic and incremental consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent). With this feature your app can request additional permissions during runtime, pairing the request for the user's consent  with the functionality that requires it. This provides a much more comfortable experience for users than having to consent to a long list of permissions when they sign-in for the first time.  
 
-Because Azure AD v2.0 is newer than Azure AD and features are still being added to it, there are some limitations with the v2.0 endpoint that you need to factor into your decision. For example:
+Because Azure AD v2.0 is newer than Azure AD and features are still being added, there are some limitations with the v2.0 endpoint that you need to factor into your decision. For example:
 
 * Some features may not yet be fully implemented in v2.0. For example, your app might not work if your enterprise customer turns on enterprise mobility security features like [conditional device access](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies).
-* You cannot call Microsoft Graph from a stand-alone Web API. 
+* You cannot call Microsoft Graph from a [standalone Web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types). 
 * You cannot call Cloud Solution provider apps.
 * [Windows integrated authentication for federated tenants](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-for-work-and-school-accounts) is not supported. This means that users of federated Azure AD tenants cannot silently authenticate with their on-premises Active Directory instance. They will have to re-enter their credentials.
 
