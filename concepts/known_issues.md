@@ -191,10 +191,10 @@ Additionally there are the following `/beta` limitations:
 * Cross-workload filtering/search is not available. 
 * Full-text search (using **$search**) is only available for some entities, like messages.
 
-  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
-
 ## Delta query
 
 1.	OData context is sometimes returned incorrectly when tracking changes to relationships.
 2.	Schema extensions (legacy) are not returned with $Select statement, but are returned without $Select.
 3.	Clients cannot track changes to open extensions or registered schema extensions.
+
+  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
