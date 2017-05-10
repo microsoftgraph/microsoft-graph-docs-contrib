@@ -35,6 +35,9 @@ or access the ICS URL in the calendar resource.
 #### Using delta query
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+#### Webhooks
+User webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
+
 ## Groups and (beta) Microsoft Teams
 #### Policy
 Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App. 
@@ -84,6 +87,9 @@ in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
 #### Using delta query
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+#### Webhooks
+Group webhooks will only work with [Application permissions](../concepts/permissions_reference.md). 
 
 ## Contacts
 
@@ -185,8 +191,10 @@ Additionally there are the following `/beta` limitations:
 * Cross-workload filtering/search is not available. 
 * Full-text search (using **$search**) is only available for some entities, like messages.
 
-  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
-
 ## Delta query
 
-Tracking changes to relationships on users and groups is only supported within the specific resource class for which changes are being tracked. For example, if a client is tracking changes on *groups* and has selected the *members* relationship, the client will only receive membership updates in the delta query response if those members are also *groups*. In other words, tracking group membership for users is not yet supported. The Microsoft Graph team understands that this is a high priority scenario and an update is targeted to be delivered soon.
+* OData context is sometimes returned incorrectly when tracking changes to relationships.
+* Schema extensions (legacy) are not returned with $Select statement, but are returned without $Select.
+* Clients cannot track changes to open extensions or registered schema extensions.
+
+  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Tag your questions with {MicrosoftGraph} and {office365}.
