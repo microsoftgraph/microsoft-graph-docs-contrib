@@ -54,6 +54,6 @@ There are currently no deprecated versions of Microsoft Graph.
 
 ## Terms of use
 
-By using the Microsoft Graph APIs, you agree to the [Terms of Use](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx). <!-- Verify link -->
+By using the Microsoft Graph APIs, you agree to the [Terms of Use](https://msdn.microsoft.com/en-us/cc300389). 
 
 Your feedback is important to us. Connect with us on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your questions with {MicrosoftGraph}.
