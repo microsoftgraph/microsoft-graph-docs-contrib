@@ -23,4 +23,4 @@ Check out some common and featured scenarios for working with the Microsoft Grap
 
 ## Next steps
 
-Try out some more calls in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer), and use our [Quick Start](https://developer.microsoft.com/graph/quick-start) to get up and running fast. Learn more about how to [use the API](use_the_api.md) to build your first app.
+Try out some more calls in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer), and use our [quick start](https://developer.microsoft.com/graph/quick-start) to get up and running fast. Learn more about how to [use the API](use_the_api.md) to build your first app.
