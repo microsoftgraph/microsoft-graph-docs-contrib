@@ -58,14 +58,14 @@ Content-length: 305
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
-  "displayName": "name-value",  
+  "displayName": "name-value",
   "createdBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": 
+  "lastModifiedBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"

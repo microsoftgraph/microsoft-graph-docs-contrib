@@ -64,7 +64,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "directoryObject",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 
