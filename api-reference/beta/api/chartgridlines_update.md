@@ -3,17 +3,20 @@
 Update the properties of chartgridlines object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/majorgridlines
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -33,7 +36,7 @@ Here is an example of the request.
   "name": "update_chartgridlines"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 Content-type: application/json
 Content-length: 21
 

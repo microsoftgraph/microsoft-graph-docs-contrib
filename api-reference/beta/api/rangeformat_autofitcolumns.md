@@ -3,18 +3,21 @@
 Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/autofitColumns
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/autofitColumns
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/autofitColumns
+POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitColumns
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
