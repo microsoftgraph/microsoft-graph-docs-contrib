@@ -1,6 +1,6 @@
 # Create MailFolder
 
-Use this API to create a new mail folder.
+Use this API to create a new mail folder in the root folder of the user's mailbox.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Mail.ReadWrite*
@@ -21,11 +21,10 @@ In the request body, provide a JSON object with the following parameters. **disp
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|parentFolderId|String|The folder ID of the parent folder, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
 |displayName|String|The display name of the new folder.|
 
 ## Response
-If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `201, Created` response code and a [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example
 ##### Request
@@ -40,8 +39,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value"
+  "displayName": "displayName-value"
 }
 ```
 

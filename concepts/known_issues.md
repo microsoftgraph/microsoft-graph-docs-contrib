@@ -34,9 +34,6 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
-### Webhooks
-User webhooks work with only [application permissions](../concepts/permissions_reference.md). 
-
 ## Groups and Microsoft Teams
 
 >**Note** Microsoft Teams is now in preview status available in only the Microsoft Graph beta endpoint.
@@ -92,9 +89,6 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
-
-### Webhooks
-Group webhooks works only with [Application permissions](../concepts/permissions_reference.md). 
 
 ## Contacts
 
