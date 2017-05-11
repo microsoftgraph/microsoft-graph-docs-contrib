@@ -3,17 +3,20 @@
 Perform a sort operation.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/sort/apply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/apply
+POST /workbook/tables/{id|name}/sort/apply
+POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -37,7 +40,7 @@ Here is an example of the request.
   "name": "tablesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/sort/apply
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
 Content-type: application/json
 Content-length: 298
 
