@@ -12,18 +12,19 @@ The following **scopes** are required to execute this API:
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
-## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {code}|
-
 
 ## Request parameter
-In the request URL, provide a optional query parameter 
+In the request URL, provide an optional query parameter 
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
+
+
+## Request headers
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {code}|
 
 ## Response
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
