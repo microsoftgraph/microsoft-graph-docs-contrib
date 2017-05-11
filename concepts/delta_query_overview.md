@@ -46,7 +46,7 @@ For users and groups beta (preview) APIs, scoping filters allow you to track cha
 
 -   Updated instances are represented by their **id** with *at least* the properties that have been updated, but additional properties may be included.
 
--   Changes to relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request. For tracked changes, the annotations only appear when the client explicitly chooses to track changes to the relationship by using the `$select` parameter.
+-   Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
 
 Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
 
@@ -72,7 +72,7 @@ Delta query is currently supported for the following resources:
 | Drive items\* | [delta](../api-reference/v1.0/api/item_delta.md) function of the [driveItem](../api-reference/v1.0/resources/driveItem.md) resource |
 
 
-> \* Tracking changes to drives and their children is already supported in v1.0. The usage pattern is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:
+> \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:
 <https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
 
 ## Prerequisites
