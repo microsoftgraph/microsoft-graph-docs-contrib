@@ -20,7 +20,7 @@ GET me/devices/{id}/commands/{id}
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer (token). Required. |
+|Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
 

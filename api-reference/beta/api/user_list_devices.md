@@ -19,7 +19,7 @@ GET me/devices
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer <token>. Required. |
+|Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
 ## Request body

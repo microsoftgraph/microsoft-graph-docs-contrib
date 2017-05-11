@@ -20,7 +20,7 @@ POST me/devices/{id}/commands
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer <token>. Required. |
+|Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
 
