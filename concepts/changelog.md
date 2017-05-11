@@ -4,6 +4,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
+### Project Rome
+
+|**Change type**|**Version**|**Description**|
+|:--------------|:-----------|:-------------|
+|Addition|Beta|Added support for Project Rome, including [getting a list of devices](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices), [sending a command to a device](https://developer.microsoft.com/graph/docs/api-reference/beta/api/send_device_command), and [checking the status of a command](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status).|
+
 ### Administrative units property changes
 
 |**Change type**|**Version**|**Description**|
@@ -17,9 +23,9 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
-| Change        | beta       | Added support to [webhooks](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/webhooks) for users and groups.
+| Change        | Beta       | Added support to [webhooks](developer.microsoft.com/graph/docs/api-reference/beta/resources/webhooks) for users and groups.
 
-### Add delta query to V1.0
+### Add delta query to v1.0
 
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
@@ -59,7 +65,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 |:-------------|:-----------|:--------------|
 |Addition|V1.0|New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
-### Added licenseDetails to V1.0
+### Added licenseDetails to v1.0
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
