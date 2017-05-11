@@ -23,7 +23,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
-| Change        | Beta       | Added support to [webhooks](developer.microsoft.com/graph/docs/api-reference/beta/resources/webhooks) for users and groups.
+| Change        | Beta       | Added support to [webhooks](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/webhooks) for users and groups.
 
 ### Add delta query to v1.0
 
