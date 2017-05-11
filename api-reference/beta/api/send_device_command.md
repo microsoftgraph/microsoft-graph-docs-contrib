@@ -1,13 +1,13 @@
-# Device command
+# Send device command
 
 This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the 
 *type*, *payload*, *packageFamilyName*, and *appServiceName* parameters.
 
 ## Prerequisites
 
-The following scope is required to execute this API: Device.Command
+The following scope is required to execute this API: *Device.Command*
 
-## HTTP Request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -15,7 +15,7 @@ The following scope is required to execute this API: Device.Command
 POST me/devices/{id}/commands
 ```
 
-## Request Headers
+## Request headers
 
 
 | Header |Value
@@ -24,7 +24,7 @@ POST me/devices/{id}/commands
 |Accept | application/json |
 
 
-## Request Body
+## Request body
 
 In the request body, supply a JSON representation of the command properties.
 
@@ -60,17 +60,17 @@ HTTP/1.1 201 OK
 ```
 ## Command properties 
 
-|Name| Type | Description|
+|**Name**|**Type**|**Description**|
 |:----|:------|:------|
-|payload | microsoft.graph.json| Payload to send to an app service or to launch a URI on a device |
-|responsePayload | microsoft.graph.json| Payload returned from target device |
-|postBackURI | String | Post back Uri to send subsequent notifications of updates |
-|packageFamilyName | String | Windows Package Family Name of application |
-|appServiceName | String | Name of app service defined by the target application, required if launching an app service |
-|type| String | LaunchURI or AppService |
-|id| String | The id of a command that has been sent to the device |
+|payload | microsoft.graph.json| Payload to send to an app service or to launch a URI on a device. |
+|responsePayload | microsoft.graph.json| Payload returned from target device. |
+|postBackURI | String | Post back URI to send subsequent notifications of updates. |
+|packageFamilyName | String | Windows Package Family Name of application. |
+|appServiceName | String | Name of app service defined by the target application. Required if launching an app service. |
+|type| String | LaunchURI or AppService. |
+|id| String | The ID of a command that has been sent to the device. |
 |actionStatus | String | The [status](get_device_command_status.md) of a command. |
-|error| String| Any errors associated with the request from the target application |
+|error| String| Any errors associated with the request from the target application. |
 
 ## Launch URI example
 
@@ -126,7 +126,7 @@ HTTP/1.1 201 OK
 
 ## App service example
 
-Here is an example of querying an app service on a device. To use an app service you must do a POST call using the id of the device (obtained from doing a GET call on `me/devices`). To use the snippet below, you must install the [Rome app](https://aka.ms/romanapp) on your target device.
+Here is an example of querying an app service on a device. To use an app service you must do a POST call using the id of the device (obtained from doing a GET call on `me/devices`). To use the following example, you must install the [Rome app](https://aka.ms/romanapp) on your target device.
 
 Several additional properties must be set in the call. *Type* must be set to *AppService*, *AppServiceName* must be set to the name of the app service defined in the application, *PackageFamilyName* must be set to the package family name defined in the app manifest, and *Payload* holds the keys and values for the service you are calling within the target application.
 
