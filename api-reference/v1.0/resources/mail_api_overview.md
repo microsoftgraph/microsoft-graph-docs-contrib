@@ -1,7 +1,7 @@
 # Use the Microsoft Graph API to integrate with Outlook mail
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account. 
-With the [appropriate delegated or application permissions](../../../authorization/permission_scopes.md), your app can access the mail data of 
+With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of 
 the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on 
 Exchange on-premises in a [hybrid deployment](../../../concepts/hybrid_rest_support.md).
 
@@ -40,10 +40,11 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Get or update a user's automatic reply, locale or time zone | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
 | **Mail and folder management** | | |
 | Organize messages in a mail folder hierarchy | [mailFolder](../resources/mailfolder.md)  | [Methods of mailFolder](../resources/mailfolder.md#methods) |
-| Search and filter messages | [message](../resources/message.md) | [Query parameters](../../../overview/query_parameters.md)  |
+| Search and filter messages | [message](../resources/message.md) | [Query parameters](../../../concepts/query_parameters.md)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
+| Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md) |
 | **App development** | | |
-| Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md) | [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md) |
+| Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
 
 

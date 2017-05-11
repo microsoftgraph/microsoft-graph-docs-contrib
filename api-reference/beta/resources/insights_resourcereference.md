@@ -1,6 +1,6 @@
 # resourceReference resource type
 
-Complex type containing properties of [Trending](insights_trending.md) items.
+Complex type containing properties of [Insights](insights.md).
 
 ## JSON representation
 

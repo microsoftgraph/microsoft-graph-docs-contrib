@@ -3,17 +3,20 @@
 Gets a column based on its position in the collection.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns/ItemAt
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns/ItemAt
+POST /workbook/tables/{id|name}/columns/ItemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -35,7 +38,7 @@ Here is an example of the request.
   "name": "tablecolumncollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/columns/ItemAt
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
 Content-type: application/json
 Content-length: 20
 

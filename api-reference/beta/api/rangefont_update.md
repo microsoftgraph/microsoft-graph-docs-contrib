@@ -3,17 +3,20 @@
 Update the properties of rangefont object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/font
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/font
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/font
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/font
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
