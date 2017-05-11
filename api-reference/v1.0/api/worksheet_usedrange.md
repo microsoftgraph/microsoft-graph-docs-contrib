@@ -18,8 +18,8 @@ GET /workbook/worksheets/{id|name}/UsedRange
 | Authorization  | Bearer {code}|
 
 
-## Request body
-In the request body, provide a JSON object with the following parameters.
+## Request parameter
+In the request URL, provide a optional query parameter 
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -37,13 +37,9 @@ Here is an example of the request.
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
 Content-type: application/json
-Content-length: 24
 
-{
-  "valuesOnly": true
-}
 ```
 
 ##### Response
