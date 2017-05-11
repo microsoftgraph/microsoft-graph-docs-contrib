@@ -40,7 +40,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Get or update a user's automatic reply, locale or time zone | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
 | **Mail and folder management** | | |
 | Organize messages in a mail folder hierarchy | [mailFolder](../resources/mailfolder.md)  | [Methods of mailFolder](../resources/mailfolder.md#methods) |
-| Search and filter messages | [message](../resources/message.md) | [Query parameters](../../../overview/query_parameters.md)  |
+| Search and filter messages | [message](../resources/message.md) | [Query parameters](../../../concepts/query_parameters.md)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md) |
 | **App development** | | |
