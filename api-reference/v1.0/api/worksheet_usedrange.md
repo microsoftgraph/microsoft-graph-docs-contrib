@@ -13,7 +13,7 @@ GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
 
-## Request parameter
+## Optional Request parameter
 In the request URL, provide an optional query parameter 
 
 | Parameter	   | Type	|Description|
