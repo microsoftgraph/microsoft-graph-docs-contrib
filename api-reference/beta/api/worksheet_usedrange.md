@@ -12,8 +12,8 @@ The following **scopes** are required to execute this API:
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
-## Query parameters
-In the request URL, provide a optonal query parameter. 
+## Optional Query parameters
+In the request URL, provide an optonal query parameter. 
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
