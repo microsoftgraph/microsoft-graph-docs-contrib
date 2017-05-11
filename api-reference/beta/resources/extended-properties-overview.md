@@ -9,7 +9,9 @@ You can use extended properties REST API to store or get such custom data in the
 - [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
+- [Outlook task](../resources/outlooktask.md)
+- [Outlook task folder](../resources/outlooktaskfolder.md) 
 
 Or, in the following Office 365 group resources:
 
