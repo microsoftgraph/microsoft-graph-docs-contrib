@@ -1,6 +1,6 @@
 # List user devices
 
-Get a list of devices for a user that is associated with their Microsoft identity.
+Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to [send a command](api/send_device_command.md) to your device.
 
 ## Prerequisites
 

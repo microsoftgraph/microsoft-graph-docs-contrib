@@ -110,16 +110,16 @@ HTTP/1.1 200 OK
 
 
 
-# Get Command Payload
+## Get Command Payload
 
 Get a response payload for a specific action on a device. The response payload is used when querying an app service to carry data back.
 
 
-## Prerequisites
+### Prerequisites
 
 The following scope is required to execute this API: Device.Command
 
-## HTTP Request
+### HTTP request
 
 ```http
 
@@ -127,7 +127,7 @@ GET me/beta/devices/{id}/command/{id}/responsePayload
 
 ```
 
-## Request Headers
+### Request headers
 
 
 | Header |Value
@@ -136,7 +136,7 @@ GET me/beta/devices/{id}/command/{id}/responsePayload
 |Accept | application/json |
 
 
-## Response
+### Response
 
 ```http
 
@@ -151,10 +151,10 @@ HTTP/1.1 200 OK
 
 ```
 
-## Example
-In this example you will need the id of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command.
+### Example
+In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command.
 
-### Request
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -168,7 +168,7 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
