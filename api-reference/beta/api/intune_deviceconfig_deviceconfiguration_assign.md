@@ -6,7 +6,7 @@ Not yet documented
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -44,14 +44,15 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 245
+Content-length: 274
 
 {
   "deviceConfigurationGroupAssignments": [
     {
       "@odata.type": "#microsoft.graph.deviceConfigurationGroupAssignment",
       "id": "561d26c5-26c5-561d-c526-1d56c5261d56",
-      "targetGroupId": "Target Group Id value"
+      "targetGroupId": "Target Group Id value",
+      "excludeGroup": true
     }
   ]
 }

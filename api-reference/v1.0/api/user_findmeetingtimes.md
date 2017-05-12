@@ -111,7 +111,8 @@ Here is the example request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
-Content-type: application/json
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-Type: application/json
 
 { 
   "attendees": [ 
@@ -119,16 +120,9 @@ Content-type: application/json
       "type": "required",  
       "emailAddress": { 
         "name": "Fanny Downs",
-        "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
+        "address": "fannyd@contoso.onmicrosoft.com" 
       } 
-    },
-    { 
-      "type": "optional",  
-      "emailAddress": { 
-        "name": "Dana Swope",
-        "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
-      } 
-    } 
+    }
   ],  
   "locationConstraint": { 
     "isRequired": "false",  
@@ -140,15 +134,16 @@ Content-type: application/json
       } 
     ] 
   },  
-  "timeConstraint": { 
+  "timeConstraint": {
+    "activityDomain":"unrestricted", 
     "timeslots": [ 
       { 
         "start": { 
-          "dateTime": "2016-10-20T07:00:00",  
+          "dateTime": "2017-04-17T09:00:00",  
           "timeZone": "Pacific Standard Time" 
         },  
         "end": { 
-          "dateTime": "2016-10-20T17:00:00",  
+          "dateTime": "2017-04-19T17:00:00",  
           "timeZone": "Pacific Standard Time" 
         } 
       } 
@@ -156,7 +151,7 @@ Content-type: application/json
   },  
   "meetingDuration": "PT2H",
   "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "60"
+  "minimumAttendeePercentage": "100"
 }
 ```
 
@@ -171,97 +166,76 @@ Here is an example response. Note: The response object shown here may be truncat
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
+Preference-Applied: outlook.timezone="Pacific Standard Time"
+Content-Length: 976
 
 {
-   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
-   "meetingTimeSuggestions":[
-      {
-         "meetingTimeSlot":{
-            "start":{
-               "dateTime":"2016-10-20T15:00:00.0000000",
-               "timeZone":"UTC"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
+    "emptySuggestionsReason":"",
+    "meetingTimeSuggestions":[
+        {
+            "confidence":100.0,
+            "organizerAvailability":"free",
+            "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available.",
+            "meetingTimeSlot":{
+                "start":{
+                    "dateTime":"2017-04-17T18:00:00.0000000",
+                    "timeZone":"Pacific Standard Time"
+                },
+                "end":{
+                    "dateTime":"2017-04-17T20:00:00.0000000",
+                    "timeZone":"Pacific Standard Time"
+                }
             },
-            "end":{
-               "dateTime":"2016-10-20T17:00:00.0000000",
-               "timeZone":"UTC"
-            }
-         },
-         "confidence":100,
-         "organizerAvailability":"free",
-         "attendeeAvailability":[
-            {
-               "attendee":{
-                  "type":"required",
-                  "emailAddress":{
-                    "name": "Fanny Downs",
-                    "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
-                  }
-               },
-               "availability":"free"
+            "attendeeAvailability":[
+                {
+                    "availability":"free",
+                    "attendee":{
+                        "type":"required",
+                        "emailAddress":{
+                            "address":"fannyd@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations":[
+                {
+                    "displayName":"Conf room Hood"
+                }
+            ]
+        },
+        {
+            "confidence":100.0,
+            "organizerAvailability":"free",
+            "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available.",
+            "meetingTimeSlot":{
+                "start":{
+                    "dateTime":"2017-04-17T20:00:00.0000000",
+                    "timeZone":"Pacific Standard Time"
+                },
+                "end":{
+                    "dateTime":"2017-04-17T22:00:00.0000000",
+                    "timeZone":"Pacific Standard Time"
+                }
             },
-            {
-               "attendee":{
-                  "type":"required",
-                  "emailAddress":{
-                    "name": "Dana Swope",
-                    "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
-                  }
-               },
-               "availability":"free"
-            }
-         ],
-         "locations":[
-            {
-               "displayName":"Conf room Hood"
-            }
-         ],
-         "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available."
-      },
-      {
-         "meetingTimeSlot":{
-            "start":{
-               "dateTime":"2016-10-20T17:00:00.0000000",
-               "timeZone":"UTC"
-            },
-            "end":{
-               "dateTime":"2016-10-20T19:00:00.0000000",
-               "timeZone":"UTC"
-            }
-         },
-         "confidence":100,
-         "organizerAvailability":"free",
-         "attendeeAvailability":[
-            {
-               "attendee":{
-                  "type":"required",
-                  "emailAddress":{
-                    "name": "Fanny Downs",
-                    "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
-                  }
-               },
-               "availability":"free"
-            },
-            {
-               "attendee":{
-                  "type":"required",
-                  "emailAddress":{
-                    "name": "Dana Swope",
-                    "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
-                  }
-               },
-               "availability":"unknown"
-            }
-         ],
-         "locations":[
-            {
-               "displayName":"Conf room Hood"
-            }
-         ],
-         "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available."
-      }
-   ],
-   "emptySuggestionsReason":""
+            "attendeeAvailability":[
+                {
+                    "availability":"free",
+                    "attendee":{
+                        "type":"required",
+                        "emailAddress":{
+                            "address":"fannyd@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations":[
+                {
+                    "displayName":"Conf room Hood"
+                }
+            ]
+        }
+   ]
 }
 ```
 

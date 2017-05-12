@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a [of
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
 |productIds|String collection|The Product Ids that represent the Office365 Suite SKU. Possible values are: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`, `pdRetail`.|
-|excludedOfficeApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the Apps which are excluded from the selected Office365 Product Id.|
+|excludedApps|[excludedApps](../resources/intune_apps_excludedapps.md)|The property to represent the Apps which are excluded from the selected Office365 Product Id.|
 
 
 
@@ -61,7 +61,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}
 Content-type: application/json
-Content-length: 1030
+Content-length: 1024
 
 {
   "displayName": "Display Name value",
@@ -84,7 +84,7 @@ Content-length: 1030
   "productIds": [
     "o365BusinessRetail"
   ],
-  "excludedOfficeApps": {
+  "excludedApps": {
     "@odata.type": "microsoft.graph.excludedApps",
     "access": true,
     "excel": true,
@@ -108,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1191
+Content-Length: 1185
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -134,7 +134,7 @@ Content-Length: 1191
   "productIds": [
     "o365BusinessRetail"
   ],
-  "excludedOfficeApps": {
+  "excludedApps": {
     "@odata.type": "microsoft.graph.excludedApps",
     "access": true,
     "excel": true,

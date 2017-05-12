@@ -3,18 +3,21 @@
 Merge the range cells into one region in the worksheet.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/merge
-POST /workbook/worksheets(<id|name>)/range(<address>)/merge
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/merge
+POST /workbook/worksheets/{id|name}/range(<address>)/merge
+POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

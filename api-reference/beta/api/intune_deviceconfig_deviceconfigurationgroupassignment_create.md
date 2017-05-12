@@ -6,7 +6,7 @@ Create a new [deviceConfigurationGroupAssignment](../resources/intune_deviceconf
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -38,6 +38,7 @@ The following table shows the properties that are required when you create a dev
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device configuration to.|
+|excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 
 
 
@@ -50,11 +51,12 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/
 Content-type: application/json
-Content-length: 121
+Content-length: 146
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationGroupAssignment",
-  "targetGroupId": "Target Group Id value"
+  "targetGroupId": "Target Group Id value",
+  "excludeGroup": true
 }
 ```
 
@@ -63,12 +65,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 170
+Content-Length: 195
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationGroupAssignment",
   "id": "561d26c5-26c5-561d-c526-1d56c5261d56",
-  "targetGroupId": "Target Group Id value"
+  "targetGroupId": "Target Group Id value",
+  "excludeGroup": true
 }
 ```
 

@@ -1,0 +1,48 @@
+﻿# windowsManagementAppHealthState resource type
+
+> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
+Windows management app health state entity.
+## Methods
+|Method|Return Type|Description|
+|---|---|---|
+|[List windowsManagementAppHealthStates](../api/intune_devicefe_windowsmanagementapphealthstate_list.md)|[windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) collection|List properties and relationships of the [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) objects.|
+|[Get windowsManagementAppHealthState](../api/intune_devicefe_windowsmanagementapphealthstate_get.md)|[windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md)|Read properties and relationships of the [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) object.|
+|[Create windowsManagementAppHealthState](../api/intune_devicefe_windowsmanagementapphealthstate_create.md)|[windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md)|Create a new [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) object.|
+|[Delete windowsManagementAppHealthState](../api/intune_devicefe_windowsmanagementapphealthstate_delete.md)|None|Deletes a [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md).|
+|[Update windowsManagementAppHealthState](../api/intune_devicefe_windowsmanagementapphealthstate_update.md)|[windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md)|Update the properties of a [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) object.|
+
+## Properties
+|Property|Type|Description|
+|---|---|---|
+|id|String|Unique Identifier for the Windows management app health state|
+|healthStatus|String|Windows management app health status.|
+|installedVersion|String|Windows management app installed version.|
+|lastCheckInTime|DateTimeOffset|Windows management app last check-in time.|
+|deviceName|String|Name of the device on which Windows management app is installed.|
+|deviceOSVersion|String|Windows 10 OS version of the device on which Windows management app is installed.|
+
+## Relationships
+None
+## JSON Representation
+Here is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsManagementAppHealthState"
+}
+-->
+```json
+{
+  "@odata.type": "#microsoft.graph.windowsManagementAppHealthState",
+  "id": "String (identifier)",
+  "healthStatus": "String",
+  "installedVersion": "String",
+  "lastCheckInTime": "String (timestamp)",
+  "deviceName": "String",
+  "deviceOSVersion": "String"
+}
+```
+
+
+
