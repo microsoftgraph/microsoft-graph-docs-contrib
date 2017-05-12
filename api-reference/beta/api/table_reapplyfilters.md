@@ -3,17 +3,20 @@
 Reapplies all the filters currently on the table.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/reapplyFilters
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/reapplyFilters
+POST /workbook/tables/{id|name}/reapplyFilters
+POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -30,7 +33,7 @@ Here is an example of the request.
   "name": "table_reapplyfilters"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/reapplyFilters
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
 ```
 
 ##### Response

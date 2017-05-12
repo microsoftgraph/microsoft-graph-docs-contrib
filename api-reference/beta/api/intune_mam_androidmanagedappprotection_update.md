@@ -56,6 +56,11 @@ The following table shows the properties that are required when you create a [an
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|disableAppPinIfDevicePinIsSet|Boolean|Indicates whether use of the app pin is required if the device pin is set. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumRequiredOsVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |screenCaptureBlocked|Boolean|Indicates whether a managed user can take screen captures of managed apps|
@@ -72,7 +77,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1265
+Content-length: 1579
 
 {
   "displayName": "Display Name value",
@@ -103,6 +108,11 @@ Content-length: 1265
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
+  "disableAppPinIfDevicePinIsSet": true,
+  "minimumRequiredOsVersion": "Minimum Required Os Version value",
+  "minimumWarningOsVersion": "Minimum Warning Os Version value",
+  "minimumRequiredAppVersion": "Minimum Required App Version value",
+  "minimumWarningAppVersion": "Minimum Warning App Version value",
   "targetedSecurityGroupsCount": 11,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
@@ -117,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1753
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -151,6 +161,11 @@ Content-Length: 1439
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
+  "disableAppPinIfDevicePinIsSet": true,
+  "minimumRequiredOsVersion": "Minimum Required Os Version value",
+  "minimumWarningOsVersion": "Minimum Warning Os Version value",
+  "minimumRequiredAppVersion": "Minimum Required App Version value",
+  "minimumWarningAppVersion": "Minimum Warning App Version value",
   "targetedSecurityGroupsCount": 11,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"

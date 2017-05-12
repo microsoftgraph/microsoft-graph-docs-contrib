@@ -6,7 +6,7 @@ Get the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,14 +14,6 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /deviceManagement/deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceConfigurationDeviceStateSummaries/
 ```
 
 ## Optional query parameters
