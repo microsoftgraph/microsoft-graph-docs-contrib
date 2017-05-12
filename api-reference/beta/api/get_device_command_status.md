@@ -110,14 +110,14 @@ HTTP/1.1 200 OK
 
 
 
-## Get Command Payload
+## Get command payload
 
 Get a response payload for a specific action on a device. The response payload is used when querying an app service to carry data back.
 
 
 ### Prerequisites
 
-The following scope is required to execute this API: Device.Command
+The following scope is required to execute this API: *Device.Command*
 
 ### HTTP request
 
@@ -132,7 +132,7 @@ GET me/beta/devices/{id}/command/{id}/responsePayload
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer <token>. Required. |
+|Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
 
