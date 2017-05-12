@@ -13,12 +13,12 @@ GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
 
-## Optional Request parameter
-In the request URL, provide an optional query parameter 
+## Optional request parameter
+In the request URL, provide an optional query parameter.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
+|valuesOnly|Boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
 
 
 ## Request headers
@@ -30,7 +30,7 @@ In the request URL, provide an optional query parameter
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here is an example that shows how to call this API.
 ##### Request
 Here is an example of the request.
 <!-- {

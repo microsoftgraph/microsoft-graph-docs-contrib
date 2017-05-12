@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
-## Optional Query parameters
+## Optional query parameters
 In the request URL, provide an optonal query parameter. 
 
 | Parameter	   | Type	|Description|
@@ -28,7 +28,7 @@ In the request URL, provide an optonal query parameter.
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here is an example that shows how to call this API.
 ##### Request
 Here is an example of the request.
 <!-- {
