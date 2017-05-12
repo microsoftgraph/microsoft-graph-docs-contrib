@@ -20,6 +20,7 @@ Inherits from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroup
 |Property|Type|Description|
 |---|---|---|
 |targetGroupId|String|The Id of the AAD group we are targeting the mobile app to. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
+|vpnConfigurationId|String|The Id of the Vpn Profile to apply for this app. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
 |id|String|Key of the entity. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
 |installIntent|String|The install intent defined by the admin. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
@@ -41,6 +42,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.mobileAppVppGroupAssignment",
   "targetGroupId": "String",
+  "vpnConfigurationId": "String",
   "id": "String (identifier)",
   "installIntent": "String",
   "useDeviceLicensing": true

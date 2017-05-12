@@ -1,14 +1,15 @@
 # group resource type
 
-Represents an Azure Active Directory group, which can be an Office 365 group, dynamic group, or security group.
+Represents an Azure Active Directory group, which can be an Office 365 group, Microsoft Team, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+This resource supports:
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
-## Delta query support
-
-This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
-by providing a [delta](../api/group_delta.md) function.
+> **Microsoft Teams and the group APIs**:
+> * Microsoft Teams are built upon Office 365 groups.  All the following methods for groups can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  There are also some methods specific to Microsoft Teams, which are clearly labelled as such.
+> * Care must be taken if using the group APIs in a Microsoft Teams app - e.g. as part inside a 'tab' or 'bot' running inside Microsoft Teams - rather than in a standalone app.  This is because of differing consent models. Typically, users can directly consent to your Microsoft Teams app within a specific team.  However, currently [enterprise admins must also consent to your app (as registered in Azure AD) using the group APIs](../../../concepts/known_issues.md), at which point it then has API access all of the groups/teams for each user.  You should ensure your Microsoft Teams app copes with not having the permissions it needs, and that it respects the user's intention about which teams it should operate in.  Note that these considerations do not apply if your are just using non-group [user APIs](user.md) that the user can always consent to themselves.
 
 ## Methods
 
@@ -20,6 +21,7 @@ by providing a [delta](../api/group_delta.md) function.
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
 |[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
 |[Add owner](../api/group_post_owners.md) |[directoryObject](directoryobject.md)| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
+|[Remove owner](../api/group_delete_owners.md) | None |Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the **owners** navigation property.|
 |[List members](../api/group_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
 |[Add member](../api/group_post_members.md) |[directoryObject](directoryobject.md)| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
 |[Remove member](../api/group_delete_members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
@@ -46,6 +48,8 @@ by providing a [delta](../api/group_delta.md) function.
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
 |[List photos](../api/group_list_photos.md) |[Photo](photo.md) collection| Get a photo object collection.|
+|[List channel](../api/group_list_channels.md) |[Channel](channel.md) collection| Get a channel object collection.|
+|[Create channel](../api/group_post_channels.md) |[Channel](channel.md)| Create a new Channel by posting to the channels collection.|
 |[Create setting](../api/directorysetting_post_settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
 |[Get setting](../api/directorysetting_get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
 |[List settings](../api/directorysetting_list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
@@ -77,10 +81,11 @@ by providing a [delta](../api/group_delta.md) function.
 |membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains "**DynamicMembership**"). For more information about the syntax of the membership rule, please refer to [Membership Rules syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
 |membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are "On" or "Paused"|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Supports $filter.|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector) during provisioning. |
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only. |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter.|
 |preferredLanguage|String|The preferred language for an Office 365 group. Should follow ISO 639-1 Code; for example "en-US".|
-|proxyAddresses|String collection| The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter. |
+|proxyAddresses|String collection| For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter. |
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter.|
 |theme|String|Specifies an Office 365 group's color theme. Possible values are **Teal**, **Purple**, **Green**, **Blue**, **Pink**, **Orange** or **Red**.|
 |unseenCount|Int32|Count of posts that the current  user has not seen since his last visit.|
@@ -94,19 +99,22 @@ by providing a [delta](../api/group_delta.md) function.
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
+|createdDateTime|DateTimeOffset| The date and time the group was created. |
+|deletedDateTime|DateTimeOffset| The date and time the group was deleted. |
 |drive|[drive](drive.md)|The group's drive. Read-only.|
 |endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
 |events|[event](event.md) collection|The group's events.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the group. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
-|notes|[Notes](notes.md)| Read-only.|
+|onenote|[OneNote](onenote.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
 |plans|[plan](plan.md) collection| Read-only. Nullable. Plans owned by the group. A group can own no more than one plan. |
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
 |settings|[directorySetting](directorySetting.md) collection| Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.|
+|sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 
@@ -125,9 +133,10 @@ Here is a JSON representation of the resource
     "createdOnBehalfOf",
     "drive",
     "events",
+    "extensions",
     "memberOf",
     "members",
-    "notes",
+    "onenote",
     "owners",
     "photo",
     "photos",    
@@ -143,6 +152,8 @@ Here is a JSON representation of the resource
   "accessType": "string",
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
@@ -153,6 +164,7 @@ Here is a JSON representation of the resource
   "mailEnabled": true,
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "proxyAddresses": ["string"],
@@ -171,6 +183,7 @@ Here is a JSON representation of the resource
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
   "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
 
@@ -179,8 +192,9 @@ Here is a JSON representation of the resource
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

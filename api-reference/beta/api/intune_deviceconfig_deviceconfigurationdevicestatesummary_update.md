@@ -6,7 +6,7 @@ Update the properties of a [deviceConfigurationDeviceStateSummary](../resources/
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,14 +14,6 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate//deviceConfigurationDeviceStateSummaries/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceConfigurationDeviceStateSummaries/
 ```
 
 ## Request headers

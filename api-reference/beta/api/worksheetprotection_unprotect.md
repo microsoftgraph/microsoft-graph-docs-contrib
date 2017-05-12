@@ -3,16 +3,19 @@
 Unprotect a worksheet
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/protection/unprotect
+POST /workbook/worksheets/{id|name}/protection/unprotect
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -34,7 +37,7 @@ Here is an example of the request.
   "name": "worksheetprotection_unprotect"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/protection/unprotect
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
 Content-type: application/json
 Content-length: 34
 

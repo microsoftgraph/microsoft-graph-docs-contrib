@@ -46,13 +46,14 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}/assign
 
 Content-type: application/json
-Content-length: 266
+Content-length: 325
 
 {
   "mobileAppGroupAssignments": [
     {
       "@odata.type": "#microsoft.graph.mobileAppGroupAssignment",
       "targetGroupId": "Target Group Id value",
+      "vpnConfigurationId": "Vpn Configuration Id value",
       "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
       "installIntent": "notApplicable"
     }

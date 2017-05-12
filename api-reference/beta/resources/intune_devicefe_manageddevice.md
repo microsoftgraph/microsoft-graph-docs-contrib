@@ -13,12 +13,16 @@ Devices that are managed or pre-enrolled through Intune
 |[wipe action](../api/intune_devicefe_manageddevice_wipe.md)|None|Not yet documented|
 |[resetPasscode action](../api/intune_devicefe_manageddevice_resetpasscode.md)|None|Not yet documented|
 |[remoteLock action](../api/intune_devicefe_manageddevice_remotelock.md)|None|Not yet documented|
+|[requestRemoteAssistance action](../api/intune_devicefe_manageddevice_requestremoteassistance.md)|None|Not yet documented|
 |[enableLostMode action](../api/intune_devicefe_manageddevice_enablelostmode.md)|None|Not yet documented|
 |[disableLostMode action](../api/intune_devicefe_manageddevice_disablelostmode.md)|None|Not yet documented|
 |[locateDevice action](../api/intune_devicefe_manageddevice_locatedevice.md)|None|Not yet documented|
 |[bypassActivationLock action](../api/intune_devicefe_manageddevice_bypassactivationlock.md)|None|Not yet documented|
 |[rebootNow action](../api/intune_devicefe_manageddevice_rebootnow.md)|None|Not yet documented|
 |[recoverPasscode action](../api/intune_devicefe_manageddevice_recoverpasscode.md)|None|Not yet documented|
+|[cleanWindowsDevice action](../api/intune_devicefe_manageddevice_cleanwindowsdevice.md)|None|Not yet documented|
+|[logoutSharedAppleDeviceActiveUser action](../api/intune_devicefe_manageddevice_logoutsharedappledeviceactiveuser.md)|None|Not yet documented|
+|[deleteUserFromSharedAppleDevice action](../api/intune_devicefe_manageddevice_deleteuserfromsharedappledevice.md)|None|Not yet documented|
 |[List detectedApps](../api/intune_devicefe_manageddevice_list_detectedapp.md)|[detectedApp](../resources/intune_devicefe_detectedapp.md) collection|Get the detectedApps from the detectedApps navigation property.|
 |[Get deviceCategory](../api/intune_devicefe_manageddevice_get_devicecategory.md)|[deviceCategory](../resources/intune_devicefe_devicecategory.md)|Get the [deviceCategory](../resources/intune_devicefe_devicecategory.md) from the deviceCategory navigation property.|
 
@@ -53,10 +57,14 @@ Devices that are managed or pre-enrolled through Intune
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
 |deviceRegistrationState|String|Device registration state. Possible values are: `notRegistered`, `smsidConflict`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `resetCert`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Device category display name|
-|isSupervised|Boolean|Not yet documented|
+|isSupervised|Boolean|Device supervised status|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange.|
 |exchangeAccessState|String|The Access State of the device in Exchange. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
+|remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
+|isEncrypted|Boolean|Device encryption status|
+|model|String|Model of the device|
+|manufacturer|String|Manufacturer of the device|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -93,7 +101,17 @@ Here is a JSON representation of the resource.
     "wifiMac": "String",
     "operatingSystemLanguage": "String",
     "isSupervised": true,
-    "isEncrypted": true
+    "isEncrypted": true,
+    "isSharedDevice": true,
+    "sharedDeviceCachedUsers": [
+      {
+        "@odata.type": "microsoft.graph.sharedAppleDeviceUser",
+        "userPrincipalName": "String",
+        "dataToSync": true,
+        "dataQuota": 1024,
+        "dataUsed": 1024
+      }
+    ]
   },
   "ownerType": "String",
   "deviceActionResults": [
@@ -130,7 +148,11 @@ Here is a JSON representation of the resource.
   "isSupervised": true,
   "exchangeLastSuccessfulSyncDateTime": "String (timestamp)",
   "exchangeAccessState": "String",
-  "exchangeAccessStateReason": "String"
+  "exchangeAccessStateReason": "String",
+  "remoteAssistanceSessionUrl": "String",
+  "isEncrypted": true,
+  "model": "String",
+  "manufacturer": "String"
 }
 ```
 

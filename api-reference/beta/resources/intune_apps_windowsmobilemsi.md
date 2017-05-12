@@ -43,7 +43,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |commandLine|String|The command line.|
-|productCode|Guid|The product code.|
+|productCode|String|The product code.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -89,7 +89,7 @@ Here is a JSON representation of the resource.
   "size": 1024,
   "identityVersion": "String",
   "commandLine": "String",
-  "productCode": "<Unknown Primitive Type Edm.Guid>"
+  "productCode": "String"
 }
 ```
 
