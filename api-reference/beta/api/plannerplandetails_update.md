@@ -26,6 +26,9 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [plannerPlanDetails](../resources/plannerplandetails.md) object in the response body.
+
+This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
+
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,21 +37,19 @@ Here is an example of the request.
   "name": "update_plannerplandetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/planner/plans/<id>/details
+PATCH https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
 Content-type: application/json
-Content-length: 177
+Content-length: 212
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
   "sharedWith": {
+    "6463a5ce-2119-4198-9f2a-628761df4a62" : true,
+    "d95e6152-f683-4d78-9ff5-67ad180fea4a" : false,
   },
   "categoryDescriptions": {
-    "category1": "1-value",
-    "category2": "2-value",
-    "category3": "3-value",
-    "category4": "4-value",
-    "category5": "5-value",
-    "category6": "6-value"
+    "category1": "Indoors",
+    "category3": null,
   }
 }
 ```
@@ -62,20 +63,22 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 197
+Content-length: 373
 
 {
   "sharedWith": {
+    "aaa27244-1db4-476a-a5cb-004607466324" : true,
+    "6463a5ce-2119-4198-9f2a-628761df4a62" : true
   },
   "categoryDescriptions": {
-    "category1": "1-value",
-    "category2": "2-value",
-    "category3": "3-value",
-    "category4": "4-value",
-    "category5": "5-value",
-    "category6": "6-value"
+    "category1": "Indoors",
+    "category2": "Outdoors",
+    "category3": null,
+    "category4": null,
+    "category5": "Needs materials",
+    "category6": "Needs equipment"
   },
-  "id": "id-value"
+  "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
 

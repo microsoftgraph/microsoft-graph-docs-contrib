@@ -19,6 +19,7 @@ Scheduled Action Configuration
 |id|String|Key of the entity.|
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced.|
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
+|notificationTemplateId|String|What notification Message template to use|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -38,7 +39,8 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "id": "String (identifier)",
   "gracePeriodHours": 1024,
-  "actionType": "String"
+  "actionType": "String",
+  "notificationTemplateId": "String"
 }
 ```
 

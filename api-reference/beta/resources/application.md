@@ -22,6 +22,7 @@ Here is a JSON representation of the resource
   "appId": "string",
   "appRoles": [{"@odata.type": "microsoft.graph.approle"}],
   "availableToOtherOrganizations": true,
+  "deletedDateTime": "String (timestamp)", 
   "displayName": "string",
   "errorUrl": "string",
   "groupMembershipClaims": "string",
@@ -52,6 +53,7 @@ Here is a JSON representation of the resource
 |appRoles|[appRole](approle.md) collection|The collection of application roles that an application may declare. These roles can be assigned to users, groups or service principals. Not nullable.|
 |availableToOtherOrganizations|Boolean| **true** if the application is shared with other tenants; otherwise, **false**.|
 |displayName|String|The display name for the application.|
+|deletedDateTime|DateTimeOffset| The date and time the application was deleted. |
 |errorUrl|String|                              |
 |groupMembershipClaims|String|A bitmask that configures the "groups" claim issued in a user or OAuth 2.0 access token that the application expects. The bitmask values are: 0: None, 1: Security groups and Azure AD roles, 2: Reserved, and 4: Reserved. Setting the bitmask to 7 will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of. |
 |homepage|String|The URL to the application's homepage.|

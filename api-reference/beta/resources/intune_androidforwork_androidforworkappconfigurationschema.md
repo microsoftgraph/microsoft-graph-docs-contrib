@@ -52,7 +52,7 @@ Here is a JSON representation of the resource.
       "selections": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",
-          "key": "String",
+          "name": "String",
           "value": "String"
         }
       ]

@@ -6,7 +6,7 @@ Read properties and relationships of the [deviceComplianceActionItem](../resourc
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -42,14 +42,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 203
+Content-Length: 268
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
     "id": "e01a1893-1893-e01a-9318-1ae093181ae0",
     "gracePeriodHours": 0,
-    "actionType": "notification"
+    "actionType": "notification",
+    "notificationTemplateId": "Notification Template Id value"
   }
 }
 ```

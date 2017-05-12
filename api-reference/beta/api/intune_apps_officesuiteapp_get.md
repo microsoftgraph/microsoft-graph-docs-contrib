@@ -46,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1288
+Content-Length: 1282
 
 {
   "value": {
@@ -73,7 +73,7 @@ Content-Length: 1288
     "productIds": [
       "o365BusinessRetail"
     ],
-    "excludedOfficeApps": {
+    "excludedApps": {
       "@odata.type": "microsoft.graph.excludedApps",
       "access": true,
       "excel": true,

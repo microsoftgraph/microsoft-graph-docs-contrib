@@ -3,18 +3,21 @@
 Unmerge the range cells into separate cells.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/unmerge
-POST /workbook/worksheets(<id|name>)/range(<address>)/unmerge
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/unmerge
+POST /workbook/worksheets/{id|name}/range(<address>)/unmerge
+POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
