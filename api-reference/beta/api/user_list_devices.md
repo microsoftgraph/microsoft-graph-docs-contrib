@@ -1,12 +1,12 @@
-# Get device
+# List user devices
 
 Get a list of devices for a user that is associated with their Microsoft identity.
 
 ## Prerequisites
 
-The following scope is required to execute this API: Device.Read
+The following scope is required to execute this API: *Device.Read*
 
-## HTTP Request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -14,19 +14,19 @@ The following scope is required to execute this API: Device.Read
 GET me/devices
 ```
 
-## Request Headers
+## Request headers
 
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer <token>. Required. |
+|Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful this method returns a 200 response code and the user device properties in the response body
+If successful, this method returns a 200 response code and the user device properties in the response body.
 
 ```http
 HTTP/1.1 200 OK
@@ -53,23 +53,24 @@ HTTP/1.1 200 OK
 
 ## User device properties
 
-Name|Type|Description R/O
-----|------|------
-name| String | Friendly name of a device
-id| String| ID of a device
-status | String| Device is online or offline
-commands | contained navigation Collection(graph.microsoft.command) | Set of commands sent to this device
-platform |String|Platform of device
-kind| String| Form factor of device
-image| String| Location to icon image of device
-model| String| Model of device
-manufacturer| String| Manufacturer of device
+|**Name**|**Type**|**Description R/O**|
+|:----|:------|:------|
+|name| String | Friendly name of a device|
+|id| String| ID of a device|
+|status | String| Device is online or offline|
+|commands | contained navigation Collection(graph.microsoft.command) | Set of commands sent to this device|
+|platform |String|Platform of device|
+|kind| String| Form factor of device|
+|image| String| Location to icon image of device|
+|model| String| Model of device|
+|manufacturer| String| Manufacturer of device|
 
 ## Example
-This example will return the list of devices for a user. To command a device using `me/devices/{id}/command` you will need to get the id of the device that is returned below.
+This example will return the list of devices for a user. To command a device using `me/devices/{id}/command`, you will need to get the ID of the device that is returned.
 
-## Request
-Here is an example of the request
+### Request
+Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_devices"
@@ -82,7 +83,7 @@ Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
 
-## Response
+### Response
 
 <!-- {
   "blockType": "response",
