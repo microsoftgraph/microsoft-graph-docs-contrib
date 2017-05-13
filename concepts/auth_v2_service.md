@@ -13,7 +13,7 @@ The basic steps required to authenticate a background service and get a token fr
 ## 1. Register your app
 To authenticate with the Azure v2.0 endpoint, you must first register your app at the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/). You can use either a Microsoft account or a work or school account to register your app. 
 
-The following screenshot shows a Web app registration that has been configured for a background service.
+The following screenshot shows a web app registration that has been configured for a background service.
 ![Service app registration](./images/v2-service-registration.png)
 
 For a background service, you need to register your app for the Web platform and copy the following values:

@@ -25,7 +25,7 @@ GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## Get the document library assocaited with a group
+## Get the document library associated with a group
 
 To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.
 
