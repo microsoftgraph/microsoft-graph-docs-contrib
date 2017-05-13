@@ -603,7 +603,7 @@
     <Item text="Domains" url="/en-us/api-reference/v1.0/resources/domain" >
 		<Item text="List domains" url="/en-us/api-reference/v1.0/api/domain_list" />
 		<Item text="Create domain" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
-		<Item text="Delete domain" url="/en-us/api-reference/v1.0/api/domain_forcedelete" />
+		<Item text="Delete domain" url="/en-us/api-reference/v1.0/api/domain_delete" />
 		<Item text="Get domain" url="/en-us/api-reference/v1.0/api/domain_get" />
 		<Item text="Update domain" url="/en-us/api-reference/v1.0/api/domain_update" />
 		<Item text="Verify domain" url="/en-us/api-reference/v1.0/api/domain_verify" />
