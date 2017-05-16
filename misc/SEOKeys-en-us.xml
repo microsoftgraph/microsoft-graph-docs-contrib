@@ -3629,12 +3629,11 @@
       	<Item text="List mobileAppIdentifierDeployments" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionpolicy_list_mobileappidentifierdeployment"/>
       	<Item text="Get managed app policy deployment summary" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionpolicy_get_managedapppolicydeploymentsummary"/>
       	<Item text="List Windows Information Protection app locker files" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionpolicy_list_windowsinformationprotectionapplockerfile"/>
-      	<Item text="List Windows Information Protection app locker files" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionpolicy_list_windowsinformationprotectionapplockerfile"/>
       </Item>
     </Item>
     <Item text="Onboarding" url="/en-us/api-reference/beta/resources/intune_onboarding_conceptual">
-        <Item text="Apple push notification certificate setting" url="/en-us/api-reference/beta/resources/intune_onboarding_applepushnotificationcertificatesetting"/>
-        <Item text="Apple volume purchase program token" url="/en-us/api-reference/beta/resources/intune_onboarding_applevolumepurchaseprogramtoken">
+      <Item text="Apple push notification certificate setting" url="/en-us/api-reference/beta/resources/intune_onboarding_applepushnotificationcertificatesetting"/>
+      <Item text="Apple volume purchase program token" url="/en-us/api-reference/beta/resources/intune_onboarding_applevolumepurchaseprogramtoken">
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_delete"/>
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_get"/>
@@ -3643,9 +3642,9 @@
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_update"/>
       </Item>
       <Item text="Certificate connector setting" url="/en-us/api-reference/beta/resources/intune_onboarding_certificateconnectorsetting"/>
-        <Item text="Default device enrollment restirction" url="/en-us/api-reference/beta/resources/intune_onboarding_defaultdeviceenrollmentrestrictions"/>
-        <Item text="Default enrollment Windows Shell for Business settings" url="/en-us/api-reference/beta/resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings"/>
-        <Item text="DEP onboard setting" url="/en-us/api-reference/beta/resources/intune_onboarding_deponboardingsetting">
+      <Item text="Default device enrollment restirction" url="/en-us/api-reference/beta/resources/intune_onboarding_defaultdeviceenrollmentrestrictions"/>
+      <Item text="Default enrollment Windows Shell for Business settings" url="/en-us/api-reference/beta/resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings"/>
+      <Item text="DEP onboard setting" url="/en-us/api-reference/beta/resources/intune_onboarding_deponboardingsetting">
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_deponboardingsetting_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_deponboardingsetting_delete"/>
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_deponboardingsetting_get"/>
@@ -3666,8 +3665,8 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_update"/>
       </Item>
       <Item text="Device enrollment platform restrictions" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictions"/>
-        <Item text="Device geolocation" url="/en-us/api-reference/beta/resources/intune_onboarding_devicegeolocation"/>
-        <Item text="Device management Exchange connector" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
+      <Item text="Device geolocation" url="/en-us/api-reference/beta/resources/intune_onboarding_devicegeolocation"/>
+      <Item text="Device management Exchange connector" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_delete"/>
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_get"/>
@@ -3681,11 +3680,11 @@
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update"/>
       </Item>
       <Item text="Device operating system summary" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceoperatingsystemsummary"/>
-        <Item text="Hardware information" url="/en-us/api-reference/beta/resources/intune_onboarding_hardwareinformation"/>
-        <Item text="Intune brand" url="/en-us/api-reference/beta/resources/intune_onboarding_intunebrand"/>
-        <Item text="Located device action result" url="/en-us/api-reference/beta/resources/intune_onboarding_locatedeviceactionresult"/>
-        <Item text="MIME content" url="/en-us/api-reference/beta/resources/intune_onboarding_mimecontent"/>
-        <Item text="On-premises conditional access settings" url="/en-us/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings">
+      <Item text="Hardware information" url="/en-us/api-reference/beta/resources/intune_onboarding_hardwareinformation"/>
+      <Item text="Intune brand" url="/en-us/api-reference/beta/resources/intune_onboarding_intunebrand"/>
+      <Item text="Located device action result" url="/en-us/api-reference/beta/resources/intune_onboarding_locatedeviceactionresult"/>
+      <Item text="MIME content" url="/en-us/api-reference/beta/resources/intune_onboarding_mimecontent"/>
+      <Item text="On-premises conditional access settings" url="/en-us/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings">
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_onpremisesconditionalaccesssettings_get"/>
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_onpremisesconditionalaccesssettings_update"/>
       </Item>
@@ -3712,8 +3711,8 @@
         <Item text="Upload DEP token" url="/en-us/api-reference/beta/api/intune_onboarding_organization_uploaddeptoken"/>
       </Item>
       <Item text="Reset action passcode result" url="/en-us/api-reference/beta/resources/intune_onboarding_resetpasscodeactionresult"/>
-        <Item text="RGB color" url="/en-us/api-reference/beta/resources/intune_onboarding_rgbcolor"/>
-        <Item text="Sideloading key" url="/en-us/api-reference/beta/resources/intune_onboarding_sideloadingkey">
+      <Item text="RGB color" url="/en-us/api-reference/beta/resources/intune_onboarding_rgbcolor"/>
+      <Item text="Sideloading key" url="/en-us/api-reference/beta/resources/intune_onboarding_sideloadingkey">
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_delete"/>
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get"/>
