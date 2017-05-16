@@ -2782,11 +2782,12 @@
       <Item text="IPv4 range" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ipv4range"/>
       <Item text="Key value" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keyvalue"/>
       <Item text="Localized notification message" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localizednotificationmessage"/>
-      <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_create"/>
-      <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_delete"/>
-      <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_get"/>
-      <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_list"/>
-      <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_update"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_delete"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_get"/>
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_list"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_update"/>
+      </Item>
       <Item text="MacOS certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get"/>
         <Item text="Get device configuration overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get_deviceconfigurationdeviceoverview"/>
