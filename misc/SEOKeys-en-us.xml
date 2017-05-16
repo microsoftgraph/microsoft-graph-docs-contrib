@@ -1536,11 +1536,11 @@
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_delete"/>
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_update"/>
-        <Item text="List mdmAppConfigGroupAssignments" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_list_mdmappconfiggroupassignment"/>
-        <Item text="List managedDeviceMobileAppConfigurationDeviceStatuses" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_list_manageddevicemobileappconfigurationdevicestatus"/>
-        <Item text="List managedDeviceMobileAppConfigurationUserStatuses" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_list_manageddevicemobileappconfigurationuserstatus"/>
-        <Item text="Get managedDeviceMobileAppConfigurationDeviceSummary" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_get_manageddevicemobileappconfigurationdevicesummary"/>
-        <Item text="Get managedDeviceMobileAppConfigurationUserSummary" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_get_manageddevicemobileappconfigurationusersummary"/>
+        <Item text="List MDM app config group assignments" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_list_mdmappconfiggroupassignment"/>
+        <Item text="List managed device mobile app configuration device statuses" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_list_manageddevicemobileappconfigurationdevicestatus"/>
+        <Item text="List managed device mobile app configuration user statuses" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_list_manageddevicemobileappconfigurationuserstatus"/>
+        <Item text="Get managed device mobile app configuration device summary" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_get_manageddevicemobileappconfigurationdevicesummary"/>
+        <Item text="Get managed device mobile app configuration user summary" url="/en-us/api-reference/beta/api/intune_apps_androidforworkmobileappconfiguration_get_manageddevicemobileappconfigurationusersummary"/>
       </Item>
       <Item text="Android for Work settings" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworksettings">
       	<Item text="Get" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworksettings_get"/>
@@ -3008,12 +3008,12 @@
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_delete"/>
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_update"/>
-        <Item text="List deviceConfigurationGroupAssignments" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list_deviceconfigurationgroupassignment"/>
-        <Item text="List deviceConfigurationDeviceStatuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list_deviceconfigurationdevicestatus"/>
-        <Item text="List deviceConfigurationUserStatuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list_deviceconfigurationuserstatus"/>
-        <Item text="Get deviceConfigurationDeviceOverview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_get_deviceconfigurationdeviceoverview"/>
-        <Item text="Get deviceConfigurationUserOverview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_get_deviceconfigurationuseroverview"/>
-        <Item text="List settingStateDeviceSummaries" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list_settingstatedevicesummary"/>
+        <Item text="List device configuration group assignments" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list_deviceconfigurationgroupassignment"/>
+        <Item text="List device configuration device statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list_deviceconfigurationdevicestatus"/>
+        <Item text="List device configuration user statuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list_deviceconfigurationuserstatus"/>
+        <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_get_deviceconfigurationdeviceoverview"/>
+        <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_get_deviceconfigurationuseroverview"/>
+        <Item text="List setting state device summaries" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list_settingstatedevicesummary"/>
       </Item>
       <Item text="Windows 10 Enterprise modern app management configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration">
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration_create"/>
@@ -3422,13 +3422,6 @@
         <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_list_windowsmanagementapphealthstate"/>
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_get"/>
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_update"/>
-      </Item>
-      <Item text="Windows management app health state" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapphealthstate">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_list"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_get"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_create"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_delete"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_update"/>
       </Item>
     </Item>
     <Item text="App protection" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
