@@ -8,7 +8,7 @@ Your app must be registered with Azure AD. Registering your app establishes a un
 > Also, be aware that if you've previously registered apps in the Microsoft Azure Management portal, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure Management portal. 
 
 
-The following screenshot shows an example Web app registration that has been configured with a password and Implicit Flow. 
+The following screenshot shows an example web app registration that has been configured with a password and Implicit Flow. 
 ![Web app registration with password and Implicit Grant.](./images/v2-web-registration.png)
 
 To register your app, follow these steps; be sure to copy the indicated values to use when configuring authorization for your app:
@@ -38,7 +38,7 @@ To register your app, follow these steps; be sure to copy the indicated values t
 
 		The redirect URI is a unique URI provided for your application to ensure that messages sent to that URI are only sent to that application. 
 
-	**For Web apps**:
+	**For web apps**:
 
 	1. Select **Web**.
 
@@ -62,7 +62,7 @@ The following table shows the properties that you need to configure and copy for
 | App type | Platform | Application Id | Application Secret | Redirect URI/URL | Implicit Flow 
 | --- | --- | --- | --- | --- | --- |
 | Native/Mobile | Native | Assigned  | No | Assigned | No |
-| Web app | Web | Assigned | Yes | Yes | Optional <br/>Open ID Connect middleware uses Hybrid Flow by default | 
+| Web App | Web | Assigned | Yes | Yes | Optional <br/>Open ID Connect middleware uses Hybrid Flow by default (Yes) | 
 | Single Page App (SPA) | Web | Assigned | Yes | Yes | Yes <br/> SPAs use Open ID Connect Implicit Flow |
 | Service/Daemon | Web | Assigned | Yes | Yes | No |
 
