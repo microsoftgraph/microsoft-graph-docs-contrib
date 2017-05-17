@@ -228,7 +228,7 @@ This would return both the `contacts` collection, and the number of items in the
 
 To restrict the results of a request that match a search criterion, use the `$search` query parameter.
 
-> **Note:** You can currently **only** search [`message`](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) and [`person`] (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
+> **Note:** You can currently **only** search [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) and [person](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
 
 Search criteria are expressed using Advanced Query Syntax (AQS). The results are sorted by the date and time that the message was sent.
 
