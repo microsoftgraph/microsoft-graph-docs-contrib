@@ -9,7 +9,7 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 |[`$expand`](#expand)|Retrieves related resources.|[`/groups/{id}?$expand=members`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/22be6ccb-15a5-459f-94ac-d1393bdd9e66?$expand=members&method=GET&version=v1.0)
 |[`$orderby`](#orderby)|Orders results.|[`/users?$orderby=displayName,userPrincipalName desc`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$orderby=displayName,userPrincipalName%20DESC&method=GET&version=v1.0)
 |[`$top`](#top)|Limits results. Typically used with `$skipToken`.|[`/users?$top=2`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
-|[`$skipToken`](#skipToken)|Used with `$top` to retrieve a page of results.|See `nextLink` from the $top query for an example.
+|[`$skipToken`](#skiptoken)|Used with `$top` to retrieve a page of results.|See `nextLink` from the $top query for an example.
 |[`$count`](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
 <!-- TODO: figure out whether $search is actually used
 |[`$search`](#search)|A property and value pair separated by a colon.|
