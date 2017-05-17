@@ -1,6 +1,6 @@
 # Microsoft Graph optional query parameters
 
-Microsoft Graph provides several optional query parameters that you can use to specify and control the amount of data returned in a response. Microsoft Graph supports the following query options.
+Microsoft Graph provides several optional query parameters that you can use to specify and control the amount of data returned in a response. Microsoft Graph supports the following query parameters.
 
 |Name|Description|Example (click examples to try in [Graph Explorer][graph-explorer])
 |:---------------|:--------|:-------|
@@ -92,8 +92,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 ## `$select`
 
-To specify a different set of properties to return than the default set provided by the Graph, use the `$select` query option.
-The `$select` option allows for choosing a subset or superset of the default set returned.
+To specify a different set of properties to return than the default set provided by the Graph, use the `$select` query parameter.
+The `$select` parameter allows for choosing a subset or superset of the default set returned.
 For example, when retrieving your messages, you might want to select that only the `from` and `subject` properties of messages are returned.
 
 ```http
@@ -142,7 +142,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 ```
 
 > **Note:** The maximum number of expanded objects for a request is 20. Also, if you query on the [`user`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) resource, you can use `$expand` to get the properties of only one child object or collection at a time.
-
 The following example gets `user` objects, each with up to 20 `directReport` objects in the `directReports` collection expanded:
 
 ```http
@@ -152,10 +151,9 @@ GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 Some other resources may have a limit as well, so always check for possible errors.
 
 <!---The following shows a sample result that is returned in the response body.-->
-
 ## `$orderby`
 
-To specify the sort order of the items returned from the Microsof Graph API, use the `$orderby` query option.
+To specify the sort order of the items returned from the Microsof Graph API, use the `$orderby` query parameter.
 
 For example, to return the users in the organization ordered by their display name, the syntax is as follows:
 
@@ -175,8 +173,8 @@ To sort the results in ascending or descending order, append either `asc` or `de
 
 ## `$top`
 
-To specify the maximum number of items to return in a result set, use the `$top` query option.
-The `$top` query option identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query option.
+To specify the maximum number of items to return in a result set, use the `$top` query parameter.
+The `$top` query parameter identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query parameter.
 For example, to return the first five messages in the user's mailbox, the syntax is as follows:
 
 ```http
@@ -185,7 +183,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## `$skip`
 
-(To set the number of items to skip before retrieving items in a collection, use the `$skip` query option.
+(To set the number of items to skip before retrieving items in a collection, use the `$skip` query parameter.
 For example, to return events sorted by date created, and starting with the 21st event, the syntax is as follows.
 
 ```http
@@ -194,10 +192,10 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## `$skipToken`
 
-To request second and subsequent pages of Graph data use the `$skipToken` query option.
-]The `$skipToken` query option is an option provided in Urls returned from the Graph when the Graph has returned a partial subset of results, usually due to server-side paging.
+To request second and subsequent pages of Graph data use the `$skipToken` query parameter.
+]The `$skipToken` query parameter is provided in Urls returned from the Graph when the Graph has returned a partial subset of results, usually due to server-side paging.
 It identifies the point in a collection where the server finished sending results, and is passed back to the Graph to indicate where it should resume sending results from.
-For example, the value of a `$skipToken` query option could identify the tenth item in a collection or the 20th item in a collection containing 50 items, or any other position within the collection.
+For example, the value of a `$skipToken` query parameter could identify the tenth item in a collection or the 20th item in a collection containing 50 items, or any other position within the collection.
 
 In some responses, you'll see an `@odata.nextLink` value.
 Some of them include a `$skipToken` value.
