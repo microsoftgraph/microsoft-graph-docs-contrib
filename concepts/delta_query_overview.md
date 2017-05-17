@@ -38,7 +38,7 @@ For users and groups, there are restrictions on using some query parameters:
 -   If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
 -   `$expand` is not supported.
 
-For users and groups beta (preview) APIs, scoping filters allow you to track changes to one or more specific users or groups by objectId. For example, the following request: https://graph.microsoft-ppe.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' returns changes for the groups matching the ids specified in the query filter. 
+For users and groups beta (preview) APIs, scoping filters allow you to track changes to one or more specific users or groups by objectId. For example, the following request: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' returns changes for the groups matching the ids specified in the query filter. 
 
 ## Resource representation in the delta query response
 
@@ -46,7 +46,7 @@ For users and groups beta (preview) APIs, scoping filters allow you to track cha
 
 -   Updated instances are represented by their **id** with *at least* the properties that have been updated, but additional properties may be included.
 
--   Changes to relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request. For tracked changes, the annotations only appear when the client explicitly chooses to track changes to the relationship by using the `$select` parameter.
+-   Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
 
 Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
 
@@ -72,7 +72,7 @@ Delta query is currently supported for the following resources:
 | Drive items\* | [delta](../api-reference/v1.0/api/item_delta.md) function of the [driveItem](../api-reference/v1.0/resources/driveItem.md) resource |
 
 
-> \* Tracking changes to drives and their children is already supported in v1.0. The usage pattern is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:
+> \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:
 <https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
 
 ## Prerequisites
