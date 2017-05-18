@@ -20,7 +20,7 @@ POST me/devices/{id}/commands
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer <token>. Required. |
+|Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
 
@@ -60,17 +60,17 @@ HTTP/1.1 201 OK
 ```
 ## Command properties 
 
-|Name| Type | Description|
+|**Name**|**Type**|**Description**|
 |:----|:------|:------|
-|payload | microsoft.graph.json| Payload to send to an app service or to launch a URI on a device |
-|responsePayload | microsoft.graph.json| Payload returned from target device |
-|postBackURI | String | Post back Uri to send subsequent notifications of updates |
-|packageFamilyName | String | Windows Package Family Name of application |
-|appServiceName | String | Name of app service defined by the target application, required if launching an app service |
-|type| String | LaunchURI or AppService |
-|id| String | The id of a command that has been sent to the device |
+|payload | microsoft.graph.json| Payload to send to an app service or to launch a URI on a device. |
+|responsePayload | microsoft.graph.json| Payload returned from target device. |
+|postBackURI | String | Post back URI to send subsequent notifications of updates. |
+|packageFamilyName | String | Windows Package Family Name of application. |
+|appServiceName | String | Name of app service defined by the target application. Required if launching an app service. |
+|type| String | LaunchURI or AppService. |
+|id| String | The ID of a command that has been sent to the device. |
 |actionStatus | String | The [status](get_device_command_status.md) of a command. |
-|error| String| Any errors associated with the request from the target application |
+|error| String| Any errors associated with the request from the target application. |
 
 ## Launch URI example
 
