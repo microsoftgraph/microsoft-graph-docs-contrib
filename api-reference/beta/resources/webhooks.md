@@ -9,6 +9,8 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * Contacts
 * Group conversations
 * Drive root items
+* Users
+* Groups
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
