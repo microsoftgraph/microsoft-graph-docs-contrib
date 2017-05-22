@@ -36,7 +36,7 @@ Represents an account resource type in Dynamics 365 for Financials.
 
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
