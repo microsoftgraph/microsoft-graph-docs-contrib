@@ -171,6 +171,23 @@ does not become part of the body of the resultant message draft.
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
 
+## Application and servicePrincipal API changes
+
+There are changes to the [application](../api-reference/beta/resources/application.md) and [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) entities currently in development. The following is a summary of current limitations and in-development API features.
+
+**Current limitations:**
+* Some application properties (such as appRoles and addIns) will not be available until all changes are completed.
+* Only multi-tenant apps can be registered.
+* Updating apps is restricted to apps registered after the initial beta update.
+* Azure Active Directory users can register apps and add additional owners.
+
+**In development:**
+* Ability to register single tenant apps.
+* Updates to servicePrincipal.
+* Migration of existing Azure AD apps to updated model.
+* Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
+* Microsoft account (MSA) users can register apps.
+
 ## Extensions
 
 ### Change tracking is not supported
