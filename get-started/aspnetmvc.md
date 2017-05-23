@@ -127,6 +127,12 @@ The starter project already declares a dependency for the Microsoft Graph .NET C
 
 1. Replace *// SendEmail* with the following methods to build and send the email.
 
+        // Send an email message from the current user.
+        public async Task SendEmail(GraphServiceClient graphClient, Message message)
+        {
+            await graphClient.Me.SendMail(message, true).Request().PostAsync();
+        }
+
         public async Task<Message> BuildEmailMessage(GraphServiceClient graphClient, string recipients, string subject)
         {
 
@@ -290,13 +296,14 @@ The starter project already declares a dependency for the Microsoft Graph .NET C
                 return View("Graph");
             }
 
-            // Build the email message.
-            Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
             try
             {
 
                 // Initialize the GraphServiceClient.
                 GraphServiceClient graphClient = SDKHelper.GetAuthenticatedClient();
+
+                // Build the email message.
+                Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
 
                 // Send the email.
                 await graphService.SendEmail(graphClient, message);
@@ -308,9 +315,9 @@ The starter project already declares a dependency for the Microsoft Graph .NET C
             }
             catch (ServiceException se)
             {
-                if (se.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+                if (se.Error.Code == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
                 return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + se.Error.Message });
-           }
+            }
         }
 
 Now you're ready to [run the app](#run-the-app).
