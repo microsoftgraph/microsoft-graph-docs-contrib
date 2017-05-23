@@ -313,31 +313,6 @@ The starter project already declares a dependency for the Microsoft Graph .NET C
            }
         }
 
-Next you'll change the exception that the auth provider throws when a user prompt is needed.
-
-1. In the **Helpers** folder, open SampleAuthProvider.cs.
-
-1. Add the following **using** statement.
-
-        using Microsoft.Graph;
-  
-1. In the **GetUserAccessTokenAsync** method's **catch** block, change the thrown exception as follows:
-
-        throw new ServiceException(
-            new Error
-            {
-                Code = GraphErrorCode.AuthenticationFailure.ToString(),
-                Message = Resource.Error_AuthChallengeNeeded,
-            });
-
-Finally, you'll add a call to sign out the client. 
-
-1. In the **Controllers** folder, open AccountController.cs. 
-
-1. Uncomment the following line:
-
-        SDKHelper.SignOutClient();
-
 Now you're ready to [run the app](#run-the-app).
 
 ## Run the app
