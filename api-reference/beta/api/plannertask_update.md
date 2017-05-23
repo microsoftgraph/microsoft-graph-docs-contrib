@@ -35,6 +35,9 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [plannerTask](../resources/plannertask.md) object in the response body.
+
+This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
+
 ### Example
 ##### Request
 Here is an example of the request.
@@ -43,17 +46,22 @@ Here is an example of the request.
   "name": "update_plannertask"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/planner/tasks/<id>
+PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
 Content-type: application/json
-Content-length: 458
+Content-length: 247
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 {
-  "planId": "planId-value",
-  "bucketId": "bucketId-value",
-  "title": "title-value",
-  "orderHint": "orderHint-value",
-  "assigneePriority": "assigneePriority-value"
+  "assignments": {
+    "fbab97d0-4932-4511-b675-204639209557": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "orderHint": "N9917 U2883!"
+    }
+  },
+  "appliedCategories": {
+    "category3": true,
+    "category4": false
+  }
 }
 ```
 ##### Response
@@ -66,28 +74,58 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 458
+Content-length: 1423
 
 {
   "createdBy": {
-    "application": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
-    "device": {
-      "displayName": "displayName-value",
-      "id": "id-value"
-    },
     "user": {
-      "displayName": "displayName-value",
-      "id": "id-value"
+      "id": "6463a5ce-2119-4198-9f2a-628761df4a62"
     }
   },
-  "planId": "planId-value",
-  "bucketId": "bucketId-value",
+  "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
+  "bucketId": "gcrYAaAkgU2EQUvpkNNXLGQAGTtu",
   "title": "title-value",
-  "orderHint": "orderHint-value",
-  "assigneePriority": "assigneePriority-value"
+  "orderHint": "9223370609546166567W",
+  "assigneePriority": "90057581\"",
+  "createdDateTime": "2015-03-24T18:36:49.2407981Z",
+  "assignments": {
+    "6463a5ce-2119-4198-9f2a-628761df4a62": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "assignedBy": {
+        "user": {
+          "id": "6463a5ce-2119-4198-9f2a-628761df4a62"
+        }
+      },
+      "assignedDateTime": "2015-03-25T18:38:21.956Z",
+      "orderHint": "N9917"
+    },
+    "fbab97d0-4932-4511-b675-204639209557": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "assignedBy": {
+        "user": {
+          "id": "1e9955d2-6acd-45bf-86d3-b546fdc795eb"
+        }
+      },
+      "assignedDateTime": "2017-04-24T22:40:44.5665917",
+      "orderHint": "RWk1"
+    },
+    "aaa27244-1db4-476a-a5cb-004607466324": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "assignedBy": {
+        "user": {
+          "id": "6463a5ce-2119-4198-9f2a-628761df4a62"
+        }
+      },
+      "assignedDateTime": "2015-03-25T18:38:21.956Z",
+      "orderHint": "U2883"
+    }
+  },
+  "appliedCategories": {
+    "category3": true,
+    "category5": true,
+    "category6": true,
+  },
+  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
 

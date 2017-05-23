@@ -30,6 +30,7 @@ The following table shows the properties that are required when you create a [mo
 |Property|Type|Description|
 |---|---|---|
 |targetGroupId|String|The Id of the AAD group we are targeting the mobile app to. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
+|vpnConfigurationId|String|The Id of the Vpn Profile to apply for this app. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
 |id|String|Key of the entity. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md)|
 |installIntent|String|The install intent defined by the admin. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
@@ -45,10 +46,11 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/mobileAppGroupAssignments/{mobileAppGroupAssignmentsId}
 Content-type: application/json
-Content-length: 116
+Content-length: 171
 
 {
   "targetGroupId": "Target Group Id value",
+  "vpnConfigurationId": "Vpn Configuration Id value",
   "installIntent": "notApplicable",
   "useDeviceLicensing": true
 }
@@ -59,11 +61,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 231
+Content-Length: 286
 
 {
   "@odata.type": "#microsoft.graph.mobileAppVppGroupAssignment",
   "targetGroupId": "Target Group Id value",
+  "vpnConfigurationId": "Vpn Configuration Id value",
   "id": "89a8674a-674a-89a8-4a67-a8894a67a889",
   "installIntent": "notApplicable",
   "useDeviceLicensing": true

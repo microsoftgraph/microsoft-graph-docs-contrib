@@ -11,6 +11,9 @@ Singleton entity that acts as a container for all device management functionalit
 |[List remoteActionAudits](../api/intune_devicefe_devicemanagement_list_remoteactionaudit.md)|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) collection|Get the remoteActionAudits from the remoteActionAudits navigation property.|
 |[Create remoteActionAudit](../api/intune_devicefe_devicemanagement_create_remoteactionaudit.md)|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md)|Create a new [remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) by posting to the remoteActionAudits collection.|
 |[Get applePushNotificationCertificate](../api/intune_devicefe_devicemanagement_get_applepushnotificationcertificate.md)|[applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md)|Get the [applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md) from the applePushNotificationCertificate navigation property.|
+|[List deviceManagementScripts](../api/intune_devicefe_devicemanagement_list_devicemanagementscript.md)|[deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) collection|Get the deviceManagementScripts from the deviceManagementScripts navigation property.|
+|[Create deviceManagementScript](../api/intune_devicefe_devicemanagement_create_devicemanagementscript.md)|[deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md)|Create a new [deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) by posting to the deviceManagementScripts collection.|
+|[Get managedDeviceOverview](../api/intune_devicefe_devicemanagement_get_manageddeviceoverview.md)|[managedDeviceOverview](../resources/intune_devicefe_manageddeviceoverview.md)|Get the [managedDeviceOverview](../resources/intune_devicefe_manageddeviceoverview.md) from the managedDeviceOverview navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -23,6 +26,8 @@ Singleton entity that acts as a container for all device management functionalit
 |---|---|---|
 |remoteActionAudits|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) collection|The list of device remote action audits with the tenant.|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md)|Apple push notification certificate.|
+|deviceManagementScripts|[deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) collection|The list of device management scripts associated with the tenant.|
+|managedDeviceOverview|[managedDeviceOverview](../resources/intune_devicefe_manageddeviceoverview.md)|Device overview|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

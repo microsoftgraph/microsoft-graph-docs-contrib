@@ -3,17 +3,20 @@
 Update the properties of chartaxistitle object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/title
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/title
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/title
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 ```
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -34,7 +37,7 @@ Here is an example of the request.
   "name": "update_chartaxistitle"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
 Content-type: application/json
 Content-length: 45
 

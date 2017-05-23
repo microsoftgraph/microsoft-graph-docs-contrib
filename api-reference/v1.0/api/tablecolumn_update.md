@@ -3,16 +3,19 @@
 Update the properties of tablecolumn object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)
+PATCH /workbook/tables/{id|name}/columns/{id|name}
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ```
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -32,12 +35,11 @@ Here is an example of the request.
   "name": "update_tablecolumn"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
 Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
   "name": "name-value",
   "index": 99,
   "values": "values-value"

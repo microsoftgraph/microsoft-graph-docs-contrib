@@ -4,11 +4,7 @@
 
 ## Prerequisites
 
-[Permissions](../../../authorization/permission_scopes.md) required to perform delta query for groups can be either of the following: *Group.Read.All* or *Group.ReadWrite.All*
-
-## Known Limitations
-
-For known limitations using delta query, see the [delta query section](../../../overview/release_notes.md#delta-query) in the known issues article.
+One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 
 ### HTTP request
 
@@ -38,8 +34,7 @@ This method supports OData Query Parameters to help customize the response.
 _id_ property is always returned. 
 - Delta query support `$select`, `$top`, and `$expand` for groups. 
 - There is limited support for `$filter` and `$orderby`:
-  * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` 
-  or `$filter=receivedDateTime+gt+{value}`.
+  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`.
   * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
   an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.

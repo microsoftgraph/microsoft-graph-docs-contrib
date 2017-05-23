@@ -6,7 +6,7 @@ List properties and relationships of the [complianceSettingStateSummary](../reso
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -40,15 +40,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 549
+Content-Length: 625
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.complianceSettingStateSummary",
+      "setting": "Setting value",
       "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "settingPlatform": "androidForWork",
+      "platformType": "androidForWork",
       "id": "21926cf1-6cf1-2192-f16c-9221f16c9221",
       "unknownDeviceCount": 2,
       "notApplicableDeviceCount": 8,

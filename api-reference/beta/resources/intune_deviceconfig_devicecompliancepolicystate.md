@@ -41,10 +41,23 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState",
       "setting": "String",
+      "settingName": "String",
       "instanceDisplayName": "String",
       "state": "String",
       "errorCode": 1024,
-      "errorDescription": "String"
+      "errorDescription": "String",
+      "userId": "String",
+      "userName": "String",
+      "userEmail": "String",
+      "userPrincipalName": "String",
+      "sources": [
+        {
+          "@odata.type": "microsoft.graph.settingSource",
+          "id": "String",
+          "displayName": "String"
+        }
+      ],
+      "currentValue": "String"
     }
   ],
   "displayName": "String",

@@ -6,7 +6,7 @@ Create a new [sharedPCConfiguration](../resources/intune_deviceconfig_sharedpcco
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -38,9 +38,10 @@ The following table shows the properties that are required when you create a sha
 |allowedAccounts|String|Indicates which type of accounts are allowed to use on a shared PC. Possible values are: `guest`, `domain`.|
 |allowLocalStorage|Boolean|Specifies whether local storage is allowed on a shared PC.|
 |disableAccountManager|Boolean|Disables the account manager for shared PC mode.|
-|disableEduPolicies|Boolean|Specifies whether the default shared PC education environment policies should be disabled.|
+|disableEduPolicies|Boolean|Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true.|
 |disablePowerPolicies|Boolean|Specifies whether the default shared PC power policies should be disabled.|
 |disableSignInOnResume|Boolean|Disables the requirement to sign in whenever the device wakes up from sleep mode.|
+|enabled|Boolean|Enables shared PC mode and applies the shared pc policies.|
 |idleTimeBeforeSleepInSeconds|Int32|Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring.|
 |kioskAppDisplayName|String|Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.|
 |kioskAppUserModelId|String|Specifies the application user model ID of the app to use with assigned access.|
@@ -57,7 +58,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 904
+Content-length: 924
 
 {
   "@odata.type": "#microsoft.graph.sharedPCConfiguration",
@@ -78,6 +79,7 @@ Content-length: 904
   "disableEduPolicies": true,
   "disablePowerPolicies": true,
   "disableSignInOnResume": true,
+  "enabled": true,
   "idleTimeBeforeSleepInSeconds": 12,
   "kioskAppDisplayName": "Kiosk App Display Name value",
   "kioskAppUserModelId": "Kiosk App User Model Id value",
@@ -90,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1012
+Content-Length: 1032
 
 {
   "@odata.type": "#microsoft.graph.sharedPCConfiguration",
@@ -113,6 +115,7 @@ Content-Length: 1012
   "disableEduPolicies": true,
   "disablePowerPolicies": true,
   "disableSignInOnResume": true,
+  "enabled": true,
   "idleTimeBeforeSleepInSeconds": 12,
   "kioskAppDisplayName": "Kiosk App Display Name value",
   "kioskAppUserModelId": "Kiosk App User Model Id value",

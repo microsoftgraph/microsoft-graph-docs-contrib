@@ -6,7 +6,7 @@ Update the properties of a [iosGeneralDeviceConfiguration](../resources/intune_d
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -44,8 +44,8 @@ The following table shows the properties that are required when you create a [io
 |appleWatchBlockPairing|Boolean|Indicates whether or not to allow Apple Watch pairing when the device is in supervised mode (iOS 9.0 and later).|
 |appleWatchForceWristDetection|Boolean|Indicates whether or not to force a paired Apple Watch to use Wrist Detection (iOS 8.2 and later).|
 |appleNewsBlocked|Boolean|Indicates whether or not to block the user from using News when the device is in supervised mode (iOS 9.0 and later).|
-|appsSingleAppModeList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Gets or sets the list of iOS apps allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later.|
-|appsVisibilityList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later).|
+|appsSingleAppModeList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Gets or sets the list of iOS apps allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later. This collection can contain a maximum of 500 elements.|
+|appsVisibilityList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later). This collection can contain a maximum of 10000 elements.|
 |appsVisibilityListType|String|Type of list that is in the AppsVisibilityList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Boolean|Indicates whether or not to block the automatic downloading of apps purchased on other devices when the device is in supervised mode (iOS 9.0 and later).|
 |appStoreBlocked|Boolean|Indicates whether or not to block the user from using the App Store.|
@@ -57,10 +57,11 @@ The following table shows the properties that are required when you create a [io
 |cellularBlockDataRoaming|Boolean|Indicates whether or not to block data roaming.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|Indicates whether or not to block global background fetch while roaming.|
 |cellularBlockPerAppDataModification|Boolean|Indicates whether or not to allow changes to cellular app data usage settings when the device is in supervised mode.|
+|cellularBlockPersonalHotspot|Boolean|Indicates whether or not to block Personal Hotspot.|
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |certificatesBlockUntrustedTlsCertificates|Boolean|Indicates whether or not to block untrusted TLS certificates.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).|
-|compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.|
 |compliantAppListType|String|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Boolean|Indicates whether or not to block the user from installing configuration profiles and certificates interactively when the device is in supervised mode.|
 |definitionLookupBlocked|Boolean|Indicates whether or not to block definition lookup when the device is in supervised mode (iOS 8.1.3 and later ).|
@@ -132,15 +133,16 @@ The following table shows the properties that are required when you create a [io
 |messagesBlocked|Boolean|Indicates whether or not to block the user from using the Messages app on the supervised device.|
 |notificationsBlockSettingsModification|Boolean|Indicates whether or not to allow notifications settings modification (iOS 9.3 and later).|
 |passcodeBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
+|passcodeBlockFingerprintModification|Boolean|Block modification of registered Touch ID fingerprints when in supervised mode.|
 |passcodeBlockModification|Boolean|Indicates whether or not to allow passcode modification on the supervised device (iOS 9.0 and later).|
 |passcodeBlockSimple|Boolean|Indicates whether or not to block simple passcodes.|
-|passcodeExpirationDays|Int32|Number of days before the passcode expires.|
-|passcodeMinimumLength|Int32|Minimum length of passcode.|
+|passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 255|
+|passcodeMinimumLength|Int32|Minimum length of passcode. Valid values 4 to 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a passcode is required.|
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
-|passcodeMinimumCharacterSetCount|Int32|Number of character sets a passcode must contain.|
-|passcodePreviousPasscodeBlockCount|Int32|Number of previous passcodes to block.|
-|passcodeSignInFailureCountBeforeWipe|Int32|Number of sign in failures allowed before wiping the device.|
+|passcodeMinimumCharacterSetCount|Int32|Number of character sets a passcode must contain. Valid values 0 to 4|
+|passcodePreviousPasscodeBlockCount|Int32|Number of previous passcodes to block. Valid values 1 to 24|
+|passcodeSignInFailureCountBeforeWipe|Int32|Number of sign in failures allowed before wiping the device. Valid values 4 to 11|
 |passcodeRequiredType|String|Type of passcode that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Indicates whether or not to require a passcode.|
 |podcastsBlocked|Boolean|Indicates whether or not to block the user from using podcasts on the supervised device (iOS 8.0 and later).|
@@ -172,7 +174,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 7070
+Content-length: 7160
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -216,6 +218,7 @@ Content-length: 7070
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
+  "cellularBlockPersonalHotspot": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
@@ -337,6 +340,7 @@ Content-length: 7070
   "messagesBlocked": true,
   "notificationsBlockSettingsModification": true,
   "passcodeBlockFingerprintUnlock": true,
+  "passcodeBlockFingerprintModification": true,
   "passcodeBlockModification": true,
   "passcodeBlockSimple": true,
   "passcodeExpirationDays": 6,
@@ -377,7 +381,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7246
+Content-Length: 7336
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -424,6 +428,7 @@ Content-Length: 7246
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
+  "cellularBlockPersonalHotspot": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
@@ -545,6 +550,7 @@ Content-Length: 7246
   "messagesBlocked": true,
   "notificationsBlockSettingsModification": true,
   "passcodeBlockFingerprintUnlock": true,
+  "passcodeBlockFingerprintModification": true,
   "passcodeBlockModification": true,
   "passcodeBlockSimple": true,
   "passcodeExpirationDays": 6,
