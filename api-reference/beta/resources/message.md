@@ -2,11 +2,10 @@
 
 A message in a mailbox folder.
 
-This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+This resource supports:
 
-## Delta query support
-
-This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/message_delta.md) function.
 
 ## JSON representation
@@ -162,6 +161,8 @@ When a message is being composed, in most cases, the From and Sender properties 
 
 - [Get mailbox settings](../api/user_get_mailboxsettings.md) 
 - [Update mailbox settings](../api/user_update_mailboxsettings.md)
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
+- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
 - [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
 - [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)

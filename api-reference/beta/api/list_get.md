@@ -14,8 +14,8 @@ One of the following scopes are required to execute this request:
 ### HTTP request
 
 ```http
-GET https://graph.microsoft.com/beta/sharepoint/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/beta/sharepoint:/{list-path}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
 ### Request body
@@ -29,7 +29,7 @@ Do not supply a request body with this method.
 <!-- { "blockType": "request", "name": "get-list" } -->
 
 ```http
-GET /sharepoint/sites/{site-id}/lists/{list-id}
+GET /sites/{site-id}/lists/{list-id}
 ```
 
 #### Response
@@ -47,8 +47,72 @@ Content-type: application/json
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "list": {
     "hidden": false,
-    "baseTemplate": "generic"
+    "template": "genericList"
     }
+}
+```
+
+With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
+
+#### Request
+
+<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
+
+```http
+GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+```
+
+#### Response
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "name": "Inventory",
+  "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+  "columns": [
+    {
+      "name": "Name",
+      "description": "Customer-facing name of the SKU"
+    },
+    {
+      "name": "Color",
+      "description": "Color of the item in stock"
+    },
+    {
+      "name": "Quantity",
+      "description": "Number of items in stock"
+    }
+  ],
+  "items": [
+    {
+      "id": "2",
+      "fields": {
+        "Name": "Gadget",
+        "Color": "Red",
+        "Quantity": 503
+       }
+    },
+    {
+      "id": "4",
+      "fields": {
+        "Name": "Widget",
+        "Color": "Blue",
+        "Quantity": 2357
+       }
+    },
+    {
+      "id": "7",
+      "fields": {
+        "Name": "Gizmo",
+        "Color": "Green",
+        "Quantity": 92
+       }
+    }
+  ]
 }
 ```
 
