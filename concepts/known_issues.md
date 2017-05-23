@@ -180,6 +180,7 @@ Current limitations:
 * Only multi-tenant apps can be registered.
 * Updating apps is restricted to apps registered after the initial beta update.
 * Azure Active Directory users can register apps and add additional owners.
+* Support for OpenID Connect and OAuth protocols.
 
 In development:
 * Ability to register single tenant apps.
@@ -187,6 +188,7 @@ In development:
 * Migration of existing Azure AD apps to updated model.
 * Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
 * Microsoft account (MSA) users can register apps.
+* Support for SAML and WsFed protocols.
 
 ## Extensions
 
