@@ -2,6 +2,8 @@
 
 Represents an application. Any application that outsources authentication to Azure AD must be registered in a directory. Application registration involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more.  For more information, see [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Inherits from [directoryObject](directoryObject.md).
 
+> **Note:** Changes to application resource type is currently in development for preview. Please see [known issues with Microsoft Graph](../../../concepts/known_issues.md#application-and-serviceprincipal-api-changes) for more information.
+
 ### JSON representation
 
 Here is a JSON representation of the resource
@@ -56,7 +58,7 @@ Here is a JSON representation of the resource
 |logo|Stream|The main logo for the application. Not nullable. |
 |orgRestrictions|String collection| The organizational tenantIds to which the application is restricted.  If the collection is empty, the application is multi-tenant (not restricted). If the collection contains tenantIds, the application is restricted to the organizational tenantIds in the collection. Specifying other tenants but not the tenantId where the application is registered implies that the application's own tenantId is indirectly included. |
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
-|preAuthorizedApplications|[preAuthorizedApplication](preauthorizedapplication.md) collection| Lists applications and requested permissions for implicit consent. Requires an admin to have provided consent to the application. preAuthorizedApplications do not require the user to consent to the requested permissions. |
+|preAuthorizedApplications|[preAuthorizedApplication](preauthorizedapplication.md) collection| Lists applications and requested permissions for implicit consent. Requires an admin to have provided consent to the application. preAuthorizedApplications do not require the user to consent to the requested permissions. Permissions listed in preAuthorizedApplications do not require user consent. However, any additional requested permissions not listed in preAuthorizedApplications require user consent. |
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
 |tags|String collection| Custom strings that can be used to categorize and identify the application. |
 |web|[web](web.md)| Specifies settings for a web application. |

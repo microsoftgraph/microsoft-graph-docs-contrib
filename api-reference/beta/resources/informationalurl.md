@@ -6,10 +6,10 @@ Basic profile information of the application.
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|marketing|String| Link to application's marketing page. For example, https://www.contoso.com/app/marketing |
-|privacy|String| Link to application's privacy statement. For example, https://www.contoso.com/app/privacy |
-|support|String| Link to application's support page. For example, https://www.contoso.com/app/support |
-|termsOfService|String| Link to application's terms of service statement. For example, https://www.contoso.com/app/termsofservice |
+|marketing|String| Link to the application's marketing page. For example, https://www.contoso.com/app/marketing |
+|privacy|String| Link to the application's privacy statement. For example, https://www.contoso.com/app/privacy |
+|support|String| Link to the application's support page. For example, https://www.contoso.com/app/support |
+|termsOfService|String| Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice |
 
 ### JSON representation
 
