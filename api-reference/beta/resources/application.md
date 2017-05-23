@@ -85,7 +85,6 @@ Here is a JSON representation of the resource
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Update](../api/application_update.md) | [application](application.md) |Update application object. |
 |[Delete](../api/application_delete.md) | None |Delete application object. |
-|[Restore](../api/application_restore.md)|[application](application.md)|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
