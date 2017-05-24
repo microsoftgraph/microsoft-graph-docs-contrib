@@ -4,6 +4,11 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
+### Remove Deprecated Planner API
+|**Change type**|**Version**|**Description**|
+|:--------------|:-----------|:-------------|
+|Deletion|Beta|Removed the following entities:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard**|
+
 ### Project Rome
 
 |**Change type**|**Version**|**Description**|
