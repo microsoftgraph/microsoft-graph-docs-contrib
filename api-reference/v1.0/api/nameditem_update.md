@@ -3,6 +3,9 @@
 Update the properties of nameditem object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,7 +40,6 @@ Content-type: application/json
 Content-length: 87
 
 {
-  "name": "name-value",
   "type": "type-value",
   "scope": "scope-value",
   "comment": "comment-value",

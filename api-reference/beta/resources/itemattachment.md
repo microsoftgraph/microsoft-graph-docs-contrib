@@ -1,6 +1,7 @@
 # itemAttachment resource type
 
-A contact, event, or message that's attached to another event, message, or post.  
+A contact, event, or message that's attached to another [event](../resources/event.md),
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).  
 
 Derived from [attachment](attachment.md).
 
@@ -24,7 +25,7 @@ Derived from [attachment](attachment.md).
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|The attached message or event. Navigation property.|
+|item|[OutlookItem](outlookitem.md)|The attached contact, message or event. Navigation property.|
 
 ## JSON representation
 

@@ -2,12 +2,14 @@
 
 Restores a recently deleted item from [deleted items](../resources/directory.md). 
 
-Currently, deleted items functionality is only supported for the [group](../resources/group.md) resource. If a group was accidentally deleted, you can fully restore the group including memberships and data.
+Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources. If an item was accidentally deleted, you can fully restore the item.
 
-A recently deleted group will remain available for up to 30 days. After 30 days, the group is permanently deleted.
+A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
 
 ### Prerequisites
-The following **scope** is required to execute this API: *Group.ReadWrite.All*
+One of the following **scopes** is required to execute this API: 
+* For users: *User.ReadWrite.All or Directory.AccessAsUser.All*
+* For groups: *Group.ReadWrite.All or Directory.AccessAsUser.All*
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
