@@ -748,8 +748,10 @@
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
       </Item>
-      <Item text="Groups and Teams" url="/en-us/api-reference/beta/resources/group" SEOKeyword="groups, teams, Microsoft Graph API, user API" SEODescription="">
+      <Item text="Groups" url="/en-us/api-reference/beta/resources/group" SEOKeyword="groups, Microsoft Graph API, user API" SEODescription="">
         <Item text="List memberOf" url="/en-us/api-reference/beta/api/user_list_memberof" SEOKeyword="List memberOf, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
+      </Item>
+      <Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="teams, Microsoft Graph API, user API" SEODescription="">
         <Item text="List joinedTeams" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="List joinedTeams, Microsoft Graph API, Users API" SEODescription="Retrieve a list of Microsoft Teams that the user belongs to." />
       </Item>
       <Item text="Org hierarchy" url="/en-us/api-reference/beta/resources/organization" SEOKeyword="groups, Microsoft Graph API, user API" SEODescription="">
@@ -1054,8 +1056,8 @@
         <Item text="List range" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
       </Item>
     </Item>
-    <Item text="Identity Protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection" SEODescription="API for querying data from and using Azure Active Directory Identity Protection">
-      <Item text="Identity Risk Events" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection, Event Risk, Identity Risk" SEODescription="Queries risk event data from Azure AD Identity Protection">
+    <Item text="Identity protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection" SEODescription="API for querying data from and using Azure Active Directory Identity Protection">
+      <Item text="Identity risk events" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection, Event Risk, Identity Risk" SEODescription="Queries risk event data from Azure AD Identity Protection">
         <Item text="List identityRiskEvent" url="/en-us/api-reference/beta/api/identityriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  identityRiskEvent API" SEODescription="Retrieve a list of identityRiskEvent objects." />
         <Item text="Get identityRiskEvent" url="/en-us/api-reference/beta/api/identityriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  identityRiskEvent API" SEODescription="Retrieve an identityRiskEvent object." />
         <Item text="List anonymousIpRiskEvent" url="/en-us/api-reference/beta/api/anonymousipriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  anonymousIpRiskEvent API" SEODescription="Retrieve a list of anonymousIpRiskEvent objects." />
@@ -3501,45 +3503,6 @@
         <Item text="Get progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_get" />
         <Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
       </Item>
-      <Item text="Deprecated APIs" url="/en-us/api-reference/beta/resources/tasks_overview" >
-        <Item text="Task" url="/en-us/api-reference/beta/resources/task" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Create task" url="/en-us/api-reference/beta/api/task_post_tasks" SEOKeyword="Create task, Microsoft Graph API, user API" SEODescription="Use this API to create a new task." />
-        <Item text="Get task" url="/en-us/api-reference/beta/api/task_get" SEOKeyword="Get task, Microsoft Graph API, tasks" SEODescription="" />
-        <Item text="Update task" url="/en-us/api-reference/beta/api/task_update" SEOKeyword="Update task, Microsoft Graph API, tasks" SEODescription="" />
-        <Item text="Delete task" url="/en-us/api-reference/beta/api/task_delete" SEOKeyword="Delete task, Microsoft Graph API, tasks" SEODescription="" />
-      </Item>
-		  <Item text="Taskboard task format" url="/en-us/api-reference/beta/resources/taskboardtaskformat" SEOKeyword="taskboardtaskformat API, Microsoft Graph API, taskboardtaskformat API" SEODescription="">
-        <Item text="Get taskBoardTaskFormat" url="/en-us/api-reference/beta/api/taskboardtaskformat_get" SEOKeyword="Get taskBoardTaskFormat, Microsoft Graph API, taskboardtaskformat API" SEODescription="Retrieve the properties and relationships of taskboardtaskformat object." />
-        <Item text="Update taskboardtaskformat" url="/en-us/api-reference/beta/api/taskboardtaskformat_update" SEOKeyword="Update taskboardtaskformat, Microsoft Graph API, taskboardtaskformat API" SEODescription="Update the properties of taskboardtaskformat object." />
-		  </Item>
-		  <Item text="Task details" url="/en-us/api-reference/beta/resources/taskdetails" SEOKeyword="taskdetails API, Microsoft Graph API, taskdetails API" SEODescription="">
-        <Item text="Get taskDetails" url="/en-us/api-reference/beta/api/taskdetails_get" SEOKeyword="Get taskDetails, Microsoft Graph API, taskdetails API" SEODescription="Retrieve the properties and relationships of taskdetails object." />
-        <Item text="Update taskdetails" url="/en-us/api-reference/beta/api/taskdetails_update" SEOKeyword="Update taskdetails, Microsoft Graph API, taskdetails API" SEODescription="Update the properties of taskdetails object." />
-		  </Item>
-		  <Item text="Bucket" url="/en-us/api-reference/beta/resources/bucket" SEOKeyword="bucket API, Microsoft Graph API, bucket API" SEODescription="">
-        <Item text="Create bucket" url="/en-us/api-reference/beta/api/bucket_post_buckets" SEOKeyword="Create bucket, Microsoft Graph API, bucket API" SEODescription="Use this API to create a new bucket." />
-        <Item text="Get bucket" url="/en-us/api-reference/beta/api/bucket_get" SEOKeyword="Get bucket, Microsoft Graph API, bucket API" SEODescription="Retrieve the properties and relationships of bucket object." />
-        <Item text="Update bucket" url="/en-us/api-reference/beta/api/bucket_update" SEOKeyword="Update bucket, Microsoft Graph API, bucket API" SEODescription="Update the properties of bucket object." />
-        <Item text="Delete bucket" url="/en-us/api-reference/beta/api/bucket_delete" SEOKeyword="Delete bucket, Microsoft Graph API, bucket API" SEODescription="Delete bucket." />
-        <Item text="List bucket tasks" url="/en-us/api-reference/beta/api/bucket_list_tasks" SEOKeyword="List tasks, Microsoft Graph API, bucket API" SEODescription="Retrieve a list of task objects." />
-		  </Item>
-      <Item text="Plan" url="/en-us/api-reference/beta/resources/plan" SEOKeyword="plan API, Microsoft Graph API, plan API" SEODescription="">
-				<Item text="List plans" url="/en-us/api-reference/beta/api/plan_list" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
-				<Item text="Create plan" url="/en-us/api-reference/beta/api/plan_post_plans" SEOKeyword="Create plan, Microsoft Graph API, user API" SEODescription="Use this API to create a new plan." />
-				<Item text="Get plan" url="/en-us/api-reference/beta/api/plan_get" SEOKeyword="Get plan, Microsoft Graph API, plan API" SEODescription="Retrieve the properties and relationships of plan object." />
-				<Item text="Update plan" url="/en-us/api-reference/beta/api/plan_update" SEOKeyword="Update plan, Microsoft Graph API, plan API" SEODescription="Update the properties of plan object." />
-				<Item text="Delete plan" url="/en-us/api-reference/beta/api/plan_delete" SEOKeyword="Delete plan, Microsoft Graph API, plan API" SEODescription="Delete plan." />
-				<Item text="List plan buckets" url="/en-us/api-reference/beta/api/plan_list_buckets" SEOKeyword="List buckets, Microsoft Graph API, plan API" SEODescription="Retrieve a list of bucket objects." />
-				<Item text="List plan tasks" url="/en-us/api-reference/beta/api/plan_list_tasks" SEOKeyword="List tasks, Microsoft Graph API, plan API" SEODescription="Retrieve a list of task objects." />
-      </Item>
-		  <Item text="Plan details" url="/en-us/api-reference/beta/resources/plandetails" SEOKeyword="plandetails API, Microsoft Graph API, plandetails API" SEODescription="">
-        <Item text="Get planDetails" url="/en-us/api-reference/beta/api/plandetails_get" SEOKeyword="Get planDetails, Microsoft Graph API, plandetails API" SEODescription="Retrieve the properties and relationships of plandetails object." />
-        <Item text="Update plandetails" url="/en-us/api-reference/beta/api/plandetails_update" SEOKeyword="Update plandetails, Microsoft Graph API, plandetails API" SEODescription="Update the properties of plandetails object." />
-		  </Item>
-		  <Item text="Plan taskboard" url="/en-us/api-reference/beta/resources/plantaskboard" SEOKeyword="plantaskboard API, Microsoft Graph API, plantaskboard API" SEODescription="">
-        <Item text="Get planTaskBoard" url="/en-us/api-reference/beta/api/plantaskboard_get" SEOKeyword="Get planTaskBoard, Microsoft Graph API, plantaskboard API" SEODescription="Retrieve the properties and relationships of plantaskboard object." />
-		  </Item>
-		 </Item>
     </Item>
     <Item text="Privileged Identity Management" url="/en-us/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Azure Active Directory Privileged Identity Management">
       <Item text="Privileged Role" url="/en-us/api-reference/beta/resources/privilegedrole" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Privileged AAD Role Object">
