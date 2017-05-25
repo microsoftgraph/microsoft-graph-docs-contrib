@@ -33,23 +33,11 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
-Content-length: 717
+Content-length: 67
 
 {
-  "addIns": [
-      {
-        "id": "id-value",
-        "type": "type-value",
-        "properties": [
-          {
-            "key": "key-value",
-            "value": "value-value"
-          }
-        ]
-      }
-    ],
-    "availableToOtherOrganizations": true,
-    "displayName": "displayName-value"
+  "allowPublicClient": true,
+  "displayName": "Display name"
 }
 ```
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
@@ -66,33 +54,39 @@ Content-type: application/json
 Content-length: 1145
 
 {
-  "application": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "id": "b5b2920e-a47c-43b7-91ef-25ae96fddddd",
+    "deletedDateTime": null,
     "api": {
-      "acceptedAccessTokenVersion": 1,
-      "publishedPermissionScopes": [
-        {
-          "adminConsentDescription": "adminConsentDescription-value",
-          "adminConsentDisplayName": "adminConsentDisplayName-value",
-          "id": "id-value",
-          "isEnabled": true,
-          "type": "type-value",
-          "userConsentDescription": "userConsentDescription-value",
-          "userConsentDisplayName": "userConsentDisplayName-value",
-          "value": "value-value"
-        }
-      ]
+        "acceptedAccessTokenVersion": 2,
+        "publishedPermissionScopes": []
     },
     "allowPublicClient": true,
-    "applicationAliases": [
-      "applicationAliases-value"
-    ],
-    "createdDateTime": "datetime-value",
+    "applicationAliases": [],
+    "appRoles": [],
+    "createdDateTime": "2017-05-25T16:33:04.3646617Z",
     "installedClients": {
-      "redirectUrls": [
-        "redirectUrls-value"
-      ]
+        "redirectUrls": []
+    },
+    "displayName": "Display name",
+    "info": {
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
+    },
+    "keyCredentials": [],
+    "orgRestrictions": [],
+    "passwordCredentials": [],
+    "preAuthorizedApplications": [],
+    "requiredResourceAccess": [],
+    "tags": [],
+    "web": {
+        "redirectUrls": [],
+        "logoutUrl": null,
+        "oauth2AllowImplicitFlow": null
     }
-  }
 }
 ```
 
