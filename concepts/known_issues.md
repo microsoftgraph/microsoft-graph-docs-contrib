@@ -181,8 +181,8 @@ Current limitations:
 * Updating apps is restricted to apps registered after the initial beta update.
 * Azure Active Directory users can register apps and add additional owners.
 * Support for OpenID Connect and OAuth protocols.
-* Policy assignments to an application fails. 
-* Operations on ownedObjects that require appId fail (For example, users/key/ownedObjects/key/deletedDateTime, users/key/ownedObjects/key/id).
+* Policy assignments to an application fail. 
+* Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
 
 In development:
 * Ability to register single tenant apps.
