@@ -1,6 +1,6 @@
-# Create thread
+# Create chat thread
 
-Create a new thread in the specified channel by supplying the root messages.
+Create a new chat thread in the specified channel by supplying the root messages.
 
 ## Prerequisites
 The following **scopes** are required to execute this API:
