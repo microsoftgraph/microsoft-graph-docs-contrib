@@ -240,14 +240,41 @@ Individual requests can depend on other individual requests. Currently, requests
 
 As JSON batching matures, these limitations will be removed.
 
-## Cloud Solution Provider apps must use Azure AD endpoint
+## Cloud Solution Provider apps
+
+### CSP apps must use Azure AD endpoint
 
 Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
+
+### Pre-consent for CSP apps doesn't work in some customer tenants
+
+Under certain circumstances, pre-consent for CSP apps may not work for some of your customer tenants.
+
+- For apps using delegated permissions, when using the app for the first time with a new customer tenant you might receive this error after sign-in: `AADSTS50000: There was an error issuing a token`.
+- For apps using application permissions, your app can acquire a token, but unexpectedly gets an access denied message when calling Microsoft Graph.
+
+We are working to fix this issue as soon as possible, so that pre-consent will work for all your customer tenants.
+
+In the meantime, to unblock development and testing you can use the following workaround.
+
+>**NOTE:** This is not a permanent solution and is only intended to unblock development.  This workaround will not be required once the aforementioned issue is fixed.  This workaround does not need to be undone once the fix is in place.
+
+1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
+
+    ```PowerShell
+    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
+    ```
+
+2. Create the Microsoft Graph service principal.
+
+    ```PowerShell
+    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
+    ```
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs
 
 Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog). For Azure Active Directory, please refer to the [Microsoft Graph or Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) blog post on the features that are only available through Azure AD Graph API.
 
-### Feedback
+## Feedback
 
 > Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/microsoftgraph).
