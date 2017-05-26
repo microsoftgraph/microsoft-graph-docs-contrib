@@ -912,7 +912,7 @@
           <Item text="Assign owner" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Create owner, Microsoft Graph API, application API" SEODescription="Use this API to create a new owner." />
           <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />
           <Item text="Create extension property" url="/en-us/api-reference/beta/api/application_post_extensionproperties" SEOKeyword="Create ExtensionProperty, Microsoft Graph API, application API" SEODescription="Use this API to create a new ExtensionProperty." />
-          <Item text="Restore application" url="/en-us/api-reference/beta/api/application_restore" SEOKeyword="application: restore, Microsoft Graph API, application API" SEODescription="" />
+          
         </Item>
       <Item text="Contracts" url="/en-us/api-reference/beta/resources/contract" >
         <Item text="Get contract" url="/en-us/api-reference/beta/api/contract_get" />
