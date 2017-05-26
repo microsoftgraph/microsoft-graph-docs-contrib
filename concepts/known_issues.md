@@ -176,6 +176,7 @@ does not become part of the body of the resultant message draft.
 There are changes to the [application](../api-reference/beta/resources/application.md) and [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) entities currently in development. The following is a summary of current limitations and in-development API features.
 
 Current limitations:
+
 * Some application properties (such as appRoles and addIns) will not be available until all changes are completed.
 * Only multi-tenant apps can be registered.
 * Updating apps is restricted to apps registered after the initial beta update.
@@ -185,6 +186,7 @@ Current limitations:
 * Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
 
 In development:
+
 * Ability to register single tenant apps.
 * Updates to servicePrincipal.
 * Migration of existing Azure AD apps to updated model.
