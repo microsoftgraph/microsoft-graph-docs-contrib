@@ -78,7 +78,7 @@ Here is a JSON representation of the resource
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
 |[Get application](../api/application_get.md) | application |Read properties and relationships of application object.|
-|[Create application](../api/application_post_application.md) | application | Creates (registers) a new application.|
+|[Create application](../api/application_post_applications.md) | application | Creates (registers) a new application.|
 |[List applications](../api/application_list.md) | application | Retrieve the list of applications in the organization. |
 |[Update application](../api/application_update.md) | application |Update application object. |
 |[Delete application](../api/application_delete.md) | None |Delete application object. |
