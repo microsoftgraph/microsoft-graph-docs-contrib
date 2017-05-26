@@ -172,8 +172,7 @@ Here is a JSON representation of the resource
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "registeredDevices",
-    "sharepoint"
+    "registeredDevices"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.user"
@@ -246,8 +245,7 @@ Here is a JSON representation of the resource
   "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sharepoint": { "@odata.type": "microsoft.graph.sharepoint" }
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```

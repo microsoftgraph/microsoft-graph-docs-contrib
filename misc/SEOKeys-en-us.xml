@@ -2059,6 +2059,14 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicygroupassignment_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicygroupassignment_update"/>
         </Item>
+        <Item text="Device compliance policy setting state summary" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update"/>
+          <Item text="List deviceComplianceSettingStates" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_list_devicecompliancesettingstate"/>
+        </Item>
         <Item text="Device compliance policy state" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicystate">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_get"/>

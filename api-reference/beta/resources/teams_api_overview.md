@@ -1,7 +1,14 @@
 # Use the Microsoft Graph API to work with Microsoft Teams
 
-Microsoft Teams is built upon Office 365 groups.  All the [group APIs](group.md) can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  
+Microsoft Teams is built on Office 365 groups. You can use the [group APIs](group.md) with teams, with the following exception: 
 
-* There are also some APIs in beta that are specific to Microsoft Teams: [list my teams](../api/user_list_joinedteams.md), [channels](channel.md), [chat threads](chatthread.md), and [chat message](chatmessage.md).
+- Currently, you can't use [Create group](../api/group_post_groups.md) to create a team.  
 
-* Care must be taken if using these group APIs in a [Microsoft Teams app](https://msdn.microsoft.com/en-us/microsoft-teams) - e.g. as part inside a 'tab' or 'bot' running inside Microsoft Teams - rather than in a standalone app.  [See this guidance](https://msdn.microsoft.com/en-us/microsoft-teams/graph).
+>**Note:** If you use the group APIs in a [Microsoft Teams app](https://msdn.microsoft.com/en-us/microsoft-teams), rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](https://msdn.microsoft.com/en-us/microsoft-teams/graph).
+
+The following beta APIs are specific to Microsoft Teams: 
+
+- [List my teams](../api/user_list_joinedteams.md)
+- [Channels](channel.md)
+- [Chat threads](chatthread.md)
+- [Chat message](chatmessage.md).
