@@ -54,6 +54,7 @@ If you want to run the iOS project in this sample, you'll need the following:
 
 	```
 	public static string ClientID = "ENTER_YOUR_CLIENT_ID";
+	public static string RedirectUri = "msal" + ClientID + "://auth";
 	public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
 	```
 	The `Scopes` value stores the Microsoft Graph permission scopes that the app will need to request when the user authenticates. Note that the `App` class constructor uses the ClientID value to instantiate an instance of the MSAL `PublicClientApplication` class. You'll use this class later to authenticate the user.
@@ -61,21 +62,14 @@ If you want to run the iOS project in this sample, you'll need the following:
 	```
 	IdentityClientApp = new PublicClientApplication(ClientID);
 	```
-3. Open the UserDetailsClient.iOS\AppDelegate.cs file. Locate the `ENTER_YOUR_REDIRECT_URI` string.
 
-4. Make the redirect URI value that you got when you registered the app the value of `App.IdentityClientApp.RedirectUri` (by replacing the `ENTER_YOUR_REDIRECT_URI` string).
+3. Open the UserDetailsClient.iOS\info.plist file in a text editor. Unfortunately you can't edit this file in Visual Studio. Locate the `<string>msalENTER_YOUR_CLIENT_ID</string>` element under `CFBundleURLSchemes` key.
 
-5. Open the UserDetailsClient.iOS\info.plist file in a text editor. Unfortunately you can't edit this file in Visual Studio. Locate the `<string>msalENTER_YOUR_CLIENT_ID</string>` element under `CFBundleURLSchemes` key.
+4. Replace `ENTER_YOUR_CLIENT_ID` with the application id value that you got when you registered your app. Be sure to retain `msal` before the application id. The resulting string value should look like this: `<string>msal[application id]</string>`.
 
-6. Replace `ENTER_YOUR_CLIENT_ID` with the application id value that you got when you registered your app. Be sure to retain `msal` before the application id. The resulting string value should look like this: `<string>msal<application id></string>`.
+5. Open the UserDetailsClient.Droid\Properties\AndroidManifest.xml file. Locate this element: `<data android:scheme="msalENTER_YOUR_CLIENT_ID" android:host="auth" />`.
 
-7. Open the UserDetailsClient.Droid\MainActivity.cs file. Locate the `ENTER_YOUR_REDIRECT_URI` string.
-
-8. Make the URI value that you got when you registered the app the value of `App.IdentityClientApp.RedirectUri` (by replacing the `ENTER_YOUR_REDIRECT_URI` string).
-
-9. Open the UserDetailsClient.Droid\Properties\AndroidManifest.xml file. Locate this element: `<data android:scheme="msalENTER_YOUR_CLIENT_ID" android:host="auth" />`.
-
-10. Replace `ENTER_YOUR_CLIENT_ID` with the application id value that you got when you registered your app. Be sure to retain `msal` before the application id. The resulting string value should look like this: `<data android:scheme="msal<application id>" android:host="auth" />`.
+6. Replace `ENTER_YOUR_CLIENT_ID` with the application id value that you got when you registered your app. Be sure to retain `msal` before the application id. The resulting string value should look like this: `<data android:scheme="msal[application id]" android:host="auth" />`.
 
 ## Send an email with Microsoft Graph
 
@@ -430,7 +424,6 @@ The complete class will look like this:
 
 
     }
-}
 ``` 
 
 You've now performed the three steps required for interacting with Microsoft Graph: app registration, user authentication, and making a request. 
