@@ -4,6 +4,17 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ## May 2017
 
+### Application API changes
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Change|Beta| Application API update. This is first set of changes including property renaming and restructuring of the [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) entity.<br/>**New entities:** [api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api]), [informationalUrl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalUrl), [installedClient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient), [permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope), [preauthorizedApplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication), [web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web).<br/>**Removed properties:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Renamed properties:** appId to id, identifierUris to applicationAliases, availableToOtherTenants to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, publicClient to allowPublicClient, replyUrls to redirectUrls.<br/>**New properties:** tags. |
+
+### Remove Deprecated Planner API
+|**Change type**|**Version**|**Description**|
+|:--------------|:-----------|:-------------|
+|Deletion|Beta|Removed the following entities:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard**|
+
 ### Project Rome
 
 |**Change type**|**Version**|**Description**|
@@ -248,7 +259,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 ### New Planner APIs and an update to the group visibility property
 
-|**Change type**|**Version**|**Description**| 
+|**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
 |Change|Beta|Added **HiddenMembership** as an additional value for the visibility property to the [Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) entity |
 |Addition|Beta|Added new [Planner API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/planner_overview).<br />New resources:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat) | 
