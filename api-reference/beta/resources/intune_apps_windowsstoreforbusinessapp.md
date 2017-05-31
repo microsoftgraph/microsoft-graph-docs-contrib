@@ -39,6 +39,8 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |usedLicenseCount|Int32|The number of Windows Store for Business licenses in use.|
 |totalLicenseCount|Int32|The total number of Windows Store for Business licenses.|
+|productKey|String|The app product key|
+|licenseType|String|The app license type Possible values are: `offline`, `online`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -79,7 +81,9 @@ Here is a JSON representation of the resource.
   "notes": "String",
   "uploadState": 1024,
   "usedLicenseCount": 1024,
-  "totalLicenseCount": 1024
+  "totalLicenseCount": 1024,
+  "productKey": "String",
+  "licenseType": "String"
 }
 ```
 

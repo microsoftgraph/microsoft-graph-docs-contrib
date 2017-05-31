@@ -6,7 +6,7 @@ List properties and relationships of the [iosDeviceFeaturesConfiguration](../res
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2684
+Content-Length: 3082
 
 {
   "value": [
@@ -60,6 +60,17 @@ Content-Length: 2684
         }
       ],
       "assetTagTemplate": "Asset Tag Template value",
+      "contentFilterSettings": {
+        "@odata.type": "microsoft.graph.iosWebContentFilterSpecificWebsitesAccess",
+        "specificWebsitesOnly": [
+          {
+            "@odata.type": "microsoft.graph.iosBookmark",
+            "url": "Url value",
+            "bookmarkFolder": "Bookmark Folder value",
+            "displayName": "Display Name value"
+          }
+        ]
+      },
       "lockScreenFootnote": "Lock Screen Footnote value",
       "homeScreenDockIcons": [
         {

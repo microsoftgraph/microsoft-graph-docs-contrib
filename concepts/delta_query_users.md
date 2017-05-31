@@ -1,12 +1,12 @@
-# Get incremental changes for users (preview)
+# Get incremental changes for users
 
-[Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](../api-reference/beta/api/user_delta.md) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.
+[Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](../api-reference/v1.0/api/user_delta.md) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.
 
-Delta query supports both full synchronization that retrieves all of the users in a tenant, and incremental synchronization that retrieves only the users that have changed since the last synchronization. Typically, you would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically. 
+Clients using synchronizing users with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.
 
 ## Tracking user changes
 
-Tracking user changes is a round of one or more GET requests with the **delta** function. You make a GET request much like the way you [list users](../api-reference/beta/api/user_list.md), except that you include the following:
+Tracking user changes is a round of one or more GET requests with the **delta** function. You make a GET request much like the way you [list users](../api-reference/v1.0/api/user_list.md), except that you include the following:
 
 - The **delta** function.
 - A [state token](./delta_query_overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
@@ -22,7 +22,7 @@ The following example shows a series  requests to track changes to users:
 
 ## Initial request
 
-To begin tracking changes in the user resource, you make a request including the delta function on the user resource. 
+To begin tracking changes in the user resource, you make a request including the delta function on the user resource.
 
 Note the following:
 
@@ -30,12 +30,12 @@ Note the following:
 - The initial request does not include a state token. State tokens will be used in subsequent requests.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$select=displayName,givenName,surname
+GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
-### Initial response
+## Initial response
 
-If successful, this method returns `200, OK` response code and [user](../api-reference/beta/resources/user.md) collection object in the response body. Assuming the entire set of users is too large, the response will also include a nextLink state token.
+If successful, this method returns `200 OK` response code and [user](../api-reference/v1.0/resources/user.md) collection object in the response body. Assuming the entire set of users is too large, the response will also include a nextLink state token.
 
 In this example, a nextLink URL is returned indicating there are additional pages of data to be retrieved in the session. The $select query parameter from the initial request is encoded into the nextLink URL.
 
@@ -44,8 +44,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users(displayName,givenName,surname)",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(displayName,givenName,surname)",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
   "value": [
     {
       "displayName":"Testuser1",
@@ -68,7 +68,7 @@ Content-type: application/json
 The second request specifies the `skipToken` returned from the previous response. Notice the `$select` parameter is not required, as the `skipToken` encodes and includes it.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
 ## nextLink response
@@ -80,8 +80,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
       "displayName":"Testuser3",
@@ -104,7 +104,7 @@ Content-type: application/json
 The third request continues to use the latest `skipToken` returned from the last sync request. 
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
 ```
 
 ## Final nextLink response
@@ -116,8 +116,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
       "displayName":"Testuser5",
@@ -140,7 +140,7 @@ Content-type: application/json
 Using the `deltaToken` from the [last response](#final-nextlink-response), you will be able to get changed (by being added, deleted, or updated) users since the last request.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
+GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
 ## deltaLink response
@@ -152,8 +152,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": []
 }
 ```
@@ -165,8 +165,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
       "displayName":"Testuser7",
@@ -175,9 +175,12 @@ Content-type: application/json
       "id":"25dcffff-959e-4ece-9973-e5d9b800e8cc"
     },
     {
-      "removed":"changed",
-      "id":"8ffff70c-1c63-4860-b963-e34ec660931d"
+      "id":"8ffff70c-1c63-4860-b963-e34ec660931d",
+      "@removed": {
+         "reason": "changed"
+      }
     }
+  ]
 }
 ```
 ## See also

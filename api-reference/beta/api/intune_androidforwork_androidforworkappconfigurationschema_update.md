@@ -6,7 +6,7 @@ Update the properties of a [androidForWorkAppConfigurationSchema](../resources/i
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -43,7 +43,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAppConfigurationSchemaId}
 Content-type: application/json
-Content-length: 782
+Content-length: 784
 
 {
   "exampleJson": {
@@ -65,7 +65,7 @@ Content-length: 782
       "selections": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",
-          "key": "Key value",
+          "name": "Name value",
           "value": "Value value"
         }
       ]
@@ -79,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 906
+Content-Length: 908
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkAppConfigurationSchema",
@@ -103,7 +103,7 @@ Content-Length: 906
       "selections": [
         {
           "@odata.type": "microsoft.graph.keyValuePair",
-          "key": "Key value",
+          "name": "Name value",
           "value": "Value value"
         }
       ]
