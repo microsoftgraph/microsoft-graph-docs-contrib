@@ -3,17 +3,20 @@
 Adds a new column to the table.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns/add
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns/add
+POST /workbook/tables/{id|name}/columns/add
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -36,7 +39,7 @@ Here is an example of the request.
   "name": "tablecolumncollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/columns/add
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/add
 Content-type: application/json
 Content-length: 51
 

@@ -3,12 +3,15 @@
 Retrieve the properties and relationships of chartaxistitle object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/title
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/title
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/title
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -16,7 +19,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -31,7 +34,7 @@ Here is an example of the request.
   "name": "get_chartaxistitle"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

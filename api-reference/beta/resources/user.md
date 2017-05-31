@@ -2,11 +2,9 @@
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
-
-## Delta query support
-
-This resource supports [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
+This resource supports:
+- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 ## Methods
 | Method       | Return Type  |Description|
@@ -33,10 +31,12 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user_list_manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
 |[List memberOf](../api/user_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups, directory roles, and administrative units that the user is a direct member of from the memberOf navigation property.|
+|[List joinedTeams](../api/user_list_joinedTeams.md) |[groups](group.md) collection| Get the Microsoft Teams that the user is a direct member of from the joinedTeams navigation property.|
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
+|[List plannerTasks](../api/planneruser_list_tasks.md) |[plannerTask](plannerTask.md) collection| Get plannerTasks assigned to the user.|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are registered for the user from the registeredDevices navigation property.|
-|[List scopedAdministratorOf](../api/user_list_scopedadministratorof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role administrative units memberships for this user.|
+|[List scoped-role memberships](../api/user_list_scopedrolememberof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role administrative units memberships for this user.|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[List licenseDetails](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
@@ -64,6 +64,7 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
+|deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
@@ -107,35 +108,36 @@ This resource supports [delta query](../../../concepts/delta_query_overview.md) 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|calendar|[Calendar](calendar.md)|The user's primary calendar. Read-only.|
-|calendarGroups|[CalendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
-|calendarView|[Event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
-|calendars|[Calendar](calendar.md) collection|The user's calendars. Read-only. Nullable.|
-|contactFolders|[ContactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
-|contacts|[Contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
+|calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
+|calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
+|calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
+|calendars|[calendar](calendar.md) collection|The user's calendars. Read-only. Nullable.|
+|contactFolders|[contactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
+|contacts|[contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that were created by the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
-|events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
-|extensions|[Extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
+|events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
-|joinedGroups|[Group](group.md) collection| Read-only. Nullable.|
-|mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
+|joinedGroups|[group](group.md) collection| Read-only. Nullable.|
+|mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
-|messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
+|joinedTeams|[group](group.md) collection|The Microsoft Teams that the user is a member of. Read-only. Nullable.|
+|messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |onenote|[OneNote](onenote.md)| Read-only.|
+|outlook|[outlookUser](outlookuser.md)| Selective Outlook services available to the user. Read-only. Nullable.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
-|people|[Person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
+|people|[person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[Photo](photo.md) collection| Read-only. Nullable.|
-|plans|[plan](plan.md) collection| Read-only. Nullable. Plans shared with the user. |
+|planner|[plannerUser](plannerUser.md)| Selective Planner services available to the user. Read-only. Nullable. |
 |sharepoint|[sharepoint](sharepoint.md)| Access to the user's SharePoint site. Read-only. |
-|scopedAdministratorOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
-|tasks|[task](task.md) collection| Read-only. Nullable. Tasks assigned to the user. |
+|scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
 |trendingAround|[driveItem](driveitem.md) collection| Read-only. Nullable.|
-|workingWith|[User](user.md) collection| Read-only. Nullable.|
+|workingWith|[user](user.md) collection| Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 
 
@@ -157,18 +159,20 @@ Here is a JSON representation of the resource
     "directReports",
     "drive",
     "events",
+    "extensions",
     "joinedGroups",
     "mailFolders",
     "manager",
     "memberOf",
+    "joinedTeams",
     "messages",
     "onenote",
     "oauth2PermissionGrants",
+    "outlook",
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "registeredDevices",
-    "sharepoint"
+    "registeredDevices"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.user"
@@ -185,6 +189,7 @@ Here is a JSON representation of the resource
   "city": "string",
   "companyName": "string",
   "country": "string",
+  "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
   "givenName": "string",
@@ -230,15 +235,17 @@ Here is a JSON representation of the resource
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "events": [ { "@odata.type": "microsoft.graph.event" } ],
+  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
   "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "manager": { "@odata.type": "microsoft.graph.directoryObject" },
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "joinedTeams": [ { "@odata.type": "microsoft.graph.group" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sharepoint": { "@odata.type": "microsoft.graph.sharepoint" }
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```
@@ -246,8 +253,8 @@ Here is a JSON representation of the resource
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -9,7 +9,7 @@ The following tasks are available for list resources.
 **Note:** This beta only allows navigating lists, not creating or updating them.
 You can, however, create or update [list items][listItem].
 
-All examples below are relative to a site, eg: `https://graph.microsoft.com/beta/sharepoint/sites/{site-id}`.
+All examples below are relative to a site, eg: `https://graph.microsoft.com/beta/sites/{site-id}`.
 
 | Common task              | HTTP method
 |:-------------------------|:------------------------------
@@ -28,13 +28,13 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 ## JSON representation
 
 Here is a JSON representation of a **list** resource.
-Properties after the blank line are inherited from **[baseItem][]**.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.list",
        "keyProperty": "id", "optionalProperties": [ "items", "drive"] } -->
 
 ```json
 {
-  "fields": [ { "@odata.type": "microsoft.graph.fieldDefinition" }],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
@@ -43,6 +43,7 @@ Properties after the blank line are inherited from **[baseItem][]**.
   "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
 
+  /* inherited from baseItem */
   "id": "string",
   "name": "name of list",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
@@ -61,7 +62,7 @@ The **list** resource has the following properties.
 
 | Property name | Type                            | Description
 |:--------------|:--------------------------------|:---------------------------
-| **fields**    | Collection([fieldDefinition][]) | The collection of field definitions for this list.
+| **columns**   | Collection([columnDefinition][]) | The collection of field definitions for this list.
 | **list**      | [listInfo][]                    | Provides additional details about the list.
 
 The following properties are inherited from **[baseItem][]**.
@@ -89,7 +90,7 @@ The **list** resource has the following relationships to other resources.
 [baseItem]: baseItem.md
 [drive]: drive.md
 [driveItem]: driveItem.md
-[fieldDefinition]: fieldDefinition.md
+[columnDefinition]: columnDefinition.md
 [identitySet]: identitySet.md
 [listInfo]: listInfo.md
 [listItem]: listItem.md
