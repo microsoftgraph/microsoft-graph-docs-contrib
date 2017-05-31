@@ -3,18 +3,21 @@
 Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/insert
-POST /workbook/worksheets(<id|name>)/range(<address>)/insert
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/insert
+POST /workbook/worksheets/{id|name}/range(<address>)/insert
+POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body

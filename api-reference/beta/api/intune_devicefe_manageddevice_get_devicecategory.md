@@ -6,14 +6,14 @@ Get the [deviceCategory](../resources/intune_devicefe_devicecategory.md) from th
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /managedDevices/{managedDevicesId}/deviceCategory/
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//deviceCategory/
 ```
 
 ## Optional query parameters
@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [deviceCategory]
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceCategory/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//deviceCategory/
 ```
 
 ### Response

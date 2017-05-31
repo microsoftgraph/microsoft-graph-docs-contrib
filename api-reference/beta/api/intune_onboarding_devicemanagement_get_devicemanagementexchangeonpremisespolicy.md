@@ -6,7 +6,7 @@ Get the [deviceManagementExchangeOnPremisesPolicy](../resources/intune_onboardin
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

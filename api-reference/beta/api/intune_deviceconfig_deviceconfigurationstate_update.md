@@ -6,7 +6,7 @@ Update the properties of a [deviceConfigurationState](../resources/intune_device
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -47,17 +47,30 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceConfigurationStates/{deviceConfigurationStateId}
 Content-type: application/json
-Content-length: 469
+Content-length: 915
 
 {
   "settingStates": [
     {
       "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
       "setting": "Setting value",
+      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
-      "errorDescription": "Error Description value"
+      "errorDescription": "Error Description value",
+      "userId": "User Id value",
+      "userName": "User Name value",
+      "userEmail": "User Email value",
+      "userPrincipalName": "User Principal Name value",
+      "sources": [
+        {
+          "@odata.type": "microsoft.graph.settingSource",
+          "id": "Id value",
+          "displayName": "Display Name value"
+        }
+      ],
+      "currentValue": "Current Value value"
     }
   ],
   "displayName": "Display Name value",
@@ -73,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 581
+Content-Length: 1027
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationState",
@@ -82,10 +95,23 @@ Content-Length: 581
     {
       "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
       "setting": "Setting value",
+      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
-      "errorDescription": "Error Description value"
+      "errorDescription": "Error Description value",
+      "userId": "User Id value",
+      "userName": "User Name value",
+      "userEmail": "User Email value",
+      "userPrincipalName": "User Principal Name value",
+      "sources": [
+        {
+          "@odata.type": "microsoft.graph.settingSource",
+          "id": "Id value",
+          "displayName": "Display Name value"
+        }
+      ],
+      "currentValue": "Current Value value"
     }
   ],
   "displayName": "Display Name value",

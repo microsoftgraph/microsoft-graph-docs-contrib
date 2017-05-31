@@ -6,7 +6,7 @@ Read properties and relationships of the [deviceAppManagement](../resources/intu
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All; DeviceManagementApps.Read.All*
+*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All; DeviceManagementApps.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

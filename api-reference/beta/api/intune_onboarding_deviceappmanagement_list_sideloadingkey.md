@@ -6,7 +6,7 @@ Get the sideLoadingKeys from the sideLoadingKeys navigation property.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementServiceConfiguration.Read.All; DeviceManagementServiceConfiguration.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"

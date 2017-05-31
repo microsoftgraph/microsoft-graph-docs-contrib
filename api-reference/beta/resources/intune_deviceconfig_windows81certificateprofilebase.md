@@ -17,7 +17,6 @@ Inherits from [windowsCertificateProfileBase](../resources/intune_deviceconfig_w
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_windows81certificateprofilebase_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_windows81certificateprofilebase_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_windows81certificateprofilebase_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
-|[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_windows81certificateprofilebase_get_deviceconfigurationdevicestatesummary.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Get the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) from the deviceConfigurationDeviceStateSummaries navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -28,13 +27,13 @@ Inherits from [windowsCertificateProfileBase](../resources/intune_deviceconfig_w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|renewalThresholdPercentage|Int32|Certificate renewal threshold percentage Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md)|
+|renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99 Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md)|
 |keyStorageProvider|String|Key Storage Provider (KSP) Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
-|subjectNameFormat|String|Certificate Subject Name Format Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`.|
-|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `emailAddress`, `userPrincipalName`.|
+|subjectNameFormat|String|Certificate Subject Name Format Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`.|
+|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md)|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period Inherited from [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings|
+|extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -45,7 +44,6 @@ Inherits from [windowsCertificateProfileBase](../resources/intune_deviceconfig_w
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device compliance state summary for this account. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

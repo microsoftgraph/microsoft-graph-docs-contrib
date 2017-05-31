@@ -6,14 +6,14 @@ Update the properties of a [deviceCategory](../resources/intune_devicefe_devicec
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /managedDevices/{managedDevicesId}/deviceCategory/
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//deviceCategory/
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceCategory/
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//deviceCategory/
 Content-type: application/json
 Content-length: 2
 

@@ -20,7 +20,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_androidgeneraldeviceconfiguration_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_androidgeneraldeviceconfiguration_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_androidgeneraldeviceconfiguration_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
-|[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_androidgeneraldeviceconfiguration_get_deviceconfigurationdevicestatesummary.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Get the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) from the deviceConfigurationDeviceStateSummaries navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -40,7 +39,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |cellularBlockMessaging|Boolean|Indicates whether or not to block SMS/MMS messaging.|
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block syncing Wi-Fi tethering.|
-|compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType).|
+|compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.|
 |compliantAppListType|String|Type of list that is in the CompliantAppsList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |locationServicesBlocked|Boolean|Indicates whether or not to block location services.|
@@ -48,21 +47,21 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |googlePlayStoreBlocked|Boolean|Indicates whether or not to block the Google Play store.|
 |kioskModeBlockSleepButton|Boolean|Indicates whether or not to block the screen sleep button while in Kiosk Mode.|
 |kioskModeBlockVolumeButtons|Boolean|Indicates whether or not to block the volume buttons while in Kiosk Mode.|
-|kioskModeManagedAppId|String|Managed app that will be allowed to run when the device is in Kiosk Mode. Only KioskModeAppStoreUrl or this can be set (not both).|
+|kioskModeManagedApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|A list of managed apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |nfcBlocked|Boolean|Indicates whether or not to block Near-Field Communication.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
-|passwordExpirationDays|Int32|Number of days before the password expires.|
-|passwordMinimumLength|Int32|Minimum length of passwords.|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
-|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset.|
+|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 4 to 11|
 |passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`.|
 |passwordRequired|Boolean|Indicates whether or not to require a password.|
 |powerOffBlocked|Boolean|Indicates whether or not to block powering off the device.|
 |factoryResetBlocked|Boolean|Indicates whether or not to block user performing a factory reset.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to block screenshots.|
-|deviceSharingBlocked|Boolean|Indicates whether or not to block device sharing mode.|
+|deviceSharingAllowed|Boolean|Indicates whether or not to allow device sharing mode.|
 |storageBlockGoogleBackup|Boolean|Indicates whether or not to block Google Backup.|
 |storageBlockRemovableStorage|Boolean|Indicates whether or not to block removable storage usage.|
 |storageRequireDeviceEncryption|Boolean|Indicates whether or not to require device encryption.|
@@ -85,7 +84,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device compliance state summary for this account. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -129,7 +127,15 @@ Here is a JSON representation of the resource.
   "googlePlayStoreBlocked": true,
   "kioskModeBlockSleepButton": true,
   "kioskModeBlockVolumeButtons": true,
-  "kioskModeManagedAppId": "String",
+  "kioskModeManagedApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "String",
+      "publisher": "String",
+      "appStoreUrl": "String",
+      "appId": "String"
+    }
+  ],
   "nfcBlocked": true,
   "passwordBlockFingerprintUnlock": true,
   "passwordBlockTrustAgents": true,
@@ -143,7 +149,7 @@ Here is a JSON representation of the resource.
   "powerOffBlocked": true,
   "factoryResetBlocked": true,
   "screenCaptureBlocked": true,
-  "deviceSharingBlocked": true,
+  "deviceSharingAllowed": true,
   "storageBlockGoogleBackup": true,
   "storageBlockRemovableStorage": true,
   "storageRequireDeviceEncryption": true,

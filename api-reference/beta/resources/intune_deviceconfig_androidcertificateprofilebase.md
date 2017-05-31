@@ -17,7 +17,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_androidcertificateprofilebase_get_deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Get the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) from the deviceStatusOverview navigation property.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_androidcertificateprofilebase_get_deviceconfigurationuseroverview.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Get the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) from the userStatusOverview navigation property.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_androidcertificateprofilebase_list_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Get the settingStateDeviceSummaries from the deviceSettingStateSummaries navigation property.|
-|[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_androidcertificateprofilebase_get_deviceconfigurationdevicestatesummary.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Get the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) from the deviceConfigurationDeviceStateSummaries navigation property.|
 |[Get androidTrustedRootCertificate](../api/intune_deviceconfig_androidcertificateprofilebase_get_androidtrustedrootcertificate.md)|[androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md)|Get the [androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md) from the rootCertificate navigation property.|
 
 ## Properties
@@ -29,12 +28,12 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|renewalThresholdPercentage|Int32|Certificate renewal threshold percentage.|
-|subjectNameFormat|String|Certificate Subject Name Format. Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`.|
-|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Possible values are: `emailAddress`, `userPrincipalName`.|
+|renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Valid values 1 to 99|
+|subjectNameFormat|String|Certificate Subject Name Format. Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`.|
+|subjectAlternativeNameType|String|Certificate Subject Alternative Name Type. Possible values are: `emailAddress`, `userPrincipalName`, `customAzureADAttribute`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period.|
 |certificateValidityPeriodScale|String|Scale for the Certificate Validity Period. Possible values are: `days`, `months`, `years`.|
-|extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -45,7 +44,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device compliance state summary for this account. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificate|[androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md)|Trusted Root Certificate.|
 
 ## JSON Representation

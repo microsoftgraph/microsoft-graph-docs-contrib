@@ -3,17 +3,20 @@
 Gets the range object associated with the entire column.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/Range
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/Range
+POST /workbook/tables/{id|name}/columns/{id|name}/Range
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -30,7 +33,7 @@ Here is an example of the request.
   "name": "tablecolumn_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/Range
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
 ```
 
 ##### Response

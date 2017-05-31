@@ -6,7 +6,7 @@ Get the androidForWorkAppConfigurationSchemas from the androidForWorkAppConfigur
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All*
+*DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1047
+Content-Length: 1049
 
 {
   "value": [
@@ -66,7 +66,7 @@ Content-Length: 1047
           "selections": [
             {
               "@odata.type": "microsoft.graph.keyValuePair",
-              "key": "Key value",
+              "name": "Name value",
               "value": "Value value"
             }
           ]

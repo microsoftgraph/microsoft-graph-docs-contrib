@@ -6,7 +6,7 @@ Read properties and relationships of the [managedDeviceOverview](../resources/in
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /managedDeviceOverview
+GET /deviceManagement/managedDeviceOverview/
 ```
 
 ## Optional query parameters

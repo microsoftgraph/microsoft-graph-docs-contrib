@@ -8,6 +8,8 @@ Platform specific enrollment restrictions
 |---|---|---|
 |platformBlocked|Boolean|Block the platform from enrolling|
 |personalDeviceEnrollmentBlocked|Boolean|Block personally owned devices from enrolling|
+|osMinimumVersion|String|Min OS version supported|
+|osMaximumVersion|String|Max OS version supported|
 
 ## Relationships
 None
@@ -23,7 +25,9 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictions",
   "platformBlocked": true,
-  "personalDeviceEnrollmentBlocked": true
+  "personalDeviceEnrollmentBlocked": true,
+  "osMinimumVersion": "String",
+  "osMaximumVersion": "String"
 }
 ```
 

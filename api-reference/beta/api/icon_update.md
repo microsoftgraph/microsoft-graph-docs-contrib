@@ -3,16 +3,19 @@
 Update the properties of icon object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)/sort/fields/icon
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/fields/icon
+PATCH /workbook/tables/{id|name}/sort/fields/icon
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -33,7 +36,7 @@ Here is an example of the request.
   "name": "update_icon"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/sort/fields/icon
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 Content-type: application/json
 Content-length: 39
 
