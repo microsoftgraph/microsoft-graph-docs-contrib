@@ -20,7 +20,7 @@ The following screenshot shows an example Web app registration.
 To configure an app to use the OAuth 2.0 Authorization Code Grant flow, you'll need to save the following values when registering the app:
 
 - The Application Id assigned by the app registration portal.
-- An Application Secret, either a password or a public/private key pair (certificate). This is not required for Native apps. 
+- An Application Secret, either a password or a public/private key pair (certificate). This is not required for native apps. 
 - A Redirect URL for your app to receive responses from Azure AD.
 
 For steps on how to configure an app using the Microsoft App Registration Portal, see [Register your app](./auth_register_app_v2.md).
@@ -229,7 +229,7 @@ You can call Microsoft Graph on behalf of a user from the following kinds of app
 
 For more information about supported app types with the Azure AD v2.0 endpoint, see [Types of apps](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
 
-> **Note**: Calling Microsoft Graph from a [standalone Web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) is not currently supported by the Azure AD v2.0 endpoint. For this scenario, you need to use the Azure AD endpoint.
+> **Note**: Calling Microsoft Graph from a [standalone web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) is not currently supported by the Azure AD v2.0 endpoint. For this scenario, you need to use the Azure AD endpoint.
 
 For more information about getting access to Microsoft Graph on behalf of a user from the Azure AD v2.0 endpoint:
 
