@@ -22,13 +22,6 @@ Failure to read or update a photo, in this case, would result in the following e
 	}
 ```
 
-### Adding and accessing ICS-based calendars in user's mailbox
-
-Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
-
-* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
-* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
 ### Using delta query
 
@@ -89,6 +82,46 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+
+## Calendars
+
+### Adding and accessing ICS-based calendars in user's mailbox
+
+Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
+
+* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
+* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
+
+### Accessing a shared calendar
+
+When attempting to access events in a calendar that has been shared by another user using the following operation:
+
+```http
+GET \users('{id}')\calendars('{id}')\events
+```
+
+You may get HTTP 500 with the error code `ErrorInternalServerTransientError`.
+
+Historically, there are two ways that calendar sharing has been implemented, which, for the purpose of differentiating them, 
+are referred to as the "old" implementation and "new" implementation. The error occurs because: 
+
+- Currently, only Outlook on the web, Outlook on iOS, and Outlook on Android support sharing calendars on Office 365 in the new way.
+- You can use the calendar REST API to view or edit shared calendars, only if the calendars were shared in the new way. 
+- You cannot use the calendar REST API to view or edit calendars (or their events) that have been shared in the old way.
+
+To work around this, the calendar owner should re-share the calendar in Outlook on the web, Outlook on iOS, or Outlook on Android, and you 
+should re-accept the calendar using Outlook on the web. After re-accepting, one way to verify if the calendar has been shared using the new model is 
+to successfully view the shared calendar in Outlook on iOS or Outlook on Android.
+
+A calendar shared with you in the new way appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit 
+events in the shared calendar, as if it's your own calendar. As an example:
+
+```http
+GET \me\calendars('{id}')\events
+```
+
 
 ## Contacts
 
