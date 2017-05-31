@@ -1,7 +1,8 @@
-mailTipsError resource type
+# mailTipsError resource type
 
 An error that occurs during an action.
 
+## Properties
 | Property	   | Type	|Description|
 |:-----|:-----|:-----|
 | message | String | The error message. |

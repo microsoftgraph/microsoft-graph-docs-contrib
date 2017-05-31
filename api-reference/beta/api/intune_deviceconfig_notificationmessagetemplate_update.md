@@ -6,7 +6,7 @@ Update the properties of a [notificationMessageTemplate](../resources/intune_dev
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -28,7 +28,7 @@ The following table shows the properties that are required when you create a [no
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 
 
 

@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create a [wi
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |identityVersion|String|The identity version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |commandLine|String|The command line.|
-|productCode|Guid|The product code.|
+|productCode|String|The product code.|
 
 
 
@@ -64,7 +64,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}
 Content-type: application/json
-Content-length: 832
+Content-length: 817
 
 {
   "displayName": "Display Name value",
@@ -88,7 +88,7 @@ Content-length: 832
   "size": 4,
   "identityVersion": "Identity Version value",
   "commandLine": "Command Line value",
-  "productCode": "<Unknown Primitive Type Edm.Guid>"
+  "productCode": "Product Code value"
 }
 ```
 
@@ -97,7 +97,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 995
+Content-Length: 980
 
 {
   "@odata.type": "#microsoft.graph.windowsMobileMSI",
@@ -124,7 +124,7 @@ Content-Length: 995
   "size": 4,
   "identityVersion": "Identity Version value",
   "commandLine": "Command Line value",
-  "productCode": "<Unknown Primitive Type Edm.Guid>"
+  "productCode": "Product Code value"
 }
 ```
 

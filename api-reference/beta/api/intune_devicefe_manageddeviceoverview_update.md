@@ -6,7 +6,7 @@ Update the properties of a [managedDeviceOverview](../resources/intune_devicefe_
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementManagedDevices.ReadWrite.All*
+*DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,6 +14,7 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /managedDeviceOverview
+PATCH /deviceManagement/managedDeviceOverview/
 ```
 
 ## Request headers

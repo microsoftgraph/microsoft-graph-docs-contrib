@@ -1,6 +1,7 @@
 # fileAttachment resource type
 
-A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** 
+A file (such as a text file or Word document) attached to an [event](../resources/event.md),
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). The  **contentBytes** 
 property contains the base64-encoded contents of the file.  
 
 When creating a file attachment, include the following in the request body:

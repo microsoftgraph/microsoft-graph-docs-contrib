@@ -3,17 +3,20 @@
 Deletes the row from the table.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows(<index>)/delete
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows(<index>)/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -30,7 +33,7 @@ Here is an example of the request.
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)/delete
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
 ```
 
 ##### Response
