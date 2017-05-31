@@ -20,6 +20,9 @@ GET /planner/tasks/<id>/assignedToTaskBoardFormat
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) object in the response body.
+
+This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
+
 ### Example
 ##### Request
 Here is an example of the request.
@@ -28,7 +31,7 @@ Here is an example of the request.
   "name": "get_plannerassignedtotaskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/tasks/<id>/assignedToTaskBoardFormat
+GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -40,13 +43,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
+Content-length: 225
 
 {
-  "unassignedOrderHint": "unassignedOrderHint-value",
+  "unassignedOrderHint": "RWk1",
   "orderHintsByAssignee": {
+    "6463a5ce-2119-4198-9f2a-628761df4a62":"85752723360752+",
+    "aaa27244-1db4-476a-a5cb-004607466324":"90057581;"
   },
-  "id": "id-value"
+  "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
 

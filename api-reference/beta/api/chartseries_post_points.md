@@ -3,16 +3,19 @@
 Use this API to create a new ChartPoints.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points
+POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -30,7 +33,7 @@ Here is an example of the request.
   "name": "create_chartpoints_from_chartseries"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 Content-type: application/json
 Content-length: 3
 

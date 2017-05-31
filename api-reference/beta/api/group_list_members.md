@@ -4,6 +4,8 @@ Get a list of the group's direct members. A group can have users, contacts, and 
 This operation is not transitive.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.AccessAsUser.All*, *User.ReadBasic.All*, or *User.Read.All*.
+
+> Note: To list the members of a hidden membership group, the *Member.Read.Hidden* scope is required.
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -20,6 +20,9 @@ GET /planner/tasks/<id>/progressTaskBoardFormat
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.
+
+This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
+
 ### Example
 ##### Request
 Here is an example of the request.
@@ -40,11 +43,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 56
+Content-length: 76
 
 {
-  "id": "id-value",
-  "orderHint": "orderHint-value"
+  "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh",
+  "orderHint": "85752723360752+"
 }
 ```
 

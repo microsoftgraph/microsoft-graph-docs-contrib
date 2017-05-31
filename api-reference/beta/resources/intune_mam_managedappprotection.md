@@ -45,6 +45,11 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device.|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps.|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.|
+|disableAppPinIfDevicePinIsSet|Boolean|Indicates whether use of the app pin is required if the device pin is set.|
+|minimumRequiredOsVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
+|minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data.|
+|minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
+|minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -92,7 +97,12 @@ Here is a JSON representation of the resource.
   ],
   "contactSyncBlocked": true,
   "printBlocked": true,
-  "fingerprintBlocked": true
+  "fingerprintBlocked": true,
+  "disableAppPinIfDevicePinIsSet": true,
+  "minimumRequiredOsVersion": "String",
+  "minimumWarningOsVersion": "String",
+  "minimumRequiredAppVersion": "String",
+  "minimumWarningAppVersion": "String"
 }
 ```
 
