@@ -6,7 +6,7 @@ Update the properties of a [deviceComplianceActionItem](../resources/intune_devi
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -31,6 +31,7 @@ The following table shows the properties that are required when you create a [de
 |id|String|Key of the entity.|
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced.|
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
+|notificationTemplateId|String|What notification Message template to use|
 
 
 
@@ -43,11 +44,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}
 Content-type: application/json
-Content-length: 62
+Content-length: 125
 
 {
   "gracePeriodHours": 0,
-  "actionType": "notification"
+  "actionType": "notification",
+  "notificationTemplateId": "Notification Template Id value"
 }
 ```
 
@@ -56,13 +58,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 176
+Content-Length: 239
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "id": "e01a1893-1893-e01a-9318-1ae093181ae0",
   "gracePeriodHours": 0,
-  "actionType": "notification"
+  "actionType": "notification",
+  "notificationTemplateId": "Notification Template Id value"
 }
 ```
 

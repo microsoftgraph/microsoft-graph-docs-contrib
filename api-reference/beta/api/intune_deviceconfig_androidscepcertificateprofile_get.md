@@ -6,7 +6,7 @@ Read properties and relationships of the [androidScepCertificateProfile](../reso
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 973
+Content-Length: 1132
 
 {
   "value": {
@@ -70,9 +70,11 @@ Content-Length: 973
     "scepServerUrls": [
       "Scep Server Urls value"
     ],
+    "subjectNameFormatString": "Subject Name Format String value",
     "keyUsage": "digitalSignature",
     "keySize": "size2048",
-    "hashAlgorithm": "sha2"
+    "hashAlgorithm": "sha2",
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
   }
 }
 ```

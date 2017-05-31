@@ -30,6 +30,7 @@ The following table shows the properties that are required when you create a mob
 |Property|Type|Description|
 |---|---|---|
 |targetGroupId|String|The Id of the AAD group we are targeting the mobile app to.|
+|vpnConfigurationId|String|The Id of the Vpn Profile to apply for this app.|
 |id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
@@ -44,11 +45,12 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/mobileAppGroupAssignments/
 Content-type: application/json
-Content-length: 148
+Content-length: 203
 
 {
   "@odata.type": "#microsoft.graph.mobileAppGroupAssignment",
   "targetGroupId": "Target Group Id value",
+  "vpnConfigurationId": "Vpn Configuration Id value",
   "installIntent": "notApplicable"
 }
 ```
@@ -58,11 +60,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 197
+Content-Length: 252
 
 {
   "@odata.type": "#microsoft.graph.mobileAppGroupAssignment",
   "targetGroupId": "Target Group Id value",
+  "vpnConfigurationId": "Vpn Configuration Id value",
   "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
   "installIntent": "notApplicable"
 }

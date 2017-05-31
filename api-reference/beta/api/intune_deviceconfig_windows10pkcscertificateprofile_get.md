@@ -6,7 +6,7 @@ Read properties and relationships of the [windows10PkcsCertificateProfile](../re
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 872
+Content-Length: 963
 
 {
   "value": {
@@ -63,7 +63,8 @@ Content-Length: 872
     "certificateValidityPeriodScale": "months",
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
-    "certificateTemplateName": "Certificate Template Name value"
+    "certificateTemplateName": "Certificate Template Name value",
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
   }
 }
 ```

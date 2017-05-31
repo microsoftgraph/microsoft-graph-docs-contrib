@@ -56,9 +56,15 @@ The following table shows the properties that are required when you create a [de
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|disableAppPinIfDevicePinIsSet|Boolean|Indicates whether use of the app pin is required if the device pin is set. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumRequiredOsVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. (iOS Only) Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked.|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
+|minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 
 
@@ -72,7 +78,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1353
+Content-length: 1737
 
 {
   "displayName": "Display Name value",
@@ -103,9 +109,15 @@ Content-length: 1353
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
+  "disableAppPinIfDevicePinIsSet": true,
+  "minimumRequiredOsVersion": "Minimum Required Os Version value",
+  "minimumWarningOsVersion": "Minimum Warning Os Version value",
+  "minimumRequiredAppVersion": "Minimum Required App Version value",
+  "minimumWarningAppVersion": "Minimum Warning App Version value",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
+  "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
   "customSettings": [
     {
       "@odata.type": "microsoft.graph.keyValuePair",
@@ -121,7 +133,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1527
+Content-Length: 1911
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -155,9 +167,15 @@ Content-Length: 1527
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
+  "disableAppPinIfDevicePinIsSet": true,
+  "minimumRequiredOsVersion": "Minimum Required Os Version value",
+  "minimumWarningOsVersion": "Minimum Warning Os Version value",
+  "minimumRequiredAppVersion": "Minimum Required App Version value",
+  "minimumWarningAppVersion": "Minimum Warning App Version value",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
+  "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
   "customSettings": [
     {
       "@odata.type": "microsoft.graph.keyValuePair",

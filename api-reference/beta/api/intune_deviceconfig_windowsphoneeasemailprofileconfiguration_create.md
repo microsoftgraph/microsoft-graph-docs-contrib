@@ -6,7 +6,7 @@ Create a new [windowsPhoneEASEmailProfileConfiguration](../resources/intune_devi
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementConfiguration.ReadWrite.All*
+*DeviceManagementConfiguration.ReadWrite.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -35,7 +35,7 @@ The following table shows the properties that are required when you create a win
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |accountName|String|Account name.|
-|applyOnlyToWindowsPhone81|Boolean|Value indicating whether this policy only applies to Windows 8.1.|
+|applyOnlyToWindowsPhone81|Boolean|Value indicating whether this policy only applies to Windows 8.1. This property is read-only.|
 |syncCalendar|Boolean|Whether or not to sync the calendar.|
 |syncContacts|Boolean|Whether or not to sync contacts.|
 |syncTasks|Boolean|Whether or not to sync tasks.|
