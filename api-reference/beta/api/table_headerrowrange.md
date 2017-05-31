@@ -3,17 +3,20 @@
 Gets the range object associated with header row of the table.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/HeaderRowRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/HeaderRowRange
+POST /workbook/tables/{id|name}/HeaderRowRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/HeaderRowRange
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -30,7 +33,7 @@ Here is an example of the request.
   "name": "table_headerrowrange"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/HeaderRowRange
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/HeaderRowRange
 ```
 
 ##### Response

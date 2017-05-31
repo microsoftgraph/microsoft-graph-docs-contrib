@@ -3,18 +3,21 @@
 Gets a border object using its index
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders/ItemAt
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/borders/ItemAt
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders/ItemAt
+POST /workbook/worksheets/{id|name}/range(<address>)/format/borders/ItemAt
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
