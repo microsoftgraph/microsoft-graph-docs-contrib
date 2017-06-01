@@ -1,6 +1,6 @@
 # group resource type
 
-Represents an Azure Active Directory (AAD) group, which can be an Office 365 group, Microsoft Team, dynamic group, or security group.
+Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, Microsoft Team, dynamic group, or security group.
 Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
@@ -8,7 +8,7 @@ This resource supports:
 - Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
-> **Microsoft Teams and Office 365 groups are both built on AAD groups**. You can use most of the Office 365 groups API with Microsoft Teams. You cannot use [Create group](../api/group_post_groups.md) to create a team. For details, see the [Microsoft Teams overview](teams_api_overview.md).
+> **Microsoft Teams and Office 365 groups support group collaboration**. You can use most of the Office 365 groups API with Microsoft Teams. You cannot use [Create group](../api/group_post_groups.md) to create a team. For details, see the [Microsoft Teams overview](teams_api_overview.md).
 
 ## Methods
 
@@ -36,11 +36,14 @@ This resource supports:
 |[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
-|**Group calendar**| | |
+|**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[List calendarView](../api/group_list_calendarview.md) |[Event](event.md) collection| Get a collection of events in a specified time window.|
-|**Group conversations**| | |
+|**Chat channels**| | |
+|[Create channel](../api/group_post_channels.md) |[Channel](channel.md)| Create a new channel by posting to the channels collection.|
+|[List channel](../api/group_list_channels.md) |[Channel](channel.md) collection| Get a channel object collection.|
+|**Conversations**| | |
 |[Create conversation](../api/group_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
 |[List conversations](../api/group_list_conversations.md) |[Conversation](conversation.md) collection| Get a Conversation object collection.|
 |[List threads](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get all the threads of a group.|
@@ -50,15 +53,12 @@ This resource supports:
 |[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
-|**Microsoft Teams**| | |
-|[Create channel](../api/group_post_channels.md) |[Channel](channel.md)| Create a new Channel by posting to the channels collection.|
-|[List channel](../api/group_list_channels.md) |[Channel](channel.md) collection| Get a channel object collection.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
 |[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
-|**Other group resources - photo, plans**| | |
+|**Other group resources**| | |
 |[List photos](../api/group_list_photos.md) |[profilePhoto](photo.md) collection| Get a collection of profile photos for the group.|
 |[List plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) collection| Get Planner plans owned by the group.|
 |**User settings**| | |

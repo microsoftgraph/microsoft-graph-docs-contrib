@@ -29,11 +29,11 @@ This resource supports:
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The function is transitive. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
-|**Group calendar**| | |
+|**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
 |[List calendarView](../api/group_list_calendarview.md) |[Event](event.md) collection| Get a collection of events in a specified time window.|
-|**Group conversations**| | |
+|**Conversations**| | |
 |[Create conversation](../api/group_post_conversations.md) |[Conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
 |[List conversations](../api/group_list_conversations.md) |[Conversation](conversation.md) collection| Get a Conversation object collection.|
 |[List threads](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get all the threads of a group.|
@@ -48,7 +48,7 @@ This resource supports:
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
 |[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
-|**Other group resources - photo, plans**| | |
+|**Other group resources**| | |
 |[List photos](../api/group_list_photos.md) |[profilePhoto](photo.md) collection| Get a collection of profile photos for the group.|
 |[List plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) collection| Get Planner plans owned by the group.|
 |**User settings**| | |
