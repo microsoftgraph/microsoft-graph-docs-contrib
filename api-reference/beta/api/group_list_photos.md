@@ -1,14 +1,13 @@
 # List photos
 
-Retrieve a list of photo objects.
+Retrieve a list of [profilePhoto](../resources/profilephoto.md) objects.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Group.Read.All_; _Group.ReadWrite.All_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/photos
 GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
-GET /drive/root/createdByUser/joinedGroups/{id}/photos
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -21,7 +20,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [Photo](../resources/photo.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [profilePhoto](../resources/profilephoto.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
