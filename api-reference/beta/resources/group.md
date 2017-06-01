@@ -8,7 +8,7 @@ This resource supports:
 - Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
-> **Microsoft Teams and Office 365 groups are both built on AAD groups**. You can use most of the Office 365 groups API with Microsoft Teams. You cannot use [Create group](../api/group_post_groups.md) to create a team. For details, see the the [Microsoft Teams overview](teams_api_overview.md).
+> **Microsoft Teams and Office 365 groups are both built on AAD groups**. You can use most of the Office 365 groups API with Microsoft Teams. You cannot use [Create group](../api/group_post_groups.md) to create a team. For details, see the [Microsoft Teams overview](teams_api_overview.md).
 
 ## Methods
 
