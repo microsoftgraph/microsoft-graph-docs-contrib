@@ -3,17 +3,20 @@
 Use this API to create a new TableRow.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
+POST /workbook/tables/{id|name}/rows
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -31,7 +34,7 @@ Here is an example of the request.
   "name": "create_tablerow_from_table"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows
 Content-type: application/json
 Content-length: 45
 

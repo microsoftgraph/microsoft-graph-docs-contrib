@@ -13,7 +13,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt;. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```
 In the request, specify the `id` of the directory object you want to remove after the $ref segment.
 

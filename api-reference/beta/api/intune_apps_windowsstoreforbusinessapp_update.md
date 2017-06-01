@@ -48,6 +48,8 @@ The following table shows the properties that are required when you create a [wi
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |usedLicenseCount|Int32|The number of Windows Store for Business licenses in use.|
 |totalLicenseCount|Int32|The total number of Windows Store for Business licenses.|
+|productKey|String|The app product key|
+|licenseType|String|The app license type Possible values are: `offline`, `online`.|
 
 
 
@@ -60,7 +62,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}
 Content-type: application/json
-Content-length: 629
+Content-length: 695
 
 {
   "displayName": "Display Name value",
@@ -80,7 +82,9 @@ Content-length: 629
   "notes": "Notes value",
   "uploadState": 11,
   "usedLicenseCount": 0,
-  "totalLicenseCount": 1
+  "totalLicenseCount": 1,
+  "productKey": "Product Key value",
+  "licenseType": "online"
 }
 ```
 
@@ -89,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 802
+Content-Length: 868
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreForBusinessApp",
@@ -112,7 +116,9 @@ Content-Length: 802
   "notes": "Notes value",
   "uploadState": 11,
   "usedLicenseCount": 0,
-  "totalLicenseCount": 1
+  "totalLicenseCount": 1,
+  "productKey": "Product Key value",
+  "licenseType": "online"
 }
 ```
 

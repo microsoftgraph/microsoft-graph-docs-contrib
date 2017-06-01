@@ -56,9 +56,15 @@ The following table shows the properties that are required when you create a [io
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|disableAppPinIfDevicePinIsSet|Boolean|Indicates whether use of the app pin is required if the device pin is set. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumRequiredOsVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
+|minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 
 
 
@@ -71,7 +77,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1255
+Content-length: 1639
 
 {
   "displayName": "Display Name value",
@@ -102,11 +108,17 @@ Content-length: 1255
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
+  "disableAppPinIfDevicePinIsSet": true,
+  "minimumRequiredOsVersion": "Minimum Required Os Version value",
+  "minimumWarningOsVersion": "Minimum Warning Os Version value",
+  "minimumRequiredAppVersion": "Minimum Required App Version value",
+  "minimumWarningAppVersion": "Minimum Warning App Version value",
   "targetedSecurityGroupsCount": 11,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],
-  "appDataEncryptionType": "afterDeviceRestart"
+  "appDataEncryptionType": "afterDeviceRestart",
+  "minimumRequiredSdkVersion": "Minimum Required Sdk Version value"
 }
 ```
 
@@ -115,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1425
+Content-Length: 1809
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -149,11 +161,17 @@ Content-Length: 1425
   "contactSyncBlocked": true,
   "printBlocked": true,
   "fingerprintBlocked": true,
+  "disableAppPinIfDevicePinIsSet": true,
+  "minimumRequiredOsVersion": "Minimum Required Os Version value",
+  "minimumWarningOsVersion": "Minimum Warning Os Version value",
+  "minimumRequiredAppVersion": "Minimum Required App Version value",
+  "minimumWarningAppVersion": "Minimum Warning App Version value",
   "targetedSecurityGroupsCount": 11,
   "targetedSecurityGroupIds": [
     "Targeted Security Group Ids value"
   ],
-  "appDataEncryptionType": "afterDeviceRestart"
+  "appDataEncryptionType": "afterDeviceRestart",
+  "minimumRequiredSdkVersion": "Minimum Required Sdk Version value"
 }
 ```
 

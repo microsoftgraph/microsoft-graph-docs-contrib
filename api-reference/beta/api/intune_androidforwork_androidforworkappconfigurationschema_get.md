@@ -6,7 +6,7 @@ Read properties and relationships of the [androidForWorkAppConfigurationSchema](
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
+*DeviceManagementConfiguration.Read.All*
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 979
+Content-Length: 981
 
 {
   "value": {
@@ -67,7 +67,7 @@ Content-Length: 979
         "selections": [
           {
             "@odata.type": "microsoft.graph.keyValuePair",
-            "key": "Key value",
+            "name": "Name value",
             "value": "Value value"
           }
         ]

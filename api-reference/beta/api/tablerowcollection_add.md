@@ -3,17 +3,20 @@
 Adds a new row to the table.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
+
+    * Files.ReadWrite
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows/add
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows/add
+POST /workbook/tables/{id|name}/rows/add
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## Request body
@@ -36,16 +39,15 @@ Here is an example of the request.
   "name": "tablerowcollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables(<id|name>)/rows/add
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/add
 Content-type: application/json
 Content-length: 51
 
 {
-  "index": {
-  },
+  "index": null,
   "values": [
-    {
-    }
+    [1, 2, 3],
+    [4, 5, 6]
   ]
 }
 ```
