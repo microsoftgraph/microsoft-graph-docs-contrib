@@ -1,6 +1,6 @@
 # group resource type
 
-Represents an Azure Active Directory (AAD) group, which can be an Office 365 group, dynamic group, or security group.
+Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a dynamic group, or a security group.
 Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
