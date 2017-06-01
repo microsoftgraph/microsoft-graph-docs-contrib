@@ -1,9 +1,9 @@
-# List owners
+Gr# List owners
 
 Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. 
 
 ## Prerequisites
-One of the following **scopes** are required to execute this API: *User.ReadBasic.All* or *User.Read.All* or *User.ReadWrite.All
+The following **scopes** are required to execute this API: *Group.Read.All* and one of *User.ReadBasic.All* or *User.Read.All* or *User.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
