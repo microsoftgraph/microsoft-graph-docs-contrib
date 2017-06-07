@@ -34,8 +34,10 @@ If successful, this method returns `200, OK` response code and [NamedItem](../re
 
 ## Example
 Here is an example of how to call this API.
+
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "NamedItemcollection_add"
@@ -46,10 +48,11 @@ Content-type: application/json
 Content-length: 54
 
 {
-  "name": "myRange",
-  "formula": "=A10+B10",
+  "name": "test6",
+  "reference": "=SUMME(Sheet2!$A$1+Sheet2!$A$2)",
   "comment": "Comment for the named item"
 }
+
 ```
 
 ##### Response
@@ -64,15 +67,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 109
 
+
 {
-  "name": "myRange",
-  "comment": "Sample range",
-  "scope": "Workbook",
-  "type": "String",
-  "visible": true,
-  "value": "=A10+B10"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",
+    "@odata.type": "#microsoft.graph.workbookNamedItem",
+    "@odata.id": "/users('ca41eb6e-5828-486b-ab52-c3bd1f7a4047')/drive/root/workbook/names(%27test6%27)",
+    "comment": "Comment for the named item",
+    "name": "test6",
+    "scope": "Workbook",
+    "type": "Double",
+    "value": 0,
+    "visible": true
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
