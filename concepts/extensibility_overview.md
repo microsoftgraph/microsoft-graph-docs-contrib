@@ -14,10 +14,9 @@ Microsoft Graph offers two types of extensions. Choose the extension type that b
 
 >**Important:** You should not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 
-## Supported Resources
+## Supported resources
 
-The following table shows the current support for open and schema extensions and whether they are in general availability (GA) or in preview. GA API is in the /v1.0 and /beta endpoints,
-and preview API is only in the /beta endpoint. 
+The following table lists the resources associated with open and schema extensions and indicates whether they have reached general availability (GA) (available in both the v1.0 and beta endpoints) or are in preview (available only in the beta endpoint).  
 
 | Resource | Open extensions | Schema extensions |
 |---------------|-------|-------|
