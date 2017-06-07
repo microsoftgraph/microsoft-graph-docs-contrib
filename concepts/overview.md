@@ -1,6 +1,6 @@
 # Overview of Microsoft Graph
 
-You can use the Microsoft Graph API interact with the data of millions of users in the Microsoft cloud. Use Microsoft Graph to build apps for organizations and consumers that connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
+You can use the Microsoft Graph API to interact with the data of millions of users in the Microsoft cloud. Use Microsoft Graph to build apps for organizations and consumers that connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
 ## What's in the graph?
 
