@@ -16,7 +16,7 @@ Microsoft Graph offers two types of extensions. Choose the extension type that b
 
 ## Supported resources
 
-The following table lists the resources associated with open and schema extensions and indicates whether they have reached general availability (GA) (available in both the v1.0 and beta endpoints) or are in preview (available only in the beta endpoint).  
+The following table lists the resources that support open and schema extensions and indicates whether they have reached general availability (GA) (available in both the v1.0 and beta endpoints) or are in preview (available only in the beta endpoint).  
 
 | Resource | Open extensions | Schema extensions |
 |---------------|-------|-------|
