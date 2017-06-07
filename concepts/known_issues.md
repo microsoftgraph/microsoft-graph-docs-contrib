@@ -58,7 +58,7 @@ Examples of group features that support only delegated permissions:
 
 ### Teams in Microsoft Teams (preview)
 
-Microsoft Teams are built on Office 365 groups. All group APIs can also be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
+Microsoft Teams and Office 365 groups share similar functionality. All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
 
 ### Microsoft Teams channels (preview)
 
