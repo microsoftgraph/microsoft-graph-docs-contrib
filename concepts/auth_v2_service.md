@@ -60,7 +60,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | state |Recommended |A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on. |
 
 ### Consent experience
-Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the direct application permissions that you have requested for your app in the app registration portal. The following is an example of the consent dialog that Azure AD presents to the administrator:
+Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the Application permissions that you have requested for your app in the app registration portal. The following is an example of the consent dialog that Azure AD presents to the administrator:
 
 ![Administrator consent dialog.](./images/admin-consent.png)
 
@@ -105,7 +105,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 | --- | --- | --- |
 | tenant |Required |The directory tenant that you want to request permission from. This can be in GUID or friendly name format. |
 | client_id |Required |The Application ID that the [Microsoft App Registration Portal](https://apps.dev.microsoft.com) assigned when you registered your app. |
-| scope |Required |The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the v2.0 endpoint that of all the direct application permissions you have configured for your app, it should issue a token for the ones associated with the resource you want to use. |
+| scope |Required |The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the v2.0 endpoint that of all the Application permissions you have configured for your app, it should issue a token for the ones associated with the resource you want to use. |
 | client_secret |Required |The Application Secret that you generated for your app in the app registration portal. |
 | grant_type |Required |Must be `client_credentials`. |
 
