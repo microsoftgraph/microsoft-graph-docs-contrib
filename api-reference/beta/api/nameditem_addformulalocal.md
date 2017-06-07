@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/add
+POST /workbook/worksheets({id|name})/names/addFormulaLocal
 
 ```
 ## Request headers
@@ -43,16 +43,15 @@ Here is an example of the request.
   "name": "NamedItemcollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/add
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/addFormulaLocal
 Content-type: application/json
 Content-length: 54
 
 {
-  "name": "test6",
-  "reference": "=SUMME(Sheet2!$A$1+Sheet2!$A$2)",
+  "name": "test7",
+  "formula": "=SUM(Sheet2!$A$1+Sheet2!$A$2)",
   "comment": "Comment for the named item"
 }
-
 ```
 
 ##### Response
@@ -67,13 +66,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 109
 
-
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",
     "@odata.type": "#microsoft.graph.workbookNamedItem",
-    "@odata.id": "/users('ca41eb6e-5828-486b-ab52-c3bd1f7a4047')/drive/root/workbook/names(%27test6%27)",
+    "@odata.id": "/users('ca41eb6e-5828-486b-ab52-c3bd1f7a4047')/drive/root/workbook/names(%27test7%27)",
     "comment": "Comment for the named item",
-    "name": "test6",
+    "name": "test7",
     "scope": "Workbook",
     "type": "Double",
     "value": 0,
