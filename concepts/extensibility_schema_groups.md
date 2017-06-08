@@ -16,7 +16,7 @@ For this scenario, we're going to show you how to:
 
 >**Note:** This topic shows you how to create and read schema extension values on a **group** resource (steps 3-5).  The same methods are supported for the 
 **administrativeUnit**, **device**, **event**, **message**, **organization**, **post**, and **user** 
-resource types as well.  So you can carry out similar operations as the example requests below on any of those resources. Note that **administrativeUnit" is 
+resource types as well.  So you can carry out similar operations as the example requests below on any of those resources. Note that **administrativeUnit** is 
 available only in the beta endpoint.
 
 ## 1. View available schema extensions

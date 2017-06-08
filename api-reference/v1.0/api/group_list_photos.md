@@ -1,12 +1,13 @@
-# List extensionProperties
+# List photos
 
-Retrieve a list of extensionProperty objects.
+Retrieve a list of [profilePhoto](../resources/profilephoto.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+The following **scopes** are required to execute this API: _Group.Read.All_; _Group.ReadWrite.All_
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /applications/{id}/extensionProperties
+GET /groups/{id}/photos
+GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -14,45 +15,40 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt; *Required*  |
+| Authorization  | string  | Bearer <token>. Required. |
 
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [extensionProperty](../resources/extensionproperty.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [profilePhoto](../resources/profilephoto.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_extensionproperties"
+  "name": "get_photos"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/applications/{id}/extensionProperties
+GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.extensionproperty",
+  "@odata.type": "microsoft.graph.profilePhoto",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
+Content-length: 94
 
 {
   "value": [
     {
-      "appDisplayName": "appDisplayName-value",
-      "name": "name-value",
-      "dataType": "dataType-value",
-      "isSyncedFromOnPremises": true,
-      "targetObjects": [
-        "targetObjects-value"
-      ],
+      "height": 99,
+      "width": 99,
       "id": "id-value"
     }
   ]
@@ -63,7 +59,7 @@ Content-length: 269
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List extensionProperties",
+  "description": "List photos",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
