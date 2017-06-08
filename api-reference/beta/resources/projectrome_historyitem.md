@@ -1,6 +1,6 @@
-# Activity Resource Type
+# HistoryItem Resource Type
 
-An activity for a user and a given app in Project Rome.
+A historyItem for a user activity for an app.
 
 ## Methods
 
