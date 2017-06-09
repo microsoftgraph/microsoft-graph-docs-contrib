@@ -6,11 +6,11 @@ Project Rome is the code name for Microsoft's cross-device experiences platform.
 
 RemoteSystems in Microsoft Graph enables you to:
 
-- Discover and connect to user's devices
+- Discover and connect to user's devices
 - Remotely launch apps on these devices
 - Send messages to your apps on these devices
 
-Using these capabilities, you can build apps that can use the user's environment and create rich experiences that transcend a single device. With these APIs, you can extend the experience; for example, you can extend your app or website to launch on a bigger screen. You can also augment the experience by creating a companion experience for an app or website on another of the user's devices. This can help provide another view of the functionality in their app.
+Using these capabilities, you can build apps that can use the user's environment and create rich experiences that transcend a single device. With these APIs, you can extend the experience; for example, you can extend your app or website to launch on a bigger screen. You can also augment the experience by creating a companion experience for an app or website on another of the user's devices. This can help provide another view of the functionality in their app.
 
 To use this functionality via Microsoft Graph to communicate with other Windows devices, you use the following APIs:
 
