@@ -21,21 +21,20 @@ To use this functionality via Microsoft Graph to communicate with other Windows 
 
 ## Activities
 
-The UserActivity APIs enable you to drive engagement in your apps across devices and platforms. A UserActivity is the unit of user engagement in Windows, and consists of three components: 
+Activities in Microsoft Graph enable you to drive user engagement in your apps across devices and platforms. In addition to the REST API, the WinRT UserActivity API provides as a way to capture user activity. An activity is the unit of user engagement, and consists of three components:
 
 - A deep link
-- Visuals
-- Content metadata
+- A visual representation
+- Content metadata that describes the activity, using [http://schema.org/](http://schema.org/) shared vocabulary
 
-When a UserActivity session is created by an application, it will begin to accrue engagement records when users interact with the application.
-When an application publishes UserActivity objects, the UserActivity object will show up in some of the new UI surfaces in Windows; for example, Cortana Notifications and Timeline. You can specify both rich metadata (to allow activities to be presented in just the right context) and rich visuals (using Adaptive Card markup) in your UserActivity objects.
+When a session is created by an application, a history item should be added to the activity to reflect the period of user engagement. Each time a user reengages with an activity, a new history item is added to the activity to accrue user engagement. 
 
+When an application publishes user activity objects, the object will show up in some of the new UI surfaces in Windows; for example, Cortana Notifications and Timeline. You can specify both rich metadata (to allow activities to be presented in just the right context) and rich visuals (using [Adaptive Card](http://adaptivecards.io/) markup) in your activity objects.
 
 To use this functionality via Microsoft Graph to create user activities, you use the following APIs:
 
 - [Create or replace an activity](../api/projectrome_put_activity.md)
-- [Create or replace a historyItem](../api/projectrome_put_historyitem.md)
-- [Publish a user activity] 
-<!-- - <add other relevant api's or point to activity guide.> -->
+- [Create or replace a history item](../api/projectrome_put_historyitem.md)
+
 
 
