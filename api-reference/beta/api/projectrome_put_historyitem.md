@@ -4,14 +4,14 @@ Create a new or replace an existing historyItem for an existing user activity.
 
 ## Prerequisites
 
-Both **scopes** are required to execute this API: *UserTimelineActivity.Write.CreatedByApp* and *User.Read*
+The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /me/activities/{activity.id}/historyItems/{GUID to be used as the historyItem.id}
+PUT /me/activities/{id}/historyItems/{GUID to be used as the id}
 ```
 
 ## Request headers
@@ -30,7 +30,7 @@ If successful, this method returns `201, Created` response code if the historyIt
 
 ## Example
 
-### Example Request
+##### Request
 
 Here is an example of the request:
 
@@ -51,7 +51,7 @@ Content-length: 364
 }
 ```
 
-### Example Response
+##### Response
 
 Here is an example of the response:
 
@@ -64,6 +64,16 @@ Here is an example of the response:
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
+{
+    "status": 1,
+    "userTimezone": "Africa/Casablanca",
+    "createdDateTime": "2017-06-09T20:58:46.706Z",
+    "lastModifiedDateTime": "2017-06-09T20:58:46.706Z",
+    "id": "390e06e2-7e5b-4133-8014-fac7ac5991af",
+    "startedDateTime": "2015-02-11T20:54:04.345Z",
+    "lastActiveDateTime": "2015-02-11T20:54:04.345Z",
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

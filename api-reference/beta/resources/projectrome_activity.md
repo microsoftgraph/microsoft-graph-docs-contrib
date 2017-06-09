@@ -1,4 +1,4 @@
-# Activity Resource Type
+# Activity resource type
 
 An activity for a user and a given app in Project Rome.
 
@@ -6,8 +6,8 @@ An activity for a user and a given app in Project Rome.
 
 |Method | Description|
 |-------|-----------|
-|PUT /me/activities/{base64 encoded activity.appActivityId} | Creates or replaces an existing activity (upsert)|
-|DELETE /me/activities/{activity.id} | Deletes the specified activity for that user from your app|
+|PUT /me/activities/{base64 encoded appActivityId} | Creates or replaces an existing activity (upsert)|
+|DELETE /me/activities/{id} | Deletes the specified activity for that user from your app|
 
 
 ## Properties

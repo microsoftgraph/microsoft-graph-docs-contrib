@@ -1,13 +1,13 @@
-# HistoryItem Resource Type
+# HistoryItem resource type
 
-A historyItem for a user activity for an app.
+A history item for a user activity for an app.
 
 ## Methods
 
 |Method | Description|
 |-------|-----------|
-|PUT /me/activities/{activity.id}/historyItems/{GUID to be used as the historyItem.id} | Creates or replaces an existing historyItem for that activity (upsert)|
-|DELETE /me/activities/{activity.id}/historyItmes/{historyItem.id} | Deletes the specified historyItem for that activity|
+|PUT /me/activities/{id}/historyItems/{GUID to be used as the id} | Creates or replaces an existing historyItem for that activity (upsert)|
+|DELETE /me/activities/{id}/historyItmes/{id} | Deletes the specified historyItem for that activity|
 
 
 ## Properties
