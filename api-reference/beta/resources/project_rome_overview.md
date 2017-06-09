@@ -15,8 +15,8 @@ Using these capabilities, you can build apps that can use the user's environme
 To use this functionality via Microsoft Graph to communicate with other Windows devices, you use the following APIs:
 
 - [List the user's devices](../api/user_list_devices.md)
-- [Send a command to a device](../send_device_command.md)
-- [Get command status](../get_device_command_status.md)
+- [Send a command to a device](../api/send_device_command.md)
+- [Get command status](../api/get_device_command_status.md)
 
 
 ## Activities
