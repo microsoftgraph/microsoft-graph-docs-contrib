@@ -14,9 +14,9 @@ Using these capabilities, you can build apps that can use the user's environme
 
 To use this functionality via Microsoft Graph to communicate with other Windows devices, you use the following APIs:
 
-- List the user's devices
-- Send a command to a device
-- Get command status
+- [List the user's devices](../api/user_list_devices.md)
+- [Send a command to a device](../send_device_command.md)
+- [Get command status](../get_device_command_status.md)
 
 
 ## Activities
@@ -31,9 +31,10 @@ When a UserActivity session is created by an application, it will begin to accru
 When an application publishes UserActivity objects, the UserActivity object will show up in some of the new UI surfaces in Windows; for example, Cortana Notifications and Timeline. You can specify both rich metadata (to allow activities to be presented in just the right context) and rich visuals (using Adaptive Card markup) in your UserActivity objects.
 
 
-To use this functionality via Microsoft Graph to create user activities you use the following APIs:
+To use this functionality via Microsoft Graph to create user activities, you use the following APIs:
 
-- Publish a user activity 
+- [Create or replace an activity](../api/projectrome_put_activity.md)
+- [Publish a user activity] 
 <!-- - <add other relevant api's or point to activity guide.> -->
 
 
