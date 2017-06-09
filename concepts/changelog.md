@@ -2,6 +2,8 @@
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
+For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
+
 ## May 2017
 
 ### Application API changes
