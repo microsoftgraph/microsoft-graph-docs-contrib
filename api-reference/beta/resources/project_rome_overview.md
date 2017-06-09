@@ -34,6 +34,7 @@ When an application publishes UserActivity objects, the UserActivity object will
 To use this functionality via Microsoft Graph to create user activities, you use the following APIs:
 
 - [Create or replace an activity](../api/projectrome_put_activity.md)
+- [Create or replace a historyItem](../api/projectrome_put_historyitem.md)
 - [Publish a user activity] 
 <!-- - <add other relevant api's or point to activity guide.> -->
 
