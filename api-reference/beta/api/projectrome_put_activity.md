@@ -68,7 +68,13 @@ Content-length: 364
         "backgroundColor": "#FFD4FF7F",
         "displayText": "Contoso How-To: How to Tie a Reef Knot",
         "content": {
-
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "type": "AdaptiveCard",
+            "body":
+            [{
+                "type": "TextBlock",
+                "text": "Contoso MainPage"
+            }]
         }
     }
 }
