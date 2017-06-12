@@ -34,7 +34,7 @@ Here is a JSON representation of the resource
 |consentType|String| Indicates if consent was provided by the administrator (on behalf of the organization) or by an individual. The possible values are *AllPrincipals* or *Principal*. |
 |expiryTime|DateTimeOffset| Reserved for internal use. Returns **null**. |
 |objectId|String| Unique identifier. Read-only.|
-|principalId|String| If consentType is *AllPrincipals* this value is null, and the consent applies to all users in the organization. If consentType is *Principal* then this property specifies the objectId of the user that granted consent and applies only for that user. |
+|principalId|String| If consentType is *AllPrincipals* this value is null, and the consent applies to all users in the organization. If consentType is *Principal*, then this property specifies the objectId of the user that granted consent and applies only for that user. |
 |resourceId|String| Specifies the *objectId* of the resource service principal to which access has been granted. |
 |scope|String| Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token. |
 |startTime|DateTimeOffset| Reserved for internal use. Returns **null**. |
