@@ -11,13 +11,15 @@ The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /me/activities/{base64 encoded appActivityId}
+PUT /me/activities/{appActivityId}
 ```
+
+The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.
 
 ## Request headers
 
 |Name | Type | Description|
-|-----|------|------------|
+|:----|:-----|:-----------|
 |Authorization | string | OAuth token, required.|
 
 ## Request body
@@ -40,7 +42,7 @@ Here is an example of the request:
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activites/{base64 encoded appActivityId}
+PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: json
 Content-length: 364
 

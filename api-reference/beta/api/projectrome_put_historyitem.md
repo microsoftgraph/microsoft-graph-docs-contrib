@@ -11,13 +11,15 @@ The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /me/activities/{id}/historyItems/{GUID to be used as the id}
+PUT /me/activities/{id}/historyItems/{id}
 ```
+
+Id needs to be a GUID.
 
 ## Request headers
 
 |Name | Type | Description|
-|-----|------|------------|
+|:----|:-----|:-----------|
 |Authorization | string | OAuth token, required.|
 
 ## Request body

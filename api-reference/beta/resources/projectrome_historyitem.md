@@ -5,20 +5,19 @@ A history item for a user activity for an app.
 ## Methods
 
 |Method | Description|
-|-------|-----------|
-|PUT /me/activities/{id}/historyItems/{GUID to be used as the id} | Creates or replaces an existing historyItem for that activity (upsert)|
+|:------|:----------|
+|PUT /me/activities/{id}/historyItems/{id} | Creates or replaces an existing historyItem for that activity (upsert), id needs to be a GUID|
 |DELETE /me/activities/{id}/historyItmes/{id} | Deletes the specified historyItem for that activity|
-
 
 ## Properties
 
-|Name | Type | Nullable | Description
-|----|------|---------|------------
-|status | EnumType | N | Status code used to identify valid objects; set by AFS and not caller-modifiable (Values: Available, Ongoing, Deleted)|
+|Name | Type | Nullable | Description|
+|:---|:------|:---------|:-----------|
+|status | EnumType | N | Status code used to identify valid objects; set by the server and not caller-modifiable (Values: active, updated, deleted, ignored)|
 |userTimezone | String | Y | The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation|
-|createdDateTime | DateTimeOffset | N | DateTime in UTC when the object was created on the server (set by AFS)|
-|lastModifiedDateTime | DateTimeOffset | N | DateTime in UTC when the object was modified on the server (set by AFS)|
-|id | String, internally GUID | N | AFS-generated ID for the history item object|
+|createdDateTime | DateTimeOffset | N | DateTime in UTC when the object was created on the server (set by the server)|
+|lastModifiedDateTime | DateTimeOffset | N | DateTime in UTC when the object was modified on the server (set by the server)|
+|id | String | N | Client-set GUID for the history item object|
 |startedDateTime | DateTimeOffset | N | UTC DateTime when the historyItem (activity session) was started, required for timeline history|
 |lastActiveDateTime | DateTimeOffset | Y | UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null, historyItem status should be Ongoing|
 |expirationDateTime | DateTimeOffset | Y | UTC DateTime when the historyItem will undergo hard-delete, can be client-set|
