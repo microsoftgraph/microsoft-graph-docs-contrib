@@ -246,10 +246,11 @@
     </Item>
     <Item text="Directory role" url="/en-us/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
       <Item text="List directory roles" url="/en-us/api-reference/v1.0/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
-      <Item text="Enable directory role" url="/en-us/api-reference/v1.0/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
+      <Item text="Activate directory role" url="/en-us/api-reference/v1.0/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
       <Item text="Get directory role" url="/en-us/api-reference/v1.0/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
       <Item text="List members" url="/en-us/api-reference/v1.0/api/directoryrole_list_members" SEOKeyword="List members, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
       <Item text="Add member" url="/en-us/api-reference/v1.0/api/directoryrole_post_members" SEOKeyword="Create member, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new member." />
+      <Item text="Remove member" url="/en-us/api-reference/v1.0/api/directoryrole_delete_member" />
     </Item>
     <Item text="Directory role template" url="/en-us/api-reference/v1.0/resources/directoryroletemplate" SEOKeyword="directoryroletemplate API, Microsoft Graph API, directoryroletemplate API" SEODescription="Represents a directory role template. A directory role template specifies the property values of a directory role (DirectoryRole). There is an associated directory role template object for each of the directory roles that may be activated in a tenant.">
       <Item text="List directoryRoleTemplates" url="/en-us/api-reference/v1.0/api/directoryroletemplate_list" SEOKeyword="List directoryRoleTemplates, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryroletemplate objects." />
@@ -635,7 +636,7 @@
 
   <Item text="Beta reference" url="/en-us/api-reference/beta/beta-overview">
     <Item text="Users" url="/en-us/api-reference/beta/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
-      <Item text="User" url="/en-us/api-reference/beta/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
+      <Item text="User" url="/en-us/api-reference/beta/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
         <Item text="Create user" url="/en-us/api-reference/beta/api/user_post_users" SEOKeyword="Create User, Microsoft Graph API, user API" SEODescription="Use this API to create a new User." />
         <Item text="Delete user" url="/en-us/api-reference/beta/api/user_delete" SEOKeyword="Delete user, Microsoft Graph API, user API" SEODescription="Delete user." />
         <Item text="Get user" url="/en-us/api-reference/beta/api/user_get" SEOKeyword="Get user, Microsoft Graph API, user API" SEODescription="Retrieve the properties and relationships of user object." />
@@ -888,17 +889,18 @@
         <Item text="Get directoryObjects by ids" url="/en-us/api-reference/beta/api/directoryobject_getbyids" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>
       <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
-        <Item text="List directoryRoles" url="/en-us/api-reference/beta/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
-        <Item text="Enable DirectoryRole" url="/en-us/api-reference/beta/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
-        <Item text="Get directoryRole" url="/en-us/api-reference/beta/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
+        <Item text="List directory roles" url="/en-us/api-reference/beta/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
+        <Item text="Activate directory role" url="/en-us/api-reference/beta/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
+        <Item text="Get directory role" url="/en-us/api-reference/beta/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
         <Item text="List members" url="/en-us/api-reference/beta/api/directoryrole_list_members" SEOKeyword="List members, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
         <Item text="Add member" url="/en-us/api-reference/beta/api/directoryrole_post_members" SEOKeyword="Create member, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new member." />
+        <Item text="Remove member" url="/en-us/api-reference/beta/api/directoryrole_delete_member" />
         <Item text="List scoped administrators" url="/en-us/api-reference/beta/api/directoryrole_list_scopedadministrators" SEOKeyword="List scoped administrators, Microsoft Graph API, Directory API" SEODescription="Use this API to list scoped administrators." />
 
       </Item>
       <Item text="Directory role template" url="/en-us/api-reference/beta/resources/directoryroletemplate" SEOKeyword="directoryroletemplate API, Microsoft Graph API, directoryroletemplate API" SEODescription="Represents a directory role template. A directory role template specifies the property values of a directory role (DirectoryRole). There is an associated directory role template object for each of the directory roles that may be activated in a tenant.">
-        <Item text="List directoryRoleTemplates" url="/en-us/api-reference/beta/api/directoryroletemplate_list" SEOKeyword="List directoryRoleTemplates, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryroletemplate objects." />
-        <Item text="Get directoryRoleTemplate" url="/en-us/api-reference/beta/api/directoryroletemplate_get" SEOKeyword="Get directoryRoleTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
+        <Item text="List directory role templates" url="/en-us/api-reference/beta/api/directoryroletemplate_list" SEOKeyword="List directoryRoleTemplates, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryroletemplate objects." />
+        <Item text="Get directory role template" url="/en-us/api-reference/beta/api/directoryroletemplate_get" SEOKeyword="Get directoryRoleTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
       </Item>
       <Item text="Directory setting" url="/en-us/api-reference/beta/resources/directorysetting" SEOKeyword="directorySetting API, Microsoft Graph API, directorysetting API" SEODescription="Governs entity or feature behaviors, both at a tenant-wide level or at a specific entity level.">
         <Item text="Create setting" url="/en-us/api-reference/beta/api/directorysetting_post_settings" SEOKeyword="Create directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
@@ -908,8 +910,8 @@
         <Item text="Delete setting" url="/en-us/api-reference/beta/api/directorysetting_delete" SEOKeyword="Delete directorySetting, Microsoft Graph API, Directory API" SEODescription="Delete directoryRole." />
       </Item>
       <Item text="Directory setting template" url="/en-us/api-reference/beta/resources/directorysettingtemplate" SEOKeyword="Directorysettingtemplate API, Microsoft Graph API, directorysettingtemplate API" SEODescription="Represents a directory role template. A directory role template specifies the property values of a directory role (DirectoryRole). There is an associated directory role template object for each of the directory roles that may be activated in a tenant.">
-        <Item text="List directorySettingTemplates" url="/en-us/api-reference/beta/api/directorysettingtemplate_list" SEOKeyword="List directorySettingTemplates, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryroletemplate objects." />
-        <Item text="Get directorySettingTemplate" url="/en-us/api-reference/beta/api/directorysettingtemplate_get" SEOKeyword="Get directorySettingTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
+        <Item text="List directory setting templates" url="/en-us/api-reference/beta/api/directorysettingtemplate_list" SEOKeyword="List directorySettingTemplates, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryroletemplate objects." />
+        <Item text="Get directory setting template" url="/en-us/api-reference/beta/api/directorysettingtemplate_get" SEOKeyword="Get directorySettingTemplate, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryroletemplate object." />
       </Item>
       <Item text="Domains" url="/en-us/api-reference/beta/resources/domain" >
         <Item text="List domains" url="/en-us/api-reference/beta/api/domain_list" />
