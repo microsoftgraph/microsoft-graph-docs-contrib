@@ -13,6 +13,7 @@ You can use either PATCH or PUT for this operation in version 1.0.
 One of the following **scopes** is required to execute this API for:
 
 - Profile photo of signed-in **user** - *User.ReadWrite*
+- Profile photo of all **users** in the organization - *User.ReadWrite.All*
 - Profile photo of a **group** - *Group.ReadWrite.All*
 - Photo of a **contact** - *Contacts.ReadWrite*
 
