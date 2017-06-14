@@ -24,7 +24,7 @@ GET /reports/MailboxUsage(view=view-value, period=period-value)/content
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token\>. Required.|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
