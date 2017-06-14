@@ -24,7 +24,7 @@ GET /reports/SfbParticipantActivity(view=view-value, period=period-value)/conten
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token\>. Required.|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
