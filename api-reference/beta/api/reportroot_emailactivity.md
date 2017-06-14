@@ -24,7 +24,7 @@ GET /reports/EmailActivity(view=view-value, period=period-value, date=date-value
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token\>. Required.|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
