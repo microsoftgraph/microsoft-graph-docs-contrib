@@ -24,7 +24,7 @@ GET /reports/Office365GroupsActivity(view=view-value, period=period-value, date=
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token\>. Required.|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
