@@ -3388,100 +3388,6 @@
         </Item>
       </Item>
     </Item>
-    <Item text="People and social" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
-      <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
-        <Item text="Trending" url="/en-us/api-reference/beta/resources/insights_trending" >
-          <Item text="List trending" url="/en-us/api-reference/beta/api/insights_list_trending" />
-        </Item>
-        <Item text="Used" url="/en-us/api-reference/beta/resources/insights_used" >
-          <Item text="List used" url="/en-us/api-reference/beta/api/insights_list_used" />
-        </Item>
-        <Item text="Shared" url="/en-us/api-reference/beta/resources/insights_shared" >
-          <Item text="List shared" url="/en-us/api-reference/beta/api/insights_list_shared" />
-        </Item>
-      </Item>
-	    <Item text="Person" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
-        <Item text="Get person" url="/en-us/api-reference/beta/api/person_get" SEOKeyword="Get person, Microsoft Graph API, person API" SEODescription="Retrieve the properties and relationships of person object." />
-      </Item>
-      <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />
-	  </Item>
-    <Item text="Personal contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
-          <Item text="List contacts" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
-          <Item text="Create contact" url="/en-us/api-reference/beta/api/user_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Contact." />
-          <Item text="Get contact" url="/en-us/api-reference/beta/api/contact_get" SEOKeyword="Get contact, Microsoft Graph API, contact API" SEODescription="Retrieve the properties and relationships of contact object." />
-          <Item text="Update contact" url="/en-us/api-reference/beta/api/contact_update" SEOKeyword="Update contact, Microsoft Graph API, contact API" SEODescription="Update the properties of contact object." />
-          <Item text="Delete contact" url="/en-us/api-reference/beta/api/contact_delete" SEOKeyword="Delete contact, Microsoft Graph API, contact API" SEODescription="Delete contact." />
-          <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
-          <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
-        </Item>
-        <Item text="Contact folder" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="A folder that contains contacts.">
-          <Item text="List contact folders" url="/en-us/api-reference/beta/api/user_list_contactfolders" SEOKeyword="List contactFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contactfolder objects." />
-          <Item text="Create contact folder" url="/en-us/api-reference/beta/api/user_post_contactfolders" SEOKeyword="Create ContactFolder, Microsoft Graph API, Users API" SEODescription="Use this API to create a new ContactFolder." />
-          <Item text="Get contact folder" url="/en-us/api-reference/beta/api/contactfolder_get" SEOKeyword="Get contactFolder, Microsoft Graph API, contactfolder API" SEODescription="Retrieve the properties and relationships of contactfolder object." />
-          <Item text="Update contact folder" url="/en-us/api-reference/beta/api/contactfolder_update" SEOKeyword="Update contactfolder, Microsoft Graph API, contactfolder API" SEODescription="Update the properties of contactfolder object." />
-          <Item text="Delete contact folder" url="/en-us/api-reference/beta/api/contactfolder_delete" SEOKeyword="Delete contactFolder, Microsoft Graph API, contactfolder API" SEODescription="Delete contactFolder." />
-          <Item text="List child folders" url="/en-us/api-reference/beta/api/contactfolder_list_childfolders" SEOKeyword="List childFolders, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contactfolder objects." />
-          <Item text="Create child folder" url="/en-us/api-reference/beta/api/contactfolder_post_childfolders" SEOKeyword="Create ContactFolder, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new ContactFolder." />
-          <Item text="List contacts in folder" url="/en-us/api-reference/beta/api/contactfolder_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contact objects." />
-          <Item text="Create contact in folder" url="/en-us/api-reference/beta/api/contactfolder_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new Contact." />
-        </Item>
-        <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
-          <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
-            <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
-            <Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
-          </Item>
-          <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
-            <Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
-            <Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-          </Item>
-        </Item>
-    </Item>
-    <Item text="Planner" url="/en-us/api-reference/beta/resources/planner_overview" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
-      <Item text="Plan" url="/en-us/api-reference/beta/resources/plannerplan" >
-        <Item text="Create plan" url="/en-us/api-reference/beta/api/planner_post_plans" />
-        <Item text="List plans for group" url="/en-us/api-reference/beta/api/plannergroup_list_plans" />
-        <Item text="Get plan" url="/en-us/api-reference/beta/api/plannerplan_get" />
-        <Item text="List plan tasks" url="/en-us/api-reference/beta/api/plannerplan_list_tasks" />
-        <Item text="List plan buckets" url="/en-us/api-reference/beta/api/plannerplan_list_buckets" />
-        <Item text="Update plan" url="/en-us/api-reference/beta/api/plannerplan_update" />
-	    </Item>
-        <Item text="Task" url="/en-us/api-reference/beta/resources/plannertask" >
-        <Item text="Create task" url="/en-us/api-reference/beta/api/planner_post_tasks" />
-        <Item text="Get tasks for user" url="/en-us/api-reference/beta/api/planneruser_list_tasks" />
-        <Item text="Get task" url="/en-us/api-reference/beta/api/plannertask_get" />
-        <Item text="Update task" url="/en-us/api-reference/beta/api/plannertask_update" />
-        <Item text="Delete task" url="/en-us/api-reference/beta/api/plannertask_delete" />	  
-	    </Item>
-	    <Item text="Task details" url="/en-us/api-reference/beta/resources/plannertaskdetails" >
-        <Item text="Get task details" url="/en-us/api-reference/beta/api/plannertaskdetails_get" />
-        <Item text="Update task details" url="/en-us/api-reference/beta/api/plannertaskdetails_update" />	  
-	    </Item>
-      <Item text="Plan details" url="/en-us/api-reference/beta/resources/plannerplandetails" >
-        <Item text="Get plan details" url="/en-us/api-reference/beta/api/plannerplandetails_get" />
-        <Item text="Update plan details" url="/en-us/api-reference/beta/api/plannerplandetails_update" />	  
-      </Item>
-      <Item text="Bucket" url="/en-us/api-reference/beta/resources/plannerbucket" >
-        <Item text="Create bucket" url="/en-us/api-reference/beta/api/planner_post_buckets" />
-        <Item text="Get bucket" url="/en-us/api-reference/beta/api/plannerbucket_get" />
-        <Item text="List bucket tasks" url="/en-us/api-reference/beta/api/plannerbucket_list_tasks" />
-        <Item text="Update bucket" url="/en-us/api-reference/beta/api/plannerbucket_update" />
-        <Item text="Delete bucket" url="/en-us/api-reference/beta/api/plannerbucket_delete" />
-      </Item>
-      <Item text="Assigned to task board format" url="/en-us/api-reference/beta/resources/plannerassignedtotaskboardtaskformat" >
-        <Item text="Get assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_get" />
-        <Item text="Update assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_update" />	  
-      </Item>
-      <Item text="Bucket task board task format" url="/en-us/api-reference/beta/resources/plannerbuckettaskboardtaskformat" >
-        <Item text="Get bucket task board format" url="/en-us/api-reference/beta/api/plannerbuckettaskboardtaskformat_get" />
-        <Item text="Update bucket task board format" url="/en-us/api-reference/beta/api/plannerbuckettaskboardtaskformat_update" />	  
-      </Item>
-      <Item text="Progress task board task format" url="/en-us/api-reference/beta/resources/plannerprogresstaskboardtaskformat" >
-        <Item text="Get progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_get" />
-        <Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
-      </Item>
-    </Item>
     <Item text="OneDrive" url="/en-us/api-reference/beta/resources/onedrive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="OneDrive APIs">
       <Item text="Drives" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="Drive API">
         <Item text="Get drive" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="Get drive, Microsoft Graph API, drive API" SEODescription="Retrieve the properties and relationships of drive object." />
@@ -3753,6 +3659,100 @@
           <Item text="Create multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" />
           <Item text="Get multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" />
         </Item>
+      </Item>
+    </Item>
+    <Item text="People and social" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
+      <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
+        <Item text="Trending" url="/en-us/api-reference/beta/resources/insights_trending" >
+          <Item text="List trending" url="/en-us/api-reference/beta/api/insights_list_trending" />
+        </Item>
+        <Item text="Used" url="/en-us/api-reference/beta/resources/insights_used" >
+          <Item text="List used" url="/en-us/api-reference/beta/api/insights_list_used" />
+        </Item>
+        <Item text="Shared" url="/en-us/api-reference/beta/resources/insights_shared" >
+          <Item text="List shared" url="/en-us/api-reference/beta/api/insights_list_shared" />
+        </Item>
+      </Item>
+	    <Item text="Person" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
+        <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
+        <Item text="Get person" url="/en-us/api-reference/beta/api/person_get" SEOKeyword="Get person, Microsoft Graph API, person API" SEODescription="Retrieve the properties and relationships of person object." />
+      </Item>
+      <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />
+	  </Item>
+    <Item text="Personal contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
+        <Item text="Contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
+          <Item text="List contacts" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
+          <Item text="Create contact" url="/en-us/api-reference/beta/api/user_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Contact." />
+          <Item text="Get contact" url="/en-us/api-reference/beta/api/contact_get" SEOKeyword="Get contact, Microsoft Graph API, contact API" SEODescription="Retrieve the properties and relationships of contact object." />
+          <Item text="Update contact" url="/en-us/api-reference/beta/api/contact_update" SEOKeyword="Update contact, Microsoft Graph API, contact API" SEODescription="Update the properties of contact object." />
+          <Item text="Delete contact" url="/en-us/api-reference/beta/api/contact_delete" SEOKeyword="Delete contact, Microsoft Graph API, contact API" SEODescription="Delete contact." />
+          <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
+          <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
+        </Item>
+        <Item text="Contact folder" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="A folder that contains contacts.">
+          <Item text="List contact folders" url="/en-us/api-reference/beta/api/user_list_contactfolders" SEOKeyword="List contactFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contactfolder objects." />
+          <Item text="Create contact folder" url="/en-us/api-reference/beta/api/user_post_contactfolders" SEOKeyword="Create ContactFolder, Microsoft Graph API, Users API" SEODescription="Use this API to create a new ContactFolder." />
+          <Item text="Get contact folder" url="/en-us/api-reference/beta/api/contactfolder_get" SEOKeyword="Get contactFolder, Microsoft Graph API, contactfolder API" SEODescription="Retrieve the properties and relationships of contactfolder object." />
+          <Item text="Update contact folder" url="/en-us/api-reference/beta/api/contactfolder_update" SEOKeyword="Update contactfolder, Microsoft Graph API, contactfolder API" SEODescription="Update the properties of contactfolder object." />
+          <Item text="Delete contact folder" url="/en-us/api-reference/beta/api/contactfolder_delete" SEOKeyword="Delete contactFolder, Microsoft Graph API, contactfolder API" SEODescription="Delete contactFolder." />
+          <Item text="List child folders" url="/en-us/api-reference/beta/api/contactfolder_list_childfolders" SEOKeyword="List childFolders, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contactfolder objects." />
+          <Item text="Create child folder" url="/en-us/api-reference/beta/api/contactfolder_post_childfolders" SEOKeyword="Create ContactFolder, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new ContactFolder." />
+          <Item text="List contacts in folder" url="/en-us/api-reference/beta/api/contactfolder_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contact objects." />
+          <Item text="Create contact in folder" url="/en-us/api-reference/beta/api/contactfolder_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new Contact." />
+        </Item>
+        <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
+          <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
+            <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
+            <Item text="Get single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
+          </Item>
+          <Item text="Multi-value extended property" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="" >
+            <Item text="Create multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
+            <Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+          </Item>
+        </Item>
+    </Item>
+    <Item text="Planner" url="/en-us/api-reference/beta/resources/planner_overview" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
+      <Item text="Plan" url="/en-us/api-reference/beta/resources/plannerplan" >
+        <Item text="Create plan" url="/en-us/api-reference/beta/api/planner_post_plans" />
+        <Item text="List plans for group" url="/en-us/api-reference/beta/api/plannergroup_list_plans" />
+        <Item text="Get plan" url="/en-us/api-reference/beta/api/plannerplan_get" />
+        <Item text="List plan tasks" url="/en-us/api-reference/beta/api/plannerplan_list_tasks" />
+        <Item text="List plan buckets" url="/en-us/api-reference/beta/api/plannerplan_list_buckets" />
+        <Item text="Update plan" url="/en-us/api-reference/beta/api/plannerplan_update" />
+	    </Item>
+        <Item text="Task" url="/en-us/api-reference/beta/resources/plannertask" >
+        <Item text="Create task" url="/en-us/api-reference/beta/api/planner_post_tasks" />
+        <Item text="Get tasks for user" url="/en-us/api-reference/beta/api/planneruser_list_tasks" />
+        <Item text="Get task" url="/en-us/api-reference/beta/api/plannertask_get" />
+        <Item text="Update task" url="/en-us/api-reference/beta/api/plannertask_update" />
+        <Item text="Delete task" url="/en-us/api-reference/beta/api/plannertask_delete" />	  
+	    </Item>
+	    <Item text="Task details" url="/en-us/api-reference/beta/resources/plannertaskdetails" >
+        <Item text="Get task details" url="/en-us/api-reference/beta/api/plannertaskdetails_get" />
+        <Item text="Update task details" url="/en-us/api-reference/beta/api/plannertaskdetails_update" />	  
+	    </Item>
+      <Item text="Plan details" url="/en-us/api-reference/beta/resources/plannerplandetails" >
+        <Item text="Get plan details" url="/en-us/api-reference/beta/api/plannerplandetails_get" />
+        <Item text="Update plan details" url="/en-us/api-reference/beta/api/plannerplandetails_update" />	  
+      </Item>
+      <Item text="Bucket" url="/en-us/api-reference/beta/resources/plannerbucket" >
+        <Item text="Create bucket" url="/en-us/api-reference/beta/api/planner_post_buckets" />
+        <Item text="Get bucket" url="/en-us/api-reference/beta/api/plannerbucket_get" />
+        <Item text="List bucket tasks" url="/en-us/api-reference/beta/api/plannerbucket_list_tasks" />
+        <Item text="Update bucket" url="/en-us/api-reference/beta/api/plannerbucket_update" />
+        <Item text="Delete bucket" url="/en-us/api-reference/beta/api/plannerbucket_delete" />
+      </Item>
+      <Item text="Assigned to task board format" url="/en-us/api-reference/beta/resources/plannerassignedtotaskboardtaskformat" >
+        <Item text="Get assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_get" />
+        <Item text="Update assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_update" />	  
+      </Item>
+      <Item text="Bucket task board task format" url="/en-us/api-reference/beta/resources/plannerbuckettaskboardtaskformat" >
+        <Item text="Get bucket task board format" url="/en-us/api-reference/beta/api/plannerbuckettaskboardtaskformat_get" />
+        <Item text="Update bucket task board format" url="/en-us/api-reference/beta/api/plannerbuckettaskboardtaskformat_update" />	  
+      </Item>
+      <Item text="Progress task board task format" url="/en-us/api-reference/beta/resources/plannerprogresstaskboardtaskformat" >
+        <Item text="Get progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_get" />
+        <Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
       </Item>
     </Item>
     <Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
