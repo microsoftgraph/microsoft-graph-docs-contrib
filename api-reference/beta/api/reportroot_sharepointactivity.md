@@ -24,7 +24,7 @@ GET /reports/SharePointActivity(view=view-value, period=period-value, date=date-
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token\>. Required.|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 

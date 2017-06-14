@@ -24,7 +24,7 @@ GET /reports/YammerDeviceUsage(view=view-value, period=period-value, date=date-v
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token\>. Required.|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 

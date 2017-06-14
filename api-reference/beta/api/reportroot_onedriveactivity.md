@@ -24,7 +24,7 @@ GET /reports/OneDriveActivity(view=view-value, period=period-value, date=date-va
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token\>. Required.|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
