@@ -17,7 +17,7 @@ POST /workbook/worksheets({id|name})/names/add
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. |
 
 
 ## Request body
