@@ -10,9 +10,7 @@ Microsoft Graph has two types of permissions: **Delegated permissions** and **Ap
 
 _Effective permissions_ are the permissions that your app will have when making requests to Microsoft Graph. It is important to understand the difference between the Delegated and Application permissions that your app is granted and its effective permissions when making calls to Microsoft Graph.
 
-- For Delegated permissions, the _effective permissions_ of your app will be the least privileged intersection of the Delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
-   
-  For example, assume your app has been granted the _User.ReadWrite.All_ Delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user is not in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization because the user that it has permission to act on behalf of does not have those privileges.
+- For Delegated permissions, the _effective permissions_ of your app will be the least privileged intersection of the Delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>For example, assume your app has been granted the _User.ReadWrite.All_ Delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user is not in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization because the user that it has permission to act on behalf of does not have those privileges.
   
 - For Application permissions, the _effective permissions_ of your app will be the full level of privileges implied by the permission. For example, an app that has the _User.ReadWrite.All_ Application permission can update the profile of every user in the organization. 
 
@@ -210,7 +208,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ### Remarks
 Directory permissions are not supported on Microsoft accounts. 
 
- Directory permissions provide the highest level of privilege for accessing directory resources such as [User](../api-reference/v1.0/resources/user.md), [Group](../api-reference/v1.0/resources/group.md), and [Device](../api-reference/v1.0/resources/device.md) in an organization. They also exclusively control access to other directory resources like: [organizational contacts](../api-reference/beta/resources/orgcontact.md), [schema extension APIs](../api-reference/beta/resources/schemaextension.md), [Privileged Identity Management (PIM) APIs](../api-reference/beta/resources/privilegedidentitymanagement_root.md), as well as many of the resources and APIs listed under the **Directory** node in the v1.0 and beta API reference documentation. These include administrative units, directory roles, directory settings, policy, and many more. 
+ Directory permissions provide the highest level of privilege for accessing directory resources such as [User](../api-reference/v1.0/resources/user.md), [Group](../api-reference/v1.0/resources/group.md), and [Device](../api-reference/v1.0/resources/device.md) in an organization. They also exclusively control access to other directory resources like: [organizational contacts](../api-reference/beta/resources/orgcontact.md), [schema extension APIs](../api-reference/beta/resources/schemaextension.md), [Privileged Identity Management (PIM) APIs](../api-reference/beta/resources/privilegedidentitymanagement_root.md), as well as many of the resources and APIs listed under the **Azure Active Directory** node in the v1.0 and beta API reference documentation. These include administrative units, directory roles, directory settings, policy, and many more. 
 
 The _Directory.ReadWrite.All_ permission grants the following privileges:
 
@@ -505,6 +503,16 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 #### Application permissions
 
 None.
+
+### Remarks
+You can use these permissions to specify artifacts that you want returned in Azure AD authorization and token requests. They are supported differently by the Azure AD v1.0 and v2.0 endpoints.
+
+With the Azure AD (v1.0) endpoint, only the _openid_ permission is used. You specify it in the *scope* parameter in an authorization request to return an ID token when you use the OpenID Connect protocol to sign in a user to your app. For more information, see [Authorize access to web applications using OpenID Connect and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). To successfully return an ID token, you must also make sure that the _User.Read_ permission is configured when you register your app. 
+
+With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in the _scope_ parameter to explicitly request a refresh token when using the OAuth 2.0 or OpenID Connect protocols. With OpenID Connect, you specify the _openid_ permission to request an ID token. You can also specify the _email_ permission, _profile_ permission, or both to return additional claims in the ID token. You do not need to specify _User.Read_ to return an ID token with the v2.0 endpoint. For more information, see [OpenID Connect scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
+
+> **Important** The Microsoft Authentication Library (MSAL) currently specifies _offline\_access_, _openid_, _profile_, and _email_ by default in authorization and token requests. This means that, for the default case, if you specify these permissions explicitly, Azure AD may return an error.
+>  
 
 ---
 
