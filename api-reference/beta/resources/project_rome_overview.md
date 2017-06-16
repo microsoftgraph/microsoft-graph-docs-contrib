@@ -1,6 +1,6 @@
 # Use the Microsoft Graph API to work with Project Rome 
 
-Project Rome is a Microsoft initiative to build a cross-device experiences platform. This toolkit allows an app on a client (local) or service, in the case of Microsoft Graph, to interact with apps and services on a host (remote) device that is signed in with or receptive to the Microsoft account on the client device. This allows you to program cross-device and cross-platform experiences that are centered around user tasks rather than devices. Two key components are exposed via Microsoft Graph to enable these experiences: devices and activities. To learn more about the capabilities of Project Rome, see [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) in GitHub. 
+Project Rome is a Microsoft initiative to build a cross-device experiences platform. This toolkit allows an app on a client (local) or service, in the case of Microsoft Graph, to interact with apps and services on a host (remote) device that is signed in with or receptive to the Microsoft account on the client device. This allows you to program cross-device and cross-platform experiences that are centered around user tasks rather than devices. Two key components are exposed via Microsoft Graph to enable these experiences: devices and activities. To learn more about the capabilities of Project Rome, see [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) in the Windows Dev Center. 
 
 ## Devices via RemoteSystems
 
