@@ -1,6 +1,8 @@
 # Use the Microsoft Graph API to work with Project Rome 
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a Microsoft initiative to build a cross-device experiences platform. Project Rome enables an app on a local client or service to interact with apps and services on a remote host when the user signs in with the same Microsoft account that they use to sign in on the client device. This allows you to program cross-device and cross-platform experiences that are centered around user tasks rather than devices. Two key components are exposed via Microsoft Graph to enable these experiences: devices and activities. 
+[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a Microsoft initiative to build a cross-device experiences platform. Project Rome enables an app on a local client or service to interact with apps and services on a remote host when the user signs in with the same Microsoft account that they use to sign in on the client device. This allows you to program cross-device and cross-platform experiences that are centered around user tasks rather than devices. 
+
+Two key components are exposed via Microsoft Graph to enable these experiences: devices and activities. 
 
 ## Devices
 
@@ -10,7 +12,7 @@ You can use Project Rome APIs in Microsoft Graph to:
 - Remotely launch apps on those devices
 - Send messages to your apps on those devices
 
-With these APIs, you can build apps that create rich experiences that transcend a single device. For example, you can extend your app or website to launch on a bigger screen. Or you can create a companion experience for an app or website on another of the user's devices, providing another view of your app's functionality.
+With these APIs, you can build apps that create rich experiences that transcend a single device. For example, you can extend your app to launch on a bigger screen. Or you can create a companion experience for an app on another of the user's devices.
 
 You can use the following Microsoft Graph APIs to communicate with other Windows devices:
 
