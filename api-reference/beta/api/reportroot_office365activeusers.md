@@ -24,7 +24,7 @@ GET /reports/Office365ActiveUsers(view=view-value, period=period-value, date=dat
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token\>. Required.|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
