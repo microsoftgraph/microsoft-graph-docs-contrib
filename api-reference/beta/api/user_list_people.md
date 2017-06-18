@@ -17,8 +17,8 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | `Bearer <code>`|
-| Accept | `application/json`|
+| Authorization  | Bearer {token}. Required. |
+| Accept | application/json |
 
 ## Request body
 Do not supply a request body for this method.

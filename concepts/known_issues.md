@@ -1,6 +1,6 @@
 # Known issues with Microsoft Graph
 
-This article describes known issues with the Microsoft Graph. For information about the latest updates, see the [Microsoft Graph Changelog](changelog.md).
+This article describes known issues with Microsoft Graph. For information about the latest updates, see the [Microsoft Graph changelog](changelog.md).
 
 ## Users
 
@@ -22,13 +22,6 @@ Failure to read or update a photo, in this case, would result in the following e
 	}
 ```
 
-### Adding and accessing ICS-based calendars in user's mailbox
-
-Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
-
-* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
-* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
 
 ### Using delta query
 
@@ -36,7 +29,7 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Groups and Microsoft Teams
 
->**Note** Microsoft Teams is now in preview status available in only the Microsoft Graph beta endpoint.
+>**Note** Microsoft Teams is currently in preview and is available only in the Microsoft Graph beta endpoint.
 
 ### Policy
 
@@ -45,7 +38,7 @@ Using Microsoft Graph to create and name an Office 365 group bypasses any Office
 ### Permissions for groups and Microsoft Teams
 
 Microsoft Graph exposes two permission (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
-These permission must be consented to by an administrator (which is a change from preview).  In the future we plan to add new permissions for groups and teams that can be consented by users.
+These permission must be consented to by an administrator (which is a change from preview).  In the future, we plan to add new permissions for groups and teams that users can consent to.
 
 Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
 
@@ -65,7 +58,7 @@ Examples of group features that support only delegated permissions:
 
 ### Teams in Microsoft Teams (preview)
 
-Microsoft Teams are built upon Office 365 groups.  All group APIs can also be used with teams, with the exception that 'Create group' does not currently allow you to create a team.  Future API releases will support this.
+Microsoft Teams and Office 365 groups share similar functionality. All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
 
 ### Microsoft Teams channels (preview)
 
@@ -73,7 +66,7 @@ Currently, you can read and create channels, but you cannot update or delete the
 
 ### Microsoft Teams chat threads and chat messages (preview)
 
-Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them.  As weel, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
+Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them. Also, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
 
 
 ### Adding and getting attachments of group posts
@@ -89,6 +82,46 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+
+## Calendars
+
+### Adding and accessing ICS-based calendars in user's mailbox
+
+Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
+
+* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
+* [Listing the user's calendars](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) lets you get the **name**, **color** and **id** properties of each [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* You can also [list the events](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) of an ICS-based calendar.
+
+### Accessing a shared calendar
+
+When attempting to access events in a calendar that has been shared by another user using the following operation:
+
+```http
+GET \users('{id}')\calendars('{id}')\events
+```
+
+You may get HTTP 500 with the error code `ErrorInternalServerTransientError`.
+
+Historically, there are two ways that calendar sharing has been implemented, which, for the purpose of differentiating them, 
+are referred to as the "old" implementation and "new" implementation. The error occurs because: 
+
+- Currently, only Outlook on the web, Outlook on iOS, and Outlook on Android support sharing calendars on Office 365 in the new way.
+- You can use the calendar REST API to view or edit shared calendars, only if the calendars were shared in the new way. 
+- You cannot use the calendar REST API to view or edit calendars (or their events) that have been shared in the old way.
+
+To work around this, the calendar owner should re-share the calendar in Outlook on the web, Outlook on iOS, or Outlook on Android, and you 
+should re-accept the calendar using Outlook on the web. After re-accepting, one way to verify if the calendar has been shared using the new model is 
+to successfully view the shared calendar in Outlook on iOS or Outlook on Android.
+
+A calendar shared with you in the new way appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit 
+events in the shared calendar, as if it's your own calendar. As an example:
+
+```http
+GET \me\calendars('{id}')\events
+```
+
 
 ## Contacts
 
@@ -170,6 +203,29 @@ does not become part of the body of the resultant message draft.
 * OData context is sometimes returned incorrectly when tracking changes to relationships.
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
+
+## Application and servicePrincipal API changes
+
+There are changes to the [application](../api-reference/beta/resources/application.md) and [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) entities currently in development. The following is a summary of current limitations and in-development API features.
+
+Current limitations:
+
+* Some application properties (such as appRoles and addIns) will not be available until all changes are completed.
+* Only multi-tenant apps can be registered.
+* Updating apps is restricted to apps registered after the initial beta update.
+* Azure Active Directory users can register apps and add additional owners.
+* Support for OpenID Connect and OAuth protocols.
+* Policy assignments to an application fail. 
+* Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+
+In development:
+
+* Ability to register single tenant apps.
+* Updates to servicePrincipal.
+* Migration of existing Azure AD apps to updated model.
+* Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
+* Microsoft account (MSA) users can register apps.
+* Support for SAML and WsFed protocols.
 
 ## Extensions
 

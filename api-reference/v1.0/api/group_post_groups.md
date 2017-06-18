@@ -1,11 +1,12 @@
 # Create group
 
-Use this API to create a new group as specified in the request body. You can create one of 3 types of groups:
+Use this API to create a new group as specified in the request body. You can create one of three types of groups:
 
-* Office 365 group (aka unified group)
+* Office 365 group (unified group)
 * Dynamic group
 * Security group
 
+> **Note**: Although Microsoft Teams is built on Office 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
 ## Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
@@ -17,7 +18,7 @@ POST /groups
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 The following table shows the properties of the [group](../resources/group.md) resource that you must specify at a minimum when you create a group. 

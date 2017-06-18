@@ -1,10 +1,13 @@
-# Create thread
+# Create chat thread
 
-Create a new thread in the specified channel by supplying the root messages.
+Create a new chat thread in the specified channel by supplying the root messages.
 
 ## Prerequisites
 The following **scopes** are required to execute this API:
 *Group.ReadWrite.All*
+
+> Currrently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,7 +16,7 @@ POST /groups/{id}/channels/{id}/threads
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.
