@@ -6,8 +6,10 @@ You can search within a folder hierarhcy, a whole drive, or files shared with th
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

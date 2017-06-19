@@ -6,8 +6,9 @@ This collection includes items that are in the user's drive as well as items the
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
-  * Sites.Read.All
+* Files.Read
+* Files.Read.All
+* Sites.Read.All
 
 ## HTTP request
 

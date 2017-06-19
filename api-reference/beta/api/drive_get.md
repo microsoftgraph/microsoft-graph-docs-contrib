@@ -10,6 +10,8 @@ One of the following **scopes** is required to execute this API:
 
 * Files.Read
 * Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
 * Sites.Read.All
 
 ## Get a user's OneDrive

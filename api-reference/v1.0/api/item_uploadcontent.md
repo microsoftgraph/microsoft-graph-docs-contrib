@@ -8,7 +8,8 @@ To upload large files see [Upload large files with an upload session](item_creat
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

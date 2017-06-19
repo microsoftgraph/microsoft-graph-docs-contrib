@@ -21,8 +21,10 @@ Here are the most common ones:
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
 
 
 ## HTTP request

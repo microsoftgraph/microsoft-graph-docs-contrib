@@ -11,7 +11,8 @@ To upload a file using an upload session, there are two steps:
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
 
 ## Create an upload session
 

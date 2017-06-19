@@ -9,7 +9,8 @@ Items cannot be moved between [Drives](../resources/drive.md) using this request
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
 
 ## HTTP request
 

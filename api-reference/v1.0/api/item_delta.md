@@ -17,8 +17,10 @@ Items with this property set should be removed from your local state.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
-  * Files.Readwrite
+* Files.Read
+* Files.Readwrite
+* Files.Read.All
+* Files.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

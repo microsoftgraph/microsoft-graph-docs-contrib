@@ -18,8 +18,10 @@ doesn't exist, you'll receive a `403 Forbidden` error.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

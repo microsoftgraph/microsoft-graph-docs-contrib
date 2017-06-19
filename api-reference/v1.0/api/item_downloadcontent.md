@@ -6,8 +6,10 @@ Only driveItem with the **file** property can be downloaded.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
 
 ## HTTP request
 
