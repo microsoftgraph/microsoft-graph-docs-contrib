@@ -4,9 +4,11 @@ A  complex type for representing an image in the [visualInfo](../resources/proje
 
 ## Properties
 
-|iconUrl | String | Y | URI that points to an icon which represents the application used to generate the activity|
-|alternativeText | String | Y | Alt-text accessible content for the image|
-|addImageQuery | Boolean | Y | Optional parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image|
+|Name | Type | Description|
+|:----|:-----|:-----------|
+|iconUrl | String | Optional; URI that points to an icon which represents the application used to generate the activity|
+|alternativeText | String | Optional; alt-text accessible content for the image|
+|addImageQuery | Boolean | Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image|
 
 ## JSON Representation
 

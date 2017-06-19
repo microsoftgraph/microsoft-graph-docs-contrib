@@ -4,11 +4,13 @@ A  complex type for representing visual elements in the [activity](../resources/
 
 ## Properties
 
-|displayText | String | N | Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)|
-|description | String | Y | Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)|
-|backgroundColor | String | Y | Background color used to render the activity in the UI - brand color for the application source of the activity|
-|content | EDM.Untyped, JSON object | Y | Custom piece of data; JSON object used to provide custom content to render the activity in the Windows Shell UI|
-|attribution | [imageInfo](../resources/projectrome_imageinfo.md)  (Edm.ComplexType), JSON object | Y | JSON object used to represent an icon which represents the application used to generate the activity|
+|Name | Type | Description|
+|:----|:------|:-----------|
+|displayText | String | Rquired; short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)|
+|description | String | Optional; longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)|
+|backgroundColor | String | Optional; Background color used to render the activity in the UI - brand color for the application source of the activity|
+|content | Untyped JSON object | Optional; custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI|
+|attribution | [imageInfo](../resources/projectrome_imageinfo.md) | Optional; JSON object used to represent an icon which represents the application used to generate the activity|
 
 ## JSON Representation
 
