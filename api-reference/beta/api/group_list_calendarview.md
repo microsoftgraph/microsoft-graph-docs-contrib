@@ -23,7 +23,7 @@ This method also supports the [OData Query Parameters](http://developer.microsof
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Prefer | string | <Time zone>. Optional, UTC assumed if absent.|
+| Prefer | string | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
 
 ## Request body
 Do not supply a request body for this method.
