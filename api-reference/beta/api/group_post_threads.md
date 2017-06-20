@@ -1,6 +1,6 @@
-# Create thread
+# Create conversation thread
 
-Start a new conversation by first creating a thread. 
+Start a new group conversation by first creating a thread. 
 
 A new conversation, conversation thread, and post are created in the group. 
 Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that thread.
@@ -17,7 +17,7 @@ POST /groups/{id}/threads
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## Request body

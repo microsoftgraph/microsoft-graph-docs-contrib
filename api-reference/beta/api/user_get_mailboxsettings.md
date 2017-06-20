@@ -7,7 +7,7 @@ You can view all mailbox settings, or, get specific settings.
 
 ## Prerequisites
 The following **scope** is required to execute this API:
-*Mailboxsettings.ReadWrite*  
+*MailboxSettings.Read*  
 
 ## HTTP request
 To get all mailbox settings which include automatic replies settings:
@@ -34,7 +34,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer `<token>`. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.

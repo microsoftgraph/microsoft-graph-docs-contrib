@@ -13,13 +13,14 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+GET /eBookGroupAssignments/
 GET /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,7 +33,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/
+GET https://graph.microsoft.com/beta/eBookGroupAssignments/
 ```
 
 ### Response
@@ -46,9 +47,9 @@ Content-Length: 238
   "value": [
     {
       "@odata.type": "#microsoft.graph.eBookGroupAssignment",
+      "targetGroupId": "Target Group Id value",
       "id": "6cb57cb9-7cb9-6cb5-b97c-b56cb97cb56c",
-      "installIntent": "available",
-      "targetGroupId": "Target Group Id value"
+      "installIntent": "available"
     }
   ]
 }

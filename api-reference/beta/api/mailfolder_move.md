@@ -14,8 +14,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
-| Content-Type  | application/json. Required.  |
+| Authorization  | Bearer {token}. Required. |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

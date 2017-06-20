@@ -21,7 +21,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStat
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3060
+Content-Length: 3232
 
 {
   "value": [
@@ -116,8 +116,11 @@ Content-Length: 3060
       "exchangeAccessStateReason": "unknown",
       "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
       "isEncrypted": true,
+      "userPrincipalName": "User Principal Name value",
       "model": "Model value",
-      "manufacturer": "Manufacturer value"
+      "manufacturer": "Manufacturer value",
+      "imei": "Imei value",
+      "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
     }
   ]
 }

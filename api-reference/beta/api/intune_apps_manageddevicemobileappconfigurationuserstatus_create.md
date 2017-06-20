@@ -13,14 +13,14 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-POST /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/userStatuses/
+POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses/
 POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/userStatuses/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -45,7 +45,7 @@ If successful, this method returns a `201 Created` response code and a [managedD
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/userStatuses/
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses/
 Content-type: application/json
 Content-length: 306
 

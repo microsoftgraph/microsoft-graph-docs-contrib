@@ -16,7 +16,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. |
 
 
 ## Request body
@@ -44,11 +44,10 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": {
-  },
+  "index": null,
   "values": [
-    {
-    }
+    [1, 2, 3],
+    [4, 5, 6]
   ]
 }
 ```

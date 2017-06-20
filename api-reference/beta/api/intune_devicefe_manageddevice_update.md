@@ -22,7 +22,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSt
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -65,8 +65,11 @@ The following table shows the properties that are required when you create a [ma
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
 |isEncrypted|Boolean|Device encryption status|
+|userPrincipalName|String|Device user principal name|
 |model|String|Model of the device|
 |manufacturer|String|Manufacturer of the device|
+|imei|String|IMEI|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 
 
@@ -79,7 +82,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 Content-type: application/json
-Content-length: 2642
+Content-length: 2802
 
 {
   "userId": "User Id value",
@@ -149,8 +152,11 @@ Content-length: 2642
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
   "isEncrypted": true,
+  "userPrincipalName": "User Principal Name value",
   "model": "Model value",
-  "manufacturer": "Manufacturer value"
+  "manufacturer": "Manufacturer value",
+  "imei": "Imei value",
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
 
@@ -159,7 +165,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2743
+Content-Length: 2903
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -231,8 +237,11 @@ Content-Length: 2743
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
   "isEncrypted": true,
+  "userPrincipalName": "User Principal Name value",
   "model": "Model value",
-  "manufacturer": "Manufacturer value"
+  "manufacturer": "Manufacturer value",
+  "imei": "Imei value",
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
 

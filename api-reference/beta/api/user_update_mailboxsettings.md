@@ -9,7 +9,7 @@ You can enable, configure, or disable one or more of these settings as part of [
 
 ## Prerequisites
 The following **scope** is required to execute this API:
-*Mailboxsettings.ReadWrite*  
+*MailboxSettings.ReadWrite*  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -21,7 +21,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer `<token>`. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply the values for the relevant properties that should be updated. Existing properties that are not included in the 

@@ -21,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -42,11 +42,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 379
+Content-Length: 409
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
+    "inGracePeriodCount": 2,
     "id": "8c4de8a7-e8a7-8c4d-a7e8-4d8ca7e84d8c",
     "unknownDeviceCount": 2,
     "notApplicableDeviceCount": 8,

@@ -19,7 +19,7 @@ GET /managedDevices/{managedDevicesId}/deviceConfigurationStates/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 682
+Content-Length: 1180
 
 {
   "value": [
@@ -51,10 +51,23 @@ Content-Length: 682
         {
           "@odata.type": "microsoft.graph.deviceConfigurationSettingState",
           "setting": "Setting value",
+          "settingName": "Setting Name value",
           "instanceDisplayName": "Instance Display Name value",
           "state": "notApplicable",
           "errorCode": 9,
-          "errorDescription": "Error Description value"
+          "errorDescription": "Error Description value",
+          "userId": "User Id value",
+          "userName": "User Name value",
+          "userEmail": "User Email value",
+          "userPrincipalName": "User Principal Name value",
+          "sources": [
+            {
+              "@odata.type": "microsoft.graph.settingSource",
+              "id": "Id value",
+              "displayName": "Display Name value"
+            }
+          ],
+          "currentValue": "Current Value value"
         }
       ],
       "displayName": "Display Name value",

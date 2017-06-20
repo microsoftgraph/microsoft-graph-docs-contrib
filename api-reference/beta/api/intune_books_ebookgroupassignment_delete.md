@@ -13,13 +13,14 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
+DELETE /eBookGroupAssignments/{eBookGroupAssignmentsId}
 DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -32,7 +33,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
+DELETE https://graph.microsoft.com/beta/eBookGroupAssignments/{eBookGroupAssignmentsId}
 ```
 
 ### Response

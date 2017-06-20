@@ -13,7 +13,7 @@ PATCH /planner/tasks/<id>/progressTaskBoardFormat
 ### Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}. Required. |
 | If-Match  | Last known ETag value for the **plannerProgressTaskBoardTaskFormat** to be updated. Required.|
 
 ### Request body
@@ -21,12 +21,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|orderHint|String|Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined [here](../resources/planner_order_hint_format.md).|
+|orderHint|String|Hint value used to order the task on the Progress view of the Task Board. The format is defined in [Using order hints in Planner](../resources/planner_order_hint_format.md).|
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.
 
-This method can return any of the [HTTP status codes](../../../overview/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
+This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
 
 ### Example
 ##### Request

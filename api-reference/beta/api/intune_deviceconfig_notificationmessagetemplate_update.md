@@ -19,7 +19,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -28,7 +28,7 @@ The following table shows the properties that are required when you create a [no
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 
 
 

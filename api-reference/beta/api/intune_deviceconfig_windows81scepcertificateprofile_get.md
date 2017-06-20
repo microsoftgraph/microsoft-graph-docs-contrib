@@ -23,7 +23,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -44,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1028
+Content-Length: 1187
 
 {
   "value": {
@@ -71,9 +71,11 @@ Content-Length: 1028
     "scepServerUrls": [
       "Scep Server Urls value"
     ],
+    "subjectNameFormatString": "Subject Name Format String value",
     "keyUsage": "digitalSignature",
     "keySize": "size2048",
-    "hashAlgorithm": "sha2"
+    "hashAlgorithm": "sha2",
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
   }
 }
 ```

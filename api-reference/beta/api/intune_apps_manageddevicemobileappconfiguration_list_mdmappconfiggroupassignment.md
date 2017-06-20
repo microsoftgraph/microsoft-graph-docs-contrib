@@ -14,13 +14,13 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 GET /appConfigurationGroupAssignments/
-GET /iosMobileAppConfigurations/{iosMobileAppConfigurationsId}/groupAssignments/
+GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/groupAssignments/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body

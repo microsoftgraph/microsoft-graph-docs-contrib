@@ -1,9 +1,13 @@
+
 # Update user
 
 Update the properties of a user object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 *User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+
+When updating the passwordProfile property, the following scope is required:
+*Directory.AccessAsUser.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -13,7 +17,7 @@ PATCH /users/{id | userPrincipalName}
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## Request body

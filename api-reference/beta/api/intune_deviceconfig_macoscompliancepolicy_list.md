@@ -19,7 +19,7 @@ GET /deviceManagement/deviceCompliancePolicies/
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required.|
 |Accept|application/json|
 
 ## Request body
@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 986
+Content-Length: 1035
 
 {
   "value": [
@@ -62,6 +62,7 @@ Content-Length: 986
       "passwordRequiredType": "alphanumeric",
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
+      "systemIntegrityProtectionEnabled": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
       "storageRequireEncryption": true
