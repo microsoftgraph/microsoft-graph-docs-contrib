@@ -6,7 +6,11 @@ Retrieve the properties and relationships of permission object.
 One of the following **scopes** is required to execute this API:
 
 * Files.Read
+* Files.ReadWrite
 * Files.Read.All
+* Files.ReadWrite.All
+* Shares.Read.All
+* Shares.ReadWrite.All
 
 ## HTTP request
 
