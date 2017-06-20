@@ -1,6 +1,6 @@
 # Create Event
 
-Create an [event](../resources/event.md) in the user's default calendar. 
+Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
 
 You can specify the time zone for each of the start and end times of the event as part of these values, as the 
 **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. 
@@ -26,7 +26,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## Request headers
 | Header       | Value |
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
 
 ## Request body

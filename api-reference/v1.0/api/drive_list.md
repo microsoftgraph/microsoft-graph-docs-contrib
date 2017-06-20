@@ -18,10 +18,11 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /drives
 GET /me/drives
-GET /groups/{id}/drives
+GET /sites/{site-id}/drives
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request body
