@@ -18,7 +18,7 @@ Items with this property set should be removed from your local state.
 One of the following **scopes** is required to execute this API:
 
 * Files.Read
-* Files.Readwrite
+* Files.ReadWrite
 * Files.Read.All
 * Files.ReadWrite.All
 * Sites.Read.All

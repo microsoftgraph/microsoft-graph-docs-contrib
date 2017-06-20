@@ -22,6 +22,7 @@ One of the following **scopes** is required to execute this API:
 * Files.ReadWrite
 * Files.Read.All
 * Files.ReadWrite.All
+* Files.ReadWrite.AppFolder
 * Sites.Read.All
 * Sites.ReadWrite.All
 
