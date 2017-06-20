@@ -259,7 +259,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read.All_ | Read files in all site collections (preview) | **Limited support in Microsoft Graph** <br/> (Preview) Allows the app to read all files in all site collections without a signed in user. | Yes |
+| _Files.Read.All_ | Read files in all site collections (preview) | (Preview) Allows the app to read all files in all site collections without a signed in user. | Yes |
 | _Files.ReadWrite.All_ | Read and write files in all site collections (preview) | **Limited support in Microsoft Graph** <br/> (Preview) Allows the app to read, create, update, and delete all files in all site collections without a signed in user. | Yes |
 
 ### Remarks
