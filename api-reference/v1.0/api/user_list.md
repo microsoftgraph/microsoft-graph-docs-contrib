@@ -27,7 +27,7 @@ To return an alternative property set, you must specify the desired set of [user
 
 | Header        | Value                      |
 |:--------------|:---------------------------|
-| Authorization | Bearer <token> (required)  |
+| Authorization | Bearer {token} (required)  |
 | Content-Type  | application/json           | 
 
 ## Request body
