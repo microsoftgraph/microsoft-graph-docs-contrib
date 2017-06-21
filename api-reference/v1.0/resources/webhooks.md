@@ -83,9 +83,9 @@ Content-Type: application/json
 }
 ```
 
-The changeType, notificationUrl, resource, and expirationDateTime properties are required. See [subscription resource type](subscription.md) for property definitions and values. Although clientState is not required, you must include it to comply with our recommended notification handling process.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](subscription.md) for property definitions and values. Although `clientState` is not required, you must include it to comply with our recommended notification handling process.
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body.
+If successful, Microsoft Graph returns a `201 Created` code and a [subscription](subscription.md) object in the body.
 
 # Renewing a subscription
 
@@ -121,8 +121,8 @@ The client starts receiving notifications after creating the subscription. Micro
 
 The notification object has the following properties:
 
-* id - The ID for the subscription to which this notification belongs.
-* expirationDateTime - The expiration time for the subscription.
+* subscriptionId - The ID for the subscription to which this notification belongs.
+* subscriptionExpirationDateTime - The expiration time for the subscription.
 * clientState - The clientState property specified in the subscription request.
 * changeType - The event type that caused the notification. For example, *created* on mail receive, or *updated* on marking a message read.
 * resource - The URI of the resource relative to `https://graph.microsoft.com`. 
@@ -130,7 +130,7 @@ The notification object has the following properties:
   * @odata.type - The OData entity type in Microsoft Graph that describes the represented object.
   * @odata.id - The OData identifier of the object.
   * @odata.etag - The HTTP entity tag that represents a version of the object.
-  * Id - The identifier of the object.
+  * id - The identifier of the object.
 
 
 > Note: The Id value provided in resourceData is valid at the time the notification was queued. Some actions, such as moving a message to another folder, may result in a resource's Id being changed. 
@@ -143,8 +143,8 @@ When the user receives an email, Microsoft Graph sends a notification like the f
 {
   "value":[
   {
-    "id":"<subscription_guid>",
-    "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
+    "subscriptionId":"<subscription_guid>",
+    "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
     "clientState":"SecretClientState",
     "changeType":"Created",
     "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
@@ -153,7 +153,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
       "@odata.type":"#Microsoft.Graph.Message",
       "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-      "Id":"<long_id_string>"
+      "id":"<long_id_string>"
     }
   }
   ]
