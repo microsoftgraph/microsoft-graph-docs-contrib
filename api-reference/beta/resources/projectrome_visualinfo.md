@@ -2,11 +2,11 @@
 
 A complex type for representing visual elements in the [activity](../resources/projectrome_activity.md) object.
 
-Each user activity will be shown in Timeline as an Adaptive Card. App developers are encouraged to provide a custom Card which captures the essence of the activity which took place in your app. This is possible by providing a custom JSON card in the visualElements.content property.
+Each user activity will be shown in Timeline as an Adaptive Card. App developers are encouraged to provide a custom Card which captures the essence of the activity which took place in your app. This is possible by providing a custom JSON card in the content property.
 
-In addition to visual metadata with an Adaptive Card, app can specify content metadata – data that be used to build inferences on the user’s activity in order to offer new activities for future re-engagement. This is possible by using the visualElements.contentInfo property to provide a JSON object which leverages schema.org properties to describe the content.
+In addition to visual metadata with an Adaptive Card, app can specify content metadata – data that be used to build inferences on the user’s activity in order to offer new activities for future re-engagement. This is possible by using the activity's contentInfo property to provide a JSON object which leverages schema.org properties to describe the content.
 
-If a custom card is not provided, a simple card will be generated using visualElements.displayText and visualElements.description properties. Custom cards are recommended to showcase the best content from within your app.
+If a custom card is not provided, a simple card will be generated using displayText and description properties. Custom cards are recommended to showcase the best content from within your app.
 
 ## Properties
 
