@@ -19,7 +19,7 @@ To get started, you'll need:
 - A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
 - [Node.js with npm](https://nodejs.org/en/download/)
 - [Bower](https://bower.io)
-- The [Microsoft Connect Sample for AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample). You'll use the **starter-project** folder in the sample files for this walkthrough.
+- The [Microsoft Connect Sample for AngularJS](https://github.com/microsoftgraph/angular-connect-sample). You'll use the **starter-project** folder in the sample files for this walkthrough.
 
 ## Register the application
 Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app in Visual Studio.
