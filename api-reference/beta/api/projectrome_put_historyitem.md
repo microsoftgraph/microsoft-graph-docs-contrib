@@ -20,7 +20,7 @@ Id needs to be a GUID.
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | OAuth token, required.|
+|Authorization | string | Bearer {token}. Required.|
 
 ## Request body
 

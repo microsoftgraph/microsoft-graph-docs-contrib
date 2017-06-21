@@ -1,13 +1,15 @@
-# HistoryItem resource type
+# historyItem resource type
 
-A history item for a user activity for an app.
+Each user [activity](projectrome_activity.md) represents a single destination within your app: such as a TV show, document, or your current campaign in a game. When a user engages with that activity, the engagement is captured as a history item indicating the start and end time for that activity. As you re-engage with that user activity over time, multiple history items will be recorded for a single user activity.
+
+When a session is created by an application, a historyItem object should be added to the activity object to reflect the period of user engagement. Each time a user re-engages with an activity a new historyItem is added to the activity to accrue user engagement.
 
 ## Methods
 
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|PUT /me/activities/{id}/historyItems/{id} | [historyItem](projectrome_historyitem.md) | Creates or replaces an existing historyItem for that activity (upsert), id needs to be a GUID|
-|DELETE /me/activities/{id}/historyItmes/{id} | No Content | Deletes the specified historyItem for that activity|
+|[Create or replace historyItem](../api/projectrome_put_historyitem.md) | [historyItem](projectrome_historyitem.md) | Creates or replaces an existing historyItem for that activity (upsert), id needs to be a GUID|
+|[Delete a historyItem](../api/projectrome_delete_historyitem.md) | No Content | Deletes the specified historyItem for that activity|
 
 ## Properties
 

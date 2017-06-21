@@ -20,7 +20,7 @@ The appActivityId in the URL needs to be URL-safe (all characters except for RFC
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|Authorization | string | OAuth token, required.|
+|Authorization | string | Bearer {token}. Required.|
 
 ## Request body
 

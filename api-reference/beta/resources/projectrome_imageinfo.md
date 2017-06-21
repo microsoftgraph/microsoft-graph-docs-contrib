@@ -1,4 +1,4 @@
-# ImageInfo resource type
+# imageInfo resource type
 
 A  complex type for representing an image in the [visualInfo](../resources/projectrome_visualinfo.md) part of the [activity](../resources/projectrome_activity.md) object.
 
