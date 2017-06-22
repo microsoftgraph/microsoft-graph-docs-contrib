@@ -17,8 +17,12 @@ Items with this property set should be removed from your local state.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.Read
-  * Files.Readwrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -108,7 +112,7 @@ Here is an example request after the initial request.
   "name": "get_item_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='123123901209310923!23alksjd')
+GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 
 ##### Response

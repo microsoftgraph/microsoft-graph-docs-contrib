@@ -6,7 +6,9 @@ Update the properties of a permission by patching the resource.
 
 One of the following **scopes** is required to execute this API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## HTTP request
 
