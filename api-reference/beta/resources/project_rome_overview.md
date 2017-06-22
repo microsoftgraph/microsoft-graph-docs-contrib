@@ -36,7 +36,9 @@ When an application publishes user activity objects, the object will show up in 
 You can use the following Microsoft Graph APIs to create user activities:
 
 - [Create or replace an activity](../api/projectrome_put_activity.md)
+- [Delete an activity](../api/projectrome_delete_activity.md)
 - [Create or replace a history item](../api/projectrome_put_historyitem.md)
+- [Delete a history item](../api/projectrome_delete_historyitem.md)
 
 
 
