@@ -112,7 +112,7 @@ Here is an example request after the initial request.
   "name": "get_item_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='123123901209310923!23alksjd')
+GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 
 ##### Response

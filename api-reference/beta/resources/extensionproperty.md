@@ -45,8 +45,8 @@ None
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get extensionProperty](../api/extensionproperty_get.md) | [extensionProperty](extensionproperty.md) |Read properties and relationships of extensionProperty object.|
-|[Update](../api/extensionproperty_update.md) | [extensionProperty](extensionproperty.md)	|Update extensionProperty object. |
-|[Delete](../api/extensionproperty_delete.md) | None |Delete extensionProperty object. |
+|[Update extensionProperty](../api/extensionproperty_update.md) | [extensionProperty](extensionproperty.md)	|Update extensionProperty object. |
+|[Delete extensionProperty](../api/extensionproperty_delete.md) | None |Delete extensionProperty object. |
 |[checkMemberGroups](../api/extensionproperty_checkmembergroups.md)|String collection||
 |[getMemberGroups](../api/extensionproperty_getmembergroups.md)|String collection||
 |[getMemberObjects](../api/extensionproperty_getmemberobjects.md)|String collection||
