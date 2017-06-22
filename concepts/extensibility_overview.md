@@ -9,7 +9,7 @@ to the **user** resource.
 
 Microsoft Graph offers two types of extensions. Choose the extension type that best suits your application needs:
 
-*  **Open extensions**: A good way for developers to get started.
+*  **Open extensions**: A good way for developers to get started by storing untyped data.
 *  **Schema extensions**: A more versatile mechanism for developers who care about storing typed data, making their schema discoverable and shareable, being able to filter, and in the future, being able to perform input data validation and authorization.
 
 >**Important:** You should not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
