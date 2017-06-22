@@ -12,10 +12,11 @@ You can use either PATCH or PUT for this operation in version 1.0.
 ## Prerequisites
 One of the following **scopes** is required to execute this API for:
 
-- Profile photo of signed-in **user** - *User.ReadWrite*
-- Profile photo of all **users** in the organization - *User.ReadWrite.All*
+- Profile photo of signed-in **user** - *User.ReadWrite*, *User.ReadWrite.All*
 - Profile photo of a **group** - *Group.ReadWrite.All*
 - Photo of a **contact** - *Contacts.ReadWrite*
+
+> **Note** To update the photo of any user in the organization, your app must be a background service that uses User.ReadWrite.All as an application permission. See how your app can [get access without a user](../../../concepts/auth_v2_service.md).
 
 ## HTTP request to update the photo
 <!-- { "blockType": "ignored" } -->
