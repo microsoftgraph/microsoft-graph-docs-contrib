@@ -5,7 +5,9 @@ Creates a copy of a [driveItem](../resources/driveitem.md) (including any childr
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## HTTP request
 

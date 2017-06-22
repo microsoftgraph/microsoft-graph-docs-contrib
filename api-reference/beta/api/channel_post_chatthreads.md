@@ -38,8 +38,8 @@ Content-type: application/json
 {
   "rootMessage": {
       "body": {
-        "contentType": 2,
-        "content": "Hello world"
+        "contentType": 1,
+        "content": "<h1>Hello world</h1>"
       }
   }
 }
