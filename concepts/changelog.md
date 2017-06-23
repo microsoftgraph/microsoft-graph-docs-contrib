@@ -6,6 +6,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2017
 
+### Outlook calendar
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|v1.0|Promoted the following 4 [calendar](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar) properties to v1.0: **canEdit**, **canShare**, **canViewPrivateItems**, and **owner**.|
+
+
 ### Intune APIs
 
 |Change type|Version|Description|
