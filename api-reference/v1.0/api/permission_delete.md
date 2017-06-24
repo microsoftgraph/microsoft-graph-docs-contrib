@@ -8,7 +8,9 @@ The **inheritedFrom** property must be `null`.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## HTTP request
 

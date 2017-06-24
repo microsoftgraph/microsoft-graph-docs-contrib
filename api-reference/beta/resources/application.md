@@ -82,7 +82,6 @@ Here is a JSON representation of the resource
 |[List applications](../api/application_list.md) | application | Retrieve the list of applications in the organization. |
 |[Update application](../api/application_update.md) | application |Update application object. |
 |[Delete application](../api/application_delete.md) | None |Delete application object. |
-|[Create extensionProperty](../api/application_post_extensionproperties.md) |[extensionProperty](extensionproperty.md)| Create a new extensionProperty by posting to the extensionProperties collection.|
 |[List extensionProperties](../api/application_list_extensionproperties.md) |[extensionProperty](extensionproperty.md) collection| Get a extensionProperty object collection.|
 |[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
