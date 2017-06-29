@@ -1,10 +1,10 @@
 # Delete a historyItem
 
-Delete an existing historyItem for an existing user activity.
+Delete an existing history item for an existing user activity.
 
 ## Prerequisites
 
-The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API.
+The following **scope** is required to execute this API: *UserTimelineActivity.Write.CreatedByApp* 
 
 ## HTTP request
 
@@ -26,13 +26,13 @@ No request body.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code if the historyItem was deleted.
+If successful, this method returns the `204, No Content` response code if the history item was deleted.
 
 ## Example
 
 ##### Request
 
-Here is an example of the request:
+Here is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -45,7 +45,7 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 
 ##### Response
 
-Here is an example of the response:
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",

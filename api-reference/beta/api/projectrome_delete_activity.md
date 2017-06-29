@@ -4,7 +4,7 @@ Delete an existing user activity for your app.
 
 ## Prerequisites
 
-The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API.
+The following **scope** is required to execute this API: *UserTimelineActivity.Write.CreatedByApp*
 
 ## HTTP request
 
@@ -26,13 +26,13 @@ No request body.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code if the activity was deleted.
+If successful, this method returns the `204, No Content` response code if the activity was deleted.
 
 ## Example
 
 ##### Request
 
-Here is an example of the request:
+Here is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -45,7 +45,7 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 
 ##### Response
 
-Here is an example of the response:
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",

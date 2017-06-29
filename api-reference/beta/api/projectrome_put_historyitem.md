@@ -1,10 +1,10 @@
 # Create or replace a historyItem
 
-Create a new or replace an existing historyItem for an existing user activity.
+Create a new or replace an existing history item for an existing user activity.
 
 ## Prerequisites
 
-The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API.
+The following **scope** is required to execute this API: *UserTimelineActivity.Write.CreatedByApp* 
 
 ## HTTP request
 
@@ -24,17 +24,17 @@ Id needs to be a GUID.
 
 ## Request body
 
-In the request body, supply a JSON representation of an [historyItem](../resources/projectrome_historyitem.md) object.
+In the request body, supply a JSON representation of a [historyItem](../resources/projectrome_historyitem.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code if the historyItem was created or `200, OK` if the historyItem was replaced.
+If successful, this method returns the `201, Created` response code if the historyItem was created or `200, OK` if the historyItem was replaced.
 
 ## Example
 
 ##### Request
 
-Here is an example of the request:
+Here is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -55,7 +55,7 @@ Content-length: 364
 
 ##### Response
 
-Here is an example of the response:
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",
