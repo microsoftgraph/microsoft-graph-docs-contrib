@@ -1,33 +1,33 @@
 # historyItem resource type
 
-Each user [activity](projectrome_activity.md) represents a single destination within your app: such as a TV show, document, or your current campaign in a game. When a user engages with that activity, the engagement is captured as a history item indicating the start and end time for that activity. As you re-engage with that user activity over time, multiple history items will be recorded for a single user activity.
+Represents a history item for an [activity](projectrome_activity.md) in an app. User activities represent a single destination within your app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
 
-When a session is created by an application, a historyItem object should be added to the activity object to reflect the period of user engagement. Each time a user re-engages with an activity a new historyItem is added to the activity to accrue user engagement.
+When an app creates a session, a **historyItem** object should be added to the **activity** object to reflect the period of user engagement. Each time a user re-engages with an activity, a new **historyItem** is added to the activity to accrue user engagement.
 
 ## Methods
 
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|[Create or replace historyItem](../api/projectrome_put_historyitem.md) | [historyItem](projectrome_historyitem.md) | Creates or replaces an existing historyItem for that activity (upsert), id needs to be a GUID|
-|[Delete a historyItem](../api/projectrome_delete_historyitem.md) | No Content | Deletes the specified historyItem for that activity|
+|[Create or replace historyItem](../api/projectrome_put_historyitem.md) | [historyItem](projectrome_historyitem.md) | Creates or replaces an existing **historyItem** for that activity (upsert). The ID needs to be a GUID.|
+|[Delete a historyItem](../api/projectrome_delete_historyitem.md) | No Content | Deletes the specified **historyItem** for that activity.|
 
 ## Properties
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|status | EnumType | Set by the server; status code used to identify valid objects (Values: active, updated, deleted, ignored)|
-|userTimezone | String | Optional; the timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation|
-|createdDateTime | DateTimeOffset | Set by the server; DateTime in UTC when the object was created on the server|
-|lastModifiedDateTime | DateTimeOffset | Set by the server; DateTime in UTC when the object was modified on the server|
-|id | String | Required; client-set GUID for the history item object|
-|startedDateTime | DateTimeOffset | Required; UTC DateTime when the historyItem (activity session) was started, required for timeline history|
-|lastActiveDateTime | DateTimeOffset | Optional; UTC DateTime when the historyItem (activity session) was last understood as active or finished - if null, historyItem status should be Ongoing|
-|expirationDateTime | DateTimeOffset | Optional; UTC DateTime when the historyItem will undergo hard-delete, can be client-set|
-|activeDurationSeconds | int | Optional; The duration of active user engagement; if not supplied, this is calculated from the startedDateTime and lastActiveDateTime|
+|status | EnumType | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
+|userTimezone | String | Optional. The timezone in which the user's device used to generate the activity was located at activity creation time. Values supplied as Olson IDs in order to support cross-platform representation.|
+|createdDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was created on the server.|
+|lastModifiedDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was modified on the server.|
+|id | String | Required. Client-set GUID for the **historyItem** object.|
+|startedDateTime | DateTimeOffset | Required. UTC DateTime when the **historyItem** (activity session) was started. Required for timeline history.|
+|lastActiveDateTime | DateTimeOffset | Optional. UTC DateTime when the **historyItem** (activity session) was last understood as active or finished - if null, **historyItem** status should be Ongoing.|
+|expirationDateTime | DateTimeOffset | Optional. UTC DateTime when the **historyItem** will undergo hard-delete. Can be set by the client.|
+|activeDurationSeconds | int | Optional. The duration of active user engagement. if not supplied, this is calculated from the **startedDateTime** and **lastActiveDateTime**.|
 
-## JSON Representation
+## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
