@@ -8,7 +8,9 @@ To use a sharing URL with this API, your app needs to [transform the URL into a 
 
 One of the following **scopes** is required to execute this API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## HTTP request
 
