@@ -30,7 +30,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |fallbackUrl | String | Optional. URL used to launch the activity in a web-based app, if available.|
 |contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
-|contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](schema.org) syntax.|
+|contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](http://schema.org) syntax.|
 |historyItems | [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
 
 ## JSON representation
