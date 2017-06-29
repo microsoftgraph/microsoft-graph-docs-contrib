@@ -20,7 +20,7 @@ The **plannerPlan** resource represents a plan in Office 365. A plan can be owne
 |id|String| Read-only. ID of the plan. It is 28 characters long and case sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
 |owner|String|ID of the [Group](group.md) that owns the plan. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
 |title|String|Required. Title of the plan.|
-|createdBy|[identitySet](identityset.md)|Read-only. The user that created the Plan|
+|createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 
 ## Relationships
 | Relationship | Type	|Description|
