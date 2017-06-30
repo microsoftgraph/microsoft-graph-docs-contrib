@@ -1,7 +1,7 @@
 ﻿# Get access without a user
-Some apps run on a server without a user present. These kinds of apps are often referred to as background services or daemons. An example of such an app might be an email archival service that wakes up and runs overnight. Background services typically use the OAuth 2.0 Client Credentials Grant flow to get access tokens from Azure AD. In this topic, we will walk through the basic steps to configure a background service and use the OAuth Client Credentials Grant flow to get an access token from Azure AD to call Microsoft Graph. 
+Some apps run on a server without a user present. These kinds of apps are often referred to as background services or daemons. An example of such an app might be an email archival service that wakes up and runs overnight. Background services typically use the OAuth 2.0 client credentials grant flow to get access tokens from Azure AD. In this topic, we will walk through the basic steps to configure a background service and use the OAuth client credentials grant flow to get an access token from Azure AD to call Microsoft Graph. 
 
-## Authentication and Authorization steps
+## Authentication and authorization steps
 The basic steps required to authenticate a background service and get a token from the Azure AD v2.0 endpoint to make calls to Microsoft Graph are:
 
 1. Register your app.
@@ -25,7 +25,7 @@ For a background service, you need to register your app for the Web platform and
 
 For steps on how to configure an app using the Microsoft App Registration Portal, see [Register your app](./auth_register_app_v2.md).
 
-With the OAuth 2.0 Client Credentials Grant flow, your app authenticates directly at the Azure AD v2.0 `/token` endpoint using the Application Id assigned by Azure AD and the Application Secret that you create using the portal. 
+With the OAuth 2.0 client credentials grant flow, your app authenticates directly at the Azure AD v2.0 `/token` endpoint using the Application Id assigned by Azure AD and the Application Secret that you create using the portal. 
 
 ## 2. Configure permissions for Microsoft Graph
 For apps that run without a user, Microsoft Graph exposes application permissions. (Microsoft Graph also exposes delegated permissions for apps that run on behalf of a user.) You pre-configure the application permissions your app needs when you register your app. Application permissions always require administrator consent. An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again. For more detailed information about the permissions available with Microsoft Graph, see the [Permissions reference](./permissions_reference.md)
@@ -86,7 +86,7 @@ https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49
 ```
 
 ## 4. Get an access token
-In the OAuth 2.0 Client Credentials Grant flow, you use the Application Id and Application Secret values that you saved when you registered your app to request an access token directly from the Azure AD v2.0 `/token` endpoint.
+In the OAuth 2.0 client credentials grant flow, you use the Application Id and Application Secret values that you saved when you registered your app to request an access token directly from the Azure AD v2.0 `/token` endpoint.
 
 You specify the pre-configured permissions by passing `https://graph.microsoft.com/.default` as the value for the `scope` parameter in the token request. See the `scope` parameter description in the token request below for details.
 
@@ -167,9 +167,9 @@ Content-Length: 407
 ```
 
 ## Supported app scenarios and resources
-Background services run on a server without the presence of a signed-in user and use the OAuth 2.0 Client Credentials Grant to authenticate with Azure AD and get a token. For the v2.0 endpoint, you can explore this scenario further with the following resources:
+Background services run on a server without the presence of a signed-in user and use the OAuth 2.0 client credentials grant to authenticate with Azure AD and get a token. For the v2.0 endpoint, you can explore this scenario further with the following resources:
 
-- For a more complete treatment of the Client Credentials Grant flow that also includes error responses, see [Azure Active Directory v2.0 and the OAuth 2.0 client credentials flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds). 
+- For a more complete treatment of the client credentials grant flow that also includes error responses, see [Azure Active Directory v2.0 and the OAuth 2.0 client credentials flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds). 
 - For a sample that calls Microsoft Graph from a service, see the [v2.0 daemon sample](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2) on GitHub.
 - For more information about recommended Microsoft and third-party authentication libraries for Azure AD v2.0, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
@@ -183,7 +183,7 @@ If you are using the Azure AD endpoint, there are some differences in the way th
 
 For the Azure AD endpoint, you can explore this scenario further with the following resources:
 
-- For quick links to an overview, samples, and a detailed treatment of the Client Credentials Grant flow, see **Service-to-Service** in the **Getting Started section** in [Azure Active Directory for Developers](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide).
+- For quick links to an overview, samples, and a detailed treatment of the client credentials grant flow, see **Service-to-Service** in the **Getting Started section** in [Azure Active Directory for Developers](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide).
 - For the Azure AD endpoint, you can use the Azure Active Directory Authentication Library (ADAL) to get tokens from Azure AD. ADAL is available for several platforms including .NET, iOS, Android, JavaScript, Java, and Node.js. For more information about ADAL and other Microsoft authentication libraries for the Azure AD endpoint, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). 
 
  
