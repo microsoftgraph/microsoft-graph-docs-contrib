@@ -1,9 +1,9 @@
 ﻿# Get access on behalf of a user
-To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 Authorization Code Grant flow. In this topic, we will walk through an example using this flow. 
+To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 authorization code grant flow. In this topic, we will walk through an example using this flow. 
 
 ## Authentication and Authorization steps
 
-The basic steps required to use the OAuth 2.0 Authorization Code Grant flow to get an access token from the Azure AD v2.0 endpoint are:
+The basic steps required to use the OAuth 2.0 authorization code grant flow to get an access token from the Azure AD v2.0 endpoint are:
 
 1. Register your app with Azure AD. 
 2. Get authorization. 
@@ -17,7 +17,7 @@ To use the Azure v2.0 endpoint, you must register your app at the [Microsoft App
 The following screenshot shows an example Web app registration.
 ![Web app registration with password and Implicit Grant.](./images/v2-web-registration.png)
 
-To configure an app to use the OAuth 2.0 Authorization Code Grant flow, you'll need to save the following values when registering the app:
+To configure an app to use the OAuth 2.0 authorization code grant flow, you'll need to save the following values when registering the app:
 
 - The Application Id assigned by the app registration portal.
 - An Application Secret, either a password or a public/private key pair (certificate). This is not required for native apps. 
@@ -26,7 +26,7 @@ To configure an app to use the OAuth 2.0 Authorization Code Grant flow, you'll n
 For steps on how to configure an app using the Microsoft App Registration Portal, see [Register your app](./auth_register_app_v2.md).
 
 ## 2. Get authorization
-The first step to getting an access token for many OpenID Connect and OAuth 2.0 flows is to redirect the user to the Azure AD v2.0 `/authorize` endpoint. Azure AD will sign the user in and ensure their consent for the permissions your app requests. In the Authorization Code Grant flow, after consent is obtained, Azure AD will return an authorization_code to your app that it can redeem at the Azure AD v2.0 `/token` endpoint for an access token.
+The first step to getting an access token for many OpenID Connect and OAuth 2.0 flows is to redirect the user to the Azure AD v2.0 `/authorize` endpoint. Azure AD will sign the user in and ensure their consent for the permissions your app requests. In the authorization code grant flow, after consent is obtained, Azure AD will return an authorization_code to your app that it can redeem at the Azure AD v2.0 `/token` endpoint for an access token.
 
 ### Authorization request 
 The following shows an example request to the `/authorize` endpoint. 
