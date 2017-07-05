@@ -117,6 +117,7 @@ GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Detail',d
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Files',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Sites',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Storage',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Pages',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

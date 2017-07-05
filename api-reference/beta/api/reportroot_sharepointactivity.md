@@ -115,6 +115,7 @@ Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Fil
 GET https://graph.microsoft.com/beta/reports/SharePointActivity(view='Detail',date='2017-02-02')/content
 GET https://graph.microsoft.com/beta/reports/SharePointActivity(view='Files',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/SharePointActivity(view='Users',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/SharePointActivity(view='Pages',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
