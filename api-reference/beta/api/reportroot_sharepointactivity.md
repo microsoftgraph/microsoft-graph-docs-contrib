@@ -44,6 +44,7 @@ The following **ViewType** are available in this report:
 - Detail
 - Files
 - Users
+- Pages
 
 The following **PeriodType** are available in this report:
 
@@ -100,7 +101,7 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Files viewed or edited,Files synced,Files shared internally,Files shared externally,Products assigned,Reporting period in days
+Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),Files viewed or edited,Files synced,Files shared internally,Files shared externally,Pages visited,Products assigned,Reporting period in days
 ```
 
 ### Other valid requests
