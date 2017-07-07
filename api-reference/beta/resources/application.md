@@ -4,8 +4,7 @@ Represents an application. Any application that outsources authentication to Azu
 
 > **Note:** Changes to application resource type is currently in development for preview. Please see [known issues with Microsoft Graph](../../../concepts/known_issues.md#application-and-serviceprincipal-api-changes) for more information.
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource
 
 <!-- {
@@ -40,7 +39,7 @@ Here is a JSON representation of the resource
 }
 ```
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
@@ -63,7 +62,7 @@ Here is a JSON representation of the resource
 |tags|String collection| Custom strings that can be used to categorize and identify the application. |
 |web|[web](web.md)| Specifies settings for a web application. |
 
-### Relationships
+## Relationships
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
@@ -73,7 +72,7 @@ Here is a JSON representation of the resource
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
 |policy|[policy](policy.md) collection|The policies assigned to this application.|
 
-### Methods
+## Methods
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|

@@ -2,15 +2,14 @@
 
 Specifies settings for a Web API application.
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |acceptedAccessTokenVersion|Int32| Specifies the accepted access token version for the current API resource. Possible values are 1 or 2.  |
 |publishedPermissionScopes|[permissionScope](permissionscope.md) collection| The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications. These permission scopes may be granted to client applications during consent. |
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {
