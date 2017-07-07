@@ -8,8 +8,8 @@ Your app must be registered with Azure AD. Registering your app establishes a un
 > Also, be aware that if you've previously registered apps in the Microsoft Azure Management portal, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure Management portal. 
 
 
-The following screenshot shows an example web app registration that has been configured with a password and Implicit Flow. 
-![Web app registration with password and Implicit Grant.](./images/v2-web-registration.png)
+The following screenshot shows an example web app registration that has been configured with a password and implicit flow. 
+![Web app registration with password and implicit grant.](./images/v2-web-registration.png)
 
 To register your app, follow these steps; be sure to copy the indicated values to use when configuring authorization for your app:
 
@@ -44,7 +44,7 @@ To register your app, follow these steps; be sure to copy the indicated values t
 
 	2. Depending on the type of authentication flow you're using, you may have to make sure the **Allow Implicit Flow** check box is selected. 
 		
-		The **Allow Implicit Flow** option enables the OpenID Connect Hybrid and Implicit flows. The Hybrid flow enables the app to receive both sign-in info (the id token) and artifacts (in this case, an authorization code) that the app uses to obtain an access token. The Hybrid flow is the default flow used by the OWIN OpenID Connect middleware. For single page apps (SPA), the Implicit flow enables the app to receive sign-in info and the access token. 
+		The **Allow Implicit Flow** option enables the OpenID Connect hybrid and implicit flows. The hybrid flow enables the app to receive both sign-in info (the id token) and artifacts (in this case, an authorization code) that the app uses to obtain an access token. The hybrid flow is the default flow used by the OWIN OpenID Connect middleware. For single page apps (SPA), the implicit flow enables the app to receive sign-in info and the access token. 
 
 	3. Specify a Redirect URL.
 		
@@ -62,8 +62,8 @@ The following table shows the properties that you need to configure and copy for
 | App type | Platform | Application Id | Application Secret | Redirect URI/URL | Implicit Flow 
 | --- | --- | --- | --- | --- | --- |
 | Native/Mobile | Native | Assigned  | No | Assigned | No |
-| Web App | Web | Assigned | Yes | Yes | Optional <br/>Open ID Connect middleware uses Hybrid Flow by default (Yes) | 
-| Single Page App (SPA) | Web | Assigned | Yes | Yes | Yes <br/> SPAs use Open ID Connect Implicit Flow |
+| Web App | Web | Assigned | Yes | Yes | Optional <br/>Open ID Connect middleware uses hybrid flow by default (Yes) | 
+| Single Page App (SPA) | Web | Assigned | Yes | Yes | Yes <br/> SPAs use Open ID Connect implicit Flow |
 | Service/Daemon | Web | Assigned | Yes | Yes | No |
 
 Apps that provide an administrator consent experience may need an additional Redirect URL for Azure AD to return the response to.
