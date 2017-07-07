@@ -21,6 +21,7 @@ Inherits from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfi
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
+|excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -39,7 +40,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyGroupAssignment",
   "id": "String (identifier)",
-  "targetGroupId": "String"
+  "targetGroupId": "String",
+  "excludeGroup": true
 }
 ```
 
