@@ -6,7 +6,7 @@ Represents an Azure AD policy. Policies are custom rules that can be enforced on
 
 This policy is described in further detail below.
 
-### Methods
+## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 | [Get policy](../api/policy_get.md) |Policy|Read properties and relationships of user object.|
@@ -39,7 +39,7 @@ Specifies the lifetimes of tokens issued for various purposes. This kind of poli
 - **ID Token** behaves like an access token, but obtained through the browser.
 - **Session Token** behaves like a refresh token, but obtained through the browser.
 
-#### Properties
+### Properties
 The properties below form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the "definition" common policy property. An example is shown below.
 
 >Note: All time durations in these properties are specified in the format "dd.hh:mm:ss".
@@ -56,8 +56,7 @@ The properties below form the JSON object that represents a token lifetime polic
 |MaxAgeSessionMultiFactor|String|Controls how long a user can continue to use session tokens to get new ID/session tokens after the last time they authenticated successfully with multi factors.|10 minutes|until-revoked|365 or until-revoked|
 |Version|Integer|Set value of 1. Required.|None|None|None|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 ```json
