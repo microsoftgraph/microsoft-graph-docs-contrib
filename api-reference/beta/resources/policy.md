@@ -39,7 +39,7 @@ Specifies the lifetimes of tokens issued for various purposes. This kind of poli
 - **ID Token** behaves like an access token, but obtained through the browser.
 - **Session Token** behaves like a refresh token, but obtained through the browser.
 
-### Properties
+## Properties
 The properties below form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the "definition" common policy property. An example is shown below.
 
 >Note: All time durations in these properties are specified in the format "dd.hh:mm:ss".
