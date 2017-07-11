@@ -1,28 +1,24 @@
 # groupSettingTemplate resource type
 
-
-
+Group setting templates represent system-defined settings available to the tenant. [Group settings](groupsetting.md) can be created based on the available groupSettingTemplates, and values changed from their preset defaults. Group setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings. Currently, the only templates available apply to Office groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
 
 ### Methods
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Get groupsettingtemplate](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) |Read properties and relationships of groupSettingTemplate object.|
-|[Update](../api/groupsettingtemplate_update.md) | [groupSettingTemplate](groupsettingtemplate.md)	|Update groupsettingtemplate object. |
-|[Delete](../api/groupsettingtemplate_delete.md) | None |Delete groupSettingTemplate object. |
-|[Checkmembergroups](../api/groupsettingtemplate_checkmembergroups.md)|String collection||
-|[Getbyids](../api/groupsettingtemplate_getbyids.md)|[directoryObject](directoryobject.md) collection||
-|[Getmembergroups](../api/groupsettingtemplate_getmembergroups.md)|String collection||
-|[Getmemberobjects](../api/groupsettingtemplate_getmemberobjects.md)|String collection||
+|[Get groupSettingTemplate](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Read the specific properties of one of the system defined groupSettingTemplate objects. |
+|[List groupSettingTemplate](../api/groupsettingtemplate_list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) |List all of the system defined groupSettingTemplate objects.|
+|[Update groupSettingTemplate](../api/groupsettingtemplate_update.md) | [groupSettingTemplate](groupsettingtemplate.md) | Update the properties of a groupSettingTemplate object. |
+|[Delete groupSettingTemplate](../api/groupsettingtemplate_delete.md) | None | Delete a groupSettingTemplate object. |
 
 ### Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|description|String||
-|displayName|String||
-|id|String| Read-only.|
-|values|[settingTemplateValue](settingtemplatevalue.md) collection||
+|description|String| Description of the template. |
+|displayName|String| Display name of the template. |
+|id|String| Unique identifier for the template. Read-only.|
+|values|[settingTemplateValue](settingtemplatevalue.md) collection| Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. |
 
 ### Relationships
 
