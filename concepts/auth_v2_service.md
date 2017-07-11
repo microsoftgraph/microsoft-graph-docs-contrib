@@ -1,7 +1,7 @@
 ﻿# Get access without a user
-Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user. An example of such an app might be an email archival service that wakes up and runs overnight. In some cases, apps that have a signed-in user present may also need to call Microsoft Graph under their own identity, for example, to use functionality that may not be available to the signed-in user. 
+Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user. An example of such an app might be an email archival service that wakes up and runs overnight. In some cases, apps that have a signed-in user present may also need to call Microsoft Graph under their own identity. For example, an app may need to use functionality that requires more elevated privileges in an organization than those carried by the signed-in user.  
 
-Apps that call Microsoft Graph with their own identity, use the OAuth 2.0 client credentials grant flow to get access tokens from Azure AD. In this topic, we will walk through the basic steps to configure a service and use the OAuth client credentials grant flow to get an access token from Azure AD. 
+Apps that call Microsoft Graph with their own identity use the OAuth 2.0 client credentials grant flow to get access tokens from Azure AD. In this topic, we will walk through the basic steps to configure a service and use the OAuth client credentials grant flow to get an access token. 
 
 ## Authentication and authorization steps
 The basic steps required to configure a service and get a token from the Azure AD v2.0 endpoint that your service can use to call Microsoft Graph under its own identity are:
@@ -172,7 +172,7 @@ Content-Length: 407
 Apps that call Microsoft Graph under their own identity fall into one of two categories:
 
 - Background services (daemons) that run on a server without a signed-in user.
-- Apps that have a signed-in user but call Microsoft Graph with their own identity to use functionality not available to the signed-in user.
+- Apps that have a signed-in user but also call Microsoft Graph with their own identity to use functionality that requires more elevated privileges than those of the user.
 
 Apps that call Microsoft Graph with their own identity use the OAuth 2.0 client credentials grant to authenticate with Azure AD and get a token. For the v2.0 endpoint, you can explore this scenario further with the following resources:
 
