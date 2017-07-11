@@ -18,30 +18,10 @@ To use Microsoft Graph in your app for Android, you need to show the Microsoft s
 To get started, you'll need: 
 
 - A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
-- Android Studio 2.0 or later version
+- Android Studio 2.0 or newer version
 
 
-## Register the application
-Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app.
-
-1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
-
-2. Choose **Add an app**.
-
-3. Enter a name for the app, and choose **Create application**. 
-	
-	The registration page displays, listing the properties of your app.
-
-4. Copy the application ID. This is the unique identifier for your app. 
-
-5. Choose **Add Platform** and **Mobile application**.
-
-    > **Note:** The Application Registration Portal provides a Redirect URI with a value of *urn:ietf:wg:oauth:2.0:oob*. However, you'll use the default Redirect URI value of *https://login.microsoftonline.com/common/oauth2/nativeclient*.
-
-6. Choose **Save**.
-
-
-## Configure the project
+## Configure a new project
 
 Start a new project in Android Studio. You can leave the default values for most of the wizard, just make sure to choose the following options:
 
@@ -52,6 +32,37 @@ Start a new project in Android Studio. You can leave the default values for most
 This provides you with an Android project with an activity and a button that you can use to authenticate the user.
 
 > Note: You can also use the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) that takes care of the project configuration so you can focus on the coding sections of this walkthrough.
+
+## Register the application
+Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app.
+
+1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
+
+2. Choose **Add an app**.
+
+>Important: If you have downloaded the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) and creating a registration for it, uncheck **Guided Setup** before creating the registration.
+
+3. Enter a name for the app, and choose **Create**. 
+	
+    If you left **Guided Setup** checked, the first of four guided setup pages is opened. 
+4. Choose **Mobile and Desktop App** to define the kind of app you are creating.
+
+5. Choose **Android** to define the mobile technology you are using.
+
+6. Review the introductory topic and when finished, click the **Setup** button at the end of the page.
+
+7. Follow the instructions on the **Setup** page to add the MSAL library to your app build.gradle. If you have downloaded the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project),  
+
+
+The registration page displays, listing the properties of your app.
+
+4. Copy the application ID. This is the unique identifier for your app. 
+
+5. Choose **Add Platform** and **Mobile application**.
+
+    > **Note:** The Application Registration Portal provides a Redirect URI with a value of *urn:ietf:wg:oauth:2.0:oob*. However, you'll use the default Redirect URI value of *https://login.microsoftonline.com/common/oauth2/nativeclient*.
+
+6. Choose **Save**.
 
 ## Authenticate the user and get an access token
 You'll use an OAuth library to simplify the authentication process. [OpenID](http://openid.net) provides [AppAuth for Android](https://github.com/openid/AppAuth-Android), a library that you can use in this project.
