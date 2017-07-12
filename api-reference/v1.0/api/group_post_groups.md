@@ -30,7 +30,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 |:----------------|:--------|:-------------------------------------------------------|
 | displayName     | string  | The name to display in the address book for the group. |
 | mailEnabled     | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 group. Set this to **false** if creating dynamic or security group.|
-| mailNickname    | string  | The mail alias for the group. _value must be unique to the organization_  |
+| mailNickname    | string  | The mail alias for the group. This value must be unique to the organization.  |
 | securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 group. |
 
 Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
