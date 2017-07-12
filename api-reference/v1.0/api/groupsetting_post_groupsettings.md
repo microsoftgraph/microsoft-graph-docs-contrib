@@ -1,14 +1,16 @@
-# Create groupsetting
+# Create a group setting
 
-Use this API to create a new groupSetting.
+Use this API to create a new setting, based on the templates available in [groupSettingTemplates](../resources/groupsettingtemplate.md). These settings can be at the tenant-level or at an object level (currently only for groups). The creation request must provide [settingValues](../resources/settingvalue.md) for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.
+
 ### Prerequisites
 
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupSettings
-
+POST /groups/{id}/settings
 ```
 
 ### Request headers
@@ -19,8 +21,7 @@ POST /groupSettings
 | Content-Type  | application/json |
 
 ### Request body
-In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.
-
+In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. However, the display name for the setting will be set based on the referenced settings template name.
 
 ### Response
 
@@ -35,9 +36,9 @@ If successful, this method returns `201, Created` response code and [groupSettin
   "name": "create_groupsetting_from_groupsettings"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groupSettings
+POST https://graph.microsoft.com/v1.0/groupSettings
 Content-type: application/json
-Content-length: 204
+Content-length: 215
 
 {
   "groupSetting": {
@@ -64,7 +65,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 226
+Content-length: 238
 
 {
   "groupSetting": {

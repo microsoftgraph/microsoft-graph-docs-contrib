@@ -1,13 +1,15 @@
-# Get groupSettingTemplate
+# Get a group setting template
 
-Retrieve the properties and relationships of groupsettingtemplate object.
+A group setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the [groupSettingTemplate](../resources/groupsettingtemplate.md) object, including the available settings and their defaults.
+
 ### Prerequisites
 
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groupSettingTemplates/<id>
+GET /groupSettingTemplates/{id}
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -21,16 +23,15 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [groupSettingTemplate](../resources/groupsettingtemplate.md) object in the response body.
+
 ### Example
-
 ##### Request
-
 <!-- {
   "blockType": "request",
   "name": "get_groupsettingtemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groupSettingTemplates/<id>
+GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 ```
 ##### Response
 
@@ -43,7 +44,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 270
+Content-length: 282
 
 {
   "displayName": "displayName-value",

@@ -1,14 +1,18 @@
-# Update groupSetting
+# Update a group setting
 
-Update the properties of groupsetting object.
+Update the properties of a specific group setting object.
+
 ### Prerequisites
 
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
+Update a tenant-wide or group specific setting.
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groupSettings/<id>
-PATCH /groups/<id>/settings/<id>
+PATCH /groupSettings/{id}
+PATCH /groups/{id}/settings/{id}
 ```
 ### Optional request headers
 | Name | Description |
@@ -17,29 +21,26 @@ PATCH /groups/<id>/settings/<id>
 | Content-Type	| application/json	|
 
 ### Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. 
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|displayName|String||
-|templateId|String||
-|values|settingValue||
+| values | settingValue | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
 
 ### Response
 
-If successful, this method returns a `200 OK` response code and updated [groupSetting](../resources/groupsetting.md) object in the response body.
+If successful, this method returns a `204 OK` response code and updated [groupSetting](../resources/groupsetting.md) object in the response body.
+
 ### Example
-
 ##### Request
-
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/groupSettings/<id>
+PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
 Content-type: application/json
-Content-length: 164
+Content-length: 173
 
 {
   "displayName": "displayName-value",
@@ -53,28 +54,14 @@ Content-length: 164
 }
 ```
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.groupSetting"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 184
-
-{
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ],
-  "id": "id-value"
-}
+HTTP/1.1 204 OK
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

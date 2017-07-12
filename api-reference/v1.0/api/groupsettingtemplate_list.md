@@ -1,9 +1,11 @@
 # List groupSettingTemplates
 
-Retrieve a list of groupsettingtemplate objects.
+Group setting templates represents a set of templates  from which group settings may be created and used within a tenant.  This operation retrieves the list of available groupSettingTemplates objects.
+
 ### Prerequisites
 
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -21,16 +23,15 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [groupSettingTemplate](../resources/groupsettingtemplate.md) objects in the response body.
+
 ### Example
-
 ##### Request
-
 <!-- {
   "blockType": "request",
   "name": "get_groupsettingtemplates"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groupSettingTemplates
+GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 ```
 ##### Response
 
@@ -49,6 +50,7 @@ Content-length: 343
 {
   "value": [
     {
+      "id": "id-value",
       "displayName": "displayName-value",
       "description": "description-value",
       "values": [
@@ -58,8 +60,7 @@ Content-length: 343
           "defaultValue": "defaultValue-value",
           "description": "description-value"
         }
-      ],
-      "id": "id-value"
+      ]
     }
   ]
 }

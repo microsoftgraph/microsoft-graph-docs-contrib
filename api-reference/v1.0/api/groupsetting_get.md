@@ -1,14 +1,19 @@
-# Get groupSetting
+# Get a group setting
 
-Retrieve the properties and relationships of groupsetting object.
+Retrieve the properties of a specific of group setting object.
+
 ### Prerequisites
 
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+
+Get a specific tenant-wide or group setting.
+
 ```http
-GET /groupSettings/<id>
-GET /groups/<id>/settings/<id>
+GET /groupSettings/{id}
+GET /groups/{id}/settings/{id}
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -19,19 +24,22 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Authorization  | string  | Bearer {token}. Required. |
 
 ### Request body
+
 Do not supply a request body for this method.
+
 ### Response
+
 If successful, this method returns a `200 OK` response code and [groupSetting](../resources/groupsetting.md) object in the response body.
+
 ### Example
-
 ##### Request
-
 <!-- {
   "blockType": "request",
   "name": "get_groupsetting"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/groupSettings/<id>
+GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 ##### Response
 
@@ -44,7 +52,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
+Content-length: 194
 
 {
   "displayName": "displayName-value",

@@ -1,13 +1,19 @@
-# List groupSettings
+# List group settings
 
-Retrieve a list of groupsetting objects.
+Retrieve a list of group setting objects.
+
 ### Prerequisites
 
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+
+List tenant-wide or group settings.
+
 ```http
 GET /groupSettings
+GET group/{id}/settings
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -30,7 +36,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
   "name": "get_groupsettings"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groupSettings
+GET https://graph.microsoft.com/v1.0/groupSettings
 ```
 ##### Response
 
@@ -44,7 +50,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 249
+Content-length: 263
 
 {
   "value": [

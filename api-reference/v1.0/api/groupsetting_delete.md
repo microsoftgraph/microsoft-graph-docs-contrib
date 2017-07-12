@@ -1,14 +1,16 @@
-# Delete groupSetting
+# Delete a group setting
 
-Delete groupsetting.
+Delete a group setting.
+
 ### Prerequisites
 
-The following **scopes** are required to execute this API: 
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groupSettings/<id>
-DELETE /groups/<id>/settings/<id>
+DELETE /groupSettings/{id}
+DELETE /groups/{id}/settings/{id}
 
 ```
 
@@ -28,18 +30,15 @@ Do not supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ### Example
-
 ##### Request
-
 <!-- {
   "blockType": "request",
   "name": "delete_groupsetting"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groupSettings/<id>
+DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true
