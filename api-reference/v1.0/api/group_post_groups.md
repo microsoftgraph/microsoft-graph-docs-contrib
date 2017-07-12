@@ -10,42 +10,49 @@ Use this API to create a new group as specified in the request body. You can cre
 
 ## Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
+
+| Name           | Type    | Description               |
+|:---------------|:--------|:--------------------------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 The following table shows the properties of the [group](../resources/group.md) resource that you must specify at a minimum when you create a group. 
 
-| Property | Type | Description|
-|:---------------|:--------|:----------|
-| displayName | string | The name to display in the address book for the group. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 group. Set this to **false** if creating dynamic or security group.|
-| mailNickname | string | The mail alias for the group. |
+| Property        | Type    | Description                                            |
+|:----------------|:--------|:-------------------------------------------------------|
+| displayName     | string  | The name to display in the address book for the group. |
+| mailEnabled     | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 group. Set this to **false** if creating dynamic or security group.|
+| mailNickname    | string  | The mail alias for the group. _value must be unique to the organization_  |
 | securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 group. |
 
 Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
 
-| Type of group | **groupTypes** property |
-|:--------------|:------------------------|
-| Office 365 (aka unified group)| "Unified" | 
-| Dynamic | "DynamicMembership" | 
-| Security | Do not set. | 
+| Type of group                   | **groupTypes** property |
+|:--------------------------------|:------------------------|
+| Office 365 (aka unified group)  | "Unified"               |
+| Dynamic                         | "DynamicMembership"     | 
+| Security                        | Do not set.             |
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 Here is an example of a request that creates an Office 365 group.
+
 <!-- {
   "blockType": "request",
   "name": "create_group_from_groups"
@@ -56,19 +63,21 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mailEnabled": true,
-  "mailNickname": "library",
-  "securityEnabled": false
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "securityEnabled": false
 }
 ```
 
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,15 +89,15 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mail": "library@contoso.onmicrosoft.com",
-  "mailEnabled": true,
-  "mailNickname": "library",
-  "securityEnabled": false
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "library@contoso.onmicrosoft.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "securityEnabled": false
 }
 ```
 
