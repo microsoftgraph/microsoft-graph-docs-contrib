@@ -100,7 +100,7 @@ Open the `build.gradle` file in the app module and find the following dependency
 
 ### Start the authentication flow
 
-1. Open the **AuthenticationManager** file and find the **PublicClientApplication** object declaration and then the instation in the **onCreate** method.
+1. Open the **AuthenticationManager** file and find the **PublicClientApplication** object declaration and then the instation in the **getInstance** method.
 
    ```java
     private static PublicClientApplication mPublicClientApplication;
@@ -116,8 +116,9 @@ Open the `build.gradle` file in the app module and find the following dependency
         return INSTANCE;
     }
 
-  ```
-    
+   ```
+
+
 2. In the **ConnectActivity** class, locate the event handler for the click event of the **mConnectButton**. Find the **onClick** method and review relevant code.
 
    ```java
