@@ -5,7 +5,7 @@ A group of folders ([outlookTaskFolder](outlooktaskfolder.md)) that contain Outl
 In Outlook, there is a default task group `My Tasks` which you cannot rename or delete. You can, however, create additional task groups. 
 
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -15,7 +15,7 @@ In Outlook, there is a default task group `My Tasks` which you cannot rename or 
 |[Update](../api/outlooktaskgroup_update.md) | [outlookTaskGroup](outlooktaskgroup.md)	|Update the writable properties of an Outlook task group. |
 |[Delete](../api/outlooktaskgroup_delete.md) | None |Delete the specified Outlook task group. |
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |changeKey|String|The version of the task group.|
@@ -24,13 +24,12 @@ In Outlook, there is a default task group `My Tasks` which you cannot rename or 
 |isDefaultGroup|Boolean|True if the task group is the default task group.|
 |name|String|The name of the task group.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |taskFolders|[outlookTaskFolder](outlooktaskfolder.md) collection| The collection of task folders in the task group. Read-only. Nullable.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {
