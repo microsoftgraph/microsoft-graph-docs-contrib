@@ -2,14 +2,14 @@
 
 With Microsoft Graph, you can access [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) resources to enable scenarios like including managing administrator (directory) roles, inviting external users to an organization, and, if you are [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider), managing your customer's data. Microsoft Graph also provides methods that apps can use to, for example, discover information about users' transitive group and role memberships. 
 
-> **Note**: Some Azure AD resources are documented in other sections of the API reference. For more information, see [Users](users.md) and [Groups](group.md).
+> **Note**: Some Azure AD resources are documented in other sections of the API reference. For more information, see the [Users](users.md) and [Groups](group.md).
 
 
 ## Authorization
  
 To call the Microsoft Graph APIs on Azure AD resources, your app will need the appropriate permissions. Many of the APIs exposed on Azure AD resources require one of the [_Directory_ permissions](../../../concepts/permissions_reference.md#directory-permissions). Directory permissions are highly privileged and always require administrator consent. 
 
-If your app is acting on behalf of a user (application permissions), that user will likely need to be a member of an appropriate [administrator role](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) for your app to successfully call many of the Azure AD APIs.
+If your app is acting on behalf of a user (delegated permissions), that user will likely need to be a member of an appropriate [administrator role](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) for your app to successfully call many of the Azure AD APIs.
 
 For more information about permissions, including delegated and application permissions, see [Permissions](../../../concepts/permissions_reference.md). 
 
