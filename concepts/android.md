@@ -147,7 +147,7 @@ Open the `build.gradle` file in the app module and find the following dependency
                 mUser = users.get(0);
                 mgr.callAcquireTokenSilent(mUser, true, this);
             } else {
-                mgr.connect(
+                mgr.callAcquireToken(
                         this,
                         this);
             }
