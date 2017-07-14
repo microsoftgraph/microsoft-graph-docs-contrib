@@ -319,8 +319,6 @@ You need to make your app ready to handle the authorization server response, whi
    ```
 
 
-Note that you have an access token in this line `String accessToken = tokenResponse.accessToken;`. Now you're ready to add code to call Microsoft Graph. 
-
 ## Call Microsoft Graph
 You can [use the Microsoft Graph SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk) or the [Microsoft Graph REST API](#call-microsoft-graph-using-the-microsoft-graph-rest-api) to call Microsoft Graph.
 
@@ -371,7 +369,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
         }
     }
    ```
-   
+
 4. Create a draft email and send it using the following helper methods from the **GraphServiceController** helper class.
 
    ```java
