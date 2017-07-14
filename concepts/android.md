@@ -316,7 +316,8 @@ You need to make your app ready to handle the authorization server response, whi
         return  mAuthResult.getAccessToken();
     }
 
-  ```
+   ```
+
 
 Note that you have an access token in this line `String accessToken = tokenResponse.accessToken;`. Now you're ready to add code to call Microsoft Graph. 
 
@@ -339,8 +340,9 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.3.2'
     compile 'com.google.code.gson:gson:2.7'
-```
-   
+   ```
+
+
 3. Add authentication token to new requests using the **uthenticateRequest** helper method. This method implements the same method from the Microsoft Graph Authentication **IAuthenticationProvider** interface
     
    ```java
@@ -369,6 +371,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
         }
     }
    ```
+   
 4. Create a draft email and send it using the following helper methods from the **GraphServiceController** helper class.
 
    ```java
