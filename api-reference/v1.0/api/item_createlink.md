@@ -10,7 +10,9 @@ DriveItem resources inherit permissions from their ancestors.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

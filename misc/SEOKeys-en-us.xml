@@ -27,7 +27,7 @@
   <Item text="Use the API" url="/en-us/concepts/use_the_api" >
     <Item text="Traverse the graph" url="/en-us/concepts/traverse_the_graph" />
     <Item text="Get data in pages" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
-    <Item text="Customize responses" url="/en-us/concepts/query_parameters" SEOKeyword="Query parameters, Microsoft Graph API, Overview" SEODescription="Microsoft Graph is OData v4 compliant, provides information about supported OData query parameters" />
+    <Item text="Customize queries" url="/en-us/concepts/query_parameters" SEOKeyword="Query parameters, Microsoft Graph API, Overview" SEODescription="Microsoft Graph is OData v4 compliant, provides information about supported OData query parameters" />
     <Item text="Batch requests" url="/en-us/concepts/json_batching" />
     <Item text="Throttling" url="/en-us/concepts/throttling" />
     <Item text="Versioning and support" url="/en-us/concepts/versioning_and_support" />
@@ -229,12 +229,14 @@
 	 </Item>
     <Item text="Device" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="List devices" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
-      <Item text="Create Device" url="/en-us/api-reference/v1.0/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
+      <Item text="Create device" url="/en-us/api-reference/v1.0/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
       <Item text="Get device" url="/en-us/api-reference/v1.0/api/device_get" SEOKeyword="Get device, Microsoft Graph API, Device API" SEODescription="Retrieve the properties and relationships of device object." />
       <Item text="Update device" url="/en-us/api-reference/v1.0/api/device_update" SEOKeyword="Update device, Microsoft Graph API, Device API" SEODescription="Update the properties of device object." />
       <Item text="Delete device" url="/en-us/api-reference/v1.0/api/device_delete" SEOKeyword="Delete device, Microsoft Graph API, Device API" SEODescription="Delete device." />
-      <Item text="List registeredOwners" url="/en-us/api-reference/v1.0/api/device_list_registeredowners" SEOKeyword="List registeredOwners, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
-      <Item text="List registeredUsers" url="/en-us/api-reference/v1.0/api/device_list_registeredusers" SEOKeyword="List registeredUsers, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
+      <Item text="List registered owners" url="/en-us/api-reference/v1.0/api/device_list_registeredowners" SEOKeyword="List registeredOwners, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
+      <Item text="List registered users" url="/en-us/api-reference/v1.0/api/device_list_registeredusers" SEOKeyword="List registeredUsers, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
+	  <Item text="Create registered owner" url="/en-us/api-reference/v1.0/api/device_post_registeredowners" />
+	  <Item text="Create registered user" url="/en-us/api-reference/v1.0/api/device_post_registeredusers" />
     </Item>
     <Item text="Directory object" url="/en-us/api-reference/v1.0/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Get directory object" url="/en-us/api-reference/v1.0/api/directoryobject_get" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryobject object." />
@@ -662,9 +664,6 @@
       </Item>
       <Item text="Directory objects" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
         <Item text="List owned devices" url="/en-us/api-reference/beta/api/user_list_owneddevices" SEOKeyword="List ownedDevices, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
-        <Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
-        <Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
-        <Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
             <Item text="List registered devices" url="/en-us/api-reference/beta/api/user_list_registereddevices" SEOKeyword="List registeredDevices, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
             <Item text="List owned objects" url="/en-us/api-reference/beta/api/user_list_ownedobjects" SEOKeyword="List ownedObjects, Microsoft Graph API, Users API" SEODescription="Retrieve a list of directoryobject objects." />
             <Item text="List scoped administrator memberships" url="/en-us/api-reference/beta/api/user_list_scopedadministratorof" SEOKeyword="List scoped administrator memberships, Microsoft Graph API, Users API" SEODescription="Retrieve a list of scoped adminstrator membership objects." />
@@ -872,12 +871,14 @@
       </Item>
       <Item text="Device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
-        <Item text="Create Device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
+        <Item text="Create device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
         <Item text="Get device" url="/en-us/api-reference/beta/api/device_get" SEOKeyword="Get device, Microsoft Graph API, Device API" SEODescription="Retrieve the properties and relationships of device object." />
         <Item text="Update device" url="/en-us/api-reference/beta/api/device_update" SEOKeyword="Update device, Microsoft Graph API, Device API" SEODescription="Update the properties of device object." />
         <Item text="Delete device" url="/en-us/api-reference/beta/api/device_delete" SEOKeyword="Delete device, Microsoft Graph API, Device API" SEODescription="Delete device." />
-        <Item text="List registeredOwners" url="/en-us/api-reference/beta/api/device_list_registeredowners" SEOKeyword="List registeredOwners, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
-        <Item text="List registeredUsers" url="/en-us/api-reference/beta/api/device_list_registeredusers" SEOKeyword="List registeredUsers, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="List registered owners" url="/en-us/api-reference/beta/api/device_list_registeredowners" SEOKeyword="List registeredOwners, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="List registered users" url="/en-us/api-reference/beta/api/device_list_registeredusers" SEOKeyword="List registeredUsers, Microsoft Graph API, Device API" SEODescription="Retrieve a list of directoryobject objects." />
+		<Item text="Create registered owner" url="/en-us/api-reference/beta/api/device_post_registeredowners" />
+		<Item text="Create registered user" url="/en-us/api-reference/beta/api/device_post_registeredusers" />
       </Item>
       <Item text="Directory object" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
         <Item text="Get directory object" url="/en-us/api-reference/beta/api/directoryobject_get" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryobject object." />
@@ -967,7 +968,7 @@
         <Item text="List applied to applications" url="/en-us/api-reference/beta/api/policy_list_appliesto" SEODescription="List the applications and service principals with the given policy applied." />
       </Item>
     <Item text="Privileged Identity Management" url="/en-us/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Azure Active Directory Privileged Identity Management">
-      <Item text="Privileged Role" url="/en-us/api-reference/beta/resources/privilegedrole" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Privileged AAD Role Object">
+      <Item text="Privileged role" url="/en-us/api-reference/beta/resources/privilegedrole" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Privileged AAD Role Object">
         <Item text="List privileged roles" url="/en-us/api-reference/beta/api/privilegedrole_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a list of privilegedRole objects." />
         <Item text="Get privileged role" url="/en-us/api-reference/beta/api/privilegedrole_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a privilegedRole object." />
         <Item text="List role assignments" url="/en-us/api-reference/beta/api/privilegedrole_list_assignments" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Retrieve a list of privilegedRoleAssignment objects." />
@@ -976,7 +977,7 @@
         <Item text="Get role settings" url="/en-us/api-reference/beta/api/privilegedrolesettings_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, setting" SEODescription="Retrieve the setting for a role." />
         <Item text="Get role summary" url="/en-us/api-reference/beta/api/privilegedrolesummary_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, summary" SEODescription="Retrieve the summary data for a role." />
       </Item>
-      <Item text="Privileged Role Assignment" url="/en-us/api-reference/beta/resources/privilegedroleassignment" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Privileged Role Assignment objects">
+      <Item text="Privileged role assignment" url="/en-us/api-reference/beta/resources/privilegedroleassignment" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Privileged Role Assignment objects">
         <Item text="List role assignments" url="/en-us/api-reference/beta/api/privilegedroleassignment_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Retrieve a list of privilegedRoleAssignment objects." />
         <Item text="Get role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_get" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Retrieve a privilegedRoleAssignment object." />
         <Item text="Create role assignments" url="/en-us/api-reference/beta/api/privilegedroleassignment_post_privilegedroleassignments" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, role" SEODescription="Create a privilegedRoleAssignment objects." />
@@ -985,12 +986,13 @@
         <Item text="Make eligible role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_makeeligible" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Make the role assignment as eligible." />
         <Item text="Make permanent role assignment" url="/en-us/api-reference/beta/api/privilegedroleassignment_makepermanent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Mkae the role assignment as permanent." />
       </Item>
-      <Item text="Audit Event" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Audit event from Privileged Identity Management">
+      <Item text="Audit event" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Audit event from Privileged Identity Management">
         <Item text="List audit events" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Retrieve a list of audit events." />
       </Item>
     </Item>
       <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
-        <Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
+        <Item text="List service principal" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
+		<Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="Update service principal" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
         <Item text="Delete service principal" url="/en-us/api-reference/beta/api/serviceprincipal_delete" />
       </Item>
@@ -1982,6 +1984,20 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_compliancesettingstatesummary_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_compliancesettingstatesummary_update"/>
         </Item>
+      <Item text="Default device compliance policy" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defaultdevicecompliancepolicy">
+        <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_list"/>
+        <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_get"/>
+        <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_create"/>
+        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_delete"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_update"/>
+        <Item text="List deviceCompliancePolicyGroupAssignments" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicygroupassignment_list"/>
+        <Item text="List deviceComplianceScheduledActionForRules" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancescheduledactionforrule_list"/>
+        <Item text="List deviceComplianceDeviceStatuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancedevicestatus_list"/>
+        <Item text="List deviceComplianceUserStatuses" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceuserstatus_list"/>
+        <Item text="Get deviceComplianceDeviceOverview" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancedeviceoverview_get"/>
+        <Item text="Get deviceComplianceUserOverview" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceuseroverview_get"/>
+        <Item text="List settingStateDeviceSummaries" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list"/>
+      </Item>
         <Item text="Device compliance action item" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceactionitem_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceactionitem_delete"/>
@@ -2115,6 +2131,10 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuseroverview_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuseroverview_update"/>
         </Item>
+        <Item text="Device configuration user state summary" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuserstatesummary">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuserstatesummary_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuserstatesummary_update"/>
+        </Item>        
         <Item text="Device configuration user status" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuserstatus">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuserstatus_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuserstatus_delete"/>
@@ -2298,6 +2318,13 @@
           <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosupdateconfiguration_get_deviceconfigurationdeviceoverview"/>
           <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosupdateconfiguration_get_deviceconfigurationuseroverview"/>
           <Item text="List setting state device summaries" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosupdateconfiguration_list_settingstatedevicesummary"/>
+        </Item>
+        <Item text="iOS update device status" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosupdatedevicestatus">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosupdatedevicestatus_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosupdatedevicestatus_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosupdatedevicestatus_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosupdatedevicestatus_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosupdatedevicestatus_update"/>
         </Item>
         <Item text="iOS VPN configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosvpnconfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosvpnconfiguration_create"/>
@@ -2901,7 +2928,6 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_update"/>
           <Item text="Assign action" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_assign"/>
           <Item text="List device management script group assignments" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list_devicemanagementscriptgroupassignment"/>
-          <Item text="List device management script states" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscript_list_devicemanagementscriptstate"/>
         </Item>
         <Item text="Device management script group assignment" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptgroupassignment">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_list"/>
@@ -2910,14 +2936,25 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptgroupassignment_update"/>
         </Item>
-        <Item text="Device management script state" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptstate">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_update"/>
-          <Item text="Get managedDevice" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get_manageddevice"/>
-          <Item text="Get user" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptstate_get_user"/>
+        <Item text="Device management script device state" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptdevicestate">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_update"/>
+          <Item text="Get managedDevice" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_get"/>
+        </Item>
+        <Item text="Device management script run summary" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptrunsummary">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptrunsummary_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptrunsummary_update"/>
+        </Item>
+        <Item text="Device management script user state" url="/en-us/api-reference/beta/resources/intune_devicefe_devicemanagementscriptuserstate">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptuserstate_update"/>
+          <Item text="List deviceManagementScriptDeviceStates" url="/en-us/api-reference/beta/api/intune_devicefe_devicemanagementscriptdevicestate_list"/>
         </Item>
         <Item text="Managed device" url="/en-us/api-reference/beta/resources/intune_devicefe_manageddevice">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_manageddevice_list"/>
@@ -2969,10 +3006,31 @@
           <Item text="Remove all devices from management" url="/en-us/api-reference/beta/api/intune_devicefe_user_removealldevicesfrommanagement"/>
           <Item text="List managed devices" url="/en-us/api-reference/beta/api/intune_devicefe_user_list_manageddevice"/>
         </Item>
+        <Item text="Windows managed device" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanageddevice">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanageddevice_update"/>
+          <Item text="List detectedApps" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_list"/>
+          <Item text="Get deviceCategory" url="/en-us/api-reference/beta/api/intune_devicefe_devicecategory_get"/>
+          <Item text="Get windowsProtectionState" url="/en-us/api-reference/beta/api/intune_devicefe_windowsprotectionstate_get"/>
+        </Item>
         <Item text="Windows management app" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_list_windowsmanagementapphealthstate"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_update"/>
+        </Item>
+        <Item text="Windows management app health state" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapphealthstate">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_update"/>
+        </Item>
+        <Item text="Windows management app health summary" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapphealthsummary">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthsummary_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthsummary_update"/>
         </Item>
       </Item>
       <Item text="App protection" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
@@ -3756,7 +3814,20 @@
         <Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
       </Item>
     </Item>
-    <Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
+    <Item text="Project Rome" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
+		<Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
+		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
+		<Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
+		<Item text="Activity" url="/en-us/api-reference/beta/resources/projectrome_activity" >
+			<Item text="Create or replace an activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
+			<Item text="Delete an activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
+		</Item>
+		<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
+			<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
+			<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+		</Item>
+	</Item>
+	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
       <Item text="Office 365 usage reports" url="/en-us/api-reference/beta/resources/report" >
 		  <Item text="Get email activity report" url="/en-us/api-reference/beta/api/reportroot_emailactivity" SEOKeyword="Get Email Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Exchange Email Activity reports. The response will be a CSV file in a binary stream." />
 		  <Item text="Get email app usage report" url="/en-us/api-reference/beta/api/reportroot_emailappusage" SEOKeyword="Get Email App Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Email App Usage reports. The response will be a CSV file in a binary stream." />
