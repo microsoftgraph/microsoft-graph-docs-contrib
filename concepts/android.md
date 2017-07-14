@@ -254,12 +254,13 @@ You need to make your app ready to handle the authorization server response, whi
                 android:value="ENTER_YOUR_CLIENT_ID"/>
         </application>
     ```
-2. the **MSAL** library needs access to the application Id assigned by the registration portal. It gets the application Id from the application context that you pass in the library constructor. 
+2. The **MSAL** library needs access to the application Id assigned by the registration portal. It gets the application Id from the application context that you pass in the library constructor. 
 
    >Note: You can also provide the application Id at run-time by passing a string parameter to the constructor. 
 
-3. The activity will be invoked when the authorization server sends a response. You can request an access token with the response from the authorization server. Go to your **AuthenticationManager** and find the following code in the class.
-    ```java
+3. The activity is invoked when the authorization server sends a response. Request an access token with the response from the authorization server. Go to your **AuthenticationManager** and find the following code in the class.
+
+   ```java
     /**
      * Authenticates the user and lets the user authorize the app for the requested permissions.
      * An authentication token is returned via the getAuthInteractiveCalback method
@@ -315,7 +316,7 @@ You need to make your app ready to handle the authorization server response, whi
         return  mAuthResult.getAccessToken();
     }
 
-    ```
+  ```
 
 Note that you have an access token in this line `String accessToken = tokenResponse.accessToken;`. Now you're ready to add code to call Microsoft Graph. 
 
@@ -335,13 +336,14 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     ```
 
 2. Add dependencies to the Microsoft Graph SDK and GSON.
-    ```gradle
+   ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.3.2'
     compile 'com.google.code.gson:gson:2.7'
-    ```
+```
    
 3. Add authentication token to new requests using the **uthenticateRequest** helper method. This method implements the same method from the Microsoft Graph Authentication **IAuthenticationProvider** interface
-    ```java
+    
+   ```java
     /**
      * Appends an access token obtained from the {@link AuthenticationManager} class to the
      * Authorization header of the request.
@@ -366,10 +368,10 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
             e.printStackTrace();
         }
     }
-    ```
+   ```
 4. Create a draft email and send it using the following helper methods from the **GraphServiceController** helper class.
 
-    ```java
+   ```java
     /**
      * Creates a draft email message using the Microsoft Graph API on Office 365. The mail is sent
      * from the address of the signed in user.
@@ -455,7 +457,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
         }
     }
 
-    ```
+   ```
 
 ### Call Microsoft Graph using the Microsoft Graph REST API
 The [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. Follow these steps to use the REST API.
@@ -472,7 +474,7 @@ The [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 
     ```
    
 3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
-    ```java
+   ```java
     final String accessToken = tokenResponse.accessToken;
 
     final RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
@@ -530,7 +532,7 @@ The [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 
             queue.add(stringRequest);
         }
     });
-    ```
+   ```
 
 ## Run the app
 You're ready to try your Android app.
