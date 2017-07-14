@@ -242,7 +242,7 @@ You need to make your app ready to handle the authorization server response, whi
                     <action android:name="android.intent.action.VIEW" />
                     <category android:name="android.intent.category.DEFAULT" />
                     <category android:name="android.intent.category.BROWSABLE" />
-                    <data android:scheme="msalbENTER_YOUR_CLIENT_ID"
+                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
                         android:host="auth" />
                 </intent-filter>
             </activity>
