@@ -138,14 +138,20 @@ An application may create no more than five **schema extension** definitions.
 
 For known limitations using extensions, see the [extensions section](known_issues.md#extensions) in the known issues article.
 
-## Extension examples
-
-[Add custom data to users using open extensions](extensibility_open_users.md)
-
-[Add custom data to groups using schema extensions](extensibility_schema_groups.md)
-
 ## See also
 
 [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [Adding and verifying a domain for an Office 365 tenant](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+
+
+## Next steps: examples
+
+- See an example of using an open extension to extend the **user** resource with custom roaming profile data:
+
+[Add custom data to users using open extensions](extensibility_open_users.md)
+
+- See an example of using a schema extension to extend the **group** resource with training course data:
+
+[Add custom data to groups using schema extensions](extensibility_schema_groups.md)
+
