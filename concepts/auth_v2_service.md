@@ -53,7 +53,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 ```
 
 | Parameter | Condition | Description |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | tenant |Required |The directory tenant that you want to request permission from. This can be in GUID or friendly name format. If you don't know which tenant the user belongs to and you want to let them sign in with any tenant, use `common`. |
 | client_id |Required |The Application ID that the [Application Registration Portal](https://apps.dev.microsoft.com/) assigned to your app. |
 | redirect_uri |Required |The redirect URI where you want the response to be sent for your app to handle. It must exactly match one of the redirect URIs that you registered in the portal, except that it must be URL encoded, and it can have additional path segments. |
