@@ -17,7 +17,7 @@ PATCH /groups/{id}/settings/{id}
 ### Optional request headers
 | Name | Description |
 |:-----------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | Bearer {token}. Required. |
 | Content-Type	| application/json	|
 
 ### Request body

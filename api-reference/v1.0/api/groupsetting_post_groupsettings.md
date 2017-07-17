@@ -17,8 +17,8 @@ POST /groups/{id}/settings
 
 | Name | Description |
 |:---------------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json |
+| Authorization | Bearer {token}. Required. |
+| Content-Type | application/json |
 
 ### Request body
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. However, the display name for the setting will be set based on the referenced settings template name.

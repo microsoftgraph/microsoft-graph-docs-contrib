@@ -18,7 +18,7 @@ DELETE /groups/{id}/settings/{id}
 
 | Name | Description |
 |:---------------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
 ### Request body
