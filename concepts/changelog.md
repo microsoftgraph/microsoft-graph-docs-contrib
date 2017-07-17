@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2017
 
+### Project Rome
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+|Addition|Beta|Added the following resources and APIs:<br/>[Activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity)<br/>[Create or replace an activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity)<br/>[Delete an activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_activity)<br/>[History item](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem)<br/>[Create or replace a history item](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem)<br/>[Delete a history item](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_historyitem)|
+
 ### Outlook calendar
 
 |**Change type**|**Version**|**Description**|
@@ -26,6 +32,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|Beta|Added the **deployedAppCount** property to the [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection) entity|
 |Change|Beta|Removed the **instanceDisplayName** and **settingPlatform** properties from the [complianceSettingStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/complianceSettingStateSummary) entity|
 |Change|Beta|Added the **deployedAppCount** property to the [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) entity|
+|Change|Beta|Added the **excludeGroup** property to the [deviceCompliancePolicyGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicygroupassignment) entity|
 |Change|Beta|Removed the **instanceDisplayName** and **settingPlatform** properties from the [deviceCompliancePolicySettingStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary) entity|
 |Change|Beta|Removed the **devicePlatform** property from the [deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate) entity|
 |Change|Beta|Added the **assignmentStatus**, **assignmentProgress** and **assignmentErrorMessage** properties to the [deviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration) entity|

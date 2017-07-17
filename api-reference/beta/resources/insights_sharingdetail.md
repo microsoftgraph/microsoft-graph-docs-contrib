@@ -2,8 +2,7 @@
 
 Complex type containing properties of [Shared](insights_shared.md) items. 
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource
 
 ```json
@@ -16,7 +15,7 @@ Here is a JSON representation of the resource
 }
 ```
 
-### Properties
+## Properties
 
 | Property              | Type          | Description  |
 | -------------         |-----------    | -------------|
