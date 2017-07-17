@@ -17,7 +17,7 @@ For more information about permissions, including delegated and application perm
 
 The following table lists some common use cases for Azure AD resources.
 
-| Use cases		   | REST resources	| See also |
+| **Use cases**		   | **REST resources**	| **See also** |
 |:---------------|:--------|:----------|
 | **Directory object and methods** | | |
 | `directoryObject` is the base class that many directory resources, like users and groups, inherit from. Microsoft Graph exposes several methods that you can use to discover information about users, groups, and other directory objects. For example, you can check for transitive membership in a list of groups, return all the groups and directory roles that a directory object is a transitive member of, or get all the resources of a specified type (like user or group) from a list of generic resource IDs. | [directoryObject](../resources/directoryobject.md) | N/A |
