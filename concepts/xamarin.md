@@ -446,5 +446,6 @@ You've now performed the three steps required for interacting with Microsoft Gra
 
 ## See also
 - [Microsoft Graph .NET Client Library](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Azure AD v2.0 protocols](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 tokens](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)
+- [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Get access on behalf of a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Get access without a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
