@@ -81,7 +81,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 ## Authenticate the user and get an access token
 
-> **Note:** If you followed the instructions in the **Guided Setup** flow from the application registration portal to create a new application, you can skip these steps. Go to section **Next steps** to learn more about the Graph API.
+> **Note:** If you followed the instructions in the **Guided Setup** flow from the application registration portal to create a new application, you can skip these steps. Go to [Call Microsoft Graph using the Microsoft Graph SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk) to learn more about the Graph API.
 
 Let's walk through the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) to learn about the MSAL and Microsoft Graph code we've added.
 
@@ -460,7 +460,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     }
 
    ```
-
+<a/>
 ### Call Microsoft Graph using the Microsoft Graph REST API
 The [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint. Follow these steps to use the REST API.
 
