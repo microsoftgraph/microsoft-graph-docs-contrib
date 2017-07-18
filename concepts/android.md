@@ -33,11 +33,10 @@ Start a new project in Android Studio. You can leave the default values for most
  
 This provides you with an Android project with an activity and a button that you can use to authenticate the user.
 
-> Note: You can also use the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) that takes care of the project configuration so you can focus on the coding sections of this walkthrough.
 
 ## Register the application
 
-You need to register your app on the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) whether you've downloaded the starter project or created a new project.
+You need to register your app on the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) whether you've downloaded the connect sample or created a new project.
 
 Register an app on the Microsoft App Registration Portal. This generates the app ID that you'll use to configure the app.
 
@@ -45,7 +44,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 2. Choose **Add an app**.
 
->Tip: If you have downloaded the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) and are just creating a registration for it, uncheck **Guided Setup** before chosing the **Create** button.
+>Tip: If you have downloaded the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) and are just creating a registration for it, uncheck **Guided Setup** before chosing the **Create** button.
 
 3. Enter a name for the app, and choose **Create**. 
 	
@@ -71,7 +70,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
     b. Choose **Add Platform** and **Native Application**.
 
-    > **Note:** The Application Registration Portal provides a Redirect URI with a value of *msal[YOUR NEW APP ID]://auth*. Do not use the built-in redirect URIs. The [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) implements the MSAL authentication library which requires this redirect URI. If using a [supported third party library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) or the **ADAL** library then you must use the built-in redirect URIs.
+    > **Note:** The Application Registration Portal provides a Redirect URI with a value of *msal[YOUR NEW APP ID]://auth*. Do not use the built-in redirect URIs. The [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) implements the MSAL authentication library which requires this redirect URI. If using a [supported third party library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) or the **ADAL** library then you must use the built-in redirect URIs.
 
     For Guided Setup flow and unguided flow
 
@@ -84,7 +83,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
 > **Note:** If you followed the instructions in the **Guided Setup** flow from the application registration portal to create a new application, you can skip these steps. Go to section **Next steps** to learn more about the Graph API.
 
-Let's walk through the [Starter project](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) to learn about the MSAL and Microsoft Graph code we've added.
+Let's walk through the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) to learn about the MSAL and Microsoft Graph code we've added.
 
 ### Add the dependency to app/build.gradle
 
@@ -120,6 +119,8 @@ Open the `build.gradle` file in the app module and find the following dependency
 
 
 2. In the **ConnectActivity** class, locate the event handler for the click event of the **mConnectButton**. Find the **onClick** method and review relevant code.
+  
+    The **connect** method enables personally identifyable information (PII) logging, gets an instance of the sample helper class **AuthenticationManager**, and gets the MSAL platform object users collection. If there are no users, the new user is taken to the Azure AD authentication and authorization flow. Otherwise, an authentication token is obtained silently.
 
    ```java
     @Override
@@ -141,7 +142,7 @@ Open the `build.gradle` file in the app module and find the following dependency
         List<User> users = null;
 
         try {
-            users = mApplication.getUsers();
+            users = mgr.getPublicClient().getUsers();
 
             if (users != null && users.size() == 1) {
                 mUser = users.get(0);
@@ -187,7 +188,7 @@ Open the `build.gradle` file in the app module and find the following dependency
    ```    
 3. Find the authentication callback method that caches the authentication token that is used in Graph API calls.
 
-   The authentication helper method enables personally identifyable information (PII) logging, gets an instance of the sample helper class **AuthenticationManager**, and gets the MSAL platform object users collection. If there are no users, the new user is taken to the Azure AD authentication and authorization flow. Otherwise, an authentication token is obtained silently.
+ 
 
 ```java
     /* Callback used for interactive request.  If succeeds we use the access
@@ -225,13 +226,13 @@ Open the `build.gradle` file in the app module and find the following dependency
 
 ```
     
-At this point, you should have an Android app with a button. If you press the button, on first use, the app presents an authentication page using the device's browser. The next step is to handle the code that the authorization server sends to the redirect URI and exchange it for an access token.
+The connect sample app has a **Connect** button on the main activity. If you press the button, on first use, the app presents an authentication page using the device's browser. The next step is to handle the code that the authorization server sends to the redirect URI and exchange it for an access token.
 
 ### Exchange the authorization code for an access token
 
 You need to make your app ready to handle the authorization server response, which contains a code that you can exchange for an access token.
 
-1. We need to tell the Android system that Startup app can handle requests to the redirect URL configured in the application registration. To do this open the **AndroidManifest** file and add the following children to the projects  **\<application/\>** element.
+1. We need to tell the Android system that Connect app can handle requests to the redirect URL configured in the application registration. To do this open the **AndroidManifest** file and add the following children to the projects  **\<application/\>** element.
     ```xml
         <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
         <application ...>
@@ -254,9 +255,9 @@ You need to make your app ready to handle the authorization server response, whi
                 android:value="ENTER_YOUR_CLIENT_ID"/>
         </application>
     ```
-2. The **MSAL** library needs access to the application Id assigned by the registration portal. It gets the application Id from the application context that you pass in the library constructor. 
+2. The **MSAL** library needs access to the application Id assigned by the registration portal. **The MSAL library refers to the application Id as the "Client Id"**. It gets the application Id (Client Id) from the application context that you pass in the library constructor. 
 
-   >Note: You can also provide the application Id at run-time by passing a string parameter to the constructor. 
+   >Note: You can also provide the client Id at run-time by passing a string parameter to the constructor. 
 
 3. The activity is invoked when the authorization server sends a response. Request an access token with the response from the authorization server. Go to your **AuthenticationManager** and find the following code in the class.
 
