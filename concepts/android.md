@@ -74,7 +74,7 @@ Register an app on the Microsoft App Registration Portal. This generates the app
 
     For Guided Setup flow and unguided flow
 
-    a. Add delegated permissions. You'll need **profile**, **Mail.ReadWrite**, **mail.send**, **Files.ReadWrite**, and **User.ReadBasic.All**. 
+    a. Add delegated permissions. You'll need **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite**, and **User.ReadBasic.All**. 
    
     b. Choose **Save**.
 
