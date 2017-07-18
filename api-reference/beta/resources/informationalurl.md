@@ -2,7 +2,7 @@
 
 Basic profile information of the application.
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
@@ -11,8 +11,7 @@ Basic profile information of the application.
 |support|String| Link to the application's support page. For example, https://www.contoso.com/app/support |
 |termsOfService|String| Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice |
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {
