@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/channels/{id}/threads
+POST /groups/{id}/channels/{id}/chatthreads
 ```
 ## Request headers
 | Name       | Type | Description|
