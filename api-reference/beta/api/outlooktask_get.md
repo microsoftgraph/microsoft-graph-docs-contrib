@@ -33,7 +33,7 @@ If successful, this method returns a `200 OK` response code and [outlookTask](..
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask"
+  "name": "get_outlooktask_1"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
@@ -92,7 +92,7 @@ This example uses the `Prefer: outlook.timezone` header to specify displaying da
 in Pacific Standard Time.
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask"
+  "name": "get_outlooktask_2"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
