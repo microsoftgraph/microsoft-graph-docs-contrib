@@ -6,7 +6,7 @@ Get the teams in Microsoft Teams that the user is a direct member of.
 One of the following **scopes** is required to execute this API: 
 *User.Read.All; User.ReadWrite.All*
 
-> Currrently, this operation only works for the 'me' user for which the caller has [delegated permissions](../../../concepts/permissions_reference.md).  Future releases will support this operation for any specified user ID.
+> Currrently, this operation only works for the 'me' user.  See [known issues](../../../concepts/known_issues.md) for more details.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
