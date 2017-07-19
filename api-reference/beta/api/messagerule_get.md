@@ -1,6 +1,6 @@
 # Get rule
 
-Get the properties and relationships of a [messageRule](,,/resources/messagerule.md) object.
+Get the properties and relationships of a [messageRule](../resources/messagerule.md) object.
 
 
 ## Prerequisites
@@ -23,7 +23,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [messageRule](,,/resources/messagerule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [messageRule](../resources/messagerule.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

@@ -1,6 +1,6 @@
 # Delete messageRule
 
-Delete the specified [messageRule](,,/resources/messagerule.md) object.
+Delete the specified [messageRule](../resources/messagerule.md) object.
 ## Prerequisites
 The following **scopes** are required to execute this API: *MailboxSettings.ReadWrite*
 ## HTTP request
