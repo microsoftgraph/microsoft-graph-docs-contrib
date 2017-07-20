@@ -6,6 +6,8 @@ Delete a group setting.
 
 One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
+> Note: Only tenant admins have permissions to perform create, update, and delete operations.
+
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

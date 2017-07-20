@@ -45,24 +45,37 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 343
+Content-length: 1770
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "displayName": "displayName-value",
-      "description": "description-value",
-      "values": [
-        {
-          "name": "name-value",
-          "type": "type-value",
-          "defaultValue": "defaultValue-value",
-          "description": "description-value"
-        }
-      ]
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettingTemplates",
+    "value": [
+                {
+                    "id": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+                    "deletedDateTime": null,
+                    "displayName": "Group.Unified",
+                    "description": "Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines settings that can be used for Unified Groups.",
+                    "values": [
+                        {
+                            "name": "CustomBlockedWordsList",
+                            "type": "System.String",
+                            "defaultValue": "",
+                            "description": "A comma-delimited list of blocked words for Unified Group displayName and mailNickName."
+                        },
+                        {
+                            "name": "EnableMSStandardBlockedWords",
+                            "type": "System.Boolean",
+                            "defaultValue": "false",
+                            "description": "A flag indicating whether or not to enable the Microsoft Standard list of blocked words for Unified Group displayName and mailNickName."
+                        },
+                        {
+                            "name": "ClassificationDescriptions",
+                            "type": "System.String",
+                            "defaultValue": "",
+                            "description": "A comma-delimited list of structured strings describing the classification values in the ClassificationList. The structure of the string is: Value: Description"
+                        }
+                }
+            ]
 }
 ```
 

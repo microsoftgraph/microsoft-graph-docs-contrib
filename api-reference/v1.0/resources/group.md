@@ -70,6 +70,7 @@ This resource supports:
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.|
+|classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).|
 |createdDateTime|DateTimeOffset| The date and time the group was created. |
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|

@@ -8,8 +8,6 @@ Group setting templates represent system-defined settings available to the tenan
 |:---------------|:--------|:----------|
 |[Get groupSettingTemplate](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Read the specific properties of one of the system defined groupSettingTemplate objects. |
 |[List groupSettingTemplate](../api/groupsettingtemplate_list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) |List all of the system defined groupSettingTemplate objects.|
-|[Update groupSettingTemplate](../api/groupsettingtemplate_update.md) | [groupSettingTemplate](groupsettingtemplate.md) | Update the properties of a groupSettingTemplate object. |
-|[Delete groupSettingTemplate](../api/groupsettingtemplate_delete.md) | None | Delete a groupSettingTemplate object. |
 
 ### Properties
 

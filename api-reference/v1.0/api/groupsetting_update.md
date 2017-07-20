@@ -6,10 +6,13 @@ Update the properties of a specific group setting object.
 
 One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-Update a tenant-wide or group specific setting.
+> Note: Only tenant admins have permissions to perform create, update, and delete operations.
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
+
+Update a tenant-wide or group specific setting.
+
 ```http
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
