@@ -71,7 +71,7 @@ Currently, you can create chat threads in channels, but you cannot read existing
 
 ### Microsoft Teams user's list of joined teams (preview)
 
-Currrently, [listing the teams a user has joined](../api-reference/beta/resources/user_list_joinedteams.md) only works for the 'me' user for which the caller has [delegated permissions](../../../concepts/permissions_reference.md).  Future releases will support this operation for any specified user ID.
+Currrently, [listing the teams a user has joined](../api-reference/beta/api/user_list_joinedteams.md) only works for the 'me' user for which the caller has [delegated permissions](permissions_reference.md).  Future releases will support this operation for any specified user ID.
 
 ### Adding and getting attachments of group posts
 
