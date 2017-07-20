@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /managedAppPolicies/
 POST /deviceAppManagement/managedAppPolicies/
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/
@@ -47,7 +46,7 @@ If successful, this method returns a `201 Created` response code and a [managedA
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppPolicies/
+POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/
 Content-type: application/json
 Content-length: 232
 

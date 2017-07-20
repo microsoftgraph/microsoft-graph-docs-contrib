@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1962
+Content-Length: 2024
 
 {
   "value": {
@@ -83,6 +83,7 @@ Content-Length: 1962
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
+    "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
     "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
     "customSettings": [
       {

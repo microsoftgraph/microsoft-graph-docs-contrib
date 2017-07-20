@@ -42,13 +42,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 266
+Content-Length: 321
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userAppInstallStatus",
     "id": "14959a2a-9a2a-1495-2a9a-95142a9a9514",
     "userName": "User Name value",
+    "userPrincipalName": "User Principal Name value",
     "installedDeviceCount": 4,
     "failedDeviceCount": 1,
     "notInstalledDeviceCount": 7

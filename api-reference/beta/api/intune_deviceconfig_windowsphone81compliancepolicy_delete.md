@@ -14,7 +14,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
-DELETE /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/
 DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/
 ```
 

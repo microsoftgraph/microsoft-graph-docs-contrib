@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-DELETE /managedAppStatuses/{managedAppStatusesId}
 DELETE /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ```
 
@@ -33,7 +32,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/managedAppStatuses/{managedAppStatusesId}
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ```
 
 ### Response

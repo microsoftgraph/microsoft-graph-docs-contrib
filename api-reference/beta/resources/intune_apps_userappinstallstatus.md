@@ -19,6 +19,7 @@ Contains properties for the installation status for a user.
 |---|---|---|
 |id|String|Key of the entity.|
 |userName|String|User name.|
+|userPrincipalName|String|User Principal Name.|
 |installedDeviceCount|Int32|Installed Device Count.|
 |failedDeviceCount|Int32|Failed Device Count.|
 |notInstalledDeviceCount|Int32|Not installed device count.|
@@ -42,6 +43,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.userAppInstallStatus",
   "id": "String (identifier)",
   "userName": "String",
+  "userPrincipalName": "String",
   "installedDeviceCount": 1024,
   "failedDeviceCount": 1024,
   "notInstalledDeviceCount": 1024

@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /appConfigurationGroupAssignments/{appConfigurationGroupAssignmentsId}
 GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/groupAssignments/{mdmAppConfigGroupAssignmentId}
 ```
 
@@ -35,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [mdmAppConfigGro
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/appConfigurationGroupAssignments/{appConfigurationGroupAssignmentsId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/groupAssignments/{mdmAppConfigGroupAssignmentId}
 ```
 
 ### Response

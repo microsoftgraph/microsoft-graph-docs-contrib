@@ -16,6 +16,7 @@ Singleton entity which represents the Exchange OnPremises Conditional Access Set
 |enabled|Boolean|Indicates if on premises conditional access is enabled for this organization|
 |includedGroups|Guid collection|User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.|
 |excludedGroups|Guid collection|User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.|
+|overrideDefaultRule|Boolean|Override the default access rule when allowing a device to ensure access is granted.|
 
 ## Relationships
 None
@@ -37,7 +38,8 @@ Here is a JSON representation of the resource.
   ],
   "excludedGroups": [
     "<Unknown Primitive Type Edm.Guid>"
-  ]
+  ],
+  "overrideDefaultRule": true
 }
 ```
 

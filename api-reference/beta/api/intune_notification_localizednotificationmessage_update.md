@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /localizedNotificationMessages/{localizedNotificationMessagesId}
 PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
@@ -45,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated [loca
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/localizedNotificationMessages/{localizedNotificationMessagesId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 Content-type: application/json
 Content-length: 197
 

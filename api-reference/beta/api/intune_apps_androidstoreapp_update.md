@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /mobileApps/{mobileAppsId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
@@ -59,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
 Content-length: 942
 

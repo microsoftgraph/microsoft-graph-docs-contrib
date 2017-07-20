@@ -40,6 +40,7 @@ The following table shows the properties that are required when you create a [de
 |userPrincipalName|String|The User PrincipalName that is being reported|
 |deviceModel|String|The device model that is being reported|
 |state|String|The compliance state of the setting Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 
 
@@ -52,7 +53,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}
 Content-type: application/json
-Content-length: 400
+Content-length: 482
 
 {
   "platformType": "windowsRT",
@@ -65,7 +66,8 @@ Content-length: 400
   "userName": "User Name value",
   "userPrincipalName": "User Principal Name value",
   "deviceModel": "Device Model value",
-  "state": "notApplicable"
+  "state": "notApplicable",
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
 
@@ -74,7 +76,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 516
+Content-Length: 598
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
@@ -89,7 +91,8 @@ Content-Length: 516
   "userName": "User Name value",
   "userPrincipalName": "User Principal Name value",
   "deviceModel": "Device Model value",
-  "state": "notApplicable"
+  "state": "notApplicable",
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
 

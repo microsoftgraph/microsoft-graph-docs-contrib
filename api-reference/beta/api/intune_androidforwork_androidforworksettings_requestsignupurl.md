@@ -28,7 +28,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|hostName|String|Not yet documented|
+|hostName|String|The hostname of the callback URL to which the browser will be redirected after successfully completing sign-up.|
 
 
 
