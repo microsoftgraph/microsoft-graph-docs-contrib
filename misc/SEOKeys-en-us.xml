@@ -3686,7 +3686,14 @@
           <Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-    </Item>
+	  <Item text="Rules" url="/en-us/api-reference/beta/resources/messagerule" >
+		<Item text="List" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
+		<Item text="Create" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/messagerule_get" />
+		<Item text="Update" url="/en-us/api-reference/beta/api/messagerule_update" />
+		<Item text="Delete" url="/en-us/api-reference/beta/api/messagerule_delete" />
+	  </Item>
+	</Item>
 	<Item text="Outlook tasks" url="/en-us/api-reference/beta/resources/outlooktask" >
       <Item text="Outlook task" url="/en-us/api-reference/beta/resources/outlooktask" >
         <Item text="List" url="/en-us/api-reference/beta/api/outlookuser_list_tasks" />
@@ -3726,13 +3733,6 @@
           <Item text="Get multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" />
         </Item>
       </Item>
-	  <Item text="Rules" url="/en-us/api-reference/beta/resources/messagerule" >
-		<Item text="List" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
-		<Item text="Create" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
-		<Item text="Get" url="/en-us/api-reference/beta/api/messagerule_get" />
-		<Item text="Update" url="/en-us/api-reference/beta/api/messagerule_update" />
-		<Item text="Delete" url="/en-us/api-reference/beta/api/messagerule_delete" />
-	  </Item>
 	</Item>
     <Item text="People and social" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
