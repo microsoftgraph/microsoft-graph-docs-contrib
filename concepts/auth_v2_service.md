@@ -55,7 +55,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 ```
 
 | Parameter | Condition | Description |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | tenant |Required |The directory tenant that you want to request permission from. This can be in GUID or friendly name format. If you don't know which tenant the user belongs to and you want to let them sign in with any tenant, use `common`. |
 | client_id |Required |The Application ID that the [Application Registration Portal](https://apps.dev.microsoft.com/) assigned to your app. |
 | redirect_uri |Required |The redirect URI where you want the response to be sent for your app to handle. It must exactly match one of the redirect URIs that you registered in the portal, except that it must be URL encoded, and it can have additional path segments. |
@@ -74,7 +74,7 @@ GET http://localhost/myapp/permissions?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b
 ```
 
 | Parameter | Description |
-| --- | --- |
+|:----------|:------------|
 | tenant |The directory tenant that granted your application the permissions that it requested, in GUID format. |
 | state |A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on. |
 | admin_consent |Set to **true**. |
@@ -104,7 +104,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 ```
 
 | Parameter | Condition | Description |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | tenant |Required |The directory tenant that you want to request permission from. This can be in GUID or friendly name format. |
 | client_id |Required |The Application ID that the [Microsoft App Registration Portal](https://apps.dev.microsoft.com) assigned when you registered your app. |
 | scope |Required |The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the v2.0 endpoint that of all the application permissions you have configured for your app, it should issue a token for the ones associated with the resource you want to use. |
@@ -123,7 +123,7 @@ A successful response looks like this:
 ```
 
 | Parameter | Description |
-| --- | --- |
+|:----------|:------------|
 | access_token |The requested access token. Your app can use this token in calls to Microsoft Graph. |
 | token_type |Indicates the token type value. The only type that Azure AD supports is `bearer`. |
 | expires_in |How long the access token is valid (in seconds). |
