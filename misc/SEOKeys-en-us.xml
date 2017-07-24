@@ -118,7 +118,7 @@
       <Item text="Get photo" url="/en-us/api-reference/v1.0/api/profilephoto_get" />
       <Item text="Update photo" url="/en-us/api-reference/v1.0/api/profilephoto_update" />
     </Item>
-    <Item text="Tasks" url="/en-us/api-reference/v1.0/resources/plannerplan" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Planner tasks" url="/en-us/api-reference/v1.0/resources/plannertask" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
         <Item text="List tasks" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
     </Item>  
   </Item>
