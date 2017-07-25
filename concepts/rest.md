@@ -136,6 +136,5 @@ Now that you've seen how to make calls to Microsoft Graph, you can use the API r
 - Try out more of the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
 
 ## See also
-- [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Get access on behalf of a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Get access without a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 tokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

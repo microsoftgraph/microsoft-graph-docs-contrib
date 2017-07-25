@@ -50,7 +50,7 @@ You can [create an open extension](../api-reference/v1.0/api/opentypeextension_p
 You can subsequently [read](../api-reference/v1.0/api/opentypeextension_get.md), [update](../api-reference/v1.0/api/opentypeextension_update.md), or [delete](../api-reference/v1.0/api/opentypeextension_delete.md) 
 the extension and its data.
 
-See the open extension example: [Add custom data to users using open extensions](extensibility_open_users.md)
+Open extension example: [Add custom data to users using open extensions](extensibility_open_users.md)
 
 ## Schema extensions
 
@@ -80,7 +80,7 @@ do CRUD operations on the custom data in a schema extension in the following way
 - Use the resource `PATCH` method to add or update custom data in an existing resource instance.
 - Use the resource `PATCH` method to set the complex type to null, to delete the custom data in the resource instance. 
 
-See the schema extension example: [Add custom data to groups using schema extensions](extensibility_schema_groups.md)
+Schema extension example: [Add custom data to groups using schema extensions](extensibility_schema_groups.md)
 
 
 ### Schema extensions lifecycle
@@ -138,20 +138,14 @@ An application may create no more than five **schema extension** definitions.
 
 For known limitations using extensions, see the [extensions section](known_issues.md#extensions) in the known issues article.
 
+## Extension examples
+
+[Add custom data to users using open extensions](extensibility_open_users.md)
+
+[Add custom data to groups using schema extensions](extensibility_schema_groups.md)
+
 ## See also
 
 [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [Adding and verifying a domain for an Office 365 tenant](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
-
-
-## Next steps
-
-See an example that uses an open extension to extend the **user** resource with custom roaming profile data:
-
-[Add custom data to users using open extensions](extensibility_open_users.md)
-
-See an example that uses a schema extension to extend the **group** resource with training course data:
-
-[Add custom data to groups using schema extensions](extensibility_schema_groups.md)
-
