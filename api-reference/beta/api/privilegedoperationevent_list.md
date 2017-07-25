@@ -114,7 +114,166 @@ Content-length: 547
 	]
 }
 ```
+##### Request 3
+Here is an example to get the audit events for the role assignment operations. In this case, ``requestType`` value is ``Assign``.
 
+<!-- { "blockType": "request" } -->
+```http
+GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
+```
+##### Response 3
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedOperationEvent",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 547
+
+{
+    "value": [
+        {
+            "id": "201707240003469369",
+            "userId": "2cf9eef8-bc67-4aa4-bb65-75cc9e5c3f80",
+            "userName": "admin1",
+            "userMail": "admin1@contoso.onmicrosoft.com",
+            "roleId": "9360feb5-f418-4baa-8175-e2a00bac4301",
+            "roleName": "Directory Writers",
+            "expirationDateTime": "0001-01-01T00:00:00Z",
+            "creationDateTime": "2017-07-24T18:32:38.7589078Z",
+            "requestorId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "requestorName": "admin",
+            "tenantId": "ef73ae8b-cc96-4325-9bd1-dc82594b0b40",
+            "requestType": "Assign",
+            "additionalInformation": null,
+            "referenceKey": null,
+            "referenceSystem": null
+        },
+        {
+            "id": "201707240003469372",
+            "userId": "2cf9eef8-bc67-4aa4-bb65-75cc9e5c3f80",
+            "userName": "admin",
+            "userMail": "admin1@contoso.onmicrosoft.com",
+            "roleId": "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+            "roleName": "Guest Inviter",
+            "expirationDateTime": "0001-01-01T00:00:00Z",
+            "creationDateTime": "2017-07-24T18:33:00.7607701Z",
+            "requestorId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "requestorName": "admin",
+            "tenantId": "ef73ae8b-cc96-4325-9bd1-dc82594b0b40",
+            "requestType": "Assign",
+            "additionalInformation": null,
+            "referenceKey": null,
+            "referenceSystem": null
+        }
+	]
+}
+```
+##### Request 4
+Here is an example to get the audit events for the operations of self role activation and makePermanent. In this case, ``requestType`` value is ``Activate``.
+
+<!-- { "blockType": "request" } -->
+```http
+GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
+```
+##### Response 4
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedOperationEvent",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 547
+
+{
+    "value": [
+        {
+            "id": "201707240003469811",
+            "userId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "userName": "admin1",
+            "userMail": "admin1@contoso.onmicrosoft.com",
+            "roleId": "44367163-eba1-44c3-98af-f5787879f96a",
+            "roleName": "CRM Service Administrator",
+            "expirationDateTime": "0001-01-01T00:00:00Z",
+            "creationDateTime": "2017-07-24T23:34:41.9661094Z",
+            "requestorId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "requestorName": "admin1",
+            "tenantId": "ef73ae8b-cc96-4325-9bd1-dc82594b0b40",
+            "requestType": "Activate",
+            "additionalInformation": "Make permanent admin",
+            "referenceKey": null,
+            "referenceSystem": null
+        },
+        {
+            "id": "201707240003469814",
+            "userId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "userName": "admin1",
+            "userMail": "admin1@contoso.onmicrosoft.com",
+            "roleId": "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+            "roleName": "Guest Inviter",
+            "expirationDateTime": "2017-07-25T00:37:07.3402169Z",
+            "creationDateTime": "2017-07-24T23:37:08.0052112Z",
+            "requestorId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "requestorName": "admin1",
+            "tenantId": "ef73ae8b-cc96-4325-9bd1-dc82594b0b40",
+            "requestType": "Activate",
+            "additionalInformation": "self activate",
+            "referenceKey": "",
+            "referenceSystem": ""
+        }
+	]
+}
+```
+##### Request 5
+Here is an example to get the audit events for role assignment deactivation. In this case, ``requestType`` value is ``Deactivate``.
+
+<!-- { "blockType": "request" } -->
+```http
+GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
+```
+##### Response 5
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedOperationEvent",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 547
+
+{
+    "value": [
+        {
+            "id": "201707240003469375",
+            "userId": "2cf9eef8-bc67-4aa4-bb65-75cc9e5c3f80",
+            "userName": "admin1",
+            "userMail": "admin1@contoso.onmicrosoft.com",
+            "roleId": "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+            "roleName": "Guest Inviter",
+            "expirationDateTime": "0001-01-01T00:00:00Z",
+            "creationDateTime": "2017-07-24T18:33:28.3408971Z",
+            "requestorId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "requestorName": "admin1",
+            "tenantId": "ef73ae8b-cc96-4325-9bd1-dc82594b0b40",
+            "requestType": "Deactivate",
+            "additionalInformation": "Make eligible admin",
+            "referenceKey": null,
+            "referenceSystem": null
+        }
+	]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
