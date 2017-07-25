@@ -1,6 +1,6 @@
 # Use query parameters to customize responses
 
-Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following following query parameters are supported.
+Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported.
 
 |Name|Description|Example (click examples to try in [Graph Explorer][graph-explorer])
 |:---------------|:--------|:-------|
@@ -93,12 +93,17 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 ## select
 
-In a collection or an individual entity, to specify a different set of properties to return instead of the default set, use the `$select` query parameter. The `$select` parameter allows for choosing a subset or superset of the default set returned.
-For example, when retrieving your messages, you might want to select that only the `from` and `subject` properties of messages are returned.
+Use the `$select` query parameter to return a set of properties different than the default set for an individual resource or a collection of resources. With $select you can specify a subset or a superset of the default properties.
+
+For example, when retrieving the messages of the signed-in user, you can specify that only the `from` and `subject` properties be returned:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
+
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
+
+ > **Note:** In general, we recommend that you use $select to limit the properties returned by a query to those needed by your app. This is especially true of queries that may potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
 <!--For example, when retrieving the children of an item on a drive, you want to select that only the `name` and `size` properties of items are returned.
 
@@ -128,11 +133,32 @@ in the response will only have those property values included.
 
 ## expand
 
-In Microsoft Graph API requests, navigations to an object or collection of the referenced item are not automatically expanded.
+Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties and they can reference either a single resource or a collection of resources. For example, the mailboxes, manager, and direct reports of a user are all exposed as relationships. Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. 
+
+You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results. The maximum number of expanded objects for a request is 20.  
+
+The following example gets `user` objects, each with up to 20 `directReport` objects in the `directReports` collection expanded:
+
+```http
+GET https://graph.microsoft.com/beta/users?$expand=directReports
+```
+
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$expand=directReports&method=GET&version=beta)
+
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a $select parameter. The following example retrieves the root drive information and the top level child items in a drive. This example also uses a [`$select`](#select) statement to limit the properties returned for the expanded child items to the `id` and `name` properties.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
+```
+
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
+
+<!--
+In Microsoft Graph requests, navigations to an object or collection of the referenced item are not automatically expanded.
 This is by design because it reduces network traffic and the time it takes to generate a response from the service.
 However, in some cases you might want to include those results in a response.
 
-You can use the `$expand` query string parameter to instruct the API to expand a child object or collection and include those results.
+You can use the `$expand` query string parameter to instruct Microsoft Graph to expand a child object or collection and include those results.
 
 For example, to retrieve the root drive information and the top level child items in a drive, you use the `$expand` parameter.
 This example also uses a [`$select`](#select) statement to only return the `id` and `name` properties of the children items.
@@ -141,30 +167,38 @@ This example also uses a [`$select`](#select) statement to only return the `id` 
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
+
 > **Note:** The maximum number of expanded objects for a request is 20. Also, if you query on the [`user`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) resource, you can use `$expand` to get the properties of only one child object or collection at a time.
 The following example gets `user` objects, each with up to 20 `directReport` objects in the `directReports` collection expanded:
 
 ```http
-GET https://graph.microsoft.com/v1.0/users?$expand=directReports
+GET https://graph.microsoft.com/beta/users?$expand=directReports
 ```
+
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$expand=directReports&method=GET&version=beta)
 
 Some other resources may have a limit as well, so always check for possible errors.
 
+-->
+
 ## orderby
 
-To specify the sort order of the items returned from the Microsof Graph API, use the `$orderby` query parameter.
+To specify the sort order of the items returned from Microsoft Graph, use the `$orderby` query parameter.
 
-For example, to return the users in the organization ordered by their display name, the syntax is as follows:
+For example, the following request returns the users in the organization ordered by their display name:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$orderby=displayName&method=GET&version=v1.0)
 
-You can also sort by complex type entities. The following example gets messages and sorts them by the `address` field of the `from` property, which is of the complex type `emailAddress`:
+You can also sort by complex type entities. The following request gets messages and sorts them by the `address` field of the `from` property, which is of the complex type `emailAddress`:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example, `?$orderby=name%20desc`.
 
@@ -174,20 +208,22 @@ To sort the results in ascending or descending order, append either `asc` or `de
 
 To specify the maximum number of items to return in a result set, use the `$top` query parameter.
 The `$top` query parameter identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query parameter.
-For example, to return the first five messages in the user's mailbox, the syntax is as follows:
+For example, the following request returns the first five messages in the user's mailbox:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=5&method=GET&version=v1.0)
 
 ## skip
 
-(To set the number of items to skip before retrieving items in a collection, use the `$skip` query parameter.
-For example, to return events sorted by date created, and starting with the 21st event, the syntax is as follows.
+To set the number of items to skip at the start of a collection, use the `$skip` query parameter.
+For example, the following request returns events for the user sorted by date created, starting with the 21st event in the list:
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
 
 ## skipToken
 
@@ -218,10 +254,12 @@ Use `$count` as a query parameter to include a count of the total number of item
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
+This request will return both the `contacts` collection, and the number of items in the `contacts` collection in the `@odata.count` property.
 
-This would return both the `contacts` collection, and the number of items in the `contacts` collection in the `@odata.count` property.
+[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
->**Note:** This is not supported for [`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject) collections.
+
+>**Note:** `$count` is not supported for [`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject) collections.
 
 ## search
 
