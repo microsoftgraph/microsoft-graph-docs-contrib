@@ -24,7 +24,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.
 ## Example
 ##### Request 1
-Here is an example of the request.
+Here is an example to get all role assignments:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"

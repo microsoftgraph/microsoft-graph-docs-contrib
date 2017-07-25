@@ -28,7 +28,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [privilegedOperationEvent](../resources/privilegedoperationevent.md) objects in the response body.
 ## Example
 ##### Request 1
-Here is an example of the request.
+Here is an example of the request to get all audit events:
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents
@@ -61,67 +61,13 @@ Content-length: 227
 ```
 
 ##### Request 2
-Here is an example of the request using $filter to get the audit events that have ``requestType`` as ``Elevate``.
-<!-- { "blockType": "request" } -->
-```http
-GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Elevate'
-```
-##### Response 2
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.privilegedOperationEvent",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 547
-
-{
-    "value": [
-        {
-            "id": "201605110001636551",
-            "userId": "0f693614-c255-4cf5-92fa-74e770c656d8",
-            "userName": "admin",
-            "userMail": "admin@contoso.onmicrosoft.com",
-            "roleId": "558dba2d-e536-4349-a983-dd73ec2be1f7",
-            "roleName": "Security Administrator",
-            "expirationDateTime": "2016-05-11T19:31:14.1157385Z",
-            "creationDateTime": "2016-05-11T18:31:14.5013728Z",
-            "requestorId": "0f693614-c255-4cf5-92fa-74e770c656d8",
-            "requestorName": "admin",
-            "tenantId": "ffffae8b-cc96-4325-9bd1-dc82594b0b40",
-            "requestType": "Elevate",
-            "additionalInformation": "elevate me"
-        },
-        {
-            "id": "201605190001743860",
-            "userId": "0f693614-c255-4cf5-92fa-74e770c656d8",
-            "userName": "admin",
-            "userMail": "admin@contoso.onmicrosoft.com",
-            "roleId": "558dba2d-e536-4349-a983-dd73ec2be1f7",
-            "roleName": "Security Administrator",
-            "expirationDateTime": "2016-05-19T17:52:58.6019279Z",
-            "creationDateTime": "2016-05-19T16:52:58.9475243Z",
-            "requestorId": "ffff3614-c255-4cf5-92fa-74e770c656d8",
-            "requestorName": "admin",
-            "tenantId": "ffffae8b-cc96-4325-9bd1-dc82594b0b40",
-            "requestType": "Elevate",
-            "additionalInformation": "elevate me"
-        }
-	]
-}
-```
-##### Request 3
 Here is an example to get the audit events for the role assignment operations. In this case, ``requestType`` value is ``Assign``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
-##### Response 3
+##### Response 2
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -173,14 +119,14 @@ Content-length: 547
 	]
 }
 ```
-##### Request 4
+##### Request 3
 Here is an example to get the audit events for the operations of self role activation and makePermanent. In this case, ``requestType`` value is ``Activate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
-##### Response 4
+##### Response 3
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -232,14 +178,14 @@ Content-length: 547
 	]
 }
 ```
-##### Request 5
+##### Request 4
 Here is an example to get the audit events for role assignment deactivation. In this case, ``requestType`` value is ``Deactivate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
-##### Response 5
+##### Response 4
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -274,14 +220,14 @@ Content-length: 547
 	]
 }
 ```
-##### Request 6
+##### Request 5
 Here is an example to get the audit events created in a time range.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
-##### Response 6
+##### Response 5
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
