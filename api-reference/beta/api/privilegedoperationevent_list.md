@@ -274,6 +274,67 @@ Content-length: 547
 	]
 }
 ```
+##### Request 6
+Here is an example to get the audit events created in a time range.
+
+<!-- { "blockType": "request" } -->
+```http
+GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
+```
+##### Response 6
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedOperationEvent",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 547
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedOperationEvents",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "201707250003471056",
+            "userId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "userName": "admin",
+            "userMail": "admin@contoso.onmicrosoft.com",
+            "roleId": "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+            "roleName": "Guest Inviter",
+            "expirationDateTime": "2017-07-25T17:38:49.5640383Z",
+            "creationDateTime": "2017-07-25T16:38:50.3681771Z",
+            "requestorId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "requestorName": "admin",
+            "tenantId": "ef73ae8b-cc96-4325-9bd1-dc82594b0b40",
+            "requestType": "Activate",
+            "additionalInformation": "activate test",
+            "referenceKey": "",
+            "referenceSystem": ""
+        },
+        {
+            "id": "201707250003469896",
+            "userId": "0f693614-c255-4cf5-92fa-74e770c656d8",
+            "userName": "admin",
+            "userMail": "admin@contoso.onmicrosoft.com",
+            "roleId": "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+            "roleName": "Guest Inviter",
+            "expirationDateTime": "0001-01-01T00:00:00Z",
+            "creationDateTime": "2017-07-25T00:37:08.6172407Z",
+            "requestorId": "6b61baec-bb80-4a8a-b8bd-fa5ba1f12386",
+            "requestorName": "Azure AD PIM",
+            "tenantId": "ef73ae8b-cc96-4325-9bd1-dc82594b0b40",
+            "requestType": "Deactivate",
+            "additionalInformation": "Expired",
+            "referenceKey": "",
+            "referenceSystem": ""
+        }
+	]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
