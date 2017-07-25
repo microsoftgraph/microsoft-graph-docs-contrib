@@ -6,12 +6,12 @@ Get the teams in Microsoft Teams that the user is a direct member of.
 One of the following **scopes** is required to execute this API: 
 *User.Read.All; User.ReadWrite.All*
 
-> Currrently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
+> Currrently, this operation only works for the 'me' user.  See [known issues](../../../concepts/known_issues.md) for more details.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id | userPrincipalName}/joinedTeams
+GET /me/joinedTeams
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
