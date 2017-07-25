@@ -120,7 +120,6 @@ To explore the finished Connect samples, see [Microsoft Graph](https://github.co
 </table>
 
 ## See also
-- Try out sample REST calls in our [API Explorer](https://graph.microsoft.io/graph-explorer)
-- [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Get access on behalf of a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Get access without a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- Try out sample REST calls in our [API Explorer](https://graph.microsoft.io/graph-explorer).
+- [Azure AD endpoint documentation](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Azure AD v2.0 endpoint documentation](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

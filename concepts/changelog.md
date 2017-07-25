@@ -900,8 +900,7 @@ Added support for dynamic group membership through the public preview API, inclu
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
 |Addition|v1.0|Added _inferenceClassification_ and _extensions_ to _messages_.|
-|Addition|Beta|Added _wellknownname_ to _contactFolder_.|
-|Change | Beta | Changes to _findMeetingTimes_ API. For more information, see the [Microsoft Graph findMeetingTimes API update](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update) blog post. This change will take effect May 19th, 2016.|
+|Addition|Beta|Added _wellknownname_ to _contactFolder_.|Changes to _findMeetingTimes_ API. For more information, see the [Microsoft Graph findMeetingTimes API update](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update) blog post. This change will take effect May 19th, 2016.|
 
 ### Post
 

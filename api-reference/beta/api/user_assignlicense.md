@@ -3,7 +3,7 @@ Add or remove subscriptions for the user. You can also enable and disable specif
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
-*Directory.ReadWrite.All; Directory.AccessAsUser.All*
+*User.ReadWrite.All; Directory.ReadWrite.All*
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

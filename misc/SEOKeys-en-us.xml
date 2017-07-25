@@ -118,7 +118,7 @@
       <Item text="Get photo" url="/en-us/api-reference/v1.0/api/profilephoto_get" />
       <Item text="Update photo" url="/en-us/api-reference/v1.0/api/profilephoto_update" />
     </Item>
-    <Item text="Tasks" url="/en-us/api-reference/v1.0/resources/plannerplan" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Planner tasks" url="/en-us/api-reference/v1.0/resources/plannertask" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
         <Item text="List tasks" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
     </Item>  
   </Item>
@@ -348,7 +348,7 @@
       <Item text="Search items" url="/en-us/api-reference/v1.0/api/item_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
       <Item text="Track changes" url="/en-us/api-reference/v1.0/api/item_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
     </Item>
-    <Item text="Permissions" url="/en-us/api-reference/v1.0/api/item_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
+    <Item text="Permissions" url="/en-us/api-reference/v1.0/resources/permission" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
       <Item text="Create sharing link" url="/en-us/api-reference/v1.0/api/item_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
       <Item text="Use sharing links" url="/en-us/api-reference/v1.0/api/shares_get" SEOKeyword="use sharing link, microsoft graph api, onedrive drive api, shares, sharing" SEODescription="" />
       <Item text="List permissions" url="/en-us/api-reference/v1.0/api/item_list_permissions" SEOKeyword="List, enumerate permissions on an item, invite, share, Microsoft Graph API" SEODescription="" />
@@ -695,10 +695,7 @@
         <Item text="List mail folders" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEOKeyword="List mailFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail folder" url="/en-us/api-reference/beta/api/user_post_mailfolders" SEOKeyword="Create MailFolder, Microsoft Graph API, Users API" SEODescription="Use this API to create a new MailFolder." />
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="List rules" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
-		<Item text="Create rules" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
-		<Item text="Get language choices" url="/en-us/api-reference/beta/api/outlookuser_supportedlanguages" />
-		<Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
+        <Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="user: Get mailbox settings, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="user: Update mailbox settings, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
       </Item>
@@ -723,7 +720,7 @@
         <Item text="Get photo" url="/en-us/api-reference/beta/api/profilephoto_get" />
         <Item text="Update photo" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
-      <Item text="Tasks" url="/en-us/api-reference/beta/resources/plannerplan" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
+      <Item text="Planner tasks" url="/en-us/api-reference/beta/resources/plannertask" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
         <Item text="List tasks" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
       </Item>
     </Item>
@@ -3478,7 +3475,7 @@
         <Item text="Search items" url="/en-us/api-reference/beta/api/item_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Track changes" url="/en-us/api-reference/beta/api/item_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
       </Item>
-      <Item text="Permissions" url="/en-us/api-reference/beta/api/item_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
+      <Item text="Permissions" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
         <Item text="Create sharing link" url="/en-us/api-reference/beta/api/item_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Use sharing links" url="/en-us/api-reference/beta/api/shares_get" SEOKeyword="use sharing link, microsoft graph api, onedrive drive api, shares, sharing" SEODescription="" />
         <Item text="List permissions" url="/en-us/api-reference/beta/api/item_list_permissions" SEOKeyword="List, enumerate permissions on an item, invite, share, Microsoft Graph API" SEODescription="" />
@@ -3686,14 +3683,7 @@
           <Item text="Get multi-value property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-	  <Item text="Rules" url="/en-us/api-reference/beta/resources/messagerule" >
-		<Item text="List" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
-		<Item text="Create" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
-		<Item text="Get" url="/en-us/api-reference/beta/api/messagerule_get" />
-		<Item text="Update" url="/en-us/api-reference/beta/api/messagerule_update" />
-		<Item text="Delete" url="/en-us/api-reference/beta/api/messagerule_delete" />
-	  </Item>
-	</Item>
+    </Item>
 	<Item text="Outlook tasks" url="/en-us/api-reference/beta/resources/outlooktask" >
       <Item text="Outlook task" url="/en-us/api-reference/beta/resources/outlooktask" >
         <Item text="List" url="/en-us/api-reference/beta/api/outlookuser_list_tasks" />
@@ -3733,7 +3723,7 @@
           <Item text="Get multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" />
         </Item>
       </Item>
-	</Item>
+    </Item>
     <Item text="People and social" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
         <Item text="Trending" url="/en-us/api-reference/beta/resources/insights_trending" >

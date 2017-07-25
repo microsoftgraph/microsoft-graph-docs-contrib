@@ -106,9 +106,3 @@ The Connect sample sends an email using the ```me/microsoft.graph.sendMail``` en
 > **Note** The request must also send a **Content-Type** header with a value accepted by the Graph API, for example, `application/json`.
 
 The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with Microsoft Graph.
-
-## See also
-- Try out sample REST calls in our [API Explorer](https://graph.microsoft.io/graph-explorer)
-- [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Get access on behalf of a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Get access without a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
