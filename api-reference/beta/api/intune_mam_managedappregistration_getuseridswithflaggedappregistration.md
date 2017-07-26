@@ -13,8 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
-GET /users/{usersId}/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
 GET /deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
 ```
 
@@ -34,7 +32,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
+GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration
 ```
 
 ### Response

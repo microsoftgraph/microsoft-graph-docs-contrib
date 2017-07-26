@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /appProvisioningConfigurationGroupAssignments/{appProvisioningConfigurationGroupAssignmentsId}
 GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/groupAssignments/{mobileAppProvisioningConfigGroupAssignmentId}
 ```
 
@@ -35,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [mobileAppProvis
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/appProvisioningConfigurationGroupAssignments/{appProvisioningConfigurationGroupAssignmentsId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/groupAssignments/{mobileAppProvisioningConfigGroupAssignmentId}
 ```
 
 ### Response

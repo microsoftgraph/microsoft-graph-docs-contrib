@@ -25,6 +25,7 @@ Contains properties for the installation state of a mobile app for a device.
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
+|userPrincipalName|String|User Principal Name|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -50,7 +51,8 @@ Here is a JSON representation of the resource.
   "errorCode": 1024,
   "osVersion": "String",
   "osDescription": "String",
-  "userName": "String"
+  "userName": "String",
+  "userPrincipalName": "String"
 }
 ```
 

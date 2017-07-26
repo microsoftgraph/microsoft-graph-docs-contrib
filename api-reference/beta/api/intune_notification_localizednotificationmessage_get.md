@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /localizedNotificationMessages/{localizedNotificationMessagesId}
 GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
@@ -35,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [localizedNotifi
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/localizedNotificationMessages/{localizedNotificationMessagesId}
+GET https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
 ### Response

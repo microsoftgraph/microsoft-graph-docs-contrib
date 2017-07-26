@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 407
 
 {
   "value": {
@@ -52,7 +52,8 @@ Content-Length: 374
     "status": "connected",
     "primarySmtpAddress": "Primary Smtp Address value",
     "serverName": "Server Name value",
-    "exchangeConnectorType": "hosted"
+    "exchangeConnectorType": "hosted",
+    "version": "Version value"
   }
 }
 ```

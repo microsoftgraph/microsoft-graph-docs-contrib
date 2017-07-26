@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -15,15 +15,16 @@ One of the following **scopes** is required to execute this API:
 ```http
 GET /managedDevices/{managedDevicesId}
 GET /users/{usersId}/managedDevices/{managedDeviceId}
-GET /managedDevices/{managedDevicesId}/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -44,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2098
+Content-Length: 3251
 
 {
   "value": {
@@ -67,7 +68,17 @@ Content-Length: 2098
       "wifiMac": "Wifi Mac value",
       "operatingSystemLanguage": "Operating System Language value",
       "isSupervised": true,
-      "isEncrypted": true
+      "isEncrypted": true,
+      "isSharedDevice": true,
+      "sharedDeviceCachedUsers": [
+        {
+          "@odata.type": "microsoft.graph.sharedAppleDeviceUser",
+          "userPrincipalName": "User Principal Name value",
+          "dataToSync": true,
+          "dataQuota": 9,
+          "dataUsed": 8
+        }
+      ]
     },
     "ownerType": "company",
     "deviceActionResults": [
@@ -87,7 +98,6 @@ Content-Length: 2098
     "deviceType": "windowsRT",
     "complianceState": "compliant",
     "jailBroken": "Jail Broken value",
-    "managementAgents": 0,
     "managementAgent": "mdm",
     "osVersion": "Os Version value",
     "easActivated": true,
@@ -98,7 +108,24 @@ Content-Length: 2098
     "lostModeState": "enabled",
     "activationLockBypassCode": "Activation Lock Bypass Code value",
     "emailAddress": "Email Address value",
-    "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value"
+    "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+    "deviceRegistrationState": "smsidConflict",
+    "deviceCategoryDisplayName": "Device Category Display Name value",
+    "isSupervised": true,
+    "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
+    "exchangeAccessState": "unknown",
+    "exchangeAccessStateReason": "unknown",
+    "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+    "isEncrypted": true,
+    "userPrincipalName": "User Principal Name value",
+    "model": "Model value",
+    "manufacturer": "Manufacturer value",
+    "imei": "Imei value",
+    "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
+    "serialNumber": "Serial Number value",
+    "phoneNumber": "Phone Number value",
+    "androidSecurityPatchLevel": "Android Security Patch Level value",
+    "userDisplayName": "User Display Name value"
   }
 }
 ```

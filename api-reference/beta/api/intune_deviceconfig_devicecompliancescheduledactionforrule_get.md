@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /deviceComplianceScheduledActionForRule/{deviceComplianceScheduledActionForRuleId}
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 ```
 
@@ -35,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [deviceComplianc
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceComplianceScheduledActionForRule/{deviceComplianceScheduledActionForRuleId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 ```
 
 ### Response

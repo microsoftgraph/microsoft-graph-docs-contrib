@@ -44,6 +44,7 @@ Inherits from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswif
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected. Inherited from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md)|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected. Inherited from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md)|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file. Inherited from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md)|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network. Inherited from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md)|
 |eapType|String|Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router). Possible values are: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
 |eapFastConfiguration|String|EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type. Possible values are: `noProtectedAccessCredential`, `useProtectedAccessCredential`, `useProtectedAccessCredentialAndProvision`, `useProtectedAccessCredentialAndProvisionAnonymously`.|
 |trustedServerCertificateNames|String collection|Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users devices when they connect to this Wi-Fi network.|
@@ -92,6 +93,7 @@ Here is a JSON representation of the resource.
   "proxyManualAddress": "String",
   "proxyManualPort": 1024,
   "proxyAutomaticConfigurationUrl": "String",
+  "preSharedKey": "String",
   "eapType": "String",
   "eapFastConfiguration": "String",
   "trustedServerCertificateNames": [

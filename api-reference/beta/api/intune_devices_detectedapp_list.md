@@ -4,7 +4,7 @@
 
 List properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) objects.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -13,14 +13,13 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /detectedapps/
-GET /managedDevices/{managedDevicesId}/detectedApps/
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -33,7 +32,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/detectedapps/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/
 ```
 
 ### Response

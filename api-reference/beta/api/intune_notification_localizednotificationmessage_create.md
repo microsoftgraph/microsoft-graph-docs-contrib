@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /localizedNotificationMessages/
 POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/
 ```
 
@@ -45,7 +44,7 @@ If successful, this method returns a `201 Created` response code and a [localize
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/localizedNotificationMessages/
+POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/
 Content-type: application/json
 Content-length: 264
 

@@ -13,8 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /managedAppRegistrations/
-POST /users/{usersId}/managedAppRegistrations/
 POST /deviceAppManagement/managedAppRegistrations/
 ```
 
@@ -53,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a [androidM
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppRegistrations/
+POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/
 Content-type: application/json
 Content-length: 645
 

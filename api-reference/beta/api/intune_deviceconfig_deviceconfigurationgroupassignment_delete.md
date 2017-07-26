@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-DELETE /deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
@@ -40,7 +39,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}
 ```
 
 ### Response

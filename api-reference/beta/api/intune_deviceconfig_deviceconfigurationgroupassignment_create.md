@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceConfigurationGroupAssignment/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//groupAssignments/
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//groupAssignments/
@@ -49,7 +48,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/
 Content-type: application/json
 Content-length: 146
 

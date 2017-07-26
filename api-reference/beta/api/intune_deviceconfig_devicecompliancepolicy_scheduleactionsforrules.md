@@ -14,7 +14,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}scheduleActionsForRules
-POST /deviceCompliancePolicyAssignments/{deviceCompliancePolicyAssignmentsId}/deviceCompliancePolicy/scheduleActionsForRules
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/scheduleActionsForRules
 ```
 

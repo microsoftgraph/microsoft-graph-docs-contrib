@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /mobileAppGroupAssignments/
 POST /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/
 ```
 
@@ -43,7 +42,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/mobileAppGroupAssignments/
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/
 Content-type: application/json
 Content-length: 203
 

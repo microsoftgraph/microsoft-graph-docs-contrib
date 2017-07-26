@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /managedAppPolicies/{managedAppPoliciesId}updateTargetedSecurityGroups
 POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}updateTargetedSecurityGroups
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}updateTargetedSecurityGroups
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}updateTargetedSecurityGroups
@@ -42,7 +41,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedAppPolicies/{managedAppPoliciesId}updateTargetedSecurityGroups
+POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}updateTargetedSecurityGroups
 
 Content-type: application/json
 Content-length: 164

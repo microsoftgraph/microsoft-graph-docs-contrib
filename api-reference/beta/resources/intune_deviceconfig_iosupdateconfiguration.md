@@ -37,6 +37,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
 |activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
 |scheduledInstallDays|String collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
+|utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -73,7 +74,8 @@ Here is a JSON representation of the resource.
   "activeHoursEnd": "String (time of day)",
   "scheduledInstallDays": [
     "String"
-  ]
+  ],
+  "utcTimeOffsetInMinutes": 1024
 }
 ```
 

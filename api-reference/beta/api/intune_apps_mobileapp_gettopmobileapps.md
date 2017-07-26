@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /mobileApps/getTopMobileApps
 GET /deviceAppManagement/mobileApps/getTopMobileApps
 ```
 
@@ -24,7 +23,15 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that can be used with this function.
+
+|Property|Type|Description|
+|---|---|---|
+|status|String|Not yet documented|
+|count|Int64|Not yet documented|
+
+
 
 ## Response
 If successful, this function returns a `200 OK` response code and a [mobileApp](../resources/intune_apps_mobileapp.md) collection in the response body.
@@ -33,7 +40,7 @@ If successful, this function returns a `200 OK` response code and a [mobileApp](
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/mobileApps/getTopMobileApps(status='parameterValue',count=5)
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/getTopMobileApps(status='parameterValue',count=5)
 ```
 
 ### Response
