@@ -2,7 +2,10 @@
 
 Retrieve the properties and relationships of [privilegedRoleSummary](../resources/privilegedrolesummary.md) object.
 ## Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+
+The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
+ 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

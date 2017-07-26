@@ -3,6 +3,8 @@ Get the requestor's approval requests.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+
+The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

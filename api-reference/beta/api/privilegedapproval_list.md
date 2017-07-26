@@ -5,6 +5,8 @@ Retrieve a list of privilegedapproval objects.
 To filter the results from the query, use the standard OData ``$filter`` expressions in the URIs.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+
+The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -4,6 +4,8 @@ Activate the role that is assigned to the requestor.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
+The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
+
 The requestor can only call ```selfActivate``` for the role that is assigned to him.
  
 ## HTTP request

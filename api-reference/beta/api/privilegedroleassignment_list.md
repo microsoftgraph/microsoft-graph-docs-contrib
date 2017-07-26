@@ -4,6 +4,8 @@ Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignm
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
+The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
+
 The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_. 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
