@@ -13,8 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /managedAppRegistrations/{managedAppRegistrationsId}
-PATCH /users/{usersId}/managedAppRegistrations/{managedAppRegistrationId}
 PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
@@ -53,7 +51,7 @@ If successful, this method returns a `200 OK` response code and an updated [iosM
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppRegistrations/{managedAppRegistrationsId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 Content-type: application/json
 Content-length: 571
 

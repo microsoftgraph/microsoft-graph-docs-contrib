@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /mobileApps/{mobileAppsId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/
@@ -38,7 +37,7 @@ If successful, this method returns a `200 OK` response code and [androidForWorkA
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ### Response

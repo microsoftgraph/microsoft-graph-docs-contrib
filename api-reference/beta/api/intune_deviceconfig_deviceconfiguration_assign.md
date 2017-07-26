@@ -14,7 +14,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}assign
-POST /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/assign
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/assign
 ```
 

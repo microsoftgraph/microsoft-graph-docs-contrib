@@ -22,6 +22,7 @@ Entity which represents a connection to an Exchange environment.
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|
 |serverName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|String|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|version|String|The version of the ExchangeConnectorAgent|
 
 ## Relationships
 None
@@ -41,7 +42,8 @@ Here is a JSON representation of the resource.
   "status": "String",
   "primarySmtpAddress": "String",
   "serverName": "String",
-  "exchangeConnectorType": "String"
+  "exchangeConnectorType": "String",
+  "version": "String"
 }
 ```
 

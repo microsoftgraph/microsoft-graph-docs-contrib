@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 751
+Content-Length: 787
 
 {
   "value": [
@@ -60,7 +60,8 @@ Content-Length: 751
       "activeHoursEnd": "11:59:00.8990000",
       "scheduledInstallDays": [
         "monday"
-      ]
+      ],
+      "utcTimeOffsetInMinutes": 6
     }
   ]
 }

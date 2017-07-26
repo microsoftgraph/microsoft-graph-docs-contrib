@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1292
+Content-Length: 2029
 
 {
   "value": [
@@ -58,12 +58,25 @@ Content-Length: 1292
       "azureOperationalInsightsBlockTelemetry": true,
       "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
       "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
+      "connectAppBlockAutoLaunch": true,
+      "deviceAccountBlockExchangeServices": true,
+      "deviceAccountEmailAddress": "Device Account Email Address value",
+      "deviceAccountExchangeServerAddress": "Device Account Exchange Server Address value",
+      "deviceAccountRequirePasswordRotation": true,
+      "deviceAccountSessionInitiationProtocolAddress": "Device Account Session Initiation Protocol Address value",
       "maintenanceWindowBlocked": true,
       "maintenanceWindowDurationInHours": 0,
       "maintenanceWindowStartTime": "11:59:09.3130000",
       "miracastChannel": "one",
       "miracastBlocked": true,
       "miracastRequirePin": true,
+      "settingsBlockMyMeetingsAndFiles": true,
+      "settingsBlockSessionResume": true,
+      "settingsBlockSigninSuggestions": true,
+      "settingsDefaultVolume": 5,
+      "settingsScreenTimeoutInMinutes": 14,
+      "settingsSessionTimeoutInMinutes": 15,
+      "settingsSleepTimeoutInMinutes": 13,
       "welcomeScreenBlockAutomaticWakeUp": true,
       "welcomeScreenBackgroundImageUrl": "https://example.com/welcomeScreenBackgroundImageUrl/",
       "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"

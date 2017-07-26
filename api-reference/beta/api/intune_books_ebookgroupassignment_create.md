@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /eBookGroupAssignments/
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/
 ```
 
@@ -42,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a [eBookGro
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/eBookGroupAssignments/
+POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/
 Content-type: application/json
 Content-length: 140
 

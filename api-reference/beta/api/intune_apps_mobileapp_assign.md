@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /mobileApps/{mobileAppsId}assign
 POST /deviceAppManagement/mobileApps/{mobileAppId}assign
 POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/assign
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/assign
@@ -43,7 +42,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/mobileApps/{mobileAppsId}assign
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}assign
 
 Content-type: application/json
 Content-length: 325

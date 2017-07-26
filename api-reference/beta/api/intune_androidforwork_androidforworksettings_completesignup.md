@@ -28,7 +28,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|enterpriseToken|String|Not yet documented|
+|enterpriseToken|String|The Enterprise token appended to the callback URL after successfully completing sign-up.|
 
 
 

@@ -46,6 +46,7 @@ The following table shows the properties that are required when you create a mac
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 
 
@@ -58,7 +59,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
 Content-type: application/json
-Content-length: 773
+Content-length: 816
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -77,7 +78,8 @@ Content-length: 773
   "proxySettings": "manual",
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
-  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 
@@ -86,7 +88,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 881
+Content-Length: 924
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -107,7 +109,8 @@ Content-Length: 881
   "proxySettings": "manual",
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
-  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 

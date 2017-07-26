@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -13,12 +13,11 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /managedDevices/{managedDevicesId}/windowsProtectionState/
 GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
@@ -35,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [windowsProtecti
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/windowsProtectionState/
+GET https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 ```
 
 ### Response

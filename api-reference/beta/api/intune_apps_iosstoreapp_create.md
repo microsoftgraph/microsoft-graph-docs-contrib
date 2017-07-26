@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /mobileApps/
 POST /deviceAppManagement/mobileApps/
 ```
 
@@ -57,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [iosStore
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/mobileApps/
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
 Content-type: application/json
 Content-length: 1016
 
