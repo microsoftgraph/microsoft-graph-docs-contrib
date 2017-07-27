@@ -15,7 +15,7 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 |[`$search`](#search)|A property and value pair separated by a colon.|
 -->
 
-These parameters are compatible with the [OData V4 query language][odata-query].
+These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs.
 
 > **Note:** On the `beta` endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. For more details and examples, see [Supporting query parameters without $ prefixes in Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
@@ -206,19 +206,30 @@ To sort the results in ascending or descending order, append either `asc` or `de
 
 ## top
 
-To specify the maximum number of items to return in a result set, use the `$top` query parameter.
-The `$top` query parameter identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query parameter.
+To specify the page size of the result set, use the `$top` query parameter. 
+
+If there are more items remaining in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. Typically this URL contains a `$skipToken` parameter that references the next page of results; however, some Microsoft Graph APIs return a URL that contains a $skip parameter to index into the result set for the next page of results. For more information, see [Get data in pages](./paging.md). 
+
+<!--`The `$top` query parameter limits the results returned to the first N items in the result set, where N is a positive integer. 
+The `$top` query parameter identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query parameter. -->
 For example, the following request returns the first five messages in the user's mailbox:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
+
+Assuming that the signed-in user has more than five messages in their inbox, the response body will also contain the following `@odata.nextLink` parameter:
+
+```http
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=5&$skip=5"
+```
+
 [Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=5&method=GET&version=v1.0)
 
 ## skip
 
 To set the number of items to skip at the start of a collection, use the `$skip` query parameter.
-For example, the following request returns events for the user sorted by date created, starting with the 21st event in the list:
+For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
@@ -228,7 +239,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ## skipToken
 
 To request second and subsequent pages of Graph data use the `$skipToken` query parameter.
-]The `$skipToken` query parameter is provided in Urls returned from the Graph when the Graph has returned a partial subset of results, usually due to server-side paging.
+]The `$skipToken` query parameter is provided in URLs returned from the Graph when the Graph has returned a partial subset of results, usually due to server-side paging.
 It identifies the point in a collection where the server finished sending results, and is passed back to the Graph to indicate where it should resume sending results from.
 For example, the value of a `$skipToken` query parameter could identify the tenth item in a collection or the 20th item in a collection containing 50 items, or any other position within the collection.
 
