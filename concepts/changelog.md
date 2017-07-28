@@ -35,21 +35,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|Beta|Added the **unknownCount** property to the [deviceOperatingSystemSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary) complex type|
 
 
-### Outlook language choices
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added the new [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
-
-
-### Outlook Inbox message rules
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) resource. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) instances. |
-| Addition | Beta | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) complex types.  |
-| Addition | Beta | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
-
 
 ## June 2017
 
