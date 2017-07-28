@@ -6,11 +6,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2017
 
-### OneNote on Site
+### OneNote
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-| Addition | v1.0 and Beta | Added the **onenote** navigation property to **site**.  |
+| Addition | v1.0 and Beta | Added the [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) navigation property to **site**.  |
 
 ## July 2017
 
