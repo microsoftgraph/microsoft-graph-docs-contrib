@@ -1,5 +1,7 @@
 # List endpoints
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of [endpoint](../resources/endpoint.md) objects.
 
 ### Prerequisites

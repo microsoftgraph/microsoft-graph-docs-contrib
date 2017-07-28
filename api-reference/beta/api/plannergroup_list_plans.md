@@ -1,5 +1,7 @@
 # List plans
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of **plannerplan** objects owned by a [group](../resources/group.md) object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
