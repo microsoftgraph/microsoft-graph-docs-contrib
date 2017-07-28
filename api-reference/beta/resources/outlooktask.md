@@ -1,5 +1,7 @@
 # outlookTask resource type
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 An Outlook item that can track a work item. 
 
 You can use a task to track the start, due and actual completion dates and times, its progress or status, whether it's recurring, and requires reminding.

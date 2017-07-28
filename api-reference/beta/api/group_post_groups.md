@@ -1,5 +1,7 @@
 # Create group
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of three types of groups:
 
 * Office 365 group (unified group)
