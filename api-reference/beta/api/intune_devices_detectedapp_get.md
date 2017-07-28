@@ -4,7 +4,7 @@
 
 Read properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -13,16 +13,15 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-GET /detectedapps/{detectedappsId}
-GET /managedDevices/{managedDevicesId}/detectedApps/{detectedAppId}
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -35,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [detectedApp](..
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/detectedapps/{detectedappsId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}
 ```
 
 ### Response

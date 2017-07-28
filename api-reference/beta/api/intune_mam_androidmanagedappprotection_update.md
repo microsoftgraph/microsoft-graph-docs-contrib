@@ -62,6 +62,7 @@ The following table shows the properties that are required when you create a [an
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property. Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |screenCaptureBlocked|Boolean|Indicates whether a managed user can take screen captures of managed apps|
+|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled|
 |encryptAppData|Boolean|Indicates whether application data for managed apps should be encrypted|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
@@ -76,7 +77,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1519
+Content-length: 1579
 
 {
   "displayName": "Display Name value",
@@ -115,6 +116,7 @@ Content-length: 1519
     "Targeted Security Group Ids value"
   ],
   "screenCaptureBlocked": true,
+  "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "encryptAppData": true,
   "deployedAppCount": 0
 }
@@ -125,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1693
+Content-Length: 1753
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -167,6 +169,7 @@ Content-Length: 1693
     "Targeted Security Group Ids value"
   ],
   "screenCaptureBlocked": true,
+  "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "encryptAppData": true,
   "deployedAppCount": 0
 }

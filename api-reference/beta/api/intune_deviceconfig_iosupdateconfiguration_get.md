@@ -14,7 +14,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 
@@ -44,7 +43,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 705
+Content-Length: 739
 
 {
   "value": {
@@ -63,7 +62,8 @@ Content-Length: 705
     "activeHoursEnd": "11:59:00.8990000",
     "scheduledInstallDays": [
       "monday"
-    ]
+    ],
+    "utcTimeOffsetInMinutes": 6
   }
 }
 ```

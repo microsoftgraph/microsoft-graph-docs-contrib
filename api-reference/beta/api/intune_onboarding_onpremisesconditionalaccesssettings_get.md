@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 323
+Content-Length: 357
 
 {
   "value": {
@@ -54,7 +54,8 @@ Content-Length: 323
     ],
     "excludedGroups": [
       "<Unknown Primitive Type Edm.Guid>"
-    ]
+    ],
+    "overrideDefaultRule": true
   }
 }
 ```

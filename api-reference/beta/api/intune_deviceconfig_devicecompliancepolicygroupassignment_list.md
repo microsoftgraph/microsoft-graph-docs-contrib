@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /deviceCompliancePolicyGroupAssignment/
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/
 ```
 
@@ -33,7 +32,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceCompliancePolicyGroupAssignment/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/
 ```
 
 ### Response
@@ -41,14 +40,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 218
+Content-Length: 247
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceCompliancePolicyGroupAssignment",
       "id": "fe44007c-007c-fe44-7c00-44fe7c0044fe",
-      "targetGroupId": "Target Group Id value"
+      "targetGroupId": "Target Group Id value",
+      "excludeGroup": true
     }
   ]
 }

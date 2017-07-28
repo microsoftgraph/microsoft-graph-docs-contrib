@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceCompliancePolicyGroupAssignment/
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/
 ```
 
@@ -31,6 +30,7 @@ The following table shows the properties that are required when you create a dev
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
+|excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 
 
 
@@ -41,13 +41,14 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceCompliancePolicyGroupAssignment/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/
 Content-type: application/json
-Content-length: 124
+Content-length: 149
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyGroupAssignment",
-  "targetGroupId": "Target Group Id value"
+  "targetGroupId": "Target Group Id value",
+  "excludeGroup": true
 }
 ```
 
@@ -56,12 +57,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 173
+Content-Length: 198
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyGroupAssignment",
   "id": "fe44007c-007c-fe44-7c00-44fe7c0044fe",
-  "targetGroupId": "Target Group Id value"
+  "targetGroupId": "Target Group Id value",
+  "excludeGroup": true
 }
 ```
 

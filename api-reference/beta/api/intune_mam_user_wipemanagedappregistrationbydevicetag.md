@@ -28,7 +28,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|deviceTag|String|Not yet documented|
+|deviceTag|String|device tag|
 
 
 

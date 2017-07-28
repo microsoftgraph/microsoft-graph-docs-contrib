@@ -14,7 +14,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 

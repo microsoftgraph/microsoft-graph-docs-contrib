@@ -14,7 +14,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
 ```
 

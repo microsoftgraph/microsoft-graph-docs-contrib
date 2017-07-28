@@ -15,6 +15,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |[Delete defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_delete.md)|None|Deletes a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md).|
 |[Update defaultManagedAppProtection](../api/intune_mam_defaultmanagedappprotection_update.md)|[defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md)|Update the properties of a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.|
 |[List mobileAppIdentifierDeployments](../api/intune_mam_mobileappidentifierdeployment_list.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List properties and relationships of the [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) objects.|
+|[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_get.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Read properties and relationships of the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -53,6 +54,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. (iOS Only) Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked.|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
+|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
@@ -61,6 +63,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |Relationship|Type|Description|
 |---|---|---|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
+|deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -109,6 +112,7 @@ Here is a JSON representation of the resource.
   "appDataEncryptionType": "String",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
+  "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "minimumRequiredSdkVersion": "String",
   "customSettings": [
     {

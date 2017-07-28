@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /managedAppStatuses/{managedAppStatusesId}
 PATCH /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ```
 
@@ -43,7 +42,7 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedAppStatuses/{managedAppStatusesId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 Content-type: application/json
 Content-length: 139
 

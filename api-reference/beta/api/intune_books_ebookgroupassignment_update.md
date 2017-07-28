@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /eBookGroupAssignments/{eBookGroupAssignmentsId}
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
 ```
 
@@ -42,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [eBoo
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/eBookGroupAssignments/{eBookGroupAssignmentsId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
 Content-type: application/json
 Content-length: 81
 

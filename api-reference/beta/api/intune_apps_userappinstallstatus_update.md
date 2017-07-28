@@ -30,6 +30,7 @@ The following table shows the properties that are required when you create a [us
 |---|---|---|
 |id|String|Key of the entity.|
 |userName|String|User name.|
+|userPrincipalName|String|User Principal Name.|
 |installedDeviceCount|Int32|Installed Device Count.|
 |failedDeviceCount|Int32|Failed Device Count.|
 |notInstalledDeviceCount|Int32|Not installed device count.|
@@ -45,10 +46,11 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}
 Content-type: application/json
-Content-length: 127
+Content-length: 180
 
 {
   "userName": "User Name value",
+  "userPrincipalName": "User Principal Name value",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
   "notInstalledDeviceCount": 7
@@ -60,12 +62,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 235
+Content-Length: 288
 
 {
   "@odata.type": "#microsoft.graph.userAppInstallStatus",
   "id": "14959a2a-9a2a-1495-2a9a-95142a9a9514",
   "userName": "User Name value",
+  "userPrincipalName": "User Principal Name value",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
   "notInstalledDeviceCount": 7

@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//groupAssignments/{deviceConfigurationGroupAssignmentId}
@@ -42,7 +41,7 @@ If successful, this method returns a `200 OK` response code and [deviceConfigura
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceConfigurationGroupAssignment/{deviceConfigurationGroupAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}
 ```
 
 ### Response

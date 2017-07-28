@@ -23,7 +23,14 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}getScopesForUser
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that can be used with this function.
+
+|Property|Type|Description|
+|---|---|---|
+|userid|String|Not yet documented|
+
+
 
 ## Response
 If successful, this function returns a `200 OK` response code and a String collection in the response body.

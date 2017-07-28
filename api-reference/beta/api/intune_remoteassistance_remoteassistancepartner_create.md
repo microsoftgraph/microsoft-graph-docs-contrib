@@ -4,7 +4,7 @@
 
 Create a new [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementServiceConfig.ReadWrite.All*
 ## HTTP Request

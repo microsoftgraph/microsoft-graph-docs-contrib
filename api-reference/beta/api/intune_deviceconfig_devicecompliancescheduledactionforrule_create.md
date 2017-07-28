@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceComplianceScheduledActionForRule/
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/
 ```
 
@@ -41,7 +40,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceComplianceScheduledActionForRule/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/
 Content-type: application/json
 Content-length: 114
 

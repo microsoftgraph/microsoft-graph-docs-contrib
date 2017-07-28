@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /mobileAppGroupAssignments/{mobileAppGroupAssignmentsId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}
 ```
 
@@ -43,7 +42,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/mobileAppGroupAssignments/{mobileAppGroupAssignmentsId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}
 Content-type: application/json
 Content-length: 140
 

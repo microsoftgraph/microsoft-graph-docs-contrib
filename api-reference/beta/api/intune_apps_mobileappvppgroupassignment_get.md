@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /mobileAppGroupAssignments/{mobileAppGroupAssignmentsId}
 GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}
 ```
 
@@ -35,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [mobileAppVppGro
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/mobileAppGroupAssignments/{mobileAppGroupAssignmentsId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}
 ```
 
 ### Response
