@@ -40,7 +40,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2886
+Content-Length: 3762
 
 {
   "value": [
@@ -114,7 +114,34 @@ Content-Length: 2886
       "webBrowserBlockJavaScript": true,
       "webBrowserBlocked": true,
       "webBrowserCookieSettings": "blockAlways",
-      "wiFiBlocked": true
+      "wiFiBlocked": true,
+      "appsInstallAllowList": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ],
+      "appsLaunchBlockList": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ],
+      "appsHideList": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ]
     }
   ]
 }

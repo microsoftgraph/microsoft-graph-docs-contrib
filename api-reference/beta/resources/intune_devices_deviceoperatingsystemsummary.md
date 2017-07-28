@@ -11,6 +11,7 @@ Device operating system summary.
 |macOSCount|Int32|Number of Mac OS X device count.|
 |windowsMobileCount|Int32|Number of Windows mobile device count.|
 |windowsCount|Int32|Number of Windows device count.|
+|unknownCount|Int32|Number of unknown device count.|
 
 ## Relationships
 None
@@ -29,7 +30,8 @@ Here is a JSON representation of the resource.
   "iosCount": 1024,
   "macOSCount": 1024,
   "windowsMobileCount": 1024,
-  "windowsCount": 1024
+  "windowsCount": 1024,
+  "unknownCount": 1024
 }
 ```
 

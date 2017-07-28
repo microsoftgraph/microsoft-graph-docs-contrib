@@ -13,8 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /managedAppRegistrations/{managedAppRegistrationsId}
-GET /users/{usersId}/managedAppRegistrations/{managedAppRegistrationId}
 GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
@@ -36,7 +34,7 @@ If successful, this method returns a `200 OK` response code and [iosManagedAppRe
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedAppRegistrations/{managedAppRegistrationsId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
 ### Response

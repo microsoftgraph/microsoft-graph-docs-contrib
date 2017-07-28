@@ -42,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 561
+Content-Length: 645
 
 {
   "value": {
@@ -58,7 +58,8 @@ Content-Length: 561
     "userName": "User Name value",
     "userPrincipalName": "User Principal Name value",
     "deviceModel": "Device Model value",
-    "state": "notApplicable"
+    "state": "notApplicable",
+    "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
   }
 }
 ```

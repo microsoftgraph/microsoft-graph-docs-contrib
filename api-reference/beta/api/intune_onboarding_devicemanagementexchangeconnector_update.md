@@ -34,6 +34,7 @@ The following table shows the properties that are required when you create a [de
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|
 |serverName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|String|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|version|String|The version of the ExchangeConnectorAgent|
 
 
 
@@ -46,14 +47,15 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
-Content-length: 220
+Content-length: 251
 
 {
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "status": "connected",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
-  "exchangeConnectorType": "hosted"
+  "exchangeConnectorType": "hosted",
+  "version": "Version value"
 }
 ```
 
@@ -62,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 341
+Content-Length: 372
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -71,7 +73,8 @@ Content-Length: 341
   "status": "connected",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
-  "exchangeConnectorType": "hosted"
+  "exchangeConnectorType": "hosted",
+  "version": "Version value"
 }
 ```
 

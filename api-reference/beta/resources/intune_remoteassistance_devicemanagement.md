@@ -8,8 +8,8 @@ Singleton entity that acts as a container for all device management functionalit
 |---|---|---|
 |[Get deviceManagement](../api/intune_remoteassistance_devicemanagement_get.md)|[deviceManagement](../resources/intune_remoteassistance_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_remoteassistance_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_remoteassistance_devicemanagement_update.md)|[deviceManagement](../resources/intune_remoteassistance_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_remoteassistance_devicemanagement.md) object.|
-|[List remoteAssistancePartners](../api/intune_remoteassistance_devicemanagement_list_remoteassistancepartner.md)|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) collection|Get the remoteAssistancePartners from the remoteAssistancePartners navigation property.|
-|[Create remoteAssistancePartner](../api/intune_remoteassistance_devicemanagement_create_remoteassistancepartner.md)|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md)|Create a new [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) by posting to the remoteAssistancePartners collection.|
+|[List remoteAssistancePartners](../api/intune_remoteassistance_remoteassistancepartner_list.md)|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) collection|List properties and relationships of the [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) objects.|
+|[Create remoteAssistancePartner](../api/intune_remoteassistance_remoteassistancepartner_create.md)|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md)|Create a new [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) object.|
 
 ## Properties
 |Property|Type|Description|

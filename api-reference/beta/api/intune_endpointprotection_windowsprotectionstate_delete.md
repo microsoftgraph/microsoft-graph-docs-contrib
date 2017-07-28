@@ -4,7 +4,7 @@
 
 Deletes a [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md).
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
 *DeviceManagementManagedDevices.ReadWrite.All*
 ## HTTP Request
@@ -13,7 +13,6 @@ One of the following **scopes** is required to execute this API:
 }
 -->
 ```http
-DELETE /managedDevices/{managedDevicesId}/windowsProtectionState/
 DELETE /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 ```
 
@@ -33,7 +32,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/windowsProtectionState/
+DELETE https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 ```
 
 ### Response

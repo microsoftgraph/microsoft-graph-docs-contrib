@@ -38,6 +38,7 @@ The following table shows the properties that are required when you create a mob
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
+|userPrincipalName|String|User Principal Name|
 
 
 
@@ -50,7 +51,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
 Content-type: application/json
-Content-length: 373
+Content-length: 426
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -61,7 +62,8 @@ Content-length: 373
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
-  "userName": "User Name value"
+  "userName": "User Name value",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -70,7 +72,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 422
+Content-Length: 475
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -82,7 +84,8 @@ Content-Length: 422
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
-  "userName": "User Name value"
+  "userName": "User Name value",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

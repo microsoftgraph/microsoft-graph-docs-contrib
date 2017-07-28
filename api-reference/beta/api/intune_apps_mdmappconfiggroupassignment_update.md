@@ -13,7 +13,6 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /appConfigurationGroupAssignments/{appConfigurationGroupAssignmentsId}
 PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/groupAssignments/{mdmAppConfigGroupAssignmentId}
 ```
 
@@ -42,7 +41,7 @@ If successful, this method returns a `200 OK` response code and an updated [mdmA
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/appConfigurationGroupAssignments/{appConfigurationGroupAssignmentsId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/groupAssignments/{mdmAppConfigGroupAssignmentId}
 Content-type: application/json
 Content-length: 98
 
