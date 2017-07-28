@@ -1,5 +1,7 @@
 # mailFolder: delta
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for mail folders in a mailbox is similar to a GET request, except that by appropriately 

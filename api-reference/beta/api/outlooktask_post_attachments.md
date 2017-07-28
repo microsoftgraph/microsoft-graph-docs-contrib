@@ -1,5 +1,7 @@
 # Create attachment
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).
 ### Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
