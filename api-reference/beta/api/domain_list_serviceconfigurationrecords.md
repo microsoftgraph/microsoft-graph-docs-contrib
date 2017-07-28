@@ -1,5 +1,7 @@
 # List serviceConfigurationRecords
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.
 
 Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.

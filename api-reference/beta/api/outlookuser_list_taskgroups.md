@@ -1,5 +1,7 @@
 # List taskGroups
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get all the Outlook task groups in the user's mailbox.
 
 The response always includes the default task group `My Tasks`, and any other task groups that have been created in the mailbox.

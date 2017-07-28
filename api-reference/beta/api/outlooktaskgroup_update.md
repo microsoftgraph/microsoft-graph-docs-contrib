@@ -1,5 +1,7 @@
 # Update outlooktaskgroup
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the writable properties of an Outlook task group.
 
 Note that you cannot modify the name of the default task group, "My Tasks".

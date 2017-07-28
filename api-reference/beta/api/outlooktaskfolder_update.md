@@ -1,5 +1,7 @@
 # Update outlooktaskfolder
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the writable properties of an Outlook task folder.
 
 You cannot change the **name** property value of the default task folder, "Tasks".
