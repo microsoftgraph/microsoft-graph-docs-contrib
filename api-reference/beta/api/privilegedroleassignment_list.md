@@ -4,8 +4,6 @@ Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignm
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
-The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
-
 The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_. 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -24,9 +22,12 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.
-## Example
-##### Request 1
-Here is an example to get all role assignments:
+
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
+## Examples
+### Example to get all role assignments
+##### Request
+The following example shows a request to get all role assignments:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -34,8 +35,8 @@ Here is an example to get all role assignments:
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```
-##### Response 1
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -60,9 +61,9 @@ Content-length: 237
   ]
 }
 ```
-
-##### Request 2
-Here is an example to query active role assignments:
+### Example to get active role assignments
+##### Request 
+The following example shows a request to query active role assignments:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -70,8 +71,8 @@ Here is an example to query active role assignments:
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
 ```
-##### Response 2
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,9 +105,9 @@ Content-length: 237
   ]
 }
 ```
-
-##### Request 3
-Here is an example to query permanent role assignments, where ``expirationDateTime`` value is ``null``:
+### Example to get permanent role assignments
+##### Request 
+The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -114,8 +115,8 @@ Here is an example to query permanent role assignments, where ``expirationDateTi
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
 ```
-##### Response 3
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,9 +149,9 @@ Content-length: 237
   ]
 }
 ```
-
-##### Request 4
-Here is an example to query eligible role assignments, including the active and non-active ones:
+### Example to get eligible role assignments
+##### Request 
+The following example shows a request to query eligible role assignments, including the active and non-active ones:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -158,8 +159,8 @@ Here is an example to query eligible role assignments, including the active and 
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false
 ```
-##### Response 4
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response 
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

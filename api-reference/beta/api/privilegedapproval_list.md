@@ -6,7 +6,6 @@ To filter the results from the query, use the standard OData ``$filter`` express
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
-The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,6 +23,8 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [privilegedApproval](../resources/privilegedapproval.md) objects in the response body.
+
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ### Example
 ##### Request
 Here is an example of the request.

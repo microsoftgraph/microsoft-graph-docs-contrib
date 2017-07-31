@@ -4,8 +4,6 @@ Update the properties of privilegedapproval object.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
-The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
-
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -33,6 +31,8 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
+
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ### Example
 ##### Request
 Here is an example of the request.

@@ -6,8 +6,6 @@ Retrieve a list of [privilegedOperationEvent](../resources/privilegedoperationev
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
-The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
-
 The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.
 
  
@@ -28,49 +26,20 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [privilegedOperationEvent](../resources/privilegedoperationevent.md) objects in the response body.
-## Example
-##### Request 1
-Here is an example of the request to get all audit events:
-<!-- { "blockType": "request" } -->
-```http
-GET https://graph.microsoft.com/beta/privilegedOperationEvents
-```
-##### Response 1
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.privilegedOperationEvent",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 227
 
-{
-  "value": [
-    {
-      "id": "id-value",
-      "userId": "userId-value",
-      "userName": "userName-value",
-      "userMail": "userMail-value",
-      "roleId": "roleId-value",
-      "roleName": "roleName-value"
-    }
-  ]
-}
-```
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
+## Examples
 
-##### Request 2
-Here is an example to get the audit events for the role assignment operations. In this case, ``requestType`` value is ``Assign``.
+### Example to get audit events for role assignment operations
+##### Request
+The following example shows a request to get the audit events for the role assignment operations. In this case, ``requestType`` value is ``Assign``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
-##### Response 2
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,15 +90,16 @@ Content-length: 547
 	]
 }
 ```
-##### Request 3
-Here is an example to get the audit events for the operations of self role activation and makePermanent. In this case, ``requestType`` value is ``Activate``.
+### Example to get audit events for the operations of self role activation and makePermanent
+##### Request
+The following example shows a request to get the audit events for the operations of self role activation and makePermanent. In this case, ``requestType`` value is ``Activate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
-##### Response 3
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,15 +150,17 @@ Content-length: 547
 	]
 }
 ```
-##### Request 4
-Here is an example to get the audit events for role assignment deactivation. In this case, ``requestType`` value is ``Deactivate``.
+
+### Example to get audit events for role assignment deactivation
+##### Request
+The following example shows a request to get the audit events for role assignment deactivation. In this case, ``requestType`` value is ``Deactivate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
-##### Response 4
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -222,15 +194,16 @@ Content-length: 547
 	]
 }
 ```
-##### Request 5
-Here is an example to get the audit events created in a time range.
+### Example to get audit events created in a time range
+##### Request 
+The following example shows a request to get the audit events created in a time range.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
-##### Response 5
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

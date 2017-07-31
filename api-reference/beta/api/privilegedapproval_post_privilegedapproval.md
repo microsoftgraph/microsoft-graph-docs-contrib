@@ -4,8 +4,6 @@ Use this API to create a new privilegedApproval.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
-The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
-
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,6 +21,8 @@ In the request body, supply a JSON representation of [privilegedApproval](../res
 
 ### Response
 If successful, this method returns `201, Created` response code and [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
+
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 
 ### Example
 ##### Request
