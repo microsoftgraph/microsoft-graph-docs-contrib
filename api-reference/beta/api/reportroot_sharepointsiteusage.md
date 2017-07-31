@@ -1,5 +1,7 @@
 # Get SharePointSiteUsage report
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of SharePoint Site Storage. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213) to check the meaning of different views.
