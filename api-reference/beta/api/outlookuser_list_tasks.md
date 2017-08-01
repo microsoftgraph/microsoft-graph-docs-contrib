@@ -1,5 +1,7 @@
 # List tasks
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get all the Outlook tasks in the user's mailbox.
 
 By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask_complete.md) task operations) returns date-related properties in UTC. 

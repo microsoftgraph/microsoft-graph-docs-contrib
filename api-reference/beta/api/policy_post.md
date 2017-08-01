@@ -1,5 +1,7 @@
 # Create Policy
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new [policy](../resources/policy.md) object by specifying display name, policy type, and policy description.
 
 >Note: The policy details will be validated before being stored. If it does not pass validation, a 400 Bad Request will be returned.

@@ -1,5 +1,7 @@
 # Get outlookTask
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the properties and relationships of an Outlook task in the user's mailbox.
 
 By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask_complete.md) task operations) returns date-related properties in UTC. 
@@ -33,7 +35,7 @@ If successful, this method returns a `200 OK` response code and [outlookTask](..
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask_1"
+  "name": "get_outlooktask"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
@@ -92,7 +94,7 @@ This example uses the `Prefer: outlook.timezone` header to specify displaying da
 in Pacific Standard Time.
 <!-- {
   "blockType": "request",
-  "name": "get_outlooktask_2"
+  "name": "get_outlooktask"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
