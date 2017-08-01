@@ -19,7 +19,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-### Parameters
+## Parameters
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
