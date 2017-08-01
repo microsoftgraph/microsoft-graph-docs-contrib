@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /planner/plans
 ```
-### Optional query parameters
+## Optional query parameters
 This method requires owner [filter](http://graph.microsoft.io/docs/overview/query_parameters) to be specified.
 
 ## Request headers

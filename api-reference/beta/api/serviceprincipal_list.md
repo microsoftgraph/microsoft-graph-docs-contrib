@@ -14,7 +14,7 @@ One of the following **scopes** is required to execute this API: *Directory.Read
 ```http
 GET /servicePrincipals
 ```
-### Optional query parameters
+## Optional query parameters
 
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 

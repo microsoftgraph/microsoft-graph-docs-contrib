@@ -12,7 +12,7 @@ One of the following **scopes** is required to execute this API:
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
-### Optional query parameters
+## Optional query parameters
 This method does **not** support [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
 
 ## Request headers

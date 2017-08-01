@@ -11,7 +11,7 @@ Files.ReadWrite_
 GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/rows
 
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers

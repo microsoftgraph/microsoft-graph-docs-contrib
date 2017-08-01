@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API: *Group.Read.All* or *
 ```http
 GET /groups/{id}/endpoints
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers

@@ -18,7 +18,7 @@ GET /domains/{id}/verificationDnsRecords
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Optional query parameters
+## Optional query parameters
 
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 

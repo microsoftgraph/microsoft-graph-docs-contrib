@@ -17,7 +17,7 @@ GET /me/mailFolders/delta
 GET /users/<id>/mailFolders/delta
 ```
 
-### Optional query parameters
+## Optional query parameters
 
 Tracking changes in mail folders incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 

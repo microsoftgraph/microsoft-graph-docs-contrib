@@ -28,7 +28,7 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same group collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same group collection. |
 
-### Optional query parameters
+## Optional query parameters
 
 This method supports OData Query Parameters to help customize the response.
 

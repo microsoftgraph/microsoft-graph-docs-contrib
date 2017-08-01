@@ -14,7 +14,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /planner/buckets
 ```
-### Optional query parameters
+## Optional query parameters
 This method requires planId [filter](http://graph.microsoft.io/docs/overview/query_parameters) to be specified.
 
 ## Request headers

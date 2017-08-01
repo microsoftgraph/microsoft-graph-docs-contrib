@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API: _Directory.AccessAsUs
 ```http
 GET /privilegedApproval
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
