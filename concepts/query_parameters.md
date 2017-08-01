@@ -91,6 +91,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 `$filter` has a very rich and expressive syntax with many built-in operators. Logical operators include equals (`eq`), not equals (`ne`), greater than (`gt`), greater than or equals (`gte`), and (`and`), or (`or`), not (`not`) etc. Arithmetic operators include add (`add`), subtract (`sub`), etc. String operators include contains (`contains`), starts with (`startswith`), etc. Lambda operators include any (`any`) and all (`all`). For additional details on `$filter` syntax, see the [OData protocol][odata-filter].
 
 The following table shows some examples using the `$filter` query parameter.
+
 |Description|Example (click examples to try in [Graph Explorer][graph-explorer])|
 |:--------|:-------|
 Get all of the signed-in user's events that start after 7/1/2017. | https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'&$count=true |
