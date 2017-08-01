@@ -32,7 +32,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
 Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ## Examples
 
-### Example to get audit events for role assignment operations
+### Get audit events for role assignment operations
 ##### Request
 The following example shows a request to get the audit events for the role assignment operations. In this case, ``requestType`` value is ``Assign``.
 
@@ -92,7 +92,7 @@ Content-length: 547
 	]
 }
 ```
-### Example to get audit events for the operations of self role activation and makePermanent
+### Get audit events for the operations of self role activation and makePermanent
 ##### Request
 The following example shows a request to get the audit events for the operations of self role activation and makePermanent. In this case, ``requestType`` value is ``Activate``.
 
@@ -153,7 +153,7 @@ Content-length: 547
 }
 ```
 
-### Example to get audit events for role assignment deactivation
+### Get audit events for role assignment deactivation
 ##### Request
 The following example shows a request to get the audit events for role assignment deactivation. In this case, ``requestType`` value is ``Deactivate``.
 
@@ -196,7 +196,7 @@ Content-length: 547
 	]
 }
 ```
-### Example to get audit events created in a time range
+### Get audit events created in a time range
 ##### Request 
 The following example shows a request to get the audit events created in a time range.
 
