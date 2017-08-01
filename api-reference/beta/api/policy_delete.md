@@ -8,7 +8,7 @@ Delete a [policy](../resources/policy.md).
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 ```http
 DELETE /policies/{id}

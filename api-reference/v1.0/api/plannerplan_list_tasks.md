@@ -5,7 +5,7 @@ Retrieve a list of **plannertask** objects associated to a [plannerPlan](../reso
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/plans/<id>/tasks

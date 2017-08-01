@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 * For users: *User.ReadWrite.All or Directory.AccessAsUser.All*
 * For groups: *Group.ReadWrite.All or Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/deleteditems/{id}/restore

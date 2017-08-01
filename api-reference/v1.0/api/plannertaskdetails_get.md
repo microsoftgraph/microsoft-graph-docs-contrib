@@ -6,7 +6,7 @@ The following **scopes** are required to execute this API:
 
 *Groups.Read.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/tasks/<id>/details

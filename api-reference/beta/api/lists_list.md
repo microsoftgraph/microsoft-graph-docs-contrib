@@ -14,7 +14,7 @@ One of the following scopes is required to execute this request:
 * Sites.Read.All
 * Sites.ReadWrite.All
 
-### HTTP request
+## HTTP request
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists

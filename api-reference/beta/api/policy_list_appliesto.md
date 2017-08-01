@@ -8,7 +8,7 @@ Retrieve the [application](../resources/application.md) and [service principal](
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 ```http
 GET /policies/{id}/appliesTo
 ```

@@ -10,7 +10,7 @@ When creating a new invitation you have several options available:
 ## Prerequisites
 One of the following scopes is required to execute this API: *User.Invite.All* or *User.ReadWrite.All*  or *Directory.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations

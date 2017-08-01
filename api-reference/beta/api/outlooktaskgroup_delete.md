@@ -5,7 +5,7 @@
 Delete the specified [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}

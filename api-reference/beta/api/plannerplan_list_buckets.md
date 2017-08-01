@@ -7,7 +7,7 @@ Retrieve a list of **plannerbucket** objects contained by a [plannerPlan](../res
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/plans/<id>/buckets

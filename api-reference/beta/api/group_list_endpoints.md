@@ -6,7 +6,7 @@ Retrieve a list of [endpoint](../resources/endpoint.md) objects.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/endpoints

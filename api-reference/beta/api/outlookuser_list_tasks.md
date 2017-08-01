@@ -10,7 +10,7 @@ different than UTC. See an [example](outlooktask_get.md#example-2) for getting a
 
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id|userPrincipalName}/outlook/tasks

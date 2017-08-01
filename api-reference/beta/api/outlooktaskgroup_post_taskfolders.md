@@ -5,7 +5,7 @@
 Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders

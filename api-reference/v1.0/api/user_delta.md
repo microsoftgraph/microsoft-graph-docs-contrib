@@ -6,7 +6,7 @@
 
 One of the following **scopes** is required to execute this API: *User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 To begin tracking changes, you make a request including the delta function on the users resource. 
 

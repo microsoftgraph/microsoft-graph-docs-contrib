@@ -7,7 +7,7 @@ Get all the Outlook task groups in the user's mailbox.
 The response always includes the default task group `My Tasks`, and any other task groups that have been created in the mailbox.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id|userPrincipalName}/outlook/taskGroups

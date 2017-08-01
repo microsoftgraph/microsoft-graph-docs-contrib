@@ -3,7 +3,7 @@
 
 ## Prerequisites
 The following **scopes** are required to execute this API:
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/itemAt(index={n})

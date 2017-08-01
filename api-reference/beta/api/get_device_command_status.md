@@ -121,7 +121,7 @@ Get a response payload for a specific action on a device. The response payload i
 
 The following scope is required to execute this API: *Device.Command*
 
-### HTTP request
+## HTTP request
 
 ```http
 

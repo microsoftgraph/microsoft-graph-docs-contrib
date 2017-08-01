@@ -7,7 +7,7 @@ Retrieve a list of privilegedapproval objects.
 To filter the results from the query, use the standard OData ``$filter`` expressions in the URIs.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedApproval

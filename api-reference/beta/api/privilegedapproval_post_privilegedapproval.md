@@ -6,7 +6,7 @@ Use this API to create a new privilegedApproval.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedApproval

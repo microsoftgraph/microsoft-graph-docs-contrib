@@ -8,7 +8,7 @@ Retrieve a list of **plannerplan** objects shared with a [user](../resources/use
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/plans

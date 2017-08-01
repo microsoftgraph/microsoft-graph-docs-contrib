@@ -8,7 +8,7 @@ Retrieve a list of oauth2PermissionGrant objects.
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All*, or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /oauth2PermissionGrants

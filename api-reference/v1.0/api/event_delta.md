@@ -13,7 +13,7 @@ from the server every time.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: _Calendars.Read_; _Calendars.ReadWrite_ 
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}

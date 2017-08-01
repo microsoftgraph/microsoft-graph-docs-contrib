@@ -5,7 +5,7 @@ Update the properties of **plannerProgressTaskBoardTaskFormat** object.
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/progressTaskBoardFormat

@@ -14,7 +14,7 @@ and then get the tasks in each of these task folders.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks

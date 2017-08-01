@@ -25,7 +25,7 @@ To begin a large file upload, your app must first request a new upload session.
 This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded.
 Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root:/{path-to-item}:/createUploadSession

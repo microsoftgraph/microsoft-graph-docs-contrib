@@ -7,7 +7,7 @@ Update the writable properties of an Outlook task folder.
 You cannot change the **name** property value of the default task folder, "Tasks".
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}

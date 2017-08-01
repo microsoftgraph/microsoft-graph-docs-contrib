@@ -8,7 +8,7 @@ Retrieve the [policy](../resources/policy.md) objects assigned to an application
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/policies

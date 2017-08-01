@@ -10,7 +10,7 @@ a local store of a user's contact folders without having to fetch all the contac
 ## Prerequisites
 One of the following **scopes** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/delta

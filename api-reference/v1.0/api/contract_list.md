@@ -6,7 +6,7 @@ Retrieve a list of [contract](../resources/contract.md) objects associated to a 
 
 One of the following **scopes** are required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All*, or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 ```http

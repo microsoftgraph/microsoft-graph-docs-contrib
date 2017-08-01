@@ -7,7 +7,7 @@ Retrieve the properties and relationships of **plannerplandetails** object.
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/plans/<id>/details

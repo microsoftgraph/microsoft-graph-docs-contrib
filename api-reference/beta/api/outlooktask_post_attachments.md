@@ -5,7 +5,7 @@
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments

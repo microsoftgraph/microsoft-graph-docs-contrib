@@ -9,7 +9,7 @@ to be always midnight in the specified time zone.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks

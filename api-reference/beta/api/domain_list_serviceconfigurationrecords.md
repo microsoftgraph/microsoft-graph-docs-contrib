@@ -10,7 +10,7 @@ Use the returned list to add records to the zone file of the domain. This can be
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/contoso.com/serviceConfigurationRecords

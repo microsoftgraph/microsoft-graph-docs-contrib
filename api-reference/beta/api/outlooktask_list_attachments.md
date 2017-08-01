@@ -5,7 +5,7 @@
 Get a list of [attachment](../resources/attachment.md) objects attached to an Outlook task.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments

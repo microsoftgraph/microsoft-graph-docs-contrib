@@ -10,7 +10,7 @@ One of the following scopes is required to execute this request:
 
 * Sites.ReadWrite.All
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 

@@ -7,7 +7,7 @@ Update the writable properties of an Outlook task group.
 Note that you cannot modify the name of the default task group, "My Tasks".
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}

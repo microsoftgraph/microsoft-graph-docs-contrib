@@ -22,7 +22,7 @@ After the domain deletion completes, API operations for the deleted domain will 
 
 One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http

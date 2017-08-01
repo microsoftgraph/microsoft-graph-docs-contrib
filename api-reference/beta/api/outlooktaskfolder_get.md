@@ -5,7 +5,7 @@
 Get the properties and relationships of the specified Outlook task folder.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}

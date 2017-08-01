@@ -8,7 +8,7 @@ Return the range associated with the rangeView resource.
 The following **scopes** are required to execute this API: _Files.Read,
 Files.ReadWrite_
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/range

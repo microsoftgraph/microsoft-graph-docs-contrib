@@ -6,7 +6,7 @@ Retrieve the properties and relationships of privilegedapproval object.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedApproval/<id>

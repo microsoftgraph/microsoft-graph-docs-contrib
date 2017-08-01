@@ -10,7 +10,7 @@ Assigns a [policy](../resources/policy.md) to an application or service principa
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 
 ```http
 POST /applications/{id}/policies/$ref

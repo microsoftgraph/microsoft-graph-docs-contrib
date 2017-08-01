@@ -5,7 +5,7 @@ Gets a certain number of rows above a given range.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,
 Files.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)

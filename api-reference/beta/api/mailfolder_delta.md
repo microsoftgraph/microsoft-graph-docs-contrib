@@ -12,7 +12,7 @@ a local store of a user's mail folders without having to fetch all the mail fold
 ## Prerequisites
 One of the following **scopes** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta

@@ -7,7 +7,7 @@ Retrieve a list of **plannertask** objects assigned to a User.
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/tasks

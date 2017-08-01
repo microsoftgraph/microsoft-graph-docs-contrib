@@ -5,7 +5,7 @@
 Create an Outlook task group in the user's mailbox.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/taskGroups

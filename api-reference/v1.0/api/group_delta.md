@@ -6,7 +6,7 @@
 
 One of the following **scopes** is required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 
 To begin tracking changes, you make a request including the delta function on the groups resource. 
 

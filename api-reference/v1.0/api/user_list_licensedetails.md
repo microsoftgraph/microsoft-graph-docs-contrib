@@ -6,7 +6,7 @@ Retrieve a list of licenseDetails objects.
 One of the following **scopes** is required to execute this API:
 *User.Read*; *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/licenseDetails

@@ -6,7 +6,7 @@ Retrieve a list of [directoryObject](../resources/directoryobject.md) with a ref
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/domainNameReferences

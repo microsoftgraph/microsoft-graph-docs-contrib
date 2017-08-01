@@ -12,7 +12,7 @@ Use this API to create a new [group](../resources/group.md) as specified in the 
 
 ## Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups

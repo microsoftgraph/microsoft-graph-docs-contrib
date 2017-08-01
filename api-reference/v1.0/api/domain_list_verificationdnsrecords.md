@@ -10,7 +10,7 @@ Root domains require verification. For example, contoso.com requires verificatio
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/verificationDnsRecords

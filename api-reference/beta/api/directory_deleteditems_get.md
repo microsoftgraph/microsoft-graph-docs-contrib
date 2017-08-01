@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 * For users: *User.Read.All; User.ReadWrite.All; Directory.Read.All*
 * For groups: *Group.Read.All; Group.ReadWrite.All; Directory.Read.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/deleteditems/{id}
