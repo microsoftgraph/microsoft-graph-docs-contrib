@@ -7,7 +7,7 @@ Create an Outlook task in the specified task folder.
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time 
 to be always midnight in the specified time zone.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

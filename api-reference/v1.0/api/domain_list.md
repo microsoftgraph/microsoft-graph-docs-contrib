@@ -2,7 +2,7 @@
 
 Retrieve a list of domain objects.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

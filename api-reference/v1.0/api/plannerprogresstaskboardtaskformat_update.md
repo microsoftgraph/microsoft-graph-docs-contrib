@@ -1,7 +1,7 @@
 # Update plannerProgressTaskBoardTaskFormat
 
 Update the properties of **plannerProgressTaskBoardTaskFormat** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*

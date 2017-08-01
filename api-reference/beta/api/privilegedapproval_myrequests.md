@@ -4,7 +4,7 @@
 
 Get the requestor's approval requests.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

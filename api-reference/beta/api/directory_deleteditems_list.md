@@ -6,7 +6,7 @@ Retrieve a list of recently deleted items from [deleted items](../resources/dire
 
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 * For users: *User.Read.All; Directory.Read.All; User.ReadWrite.All; Directory.AccessAsUser.All*
 * For groups: *Group.Read.All; Directory.Read.All; Group.ReadWrite.All; Directory.AccessAsUser.All*

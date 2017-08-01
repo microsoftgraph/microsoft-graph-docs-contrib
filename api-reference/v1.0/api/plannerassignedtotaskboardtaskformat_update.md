@@ -1,7 +1,7 @@
 # Update plannerAssignedToTaskBoardTaskFormat
 
 Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*

@@ -3,7 +3,7 @@
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get all the Outlook task folders in the user's mailbox.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

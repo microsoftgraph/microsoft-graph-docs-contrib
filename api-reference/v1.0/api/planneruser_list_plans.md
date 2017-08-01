@@ -2,7 +2,7 @@
 
 Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*

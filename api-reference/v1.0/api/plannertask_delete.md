@@ -1,7 +1,7 @@
 # Delete plannerTask
 
 Delete **plannerTask**.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*

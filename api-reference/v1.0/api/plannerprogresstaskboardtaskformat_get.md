@@ -1,7 +1,7 @@
 # Get plannerProgressTaskBoardTaskFormat
 
 Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*

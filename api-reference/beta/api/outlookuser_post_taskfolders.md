@@ -4,7 +4,7 @@
 
 Create a task folder in the default task group (`My Tasks`) of the user's mailbox.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.ReadWrite_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

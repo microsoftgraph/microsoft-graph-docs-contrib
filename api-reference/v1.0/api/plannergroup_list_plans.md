@@ -1,7 +1,7 @@
 # List plans
 
 Retrieve a list of **plannerplan** objects owned by a [group](../resources/group.md) object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*

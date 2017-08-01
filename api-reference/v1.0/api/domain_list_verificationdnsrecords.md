@@ -6,7 +6,7 @@ You cannot use an associated domain with your Azure AD tenant until ownership is
 
 Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 

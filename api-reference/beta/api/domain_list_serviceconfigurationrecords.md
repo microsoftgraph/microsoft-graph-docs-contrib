@@ -6,7 +6,7 @@ Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects n
 
 Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 

@@ -1,7 +1,7 @@
 # Get plannerBucket
 
 Retrieve the properties and relationships of **plannerBucket** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*

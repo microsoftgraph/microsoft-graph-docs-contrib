@@ -1,7 +1,7 @@
 # Create plannerTask
 
 Use this API to create a new **plannerTask**.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*

@@ -10,7 +10,7 @@ Use this API to create a new [group](../resources/group.md) as specified in the 
 
 > **Note**: Although Microsoft Teams is built on Office 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
-### Prerequisites
+## Prerequisites
 The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

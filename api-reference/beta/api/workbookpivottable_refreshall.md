@@ -4,7 +4,7 @@
 
 Refreshes the PivotTable within a given worksheet.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,
 Files.ReadWrite_
 ### HTTP request

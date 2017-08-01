@@ -4,7 +4,7 @@
 
 Retrieve the properties and relationships of a specific [endpoint](../resources/endpoint.md) object.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: *Group.Read.All* or *Group.ReadWrite.All*
 
 ### HTTP request

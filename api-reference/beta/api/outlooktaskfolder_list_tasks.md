@@ -12,7 +12,7 @@ If there is more than one task group, and you want to get all the tasks in a spe
 [get all the task folders in that task group](outlooktaskgroup_list_taskfolders.md), 
 and then get the tasks in each of these task folders. 
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

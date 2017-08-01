@@ -1,7 +1,7 @@
 # List tasks
 
 Retrieve a list of **plannerTask** objects associated to a [plannerBucket](../resources/plannerBucket.md) object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*

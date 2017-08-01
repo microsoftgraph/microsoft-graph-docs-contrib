@@ -1,7 +1,7 @@
 # Get plannerPlan
 
 Retrieve the properties and relationships of **plannerplan** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*

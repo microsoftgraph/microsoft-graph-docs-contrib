@@ -18,7 +18,7 @@ The following actions are performed as part of this operation:
 
 After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain_get.md). If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 

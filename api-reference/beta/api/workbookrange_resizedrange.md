@@ -4,7 +4,7 @@
 
 Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,
 Files.ReadWrite_
 ### HTTP request

@@ -4,7 +4,7 @@
 
 Retrieve a list of servicePrincipal objects.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 

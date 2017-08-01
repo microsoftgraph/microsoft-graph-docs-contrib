@@ -4,7 +4,7 @@
 
 Update properties in a preexisting [policy](../resources/policy.md).
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 

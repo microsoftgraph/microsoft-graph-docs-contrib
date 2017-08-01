@@ -1,7 +1,7 @@
 # List tasks
 
 Retrieve a list of **plannertask** objects associated to a [plannerPlan](../resources/plannerplan.md) object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*

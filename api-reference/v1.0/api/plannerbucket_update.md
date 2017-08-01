@@ -1,7 +1,7 @@
 # Update plannerbucket
 
 Update the properties of **plannerbucket** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*

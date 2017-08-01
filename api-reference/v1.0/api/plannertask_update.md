@@ -1,7 +1,7 @@
 # Update plannertask
 
 Update the properties of **plannertask** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*

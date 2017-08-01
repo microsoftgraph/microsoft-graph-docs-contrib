@@ -7,7 +7,7 @@ Deletes a domain from a tenant.
 > **Important:**
 > Deleted domains are not recoverable.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 

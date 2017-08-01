@@ -8,7 +8,7 @@ By default, this operation (and the POST, PATCH, and [complete](../api/outlookta
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC. See an [example](outlooktask_get.md#example-2) for getting a single task. You can apply the header similarly to get multiple tasks. 
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Tasks.Read_
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

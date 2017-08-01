@@ -2,7 +2,7 @@
 
 Use this API to create a new **plannerPlan**.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*

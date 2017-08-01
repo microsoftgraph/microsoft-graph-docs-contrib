@@ -2,7 +2,7 @@
 
 Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** are required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All*, or *Directory.AccessAsUser.All*
 

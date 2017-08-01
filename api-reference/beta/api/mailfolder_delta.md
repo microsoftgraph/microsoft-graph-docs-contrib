@@ -9,7 +9,7 @@ applying [state tokens](../../../concepts/delta_query_overview.md) in one or mor
 you can query for incremental changes in the mail folders. This allows you to maintain and synchronize 
 a local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
 
 ### HTTP request

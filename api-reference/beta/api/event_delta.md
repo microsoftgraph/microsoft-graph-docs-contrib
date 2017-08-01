@@ -12,7 +12,7 @@ you can query for incremental changes in that calender view. This allows you to 
 a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
 from the server every time.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: _Calendars.Read_; _Calendars.ReadWrite_ 
 
 ### HTTP request

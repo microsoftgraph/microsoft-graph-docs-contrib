@@ -4,7 +4,7 @@
 
 Return the range associated with the rangeView resource.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,
 Files.ReadWrite_
 

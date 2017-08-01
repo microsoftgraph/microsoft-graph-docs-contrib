@@ -117,7 +117,7 @@ HTTP/1.1 200 OK
 Get a response payload for a specific action on a device. The response payload is used when querying an app service to carry data back.
 
 
-### Prerequisites
+## Prerequisites
 
 The following scope is required to execute this API: *Device.Command*
 

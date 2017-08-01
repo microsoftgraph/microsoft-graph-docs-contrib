@@ -7,7 +7,7 @@ Update the properties of domain object.
 > **Important:**
 > Only verified domains can be updated.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*
 

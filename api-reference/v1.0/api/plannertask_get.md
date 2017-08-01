@@ -1,7 +1,7 @@
 # Get plannerTask
 
 Retrieve the properties and relationships of **plannertask** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*

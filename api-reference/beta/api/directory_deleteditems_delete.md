@@ -6,7 +6,7 @@ Permanently deletes an item from [deleted items](../resources/directory.md).
 
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: 
 * For users: *User.ReadWrite.All or Directory.AccessAsUser.All*
 * For groups: *Group.ReadWrite.All or Directory.AccessAsUser.All*

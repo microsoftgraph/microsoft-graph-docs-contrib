@@ -2,7 +2,7 @@
 
 Retrieve a list of workbookpivottable objects.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: _Files.Read,
 Files.ReadWrite_
 

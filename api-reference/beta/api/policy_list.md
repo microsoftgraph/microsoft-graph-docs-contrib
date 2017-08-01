@@ -4,7 +4,7 @@
 
 Retrieve all [policy](../resources/policy.md) objects in the directory.
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API:
 *Directory.AccessAsUser.All*
 

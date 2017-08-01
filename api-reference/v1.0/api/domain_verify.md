@@ -5,7 +5,7 @@ Validates the ownership of the domain.
 > **Important:**
 > Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Domain.ReadWrite.All*
 

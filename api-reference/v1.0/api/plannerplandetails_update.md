@@ -1,7 +1,7 @@
 # Update plannerplandetails
 
 Update the properties of **plannerplandetails** object.
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.ReadWrite.All*

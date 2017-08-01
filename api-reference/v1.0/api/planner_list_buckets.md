@@ -2,7 +2,7 @@
 
 Retrieve a list of **plannerbucket** objects.
 
-### Prerequisites
+## Prerequisites
 The following **scopes** are required to execute this API: 
 
 *Group.Read.All*
