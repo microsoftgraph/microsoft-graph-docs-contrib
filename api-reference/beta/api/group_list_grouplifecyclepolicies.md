@@ -1,6 +1,6 @@
 # List groupLifecyclePolicies
 
-Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
+Retrieves a list of groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) objects to which a group belongs.
 
 ### Prerequisites
 
@@ -45,15 +45,15 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 216
+Content-length: 227
 
 {
   "value": [
     {
-      "id": "id-value",
+      "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
       "groupLifetimeInDays": 90,
-      "managedGroupTypes": "managedGroupTypes-value",
-      "alternateNotificationEmails": "alternateNotificationEmails-value"
+      "managedGroupTypes": "Selected",
+      "alternateNotificationEmails": "admin@contoso.com"
     }
   ]
 }

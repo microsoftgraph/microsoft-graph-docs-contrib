@@ -38,12 +38,12 @@ If successful, this method returns `201, Created` response code and [groupLifecy
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies
 Content-type: application/json
-Content-length: 151
+Content-length: 125
 
 {
-  "groupLifetimeInDays": 99,
-  "managedGroupTypes": "managedGroupTypes-value",
-  "alternateNotificationEmails": "alternateNotificationEmails-value"
+  "groupLifetimeInDays": 100,
+  "managedGroupTypes": "Selected",
+  "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
 In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.
@@ -58,13 +58,13 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 171
+Content-length: 174
 
 {
-  "id": "id-value",
-  "groupLifetimeInDays": 99,
-  "managedGroupTypes": "managedGroupTypes-value",
-  "alternateNotificationEmails": "alternateNotificationEmails-value"
+  "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+  "groupLifetimeInDays": 100,
+  "managedGroupTypes": "Selected",
+  "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
 

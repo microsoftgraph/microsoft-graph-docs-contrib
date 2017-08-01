@@ -25,7 +25,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon. |
 |groupLifetimeInDays|Int32| Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined. |
-|managedGroupTypes|String| The group type for which the expiration policy applies. Possible values are **Unified** or **Choose**. |
+|managedGroupTypes|String| The group type for which the expiration policy applies. Possible values are **All**, **Selected** or **None**. |
 
 ### Response
 
@@ -45,8 +45,8 @@ Content-length: 151
 
 {
   "groupLifetimeInDays": 180,
-  "managedGroupTypes": "managedGroupTypes-value",
-  "alternateNotificationEmails": "alternateNotificationEmails-value"
+  "managedGroupTypes": "Selected",
+  "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
 ##### Response
@@ -59,13 +59,13 @@ Note: The response object shown here may be truncated for brevity.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 171
+Content-length: 146
 
 {
   "id": "id-value",
   "groupLifetimeInDays": 180,
-  "managedGroupTypes": "managedGroupTypes-value",
-  "alternateNotificationEmails": "alternateNotificationEmails-value"
+  "managedGroupTypes": "Selected",
+  "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
 

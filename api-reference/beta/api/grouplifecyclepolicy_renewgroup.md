@@ -1,4 +1,4 @@
-# groupLifecyclePolicy: renewgroup
+# groupLifecyclePolicy: renewGroup
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
@@ -9,7 +9,7 @@ The following **scopes** are required to execute this API: *Directory.ReadWrite.
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groupLifecyclePolicies/{id}/renewGroup
+POST /groupLifecyclePolicies/renewGroup
 
 ```
 
@@ -29,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ### Response
 
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ### Example
 
@@ -40,12 +40,12 @@ If successful, this method returns `200, OK` response code. It does not return a
   "name": "grouplifecyclepolicy_renewgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/renewGroup
+POST https://graph.microsoft.com/beta/groupLifecyclePolicies/renewGroup
 Content-type: application/json
-Content-length: 32
+Content-length: 57
 
 {
-  "groupId": "groupId-value"
+  "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 ```
 
@@ -57,7 +57,7 @@ Content-length: 32
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

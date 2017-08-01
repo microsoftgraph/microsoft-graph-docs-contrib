@@ -1,4 +1,4 @@
-# groupLifecyclePolicy: removegroup
+# groupLifecyclePolicy: removeGroup
 
 Removes a group from a lifecycle policy.
 
@@ -28,7 +28,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ### Response
 
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `200, OK` response code. If the group is removed from the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
 
 ### Example
 
@@ -41,10 +41,10 @@ If successful, this method returns `200, OK` response code. It does not return a
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/removeGroup
 Content-type: application/json
-Content-length: 32
+Content-length: 57
 
 {
-  "groupId": "groupId-value"
+  "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 ```
 
@@ -57,6 +57,12 @@ Content-length: 32
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 21
+
+{
+  "value": true
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

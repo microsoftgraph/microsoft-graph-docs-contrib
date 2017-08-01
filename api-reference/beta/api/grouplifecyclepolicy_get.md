@@ -45,13 +45,13 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 171
+Content-length: 174
 
 {
-  "id": "id-value",
-  "groupLifetimeInDays": 90,
-  "managedGroupTypes": "managedGroupTypes-value",
-  "alternateNotificationEmails": "alternateNotificationEmails-value"
+  "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+  "groupLifetimeInDays": 100,
+  "managedGroupTypes": "Selected",
+  "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
 
