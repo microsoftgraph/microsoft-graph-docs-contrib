@@ -22,7 +22,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 
 In the request body, supply a JSON representation of the [listItem][] resource to create.
 
-### Example
+## Example
 
 Here is an example of how to create a new generic list item.
 

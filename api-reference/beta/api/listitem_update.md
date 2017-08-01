@@ -29,7 +29,7 @@ PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{it
 
 In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
 
-### Example
+## Example
 
 Here is an example that updates the Color and Quantity fields of the list item with new values.
 All other values on the listItem are left alone. 

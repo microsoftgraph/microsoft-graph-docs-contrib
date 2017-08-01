@@ -23,7 +23,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
-### Example
+## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.

@@ -27,7 +27,7 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 ### Response
 If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

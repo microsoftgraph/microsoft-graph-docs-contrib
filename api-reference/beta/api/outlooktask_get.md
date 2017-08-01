@@ -30,7 +30,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
-### Example 1
+## Example 1
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -88,7 +88,7 @@ Content-length: 376
 ```
 
 
-### Example 2
+## Example 2
 ##### Request
 This example uses the `Prefer: outlook.timezone` header to specify displaying date-time properties in the response  
 in Pacific Standard Time.

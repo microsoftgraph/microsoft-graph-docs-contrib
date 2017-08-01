@@ -56,7 +56,7 @@ For example, to control the behavior if the filename is already taken, you can s
 ### Response
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
-### Example
+## Example
 
 <!-- {
   "blockType": "request",
@@ -95,7 +95,7 @@ Uploading fragments out of order will result in an error.
 **Note:** If your app splits a file into multiple fragments, the size of each fragment **MUST** be a multiple of 320 KiB. 
 Using a fragment size that does not divide evenly by 320 will result in errors committing some files.
 
-### Example
+## Example
 
 This example is uploading the first 26 bytes of a 128 byte file.
 The **Content-Length** header specifies the size of the current request.
@@ -179,7 +179,7 @@ This should be used in scenarios where the upload is aborted, for example, if th
 
 Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.
 
-### Example
+## Example
 
 The DELETE request will immedately expire the upload session and remove any previously uploaded bytes.
 
@@ -203,7 +203,7 @@ If this occurs, your app can still resume the file transfer from the previously 
 
 To find out which byte ranges have been received previously, your app can request the status of an upload session.
 
-### Example
+## Example
 Query the status of the upload by sending a GET request to the `uploadUrl`.
 
 <!-- { "blockType": "request", "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->

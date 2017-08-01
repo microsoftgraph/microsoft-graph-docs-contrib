@@ -36,7 +36,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 ### Response
 If successful, this method returns `200, OK` response code and [outlookTask](../resources/outlooktask.md) collection object in the response body.
 
-### Example
+## Example
 The following example marks the specified task as complete. It specifies Pacific Standard Time (PST) 
 in the `Prefer: outlook.timezone` header.
 ##### Request

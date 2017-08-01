@@ -153,7 +153,7 @@ HTTP/1.1 200 OK
 
 ```
 
-### Example
+## Example
 In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command.
 
 #### Request

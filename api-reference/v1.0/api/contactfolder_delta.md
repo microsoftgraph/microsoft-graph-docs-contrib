@@ -49,7 +49,7 @@ _id_ property is always returned.
 ### Response
 If successful, this method returns a `200, OK` response code and [contactFolder](../resources/contactfolder.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of contact folders 
 in the response body to 2.

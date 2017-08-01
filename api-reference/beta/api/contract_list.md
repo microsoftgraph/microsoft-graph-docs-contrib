@@ -35,7 +35,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [Contract](../resources/contract.md) objects in the response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

@@ -24,7 +24,7 @@ In the request body, supply a JSON representation of [privilegedApproval](../res
 ### Response
 If successful, this method returns `201, Created` response code and [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of the request.
 <!-- {

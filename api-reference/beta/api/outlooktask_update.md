@@ -56,7 +56,7 @@ maintain their previous values or be recalculated based on changes to other prop
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [outlookTask](../resources/outlooktask.md) object in the response body.
-### Example
+## Example
 ##### Request
 The following example modifies the **dueDateTime** property and uses the `Prefer: outlook.timezone` 
 header to specify expressing the date-related properties in the response in Eastern Standard Time (EST).

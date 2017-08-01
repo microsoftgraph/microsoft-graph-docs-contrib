@@ -32,7 +32,7 @@ POST /domains/{id}/verify
 ### Response
 If successful, this method returns `200, OK` response code and [domain](../resources/domain.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

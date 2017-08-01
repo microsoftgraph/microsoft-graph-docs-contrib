@@ -49,7 +49,7 @@ _id_ property is always returned.
 ### Response
 If successful, this method returns a `200, OK` response code and [mailFolder](../resources/mailfolder.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of mail folders 
 in the response body to 2.

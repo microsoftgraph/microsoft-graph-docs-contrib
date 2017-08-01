@@ -48,7 +48,7 @@ Specify other writable properties as necessary for your group. For more informat
 ### Response
 If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 Here is an example of a request that creates an Office 365 group.
 <!-- {

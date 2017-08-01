@@ -24,7 +24,7 @@ In the request body, supply a JSON representation of [outlookTaskFolder](../reso
 ### Response
 If successful, this method returns `201, Created` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example creates a task folder called `Cooking` in the specified task group.
 <!-- {

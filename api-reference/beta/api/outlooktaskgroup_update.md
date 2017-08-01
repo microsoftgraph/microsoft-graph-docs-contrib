@@ -26,7 +26,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Response
 If successful, this method returns a `200 OK` response code and updated [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.
-### Example
+## Example
 ##### Request
 The following example changes the name of a task group to "Personal Tasks". 
 <!-- {

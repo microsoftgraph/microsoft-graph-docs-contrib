@@ -51,7 +51,7 @@ _id_ property is always returned.
 ### Response
 If successful, this method returns a `200, OK` response code and [contact](../resources/contact.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example shows how to make a single **delta** function call, use the `$select` parameter to get only 
 each contact's **displayName** property, and limit the maximum number of contacts 

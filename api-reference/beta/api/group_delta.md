@@ -62,7 +62,7 @@ See:</br>
 - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details</br>
 - [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for an example requests.</br>
     
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

@@ -24,7 +24,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=colu
 
 Do not supply a request body with this method.
 
-### Example
+## Example
 
 #### Request
 

@@ -34,7 +34,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns `204, No Content` response code. It does not return a response body.
 
-### Example
+## Example
 ##### Request
 
 <!-- {

@@ -54,7 +54,7 @@ a `GET /calendarview` request. `$select` is not supported in this case.
 ### Response
 If successful, this method returns a `200, OK` response code and [event](../resources/event.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 
 The following example shows how to make a single **delta** function call, and limit the maximum number of events 

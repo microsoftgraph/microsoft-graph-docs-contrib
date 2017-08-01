@@ -32,7 +32,7 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 
 Do not supply a request body with this method.
 
-### Example
+## Example
 
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
