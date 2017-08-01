@@ -25,7 +25,7 @@ POST /serviceprincipals/{id}/policies/$ref
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON representation of the policy object to be added.
 
 ### Response

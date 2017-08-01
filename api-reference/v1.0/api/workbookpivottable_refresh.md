@@ -18,7 +18,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-### Request body
+## Request body
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.

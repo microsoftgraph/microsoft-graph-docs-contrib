@@ -21,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 |:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.

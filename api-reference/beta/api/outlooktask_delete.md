@@ -19,7 +19,7 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/ta
 | Authorization  | Bearer {token}. Required. |
 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 

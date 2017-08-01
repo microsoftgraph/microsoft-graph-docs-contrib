@@ -26,7 +26,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.

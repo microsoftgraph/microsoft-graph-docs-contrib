@@ -20,7 +20,7 @@ POST /policies
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON representation of [policy](../resources/policy.md) object.
 
 The following table shows the properties that are required when you create a policy.

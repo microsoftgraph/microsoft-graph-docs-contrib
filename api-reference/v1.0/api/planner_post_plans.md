@@ -18,7 +18,7 @@ POST /planner/plans
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.
 The **plannerPlan** owner property must be set to an id of a [group](../resources/group.md) object.
 

@@ -22,7 +22,7 @@ POST /groups
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 
 The following table shows the properties of the [group](../resources/group.md) resource that you must specify at a minimum when you create a group. 
 

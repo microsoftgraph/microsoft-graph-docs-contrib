@@ -46,7 +46,7 @@ _id_ property is always returned.
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 ### Response

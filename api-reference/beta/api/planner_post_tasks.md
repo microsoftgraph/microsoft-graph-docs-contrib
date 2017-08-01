@@ -19,7 +19,7 @@ POST /planner/tasks
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
 The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.
 

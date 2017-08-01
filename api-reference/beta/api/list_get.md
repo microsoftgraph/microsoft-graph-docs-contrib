@@ -20,7 +20,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-### Request body
+## Request body
 
 Do not supply a request body with this method.
 

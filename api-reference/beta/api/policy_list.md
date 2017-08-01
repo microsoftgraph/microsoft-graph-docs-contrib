@@ -18,7 +18,7 @@ GET /policies
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 ### Response

@@ -26,7 +26,7 @@ PATCH /domains/{id}
 | Authorization  | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.
 

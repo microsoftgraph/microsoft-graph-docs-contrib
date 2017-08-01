@@ -22,7 +22,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
 
 

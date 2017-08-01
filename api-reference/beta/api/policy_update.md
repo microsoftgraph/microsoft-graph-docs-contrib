@@ -19,7 +19,7 @@ PATCH /policies/{id}
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the parameters that need to be updated. The following table shows the possible parameters.
 
 | Parameter	   | Type	|Description|

@@ -17,7 +17,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Authorization  | Bearer {token}. Required. |
 
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [outlookTaskGroup](../resources/outlooktaskgroup.md) object.
 
 

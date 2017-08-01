@@ -17,7 +17,7 @@ GET /privilegedApproval/myRequests
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 
 ### Response
 If successful, this method returns `200, OK` response code and [privilegedApproval](../resources/privilegedapproval.md) object in the response body.

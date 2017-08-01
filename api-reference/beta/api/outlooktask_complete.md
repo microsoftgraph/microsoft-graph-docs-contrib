@@ -31,7 +31,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
 
-### Request body
+## Request body
 
 ### Response
 If successful, this method returns `200, OK` response code and [outlookTask](../resources/outlooktask.md) collection object in the response body.

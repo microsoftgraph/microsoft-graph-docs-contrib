@@ -20,7 +20,7 @@ This method requires planId [filter](http://graph.microsoft.io/docs/overview/que
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [plannerBucket](../resources/plannerbucket.md) objects in the response body.

@@ -17,7 +17,7 @@ DELETE /planner/buckets/<id>
 | Authorization  | Bearer {token}. Required. |
 | If-Match  | Last known ETag value for the **plannerBucket** to be deleted. Required.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 

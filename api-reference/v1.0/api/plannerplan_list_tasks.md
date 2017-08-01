@@ -16,7 +16,7 @@ GET /planner/plans/<id>/tasks
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [plannerTask](../resources/plannertask.md) objects in the response body.

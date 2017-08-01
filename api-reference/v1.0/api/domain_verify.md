@@ -25,7 +25,7 @@ POST /domains/{id}/verify
 | Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 ### Response
 If successful, this method returns `200, OK` response code and [domain](../resources/domain.md) object in the response body.

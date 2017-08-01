@@ -38,7 +38,7 @@ POST /domains/{id}/forceDelete
 | Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 
 In the request body, provide a JSON object with the following parameters.
 

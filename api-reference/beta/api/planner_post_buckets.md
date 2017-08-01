@@ -20,7 +20,7 @@ POST /planner/buckets
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.
 
 ### Response

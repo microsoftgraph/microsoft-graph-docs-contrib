@@ -19,7 +19,7 @@ DELETE /planner/plans/<id>
 | Authorization  | Bearer {token}. Required. |
 | If-Match  | Last known ETag value for the **plannerPlan** to be deleted. Required.|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 

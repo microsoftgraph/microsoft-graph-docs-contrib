@@ -18,7 +18,7 @@ One of the following scopes is required to execute this request:
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 ```
 
-### Request body
+## Request body
 
 In the request body, supply a JSON representation of the [listItem][] resource to create.
 

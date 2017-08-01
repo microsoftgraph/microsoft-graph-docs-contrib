@@ -23,7 +23,7 @@ POST /invitations
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.
 
 The following table shows the properties that are required when you create a invitation.

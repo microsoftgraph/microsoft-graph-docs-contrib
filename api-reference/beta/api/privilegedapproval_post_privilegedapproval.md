@@ -17,7 +17,7 @@ POST /privilegedApproval
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.
 
 

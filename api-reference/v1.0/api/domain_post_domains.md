@@ -20,7 +20,7 @@ POST /domains
 | Authorization  | Bearer {token}. Required.|
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [domain](../resources/domain.md) object.
 
 > The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.

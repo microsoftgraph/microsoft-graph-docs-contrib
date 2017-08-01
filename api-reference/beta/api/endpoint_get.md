@@ -21,7 +21,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Authorization  | Bearer {token}. Required.|
 | Content-Type   | Application/Json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [Endpoint](../resources/endpoint.md) object in the response body.

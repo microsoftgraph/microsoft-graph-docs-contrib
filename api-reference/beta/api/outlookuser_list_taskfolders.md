@@ -18,7 +18,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and collection of [outlookTaskFolder](../resources/outlooktaskfolder.md) objects in the response body.

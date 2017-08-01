@@ -22,7 +22,7 @@ DELETE /directory/deleteditems/{id}
 | Authorization  | Bearer &lt;code&gt; *Required*|
 | Accept  | application/json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 ### Response
