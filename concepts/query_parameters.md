@@ -15,7 +15,7 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 |[`$search`](#search)|A property and value pair separated by a colon.|
 -->
 
-These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs.
+These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs and support may differ significantly between the `v1.0` and `beta` endpoints. 
 
 > **Note:** On the `beta` endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. For more details and examples, see [Supporting query parameters without $ prefixes in Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
@@ -90,6 +90,18 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 `$filter` has a very rich and expressive syntax with many built-in operators. Logical operators include equals (`eq`), not equals (`ne`), greater than (`gt`), greater than or equals (`gte`), and (`and`), or (`or`), not (`not`) etc. Arithmetic operators include add (`add`), subtract (`sub`), etc. String operators include contains (`contains`), starts with (`startswith`), etc. Lambda operators include any (`any`) and all (`all`). For additional details on `$filter` syntax, see the [OData protocol][odata-filter].
 
+The following table shows some examples using the `$filter` query parameter.
+|Description|Example (click examples to try in [Graph Explorer][graph-explorer])|
+|:--------|:-------|
+Get all of the signed-in user's events that start after 7/1/2017. | https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'&$count=true |
+Get all emails from a specific address received by the signed-in user. | https://graph.microsoft.com/v1.0//me/messages?$filter=from/emailAddress/address eq 'jimaco44@msn.com'&$count=true |
+Get all emails received by the signed-in user in April 2017 | https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01 |
+Get all unread mails in the signed-in user's inbox. | https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false |
+List all Office 365 groups in an organization | https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified') |
+List all Office 365 groups that the signed-in user is a direct member of | https://graph.microsoft.com/v1.0/me/memberOf?$filter=groupTypes/any(c:c+eq+'Unified') |
+
+
+
 
 ## select
 
@@ -103,7 +115,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 [Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
 
- > **Note:** In general, we recommend that you use $select to limit the properties returned by a query to those needed by your app. This is especially true of queries that may potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+ > **Important:** In general, we recommend that you use $select to limit the properties returned by a query to those needed by your app. This is especially true of queries that may potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
 <!--For example, when retrieving the children of an item on a drive, you want to select that only the `name` and `size` properties of items are returned.
 
@@ -153,6 +165,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
 
+> **Note**: Not all relationships support the $expand query parameter. You cannot use $expand on relationships that span multiple services. For example you cannot expand messages `$expand=messages` on a user resource because `user` is sourced from Azure Active Directory while `message` is sourced from Microsoft Outlook. Even relationships sourced from the same underlying service as the resource may not be supported. For example, user and group photos cannot be expanded. You can check the Microsoft Graph metadata to help understand which relationships do not support exapnd:
+>
+>
 <!--
 In Microsoft Graph requests, navigations to an object or collection of the referenced item are not automatically expanded.
 This is by design because it reduces network traffic and the time it takes to generate a response from the service.
@@ -278,7 +293,111 @@ To restrict the results of a request that match a search criterion, use the `$se
 
 > **Note:** You can currently **only** search [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) and [person](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
 
-Search criteria are expressed using Advanced Query Syntax (AQS). The results are sorted by the date and time that the message was sent.
+Search criteria are expressed using [Advanced Query Syntax (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). The results are sorted by the date and time that the message was sent.
+
+You can specify the following properties on a `message` in a `$search` criterion:
+`attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`, `toRecipients`
+
+If you do a search on messages and specify only a value, the search is carried out on the default search properties of `from`, `subject` and `body`.
+
+The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
+```
+
+The next example searches all messages in the user's Inbox that were sent from a specific email address:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
+```
+
+## Error handling for query parameters
+
+Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `$expand` on the `user/photo` relationship. 
+
+```http
+https://graph.microsoft.com/beta/me?$expand=photo
+```
+
+```json
+{
+    "error":{
+        "code":"ExpandNotSupported",
+        "message":"Expand is not allowed for property 'Photo' according to the entity schema.",
+        "innerError":{
+            "request-id":"1653fefd-bc31-484b-bb10-8dc33cb853ec",
+            "date":"2017-07-31T20:55:01"
+        }
+    }
+}
+```
+
+However, it is important to note that query parameters specified in a request may fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you must examine the data returned by the request to determine whether the query parameters you specified had the desired effect. 
+
+## Determining support for query parameters
+
+Not all query parameters are supported across all Microsoft Graph resources. You can check the Microsoft Graph metadata endpoints ([v1.0](https://graph.microsoft.com/v1.0/$metadata) or [beta](https://graph.microsoft.com/beta/$metadata)) to help determine whether specific query parameters are supported on a resource or its relationships. Query parameter support is listed in annotations on the metadata. Be aware that, even if support for a specific query parameter on a resource or a relationship is indicated, there may still be limitations in the way that it is supported and in the way that it can be used in combination with other query parameters. 
+
+Here is an example of an annotation for the malwareRiskEvent resource on the beta endpoint. 
+
+```xml
+<Annotations Target="microsoft.graph.malwareRiskEvent">
+  <Annotation Term="Org.OData.Capabilities.V1.ExpandRestrictions">
+    <Record>
+      <PropertyValue Property="Expandable" Bool="true"/>
+    </Record>
+  </Annotation>
+  <Annotation Term="Org.OData.Capabilities.V1.NavigationRestrictions">
+    <Record>
+      <PropertyValue Property="Referenceable" Bool="true"/>
+    </Record>
+  </Annotation>
+  <Annotation Term="Org.OData.Capabilities.V1.SelectRestrictions">
+    <Record>
+      <PropertyValue Property="Selectable" Bool="true"/>
+    </Record>
+  </Annotation>
+  <Annotation Term="Org.OData.Capabilities.V1.CountRestrictions">
+    <Record>
+      <PropertyValue Property="Countable" Bool="true"/>
+    </Record>
+  </Annotation>
+  <Annotation Term="Org.OData.Capabilities.V1.FilterRestrictions">
+    <Record>
+      <PropertyValue Property="Filterable" Bool="true"/>
+    </Record>
+  </Annotation>
+  <Annotation Term="Org.OData.Capabilities.V1.TopSupported" Bool="true"/>
+  <Annotation Term="Org.OData.Capabilities.V1.SkipSupported" Bool="true"/>
+</Annotations>
+```
+
+Some relationships and resources only document unsupported query parameters. For example here are the annotations for the user/messages relationship. The `$expand` parameter is not supported, all other query parameters are.
+
+```xml
+<Annotations Target="microsoft.graph.user/messages">
+  <Annotation Term="Org.OData.Capabilities.V1.ChangeTracking">
+    <Record>
+      <PropertyValue Property="Supported" Bool="false"/>
+    </Record>
+  </Annotation>
+  <Annotation Term="Org.OData.Capabilities.V1.ExpandRestrictions">
+    <Record>
+      <PropertyValue Property="Expandable" Bool="false"/>
+    </Record>
+  </Annotation>
+</Annotations>
+
+```
+
+## search
+
+To restrict the results of a request that match a search criterion, use the `$search` query parameter.
+
+> **Note:** You can currently **only** search [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) and [person](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
+
+Search criteria are expressed using [Advanced Query Syntax (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). The results are sorted by the date and time that the message was sent.
 
 You can specify the following properties on a `message` in a `$search` criterion:
 `attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`, `toRecipients`
