@@ -1,5 +1,7 @@
 # Create outlookTask
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create an Outlook task in the specified task folder.
 
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time 
