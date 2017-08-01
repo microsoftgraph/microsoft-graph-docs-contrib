@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API: _Directory.AccessAsUs
 ```http
 PATCH /privilegedApproval/<id>
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |

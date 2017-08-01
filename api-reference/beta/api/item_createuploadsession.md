@@ -46,7 +46,7 @@ For example, to control the behavior if the filename is already taken, you can s
 }
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name       | Value | Description                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

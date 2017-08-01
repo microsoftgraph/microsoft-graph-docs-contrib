@@ -18,7 +18,7 @@ One of the following scopes is required to execute this request:
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------

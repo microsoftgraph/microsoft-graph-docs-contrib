@@ -22,7 +22,7 @@ One of the following scopes is required to execute this request:
 DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------

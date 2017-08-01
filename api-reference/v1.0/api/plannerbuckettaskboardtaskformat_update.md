@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API:
 ```http
 PATCH /planner/tasks/<id>/bucketTaskBoardFormat
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |

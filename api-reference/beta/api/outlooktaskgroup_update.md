@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API: _Tasks.ReadWrite_
 ```http
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |

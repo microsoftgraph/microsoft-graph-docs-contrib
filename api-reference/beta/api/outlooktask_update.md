@@ -20,7 +20,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |
