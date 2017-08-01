@@ -17,7 +17,7 @@ PATCH /domains/{id}
 
 > For {id}, specify the domain with its fully qualified domain name.
 
-### Request headers
+## Request headers
 
 | Name       | Description|
 |:-----------|:-----------|

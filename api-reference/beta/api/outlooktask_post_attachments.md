@@ -13,7 +13,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/attachmen
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/attachments
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |

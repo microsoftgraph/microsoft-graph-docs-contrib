@@ -13,7 +13,7 @@ GET /users/<id>/planner/tasks
 GET /drive/root/createdByUser/planner/tasks
 ```
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |

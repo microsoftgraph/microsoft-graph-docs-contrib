@@ -19,7 +19,7 @@ POST /serviceprincipals/{id}/policies/$ref
 
 > Note: The "id" in the request is the "id" property of the application or service principal, not the "appid" property.
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |

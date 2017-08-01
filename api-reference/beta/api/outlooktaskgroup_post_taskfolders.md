@@ -11,7 +11,7 @@ The following **scopes** are required to execute this API: _Tasks.ReadWrite_
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |

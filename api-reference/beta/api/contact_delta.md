@@ -40,7 +40,7 @@ includes the encoded, desired parameters.
 _id_ property is always returned. 
 
 
-### Request headers
+## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |

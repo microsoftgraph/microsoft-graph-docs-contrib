@@ -13,7 +13,7 @@ DELETE /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |

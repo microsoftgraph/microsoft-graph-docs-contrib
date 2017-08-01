@@ -17,7 +17,7 @@ The following **scope** is required to execute this API: _Group.ReadWrite.All_
 ```http
 POST /groups
 ```
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |

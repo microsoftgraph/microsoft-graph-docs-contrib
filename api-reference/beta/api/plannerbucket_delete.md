@@ -13,7 +13,7 @@ The following **scopes** are required to execute this API:
 ```http
 DELETE /planner/buckets/<id>
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |

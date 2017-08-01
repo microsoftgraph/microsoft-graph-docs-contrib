@@ -129,7 +129,7 @@ GET me/beta/devices/{id}/command/{id}/responsePayload
 
 ```
 
-### Request headers
+## Request headers
 
 
 | Header |Value

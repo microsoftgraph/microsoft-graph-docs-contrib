@@ -14,7 +14,7 @@ The following **scopes** are required to execute this API:
 GET /planner/tasks/<id>/bucketTaskBoardFormat
 ```
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |

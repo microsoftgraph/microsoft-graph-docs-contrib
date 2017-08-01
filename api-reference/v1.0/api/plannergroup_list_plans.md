@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 GET /groups/<id>/planner/plans
 ```
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |

@@ -14,7 +14,7 @@ One of the following **scopes** is required to execute this API: *Domain.ReadWri
 ```http
 POST /domains
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required.|

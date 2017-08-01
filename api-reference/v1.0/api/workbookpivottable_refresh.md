@@ -12,7 +12,7 @@ Files.ReadWrite_
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |

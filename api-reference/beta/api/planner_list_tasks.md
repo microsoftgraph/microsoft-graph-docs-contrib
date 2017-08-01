@@ -16,7 +16,7 @@ GET /planner/tasks
 ### Optional query parameters
 This method requires planId [filter](http://graph.microsoft.io/docs/overview/query_parameters) to be specified.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |

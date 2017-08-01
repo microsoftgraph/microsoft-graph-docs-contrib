@@ -13,7 +13,7 @@ The following **scopes** are required to execute this API:
 POST /planner/buckets
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |

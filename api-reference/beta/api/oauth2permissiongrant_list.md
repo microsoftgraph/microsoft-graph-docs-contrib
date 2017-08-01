@@ -16,7 +16,7 @@ GET /oauth2PermissionGrants
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name | Description |
 |:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |

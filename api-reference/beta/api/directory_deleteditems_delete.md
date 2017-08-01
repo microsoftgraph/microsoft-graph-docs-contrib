@@ -16,7 +16,7 @@ One of the following **scopes** is required to execute this API:
 ```http
 DELETE /directory/deleteditems/{id}
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt; *Required*|

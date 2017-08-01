@@ -13,7 +13,7 @@ The following **scopes** are required to execute this API:
 ```http
 GET /planner/tasks/<id>/assignedToTaskBoardFormat
 ```
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |

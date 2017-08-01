@@ -14,7 +14,7 @@ GET /users/<id>/planner/plans
 GET /drive/root/createdByUser/planner/plans
 ```
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |

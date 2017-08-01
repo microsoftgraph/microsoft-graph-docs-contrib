@@ -21,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 
 > Filtering is supported for customerId, defaultDomainName, and displayName.
 
-### Request headers
+## Request headers
 
 | Name      |Description|
 |:----------|:----------|

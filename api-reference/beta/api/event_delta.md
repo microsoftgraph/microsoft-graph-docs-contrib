@@ -44,7 +44,7 @@ When you do a delta query on a calendar view, expect to get all the properties y
 a `GET /calendarview` request. `$select` is not supported in this case. 
 
 
-### Request headers
+## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |

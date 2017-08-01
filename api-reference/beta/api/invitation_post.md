@@ -17,7 +17,7 @@ One of the following scopes is required to execute this API: *User.Invite.All* o
 ```http
 POST /invitations
 ```
-### Request headers
+## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |

@@ -41,7 +41,7 @@ _id_ property is always returned.
   an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.
 
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|

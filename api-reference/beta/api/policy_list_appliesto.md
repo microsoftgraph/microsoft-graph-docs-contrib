@@ -13,7 +13,7 @@ One of the following **scopes** is required to execute this API:
 GET /policies/{id}/appliesTo
 ```
 
-### Request headers
+## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |

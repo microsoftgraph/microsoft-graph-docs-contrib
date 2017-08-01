@@ -25,7 +25,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/complete
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/complete
 
 ```
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
