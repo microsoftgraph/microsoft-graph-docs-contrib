@@ -1,15 +1,15 @@
 # groupSettingTemplate resource type
 
-Group setting templates represent system-defined settings available to the tenant. [Group settings](groupsetting.md) can be created based on the available groupSettingTemplates, and values changed from their preset defaults. Group setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings. Currently, the only templates available apply to Office groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
+Group setting templates represent system-defined settings available to the tenant. [Group settings](groupsetting.md) can be created based on the available **groupSettingTemplates**, and values changed from their preset defaults. Group setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings. Currently, the only templates available apply to Office groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
 
-### Methods
+## Methods
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
 |[Get groupSettingTemplate](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Read the specific properties of one of the system defined groupSettingTemplate objects. |
 |[List groupSettingTemplate](../api/groupsettingtemplate_list.md) | [Collection of groupSettingTemplate](groupsettingtemplate.md) |List all of the system defined groupSettingTemplate objects.|
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
@@ -18,12 +18,12 @@ Group setting templates represent system-defined settings available to the tenan
 |id|String| Unique identifier for the template. Read-only.|
 |values|[settingTemplateValue](settingtemplatevalue.md) collection| Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. |
 
-### Relationships
+## Relationships
 
-None
+None.
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

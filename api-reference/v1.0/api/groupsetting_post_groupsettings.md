@@ -2,34 +2,34 @@
 
 Use this API to create a new setting, based on the templates available in [groupSettingTemplates](../resources/groupsettingtemplate.md). These settings can be at the tenant-level or at the group level. The creation request must provide [settingValues](../resources/settingvalue.md) for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 > Note: Only tenant admins have permissions to perform create, update, and delete operations.
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupSettings
 POST /groups/{id}/settings
 ```
 
-### Request headers
+## Request headers
 
 | Name | Description |
 |:---------------|:----------|
 | Authorization | Bearer {token}. Required. |
 | Content-Type | application/json |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. However, the display name for the setting will be set based on the referenced settings template name.
 
-### Response
+## Response
 
 If successful, this method returns `201, Created` response code and [groupSetting](../resources/groupsetting.md) object in the response body.
 
-### Example
+## Example
 
 ##### Request
 

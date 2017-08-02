@@ -2,11 +2,11 @@
 
 Retrieve the properties of a specific of group setting object.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 Get a specific tenant-wide or group setting.
@@ -15,25 +15,25 @@ Get a specific tenant-wide or group setting.
 GET /groupSettings/{id}
 GET /groups/{id}/settings/{id}
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 > Note: $filter is not supported.
 
-### Request headers
+## Request headers
 | Name | Description |
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
 
-### Request body
+## Request body
 
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and [groupSetting](../resources/groupsetting.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",
