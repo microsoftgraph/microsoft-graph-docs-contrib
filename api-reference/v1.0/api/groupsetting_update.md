@@ -2,13 +2,13 @@
 
 Update the properties of a specific group setting object.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 > Note: Only tenant admins have permissions to perform create, update, and delete operations.
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 Update a tenant-wide or group specific setting.
@@ -17,24 +17,24 @@ Update a tenant-wide or group specific setting.
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-### Optional request headers
+## Optional request headers
 | Name | Description |
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type	| application/json	|
 
-### Request body
+## Request body
 In the request body, supply the values for relevant fields that should be updated. 
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 | values | settingValue | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
 
-### Response
+## Response
 
 If successful, this method returns a `204 OK` response code and updated [groupSetting](../resources/groupsetting.md) object in the response body.
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

@@ -1,8 +1,8 @@
 # groupSetting resource type
 
-Group settings can be created based on the available [groupSettingTemplates](groupSettingTemplate.md), and changed from their preset defaults. These settings can govern entity or feature behaviors, both at a tenant-wide level or at a specific entity level. When the same setting is defined at both the tenant-wide and specific entity level, the specific entity level setting may opt-out from the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but a specific group setting may opt-out and not allow guests to be invited by members of the group. Groups settings only govern Office groups behavior.
+Group settings can be created based on the available [groupSettingTemplates](groupSettingTemplate.md), and changed from their preset defaults. These settings can govern entity or feature behaviors, both at a tenant-wide level or at a specific entity level. When the same setting is defined at both the tenant-wide and specific entity level, the specific entity-level setting may opt-out from the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but a specific group setting may opt-out and not allow guests to be invited by members of the group. Groups settings only govern Office groups behavior.
 
-### Methods
+## Methods
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
@@ -12,7 +12,7 @@ Group settings can be created based on the available [groupSettingTemplates](gro
 |[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Update groupsetting object. |
 |[Delete setting](../api/groupsetting_delete.md) | None | Delete a setting object. |
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
@@ -21,11 +21,11 @@ Group settings can be created based on the available [groupSettingTemplates](gro
 |templateId|String| Unique identifier for the template used to create this group of settings. Read-only. |
 |values|[settingValue](settingvalue.md) collection| Collection of name value pairs. Must contain and set all the settings defined in the template. |
 
-### Relationships
+## Relationships
 
-None
+None.
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

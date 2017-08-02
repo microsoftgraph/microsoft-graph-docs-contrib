@@ -2,13 +2,13 @@
 
 Delete a group setting.
 
-### Prerequisites
+## Prerequisites
 
 One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 
 > Note: Only tenant admins have permissions to perform create, update, and delete operations.
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupSettings/{id}
@@ -16,22 +16,22 @@ DELETE /groups/{id}/settings/{id}
 
 ```
 
-### Request headers
+## Request headers
 
 | Name | Description |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 
-### Response
+## Response
 
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",
