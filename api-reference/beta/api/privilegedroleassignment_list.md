@@ -27,7 +27,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
 
 Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ## Examples
-### Example to get all role assignments
+### Get all role assignments
 ##### Request
 The following example shows a request to get all role assignments:
 <!-- {
@@ -63,7 +63,7 @@ Content-length: 237
   ]
 }
 ```
-### Example to get active role assignments
+### Get active role assignments
 ##### Request 
 The following example shows a request to query active role assignments:
 <!-- {
@@ -107,7 +107,7 @@ Content-length: 237
   ]
 }
 ```
-### Example to get permanent role assignments
+### Get permanent role assignments
 ##### Request 
 The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:
 <!-- {
@@ -151,7 +151,7 @@ Content-length: 237
   ]
 }
 ```
-### Example to get eligible role assignments
+### Get eligible role assignments
 ##### Request 
 The following example shows a request to query eligible role assignments, including the active and non-active ones:
 <!-- {
