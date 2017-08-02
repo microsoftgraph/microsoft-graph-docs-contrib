@@ -267,9 +267,9 @@
       <Item text="Verify domain" url="/en-us/api-reference/v1.0/api/domain_verify" />
 	  </Item>
     <Item text="Group setting" url="/en-us/api-reference/v1.0/resources/groupsetting" >
-	  <Item text="Create setting" url="/en-us/api-reference/v1.0/api/groupsetting_post_settings" />
+	  <Item text="Create setting" url="/en-us/api-reference/v1.0/api/groupsetting_post_groupsettings" />
 	  <Item text="Get setting" url="/en-us/api-reference/v1.0/api/groupsetting_get" />
-	  <Item text="List setting" url="/en-us/api-reference/v1.0/api/groupsetting_list" />
+	  <Item text="List settings" url="/en-us/api-reference/v1.0/api/groupsetting_list" />
 	  <Item text="Update setting" url="/en-us/api-reference/v1.0/api/groupsetting_update" />
 	  <Item text="Delete setting" url="/en-us/api-reference/v1.0/api/groupsetting_delete" />
 	</Item>
@@ -920,7 +920,7 @@
       <Item text="Directory setting" url="/en-us/api-reference/beta/resources/directorysetting" SEOKeyword="directorySetting API, Microsoft Graph API, directorysetting API" SEODescription="Governs entity or feature behaviors, both at a tenant-wide level or at a specific entity level.">
         <Item text="Create setting" url="/en-us/api-reference/beta/api/directorysetting_post_settings" SEOKeyword="Create directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
         <Item text="Get setting" url="/en-us/api-reference/beta/api/directorysetting_get" SEOKeyword="Get directorySetting, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
-        <Item text="List setting" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="List directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
+        <Item text="List settings" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="List directorySetting, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
         <Item text="Update setting" url="/en-us/api-reference/beta/api/directorysetting_update" SEOKeyword="Update directorySetting, Microsoft Graph API, Directory API" SEODescription="Update the properties of directoryrole object." />
         <Item text="Delete setting" url="/en-us/api-reference/beta/api/directorysetting_delete" SEOKeyword="Delete directorySetting, Microsoft Graph API, Directory API" SEODescription="Delete directoryRole." />
       </Item>
