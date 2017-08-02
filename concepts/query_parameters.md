@@ -47,6 +47,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 ```
 
+<!--
 **Response:**
 
 ```json
@@ -87,6 +88,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
     ]
 }
 ```
+-->
 
 `$filter` has a very rich and expressive syntax with many built-in operators. Logical operators include equals (`eq`), not equals (`ne`), greater than (`gt`), greater than or equals (`gte`), and (`and`), or (`or`), not (`not`) etc. Arithmetic operators include add (`add`), subtract (`sub`), etc. String operators include contains (`contains`), starts with (`startswith`), etc. Lambda operators include any (`any`) and all (`all`). For additional details on `$filter` syntax, see the [OData protocol][odata-filter].
 
@@ -94,12 +96,12 @@ The following table shows some examples using the `$filter` query parameter.
 
 |Description|Example (click examples to try in [Graph Explorer][graph-explorer])|
 |:--------|:-------|
-Get all of the signed-in user's events that start after 7/1/2017. | https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'&$count=true |
-Get all emails from a specific address received by the signed-in user. | https://graph.microsoft.com/v1.0//me/messages?$filter=from/emailAddress/address eq 'jimaco44@msn.com'&$count=true |
-Get all emails received by the signed-in user in April 2017 | https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01 |
-Get all unread mails in the signed-in user's inbox. | https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false |
-List all Office 365 groups in an organization | https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified') |
-List all Office 365 groups that the signed-in user is a direct member of | https://graph.microsoft.com/v1.0/me/memberOf?$filter=groupTypes/any(c:c+eq+'Unified') |
+| Get all of the signed-in user's events that start after 7/1/2017. | [`/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'&$count=true`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'%26$count=true&method=GET&version=v1.0) |
+| Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0//me/messages?$filter=from/emailAddress/address eq 'jimaco44@msn.com'&$count=true`](https://graph.microsoft.com/v1.0//me/messages?$filter=from/emailAddress/address eq 'jimaco44@msn.com'&$count=true) |
+| Get all emails received by the signed-in user in April 2017 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01) |
+| Get all unread mails in the signed-in user's inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false) |
+| List all Office 365 groups in an organization | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`) |
+| List all Office 365 groups that the signed-in user is a direct member of | [`https://graph.microsoft.com/v1.0/me/memberOf?$filter=groupTypes/any(c:c+eq+'Unified')`](https://graph.microsoft.com/v1.0/me/memberOf?$filter=groupTypes/any(c:c+eq+'Unified')) |
 
 
 
@@ -146,9 +148,9 @@ in the response will only have those property values included.
 
 ## expand
 
-Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties and they can reference either a single resource or a collection of resources. For example, the mailboxes, manager, and direct reports of a user are all exposed as relationships. Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. 
+Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties and they can reference either a single resource or a collection of resources. For example, the mailboxes, manager, and direct reports of a user are all exposed as relationships. 
 
-You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results. The maximum number of expanded objects for a request is 20.  
+Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results. The maximum number of expanded objects for a request is 20.  
 
 The following example gets `user` objects, each with up to 20 `directReport` objects in the `directReports` collection expanded:
 
@@ -224,7 +226,7 @@ To sort the results in ascending or descending order, append either `asc` or `de
 
 To specify the page size of the result set, use the `$top` query parameter. 
 
-If there are more items remaining in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. Typically this URL contains a `$skipToken` parameter that references the next page of results; however, some Microsoft Graph APIs return a URL that contains a $skip parameter to index into the result set for the next page of results. For more information, see [Get data in pages](./paging.md). 
+If there are more items remaining in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. Typically this URL contains a `$skipToken` parameter that references the next page of results; however, some Microsoft Graph APIs, return a URL that contains a `$skip` parameter to index into the result set for the next page of results. For more information, see [Get data in pages](./paging.md). 
 
 <!--`The `$top` query parameter limits the results returned to the first N items in the result set, where N is a positive integer. 
 The `$top` query parameter identifies a subset in the collection. This subset is formed by selecting only the first N items of the set, where N is a positive integer specified by this query parameter. -->
@@ -294,6 +296,8 @@ To restrict the results of a request that match a search criterion, use the `$se
 
 > **Note:** You can currently **only** search [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) and [person](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
 
+### Search on `message`
+
 Search criteria are expressed using [Advanced Query Syntax (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). The results are sorted by the date and time that the message was sent.
 
 You can specify the following properties on a `message` in a `$search` criterion:
@@ -312,6 +316,20 @@ The next example searches all messages in the user's Inbox that were sent from a
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
+
+### Search on `person`
+
+Searches on people occur on both the `displayName` and `emailAddress` properties. Searches implement a fuzzy matching algorithm. They will return results based on an exact match and also on inferences about the intent of the search. For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the `people` collection of the signed-in user. All of the following searches will return results that contain that user.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$search=tyler                //matches Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/messages?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/messages?$search=tylerle@example.com  //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/messages?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/messages?$search="tyler lee"          //matches Tyler's name note the quotes to enclose the space.
+```
+
+
 
 ## Error handling for query parameters
 
@@ -334,7 +352,7 @@ https://graph.microsoft.com/beta/me?$expand=photo
 }
 ```
 
-However, it is important to note that query parameters specified in a request may fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you must examine the data returned by the request to determine whether the query parameters you specified had the desired effect. 
+However, it is important to note that query parameters specified in a request may fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. 
 
 ## Determining support for query parameters
 
