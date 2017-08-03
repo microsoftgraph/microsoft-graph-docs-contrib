@@ -21,8 +21,10 @@ POST /privilegedApproval
 In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.
 
 
-### Response
+## Response
 If successful, this method returns `201, Created` response code and [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
+
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 
 ## Example
 ##### Request
