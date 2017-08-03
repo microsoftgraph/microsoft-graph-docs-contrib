@@ -3,6 +3,9 @@
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of directory setting objects.
+
+> **Note**: The /beta version of this API is only for groups. The /v1.0 version has been renamed to group setting.
+
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
