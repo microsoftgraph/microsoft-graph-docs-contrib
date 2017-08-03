@@ -66,7 +66,7 @@ The response to this request will provide the details of the newly created [uplo
 POST https://graph.microsoft.com/beta/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-### Response
+##### Response
 Here is an example of the response.
 
 <!-- {
@@ -114,7 +114,7 @@ Content-Range: bytes 0-25/128
 **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
 If a fragment declares a different file size, the request will fail.
 
-### Response
+##### Response
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -188,7 +188,7 @@ The DELETE request will immedately expire the upload session and remove any prev
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-### Response
+##### Response
 
 <!-- { "blockType": "response" } -->
 ```http
