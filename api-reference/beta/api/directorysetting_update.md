@@ -3,6 +3,9 @@
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update the properties of a specific directory setting object.
+
+> **Note**: The /beta version of this API is only for groups. The /v1.0 version has been renamed to group setting.
+
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
 ## HTTP request
