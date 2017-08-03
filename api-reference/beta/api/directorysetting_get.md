@@ -4,7 +4,7 @@
 
 Retrieve the properties of a specific directory setting object.
 
-> **Note**: The /beta version of this API is only for groups. The /v1.0 version has been renamed to group setting.
+> **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettings*.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*

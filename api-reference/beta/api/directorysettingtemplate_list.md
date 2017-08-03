@@ -4,7 +4,7 @@
 
 Directory setting templates represents a set of templates of directory settings, from which directory settings may be created and used within a tenant.  This operation retrieves the list of available directorySettingTemplates objects.
 
-> **Note**: The /beta version of this API is only for groups. The /v1.0 version has been renamed to group setting.
+> **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *List groupSettingTemplate*.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
