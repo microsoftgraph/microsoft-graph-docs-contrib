@@ -1,48 +1,53 @@
-# Update a directory setting
+# Update a group setting
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-Update the properties of a specific directory setting object.
-
-> **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Update groupSettings*.
+Update the properties of a specific group setting object.
 
 ## Prerequisites
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
+> Note: Only tenant admins have permissions to perform create, update, and delete operations.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
+
 Update a tenant-wide or group specific setting.
+
 ```http
-PATCH /settings/{id}
+PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
 ## Optional request headers
-| Name       | Description|
+| Name | Description |
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required.|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type	| application/json	|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. 
 
-| Property	   | Type	|Description|
+| Property | Type | Description |
 |:---------------|:--------|:----------|
 | values | settingValue | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
 
 ## Response
-If successful, this method returns a `204 OK` response code.
+
+If successful, this method returns a `204 OK` response code and updated [groupSetting](../resources/groupsetting.md) object in the response body.
 
 ## Example
 ##### Request
-Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_directorysetting"
+  "name": "update_groupsetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/settings/{id}
+PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
 Content-type: application/json
-Content-length: 178
+Content-length: 173
 
 {
+  "displayName": "displayName-value",
+  "templateId": "templateId-value",
   "values": [
     {
       "name": "name-value",
@@ -52,10 +57,11 @@ Content-length: 178
 }
 ```
 ##### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directorysetting"
+  "@odata.type": "microsoft.graph.groupSetting"
 } -->
 ```http
 HTTP/1.1 204 OK
@@ -65,7 +71,7 @@ HTTP/1.1 204 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update directorysetting",
+  "description": "Update groupSetting",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
