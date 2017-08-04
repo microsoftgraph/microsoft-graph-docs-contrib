@@ -1,40 +1,46 @@
-# Delete messageRule
+# Delete a group setting
 
-Delete the specified [messageRule](../resources/messagerule.md) object.
+Delete a group setting.
+
 ## Prerequisites
-The following **scopes** are required to execute this API: *MailboxSettings.ReadWrite*
+
+One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+
+> Note: Only tenant admins have permissions to perform create, update, and delete operations.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/mailFolders/inbox/messagerules/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+DELETE /groupSettings/{id}
+DELETE /groups/{id}/settings/{id}
+
 ```
+
 ## Request headers
-| Name       | Description|
+
+| Name | Description |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+| Content-Type  | application/json |
 
 ## Request body
 Do not supply a request body for this method.
 
 
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request
-Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_messagerule"
+  "name": "delete_groupsetting"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZp8=')
-
+DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 ##### Response
-Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -47,7 +53,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete rule",
+  "description": "Delete groupSetting",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
