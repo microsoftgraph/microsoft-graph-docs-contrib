@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "get_sections"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/oennote/sectionGroups/{id}/sections
+GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
