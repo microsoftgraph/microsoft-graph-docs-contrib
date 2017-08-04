@@ -16,6 +16,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2017
 
+### Group settings
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition     | v1.0       | Added support for group settings.<br/>New resource types: [groupSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsetting.md), [groupSettingTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsettingtemplate.md), [settingValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingvalue.md), and [settingTemplateValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingtemplatevalue.md) |
+| Change       | v1.0       | Added property **classification** and navigation property **settings**  to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group.md) |
+
 ### Intune APIs
 
 |Change&nbsp;type|Version|Description|
