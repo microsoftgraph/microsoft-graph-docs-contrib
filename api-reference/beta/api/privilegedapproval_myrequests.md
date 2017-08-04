@@ -24,6 +24,7 @@ GET /privilegedApproval/myRequests
 If successful, this method returns `200, OK` response code and [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
 
 Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
+
 ## Example
 Here is an example of how to call this API.
 ##### Request
