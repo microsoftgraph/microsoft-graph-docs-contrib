@@ -26,36 +26,9 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
-The following permission scopes provide levels of access to OneNote notebooks. Choosing permission scopes depends both on the location of the notebooks you're targeting and your app's functionality. 
+## Authorization
 
-**Scopes for personal notebooks in consumer OneDrive or OneDrive for Business that are owned by the current user**
-
-| Scope | Permission in Azure portal | Description |
-|:-------|:------|:------|
-| Notes.Create | Create users' OneNote notebooks | Can view the titles of your OneNote notebooks and sections; create new notebooks, sections and pages. |
-| Notes.Read | Read users' OneNote notebooks | Can read your OneNote notebooks. |
-| Notes.ReadWrite | Read and write users' OneNote notebooks | Can read, share and modify your OneNote notebooks. |
-
-**Scopes for personal notebooks shared by other users and group notebooks that the current user can access**
-
-| Scope | Permission in Azure portal | Description |
-|:-------|:------|:------|
-| Notes.Read.All | Read all OneNote notebooks that the user can access | Can read all the OneNote notebooks that the signed-in user has access to. |
-| Notes.ReadWrite.All | Read and write all OneNote notebooks that the user can access | Can read, share and modify all the OneNote notebooks that the signed-in user has access to. |
-
-**Note:** Accessing SharePoint site notebooks through the Graph API is currently not supported.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "notebooks",
-    "pages",
-    "resources",
-    "sectionGroups",
-    "sections"
-  ],
-  "@odata.type": "microsoft.graph.onenote"
-}-->
+For information about the permissions required to work with OneNote APIs, see [Notes permissions](../../../permissions_reference.md#notes-permissions).
 
 ## Relationships
 | Relationship | Type	|Description|
