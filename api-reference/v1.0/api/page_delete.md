@@ -11,7 +11,7 @@ Notes.ReadWrite, or Notes.ReadWrite.All
 ```http
 DELETE /me/onenote/pages/{id}
 DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
-DELETE /groups/{id}/oennote/pages/{id}
+DELETE /groups/{id}/onenote/pages/{id}
 DELETE /sites/{id}/oennote/pages/{id}
 ```
 ## Request headers
