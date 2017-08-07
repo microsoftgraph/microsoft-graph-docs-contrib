@@ -1,5 +1,7 @@
 # Get resource
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the binary data of a file or image [resource](../resources/resource.md) object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
@@ -10,6 +12,7 @@ Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All
 GET /me/onenote/resources/{id}/content
 GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
 GET /groups/{id}/onenote/resources/{id}/content
+GET /sites/{id}/onenote/resources/{id}/content
 ```
 
 ## Request headers

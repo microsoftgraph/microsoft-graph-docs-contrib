@@ -1,5 +1,7 @@
 # Get EmailActivity report
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the Exchange Email Activity reports. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44) to check the meaning of different views.
@@ -91,7 +93,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/I0bJ_HpgnSeYRg4sXTiKqggV6eXU0t__XDezYGO-NQw
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as below.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 
 <!-- {
   "blockType": "response",

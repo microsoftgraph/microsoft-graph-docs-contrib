@@ -1,5 +1,7 @@
 # Upload large files with an upload session
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create an upload session to allow your app to upload files up to the maximum file size.
 An upload session allows your app to upload ranges of the file in sequental API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 
@@ -51,7 +53,7 @@ For example, to control the behavior if the filename is already taken, you can s
 | *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` errr response is returned. |
 
 
-### Response
+### Response example
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
 ### Example
@@ -64,7 +66,7 @@ The response to this request will provide the details of the newly created [uplo
 POST https://graph.microsoft.com/beta/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-### Response
+### Response example
 Here is an example of the response.
 
 <!-- {
@@ -112,7 +114,7 @@ Content-Range: bytes 0-25/128
 **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
 If a fragment declares a different file size, the request will fail.
 
-### Response
+### Response example
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -186,7 +188,7 @@ The DELETE request will immedately expire the upload session and remove any prev
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-### Response
+### Response example
 
 <!-- { "blockType": "response" } -->
 ```http

@@ -1,5 +1,7 @@
 # Create page
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new [page](../resources/page.md) in the specified section.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
@@ -7,9 +9,10 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/oennote/sections/{id}/pages
+POST /me/onenote/sections/{id}/pages
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
+POST /sites/{id}/onenote/sections/{id}/pages
 ```
 ## Request headers
 | Name       | Type | Description|

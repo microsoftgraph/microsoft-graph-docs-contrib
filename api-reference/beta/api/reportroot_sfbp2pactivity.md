@@ -1,5 +1,7 @@
 # Get SfbP2PActivity report
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Skype for Business Peer to Peer Activity. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Skype for Business peer-to-peer activity](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713) to check the meaning of different views.
@@ -90,7 +92,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/dfbJ_HpgnSeYRg4sXTiKqdfeXU0t__XDezYGO-NQw
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 <!-- {
   "blockType": "response",
   "truncated": true,

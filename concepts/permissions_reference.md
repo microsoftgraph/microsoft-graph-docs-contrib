@@ -747,8 +747,8 @@ This section shows some common scenarios that target [user](../api-reference/v1.
     
 | **App tasks involving Group**	 |  **Required permissions** |  **Permission strings** |
 |:-------------------------------|:---------------------|:---------------|
-| App wants to read basic group info (only display name and picture), for example to show in a group picking experience	 | _Group.Read.All_  | Read all groups|
-| App wants to read all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |  _Group.Read.All_ | Read items in all site collections, Read all groups|
-| App wants to read and write all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  | 	_Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Read and write all groups, Edit or delete items in all site collections |
-| App wants to discover (find) an Office 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.	 | _Group.ReadWrite.All_ | Read and write all groups|
-| App wants to create a group through AAD Graph | 	_Group.ReadWrite.All_ | Read and write all groups|
+| App wants to read basic group info like display name and picture; for example, to show in a group picking experience.	 | _Group.Read.All_  | Read all groups|
+| App wants to read all content in all public Office 365 groups, including files and conversations.  It also needs to show group members.  |  _Group.Read.All_, _User.ReadBasic.All_ | Read all groups, Read all users' basic profiles |
+| App wants to read and write all content in all public Office 365 groups, including files and conversations.  It also needs to show group members and be able to update group members (if the signed-in user is a group owner).  | 	_Group.ReadWrite.All_, _User.ReadBasic.All_ |  Read and write all groups, Read all users' basic profiles |
+| App wants to allow the user to join public Office 365 groups. It allows the user to search for a particular group and choose one from an enumerated list to join. The user is added to whichever group they select.	 |   _Group.ReadWrite.All_, _User.Read_ | Read and write all groups, Sign-in and read user profile |
+| App wants to create a group through Microsoft Graph. | 	_Group.ReadWrite.All_ | Read and write all groups|
