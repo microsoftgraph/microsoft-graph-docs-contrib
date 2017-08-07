@@ -58,8 +58,10 @@ Content-type: application/json
 }
 ```
 
-## Response
-Here is an example of the response.
+#### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
