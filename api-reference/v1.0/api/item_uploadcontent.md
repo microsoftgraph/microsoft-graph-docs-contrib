@@ -45,9 +45,10 @@ Content-type: text/plain
 The contents of the file goes here.
 ```
 
-## Response
+##### Response
 
-Here is an example of the response.
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

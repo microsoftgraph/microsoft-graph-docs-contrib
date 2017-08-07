@@ -59,10 +59,10 @@ Content-type: application/json
 	"parentReference" : {"path": "/drive/root:/Documents"}
 }
 ```
+##### Response
 
-## Response
+The following example shows the response.
 
-Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
