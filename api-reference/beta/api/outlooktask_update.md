@@ -54,7 +54,8 @@ maintain their previous values or be recalculated based on changes to other prop
 |subject|String|A brief description or title of the task.|
 
 
-### Response
+
+## Response
 If successful, this method returns a `200 OK` response code and updated [outlookTask](../resources/outlooktask.md) object in the response body.
 ## Example
 ##### Request

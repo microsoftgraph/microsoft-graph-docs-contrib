@@ -31,7 +31,8 @@ In the request URL, provide following query parameters with values.
 |deltaRows|Int32||
 |deltaColumns|Int32||
 
-### Response
+
+## Response
 If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example

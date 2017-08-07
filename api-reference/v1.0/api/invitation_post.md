@@ -32,7 +32,8 @@ The following table shows the properties that are required when you create a inv
 |inviteRedirectUrl |string |The URL that the user will be redirected to after redemption.|
 
 
-### Response
+
+## Response
 If successful, this method returns `201, Created` response code and [invitation](../resources/invitation.md) object in the response body.
 
 ## Example

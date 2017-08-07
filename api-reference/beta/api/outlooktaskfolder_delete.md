@@ -21,7 +21,8 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 Do not supply a request body for this method.
 
 
-### Response
+
+## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

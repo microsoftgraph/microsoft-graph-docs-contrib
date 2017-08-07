@@ -31,7 +31,8 @@ The following table shows the properties that are required when you create a pol
 |displayName|String|A custom name for the policy.|
 |type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy"|
 
-### Response
+
+## Response
 If successful, this method returns `201, Created` response code and [policy](../resources/policy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.  
 
 ## Example

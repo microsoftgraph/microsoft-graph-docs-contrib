@@ -21,7 +21,8 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 In the request body, supply a JSON representation of [outlookTaskGroup](../resources/outlooktaskgroup.md) object.
 
 
-### Response
+
+## Response
 If successful, this method returns `201, Created` response code and [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.
 
 ## Example

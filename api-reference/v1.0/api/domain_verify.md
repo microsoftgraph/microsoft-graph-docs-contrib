@@ -27,7 +27,8 @@ POST /domains/{id}/verify
 
 ## Request body
 
-### Response
+
+## Response
 If successful, this method returns `200, OK` response code and [domain](../resources/domain.md) object in the response body.
 
 ## Example

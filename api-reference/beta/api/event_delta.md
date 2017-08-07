@@ -53,7 +53,8 @@ a `GET /calendarview` request. `$select` is not supported in this case.
 | Prefer | string | {Time zone}. Optional, UTC assumed if absent.|
 
 
-### Response
+
+## Response
 If successful, this method returns a `200, OK` response code and [event](../resources/event.md) collection object in the response body.
 
 ## Example

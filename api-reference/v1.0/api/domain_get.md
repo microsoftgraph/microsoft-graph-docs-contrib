@@ -28,7 +28,8 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 
 ## Request body
 Do not supply a request body for this method.
-### Response
+
+## Response
 If successful, this method returns a `200 OK` response code and [domain](../resources/domain.md) object in the response body.
 ## Example
 ##### Request
