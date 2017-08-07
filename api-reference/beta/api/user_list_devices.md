@@ -70,7 +70,8 @@ HTTP/1.1 200 OK
 ## Example
 This example will return the list of devices for a user. To command a device using `me/devices/{id}/command`, you will need to get the ID of the device that is returned.
 
-### Request
+##### Request
+
 Here is an example of the request.
 
 <!-- {
@@ -85,7 +86,7 @@ Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
 
-### Response
+##### Response
 
 <!-- {
   "blockType": "response",
