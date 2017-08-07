@@ -45,7 +45,8 @@ Since the **group** resource supports [extensions](../../../concepts/extensibili
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
-### Response
+## Response
+
 If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
 
 ## Example

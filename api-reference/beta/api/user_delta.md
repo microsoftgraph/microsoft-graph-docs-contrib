@@ -54,7 +54,7 @@ _id_ property is always returned.
 ## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns `200, OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 

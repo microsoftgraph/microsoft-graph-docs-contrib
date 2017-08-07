@@ -28,7 +28,8 @@ POST /directory/deleteditems/{id}/restore
 ## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
+
 If successful, this method returns `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Example

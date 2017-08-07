@@ -19,8 +19,8 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-
 ## Response
+
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
 
 ## Example

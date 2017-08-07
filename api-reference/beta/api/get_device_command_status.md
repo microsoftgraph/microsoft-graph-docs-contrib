@@ -25,7 +25,6 @@ GET me/devices/{id}/commands/{id}
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
-
 ## Response
 
 ```http
@@ -66,9 +65,11 @@ HTTP/1.1 200 OK
 - custom // Custom status
 
 ## Example
+
 In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call to `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
 
-### Request 
+##### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_command"
@@ -83,7 +84,7 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-### Response
+##### Response
 
 <!-- {
   "blockType": "response",
@@ -154,9 +155,10 @@ HTTP/1.1 200 OK
 ```
 
 ## Example
+
 In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command.
 
-#### Request
+##### Request
 
 <!-- {
   "blockType": "request",
@@ -170,7 +172,8 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-#### Response
+##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
