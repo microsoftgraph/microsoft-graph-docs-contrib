@@ -34,7 +34,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [roleAssignment](../resources/intune_rbac_roleassignment.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{roleAssignmentId}

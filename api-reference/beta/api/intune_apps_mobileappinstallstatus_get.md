@@ -34,7 +34,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}

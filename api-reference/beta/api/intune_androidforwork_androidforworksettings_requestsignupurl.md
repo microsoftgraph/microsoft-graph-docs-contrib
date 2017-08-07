@@ -38,7 +38,9 @@ The following table shows the parameters that can be used with this action.
 If successful, this action returns a `200 OK` response code and a String in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/requestSignupUrl

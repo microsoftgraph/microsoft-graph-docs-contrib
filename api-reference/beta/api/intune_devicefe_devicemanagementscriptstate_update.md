@@ -41,7 +41,9 @@ The following table shows the properties that are required when you create a [de
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptState](../resources/intune_devicefe_devicemanagementscriptstate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}

@@ -47,7 +47,9 @@ The following table shows the properties that are required when you create a [im
 If successful, this method returns a `200 OK` response code and an updated [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/importedDeviceIdentityResults/{importedDeviceIdentityResultsId}

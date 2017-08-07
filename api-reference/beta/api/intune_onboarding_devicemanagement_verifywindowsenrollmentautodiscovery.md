@@ -38,7 +38,9 @@ The following table shows the parameters that can be used with this function.
 If successful, this function returns a `200 OK` response code and a Boolean in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/deviceManagementverifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')

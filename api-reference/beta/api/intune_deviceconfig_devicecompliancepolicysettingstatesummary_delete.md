@@ -31,7 +31,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}

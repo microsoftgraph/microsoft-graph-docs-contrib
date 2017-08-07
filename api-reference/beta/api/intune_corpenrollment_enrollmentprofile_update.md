@@ -42,7 +42,9 @@ The following table shows the properties that are required when you create a [en
 If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{enrollmentProfileId}

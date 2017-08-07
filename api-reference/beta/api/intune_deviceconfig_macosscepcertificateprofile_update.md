@@ -59,7 +59,9 @@ The following table shows the properties that are required when you create a [ma
 If successful, this method returns a `200 OK` response code and an updated [macOSScepCertificateProfile](../resources/intune_deviceconfig_macosscepcertificateprofile.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}

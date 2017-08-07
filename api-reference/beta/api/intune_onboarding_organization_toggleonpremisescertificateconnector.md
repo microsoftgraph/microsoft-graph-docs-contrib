@@ -31,7 +31,9 @@ Do not supply a request body for this method.
 If successful, this action returns a `200 OK` response code and a Int32 in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/organization/{organizationId}toggleOnPremisesCertificateConnector

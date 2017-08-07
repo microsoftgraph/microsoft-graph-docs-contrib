@@ -46,7 +46,9 @@ The following table shows the properties that are required when you create a [en
 If successful, this method returns a `200 OK` response code and an updated [enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}

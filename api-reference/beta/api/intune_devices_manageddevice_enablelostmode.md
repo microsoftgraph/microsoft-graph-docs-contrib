@@ -43,7 +43,9 @@ The following table shows the parameters that can be used with this action.
 If successful, this action returns a `204 No Content` response code.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}enableLostMode

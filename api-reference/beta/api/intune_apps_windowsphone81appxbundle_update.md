@@ -66,7 +66,9 @@ The following table shows the properties that are required when you create a [wi
 If successful, this method returns a `200 OK` response code and an updated [windowsPhone81AppXBundle](../resources/intune_apps_windowsphone81appxbundle.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
