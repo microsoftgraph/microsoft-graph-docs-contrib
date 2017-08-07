@@ -92,7 +92,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +101,7 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
-ContentDate,Group Name,Group Owner,Type,Last activity date (UTC),Deleted,Message received,Item count,Item size,Members,Guests,Reporting period in days
+ContentDate,Group name,Deleted,Group owner,Last activity date (UTC),Type,Members,Guests,Exchange emails received,SharePoint active files,Yammer messages posted,Yammer messages read,Yammer messages liked,Exchange mailbox total items,Exchange mailbox storage used (MB),SharePoint total files,SharePoint site storage used (MB),Reporting period in days
 ```
 
 ### Other valid requests
