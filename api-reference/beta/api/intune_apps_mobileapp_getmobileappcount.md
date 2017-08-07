@@ -32,9 +32,8 @@ The following table shows the parameters that can be used with this function.
 |---|---|---|
 |status|String|Not yet documented|
 
-
-
 ## Response
+
 If successful, this function returns a `200 OK` response code and a Int64 in the response body.
 
 ## Example

@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a [wi
 |applicationType|String|Application Type Possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object in the response body.
 
 ## Example

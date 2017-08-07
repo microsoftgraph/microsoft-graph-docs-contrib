@@ -47,9 +47,8 @@ The following table shows the properties that are required when you create a web
 |appUrl|String|The web app URL.|
 |useManagedBrowser|Boolean|Whether or not to use managed browser. This property is only applicable for Android and IOS.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [webApp](../resources/intune_apps_webapp.md) object in the response body.
 
 ## Example

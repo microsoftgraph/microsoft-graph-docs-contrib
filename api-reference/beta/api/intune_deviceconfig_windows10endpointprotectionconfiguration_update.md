@@ -46,9 +46,8 @@ The following table shows the properties that are required when you create a [wi
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune_deviceconfig_bitlockerfixeddrivepolicy.md)|BitLocker Fixed Drive Policy.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune_deviceconfig_bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windows10EndpointProtectionConfiguration](../resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) object in the response body.
 
 ## Example

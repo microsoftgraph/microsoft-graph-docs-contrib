@@ -52,9 +52,8 @@ The following table shows the properties that are required when you create a [an
 |totalLicenseCount|Int32|The total number of VPP licenses.|
 |appStoreUrl|String|The Play for Work Store app URL.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [androidForWorkApp](../resources/intune_apps_androidforworkapp.md) object in the response body.
 
 ## Example

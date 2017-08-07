@@ -39,9 +39,8 @@ The following table shows the properties that are required when you create a [sy
 |certStatus|Int32|The Cert Status Provisioned or not Provisioned.|
 |certType|Int32|The Type of the CodeSigning Cert as Symantec Cert.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [symantecCertificate](../resources/intune_apps_symanteccertificate.md) object in the response body.
 
 ## Example

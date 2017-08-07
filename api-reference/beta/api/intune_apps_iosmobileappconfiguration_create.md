@@ -40,9 +40,8 @@ The following table shows the properties that are required when you create a ios
 |settingXml|String|mdm app configuration.|
 |settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) object in the response body.
 
 ## Example

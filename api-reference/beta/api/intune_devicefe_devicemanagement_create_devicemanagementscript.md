@@ -39,9 +39,8 @@ The following table shows the properties that are required when you create a dev
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified.|
 |runAsAccount|String|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) object in the response body.
 
 ## Example

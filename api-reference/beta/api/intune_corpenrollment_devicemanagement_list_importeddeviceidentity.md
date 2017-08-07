@@ -28,6 +28,7 @@ GET /deviceManagement/importedDeviceIdentities/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) objects in the response body.
 
 ## Example

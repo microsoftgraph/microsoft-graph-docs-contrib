@@ -32,9 +32,8 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Not yet documented|
 
-
-
 ## Response
+
 If successful, this action returns a `204 No Content` response code.
 
 ## Example

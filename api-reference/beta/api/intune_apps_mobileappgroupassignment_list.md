@@ -28,6 +28,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) objects in the response body.
 
 ## Example

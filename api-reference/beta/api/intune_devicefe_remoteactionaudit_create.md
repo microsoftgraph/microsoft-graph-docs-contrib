@@ -40,9 +40,8 @@ The following table shows the properties that are required when you create a rem
 |deviceIMEI|String|IMEI of the device.|
 |actionState|String|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) object in the response body.
 
 ## Example

@@ -28,6 +28,7 @@ GET /deviceAppManagement/managedEBooks/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [iosVppEBook](../resources/intune_books_iosvppebook.md) objects in the response body.
 
 ## Example

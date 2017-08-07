@@ -37,9 +37,8 @@ The following table shows the properties that are required when you create a loc
 |messageTemplate|String|The Message Template content.|
 |isDefault|Boolean|Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [localizedNotificationMessage](../resources/intune_deviceconfig_localizednotificationmessage.md) object in the response body.
 
 ## Example

@@ -28,6 +28,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [deviceManagementScriptUserState](../resources/intune_devicefe_devicemanagementscriptuserstate.md) objects in the response body.
 
 ## Example

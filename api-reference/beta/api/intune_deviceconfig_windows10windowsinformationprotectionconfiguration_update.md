@@ -51,9 +51,8 @@ The following table shows the properties that are required when you create a [wi
 |allowWindowsSearch|Boolean|Allow Windows Search to search encrypted corporate data and Store apps.|
 |showIcon|Boolean|Show the Windows Information Protection icon overlay.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windows10WindowsInformationProtectionConfiguration](../resources/intune_deviceconfig_windows10windowsinformationprotectionconfiguration.md) object in the response body.
 
 ## Example

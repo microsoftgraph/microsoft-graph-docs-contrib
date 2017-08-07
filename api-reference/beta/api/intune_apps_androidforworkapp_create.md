@@ -49,9 +49,8 @@ The following table shows the properties that are required when you create a and
 |totalLicenseCount|Int32|The total number of VPP licenses.|
 |appStoreUrl|String|The Play for Work Store app URL.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [androidForWorkApp](../resources/intune_apps_androidforworkapp.md) object in the response body.
 
 ## Example

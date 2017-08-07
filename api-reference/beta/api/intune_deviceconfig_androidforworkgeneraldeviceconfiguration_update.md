@@ -61,9 +61,8 @@ The following table shows the properties that are required when you create a [an
 |workProfilePasswordRequiredType|String|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileRequirePassword|Boolean|Password is required or not for work profile|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [androidForWorkGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) object in the response body.
 
 ## Example

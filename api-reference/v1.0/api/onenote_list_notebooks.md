@@ -29,7 +29,9 @@ Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [notebook](../resources/notebook.md) objects in the response body.
 ## Example
 ##### Request

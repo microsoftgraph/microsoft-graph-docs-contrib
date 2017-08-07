@@ -33,9 +33,8 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |deviceConfigurationGroupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|Not yet documented|
 
-
-
 ## Response
+
 If successful, this action returns a `200 OK` response code and a [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection in the response body.
 
 ## Example

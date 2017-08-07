@@ -37,9 +37,8 @@ The following table shows the properties that are required when you create a tel
 |enabled|Boolean|Whether Intune's connection to the TEM service is currently enabled or disabled.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object in the response body.
 
 ## Example

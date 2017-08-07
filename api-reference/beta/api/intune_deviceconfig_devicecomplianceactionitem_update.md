@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a [de
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 |notificationTemplateId|String|What notification Message template to use|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object in the response body.
 
 ## Example

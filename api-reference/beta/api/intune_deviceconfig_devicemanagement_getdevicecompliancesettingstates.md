@@ -33,9 +33,8 @@ The following table shows the parameters that can be used with this function.
 |settingName|String|Not yet documented|
 |policyBaseType|String|Not yet documented|
 
-
-
 ## Response
+
 If successful, this function returns a `200 OK` response code and a [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) collection in the response body.
 
 ## Example

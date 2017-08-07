@@ -28,6 +28,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) objects in the response body.
 
 ## Example

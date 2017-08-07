@@ -41,9 +41,8 @@ The following table shows the properties that are required when you create a [im
 |platform|String|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object in the response body.
 
 ## Example

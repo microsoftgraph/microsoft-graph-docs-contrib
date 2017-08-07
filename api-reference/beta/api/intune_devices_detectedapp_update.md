@@ -36,9 +36,8 @@ The following table shows the properties that are required when you create a [de
 |sizeInByte|Int64|Discovered application size in bytes. Read-only|
 |deviceCount|Int32|The number of devices that have installed this application|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [detectedApp](../resources/intune_devices_detectedapp.md) object in the response body.
 
 ## Example

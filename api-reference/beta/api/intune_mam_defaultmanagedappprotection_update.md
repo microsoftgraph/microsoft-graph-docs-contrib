@@ -69,9 +69,8 @@ The following table shows the properties that are required when you create a [de
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object in the response body.
 
 ## Example

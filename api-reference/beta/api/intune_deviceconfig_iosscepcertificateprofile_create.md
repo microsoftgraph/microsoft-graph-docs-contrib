@@ -51,9 +51,8 @@ The following table shows the properties that are required when you create a ios
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosScepCertificateProfile](../resources/intune_deviceconfig_iosscepcertificateprofile.md) object in the response body.
 
 ## Example

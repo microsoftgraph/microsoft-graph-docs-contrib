@@ -28,6 +28,7 @@ GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/wi
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) objects in the response body.
 
 ## Example

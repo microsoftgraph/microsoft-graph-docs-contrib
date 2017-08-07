@@ -36,9 +36,8 @@ The following table shows the properties that are required when you create a [de
 |successUserCount|Int32|Success user count.|
 |errorUserCount|Int32|Error user count.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptRunSummary](../resources/intune_devicefe_devicemanagementscriptrunsummary.md) object in the response body.
 
 ## Example

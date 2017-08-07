@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a [ma
 |version|String|Version of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |content|[Json](../resources/intune_mam_json.md)|Status report content.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object in the response body.
 
 ## Example

@@ -51,9 +51,8 @@ _id_ property is always returned.
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
-
-
 ## Response
+
 If successful, this method returns a `200, OK` response code and [message](../resources/message.md) collection object in the response body.
 
 ## Example

@@ -29,6 +29,7 @@ GET /users/{usersId}/managedAppRegistrations//getUsersWithFlaggedAppRegistration
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this function returns a `200 OK` response code and a [directoryObject](../resources/intune_mam_directoryobject.md) collection in the response body.
 
 ## Example

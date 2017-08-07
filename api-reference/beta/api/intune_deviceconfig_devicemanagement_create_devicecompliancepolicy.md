@@ -37,9 +37,8 @@ The following table shows the properties that are required when you create a dev
 |displayName|String|Admin provided name of the device configuration.|
 |version|Int32|Version of the device configuration.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) object in the response body.
 
 ## Example

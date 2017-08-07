@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a ter
 |acceptedVersion|Int32|Most recent version number of the T&C accepted by the user.|
 |acceptedDateTime|DateTimeOffset|DateTime when the terms were last accepted by the user.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object in the response body.
 
 ## Example

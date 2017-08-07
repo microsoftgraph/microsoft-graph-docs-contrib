@@ -48,9 +48,8 @@ The following table shows the properties that are required when you create a man
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |bundleId|String|The app's bundle ID.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object in the response body.
 
 ## Example

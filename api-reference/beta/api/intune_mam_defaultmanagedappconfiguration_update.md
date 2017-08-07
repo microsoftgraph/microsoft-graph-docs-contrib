@@ -42,9 +42,8 @@ The following table shows the properties that are required when you create a [de
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md)|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [defaultManagedAppConfiguration](../resources/intune_mam_defaultmanagedappconfiguration.md) object in the response body.
 
 ## Example

@@ -42,9 +42,8 @@ The following table shows the properties that are required when you create a win
 |trustedRootCertificate|Binary|Trusted Root Certificate|
 |certFileName|String|File name to display in UI.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsPhone81TrustedRootCertificate](../resources/intune_deviceconfig_windowsphone81trustedrootcertificate.md) object in the response body.
 
 ## Example

@@ -51,9 +51,8 @@ The following table shows the properties that are required when you create a [an
 |appStoreUrl|String|The Android app store URL.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [androidStoreApp](../resources/intune_apps_androidstoreapp.md) object in the response body.
 
 ## Example

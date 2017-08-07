@@ -43,9 +43,8 @@ The following table shows the properties that are required when you create a [cl
 |trustedRootCertificate|Binary|PKCS Certificate Template Name|
 |version|Int32|Version of the CloudPkiSubscription.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object in the response body.
 
 ## Example

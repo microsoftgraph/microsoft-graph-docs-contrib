@@ -29,8 +29,8 @@ In the request body, provide a JSON object with the parameters that need to be u
 |isOrganizationDefault|Boolean|Specifies if this policy is applied by default.|
 |type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy"|
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example

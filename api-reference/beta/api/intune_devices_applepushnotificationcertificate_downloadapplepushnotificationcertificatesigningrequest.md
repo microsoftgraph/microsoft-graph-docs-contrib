@@ -28,6 +28,7 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this function returns a `200 OK` response code and a String in the response body.
 
 ## Example

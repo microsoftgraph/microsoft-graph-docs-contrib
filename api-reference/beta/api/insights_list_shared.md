@@ -39,7 +39,9 @@ See the [sharingDetail](../resources/insights_sharingdetail.md) complex type.
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a list of [shared](../resources/insights_shared.md) items in the response body.
 ## Example
 

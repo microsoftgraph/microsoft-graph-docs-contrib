@@ -33,9 +33,8 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |deviceComplianceScheduledActionForRules|[deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) collection|Not yet documented|
 
-
-
 ## Response
+
 If successful, this action returns a `204 No Content` response code.
 
 ## Example

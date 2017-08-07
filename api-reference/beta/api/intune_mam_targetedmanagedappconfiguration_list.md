@@ -28,6 +28,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) objects in the response body.
 
 ## Example

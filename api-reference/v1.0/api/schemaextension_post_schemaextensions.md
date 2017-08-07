@@ -37,6 +37,7 @@ The following table shows the properties that are required when you create a sch
 |targetTypes|String collection|Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.
 
 ## Example

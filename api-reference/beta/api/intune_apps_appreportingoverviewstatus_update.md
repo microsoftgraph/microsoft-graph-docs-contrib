@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a [ap
 |failedApplicationCount|Int64|Number of users with failed devices across all apps.|
 |appInstallFailures|[appInstallationFailure](../resources/intune_apps_appinstallationfailure.md) collection|Individual status of app installation failures.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [appReportingOverviewStatus](../resources/intune_apps_appreportingoverviewstatus.md) object in the response body.
 
 ## Example

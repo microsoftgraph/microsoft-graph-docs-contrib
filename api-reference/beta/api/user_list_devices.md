@@ -28,6 +28,7 @@ GET me/devices
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a 200 response code and the user device properties in the response body.
 
 ```http

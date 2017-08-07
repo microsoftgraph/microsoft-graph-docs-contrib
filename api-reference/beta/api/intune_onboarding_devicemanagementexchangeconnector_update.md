@@ -38,9 +38,8 @@ The following table shows the properties that are required when you create a [de
 |exchangeConnectorType|String|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String|The version of the ExchangeConnectorAgent|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) object in the response body.
 
 ## Example

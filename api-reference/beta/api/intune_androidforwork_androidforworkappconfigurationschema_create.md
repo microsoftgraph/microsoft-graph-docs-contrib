@@ -34,9 +34,8 @@ The following table shows the properties that are required when you create a and
 |exampleJson|[androidForWorkAppConfigurationExample](../resources/intune_androidforwork_androidforworkappconfigurationexample.md)|Example JSON confirming to this schema that demonstrates how to set the configuration for this app|
 |schemaItems|[androidForWorkAppConfigurationSchemaItem](../resources/intune_androidforwork_androidforworkappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [androidForWorkAppConfigurationSchema](../resources/intune_androidforwork_androidforworkappconfigurationschema.md) object in the response body.
 
 ## Example

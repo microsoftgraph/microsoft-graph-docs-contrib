@@ -22,8 +22,8 @@ In the request URL, provide following query parameters with values.
 |:---------------|:--------|:----------|
 |index|Int32|Index of the item to be returned.|
 
-
 ## Response
+
 If successful, this method returns `200, OK` response code and [workbookRangeView](../resources/workbookrangeview.md) object in the response body.
 
 ## Example

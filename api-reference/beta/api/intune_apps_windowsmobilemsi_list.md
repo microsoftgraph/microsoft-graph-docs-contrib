@@ -28,6 +28,7 @@ GET /deviceAppManagement/mobileApps/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [windowsMobileMSI](../resources/intune_apps_windowsmobilemsi.md) objects in the response body.
 
 ## Example

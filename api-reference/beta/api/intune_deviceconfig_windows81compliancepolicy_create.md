@@ -48,9 +48,8 @@ The following table shows the properties that are required when you create a win
 |osMaximumVersion|String|Maximum Windows 8.1 version.|
 |storageRequireEncryption|Boolean|Indicates whether or not to require encryption on a windows 8.1 device.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) object in the response body.
 
 ## Example

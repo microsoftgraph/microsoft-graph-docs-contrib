@@ -37,9 +37,8 @@ The following table shows the properties that are required when you create a [ro
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [roleAssignment](../resources/intune_rbac_roleassignment.md) object in the response body.
 
 ## Example

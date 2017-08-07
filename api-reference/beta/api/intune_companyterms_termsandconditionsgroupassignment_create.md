@@ -33,9 +33,8 @@ The following table shows the properties that are required when you create a ter
 |id|String|Unique identifier of the entity.|
 |targetGroupId|String|Unique identifier of a group that the T&C policy is assigned to.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) object in the response body.
 
 ## Example

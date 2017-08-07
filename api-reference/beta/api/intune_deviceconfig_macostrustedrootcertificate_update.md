@@ -43,9 +43,8 @@ The following table shows the properties that are required when you create a [ma
 |trustedRootCertificate|Binary|Trusted Root Certificate.|
 |certFileName|String|File name to display in UI.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md) object in the response body.
 
 ## Example

@@ -28,6 +28,7 @@ GET /deviceManagement/deviceManagementScripts/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) objects in the response body.
 
 ## Example

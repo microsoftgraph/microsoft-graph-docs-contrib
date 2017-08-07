@@ -33,9 +33,8 @@ The following table shows the properties that are required when you create a [mo
 |targetGroupId|String|The ID of the AAD group in which the app provisioning configuration is being targeted.|
 |id|String|Key of the entity.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [mobileAppProvisioningConfigGroupAssignment](../resources/intune_apps_mobileappprovisioningconfiggroupassignment.md) object in the response body.
 
 ## Example

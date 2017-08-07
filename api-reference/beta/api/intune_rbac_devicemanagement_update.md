@@ -32,9 +32,8 @@ The following table shows the properties that are required when you create a [de
 |---|---|---|
 |id|String|Not yet documented|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_rbac_devicemanagement.md) object in the response body.
 
 ## Example

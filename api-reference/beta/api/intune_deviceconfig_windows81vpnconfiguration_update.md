@@ -49,9 +49,8 @@ The following table shows the properties that are required when you create a [wi
 |enableSplitTunneling|Boolean|Enable split tunneling for the VPN.|
 |proxyServer|[windows81VpnProxyServer](../resources/intune_deviceconfig_windows81vpnproxyserver.md)|Proxy Server.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md) object in the response body.
 
 ## Example

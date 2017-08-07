@@ -28,6 +28,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStat
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [deviceManagementScriptState](../resources/intune_devicefe_devicemanagementscriptstate.md) objects in the response body.
 
 ## Example

@@ -43,9 +43,8 @@ The following table shows the properties that are required when you create a ios
 |studentCertificateSettings|[iosEduCertificateSettings](../resources/intune_deviceconfig_ioseducertificatesettings.md)|The Trusted Root and PFX certificates for Student|
 |deviceCertificateSettings|[iosEduCertificateSettings](../resources/intune_deviceconfig_ioseducertificatesettings.md)|The Trusted Root and PFX certificates for Device|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosEduDeviceConfiguration](../resources/intune_deviceconfig_iosedudeviceconfiguration.md) object in the response body.
 
 ## Example

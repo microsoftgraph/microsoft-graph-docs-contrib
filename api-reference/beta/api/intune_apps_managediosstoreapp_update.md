@@ -51,9 +51,8 @@ The following table shows the properties that are required when you create a [ma
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |bundleId|String|The app's bundle ID.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [managedIOSStoreApp](../resources/intune_apps_managediosstoreapp.md) object in the response body.
 
 ## Example

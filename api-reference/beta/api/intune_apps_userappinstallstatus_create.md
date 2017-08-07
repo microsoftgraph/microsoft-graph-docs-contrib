@@ -37,9 +37,8 @@ The following table shows the properties that are required when you create a use
 |failedDeviceCount|Int32|Failed Device Count.|
 |notInstalledDeviceCount|Int32|Not installed device count.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) object in the response body.
 
 ## Example

@@ -46,9 +46,8 @@ The following table shows the properties that are required when you create a win
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appStoreUrl|String|The Windows Phone 8.1 app store URL.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsPhone81StoreApp](../resources/intune_apps_windowsphone81storeapp.md) object in the response body.
 
 ## Example

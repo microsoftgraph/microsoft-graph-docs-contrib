@@ -33,9 +33,8 @@ The following table shows the properties that are required when you create a [de
 |id|String|Not yet documented|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_onboarding_devicemanagement.md) object in the response body.
 
 ## Example

@@ -50,9 +50,8 @@ The following table shows the properties that are required when you create a ios
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md) object in the response body.
 
 ## Example

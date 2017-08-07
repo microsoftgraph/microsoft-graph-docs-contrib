@@ -21,8 +21,8 @@ GET /policies/{id}/appliesTo
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns `200, OK` response code and [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example

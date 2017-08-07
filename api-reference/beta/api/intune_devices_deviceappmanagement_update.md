@@ -32,9 +32,8 @@ The following table shows the properties that are required when you create a [de
 |---|---|---|
 |id|String|Key of the entity.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceAppManagement](../resources/intune_devices_deviceappmanagement.md) object in the response body.
 
 ## Example

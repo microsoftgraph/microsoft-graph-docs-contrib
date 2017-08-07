@@ -39,9 +39,8 @@ The following table shows the properties that are required when you create a [ap
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
 |certificate|String|Not yet documented|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md) object in the response body.
 
 ## Example

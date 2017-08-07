@@ -30,6 +30,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object in the response body.
 
 ## Example

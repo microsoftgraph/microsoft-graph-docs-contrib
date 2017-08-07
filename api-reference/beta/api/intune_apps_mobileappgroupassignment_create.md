@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a mob
 |id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) object in the response body.
 
 ## Example

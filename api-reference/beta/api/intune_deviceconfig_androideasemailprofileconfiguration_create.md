@@ -53,9 +53,8 @@ The following table shows the properties that are required when you create a and
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |usernameSource|String|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `username`, `userPrincipalName`.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [androidEasEmailProfileConfiguration](../resources/intune_deviceconfig_androideasemailprofileconfiguration.md) object in the response body.
 
 ## Example

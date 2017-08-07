@@ -38,9 +38,8 @@ The following table shows the properties that are required when you create a [en
 |certStatus|Int32|The Cert Status Provisioned or not Provisioned.|
 |certType|Int32|The Type of the CodeSigning Cert as Enterprise Cert.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [enterpriseCertificate](../resources/intune_apps_enterprisecertificate.md) object in the response body.
 
 ## Example

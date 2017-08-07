@@ -28,6 +28,7 @@ GET /organization/{organizationId}/sideLoadingKeys/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) objects in the response body.
 
 ## Example

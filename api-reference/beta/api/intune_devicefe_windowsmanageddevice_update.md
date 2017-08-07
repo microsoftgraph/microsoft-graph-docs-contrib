@@ -73,9 +73,8 @@ The following table shows the properties that are required when you create a [wi
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires Inherited from [managedDevice](../resources/intune_devicefe_manageddevice.md)|
 |serialNumber|String|SerialNumber Inherited from [managedDevice](../resources/intune_devicefe_manageddevice.md)|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsManagedDevice](../resources/intune_devicefe_windowsmanageddevice.md) object in the response body.
 
 ## Example

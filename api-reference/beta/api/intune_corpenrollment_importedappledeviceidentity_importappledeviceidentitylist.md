@@ -33,9 +33,8 @@ The following table shows the parameters that can be used with this action.
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) collection|Not yet documented|
 |overwriteImportedDeviceIdentities|Boolean|Not yet documented|
 
-
-
 ## Response
+
 If successful, this action returns a `200 OK` response code and a [importedAppleDeviceIdentityResult](../resources/intune_corpenrollment_importedappledeviceidentityresult.md) collection in the response body.
 
 ## Example

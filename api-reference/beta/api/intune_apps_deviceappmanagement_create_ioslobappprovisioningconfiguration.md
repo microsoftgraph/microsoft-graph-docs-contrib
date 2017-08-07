@@ -40,9 +40,8 @@ The following table shows the properties that are required when you create a ios
 |displayName|String|Admin provided name of the device configuration.|
 |version|Int32|Version of the device configuration.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune_apps_ioslobappprovisioningconfiguration.md) object in the response body.
 
 ## Example

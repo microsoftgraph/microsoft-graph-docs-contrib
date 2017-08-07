@@ -56,9 +56,8 @@ The following table shows the properties that are required when you create a [wi
 |restartMode|String|Set restart mode allowed level to power or battery Possible values are: `userDefined`, `onBatteryWithAtLeast40PercentCharge`, `connectedToPowerSupply`.|
 |previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object in the response body.
 
 ## Example

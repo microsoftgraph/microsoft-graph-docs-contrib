@@ -74,9 +74,8 @@ The following table shows the properties that are required when you create a win
 |userAccountControlSettings|String|The user account control settings. Possible values are: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|String|The work folders url.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windows81GeneralConfiguration](../resources/intune_deviceconfig_windows81generalconfiguration.md) object in the response body.
 
 ## Example

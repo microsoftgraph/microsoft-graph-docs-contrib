@@ -39,9 +39,8 @@ The following table shows the properties that are required when you create a car
 |deviceCartIds|String collection|Identifiers of device carts to be associated with classes.|
 |classroomIds|String collection|Identifiers of classrooms to be associated with device carts.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object in the response body.
 
 ## Example

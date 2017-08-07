@@ -29,6 +29,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [roleAssignment](../resources/intune_rbac_roleassignment.md) objects in the response body.
 
 ## Example

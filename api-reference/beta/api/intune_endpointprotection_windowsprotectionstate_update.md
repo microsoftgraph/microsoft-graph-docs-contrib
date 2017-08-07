@@ -49,9 +49,8 @@ The following table shows the properties that are required when you create a [wi
 |lastFullScanSignatureVersion|String|Last full scan signature version|
 |lastReportedDateTime|DateTimeOffset|Last device health status reported time|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object in the response body.
 
 ## Example

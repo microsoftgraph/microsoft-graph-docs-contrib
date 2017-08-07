@@ -68,9 +68,8 @@ The following table shows the properties that are required when you create a [an
 |encryptAppData|Boolean|Indicates whether application data for managed apps should be encrypted|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) object in the response body.
 
 ## Example

@@ -32,9 +32,8 @@ The following table shows the properties that are required when you create a [wi
 |---|---|---|
 |id|String|The unique Identifier for the device protection status object. This is device id of the device|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsProtectionState](../resources/intune_devicefe_windowsprotectionstate.md) object in the response body.
 
 ## Example

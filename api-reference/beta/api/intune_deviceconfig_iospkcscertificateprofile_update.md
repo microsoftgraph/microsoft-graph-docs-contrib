@@ -50,9 +50,8 @@ The following table shows the properties that are required when you create a [io
 |certificateTemplateName|String|PKCS Certificate Template Name.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [iosPkcsCertificateProfile](../resources/intune_deviceconfig_iospkcscertificateprofile.md) object in the response body.
 
 ## Example

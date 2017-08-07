@@ -33,9 +33,8 @@ The following table shows the properties that are required when you create a [de
 |id|String|Key of the entity.|
 |ruleName|String|Name of the rule which this scheduled action applies to.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) object in the response body.
 
 ## Example

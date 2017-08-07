@@ -28,6 +28,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) objects in the response body.
 
 ## Example

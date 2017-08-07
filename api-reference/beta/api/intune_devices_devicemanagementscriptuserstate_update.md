@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a [de
 |errorDeviceCount|Int32|Error device count for specific user.|
 |userPrincipalName|String|User principle name of specific user.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) object in the response body.
 
 ## Example

@@ -37,9 +37,8 @@ The following table shows the properties that are required when you create a det
 |sizeInByte|Int64|Discovered application size in bytes. Read-only|
 |deviceCount|Int32|The number of devices that have installed this application|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [detectedApp](../resources/intune_devicefe_detectedapp.md) object in the response body.
 
 ## Example

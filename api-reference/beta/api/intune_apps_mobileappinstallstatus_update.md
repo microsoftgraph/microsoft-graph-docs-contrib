@@ -42,9 +42,8 @@ The following table shows the properties that are required when you create a [mo
 |userName|String|Device User Name|
 |userPrincipalName|String|User Principal Name|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object in the response body.
 
 ## Example

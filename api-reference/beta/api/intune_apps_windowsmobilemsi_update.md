@@ -54,9 +54,8 @@ The following table shows the properties that are required when you create a [wi
 |commandLine|String|The command line.|
 |productCode|String|The product code.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsMobileMSI](../resources/intune_apps_windowsmobilemsi.md) object in the response body.
 
 ## Example

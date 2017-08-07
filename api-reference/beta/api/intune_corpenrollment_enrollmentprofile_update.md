@@ -36,9 +36,8 @@ The following table shows the properties that are required when you create a [en
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object in the response body.
 
 ## Example

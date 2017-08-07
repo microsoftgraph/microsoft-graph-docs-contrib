@@ -28,6 +28,7 @@ GET /deviceAppManagement/defaultManagedAppProtections/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) objects in the response body.
 
 ## Example

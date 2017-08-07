@@ -34,9 +34,8 @@ The following table shows the properties that are required when you create a dir
 |---|---|---|
 |id|String|The directory object identifier|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [directoryObject](../resources/intune_mam_directoryobject.md) object in the response body.
 
 ## Example

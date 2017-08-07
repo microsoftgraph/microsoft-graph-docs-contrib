@@ -33,9 +33,8 @@ The following table shows the properties that are required when you create a [de
 |id|String|Unique Identifier for the device|
 |subscriptionState|String|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_devicefe_devicemanagement.md) object in the response body.
 
 ## Example

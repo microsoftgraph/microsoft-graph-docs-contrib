@@ -19,8 +19,8 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 
 ## Request body
 
-
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

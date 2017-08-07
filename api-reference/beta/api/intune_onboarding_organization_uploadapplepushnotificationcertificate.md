@@ -33,9 +33,8 @@ The following table shows the parameters that can be used with this action.
 |appleIdentifier|String|Not yet documented|
 |applePushNotificationCertificate|String|Not yet documented|
 
-
-
 ## Response
+
 If successful, this action returns a `200 OK` response code and a [organization](../resources/intune_onboarding_organization.md) in the response body.
 
 ## Example

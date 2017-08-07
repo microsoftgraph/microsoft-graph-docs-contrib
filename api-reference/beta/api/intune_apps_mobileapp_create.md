@@ -45,9 +45,8 @@ The following table shows the properties that are required when you create a mob
 |notes|String|Notes for the app.|
 |uploadState|Int32|The upload state.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [mobileApp](../resources/intune_apps_mobileapp.md) object in the response body.
 
 ## Example

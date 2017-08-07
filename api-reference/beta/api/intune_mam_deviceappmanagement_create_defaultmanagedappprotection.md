@@ -69,9 +69,8 @@ The following table shows the properties that are required when you create a def
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object in the response body.
 
 ## Example

@@ -39,9 +39,8 @@ The following table shows the properties that are required when you create a [wi
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) object in the response body.
 
 ## Example

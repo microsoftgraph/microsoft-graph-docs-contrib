@@ -28,6 +28,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/use
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Example

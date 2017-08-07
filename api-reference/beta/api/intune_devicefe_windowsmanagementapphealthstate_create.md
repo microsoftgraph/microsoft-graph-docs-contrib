@@ -37,9 +37,8 @@ The following table shows the properties that are required when you create a win
 |deviceName|String|Name of the device on which Windows management app is installed.|
 |deviceOSVersion|String|Windows 10 OS version of the device on which Windows management app is installed.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsManagementAppHealthState](../resources/intune_devicefe_windowsmanagementapphealthstate.md) object in the response body.
 
 ## Example

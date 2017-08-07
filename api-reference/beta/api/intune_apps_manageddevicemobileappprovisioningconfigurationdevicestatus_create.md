@@ -36,9 +36,8 @@ The following table shows the properties that are required when you create a man
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppProvisioningConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappprovisioningconfigurationdevicestatus.md) object in the response body.
 
 ## Example

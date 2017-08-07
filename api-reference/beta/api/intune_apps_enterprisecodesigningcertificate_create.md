@@ -40,9 +40,8 @@ The following table shows the properties that are required when you create a ent
 |expirationDateTime|DateTimeOffset|The Cert Expiration Date.|
 |uploadDateTime|DateTimeOffset|The date time of CodeSigning Cert when it is uploaded.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) object in the response body.
 
 ## Example

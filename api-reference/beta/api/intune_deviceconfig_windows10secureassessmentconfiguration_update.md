@@ -46,9 +46,8 @@ The following table shows the properties that are required when you create a [wi
 |allowScreenCapture|Boolean|Indicates whether or not to allow screen capture capability during a test.|
 |allowTextSuggestion|Boolean|Indicates whether or not to allow text suggestions during the test.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windows10SecureAssessmentConfiguration](../resources/intune_deviceconfig_windows10secureassessmentconfiguration.md) object in the response body.
 
 ## Example

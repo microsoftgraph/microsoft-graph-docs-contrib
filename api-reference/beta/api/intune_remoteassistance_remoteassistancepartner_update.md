@@ -36,9 +36,8 @@ The following table shows the properties that are required when you create a [re
 |onboardingStatus|String|TBD Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) object in the response body.
 
 ## Example

@@ -25,7 +25,6 @@ GET me/devices/{id}/commands/{id}
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
-
 ## Response
 
 ```http

@@ -36,9 +36,8 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |mobileAppCategories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Not yet documented|
 
-
-
 ## Response
+
 If successful, this action returns a `204 No Content` response code.
 
 ## Example

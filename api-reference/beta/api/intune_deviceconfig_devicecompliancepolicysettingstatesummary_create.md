@@ -42,9 +42,8 @@ The following table shows the properties that are required when you create a dev
 |errorDeviceCount|Int32|Number of error devices|
 |conflictDeviceCount|Int32|Number of conflict devices|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) object in the response body.
 
 ## Example

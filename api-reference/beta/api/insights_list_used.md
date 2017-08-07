@@ -37,7 +37,9 @@ See the available Container Types and Types you can filter by in [resourceVisual
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights_used.md) items in the response body.
 ## Example
 

@@ -40,9 +40,8 @@ The following table shows the properties that are required when you create a [re
 |deviceIMEI|String|IMEI of the device.|
 |actionState|String|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) object in the response body.
 
 ## Example

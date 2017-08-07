@@ -40,9 +40,8 @@ The following table shows the properties that are required when you create a ios
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosEducationDeviceConfiguration](../resources/intune_deviceconfig_ioseducationdeviceconfiguration.md) object in the response body.
 
 ## Example

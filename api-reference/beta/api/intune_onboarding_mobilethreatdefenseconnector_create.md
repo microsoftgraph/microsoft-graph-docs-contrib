@@ -40,9 +40,8 @@ The following table shows the properties that are required when you create a mob
 |iosEnabled|Boolean|IOS Toggle On or Off|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) object in the response body.
 
 ## Example

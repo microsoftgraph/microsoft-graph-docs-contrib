@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a [wi
 |unhealthyDeviceCount|Int32|Unhealthy device count.|
 |unknownDeviceCount|Int32|Unknown device count.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md) object in the response body.
 
 ## Example

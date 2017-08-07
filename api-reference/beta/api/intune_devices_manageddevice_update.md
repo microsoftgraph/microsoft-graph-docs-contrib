@@ -76,9 +76,8 @@ The following table shows the properties that are required when you create a [ma
 |androidSecurityPatchLevel|String|Android security patch level|
 |userDisplayName|String|User display name|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune_devices_manageddevice.md) object in the response body.
 
 ## Example

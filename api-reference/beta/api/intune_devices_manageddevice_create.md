@@ -59,9 +59,8 @@ The following table shows the properties that are required when you create a man
 |emailAddress|String|Email(s) for the user associated with the device|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [managedDevice](../resources/intune_devices_manageddevice.md) object in the response body.
 
 ## Example

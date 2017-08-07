@@ -28,6 +28,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [termsAndConditionsGroupAssignment](../resources/intune_companyterms_termsandconditionsgroupassignment.md) objects in the response body.
 
 ## Example

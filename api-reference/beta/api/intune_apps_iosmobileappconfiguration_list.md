@@ -28,6 +28,7 @@ GET /iosMobileAppConfigurations/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) objects in the response body.
 
 ## Example

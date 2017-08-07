@@ -28,8 +28,8 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and [Contract](../resources/contract.md) object in the response body.
 
 ## Example

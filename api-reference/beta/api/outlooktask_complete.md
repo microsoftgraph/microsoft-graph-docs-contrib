@@ -33,8 +33,8 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 
 ## Request body
 
-
 ## Response
+
 If successful, this method returns `200, OK` response code and [outlookTask](../resources/outlooktask.md) collection object in the response body.
 
 ## Example

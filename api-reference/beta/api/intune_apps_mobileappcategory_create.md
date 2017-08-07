@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a mob
 |displayName|String|The name of the app category.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) object in the response body.
 
 ## Example

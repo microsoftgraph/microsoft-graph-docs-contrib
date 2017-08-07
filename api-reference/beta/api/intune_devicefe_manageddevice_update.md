@@ -73,9 +73,8 @@ The following table shows the properties that are required when you create a [ma
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 |serialNumber|String|SerialNumber|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune_devicefe_manageddevice.md) object in the response body.
 
 ## Example

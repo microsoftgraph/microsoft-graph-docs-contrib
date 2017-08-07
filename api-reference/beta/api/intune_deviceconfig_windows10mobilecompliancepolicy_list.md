@@ -28,6 +28,7 @@ GET /deviceManagement/deviceCompliancePolicies/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) objects in the response body.
 
 ## Example

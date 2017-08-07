@@ -28,6 +28,7 @@ GET /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/mobileAppIdenti
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) objects in the response body.
 
 ## Example

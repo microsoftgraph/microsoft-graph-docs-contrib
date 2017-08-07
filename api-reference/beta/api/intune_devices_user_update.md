@@ -32,9 +32,8 @@ The following table shows the properties that are required when you create a [us
 |---|---|---|
 |id|String|Unique identifier of the user.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune_devices_user.md) object in the response body.
 
 ## Example

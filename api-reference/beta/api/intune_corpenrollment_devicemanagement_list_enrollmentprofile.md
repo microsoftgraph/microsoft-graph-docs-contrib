@@ -28,6 +28,7 @@ GET /deviceManagement/enrollmentProfiles/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) objects in the response body.
 
 ## Example

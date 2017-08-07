@@ -28,6 +28,7 @@ GET /deviceManagement/complianceSettingStateSummaries/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) objects in the response body.
 
 ## Example

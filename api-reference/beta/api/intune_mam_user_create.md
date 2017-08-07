@@ -32,9 +32,8 @@ The following table shows the properties that are required when you create a use
 |---|---|---|
 |id|String|The user identifier.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [user](../resources/intune_mam_user.md) object in the response body.
 
 ## Example

@@ -31,6 +31,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this action returns a `204 No Content` response code.
 
 ## Example

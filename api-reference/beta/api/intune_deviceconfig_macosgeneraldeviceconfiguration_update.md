@@ -53,9 +53,8 @@ The following table shows the properties that are required when you create a [ma
 |passwordRequiredType|String|Type of password that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Whether or not to require a password.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [macOSGeneralDeviceConfiguration](../resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md) object in the response body.
 
 ## Example

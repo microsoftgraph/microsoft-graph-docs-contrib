@@ -68,9 +68,8 @@ The following table shows the properties that are required when you create a and
 |screenCaptureBlocked|Boolean|Indicates whether a managed user can take screen captures of managed apps|
 |encryptAppData|Boolean|Indicates whether application data for managed apps should be encrypted|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) object in the response body.
 
 ## Example

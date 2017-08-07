@@ -56,9 +56,8 @@ The following table shows the properties that are required when you create a [io
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |expirationDateTime|DateTimeOffset|The expiration time.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [iosLobApp](../resources/intune_apps_ioslobapp.md) object in the response body.
 
 ## Example

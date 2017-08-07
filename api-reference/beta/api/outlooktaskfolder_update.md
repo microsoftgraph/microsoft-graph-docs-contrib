@@ -25,9 +25,8 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |name|String|The name of the task folder.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.
 ## Example
 ##### Request

@@ -28,6 +28,7 @@ GET /deviceManagement/exchangeConnectors/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) objects in the response body.
 
 ## Example

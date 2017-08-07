@@ -28,6 +28,7 @@ GET /deviceAppManagement/mobileApps/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) objects in the response body.
 
 ## Example

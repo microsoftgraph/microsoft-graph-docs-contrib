@@ -48,9 +48,8 @@ The following table shows the properties that are required when you create a and
 |customData|[keyValue](../resources/intune_deviceconfig_keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
 |authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [androidVpnConfiguration](../resources/intune_deviceconfig_androidvpnconfiguration.md) object in the response body.
 
 ## Example

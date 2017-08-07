@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a res
 |actionName|String|Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.|
 |description|String|Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [resourceOperation](../resources/intune_rbac_resourceoperation.md) object in the response body.
 
 ## Example

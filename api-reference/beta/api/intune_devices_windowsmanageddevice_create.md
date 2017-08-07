@@ -75,9 +75,8 @@ The following table shows the properties that are required when you create a win
 |androidSecurityPatchLevel|String|Android security patch level Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userDisplayName|String|User display name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object in the response body.
 
 ## Example

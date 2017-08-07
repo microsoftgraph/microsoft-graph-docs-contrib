@@ -28,6 +28,7 @@ GET /deviceAppManagement/mobileAppConfigurations/
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [androidForWorkMobileAppConfiguration](../resources/intune_apps_androidforworkmobileappconfiguration.md) objects in the response body.
 
 ## Example

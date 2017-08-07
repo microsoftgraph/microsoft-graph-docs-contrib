@@ -35,9 +35,8 @@ The following table shows the properties that are required when you create a dev
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceManagementScriptState](../resources/intune_devicefe_devicemanagementscriptstate.md) object in the response body.
 
 ## Example

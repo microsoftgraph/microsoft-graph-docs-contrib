@@ -51,9 +51,8 @@ The following table shows the properties that are required when you create a ios
 |deviceThreatProtectionRequiredSecurityLevel|String|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indicates whether or not to require a managed email profile.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) object in the response body.
 
 ## Example

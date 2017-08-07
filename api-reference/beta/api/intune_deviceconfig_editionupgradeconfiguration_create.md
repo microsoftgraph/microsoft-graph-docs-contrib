@@ -44,9 +44,8 @@ The following table shows the properties that are required when you create a edi
 |license|String|Edition Upgrade License File Content.|
 |productKey|String|Edition Upgrade Product Key.|
 
-
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [editionUpgradeConfiguration](../resources/intune_deviceconfig_editionupgradeconfiguration.md) object in the response body.
 
 ## Example

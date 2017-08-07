@@ -34,9 +34,8 @@ The following table shows the properties that are required when you create a [md
 |targetGroupId|String|The Id of the AAD group we are targeting the mdm app configuration to.|
 |id|String|Key of the entity.|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) object in the response body.
 
 ## Example

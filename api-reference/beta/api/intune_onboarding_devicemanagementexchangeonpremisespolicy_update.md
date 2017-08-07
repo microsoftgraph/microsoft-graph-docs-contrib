@@ -36,9 +36,8 @@ The following table shows the properties that are required when you create a [de
 |accessRules|[deviceManagementExchangeAccessRule](../resources/intune_onboarding_devicemanagementexchangeaccessrule.md) collection|The list of device access rules in Exchange. The access rules apply globally to the entire Exchange organization|
 |knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune_onboarding_devicemanagementexchangedeviceclass.md) collection|The list of device classes known to Exchange|
 
-
-
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementExchangeOnPremisesPolicy](../resources/intune_onboarding_devicemanagementexchangeonpremisespolicy.md) object in the response body.
 
 ## Example
