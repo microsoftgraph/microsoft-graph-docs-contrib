@@ -25,7 +25,8 @@ In the request body, supply a JSON representation of [domain](../resources/domai
 
 > The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.
 
-### Response
+## Response
+
 If successful, this method returns `201, Created` response code and [domain](../resources/domain.md) object in the response body.
 
 ## Example

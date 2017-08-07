@@ -29,7 +29,9 @@ The default response expands `parentSection` and selects the section's `id`, `di
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.
 ## Example
 ##### Request

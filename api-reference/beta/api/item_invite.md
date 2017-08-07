@@ -33,6 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 | roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
 
 ## Response
+
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
 ## Example
