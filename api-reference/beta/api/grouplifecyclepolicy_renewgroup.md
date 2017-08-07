@@ -2,36 +2,36 @@
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
-### Prerequisites
+## Prerequisites
 
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies/renewGroup
 
 ```
 
-### Request headers
+## Request headers
 
 | Name | Description |
 |:---------------|:----------|
 | Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:---------------|:--------|:----------|
 |groupId|Guid| The id of the group to renew. |
 
-### Response
+## Response
 
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 
 ##### Request
 

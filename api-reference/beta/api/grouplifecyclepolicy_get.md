@@ -2,28 +2,28 @@
 
 Retrieve the properties and relationships of a [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md) object.
 
-### Prerequisites
+## Prerequisites
 
 The following **scopes** are required to execute this API: *Directory.Read.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groupLifecyclePolicies/{id}
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name | Description |
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.
-### Example
+## Example
 
 ##### Request
 

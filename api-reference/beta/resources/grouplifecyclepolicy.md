@@ -2,7 +2,7 @@
 
 Represents a a lifecycle policy for an Office 365 group. A group lifecycle policy allows administrators to set an expiration period for groups. For example, after 180 days, a group expires. When a group reaches it's expiration, owners of the group are required to renew their group within a time interval defined by the administrator. Once renewed, the group expiration is extended by the number of days defined in the policy. For example, the group's new expiration is 180 days after renewal. If the group is not renewed, it expires and is deleted. The group can be restored within a period of 30 days from deletion.
 
-### Methods
+## Methods
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
@@ -14,7 +14,7 @@ Represents a a lifecycle policy for an Office 365 group. A group lifecycle polic
 |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy_removegroup.md)|None| Removes a group to a lifecycle policy. |
 |[Renew a group](../api/grouplifecyclepolicy_renewgroup.md)|None| Renews a group's expiration date. |
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
@@ -23,11 +23,11 @@ Represents a a lifecycle policy for an Office 365 group. A group lifecycle polic
 |id|Guid| A unique identifier for a policy. Read-only.|
 |managedGroupTypes|String| The group type for which the expiration policy applies. Possible values are **All**, **Selected** or **None**. |
 
-### Relationships
+## Relationships
 
 None
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
