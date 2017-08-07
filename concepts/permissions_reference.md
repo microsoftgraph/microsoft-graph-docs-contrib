@@ -421,7 +421,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Member.Read.Hidden_ | Read hidden memberships | Allows the app to read the memberships of hidden groups and administrative units on behalf of the signed-in user, for those hidden groups and administrative units that the signed-in user has access to. | Yes |
 
 #### Application permissions
 
@@ -430,9 +432,16 @@ None.
 | _Member.Read.Hidden_ | Read all hidden memberships | Allows the app to read the memberships of hidden groups and administrative units without a signed-in user. | Yes |
 
 ### Remarks
+_Member.Read.Hidden_ is valid only on work or school accounts.
+
 Membership in some Office 365 groups can be hidden. This means that only the members of the group can view its members. This feature can be used to help comply with regulations that require an organization to hide group membership from outsiders (for example, an Office 365 group that represents students enrolled in a class).
 
 ### Example usage
+
+#### Delegated
+
+* _Member.Read.Hidden_ : Read the members of an administrative unit with hidden membership on behalf of the signed-in user (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_ : Read the members of a group with hidden membership on behalf of the signed-in user (`GET /groups/{id}/members`).
 
 #### Application
 

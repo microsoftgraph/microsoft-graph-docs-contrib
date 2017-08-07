@@ -55,7 +55,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 Here is an example of the request.
 <!-- {
@@ -67,7 +67,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/Office365Activations(view='Detail')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {

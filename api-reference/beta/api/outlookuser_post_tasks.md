@@ -28,8 +28,8 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 ## Request body
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
 
+## Response
 
-### Response
 If successful, this method returns `201, Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
 
 ## Example

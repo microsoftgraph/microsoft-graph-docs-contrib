@@ -17,6 +17,7 @@ PATCH /subscriptions/{subscriptionId}
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
 ## Example
 ##### Request

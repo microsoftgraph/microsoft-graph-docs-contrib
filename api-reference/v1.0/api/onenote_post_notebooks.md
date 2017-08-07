@@ -25,8 +25,8 @@ In the request body, supply a name for the notebook.
 
 Notebook names must be unique. The name cannot contain more than 128 characters or contain the following characters:  ?*\/:<>|'"
 
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.
 
 ## Example

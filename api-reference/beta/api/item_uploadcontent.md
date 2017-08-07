@@ -28,6 +28,7 @@ The contents of the request body should be the binary stream of the file to be
 uploaded.
 
 ## Response
+
 If successful, this method returns a [driveItem](../resources/driveitem.md) object
 in the response body for the newly created file.
 
@@ -44,7 +45,6 @@ Content-type: text/plain
 
 The contents of the file goes here.
 ```
-
 ##### Response
 
 The following example shows the response.

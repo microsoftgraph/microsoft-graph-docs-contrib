@@ -23,7 +23,6 @@ GET me/devices/{id}/commands/{id}
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
-
 ## Response
 
 ```http
@@ -179,6 +178,7 @@ Content-Type: application/json; charset=utf-8
 ##### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false,

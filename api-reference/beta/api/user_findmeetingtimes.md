@@ -51,8 +51,8 @@ The following table describes the restrictions you can further specify in the **
 Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action 
 calculates the best possible meeting times, and returns any meeting suggestions.
 
-
 ## Response
+
 If successful, this method returns `200, OK` response code and a [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) in the response body. 
 
 A **meetingTimeSuggestionsResult** includes a collection of meeting suggestions and an **emptySuggestionsReason** property. Each suggestion is defined 

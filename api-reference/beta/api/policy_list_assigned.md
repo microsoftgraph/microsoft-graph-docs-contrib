@@ -24,7 +24,8 @@ GET /applications/{id}/policies
 ## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
+
 If successful, this method returns `200, OK` response code and [policy](../resources/policy.md) objects in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
