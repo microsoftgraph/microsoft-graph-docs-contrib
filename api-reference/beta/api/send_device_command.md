@@ -149,7 +149,8 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-### Response
+##### Response
+
 Here is an example of the response.
 
 <!-- {

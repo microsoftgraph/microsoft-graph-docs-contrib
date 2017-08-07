@@ -67,7 +67,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/Office365Activations(view='Detail')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {

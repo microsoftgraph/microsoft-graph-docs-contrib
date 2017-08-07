@@ -80,7 +80,7 @@ Here is an example of the request to get **detail** view with period of 7 days.
 GET https://graph.microsoft.com/beta/reports/EmailAppUsage(view='Detail',period='D7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {

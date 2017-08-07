@@ -79,7 +79,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Detail',period='D7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {

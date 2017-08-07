@@ -79,7 +79,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/Office365ActiveUsers(view='Detail', period='d7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {
