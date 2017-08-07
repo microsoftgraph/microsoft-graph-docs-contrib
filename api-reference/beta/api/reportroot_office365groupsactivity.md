@@ -118,6 +118,7 @@ GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detai
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Activity',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Groups',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Storage',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Files',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
