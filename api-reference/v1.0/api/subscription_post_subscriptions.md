@@ -2,7 +2,18 @@
 
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
 ## Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* or *Files.ReadWrite.All*. ***Note:*** The /v1.0 endpoint allows Application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.
+Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource.
+
+| Resource type / Item        | Scope               |
+|-----------------------------|---------------------|
+| Contacts                    | Contacts.Read       |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Drive  (User's OneDrive)    | Files.ReadWrite     |
+| Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
+
+ ***Note:*** The /v1.0 endpoint allows Application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
