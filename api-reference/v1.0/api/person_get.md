@@ -2,17 +2,19 @@
 
 Retrieve the properties and relationships of a [person](../resources/person.md) object.
 
-This information is retrievable through the People API. Some examples of the People API are included below and more details about the People API can be found in the [People API concept topic](../../../concepts/people_example.md).
+You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md)h.
 
 ## Prerequisites
 The following **permissions** are required to execute portions of this API: *People.Read*; *People.Read.All*
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/people/?$search='{property_value}'
 GET /me/people/?$filter={person_property} eq '{property_value}'
 ```
+
 ## Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
