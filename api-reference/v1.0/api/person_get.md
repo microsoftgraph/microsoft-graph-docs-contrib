@@ -19,17 +19,17 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.|
-|$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.|
-|$search|string|Search for people by name or alias. Supports Fuzzy matching|
+|$orderby|string|By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.|
+|$search|string|Search for people by name or alias. Supports fuzzy matching.|
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
-|$top|int|number of results to be returned.|
+|$top|int|Number of results to be returned.|
 
 ## Parameters
 | Parameter |Type       |Description|
 |:----------|:----------|:----------|
-|property_value|String     |The value of the extended property to match. Required where listed in the **HTTP request** section above.|
-|person_property|String    |The person property to match. Required where listed in the **HTTP request** section above.|
+|property_value|String     |The value of the extended property to match. Required where listed in the **HTTP request** section.|
+|person_property|String    |The person property to match. Required where listed in the **HTTP request** section.|
 
 ## Request headers
 | Name      |Description|
@@ -39,10 +39,10 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [person](../resources/person.md) object in the response body. The response could contain one person instance or a collection of person instances. 
+If successful, this method returns a `200 OK` response code and a [person](../resources/person.md) object in the response body. The response can contain one person instance or a collection of person instances. 
 ## Examples
 ### Perform a search 
-The following request does a search for a person named "Irene McGowan". 
+The following request does a search for a person named Irene McGowan. 
 
 <!-- {
   "blockType": "request",
