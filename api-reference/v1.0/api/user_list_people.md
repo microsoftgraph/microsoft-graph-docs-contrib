@@ -1,9 +1,9 @@
 # List people
 
 Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by 
-the user's communication, collaboration and business relationships.
+the user's communication and collaboration patterns and business relationships.
 
-This information is retrievable through the People API. Some examples of the People API are included below and more details about the People API can be found in the [People API concept topic](../../../concepts/people_example.md).
+You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).
 
 ## Prerequisites
 The following **scopes** are required to execute this API: *People.Read* *People.Read.All*
@@ -18,11 +18,11 @@ GET /users/{id | userPrincipalName}/people
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.|
-|$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.|
-|$search|string|Search for people by name or alias. Supports Fuzzy matching|
+|$orderby|string|By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter.|
+|$search|string|Search for people by name or alias. Supports fuzzy matching.|
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
-|$top|int|number of results to be returned.|
+|$top|int|Number of results to be returned.|
 
 ## Request headers
 | Name      |Description|
@@ -33,9 +33,11 @@ GET /users/{id | userPrincipalName}/people
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response could contain one person object or a collection of person objects. 
+If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response can contain one person object or a collection of person objects. 
 ## Examples
-###Get a collection of relevant people 
+
+### Get a collection of relevant people 
+
 The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships. 
 <!-- {
   "blockType": "request",
@@ -167,7 +169,8 @@ Content-type: application/json
     ]
 }
 ```
-###Search other user’s relevant people
+### Search other user’s relevant people
+
 The following request gets the people most relevant to another person in the signed-in user's organization. This request requires the People.Read.All permission. In this example, Roscoe Seidel's relevant people are displayed.
 
 <!-- {
@@ -179,7 +182,7 @@ The following request gets the people most relevant to another person in the sig
 GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
 ```
 
-The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. The example below uses *$top* to limit the response to three records.
+The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. This example uses *$top* to limit the response to three records.
 
 <!-- {
   "blockType": "response",
