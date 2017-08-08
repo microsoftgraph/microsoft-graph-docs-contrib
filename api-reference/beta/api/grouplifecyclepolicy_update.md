@@ -2,22 +2,22 @@
 
 Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.
 
-### Prerequisites
+## Prerequisites
 
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
  
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groupLifecyclePolicies/{id}
 ```
-### Optional request headers
+## Optional request headers
 | Name | Description |
 |:-----------|:-----------|
 | Authorization | Bearer {token}. Required. |
 | Content-Type	| application/json	|
 
-### Request body
+## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
@@ -27,10 +27,10 @@ In the request body, supply the values for relevant fields that should be update
 |groupLifetimeInDays|Int32| Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined. |
 |managedGroupTypes|String| The group type for which the expiration policy applies. Possible values are **All**, **Selected** or **None**. |
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and updated [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.
-### Example
+## Example
 
 ##### Request
 

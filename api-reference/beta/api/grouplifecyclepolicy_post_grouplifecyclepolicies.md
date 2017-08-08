@@ -2,32 +2,32 @@
 
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-### Prerequisites
+## Prerequisites
 
 The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
 
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies
 
 ```
 
-### Request headers
+## Request headers
 
 | Name | Description |
 |:---------------|:----------|
 | Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.
 
-### Response
+## Response
 
 If successful, this method returns `201, Created` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.
 
-### Example
+## Example
 
 ##### Request
 
