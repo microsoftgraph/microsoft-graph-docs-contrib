@@ -1,6 +1,6 @@
 # website resource type
 
-Represents a web site.
+Represents a website.
 
 
 ## Properties
@@ -12,7 +12,7 @@ Represents a web site.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
