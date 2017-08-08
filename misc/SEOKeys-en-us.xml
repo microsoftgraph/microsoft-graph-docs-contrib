@@ -2,6 +2,7 @@
   <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." />    
   <Item text="Featured scenarios" url="/en-us/concepts/featured_scenarios" > 
 	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
   </Item>
   <Item text="Build your first app" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
@@ -545,6 +546,12 @@
         <Item text="Get multi-value property" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
       </Item>
     </Item>
+  </Item>
+  <Item text="People" url="/en-us/api-reference/v1.0/resources/social_overview" >
+	<Item text="Person" url="/en-us/api-reference/v1.0/resources/person" >
+		<Item text="List people" url="/en-us/api-reference/v1.0/api/user_list_people" />
+		<Item text="Get person" url="/en-us/api-reference/v1.0/api/person_get" />
+	</Item>
   </Item>
   <Item text="Personal contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Personal contacts API">
     <Item text="Contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Contact">
