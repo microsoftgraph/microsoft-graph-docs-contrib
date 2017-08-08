@@ -1,45 +1,46 @@
 # person resource type
 
-An aggregation of information about a person from across mail, contacts and social networks. People can be local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).
+An aggregation of information about a person from across mail, contacts, and social networks. People can be local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype).
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of a person object.|
+|[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
+|[Get person](../api/person_get.md) | **person** |Get properties and relationships of a person object.|
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|birthday|string|The person's birthday.|
-|companyName|string|The name of the person's company.|
-|department|string|The person's department.|
-|displayName|string|The person's display name.|
+|birthday|String|The person's birthday.|
+|companyName|String|The name of the person's company.|
+|department|String|The person's department.|
+|displayName|String|The person's display name.|
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) collection|The person's email addresses.|
-|givenName|string|The person's given name.|
-|id|string|The person's unique identifier. Read-only.|
+|givenName|String|The person's given name.|
+|id|String|The person's unique identifier. Read-only.|
 |imAddress|String collection|The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.|
-|isFavorite|boolean|`true` if the user has flagged this person as a favorite.|
-|jobTitle|string|The person's job title.|
-|officeLocation|string|The location of the person's office.|
-|personNotes|string|Free-form notes that the the user has taken about this person.|
+|isFavorite|Boolean|`true` if the user has flagged this person as a favorite.|
+|jobTitle|String|The person's job title.|
+|officeLocation|String|The location of the person's office.|
+|personNotes|String|Free-form notes that the the user has taken about this person.|
 |personType|[personType](persontype.md) collection|The type of person.|
 |phones|[phone](phone.md) collection|The person's phone numbers.|
 |postalAddresses|[location](location.md) collection|The person's addresses.|
-|profession|string|The person's profession.|
-|surname|string|The person's surname.|
-|userPrincipalName|string|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](http://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
+|profession|String|The person's profession.|
+|surname|String|The person's surname.|
+|userPrincipalName|String|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](http://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
 |websites|[website](website.md) collection|The person's websites.|
-|yomiCompany|string|The phonetic Japanese name of the person's company.|
+|yomiCompany|String|The phonetic Japanese name of the person's company.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
