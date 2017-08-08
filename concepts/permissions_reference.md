@@ -523,14 +523,14 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read_ |    Read users' relevant people lists | Allows the app to read a scored list of relevant people of the signed-in user. The list can include local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype). | No |
-| _People.Read.All_ | Allows the app to read a scored list of relevant people of the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes
+| _People.Read_ |    Read users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). | No |
+| _People.Read.All_ | | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read.All_ | Allows the app to read a scored list of relevant people of the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes
+| _People.Read.All_ | | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes |
 
 ### Remarks
 
