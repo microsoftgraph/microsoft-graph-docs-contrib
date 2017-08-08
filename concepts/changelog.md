@@ -10,7 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-| Addition | v1.0 | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](concepts/people_example.md).|
+| Addition | v1.0 | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](people_example.md).|
 
 ### Group lifecycle policy
 
