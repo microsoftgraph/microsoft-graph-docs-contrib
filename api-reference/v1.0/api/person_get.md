@@ -2,7 +2,7 @@
 
 Retrieve the properties and relationships of a [person](../resources/person.md) object.
 
-You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md)h.
+You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).
 
 ## Prerequisites
 The following **permissions** are required to execute portions of this API: *People.Read*; *People.Read.All*
