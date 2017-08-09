@@ -6,6 +6,20 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2017
 
+### People 
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](people_example.md).|
+
+### Group lifecycle policy
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) entity. |
+| Addition | Beta | Added the following APIs for group lifecycle policy: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup), and [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Addition | Beta | Added [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) entity. |
+
 ### OneNote
 
 |**Change type**|**Version**|**Description**|
