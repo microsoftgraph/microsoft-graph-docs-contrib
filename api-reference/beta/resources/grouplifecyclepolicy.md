@@ -1,6 +1,6 @@
 # groupLifecyclePolicy resource type
 
-Represents a a lifecycle policy for an Office 365 group. A group lifecycle policy allows administrators to set an expiration period for groups. For example, after 180 days, a group expires. When a group reaches it's expiration, owners of the group are required to renew their group within a time interval defined by the administrator. Once renewed, the group expiration is extended by the number of days defined in the policy. For example, the group's new expiration is 180 days after renewal. If the group is not renewed, it expires and is deleted. The group can be restored within a period of 30 days from deletion.
+Represents a a lifecycle policy for an Office 365 group. A group lifecycle policy allows administrators to set an expiration period for groups. For example, after 180 days, a group expires. When a group reaches its expiration, owners of the group are required to renew their group within a time interval defined by the administrator. Once renewed, the group expiration is extended by the number of days defined in the policy. For example, the group's new expiration is 180 days after renewal. If the group is not renewed, it expires and is deleted. The group can be restored within a period of 30 days from deletion.
 
 ## Methods
 
@@ -8,11 +8,11 @@ Represents a a lifecycle policy for an Office 365 group. A group lifecycle polic
 |:---------------|:--------|:----------|
 |[Get groupLifecyclePolicy](../api/grouplifecyclepolicy_get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |Read properties and relationships of a groupLifecyclePolicy object.|
 |[List groupLifecyclePolicies](../api/grouplifecyclepolicy_list.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies. |
-|[Update groupLifecyclePolicy](../api/grouplifecyclepolicy_update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md)	| Updates a groupLifecyclePolicy object. |
-|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy_delete.md) | None | Deletes a groupLifecyclePolicy object. |
-|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy_addgroup.md)|None| Adds a group to a lifecycle policy |
-|[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy_removegroup.md)|None| Removes a group to a lifecycle policy. |
-|[Renew a group](../api/grouplifecyclepolicy_renewgroup.md)|None| Renews a group's expiration date. |
+|[Update groupLifecyclePolicy](../api/grouplifecyclepolicy_update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md)	| Update a groupLifecyclePolicy object. |
+|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy_delete.md) | None | Delete a groupLifecyclePolicy object. |
+|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy_addgroup.md)|None| Add a group to a lifecycle policy |
+|[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy_removegroup.md)|None| Remove a group to a lifecycle policy. |
+|[Renew a group](../api/grouplifecyclepolicy_renewgroup.md)|None| Renew a group's expiration date. |
 
 ## Properties
 
@@ -25,7 +25,7 @@ Represents a a lifecycle policy for an Office 365 group. A group lifecycle polic
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
