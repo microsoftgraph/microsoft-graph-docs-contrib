@@ -113,7 +113,7 @@ Data as of,User name,Display name,User state,State change date (UTC),Last activi
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Detail' ,date='2017-02-02')/content
+GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Detail',date='2017-02-02')/content
 GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Distribution',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Users',period='D7')/content
 ```

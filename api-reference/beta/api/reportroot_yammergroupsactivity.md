@@ -113,7 +113,7 @@ ContentDate,Group name,Deleted,Group admin,Last activity date (UTC),Type,O365 co
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Detail' ,date='2017-02-02')/content
+GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Detail',date='2017-02-02')/content
 GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Groups',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Activity',period='D7')/content
 ```
