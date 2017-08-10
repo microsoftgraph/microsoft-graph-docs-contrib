@@ -30,7 +30,7 @@ Depending on the API that the query is being performed against, the `@odata:next
 Paging behavior varies across different Microsoft Graph APIs. You should consider the following when working with paged data:
 
 - Different APIs may have different default and maximum page sizes.
-- Different APIs may behave differently if you specify a page size (via the `$top` query parameter) that exceeds the maximum page size for that API. Depending on the API, the requested page size may be ignored, it may default to the maximum page size for that API, or Microsoft Graph might return an error. 
+- Different APIs may behave differently if you specify a page size (via the `$top` query parameter) that exceeds the maximum page size for that API. Depending on the API, the requested page size may be ignored, it may default to the maximum page size for that API, or Microsoft Graph may return an error. 
 - Not all resources or relationships support paging. For example, queries against [directoryRoles](../api-reference/v1.0/resources/directoryrole) do not support paging. This includes reading role objects themselves as well as role members.
 - Some Microsoft Graph APIs support backward paging by appending the `previous-page` query parameter (`&previous-page=true`) to the URL value of the `@odata:nextLink` property. Once you append this parameter to a request, the `@odata:nextLink` URL value in subsequent responses will include it. You can continue to page backward until a response with an empty result is returned. Paging further will return an error. Alternatively, you can resume paging forward from the current response by removing the `previous-page` parameter when you send the request for the next page of results. 
 
