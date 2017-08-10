@@ -114,8 +114,8 @@ ContentDate,Group name,Deleted,Group admin,Last activity date (UTC),Type,O365 co
 
 ```http
 GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Detail' ,date='2017-02-02')/content
-GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Distribution',period='D7')/content
-GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Users',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Groups',period='D7')/content
+GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Activity',period='D7')/content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
