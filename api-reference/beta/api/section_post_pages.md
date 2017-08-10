@@ -26,6 +26,7 @@ In the request body, supply the page HTML content.
 The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.
 
 ## Response
+
 If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.
 
 ## Example

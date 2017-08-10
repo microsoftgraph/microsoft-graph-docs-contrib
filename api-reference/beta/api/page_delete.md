@@ -19,8 +19,8 @@ DELETE /sites/{id}/onenote/pages/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-
 ## Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
