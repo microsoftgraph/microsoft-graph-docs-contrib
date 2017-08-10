@@ -1,5 +1,7 @@
 # List sections
 
+> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of [section](../resources/section.md) objects from the specified notebook.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
@@ -10,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.Al
 GET /me/onenote/notebooks/{id}/sections
 GET /users/{id | userPrincipalName}/onenote/notebooks/{id}/sections
 GET /groups/{id}/onenote/notebooks/{id}/sections
+GET /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
