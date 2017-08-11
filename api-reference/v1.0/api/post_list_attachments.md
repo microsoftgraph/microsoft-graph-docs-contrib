@@ -5,7 +5,7 @@ Retrieve a list of [attachment](../resources/attachment.md) objects attached to 
 One of the following **scopes** is required to execute this API:
 
 * Group.Read.All
-* Group.Readwrite.All
+* Group.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
