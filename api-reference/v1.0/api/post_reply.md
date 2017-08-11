@@ -6,7 +6,7 @@ both the parent conversation and thread in the request, or, you can specify just
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*Group.Readwrite.All*
+*Group.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
