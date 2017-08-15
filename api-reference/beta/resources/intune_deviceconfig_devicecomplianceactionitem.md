@@ -1,9 +1,6 @@
-﻿#  resource type
-
+# deviceComplianceActionItem resource type
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Scheduled Action Configuration
 ## Methods
 |Method|Return Type|Description|
@@ -14,7 +11,6 @@ Scheduled Action Configuration
 |[Delete deviceComplianceActionItem](../api/intune_deviceconfig_devicecomplianceactionitem_delete.md)|None|Deletes a [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md).|
 |[Update deviceComplianceActionItem](../api/intune_deviceconfig_devicecomplianceactionitem_update.md)|[deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md)|Update the properties of a [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object.|
 |[Get notificationMessageTemplate](../api/intune_deviceconfig_notificationmessagetemplate_get.md)|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Read properties and relationships of the [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -22,12 +18,10 @@ Scheduled Action Configuration
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced.|
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 |notificationTemplateId|String|What notification Message template to use|
-
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |notificationMessageTemplate|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Notification message template.|
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -45,6 +39,3 @@ Here is a JSON representation of the resource.
   "notificationTemplateId": "String"
 }
 ```
-
-
-
