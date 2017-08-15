@@ -1,9 +1,6 @@
-﻿#  resource type
-
+# cloudPkiSubscription resource object
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 CloudPki subscription certificate profile
 ## Methods
 |Method|Return Type|Description|
@@ -13,7 +10,6 @@ CloudPki subscription certificate profile
 |[Create cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_create.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md)|Create a new [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object.|
 |[Delete cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_delete.md)|None|Deletes a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md).|
 |[Update cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_update.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md)|Update the properties of a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -29,7 +25,6 @@ CloudPki subscription certificate profile
 |credentials|[cloudPkiAdministratorCredentials](../resources/intune_deviceconfig_cloudpkiadministratorcredentials.md)|PKCS Certification Authority Name|
 |trustedRootCertificate|Binary|PKCS Certificate Template Name|
 |version|Int32|Version of the CloudPkiSubscription.|
-
 ## Relationships
 None
 ## JSON Representation
@@ -63,6 +58,3 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-

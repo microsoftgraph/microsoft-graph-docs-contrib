@@ -1,9 +1,6 @@
-﻿#  resource type
-
+# depOnboardingSetting resource object
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
 ## Methods
 |Method|Return Type|Description|
@@ -13,7 +10,6 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |[Create depOnboardingSetting](../api/intune_onboarding_deponboardingsetting_create.md)|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md)|Create a new [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object.|
 |[Delete depOnboardingSetting](../api/intune_onboarding_deponboardingsetting_delete.md)|None|Deletes a [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md).|
 |[Update depOnboardingSetting](../api/intune_onboarding_deponboardingsetting_update.md)|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md)|Update the properties of a [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -25,7 +21,6 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
-
 ## Relationships
 None
 ## JSON Representation
@@ -49,6 +44,3 @@ Here is a JSON representation of the resource.
   "lastSyncErrorCode": 1024
 }
 ```
-
-
-

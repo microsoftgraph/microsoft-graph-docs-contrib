@@ -1,9 +1,6 @@
-﻿#  resource type
-
+# deviceConfiguration resource object
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Device Configuration.
 ## Methods
 |Method|Return Type|Description|
@@ -17,7 +14,6 @@ Device Configuration.
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_deviceconfigurationdeviceoverview_get.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -30,7 +26,6 @@ Device Configuration.
 |description|String|Admin provided description of the Device Configuration.|
 |displayName|String|Admin provided name of the device configuration.|
 |version|Int32|Version of the device configuration.|
-
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -40,7 +35,6 @@ Device Configuration.
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary|
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -63,6 +57,3 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-
