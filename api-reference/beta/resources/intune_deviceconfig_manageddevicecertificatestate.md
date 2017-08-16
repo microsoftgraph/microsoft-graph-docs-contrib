@@ -1,9 +1,6 @@
-﻿#  resource type
-
+# managedDeviceCertificateState resource type
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-
 Not yet documented
 ## Methods
 |Method|Return Type|Description|
@@ -13,7 +10,6 @@ Not yet documented
 |[Create managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_create.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md)|Create a new [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
 |[Delete managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_delete.md)|None|Deletes a [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md).|
 |[Update managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_update.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md)|Update the properties of a [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -31,7 +27,6 @@ Not yet documented
 |certificateSerialNumber|String|Serial number|
 |certificateKeyLength|Int32|Key length|
 |enhancedKeyUsage|String|Extended key usage|
-
 ## Relationships
 None
 ## JSON Representation
@@ -61,6 +56,3 @@ Here is a JSON representation of the resource.
   "enhancedKeyUsage": "String"
 }
 ```
-
-
-
