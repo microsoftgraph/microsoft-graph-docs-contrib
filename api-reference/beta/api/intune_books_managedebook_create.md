@@ -1,10 +1,9 @@
 ﻿# Create managedEBook
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [managedEBook](../resources/intune_books_managedebook.md) object.
+Create a new [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceAppManagement/managedEBooks/
+POST /deviceAppManagement/managedEBooks
 ```
 
 ## Request headers
@@ -35,23 +34,22 @@ The following table shows the properties that are required when you create a man
 |description|String|Description.|
 |publisher|String|Publisher.|
 |publishedDateTime|DateTimeOffset|The date and time when the eBook was published.|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Book cover.|
+|largeCover|[mimeContent](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_mimecontent.md)|Book cover.|
 |createdDateTime|DateTimeOffset|The date and time when the eBook file was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified.|
 |informationUrl|String|The more information Url.|
 |privacyInformationUrl|String|The privacy statement Url.|
 
-## Response
 
-If successful, this method returns a `201 Created` response code and a [managedEBook](../resources/intune_books_managedebook.md) object in the response body.
+
+## Response
+If successful, this method returns a `201 Created` response code and a [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/
+POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks
 Content-type: application/json
 Content-length: 555
 
@@ -72,8 +70,7 @@ Content-length: 555
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

@@ -1,7 +1,6 @@
 ﻿# androidForWorkAppConfigurationSchemaItem resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Single configuration item inside an Android for Work application's custom configuration schema.
@@ -16,7 +15,7 @@ Single configuration item inside an Android for Work application's custom config
 |defaultStringValue|String|Default value for string type items, if specified by the app developer|
 |defaultStringArrayValue|String collection|Default value for string array type items, if specified by the app developer|
 |dataType|String|The type of value this item describes Possible values are: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
-|selections|[keyValuePair](../resources/intune_androidforwork_keyvaluepair.md) collection|List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)|
+|selections|[keyValuePair](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_androidforwork_keyvaluepair.md) collection|List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)|
 
 ## Relationships
 None

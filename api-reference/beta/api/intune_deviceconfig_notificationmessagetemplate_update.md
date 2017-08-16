@@ -1,10 +1,9 @@
 ﻿# Update notificationMessageTemplate
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) object.
+Update the properties of a [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_notificationmessagetemplate.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}/notificationMessageTemplate/
+PATCH /deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/scheduledActionsForRule{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations{deviceComplianceActionItemId}/notificationMessageTemplate
 ```
 
 ## Request headers
@@ -25,32 +24,30 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) object.
-The following table shows the properties that are required when you create a [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md).
+In the request body, supply a JSON representation of a [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_notificationmessagetemplate.md) object.
+The following table shows the properties that are required when you create a [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_notificationmessagetemplate.md).
 
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity. This property is read-only.|
 
-## Response
 
-If successful, this method returns a `200 OK` response code and an updated [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) object in the response body.
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_notificationmessagetemplate.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}/notificationMessageTemplate/
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/scheduledActionsForRule{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations{deviceComplianceActionItemId}/notificationMessageTemplate
 Content-type: application/json
 Content-length: 2
 
 {}
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

@@ -1,10 +1,9 @@
 ﻿# Create cartToClassAssociation
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object.
+Create a new [cartToClassAssociation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_carttoclassassociation.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/cartToClassAssociations/
+POST /deviceManagement/cartToClassAssociations
 ```
 
 ## Request headers
@@ -39,17 +38,16 @@ The following table shows the properties that are required when you create a car
 |deviceCartIds|String collection|Identifiers of device carts to be associated with classes.|
 |classroomIds|String collection|Identifiers of classrooms to be associated with device carts.|
 
-## Response
 
-If successful, this method returns a `201 Created` response code and a [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object in the response body.
+
+## Response
+If successful, this method returns a `201 Created` response code and a [cartToClassAssociation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_carttoclassassociation.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations/
+POST https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations
 Content-type: application/json
 Content-length: 335
 
@@ -68,8 +66,7 @@ Content-length: 335
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

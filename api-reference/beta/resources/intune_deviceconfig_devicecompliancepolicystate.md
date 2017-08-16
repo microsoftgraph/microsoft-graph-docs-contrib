@@ -1,25 +1,29 @@
-# deviceCompliancePolicyState resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# deviceCompliancePolicyState resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Device Compliance Policy State for a given device.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List deviceCompliancePolicyStates](../api/intune_deviceconfig_devicecompliancepolicystate_list.md)|[deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) collection|List properties and relationships of the [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) objects.|
-|[Get deviceCompliancePolicyState](../api/intune_deviceconfig_devicecompliancepolicystate_get.md)|[deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md)|Read properties and relationships of the [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object.|
-|[Create deviceCompliancePolicyState](../api/intune_deviceconfig_devicecompliancepolicystate_create.md)|[deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md)|Create a new [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object.|
-|[Delete deviceCompliancePolicyState](../api/intune_deviceconfig_devicecompliancepolicystate_delete.md)|None|Deletes a [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md).|
-|[Update deviceCompliancePolicyState](../api/intune_deviceconfig_devicecompliancepolicystate_update.md)|[deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md)|Update the properties of a [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object.|
+|[List deviceCompliancePolicyStates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_devicecompliancepolicystate_list.md)|[deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md) collection|List properties and relationships of the [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md) objects.|
+|[Get deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_devicecompliancepolicystate_get.md)|[deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md)|Read properties and relationships of the [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md) object.|
+|[Create deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_devicecompliancepolicystate_create.md)|[deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md)|Create a new [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md) object.|
+|[Delete deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_devicecompliancepolicystate_delete.md)|None|Deletes a [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md).|
+|[Update deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_devicecompliancepolicystate_update.md)|[deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md)|Update the properties of a [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|settingStates|[deviceCompliancePolicySettingState](../resources/intune_deviceconfig_devicecompliancepolicysettingstate.md) collection|Not yet documented|
+|settingStates|[deviceCompliancePolicySettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicysettingstate.md) collection|Not yet documented|
 |displayName|String|The name of the policy for this policyBase|
 |version|Int32|The version of the policy|
 |platformType|String|Platform type that the policy applies to Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
 |state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
+
 ## Relationships
 None
 ## JSON Representation
@@ -64,3 +68,6 @@ Here is a JSON representation of the resource.
   "settingCount": 1024
 }
 ```
+
+
+

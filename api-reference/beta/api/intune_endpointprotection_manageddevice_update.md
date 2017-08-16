@@ -1,10 +1,9 @@
 ﻿# Update managedDevice
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [managedDevice](../resources/intune_endpointprotection_manageddevice.md) object.
+Update the properties of a [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -25,21 +24,20 @@ PATCH /managedDevices/{managedDevicesId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [managedDevice](../resources/intune_endpointprotection_manageddevice.md) object.
-The following table shows the properties that are required when you create a [managedDevice](../resources/intune_endpointprotection_manageddevice.md).
+In the request body, supply a JSON representation of a [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md) object.
+The following table shows the properties that are required when you create a [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md).
 
 |Property|Type|Description|
 |---|---|---|
 |id|String|Unique Identifier for the device|
 
-## Response
 
-If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune_endpointprotection_manageddevice.md) object in the response body.
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
@@ -49,8 +47,7 @@ Content-length: 2
 {}
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

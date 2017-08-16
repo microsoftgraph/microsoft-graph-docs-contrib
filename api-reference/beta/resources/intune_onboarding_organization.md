@@ -1,40 +1,39 @@
 ﻿# organization resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List organizations](../api/intune_onboarding_organization_list.md)|[organization](../resources/intune_onboarding_organization.md) collection|List properties and relationships of the [organization](../resources/intune_onboarding_organization.md) objects.|
-|[Get organization](../api/intune_onboarding_organization_get.md)|[organization](../resources/intune_onboarding_organization.md)|Read properties and relationships of the [organization](../resources/intune_onboarding_organization.md) object.|
-|[Update organization](../api/intune_onboarding_organization_update.md)|[organization](../resources/intune_onboarding_organization.md)|Update the properties of a [organization](../resources/intune_onboarding_organization.md) object.|
-|[setMobileDeviceManagementAuthority action](../api/intune_onboarding_organization_setmobiledevicemanagementauthority.md)|Int32|Not yet documented|
-|[getEncryptionPublicKey function](../api/intune_onboarding_organization_getencryptionpublickey.md)|String|Not yet documented|
-|[uploadDepToken action](../api/intune_onboarding_organization_uploaddeptoken.md)|None|Not yet documented|
-|[syncWithAppleDeviceEnrollmentProgram action](../api/intune_onboarding_organization_syncwithappledeviceenrollmentprogram.md)|None|Not yet documented|
-|[toggleOnPremisesCertificateConnector action](../api/intune_onboarding_organization_toggleonpremisescertificateconnector.md)|Int32|Not yet documented|
-|[List depOnboardingSettings](../api/intune_onboarding_deponboardingsetting_list.md)|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|List properties and relationships of the [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) objects.|
-|[List appleVolumePurchaseProgramTokens](../api/intune_onboarding_applevolumepurchaseprogramtoken_list.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|List properties and relationships of the [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) objects.|
+|[List organizations](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_organization_list.md)|[organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md) collection|List properties and relationships of the [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md) objects.|
+|[Get organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_organization_get.md)|[organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md)|Read properties and relationships of the [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md) object.|
+|[Update organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_organization_update.md)|[organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md)|Update the properties of a [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md) object.|
+|[setMobileDeviceManagementAuthority action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_organization_setmobiledevicemanagementauthority.md)|Int32|Not yet documented|
+|[getEncryptionPublicKey function](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_organization_getencryptionpublickey.md)|String|Not yet documented|
+|[uploadDepToken action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_organization_uploaddeptoken.md)|None|Not yet documented|
+|[syncWithAppleDeviceEnrollmentProgram action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_organization_syncwithappledeviceenrollmentprogram.md)|None|Not yet documented|
+|[toggleOnPremisesCertificateConnector action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_organization_toggleonpremisescertificateconnector.md)|Int32|Not yet documented|
+|[List depOnboardingSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_deponboardingsetting_list.md)|[depOnboardingSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deponboardingsetting.md) collection|List properties and relationships of the [depOnboardingSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deponboardingsetting.md) objects.|
+|[List appleVolumePurchaseProgramTokens](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_applevolumepurchaseprogramtoken_list.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|List properties and relationships of the [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) objects.|
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
 |id|String|The GUID for the object.|
 |mobileDeviceManagementAuthority|String|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
-|defaultDeviceEnrollmentRestrictions|[defaultDeviceEnrollmentRestrictions](../resources/intune_onboarding_defaultdeviceenrollmentrestrictions.md)|Device enrollment restrictions applied to all users by default|
-|defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](../resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
+|defaultDeviceEnrollmentRestrictions|[defaultDeviceEnrollmentRestrictions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_defaultdeviceenrollmentrestrictions.md)|Device enrollment restrictions applied to all users by default|
+|defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
 |defaultDeviceEnrollmentLimit|Int32|Device enrollment limit applied to all users by default|
-|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
-|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
+|intuneBrand|[intuneBrand](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
+|certificateConnectorSetting|[certificateConnectorSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
 
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|depOnboardingSettings|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|Intune only supports using 1 DEP token per tenant. This collections will support potential future development of multiple DEP tokens per-tenant.|
-|appleVolumePurchaseProgramTokens|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|Not yet documented|
+|depOnboardingSettings|[depOnboardingSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deponboardingsetting.md) collection|Intune only supports using 1 DEP token per tenant. This collections will support potential future development of multiple DEP tokens per-tenant.|
+|appleVolumePurchaseProgramTokens|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|Not yet documented|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

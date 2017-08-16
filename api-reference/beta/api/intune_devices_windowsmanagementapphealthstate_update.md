@@ -1,10 +1,9 @@
 ﻿# Update windowsManagementAppHealthState
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object.
+Update the properties of a [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceAppManagement/windowsManagementApp//healthStates/{windowsManagementAppHealthStateId}
+PATCH /deviceAppManagement/windowsManagementApp/healthStates{windowsManagementAppHealthStateId}
 ```
 
 ## Request headers
@@ -25,8 +24,8 @@ PATCH /deviceAppManagement/windowsManagementApp//healthStates/{windowsManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object.
-The following table shows the properties that are required when you create a [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md).
+In the request body, supply a JSON representation of a [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) object.
+The following table shows the properties that are required when you create a [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -37,17 +36,16 @@ The following table shows the properties that are required when you create a [wi
 |deviceName|String|Name of the device on which Windows management app is installed.|
 |deviceOSVersion|String|Windows 10 OS version of the device on which Windows management app is installed.|
 
-## Response
 
-If successful, this method returns a `200 OK` response code and an updated [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object in the response body.
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp//healthStates/{windowsManagementAppHealthStateId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/healthStates{windowsManagementAppHealthStateId}
 Content-type: application/json
 Content-length: 230
 
@@ -60,8 +58,7 @@ Content-length: 230
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

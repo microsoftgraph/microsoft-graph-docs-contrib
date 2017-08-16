@@ -1,33 +1,34 @@
 ﻿# managedDevice resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Devices that are managed or pre-enrolled through Intune
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List managedDevices](../api/intune_devices_manageddevice_list.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) objects.|
-|[Get managedDevice](../api/intune_devices_manageddevice_get.md)|[managedDevice](../resources/intune_devices_manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) object.|
-|[Update managedDevice](../api/intune_devices_manageddevice_update.md)|[managedDevice](../resources/intune_devices_manageddevice.md)|Update the properties of a [managedDevice](../resources/intune_devices_manageddevice.md) object.|
-|[retire action](../api/intune_devices_manageddevice_retire.md)|None|Retire a device|
-|[wipe action](../api/intune_devices_manageddevice_wipe.md)|None|Wipe a device|
-|[resetPasscode action](../api/intune_devices_manageddevice_resetpasscode.md)|None|Reset passcode|
-|[remoteLock action](../api/intune_devices_manageddevice_remotelock.md)|None|Remote lock|
-|[requestRemoteAssistance action](../api/intune_devices_manageddevice_requestremoteassistance.md)|None|Request remote assistance|
-|[enableLostMode action](../api/intune_devices_manageddevice_enablelostmode.md)|None|Enable lost mode|
-|[disableLostMode action](../api/intune_devices_manageddevice_disablelostmode.md)|None|Disable lost mode|
-|[locateDevice action](../api/intune_devices_manageddevice_locatedevice.md)|None|Locate a device|
-|[bypassActivationLock action](../api/intune_devices_manageddevice_bypassactivationlock.md)|None|Bypass activation lock|
-|[rebootNow action](../api/intune_devices_manageddevice_rebootnow.md)|None|Reboot device|
-|[recoverPasscode action](../api/intune_devices_manageddevice_recoverpasscode.md)|None|Recover passcode|
-|[cleanWindowsDevice action](../api/intune_devices_manageddevice_cleanwindowsdevice.md)|None|Clean Windows device|
-|[logoutSharedAppleDeviceActiveUser action](../api/intune_devices_manageddevice_logoutsharedappledeviceactiveuser.md)|None|Logout shared Apple device active user|
-|[deleteUserFromSharedAppleDevice action](../api/intune_devices_manageddevice_deleteuserfromsharedappledevice.md)|None|Delete user from shared Apple device|
-|[syncDevice action](../api/intune_devices_manageddevice_syncdevice.md)|None|Not yet documented|
-|[List detectedApps](../api/intune_devices_detectedapp_list.md)|[detectedApp](../resources/intune_devices_detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) objects.|
-|[Get deviceCategory](../api/intune_devices_devicecategory_get.md)|[deviceCategory](../resources/intune_devices_devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune_devices_devicecategory.md) object.|
+|[List managedDevices](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_list.md)|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) collection|List properties and relationships of the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) objects.|
+|[Get managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_get.md)|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md)|Read properties and relationships of the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) object.|
+|[Update managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_update.md)|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md)|Update the properties of a [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) object.|
+|[retire action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_retire.md)|None|Retire a device|
+|[wipe action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_wipe.md)|None|Wipe a device|
+|[resetPasscode action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_resetpasscode.md)|None|Reset passcode|
+|[remoteLock action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_remotelock.md)|None|Remote lock|
+|[requestRemoteAssistance action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_requestremoteassistance.md)|None|Request remote assistance|
+|[enableLostMode action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_enablelostmode.md)|None|Enable lost mode|
+|[disableLostMode action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_disablelostmode.md)|None|Disable lost mode|
+|[locateDevice action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_locatedevice.md)|None|Locate a device|
+|[bypassActivationLock action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_bypassactivationlock.md)|None|Bypass activation lock|
+|[rebootNow action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_rebootnow.md)|None|Reboot device|
+|[recoverPasscode action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_recoverpasscode.md)|None|Recover passcode|
+|[cleanWindowsDevice action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_cleanwindowsdevice.md)|None|Clean Windows device|
+|[logoutSharedAppleDeviceActiveUser action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_logoutsharedappledeviceactiveuser.md)|None|Logout shared Apple device active user|
+|[deleteUserFromSharedAppleDevice action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_deleteuserfromsharedappledevice.md)|None|Delete user from shared Apple device|
+|[syncDevice action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_syncdevice.md)|None|Not yet documented|
+|[windowsDefenderScan action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan.md)|None|Not yet documented|
+|[windowsDefenderUpdateSignatures action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures.md)|None|Not yet documented|
+|[List detectedApps](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_detectedapp_list.md)|[detectedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_detectedapp.md) collection|List properties and relationships of the [detectedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_detectedapp.md) objects.|
+|[Get deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_devicecategory_get.md)|[deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_devicecategory.md)|Read properties and relationships of the [deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_devicecategory.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -35,9 +36,9 @@ Devices that are managed or pre-enrolled through Intune
 |id|String|Unique Identifier for the device|
 |userId|String|Unique Identifier for the user associated with the device|
 |deviceName|String|Name of the device|
-|hardwareInformation|[hardwareInformation](../resources/intune_devices_hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc.|
+|hardwareInformation|[hardwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc.|
 |ownerType|String|Ownership of the device. Can be 'company' or 'personal' Possible values are: `unknown`, `company`, `personal`.|
-|deviceActionResults|[deviceActionResult](../resources/intune_devices_deviceactionresult.md) collection|List of ComplexType deviceActionResult objects.|
+|deviceActionResults|[deviceActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceactionresult.md) collection|List of ComplexType deviceActionResult objects.|
 |managementState|String|Management state of the device. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
 |enrolledDateTime|DateTimeOffset|Enrollment time of the device.|
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune.|
@@ -46,7 +47,7 @@ Devices that are managed or pre-enrolled through Intune
 |deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
 |complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
-|managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `unknown`.|
+|managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdmEas`, `unknown`.|
 |osVersion|String|Operating system version of the device.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated.|
 |easDeviceId|String|Exchange ActiveSync Id of the device.|
@@ -74,12 +75,13 @@ Devices that are managed or pre-enrolled through Intune
 |phoneNumber|String|Phone number of the device|
 |androidSecurityPatchLevel|String|Android security patch level|
 |userDisplayName|String|User display name|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features|
 
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|All applications currently installed on the device|
-|deviceCategory|[deviceCategory](../resources/intune_devices_devicecategory.md)|Device category|
+|detectedApps|[detectedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_detectedapp.md) collection|All applications currently installed on the device|
+|deviceCategory|[deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_devicecategory.md)|Device category|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -167,7 +169,16 @@ Here is a JSON representation of the resource.
   "serialNumber": "String",
   "phoneNumber": "String",
   "androidSecurityPatchLevel": "String",
-  "userDisplayName": "String"
+  "userDisplayName": "String",
+  "configurationManagerClientEnabledFeatures": {
+    "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures",
+    "inventory": true,
+    "modernApps": true,
+    "resourceAccess": true,
+    "deviceConfiguration": true,
+    "compliancePolicy": true,
+    "windowsUpdateForBusiness": true
+  }
 }
 ```
 

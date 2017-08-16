@@ -1,7 +1,6 @@
 ﻿# windowsPackageInformation resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for the package information for a Windows line of business app.
@@ -14,7 +13,7 @@ Contains properties for the package information for a Windows line of business a
 |identityPublisher|String|The Identity Publisher.|
 |identityResourceIdentifier|String|The Identity Resource Identifier.|
 |identityVersion|String|The Identity Version.|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
 ## Relationships
 None

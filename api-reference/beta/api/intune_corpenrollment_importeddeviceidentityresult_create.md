@@ -1,10 +1,9 @@
 ﻿# Create importedDeviceIdentityResult
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object.
+Create a new [importedDeviceIdentityResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentityresult.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /importedDeviceIdentityResults/
+POST /importedDeviceIdentityResults
 ```
 
 ## Request headers
@@ -30,28 +29,27 @@ The following table shows the properties that are required when you create a imp
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
-|importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
-|importedDeviceIdentityType|String|Type of Imported Device Identity Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `imei`, `serialNumber`.|
-|lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
-|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
-|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
-|description|String|The description of the device Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|
-|enrollmentState|String|The state of the device in Intune Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
-|platform|String|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md)|
+|importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md)|
+|importedDeviceIdentityType|String|Type of Imported Device Identity Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `imei`, `serialNumber`.|
+|lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md)|
+|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md)|
+|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md)|
+|description|String|The description of the device Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md)|
+|enrollmentState|String|The state of the device in Intune Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
+|platform|String|The platform of the Device. Inherited from [importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md) Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
-## Response
 
-If successful, this method returns a `201 Created` response code and a [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) object in the response body.
+
+## Response
+If successful, this method returns a `201 Created` response code and a [importedDeviceIdentityResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentityresult.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/importedDeviceIdentityResults/
+POST https://graph.microsoft.com/beta/importedDeviceIdentityResults
 Content-type: application/json
 Content-length: 421
 
@@ -68,8 +66,7 @@ Content-length: 421
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

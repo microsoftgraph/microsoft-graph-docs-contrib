@@ -1,10 +1,9 @@
 ﻿# Update depEnrollmentProfile
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object.
+Update the properties of a [depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_depenrollmentprofile.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/enrollmentProfiles/{enrollmentProfileId}
+PATCH /deviceManagement/enrollmentProfiles{enrollmentProfileId}
 ```
 
 ## Request headers
@@ -25,16 +24,16 @@ PATCH /deviceManagement/enrollmentProfiles/{enrollmentProfileId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object.
-The following table shows the properties that are required when you create a [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md).
+In the request body, supply a JSON representation of a [depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_depenrollmentprofile.md) object.
+The following table shows the properties that are required when you create a [depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_depenrollmentprofile.md).
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|The GUID for the object Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
-|displayName|String|Name of the profile Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
-|description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
-|requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
-|configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|
+|id|String|The GUID for the object Inherited from [enrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_enrollmentprofile.md)|
+|displayName|String|Name of the profile Inherited from [enrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_enrollmentprofile.md)|
+|description|String|Description of the profile Inherited from [enrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_enrollmentprofile.md)|
+|configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_enrollmentprofile.md)|
 |supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
 |passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled|
@@ -43,7 +42,7 @@ The following table shows the properties that are required when you create a [de
 |supportPhoneNumber|String|Support phone number|
 |iTunesPairingMode|String|Indicates the iTunes pairing mode Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |profileRemovalDisabled|Boolean|Indicates if the profile removal option is disabled|
-|managementCertificates|[managementCertificateWithThumbprint](../resources/intune_corpenrollment_managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
+|managementCertificates|[managementCertificateWithThumbprint](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreBlocked|Boolean|Indicates if Restore setup pane is blocked|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
 |appleIdDisabled|Boolean|Indicates if Apple id setup pane is disabled|
@@ -57,21 +56,21 @@ The following table shows the properties that are required when you create a [de
 |macOSFileVaultDisabled|Boolean|Indicates if Mac OS file vault is disabled|
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
 |sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
-|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios.Only applicable in shared iPads.|
+|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
+
+
 
 ## Response
-
-If successful, this method returns a `200 OK` response code and an updated [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_depenrollmentprofile.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles/{enrollmentProfileId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles{enrollmentProfileId}
 Content-type: application/json
-Content-length: 1160
+Content-length: 1209
 
 {
   "displayName": "Display Name value",
@@ -106,17 +105,17 @@ Content-length: 1160
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 10,
-  "enableSharedIPad": true
+  "enableSharedIPad": true,
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1268
+Content-Length: 1317
 
 {
   "@odata.type": "#microsoft.graph.depEnrollmentProfile",
@@ -153,7 +152,8 @@ Content-Length: 1268
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 10,
-  "enableSharedIPad": true
+  "enableSharedIPad": true,
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 

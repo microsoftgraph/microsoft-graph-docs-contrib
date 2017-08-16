@@ -1,15 +1,14 @@
-﻿#  resource type
+﻿# windowsProtectionState resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get windowsProtectionState](../api/intune_devices_windowsprotectionstate_get.md)|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|Read properties and relationships of the [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object.|
-|[Update windowsProtectionState](../api/intune_devices_windowsprotectionstate_update.md)|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object.|
+|[Get windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsprotectionstate_get.md)|[windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsprotectionstate.md)|Read properties and relationships of the [windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsprotectionstate.md) object.|
+|[Update windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsprotectionstate_update.md)|[windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsprotectionstate.md) object.|
 
 ## Properties
 |Property|Type|Description|

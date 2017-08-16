@@ -1,18 +1,17 @@
 ﻿# mdmAppConfigGroupAssignment resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains the properties used to assign an MDM app configuration to a group.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List mdmAppConfigGroupAssignments](../api/intune_apps_mdmappconfiggroupassignment_list.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) collection|List properties and relationships of the [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) objects.|
-|[Get mdmAppConfigGroupAssignment](../api/intune_apps_mdmappconfiggroupassignment_get.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md)|Read properties and relationships of the [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) object.|
-|[Create mdmAppConfigGroupAssignment](../api/intune_apps_mdmappconfiggroupassignment_create.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md)|Create a new [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) object.|
-|[Delete mdmAppConfigGroupAssignment](../api/intune_apps_mdmappconfiggroupassignment_delete.md)|None|Deletes a [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md).|
-|[Update mdmAppConfigGroupAssignment](../api/intune_apps_mdmappconfiggroupassignment_update.md)|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md)|Update the properties of a [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) object.|
+|[List mdmAppConfigGroupAssignments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mdmappconfiggroupassignment_list.md)|[mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md) collection|List properties and relationships of the [mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md) objects.|
+|[Get mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mdmappconfiggroupassignment_get.md)|[mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md)|Read properties and relationships of the [mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md) object.|
+|[Create mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mdmappconfiggroupassignment_create.md)|[mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md)|Create a new [mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md) object.|
+|[Delete mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mdmappconfiggroupassignment_delete.md)|None|Deletes a [mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md).|
+|[Update mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mdmappconfiggroupassignment_update.md)|[mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md)|Update the properties of a [mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md) object.|
 
 ## Properties
 |Property|Type|Description|

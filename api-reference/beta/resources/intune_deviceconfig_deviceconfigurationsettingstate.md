@@ -1,7 +1,6 @@
 ﻿# deviceConfigurationSettingState resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Device Configuration Setting State for a given device.
@@ -18,7 +17,7 @@ Device Configuration Setting State for a given device.
 |userName|String|UserName|
 |userEmail|String|UserEmail|
 |userPrincipalName|String|UserPrincipalName.|
-|sources|[settingSource](../resources/intune_deviceconfig_settingsource.md) collection|Contributing policies|
+|sources|[settingSource](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_settingsource.md) collection|Contributing policies|
 |currentValue|String|Current value of setting on device|
 
 ## Relationships

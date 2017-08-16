@@ -1,17 +1,20 @@
-# mobileAppContentFile resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# mobileAppContentFile resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Contains properties for a single installer file that is associated with a given mobileAppContent version.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List mobileAppContentFiles](../api/intune_apps_mobileappcontentfile_list.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) collection|List properties and relationships of the [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) objects.|
-|[Get mobileAppContentFile](../api/intune_apps_mobileappcontentfile_get.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Read properties and relationships of the [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
-|[Create mobileAppContentFile](../api/intune_apps_mobileappcontentfile_create.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Create a new [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
-|[Delete mobileAppContentFile](../api/intune_apps_mobileappcontentfile_delete.md)|None|Deletes a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
-|[Update mobileAppContentFile](../api/intune_apps_mobileappcontentfile_update.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Update the properties of a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
-|[commit action](../api/intune_apps_mobileappcontentfile_commit.md)|None|Not yet documented|
-|[renewUpload action](../api/intune_apps_mobileappcontentfile_renewupload.md)|None|Not yet documented|
+|[List mobileAppContentFiles](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileappcontentfile_list.md)|[mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md) collection|List properties and relationships of the [mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md) objects.|
+|[Get mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileappcontentfile_get.md)|[mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md)|Read properties and relationships of the [mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md) object.|
+|[Create mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileappcontentfile_create.md)|[mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md)|Create a new [mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md) object.|
+|[Delete mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileappcontentfile_delete.md)|None|Deletes a [mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md).|
+|[Update mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileappcontentfile_update.md)|[mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md)|Update the properties of a [mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappcontentfile.md) object.|
+|[commit action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileappcontentfile_commit.md)|None|Not yet documented|
+|[renewUpload action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileappcontentfile_renewupload.md)|None|Not yet documented|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -25,6 +28,7 @@ Contains properties for a single installer file that is associated with a given 
 |azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
 |manifest|Binary|The manifest information.|
 |uploadState|String|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -50,3 +54,6 @@ Here is a JSON representation of the resource.
   "uploadState": "String"
 }
 ```
+
+
+

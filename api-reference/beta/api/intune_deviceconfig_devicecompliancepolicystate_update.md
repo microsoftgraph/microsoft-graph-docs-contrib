@@ -1,10 +1,9 @@
 ﻿# Update deviceCompliancePolicyState
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object.
+Update the properties of a [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /managedDevices/{managedDevicesId}/deviceCompliancePolicyStates/{deviceCompliancePolicyStateId}
+PATCH /managedDevices/{managedDevicesId}/deviceCompliancePolicyStates{deviceCompliancePolicyStateId}
 ```
 
 ## Request headers
@@ -25,30 +24,29 @@ PATCH /managedDevices/{managedDevicesId}/deviceCompliancePolicyStates/{deviceCom
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object.
-The following table shows the properties that are required when you create a [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md).
+In the request body, supply a JSON representation of a [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md) object.
+The following table shows the properties that are required when you create a [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md).
 
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|settingStates|[deviceCompliancePolicySettingState](../resources/intune_deviceconfig_devicecompliancepolicysettingstate.md) collection|Not yet documented|
+|settingStates|[deviceCompliancePolicySettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicysettingstate.md) collection|Not yet documented|
 |displayName|String|The name of the policy for this policyBase|
 |version|Int32|The version of the policy|
 |platformType|String|Platform type that the policy applies to Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
 |state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 
-## Response
 
-If successful, this method returns a `200 OK` response code and an updated [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object in the response body.
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancepolicystate.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceCompliancePolicyStates/{deviceCompliancePolicyStateId}
+PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceCompliancePolicyStates{deviceCompliancePolicyStateId}
 Content-type: application/json
 Content-length: 918
 
@@ -84,8 +82,7 @@ Content-length: 918
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

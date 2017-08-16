@@ -1,10 +1,9 @@
 ﻿# Update cloudPkiSubscription
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object.
+Update the properties of a [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
+PATCH /deviceManagement/cloudPkiSubscriptions{cloudPkiSubscriptionId}
 ```
 
 ## Request headers
@@ -25,8 +24,8 @@ PATCH /deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object.
-The following table shows the properties that are required when you create a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md).
+In the request body, supply a JSON representation of a [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md) object.
+The following table shows the properties that are required when you create a [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -39,21 +38,20 @@ The following table shows the properties that are required when you create a [cl
 |syncStatus|String|Last known SyncStatus of CloudPkiSubscription Possible values are: `unKnown`, `succeeded`, `failed`.|
 |lastSyncError|String|Error if occurred during last sync from third party CAs|
 |lastSyncDateTime|DateTimeOffset|DateTime certificate is last updated|
-|credentials|[cloudPkiAdministratorCredentials](../resources/intune_deviceconfig_cloudpkiadministratorcredentials.md)|PKCS Certification Authority Name|
+|credentials|[cloudPkiAdministratorCredentials](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkiadministratorcredentials.md)|PKCS Certification Authority Name|
 |trustedRootCertificate|Binary|PKCS Certificate Template Name|
 |version|Int32|Version of the CloudPkiSubscription.|
 
-## Response
 
-If successful, this method returns a `200 OK` response code and an updated [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object in the response body.
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/cloudPkiSubscriptions/{cloudPkiSubscriptionId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/cloudPkiSubscriptions{cloudPkiSubscriptionId}
 Content-type: application/json
 Content-length: 749
 
@@ -77,8 +75,7 @@ Content-length: 749
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

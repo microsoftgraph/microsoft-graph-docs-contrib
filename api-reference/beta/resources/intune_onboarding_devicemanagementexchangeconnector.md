@@ -1,16 +1,19 @@
-# deviceManagementExchangeConnector resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# deviceManagementExchangeConnector resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Entity which represents a connection to an Exchange environment.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List deviceManagementExchangeConnectors](../api/intune_onboarding_devicemanagementexchangeconnector_list.md)|[deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) collection|List properties and relationships of the [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) objects.|
-|[Get deviceManagementExchangeConnector](../api/intune_onboarding_devicemanagementexchangeconnector_get.md)|[deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md)|Read properties and relationships of the [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) object.|
-|[Create deviceManagementExchangeConnector](../api/intune_onboarding_devicemanagementexchangeconnector_create.md)|[deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md)|Create a new [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) object.|
-|[Delete deviceManagementExchangeConnector](../api/intune_onboarding_devicemanagementexchangeconnector_delete.md)|None|Deletes a [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md).|
-|[Update deviceManagementExchangeConnector](../api/intune_onboarding_devicemanagementexchangeconnector_update.md)|[deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md)|Update the properties of a [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) object.|
-|[sync action](../api/intune_onboarding_devicemanagementexchangeconnector_sync.md)|None|Not yet documented|
+|[List deviceManagementExchangeConnectors](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_devicemanagementexchangeconnector_list.md)|[deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md) collection|List properties and relationships of the [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md) objects.|
+|[Get deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_devicemanagementexchangeconnector_get.md)|[deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md)|Read properties and relationships of the [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md) object.|
+|[Create deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_devicemanagementexchangeconnector_create.md)|[deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md)|Create a new [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md) object.|
+|[Delete deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_devicemanagementexchangeconnector_delete.md)|None|Deletes a [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md).|
+|[Update deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_devicemanagementexchangeconnector_update.md)|[deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md)|Update the properties of a [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangeconnector.md) object.|
+|[sync action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_devicemanagementexchangeconnector_sync.md)|None|Not yet documented|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -21,6 +24,7 @@ Entity which represents a connection to an Exchange environment.
 |serverName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|String|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String|The version of the ExchangeConnectorAgent|
+
 ## Relationships
 None
 ## JSON Representation
@@ -43,3 +47,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
+
+
+

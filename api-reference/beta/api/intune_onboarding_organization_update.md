@@ -1,10 +1,9 @@
 ﻿# Update organization
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [organization](../resources/intune_onboarding_organization.md) object.
+Update the properties of a [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -25,27 +24,26 @@ PATCH /organization/{organizationId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [organization](../resources/intune_onboarding_organization.md) object.
-The following table shows the properties that are required when you create a [organization](../resources/intune_onboarding_organization.md).
+In the request body, supply a JSON representation of a [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md) object.
+The following table shows the properties that are required when you create a [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md).
 
 |Property|Type|Description|
 |---|---|---|
 |id|String|The GUID for the object.|
 |mobileDeviceManagementAuthority|String|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
-|defaultDeviceEnrollmentRestrictions|[defaultDeviceEnrollmentRestrictions](../resources/intune_onboarding_defaultdeviceenrollmentrestrictions.md)|Device enrollment restrictions applied to all users by default|
-|defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](../resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
+|defaultDeviceEnrollmentRestrictions|[defaultDeviceEnrollmentRestrictions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_defaultdeviceenrollmentrestrictions.md)|Device enrollment restrictions applied to all users by default|
+|defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
 |defaultDeviceEnrollmentLimit|Int32|Device enrollment limit applied to all users by default|
-|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
-|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
+|intuneBrand|[intuneBrand](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
+|certificateConnectorSetting|[certificateConnectorSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
+
+
 
 ## Response
-
-If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune_onboarding_organization.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_organization.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}
@@ -156,8 +154,7 @@ Content-length: 4054
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

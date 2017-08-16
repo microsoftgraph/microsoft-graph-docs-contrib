@@ -1,15 +1,18 @@
-# managedDeviceCertificateState resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# managedDeviceCertificateState resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-Not yet documented
+
+**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List managedDeviceCertificateStates](../api/intune_deviceconfig_manageddevicecertificatestate_list.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) collection|List properties and relationships of the [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) objects.|
-|[Get managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_get.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md)|Read properties and relationships of the [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
-|[Create managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_create.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md)|Create a new [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
-|[Delete managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_delete.md)|None|Deletes a [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md).|
-|[Update managedDeviceCertificateState](../api/intune_deviceconfig_manageddevicecertificatestate_update.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md)|Update the properties of a [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
+|[List managedDeviceCertificateStates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_manageddevicecertificatestate_list.md)|[managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md) collection|List properties and relationships of the [managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md) objects.|
+|[Get managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_manageddevicecertificatestate_get.md)|[managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md)|Read properties and relationships of the [managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
+|[Create managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_manageddevicecertificatestate_create.md)|[managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md)|Create a new [managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
+|[Delete managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_manageddevicecertificatestate_delete.md)|None|Deletes a [managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md).|
+|[Update managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_manageddevicecertificatestate_update.md)|[managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md)|Update the properties of a [managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_manageddevicecertificatestate.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -27,6 +30,7 @@ Not yet documented
 |certificateSerialNumber|String|Serial number|
 |certificateKeyLength|Int32|Key length|
 |enhancedKeyUsage|String|Extended key usage|
+
 ## Relationships
 None
 ## JSON Representation
@@ -56,3 +60,6 @@ Here is a JSON representation of the resource.
   "enhancedKeyUsage": "String"
 }
 ```
+
+
+

@@ -1,10 +1,9 @@
 ﻿# Update iosVppEBook
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [iosVppEBook](../resources/intune_books_iosvppebook.md) object.
+Update the properties of a [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,8 +14,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
-PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}/eBook/
+PATCH /deviceAppManagement/managedEBooks{managedEBookId}
+PATCH /deviceAppManagement/managedEBooks{managedEBookId}/groupAssignments{eBookGroupAssignmentId}/eBook
 ```
 
 ## Request headers
@@ -26,21 +25,21 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBoo
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [iosVppEBook](../resources/intune_books_iosvppebook.md) object.
-The following table shows the properties that are required when you create a [iosVppEBook](../resources/intune_books_iosvppebook.md).
+In the request body, supply a JSON representation of a [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md) object.
+The following table shows the properties that are required when you create a [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md).
 
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|displayName|String|Name of the eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|description|String|Description. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|publisher|String|Publisher. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|id|String|Key of the entity. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|displayName|String|Name of the eBook. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|description|String|Description. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|publisher|String|Publisher. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|largeCover|[mimeContent](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_mimecontent.md)|Book cover. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|informationUrl|String|The more information Url. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|The Vpp token ID.|
 |appleId|String|The Apple ID associated with Vpp token.|
 |vppOrganizationName|String|The Vpp token's organization name.|
@@ -50,17 +49,16 @@ The following table shows the properties that are required when you create a [io
 |totalLicenseCount|Int32|Total license count.|
 |usedLicenseCount|Int32|Used license count.|
 
-## Response
 
-If successful, this method returns a `200 OK` response code and an updated [iosVppEBook](../resources/intune_books_iosvppebook.md) object in the response body.
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks{managedEBookId}
 Content-type: application/json
 Content-length: 803
 
@@ -90,8 +88,7 @@ Content-length: 803
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

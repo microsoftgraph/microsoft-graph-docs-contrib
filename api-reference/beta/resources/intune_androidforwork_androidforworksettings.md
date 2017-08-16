@@ -1,19 +1,18 @@
 ﻿# androidForWorkSettings resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Settings for Android For Work.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get androidForWorkSettings](../api/intune_androidforwork_androidforworksettings_get.md)|[androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md)|Read properties and relationships of the [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object.|
-|[Update androidForWorkSettings](../api/intune_androidforwork_androidforworksettings_update.md)|[androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md)|Update the properties of a [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object.|
-|[requestSignupUrl action](../api/intune_androidforwork_androidforworksettings_requestsignupurl.md)|String|Generates a sign-up URL that is used to enroll in Android for Work management.|
-|[completeSignup action](../api/intune_androidforwork_androidforworksettings_completesignup.md)|None|Completes the sign-up flow for Android for Work management.|
-|[syncApps action](../api/intune_androidforwork_androidforworksettings_syncapps.md)|None|Syncs approved applications for the Enterprise.|
-|[unbind action](../api/intune_androidforwork_androidforworksettings_unbind.md)|None|Disables Android for Work management for the Enterprise.|
+|[Get androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_androidforwork_androidforworksettings_get.md)|[androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_androidforwork_androidforworksettings.md)|Read properties and relationships of the [androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_androidforwork_androidforworksettings.md) object.|
+|[Update androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_androidforwork_androidforworksettings_update.md)|[androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_androidforwork_androidforworksettings.md)|Update the properties of a [androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_androidforwork_androidforworksettings.md) object.|
+|[requestSignupUrl action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_androidforwork_androidforworksettings_requestsignupurl.md)|String|Generates a sign-up URL that is used to enroll in Android for Work management.|
+|[completeSignup action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_androidforwork_androidforworksettings_completesignup.md)|None|Completes the sign-up flow for Android for Work management.|
+|[syncApps action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_androidforwork_androidforworksettings_syncapps.md)|None|Syncs approved applications for the Enterprise.|
+|[unbind action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_androidforwork_androidforworksettings_unbind.md)|None|Disables Android for Work management for the Enterprise.|
 
 ## Properties
 |Property|Type|Description|

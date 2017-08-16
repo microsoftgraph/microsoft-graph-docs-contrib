@@ -1,15 +1,18 @@
-# deviceInstallState resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# deviceInstallState resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Contains properties for the installation state for a device.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.|
-|[Get deviceInstallState](../api/intune_books_deviceinstallstate_get.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Read properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.|
-|[Create deviceInstallState](../api/intune_books_deviceinstallstate_create.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Create a new [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.|
-|[Delete deviceInstallState](../api/intune_books_deviceinstallstate_delete.md)|None|Deletes a [deviceInstallState](../resources/intune_books_deviceinstallstate.md).|
-|[Update deviceInstallState](../api/intune_books_deviceinstallstate_update.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Update the properties of a [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.|
+|[List deviceInstallStates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) objects.|
+|[Get deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceinstallstate_get.md)|[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md)|Read properties and relationships of the [deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) object.|
+|[Create deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceinstallstate_create.md)|[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md)|Create a new [deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) object.|
+|[Delete deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceinstallstate_delete.md)|None|Deletes a [deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md).|
+|[Update deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceinstallstate_update.md)|[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md)|Update the properties of a [deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -22,6 +25,7 @@ Contains properties for the installation state for a device.
 |osVersion|String|OS Version.|
 |osDescription|String|OS Description.|
 |userName|String|Device User Name.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -46,3 +50,6 @@ Here is a JSON representation of the resource.
   "userName": "String"
 }
 ```
+
+
+

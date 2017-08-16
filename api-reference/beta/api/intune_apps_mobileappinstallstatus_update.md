@@ -1,10 +1,9 @@
 ﻿# Update mobileAppInstallStatus
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.
+Update the properties of a [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappinstallstatus.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -15,8 +14,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/deviceStatuses/{mobileAppInstallStatusId}
+PATCH /deviceAppManagement/mobileApps{mobileAppId}/deviceStatuses{mobileAppInstallStatusId}
+PATCH /deviceAppManagement/mobileApps{mobileAppId}/userStatuses{userAppInstallStatusId}/deviceStatuses{mobileAppInstallStatusId}
 ```
 
 ## Request headers
@@ -26,8 +25,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.
-The following table shows the properties that are required when you create a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md).
+In the request body, supply a JSON representation of a [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappinstallstatus.md) object.
+The following table shows the properties that are required when you create a [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappinstallstatus.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -42,17 +41,16 @@ The following table shows the properties that are required when you create a [mo
 |userName|String|Device User Name|
 |userPrincipalName|String|User Principal Name|
 
-## Response
 
-If successful, this method returns a `200 OK` response code and an updated [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object in the response body.
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappinstallstatus.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps{mobileAppId}/deviceStatuses{mobileAppInstallStatusId}
 Content-type: application/json
 Content-length: 365
 
@@ -69,8 +67,7 @@ Content-length: 365
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

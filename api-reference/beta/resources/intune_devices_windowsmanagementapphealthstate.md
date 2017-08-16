@@ -1,18 +1,17 @@
-﻿#  resource type
+﻿# windowsManagementAppHealthState resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Windows management app health state entity.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List windowsManagementAppHealthStates](../api/intune_devices_windowsmanagementapphealthstate_list.md)|[windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) collection|List properties and relationships of the [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) objects.|
-|[Get windowsManagementAppHealthState](../api/intune_devices_windowsmanagementapphealthstate_get.md)|[windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md)|Read properties and relationships of the [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object.|
-|[Create windowsManagementAppHealthState](../api/intune_devices_windowsmanagementapphealthstate_create.md)|[windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md)|Create a new [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object.|
-|[Delete windowsManagementAppHealthState](../api/intune_devices_windowsmanagementapphealthstate_delete.md)|None|Deletes a [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md).|
-|[Update windowsManagementAppHealthState](../api/intune_devices_windowsmanagementapphealthstate_update.md)|[windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md)|Update the properties of a [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object.|
+|[List windowsManagementAppHealthStates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthstate_list.md)|[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) collection|List properties and relationships of the [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) objects.|
+|[Get windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthstate_get.md)|[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md)|Read properties and relationships of the [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) object.|
+|[Create windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthstate_create.md)|[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md)|Create a new [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) object.|
+|[Delete windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthstate_delete.md)|None|Deletes a [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md).|
+|[Update windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthstate_update.md)|[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md)|Update the properties of a [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) object.|
 
 ## Properties
 |Property|Type|Description|
