@@ -5,7 +5,7 @@
 
 Allows IT admins to set a predefined default search engine for MDM-Controlled devices.
 
-Inherits from [edgeSearchEngineBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_edgesearchenginebase.md)
+Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)
 
 ## Properties
 |Property|Type|Description|

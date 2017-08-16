@@ -7,8 +7,8 @@
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_applevolumepurchaseprogramtoken_get.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_applevolumepurchaseprogramtoken.md)|Read properties and relationships of the [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_applevolumepurchaseprogramtoken.md) object.|
-|[Update appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_applevolumepurchaseprogramtoken_update.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_applevolumepurchaseprogramtoken.md)|Update the properties of a [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_applevolumepurchaseprogramtoken.md) object.|
+|[Get appleVolumePurchaseProgramToken](../api/intune_apps_applevolumepurchaseprogramtoken_get.md)|[appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md)|Read properties and relationships of the [appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md) object.|
+|[Update appleVolumePurchaseProgramToken](../api/intune_apps_applevolumepurchaseprogramtoken_update.md)|[appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md)|Update the properties of a [appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md) object.|
 
 ## Properties
 |Property|Type|Description|

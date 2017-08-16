@@ -7,10 +7,10 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_notification_devicemanagement_get.md)|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_devicemanagement.md)|Read properties and relationships of the [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_devicemanagement.md) object.|
-|[Update deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_notification_devicemanagement_update.md)|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_devicemanagement.md)|Update the properties of a [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_devicemanagement.md) object.|
-|[List notificationMessageTemplates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_notification_notificationmessagetemplate_list.md)|[notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_notificationmessagetemplate.md) collection|List properties and relationships of the [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_notificationmessagetemplate.md) objects.|
-|[Create notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_notification_notificationmessagetemplate_create.md)|[notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_notificationmessagetemplate.md)|Create a new [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_notificationmessagetemplate.md) object.|
+|[Get deviceManagement](../api/intune_notification_devicemanagement_get.md)|[deviceManagement](../resources/intune_notification_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_notification_devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune_notification_devicemanagement_update.md)|[deviceManagement](../resources/intune_notification_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_notification_devicemanagement.md) object.|
+|[List notificationMessageTemplates](../api/intune_notification_notificationmessagetemplate_list.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|List properties and relationships of the [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) objects.|
+|[Create notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_create.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|Create a new [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -20,7 +20,7 @@ Singleton entity that acts as a container for all device management functionalit
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|notificationMessageTemplates|[notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_notification_notificationmessagetemplate.md) collection|The Notification Message Templates.|
+|notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|The Notification Message Templates.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

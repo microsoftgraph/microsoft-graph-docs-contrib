@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [managedAppStatusRaw](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappstatusraw.md) object.
+Update the properties of a [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -24,20 +24,20 @@ PATCH /deviceAppManagement/managedAppStatuses{managedAppStatusId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [managedAppStatusRaw](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappstatusraw.md) object.
-The following table shows the properties that are required when you create a [managedAppStatusRaw](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappstatusraw.md).
+In the request body, supply a JSON representation of a [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.
+The following table shows the properties that are required when you create a [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).
 
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappstatus.md)|
-|id|String|Key of the entity. Inherited from [managedAppStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappstatus.md)|
-|version|String|Version of the entity. Inherited from [managedAppStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappstatus.md)|
-|content|[Json](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_json.md)|Status report content.|
+|displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|id|String|Key of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|version|String|Version of the entity. Inherited from [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|content|[Json](../resources/intune_mam_json.md)|Status report content.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [managedAppStatusRaw](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappstatusraw.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object in the response body.
 
 ## Example
 ### Request

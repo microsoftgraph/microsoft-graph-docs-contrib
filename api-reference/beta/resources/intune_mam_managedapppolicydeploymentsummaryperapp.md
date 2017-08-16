@@ -7,7 +7,7 @@ Represents policy deployment summary per app.
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|mobileAppIdentifier|[mobileAppIdentifier](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_mobileappidentifier.md)|Deployment of an app.|
+|mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Deployment of an app.|
 |configurationAppliedUserCount|Int32|Number of users the policy is applied.|
 
 ## Relationships

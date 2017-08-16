@@ -30,7 +30,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|eBookGroupAssignments|[eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookgroupassignment.md) collection|Not yet documented|
+|eBookGroupAssignments|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|Not yet documented|
 
 
 

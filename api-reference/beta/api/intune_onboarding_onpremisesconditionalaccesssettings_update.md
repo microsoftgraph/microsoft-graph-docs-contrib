@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [onPremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.
+Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -14,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/exchangeOnPremisesPolicy//conditionalAccessSettings/
+PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ```
 
 ## Request headers
@@ -24,8 +24,8 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy//conditionalAccessSettings/
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [onPremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.
-The following table shows the properties that are required when you create a [onPremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_onpremisesconditionalaccesssettings.md).
+In the request body, supply a JSON representation of a [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.
+The following table shows the properties that are required when you create a [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -38,13 +38,13 @@ The following table shows the properties that are required when you create a [on
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/exchangeOnPremisesPolicy//conditionalAccessSettings/
+PATCH https://graph.microsoft.com/beta/deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 Content-type: application/json
 Content-length: 195
 

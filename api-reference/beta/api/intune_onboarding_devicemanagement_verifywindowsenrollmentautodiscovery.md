@@ -14,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /deviceManagementverifyWindowsEnrollmentAutoDiscovery
+GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagementverifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')
+GET https://graph.microsoft.com/beta/deviceManagement/verifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')
 ```
 
 ### Response

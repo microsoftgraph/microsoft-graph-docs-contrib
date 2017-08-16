@@ -7,9 +7,9 @@ Singleton entity that acts as a container for all device app management function
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_deviceappmanagement_get.md)|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceappmanagement.md) object.|
-|[Update deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_deviceappmanagement_update.md)|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceappmanagement.md) object.|
-|[Get windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapp_get.md)|[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapp.md)|Read properties and relationships of the [windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapp.md) object.|
+|[Get deviceAppManagement](../api/intune_devices_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_devices_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_devices_deviceappmanagement.md) object.|
+|[Update deviceAppManagement](../api/intune_devices_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_devices_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_devices_deviceappmanagement.md) object.|
+|[Get windowsManagementApp](../api/intune_devices_windowsmanagementapp_get.md)|[windowsManagementApp](../resources/intune_devices_windowsmanagementapp.md)|Read properties and relationships of the [windowsManagementApp](../resources/intune_devices_windowsmanagementapp.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -19,7 +19,7 @@ Singleton entity that acts as a container for all device app management function
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|windowsManagementApp|[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapp.md)|Windows management app.|
+|windowsManagementApp|[windowsManagementApp](../resources/intune_devices_windowsmanagementapp.md)|Windows management app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -7,9 +7,9 @@ Devices that are managed or pre-enrolled through Intune
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List managedDevices](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_endpointprotection_manageddevice_list.md)|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md) collection|List properties and relationships of the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md) objects.|
-|[Get managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_endpointprotection_manageddevice_get.md)|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md)|Read properties and relationships of the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md) object.|
-|[Update managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_endpointprotection_manageddevice_update.md)|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md)|Update the properties of a [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_manageddevice.md) object.|
+|[List managedDevices](../api/intune_endpointprotection_manageddevice_list.md)|[managedDevice](../resources/intune_endpointprotection_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_endpointprotection_manageddevice.md) objects.|
+|[Get managedDevice](../api/intune_endpointprotection_manageddevice_get.md)|[managedDevice](../resources/intune_endpointprotection_manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune_endpointprotection_manageddevice.md) object.|
+|[Update managedDevice](../api/intune_endpointprotection_manageddevice_update.md)|[managedDevice](../resources/intune_endpointprotection_manageddevice.md)|Update the properties of a [managedDevice](../resources/intune_endpointprotection_manageddevice.md) object.|
 
 ## Properties
 |Property|Type|Description|

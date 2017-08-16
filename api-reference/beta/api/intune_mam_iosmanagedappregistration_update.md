@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [iosManagedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_iosmanagedappregistration.md) object.
+Update the properties of a [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -24,29 +24,29 @@ PATCH /deviceAppManagement/managedAppRegistrations{managedAppRegistrationId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [iosManagedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_iosmanagedappregistration.md) object.
-The following table shows the properties that are required when you create a [iosManagedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_iosmanagedappregistration.md).
+In the request body, supply a JSON representation of a [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object.
+The following table shows the properties that are required when you create a [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).
 
 |Property|Type|Description|
 |---|---|---|
-|createdDateTime|DateTimeOffset|Date and time of creation Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|lastSyncDateTime|DateTimeOffset|Date and time of last the app synced with management service. Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|applicationVersion|String|App version Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|managementSdkVersion|String|App management SDK version Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|platformVersion|String|Operating System version Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|deviceType|String|Host device type Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|deviceTag|String|App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|deviceName|String|Host device name Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md) Possible values are: `none`, `rootedDevice`.|
-|userId|String|The user Id to who this app registration belongs. Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|appIdentifier|[mobileAppIdentifier](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_mobileappidentifier.md)|The app package Identifier Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|id|String|Key of the entity. Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
-|version|String|Version of the entity. Inherited from [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md)|
+|createdDateTime|DateTimeOffset|Date and time of creation Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|lastSyncDateTime|DateTimeOffset|Date and time of last the app synced with management service. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|applicationVersion|String|App version Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|managementSdkVersion|String|App management SDK version Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|platformVersion|String|Operating System version Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceType|String|Host device type Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceTag|String|App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceName|String|Host device name Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md) Possible values are: `none`, `rootedDevice`.|
+|userId|String|The user Id to who this app registration belongs. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|version|String|Version of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [iosManagedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_iosmanagedappregistration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md) object in the response body.
 
 ## Example
 ### Request

@@ -5,34 +5,34 @@
 
 A class containing the properties for iOS Vpp eBook.
 
-Inherits from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)
+Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List iosVppEBooks](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_iosvppebook_list.md)|[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md) collection|List properties and relationships of the [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md) objects.|
-|[Get iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_iosvppebook_get.md)|[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md)|Read properties and relationships of the [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md) object.|
-|[Create iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_iosvppebook_create.md)|[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md)|Create a new [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md) object.|
-|[Delete iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_iosvppebook_delete.md)|None|Deletes a [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md).|
-|[Update iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_iosvppebook_update.md)|[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md)|Update the properties of a [iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_iosvppebook.md) object.|
-|[List eBookGroupAssignments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_ebookgroupassignment_list.md)|[eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookgroupassignment.md) collection|List properties and relationships of the [eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookgroupassignment.md) objects.|
-|[Get eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookinstallsummary.md) object.|
-|[List deviceInstallStates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) objects.|
-|[List userInstallStateSummaries](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_userinstallstatesummary_list.md)|[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md) collection|List properties and relationships of the [userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md) objects.|
+|[List iosVppEBooks](../api/intune_books_iosvppebook_list.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md) collection|List properties and relationships of the [iosVppEBook](../resources/intune_books_iosvppebook.md) objects.|
+|[Get iosVppEBook](../api/intune_books_iosvppebook_get.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Read properties and relationships of the [iosVppEBook](../resources/intune_books_iosvppebook.md) object.|
+|[Create iosVppEBook](../api/intune_books_iosvppebook_create.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Create a new [iosVppEBook](../resources/intune_books_iosvppebook.md) object.|
+|[Delete iosVppEBook](../api/intune_books_iosvppebook_delete.md)|None|Deletes a [iosVppEBook](../resources/intune_books_iosvppebook.md).|
+|[Update iosVppEBook](../api/intune_books_iosvppebook_update.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Update the properties of a [iosVppEBook](../resources/intune_books_iosvppebook.md) object.|
+|[List eBookGroupAssignments](../api/intune_books_ebookgroupassignment_list.md)|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|List properties and relationships of the [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) objects.|
+|[Get eBookInstallSummary](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
+|[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.|
+|[List userInstallStateSummaries](../api/intune_books_userinstallstatesummary_list.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|List properties and relationships of the [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) objects.|
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|id|String|Key of the entity. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|displayName|String|Name of the eBook. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|description|String|Description. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|publisher|String|Publisher. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|largeCover|[mimeContent](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_mimecontent.md)|Book cover. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|informationUrl|String|The more information Url. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|id|String|Key of the entity. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|displayName|String|Name of the eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|description|String|Description. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|publisher|String|Publisher. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|The Vpp token ID.|
 |appleId|String|The Apple ID associated with Vpp token.|
 |vppOrganizationName|String|The Vpp token's organization name.|
@@ -45,10 +45,10 @@ Inherits from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/ap
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|groupAssignments|[eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookgroupassignment.md) collection|The list of group assignments for this eBook. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|installSummary|[eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|deviceStates|[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
-|userStateSummary|[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|
+|groupAssignments|[eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) collection|The list of group assignments for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

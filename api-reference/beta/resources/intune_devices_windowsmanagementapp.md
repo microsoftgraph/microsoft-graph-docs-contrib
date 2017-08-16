@@ -7,10 +7,10 @@ Windows management app entity.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapp_get.md)|[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapp.md)|Read properties and relationships of the [windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapp.md) object.|
-|[Update windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapp_update.md)|[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapp.md)|Update the properties of a [windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapp.md) object.|
-|[Get windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthsummary_get.md)|[windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthsummary.md)|Read properties and relationships of the [windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthsummary.md) object.|
-|[List windowsManagementAppHealthStates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthstate_list.md)|[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) collection|List properties and relationships of the [windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) objects.|
+|[Get windowsManagementApp](../api/intune_devices_windowsmanagementapp_get.md)|[windowsManagementApp](../resources/intune_devices_windowsmanagementapp.md)|Read properties and relationships of the [windowsManagementApp](../resources/intune_devices_windowsmanagementapp.md) object.|
+|[Update windowsManagementApp](../api/intune_devices_windowsmanagementapp_update.md)|[windowsManagementApp](../resources/intune_devices_windowsmanagementapp.md)|Update the properties of a [windowsManagementApp](../resources/intune_devices_windowsmanagementapp.md) object.|
+|[Get windowsManagementAppHealthSummary](../api/intune_devices_windowsmanagementapphealthsummary_get.md)|[windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md)|Read properties and relationships of the [windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md) object.|
+|[List windowsManagementAppHealthStates](../api/intune_devices_windowsmanagementapphealthstate_list.md)|[windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) collection|List properties and relationships of the [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) objects.|
 
 ## Properties
 |Property|Type|Description|
@@ -21,8 +21,8 @@ Windows management app entity.
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|healthSummary|[windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthsummary.md)|Health summary for Windows management app.|
-|healthStates|[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthstate.md) collection|The list of health states for installed Windows management app.|
+|healthSummary|[windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md)|Health summary for Windows management app.|
+|healthStates|[windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) collection|The list of health states for installed Windows management app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

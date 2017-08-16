@@ -7,8 +7,8 @@
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_devicecategory_get.md)|[deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_devicecategory.md)|Read properties and relationships of the [deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_devicecategory.md) object.|
-|[Update deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_devicecategory_update.md)|[deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_devicecategory.md)|Update the properties of a [deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_devicecategory.md) object.|
+|[Get deviceCategory](../api/intune_devices_devicecategory_get.md)|[deviceCategory](../resources/intune_devices_devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune_devices_devicecategory.md) object.|
+|[Update deviceCategory](../api/intune_devices_devicecategory_update.md)|[deviceCategory](../resources/intune_devices_devicecategory.md)|Update the properties of a [deviceCategory](../resources/intune_devices_devicecategory.md) object.|
 
 ## Properties
 |Property|Type|Description|

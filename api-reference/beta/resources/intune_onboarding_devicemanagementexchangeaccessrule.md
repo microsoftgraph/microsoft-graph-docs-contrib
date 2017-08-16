@@ -7,7 +7,7 @@ Device Access Rules in Exchange.
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|deviceClass|[deviceManagementExchangeDeviceClass](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementexchangedeviceclass.md)|Device Class which will be impacted by this rule.|
+|deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune_onboarding_devicemanagementexchangedeviceclass.md)|Device Class which will be impacted by this rule.|
 |accessLevel|String|Access Level for Exchange granted by this rule. Possible values are: `none`, `allow`, `block`, `quarantine`.|
 
 ## Relationships

@@ -7,10 +7,10 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_endpointprotection_devicemanagement_get.md)|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_devicemanagement.md)|Read properties and relationships of the [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_devicemanagement.md) object.|
-|[Update deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_endpointprotection_devicemanagement_update.md)|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_devicemanagement.md)|Update the properties of a [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_devicemanagement.md) object.|
-|[List windowsMalwareInformations](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_endpointprotection_windowsmalwareinformation_list.md)|[windowsMalwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_windowsmalwareinformation.md) collection|List properties and relationships of the [windowsMalwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_windowsmalwareinformation.md) objects.|
-|[Create windowsMalwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_endpointprotection_windowsmalwareinformation_create.md)|[windowsMalwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_windowsmalwareinformation.md)|Create a new [windowsMalwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_windowsmalwareinformation.md) object.|
+|[Get deviceManagement](../api/intune_endpointprotection_devicemanagement_get.md)|[deviceManagement](../resources/intune_endpointprotection_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_endpointprotection_devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune_endpointprotection_devicemanagement_update.md)|[deviceManagement](../resources/intune_endpointprotection_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_endpointprotection_devicemanagement.md) object.|
+|[List windowsMalwareInformations](../api/intune_endpointprotection_windowsmalwareinformation_list.md)|[windowsMalwareInformation](../resources/intune_endpointprotection_windowsmalwareinformation.md) collection|List properties and relationships of the [windowsMalwareInformation](../resources/intune_endpointprotection_windowsmalwareinformation.md) objects.|
+|[Create windowsMalwareInformation](../api/intune_endpointprotection_windowsmalwareinformation_create.md)|[windowsMalwareInformation](../resources/intune_endpointprotection_windowsmalwareinformation.md)|Create a new [windowsMalwareInformation](../resources/intune_endpointprotection_windowsmalwareinformation.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -20,7 +20,7 @@ Singleton entity that acts as a container for all device management functionalit
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|windowsMalwareInformation|[windowsMalwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_endpointprotection_windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
+|windowsMalwareInformation|[windowsMalwareInformation](../resources/intune_endpointprotection_windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

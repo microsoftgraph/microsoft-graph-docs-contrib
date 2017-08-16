@@ -7,7 +7,7 @@ Network Usage Rules allow enterprises to specify how managed apps use networks, 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|managedApps|[appListItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_applistitem.md) collection|Information about the managed apps that this rule is going to apply to. This collection can contain a maximum of 500 elements.|
+|managedApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|Information about the managed apps that this rule is going to apply to. This collection can contain a maximum of 500 elements.|
 |cellularDataBlockWhenRoaming|Boolean|If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.|
 |cellularDataBlocked|Boolean|If set to true, corresponding managed apps will not be allowed to use cellular data at any time.|
 

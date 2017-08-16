@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md) object.
+Update the properties of a [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -24,8 +24,8 @@ PATCH /deviceManagement/telecomExpenseManagementPartners{telecomExpenseManagemen
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md) object.
-The following table shows the properties that are required when you create a [telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md).
+In the request body, supply a JSON representation of a [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object.
+The following table shows the properties that are required when you create a [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md).
 
 |Property|Type|Description|
 |---|---|---|
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create a [te
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object in the response body.
 
 ## Example
 ### Request

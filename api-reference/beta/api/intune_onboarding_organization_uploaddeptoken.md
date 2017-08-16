@@ -14,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /organization/{organizationId}uploadDepToken
+POST /organization/{organizationId}/uploadDepToken
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{organizationId}uploadDepToken
+POST https://graph.microsoft.com/beta/organization/{organizationId}/uploadDepToken
 
 Content-type: application/json
 Content-length: 69

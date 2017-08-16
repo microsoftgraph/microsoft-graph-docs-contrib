@@ -29,7 +29,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|appConfigurationGroupAssignments|[mdmAppConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mdmappconfiggroupassignment.md) collection|Not yet documented|
+|appConfigurationGroupAssignments|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) collection|Not yet documented|
 
 
 

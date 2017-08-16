@@ -7,8 +7,8 @@ Contains properties for the installation summary of a book for a device.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookinstallsummary.md) object.|
-|[Update eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_ebookinstallsummary_update.md)|[eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookinstallsummary.md)|Update the properties of a [eBookInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_ebookinstallsummary.md) object.|
+|[Get eBookInstallSummary](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
+|[Update eBookInstallSummary](../api/intune_books_ebookinstallsummary_update.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Update the properties of a [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

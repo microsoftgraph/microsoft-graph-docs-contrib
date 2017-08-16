@@ -15,7 +15,7 @@ BitLocker Encryption Base Policies.
 |startupAuthenticationTpmKeyUsage|String|Indicates if TPM startup key is allowed/required/disallowed. Possible values are: `blocked`, `required`, `allowed`.|
 |startupAuthenticationTpmPinAndKeyUsage|String|Indicates if TPM startup pin key and key are allowed/required/disallowed. Possible values are: `blocked`, `required`, `allowed`.|
 |minimumPinLength|Int32|Indicates the minimum length of startup pin. Valid values 4 to 20|
-|recoveryOptions|[bitLockerRecoveryOptions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_bitlockerrecoveryoptions.md)|Allows to recover BitLocker encrypted operating system drives in the absence of the required startup key information. This policy setting is applied when you turn on BitLocker.|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune_deviceconfig_bitlockerrecoveryoptions.md)|Allows to recover BitLocker encrypted operating system drives in the absence of the required startup key information. This policy setting is applied when you turn on BitLocker.|
 |prebootRecoveryEnableMessageAndUrl|Boolean|Enable pre-boot recovery message and Url. If requireStartupAuthentication is false, this value does not affect.|
 |prebootRecoveryMessage|String|Defines a custom recovery message.|
 |prebootRecoveryUrl|String|Defines a custom recovery URL.|

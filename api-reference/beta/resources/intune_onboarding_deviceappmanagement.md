@@ -7,11 +7,11 @@ Singleton entity that acts as a container for all device app management function
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_deviceappmanagement_get.md)|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceappmanagement.md) object.|
-|[Update deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_deviceappmanagement_update.md)|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceappmanagement.md) object.|
-|[syncWindowsStoreForBusinessApps action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_deviceappmanagement_syncwindowsstoreforbusinessapps.md)|None|Syncs Intune account with Windows Store For Business|
-|[List sideLoadingKeys](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_sideloadingkey_list.md)|[sideLoadingKey](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_sideloadingkey.md) collection|List properties and relationships of the [sideLoadingKey](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_sideloadingkey.md) objects.|
-|[Create sideLoadingKey](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_sideloadingkey_create.md)|[sideLoadingKey](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_sideloadingkey.md)|Create a new [sideLoadingKey](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_sideloadingkey.md) object.|
+|[Get deviceAppManagement](../api/intune_onboarding_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object.|
+|[Update deviceAppManagement](../api/intune_onboarding_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object.|
+|[syncWindowsStoreForBusinessApps action](../api/intune_onboarding_deviceappmanagement_syncwindowsstoreforbusinessapps.md)|None|Syncs Intune account with Windows Store For Business|
+|[List sideLoadingKeys](../api/intune_onboarding_sideloadingkey_list.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|List properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) objects.|
+|[Create sideLoadingKey](../api/intune_onboarding_sideloadingkey_create.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Create a new [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ Singleton entity that acts as a container for all device app management function
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|sideLoadingKeys|[sideLoadingKey](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_sideloadingkey.md) collection|Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.|
+|sideLoadingKeys|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

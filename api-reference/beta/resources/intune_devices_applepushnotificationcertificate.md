@@ -7,9 +7,9 @@ Apple push notification certificate.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_applepushnotificationcertificate_get.md)|[applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_applepushnotificationcertificate.md)|Read properties and relationships of the [applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_applepushnotificationcertificate.md) object.|
-|[Update applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_applepushnotificationcertificate_update.md)|[applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_applepushnotificationcertificate.md)|Update the properties of a [applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_applepushnotificationcertificate.md) object.|
-|[downloadApplePushNotificationCertificateSigningRequest function](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_applepushnotificationcertificate_downloadapplepushnotificationcertificatesigningrequest.md)|String|Download Apple push notification certificate signing request|
+|[Get applePushNotificationCertificate](../api/intune_devices_applepushnotificationcertificate_get.md)|[applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md)|Read properties and relationships of the [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) object.|
+|[Update applePushNotificationCertificate](../api/intune_devices_applepushnotificationcertificate_update.md)|[applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md)|Update the properties of a [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) object.|
+|[downloadApplePushNotificationCertificateSigningRequest function](../api/intune_devices_applepushnotificationcertificate_downloadapplepushnotificationcertificatesigningrequest.md)|String|Download Apple push notification certificate signing request|
 
 ## Properties
 |Property|Type|Description|

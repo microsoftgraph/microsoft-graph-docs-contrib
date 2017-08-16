@@ -22,7 +22,7 @@ Hardware information of a given device.
 |isSupervised|Boolean|Supervised mode of the device|
 |isEncrypted|Boolean|Encryption status of the device|
 |isSharedDevice|Boolean|Shared iPad|
-|sharedDeviceCachedUsers|[sharedAppleDeviceUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_sharedappledeviceuser.md) collection|All users on the shared Apple device|
+|sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune_devices_sharedappledeviceuser.md) collection|All users on the shared Apple device|
 
 ## Relationships
 None

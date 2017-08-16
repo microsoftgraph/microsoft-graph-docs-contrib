@@ -7,12 +7,12 @@ Contains properties for the installation state summary for a user.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List userInstallStateSummaries](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_userinstallstatesummary_list.md)|[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md) collection|List properties and relationships of the [userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md) objects.|
-|[Get userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_userinstallstatesummary_get.md)|[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md)|Read properties and relationships of the [userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md) object.|
-|[Create userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_userinstallstatesummary_create.md)|[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md)|Create a new [userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md) object.|
-|[Delete userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_userinstallstatesummary_delete.md)|None|Deletes a [userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md).|
-|[Update userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_userinstallstatesummary_update.md)|[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md)|Update the properties of a [userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_userinstallstatesummary.md) object.|
-|[List deviceInstallStates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) objects.|
+|[List userInstallStateSummaries](../api/intune_books_userinstallstatesummary_list.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|List properties and relationships of the [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) objects.|
+|[Get userInstallStateSummary](../api/intune_books_userinstallstatesummary_get.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|Read properties and relationships of the [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) object.|
+|[Create userInstallStateSummary](../api/intune_books_userinstallstatesummary_create.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|Create a new [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) object.|
+|[Delete userInstallStateSummary](../api/intune_books_userinstallstatesummary_delete.md)|None|Deletes a [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md).|
+|[Update userInstallStateSummary](../api/intune_books_userinstallstatesummary_update.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|Update the properties of a [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) object.|
+|[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.|
 
 ## Properties
 |Property|Type|Description|
@@ -26,7 +26,7 @@ Contains properties for the installation state summary for a user.
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|deviceStates|[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceinstallstate.md) collection|The install state of the eBook.|
+|deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The install state of the eBook.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

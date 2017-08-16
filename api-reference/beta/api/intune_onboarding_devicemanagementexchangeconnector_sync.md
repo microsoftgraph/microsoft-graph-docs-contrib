@@ -14,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}sync
+POST /deviceManagement/exchangeConnectors{deviceManagementExchangeConnectorId}/sync
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}sync
+POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors{deviceManagementExchangeConnectorId}/sync
 
 Content-type: application/json
 Content-length: 31

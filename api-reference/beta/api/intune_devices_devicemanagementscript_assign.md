@@ -29,7 +29,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|deviceManagementScriptGroupAssignments|[deviceManagementScriptGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_devicemanagementscriptgroupassignment.md) collection|Not yet documented|
+|deviceManagementScriptGroupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) collection|Not yet documented|
 
 
 

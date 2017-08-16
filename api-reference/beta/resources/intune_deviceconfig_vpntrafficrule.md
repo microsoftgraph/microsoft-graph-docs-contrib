@@ -9,10 +9,10 @@ VPN Traffic Rule definition.
 |---|---|---|
 |name|String|Name.|
 |protocols|Int32|Protocols (0-255). Valid values 0 to 255|
-|localPortRanges|[numberRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_numberrange.md) collection|Local port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.|
-|remotePortRanges|[numberRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_numberrange.md) collection|Remote port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.|
-|localAddressRanges|[iPv4Range](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ipv4range.md) collection|Local address range. This collection can contain a maximum of 500 elements.|
-|remoteAddressRanges|[iPv4Range](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ipv4range.md) collection|Remote address range. This collection can contain a maximum of 500 elements.|
+|localPortRanges|[numberRange](../resources/intune_deviceconfig_numberrange.md) collection|Local port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.|
+|remotePortRanges|[numberRange](../resources/intune_deviceconfig_numberrange.md) collection|Remote port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.|
+|localAddressRanges|[iPv4Range](../resources/intune_deviceconfig_ipv4range.md) collection|Local address range. This collection can contain a maximum of 500 elements.|
+|remoteAddressRanges|[iPv4Range](../resources/intune_deviceconfig_ipv4range.md) collection|Remote address range. This collection can contain a maximum of 500 elements.|
 |appId|String|App identifier, if this traffic rule is triggered by an app.|
 |appType|String|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
 |routingPolicyType|String|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|

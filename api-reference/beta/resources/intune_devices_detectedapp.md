@@ -7,9 +7,9 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List detectedApps](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_detectedapp_list.md)|[detectedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_detectedapp.md) collection|List properties and relationships of the [detectedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_detectedapp.md) objects.|
-|[Get detectedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_detectedapp_get.md)|[detectedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_detectedapp.md)|Read properties and relationships of the [detectedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_detectedapp.md) object.|
-|[List managedDevices](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_list.md)|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) collection|List properties and relationships of the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) objects.|
+|[List detectedApps](../api/intune_devices_detectedapp_list.md)|[detectedApp](../resources/intune_devices_detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) objects.|
+|[Get detectedApp](../api/intune_devices_detectedapp_get.md)|[detectedApp](../resources/intune_devices_detectedapp.md)|Read properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) object.|
+|[List managedDevices](../api/intune_devices_manageddevice_list.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) objects.|
 
 ## Properties
 |Property|Type|Description|
@@ -23,7 +23,7 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|managedDevices|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) collection|The devices that have the discovered application installed|
+|managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The devices that have the discovered application installed|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

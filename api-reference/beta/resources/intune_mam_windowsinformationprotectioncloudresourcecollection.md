@@ -8,7 +8,7 @@ Windows Information Protection Cloud Resource Collection
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Display name|
-|resources|[windowsInformationProtectionCloudResource](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_windowsinformationprotectioncloudresource.md) collection|Collection of cloud resources|
+|resources|[windowsInformationProtectionCloudResource](../resources/intune_mam_windowsinformationprotectioncloudresource.md) collection|Collection of cloud resources|
 
 ## Relationships
 None

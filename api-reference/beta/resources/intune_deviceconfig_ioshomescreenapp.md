@@ -5,12 +5,12 @@
 
 Represents an icon for an app on the Home Screen
 
-Inherits from [iosHomeScreenItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ioshomescreenitem.md)
+Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Name of the app Inherited from [iosHomeScreenItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ioshomescreenitem.md)|
+|displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
 |bundleID|String|BundleID of app|
 
 ## Relationships

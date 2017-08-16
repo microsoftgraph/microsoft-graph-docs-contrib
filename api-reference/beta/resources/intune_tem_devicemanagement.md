@@ -7,10 +7,10 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_tem_devicemanagement_get.md)|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_devicemanagement.md)|Read properties and relationships of the [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_devicemanagement.md) object.|
-|[Update deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_tem_devicemanagement_update.md)|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_devicemanagement.md)|Update the properties of a [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_devicemanagement.md) object.|
-|[List telecomExpenseManagementPartners](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_tem_telecomexpensemanagementpartner_list.md)|[telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md) collection|List properties and relationships of the [telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md) objects.|
-|[Create telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_tem_telecomexpensemanagementpartner_create.md)|[telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md)|Create a new [telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md) object.|
+|[Get deviceManagement](../api/intune_tem_devicemanagement_get.md)|[deviceManagement](../resources/intune_tem_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_tem_devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune_tem_devicemanagement_update.md)|[deviceManagement](../resources/intune_tem_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_tem_devicemanagement.md) object.|
+|[List telecomExpenseManagementPartners](../api/intune_tem_telecomexpensemanagementpartner_list.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) collection|List properties and relationships of the [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) objects.|
+|[Create telecomExpenseManagementPartner](../api/intune_tem_telecomexpensemanagementpartner_create.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)|Create a new [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -20,7 +20,7 @@ Singleton entity that acts as a container for all device management functionalit
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|telecomExpenseManagementPartners|[telecomExpenseManagementPartner](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_tem_telecomexpensemanagementpartner.md) collection|The telecom expense management partners.|
+|telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) collection|The telecom expense management partners.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -5,7 +5,7 @@
 
 Represents an iOS Web Content Filter setting type, which enables iOS automatic filter feature and allows for additional URL access control. When constructed with no property values, the iOS device will enable the automatic filter regardless.
 
-Inherits from [iosWebContentFilterBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ioswebcontentfilterbase.md)
+Inherits from [iosWebContentFilterBase](../resources/intune_deviceconfig_ioswebcontentfilterbase.md)
 
 ## Properties
 |Property|Type|Description|

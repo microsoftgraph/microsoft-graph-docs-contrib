@@ -27,7 +27,7 @@ GET /reports/deviceConfigurationUserActivity
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [report](../resources/intune_deviceconfig_report.md) in the response body.
 
 ## Example
 ### Request

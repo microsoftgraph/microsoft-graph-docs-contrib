@@ -29,13 +29,13 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|importedDeviceIdentities|[importedDeviceIdentity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentity.md) collection|Not yet documented|
+|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) collection|Not yet documented|
 |overwriteImportedDeviceIdentities|Boolean|Not yet documented|
 
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [importedDeviceIdentityResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_corpenrollment_importeddeviceidentityresult.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) collection in the response body.
 
 ## Example
 ### Request

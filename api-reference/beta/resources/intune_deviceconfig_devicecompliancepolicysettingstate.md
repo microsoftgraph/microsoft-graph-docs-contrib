@@ -17,7 +17,7 @@ Device Compilance Policy Setting State for a given device.
 |userName|String|UserName|
 |userEmail|String|UserEmail|
 |userPrincipalName|String|UserPrincipalName.|
-|sources|[settingSource](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_settingsource.md) collection|Contributing policies|
+|sources|[settingSource](../resources/intune_deviceconfig_settingsource.md) collection|Contributing policies|
 |currentValue|String|Current value of setting on device|
 
 ## Relationships

@@ -7,8 +7,8 @@
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_notificationmessagetemplate_get.md)|[notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_notificationmessagetemplate.md)|Read properties and relationships of the [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_notificationmessagetemplate.md) object.|
-|[Update notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_notificationmessagetemplate_update.md)|[notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_notificationmessagetemplate.md)|Update the properties of a [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_notificationmessagetemplate.md) object.|
+|[Get notificationMessageTemplate](../api/intune_deviceconfig_notificationmessagetemplate_get.md)|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Read properties and relationships of the [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) object.|
+|[Update notificationMessageTemplate](../api/intune_deviceconfig_notificationmessagetemplate_update.md)|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Update the properties of a [notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

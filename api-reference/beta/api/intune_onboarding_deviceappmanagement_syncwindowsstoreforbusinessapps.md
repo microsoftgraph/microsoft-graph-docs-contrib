@@ -14,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceAppManagementsyncWindowsStoreForBusinessApps
+POST /deviceAppManagement/syncWindowsStoreForBusinessApps
 ```
 
 ## Request headers
@@ -33,7 +33,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagementsyncWindowsStoreForBusinessApps
+POST https://graph.microsoft.com/beta/deviceAppManagement/syncWindowsStoreForBusinessApps
 ```
 
 ### Response

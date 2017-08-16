@@ -7,8 +7,8 @@
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get symantecCodeSigningCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_symanteccodesigningcertificate_get.md)|[symantecCodeSigningCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_symanteccodesigningcertificate.md)|Read properties and relationships of the [symantecCodeSigningCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_symanteccodesigningcertificate.md) object.|
-|[Update symantecCodeSigningCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_symanteccodesigningcertificate_update.md)|[symantecCodeSigningCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_symanteccodesigningcertificate.md)|Update the properties of a [symantecCodeSigningCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_symanteccodesigningcertificate.md) object.|
+|[Get symantecCodeSigningCertificate](../api/intune_apps_symanteccodesigningcertificate_get.md)|[symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md)|Read properties and relationships of the [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object.|
+|[Update symantecCodeSigningCertificate](../api/intune_apps_symanteccodesigningcertificate_update.md)|[symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md)|Update the properties of a [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object.|
 
 ## Properties
 |Property|Type|Description|

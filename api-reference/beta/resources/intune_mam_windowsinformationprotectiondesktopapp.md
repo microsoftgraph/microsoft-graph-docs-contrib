@@ -5,15 +5,15 @@
 
 Desktop App for Windows information protection
 
-Inherits from [windowsInformationProtectionApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_windowsinformationprotectionapp.md)
+Inherits from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|App display name. Inherited from [windowsInformationProtectionApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_windowsinformationprotectionapp.md)|
-|description|String|The app's description. Inherited from [windowsInformationProtectionApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_windowsinformationprotectionapp.md)|
-|publisherName|String|The publisher name Inherited from [windowsInformationProtectionApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_windowsinformationprotectionapp.md)|
-|productName|String|The product name. Inherited from [windowsInformationProtectionApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_windowsinformationprotectionapp.md)|
+|displayName|String|App display name. Inherited from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|description|String|The app's description. Inherited from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|publisherName|String|The publisher name Inherited from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|productName|String|The product name. Inherited from [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 |binaryName|String|The binary name.|
 |binaryVersionLow|String|The lower binary version.|
 |binaryVersionHigh|String|The high binary version.|

@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Deletes a [deviceCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicecategory.md).
+Deletes a [deviceCategory](../resources/intune_onboarding_devicecategory.md).
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -14,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
+DELETE /deviceManagement/deviceCategories{deviceCategoryId}
 ```
 
 ## Request headers
@@ -33,7 +33,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories{deviceCategoryId}
 ```
 
 ### Response

@@ -7,13 +7,13 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List appleVolumePurchaseProgramTokens](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_applevolumepurchaseprogramtoken_list.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|List properties and relationships of the [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) objects.|
-|[Get appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_applevolumepurchaseprogramtoken_get.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Read properties and relationships of the [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.|
-|[Create appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_applevolumepurchaseprogramtoken_create.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Create a new [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.|
-|[Delete appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_applevolumepurchaseprogramtoken_delete.md)|None|Deletes a [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md).|
-|[Update appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_applevolumepurchaseprogramtoken_update.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Update the properties of a [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.|
-|[syncApps action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_applevolumepurchaseprogramtoken_syncapps.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Not yet documented|
-|[syncLicenses action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_onboarding_applevolumepurchaseprogramtoken_synclicenses.md)|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Not yet documented|
+|[List appleVolumePurchaseProgramTokens](../api/intune_onboarding_applevolumepurchaseprogramtoken_list.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) collection|List properties and relationships of the [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) objects.|
+|[Get appleVolumePurchaseProgramToken](../api/intune_onboarding_applevolumepurchaseprogramtoken_get.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Read properties and relationships of the [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.|
+|[Create appleVolumePurchaseProgramToken](../api/intune_onboarding_applevolumepurchaseprogramtoken_create.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Create a new [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.|
+|[Delete appleVolumePurchaseProgramToken](../api/intune_onboarding_applevolumepurchaseprogramtoken_delete.md)|None|Deletes a [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md).|
+|[Update appleVolumePurchaseProgramToken](../api/intune_onboarding_applevolumepurchaseprogramtoken_update.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Update the properties of a [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.|
+|[syncApps action](../api/intune_onboarding_applevolumepurchaseprogramtoken_syncapps.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Not yet documented|
+|[syncLicenses action](../api/intune_onboarding_applevolumepurchaseprogramtoken_synclicenses.md)|[appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -28,6 +28,8 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
 |state|String|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`. Possible values are: `unknown`, `valid`, `expired`, `invalid`.|
 |lastSyncStatus|String|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
+|automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
+|countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
 
 ## Relationships
 None
@@ -51,7 +53,9 @@ Here is a JSON representation of the resource.
   "token": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "state": "String",
-  "lastSyncStatus": "String"
+  "lastSyncStatus": "String",
+  "automaticallyUpdateApps": true,
+  "countryOrRegion": "String"
 }
 ```
 

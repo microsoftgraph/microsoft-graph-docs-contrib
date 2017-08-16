@@ -13,7 +13,7 @@ Contains properties for the package information for a Windows line of business a
 |identityPublisher|String|The Identity Publisher.|
 |identityResourceIdentifier|String|The Identity Resource Identifier.|
 |identityVersion|String|The Identity Version.|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
 ## Relationships
 None

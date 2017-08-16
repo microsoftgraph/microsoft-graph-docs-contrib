@@ -5,13 +5,13 @@
 
 A folder containing pages of apps on the Home Screen
 
-Inherits from [iosHomeScreenItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ioshomescreenitem.md)
+Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Name of the app Inherited from [iosHomeScreenItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ioshomescreenitem.md)|
-|pages|[iosHomeScreenFolderPage](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.|
+|displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
+|pages|[iosHomeScreenFolderPage](../resources/intune_deviceconfig_ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

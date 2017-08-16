@@ -29,7 +29,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|fileEncryptionInfo|[fileEncryptionInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_fileencryptioninfo.md)|Not yet documented|
+|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune_apps_fileencryptioninfo.md)|Not yet documented|
 
 
 

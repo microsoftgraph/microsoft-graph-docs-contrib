@@ -7,9 +7,9 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List managedAppPolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md) objects.|
-|[Get managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_managedapppolicy_get.md)|[managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md) object.|
-|[updateMobileAppIdentifierDeployments action](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_managedapppolicy_updatemobileappidentifierdeployments.md)|None|Not yet documented|
+|[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
+|[Get managedAppPolicy](../api/intune_mam_managedapppolicy_get.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) object.|
+|[updateMobileAppIdentifierDeployments action](../api/intune_mam_managedapppolicy_updatemobileappidentifierdeployments.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

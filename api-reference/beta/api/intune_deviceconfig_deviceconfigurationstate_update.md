@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceConfigurationState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_deviceconfigurationstate.md) object.
+Update the properties of a [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -24,13 +24,13 @@ PATCH /managedDevices/{managedDevicesId}/deviceConfigurationStates{deviceConfigu
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [deviceConfigurationState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_deviceconfigurationstate.md) object.
-The following table shows the properties that are required when you create a [deviceConfigurationState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_deviceconfigurationstate.md).
+In the request body, supply a JSON representation of a [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) object.
+The following table shows the properties that are required when you create a [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md).
 
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|settingStates|[deviceConfigurationSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_deviceconfigurationsettingstate.md) collection|Not yet documented|
+|settingStates|[deviceConfigurationSettingState](../resources/intune_deviceconfig_deviceconfigurationsettingstate.md) collection|Not yet documented|
 |displayName|String|The name of the policy for this policyBase|
 |version|Int32|The version of the policy|
 |platformType|String|Platform type that the policy applies to Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
@@ -40,7 +40,7 @@ The following table shows the properties that are required when you create a [de
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_deviceconfigurationstate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) object in the response body.
 
 ## Example
 ### Request

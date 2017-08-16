@@ -7,11 +7,11 @@ Represents an Azure Active Directory object. The directoryObject type is the bas
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List directoryObjects](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_directoryobject_list.md)|[directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md) objects.|
-|[Get directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_directoryobject_get.md)|[directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md)|Read properties and relationships of the [directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md) object.|
-|[Create directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_directoryobject_create.md)|[directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md)|Create a new [directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md) object.|
-|[Delete directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_directoryobject_delete.md)|None|Deletes a [directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md).|
-|[Update directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_directoryobject_update.md)|[directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md)|Update the properties of a [directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md) object.|
+|[List directoryObjects](../api/intune_mam_directoryobject_list.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.|
+|[Get directoryObject](../api/intune_mam_directoryobject_get.md)|[directoryObject](../resources/intune_mam_directoryobject.md)|Read properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) object.|
+|[Create directoryObject](../api/intune_mam_directoryobject_create.md)|[directoryObject](../resources/intune_mam_directoryobject.md)|Create a new [directoryObject](../resources/intune_mam_directoryobject.md) object.|
+|[Delete directoryObject](../api/intune_mam_directoryobject_delete.md)|None|Deletes a [directoryObject](../resources/intune_mam_directoryobject.md).|
+|[Update directoryObject](../api/intune_mam_directoryobject_update.md)|[directoryObject](../resources/intune_mam_directoryobject.md)|Update the properties of a [directoryObject](../resources/intune_mam_directoryobject.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -29,7 +29,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|targetedSecurityGroups|[directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_directoryobject.md) collection|Not yet documented|
+|targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Not yet documented|
 
 
 

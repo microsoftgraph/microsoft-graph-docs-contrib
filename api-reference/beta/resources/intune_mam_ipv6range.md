@@ -5,7 +5,7 @@
 
 IP V6 range
 
-Inherits from [ipRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_iprange.md)
+Inherits from [ipRange](../resources/intune_mam_iprange.md)
 
 ## Properties
 |Property|Type|Description|

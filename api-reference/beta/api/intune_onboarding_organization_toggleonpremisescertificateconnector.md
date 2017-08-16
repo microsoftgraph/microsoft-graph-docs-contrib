@@ -14,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /organization/{organizationId}toggleOnPremisesCertificateConnector
+POST /organization/{organizationId}/toggleOnPremisesCertificateConnector
 ```
 
 ## Request headers
@@ -33,7 +33,7 @@ If successful, this action returns a `200 OK` response code and a Int32 in the r
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{organizationId}toggleOnPremisesCertificateConnector
+POST https://graph.microsoft.com/beta/organization/{organizationId}/toggleOnPremisesCertificateConnector
 ```
 
 ### Response

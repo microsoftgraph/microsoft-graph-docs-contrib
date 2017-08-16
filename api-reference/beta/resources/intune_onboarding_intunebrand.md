@@ -15,10 +15,10 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |privacyUrl|String|URL to the company/organization’s privacy policy.|
 |onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
 |onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
-|themeColor|[rgbColor](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
+|themeColor|[rgbColor](../resources/intune_onboarding_rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not shown.|
-|lightBackgroundLogo|[mimeContent](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo.|
-|darkBackgroundLogo|[mimeContent](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_mimecontent.md)|Logo image displayed in Company Portal apps which have a dark background behind the logo.|
+|lightBackgroundLogo|[mimeContent](../resources/intune_onboarding_mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo.|
+|darkBackgroundLogo|[mimeContent](../resources/intune_onboarding_mimecontent.md)|Logo image displayed in Company Portal apps which have a dark background behind the logo.|
 |showNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
 
 ## Relationships

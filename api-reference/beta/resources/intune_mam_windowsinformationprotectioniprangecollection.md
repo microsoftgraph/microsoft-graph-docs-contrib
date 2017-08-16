@@ -8,7 +8,7 @@ Windows Information Protection IP Range Collection
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Display name|
-|ranges|[ipRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_iprange.md) collection|Collection of ip ranges|
+|ranges|[ipRange](../resources/intune_mam_iprange.md) collection|Collection of ip ranges|
 
 ## Relationships
 None

@@ -5,12 +5,12 @@
 
 Represents an iOS Web Content Filter setting type, which installs URL bookmarks into iOS built-in browser. An example scenario is in the classroom where teachers would like the students to navigate websites through browser bookmarks configured on their iOS devices, and no access to other sites.
 
-Inherits from [iosWebContentFilterBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ioswebcontentfilterbase.md)
+Inherits from [iosWebContentFilterBase](../resources/intune_deviceconfig_ioswebcontentfilterbase.md)
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|specificWebsitesOnly|[iosBookmark](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_iosbookmark.md) collection|URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks. This collection can contain a maximum of 500 elements.|
+|specificWebsitesOnly|[iosBookmark](../resources/intune_deviceconfig_iosbookmark.md) collection|URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

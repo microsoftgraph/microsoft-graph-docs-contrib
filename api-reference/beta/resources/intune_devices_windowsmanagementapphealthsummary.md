@@ -7,8 +7,8 @@ Contains properties for the health summary of the Windows management app.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthsummary_get.md)|[windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthsummary.md)|Read properties and relationships of the [windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthsummary.md) object.|
-|[Update windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsmanagementapphealthsummary_update.md)|[windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthsummary.md)|Update the properties of a [windowsManagementAppHealthSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsmanagementapphealthsummary.md) object.|
+|[Get windowsManagementAppHealthSummary](../api/intune_devices_windowsmanagementapphealthsummary_get.md)|[windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md)|Read properties and relationships of the [windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md) object.|
+|[Update windowsManagementAppHealthSummary](../api/intune_devices_windowsmanagementapphealthsummary_update.md)|[windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md)|Update the properties of a [windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

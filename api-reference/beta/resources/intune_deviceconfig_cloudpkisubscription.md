@@ -7,11 +7,11 @@ CloudPki subscription certificate profile
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List cloudPkiSubscriptions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_cloudpkisubscription_list.md)|[cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md) collection|List properties and relationships of the [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md) objects.|
-|[Get cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_cloudpkisubscription_get.md)|[cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md)|Read properties and relationships of the [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md) object.|
-|[Create cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_cloudpkisubscription_create.md)|[cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md)|Create a new [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md) object.|
-|[Delete cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_cloudpkisubscription_delete.md)|None|Deletes a [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md).|
-|[Update cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_cloudpkisubscription_update.md)|[cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md)|Update the properties of a [cloudPkiSubscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkisubscription.md) object.|
+|[List cloudPkiSubscriptions](../api/intune_deviceconfig_cloudpkisubscription_list.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) collection|List properties and relationships of the [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) objects.|
+|[Get cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_get.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md)|Read properties and relationships of the [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object.|
+|[Create cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_create.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md)|Create a new [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object.|
+|[Delete cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_delete.md)|None|Deletes a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md).|
+|[Update cloudPkiSubscription](../api/intune_deviceconfig_cloudpkisubscription_update.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md)|Update the properties of a [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ CloudPki subscription certificate profile
 |syncStatus|String|Last known SyncStatus of CloudPkiSubscription Possible values are: `unKnown`, `succeeded`, `failed`.|
 |lastSyncError|String|Error if occurred during last sync from third party CAs|
 |lastSyncDateTime|DateTimeOffset|DateTime certificate is last updated|
-|credentials|[cloudPkiAdministratorCredentials](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_cloudpkiadministratorcredentials.md)|PKCS Certification Authority Name|
+|credentials|[cloudPkiAdministratorCredentials](../resources/intune_deviceconfig_cloudpkiadministratorcredentials.md)|PKCS Certification Authority Name|
 |trustedRootCertificate|Binary|PKCS Certificate Template Name|
 |version|Int32|Version of the CloudPkiSubscription.|
 

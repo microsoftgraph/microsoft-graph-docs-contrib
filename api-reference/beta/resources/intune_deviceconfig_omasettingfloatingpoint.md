@@ -5,14 +5,14 @@
 
 OMA Settings Floating Point definition.
 
-Inherits from [omaSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_omasetting.md)
+Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Display Name. Inherited from [omaSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_omasetting.md)|
-|description|String|Description. Inherited from [omaSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_omasetting.md)|
-|omaUri|String|OMA. Inherited from [omaSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_omasetting.md)|
+|displayName|String|Display Name. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|String|Description. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|omaUri|String|OMA. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|Single|Value.|
 
 ## Relationships

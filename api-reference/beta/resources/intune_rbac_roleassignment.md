@@ -7,12 +7,12 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List roleAssignments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_rbac_roleassignment_list.md)|[roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md) collection|List properties and relationships of the [roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md) objects.|
-|[Get roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_rbac_roleassignment_get.md)|[roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md)|Read properties and relationships of the [roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md) object.|
-|[Create roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_rbac_roleassignment_create.md)|[roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md)|Create a new [roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md) object.|
-|[Delete roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_rbac_roleassignment_delete.md)|None|Deletes a [roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md).|
-|[Update roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_rbac_roleassignment_update.md)|[roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md)|Update the properties of a [roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roleassignment.md) object.|
-|[Get roleDefinition](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_rbac_roledefinition_get.md)|[roleDefinition](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roledefinition.md)|Read properties and relationships of the [roleDefinition](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roledefinition.md) object.|
+|[List roleAssignments](../api/intune_rbac_roleassignment_list.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md) collection|List properties and relationships of the [roleAssignment](../resources/intune_rbac_roleassignment.md) objects.|
+|[Get roleAssignment](../api/intune_rbac_roleassignment_get.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Read properties and relationships of the [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
+|[Create roleAssignment](../api/intune_rbac_roleassignment_create.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Create a new [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
+|[Delete roleAssignment](../api/intune_rbac_roleassignment_delete.md)|None|Deletes a [roleAssignment](../resources/intune_rbac_roleassignment.md).|
+|[Update roleAssignment](../api/intune_rbac_roleassignment_update.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Update the properties of a [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
+|[Get roleDefinition](../api/intune_rbac_roledefinition_get.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Read properties and relationships of the [roleDefinition](../resources/intune_rbac_roledefinition.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -26,7 +26,7 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|roleDefinition|[roleDefinition](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_rbac_roledefinition.md)|Role definition this assignment is part of.|
+|roleDefinition|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Role definition this assignment is part of.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -7,8 +7,8 @@
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsprotectionstate_get.md)|[windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsprotectionstate.md)|Read properties and relationships of the [windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsprotectionstate.md) object.|
-|[Update windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_devices_windowsprotectionstate_update.md)|[windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_windowsprotectionstate.md) object.|
+|[Get windowsProtectionState](../api/intune_devices_windowsprotectionstate_get.md)|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|Read properties and relationships of the [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object.|
+|[Update windowsProtectionState](../api/intune_devices_windowsprotectionstate_update.md)|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object.|
 
 ## Properties
 |Property|Type|Description|

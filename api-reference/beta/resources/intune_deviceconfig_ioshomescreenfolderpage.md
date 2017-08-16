@@ -8,7 +8,7 @@ A folder containing apps on the Home Screen
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Name of the folder page|
-|apps|[iosHomeScreenApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_ioshomescreenapp.md) collection|A list of apps to appear on a page within a folder. This collection can contain a maximum of 500 elements.|
+|apps|[iosHomeScreenApp](../resources/intune_deviceconfig_ioshomescreenapp.md) collection|A list of apps to appear on a page within a folder. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

@@ -7,13 +7,13 @@ Contains properties for the installation status for a user.
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List userAppInstallStatuses](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_userappinstallstatus_list.md)|[userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md) objects.|
-|[Get userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_userappinstallstatus_get.md)|[userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md)|Read properties and relationships of the [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md) object.|
-|[Create userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_userappinstallstatus_create.md)|[userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md)|Create a new [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md) object.|
-|[Delete userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_userappinstallstatus_delete.md)|None|Deletes a [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md).|
-|[Update userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_userappinstallstatus_update.md)|[userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md)|Update the properties of a [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_userappinstallstatus.md) object.|
-|[Get mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileapp_get.md)|[mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileapp.md)|Read properties and relationships of the [mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileapp.md) object.|
-|[List mobileAppInstallStatuses](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappinstallstatus.md) objects.|
+|[List userAppInstallStatuses](../api/intune_apps_userappinstallstatus_list.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.|
+|[Get userAppInstallStatus](../api/intune_apps_userappinstallstatus_get.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md)|Read properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) object.|
+|[Create userAppInstallStatus](../api/intune_apps_userappinstallstatus_create.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md)|Create a new [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) object.|
+|[Delete userAppInstallStatus](../api/intune_apps_userappinstallstatus_delete.md)|None|Deletes a [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md).|
+|[Update userAppInstallStatus](../api/intune_apps_userappinstallstatus_update.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md)|Update the properties of a [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) object.|
+|[Get mobileApp](../api/intune_apps_mobileapp_get.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) object.|
+|[List mobileAppInstallStatuses](../api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.|
 
 ## Properties
 |Property|Type|Description|
@@ -28,8 +28,8 @@ Contains properties for the installation status for a user.
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|app|[mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileapp.md)|The navigation link to the mobile app.|
-|deviceStatuses|[mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_apps_mobileappinstallstatus.md) collection|The install state of the app.|
+|app|[mobileApp](../resources/intune_apps_mobileapp.md)|The navigation link to the mobile app.|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The install state of the app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

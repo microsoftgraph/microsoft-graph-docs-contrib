@@ -5,14 +5,14 @@
 
 VPN Proxy Server.
 
-Inherits from [vpnProxyServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_vpnproxyserver.md)
+Inherits from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_vpnproxyserver.md)|
-|address|String|Address. Inherited from [vpnProxyServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_vpnproxyserver.md)|
-|port|Int32|Port. Valid values 0 to 65535 Inherited from [vpnProxyServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_vpnproxyserver.md)|
+|automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
+|address|String|Address. Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
+|port|Int32|Port. Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|
 |bypassProxyServerForLocalAddress|Boolean|Bypass proxy server for local address.|
 
 ## Relationships

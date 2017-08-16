@@ -5,7 +5,7 @@
 
 Example JSON that demonstrates how to set an app configuration confirming to the app's schema.
 
-Inherits from [androidForWorkAppConfigurationExample](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_androidforwork_androidforworkappconfigurationexample.md)
+Inherits from [androidForWorkAppConfigurationExample](../resources/intune_androidforwork_androidforworkappconfigurationexample.md)
 
 ## Properties
 |Property|Type|Description|

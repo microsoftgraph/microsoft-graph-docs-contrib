@@ -5,7 +5,7 @@
 
 Daily run schedule of a recurring device management script.
 
-Inherits from [runSchedule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_runschedule.md)
+Inherits from [runSchedule](../resources/intune_devices_runschedule.md)
 
 ## Properties
 |Property|Type|Description|

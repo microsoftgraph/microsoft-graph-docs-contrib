@@ -5,23 +5,23 @@
 
 Policy used to configure detailed management settings for a specified set of apps
 
-Inherits from [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md)
+Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[List managedAppProtections](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_managedappprotection_list.md)|[managedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappprotection.md) collection|List properties and relationships of the [managedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappprotection.md) objects.|
-|[Get managedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_mam_managedappprotection_get.md)|[managedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappprotection.md)|Read properties and relationships of the [managedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappprotection.md) object.|
+|[List managedAppProtections](../api/intune_mam_managedappprotection_list.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md) collection|List properties and relationships of the [managedAppProtection](../resources/intune_mam_managedappprotection.md) objects.|
+|[Get managedAppProtection](../api/intune_mam_managedappprotection_get.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md)|Read properties and relationships of the [managedAppProtection](../resources/intune_mam_managedappprotection.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|displayName|String|Policy display name. Inherited from [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md)|
-|description|String|The policy's description. Inherited from [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md)|
-|createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md)|
-|lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md)|
-|id|String|Key of the entity. Inherited from [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md)|
-|version|String|Version of the entity. Inherited from [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicy.md)|
+|displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|The period after which access is checked when the device is not connected to the internet.|
 |periodOnlineBeforeAccessCheck|Duration|The period after which access is checked when the device is connected to the internet.|
 |allowedInboundDataTransferSources|String|Sources from which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|

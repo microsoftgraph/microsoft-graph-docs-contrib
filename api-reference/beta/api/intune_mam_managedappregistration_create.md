@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md) object.
+Create a new [managedAppRegistration](../resources/intune_mam_managedappregistration.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -39,14 +39,14 @@ The following table shows the properties that are required when you create a man
 |deviceName|String|Host device name|
 |flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Possible values are: `none`, `rootedDevice`.|
 |userId|String|The user Id to who this app registration belongs.|
-|appIdentifier|[mobileAppIdentifier](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_mobileappidentifier.md)|The app package Identifier|
+|appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier|
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedappregistration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [managedAppRegistration](../resources/intune_mam_managedappregistration.md) object in the response body.
 
 ## Example
 ### Request

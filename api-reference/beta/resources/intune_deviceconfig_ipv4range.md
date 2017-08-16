@@ -5,7 +5,7 @@
 
 IP V4 range
 
-Inherits from [ipRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_iprange.md)
+Inherits from [ipRange](../resources/intune_deviceconfig_iprange.md)
 
 ## Properties
 |Property|Type|Description|

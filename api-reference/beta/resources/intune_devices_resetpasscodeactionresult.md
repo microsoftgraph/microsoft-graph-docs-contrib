@@ -5,15 +5,15 @@
 
 Reset passcode action result
 
-Inherits from [deviceActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceactionresult.md)
+Inherits from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|actionName|String|Action name Inherited from [deviceActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceactionresult.md)|
-|actionState|String|State of the action Inherited from [deviceActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceactionresult.md) Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|startDateTime|DateTimeOffset|Time the action was initiated Inherited from [deviceActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceactionresult.md)|
-|lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceactionresult.md)|
+|actionName|String|Action name Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
+|actionState|String|State of the action Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md) Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|startDateTime|DateTimeOffset|Time the action was initiated Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
+|lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |passcode|String|Newly generated passcode for the device |
 
 ## Relationships

@@ -30,7 +30,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |---|---|---|
-|deviceComplianceScheduledActionForRules|[deviceComplianceScheduledActionForRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) collection|Not yet documented|
+|deviceComplianceScheduledActionForRules|[deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) collection|Not yet documented|
 
 
 

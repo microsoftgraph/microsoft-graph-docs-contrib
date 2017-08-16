@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [managedAppPolicyDeploymentSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicydeploymentsummary.md) object.
+Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -27,22 +27,22 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations{targetedManagedAppCo
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [managedAppPolicyDeploymentSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicydeploymentsummary.md) object.
-The following table shows the properties that are required when you create a [managedAppPolicyDeploymentSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicydeploymentsummary.md).
+In the request body, supply a JSON representation of a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.
+The following table shows the properties that are required when you create a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md).
 
 |Property|Type|Description|
 |---|---|---|
 |displayName|String|Not yet documented|
 |configurationDeployedUserCount|Int32|Not yet documented|
 |lastRefreshTime|DateTimeOffset|Not yet documented|
-|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicydeploymentsummaryperapp.md) collection|Not yet documented|
+|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md) collection|Not yet documented|
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_managedapppolicydeploymentsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object in the response body.
 
 ## Example
 ### Request

@@ -14,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}syncApps
+POST /organization/{organizationId}/appleVolumePurchaseProgramTokens{appleVolumePurchaseProgramTokenId}/syncApps
 ```
 
 ## Request headers
@@ -27,13 +27,13 @@ POST /organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolum
 Do not supply a request body for this method.
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_applevolumepurchaseprogramtoken.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}syncApps
+POST https://graph.microsoft.com/beta/organization/{organizationId}/appleVolumePurchaseProgramTokens{appleVolumePurchaseProgramTokenId}/syncApps
 ```
 
 ### Response
@@ -41,7 +41,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 571
+Content-Length: 660
 
 {
   "value": {
@@ -55,7 +55,9 @@ Content-Length: 571
     "token": "Token value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "state": "valid",
-    "lastSyncStatus": "inProgress"
+    "lastSyncStatus": "inProgress",
+    "automaticallyUpdateApps": true,
+    "countryOrRegion": "Country Or Region value"
   }
 }
 ```

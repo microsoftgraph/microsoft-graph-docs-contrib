@@ -7,10 +7,10 @@ Singleton entity that acts as a container for all device app management function
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
-|[Get deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceappmanagement_get.md)|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceappmanagement.md) object.|
-|[Update deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_deviceappmanagement_update.md)|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_deviceappmanagement.md) object.|
-|[List managedEBooks](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_managedebook_list.md)|[managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md) collection|List properties and relationships of the [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md) objects.|
-|[Create managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_books_managedebook_create.md)|[managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md)|Create a new [managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md) object.|
+|[Get deviceAppManagement](../api/intune_books_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_books_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_books_deviceappmanagement.md) object.|
+|[Update deviceAppManagement](../api/intune_books_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_books_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_books_deviceappmanagement.md) object.|
+|[List managedEBooks](../api/intune_books_managedebook_list.md)|[managedEBook](../resources/intune_books_managedebook.md) collection|List properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) objects.|
+|[Create managedEBook](../api/intune_books_managedebook_create.md)|[managedEBook](../resources/intune_books_managedebook.md)|Create a new [managedEBook](../resources/intune_books_managedebook.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -20,7 +20,7 @@ Singleton entity that acts as a container for all device app management function
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
-|managedEBooks|[managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_books_managedebook.md) collection|The Managed eBook.|
+|managedEBooks|[managedEBook](../resources/intune_books_managedebook.md) collection|The Managed eBook.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

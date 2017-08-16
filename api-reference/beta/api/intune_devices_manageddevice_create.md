@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) object.
+Create a new [managedDevice](../resources/intune_devices_manageddevice.md) object.
 ## Prerequisites
 One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
 
@@ -35,9 +35,9 @@ The following table shows the properties that are required when you create a man
 |id|String|Unique Identifier for the device|
 |userId|String|Unique Identifier for the user associated with the device|
 |deviceName|String|Name of the device|
-|hardwareInformation|[hardwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc.|
+|hardwareInformation|[hardwareInformation](../resources/intune_devices_hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc.|
 |ownerType|String|Ownership of the device. Can be 'company' or 'personal' Possible values are: `unknown`, `company`, `personal`.|
-|deviceActionResults|[deviceActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_deviceactionresult.md) collection|List of ComplexType deviceActionResult objects.|
+|deviceActionResults|[deviceActionResult](../resources/intune_devices_deviceactionresult.md) collection|List of ComplexType deviceActionResult objects.|
 |managementState|String|Management state of the device. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
 |enrolledDateTime|DateTimeOffset|Enrollment time of the device.|
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune.|
@@ -74,12 +74,12 @@ The following table shows the properties that are required when you create a man
 |phoneNumber|String|Phone number of the device|
 |androidSecurityPatchLevel|String|Android security patch level|
 |userDisplayName|String|User display name|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_devices_manageddevice.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [managedDevice](../resources/intune_devices_manageddevice.md) object in the response body.
 
 ## Example
 ### Request

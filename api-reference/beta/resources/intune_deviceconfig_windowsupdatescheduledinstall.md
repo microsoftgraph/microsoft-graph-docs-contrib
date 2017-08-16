@@ -5,7 +5,7 @@
 
 **TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 
-Inherits from [windowsUpdateInstallScheduleType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windowsupdateinstallscheduletype.md)
+Inherits from [windowsUpdateInstallScheduleType](../resources/intune_deviceconfig_windowsupdateinstallscheduletype.md)
 
 ## Properties
 |Property|Type|Description|

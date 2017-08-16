@@ -5,7 +5,7 @@
 
 The identifier for an Android app.
 
-Inherits from [mobileAppIdentifier](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/resources/intune_mam_mobileappidentifier.md)
+Inherits from [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)
 
 ## Properties
 |Property|Type|Description|
