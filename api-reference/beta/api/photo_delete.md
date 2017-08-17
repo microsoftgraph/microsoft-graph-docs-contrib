@@ -6,7 +6,7 @@ Delete a photo.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-  * File.ReadWrite
+  * Files.ReadWrite
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

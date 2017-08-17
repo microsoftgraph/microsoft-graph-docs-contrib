@@ -8,7 +8,7 @@ Since the **post** resource supports [extensions](../../../concepts/extensibilit
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*Group.Read.All*, *Group.Readwrite.All*
+*Group.Read.All*, *Group.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

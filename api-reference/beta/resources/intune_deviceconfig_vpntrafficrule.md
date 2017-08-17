@@ -1,7 +1,6 @@
 ﻿# vpnTrafficRule resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 VPN Traffic Rule definition.
@@ -17,7 +16,7 @@ VPN Traffic Rule definition.
 |appId|String|App identifier, if this traffic rule is triggered by an app.|
 |appType|String|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
 |routingPolicyType|String|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|
-|claims|String|Not yet documented|
+|claims|String|Claims associated with this traffic rule.|
 
 ## Relationships
 None

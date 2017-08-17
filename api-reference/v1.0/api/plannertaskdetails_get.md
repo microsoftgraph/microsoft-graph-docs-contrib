@@ -4,7 +4,7 @@ Retrieve the properties and relationships of **plannertaskdetails** object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
 
-*Groups.Read.All*
+*Group.Read.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
