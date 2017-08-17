@@ -2,9 +2,9 @@
 
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the reports of Yammer Group Activity. The response will be a CSV file in a binary stream.
+Retrieve the Yammer groups activity report. The response will be a .csv file in a binary stream.
 
-> Note: You can go to [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31) to check the meaning of different views.
+> **Note:** For information about how to view the Yammer groups activity report, see [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 
 - Reports.Read.All
 
-> Note: Permission scopes are listed in least privilege required order.
+> **Note:** Permission scopes are listed in order from least to most privilege required.
 
 ## HTTP request
 
@@ -34,42 +34,43 @@ In the request URL, provide following query parameters with values.
 
 | Parameter   | Type|Description|
 |:---------------|:--------|:----------|
-|view|ViewType|View is an enumeration type, used to determine which type of information that current report should return. Can not be null.|
-|period|PeriodType|Period is an enumeration type, used to specify the aggregate type.|
-|date|String|Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days and is ignored unless view type is **Detail**|
+|view|ViewType|An enumeration type, used to determine the type of information that the current report should return. Cannot be null.|
+|period|PeriodType|An enumeration type, used to specify the aggregate type.|
+|date|String|Specifies the day to a view of the users that performed an activity on that day. Must have a format of YYYY-MM-DD. Only available for the last 30 days and is ignored unless view type is **Detail**.|
 
-> Note: When view type is **Detail**, the period parameter will be ignored. For other view types, date parameter will be ignored.
-> If you call with **Detail** view along with **PeriodType**, the return data is a list of all users that are licensed for the product with their respective last activity date.
-
-The following **ViewType** are available in this report:
+The following **ViewType** values are available in this report:
 
 - Detail
 - Groups
 - Activity
 
-The following **PeriodType** are available in this report:
+The following **PeriodType** values are available in this report:
 
 - D7
 - D30
 - D90
 - D180
 
+> **Note:** When the view type value is **Detail**, the *period* parameter will be ignored. For other view types, the *date* parameter will be ignored.
+
+> If you call with a **Detail** view type along with a **PeriodType**, the return data is a list of all users that are licensed for the product with their respective last activity date.
+
 ## Response
 
-If successful, this method returns `302 Found` response redirecting to a pre-authenticated download URL for the report.
+If successful, this method returns a `302 Found` response that redirects to a pre-authenticated download URL for the report.
 
-To download the contents of the file your application will need to follow the `Location` header in the response.
+To download the contents of the file, your application will need to follow the `Location` header in the response.
 Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
 
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
 ## Example
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
-### Request
+##### Request
 
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "reportroot_yammergroupsactivity"
@@ -79,9 +80,9 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/YammerGroupsActivity(view='Detail',period='D7')/content
 ```
 
-### Response
+##### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "stream"
