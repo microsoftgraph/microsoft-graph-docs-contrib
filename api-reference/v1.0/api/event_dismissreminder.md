@@ -1,6 +1,6 @@
 # event: dismissReminder
 
-Dissmiss a reminder that has been triggered.
+Dismiss a reminder that has been triggered.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
