@@ -1,8 +1,12 @@
-# androidForWorkNineWorkEasConfiguration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# androidForWorkNineWorkEasConfiguration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 By providing configurations in this profile you can instruct the Nine Work email client on Android For Work devices to communicate with an Exchange server and get email, contacts, calendar, tasks, and notes. Furthermore, you can also specify how much email to sync and how often the device should sync.
+
 Inherits from [androidForWorkEasEmailProfileBase](../resources/intune_deviceconfig_androidforworkeasemailprofilebase.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -18,6 +22,7 @@ Inherits from [androidForWorkEasEmailProfileBase](../resources/intune_deviceconf
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
 |[Get androidForWorkCertificateProfileBase](../api/intune_deviceconfig_androidforworkcertificateprofilebase_get.md)|[androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)|Read properties and relationships of the [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -39,6 +44,7 @@ Inherits from [androidForWorkEasEmailProfileBase](../resources/intune_deviceconf
 |syncCalendar|Boolean|Toggles syncing the calendar. If set to false the calendar is turned off on the device.|
 |syncContacts|Boolean|Toggles syncing contacts. If set to false contacts are turned off on the device.|
 |syncTasks|Boolean|Toggles syncing tasks. If set to false tasks are turned off on the device.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -49,6 +55,7 @@ Inherits from [androidForWorkEasEmailProfileBase](../resources/intune_deviceconf
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |identityCertificate|[androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)|Identity certificate. Inherited from [androidForWorkEasEmailProfileBase](../resources/intune_deviceconfig_androidforworkeasemailprofilebase.md)|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -80,3 +87,6 @@ Here is a JSON representation of the resource.
   "syncTasks": true
 }
 ```
+
+
+

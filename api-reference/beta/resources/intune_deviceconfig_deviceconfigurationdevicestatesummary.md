@@ -1,12 +1,15 @@
-# deviceConfigurationDeviceStateSummary resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# deviceConfigurationDeviceStateSummary resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-Not yet documented
+
+**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_deviceconfigurationdevicestatesummary_get.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Read properties and relationships of the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) object.|
 |[Update deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_deviceconfigurationdevicestatesummary_update.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Update the properties of a [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -18,6 +21,7 @@ Not yet documented
 |nonCompliantDeviceCount|Int32|Number of NonCompliant devices|
 |errorDeviceCount|Int32|Number of error devices|
 |conflictDeviceCount|Int32|Number of conflict devices|
+
 ## Relationships
 None
 ## JSON Representation
@@ -41,3 +45,6 @@ Here is a JSON representation of the resource.
   "conflictDeviceCount": 1024
 }
 ```
+
+
+

@@ -1,6 +1,8 @@
-# deviceConfigurationState resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# deviceConfigurationState resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Device Configuration State for a given device.
 ## Methods
 |Method|Return Type|Description|
@@ -10,6 +12,7 @@ Device Configuration State for a given device.
 |[Create deviceConfigurationState](../api/intune_deviceconfig_deviceconfigurationstate_create.md)|[deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md)|Create a new [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) object.|
 |[Delete deviceConfigurationState](../api/intune_deviceconfig_deviceconfigurationstate_delete.md)|None|Deletes a [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md).|
 |[Update deviceConfigurationState](../api/intune_deviceconfig_deviceconfigurationstate_update.md)|[deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md)|Update the properties of a [deviceConfigurationState](../resources/intune_deviceconfig_deviceconfigurationstate.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -20,6 +23,7 @@ Device Configuration State for a given device.
 |platformType|String|Platform type that the policy applies to Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
 |state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
+
 ## Relationships
 None
 ## JSON Representation
@@ -64,3 +68,6 @@ Here is a JSON representation of the resource.
   "settingCount": 1024
 }
 ```
+
+
+

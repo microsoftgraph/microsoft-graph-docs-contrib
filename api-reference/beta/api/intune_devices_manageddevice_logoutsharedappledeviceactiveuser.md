@@ -1,7 +1,6 @@
 ﻿# logoutSharedAppleDeviceActiveUser action
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Logout shared Apple device active user
@@ -15,10 +14,11 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /managedDevices/{managedDevicesId}logoutSharedAppleDeviceActiveUser
-POST /users/{usersId}/managedDevices/{managedDeviceId}logoutSharedAppleDeviceActiveUser
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/logoutSharedAppleDeviceActiveUser
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}logoutSharedAppleDeviceActiveUser
+POST /managedDevices/{managedDevicesId}/logoutSharedAppleDeviceActiveUser
+POST /users/{usersId}/managedDevices{managedDeviceId}/logoutSharedAppleDeviceActiveUser
+POST /deviceManagement/managedDevices{managedDeviceId}/logoutSharedAppleDeviceActiveUser
+POST /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/logoutSharedAppleDeviceActiveUser
+POST /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps{detectedAppId}/managedDevices{managedDeviceId}/logoutSharedAppleDeviceActiveUser
 ```
 
 ## Request headers
@@ -31,20 +31,16 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this action returns a `204 No Content` response code.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}logoutSharedAppleDeviceActiveUser
+POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/logoutSharedAppleDeviceActiveUser
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 204 No Content

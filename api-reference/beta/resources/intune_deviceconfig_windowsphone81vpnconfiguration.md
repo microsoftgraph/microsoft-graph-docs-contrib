@@ -1,8 +1,12 @@
-# windowsPhone81VpnConfiguration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# windowsPhone81VpnConfiguration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 By providing the configurations in this profile you can instruct the Windows Phone 8.1 to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user.
+
 Inherits from [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -18,6 +22,7 @@ Inherits from [windows81VpnConfiguration](../resources/intune_deviceconfig_windo
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
 |[Get windowsPhone81CertificateProfileBase](../api/intune_deviceconfig_windowsphone81certificateprofilebase_get.md)|[windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md)|Read properties and relationships of the [windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -43,6 +48,7 @@ Inherits from [windows81VpnConfiguration](../resources/intune_deviceconfig_windo
 |authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |dnsSuffixSearchList|String collection|DNS suffix search list.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -53,6 +59,7 @@ Inherits from [windows81VpnConfiguration](../resources/intune_deviceconfig_windo
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |identityCertificate|[windowsPhone81CertificateProfileBase](../resources/intune_deviceconfig_windowsphone81certificateprofilebase.md)|Identity certificate for client authentication when authentication method is certificate.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -105,3 +112,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+

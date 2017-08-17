@@ -1,6 +1,8 @@
-# userInstallStateSummary resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# userInstallStateSummary resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Contains properties for the installation state summary for a user.
 ## Methods
 |Method|Return Type|Description|
@@ -11,6 +13,7 @@ Contains properties for the installation state summary for a user.
 |[Delete userInstallStateSummary](../api/intune_books_userinstallstatesummary_delete.md)|None|Deletes a [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md).|
 |[Update userInstallStateSummary](../api/intune_books_userinstallstatesummary_update.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|Update the properties of a [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) object.|
 |[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -19,10 +22,12 @@ Contains properties for the installation state summary for a user.
 |installedDeviceCount|Int32|Installed Device Count.|
 |failedDeviceCount|Int32|Failed Device Count.|
 |notInstalledDeviceCount|Int32|Not installed device count.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The install state of the eBook.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -41,3 +46,6 @@ Here is a JSON representation of the resource.
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+

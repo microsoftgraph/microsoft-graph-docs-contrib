@@ -1,7 +1,9 @@
-# enterpriseCodeSigningCertificate resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# enterpriseCodeSigningCertificate resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-Not yet documented
+
+**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -10,6 +12,7 @@ Not yet documented
 |[Create enterpriseCodeSigningCertificate](../api/intune_apps_enterprisecodesigningcertificate_create.md)|[enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md)|Create a new [enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) object.|
 |[Delete enterpriseCodeSigningCertificate](../api/intune_apps_enterprisecodesigningcertificate_delete.md)|None|Deletes a [enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md).|
 |[Update enterpriseCodeSigningCertificate](../api/intune_apps_enterprisecodesigningcertificate_update.md)|[enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md)|Update the properties of a [enterpriseCodeSigningCertificate](../resources/intune_apps_enterprisecodesigningcertificate.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -22,6 +25,7 @@ Not yet documented
 |issuer|String|The Issuer value for the cert.|
 |expirationDateTime|DateTimeOffset|The Cert Expiration Date.|
 |uploadDateTime|DateTimeOffset|The date time of CodeSigning Cert when it is uploaded.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -46,3 +50,6 @@ Here is a JSON representation of the resource.
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
+
+

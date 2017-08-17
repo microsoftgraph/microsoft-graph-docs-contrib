@@ -1,8 +1,12 @@
-# mdmWindowsInformationProtectionPolicy resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# mdmWindowsInformationProtectionPolicy resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Policy for Windows information protection with MDM
+
 Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -14,6 +18,7 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |[updateTargetedSecurityGroups action](../api/intune_mam_mdmwindowsinformationprotectionpolicy_updatetargetedsecuritygroups.md)|None|Not yet documented|
 |[List windowsInformationProtectionAppLockerFiles](../api/intune_mam_windowsinformationprotectionapplockerfile_list.md)|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|List properties and relationships of the [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) objects.|
 |[List windowsInformationProtectionAppLockerFiles](../api/intune_mam_windowsinformationprotectionapplockerfile_list.md)|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|List properties and relationships of the [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -45,11 +50,13 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |indexingEncryptedStoresOrItemsBlocked|Boolean|This switch is for the Windows Search Indexer, to allow or disallow indexing of items Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |smbAutoEncryptedFileExtensions|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |allowedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input allowed and apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -187,3 +194,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+

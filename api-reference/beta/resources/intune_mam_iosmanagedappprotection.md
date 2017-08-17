@@ -1,8 +1,12 @@
-# iosManagedAppProtection resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# iosManagedAppProtection resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
+
 Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -16,6 +20,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |[List directoryObjects](../api/intune_mam_directoryobject_list.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.|
 |[List mobileAppIdentifierDeployments](../api/intune_mam_mobileappidentifierdeployment_list.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List properties and relationships of the [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) objects.|
 |[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_get.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Read properties and relationships of the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -55,12 +60,14 @@ Inherits from [targetedManagedAppProtection](../resources/intune_mam_targetedman
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed Inherited from [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -114,3 +121,6 @@ Here is a JSON representation of the resource.
   "deployedAppCount": 1024
 }
 ```
+
+
+

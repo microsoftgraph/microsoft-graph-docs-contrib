@@ -1,6 +1,8 @@
-# mobileThreatDefenseConnector resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# mobileThreatDefenseConnector resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Entity which represents a connection to Mobile threat defense partner.
 ## Methods
 |Method|Return Type|Description|
@@ -10,6 +12,7 @@ Entity which represents a connection to Mobile threat defense partner.
 |[Create mobileThreatDefenseConnector](../api/intune_onboarding_mobilethreatdefenseconnector_create.md)|[mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md)|Create a new [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) object.|
 |[Delete mobileThreatDefenseConnector](../api/intune_onboarding_mobilethreatdefenseconnector_delete.md)|None|Deletes a [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md).|
 |[Update mobileThreatDefenseConnector](../api/intune_onboarding_mobilethreatdefenseconnector_update.md)|[mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md)|Update the properties of a [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -22,6 +25,7 @@ Entity which represents a connection to Mobile threat defense partner.
 |partnerUnsupportedOsVersionBlocked|Boolean|Allows admin to block devices on the enabled platforms that do not meet minimum version requirements|
 |iosEnabled|Boolean|IOS Toggle On or Off|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
+
 ## Relationships
 None
 ## JSON Representation
@@ -46,3 +50,6 @@ Here is a JSON representation of the resource.
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
+
+
+

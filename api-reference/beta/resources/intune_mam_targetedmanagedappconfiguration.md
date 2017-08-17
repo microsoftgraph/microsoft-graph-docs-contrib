@@ -1,8 +1,12 @@
-# targetedManagedAppConfiguration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# targetedManagedAppConfiguration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
+
 Inherits from [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -16,6 +20,7 @@ Inherits from [managedAppConfiguration](../resources/intune_mam_managedappconfig
 |[List mobileAppIdentifierDeployments](../api/intune_mam_mobileappidentifierdeployment_list.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List properties and relationships of the [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) objects.|
 |[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_get.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Read properties and relationships of the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.|
 |[List directoryObjects](../api/intune_mam_directoryobject_list.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -29,12 +34,14 @@ Inherits from [managedAppConfiguration](../resources/intune_mam_managedappconfig
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
 |targetedSecurityGroupsCount|Int32|Number of groups to which the configuration is deployed.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration.|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -66,3 +73,6 @@ Here is a JSON representation of the resource.
   "targetedSecurityGroupsCount": 1024
 }
 ```
+
+
+

@@ -1,12 +1,15 @@
-# softwareUpdateStatusSummary resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# softwareUpdateStatusSummary resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-Not yet documented
+
+**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
 |[Get softwareUpdateStatusSummary](../api/intune_deviceconfig_softwareupdatestatussummary_get.md)|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|Read properties and relationships of the [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) object.|
 |[Update softwareUpdateStatusSummary](../api/intune_deviceconfig_softwareupdatestatussummary_update.md)|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|Update the properties of a [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -26,6 +29,7 @@ Not yet documented
 |unknownUserCount|Int32|Number of unknown users.|
 |conflictUserCount|Int32|Number of conflict users.|
 |notApplicableUserCount|Int32|Number of not applicable users.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -57,3 +61,6 @@ Here is a JSON representation of the resource.
   "notApplicableUserCount": 1024
 }
 ```
+
+
+

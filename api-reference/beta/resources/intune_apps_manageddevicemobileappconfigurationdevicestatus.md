@@ -1,6 +1,8 @@
-# managedDeviceMobileAppConfigurationDeviceStatus resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# managedDeviceMobileAppConfigurationDeviceStatus resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Contains properties, inherited properties and actions for an MDM mobile app configuration status for a device.
 ## Methods
 |Method|Return Type|Description|
@@ -10,6 +12,7 @@ Contains properties, inherited properties and actions for an MDM mobile app conf
 |[Create managedDeviceMobileAppConfigurationDeviceStatus](../api/intune_apps_manageddevicemobileappconfigurationdevicestatus_create.md)|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md)|Create a new [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) object.|
 |[Delete managedDeviceMobileAppConfigurationDeviceStatus](../api/intune_apps_manageddevicemobileappconfigurationdevicestatus_delete.md)|None|Deletes a [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md).|
 |[Update managedDeviceMobileAppConfigurationDeviceStatus](../api/intune_apps_manageddevicemobileappconfigurationdevicestatus_update.md)|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md)|Update the properties of a [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -22,6 +25,7 @@ Contains properties, inherited properties and actions for an MDM mobile app conf
 |status|String|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -46,3 +50,6 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
+
+
+

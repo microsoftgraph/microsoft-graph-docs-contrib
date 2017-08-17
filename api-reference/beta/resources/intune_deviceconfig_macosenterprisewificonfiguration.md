@@ -1,8 +1,12 @@
-# macOSEnterpriseWiFiConfiguration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# macOSEnterpriseWiFiConfiguration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise configuration profile.
+
 Inherits from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -19,6 +23,7 @@ Inherits from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswif
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
 |[Get macOSTrustedRootCertificate](../api/intune_deviceconfig_macostrustedrootcertificate_get.md)|[macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md)|Read properties and relationships of the [macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md) object.|
 |[Get macOSCertificateProfileBase](../api/intune_deviceconfig_macoscertificateprofilebase_get.md)|[macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md)|Read properties and relationships of the [macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -47,6 +52,7 @@ Inherits from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswif
 |authenticationMethod|String|Authentication Method when EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`.|
 |innerAuthenticationProtocolForEapTtls|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -58,6 +64,7 @@ Inherits from [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswif
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificateForServerValidation|[macOSTrustedRootCertificate](../resources/intune_deviceconfig_macostrustedrootcertificate.md)|Trusted Root Certificate for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP.|
 |identityCertificateForClientAuthentication|[macOSCertificateProfileBase](../resources/intune_deviceconfig_macoscertificateprofilebase.md)|Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -98,3 +105,6 @@ Here is a JSON representation of the resource.
   "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
+
+
+

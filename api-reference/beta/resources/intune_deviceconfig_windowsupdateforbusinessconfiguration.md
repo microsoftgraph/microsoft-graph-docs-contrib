@@ -1,8 +1,12 @@
-# windowsUpdateForBusinessConfiguration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# windowsUpdateForBusinessConfiguration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Windows Update for business configuration.
+
 Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -17,6 +21,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_deviceconfigurationdeviceoverview_get.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -42,8 +47,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|String|Business ready updates only or regular updates allowed too Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
-|restartMode|String|Set restart mode allowed level to power or battery Possible values are: `userDefined`, `onBatteryWithAtLeast40PercentCharge`, `connectedToPowerSupply`.|
 |previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -53,6 +58,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -81,7 +87,8 @@ Here is a JSON representation of the resource.
   "installationSchedule": {
     "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
     "scheduledInstallDay": "String",
-    "scheduledInstallTime": "String (time of day)"
+    "scheduledInstallTime": "String (time of day)",
+    "restartMode": "String"
   },
   "qualityUpdatesDeferralPeriodInDays": 1024,
   "featureUpdatesDeferralPeriodInDays": 1024,
@@ -90,7 +97,9 @@ Here is a JSON representation of the resource.
   "qualityUpdatesPauseExpiryDateTime": "String (timestamp)",
   "featureUpdatesPauseExpiryDateTime": "String (timestamp)",
   "businessReadyUpdatesOnly": "String",
-  "restartMode": "String",
   "previewBuildSetting": "String"
 }
 ```
+
+
+
