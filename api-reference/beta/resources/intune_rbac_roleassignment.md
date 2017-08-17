@@ -1,6 +1,8 @@
-# roleAssignment resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# roleAssignment resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles.
 ## Methods
 |Method|Return Type|Description|
@@ -11,6 +13,7 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 |[Delete roleAssignment](../api/intune_rbac_roleassignment_delete.md)|None|Deletes a [roleAssignment](../resources/intune_rbac_roleassignment.md).|
 |[Update roleAssignment](../api/intune_rbac_roleassignment_update.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Update the properties of a [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
 |[Get roleDefinition](../api/intune_rbac_roledefinition_get.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Read properties and relationships of the [roleDefinition](../resources/intune_rbac_roledefinition.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -19,10 +22,12 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 |description|String|Description of the Role Assignment.|
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |roleDefinition|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Role definition this assignment is part of.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -45,3 +50,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+

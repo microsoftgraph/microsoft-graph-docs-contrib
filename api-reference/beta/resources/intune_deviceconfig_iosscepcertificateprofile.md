@@ -1,8 +1,12 @@
-# iosScepCertificateProfile resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# iosScepCertificateProfile resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 iOS SCEP certificate profile.
+
 Inherits from [iosCertificateProfileBase](../resources/intune_deviceconfig_ioscertificateprofilebase.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -19,6 +23,7 @@ Inherits from [iosCertificateProfileBase](../resources/intune_deviceconfig_iosce
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
 |[Get iosTrustedRootCertificate](../api/intune_deviceconfig_iostrustedrootcertificate_get.md)|[iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md)|Read properties and relationships of the [iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md) object.|
 |[List managedDeviceCertificateStates](../api/intune_deviceconfig_manageddevicecertificatestate_list.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) collection|List properties and relationships of the [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -42,6 +47,7 @@ Inherits from [iosCertificateProfileBase](../resources/intune_deviceconfig_iosce
 |keySize|String|SCEP Key Size. Possible values are: `size1024`, `size2048`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune_deviceconfig_extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -53,6 +59,7 @@ Inherits from [iosCertificateProfileBase](../resources/intune_deviceconfig_iosce
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificate|[iosTrustedRootCertificate](../resources/intune_deviceconfig_iostrustedrootcertificate.md)|Trusted Root Certificate.|
 |managedDeviceCertificateStates|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) collection|Certificate state for devices|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -94,3 +101,6 @@ Here is a JSON representation of the resource.
   "subjectAlternativeNameFormatString": "String"
 }
 ```
+
+
+

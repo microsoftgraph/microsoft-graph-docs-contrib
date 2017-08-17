@@ -1,6 +1,8 @@
-# importedDeviceIdentity resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# importedDeviceIdentity resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration.
 ## Methods
 |Method|Return Type|Description|
@@ -11,6 +13,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 |[Delete importedDeviceIdentity](../api/intune_corpenrollment_importeddeviceidentity_delete.md)|None|Deletes a [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md).|
 |[Update importedDeviceIdentity](../api/intune_corpenrollment_importeddeviceidentity_update.md)|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md)|Update the properties of a [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) object.|
 |[importDeviceIdentityList action](../api/intune_corpenrollment_importeddeviceidentity_importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) collection|Not yet documented|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -23,6 +26,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 |description|String|The description of the device|
 |enrollmentState|String|The state of the device in Intune Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |platform|String|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -47,3 +51,6 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
+
+
+

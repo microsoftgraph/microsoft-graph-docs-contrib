@@ -1,8 +1,12 @@
-# androidForWorkScepCertificateProfile resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# androidForWorkScepCertificateProfile resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Android For Work SCEP certificate profile
+
 Inherits from [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -19,6 +23,7 @@ Inherits from [androidForWorkCertificateProfileBase](../resources/intune_devicec
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
 |[Get androidForWorkTrustedRootCertificate](../api/intune_deviceconfig_androidforworktrustedrootcertificate_get.md)|[androidForWorkTrustedRootCertificate](../resources/intune_deviceconfig_androidforworktrustedrootcertificate.md)|Read properties and relationships of the [androidForWorkTrustedRootCertificate](../resources/intune_deviceconfig_androidforworktrustedrootcertificate.md) object.|
 |[List managedDeviceCertificateStates](../api/intune_deviceconfig_manageddevicecertificatestate_list.md)|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) collection|List properties and relationships of the [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -43,6 +48,7 @@ Inherits from [androidForWorkCertificateProfileBase](../resources/intune_devicec
 |keySize|String|SCEP Key Size Possible values are: `size1024`, `size2048`.|
 |hashAlgorithm|String|SCEP Hash Algorithm Possible values are: `sha1`, `sha2`.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -54,6 +60,7 @@ Inherits from [androidForWorkCertificateProfileBase](../resources/intune_devicec
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificate|[androidForWorkTrustedRootCertificate](../resources/intune_deviceconfig_androidforworktrustedrootcertificate.md)|Trusted Root Certificate. Inherited from [androidForWorkCertificateProfileBase](../resources/intune_deviceconfig_androidforworkcertificateprofilebase.md)|
 |managedDeviceCertificateStates|[managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) collection|Certificate state for devices|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -96,3 +103,6 @@ Here is a JSON representation of the resource.
   "subjectAlternativeNameFormatString": "String"
 }
 ```
+
+
+

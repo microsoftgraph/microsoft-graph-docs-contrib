@@ -1,6 +1,8 @@
-# telecomExpenseManagementPartner resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# telecomExpenseManagementPartner resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service. Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.
 ## Methods
 |Method|Return Type|Description|
@@ -10,6 +12,7 @@ telecomExpenseManagementPartner resources represent the metadata and status of a
 |[Create telecomExpenseManagementPartner](../api/intune_tem_telecomexpensemanagementpartner_create.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)|Create a new [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object.|
 |[Delete telecomExpenseManagementPartner](../api/intune_tem_telecomexpensemanagementpartner_delete.md)|None|Deletes a [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md).|
 |[Update telecomExpenseManagementPartner](../api/intune_tem_telecomexpensemanagementpartner_update.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)|Update the properties of a [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -19,6 +22,7 @@ telecomExpenseManagementPartner resources represent the metadata and status of a
 |appAuthorized|Boolean|Whether the partner's AAD app has been authorized to access Intune.|
 |enabled|Boolean|Whether Intune's connection to the TEM service is currently enabled or disabled.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -40,3 +44,6 @@ Here is a JSON representation of the resource.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+

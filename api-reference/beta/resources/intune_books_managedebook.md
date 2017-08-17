@@ -1,6 +1,8 @@
-# managedEBook resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# managedEBook resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 An abstract class containing the base properties for Managed eBook.
 ## Methods
 |Method|Return Type|Description|
@@ -12,6 +14,7 @@ An abstract class containing the base properties for Managed eBook.
 |[Get eBookInstallSummary](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
 |[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.|
 |[List userInstallStateSummaries](../api/intune_books_userinstallstatesummary_list.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|List properties and relationships of the [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -25,6 +28,7 @@ An abstract class containing the base properties for Managed eBook.
 |lastModifiedDateTime|DateTimeOffset|The date and time when teh eBook was last modified.|
 |informationUrl|String|The more information Url.|
 |privacyInformationUrl|String|The privacy statement Url.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -32,6 +36,7 @@ An abstract class containing the base properties for Managed eBook.
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary.|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook.|
 |userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|The list of installation states for this eBook.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -59,3 +64,6 @@ Here is a JSON representation of the resource.
   "privacyInformationUrl": "String"
 }
 ```
+
+
+

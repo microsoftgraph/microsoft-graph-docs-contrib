@@ -1,7 +1,9 @@
-# iosUpdateDeviceStatus resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# iosUpdateDeviceStatus resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
-Not yet documented
+
+**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -10,6 +12,7 @@ Not yet documented
 |[Create iosUpdateDeviceStatus](../api/intune_deviceconfig_iosupdatedevicestatus_create.md)|[iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md)|Create a new [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) object.|
 |[Delete iosUpdateDeviceStatus](../api/intune_deviceconfig_iosupdatedevicestatus_delete.md)|None|Deletes a [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md).|
 |[Update iosUpdateDeviceStatus](../api/intune_deviceconfig_iosupdatedevicestatus_update.md)|[iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md)|Update the properties of a [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -26,6 +29,7 @@ Not yet documented
 |status|String|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -54,3 +58,6 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
+
+
+

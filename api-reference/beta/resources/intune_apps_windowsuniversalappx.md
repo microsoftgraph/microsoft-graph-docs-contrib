@@ -1,8 +1,12 @@
-# windowsUniversalAppX resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# windowsUniversalAppX resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Contains properties and inherited properties for Windows Universal AppX Line Of Business apps.
+
 Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -17,6 +21,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |[List mobileAppInstallStatuses](../api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.|
 |[List userAppInstallStatuses](../api/intune_apps_userappinstallstatus_list.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.|
 |[List mobileAppContents](../api/intune_apps_mobileappcontent_list.md)|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|List properties and relationships of the [mobileAppContent](../resources/intune_apps_mobileappcontent.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -45,6 +50,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |identityResourceIdentifier|String|The Identity Resource Identifier.|
 |isBundle|Boolean|Whether or not the app is a bundle.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -54,6 +60,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |contentVersions|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -101,3 +108,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+

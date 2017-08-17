@@ -1,8 +1,12 @@
-# iosStoreApp resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# iosStoreApp resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Contains properties and inherited properties for iOS store apps.
+
 Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -16,6 +20,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |[Get mobileAppInstallSummary](../api/intune_apps_mobileappinstallsummary_get.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Read properties and relationships of the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) object.|
 |[List mobileAppInstallStatuses](../api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.|
 |[List userAppInstallStatuses](../api/intune_apps_userappinstallstatus_list.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -37,6 +42,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |appStoreUrl|String|The Apple App Store URL|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -45,6 +51,7 @@ Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -89,3 +96,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+

@@ -1,9 +1,13 @@
-# androidManagedAppRegistration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# androidManagedAppRegistration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Represents the synchronization details of an android app, with management capabilities, for a specific user.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.
+
 Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -15,6 +19,7 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 |[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
 |[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
 |[List managedAppOperations](../api/intune_mam_managedappoperation_list.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|List properties and relationships of the [managedAppOperation](../resources/intune_mam_managedappoperation.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -31,12 +36,14 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |version|String|Version of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
 |appliedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |intendedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policies admin intended for the app as of now. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |operations|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|Zero or more long running operations triggered on the app registration. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -68,3 +75,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
+
+
+

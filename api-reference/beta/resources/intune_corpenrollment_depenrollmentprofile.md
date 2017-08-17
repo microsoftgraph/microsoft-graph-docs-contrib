@@ -1,8 +1,12 @@
-# depEnrollmentProfile resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# depEnrollmentProfile resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 The depEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
+
 Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -11,6 +15,7 @@ Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentp
 |[Create depEnrollmentProfile](../api/intune_corpenrollment_depenrollmentprofile_create.md)|[depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md)|Create a new [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object.|
 |[Delete depEnrollmentProfile](../api/intune_corpenrollment_depenrollmentprofile_delete.md)|None|Deletes a [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md).|
 |[Update depEnrollmentProfile](../api/intune_corpenrollment_depenrollmentprofile_update.md)|[depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md)|Update the properties of a [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -41,7 +46,8 @@ Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentp
 |macOSFileVaultDisabled|Boolean|Indicates if Mac OS file vault is disabled|
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
 |sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
-|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios.Only applicable in shared iPads.|
+|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -91,3 +97,6 @@ Here is a JSON representation of the resource.
   "enableSharedIPad": true
 }
 ```
+
+
+

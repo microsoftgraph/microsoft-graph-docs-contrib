@@ -1,8 +1,12 @@
-# windows10GeneralConfiguration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# windows10GeneralConfiguration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10GeneralConfiguration resource.
+
 Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -17,6 +21,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |[Get deviceConfigurationDeviceOverview](../api/intune_deviceconfig_deviceconfigurationdeviceoverview_get.md)|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.|
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
+|[List windowsPrivacyDataAccessControlItems](../api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_list.md)|[windowsPrivacyDataAccessControlItem](../resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem.md) collection|List properties and relationships of the [windowsPrivacyDataAccessControlItem](../resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -35,6 +41,15 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
+|searchBlockDiacritics|Boolean|Specifies if search can use diacritics.|
+|searchDisableAutoLanguageDetection|Boolean|Specifies whether to use automatic language detection when indexing content and properties.|
+|searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
+|searchEnableRemoteQueries|Boolean|Indicates whether or not to block remote queries of this computer’s index.|
+|searchDisableUseLocation|Boolean|Specifies if search can use location information.|
+|searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
+|searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
+|searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
+|smartScreenEnableAppInstallControl|Boolean|Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
@@ -103,6 +118,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |passwordRequireWhenResumeFromIdleState|Boolean|Indicates whether or not to require a password upon resuming from an idle state.|
 |passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset. Valid values 0 to 999|
+|privacyAdvertisingId|String|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
@@ -221,6 +237,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.|
 |experienceBlockTaskSwitcher|Boolean|Indicates whether or not to enable task switching on the device.|
 |logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -230,6 +247,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|privacyAccessControls|[windowsPrivacyDataAccessControlItem](../resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem.md) collection|Indicates a list of applications with their access control levels over privacy data categories, and/or the default access levels per category.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -256,6 +275,15 @@ Here is a JSON representation of the resource.
   "enterpriseCloudPrintResourceIdentifier": "String",
   "enterpriseCloudPrintDiscoveryMaxLimit": 1024,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "String",
+  "searchBlockDiacritics": true,
+  "searchDisableAutoLanguageDetection": true,
+  "searchDisableIndexingEncryptedItems": true,
+  "searchEnableRemoteQueries": true,
+  "searchDisableUseLocation": true,
+  "searchDisableIndexerBackoff": true,
+  "searchDisableIndexingRemovableDrive": true,
+  "searchEnableAutomaticIndexSizeManangement": true,
+  "smartScreenEnableAppInstallControl": true,
   "personalizationDesktopImageUrl": "String",
   "personalizationLockScreenImageUrl": "String",
   "bluetoothAllowedServices": [
@@ -338,6 +366,7 @@ Here is a JSON representation of the resource.
   "passwordRequireWhenResumeFromIdleState": true,
   "passwordRequiredType": "String",
   "passwordSignInFailureCountBeforeFactoryReset": 1024,
+  "privacyAdvertisingId": "String",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyBlockInputPersonalization": true,
   "startBlockUnpinningAppsFromTaskbar": true,
@@ -469,3 +498,6 @@ Here is a JSON representation of the resource.
   "logonBlockFastUserSwitching": true
 }
 ```
+
+
+

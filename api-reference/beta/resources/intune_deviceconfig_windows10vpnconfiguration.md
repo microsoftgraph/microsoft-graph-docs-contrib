@@ -1,8 +1,12 @@
-# windows10VpnConfiguration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# windows10VpnConfiguration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 By providing the configurations in this profile you can instruct the Windows 10 device (desktop or mobile) to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user.
+
 Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windowsvpnconfiguration.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -18,6 +22,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |[Get deviceConfigurationUserOverview](../api/intune_deviceconfig_deviceconfigurationuseroverview_get.md)|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Read properties and relationships of the [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) object.|
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
 |[Get windowsCertificateProfileBase](../api/intune_deviceconfig_windowscertificateprofilebase_get.md)|[windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md)|Read properties and relationships of the [windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -49,6 +54,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |trafficRules|[vpnTrafficRule](../resources/intune_deviceconfig_vpntrafficrule.md) collection|Traffic rules. This collection can contain a maximum of 1000 elements.|
 |routes|[vpnRoute](../resources/intune_deviceconfig_vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune_deviceconfig_vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -59,6 +65,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |identityCertificate|[windowsCertificateProfileBase](../resources/intune_deviceconfig_windowscertificateprofilebase.md)|Identity certificate for client authentication when authentication method is certificate.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -177,3 +184,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+

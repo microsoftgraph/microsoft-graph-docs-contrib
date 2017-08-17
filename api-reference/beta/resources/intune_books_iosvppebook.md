@@ -1,8 +1,12 @@
-# iosVppEBook resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# iosVppEBook resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 A class containing the properties for iOS Vpp eBook.
+
 Inherits from [managedEBook](../resources/intune_books_managedebook.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -15,6 +19,7 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 |[Get eBookInstallSummary](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
 |[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.|
 |[List userInstallStateSummaries](../api/intune_books_userinstallstatesummary_list.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|List properties and relationships of the [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) objects.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -36,6 +41,7 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 |seller|String|Seller.|
 |totalLicenseCount|Int32|Total license count.|
 |usedLicenseCount|Int32|Used license count.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -43,6 +49,7 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -80,3 +87,6 @@ Here is a JSON representation of the resource.
   "usedLicenseCount": 1024
 }
 ```
+
+
+

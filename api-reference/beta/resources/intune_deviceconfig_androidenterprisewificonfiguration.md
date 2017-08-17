@@ -1,8 +1,12 @@
-# androidEnterpriseWiFiConfiguration resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# androidEnterpriseWiFiConfiguration resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 By providing the configurations in this profile you can instruct the Android device to connect to desired Wi-Fi endpoint. By specifying the authentication method and security types expected by Wi-Fi endpoint you can make the Wi-Fi connection seamless for end user.
+
 Inherits from [androidWiFiConfiguration](../resources/intune_deviceconfig_androidwificonfiguration.md)
+
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -19,6 +23,7 @@ Inherits from [androidWiFiConfiguration](../resources/intune_deviceconfig_androi
 |[List settingStateDeviceSummaries](../api/intune_deviceconfig_settingstatedevicesummary_list.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|List properties and relationships of the [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) objects.|
 |[Get androidTrustedRootCertificate](../api/intune_deviceconfig_androidtrustedrootcertificate_get.md)|[androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md)|Read properties and relationships of the [androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md) object.|
 |[Get androidCertificateProfileBase](../api/intune_deviceconfig_androidcertificateprofilebase_get.md)|[androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md)|Read properties and relationships of the [androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -41,6 +46,7 @@ Inherits from [androidWiFiConfiguration](../resources/intune_deviceconfig_androi
 |innerAuthenticationProtocolForEapTtls|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |innerAuthenticationProtocolForPeap|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password. Possible values are: `none`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.|
+
 ## Relationships
 |Relationship|Type|Description|
 |---|---|---|
@@ -52,6 +58,7 @@ Inherits from [androidWiFiConfiguration](../resources/intune_deviceconfig_androi
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |rootCertificateForServerValidation|[androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md)|Trusted Root Certificate for Server Validation when EAP Type is configured to EAP-TLS, EAP-TTLS or PEAP. This is the certificate presented by the Wi-Fi endpoint when the device attempts to connect to Wi-Fi endpoint. The device (or user) must accept this certificate to continue the connection attempt.|
 |identityCertificateForClientAuthentication|[androidCertificateProfileBase](../resources/intune_deviceconfig_androidcertificateprofilebase.md)|Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication). This is the certificate presented by client to the Wi-Fi endpoint. The authentication server sitting behind the Wi-Fi endpoint must accept this certificate to successfully establish a Wi-Fi connection.|
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -84,3 +91,6 @@ Here is a JSON representation of the resource.
   "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
+
+
+

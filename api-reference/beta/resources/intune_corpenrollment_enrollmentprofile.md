@@ -1,6 +1,8 @@
-# enrollmentProfile resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# enrollmentProfile resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged. Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
 ## Methods
 |Method|Return Type|Description|
@@ -12,6 +14,7 @@ The enrollmentProfile resource represents a collection of configurations which m
 |[Update enrollmentProfile](../api/intune_corpenrollment_enrollmentprofile_update.md)|[enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md)|Update the properties of a [enrollmentProfile](../resources/intune_corpenrollment_enrollmentprofile.md) object.|
 |[exportMobileConfig function](../api/intune_corpenrollment_enrollmentprofile_exportmobileconfig.md)|String|Not yet documented|
 |[updateDeviceProfileAssignment action](../api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment.md)|None|Not yet documented|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -20,6 +23,7 @@ The enrollmentProfile resource represents a collection of configurations which m
 |description|String|Description of the profile|
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment|
+
 ## Relationships
 None
 ## JSON Representation
@@ -40,3 +44,6 @@ Here is a JSON representation of the resource.
   "configurationEndpointUrl": "String"
 }
 ```
+
+
+

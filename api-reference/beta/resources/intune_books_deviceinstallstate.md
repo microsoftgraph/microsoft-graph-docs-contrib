@@ -1,6 +1,8 @@
-# deviceInstallState resource type
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+﻿# deviceInstallState resource type
+
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+
 Contains properties for the installation state for a device.
 ## Methods
 |Method|Return Type|Description|
@@ -10,6 +12,7 @@ Contains properties for the installation state for a device.
 |[Create deviceInstallState](../api/intune_books_deviceinstallstate_create.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Create a new [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.|
 |[Delete deviceInstallState](../api/intune_books_deviceinstallstate_delete.md)|None|Deletes a [deviceInstallState](../resources/intune_books_deviceinstallstate.md).|
 |[Update deviceInstallState](../api/intune_books_deviceinstallstate_update.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Update the properties of a [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |---|---|---|
@@ -22,6 +25,7 @@ Contains properties for the installation state for a device.
 |osVersion|String|OS Version.|
 |osDescription|String|OS Description.|
 |userName|String|Device User Name.|
+
 ## Relationships
 None
 ## JSON Representation
@@ -46,3 +50,6 @@ Here is a JSON representation of the resource.
   "userName": "String"
 }
 ```
+
+
+

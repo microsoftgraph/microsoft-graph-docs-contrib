@@ -1,7 +1,6 @@
 ﻿# Create appleVolumePurchaseProgramToken
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object.
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /organization/{organizationId}/appleVolumePurchaseProgramTokens/
+POST /organization/{organizationId}/appleVolumePurchaseProgramTokens
 ```
 
 ## Request headers
@@ -40,20 +39,21 @@ The following table shows the properties that are required when you create a app
 |lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
 |state|String|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`. Possible values are: `unknown`, `valid`, `expired`, `invalid`.|
 |lastSyncStatus|String|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
+|automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
+|countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
+
+
 
 ## Response
-
 If successful, this method returns a `201 Created` response code and a [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/appleVolumePurchaseProgramTokens/
+POST https://graph.microsoft.com/beta/organization/{organizationId}/appleVolumePurchaseProgramTokens
 Content-type: application/json
-Content-length: 481
+Content-length: 566
 
 {
   "@odata.type": "#microsoft.graph.appleVolumePurchaseProgramToken",
@@ -65,17 +65,18 @@ Content-length: 481
   "token": "Token value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
-  "lastSyncStatus": "inProgress"
+  "lastSyncStatus": "inProgress",
+  "automaticallyUpdateApps": true,
+  "countryOrRegion": "Country Or Region value"
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 530
+Content-Length: 615
 
 {
   "@odata.type": "#microsoft.graph.appleVolumePurchaseProgramToken",
@@ -88,7 +89,9 @@ Content-Length: 530
   "token": "Token value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
-  "lastSyncStatus": "inProgress"
+  "lastSyncStatus": "inProgress",
+  "automaticallyUpdateApps": true,
+  "countryOrRegion": "Country Or Region value"
 }
 ```
 
