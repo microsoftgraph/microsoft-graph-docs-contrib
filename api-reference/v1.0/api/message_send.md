@@ -24,7 +24,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 ##### Request
 Here is an example of the request.
 <!-- {
@@ -36,7 +36,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
 ##### Response
-##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
