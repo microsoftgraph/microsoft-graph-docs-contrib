@@ -9,7 +9,6 @@ This resource lets you add your own data to custom properties using [extensions]
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create device](../api/device_post_devices.md) | [device](device.md) |Create a new registered device in the directory.|
 |[Get device](../api/device_get.md) | [device](device.md) |Read properties and relationships of a device object.|
 |[List devices](../api/device_list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
 |[Update device](../api/device_update.md) | [device](device.md) |Update the properties of a device object. |
