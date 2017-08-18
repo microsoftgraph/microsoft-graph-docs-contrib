@@ -1,7 +1,6 @@
 ﻿# Create localizedNotificationMessage
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) object.
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/
+POST /deviceManagement/notificationMessageTemplates{notificationMessageTemplateId}/localizedNotificationMessages
 ```
 
 ## Request headers
@@ -37,17 +36,16 @@ The following table shows the properties that are required when you create a loc
 |messageTemplate|String|The Message Template content.|
 |isDefault|Boolean|Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message.|
 
-## Response
 
+
+## Response
 If successful, this method returns a `201 Created` response code and a [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/
+POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates{notificationMessageTemplateId}/localizedNotificationMessages
 Content-type: application/json
 Content-length: 264
 
@@ -61,8 +59,7 @@ Content-length: 264
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

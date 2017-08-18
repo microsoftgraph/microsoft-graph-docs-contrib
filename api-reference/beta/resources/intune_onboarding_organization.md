@@ -1,7 +1,6 @@
 ﻿# organization resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
@@ -27,7 +26,6 @@ The organization resource represents an instance of global settings and resource
 |defaultDeviceEnrollmentRestrictions|[defaultDeviceEnrollmentRestrictions](../resources/intune_onboarding_defaultdeviceenrollmentrestrictions.md)|Device enrollment restrictions applied to all users by default|
 |defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](../resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
 |defaultDeviceEnrollmentLimit|Int32|Device enrollment limit applied to all users by default|
-|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
 
 ## Relationships
@@ -110,35 +108,6 @@ Here is a JSON representation of the resource.
     "enhancedBiometrics": "String"
   },
   "defaultDeviceEnrollmentLimit": 1024,
-  "intuneBrand": {
-    "@odata.type": "microsoft.graph.intuneBrand",
-    "displayName": "String",
-    "contactITName": "String",
-    "contactITPhoneNumber": "String",
-    "contactITEmailAddress": "String",
-    "contactITNotes": "String",
-    "privacyUrl": "String",
-    "onlineSupportSiteUrl": "String",
-    "onlineSupportSiteName": "String",
-    "themeColor": {
-      "@odata.type": "microsoft.graph.rgbColor",
-      "r": 1024,
-      "g": 1024,
-      "b": 1024
-    },
-    "showLogo": true,
-    "lightBackgroundLogo": {
-      "@odata.type": "microsoft.graph.mimeContent",
-      "type": "String",
-      "value": "binary"
-    },
-    "darkBackgroundLogo": {
-      "@odata.type": "microsoft.graph.mimeContent",
-      "type": "String",
-      "value": "binary"
-    },
-    "showNameNextToLogo": true
-  },
   "certificateConnectorSetting": {
     "@odata.type": "microsoft.graph.certificateConnectorSetting",
     "status": 1024,

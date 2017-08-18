@@ -1,7 +1,6 @@
 ﻿# List windowsManagedDevices
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 List properties and relationships of the [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) objects.
@@ -15,9 +14,10 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /managedDevices/
-GET /users/{usersId}/managedDevices/
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/
+GET /managedDevices
+GET /users/{usersId}/managedDevices
+GET /deviceManagement/managedDevices
+GET /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps{detectedAppId}/managedDevices
 ```
 
 ## Request headers
@@ -30,25 +30,21 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and a collection of [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) objects in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/managedDevices/
+GET https://graph.microsoft.com/beta/managedDevices
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3426
+Content-Length: 3780
 
 {
   "value": [
@@ -129,7 +125,16 @@ Content-Length: 3426
       "serialNumber": "Serial Number value",
       "phoneNumber": "Phone Number value",
       "androidSecurityPatchLevel": "Android Security Patch Level value",
-      "userDisplayName": "User Display Name value"
+      "userDisplayName": "User Display Name value",
+      "configurationManagerClientEnabledFeatures": {
+        "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures",
+        "inventory": true,
+        "modernApps": true,
+        "resourceAccess": true,
+        "deviceConfiguration": true,
+        "compliancePolicy": true,
+        "windowsUpdateForBusiness": true
+      }
     }
   ]
 }
