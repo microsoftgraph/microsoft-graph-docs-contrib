@@ -1,7 +1,6 @@
 ﻿# Delete mobileAppProvisioningConfigGroupAssignment
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Deletes a [mobileAppProvisioningConfigGroupAssignment](../resources/intune_apps_mobileappprovisioningconfiggroupassignment.md).
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/groupAssignments/{mobileAppProvisioningConfigGroupAssignmentId}
+DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations{iosLobAppProvisioningConfigurationId}/groupAssignments{mobileAppProvisioningConfigGroupAssignmentId}
 ```
 
 ## Request headers
@@ -28,20 +27,16 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/groupAssignments/{mobileAppProvisioningConfigGroupAssignmentId}
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations{iosLobAppProvisioningConfigurationId}/groupAssignments{mobileAppProvisioningConfigGroupAssignmentId}
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 204 No Content
