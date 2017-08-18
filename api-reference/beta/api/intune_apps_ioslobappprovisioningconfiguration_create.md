@@ -1,7 +1,6 @@
 ﻿# Create iosLobAppProvisioningConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [iosLobAppProvisioningConfiguration](../resources/intune_apps_ioslobappprovisioningconfiguration.md) object.
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceAppManagement/iosLobAppProvisioningConfigurations/
+POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ```
 
 ## Request headers
@@ -40,17 +39,16 @@ The following table shows the properties that are required when you create a ios
 |displayName|String|Admin provided name of the device configuration.|
 |version|Int32|Version of the device configuration.|
 
-## Response
 
+
+## Response
 If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune_apps_ioslobappprovisioningconfiguration.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/
+POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
 Content-type: application/json
 Content-length: 377
 
@@ -66,8 +64,7 @@ Content-length: 377
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

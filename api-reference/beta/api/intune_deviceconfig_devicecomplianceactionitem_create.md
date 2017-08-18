@@ -1,7 +1,6 @@
 ﻿# Create deviceComplianceActionItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object.
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/
+POST /deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/scheduledActionsForRule{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations
 ```
 
 ## Request headers
@@ -34,43 +33,48 @@ The following table shows the properties that are required when you create a dev
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced.|
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 |notificationTemplateId|String|What notification Message template to use|
+|notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
+
+
 
 ## Response
-
 If successful, this method returns a `201 Created` response code and a [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/scheduledActionsForRule{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations
 Content-type: application/json
-Content-length: 190
+Content-length: 271
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "gracePeriodHours": 0,
   "actionType": "notification",
-  "notificationTemplateId": "Notification Template Id value"
+  "notificationTemplateId": "Notification Template Id value",
+  "notificationMessageCCList": [
+    "Notification Message CCList value"
+  ]
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 239
+Content-Length: 320
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "id": "e01a1893-1893-e01a-9318-1ae093181ae0",
   "gracePeriodHours": 0,
   "actionType": "notification",
-  "notificationTemplateId": "Notification Template Id value"
+  "notificationTemplateId": "Notification Template Id value",
+  "notificationMessageCCList": [
+    "Notification Message CCList value"
+  ]
 }
 ```
 

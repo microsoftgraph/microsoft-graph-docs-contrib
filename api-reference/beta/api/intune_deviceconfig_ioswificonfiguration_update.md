@@ -1,7 +1,6 @@
 ﻿# Update iosWiFiConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md) object.
@@ -15,8 +14,9 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/groupAssignments{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -51,17 +51,16 @@ The following table shows the properties that are required when you create a [io
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
-## Response
 
+
+## Response
 If successful, this method returns a `200 OK` response code and an updated [iosWiFiConfiguration](../resources/intune_deviceconfig_ioswificonfiguration.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations{deviceConfigurationId}
 Content-type: application/json
 Content-length: 755
 
@@ -86,8 +85,7 @@ Content-length: 755
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
