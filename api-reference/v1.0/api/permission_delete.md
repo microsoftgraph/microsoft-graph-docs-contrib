@@ -5,12 +5,14 @@ Remove access to a [DriveItem](../resources/driveitem.md).
 Only permissions that are not inherited can be deleted.
 The **inheritedFrom** property must be `null`.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## HTTP request
 

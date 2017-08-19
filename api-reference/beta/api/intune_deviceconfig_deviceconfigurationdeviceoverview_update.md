@@ -1,7 +1,6 @@
 ﻿# Update deviceConfigurationDeviceOverview
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object.
@@ -15,14 +14,14 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate//deviceStatusOverview/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//deviceStatusOverview/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate//rootCertificate//deviceStatusOverview/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate//deviceStatusOverview/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate//deviceStatusOverview/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate//deviceStatusOverview/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate//deviceStatusOverview/
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/deviceStatusOverview
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/rootCertificate/deviceStatusOverview
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/identityCertificate/deviceStatusOverview
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/identityCertificate/rootCertificate/deviceStatusOverview
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/deviceStatusOverview
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/deviceStatusOverview
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate/deviceStatusOverview
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/deviceStatusOverview
 ```
 
 ## Request headers
@@ -39,28 +38,29 @@ The following table shows the properties that are required when you create a [de
 |---|---|---|
 |id|String|Key of the entity.|
 |pendingCount|Int32|Number of pending devices|
+|notApplicableCount|Int32|Number of not applicable devices|
 |successCount|Int32|Number of succeeded devices|
 |errorCount|Int32|Number of error devices|
 |failedCount|Int32|Number of failed devices|
 |lastUpdateDateTime|DateTimeOffset|Last update time|
 |configurationVersion|Int32|Version of the policy for that overview|
 
-## Response
 
+
+## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview/
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations{deviceConfigurationId}/deviceStatusOverview
 Content-type: application/json
-Content-length: 184
+Content-length: 212
 
 {
   "pendingCount": 12,
+  "notApplicableCount": 2,
   "successCount": 12,
   "errorCount": 10,
   "failedCount": 11,
@@ -69,18 +69,18 @@ Content-length: 184
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 305
+Content-Length: 333
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationDeviceOverview",
   "id": "62d48e3a-8e3a-62d4-3a8e-d4623a8ed462",
   "pendingCount": 12,
+  "notApplicableCount": 2,
   "successCount": 12,
   "errorCount": 10,
   "failedCount": 11,

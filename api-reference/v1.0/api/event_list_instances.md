@@ -3,9 +3,15 @@
 Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the 
 occurrences and exceptions of the event in the specified time range.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Calendars.Read    | 
+|Delegated (personal Microsoft account) | Calendars.Read    | 
+|Application | Calendars.Read | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
