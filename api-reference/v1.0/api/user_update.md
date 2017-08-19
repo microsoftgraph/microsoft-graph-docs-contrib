@@ -2,12 +2,16 @@
 # Update user
 
 Update the properties of a user object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-When updating the passwordProfile property, the following scope is required:
-*Directory.AccessAsUser.All*
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegated (personal Microsoft account) | User.ReadWrite    | 
+|Application | User.ReadWrite.All, Directory.ReadWrite.All | 
+
+When updating the passwordProfile property, the following scope is required: Directory.AccessAsUser.All.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

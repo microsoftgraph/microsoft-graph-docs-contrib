@@ -9,8 +9,15 @@ If an override exists for a sender and the sender changes his/her display name, 
 If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride_delete.md) the existing override and [creating](inferenceclassification_post_overrides.md) a new one with 
 the new SMTP address is the only way to "update" the override for this sender.
 
-## Prerequisites
-The following **scopes** are required to execute this API: *Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Mail.ReadWrite    | 
+|Delegated (personal Microsoft account) | Mail.ReadWrite    | 
+|Application | Mail.ReadWrite | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
