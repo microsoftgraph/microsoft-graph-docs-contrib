@@ -1,7 +1,6 @@
 ﻿# Create windowsUpdateForBusinessConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object.
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/
+POST /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
@@ -52,22 +51,20 @@ The following table shows the properties that are required when you create a win
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|String|Business ready updates only or regular updates allowed too Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
-|restartMode|String|Set restart mode allowed level to power or battery Possible values are: `userDefined`, `onBatteryWithAtLeast40PercentCharge`, `connectedToPowerSupply`.|
 |previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 
-## Response
 
+
+## Response
 If successful, this method returns a `201 Created` response code and a [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1235
+Content-length: 1226
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -86,7 +83,8 @@ Content-length: 1235
   "installationSchedule": {
     "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
     "scheduledInstallDay": "everyday",
-    "scheduledInstallTime": "11:59:31.3170000"
+    "scheduledInstallTime": "11:59:31.3170000",
+    "restartMode": "batteryLevelCheckEnabled"
   },
   "qualityUpdatesDeferralPeriodInDays": 2,
   "featureUpdatesDeferralPeriodInDays": 2,
@@ -95,18 +93,16 @@ Content-length: 1235
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
   "businessReadyUpdatesOnly": "all",
-  "restartMode": "onBatteryWithAtLeast40PercentCharge",
   "previewBuildSetting": "allowed"
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1343
+Content-Length: 1334
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -127,7 +123,8 @@ Content-Length: 1343
   "installationSchedule": {
     "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
     "scheduledInstallDay": "everyday",
-    "scheduledInstallTime": "11:59:31.3170000"
+    "scheduledInstallTime": "11:59:31.3170000",
+    "restartMode": "batteryLevelCheckEnabled"
   },
   "qualityUpdatesDeferralPeriodInDays": 2,
   "featureUpdatesDeferralPeriodInDays": 2,
@@ -136,7 +133,6 @@ Content-Length: 1343
   "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
   "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
   "businessReadyUpdatesOnly": "all",
-  "restartMode": "onBatteryWithAtLeast40PercentCharge",
   "previewBuildSetting": "allowed"
 }
 ```

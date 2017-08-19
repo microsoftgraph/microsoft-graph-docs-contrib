@@ -1,7 +1,6 @@
 ﻿# Create windows10EndpointProtectionConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windows10EndpointProtectionConfiguration](../resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) object.
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/
+POST /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
@@ -39,25 +38,31 @@ The following table shows the properties that are required when you create a win
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
+|smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
+|applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
+|applicationGuardBlockFileTransfer|String|Block clipboard to transfer image file, text file or neither of them Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`.|
+|applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
+|applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
+|applicationGuardForceAuditing|Boolean|Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
 |bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune_deviceconfig_bitlockersystemdrivepolicy.md)|BitLocker System Drive Policy.|
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune_deviceconfig_bitlockerfixeddrivepolicy.md)|BitLocker Fixed Drive Policy.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune_deviceconfig_bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
 
-## Response
 
+
+## Response
 If successful, this method returns a `201 Created` response code and a [windows10EndpointProtectionConfiguration](../resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2455
+Content-length: 2779
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -68,6 +73,13 @@ Content-length: 2455
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "smartScreenEnableInShell": true,
+  "smartScreenBlockOverrideForFiles": true,
+  "applicationGuardEnabled": true,
+  "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
+  "applicationGuardBlockNonEnterpriseContent": true,
+  "applicationGuardAllowPersistence": true,
+  "applicationGuardForceAuditing": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
   "bitLockerSystemDrivePolicy": {
@@ -118,13 +130,12 @@ Content-length: 2455
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2563
+Content-Length: 2887
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -137,6 +148,13 @@ Content-Length: 2563
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "smartScreenEnableInShell": true,
+  "smartScreenBlockOverrideForFiles": true,
+  "applicationGuardEnabled": true,
+  "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
+  "applicationGuardBlockNonEnterpriseContent": true,
+  "applicationGuardAllowPersistence": true,
+  "applicationGuardForceAuditing": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
   "bitLockerSystemDrivePolicy": {

@@ -2,16 +2,15 @@
 
 Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegated (personal Microsoft account) | Files.Read.All, Files.ReadWrite.All    | 
+|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
 
-
-**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite scopes, some properties may be missing.
 Additionally, without one of the  **All** scopes, shared items returned from this API will not be accessible.
 
 ## HTTP request
