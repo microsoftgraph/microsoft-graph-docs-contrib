@@ -7,9 +7,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              | 
 |:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    | 
+|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Directory.Read.All, Directory.AccessAsUser.All   | 
 |Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Directory.Read.All, User.Read.All | 
+|Application | User.Read.All, Directory.Read.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
