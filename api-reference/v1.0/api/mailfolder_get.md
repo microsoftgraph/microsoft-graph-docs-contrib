@@ -1,9 +1,15 @@
 # Get mailFolder
 
 Retrieve the properties and relationships of mailfolder object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Read; Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    | 
+|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    | 
+|Application | Mail.Read, Mail.ReadWrite | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

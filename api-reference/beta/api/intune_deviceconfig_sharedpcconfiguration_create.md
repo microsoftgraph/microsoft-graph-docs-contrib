@@ -1,7 +1,6 @@
 ﻿# Create sharedPCConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [sharedPCConfiguration](../resources/intune_deviceconfig_sharedpcconfiguration.md) object.
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/
+POST /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
@@ -52,17 +51,16 @@ The following table shows the properties that are required when you create a sha
 |kioskAppUserModelId|String|Specifies the application user model ID of the app to use with assigned access.|
 |maintenanceStartTime|TimeOfDay|Specifies the daily start time of maintenance hour.|
 
-## Response
 
+
+## Response
 If successful, this method returns a `201 Created` response code and a [sharedPCConfiguration](../resources/intune_deviceconfig_sharedpcconfiguration.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 1091
 
@@ -96,8 +94,7 @@ Content-length: 1091
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

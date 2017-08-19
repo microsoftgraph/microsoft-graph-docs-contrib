@@ -1,7 +1,6 @@
 ﻿# Create mobileAppVppGroupAssignment
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [mobileAppVppGroupAssignment](../resources/intune_apps_mobileappvppgroupassignment.md) object.
@@ -15,7 +14,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/
+POST /deviceAppManagement/mobileApps{mobileAppId}/groupAssignments
 ```
 
 ## Request headers
@@ -36,17 +35,16 @@ The following table shows the properties that are required when you create a mob
 |installIntent|String|The install intent defined by the admin. Inherited from [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
 
-## Response
 
+
+## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppVppGroupAssignment](../resources/intune_apps_mobileappvppgroupassignment.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps{mobileAppId}/groupAssignments
 Content-type: application/json
 Content-length: 237
 
@@ -59,8 +57,7 @@ Content-length: 237
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 201 Created

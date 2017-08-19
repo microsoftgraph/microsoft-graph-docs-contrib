@@ -1,7 +1,6 @@
 ﻿# Update windows10PkcsCertificateProfile
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [windows10PkcsCertificateProfile](../resources/intune_deviceconfig_windows10pkcscertificateprofile.md) object.
@@ -15,8 +14,9 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/groupAssignments{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -51,17 +51,16 @@ The following table shows the properties that are required when you create a [wi
 |certificateTemplateName|String|PKCS Certificate Template Name|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
-## Response
 
+
+## Response
 If successful, this method returns a `200 OK` response code and an updated [windows10PkcsCertificateProfile](../resources/intune_deviceconfig_windows10pkcscertificateprofile.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations{deviceConfigurationId}
 Content-type: application/json
 Content-length: 899
 
@@ -86,8 +85,7 @@ Content-length: 899
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

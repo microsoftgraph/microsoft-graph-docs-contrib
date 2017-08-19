@@ -1,7 +1,6 @@
 ﻿# Update deviceManagement
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.
@@ -33,19 +32,18 @@ The following table shows the properties that are required when you create a [de
 |id|String|Not yet documented|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Not yet documented|
 
-## Response
 
+
+## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 316
+Content-length: 346
 
 {
   "settings": {
@@ -53,18 +51,18 @@ Content-length: 316
     "windowsCommercialId": "Windows Commercial Id value",
     "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
     "deviceComplianceCheckinThresholdDays": 4,
-    "isScheduledActionEnabled": true
+    "isScheduledActionEnabled": true,
+    "secureByDefault": true
   }
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 450
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -74,7 +72,8 @@ Content-Length: 420
     "windowsCommercialId": "Windows Commercial Id value",
     "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
     "deviceComplianceCheckinThresholdDays": 4,
-    "isScheduledActionEnabled": true
+    "isScheduledActionEnabled": true,
+    "secureByDefault": true
   }
 }
 ```
