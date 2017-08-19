@@ -1,7 +1,6 @@
 ﻿# deviceManagement resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Singleton entity that acts as a container for all device management functionality.
@@ -16,6 +15,10 @@ Singleton entity that acts as a container for all device management functionalit
 |[List deviceManagementScripts](../api/intune_devices_devicemanagementscript_list.md)|[deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) collection|List properties and relationships of the [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) objects.|
 |[Create deviceManagementScript](../api/intune_devices_devicemanagementscript_create.md)|[deviceManagementScript](../resources/intune_devices_devicemanagementscript.md)|Create a new [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) object.|
 |[Get managedDeviceOverview](../api/intune_devices_manageddeviceoverview_get.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|Read properties and relationships of the [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) object.|
+|[List detectedApps](../api/intune_devices_detectedapp_list.md)|[detectedApp](../resources/intune_devices_detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) objects.|
+|[Create detectedApp](../api/intune_devices_detectedapp_create.md)|[detectedApp](../resources/intune_devices_detectedapp.md)|Create a new [detectedApp](../resources/intune_devices_detectedapp.md) object.|
+|[List managedDevices](../api/intune_devices_manageddevice_list.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) objects.|
+|[Create managedDevice](../api/intune_devices_manageddevice_create.md)|[managedDevice](../resources/intune_devices_manageddevice.md)|Create a new [managedDevice](../resources/intune_devices_manageddevice.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,6 +34,8 @@ Singleton entity that acts as a container for all device management functionalit
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md)|Apple push notification certificate.|
 |deviceManagementScripts|[deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) collection|The list of device management scripts associated with the tenant.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|Device overview|
+|detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|The list of detected apps associated with a device.|
+|managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The list of managed devices.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
