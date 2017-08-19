@@ -6,13 +6,14 @@ Your app can combine moving an item to a new container and updating other proper
 
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## HTTP request
 
