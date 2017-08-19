@@ -1,10 +1,14 @@
 # Delete photo
 
 Delete a photo.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-  * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Files.ReadWrite    | 
+|Delegated (personal Microsoft account) | Files.ReadWrite    | 
+|Application | Not supported. | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

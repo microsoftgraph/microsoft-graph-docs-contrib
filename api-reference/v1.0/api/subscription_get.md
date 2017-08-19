@@ -1,11 +1,11 @@
 # Get subscription
 
 Retrieve the properties and relationships of a subscription.
-## Prerequisites
+## Permissions
 
-The following table lists the suggested permission needed for each resource.
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Resource type / Item        | Scope               |
+| Resource type / Item        | Permission          |
 |-----------------------------|---------------------|
 | Contacts                    | Contacts.Read       |
 | Conversations               | Group.Read.All      |
