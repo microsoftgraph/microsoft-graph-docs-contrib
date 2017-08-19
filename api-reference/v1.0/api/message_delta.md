@@ -7,8 +7,15 @@ applying [state tokens](../../../concepts/delta_query_overview.md) in one or mor
 that folder](../../../concepts/delta_query_messages.md). This allows you to maintain and synchronize a local store of a user's messages without 
 having to fetch the entire set of messages from the server every time.  
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: _Mail.Read_; _Mail.ReadWrite_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    | 
+|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    | 
+|Application | Mail.Read, Mail.ReadWrite | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
