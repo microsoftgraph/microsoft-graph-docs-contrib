@@ -5,8 +5,15 @@ Get groups that the group is a direct member of.
 This operation is not transitive. Unlike getting a user's Office 365 Groups, this 
 returns all types of groups, not just Office 365 groups. 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Group.Read.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Group.Read.All    | 
+|Delegated (personal Microsoft account) | Not supported.    | 
+|Application | Group.Read.All | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
