@@ -1,6 +1,7 @@
 ﻿# Get mobileAppContent
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [mobileAppContent](../resources/intune_apps_mobileappcontent.md) object.
@@ -14,9 +15,9 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-GET /deviceAppManagement/mobileApps{mobileAppId}/contentVersions{mobileAppContentId}
-GET /deviceAppManagement/mobileApps{mobileAppId}/microsoft.graph.mobileLobApp/contentVersions{mobileAppContentId}
-GET /deviceAppManagement/mobileApps{mobileAppId}/microsoft.graph.managedMobileLobApp/contentVersions{mobileAppContentId}
+GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}
+GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.mobileLobApp/contentVersions/{mobileAppContentId}
+GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileLobApp/contentVersions/{mobileAppContentId}
 ```
 
 ## Optional query parameters
@@ -37,7 +38,7 @@ If successful, this method returns a `200 OK` response code and [mobileAppConten
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps{mobileAppId}/contentVersions{mobileAppContentId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}
 ```
 
 ### Response
