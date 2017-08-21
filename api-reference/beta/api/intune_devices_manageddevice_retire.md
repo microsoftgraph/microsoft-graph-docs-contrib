@@ -1,6 +1,7 @@
 ﻿# retire action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Retire a device
@@ -15,10 +16,10 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 POST /managedDevices/{managedDevicesId}/retire
-POST /users/{usersId}/managedDevices{managedDeviceId}/retire
-POST /deviceManagement/managedDevices{managedDeviceId}/retire
-POST /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/retire
-POST /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps{detectedAppId}/managedDevices{managedDeviceId}/retire
+POST /users/{usersId}/managedDevices/{managedDeviceId}/retire
+POST /deviceManagement/managedDevices/{managedDeviceId}/retire
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/retire
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/retire
 ```
 
 ## Request headers
