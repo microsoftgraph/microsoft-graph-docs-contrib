@@ -2,11 +2,17 @@
 
 Delete a group setting.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-> Note: Only tenant admins have permissions to perform create, update, and delete operations.
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegated (personal Microsoft account) | Not supported.    | 
+|Application | Directory.ReadWrite.All | 
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

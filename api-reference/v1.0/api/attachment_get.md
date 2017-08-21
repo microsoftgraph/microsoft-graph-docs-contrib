@@ -13,12 +13,12 @@ All these types of attachment resources are derived from the [attachment](../res
 resource. 
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* If accessing attachments in messages: *Mail.Read*
-* If accessing attachments in events: *Calendars.Read*
-* If accessing attachments in group events or posts: *Group.Read.All*
+* If accessing attachments in messages: Mail.Read.
+* If accessing attachments in events: Calendars.Read.
+* If accessing attachments in group events or posts: Group.Read.All.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
