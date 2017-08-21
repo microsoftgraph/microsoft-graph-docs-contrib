@@ -2,9 +2,15 @@
 
 Move a message to a folder. This creates a new copy of the message in the destination folder.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Mail.ReadWrite    | 
+|Delegated (personal Microsoft account) | Mail.ReadWrite    | 
+|Application | Mail.ReadWrite | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

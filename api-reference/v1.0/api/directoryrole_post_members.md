@@ -2,8 +2,15 @@
 
 Use this API to create a new directory role member.
 
-## Prerequisites
-The following **scope** is required to execute this API: *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegated (work or school account) | Directory.AccessAsUser.All    | 
+|Delegated (personal Microsoft account) | Not supported.    | 
+|Application | Not supported. | 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
