@@ -53,7 +53,6 @@ Here is a JSON representation of the resource.
 | Group conversations | 4230 minutes.           |
 | Drive root items    | 86400 minutes.          |
 
-
 ## Relationships
 None
 

@@ -19,7 +19,6 @@ Represents the options in sheet protection.
 |allowPivotTables|boolean|Represents the worksheet protection option of allowing using pivot table feature.|
 |allowSort|boolean|Represents the worksheet protection option of allowing using sort feature.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource.

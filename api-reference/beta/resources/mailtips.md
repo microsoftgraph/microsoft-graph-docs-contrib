@@ -22,7 +22,6 @@ as an automatic reply for a message recipient.
 | recipientSuggestions | [recipient](../resources/recipient.md) collection | Recipients suggested based on previous contexts where they appear in the same message. |
 | totalMemberCount | Int32 | The number of members if the recipient is a distribution list. |
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource.

@@ -10,7 +10,6 @@ An aggregation of information about a person from across mail, contacts and soci
 |:---------------|:--------|:----------|
 |[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of a person object.|
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

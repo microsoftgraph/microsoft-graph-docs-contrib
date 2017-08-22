@@ -15,7 +15,6 @@ A conversation is a collection of [threads](conversationthread.md), and a thread
 |[List conversation threads](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads in a group conversation.|
 |[Create conversation thread](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md) collection| Create a thread in the specified conversation.|
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -30,7 +29,6 @@ A conversation is a collection of [threads](conversationthread.md), and a thread
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |threads|[conversationThread](conversationthread.md) collection|A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.|
-
 
 ## JSON representation
 
