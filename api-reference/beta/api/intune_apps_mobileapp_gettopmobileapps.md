@@ -33,8 +33,6 @@ The following table shows the parameters that can be used with this function.
 |status|String|Not yet documented|
 |count|Int64|Not yet documented|
 
-
-
 ## Response
 If successful, this function returns a `200 OK` response code and a [mobileApp](../resources/intune_apps_mobileapp.md) collection in the response body.
 

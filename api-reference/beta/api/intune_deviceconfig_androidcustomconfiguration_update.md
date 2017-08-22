@@ -43,8 +43,6 @@ The following table shows the properties that are required when you create a [an
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |omaSettings|[omaSetting](../resources/intune_deviceconfig_omasetting.md) collection|OMA settings. This collection can contain a maximum of 1000 elements.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md) object in the response body.
 

@@ -4,11 +4,11 @@ Update the properties of event object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Calendars.ReadWrite    | 
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    | 
-|Application | Calendars.ReadWrite | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

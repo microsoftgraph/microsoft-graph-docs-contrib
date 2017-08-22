@@ -11,11 +11,11 @@ having to fetch the entire set of contacts from the server every time.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    | 
-|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    | 
-|Application | Contacts.Read, Contacts.ReadWrite | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    |
+|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    |
+|Application | Contacts.Read, Contacts.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,6 @@ includes the encoded, desired parameters.
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same contact collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same contact collection. |
-
 
 #### OData query parameters
 

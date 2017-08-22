@@ -39,8 +39,6 @@ The following table shows the properties that are required when you create a [ca
 |deviceCartIds|String collection|Identifiers of device carts to be associated with classes.|
 |classroomIds|String collection|Identifiers of classrooms to be associated with device carts.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object in the response body.
 

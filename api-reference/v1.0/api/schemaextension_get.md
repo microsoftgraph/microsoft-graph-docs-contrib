@@ -5,11 +5,11 @@ Get the properties of the specified [schemaExtension](../resources/schemaextensi
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Directory.AccessAsUser.All    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Not supported. | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -23,7 +23,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Content-Type   | application/json | 
+| Content-Type   | application/json |
 
 ## Request body
 Do not supply a request body for this method.

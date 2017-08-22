@@ -7,11 +7,11 @@ Currently, this operation returns message bodies in only HTML format.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    | 
-|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    | 
-|Application | Mail.Read, Mail.ReadWrite | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
+|Application | Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 
@@ -37,7 +37,6 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
- 
 
 ## Request body
 Do not supply a request body for this method.

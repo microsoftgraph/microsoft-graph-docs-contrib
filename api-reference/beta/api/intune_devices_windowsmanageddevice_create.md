@@ -77,8 +77,6 @@ The following table shows the properties that are required when you create a win
 |userDisplayName|String|User display name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object in the response body.
 

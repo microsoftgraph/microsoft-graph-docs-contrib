@@ -43,8 +43,6 @@ The following table shows the properties that are required when you create a ios
 |payloadFileName|String|Payload file name (*.mobileconfig | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [iosCustomConfiguration](../resources/intune_deviceconfig_ioscustomconfiguration.md) object in the response body.
 

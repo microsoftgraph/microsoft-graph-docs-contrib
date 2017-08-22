@@ -6,11 +6,11 @@ Create a draft of the Reply message. You can then [update](../api/message_update
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Mail.ReadWrite    | 
-|Delegated (personal Microsoft account) | Mail.ReadWrite    | 
-|Application | Mail.ReadWrite | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

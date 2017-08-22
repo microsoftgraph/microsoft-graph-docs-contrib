@@ -6,11 +6,11 @@ you can specify the thread without referencing the parent conversation.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Group.ReadWrite.All, Group.Read.All | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All, Group.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

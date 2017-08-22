@@ -56,8 +56,6 @@ The following table shows the properties that are required when you create a win
 |phoneProductIdentifier|String|The Phone Product Identifier.|
 |phonePublisherId|String|The Phone Publisher Id.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md) object in the response body.
 

@@ -50,8 +50,6 @@ The following table shows the properties that are required when you create a [ma
 |certificateKeyLength|Int32|Key length|
 |enhancedKeyUsage|String|Extended key usage|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [managedDeviceCertificateState](../resources/intune_deviceconfig_manageddevicecertificatestate.md) object in the response body.
 

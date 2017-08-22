@@ -35,8 +35,6 @@ The following table shows the properties that are required when you create a [te
 |acceptedVersion|Int32|Most recent version number of the T&C accepted by the user.|
 |acceptedDateTime|DateTimeOffset|DateTime when the terms were last accepted by the user.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) object in the response body.
 

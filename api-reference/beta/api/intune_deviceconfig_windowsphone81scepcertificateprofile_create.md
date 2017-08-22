@@ -53,8 +53,6 @@ The following table shows the properties that are required when you create a win
 |hashAlgorithm|String|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsPhone81SCEPCertificateProfile](../resources/intune_deviceconfig_windowsphone81scepcertificateprofile.md) object in the response body.
 

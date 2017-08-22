@@ -39,8 +39,6 @@ The following table shows the properties that are required when you create a win
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) object in the response body.
 

@@ -4,11 +4,11 @@ Delete a photo.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Files.ReadWrite    | 
-|Delegated (personal Microsoft account) | Files.ReadWrite    | 
-|Application | Not supported. | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -23,7 +23,6 @@ DELETE /drive/root/createdByUser/photo
 |:---------------|:--------|:----------|
 | if-match  | string  | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.|
 | Authorization  | string  | Bearer {token}. Required. |
-
 
 ## Request body
 Do not supply a request body for this method.

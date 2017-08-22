@@ -50,8 +50,6 @@ The following table shows the properties that are required when you create a win
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |usernameSource|String|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows10EasEmailProfileConfiguration](../resources/intune_deviceconfig_windows10easemailprofileconfiguration.md) object in the response body.
 

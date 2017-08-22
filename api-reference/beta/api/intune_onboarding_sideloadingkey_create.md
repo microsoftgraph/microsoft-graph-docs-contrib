@@ -37,8 +37,6 @@ The following table shows the properties that are required when you create a sid
 |totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
 |lastUpdatedDateTime|String|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object in the response body.
 

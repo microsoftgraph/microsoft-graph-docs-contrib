@@ -32,8 +32,6 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |enterpriseToken|String|The Enterprise token appended to the callback URL after successfully completing sign-up.|
 
-
-
 ## Response
 If successful, this action returns a `204 No Content` response code.
 

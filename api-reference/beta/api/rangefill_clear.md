@@ -21,7 +21,6 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response

@@ -38,8 +38,6 @@ The following table shows the properties that are required when you create a [de
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
 |errorDescription|String|Error description corresponding to erroneous execution of the device management script.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptDeviceState](../resources/intune_devices_devicemanagementscriptdevicestate.md) object in the response body.
 

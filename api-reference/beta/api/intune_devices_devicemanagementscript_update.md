@@ -41,8 +41,6 @@ The following table shows the properties that are required when you create a [de
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
 |fileName|String|Script file name.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) object in the response body.
 

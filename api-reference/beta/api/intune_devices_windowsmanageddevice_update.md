@@ -78,8 +78,6 @@ The following table shows the properties that are required when you create a [wi
 |userDisplayName|String|User display name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsManagedDevice](../resources/intune_devices_windowsmanageddevice.md) object in the response body.
 

@@ -38,8 +38,6 @@ The following table shows the properties that are required when you create a [eB
 |failedUserCount|Int32|Number of Users that have 1 or more device that failed to install this book.|
 |notInstalledUserCount|Int32|Number of Users that did not install this book.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object in the response body.
 

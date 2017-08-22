@@ -19,7 +19,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.
 

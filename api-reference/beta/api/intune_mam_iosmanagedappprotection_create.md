@@ -67,8 +67,6 @@ The following table shows the properties that are required when you create a ios
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object in the response body.
 

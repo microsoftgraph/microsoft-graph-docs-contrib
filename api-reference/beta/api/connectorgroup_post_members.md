@@ -15,7 +15,6 @@ POST /connectorGroups/{id}/members/$ref
 |:---------------|:----------|
 | Authorization  | Bearer. Required|
 
-
 ## Request body
 In the request body, supply a JSON representation of a link to a   [connector](../resources/connector.md) object.
 

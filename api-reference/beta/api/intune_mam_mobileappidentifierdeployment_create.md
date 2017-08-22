@@ -37,8 +37,6 @@ The following table shows the properties that are required when you create a mob
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) object in the response body.
 

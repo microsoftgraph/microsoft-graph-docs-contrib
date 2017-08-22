@@ -242,8 +242,6 @@ The following table shows the properties that are required when you create a win
 |experienceBlockTaskSwitcher|Boolean|Indicates whether or not to enable task switching on the device.|
 |logonBlockFastUserSwitching|Boolean|Disables the ability to quickly switch between users that are logged on simultaneously without logging off.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object in the response body.
 

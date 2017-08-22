@@ -37,8 +37,6 @@ The following table shows the properties that are required when you create a def
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [defaultDeviceCompliancePolicy](../resources/intune_deviceconfig_defaultdevicecompliancepolicy.md) object in the response body.
 

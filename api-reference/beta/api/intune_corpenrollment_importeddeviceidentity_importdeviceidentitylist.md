@@ -33,8 +33,6 @@ The following table shows the parameters that can be used with this action.
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) collection|Not yet documented|
 |overwriteImportedDeviceIdentities|Boolean|Not yet documented|
 
-
-
 ## Response
 If successful, this action returns a `200 OK` response code and a [importedDeviceIdentityResult](../resources/intune_corpenrollment_importeddeviceidentityresult.md) collection in the response body.
 

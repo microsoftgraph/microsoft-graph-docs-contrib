@@ -19,7 +19,7 @@ One of the following permissions is required to call this API, depending on the 
 | [group post](../resources/post.md) | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
 | [organization](../resources/organization.md) | Directory.AccessAsUser.All | [personal contact](../resources/contact.md) | Contacts.ReadWrite |
 | [user](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## HTTP request
 In the request, identify the resource instance, use the **extensions** 
 navigation property of that instance to identify the extension, and do a `PATCH` on that extension instance.
@@ -49,7 +49,6 @@ See the [Request body](#request-body) section about including in the request bod
 |_URL parameters_|
 |id|string|A unique identifier for an instance of the corresponding collection. Required.|
 |extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
-
 
 ## Request headers
 | Name       | Value |

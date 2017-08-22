@@ -170,7 +170,6 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
 

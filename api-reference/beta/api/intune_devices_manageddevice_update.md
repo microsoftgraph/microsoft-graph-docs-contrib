@@ -78,8 +78,6 @@ The following table shows the properties that are required when you create a [ma
 |userDisplayName|String|User display name|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune_devices_manageddevice.md) object in the response body.
 

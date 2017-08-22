@@ -7,11 +7,11 @@ Retrieve the properties and relationships of user object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
-|Delegated (personal Microsoft account) | User.Read, User.ReadWrite    | 
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
+|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -24,7 +24,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required. |
-| Content-Type   | application/json | 
+| Content-Type   | application/json |
 
 ## Request body
 Do not supply a request body for this method.

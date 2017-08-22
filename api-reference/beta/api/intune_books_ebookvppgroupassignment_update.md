@@ -35,8 +35,6 @@ The following table shows the properties that are required when you create a [eB
 |installIntent|String|The install intent defined by the admin. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md) object in the response body.
 

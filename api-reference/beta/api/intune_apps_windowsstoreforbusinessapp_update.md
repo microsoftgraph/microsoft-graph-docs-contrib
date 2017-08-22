@@ -53,8 +53,6 @@ The following table shows the properties that are required when you create a [wi
 |licenseType|String|The app license type Possible values are: `offline`, `online`.|
 |packageIdentityName|String|The app package identifier|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) object in the response body.
 

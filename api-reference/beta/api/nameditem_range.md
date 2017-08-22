@@ -19,7 +19,6 @@ POST /workbook/names(<name>)/Range
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response

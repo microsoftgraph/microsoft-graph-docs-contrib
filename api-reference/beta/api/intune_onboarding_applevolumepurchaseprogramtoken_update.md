@@ -43,8 +43,6 @@ The following table shows the properties that are required when you create a [ap
 |automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
 |countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [appleVolumePurchaseProgramToken](../resources/intune_onboarding_applevolumepurchaseprogramtoken.md) object in the response body.
 

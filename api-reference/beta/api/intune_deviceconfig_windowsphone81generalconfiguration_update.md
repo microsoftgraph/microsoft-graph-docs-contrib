@@ -71,8 +71,6 @@ The following table shows the properties that are required when you create a [wi
 |wifiBlockHotspotReporting|Boolean|Indicates whether or not to block Wi-Fi hotspot reporting. Has no impact if Wi-Fi is blocked.|
 |windowsStoreBlocked|Boolean|Indicates whether or not to block the Windows Store.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) object in the response body.
 

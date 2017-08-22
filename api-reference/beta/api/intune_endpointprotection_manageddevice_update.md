@@ -32,8 +32,6 @@ The following table shows the properties that are required when you create a [ma
 |---|---|---|
 |id|String|Unique Identifier for the device|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune_endpointprotection_manageddevice.md) object in the response body.
 

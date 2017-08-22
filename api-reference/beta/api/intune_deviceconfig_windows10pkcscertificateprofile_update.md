@@ -52,8 +52,6 @@ The following table shows the properties that are required when you create a [wi
 |certificateTemplateName|String|PKCS Certificate Template Name|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windows10PkcsCertificateProfile](../resources/intune_deviceconfig_windows10pkcscertificateprofile.md) object in the response body.
 

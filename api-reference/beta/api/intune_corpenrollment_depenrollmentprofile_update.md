@@ -60,8 +60,6 @@ The following table shows the properties that are required when you create a [de
 |enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object in the response body.
 

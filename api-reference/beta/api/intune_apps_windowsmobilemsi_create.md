@@ -51,8 +51,6 @@ The following table shows the properties that are required when you create a win
 |commandLine|String|The command line.|
 |productCode|String|The product code.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsMobileMSI](../resources/intune_apps_windowsmobilemsi.md) object in the response body.
 

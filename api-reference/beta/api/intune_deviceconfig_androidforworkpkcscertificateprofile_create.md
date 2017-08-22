@@ -50,8 +50,6 @@ The following table shows the properties that are required when you create a and
 |certificateTemplateName|String|PKCS Certificate Template Name|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [androidForWorkPkcsCertificateProfile](../resources/intune_deviceconfig_androidforworkpkcscertificateprofile.md) object in the response body.
 

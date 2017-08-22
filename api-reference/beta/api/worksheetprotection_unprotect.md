@@ -19,7 +19,6 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 

@@ -37,8 +37,6 @@ The following table shows the properties that are required when you create a [or
 |defaultDeviceEnrollmentLimit|Int32|Device enrollment limit applied to all users by default|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune_onboarding_organization.md) object in the response body.
 

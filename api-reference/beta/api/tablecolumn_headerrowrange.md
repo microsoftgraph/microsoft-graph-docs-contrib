@@ -20,7 +20,6 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/HeaderRow
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response

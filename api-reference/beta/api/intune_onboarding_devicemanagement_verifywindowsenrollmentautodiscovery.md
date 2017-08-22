@@ -32,8 +32,6 @@ The following table shows the parameters that can be used with this function.
 |---|---|---|
 |domainName|String|Not yet documented|
 
-
-
 ## Response
 If successful, this function returns a `200 OK` response code and a Boolean in the response body.
 

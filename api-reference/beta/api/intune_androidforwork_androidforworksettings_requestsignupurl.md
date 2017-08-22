@@ -32,8 +32,6 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |hostName|String|The hostname of the callback URL to which the browser will be redirected after successfully completing sign-up.|
 
-
-
 ## Response
 If successful, this action returns a `200 OK` response code and a String in the response body.
 

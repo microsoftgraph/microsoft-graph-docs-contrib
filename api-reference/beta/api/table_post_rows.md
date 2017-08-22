@@ -20,7 +20,6 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.
 

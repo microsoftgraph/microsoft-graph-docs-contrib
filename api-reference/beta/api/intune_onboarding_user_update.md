@@ -33,8 +33,6 @@ The following table shows the properties that are required when you create a [us
 |id|String|Unique identifier of the user.|
 |deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune_onboarding_user.md) object in the response body.
 

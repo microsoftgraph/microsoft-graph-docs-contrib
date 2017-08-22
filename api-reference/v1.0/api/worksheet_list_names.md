@@ -4,11 +4,11 @@ Retrieve a list of named item associated with the worksheet.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Files.ReadWrite    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Sites.Read.All | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -22,7 +22,6 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 Do not supply a request body for this method.

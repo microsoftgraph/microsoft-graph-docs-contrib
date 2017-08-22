@@ -49,8 +49,6 @@ The following table shows the properties that are required when you create a [wi
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appStoreUrl|String|The Windows app store URL.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsStoreApp](../resources/intune_apps_windowsstoreapp.md) object in the response body.
 

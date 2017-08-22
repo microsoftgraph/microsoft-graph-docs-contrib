@@ -49,8 +49,6 @@ The following table shows the properties that are required when you create a and
 |syncContacts|Boolean|Toggles syncing contacts. If set to false contacts are turned off on the device.|
 |syncTasks|Boolean|Toggles syncing tasks. If set to false tasks are turned off on the device.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [androidForWorkNineWorkEasConfiguration](../resources/intune_deviceconfig_androidforworknineworkeasconfiguration.md) object in the response body.
 

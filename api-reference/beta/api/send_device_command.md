@@ -25,7 +25,6 @@ POST me/devices/{id}/commands
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
-
 ## Request body
 
 In the request body, supply a JSON representation of the command properties.

@@ -8,11 +8,11 @@ Based on this value, you can better adjust the parameters and call **findMeeting
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Calendars.Read.Shared, Calendars.ReadWrite.Shared    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Not supported. | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read.Shared, Calendars.ReadWrite.Shared    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -25,7 +25,6 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | A string representing a specific time zone for the response, for example, "Pacific Standard Time". Optional. UTC is used if this header is not specified.|
-
 
 ## Request body
 All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body. 

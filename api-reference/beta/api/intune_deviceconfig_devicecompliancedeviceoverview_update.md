@@ -39,8 +39,6 @@ The following table shows the properties that are required when you create a [de
 |lastUpdateDateTime|DateTimeOffset|Last update time|
 |configurationVersion|Int32|Version of the policy for that overview|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md) object in the response body.
 

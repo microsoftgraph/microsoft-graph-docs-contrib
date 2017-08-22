@@ -34,8 +34,6 @@ The following table shows the properties that are required when you create a [eB
 |id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) object in the response body.
 

@@ -19,7 +19,6 @@ POST /workbook/worksheets/{id|name}/charts/
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [Chart](../resources/chart.md) object.
 

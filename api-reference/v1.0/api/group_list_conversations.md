@@ -4,11 +4,11 @@ Retrieve the list of conversations in this group.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Group.Read.All, Group.ReadWrite.All | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

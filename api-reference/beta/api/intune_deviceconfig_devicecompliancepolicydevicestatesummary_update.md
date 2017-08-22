@@ -40,8 +40,6 @@ The following table shows the properties that are required when you create a [de
 |errorDeviceCount|Int32|Number of error devices|
 |conflictDeviceCount|Int32|Number of conflict devices|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) object in the response body.
 

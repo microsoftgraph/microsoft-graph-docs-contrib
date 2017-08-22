@@ -24,7 +24,6 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
 

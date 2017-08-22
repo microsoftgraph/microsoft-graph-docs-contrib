@@ -36,8 +36,6 @@ The following table shows the properties that are required when you create a [us
 |failedDeviceCount|Int32|Failed Device Count.|
 |notInstalledDeviceCount|Int32|Not installed device count.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) object in the response body.
 

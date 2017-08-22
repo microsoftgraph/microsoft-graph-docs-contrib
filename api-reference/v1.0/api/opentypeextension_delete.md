@@ -41,12 +41,10 @@ All other syntax that allows you to identify these resource instances supports d
 |id|string|A unique identifier for an instance in the corresponding collection. Required.|
 |extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
-
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer {token}. Required. |
-
 
 ## Request body
 Do not supply a request body for this method.

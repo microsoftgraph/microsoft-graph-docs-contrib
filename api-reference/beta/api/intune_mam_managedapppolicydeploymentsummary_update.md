@@ -40,8 +40,6 @@ The following table shows the properties that are required when you create a [ma
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object in the response body.
 

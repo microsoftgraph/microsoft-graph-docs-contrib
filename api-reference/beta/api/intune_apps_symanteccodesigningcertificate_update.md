@@ -41,8 +41,6 @@ The following table shows the properties that are required when you create a [sy
 |expirationDateTime|DateTimeOffset|The Cert Expiration Date.|
 |uploadDateTime|DateTimeOffset|The Type of the CodeSigning Cert as Symantec Cert.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object in the response body.
 

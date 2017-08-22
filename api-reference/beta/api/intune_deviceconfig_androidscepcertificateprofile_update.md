@@ -54,8 +54,6 @@ The following table shows the properties that are required when you create a [an
 |hashAlgorithm|String|SCEP Hash Algorithm Possible values are: `sha1`, `sha2`.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [androidScepCertificateProfile](../resources/intune_deviceconfig_androidscepcertificateprofile.md) object in the response body.
 

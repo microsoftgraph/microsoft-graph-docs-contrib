@@ -49,8 +49,6 @@ The following table shows the properties that are required when you create a set
 |errorDeviceCount|Int32|Device error count for the setting|
 |conflictDeviceCount|Int32|Device conflict error count for the setting|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) object in the response body.
 

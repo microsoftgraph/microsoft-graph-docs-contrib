@@ -24,7 +24,6 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json  |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 

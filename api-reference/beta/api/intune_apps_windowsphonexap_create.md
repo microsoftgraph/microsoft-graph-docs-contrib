@@ -51,8 +51,6 @@ The following table shows the properties that are required when you create a win
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |productIdentifier|String|The Product Identifier.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsPhoneXAP](../resources/intune_apps_windowsphonexap.md) object in the response body.
 

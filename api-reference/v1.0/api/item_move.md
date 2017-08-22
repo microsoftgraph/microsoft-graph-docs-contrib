@@ -9,11 +9,11 @@ Items cannot be moved between [Drives](../resources/drive.md) using this request
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    | 
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
 
@@ -29,7 +29,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
-
 
 ## Request body
 In the request body, supply the new value for the **parentReference** property.

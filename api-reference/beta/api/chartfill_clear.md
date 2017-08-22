@@ -21,7 +21,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response
