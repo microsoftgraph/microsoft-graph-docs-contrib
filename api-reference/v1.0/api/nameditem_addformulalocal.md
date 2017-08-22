@@ -4,11 +4,11 @@ Adds a new name to the collection of the given scope using the user's locale for
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Files.ReadWrite, Sites.Read.All    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Sites.Read.All | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Sites.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -21,7 +21,6 @@ POST /workbook/worksheets({id|name})/names/add
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

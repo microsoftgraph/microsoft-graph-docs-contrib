@@ -4,11 +4,11 @@ Get a contact collection from the default Contacts folder of the signed-in user.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    | 
-|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    | 
-|Application | Contacts.Read, Contacts.ReadWrite | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    |
+|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    |
+|Application | Contacts.Read, Contacts.ReadWrite |
 
 ## HTTP request
 
@@ -43,7 +43,7 @@ For example, you can use the `$filter` query parameter to filter contacts based 
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  | 
+| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.

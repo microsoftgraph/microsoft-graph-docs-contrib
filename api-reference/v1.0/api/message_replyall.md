@@ -5,11 +5,11 @@ Reply to all recipients of a message. The message is then saved in the Sent Item
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Mail.Send    | 
-|Delegated (personal Microsoft account) | Mail.Send    | 
-|Application | Mail.Send | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Send    |
+|Delegated (personal Microsoft account) | Mail.Send    |
+|Application | Mail.Send |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

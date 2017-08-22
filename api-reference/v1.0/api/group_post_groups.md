@@ -11,11 +11,11 @@ Use this API to create a new group as specified in the request body. You can cre
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Group.ReadWrite.All    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Group.ReadWrite.All | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +41,9 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 
 | Type of group | **groupTypes** property |
 |:--------------|:------------------------|
-| Office 365 (aka unified group)| "Unified" | 
-| Dynamic | "DynamicMembership" | 
-| Security | Do not set. | 
+| Office 365 (aka unified group)| "Unified" |
+| Dynamic | "DynamicMembership" |
+| Security | Do not set. |
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 

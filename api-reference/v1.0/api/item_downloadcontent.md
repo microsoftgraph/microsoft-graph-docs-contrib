@@ -6,11 +6,11 @@ Only driveItem with the **file** property can be downloaded.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    | 
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
+|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
 
@@ -27,7 +27,6 @@ GET /groups/{group-id}/drive/items/{item-id}/content
 | Name          | Value  | Description                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
-
 
 ## Request body
 Do not supply a request body for this method.

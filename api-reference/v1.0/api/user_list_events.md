@@ -27,11 +27,11 @@ find out the time zone used when the event was created.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    | 
-|Application | Calendars.Read, Calendars.ReadWrite | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | string | The default time zone for events in the response. Optional. | 
+| Prefer: outlook.timezone | string | The default time zone for events in the response. Optional. |
 
 ## Request body
 Do not supply a request body for this method.

@@ -113,7 +113,6 @@ PATCH /groups/{id}/events/{id}
 |id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
 
-
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
