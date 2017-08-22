@@ -36,8 +36,6 @@ The following table shows the properties that are required when you create a win
 |appPackageFamilyName|String|The Package Family Name of a Windows app. When set, the access level applies to the specified application.|
 |appDisplayName|String|The Package Family Name of a Windows app. When set, the access level applies to the specified application.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsPrivacyDataAccessControlItem](../resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem.md) object in the response body.
 

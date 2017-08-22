@@ -34,8 +34,6 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|Not yet documented|
 
-
-
 ## Response
 If successful, this action returns a `204 No Content` response code.
 

@@ -21,7 +21,6 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response

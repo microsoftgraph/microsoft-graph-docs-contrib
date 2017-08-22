@@ -34,8 +34,6 @@ The following table shows the properties that are required when you create a [de
 |displayName|String|Display name for the device category.|
 |description|String|Optional description for the device category.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune_onboarding_devicecategory.md) object in the response body.
 

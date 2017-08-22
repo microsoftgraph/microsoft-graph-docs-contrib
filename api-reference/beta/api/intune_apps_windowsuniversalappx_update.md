@@ -59,8 +59,6 @@ The following table shows the properties that are required when you create a [wi
 |isBundle|Boolean|Whether or not the app is a bundle.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) object in the response body.
 

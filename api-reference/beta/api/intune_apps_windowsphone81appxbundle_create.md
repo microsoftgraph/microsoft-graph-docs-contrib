@@ -57,8 +57,6 @@ The following table shows the properties that are required when you create a win
 |phonePublisherId|String|The Phone Publisher Id. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |appXPackageInformationList|[windowsPackageInformation](../resources/intune_apps_windowspackageinformation.md) collection|The list of AppX Package Information.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsPhone81AppXBundle](../resources/intune_apps_windowsphone81appxbundle.md) object in the response body.
 

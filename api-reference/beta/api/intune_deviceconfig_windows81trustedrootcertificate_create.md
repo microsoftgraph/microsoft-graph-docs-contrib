@@ -43,8 +43,6 @@ The following table shows the properties that are required when you create a win
 |certFileName|String|File name to display in UI.|
 |destinationStore|String|Destination store location for the Trusted Root Certificate. Possible values are: `computerCertStoreRoot`, `computerCertStoreIntermediate`, `userCertStoreIntermediate`.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows81TrustedRootCertificate](../resources/intune_deviceconfig_windows81trustedrootcertificate.md) object in the response body.
 

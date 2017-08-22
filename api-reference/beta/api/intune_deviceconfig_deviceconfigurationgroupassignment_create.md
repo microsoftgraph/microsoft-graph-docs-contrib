@@ -41,8 +41,6 @@ The following table shows the properties that are required when you create a dev
 |targetGroupId|String|The Id of the AAD group we are targeting the device configuration to.|
 |excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) object in the response body.
 

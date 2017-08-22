@@ -56,8 +56,6 @@ The following table shows the properties that are required when you create a [ma
 |onDemandRules|[vpnOnDemandRule](../resources/intune_deviceconfig_vpnondemandrule.md) collection|On-Demand Rules. This collection can contain a maximum of 500 elements. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune_deviceconfig_vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune_deviceconfig_applevpnconfiguration.md)|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [macOSVpnConfiguration](../resources/intune_deviceconfig_macosvpnconfiguration.md) object in the response body.
 

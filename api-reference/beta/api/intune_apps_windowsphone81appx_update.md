@@ -59,8 +59,6 @@ The following table shows the properties that are required when you create a [wi
 |phoneProductIdentifier|String|The Phone Product Identifier.|
 |phonePublisherId|String|The Phone Publisher Id.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md) object in the response body.
 

@@ -59,8 +59,6 @@ The following table shows the properties that are required when you create a win
 |routes|[vpnRoute](../resources/intune_deviceconfig_vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune_deviceconfig_vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows10VpnConfiguration](../resources/intune_deviceconfig_windows10vpnconfiguration.md) object in the response body.
 

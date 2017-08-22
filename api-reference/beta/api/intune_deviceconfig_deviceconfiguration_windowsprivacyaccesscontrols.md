@@ -34,8 +34,6 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |windowsPrivacyAccessControls|[windowsPrivacyDataAccessControlItem](../resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem.md) collection|Not yet documented|
 
-
-
 ## Response
 If successful, this action returns a `204 No Content` response code.
 

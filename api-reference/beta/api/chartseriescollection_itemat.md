@@ -19,7 +19,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 

@@ -38,8 +38,6 @@ The following table shows the parameters that can be used with this action.
 |phoneNumber|String|Not yet documented|
 |footer|String|Not yet documented|
 
-
-
 ## Response
 If successful, this action returns a `204 No Content` response code.
 

@@ -33,8 +33,6 @@ The following table shows the properties that are required when you create a [wi
 |id|String|Unique Identifier for the Windows management app|
 |availableVersion|String|Windows management app available version.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsManagementApp](../resources/intune_devices_windowsmanagementapp.md) object in the response body.
 

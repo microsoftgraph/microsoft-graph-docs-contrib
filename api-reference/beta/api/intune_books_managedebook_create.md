@@ -41,8 +41,6 @@ The following table shows the properties that are required when you create a man
 |informationUrl|String|The more information Url.|
 |privacyInformationUrl|String|The privacy statement Url.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [managedEBook](../resources/intune_books_managedebook.md) object in the response body.
 

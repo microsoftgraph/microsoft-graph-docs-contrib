@@ -32,8 +32,6 @@ The following table shows the parameters that can be used with this function.
 |---|---|---|
 |userid|String|Not yet documented|
 
-
-
 ## Response
 If successful, this function returns a `200 OK` response code and a String collection in the response body.
 

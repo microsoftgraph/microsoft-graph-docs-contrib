@@ -21,7 +21,6 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.
 

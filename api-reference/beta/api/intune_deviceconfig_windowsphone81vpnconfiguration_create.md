@@ -53,8 +53,6 @@ The following table shows the properties that are required when you create a win
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |dnsSuffixSearchList|String collection|DNS suffix search list.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsPhone81VpnConfiguration](../resources/intune_deviceconfig_windowsphone81vpnconfiguration.md) object in the response body.
 

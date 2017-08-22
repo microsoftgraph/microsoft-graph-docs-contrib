@@ -42,8 +42,6 @@ The following table shows the properties that are required when you create a and
 |trustedRootCertificate|Binary|Trusted Root Certificate|
 |certFileName|String|File name to display in UI.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [androidTrustedRootCertificate](../resources/intune_deviceconfig_androidtrustedrootcertificate.md) object in the response body.
 

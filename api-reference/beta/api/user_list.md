@@ -23,7 +23,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Header        | Value                      |
 |:--------------|:---------------------------|
 | Authorization | Bearer {token} (required)  |
-| Content-Type  | application/json           | 
+| Content-Type  | application/json           |
 
 ## Request body
 

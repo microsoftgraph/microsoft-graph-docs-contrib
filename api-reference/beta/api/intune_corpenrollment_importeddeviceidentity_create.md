@@ -40,8 +40,6 @@ The following table shows the properties that are required when you create a imp
 |enrollmentState|String|The state of the device in Intune Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |platform|String|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [importedDeviceIdentity](../resources/intune_corpenrollment_importeddeviceidentity.md) object in the response body.
 

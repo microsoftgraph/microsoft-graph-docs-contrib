@@ -35,8 +35,6 @@ The following table shows the properties that are required when you create a win
 |applicationType|String|Application Type Possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object in the response body.
 

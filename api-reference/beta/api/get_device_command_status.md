@@ -139,7 +139,6 @@ GET me/beta/devices/{id}/command/{id}/responsePayload
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
 
-
 ### Response
 
 ```http

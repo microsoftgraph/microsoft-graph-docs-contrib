@@ -55,8 +55,6 @@ The following table shows the properties that are required when you create a [wi
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |dnsSuffixSearchList|String collection|DNS suffix search list.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsPhone81VpnConfiguration](../resources/intune_deviceconfig_windowsphone81vpnconfiguration.md) object in the response body.
 

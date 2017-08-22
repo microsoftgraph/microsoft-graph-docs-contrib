@@ -38,7 +38,7 @@ For example, you can use the `$filter` query parameter to filter contacts based 
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  | 
+| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.

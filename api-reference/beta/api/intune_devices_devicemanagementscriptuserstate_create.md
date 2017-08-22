@@ -35,8 +35,6 @@ The following table shows the properties that are required when you create a dev
 |errorDeviceCount|Int32|Error device count for specific user.|
 |userPrincipalName|String|User principle name of specific user.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) object in the response body.
 

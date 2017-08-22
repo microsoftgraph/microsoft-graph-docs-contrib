@@ -48,8 +48,6 @@ The following table shows the properties that are required when you create a win
 |osMaximumVersion|String|Maximum Windows Phone version.|
 |storageRequireEncryption|Boolean|Require encryption on windows phone devices.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsPhone81CompliancePolicy](../resources/intune_deviceconfig_windowsphone81compliancepolicy.md) object in the response body.
 

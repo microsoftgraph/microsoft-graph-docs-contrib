@@ -55,8 +55,6 @@ The following table shows the properties that are required when you create a win
 |isBundle|Boolean|Whether or not the app is a bundle.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsAppX](../resources/intune_apps_windowsappx.md) object in the response body.
 

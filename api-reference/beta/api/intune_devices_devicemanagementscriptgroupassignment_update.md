@@ -33,8 +33,6 @@ The following table shows the properties that are required when you create a [de
 |id|String|Key of the device management script group assignment entity.|
 |targetGroupId|String|The Id of the Azure Active Directory group we are targeting the script to.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) object in the response body.
 

@@ -30,7 +30,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
-
 ## Request body
 In the request body, supply the new value for the **parentReference** property.
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.

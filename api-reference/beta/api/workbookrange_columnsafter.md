@@ -25,7 +25,6 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 |:---------------|:--------|:----------|
 |count|Int32|The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1|
 
-
 ## Request body
 
 ## Response

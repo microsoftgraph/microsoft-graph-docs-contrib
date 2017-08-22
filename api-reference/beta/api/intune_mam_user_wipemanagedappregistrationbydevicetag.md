@@ -32,8 +32,6 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |deviceTag|String|device tag|
 
-
-
 ## Response
 If successful, this action returns a `204 No Content` response code.
 

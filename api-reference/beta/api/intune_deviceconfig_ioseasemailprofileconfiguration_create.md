@@ -51,8 +51,6 @@ The following table shows the properties that are required when you create a ios
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |usernameSource|String|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [iosEasEmailProfileConfiguration](../resources/intune_deviceconfig_ioseasemailprofileconfiguration.md) object in the response body.
 

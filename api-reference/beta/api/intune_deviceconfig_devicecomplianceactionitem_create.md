@@ -36,8 +36,6 @@ The following table shows the properties that are required when you create a dev
 |notificationTemplateId|String|What notification Message template to use|
 |notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object in the response body.
 

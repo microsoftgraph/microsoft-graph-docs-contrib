@@ -34,8 +34,6 @@ The following table shows the properties that are required when you create a mob
 |---|---|---|
 |id|String|The app content version.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppContent](../resources/intune_apps_mobileappcontent.md) object in the response body.
 

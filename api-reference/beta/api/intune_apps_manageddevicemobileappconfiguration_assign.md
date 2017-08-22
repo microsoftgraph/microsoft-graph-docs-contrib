@@ -32,8 +32,6 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |appConfigurationGroupAssignments|[mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) collection|Not yet documented|
 
-
-
 ## Response
 If successful, this action returns a `204 No Content` response code.
 

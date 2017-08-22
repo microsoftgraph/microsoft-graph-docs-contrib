@@ -20,7 +20,6 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.
 

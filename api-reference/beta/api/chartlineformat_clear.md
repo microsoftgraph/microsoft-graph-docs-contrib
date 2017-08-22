@@ -21,7 +21,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridline
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response

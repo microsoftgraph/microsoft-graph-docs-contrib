@@ -49,8 +49,6 @@ The following table shows the properties that are required when you create a ios
 |totalLicenseCount|Int32|Total license count.|
 |usedLicenseCount|Int32|Used license count.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [iosVppEBook](../resources/intune_books_iosvppebook.md) object in the response body.
 

@@ -40,8 +40,6 @@ The following table shows the properties that are required when you create a [an
 |enrollmentTarget|String|Indicates which users can enroll devices in Android for Work device management Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object in the response body.
 

@@ -38,8 +38,6 @@ The following table shows the properties that are required when you create a dev
 |state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object in the response body.
 

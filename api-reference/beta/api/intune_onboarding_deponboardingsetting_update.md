@@ -39,8 +39,6 @@ The following table shows the properties that are required when you create a [de
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object in the response body.
 

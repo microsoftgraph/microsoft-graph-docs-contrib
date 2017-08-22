@@ -42,8 +42,6 @@ The following table shows the properties that are required when you create a mob
 |userName|String|Device User Name|
 |userPrincipalName|String|User Principal Name|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object in the response body.
 

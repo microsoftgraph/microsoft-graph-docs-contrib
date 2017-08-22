@@ -53,8 +53,6 @@ The following table shows the properties that are required when you create a [an
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [androidForWorkCompliancePolicy](../resources/intune_deviceconfig_androidforworkcompliancepolicy.md) object in the response body.
 

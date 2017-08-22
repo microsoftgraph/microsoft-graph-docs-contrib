@@ -34,8 +34,6 @@ The following table shows the properties that are required when you create a [de
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
 |excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) object in the response body.
 

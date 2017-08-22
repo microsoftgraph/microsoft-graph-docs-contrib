@@ -32,8 +32,6 @@ The following table shows the properties that are required when you create a [ap
 |---|---|---|
 |id|String|This is automatically generated when the appleVolumePurchaseProgramToken is created. It is the Key of the entity.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [appleVolumePurchaseProgramToken](../resources/intune_apps_applevolumepurchaseprogramtoken.md) object in the response body.
 

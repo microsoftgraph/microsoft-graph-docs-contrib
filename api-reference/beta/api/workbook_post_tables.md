@@ -19,7 +19,6 @@ POST /workbook/tables/$/add
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [Table](../resources/table.md) object.
 

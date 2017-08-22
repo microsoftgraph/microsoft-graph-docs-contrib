@@ -19,7 +19,6 @@ POST /workbook/worksheets/{id|name}/tables/add
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply following parameters. 
 
