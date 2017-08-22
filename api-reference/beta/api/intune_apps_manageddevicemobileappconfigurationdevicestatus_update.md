@@ -1,6 +1,7 @@
 ﻿# Update managedDeviceMobileAppConfigurationDeviceStatus
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) object.
@@ -14,8 +15,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceAppManagement/mobileAppConfigurations{managedDeviceMobileAppConfigurationId}/deviceStatuses{managedDeviceMobileAppConfigurationDeviceStatusId}
-PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations{iosLobAppProvisioningConfigurationId}/deviceStatuses{managedDeviceMobileAppConfigurationDeviceStatusId}
+PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
+PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 ```
 
 ## Request headers
@@ -40,8 +41,6 @@ The following table shows the properties that are required when you create a [ma
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) object in the response body.
 
@@ -49,7 +48,7 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations{managedDeviceMobileAppConfigurationId}/deviceStatuses{managedDeviceMobileAppConfigurationDeviceStatusId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 Content-type: application/json
 Content-length: 377
 

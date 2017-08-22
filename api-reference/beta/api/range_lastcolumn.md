@@ -21,7 +21,6 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response

@@ -1,6 +1,7 @@
 ﻿# Create windowsPhone81AppXBundle
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windowsPhone81AppXBundle](../resources/intune_apps_windowsphone81appxbundle.md) object.
@@ -55,8 +56,6 @@ The following table shows the properties that are required when you create a win
 |phoneProductIdentifier|String|The Phone Product Identifier. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |phonePublisherId|String|The Phone Publisher Id. Inherited from [windowsPhone81AppX](../resources/intune_apps_windowsphone81appx.md)|
 |appXPackageInformationList|[windowsPackageInformation](../resources/intune_apps_windowspackageinformation.md) collection|The list of AppX Package Information.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsPhone81AppXBundle](../resources/intune_apps_windowsphone81appxbundle.md) object in the response body.

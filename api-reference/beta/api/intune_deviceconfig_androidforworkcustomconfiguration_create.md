@@ -1,6 +1,7 @@
 ﻿# Create androidForWorkCustomConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [androidForWorkCustomConfiguration](../resources/intune_deviceconfig_androidforworkcustomconfiguration.md) object.
@@ -39,8 +40,6 @@ The following table shows the properties that are required when you create a and
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |omaSettings|[omaSetting](../resources/intune_deviceconfig_omasetting.md) collection|OMA settings. This collection can contain a maximum of 500 elements.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [androidForWorkCustomConfiguration](../resources/intune_deviceconfig_androidforworkcustomconfiguration.md) object in the response body.

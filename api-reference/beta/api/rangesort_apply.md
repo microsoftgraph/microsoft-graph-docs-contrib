@@ -21,7 +21,6 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 

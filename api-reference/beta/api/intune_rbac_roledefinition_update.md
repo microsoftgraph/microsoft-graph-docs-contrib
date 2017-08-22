@@ -1,6 +1,7 @@
 ﻿# Update roleDefinition
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [roleDefinition](../resources/intune_rbac_roledefinition.md) object.
@@ -14,8 +15,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/roleDefinitions{roleDefinitionId}
-PATCH /deviceManagement/roleDefinitions{roleDefinitionId}/roleAssignments{roleAssignmentId}/roleDefinition
+PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}
+PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition
 ```
 
 ## Request headers
@@ -36,8 +37,6 @@ The following table shows the properties that are required when you create a [ro
 |permissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Resource Permissions this role is allowed to perform. These must match the actionName that is defined as part of the resourcePermission.|
 |isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [roleDefinition](../resources/intune_rbac_roledefinition.md) object in the response body.
 
@@ -45,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated [role
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions{roleDefinitionId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
 Content-length: 268
 

@@ -1,6 +1,7 @@
 ﻿# Create user
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [user](../resources/intune_onboarding_user.md) object.
@@ -31,8 +32,6 @@ The following table shows the properties that are required when you create a use
 |---|---|---|
 |id|String|Unique identifier of the user.|
 |deviceEnrollmentLimit|Int32|The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [user](../resources/intune_onboarding_user.md) object in the response body.

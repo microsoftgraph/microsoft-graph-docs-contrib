@@ -1,6 +1,7 @@
 ﻿# Create telecomExpenseManagementPartner
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object.
@@ -35,8 +36,6 @@ The following table shows the properties that are required when you create a tel
 |appAuthorized|Boolean|Whether the partner's AAD app has been authorized to access Intune.|
 |enabled|Boolean|Whether Intune's connection to the TEM service is currently enabled or disabled.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) object in the response body.

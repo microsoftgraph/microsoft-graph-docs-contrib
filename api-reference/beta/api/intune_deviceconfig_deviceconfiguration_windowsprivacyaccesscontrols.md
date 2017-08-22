@@ -1,6 +1,7 @@
 ﻿# windowsPrivacyAccessControls action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
@@ -14,9 +15,9 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations{deviceConfigurationId}/windowsPrivacyAccessControls
-POST /deviceManagement/deviceConfigurations{deviceConfigurationId}/groupAssignments{deviceConfigurationGroupAssignmentId}/deviceConfiguration/windowsPrivacyAccessControls
-POST /deviceManagement/deviceConfigurations{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls{windowsPrivacyDataAccessControlItemId}/deviceConfiguration/windowsPrivacyAccessControls
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/windowsPrivacyAccessControls
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/windowsPrivacyAccessControls
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration/windowsPrivacyAccessControls
 ```
 
 ## Request headers
@@ -33,8 +34,6 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |windowsPrivacyAccessControls|[windowsPrivacyDataAccessControlItem](../resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem.md) collection|Not yet documented|
 
-
-
 ## Response
 If successful, this action returns a `204 No Content` response code.
 
@@ -42,7 +41,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations{deviceConfigurationId}/windowsPrivacyAccessControls
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/windowsPrivacyAccessControls
 
 Content-type: application/json
 Content-length: 379

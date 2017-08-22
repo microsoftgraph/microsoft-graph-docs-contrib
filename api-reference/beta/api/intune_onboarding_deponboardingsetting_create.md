@@ -1,6 +1,7 @@
 ﻿# Create depOnboardingSetting
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object.
@@ -37,8 +38,6 @@ The following table shows the properties that are required when you create a dep
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) object in the response body.

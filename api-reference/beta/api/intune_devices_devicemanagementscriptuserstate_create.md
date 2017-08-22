@@ -1,6 +1,7 @@
 ﻿# Create deviceManagementScriptUserState
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) object.
@@ -14,7 +15,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/userRunStates
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates
 ```
 
 ## Request headers
@@ -34,8 +35,6 @@ The following table shows the properties that are required when you create a dev
 |errorDeviceCount|Int32|Error device count for specific user.|
 |userPrincipalName|String|User principle name of specific user.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) object in the response body.
 
@@ -43,7 +42,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts{deviceManagementScriptId}/userRunStates
+POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates
 Content-type: application/json
 Content-length: 180
 

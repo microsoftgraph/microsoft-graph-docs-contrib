@@ -1,6 +1,7 @@
 ﻿# Create androidForWorkWiFiConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [androidForWorkWiFiConfiguration](../resources/intune_deviceconfig_androidforworkwificonfiguration.md) object.
@@ -43,8 +44,6 @@ The following table shows the properties that are required when you create a and
 |connectAutomatically|Boolean|Connect automatically when this network is in range. Setting this to true will skip the user prompt and automatically connect the device to Wi-Fi network.|
 |connectWhenNetworkNameIsHidden|Boolean|When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices.|
 |wiFiSecurityType|String|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wpaEnterprise`.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [androidForWorkWiFiConfiguration](../resources/intune_deviceconfig_androidforworkwificonfiguration.md) object in the response body.

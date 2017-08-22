@@ -1,6 +1,7 @@
 ﻿# Update notificationMessageTemplate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object.
@@ -14,7 +15,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/notificationMessageTemplates{notificationMessageTemplateId}
+PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 ```
 
 ## Request headers
@@ -35,8 +36,6 @@ The following table shows the properties that are required when you create a [no
 |defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
 |brandingOptions|String|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object in the response body.
 
@@ -44,7 +43,7 @@ If successful, this method returns a `200 OK` response code and an updated [noti
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates{notificationMessageTemplateId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 Content-type: application/json
 Content-length: 195
 

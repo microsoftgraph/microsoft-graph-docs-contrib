@@ -1,6 +1,7 @@
 ﻿# Update organization
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [organization](../resources/intune_onboarding_organization.md) object.
@@ -35,8 +36,6 @@ The following table shows the properties that are required when you create a [or
 |defaultDeviceEnrollmentWindowsHelloForBusinessSettings|[defaultDeviceEnrollmentWindowsHelloForBusinessSettings](../resources/intune_onboarding_defaultdeviceenrollmentwindowshelloforbusinesssettings.md)|Windows Hello for Business settings applied to all users by default|
 |defaultDeviceEnrollmentLimit|Int32|Device enrollment limit applied to all users by default|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
-
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune_onboarding_organization.md) object in the response body.

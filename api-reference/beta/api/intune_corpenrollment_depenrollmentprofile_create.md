@@ -1,6 +1,7 @@
 ﻿# Create depEnrollmentProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object.
@@ -57,8 +58,7 @@ The following table shows the properties that are required when you create a dep
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
 |sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
 |enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
-
-
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal.|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) object in the response body.
@@ -69,7 +69,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/enrollmentProfiles
 Content-type: application/json
-Content-length: 1219
+Content-length: 1268
 
 {
   "@odata.type": "#microsoft.graph.depEnrollmentProfile",
@@ -105,7 +105,8 @@ Content-length: 1219
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 10,
-  "enableSharedIPad": true
+  "enableSharedIPad": true,
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 
@@ -114,7 +115,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1268
+Content-Length: 1317
 
 {
   "@odata.type": "#microsoft.graph.depEnrollmentProfile",
@@ -151,7 +152,8 @@ Content-Length: 1268
   "macOSFileVaultDisabled": true,
   "awaitDeviceConfiguredConfirmation": true,
   "sharedIPadMaximumUserCount": 10,
-  "enableSharedIPad": true
+  "enableSharedIPad": true,
+  "enableAuthenticationViaCompanyPortal": true
 }
 ```
 

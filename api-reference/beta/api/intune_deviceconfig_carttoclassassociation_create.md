@@ -1,6 +1,7 @@
 ﻿# Create cartToClassAssociation
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object.
@@ -37,8 +38,6 @@ The following table shows the properties that are required when you create a car
 |description|String|Admin provided description of the CartToClassAssociation.|
 |deviceCartIds|String collection|Identifiers of device carts to be associated with classes.|
 |classroomIds|String collection|Identifiers of classrooms to be associated with device carts.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object in the response body.

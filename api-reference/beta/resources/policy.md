@@ -19,7 +19,6 @@ This policy is described in further detail below.
 |[List policies](../api/policy_list.md)|Policy collection|Get all policy objects in the organization.|
 |[List assigned policies](../api/policy_list_assigned.md)|Policy collection|Get all policy objects assigned to an application or service principal.|
 
-
 ### Common Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

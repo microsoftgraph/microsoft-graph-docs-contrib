@@ -1,6 +1,7 @@
 ﻿# Update officeSuiteApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [officeSuiteApp](../resources/intune_apps_officesuiteapp.md) object.
@@ -14,10 +15,10 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceAppManagement/mobileApps{mobileAppId}
-PATCH /deviceAppManagement/mobileApps{mobileAppId}/userStatuses{userAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps{mobileAppId}/deviceStatuses{mobileAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps{mobileAppId}/groupAssignments{mobileAppGroupAssignmentId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Request headers
@@ -54,8 +55,6 @@ The following table shows the properties that are required when you create a [of
 |officePlatformArchitecture|String|The property to represent the Office365 App Suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |localesToInstall|String collection|The property to represent the locales which are installed when the Apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [officeSuiteApp](../resources/intune_apps_officesuiteapp.md) object in the response body.
 
@@ -63,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [offi
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps{mobileAppId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
 Content-length: 1198
 

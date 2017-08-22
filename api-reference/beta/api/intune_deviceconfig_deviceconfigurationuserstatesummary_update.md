@@ -1,6 +1,7 @@
 ﻿# Update deviceConfigurationUserStateSummary
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [deviceConfigurationUserStateSummary](../resources/intune_deviceconfig_deviceconfigurationuserstatesummary.md) object.
@@ -37,8 +38,6 @@ The following table shows the properties that are required when you create a [de
 |nonCompliantDeviceCount|Int32|Number of NonCompliant devices|
 |errorDeviceCount|Int32|Number of error devices|
 |conflictDeviceCount|Int32|Number of conflict devices|
-
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationUserStateSummary](../resources/intune_deviceconfig_deviceconfigurationuserstatesummary.md) object in the response body.

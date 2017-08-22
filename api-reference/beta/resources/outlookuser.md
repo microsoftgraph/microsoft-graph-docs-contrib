@@ -16,7 +16,6 @@ Represents the Outlook task services available to a user.
 |[Create outlookTask](../api/outlookuser_post_tasks.md) |[outlookTask](outlooktask.md)| Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.|
 |[List tasks](../api/outlookuser_list_tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the user's mailbox.|
 
-
 ## Properties
 None
 

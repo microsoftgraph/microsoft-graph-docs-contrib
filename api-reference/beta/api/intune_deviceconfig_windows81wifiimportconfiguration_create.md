@@ -1,6 +1,7 @@
 ﻿# Create windows81WifiImportConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windows81WifiImportConfiguration](../resources/intune_deviceconfig_windows81wifiimportconfiguration.md) object.
@@ -41,8 +42,6 @@ The following table shows the properties that are required when you create a win
 |payloadFileName|String|Payload file name (*.xml).|
 |profileName|String|Profile name displayed in the UI.|
 |payload|Binary|Payload. (UTF8 encoded byte array). This is the XML file saved on the device you used to connect to the Wi-Fi endpoint.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows81WifiImportConfiguration](../resources/intune_deviceconfig_windows81wifiimportconfiguration.md) object in the response body.

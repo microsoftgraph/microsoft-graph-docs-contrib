@@ -32,7 +32,6 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
-
 ## Request body
 Do not supply a request body for this method.
 

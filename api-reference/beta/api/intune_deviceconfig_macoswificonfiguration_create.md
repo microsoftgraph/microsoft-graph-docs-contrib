@@ -1,6 +1,7 @@
 ﻿# Create macOSWiFiConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md) object.
@@ -48,8 +49,6 @@ The following table shows the properties that are required when you create a mac
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md) object in the response body.

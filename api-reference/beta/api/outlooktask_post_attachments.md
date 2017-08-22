@@ -19,7 +19,6 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Authorization  | Bearer {token}. Required. |
 | Content-Type | A string that represents the type of data in the body of an entity. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 

@@ -31,8 +31,6 @@ The service is built on top of OData. To filter the results from the query, use 
 |[Update privilegedApproval](../api/privilegedapproval_update.md) | [privilegedApproval](privilegedapproval.md)	|Update privilegedApproval object. |
 |[myrequests](../api/privilegedapproval_myrequests.md) | [privilegedApproval](privilegedApproval.md) collection|Get the requestor's approval requests. |
 
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

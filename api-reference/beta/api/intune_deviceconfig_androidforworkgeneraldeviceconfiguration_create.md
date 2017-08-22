@@ -1,6 +1,7 @@
 ﻿# Create androidForWorkGeneralDeviceConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [androidForWorkGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) object.
@@ -58,8 +59,6 @@ The following table shows the properties that are required when you create a and
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 4 to 11|
 |workProfilePasswordRequiredType|String|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileRequirePassword|Boolean|Password is required or not for work profile|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [androidForWorkGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) object in the response body.

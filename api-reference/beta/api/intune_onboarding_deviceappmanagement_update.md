@@ -1,6 +1,7 @@
 ﻿# Update deviceAppManagement
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object.
@@ -34,8 +35,6 @@ The following table shows the properties that are required when you create a [de
 |isEnabledForWindowsStoreForBusiness|Boolean|Whether the account is enabled for syncing applications from the Windows Store for business .|
 |windowsStoreForBusinessLanguage|String|The locale information used to sync applications from the windows store for business.Cultures that are specific to a country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is <languagecode2>-<country/regioncode2>, where <languagecode2> is a lowercase two-letter code derived from ISO 639-1 and <country/regioncode2> is an uppercase two-letter code derived from ISO 3166. For example, en-US for English (United States) is a specific culture.|
 |windowsStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|The last time an application sync from the windows store for business was completed.|
-
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceAppManagement](../resources/intune_onboarding_deviceappmanagement.md) object in the response body.

@@ -12,7 +12,7 @@ An insight representing documents used by a specific user. The insights returns 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List used](../api/insights_list_used.md) |[insights_used](insights_used.md) collection| Get a list of used files.|
- 
+
 ## Properties
 
 | Property              | Type          	 		| Description  |

@@ -20,7 +20,6 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/Range
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response

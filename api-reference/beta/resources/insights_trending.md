@@ -19,7 +19,6 @@ Rich relationship connecting a user to documents that are trending around the us
 | resourceVisualization | [resourceVisualization](insights_resourcevisualization.md)   	| Properties that you can use to visualize the document in your experience. |
 | resourceReference     | [resourceReference](insights_resourcereference.md)  		| Reference properties of the trending document, such as the url and type of the document. |
 
-
 ## Relationships
 
 | Property      | Type          | Description  |

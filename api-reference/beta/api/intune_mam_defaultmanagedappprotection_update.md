@@ -1,6 +1,7 @@
 ﻿# Update defaultManagedAppProtection
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.
@@ -14,7 +15,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceAppManagement/defaultManagedAppProtections{defaultManagedAppProtectionId}
+PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 ```
 
 ## Request headers
@@ -68,8 +69,6 @@ The following table shows the properties that are required when you create a [de
 |customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object in the response body.
 
@@ -77,7 +76,7 @@ If successful, this method returns a `200 OK` response code and an updated [defa
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections{defaultManagedAppProtectionId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
 Content-length: 1737
 

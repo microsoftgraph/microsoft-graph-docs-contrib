@@ -1,6 +1,7 @@
 ﻿# Update roleAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [roleAssignment](../resources/intune_rbac_roleassignment.md) object.
@@ -14,8 +15,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/roleAssignments{roleAssignmentId}
-PATCH /deviceManagement/roleDefinitions{roleDefinitionId}/roleAssignments{roleAssignmentId}
+PATCH /deviceManagement/roleAssignments/{roleAssignmentId}
+PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 ```
 
 ## Request headers
@@ -36,8 +37,6 @@ The following table shows the properties that are required when you create a [ro
 |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [roleAssignment](../resources/intune_rbac_roleassignment.md) object in the response body.
 
@@ -45,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated [role
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/roleAssignments{roleAssignmentId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{roleAssignmentId}
 Content-type: application/json
 Content-length: 179
 

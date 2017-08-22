@@ -1,6 +1,7 @@
 ﻿# Update windowsStoreApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [windowsStoreApp](../resources/intune_apps_windowsstoreapp.md) object.
@@ -14,10 +15,10 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceAppManagement/mobileApps{mobileAppId}
-PATCH /deviceAppManagement/mobileApps{mobileAppId}/userStatuses{userAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps{mobileAppId}/deviceStatuses{mobileAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps{mobileAppId}/groupAssignments{mobileAppGroupAssignmentId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/groupAssignments/{mobileAppGroupAssignmentId}/app
 ```
 
 ## Request headers
@@ -48,8 +49,6 @@ The following table shows the properties that are required when you create a [wi
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appStoreUrl|String|The Windows app store URL.|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [windowsStoreApp](../resources/intune_apps_windowsstoreapp.md) object in the response body.
 
@@ -57,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps{mobileAppId}
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
 Content-length: 630
 

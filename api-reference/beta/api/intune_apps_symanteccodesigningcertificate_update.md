@@ -1,6 +1,7 @@
 ﻿# Update symantecCodeSigningCertificate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object.
@@ -39,8 +40,6 @@ The following table shows the properties that are required when you create a [sy
 |issuer|String|The Issuer value for the cert.|
 |expirationDateTime|DateTimeOffset|The Cert Expiration Date.|
 |uploadDateTime|DateTimeOffset|The Type of the CodeSigning Cert as Symantec Cert.|
-
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object in the response body.

@@ -1,6 +1,7 @@
 ﻿# enableLostMode action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Enable lost mode
@@ -15,10 +16,10 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 POST /managedDevices/{managedDevicesId}/enableLostMode
-POST /users/{usersId}/managedDevices{managedDeviceId}/enableLostMode
-POST /deviceManagement/managedDevices{managedDeviceId}/enableLostMode
-POST /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/enableLostMode
-POST /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps{detectedAppId}/managedDevices{managedDeviceId}/enableLostMode
+POST /users/{usersId}/managedDevices/{managedDeviceId}/enableLostMode
+POST /deviceManagement/managedDevices/{managedDeviceId}/enableLostMode
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/enableLostMode
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/enableLostMode
 ```
 
 ## Request headers
@@ -36,8 +37,6 @@ The following table shows the parameters that can be used with this action.
 |message|String|Not yet documented|
 |phoneNumber|String|Not yet documented|
 |footer|String|Not yet documented|
-
-
 
 ## Response
 If successful, this action returns a `204 No Content` response code.

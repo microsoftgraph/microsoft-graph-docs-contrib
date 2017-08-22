@@ -31,7 +31,6 @@ Here is a JSON representation of the resource
 | latitude  | Double | Optional. The latitude, in decimal, for the item. Read-only.   |
 | longitude | Double | Optional. The longitude, in decimal, for the item. Read-only.  |
 
-
 ## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

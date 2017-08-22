@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/thumbnails/{thumb-
 | **thumb-id** | number | The index of the thumbnail, usually 0-4.                                            |
 | **size**     | string | The size of the thumbnail requested. This must be one of the standard sizes listed. |
 
-
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 ```http
 HTTP/1.1 200 OK

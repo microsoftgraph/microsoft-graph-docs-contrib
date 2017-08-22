@@ -21,7 +21,6 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 

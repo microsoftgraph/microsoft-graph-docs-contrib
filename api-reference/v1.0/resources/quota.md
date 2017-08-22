@@ -41,8 +41,6 @@ Here is a JSON representation of the resource.
 | `critical` | Remaining quota is less than 1% of total quota space.                                                                                                                       |
 | `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
 
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

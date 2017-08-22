@@ -1,6 +1,7 @@
 ﻿# Update detectedApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [detectedApp](../resources/intune_devices_detectedapp.md) object.
@@ -14,8 +15,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/detectedApps{detectedAppId}
-PATCH /deviceManagement/deviceManagementScripts{deviceManagementScriptId}/deviceRunStates{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps{detectedAppId}
+PATCH /deviceManagement/detectedApps/{detectedAppId}
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}
 ```
 
 ## Request headers
@@ -36,8 +37,6 @@ The following table shows the properties that are required when you create a [de
 |sizeInByte|Int64|Discovered application size in bytes. Read-only|
 |deviceCount|Int32|The number of devices that have installed this application|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [detectedApp](../resources/intune_devices_detectedapp.md) object in the response body.
 
@@ -45,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated [dete
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/detectedApps{detectedAppId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
 Content-length: 117
 

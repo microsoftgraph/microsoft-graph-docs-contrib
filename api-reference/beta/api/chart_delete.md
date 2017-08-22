@@ -19,7 +19,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/delete
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response

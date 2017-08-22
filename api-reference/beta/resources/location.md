@@ -14,7 +14,6 @@ Represents location information of an event.
 | locationEmailAddress | String | Optional email address of the location. |
 | locationUri | String | Optional URI representing the location. |
 
-
 ## JSON representation
 
 <!-- {

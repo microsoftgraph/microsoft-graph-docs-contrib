@@ -1,6 +1,7 @@
 ﻿# Create windowsStoreForBusinessApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) object.
@@ -48,8 +49,6 @@ The following table shows the properties that are required when you create a win
 |productKey|String|The app product key|
 |licenseType|String|The app license type Possible values are: `offline`, `online`.|
 |packageIdentityName|String|The app package identifier|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsStoreForBusinessApp](../resources/intune_apps_windowsstoreforbusinessapp.md) object in the response body.

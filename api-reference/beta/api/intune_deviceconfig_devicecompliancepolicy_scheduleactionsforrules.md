@@ -1,6 +1,7 @@
 ﻿# scheduleActionsForRules action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
@@ -14,8 +15,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/scheduleActionsForRules
-POST /deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/groupAssignments{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/scheduleActionsForRules
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy/scheduleActionsForRules
 ```
 
 ## Request headers
@@ -32,8 +33,6 @@ The following table shows the parameters that can be used with this action.
 |---|---|---|
 |deviceComplianceScheduledActionForRules|[deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) collection|Not yet documented|
 
-
-
 ## Response
 If successful, this action returns a `204 No Content` response code.
 
@@ -41,7 +40,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/scheduleActionsForRules
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduleActionsForRules
 
 Content-type: application/json
 Content-length: 242

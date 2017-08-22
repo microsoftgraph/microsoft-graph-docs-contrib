@@ -1,6 +1,7 @@
 ﻿# Create windowsProtectionState
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object.
@@ -14,7 +15,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceManagement/windowsMalwareInformation{windowsMalwareInformationId}/windowsDevicesProtectionState
+POST /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState
 ```
 
 ## Request headers
@@ -48,8 +49,6 @@ The following table shows the properties that are required when you create a win
 |lastFullScanSignatureVersion|String|Last full scan signature version|
 |lastReportedDateTime|DateTimeOffset|Last device health status reported time|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [windowsProtectionState](../resources/intune_endpointprotection_windowsprotectionstate.md) object in the response body.
 
@@ -57,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [windowsP
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation{windowsMalwareInformationId}/windowsDevicesProtectionState
+POST https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState
 Content-type: application/json
 Content-length: 865
 

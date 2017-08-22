@@ -1,6 +1,7 @@
 ﻿# Create resourceOperation
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [resourceOperation](../resources/intune_rbac_resourceoperation.md) object.
@@ -33,8 +34,6 @@ The following table shows the properties that are required when you create a res
 |resourceName|String|Name of the Resource this operation is performed on.|
 |actionName|String|Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.|
 |description|String|Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [resourceOperation](../resources/intune_rbac_resourceoperation.md) object in the response body.
