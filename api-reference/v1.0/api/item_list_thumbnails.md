@@ -37,7 +37,7 @@ GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 ```
 
 ## Optional query parameters
-This method supports the `$select` [OData Query Parameter](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$select` [OData puery parameter](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request body
 Do not supply a request body for this method.
