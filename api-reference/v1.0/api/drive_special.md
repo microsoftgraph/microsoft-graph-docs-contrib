@@ -6,7 +6,7 @@ Special folders provide simple aliases to access well-known folders in OneDrive 
 
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.
 
-**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.
+>**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.
 
 ## Permissions
 
@@ -26,7 +26,7 @@ GET /me/drive/special/{name}
 ```
 ## Optional query parameters
 
-This method supports `$expand` and `$select` [OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request headers
 
