@@ -29,7 +29,7 @@ GET /groups/{group-id}/drive/items/{item-id}
 
 ## Optional query parameters
 
-This method supports `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 
 ## Request headers
@@ -78,7 +78,7 @@ Content-type: application/json
 }
 ```
 
-**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
+>**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 
 You can control the page size through [optional query string parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
 
