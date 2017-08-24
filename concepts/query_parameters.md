@@ -4,15 +4,15 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 
 |Name|Description|Example (click examples to try in [Graph Explorer][graph-explorer])
 |:---------------|:--------|:-------|
-|[$count](#$count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
-|[$expand](#$expand)|Retrieves related resources.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
-|[$filter](#$filter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[$orderby](#$orderby)|Orders results.|[`/users?$orderby=displayName,userPrincipalName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName,userPrincipalName%20DESC&method=GET&version=v1.0)
-|[$search](#$search)| Returns results based on search criteria. Currently supported on `messages` and `person` collections.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
-|[$select](#$select)|Filters properties (columns).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[$skip](#$skip)|Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
-|[$skipToken](#$skiptoken)|Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`<br/>(not a link)
-|[$top](#$top)|Sets the page size of results. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[$count](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
+|[$expand](#expand)|Retrieves related resources.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
+|[$filter](#filter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+|[$orderby](#orderby)|Orders results.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)
+|[$search](#search)| Returns results based on search criteria. Currently supported on `messages` and `person` collections.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
+|[$select](#select)|Filters properties (columns).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
+|[$skip](#skip)|Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
+|[$skipToken](#skiptoken)|Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
+|[$top](#top)|Sets the page size of results. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
 
 These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs and support may differ significantly between the `v1.0` and `beta` endpoints. 
 
@@ -34,35 +34,36 @@ A properly encoded URL looks like this:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## $count
+## count
 
-Use `$count` as a query parameter to include a count of the total number of items in a collection alongside the page of data values returned from the Graph, as in the following example:
+Use the `$count` query parameter to include a count of the total number of items in a collection alongside the page of data values returned from Microsoft Graph. 
+
+For example, the following request will return both the `contacts` collection of the current user, and the number of items in the `contacts` collection in the `@odata.count` property.
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
-This request will return both the `contacts` collection, and the number of items in the `contacts` collection in the `@odata.count` property.
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**Note:** `$count` is not supported for [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) collections.
+>**Note:** `$count` is not supported for collections of resources that derive from [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) like collections of [user](../api-reference/v1.0/resources/user.md) or [group](../api-reference/v1.0/resources/group.md).
 
-## $expand
+## expand
 
-Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties and they can reference either a single resource or a collection of resources. For example, the mailboxes, manager, and direct reports of a user are all exposed as relationships. 
+Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships. 
 
-Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results. The maximum number of expanded objects for a request is 20.  
+Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
 
-The following example gets `user` objects, each with up to 20 `directReport` objects in the `directReports` collection expanded:
+The following example gets root drive information along with the top level child items in a drive:
 
 ```http
-GET https://graph.microsoft.com/beta/users?$expand=directReports
+GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
 
-[Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=users?$expand=directReports&method=GET&version=beta)
+[Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example retrieves the root drive information and the top level child items in a drive. This example also uses a [`$select`](#select) statement to limit the properties returned for the expanded child items to the `id` and `name` properties.
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select) statement to limit the properties returned for the expanded child items to the `id` and `name` properties.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -70,11 +71,15 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
 
-> **Note:** Not all relationships support the $expand query parameter. You cannot use `$expand` on relationships that span multiple services. For example you cannot expand messages (`$expand=messages`) on a user resource because `user` is sourced from Azure Active Directory while `message` is sourced from Microsoft Outlook. Even relationships sourced from the same underlying service as the resource may not be supported. For example, user and group photos cannot be expanded. You can check the Microsoft Graph metadata to help understand which relationships do not support `$exapnd`; for more information, see [Determining support for query parameters](#determining-support-for-query-parameters).
+> **Note:** Not all relationships and resources support the `$expand` query parameter. For example, you can expand the `directReports`, `manager`, and `memberOf` relationships on a user, but you cannot expand its `events`, `messages`, or `photo` relationships. Not all resources or relationships support using `$select` on expanded items. 
+> 
+> With Azure AD resources that derive from [directoryObject](../api-reference/v1.0/resources/directoryobject.md), like [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md), `$expand` is only supported for `beta` and  typically returns a maximum of 20 items for the expanded relationship.
 
-## $filter
+## filter
 
-`$filter` can be used to retrieve just a subset of a collection. For example, to find users whose display name starts with `J`, use `startswith`.
+Use the `$filter` query parameter to retrieve just a subset of a collection. 
+
+For example, to find users whose display name starts with the letter 'J', use `startswith`.
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
@@ -82,22 +87,22 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
 
-`$filter` has a very rich and expressive syntax with many built-in operators. Logical operators include equals (`eq`), not equals (`ne`), greater than (`gt`), greater than or equals (`gte`), and (`and`), or (`or`), not (`not`) etc. Arithmetic operators include add (`add`), subtract (`sub`), etc. String operators include contains (`contains`), starts with (`startswith`), etc. Lambda operators include any (`any`) and all (`all`). For additional details on `$filter` syntax, see the [OData protocol][odata-filter].
+Support for OData `$filter` operators varies across Microsoft Graph APIs. The following logical operators are generally supported: equals (`eq`), not equals (`ne`), greater than (`gt`), greater than or equals (`ge`), less than (`lt`), less than or equals (`le`), and (`and`), or (`or`), and not (`not`). The `startswith` string operator is often supported. The `any` lambda operator is supported for some APIs. For some  usage examples, see the table below. For additional details on `$filter` syntax, see the [OData protocol][odata-filter].  
 
 The following table shows some examples using the `$filter` query parameter.
 
 |Description|Example (click examples to try in [Graph Explorer][graph-explorer])|
 |:--------|:-------|
-| Get all of the signed-in user's events that start after 7/1/2017. | [`/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'%26$count=true&method=GET&version=v1.0) |
-| Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jimaco44@msn.com'&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'jimaco44@msn.com'%26$count=true&method=GET&version=v1.0) |
+| Get all of the signed-in user's events that start after 7/1/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
+| Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | Get all emails received by the signed-in user in April 2017 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | Get all unread mails in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
 | List all Office 365 groups in an organization | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 
-## $orderby
+## orderby
 
-To specify the sort order of the items returned from Microsoft Graph, use the `$orderby` query parameter.
+Use the `$orderby` query parameter to specify the sort order of the items returned from Microsoft Graph.
 
 For example, the following request returns the users in the organization ordered by their display name:
 
@@ -115,13 +120,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space, for example, `?$orderby=name%20desc`.
 
- > **Note:** If you query on the [`user`](../api-reference/v1.0/resources/user.md) resource, `$orderby` can't be combined with filter expressions.
+With some APIs, you can order results on multiple properties. For example, the following request orders the messages in the user's Inbox first by the name of the person who sent it in descending order (Z to A) and then by subject in ascending order (default).
 
-## $search
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
+```
+[Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-To restrict the results of a request that match a search criterion, use the `$search` query parameter.
 
-> **Note:** You can currently **only** search [message](../api-reference/v1.0/resources/message) and [person](../api-reference/beta/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
+ > **Note:** With Azure AD resources that derive from [directoryObject](../api-reference/v1.0/resources/directoryobject.md), like [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md), you cannot combine `$orderby` with `$filter` expressions. 
+
+## search
+
+Use the `$search` query parameter to restrict the results of a request to match a search criterion.
+
+> **Note:** You can currently search **only** [message](../api-reference/v1.0/resources/message) and [person](../api-reference/beta/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
 
 ### Using $search on `message`
 
@@ -156,7 +169,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search=tiler                //
 GET https://graph.microsoft.com/v1.0/me/messages?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-## $select
+## select
 
 Use the `$select` query parameter to return a set of properties different than the default set for an individual resource or a collection of resources. With $select you can specify a subset or a superset of the default properties.
 
@@ -168,12 +181,13 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
 
- > **Important:** In general, we recommend that you use $select to limit the properties returned by a query to those needed by your app. This is especially true of queries that may potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+> **Important:** In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that may potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+>
+> In `v1.0`, some Azure AD resources that derive from [directoryObject](../api-reference/v1.0/resources/directoryobject.md), like [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
 
+## skip
 
-## $skip
-
-To set the number of items to skip at the start of a collection, use the `$skip` query parameter.
+Use the `$skip` query parameter to set the number of items to skip at the start of a collection.
 For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
 
 ```http
@@ -181,37 +195,18 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
 
-> **Note:** Some Microsoft Graph APIs, like Outlook Mail and Calendars (`message`, `event`, and, `calendar`), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. For an example, see [$top](#$top).
+> **Note:** Some Microsoft Graph APIs, like Outlook Mail and Calendars (`message`, `event`, and, `calendar`), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
 
-## $skipToken
+## skipToken
 
-Some requests return multiple pages of data either due to server-side paging or due to the use of the `top` parameter to limit the page size in a request. Many Microsoft Graph APIs use the `skipToken` parameter to reference subsequent pages of the result. This parameter is returned in the URL provided in the `@odata.nextLink` property in the response. 
+Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result. The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
 
-For example, the following requests all of the users in an organization ordered by the `displayName` property:
 
-```html
-https://graph.microsoft.com/v1.0/users?$orderby=displayName
-```
+## top
 
-If the result spans multiple pages, Microsoft Graph will return an `odata:nextLink` property similar to the following along with the first page of users.
+Use the `$top` query parameter to specify the page size of the result set. 
 
-```json
-"@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27"
-```
-
-You can retrieve the next page of results by sending the URL value (which includes the `skipToken` parameter). 
-
-```html
-https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
-```
-
-Microsoft Graph will continue to return an `odata:nextLink` property for each request until all pages have been read. For more information, see [Get data in pages](./paging.md). 
-
-## $top
-
-To specify the page size of the result set, use the `$top` query parameter. 
-
-If there are more items remaining in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. Typically this URL contains a `$skipToken` parameter that references the next page of results; however, some Microsoft Graph APIs, return a URL that contains a `$skip` parameter to index into the result set for the next page of results. For more information, see [Get data in pages](./paging.md). 
+If there are more items remaining in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 
 For example, the following request returns the first five messages in the user's mailbox:
 
@@ -219,13 +214,8 @@ For example, the following request returns the first five messages in the user's
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-Assuming that the signed-in user has more than five messages in their inbox, the response body will also contain the following `@odata.nextLink` parameter:
-
-```json
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=5&$skip=5"
-```
-
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=5&method=GET&version=v1.0)
+
 
 ## Error handling for query parameters
 
@@ -249,62 +239,6 @@ https://graph.microsoft.com/beta/me?$expand=photo
 ```
 
 However, it is important to note that query parameters specified in a request may fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. 
-
-## Determining support for query parameters
-
-Not all query parameters are supported across all Microsoft Graph resources. You can check the Microsoft Graph [v1.0](https://graph.microsoft.com/v1.0/$metadata) or [beta](https://graph.microsoft.com/beta/$metadata) metadata endpoints to help determine whether specific query parameters are supported on some resources and relationships. Query parameter support is listed in annotations on the metadata. Be aware that, even if support for a specific query parameter on a resource or a relationship is indicated, there may still be limitations in the way that it is supported and in the way that it can be used in combination with other query parameters. Also, be aware that metadata annotations list whether support is provided on a resource or a relationship, but they do not specify which properties of the resource (or target resource in a relationship) are supported.
-
-Here is an example of an annotation for the `malwareRiskEvent` resource on the beta endpoint. (`malwareRiskEvent` is one of the risk events exposed by the  [Azure AD Identity Protection Service](../api-reference/beta/resources/identityprotection_root.md)).
-
-```xml
-<Annotations Target="microsoft.graph.malwareRiskEvent">
-  <Annotation Term="Org.OData.Capabilities.V1.ExpandRestrictions">
-    <Record>
-      <PropertyValue Property="Expandable" Bool="true"/>
-    </Record>
-  </Annotation>
-  <Annotation Term="Org.OData.Capabilities.V1.NavigationRestrictions">
-    <Record>
-      <PropertyValue Property="Referenceable" Bool="true"/>
-    </Record>
-  </Annotation>
-  <Annotation Term="Org.OData.Capabilities.V1.SelectRestrictions">
-    <Record>
-      <PropertyValue Property="Selectable" Bool="true"/>
-    </Record>
-  </Annotation>
-  <Annotation Term="Org.OData.Capabilities.V1.CountRestrictions">
-    <Record>
-      <PropertyValue Property="Countable" Bool="true"/>
-    </Record>
-  </Annotation>
-  <Annotation Term="Org.OData.Capabilities.V1.FilterRestrictions">
-    <Record>
-      <PropertyValue Property="Filterable" Bool="true"/>
-    </Record>
-  </Annotation>
-  <Annotation Term="Org.OData.Capabilities.V1.TopSupported" Bool="true"/>
-  <Annotation Term="Org.OData.Capabilities.V1.SkipSupported" Bool="true"/>
-</Annotations>
-```
-
-Some relationships and resources only document unsupported query parameters. For example, here are the annotations for the user/messages relationship. The `$expand` parameter is not supported, but all other query parameters are.
-
-```xml
-<Annotations Target="microsoft.graph.user/messages">
-  <Annotation Term="Org.OData.Capabilities.V1.ChangeTracking">
-    <Record>
-      <PropertyValue Property="Supported" Bool="false"/>
-    </Record>
-  </Annotation>
-  <Annotation Term="Org.OData.Capabilities.V1.ExpandRestrictions">
-    <Record>
-      <PropertyValue Property="Expandable" Bool="false"/>
-    </Record>
-  </Annotation>
-</Annotations>
-
-```
 
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
