@@ -7,7 +7,7 @@ List the effective permissions of on a [DriveItem](../resources/driveitem.md).
 The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](item_get.md) or a collection of DriveItems.
 You must access the permissions property directly.
 
-## Access to Permissions
+## Access to permissions
 
 The permissions collection includes potentially sensitive information and may not be available for every caller.
 
@@ -43,7 +43,7 @@ GET /groups/{group-id}/drive/items/{item-id}/permissions
 
 ## Optional query parameters
 
-This method supports `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request body
 Do not supply a request body for this method.
@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-See [Get permission](permission_get.md) for more details on retrieving a single permission resource.
+See [Get permission](permission_get.md) for more details about retrieving a single permission resource.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
