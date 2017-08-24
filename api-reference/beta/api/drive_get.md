@@ -43,7 +43,7 @@ GET /groups/{idOrUserPrincipalName}/drive
 
 ## Optional query parameters
 
-This method supports `$expand` and `$select`[OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand` and `$select`[OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request body
 
