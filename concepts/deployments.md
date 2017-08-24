@@ -1,7 +1,7 @@
 # National cloud deployments
 
 
-Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services, which are confined within the geographic borders of specific countries and operated by local personnel. 
+Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services, which are confined within the geographic borders of specific countries and operated by local personnel. To learn more, see [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud).
 
 Current national clouds include:
 
@@ -9,7 +9,7 @@ Current national clouds include:
 - Microsoft Cloud Germany
 - Azure and Office 365 operated by 21Vianet in China
 
-This article provides information about the different national cloud deployments of Microsoft Graph and the capabilities within each deployment that are available to developers. For information about Microsoft national clouds, see [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud).
+This article provides information about the different national cloud deployments of Microsoft Graph and the capabilities within each deployment that are available to developers. 
 
 ## Microsoft Graph and Microsoft Graph Explorer service root endpoints
 
