@@ -90,7 +90,7 @@ Content-length: 579
 
 ## Remarks
 
-Most users will only have a single Drive resource. Groups and some users may have multiple drive available.
+Most users will only have a single Drive resource. Groups and some users might have multiple drives available.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
