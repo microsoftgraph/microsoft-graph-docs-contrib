@@ -41,7 +41,9 @@ GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
+This method support the `$select` [OData Query Parameter](../../../concepts/query_parameters.md) to customize the response.
+
 
 ## Request body
 Do not supply a request body for this method.
