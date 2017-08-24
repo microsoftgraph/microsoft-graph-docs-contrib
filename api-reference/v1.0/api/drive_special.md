@@ -78,7 +78,7 @@ Content-type: application/json
 
 ## Remarks
 
-To request the children of a special folder, you can request the `children` collection or use the [$expand] ../../../concepts/query_parameters.md) option to expand the children collection.
+To request the children of a special folder, you can request the `children` collection or use the [$expand](../../../concepts/query_parameters.md) option to expand the children collection.
 
 
 <!-- {
