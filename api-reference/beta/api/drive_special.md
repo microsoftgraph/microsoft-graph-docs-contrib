@@ -1,4 +1,4 @@
- # Get a special folder by name
+# Get a special folder by name
 
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -31,7 +31,7 @@ GET /me/drive/special/{name}
 ```
 ## Optional query parameters
 
-This method supports the `$expand` and `$select` [OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request headers
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 ## Remarks
 
-To request the children of a special folder, you can request the `children` collection or use the `$expand` [OData Query Parameter](../../../concepts/query_parameters.md) to customize the response. 
+To request the children of a special folder, you can request the `children` collection or use the `$expand` [OData query parameter](../../../concepts/query_parameters.md) to customize the response. 
 
 <!-- {
   "type": "#page.annotation",
