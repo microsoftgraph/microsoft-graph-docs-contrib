@@ -24,8 +24,7 @@ GET /sites/{site-id}/drives
 ```
 
 ## Optional query parameters
-
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports `$select`, `$skipToken`, `$top` and `$orderby` [OData Query Parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request body
 
