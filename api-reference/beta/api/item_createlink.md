@@ -1,6 +1,6 @@
 # Create a sharing link for a DriveItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
 

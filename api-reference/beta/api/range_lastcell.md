@@ -1,6 +1,6 @@
 # Range: LastCell
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
 ## Prerequisites

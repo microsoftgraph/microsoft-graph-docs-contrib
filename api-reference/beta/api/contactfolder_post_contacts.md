@@ -1,6 +1,6 @@
 # Create Contact
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 ## Prerequisites

@@ -1,6 +1,6 @@
 # List thumbnails for a DriveItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
@@ -41,7 +41,9 @@ GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
+This method support the `$select` [OData query parameter](../../../concepts/query_parameters.md) to customize the response.
+
 
 ## Request body
 Do not supply a request body for this method.

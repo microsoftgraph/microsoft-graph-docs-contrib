@@ -1,6 +1,6 @@
 # List attachments
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a list of [attachment](../resources/attachment.md) objects attached to an Outlook task.
 ## Prerequisites

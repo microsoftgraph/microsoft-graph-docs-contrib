@@ -1,6 +1,6 @@
 # Range: LastRow
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 ## Prerequisites

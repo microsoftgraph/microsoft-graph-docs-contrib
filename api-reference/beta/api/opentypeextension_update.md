@@ -1,6 +1,6 @@
 # Update open extension
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) with the properties in the request body:
 

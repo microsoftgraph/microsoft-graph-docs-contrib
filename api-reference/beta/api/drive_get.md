@@ -1,10 +1,8 @@
 # Get Drive
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. 
-A Drive is the top-level container for a file system.
-Graph API allows you to access the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.
+Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. A Drive is the top-level container for a file system. The Microsoft Graph API allows you to access the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.
 
 ## Prerequisites
 
@@ -45,7 +43,7 @@ GET /groups/{idOrUserPrincipalName}/drive
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the `$expand` and `$select`[OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request body
 

@@ -1,6 +1,6 @@
 # Search for a DriveItem within a drive
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Search the hierarchy of items for items matching a query. 
 You can search within a folder hierarhcy, a whole drive, or files shared with the current user.
@@ -26,7 +26,8 @@ GET /groups/{group-id}/drive/root/search(q='{search-text}')
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request body
 Do not supply a request body for this method.
