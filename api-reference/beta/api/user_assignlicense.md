@@ -1,6 +1,6 @@
 # assignLicense
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
