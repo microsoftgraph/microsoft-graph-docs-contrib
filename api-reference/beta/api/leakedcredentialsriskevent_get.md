@@ -1,6 +1,6 @@
 # Get leakedCredentialsRiskEvent
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of a leakedcredentialsriskevent object.
 ## Prerequisites

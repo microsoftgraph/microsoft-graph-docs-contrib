@@ -1,6 +1,6 @@
 # Get OneDriveActivity report
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the reports of OneDrive User Activity. The response will be a CSV file in a binary stream.
 

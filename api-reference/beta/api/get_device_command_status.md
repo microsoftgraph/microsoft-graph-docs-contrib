@@ -1,6 +1,6 @@
 # Get device command status
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the status of a command on a device. For the  full list of status codes, see [List of actionStatus](#list-of-actionstatus).
 

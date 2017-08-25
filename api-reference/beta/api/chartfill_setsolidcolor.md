@@ -1,6 +1,6 @@
 # ChartFill: setSolidColor
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Sets the fill formatting of a chart element to a uniform color.
 ## Prerequisites

@@ -1,6 +1,6 @@
 # Get singleValueLegacyExtendedProperty
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get resource instances that contain a single-value extended property by using `$expand` or `$filter`.
 

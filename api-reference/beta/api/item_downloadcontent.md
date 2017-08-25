@@ -1,6 +1,6 @@
 # Download the contents of a DriveItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Download the contents for a driveItem.
 Only driveItem with the **file** property can be downloaded.

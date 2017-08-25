@@ -1,6 +1,6 @@
 # Table: convertToRange
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Converts the table into a normal range of cells. All data is preserved.
 ## Prerequisites
