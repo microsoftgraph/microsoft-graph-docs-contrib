@@ -137,14 +137,14 @@ Content-length: 248
   "bodyPreview":"@Dana Swope<mailto:danas@contoso.onmicrosoft.com>, @Randi Welch, forgot to mention, I will be away this weekend. I can start on Monday though.",
   "sender":{
     "emailAddress":{
-      "name":"Fanny Downs",
-      "address":"fannyd@contoso.onmicrosoft.com"
+      "name":"Samantha Booth",
+      "address":"samanthab@contoso.onmicrosoft.com"
     }
   },
   "from":{
     "emailAddress":{
-      "name":"Fanny Downs",
-      "address":"fannyd@contoso.onmicrosoft.com"
+      "name":"Samantha Booth",
+      "address":"samanthab@contoso.onmicrosoft.com"
     }
   },
   "toRecipients":[
@@ -180,8 +180,8 @@ Content-length: 248
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
-        "name":"Fanny Downs",
-        "address":"fannyd@contoso.onmicrosoft.com"
+        "name":"Samantha Booth",
+        "address":"samanthab@contoso.onmicrosoft.com"
       },
       "createdDateTime":"2016-07-21T07:40:20.152Z",
       "serverCreatedDateTime":"2016-07-21T07:40:20.152Z",
@@ -198,8 +198,8 @@ Content-length: 248
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
-        "name":"Fanny Downs",
-        "address":"fannyd@contoso.onmicrosoft.com"
+        "name":"Samantha Booth",
+        "address":"samanthab@contoso.onmicrosoft.com"
       },
       "createdDateTime":"2016-07-21T07:40:20.158Z",
       "serverCreatedDateTime":"2016-07-21T07:40:20.158Z",

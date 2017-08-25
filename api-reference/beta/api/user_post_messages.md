@@ -122,8 +122,8 @@ Content-length: 248
     "toRecipients":[
       {
           "emailAddress":{
-              "name":"Fanny Downs",
-              "address":"fannyd@contoso.onmicrosoft.com"
+              "name":"Samantha Booth",
+              "address":"samanthab@contoso.onmicrosoft.com"
           }
       }
     ],
@@ -171,8 +171,8 @@ Content-length: 748
   "toRecipients":[
     {
       "emailAddress":{
-        "name":"Fanny Downs",
-        "address":"fannyd@contoso.onmicrosoft.com"
+        "name":"Samantha Booth",
+        "address":"samanthab@contoso.onmicrosoft.com"
       }
     }
   ],

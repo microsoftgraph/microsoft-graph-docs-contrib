@@ -117,8 +117,8 @@ Content-length: 1932
                         "time":"0001-01-01T00:00:00Z"
                     },
                     "emailAddress":{
-                        "name":"Fanny Downs",
-                        "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                        "name":"Samantha Booth",
+                        "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
                     }
                 },
                 {
@@ -135,8 +135,8 @@ Content-length: 1932
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
                 }
             }
         }
