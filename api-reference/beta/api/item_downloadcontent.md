@@ -1,6 +1,6 @@
 # Download the contents of a DriveItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Download the contents for a driveItem.
 Only driveItem with the **file** property can be downloaded.
@@ -30,7 +30,6 @@ GET /groups/{group-id}/drive/items/{item-id}/content
 | Name          | Value  | Description                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
-
 
 ## Request body
 Do not supply a request body for this method.

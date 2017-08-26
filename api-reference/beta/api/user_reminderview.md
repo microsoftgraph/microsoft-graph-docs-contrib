@@ -1,6 +1,6 @@
 # user: reminderView
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Return a list of calendar reminders within the specified start and end times. 
 
@@ -21,13 +21,12 @@ In the request URL, provide the following function parameters with values.
 |startDateTime|String|The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".|
 
-
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type   | application/json |
-| Prefer | {Time-zone}. Optional, UTC assumed if absent.| 
+| Prefer | {Time-zone}. Optional, UTC assumed if absent.|
 
 ## Request body
 Do not supply a request body for this method.

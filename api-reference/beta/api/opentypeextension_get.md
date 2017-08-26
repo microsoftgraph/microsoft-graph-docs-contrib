@@ -1,6 +1,6 @@
 # Get open extension
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) identified by name or fully qualified name.
 
@@ -23,7 +23,6 @@ One of the following **permissions** is required to execute this API, depending 
 | [Group event](../resources/event.md) | _Group.Read.All_ | [Group post](../resources/post.md) | _Group.Read.All_ |
 | [Message](../resources/message.md) | _Mail.Read_ | [Organization](../resources/organization.md) | _Directory.Read.All_ |
 | [Personal contact](../resources/contact.md) | _Contacts.Read_ | [User](../resources/user.md) | _User.Read.All_ |
-
 
 ## HTTP request
 
@@ -103,7 +102,6 @@ instances or collections supports getting open extensions from them in a similar
 |Id|string|Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.|
 |extensionId|string|Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.|
 
-
 ## Optional query parameters
 
 Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
@@ -111,15 +109,13 @@ Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.a
 |**Name**|**Value**|**Description**|
 |:---------------|:--------|:-------|
 |$filter|string|Returns an extension with its **id** matching the `extensionId` parameter value.|
-|$filter with **any** operator|string|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.| 
+|$filter with **any** operator|string|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|
 |$expand|string|Expands a resource instance to include an extension. |
-
 
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer {token}. Required. |
-
 
 ## Request body
 Do not supply a request body for this method.

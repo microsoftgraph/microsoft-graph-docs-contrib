@@ -1,6 +1,6 @@
 # Delete open extension
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Delete an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) from the specified instance of a resource. 
 
@@ -16,7 +16,7 @@ deleting the extension from:
 | [group event](../resources/event.md) | _Group.ReadWrite.All_ | [group post](../resources/post.md) | _Group.ReadWrite.All_ |
 | [message](../resources/message.md) | _Mail.ReadWrite_ | [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ |
 | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ | [user](../resources/user.md) | _Directory.AccessAsUser.All_ |
- 
+
 ## HTTP request
 
 In the request, identify the resource instance, use the **extensions** 
@@ -46,12 +46,10 @@ All other syntax that allows you to identify these resource instances supports d
 |id|string|A unique identifier for an instance in the corresponding collection. Required.|
 |extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
-
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
 | Authorization | Bearer {token}. Required. |
-
 
 ## Request body
 Do not supply a request body for this method.

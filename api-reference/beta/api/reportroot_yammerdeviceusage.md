@@ -1,6 +1,6 @@
 # Get YammerDeviceUsage report
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the reports of Yammer Client Activity. The response will be a CSV file in a binary stream.
 
@@ -113,7 +113,7 @@ Data as of,User name,Display name,User state,State change date (UTC),Last activi
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Detail' ,date='2017-02-02')/content
+GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Detail',date='2017-02-02')/content
 GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Distribution',period='D7')/content
 GET https://graph.microsoft.com/beta/reports/YammerDeviceUsage(view='Users',period='D7')/content
 ```

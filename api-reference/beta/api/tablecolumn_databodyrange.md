@@ -1,6 +1,6 @@
 # TableColumn: DataBodyRange
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets the range object associated with the data body of the column.
 ## Prerequisites
@@ -19,7 +19,6 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyR
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 

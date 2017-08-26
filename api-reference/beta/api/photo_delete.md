@@ -1,6 +1,6 @@
 # Delete photo
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Delete a photo.
 ## Prerequisites
@@ -21,7 +21,6 @@ DELETE /drive/root/createdByUser/photo
 |:---------------|:--------|:----------|
 | if-match  | string  | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.|
 | Authorization  | string  | Bearer {token}. Required. |
-
 
 ## Request body
 Do not supply a request body for this method.

@@ -1,6 +1,6 @@
 # List assignments
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects that are associated with the role. Each [privilegedRoleAssignment](../resources/privilegedroleassignment.md) represents a role assignment to a user.
 ## Prerequisites

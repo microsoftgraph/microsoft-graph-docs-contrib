@@ -1,6 +1,6 @@
 # Get thumbnailSet
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of a [thumbnailSet](../resources/thumbnailset.md) object.
 
@@ -25,7 +25,6 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-
 
 ## Request body
 Do not supply a request body for this method.

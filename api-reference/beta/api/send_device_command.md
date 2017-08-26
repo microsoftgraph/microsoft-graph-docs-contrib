@@ -1,6 +1,6 @@
 # Send device command
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the 
 *type*, *payload*, *packageFamilyName*, and *appServiceName* parameters.
@@ -24,7 +24,6 @@ POST me/devices/{id}/commands
 |:----|:------|
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
-
 
 ## Request body
 
@@ -91,7 +90,7 @@ POST me/devices/{id}/commands
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 
-{ "Type" : "LaunchUri", "Payload" : {"uri":"http://bing.com"}}
+{ "type" : "LaunchUri", "payload" : {"uri":"http://bing.com"}}
 
 ```
 
@@ -145,7 +144,7 @@ POST me/devices/{id}/commands
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 
-{ "Type" : "AppService", "AppServiceName" : "com.microsoft.test.cdppingpongservice", "PackageFamilyName" : "5085ShawnHenry.RomanTestApp_jsjw7knzsgcce", "Payload" : {"Type":"Toast","Title":"Hello","Subtitle":"World!"} }
+{ "type" : "AppService", "appServiceName" : "com.microsoft.test.cdppingpongservice", "packageFamilyName" : "5085ShawnHenry.RomanTestApp_jsjw7knzsgcce", "payload" : {"Type":"Toast","Title":"Hello","Subtitle":"World!"} }
 
 ```
 

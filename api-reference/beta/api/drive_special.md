@@ -1,23 +1,18 @@
 # Get a special folder by name
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use the special collection to access a special folder by name.
 
-Special folders provide simple aliases to access well-known folders in OneDrive
-without the need to look up the folder by path (which would require localization),
-or reference the folder with an ID. If a special folder is renamed or moved
-to another location within the drive, this syntax will continue to find that
-folder.
+Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization),
+or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
 
-Special folders are automatically created the first time an application attempts
-to write to one, if it doesn't already exist. If a user deletes one, it is
-recreated when written to again.
+Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.
 
-**Note:**  If you have read-only permissions and request a special folder that
-doesn't exist, you'll receive a `403 Forbidden` error.
+>**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.
 
 ## Prerequisites
+
 One of the following **scopes** is required to execute this API:
 
 * Files.Read
@@ -29,13 +24,14 @@ One of the following **scopes** is required to execute this API:
 * Sites.ReadWrite.All
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/special/{name}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
-to help customize the response.
+
+This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request headers
 
@@ -43,18 +39,18 @@ to help customize the response.
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer {token}. Required. |
 
-
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md)
-object in the response body.
+If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
 ## Example
 
 ##### Request
+
 Here is an example of the request for the user's drives.
 
 <!-- {
@@ -66,6 +62,7 @@ GET https://graph.microsoft.com/beta/me/drive/special/{name}
 ```
 
 ##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -87,10 +84,7 @@ Content-type: application/json
 
 ## Remarks
 
-To request the children of a special folder, you can request the `children`
-collection or use the [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) option
-to expand the children collection.
-
+To request the children of a special folder, you can request the `children` collection or use the `$expand` [OData query parameter](../../../concepts/query_parameters.md) to customize the response. 
 
 <!-- {
   "type": "#page.annotation",

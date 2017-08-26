@@ -1,6 +1,6 @@
 # Create multi-value extended property
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create one or more multi-value extended properties in a new or existing instance of a resource. 
 
@@ -143,7 +143,6 @@ PATCH /groups/{id}/events/{id}
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| An array of one or more multi-valued extended properties. |
 |id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
-
 
 ## Request headers
 | Name       | Value |

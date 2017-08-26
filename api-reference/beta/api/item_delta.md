@@ -1,6 +1,6 @@
 # Track changes for a Drive
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 This method allows your app to track changes to a drive and its children over time.
 
@@ -50,7 +50,6 @@ In addition to the collection of DriveItems, the response will also include one 
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
-
 
 ## Example (Initial Request)
 Here is an example of how to call this API to establish your local state.
@@ -171,7 +170,6 @@ After finishing the full enumeration, compare the returned items with your local
 |:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
 | `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
-
 
 In OneDrive for Business and SharePoint, `delta` is only supported on the `root` folder, not on other folders. 
 It also will not return the following DriveItem properties:

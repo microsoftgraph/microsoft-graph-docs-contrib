@@ -1,6 +1,6 @@
 ﻿# Update applePushNotificationCertificate
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,7 +15,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-PATCH /deviceManagement/applePushNotificationCertificate/
+PATCH /deviceManagement/applePushNotificationCertificate
 ```
 
 ## Request headers
@@ -40,16 +40,13 @@ The following table shows the properties that are required when you create a [ap
 |certificate|String|Not yet documented|
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and an updated [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) object in the response body.
 
 ## Example
-
-##### Request
-
+### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate/
+PATCH https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
 Content-length: 409
 
@@ -64,8 +61,7 @@ Content-length: 409
 }
 ```
 
-##### Response
-
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK

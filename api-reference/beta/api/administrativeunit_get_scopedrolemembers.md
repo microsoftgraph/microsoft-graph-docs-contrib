@@ -1,6 +1,6 @@
 # Get a scopedRoleMember
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a specific [scopedRoleMembership](../resources/scopedrolemembership.md) resource.
 ## Prerequisites

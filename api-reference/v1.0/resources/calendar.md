@@ -19,7 +19,6 @@ A calendar which is a container for events.
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [calendar](calendar.md) | Create one or more multi-value extended properties in a new or existing calendar.  |
 |[Get calendar with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Get a calendar that contains a multi-value extended property by using `$expand`. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

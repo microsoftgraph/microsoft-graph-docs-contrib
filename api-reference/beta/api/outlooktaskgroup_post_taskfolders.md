@@ -1,6 +1,6 @@
 # Create outlookTaskFolder
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## Prerequisites
@@ -15,7 +15,6 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.

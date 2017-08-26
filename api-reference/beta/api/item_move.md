@@ -1,6 +1,6 @@
 # Move a DriveItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 This is a special case of the [Update](item_update.md) method.
@@ -29,7 +29,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
-
 
 ## Request body
 In the request body, supply the new value for the **parentReference** property.

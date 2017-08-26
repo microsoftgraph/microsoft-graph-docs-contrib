@@ -1,6 +1,6 @@
 # outlookTask: complete
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Complete an Outlook task which sets the **completedDateTime** property to the current date, 
 and the **status** property to `completed`.
@@ -29,7 +29,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
+| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
 
 ## Request body
 

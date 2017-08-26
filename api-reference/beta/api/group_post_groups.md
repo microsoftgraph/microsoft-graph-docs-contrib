@@ -1,6 +1,6 @@
 # Create group
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of three types of groups:
 
@@ -37,9 +37,9 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 
 | Type of group | **groupTypes** property |
 |:--------------|:------------------------|
-| Office 365 (aka unified group)| "Unified" | 
-| Dynamic | "DynamicMembership" | 
-| Security | Do not set. | 
+| Office 365 (aka unified group)| "Unified" |
+| Dynamic | "DynamicMembership" |
+| Security | Do not set. |
 
 Since the **group** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 

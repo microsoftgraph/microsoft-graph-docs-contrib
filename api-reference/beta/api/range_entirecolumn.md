@@ -1,6 +1,6 @@
 # Range: EntireColumn
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets an object that represents the entire column of the range.
 ## Prerequisites
@@ -20,7 +20,6 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 

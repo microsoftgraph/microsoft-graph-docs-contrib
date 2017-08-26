@@ -1,6 +1,6 @@
 # Update open extension
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) with the properties in the request body:
 
@@ -22,7 +22,7 @@ the extension was created in:
 | [group event](../resources/event.md) | _Group.ReadWrite.All_ | [group post](../resources/post.md) | _Group.ReadWrite.All_ |
 | [message](../resources/message.md) | _Mail.ReadWrite_ | [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ |
 | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ | [user](../resources/user.md) | _Directory.ReadWrite.All_ |
- 
+
 ## HTTP request
 
 In the request, identify the resource instance, use the **extensions** 
@@ -53,7 +53,6 @@ See the [Request body](#request-body) section about including in the request bod
 |_URL parameters_|
 |id|string|A unique identifier for an instance of the corresponding collection. Required.|
 |extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
-
 
 ## Request headers
 | Name       | Value |

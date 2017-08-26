@@ -1,6 +1,6 @@
 # Update outlooktask
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Change writable properties of an Outlook task.
 
@@ -24,8 +24,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tas
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
-
+| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will 

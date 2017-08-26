@@ -1,6 +1,6 @@
 # user: findMeetingTimes
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Find meeting time suggestions based on organizer and attendee availability, and time or location constraints specified as parameters.
 
@@ -21,7 +21,6 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Prefer: outlook.timezone | A string representing a specific time zone for the response, for example, "Pacific Standard Time". Optional. UTC is used if this header is not specified. |
-
 
 ## Request body
 All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body. 

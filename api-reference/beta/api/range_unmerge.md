@@ -1,6 +1,6 @@
 # Range: unmerge
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Unmerge the range cells into separate cells.
 ## Prerequisites
@@ -20,7 +20,6 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 

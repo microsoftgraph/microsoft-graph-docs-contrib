@@ -1,6 +1,6 @@
 # Create outlookTask
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.
 
@@ -22,8 +22,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.| 
-
+| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
 
 ## Request body
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.

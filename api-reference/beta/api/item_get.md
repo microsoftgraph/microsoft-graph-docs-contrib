@@ -1,6 +1,6 @@
 # Get a DriveItem resource
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
 
@@ -24,14 +24,14 @@ GET /groups/{group-id}/drive/items/{item-id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
+This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request headers
 
 | Name          | Value  | Description                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
-
 
 ## Request body
 Do not supply a request body for this method.

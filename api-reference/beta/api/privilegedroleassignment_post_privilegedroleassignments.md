@@ -1,6 +1,6 @@
 # Create privilegedRoleAssignment
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## Prerequisites
@@ -16,7 +16,6 @@ POST /privilegedRoleAssignments
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.

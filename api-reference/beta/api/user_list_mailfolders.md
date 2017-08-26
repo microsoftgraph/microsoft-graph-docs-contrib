@@ -1,6 +1,6 @@
 # List mailFolders
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get all the mail folders in the signed-in user's mailbox.
 
@@ -18,7 +18,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  | 
+| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.

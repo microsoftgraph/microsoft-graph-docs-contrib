@@ -1,6 +1,6 @@
 # Get schemaExtension
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the properties of the specified [schemaExtension](../resources/schemaextension.md) definition.
 
@@ -19,7 +19,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Content-Type   | application/json | 
+| Content-Type   | application/json |
 
 ## Request body
 Do not supply a request body for this method.

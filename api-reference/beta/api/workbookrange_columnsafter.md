@@ -1,6 +1,6 @@
 # workbookRange: columnsAfter
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets a certain number of columns to the right of the given range.
 
@@ -24,7 +24,6 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |count|Int32|The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1|
-
 
 ## Request body
 

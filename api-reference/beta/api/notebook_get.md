@@ -1,6 +1,6 @@
 # Get notebook
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object.
 ## Prerequisites
@@ -23,7 +23,7 @@ Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Accept | string | `application/json` | 
+| Accept | string | `application/json` |
 
 ## Request body
 Do not supply a request body for this method.

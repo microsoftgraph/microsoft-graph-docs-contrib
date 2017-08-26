@@ -1,6 +1,6 @@
 # Hashes resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **Hashes** resource groups available hashes into a single structure for an item.
 
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource.
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
 | **crc32Hash**    | String | The CRC32 value of the file (if available). Read-only.            |
-| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. | 
+| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
 **Note:** In some cases hash values may not be available. 
 If this is the case, the hash values on an item will be updated after the item is downloaded.

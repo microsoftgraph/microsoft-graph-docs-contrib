@@ -1,6 +1,6 @@
 # TableRowCollection: ItemAt
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets a row based on its position in the collection.
 ## Prerequisites
@@ -19,7 +19,6 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

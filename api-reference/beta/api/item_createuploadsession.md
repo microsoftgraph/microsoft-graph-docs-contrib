@@ -1,6 +1,6 @@
 # Upload large files with an upload session
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create an upload session to allow your app to upload files up to the maximum file size.
 An upload session allows your app to upload ranges of the file in sequental API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
@@ -51,7 +51,6 @@ For example, to control the behavior if the filename is already taken, you can s
 | Name       | Value | Description                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` errr response is returned. |
-
 
 ### Response 
 

@@ -1,6 +1,6 @@
 # Create attachment
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).
 ## Prerequisites
@@ -18,7 +18,6 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type | A string that represents the type of data in the body of an entity. Required. |
-
 
 ## Request body
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.

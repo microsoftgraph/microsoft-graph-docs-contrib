@@ -1,6 +1,6 @@
 # Update permission
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update the properties of a permission by patching the resource.
 
@@ -27,7 +27,6 @@ PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 | Name          | Type   | Description                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
-
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated.
