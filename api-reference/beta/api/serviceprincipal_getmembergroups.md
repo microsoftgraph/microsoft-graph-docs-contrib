@@ -1,6 +1,6 @@
 # servicePrincipal: getMemberGroups
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the list of groups that this service principal is a member of.  The check is transitive.
 
@@ -26,6 +26,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean|Set to **false**. Returning only security-enabled groups is supported for users only.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
 ## Example

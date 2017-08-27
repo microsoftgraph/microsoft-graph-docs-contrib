@@ -1,6 +1,6 @@
 # Create MailFolder
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new child mailfolder.
 
@@ -32,6 +32,7 @@ In the request body, provide a JSON object with the following parameters. **disp
 |displayName|String|The display name of the new folder.|
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example

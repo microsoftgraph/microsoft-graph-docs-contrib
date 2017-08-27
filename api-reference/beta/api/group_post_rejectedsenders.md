@@ -1,6 +1,6 @@
 # Create rejectedSender
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Add a new user or group to the rejectedSender list.
 
@@ -22,8 +22,8 @@ POST /groups/{id}/rejectedSenders/$ref
 ## Request body
 In the request body, supply the id of a user or group object.
 
-
 ## Response
+
 This method returns `204, No Content` response code and no response body.
 
 ## Example

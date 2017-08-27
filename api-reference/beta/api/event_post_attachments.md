@@ -1,6 +1,6 @@
 # Add attachment
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to add an [attachment](../resources/attachment.md) to an event. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
@@ -42,8 +42,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## Request body
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.
 
 ## Example (file attachment)

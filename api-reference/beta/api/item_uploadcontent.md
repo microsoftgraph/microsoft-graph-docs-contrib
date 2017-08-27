@@ -1,6 +1,6 @@
 # Upload or replace the contents of a driveItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
 This method only supports files up to 4MB in size.
@@ -28,6 +28,7 @@ The contents of the request body should be the binary stream of the file to be
 uploaded.
 
 ## Response
+
 If successful, this method returns a [driveItem](../resources/driveitem.md) object
 in the response body for the newly created file.
 
@@ -44,9 +45,10 @@ Content-type: text/plain
 
 The contents of the file goes here.
 ```
+##### Response
 
-## Response
-Here is an example of the response.
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

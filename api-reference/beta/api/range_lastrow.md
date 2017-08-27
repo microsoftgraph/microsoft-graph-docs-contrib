@@ -1,6 +1,6 @@
 # Range: LastRow
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 ## Prerequisites
@@ -21,10 +21,10 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastRow
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

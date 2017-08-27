@@ -1,6 +1,6 @@
 # TableRowCollection: add
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Adds a new row to the table.
 ## Prerequisites
@@ -20,7 +20,6 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -30,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |values|(boolean or string or number)|Optional. A 2-dimensional array of unformatted values of the table row.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
 ## Example

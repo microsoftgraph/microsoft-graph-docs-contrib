@@ -1,13 +1,13 @@
 # List attachments
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
 * Group.Read.All
-* Group.Readwrite.All
+* Group.ReadWrite.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +32,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.
 ## Example
 ##### Request

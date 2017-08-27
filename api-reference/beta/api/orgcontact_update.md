@@ -1,6 +1,6 @@
 # Update orgcontact
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update the properties of orgcontact object.
 ## Prerequisites
@@ -40,6 +40,7 @@ In the request body, supply the values for relevant fields that should be update
 |businessPhones|String||
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [orgContact](../resources/orgcontact.md) object in the response body.
 ## Example
 ##### Request

@@ -1,6 +1,6 @@
 # Quota resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.
 
@@ -42,8 +42,6 @@ Here is a JSON representation of the resource.
 | `nearing`  | Remaining quota is less than 10% of total quota space.                                                                                                                      |
 | `critical` | Remaining quota is less than 1% of total quota space.                                                                                                                       |
 | `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
-
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

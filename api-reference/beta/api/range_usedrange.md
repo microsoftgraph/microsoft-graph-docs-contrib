@@ -1,6 +1,6 @@
 # Range: UsedRange
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Returns the used range of the given range object.
 ## Prerequisites
@@ -21,7 +21,6 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -30,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |valuesOnly|boolean|Optional. Considers only cells with values as used cells.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

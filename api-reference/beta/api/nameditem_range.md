@@ -1,6 +1,6 @@
 # NamedItem: Range
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.
 ## Prerequisites
@@ -19,10 +19,10 @@ POST /workbook/names(<name>)/Range
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

@@ -1,6 +1,6 @@
 # List people
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by 
 the user's communication, collaboration and business relationships.
@@ -24,9 +24,11 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body.
-## Examples
+## Example
 ##### Request
 Here is an example of the request.
 
@@ -38,6 +40,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/me/people
 ```
 
+##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

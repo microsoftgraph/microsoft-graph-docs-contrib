@@ -29,7 +29,6 @@ Here is a JSON representation of the resource.
 | **height** | Int32 | Optional. Height of the image, in pixels. Read-only. |
 | **width**  | Int32 | Optional. Width of the image, in pixels. Read-only.  |
 
-
 ## Remarks
 
 In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.

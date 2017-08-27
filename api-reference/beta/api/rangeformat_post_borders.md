@@ -1,6 +1,6 @@
 # Create RangeBorder
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new RangeBorder.
 ## Prerequisites
@@ -21,12 +21,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
 
 ## Example

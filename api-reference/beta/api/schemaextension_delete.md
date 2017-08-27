@@ -1,6 +1,6 @@
 # Delete schemaExtension
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Delete the definition of a [schema extension](../resources/schemaExtension.md).
 
@@ -22,13 +22,12 @@ DELETE /schemaExtensions/{id}
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
- 
 
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

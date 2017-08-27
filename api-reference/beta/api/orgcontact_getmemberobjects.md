@@ -1,6 +1,6 @@
 # orgContact: getMemberObjects
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -23,6 +23,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean||
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection object in the response body.
 
 ## Example

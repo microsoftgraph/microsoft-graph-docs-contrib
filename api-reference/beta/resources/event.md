@@ -1,6 +1,6 @@
 # event resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 An event in a calendar.
 
@@ -119,7 +119,6 @@ Here is a JSON representation of the resource
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
 
-
 ## Methods
 
 | Method		   | Return Type	|Description|
@@ -129,11 +128,11 @@ Here is a JSON representation of the resource
 |[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Update](../api/event_update.md) | [event](event.md)	|Update event object. |
 |[Delete](../api/event_delete.md) | None |Delete event object. |
-|[cancel](../api/event_cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. | 
+|[cancel](../api/event_cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
 |[accept](../api/event_accept.md)|None|Accept the specified event.|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
 |[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
-|[forward](../api/event_forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.| 
+|[forward](../api/event_forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
 |[delta](../api/event_delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
 |[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
 |[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
@@ -151,7 +150,6 @@ Here is a JSON representation of the resource
 |[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
 |[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
-
 
 ## See also
 

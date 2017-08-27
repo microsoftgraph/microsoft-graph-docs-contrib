@@ -1,6 +1,6 @@
 ﻿# Get windowsUpdateForBusinessConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -16,7 +16,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Optional query parameters
@@ -45,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1420
+Content-Length: 1411
 
 {
   "value": {
@@ -67,7 +68,8 @@ Content-Length: 1420
     "installationSchedule": {
       "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
       "scheduledInstallDay": "everyday",
-      "scheduledInstallTime": "11:59:31.3170000"
+      "scheduledInstallTime": "11:59:31.3170000",
+      "restartMode": "batteryLevelCheckEnabled"
     },
     "qualityUpdatesDeferralPeriodInDays": 2,
     "featureUpdatesDeferralPeriodInDays": 2,
@@ -76,7 +78,6 @@ Content-Length: 1420
     "qualityUpdatesPauseExpiryDateTime": "2017-01-01T00:00:22.9594683-08:00",
     "featureUpdatesPauseExpiryDateTime": "2016-12-31T23:58:08.068669-08:00",
     "businessReadyUpdatesOnly": "all",
-    "restartMode": "onBatteryWithAtLeast40PercentCharge",
     "previewBuildSetting": "allowed"
   }
 }

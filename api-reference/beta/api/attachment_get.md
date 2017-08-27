@@ -1,6 +1,6 @@
 # Get attachment
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Read the properties and relationships of an attachment, attached to an [event](../resources/event.md), 
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). 
@@ -90,7 +90,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
 
 ## Example (file attachment)

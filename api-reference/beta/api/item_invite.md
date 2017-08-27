@@ -1,6 +1,6 @@
 # Send a sharing invitation
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Sends a sharing invitation for a **DriveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
@@ -26,13 +26,14 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                            | Description                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | Collection([DriveRecipient](driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                            |
+| recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                            |
 | message          | String                                          | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters. |
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
 | sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
 | roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
 
 ## Response
+
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
 ## Example

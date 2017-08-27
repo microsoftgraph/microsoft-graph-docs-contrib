@@ -1,6 +1,6 @@
 ﻿# Update deviceComplianceActionItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -34,8 +34,7 @@ The following table shows the properties that are required when you create a [de
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced.|
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 |notificationTemplateId|String|What notification Message template to use|
-
-
+|notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object in the response body.
@@ -46,12 +45,15 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}
 Content-type: application/json
-Content-length: 125
+Content-length: 206
 
 {
   "gracePeriodHours": 0,
   "actionType": "notification",
-  "notificationTemplateId": "Notification Template Id value"
+  "notificationTemplateId": "Notification Template Id value",
+  "notificationMessageCCList": [
+    "Notification Message CCList value"
+  ]
 }
 ```
 
@@ -60,14 +62,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 239
+Content-Length: 320
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "id": "e01a1893-1893-e01a-9318-1ae093181ae0",
   "gracePeriodHours": 0,
   "actionType": "notification",
-  "notificationTemplateId": "Notification Template Id value"
+  "notificationTemplateId": "Notification Template Id value",
+  "notificationMessageCCList": [
+    "Notification Message CCList value"
+  ]
 }
 ```
 

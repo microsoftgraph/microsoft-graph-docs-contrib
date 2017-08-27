@@ -1,6 +1,6 @@
 # List leakedCredentialsRiskEvents
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of leakedcredentialsriskevent objects.
 ## Prerequisites
@@ -19,7 +19,9 @@ GET /leakedCredentialsRiskEvents
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [leakedCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md) objects in the response body.
 ## Example
 ##### Request

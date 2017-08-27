@@ -1,6 +1,6 @@
 # TableCollection: add
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
 ## Prerequisites
@@ -20,7 +20,6 @@ POST /workbook/worksheets/{id|name}/tables/add
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -30,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |hasHeaders|boolean|Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Table](../resources/table.md) object in the response body.
 
 ## Example

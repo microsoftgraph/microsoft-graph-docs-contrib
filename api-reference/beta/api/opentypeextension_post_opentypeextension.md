@@ -1,6 +1,6 @@
 # Create open extension
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties 
 in a new or existing instance of a supported resource. 
@@ -68,7 +68,6 @@ See the [Request body](#request-body) section about including _the extension_ in
 |_URL parameters_|
 |id|string|A unique identifier for an object in the corresponding collection. Required.|
 
-
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
@@ -105,7 +104,6 @@ Refer to the corresponding topics for creating the instance, as listed [above](#
 | Creating an extension while explicitly creating a _new_ resource instance | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Includes the new instance expanded with the [openTypeExtension](../resources/openTypeExtension.md) object. |
 | Creating an extension while implicitly creating a resource instance | [post](../resources/post.md) | The response includes only a response code but not a response body. |
 | Creating an extension in an _existing_ resource instance | All supported resources | Includes the **openTypeExtension** object. |
-
 
 ## Example
 ##### Request 1

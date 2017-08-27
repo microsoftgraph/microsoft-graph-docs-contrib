@@ -1,6 +1,6 @@
 # Get a site resource
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
@@ -52,7 +52,7 @@ GET /groups/{group-id}/sites/root
 
 ## Example
 
-### Request
+##### Request
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -60,7 +60,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/beta/sites/{site-id}
 ```
 
-### Response
+##### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

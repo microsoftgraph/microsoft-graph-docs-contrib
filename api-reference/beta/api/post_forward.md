@@ -1,6 +1,6 @@
 # post: forward
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Forward a post to a recipient. You can specify both the parent conversation and thread in the request, 
 or, you can specify just the parent thread without the parent conversation. 
@@ -8,7 +8,7 @@ or, you can specify just the parent thread without the parent conversation.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
 
-*Group.ReadWrite*, *Group.Readwrite.All*
+*Group.ReadWrite.All*
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,6 +31,7 @@ In the request body, provide a JSON object with the following parameters.
 |toRecipients|[recipient](../resources/recipient.md) collection|The recipients to whom the threaded is forwarded to.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

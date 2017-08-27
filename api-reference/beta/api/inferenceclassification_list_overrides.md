@@ -1,6 +1,6 @@
 # List overrides
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the [Focused Inbox](../resources/manage_focused_inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.
 
@@ -21,7 +21,9 @@ GET /users/{id}/inferenceClassification/overrides
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 ## Example
 ##### Request

@@ -1,6 +1,6 @@
 # Get OneDriveUsage report
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the reports of OneDrive Storage. The response will be a CSV file in a binary stream.
 
@@ -68,7 +68,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 Here is an example of the request.
 <!-- {
@@ -80,7 +80,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/OneDriveUsage(view='Detail',period='D7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {
@@ -94,7 +94,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 <!-- {
   "blockType": "response",
   "truncated": true,

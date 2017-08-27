@@ -1,6 +1,6 @@
 # event: forward
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the 
 meeting request to a new recipient. 
@@ -48,6 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 |ToRecipients|[recipient](../resources/recipient.md) collection|The list of recipients to forward the event to.|
 
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

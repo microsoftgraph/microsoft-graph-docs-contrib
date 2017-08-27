@@ -1,9 +1,8 @@
 # List available drives
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the list of [Drive](../resources/drive.md) resources available for a target [User](../resources/user.md) or [Group](../resources/group.md).
-Your app can also request the set of document libraries on the SharePoint root site.
+Retrieve the list of [Drive](../resources/drive.md) resources available for a target [User](../resources/user.md) or [Group](../resources/group.md). Your app can also request the set of document libraries on the SharePoint root site.
 
 ## Prerequisites
 
@@ -27,7 +26,8 @@ GET /sites/{site-id}/drives
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+
 
 ## Request body
 
@@ -52,7 +52,9 @@ GET https://graph.microsoft.com/beta/me/drives
 ```
 
 ##### Response
+
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,8 +90,7 @@ Content-length: 579
 
 ## Remarks
 
-Most users will only have a single Drive resource.
-Groups and some users may have multiple drive available.
+Most users will only have a single Drive resource. Groups and some users might have multiple drives available.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

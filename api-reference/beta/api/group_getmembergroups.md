@@ -1,6 +1,6 @@
 # group: getMemberGroups
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Return all the groups that the specified group is a member of. The check is transitive, unlike reading the 
 [memberOf](../api/group_list_memberof.md) navigation property, which returns only the groups that the group is a direct member of.
@@ -30,6 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean|Set to **false**. Returning only security-enabled groups is supported for users only.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
 
 ## Example

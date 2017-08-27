@@ -1,6 +1,6 @@
 # Update user
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update the properties of a user object.
 ## Prerequisites
@@ -60,6 +60,7 @@ Since the **user** resource supports [extensions](../../../concepts/extensibilit
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 ## Example
 ##### Request

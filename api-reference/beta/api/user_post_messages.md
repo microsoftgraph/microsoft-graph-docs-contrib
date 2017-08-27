@@ -1,6 +1,6 @@
 # Create Message
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
@@ -36,8 +36,8 @@ If you want to use **mention** to call out another user in the new message:
 
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-
 ## Response
+
 If successful, this method returns a `201, Created` response code and a [message](../resources/message.md) object in the response body.
 
 ## Example

@@ -1,6 +1,6 @@
 # privilegedRoleAssignment: makePermanent
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Make the role assignment as permanent.
 
@@ -30,6 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |ticketSystem|string|Optional. The ticket system.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
 ## Example

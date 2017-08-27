@@ -1,6 +1,6 @@
 # List calendarView
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
 from the default calendar of a group.
@@ -29,7 +29,9 @@ This method also supports the [OData Query Parameters](http://developer.microsof
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request

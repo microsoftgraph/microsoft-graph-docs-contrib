@@ -1,6 +1,6 @@
 # TableSort: clear
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
 ## Prerequisites
@@ -20,10 +20,10 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

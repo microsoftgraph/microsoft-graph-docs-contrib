@@ -1,6 +1,6 @@
 # Update privilegedapproval
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update the properties of privilegedapproval object.
 ## Prerequisites
@@ -32,9 +32,11 @@ In the request body, supply the values for relevant fields that should be update
 |userId|String||
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
 
 Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
+
 ## Example
 ##### Request
 Here is an example of the request.

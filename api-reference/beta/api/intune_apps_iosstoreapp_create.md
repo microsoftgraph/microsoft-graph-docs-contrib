@@ -1,6 +1,6 @@
 ﻿# Create iosStoreApp
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,7 +15,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/
+POST /deviceAppManagement/mobileApps
 ```
 
 ## Request headers
@@ -49,8 +49,6 @@ The following table shows the properties that are required when you create a ios
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [iosStoreApp](../resources/intune_apps_iosstoreapp.md) object in the response body.
 
@@ -58,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [iosStore
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
 Content-length: 1016
 

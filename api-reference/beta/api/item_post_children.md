@@ -1,6 +1,6 @@
 # Create a new folder
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.
 
@@ -23,8 +23,8 @@ POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ## Request body
 In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.
 
-
 ## Response
+
 If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.
 
 ## Example

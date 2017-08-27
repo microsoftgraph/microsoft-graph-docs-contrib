@@ -1,6 +1,6 @@
 # contact: delta
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
 
@@ -10,9 +10,9 @@ you can query for incremental changes in the contacts in
 that folder. This allows you to maintain and synchronize a local store of a user's contacts without 
 having to fetch the entire set of contacts from the server every time.  
 
-### Prerequisites
+## Prerequisites
 One of the following **scopes** is required to execute this API: _Contacts.Read_; _Contacts.ReadWrite_
-### HTTP request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
@@ -33,25 +33,24 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same contact collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same contact collection. |
 
-
 #### OData query parameters
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
 
 
-### Request headers
+## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
+## Response
 
-### Response
 If successful, this method returns a `200, OK` response code and [contact](../resources/contact.md) collection object in the response body.
 
-### Example
+## Example
 ##### Request
 The following example shows how to make a single **delta** function call, use the `$select` parameter to get only 
 each contact's **displayName** property, and limit the maximum number of contacts 

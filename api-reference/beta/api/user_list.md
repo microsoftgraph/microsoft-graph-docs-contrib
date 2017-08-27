@@ -1,6 +1,6 @@
 # List users
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of user objects.
 
@@ -23,7 +23,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Header        | Value                      |
 |:--------------|:---------------------------|
 | Authorization | Bearer {token} (required)  |
-| Content-Type  | application/json           | 
+| Content-Type  | application/json           |
 
 ## Request body
 

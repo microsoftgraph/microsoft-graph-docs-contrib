@@ -206,7 +206,7 @@ Note: You'll notice that the following permission scopes have been configured fo
 3. Choose the **Send email** button. When the mail is sent, a success message is displayed below the button.
 
 ## Next steps
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the REST API using the [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find examples of common operations for both REST and SDK operations in the [Microsoft Graph iOS Objective C Snippets Sample](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## See also

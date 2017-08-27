@@ -1,6 +1,6 @@
 # Create TableRow
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new TableRow.
 ## Prerequisites
@@ -20,12 +20,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
 ## Example

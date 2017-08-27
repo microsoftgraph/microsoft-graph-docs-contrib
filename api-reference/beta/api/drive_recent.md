@@ -1,6 +1,6 @@
 # List recent files
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 List a set of items that have been recently used by the signed in user.
 This collection includes items that are in the user's drive as well as items they have access to from other drives.
@@ -11,7 +11,7 @@ One of the following **scopes** is required to execute this API:
 * Files.Read
 * Files.ReadWrite
 * Files.Read.All
-* Files.Readwrite.All
+* Files.ReadWrite.All
 * Sites.Read.All
 * Sites.ReadWrite.All
 

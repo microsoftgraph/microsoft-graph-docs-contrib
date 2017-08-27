@@ -1,6 +1,6 @@
 # Create ContactFolder
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new contactFolder as a child of a specified folder. 
 
@@ -23,8 +23,8 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## Request body
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
 ## Example

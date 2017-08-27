@@ -1,6 +1,6 @@
 # List RangeBorderCollection
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of rangeborder objects.
 ## Prerequisites
@@ -23,10 +23,11 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [RangeBorder](../resources/rangeborder.md) objects in the response body.
 ## Example
 ##### Request

@@ -1,6 +1,6 @@
 # List user devices
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to [send a command](send_device_command.md) to your device.
 
@@ -28,6 +28,7 @@ GET me/devices
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a 200 response code and the user device properties in the response body.
 
 ```http
@@ -70,7 +71,8 @@ HTTP/1.1 200 OK
 ## Example
 This example will return the list of devices for a user. To command a device using `me/devices/{id}/command`, you will need to get the ID of the device that is returned.
 
-### Request
+##### Request
+
 Here is an example of the request.
 
 <!-- {
@@ -85,7 +87,7 @@ Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
 
-### Response
+##### Response
 
 <!-- {
   "blockType": "response",

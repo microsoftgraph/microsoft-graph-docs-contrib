@@ -1,6 +1,6 @@
 ﻿# Create targetedManagedAppConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,7 +15,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceAppManagement/targetedManagedAppConfigurations/
+POST /deviceAppManagement/targetedManagedAppConfigurations
 ```
 
 ## Request headers
@@ -41,8 +41,6 @@ The following table shows the properties that are required when you create a tar
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
 |targetedSecurityGroupsCount|Int32|Number of groups to which the configuration is deployed.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) object in the response body.
 
@@ -50,7 +48,7 @@ If successful, this method returns a `201 Created` response code and a [targeted
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/targetedManagedAppConfigurations/
+POST https://graph.microsoft.com/beta/deviceAppManagement/targetedManagedAppConfigurations
 Content-type: application/json
 Content-length: 547
 

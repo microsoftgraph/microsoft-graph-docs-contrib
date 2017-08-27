@@ -1,6 +1,6 @@
 # Create thread
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new thread in the specified conversation.
 
@@ -25,8 +25,8 @@ POST /groups/{id}/conversations/{id}/threads
 ## Request body
 In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example

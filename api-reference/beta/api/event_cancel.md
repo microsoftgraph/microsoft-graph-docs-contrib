@@ -1,6 +1,6 @@
 # event: cancel
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 This action allows the organizer of a meeting to send a cancellation message and cancel the event. 
 
@@ -50,6 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 |comment|String|A comment about the cancellation sent to all the attendees. Optional.|
 
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

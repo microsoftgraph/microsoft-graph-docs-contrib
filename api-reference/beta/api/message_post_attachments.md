@@ -1,6 +1,6 @@
 # Add attachment
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to add an [attachment](../resources/attachment.md) to a message. 
 
@@ -39,8 +39,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and the [Attachment](../resources/attachment.md) object in the response body.
 
 ## Example (file attachment)

@@ -1,6 +1,6 @@
 # Add group owner
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
 
@@ -20,8 +20,8 @@ POST /groups/{id}/owners/$ref
 ## Request body
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

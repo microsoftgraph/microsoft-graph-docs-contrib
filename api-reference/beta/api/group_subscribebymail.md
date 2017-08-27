@@ -1,6 +1,6 @@
 # group: subscribeByMail
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Calling this method will enable the current user to receive email notifications for this group, 
 about new posts, events, and files in that group. Supported for only Office 365 groups.
@@ -21,6 +21,7 @@ POST /groups/{id}/subscribeByMail
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example
