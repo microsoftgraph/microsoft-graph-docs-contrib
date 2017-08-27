@@ -1,5 +1,7 @@
 # Chart: setPosition
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Positions the chart relative to cells on the worksheet.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -17,7 +19,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -27,6 +28,7 @@ In the request body, provide a JSON object with the following parameters.
 |endCell|string|Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

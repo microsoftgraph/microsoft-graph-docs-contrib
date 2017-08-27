@@ -1,4 +1,7 @@
 # user: getMemberObjects
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive.
 
 ## Prerequisites
@@ -23,6 +26,7 @@ In the request body, provide a JSON object with the following parameters.
 |securityEnabledOnly|Boolean|**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and String collection in the response body that contains the IDs of the groups and directory roles that the user is a member of.
 
 ## Example

@@ -1,5 +1,7 @@
 # Activate directoryRole
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators  and the implicit Users directory roles are activated by default. To access and assign members to another directory role, you must first activate it with its corresponding directory role template ([directoryRoleTemplate](../resources/directoryroletemplate.md)).
 
 ## Prerequisites
@@ -24,8 +26,8 @@ The following table shows the properties that are required when you activate a d
 |:---------|:---------|:---------|
 |roleTemplateId | string | The ID of the [directoryRoleTemplate](../resources/directoryroletemplate.md) that the role is based on. This is the only property that may be specified in the request.|
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 
 ## Example

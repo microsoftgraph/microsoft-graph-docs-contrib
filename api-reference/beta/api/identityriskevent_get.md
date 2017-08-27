@@ -1,5 +1,7 @@
 # Get identityRiskEvent
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of identityriskevent object.
 ## Prerequisites
 The following **scopes** are required to execute this API:
@@ -17,7 +19,9 @@ GET /identityRiskEvents/{id}
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
 ## Example
 ##### Request

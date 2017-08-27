@@ -1,5 +1,7 @@
 ﻿# Update iosManagedAppProtection
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object.
@@ -64,8 +66,6 @@ The following table shows the properties that are required when you create a [io
 |appDataEncryptionType|String|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
-
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) object in the response body.

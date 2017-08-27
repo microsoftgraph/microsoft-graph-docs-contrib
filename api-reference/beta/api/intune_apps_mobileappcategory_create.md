@@ -1,5 +1,7 @@
 ﻿# Create mobileAppCategory
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) object.
@@ -13,8 +15,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /deviceAppManagement/mobileAppCategories/
-POST /deviceAppManagement/mobileApps/{mobileAppId}/categories/
+POST /deviceAppManagement/mobileAppCategories
+POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ```
 
 ## Request headers
@@ -33,8 +35,6 @@ The following table shows the properties that are required when you create a mob
 |displayName|String|The name of the app category.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) object in the response body.
 
@@ -42,7 +42,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories/
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories
 Content-type: application/json
 Content-length: 163
 

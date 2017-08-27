@@ -1,5 +1,7 @@
 # Create privilegedRoleAssignment
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
@@ -15,14 +17,14 @@ POST /privilegedRoleAssignments
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
+Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 ## Example
 ##### Request
 Here is an example of the request.

@@ -1,5 +1,7 @@
 # Delete event
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete event.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: 
@@ -32,8 +34,8 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example

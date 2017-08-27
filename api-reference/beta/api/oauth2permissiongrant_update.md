@@ -1,5 +1,7 @@
 # Update oAuth2PermissionGrant
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties of oAuth2PermissionGrant object.
 
 ## Prerequisites
@@ -26,6 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |scope|String| Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token. |
 
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

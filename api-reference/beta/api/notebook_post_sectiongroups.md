@@ -1,5 +1,7 @@
 # Create sectionGroup
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new [section group](../resources/sectiongroup.md) in the specified notebook.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:   
@@ -10,6 +12,7 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/notebooks/{id}/sectionGroups
 POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/sectionGroups
 POST /groups/{id}/onenote/notebooks/{id}/sectionGroups
+POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -23,6 +26,7 @@ In the request body, supply a name for the section group.
 Within the same hierarchy level, section group names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?*\/:<>|&#''%~
 
 ## Response
+
 If successful, this method returns `201 Created` response code and a [sectionGroup](../resources/sectiongroup.md) object in the response body.
 
 ## Example

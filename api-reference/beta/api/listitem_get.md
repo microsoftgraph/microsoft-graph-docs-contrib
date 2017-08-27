@@ -1,5 +1,7 @@
 # Get an item in a list
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Returns the metadata for an [item][] in a [list][].
 
 [list]: ../resources/list.md
@@ -22,7 +24,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 ## Example
 
-### Request
+##### Request
 
 <!-- { "blockType": "request", "name": "get-list-item" } -->
 
@@ -30,7 +32,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
-### Response
+##### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 

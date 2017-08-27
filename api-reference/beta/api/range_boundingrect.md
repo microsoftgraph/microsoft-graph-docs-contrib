@@ -1,5 +1,7 @@
 # Range: BoundingRect
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -19,7 +21,6 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -28,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |anotherRange|string|The range object or address or range name.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

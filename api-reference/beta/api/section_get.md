@@ -1,5 +1,7 @@
 # Get section
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of a [section](../resources/section.md) object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:  
@@ -10,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.Al
 GET /me/onenote/sections/{id}
 GET /users/{id | userPrincipalName}/onenote/sections/{id}
 GET /groups/{id}/onenote/sections/{id}
+GET /sites/{id}/onenote/sections/{id}
 ```
 ## Optional query parameters
 This method supports the `select` and `expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -20,11 +23,13 @@ The default query expands `parentNotebook` and selects its `id`, `displayName`, 
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Accept | string | `application/json` | 
+| Accept | string | `application/json` |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [section](../resources/section.md) object in the response body.
 ## Example
 ##### Request

@@ -1,5 +1,7 @@
 # Create registeredOwner
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Add a user as a registered owner of the device.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
@@ -18,8 +20,8 @@ POST /devices/{id}/registeredOwners
 ## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Example

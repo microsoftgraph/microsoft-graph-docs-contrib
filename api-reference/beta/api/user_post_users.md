@@ -1,5 +1,7 @@
 # Create user
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to create a new user.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 ## Prerequisites
@@ -32,8 +34,8 @@ The following table shows the properties that are required when you create a use
 
 Since the **user** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [user](../resources/user.md) object in the response body.
 
 ## Example

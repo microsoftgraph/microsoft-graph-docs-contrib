@@ -1,5 +1,7 @@
 # List memberOf
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get groups and administrative units that the group is a direct member of. 
 
 This operation is not transitive. Unlike getting a user's Office 365 Groups, this 
@@ -22,7 +24,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request

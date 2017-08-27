@@ -1,5 +1,7 @@
 # Add attachment
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to add an [attachment](../resources/attachment.md) to a post. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
 you can add to under 4MB.
@@ -23,8 +25,8 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## Request body
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
 ## Example (file attachment)

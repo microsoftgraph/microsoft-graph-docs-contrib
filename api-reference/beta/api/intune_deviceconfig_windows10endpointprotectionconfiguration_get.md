@@ -1,5 +1,7 @@
 ﻿# Get windows10EndpointProtectionConfiguration
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [windows10EndpointProtectionConfiguration](../resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) object.
@@ -14,7 +16,8 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 -->
 ```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Optional query parameters
@@ -43,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2696
+Content-Length: 3034
 
 {
   "value": {
@@ -57,6 +60,13 @@ Content-Length: 2696
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "smartScreenEnableInShell": true,
+    "smartScreenBlockOverrideForFiles": true,
+    "applicationGuardEnabled": true,
+    "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
+    "applicationGuardBlockNonEnterpriseContent": true,
+    "applicationGuardAllowPersistence": true,
+    "applicationGuardForceAuditing": true,
     "bitLockerEnableStorageCardEncryptionOnMobile": true,
     "bitLockerEncryptDevice": true,
     "bitLockerSystemDrivePolicy": {

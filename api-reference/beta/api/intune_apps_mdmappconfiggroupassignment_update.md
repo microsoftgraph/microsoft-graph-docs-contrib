@@ -1,5 +1,7 @@
 ﻿# Update mdmAppConfigGroupAssignment
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) object.
@@ -31,8 +33,6 @@ The following table shows the properties that are required when you create a [md
 |appConfiguration|String|The navigation link to the mdm app Configuration being targeted.|
 |targetGroupId|String|The Id of the AAD group we are targeting the mdm app configuration to.|
 |id|String|Key of the entity.|
-
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [mdmAppConfigGroupAssignment](../resources/intune_apps_mdmappconfiggroupassignment.md) object in the response body.

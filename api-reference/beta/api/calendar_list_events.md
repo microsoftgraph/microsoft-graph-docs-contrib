@@ -1,5 +1,7 @@
 # List events
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 
 To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
@@ -39,7 +41,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request

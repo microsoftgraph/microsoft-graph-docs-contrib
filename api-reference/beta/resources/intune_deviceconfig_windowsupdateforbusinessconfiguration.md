@@ -1,4 +1,6 @@
-﻿#  resource type
+﻿# windowsUpdateForBusinessConfiguration resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -46,7 +48,6 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
 |businessReadyUpdatesOnly|String|Business ready updates only or regular updates allowed too Possible values are: `userDefined`, `all`, `businessReadyOnly`.|
-|restartMode|String|Set restart mode allowed level to power or battery Possible values are: `userDefined`, `onBatteryWithAtLeast40PercentCharge`, `connectedToPowerSupply`.|
 |previewBuildSetting|String|Set the insider build control in the advanced options for Windows Update Possible values are: `userDefined`, `allowed`, `notAllowed`.|
 
 ## Relationships
@@ -87,7 +88,8 @@ Here is a JSON representation of the resource.
   "installationSchedule": {
     "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
     "scheduledInstallDay": "String",
-    "scheduledInstallTime": "String (time of day)"
+    "scheduledInstallTime": "String (time of day)",
+    "restartMode": "String"
   },
   "qualityUpdatesDeferralPeriodInDays": 1024,
   "featureUpdatesDeferralPeriodInDays": 1024,
@@ -96,7 +98,6 @@ Here is a JSON representation of the resource.
   "qualityUpdatesPauseExpiryDateTime": "String (timestamp)",
   "featureUpdatesPauseExpiryDateTime": "String (timestamp)",
   "businessReadyUpdatesOnly": "String",
-  "restartMode": "String",
   "previewBuildSetting": "String"
 }
 ```

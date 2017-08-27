@@ -1,4 +1,7 @@
 # privilegedRoleAssignment: my
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the requestor's privileged role assignments.
 
 ## Prerequisites
@@ -17,6 +20,7 @@ GET /privilegedRoleAssignments/my
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) collection object in the response body.
 
 ## Example

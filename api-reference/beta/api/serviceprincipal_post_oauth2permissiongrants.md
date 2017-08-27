@@ -1,5 +1,7 @@
 # Create oAuth2Permissiongrant
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to create a new oAuth2Permissiongrant.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -17,8 +19,8 @@ POST /servicePrincipals/{id}/oAuth2Permissiongrants
 ## Request body
 In the request body, supply a JSON representation of [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [oAuth2Permissiongrant](../resources/oAuth2Permissiongrant.md) object in the response body.
 
 ## Example

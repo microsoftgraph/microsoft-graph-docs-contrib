@@ -1,4 +1,7 @@
 # group: addFavorite
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.
 
 ## Prerequisites
@@ -16,7 +19,9 @@ POST /groups/{id}/addFavorite
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

@@ -1,5 +1,7 @@
 ﻿# Update eBookVppGroupAssignment
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md) object.
@@ -32,8 +34,6 @@ The following table shows the properties that are required when you create a [eB
 |id|String|Key of the entity. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md)|
 |installIntent|String|The install intent defined by the admin. Inherited from [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
-
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md) object in the response body.

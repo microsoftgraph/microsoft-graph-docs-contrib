@@ -1,5 +1,7 @@
 # group: resetUnseenCount
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for 
 only Office 365 groups.
 
@@ -19,6 +21,7 @@ POST /groups/{id}/resetUnseenCount
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

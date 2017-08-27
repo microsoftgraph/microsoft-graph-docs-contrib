@@ -1,8 +1,10 @@
-﻿#  resource type
+﻿# deviceComplianceDeviceOverview resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Not yet documented
+**TODO: Documentation is missing please add the `\[ODataDescription()\]` and/or `\[ODataLongDescription()\]` attributes.**
 ## Methods
 |Method|Return Type|Description|
 |---|---|---|
@@ -14,6 +16,7 @@ Not yet documented
 |---|---|---|
 |id|String|Key of the entity.|
 |pendingCount|Int32|Number of pending devices|
+|notApplicableCount|Int32|Number of not applicable devices|
 |successCount|Int32|Number of succeeded devices|
 |errorCount|Int32|Number of error devices|
 |failedCount|Int32|Number of failed devices|
@@ -35,6 +38,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceComplianceDeviceOverview",
   "id": "String (identifier)",
   "pendingCount": 1024,
+  "notApplicableCount": 1024,
   "successCount": 1024,
   "errorCount": 1024,
   "failedCount": 1024,

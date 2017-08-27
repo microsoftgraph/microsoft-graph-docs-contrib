@@ -1,5 +1,7 @@
 # Get EmailAppUsage report
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the reports of Exchange Email App Usage. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d) to check the meaning of different views.
@@ -66,7 +68,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 Here is an example of the request to get **detail** view with period of 7 days.
 <!-- {
@@ -78,7 +80,7 @@ Here is an example of the request to get **detail** view with period of 7 days.
 GET https://graph.microsoft.com/beta/reports/EmailAppUsage(view='Detail',period='D7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {
@@ -92,7 +94,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as belowing.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 <!-- {
   "blockType": "response",
   "truncated": true,

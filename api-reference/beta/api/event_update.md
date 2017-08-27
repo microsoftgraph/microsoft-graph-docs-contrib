@@ -1,5 +1,7 @@
 # Update event
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties of the [event](../resources/event.md) object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -55,6 +57,7 @@ Since the **event** resource supports [extensions](../../../concepts/extensibili
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **event** instance.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.
 ## Example
 ##### Request

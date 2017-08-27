@@ -34,7 +34,6 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 | **focalLength**         | Double                    | The focal length from the camera. Read-only.                               |
 | **iso**                 | Int32                     | The ISO value from the camera. Read-only.                                  |
 
-
 ## Remarks
 OneDrive for Business and SharePoint only return the **takenDateTime** property.
 

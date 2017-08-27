@@ -1,4 +1,7 @@
 # Add Named Item FormulaLocal
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Prerequisites
@@ -19,7 +22,6 @@ POST /workbook/worksheets({id|name})/names/addFormulaLocal
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -30,6 +32,7 @@ In the request body, provide a JSON object with the following parameters.
 |comment|string|The comment associated with the named item|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
 
 ## Example

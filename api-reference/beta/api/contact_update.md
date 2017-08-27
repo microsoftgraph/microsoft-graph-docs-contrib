@@ -1,5 +1,7 @@
 # Update contact
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties of contact object.
 ## Prerequisites
 One of the following **scopes** is required to execute this API: 
@@ -70,6 +72,7 @@ Since the **contact** resource supports [extensions](../../../concepts/extensibi
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **contact** instance.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
 ## Example
 ##### Request

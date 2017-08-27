@@ -1,5 +1,7 @@
 # Remove a member
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to remove a member (user or group) from an administrative unit.
 
 ## Prerequisites
@@ -19,6 +21,7 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

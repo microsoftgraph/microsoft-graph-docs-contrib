@@ -1,5 +1,7 @@
 # Move a DriveItem
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 This is a special case of the [Update](item_update.md) method.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.
@@ -28,7 +30,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
-
 ## Request body
 In the request body, supply the new value for the **parentReference** property.
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
@@ -38,6 +39,7 @@ For best performance you shouldn't include existing values that haven't changed.
 You either need to use the real ID of the root folder, or use `{"path": "/drive/root"}` for the parent reference.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
@@ -56,9 +58,10 @@ Content-type: application/json
 	"parentReference" : {"path": "/drive/root:/Documents"}
 }
 ```
+##### Response
 
-## Response
-Here is an example of the response.
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

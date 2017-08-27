@@ -1,5 +1,7 @@
 ﻿# Update deviceComplianceScheduledActionForRule
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) object.
@@ -30,8 +32,6 @@ The following table shows the properties that are required when you create a [de
 |---|---|---|
 |id|String|Key of the entity.|
 |ruleName|String|Name of the rule which this scheduled action applies to.|
-
-
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) object in the response body.

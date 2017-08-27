@@ -1,5 +1,7 @@
 # Create Conversation
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new conversation by including a thread and a post. 
 
 Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that conversation.
@@ -19,8 +21,8 @@ POST /groups/{id}/conversations
 ## Request body
 In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationThread.md) and a [post](../resources/post.md).
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [conversation](../resources/conversation.md) object in the response body.
 
 ## Example

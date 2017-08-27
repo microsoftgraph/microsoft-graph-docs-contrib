@@ -1,5 +1,7 @@
 # List messages
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
 
 In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
@@ -63,11 +65,13 @@ the signed-in user.
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. | 
+| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.
 
 The default page size for this request is 10 messages. 

@@ -1,5 +1,7 @@
 # Send mail
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Send the message specified in the request body. The message is saved in the Sent Items folder by default.
 
 In the same **sendMail** action call, you can:
@@ -34,8 +36,8 @@ If you want to use **mention** to call out another user in the new message:
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
 - For each mention in the **mentions** property, you must specify the **mentioned** and **createdBy** properties.
 
-
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

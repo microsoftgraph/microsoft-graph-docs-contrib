@@ -1,5 +1,7 @@
 # RangeSort: apply
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Perform a sort operation.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -19,7 +21,6 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -32,6 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 |method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

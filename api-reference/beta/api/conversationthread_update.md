@@ -1,5 +1,7 @@
 # Update conversationthread
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Lock or unlock a thread, to allow or avoid further posting to the thread.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -26,6 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |isLocked|Boolean|Indicates if the thread is locked. Set to `true` to disallow posting.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.
 ## Example
 ##### Request

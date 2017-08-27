@@ -1,6 +1,8 @@
 # event: dismissReminder
 
-Dissmiss a reminder that has been triggered.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Dismiss a reminder that has been triggered.
 
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -33,6 +35,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

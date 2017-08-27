@@ -1,5 +1,7 @@
 # Create CalendarGroup
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to create a new CalendarGroup.
 ## Prerequisites
 One of the following **scopes** is required to execute this API:
@@ -19,6 +21,7 @@ POST /users/{id | userPrincipalName}/calendarGroups
 In the request body, supply a JSON representation of [CalendarGroup](../resources/calendargroup.md) object.
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
 
 ## Example

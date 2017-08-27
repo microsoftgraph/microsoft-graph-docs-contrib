@@ -1,5 +1,7 @@
 # Range: EntireRow
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Gets an object that represents the entire row of the range.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -19,10 +21,10 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

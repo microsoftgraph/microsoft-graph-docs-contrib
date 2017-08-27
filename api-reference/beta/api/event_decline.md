@@ -1,5 +1,7 @@
 # event: decline
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Decline invitation to the specified event.
 
 ## Prerequisites
@@ -40,6 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 |sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
 
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

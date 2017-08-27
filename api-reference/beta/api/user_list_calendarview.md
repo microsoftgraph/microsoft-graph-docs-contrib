@@ -1,5 +1,7 @@
 # List calendarView
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's default calendar, 
 or from some other calendar of the user's.
 ## Prerequisites
@@ -44,12 +46,14 @@ This method also supports the [OData Query Parameters](http://developer.microsof
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type   | string  | application/json | 
+| Content-Type   | string  | application/json |
 | Prefer | string | outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request

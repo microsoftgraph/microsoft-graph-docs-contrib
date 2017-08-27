@@ -1,5 +1,7 @@
 # event: snoozeReminder
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Postpone a reminder until a new time.
 
 ## Prerequisites
@@ -39,6 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 |newReminderTime|DateTimeTimeZone|The new date and time to trigger the reminder.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

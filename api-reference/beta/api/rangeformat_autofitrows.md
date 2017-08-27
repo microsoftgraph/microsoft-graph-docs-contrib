@@ -1,5 +1,7 @@
 # RangeFormat: autofitRows
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -19,10 +21,10 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

@@ -1,5 +1,7 @@
 # Add member
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Use this API to add a member to an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. 
 You can add users or other groups. Important: You can add only users to Office 365 groups.
 
@@ -19,8 +21,8 @@ POST /groups/{id}/members/$ref
 ## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

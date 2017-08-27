@@ -1,5 +1,7 @@
 # Delete extension
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete extension.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -19,8 +21,8 @@ DELETE /users/{id | userPrincipalName}/contacts/{id}/extensions/{id}
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

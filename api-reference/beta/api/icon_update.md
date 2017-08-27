@@ -1,5 +1,7 @@
 # Update icon
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties of icon object.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -17,7 +19,6 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
@@ -27,6 +28,7 @@ In the request body, supply the values for relevant fields that should be update
 |set|string|Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [Icon](../resources/icon.md) object in the response body.
 ## Example
 ##### Request

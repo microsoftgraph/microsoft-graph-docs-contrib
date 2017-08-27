@@ -1,5 +1,7 @@
 # message: reply
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. 
 The message is then saved in the Sent Items folder.
 
@@ -39,6 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
 ## Response
+
 If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example

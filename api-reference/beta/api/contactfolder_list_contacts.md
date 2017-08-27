@@ -1,5 +1,7 @@
 # List contacts
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get all the contacts in the signed-in user's mailbox (.../me/contacts), or from the specified contact folder.
 
 ## Prerequisites
@@ -23,7 +25,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.
 ## Example
 ##### Request

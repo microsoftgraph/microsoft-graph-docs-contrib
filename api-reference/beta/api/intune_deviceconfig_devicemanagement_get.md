@@ -1,5 +1,7 @@
 ﻿# Get deviceManagement
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.
@@ -42,7 +44,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 457
+Content-Length: 489
 
 {
   "value": {
@@ -53,7 +55,8 @@ Content-Length: 457
       "windowsCommercialId": "Windows Commercial Id value",
       "windowsCommercialIdLastModifiedTime": "2016-12-31T23:59:46.9744002-08:00",
       "deviceComplianceCheckinThresholdDays": 4,
-      "isScheduledActionEnabled": true
+      "isScheduledActionEnabled": true,
+      "secureByDefault": true
     }
   }
 }

@@ -1,5 +1,7 @@
 # Range: Cell
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -19,7 +21,6 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -29,6 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |column|number|Column number of the cell to be retrieved. Zero-indexed.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

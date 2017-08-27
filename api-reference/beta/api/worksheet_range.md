@@ -1,5 +1,7 @@
 # Worksheet: Range
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Gets the range object specified by the address or name.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -17,7 +19,6 @@ POST /workbook/worksheets/{id|name}/Range
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -26,6 +27,7 @@ In the request body, provide a JSON object with the following parameters.
 |address|string|Optional. The address or the name of the range. If not specified, the entire worksheet range is returned.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

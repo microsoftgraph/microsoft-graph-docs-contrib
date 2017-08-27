@@ -1,5 +1,7 @@
 ﻿# syncApps action
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
@@ -13,7 +15,7 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 }
 -->
 ```http
-POST /organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}syncApps
+POST /organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}/syncApps
 ```
 
 ## Request headers
@@ -32,7 +34,7 @@ If successful, this action returns a `200 OK` response code and a [appleVolumePu
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}syncApps
+POST https://graph.microsoft.com/beta/organization/{organizationId}/appleVolumePurchaseProgramTokens/{appleVolumePurchaseProgramTokenId}/syncApps
 ```
 
 ### Response
@@ -40,7 +42,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 571
+Content-Length: 660
 
 {
   "value": {
@@ -54,7 +56,9 @@ Content-Length: 571
     "token": "Token value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "state": "valid",
-    "lastSyncStatus": "inProgress"
+    "lastSyncStatus": "inProgress",
+    "automaticallyUpdateApps": true,
+    "countryOrRegion": "Country Or Region value"
   }
 }
 ```

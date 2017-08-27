@@ -1,5 +1,7 @@
 # ChartFill: setSolidColor
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Sets the fill formatting of a chart element to a uniform color.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -19,7 +21,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidCo
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -28,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |color|string|HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

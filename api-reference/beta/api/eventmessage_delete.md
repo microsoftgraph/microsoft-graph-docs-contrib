@@ -1,5 +1,7 @@
 # Delete eventMessage
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Delete eventMessage.
 ## Prerequisites
 The following **scopes** are required to execute this API: _Mail.ReadWrite_ 
@@ -20,8 +22,8 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example

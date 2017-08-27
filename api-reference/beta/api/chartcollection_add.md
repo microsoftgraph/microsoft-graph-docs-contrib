@@ -1,5 +1,7 @@
 # ChartCollection: add
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Creates a new chart.
 ## Prerequisites
 The following **scopes** are required to execute this API: 
@@ -17,7 +19,6 @@ POST /workbook/worksheets/{id|name}/charts/add
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -28,6 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 |seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart.  Possible values are: `Auto`, `Columns`, `Rows`.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Chart](../resources/chart.md) object in the response body.
 
 ## Example
