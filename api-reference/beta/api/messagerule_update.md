@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Change writable properties on a [messageRule](,,/resources/messagerule.md) object and save the changes.
+Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.
 
 ## Prerequisites
 The following **scopes** are required to execute this API: *MailboxSettings.ReadWrite*
@@ -24,17 +24,17 @@ maintain their previous values or be recalculated based on changes to other prop
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| actions | [messageRuleActions](messageruleactions.md) | Actions to be taken on a message when the corresponding conditions are fulfilled. |
-| conditions | [messageRulePredicates](messagerulepredicates.md) | Conditions that when fulfilled, will trigger the corresponding actions for that rule. |
+| actions | [messageRuleActions](../resources/messageruleactions.md) | Actions to be taken on a message when the corresponding conditions are fulfilled. |
+| conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Conditions that when fulfilled, will trigger the corresponding actions for that rule. |
 | displayName | String | The display name of the rule. |
-| exceptions | [messageRulePredicates](messagerulepredicates.md) | Exception conditions for the rule. |
+| exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Exception conditions for the rule. |
 | isEnabled | Boolean | Indicates whether the rule is enabled to be applied to messages. |
 | isReadOnly | Boolean | Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API. |
 | sequence | Int32 | Indicates the order in which the rule is executed, among other rules. |
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [messageRule](,,/resources/messagerule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [messageRule](../resources/messagerule.md) object in the response body.
 ## Example
 ##### Request
 The following example changes the name of the rule, and the actions to be taken for that rule in the 
