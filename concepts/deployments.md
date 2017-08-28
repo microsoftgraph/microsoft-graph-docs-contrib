@@ -18,8 +18,8 @@ The following table shows the service root endpoints for Microsoft Graph and Mic
 | National Cloud | Microsoft Graph | Microsoft Graph Explorer
 |---------------------------|----------------|----------------|
 | Microsoft Graph operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
-| Microsoft Graph Germany | https://graph.cloudapi.de/ | TBD |
-| Microsoft Graph for US Government | https://graph.windows.net/ | TBD |
+| Microsoft Graph Germany | https://graph.microsoft.de | Not supported. |
+| Microsoft Graph for US Government | https://graph.microsoft.com | Not supported. |
 | Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > **Note**: Apps can only access organizational data through the national cloud endpoints. This means that only data in tenants registered in the specific national cloud can be accessed. Apps should use the global service (https://graph.microsoft.com) to access consumer data -- that is, data associated with personal Microsoft accounts. Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service.
@@ -60,7 +60,6 @@ The following Microsoft Graph features are generally available (on the `/v1.0` e
 * Calendar
 * Personal Contacts 
 * Create, read, update, and delete (CRUD) operations
-* Cross-origin resource sharing (CORS) support.
 
 The following Microsoft Graph features are also available in preview (on the `/beta` endpoint):
 
