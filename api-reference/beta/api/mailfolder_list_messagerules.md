@@ -50,7 +50,6 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#Me/mailFolders('inbox')/messageRules",
   "value":[
     {
-      "@odata.id":"https://graph.microsoft.com/beta/users('94447c6e-ea4c-494c-a9ed-d905e366c5cb@007e925e-fb5a-4f60-9cb6-58a21e692480')/mailFolders('inbox')/messageRules('AQAAAJ5dZp8=')",
       "id":"AQAAAJ5dZp8=",
       "displayName":"Remove spam",
       "sequence":1,
@@ -68,7 +67,6 @@ Content-type: application/json
       }
     },
     {
-      "@odata.id":"https://graph.microsoft.com/beta/users('94447c6e-ea4c-494c-a9ed-d905e366c5cb@007e925e-fb5a-4f60-9cb6-58a21e692480')/mailFolders('inbox')/messageRules('AQAAAJ5dZqA=')",
       "id":"AQAAAJ5dZqA=",
       "displayName":"From partner",
       "sequence":2,

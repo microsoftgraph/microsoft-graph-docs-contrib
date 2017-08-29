@@ -32,7 +32,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_outlookcategory"
+  "name": "delete_outlookcategory"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/masterCategories('4b1c2495-54c9-4a5e-90a2-0ab0b31987d8')
@@ -41,7 +41,8 @@ DELETE https://graph.microsoft.com/beta/me/outlook/masterCategories('4b1c2495-54
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "delete_outlookcategory",
+  "isEmpty": true
 } -->
 ```http
 HTTP/1.1 204 No Content

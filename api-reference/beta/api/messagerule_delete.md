@@ -39,7 +39,7 @@ DELETE https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAA
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "isEmpty": true
 } -->
 ```http
 HTTP/1.1 204 No Content

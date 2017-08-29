@@ -51,7 +51,6 @@ Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#Me/mailFolders('inbox')/messageRules/$entity",
-  "@odata.id":"https://graph.microsoft.com/beta/users('94447c6e-ea4c-494c-a9ed-d905e366c5cb@007e925e-fb5a-4f60-9cb6-58a21e692480')/mailFolders('inbox')/messageRules('AQAAAJ5dZqA=')",
   "id":"AQAAAJ5dZqA=",
   "displayName":"From partner",
   "sequence":2,
