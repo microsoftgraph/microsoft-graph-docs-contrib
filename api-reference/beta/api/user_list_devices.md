@@ -4,9 +4,16 @@
 
 Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to [send a command](send_device_command.md) to your device.
 
-## Prerequisites
+## Permissions
 
-The following scope is required to execute this API: *Device.Read*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Device.Read    |
+|Application | Not supported. |
 
 ## HTTP request
 

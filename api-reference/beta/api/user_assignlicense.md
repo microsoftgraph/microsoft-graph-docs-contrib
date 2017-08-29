@@ -6,9 +6,15 @@ Add or remove licenses for the user to enable or disable their use of Microsoft 
 
 To get the subscriptions available in the directory, perform a [GET subscribedSkus request](subscribedsku_list.md). 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*User.ReadWrite.All; Directory.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
