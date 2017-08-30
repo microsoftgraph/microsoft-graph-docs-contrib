@@ -43,82 +43,31 @@ The actual endpoints can be formed by adding the appropriate fragment to the bas
 Tenant-specific endpoints can be formed by replacing "common" in the URLs above with either the tenant ID or a verified domain for the tenant. 
 Whether you use the common or tenant-specific endpoints will depend upon the requirements of your app and the authentication flow you are using to get tokens. To learn more about Azure AD access tokens and Microsoft Graph, see [Get auth tokens](./auth_overview.md).
 
-> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) are NOT available for use with national cloud deployments. 
+> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) are available on the global service only; they are not yet supported for use with national cloud deployments. 
 
 ## Supported features
 
-**I would like to make this section a matrix with features (like Users, Groups, Files, etc) in rows and a column for each cloud (global service excluded). That assumes that there is differing support among the national clouds. I also wonder whether it might be easier to list the things that are not supported -- rather than list the things that are.**
-
-**IN SHORT:  I NEED INFO TO FINISH THIS SECTION**
-
-The following Microsoft Graph features are generally available (on the `/v1.0` endpoint):
+The following Microsoft Graph features are generally available (on the `/v1.0` endpoint) across all national cloud deployments, except where noted:
 
 * Users
 * Groups
-* Files
-* Mail
-* Calendar
+* Excel (Support is limited on Microsoft Graph operated by 21Vianet in China.)
+* OneDrive (Support is limited on Microsoft Graph operated by 21Vianet in China.)
+* Outlook Mail
+* Outlook Calendar
 * Personal Contacts 
-* Create, read, update, and delete (CRUD) operations
+* SharePoint (Support is limited on Microsoft Graph operated by 21Vianet in China.)
+* Delta query (Support varies across different resources on each national cloud deployment.)
+* Webhooks (Support varies across different resources on each national cloud deployment.)
 
-The following Microsoft Graph features are also available in preview (on the `/beta` endpoint):
+The following addtional Microsoft Graph features are available in preview (on the `/beta` endpoint) across all national cloud deployments, except where noted:
 
 * Organizational Contacts
 * Applications
 * Service Principals
+
+The following Microsoft Graph features are not yet supported on national cloud deployments:
+
+* Microsoft Planner
 * Directory schema extensions
-* Webhooks
-
-
-------------------------------------------------------
-<!-- Previous article -->
-
-<!--
-## Microsoft Graph operated by 21Vianet in China
-
-This section provides information about Microsoft Graph operated by 21Vianet, and the capabilities that are available to developers. 
-
-### Microsoft Graph service root endpoints
-| Microsoft Graph operated by 21Vianet | Microsoft Graph|
-|---------------------------|----------------|
-| https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
-
-### Microsoft Graph Explorer
-| Microsoft Graph Explorer in China | Microsoft Graph Explorer|
-|---------------------------|----------------|
-|https://developer.microsoft.com/zh-cn/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
-
-### Azure OpenID Connect and OAuth2.0
-The endpoints used to acquire tokens for sign-in or to call Microsoft Graph operated by 21Vianet differ from those of other offerings. 
-
-| Microsoft Graph operated by 21Vianet | Microsoft Graph|
-|---------------------------|----------------|
-| https://login.chinacloudapi.cn | https://login.microsoftonline.com|
- 
-Use https://login.chinacloudapi.cn/common/oauth2/authorize to authenticate the user and https://login.chinacloudapi.cn/common/oauth2/token to acquire a token for your app to call Microsoft Graph operated by 21Vianet.
-
-> **Note:** The latest [v2.0 authorization and token endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) are NOT available for use with Microsoft Graph operated by 21Vianet. 
-
->Apps can only access organizational data and not consumer data via the **https://microsoftgraph.chinacloudapi.cn** endpoint. Apps should use the **https://graph.microsoft.com** endpoint to access consumer data.
-
-### Service capabilities offered by Microsoft Graph operated by 21Vianet
-The following Microsoft Graph features are generally available (on the `/v1.0` endpoint):
-
-* Users
-* Groups
-* Files
-* Mail
-* Calendar
-* Personal Contacts 
-* Create, read, update, and delete (CRUD) operations
-* Cross-origin resource sharing (CORS) support.
-
-The following Microsoft Graph features are also available in preview (on the `/beta` endpoint):
-
-* Organizational Contacts
-* Applications
-* Service Principals
-* Directory schema extensions
-* Webhooks
-
--->
+* Open type extensions
