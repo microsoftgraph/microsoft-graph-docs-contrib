@@ -1,6 +1,6 @@
 # dateTimeTimeZone resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Describes the date, time, and time zone of a point in time.
 
@@ -9,7 +9,6 @@ Describes the date, time, and time zone of a point in time.
 |:---------------|:--------|:----------|
 |DateTime|String|A single point of time in a combined date and time representation (`<date>T<time>`).|
 |TimeZone|String|One of the following time zone names.|
-
 
 The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.
 

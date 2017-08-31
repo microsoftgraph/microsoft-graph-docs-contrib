@@ -1,6 +1,6 @@
 # ItemReference resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **ItemReference** resource provides information necessary to address a [DriveItem](driveitem.md) via the API.
 
@@ -35,7 +35,6 @@ Here is a JSON representation of the resource
 | path          | String                            | Path that can be used to navigate to the item. Read-only.                                                  |
 | shareId       | String                            | A unique identifier for a shared resource that can be accessed via the [Shares](../api/shares_get.md) API. |
 | sharepointIds | [sharepointIds](sharepointids.md) | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                   |
-
 
 ## Remarks
 

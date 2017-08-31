@@ -1,13 +1,19 @@
 ﻿# Create windows81VpnConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -46,8 +52,6 @@ The following table shows the properties that are required when you create a win
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection.|
 |enableSplitTunneling|Boolean|Enable split tunneling for the VPN.|
 |proxyServer|[windows81VpnProxyServer](../resources/intune_deviceconfig_windows81vpnproxyserver.md)|Proxy Server.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [windows81VpnConfiguration](../resources/intune_deviceconfig_windows81vpnconfiguration.md) object in the response body.

@@ -3886,6 +3886,7 @@
 		  <Item text="Get SharePoint site usage report" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="Get SharePoint Site Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the SharePoint Site Usage reports. The response will be a CSV file in a binary stream." />
 		  <Item text="Get Yammer activity report" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Get Yammer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Activity reports. The response will be a CSV file in a binary stream." />
 		  <Item text="Get Yammer device usage report" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Get Yammer Device Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Device Usage reports. The response will be a CSV file in a binary stream." />
+		  <Item text="Get Yammer groups activity report" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="Retrieve the Yammer groups activity report." />
 		</Item>
 	</Item>
     <Item text="Schema Extensions" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">

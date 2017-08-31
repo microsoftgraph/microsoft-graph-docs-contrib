@@ -1,21 +1,27 @@
 ﻿# Create deviceInstallState
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementApps.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceAppManagement/managedEBooks{managedEBookId}/deviceStates
-POST /deviceAppManagement/managedEBooks{managedEBookId}/userStateSummary{userInstallStateSummaryId}/deviceStates
+POST /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates
+POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates
 ```
 
 ## Request headers
@@ -40,8 +46,6 @@ The following table shows the properties that are required when you create a dev
 |osDescription|String|OS Description.|
 |userName|String|Device User Name.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object in the response body.
 
@@ -49,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a [deviceIn
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks{managedEBookId}/deviceStates
+POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates
 Content-type: application/json
 Content-length: 374
 

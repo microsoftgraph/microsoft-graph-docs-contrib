@@ -1,6 +1,6 @@
 # Create invitation
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
 
@@ -10,7 +10,14 @@ When creating a new invitation you have several options available:
 2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.
 
 ## Prerequisites
-One of the following scopes is required to execute this API: *User.Invite.All* or *User.ReadWrite.All*  or *Directory.ReadWrite.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

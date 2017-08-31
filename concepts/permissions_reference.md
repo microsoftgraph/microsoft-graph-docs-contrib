@@ -146,27 +146,27 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Microsoft Intune Device Management permissions
+## Intune Device Management permissions
 
 #### Delegated permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _DeviceManagementApps.Read.All_ | Read Microsoft Intune apps | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
+| _DeviceManagementApps.ReadWrite.All_ | Read and write Microsoft Intune apps | Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
+| _DeviceManagementConfiguration.Read.All_ | Read Microsoft Intune device configuration and policies | Allows the app to read properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
+| _DeviceManagementConfiguration.ReadWrite.All_ | Read and write Microsoft Intune device configuration and policies  | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
+| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Perform user-impacting remote actions on Microsoft Intune devices | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune. | Yes |
+| _DeviceManagementManagedDevices.Read.All_ | Read Microsoft Intune devices | Allows the app to read the properties of devices managed by Microsoft Intune. | Yes |
+| _DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | Yes |
+| _DeviceManagementRBAC.Read.All_ | Read Microsoft Intune RBAC settings | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes |
+| _DeviceManagementRBAC.ReadWrite.All_ | Read and write Microsoft Intune RBAC settings | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes |
+| _DeviceManagementServiceConfig.Read.All_ | Read Microsoft Intune configuration | Allows the app to read Intune service properties including device enrollment and third party service connection configuration. | Yes |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | Read and write Microsoft Intune configuration | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
 
 #### Application permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfig.Read.All_ | Read Microsoft Intune configuration (preview) | Allows the app to read Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
-| _DeviceManagementServiceConfig.ReadWrite.All_ | Read and write Microsoft Intune configuration (preview) | Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration. | Yes |
-| _DeviceManagementConfiguration.Read.All_ | Read Microsoft Intune device configuration and policies (preview) | Allows the app to read properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
-| _DeviceManagementConfiguration.ReadWrite.All_ | Read and write Microsoft Intune device configuration and policies (preview) | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes |
-| _DeviceManagementApps.Read.All_ | Read Microsoft Intune apps (preview) | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
-| _DeviceManagementApps.ReadWrite.All_ | Read and write Microsoft Intune apps (preview) | Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes |
-| _DeviceManagementRBAC.Read.All_ | Read Microsoft Intune RBAC settings (preview) | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes |
-| _DeviceManagementRBAC.ReadWrite.All_ | Read and write Microsoft Intune RBAC settings (preview) | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes |
-| _DeviceManagementManagedDevices.Read.All_ | Read Microsoft Intune devices (preview) | Allows the app to read the properties of devices managed by Microsoft Intune. | Yes |
-| _DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices (preview) | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | Yes |
-| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Perform user-impacting remote actions on Microsoft Intune devices (preview) | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune. | Yes |
+None.
 
 ### Remarks
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
@@ -308,13 +308,16 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ### Remarks
 
-Group functionality is not supported on Microsoft accounts. 
+Group functionality is not supported on personal Microsoft accounts. 
 
-For Office 365 groups, Group permissions grant the app access to the contents of the group; for example, conversations, files, notes, and so on. Group permissions are also used to control access to [Microsoft Planner](../api-reference/beta/resources/planner_overview.md) resources and APIs.
+For Office 365 groups, Group permissions grant the app access to the contents of the group; for example, conversations, files, notes, and so on. 
 
 For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](../concepts/known_issues.md).
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](../api-reference/beta/resources/administrativeunit.md).
+
+Group permissions are also used to control access to [Microsoft Planner](../api-reference/beta/resources/planner_overview.md) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
+
 
 ### Example usage
 #### Delegated
@@ -592,7 +595,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Sites.Read.All_ |    Read items in all site collections (preview) | Allows the app to read documents and list items in all site collections without a signed in user. | Yes |
+| _Sites.ReadWrite.All_ |    Read and write items in all site collections (preview) | Allows the app to create, read, update, and delete documents and list items in all site collections without a signed in user. | Yes |
 
 ### Remarks
 Sites permissions are valid only on work or school accounts.
@@ -602,7 +608,6 @@ Sites permissions are valid only on work or school accounts.
 
 * _Sites.Read.All_ : Read the lists on the SharePoint root site (`GET /beta/sharePoint/site/lists`)
 * _Sites.ReadWrite.All_ : Create new list items in a SharePoint list (`POST /beta/sharePoint/site/lists/123/items`)
-
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 

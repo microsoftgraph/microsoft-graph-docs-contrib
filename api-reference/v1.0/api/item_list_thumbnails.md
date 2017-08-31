@@ -18,16 +18,14 @@ Here are the most common ones:
 * Determine if a custom uploaded thumbnail exists
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
-
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
+|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
 
@@ -39,7 +37,7 @@ GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the `$select` [OData puery parameter](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request body
 Do not supply a request body for this method.
@@ -106,7 +104,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/thumbnails/{thumb-
 | **item-id**  | string | The unique identifier for the item referenced.                                      |
 | **thumb-id** | number | The index of the thumbnail, usually 0-4.                                            |
 | **size**     | string | The size of the thumbnail requested. This must be one of the standard sizes listed. |
-
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 ```http

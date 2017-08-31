@@ -1,21 +1,27 @@
 ﻿# Get macOSCompliancePolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [macOSCompliancePolicy](../resources/intune_deviceconfig_macoscompliancepolicy.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}
-GET /deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/groupAssignments{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
+GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
 ```
 
 ## Optional query parameters
@@ -36,7 +42,7 @@ If successful, this method returns a `200 OK` response code and [macOSCompliance
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ### Response

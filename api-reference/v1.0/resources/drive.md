@@ -69,7 +69,6 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.                                 |
 | special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable. |
 
-
 ## Methods
 
 The following methods are available for drive resources.

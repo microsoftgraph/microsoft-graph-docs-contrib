@@ -1,13 +1,19 @@
 ﻿# List depEnrollmentProfiles
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 List properties and relationships of the [depEnrollmentProfile](../resources/intune_corpenrollment_depenrollmentprofile.md) objects.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementServiceConfig.ReadWrite.All; DeviceManagementServiceConfig.Read.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -41,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1441
+Content-Length: 1494
 
 {
   "value": [
@@ -80,7 +86,8 @@ Content-Length: 1441
       "macOSFileVaultDisabled": true,
       "awaitDeviceConfiguredConfirmation": true,
       "sharedIPadMaximumUserCount": 10,
-      "enableSharedIPad": true
+      "enableSharedIPad": true,
+      "enableAuthenticationViaCompanyPortal": true
     }
   ]
 }

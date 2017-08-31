@@ -1,13 +1,19 @@
 ﻿# Create androidForWorkVpnConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [androidForWorkVpnConfiguration](../resources/intune_deviceconfig_androidforworkvpnconfiguration.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -47,8 +53,6 @@ The following table shows the properties that are required when you create a and
 |customData|[keyValue](../resources/intune_deviceconfig_keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
 |enableSplitTunneling|Boolean|Send all network traffic through VPN.|
 |authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [androidForWorkVpnConfiguration](../resources/intune_deviceconfig_androidforworkvpnconfiguration.md) object in the response body.

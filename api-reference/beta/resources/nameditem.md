@@ -1,6 +1,6 @@
 # NamedItem resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, reference to a range. This object can be used to obtain range object associated with names.
 
@@ -15,7 +15,6 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 |[Update](../api/nameditem_update.md) | [NamedItem](nameditem.md)	|Update NamedItem object. |
 |[Range](../api/nameditem_range.md)|[Range](range.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.|
 |[List](../api/nameditem_list.md) | [NamedItem](nameditem.md) collection |Get namedItem object collection. |
-
 
 ## Properties
 | Property	   | Type	|Description|

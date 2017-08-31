@@ -1,6 +1,6 @@
 # calendar resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A calendar which is a container for events.
 
@@ -21,7 +21,6 @@ A calendar which is a container for events.
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [calendar](calendar.md) | Create one or more multi-value extended properties in a new or existing calendar.  |
 |[Get calendar with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Get a calendar that contains a multi-value extended property by using `$expand`. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -37,7 +36,6 @@ A calendar which is a container for events.
 |isSharedWithMe |Boolean |True if the user has been shared this calendar, false otherwise. This property is always false for a calendar owner.  |
 |name|String|The calendar name.|
 |owner |[emailAddress](emailaddress.md) | If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user. |
-
 
 ## Relationships
 | Relationship | Type	|Description|

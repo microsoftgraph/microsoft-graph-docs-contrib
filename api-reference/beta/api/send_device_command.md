@@ -1,13 +1,20 @@
 # Send device command
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the 
 *type*, *payload*, *packageFamilyName*, and *appServiceName* parameters.
 
-## Prerequisites
+## Permissions
 
-The following scope is required to execute this API: *Device.Command*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Device.Command    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -24,7 +31,6 @@ POST me/devices/{id}/commands
 |:----|:------|
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
-
 
 ## Request body
 

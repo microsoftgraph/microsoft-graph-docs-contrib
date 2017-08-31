@@ -1,14 +1,15 @@
 # List registeredUsers
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of users that are registered users of the device.
-## Prerequisites
-One of the following **permissions** is required to execute this API: 
-- *Device.Read.All* and *User.Read.All*
-- *Directory.Read.All*
-- *Directory.ReadWrite.All* 
-- *Directory.AccessAsUser.All*
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+- Device.ReadWrite.All and User.ReadBasic.All
+- Directory.Read.All
+- Directory.ReadWrite.All 
+- Directory.AccessAsUser.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

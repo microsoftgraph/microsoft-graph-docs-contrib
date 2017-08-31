@@ -1,21 +1,27 @@
 ﻿# Update defaultDeviceCompliancePolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [defaultDeviceCompliancePolicy](../resources/intune_deviceconfig_defaultdevicecompliancepolicy.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}
-PATCH /deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}/groupAssignments{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
 ```
 
 ## Request headers
@@ -37,8 +43,6 @@ The following table shows the properties that are required when you create a [de
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 
-
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [defaultDeviceCompliancePolicy](../resources/intune_deviceconfig_defaultdevicecompliancepolicy.md) object in the response body.
 
@@ -46,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an updated [defa
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies{deviceCompliancePolicyId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
 Content-length: 163
 

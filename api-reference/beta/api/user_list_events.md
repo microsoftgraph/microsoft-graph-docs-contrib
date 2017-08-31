@@ -1,6 +1,6 @@
 # List events
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a list of [event](../resources/event.md) objects from the user's default calendar or 
 from a specified calendar. The list contains single instance meetings and series masters.
@@ -39,9 +39,15 @@ If you specify either header, the response will include the corresponding `Prefe
 - For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read; Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
