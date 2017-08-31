@@ -48,6 +48,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 
+### Outlook calendar
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) resource to support organizing an event that attendees can attend from more than one location. |
+| Addition | Beta | Added the **locationType**, **uniqueId**, and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
+
+
 ### Outlook Inbox message rules
 
 |**Change type**|**Version**|**Description**|
