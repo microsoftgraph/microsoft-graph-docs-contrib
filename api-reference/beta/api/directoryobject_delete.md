@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
-**NOTE:** Users, groups, and contacts are types of directory object. As a result,if you need to delete users, the following **scope** can and should be used: _User.ReadWrite.All_
+**NOTE:** Users, groups, and contacts are types of directory object. As a result,if you need to delete users, the following permission can and should be used: User.ReadWrite.All
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
