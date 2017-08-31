@@ -6,9 +6,14 @@
 
 Deletes a [iosEasEmailProfileConfiguration](../resources/intune_deviceconfig_ioseasemailprofileconfiguration.md).
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
