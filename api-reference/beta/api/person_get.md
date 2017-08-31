@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code and [person](../reso
 ## Examples
 ### Browse
 The requests in this section get the people most relevant to the signed-in user (`/me`), based on communication, collaboration, and business relationships. 
-By default, each response returns 10 records, but you can change this using the *$top* parameter. These requests require the *People.Read* scope.
+By default, each response returns 10 records, but you can change this using the *$top* parameter. These requests require the People.Read permission.
 
 <!-- {
   "blockType": "request",
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddress
 ```
 
 ### Search people
-The requests in this section also get the people most relevant to the signed-in user (`/me`). Search requests require the *People.Read* scope.
+The requests in this section also get the people most relevant to the signed-in user (`/me`). Search requests require the People.Read permission.
 
 #### Using search to select people
 
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 ```
 ### Related people
 
-The following request gets the people most relevant to another person in the user's organization. This request requires the *User.ReadBasic.All* scope. In this example, Nestor Kellum's relevant people are displayed.
+The following request gets the people most relevant to another person in the user's organization. This request requires the User.ReadBasic.All permission. In this example, Nestor Kellum's relevant people are displayed.
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
