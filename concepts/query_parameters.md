@@ -136,11 +136,11 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 Use the `$search` query parameter to restrict the results of a request to match a search criterion.
 
-> **Note:** You can currently search **only** [message](../api-reference/v1.0/resources/message) and [person](../api-reference/beta/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
+> **Note:** You can currently search **only** [message](../api-reference/v1.0/resources/message) and [person](../api-reference/v1.0/resources/person) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
 
-### Using $search on `message`
+### Using $search on `message` collections
 
-Search criteria are expressed using [Advanced Query Syntax (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). The results are sorted by the date and time that the message was sent.
+Search criteria on messages are expressed using [Advanced Query Syntax (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). The results are sorted by the date and time that the message was sent.
 
 You can specify the following properties on a `message` in a `$search` criterion:
 `attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`, `toRecipients`
@@ -159,17 +159,34 @@ The next example searches all messages in the user's Inbox that were sent from a
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 
-### Using $search on `person`
+### Using $search on `person` collections
 
-Searches on people occur across both the `displayName` and `emailAddress` properties. Searches implement a fuzzy matching algorithm. They will return results based on an exact match and also on inferences about the intent of the search. For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the `people` collection of the signed-in user. All of the following searches will return results that contain Tyler.
+You can use the Microsoft Graph People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter.
+
+Searches on people occur on both the `displayName` and `emailAddress` properties of the [person](../api-reference/v1.0/resources/person) resource. Searches implement a fuzzy matching algorithm. They will return results based on an exact match and also on inferences about the intent of the search. For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the `people` collection of the signed-in user. All of the following searches will return results that contain Tyler.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search=tyler                //matches Tyler's name and email
-GET https://graph.microsoft.com/v1.0/me/messages?$search=tylerle              //matches Tyler's email
-GET https://graph.microsoft.com/v1.0/me/messages?$search=tylerle@example.com  //matches Tyler's email
-GET https://graph.microsoft.com/v1.0/me/messages?$search=tiler                //fuzzy match with Tyler's name 
-GET https://graph.microsoft.com/v1.0/me/messages?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
+
+You can also perform searches for people who are interested in a particular topic. Searches are performed based on inferences derived from mail conversations. For example, the following search will return a collection of people relevant to the signed-in user who have expressed an interest in pizza. Note that the search phrase is enclosed in quotes.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+```
+
+Finally, you can combine both people searches and topic searches in the same request by combining the two types of search expression.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+This request essentially conducts two searches: a fuzzy search against `displayName` and `emailAddress` properties of the signed-in user's relevant people and a topic search for "pizza" against the user's relevant people. The results are then ranked, ordered, and returned. Note that the search is not restrictive; you may get results that contain people that fuzzy match "tyl", or that are interested in "pizza", or both.
+
+To learn more about the People API, see [Get information about relevant people](./people_example.md).  
 
 ## select
 
