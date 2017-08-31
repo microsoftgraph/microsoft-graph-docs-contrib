@@ -6,9 +6,14 @@
 
 Create a new [importedAppleDeviceIdentity](../resources/intune_corpenrollment_importedappledeviceidentity.md) by posting to the importedAppleDeviceIdentities collection.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementServiceConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
