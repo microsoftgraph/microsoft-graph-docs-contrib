@@ -4,11 +4,18 @@
 
 Activate the role that is assigned to the requestor.
 
-## Prerequisites
-The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 The requestor can only call ```selfActivate``` for the role that is assigned to him.
  
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -29,14 +29,15 @@ See [Extended properties overview](../resources/extended-properties-overview.md)
 open extensions or extended properties, and how to specify extended properties.
 
 ## Prerequisites
-One of the following **scopes** is required to execute this API, depending on the resource you're
-getting:
+## Permissions
+One of the following permissions is required to call this API, depending on the resource you're
+getting. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- _Mail.Read_
-- _Calendars.Read_
-- _Contacts.Read_
-- _Tasks.Read_
-- _Group.Read.All_ 
+- Mail.Read
+- Calendars.Read
+- Contacts.Read
+- Tasks.Read
+- Group.Read.All 
  
 ## HTTP request
 
