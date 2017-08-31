@@ -5,8 +5,15 @@
 Retrieve a list of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by 
 the user's communication, collaboration and business relationships.
 ## Prerequisites
-The following **scopes** are required to execute this API: *People.Read*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
  
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | People.Read    |
+|Delegated (personal Microsoft account) | People.Read    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
