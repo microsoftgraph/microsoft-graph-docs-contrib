@@ -9,7 +9,7 @@ For example, the following URL requests all of the users in an organization with
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-If the result contains multiple pages, Microsoft Graph will return an `odata:nextLink` property similar to the following along with the first page of users.
+If the result contains more than 5 users, Microsoft Graph will return an `odata:nextLink` property similar to the following along with the first page of users.
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
