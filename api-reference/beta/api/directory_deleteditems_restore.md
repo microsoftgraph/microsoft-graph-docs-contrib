@@ -10,6 +10,7 @@ A recently deleted item will remain available for up to 30 days. After 30 days, 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
 * For users: User.ReadWrite.All, Directory.AccessAsUser.All
 * For groups: Group.ReadWrite.All, Directory.AccessAsUser.All
 
