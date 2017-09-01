@@ -1,21 +1,26 @@
 ﻿# Create deviceComplianceActionItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations
 ```
 
 ## Request headers
@@ -34,8 +39,7 @@ The following table shows the properties that are required when you create a dev
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced.|
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 |notificationTemplateId|String|What notification Message template to use|
-
-
+|notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md) object in the response body.
@@ -44,15 +48,18 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations
 Content-type: application/json
-Content-length: 190
+Content-length: 271
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "gracePeriodHours": 0,
   "actionType": "notification",
-  "notificationTemplateId": "Notification Template Id value"
+  "notificationTemplateId": "Notification Template Id value",
+  "notificationMessageCCList": [
+    "Notification Message CCList value"
+  ]
 }
 ```
 
@@ -61,14 +68,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 239
+Content-Length: 320
 
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "id": "e01a1893-1893-e01a-9318-1ae093181ae0",
   "gracePeriodHours": 0,
   "actionType": "notification",
-  "notificationTemplateId": "Notification Template Id value"
+  "notificationTemplateId": "Notification Template Id value",
+  "notificationMessageCCList": [
+    "Notification Message CCList value"
+  ]
 }
 ```
 

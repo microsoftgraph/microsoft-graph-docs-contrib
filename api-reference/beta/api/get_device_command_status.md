@@ -1,12 +1,18 @@
 # Get device command status
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the status of a command on a device. For the  full list of status codes, see [List of actionStatus](#list-of-actionstatus).
 
-## Prerequisites
+## Permissions
 
-The following scope is required to execute this API: *Device.Command*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Device.Command    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -18,13 +24,10 @@ GET me/devices/{id}/commands/{id}
 
 ## Request headers
 
-
-
 | Header |Value
 |:----|:------|
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
-
 
 ## Response
 
@@ -66,9 +69,13 @@ HTTP/1.1 200 OK
 - custom // Custom status
 
 ## Example
+
 In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call to `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
 
-### Request 
+##### Request
+
+The following example shows the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_command"
@@ -83,8 +90,9 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-### Response
+##### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -117,11 +125,17 @@ HTTP/1.1 200 OK
 Get a response payload for a specific action on a device. The response payload is used when querying an app service to carry data back.
 
 
-## Prerequisites
+### Permissions
 
-The following scope is required to execute this API: *Device.Command*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-## HTTP request
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Device.Command    |
+|Application | Not supported. |
+
+### HTTP request
 
 ```http
 
@@ -129,14 +143,13 @@ GET me/beta/devices/{id}/command/{id}/responsePayload
 
 ```
 
-## Request headers
+### Request headers
 
 
 | Header |Value
 |:----|:------|
 |Authorization| Bearer {token}. Required. |
 |Accept | application/json |
-
 
 ### Response
 
@@ -153,10 +166,13 @@ HTTP/1.1 200 OK
 
 ```
 
-## Example
+### Example
+
 In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command.
 
-#### Request
+##### Request
+
+The following examples shows the request.
 
 <!-- {
   "blockType": "request",
@@ -170,8 +186,10 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-#### Response
-Here is an example of the response.
+##### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false,

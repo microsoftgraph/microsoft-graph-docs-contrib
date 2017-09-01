@@ -1,6 +1,6 @@
 # Create Event
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar. 
 
@@ -10,9 +10,15 @@ You can specify the time zone for each of the start and end times of the event a
 When the event is created, the server send invitations to all attendees.
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,6 +43,7 @@ In the request body, supply a JSON representation of [event](../resources/event.
 Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.
 
 ## Response
+
 If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.
 
 ## Example

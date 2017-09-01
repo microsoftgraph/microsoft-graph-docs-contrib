@@ -1,6 +1,6 @@
 # recurrenceRange resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The duration of an event.
 
@@ -10,10 +10,9 @@ The duration of an event.
 |:---------------|:--------|:----------|
 |endDate|Date|The end date of the series.|
 |numberOfOccurrences|Int32|How many times to repeat the event.|
-|recurrenceTimeZone|String |Time zone for the **startDate** and **endDate** properties. | 
+|recurrenceTimeZone|String |Time zone for the **startDate** and **endDate** properties. |
 |startDate|Date|The start date of the series.|
 |type|String|The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2. Possible values are: `EndDate`, `NoEnd`, `Numbered`.||
-
 
 ## JSON representation
 

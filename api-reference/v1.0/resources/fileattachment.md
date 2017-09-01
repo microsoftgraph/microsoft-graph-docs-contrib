@@ -17,7 +17,6 @@ Derived from [attachment](attachment.md).
 |[Get](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
 |[Delete](../api/attachment_delete.md) | None |Delete fileAttachment object. |
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

@@ -1,12 +1,16 @@
 # WorksheetProtection: protect
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Protect a worksheet. It throws if the worksheet has been protected.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +23,6 @@ POST /workbook/worksheets/{id|name}/protection/protect
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 
-
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
@@ -28,6 +31,7 @@ In the request body, provide a JSON object with the following parameters.
 |options|WorksheetProtectionOptions|Optional. sheet protection options.|
 
 ## Response
+
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example

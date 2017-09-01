@@ -1,11 +1,17 @@
 # Update calendar
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Update the properties of calendar object.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's or group's default [calendar](../resources/calendar.md).
@@ -43,6 +49,7 @@ In the request body, supply the values for relevant fields that should be update
 |name|String|The calendar name.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.
 ## Example
 ##### Request

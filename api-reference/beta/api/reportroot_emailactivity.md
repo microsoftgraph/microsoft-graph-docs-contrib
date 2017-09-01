@@ -1,18 +1,20 @@
 # Get EmailActivity report
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the Exchange Email Activity reports. The response will be a CSV file in a binary stream.
 
 > Note: You can go to [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44) to check the meaning of different views.
 
-## Prerequisites
+## Permissions
 
-The following **scopes** are required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Reports.Read.All
-
-> Note: Permission scopes are listed in least privilege required order.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Reports.Read.All |
 
 ## HTTP request
 
@@ -67,7 +69,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 Here is an example of how to call this API.
 
-### Request
+##### Request
 
 Here is an example of the request.
 <!-- {
@@ -79,7 +81,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Detail',period='D7')/content
 ```
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {
@@ -93,7 +95,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/I0bJ_HpgnSeYRg4sXTiKqggV6eXU0t__XDezYGO-NQw
 ```
 
-Follow the 302 redirection and the downloading CSV file will have the schema as below.
+Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 
 <!-- {
   "blockType": "response",

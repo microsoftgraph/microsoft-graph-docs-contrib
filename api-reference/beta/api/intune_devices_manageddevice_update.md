@@ -1,14 +1,19 @@
 ﻿# Update managedDevice
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [managedDevice](../resources/intune_devices_manageddevice.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementManagedDevices.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -17,8 +22,9 @@ One of the following [permission scopes](https://developer.microsoft.com/en-us/g
 ```http
 PATCH /managedDevices/{managedDevicesId}
 PATCH /users/{usersId}/managedDevices/{managedDeviceId}
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
+PATCH /deviceManagement/managedDevices/{managedDeviceId}
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Request headers
@@ -47,7 +53,7 @@ The following table shows the properties that are required when you create a [ma
 |deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
 |complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
-|managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `unknown`.|
+|managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `configurationManagerClientMdmEas`, `unknown`.|
 |osVersion|String|Operating system version of the device.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated.|
 |easDeviceId|String|Exchange ActiveSync Id of the device.|
@@ -75,8 +81,7 @@ The following table shows the properties that are required when you create a [ma
 |phoneNumber|String|Phone number of the device|
 |androidSecurityPatchLevel|String|Android security patch level|
 |userDisplayName|String|User display name|
-
-
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune_devices_manageddevice.md) object in the response body.
@@ -87,7 +92,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 Content-type: application/json
-Content-length: 2977
+Content-length: 3295
 
 {
   "userId": "User Id value",
@@ -164,7 +169,16 @@ Content-length: 2977
   "serialNumber": "Serial Number value",
   "phoneNumber": "Phone Number value",
   "androidSecurityPatchLevel": "Android Security Patch Level value",
-  "userDisplayName": "User Display Name value"
+  "userDisplayName": "User Display Name value",
+  "configurationManagerClientEnabledFeatures": {
+    "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures",
+    "inventory": true,
+    "modernApps": true,
+    "resourceAccess": true,
+    "deviceConfiguration": true,
+    "compliancePolicy": true,
+    "windowsUpdateForBusiness": true
+  }
 }
 ```
 
@@ -173,7 +187,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3078
+Content-Length: 3396
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -252,7 +266,16 @@ Content-Length: 3078
   "serialNumber": "Serial Number value",
   "phoneNumber": "Phone Number value",
   "androidSecurityPatchLevel": "Android Security Patch Level value",
-  "userDisplayName": "User Display Name value"
+  "userDisplayName": "User Display Name value",
+  "configurationManagerClientEnabledFeatures": {
+    "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures",
+    "inventory": true,
+    "modernApps": true,
+    "resourceAccess": true,
+    "deviceConfiguration": true,
+    "compliancePolicy": true,
+    "windowsUpdateForBusiness": true
+  }
 }
 ```
 

@@ -1,6 +1,6 @@
 # SharingLink resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **SharingLink** resource groups link-related data items into a single structure.
 
@@ -52,7 +52,6 @@ This table defines the possible values for the **type** property:
 |:---------------|:----------------------------------------------------------------------------------------------------------------------------|
 | `anonymous`    | The sharing link is available for anyone to use.                                                                            |
 | `organization` | The sharing link is available for anyone within the same organization (tenant) to use. Not available for OneDrive Personal. |
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

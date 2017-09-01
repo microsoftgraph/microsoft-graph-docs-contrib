@@ -34,7 +34,6 @@ Here is a JSON representation of the resource
 | shareId       | String                            | A unique identifier for a shared resource that can be accessed via the [Shares](../api/shares_get.md) API. |
 | sharepointIds | [sharepointIds](sharepointids.md) | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                   |
 
-
 ## Remarks
 
 To address a **driveItem** from an **itemReference** resource, construct a URL of the format:

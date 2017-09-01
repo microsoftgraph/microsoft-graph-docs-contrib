@@ -1,6 +1,6 @@
 # outlookTask resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 An Outlook item that can track a work item. 
 
@@ -39,7 +39,6 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Get task with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [outlookTask](outlooktask.md) | Get Outlook tasks that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Create one or more multi-value extended properties in a new or existing Outlook task.  |
 |[Get task with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [outlookTask](outlooktask.md) | Get an Outlook task that contains a multi-value extended property by using `$expand`. |
-
 
 ## Properties
 | Property	   | Type	|Description|
