@@ -29,7 +29,6 @@ See [Extended properties overview](../resources/extended-properties-overview.md)
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
-## Permissions
 One of the following permissions is required to call this API, depending on the resource you're
 getting. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
