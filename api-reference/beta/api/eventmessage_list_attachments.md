@@ -1,10 +1,17 @@
 # List attachments
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of attachment objects.
-## Prerequisites
-The following **scopes** are required to execute this API: _Mail.Read_ 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.Read    |
+|Application | Mail.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

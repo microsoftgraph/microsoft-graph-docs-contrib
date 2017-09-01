@@ -1,18 +1,20 @@
 # Accessing shared DriveItems
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
 
 To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#transform-a-sharing-url).
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
 

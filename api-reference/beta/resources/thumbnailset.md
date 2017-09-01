@@ -1,6 +1,6 @@
 # ThumbnailSet resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources.
 It is used to represent a set of thumbnails associated with a DriveItem.
@@ -36,7 +36,6 @@ Here is a JSON representation of the resource.
 | medium   | [Thumbnail](thumbnail.md) | A 176x176 scaled thumbnail.                                                       |
 | small    | [Thumbnail](thumbnail.md) | A 48x48 cropped thumbnail.                                                        |
 | source   | [Thumbnail](thumbnail.md) | A custom thumbnail image or the original image used to generate other thumbnails. |
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

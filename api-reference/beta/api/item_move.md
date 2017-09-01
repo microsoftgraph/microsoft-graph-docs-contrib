@@ -1,6 +1,6 @@
 # Move a DriveItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 This is a special case of the [Update](item_update.md) method.
@@ -8,12 +8,14 @@ Your app can combine moving an item to a new container and updating other proper
 
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
 
@@ -29,7 +31,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 | Name          | Type   | Description                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
-
 
 ## Request body
 In the request body, supply the new value for the **parentReference** property.

@@ -1,6 +1,6 @@
 # Drive resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
 
@@ -72,7 +72,6 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | list         | [list](list.md)                      | The corresponding Document Library list for drives in SharePoint.        |
 | root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.                                 |
 | special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable. |
-
 
 ## Methods
 

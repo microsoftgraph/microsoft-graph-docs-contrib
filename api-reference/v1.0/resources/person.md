@@ -9,7 +9,6 @@ An aggregation of information about a person from across mail, contacts, and soc
 |[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
 |[Get person](../api/person_get.md) | **person** |Get properties and relationships of a person object.|
 
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
