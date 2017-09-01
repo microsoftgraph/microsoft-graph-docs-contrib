@@ -28,7 +28,7 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 open extensions or extended properties, and how to specify extended properties.
 
-## Prerequisites
+## Permissions
 ## Permissions
 One of the following permissions is required to call this API, depending on the resource you're
 getting. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
