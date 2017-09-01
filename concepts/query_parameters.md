@@ -173,7 +173,7 @@ GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fu
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-You can also perform searches for people who are interested in a particular topic. Searches are performed based on inferences derived from mail conversations. For example, the following search will return a collection of people relevant to the signed-in user who have expressed an interest in pizza. Note that the search phrase is enclosed in quotes.
+You can also perform searches for people who are interested in a particular topic. Searches are performed based on inferences derived from your mail conversations. For example, the following search will return a collection of people relevant to the signed-in user who have expressed an interest in pizza. Note that the search phrase is enclosed in quotes.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
