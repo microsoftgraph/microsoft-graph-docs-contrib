@@ -1,18 +1,20 @@
 # Upload or replace the contents of a driveItem
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
 This method only supports files up to 4MB in size.
 
 To upload large files see [Upload large files with an upload session](item_createUploadSession.md).
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -28,6 +30,7 @@ The contents of the request body should be the binary stream of the file to be
 uploaded.
 
 ## Response
+
 If successful, this method returns a [driveItem](../resources/driveitem.md) object
 in the response body for the newly created file.
 
@@ -44,9 +47,10 @@ Content-type: text/plain
 
 The contents of the file goes here.
 ```
+##### Response
 
-## Response
-Here is an example of the response.
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

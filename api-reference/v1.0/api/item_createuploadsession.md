@@ -1,19 +1,21 @@
 # Upload large files with an upload session
 
 Create an upload session to allow your app to upload files up to the maximum file size.
-An upload session allows your app to upload ranges of the file in sequental API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 
 To upload a file using an upload session, there are two steps:
 
 1. [Create an upload session](#create-an-upload-session)
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
+|Application | Sites.ReadWrite.All |
 
 > **Note**: The Files.ReadWrite.All application permission is not yet supported on this API. Full support is planned soon. 
 
@@ -50,7 +52,6 @@ For example, to control the behavior if the filename is already taken, you can s
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` errr response is returned. |
 
-
 ### Response
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
@@ -64,8 +65,9 @@ The response to this request will provide the details of the newly created [uplo
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-#### Response example
-Here is an example of the response.
+##### Response 
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -112,7 +114,10 @@ Content-Range: bytes 0-25/128
 **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
 If a fragment declares a different file size, the request will fail.
 
-#### Response example
+##### Response
+
+The following example shows the response.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -138,7 +143,7 @@ The **nextExpectedRanges** property indicates ranges of the file that have not b
 * On successful fragment writes, it will return the next range to start from (eg. "523-").
 * On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
   You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
-* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthoized` response. The Authoization header and bearer token should only be sent when issueing the `POST` during the first step. It should be not be included when issueing the `PUT`.   
+* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issueing the `PUT`.   
 
 
 ## Completing a file
@@ -186,7 +191,9 @@ The DELETE request will immedately expire the upload session and remove any prev
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-#### Response example
+##### Response 
+
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 ```http

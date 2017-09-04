@@ -1,6 +1,6 @@
 # Use the Microsoft Graph API to integrate with Outlook mail
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account. 
 With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of 
@@ -51,9 +51,6 @@ The Microsoft Graph API also provides methods and actions that support common us
 | **App development** | | |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
-
-
-
 
 ## Next steps
 The mail API can open up new ways for you to engage with users: 

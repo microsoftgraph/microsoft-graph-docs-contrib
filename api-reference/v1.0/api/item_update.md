@@ -4,12 +4,14 @@ Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
 
 You can also use update to [move an item](item_move.md) to another parent by updating the item's **parentReference** property.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -32,6 +34,7 @@ Existing properties that are not included in the request body will maintain thei
 For best performance your app should not include properties that haven't changed.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
@@ -50,8 +53,9 @@ Content-type: application/json
 }
 ```
 
-## Response
-Here is an example of the response. This response is truncated for readability.
+##### Response
+
+The following example shows the response. This response is truncated for readability.
 
 <!-- {
   "blockType": "response",

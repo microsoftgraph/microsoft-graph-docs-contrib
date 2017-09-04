@@ -1,6 +1,6 @@
 # Photo resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).
 
@@ -35,7 +35,6 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 | **exposureNumerator**   | Int32                     | The numerator for the exposure time fraction from the camera. Read-only.   |
 | **focalLength**         | Double                    | The focal length from the camera. Read-only.                               |
 | **iso**                 | Int32                     | The ISO value from the camera. Read-only.                                  |
-
 
 ## Remarks
 OneDrive for Business and SharePoint only return the **takenDateTime** property.

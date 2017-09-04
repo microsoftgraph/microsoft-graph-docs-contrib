@@ -1,21 +1,18 @@
 # Get Drive
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. 
-A Drive is the top-level container for a file system.
-Graph API allows you to access the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.
+Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. A Drive is the top-level container for a file system. The Microsoft Graph API allows you to access the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.
 
-## Prerequisites
+## Permissions
 
-One of the following **scopes** is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
+|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## Get a user's OneDrive
 
@@ -45,7 +42,7 @@ GET /groups/{idOrUserPrincipalName}/drive
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the `$expand` and `$select`[OData query parameters](../../../concepts/query_parameters.md) to customize the response.
 
 ## Request body
 

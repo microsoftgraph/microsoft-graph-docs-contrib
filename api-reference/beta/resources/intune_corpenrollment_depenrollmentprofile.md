@@ -1,6 +1,6 @@
-﻿#  resource type
+﻿# depEnrollmentProfile resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -47,7 +47,7 @@ Inherits from [enrollmentProfile](../resources/intune_corpenrollment_enrollmentp
 |macOSFileVaultDisabled|Boolean|Indicates if Mac OS file vault is disabled|
 |awaitDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation|
 |sharedIPadMaximumUserCount|Int32|This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.|
-|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios.Only applicable in shared iPads.|
+|enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
 
 ## Relationships
 None

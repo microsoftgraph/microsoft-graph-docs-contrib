@@ -6,12 +6,53 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2017
 
+### Intune APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entity:<br/>[windowsPrivacyDataAccessControlItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem)<br/>|
+|Addition|Beta|Added new complex types:<br/>[configurationManagerClientEnabledFeatures](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures)<br/>[windowsDefenderScanActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult)<br/>|
+|Addition|Beta|Added the [windowsDefenderScan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderscan.md) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [windowsDefenderUpdateSignatures](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures.md) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [windowsPrivacyAccessControls](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols.md) action on [deviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration) |
+|Change|Beta|Added the **automaticallyUpdateApps** and **countryOrRegion** properties to the [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_applevolumepurchaseprogramtoken) entity|
+|Change|Beta|Added the **enableAuthenticationViaCompanyPortal** property to the [depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile) entity|
+|Change|Beta|Added the **notificationMessageCCList** property to the [deviceComplianceActionItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [deviceComplianceDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedeviceoverview) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [deviceComplianceUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [deviceConfigurationDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdeviceoverview) entity|
+|Change|Beta|Added the **notApplicableCount** property to the [deviceConfigurationUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview) entity|
+|Change|Beta|Added the **configurationManagerClientEnabledFeatures** property to the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) entity|
+|Change|Beta|Removed the **intuneBrand** property from the [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_organization) entity|
+|Change|Beta|Added the **smartScreenEnableInShell**, **smartScreenBlockOverrideForFiles**, **applicationGuardEnabled**, **applicationGuardBlockFileTransfer**, **applicationGuardBlockNonEnterpriseContent**, **applicationGuardAllowPersistence** and **applicationGuardForceAuditing** properties to the [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration) entity|
+|Change|Beta|Added the **searchBlockDiacritics**, **searchDisableAutoLanguageDetection**, **searchDisableIndexingEncryptedItems**, **searchEnableRemoteQueries**, **searchDisableUseLocation**, **searchDisableIndexerBackoff**, **searchDisableIndexingRemovableDrive**, **searchEnableAutomaticIndexSizeManangement**, **smartScreenEnableAppInstallControl** and **privacyAdvertisingId** properties to the [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) entity|
+|Change|Beta|Removed the **settingsDeviceName** property from the [windows10TeamGeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration) entity|
+|Change|Beta|Removed the **restartMode** property from the [windowsUpdateForBusinessConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration) entity|
+|Change|Beta|Added the **detectedApps** and **managedDevices** navigation properties to the [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Added the **privacyAccessControls** navigation property to the [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) entity|
+|Change|Beta|Added the **secureByDefault** property to the [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) complex type|
+|Change|Beta|Added the **restartMode** property to the [windowsUpdateScheduledInstall](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdatescheduledinstall) complex type|
+
+
+### People 
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](people_example.md).|
+
+### Group lifecycle policy
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) entity. |
+| Addition | Beta | Added the following APIs for group lifecycle policy: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup), and [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Addition | Beta | Added [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) entity. |
+
 ### OneNote
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-| Addition | v1.0 and Beta | Added the [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) navigation property to **site**.  |
-| Addition | Beta | Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md). |
+| Addition | v1.0 and Beta | Added the [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) navigation property to **site**.  |
+| Addition | Beta | Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 
 ## July 2017
@@ -27,8 +68,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change&nbsp;type|Version|Description|
 |:---|:---|:---|
-|Addition|Beta|Added the [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_iosmobileappconfiguration_assign.md) action on [iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosmobileappconfiguration) |
-|Addition|Beta|Added the [syncDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_syncdevice.md) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_iosmobileappconfiguration_assign) action on [iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosmobileappconfiguration) |
+|Addition|Beta|Added the [syncDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_syncdevice) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
 |Change|Beta|Added the **appsInstallAllowList**, **appsLaunchBlockList** and **appsHideList** properties to the [androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) entity|
 |Change|Beta|Added the **disableAppEncryptionIfDeviceEncryptionIsEnabled** property to the [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection) entity|
 |Change|Beta|Added the **disableAppEncryptionIfDeviceEncryptionIsEnabled** property to the [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) entity|

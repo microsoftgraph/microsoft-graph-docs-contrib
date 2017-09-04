@@ -1,21 +1,26 @@
 ﻿# Create androidForWorkEnterpriseWiFiConfiguration
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [androidForWorkEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_androidforworkenterprisewificonfiguration.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/
+POST /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
@@ -50,8 +55,6 @@ The following table shows the properties that are required when you create a and
 |nonEapAuthenticationMethodForPeap|String|Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password. Possible values are: `none`, `microsoftChapVersionTwo`.|
 |enableOuterIdentityPrivacy|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [androidForWorkEnterpriseWiFiConfiguration](../resources/intune_deviceconfig_androidforworkenterprisewificonfiguration.md) object in the response body.
 
@@ -59,7 +62,7 @@ If successful, this method returns a `201 Created` response code and a [androidF
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 892
 
