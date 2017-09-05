@@ -5,7 +5,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -241,13 +241,13 @@ Content-Length: 10674
     "edgeBlockSearchSuggestions": true,
     "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
     "edgeRequireSmartScreen": true,
-    "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
+    "edgeEnterpriseModeSiteListLocation": "Microsoft Edge Enterprise Mode Site List Location value",
     "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
     "edgeSearchEngine": {
       "@odata.type": "microsoft.graph.edgeSearchEngineBase"
     },
     "edgeHomepageUrls": [
-      "Edge Homepage Urls value"
+      "Microsoft Edge Homepage Urls value"
     ],
     "edgeBlockAccessToAboutFlags": true,
     "smartScreenBlockPromptOverride": true,
