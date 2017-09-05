@@ -4,8 +4,15 @@
 
 Return all the groups that the specified user, group, service principal or directory object is a member of. This function is transitive.
 
-## Prerequisites
-One of the following **scopes** are required to execute this API: _Directory.Read.All_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

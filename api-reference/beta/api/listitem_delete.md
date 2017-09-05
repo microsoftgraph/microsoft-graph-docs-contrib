@@ -6,13 +6,17 @@ Removes an item from a [list][].
 
 [list]: ../resources/list.md
 
-## Prerequisites
+## Permissions
 
 To delete an item, the user must have granted the application write access to the item to be deleted.
 
-One of the following scopes is required to execute this request:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.ReadWrite.All |
 
 ## HTTP request
 

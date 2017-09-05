@@ -12,17 +12,17 @@ The following table lists the three scenarios where you can get an open extensio
 |Get a known resource instance expanded with a specific extension.|Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user |A resource instance expanded with the open extension.|
 |Find and expand resource instances with a specific extension. | Event, group event, group post, message, personal contact |Resource instances expanded with the open extension.|
 
-## Prerequisites
+## Permissions
 
-One of the following **permissions** is required to execute this API, depending on the resource that contains the extension.
+One of the following permissions is required to call this API, depending on the resource that contains the extension. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |**Supported resource**|**Permission**|**Supported resource**|**Permission** |
 |:-----|:-----|:-----|:-----|
-| [Administrative unit](../resources/administrativeunit.md) | _Directory.Read.All_ | [Device](../resources/device.md) | _Directory.Read.All_ |
-| [Event](../resources/event.md) | _Calendars.Read_ | [Group](../resources/group.md) | _Group.Read.All_ |
-| [Group event](../resources/event.md) | _Group.Read.All_ | [Group post](../resources/post.md) | _Group.Read.All_ |
-| [Message](../resources/message.md) | _Mail.Read_ | [Organization](../resources/organization.md) | _Directory.Read.All_ |
-| [Personal contact](../resources/contact.md) | _Contacts.Read_ | [User](../resources/user.md) | _User.Read.All_ |
+| [Administrative unit](../resources/administrativeunit.md) | Directory.Read.All | [Device](../resources/device.md) | Directory.Read.All |
+| [Event](../resources/event.md) | Calendars.Read | [Group](../resources/group.md) | Group.Read.All |
+| [Group event](../resources/event.md) | Group.Read.All | [Group post](../resources/post.md) | Group.Read.All |
+| [Message](../resources/message.md) | Mail.Read | [Organization](../resources/organization.md) | Directory.Read.All |
+| [Personal contact](../resources/contact.md) | Contacts.Read | [User](../resources/user.md) | User.Read.All |
 
 ## HTTP request
 

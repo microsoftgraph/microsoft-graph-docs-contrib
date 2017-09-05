@@ -3,9 +3,15 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a contact folder by using the contact folder ID.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Contacts.ReadWrite; Contacts.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Contacts.ReadWrite, Contacts.Read    |
+|Delegated (personal Microsoft account) | Contacts.ReadWrite, Contacts.Read    |
+|Application | Contacts.ReadWrite, Contacts.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

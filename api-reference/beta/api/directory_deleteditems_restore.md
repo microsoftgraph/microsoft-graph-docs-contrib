@@ -8,10 +8,11 @@ Currently, deleted items functionality is only supported for the [group](../reso
 
 A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-* For users: *User.ReadWrite.All or Directory.AccessAsUser.All*
-* For groups: *Group.ReadWrite.All or Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+* For users: User.ReadWrite.All, Directory.AccessAsUser.All
+* For groups: Group.ReadWrite.All, Directory.AccessAsUser.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
