@@ -1,6 +1,6 @@
 # outlookUser resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents the Outlook task services available to a user.
 
@@ -15,7 +15,6 @@ Represents the Outlook task services available to a user.
 |[List taskGroups](../api/outlookuser_list_taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md) collection| Get all the Outlook task groups in the user's mailbox.|
 |[Create outlookTask](../api/outlookuser_post_tasks.md) |[outlookTask](outlooktask.md)| Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.|
 |[List tasks](../api/outlookuser_list_tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the user's mailbox.|
-
 
 ## Properties
 None

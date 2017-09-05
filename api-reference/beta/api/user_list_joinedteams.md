@@ -1,14 +1,19 @@
 # List joinedTeams
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the teams in Microsoft Teams that the user is a direct member of.
  
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*User.Read.All; User.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-> Currrently, this operation only works for the 'me' user. For details, see [Known issues](../../../concepts/known_issues.md#microsoft-teams-users-list-of-joined-teams-preview).
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read.All, User.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+> Currently, this operation only works for the 'me' user. For details, see [Known issues](../../../concepts/known_issues.md#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

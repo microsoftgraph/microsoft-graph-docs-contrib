@@ -3,8 +3,15 @@
 Get the overrides that a user has set up to always classify messages from certain senders in specific ways.
 
 Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
-## Prerequisites
-The following **scopes** are required to execute this API: *Mail.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.Read    |
+|Application | Mail.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,8 +58,8 @@ Content-type: application/json
     {
       "classifyAs": "focused",
       "senderEmailAddress": {
-        "name": "Fanny Downs",
-        "address": "fannyd@adatum.onmicrosoft.com"
+        "name": "Samantha Booth",
+        "address": "samanthab@adatum.onmicrosoft.com"
       },
       "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
     },

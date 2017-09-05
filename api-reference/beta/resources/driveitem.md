@@ -1,6 +1,6 @@
 # DriveItem resource type
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
 All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
@@ -124,7 +124,6 @@ The eTag value is only modified when the folder's properties are changed, except
 | permissions        | [permission](permission.md) collection     | The set of permissions for the item. Read-only. Nullable.                                                                                                                         |
 | thumbnails         | [thumbnailSet](thumbnailset.md) collection | Collection containing [ThumbnailSet](thumbnailSet.md) objects associated with the item. For more info, see [getting thumbnails](../api/thumbnailset_get.md). Read-only. Nullable. |
 
-
 ## Instance Attributes
 
 Instance attributes are properties with special behaviors.
@@ -160,7 +159,6 @@ The URL will only be available for a short period of time (1 hour) before it is 
 | [Add permissions](../api/item_invite.md)               | `POST /drive/items/{item-id}/invite`     |
 | [List permissions](../api/item_list_permissions.md)    | `GET /drive/items/{item-id}/permissions` |
 | [Delete permission](../api/permission_delete.md)       | `DELETE /drive/items/{item-id}/permissions/{perm-id}` |
-
 
 ## Remarks
 

@@ -1,14 +1,13 @@
 # Create subscription
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
 
-## Prerequisites
+## Permissions
+Creating a subscription requires read permission to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource.
-
-| Resource type / Item        | Scope               |
+| Resource type / Item        | Permission          |
 |-----------------------------|---------------------|
 | Contacts                    | Contacts.Read       |
 | Conversations               | Group.Read.All      |
@@ -19,7 +18,7 @@ Creating a subscription requires read scope to the resource. For example, to get
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
 
-***Note:*** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.
+***Note:*** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

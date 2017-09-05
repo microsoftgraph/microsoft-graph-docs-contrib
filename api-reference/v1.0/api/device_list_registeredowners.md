@@ -1,12 +1,13 @@
 # List registeredOwners
 
 Retrieve a list of users that are registered owners of the device.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-- *Device.ReadWrite.All* and *User.ReadBasic.All*
-- *Directory.Read.All*
-- *Directory.ReadWrite.All* 
-- *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+- Device.ReadWrite.All and User.ReadBasic.All
+- Directory.Read.All
+- Directory.ReadWrite.All 
+- Directory.AccessAsUser.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
