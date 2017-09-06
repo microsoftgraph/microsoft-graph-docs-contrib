@@ -81,7 +81,7 @@ The same [permissions](./permissions_reference.md) that are required to read a s
 
 ## Delta query request examples 
 
-- [Get incremental changes to events in a calendar view](../Concepts/delta_query_events.md)
+- [Get incremental changes to events in a calendar view](../concepts/delta_query_events.md)
 - [Get incremental changes to messages in a folder](./delta_query_messages.md)
 - [Get incremental changes to groups](./delta_query_groups.md)
 - [Get incremental changes to users](./delta_query_users.md)
