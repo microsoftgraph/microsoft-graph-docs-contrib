@@ -8,8 +8,14 @@ When setting up an Outlook client, the user selects the preferred language from 
 [getting the user's mailbox settings](user_get_mailboxsettings.md).
 
 
-## Prerequisites
-One of the following **permissions** is required to execute this API: _User.Read_, _User.ReadBasic.All_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read, User.ReadBasic.All    |
+|Delegated (personal Microsoft account) | User.Read    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -4,6 +4,35 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## September 2017
+
+### Outlook calendar
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) resource to support organizing an event that attendees can attend from more than one location. |
+| Addition | Beta | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
+| Addition | Beta | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type. These properties are only for internal use at this point.|
+
+
+### Outlook Inbox message rules
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) resource. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) instances. |
+| Addition | Beta | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) complex types.  |
+| Addition | Beta | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
+
+
+### Outlook user choices
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the new **masterCategories** navigation property to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
+| Addition | Beta | Added the new [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
+| Addition | Beta | Added the new [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
+
+
 ## August 2017
 
 ### Group lifecycle policy
@@ -46,33 +75,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:-------------|:-----------|:--------------|
 | Addition | v1.0 and Beta | Added the [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) navigation property to **site**.  |
 | Addition | Beta | Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
-
-
-### Outlook calendar
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) resource to support organizing an event that attendees can attend from more than one location. |
-| Addition | Beta | Added the **locationType**, **uniqueId**, and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
-
-
-### Outlook Inbox message rules
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) resource. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) instances. |
-| Addition | Beta | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) complex types.  |
-| Addition | Beta | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
-
-
-### Outlook user choices
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added the new **masterCategories** navigation property to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
-| Addition | Beta | Added the new [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
-| Addition | Beta | Added the new [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
-
 
 ### People 
 

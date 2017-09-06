@@ -4,9 +4,15 @@
 
 Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*MailboxSettings.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | MailboxSettings.Read    |
+|Delegated (personal Microsoft account) | MailboxSettings.Read    |
+|Application | MailboxSettings.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
