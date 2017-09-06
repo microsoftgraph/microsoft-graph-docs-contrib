@@ -22,9 +22,15 @@ If you specify either header, the response will include the corresponding `Prefe
 - For text format requests: `Preference-Applied: outlook.body-content-type="text"`
 - For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Read*  
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.Read    |
+|Application | Mail.Read |
+
 ## HTTP request
 
 To get the specified message:
@@ -139,14 +145,14 @@ Content-length: 248
   "bodyPreview":"@Dana Swope<mailto:danas@contoso.onmicrosoft.com>, @Randi Welch, forgot to mention, I will be away this weekend. I can start on Monday though.",
   "sender":{
     "emailAddress":{
-      "name":"Fanny Downs",
-      "address":"fannyd@contoso.onmicrosoft.com"
+      "name":"Samantha Booth",
+      "address":"samanthab@contoso.onmicrosoft.com"
     }
   },
   "from":{
     "emailAddress":{
-      "name":"Fanny Downs",
-      "address":"fannyd@contoso.onmicrosoft.com"
+      "name":"Samantha Booth",
+      "address":"samanthab@contoso.onmicrosoft.com"
     }
   },
   "toRecipients":[
@@ -182,8 +188,8 @@ Content-length: 248
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
-        "name":"Fanny Downs",
-        "address":"fannyd@contoso.onmicrosoft.com"
+        "name":"Samantha Booth",
+        "address":"samanthab@contoso.onmicrosoft.com"
       },
       "createdDateTime":"2016-07-21T07:40:20.152Z",
       "serverCreatedDateTime":"2016-07-21T07:40:20.152Z",
@@ -200,8 +206,8 @@ Content-length: 248
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
-        "name":"Fanny Downs",
-        "address":"fannyd@contoso.onmicrosoft.com"
+        "name":"Samantha Booth",
+        "address":"samanthab@contoso.onmicrosoft.com"
       },
       "createdDateTime":"2016-07-21T07:40:20.158Z",
       "serverCreatedDateTime":"2016-07-21T07:40:20.158Z",

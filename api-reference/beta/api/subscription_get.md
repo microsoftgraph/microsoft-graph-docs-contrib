@@ -3,11 +3,11 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of a subscription.
-## Prerequisites
+## Permissions
 
-The following table lists the suggested permission needed for each resource.
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Resource type / Item        | Scope               |
+| Resource type / Item        | Permission          |
 |-----------------------------|---------------------|
 | Contacts                    | Contacts.Read       |
 | Conversations               | Group.Read.All      |
@@ -18,7 +18,7 @@ The following table lists the suggested permission needed for each resource.
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
 
-***Note:*** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.
+***Note:*** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

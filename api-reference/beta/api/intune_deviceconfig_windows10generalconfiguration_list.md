@@ -5,10 +5,15 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 List properties and relationships of the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) objects.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -233,13 +238,13 @@ Content-Length: 11162
       "edgeBlockSearchSuggestions": true,
       "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
       "edgeRequireSmartScreen": true,
-      "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
+      "edgeEnterpriseModeSiteListLocation": "Microsoft Edge Enterprise Mode Site List Location value",
       "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
       "edgeSearchEngine": {
         "@odata.type": "microsoft.graph.edgeSearchEngineBase"
       },
       "edgeHomepageUrls": [
-        "Edge Homepage Urls value"
+        "Microsoft Edge Homepage Urls value"
       ],
       "edgeBlockAccessToAboutFlags": true,
       "smartScreenBlockPromptOverride": true,

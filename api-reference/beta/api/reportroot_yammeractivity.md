@@ -6,13 +6,15 @@ Retrieve the reports of Yammer User Activity. The response will be a CSV file in
 
 > Note: You can go to [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a) to check the meaning of different views.
 
-## Prerequisites
+## Permissions
 
-The following **scopes** are required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Reports.Read.All
-
-> Note: Permission scopes are listed in least privilege required order.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Reports.Read.All |
 
 ## HTTP request
 

@@ -8,8 +8,15 @@ If **findMeetingTimes** cannot return any meeting suggestions, the response woul
 Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: *Calendars.Read.Shared* or *Calendars.ReadWrite.Shared*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read.Shared, Calendars.ReadWrite.Shared    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -83,7 +90,7 @@ As an example, if a meeting time suggestion involves 3 attendees with the follow
 |:-----|:-----|:-----|
 |Dana | Free | 100% |
 |John | Unknown | 49% |
-|Fanny | Busy | 0% |
+|Samantha | Busy | 0% |
 
 Then the confidence of the meeting time suggestion, which is the average chance of attendance, is (100% + 49% + 0%)/3 = 49.66%.
 
@@ -121,8 +128,8 @@ Content-Type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -195,7 +202,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }
@@ -226,7 +233,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }
