@@ -102,6 +102,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
+  "name": "get_events",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
@@ -132,9 +133,19 @@ Content-length: 1932
                 "dateTime":"2017-04-21T12:00:00.0000000",
                 "timeZone":"Pacific Standard Time"
             },
-            "location":{
-                "displayName":"Assembly Hall"
+            "location": {
+                "displayName": "Assembly Hall",
+                "locationType": "default",
+                "uniqueId": "Assembly Hall",
+                "uniqueIdType": "private"
             },
+            "locations": [
+                {
+                    "displayName": "Assembly Hall",
+                    "locationType": "default",
+                    "uniqueIdType": "unknown"
+                }
+            ],
             "attendees":[
                 {
                     "type":"required",
