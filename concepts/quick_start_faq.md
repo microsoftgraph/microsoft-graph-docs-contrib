@@ -6,9 +6,9 @@ This document addresses questions and issues that people might encounter as they
 
 Regardless of the platform you choose, each quick start does the following:
 
-- Registers and configures a new application for you in the [Application Registration Portal](https://apps.dev.microsoft.com). This is why we ask you to sign in with a Microsoft account at the **Get an App ID" step. If your application will require an App Secret, the quick start will create one for you. 
+- Registers a new application for you in the [Application Registration Portal](https://apps.dev.microsoft.com). This is why we ask you to sign in with a Microsoft account at the **Get an app ID** step. If your application will require an app secret, the quick start will create one for you. 
 - Downloads a copy of sample code stored in a GitHub repo. You can see these repos in the [MicrosoftGraph organization](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) on GitHub.
-- Inserts the new App ID, and wherever necessary the App Secret to a configuration file inside the sample code stored in the GitHub repo. This is why we ask you to copy the App Secret after we create the new application and then have you copy it into a form in the quick start before you can download a copy of the sample code. We don't want to send information this sensitive inside an HTTP request.
+- Inserts the new app ID, and wherever necessary the app secret to a configuration file inside the sample code stored in the GitHub repo. We don’t want to send sensitive information inside an HTTP request, so we ask you to copy the app secret after we create the new application and then have you copy it into a form in the quick start before you download a copy of the sample.
 - Prompts you to download the fully configured sample. Once you've downloaded and unzipped the sample code, you'll have a client or web application that should run "out of the box," assuming that you've installed the specified prerequisites (IDEs, web frameworks, etc.) in your development environment.
 
 
@@ -30,13 +30,13 @@ If the sample appears to send an email but you don't see it in your Inbox, check
 
 First try to run the sample app in an InPrivate or Incognito window. Sometimes web browser cache settings can cause the authorization step to fail, especially if you sign in with multiple Microsoft accounts. If that doesn't work, please follow up with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). Be sure to tag your question with microsoft-graph and copy the error information into the question.
 
-### Why do some of the quick starts include an App Secret and some don’t?
+### Why do some of the quick starts include an app secret and some don’t?
 
-Server-side web applications that need to make secure calls to the Microsoft Graph API require App Secrets. This is why the quick starts for ASP.NET MVC, Node.js, PHP, and Ruby provide an App Secret.
+Server-side web applications that need to make secure calls to the Microsoft Graph API require app secrets. This is why the quick starts for ASP.NET MVC, Node.js, PHP, and Ruby provide an app secret.
 
-### 	Why does the Angular quick start not give me an App Secret when all of the other web platform quick starts do?
+### 	Why does the Angular quick start not give me an app secret when all of the other web platform quick starts do?
 
-An App Secret is required only for server-side web applications.
+An app secret is required only for server-side web applications.
 
 ###	Why does my quick start contain a Readme file?
 
@@ -48,9 +48,9 @@ Feel free to look at the repo associated with each quick start, file issues ther
 
 Most of the samples provided by the quick starts get your profile picture and upload it to the root directory of your OneDrive account. If you sign in with an MSA account (live.com, hotmail.com) Microsoft Graph can't currently fetch your profile picture, so we fall back to the thought bubble image. The sample also uses this image if your account has no profile picture.
 
-###	Why do you provide a **[Manage your app](https://apps.dev.microsoft.com)** link after I get an App ID?
+###	Why do you provide a **[Manage your app](https://apps.dev.microsoft.com)** link after I get an app ID?
 
-We provide this link because the App ID step registers a new application for you in the [Application Registration Portal](https://apps.dev.microsoft.com). We provide this link so that you can view the settings for this application, delete the application, or even update the settings for the application after you run the sample. 
+We provide this link because the app ID step registers a new application for you in the [Application Registration Portal](https://apps.dev.microsoft.com). We provide this link so that you can view the settings for this application, delete the application, or even update the settings for the application after you run the sample. 
 
 ## Didn't find what you need?
 
