@@ -49,7 +49,6 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization. Read-only. Nullable.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource

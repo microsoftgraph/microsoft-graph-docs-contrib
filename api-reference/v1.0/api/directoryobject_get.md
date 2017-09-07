@@ -1,13 +1,14 @@
 # Get directoryObject
 
 Retrieve the properties and relationships of directoryObject object.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- _Directory.Read.All_ 
-- _Directory.AccessAsUser.All_
-
-> **Note:** Permission scopes are listed in order of least to most privilege required.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -23,7 +24,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 ## Example
 ##### Request
