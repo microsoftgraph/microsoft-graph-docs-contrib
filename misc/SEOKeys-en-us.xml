@@ -731,12 +731,12 @@
 		<Item text="Create tasks" url="/en-us/api-reference/beta/api/outlookuser_post_tasks" />
 	  </Item>
 	  <Item text="Outlook settings" url="/en-us/api-reference/beta/resources/outlookuser" >
-		<Item text="Get language choices" url="/en-us/api-reference/beta/outlookuser_supportedlanguages" />
-		<Item text="Get time zone choices" url="/en-us/api-reference/beta/outlookuser_supportedtimezones" />
-		<Item text="Get mailbox settings" url="/en-us/api-reference/beta/user_get_mailboxsettings" />
-		<Item text="Update mailbox settings" url="/en-us/api-reference/beta/user_update_mailboxsettings" />
-		<Item text="List categories" url="/en-us/api-reference/beta/outlookuser_list_mastercategories" />
-		<Item text="Create category" url="/en-us/api-reference/beta/outlookuser_post_mastercategories" />		
+		<Item text="Get language choices" url="/en-us/api-reference/beta/api/outlookuser_supportedlanguages" />
+		<Item text="Get time zone choices" url="/en-us/api-reference/beta/api/outlookuser_supportedtimezones" />
+		<Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" />
+		<Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" />
+		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />		
 	  </Item>
 	  <Item text="People" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
         <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
@@ -3627,11 +3627,11 @@
         <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
       </Item>
 	  <Item text="Categories" url="/en-us/api-reference/beta/resources/outlookcategory" >
-		<item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
-		<item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-		<item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
-		<item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
-		<item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
 	  </Item>    
 	  <Item text="Event" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
@@ -3705,11 +3705,11 @@
         <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
       <Item text="Categories" url="/en-us/api-reference/beta/resources/outlookcategory" >
-		<item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
-		<item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-		<item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
-		<item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
-		<item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
 	  </Item>
 	  <Item text="Focused Inbox" url="/en-us/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="">
         <Item text="Create Override" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="Create an override for a sender identified by an SMTP address." />
@@ -3760,11 +3760,11 @@
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/outlooktask_post_attachments" />
       </Item>
       <Item text="Categories" url="/en-us/api-reference/beta/resources/outlookcategory" >
-		<item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
-		<item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-		<item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
-		<item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
-		<item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
 	  </Item>  
 	  <Item text="Outlook task folder" url="/en-us/api-reference/beta/resources/outlooktaskfolder" >
         <Item text="List" url="/en-us/api-reference/beta/api/outlookuser_list_taskfolders" />
@@ -3824,11 +3824,11 @@
           <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
         </Item>
         <Item text="Categories" url="/en-us/api-reference/beta/resources/outlookcategory" >
-			<item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
-			<item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-			<item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
-			<item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
-			<item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+			<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+			<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+			<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+			<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+			<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
 	  </Item>  
 		<Item text="Contact folder" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="A folder that contains contacts.">
           <Item text="List contact folders" url="/en-us/api-reference/beta/api/user_list_contactfolders" SEOKeyword="List contactFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contactfolder objects." />
