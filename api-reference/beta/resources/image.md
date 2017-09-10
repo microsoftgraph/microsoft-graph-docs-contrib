@@ -1,5 +1,7 @@
 # Image resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 The **Image** resource groups image-related properties into a single structure.
 If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.
 
@@ -28,7 +30,6 @@ Here is a JSON representation of the resource.
 |:-----------|:------|:-------------------------------------------|
 | **height** | Int32 | Optional. Height of the image, in pixels. Read-only. |
 | **width**  | Int32 | Optional. Width of the image, in pixels. Read-only.  |
-
 
 ## Remarks
 

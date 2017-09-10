@@ -1,20 +1,27 @@
 ﻿# Create mobileAppInstallStatus
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementApps.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
-POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/deviceStatuses/
+POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses
+POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/deviceStatuses
 ```
 
 ## Request headers
@@ -38,8 +45,7 @@ The following table shows the properties that are required when you create a mob
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
-
-
+|userPrincipalName|String|User Principal Name|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object in the response body.
@@ -48,9 +54,9 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses
 Content-type: application/json
-Content-length: 373
+Content-length: 426
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -61,7 +67,8 @@ Content-length: 373
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
-  "userName": "User Name value"
+  "userName": "User Name value",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -70,7 +77,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 422
+Content-Length: 475
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -82,7 +89,8 @@ Content-Length: 422
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
-  "userName": "User Name value"
+  "userName": "User Name value",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

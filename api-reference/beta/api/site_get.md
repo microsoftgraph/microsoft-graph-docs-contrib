@@ -1,5 +1,7 @@
 # Get a site resource
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
 
@@ -16,12 +18,15 @@ There is also a reserved site identifier, `root`, which always references the ro
 * `/sites/root`: The tenant root site.
 * `/groups/{group-id}/sites/root`: The group's team site.
 
-## Prerequisites
+## Permissions
 
-One of the following scopes is required to execute this request:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All, Sites.ReadWrite.All |
 
 ## Get the tenant's root site
 
@@ -50,7 +55,7 @@ GET /groups/{group-id}/sites/root
 
 ## Example
 
-### Request
+##### Request
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -58,7 +63,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/beta/sites/{site-id}
 ```
 
-### Response
+##### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

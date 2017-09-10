@@ -1,5 +1,7 @@
 # List events
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get a list of [event](../resources/event.md) objects from the user's default calendar or 
 from a specified calendar. The list contains single instance meetings and series masters.
 
@@ -37,9 +39,15 @@ If you specify either header, the response will include the corresponding `Prefe
 - For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read; Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -69,7 +77,9 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request 1
@@ -92,6 +102,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
+  "name": "get_events",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
@@ -122,9 +133,19 @@ Content-length: 1932
                 "dateTime":"2017-04-21T12:00:00.0000000",
                 "timeZone":"Pacific Standard Time"
             },
-            "location":{
-                "displayName":"Assembly Hall"
+            "location": {
+                "displayName": "Assembly Hall",
+                "locationType": "default",
+                "uniqueId": "Assembly Hall",
+                "uniqueIdType": "private"
             },
+            "locations": [
+                {
+                    "displayName": "Assembly Hall",
+                    "locationType": "default",
+                    "uniqueIdType": "unknown"
+                }
+            ],
             "attendees":[
                 {
                     "type":"required",
@@ -133,8 +154,8 @@ Content-length: 1932
                         "time":"0001-01-01T00:00:00Z"
                     },
                     "emailAddress":{
-                        "name":"Fanny Downs",
-                        "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                        "name":"Samantha Booth",
+                        "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
                     }
                 },
                 {
@@ -151,8 +172,8 @@ Content-length: 1932
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
                 }
             }
         }

@@ -1,8 +1,15 @@
 # Update organization
 
 Update the properties of the currently authenticated organization.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,6 +49,7 @@ In the request body, supply the values for relevant fields that should be update
 |verifiedDomains|VerifiedDomain|The collection of domains associated with this tenant.                            **Notes**: not nullable.            |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [organization](../resources/organization.md) object in the response body.
 ## Example
 ##### Request

@@ -6,13 +6,14 @@ Your app can combine moving an item to a new container and updating other proper
 
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
 
@@ -29,7 +30,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
-
 ## Request body
 In the request body, supply the new value for the **parentReference** property.
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
@@ -39,6 +39,7 @@ For best performance you shouldn't include existing values that haven't changed.
 You either need to use the real ID of the root folder, or use `{"path": "/drive/root"}` for the parent reference.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
@@ -58,8 +59,10 @@ Content-type: application/json
 }
 ```
 
-## Response
-Here is an example of the response.
+##### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
