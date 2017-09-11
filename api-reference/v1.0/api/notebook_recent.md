@@ -29,7 +29,7 @@ GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includ
 ```
 The parameter `include` can be set to `true` to include notebooks owned by the user.
 
-### Response
+## Response
 Here is an example of the response.
 
 <!-- {
