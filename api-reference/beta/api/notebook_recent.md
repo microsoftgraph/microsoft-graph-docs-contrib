@@ -35,7 +35,7 @@ GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includ
 The parameter `includePersonalNotebooks` can be set to `true` to include notebooks owned by the user. Use `false` otherwise. You must supply the `includePersonalNotebooks` parameter, or else you will receive a `400`.
 
 ## Response
-A successful response will return a `200 OK` containg a JSON collection of Notebooks.
+A successful response will return a `200 OK` containing a JSON collection of RecentNotebooks.
 
 <!-- {
   "blockType": "response",
