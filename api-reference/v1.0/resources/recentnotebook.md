@@ -1,7 +1,5 @@
 # RecentNotebook resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 A recently accessed OneNote notebook. A RecentNotebook is similar to a [notebook](notebook.md) but has fewer properties.
 
 ## JSON representation
