@@ -1,22 +1,25 @@
 # List recent notebooks
 
-Retrieve a list of [notebook](../resources/notebook.md) that have been recently used by the signed in user. 
+Retrieve a list of [notebook](../resources/notebook.md) that have been recently accessed by the signed in user. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All,|
-|Delegated (personal Microsoft account) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
-|Application | Notes.Read.All, Notes.ReadWrite.All |
+|Delegated (work or school account) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All,|
+|Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Application | Notes.Create, Notes.Read.All, Notes.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+```http
+GET /me/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks={true | false})
+GET /users/{id | userPrincipalName}/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks={true | false})
 ```
-GET me/notes/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
-```
+
+The `{id | userPrincipalName}` for the user must match the user encoded in the authorization token used to make the request.
 
 ## Request body
 Do not supply a request body for this method.
@@ -25,12 +28,12 @@ Do not supply a request body for this method.
 
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks={include})
+GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks={true | false})
 ```
-The parameter `include` can be set to `true` to include notebooks owned by the user.
+The parameter `includePersonalNotebooks` can be set to `true` to include notebooks owned by the user. Use `false` otherwise. You must supply the `includePersonalNotebooks` parameter, or else you will receive a `400`.
 
 ## Response
-Here is an example of the response.
+A successful response will return a `200 OK` containg a JSON collection of Notebooks.
 
 <!-- {
   "blockType": "response",
@@ -47,19 +50,19 @@ Content-Length: 1110
   ...
   "value":[
     {
-      "name":"SharingClass","lastAccessedTime":"2017-05-02T15:29:36.7363799Z","links":{
+      "name":"nameOfNotebook1","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
-          "href":"onenote:https://oneeco-my.sharepoint.com/personal/admin_oneeco_onmicrosoft_com/Documents/Class%20Notebooks/SharingClass"
+          "href":"onenote:href-value"
         },"oneNoteWebUrl":{
-          "href":"https://oneeco-my.sharepoint.com/personal/admin_oneeco_onmicrosoft_com/Documents/Class%20Notebooks/SharingClass"
+          "href":"href-value"
         }
       },"sourceService":"Unknown"
     },{
-      "name":"OneDriveForBusinessNotebook1","lastAccessedTime":"2017-04-28T18:31:06Z","links":{
+      "name":"nameOfNotebook2","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
-          "href":"onenote:https://oneeco-my.sharepoint.com/personal/oneeco_onmicrosoft_com/Documents/OneDriveForBusinessNotebook1"
+          "href":"onenote:href-value"
         },"oneNoteWebUrl":{
-          "href":"https://oneeco-my.sharepoint.com/personal/oneeco_onmicrosoft_com/Documents/OneDriveForBusinessNotebook1"
+          "href":"href-value"
         }
       },"sourceService":"OneDriveForBusiness"
     }
