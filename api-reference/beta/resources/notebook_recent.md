@@ -1,5 +1,7 @@
 # List recent notebooks
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of [RecentNotebook](../resources/recentnotebook.md) that have been accessed by the signed in user.
 
 ## Permissions
