@@ -26,7 +26,7 @@ To get started, you'll need:
 * [Xcode](https://developer.apple.com/xcode/downloads/) from Apple
 * Installation of [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) as a dependency manager
 * A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
-* The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**).
+* The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**ios-objectivec-connect-sample.xcworkspace**).
 
 ## Register the app
  
@@ -37,7 +37,7 @@ To get started, you'll need:
 	The registration page displays, listing the properties of your app.
  
 4. Under **Platforms**, select **Add platform**.
-5. Select **Mobile platform**.
+5. Select **Native platform**.
 6. Copy the Client Id to the clipboard. You'll need to enter this value into the sample app.
 
 	The app id is a unique identifier for your app. 
@@ -46,7 +46,9 @@ To get started, you'll need:
 
 ## Importing the project dependencies
 
-1. Clone this repository, [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-objectivec-connect-sample). **Remember you will use the sample in the starter-project folder and not the sample at the root of the project.**
+1. Clone this repository, [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-objectivec-connect-sample). 
+>IMPORTANT: Use the sample in the starter-project folder and not the sample at the root of the project.
+
 2. Use CocoaPods to import the Microsoft Graph SDK and authentication dependencies. This sample app already contains a podfile that will get the pods into the project. Navigate to the folder **starter-project** in the **Terminal** app, and from **Terminal** run:
 
         pod install
@@ -61,19 +63,20 @@ To add the keychain group:
  
 1. Select the project on the project manager panel in Xcode. (⌘ + 1).
  
-2. Select **O365-iOS-Microsoft-Graph-SDK**.
+2. Select **iOS-ObjectiveC-Connect-Sample**.
  
 3. On the Capabilities tab, enable **Keychain Sharing**.
  
-4. Add **com.microsoft.O365-iOS-Microsoft-Graph-SDK** to the Keychain Groups.
+4. Add **com.microsoft.ios-objectivec-connect-sample** to the Keychain Groups.
  
 
 ## Authenticating with Microsoft Graph
 
 To revisit the UI workflow, the app is going to have the user authenticate, and then they'll have the ability to send a mail to a specified user. To make requests against the Microsoft Graph service, an authentication provider must be supplied which is capable of authenticating HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's an authentication class already stubbed out called **AuthenticationProvider.m.** We will add a function to request, and acquire, an access token for calling the Microsoft Graph API. 
 
-1. Open the Xcode project workspace (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) in the **starter-project** folder, and navigate to the **Authentication** folder and open the file **AuthenticationProvider.m.** Add the following code to that class.
+1. Open the Xcode project workspace (**iOS-ObjectiveC-Connect-Sample.xcworkspace**) in the **starter-project** folder, and navigate to the **Authentication** folder and open the file **AuthenticationProvider.m.** Add the following code to that class.
 
+```objectivec
 		-(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)	(NSError *))completion{
     		[NXOAuth2AuthenticationProvider setClientId:kClientId
                                               scopes:scopes];
@@ -103,17 +106,20 @@ To revisit the UI workflow, the app is going to have the user authenticate, and 
     		}
     
 		}
+```		
 
 2. Next add the method to the header file. Open the file **AuthenticationProvider.h** and add the following code to this class.
+   ```objectivec
+	   	-(void) connectToGraphWithClientId:(NSString *)clientId
+                               scopes:(NSArray *)scopes
+                           completion:(void (^)(NSError *error))completion;
 
-		-(void) connectToGraphWithClientId:(NSString *)clientId
-                            scopes:(NSArray *)scopes
-                        completion:(void (^)(NSError *error))completion;
 
-
+   ```
 
 2. Finally we'll call this method from **ConnectViewController.m**. This controller is the default view that the app loads, and there is a single button named **Connect** that the user will tap that will initiate the authentication process. This method takes in two parameters, the **Client ID** and **scopes**, we'll discuss these in more detail below. Add the following action to **ConnectViewController.m**.
 
+```objectivec
 		- (IBAction)connectTapped:(id)sender {
 			[self showLoadingUI:YES];   
 			NSArray *scopes = [kScopes componentsSeparatedByString:@","];
@@ -129,77 +135,180 @@ To revisit the UI workflow, the app is going to have the user authenticate, and 
 					};
 				}];
 		}
+```		
 
 ## Send an email with Microsoft Graph
 
 After configuring the project to be able to authenticate, the next tasks are sending a mail to a user using the Microsoft Graph API. By default the logged in user will be the recipient, but you have the ability to change it to any other recipient. The code we'll work with here is located in the **Controllers** folder and in the class **SendMailViewController.m.** You'll see that there is other code represented here for the UI, and a helper method to retrieve user profile information from the Microsoft Graph service. We'll concentrate on the methods for creating a mail message and sending that message.
 
-1. Open **SendMailViewController.m.** in the Controllers folder and add the following helper method to the class:
+1. Open **SendMailViewController.m** in the Controllers folder and add the following code to the **viewDidLoad** method, after `self.graphClient = [MSGraphClient client]`
+   ```objectivec
+       [self getUserInfo:(self.emailAddress) completion:^( NSError *error) {
+        if (!error) {
+            [self getUserPicture:(self.emailAddress)  completion:^(UIImage *image, NSError *error) {
+                
+                if (!error) {
+                    self.userPicture = image;
+                    
+                } else {
+                    //get the test image out of the project resources
+                    self.userPicture = [UIImage imageNamed:(@"test.png")];
+                }
+                [self uploadPictureToOneDrive:(self.userPicture) completion:^(NSString *webUrl, NSError *error) {
+                    if (!error) {
+                        self.pictureWebUrl = webUrl;
+                        
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            self.sendMailButton.enabled = true;
+                        });
+                    } else {
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
+                            self.statusTextView.text = NSLocalizedString(@"PICTURE_UPLOAD_FAILURE", comment: "");
+                        });
+                        
+                    }
+                    
+                }];
+                
+            }];
+        }
+    }];
+   ```
 
-		// Create a sample test message to send to specified user account
-		-(MSGraphMessage*) getSampleMessage{
-    		MSGraphMessage *message = [[MSGraphMessage alloc]init];
-    		MSGraphRecipient *toRecipient = [[MSGraphRecipient alloc]init];
-    		MSGraphEmailAddress *email = [[MSGraphEmailAddress alloc]init];
+1. Open **SendMailViewController.m.** in the Controllers folder and add the following helper method to the class
+```objectivec
+  //Create a sample test message to send to specified user account
+  -(MSGraphMessage*) getSampleMessage{
+      MSGraphMessage *message = [[MSGraphMessage alloc]init];
+      MSGraphRecipient *toRecipient = [[MSGraphRecipient alloc]init];
+      MSGraphEmailAddress *email = [[MSGraphEmailAddress alloc]init];
     
-    		email.address = self.emailAddress;
-    		toRecipient.emailAddress = email;
+      //need to get email text field for send to!
     
-    		NSMutableArray *toRecipients = [[NSMutableArray alloc]init];
-    		[toRecipients addObject:toRecipient];
+      email.address = self.emailAddress;
+      toRecipient.emailAddress = email;
     
-    		message.subject = NSLocalizedString(@"MAIL_SUBJECT", comment: "");
+      NSMutableArray *toRecipients = [[NSMutableArray alloc]init];
+      [toRecipients addObject:toRecipient];
     
-    		MSGraphItemBody *emailBody = [[MSGraphItemBody alloc]init];
-    		NSString *htmlContentPath = [[NSBundle mainBundle] pathForResource:@"EmailBody" ofType:@"html"];
-    		NSString *htmlContentString = [NSString stringWithContentsOfFile:htmlContentPath encoding:NSUTF8StringEncoding error:nil];
+      message.subject = NSLocalizedString(@"MAIL_SUBJECT", comment: "");
     
-    		emailBody.content = htmlContentString;
-    		emailBody.contentType = [MSGraphBodyType html];
-    		message.body = emailBody;
+      MSGraphItemBody *emailBody = [[MSGraphItemBody alloc]init];
+      NSString *htmlContentPath = [[NSBundle mainBundle] pathForResource:@"EmailBody" ofType:@"html"];
+      NSString *htmlContentString = [NSString stringWithContentsOfFile:htmlContentPath encoding:NSUTF8StringEncoding error:nil];
     
-    		message.toRecipients = toRecipients;
+      emailBody.content = htmlContentString;
+      NSString *replaceString = @"a href=";
+      replaceString = [replaceString stringByAppendingString:(self.pictureWebUrl)];
+      emailBody.content = [emailBody.content stringByReplacingOccurrencesOfString:(@"a href=%s") withString:(replaceString)];
+      emailBody.contentType = [MSGraphBodyType html];
+      message.body = emailBody;
     
-    		return message;
+      message.toRecipients = toRecipients;
     
-		}
+      MSGraphFileAttachment *fileAttachment= [[MSGraphFileAttachment alloc]init];
+      fileAttachment.oDataType = @"#microsoft.graph.fileAttachment";
+      fileAttachment.contentType = @"image/png";
+    
+      NSString *decodedString = [UIImagePNGRepresentation(self.userPicture) base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
+    
+      fileAttachment.contentBytes = decodedString;
+      fileAttachment.name = @"me.png";
+      message.attachments = [message.attachments arrayByAddingObject:(fileAttachment)];
+      return message;
+    
+    }
+```
+3. Open **SendMailViewController.m** Add the following method to the class.
+**uploadPictureToOneDrive** uploads the user's profile picture from their user information and returns the web sharing Url to be embedded in the body of the email that is sent by the sample.
+
+  ```objectivec
+  -(void) uploadPictureToOneDrive: (UIImage *) image completion:(void(^) (NSString*, NSError*))completionBlock{
+    
+    NSData *data = UIImagePNGRepresentation(image);
+    [[[[[[[self.graphClient me]
+          drive]
+         root]
+        children]
+       driveItem:(@"me.png")]
+      contentRequest]
+     uploadFromData:(data) completion:^(MSGraphDriveItem *response, NSError *error) {
+         
+         if (!error) {
+             NSString *webUrl = response.webUrl;
+             completionBlock(webUrl, error);
+         } else {
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 self.statusTextView.text =  NSLocalizedString(@"USER_GET_PICTURE_FAILURE", comment: "");
+                 NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
+             });
+         }
+     }];
+    }
+  ```
+4. Open **SendMailViewController.m** and add the following method to the class. 
+**getUserPicture returns the user's profile picture if it is available.
+   ```objectivec
+   -(void) getUserPicture: (NSString *)url completion:(void(^) (UIImage*, NSError*))completionBlock {
+    
+    [[[self.graphClient me] photoValue] downloadWithCompletion:^(NSURL *location, NSURLResponse *response, NSError *error) {
+        //code
+        if (!error) {
+            NSData *data = [NSData dataWithContentsOfURL:location];
+            UIImage *img = [[UIImage alloc] initWithData:data];
+            completionBlock(img, error);
+        } else{
+            completionBlock(nil, error);
+
+        }
+    }];
+    }
+
+   ```
+
+3. Open **SendMailViewController.m** Add the following send mail method to the class.
+**getSampleMessage** creates a draft HTML sample mail to use for demo purposes. The next method, **sendMail**, then takes that message and executes the request to send it. Again the default recipient is the signed-in user.
 
 
-2. Open **SendMailViewController.m.** Add the following send mail method to the class.  
-
-		//Send mail to the specified user in the email text field
-		-(void) sendMail {   
-    		MSGraphMessage *message = [self getSampleMessage];
-    		MSGraphUserSendMailRequestBuilder *requestBuilder = [[self.graphClient me]sendMailWithMessage:message saveToSentItems:true];
-    		NSLog(@"%@", requestBuilder);
-    		MSGraphUserSendMailRequest *mailRequest = [requestBuilder request];
-    		[mailRequest executeWithCompletion:^(NSDictionary *response, NSError *error) {
-        		if(!error){
-            		NSLog(@"response %@", response);
-            		NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
+  ```objectivec
+   //Send mail to the specified user in the email text field
+   -(void) sendMail {
+    
+    MSGraphMessage *message = [self getSampleMessage];
+    MSGraphUserSendMailRequestBuilder *requestBuilder = [[self.graphClient me]sendMailWithMessage:message saveToSentItems:true];
+    NSLog(@"%@", requestBuilder);
+    MSGraphUserSendMailRequest *mailRequest = [requestBuilder request];
+    [mailRequest executeWithCompletion:^(NSDictionary *response, NSError *error) {
+        if(!error){
+            NSLog(@"response %@", response);
             
-            		dispatch_async(dispatch_get_main_queue(), ^{
-                		self.statusTextView.text = NSLocalizedString(@"SEND_SUCCESS", comment: "");
-            	});
-        	}
-        	else {
-            	NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
-           	 	self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
-        		}
-    		}];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.statusTextView.text = NSLocalizedString(@"SEND_SUCCESS", comment: "");
+                self.descriptionLabel.text = @"Check your inbox. You have a new message :)";
+            });
+        }
+        else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
+                self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
+            });
+        }
+    }];
     
-		}
+   }
+   ```
 
-So **getSampleMessage** creates a draft HTML sample mail to use for demo purposes. The next method, **sendMail**, then takes that message and executes the request to send it. Again the default recipient is the signed-in user.
 
 
 ## Run the app
 1. Before running the sample you'll need to supply the client ID you received from the registration process in the section **Register the app.** Open **AuthenticationConstants.m** under the **Application** folder. You'll see that the ClientID from the registration process can be added to the top of the file.:  
 
 		// You will set your application's clientId
-		NSString * const kClientId    = @"ENTER_CLIENT_ID_HERE";
-		NSString * const kScopes = @"https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/User.Read, offline_access";
-Note: You'll notice that the following permission scopes have been configured for this project: **"https://graph.microsoft.com/Mail.Send", "https://graph.microsoft.com/User.Read", "offline_access"**. The service calls used in this project, sending a mail to your mail account and retrieving some profile information (Display Name, Email Address) require these permissions for the app to run properly.
+		NSString * const kClientId    = @"ENTER_YOUR_CLIENT_ID";
+		NSString * const kScopes = @"https://graph.microsoft.com/User.Read, https://graph.microsoft.com/Mail.ReadWrite, https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/Files.ReadWrite";
+
+>Note: You'll notice that the following permission scopes have been configured for this project: **"https://graph.microsoft.com/Mail.Send", "https://graph.microsoft.com/User.Read", "offline_access"**. The service calls used in this project, sending a mail to your mail account and retrieving some profile information (Display Name, Email Address) require these permissions for the app to run properly.
 
 2. Run the sample, tap **Connect,** sign in with your personal or work or school account, and grant the requested permissions.
 
