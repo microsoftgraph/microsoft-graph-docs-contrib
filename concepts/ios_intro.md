@@ -26,7 +26,7 @@ To get started, you'll need:
 * [Xcode](https://developer.apple.com/xcode/downloads/) from Apple
 * Installation of [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) as a dependency manager
 * A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
-* The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**).
+* The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**ios-objectivec-connect-sample.xcworkspace**).
 
 ## Register the app
  
@@ -37,7 +37,7 @@ To get started, you'll need:
 	The registration page displays, listing the properties of your app.
  
 4. Under **Platforms**, select **Add platform**.
-5. Select **Mobile platform**.
+5. Select **Native platform**.
 6. Copy the Client Id to the clipboard. You'll need to enter this value into the sample app.
 
 	The app id is a unique identifier for your app. 
@@ -46,7 +46,9 @@ To get started, you'll need:
 
 ## Importing the project dependencies
 
-1. Clone this repository, [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-objectivec-connect-sample). **Remember you will use the sample in the starter-project folder and not the sample at the root of the project.**
+1. Clone this repository, [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-objectivec-connect-sample). 
+>IMPORTANT: Use the sample in the starter-project folder and not the sample at the root of the project.
+
 2. Use CocoaPods to import the Microsoft Graph SDK and authentication dependencies. This sample app already contains a podfile that will get the pods into the project. Navigate to the folder **starter-project** in the **Terminal** app, and from **Terminal** run:
 
         pod install
@@ -61,8 +63,8 @@ To add the keychain group:
  
 1. Select the project on the project manager panel in Xcode. (⌘ + 1).
  
-2. Select **O365-iOS-Microsoft-Graph-SDK**.
+2. Select **iOS-ObjectiveC-Connect-Sample**.
  
 3. On the Capabilities tab, enable **Keychain Sharing**.
  
-4. Add **com.microsoft.O365-iOS-Microsoft-Graph-SDK** to the Keychain Groups.
+4. Add **com.microsoft.ios-objectivec-connect-sample** to the Keychain Groups.

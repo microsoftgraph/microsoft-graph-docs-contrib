@@ -4,82 +4,40 @@
 
 To revisit the UI workflow, the app is going to have the user authenticate, and then they'll have the ability to send a mail to a specified user. To make requests against the Microsoft Graph service, an authentication provider must be supplied which is capable of authenticating HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's an authentication class already stubbed out called **AuthenticationProvider.m.** We will add a function to request, and acquire, an access token for calling the Microsoft Graph API. 
 
-1. Open the Xcode project workspace (**O365-iOS-Microsoft-Graph-Connect-Swift.xcworkspace**), and open the file **AuthenticationClass.swift** Find the following code in that class.
+1. Open the Xcode project workspace (**Graph-iOS-Swift-Connect.xcworkspace**), and open the class extension file **Authentication.swift** Find the following code in that extension.
 
 
   ```swift
-    /**
-     Authenticates to Microsoft Graph.
+     /**
+     Authenticates to Microsoft Graph. 
      If a user has previously signed in before and not disconnected, silent log in
-     will take place.
+     will take place. 
      If not, authentication will ask for credentials
      */
-    func connectToGraph(scopes: [String],
-                        completion:@escaping (_ error: ApplicationConstants.MSGraphError?, _ accessToken: String) -> Void)  {
+    func connectToGraph(withClientId clientId: String,
+                                     scopes: [String],
+                                     completion:@escaping (_ error: MSGraphError?) -> Void) {
+    
+        // Set client ID
+        NXOAuth2AuthenticationProvider.setClientId(clientId, scopes: scopes)
         
-        var accessToken = String()
-        do {
-            if let initError = self.lastInitError {
-                if initError.lengthOfBytes(using: String.Encoding.ascii) > 1 {
-                    throw NSError.init(domain: initError, code: 0, userInfo: nil)
-                }
-            }
-            // We check to see if we have a current logged in user. If we don't, then we need to sign someone in.
-            // We throw an interactionRequired so that we trigger the interactive signin.
-            
-            if  try authenticationProvider.users().isEmpty {
-                throw NSError.init(domain: "MSALErrorDomain", code: MSALErrorCode.interactionRequired.rawValue, userInfo: nil)
-            } else {
-                
-                // Acquire a token for an existing user silently
-                
-                try authenticationProvider.acquireTokenSilent(forScopes: scopes, user: authenticationProvider.users().first) { (result, error) in
+        // Try silent log in. This will attempt to sign in if there is a previous successful
+        // sign in user information.
+        if NXOAuth2AuthenticationProvider.sharedAuth().loginSilent() == true {
+            completion(nil)
+        }
+        // Otherwise, present log in controller.
+        else {
+            NXOAuth2AuthenticationProvider.sharedAuth()
+                .login(with: nil) { (error: Error?) in
                     
-                    if error == nil {
-                        self.accessToken = (result?.accessToken)!
-                        completion(nil, accessToken);
-                        
-                        
-                    } else {
-                        
-                        //"Could not acquire token silently: \(error ?? "No error information" as! Error )"
-                        completion(ApplicationConstants.MSGraphError.nsErrorType(error: error! as NSError), "");
-                        
+                    if let nserror = error {
+                        completion(MSGraphError.nsErrorType(error: nserror as NSError))
                     }
-                }
-            }
-        }  catch let error as NSError {
-            
-            // interactionRequired means we need to ask the user to sign-in. This usually happens
-            // when the user's Refresh Token is expired or if the user has changed their password
-            // among other possible reasons.
-            
-            if error.code == MSALErrorCode.interactionRequired.rawValue {
-                
-                authenticationProvider.acquireToken(forScopes: scopes) { (result, error) in
-                    if error == nil {
-                        accessToken = (result?.accessToken)!
-                        completion(nil, accessToken);
-                        
-                        
-                    } else  {
-                        completion(ApplicationConstants.MSGraphError.nsErrorType(error: error! as NSError), "");
-                        
+                    else {
+                        completion(nil)
                     }
-                }
-                
-            } else {
-                completion(ApplicationConstants.MSGraphError.nsErrorType(error: error as NSError), error.localizedDescription);
-
             }
-            
-        } catch {
-            
-            // This is the catch all error.
-            
-            
-            completion(ApplicationConstants.MSGraphError.nsErrorType(error: error as NSError), error.localizedDescription);
-            
         }
     }
   ```
@@ -90,137 +48,225 @@ To revisit the UI workflow, the app is going to have the user authenticate, and 
   ```swift
   // MARK: Authentication
   private extension ConnectViewController {
-      func authenticate() {
-          loadingUI(show: true)
+    func authenticate() {
+        loadingUI(show: true)
         
-          let scopes = ApplicationConstants.kScopes
+        let clientId = ApplicationConstants.clientId
+        let scopes = ApplicationConstants.scopes
         
-          AuthenticationClass.sharedInstance?.connectToGraph( scopes: scopes) {
-              (error, accessToken) in
+        authentication.connectToGraph(withClientId: clientId, scopes: scopes) {
+            (error) in
             
-              defer {self.loadingUI(show: false)}
+            defer {self.loadingUI(show: false)}
             
-              if let graphError = error {
-                  switch graphError {
-                  case .nsErrorType(let nsError):
-                      print(NSLocalizedString("ERROR", comment: ""), nsError.userInfo)
-                      self.showError(message: NSLocalizedString("CHECK_LOG_ERROR", comment: ""))
-                  }
-              }
-              else {
-                  // run on main thread!!
-                  DispatchQueue.main.async {
-                      self.performSegue(withIdentifier: "sendMail", sender: nil)
-                  }
-                
-              }
-                
-          }
-      }
+            if let graphError = error {
+                switch graphError {
+                case .nsErrorType(let nsError):
+                    print(NSLocalizedString("ERROR", comment: ""), nsError.localizedDescription)
+                    self.showError(message: NSLocalizedString("CHECK_LOG_ERROR", comment: ""))
+                }
+            }
+            else {
+                self.performSegue(withIdentifier: "showSendMail", sender: nil)
+            }
+        }
+    }
   }
 
   ```
 
 ## Send an email with Microsoft Graph
 
-After configuring the project to be able to authenticate, the next tasks are sending a mail to a user using the Microsoft Graph API. By default the logged in user will be the recipient, but you have the ability to change it to any other recipient. The code we'll work with here is in the class **SendMailViewController.swift.** You'll see that there is other code represented here for the UI, and a helper method to retrieve user profile information from the Microsoft Graph service. We'll concentrate on the methods for creating a mail message and sending that message.
+After configuring the project to be able to authenticate, the next tasks are getting the authenticated user's email address, display name, and profile photo. After the sample gets these values it uploads the profile picture to OneDrive and gets the sharing Url of the picture. Finally, it sends a mail to a user using the Microsoft Graph API. 
 
-1. Open **SendMailViewController.swift.**  and find the following helper method in the class:
+By default the logged in user will be the recipient, but you have the ability to change it to any other recipient. The code we'll work with here is in the class **SendMailViewController.swift.** You'll see that there is other code represented here for the UI, and a helper method to retrieve user profile information from the Microsoft Graph service. We'll concentrate on the methods for creating a mail message and sending that message.
+
+1. Open **SendMailViewController.swift.**  and find the mail body creating helper method in the class:
+
+  ```swift
+    /**
+     Creates sample email message
+     
+     - parameter emailAddress: recipient email address
+     
+     - returns: MSGraphMessage object with given recipient. The body is created from EmailBody.html
+     */
+    func createSampleMessage(to emailAddress: String, picLink pictureUrl: String) -> MSGraphMessage? {
+        let message = MSGraphMessage()
+        
+        // set recipients
+        
+        let _ = self.userPicture
+        let toRecipient = MSGraphRecipient()
+        let msEmailAddress = MSGraphEmailAddress()
+        msEmailAddress.address = emailAddress
+        toRecipient.emailAddress = msEmailAddress
+        let toRecipientList = [toRecipient]
+        message.toRecipients = toRecipientList
+        message.subject = NSLocalizedString("MAIL_SUBJECT", comment: "")
+        let messageBody = MSGraphItemBody()
+        messageBody.contentType = MSGraphBodyType.html()
+        guard let emailBodyFilePath = Bundle.main.path(forResource: "EmailBody", ofType: "html") else {return nil}
+        messageBody.content = try! String(contentsOfFile: emailBodyFilePath, encoding: String.Encoding.utf8)
+        messageBody.content = messageBody.content.replacingOccurrences(of: "a href=%s", with: ("a href=" + pictureUrl))
+        message.body = messageBody
+
+        if let unwrappedImage = self.userPicture {
+            let fileAttachment = MSGraphFileAttachment()
+            let data = UIImageJPEGRepresentation(unwrappedImage, 1.0)
+            fileAttachment.contentType = "image/png"
+            fileAttachment.oDataType = "#microsoft.graph.fileAttachment"
+            fileAttachment.contentBytes = data?.base64EncodedString()
+            fileAttachment.name = "me.png"
+            message.attachments.append(fileAttachment)
+        }
+        return message
+    }
+
+  ```
+2. find the following helper methods for getting user information, getting a profile photograph, and uploading the photograph to OneDrive:
 
   ```swift
       /**
-     Prepare mail content by loading the files from resources and replacing placeholders with the
-     HTML body.
+     Fetches user information such as mail and display name
      */
-    func mailContent() -> Data? {
+    func getUserInfo() {
+        self.sendButton.isEnabled = false
+        self.statusTextView.text = NSLocalizedString("LOADING_USER_INFO", comment: "")
         
-        if let emailFilePath = Bundle.main.path(forResource: "EmailPostContent", ofType: "json"),
-            let emailBodyFilePath = Bundle.main.path(forResource: "EmailBody", ofType: "html")
-        {
-            do {
-                // Prepare upload content
-                let emailContent = try String(contentsOfFile: emailFilePath, encoding: String.Encoding.utf8)
-                let emailBodyRaw = try String(contentsOfFile: emailBodyFilePath, encoding: String.Encoding.utf8)
-                // Request doesn't accept a single quotation mark("), so change it to the acceptable form (\")
-                let emailValidBody = emailBodyRaw.replacingOccurrences(of: "\"", with: "\\\"")
-                
-                let emailPostContent = emailContent.replacingOccurrences(of: "<EMAIL>", with: self.emailTextField.text!)
-                    .replacingOccurrences(of: "<CONTENTTYPE>", with: "HTML")
-                    .replacingOccurrences(of: "<CONTENT>", with: emailValidBody)
-                
-                return emailPostContent.data(using: String.Encoding.utf8)
+        self.graphClient.me().request().getWithCompletion {
+            (user: MSGraphUser?, error: Error?) in
+            if let graphError = error {
+                print(NSLocalizedString("ERROR", comment: ""), graphError)
+                DispatchQueue.main.async(execute: {
+                    self.statusTextView.text = NSLocalizedString("GRAPH_ERROR", comment: "")
+                })
             }
-            catch {
-                // Error handling in case file loading fails.
-                return nil
+            else {
+                guard let userInfo = user else {
+                    DispatchQueue.main.async(execute: {
+                        self.statusTextView.text = NSLocalizedString("USER_INFO_LOAD_FAILURE", comment: "")
+                    })
+                    return
+                }
+                DispatchQueue.main.async(execute: {
+                    self.emailTextField.text = userInfo.mail
+                    
+                    if let displayName = userInfo.displayName {
+                        self.headerLabel.text = "Hi " + displayName
+                    }
+                    else {
+                        self.headerLabel.text = NSString(format: NSLocalizedString("HI_USER", comment: "") as NSString, "") as String
+                    }
+                    
+                    self.statusTextView.text = NSLocalizedString("USER_INFO_LOAD_SUCCESS", comment: "")
+                    self.sendButton.isEnabled = true
+                })
             }
         }
-        // Error handling in case files aren't present.
-        return nil
+    }
+    
+    /**
+     Uploads the user's profile picture (obtained via the Graph API) to the user's OneDrive drive. The OneDrive sharing url is
+     returned in the completion handler.
+    */
+    func uploadPictureToOneDrive(uploadFile image: UIImage?, with completion: @escaping (_ result: GraphResult<String, NSError>) ->Void) {
+        
+        var webUrl: String = ""
+        guard let unwrappedImage = image else {
+            return
+        }
+        let data = UIImageJPEGRepresentation(unwrappedImage, 1.0)
+        self.graphClient
+            .me()
+            .drive()
+            .root()
+            .children()
+            .driveItem("me.png")
+            .contentRequest()
+            .upload(from: data, completion: {
+                (driveItem: MSGraphDriveItem?, error: Error?) in
+                if let nsError = error {
+                    print(NSLocalizedString("ERROR", comment: ""), nsError.localizedDescription)
+                    DispatchQueue.main.async(execute: {
+                        self.statusTextView.text = NSLocalizedString("UPLOAD_PICTURE_FAILURE", comment: nsError.localizedDescription)
+                    })
+                    return
+
+                } else {
+                    webUrl = (driveItem?.webUrl)!
+                    completion(.success(webUrl))
+                }
+            })
+    }
+
+
+    /**
+     Gets the user's profile picture. Returns the picture as a UIImage via completion handler
+    */
+    func getUserPicture(forUser upn: String, with completion: @escaping (_ result: GraphResult<UIImage, NSError>) -> Void) {
+        
+        //Asynchronous Graph call. Closure is invoked after getUserPicture completes. Requires @escaping attribute
+        self.graphClient.me().photoValue().download {
+            (url: URL?, response: URLResponse?, error: Error?) in
+            
+                if let nsError = error {
+                    print(NSLocalizedString("ERROR", comment: ""), nsError.localizedDescription)
+                    DispatchQueue.main.async(execute: {
+                        self.statusTextView.text = NSLocalizedString("GET_PICTURE_FAILURE", comment: nsError.localizedDescription)
+                    })
+                    return
+                }
+                guard let picUrl = url else {
+                    DispatchQueue.main.async(execute: {
+                        self.statusTextView.text = NSLocalizedString("GET_PICTURE_FAILURE", comment: "User profile picture is nil")
+                    })
+                    return
+                }
+                print(picUrl)
+            
+                let picData = NSData(contentsOf: picUrl)
+                let picImage = UIImage(data: picData! as Data)
+            
+                if let validPic = picImage {
+                    completion(.success(validPic))
+                }
+                else {
+                    DispatchQueue.main.async(execute: {
+                        self.statusTextView.text = NSLocalizedString("GET_PICTURE_FAILURE", comment: "Picture data is invalid")
+                    })
+                }
+            }
     }
 
   ```
 
-2. Find the following send mail method in the class.  
+3. Find the following send mail method in the class.  
 
   ```swift
-      func sendMailRestWithContent(_ content: Data) {
-        
-        // Acquire an access token, if logged in already, this shouldn't bring up an authentication window.
-        // However, if the token is expired, user will be asked to sign in again.
-        AuthenticationClass.sharedInstance?.connectToGraph(scopes: ApplicationConstants.kScopes) {
-            (result: ApplicationConstants.MSGraphError?, accessToken: String) -> Void in
+    @IBAction func sendMail(_ sender: AnyObject) {
+        guard let toEmail = self.emailTextField.text else {return}
+        guard let picUrl = self.userPictureUrl else {return}
+        if let message = self.createSampleMessage(to: toEmail, picLink: picUrl) {
             
-
-            if  ((AuthenticationClass.sharedInstance?.accessToken) == nil){
-                // Upon failure, alert and go back.
-                let localizedDescription: String = ApplicationConstants.MSGraphError.nsErrorType(error: result! as NSError).localizedDescription
-                print(localizedDescription)
-                
-                let alertController = UIAlertController(title: "Error", message: ApplicationConstants.MSGraphError.nsErrorType(error: result! as NSError).localizedDescription, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Close", style: .destructive, handler: {
-                    (action) -> Void in
-                    AuthenticationClass.sharedInstance?.disconnect()
-                    self.navigationController!.popViewController(animated: true)
-                }))
-                
-                self.present(alertController, animated: true, completion: nil)
- 
-            } else {
-                // Upon success, send mail.
-                let request = NSMutableURLRequest(url: URL(string: "https://graph.microsoft.com/v1.0/me/microsoft.graph.sendmail")!)
-                request.httpMethod = "POST"
-                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-                request.setValue("application/json, text/plain, */*", forHTTPHeaderField: "Accept")
-                
-                let accessToken = AuthenticationClass.sharedInstance?.accessToken
-                request.setValue("Bearer \(accessToken!)" as String, forHTTPHeaderField: "Authorization")
-                request.httpBody = content
-                
-                
-                let task = URLSession.shared.dataTask(with:request as URLRequest, completionHandler: {
-                    (data, response, error) in
-                    
-                    if let _ = error {
-                        print(error as Any )
-                        self.updateUI(showActivityIndicator: false, statusText: self.failureString)
-                        return
-                    }
-                    
-                    let statusCode = (response as! HTTPURLResponse).statusCode
-                    
-                    if statusCode == 202 {
-                        self.updateUI(showActivityIndicator: false, statusText: self.successString)
-                    }
-                    else {
-                        print("response: \(response!)")
-                        print(String(data: data!, encoding: String.Encoding.utf8) as Any )
-                        self.updateUI(showActivityIndicator: false, statusText: self.failureString)
-                    }
-                })
-                
-                task.resume()
-            }
+            let requestBuilder = graphClient.me().sendMail(with: message, saveToSentItems: false)
+            let mailRequest = requestBuilder?.request()
+            
+            _ = mailRequest?.execute(completion: {
+                (response: [AnyHashable: Any]?, error: Error?) in
+                if let nsError = error {
+                    print(NSLocalizedString("ERROR", comment: ""), nsError.localizedDescription)
+                    DispatchQueue.main.async(execute: {
+                        self.statusTextView.text = NSLocalizedString("SEND_FAILURE", comment: "")
+                    })
+                }
+                else {
+                    DispatchQueue.main.async(execute: {
+                        self.descriptionLabel.text = "Check your inbox. You have a new message :)"
+                        self.statusTextView.text = NSLocalizedString("SEND_SUCCESS", comment: "")
+                    })
+                }
+            })
         }
     }
 
