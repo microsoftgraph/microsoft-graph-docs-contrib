@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a list of [RecentNotebook](../resources/recentnotebook.md) that have been accessed by the signed in user.
+Retrieve a list of [RecentNotebooks](../resources/recentnotebook.md) that have been accessed by the signed-in user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -32,10 +32,10 @@ Do not supply a request body for this method.
 ```http
 GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks={true | false})
 ```
-The parameter `includePersonalNotebooks` can be set to `true` to include notebooks owned by the user. Use `false` otherwise. You must supply the `includePersonalNotebooks` parameter, or else you will receive a `400`.
+Set the `includePersonalNotebooks` parameter to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.
 
 ## Response
-A successful response will return a `200 OK` containing a JSON collection of RecentNotebooks.
+A successful response will return a `200 OK` containing a JSON collection of **RecentNotebooks**.
 
 <!-- {
   "blockType": "response",
