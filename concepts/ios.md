@@ -6,4 +6,4 @@ This sample uses a standard iOS HTTPS library to make REST calls to the Microsof
 
 You can send an email with this sample, but it does not retrieve the authenticated user's photo or embed it in the email.
 
-- [Get started with Microsoft Graph in an Objectve C iOS App](ios-objectivec.md)
+- [Get started with Microsoft Graph in an Objectve C iOS App](ios_objectivec.md)
