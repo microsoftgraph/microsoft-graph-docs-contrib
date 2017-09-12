@@ -209,7 +209,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
     }
 ```
 3. Open **SendMailViewController.m** Add the following method to the class.
-**uploadPictureToOneDrive** uploads the user's profile picture from their user information and returns the web sharing Url to be embedded in the body of the email that is sent by the sample.
+**uploadPictureToOneDrive** uploads the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)'s profile picture from their [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) information and returns the web sharing Url to be embedded in the body of the email that is sent by the sample.
 
   ```objectivec
   -(void) uploadPictureToOneDrive: (UIImage *) image completion:(void(^) (NSString*, NSError*))completionBlock{
@@ -236,7 +236,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
     }
   ```
 4. Open **SendMailViewController.m** and add the following method to the class. 
-**getUserPicture returns the user's profile picture if it is available.
+**getUserPicture** returns the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)'s profile picture if it is available.
    ```objectivec
    -(void) getUserPicture: (NSString *)url completion:(void(^) (UIImage*, NSError*))completionBlock {
     
@@ -254,7 +254,35 @@ After configuring the project to be able to authenticate, the next tasks are sen
     }
 
    ```
+3. Open **SendMailViewcontroller.m** and add the following method to the class.
+This method gets the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) resource representing the authenticated user and caches the fields necessary to get the user's profile picture and send an email.
+   ```objectivec
+   //Retrieve the logged in user's display name and email address
+   -(void) getUserInfo: (NSString *)url completion:(void(^) ( NSError*))completionBlock{
+    
+    [[[self.graphClient me]request]getWithCompletion:^(MSGraphUser *response, NSError *error) {
+        if(!error){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.emailAddress = response.userPrincipalName;
+                self.emailTextField.text = self.emailAddress;
+                self.headerLabel.text = [NSString stringWithFormat:(NSLocalizedString(@"HI_USER", comment "")), response.displayName];
+                self.statusTextView.text =  NSLocalizedString(@"USER_INFO_LOAD_SUCCESS", comment: "");
+            });
 
+            completionBlock(nil);
+        }
+        else{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.statusTextView.text =  NSLocalizedString(@"USER_INFO_LOAD_FAILURE", comment: "");
+                NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
+            });
+            completionBlock(error);
+        }
+    }];
+    
+   }
+
+   ```
 3. Open **SendMailViewController.m** Add the following send mail method to the class.
 **getSampleMessage** creates a draft HTML sample mail to use for demo purposes. The next method, **sendMail**, then takes that message and executes the request to send it. Again the default recipient is the signed-in user.
 
