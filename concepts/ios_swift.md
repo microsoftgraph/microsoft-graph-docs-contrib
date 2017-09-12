@@ -2,9 +2,9 @@
 
 ## Authenticating with Microsoft Graph
 
-To revisit the UI workflow, the app is going to have the user authenticate, and then they'll have the ability to send a mail to a specified user. To make requests against the Microsoft Graph service, an authentication provider must be supplied which is capable of authenticating HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's an authentication class already stubbed out called **AuthenticationProvider.m.** We will add a function to request, and acquire, an access token for calling the Microsoft Graph API. 
+To revisit the UI workflow, the app is going to have the user authenticate, and then they'll have the ability to send a mail to a specified user. To make requests against the Microsoft Graph service, an authentication provider must be supplied which is capable of authenticating HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's an authentication structure already stubbed out called **Authentication.swift.** We will add a function to request, and acquire, an access token for calling the Microsoft Graph API. 
 
-1. Open the Xcode project workspace (**Graph-iOS-Swift-Connect.xcworkspace**), and open the class extension file **Authentication.swift** Find the following code in that extension.
+1. Open the Xcode project workspace (**Graph-iOS-Swift-Connect.xcworkspace**), and open the structure extension file **Authentication.swift** Find the following code in that extension.
 
 
   ```swift
@@ -43,7 +43,7 @@ To revisit the UI workflow, the app is going to have the user authenticate, and 
   ```
 
 
-2. Finally we'll call this method from **ConnectViewController.swift**. This controller is the default view that the app loads, and there is a single button named **Connect** that the user will tap that will initiate the authentication process. This method takes in one parameter, the **scopes**, we'll discuss scopes in more detail below. Add the following action to **ConnectViewController.swift**.
+2. We'll call this method from **ConnectViewController.swift**. This controller is the default view that the app loads, and there is a single button named **Connect** that the user will tap that will initiate the authentication process. This method takes in one parameter, the **scopes**, we'll discuss scopes in more detail below. Add the following action to **ConnectViewController.swift**.
 
   ```swift
   // MARK: Authentication
@@ -272,19 +272,17 @@ By default the logged in user will be the recipient, but you have the ability to
 
   ```
 
-So **mailContent** creates a draft HTML sample mail to use for demo purposes. The next method, **sendMailRestWithContent**, then takes that message and executes the request to send it. Again the default recipient is the signed-in user.
-
 
 ## Run the app
-1. Before running the sample you'll need to supply the client ID you received from the registration process in the section **Register the app.** Open **AuthenticationConstants.java** . You'll see that the ClientID from the registration process can be added to the top of the file.:  
+1. Before running the sample you'll need to supply the client ID you received from the registration process in the section **Register the app.** Open **ApplicationConstants.swift** . You'll see that the ClientID from the registration process can be added to the top of the file.:  
 
   ```swift
-		// You will set your application's clientId
-		    static let ClientId    = "[ENTER_YOUR_CLIENT_ID]"
-			static let ResourceId  = "https://graph.microsoft.com"
-			static let kAuthority  = "https://login.microsoftonline.com/common/oauth2/v2.0"
-			static let kGraphURI   = "https://graph.microsoft.com/v1.0/me/"
-			static let kScopes: [String] = ["https://graph.microsoft.com/Mail.ReadWrite","https://graph.microsoft.com/Mail.Send","https://graph.microsoft.com/Files.ReadWrite","https://graph.microsoft.com/User.ReadBasic.All"]
+struct ApplicationConstants {
+    static let clientId = "Enter_Client_Id_Here"
+    static let scopes   = ["openid", "profile", "Mail.ReadWrite","mail.send","Files.ReadWrite","User.ReadBasic.All"]
+}
+
+
   ```
 
 > Note: You'll notice that the following permission scopes have been configured for this project: **"https://graph.microsoft.com/Mail.Send", "https://graph.microsoft.com/User.Read", "offline_access"**. The service calls used in this project, sending a mail to your mail account and retrieving some profile information (Display Name, Email Address) require these permissions for the app to run properly.
