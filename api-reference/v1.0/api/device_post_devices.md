@@ -44,13 +44,6 @@ Content-type: application/json
 
 {
   "accountEnabled":false,
-  "alternativeSecurityIds":
-  [
-    {
-      "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
-    }
-  ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
   "displayName":"Test device",
   "operatingSystem":"linux",
@@ -71,13 +64,6 @@ Content-type: application/json
 
 {
   "accountEnabled":false,
-  "alternativeSecurityIds":
-  [
-    {
-      "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
-    }
-  ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
   "displayName":"Test device",
   "id": "id-value",

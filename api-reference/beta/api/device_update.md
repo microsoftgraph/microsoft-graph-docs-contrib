@@ -29,7 +29,6 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. |
-|alternativeSecurityIds|[alternativeSecurityId](../resources/alternativesecurityid.md) collection| The **any** operator is required for filter expressions on multi-valued properties. Not nullable.           |
 |approximateLastSignInDateTime|DateTimeOffset|            The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |deviceId|Guid|            |
 |deviceMetadata|String||
@@ -62,13 +61,6 @@ Content-length: 322
 
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [
-    {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
-    }
-  ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
@@ -89,13 +81,6 @@ Content-length: 322
 
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [
-    {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
-    }
-  ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",

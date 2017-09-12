@@ -28,7 +28,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. |
-|alternativeSecurityIds|[alternativeSecurityId](alternativesecurityid.md) collection| The **any** operator is required for filter expressions on multi-valued properties. Not nullable.           |
+|alternativeSecurityIds|alternativeSecurityId collection| Not nullable.           |
 |approximateLastSignInDateTime|DateTimeOffset|            The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |deviceId|Guid|            |
 |deviceMetadata|String||

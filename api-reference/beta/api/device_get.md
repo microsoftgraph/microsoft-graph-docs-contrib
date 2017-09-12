@@ -58,13 +58,6 @@ Content-length: 322
 
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [
-    {
-      "type": 99,
-      "identityProvider": "identityProvider-value",
-      "key": "key-value"
-    }
-  ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
