@@ -77,64 +77,58 @@ To revisit the UI workflow, the app is going to have the user authenticate, and 
 1. Open the Xcode project workspace (**iOS-ObjectiveC-Connect-Sample.xcworkspace**) in the **starter-project** folder, and navigate to the **Authentication** folder and open the file **AuthenticationProvider.m.** Add the following code to that class.
 
 ```objectivec
-		-(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)	(NSError *))completion{
-    		[NXOAuth2AuthenticationProvider setClientId:kClientId
-                                              scopes:scopes];
-    
-    
-    		/**
-     		Obtains access token by performing login with UI, where viewController specifies the parent view controller.
-     		@param viewController The view controller to present the UI on.
-    		 @param completionHandler The completion handler to be called when the authentication has completed.
-     		error should be non nil if there was no error, and should contain any error(s) that occurred.
-    		 */
+   -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)	(NSError *))completion{
+      [NXOAuth2AuthenticationProvider setClientId:kClientId scopes:scopes];
+      /**
+      Obtains access token by performing login with UI, where viewController specifies the parent view controller.
+      @param viewController The view controller to present the UI on.
+      @param completionHandler The completion handler to be called when the authentication has completed.
+      error should be non nil if there was no error, and should contain any error(s) that occurred.
+      */
 
-    			if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
-        		completion(nil);
-    			}
-    			else {
-        			[[NXOAuth2AuthenticationProvider sharedAuthProvider] loginWithViewController:nil completion:^(NSError *error) {
-            		if (!error) {
-                	NSLog(@"Authentication successful.");
-                	completion(nil);
-            		}
-           		 else {
-               		 NSLog(@"Authentication failed - %@", error.localizedDescription);
-                	completion(error);
-            		}
-       	 		}];
-    		}
-    
-		}
+      if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
+         completion(nil);
+      }
+      else {
+         [[NXOAuth2AuthenticationProvider sharedAuthProvider] loginWithViewController:nil completion:^(NSError *error) {
+            if (!error) {
+               NSLog(@"Authentication successful.");
+               completion(nil);
+            }
+            else {
+               NSLog(@"Authentication failed - %@", error.localizedDescription);
+               completion(error);
+            }
+         }];
+      }
+   }
 ```		
 
 2. Next add the method to the header file. Open the file **AuthenticationProvider.h** and add the following code to this class.
    ```objectivec
-	   	-(void) connectToGraphWithClientId:(NSString *)clientId
+   -(void) connectToGraphWithClientId:(NSString *)clientId
                                scopes:(NSArray *)scopes
                            completion:(void (^)(NSError *error))completion;
-
-
    ```
 
 2. Finally we'll call this method from **ConnectViewController.m**. This controller is the default view that the app loads, and there is a single button named **Connect** that the user will tap that will initiate the authentication process. This method takes in two parameters, the **Client ID** and **scopes**, we'll discuss these in more detail below. Add the following action to **ConnectViewController.m**.
 
 ```objectivec
-		- (IBAction)connectTapped:(id)sender {
-			[self showLoadingUI:YES];   
-			NSArray *scopes = [kScopes componentsSeparatedByString:@","];
-			[self.authProvider connectToGraphWithClientId:kClientId scopes:scopes completion:^(NSError *error) {
-				if (!error) {
-					[self performSegueWithIdentifier:@"showSendMail" sender:nil];
-					[self showLoadingUI:NO];
-					NSLog(@"Authentication successful.");
-					}
-				else{
-					NSLog(NSLocalizedString(@"CHECK_LOG_ERROR", error.localizedDescription));
-					[self showLoadingUI:NO];
-					};
-				}];
-		}
+- (IBAction)connectTapped:(id)sender {
+   [self showLoadingUI:YES];
+   NSArray *scopes = [kScopes componentsSeparatedByString:@","];
+   [self.authProvider connectToGraphWithClientId:kClientId scopes:scopes completion:^(NSError *error) {
+   if (!error) {
+      [self performSegueWithIdentifier:@"showSendMail" sender:nil];
+      [self showLoadingUI:NO];
+      NSLog(@"Authentication successful.");
+   }
+   else{
+      NSLog(NSLocalizedString(@"CHECK_LOG_ERROR", error.localizedDescription));
+      [self showLoadingUI:NO];
+   };
+  }];
+}
 ```		
 
 ## Send an email with Microsoft Graph
@@ -146,10 +140,8 @@ After configuring the project to be able to authenticate, the next tasks are sen
        [self getUserInfo:(self.emailAddress) completion:^( NSError *error) {
         if (!error) {
             [self getUserPicture:(self.emailAddress)  completion:^(UIImage *image, NSError *error) {
-                
                 if (!error) {
                     self.userPicture = image;
-                    
                 } else {
                     //get the test image out of the project resources
                     self.userPicture = [UIImage imageNamed:(@"test.png")];
@@ -157,7 +149,6 @@ After configuring the project to be able to authenticate, the next tasks are sen
                 [self uploadPictureToOneDrive:(self.userPicture) completion:^(NSString *webUrl, NSError *error) {
                     if (!error) {
                         self.pictureWebUrl = webUrl;
-                        
                         dispatch_async(dispatch_get_main_queue(), ^{
                             self.sendMailButton.enabled = true;
                         });
@@ -166,11 +157,8 @@ After configuring the project to be able to authenticate, the next tasks are sen
                             NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
                             self.statusTextView.text = NSLocalizedString(@"PICTURE_UPLOAD_FAILURE", comment: "");
                         });
-                        
                     }
-                    
                 }];
-                
             }];
         }
     }];
@@ -274,7 +262,6 @@ After configuring the project to be able to authenticate, the next tasks are sen
   ```objectivec
    //Send mail to the specified user in the email text field
    -(void) sendMail {
-    
     MSGraphMessage *message = [self getSampleMessage];
     MSGraphUserSendMailRequestBuilder *requestBuilder = [[self.graphClient me]sendMailWithMessage:message saveToSentItems:true];
     NSLog(@"%@", requestBuilder);
@@ -282,8 +269,7 @@ After configuring the project to be able to authenticate, the next tasks are sen
     [mailRequest executeWithCompletion:^(NSDictionary *response, NSError *error) {
         if(!error){
             NSLog(@"response %@", response);
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
+             dispatch_async(dispatch_get_main_queue(), ^{
                 self.statusTextView.text = NSLocalizedString(@"SEND_SUCCESS", comment: "");
                 self.descriptionLabel.text = @"Check your inbox. You have a new message :)";
             });
@@ -295,7 +281,6 @@ After configuring the project to be able to authenticate, the next tasks are sen
             });
         }
     }];
-    
    }
    ```
 
@@ -303,10 +288,11 @@ After configuring the project to be able to authenticate, the next tasks are sen
 
 ## Run the app
 1. Before running the sample you'll need to supply the client ID you received from the registration process in the section **Register the app.** Open **AuthenticationConstants.m** under the **Application** folder. You'll see that the ClientID from the registration process can be added to the top of the file.:  
-
-		// You will set your application's clientId
-		NSString * const kClientId    = @"ENTER_YOUR_CLIENT_ID";
-		NSString * const kScopes = @"https://graph.microsoft.com/User.Read, https://graph.microsoft.com/Mail.ReadWrite, https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/Files.ReadWrite";
+   ```objectivec
+   // You will set your application's clientId
+   NSString * const kClientId    = @"ENTER_YOUR_CLIENT_ID";
+   NSString * const kScopes = @"https://graph.microsoft.com/User.Read, https://graph.microsoft.com/Mail.ReadWrite, https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/Files.ReadWrite";
+   ```		
 
 >Note: You'll notice that the following permission scopes have been configured for this project: **"https://graph.microsoft.com/Mail.Send", "https://graph.microsoft.com/User.Read", "offline_access"**. The service calls used in this project, sending a mail to your mail account and retrieving some profile information (Display Name, Email Address) require these permissions for the app to run properly.
 
