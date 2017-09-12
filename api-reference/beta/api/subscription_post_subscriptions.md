@@ -5,7 +5,7 @@
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
 
 ## Permissions
-Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Creating a subscription requires read permission to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|
