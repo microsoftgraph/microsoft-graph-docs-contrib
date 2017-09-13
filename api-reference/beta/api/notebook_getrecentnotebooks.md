@@ -28,29 +28,26 @@ The `<id | userPrincipalName>` for the user must match the user encoded in the a
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## Request parameters
-In the request URL, provide following query parameters with values.
+## Parameters
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|includePersonalNotebooks|Boolean|Include notebooks owned by the user|
-
-Set the `includePersonalNotebooks` parameter to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.
+|includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
 ```
 
-#### Response
+##### Response
 A successful response will return a `200 OK` containing a JSON collection of **RecentNotebooks**.
 
 <!-- {
