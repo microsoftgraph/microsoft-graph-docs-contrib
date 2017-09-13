@@ -1,6 +1,6 @@
 # recentNotebookLinks resource type
 
-Links for opening a OneNote notebook.
+Links for opening a OneNote notebook. The **recent** prefix on the resource name only means this resource type exists as a property on the [RecentNotebook](recentnotebook.md) model.
 
 ## Properties
 | Property	   | Type	|Description|
