@@ -37,6 +37,9 @@ The `<id | userPrincipalName>` for the user must match the user encoded in the a
 ## Request body
 Do not supply a request body for this method.
 
+## Response
+A successful response returns a `200 OK` that contains a JSON collection of **recentNotebooks**.
+
 ## Example
 The following example shows how to call this API.
 
@@ -48,7 +51,7 @@ GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includ
 ```
 
 ##### Response
-A successful response will return a `200 OK` containing a JSON collection of **RecentNotebooks**.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
