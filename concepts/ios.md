@@ -13,6 +13,4 @@ This sample uses the Microsoft Graph client library for Objective C to access th
 
 The sample shows you how to access the user's Azure profile through the Graph. You also learn how to get the user's profile photo, upload the photo to the user's OneDrive storage and embed the photo in the body of an Outlook email message.
 
-The following image shows the app you'll create.
-
-![Connect sample walkthrough, shows connecting and sending a mail in the app](./images/iOSConnectWalkthrough.png)
+- [Get started with Microsoft Graph in an iOS App](ios_swift.md)
