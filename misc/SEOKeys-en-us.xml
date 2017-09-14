@@ -3614,46 +3614,7 @@
       </Item>
     </Item>
     <Item text="Outlook calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
-      <Item text="Calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
-        <Item text="List calendars" url="/en-us/api-reference/beta/api/user_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendar objects." />
-        <Item text="Create calendar" url="/en-us/api-reference/beta/api/user_post_calendars" SEOKeyword="Create Calendar, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Calendar." />
-        <Item text="Get calendar" url="/en-us/api-reference/beta/api/calendar_get" SEOKeyword="Get calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of calendar object." />
-        <Item text="Update calendar" url="/en-us/api-reference/beta/api/calendar_update" SEOKeyword="Update calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of calendar object." />
-        <Item text="Delete calendar" url="/en-us/api-reference/beta/api/calendar_delete" SEOKeyword="Delete calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete calendar." />
-        <Item text="List calendar view" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="List calendar view, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
-        <Item text="List events" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="List events, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
-        <Item text="Find meeting times" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="Meeting times, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
-        <Item text="Create Event" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="Create Event, Microsoft Graph API, calendar API" SEODescription="Use this API to create a new Event." />
-        <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
-      </Item>
-	  <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
-		  <Item text="File attachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
-		  <Item text="Item attachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
-		  <Item text="Reference attachment resource" url="/en-us/api-reference/beta/resources/referenceattachment" />
-		  <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
-		  <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
-      </Item>
-	  <Item text="Calendar group" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="A group of calendars.">
-        <Item text="List calendar groups" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="List calendarGroups, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendargroup objects." />
-        <Item text="Create calendar group" url="/en-us/api-reference/beta/api/user_post_calendargroups" SEOKeyword="Create CalendarGroup, Microsoft Graph API, Users API" SEODescription="Use this API to create a new CalendarGroup." />
-        <Item text="Get calendar group" url="/en-us/api-reference/beta/api/calendargroup_get" SEOKeyword="Get calendarGroup, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of calendargroup object." />
-        <Item text="Update calendar group" url="/en-us/api-reference/beta/api/calendargroup_update" SEOKeyword="Update calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of calendargroup object." />
-        <Item text="Delete calendar group" url="/en-us/api-reference/beta/api/calendargroup_delete" SEOKeyword="Delete calendarGroup, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete calendarGroup." />
-        <Item text="List calendars in calendar group" url="/en-us/api-reference/beta/api/calendargroup_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of calendar objects." />
-        <Item text="Create calendar in calendar group" url="/en-us/api-reference/beta/api/calendargroup_post_calendars" SEOKeyword="Create calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Calendar." />
-      </Item>
-	  <Item text="Calendar view" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects.">
-        <Item text="List calendar view" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
-        <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
-      </Item>
-	  <Item text="Categories" url="/en-us/api-reference/beta/resources/outlookcategory" >
-		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
-		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
-		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
-		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
-		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-	  </Item>    
-	  <Item text="Event" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
+      <Item text="Event" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create event" url="/en-us/api-reference/beta/api/user_post_events" SEOKeyword="Create Event, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Event." />
         <Item text="Get event" url="/en-us/api-reference/beta/api/event_get" SEOKeyword="Get event, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of event object." />
@@ -3689,7 +3650,46 @@
         <Item text="List attachments" url="/en-us/api-reference/beta/api/eventmessage_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
         <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
-      </Item>   
+      </Item> 
+	  <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
+		  <Item text="File attachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
+		  <Item text="Item attachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
+		  <Item text="Reference attachment resource" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		  <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
+		  <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
+      </Item>
+	  <Item text="Calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook Calendar API, Microsoft Graph API, Outlook Calendar API" SEODescription="A calendar which is a container for events.">
+        <Item text="List calendars" url="/en-us/api-reference/beta/api/user_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendar objects." />
+        <Item text="Create calendar" url="/en-us/api-reference/beta/api/user_post_calendars" SEOKeyword="Create Calendar, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Calendar." />
+        <Item text="Get calendar" url="/en-us/api-reference/beta/api/calendar_get" SEOKeyword="Get calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of calendar object." />
+        <Item text="Update calendar" url="/en-us/api-reference/beta/api/calendar_update" SEOKeyword="Update calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of calendar object." />
+        <Item text="Delete calendar" url="/en-us/api-reference/beta/api/calendar_delete" SEOKeyword="Delete calendar, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete calendar." />
+        <Item text="List calendar view" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="List calendar view, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
+        <Item text="List events" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="List events, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Find meeting times" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="Meeting times, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Create Event" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="Create Event, Microsoft Graph API, calendar API" SEODescription="Use this API to create a new Event." />
+        <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
+      </Item>  
+	  <Item text="Calendar group" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="A group of calendars.">
+        <Item text="List calendar groups" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="List calendarGroups, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendargroup objects." />
+        <Item text="Create calendar group" url="/en-us/api-reference/beta/api/user_post_calendargroups" SEOKeyword="Create CalendarGroup, Microsoft Graph API, Users API" SEODescription="Use this API to create a new CalendarGroup." />
+        <Item text="Get calendar group" url="/en-us/api-reference/beta/api/calendargroup_get" SEOKeyword="Get calendarGroup, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve the properties and relationships of calendargroup object." />
+        <Item text="Update calendar group" url="/en-us/api-reference/beta/api/calendargroup_update" SEOKeyword="Update calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Update the properties of calendargroup object." />
+        <Item text="Delete calendar group" url="/en-us/api-reference/beta/api/calendargroup_delete" SEOKeyword="Delete calendarGroup, Microsoft Graph API, Outlook Calendar API" SEODescription="Delete calendarGroup." />
+        <Item text="List calendars in calendar group" url="/en-us/api-reference/beta/api/calendargroup_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of calendar objects." />
+        <Item text="Create calendar in calendar group" url="/en-us/api-reference/beta/api/calendargroup_post_calendars" SEOKeyword="Create calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Calendar." />
+      </Item>
+	  <Item text="Calendar view" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects.">
+        <Item text="List calendar view" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
+        <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
+      </Item>
+	  <Item text="Categories" url="/en-us/api-reference/beta/resources/outlookcategory" >
+		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>      
 	  <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
         <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
           <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
@@ -3786,20 +3786,6 @@
         <Item text="List attachments" url="/en-us/api-reference/beta/api/outlooktask_list_attachments" />
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/outlooktask_post_attachments" />
       </Item>
-      <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
-		  <Item text="File attachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
-		  <Item text="Item attachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
-		  <Item text="Reference attachment resource" url="/en-us/api-reference/beta/resources/referenceattachment" />
-		  <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
-		  <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
-      </Item>
-	  <Item text="Categories" url="/en-us/api-reference/beta/resources/outlookcategory" >
-		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
-		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
-		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
-		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
-		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-	  </Item>    
 	  <Item text="Outlook task folder" url="/en-us/api-reference/beta/resources/outlooktaskfolder" >
         <Item text="List" url="/en-us/api-reference/beta/api/outlookuser_list_taskfolders" />
         <Item text="Create" url="/en-us/api-reference/beta/api/outlookuser_post_taskfolders" />
@@ -3818,6 +3804,20 @@
         <Item text="List task folders in group" url="/en-us/api-reference/beta/api/outlooktaskfolder_list_tasks" />
         <Item text="Create task folder in group" url="/en-us/api-reference/beta/api/outlooktaskfolder_post_tasks" />
       </Item>
+	  <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
+		  <Item text="File attachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
+		  <Item text="Item attachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
+		  <Item text="Reference attachment resource" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		  <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
+		  <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
+      </Item>
+	  <Item text="Categories" url="/en-us/api-reference/beta/resources/outlookcategory" >
+		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>    
       <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" >
         <Item text="Single-value extended properties" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" >
           <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" />
