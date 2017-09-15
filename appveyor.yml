@@ -1,5 +1,8 @@
 version: 1.0.{build}
 clone_depth: 1
+build_script:
+- ps: >-
+    Write-Host "no build required"
 test_script:
 - ps: >-
     Test-Docs -appVeyorUrl $env:APPVEYOR_API_URL
