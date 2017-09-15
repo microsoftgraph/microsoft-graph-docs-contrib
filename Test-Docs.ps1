@@ -1,6 +1,6 @@
 Param(
     [switch]$cleanUp,
-    [string]$file
+    [string]$appVeyorUrl
 )
 $repoPath = (Get-Location).Path
 $downloadedApiDocs = $false
@@ -54,10 +54,8 @@ if (Get-Command "apidocs.exe" -ErrorAction SilentlyContinue) {
 $lastResultCode = 0
 
 # check links at the root of the repository
-$appVeyorUrl = $env:APPVEYOR_API_URL
-
 $parms = "check-links", "--path", $repoPath, "--ignore-warnings"
-if ($appVeyorUrl -ne $null)
+if ($appVeyorUrl -ne "")
 {
     $parms = $parms += "--appveyor-url", $appVeyorUrl
 }
@@ -76,13 +74,9 @@ ForEach($reference in $reference_paths)
 {
         # Run the checks on all files
         $parms = "check-docs", "--path", $reference, "--ignore-warnings", "--relax-string-validation"
-        if ($appVeyorUrl -ne $null)
+        if ($appVeyorUrl -ne "")
         {
             $parms = $parms += "--appveyor-url", $appVeyorUrl
-        }
-        if ($file -ne "")
-        {
-            $parms = $parms += "--file", $file
         }
 
 
