@@ -1,5 +1,6 @@
 Param(
-    [switch]$cleanUp
+    [switch]$cleanUp,
+    [string]$file
 )
 $repoPath = (Get-Location).Path
 $downloadedApiDocs = $false
@@ -78,6 +79,10 @@ ForEach($reference in $reference_paths)
         if ($appVeyorUrl -ne $null)
         {
             $parms = $parms += "--appveyor-url", $appVeyorUrl
+        }
+        if ($file -ne "")
+        {
+            $parms = $parms += "--file", $file
         }
 
 
