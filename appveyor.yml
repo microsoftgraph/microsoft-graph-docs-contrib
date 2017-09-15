@@ -5,11 +5,9 @@ build_script:
     Write-Host "no build required"
 test_script:
 - ps: >-
-    $parms = "-appVeyorUrl", $env:APPVEYOR_API_URL
-
     $scriptPath = Join-Path $env:APPVEYOR_BUILD_FOLDER -ChildPath "Test-Docs.ps1"
 
-    & $scriptPath $parms
+    & $scriptPath
     
     if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
 
