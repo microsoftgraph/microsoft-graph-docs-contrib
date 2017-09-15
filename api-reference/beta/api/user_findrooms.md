@@ -5,7 +5,7 @@
 Get all the meeting rooms in the user's tenant or in a specific room list. 
 
 Tenants can organize meeting rooms into room lists. Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance. 
-You can [get all the room lists](user_findroomlists) in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list. You can get 
+You can [get all the room lists](user_findroomlists.md) in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list. You can get 
 up to the first 100 rooms in the tenant.
 
 ## Permissions
