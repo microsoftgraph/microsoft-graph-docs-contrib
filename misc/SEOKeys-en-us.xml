@@ -382,6 +382,7 @@
         <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
         <Item text="Get notebook" url="/en-us/api-reference/v1.0/api/notebook_get" SEOKeyword="Get notebook, Microsoft Graph API, notebook API" SEODescription="Retrieve the properties and relationships of a notebook(../resources/notebook.md) object." />
+		<Item text="Get recent notebooks" url="/en-us/api-reference/v1.0/api/notebook_getrecentnotebooks" />
         <Item text="Copy notebook" url="/en-us/api-reference/v1.0/api/notebook_copynotebook" SEOKeyword="notebook: copyNotebook, Microsoft Graph API, notebook API" SEODescription="" />
         <Item text="List sections" url="/en-us/api-reference/v1.0/api/notebook_list_sections" SEOKeyword="List sections, Microsoft Graph API, notebook API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
         <Item text="Create section" url="/en-us/api-reference/v1.0/api/notebook_post_sections" SEOKeyword="Create section, Microsoft Graph API, notebook API" SEODescription="Create a new section(../resources/section.md) in the specified notebook." />
@@ -3555,6 +3556,7 @@
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
         <Item text="Get notebook" url="/en-us/api-reference/beta/api/notebook_get" SEOKeyword="Get notebook, Microsoft Graph API, notebook API" SEODescription="Retrieve the properties and relationships of a notebook(../resources/notebook.md) object." />
         <Item text="Copy notebook" url="/en-us/api-reference/beta/api/notebook_copynotebook" SEOKeyword="notebook: copyNotebook, Microsoft Graph API, notebook API" SEODescription="" />
+		<Item text="Get recent notebooks" url="/en-us/api-reference/beta/api/notebook_getrecentnotebooks" />
         <Item text="List sections" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="List sections, Microsoft Graph API, notebook API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
         <Item text="Create section" url="/en-us/api-reference/beta/api/notebook_post_sections" SEOKeyword="Create section, Microsoft Graph API, notebook API" SEODescription="Create a new section(../resources/section.md) in the specified notebook." />
         <Item text="List section groups" url="/en-us/api-reference/beta/api/notebook_list_sectiongroups" SEOKeyword="List sectionGroups, Microsoft Graph API, notebook API" SEODescription="Retrieve a list of section groups(../resources/sectiongroup.md) from the specified notebook." />
