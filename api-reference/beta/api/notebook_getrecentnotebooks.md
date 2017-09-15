@@ -65,7 +65,6 @@ Content-type: application/json
 Content-Length: 1110
 
 {
-  ...
   "value":[
     {
       "name":"Personal Notebook","lastAccessedTime":"timestamp","links":{
@@ -85,6 +84,5 @@ Content-Length: 1110
       },"sourceService":"OneDriveForBusiness"
     }
   ]
-  ...
 }
 ```
