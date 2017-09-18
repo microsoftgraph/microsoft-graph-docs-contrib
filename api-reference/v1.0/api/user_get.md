@@ -79,7 +79,7 @@ Content-length: 491
 
 ### Example 2: Users request using $select
 
-If you need a different property set, you can use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, _id_ and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
+If you need a different property set, you can use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
 
 ##### Request
 <!-- {
