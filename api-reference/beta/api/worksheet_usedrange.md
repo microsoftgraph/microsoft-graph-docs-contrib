@@ -1,10 +1,16 @@
 # Worksheet: UsedRange
 
-The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-    * Files.ReadWrite
+The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -25,6 +31,7 @@ In the request URL, provide an optonal query parameter.
 | Authorization  | Bearer {token}. Required. |
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example

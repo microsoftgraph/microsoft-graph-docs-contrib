@@ -1,4 +1,6 @@
-﻿#  resource type
+﻿# deviceComplianceSettingState resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,7 +17,7 @@ Device compliance setting State for a given device.
 ## Properties
 |Property|Type|Description|
 |---|---|---|
-|id|String|Not yet documented|
+|id|String|Key of the entity|
 |platformType|String|Device platform type Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
@@ -27,6 +29,7 @@ Device compliance setting State for a given device.
 |userPrincipalName|String|The User PrincipalName that is being reported|
 |deviceModel|String|The device model that is being reported|
 |state|String|The compliance state of the setting Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 ## Relationships
 None
@@ -52,7 +55,8 @@ Here is a JSON representation of the resource.
   "userName": "String",
   "userPrincipalName": "String",
   "deviceModel": "String",
-  "state": "String"
+  "state": "String",
+  "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
 

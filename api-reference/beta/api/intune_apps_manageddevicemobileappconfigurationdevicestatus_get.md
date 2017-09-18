@@ -1,12 +1,19 @@
 ﻿# Get managedDeviceMobileAppConfigurationDeviceStatus
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -43,13 +50,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 369
+Content-Length: 551
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus",
     "id": "477d3651-3651-477d-5136-7d4751367d47",
     "deviceDisplayName": "Device Display Name value",
+    "userName": "User Name value",
+    "deviceModel": "Device Model value",
+    "platform": 8,
+    "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
     "status": "notApplicable",
     "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
     "userPrincipalName": "User Principal Name value"
