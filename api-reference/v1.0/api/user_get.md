@@ -32,9 +32,15 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
-## Example
+
+## Examples
+
+### Example 1: Standard users request
+
+By default, only a limited set of properties are returned (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). This example illustrates the default request and response. 
+
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_user"
@@ -43,7 +49,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -68,6 +74,36 @@ Content-length: 491
    "surname": "surname-value",
    "userPrincipalName": "userPrincipalName-value",
    "id": "id-value"
+}
+```
+
+### Example 2: Users request using $select
+
+If you need a different property set, you can use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
+
+##### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_user"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me?$select=displayName,givenName,postalCode
+```
+##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "postalCode": "postalCode-value"
 }
 ```
 

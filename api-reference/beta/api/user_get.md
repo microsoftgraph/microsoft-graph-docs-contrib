@@ -6,8 +6,6 @@ Retrieve the properties and relationships of user object.
 
 Since the **user** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
 
-> Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -38,7 +36,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_user"
@@ -47,7 +45,8 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/me
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
