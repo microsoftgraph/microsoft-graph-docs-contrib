@@ -1,19 +1,25 @@
 ﻿# Update deviceCompliancePolicyGroupAssignment
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceCompliancePolicyGroupAssignment/{deviceCompliancePolicyGroupAssignmentId}
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}
 ```
 
@@ -31,8 +37,7 @@ The following table shows the properties that are required when you create a [de
 |---|---|---|
 |id|String|Key of the entity. Inherited from [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|
 |targetGroupId|String|The Id of the AAD group we are targeting the device compliance policy to.|
-
-
+|excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [deviceCompliancePolicyGroupAssignment](../resources/intune_deviceconfig_devicecompliancepolicygroupassignment.md) object in the response body.
@@ -41,12 +46,13 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceCompliancePolicyGroupAssignment/{deviceCompliancePolicyGroupAssignmentId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}
 Content-type: application/json
-Content-length: 48
+Content-length: 73
 
 {
-  "targetGroupId": "Target Group Id value"
+  "targetGroupId": "Target Group Id value",
+  "excludeGroup": true
 }
 ```
 
@@ -55,12 +61,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 173
+Content-Length: 198
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyGroupAssignment",
   "id": "fe44007c-007c-fe44-7c00-44fe7c0044fe",
-  "targetGroupId": "Target Group Id value"
+  "targetGroupId": "Target Group Id value",
+  "excludeGroup": true
 }
 ```
 

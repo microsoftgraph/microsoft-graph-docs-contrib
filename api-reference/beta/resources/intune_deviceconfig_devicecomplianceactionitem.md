@@ -1,4 +1,6 @@
-﻿#  resource type
+﻿# deviceComplianceActionItem resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -20,6 +22,7 @@ Scheduled Action Configuration
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced.|
 |actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 |notificationTemplateId|String|What notification Message template to use|
+|notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -40,7 +43,10 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "gracePeriodHours": 1024,
   "actionType": "String",
-  "notificationTemplateId": "String"
+  "notificationTemplateId": "String",
+  "notificationMessageCCList": [
+    "String"
+  ]
 }
 ```
 

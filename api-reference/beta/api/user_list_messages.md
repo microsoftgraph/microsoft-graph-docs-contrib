@@ -1,5 +1,7 @@
 # List messages
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
 
 In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
@@ -24,9 +26,15 @@ If you specify either header, the response will include the corresponding `Prefe
 
 -->
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Read; Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
+|Application | Mail.Read, Mail.ReadWrite |
+
 ## HTTP request
 
 To get all the messages in a user's mailbox:
@@ -63,11 +71,13 @@ the signed-in user.
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. | 
+| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.
 
 The default page size for this request is 10 messages. 

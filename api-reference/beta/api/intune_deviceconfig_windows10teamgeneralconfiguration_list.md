@@ -1,19 +1,26 @@
 ﻿# List windows10TeamGeneralConfigurations
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 List properties and relationships of the [windows10TeamGeneralConfiguration](../resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) objects.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All; DeviceManagementConfiguration.Read.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/
+GET /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
@@ -32,7 +39,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### Response
@@ -40,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1292
+Content-Length: 2029
 
 {
   "value": [
@@ -58,12 +65,25 @@ Content-Length: 1292
       "azureOperationalInsightsBlockTelemetry": true,
       "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
       "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
+      "connectAppBlockAutoLaunch": true,
+      "deviceAccountBlockExchangeServices": true,
+      "deviceAccountEmailAddress": "Device Account Email Address value",
+      "deviceAccountExchangeServerAddress": "Device Account Exchange Server Address value",
+      "deviceAccountRequirePasswordRotation": true,
+      "deviceAccountSessionInitiationProtocolAddress": "Device Account Session Initiation Protocol Address value",
       "maintenanceWindowBlocked": true,
       "maintenanceWindowDurationInHours": 0,
       "maintenanceWindowStartTime": "11:59:09.3130000",
       "miracastChannel": "one",
       "miracastBlocked": true,
       "miracastRequirePin": true,
+      "settingsBlockMyMeetingsAndFiles": true,
+      "settingsBlockSessionResume": true,
+      "settingsBlockSigninSuggestions": true,
+      "settingsDefaultVolume": 5,
+      "settingsScreenTimeoutInMinutes": 14,
+      "settingsSessionTimeoutInMinutes": 15,
+      "settingsSleepTimeoutInMinutes": 13,
       "welcomeScreenBlockAutomaticWakeUp": true,
       "welcomeScreenBackgroundImageUrl": "https://example.com/welcomeScreenBackgroundImageUrl/",
       "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"

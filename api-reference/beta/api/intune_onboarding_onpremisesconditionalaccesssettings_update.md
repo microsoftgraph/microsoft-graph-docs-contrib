@@ -1,19 +1,26 @@
 ﻿# Update onPremisesConditionalAccessSettings
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementServiceConfig.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-PATCH /deviceManagement/exchangeOnPremisesPolicy//conditionalAccessSettings/
+PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ```
 
 ## Request headers
@@ -32,8 +39,7 @@ The following table shows the properties that are required when you create a [on
 |enabled|Boolean|Indicates if on premises conditional access is enabled for this organization|
 |includedGroups|Guid collection|User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.|
 |excludedGroups|Guid collection|User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.|
-
-
+|overrideDefaultRule|Boolean|Override the default access rule when allowing a device to ensure access is granted.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object in the response body.
@@ -42,9 +48,9 @@ If successful, this method returns a `200 OK` response code and an updated [onPr
 ### Request
 Here is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/deviceManagement/exchangeOnPremisesPolicy//conditionalAccessSettings/
+PATCH https://graph.microsoft.com/beta/deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 Content-type: application/json
-Content-length: 163
+Content-length: 195
 
 {
   "enabled": true,
@@ -53,7 +59,8 @@ Content-length: 163
   ],
   "excludedGroups": [
     "<Unknown Primitive Type Edm.Guid>"
-  ]
+  ],
+  "overrideDefaultRule": true
 }
 ```
 
@@ -62,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 286
+Content-Length: 318
 
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
@@ -73,7 +80,8 @@ Content-Length: 286
   ],
   "excludedGroups": [
     "<Unknown Primitive Type Edm.Guid>"
-  ]
+  ],
+  "overrideDefaultRule": true
 }
 ```
 

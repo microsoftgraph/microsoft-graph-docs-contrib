@@ -69,7 +69,7 @@ Delta query is currently supported for the following resources:
 | Personal contact folders | [delta](../api-reference/v1.0/api/contactfolder_delta.md) function of the [contactFolder](../api-reference/v1.0/resources/contactfolder.md) resource |
 | Personal contacts in a folder | [delta](../api-reference/v1.0/api/contact_delta.md) function of the [contact](../api-reference/v1.0/resources/contact.md) resource |
 | Users | [delta](../api-reference/v1.0/api/user_delta.md) function of the [user](../api-reference/v1.0/resources/user.md) resource | 
-| Drive items\* | [delta](../api-reference/v1.0/api/item_delta.md) function of the [driveItem](../api-reference/v1.0/resources/driveItem.md) resource |
+| Drive items\* | [delta](../api-reference/v1.0/api/driveitem_delta.md) function of the [driveItem](../api-reference/v1.0/resources/driveitem.md) resource |
 
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, please see:
@@ -81,7 +81,7 @@ The same [permissions](./permissions_reference.md) that are required to read a s
 
 ## Delta query request examples 
 
-- [Get incremental changes to events in a calendar view](../Concepts/delta_query_events.md)
+- [Get incremental changes to events in a calendar view](../concepts/delta_query_events.md)
 - [Get incremental changes to messages in a folder](./delta_query_messages.md)
 - [Get incremental changes to groups](./delta_query_groups.md)
 - [Get incremental changes to users](./delta_query_users.md)

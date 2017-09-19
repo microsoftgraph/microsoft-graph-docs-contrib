@@ -1,19 +1,26 @@
 ﻿# Create deviceCompliancePolicyState
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /managedDevices/{managedDevicesId}/deviceCompliancePolicyStates/
+POST /managedDevices/{managedDevicesId}/deviceCompliancePolicyStates
 ```
 
 ## Request headers
@@ -36,8 +43,6 @@ The following table shows the properties that are required when you create a dev
 |state|String|The compliance state of the policy Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 
-
-
 ## Response
 If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicyState](../resources/intune_deviceconfig_devicecompliancepolicystate.md) object in the response body.
 
@@ -45,9 +50,9 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceCompliancePolicyStates/
+POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/deviceCompliancePolicyStates
 Content-type: application/json
-Content-length: 782
+Content-length: 984
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyState",
@@ -55,10 +60,14 @@ Content-length: 782
     {
       "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState",
       "setting": "Setting value",
+      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
       "errorDescription": "Error Description value",
+      "userId": "User Id value",
+      "userName": "User Name value",
+      "userEmail": "User Email value",
       "userPrincipalName": "User Principal Name value",
       "sources": [
         {
@@ -66,7 +75,8 @@ Content-length: 782
           "id": "Id value",
           "displayName": "Display Name value"
         }
-      ]
+      ],
+      "currentValue": "Current Value value"
     }
   ],
   "displayName": "Display Name value",
@@ -82,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 831
+Content-Length: 1033
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyState",
@@ -91,10 +101,14 @@ Content-Length: 831
     {
       "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState",
       "setting": "Setting value",
+      "settingName": "Setting Name value",
       "instanceDisplayName": "Instance Display Name value",
       "state": "notApplicable",
       "errorCode": 9,
       "errorDescription": "Error Description value",
+      "userId": "User Id value",
+      "userName": "User Name value",
+      "userEmail": "User Email value",
       "userPrincipalName": "User Principal Name value",
       "sources": [
         {
@@ -102,7 +116,8 @@ Content-Length: 831
           "id": "Id value",
           "displayName": "Display Name value"
         }
-      ]
+      ],
+      "currentValue": "Current Value value"
     }
   ],
   "displayName": "Display Name value",

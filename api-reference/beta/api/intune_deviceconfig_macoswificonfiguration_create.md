@@ -1,19 +1,26 @@
 ﻿# Create macOSWiFiConfiguration
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md) object.
-## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /deviceManagement/deviceConfigurations/
+POST /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
@@ -46,8 +53,7 @@ The following table shows the properties that are required when you create a mac
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
-
-
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [macOSWiFiConfiguration](../resources/intune_deviceconfig_macoswificonfiguration.md) object in the response body.
@@ -56,9 +62,9 @@ If successful, this method returns a `201 Created` response code and a [macOSWiF
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 773
+Content-length: 816
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -77,7 +83,8 @@ Content-length: 773
   "proxySettings": "manual",
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
-  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 
@@ -86,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 881
+Content-Length: 924
 
 {
   "@odata.type": "#microsoft.graph.macOSWiFiConfiguration",
@@ -107,7 +114,8 @@ Content-Length: 881
   "proxySettings": "manual",
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
-  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 
