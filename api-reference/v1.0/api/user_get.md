@@ -37,7 +37,7 @@ If successful, this method returns a `200 OK` response code and [user](../resour
 
 ### Example 1: Standard users request
 
-By default, only a limited set of properties are returned (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). This example illustrates the default request and response. 
+By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). This example illustrates the default request and response. 
 
 ##### Request
 
