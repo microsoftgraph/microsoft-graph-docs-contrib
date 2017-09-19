@@ -89,7 +89,7 @@ Each quick start registers a new application and creates a zip file that contain
 
 Feel free to look at the repo associated with each quick start, file issues there, and/or follow the instructions in the Readme to register your own application. Follow the **Just give me the sample code** link under step 2 of each quick start to go to the associated repo.
 
-### Do all of the quick start samples have the same features?
+### What Graph API features do the quick start samples show?
 
 The suite of samples is being continually improved. Watch the sample repository that you are interested in. As we add features to your favorite sample, we announce the addition through the sample readme. The following table shows you the current features of each sample
 
