@@ -95,18 +95,18 @@ The suite of samples is being continually improved. Watch the sample repository 
 
 |Sample|Get profile pic|Upload pic to OneDrive|Sharing link in email|Attach pic to email|
 |-----:|-----:|------:|------:|------:|
-|[Android Connect](https://github.com/microsoftgraph/android-java-connect-sample)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|
-|[Angular 2 Connect](https://github.com/microsoftgraph/angular-connect-sample)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|
-|[Angular 2 Connect REST](https://github.com/microsoftgraph/angular2-connect-rest-sample)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|
-|[ASP.NET Connect](https://github.com/microsoftgraph/aspnet-connect-sample)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|
-|[iOS Connect - Swift](https://github.com/microsoftgraph/ios-swift-connect-sample))|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|
+|[Android Connect](https://github.com/microsoftgraph/android-java-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[Angular 2 Connect](https://github.com/microsoftgraph/angular-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[Angular 2 Connect REST](https://github.com/microsoftgraph/angular2-connect-rest-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[ASP.NET Connect](https://github.com/microsoftgraph/aspnet-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[iOS Connect - Swift](https://github.com/microsoftgraph/ios-swift-connect-sample))|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 |[iOS Connect REST - Objective C](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample)| | | | |
-|[Node.js Connnect REST](https://github.com/microsoftgraph/nodejs-connect-rest-sample)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)| |
+|[Node.js Connnect REST](https://github.com/microsoftgraph/nodejs-connect-rest-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)| |
 |[php Connect REST](https://github.com/microsoftgraph/php-connect-rest-sample)| | | | |
 |[php Connect](https://github.com/microsoftgraph/php-connect-sample)| | | | |
 |[Ruby Connect REST](https://github.com/microsoftgraph/ruby-connect-rest-sample)| | | | |
-|[UWP Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample) |![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|
-|[Xamarin Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|![](./images/check.png)|
+|[UWP Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample) |![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[Xamarin Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 ## Didn't find what you need?
 
 If this FAQ didn't address a question you have or a problem you encountered with one or more of the quick starts, please report your question or problem on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). 
