@@ -36,7 +36,7 @@ POST /schemaExtensions
 ## Request body
 In the request body, supply a JSON representation of [schemaExtension](../resources/schemaextension.md) object.
 
-The following table shows the properties that are required when you create a schema extension.
+The following table shows the properties that are available when you create a schema extension.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
