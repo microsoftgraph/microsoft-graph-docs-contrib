@@ -11,10 +11,10 @@ Regardless of the platform you choose, each quick start does the following:
 - Inserts the new app ID, and where necessary the app secret, into a configuration file inside the sample code stored in the GitHub repository. We don’t want to send sensitive information inside an HTTP request, so we ask you to copy the app secret after we create the new application, and then copy it into a form in the quick start before you download a copy of the sample.
 - Prompts you to download the fully configured sample. After you download and unzip the sample code, you'll have a client or web application that should run, assuming that you've installed the specified prerequisites (IDEs, web frameworks, and so on) in your development environment.
 
-## General quick Start sample questions
+## General quick start sample questions
 Questions about the organization and contents of the suite of quick start samples.
 
-### Why does my quick start contain a Readme file?
+### Why does my quick start contain a readme file?
 
 Each quick start registers a new application and creates a zip file that contains the contents of a GitHub repository. It updates the files in the repository so that you don't have to configure the sample application in the repository. You'll find these repositories in the [MicrosoftGraph organization](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) on GitHub.
 
