@@ -7,18 +7,18 @@ This FAQ addresses questions and issues that you might encounter as you run thro
 Regardless of the platform you choose, each quick start does the following:
 
 - Registers a new application for you in the [Application Registration Portal](https://apps.dev.microsoft.com). This is why we ask you to sign in with a Microsoft account when you **Get an app ID**. If your application will require an app secret, the quick start will create one for you. 
-- Downloads a copy of sample code stored in a GitHub repo. You can see these repos in the [MicrosoftGraph organization](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) on GitHub.
-- Inserts the new app ID, and wher necessary the app secret, into a configuration file inside the sample code stored in the GitHub repo. We don’t want to send sensitive information inside an HTTP request, so we ask you to copy the app secret after we create the new application, and then copy it into a form in the quick start before you download a copy of the sample.
+- Downloads a copy of sample code stored in a GitHub repository. You can see these repositories  in the [MicrosoftGraph organization](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) on GitHub.
+- Inserts the new app ID, and where necessary the app secret, into a configuration file inside the sample code stored in the GitHub repository. We don’t want to send sensitive information inside an HTTP request, so we ask you to copy the app secret after we create the new application, and then copy it into a form in the quick start before you download a copy of the sample.
 - Prompts you to download the fully configured sample. After you download and unzip the sample code, you'll have a client or web application that should run, assuming that you've installed the specified prerequisites (IDEs, web frameworks, and so on) in your development environment.
 
-## General quick Start sample questions
+## General quick start sample questions
 Questions about the organization and contents of the suite of quick start samples.
 
-### Why does my quick start contain a Readme file?
+### Why does my quick start contain a readme file?
 
-Each quick start registers a new application and creates a zip file that contains the contents of a GitHub repo. It updates the files in the repo so that you don't have to configure the sample application in the repo. You'll find these repos in the [MicrosoftGraph organization](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) on GitHub.
+Each quick start registers a new application and creates a zip file that contains the contents of a GitHub repository. It updates the files in the repository so that you don't have to configure the sample application in the repository. You'll find these repositories in the [MicrosoftGraph organization](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) on GitHub.
 
-Feel free to look at the repo associated with each quick start, file issues there, and/or follow the instructions in the Readme to register your own application. Follow the **Just give me the sample code** link under step 2 of each quick start to go to the associated repo.
+Feel free to look at the repository associated with each quick start, file issues there, and/or follow the instructions in the Readme to register your own application. Follow the **Just give me the sample code** link under step 2 of each quick start to go to the associated repository.
 
 ### What Microsoft API features do the quick start samples show?
 
@@ -32,7 +32,7 @@ The suite of samples is being continually improved. Watch the sample repository 
 |[ASP.NET Connect](https://github.com/microsoftgraph/aspnet-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 |[iOS Connect - Swift](https://github.com/microsoftgraph/ios-swift-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 |[iOS Connect REST - Objective C](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|![](./images/Check.PNG)|
-|[Node.js Connnect REST](https://github.com/microsoftgraph/nodejs-connect-rest-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)| |![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[Node.js Connect REST](https://github.com/microsoftgraph/nodejs-connect-rest-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)| |![](./images/Check.PNG)|![](./images/Check.PNG)|
 |[php Connect REST](https://github.com/microsoftgraph/php-connect-rest-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|![](./images/Check.PNG)|
 |[php Connect](https://github.com/microsoftgraph/php-connect-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|![](./images/Check.PNG)|
 |[Ruby Connect REST](https://github.com/microsoftgraph/ruby-connect-rest-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|![](./images/Check.PNG)|
@@ -73,7 +73,7 @@ If the sample appears to send an email but you don't see it in your Inbox,check 
 ## ASP .NET
 Questions related to coding, building, or running the ASP.NET quick start sample.
 
-## Unversal Windows Platform (UWP)
+## Universal Windows Platform (UWP)
 Questions related to coding, building, or running the UWP quick start sample.
 
 ## Xamarin
@@ -101,18 +101,12 @@ Server-side web applications that need to make secure calls to the Microsoft Gra
 
 An app secret is required only for server-side web applications.
 
-
-
-
 ### I get an error when I try to sign in and authorize the sample app. What steps can I take to fix this? 
 
 First try to run the sample app in an InPrivate or Incognito window. Sometimes web browser cache settings can cause the authorization step to fail, especially if you sign in with multiple Microsoft accounts. If that doesn't work, please follow up with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). Be sure to tag your question with microsoft-graph and copy the error information into the question.
-
-
-
 
 ## Didn't find what you need?
 
 If this FAQ didn't address a question you have or a problem you encountered with one or more of the quick starts, please report your question or problem on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). 
 
-If your problem is related to the code sample provided by the quick start, you can also file an issue in the GitHub sample repo. You can find the repo by following the **Just give me the sample code** link under step 2 for each quick start.
+If your problem is related to the code sample provided by the quick start, you can also file an issue in the GitHub sample repository. You can find the repository by following the **Just give me the sample code** link under step 2 for each quick start.
