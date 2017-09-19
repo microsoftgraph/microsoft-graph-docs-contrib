@@ -44,7 +44,7 @@ Questions related to authentication and authorization issues.
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 
-The quick start samples give you an introduction to authentication and Microsoft Graph API calls. When you add authentication and Graph API calls to your application, you need to know how to design for advanced authentication scenarios involving security and conditional access issues.
+The quick start samples give you an introduction to authentication and Microsoft Graph API calls. When you add authentication and Graph API calls to your production application, you need to know how to design for advanced authentication scenarios involving security and conditional access issues.
 
 You can find out more about advanced authentication scenarios for the authentication library you are using by visiting the authentication library publisher's pages.
 
