@@ -1,4 +1,4 @@
-# OneNote development
+# Integrate with OneNote
 
 OneNote is a popular note-taking tool that's available online and on many mobile and tablet platforms. By integrating your apps with OneNote, it's easier than ever to create empowering apps on your favorite platforms and reach millions of users worldwide. 
 
@@ -6,7 +6,6 @@ OneNote is a popular note-taking tool that's available online and on many mobile
 
 Leverage OneNote's notebook, section, and page hierarchy and easy-to-use API to help your users plan and organize ideas and information.
 
-<a name="overview"></a> 
 ## Platform overview
 
 The OneNote service runs on the Microsoft cloud and provides a RESTful interface for programmatic access to OneNote content. The OneNote API is lightweight and simple--it's built on JSON, HTML, and OData, so you can use it with any language or platform that supports HTTP requests. 
@@ -98,7 +97,7 @@ Integrate OneNote to create apps that people will love. You can use the OneNote 
  Tap into other powerful OneNote API features. The API runs OCR on images, supports full-text search, auto-syncs clients, processes images, and extracts business card captures and online product and recipe listings. Use OneNote as your digital memory store in the cloud for notes and lightweight media, or as a data feed for domain-specific data. 
  
 **Reach millions of OneNote users on all major platforms**  
- Use OneNote to increase your app usage. Pre-installed on new Windows devices, available for popular platforms, on the web as OneNote Online, and part of [Office 365](../howto/platform-development-overview.md)--100+ million people worldwide actively use OneNote. When you publish apps that leverage the 
+ Use OneNote to increase your app usage. Pre-installed on new Windows devices, available for popular platforms, on the web as OneNote Online, and part of [Office 365](https://msdn.microsoft.com/en-us/office/office365/howto/platform-development-overview)--100+ million people worldwide actively use OneNote. When you publish apps that leverage the 
   feature-rich OneNote environment, the cross-platform market potential is simply too big to ignore.
 
 ## Get started with the OneNote API
@@ -173,36 +172,44 @@ ALL INTERACTIVE REST APIS REPLACED WITH GRAPH EXPLORER.
 <p id="indent">(1) Choose **OAuth 2 Implicit Grant** from the drop-down menu and authenticate with your Microsoft account credentials, and then (2) choose an endpoint. Enter values on the Query, Template, and Header tabs as needed, and (3) choose **Send**.</p>
  
 
-### How-to and conceptual articles
+## How-to and conceptual articles
 
 When you're ready to dig deeper, browse our how-to and conceptual articles to learn more about what you can do with OneNote.
 
-#### ALL BROKEN!
-<p id="indent">[Authentication and permissions](../howto/onenote-auth.md)</p>
-<p id="indent">[Branding guidelines](../howto/onenote-branding.md)</p>
-<p id="indent">[Supported REST operations](../howto/onenote-supported-ops.md)</p>
-<p id="indent">[Get OneNote content and structure](../howto/onenote-get-content.md)</p>
-<p id="indent">[Open the OneNote clients](../howto/onenote-open-links.md)</p>
-<p id="indent">[Copy notebooks, sections, and pages](../howto/onenote-copy.md)</p>
-<p id="indent">[Create pages](../howto/onenote-create-page.md)</p>
-<p id="indent">[Update page content](../howto/onenote-update-page.md)</p>
-<p id="indent">[Add images, videos, and files](../howto/onenote-images-files.md)</p>
-<p id="indent">[Create absolute positioned elements](../howto/onenote-abs-pos.md)</p>
-<p id="indent">[Extract data](../howto/onenote-extract-data.md)</p>
-<p id="indent">[Use note tags](../howto/onenote-note-tags.md)</p>
-<p id="indent">[Manage permissions on OneNote entities](../howto/onenote-manage-perms.md)</p>
-<p id="indent">[Work with class notebooks](../howto/onenote-classnotebook.md)</p>
-<p id="indent">[Work with staff notebooks](../howto/onenote-staffnotebook.md)</p>
-<p id="indent">[Input and output HTML](../howto/onenote-input-output-html.md)</p>
-<p id="indent">[Error and warning codes](../howto/onenote-error-codes.md)</p>
-<p id="indent">[Use the save dialog](../howto/onenote-save-dialog.md)</p>
-<p id="indent">[Subscribe for webhooks](../howto/onenote-sync.md)</p>
+* [Authentication and permissions](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-auth)
+* [Branding guidelines](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
+* [Supported REST operations](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-supported-ops)
+* [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
+[Open the OneNote clients](onenote_open_onenote_client.md)
+* [Copy notebooks, sections, and pages](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-copy)
+* [Create pages](../api-reference/v1.0/api/section_post_pages.md)
+[Update page content](../api-reference/v1.0/api/page_update.md)
+* [Add images, videos, and files](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files.md)
+* [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos.md)
+* [Extract data](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data.md)
+* [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags.md)
+* [Manage permissions on OneNote entities](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-manage-perms.md)
+* [Work with class notebooks](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-classnotebook.md)
+* [Work with staff notebooks](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-staffnotebook.md)
+* [Understanding the HTML](onenote_understand_the_html.md)
+* [Error and warning codes](onenote_error_codes.md)
+* [Use the save dialog](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-save-dialog.md)
+* [Subscribe for webhooks](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-sync.md)
 
 ## SDKs for OneNote development
 
-[!INCLUDE [sdks](../includes/onenote/sdks.md)]
+OneNote apps can use the OneDrive API SDK to get the access tokens that are required for all requests to the OneNote API. The SDK makes authentication easier for you. You just provide your identity information and integrate a few calls, and the SDK handles everything from sign in and consent to getting, storing, and refreshing tokens. Then, you can make REST calls to the OneNote API. Our [iOS tutorial](../../howto/onenote-tutorial.md#ios) shows how you can use the SDK in a OneNote app.
 
-<a name="contact"></a>
+All versions of the SDK support Microsoft account authentication (for consumer notebooks), and some also support Azure Active Directory (for enterprise notebooks). See the [OneDrive documentation](https://dev.onedrive.com/sdks.htm) for the current list of supported platforms.
+
+>The OneDrive API SDK replaces the Live SDK. The Live SDK is deprecated but will continue to support existing OneNote applications that use it. For new development, use the OneDrive API SDK.
+
+At some point, we may provide libraries that both handle authentication and support native calls to the OneNote API, but for now you can use the OneDrive API SDK.
+
+Alternatively, enterprise apps can use the [Active Directory Authentication Library](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) (ADAL) to access Office 365 and SharePoint-hosted notebooks. You might consider using ADAL directly if there's no SDK available for your platform or if you want more control over the auth process. Our [ASP.NET MVC tutorial](../../howto/onenote-tutorial.md#aspnet) shows how you can use ADAL in a OneNote app.
+e OneNote API. Don't use the OneDrive API.
+**Important!** To interact with OneNote content and resources, you should always use the OneNote API. Don't use the OneDrive API.
+
 ## Connect with us
 Stay tuned as we expand and improve. We always want to hear your questions and comments, help you figure things out, and keep you up-to-date. Here's how you can connect with us:
 
@@ -211,7 +218,6 @@ Stay tuned as we expand and improve. We always want to hear your questions and c
 - Follow us on Twitter: [@onenotedev](http://twitter.com/onenotedev). 
 - Send us your ideas and comments on [UserVoice](http://go.microsoft.com/fwlink/?LinkID=396377).
 
-<a name="changes"></a>
 ## What's changed
 
 The following entries highlight changes made to the OneNote API and documentation during the past year:

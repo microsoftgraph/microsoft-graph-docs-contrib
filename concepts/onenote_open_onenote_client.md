@@ -4,7 +4,7 @@ You can use the **links** property of a page or notebook to open a OneNote appli
 
 The **links** property is a JSON object that contains two URLs:
 
-``` 
+```json
 { 
     "links": {
         "oneNoteClientUrl": {
@@ -174,14 +174,10 @@ if (response.getResponseCode() == 201) {
 
 ## Additional resources
 
-- [Create, update, or read OneNote page content](onenote_input_output.md)
-- [Handle errors with the OneNote API](onenote_handle_api_errors.md)
-- [Best practices for working with the OneNote API](onenote_api_best_practices.md)
-<!-- 
-- [Get OneNote content and structure](../howto/onenote-get-content.md)
-- [Create OneNote pages](../howto/onenote-create-page.md)
-- [OneNote development](../howto/onenote-landing.md)
+- [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
+- [Create OneNote pages](../api-reference/v1.0/api/section_post_pages.md)
+- [OneNote development](onenote_integrate_with_onenote.md)
 - [OneNote Dev Center](http://dev.onenote.com/)
 - [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182) 
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178) -->
+- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)
