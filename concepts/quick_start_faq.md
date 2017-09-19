@@ -27,6 +27,9 @@ If a sample that uses .NET libraries fails to build in Visual Studio, one or mor
 ## Web stack samples
 Questions related to coding, building, or running quick start samples built with web technology.
 
+### How do I know if my local computer supports a local web server?
+
+
 ### If a web platform quick start provides REST and SDK samples, can I run them both at the same time?
 
 Yes, you can run both samples at the same time. Just make sure that one of them isn't running on the default port. This means that when you start your test web server, you'll need to specify a port number for at least one version of the sample.
@@ -44,7 +47,9 @@ Questions related to authentication and authorization issues.
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 
-Each platform that we build a sample for has an authentication library created for the platform. The authentication library designers followed the OAuth 2 specification but do not use a common set of authentication method signatures. To simplify the code in our quick start samples, we designed for minimally complicated authentication scenarios. If the sample code doesn't show your authentcation use case, the library publisher documentation is found in the following list.
+The quick start samples give you an introduction to authentication and Microsoft Graph API calls. When you add authentication and Graph API calls to your application, you need to know how to design for advanced authentication scenarios involving security and conditional access issues.
+
+You can find out more about advanced authentication scenarios for the authentication library you are using by visiting the authentication library publisher's pages.
 
 - [OAuth2Client for Android and iOS](https://github.com/nxtbgthng/OAuth2Client)
 - [Passport for Node](http://passportjs.org/)
@@ -84,7 +89,24 @@ Each quick start registers a new application and creates a zip file that contain
 
 Feel free to look at the repo associated with each quick start, file issues there, and/or follow the instructions in the Readme to register your own application. Follow the **Just give me the sample code** link under step 2 of each quick start to go to the associated repo.
 
+### Do all of the quick start samples have the same features?
 
+The suite of samples is being continually improved. Watch the sample repository that you are interested in. As we add features to your favorite sample, we announce the addition through the sample readme. The following table shows you the current features of each sample
+
+|Sample|Get profile pic|Upload pic to OneDrive|Sharing link in email|Attach pic to email|
+|-----:|-----:|------:|------:|------:|
+|[Android Connect](https://github.com/microsoftgraph/android-java-connect-sample)|X|X|X|X|
+|[Angular 2 Connect](https://github.com/microsoftgraph/angular-connect-sample)|X|X|X|X|
+|[Angular 2 Connect REST](https://github.com/microsoftgraph/angular2-connect-rest-sample)|X|X|X|X|
+|[ASP.NET Connect](https://github.com/microsoftgraph/aspnet-connect-sample)|X|X|X|X|
+|[iOS Connect - Swift](https://github.com/microsoftgraph/ios-swift-connect-sample))|X|X|X|X|
+|[iOS Connect REST - Objective C](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample)| | | | |
+|[Node.js Connnect REST](https://github.com/microsoftgraph/nodejs-connect-rest-sample)|X|X|X| |
+|[php Connect REST](https://github.com/microsoftgraph/php-connect-rest-sample)| | | | |
+|[php Connect](https://github.com/microsoftgraph/php-connect-sample)| | | | |
+|[Ruby Connect REST](https://github.com/microsoftgraph/ruby-connect-rest-sample)| | | | |
+|[UWP Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample) |X|X|X|X|
+|[Xamarin Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample)|X|X|X|X|
 ## Didn't find what you need?
 
 If this FAQ didn't address a question you have or a problem you encountered with one or more of the quick starts, please report your question or problem on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph). 
