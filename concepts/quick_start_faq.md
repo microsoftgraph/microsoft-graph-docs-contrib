@@ -44,7 +44,7 @@ Questions related to authentication and authorization issues.
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 
-The quick start samples give you an introduction to authentication and Microsoft Graph API calls. When you add authentication and Graph API calls to your application, you need to know how to design for advanced authentication scenarios involving security and conditional access issues.
+The quick start samples give you an introduction to authentication and Microsoft Graph API calls. When you add authentication and Graph API calls to your production application, you need to know how to design for advanced authentication scenarios involving security and conditional access issues.
 
 You can find out more about advanced authentication scenarios for the authentication library you are using by visiting the authentication library publisher's pages.
 
@@ -87,7 +87,13 @@ If a sample that uses .NET libraries fails to build in Visual Studio, one or mor
 Questions related to coding, building, or running quick start samples built with web technology.
 
 ### How do I know if my local computer supports a local web server?
+The quick start samples based on web technology provide the logic necessary to start and host a local web server. For example, the php sample based on the php 5.4.0+ runtime includes a [built-in web server](http://php.net/manual/en/features.commandline.webserver.php) that you will use for development. It is not intended to be used in a production environment. 
 
+If you have downloaded the Node.js sample, read this [Node.js getting started guide](https://nodejs.org/en/docs/guides/getting-started-guide/) to learn about starting the Node web server. 
+
+For the ASP.NET sample, Visual Studio 2015 and newer versions include a development web server that starts automatically when you run the sample. You don't need to configure the sample project to use the web server. 
+
+The Ruby connect sample [readme](https://github.com/microsoftgraph/ruby-connect-rest-sample/blob/master/README.md) provides the instructions you need to start a local Ruby web server. 
 
 ### If a web platform quick start provides REST and SDK samples, can I run them both at the same time?
 
