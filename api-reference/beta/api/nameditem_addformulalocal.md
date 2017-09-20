@@ -1,7 +1,4 @@
 # Add Named Item FormulaLocal
-
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Permissions
@@ -10,14 +7,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Files.ReadWrite, Sites.Read.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/addFormulaLocal
+POST /workbook/worksheets({id|name})/names/add
 
 ```
 ## Request headers
@@ -80,10 +77,11 @@ Content-length: 109
     "name": "test7",
     "scope": "Workbook",
     "type": "Double",
-    "value": 0,
+    "value": "0",
     "visible": true
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
