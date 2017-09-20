@@ -47,7 +47,7 @@ The suite of samples is being continually improved. Watch the sample repository 
 |[UWP Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample) |![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 |[Xamarin Connect](https://github.com/microsoftgraph/uwp-csharp-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
 
-## Authentication \& authorization
+## Authentication and authorization
 Questions related to authentication and authorization issues. 
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
