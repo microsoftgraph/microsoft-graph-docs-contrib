@@ -4,12 +4,20 @@ This FAQ addresses questions and issues that you might encounter as you run thro
 
 ## What do the quick starts do?
 
-Regardless of the platform you choose, each quick start does the following:
+The quick start samples show you how to access the power of the Microsoft Graph. 
 
-- Registers a new application for you in the [Application Registration Portal](https://apps.dev.microsoft.com). This is why we ask you to sign in with a Microsoft account when you **Get an app ID**. If your application will require an app secret, the quick start will create one for you. 
-- Downloads a copy of sample code stored in a GitHub repository. You can see these repositories  in the [MicrosoftGraph organization](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect) on GitHub.
-- Inserts the new app ID, and where necessary the app secret, into a configuration file inside the sample code stored in the GitHub repository. We don’t want to send sensitive information inside an HTTP request, so we ask you to copy the app secret after we create the new application, and then copy it into a form in the quick start before you download a copy of the sample.
-- Prompts you to download the fully configured sample. After you download and unzip the sample code, you'll have a client or web application that should run, assuming that you've installed the specified prerequisites (IDEs, web frameworks, and so on) in your development environment.
+With earlier Microsoft REST APIs you had to authenticate to each service you wanted to call. Microsoft Graph eliminates this complexity for developers by unifying authentication and combining all API entry points into one Graph API entry point. Now you authenticate once and get the power to access information across multiple applications and services. 
+
+The quick start example will access 3 different services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start will pull information from Microsoft Account users profiles, combining it with writing data to OneDrive (a photo) and then generate an email using Outlook (including a link to the photo). 
+
+There are four steps to each quick start to get an example app that is ready to run:
+- Select your platform 
+- Get your app ID
+- Build the sample,
+- Sign in, and send a profile photo via email
+
+>Note: these are not designed to be production ready code; they are just easy illustrations for how you can do the same scenario across many different programing languages and platforms. Once you do a quick start, we recommend you fully understand authentication to create production-ready apps.
+
 
 ## General quick start sample questions
 Questions about the organization and contents of the suite of quick start samples.
@@ -20,7 +28,7 @@ Each quick start registers a new application and creates a zip file that contain
 
 Feel free to look at the repository associated with each quick start, file issues there, and/or follow the instructions in the Readme to register your own application. Follow the **Just give me the sample code** link under step 2 of each quick start to go to the associated repository.
 
-### What Microsoft API features do the quick start samples show?
+### Which Microsoft API features do the quick start samples show?
 
 The suite of samples is being continually improved. Watch the sample repository that you are interested in. As we add features to your favorite sample, we announce the addition through the sample readme. The following table shows you the current features of each sample
 
