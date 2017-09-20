@@ -1,7 +1,5 @@
 # Worksheet: UsedRange
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -9,7 +7,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
 ## HTTP request
@@ -18,12 +16,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
-## Optional query parameters
-In the request URL, provide an optonal query parameter. 
+
+## Optional request parameter
+In the request URL, provide an optional query parameter.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
+|valuesOnly|Boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
 
 ## Request headers
 | Name       | Description|
@@ -62,11 +61,7 @@ Content-length: 169
 
 {
   "address": "address-value",
-  "addressLocal": "addressLocal-value",
-  "cellCount": 99,
-  "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "addressLocal": "addressLocal-value"
 }
 ```
 

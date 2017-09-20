@@ -77,7 +77,7 @@ Content-length: 109
     "name": "test7",
     "scope": "Workbook",
     "type": "Double",
-    "value": 0,
+    "value": "0",
     "visible": true
 }
 ```
