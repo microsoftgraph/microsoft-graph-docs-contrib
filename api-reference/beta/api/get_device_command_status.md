@@ -106,14 +106,14 @@ HTTP/1.1 200 OK
 
 {
   "id": "0158355AD4D680CC4E2994CC009EFFD7337D1335FCA6ED266…",
-  "Status": "completed",
-  "Type": null,
-  "AppServiceName": null,
-  "PackageFamilyName": null,
-  "Error": null,
-  "PermissionTicket": null,
-  "PostBackUri": null,
-  "Payload": null
+  "status": "completed",
+  "type": null,
+  "appServiceName": null,
+  "packageFamilyName": null,
+  "error": null,
+  "permissionTicket": null,
+  "postBackUri": null,
+  "payload": null
 }
 
 ```
