@@ -12,7 +12,7 @@ To illustrate, the Microsoft Graph quick start example will access 3 different s
 
 There are four steps to each quick start to get an example app that is ready to run:
 - Select your platform 
-- Get your app ID/Client ID
+- Get your app ID (aka client ID)
 - Build the sample,
 - Sign in, and send a profile photo via email
 
