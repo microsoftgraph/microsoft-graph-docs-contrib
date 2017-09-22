@@ -10,73 +10,15 @@ When your request generates an error, the OneNote API stops performing the reque
    "error":{
       "code":"10002",
       "message":"The service is currently unavailable. Please try again later.",
-      "@api.url":"http://go.microsoft.com/fwlink/?LinkID=400805"
+      "innerError": {
+        "requestId": "request-id",
+        "date": "date-time"
+      }
    }
 }
 ```
- 
-When your request generates a warning, the OneNote API performs the request and includes the warning in its response. A response can contain more than one warning, so the API returns warnings as an array of JSON objects. Each warning contains a message and a link to the appropriate section of this article. The following example shows how a warning response looks in the context of a completed request.
 
-```json
-{
-   "@odata.context":"https://www.onenote.com/api/v1.0/$metadata#me/notes/notebooks",
-   "api.diagnostics@odata.type":"#Collection(Microsoft.OneNote.Api.Diagnostic)",
-   "@api.diagnostics":[
-      {
-         "message":"Created date/time string 5/5/2014 in 'Presentation' part html did not match any of the allowed formats",
-         "url":"http://go.microsoft.com/fwlink/?LinkID=400816"
-      }
-   ],
-   "value":[
-      {
-         "isDefault":false,
-         "createdBy":null,
-         "modifiedTime":"0001-01-01T00:00:00Z",
-         "userRole":"Owner",
-         "id":"55C9F7CBFC6AC1!76345",
-         "name":"Notebook1",
-         "link":null
-      },
-      {
-         "isDefault":true,
-         "createdBy":null,
-         "modifiedTime":"0001-01-01T00:00:00Z",
-         "userRole":"Owner",
-         "id":"55C9F7CBFC6AC1!76428",
-         "name":"Notebook2",
-         "link":null
-      },
-      {
-         "isDefault":false,
-         "createdBy":null,
-         "modifiedTime":"0001-01-01T00:00:00Z",
-         "userRole":"Owner",
-         "id":"55C9F7CBFC6AC1!77509",
-         "name":"Notebook3",
-         "link":null
-      }
-   ]
-}
-```
-
-A request can also generate both an error and one or more warnings. In that case the OneNote API stops performing the request and returns both the error and the warnings. The following example shows how an error that contains a warning looks.
-
-```json
-{
-   "error":{
-      "code":"10002",
-      "message":"The service is currently unavailable. Please try again later.",
-      "@api.url":"http://go.microsoft.com/fwlink/?LinkID=400805",
-      "api.diagnostics@odata.type":"#Collection(Microsoft.OneNote.Api.Diagnostic)",
-      "@api.diagnostics":[
-         {
-            "message":"Created date/time string 5/5/2014 in 'Presentation' part html did not match any of the allowed formats",
-            "url":"http://go.microsoft.com/fwlink/?LinkID=400816"
-         }
-      ]
-   }
-}
-```
+For more information about Graph errors, see [Microsoft Graph error responses and resource types](errors.md).
 
 If you need to work with Microsoft support to resolve any issues, be sure to also log the [X-CorrelationId header](#x-correlationid-header) and timestamp of the API call.
 
@@ -115,10 +57,17 @@ Either remove the check-out requirement from the library, or move the notebook.
 ### 10013
 One or more of the document libraries on the user or group's OneDrive contains more than 20,000 items and cannot be indexed for querying using the API. Please make sure that none of the user or group's document libraries contains more than 20,000 items. See the [OneNote Dev blog](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) for mitigation steps.
 
-### 10012
-Unable to create or update the entity because the library that contains the notebook requires items to be checked out before they can be edited. For more information, see https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
+### 10014
+Azure Key Vault is too busy to handle the incoming request at this moment. Please try again later.
 
-Either remove the check-out requirement from the library, or move the notebook.
+### 10015
+SharePoint is currently unavailable. Please try again later.
+
+### 10016
+Document library on the user or group’s OneDrive exceeded unique security scopes threshold limit. The maximum number of unique security scopes set for a library cannot exceed 50,000.
+
+### 10017
+Bad Request.
 
 ### 19999
 The request failed because an undetermined error occurred.
@@ -173,6 +122,18 @@ The count of parts in the multipart message exceeds the limit of 500. See [OneNo
 
 ### 20016
 The length of the multipart message exceeds the limit of 75 MB. See [OneNote API reference][ref].
+
+### 20017
+The email MIME was malformed. See [OneNote API reference][ref].
+
+### 20018
+The meeting MIME or ICal was malformed. See [OneNote API reference][ref].
+
+### 20019
+No ICal was found. See [OneNote API reference][ref].
+
+### 20020
+Encountered malformed Json in request body. See [OneNote API reference][ref].
 
 ### 20100
 Something is wrong with the syntax of your request. See [OneNote API reference][ref] for more information, and check to make sure that you have constructed your request correctly.
@@ -358,6 +319,8 @@ The application has issued too many requests on behalf of a user in a short peri
 ### 20168
 The video source specified in the request is not supported. See [Supported video sites](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos) for the current list.
 
+
+
 ## Codes from 30001 to 39999
 Something is wrong with the user's account.
 
@@ -389,11 +352,29 @@ The user's personal OneDrive for Business could not be retrieved. Here are some 
 | The user does not have a valid OneDrive for Business license. | The user should contact their Office 365 tenant administrator. |
 | A network issue prevented the request from being successfully sent. | Try the request later. |
 
+### 30109
+Some users in the request do not exist.
+
+### 30110
+Student Information Services has not been registered for this tenant.
+
+### 30111
+There is a generic error with Student Information Services.
+
+### 30112
+Multiple users affected by the request had the same username.
+
+### 30113
+The notebook is not configured to allow invites.
+
+### 30114
+There is a required parameter missing.
+
 ## Codes from 40001 to 49999
 The user or application does not have the correct permissions.
 
 ### 40001
-The request doesn't contain a valid OAuth token. See [OneNote authentication and permissions](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-auth).
+The request doesn't contain a valid OAuth token. See [OneNote authentication and permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#notes-permissions).
 
 ### 40002
 The user doesn't have permission to write to the requested location.
@@ -402,7 +383,19 @@ The user doesn't have permission to write to the requested location.
 The user doesn't have permission to access the requested resource.
 
 ### 40004
-The OAuth token doesn't have the required scopes to perform the requested action. See [OneNote authentication and permissions](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-auth).
+The OAuth token doesn't have the required scopes to perform the requested action. See [OneNote authentication and permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#notes-permissions).
+
+### 40006 
+The OAuth token doesn't have the required scopes to perform the requested action. Specifically the edit permission. See [OneNote authentication and permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#notes-permissions).
+
+### 40007
+The user does not have permissions to access this resource.
+
+### 40008
+Access is Forbidden for this resource.
+
+### 40009
+The container is already in use by another resource.
 
 ## X-CorrelationId header
 In addition to standard HTTP response codes, the OneNote API returns headers to the calling app. Included in every response is an **X-CorrelationId** header and a **Date** header, as shown in the following excerpt:

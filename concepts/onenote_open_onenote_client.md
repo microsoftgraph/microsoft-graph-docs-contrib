@@ -37,7 +37,7 @@ The following examples show how to check the status code of the response, parse 
 
 ## iOS example
 
-The following example gets the OneNote client URLs from the JSON response. It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs. In the example, **created** is a pointer to the ONSCPSStandardResponse object used to store the response values, and **responseObject** holds the parsed JSON.
+The following example gets the OneNote client URLs from the JSON response. It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs. In the example, `created` is a pointer to the ONSCPSStandardResponse object used to store the response values, and `responseObject` holds the parsed JSON.
 
 ```objectivec
     /* Import the JSON library */
@@ -77,7 +77,7 @@ The following example gets the OneNote client URLs from the JSON response. It us
       }
 ``` 
 
-Now that you've parsed the URLs from the response, you can open OneNote by using the following code. Use **oneNoteClientUrl** to open the installed OneNote client or **oneNoteWebURL** to open OneNote Online.
+Now that you've parsed the URLs from the response, you can open OneNote by using the following code. Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.
 
 ```objectivec
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
@@ -153,7 +153,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
  
-Or your app can open the native OneNote client on an Android device. When using the **oneNoteClientUrl** property, you must surround the GUID strings with braces `{ }` before starting the Intent. The following example shows how to do that.
+Or your app can open the native OneNote client on an Android device. When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent. The following example shows how to do that.
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -177,7 +177,6 @@ if (response.getResponseCode() == 201) {
 - [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
 - [Create OneNote pages](../api-reference/v1.0/api/section_post_pages.md)
 - [OneNote development](onenote_integrate_with_onenote.md)
-- [OneNote Dev Center](http://dev.onenote.com/)
 - [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182) 
 - [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)

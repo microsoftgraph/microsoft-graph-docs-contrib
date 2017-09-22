@@ -1,7 +1,5 @@
 # Best practices for working with the OneNote API
 
-Hello world,
-
 In StackOverflow and twitter, we often hear questions on how to make queries to the API faster. Here are a few recommendations:
 
 ## Always log the "X-CorrelationId", "Date" and "Request-Processing-Time" headers on the OneNote API response
@@ -84,7 +82,8 @@ Than several (this API is paged, so you won't be able to fetch them all at once)
 GET ~/pages
 ```
 
-When getting page metadata, override default `lastModifiedDate` ordering
+When getting page metadata, override default `lastModifiedDate` ordering.
+
 It is faster for us to get pages when we don't have to sort them by `lastModifiedDate` (which is the default ordering) - you can achieve this by sorting by any other property:
 
 ```http
