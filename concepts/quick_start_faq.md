@@ -12,7 +12,7 @@ The quick start example will access 3 different services with one authentication
 
 There are four steps to each quick start to get an example app that is ready to run:
 - Select your platform 
-- Get your app ID
+- Get your app ID/Client ID
 - Build the sample,
 - Sign in, and send a profile photo via email
 
