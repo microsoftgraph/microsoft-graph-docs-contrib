@@ -8,7 +8,7 @@ The quick start samples show you how to access the power of the Microsoft Graph.
 
 With earlier Microsoft REST APIs you had to authenticate to each service you wanted to call. Microsoft Graph eliminates this complexity for developers by unifying authentication and combining all API entry points into one Graph API entry point. Now you authenticate once and get the power to access information across multiple applications and services. 
 
-The quick start example will access 3 different services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start will pull information from Microsoft Account users profiles, combining it with writing data to OneDrive (a photo) and then generate an email using Outlook (including a link to the photo). 
+To illustrate, the Microsoft Graph quick start example will access 3 different services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start will pull information from Microsoft Account users profiles, combining it with writing data to OneDrive (a photo) and then generate an email using Outlook (including a link to the photo). 
 
 There are four steps to each quick start to get an example app that is ready to run:
 - Select your platform 
