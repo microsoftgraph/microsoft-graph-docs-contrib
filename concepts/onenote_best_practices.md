@@ -2,37 +2,6 @@
 
 In StackOverflow and twitter, we often hear questions on how to make queries to the API faster. Here are a few recommendations:
 
-## Always log the "X-CorrelationId", "Date" and "Request-Processing-Time" headers on the OneNote API response
-
-First - make sure you have the API's performance-related information logged. All requests to the OneNote API have those 3 headers - here's an example:
-
-```http
-HTTP/1.1 200 OK
-Cache-Control: no-cache
-Pragma: no-cache
-Content-Type: application/xml
-Expires: -1
-Server: Microsoft-IIS/10.0
-X-CorrelationId: d0ff1746-6b9d-456f-ae18-3c7bc822d53e
-X-UserSessionId: d0ff1746-6b9d-456f-ae18-3c7bc822d53e
-X-OfficeFE: deployment29(8).MSOffice.ClassNotebookApiSingleBox_IN_0
-X-OfficeVersion: 16.0.8418.3004
-X-OfficeCluster: localhost
-P3P: CP="CAO DSP COR ADMa DEV CONi TELi CUR PSA PSD TAI IVDi OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR"
-X-Content-Type-Options: nosniff
-Request-Processing-Time: 838.9842 ms
-OData-Version: 4.0
-X-AspNet-Version: 4.0.30319
-X-Powered-By: ASP.NET
-Date: Fri, 28 Jul 2017 16:54:58 GMT
-Content-Length: 32552
-X-CorrelationId: This uniquely identifies any API request. In case there are any issues with the API, we can use this for debugging.
-Request-Processing-Time: Latency of the API.
-Date: The date when the request was made.
-```
-
-Having this in your logs will make debugging performance issues easier.
-
 ## Use $select to select the minimum set of properties you need
 When querying for a resource (say for example, sections inside a notebook), you make a request like:
 
@@ -43,7 +12,7 @@ GET ~/notebooks/{id}/sections
 This retrieves all the properties of the sections - but perhaps you don't really need them all, maybe you only need the id and the name of the section... in that case, it is better to say:
 
 ```http
-GET ~/notebooks/{id}/sections?$select=id,name
+GET ~/notebooks/{id}/sections?$select=id,displayName
 ```
 
 The same applies to other APIs - the fewer properties you select, the better.
@@ -58,10 +27,10 @@ It can be tempting to do the following:
 * For every retrieved notebook, call `GET ~/notebooks/{notebookId}/sectionGroups` to retrieve the list of section groups
 * … optionally recursively iterate through section groups
 
-While this will work (with a few extra sequential roundtrips to our service), there is a much better alternative. See our blog post about expand for a more details.
+While this will work (with a few extra sequential roundtrips to our service), there is a much better alternative by using $expand. 
 
 ```http
-GET ~/api/v1.0/me/notes/notebooks?$expand=sections,sectionGroups($expand=sections)
+GET ~/notebooks?$expand=sections,sectionGroups($expand=sections)
 ```
 
 This will yield the same results in one network roundtrip with way better performance – yay!
@@ -82,10 +51,10 @@ Than several (this API is paged, so you won't be able to fetch them all at once)
 GET ~/pages
 ```
 
-When getting page metadata, override default `lastModifiedDate` ordering.
+When getting page metadata, override default `lastModifiedDateTime` ordering.
 
-It is faster for us to get pages when we don't have to sort them by `lastModifiedDate` (which is the default ordering) - you can achieve this by sorting by any other property:
+It is faster for us to get pages when we don't have to sort them by `lastModifiedDateTime` (which is the default ordering) - you can achieve this by sorting by any other property:
 
 ```http
-GET ~/sections/{id}/pages?$select=id,name,creationDate&$orderby=creationDate
+GET ~/sections/{id}/pages?$select=id,title,createdDateTime&$orderby=createdDateTime
 ```
