@@ -70,7 +70,7 @@ Questions about coding for the Microsoft Graph API
 
 ### I didn’t get an email and I see no errors or exceptions. Why didn't this work?
 
-If the sample appears to send an email but you don't see it in your Inbox,check your junk or spam folder. If you're sending the message from a test tenant, the message might get flagged as spam.
+If the sample appears to send an email but you don't see it in your Inbox, check your junk or spam folder. If you're sending the message from a test tenant, the message might get flagged as spam.
 
 ### Why doesn't the email sent by the sample didn't have my profile picture?
 
