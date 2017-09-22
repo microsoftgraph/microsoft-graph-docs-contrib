@@ -29,7 +29,7 @@ Opens OneNote Online if the default browser on the device supports OneNote Onlin
 The OneNote API returns the **links** property in the HTTP response for the following operations:
 
 - Create a page by sending a [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) request
-- Create a notebook by sending a [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks) request
+- Create a notebook by sending a [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) request
 - Get page metadata by sending a [`GET pages`](../api-reference/v1.0/api/page_get.md) or [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) request
 - Get notebook metadata by sending a [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) or [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) request
 

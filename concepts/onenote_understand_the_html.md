@@ -134,7 +134,7 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 | data-index | The position of the image. For [split image](#split-images) support. | 
 | data-fullres-src | The endpoint for the version of the image resource that was originally embedded in the page. | 
 | data-fullres-src-type | The media type of the **data-fullres-src** resource, for example: `image/png` or `image/jpeg`. | 
-| data-options | The source type: **printout** for PDF files or **splitimage** for all others. Applies only to []split images](#split-images) created with the **data-render-src** attribute. | 
+| data-options | The source type: **printout** for PDF files or **splitimage** for all others. Applies only to [split images](#split-images) created with the **data-render-src** attribute. | 
 | data-render-original-src | The original source URL of the image, if the source image is from the public internet and was created with the **data-render-src** attribute. | 
 | data-src-type | The media type of the **src** resource, for example: `image/png` or `image/jpeg`. | 
 | data-tag | A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on the element. | 
@@ -372,7 +372,7 @@ Lists and list items can contain the following attributes in the input and outpu
 | Output attribute | Description |   
 |------|------|  
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
-| data-tag |  A [note tag](../howto/onenote-note-tags.md) on a span in a **li** element. |  
+| data-tag |  A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on a span in a **li** element. |  
 | id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
 | style | The **list-style-type** and CSS [style](#styles) properties of the element. In the output HTML, list-level settings are returned on list items. Default properties are not returned. |  
  
@@ -576,7 +576,7 @@ This is the input HTML sent in the message body to create the page.
 </html>
 ``` 
 
-This is the output HTML that the OneNote API returns when you [get page content](#https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content).
+This is the output HTML that the OneNote API returns when you [get page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content).
 
 >When you [create a page](../api-reference/v1.0/api/section_post_pages.md) or [get page metadata](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
 
