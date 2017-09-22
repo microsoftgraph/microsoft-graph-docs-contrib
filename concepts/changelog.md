@@ -6,6 +6,101 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2017
 
+### OneDrive
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | v1.0 | Added the **system** property to the [Drive][] resource.  |
+| Addition | v1.0 | Added the **list** relationship to the [Drive][] resource. |
+| Addition | v1.0 | Added the **listItem** relationship to the [DriveItem][] resource. |
+| Addition | v1.0 | Added the **list** and **listItem** relationships to the [SharedDriveItem][] resource. |
+| Addition | v1.0 | Added new complex types: [FolderView][] |
+| Addition | v1.0 | Added the **view** property to the [Folder][] complex type. |
+| Addition | v1.0 | Added the **driveType** property to the [ItemReference][] complex type. |
+| Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][] complex type. |
+| Addition | beta | Added the **system** property to the [Drive][Drive-beta] resource.  |
+| Addition | beta | Added the **activities** relationship to the [Drive][Drive-beta] resource. |
+| Addition | beta | Added the **publication** property to the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added the **activities** and **versions** relationships to the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added new entities: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
+| Addition | beta | Added new complex types: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta], and [VersionAction][VersionAction-beta]. |
+| Addition | beta | Added the **driveType** property to the [ItemReference][ItemReference-beta] complex type. |
+| Deletion | beta | Removed the **tenantId** property from [SharepointIds][SharepointIds-beta] complex type. |
+| Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][Video-beta] complex type. |
+| Addition | beta | Added the [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] actions on the [DriveItem][DriveItem-beta] resource. |
+| Addition | beta | Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource. |
+
+[Drive]: ../api-reference/v1.0/resources/drive.md
+[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
+[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
+[FolderView]: ../api-reference/v1.0/resources/folderview.md
+[Folder]: ../api-reference/v1.0/resources/folder.md
+[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
+[Video]: ../api-reference/v1.0/resources/video.md
+[Drive-beta]: ../api-reference/beta/resources/drive.md
+[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
+[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
+[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
+[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
+[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
+[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
+[EditAction-beta]: ../api-reference/beta/resources/editaction.md
+[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
+[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
+[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
+[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
+[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
+[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
+[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
+[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
+[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
+[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
+[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
+[Video-beta]: ../api-reference/beta/resources/video.md
+[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
+[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
+[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
+
+
+### Outlook calendar
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/findroomlists) and [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/findrooms) functions to the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) entity. |
+| Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) entity to support organizing an event that attendees can attend from more than one location. |
+| Addition | Beta | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
+| Addition | Beta | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type. These properties are only for internal use at this point.|
+| Change | v1.0 and beta | If you have appropriate delegated permissions from the signed-in user, you can specify another user's ID or user principal name to [get a calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get), or [get events in a calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), if that user has shared that calendar with the signed-in user, or that user has delegated its mailbox to the signed-in user. |
+
+### Outlook contacts
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Change | v1.0 and beta | If you have appropriate delegated permissions from the signed-in user, you can specify another user's ID or user principal name to [get a contact folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get), or [get contacts in a folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), if that user has shared that folder with the signed-in user, or that user has delegated its mailbox to the signed-in user. |
+
+
+### Outlook mail
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the **internetMessageHeaders** property to the [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/message) entity. |
+| Addition | Beta | Added the [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/internetmessageheader) complex type.|
+| Addition | Beta | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) entity. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) instances. |
+| Addition | Beta | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) complex types.  |
+| Addition | Beta | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
+
+
+### Outlook user choices
+
+|**Change type**|**Version**|**Description**|
+|:-------------|:-----------|:--------------|
+| Addition | Beta | Added the new **masterCategories** navigation property to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity. **masterCategories** is a collection of [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) objects. |
+| Addition | Beta | Added the [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) entity. |
+| Addition | Beta | Added the following CRUD operations for [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory): [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_post_mastercategories), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_delete). |
+| Addition | Beta | Added the new [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
+| Addition | Beta | Added the new [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
+
+
 ### SharePoint lists
 
 |**Change type**|**Version**|**Description**|
@@ -67,61 +162,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 [SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
 [TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
 
-### OneDrive
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | v1.0 | Added the **system** property to the [Drive][] resource.  |
-| Addition | v1.0 | Added the **list** relationship to the [Drive][] resource. |
-| Addition | v1.0 | Added the **listItem** relationship to the [DriveItem][] resource. |
-| Addition | v1.0 | Added the **list** and **listItem** relationships to the [SharedDriveItem][] resource. |
-| Addition | v1.0 | Added new complex types: [FolderView][] |
-| Addition | v1.0 | Added the **view** property to the [Folder][] complex type. |
-| Addition | v1.0 | Added the **driveType** property to the [ItemReference][] complex type. |
-| Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][] complex type. |
-| Addition | beta | Added the **system** property to the [Drive][Drive-beta] resource.  |
-| Addition | beta | Added the **activities** relationship to the [Drive][Drive-beta] resource. |
-| Addition | beta | Added the **publication** property to the [DriveItem][DriveItem-beta] resource. |
-| Addition | beta | Added the **activities** and **versions** relationships to the [DriveItem][DriveItem-beta] resource. |
-| Addition | beta | Added new entities: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
-| Addition | beta | Added new complex types: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta], and [VersionAction][VersionAction-beta]. |
-| Addition | beta | Added the **driveType** property to the [ItemReference][ItemReference-beta] complex type. |
-| Deletion | beta | Removed the **tenantId** property from [SharepointIds][SharepointIds-beta] complex type. |
-| Addition | v1.0 | Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][Video-beta] complex type. |
-| Addition | beta | Added the [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] actions on the [DriveItem][DriveItem-beta] resource. |
-| Addition | beta | Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource. |
-
-[Drive]: ../api-reference/v1.0/resources/drive.md
-[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
-[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
-[FolderView]: ../api-reference/v1.0/resources/folderview.md
-[Folder]: ../api-reference/v1.0/resources/folder.md
-[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
-[Video]: ../api-reference/v1.0/resources/video.md
-[Drive-beta]: ../api-reference/beta/resources/drive.md
-[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
-[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
-[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
-[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
-[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
-[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
-[EditAction-beta]: ../api-reference/beta/resources/editaction.md
-[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
-[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
-[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
-[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
-[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
-[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
-[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
-[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
-[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
-[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
-[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
-[Video-beta]: ../api-reference/beta/resources/video.md
-[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
-[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
-[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
-
 
 ### SharePoint sites
 
@@ -130,35 +170,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added **dataLocationCode** and **root** properties to the [SiteCollection][SiteCollection-beta] complex type. |
 
 [SiteCollection-beta]: ../api-reference/beta/resources/sitecollection.md
-
-### Outlook calendar
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added the [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/findroomlists) and [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/findrooms) functions to the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) entity. |
-| Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) entity to support organizing an event that attendees can attend from more than one location. |
-| Addition | Beta | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
-| Addition | Beta | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type. These properties are only for internal use at this point.|
-
-
-### Outlook mail
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added the **internetMessageHeaders** property to the [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/message) entity. |
-| Addition | Beta | Added the [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/internetmessageheader) complex type.|
-| Addition | Beta | Added the **messageRules** navigation property to the [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) entity. **messageRules** is a collection of [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) instances. |
-| Addition | Beta | Added the [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) entity, and [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates), and [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) complex types.  |
-| Addition | Beta | Added the following CRUD operations for message rules: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update), and [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
-
-
-### Outlook user choices
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added the new **masterCategories** navigation property to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
-| Addition | Beta | Added the new [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
-| Addition | Beta | Added the new [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) entity.  |
 
 
 ## August 2017
