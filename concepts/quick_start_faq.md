@@ -8,15 +8,15 @@ The quick start samples show you how to access the power of the Microsoft Graph.
 
 With earlier Microsoft REST APIs you had to authenticate to each service you wanted to call. Microsoft Graph eliminates this complexity for developers by unifying authentication and combining all API entry points into one Graph API entry point. Now you authenticate once and get the power to access information across multiple applications and services. 
 
-The quick start example will access 3 different services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start will pull information from Microsoft Account users profiles, combining it with writing data to OneDrive (a photo) and then generate an email using Outlook (including a link to the photo). 
+To illustrate, the Microsoft Graph quick start example will access 3 different services with one authentication: Microsoft Account, OneDrive, and Outlook. Each quick start will pull information from Microsoft Account users profiles, combining it with writing data to OneDrive (a photo) and then generate an email using Outlook (including a link to the photo). 
 
 There are four steps to each quick start to get an example app that is ready to run:
 - Select your platform 
-- Get your app ID/Client ID
+- Get your app ID (aka client ID)
 - Build the sample,
 - Sign in, and send a profile photo via email
 
->Note: these are not designed to be production ready code; they are just easy illustrations for how you can do the same scenario across many different programing languages and platforms. Once you do a quick start, we recommend you fully understand authentication to create production-ready apps.
+>Note: these are not designed to be production ready code; they are just easy illustrations for how you can do the same scenario across many different programing languages and platforms. Once you do a quick start, we recommend you [fully understand authentication](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios) to create production-ready apps.
 
 
 ## General quick start sample questions
@@ -70,7 +70,7 @@ Questions about coding for the Microsoft Graph API
 
 ### I didn’t get an email and I see no errors or exceptions. Why didn't this work?
 
-If the sample appears to send an email but you don't see it in your Inbox,check your junk or spam folder. If you're sending the message from a test tenant, the message might get flagged as spam.
+If the sample appears to send an email but you don't see it in your Inbox, check your junk or spam folder. If you're sending the message from a test tenant, the message might get flagged as spam.
 
 ### Why doesn't the email sent by the sample didn't have my profile picture?
 
