@@ -1,8 +1,8 @@
-# OneNote API error and warning codes
+# OneNote API error codes
 
-This article describes error and warning codes that are returned by the OneNote API whenever a request sent through the API fails.
+This article describes error codes that are returned by the OneNote API whenever a request sent through the API fails.
 
-## Error and warning responses
+## Error responses
 When your request generates an error, the OneNote API stops performing the request and returns an error response as a JSON object. An error response contains the associated error code, a message, and a link to the appropriate section of this article. The following example shows how an error response looks.
 
 ```json
@@ -19,8 +19,6 @@ When your request generates an error, the OneNote API stops performing the reque
 ```
 
 For more information about Graph errors, see [Microsoft Graph error responses and resource types](errors.md).
-
-If you need to work with Microsoft support to resolve any issues, be sure to also log the [X-CorrelationId header](#x-correlationid-header) and timestamp of the API call.
 
 ## Codes from 10001 to 19999
 The service is having problems or is sending information to the application.
@@ -189,19 +187,19 @@ The HTML in the "Presentation" part contains a **data-attachment** attribute tha
 Your request specifies a PATCH target that can't be located.
 
 ### 20121
-Your request contains an invalid PATCH argument. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+Your request contains an invalid PATCH argument. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20122
-Your request specifies an unsupported PATCH action. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+Your request specifies an unsupported PATCH action. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20123
 The PATCH request is unable to alter the specified page.
 
 ### 20124
-Your multipart PATCH request doesn't include a "commands" part with the PATCH action JSON structure. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+Your multipart PATCH request doesn't include a "commands" part with the PATCH action JSON structure. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20125
-Your PATCH request contains no actions. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+Your PATCH request contains no actions. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20126
 The message body contains either incorrectly formatted JSON or fields that are not supported for this operation.
@@ -225,13 +223,13 @@ Your request contains an invalid value for Content-Type. Use the value indicated
 Your request contains invalid content. Common causes for this are a missing Content-Type request header and/or no content in the body of the request. See [OneNote API reference][ref].
 
 ### 20133
-Your request specifies a PATCH target that is not supported. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+Your request specifies a PATCH target that is not supported. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20134
-Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20135
-Your request specifies an entity type that is not supported for the PATCH operation. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+Your request specifies an entity type that is not supported for the PATCH operation. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20136
 Your request contains an invalid or missing **data-render-src** or **data-render-method** attribute. See [Extract data from captures](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data).
@@ -240,7 +238,7 @@ Your request contains an invalid or missing **data-render-src** or **data-render
 The target page does not support PATCH requests.
 
 ### 20138
-The target element type in your PATCH request doesn't support the **append** action. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+The target element type in your PATCH request doesn't support the **append** action. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20139
 Your request contains an invalid **data-tag** attribute value. See [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
@@ -253,7 +251,7 @@ Your request contains an invalid **data-tag** status value. Check box note tags 
 See [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
 
 ### 20141
-The target in your PATCH request doesn't support the specified action. See [Update page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-update-page).
+The target in your PATCH request doesn't support the specified action. See [Update page content](../api-reference/v1.0/api/page_update.md).
 
 ### 20142
 Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which is not supported. See [Supported OData query string options](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
@@ -280,10 +278,10 @@ The `style="position:absolute"` attribute is specified on an element type that d
 Your request specifies a target element that cannot be found.
 
 ### 20150
-The request is not valid for this authentication type. Use the `../me/notes/` path instead.
+The request is not valid for this authentication type. Use the `../me/onenote/` path instead.
 
 ### 20151
-The request is not valid for this authentication type. Use the `../me/notes/section/{id}/pages` endpoint to create a page in a specific section.
+The request is not valid for this authentication type. Use the `../me/onenote/section/{id}/pages` endpoint to create a page in a specific section.
 
 ### 20152
 There is no name value specified for the entity. The name must be defined, and it cannot contain whitespaces only.
@@ -318,7 +316,6 @@ The application has issued too many requests on behalf of a user in a short peri
 
 ### 20168
 The video source specified in the request is not supported. See [Supported video sites](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos) for the current list.
-
 
 
 ## Codes from 30001 to 39999
@@ -397,21 +394,8 @@ Access is Forbidden for this resource.
 ### 40009
 The container is already in use by another resource.
 
-## X-CorrelationId header
-In addition to standard HTTP response codes, the OneNote API returns headers to the calling app. Included in every response is an **X-CorrelationId** header and a **Date** header, as shown in the following excerpt:
-
-```http
-X-CorrelationId: d2d6aaf5-3bde-4ee7-ba18-27727bf3cffe
-Date: Fri, 06 Mar 2015 15:10:46 GMT
-```
-
-The correlation ID is a GUID that ties together the various pieces in the backend servers. Correlation IDs are not sequential, which means you can't use them to establish an order of page creation.
- 
-Your app can log the correlation ID and date of your API calls. You can use these values if you need to work with Microsoft support to resolve problems in your app or with the API.
-
 ## Additional resources
 
-# BROKEN
 - [OneNote development](onenote_integrate_with_onenote.md)
 - [OneNote Dev Center](http://dev.onenote.com/)
 - [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
