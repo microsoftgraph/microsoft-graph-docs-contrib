@@ -66,7 +66,7 @@ The OneNote API wraps all body content in at least one div. The API creates a de
 | Output attribute | Description |   
 |------|------|  
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
 | style | The position and size properties of the div. |
  
 ### Non-contributing divs
@@ -138,20 +138,20 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 | data-render-original-src | The original source URL of the image, if the source image is from the public internet and was created with the **data-render-src** attribute. | 
 | data-src-type | The media type of the **src** resource, for example: `image/png` or `image/jpeg`. | 
 | data-tag | A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on the element. | 
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
 | src | The endpoint for the version of the image resource that has been optimized for web browsers and mobile and tablet form factors. | 
 | style | The position properties of the image. | 
 | width, height | The width or height of the image, in pixels. | 
  
 
 ### Output HTML examples for images
-Output **img** elements contain endpoints for image file resources and the image type, as shown below. You can make separate [GET requests to image resource endpoints](../api-reference/v1.0/api/resource_get.md) to retrieve their binary contents.
+Output **img** elements contain endpoints for image file resources and the image type, as shown below. You can make separate [GET requests to image resource endpoints](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-resource) to retrieve their binary contents.
 
 ```http
 <img 
-    src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/$value"  
+    src="https://www.onenote.com/api/v1.0/me/notes/resources/{image-id}/$value"  
     data-src-type="image/png"
-    data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/$value"  
+    data-fullres-src="https://www.onenote.com/api/beta/resources/{image-id}/$value"  
     data-fullres-src-type="image/png" ... />
 ```
 
@@ -162,9 +162,9 @@ By default, images won't render directly in a browser because they are private a
 ```html
 <img 
     width="170" height="128" 
-    src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
+    src="https://www.onenote.com/api/v1.0/me/notes/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
     data-src-type="image/{type}" 
-    data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
+    data-fullres-src="https://www.onenote.com/api/v1.0/me/notes/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
     data-fullres-src-type="image/{type}" />
 ```
 
@@ -294,18 +294,18 @@ OneNote pages can contain file attachments represented by **object** elements. A
 | data | The endpoint for the file resource. |  
 | data-attachment | The file name. |  
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
 | style | The position properties of the object. |  
 | type | The standard media file type. |  
  
 
 **Output HTML** example for objects
 
-Output **object** elements contain endpoints that link to the file resources in the page, as shown below. You can make separate [GET requests to file resource endpoints](../api-reference/v1.0/api/resource_get.md) to retrieve their binary contents.
+Output **object** elements contain endpoints that link to the file resources in the page, as shown below. You can make separate [GET requests to file resource endpoints](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-resource) to retrieve their binary contents.
 
 ```html
 <object
-    data="https://graph.microsoft.com/v1.0/me/onenote/resources/{file-id}/$value"
+    data="http://www.onenote.com/api/v1.0/me/notes/resources/{file-id}/$value"
     data-attachment="fileName.pdf" 
     type="application/pdf" 
     [style="..."] />
@@ -330,7 +330,7 @@ Paragraphs, headings, and other text containers can contain the following attrib
 |------|------|  
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
 | data-tag | A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on a **p** or **h1** - **h6** element. |  
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
 | style | The CSS [style](#styles) properties of the element. In the output HTML, these values may be returned inline on appropriate child elements or on **span** elements. |  
  
 
@@ -373,7 +373,7 @@ Lists and list items can contain the following attributes in the input and outpu
 |------|------|  
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
 | data-tag |  A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on a span in a **li** element. |  
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
 | style | The **list-style-type** and CSS [style](#styles) properties of the element. In the output HTML, list-level settings are returned on list items. Default properties are not returned. |  
  
 
@@ -453,7 +453,7 @@ Tables can contain the following attributes in the input and output HTML. The On
 | Output attribute | Description |   
 |------|------|  
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |  
 | style | The CSS [style](#styles) properties of the element. |  
  
 
@@ -576,9 +576,9 @@ This is the input HTML sent in the message body to create the page.
 </html>
 ``` 
 
-This is the output HTML that the OneNote API returns when you [get page content](../api-reference/v1.0/api/page_get.md).
+This is the output HTML that the OneNote API returns when you [get page content](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content).
 
->When you [create a page](../api-reference/v1.0/api/section_post_pages.md) or [get page metadata](../api-reference/v1.0/api/page_get.md), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
+>When you [create a page](../api-reference/v1.0/api/section_post_pages.md) or [get page metadata](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
 
 ```html
 <html htmlns="http://www.w3.org/1999/xhtml" lang="en-US">
@@ -607,8 +607,8 @@ This is the output HTML that the OneNote API returns when you [get page content]
                 </tr>
             </table>
             <br />
-            <img alt="Apollo 11 commemorative stamp." width="400" height="248" src="https://graph.microsoft.com/v1.0/me/onenote/resources/0-f717b5fa5eaa454da7ecdf72a8c137fe!1-73DBAF9B7E5C4B4C!10456/$value"
-                 data-src-type="image/jpeg" data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/0-f717b5fa5eaa454da7ecdf72a8c137fe!1-73DBAF9B7E5C4B4C!10456/$value" data-fullres-src-type="image/jpeg" />
+            <img alt="Apollo 11 commemorative stamp." width="400" height="248" src="https://www.onenote.com/api/v1.0/me/notes/resources/0-f717b5fa5eaa454da7ecdf72a8c137fe!1-73DBAF9B7E5C4B4C!10456/$value"
+                 data-src-type="image/jpeg" data-fullres-src="https://www.onenote.com/api/v1.0/me/notes/resources/0-f717b5fa5eaa454da7ecdf72a8c137fe!1-73DBAF9B7E5C4B4C!10456/$value" data-fullres-src-type="image/jpeg" />
             <p>References:</p>
             <p><a href="http://en.wikipedia.org/wiki/Apollo_11">http://en.wikipedia.org/wiki/Apollo_11</a></p>
             <p><a href="http://www.nasa.gov/mission_pages/apollo/missions/apollo11.html">http://www.nasa.gov/mission_pages/apollo/missions/apollo11.html</a></p>
@@ -619,7 +619,7 @@ This is the output HTML that the OneNote API returns when you [get page content]
 
 ## Additional resources
 
-- [Get OneNote content and structure](../api-reference/v1.0/api/page_get.md)
+- [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#get-page-content)
 - [Create OneNote pages](../api-reference/v1.0/api/section_post_pages.md)
 - [Update OneNote page content](../api-reference/v1.0/api/page_update.md)
 - [Add images and files](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
