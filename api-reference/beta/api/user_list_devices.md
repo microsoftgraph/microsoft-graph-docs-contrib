@@ -109,13 +109,13 @@ HTTP/1.1 200 OK
 {
   "value": [
     {
+    "name": "JimSurface",
     "id": "6841b3db-2b55-467b-ad84-79a41a4ef665",
-    "Name": "JimSurface",
-    "Manufacturer": "Microsoft Corporation",
-    "Model": "Surface Book",
-    "Kind": "Tablet",
-    "Status": "Unknown",
-    "Platform": "Windows"
+    "manufacturer": "Microsoft Corporation",
+    "model": "Surface Book",
+    "kind": "Tablet",
+    "status": "Unknown",
+    "platform": "Windows"
     }
   ]
 }
