@@ -117,14 +117,14 @@ HTTP/1.1 201 OK
 
 {
   "id": "0158355AD4D680CC4E2994CC009EFFD7337D1B...",
-  "Status": "requesting",
-  "Type": null,
-  "AppServiceName": null,
-  "PackageFamilyName": null,
-  "Error": null,
-  "PermissionTicket": null,
-  "PostBackUri": null,
-  "Payload": {
+  "status": "requesting",
+  "type": null,
+  "appServiceName": null,
+  "packageFamilyName": null,
+  "error": null,
+  "permissionTicket": null,
+  "postBackUri": null,
+  "payload": {
     "uri": "http://bing.com"
   }
 }
@@ -173,14 +173,14 @@ HTTP/1.1 201 OK
 
 {
   "id": "0158355AD4D680CC4E2994CC009EFFD7EADA8307E96FF1C8D19B..",
-  "Status": "requesting",
-  "Type": null,
-  "AppServiceName": "com.microsoft.test.cdppingpongservice",
-  "PackageFamilyName": "5085ShawnHenry.RomanTestApp_jsjw7knzsgcce",
-  "Error": null,
-  "PermissionTicket": null,
-  "PostBackUri": null,
-  "Payload": {
+  "status": "requesting",
+  "type": null,
+  "appServiceName": "com.microsoft.test.cdppingpongservice",
+  "packageFamilyName": "5085ShawnHenry.RomanTestApp_jsjw7knzsgcce",
+  "error": null,
+  "permissionTicket": null,
+  "postBackUri": null,
+  "payload": {
     "Type": "Toast",
     "Title": "Hello",
     "Subtitle": "World!"
