@@ -1,6 +1,43 @@
 # Get calendar
 
 Retrieve the properties and relationships of calendar object.
+
+
+### Get another user's calendar
+
+If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get 
+a calendar of another user's. This section focuses on scenarios that involve delegated permissions.
+
+For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a calendar with John. 
+You can get that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/calendar
+```
+
+This capability applies to all the supported GET calendar operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
+It also applies if Garth has delegated his entire mailbox to John.
+
+If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
+will return an error. In such cases, specifying a user ID or user principal name only works for getting a calendar of the signed-in user’s, 
+and the query is equivalent to using the /me shortcut:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendar
+```
+
+This capability is available in only GET operations of:
+
+- Shared contact folders
+- Shared calendars
+- Contacts and events in shared folders
+- The above resources in delegated mailboxes
+
+This capability is not available in other operations for contacts, events, and their folders.
+
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

@@ -55,7 +55,11 @@ Content-length: 30
 }
 ```
 ##### Response
- 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
