@@ -72,7 +72,7 @@ Questions about coding for the Microsoft Graph API
 
 If the sample appears to send an email but you don't see it in your Inbox,check your junk or spam folder. If you're sending the message from a test tenant, the message might get flagged as spam.
 
-### Why doesn't the email sent by the sample didn't have my profile picture?
+### Why doesn't the email sent by the sample have my profile picture?
 
 - This is usually because your profile has not been set up with a user profile picture. If you signed in with a Microsoft Service Account (MSA) then even if you have a profile picture, it will not appear in the email. The Microsoft Graph API is not currently supporting user profile pictures from MSA accounts. <br/>Most of the samples provided by the quick starts get your profile picture and upload it to the root directory of your OneDrive account. If you sign in with a Microsoft account (live.com, hotmail.com), Microsoft Graph can't currently fetch your profile picture, so we fall back to the thought bubble image.
 
