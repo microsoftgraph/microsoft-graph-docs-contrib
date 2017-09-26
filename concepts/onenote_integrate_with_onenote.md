@@ -20,6 +20,16 @@ Use OneNote to increase your app usage. OneNote is preinstalled on new Windows d
 
 <!-- Might be good to show a few examples of Microsoft Graph API calls here, similar to what we have in the featured scenarios topic: https://developer.microsoft.com/en-us/graph/docs/concepts/featured_scenarios. You could have an H2 section called "What can I do with OneNote APIs in Microsoft Graph?"-->
 
+## What can I do with OneNote APIs in Microsoft Graph?
+
+The following are some of the most popular requests for working with OneNote resources.
+
+|Operation|URL|
+|:--------|:--|
+|GET my notebooks|https://graph.microsoft.com/v1.0/me/onenote/notebooks|
+|GET my sections|https://graph.microsoft.com/v1.0/me/onenote/sections|
+|GET my pages|https://graph.microsoft.com/v1.0/me/onenote/pages|
+
 ## Explore the OneNote APIs
 Use the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the OneNote APIs with your own OneNote notebooks.
 
