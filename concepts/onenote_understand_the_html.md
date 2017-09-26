@@ -528,9 +528,7 @@ The following inline character styles and are also supported:
 ## Input and output HTML example
 The following image shows a simple page that was created with Microsoft Graph.
 
-<!-- Add the image? -->
-
-**Sample page created from the input HTML**
+<!-- Add the image. -->
 
 This is the input HTML sent in the message body to create the page.
 
