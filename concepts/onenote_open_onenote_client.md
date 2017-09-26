@@ -1,8 +1,8 @@
-# Open the OneNote clients
+# Open the OneNote client
 
 You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. 
 
-The **links** property is a JSON object that contains two URLs:
+The **links** property is a JSON object that contains two URLs. The URLs will open the page or notebook in the OneNote client application or in OneNote Online.
 
 ```json
 { 
@@ -17,14 +17,10 @@ The **links** property is a JSON object that contains two URLs:
 }
 ```
 
-The URLs will open the page or notebook in the native OneNote client application or in OneNote Online.
-
-**oneNoteClientUrl**
-Opens the native client if it is already installed on the device. This URL includes the *onenote* prefix.
+- **oneNoteClientUrl** - Opens the OneNote client if it is already installed on the device. This URL includes the *onenote* prefix.
 Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
+- **oneNoteWebUrl** - Opens OneNote Online if the default browser on the device supports it. Uses the browser language setting.
 
-**oneNoteWebUrl**
-Opens OneNote Online if the default browser on the device supports OneNote Online. Uses the browser language setting.
 
 The OneNote API returns the **links** property in the HTTP response for the following operations:
 
@@ -33,7 +29,7 @@ The OneNote API returns the **links** property in the HTTP response for the foll
 - Get page metadata by sending a [`GET pages`](../api-reference/v1.0/api/page_get.md) or [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) request
 - Get notebook metadata by sending a [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) or [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) request
 
-The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the client.
+The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.
 
 ## iOS example
 
@@ -77,7 +73,7 @@ The following example gets the OneNote client URLs from the JSON response. It us
       }
 ``` 
 
-Now that you've parsed the URLs from the response, you can open OneNote by using the following code. Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.
+After you parse the URLs from the response, you can open OneNote by using the following code. Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.
 
 ```objectivec
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
@@ -153,7 +149,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
  
-Or your app can open the native OneNote client on an Android device. When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent. The following example shows how to do that.
+Or your app can open the OneNote client on an Android device. When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent. The following example shows how to do that.
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -172,11 +168,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
 
-## Additional resources
+## See also
 
 - [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
 - [Create OneNote pages](../api-reference/v1.0/api/section_post_pages.md)
-- [OneNote development](onenote_integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182) 
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)

@@ -1,38 +1,25 @@
-# Understand the HTML
+# Input and output HTML in OneNote pages
 
-The HTML that defines the page content and structure when you [create](../api-reference/v1.0/api/section_post_pages.md) or [update](../api-reference/v1.0/api/page_update.md) a page is called *input HTML*. 
+The HTML that defines the page content and structure when you [create](../api-reference/v1.0/api/section_post_pages.md) or [update](../api-reference/v1.0/api/page_update.md) a OneNote page is called *input HTML*. 
 
 The HTML that's returned when you [get page content](../api-reference/v1.0/api/page_get.md) is called *output HTML*. Output HTML won't be the same as input HTML.
 
-The OneNote API preserves the semantic content and basic structure of the input HTML, but converts it to a set of [supported HTML elements and CSS properties](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-create-page#supported-html). The API also adds custom attributes that support OneNote features.
+The OneNote APIs in Microsoft Graph preserve the semantic content and basic structure of the input HTML, but convert it to a set of [supported HTML elements and CSS properties](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-create-page#supported-html). The APIs also add custom attributes that support OneNote features.
  
 This article describes the principal elements and attributes of input and output HTML. It can be helpful to understand input HTML when you're creating or updating page content, and output HTML when you're parsing returned page content. 
 
-**In this article**
- * [Body](#body)
- * [Divs](#divs)
- * [Images](#images)
- * [Videos](#videos)
- * [Objects](#objects)
- * [Paragraphs and headings](#paragraphs-and-headings)
- * [Lists](#lists)
- * [Tables](#tables)
- * [Styles](#styles)
- * [Example input and output](#example-input-and-output-html)
-
-
-## Body
+## Body element
 The HTML content in the page body represents the page content and structure, including image and file resources. The **body** element can contain the following attributes in the input and output HTML.
 
-**Input attributes for the *body* element**
+**Input attributes**
 
 | Input attribute | Description |   
 |------|------|  
 | data-absolute-enabled | Indicates whether the input body supports [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos) elements. |  
-| style | <p>The CSS [style](#styles) properties of the body. In the output HTML, input settings may be returned inline on appropriate child elements.</p><p>Background color is not currently supported for the **body** element.</p> |
+| style | <p>The CSS [style](#styles) properties of the body. In the output HTML, input settings might be returned inline on appropriate child elements.</p><p>Background color is not currently supported for the **body** element.</p> |
  
 
-**Output attributes for the *body* element**
+**Output attributes**
 
 | Output attribute | Description |   
 |------|------|  
@@ -40,10 +27,10 @@ The HTML content in the page body represents the page content and structure, inc
 | style | The **font-family** and **font-size** properties of the body. |
 
 
-## Divs
-Divs contain text, images, and other content. A **div** element can contain the following attributes in the input and output HTML.
+## Div elements
+**Div** elements contain text, images, and other content. A **div** element can contain the following attributes in the input and output HTML.
 
-**Input attributes for *div* elements**
+**Input attributes**
 
 | Input attribute | Description |   
 |------|------|  
@@ -53,21 +40,22 @@ Divs contain text, images, and other content. A **div** element can contain the 
 | data-render-src | The content source for the [extraction](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data). |  
 | style | <p>The position, size, font, and color properties for the div:</p><p> - **position** (**absolute** only), **left**, **top**, and **width**. (Height is auto-configured for divs.)<br />Used to create an [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos) div, only if the div is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br />Example: `<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</p><p> - The CSS [style](#styles) properties of the element. In the output HTML, these values are returned inline on appropriate child elements.</p> |
  
+<!-- Okay to refer to the OneNote API here or should this be Microsoft Graph? -->
 
 The OneNote API wraps all body content in at least one div. The API creates a default div (attributed with `data-id="_default"`) to contain the body content if:
 
 - The input body element's **data-absolute-enabled** attribute is omitted or set to **false**. In this case, all body content is put in the default div.
 
-- The input body element's **`data-absolute-enabled** attribute is **true**, but the input HTML contains direct children that aren't [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)&nbsp;**div**, **img**, or **object** elements. In this case, direct children that aren't [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)&nbsp;**div**, **img**, or **object** elements are put in the default div.
+- The input body element's **data-absolute-enabled** attribute is **true**, but the input HTML contains direct children that aren't [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)&nbsp;**div**, **img**, or **object** elements. In this case, direct children that aren't [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)&nbsp;**div**, **img**, or **object** elements are put in the default div.
 
 
-**Output attributes for *div* elements**
+**Output attributes**
 
 | Output attribute | Description |   
 |------|------|  
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
 | id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
-| style | The position and size properties of the div. |
+| style | The position and size properties of the dsiv. |
  
 ### Non-contributing divs
 When a **div** element in the input HTML does not contribute to the page structure or carry information that OneNote uses, the API moves the div's content into the parent or default div. This is illustrated in the following examples.
@@ -90,7 +78,9 @@ When a **div** element in the input HTML does not contribute to the page structu
 </html>
 ```
 
-**Output HTML**. Notice that the div's content was moved to the parent div and the nested `<div>` tags have been removed. However, the div would have been preserved if it defined any semantic information, such as a **data-id** (example: `<div data-id="keep-me">`).
+**Output HTML**
+
+>**Note:** The div's content was moved to the parent div and the nested `<div>` tags have been removed. The div would have been preserved if it defined any semantic information, such as a **data-id** (example: `<div data-id="keep-me">`).
 
 ```html
 <html htmlns="http://www.w3.org/1999/xhtml" lang="en-US">
@@ -107,10 +97,10 @@ When a **div** element in the input HTML does not contribute to the page structu
 ```
 
 
-## Images
+## Img elements
 Images on OneNote pages are represented by **img** elements. An **img** element can contain the following attributes in the input and output HTML.
 
-**Input attributes for *img* elements**
+**Input attributes**
 
 | Input attribute | Description |   
 |------|------|  
@@ -122,10 +112,10 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 | src | <p>Either **src** or **data-render-src** is required.</p><p>The image to render on the OneNote page:<br /> - `src="http://..."` for a URL to a publicly available image on the internet.<br /> - `src="name:BlockName"` for a named part in a multipart request that represents the image.</p> |
 | width, height | The width or height of the image, in pixels but without the px. Example: `width="400"` |
  
->The OneNote API automatically detects the input image type, and returns it as the **data-fullres-src-type** in the output HTML. The API also returns the image type of the optimized image in **data-src-type**.
+>**Note:** The OneNote API automatically detects the input image type, and returns it as the **data-fullres-src-type** in the output HTML. The API also returns the image type of the optimized image in **data-src-type**.
  
 
-**Output attributes for *img* elements**
+**Output attributes**
 
 | Output attribute | Description |   
 |------|------|  
@@ -239,19 +229,19 @@ Images that are created using the **data-render-src** attribute (from a webpage 
 
 Because users can move the images on the page, the returned indexes might be out of order. Ordering should be in top to bottom y-order, then left to right x-order if there are y-order conflicts.
 
-## Videos
+## iframe elements
 OneNote pages can contain embedded videos represented by **iframe** elements. 
 
->You can also [attach a video file using an **object** element](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#files).
+>**Note:** You can also [attach a video file using an **object** element](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#files).
 
-**Input attributes for iframe elements**
+**Input attributes**
 
 | Input attribute | Description |   
 |------|------|  
 | data-original-src | Required. The URL of the video source. See the [list of supported video sources](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos). Example: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |  
 | width, height | The width or height of the iframe, in pixels. Example: `width=300` | 
 
-**Output attributes for iframe elements**
+**Output attributes**
 
 | Output attribute | Description |   
 |------|------|  
@@ -261,7 +251,7 @@ OneNote pages can contain embedded videos represented by **iframe** elements.
  
 **Output HTML** example for videos
 
-Output **iframe** elements contain endpoints that link to the source page and video, as shown below. 
+Output **iframe** elements contain endpoints that link to the source page and video, as shown. 
 
 ```html
 <iframe 
@@ -270,13 +260,13 @@ Output **iframe** elements contain endpoints that link to the source page and vi
     src="https://www.youtube.com/embed/3Ztr44aKmQ8?feature=oembed&autoplay=true" />
 ``` 
 
-## Objects
+## Object elements
 OneNote pages can contain file attachments represented by **object** elements. An **object** element can contain the following attributes in the input and output HTML.
 
->The OneNote API can also render file content as images in a page when the file is sent as an image and uses the **data-render-src** attribute. Example: `<img data-render-src="name:part-name" ... />`
+>**Note:** The OneNote API can also render file content as images in a page when the file is sent as an image and uses the **data-render-src** attribute. Example: `<img data-render-src="name:part-name" ... />`
  
 
-**Input attributes for object elements**
+**Input attributes**
 
 | Input attribute | Description |   
 |------|------|  
@@ -287,7 +277,7 @@ OneNote pages can contain file attachments represented by **object** elements. A
 | type | Required. The standard media file type. Known file types display the icon associated with the file type on the OneNote page. Unknown file types display a generic file icon. | 
 <!--todo: add link to known file types--> 
 
-**Output attributes for object elements**
+**Output attributes**
 
 | Output attribute | Description |   
 |------|------|  
@@ -301,7 +291,7 @@ OneNote pages can contain file attachments represented by **object** elements. A
 
 **Output HTML** example for objects
 
-Output **object** elements contain endpoints that link to the file resources in the page, as shown below. You can make separate [GET requests to file resource endpoints](../api-reference/v1.0/api/resource_get.md) to retrieve their binary contents.
+Output **object** elements contain endpoints that link to the file resources in the page, as shown. You can make separate [GET requests to file resource endpoints](../api-reference/v1.0/api/resource_get.md) to retrieve their binary contents.
 
 ```html
 <object
@@ -315,7 +305,7 @@ Output **object** elements contain endpoints that link to the file resources in 
 
 Paragraphs, headings, and other text containers can contain the following attributes in the input and output HTML.
 
-**Input attributes for text containers**
+**Input attributes**
 
 | Input attribute | Description |   
 |------|------|  
@@ -324,7 +314,7 @@ Paragraphs, headings, and other text containers can contain the following attrib
 | style | The CSS [style](#styles) properties of the element. |  
  
 
-**Output attributes for text containers**
+**Output attributes**
 
 | Output attribute | Description |   
 |------|------|  
@@ -358,7 +348,7 @@ Lists are represented as **ol** or **ul** elements that contain list items repre
 
 Lists and list items can contain the following attributes in the input and output HTML.
 
-**Input attributes for lists**
+**Input attributes**
 
 | Input attribute | Description |   
 |------|------|  
@@ -367,7 +357,7 @@ Lists and list items can contain the following attributes in the input and outpu
 | style | The **list-style-type** and the CSS [style](#styles) properties for the list or list item. |  
  
 
-**Output attributes for lists**
+**Output attributes**
 
 | Output attribute | Description |   
 |------|------|  
@@ -440,7 +430,7 @@ Tables are represented as **table** elements that can contain **tr** and **td** 
 
 Tables can contain the following attributes in the input and output HTML. The OneNote API does not support **rowspan** or **colspan** attributes.
 
-**Input attributes for tables**
+**Input attributes**
 
 | Input attribute | Description |   
 |------|------|  
@@ -448,7 +438,7 @@ Tables can contain the following attributes in the input and output HTML. The On
 | style | The CSS [style](#styles) properties of the element, and also:<br /> - **border**. Can be either 0px or 1px.<br /> - **width**. Supported by **table** and **td** as pixels or percentage of page width.<br />Example: `width="100px"` or `width="60%"` |  
  
 
-**Output attributes for tables**
+**Output attributes**
 
 | Output attribute | Description |   
 |------|------|  
@@ -536,8 +526,10 @@ The following inline character styles and are also supported:
 </table>
 
  
-## Example input and output HTML
+## Input and output HTML example
 The following image shows a simple page that was created with the OneNote API.
+
+<!-- Add the image? -->
 
 **Sample page created from the input HTML**
 
@@ -617,14 +609,9 @@ This is the output HTML that the OneNote API returns when you [get page content]
 </html>
 ``` 
 
-## Additional resources
+## See also
 
 - [Get OneNote content and structure](../api-reference/v1.0/api/page_get.md)
 - [Create OneNote pages](../api-reference/v1.0/api/section_post_pages.md)
 - [Update OneNote page content](../api-reference/v1.0/api/page_update.md)
 - [Add images and files](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
-- [OneNote development](onenote_integrate_with_onenote.md)
-- [OneNote Dev Center](http://dev.onenote.com/)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182) 
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
