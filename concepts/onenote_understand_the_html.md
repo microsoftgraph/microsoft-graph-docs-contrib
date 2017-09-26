@@ -40,9 +40,8 @@ The HTML content in the page body represents the page content and structure, inc
 | data-render-src | The content source for the [extraction](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data). |  
 | style | <p>The position, size, font, and color properties for the div:</p><p> - **position** (**absolute** only), **left**, **top**, and **width**. (Height is auto-configured for divs.)<br />Used to create an [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos) div, only if the div is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br />Example: `<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</p><p> - The CSS [style](#styles) properties of the element. In the output HTML, these values are returned inline on appropriate child elements.</p> |
  
-<!-- Okay to refer to the OneNote API here or should this be Microsoft Graph? -->
 
-The OneNote API wraps all body content in at least one div. The API creates a default div (attributed with `data-id="_default"`) to contain the body content if:
+The OneNote APIs in Microsoft Graph wrap all body content in at least one div. The API creates a default div (attributed with `data-id="_default"`) to contain the body content if:
 
 - The input body element's **data-absolute-enabled** attribute is omitted or set to **false**. In this case, all body content is put in the default div.
 
@@ -112,7 +111,7 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 | src | <p>Either **src** or **data-render-src** is required.</p><p>The image to render on the OneNote page:<br /> - `src="http://..."` for a URL to a publicly available image on the internet.<br /> - `src="name:BlockName"` for a named part in a multipart request that represents the image.</p> |
 | width, height | The width or height of the image, in pixels but without the px. Example: `width="400"` |
  
->**Note:** The OneNote API automatically detects the input image type, and returns it as the **data-fullres-src-type** in the output HTML. The API also returns the image type of the optimized image in **data-src-type**.
+>**Note:** The OneNote APIs automatically detect the input image type, and returns it as the **data-fullres-src-type** in the output HTML. The API also returns the image type of the optimized image in **data-src-type**.
  
 
 **Output attributes**
@@ -263,7 +262,7 @@ Output **iframe** elements contain endpoints that link to the source page and vi
 ## Object elements
 OneNote pages can contain file attachments represented by **object** elements. An **object** element can contain the following attributes in the input and output HTML.
 
->**Note:** The OneNote API can also render file content as images in a page when the file is sent as an image and uses the **data-render-src** attribute. Example: `<img data-render-src="name:part-name" ... />`
+>**Note:** The OneNote APIs can also render file content as images in a page when the file is sent as an image and uses the **data-render-src** attribute. Example: `<img data-render-src="name:part-name" ... />`
  
 
 **Input attributes**
@@ -367,7 +366,7 @@ Lists and list items can contain the following attributes in the input and outpu
 | style | The **list-style-type** and CSS [style](#styles) properties of the element. In the output HTML, list-level settings are returned on list items. Default properties are not returned. |  
  
 
-The OneNote API supports the following list styles:
+The OneNote APIs in Microsoft Graph support the following list styles:
 
 | Ordered list | Unordered list |  
 |------|------|  
@@ -428,7 +427,7 @@ This is the output HTML. Notice that styles are returned inline on the individua
 ## Tables
 Tables are represented as **table** elements that can contain **tr** and **td** elements. Nested tables are supported.
 
-Tables can contain the following attributes in the input and output HTML. The OneNote API does not support **rowspan** or **colspan** attributes.
+Tables can contain the following attributes in the input and output HTML. The OneNote APIs do not support **rowspan** or **colspan** attributes. 
 
 **Input attributes**
 
@@ -485,14 +484,14 @@ The following examples show input HTML that uses different ways to define styles
 
 
 ## Styles
-The OneNote API supports the following inline CSS **style** properties for elements in the page body, such as **body**, **div**, **p**, **li**, and **span**.
+OneNote APIs in Microsoft Graph support the following inline CSS **style** properties for elements in the page body, such as **body**, **div**, **p**, **li**, and **span**.
 
 | Property | Example |  
 |------|------|  
 | background-color | `style="background-color:#66cc66"` (defaults to white)<br />Both hexadecimal format and named colors are supported. |  
 | color | `style="color:#ffffff"` (defaults to black) |  
 | font-family | `style="font-family:Courier"` (defaults to Calibri) |  
-| font-size | `style="font-size:10pt"` (defaults to 11pt)<br />The OneNote API accepts font size in *pt* or *px*, but converts *px* to *pt*. Decimal values are rounded to the nearest n.0pt or n.5pt. |  
+| font-size | `style="font-size:10pt"` (defaults to 11pt)<br />The APIs accept font size in *pt* or *px*, but converts *px* to *pt*. Decimal values are rounded to the nearest n.0pt or n.5pt. |  
 | font-style | `style="font-style:italic"` (normal or italic only) |  
 | font-weight | `style="font-weight:bold"` (normal or bold only) |  
 | strike-through | `style="text-decoration:line-through"` |  
@@ -527,7 +526,7 @@ The following inline character styles and are also supported:
 
  
 ## Input and output HTML example
-The following image shows a simple page that was created with the OneNote API.
+The following image shows a simple page that was created with Microsoft Graph.
 
 <!-- Add the image? -->
 
@@ -568,9 +567,9 @@ This is the input HTML sent in the message body to create the page.
 </html>
 ``` 
 
-This is the output HTML that the OneNote API returns when you [get page content](../api-reference/v1.0/api/page_get.md).
+This is the output HTML that Microsoft Graph returns when you [get page content](../api-reference/v1.0/api/page_get.md).
 
->When you [create a page](../api-reference/v1.0/api/section_post_pages.md) or [get page metadata](../api-reference/v1.0/api/page_get.md), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
+>**Note:** When you [create a page](../api-reference/v1.0/api/section_post_pages.md) or [get page metadata](../api-reference/v1.0/api/page_get.md), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
 
 ```html
 <html htmlns="http://www.w3.org/1999/xhtml" lang="en-US">
