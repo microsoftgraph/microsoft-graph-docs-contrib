@@ -39,5 +39,12 @@ To make OneNote API calls from the Graph Explorer, choose **Show more samples** 
 
 To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote).
 
+## See also
 
-<!-- Removed the Connect with use section. On the Graph portal, we link to the MS Graph tags for SO and UV (and we will have blogs too). OneNote feedback should go through those channels as well. -->
+* [Branding guidelines](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
+* [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
+* [Add images, videos, and files](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)
+* [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
+* [Extract data](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
+* [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+
