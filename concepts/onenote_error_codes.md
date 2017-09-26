@@ -74,69 +74,67 @@ The request failed because an undetermined error occurred.
 The application code has done something wrong.
 
 ### 20001
-<!-- Global: Why are we linking to OneNote ref content on dev.onenote.com rather than the MS Graph ref content, or the ref content on MSDN? -->
-The request is missing the required "Presentation" part. Exactly one is required. See [OneNote API reference][ref].
+
+The request is missing the required "Presentation" part. Exactly one is required. 
 
 ### 20002
-The request contains two or more "Presentation" parts. Exactly one is required. See [OneNote API reference][ref].
+The request contains two or more "Presentation" parts. Exactly one is required.
 
 ### 20003
-The content type of the "Presentation" part can be only text/HTML or application/XHTML+XML. See [OneNote API reference][ref].
+The content type of the "Presentation" part can be only text/HTML or application/XHTML+XML. 
 
 ### 20004
-The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API will ignore the **src** property and use the **data-render-src** property. See [OneNote API reference][ref].
+The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API will ignore the **src** property and use the **data-render-src** property. 
 
 ### 20005
 The request URI is too long. The maximum size of the URI (including all parameters and data) is 16 KB or 16,384 characters.
 
 ### 20006
-The "Presentation" part HTML contains an image tag with neither the src nor the **data-render-src** properties set. The API will ignore the **image** tag. See [OneNote API reference][ref].
+The "Presentation" part HTML contains an image tag with neither the src nor the **data-render-src** properties set. The API will ignore the **image** tag. 
 
 ### 20007
-The "Presentation" part HTML contains a created date/time string that does not match any of the allowed formats. See [OneNote API reference][ref].
+The "Presentation" part HTML contains a created date/time string that does not match any of the allowed formats. 
 
 ### 20008
-The size of the request is too large. See [OneNote API reference][ref].
+The size of the request is too large. 
 
 ### 20009
-The request contains parts with duplicate names. Part names must be unique. See [OneNote API reference][ref] for more information on how to construct multipart requests.
+The request contains parts with duplicate names. Part names must be unique. 
 
 ### 20010
-The Content-Disposition header was not supplied for the specified content type. See [OneNote API reference][ref] for more information on how to construct multipart requests.
+The Content-Disposition header was not supplied for the specified content type. 
 
 ### 20011
-The request contains a malformed multipart payload. Problems could include missing blank lines, a missing last line, incorrectly formatted part separators, and so on. If you're building the multipart message by hand, carefully check the logic, or consider using a third-party library. See [OneNote API reference][ref] for more information on how to construct a multipart payload.
+The request contains a malformed multipart payload. Problems could include missing blank lines, a missing last line, incorrectly formatted part separators, and so on. If you're building the multipart message by hand, carefully check the logic, or consider using a third-party library. 
 
 ### 20012
-The request doesn't supply a content type for the specified part. See [OneNote API reference][ref] for more information on how to construct a part.
-
+The request doesn't supply a content type for the specified part. 
 ### 20013
 The request doesn't supply Content-Type and Content-Disposition headers for the specified part. 
 
 ### 20014
-The length of a part in the multipart message exceeds the maximum size of 25 MB. See [OneNote API reference][ref].
+The length of a part in the multipart message exceeds the maximum size of 25 MB. 
 
 ### 20015
-The count of parts in the multipart message exceeds the limit of 500. See [OneNote API reference][ref].
+The count of parts in the multipart message exceeds the limit of 500. 
 
 ### 20016
-The length of the multipart message exceeds the limit of 75 MB. See [OneNote API reference][ref].
+The length of the multipart message exceeds the limit of 75 MB. 
 
 ### 20017
-The email MIME was malformed. See [OneNote API reference][ref].
+The email MIME was malformed. 
 
 ### 20018
-The meeting MIME or ICal was malformed. See [OneNote API reference][ref].
+The meeting MIME or ICal was malformed. 
 
 ### 20019
-No ICal was found. See [OneNote API reference][ref].
+No ICal was found. 
 
 ### 20020
-Encountered malformed Json in request body. See [OneNote API reference][ref].
+Encountered malformed Json in request body. 
 
 ### 20100
-Something is wrong with the syntax of your request. See [OneNote API reference][ref] for more information, and check to make sure that you have constructed your request correctly.
-
+Something is wrong with the syntax of your request. 
 ### 20101
 The property that you requested doesn't exist.
 
@@ -155,7 +153,7 @@ GET ../pages/{id}?pagelevel=true
 ```
 
 ### 20106
-Your request contains a query operator that is not supported. See [OneNote API reference][ref].
+Your request contains a query operator that is not supported. 
 
 ### 20108
 Your request contains unsupported OData query parameters.
@@ -164,7 +162,7 @@ Your request contains unsupported OData query parameters.
 The payload in the PATCH request is not constructed correctly.
 
 ### 20110
-Page create requests with data parts require the content to be multipart, with a "Presentation" part. See [OneNote API reference][ref].
+Page create requests with data parts require the content to be multipart, with a "Presentation" part. 
 
 ### 20111
 Your request uses an OData feature that isn't supported.
@@ -218,10 +216,10 @@ Your request contains a **top** query string option whose value is too high. For
 Your request contains a URI that points to an HTTP resource that can't be found.
 
 ### 20131
-Your request contains an invalid value for Content-Type. Use the value indicated in the message. See [OneNote API reference][ref].
+Your request contains an invalid value for Content-Type. Use the value indicated in the message. 
 
 ### 20132
-Your request contains invalid content. Common causes for this are a missing Content-Type request header and/or no content in the body of the request. See [OneNote API reference][ref].
+Your request contains invalid content. Common causes for this are a missing Content-Type request header and/or no content in the body of the request. 
 
 ### 20133
 Your request specifies a PATCH target that is not supported. See [Update page content](../api-reference/v1.0/api/page_update.md).
@@ -401,4 +399,3 @@ The container is already in use by another resource.
 - [Microsoft Graph error responses and resource types](errors.md)
 - [OneNote reference](../api-reference/v1.0/resources/onenote)
 
-[ref]: http://dev.onenote.com/docs
