@@ -54,7 +54,7 @@ The OneNote APIs in Microsoft Graph wrap all body content in at least one div. T
 |------|------|  
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
 | id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). | 
-| style | The position and size properties of the dsiv. |
+| style | The position and size properties of the div. |
  
 ### Non-contributing divs
 When a **div** element in the input HTML does not contribute to the page structure or carry information that OneNote uses, the API moves the div's content into the parent or default div. This is illustrated in the following examples.
