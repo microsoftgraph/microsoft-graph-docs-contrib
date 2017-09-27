@@ -37,7 +37,7 @@ To make OneNote API calls from the Graph Explorer, choose **Show more samples** 
 
 ## Next steps
 
-To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote).
+To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote.md).
 
 ## See also
 
