@@ -54,5 +54,3 @@ When getting page metadata, override the default `lastModifiedDateTime` ordering
 ```http
 GET ~/sections/{id}/pages?$select=id,title,createdDateTime&$orderby=createdDateTime
 ```
-
-## See also
