@@ -573,7 +573,6 @@ This is the output HTML that Microsoft Graph returns when you [get page content]
 <html htmlns="http://www.w3.org/1999/xhtml" lang="en-US">
     <head>
         <title>Sample Study Notes</title>
-        <meta name="created" content="2015-01-01T01:01:00.0000000" />
     </head>
     <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
         <div data-id="_default" style="position:absolute;left:48px;top:120px;width:624px">
