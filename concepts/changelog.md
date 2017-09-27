@@ -17,9 +17,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|Beta|Added the [localActions](../api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_localactions.md) action on [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md) |
 |Addition|Beta|Added the [setPriority](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority.md) action on [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) |
 |Addition|Beta|Added the [assign](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign.md) action on [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) |
-|Addition|Beta|Added the [uploadDepToken](o:uploadDepToken:Collection(microsoft.graph.depOnboardingSetting)) action on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) collection |
-|Addition|Beta|Added the [syncWithAppleDeviceEnrollmentProgram](o:syncWithAppleDeviceEnrollmentProgram:Collection(microsoft.graph.depOnboardingSetting)) action on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) collection |
-|Addition|Beta|Added the [updateMobileAppIdentifierDeployments](o:updateMobileAppIdentifierDeployments:microsoft.graph.managedAppProtection) action on [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) |
+|Addition|Beta|Added the uploadDepToken action on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) collection |
+|Addition|Beta|Added the syncWithAppleDeviceEnrollmentProgram action on [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) collection |
+|Addition|Beta|Added the updateMobileAppIdentifierDeployments action on [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) |
 |Addition|Beta|Added the assign action on [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md) |
 |Addition|Beta|Added the assign action on [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md) |
 |Addition|Beta|Added the assign action on [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) |
