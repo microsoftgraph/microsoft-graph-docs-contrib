@@ -26,9 +26,9 @@ The following are some of the most popular requests for working with OneNote res
 
 |Operation|URL|
 |:--------|:--|
-|GET my notebooks|https://graph.microsoft.com/v1.0/me/onenote/notebooks|
-|GET my sections|https://graph.microsoft.com/v1.0/me/onenote/sections|
-|GET my pages|https://graph.microsoft.com/v1.0/me/onenote/pages|
+|GET my notebooks|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
+|GET my sections|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
+|GET my pages|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
 
 ## Explore the OneNote APIs
 Use the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the OneNote APIs with your own OneNote notebooks.
