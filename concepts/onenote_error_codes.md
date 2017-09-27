@@ -397,5 +397,5 @@ The container is already in use by another resource.
 ## See also
 
 - [Microsoft Graph error responses and resource types](errors.md)
-- [OneNote reference](../api-reference/v1.0/resources/onenote)
+- [OneNote reference](../api-reference/v1.0/resources/onenote.md)
 
