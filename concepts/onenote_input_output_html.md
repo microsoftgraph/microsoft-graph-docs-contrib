@@ -13,16 +13,16 @@ The HTML content in the page body represents the page content and structure, inc
 
 **Input attributes**
 
-| Input attribute | Description |
-|------|------|
+|Input attribute|Description|
+|:------|:------|
 | data-absolute-enabled | Indicates whether the input body supports [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos) elements. |
 | style | <p>The CSS [style](#styles) properties of the body. In the output HTML, input settings might be returned inline on appropriate child elements.</p><p>Background color is not currently supported for the **body** element.</p> |
  
 
 **Output attributes**
 
-| Output attribute | Description |
-|------|------|
+|Output attribute|Description|
+|:------|:------|
 | data-absolute-enabled | Indicates whether the body supports [absolute positioned](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos) elements. Always **true** in output HTML. |
 | style | The **font-family** and **font-size** properties of the body. |
 
@@ -32,8 +32,8 @@ The HTML content in the page body represents the page content and structure, inc
 
 **Input attributes**
 
-| Input attribute | Description |
-|------|------|
+|Input attribute|Description|
+|:------|:------|
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | data-render-fallback | The fallback action if the [extraction](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data) fails: **render** (default) or **none**. |
 | data-render-method | The [extraction](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data) method to perform, for example: `extract.businesscard` or `extract.recipe`. |
@@ -50,8 +50,8 @@ The OneNote APIs in Microsoft Graph wrap all body content in at least one div. T
 
 **Output attributes**
 
-| Output attribute | Description |
-|------|------|
+|Output attribute|Description|
+|:------|:------|
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | style | The position and size properties of the div. |
@@ -101,8 +101,8 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 
 **Input attributes**
 
-| Input attribute | Description |
-|------|------|
+|Input attribute|Description|
+|:------|:------|
 | alt | The supplied alt text for the image. |
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | data-render-src | <p>Either **data-render-src** or **src** is required.</p><p>The webpage to render as a bit-mapped image on the OneNote page:<br /> - `data-render-src="http://..."` for a public URL.<br /> - `data-render-src="name:BlockName"` for an image part in the "Presentation" block of a [multipart request](../api-reference/v1.0/api/section_post_pages.md#example).</p><p>This method is useful when the webpage is more complex than the OneNote page can faithfully render, or when the page requires login credentials.</p> |
@@ -116,8 +116,8 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 
 **Output attributes**
 
-| Output attribute | Description |
-|------|------|
+|Output attribute|Description|
+|:------|:------|
 | alt | The supplied alt text for the image. |
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | data-index | The position of the image. For [split image](#split-images) support. |
@@ -235,15 +235,15 @@ OneNote pages can contain embedded videos represented by **iframe** elements.
 
 **Input attributes**
 
-| Input attribute | Description |
-|------|------|
+|Input attribute|Description|
+|:------|:------|
 | data-original-src | Required. The URL of the video source. See the [list of supported video sources](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos). Example: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
 | width, height | The width or height of the iframe, in pixels. Example: `width=300` |
 
 **Output attributes**
 
-| Output attribute | Description |
-|------|------|
+|Output attribute|Description|
+|:------|:------|
 | data-original-src | The URL of the video source. |
 | src | A link to the video that is embedded in the OneNote page. |
 | width, height | The width or height of the iframe, in pixels. Example: `width=300` |
@@ -267,8 +267,8 @@ OneNote pages can contain file attachments represented by **object** elements. A
 
 **Input attributes**
 
-| Input attribute | Description |
-|------|------|
+|Input attribute|Description|
+|:------|:------|
 | data | Required. The name of the part that represents the file in the [multipart request](../api-reference/v1.0/api/section_post_pages.md#example). |
 | data-attachment | Required. The file name. |
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
@@ -278,8 +278,8 @@ OneNote pages can contain file attachments represented by **object** elements. A
 
 **Output attributes**
 
-| Output attribute | Description |
-|------|------|
+|Output attribute|Description|
+|:------|:------|
 | data | The endpoint for the file resource. |
 | data-attachment | The file name. |
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
@@ -306,8 +306,8 @@ Paragraphs, headings, and other text containers can contain the following attrib
 
 **Input attributes**
 
-| Input attribute | Description |
-|------|------|
+|Input attribute|Description|
+|:------|:------|
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | data-tag | A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on a **p** or **h1** - **h6** element. |
 | style | The CSS [style](#styles) properties of the element. |
@@ -315,8 +315,8 @@ Paragraphs, headings, and other text containers can contain the following attrib
 
 **Output attributes**
 
-| Output attribute | Description |
-|------|------|
+|Output attribute|Description|
+|:------|:------|
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | data-tag | A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on a **p** or **h1** - **h6** element. |
 | id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
@@ -349,8 +349,8 @@ Lists and list items can contain the following attributes in the input and outpu
 
 **Input attributes**
 
-| Input attribute | Description |
-|------|------|
+|Input attribute|Description|
+|:------|:------|
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | data-tag | A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on a **ul**, **ol**, or **li** element. |
 | style | The **list-style-type** and the CSS [style](#styles) properties for the list or list item. |
@@ -358,8 +358,8 @@ Lists and list items can contain the following attributes in the input and outpu
 
 **Output attributes**
 
-| Output attribute | Description |
-|------|------|
+|Output attribute|Description|
+|:------|:------|
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | data-tag |  A [note tag](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) on a span in a **li** element. |
 | id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
@@ -368,8 +368,8 @@ Lists and list items can contain the following attributes in the input and outpu
 
 The OneNote APIs in Microsoft Graph support the following list styles:
 
-| Ordered list | Unordered list |
-|------|------|
+|Ordered list|Unordered list|
+|:------|:------|
 | none | none |
 | decimal (default) | disc (default) |
 | lower-alpha | circle |
@@ -431,16 +431,16 @@ Tables can contain the following attributes in the input and output HTML. The On
 
 **Input attributes**
 
-| Input attribute | Description |
-|------|------|
+|Input attribute|Description|
+|:------|:------|
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | style | The CSS [style](#styles) properties of the element, and also:<br/> - **border**. Can be either 0px or 1px.<br /> - **width**. Supported by **table** and **td** as pixels or percentage of page width.<br />Example: `width="100px"` or `width="60%"` |
  
 
 **Output attributes**
 
-| Output attribute | Description |
-|------|------|
+|Output attribute|Description|
+|:------|:------|
 | data-id | A reference for the element. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used. Used to [update page content](../api-reference/v1.0/api/page_update.md). |
 | style | The CSS [style](#styles) properties of the element. |
@@ -486,8 +486,8 @@ The following examples show input HTML that uses different ways to define styles
 ## Styles
 OneNote APIs in Microsoft Graph support the following inline CSS **style** properties for elements in the page body, such as **body**, **div**, **p**, **li**, and **span**.
 
-| Property | Example |
-|------|------|
+|Property|Example|
+|:------|:------|
 | background-color | `style="background-color:#66cc66"` (defaults to white)<br />Both hexadecimal format and named colors are supported. |
 | color | `style="color:#ffffff"` (defaults to black) |
 | font-family | `style="font-family:Courier"` (defaults to Calibri) |
