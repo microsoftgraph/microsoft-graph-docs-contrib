@@ -9,7 +9,7 @@ Current status of the synchronization job
     "countSuccessiveCompleteFailures": "Integer",
     "escrowsPruned": "Boolean",
     "synchronizedEntryCountByType": [],
-    "code": "String",
+    "code": {"@odata.type":"synchronizationStatusCode"},
     "lastExecution":{"@odata.type": "microsoft.graph.synchronizationJobExecution"},
     "lastSuccessfulExecution": {"@odata.type": "microsoft.graph.synchronizationJobExecution"},
     "lastSuccessfulExecutionWithExports": {"@odata.type": "microsoft.graph.synchronizationJobExecution"},
@@ -26,16 +26,28 @@ Current status of the synchronization job
 |countSuccessiveCompleteFailures        |Number         |Number of consecutive times this job failed|
 |escrowsPruned                          |Boolean        |`true` if the job's escrows (object-level errors) were pruned during initial synchronization. Escrows can be pruned if during initial synchronization we reach the threshold of errors which would normally put the job in quarantine. Instead of going into quarantine, synchronization opts out to clear job's errors and continue until the initial synchronization is completed. Once initial synchronization is completed, job will be paused and wait for customer's manual intervention to clean up the errors  |
 |synchronizedEntryCountByType           |KeyValuePair<string,integer> collection     |Count of synchronized objects, listed by object type|
-|code                                   |[statusCode](synchronization_statusCode.md)  |Job's current status code|
-|lastExecution                          |[synchronizationJobExecution](synchronization_status.md#synchronizationJobExecution)   |Details of the last execution of the job|
-|lastSuccessfulExecution       |[synchronizationJobExecution](synchronization_status.md#synchronizationJobExecution)        |Details of the last execution of this job, which didn't have any errors|
-|lastSuccessfulExecutionWithExports     |[synchronizationJobExecution](synchronization_status.md#synchronizationJobExecution)        |Details of the last execution of the job, which exported objects into the target directory|
+|code                                   |[synchronizationStatusCode](#synchronizationStatusCode)  |Job's current status code|
+|lastExecution                          |[synchronizationJobExecution](#synchronizationJobExecution)   |Details of the last execution of the job|
+|lastSuccessfulExecution                |[synchronizationJobExecution](#synchronizationJobExecution)        |Details of the last execution of this job, which didn't have any errors|
+|lastSuccessfulExecutionWithExports     |[synchronizationJobExecution](#synchronizationJobExecution)        |Details of the last execution of the job, which exported objects into the target directory|
 |steadyStateFirstAchievedTime           |DateTimeOffset        |Time when steady state (no more changes to process) was first achieved|
 |steadyStateLastAchievedTime            |DateTimeOffset        |Time when steady state (no more changes to process) was last achieved|
-|quarantine     |[synchronizationQuarantine](synchronization_status.md#synchronizationQuarantine)        |If job is in quarantine, quarantine details|
+|quarantine     |[synchronizationQuarantine](#synchronizationQuarantine)        |If job is in quarantine, quarantine details|
 
 
-### synchronizationJobExecution
+### <a name="synchronizationStatusCode"></a>synchronizationStatusCode
+
+High-level status code of the synchronization job
+
+| Value                              | Description    |
+|:-----------------------------------|:---------------|
+|NotConfigured                       |Job was not configured and never executed. No authorization was provided |
+|NotRun                              |Job was configured, and possibly started, but haven't completed its first execution|
+|Active                              |Job is executing periodically|
+|Paused                              |Job was paused (usually by an administrator) and currently is not executing, but the state of the job is preserved|
+|Quarantine                          |Job is in quarantine. This may happen due to high volume of errors, or critical errors such as revoked/expired credentials. While in quarantine, we will attempt to execute the job with reduced frequency|
+
+### <a name="synchronizationJobExecution"></a>synchronizationJobExecution
 
 Summarizes the results of the particular execution of the synchronization job
 
@@ -57,7 +69,7 @@ Summarizes the results of the particular execution of the synchronization job
 |timeEnded                      |DateTimeOffset    | Time when this job execution ended |
 
 
-### synchronizationQuarantine
+### <a name="synchronizationQuarantine"></a>synchronizationQuarantine
 
 Provides information about quarantine state
 

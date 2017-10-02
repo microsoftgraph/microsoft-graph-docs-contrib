@@ -71,3 +71,4 @@ Application developer may provide multiple templates for a given application, an
     ],
     "schema": {...}
 }
+```

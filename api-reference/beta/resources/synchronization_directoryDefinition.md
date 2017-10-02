@@ -24,7 +24,7 @@ Directory definitions are updated as part of [synchronization schema](synchroniz
 |id           |String     |Directory identifier. Not nullable|
 |metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed|
 |name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization_schema.md). Not nullable|
-|objects        |[objectDefinition] collection    |Collection of objects supported by the directory|
+|objects        |[objectDefinition](synchronization_objectDefinition.md) collection    |Collection of objects supported by the directory|
 
 
 ## JSON Example
