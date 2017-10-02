@@ -66,9 +66,12 @@ Here is a JSON representation of the resource
     "fallbackUrl": "String (URL)",
     "contentInfo": {
         // JSON object
+        "@data.type": "microsoft.graph.Json",
     },
     "visualElements": {
+        "@data.type": "microsoft.graph.visualInfo",
         "attribution": {
+            "@odata.type": "microsoft.graph.imageInfo",
             "iconUrl": "String (URL)",
             "alternativeText": "String",
             "addImageQuery": "boolean",
@@ -78,6 +81,7 @@ Here is a JSON representation of the resource
         "displayText": "String",
         "content": {
             // JSON object
+            "@data.type": "microsoft.graph.Json"
         }
     }
 }
