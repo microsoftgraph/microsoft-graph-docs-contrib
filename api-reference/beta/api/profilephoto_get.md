@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | For user resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For group resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For contact resource:<br />Contacts.Read, Contacts.ReadWrite |
-|Delegated (personal Microsoft account) <br /> **Note**: Metadata operation is not supported. | For user resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For group resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For contact resource:<br />Contacts.Read, Contacts.ReadWrite |
-|Application                        | For user resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For group resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For contact resource:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegated (work or school account) | For **user** resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegated (personal Microsoft account) <br /> **Note**: Metadata operation is not supported. | For **user** resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
+|Application                        | For **user** resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 
 ## HTTP request to get the photo
 <!-- { "blockType": "ignored" } -->
