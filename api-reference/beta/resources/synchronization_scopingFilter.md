@@ -6,8 +6,6 @@ Filter is part of [object mapping](synchronization_objectMapping.md). It consist
 
 An object is considered in scope for the group set (group set is evaluated to `true`) **if ANY of the groups in the set is evaluated to `true`**.
 
-For additional information, also see [HOW-TO: Configuring a scoping filter](synchronization_howto_scopingFilter.md)
-
 ## JSON representation
 
 ```json
@@ -39,9 +37,8 @@ Filter group defines a set of clauses which an object must satisfy to be conside
 
 | Property      | Type                  | Description               |
 |:--------------|:----------------------|:--------------------------|
-|clauses        |filterClause[]         | Collection of filter clauses (conditions) in this  group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`  |
+|clauses        |filterClause collection         | Collection of filter clauses (conditions) in this  group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`  |
 |name           |String                 | Human-friendly name of the filter group|
-|clauses        |filterClause[]         | Single clause of a filter|
 
 ### filterClause
 
