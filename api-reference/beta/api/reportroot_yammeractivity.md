@@ -96,11 +96,8 @@ Location: https://reports.office.com/data/download/yuSgnSeYRg4sXTiKqggV6eXU0t__X
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -109,10 +106,7 @@ Data as of,User name,Display name,User state,State change date (UTC),Last activi
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_yammeractivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/ExchangeUserActivity(view='Detail',date='2017-02-02')/content

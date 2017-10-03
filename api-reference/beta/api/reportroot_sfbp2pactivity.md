@@ -95,11 +95,8 @@ Location: https://reports.office.com/data/download/dfbJ_HpgnSeYRg4sXTiKqdfeXU0t_
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -108,10 +105,7 @@ Data as of,IM,Audio,Video,Application sharing,File transfers
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_sfbp2pactivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/SfbP2PActivity(view='Activity',period='D7')

@@ -98,11 +98,8 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -111,10 +108,7 @@ Data as of,Site URL,Site owner,Deleted,Last activity date (UTC),Files,Files view
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_sharepointsiteusage"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/SharePointSiteUsage(view='Detail',date='2017-02-02')/content
