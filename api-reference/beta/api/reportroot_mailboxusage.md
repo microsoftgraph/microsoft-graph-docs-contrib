@@ -95,11 +95,8 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -108,10 +105,7 @@ Data as of,User principal name,DisplayName,Deleted,Deleted date,CreatedDate,Last
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_mailboxusage"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Mailbox',period='D7')/content
