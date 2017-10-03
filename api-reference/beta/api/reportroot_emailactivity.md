@@ -97,11 +97,7 @@ Location: https://reports.office.com/data/download/I0bJ_HpgnSeYRg4sXTiKqggV6eXU0
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -110,10 +106,7 @@ Data as of,User principal name,User display name,Deleted,Deleted date,Last activ
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "ignored",
-  "name": "reportroot_emailactivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Detail',date='2017-02-02')/content

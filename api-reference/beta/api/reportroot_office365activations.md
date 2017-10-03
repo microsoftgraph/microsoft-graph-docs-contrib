@@ -84,11 +84,8 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -97,10 +94,7 @@ Data as of,User principal name,User display name,Product license,Last activity d
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_office365activations"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365Activations(view='Activations')/content

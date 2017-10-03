@@ -96,11 +96,8 @@ Location: https://reports.office.com/data/download/odffer_eJXKS034dbc7e0t__XDezY
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -109,10 +106,7 @@ Data as of,User principal name,Last activity date (UTC),Windows,Windows Phone,An
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_sfbdeviceusage"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/SfbDeviceUsage(view='Detail',date='2017-02-02')/content
