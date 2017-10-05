@@ -194,9 +194,8 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "name": "get_messages_in_text"
 }-->
 ```http
-Prefer: outlook.body-content-type="text"
-
 GET https://graph.microsoft.com/beta/me/messages?$select=subject,body,bodyPreview,uniqueBody
+Prefer: outlook.body-content-type="text"
 ```
 ##### Response 3
 Here is an example of the response. 
@@ -207,7 +206,7 @@ Note: The response includes a `Preference-Applied: outlook.body-content-type` he
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.message",
   "isCollection": true
 } -->

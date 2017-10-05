@@ -239,7 +239,7 @@ Here is an example of the response.
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http
@@ -284,7 +284,7 @@ Here is an example of the response. Note: The number of Internet message headers
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
 ```http

@@ -94,7 +94,7 @@ Here is an example of the response, which shows the **start** and **end** proper
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "name": "create_event_from_user"
+  "name": "create_event_from_user",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
