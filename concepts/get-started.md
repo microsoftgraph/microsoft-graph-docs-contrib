@@ -121,6 +121,6 @@ To explore the finished Connect samples, see [Microsoft Graph](https://github.co
 
 ## See also
 
-- Try out sample REST calls in our [API Explorer](https://graph.microsoft.io/graph-explorer).
+- Try out sample REST calls in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 - [Azure AD endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
