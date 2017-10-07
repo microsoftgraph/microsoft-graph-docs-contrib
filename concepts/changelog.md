@@ -108,7 +108,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
-| Addition | Beta | Added the [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/findroomlists) and [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/findrooms) functions to the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) entity. |
+| Addition | Beta | Added the [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findroomlists) and [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findrooms) functions to the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) entity. |
 | Addition | Beta | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) entity to support organizing an event that attendees can attend from more than one location. |
 | Addition | Beta | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type.|
 | Addition | Beta | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type. These properties are only for internal use at this point.|

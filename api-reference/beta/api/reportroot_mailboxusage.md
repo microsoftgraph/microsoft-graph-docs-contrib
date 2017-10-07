@@ -83,10 +83,8 @@ GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Detail',period='
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -95,6 +93,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,15 +102,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,DisplayName,Deleted,Deleted date,CreatedDate,Last activity date (UTC),Item count,Storage used (B),Issue warning quota (B),Prohibit send quota (B),Prohibit send/receive quota (B),Reporting period in days
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_mailboxusage"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/MailboxUsage(view='Mailbox',period='D7')/content

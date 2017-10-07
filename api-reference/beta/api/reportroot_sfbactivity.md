@@ -84,10 +84,8 @@ GET https://graph.microsoft.com/beta/reports/SfbActivity(view='Detail',period='D
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -96,6 +94,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDez
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,15 +103,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,Deleted,Deleted date,Last activity date (UTC),P2P - total sessions,Conference organized - total sessions,Conference participated - total sessions,P2P - last activity date,Conference organized - last activity date,Conference participated - Last activity date,P2P - IM,P2P - audio,P2P - audio minutes,P2P - video,P2P - video minutes,P2P - app sharing,P2P - file transfers,Conference organized - IM,Conference organized - audio/video,Conference organized - audio/video minutes,Conference organized - app sharing,Conference organized - web,Conference organized dial-in/out 3rd party,Conference organized dial-in/out Microsoft,Conference organized dial-in Microsoft minutes,Conference organized dial-out Microsoft minutes,Conference participated - IM,Conference participated - audio/video,Conference participated - audio/video minutes,Conference participated - app sharing,Conference participated - web,Conference participated - dial-in,Products assigned,Reporting period in days
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_sfbactivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/SfbActivity(view='Detail',date='2017-02-02')/content
