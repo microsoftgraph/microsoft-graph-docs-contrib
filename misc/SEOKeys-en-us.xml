@@ -3538,7 +3538,8 @@
         </Item>
       </Item>
     </Item>
-    <Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+    </Item>
+	<Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Group (team)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
         <Item text="Get group" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
         <Item text="List groups" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="List groups, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of group objects." />
