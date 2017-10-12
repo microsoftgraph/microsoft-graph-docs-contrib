@@ -6,7 +6,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2017
 
-### Azure AD B2C APIs
+### Azure AD B2C/B2B APIs
 
 |Change type|Version|Description|
 |:---|:---|:---|
