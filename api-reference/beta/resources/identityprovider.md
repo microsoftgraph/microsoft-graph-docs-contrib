@@ -19,7 +19,7 @@ Each Identity Provider must be configured in an Azure AD tenant or Azure AD B2C 
 |[Create identityProvider](../api/identityprovider_post.md)|identityProvider|Create a new identityProvider.|
 |[Update identityProvider](../api/identityprovider_update.md)|None|Update an existing identityProvider.|
 |[Delete identityProvider](../api/identityprovider_delete.md)|None|Delete an existing identityProvider.|
-|[List identityProvider](../api/identityprovider_list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
+|[List identityProviders](../api/identityprovider_list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
 
 ### Common Properties
 
