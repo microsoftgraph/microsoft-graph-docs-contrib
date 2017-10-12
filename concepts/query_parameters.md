@@ -6,7 +6,7 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 
 |Name|Description|Example|
 |:---------------|:--------|:-------|
-|[$count](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`]|(https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
+|[$count](#count)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
 |[$expand](#expand)|Retrieves related resources.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
 |[$filter](#filter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
 |[$format](#format)|Returns the results in the specified media format.|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
