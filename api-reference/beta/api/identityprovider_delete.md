@@ -24,9 +24,9 @@ DELETE /identityProviders/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+|Name|Description|
+|:---------------|:----------|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -42,15 +42,11 @@ The following example deletes an identityProvider.
 
 ### Example Request
 
-Here is an example of the request.
-
 ```http
 DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
 
 ### Example Response
-
-Here is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content

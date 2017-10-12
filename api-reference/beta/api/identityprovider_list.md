@@ -1,4 +1,4 @@
-# List identityProvider
+# List identityProviders
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.Read.All IdentityProvider.ReadWrite.All|
+|Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|Not supported.|
 
@@ -24,9 +24,9 @@ GET /identityProviders
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+|Name|Description|
+|:---------------|:----------|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -42,15 +42,11 @@ The following example retrieves all identityProvider.
 
 ### Example Request
 
-Here is an example of the request.
-
 ```http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
 
 ### Example Response
-
-Here is an example of the response.
 
 ```http
 HTTP/1.1 200 OK

@@ -27,11 +27,11 @@ There are B2C scenarios that require configuring an Identity Provider in your te
 
 |Property|Type|Required|Nullable|Description|
 |:---------------|:--------|:--------|:--------|:----------|
+|clientId|String|Yes|No|The client id for the application. This is the client id obtained when registering the application with the identity provider.|
+|clientSecret|String|Yes|No|The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return "*****".|
 |id|String|No|No|The id of the identity provider.|
-|type|String|Yes|No|The identity provider type. It must be one of the following values: <li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook|
 |name|String|No|No|The display name of the identity provider.|
-|clientId|String|Yes|No|The clientId of the application used to access the identity provider.|
-|clientSecret|String|Yes|No|The client-secret for the app used to access the identity provider. This is write-only. A read operation will return "*****".|
+|type|String|Yes|No|The identity provider type. It must be one of the following values: <li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook|
 
 ## JSON representation
 
@@ -43,6 +43,6 @@ Here is a JSON representation of the resource.
     "type": "Amazon",
     "name": "Login with Amazon",
     "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-    "clientSecret": "abc0123456789"
+    "clientSecret": "*****"
 }
 ```

@@ -30,10 +30,10 @@ PATCH /identityProviders/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
+|Name|Description|
+|:---------------|:----------|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -41,10 +41,10 @@ In the request body, provide a JSON object with one or more properties that need
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|type|String|The identity provider type. It must be one of the following values: <li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook|
+|clientId|String|The client id for the application. This is the client id obtained when registering the application with the identity provider.|
+|clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
 |name|String|The display name of the identity provider.|
-|clientId|String|The clientId of the application used to access the identity provider.|
-|clientSecret|String|The client-secret for the app used to access the identity provider.|
+|type|String|The identity provider type. It must be one of the following values: <li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook|
 
 ## Response
 
