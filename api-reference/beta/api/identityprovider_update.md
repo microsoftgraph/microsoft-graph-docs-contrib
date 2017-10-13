@@ -56,8 +56,6 @@ The following example updates the definition of the token lifetime identityProvi
 
 ### Example Request
 
-Here is an example of the request.
-
 ```http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 {
@@ -66,8 +64,6 @@ PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
 
 ### Example Response
-
-Here is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
