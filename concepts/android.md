@@ -254,7 +254,6 @@ You need to make your app ready to handle the authorization server response, whi
     ...
     <string name="client_Id">&clientId;</string>
     <string name="msalPrefix">msal&clientId;</string>
-
    ```
 
    <br/>
@@ -283,8 +282,7 @@ You need to make your app ready to handle the authorization server response, whi
                android:value="@string/client_Id"/>
         </application>
     ```
-    
-    <br/>
+
 
 2. The **MSAL** library needs access to the application Id assigned by the registration portal. **The MSAL library refers to the application Id as the "Client Id"**. It gets the application Id (Client Id) from the application context that you pass in the library constructor. 
 
@@ -367,10 +365,8 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     ```
 
-    <br/>
 
 2. Add dependencies to the Microsoft Graph SDK and GSON.
    
@@ -379,7 +375,6 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     compile 'com.google.code.gson:gson:2.7'
    ```
 
-    <br/>
 
 3. Add authentication token to new requests by using the **AuthenticateRequest** helper method. This method implements the same method from the Microsoft Graph Authentication **IAuthenticationProvider** interface.
     
@@ -410,7 +405,6 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     }
    ```
 
-    <br/>
 
 4. Create a draft email and send it by using the following helper methods from the **GraphServiceController** helper class.
 
@@ -501,8 +495,7 @@ The [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-
     }
 
    ```
-   
-    <br/>
+  
 
 ### Call Microsoft Graph using the Microsoft Graph REST API
 
@@ -514,7 +507,6 @@ The [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 
     <uses-permission android:name="android.permission.INTERNET" />
     ```
 
-    <br/>
 
 2. Add a dependency to the Volley HTTP library.
 
@@ -522,7 +514,6 @@ The [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 
     compile 'com.android.volley:volley:1.0.0'
     ```
    
-    <br/>
 
 3. Replace the line `String accessToken = tokenResponse.accessToken;` with the following code. Insert your email address in the placeholder marked with **\<YOUR_EMAIL_ADDRESS\>**.
    
@@ -586,7 +577,6 @@ The [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 
     });
    ```
 
-    <br/>
 
 ## Run the app
 You're ready to try your Android app.
