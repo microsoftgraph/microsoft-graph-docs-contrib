@@ -1,7 +1,7 @@
 # Get calendar
 
-Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](user.md), 
-or the default calendar of an Office 365 [group](group.md).
+Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+or the default calendar of an Office 365 [group](../resources/group.md).
 
 
 ### Get another user's calendar
