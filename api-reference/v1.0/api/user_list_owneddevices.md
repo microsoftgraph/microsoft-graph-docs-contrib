@@ -10,6 +10,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
+*Note*: For native application, It is required to grant delegated permission Directory.AccessAsUser.All to get owned devices. 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
