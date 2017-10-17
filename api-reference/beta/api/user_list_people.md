@@ -20,8 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /users/{id | userPrincipalName}/people
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
-
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -64,19 +63,72 @@ Content-length: 346
 {
   "value": [
     {
-      "sources": [
-        {
-          "type": "type-value"
-        }
-      ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "surname": "surname-value",
-      "title": "title-value",
+      "id": "33b43a5b-87d6-41ec-91f8-a2610048105f",
+      "displayName": "Marketing",
+      "givenName": null,
+      "surname": null,
+      "birthday": "",
+      "personNotes": "",
+      "isFavorite": false,
+      "title": null,
+      "companyName": null,
+      "yomiCompany": "",
+      "department": null,
+      "officeLocation": null,
+      "profession": "",
+      "mailboxType": "GroupMailbox",
+      "personType": "ModernGroup",
+      "userPrincipalName": "",
       "emailAddresses": [
-        {
-          "address": "address-value"
-        }
+          {
+              "address": "marketing@contoso.com",
+              "rank": 30
+          }
+      ],
+      "phones": [],
+      "postalAddresses": [],
+      "websites": [],
+      "sources": [
+          {
+              "type": "Directory"
+          }
+      ]
+    },
+    {
+      "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+      "displayName": "Isaiah Langer",
+      "givenName": "Isaiah",
+      "surname": "Langer",
+      "birthday": "",
+      "personNotes": "",
+      "isFavorite": false,
+      "title": "Web Marketing Manager",
+      "companyName": null,
+      "yomiCompany": "",
+      "department": "Sales & Marketing",
+      "officeLocation": "20/1101",
+      "profession": "",
+      "mailboxType": "Mailbox",
+      "personType": "Person",
+      "userPrincipalName": "isaiah@contoso.com",
+      "emailAddresses": [
+          {
+              "address": "isaiah@contoso.com",
+              "rank": 20
+          }
+      ],
+      "phones": [
+          {
+              "type": "business",
+              "number": "+1 918 555 0101"
+          }
+      ],
+      "postalAddresses": [],
+      "websites": [],
+      "sources": [
+          {
+              "type": "Directory"
+          }
       ]
     }
   ]
