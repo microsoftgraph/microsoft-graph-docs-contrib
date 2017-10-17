@@ -85,10 +85,8 @@ GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detai
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -97,6 +95,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,15 +104,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 ContentDate,Group name,Deleted,Group owner,Last activity date (UTC),Type,Members,Guests,Exchange emails received,SharePoint active files,Yammer messages posted,Yammer messages read,Yammer messages liked,Exchange mailbox total items,Exchange mailbox storage used (MB),SharePoint total files,SharePoint site storage used (MB),Reporting period in days
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_office365groupsactivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365GroupsActivity(view='Detail',date='2017-02-02')/content

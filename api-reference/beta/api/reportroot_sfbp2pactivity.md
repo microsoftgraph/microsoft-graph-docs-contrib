@@ -83,10 +83,8 @@ GET https://graph.microsoft.com/beta/reports/SfbP2PActivity(view='Users',period=
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -95,6 +93,7 @@ Location: https://reports.office.com/data/download/dfbJ_HpgnSeYRg4sXTiKqdfeXU0t_
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,15 +102,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,IM,Audio,Video,Application sharing,File transfers
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_sfbp2pactivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/SfbP2PActivity(view='Activity',period='D7')

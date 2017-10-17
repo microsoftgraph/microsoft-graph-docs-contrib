@@ -84,10 +84,8 @@ GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Detail',period=
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -105,15 +103,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,User display name,Deleted,Deleted date,Last activity date (UTC),Send actions,Receive actions,Read actions,Products assigned,Reporting period in days
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "ignored",
-  "name": "reportroot_emailactivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/EmailActivity(view='Detail',date='2017-02-02')/content

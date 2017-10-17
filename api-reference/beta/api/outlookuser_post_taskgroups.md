@@ -61,7 +61,7 @@ Content-length: 138
 
 {
   "id": "AAMkADIyAAAhrbe-AAA=",
-  "changeKey": "hmM7Eb/jgEec8l3+gkJEawAAIbAGjg==".
+  "changeKey": "hmM7Eb/jgEec8l3+gkJEawAAIbAGjg==",
   "isDefaultGroup": false,
   "name": "Leisure tasks",
   "groupKey": "63d640cf-946f-4734-9c29-60dda7b76acb"

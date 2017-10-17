@@ -79,6 +79,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
+>Note: If the session id has expired, a `404` HTTP error code is returned on the session. In such a scenarion, you can choose to create a new session and continue. Another approach would be to refresh the session periodically to keep the session alive. Typically the persistent session expires after about 7 minutes of inactivity. Non persistent session expires after about 5 minutes of inactivity. 
+
 ## Common Excel scenarios
 
 This section provides examples of the common operations you can use on Excel objects.

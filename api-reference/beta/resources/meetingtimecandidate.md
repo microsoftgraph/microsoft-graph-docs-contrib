@@ -20,7 +20,7 @@ Here is a JSON representation of the resource
 ```json
 {
   "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
-  "confidence": 1024,
+  "confidence": 1024.0,
   "locations": [{"@odata.type": "microsoft.graph.location"}],
   "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "organizerAvailability": "String",

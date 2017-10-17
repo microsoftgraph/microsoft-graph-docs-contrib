@@ -54,8 +54,8 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "description": "description-value"
-    "displayName": "display-name-value"
+    "description": "description-value",
+    "displayName": "display-name-value",
     "id": "id-value"
 }
 ```

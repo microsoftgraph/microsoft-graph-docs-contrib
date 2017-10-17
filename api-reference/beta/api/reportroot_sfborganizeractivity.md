@@ -82,10 +82,8 @@ GET https://graph.microsoft.com/beta/reports/SfbOrganizerActivity(view='Users',p
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -94,6 +92,7 @@ Location: https://reports.office.com/data/download/dfbJ_HdfauiYRg4sXTiKqdfeXU0t_
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,15 +101,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,IM,Audio/Video,Application sharing,Web,Dial-in/out-3rd party,Dial-in/out Microsoft
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_sfborganizeractivity"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/SfbOrganizerActivity(view='Activity',period='D7')/content
