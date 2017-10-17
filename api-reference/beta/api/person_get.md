@@ -41,6 +41,42 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [person](../resources/person.md) object in the response body.
 ## Examples
+### Get a person given the ID
+The following is an example of the request that gets the person who has this ID in the user's organization. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_person_by_id_beta"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/people/id-value
+```
+
+The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_person_by_id_beta",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.person"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 200
+
+{
+  "displayName": "displayName-value",
+  "givenName": "givenName-value",
+  "id": "id-value",
+  "surname": "surname-value",
+  "birthday": "birthday-value",
+  "personNotes": "personNotes-value",
+  "isFavorite": true
+}
+```
+
 ### Browse
 The requests in this section get the people most relevant to the signed-in user (`/me`), based on communication, collaboration, and business relationships. 
 By default, each response returns 10 records, but you can change this using the *$top* parameter. These requests require the People.Read permission.
@@ -56,6 +92,7 @@ GET https://graph.microsoft.com/beta/me/people/
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_person_beta",
   "truncated": true,
   "@odata.type": "microsoft.graph.person"
 } -->
@@ -147,8 +184,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature plann
 ```
 #### Performing a fuzzy search
 
-The following request does a search for a person named "Hermaini Hall." Because there is a person named "Herminia Hull" relevant to the signed-in user, 
-the information for "Herminia Hull" is returned.
+The following request does a search for a person named "Hermaini Hall." Because there is a person named "Herminia Hull" relevant to the signed-in user, the information for "Herminia Hull" is returned.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"

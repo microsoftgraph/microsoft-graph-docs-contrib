@@ -18,11 +18,13 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/people/?$search='{property_value}'
-GET /me/people/?$filter={person_property} eq '{property_value}'
+GET /me/people/{id}
+GET /users/{id}/people/{id}
 ```
 
 ## Optional query parameters
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.|
@@ -31,12 +33,6 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
 |$top|int|Number of results to be returned.|
-
-## Parameters
-| Parameter |Type       |Description|
-|:----------|:----------|:----------|
-|property_value|String     |The value of the extended property to match. Required where listed in the **HTTP request** section.|
-|person_property|String    |The person property to match. Required where listed in the **HTTP request** section.|
 
 ## Request headers
 | Name      |Description|
@@ -48,6 +44,42 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [person](../resources/person.md) object in the response body. The response can contain one person instance or a collection of person instances. 
 ## Examples
+### Get a person given the ID
+The following is an example of the request that gets the person who has this ID in the user's organization. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_person_by_id"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/people/id-value
+```
+
+The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_person_by_id",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.person"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 200
+
+{
+  "displayName": "displayName-value",
+  "givenName": "givenName-value",
+  "id": "id-value",
+  "surname": "surname-value",
+  "birthday": "birthday-value",
+  "personNotes": "personNotes-value",
+  "isFavorite": true
+}
+```
+
 ### Perform a search 
 The following request does a search for a person named Irene McGowan. 
 
