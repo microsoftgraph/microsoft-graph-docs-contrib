@@ -21,14 +21,14 @@ Here is a JSON representation of the resource
     "alternativeText",
     "addImageQuery"
   ],
-  "@odata.type": "microsoft.graph.activity.imageinfo"
+  "@odata.type": "microsoft.graph.imageInfo"
 }-->
 
 ```json
-"attribution": {
+{
     "iconUrl": "String (URL)",
     "alternativeText": "String",
-    "addImageQuery": "boolean",
+    "addImageQuery": "boolean"
 }
 ```
 

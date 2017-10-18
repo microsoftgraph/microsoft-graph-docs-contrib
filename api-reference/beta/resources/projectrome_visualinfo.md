@@ -30,11 +30,11 @@ Here is a JSON representation of the resource
     "backgroundColor",
     "content"
   ],
-  "@odata.type": "microsoft.graph.activity.visualinfo"
+  "@odata.type": "microsoft.graph.visualInfo"
 }-->
 
 ```json
-"visualElements": {
+{
     "attribution": {
         "iconUrl": "String (URL)",
         "alternativeText": "String",

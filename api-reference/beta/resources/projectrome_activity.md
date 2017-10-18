@@ -33,7 +33,12 @@ Your user activities will be showcased in Cortana and Timeline User Experiences 
 |contentUrl | String | Optional; Used in the event the content may be rendered outside of a native or web-based app experience (example: pointer to an item in an RSS feed)|
 |visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required; the object containing information to render the activity in the UX
 |contentInfo | Untyped JSON object | Optional; custom piece of data - JSON-LD extensible description of content according to schema.org syntax|
-|historyItems | [historyItem](../resources/projectrome_historyitem.md) collection | Optional; NavigationProperty/Containment; navigation property to the activity's historyItems|
+
+## Relationships
+
+|Relationship | Type | Description|
+|:------------|:-----|:-----------|
+| historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional; NavigationProperty/Containment; navigation property to the activity's historyItems|
 
 ## JSON Representation
 
@@ -50,7 +55,8 @@ Here is a JSON representation of the resource
     "visualElements.attribution",
     "visualElements.description",
     "visualElements.backgroundColor",
-    "visualElements.content"
+    "visualElements.content",
+    "historyItems"
   ],
   "@odata.type": "microsoft.graph.activity"
 }-->
@@ -64,6 +70,9 @@ Here is a JSON representation of the resource
     "activationUrl": "String (URL)",
     "contentUrl": "String (URL)",
     "fallbackUrl": "String (URL)",
+    "createdDateTime": "DateTimeOffset",
+    "lastModifiedDateTime": "DateTimeOffset",
+    "id": "String",
     "contentInfo": {
         // JSON object
         "@data.type": "microsoft.graph.Json",
@@ -83,7 +92,10 @@ Here is a JSON representation of the resource
             // JSON object
             "@data.type": "microsoft.graph.Json"
         }
-    }
+    },
+    "historyItems": [
+        { "@odata.type": "microsoft.graph.historyItem" }
+    ]
 }
 ```
 
