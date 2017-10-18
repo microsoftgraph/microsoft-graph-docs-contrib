@@ -23,7 +23,7 @@ GET /users/{id | userPrincipalName}
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/me
+GET /me
 ```
 
 ## Optional query parameters
