@@ -11,7 +11,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "ignore" } -->
 ```http
 GET /workbook/worksheets/{id|name}/UsedRange
 
@@ -43,8 +43,6 @@ Here is an example of the request.
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
-Content-type: application/json
-
 ```
 
 ##### Response
