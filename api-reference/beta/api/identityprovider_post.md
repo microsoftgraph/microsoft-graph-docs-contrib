@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [identityProvider](../resources/identityProvider.md) by specifying display name, identityProvider type, client id, and client secret.
+Create a new [identityProvider](../resources/identityProvider.md) by specifying display name, identityProvider type, client ID, and client secret.
 
 ## Permissions
 
@@ -38,11 +38,11 @@ Content-type: application/json
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object.  All of the following properties are required:
+In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object. All of the following properties are required:
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client id for the application. This is the client id obtained when registering the application with the identity provider.|
+|clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
 |name|String|The display name of the identity provider.|
 |type|String|The identity provider type. It must be one of the following values: <li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook|
@@ -53,9 +53,9 @@ If successful, this method returns `201, Created` response code and [identityPro
 
 ## Example
 
-The following example creates an identityProvider.
+The following example creates an **identityProvider**.
 
-### Example Request
+##### Request
 
 ```http
 POST https://graph.microsoft.com/beta/identityProviders
@@ -68,7 +68,7 @@ Content-type: application/json
 }
 ```
 
-### Example Response
+##### Response
 
 ```http
 HTTP/1.1 201 Created
