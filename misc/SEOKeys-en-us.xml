@@ -4071,7 +4071,7 @@
 		  <Item text="Get Yammer device usage report" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Get Yammer Device Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Device Usage reports. The response will be a CSV file in a binary stream." />
 		  <Item text="Get Yammer groups activity report" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="Retrieve the Yammer groups activity report." />
 		</Item>
-	  <Item text="Email activity reports" url="/en-us/api-reference/beta/resources/activity_reports" >
+	  <Item text="Email activity reports" url="/en-us/api-reference/beta/resources/email_activity_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivityusercounts" />
@@ -4082,7 +4082,7 @@
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageusercounts" />
 		<Item text="Get versions user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
 	  </Item>
-	  <Item text="Mailbox usage reports" url="/en-us/api-reference/beta/resources/Mailbox usage reports" >
+	  <Item text="Mailbox usage reports" url="/en-us/api-reference/beta/resources/mailbox_usage_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getmailboxusageuserdetail" />
 		<Item text="Get mailbox counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
 		<Item text="Get quota mailbox status counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotamailboxstatuscounts" />
