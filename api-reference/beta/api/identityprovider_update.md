@@ -37,24 +37,24 @@ PATCH /identityProviders/{id}
 
 ## Request body
 
-In the request body, provide a JSON object with one or more properties that need to be updated:
+In the request body, provide a JSON object with one or more properties that need to be updated.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client id for the application. This is the client id obtained when registering the application with the identity provider.|
+|clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
 |name|String|The display name of the identity provider.|
 |type|String|The identity provider type. It must be one of the following values: <li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook|
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.  If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
-The following example updates the definition of the token lifetime identityProvider and sets it as the organization default.
+The following example updates the definition of the token lifetime **identityProvider** and sets it as the organization default.
 
-### Example Request
+##### Request
 
 ```http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
@@ -63,7 +63,7 @@ PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 }
 ```
 
-### Example Response
+##### Response
 
 ```http
 HTTP/1.1 204 No Content
