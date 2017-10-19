@@ -38,15 +38,15 @@ If successful, this method returns `204, No Content` response code.
 
 ## Example
 
-The following example deletes an identityProvider.
+The following example deletes an **identityProvider**.
 
-### Example Request
+##### Request
 
 ```http
 DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
 
-### Example Response
+##### Response
 
 ```http
 HTTP/1.1 204 No Content
