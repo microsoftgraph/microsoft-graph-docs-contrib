@@ -12,4 +12,4 @@ You can understand the level of your organization's engagement with Yammer by ho
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Get user detail](../api/reportroot_getyammeractivityuserdetail.md) | Stream      | Get details about Yammer activity by user. |
 | [Get activity counts](../api/reportroot_getyammeractivitycounts.md) | Stream      | Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked. |
-| [Get user counts](../api/reportroot_getyammeractivityusercounts.md) | Stream      | Get the trends on the number of unique users who post, read, and like Yammer messages. |
+| [Get user counts](../api/reportroot_getyammeractivityusercounts.md) | Stream      | Get the trends on the number of unique users who posted, read, and liked  Yammer messages. |

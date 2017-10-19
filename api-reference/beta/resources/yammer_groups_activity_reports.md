@@ -12,4 +12,4 @@ You can gain insights into the activity of Yammer groups in your organization an
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Get user detail](../api/reportroot_getyammergroupsactivityuserdetail.md) | Stream      | Get details about Yammer groups activity by user. |
 | [Get group counts](../api/reportroot_getyammergroupsactivitygroupcounts.md) | Stream      | Get the total number of groups that existed and how many included group conversation activity. |
-| [Get activity counts](../api/reportroot_getyammergroupsactivitycounts.md) | Stream      | Get the number Yammer messages posted, read, and liked in groups. |
+| [Get activity counts](../api/reportroot_getyammergroupsactivitycounts.md) | Stream      | Get the number of Yammer messages posted, read, and liked in groups. |
