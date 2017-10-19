@@ -21,13 +21,6 @@ The work or school account must be a global administrator of the tenant.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /identityProviders
-Content-type: application/json
-{
-    "name": "string",
-    "type": "string",
-    "clientId": "string",
-    "clientSecret": "string"
-}
 ```
 
 ## Request headers
