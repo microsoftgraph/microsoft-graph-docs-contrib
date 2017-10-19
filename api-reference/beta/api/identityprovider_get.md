@@ -38,15 +38,15 @@ If successful, this method returns `200, OK` response code and a JSON representa
 
 ## Example
 
-The following example retrieves a specific identityProvider.
+The following example retrieves a specific **identityProvider**.
 
-### Example Request
+##### Request
 
 ```http
 GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
 
-### Example Response
+##### Response
 
 ```http
 HTTP/1.1 200 OK
