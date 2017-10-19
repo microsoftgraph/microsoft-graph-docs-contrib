@@ -368,7 +368,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Identity Provider permissions
+## Identity provider permissions
 
 #### Delegated permissions
 
@@ -386,11 +386,11 @@ _IdentityProvider.Read.All_ and _IdentityProvider.ReadWrite.All_ are valid only 
 #### Delegated
 The following usages are valid for both delegated permissions:
 
-* _IdentityProvider.Read.All : Read all identity providers configured in the tenant (`GET /beta/identityProviders`)
-* _IdentityProvider.Read.All : Read an existing identity provider (`GET /beta/identityProviders/{id}`)
-* _IdentityProvider.ReadWrite.All : Create an identity provider (`POST /beta/identityProviders`)
-* _IdentityProvider.ReadWrite.All : Update an existing identity provider (`PATCH /beta/identityProviders/{id}`)
-* _IdentityProvider.ReadWrite.All : Delete an existing identity provider (`DELETE /beta/identityProviders/{id}`)
+* _IdentityProvider.Read.All_: Read all identity providers configured in the tenant (`GET /beta/identityProviders`)
+* _IdentityProvider.Read.All_: Read an existing identity provider (`GET /beta/identityProviders/{id}`)
+* _IdentityProvider.ReadWrite.All_ Create an identity provider (`POST /beta/identityProviders`)
+* _IdentityProvider.ReadWrite.All_ Update an existing identity provider (`PATCH /beta/identityProviders/{id}`)
+* _IdentityProvider.ReadWrite.All_ Delete an existing identity provider (`DELETE /beta/identityProviders/{id}`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
