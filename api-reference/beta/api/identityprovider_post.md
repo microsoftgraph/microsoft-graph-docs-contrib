@@ -38,7 +38,7 @@ Content-type: application/json
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object. All of the following properties are required:
+In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object. All the properties listed in the following table are required.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
