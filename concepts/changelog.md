@@ -3,6 +3,13 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
+## October 2017
+### Microsoft Teams APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entity [team](../api-reference/beta/resources/team.md)|
+|Addition|Beta|Added [create](../api-reference/beta/api/group_put_team.md), [get](../api-reference/beta/api/group_get_team.md) and [update](../api-reference/beta/api/group_patch_team.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
 
 ## September 2017
 
