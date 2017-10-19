@@ -1,5 +1,7 @@
 # outlookTask resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 An Outlook item that can track a work item. 
 
 You can use a task to track the start, due and actual completion dates and times, its progress or status, whether it's recurring, and requires reminding.
@@ -21,7 +23,7 @@ different than UTC. The following example returns date-related properties in EST
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-### Methods
+## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -38,13 +40,12 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Create one or more multi-value extended properties in a new or existing Outlook task.  |
 |[Get task with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [outlookTask](outlooktask.md) | Get an Outlook task that contains a multi-value extended property by using `$expand`. |
 
-
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedTo|String|The name of the person who has been assigned the task.|
 |body|[itemBody](itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
-|categories|String collection|The categories associated with the task.|
+|categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) that the user has defined.|
 |changeKey|String|The version of the task.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
@@ -63,15 +64,14 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |status|string|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |subject|String|A brief description or title of the task.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the task.  Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the task. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task. Read-only. Nullable.|
 
-### JSON representation
-
+## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {

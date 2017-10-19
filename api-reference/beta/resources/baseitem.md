@@ -1,4 +1,12 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: BaseItem
+---
 # BaseItem resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **baseItem** resource is an abstract resource that contains a common set of properties shared among several other resources types.
 Resources that derive from **baseItem** include:
@@ -48,7 +56,7 @@ Here is a JSON representation of a **baseItem** resource.
 | parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.                              |
 | webUrl               | string (url)      | URL that displays the resource in the browser. Read-only.                              |
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
 
 ## Remarks
@@ -62,8 +70,5 @@ The `baseItem` type is not expected to be used directly.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/baseItem",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Resources/BaseItem"
 } -->

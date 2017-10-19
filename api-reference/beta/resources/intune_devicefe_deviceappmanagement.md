@@ -1,5 +1,7 @@
 ﻿# deviceAppManagement resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Singleton entity that acts as a container for all device app management functionality.
@@ -8,7 +10,7 @@ Singleton entity that acts as a container for all device app management function
 |---|---|---|
 |[Get deviceAppManagement](../api/intune_devicefe_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_devicefe_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_devicefe_deviceappmanagement.md) object.|
 |[Update deviceAppManagement](../api/intune_devicefe_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_devicefe_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_devicefe_deviceappmanagement.md) object.|
-|[Get windowsManagementApp](../api/intune_devicefe_deviceappmanagement_get_windowsmanagementapp.md)|[windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md)|Get the [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) from the windowsManagementApp navigation property.|
+|[Get windowsManagementApp](../api/intune_devicefe_windowsmanagementapp_get.md)|[windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md)|Read properties and relationships of the [windowsManagementApp](../resources/intune_devicefe_windowsmanagementapp.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,5 +1,7 @@
 ﻿# deviceManagement resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Singleton entity that acts as a container for all device management functionality.
@@ -8,12 +10,12 @@ Singleton entity that acts as a container for all device management functionalit
 |---|---|---|
 |[Get deviceManagement](../api/intune_devicefe_devicemanagement_get.md)|[deviceManagement](../resources/intune_devicefe_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_devicefe_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_devicefe_devicemanagement_update.md)|[deviceManagement](../resources/intune_devicefe_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_devicefe_devicemanagement.md) object.|
-|[List remoteActionAudits](../api/intune_devicefe_devicemanagement_list_remoteactionaudit.md)|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) collection|Get the remoteActionAudits from the remoteActionAudits navigation property.|
-|[Create remoteActionAudit](../api/intune_devicefe_devicemanagement_create_remoteactionaudit.md)|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md)|Create a new [remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) by posting to the remoteActionAudits collection.|
-|[Get applePushNotificationCertificate](../api/intune_devicefe_devicemanagement_get_applepushnotificationcertificate.md)|[applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md)|Get the [applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md) from the applePushNotificationCertificate navigation property.|
-|[List deviceManagementScripts](../api/intune_devicefe_devicemanagement_list_devicemanagementscript.md)|[deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) collection|Get the deviceManagementScripts from the deviceManagementScripts navigation property.|
-|[Create deviceManagementScript](../api/intune_devicefe_devicemanagement_create_devicemanagementscript.md)|[deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md)|Create a new [deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) by posting to the deviceManagementScripts collection.|
-|[Get managedDeviceOverview](../api/intune_devicefe_devicemanagement_get_manageddeviceoverview.md)|[managedDeviceOverview](../resources/intune_devicefe_manageddeviceoverview.md)|Get the [managedDeviceOverview](../resources/intune_devicefe_manageddeviceoverview.md) from the managedDeviceOverview navigation property.|
+|[List remoteActionAudits](../api/intune_devicefe_remoteactionaudit_list.md)|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) collection|List properties and relationships of the [remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) objects.|
+|[Create remoteActionAudit](../api/intune_devicefe_remoteactionaudit_create.md)|[remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md)|Create a new [remoteActionAudit](../resources/intune_devicefe_remoteactionaudit.md) object.|
+|[Get applePushNotificationCertificate](../api/intune_devicefe_applepushnotificationcertificate_get.md)|[applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md)|Read properties and relationships of the [applePushNotificationCertificate](../resources/intune_devicefe_applepushnotificationcertificate.md) object.|
+|[List deviceManagementScripts](../api/intune_devicefe_devicemanagementscript_list.md)|[deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) collection|List properties and relationships of the [deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) objects.|
+|[Create deviceManagementScript](../api/intune_devicefe_devicemanagementscript_create.md)|[deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md)|Create a new [deviceManagementScript](../resources/intune_devicefe_devicemanagementscript.md) object.|
+|[Get managedDeviceOverview](../api/intune_devicefe_manageddeviceoverview_get.md)|[managedDeviceOverview](../resources/intune_devicefe_manageddeviceoverview.md)|Read properties and relationships of the [managedDeviceOverview](../resources/intune_devicefe_manageddeviceoverview.md) object.|
 
 ## Properties
 |Property|Type|Description|

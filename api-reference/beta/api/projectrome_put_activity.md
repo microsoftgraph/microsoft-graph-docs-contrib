@@ -1,10 +1,19 @@
 # Create or replace an activity
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new or replace an existing user activity for your app.
 
-## Prerequisites
+## Permissions
 
-The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | UserTimelineActivity.Write.CreatedByApp    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -14,7 +23,7 @@ The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API
 PUT /me/activities/{appActivityId}
 ```
 
-The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.
+>**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.
 
 ## Request headers
 
@@ -28,13 +37,13 @@ In the request body, supply a JSON representation of an [activity](../resources/
 
 ## Response
 
-If successful, this method returns `201, Created` response code if the activity was created or `200, OK` if the activity was replaced.
+If successful, this method returns the `201, Created` response code if the activity was created or `200, OK` if the activity was replaced.
 
 ## Example
 
 ##### Request
 
-Here is an example of the request:
+Here is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -84,7 +93,7 @@ Content-length: 364
 
 ##### Response
 
-Here is an example of the response:
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",

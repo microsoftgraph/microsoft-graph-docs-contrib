@@ -1,10 +1,14 @@
 # Worksheet: UsedRange
 
 The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -20,13 +24,13 @@ In the request URL, provide an optional query parameter.
 |:---------------|:--------|:----------|
 |valuesOnly|Boolean|Optional. Considers only cells with values as used cells (ignores formatting).|
 
-
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required. |
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
@@ -57,11 +61,7 @@ Content-length: 169
 
 {
   "address": "address-value",
-  "addressLocal": "addressLocal-value",
-  "cellCount": 99,
-  "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "addressLocal": "addressLocal-value"
 }
 ```
 

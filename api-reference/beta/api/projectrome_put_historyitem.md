@@ -1,10 +1,19 @@
 # Create or replace a historyItem
 
-Create a new or replace an existing historyItem for an existing user activity.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-## Prerequisites
+Create a new or replace an existing history item for an existing user activity.
 
-The *UserTimelineActivity.Write.CreatedByApp* **scope** is required for this API.
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported.    |
+|Delegated (personal Microsoft account) | UserTimelineActivity.Write.CreatedByApp    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -24,17 +33,17 @@ Id needs to be a GUID.
 
 ## Request body
 
-In the request body, supply a JSON representation of an [historyItem](../resources/projectrome_historyitem.md) object.
+In the request body, supply a JSON representation of a [historyItem](../resources/projectrome_historyitem.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code if the historyItem was created or `200, OK` if the historyItem was replaced.
+If successful, this method returns the `201, Created` response code if the historyItem was created or `200, OK` if the historyItem was replaced.
 
 ## Example
 
 ##### Request
 
-Here is an example of the request:
+Here is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -55,7 +64,7 @@ Content-length: 364
 
 ##### Response
 
-Here is an example of the response:
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",

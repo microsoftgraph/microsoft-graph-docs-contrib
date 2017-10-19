@@ -1,5 +1,6 @@
 # Service root
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## Methods
 
@@ -7,7 +8,6 @@
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create application](../api/application_post_extensionproperties.md) |[application](application.md)| Create a new application.|
 |[Create device](../api/device_post_devices.md) |[device](device.md)| Create a new device by posting to the devices collection.|
 |[List device](../api/device_list.md) | [device](device.md) collection |Get device object collection. |
 |[Activate directoryRole](../api/directoryrole_post_directoryroles.md) | [directoryRole](directoryrole.md) |Activate a directory role. |
