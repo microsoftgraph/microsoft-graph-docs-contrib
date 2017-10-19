@@ -29,7 +29,7 @@ Configuring an identity provider in your Azure AD tenant enables future B2B gues
 |clientSecret|String|Yes|No|The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*".|
 |id|String|No|No|The ID of the identity provider.|
 |name|String|No|No|The display name of the identity provider.|
-|type|String|Yes|No|The identity provider type. It must be one of the following values: <li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook|
+|type|String|Yes|No|The identity provider type. It must be one of the following values: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ### Where to get the client ID and secret
 
