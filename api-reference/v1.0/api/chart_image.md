@@ -57,13 +57,13 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 ##### Usage
 
-You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`
+You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 
 For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Here is an example of a chart image returned with the default parameters.
 
 ![Excel chart image with default height and width.](../../../concepts/images/GetChart-default.png)
 
-If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`
+If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
 
 ![Excel chart image with default height and width.](../../../concepts/images/GetChart-fill.png)
 
