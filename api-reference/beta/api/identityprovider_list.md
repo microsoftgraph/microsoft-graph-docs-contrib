@@ -38,15 +38,15 @@ If successful, this method returns `200, OK` response code and a collection of [
 
 ## Example
 
-The following example retrieves all identityProvider.
+The following example retrieves all **identityProvider**.
 
-### Example Request
+##### Request
 
 ```http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
 
-### Example Response
+##### Response
 
 ```http
 HTTP/1.1 200 OK
