@@ -57,6 +57,9 @@ The following example updates the definition of the token lifetime **identityPro
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+Content-type: application/json
+Content-length: 41
+
 {
     "clientSecret": "1111111111111"
 }

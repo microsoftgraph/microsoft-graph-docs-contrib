@@ -58,6 +58,7 @@ The following example creates an **identityProvider**.
 ```http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
+
 {
     "name": "Login with Amazon",
     "type": "Amazon",
@@ -76,6 +77,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "id": "Amazon-OAUTH",
     "name": "Login with Amazon",

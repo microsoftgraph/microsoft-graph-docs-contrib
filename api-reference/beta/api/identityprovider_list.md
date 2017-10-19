@@ -62,14 +62,17 @@ GET https://graph.microsoft.com/beta/identityProviders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-    "value": [{
+    "value": [
+      {
         "id": "Amazon-OAUTH",
         "name": "Login with Amazon",
         "type": "Amazon",
         "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
         "clientSecret": "*****"
-    }]
+      }
+    ]
 }
 ```
 
