@@ -21,7 +21,6 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-<<<<<<< HEAD
 |userTimezone | String | Optional; the timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation|
 |createdDateTime | DateTimeOffset | Set by the server; DateTime in UTC when the object was created on the server |
 |lastModifiedDateTime | DateTimeOffset | Set by the server; DateTime in UTC when the object was modified on the server |
@@ -40,21 +39,6 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |Relationship | Type | Description|
 |:------------|:-----|:-----------|
 | historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional; NavigationProperty/Containment; navigation property to the activity's historyItems|
-=======
-|userTimezone | String | Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.|
-|createdDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was created on the server. |
-|lastModifiedDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was modified on the server. |
-|id | String | Server-generated ID used for URL addressing.|
-|appActivityId | String | Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.|
-|activitySourceHost | String | Required. URL pointing to the JSON file which stores the cross-platform identity mapping for the application.|
-|appDisplayName | String | Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.|
-|activationUrl | String | Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.|
-|fallbackUrl | String | Optional. URL used to launch the activity in a web-based app, if available.|
-|contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
-|visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
-|contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](http://schema.org) syntax.|
-|historyItems | [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
->>>>>>> a57bb181665726a601f2ad0626638c8c19df2d41
 
 ## JSON representation
 
