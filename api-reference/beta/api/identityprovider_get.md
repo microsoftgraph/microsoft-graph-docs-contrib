@@ -18,6 +18,7 @@ The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /identityProviders/{id}
 ```
@@ -42,12 +43,21 @@ The following example retrieves a specific **identityProvider**.
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "get_identityprovider"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
 
 ##### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.microsoft.graph.IdentityProvider"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -61,3 +71,13 @@ Content-type: application/json
     }]
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get identityProvider",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
