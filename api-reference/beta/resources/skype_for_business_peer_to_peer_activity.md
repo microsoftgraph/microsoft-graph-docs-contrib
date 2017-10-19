@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-You can get details on peer-to-peer activity across your organization. These details are very helpful when you investigating, planning, and making other business decisions for your organization.
+You can get details on peer-to-peer activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business peer-to-peer activity](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).
 
