@@ -10,7 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|Beta|Added the [identityProvider](../api-reference/beta/resources/identityprovider.md) entity and the [create](../api-reference/beta/api/identityprovider_post.md), [list](../api-reference/beta/api/identityprovider_list.md), [get](../api-reference/beta/api/identityprovider_get.md), [update](../api-reference/beta/api/identityprovider_update.md), and [delete](../api-reference/beta/api/identityprovider_delete.md) operations.|
+|Addition|Beta|Added the [identityProvider](../api-reference/beta/resources/identityprovider.md) entity and the [create](../api-reference/beta/api/identityprovider_post_identityproviders.md), [list](../api-reference/beta/api/identityprovider_list.md), [get](../api-reference/beta/api/identityprovider_get.md), [update](../api-reference/beta/api/identityprovider_update.md), and [delete](../api-reference/beta/api/identityprovider_delete.md) operations.|
 
 ## September 2017
 

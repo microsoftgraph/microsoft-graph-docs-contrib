@@ -18,15 +18,9 @@ The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /identityProviders
-Content-type: application/json
-{
-    "name": "string",
-    "type": "string",
-    "clientId": "string",
-    "clientSecret": "string"
-}
 ```
 
 ## Request headers
@@ -57,9 +51,14 @@ The following example creates an **identityProvider**.
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "create_identityprovider_from_identityproviders"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
+
 {
     "name": "Login with Amazon",
     "type": "Amazon",
@@ -70,9 +69,15 @@ Content-type: application/json
 
 ##### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.IdentityProvider"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "id": "Amazon-OAUTH",
     "name": "Login with Amazon",
@@ -81,3 +86,12 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create identityProvider",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

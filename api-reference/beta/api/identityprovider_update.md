@@ -18,13 +18,9 @@ The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityProviders/{id}
-{
-    "name": "new-string",
-    "clientId": "new-string",
-    "clientSecret": "new-string"
-}
 ```
 
 ## Request headers
@@ -54,8 +50,15 @@ The following example updates the definition of the token lifetime **identityPro
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "update_identityprovider"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+Content-type: application/json
+Content-length: 41
+
 {
     "clientSecret": "1111111111111"
 }
@@ -63,6 +66,20 @@ PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 
 ##### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update identityProvider",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
