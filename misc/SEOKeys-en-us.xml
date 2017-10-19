@@ -1019,7 +1019,7 @@
     </Item>
       <Item text="Identity provider" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
         <Item text="List identity providers" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
-        <Item text="Create identity provider" url="/en-us/api-reference/beta/api/identityprovider_post" SEODescription="Create a new identityProvider." />
+        <Item text="Create identity provider" url="/en-us/api-reference/beta/api/identityprovider_post_identityproviders" SEODescription="Create a new identityProvider." />
         <Item text="Get identity provider" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="Get an identityProvider by id." />
         <Item text="Upate identity provider" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="Update the properties of an identityProvider." />
         <Item text="Delete identity provider" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="Delete an existing identityProvider." />
