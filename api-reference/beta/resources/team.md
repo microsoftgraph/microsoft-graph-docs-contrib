@@ -12,7 +12,6 @@ A team is a collection of [chatThreads](chatthread.md) within a Microsoft Team. 
 |[Create team](../api/group_put_team.md) | [team](team.md) | Create a new team as specified.|
 |[Get team](../api/group_get_team.md) | [team](team.md) | Read properties and relationships of team object.|
 |[Update team](../api/group_patch_team.md) | [team](team.md) |Update the properties of a team object. |
-|[Delete team](../api/group_delete_team.md) | None |Delete team object. |
 
 ## MemberSettings Properties
 | Property	   | Type	|Description|
