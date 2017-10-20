@@ -17,7 +17,7 @@ Reports resources and APIs can open up new ways for you to engage with users and
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 
-## Desprecation
+## Deprecations
 - Added the [getEmailActivityUserDetail](../api/reportroot_getemailactivityuserdetail.md), [getEmailActivityCounts](../api/reportroot_getemailactivitycounts.md), and [getEmailActivityUserCounts](../api/reportroot_getemailactivityusercounts.md) APIs. These replaced the EmailActivity API.
 - Added the [getEmailAppUsageUserDetail](../api/reportroot_getemailappusageuserdetail.md), [getEmailAppUsageAppsUserCounts](../api/reportroot_getemailappusageappsusercounts.md), [getEmailAppUsageUserCounts](../api/reportroot_getemailappusageusercounts.md), and [getEmailAppUsageVersionsUserCounts](../api/reportroot_getemailappusageversionsusercounts.md) APIs. These replaced the EmailAppUsage API.
 - Added the [getMailboxUsageUserDetail](../api/reportroot_getmailboxusageuserdetail.md), [getMailboxUsageMailboxCounts](../api/reportroot_getmailboxusagemailboxcounts.md), [getMailboxUsageQuotaMailboxStatusCounts](../api/reportroot_getmailboxusagequotamailboxstatuscounts.md), and [getMailboxUsageStorage](../api/reportroot_getmailboxusagestorage.md) APIs. These replaced the MailboxUsage API.
