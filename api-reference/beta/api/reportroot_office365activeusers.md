@@ -84,10 +84,8 @@ GET https://graph.microsoft.com/beta/reports/Office365ActiveUsers(view='Detail',
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -96,6 +94,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,15 +103,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,DisplayName,Deleted,Deleted date,License For Exchange,License For OndDrive,License For SharePoint,License For Skype For Business,License For Yammer,Last Activity Date For Exchange,Last Activity Date For OndDrive,Last Activity Date For SharePoint,Last Activity Date For Skype For Business,Last Activity Date For Yammer,License Assigned Date For Exchange,License Assigned Date For OndDrive,License Assigned Date For SharePoint,License Assigned Date For Skype For Business,License Assigned Date For Yammer,Products assigned
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_office365activeusers"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/Office365ActiveUsers(view='Detail',date='2017-02-02')/content

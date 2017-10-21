@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.Read, User.ReadBasic.All    |
 |Delegated (personal Microsoft account) | User.Read    |
-|Application | Not supported. |
+|Application | User.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200, OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.
+If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.
 
 ## Example
 Here is an example of how to call this API.

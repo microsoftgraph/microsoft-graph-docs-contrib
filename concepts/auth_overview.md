@@ -4,6 +4,8 @@ To call Microsoft Graph, your app must acquire an access token from Azure Active
 
 This topic provides an overview of access tokens, Azure AD, and how your app can get access tokens. If you are already familiar with integrating an app with Azure AD to get tokens, then you can skip ahead to [Next Steps](#next-steps) for information and samples specific to Microsoft Graph. 
 
+> **Important:**  How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+
 ## What is an access token and how do I use it?
 
 Access tokens issued by Azure AD are base 64 encoded JSON Web Tokens (JWT). They contain information (claims) that web APIs secured by Azure AD, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque. You should always transmit access tokens over a secure channel, such as transport layer security (HTTPS).

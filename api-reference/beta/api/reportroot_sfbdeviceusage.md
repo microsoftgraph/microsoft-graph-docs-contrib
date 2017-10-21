@@ -84,10 +84,8 @@ GET https://graph.microsoft.com/beta/reports/SfbDeviceUsage(view='Detail',period
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "stream"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -96,6 +94,7 @@ Location: https://reports.office.com/data/download/odffer_eJXKS034dbc7e0t__XDezY
 ```
 
 Follow the 302 redirection and the downloading CSV file will have the schema as follows.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,15 +103,14 @@ Follow the 302 redirection and the downloading CSV file will have the schema as 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: text/plain
+
 Data as of,User principal name,Last activity date (UTC),Windows,Windows Phone,Android Phone,iPhone,iPad,Reporting period in days
 ```
 
 ### Other valid requests
 
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_sfbdeviceusage"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/reports/SfbDeviceUsage(view='Detail',date='2017-02-02')/content

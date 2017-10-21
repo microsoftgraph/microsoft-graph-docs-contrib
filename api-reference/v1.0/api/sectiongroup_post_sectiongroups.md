@@ -71,7 +71,7 @@ Content-length: 305
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": 
+  "lastModifiedBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
