@@ -4058,18 +4058,18 @@
 		</Item>
 	</Item>
 	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
-	  <Item text="Email activity reports" url="/en-us/api-reference/beta/resources/email_activity_reports" >
+	  <Item text="Outlook activity reports" url="/en-us/api-reference/beta/resources/email_activity_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivityusercounts" />
 	  </Item>
-	  <Item text="Email app usage reports" url="/en-us/api-reference/beta/resources/email_app_usage_reports" >
+	  <Item text="Outlook app usage reports" url="/en-us/api-reference/beta/resources/email_app_usage_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailappusageuserdetail" />
 		<Item text="Get apps user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageappsusercounts" />
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageusercounts" />
 		<Item text="Get versions user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
 	  </Item>
-	  <Item text="Mailbox usage reports" url="/en-us/api-reference/beta/resources/mailbox_usage_reports" >
+	  <Item text="Outlook mailbox usage reports" url="/en-us/api-reference/beta/resources/mailbox_usage_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getmailboxusageuserdetail" />
 		<Item text="Get mailbox counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
 		<Item text="Get quota mailbox status counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotamailboxstatuscounts" />
