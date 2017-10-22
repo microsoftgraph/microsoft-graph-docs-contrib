@@ -2,8 +2,8 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update one or more settings for the user's mailbox. This includes settings for automatic replies (notify people automatically upon 
-receipt of their email), locale (language and country/region), time zone, and working hours.
+Update one or more settings for the user's mailbox. This includes settings for [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon 
+receipt of their email), [locale](../resources/localeinfo.md) (language and country/region), time zone, and [working hours](../resources/workinghours.md).
 
 You can enable, configure, or disable one or more of these settings as part of [mailboxSettings](../resources/mailboxsettings.md).
 
@@ -46,6 +46,19 @@ shouldn't include existing values that haven't changed. The following are the wr
 ## Response
 
 If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxSettings.md) object in the response body.
+
+## Errors
+
+Setting working hours with inappropriate values may return the following errors.
+
+| Scenario   | HTTP status code | Error code | Error message |
+|:-----------|:------|:----------|:----------|
+| Invalid **startTime** or **endTime** | 400 | RequestBodyRead | Cannot convert the literal '08' to the expected type 'Edm.TimeOfDay'.|
+| Start time is greater than end time | 400 | ErrorInvalidTimeSettings | Start Time should occur before End Time. |
+| Invalid day in **daysOfWeek** | 400 | InvalidArguments | Requested value 'RandomDay' was not found.|
+| Invalid **timeZone** | 400 | InvalidTimeZone | Time Zone settings provided are invalid.|
+
+
 ## Example
 ##### Request 1
 The first example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property:

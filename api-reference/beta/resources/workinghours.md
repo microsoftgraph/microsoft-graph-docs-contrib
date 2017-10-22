@@ -2,14 +2,17 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents the working hours and days of the week in a specific time zone.
+Represents the days of the week and hours in a specific time zone that the user works.
 
-You can get and set the working hours for a user as part of the user's [mailbox settings](mailboxSettings.md). 
+Having access to a user's working hours is useful in scenarios that handle activity or resource planning. 
+You can [get](../api/user_get_mailboxsettings.md#request-3) and [set](../api/user_update_mailboxsettings.md/#request-2) the 
+working hours of a user as part of the user's [mailbox settings](mailboxSettings.md). 
 
-You can choose to set 
-a time zone for your working hours differently from the preferred time zone for your Outlook client. This is useful when you are 
-travelling abroad, you can adapt the client time zone to the foreign time zone so that Outlook time values are displayed in local time.
-When others arrange work meetings with you, they can still respect your working hours in your home country time zone.
+You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client. 
+This can be useful in cases like when you travel to a different time zone than you usually work in. You can set the Outlook client  
+to the destination time zone so that Outlook time values are displayed in local time while you are there.
+When other people request work meetings with you in your usual place of work, they can still respect your working hours in the 
+appropriate time zone.
 
 
 ## Properties

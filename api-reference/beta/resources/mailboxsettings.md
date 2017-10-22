@@ -12,7 +12,7 @@ Settings for the primary mailbox of the signed-in user.
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
 |language|[localeInfo](localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeZone|string|The default time zone for the user's mailbox.|
-|workingHours|[workingHours](workinghours.md)|The working hours and days of the week in a specific time zone.|
+|workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
 
 ## JSON representation
 
