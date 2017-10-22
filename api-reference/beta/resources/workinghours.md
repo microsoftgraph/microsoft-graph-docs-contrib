@@ -4,6 +4,13 @@
 
 Represents the working hours and days of the week in a specific time zone.
 
+You can get and set the working hours for a user as part of the user's [mailbox settings](mailboxSettings.md). 
+
+You can choose to set 
+a time zone for your working hours differently from the preferred time zone for your Outlook client. This is useful when you are 
+travelling abroad, you can adapt the client time zone to the foreign time zone so that Outlook time values are displayed in local time.
+When others arrange work meetings with you, they can still respect your working hours in your home country time zone.
+
 
 ## Properties
 | Property	   | Type	|Description|
