@@ -5,7 +5,7 @@
 Represents the days of the week and hours in a specific time zone that the user works.
 
 Having access to a user's working hours is useful in scenarios that handle activity or resource planning. 
-You can [get](../api/user_get_mailboxsettings.md#request-3) and [set](../api/user_update_mailboxsettings.md/#request-2) the 
+You can [get](../api/user_get_mailboxsettings.md#request-3) and [set](../api/user_update_mailboxsettings.md#request-2) the 
 working hours of a user as part of the user's [mailbox settings](mailboxSettings.md). 
 
 You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client. 
