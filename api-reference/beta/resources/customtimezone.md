@@ -28,7 +28,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "bias": {"Int32"},
+  "bias": "Int32",
   "daylightOffset": {"@odata.type": "microsoft.graph.daylightTimeZoneOffset"},
   "name": "string",
   "standardOffset": {"@odata.type": "microsoft.graph.standardTimeZoneOffset"}
