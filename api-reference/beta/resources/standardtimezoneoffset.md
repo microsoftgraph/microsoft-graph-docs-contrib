@@ -4,14 +4,14 @@
 
 Specifies when a time zone switches from daylight saving time to standard time.
 
-For example:
+For example, if a time zone is specified with the following properties:
 
 - **dayOccurrence** is 3
 - **dayOfWeek** is "Sunday"
 - **month** is 10
 - **time** is 02:00:00
 _ **year** is 0
-means the transition from daylight saving time to standard occurs at 2 AM on the third Sunday of October.
+That means the transition from daylight saving time to standard occurs at 2 AM on the third Sunday of October, every year.
 
 ## Properties
 | Property	   | Type	|Description|
