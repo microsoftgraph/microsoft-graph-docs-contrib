@@ -41,7 +41,7 @@ shouldn't include existing values that haven't changed. The following are the wr
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
 |language|[localeInfo](../resources/localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeZone|string|The default time zone for the user's mailbox.|
-|workingHours|[workingHours](workinghours.md)|The hours, days of a week, and time zone that the user works.|
+|workingHours|[workingHours](../resources/workinghours.md)|The hours, days of a week, and time zone that the user works.|
 
 ## Response
 
@@ -156,7 +156,7 @@ Content-Type: application/json
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "name": "update_mailboxsettings_2"
+  "name": "update_mailboxsettings_2",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailboxSettings"
 } -->
