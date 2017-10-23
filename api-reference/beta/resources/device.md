@@ -29,19 +29,19 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. |
 |alternativeSecurityIds|alternativeSecurityId collection| Not nullable.           |
-|approximateLastSignInDateTime|DateTimeOffset|            The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|deviceId|Guid|            |
-|deviceMetadata|String||
+|approximateLastSignInDateTime|DateTimeOffset|            The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read only.|
+|deviceId|Guid| Unique identifier used by Intune. |
+|deviceMetadata|String| |
 |operatingSystem|String|The type of operating system on the device.|
 |operatingSystemVersion|String|The version of the operating system on the device|
-|deviceVersion|Int32|            |
+|deviceVersion|Int32| Internal           |
 |physicalIds|String collection| Not nullable.            |
-|trustType|String||
-|onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
+|trustType|String| 0, 1, 2|
+|onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read only.|
 |displayName|String|The display name for the device.|
 |isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**.|
 |isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app such as Intune; otherwise, **false**.|
-|onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` Read-only. |
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only.|
 
 ## Relationships
