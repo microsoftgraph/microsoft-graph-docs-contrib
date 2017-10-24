@@ -36,7 +36,7 @@ The response code should be `201, Created` and [team](../resources/team.md) obje
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
