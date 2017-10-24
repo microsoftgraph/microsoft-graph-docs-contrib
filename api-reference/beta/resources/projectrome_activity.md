@@ -79,10 +79,10 @@ Here is a JSON representation of the resource.
     "visualElements": {
         "@data.type": "microsoft.graph.visualInfo",
         "attribution": {
-        "@odata.type": "microsoft.graph.imageInfo",
-        "iconUrl": "String (URL)",
-        "alternativeText": "String",
-        "addImageQuery": "boolean",
+            "@odata.type": "microsoft.graph.imageInfo",
+            "iconUrl": "String (URL)",
+            "alternativeText": "String",
+            "addImageQuery": "boolean",
         },
         "description": "String",
         "backgroundColor": "String",
