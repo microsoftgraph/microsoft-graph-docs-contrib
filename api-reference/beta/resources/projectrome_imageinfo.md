@@ -28,6 +28,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
+    "@odata.type": "microsoft.graph.imageInfo",
     "iconUrl": "String (URL)",
     "alternativeText": "String",
     "addImageQuery": "boolean"

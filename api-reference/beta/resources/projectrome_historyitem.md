@@ -51,7 +51,7 @@ Here is a JSON representation of the resource.
     "startedDateTime": "DateTimeOffset",
     "userTimezone": "String",
     "lastActiveDateTime": "DateTimeOffset",
-    "activeDurationSeconds":"int",
+    "activeDurationSeconds":"int"
 }
 ```
 

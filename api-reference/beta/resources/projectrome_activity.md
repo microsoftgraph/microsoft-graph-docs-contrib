@@ -38,7 +38,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Relationship | Type | Description|
 |:------------|:-----|:-----------|
-| historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
+|historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
 
 ## JSON representation
 
@@ -74,22 +74,20 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "DateTimeOffset",
     "id": "String",
     "contentInfo": {
-        // JSON object
-        "@data.type": "microsoft.graph.Json",
+        "@data.type": "microsoft.graph.Json"
     },
     "visualElements": {
         "@data.type": "microsoft.graph.visualInfo",
         "attribution": {
-            "@odata.type": "microsoft.graph.imageInfo",
-            "iconUrl": "String (URL)",
-            "alternativeText": "String",
-            "addImageQuery": "boolean",
+        "@odata.type": "microsoft.graph.imageInfo",
+        "iconUrl": "String (URL)",
+        "alternativeText": "String",
+        "addImageQuery": "boolean",
         },
         "description": "String",
         "backgroundColor": "String",
         "displayText": "String",
         "content": {
-            // JSON object
             "@data.type": "microsoft.graph.Json"
         }
     },

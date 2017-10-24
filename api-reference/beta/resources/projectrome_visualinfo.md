@@ -37,16 +37,18 @@ Here is a JSON representation of the resource
 
 ```json
 {
+    "@data.type": "microsoft.graph.visualInfo",
     "attribution": {
+        "@odata.type": "microsoft.graph.imageInfo",
         "iconUrl": "String (URL)",
         "alternativeText": "String",
-        "addImageQuery": "boolean",
+        "addImageQuery": "boolean"
     },
     "description": "String",
     "backgroundColor": "String",
     "displayText": "String",
     "content": {
-        // JSON object
+        "@data.type": "microsoft.graph.Json"
     }
 }
 ```
