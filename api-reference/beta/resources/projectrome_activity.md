@@ -38,7 +38,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Relationship | Type | Description|
 |:------------|:-----|:-----------|
-| historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional; NavigationProperty/Containment; navigation property to the activity's historyItems|
+| historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems|
 
 ## JSON representation
 
