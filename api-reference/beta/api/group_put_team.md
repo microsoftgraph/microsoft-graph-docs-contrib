@@ -82,7 +82,7 @@ Content-length: 401
   "guestSettings": {
     "allowCreateUpdateChannels": true,
     "allowDeleteChannels": true 
-  }
+  },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
