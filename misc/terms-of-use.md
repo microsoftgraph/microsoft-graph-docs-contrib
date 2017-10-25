@@ -26,37 +26,37 @@ By accessing or using the Microsoft Graph API, including within a software appli
 
     b)	**Graph API Guidelines**
 
-        You may NOT:
+	You may NOT:
 
-        i)	Use the Graph API in a way that could impair, harm or damage Microsoft, the Graph API, any Microsoft Offering, or anyone’s use of the Graph API or any Microsoft Offering;
+    i)	Use the Graph API in a way that could impair, harm or damage Microsoft, the Graph API, any Microsoft Offering, or anyone’s use of the Graph API or any Microsoft Offering;
 
-        ii)	Use the Graph API to disrupt, interfere with, or attempt to gain unauthorized access to services, servers, devices, or networks connected to or which can be accessed via the Graph API;
+    ii)	Use the Graph API to disrupt, interfere with, or attempt to gain unauthorized access to services, servers, devices, or networks connected to or which can be accessed via the Graph API;
 
-        iii)	Use the Graph API, or any information accessed or obtained using the Graph API, for the purpose of migrating Customers away from a Microsoft Offering, except in connection with use of the Graph API by your Application or unless expressly permitted by Microsoft; 
+    iii)	Use the Graph API, or any information accessed or obtained using the Graph API, for the purpose of migrating Customers away from a Microsoft Offering, except in connection with use of the Graph API by your Application or unless expressly permitted by Microsoft; 
 
-        iv)	Scrape, build databases or otherwise create copies of any data accessed or obtained using the Graph API, except as necessary to enable an intended usage scenario for your Application;
+    iv)	Scrape, build databases or otherwise create copies of any data accessed or obtained using the Graph API, except as necessary to enable an intended usage scenario for your Application;
 
-        v)	Request from the Graph API more than the minimum amount of data, or more than the minimum permissions to the types of data, that your Application needs for Customers to use the intended functionality of your Application;
+    v)	Request from the Graph API more than the minimum amount of data, or more than the minimum permissions to the types of data, that your Application needs for Customers to use the intended functionality of your Application;
 
-        vi)	Use an unreasonable amount of bandwidth, or adversely impact the stability of the Graph API or the behavior of other apps using the Graph API;
+    vi)	Use an unreasonable amount of bandwidth, or adversely impact the stability of the Graph API or the behavior of other apps using the Graph API;
 
-        vii)	Attempt to circumvent the limitations Microsoft sets on your use of the Graph API.  Microsoft sets and enforces limits on your use of the Graph API (e.g., limiting the number of API requests that you may make or the number of user you may serve), in its sole discretion;
+    vii)	Attempt to circumvent the limitations Microsoft sets on your use of the Graph API.  Microsoft sets and enforces limits on your use of the Graph API (e.g., limiting the number of API requests that you may make or the number of user you may serve), in its sole discretion;
 
-        viii)	Use Graph API in any manner that works around any technical limitations of the Graph API or of the accessed Microsoft Offering, or reverse engineer, decompile or disassemble the Graph API, except and only to the extent that applicable law expressly permits, despite this limitation;
+    viii)	Use Graph API in any manner that works around any technical limitations of the Graph API or of the accessed Microsoft Offering, or reverse engineer, decompile or disassemble the Graph API, except and only to the extent that applicable law expressly permits, despite this limitation;
 
-        ix)	Use the Graph API, or any data obtained using the Graph API, to conduct performance testing of a Microsoft Offering unless expressly permitted by Microsoft;
+    ix)	Use the Graph API, or any data obtained using the Graph API, to conduct performance testing of a Microsoft Offering unless expressly permitted by Microsoft;
 
-        x)	Use the Graph API, or any data obtained using the Graph API, to identify, exploit or publicly disclose any potential security vulnerabilities;
+    x)	Use the Graph API, or any data obtained using the Graph API, to identify, exploit or publicly disclose any potential security vulnerabilities;
 
-        xi)	Request or make available any data obtained using the Graph API outside any permissions expressly granted by Customers in connection with using your Application;
+    xi)	Request or make available any data obtained using the Graph API outside any permissions expressly granted by Customers in connection with using your Application;
 
-        xii)	Use any data accessed or obtained using the Graph API for advertising or marketing purposes other than in connection with your Application;
+    xii)	Use any data accessed or obtained using the Graph API for advertising or marketing purposes other than in connection with your Application;
 
-        xiii)	Make your Application available for use in a manner that circumvents the need for users to obtain a valid license to the Microsoft application or service that is accessed through the Graph API;
+    xiii)	Make your Application available for use in a manner that circumvents the need for users to obtain a valid license to the Microsoft application or service that is accessed through the Graph API;
 
-        xiv)	Redistribute or resell, or sublicense access to, the Graph API, any data obtained using the Graph API, or any other Microsoft Offering accessed through the Graph API; or
+    xiv)	Redistribute or resell, or sublicense access to, the Graph API, any data obtained using the Graph API, or any other Microsoft Offering accessed through the Graph API; or
 
-        xv)	Misrepresent expressly, by omission, or implication, the need for users to obtain a valid license to the Microsoft application or service that is accessed through the Graph API;
+    xv)	Misrepresent expressly, by omission, or implication, the need for users to obtain a valid license to the Microsoft application or service that is accessed through the Graph API;
 
         xvi)	Falsify or alter any unique referral identifier in, or assigned to an Application, or otherwise obscure or alter the source of queries coming from an Application to hide a violation of this agreement; or
 
