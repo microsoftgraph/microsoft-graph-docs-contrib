@@ -13,6 +13,7 @@ By accessing or using the Microsoft Graph API, including within a software appli
     b)	“**Graph API**” means (i) any form of machine accessible application programming interface that Microsoft makes publicly available and designates as the “Microsoft Graph API”, or is directly accessible through the Microsoft Graph API, which provides access to a Microsoft Offering, including all associated tools, elements, components and executables therein, (ii) any Microsoft sample code that enables interactions with a Microsoft Offering, and (iii) documentation that Microsoft makes available to help enable your access to the Graph API.
 
 2.	**Scope and Application Registration**
+
     a)	These API Terms govern your use of the Graph API, unless you have entered another agreement with Microsoft that expressly supersedes these API Terms and governs your use of the Graph API.  
 
     b)	In order to use the Graph API, you must register your Application with Microsoft.  Your registration must be accurate and kept up-to-date by you at all times.  Once you have successfully registered an Application, you will be given access credentials for your Application.  “Access Credentials” means the necessary security keys, secrets, tokens, and other credentials to access the Graph API.  The Access Credentials enable us to associate your Application with your use of the Graph API.  All activities that occur using your Access Credentials are your responsibility.  Access Credentials are non-transferable and non-assignable.  Keep them secret.  Do not try to circumvent them.  
@@ -21,7 +22,7 @@ By accessing or using the Microsoft Graph API, including within a software appli
 
     a)	**Graph API License**
 
-        Subject to your compliance with all of the API Terms, Microsoft grants you a limited, non-exclusive, non-assignable, non-transferable, revocable license to use the Graph API to develop, test, and support your Application, and allow Customers to use your integration of the Graph API within your Application. You may use the Graph API only as expressly permitted in these API Terms.  Violation of these API Terms may result in the suspension or termination of your use of the Graph API.
+        <p>Subject to your compliance with all of the API Terms, Microsoft grants you a limited, non-exclusive, non-assignable, non-transferable, revocable license to use the Graph API to develop, test, and support your Application, and allow Customers to use your integration of the Graph API within your Application. You may use the Graph API only as expressly permitted in these API Terms.  Violation of these API Terms may result in the suspension or termination of your use of the Graph API.</p>
 
     b)	**Graph API Guidelines**
 
