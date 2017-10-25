@@ -67,7 +67,7 @@ Here is a JSON representation of the resource
   "guestSettings": {
     "allowCreateUpdateChannels": true,
     "allowDeleteChannels": true 
-  }
+  },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
