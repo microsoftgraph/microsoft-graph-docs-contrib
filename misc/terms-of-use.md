@@ -4,13 +4,13 @@ Last revised in September 2017
 
 Thank you for developing with Microsoft!
 
-By accessing or using the Microsoft Graph API, including within a software application, website, tool, or product you create or a service you offer (your “**Application**”), you are agreeing to these terms and to comply with any accompanying documentation that applies to your use of the Graph API (“**API Terms**”) with Microsoft Corporation (“**Microsoft**”, “**we**”, “**us**”, or “**our**”).   You represent and warrant to us that you have the authority to accept these API Terms on behalf of yourself, a company, and/or other entity, as applicable. We may change, amend or terminate these API Terms at any time. **Your use of the Graph API after any change or amendment means you agree to the new API Terms. If you do not agree to the new API Terms or if we terminate these API Terms, you must stop using the Graph API.**  
+By accessing or using the Microsoft Graph API, including within a software application, website, tool, or product you create or a service you offer (your “<b>Application</b>v”), you are agreeing to these terms and to comply with any accompanying documentation that applies to your use of the Graph API (“<b>API Terms</b>”) with Microsoft Corporation (“<b>Microsoft</b>”, “<b>we</b>”, “<b>us</b>”, or “<b>our</b>”). You represent and warrant to us that you have the authority to accept these API Terms on behalf of yourself, a company, and/or other entity, as applicable. We may change, amend or terminate these API Terms at any time. <b>Your use of the Graph API after any change or amendment means you agree to the new API Terms. If you do not agree to the new API Terms or if we terminate these API Terms, you must stop using the Graph API.</b>  
 
 #### 1.	**Defined Terms**
 
-a) “**Customer(s)**” means the licensee of a Microsoft service or application (“**Microsoft Offering**”) and if the licensee is an organization, includes their administrators and end users.
+a) “<b>Customer(s)</b>” means the licensee of a Microsoft service or application (“<b>Microsoft Offering</b>”) and if the licensee is an organization, includes their administrators and end users.
 
-b) “**Graph API**” means (i) any form of machine accessible application programming interface that Microsoft makes publicly available and designates as the “Microsoft Graph API”, or is directly accessible through the Microsoft Graph API, which provides access to a Microsoft Offering, including all associated tools, elements, components and executables therein, (ii) any Microsoft sample code that enables interactions with a Microsoft Offering, and (iii) documentation that Microsoft makes available to help enable your access to the Graph API.
+b) “<b>Graph API</b>” means (i) any form of machine accessible application programming interface that Microsoft makes publicly available and designates as the “Microsoft Graph API”, or is directly accessible through the Microsoft Graph API, which provides access to a Microsoft Offering, including all associated tools, elements, components and executables therein, (ii) any Microsoft sample code that enables interactions with a Microsoft Offering, and (iii) documentation that Microsoft makes available to help enable your access to the Graph API.
 
 #### 2.	**Scope and Application Registration**
 
@@ -88,7 +88,7 @@ When your Application or services access the Graph API for Intune using a Post c
 
 #### 4.	**Security** 
 
-You warrant that your Application has been developed to operate with the Graph API content in a secure manner. Your network, operating system and the software of your servers, databases, and computer systems (collectively, “**Systems**”) must be properly configured to securely operate your Application and store content collected through your Application (including the Graph API content). Your Application must use reasonable security measures to protect the private data of your users.
+You warrant that your Application has been developed to operate with the Graph API content in a secure manner. Your network, operating system and the software of your servers, databases, and computer systems (collectively, “<b>Systems</b>”) must be properly configured to securely operate your Application and store content collected through your Application (including the Graph API content). Your Application must use reasonable security measures to protect the private data of your users.
 
 We may use technology to detect, prevent or limit the impact of any issues caused by your Application (before or instead of suspension of your access). This may include, for example, filtering to stop spam or limiting your access to the Graph API.
 
@@ -116,7 +116,7 @@ If you give feedback about the Graph API to Microsoft, you give to Microsoft, wi
 
 #### 8.	**Confidentiality**
 
-You may be given access to certain non-public information, software, and specifications relating to the Graph API (“**Confidential Information**”), which is confidential and proprietary to Microsoft. You may use Confidential Information only as necessary in exercising your rights granted under these API Terms. You may not disclose any Confidential Information to any third party without Microsoft’s prior written consent. You agree that you will protect any Confidential Information from unauthorized use, access, or disclosure in the same manner that you would use to protect your own confidential and proprietary information.
+You may be given access to certain non-public information, software, and specifications relating to the Graph API (“<b>Confidential Information</b>”), which is confidential and proprietary to Microsoft. You may use Confidential Information only as necessary in exercising your rights granted under these API Terms. You may not disclose any Confidential Information to any third party without Microsoft’s prior written consent. You agree that you will protect any Confidential Information from unauthorized use, access, or disclosure in the same manner that you would use to protect your own confidential and proprietary information.
 
 #### 9.	**Disclaimer of Warranties, Limitation of Liability and Indemnity**
 
