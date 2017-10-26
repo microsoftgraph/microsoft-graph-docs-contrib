@@ -1,8 +1,7 @@
-# reportRoot: getOffice365GroupsActivityUserDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get details about Office 365 Groups activity by user.
+Get details about Office 365 Groups activity by group.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
@@ -21,8 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } --> 
 
 ```http
-GET /reports/getOffice365GroupsActivityUserDetail(period='{period_value}')
-GET /reports/getOffice365GroupsActivityUserDetail(date={date_value})
 ```
 
 ## Request parameters
@@ -81,7 +78,6 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityUserDetail(period='D7')
 ```
 
 #### Response

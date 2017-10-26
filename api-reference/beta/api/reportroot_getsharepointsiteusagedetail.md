@@ -1,10 +1,10 @@
-# reportRoot: getYammerGroupsActivityUserDetail
+# reportRoot: getSharePointSiteUsageDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get details about Yammer groups activity by user.
+Get details about SharePoint site usage.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
+> **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
 ## Permissions
 
@@ -21,8 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } --> 
 
 ```http
-GET /reports/getYammerGroupsActivityUserDetail(period='{period_value}')
-GET /reports/getYammerGroupsActivityUserDetail(date={date_value})
+GET /reports/getSharePointSiteUsageDetail(period='{period_value}')
+GET /reports/getSharePointSiteUsageDetail(date={date_value})
 ```
 
 ## Request parameters
@@ -51,16 +51,17 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Group Display Name
+- Site URL
+- Owner Display Name
 - Is Deleted
-- Owner Principal Name
 - Last Activity Date
-- Group Type
-- Office 365 Connected
-- Member Count
-- Posted Count
-- Read Count
-- Liked Count
+- File Count
+- Active File Count
+- Page View Count
+- Visited Page Count
+- Storage Used (Byte)
+- Storage Allocated (Byte)
+- Root Web Template
 - Report Period
 
 ## Example
@@ -71,11 +72,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getyammergroupsactivityuserdetail"
+  "name": "reportroot_getsharepointsiteusageuserdetail"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityUserDetail(period='D7')
+GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period='D7')
 ```
 
 #### Response
@@ -102,5 +103,5 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Office 365 Connected,Member Count,Posted Count,Read Count,Liked Count,Report Period
+Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
 ```
