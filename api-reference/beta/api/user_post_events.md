@@ -44,11 +44,12 @@ Since the **event** resource supports [extensions](../../../concepts/extensibili
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
 
 ## Example
 ##### Request 1
-Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response to use that time zone.
+Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** 
+times in the response.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -403,7 +404,7 @@ Content-type: application/json
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon time work for you?"
   },
   "start": {
       "dateTime": "2017-09-04T12:00:00",
