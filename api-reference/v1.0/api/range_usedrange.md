@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/UsedRange
-GET /workbook/worksheets/{id|name}/range(<address>)/UsedRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/UsedRange
 GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 
 ```
@@ -32,7 +32,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
