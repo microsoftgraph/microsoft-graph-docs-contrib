@@ -4,13 +4,13 @@ Last revised in October 2017
 
 Thank you for developing with Microsoft!
 
-By accessing or using the Microsoft Graph API, including within a software application, website, tool, or product you create or a service you offer (your “**Application**”), you are agreeing to these terms and to comply with any accompanying documentation that applies to your use of the Graph API (“**API Terms**”) with Microsoft Corporation (“**Microsoft**”, “**we**”, “**us**”, or “**our**”).   You represent and warrant to us that you have the authority to accept these API Terms on behalf of yourself, a company, and/or other entity, as applicable. We may change, amend or terminate these API Terms at any time. <b>Your use of the Graph API after any change or amendment means you agree to the new API Terms. If you do not agree to the new API Terms or if we terminate these API Terms, you must stop using the Graph API.</b>  
+By accessing or using the Microsoft Graph API, including within a software application, website, tool, or product you create or a service you offer (your “<b>Application</b>”), you are agreeing to these terms and to comply with any accompanying documentation that applies to your use of the Graph API (“<b>API Terms</b>”) with Microsoft Corporation (“<b>Microsoft</b>”, “<b>we</b>”, “<b>us</b>”, or “<b>our</b>”). You represent and warrant to us that you have the authority to accept these API Terms on behalf of yourself, a company, and/or other entity, as applicable. We may change, amend or terminate these API Terms at any time. <b>Your use of the Graph API after any change or amendment means you agree to the new API Terms. If you do not agree to the new API Terms or if we terminate these API Terms, you must stop using the Graph API.</b>  
 
 #### 1.	**Defined Terms**
 
-a) “**Customer(s)**” means the licensee of a Microsoft service or application (“**Microsoft Offering**”) and if the licensee is an organization, includes their administrators and end users.
+a) “<b>Customer(s)</b>” means the licensee of a Microsoft service or application (“<b>Microsoft Offering</b>”) and if the licensee is an organization, includes their administrators and end users.
 
-b) “**Graph API**” means (i) any form of machine accessible application programming interface that Microsoft makes publicly available and designates as the “Microsoft Graph API”, or is directly accessible through the Microsoft Graph API, which provides access to a Microsoft Offering, including all associated tools, elements, components and executables therein, (ii) any Microsoft sample code that enables interactions with a Microsoft Offering, and (iii) documentation that Microsoft makes available to help enable your access to the Graph API.
+b) “<b>Graph API</b>” means (i) any form of machine accessible application programming interface that Microsoft makes publicly available and designates as the “Microsoft Graph API”, or is directly accessible through the Microsoft Graph API, which provides access to a Microsoft Offering, including all associated tools, elements, components and executables therein, (ii) any Microsoft sample code that enables interactions with a Microsoft Offering, and (iii) documentation that Microsoft makes available to help enable your access to the Graph API.
 
 #### 2.	**Scope and Application Registration**
 
@@ -72,7 +72,7 @@ You may NOT:
 
 	5. Violating applicable privacy laws and regulations.
 
-c)	**Accessing the Microsoft Intune through Graph API**
+c) **Accessing the Microsoft Intune through Graph API**
         
 When your Application or services access the Graph API for Intune using a Post command as documented at developer.microsoft.com/en-us/graph/docs you must include: 
 
@@ -80,15 +80,17 @@ When your Application or services access the Graph API for Intune using a Post c
 
 2. In your Application and services’ marketing material and product documentation that references functionality enabled by your Application or service’s access to Microsoft Intune® through the Microsoft Graph API: 
 
-	- The attribution “Powered by Microsoft Intune®” displayed in a manner consistent with the [Microsoft Trademark & Brand Guidelines](https://aka.ms/trademarks-usage), and 
 
-	- A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.
+   - The attribution “Powered by Microsoft Intune®” displayed in a manner consistent with the [Microsoft Trademark & Brand Guidelines](https://aka.ms/trademarks-usage), and
 
-	- In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Powered by Microsoft Intune®” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the [Microsoft Trademark & Brand Guidelines](https://aka.ms/trademarks-usage).
+   - A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.
+
+   - In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Powered by Microsoft Intune®” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the [Microsoft Trademark & Brand Guidelines](https://aka.ms/trademarks-usage).
+
 
 #### 4.	**Security** 
 
-You warrant that your Application has been developed to operate with the Graph API content in a secure manner. Your network, operating system and the software of your servers, databases, and computer systems (collectively, “**Systems**”) must be properly configured to securely operate your Application and store content collected through your Application (including the Graph API content). Your Application must use reasonable security measures to protect the private data of your users.
+You warrant that your Application has been developed to operate with the Graph API content in a secure manner. Your network, operating system and the software of your servers, databases, and computer systems (collectively, “<b>Systems</b>”) must be properly configured to securely operate your Application and store content collected through your Application (including the Graph API content). Your Application must use reasonable security measures to protect the private data of your users.
 
 We may use technology to detect, prevent or limit the impact of any issues caused by your Application (before or instead of suspension of your access). This may include, for example, filtering to stop spam or limiting your access to the Graph API.
 
@@ -98,17 +100,17 @@ In the event of a data breach by you resulting from any aspect of the Graph API 
 
 #### 5.	**Deletion of Customer Data; Your compliance with Privacy and Data Protection Laws**
 
-a)	You must delete all Customer data collected through the Graph API when the Customer uninstalls your Application or when the Customer closes its account with you.
+a) You must delete all Customer data collected through the Graph API when the Customer uninstalls your Application or when the Customer closes its account with you.
 
-b)	You must comply with all laws and regulations applicable to your use of the data accessed through Graph API, including without limitation laws related to privacy, biometric data, data protection and confidentiality of communications. You are responsible for (i) implementing and maintaining privacy protections and measures for your service and Application, including necessary consents for use of data, and (ii) maintaining a written statement available to Customers and users that describe your privacy practices regarding data and information you collect and use, which must be as protective as Microsoft’s privacy polices applicable to the Graph API or the Microsoft Offerings.  
+b) You must comply with all laws and regulations applicable to your use of the data accessed through Graph API, including without limitation laws related to privacy, biometric data, data protection and confidentiality of communications. You are responsible for (i) implementing and maintaining privacy protections and measures for your service and Application, including necessary consents for use of data, and (ii) maintaining a written statement available to Customers and users that describe your privacy practices regarding data and information you collect and use, which must be as protective as Microsoft’s privacy polices applicable to the Graph API or the Microsoft Offerings.  
 
 #### 6.	**Changes to the Graph API and API Terms**
 
-**WE MAY CHANGE OR DISCONTINUE THE AVAILABILITY OF SOME OR ALL OF THE GRAPH API AT ANY TIME FOR ANY REASON WITH OR WITHOUT NOTICE.** Such changes may include, without limitation, removing or limiting access to specific API(s), requiring fees or setting and enforcing limits on your use of additions to the Graph API. We may also impose limits on certain features and services or restrict your access to some or all of the Graph API. We may release subsequent versions of the Graph API and require that you use those subsequent versions, at your sole cost and expense. 
+<b>WE MAY CHANGE OR DISCONTINUE THE AVAILABILITY OF SOME OR ALL OF THE GRAPH API AT ANY TIME FOR ANY REASON WITH OR WITHOUT NOTICE.</b> Such changes may include, without limitation, removing or limiting access to specific API(s), requiring fees or setting and enforcing limits on your use of additions to the Graph API. We may also impose limits on certain features and services or restrict your access to some or all of the Graph API. We may release subsequent versions of the Graph API and require that you use those subsequent versions, at your sole cost and expense. 
 
 Any version of the Graph API designated as “preview”, “pre-release” or “beta” (“**Preview API**”), may not work in the same way as a final version. Preview APIs may employ lesser or different privacy or security measures than those typically present in the Graph API. We may change or not release a final or commercial version of a Preview API in our sole discretion. 
 
-**WE MAY MODIFY THESE API TERMS AT ANY TIME, WITH OR WITHOUT PRIOR NOTICE TO YOU. YOUR CONTINUED USE OF THE GRAPH API FOLLOWING THE RELEASE OF A SUBSEQUENT VERSION OF THESE API TERMS WILL BE DEEMED YOUR ACCEPTANCE OF ANY MODIFICATIONS TO THESE API TERMS.**
+<b>WE MAY MODIFY THESE API TERMS AT ANY TIME, WITH OR WITHOUT PRIOR NOTICE TO YOU. YOUR CONTINUED USE OF THE GRAPH API FOLLOWING THE RELEASE OF A SUBSEQUENT VERSION OF THESE API TERMS WILL BE DEEMED YOUR ACCEPTANCE OF ANY MODIFICATIONS TO THESE API TERMS.</b>
 
 #### 7.	**Feedback**
 
@@ -116,17 +118,17 @@ If you give feedback about the Graph API to Microsoft, you give to Microsoft, wi
 
 #### 8.	**Confidentiality**
 
-You may be given access to certain non-public information, software, and specifications relating to the Graph API (“**Confidential Information**”), which is confidential and proprietary to Microsoft. You may use Confidential Information only as necessary in exercising your rights granted under these API Terms. You may not disclose any Confidential Information to any third party without Microsoft’s prior written consent. You agree that you will protect any Confidential Information from unauthorized use, access, or disclosure in the same manner that you would use to protect your own confidential and proprietary information.
+You may be given access to certain non-public information, software, and specifications relating to the Graph API (“<b>Confidential Information</b>”), which is confidential and proprietary to Microsoft. You may use Confidential Information only as necessary in exercising your rights granted under these API Terms. You may not disclose any Confidential Information to any third party without Microsoft’s prior written consent. You agree that you will protect any Confidential Information from unauthorized use, access, or disclosure in the same manner that you would use to protect your own confidential and proprietary information.
 
 #### 9.	**Disclaimer of Warranties, Limitation of Liability and Indemnity**
 
 a)	**Disclaimer of Warranties**
 
-**WE MAKE NO WARRANTIES, EXPRESS OR IMPLIED, GUARANTEES OR CONDITIONS WITH RESPECT TO YOUR USE OF THE GRAPH API. YOU UNDERSTAND THAT USE OF THE GRAPH API IS AT YOUR OWN RISK AND THAT WE PROVIDE THE GRAPH API ON AN “AS IS” BASIS “WITH ALL FAULTS” AND "AS AVAILABLE." TO THE EXTENT PERMITTED UNDER YOUR LOCAL LAW, WE EXCLUDE ANY IMPLIED WARRANTIES, INCLUDING FOR MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, WORKMANLIKE EFFORT, AND NON-INFRINGEMENT. YOU MAY HAVE CERTAIN RIGHTS UNDER YOUR LOCAL LAW. NOTHING IN THESE API TERMS ARE INTENDED TO AFFECT THOSE RIGHTS, IF THEY ARE APPLICABLE. WE DO NOT GUARANTEE THE GRAPH API WILL FUNCTION WITHOUT INTERRUPTION OR ERRORS IN FUNCTIONING. IN PARTICULAR, THE OPERATION OF THE GRAPH API MAY BE INTERRUPTED DUE TO MAINTENANCE, UPDATES, OR SYSTEM OR NETWORK FAILURES. WE DISCLAIM ALL LIABILITY FOR DAMAGES CAUSED BY ANY SUCH INTERRUPTION, ERRORS IN FUNCTIONING, OR THAT DATA LOSS WILL NOT OCCUR.**
+<b>WE MAKE NO WARRANTIES, EXPRESS OR IMPLIED, GUARANTEES OR CONDITIONS WITH RESPECT TO YOUR USE OF THE GRAPH API. YOU UNDERSTAND THAT USE OF THE GRAPH API IS AT YOUR OWN RISK AND THAT WE PROVIDE THE GRAPH API ON AN “AS IS” BASIS “WITH ALL FAULTS” AND "AS AVAILABLE." TO THE EXTENT PERMITTED UNDER YOUR LOCAL LAW, WE EXCLUDE ANY IMPLIED WARRANTIES, INCLUDING FOR MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, WORKMANLIKE EFFORT, AND NON-INFRINGEMENT. YOU MAY HAVE CERTAIN RIGHTS UNDER YOUR LOCAL LAW. NOTHING IN THESE API TERMS ARE INTENDED TO AFFECT THOSE RIGHTS, IF THEY ARE APPLICABLE. WE DO NOT GUARANTEE THE GRAPH API WILL FUNCTION WITHOUT INTERRUPTION OR ERRORS IN FUNCTIONING. IN PARTICULAR, THE OPERATION OF THE GRAPH API MAY BE INTERRUPTED DUE TO MAINTENANCE, UPDATES, OR SYSTEM OR NETWORK FAILURES. WE DISCLAIM ALL LIABILITY FOR DAMAGES CAUSED BY ANY SUCH INTERRUPTION, ERRORS IN FUNCTIONING, OR THAT DATA LOSS WILL NOT OCCUR.</b>
 
 b)	**Limitation of Liability**
 
-**IF YOU HAVE ANY BASIS FOR RECOVERING DAMAGES (INCLUDING BREACH OF THESE API TERMS), YOU AGREE THAT YOUR EXCLUSIVE REMEDY IS TO RECOVER, FROM MICROSOFT OR ANY AFFILIATES, RESELLERS, DISTRIBUTORS, SUPPLIERS (AND RESPECTIVE EMPLOYEES, SHAREHOLDERS, OR DIRECTORS) AND VENDORS, ONLY DIRECT DAMAGES UP TO USD $5.00 COLLECTIVELY. YOU CAN'T RECOVER ANY OTHER DAMAGES OR LOSSES, INCLUDING, WITHOUT LIMITATION, DIRECT, CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT, INCIDENTAL, OR PUNITIVE.** These limitations and exclusions apply even if this remedy doesn't fully compensate you for any losses or fails of its essential purpose or if we knew or should have known about the possibility of the damages. To the maximum extent permitted by law, these limitations and exclusions apply to any claims related to these API Terms or your use of the Graph API.
+<b>IF YOU HAVE ANY BASIS FOR RECOVERING DAMAGES (INCLUDING BREACH OF THESE API TERMS), YOU AGREE THAT YOUR EXCLUSIVE REMEDY IS TO RECOVER, FROM MICROSOFT OR ANY AFFILIATES, RESELLERS, DISTRIBUTORS, SUPPLIERS (AND RESPECTIVE EMPLOYEES, SHAREHOLDERS, OR DIRECTORS) AND VENDORS, ONLY DIRECT DAMAGES UP TO USD $5.00 COLLECTIVELY. YOU CAN'T RECOVER ANY OTHER DAMAGES OR LOSSES, INCLUDING, WITHOUT LIMITATION, DIRECT, CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT, INCIDENTAL, OR PUNITIVE.</b> These limitations and exclusions apply even if this remedy doesn't fully compensate you for any losses or fails of its essential purpose or if we knew or should have known about the possibility of the damages. To the maximum extent permitted by law, these limitations and exclusions apply to any claims related to these API Terms or your use of the Graph API.
 
 c)	**Indemnification**
 
