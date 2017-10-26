@@ -323,6 +323,8 @@
       <Item text="Get range" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
       <Item text="List rows" url="/en-us/api-reference/v1.0/api/table_list_rows" SEOKeyword="" SEODescription="" />
       <Item text="List columns" url="/en-us/api-reference/v1.0/api/table_list_columns" SEOKeyword="" SEODescription="" />
+	  <Item text="Create table row" url="/en-us/api-reference/v1.0/api/table_post_rows" />
+	  <Item text="Create table column" url="/en-us/api-reference/v1.0/api/table_post_columns" />
     </Item>
     <Item text="Chart" url="/en-us/api-reference/v1.0/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
       <Item text="Get chart" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
@@ -1017,6 +1019,13 @@
         <Item text="Get unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve an unfamiliarLocationRiskEvent object." />
       </Item>
     </Item>
+      <Item text="Identity provider" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
+        <Item text="List identity providers" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
+        <Item text="Create identity provider" url="/en-us/api-reference/beta/api/identityprovider_post_identityproviders" SEODescription="Create a new identityProvider." />
+        <Item text="Get identity provider" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="Get an identityProvider by id." />
+        <Item text="Upate identity provider" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="Update the properties of an identityProvider." />
+        <Item text="Delete identity provider" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="Delete an existing identityProvider." />
+      </Item>
       <Item text="Invitation manager" url="/en-us/api-reference/beta/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
         <Item text="Create invitation" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
       </Item>
@@ -1106,6 +1115,8 @@
         <Item text="Get range" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
         <Item text="List rows" url="/en-us/api-reference/beta/api/table_list_rows" SEOKeyword="" SEODescription="" />
         <Item text="List columns" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+		<Item text="Create table row" url="/en-us/api-reference/beta/api/table_post_rows" />
+	    <Item text="Create table column" url="/en-us/api-reference/beta/api/table_post_columns" />
       </Item>
       <Item text="Chart" url="/en-us/api-reference/beta/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="Get chart" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
@@ -4051,26 +4062,104 @@
 		</Item>
 	</Item>
 	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
-      <Item text="Office 365 usage reports" url="/en-us/api-reference/beta/resources/report" >
-		  <Item text="Get email activity report" url="/en-us/api-reference/beta/api/reportroot_emailactivity" SEOKeyword="Get Email Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Exchange Email Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get email app usage report" url="/en-us/api-reference/beta/api/reportroot_emailappusage" SEOKeyword="Get Email App Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Email App Usage reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get mailbox usage report" url="/en-us/api-reference/beta/api/reportroot_mailboxusage" SEOKeyword="Get Mailbox Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Mailbox Usage reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Office 365 activations report" url="/en-us/api-reference/beta/api/reportroot_office365activations" SEOKeyword="Get Office 365 Activations report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Activations reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Office 365 active users report" url="/en-us/api-reference/beta/api/reportroot_office365activeusers" SEOKeyword="Get Office 365 Active Users report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Active Users reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Office 365 groups activity report" url="/en-us/api-reference/beta/api/reportroot_office365groupsactivity" SEOKeyword="Get Office 365 Groups Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Office 365 Groups Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get OneDrive activity report" url="/en-us/api-reference/beta/api/reportroot_onedriveactivity" SEOKeyword="Get OneDrive Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the OneDrive Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get OneDrive usage report" url="/en-us/api-reference/beta/api/reportroot_onedriveusage" SEOKeyword="Get OneDrive Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the OneDrive Usage reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Skype for Business activity report" url="/en-us/api-reference/beta/api/reportroot_sfbactivity" SEOKeyword="Get Skype for Business User Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business User Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Skype for Business device usage report" url="/en-us/api-reference/beta/api/reportroot_sfbdeviceusage" SEOKeyword="Get Skype for Business Device Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Device Usage reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Skype for Business organizer activity report" url="/en-us/api-reference/beta/api/reportroot_sfborganizeractivity" SEOKeyword="Get Skype for Business Organizer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Organizer Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Skype for Business participant activity report" url="/en-us/api-reference/beta/api/reportroot_sfbparticipantactivity" SEOKeyword="Get Skype for Business Participant Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Participant Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Skype for Business peer to peer activity report" url="/en-us/api-reference/beta/api/reportroot_sfbp2pactivity" SEOKeyword="Get Skype for Business Peer to Peer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Skype for Business Peer to Peer Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get SharePoint activity report" url="/en-us/api-reference/beta/api/reportroot_sharepointactivity" SEOKeyword="Get SharePoint Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the SharePoint Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get SharePoint site usage report" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="Get SharePoint Site Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the SharePoint Site Usage reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Yammer activity report" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Get Yammer Activity report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Activity reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Yammer device usage report" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Get Yammer Device Usage report, Microsoft Graph API, Report API" SEODescription="Retrieve the Yammer Device Usage reports. The response will be a CSV file in a binary stream." />
-		  <Item text="Get Yammer groups activity report" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="Retrieve the Yammer groups activity report." />
-		</Item>
+	  <Item text="Outlook activity" url="/en-us/api-reference/beta/resources/email_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Outlook app usage" url="/en-us/api-reference/beta/resources/email_app_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailappusageuserdetail" />
+		<Item text="Get apps user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageusercounts" />
+		<Item text="Get versions user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Outlook mailbox usage" url="/en-us/api-reference/beta/resources/mailbox_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getmailboxusageuserdetail" />
+		<Item text="Get mailbox counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="Get quota mailbox status counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotamailboxstatuscounts" />
+		<Item text="Get  storage" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Office 365 activations" url="/en-us/api-reference/beta/resources/office_365_activations_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="Get activation counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationcounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Office 365 active users" url="/en-us/api-reference/beta/resources/office_365_active_users_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365activeusercounts" />
+		<Item text="Get services user counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Office 365 groups activity" url="/en-us/api-reference/beta/resources/office_365_groups_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="Get group counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive activity" url="/en-us/api-reference/beta/resources/onedrive_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive usage" url="/en-us/api-reference/beta/resources/onedrive_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageuserdetail" />
+		<Item text="Get account counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="SharePoint activity" url="/en-us/api-reference/beta/resources/sharepoint_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="Get pages" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="SharePoint site usage" url="/en-us/api-reference/beta/resources/sharepoint_site_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusageuserdetail" />
+		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="Get site counts" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="Get pages" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Skype for Business activity" url="/en-us/api-reference/beta/resources/skype_for_business_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Skype for Business device usage" url="/en-us/api-reference/beta/resources/skype_for_business_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Skype for Business organizer activity" url="/en-us/api-reference/beta/resources/skype_for_business_organizer_activity_reports" >
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business participant activity" url="/en-us/api-reference/beta/resources/skype_for_business_participant_activity_reports" >
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business peer-to-peer activity" url="/en-us/api-reference/beta/resources/skype_for_business_peer_to_peer_activity" >
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Yammer activity" url="/en-us/api-reference/beta/resources/yammer_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getyammeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Yammer device usage" url="/en-us/api-reference/beta/resources/yammer_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Yammer groups activity" url="/en-us/api-reference/beta/resources/yammer_groups_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivityuserdetail" />
+		<Item text="Get group counts" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
 	</Item>
     <Item text="Schema Extensions" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
       <Item text="List schema extensions" url="/en-us/api-reference/beta/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
