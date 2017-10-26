@@ -1019,6 +1019,13 @@
         <Item text="Get unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve an unfamiliarLocationRiskEvent object." />
       </Item>
     </Item>
+      <Item text="Identity provider" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
+        <Item text="List identity providers" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
+        <Item text="Create identity provider" url="/en-us/api-reference/beta/api/identityprovider_post_identityproviders" SEODescription="Create a new identityProvider." />
+        <Item text="Get identity provider" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="Get an identityProvider by id." />
+        <Item text="Upate identity provider" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="Update the properties of an identityProvider." />
+        <Item text="Delete identity provider" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="Delete an existing identityProvider." />
+      </Item>
       <Item text="Invitation manager" url="/en-us/api-reference/beta/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
         <Item text="Create invitation" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
       </Item>
@@ -1108,8 +1115,8 @@
         <Item text="Get range" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
         <Item text="List rows" url="/en-us/api-reference/beta/api/table_list_rows" SEOKeyword="" SEODescription="" />
         <Item text="List columns" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
-		<Item text="Create table row" url="/en-us/api-reference/v1.0/api/table_post_rows" />
-	    <Item text="Create table column" url="/en-us/api-reference/v1.0/api/table_post_columns" />
+		<Item text="Create table row" url="/en-us/api-reference/beta/api/table_post_rows" />
+	    <Item text="Create table column" url="/en-us/api-reference/beta/api/table_post_columns" />
       </Item>
       <Item text="Chart" url="/en-us/api-reference/beta/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="Get chart" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
@@ -4055,18 +4062,18 @@
 		</Item>
 	</Item>
 	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
-	  <Item text="Email activity" url="/en-us/api-reference/beta/resources/email_activity_reports" >
+	  <Item text="Outlook activity" url="/en-us/api-reference/beta/resources/email_activity_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivityusercounts" />
 	  </Item>
-	  <Item text="Email app usage" url="/en-us/api-reference/beta/resources/email_app_usage_reports" >
+	  <Item text="Outlook app usage" url="/en-us/api-reference/beta/resources/email_app_usage_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailappusageuserdetail" />
 		<Item text="Get apps user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageappsusercounts" />
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageusercounts" />
 		<Item text="Get versions user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
 	  </Item>
-	  <Item text="Mailbox usage" url="/en-us/api-reference/beta/resources/mailbox_usage_reports" >
+	  <Item text="Outlook mailbox usage" url="/en-us/api-reference/beta/resources/mailbox_usage_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getmailboxusageuserdetail" />
 		<Item text="Get mailbox counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
 		<Item text="Get quota mailbox status counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotamailboxstatuscounts" />
@@ -4114,7 +4121,7 @@
 		<Item text="Get pages" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagepages" />
 	  </Item>
 	  <Item text="Skype for Business activity" url="/en-us/api-reference/beta/resources/skype_for_business_activity_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivitycounts" />
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityusercounts" />
 	  </Item>
