@@ -35,12 +35,11 @@ GET /me/events
 
 This capability is available in only GET operations of:
 
-- Shared contact folders
-- Shared calendars
-- Contacts and events in shared folders
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
 - The above resources in delegated mailboxes
 
-This capability is not available in other operations for contacts, events, and their folders.
+This capability is not available in other operations for contacts, events, messages, and their folders.
 
 
 ### Support various time zones
@@ -225,9 +224,8 @@ The request also uses a `$select` query parameter to return specific properties.
   "name": "get_events_in_text"
 }-->
 ```http
-Prefer: outlook.body-content-type="text"
-
-GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview  
+GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
+Prefer: outlook.body-content-type="text" 
 ```
 ##### Response 2
 Here is an example of the response. The **body** property is returned in text format. 
