@@ -72,7 +72,7 @@ You may NOT:
 
 	5. Violating applicable privacy laws and regulations.
 
-c)	**Accessing the Microsoft Intune through Graph API**
+c) **Accessing the Microsoft Intune through Graph API**
         
 When your Application or services access the Graph API for Intune using a Post command as documented at developer.microsoft.com/en-us/graph/docs you must include: 
 
@@ -80,11 +80,13 @@ When your Application or services access the Graph API for Intune using a Post c
 
 2. In your Application and services’ marketing material and product documentation that references functionality enabled by your Application or service’s access to Microsoft Intune® through the Microsoft Graph API: 
 
-	- The attribution “Powered by Microsoft Intune®” displayed in a manner consistent with the [Microsoft Trademark & Brand Guidelines](https://aka.ms/trademarks-usage), and 
 
-	- A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.
+   - The attribution “Powered by Microsoft Intune®” displayed in a manner consistent with the [Microsoft Trademark & Brand Guidelines](https://aka.ms/trademarks-usage), and
 
-	- In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Powered by Microsoft Intune®” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the [Microsoft Trademark & Brand Guidelines](https://aka.ms/trademarks-usage).
+   - A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.
+
+   - In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Powered by Microsoft Intune®” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the [Microsoft Trademark & Brand Guidelines](https://aka.ms/trademarks-usage).
+
 
 #### 4.	**Security** 
 
@@ -98,9 +100,9 @@ In the event of a data breach by you resulting from any aspect of the Graph API 
 
 #### 5.	**Deletion of Customer Data; Your compliance with Privacy and Data Protection Laws**
 
-a)	You must delete all Customer data collected through the Graph API when the Customer uninstalls your Application or when the Customer closes its account with you.
+a) You must delete all Customer data collected through the Graph API when the Customer uninstalls your Application or when the Customer closes its account with you.
 
-b)	You must comply with all laws and regulations applicable to your use of the data accessed through Graph API, including without limitation laws related to privacy, biometric data, data protection and confidentiality of communications. You are responsible for (i) implementing and maintaining privacy protections and measures for your service and Application, including necessary consents for use of data, and (ii) maintaining a written statement available to Customers and users that describe your privacy practices regarding data and information you collect and use, which must be as protective as Microsoft’s privacy polices applicable to the Graph API or the Microsoft Offerings.  
+b) You must comply with all laws and regulations applicable to your use of the data accessed through Graph API, including without limitation laws related to privacy, biometric data, data protection and confidentiality of communications. You are responsible for (i) implementing and maintaining privacy protections and measures for your service and Application, including necessary consents for use of data, and (ii) maintaining a written statement available to Customers and users that describe your privacy practices regarding data and information you collect and use, which must be as protective as Microsoft’s privacy polices applicable to the Graph API or the Microsoft Offerings.  
 
 #### 6.	**Changes to the Graph API and API Terms**
 
