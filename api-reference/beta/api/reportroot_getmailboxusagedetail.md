@@ -1,3 +1,4 @@
+# reportRoot: getMailboxUsageDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -20,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } --> 
 
 ```http
+GET /reports/getMailboxUsageDetail(period='{period_value}')
 ```
 
 ## Request parameters
@@ -70,6 +72,7 @@ The following is an example of the request.
 }-->
 
 ```http
+GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')
 ```
 
 #### Response
