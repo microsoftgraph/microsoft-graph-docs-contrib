@@ -8,9 +8,9 @@ By accessing or using the Microsoft Graph API, including within a software appli
 
 #### 1.	**Defined Terms**
 
-a) “**Customer(s)**” means the licensee of a Microsoft service or application (“**Microsoft Offering**”) and if the licensee is an organization, includes their administrators and end users.
+a. “**Customer(s)**” means the licensee of a Microsoft service or application (“**Microsoft Offering**”) and if the licensee is an organization, includes their administrators and end users.
 
-b) “**Graph API**” means (i) any form of machine accessible application programming interface that Microsoft makes publicly available and designates as the “Microsoft Graph API”, or is directly accessible through the Microsoft Graph API, which provides access to a Microsoft Offering, including all associated tools, elements, components and executables therein, (ii) any Microsoft sample code that enables interactions with a Microsoft Offering, and (iii) documentation that Microsoft makes available to help enable your access to the Graph API.
+b. “**Graph API**” means (i) any form of machine accessible application programming interface that Microsoft makes publicly available and designates as the “Microsoft Graph API”, or is directly accessible through the Microsoft Graph API, which provides access to a Microsoft Offering, including all associated tools, elements, components and executables therein, (ii) any Microsoft sample code that enables interactions with a Microsoft Offering, and (iii) documentation that Microsoft makes available to help enable your access to the Graph API.
 
 #### 2.	**Scope and Application Registration**
 
