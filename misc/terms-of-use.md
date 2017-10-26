@@ -4,7 +4,7 @@ Last revised in October 2017
 
 Thank you for developing with Microsoft!
 
-By accessing or using the Microsoft Graph API, including within a software application, website, tool, or product you create or a service you offer (your “**Application**”), you are agreeing to these terms and to comply with any accompanying documentation that applies to your use of the Graph API (“**API Terms**”) with Microsoft Corporation (“**Microsoft**”, “**we**”, “**us**”, or “**our**”).   You represent and warrant to us that you have the authority to accept these API Terms on behalf of yourself, a company, and/or other entity, as applicable. We may change, amend or terminate these API Terms at any time. **Your use of the Graph API after any change or amendment means you agree to the new API Terms. If you do not agree to the new API Terms or if we terminate these API Terms, you must stop using the Graph API.**  
+By accessing or using the Microsoft Graph API, including within a software application, website, tool, or product you create or a service you offer (your “**Application**”), you are agreeing to these terms and to comply with any accompanying documentation that applies to your use of the Graph API (“**API Terms**”) with Microsoft Corporation (“**Microsoft**”, “**we**”, “**us**”, or “**our**”).   You represent and warrant to us that you have the authority to accept these API Terms on behalf of yourself, a company, and/or other entity, as applicable. We may change, amend or terminate these API Terms at any time. <b>Your use of the Graph API after any change or amendment means you agree to the new API Terms. If you do not agree to the new API Terms or if we terminate these API Terms, you must stop using the Graph API.</b>  
 
 #### 1.	**Defined Terms**
 
