@@ -6,6 +6,20 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2017
 
+### Azure AD APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added the [identityProvider](../api-reference/beta/resources/identityprovider.md) entity and the [create](../api-reference/beta/api/identityprovider_post_identityproviders.md), [list](../api-reference/beta/api/identityprovider_list.md), [get](../api-reference/beta/api/identityprovider_get.md), [update](../api-reference/beta/api/identityprovider_update.md), and [delete](../api-reference/beta/api/identityprovider_delete.md) operations.|
+
+### Outlook user choices
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition | Beta | Added the new **workingHours** property to [mailboxSettings](../api-reference/beta/resources/mailboxsettings.md). See [workingHours resource type](../api-reference/beta/resources/workinghours.md) for information on the supported use cases.|
+|Addition | Beta | Added the following new complex types: <br> [workingHours](../api-reference/beta/resources/workinghours.md) <br> [timeZoneBase](../api-reference/beta/resources/timezonebase.md) <br> [customTimeZone](../api-reference/beta/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/beta/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/beta/resources/daylighttimezoneoffset.md)|
+
+
 ### Reports APIs
 | Change type | Version | Description                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -28,11 +42,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change      | Beta    | Added the [getYammerDeviceUsageUserDetail](../api-reference/beta/api/reportroot_getyammerdeviceusageuserdetail.md), [getYammerDeviceUsageDistributionUserCounts](../api-reference/beta/api/reportroot_getyammerdeviceusagedistributionusercounts.md), and [getYammerDeviceUsageUserCounts](../api-reference/beta/api/reportroot_getyammerdeviceusageusercounts.md) APIs. These replaced the YammerDeviceUsage API. |
 | Change      | Beta    | Added the [getYammerGroupsActivityDetail](../api-reference/beta/api/reportroot_getyammergroupsactivitydetail.md), [getYammerGroupsActivityGroupCounts](../api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts.md), and [getYammerGroupsActivityCounts](../api-reference/beta/api/reportroot_getyammergroupsactivitycounts.md) APIs. These replaced the YammerGroupsActivity API. |
 
-### Azure AD APIs
 
-| Change type | Version | Description                              |
-| :---------- | :------ | :--------------------------------------- |
-| Addition    | Beta    | Added the [identityProvider](../api-reference/beta/resources/identityprovider.md) entity and the [create](../api-reference/beta/api/identityprovider_post_identityproviders.md), [list](../api-reference/beta/api/identityprovider_list.md), [get](../api-reference/beta/api/identityprovider_get.md), [update](../api-reference/beta/api/identityprovider_update.md), and [delete](../api-reference/beta/api/identityprovider_delete.md) operations. |
 
 ## September 2017
 
