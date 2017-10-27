@@ -4074,7 +4074,7 @@
 		<Item text="Get versions user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
 	  </Item>
 	  <Item text="Outlook mailbox usage" url="/en-us/api-reference/beta/resources/mailbox_usage_reports" >
-		<Item text="Get mailbox detail" url="/en-us/api-reference/beta/api/rreportroot_getmailboxusagedetail" />
+		<Item text="Get mailbox detail" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagedetail" />
 		<Item text="Get mailbox counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
 		<Item text="Get quota mailbox status counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotamailboxstatuscounts" />
 		<Item text="Get  storage" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagestorage" />
@@ -4102,7 +4102,7 @@
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityfilecounts" />
 	  </Item>
 	  <Item text="OneDrive usage" url="/en-us/api-reference/beta/resources/onedrive_usage_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageuserdetail" />
+		<Item text="Get account detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageuserdetail" />
 		<Item text="Get account counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountcounts" />
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagefilecounts" />
 		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagestorage" />
@@ -4114,7 +4114,7 @@
 		<Item text="Get pages" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivitypages" />
 	  </Item>
 	  <Item text="SharePoint site usage" url="/en-us/api-reference/beta/resources/sharepoint_site_usage_reports" >
-		<Item text="Get site detail" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagedetail.md" />
+		<Item text="Get site detail" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagedetail" />
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagefilecounts" />
 		<Item text="Get site counts" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagesitecounts" />
 		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagestorage" />
