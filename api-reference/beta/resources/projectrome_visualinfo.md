@@ -32,23 +32,21 @@ Here is a JSON representation of the resource
     "backgroundColor",
     "content"
   ],
-  "@odata.type": "microsoft.graph.visualInfo"
+  "@odata.type": "microsoft.graph.activity.visualinfo"
 }-->
 
 ```json
-{
-    "@data.type": "microsoft.graph.visualInfo",
+"visualElements": {
     "attribution": {
-        "@odata.type": "microsoft.graph.imageInfo",
         "iconUrl": "String (URL)",
         "alternativeText": "String",
-        "addImageQuery": "boolean"
+        "addImageQuery": "boolean",
     },
     "description": "String",
     "backgroundColor": "String",
     "displayText": "String",
     "content": {
-        "@data.type": "microsoft.graph.Json"
+        // JSON object
     }
 }
 ```
