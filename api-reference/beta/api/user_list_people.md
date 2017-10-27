@@ -1,12 +1,19 @@
 # List people
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by 
 the user's communication, collaboration and business relationships.
-## Prerequisites
-The following **scopes** are required to execute this API: *People.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
  
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | People.Read    |
+|Delegated (personal Microsoft account) | People.Read    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,7 +41,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_person_collection"
+  "name": "get_person_collection_beta"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/people
@@ -81,7 +88,7 @@ Content-length: 346
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Lit people",
+  "description": "List people",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

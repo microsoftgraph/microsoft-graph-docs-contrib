@@ -4,11 +4,11 @@ Renew a subscription by extending its expiry time.
 
 Subscriptions to resources expire at dates proscribed by the individual resource types.  In order not to miss notifications, subscriptions should be renewed well in advance of their expiry date.  See [subscription](../resources/subscription.md) for individual expiry dates.
 
-## Prerequisites
+## Permissions
 
-The following table lists the suggested permission needed for each resource.
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Resource type / Item        | Scope               |
+| Resource type / Item        | Permission          |
 |-----------------------------|---------------------|
 | Contacts                    | Contacts.Read       |
 | Conversations               | Group.Read.All      |

@@ -1,6 +1,6 @@
 # Create group
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of three types of groups:
 
@@ -10,8 +10,15 @@ Use this API to create a new [group](../resources/group.md) as specified in the 
 
 > **Note**: Although Microsoft Teams is built on Office 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
-## Prerequisites
-The following **scope** is required to execute this API: _Group.ReadWrite.All_ 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,9 +44,9 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 
 | Type of group | **groupTypes** property |
 |:--------------|:------------------------|
-| Office 365 (aka unified group)| "Unified" | 
-| Dynamic | "DynamicMembership" | 
-| Security | Do not set. | 
+| Office 365 (aka unified group)| "Unified" |
+| Dynamic | "DynamicMembership" |
+| Security | Do not set. |
 
 Since the **group** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 
@@ -47,7 +54,7 @@ Specify other writable properties as necessary for your group. For more informat
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [group](../resources/group.md) object in the response body.
+If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.
 
 ## Example
 ##### Request

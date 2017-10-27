@@ -5,9 +5,16 @@ the user's communication and collaboration patterns and business relationships.
 
 You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).
 
-## Prerequisites
-The following **scopes** are required to execute this API: *People.Read* *People.Read.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
  
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | People.Read, People.Read.All    |
+|Delegated (personal Microsoft account) | People.Read    |
+|Application | People.Read.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships. 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_collection"
 }-->
 
 ```http
@@ -51,8 +58,10 @@ GET https://graph.microsoft.com/v1.0/me/people/
 The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.
 <!-- {
   "blockType": "response",
+  "name": "get_person_collection",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -80,7 +89,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ],
             "phones": [
@@ -91,10 +100,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         },
         {
             "id": "5767393D-42BA-4E5C-BEE4-52BB25639CF4",
@@ -115,7 +126,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Maynardd@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ],
             "phones": [
@@ -126,10 +137,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         },
         {
             "id": "914B5191-11FA-4C0B-A354-0FA8C8EFD585",
@@ -150,7 +163,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Darrelh@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ],
             "phones": [
@@ -161,10 +174,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         }
     ]
 }
@@ -175,7 +190,7 @@ The following request gets the people most relevant to another person in the sig
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_other_person"
 }-->
 
 ```http
@@ -186,8 +201,10 @@ The following example shows the response. By default, each response returns 10 r
 
 <!-- {
   "blockType": "response",
+  "name": "get_other_person",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -215,7 +232,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Cliftonc@contoso.onmicrosoft.com",
-                    "relevanceScore": 20
+                    "relevanceScore": 20.0
                 }
             ],
             "phones": [
@@ -226,10 +243,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         },
         {
             "id": "6BF27D5A-AB4F-4C43-BED0-7DAD9EB0C1C4",
@@ -250,7 +269,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Shereem@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
+                    "relevanceScore": 10.0
                 }
             ],
             "phones": [
@@ -261,10 +280,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         },
         {
             "id": "B3E5302D-EAF0-4E8B-8C6C-A2AE64B4B163",
@@ -285,7 +306,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Vincentm@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
+                    "relevanceScore": 10.0
                 }
             ],
             "phones": [
@@ -296,10 +317,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         }
     ]
 }

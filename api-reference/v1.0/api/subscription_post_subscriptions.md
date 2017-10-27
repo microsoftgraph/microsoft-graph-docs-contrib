@@ -1,10 +1,10 @@
 # Create subscription
 
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
-## Prerequisites
-Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource.
+## Permissions
+Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Resource type / Item        | Scope               |
+| Resource type / Item        | Permission          |
 |-----------------------------|---------------------|
 | Contacts                    | Contacts.Read       |
 | Conversations               | Group.Read.All      |
@@ -30,7 +30,7 @@ POST /subscriptions
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a [subscription](../resources/subscription.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
 
 ## Example
 ##### Request
@@ -122,7 +122,7 @@ Depending on the subscribed resource, an additional resourceData field may provi
    ]
 }
 ```
-When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](item_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
+When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](driveitem_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",

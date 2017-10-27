@@ -1,15 +1,16 @@
 # List deleted items
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
 
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-* For users: *User.Read.All; Directory.Read.All; User.ReadWrite.All; Directory.AccessAsUser.All*
-* For groups: *Group.Read.All; Directory.Read.All; Group.ReadWrite.All; Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+* For users: User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.AccessAsUser.All
+* For groups: Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.AccessAsUser.All
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -116,7 +116,7 @@ are referred to as the "old" approach and "new" approach.
 
 
 If a calendar was shared with view or edit permissions but using the old approach, you can now work around the error and manually upgrade the calendar sharing to use the new approach. 
-Over time, Outlook will autmatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions. 
+Over time, Outlook will automatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions. 
 
 To manually upgrade a shared calendar to use the new approach, follow these steps:
 1.	The recipient removes the calendar that was previously shared to them.
@@ -245,6 +245,11 @@ Change tracking (delta query) is not supported for open or schema extension prop
 ### Creating a resource and open extension at the same time
 
 You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
+
+### Creating a resource instance and adding schema extension data at the same time
+
+You cannot specify a schema extension in the same operation as creating an instance of **contact**, **event**, **message**, or **post**. 
+You must first create the resource instance and then do a `PATCH` to that instance to add a schema extension and custom data. 
 
 ### Limit of 100 schema extension property values allowed per resource instance
 
