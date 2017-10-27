@@ -4102,7 +4102,7 @@
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityfilecounts" />
 	  </Item>
 	  <Item text="OneDrive usage" url="/en-us/api-reference/beta/resources/onedrive_usage_reports" >
-		<Item text="Get account detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageuserdetail" />
+		<Item text="Get account detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountdetail" />
 		<Item text="Get account counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountcounts" />
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagefilecounts" />
 		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagestorage" />
