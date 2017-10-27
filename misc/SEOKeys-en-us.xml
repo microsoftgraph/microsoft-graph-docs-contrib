@@ -356,8 +356,8 @@
       <Item text="Delete item" url="/en-us/api-reference/v1.0/api/driveitem_delete" SEOKeyword="Delete item, Microsoft Graph API, OneDrive Drive API" SEODescription="Delete item." />
       <Item text="Move item" url="/en-us/api-reference/v1.0/api/driveitem_move" SEOKeyword="Move item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
       <Item text="Copy item" url="/en-us/api-reference/v1.0/api/driveitem_copy" SEOKeyword="Copy item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-      <Item text="Download contents" url="/en-us/api-reference/v1.0/api/driveitem_get_content" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-      <Item text="Download file" url="/en-us/api-reference/v1.0/api/driveitem_get_content_format" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+      <Item text="Download file" url="/en-us/api-reference/v1.0/api/driveitem_get_content" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+      <Item text="Convert content" url="/en-us/api-reference/v1.0/api/driveitem_get_content_format" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
 	  <Item text="Upload" url="/en-us/api-reference/v1.0/api/driveitem_put_content" SEOKeyword="Upload item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
       <Item text="Resumable Upload" url="/en-us/api-reference/v1.0/api/driveitem_createuploadsession" SEOKeyword="large file upload, resumable upload, microsoft graph api, onedrive drive api, fragments, files" />
       <Item text="Search items" url="/en-us/api-reference/v1.0/api/driveitem_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
@@ -3637,8 +3637,8 @@
         <Item text="Delete item" url="/en-us/api-reference/beta/api/driveitem_delete" SEOKeyword="Delete item, Microsoft Graph API, OneDrive Drive API" SEODescription="Delete item." />
         <Item text="Move item" url="/en-us/api-reference/beta/api/driveitem_move" SEOKeyword="Move item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Copy item" url="/en-us/api-reference/beta/api/driveitem_copy" SEOKeyword="Copy item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-        <Item text="Download contents" url="/en-us/api-reference/beta/api/driveitem_get_content" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-		<Item text="Download file" url="/en-us/api-reference/beta/api/driveitem_get_content_format" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+        <Item text="Download file" url="/en-us/api-reference/beta/api/driveitem_get_content" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+		<Item text="Convert file" url="/en-us/api-reference/beta/api/driveitem_get_content_format" SEOKeyword="Download item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Upload" url="/en-us/api-reference/beta/api/driveitem_put_content" SEOKeyword="Upload item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Resumable Upload" url="/en-us/api-reference/beta/api/driveitem_createuploadsession" SEOKeyword="large file upload, resumable upload, microsoft graph api, onedrive drive api, fragments, files" />
         <Item text="Search items" url="/en-us/api-reference/beta/api/driveitem_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
