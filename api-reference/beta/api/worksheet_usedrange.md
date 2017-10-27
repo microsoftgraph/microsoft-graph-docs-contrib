@@ -11,7 +11,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-<!-- { "blockType": "ignore" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/UsedRange
 
@@ -31,7 +31,7 @@ In the request URL, provide an optional query parameter.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example that shows how to call this API.
