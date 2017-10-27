@@ -8,14 +8,22 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ### Azure AD APIs
 
-|Change type|Version|Description|
-|:---|:---|:---|
+| Change type | Version | Description                              |
+| :---------- | :------ | :--------------------------------------- |
 |Addition|Beta|Added the [identityProvider](../api-reference/beta/resources/identityprovider.md) entity and the [create](../api-reference/beta/api/identityprovider_post_identityproviders.md), [list](../api-reference/beta/api/identityprovider_list.md), [get](../api-reference/beta/api/identityprovider_get.md), [update](../api-reference/beta/api/identityprovider_update.md), and [delete](../api-reference/beta/api/identityprovider_delete.md) operations.|
+
+
+### Outlook messages
+
+| Change type | Version | Description                              |
+| :---------- | :------ | :--------------------------------------- |
+| Change          | v1.0 and beta | This behavior enhancement is about getting a shared mail folder or its message contents, when a user has shared a mail folder with the signed-in user, or has delegated the user's mailbox to the signed-in user. In such situations, an app can specify that user's ID or user principal name to [get that shared mail folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_get), or [get the messages in that shared calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), as long as the signed-in user has provided delegated permissions to the app. |
+
 
 ### Outlook user choices
 
-|Change type|Version|Description|
-|:---|:---|:---|
+| Change type | Version | Description                              |
+| :---------- | :------ | :--------------------------------------- |
 |Addition | Beta | Added the new **workingHours** property to [mailboxSettings](../api-reference/beta/resources/mailboxsettings.md). See [workingHours resource type](../api-reference/beta/resources/workinghours.md) for information on the supported use cases.|
 |Addition | Beta | Added the following new complex types: <br> [workingHours](../api-reference/beta/resources/workinghours.md) <br> [timeZoneBase](../api-reference/beta/resources/timezonebase.md) <br> [customTimeZone](../api-reference/beta/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/beta/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/beta/resources/daylighttimezoneoffset.md)|
 
@@ -152,14 +160,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta          | Added the **locations** property to the [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) entity to support organizing an event that attendees can attend from more than one location. |
 | Addition        | Beta          | Added the **locationType** property to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type. |
 | Addition        | Beta          | Added the **uniqueId** and **uniqueIdType** properties to the [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) complex type. These properties are only for internal use at this point. |
-| Change          | v1.0 and beta | If you have appropriate delegated permissions from the signed-in user, you can specify another user's ID or user principal name to [get a calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get), or [get events in a calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), if that user has shared that calendar with the signed-in user, or that user has delegated its mailbox to the signed-in user. |
+| Change          | v1.0 and beta | This behavior enhancement is about getting a shared calendar or its event contents, when a user has shared a calendar with the signed-in user, or has delegated the user's mailbox to the signed-in user. In such situations, an app can specify that user's ID or user principal name to [get that shared calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get), or [get the events in that shared calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), as long as the signed-in user has provided delegated permissions to the app. |
 
 ### Outlook contacts
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change          | v1.0 and beta | If you have appropriate delegated permissions from the signed-in user, you can specify another user's ID or user principal name to [get a contact folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get), or [get contacts in a folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), if that user has shared that folder with the signed-in user, or that user has delegated its mailbox to the signed-in user. |
-
+| Change          | v1.0 and beta | This behavior enhancement is about getting a shared contact folder or its contact contents, when a user has shared a contact folder with the signed-in user, or has delegated the user's mailbox to the signed-in user. In such situations, an app can specify that user's ID or user principal name to [get that shared contact folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get), or [get the contacts in that shared folder](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), as long as the signed-in user has provided delegated permissions to the app. |
 
 ### Outlook mail
 
