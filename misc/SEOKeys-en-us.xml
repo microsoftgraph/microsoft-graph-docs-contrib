@@ -4090,7 +4090,7 @@
 		<Item text="Get services user counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365servicesusercounts" />
 	  </Item>
 	  <Item text="Office 365 groups activity" url="/en-us/api-reference/beta/resources/office_365_groups_activity_reports" >
-		<Item text="Get group detail" url="/en-us/api-reference/beta/api/reportroot_ getoffice365groupsactivitydetail" />
+		<Item text="Get group detail" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitydetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitycounts" />
 		<Item text="Get group counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitygroupcounts" />
 		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitystorage" />
