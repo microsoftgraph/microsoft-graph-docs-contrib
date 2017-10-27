@@ -109,7 +109,7 @@ b) You must comply with all laws and regulations applicable to your use of the d
 
 <b>WE MAY CHANGE OR DISCONTINUE THE AVAILABILITY OF SOME OR ALL OF THE GRAPH API AT ANY TIME FOR ANY REASON WITH OR WITHOUT NOTICE.</b> Such changes may include, without limitation, removing or limiting access to specific API(s), requiring fees or setting and enforcing limits on your use of additions to the Graph API. We may also impose limits on certain features and services or restrict your access to some or all of the Graph API. We may release subsequent versions of the Graph API and require that you use those subsequent versions, at your sole cost and expense. 
 
-Any version of the Graph API designated as “preview”, “pre-release” or “beta” (“**Preview API**”), may not work in the same way as a final version. Preview APIs may employ lesser or different privacy or security measures than those typically present in the Graph API. We may change or not release a final or commercial version of a Preview API in our sole discretion. 
+Any version of the Graph API designated as “preview”, “pre-release” or “beta” (“**Preview API**”), may not work in the same way as a final version. We may change or not release a final or commercial version of a Preview API in our sole discretion. 
 
 <b>WE MAY MODIFY THESE API TERMS AT ANY TIME, WITH OR WITHOUT PRIOR NOTICE TO YOU. YOUR CONTINUED USE OF THE GRAPH API FOLLOWING THE RELEASE OF A SUBSEQUENT VERSION OF THESE API TERMS WILL BE DEEMED YOUR ACCEPTANCE OF ANY MODIFICATIONS TO THESE API TERMS.</b>
 
