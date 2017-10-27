@@ -4074,7 +4074,7 @@
 		<Item text="Get versions user counts" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
 	  </Item>
 	  <Item text="Outlook mailbox usage" url="/en-us/api-reference/beta/resources/mailbox_usage_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getmailboxusageuserdetail" />
+		<Item text="Get mailbox detail" url="/en-us/api-reference/beta/api/rreportroot_getmailboxusagedetail" />
 		<Item text="Get mailbox counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
 		<Item text="Get quota mailbox status counts" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotamailboxstatuscounts" />
 		<Item text="Get  storage" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagestorage" />
@@ -4090,14 +4090,14 @@
 		<Item text="Get services user counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365servicesusercounts" />
 	  </Item>
 	  <Item text="Office 365 groups activity" url="/en-us/api-reference/beta/resources/office_365_groups_activity_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityuserdetail" />
+		<Item text="Get group detail" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitycounts" />
 		<Item text="Get group counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitygroupcounts" />
 		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitystorage" />
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityfilecounts" />
 	  </Item>
 	  <Item text="OneDrive activity" url="/en-us/api-reference/beta/resources/onedrive_activity_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="Get account detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountdetail" />
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityusercounts" />
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityfilecounts" />
 	  </Item>
@@ -4114,7 +4114,7 @@
 		<Item text="Get pages" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivitypages" />
 	  </Item>
 	  <Item text="SharePoint site usage" url="/en-us/api-reference/beta/resources/sharepoint_site_usage_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusageuserdetail" />
+		<Item text="Get site detail" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagedetail.md" />
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagefilecounts" />
 		<Item text="Get site counts" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagesitecounts" />
 		<Item text="Get storage" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagestorage" />
@@ -4156,7 +4156,7 @@
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageusercounts" />
 	  </Item>
 	  <Item text="Yammer groups activity" url="/en-us/api-reference/beta/resources/yammer_groups_activity_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivityuserdetail" />
+		<Item text="Get group detail" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitydetail" />
 		<Item text="Get group counts" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitycounts" />
 	  </Item>
