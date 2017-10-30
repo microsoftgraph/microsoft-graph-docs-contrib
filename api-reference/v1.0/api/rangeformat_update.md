@@ -40,7 +40,7 @@ If successful, this method returns a `200 OK` response code and updated [RangeFo
 
 ### Update the format, fill, and font properties in three table cells
 
-The following examples demonstrate how to update properties of the [RangeFormat](../resources/rangeformat.md), [RangeFill](../resources/rangefill.md), and [RangeFoht](../resources/rangefont.md) properties of a specified range.
+The following examples demonstrate how to update properties of the [RangeFormat](../resources/rangeformat.md), [RangeFill](../resources/rangefill.md), and [RangeFont](../resources/rangefont.md) properties of a specified range.
 
 The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
 
