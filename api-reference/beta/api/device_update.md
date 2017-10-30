@@ -35,7 +35,7 @@ In the request body, supply the values for relevant fields that should be update
 |operatingSystem|String|The type of operating system on the device.|
 |operatingSystemVersion|String|The version of the operating system on the device|
 |deviceVersion|Int32|            |
-|physicalIds|String collection| Not nullable.            |
+|physicalIds|String collection| Not nullable. |
 |trustType|String||
 |displayName|String|The display name for the device.|
 |isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**.|

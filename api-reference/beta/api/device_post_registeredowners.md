@@ -25,7 +25,7 @@ POST /devices/{id}/registeredOwners/$ref
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [user](../resources/user.md) to be added.
+In the request body, supply a JSON representation of [user](../resources/user.md) or [servicePrincipal](../resources/serviceprincipal.md) to be added.
 
 ## Response
 
