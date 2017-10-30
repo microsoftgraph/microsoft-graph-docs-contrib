@@ -82,9 +82,9 @@ When your Application or services access the Graph API for Intune using a Post c
 <li>In your Application and services’ marketing material and product documentation that references functionality enabled by your Application or service’s access to Microsoft Intune® through the Microsoft Graph API: 
 
 <ul>
-<li>The attribution “Powered by Microsoft Intune®” displayed in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>, and</li>
-<li>A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.</li>
-<li>In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Powered by Microsoft Intune®” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>.</li>
+<li>- The attribution “Powered by Microsoft Intune®” displayed in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>, and</li>
+<li>- A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.</li>
+<li>- In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Powered by Microsoft Intune®” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>.</li>
 </ul> 
 </li>
 </ol>
@@ -109,7 +109,7 @@ b) You must comply with all laws and regulations applicable to your use of the d
 
 <b>WE MAY CHANGE OR DISCONTINUE THE AVAILABILITY OF SOME OR ALL OF THE GRAPH API AT ANY TIME FOR ANY REASON WITH OR WITHOUT NOTICE.</b> Such changes may include, without limitation, removing or limiting access to specific API(s), requiring fees or setting and enforcing limits on your use of additions to the Graph API. We may also impose limits on certain features and services or restrict your access to some or all of the Graph API. We may release subsequent versions of the Graph API and require that you use those subsequent versions, at your sole cost and expense. 
 
-Any version of the Graph API designated as “preview”, “pre-release” or “beta” (“**Preview API**”), may not work in the same way as a final version. Preview APIs may employ lesser or different privacy or security measures than those typically present in the Graph API. We may change or not release a final or commercial version of a Preview API in our sole discretion. 
+Any version of the Graph API designated as “preview”, “pre-release” or “beta” (“**Preview API**”), may not work in the same way as a final version. We may change or not release a final or commercial version of a Preview API in our sole discretion. 
 
 <b>WE MAY MODIFY THESE API TERMS AT ANY TIME, WITH OR WITHOUT PRIOR NOTICE TO YOU. YOUR CONTINUED USE OF THE GRAPH API FOLLOWING THE RELEASE OF A SUBSEQUENT VERSION OF THESE API TERMS WILL BE DEEMED YOUR ACCEPTANCE OF ANY MODIFICATIONS TO THESE API TERMS.</b>
 
