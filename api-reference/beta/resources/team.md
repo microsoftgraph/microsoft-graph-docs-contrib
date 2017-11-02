@@ -13,37 +13,13 @@ A team is a collection of [channels](channel.md).  A channel represents a topic,
 |[Get team](../api/group_get_team.md) | [team](team.md) | Read properties and relationships of team object.|
 |[Update team](../api/group_patch_team.md) | [team](team.md) |Update the properties of a team object. |
 
-## MemberSettings Properties
-| Property	   | Type	|Description|
+## Relationships
+| Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|boolean|Allow modification (adding and updating) of channels|
-|allowDeleteChannels|boolean|Allow deleting channels.   |
-|allowAddRemoveApps|boolean|Allow modification (adding and removing) of apps.|
-|allowCreateUpdateRemoveTabs|boolean|Allow modification (adding, updating and removing) of tabs.   |
-|allowCreateUpdateRemoveConnectors|boolean|Allow modification (adding, updating and removing) of connectors.|
-
-## GuestSettings Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|allowCreateUpdateChannels|boolean|Allow modification (adding and updating) of channels.|
-|allowDeleteChannels|boolean|Allow deleting channels.|
-
-## MessagingSettings Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|allowUserEditMessages|boolean|Members can edit their messages.|
-|allowUserDeleteMessages|boolean|Members can delete their messages.|
-|allowOwnerDeleteMessages|boolean|Owners can delete any message.|
-|allowTeamMentions|boolean|Allow @team mentions.|
-|allowChannelMentions|boolean|Allow @channel mentions.|
-
-## FunSettings Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|allowGiphy|boolean|Enable giphy.|
-|giphyContentRating|string(enum)|Giphy content rating.  One of: moderate, strict|
-|allowStickersAndMemes|boolean|Enable stickers and memes.|
-|allowCustomMemes|boolean|Enable custom memes.|
+|memberSettings|[teamMemberSettings](teammembersettings.md) |Settings for members to enables channel creation, adding bots etc.|
+|guestSettings|[teamGuestSettings](teamGuestSettings.md) |Settings for guests to enables channel creation, adding bots etc.|
+|messagingSettings|[teamMessagingSettings](teamMessagingSettings.md) |Settings for messaging and mentions in this team.|
+|funSettings|[teamFunSettings](teamFunSettings.md) |Settings for giphys, memes, etc in this team.|
 
 ## JSON representation
 
