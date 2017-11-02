@@ -32,7 +32,7 @@ In the request body, supply a JSON representation of [team](../resources/channel
 
 ## Response
 
-The response code should be `201, Created` and [team](../resources/team.md) object in the response body.
+The response code should be `201 Created` and [team](../resources/team.md) object in the response body.
 
 ## Example
 ##### Request
