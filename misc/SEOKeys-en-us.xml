@@ -3084,13 +3084,6 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_update"/>
         </Item>
-       <Item text="Audit event" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_auditing_auditevent">
-         <Item text="List" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list"/>
-         <Item text="Get" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get"/>
-         <Item text="Create" url="/en-us/api-reference/beta"/>
-         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete"/>
-         <Item text="Update" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update"/>
-       </Item>
         <Item text="Detected app" url="/en-us/api-reference/beta/resources/intune_devicefe_detectedapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_devicefe_detectedapp_get"/>
