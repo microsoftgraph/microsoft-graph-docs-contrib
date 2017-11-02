@@ -6,7 +6,7 @@
 
 List properties and relationships of the [iosManagedAppProtection](../resources/intune_mam_iosmanagedappprotection.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_mam_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1946
+Content-Length: 2023
 
 {
   "value": [
@@ -75,6 +75,7 @@ Content-Length: 1946
       "simplePinBlocked": true,
       "minimumPinLength": 0,
       "pinCharacterSet": "numeric",
+      "periodBeforePinReset": "PT3M29.6631862S",
       "allowedDataStorageLocations": [
         "sharePoint"
       ],
@@ -87,6 +88,7 @@ Content-Length: 1946
       "minimumRequiredAppVersion": "Minimum Required App Version value",
       "minimumWarningAppVersion": "Minimum Warning App Version value",
       "targetedSecurityGroupsCount": 11,
+      "isAssigned": true,
       "targetedSecurityGroupIds": [
         "Targeted Security Group Ids value"
       ],

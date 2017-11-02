@@ -6,7 +6,7 @@
 
 Update the properties of a [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_books_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -38,7 +38,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |targetGroupId|String|The Id of the AAD group we are targeting the eBook to.|
 |id|String|Key of the entity.|
-|installIntent|String|The install intent defined by the admin. Possible values are: `notApplicable`, `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|String|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -51,11 +51,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/groupAssignments/{eBookGroupAssignmentId}
 Content-type: application/json
-Content-length: 81
+Content-length: 80
 
 {
   "targetGroupId": "Target Group Id value",
-  "installIntent": "available"
+  "installIntent": "required"
 }
 ```
 
@@ -64,13 +64,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 189
+Content-Length: 188
 
 {
   "@odata.type": "#microsoft.graph.eBookGroupAssignment",
   "targetGroupId": "Target Group Id value",
   "id": "6cb57cb9-7cb9-6cb5-b97c-b56cb97cb56c",
-  "installIntent": "available"
+  "installIntent": "required"
 }
 ```
 

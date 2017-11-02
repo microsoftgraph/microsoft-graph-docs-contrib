@@ -6,7 +6,7 @@
 
 List properties and relationships of the [enrollmentConfigurationAssignment](../resources/intune_onboarding_enrollmentconfigurationassignment.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_onboarding_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,14 +47,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 285
+Content-Length: 275
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
       "id": "705b021c-021c-705b-1c02-5b701c025b70",
-      "assignmentTarget": {
+      "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
       }
     }

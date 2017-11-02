@@ -6,7 +6,7 @@
 
 Create a new [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_apps_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,6 +47,7 @@ The following table shows the properties that are required when you create the m
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
 |userPrincipalName|String|User Principal Name|
+|displayVersion|String|Human readable version of the application|
 
 
 
@@ -59,7 +60,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses
 Content-type: application/json
-Content-length: 426
+Content-length: 472
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -71,7 +72,8 @@ Content-length: 426
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
   "userName": "User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "displayVersion": "Display Version value"
 }
 ```
 
@@ -80,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 475
+Content-Length: 521
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -93,7 +95,8 @@ Content-Length: 475
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
   "userName": "User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "displayVersion": "Display Version value"
 }
 ```
 

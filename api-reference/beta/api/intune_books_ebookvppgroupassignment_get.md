@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [eBookVppGroupAssignment](../resources/intune_books_ebookvppgroupassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_books_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -49,14 +49,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 252
+Content-Length: 251
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.eBookVppGroupAssignment",
     "targetGroupId": "Target Group Id value",
     "id": "5f54e6bf-e6bf-5f54-bfe6-545fbfe6545f",
-    "installIntent": "available",
+    "installIntent": "required",
     "useDeviceLicensing": true
   }
 }

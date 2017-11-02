@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [eBookGroupAssignment](../resources/intune_books_ebookgroupassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_books_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -49,14 +49,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 216
+Content-Length: 215
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.eBookGroupAssignment",
     "targetGroupId": "Target Group Id value",
     "id": "6cb57cb9-7cb9-6cb5-b97c-b56cb97cb56c",
-    "installIntent": "available"
+    "installIntent": "required"
   }
 }
 ```

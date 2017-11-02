@@ -6,7 +6,7 @@
 
 List properties and relationships of the [androidDeviceComplianceLocalActionBase](../resources/intune_deviceconfig_androiddevicecompliancelocalactionbase.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_deviceconfig_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,13 +47,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 170
+Content-Length: 204
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionBase",
-      "id": "63e17619-7619-63e1-1976-e1631976e163"
+      "id": "63e17619-7619-63e1-1976-e1631976e163",
+      "gracePeriodInMinutes": 4
     }
   ]
 }

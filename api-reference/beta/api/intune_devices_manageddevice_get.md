@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_devices_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -53,7 +53,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5645
+Content-Length: 5756
 
 {
   "value": {
@@ -112,7 +112,6 @@ Content-Length: 5645
     "easDeviceId": "Eas Device Id value",
     "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
     "aadRegistered": true,
-    "enrollmentType": "userEnrollment",
     "deviceEnrollmentType": "userEnrollment",
     "lostModeState": "enabled",
     "activationLockBypassCode": "Activation Lock Bypass Code value",
@@ -178,7 +177,11 @@ Content-Length: 5645
       "bootRevisionListInfo": "Boot Revision List Info value",
       "operatingSystemRevListInfo": "Operating System Rev List Info value",
       "healthStatusMismatchInfo": "Health Status Mismatch Info value"
-    }
+    },
+    "subscriberCarrier": "Subscriber Carrier value",
+    "meid": "Meid value",
+    "totalStorageSpaceInBytes": 8,
+    "freeStorageSpaceInBytes": 7
   }
 }
 ```

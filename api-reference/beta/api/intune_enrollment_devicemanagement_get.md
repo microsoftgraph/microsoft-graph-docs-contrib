@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [deviceManagement](../resources/intune_enrollment_devicemanagement.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_enrollment_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -49,12 +49,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 130
+Content-Length: 158
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b"
+    "id": "0b283420-3420-0b28-2034-280b2034280b",
+    "maximumDepTokens": 0
   }
 }
 ```

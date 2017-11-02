@@ -6,7 +6,7 @@
 
 Create a new [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_apps_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /iosMobileAppConfigurations
+POST /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [iosMobil
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/iosMobileAppConfigurations
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
 Content-length: 619
 

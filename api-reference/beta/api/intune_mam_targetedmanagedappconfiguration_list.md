@@ -6,7 +6,7 @@
 
 List properties and relationships of the [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_mam_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 764
+Content-Length: 791
 
 {
   "value": [
@@ -70,7 +70,8 @@ Content-Length: 764
       "targetedSecurityGroupIds": [
         "Targeted Security Group Ids value"
       ],
-      "targetedSecurityGroupsCount": 11
+      "targetedSecurityGroupsCount": 11,
+      "isAssigned": true
     }
   ]
 }

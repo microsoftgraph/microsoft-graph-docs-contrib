@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [iosLobApp](../resources/intune_apps_ioslobapp.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_apps_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1382
+Content-Length: 1470
 
 {
   "value": {
@@ -91,7 +91,9 @@ Content-Length: 1382
       "v9_0": true,
       "v10_0": true
     },
-    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
+    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "versionNumber": "Version Number value",
+    "buildNumber": "Build Number value"
   }
 }
 ```

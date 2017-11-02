@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [defaultManagedAppProtection](../resources/intune_mam_defaultmanagedappprotection.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_mam_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2024
+Content-Length: 2222
 
 {
   "value": {
@@ -76,6 +76,7 @@ Content-Length: 2024
     "simplePinBlocked": true,
     "minimumPinLength": 0,
     "pinCharacterSet": "numeric",
+    "periodBeforePinReset": "PT3M29.6631862S",
     "allowedDataStorageLocations": [
       "sharePoint"
     ],
@@ -99,7 +100,9 @@ Content-Length: 2024
         "value": "Value value"
       }
     ],
-    "deployedAppCount": 0
+    "deployedAppCount": 0,
+    "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+    "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
   }
 }
 ```

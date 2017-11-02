@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [macOSDeviceFeaturesConfiguration](../resources/intune_deviceconfig_macosdevicefeaturesconfiguration.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_deviceconfig_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 584
+Content-Length: 631
 
 {
   "value": {
@@ -66,7 +66,9 @@ Content-Length: 584
       {
         "@odata.type": "microsoft.graph.airPrintDestination",
         "ipAddress": "Ip Address value",
-        "resourcePath": "Resource Path value"
+        "resourcePath": "Resource Path value",
+        "port": 4,
+        "forceTls": true
       }
     ]
   }

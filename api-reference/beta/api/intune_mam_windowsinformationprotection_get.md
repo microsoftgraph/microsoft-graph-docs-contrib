@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_mam_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4366
+Content-Length: 5132
 
 {
   "value": {
@@ -94,6 +94,15 @@ Content-Length: 4366
         "productName": "Product Name value"
       }
     ],
+    "protectedApps": [
+      {
+        "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+        "displayName": "Display Name value",
+        "description": "Description value",
+        "publisherName": "Publisher Name value",
+        "productName": "Product Name value"
+      }
+    ],
     "exemptApps": [
       {
         "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
@@ -119,6 +128,19 @@ Content-Length: 4366
         "resources": [
           {
             "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResource",
+            "ipAddressOrFQDN": "Ip Address Or FQDN value",
+            "proxy": "Proxy value"
+          }
+        ]
+      }
+    ],
+    "enterpriseProxiedDomains": [
+      {
+        "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
+        "displayName": "Display Name value",
+        "proxiedDomains": [
+          {
+            "@odata.type": "microsoft.graph.proxiedDomain",
             "ipAddressOrFQDN": "Ip Address Or FQDN value",
             "proxy": "Proxy value"
           }
@@ -179,7 +201,8 @@ Content-Length: 4366
     ],
     "targetedSecurityGroupIds": [
       "Targeted Security Group Ids value"
-    ]
+    ],
+    "isAssigned": true
   }
 }
 ```

@@ -6,7 +6,7 @@
 
 Create a new [mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_apps_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,9 +36,9 @@ The following table shows the properties that are required when you create the m
 
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Key of the entity.|
 |targetGroupId|String|The Id of the AAD group we are targeting the mobile app to.|
 |vpnConfigurationId|String|The Id of the Vpn Profile to apply for this app.|
-|id|String|Key of the entity.|
 |installIntent|String|The install intent defined by the admin. Possible values are: `available`, `notApplicable`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
@@ -71,9 +71,9 @@ Content-Length: 252
 
 {
   "@odata.type": "#microsoft.graph.mobileAppGroupAssignment",
+  "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
   "targetGroupId": "Target Group Id value",
   "vpnConfigurationId": "Vpn Configuration Id value",
-  "id": "ce4d1a28-1a28-ce4d-281a-4dce281a4dce",
   "installIntent": "notApplicable"
 }
 ```

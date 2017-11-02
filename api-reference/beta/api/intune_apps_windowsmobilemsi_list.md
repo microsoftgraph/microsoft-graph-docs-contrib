@@ -6,7 +6,7 @@
 
 List properties and relationships of the [windowsMobileMSI](../resources/intune_apps_windowsmobilemsi.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_apps_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1113
+Content-Length: 1163
 
 {
   "value": [
@@ -76,7 +76,8 @@ Content-Length: 1113
       "size": 4,
       "identityVersion": "Identity Version value",
       "commandLine": "Command Line value",
-      "productCode": "Product Code value"
+      "productCode": "Product Code value",
+      "productVersion": "Product Version value"
     }
   ]
 }

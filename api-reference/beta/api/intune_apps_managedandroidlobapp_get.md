@@ -6,7 +6,7 @@
 
 Read properties and relationships of the [managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_apps_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1378
+Content-Length: 1462
 
 {
   "value": {
@@ -92,7 +92,9 @@ Content-Length: 1378
       "v4_4": true,
       "v5_0": true,
       "v5_1": true
-    }
+    },
+    "versionName": "Version Name value",
+    "versionCode": "Version Code value"
   }
 }
 ```

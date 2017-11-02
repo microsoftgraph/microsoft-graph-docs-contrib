@@ -6,7 +6,7 @@
 
 List properties and relationships of the [mobileAppVppGroupAssignment](../resources/intune_apps_mobileappvppgroupassignment.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_apps_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -53,9 +53,9 @@ Content-Length: 343
   "value": [
     {
       "@odata.type": "#microsoft.graph.mobileAppVppGroupAssignment",
+      "id": "89a8674a-674a-89a8-4a67-a8894a67a889",
       "targetGroupId": "Target Group Id value",
       "vpnConfigurationId": "Vpn Configuration Id value",
-      "id": "89a8674a-674a-89a8-4a67-a8894a67a889",
       "installIntent": "notApplicable",
       "useDeviceLicensing": true
     }

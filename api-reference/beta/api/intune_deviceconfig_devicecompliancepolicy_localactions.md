@@ -6,7 +6,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_deviceconfig_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -51,13 +51,14 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/localActions
 
 Content-type: application/json
-Content-length: 193
+Content-length: 227
 
 {
   "deviceComplianceLocalActions": [
     {
       "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionBase",
-      "id": "63e17619-7619-63e1-1976-e1631976e163"
+      "id": "63e17619-7619-63e1-1976-e1631976e163",
+      "gracePeriodInMinutes": 4
     }
   ]
 }

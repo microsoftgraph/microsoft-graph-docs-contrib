@@ -6,7 +6,7 @@
 
 List properties and relationships of the [androidDeviceComplianceLocalActionLockDevice](../resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/intune_deviceconfig_permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,13 +47,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 176
+Content-Length: 210
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.androidDeviceComplianceLocalActionLockDevice",
-      "id": "ec210677-0677-ec21-7706-21ec770621ec"
+      "id": "ec210677-0677-ec21-7706-21ec770621ec",
+      "gracePeriodInMinutes": 4
     }
   ]
 }
