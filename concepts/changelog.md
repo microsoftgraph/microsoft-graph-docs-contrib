@@ -9,7 +9,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added new entity [team](../api-reference/beta/resources/team.md)|
-|Addition|Beta|Added [create](../api-reference/beta/api/group_put_team.md), [get](../api-reference/beta/api/group_get_team.md) , and [update](../api-reference/beta/api/group_patch_team.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
+|Addition|Beta|Added [create](../api-reference/beta/api/group_put_team.md), [get](../api-reference/beta/api/group_get_team.md), and [update](../api-reference/beta/api/group_patch_team.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
 
 ## September 2017
 
