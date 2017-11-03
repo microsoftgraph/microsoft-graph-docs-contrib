@@ -3542,7 +3542,7 @@
         <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_get"/>
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_delete"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_update" url="/en-us/api-reference/beta"/>
+        <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_update"/>
         <Item text="syncLicenses action" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses"/>
       </Item>
         <Item text="Windows 10 enrollment completion page configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
