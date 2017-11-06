@@ -4,14 +4,6 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 ## October 2017
-### Microsoft Teams APIs
-
-|Change type|Version|Description|
-|:---|:---|:---|
-|Addition|Beta|Added new [team](../api-reference/beta/resources/team.md) entity.|
-|Addition|Beta|Added [create](../api-reference/beta/api/group_put_team.md), [get](../api-reference/beta/api/group_get_team.md), and [update](../api-reference/beta/api/group_patch_team.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
-
-## October 2017
 
 ### Azure AD APIs
 
@@ -81,6 +73,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|Beta|Changed the type of the following properties on the [deviceConfigurationSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate) complex type:<br/>**errorCode** from Int32 to Int64<br/>|
 |Change|Beta|Changed the type of the following properties on the [windowsNetworkIsolationPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy) complex type:<br/>**enterpriseCloudResources** from [windowsNetworkIsolationCloudResourceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsNetworkIsolationCloudResourceCollection.md) to [proxiedDomain](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_proxieddomain) collection<br/>**enterpriseInternalProxyServers** from [windowsNetworkIsolationResourceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsNetworkIsolationResourceCollection.md) to String collection<br/>**enterpriseIPRanges** from [windowsNetworkIsolationIPRangeCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsNetworkIsolationIPRangeCollection.md) to [ipRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iprange) collection<br/>**enterpriseNetworkDomainNames** from [windowsNetworkIsolationResourceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsNetworkIsolationResourceCollection.md) to String collection<br/>**enterpriseProxyServers** from [windowsNetworkIsolationResourceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsNetworkIsolationResourceCollection.md) to String collection<br/>**neutralDomainResources** from [windowsNetworkIsolationResourceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsNetworkIsolationResourceCollection.md) to String collection<br/>|
 
+### Microsoft Teams APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new [team](../api-reference/beta/resources/team.md) entity.|
+|Addition|Beta|Added [create](../api-reference/beta/api/group_put_team.md), [get](../api-reference/beta/api/group_get_team.md), and [update](../api-reference/beta/api/group_patch_team.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
 
 ### Outlook messages
 
