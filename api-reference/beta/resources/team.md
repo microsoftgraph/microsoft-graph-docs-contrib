@@ -10,7 +10,7 @@ A team is a collection of [channels](channel.md). A channel represents a topic, 
 |:---------------|:--------|:----------|
 |[Create team](../api/group_put_team.md) | [team](team.md) | Create a new team.|
 |[Get team](../api/group_get_team.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
-|[Update team](../api/group_patch_team.md) | [team](team.md) |Update the properties of a team object. |
+|[Update team](../api/group_patch_team.md) | [team](team.md) |Update the properties of the specified team. |
 
 ## Relationships
 | Relationship | Type	|Description|
