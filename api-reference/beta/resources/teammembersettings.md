@@ -2,20 +2,20 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Team settings for members to enables channel creation, adding bots etc.
+Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.
 
 ## teamMemberSettings Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|boolean|Allow channels to be added or updated.|
-|allowDeleteChannels|boolean|Allow channels to be deleted.   |
-|allowAddRemoveApps|boolean|Allow apps to be added or removed.|
-|allowCreateUpdateRemoveTabs|boolean|Allow tabs to be added or updated or removed. |
-|allowCreateUpdateRemoveConnectors|boolean|Allow connectors to be added or updated or removed. |
+|allowCreateUpdateChannels|Boolean|If set to true, members can add and update channels.|
+|allowDeleteChannels|Boolean|If set to true, members can delete channels.|
+|allowAddRemoveApps|Boolean|If set to true, members can add and remove apps.|
+|allowCreateUpdateRemoveTabs|Boolean|If set to true, members can add, update, and remove tabs. |
+|allowCreateUpdateRemoveConnectors|Boolean|If set to true, members can add, update, and remove connectors.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -31,7 +31,6 @@ Here is a JSON representation of the resource
   "allowCreateUpdateRemoveTabs": true,
   "allowCreateUpdateRemoveConnectors": true    
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

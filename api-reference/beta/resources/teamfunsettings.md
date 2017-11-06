@@ -2,19 +2,19 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Team fun settings.
+Settings to configure use of Giphy, memes, and stickers in the team.
 
 ## teamFunSettings Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowGiphy|boolean|Enable giphy.|
-|giphyContentRating|string(enum)|Giphy content rating. One of: `moderate, strict`|
-|allowStickersAndMemes|boolean|Enable stickers and memes.|
-|allowCustomMemes|boolean|Enable custom memes.|
+|allowGiphy|Boolean|If set to true, enables Giphy use.|
+|giphyContentRating|String (enum)|Giphy content rating. Possible values are: `moderate`, `strict`.|
+|allowStickersAndMemes|Boolean|If set to true, enables users to include stickers and memes.|
+|allowCustomMemes|Boolean|If set to true, enables users to include custom memes.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -29,7 +29,6 @@ Here is a JSON representation of the resource
   "allowStickersAndMemes": true,
   "allowCustomMemes": true
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

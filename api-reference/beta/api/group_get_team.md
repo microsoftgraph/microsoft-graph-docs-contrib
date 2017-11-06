@@ -16,10 +16,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/team
-
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](../../../concepts/query_parameters) to help customize the response.
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -32,7 +31,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [team](../resources/team.md) object in the response body.
 ## Example
-##### Request
+#### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -41,7 +40,7 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/groups/{id}/team
 ```
-##### Response
+#### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -53,30 +52,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 401
 
-{  
-  "memberSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true,
-    "allowAddRemoveApps": true,
-    "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
-  },
-  "guestSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
-  },
-  "messagingSettings": {
-    "allowUserEditMessages": true,
-    "allowUserDeleteMessages": true,
-    "allowOwnerDeleteMessages": true,
-    "allowTeamMentions": true,
-    "allowChannelMentions": true    
-  },
-  "funSettings": {
-    "allowGiphy": true,
-    "giphyContentRating": "strict",
-    "allowStickersAndMemes": true,
-    "allowCustomMemes": true
+{
+  "value":
+  {  
+    "memberSettings": {
+      "allowCreateUpdateChannels": true,
+      "allowDeleteChannels": true,
+      "allowAddRemoveApps": true,
+      "allowCreateUpdateRemoveTabs": true,
+      "allowCreateUpdateRemoveConnectors": true    
+    },
+    "guestSettings": {
+      "allowCreateUpdateChannels": true,
+      "allowDeleteChannels": true 
+    },
+    "messagingSettings": {
+      "allowUserEditMessages": true,
+      "allowUserDeleteMessages": true,
+      "allowOwnerDeleteMessages": true,
+      "allowTeamMentions": true,
+      "allowChannelMentions": true    
+    },
+    "funSettings": {
+      "allowGiphy": true,
+      "giphyContentRating": "strict",
+      "allowStickersAndMemes": true,
+      "allowCustomMemes": true
+    }
   }
 }
 ```

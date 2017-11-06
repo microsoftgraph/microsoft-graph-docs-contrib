@@ -2,8 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A team is a collection of [channels](channel.md).  A channel represents a topic, and therefore a logical isolation of discussion, within a Team. Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" channel.
-
+A team is a collection of [channels](channel.md). A channel represents a topic, and therefore a logical isolation of discussion, within a Team.
 
 ## Methods
 
@@ -16,14 +15,14 @@ A team is a collection of [channels](channel.md).  A channel represents a topic,
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|memberSettings|[teamMemberSettings](teammembersettings.md) |Settings for members to enables channel creation, adding bots etc.|
-|guestSettings|[teamGuestSettings](teamGuestSettings.md) |Settings for guests to enables channel creation, adding bots etc.|
-|messagingSettings|[teamMessagingSettings](teamMessagingSettings.md) |Settings for messaging and mentions in this team.|
-|funSettings|[teamFunSettings](teamFunSettings.md) |Settings for giphys, memes, etc in this team.|
+|memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
+|guestSettings|[teamGuestSettings](teamGuestSettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
+|messagingSettings|[teamMessagingSettings](teamMessagingSettings.md) |Settings to configure messaging and mentions in the team.|
+|funSettings|[teamFunSettings](teamFunSettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -35,7 +35,7 @@ In the request body, supply a JSON representation of [team](../resources/team.md
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+#### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -60,7 +60,7 @@ Content-length: 211
   }
 }
 ```
-##### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
