@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Settings to configure use of Giphy, memes, and stickers in the team.
+Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
 
 ## teamFunSettings Properties
 | Property	   | Type	|Description|

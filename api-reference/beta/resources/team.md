@@ -16,9 +16,9 @@ A team is a collection of [channels](channel.md). A channel represents a topic, 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
-|guestSettings|[teamGuestSettings](teamGuestSettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
-|messagingSettings|[teamMessagingSettings](teamMessagingSettings.md) |Settings to configure messaging and mentions in the team.|
-|funSettings|[teamFunSettings](teamFunSettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
+|guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
+|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
+|funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 
 ## JSON representation
 

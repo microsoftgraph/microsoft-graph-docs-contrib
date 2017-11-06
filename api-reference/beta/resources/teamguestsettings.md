@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Settings to configure whether guests can create, update, or delete channels in the team.
+Settings to configure whether guests can create, update, or delete channels in the [team](team.md).
 
 ## teamGuestSettings Properties
 | Property	   | Type	|Description|
