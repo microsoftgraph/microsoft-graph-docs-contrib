@@ -3922,7 +3922,8 @@
         <Item text="Create Forward message" url="/en-us/api-reference/beta/api/message_createforward" SEOKeyword="Create Forward message, Microsoft Graph API, Outlook Mail API" SEODescription="" />
         <Item text="Forward messages" url="/en-us/api-reference/beta/api/message_forward" SEOKeyword="Forward messages, Microsoft Graph API, Outlook Mail API" SEODescription="" />
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="Unsubscribe" url="/en-us/api-reference/beta/api/message_unsubscribe" />
+		<Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
         <Item text="List attachments" url="/en-us/api-reference/beta/api/message_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Add attachment" url="/en-us/api-reference/beta/api/message_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, message API" SEODescription="Use this API to create a new Attachment." />
         <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
@@ -4183,7 +4184,7 @@
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityfilecounts" />
 	  </Item>
 	  <Item text="OneDrive activity" url="/en-us/api-reference/beta/resources/onedrive_activity_reports" >
-		<Item text="Get account detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityuserdetail" />
 		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityusercounts" />
 		<Item text="Get file counts" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityfilecounts" />
 	  </Item>
