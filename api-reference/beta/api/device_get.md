@@ -44,6 +44,9 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/devices/{id}
 ```
+
+> Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

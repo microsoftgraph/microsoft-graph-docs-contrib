@@ -13,9 +13,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[List devices](../api/device_list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
 |[Update device](../api/device_update.md) | [device](device.md) |Update the properties of a device object. |
 |[Delete device](../api/device_delete.md) | None |Delete a device object. |
-|[Create registeredOwner](../api/device_post_registeredowners.md) |[directoryObject](directoryobject.md)| Add a user as a new owner of the device by posting to the registeredOwners navigation property.|
 |[List registeredOwners](../api/device_list_registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
-|[Create registeredUser](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| Add a registered user for the device by posting to the registeredUsers navigation property.|
 |[List registeredUsers](../api/device_list_registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
@@ -27,20 +25,20 @@ This resource lets you add your own data to custom properties using [extensions]
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. Required.|
-|alternativeSecurityIds|alternativeSecurityId collection| For internal use. Not nullable. |
+|alternativeSecurityIds|alternativeSecurityId collection| For internal use only. Not nullable. |
 |approximateLastSignInDateTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` Read-only. |
 |deviceId|Guid| Unique identifier set by Azure Device Registration Service at the time of registration. |
-|deviceMetadata|String| For internal use. Set to null. |
-|deviceVersion|Int32| For internal use. |
+|deviceMetadata|String| For interal use only. Set to null. |
+|deviceVersion|Int32| For interal use only. |
 |displayName|String|The display name for the device. Required. |
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only.|
 |isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**. Read-only. |
-|isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app such as Intune; otherwise, **false**.|
+|isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**.|
 |onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` Read-only.|
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only. |
 |operatingSystem|String| The type of operating system on the device. Required. |
 |operatingSystemVersion|String|The version of the operating system on the device. Required. |
-|physicalIds|String collection| For internal use. Not nullable. |
+|physicalIds|String collection| For interal use only. Not nullable. |
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br />**Workplace** - indicates *bring your own personal devices*<br />**AzureAd** - Cloud only joined devices<br />**ServerAd** - on-premises domain joined devices joined to Azure AD. For more details, see [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 
 ## Relationships
