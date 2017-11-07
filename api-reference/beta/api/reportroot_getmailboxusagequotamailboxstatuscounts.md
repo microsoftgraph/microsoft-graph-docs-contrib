@@ -147,7 +147,7 @@ Content-Length: 311
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "good": 155, 
+      "underLimit": 155, 
       "warningIssued": 0, 
       "sendProhibited": 0, 
       "sendReceiveProhibited": 0, 

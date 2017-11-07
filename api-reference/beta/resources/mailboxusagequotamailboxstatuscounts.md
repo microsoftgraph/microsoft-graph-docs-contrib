@@ -5,7 +5,7 @@
 | Property              | Type   |
 | :-------------------- | :----- |
 | reportRefreshDate     | Date   |
-| good                  | Int64  |
+| underLimit            | Int64  |
 | warningIssued         | Int64  |
 | sendProhibited        | Int64  |
 | sendReceiveProhibited | Int64  |
@@ -25,7 +25,7 @@ The following is a JSON representation of the resource.
 ```http
 {
   "reportRefreshDate": "Date", 
-  "good": 1024, 
+  "underLimit": 1024, 
   "warningIssued": 1024, 
   "sendProhibited": 1024, 
   "sendReceiveProhibited": 1024, 

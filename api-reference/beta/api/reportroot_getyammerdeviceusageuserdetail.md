@@ -163,12 +163,12 @@ Content-Length: 442
       "userState": "active", 
       "stateChangeDate": "2012-06-26", 
       "lastActivityDate": "2017-09-06", 
-      "web": true, 
-      "windowsPhone": false, 
-      "androidPhone": false, 
-      "iPhone": false, 
-      "iPad": false, 
-      "other": false, 
+      "usedWeb": true, 
+      "usedWindowsPhone": false, 
+      "usedAndroidPhone": false, 
+      "usediPhone": false, 
+      "usediPad": false, 
+      "usedOthers": false, 
       "reportPeriod": "7"
     }
   ]

@@ -10,12 +10,12 @@
 | userState         | String  |
 | stateChangeDate   | Date    |
 | lastActivityDate  | Date    |
-| web               | Boolean |
-| windowsPhone      | Boolean |
-| androidPhone      | Boolean |
-| iPhone            | Boolean |
-| iPad              | Boolean |
-| other             | Boolean |
+| usedWeb           | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
+| usedOthers        | Boolean |
 | reportPeriod      | String  |
 
 ## JSON representation
@@ -35,12 +35,12 @@ The following is a JSON representation of the resource.
   "userState": "String", 
   "stateChangeDate": "Date", 
   "lastActivityDate": "Date", 
-  "web": true, 
-  "windowsPhone": true, 
-  "androidPhone": true, 
-  "iPhone": true, 
-  "iPad": true, 
-  "other": true, 
+  "usedWeb": true, 
+  "usedWindowsPhone": true, 
+  "usedAndroidPhone": true, 
+  "usediPhone": true, 
+  "usediPad": true, 
+  "usedOthers": true, 
   "reportPeriod": "String"
 }
 ```

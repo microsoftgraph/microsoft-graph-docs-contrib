@@ -7,11 +7,11 @@
 | reportRefreshDate | Date    |
 | userPrincipalName | String  |
 | lastActivityDate  | Date    |
-| windows           | Boolean |
-| windowsPhone      | Boolean |
-| androidPhone      | Boolean |
-| iPhone            | Boolean |
-| iPad              | Boolean |
+| usedWindows       | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
 | reportPeriod      | String  |
 
 ## JSON representation
@@ -28,11 +28,11 @@ The following is a JSON representation of the resource.
   "reportRefreshDate": "Date", 
   "userPrincipalName": "String", 
   "lastActivityDate": "Date", 
-  "windows": true, 
-  "windowsPhone": true, 
-  "androidPhone": true, 
-  "iPhone": true, 
-  "iPad": true, 
+  "usedWindows": true, 
+  "usedWindowsPhone": true, 
+  "usedAndroidPhone": true, 
+  "usediPhone": true, 
+  "usediPad": true, 
   "reportPeriod": "String"
 }
 ```

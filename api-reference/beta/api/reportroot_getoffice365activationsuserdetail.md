@@ -150,7 +150,7 @@ Content-Length: 400
       "userActivationCounts": [
         {
           "productLicenses": "Project Client", 
-          "lastActivityDate": "2017-08-20", 
+          "lastActivatedDate": "2017-08-20", 
           "windows": 5, 
           "mac": 0, 
           "windows10Mobile": 0, 

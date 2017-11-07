@@ -156,11 +156,11 @@ Content-Length: 356
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
       "lastActivityDate": "2017-09-01", 
-      "windows": true, 
-      "windowsPhone": false, 
-      "androidPhone": false, 
-      "iPhone": false, 
-      "iPad": false, 
+      "usedWindows": true, 
+      "usedWindowsPhone": false, 
+      "usedAndroidPhone": false, 
+      "usediPhone": false, 
+      "usediPad": false, 
       "reportPeriod": "7"
     }
   ]
