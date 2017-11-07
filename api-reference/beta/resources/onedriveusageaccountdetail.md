@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
   "siteUrl": "String", 
   "ownerDisplayName": "String", 
   "isDeleted": true, 
-  "lastActivityDate": Date", 
+  "lastActivityDate": "Date", 
   "fileCount": 1024, 
   "activeFileCount": 1024, 
   "storageUsedInByte": 1024, 
