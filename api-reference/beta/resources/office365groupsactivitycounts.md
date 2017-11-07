@@ -5,11 +5,11 @@
 | Property               | Type   | Description                              |
 | :--------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate      | Date   | The latest date of the content.          |
-| exchangeEmailsReceived | Int64  | The number of emails sent to the Group mailbox. |
+| exchangeEmailsReceived | Int64  | The number of emails received by Group mailbox. |
 | yammerMessagesPosted   | Int64  | The number of messages posted to the Yammer group. |
-| yammerMessagesRead     | Int64  | The number of messages read by the Yammer group. |
-| yammerMessagesLiked    | Int64  | The number of messages liked by the Yammer group. |
-| reportDate             | Date   |                                          |
+| yammerMessagesRead     | Int64  | The number of messages read in Yammer group. |
+| yammerMessagesLiked    | Int64  | The number of messages liked in Yammer group. |
+| reportDate             | Date   | The date on which a number of emails were sent to Group mailbox or a number of messages were posted, read, or liked in Yammer group. |
 | reportPeriod           | String | The range for report dates in days.      |
 
 ## JSON representation

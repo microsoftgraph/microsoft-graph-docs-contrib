@@ -13,14 +13,14 @@
 | memberCount                      | Int64   | The group member count.                  |
 | guestCount                       | Int64   | The group guest count.                   |
 | exchangeReceivedEmailCount       | Int64   | The number of email that the group mailbox received. |
-| sharePointActiveFileCount        | Int64   |                                          |
-| yammerPostedMessageCount         | Int64   |                                          |
-| yammerReadMessageCount           | Int64   |                                          |
-| yammerLikedMessageCount          | Int64   |                                          |
+| sharePointActiveFileCount        | Int64   | The number of active files in SharePoint Group site. |
+| yammerPostedMessageCount         | Int64   | The number of messages posted to Yammer group. |
+| yammerReadMessageCount           | Int64   | The number of messages read in Yammer group. |
+| yammerLikedMessageCount          | Int64   | The number of messages liked in Yammer group. |
 | exchangeMailboxTotalItemCount    | Int64   | The number of items in the group mailbox. |
 | exchangeMailboxStorageUsedInByte | Int64   | The storage used of the group mailbox.   |
-| sharePointTotalFileCount         | Int64   |                                          |
-| sharePointSiteStorageUsedInByte  | Int64   |                                          |
+| sharePointTotalFileCount         | Int64   | The total number of files in SharePoint Group site. |
+| sharePointSiteStorageUsedInByte  | Int64   | The storage used by SharePoint Group site. |
 | reportPeriod                     | String  | The range for report dates in days.      |
 
 ## JSON representation

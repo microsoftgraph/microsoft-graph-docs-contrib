@@ -7,7 +7,7 @@
 | reportRefreshDate | Date   | The latest date of the content.          |
 | total             | Int64  | The total number of files in the SharePoint document library of the group. |
 | active            | Int64  | The number of files that were viewed, edited, shared, or synced in the SharePoint document library of the group. |
-| reportDate        | Date   |                                          |
+| reportDate        | Date   | The date on which a number of file were active in SharePoint Group site. |
 | reportPeriod      | String | The range for report dates in days.      |
 
 ## JSON representation

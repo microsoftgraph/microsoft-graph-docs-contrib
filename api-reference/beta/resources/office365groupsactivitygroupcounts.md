@@ -6,8 +6,8 @@
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Date   | The latest date of the content.          |
 | total             | Int64  | The total number of groups.              |
-| active            | Int64  | The number of active groups. The following scenarios will make the group active: group mailbox received email; user viewed, edited, shared, or synced files in SharePoint document library; user viewed SharePoint pages; user posted, read, or liked messages in Yammer group. |
-| reportDate        | Date   |                                          |
+| active            | Int64  | The number of active groups. Any group which has the following scenarios is considered an active group: group mailbox received email; user viewed, edited, shared, or synced files in SharePoint document library; user viewed SharePoint pages; user posted, read, or liked messages in Yammer group. |
+| reportDate        | Date   | The date on which a number of groups were active. |
 | reportPeriod      | String | The range for report dates in days.      |
 
 ## JSON representation

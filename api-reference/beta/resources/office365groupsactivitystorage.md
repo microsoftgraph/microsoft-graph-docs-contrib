@@ -7,7 +7,7 @@
 | reportRefreshDate        | Date   | The latest date of the content.          |
 | mailboxStorageUsedInByte | Int64  | The storage used in group mailbox.       |
 | siteStorageUsedInByte    | Int64  | The storage used in SharePoint document library. |
-| reportDate               | Date   |                                          |
+| reportDate               | Date   | The snapshot date for Exchange and SharePoint used storage. |
 | reportPeriod             | String | The range for report dates in days.      |
 
 ## JSON representation
