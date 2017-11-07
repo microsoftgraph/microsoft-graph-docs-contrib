@@ -1,0 +1,90 @@
+# skypeForBusinessActivityUserDetail resource type
+
+## Properties
+
+| Property                                 | Type              |
+| :--------------------------------------- | :---------------- |
+| totalPeerToPeerSessionCount              | Int64             |
+| totalOrganizedConferenceCount            | Int64             |
+| totalParticipatedConferenceCount         | Int64             |
+| peerToPeerLastActivityDate               | Date              |
+| organizedConferenceLastActivityDate      | Date              |
+| participatedConferenceLastActivityDate   | Date              |
+| peerToPeerIMCount                        | Int64             |
+| peerToPeerAudioCount                     | Int64             |
+| peerToPeerAudioMinutes                   | Int64             |
+| peerToPeerVideoCount                     | Int64             |
+| peerToPeerVideoMinutes                   | Int64             |
+| peerToPeerAppSharingCount                | Int64             |
+| peerToPeerFileTransferCount              | Int64             |
+| organizedConferenceIMCount               | Int64             |
+| organizedConferenceAudioVideoCount       | Int64             |
+| organizedConferenceAudioVideoMinutes     | Int64             |
+| organizedConferenceAppSharingCount       | Int64             |
+| organizedConferenceWebCount              | Int64             |
+| organizedConferenceDialInOut3rdPartyCount | Int64             |
+| organizedConferenceCloudDialInOutMicrosoftCount | Int64             |
+| organizedConferenceCloudDialInMicrosoftMinutes | Int64             |
+| organizedConferenceCloudDialOutMicrosoftMinutes | Int64             |
+| participantedConferenceIMCount           | Int64             |
+| participantedConferenceAudioVideoCount   | Int64             |
+| participantedConferenceAudioVideoMinutes | Int64             |
+| participantedConferenceAppSharingCount   | Int64             |
+| participantedConferenceWebCount          | Int64             |
+| participantedConferenceDialInOut3rdPartyCount | Int64             |
+| reportRefreshDate                        | Date              |
+| userPrincipalName                        | String            |
+| isDeleted                                | Boolean           |
+| deletedDate                              | Date              |
+| lastActivityDate                         | Date              |
+| assignedProducts                         | String collection |
+| reportPeriod                             | String            |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.skypeForBusinessActivityUserDetail"
+} -->
+
+```http
+{
+  "totalPeerToPeerSessionCount": 1024, 
+  "totalOrganizedConferenceCount": 1024, 
+  "totalParticipatedConferenceCount": 1024, 
+  "peerToPeerLastActivityDate": "Date", 
+  "organizedConferenceLastActivityDate": "Date", 
+  "participatedConferenceLastActivityDate": "Date", 
+  "peerToPeerIMCount": 1024, 
+  "peerToPeerAudioCount": 1024, 
+  "peerToPeerAudioMinutes": 1024, 
+  "peerToPeerVideoCount": 1024, 
+  "peerToPeerVideoMinutes": 1024, 
+  "peerToPeerAppSharingCount": 1024, 
+  "peerToPeerFileTransferCount": 1024, 
+  "organizedConferenceIMCount": 1024, 
+  "organizedConferenceAudioVideoCount": 1024, 
+  "organizedConferenceAudioVideoMinutes": 1024, 
+  "organizedConferenceAppSharingCount": 1024, 
+  "organizedConferenceWebCount": 1024, 
+  "organizedConferenceDialInOut3rdPartyCount": 1024, 
+  "organizedConferenceCloudDialInOutMicrosoftCount": 1024, 
+  "organizedConferenceCloudDialInMicrosoftMinutes": 1024, 
+  "organizedConferenceCloudDialOutMicrosoftMinutes": 1024, 
+  "participantedConferenceIMCount": 1024, 
+  "participantedConferenceAudioVideoCount": 1024, 
+  "participantedConferenceAudioVideoMinutes": 1024, 
+  "participantedConferenceAppSharingCount": 1024, 
+  "participantedConferenceWebCount": 1024, 
+  "participantedConferenceDialInOut3rdPartyCount": 1024, 
+  "reportRefreshDate": "Date", 
+  "userPrincipalName": "String", 
+  "isDeleted": true, 
+  "deletedDate": "Date", 
+  "lastActivityDate": "Date", 
+  "assignedProducts": ["String"], 
+  "reportPeriod": "String"
+}
+```
