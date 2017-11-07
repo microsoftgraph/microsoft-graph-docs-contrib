@@ -8,8 +8,8 @@ The device usage reports for Yammer give you information about which devices you
 
 ## Reports
 
-| Function                                 | CSV Return Type | JSON R eturn Type | Description                              |
-| :--------------------------------------- | :-------------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_getyammerdeviceusageuserdetail.md) | Stream       |[yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md)   | Get details about Yammer device usage by user. |
-| [Get distribution user counts](../api/reportroot_getyammerdeviceusagedistributionusercounts.md) | Stream     |[yammerDeviceUsageDistributionUserCounts](../resources/yammerdeviceusagedistributionusercounts.md)     | Get the number of users by device type.  |
-| [Get user counts](../api/reportroot_getyammerdeviceusageusercounts.md) | Stream    |[yammerDeviceUsageUserCounts](../resources/yammerdeviceusageusercounts.md)      | Get the number of daily users by device type. |
+| Function                                 | CSV Return Type | JSON R eturn Type                        | Description                              |
+| :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
+| [Get user detail](../api/reportroot_getyammerdeviceusageuserdetail.md) | Stream          | [yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md) | Get details about Yammer device usage by user. |
+| [Get distribution user counts](../api/reportroot_getyammerdeviceusagedistributionusercounts.md) | Stream          | [yammerDeviceUsageDistributionUserCounts](../resources/yammerdeviceusagedistributionusercounts.md) | Get the number of users by device type.  |
+| [Get user counts](../api/reportroot_getyammerdeviceusageusercounts.md) | Stream          | [yammerDeviceUsageUserCounts](../resources/yammerdeviceusageusercounts.md) | Get the number of daily users by device type. |
