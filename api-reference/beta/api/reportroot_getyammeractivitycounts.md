@@ -59,7 +59,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[yammerActivitySummary](.,/resources/yammeractivitysummary.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a **[yammerActivitySummary](../resources/yammeractivitysummary.md)** object in the response body.
 
 ## Example
 
