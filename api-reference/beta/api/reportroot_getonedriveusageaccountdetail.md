@@ -36,6 +36,8 @@ In the request URL, provide the chosen query parameter with a valid value.
 
 > **Note:** You need to set either period or date in the URL.
 
+This method supports the `$format`, `$top` and `$skipToken` [OData query parameters](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+
 ## Request headers
 
 | Name          | Description               |
@@ -43,6 +45,8 @@ In the request URL, provide the chosen query parameter with a valid value.
 | Authorization | Bearer {token}. Required. |
 
 ## Response
+
+### CSV
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
@@ -61,7 +65,17 @@ The CSV file has the following headers for columns.
 - Storage Allocated (Byte)
 - Report Period
 
+### JSON
+
+If successful, this method returns a `200 OK` response code and an **[oneDriveUsageAccountDetail](../resources/onedriveusageaccountdetail.md)** object in the response body.
+
+The default page size for this request is 2000 items.
+
 ## Example
+
+The following is an example that outputs CSV.
+
+### CSV
 
 #### Request
 
@@ -69,11 +83,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getonedriveusageuserdetail"
+  "name": "reportroot_getonedriveusageaccountdetail_csv"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountDetail(period='D7')
+GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountDetail(period='D7')?$format=text/csv
 ```
 
 #### Response
@@ -101,4 +115,56 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Storage Used (Byte),Storage Allocated (Byte),Report Period
+```
+
+### JSON
+
+The following is an example that returns JSON.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getonedriveusageaccountdetail_json"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountDetail(period='D7')?$format=application/json
+```
+
+#### Response
+
+The following is an example of the response.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oneDriveUsageAccountDetail"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 400
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.oneDriveUsageAccountDetail)", 
+  "value": [
+    {
+      "reportRefreshDate": "2017-09-01", 
+      "siteUrl": "siteUrl-value", 
+      "ownerDisplayName": "ownerDisplayName-value", 
+      "isDeleted": false, 
+      "lastActivityDate": "2017-09-01", 
+      "fileCount": 9, 
+      "activeFileCount": 5, 
+      "storageUsedInByte": 12190375, 
+      "storageAllocatedInByte": 549755813880, 
+      "reportPeriod": "7"
+    }
+  ]
+}
 ```
