@@ -78,7 +78,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added new [team](../api-reference/beta/resources/team.md) entity.|
-|Addition|Beta|Added [create](../api-reference/beta/api/group_put_team.md), [get](../api-reference/beta/api/group_get_team.md), and [update](../api-reference/beta/api/group_patch_team.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
+|Addition|Beta|Added [create](../api-reference/beta/api/team_put_teams.md), [get](../api-reference/beta/api/team_get.md), and [update](../api-reference/beta/api/team_update.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
 
 ### Outlook messages
 
