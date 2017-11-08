@@ -41,12 +41,9 @@ If successful, this method returns `200 OK` response code. If the group is added
 
 ## Example
 
-##### Request
+#### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "grouplifecyclepolicy_addgroup"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/addGroup
 Content-type: application/json
@@ -57,7 +54,8 @@ Content-length: 57
 }
 ```
 
-##### Response
+#### Response
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK

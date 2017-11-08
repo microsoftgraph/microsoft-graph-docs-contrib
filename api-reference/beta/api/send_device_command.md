@@ -84,12 +84,9 @@ HTTP/1.1 201 OK
 
 Here is an example of a LaunchURI request; it will launch a URI or an application on the target device. To launch a URI or an app, issue a POST using the ID of the device (obtained from doing a GET call on `me/devices`). Set the *Type* parameters to *LaunchURI* and provide a URI value such as http://bing.com.
 
-##### Request
+#### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "post_command"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 
@@ -101,16 +98,11 @@ Content-Type: application/json; charset=utf-8
 
 ```
 
-##### Response 
+#### Response 
 
 Here is an example of the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
-  "isCollection": true
-} -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 201 OK
@@ -138,12 +130,9 @@ Here is an example of querying an app service on a device. To use an app service
 
 Several additional properties must be set in the call. *Type* must be set to *AppService*, *AppServiceName* must be set to the name of the app service defined in the application, *PackageFamilyName* must be set to the package family name defined in the app manifest, and *Payload* holds the keys and values for the service you are calling within the target application.
 
-##### Request
+#### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "post_command"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 
@@ -151,24 +140,22 @@ POST me/devices/{id}/commands
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 
-{ "type" : "AppService", "appServiceName" : "com.microsoft.test.cdppingpongservice", "packageFamilyName" : "5085ShawnHenry.RomanTestApp_jsjw7knzsgcce", "payload" : {"Type":"Toast","Title":"Hello","Subtitle":"World!"} }
-
+{
+  "type" : "AppService",
+  "appServiceName" : "com.microsoft.test.cdppingpongservice",
+  "packageFamilyName" : "5085ShawnHenry.RomanTestApp_jsjw7knzsgcce",
+  "payload" : {
+    "Type":"Toast","Title":"Hello","Subtitle":"World!"}
+  }
 ```
 
-##### Response
+#### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
-  "isCollection": true
-} -->
-
+<!-- { "blockType": "ignored" } -->
 
 ```http
-
 HTTP/1.1 201 OK
 
 {
@@ -186,5 +173,4 @@ HTTP/1.1 201 OK
     "Subtitle": "World!"
   }
 }
-
 ```
