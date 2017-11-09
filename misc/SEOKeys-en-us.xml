@@ -293,7 +293,10 @@
   </Item>
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="Workbook" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
-      <Item text="List tables" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+      <Item text="Create session" url="/en-us/api-reference/v1.0/api/workbook_createsession" />
+	  <Item text="Refresh session" url="/en-us/api-reference/v1.0/api/workbook_closesession" />
+	  <Item text="Close session" url="/en-us/api-reference/v1.0/api/workbook_refreshsession" />
+	  <Item text="List tables" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
       <Item text="List worksheets" url="/en-us/api-reference/v1.0/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
       <Item text="List names" url="/en-us/api-reference/v1.0/api/workbook_list_names" SEOKeyword="" SEODescription="" />
     </Item>
@@ -311,7 +314,11 @@
     </Item>
     <Item text="Range" url="/en-us/api-reference/v1.0/resources/range" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
       <Item text="Get range" url="/en-us/api-reference/v1.0/api/range_get" SEOKeyword="" SEODescription="" />
-      <Item text="Merge" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
+	  <Item text="Update range" url="/en-us/api-reference/v1.0/range_update" />
+	  <Item text="Insert range" url="/en-us/api-reference/v1.0/range_insert" />
+	  <Item text="Get range format" url="/en-us/api-reference/v1.0/rangeformat_get"/>
+	  <Item text="Update range format" url="/en-us/api-reference/v1.0/rangeformat_update"/>
+	  <Item text="Merge" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
       <Item text="Unmerge" url="/en-us/api-reference/v1.0/api/range_unmerge" SEOKeyword="" SEODescription="" />
       <Item text="Clear" url="/en-us/api-reference/v1.0/api/range_clear" SEOKeyword="" SEODescription="" />
       <Item text="Delete" url="/en-us/api-reference/v1.0/api/range_delete" SEOKeyword="" SEODescription="" />
@@ -320,22 +327,29 @@
       <Item text="Add table" url="/en-us/api-reference/v1.0/api/tablecollection_add" SEOKeyword="" SEODescription="" />
       <Item text="Get table" url="/en-us/api-reference/v1.0/api/table_get" SEOKeyword="" SEODescription="" />
       <Item text="Update table" url="/en-us/api-reference/v1.0/api/table_update" SEOKeyword="" SEODescription="" />
-      <Item text="Get range" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
+	  <Item text="Delete table" url="/en-us/api-reference/v1.0/api/table_delete" />
       <Item text="List rows" url="/en-us/api-reference/v1.0/api/table_list_rows" SEOKeyword="" SEODescription="" />
+	  <Item text="Create row" url="/en-us/api-reference/v1.0/api/table_post_rows" />
       <Item text="List columns" url="/en-us/api-reference/v1.0/api/table_list_columns" SEOKeyword="" SEODescription="" />
-	  <Item text="Create table row" url="/en-us/api-reference/v1.0/api/table_post_rows" />
-	  <Item text="Create table column" url="/en-us/api-reference/v1.0/api/table_post_columns" />
+	  <Item text="Create column" url="/en-us/api-reference/v1.0/api/table_post_columns" />
+	  <Item text="Get range" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
     </Item>
     <Item text="Chart" url="/en-us/api-reference/v1.0/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
-      <Item text="Get chart" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+      <Item text="List charts" url="/en-us/api-reference/v1.0/api/chart_list" />
+	  <Item text="Get chart" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+	  <Item text="Update chart" url="/en-us/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
+	  <Item text="Delete chart" url="/en-us/api-reference/v1.0/api/chart_delete" />
+	  <Item text="Add chart" url="/en-us/api-reference/v1.0/api/chartcollection_add" />
       <Item text="Get chart image" url="/en-us/api-reference/v1.0/api/chart_image" SEOKeyword="" SEODescription="" />
       <Item text="Reset data" url="/en-us/api-reference/v1.0/api/chart_setdata" SEOKeyword="" SEODescription="" />
       <Item text="Set position data" url="/en-us/api-reference/v1.0/api/chart_setposition" SEOKeyword="" SEODescription="" />
-      <Item text="Update chart" url="/en-us/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
     </Item>
-    <Item text="Nameditem" url="/en-us/api-reference/v1.0/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
-      <Item text="List nameditem" url="/en-us/api-reference/v1.0/api/nameditem_get" SEOKeyword="" SEODescription="" />
-      <Item text="List range" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
+    <Item text="Named item" url="/en-us/api-reference/v1.0/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
+      <Item text="List named item" url="/en-us/api-reference/v1.0/api/nameditem_list" SEOKeyword="" SEODescription="" />
+      <Item text="Get named item" url="/en-us/api-reference/v1.0/api/nameditem_get" />
+	  <Item text="Update named item" url="/en-us/api-reference/v1.0/api/nameditem_update" />
+	  <Item text="Add named item" url="/en-us/api-reference/v1.0/api/nameditem_add" />
+	  <Item text="List range" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
     </Item>
   </Item>
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="user drive, Microsoft Graph API, user API" SEODescription="OneDrive APIs">
@@ -1086,7 +1100,10 @@
     </Item>
     <Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="Workbook" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
-        <Item text="List tables" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+        <Item text="Create session" url="/en-us/api-reference/beta/api/workbook_createsession" />
+	    <Item text="Refresh session" url="/en-us/api-reference/beta/api/workbook_closesession" />
+	    <Item text="Close session" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
+		<Item text="List tables" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
         <Item text="List worksheets" url="/en-us/api-reference/beta/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
         <Item text="List names" url="/en-us/api-reference/beta/api/workbook_list_names" SEOKeyword="" SEODescription="" />
       </Item>
@@ -1104,7 +1121,11 @@
       </Item>
       <Item text="Range" url="/en-us/api-reference/beta/resources/range" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="Get range" url="/en-us/api-reference/beta/api/range_get" SEOKeyword="" SEODescription="" />
-        <Item text="Merge" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
+        <Item text="Update range" url="/en-us/api-reference/beta/range_update" />
+	    <Item text="Insert range" url="/en-us/api-reference/beta/range_insert" />
+	    <Item text="Get range format" url="/en-us/api-reference/beta/rangeformat_get"/>
+	    <Item text="Update range format" url="/en-us/api-reference/beta/rangeformat_update"/>
+		<Item text="Merge" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
         <Item text="Unmerge" url="/en-us/api-reference/beta/api/range_unmerge" SEOKeyword="" SEODescription="" />
         <Item text="Clear" url="/en-us/api-reference/beta/api/range_clear" SEOKeyword="" SEODescription="" />
         <Item text="Delete" url="/en-us/api-reference/beta/api/range_delete" SEOKeyword="" SEODescription="" />
@@ -1113,22 +1134,29 @@
         <Item text="Add table" url="/en-us/api-reference/beta/api/tablecollection_add" SEOKeyword="" SEODescription="" />
         <Item text="Get table" url="/en-us/api-reference/beta/api/table_get" SEOKeyword="" SEODescription="" />
         <Item text="Update table" url="/en-us/api-reference/beta/api/table_update" SEOKeyword="" SEODescription="" />
-        <Item text="Get range" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
+        <Item text="Delete table" url="/en-us/api-reference/beta/api/table_delete" />
         <Item text="List rows" url="/en-us/api-reference/beta/api/table_list_rows" SEOKeyword="" SEODescription="" />
-        <Item text="List columns" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
-		<Item text="Create table row" url="/en-us/api-reference/beta/api/table_post_rows" />
-	    <Item text="Create table column" url="/en-us/api-reference/beta/api/table_post_columns" />
+        <Item text="Create row" url="/en-us/api-reference/beta/api/table_post_rows" />
+		<Item text="List columns" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+		<Item text="Create column" url="/en-us/api-reference/beta/api/table_post_columns" />
+		<Item text="Get range" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
       </Item>
       <Item text="Chart" url="/en-us/api-reference/beta/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
-        <Item text="Get chart" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
-        <Item text="Get chart image" url="/en-us/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
+        <Item text="List charts" url="/en-us/api-reference/beta/api/chart_list" />
+		<Item text="Get chart" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
+        <Item text="Update chart" url="/en-us/api-reference/beta/api/chart_update" SEOKeyword="" SEODescription="" />
+		<Item text="Delete chart" url="/en-us/api-reference/beta/api/chart_delete" />
+		<Item text="Add chart" url="/en-us/api-reference/beta/api/chartcollection_add" />
+		<Item text="Get chart image" url="/en-us/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
         <Item text="Reset data" url="/en-us/api-reference/beta/api/chart_setdata" SEOKeyword="" SEODescription="" />
         <Item text="Set position data" url="/en-us/api-reference/beta/api/chart_setposition" SEOKeyword="" SEODescription="" />
-        <Item text="Update chart" url="/en-us/api-reference/beta/api/chart_update" SEOKeyword="" SEODescription="" />
       </Item>
-      <Item text="Nameditem" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
-        <Item text="List nameditem" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
-        <Item text="List range" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
+      <Item text="Named item" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
+        <Item text="List named item" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
+        <Item text="Get named item" url="/en-us/api-reference/beta/api/nameditem_get" />
+	    <Item text="Update named item" url="/en-us/api-reference/beta/api/nameditem_update" />
+	    <Item text="Add named item" url="/en-us/api-reference/beta/api/nameditem_add" />
+		<Item text="List range" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
       </Item>
     </Item>
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
