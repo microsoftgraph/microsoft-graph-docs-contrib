@@ -44,9 +44,9 @@ If successful, this method returns `200 OK` response code. If the group is remov
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "grouplifecyclepolicy_removegroup"
-}-->
+} -->
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/removeGroup
 Content-type: application/json
@@ -58,6 +58,7 @@ Content-length: 57
 ```
 
 ##### Response
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
