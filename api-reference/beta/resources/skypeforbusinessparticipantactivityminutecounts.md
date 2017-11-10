@@ -18,7 +18,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.skypeForBusinessParticipantActivityMinuteCounts"
 } -->
 
-```http
+```json
 {
   "audiovideo": 1024, 
   "reportRefreshDate": "Date", 

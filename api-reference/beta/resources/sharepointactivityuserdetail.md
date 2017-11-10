@@ -26,7 +26,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.sharePointActivityUserDetail"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "userPrincipalName": "String", 

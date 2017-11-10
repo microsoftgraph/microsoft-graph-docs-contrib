@@ -8,7 +8,7 @@
 | mailboxStorageUsedInByte | Int64  | The storage used in group mailbox.       |
 | siteStorageUsedInByte    | Int64  | The storage used in SharePoint document library. |
 | reportDate               | Date   | The snapshot date for Exchange and SharePoint used storage. |
-| reportPeriod             | String | The range for report dates in days.      |
+| reportPeriod             | String | The number of days the report covers.    |
 
 ## JSON representation
 
@@ -19,7 +19,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.office365GroupsActivityStorage"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "mailboxStorageUsedInByte": 1024, 

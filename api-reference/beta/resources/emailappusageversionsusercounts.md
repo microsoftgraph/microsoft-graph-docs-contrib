@@ -21,7 +21,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.emailAppUsageVersionsUserCounts"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "outlook2016": 1024, 

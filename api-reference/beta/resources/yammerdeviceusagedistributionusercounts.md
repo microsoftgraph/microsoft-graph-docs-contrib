@@ -22,7 +22,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.yammerDeviceUsageDistributionUserCounts"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "web": 1024, 

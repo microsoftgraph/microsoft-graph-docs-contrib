@@ -26,7 +26,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.yammerGroupsActivityDetail"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "groupDisplayName": "String", 

@@ -21,7 +21,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.siteActivitySummary"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "viewedOrEdited": 1024, 

@@ -18,7 +18,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.sharePointActivityPages"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "visitedPageCount": 1024, 

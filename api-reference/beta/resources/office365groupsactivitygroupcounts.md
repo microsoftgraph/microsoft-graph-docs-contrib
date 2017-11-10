@@ -6,9 +6,9 @@
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Date   | The latest date of the content.          |
 | total             | Int64  | The total number of groups.              |
-| active            | Int64  | The number of active groups. Any group which has the following scenarios is considered an active group: group mailbox received email; user viewed, edited, shared, or synced files in SharePoint document library; user viewed SharePoint pages; user posted, read, or liked messages in Yammer group. |
+| active            | Int64  | The number of active groups. A group is considered active if any of the following occurred: group mailbox received email; user viewed, edited, shared, or synced files in SharePoint document library; user viewed SharePoint pages; user posted, read, or liked messages in Yammer group. |
 | reportDate        | Date   | The date on which a number of groups were active. |
-| reportPeriod      | String | The range for report dates in days.      |
+| reportPeriod      | String | The number of days the report covers.    |
 
 ## JSON representation
 
@@ -19,7 +19,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.office365GroupsActivityGroupCounts"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "total": 1024, 

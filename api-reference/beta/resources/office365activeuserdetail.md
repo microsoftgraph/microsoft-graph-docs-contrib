@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.office365ActiveUserDetail"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "userPrincipalName": "String", 

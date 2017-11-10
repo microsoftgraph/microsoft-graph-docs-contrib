@@ -9,7 +9,7 @@
 | isDeleted                        | Boolean | Whether this user has been deleted or soft deleted. |
 | ownerPrincipalName               | String  | The group owner principal name.          |
 | lastActivityDate                 | Date    | The last activity date for the following scenarios:  group mailbox received email; user viewed, edited, shared, or synced files in SharePoint document library; user viewed SharePoint pages; user posted, read, or liked messages in Yammer group. |
-| groupType                        | String  | Group type. 'Public' or 'Private'.       |
+| groupType                        | String  | The group type. Possible values are: **Public** or **Private**. |
 | memberCount                      | Int64   | The group member count.                  |
 | guestCount                       | Int64   | The group guest count.                   |
 | exchangeReceivedEmailCount       | Int64   | The number of email that the group mailbox received. |
@@ -21,7 +21,7 @@
 | exchangeMailboxStorageUsedInByte | Int64   | The storage used of the group mailbox.   |
 | sharePointTotalFileCount         | Int64   | The total number of files in SharePoint Group site. |
 | sharePointSiteStorageUsedInByte  | Int64   | The storage used by SharePoint Group site. |
-| reportPeriod                     | String  | The range for report dates in days.      |
+| reportPeriod                     | String  | The number of days the report covers.    |
 
 ## JSON representation
 
@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.office365GroupsActivityDetail"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "groupDisplayName": "String", 

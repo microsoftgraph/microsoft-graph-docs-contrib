@@ -20,7 +20,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.skypeForBusinessActivityCounts"
 } -->
 
-```http
+```json
 {
   "peerToPeer": 1024, 
   "organized": 1024, 

@@ -20,7 +20,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.oneDriveUsageFileCounts"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "siteType": "String", 

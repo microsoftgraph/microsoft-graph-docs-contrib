@@ -21,7 +21,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.office365ActivationCounts"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "productType": "String", 

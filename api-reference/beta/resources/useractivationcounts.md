@@ -4,7 +4,7 @@
 
 | Property          | Type   | Description                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productLicenses   | String | The product type such as "Office 365 ProPlus", "Project Client", "Visio Pro for Office 365". |
+| productLicenses   | String | The product type such as "Office 365 ProPlus", "Project Client", and "Visio Pro for Office 365". |
 | lastActivatedDate | Date   | The date of the latest activation.       |
 | windows           | Int64  | The activation count on Windows. This number includes every single activation on any Windows machine. |
 | mac               | Int64  | The activation count on Mac OS.          |
@@ -21,7 +21,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.userActivationCounts"
 } -->
 
-```http
+```json
 {
   "productLicenses": "String", 
   "lastActivatedDate": "Date", 

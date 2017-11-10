@@ -22,7 +22,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.mailboxUsageQuotaMailboxStatusCounts"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "underLimit": 1024, 

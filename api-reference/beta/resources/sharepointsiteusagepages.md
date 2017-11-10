@@ -19,7 +19,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.sharePointSiteUsagePages"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "siteType": "String", 

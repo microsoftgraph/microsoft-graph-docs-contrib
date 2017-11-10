@@ -22,7 +22,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.skypeForBusinessParticipantActivityUserCounts"
 } -->
 
-```http
+```json
 {
   "im": 1024, 
   "audioVideo": 196, 

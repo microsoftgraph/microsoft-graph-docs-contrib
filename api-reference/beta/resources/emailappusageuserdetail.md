@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.emailAppUsageUserDetail"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "userPrincipalName": "String", 

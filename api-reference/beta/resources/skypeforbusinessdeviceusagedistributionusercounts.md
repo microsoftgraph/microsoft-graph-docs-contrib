@@ -21,7 +21,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.skypeForBusinessDeviceUsageDistributionUserCounts"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "windows": 1024, 

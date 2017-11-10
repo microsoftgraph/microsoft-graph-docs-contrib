@@ -18,7 +18,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.mailboxUsageStorage"
 } -->
 
-```http
+```json
 {
   "reportRefreshDate": "Date", 
   "storageUsedInByte": 1024, 
