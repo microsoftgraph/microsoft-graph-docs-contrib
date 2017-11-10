@@ -2,12 +2,12 @@
 
 ## Properties
 
-| Property          | Type   |
-| :---------------- | :----- |
-| reportRefreshDate | Date   |
-| storageUsedInByte | Int64  |
-| reportDate        | Date   |
-| reportPeriod      | String |
+| Property           | Type   |
+| :----------------- | :----- |
+| reportRefreshDate  | Date   |
+| storageUsedInBytes | Int64  |
+| reportDate         | Date   |
+| reportPeriod       | String |
 
 ## JSON representation
 
@@ -21,7 +21,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "reportRefreshDate": "Date", 
-  "storageUsedInByte": 1024, 
+  "storageUsedInBytes": 1024, 
   "reportDate": "Date", 
   "reportPeriod": "String"
 }
