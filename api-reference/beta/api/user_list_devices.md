@@ -70,7 +70,7 @@ This example will return the list of devices for a user. To command a device usi
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "list_devices"
 }-->
 
@@ -85,7 +85,7 @@ Content-Type: application/json; charset=utf-8
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.device",
   "isCollection": true
