@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?
 #### Response
 
 The following is an example of the response.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -161,10 +161,10 @@ Content-Length: 526
       "createdDate": "2016-03-30", 
       "lastActivityDate": "2017-09-01", 
       "itemCount": 138481, 
-      "storageUsedInByte": 10414748704, 
-      "issueWarningQuotaInByte": 10522698752, 
-      "prohibitSendQuotaInByte": 10630040576, 
-      "prohibitSendReceiveQuotaInByte": 10737418240, 
+      "storageUsedInBytes": 10414748704, 
+      "issueWarningQuotaInBytes": 10522698752, 
+      "prohibitSendQuotaInBytes": 10630040576, 
+      "prohibitSendReceiveQuotaInBytes": 10737418240, 
       "reportPeriod": "7"
     }
   ]

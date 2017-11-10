@@ -31,8 +31,8 @@ In the request URL, provide the chosen query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the last 30 days, {date_value} should be a date from that range. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
 > **Note:** You need to set either period or date in the URL.
 
@@ -61,7 +61,7 @@ The CSV file has the following headers for columns.
 - Last Activity Date
 - Group Type
 - Member Count
-- Guest Count
+- External Member Count
 - Exchange Received Email Count
 - SharePoint Active File Count
 - Yammer Posted Message Count
@@ -122,7 +122,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,Guest Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
 ```
 
 ### JSON
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(pe
 #### Response
 
 The following is an example of the response.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -169,16 +169,16 @@ Content-Length: 674
       "lastActivityDate": "2017-08-31", 
       "groupType": "Private", 
       "memberCount": 5, 
-      "guestCount": 0, 
+      "externalMemberCount": 0, 
       "exchangeReceivedEmailCount": 341, 
       "sharePointActiveFileCount": 0, 
       "yammerPostedMessageCount": 0, 
       "yammerReadMessageCount": 0, 
       "yammerLikedMessageCount": 0, 
       "exchangeMailboxTotalItemCount": 343, 
-      "exchangeMailboxStorageUsedInByte": 3724609, 
+      "exchangeMailboxStorageUsedInBytes": 3724609, 
       "sharePointTotalFileCount": 0, 
-      "sharePointSiteStorageUsedInByte": 0, 
+      "sharePointSiteStorageUsedInBytes": 0, 
       "reportPeriod": "30"
     }
   ]

@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageStorage(perio
 #### Response
 
 The following is an example of the response.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -145,7 +145,7 @@ Content-Length: 248
     {
       "reportRefreshDate": "2017-09-01", 
       "siteType": "All", 
-      "storageUsedInByte": 171835798971, 
+      "storageUsedInBytes": 171835798971, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }
