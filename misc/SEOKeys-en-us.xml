@@ -3655,9 +3655,14 @@
         <Item text="Permanently delete group" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Restore deleted group" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
       </Item>
-      <Item text="Photo" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Get photo" url="/en-us/api-reference/v1.0/api/profilephoto_get" />
-        <Item text="Update photo" url="/en-us/api-reference/v1.0/api/profilephoto_update" />
+      <Item text="Team" url="/en-us/api-reference/beta/resources/team" >
+		<Item text="Create team" url="/en-us/api-reference/beta/api/team_put_teams" />
+		<Item text="Get team" url="/en-us/api-reference/beta/api/team_get" />
+		<Item text="Update team" url="/en-us/api-reference/beta/api/team_update" />
+	  </Item>
+	  <Item text="Photo" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
+        <Item text="Get photo" url="/en-us/api-reference/beta/api/profilephoto_get" />
+        <Item text="Update photo" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
       <Item text="Channel" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="channel API, Microsoft Graph API, channel API" SEODescription="">
         <Item text="List channels" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="List channels, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of channel objects." />

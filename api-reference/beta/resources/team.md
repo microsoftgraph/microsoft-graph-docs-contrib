@@ -8,17 +8,24 @@ A team is a collection of [channels](channel.md). A channel represents a topic, 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create team](../api/group_put_team.md) | [team](team.md) | Create a new team.|
-|[Get team](../api/group_get_team.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
-|[Update team](../api/group_patch_team.md) | [team](team.md) |Update the properties of the specified team. |
+|[Create team](../api/team_put_teams.md) | [team](team.md) | Create a new team.|
+|[Get team](../api/team_get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
+|[Update team](../api/team_update.md) | [team](team.md) |Update the properties of the specified team. |
 
-## Relationships
-| Relationship | Type	|Description|
+## Properties
+
+| Property | Type	| Description |
 |:---------------|:--------|:----------|
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
+
+## Relationships
+
+| Relationship | Type	| Description |
+|:---------------|:--------|:----------|
+|channels|[channel](channel.md) collection|The collection of channels associated with the team.|
 
 ## JSON representation
 
