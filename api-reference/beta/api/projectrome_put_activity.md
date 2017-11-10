@@ -45,7 +45,10 @@ If successful, this method returns the `201 Created` response code if the activi
 
 The following is an example of the request.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+    "blockType": "ignored",
+    "name": "upsert_activity"
+} -->
 
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
@@ -92,7 +95,11 @@ Content-length: 364
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+    "blockType": "ignored",
+    "truncated": true,
+    "@odata.type": "microsoft.graph.activity"
+} -->
 
 ```http
 HTTP/1.1 200 OK

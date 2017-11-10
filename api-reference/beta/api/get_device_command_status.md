@@ -77,7 +77,10 @@ In this example, you will need the ID of the device and the ID of the command th
 
 The following example shows the request.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored",
+  "name": "get_command"
+} -->
 ```http
 GET me/devices/{id}/commands/{id}
 Authorization: Bearer Eaeou....
@@ -87,7 +90,12 @@ Content-Type: application/json; charset=utf-8
 #### Response
 
 The following example shows the response.
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.commandobject",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 
@@ -163,7 +171,10 @@ In this example, you will need the ID of the device and the ID of the command th
 
 The following example shows the request.
 
-<!-- { "blockType": "ignored" } -->
+<!-- { 
+  "blockType": "ignored",
+  "name": "get_command_payload"
+} -->
 ```http
 GET me/devices/{id}/commands/{id}
 Authorization: Bearer Eaeou....
@@ -174,7 +185,12 @@ Content-Type: application/json; charset=utf-8
 
 The following example shows the response.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.commandobject",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 

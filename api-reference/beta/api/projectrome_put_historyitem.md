@@ -45,7 +45,10 @@ If successful, this method returns the `201 Created` response code if the histor
 
 Here is an example of the request.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+    "blockType": "ignored",
+    "name": "upsert_historyItem"
+} -->
 
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
@@ -63,7 +66,11 @@ Content-length: 364
 
 Here is an example of the response.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+    "blockType": "ignored",
+    "truncated": true,
+    "@odata.type": "microsoft.graph.historyItem"
+} -->
 
 ```http
 HTTP/1.1 200 OK

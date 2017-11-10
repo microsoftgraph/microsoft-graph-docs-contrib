@@ -86,7 +86,12 @@ Here is an example of a LaunchURI request; it will launch a URI or an applicatio
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+The following is an example of the request.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "post_command"
+} -->
 
 ```http
 
@@ -100,9 +105,14 @@ Content-Type: application/json; charset=utf-8
 
 #### Response 
 
-Here is an example of the response.
+The following is an example of the response.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.commandobject",
+  "isCollection": true
+} -->
 
 ```http
 HTTP/1.1 201 OK
@@ -132,7 +142,10 @@ Several additional properties must be set in the call. *Type* must be set to *Ap
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored",
+  "name": "post_command_2"
+} -->
 
 ```http
 
@@ -153,7 +166,12 @@ Content-Type: application/json; charset=utf-8
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.commandobject",
+  "isCollection": true
+} -->
 
 ```http
 HTTP/1.1 201 OK
