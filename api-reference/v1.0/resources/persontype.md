@@ -12,7 +12,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.persontype
+  "@odata.type": "microsoft.graph.personType"
 }-->
 
 ```json
@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "persontype resource",
+  "description": "personType resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

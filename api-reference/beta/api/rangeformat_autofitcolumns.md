@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/autofitColumns
-POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitColumns
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitColumns
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 
 ```
@@ -29,7 +29,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 
 ## Response
 
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

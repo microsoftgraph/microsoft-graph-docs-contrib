@@ -1,6 +1,6 @@
 ﻿# targetedManagedAppProtection resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -10,15 +10,15 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List targetedManagedAppProtections](../api/intune_mam_targetedmanagedappprotection_list.md)|[targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) collection|List properties and relationships of the [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) objects.|
 |[Get targetedManagedAppProtection](../api/intune_mam_targetedmanagedappprotection_get.md)|[targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|Read properties and relationships of the [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md) object.|
 |[updateTargetedSecurityGroups action](../api/intune_mam_targetedmanagedappprotection_updatetargetedsecuritygroups.md)|None|Not yet documented|
-|[List directoryObjects](../api/intune_mam_directoryobject_list.md)|[directoryObject](../resources/intune_mam_directoryobject.md) collection|List properties and relationships of the [directoryObject](../resources/intune_mam_directoryobject.md) objects.|
+|[assign action](../api/intune_mam_targetedmanagedappprotection_assign.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
@@ -41,6 +41,7 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -51,12 +52,14 @@ Inherits from [managedAppProtection](../resources/intune_mam_managedappprotectio
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |targetedSecurityGroupsCount|Int32|The number of groups to which the configuration is deployed. Read only property.|
+|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not.|
 |targetedSecurityGroupIds|String collection|List of security group IDs to which the configuration is deployed|
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |targetedSecurityGroups|[directoryObject](../resources/intune_mam_directoryobject.md) collection|Navigation property to list of security groups to which the configuration is deployed|
+|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of inclusion and exclusion groups to which the policy is deployed.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -66,7 +69,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.targetedManagedAppProtection"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppProtection",
   "displayName": "String",
@@ -91,6 +94,7 @@ Here is a JSON representation of the resource.
   "simplePinBlocked": true,
   "minimumPinLength": 1024,
   "pinCharacterSet": "String",
+  "periodBeforePinReset": "String (duration)",
   "allowedDataStorageLocations": [
     "String"
   ],
@@ -103,6 +107,7 @@ Here is a JSON representation of the resource.
   "minimumRequiredAppVersion": "String",
   "minimumWarningAppVersion": "String",
   "targetedSecurityGroupsCount": 1024,
+  "isAssigned": true,
   "targetedSecurityGroupIds": [
     "String"
   ]
