@@ -8,7 +8,7 @@ You can gain insights into the activity of Yammer groups in your organization an
 
 ## Reports
 
-| Function                                 | CSV Return Type | JSON Return Type                         | Description                              |
+| Function                                 | CSV return type | JSON return type                         | Description                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Get group detail](../api/reportroot_getyammergroupsactivitydetail.md) | Stream          | [yammerGroupsActivityDetail](../resources/yammergroupsactivitydetail.md) | Get details about Yammer groups activity by group. |
 | [Get group counts](../api/reportroot_getyammergroupsactivitygroupcounts.md) | Stream          | [yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md) | Get the total number of groups that existed and how many included group conversation activity. |

@@ -8,7 +8,7 @@ You can get details on the types of clients and devices that are used across you
 
 ## Reports
 
-| Function                                 | CSV Return Type | JSON Return Type                         | Description                              |
+| Function                                 | CSV return type | JSON return type                         | Description                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Get user detail](../api/reportroot_getskypeforbusinessdeviceusageuserdetail.md) | Stream          | [skypeForBusinessDeviceUsageUserDetail](../resources/skypeforbusinessdeviceusageuserdetail.md) | Get details about Skype for Business device usage by user. |
 | [Get distribution user counts](../api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream          | [skypeForBusinessDeviceUsageDistributionUserCounts](../resources/skypeforbusinessdeviceusagedistributionusercounts.md) | Get the number of users using unique devices in your organization. The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad. |

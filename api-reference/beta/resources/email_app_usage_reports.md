@@ -8,7 +8,7 @@ You can see how many email apps are used to connect to Exchange Online. You can 
 
 ## Reports
 
-| Function                                 | CSV Return Type | JSON Return Type                         | Description                              |
+| Function                                 | CSV return type | JSON return type                         | Description                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Get user detail](../api/reportroot_getemailappusageuserdetail.md) | Stream          | [emailAppUsageUserDetail](../resources/emailappusageuserdetail.md) | Get details about which activities users performed on the various email apps. |
 | [Get apps user counts](../api/reportroot_getemailappusageappsusercounts.md) | Stream          | [emailAppUsageAppsUserCounts](../resources/emailappusageappsusercounts.md) | Get the count of unique users per email app. |

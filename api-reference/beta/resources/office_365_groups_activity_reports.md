@@ -8,7 +8,7 @@ You can gain insights into the activity of Office 365 Groups in your organizatio
 
 ## Reports
 
-| Function                                 | CSV Return Type | JSON Return Type                         | Description                              |
+| Function                                 | CSV return type | JSON return type                         | Description                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Get group detail](../api/reportroot_getoffice365groupsactivitydetail.md) | Stream          | [office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md) | Get details about Office 365 Groups activity by group. |
 | [Get activity counts](../api/reportroot_getoffice365groupsactivitycounts.md) | Stream          | [office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md) | Get the number of group activities across group workloads. |
