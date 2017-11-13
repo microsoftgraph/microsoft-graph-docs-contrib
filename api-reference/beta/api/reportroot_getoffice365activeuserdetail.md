@@ -83,7 +83,7 @@ The CSV file has the following headers for columns.
 
 If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.
 
-The default page size for this request is 2000 items.
+The default page size for this request is 200 items.
 
 ## Example
 
