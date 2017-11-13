@@ -107,7 +107,7 @@ Content-Type: application/octet-stream
 Report Refresh Date,Liked,Posted,Read,Report Date,Report Period
 ```
 
-###	 JSON
+### JSON
 
 The following is an example that returns JSON.
 
