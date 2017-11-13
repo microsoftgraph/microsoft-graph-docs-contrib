@@ -294,8 +294,8 @@
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="Workbook" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
       <Item text="Create session" url="/en-us/api-reference/v1.0/api/workbook_createsession" />
-	  <Item text="Refresh session" url="/en-us/api-reference/v1.0/api/workbook_closesession" />
-	  <Item text="Close session" url="/en-us/api-reference/v1.0/api/workbook_refreshsession" />
+	  <Item text="Refresh session" url="/en-us/api-reference/v1.0/api/workbook_refreshsession" />
+	  <Item text="Close session" url="/en-us/api-reference/v1.0/api/workbook_closesession" />
 	  <Item text="List tables" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
       <Item text="List worksheets" url="/en-us/api-reference/v1.0/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
       <Item text="List names" url="/en-us/api-reference/v1.0/api/workbook_list_names" SEOKeyword="" SEODescription="" />
@@ -1101,8 +1101,8 @@
     <Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="Workbook" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="Create session" url="/en-us/api-reference/beta/api/workbook_createsession" />
-	    <Item text="Refresh session" url="/en-us/api-reference/beta/api/workbook_closesession" />
-	    <Item text="Close session" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
+	    <Item text="Refresh session" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
+	    <Item text="Close session" url="/en-us/api-reference/beta/api/workbook_closesession" />
 		<Item text="List tables" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
         <Item text="List worksheets" url="/en-us/api-reference/beta/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
         <Item text="List names" url="/en-us/api-reference/beta/api/workbook_list_names" SEOKeyword="" SEODescription="" />
