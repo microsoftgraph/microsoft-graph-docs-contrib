@@ -63,9 +63,9 @@ If successful, this method returns a `200 OK` response code and a **[oneDriveUsa
 
 ## Example
 
-The following is an example that outputs CSV.
-
 ### CSV
+
+The following is an example that outputs CSV.
 
 #### Request
 
