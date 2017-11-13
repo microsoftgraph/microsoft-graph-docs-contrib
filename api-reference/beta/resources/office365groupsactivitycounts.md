@@ -6,7 +6,7 @@
 | :--------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate      | Date   | The latest date of the content.          |
 | exchangeEmailsReceived | Int64  | The number of emails received by Group mailboxes. |
-| yammerMessagesPosted   | Int64  | The number of messages posted to the Yammer groups. |
+| yammerMessagesPosted   | Int64  | The number of messages posted to Yammer groups. |
 | yammerMessagesRead     | Int64  | The number of messages read in Yammer groups. |
 | yammerMessagesLiked    | Int64  | The number of messages liked in Yammer groups. |
 | reportDate             | Date   | The date on which a number of emails were sent to a group mailbox or a number of messages were posted, read, or liked in a Yammer group |
