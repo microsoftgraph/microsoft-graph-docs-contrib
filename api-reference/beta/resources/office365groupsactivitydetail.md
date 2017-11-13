@@ -14,9 +14,9 @@
 | externalMemberCount               | Int64   | The group external member count.         |
 | exchangeReceivedEmailCount        | Int64   | The number of email that the group mailbox received. |
 | sharePointActiveFileCount         | Int64   | The number of active files in SharePoint Group site. |
-| yammerPostedMessageCount          | Int64   | The number of messages posted to Yammer group. |
-| yammerReadMessageCount            | Int64   | The number of messages read in Yammer group. |
-| yammerLikedMessageCount           | Int64   | The number of messages liked in Yammer group. |
+| yammerPostedMessageCount          | Int64   | The number of messages posted to Yammer groups. |
+| yammerReadMessageCount            | Int64   | The number of messages read in Yammer groups. |
+| yammerLikedMessageCount           | Int64   | The number of messages liked in Yammer groups. |
 | exchangeMailboxTotalItemCount     | Int64   | The number of items in the group mailbox. |
 | exchangeMailboxStorageUsedInBytes | Int64   | The storage used of the group mailbox.   |
 | sharePointTotalFileCount          | Int64   | The total number of files in SharePoint Group site. |
