@@ -164,7 +164,7 @@ Content-type: application/json
 ##### Request 3
 The third example gets specifically the working hour settings of the signed-in user's mailbox.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_mailboxsettings_3"
 }-->
 ```http
@@ -174,7 +174,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md). 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "name": "get_mailboxsettings_3",
   "truncated": true,
   "@odata.type": "microsoft.graph.workingHours"

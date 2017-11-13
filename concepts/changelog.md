@@ -78,7 +78,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added new [team](../api-reference/beta/resources/team.md) entity.|
-|Addition|Beta|Added [create](../api-reference/beta/api/group_put_team.md), [get](../api-reference/beta/api/group_get_team.md), and [update](../api-reference/beta/api/group_patch_team.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
+|Addition|Beta|Added [create](../api-reference/beta/api/team_put_teams.md), [get](../api-reference/beta/api/team_get.md), and [update](../api-reference/beta/api/team_update.md) operations on [team](../api-reference/beta/resources/team.md) entity.|
 
 ### Outlook messages
 
@@ -377,8 +377,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](people_example.md). |
 
+### User
 
-
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added **employeeId** property to [user](../api-reference/beta/resources/user.md) |
 
 ## July 2017
 
