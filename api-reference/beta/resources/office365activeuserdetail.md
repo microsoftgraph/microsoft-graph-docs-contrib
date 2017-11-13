@@ -18,7 +18,7 @@
 | exchangeLastActivityDate          | Date              | The date when user last read or sent email. |
 | oneDriveLastActivityDate          | Date              | The date when user last viewed or edited files, shared files internally or externally, or synced files. |
 | sharePointLastActivityDate        | Date              | The date when user last viewed or edited files, shared files internally or externally, synced files, or viewed SharePoint pages. |
-| skypeForBusinessLastActivityDate  | Date              | The date when user last organized conferences, participated in conferences, or joined peer-to-peer sessions. |
+| skypeForBusinessLastActivityDate  | Date              | The date when user last organized or participated in conferences, or joined peer-to-peer sessions. |
 | yammerLastActivityDate            | Date              | The date when user last posted, read, or liked message. |
 | teamsLastActivityDate             | Date              | The date when user last posted messages in team channels, sent messages in private chat sessions, or participated in meetings or calls. |
 | exchangeLicenseAssignDate         | Date              | The last date when the user was assigned an Exchange license. |
