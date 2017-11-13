@@ -3,6 +3,15 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
+
+## November 2017
+
+### Webhooks
+
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Change      | Beta and V1.0 | Reduced [webhooks](../api-reference/v1.0/resources/webhooks.md) [maximum expiration time](../api-reference/v1.0/resources/subscription.md#maximum-expiration-times-per-resource) for drive root items. | 
+
 ## October 2017
 
 ### Azure AD APIs
