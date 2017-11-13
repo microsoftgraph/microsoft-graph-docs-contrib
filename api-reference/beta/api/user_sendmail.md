@@ -45,7 +45,7 @@ If you want to use **mention** to call out another user in the new message:
 
 ## Response
 
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
