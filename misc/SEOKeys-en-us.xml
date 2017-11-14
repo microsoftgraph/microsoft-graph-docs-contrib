@@ -294,8 +294,8 @@
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="Workbook" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
       <Item text="Create session" url="/en-us/api-reference/v1.0/api/workbook_createsession" />
-	  <Item text="Refresh session" url="/en-us/api-reference/v1.0/api/workbook_closesession" />
-	  <Item text="Close session" url="/en-us/api-reference/v1.0/api/workbook_refreshsession" />
+	  <Item text="Refresh session" url="/en-us/api-reference/v1.0/api/workbook_refreshsession" />
+	  <Item text="Close session" url="/en-us/api-reference/v1.0/api/workbook_closesession" />
 	  <Item text="List tables" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
       <Item text="List worksheets" url="/en-us/api-reference/v1.0/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
       <Item text="List names" url="/en-us/api-reference/v1.0/api/workbook_list_names" SEOKeyword="" SEODescription="" />
@@ -314,10 +314,10 @@
     </Item>
     <Item text="Range" url="/en-us/api-reference/v1.0/resources/range" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
       <Item text="Get range" url="/en-us/api-reference/v1.0/api/range_get" SEOKeyword="" SEODescription="" />
-	  <Item text="Update range" url="/en-us/api-reference/v1.0/range_update" />
-	  <Item text="Insert range" url="/en-us/api-reference/v1.0/range_insert" />
-	  <Item text="Get range format" url="/en-us/api-reference/v1.0/rangeformat_get"/>
-	  <Item text="Update range format" url="/en-us/api-reference/v1.0/rangeformat_update"/>
+	  <Item text="Update range" url="/en-us/api-reference/v1.0/api/range_update" />
+	  <Item text="Insert range" url="/en-us/api-reference/v1.0/api/range_insert" />
+	  <Item text="Get range format" url="/en-us/api-reference/v1.0/api/rangeformat_get"/>
+	  <Item text="Update range format" url="/en-us/api-reference/v1.0/api/rangeformat_update"/>
 	  <Item text="Merge" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
       <Item text="Unmerge" url="/en-us/api-reference/v1.0/api/range_unmerge" SEOKeyword="" SEODescription="" />
       <Item text="Clear" url="/en-us/api-reference/v1.0/api/range_clear" SEOKeyword="" SEODescription="" />
@@ -1101,8 +1101,8 @@
     <Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="Workbook" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="Create session" url="/en-us/api-reference/beta/api/workbook_createsession" />
-	    <Item text="Refresh session" url="/en-us/api-reference/beta/api/workbook_closesession" />
-	    <Item text="Close session" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
+	    <Item text="Refresh session" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
+	    <Item text="Close session" url="/en-us/api-reference/beta/api/workbook_closesession" />
 		<Item text="List tables" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
         <Item text="List worksheets" url="/en-us/api-reference/beta/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
         <Item text="List names" url="/en-us/api-reference/beta/api/workbook_list_names" SEOKeyword="" SEODescription="" />
@@ -1121,10 +1121,10 @@
       </Item>
       <Item text="Range" url="/en-us/api-reference/beta/resources/range" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="Get range" url="/en-us/api-reference/beta/api/range_get" SEOKeyword="" SEODescription="" />
-        <Item text="Update range" url="/en-us/api-reference/beta/range_update" />
-	    <Item text="Insert range" url="/en-us/api-reference/beta/range_insert" />
-	    <Item text="Get range format" url="/en-us/api-reference/beta/rangeformat_get"/>
-	    <Item text="Update range format" url="/en-us/api-reference/beta/rangeformat_update"/>
+        <Item text="Update range" url="/en-us/api-reference/beta/api/range_update" />
+	    <Item text="Insert range" url="/en-us/api-reference/beta/api/range_insert" />
+	    <Item text="Get range format" url="/en-us/api-reference/beta/api/rangeformat_get"/>
+	    <Item text="Update range format" url="/en-us/api-reference/beta/api/rangeformat_update"/>
 		<Item text="Merge" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
         <Item text="Unmerge" url="/en-us/api-reference/beta/api/range_unmerge" SEOKeyword="" SEODescription="" />
         <Item text="Clear" url="/en-us/api-reference/beta/api/range_clear" SEOKeyword="" SEODescription="" />
