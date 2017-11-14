@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders/ItemAt
-POST /workbook/worksheets/{id|name}/range(<address>)/format/borders/ItemAt
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
@@ -32,7 +32,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
+If successful, this method returns `200 OK` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
