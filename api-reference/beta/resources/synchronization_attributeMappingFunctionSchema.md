@@ -1,50 +1,46 @@
-# Attribute mapping function schema
+# attributeMappingFunctionSchema
 
-Describes a function which can be used in an [attribute mapping](synchronization_attributeMapping.md) to transform one value into another
+Describes a function which can be used in an [attribute mapping](synchronization_attributeMapping.md) to transform values during synchronization.
 
-## JSON representation
+## Methods
 
-```json
-{
-    "name": "String",
-    "parameters": [{"@odata.type": "microsoft.graph.attributeMappingParameterSchema"}]
-}
-```
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[List](../api/synchronization_schema_functions_get.md) | [attributeMappingFunctionSchema](../resources/synchronization_attributemappingfunctionschema.md) collection|List supported attribute mapping functions.|
 
 ## Properties
 
 | Property                   | Type                      | Description    |
 |:---------------------------|:-------------------------|:---------------|
-|name                        |String                    |Operator name |
-|parameters                  |attributeMappingParameterSchema collection  |Collection of parameter descriptions|
+|name                        |String                    |Operator name. |
+|parameters                  |[attributeMappingParameterSchema](../resources/synchronization_attributemappingparameterschema.md) collection  |Collection of function parameters.|
 
-### attributeMappingParameterSchema
+## JSON representation
 
-| Property                   | Type                      | Description    |
-|:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Boolean                   |Given parameter can be provided multiple times (i.e. multiple input strings into Concatenate(string,string,...) function) |
-|name                        |String                    |Parameter name |
-|required                    |Boolean                   |`true` if paramer is required. `false` otherwise |
-|type                        |attributeType             |Type of the parameter. Supported values are `String`, `Integer`, `Reference`, `Binary`, `Boolean`|
+Here is a JSON representation of the resource.
 
-## JSON Example
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.attributeMappingFunctionSchema"
+}-->
 
 ```json
 {
-    "name": "Append",
-    "parameters": [
-        {
-            "allowMultipleOccurrences": false,
-            "name": "source",
-            "required": true,
-            "type": "String"
-        },
-        {
-            "allowMultipleOccurrences": false,
-            "name": "suffix",
-            "required": true,
-            "type": "String"
-        }
-    ]
+  "name": "String (identifier)",
+  "parameters": [{"@odata.type": "microsoft.graph.attributeMappingParameterSchema"}]
 }
+
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "attributeMappingFunctionSchema resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -2,7 +2,7 @@
 
 Lists all functions supported in the attribute mapping expressions.
 
-## Request
+## HTTP Request
 
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
@@ -10,21 +10,32 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema/functi
 GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 ```
 
+## Request headers
+
+| Name           | Type    | Description|
+|:---------------|:--------|:-----------|
+| Authorization  | string  | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
-If successful, returns `200 OK` response with a collection of [attributemappingFunctionSchema](../resources/synchronization_attributeMappingFunctionSchema.md) in the response body.
+If successful, this method returns `200 OK` response code and collection of [attributemappingFunctionSchema](../resources/synchronization_attributeMappingFunctionSchema.md) objects in the response body.
 
 ## Example
 
-### Sample request
+##### Request
+The following is an example of a request.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
 ```
 
-### Sample response
-
-Response below is shortened for brevity.
+##### Response
+The following is an example of a response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 
 ```json
 HTTP/1.1 200 OK

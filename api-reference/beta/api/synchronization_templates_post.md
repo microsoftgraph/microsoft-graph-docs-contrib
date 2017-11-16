@@ -2,23 +2,30 @@
 
 Create new template for a given application
 
-### Request
+### HTTP Request
 
 ```http
 POST /applications/{id}/synchronization/templates/
 ```
 
-### Request body
+## Request headers
 
-Body should contain [synchronizationTemplate](../resources/synchronization_template.md) object to be created. `id`, `applicationId` and `factoryTag` properties are required. When no `schema` is provided with the template, default schema associated with `factoryTag` will be used.
+| Name           | Type    | Description|
+|:---------------|:--------|:-----------|
+| Authorization  | string  | Bearer {token}. Required. |
+
+## Request body
+
+In the request body, supply the [synchronizationTemplate](../resources/synchronization_template.md) object to be created. `id`, `applicationId` and `factoryTag` properties are required. When no `schema` is provided with the template, default schema associated with `factoryTag` will be used.
 
 ### Response
 
-If successful, returns `201 Created` response
+If successful, this method returns a `201 Created` response code and created [synchronizationTemplate](../resources/synchronization_template.md) object in the response body.
 
 ### Example
 
-#### Sample request
+##### Request
+The following is an example of a request.
 
 ```http
 POST https://graph.microsoft.com/testSynchronization/applications/{id}/synchronization/templates
@@ -30,7 +37,9 @@ Content-type: application/json
 }
 ```
 
-#### Sample response
+##### Response
+The following is an example of a response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 
 ```http
 HTTP/1.1 201 Created

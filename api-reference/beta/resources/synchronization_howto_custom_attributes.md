@@ -1,10 +1,12 @@
-# HOW-TO: Configure synchronization with custom target attributes
+# Configure synchronization with custom target attributes
+
+This tutorial will guide you through customizing your synchronization schema to include custom attributes defined in target directory.
 
 ## Scenario
 
-We have a Salesforce subscription, where we customized Salesforce's User object by adding a new field, "officeCode". We are setting up synchronization from Azure AD to Salesforce, and for each user we want to populate "officeCode" in Salesforce with the value from the "extensionAttribute10" on Azure AD side. 
+You have a Salesforce subscription, where you customized Salesforce's User object by adding a new field, "officeCode". You are setting up synchronization from Azure AD to Salesforce, and for each user you want to populate "officeCode" in Salesforce with the value from the "extensionAttribute10" on Azure AD side. 
 
-We assume that we already added an application which supports syncrhonization to our tenant through the Azure Portal. We know our application display name (the one shown in [Azure Portal](https://portal.azure.com)), and we have an authorization token for Microsoft Graph. For information on how to obtain authorization token, see [Synchronization API quick start](synchronization_api_quickstart.md)
+Assuming that you already added an application which supports synchronization to your tenant through the Azure Portal. You know our application display name (the one shown in [Azure Portal](https://portal.azure.com)), and you have an authorization token for Microsoft Graph. For information on how to obtain authorization token, see [Synchronization API quick start](synchronization_howto_api_quickstart.md)
 
 ## Find service principal by display name
 
@@ -41,7 +43,7 @@ Our `{servicePrincipalId}` is "167e33e9-f80e-490e-b4d8-698d4a80fb3e"
 
 ## List synchronization jobs in the context of our service principal 
 
-Generally, we expect to see only one - this will give us jobId we need to work with
+Generally, only one job is expected in the response - this will give you jobId you need to work with
 
 ```http
 GET https://graph.microsoft.com/testSynchronization/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -53,21 +55,34 @@ Authorization: Bearer {Token}
         {
             "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
             "templateId": "SfSandboxOutDelta",
-            "schedule": {..},
-            "status": {..}
+            "schedule": {},
+            "status": {}
     }
     ]
 }
 ```
 
-Our `{jobId}` is "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa"
+Your `{jobId}` is "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa"
 
 
 ## Retreive effective synchronization schema
-
+<!-- {
+  "blockType": "request",
+  "name": "get_synchronizationschema"
+}-->
 ```http
 GET https://graph.microsoft.com/testSynchronization/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
+```
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.synchronizationSchema"
+} -->
+```http
+HTTP/1.1 200 OK
 
 {
   "directories": [
@@ -76,7 +91,7 @@ Authorization: Bearer {Token}
 		      "name": "Azure Active Directory",
 		      "objects": [
 			    {
-		             "attributes": [
+		            "attributes": [
 			            {
 			              "anchor": true,
 			              "caseExact": false,
@@ -100,26 +115,22 @@ Authorization: Bearer {Token}
 			              "required": false,
 			              "referencedObjects": [],
 			              "type": "String"
-			            },
-					..
+			            }
 					],
-					"metadata": [..],
 					"name": "User"
-				},
-			   .. 
+				}
 			 ]
 		},
 		{
 		      "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
 		      "name": "salesforce.com",
-		      "objects": [ .. ]
+		      "objects": []
 		}
   ],
  "synchronizationRules": [
 	    {
 	      "editable": true,
 	      "id": "4c5ecfa1-a072-4460-b1c3-4adde3479854",
-	      "metadata": [ .. ],
 	      "name": "USER_OUTBOUND_USER",
 	      "objectMappings": [
 		        {
@@ -147,21 +158,16 @@ Authorization: Bearer {Token}
 				                "type": "Function"
 				              },
 				              "targetAttributeName": "IsActive"
-				            },
-				       ..
+				            }
 			         ],
-			              "enabled": true,
+			        "enabled": true,
 			        "flowTypes": "Add, Update, Delete",
-			        "metadata": [ .. ],
 			        "name": "Synchronize Azure Active Directory Users to salesforce.com",
 			        "scope": null,
 			        "sourceObjectName": "User",
 			        "targetObjectName": "User"
-			},
-		  ..
-		]
-	..
-   ]
+			}]
+		}]
 }
 ```
 
@@ -180,39 +186,34 @@ Using plain text editor of your choice (i.e. Notepad++, or http://www.jsoneditor
 ```json
 {  
     "directories": [
-    ...
     {
         "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
             "name": "salesforce.com",
             "objects": [
             {
-                    "attributes": [
-                    ...
-                        ,{
+                "attributes": [
+                        {
                             "name": "officeCode",
                             "type": "String"
                         }
-                    ],
+                ],
                 "name":"User"
-            }
-        }
+            }]
     }
     ],
     "synchronizationRules": [
         {
         "editable": true,
         "id": "4c5ecfa1-a072-4460-b1c3-4adde3479854",
-        "metadata": [..],
         "name": "USER_OUTBOUND_USER",
         "objectMappings": [
             {
             "attributeMappings": [
-            ...
-            ,{
+            	{
                     "source": {
-                    "name": "extensionAttribute10",
-                    "type": "Attribute"
-                    },
+							"name": "extensionAttribute10",
+							"type": "Attribute"
+                    	},
                     "targetAttributeName": "officeCode"
                 }
             ],
@@ -220,16 +221,14 @@ Using plain text editor of your choice (i.e. Notepad++, or http://www.jsoneditor
             "scope": null,
             "sourceObjectName": "User",
             "targetObjectName": "User"
-        
-            },
-            ... 
+            }
         ],
     "priority": 1,
         "sourceDirectoryName": "Azure Active Directory",
         "targetDirectoryName": "salesforce.com"
-    },
-
-]
+    }
+	]
+}
 ```
 
 ## Save modified synchronization schema

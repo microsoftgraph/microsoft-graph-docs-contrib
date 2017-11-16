@@ -1,43 +1,25 @@
-# Synchronization status
+# synchronizationStatus resource type
 
-Current status of the synchronization job
-
-## JSON representation
-
-```json
-{
-    "countSuccessiveCompleteFailures": "Integer",
-    "escrowsPruned": "Boolean",
-    "synchronizedEntryCountByType": [],
-    "code": {"@odata.type":"synchronizationStatusCode"},
-    "lastExecution":{"@odata.type": "microsoft.graph.synchronizationJobExecution"},
-    "lastSuccessfulExecution": {"@odata.type": "microsoft.graph.synchronizationJobExecution"},
-    "lastSuccessfulExecutionWithExports": {"@odata.type": "microsoft.graph.synchronizationJobExecution"},
-    "steadyStateFirstAchievedTime": "String",
-    "steadyStateLastAchievedTime": "String",
-    "quarantine": {"@odata.type": "microsoft.graph.synchronizationJobExecution"}
-}
-```
+Current status of the [synchronizationJob](synchronization_job.md).
 
 ## Properties
 
 | Property                              | Type      | Description    |
 |:--------------------------------------|:----------|:---------------|
-|countSuccessiveCompleteFailures        |Number         |Number of consecutive times this job failed|
-|escrowsPruned                          |Boolean        |`true` if the job's escrows (object-level errors) were pruned during initial synchronization. Escrows can be pruned if during initial synchronization we reach the threshold of errors which would normally put the job in quarantine. Instead of going into quarantine, synchronization opts out to clear job's errors and continue until the initial synchronization is completed. Once initial synchronization is completed, job will be paused and wait for customer's manual intervention to clean up the errors  |
-|synchronizedEntryCountByType           |KeyValuePair<string,integer> collection     |Count of synchronized objects, listed by object type|
-|code                                   |[synchronizationStatusCode](#synchronizationstatuscode)  |Job's current status code|
-|lastExecution                          |[synchronizationJobExecution](#synchronizationjobexecution)   |Details of the last execution of the job|
-|lastSuccessfulExecution                |[synchronizationJobExecution](#synchronizationjobexecution)        |Details of the last execution of this job, which didn't have any errors|
-|lastSuccessfulExecutionWithExports     |[synchronizationJobExecution](#synchronizationjobexecution)        |Details of the last execution of the job, which exported objects into the target directory|
-|steadyStateFirstAchievedTime           |DateTimeOffset        |Time when steady state (no more changes to process) was first achieved|
-|steadyStateLastAchievedTime            |DateTimeOffset        |Time when steady state (no more changes to process) was last achieved|
-|quarantine     |[synchronizationQuarantine](#synchronizationquarantine)        |If job is in quarantine, quarantine details|
+|code|String|High-level status code of the synchronization job. Possible values are: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
+|countSuccessiveCompleteFailures|Int64|Number of consecutive times this job failed.|
+|escrowsPruned|Boolean|`true` if the job's escrows (object-level errors) were pruned during initial synchronization. Escrows can be pruned if during initial synchronization we reach the threshold of errors which would normally put the job in quarantine. Instead of going into quarantine, synchronization opts out to clear job's errors and continue until the initial synchronization is completed. Once initial synchronization is completed, job will be paused and wait for customer's manual intervention to clean up the errors.|
+|lastExecution|[synchronizationTaskExecution](synchronization_taskexecution.md)|Details of the last execution of the job.|
+|lastSuccessfulExecution|[synchronizationTaskExecution](synchronization_taskexecution.md)|Details of the last execution of this job, which didn't have any errors|
+|lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization_taskexecution.md)|Details of the last execution of the job, which exported objects into the target directory|
+|quarantine|[synchronizationQuarantine](synchronization_quarantine.md)|If job is in quarantine, quarantine details.|
+|steadyStateFirstAchievedTime|DateTimeOffset|Time when steady state (no more changes to process) was first achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|steadyStateLastAchievedTime|DateTimeOffset|Time when steady state (no more changes to process) was last achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization_stringkeylongvaluepair.md) collection|Count of synchronized objects, listed by object type.|
+|troubleshootingUrl|String||
 
 
-### synchronizationStatusCode
-
-High-level status code of the synchronization job
+##### synchronizationStatusCode details
 
 | Value                              | Description    |
 |:-----------------------------------|:---------------|
@@ -68,57 +50,41 @@ Summarizes the results of the particular execution of the synchronization job
 |timeBegan                      |DateTimeOffset    | Time when this job execution began |
 |timeEnded                      |DateTimeOffset    | Time when this job execution ended |
 
+## JSON representation
 
-### synchronizationQuarantine
+Here is a JSON representation of the resource.
 
-Provides information about quarantine state
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
-| Property      | Type              | Description    |
-|:--------------|:------------------|:---------------|
-|currentBegan   |String (DateTime)  | Date and time when quarantine was last evaluated and imposed|
-|nextAttempt    |String (DateTime)  | Date and time when next attempt to re-evaluate the quarantine will be made|
-|reason         |String             | Code signifying why the quarantine was imposed|
-|seriesBegan    |String (DateTime)  | Date and time when the quarantine was first imposed in this series (Series starts when quarantine is first imposed, and is reset as soon as quarantine is lifted)|
-|seriesCount    |Integer            | Number of times in this series quarantine was re-evaluated and left in effect ((Series starts when quarantine is first imposed, and is reset as soon as quarantine is lifted) |
-
-## JSON Example
+  ],
+  "@odata.type": "microsoft.graph.synchronizationStatus"
+}-->
 
 ```json
 {
-    "countSuccessiveCompleteFailures": 0,
-    "escrowsPruned": false,
-    "synchronizedEntryCountByType": [],
-    "code": "Quarantine",
-    "lastExecution": {
-        "activityIdentifier": "703dd82f-faa0-4dbd-abdc-48f620ed7ab4",
-        "countEntitled": 0,
-        "countEntitledForProvisioning": 0,
-        "countEscrowed": 0,
-        "countEscrowedRaw": 0,
-        "countExported": 0,
-        "countExports": 0,
-        "countImported": 0,
-        "countImportedDeltas": 0,
-        "countImportedReferenceDeltas": 0,
-        "state": "Failed",
-        "error": {
-            "code": "BoxInsufficientPermissions",
-            "message": "Authorization with Box is not valid. Please re-authorize access to Box",
-            "tenantActionable": true
-        },
-        "timeBegan": "2017-07-19T14:55:58.5434447Z",
-        "timeEnded": "2017-07-19T14:55:58.5570274Z"
-    },
-    "lastSuccessfulExecution": null,
-    "lastSuccessfulExecutionWithExports": null,
-    "steadyStateFirstAchievedTime": "0001-01-01T00:00:00Z",
-    "steadyStateLastAchievedTime": "0001-01-01T00:00:00Z",
-    "quarantine": {
-        "currentBegan": "2017-07-19T12:35:27.0869139Z",
-        "nextAttempt": "0001-01-01T00:00:00Z",
-        "reason": "EncounteredQuarantineException",
-        "seriesBegan": "2017-07-19T06:56:58.2464011Z",
-        "seriesCount": 6
-    }
+  "code": "String",
+  "countSuccessiveCompleteFailures": 1024,
+  "escrowsPruned": true,
+  "lastExecution": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
+  "lastSuccessfulExecution": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
+  "lastSuccessfulExecutionWithExports": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
+  "quarantine": {"@odata.type": "microsoft.graph.synchronizationQuarantine"},
+  "steadyStateFirstAchievedTime": "String (timestamp)",
+  "steadyStateLastAchievedTime": "String (timestamp)",
+  "synchronizedEntryCountByType": [{"@odata.type": "microsoft.graph.stringKeyLongValuePair"}],
+  "troubleshootingUrl": "String"
 }
+
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "synchronizationStatus resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

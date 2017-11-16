@@ -1,38 +1,44 @@
 # Filter operator schema
 
-Describes an operator which can be used in a [scoping filter](synchronization_scopingFilter.md)
-
-## JSON representation
-
-```json
-{
-    "arity": {"@odata.type": "microsoft.graph.scopeOperatorType"},
-    "multivaluedComparisonType": {"@odata.type": "microsoft.graph.scopeOperatorMultiValuedComparisonType"},
-    "name": "String",
-    "supportedAttributeTypes": [{"@odata.type": "microsoft.graph.attributeType"}]
-}
-```
+Describes an operator which can be used in a [filter](synchronization_filter.md)
 
 ## Properties
 
 | Property                   | Type                      | Description    |
 |:---------------------------|:--------------------------|:---------------|
-|arity                       |scopeOperatorType          |Arity of the operator. Possible values are `Binary` and `Unary`. Default is `binary`|
-|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Possible values are `All` and `Any`. For multivalued attributes,`All` means that all values must satisfy the condition. `Any` means that at least one value has to satisfy the condition. Default is `All`|
-|name                        |String                     |Operator name |
-|supportedAttributeTypes     |scopeOperatorType          |Attribute types supported by the operator. Possible values attribute types
+|arity                       |String          |Arity of the operator. Possible values are: `Binary`, `Unary`. Default is `Binary`.|
+|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Possible values are: `All`, `Any`. Applies only tor multivalued attributes. `All` means that all values must satisfy the condition. `Any` means that at least one value has to satisfy the condition. Default is `All`.|
+|name                        |String                     |Operator name. |
+|supportedAttributeTypes     |String collection         |Attribute types supported by the operator. Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
+## JSON representation
 
-## JSON Example
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.filterOperatorSchema"
+}-->
 
 ```json
 {
-    "name": "EQUALS",
-    "arity": "Binary",
-    "multivaluedComparisonType": "All",
-    "supportedAttributeTypes": [
-        "Integer",
-        "String"
-    ]
+  "arity": "String",
+  "multivaluedComparisonType": "String",
+  "name": "String",
+  "supportedAttributeTypes": ["String"]
 }
+
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "filterOperatorSchema resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

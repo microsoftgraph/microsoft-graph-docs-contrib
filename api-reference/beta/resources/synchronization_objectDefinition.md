@@ -1,8 +1,26 @@
-# Object definition
+# objectDefinition resource type
 
 Describes an object and its attributes. Object definitions are part of [directoryDefinition](synchronization_directoryDefinition.md), which is updated as part of [synchronizationSchema](synchronization_schema.md)
 
+## Properties
+
+| Property      | Type      | Description    |
+|:--------------|:----------|:---------------|
+|attributes     |[attributeDefinition](synchronization_attributeDefinition.md) collection    | Defines attributes of the object |
+|metadata       |[metadataEntry](synchronization_metadataentry.md) collection   |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed|
+|name           |String     |Name of the object. Must be unique within a directory definition. Not nullable|
+
 ## JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.objectDefinition"
+}-->
 
 ```json
 {
@@ -12,16 +30,15 @@ Describes an object and its attributes. Object definitions are part of [director
 }
 ```
 
-## Properties
-
-| Property      | Type      | Description    |
-|:--------------|:----------|:---------------|
-|attributes     |[attributeDefinition](synchronization_attributeDefinition.md) collection    | Defines attributes of the object |
-|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed|
-|name           |String     |Name of the object. Must be unique within a directory definition. Not nullable|
-
-
 ## JSON Example
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.objectDefinition"
+}-->
 
 ```json
 {
@@ -403,5 +420,15 @@ Describes an object and its attributes. Object definitions are part of [director
         }
     ],
     "name": "User"
-},
+}
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "objectDefinition resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

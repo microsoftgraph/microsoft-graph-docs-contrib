@@ -1,12 +1,31 @@
-# Get synchronization job
+# Get synchronizationJob
 
-Retrieves existing job and its properties
+Retrieve existing job and its properties.
 
-## Request
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
+|Permission type                        | Permissions (from least to most privileged)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Delegated (work or school account)     |Directory.ReadWrite.All  |
+|Delegated (personal Microsoft account) |Directory.ReadWrite.All  |
+|Application                            |Directory.ReadWrite.All  | 
+
+## HTTP Request
+<!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
+GET /servicePrincipals/<id>/synchronization/jobs/<jobId>/
 ```
+
+## Request headers
+
+| Name           | Type    | Description|
+|:---------------|:--------|:-----------|
+| Authorization  | string  | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
 
 ## Response
 
@@ -14,16 +33,27 @@ If successful, returns `200 OK` response with [synchronizationJob](../resources/
 
 ## Example
 
-### Sample request
-
+##### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_synchronizationjob"
+}-->
 ```http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
+GET https://graph.microsoft.com/beta/servicePrincipals/<id>/synchronization/jobs/<jobId>/
 ```
 
-### Sample response
-
+##### Response
+The following is an example of a response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.synchronizationJob"
+} -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 2577
 
 {
     "id": "{jobId}",
@@ -48,3 +78,13 @@ HTTP/1.1 200 OK
     }
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get synchronizationJob",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

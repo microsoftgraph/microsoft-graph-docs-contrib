@@ -1,33 +1,50 @@
-# Directory definition
+# directoryDefinition resource type
 
 Directory definition provides synchronization engine information about a directory and its objects. Directory definition tells synchronization engine, for example, that directory has objects named "User" and "Group", which attributes are supported for those objects, and what is their type. In order for the  object and attribute to participate in [synchronization rules](synchronization_rule.md) and [object mappings](synchronization_objectMapping.md), they must to be defined as part of the directory definition.
 
-As a general rule, default [synchronization schema](synchronization_schema.md) provided as part of the [synchronization template](synchronization_template.md) will define most commonly used objects / attributes for that directory. However, if directory supports addition of custom attributes, it is common one would want to expand the default definition with their own custom objects or attributes. For additional information, you might want to see [HOW-TO: Configure synchronization with custom attributes](synchronization_howto_custom_attributes.md) and [HOW-TO: Configure synchronization with directory extension attributes](synchronization_howto_directory_extensions.md).
+As a general rule, default [synchronization schema](synchronization_schema.md) provided as part of the [synchronization template](synchronization_template.md) will define most commonly used objects / attributes for that directory. However, if directory supports addition of custom attributes, it is common one would want to expand the default definition with their own custom objects or attributes. For additional information, you might want to see [Configure synchronization with custom attributes](synchronization_howto_custom_attributes.md) and [Configure synchronization with directory extension attributes](synchronization_howto_directory_extensions.md).
 
 Directory definitions are updated as part of [synchronization schema](synchronization_schema.md).
-
-## JSON representation
-
-```json
-{
-    "id": "String",
-    "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
-    "name": "String",
-    "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}]
-}
-```
 
 ## Properties
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
 |id           |String     |Directory identifier. Not nullable|
-|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed|
-|name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization_schema.md). Not nullable|
-|objects        |[objectDefinition](synchronization_objectDefinition.md) collection    |Collection of objects supported by the directory|
+|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
+|name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization_schema.md). Not nullable.|
+|objects        |[objectDefinition](synchronization_objectdefinition.md) collection    |Collection of objects supported by the directory.|
 
+## JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.directoryDefinition"
+}-->
+
+```json
+{
+  "id": "String",
+  "name": "String",
+  "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}]
+}
+
+```
 
 ## JSON Example
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.directoryDefinition"
+}-->
 
 ```json
 {
@@ -227,3 +244,13 @@ Directory definitions are updated as part of [synchronization schema](synchroniz
     "metadata": []
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "directoryDefinition resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,21 +1,23 @@
-# HOW-TO: Configure synchronization with directory extension attributes
+# Configure synchronization with directory extension attributes
+
+This tutorial will guide you through customizing your synchronization schema to include Azure AD directory extension attributes.
 
 ## Scenario
 
-We have AD Connect setup to provision a number of directory extension attributes from AD-on-premises to Azure AD. We are setting up provisioning from Azure AD to Salesforce, and we want to use one of the directory extension attributes (i.e. **extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce. We won't be able to setup such attribute mapping using web interface in [Azure Portal](https://portal.azure.com), as it will not show directory extension attributes among the available attributes. We can achieve that using the API.
+You have AD Connect setup to provision a number of directory extension attributes from AD-on-premises to Azure AD. You are setting up provisioning from Azure AD to Salesforce, and you want to use one of the directory extension attributes (i.e. **extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce. You can achieve that using the API.
 
-We assume that we already added an application which supports provisioning to our tenant through the Azure Portal. We know our application display name (the one shown in the portal), and we have an authorization token for Microsoft Graph. For information on how to obtain authorization token, see [Synchronization API quick start](synchronization_api_quickstart.md)
+Assuming that you already added an application which supports provisioning to your tenant through the Azure Portal. You know the application display name (the one shown in the portal), and you have an authorization token for Microsoft Graph. For information on how to obtain authorization token, see [Synchronization API quick start](synchronization_howto_api_quickstart.md)
 
 ## Find service principal by display name
 
-We are interested in the one named "Salesforce Sandbox":
+You are interested in the one named "Salesforce Sandbox":
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 Authorization: Bearer {Token}
 ```
 
-```javascript
+```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName)",
     "value": [
@@ -38,11 +40,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-Our {servicePrincipalId} is "60443998-8cf7-4e61-b05c-a53b658cb5e1"
+Your {servicePrincipalId} is "60443998-8cf7-4e61-b05c-a53b658cb5e1"
 
 ## List synchronization jobs in the context of the service principal 
 
-Generally, we expect to see only one - this will give us jobId of the task we need to work with
+Generally, you expect to see only one - this will give us jobId of the task you need to work with
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -56,8 +58,8 @@ Authorization: Bearer {Token}
         {
             "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
             "templateId": "SfSandboxOutDelta",
-            "schedule": {..},
-            "status": {..}
+            "schedule": {},
+            "status": {}
     }
     ]
 }
@@ -65,118 +67,113 @@ Authorization: Bearer {Token}
 
 Our {jobId} is "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa"
 
-## Find exact name of the directory extension attribute we need
+## Find exact name of the directory extension attribute you need
 
-We'll need full name of the extension attribute to perform next steps. If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see following  information regarding directory extension attributes and how to inspect them: 
+You'll need full name of the extension attribute to perform next steps. If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see following  information regarding directory extension attributes and how to inspect them: 
 * [Extending the Azure AD directory schema with custom properties](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
 * [Directory schema extensions | Graph API concepts](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory_schema_extensions)
 
 
 ## Retrieve effective synchronization schema
-
 ```http
     GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
     Authorization: Bearer {Token}
 ```
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 
-```json
+```http
+HTTP/1.1 200 OK
+
 {
-    "directories": [
-            {
-                "id": "66e4a8cc-1b7b-435e-95f8-f06cea133828",
-                "name": "Azure Active Directory",
-                "objects": [
-                    {
-                        "attributes": [
-                            {
-                            "anchor": true,
-                            "caseExact": false,
-                            "defaultValue": null,
-                            "metadata": [],
-                            "multivalued": false,
-                            "mutability": "ReadWrite",
-                            "name": "objectId",
-                            "required": false,
-                            "referencedObjects": [],
-                            "type": "String"
-                            },
-                            {
-                            "anchor": false,
-                            "caseExact": false,
-                            "defaultValue": null,
-                            "metadata": [],
-                            "multivalued": false,
-                            "mutability": "ReadWrite",
-                            "name": "streetAddress",
-                            "required": false,
-                            "referencedObjects": [],
-                            "type": "String"
-                            },
-                        ..
-                        ],
-                        "metadata": [..],
-                        "name": "User"
-                    },
-                .. 
-                ]
-            },
-            {
-                "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
-                "name": "salesforce.com",
-                "objects": [ .. ]
-            }
-    ],
-    "synchronizationRules": [{
-            "editable": true,
-            "id": "4c5ecfa1-a072-4460-b1c3-4adde3479854",
-            "metadata": [ .. ],
-            "name": "USER_OUTBOUND_USER",
-            "objectMappings": [
-                    {
-                        "attributeMappings": [
-                                {
-                                "defaultValue": "True",
-                                "exportMissingReferences": false,
-                                "flowBehavior": "FlowWhenChanged",
-                                "flowType": "Always",
-                                "matchingPriority": 0,
-                                "source": {
-                                    "expression": "Not([IsSoftDeleted])",
-                                    "name": "Not",
-                                    "parameters": [
-                                    {
-                                        "key": "source",
-                                        "value": {
-                                        "expression": "[IsSoftDeleted]",
-                                        "name": "IsSoftDeleted",
-                                        "parameters": [],
-                                        "type": "Attribute"
-                                        }
-                                    }
-                                    ],
-                                    "type": "Function"
-                                },
-                                "targetAttributeName": "IsActive"
-                                },
-                        ..
-                        ],
-                            "enabled": true,
-                        "flowTypes": "Add, Update, Delete",
-                        "metadata": [ .. ],
-                        "name": "Synchronize Azure Active Directory Users to salesforce.com",
-                        "scope": null,
-                        "sourceObjectName": "User",
-                        "targetObjectName": "User"
-                },
-                ..
-            ]
-    }]
+  "directories": [
+	    {
+		      "id": "66e4a8cc-1b7b-435e-95f8-f06cea133828",
+		      "name": "Azure Active Directory",
+		      "objects": [
+			    {
+		            "attributes": [
+			            {
+			              "anchor": true,
+			              "caseExact": false,
+			              "defaultValue": null,
+			              "metadata": [],
+			              "multivalued": false,
+			              "mutability": "ReadWrite",
+			              "name": "objectId",
+			              "required": false,
+			              "referencedObjects": [],
+			              "type": "String"
+			            },
+			            {
+			              "anchor": false,
+			              "caseExact": false,
+			              "defaultValue": null,
+			              "metadata": [],
+			              "multivalued": false,
+			              "mutability": "ReadWrite",
+			              "name": "streetAddress",
+			              "required": false,
+			              "referencedObjects": [],
+			              "type": "String"
+			            }
+					],
+					"name": "User"
+				}
+			 ]
+		},
+		{
+		      "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
+		      "name": "salesforce.com",
+		      "objects": []
+		}
+  ],
+ "synchronizationRules": [
+	    {
+	      "editable": true,
+	      "id": "4c5ecfa1-a072-4460-b1c3-4adde3479854",
+	      "name": "USER_OUTBOUND_USER",
+	      "objectMappings": [
+		        {
+			        "attributeMappings": [
+				            {
+				              "defaultValue": "True",
+				              "exportMissingReferences": false,
+				              "flowBehavior": "FlowWhenChanged",
+				              "flowType": "Always",
+				              "matchingPriority": 0,
+				              "source": {
+				                "expression": "Not([IsSoftDeleted])",
+				                "name": "Not",
+				                "parameters": [
+				                  {
+				                    "key": "source",
+				                    "value": {
+				                      "expression": "[IsSoftDeleted]",
+				                      "name": "IsSoftDeleted",
+				                      "parameters": [],
+				                      "type": "Attribute"
+				                    }
+				                  }
+				                ],
+				                "type": "Function"
+				              },
+				              "targetAttributeName": "IsActive"
+				            }
+			         ],
+			        "enabled": true,
+			        "flowTypes": "Add, Update, Delete",
+			        "name": "Synchronize Azure Active Directory Users to salesforce.com",
+			        "scope": null,
+			        "sourceObjectName": "User",
+			        "targetObjectName": "User"
+			}]
+		}]
 }
 ```
 
 ## Add attribute definition for the directory extension attribute, and a mapping between the attributes
 
-Using text editor of your choice (i.e. http://www.jsoneditoronline.org/, Notepad++, etc) we need to:
+Using text editor of your choice (i.e. http://www.jsoneditoronline.org/, Notepad++, etc) you need to:
 
 1. Add attribute definition for extension_9d98asdfl15980a_Nickname attribute. 
     - Under directories, find directory with the name "Azure Active Directory", and in the objects array find the one named "User".
@@ -190,14 +187,12 @@ Using text editor of your choice (i.e. http://www.jsoneditoronline.org/, Notepad
     ```json
     {
         "directories": [
-            ...
             {
                 "id": "66e4a8cc-1b7b-435e-95f8-f06cea133828",
                 "name": "Azure Active Directory",
                 "objects": [
                     {
                         "attributes": [
-                            ...
                                 ,{
                                 "name": "extension_9d98asdfl15980a_Nickname",
                                 "type": "String"
@@ -216,7 +211,6 @@ Using text editor of your choice (i.e. http://www.jsoneditoronline.org/, Notepad
             "objectMappings": [
                 {
                     "attributeMappings": [
-                    ...
                     ,{
                         "source": {
                             "name": "extension_9d98asdfl15980a_Nickname",
@@ -229,8 +223,7 @@ Using text editor of your choice (i.e. http://www.jsoneditoronline.org/, Notepad
                     "scope": null,
                     "sourceObjectName": "User",
                     "targetObjectName": "User"
-                },
-                ...
+                }
             ],
             "priority": 1,
             "sourceDirectoryName": "Azure Active Directory",
@@ -248,8 +241,8 @@ Make sure you supply entire schema object, including all the unmodified parts, a
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 {
-    "directories": [..],
-    "synchronizationRules": [..]
+    "directories": [],
+    "synchronizationRules": []
 }
 
 HTTP/1.1 201 No Content

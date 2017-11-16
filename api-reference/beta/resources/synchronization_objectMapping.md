@@ -1,39 +1,56 @@
-# Object mapping
+# objectMapping resource type
 
 Object mapping defines how a given object should be synchronized from source directory to target directory. In particular, it defines how object in source directory should be matched with an object in target directory, what (if any) scoping filters should be used to decide if we want to provision a given object, and how object attributes should be transformed going from source to target directory.
 
-Object mappings are the main part of the [synchronization rule](synchronization_rule.md) and are updated as part of [synchronization schema](synchronization_schema.md)
-
-## JSON representation
-
-```json
-{
-  "attributeMappings": [{"@odata.type": "microsoft.graph.attributeMapping"}],
-  "enabled": "Boolean",
-  "flowTypes": {"@odata.type": "microsoft.graph.objectMappingFlowType"},
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
-  "name": "String",
-  "scope": {"@odata.type": "microsoft.graph.scopingFilter"},
-  "sourceObjectName": "String",
-  "targetObjectName": "String"
-}
-```
+Object mappings are the main part of the [synchronization rule](synchronization_rule.md) and are updated as part of [synchronization schema](synchronization_schema.md).
 
 ## Properties
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
-|attributeMappings  |[attributeMapping](synchronization_attributeMapping.md) collection    | Attribute mappings define which attributes and how should flow from the source object into the target object. A number of functions are available to support transformation of original source values|
-|enabled        |Boolean    |When `true`, this object mapping will be processed during synchronization. When `false`, this object mapping will be skipped|
+|attributeMappings  |[attributeMapping](synchronization_attributeMapping.md) collection    | Attribute mappings define which attributes and how should flow from the source object into the target object. A number of functions are available to support transformation of original source values.|
+|enabled        |Boolean    |When `true`, this object mapping will be processed during synchronization. When `false`, this object mapping will be skipped.|
 |flowTypes      |objectFlowType    |Which flow types are enabled for this object mapping. `Add` means we will create new objects in the target directory, `Update` means we will modify existing objects, and `Delete` means we will de-provision existing users. Default is `"Add, Update, Delete"`. |
-|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed|
-|name           |String     |Human-friendly name of the object mapping|
-|scope          |[scopingFilter](synchronization_scopingFilter.md)     |Scope defines a filter to be used when deciding if a given object should be provisioned. For example, we might want to only provision users which are located in US|
-|sourceObjectName           |String     |Name of the object in source directory. Must match object name from source [directory definition](synchronization_directoryDefinition.md)|
-|targetObjectName           |String     |Name of the object in target directory. Must match object name from target [directory definition](synchronization_directoryDefinition.md)|
+|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
+|name           |String     |Human-friendly name of the object mapping.|
+|scope          |[filter](synchronization_filter.md)     |Scope defines a filter to be used when deciding if a given object should be provisioned. For example, we might want to only provision users which are located in US.|
+|sourceObjectName           |String     |Name of the object in source directory. Must match object name from source [directory definition](synchronization_directoryDefinition.md).|
+|targetObjectName           |String     |Name of the object in target directory. Must match object name from target [directory definition](synchronization_directoryDefinition.md).|
 
+## JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.objectMapping"
+}-->
+
+```json
+{
+  "attributeMappings": [{"@odata.type": "microsoft.graph.attributeMapping"}],
+  "enabled": true,
+  "flowTypes": "String",
+  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
+  "name": "String",
+  "scope": {"@odata.type": "microsoft.graph.filter"},
+  "sourceObjectName": "String",
+  "targetObjectName": "String"
+}
+```
 
 ## JSON Example
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.objectMapping"
+}-->
 
 ```json
 {
@@ -313,5 +330,15 @@ Object mappings are the main part of the [synchronization rule](synchronization_
     "scope": null,
     "sourceObjectName": "User",
     "targetObjectName": "User"
-},
+}
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "objectMapping resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
