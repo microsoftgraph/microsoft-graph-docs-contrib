@@ -4,7 +4,7 @@
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
-A GET photo operation first attempt sto retrieve the specified photo from Office 365. If the photo is not available in Office 365, the API attempts to retrieve the photo from Azure Active Directory.
+A GET photo operation first attempt to retrieve the specified photo from Office 365. If the photo is not available in Office 365, the API attempts to retrieve the photo from Azure Active Directory.
 
 The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
 '360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory.
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | For **user** resource:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported |
+|Delegated (personal Microsoft account)  <br /> **Note**: Metadata operation is not supported. | For **user** resource:<br/>User.Read, User.ReadWrite<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 |Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 
 ## HTTP request to get the photo
