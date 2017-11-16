@@ -46,7 +46,7 @@ Here is a JSON representation of the resource.
 |Calendar| 4230 minutes.|
 |Contacts| 4230 minutes.|
 |Group conversations| 4230 minutes.|
-|Drive root items| 86400 minutes.|
+|Drive root items| 43200 minutes.|
 
 ## Relationships
 None
