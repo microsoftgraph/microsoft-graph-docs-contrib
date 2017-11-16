@@ -4,7 +4,7 @@
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
-A GET photo operation first attempt sto retrieve the specified photo from Office 365. If the photo is not available in Office 365, the API attempts to retrieve the photo from Azure Active Directory (AAD).
+A GET photo operation first attempt sto retrieve the specified photo from Office 365. If the photo is not available in Office 365, the API attempts to retrieve the photo from Azure Active Directory.
 
 The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
 '360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory.
@@ -12,19 +12,19 @@ The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64',
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
 If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.
 For example, if the user uploads a photo that is 504x504 pixels, then all but the 648x648 size of photo will be available for download.
-If the specified size is not available in the user's mailbox or in AAD, the size of '1x1' is returned with the rest of 
+If the specified size is not available in the user's mailbox or in Azure Active Directory, the size of '1x1' is returned with the rest of 
 metadata.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-> **Note:** The GET photo operation in beta supports a user's work, school, or personal mailboxes. The GET photo metadata operation, however, supports only the user's work or school mailboxes and not personal mailboxes.
+> **Note:** The GET photo operation in beta supports a user's work, school, or personal accounts. The GET photo metadata operation, however, supports only the user's work or school accounts and not personal accounts.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | For **user** resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
-|Delegated (personal Microsoft account) <br /> **Note**: Metadata operation is not supported. | For **user** resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
-|Application                        | For **user** resource:<br/>User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegated (work or school account) | For **user** resource:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegated (personal Microsoft account) | Not supported |
+|Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 
 ## HTTP request to get the photo
 <!-- { "blockType": "ignored" } -->
