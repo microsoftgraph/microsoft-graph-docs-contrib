@@ -72,28 +72,26 @@ Content-length: 200
     "birthday": "",
     "personNotes": "",
     "isFavorite": false,
-    "title": null,
+    "jobTitle": null,
     "companyName": null,
     "yomiCompany": "",
     "department": null,
     "officeLocation": null,
     "profession": "",
-    "mailboxType": "GroupMailbox",
-    "personType": "ModernGroup",
-    "emailAddresses": [
+    "imAddress": null,
+    "scoredEmailAddresses": [
         {
             "address": "Marketing@M365x214355.onmicrosoft.com",
-            "rank": 30
+            "relevanceScore": 30.0
         }
     ],
     "phones": [],
     "postalAddresses": [],
     "websites": [],
-    "sources": [
-        {
-            "type": "Directory"
-        }
-    ]
+    "personType": {
+        "class": "Group",
+        "subclass": "UnifiedGroup"
+    }
 }
 ```
 

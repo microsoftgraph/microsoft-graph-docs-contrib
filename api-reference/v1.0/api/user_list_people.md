@@ -69,77 +69,73 @@ Content-type: application/json
 Content-length: 346
 
 {
-  "value": [
-    {
-      "id": "33b43a5b-87d6-41ec-91f8-a2610048105f",
-      "displayName": "Marketing",
-      "givenName": null,
-      "surname": null,
-      "birthday": "",
-      "personNotes": "",
-      "isFavorite": false,
-      "title": null,
-      "companyName": null,
-      "yomiCompany": "",
-      "department": null,
-      "officeLocation": null,
-      "profession": "",
-      "mailboxType": "GroupMailbox",
-      "personType": "ModernGroup",
-      "userPrincipalName": "",
-      "emailAddresses": [
-          {
-              "address": "marketing@contoso.com",
-              "rank": 30
-          }
-      ],
-      "phones": [],
-      "postalAddresses": [],
-      "websites": [],
-      "sources": [
-          {
-              "type": "Directory"
-          }
-      ]
-    },
-    {
-      "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
-      "displayName": "Isaiah Langer",
-      "givenName": "Isaiah",
-      "surname": "Langer",
-      "birthday": "",
-      "personNotes": "",
-      "isFavorite": false,
-      "title": "Web Marketing Manager",
-      "companyName": null,
-      "yomiCompany": "",
-      "department": "Sales & Marketing",
-      "officeLocation": "20/1101",
-      "profession": "",
-      "mailboxType": "Mailbox",
-      "personType": "Person",
-      "userPrincipalName": "isaiah@contoso.com",
-      "emailAddresses": [
-          {
-              "address": "isaiah@contoso.com",
-              "rank": 20
-          }
-      ],
-      "phones": [
-          {
-              "type": "business",
-              "number": "+1 918 555 0101"
-          }
-      ],
-      "postalAddresses": [],
-      "websites": [],
-      "sources": [
-          {
-              "type": "Directory"
-          }
-      ]
-    }
-  ]
+    "value": [
+        {
+            "id": "33b43a5b-87d6-41ec-91f8-a2610048105f",
+            "displayName": "Marketing",
+            "givenName": null,
+            "surname": null,
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": null,
+            "companyName": null,
+            "yomiCompany": "",
+            "department": null,
+            "officeLocation": null,
+            "profession": "",
+            "userPrincipalName": "",
+            "imAddress": null,
+            "scoredEmailAddresses": [
+                {
+                    "address": "Marketing@M365x214355.onmicrosoft.com",
+                    "relevanceScore": 30.0
+                }
+            ],
+            "phones": [],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Group",
+                "subclass": "UnifiedGroup"
+            }
+        },
+        {
+            "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+            "displayName": "Isaiah Langer",
+            "givenName": "Isaiah",
+            "surname": "Langer",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": "Web Marketing Manager",
+            "companyName": null,
+            "yomiCompany": "",
+            "department": "Sales & Marketing",
+            "officeLocation": "20/1101",
+            "profession": "",
+            "userPrincipalName": "IsaiahL@M365x214355.onmicrosoft.com",
+            "imAddress": "sip:isaiahl@m365x214355.onmicrosoft.com",
+            "scoredEmailAddresses": [
+                {
+                    "address": "IsaiahL@M365x214355.onmicrosoft.com",
+                    "relevanceScore": 20.0
+                }
+            ],
+            "phones": [
+                {
+                    "type": "business",
+                    "number": "+1 918 555 0101"
+                }
+            ],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        }
+    ]
 }
 ```
 
