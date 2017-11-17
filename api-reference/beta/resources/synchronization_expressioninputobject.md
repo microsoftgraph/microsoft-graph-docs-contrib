@@ -5,8 +5,8 @@ Represents an object to be used as input test data during expression evaluation 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|[objectDefinition](objectdefinition.md)|Definition of the test object.|
-|properties|[stringKeyObjectValuePair](stringkeyobjectvaluepair.md) collection|Property values of the test object.|
+|definition|[objectDefinition](synchronization_objectdefinition.md)|Definition of the test object.|
+|properties|[stringKeyObjectValuePair](synchronization_stringkeyobjectvaluepair.md) collection|Property values of the test object.|
 
 ## JSON representation
 

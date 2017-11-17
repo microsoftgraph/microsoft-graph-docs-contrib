@@ -29,11 +29,11 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |expression               |String               |Expression to parse.|
-|testInputObject          |[expressionInputObject]|Test data object to evaluate expression against. Optional.|
-|targetAttributeDefinition|[attributeDefinition]  |Definition of the attribute which will be mapped to this expression. Optional.|
+|testInputObject          |[expressionInputObject](../resources/synchronization_expressioninputobject.md)|Test data object to evaluate expression against. Optional.|
+|targetAttributeDefinition|[attributeDefinition](../resources/synchronization_attributedefinition.md) |Definition of the attribute which will be mapped to this expression. Optional.|
 
 ## Response
-If successful, this method returns `200 OK` response code and [parseExpressionResponse](../resources/parseexpressionresponse.md) object in the response body.
+If successful, this method returns `200 OK` response code and [parseExpressionResponse](../resources/synchronization_parseexpressionresponse.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

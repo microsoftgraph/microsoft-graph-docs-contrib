@@ -1,11 +1,11 @@
-# Synchronization API Overview
+# Azure AD Synchronization API Overview
 
 Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the creation, maintenance, and removal of identities in cloud (SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more. For introductory information on synchronization in Azure AD, see following articles:
 
 * [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
 *  [Managing user account provisioning for enterprise apps in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
-## What is the purpose of the Synchronization API? 
+## What is the purpose of the Azure AD Synchronization API? 
 
 Synchronization API, part of Microsfot Graph API, allows programmatic management of identity synchronization. Using the API one can create, start and stop synchronization jobs, make changes to their synchronization schema, and verify current synchronization status. 
 
@@ -37,6 +37,6 @@ Synchronization template provides pre-configured synchronization settings for a 
 
 ## Next steps
 
-* [Synchronization API Quick Start](synchronization_howto_api_quickstart.md)
-* [Configure synchronization with directory extension attributes](synchronization_howto_directory_extensions.md)
+* [Synchronization API Quick Start](../resources/synchronization_howto_api_quickstart.md)
+* [Configure synchronization with directory extension attributes](../resources/synchronization_howto_directory_extensions.md)
 * [Configure synchronization with custom target attributes](../resources/synchronization_howto_custom_attributes.md)

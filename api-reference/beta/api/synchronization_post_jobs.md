@@ -25,7 +25,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## Request body
 
-In the request body, supply a JSON representation of [synchronizationJob](../resources/synchronizationjob.md) object to be created. `templateId` is the only required property. `templateId` must match one of the templates created for this application/service principal (to discover available templates, use [List templates](synchronization_list_templates.md).
+In the request body, supply a JSON representation of [synchronizationJob](../resources/synchronization_job.md) object to be created. `templateId` is the only required property. `templateId` must match one of the templates created for this application/service principal (to discover available templates, use [List templates](synchronization_list_templates.md).
 
 ## Response
 

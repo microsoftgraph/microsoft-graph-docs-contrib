@@ -7,7 +7,7 @@ Clause represent a single assertion which a candidate object must satisfy, and i
 |:---------------|:--------|:----------|
 |operatorName|String|Name of the operator to be applied to source and target operands. Must be one fo the supported operators. Supported operators can be discovered.|
 |sourceOperandName|String|Name of source operand (operand being tested). Source operand name must match one of the attribute names on the source object.|
-|targetOperand|[filterOperand](filteroperand.md)|Values that source operand will be tested against.|
+|targetOperand|[filterOperand](synchronization_filteroperand.md)|Values that source operand will be tested against.|
 
 ## JSON representation
 

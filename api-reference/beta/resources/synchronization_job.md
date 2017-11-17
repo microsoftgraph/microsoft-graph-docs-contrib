@@ -7,7 +7,7 @@ Synchronization job performs synchronization by periodically running in the back
 | Method        | Return Type               | Description                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization_jobs_get.md)             |[synchronizationJob](synchronization_job.md) collection  |List existing jobs for a given application instance (service principal).|
-|[Get synchronizationJob](../api/synchronizationjob_get.md) | [synchronizationJob](synchronization_job.md) |Read properties and relationships of synchronizationJob object.|
+|[Get synchronizationJob](../api/synchronization_job_get.md) | [synchronizationJob](synchronization_job.md) |Read properties and relationships of synchronizationJob object.|
 |[Create](../api/synchronization_jobs_post.md)         |[synchronizationJob](synchronization_job.md)   |Create new job for a given application.|
 |[Start](../api/synchronization_job_start.md)          |None   |Start synchronization. If job is in paused state, it continues from the point where job was paused. If job is in quarantine, quarantine status is cleared.|
 |[Restart](../api/synchronization_job_restart.md)      |None   |Force job to start from scratch and re-process all the objects in the directory.|

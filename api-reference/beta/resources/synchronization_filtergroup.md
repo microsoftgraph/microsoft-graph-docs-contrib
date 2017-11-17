@@ -5,7 +5,7 @@ Filter group defines a set of clauses which an object must satisfy to be conside
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|clauses|[filterClause](filterclause.md) collection|Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`|
+|clauses|[filterClause](synchronization_filterclause.md) collection|Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`|
 |name|String|Human-readable name of the filter group|
 
 ## JSON representation

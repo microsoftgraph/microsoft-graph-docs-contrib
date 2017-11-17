@@ -28,7 +28,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |useSavedCredentials|Boolean|When `true`, `"credentials"` parameter will be ignored and previously saved credentials (if any) will be validated instead. |
-|credentials|[synchronizationSecretKeyStringValuePair](../resource/synchronization_secretkeystringvaluepair.md) collection|Credentials to validate. Ignored when `"useSavedCredentials"` parameter is `true`.|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization_secretkeystringvaluepair.md) collection|Credentials to validate. Ignored when `"useSavedCredentials"` parameter is `true`.|
 
 ## Response
 If validation is successful, this method returns `204, No Content` response code. It does not return anything in the response body.
