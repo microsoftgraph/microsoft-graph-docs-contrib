@@ -37,16 +37,16 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code. If the group is added to the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
+If successful, this method returns `200 OK` response code. If the group is added to the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
 
 ## Example
 
-##### Request
+#### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "grouplifecyclepolicy_addgroup"
-}-->
+} -->
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/addGroup
 Content-type: application/json
@@ -57,12 +57,9 @@ Content-length: 57
 }
 ```
 
-##### Response
+#### Response
+<!-- { "blockType": "ignored" } -->
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

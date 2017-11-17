@@ -42,6 +42,11 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignedAccessSingleModeUserName|String|This policy setting allows to define the user account that will be locked to Single App Kiosk Mode.|
+|assignedAccessSingleModeAppUserModelId|String|This policy setting allows to define the Application User Model ID (AUMID) that will be locked to Single App Kiosk Mode.|
+|microsoftAccountSignInAssistantSettings|String|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
+|authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
+|cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
 |displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
 |displayAppListWithGdiDPIScalingTurnedOff|String collection|List of legacy applications that have GDI DPI Scaling turned off.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Endpoint for discovering cloud printers.|
@@ -61,6 +66,12 @@ The following table shows the properties that are required when you create the w
 |searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
 |searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
+|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Specify whether to allow automatic device encryption during OOBE when the device is Azure AD joined (desktop only).|
+|diagnosticsDataSubmissionMode|String|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
+|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
+|systemTelemetryProxyServer|String|Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.|
+|inkWorkspaceAccess|String|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
 |smartScreenEnableAppInstallControl|Boolean|Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
@@ -114,6 +125,8 @@ The following table shows the properties that are required when you create the w
 |defenderScanType|String|The defender system scan type. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderScheduledScanTime|TimeOfDay|The defender time for the system scan.|
 |defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
+|defenderCloudBlockLevel|String|Specifies the level of cloud-delivered protection. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
+|defenderCloudExtendedTimeout|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
 |lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
@@ -194,8 +207,6 @@ The following table shows the properties that are required when you create the w
 |cortanaBlocked|Boolean|Whether or not to Block the user from using Cortana.|
 |deviceManagementBlockFactoryResetOnMobile|Boolean|Indicates whether or not to Block the user from resetting their phone.|
 |deviceManagementBlockManualUnenroll|Boolean|Indicates whether or not to Block the user from doing manual un-enrollment from device management.|
-|diagnosticsDataSubmissionMode|String|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
-|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |safeSearchFilter|String|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
 |edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
@@ -260,7 +271,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10192
+Content-length: 10820
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -268,6 +279,11 @@ Content-length: 10192
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
+  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
+  "microsoftAccountSignInAssistantSettings": "disabled",
+  "authenticationAllowSecondaryDevice": true,
+  "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
   ],
@@ -291,6 +307,12 @@ Content-length: 10192
   "searchDisableIndexerBackoff": true,
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
+  "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+  "diagnosticsDataSubmissionMode": "none",
+  "oneDriveDisableFileSync": true,
+  "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "inkWorkspaceAccess": "enabled",
+  "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
@@ -358,6 +380,8 @@ Content-length: 10192
   "defenderScanType": "disabled",
   "defenderScheduledScanTime": "11:59:10.9990000",
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -445,8 +469,6 @@ Content-length: 10192
   "cortanaBlocked": true,
   "deviceManagementBlockFactoryResetOnMobile": true,
   "deviceManagementBlockManualUnenroll": true,
-  "diagnosticsDataSubmissionMode": "none",
-  "oneDriveDisableFileSync": true,
   "safeSearchFilter": "strict",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
@@ -511,7 +533,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10300
+Content-Length: 10928
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -521,6 +543,11 @@ Content-Length: 10300
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
+  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
+  "microsoftAccountSignInAssistantSettings": "disabled",
+  "authenticationAllowSecondaryDevice": true,
+  "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
   ],
@@ -544,6 +571,12 @@ Content-Length: 10300
   "searchDisableIndexerBackoff": true,
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
+  "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+  "diagnosticsDataSubmissionMode": "none",
+  "oneDriveDisableFileSync": true,
+  "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "inkWorkspaceAccess": "enabled",
+  "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
@@ -611,6 +644,8 @@ Content-Length: 10300
   "defenderScanType": "disabled",
   "defenderScheduledScanTime": "11:59:10.9990000",
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -698,8 +733,6 @@ Content-Length: 10300
   "cortanaBlocked": true,
   "deviceManagementBlockFactoryResetOnMobile": true,
   "deviceManagementBlockManualUnenroll": true,
-  "diagnosticsDataSubmissionMode": "none",
-  "oneDriveDisableFileSync": true,
   "safeSearchFilter": "strict",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
