@@ -1,13 +1,11 @@
 # List people
 
-Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by 
-the user's communication and collaboration patterns and business relationships.
+Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.
 
 You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
- 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -21,15 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
+
 ## Optional query parameters
-|Name|Value|Description|
-|:---------------|:--------|:-------|
-|$filter|string|Limits the response to only those people whose record contains the specified criteria.|
-|$orderby|string|By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter.|
-|$search|string|Search for people by name or alias. Supports fuzzy matching.|
-|$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
-|$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
-|$top|int|Number of results to be returned.|
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -39,26 +31,33 @@ GET /users/{id | userPrincipalName}/people
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response can contain one person object or a collection of person objects. 
+If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response can contain one person object or a collection of person objects.
+
 ## Examples
+### Browse
+The requests in this section get the people most relevant to the signed-in user (`/me`), based on communication, collaboration, and business relationships.
 
-### Get a collection of relevant people 
+By default, each response returns 10 records, but you can change this using the *$top* parameter. These requests require the People.Read permission.
 
-The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships. 
+##### Request
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_person_collection"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/
+GET https://graph.microsoft.com/v1.0/me/people
 ```
 
-The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.
+##### Response
+The following is an example of the response that returns a collection of people.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
-  "name": "get_person_collection",
   "truncated": true,
   "@odata.type": "microsoft.graph.person",
   "isCollection": true
@@ -67,265 +66,166 @@ The following example shows the response. By default, each response returns 10 r
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 346
 
 {
-    "value": [
-        {
-            "id": "8CE6E1DE-CB84-4BF5-971D-D3ECF452E2B5",
-            "displayName": "Lorrie Frye",
-            "givenName": "Lorrie",
-            "surname": "Frye",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Paralegal",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Legal",
-            "officeLocation": "20/1109",
-            "profession": "",
-            "userPrincipalName": "Lorrief@contoso.onmicrosoft.com",
-            "imAddress": "sip:Lorrief@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8.0
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 980 555 0101"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": [
-                {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-        },
-        {
-            "id": "5767393D-42BA-4E5C-BEE4-52BB25639CF4",
-            "displayName": "Maynard Denman",
-            "givenName": "Maynard",
-            "surname": "Denman",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Web Marketing Manager",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Sales & Marketing",
-            "officeLocation": "20/1101",
-            "profession": "",
-            "userPrincipalName": "Maynardd@contoso.onmicrosoft.com",
-            "imAddress": "sip:Maynardd@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Maynardd@contoso.onmicrosoft.com",
-                    "relevanceScore": 8.0
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 918 555 0101"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": [
-                {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-        },
-        {
-            "id": "914B5191-11FA-4C0B-A354-0FA8C8EFD585",
-            "displayName": "Darrel Halsey",
-            "givenName": "Darrel",
-            "surname": "Halsey",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Attorney",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Legal",
-            "officeLocation": "14/1102",
-            "profession": "",
-            "userPrincipalName": "Darrelh@contoso.onmicrosoft.com",
-            "imAddress": "sip:Darrelh@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Darrelh@contoso.onmicrosoft.com",
-                    "relevanceScore": 8.0
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 205 555 0103"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": [
-                {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-        }
-    ]
+  "value": [
+    {
+      "id": "33b43a5b-87d6-41ec-91f8-a2610048105f",
+      "displayName": "Marketing",
+      "givenName": null,
+      "surname": null,
+      "birthday": "",
+      "personNotes": "",
+      "isFavorite": false,
+      "title": null,
+      "companyName": null,
+      "yomiCompany": "",
+      "department": null,
+      "officeLocation": null,
+      "profession": "",
+      "mailboxType": "GroupMailbox",
+      "personType": "ModernGroup",
+      "userPrincipalName": "",
+      "emailAddresses": [
+          {
+              "address": "marketing@contoso.com",
+              "rank": 30
+          }
+      ],
+      "phones": [],
+      "postalAddresses": [],
+      "websites": [],
+      "sources": [
+          {
+              "type": "Directory"
+          }
+      ]
+    },
+    {
+      "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+      "displayName": "Isaiah Langer",
+      "givenName": "Isaiah",
+      "surname": "Langer",
+      "birthday": "",
+      "personNotes": "",
+      "isFavorite": false,
+      "title": "Web Marketing Manager",
+      "companyName": null,
+      "yomiCompany": "",
+      "department": "Sales & Marketing",
+      "officeLocation": "20/1101",
+      "profession": "",
+      "mailboxType": "Mailbox",
+      "personType": "Person",
+      "userPrincipalName": "isaiah@contoso.com",
+      "emailAddresses": [
+          {
+              "address": "isaiah@contoso.com",
+              "rank": 20
+          }
+      ],
+      "phones": [
+          {
+              "type": "business",
+              "number": "+1 918 555 0101"
+          }
+      ],
+      "postalAddresses": [],
+      "websites": [],
+      "sources": [
+          {
+              "type": "Directory"
+          }
+      ]
+    }
+  ]
 }
 ```
-### Search other user’s relevant people
 
-The following request gets the people most relevant to another person in the signed-in user's organization. This request requires the People.Read.All permission. In this example, Roscoe Seidel's relevant people are displayed.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_other_person"
-}-->
+#### Requesting a subsequent page of people
+If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
 
 ```http
-GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
+GET https://graph.microsoft.com/v1.0/me/people/?$top=10&$skip=10
 ```
 
-The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. This example uses *$top* to limit the response to three records.
-
-<!-- {
-  "blockType": "response",
-  "name": "get_other_person",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
-} -->
+#### Sort the response
+By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their display name, and then returns the first 10 people on the sorted list.
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
+GET https://graph.microsoft.com/v1.0/me/people/?$orderby=DisplayName
+```
+#### Changing the number of people returned and the fields returned
+You can change the number of people returned in the response by setting the *$top* parameter. 
 
-{
-     "value": [
-        {
-            "id": "56155636-703F-47F2-B657-C83F01F49BBC",
-            "displayName": "Clifton Clemente",
-            "givenName": "Clifton",
-            "surname": "Clemente",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Director",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Legal",
-            "officeLocation": "19/2106",
-            "profession": "",
-            "userPrincipalName": "Cliftonc@contoso.onmicrosoft.com",
-            "imAddress": "sip:Cliftonc@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Cliftonc@contoso.onmicrosoft.com",
-                    "relevanceScore": 20.0
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 309 555 0101"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": [
-                {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-        },
-        {
-            "id": "6BF27D5A-AB4F-4C43-BED0-7DAD9EB0C1C4",
-            "displayName": "Sheree Mitchell",
-            "givenName": "Sheree",
-            "surname": "Mitchell",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Product Manager",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Sales & Marketing",
-            "officeLocation": "20/2107",
-            "profession": "",
-            "userPrincipalName": "Shereem@contoso.onmicrosoft.com",
-            "imAddress": "sip:shereem@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Shereem@contoso.onmicrosoft.com",
-                    "relevanceScore": 10.0
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 918 555 0107"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": [
-                {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-        },
-        {
-            "id": "B3E5302D-EAF0-4E8B-8C6C-A2AE64B4B163",
-            "displayName": "Vincent Matney",
-            "givenName": "Vincent",
-            "surname": "Matney",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "CVP Engineering",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Engineering",
-            "officeLocation": "23/2102",
-            "profession": "",
-            "userPrincipalName": "Vincentm@contoso.onmicrosoft.com",
-            "imAddress": "sip:vincentm@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Vincentm@contoso.onmicrosoft.com",
-                    "relevanceScore": 10.0
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 502 555 0102"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": [
-                {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-        }
-    ]
-}
+The following example requests the 1,000 perople most relevant to `/me`. The request also limits the amount of data sent back from the server by requesting only the display name of the person.
+
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$top=1000&$select=DisplayName
+```
+#### Selecting the fields to return
+You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The *@odata.id* field is always returned.
+
+The following example limits the response to the *DisplayName* and *EmailAddress* of the 10 most relevant people.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$select=DisplayName,EmailAddresses
+```
+#### Using a filter to limit the response
+You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria. 
+
+The following query limits the response to people with the source "Directory."
+
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$filter=Sources/Any (source: source/Type  eq 'Directory')
+```
+
+#### Selecting the fields to return in a filtered response
+
+You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs. 
+
+The following example gets the *DisplayName* and *EmailAddress* of people whose display name equals the specified name. In this example, only people whose display name equals "Nestor Kellum" are returned. 
+
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$select=DisplayName,EmailAddresses&$filter=DisplayName eq 'Nestor Kellum'
+```
+
+### Search people
+The requests in this section also get the people most relevant to the signed-in user (`/me`). Search requests require the People.Read permission.
+
+#### Using search to select people
+
+Use the *$search* parameter to select people who meet a particular set of criteria. 
+
+The following search query returns people relevant to `/me` whose GivenName or Surname begins with the letter "j".
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search=j
+```
+#### Using search to specify a relevant topic
+
+The following request returns people relevant to `/me` whose name contains "ma" and who have an association with "feature planning."
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="ma topic: feature planning"
+```
+#### Performing a fuzzy search
+
+The following request does a search for a person named "Hermaini Hall." Because there is a person named "Herminia Hull" relevant to the signed-in user, the information for "Herminia Hull" is returned.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="hermaini hall"
+```
+### Related people
+
+The following request gets the people most relevant to another person in the user's organization. This request requires the User.ReadBasic.All or People.Read.All permission. In this example, Nestor Kellum's relevant people are displayed.
+
+```http
+GET https://graph.microsoft.com/v1.0/users('nestork@contoso.com')/people/
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
