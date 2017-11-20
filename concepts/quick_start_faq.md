@@ -11,6 +11,7 @@ If you use the Office 365 REST APIs, you have to authenticate to each service yo
 The Microsoft Graph quick starts access three services with one authentication: Microsoft account, OneDrive, and Outlook. Each quick start accesses information from Microsoft account users' profiles, writes data to OneDrive (a photo), and generates an email using Outlook (including a link to the photo). 
 
 The quick starts involve four steps:
+
 - Select your platform 
 - Get your app ID (aka client ID)
 - Build the sample,
