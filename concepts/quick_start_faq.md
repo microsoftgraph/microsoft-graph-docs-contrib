@@ -13,7 +13,7 @@ The Microsoft Graph quick starts access three services with one authentication: 
 The quick starts involve four steps:
 
 - Select your platform 
-- Get your app ID (aka client ID)
+- Get your app ID (client ID)
 - Build the sample
 - Sign in, and send a profile photo via email
 
