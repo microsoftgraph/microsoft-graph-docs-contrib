@@ -14,7 +14,7 @@ The quick starts involve four steps:
 
 - Select your platform 
 - Get your app ID (aka client ID)
-- Build the sample,
+- Build the sample
 - Sign in, and send a profile photo via email
 
 When you complete the quick start, you have an app that's ready to run.
