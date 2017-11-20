@@ -4,7 +4,7 @@ This FAQ answers questions related to the [Microsoft Graph Quick Starts](https:/
 
 ## What do the quick starts do?
 
-The quick start samples show you how to access the power of the Microsoft Graph. 
+The quick start samples show you how to access the power of Microsoft Graph. 
 
 If you use the Office 365 REST APIs, you have to authenticate to each service you want to call. Microsoft Graph eliminates this complexity by unifying authentication and giving you access to all APIs via a single entry point. You can authenticate once and access information across multiple applications and services. 
 
