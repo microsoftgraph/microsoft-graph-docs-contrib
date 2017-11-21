@@ -58,7 +58,7 @@ Content-type: application/json
 Content-length: 344
 
 {
-  "assignments": [
+  "value": [
     {
       "id": "19002",
       "allowLateSubmissions": true,

@@ -57,7 +57,7 @@ Content-type: application/json
 Content-length: 1011
 
 {
-  "resources": [
+  "value": [
     {
       "distributeForStudentWork": false,
       "resource": {

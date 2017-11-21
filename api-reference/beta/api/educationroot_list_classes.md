@@ -58,7 +58,7 @@ Content-type: application/json
 Content-length: 277
 
 {
-  "classes": [
+  "value": [
     {
       "id": "11019",
       "description": "Health Level 1",

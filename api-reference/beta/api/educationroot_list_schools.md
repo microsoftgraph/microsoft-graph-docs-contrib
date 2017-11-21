@@ -56,7 +56,7 @@ Content-type: application/json
 Content-length: 345
 
 {
-  "schools": [
+  "value": [
     {
       "id": "10001",
       "displayName": "Contoso High School",
