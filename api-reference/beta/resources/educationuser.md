@@ -52,7 +52,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes to which the user belongs. Nullable.|
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
-|assignments| [educationAssignment](../../Assignments/resources/educationAssignment.md)| List of assignments for hte user. Nullable.|
+|assignments| [educationAssignment](educationAssignment.md)| List of assignments for hte user. Nullable.|
 
 ## JSON representation
 

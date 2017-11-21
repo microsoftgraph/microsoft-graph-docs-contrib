@@ -17,8 +17,8 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |[Add teacher](../api/educationclass_post_teachers.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the teachers navigation property.|
 |[List teachers](../api/educationclass_list_teachers.md) |[educationUser](educationuser.md) collection| Get a list of teachers for the class.|
 |[Remove teacher](../api/educationclass_delete_teachers.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the teachers navigation property.|
-|[Create educationAssignment](../../Assignments/api/educationclass_post_assignments.md) |[educationAssignment](../../Assignments/resources/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
-|[List assignments](../../Assignments/api/educationclass_list_assignments.md) |[educationAssignment](../../Assignments/resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
+|[Create educationAssignment](../api/educationclass_post_assignments.md) |[educationAssignment](../resoures/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
+|[List assignments](../api/educationclass_list_assignments.md) |[educationAssignment](../resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
 |[Update](../api/educationclass_update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
 |[Delete](../api/educationclass_delete.md) | None |Delete **educationClass** object. |
 
@@ -40,10 +40,10 @@ Represents a class within a school. The **educationClass** resource corresponds 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|members|[educationUser](educationuser.md) collection| All users in the class. Nullable.|
-|schools|[educationSchool](educationschool.md) collection| All schools that this class is associated with. Nullable.|
-|teachers|[educationUser](educationuser.md) collection|  All teachers in the class. Nullable.|
-|assignments|[educationAssignment](../../Assignments/resources/educationassignment.md) collection| All assignments associated with this class. Nullable.|
+|members|[educationUser](../resources/educationuser.md) collection| All users in the class. Nullable.|
+|schools|[educationSchool](../resources/educationschool.md) collection| All schools that this class is associated with. Nullable.|
+|teachers|[educationUser](../resources/educationuser.md) collection|  All teachers in the class. Nullable.|
+|assignments|[educationAssignment](../resources/educationassignment.md) collection| All assignments associated with this class. Nullable.|
 
 ## JSON representation
 

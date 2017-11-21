@@ -37,8 +37,8 @@ In the request body, supply the values for relevant fields that should be update
 |mobilePhone| String | Mobile number of user |
 |externalSource|string| Possible values are: `sis`, `manual`, `enum_sentinel`.|
 |externalSource|string| Where this user was created from.  Possible values are: `sis`, `manual`, `enum_sentinel`.|
-|mailingAddress|[physicalAddress](physicaladdress.md)| Mail address of user.|
-|residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
+|mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Mail address of user.|
+|residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Address where user lives.|
 |primaryRole|string| Default Role for a user.  The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| If the primary role is student, this block will contain student specific data.|
 |teacher|[educationTeacher](../resources/educationteacher.md)| If the primary role is teacher, this block will conatin teacher specific data.|

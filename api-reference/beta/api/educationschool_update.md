@@ -40,8 +40,8 @@ In the request body, supply the values for relevant fields that should be update
 |externalId|String| Id of school in syncing system. |
 |phone|String| Phone number of school. |
 |fax|String| Fax number of school. |
-|address|[physicalAddress](physicaladdress.md)| Address of the School.|
-|createdBy|[identitySet](identityset.md)|Entity who created the school.|
+|address|[physicalAddress](../resources/physicaladdress.md)| Address of the School.|
+|createdBy|[identitySet](../resources/identityset.md)|Entity who created the school.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.
