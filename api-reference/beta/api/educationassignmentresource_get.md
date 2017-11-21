@@ -54,7 +54,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 842
 {
-  "distributeForStudentWork": true,
+  "distributeForStudentWork": "true",
   "id": "22002",
   "resource": {
     "createdBy": {

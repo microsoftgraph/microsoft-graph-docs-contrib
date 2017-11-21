@@ -48,7 +48,7 @@ Content-length: 508
 {
   "displayName": "Dion Matheson",
   "givenName": "Dion",
-  "middleName": " ",
+  "middleName": null,
   "surname": "Matheson",
   "mail": "DionM@contoso.com",
   "mobilePhone": "+1 (253) 555-0101",

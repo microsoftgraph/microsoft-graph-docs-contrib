@@ -49,17 +49,17 @@ Content-length: 658
 
 {
   "feedback": {
-    text: {
+    "text": {
       "content": "Good work!",
       "contentType": "Text"
     },
-    feedbackDateTime: "2014-01-01T00:00:00Z",
-    feedbackBy: {
+    "feedbackDateTime": "2014-01-01T00:00:00Z",
+    "feedbackBy": {
       "user": {
         "displayName": "Susana Rocha",
         "id": "14012"
       },
-      @odata.type: "microsoft.graph.identitySet"
+      "@odata.type": "microsoft.graph.identitySet"
     },
     "@odata.type": "microsoft.graph.educationFeedback"
   },

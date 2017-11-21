@@ -37,8 +37,8 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationsubmissionresource"
 }-->
-```http
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
+```
+http GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
 ##### Response
 The following is an example of the response. 
@@ -54,7 +54,6 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 1152
-
 {
   "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
   "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",

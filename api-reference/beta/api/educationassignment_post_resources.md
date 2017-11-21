@@ -43,7 +43,7 @@ http POST https://graph.microsoft.com/beta/education/classes/11021/assignments/1
 Content-type: application/json
 Content-length: 822
 {
-  "distributeForStudentWork": false,
+  "distributeForStudentWork": "false",
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
@@ -68,10 +68,9 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 842
-
 {
   "id": "String (identifier)",
-  "distributeForStudentWork": false,
+  "distributeForStudentWork": "false",
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",

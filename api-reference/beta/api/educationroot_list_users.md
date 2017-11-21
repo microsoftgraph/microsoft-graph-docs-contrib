@@ -62,7 +62,7 @@ Content-length: 593
       "id": "13012",
       "displayName": "Dion Matheson",
       "givenName": "Dion",
-      "middleName": " ",
+      "middleName": null,
       "surname": "Matheson",
       "mail": "DionM@contoso.com",
       "mobilePhone": "+1 (253) 555-0101",
@@ -71,7 +71,7 @@ Content-length: 593
           "displayName": "Susana Rocha",
           "id": "14012"
         }
-      }
+      },
       "externalSource": "sis",
       "mailingAddress": {
         "city": "Los Angeles",

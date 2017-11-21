@@ -60,12 +60,12 @@ Content-length: 873
   "submissions": [
     {
       "feedback": {
-        text: {
+        "text": {
           "content": "Good work!",
           "contentType": "Text"
         },
-        feedbackDateTime: "2014-01-01T00:00:00Z",
-        feedbackBy: {
+        "feedbackDateTime": "2014-01-01T00:00:00Z",
+        "feedbackBy": {
           "user": {
             "displayName": "Susana Rocha",
             "id": "14012"
