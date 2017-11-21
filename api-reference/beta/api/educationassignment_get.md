@@ -75,7 +75,7 @@ Content-length: 279
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",
   "grading": {
-      "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+      "@odata.type": "microsoft.graph.educationAssignmentPointsGradeType",
       "maxPoints": 100
   },
   "instructions": {

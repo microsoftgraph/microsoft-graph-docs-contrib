@@ -71,7 +71,7 @@ Content-length: 593
           "displayName": "Susana Rocha",
           "id": "14012",
         }
-      }
+      },
       "externalSource": "sis",
       "mailingAddress": {
         "city": "Los Angeles",

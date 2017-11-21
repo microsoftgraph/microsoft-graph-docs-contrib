@@ -76,9 +76,8 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 292
-
 {
-  "id": "10002"
+  "id": "10002",
   "displayName": "Fabrikam Arts High School",
   "description": "Magnate school for the arts. Los Angeles School District",
   "status": "String",

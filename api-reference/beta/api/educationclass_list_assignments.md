@@ -57,27 +57,44 @@ Content-type: application/json
 Content-length: 344
 
 {
-  "value": [
+  "assignments": [
     {
-      "id": "String (identifier)",
+      "id": "19002",
       "allowLateSubmissions": true,
       "allowStudentsToAddResourcesToSubmission": true,
-      "assignDateTime": "String (timestamp)",
+      "assignDateTime": "2014-02-01T00:00:00Z",
       "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
-      "assignedDateTime": "String (timestamp)",
-      "classId": "String",
-      "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-      "createdDateTime": "String (timestamp)",
-      "displayName": "String",
-      "dueDateTime": "String (timestamp)",
+      "assignedDateTime": "2014-02-01T00:00:00Z",
+      "classId": "11018",
+      "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
+              "displayName": null
+          }
+      },
+      "createdDateTime": "2014-02-01T00:00:00Z",
+      "displayName": "published",
+      "dueDateTime": "2014-02-01T00:00:00Z",
       "grading": {
         "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
         "maxPoints": 100
       },
-      "instructions": {"@odata.type": "microsoft.graph.itemBody"},
-      "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-      "lastModifiedDateTime": "String (timestamp)",
-      "status": "string"
+      "instructions":   "instructions": {
+        "contentType": "Text",
+        "content": "Read chapters 1 through 3"
+      },
+      "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
+              "displayName": null
+          }
+      },
+      "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+      "status": "published"
     }
   ]
 }

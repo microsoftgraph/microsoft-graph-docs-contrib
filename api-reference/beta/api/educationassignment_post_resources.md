@@ -38,11 +38,10 @@ The following is an example of the request.
   "blockType": "request",
   "name": "create_educationassignmentresource_from_educationassignment"
 }-->
-```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources
+```
+http POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources
 Content-type: application/json
 Content-length: 822
-
 {
   "distributeForStudentWork": false,
   "resource": {

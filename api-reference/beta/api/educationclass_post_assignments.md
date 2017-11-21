@@ -40,14 +40,17 @@ The following is an example of the request.
   "name": "create_educationassignment_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/<id>/assignments
+POST https://graph.microsoft.com/beta/education/classes/11019/assignments
 Content-type: application/json
 Content-length: 279
 
 { 
-  "dueDateTime": "{{duedate}}",
-  "displayName": "{{displayName}}",
-      "instructions": {content: "{{instructions}}", contentType: "text"},
+  "dueDateTime": "2014-02-01T00:00:00Z",
+  "displayName": "Midterm 1",
+    "instructions":   "instructions": {
+      "contentType": "Text",
+      "content": "Read chapters 1 through 3"
+    },
       "grading": {
         "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
         "maxPoints": 100
@@ -75,27 +78,42 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 279
-
 {
-  "id": "String (identifier)",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
-  "assignDateTime": "String (timestamp)",
+  "assignDateTime": "2014-02-01T00:00:00Z",
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
-  "assignedDateTime": "String (timestamp)",
-  "classId": "String",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
-  "displayName": "String",
-  "dueDateTime": "String (timestamp)",
+  "assignedDateTime": "2014-02-01T00:00:00Z",
+  "classId": "11018",
+  "createdBy": {
+      "application": null,
+      "device": null,
+      "user": {
+          "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
+          "displayName": null
+      }
+  },
+  "createdDateTime": "2014-02-01T00:00:00Z",
+  "displayName": "published",
+  "dueDateTime": "2014-02-01T00:00:00Z",
   "grading": {
     "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
     "maxPoints": 100
   },
-  "instructions": {"@odata.type": "microsoft.graph.itemBody"},
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "status": "string"
+  "instructions":   "instructions": {
+    "contentType": "Text",
+    "content": "Read chapters 1 through 3"
+  },
+  "lastModifiedBy": {
+      "application": null,
+      "device": null,
+      "user": {
+          "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
+          "displayName": null
+      }
+  },
+  "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+  "status": "published"
 }
 ```
 

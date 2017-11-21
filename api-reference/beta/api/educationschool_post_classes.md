@@ -44,11 +44,11 @@ Content-type: application/json
 Content-length: 224
 
 {
-� "@odata.id":"https://graph.microsoft.com/beta/education/classes/11006"�
+ "@odata.id":"https://graph.microsoft.com/beta/education/classes/11006"
 }
 ```
 
-##### Response
+##### Response 
 The following is an example of the response. 
 
 <!-- Add the educationClass resource to the response. -->

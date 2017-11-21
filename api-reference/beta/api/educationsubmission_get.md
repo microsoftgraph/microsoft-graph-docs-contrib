@@ -58,16 +58,20 @@ Content-type: application/json
 Content-length: 712
 
 {
-      "feedback": {
-        text: "Great work!"
-        feedbackDateTime: "2014-01-01T00:00:00Z"
-        feedbackBy: {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012",
-          },
+    "feedback": {
+      text: {
+        "content": "Good work!",
+        "contentType": "Text"
+      },
+      feedbackDateTime: "2014-01-01T00:00:00Z",
+      feedbackBy: {
+        "user": {
+          "displayName": "Susana Rocha",
+          "id": "14012",
         }
-        "@odata.type": "microsoft.graph.educationFeedback"},
+      }
+      "@odata.type": "microsoft.graph.educationFeedback"
+      },
       "grade": {
          "gradedBy": {
           "user": {

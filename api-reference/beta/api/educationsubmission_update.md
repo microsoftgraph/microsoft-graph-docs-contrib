@@ -49,7 +49,10 @@ Content-length: 658
 
 {
   "feedback": {
-    text: "Great work!"
+    text: {
+      "content": "Good work!",
+      "contentType": "Text"
+    }
     feedbackDateTime: "2014-01-01T00:00:00Z"
     feedbackBy: {
       "user": {
