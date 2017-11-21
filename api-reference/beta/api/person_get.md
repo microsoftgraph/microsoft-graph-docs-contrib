@@ -20,7 +20,16 @@ GET /me/people/{id}
 GET /users/{id | userPrincipalName}/people/{id}
 ```
 ## Optional query parameters
-This method supports the `$format` and `$select` [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.
+
+|Name|Value|Description| 
+|:---------------|:--------|:-------| 
+|$filter|string|Limits the response to only those people whose record contains the specified criteria.| 
+|$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.| 
+|$search|string|Search for people by name or alias. Supports Fuzzy matching| 
+|$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.| 
+|$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.| 
+|$top|int|Number of results to be returned.| 
 
 ## Request headers
 | Name      |Description|
@@ -34,7 +43,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [person](../resources/person.md) object in the response body.
 
 ## Examples
-#### Request
+#### Request 1
 The following is an example of the request that gets the person who has this ID in the user's organization. 
 
 <!-- {
@@ -42,10 +51,10 @@ The following is an example of the request that gets the person who has this ID 
   "name": "get_person_by_id_beta"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/people/33b43a5b-87d6-41ec-91f8-a2610048105f
+GET https://graph.microsoft.com/beta/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85
 ```
 
-#### Response
+#### Response 1
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -60,40 +69,47 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 200
+Content-length: 594
 
 {
-  "id": "33b43a5b-87d6-41ec-91f8-a2610048105f",
-  "displayName": "Marketing",
-  "givenName": null,
-  "surname": null,
-  "birthday": "",
-  "personNotes": "",
-  "isFavorite": false,
-  "jobTitle": null,
-  "companyName": null,
-  "yomiCompany": "",
-  "department": null,
-  "officeLocation": null,
-  "profession": "",
-  "imAddress": null,
-  "scoredEmailAddresses": [
-    {
-      "address": "Marketing@M365x214355.onmicrosoft.com",
-      "relevanceScore": 30
-    }
-  ],
-  "phones": [],
-  "postalAddresses": [],
-  "websites": [],
-  "personType": {
-    "class": "Group",
-    "subclass": "UnifiedGroup"
-  }
+    "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+    "displayName": "Isaiah Langer",
+    "givenName": "Isaiah",
+    "surname": "Langer",
+    "birthday": "",
+    "personNotes": "",
+    "isFavorite": false,
+    "title": "Web Marketing Manager",
+    "companyName": null,
+    "yomiCompany": "",
+    "department": "Sales & Marketing",
+    "officeLocation": "20/1101",
+    "profession": "",
+    "mailboxType": "Mailbox",
+    "personType": "Person",
+    "emailAddresses": [
+        {
+            "address": "IsaiahL@M365x214355.onmicrosoft.com",
+            "rank": 20
+        }
+    ],
+    "phones": [
+        {
+            "type": "business",
+            "number": "+1 918 555 0101"
+        }
+    ],
+    "postalAddresses": [],
+    "websites": [],
+    "sources": [
+        {
+            "type": "Directory"
+        }
+    ]
 }
 ```
 
-#### Request
+#### Request 2
 The following is an example of the request that gets the person who has this ID in the user's organization and restricts the response to the selected properties. 
 
 <!-- {
@@ -101,10 +117,10 @@ The following is an example of the request that gets the person who has this ID 
   "name": "get_person_by_id_with_select_beta"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/people/33b43a5b-87d6-41ec-91f8-a2610048105f?$select=displayName
+GET https://graph.microsoft.com/beta/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85?$select=displayName
 ```
 
-#### Response
+#### Response 2
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -119,11 +135,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 200
+Content-length: 304
 
 {
-    "id": "33b43a5b-87d6-41ec-91f8-a2610048105f",
-    "displayName": "Marketing"
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer"
 }
 ```
 
