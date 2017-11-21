@@ -6,6 +6,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2017
 
+### Group lifecycle policy
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0        | Added [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy) entity. |
+| Addition        | v1.0        | Added the following APIs for group lifecycle policy: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update), [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete), [add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup), [remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup), and [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_renewgroup). |
+| Addition        | v1.0        | Added [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group) entity. |
+
 ### Webhooks
 
 | Change type | Version | Description                              |
