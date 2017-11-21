@@ -47,7 +47,7 @@ Content-length: 279
 { 
   "dueDateTime": "2014-02-01T00:00:00Z",
   "displayName": "Midterm 1",
-    "instructions":   "instructions": {
+    "instructions":  {
       "contentType": "Text",
       "content": "Read chapters 1 through 3"
     },

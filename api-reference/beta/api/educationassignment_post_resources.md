@@ -73,8 +73,8 @@ Content-type: application/json
 Content-length: 842
 
 {
-  "id": "String (identifier)",
-  "distributeForStudentWork": "false",
+  "id": "122333",
+  "distributeForStudentWork": false,
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
