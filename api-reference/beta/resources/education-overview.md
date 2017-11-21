@@ -8,7 +8,7 @@ The education APIs include rostering resources and assignments resources that yo
 
 ## Authorization
 
-To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](EDUGraphAPIs/permissions_reference.md#education-permissions). 
+To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](../../concepts/permissions_reference.md#education-permissions). 
 
 ### App permissions to enable school IT admins to consent 
 
@@ -40,7 +40,7 @@ You can use the rostering APIs to enable an app user to know:
 
 The rostering APIs provide the following key resources:
 
-- [educationSchool](resources/educationschool.md) - Represents the school.
+- [educationSchool](educationschool.md) - Represents the school.
 - [educationClass](resources/educationclass.md) - Represents a class within a school.
 - [educationTerm](resources/educationterm.md) - Represents a designated portion of the academic year.
 - [educationTeacher](resources/educationteacher.md) - Represents a users with the primary role of 'Teacher'.
@@ -48,7 +48,7 @@ The rostering APIs provide the following key resources:
 
 The rostering APIs support the following scenarios:
 
-- [List all schools](./api/educationroot_list_schools.md) 
+- [List all schools](../api/educationroot_list_schools.md) 
 - [List schools in which a class is taught](./api/educationclass_list_schools.md)
 - [List schools for a user](./api/educationuser_list_schools.md)
 - [Get all classes](./api/educationroot_list_classes.md )
