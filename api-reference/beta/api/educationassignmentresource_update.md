@@ -47,7 +47,7 @@ Content-type: application/json
 Content-length: 822
 
 {
-  "distributeForStudentWork": false
+  "distributeForStudentWork": "false"
 }
 ```
 ##### Response
@@ -65,6 +65,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 832
+
 {
   "distributeForStudentWork": "false",
   "resource": {

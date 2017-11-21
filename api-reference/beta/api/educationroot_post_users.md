@@ -105,7 +105,7 @@ Content-length: 508
       "displayName": "Susana Rocha",
       "id": "14012",
     }
-  }
+  },
   "externalSource": "sis",
   "mailingAddress": {
     "city": "Los Angeles",
@@ -121,7 +121,7 @@ Content-length: 508
     "postalCode": "98055",
     "state": "CA",
     "street": "12345 Main St."
-  },
+  }
 }
 ```
 

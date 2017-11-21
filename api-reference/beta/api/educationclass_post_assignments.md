@@ -43,6 +43,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/education/classes/11019/assignments
 Content-type: application/json
 Content-length: 279
+
 { 
   "dueDateTime": "2014-02-01T00:00:00Z",
   "displayName": "Midterm 1",
@@ -77,6 +78,7 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 279
+
 {
   "allowLateSubmissions": "true",
   "allowStudentsToAddResourcesToSubmission": "true",

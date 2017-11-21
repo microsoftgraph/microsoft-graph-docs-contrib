@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-```
+```http
 http POST /education/classes/{id}/assignments/{id}/resources
 ```
 ## Request headers
@@ -38,10 +38,12 @@ The following is an example of the request.
   "blockType": "request",
   "name": "create_educationassignmentresource_from_educationassignment"
 }-->
-```
+```http
+
 http POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources
 Content-type: application/json
 Content-length: 822
+
 {
   "distributeForStudentWork": "false",
   "resource": {
@@ -50,6 +52,7 @@ Content-length: 822
     "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
   }
 }
+
 ```
 In the request body, supply a JSON representation of the [educationAssignmentResource](../resources/educationassignmentresource.md) object.
 ##### Response
@@ -68,6 +71,7 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 842
+
 {
   "id": "String (identifier)",
   "distributeForStudentWork": "false",

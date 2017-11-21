@@ -38,9 +38,8 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_assignments"
 }-->
-```http
-GET
-https://graph.microsoft.com/beta/education/me/assignments
+```http 
+http GET https://graph.microsoft.com/beta/education/me/assignments
 ```
 ##### Response
 The following is an example of the response. 

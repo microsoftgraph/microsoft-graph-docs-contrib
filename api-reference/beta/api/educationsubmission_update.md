@@ -93,21 +93,21 @@ Content-length: 1217
 
 {
   "feedback": {
-    text: "Great work!"
-    feedbackDateTime: "2014-01-01T00:00:00Z"
-    feedbackBy: {
+    "text": "Great work!"
+    "feedbackDateTime": "2014-01-01T00:00:00Z"
+    "feedbackBy": {
       "user": {
         "displayName": "Susana Rocha",
-        "id": "14012",
-      },
-    }
+        "id": "14012"
+      }
+    },
     "@odata.type": "microsoft.graph.educationFeedback"
   },
   "grade": {
          "gradedBy": {
           "user": {
             "displayName": "Susana Rocha",
-            "id": "14012",
+            "id": "14012"
           },
           "@odata.type": "microsoft.graph.identitySet"
         },
@@ -122,7 +122,7 @@ Content-length: 1217
   "releasedBy": {
     "user": {
       "displayName": "Susana Rocha",
-      "id": "14012",
+      "id": "14012"
     },
     "@odata.type": "microsoft.graph.identitySet"
   },
@@ -132,7 +132,7 @@ Content-length: 1217
   "submittedBy": {
     "user": {
       "displayName": "Susana Rocha",
-      "id": "14012",
+      "id": "14012"
     },
     "@odata.type": "microsoft.graph.identitySet"
   },
