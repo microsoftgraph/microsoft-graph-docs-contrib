@@ -67,7 +67,7 @@ Content-type: application/json
 Content-length: 832
 
 {
-  "distributeForStudentWork": "false",
+  "distributeForStudentWork": false,
   "resource": {
       "@odata.type": "#microsoft.graph.educationLinkResource",
       "displayName": "Microsoft Homepage",

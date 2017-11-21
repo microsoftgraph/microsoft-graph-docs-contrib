@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-http POST /education/classes/{id}/assignments/{id}/resources
+POST /education/classes/{id}/assignments/{id}/resources
 ```
 ## Request headers
 | Header       | Value |
@@ -40,7 +40,7 @@ The following is an example of the request.
 }-->
 ```http
 
-http POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources
+POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources
 Content-type: application/json
 Content-length: 822
 

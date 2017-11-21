@@ -87,7 +87,7 @@ Content-length: 873
       "id": "33223",
       "recipient": {
         "userId": "13015",
-        "microsoft.graph.educationSubmissionRecipient"
+        "@Odata.type":"microsoft.graph.educationSubmissionRecipient"
       },
       "releasedBy": {
           "user": {

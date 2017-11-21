@@ -80,8 +80,8 @@ Content-type: application/json
 Content-length: 279
 
 {
-  "allowLateSubmissions": "true",
-  "allowStudentsToAddResourcesToSubmission": "true",
+  "allowLateSubmissions": true,
+  "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "2014-02-01T00:00:00Z",
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "2014-02-01T00:00:00Z",

@@ -93,8 +93,11 @@ Content-length: 1217
 
 {
   "feedback": {
-    "text": "Great work!"
-    "feedbackDateTime": "2014-01-01T00:00:00Z"
+    "text": {
+      "content": "Good work!",
+      "contentType": "Text"
+    },
+    "feedbackDateTime": "2014-01-01T00:00:00Z",
     "feedbackBy": {
       "user": {
         "displayName": "Susana Rocha",

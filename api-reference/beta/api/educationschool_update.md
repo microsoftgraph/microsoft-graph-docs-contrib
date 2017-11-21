@@ -53,13 +53,13 @@ The following is an example of the request.
   "name": "update_educationschool"
 }-->
 ```http
- PATCH https://graph.microsoft.com/beta/education/schools/10002
+PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
 Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
-  "description": "Magnate school for the arts. Los Angeles School District",
+  "description": "Magnate school for the arts. Los Angeles School District"
 }
 ```
 ##### Response
