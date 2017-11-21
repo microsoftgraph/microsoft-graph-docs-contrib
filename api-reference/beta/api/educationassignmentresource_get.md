@@ -60,7 +60,7 @@ Content-length: 842
     "createdBy": {
       "user": {
         "displayName": "Susana Rocha",
-        "id": "14012",
+        "id": "14012"
       },
     },
     "createdDateTime": "2014-01-01T00:00:00Z",
@@ -68,7 +68,7 @@ Content-length: 842
     "lastModifiedBy": {
       "user": {
         "displayName": "Susana Rocha",
-        "id": "14012",
+        "id": "14012"
       },
     },
     "lastModifiedDateTime": "2014-01-01T00:00:00Z"

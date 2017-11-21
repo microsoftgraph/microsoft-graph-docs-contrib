@@ -56,7 +56,6 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
 Content-length: 292
-
 {
   "displayName": "Fabrikam Arts High School",
   "description": "Magnate school for the arts. Los Angeles School District",
@@ -97,7 +96,7 @@ Content-length: 292
   },
   "externalId": "10002",
   "fax": "+1 (253) 555-0101",
-  "phone": "+1 (253) 555-0102",
+  "phone": "+1 (253) 555-0102"
 }
 ```
 

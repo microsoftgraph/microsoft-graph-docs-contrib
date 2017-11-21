@@ -47,7 +47,7 @@ Content-type: application/json
 Content-length: 822
 
 {
-  "distributeForStudentWork": false,
+  "distributeForStudentWork": false
 }
 ```
 ##### Response

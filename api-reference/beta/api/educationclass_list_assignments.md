@@ -55,7 +55,6 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 344
-
 {
   "assignments": [
     {
@@ -81,7 +80,7 @@ Content-length: 344
         "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
         "maxPoints": 100
       },
-      "instructions":   "instructions": {
+      "instructions": {
         "contentType": "Text",
         "content": "Read chapters 1 through 3"
       },

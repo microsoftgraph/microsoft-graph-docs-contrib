@@ -52,12 +52,12 @@ Content-length: 658
     text: {
       "content": "Good work!",
       "contentType": "Text"
-    }
-    feedbackDateTime: "2014-01-01T00:00:00Z"
+    },
+    feedbackDateTime: "2014-01-01T00:00:00Z",
     feedbackBy: {
       "user": {
         "displayName": "Susana Rocha",
-        "id": "14012",
+        "id": "14012"
       },
       @odata.type: "microsoft.graph.identitySet"
     },
@@ -67,7 +67,7 @@ Content-length: 658
       "gradedBy": {
       "user": {
         "displayName": "Susana Rocha",
-        "id": "14012",
+        "id": "14012"
       },
       "@odata.type": "microsoft.graph.identitySet"
     },

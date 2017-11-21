@@ -68,7 +68,7 @@ Content-length: 873
         feedbackBy: {
           "user": {
             "displayName": "Susana Rocha",
-            "id": "14012",
+            "id": "14012"
           },
           "@odata.type": "microsoft.graph.identitySet"
         },
@@ -78,7 +78,7 @@ Content-length: 873
          "gradedBy": {
           "user": {
             "displayName": "Susana Rocha",
-            "id": "14012",
+            "id": "14012"
           },
           "@odata.type": "microsoft.graph.identitySet"
         },
@@ -92,7 +92,7 @@ Content-length: 873
       "releasedBy": {
           "user": {
             "displayName": "Susana Rocha",
-            "id": "14012",
+            "id": "14012"
           },
           "@odata.type": "microsoft.graph.identitySet"
         },
@@ -102,7 +102,7 @@ Content-length: 873
       "submittedBy": {
           "user": {
             "displayName": "Susana Rocha",
-            "id": "14012",
+            "id": "14012"
           },
           "@odata.type": "microsoft.graph.identitySet"
         },

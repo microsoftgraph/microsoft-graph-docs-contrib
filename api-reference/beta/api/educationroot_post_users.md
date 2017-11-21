@@ -55,7 +55,7 @@ Content-length: 508
   "createdBy": {
     "user": {
       "displayName": "Susana Rocha",
-      "id": "14012",
+      "id": "14012"
     }
   },
   "externalSource": "sis",
@@ -73,7 +73,7 @@ Content-length: 508
     "postalCode": "98055",
     "state": "CA",
     "street": "12345 Main St."
-  },
+  }
 }
 ```
 

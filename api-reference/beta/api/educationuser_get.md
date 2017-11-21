@@ -66,7 +66,7 @@ Content-length: 508
   "createdBy": {
     "user": {
       "displayName": "Susana Rocha",
-      "id": "14012",
+      "id": "14012"
     }
   }
   "externalSource": "sis",
