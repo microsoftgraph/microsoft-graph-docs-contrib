@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and collection of [e
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_submissions"
 }-->
 ```http
@@ -46,7 +46,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmission",
   "isCollection": true
@@ -80,7 +80,6 @@ Content-length: 873
             "displayName": "Susana Rocha",
             "id": "14012"
           },
-          "@odata.type": "microsoft.graph.identitySet"
         },
         "gradedDateTime": "2014-01-01T00:00:00Z"
       },
@@ -94,7 +93,6 @@ Content-length: 873
             "displayName": "Susana Rocha",
             "id": "14012"
           },
-          "@odata.type": "microsoft.graph.identitySet"
         },
       "releasedDateTime": "2014-01-01T00:00:00Z",
       "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
@@ -104,7 +102,6 @@ Content-length: 873
             "displayName": "Susana Rocha",
             "id": "14012"
           },
-          "@odata.type": "microsoft.graph.identitySet"
         },
       "submittedDateTime": "2014-01-01T00:00:00Z"
     }

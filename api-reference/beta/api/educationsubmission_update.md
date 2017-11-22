@@ -39,7 +39,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_educationsubmission"
 }-->
 ```http
@@ -82,7 +82,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 >
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
@@ -120,14 +120,13 @@ Content-length: 1217
   "id": "850f51b7",
   "recipient": {
     userId:"dsfewsddf",
-    "@odata.type": "microsoft.graph.educationSubmissionRecipient"
+    "@odata.type": "#microsoft.graph.educationSubmissionRecipient"
   },
   "releasedBy": {
     "user": {
       "displayName": "Susana Rocha",
       "id": "14012"
     },
-    "@odata.type": "microsoft.graph.identitySet"
   },
   "releasedDateTime": "2014-01-01T00:00:00Z",
   "resourcesFolderUrl": "String",
@@ -137,7 +136,6 @@ Content-length: 1217
       "displayName": "Susana Rocha",
       "id": "14012"
     },
-    "@odata.type": "microsoft.graph.identitySet"
   },
   "submittedDateTime": "2014-01-01T00:00:00Z"
 }

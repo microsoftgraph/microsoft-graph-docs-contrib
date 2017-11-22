@@ -35,14 +35,13 @@ If successful, this method returns a `201 Created` response code and an [educati
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_educationassignmentresource_from_educationassignment"
 }-->
 ```http
-
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources
 Content-type: application/json
-Content-length: 822
+Content-length: 212
 
 {
   "distributeForStudentWork": "false",
@@ -62,15 +61,14 @@ The following is an example of the response.
 
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->
 ```http
-
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 842
+Content-length: 229
 
 {
   "id": "122333",
