@@ -13,7 +13,7 @@ Submissions are automatically created when an assignment is published. The submi
 |:---------------|:--------|:----------|
 |[Get educationSubmission](../api/educationsubmission_get.md) | [educationSubmission](educationsubmission.md) |Read properties and relationships of an **educationSubmission** object.|
 |[List resources](../api/educationsubmission_list_resources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
-|[List submittedResources](../api/educationsubmission_list_submittedresources.md) |[educationSubmittedSubmissionResource](educationsubmittedsubmissionresource.md) collection| Get an **educationSubmittedSubmissionResource** object collection.|
+|[List submittedResources](../api/educationsubmission_list_submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
 |[Update](../api/educationsubmission_update.md) | [educationSubmission](educationsubmission.md)	|Update an **educationSubmission** object. |
 |[Recall](../api/educationsubmission_recall.md)|[educationSubmission](educationsubmission.md)|A student uses the recall to move the state of the submission from submitted back to working.|
 |[Release](../api/educationsubmission_release.md)|[educationSubmission](educationsubmission.md)|A teacher uses release to indicate that the grades/feedback can be shown to the student.|
