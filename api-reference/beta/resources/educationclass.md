@@ -17,7 +17,7 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |[Add teacher](../api/educationclass_post_teachers.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the teachers navigation property.|
 |[List teachers](../api/educationclass_list_teachers.md) |[educationUser](educationuser.md) collection| Get a list of teachers for the class.|
 |[Remove teacher](../api/educationclass_delete_teachers.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the teachers navigation property.|
-|[Create educationAssignment](../api/educationclass_post_assignments.md) |[educationAssignment](../resoures/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
+|[Create educationAssignment](../api/educationclass_post_assignments.md) |[educationAssignment](../resources/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
 |[List assignments](../api/educationclass_list_assignments.md) |[educationAssignment](../resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
 |[Update](../api/educationclass_update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
 |[Delete](../api/educationclass_delete.md) | None |Delete **educationClass** object. |
