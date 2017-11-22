@@ -92,7 +92,7 @@ Content-length: 1370
             "imAddress": null,
             "scoredEmailAddresses": [
                 {
-                    "address": "Marketing@M365x214355.onmicrosoft.com",
+                    "address": "Marketing@contoso.com",
                     "relevanceScore": 30.0
                 }
             ],
@@ -118,11 +118,11 @@ Content-length: 1370
             "department": "Sales & Marketing",
             "officeLocation": "20/1101",
             "profession": "",
-            "userPrincipalName": "IsaiahL@M365x214355.onmicrosoft.com",
-            "imAddress": "sip:isaiahl@m365x214355.onmicrosoft.com",
+            "userPrincipalName": "IsaiahL@contoso.com",
+            "imAddress": "sip:isaiahl@contoso.com",
             "scoredEmailAddresses": [
                 {
-                    "address": "IsaiahL@M365x214355.onmicrosoft.com",
+                    "address": "IsaiahL@contoso.com",
                     "relevanceScore": 20.0
                 }
             ],

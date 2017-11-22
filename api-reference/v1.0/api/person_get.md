@@ -23,7 +23,7 @@ GET /users/{id | userPrincipalName}/people/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.
+This method supports the following [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.
 
 |Name|Value|Description| 
 |:---------------|:--------|:-------| 
@@ -88,11 +88,11 @@ Content-length: 629
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": "",
-  "userPrincipalName": "IsaiahL@M365x214355.onmicrosoft.com",
-  "imAddress": "sip:isaiahl@m365x214355.onmicrosoft.com",
+  "userPrincipalName": "IsaiahL@contoso.com",
+  "imAddress": "sip:isaiahl@contoso.com",
   "scoredEmailAddresses": [
       {
-          "address": "IsaiahL@M365x214355.onmicrosoft.com",
+          "address": "IsaiahL@contoso.com",
           "relevanceScore": 20.0
       }
   ],

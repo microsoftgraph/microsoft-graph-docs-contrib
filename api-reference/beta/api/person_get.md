@@ -20,7 +20,7 @@ GET /me/people/{id}
 GET /users/{id | userPrincipalName}/people/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.
+This method supports the following OData query parameters to help customize the response.
 
 |Name|Value|Description| 
 |:---------------|:--------|:-------| 
@@ -89,7 +89,7 @@ Content-length: 594
     "personType": "Person",
     "emailAddresses": [
         {
-            "address": "IsaiahL@M365x214355.onmicrosoft.com",
+            "address": "IsaiahL@contoso.com",
             "rank": 20
         }
     ],
