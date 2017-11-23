@@ -1107,10 +1107,10 @@
 			<Item text="Delete school" url="/en-us/api-reference/beta/api/educationschool_delete" />
 			<Item text="List classes" url="/en-us/api-reference/beta/api/educationschool_list_classes" />
 			<Item text="Create class" url="/en-us/api-reference/beta/api/educationschool_post_classes" />
-			<Item text="Delete class" url="/en-us/api-reference/beta/api/educationschool_delete_classes" />
+			<Item text="Remove class" url="/en-us/api-reference/beta/api/educationschool_delete_classes" />
 			<Item text="List users" url="/en-us/api-reference/beta/api/educationschool_list_users" />
 			<Item text="Add user" url="/en-us/api-reference/beta/api/educationschool_post_users" />
-			<Item text="Delete user" url="/en-us/api-reference/beta/api/educationschool_delete_users" />
+			<Item text="Remove user" url="/en-us/api-reference/beta/api/educationschool_delete_users" />
 		</Item>
 		<Item text="Classes" url="/en-us/api-reference/beta/resources/educationclass" >
 			<Item text="List schools" url="/en-us/api-reference/beta/api/educationclass_list_schools" />
@@ -1121,10 +1121,10 @@
 			<Item text="Delete class" url="/en-us/api-reference/beta/api/educationclass_delete" />
 			<Item text="List teachers" url="/en-us/api-reference/beta/api/educationclass_list_teachers" />
 			<Item text="Add teacher" url="/en-us/api-reference/beta/api/educationclass_post_teachers" />
-			<Item text="Delete teacher" url="/en-us/api-reference/beta/api/educationclass_delete_teachers" />
+			<Item text="Remove teacher" url="/en-us/api-reference/beta/api/educationclass_delete_teachers" />
 			<Item text="List members" url="/en-us/api-reference/beta/api/educationclass_list_members" />
 			<Item text="Add member" url="/en-us/api-reference/beta/api/educationclass_post_members" />
-			<Item text="Delete member" url="/en-us/api-reference/beta/api/educationclass_delete_members" />
+			<Item text="Remove member" url="/en-us/api-reference/beta/api/educationclass_delete_members" />
 			<Item text="List assignments" url="/en-us/api-reference/beta/api/educationclass_list_assignments" />
 			<Item text="Create assignment" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />	
 		</Item>
@@ -1137,15 +1137,15 @@
 		<Item text="Assignment" url="/en-us/api-reference/beta/resources/educationassignment" >
 			<Item text="Create assignment" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />
 			<Item text="Get assignment" url="/en-us/api-reference/beta/api/educationassignment_get" />
-			<Item text="Update assignment" url="/en-us/api-reference/beta/api/" />
-			<Item text="Delete assignment" url="/en-us/api-reference/beta/api/" />
-			<Item text="List assignment resources" url="/en-us/api-reference/beta/api/" />
-			<Item text="Create assignment resource" url="/en-us/api-reference/beta/api/" />
-			<Item text="Get assignment resource" url="/en-us/api-reference/beta/api/" />
-			<Item text="Update assignment resource" url="/en-us/api-reference/beta/api/" />
-			<Item text="Delete resource from assignment" url="/en-us/api-reference/beta/api/" />
-			<Item text="Publish assignment" url="/en-us/api-reference/beta/api/" />
-			<Item text="List submissions for assignment" url="/en-us/api-reference/beta/api/" />
+			<Item text="Update assignment" url="/en-us/api-reference/beta/api/educationassignment_update" />
+			<Item text="Delete assignment" url="/en-us/api-reference/beta/api/educationassignment_delete" />
+			<Item text="List assignment resources" url="/en-us/api-reference/beta/api/educationassignment_list_resources" />
+			<Item text="Create assignment resource" url="/en-us/api-reference/beta/api/educationassignment_post_resources" />
+			<Item text="Get assignment resource" url="/en-us/api-reference/beta/api/educationassignmentresource_get" />
+			<Item text="Update assignment resource" url="/en-us/api-reference/beta/api/educationassignmentresource_update" />
+			<Item text="Delete resource from assignment" url="/en-us/api-reference/beta/api/educationassignmentresource_delete" />
+			<Item text="Publish assignment" url="/en-us/api-reference/beta/api/educationassignment_publish" />
+			<Item text="List submissions for assignment" url="/en-us/api-reference/beta/api/educationassignment_list_submissions" />
 		</Item>
 		<Item text="Submission" url="/en-us/api-reference/beta/resources/educationsubmission" >
 			<Item text="List submission resource" url="/en-us/api-reference/beta/api/educationsubmission_list_resources" />
