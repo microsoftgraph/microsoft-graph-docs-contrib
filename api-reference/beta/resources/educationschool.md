@@ -11,7 +11,7 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationSchool](../api/educationschool_get.md) | [educationSchool](educationschool.md) |Read properties and relationships of an **educationSchool** object.|
+|[Get](../api/educationschool_get.md) | [educationSchool](educationschool.md) |Read properties and relationships of an **educationSchool** object.|
 |[Add class](../api/educationschool_post_classes.md) |[educationClass](educationclass.md)| Add a new **educationClass** for the school by posting to the classes navigation property.|
 |[List classes](../api/educationschool_list_classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection.|
 |[Remove class](../api/educationschool_delete_classes.md) |[educationClass](educationclass.md)| Remove an **educationClass** from the school through the classes navigation property.|
