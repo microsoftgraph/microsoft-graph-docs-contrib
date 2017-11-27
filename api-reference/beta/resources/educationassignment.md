@@ -12,14 +12,14 @@ The assignment APIs are exposed in the class namespace.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationAssignment](../api/educationassignment_get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
-|[Create educationAssignmentResource](../api/educationassignment_post_resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Create a new **educationAssignmentResource** by posting to the resources collection.|
+|[Get assignment](../api/educationassignment_get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
+|[Create assignment resource](../api/educationassignment_post_resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Create a new **educationAssignmentResource** by posting to the resources collection.|
 |[List resources](../api/educationassignment_list_resources.md) |[educationAssignmentResource](educationassignmentresource.md) collection| Get an **educationAssignmentResource** object collection.|
 |[List submissions](../api/educationassignment_list_submissions.md) |[educationSubmission](educationsubmission.md) collection| Get an **educationSubmission** object collection.|
 |[Update](../api/educationassignment_update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
 |[Delete](../api/educationassignment_delete.md) | None |Delete an **educationAssignment** object. |
 |[Publish](../api/educationassignment_publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
-|[GetResourceFolderUrl](../api/educationassignment_getResourcesFolderUrl.md)| string| The OneDrive folder into which file-based resources should be placed to be part of an assignment resource. Files must be located in this folder to be added as a resource.|
+|[Get resource folder URL](../api/educationassignment_getresourcesfolderurl.md)| string| The OneDrive folder into which file-based resources should be placed to be part of an assignment resource. Files must be located in this folder to be added as a resource.|
 
 ## Properties
 | Property	   | Type	|Description|
