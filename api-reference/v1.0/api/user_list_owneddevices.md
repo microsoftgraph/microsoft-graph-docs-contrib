@@ -1,4 +1,4 @@
-*# List ownedDevices
+# List ownedDevices
 
 Get the list of devices that are owned by the user.
 ## Permissions
