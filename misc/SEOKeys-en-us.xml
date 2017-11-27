@@ -1146,6 +1146,7 @@
 			<Item text="Delete resource from assignment" url="/en-us/api-reference/beta/api/educationassignmentresource_delete" />
 			<Item text="Publish assignment" url="/en-us/api-reference/beta/api/educationassignment_publish" />
 			<Item text="List submissions for assignment" url="/en-us/api-reference/beta/api/educationassignment_list_submissions" />
+			<Item text="Get resource folder URL" url="/en-us/api-reference/beta/api/educationassignment_getresourcesfolderurl" />
 		</Item>
 		<Item text="Submission" url="/en-us/api-reference/beta/resources/educationsubmission" >
 			<Item text="List submission resource" url="/en-us/api-reference/beta/api/educationsubmission_list_resources" />
