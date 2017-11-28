@@ -21,6 +21,8 @@ This resource supports:
 |[Get group](../api/group_get.md) | [group](group.md) |Read properties and relationships of group object.|
 |[Update group](../api/group_update.md) | [group](group.md) |Update the properties of a group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
+|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
+|[List groupLifecyclePolicies](../api/group_list_grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) collection| List group lifecycle policies. |
 |[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
 |[Add owner](../api/group_post_owners.md) |[directoryObject](directoryobject.md)| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
 |[Remove owner](../api/group_delete_owners.md) | None |Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the **owners** navigation property.|
@@ -37,7 +39,6 @@ This resource supports:
 |[Delete setting](../api/directorysetting_delete.md) | None |Delete a setting object. |
 |[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
-|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 |**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
@@ -55,7 +56,6 @@ This resource supports:
 |[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
-|[List groupLifecyclePolicies](../api/group_list_grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) collection| List group lifecycle policies. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -110,8 +110,6 @@ This resource supports:
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
-|createdDateTime|DateTimeOffset| The date and time the group was created. |
-|deletedDateTime|DateTimeOffset| The date and time the group was deleted. |
 |drive|[drive](drive.md)|The group's drive. Read-only.|
 |endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
 |events|[event](event.md) collection|The group's events.|
@@ -178,6 +176,7 @@ Here is a JSON representation of the resource
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "proxyAddresses": ["string"],
+  "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
   "unseenCount": 1024,
   "visibility": "string",

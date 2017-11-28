@@ -19,6 +19,8 @@ This resource supports:
 |[List groups](../api/group_list.md) |[group](group.md) collection |List group objects and their properties.|
 |[Update group](../api/group_update.md) | [group](group.md) |Update the properties of a group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
+|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
+|[List groupLifecyclePolicies](../api/group_list_grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) collection| List group lifecycle policies. |
 |[Add owner](../api/group_post_owners.md) |None| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
 |[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
 |[Remove owner](../api/group_delete_owners.md) | None |Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the **owners** navigation property.|
@@ -28,7 +30,11 @@ This resource supports:
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Check this group for membership in a list of groups. The function is transitive.|
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The function is transitive. |
-|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
+|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
+|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
+|[List settings](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
+|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
+|[Delete setting](../api/groupsetting_delete.md) | None | Delete a setting object. |
 |**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
 |[List events](../api/group_list_events.md) |[Event](event.md) collection| Get a Event object collection.|
@@ -43,11 +49,6 @@ This resource supports:
 |[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
 |[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
-|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
-|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
-|[List settings](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
-|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
-|[Delete setting](../api/groupsetting_delete.md) | None | Delete a setting object. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -156,6 +157,7 @@ Here is a JSON representation of the resource
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "proxyAddresses": ["string"],
+  "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
   "unseenCount": 1024,
   "visibility": "string",
