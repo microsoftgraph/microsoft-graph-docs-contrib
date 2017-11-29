@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /managedDevices/{managedDevicesId}/wipe
 POST /users/{usersId}/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/wipe
@@ -34,7 +33,15 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|keepEnrollmentData|Boolean|Not yet documented|
+
+
 
 ## Response
 If successful, this action returns a `204 No Content` response code.
@@ -43,7 +50,14 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/wipe
+POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/wipe
+
+Content-type: application/json
+Content-length: 34
+
+{
+  "keepEnrollmentData": true
+}
 ```
 
 ### Response

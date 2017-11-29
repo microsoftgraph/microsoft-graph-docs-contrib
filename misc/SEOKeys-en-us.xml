@@ -1442,6 +1442,13 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update"/>
         </Item>
+        <Item text="macOS office suite app" url="en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_update"/>
+        </Item>
         <Item text="Managed device mobile app configuration assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_get"/>
@@ -1472,15 +1479,22 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_update"/>
-      </Item>
-      <Item text="Mobile app assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappassignment">
-        <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_list"/>
-        <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_get"/>
-        <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_create"/>
-        <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_delete"/>
-        <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_update"/>
-        <Item text="assign action" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_mobileapp_assign" />
-      </Item>
+        </Item>
+        <Item text="Microsoft Store for Business app" url="en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update"/>
+        </Item>
+        <Item text="Mobile app assignment" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_update"/>
+          <Item text="assign action" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_mobileapp_assign" />
+        </Item>
         <Item text="Mobile app configuration" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
           <Item text="Assign" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign"/>
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_create"/>
@@ -2205,6 +2219,13 @@
         </Item>
         <Item text="App list item" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applistitem"/>
         <Item text="App compliance list item" url="/en-us/api-reference/beta/resources/intune_deviceconfig_appscompliancelistitem"/>
+        <Item text="Audit event" url="en-us/api-reference/beta/resources/intune_auditing_auditevent">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update"/>
+        </Item>
         <Item text="Cloud PKI adminstrator credentials" url="/en-us/api-reference/beta/resources/intune_deviceconfig_cloudpkiadministratorcredentials"/>
         <Item text="Cloud PKI subscription" url="/en-us/api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_cloudpkisubscription_create"/>
@@ -2405,6 +2426,24 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_update"/>
         </Item>
+        <Item text="Device management troubleshooting event" url="en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update"/>
+        </Item>
+        <Item text="Device setup configuration" url="en-us/api-reference/beta/resources/intune_deviceconfig_devicesetupconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_get"/>
+        </Item>
+        <Item text="Enrollment troubleshooting event" url="en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_update"/>
+        </Item>
         <Item text="Extended key usage" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage"/>
         <Item text="iOS certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_get"/>
@@ -2600,7 +2639,7 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_list"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_update"/>
         </Item>
-        <Item text="MacOS certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
+        <Item text="macOS certificate profile base" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get"/>
           <Item text="Get device configuration overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get_deviceconfigurationdeviceoverview"/>
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list"/>
@@ -2608,7 +2647,7 @@
           <Item text="List device configuration group assignment" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list_deviceconfigurationgroupassignment"/>
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list_deviceconfigurationuserstatus"/>
         </Item>
-        <Item text="MacOS compliance policy" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy">
+        <Item text="macOS compliance policy" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_get"/>
@@ -2620,7 +2659,7 @@
           <Item text="List device compliance user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_list_devicecomplianceuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_update"/>
         </Item>
-        <Item text="MacOS custom configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration">
+        <Item text="macOS custom configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_get"/>
@@ -2643,7 +2682,7 @@
           <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosdevicefeaturesconfiguration_get_deviceconfigurationdeviceoverview"/>
           <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosdevicefeaturesconfiguration_get_deviceconfigurationuseroverview"/>
         </Item>
-        <Item text="MacOS enterprise Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosenterprisewificonfiguration">
+        <Item text="macOS enterprise Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosenterprisewificonfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_get"/>
@@ -2656,7 +2695,7 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_update"/>
         </Item>
-        <Item text="MacOS general device configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration">
+        <Item text="macOS general device configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_get"/>
@@ -2667,7 +2706,7 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update"/>
         </Item>
-        <Item text="MacOS Certificate Profile" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile">
+        <Item text="macOS Certificate Profile" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_get"/>
@@ -2679,7 +2718,7 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_update"/>
         </Item>
-        <Item text="MacOS trusted root certificate" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macostrustedrootcertificate">
+        <Item text="macOS trusted root certificate" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macostrustedrootcertificate">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_get"/>
@@ -2690,7 +2729,7 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_update"/>
         </Item>
-        <Item text="MacOS VPN Configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosvpnconfiguration">
+        <Item text="macOS VPN Configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosvpnconfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_get"/>
@@ -2702,7 +2741,7 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_update"/>
         </Item>
-        <Item text="MacOS Wi-Fi Configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration">
+        <Item text="macOS Wi-Fi Configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration">
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_delete"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_get"/>
@@ -2731,6 +2770,13 @@
         <Item text="Media content rating New Zealand" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingnewzealand"/>
         <Item text="Media content rating United Kingdom" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedkingdom"/>
         <Item text="Media content rating United States" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedstates"/>
+        <Item text="NDES connector" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ndesconnector">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_update"/>
+        </Item>
         <Item text="Notification message template" url="/en-us/api-reference/beta/resources/intune_deviceconfig_notificationmessagetemplate">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_notificationmessagetemplate_get"/>
           <Item text="List localized notification message" url="/en-us/api-reference/beta/api/intune_deviceconfig_notificationmessagetemplate_list_localizednotificationmessage"/>

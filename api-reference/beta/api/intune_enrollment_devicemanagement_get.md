@@ -49,13 +49,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 158
+Content-Length: 130
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b",
-    "maximumDepTokens": 0
+    "id": "0b283420-3420-0b28-2034-280b2034280b"
   }
 }
 ```

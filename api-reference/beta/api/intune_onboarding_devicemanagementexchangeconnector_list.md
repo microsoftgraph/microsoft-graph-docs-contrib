@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 437
+Content-Length: 547
 
 {
   "value": [
@@ -59,7 +59,9 @@ Content-Length: 437
       "primarySmtpAddress": "Primary Smtp Address value",
       "serverName": "Server Name value",
       "exchangeConnectorType": "hosted",
-      "version": "Version value"
+      "version": "Version value",
+      "exchangeAlias": "Exchange Alias value",
+      "exchangeOrganization": "Exchange Organization value"
     }
   ]
 }
