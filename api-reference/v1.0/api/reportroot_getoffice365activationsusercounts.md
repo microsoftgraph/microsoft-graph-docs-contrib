@@ -24,9 +24,10 @@ GET /reports/getOffice365ActivationsUserCounts
 
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                              |
+| :------------ | :--------------------------------------- |
+| Authorization | Bearer {token}. Required.                |
+| If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response
 

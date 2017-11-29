@@ -35,7 +35,7 @@ In the request URL, provide the following query parameter with a valid value.
 | Name          | Description                              |
 | :------------ | :--------------------------------------- |
 | Authorization | Bearer {token}. Required.                |
-| If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. Optional. |
+| If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response
 
