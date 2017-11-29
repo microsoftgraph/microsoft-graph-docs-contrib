@@ -117,7 +117,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "reportroot_getteamsdeviceusagedistributionusercounts_json.md"
+  "name": "reportroot_getteamsdeviceusagedistributionusercounts_json"
 }-->
 
 ```http
