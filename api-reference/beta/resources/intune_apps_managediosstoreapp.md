@@ -36,7 +36,10 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
-|bundleId|String|The app's bundle ID.|
+|bundleId|String|The app's Bundle ID.|
+|appStoreUrl|String|The Apple AppStoreUrl.|
+|applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
+|minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum supported operating system.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -79,7 +82,20 @@ Here is a JSON representation of the resource.
   "uploadState": 1024,
   "appAvailability": "String",
   "version": "String",
-  "bundleId": "String"
+  "bundleId": "String",
+  "appStoreUrl": "String",
+  "applicableDeviceType": {
+    "@odata.type": "microsoft.graph.iosDeviceType",
+    "iPad": true,
+    "iPhoneAndIPod": true
+  },
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
+    "v8_0": true,
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
+  }
 }
 ```
 

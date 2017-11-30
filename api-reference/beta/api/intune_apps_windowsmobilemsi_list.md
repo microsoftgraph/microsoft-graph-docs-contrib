@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1163
+Content-Length: 1202
 
 {
   "value": [
@@ -77,7 +77,8 @@ Content-Length: 1163
       "identityVersion": "Identity Version value",
       "commandLine": "Command Line value",
       "productCode": "Product Code value",
-      "productVersion": "Product Version value"
+      "productVersion": "Product Version value",
+      "ignoreVersionDetection": true
     }
   ]
 }

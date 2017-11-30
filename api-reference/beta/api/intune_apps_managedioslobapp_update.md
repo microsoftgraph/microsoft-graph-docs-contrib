@@ -77,7 +77,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1290
+Content-length: 1310
 
 {
   "displayName": "Display Name value",
@@ -112,7 +112,8 @@ Content-length: 1290
     "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
     "v8_0": true,
     "v9_0": true,
-    "v10_0": true
+    "v10_0": true,
+    "v11_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
@@ -125,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1453
+Content-Length: 1473
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -163,7 +164,8 @@ Content-Length: 1453
     "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
     "v8_0": true,
     "v9_0": true,
-    "v10_0": true
+    "v10_0": true,
+    "v11_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",

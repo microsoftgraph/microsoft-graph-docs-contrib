@@ -57,6 +57,7 @@ The following table shows the properties that are required when you create the w
 |commandLine|String|The command line.|
 |productCode|String|The product code.|
 |productVersion|String|The product version of Windows Mobile MSI Line of Business (LoB) app.|
+|ignoreVersionDetection|Boolean|A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set this to true for Windows Mobile MSI Line of Business (LoB) apps that use a self update feature.|
 
 
 
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 918
+Content-length: 953
 
 {
   "@odata.type": "#microsoft.graph.windowsMobileMSI",
@@ -95,7 +96,8 @@ Content-length: 918
   "identityVersion": "Identity Version value",
   "commandLine": "Command Line value",
   "productCode": "Product Code value",
-  "productVersion": "Product Version value"
+  "productVersion": "Product Version value",
+  "ignoreVersionDetection": true
 }
 ```
 
@@ -104,7 +106,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1026
+Content-Length: 1061
 
 {
   "@odata.type": "#microsoft.graph.windowsMobileMSI",
@@ -132,7 +134,8 @@ Content-Length: 1026
   "identityVersion": "Identity Version value",
   "commandLine": "Command Line value",
   "productCode": "Product Code value",
-  "productVersion": "Product Version value"
+  "productVersion": "Product Version value",
+  "ignoreVersionDetection": true
 }
 ```
 

@@ -20,17 +20,15 @@ Inherits from [deviceConfigurationAssignment](../resources/intune_deviceconfig_d
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|
+|id|String|The key of the assignment. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|The assignment target for the device configuration. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|
 |accessLevel|String|This indicates an access level for the privacy data category to which the specified application will be given to. Possible values are: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|String|This indicates a privacy data category to which the specific access control will apply. Possible values are: `notConfigured`, `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location`, `messaging`, `microphone`, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices`.|
 |appPackageFamilyName|String|The Package Family Name of a Windows app. When set, the access level applies to the specified application.|
 |appDisplayName|String|The Package Family Name of a Windows app. When set, the access level applies to the specified application.|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|deviceConfiguration|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|The navigation link to the Device Configuration being targeted. Inherited from [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -43,6 +41,9 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.windowsPrivacyDataAccessControlItem",
   "id": "String (identifier)",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  },
   "accessLevel": "String",
   "dataCategory": "String",
   "appPackageFamilyName": "String",
