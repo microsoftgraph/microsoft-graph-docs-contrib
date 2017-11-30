@@ -43,6 +43,8 @@ The following table shows the properties that are required when you create the d
 |serverName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|String|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String|The version of the ExchangeConnectorAgent|
+|exchangeAlias|String|An alias assigned to the Exchange server|
+|exchangeOrganization|String|Exchange Organization to the Exchange server|
 
 
 
@@ -55,7 +57,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors
 Content-type: application/json
-Content-length: 323
+Content-length: 425
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -64,7 +66,9 @@ Content-length: 323
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
   "exchangeConnectorType": "hosted",
-  "version": "Version value"
+  "version": "Version value",
+  "exchangeAlias": "Exchange Alias value",
+  "exchangeOrganization": "Exchange Organization value"
 }
 ```
 
@@ -73,7 +77,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 372
+Content-Length: 474
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -83,7 +87,9 @@ Content-Length: 372
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
   "exchangeConnectorType": "hosted",
-  "version": "Version value"
+  "version": "Version value",
+  "exchangeAlias": "Exchange Alias value",
+  "exchangeOrganization": "Exchange Organization value"
 }
 ```
 

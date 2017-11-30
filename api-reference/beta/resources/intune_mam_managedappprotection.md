@@ -13,7 +13,6 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |:---|:---|:---|
 |[List managedAppProtections](../api/intune_mam_managedappprotection_list.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md) collection|List properties and relationships of the [managedAppProtection](../resources/intune_mam_managedappprotection.md) objects.|
 |[Get managedAppProtection](../api/intune_mam_managedappprotection_get.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md)|Read properties and relationships of the [managedAppProtection](../resources/intune_mam_managedappprotection.md) object.|
-|[updateMobileAppIdentifierDeployments action](../api/intune_mam_managedappprotection_updatemobileappidentifierdeployments.md)|None|Not yet documented|
 |[targetApps action](../api/intune_mam_managedappprotection_targetapps.md)|None|Not yet documented|
 
 ## Properties
@@ -40,7 +39,7 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is wiped.|
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked.|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True|
-|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True.|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device.|
