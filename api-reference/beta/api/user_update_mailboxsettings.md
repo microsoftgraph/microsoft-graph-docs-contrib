@@ -124,7 +124,7 @@ The second example customizes the time zone for the working hours of the signed-
 to a [custom time zone](../resources/customtimezone.md).
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_mailboxsettings_2"
 }-->
 ```http
@@ -168,7 +168,7 @@ Content-Type: application/json
 ##### Response 2
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "name": "update_mailboxsettings_2",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailboxSettings"
