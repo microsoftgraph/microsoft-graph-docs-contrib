@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /managedDevices
 POST /users/{usersId}/managedDevices
 POST /deviceManagement/managedDevices
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
@@ -71,6 +70,7 @@ The following table shows the properties that are required when you create the w
 |exchangeAccessState|String|The Access State of the device in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |isEncrypted|Boolean|Device encryption status Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userPrincipalName|String|Device user principal name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |model|String|Model of the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -98,9 +98,9 @@ If successful, this method returns a `201 Created` response code and a [windowsM
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/managedDevices
+POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices
 Content-type: application/json
-Content-length: 5445
+Content-length: 5534
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -169,6 +169,7 @@ Content-length: 5445
   "exchangeAccessState": "unknown",
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+  "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
   "isEncrypted": true,
   "userPrincipalName": "User Principal Name value",
   "model": "Model value",
@@ -235,7 +236,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5494
+Content-Length: 5583
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -305,6 +306,7 @@ Content-Length: 5494
   "exchangeAccessState": "unknown",
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+  "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
   "isEncrypted": true,
   "userPrincipalName": "User Principal Name value",
   "model": "Model value",

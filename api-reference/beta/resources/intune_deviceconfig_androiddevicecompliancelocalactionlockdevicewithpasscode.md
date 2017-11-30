@@ -22,7 +22,7 @@ Inherits from [androidDeviceComplianceLocalActionBase](../resources/intune_devic
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [androidDeviceComplianceLocalActionBase](../resources/intune_deviceconfig_androiddevicecompliancelocalactionbase.md)|
 |gracePeriodInMinutes|Int32|Number of minutes to wait till a local action is enforced. Valid values 0 to 2147483647 Inherited from [androidDeviceComplianceLocalActionBase](../resources/intune_deviceconfig_androiddevicecompliancelocalactionbase.md)|
-|passcode|String|Passcode to reset to Android device.|
+|passcode|String|Passcode to reset to Android device. This property is read-only.|
 |passcodeSignInFailureCountBeforeWipe|Int32|Number of sign in failures before wiping device, the value can be 4-11. Valid values 4 to 11|
 
 ## Relationships

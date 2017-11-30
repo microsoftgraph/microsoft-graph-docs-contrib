@@ -8,9 +8,9 @@ Devices that are managed or pre-enrolled through Intune
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managedDevices](../api/intune_devices_manageddevice_list.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|List properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) objects.|
 |[Get managedDevice](../api/intune_devices_manageddevice_get.md)|[managedDevice](../resources/intune_devices_manageddevice.md)|Read properties and relationships of the [managedDevice](../resources/intune_devices_manageddevice.md) object.|
 |[Update managedDevice](../api/intune_devices_manageddevice_update.md)|[managedDevice](../resources/intune_devices_manageddevice.md)|Update the properties of a [managedDevice](../resources/intune_devices_manageddevice.md) object.|
+|[executeAction action](../api/intune_devices_manageddevice_executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune_devices_bulkmanageddeviceactionresult.md)|Not yet documented|
 |[retire action](../api/intune_devices_manageddevice_retire.md)|None|Retire a device|
 |[wipe action](../api/intune_devices_manageddevice_wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune_devices_manageddevice_resetpasscode.md)|None|Reset passcode|
@@ -21,6 +21,7 @@ Devices that are managed or pre-enrolled through Intune
 |[locateDevice action](../api/intune_devices_manageddevice_locatedevice.md)|None|Locate a device|
 |[bypassActivationLock action](../api/intune_devices_manageddevice_bypassactivationlock.md)|None|Bypass activation lock|
 |[rebootNow action](../api/intune_devices_manageddevice_rebootnow.md)|None|Reboot device|
+|[shutDown action](../api/intune_devices_manageddevice_shutdown.md)|None|Shut down device|
 |[recoverPasscode action](../api/intune_devices_manageddevice_recoverpasscode.md)|None|Recover passcode|
 |[cleanWindowsDevice action](../api/intune_devices_manageddevice_cleanwindowsdevice.md)|None|Clean Windows device|
 |[logoutSharedAppleDeviceActiveUser action](../api/intune_devices_manageddevice_logoutsharedappledeviceactiveuser.md)|None|Logout shared Apple device active user|
@@ -64,6 +65,7 @@ Devices that are managed or pre-enrolled through Intune
 |exchangeAccessState|String|The Access State of the device in Exchange. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
+|remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects.|
 |isEncrypted|Boolean|Device encryption status|
 |userPrincipalName|String|Device user principal name|
 |model|String|Model of the device|
@@ -87,6 +89,7 @@ Devices that are managed or pre-enrolled through Intune
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|All applications currently installed on the device|
 |deviceCategory|[deviceCategory](../resources/intune_devices_devicecategory.md)|Device category|
+|windowsProtectionState|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|The device protection status.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -165,6 +168,7 @@ Here is a JSON representation of the resource.
   "exchangeAccessState": "String",
   "exchangeAccessStateReason": "String",
   "remoteAssistanceSessionUrl": "String",
+  "remoteAssistanceSessionErrorString": "String",
   "isEncrypted": true,
   "userPrincipalName": "String",
   "model": "String",
