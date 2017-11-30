@@ -390,6 +390,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the [People APIs](../api-reference/v1.0/resources/person.md) to v1.0. For details about the People API, see [Get relevant information about people](people_example.md). |
+| Addition        | v1.0        | Added People.Read.All permission. To learn more, please see [Permissions](permissions_reference.md). |
 | Addition        | v1.0        | Added the [personType](../api-reference/v1.0/resources/persontype.md) resource. |
 | Change          | v1.0        | The [scoredEmailAddress](../api-reference/v1.0/resources/scoredemailaddress.md) resource replaced the **rankedEmailAddress** resource. |
 | Change          | v1.0        | The [person](../api-reference/v1.0/resources/person.md) resource was updated as follows:<ul><li>The **scoredEmailAddresses** property (a collection of [scoredEmailAddress](../api-reference/v1.0/resources/scoredemailaddress.md) type) replaced the **emailAddresses** property</li><li>The **jobTitle** property replaced the **title** property</li><li>Removed **sources** and **mailboxType** properties</li><li>The **personType** property is now of [personType](../api-reference/v1.0/resources/persontype.md) type instead of string type and replaces functionality of the previous **sources** and **mailboxType** properties</li><li>Added **imAddress** property</li></ul> |
