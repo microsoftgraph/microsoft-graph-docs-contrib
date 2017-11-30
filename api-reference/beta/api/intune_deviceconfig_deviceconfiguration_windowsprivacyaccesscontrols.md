@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/windowsPrivacyAccessControls
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/windowsPrivacyAccessControls
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration/windowsPrivacyAccessControls
 ```
 
 ## Request headers
@@ -52,13 +51,16 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/windowsPrivacyAccessControls
 
 Content-type: application/json
-Content-length: 379
+Content-length: 489
 
 {
   "windowsPrivacyAccessControls": [
     {
       "@odata.type": "#microsoft.graph.windowsPrivacyDataAccessControlItem",
       "id": "03b15556-5556-03b1-5655-b1035655b103",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      },
       "accessLevel": "forceAllow",
       "dataCategory": "accountInfo",
       "appPackageFamilyName": "App Package Family Name value",
