@@ -22,7 +22,7 @@
 The following is a JSON representaion of the resource.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsUserActivityUserDetail"
 } -->
 

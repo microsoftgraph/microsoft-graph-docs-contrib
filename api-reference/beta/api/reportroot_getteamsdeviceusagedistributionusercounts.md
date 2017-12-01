@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the number of unique users by device type over the selected time period.
+Get the number of Microsoft Teams unique users by device type over the selected time period.
 
 ## Permissions
 

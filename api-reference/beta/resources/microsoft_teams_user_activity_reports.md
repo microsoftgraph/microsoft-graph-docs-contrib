@@ -1,4 +1,4 @@
-# Teams user activity reports
+# Microsoft Teams user activity reports
 
 You can gain insights into the Microsoft Teams activity in your organization.
 

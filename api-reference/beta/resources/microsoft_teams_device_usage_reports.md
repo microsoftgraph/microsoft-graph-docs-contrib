@@ -1,6 +1,6 @@
-# Teams device usage reports
+# Microsoft Teams device usage reports
 
-You can gain insights into the Microsoft Teams devices that are used in your organization.
+These device usage reports give you information about which devices your users utilize to engage on Microsoft Teams.
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
