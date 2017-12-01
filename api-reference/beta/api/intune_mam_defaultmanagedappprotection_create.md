@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the d
 |maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is wiped. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -89,7 +89,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 1995
+Content-length: 2009
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -112,7 +112,7 @@ Content-length: 1995
   "maximumPinRetries": 1,
   "simplePinBlocked": true,
   "minimumPinLength": 0,
-  "pinCharacterSet": "numeric",
+  "pinCharacterSet": "alphanumericAndSymbol",
   "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
@@ -148,7 +148,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2103
+Content-Length: 2117
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -173,7 +173,7 @@ Content-Length: 2103
   "maximumPinRetries": 1,
   "simplePinBlocked": true,
   "minimumPinLength": 0,
-  "pinCharacterSet": "numeric",
+  "pinCharacterSet": "alphanumericAndSymbol",
   "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
