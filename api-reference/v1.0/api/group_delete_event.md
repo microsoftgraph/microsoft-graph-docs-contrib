@@ -1,27 +1,29 @@
-# Add group owner
-Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
+# Delete event
+Delete an [event](../resources/event.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/owners/$ref
+DELETE /groups/{id}/events/{id}
+DELETE /groups/{id}/calendar/events/{id}
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
+Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
@@ -31,26 +33,18 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "delete_group_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref
-Content-type: application/json
-Content-length: 30
-
-{
-  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
-}
+DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events/AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA==
 ```
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 
 #### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -60,7 +54,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create owner",
+  "description": "Delete event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

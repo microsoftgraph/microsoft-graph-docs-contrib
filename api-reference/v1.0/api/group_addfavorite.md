@@ -1,5 +1,5 @@
 # group: addFavorite
-Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.
+Add the group to the list of the current user's favorite groups. Supported for Office 365 groups only.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -8,13 +8,14 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/addFavorite
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -24,13 +25,13 @@ POST /groups/{id}/addFavorite
 Do not supply a request body for this method.
 
 ## Response
-
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+The following is an example of how to call this API.
+
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_addfavorite"
@@ -39,15 +40,15 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 ```
 
-##### Response
-Here is an example of the response.
+#### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

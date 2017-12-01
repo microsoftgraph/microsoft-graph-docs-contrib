@@ -1,56 +1,71 @@
-# Add group owner
-Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
+# Update event
+Update an [event](../resources/event.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/owners/$ref
+PATCH /groups/{id}/events/{id}
+PATCH /groups/{id}/calendar/events/{id}
 ```
+
 ## Request headers
+
 | Name       | Type | Description|
-|:---------------|:--------|:----------|
+|:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
+
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
+
 #### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "update_group_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/events/{id}
 Content-type: application/json
-Content-length: 30
+Content-length: 211
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
+  "originalStartTimeZone": "originalStartTimeZone-value",
+  "originalEndTimeZone": "originalEndTimeZone-value",
+  "responseStatus": {
+    "response": "",
+    "time": "datetime-value"
+  },
+  "iCalUId": "iCalUId-value",
+  "reminderMinutesBeforeStart": 99,
+  "isReminderOn": true
 }
 ```
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -60,7 +75,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create owner",
+  "description": "Update group",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

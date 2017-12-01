@@ -1,5 +1,5 @@
-# List photos
-Retrieve a list of [profilePhoto](../resources/profilephoto.md) objects.
+# Get conversation----to update
+Get a [conversation](../resources/conversation.md) in this group.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -13,53 +13,58 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/photos
-GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
+GET /groups/{id}/conversations
 ```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [profilePhoto](../resources/profilephoto.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [conversation](../resources/conversation.md) objects in the response body.
 
 ## Example
 #### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_photos"
+  "name": "get_conversations"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/photos
+GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 ```
-
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.profilePhoto",
+  "@odata.type": "microsoft.graph.conversation",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 94
+Content-length: 262
 
 {
   "value": [
     {
-      "height": 99,
-      "width": 99,
+      "topic": "topic-value",
+      "hasAttachments": true,
+      "lastDeliveredDateTime": "datetime-value",
+      "uniqueSenders": [
+        "uniqueSenders-value"
+      ],
+      "preview": "preview-value",
       "id": "id-value"
     }
   ]
@@ -70,7 +75,7 @@ Content-length: 94
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List photos",
+  "description": "Get conversation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

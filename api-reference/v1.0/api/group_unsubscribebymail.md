@@ -1,16 +1,14 @@
 # group: unsubscribeByMail
+Calling this method will prevent the current user from receiving email notifications for this group about new posts, events, and files in that group. Supported for Office 365 groups only. 
 
-Calling this method will prevent the current user from receiving email notifications
-for this group about new posts, events, and files in that group. Supported for only Office 365 groups. 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -26,12 +24,13 @@ POST /groups/{id}/unsubscribeByMail
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+The following is an example of how to call this API.
+
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_unsubscribebymail"
@@ -40,14 +39,15 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/groups/{id}/unsubscribeByMail
 ```
 
-##### Response
-Here is an example of the response. 
+#### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
