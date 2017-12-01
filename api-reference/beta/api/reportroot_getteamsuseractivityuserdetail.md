@@ -58,7 +58,7 @@ The CSV file has the following headers for columns.
 - Is Deleted
 - Deleted Date
 - Assigned Products
-- Teams Chat Message Count
+- Team Chat Message Count
 - Private Chat Message Count
 - Call Count
 - Meeting Count
@@ -114,7 +114,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Teams Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
 ```
 
 ### JSON
@@ -163,7 +163,7 @@ Content-Length: 452
       "assignedProducts": [
         "OFFICE 365 ENTERPRISE E5"
       ], 
-      "teamsChatMessageCount": 0, 
+      "teamChatMessageCount": 0, 
       "privateChatMessageCount": 49, 
       "callCount": 2, 
       "meetingCount": 0, 

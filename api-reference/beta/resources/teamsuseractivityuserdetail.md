@@ -10,7 +10,7 @@
 | isDeleted               | Boolean           |
 | deletedDate             | Date              |
 | assignedProducts        | String collection |
-| teamsChatMessageCount   | Int64             |
+| teamChatMessageCount    | Int64             |
 | privateChatMessageCount | Int64             |
 | callCount               | Int64             |
 | meetingCount            | Int64             |
@@ -34,7 +34,7 @@ The following is a JSON representaion of the resource.
   "isDeleted": true, 
   "deletedDate": "Date", 
   "assignedProducts": ["String"],
-  "teamsChatMessageCount": 1024, 
+  "teamChatMessageCount": 1024, 
   "privateChatMessageCount": 1024, 
   "callCount": 1024, 
   "meetingCount": 1024, 

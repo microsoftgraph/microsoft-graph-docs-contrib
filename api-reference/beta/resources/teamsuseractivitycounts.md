@@ -6,7 +6,7 @@
 | :------------------ | :----- |
 | reportRefreshDate   | Date   |
 | reportDate          | Date   |
-| teamsChatMessages   | Int64  |
+| teamChatMessages    | Int64  |
 | privateChatMessages | Int64  |
 | calls               | Int64  |
 | meetings            | Int64  |
@@ -26,7 +26,7 @@ The following is a JSON representation of the resource.
 {
   "reportRefreshDate": "Date", 
   "reportDate": "Date", 
-  "teamsChatMessages": 1024, 
+  "teamChatMessages": 1024, 
   "privateChatMessages": 1024, 
   "calls": 1024, 
   "meetings": 1024, 

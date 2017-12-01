@@ -50,7 +50,7 @@ The CSV file has the following headers for columns.
 
 - Report Refresh Date
 - Report Date
-- Teams Chat Messages
+- Team Chat Messages
 - Private Chat Messages
 - Calls
 - Meetings
@@ -102,7 +102,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Teams Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
 ```
 
 ### JSON
@@ -145,7 +145,7 @@ Content-Length: 277
     {
       "reportRefreshDate": "2017-09-01", 
       "reportDate": "2017-09-01", 
-      "teamsChatMessages": 26, 
+      "teamChatMessages": 26, 
       "privateChatMessages": 17, 
       "calls": 4, 
       "meetings": 0, 
