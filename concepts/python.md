@@ -14,7 +14,7 @@ The sample covered below uses the [Flask-OAuthlib](https://flask-oauthlib.readth
 
 To install and configure the sample app, follow the instructions in [Installing the Python REST samples](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md). For the send-mail sample covered below, use this command to clone the repo:
 
-    ```git clone https://github.com/microsoftgraph/python-sample-send-mail.git```
+```git clone https://github.com/microsoftgraph/python-sample-send-mail.git```
 
 When you register the application as covered in the [installation instructions](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md), be sure to include the **User.Read** and **Mail.Send** permissions, which are required for this sample.
 
