@@ -5,7 +5,7 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
 ## December 2017
-### Microsoft Graph Education APIs
+### Education APIs
 
 Change type|Version|Description|
 |:---|:---|:---|
