@@ -21,7 +21,7 @@ GET /users/{id | userPrincipalName}/people
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 |Name|Value|Description| 
 |:---------------|:--------|:-------| 
