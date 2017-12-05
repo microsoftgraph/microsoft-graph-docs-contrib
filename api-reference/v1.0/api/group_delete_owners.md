@@ -4,7 +4,6 @@ Use this API to remove an owner from an Office 365 group, a security group or a 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
@@ -16,6 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /groups/{id}/owners/{id}/$ref
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -32,7 +32,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "delete_owner_from_group"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
@@ -55,7 +55,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create member",
+  "description": "Delete owner",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

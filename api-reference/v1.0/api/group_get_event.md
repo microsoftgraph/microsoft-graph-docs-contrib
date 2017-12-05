@@ -130,7 +130,7 @@ Content-length: 1728
             },
             "emailAddress": {
                 "name": "Lidia Holloway",
-                "address": "LidiaH@contoso.onmicrosoft.com"
+                "address": "LidiaH@contoso.com"
             }
         },
         {
@@ -141,7 +141,7 @@ Content-length: 1728
             },
             "emailAddress": {
                 "name": "HR Taskforce",
-                "address": "HRTaskforce@contoso.onmicrosoft.com"
+                "address": "HRTaskforce@contoso.com"
             }
         },
         {
@@ -152,7 +152,7 @@ Content-length: 1728
             },
             "emailAddress": {
                 "name": "Diego Siciliani",
-                "address": "DiegoS@contoso.onmicrosoft.com"
+                "address": "DiegoS@contoso.com"
             }
         },
         {
@@ -163,7 +163,7 @@ Content-length: 1728
             },
             "emailAddress": {
                 "name": "Johanna Lorenz",
-                "address": "JohannaL@contoso.onmicrosoft.com"
+                "address": "JohannaL@contoso.com"
             }
         },
         {
@@ -174,14 +174,14 @@ Content-length: 1728
             },
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@contoso.onmicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "HR Taskforce",
-            "address": "HRTaskforce@contoso.onmicrosoft.com"
+            "address": "HRTaskforce@contoso.com"
         }
     }
 }
@@ -191,7 +191,7 @@ Content-length: 1728
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Event",
+  "description": "Get event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
