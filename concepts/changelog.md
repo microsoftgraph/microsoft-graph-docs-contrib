@@ -7,10 +7,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ## December 2017
 ### Education APIs
 
-Change type|Version|Description|
+|Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added support for education scenarios, including the following resources:<br/>[Schools](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationschool)<br/> [Classes](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationclass)<br/>[Users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationuser)<br/>[Assignments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationassignment)<br/>[Submissions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsubmission)<br/>See the resource topics for details about the methods that are available.|
-|
+
 
 ## November 2017
 
