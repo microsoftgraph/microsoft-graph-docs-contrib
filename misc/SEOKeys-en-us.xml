@@ -4392,15 +4392,15 @@
 		</Item>
 	</Item>
 	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
-	  <Item text="Microsoft Teams device usage" url="/en-us/api-reference/beta/resources/teams_user_activity_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/resources/reportroot_getteamsdeviceusageuserdetail" />
-		<Item text="Get user counts" url="/en-us/api-reference/beta/resources/reportroot_getteamsdeviceusageusercounts" />
-		<Item text="Get distribution user counts" url="/en-us/api-reference/beta/resources/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  <Item text="Microsoft Teams device usage" url="/en-us/api-reference/beta/resources/microsoft_teams_user_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts" />
 	  </Item>
-	  <Item text="Microsoft Teams user activity" url="/en-us/api-reference/beta/resources/teams_device_usage_reports" >
-		<Item text="Get user detail" url="/en-us/api-reference/beta/resources/reportroot_getteamsuseractivityuserdetail" />
-		<Item text="Get activity counts" url="/en-us/api-reference/beta/resources/reportroot_getteamsuseractivitycounts" />
-		<Item text="Get user counts" url="/en-us/api-reference/beta/resources/reportroot_getteamsuseractivityusercounts" />
+	  <Item text="Microsoft Teams user activity" url="/en-us/api-reference/beta/resources/microsoft_teams_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityusercounts" />
 	  </Item>
 	  <Item text="Outlook activity" url="/en-us/api-reference/beta/resources/email_activity_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
