@@ -41,6 +41,7 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 |commandLine|String|The command line.|
 |productCode|String|The product code.|
 |productVersion|String|The product version of Windows Mobile MSI Line of Business (LoB) app.|
+|ignoreVersionDetection|Boolean|A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set this to true for Windows Mobile MSI Line of Business (LoB) apps that use a self update feature.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -88,7 +89,8 @@ Here is a JSON representation of the resource.
   "identityVersion": "String",
   "commandLine": "String",
   "productCode": "String",
-  "productVersion": "String"
+  "productVersion": "String",
+  "ignoreVersionDetection": true
 }
 ```
 

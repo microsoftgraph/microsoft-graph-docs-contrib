@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /managedDevices/{managedDevicesId}
 GET /users/{usersId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/managedDevices/{managedDeviceId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
@@ -45,7 +44,7 @@ If successful, this method returns a `200 OK` response code and [windowsManagedD
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
+GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 ```
 
 ### Response
@@ -53,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5763
+Content-Length: 5854
 
 {
   "value": {
@@ -124,6 +123,7 @@ Content-Length: 5763
     "exchangeAccessState": "unknown",
     "exchangeAccessStateReason": "unknown",
     "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+    "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
     "isEncrypted": true,
     "userPrincipalName": "User Principal Name value",
     "model": "Model value",

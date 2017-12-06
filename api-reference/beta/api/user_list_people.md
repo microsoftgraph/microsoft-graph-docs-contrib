@@ -19,6 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
+
 ## Optional query parameters
 This method supports the following OData query parameters to help customize the response.
 
@@ -26,7 +27,7 @@ This method supports the following OData query parameters to help customize the 
 |:---------------|:--------|:-------| 
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.| 
 |$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.| 
-|$search|string|Search for people by name or alias. Supports Fuzzy matching| 
+|$search|string|Search for people by name or alias. Supports Fuzzy matching.| 
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.| 
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.| 
 |$top|int|Number of results to be returned.| 
