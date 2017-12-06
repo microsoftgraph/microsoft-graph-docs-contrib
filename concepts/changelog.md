@@ -6,12 +6,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## December 2017
 
-### Education APIs
-
-|Change type|Version|Description|
-|:---|:---|:---|
-|Addition|Beta|Added support for education scenarios, including the following resources:<br/>[Schools](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationschool)<br/> [Classes](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationclass)<br/>[Users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationuser)<br/>[Assignments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationassignment)<br/>[Submissions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsubmission)<br/>See the resource topics for details about the methods that are available.|
-
 ### Reports APIs
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
@@ -19,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition    | Beta    | Added the following APIs:<br>[getTeamsUserActivityUserDetail](../api-reference/beta/api/reportroot_getteamsuseractivityuserdetail.md)<br>[getTeamsUserActivityCounts](../api-reference/beta/api/reportroot_getteamsuseractivitycounts.md)<br>[getTeamsUserActivityUserCounts](../api-reference/beta/api/reportroot_getteamsuseractivityusercounts.md)<br>[getTeamsDeviceUsageUserDetail](../api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail.md)<br>[getTeamsDeviceUsageUserCounts](../api-reference/beta/api/reportroot_getteamsdeviceusageusercounts.md)<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts.md) |
 
 ## November 2017
+
+### Education APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added support for education scenarios, including the following resources:<br/>[Schools](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationschool)<br/>[Classes](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationclass)<br/>[Users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationuser)<br/>[Assignments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationassignment)<br/>[Submissions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsubmission)<br/>See the resource topics for details about the methods that are available.|
 
 ### Microsoft Intune APIs
 |Change type|Version|Description|
