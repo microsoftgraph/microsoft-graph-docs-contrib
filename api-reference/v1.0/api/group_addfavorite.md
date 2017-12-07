@@ -28,8 +28,6 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-The following is an example of how to call this API.
-
 #### Request
 The following is an example of the request.
 <!-- {

@@ -115,7 +115,7 @@ This resource supports:
 |planner|[planner](planner.md)| Entry-point to Planner resource that might exist for a Unified Group.|
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
 |settings|[groupSetting](groupsetting.md) collection| Read-only. Nullable.|
-|sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.
+|sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.|
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 ## JSON representation

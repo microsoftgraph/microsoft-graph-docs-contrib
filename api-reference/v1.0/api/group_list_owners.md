@@ -8,7 +8,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All and User.ReadBasic.All, Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
