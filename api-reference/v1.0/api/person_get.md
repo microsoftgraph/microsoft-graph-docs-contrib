@@ -6,7 +6,6 @@ You can get this information via the People API. For examples, see the [Examples
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
- 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -23,13 +22,13 @@ GET /users/{id | userPrincipalName}/people/{id}
 ```
 
 ## Optional query parameters
-This method supports the following [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.
+This method supports the following [OData query parameters](../../../concepts/query_parameters.md) to help customize the response, with examples shown in the article [Get relevant information about people](../../../concepts/people_example.md).
 
 |Name|Value|Description| 
 |:---------------|:--------|:-------| 
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.| 
 |$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.| 
-|$search|string|Search for people by name or alias. Supports Fuzzy matching| 
+|$search|string|Search for people by name or alias. Supports Fuzzy matching.| 
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.| 
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.| 
 |$top|int|Number of results to be returned.| 
