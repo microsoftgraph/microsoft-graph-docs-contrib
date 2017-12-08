@@ -81,8 +81,8 @@ The following example shows how to get the synchronization schema.
   "name": "get_synchronizationschema"
 }-->
 ```http
-    GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
-    Authorization: Bearer {Token}
+GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
+Authorization: Bearer {Token}
 ```
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
