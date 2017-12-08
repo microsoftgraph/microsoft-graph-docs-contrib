@@ -1,6 +1,6 @@
 # Microsoft Graph API Terms of Use 
 
-Last revised in October 2017
+Last revised in December 2017
 
 Thank you for developing with Microsoft!
 
@@ -84,8 +84,9 @@ When your Application or services access the Graph API for Intune using a Post c
 <ul>
 <li>- The attribution “Microsoft Intune® App Protection Policies” displayed in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>, and</li>
 <li>- A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.</li>
-<li>- In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Microsoft Intune® App Protection Policies” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>.</li>
-</ul> 
+	</ul>
+<li>In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Microsoft Intune® App Protection Policies” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>.</li>
+
 </li>
 </ol>
 
