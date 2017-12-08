@@ -31,7 +31,7 @@ In the request body, provide a JSON object with the following parameter.
 
 | Parameter     | Type      | Description    |
 |:--------------|:----------|:---------------|
-|criteria       |[synchronizationJobRestartCriteria](resources/synchronization_synchronizationjobrestartcriteria.md) |Restart criteria|
+|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization_synchronizationjobrestartcriteria.md) |Restart criteria|
 
 ## Response
 

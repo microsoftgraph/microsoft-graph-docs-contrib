@@ -23,7 +23,7 @@ The following sections describe the high-level components of the the synchroniza
 | Method        | Return Type               | Description                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[Get schema](../api/synchronization_synchronizationschema_get.md)    |[synchronizationSchema](synchronization_synchronizationschema.md)   |Read properties and relationships of the **synchronizationSchema** object.|
-|[Update schema](../api/synchronization_synchronizationschema_put.md)    |None   |Update the synchronization schema. |
+|[Update schema](../api/synchronization_synchronizationschema_update.md)    |None   |Update the synchronization schema. |
 |[Delete schema](../api/synchronization_synchronizationschema_delete.md)    |None   |Delete the customized schema, resetting the schema to the default configuration. |
 |[List filter operators](../api/synchronization_synchronizationschema_filteroperators.md)    |[filterOperatorSchema](../resources/synchronization_filteroperatorschema.md) colection   |List all operators supported in the scoping filters. |
 |[List attribute mapping functions](../api/synchronization_synchronizationschema_functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization_attributemappingfunctionschema.md) collection   |List all functions supported in the attribute mapping expressions. |

@@ -27,11 +27,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## Request body
 
-In the request body, supply the [synchronizationTemplate](../resources/synchronization_template.md) object to be created. The `id`, `applicationId` and `factoryTag` properties are required. When no `schema` is provided with the template, the default schema associated with the `factoryTag` property will be used.
+In the request body, supply the [synchronizationTemplate](../resources/synchronization_synchronizationtemplate.md) object to be created. The `id`, `applicationId` and `factoryTag` properties are required. When no `schema` is provided with the template, the default schema associated with the `factoryTag` property will be used.
 
 ### Response
 
-If successful, this method returns a `201 Created` response code and a [synchronizationTemplate](../resources/synchronization_template.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [synchronizationTemplate](../resources/synchronization_synchronizationtemplate.md) object in the response body.
 
 ### Example
 

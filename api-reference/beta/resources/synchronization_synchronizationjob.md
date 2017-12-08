@@ -16,7 +16,7 @@ Performs synchronization by periodically running in the background, polling for 
 |[Pause](../api/synchronization_synchronizationjob_pause.md)          |None   |Temporarily stop synchronization. All the progress, including job state, is persisted, and the job will continue from where it left off when a [Start](../api/synchronization_synchronizationjob_start.md) call is made.|
 |[Delete](../api/synchronization_synchronizationjob_delete.md)        |None   |Stop synchronization, and permanently delete all the state associated with the job.|
 |[Get synchrnoizationSchema](../api/synchronization_synchronizationschema_get.md)    |[synchronizationSchema](synchronization_synchronizationschema.md)   |Retrieve the job's effective synchronization schema.|
-|[Update synchroizationSchema](../api/synchronization_synchronizationschema_put.md)    |None   |Update the job's synchronization schema. |
+|[Update synchroizationSchema](../api/synchronization_synchronizationschema_update.md)    |None   |Update the job's synchronization schema. |
 |[Validate credentials](../api/synchronization_synchronizationjob_validatecredentials.md)|None|Test provided credentials against target directory.|
 
 ## Properties

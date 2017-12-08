@@ -27,7 +27,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 
 ## Request body
 
-In the request body, supply the [synchronizationTemplate](../resources/synchronization_template.md) object to replace the existing template. Make sure all properties are provided. Missing properties will be erased.
+In the request body, supply the [synchronizationTemplate](../resources/synchronization_synchronizationtemplate.md) object to replace the existing template. Make sure all properties are provided. Missing properties will be erased.
 
 ### Response
 
