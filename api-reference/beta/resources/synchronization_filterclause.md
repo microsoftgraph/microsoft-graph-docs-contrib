@@ -1,17 +1,19 @@
 # filterClause resource type
 
-Clause represent a single assertion which a candidate object must satisfy, and is evaluated to either `true` (object satisfies the assertion) or `false` (object does not satisfy the assertion).
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Represents a single assertion that a candidate object must satisfy, and is evaluated to either `true` (object satisfies the assertion) or `false` (object does not satisfy the assertion).
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|operatorName|String|Name of the operator to be applied to source and target operands. Must be one fo the supported operators. Supported operators can be discovered.|
-|sourceOperandName|String|Name of source operand (operand being tested). Source operand name must match one of the attribute names on the source object.|
-|targetOperand|[filterOperand](synchronization_filteroperand.md)|Values that source operand will be tested against.|
+|operatorName|String|Name of the operator to be applied to the source and target operands. Must be one of the supported operators. Supported operators can be discovered.|
+|sourceOperandName|String|Name of source operand (the operand being tested). The source operand name must match one of the attribute names on the source object.|
+|targetOperand|[filterOperand](synchronization_filteroperand.md)|Values that the source operand will be tested against.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

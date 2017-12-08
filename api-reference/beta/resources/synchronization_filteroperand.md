@@ -1,6 +1,8 @@
 # filterOperand resource type
 
-Filter operand contains collection of values for the operand.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Contains a collection of values for the operand.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -9,7 +11,7 @@ Filter operand contains collection of values for the operand.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
