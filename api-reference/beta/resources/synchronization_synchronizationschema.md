@@ -34,8 +34,8 @@ The following sections describe the high-level components of the the synchroniza
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
-|directories            |[directoryDefinition](synchronization_directorydefinition.md) collection   |Describes directories and objects that are part of the [synchronizationJob](synchronization_synchronizationjob.md) or [synchronizationTemplate](synchronization_template.md). |
-|synchronizationRules   |[synchronizationRule](synchronization_synchronizationrule.md) collection   |A collection of synchronization rules configured for the [synchronizationJob](synchronization_synchronizationjob.md) or [synchronizationTemplate](synchronization_template.md), |
+|directories            |[directoryDefinition](synchronization_directorydefinition.md) collection   |Describes directories and objects that are part of the [synchronizationJob](synchronization_synchronizationjob.md) or [synchronizationTemplate](synchronization_synchronizationtemplate.md). |
+|synchronizationRules   |[synchronizationRule](synchronization_synchronizationrule.md) collection   |A collection of synchronization rules configured for the [synchronizationJob](synchronization_synchronizationjob.md) or [synchronizationTemplate](synchronization_synchronizationtemplate.md), |
 |version                |String                             |The version of the schema, updated automatically with every schema change.|
 
 
