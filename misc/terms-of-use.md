@@ -82,9 +82,9 @@ When your Application or services access the Graph API for Intune using a Post c
 <li>In your Application and services’ marketing material and product documentation that references functionality enabled by your Application or service’s access to Microsoft Intune® through the Microsoft Graph API: 
 
 <ul>
-<li>- The attribution “Powered by Microsoft Intune®” displayed in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>, and</li>
+<li>- The attribution “Microsoft Intune® App Protection Policies” displayed in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>, and</li>
 <li>- A statement that use of your Application and services does not remove the need for users to maintain a valid license for their use of the Microsoft Intune® service.</li>
-<li>- In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Powered by Microsoft Intune®” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>.</li>
+<li>- In your Application’s user interface or console that displays commands for functionality enabled by the Graph API for Intune, include the attribution “Microsoft Intune® App Protection Policies” in a conspicuous place on the console or UI. The attribution must be in a manner consistent with the <a href="https://aka.ms/trademarks-usage">Microsoft Trademark & Brand Guidelines</a>.</li>
 </ul> 
 </li>
 </ol>
