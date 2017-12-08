@@ -26,7 +26,7 @@ Performs synchronization by periodically running in the background, polling for 
 |id             |String                     |Unique synchronization job identifier. Read-only.|
 |schedule       |[synchronizationSchedule](synchronization_synchronizationschedule.md)|Schedule used to run the job. Read-only.|
 |status         |[synchronizationStatus](synchronization_synchronizationstatus.md)     |Status of the job, which includes when the job was last run, current job state, and errors.|
-|templateId     |String    |Identifier of the [synchronization template](synchronization_template.md) this job is based on.|
+|templateId     |String    |Identifier of the [synchronization template](synchronization_synchronizationtemplate.md) this job is based on.|
 
 ## Relationships
 | Relationship | Type	|Description|
