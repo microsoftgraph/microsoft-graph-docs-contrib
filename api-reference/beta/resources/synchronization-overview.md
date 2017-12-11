@@ -15,10 +15,6 @@ For more information about synchronization in Azure AD, see:
 
 You can also try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) in a sample tenant or your own tenant.
 
-## Authorization
-
-The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](../../../concepts/permissions_reference.md#directory-permissions).
-
 ## Synchronization job
 
 Synchronization jobs perform synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory. The synchronization job is always specific to a particular instance of an application in your tenant. As part of the synchronization job setup, you need to give authorization to read and write objects in your target directory, and customize the job's synchronization schema.
@@ -47,11 +43,11 @@ For more information, see [synchronization template](synchronization_synchroniza
 
 Working with synchronization API primarily involves accessing the [synchronizationJob](synchronization_synchronizationjob.md) and [synchronizationSchema](synchronization_synchronizationschema.md) resources. To find your [synchronizationJob](synchronization_synchronizationjob.md) resource, you need to know the ID of the service principal object that the synchronization job belongs to. The following examples show you how to work with the **synchronizationJob** and **synchronizationSchema** resources.
 
-### Find the service principal object
+### Authorization
 
-To make requests to the synchronization API, you need to know the ID of the [service principal object](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-dev-glossary#service-principal-object). This example assumes that the you have already added the service principal for your application to the tenant (by adding the application to your tenant in the Azure portal). You can find the service principal object by either display name or app ID.
+The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](../../../concepts/permissions_reference.md#directory-permissions).
 
-#### Find service principal object by display name
+### Find the service principal object by display name
 
 The following example shows how to find service principal object by display name.
 
@@ -83,7 +79,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Find service principal object by app ID
+### Find the service principal object by app ID
 
 The following example shows how to find the service principal object by app ID.
 
