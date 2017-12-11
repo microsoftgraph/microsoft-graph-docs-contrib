@@ -72,7 +72,7 @@ You may NOT:
 
 	5. Violating applicable privacy laws and regulations.
 
-c) **Accessing the Microsoft Intune Service through Graph API**
+c) **Accessing the Microsoft Intune Service through the Microsoft Graph API**
         
 When your Application or services access the Graph API for Intune using a Post command as documented at developer.microsoft.com/en-us/graph/docs you must include: 
 
