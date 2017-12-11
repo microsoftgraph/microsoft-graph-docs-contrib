@@ -50,6 +50,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2017
 
+### Azure AD syncrhonization APIs
+
+| Change type | Version | Description                              |
+| :---------- | :------ | :--------------------------------------- |
+| Addition    | Beta    | Added support for Azure AD identity synchronization, including the following resources:<br/>[Job](../api-reference/beta/resources/synchronization_synchronizationjob.md)<br/>[Schema](../api-reference/beta/resources/synchronization_synchronizationschema.md)<br/>[Template](../api-reference/beta/resources/synchronization_synchronizationtemplate.md)<br/>See the resource topics for details about the methods that are available.|
+
 ### Education APIs
 
 |Change type|Version|Description|
