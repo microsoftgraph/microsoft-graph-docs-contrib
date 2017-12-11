@@ -1097,37 +1097,28 @@
         <Item text="List subscribedSkus" url="/en-us/api-reference/beta/api/subscribedsku_list" SEOKeyword="List subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve a list of subscribedsku objects." />
         <Item text="Get subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
       </Item>
-      <Item text="Synchronization"            url="/en-us/api-reference/beta/resources/synchronization-overview" SEOKeyword="Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
-        <Item text="Configure synchronization with custom target attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes"/>
-        <Item text="Configure synchronization with directory extension attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes"/>
-        <Item text="Attribute definition"     url="/en-us/api-reference/beta/resources/synchronization_attributedefinition"/>
-        <Item text="Attribute mapping"        url="/en-us/api-reference/beta/resources/synchronization_attributemapping"/>
-        <Item text="Attribute mapping source" url="/en-us/api-reference/beta/resources/synchronization_attributemappingsource"/>
-        <Item text="Directory definition"     url="/en-us/api-reference/beta/resources/synchronization_directorydefinition"/>
-        <Item text="Filter"                   url="/en-us/api-reference/beta/resources/synchronization_filter" />
-        <Item text="Job"              url="/en-us/api-reference/beta/resources/synchronization_synchronizationjob" SEOKeyword="Synchronization job, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
-          <Item text="List jobs"      url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_list" />
-          <Item text="Create job"     url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_post" />
-		      <Item text="Get job"        url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_get"  />
-          <Item text="Start job"      url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_start" />
-          <Item text="Pause job"      url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_pause"  />
-          <Item text="Restart job"    url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_restart"  />
-          <Item text="Delete job"     url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_delete"  />
+      <Item text="Synchronization" url="/en-us/api-reference/beta/resources/synchronization-overview" SEOKeyword="Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+        <Item text="Synchronize custom target attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes"/>
+        <Item text="Synchronize directory extension attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes"/>
+        <Item text="Job" url="/en-us/api-reference/beta/resources/synchronization_synchronizationjob" SEOKeyword="Synchronization job, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+          <Item text="List jobs" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_list" />
+          <Item text="Create job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_post" />
+		  <Item text="Get job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_get"  />
+          <Item text="Start job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_start" />
+          <Item text="Pause job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_pause"  />
+          <Item text="Restart job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_restart"  />
+          <Item text="Delete job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_delete"  />
         </Item>
-        <Item text="Object definition"     url="/en-us/api-reference/beta/resources/synchronization_objectdefinition"/>
-        <Item text="Object mapping"        url="/en-us/api-reference/beta/resources/synchronization_objectmapping"/>
-        <Item text="Rule"                     url="/en-us/api-reference/beta/resources/synchronization_synchronizationrule"/>
-        <Item text="Schema"             url="/en-us/api-reference/beta/resources/synchronization_synchronizationschema" SEOKeyword="Synchronization schema, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
-            <Item text="Get schema"     url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_get" />
-            <Item text="Get schema functions"  url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_functions"  />
-            <Item text="Get schema filter operators"  url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_filteroperators"  />
-            <Item text="Update schema"  url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_update"  />
-            <Item text="Reset schema"   url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_delete"  />
+        <Item text="Schema" url="/en-us/api-reference/beta/resources/synchronization_synchronizationschema" SEOKeyword="Synchronization schema, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+            <Item text="Get schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_get" />
+            <Item text="Get schema functions" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_functions"  />
+            <Item text="Get schema filter operators" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_filteroperators"  />
+            <Item text="Update schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_update"  />
+            <Item text="Reset schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_delete"  />
         </Item>
-        <Item text="Status"                 url="/en-us/api-reference/beta/resources/synchronization_synchronizationstatus" />
-        <Item text="Template"               url="/en-us/api-reference/beta/resources/synchronization_synchronizationtemplate" SEOKeyword="Synchronization template, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">/>
-            <Item text="List templates"     url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_list" />
-            <Item text="Get template"       url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
+        <Item text="Template" url="/en-us/api-reference/beta/resources/synchronization_synchronizationtemplate" SEOKeyword="Synchronization template, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">/>
+            <Item text="List templates" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_list" />
+            <Item text="Get template" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
         </Item>
       </Item>
     </Item>
