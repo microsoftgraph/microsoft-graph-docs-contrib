@@ -40,7 +40,9 @@ This method supports OData Query Parameters to help customize the response.
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
 - Delta query support `$select`, `$top`, and `$expand` for groups. 
-- There is limited support for `$orderby`: The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include an `$orderby` expression, the return order is not guaranteed. 
+- There is limited support for `$filter` and `$orderby`:
+  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`.
+  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.
 
 ## Request headers
