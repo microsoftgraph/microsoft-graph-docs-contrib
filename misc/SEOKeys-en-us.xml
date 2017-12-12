@@ -665,6 +665,106 @@
       <Item text="Update progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
   </Item>
+  <Item text="Reports" url="/en-us/api-reference/v1.0/resources/report" >
+	  <Item text="Outlook activity" url="/en-us/api-reference/v1.0/resources/email_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Outlook app usage" url="/en-us/api-reference/v1.0/resources/email_app_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageuserdetail" />
+		<Item text="Get apps user counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageusercounts" />
+		<Item text="Get versions user counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Outlook mailbox usage" url="/en-us/api-reference/v1.0/resources/mailbox_usage_reports" >
+		<Item text="Get mailbox detail" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagedetail" />
+		<Item text="Get mailbox counts" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="Get quota status mailbox counts" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagequotastatusmailboxcounts" />
+		<Item text="Get  storage" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Office 365 activations" url="/en-us/api-reference/v1.0/resources/office_365_activations_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="Get activation counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationcounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Office 365 active users" url="/en-us/api-reference/v1.0/resources/office_365_active_users_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeusercounts" />
+		<Item text="Get services user counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Office 365 groups activity" url="/en-us/api-reference/v1.0/resources/office_365_groups_activity_reports" >
+		<Item text="Get group detail" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitydetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="Get group counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="Get storage" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive activity" url="/en-us/api-reference/v1.0/resources/onedrive_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive usage" url="/en-us/api-reference/v1.0/resources/onedrive_usage_reports" >
+		<Item text="Get account detail" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="Get account counts" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="Get storage" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="SharePoint activity" url="/en-us/api-reference/v1.0/resources/sharepoint_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="Get pages" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="SharePoint site usage" url="/en-us/api-reference/v1.0/resources/sharepoint_site_usage_reports" >
+		<Item text="Get site detail" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail" />
+		<Item text="Get file counts" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="Get site counts" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="Get storage" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="Get pages" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Skype for Business activity" url="/en-us/api-reference/v1.0/resources/skype_for_business_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Skype for Business device usage" url="/en-us/api-reference/v1.0/resources/skype_for_business_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Skype for Business organizer activity" url="/en-us/api-reference/v1.0/resources/skype_for_business_organizer_activity_reports" >
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business participant activity" url="/en-us/api-reference/v1.0/resources/skype_for_business_participant_activity_reports" >
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business peer-to-peer activity" url="/en-us/api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity" >
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="Get minute counts" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Yammer activity" url="/en-us/api-reference/v1.0/resources/yammer_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Yammer device usage" url="/en-us/api-reference/v1.0/resources/yammer_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Yammer groups activity" url="/en-us/api-reference/v1.0/resources/yammer_groups_activity_reports" >
+		<Item text="Get group detail" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitydetail" />
+		<Item text="Get group counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
+	</Item>
   <Item text="Schema Extensions" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
       <Item text="List schema extensions" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
       <Item text="Create schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
