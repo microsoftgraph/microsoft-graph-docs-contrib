@@ -5,14 +5,62 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
 ## December 2017
+
+### Microsoft Intune APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entities:<br/>[androidForWorkEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile)<br/>[deviceAndAppManagementRoleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment)<br/>[deviceAndAppManagementRoleDefinition](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_rbac_deviceandappmanagementroledefinition)<br/>[macOSLobApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_macoslobapp)<br/>|
+|Addition|Beta|Added new complex types:<br/>[resourceAction](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_rbac_resourceaction)<br/>[updateWindowsDeviceAccountActionParameter](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_updatewindowsdeviceaccountactionparameter)<br/>[vppTokenActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult)<br/>[windowsDeviceAADAccount](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_windowsdeviceaadaccount)<br/>[windowsDeviceAccount](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_windowsdeviceaccount)<br/>[windowsDeviceADAccount](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_windowsdeviceadaccount)<br/>|
+|Addition|Beta|Added the [revokeTokens](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens) action on [androidForWorkEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile) |
+|Addition|Beta|Added the [createToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken) action on [androidForWorkEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile) |
+|Addition|Beta|Added the [wipe](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_wipe) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [updateWindowsDeviceAccount](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount) action on [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [revokeLicenses](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses) action on [vppToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptoken) |
+|Addition|Beta|Added the [getDevicePasscode](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_getdevicepasscode) function on [deviceCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy) collection |
+|Addition|Beta|Added the [getEffectivePermissions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_rbac_devicemanagement_geteffectivepermissions) function on [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) |
+|Deletion|Beta|Removed the following entities:<br/>**windowsStoreForBusinessApp**<br/>|
+|Deletion|Beta|Removed the following complex types:<br/>**windowsStoreForBusinessAppAssignmentSettings**<br/>|
+|Change|Beta|Added the **dateAndTimeBlockChanges** property to the [androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) entity|
+|Change|Beta|Removed the **enableAuthenticationViaCompanyPortal** property from the [depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile) entity|
+|Change|Beta|Removed the **windowsStoreForBusinessLastSuccessfulSyncDateTime**, **isEnabledForWindowsStoreForBusiness**, **windowsStoreForBusinessLanguage** and **windowsStoreForBusinessLastCompletedApplicationSyncTime** properties from the [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_deviceappmanagement) entity|
+|Change|Beta|Added the **maximumDepTokens** and **intuneAccountId** properties to the [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Added the **enableAuthenticationViaCompanyPortal** property to the [enrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_corpenrollment_enrollmentprofile) entity|
+|Change|Beta|Added the **managedDeviceName** and **partnerReportedThreatState** properties to the [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) entity|
+|Change|Beta|Added the **installProgressDisplayLevel** property to the [officeSuiteApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_officesuiteapp) entity|
+|Change|Beta|Added the **resourceScopes** property to the [roleAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_rbac_roleassignment) entity|
+|Change|Beta|Added the **rolePermissions** and **isBuiltIn** properties to the [roleDefinition](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_rbac_roledefinition) entity|
+|Change|Beta|Added the **tokenActionResults** property to the [vppToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptoken) entity|
+|Change|Beta|Added the **minimumUpdateAutoInstallClassification** property to the [windows10CompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy) entity|
+|Change|Beta|Added the **defenderSecurityCenterDisableAppBrowserUI**, **defenderSecurityCenterDisableFamilyUI**, **defenderSecurityCenterDisableHealthUI**, **defenderSecurityCenterDisableNetworkUI**, **defenderSecurityCenterDisableVirusUI**, **defenderSecurityCenterOrganizationDisplayName**, **defenderSecurityCenterHelpEmail**, **defenderSecurityCenterHelpPhone**, **defenderSecurityCenterHelpURL**, **defenderSecurityCenterNotificationsFromApp**, **defenderSecurityCenterITContactDisplay** and **applicationGuardAllowVirtualGPU** properties to the [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration) entity|
+|Change|Beta|Added the **enableAutomaticRedeployment** and **authenticationAllowFIDODevice** properties to the [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) entity|
+|Change|Beta|Added the **trustedNetworkDomains** property to the [windows10VpnConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10vpnconfiguration) entity|
+|Change|Beta|Added the **minimumUpdateAutoInstallClassification** property to the [windows81CompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows81compliancepolicy) entity|
+|Change|Beta|Added the **androidForWorkEnrollmentProfiles** navigation property to the [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Added the **healthAttestationSupportedStatus** property to the [deviceHealthAttestationState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_devicehealthattestationstate) complex type|
+|Change|Beta|Added the **tpmSpecificationVersion**, **operatingSystemEdition**, **deviceFullQualifiedDomainName**, **deviceGuardVirtualizationBasedSecurityHardwareRequirementState**, **deviceGuardVirtualizationBasedSecurityState** and **deviceGuardLocalSystemAuthorityCredentialGuardState** properties to the [hardwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_hardwareinformation) complex type|
+|Change|Beta|Added the **vpnConfigurationId** property to the [iosVppAppAssignmentSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings) complex type|
+|Change|Beta|Added the **resourceActions** property to the [rolePermission](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_rbac_rolepermission) complex type|
+
+
+### Reports APIs
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Addition    | Beta    | Added the following APIs:<br>[getTeamsUserActivityUserDetail](../api-reference/beta/api/reportroot_getteamsuseractivityuserdetail.md)<br>[getTeamsUserActivityCounts](../api-reference/beta/api/reportroot_getteamsuseractivitycounts.md)<br>[getTeamsUserActivityUserCounts](../api-reference/beta/api/reportroot_getteamsuseractivityusercounts.md)<br>[getTeamsDeviceUsageUserDetail](../api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail.md)<br>[getTeamsDeviceUsageUserCounts](../api-reference/beta/api/reportroot_getteamsdeviceusageusercounts.md)<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts.md) |
+
+## November 2017
+
+### Azure AD syncrhonization APIs
+
+| Change type | Version | Description                              |
+| :---------- | :------ | :--------------------------------------- |
+| Addition    | Beta    | Added support for Azure AD identity synchronization, including the following resources:<br/>[Job](../api-reference/beta/resources/synchronization_synchronizationjob.md)<br/>[Schema](../api-reference/beta/resources/synchronization_synchronizationschema.md)<br/>[Template](../api-reference/beta/resources/synchronization_synchronizationtemplate.md)<br/>See the resource topics for details about the methods that are available.|
+
 ### Education APIs
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|Beta|Added support for education scenarios, including the following resources:<br/>[Schools](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationschool)<br/> [Classes](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationclass)<br/>[Users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationuser)<br/>[Assignments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationassignment)<br/>[Submissions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsubmission)<br/>See the resource topics for details about the methods that are available.|
-
-
-## November 2017
+|Addition|Beta|Added support for education scenarios, including the following resources:<br/>[Schools](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationschool)<br/>[Classes](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationclass)<br/>[Users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationuser)<br/>[Assignments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationassignment)<br/>[Submissions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsubmission)<br/>See the resource topics for details about the methods that are available.|
 
 ### Microsoft Intune APIs
 |Change type|Version|Description|

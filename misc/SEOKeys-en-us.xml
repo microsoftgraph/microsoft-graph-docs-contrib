@@ -1089,13 +1089,37 @@
     </Item>
       <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
         <Item text="List service principal" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
-		<Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
+		    <Item text="Get service principal" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="Update service principal" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
         <Item text="Delete service principal" url="/en-us/api-reference/beta/api/serviceprincipal_delete" />
       </Item>
       <Item text="Subscribed sku" url="/en-us/api-reference/beta/resources/subscribedsku" SEOKeyword="subscribedsku API, Microsoft Graph API, subscribedsku API" SEODescription="Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from DirectoryObject.">
         <Item text="List subscribedSkus" url="/en-us/api-reference/beta/api/subscribedsku_list" SEOKeyword="List subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve a list of subscribedsku objects." />
         <Item text="Get subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
+      </Item>
+      <Item text="Synchronization" url="/en-us/api-reference/beta/resources/synchronization-overview" SEOKeyword="Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+        <Item text="Synchronize custom target attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes"/>
+        <Item text="Synchronize directory extension attributes" url="/en-us/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes"/>
+        <Item text="Job" url="/en-us/api-reference/beta/resources/synchronization_synchronizationjob" SEOKeyword="Synchronization job, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+          <Item text="List jobs" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_list" />
+          <Item text="Create job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_post" />
+		  <Item text="Get job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_get"  />
+          <Item text="Start job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_start" />
+          <Item text="Pause job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_pause"  />
+          <Item text="Restart job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_restart"  />
+          <Item text="Delete job" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_delete"  />
+        </Item>
+        <Item text="Schema" url="/en-us/api-reference/beta/resources/synchronization_synchronizationschema" SEOKeyword="Synchronization schema, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">
+            <Item text="Get schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_get" />
+            <Item text="Get schema functions" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_functions"  />
+            <Item text="Get schema filter operators" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_filteroperators"  />
+            <Item text="Update schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_update"  />
+            <Item text="Reset schema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_delete"  />
+        </Item>
+        <Item text="Template" url="/en-us/api-reference/beta/resources/synchronization_synchronizationtemplate" SEOKeyword="Synchronization template, Synchronization API, Provisioning API, Azure Active Directory, Provisioning">/>
+            <Item text="List templates" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_list" />
+            <Item text="Get template" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
+        </Item>
       </Item>
     </Item>
     <Item text="Education" url="/en-us/api-reference/beta/resources/education-overview" >
@@ -1441,6 +1465,13 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update"/>
+        </Item>
+        <Item text="macOS LOB app" url="en-us/api-reference/beta/resources/intune_apps_macoslobapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_update"/>
         </Item>
         <Item text="macOS office suite app" url="en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_list"/>
@@ -2014,6 +2045,15 @@
           <Item text="Get device configuration device overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationdeviceoverview"/>
           <Item text="Get device configuration user overview" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationuseroverview"/>
           <Item text="Get Android for Work certificate profile base" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_androidforworkcertificateprofilebase"/>
+        </Item>
+        <Item text="Android for Work enrollment profile" url="/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_update"/>
+          <Item text="Create token action" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken"/>
+          <Item text="Revoke tokens action" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens"/>
         </Item>
         <Item text="Android for Work enterprise Wi-Fi configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list"/>
@@ -2758,6 +2798,7 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update"/>
+          <Item text="updateWindowsDeviceAccount" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount"/>
           <Item text="windowsDefenderScan action" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
           <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
@@ -3681,6 +3722,7 @@
         <Item text="Create" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create"/>
         <Item text="Delete" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_delete"/>
         <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_update"/>
+        <Item text="revokeLicenses action" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses"/>
         <Item text="syncLicenses action" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses"/>
       </Item>
         <Item text="Windows 10 enrollment completion page configuration" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
@@ -3752,6 +3794,20 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list"/>
           <Item text="List role assignment" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list_roleassignment"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_update"/>
+        </Item>
+        <Item text="Device and app management role assignment" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_update"/>
+        </Item>
+        <Item text="Device and app management role definition" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroledefinition">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_update"/>
         </Item>
       </Item>
       <Item text="Telecom expense management" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
@@ -4292,6 +4348,16 @@
 		</Item>
 	</Item>
 	<Item text="Reports" url="/en-us/api-reference/beta/resources/report" >
+	  <Item text="Microsoft Teams device usage" url="/en-us/api-reference/beta/resources/microsoft_teams_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Microsoft Teams user activity" url="/en-us/api-reference/beta/resources/microsoft_teams_user_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
 	  <Item text="Outlook activity" url="/en-us/api-reference/beta/resources/email_activity_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />
