@@ -1,19 +1,20 @@
-# Remove owner
-Use this API to remove an owner from an Office 365 group, a security group or a mail-enabled security group through the owners navigation property.
+# Delete event
+Delete an [event](../resources/event.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/owners/{id}/$ref
+DELETE /groups/{id}/events/{id}
+DELETE /groups/{id}/calendar/events/{id}
 ```
 
 ## Request headers
@@ -32,20 +33,18 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_owner_from_group"
+  "name": "delete_group_event"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events/AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA==
 ```
-In the request, specify the `id` of the directory object you want to remove after the $ref segment.
 
 #### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -55,7 +54,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete owner",
+  "description": "Delete event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
