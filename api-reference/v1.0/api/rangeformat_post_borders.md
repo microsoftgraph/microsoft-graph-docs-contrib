@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders
-POST /workbook/worksheets/{id|name}/range(<address>)/format/borders
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
@@ -22,13 +22,14 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
+If successful, this method returns `201 Created` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.
 
 ## Example
 ##### Request

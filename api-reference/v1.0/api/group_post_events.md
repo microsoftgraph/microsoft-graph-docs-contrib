@@ -1,6 +1,6 @@
 # Create Event
-
 Use this API to create a new [event](../resources/event.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -8,7 +8,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -16,6 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -25,12 +26,11 @@ POST /groups/{id}/calendar/events
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 
 ## Response
-
-If successful, this method returns `201, Created` response code and [Event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and [Event](../resources/event.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_group"
@@ -53,8 +53,11 @@ Content-length: 285
 }
 ```
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

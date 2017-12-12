@@ -1,7 +1,4 @@
 # Add Named Item FormulaLocal
-
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Permissions
@@ -10,20 +7,21 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Files.ReadWrite, Sites.Read.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/addFormulaLocal
+POST /workbook/worksheets({id|name})/names/add
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -36,7 +34,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
+If successful, this method returns `200 OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -79,11 +77,12 @@ Content-length: 109
     "comment": "Comment for the named item",
     "name": "test7",
     "scope": "Workbook",
-    "type": "Double",
-    "value": 0,
+    "type": "String",
+    "value": "0",
     "visible": true
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

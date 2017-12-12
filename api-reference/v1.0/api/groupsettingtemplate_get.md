@@ -80,6 +80,7 @@ Content-length: 1341
             "defaultValue": "",
             "description": "A comma-delimited list of structured strings describing the classification values in the ClassificationList. The structure of the string is: Value: Description"
         }
+    ]
 }
 ```
 

@@ -1,6 +1,6 @@
 # Create Calendar
 
-Use this API to create a new calendar.
+Use this API to create a new calendar for a [user](../resources/user.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -26,7 +26,7 @@ In the request body, supply a JSON representation of [calendar](../resources/cal
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [calendar](../resources/calendar.md) object in the response body.
+If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.
 
 ## Example
 ##### Request

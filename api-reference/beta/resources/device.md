@@ -41,6 +41,12 @@ This resource lets you add your own data to custom properties using [extensions]
 |operatingSystemVersion|String| Operating system version of the device. Required. |
 |physicalIds|String collection| For internal use only. Not nullable. |
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br />**Workplace** - indicates *bring your own personal devices*<br />**AzureAd** - Cloud only joined devices<br />**ServerAd** - on-premises domain joined devices joined to Azure AD. For more details, see [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
+|Name| String | Friendly name of a device|
+|Status | String| Device is online or offline|
+|Platform |String|Platform of device|
+|Kind| String| Form factor of device|
+|Model| String| Model of device|
+|Manufacturer| String| Manufacturer of device|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -48,10 +54,14 @@ This resource lets you add your own data to custom properties using [extensions]
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable.|
 |registeredOwners|[directoryObject](directoryobject.md) collection| The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection| Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Nullable.|
+|registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
+|registeredUsers|[directoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
+|commands | Collection(microsoft.graph.command) | Set of commands sent to this device|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -81,9 +91,14 @@ Here is a JSON representation of the resource
   "operatingSystem": "string",
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
-  "trustType": "string"
+  "trustType": "string",
+  "Name": "string",
+  "Status": "string",
+  "Platform": "string",
+  "Kind": "string",
+  "Model": "string",
+  "Manufacturer": "string"
 }
-
 ```
 
 ## See also

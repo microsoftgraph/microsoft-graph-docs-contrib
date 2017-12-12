@@ -32,7 +32,7 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [channel](../resources/channel.md) object in the response body.
+If successful, this method returns `201 Created` response code and [channel](../resources/channel.md) object in the response body.
 
 ## Example
 ##### Request
@@ -61,6 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
+
 {
   "id": "id-value",
   "displayName": "Architecture Discussion",
