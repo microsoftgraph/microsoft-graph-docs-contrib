@@ -64,7 +64,7 @@ Content-length: 53
 ##### Request
 Here is an example of the request for the photo bytes.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_photo"
 }-->
 ```http
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 ##### Response
 Here is an example of the response.
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 200 OK
 Cache-Control: private
@@ -88,7 +88,7 @@ Duration: 125.9389
 Date: Wed, 13 Dec 2017 22:02:17 GMT
 Content-Length: 250526
 
-... binary image data ...
+< binary image data >
 ```
 
 
