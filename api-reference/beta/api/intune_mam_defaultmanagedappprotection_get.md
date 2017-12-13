@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2222
+Content-Length: 2236
 
 {
   "value": {
@@ -75,7 +75,7 @@ Content-Length: 2222
     "maximumPinRetries": 1,
     "simplePinBlocked": true,
     "minimumPinLength": 0,
-    "pinCharacterSet": "numeric",
+    "pinCharacterSet": "alphanumericAndSymbol",
     "periodBeforePinReset": "PT3M29.6631862S",
     "allowedDataStorageLocations": [
       "sharePoint"

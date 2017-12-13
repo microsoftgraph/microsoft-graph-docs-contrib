@@ -52,6 +52,7 @@ Inherits from [managedDevice](../resources/intune_devices_manageddevice.md)
 |exchangeAccessState|String|The Access State of the device in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |isEncrypted|Boolean|Device encryption status Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |userPrincipalName|String|Device user principal name Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |model|String|Model of the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
@@ -69,13 +70,15 @@ Inherits from [managedDevice](../resources/intune_devices_manageddevice.md)
 |meid|String|MEID Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
+|partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md) Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune_devices_detectedapp.md) collection|All applications currently installed on the device Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 |deviceCategory|[deviceCategory](../resources/intune_devices_devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
-|windowsProtectionState|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|The device protection status.|
+|windowsProtectionState|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|The device protection status. Inherited from [managedDevice](../resources/intune_devices_manageddevice.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -116,7 +119,13 @@ Here is a JSON representation of the resource.
         "dataQuota": 1024,
         "dataUsed": 1024
       }
-    ]
+    ],
+    "tpmSpecificationVersion": "String",
+    "operatingSystemEdition": "String",
+    "deviceFullQualifiedDomainName": "String",
+    "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
+    "deviceGuardVirtualizationBasedSecurityState": "String",
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
   },
   "ownerType": "String",
   "deviceActionResults": [
@@ -154,6 +163,7 @@ Here is a JSON representation of the resource.
   "exchangeAccessState": "String",
   "exchangeAccessStateReason": "String",
   "remoteAssistanceSessionUrl": "String",
+  "remoteAssistanceSessionErrorString": "String",
   "isEncrypted": true,
   "userPrincipalName": "String",
   "model": "String",
@@ -206,12 +216,15 @@ Here is a JSON representation of the resource.
     "codeIntegrityPolicy": "String",
     "bootRevisionListInfo": "String",
     "operatingSystemRevListInfo": "String",
-    "healthStatusMismatchInfo": "String"
+    "healthStatusMismatchInfo": "String",
+    "healthAttestationSupportedStatus": "String"
   },
   "subscriberCarrier": "String",
   "meid": "String",
   "totalStorageSpaceInBytes": 1024,
-  "freeStorageSpaceInBytes": 1024
+  "freeStorageSpaceInBytes": 1024,
+  "managedDeviceName": "String",
+  "partnerReportedThreatState": "String"
 }
 ```
 

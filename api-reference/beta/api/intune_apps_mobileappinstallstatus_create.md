@@ -41,7 +41,7 @@ The following table shows the properties that are required when you create the m
 |deviceName|String|Device name|
 |deviceId|String|Device ID|
 |lastSyncDateTime|DateTimeOffset|Last sync date time|
-|mobileAppInstallStatusValue|String|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`, `notApplicable`.|
+|mobileAppInstallStatusValue|String|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |errorCode|Int32|The error code for install failures.|
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|

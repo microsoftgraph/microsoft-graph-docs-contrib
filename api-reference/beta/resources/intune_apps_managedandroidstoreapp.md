@@ -37,6 +37,8 @@ Inherits from [managedApp](../resources/intune_apps_managedapp.md)
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |packageId|String|The app's package ID.|
+|appStoreUrl|String|The Android AppStoreUrl.|
+|minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum supported operating system.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -79,7 +81,19 @@ Here is a JSON representation of the resource.
   "uploadState": 1024,
   "appAvailability": "String",
   "version": "String",
-  "packageId": "String"
+  "packageId": "String",
+  "appStoreUrl": "String",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+    "v4_0": true,
+    "v4_0_3": true,
+    "v4_1": true,
+    "v4_2": true,
+    "v4_3": true,
+    "v4_4": true,
+    "v5_0": true,
+    "v5_1": true
+  }
 }
 ```
 

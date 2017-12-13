@@ -21,13 +21,13 @@ GET /users/{id | userPrincipalName}/people
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.
+This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response, as shown in the examples in the article [Get relevant information about people](../../../concepts/people_example.md).
 
 |Name|Value|Description| 
 |:---------------|:--------|:-------| 
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.| 
 |$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.| 
-|$search|string|Search for people by name or alias. Supports Fuzzy matching| 
+|$search|string|Search for people by name or alias. Supports Fuzzy matching.| 
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.| 
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.| 
 |$top|int|Number of results to be returned.| 

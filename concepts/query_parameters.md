@@ -6,16 +6,16 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 
 | Name                     | Description | Example
 |:-------------------------|:------------|:---------|
-| [$count](#count)         | Retrieves the total count of matching resources. | [`/me/messages?$top=2&$count=true`][count-example]
-| [$expand](#expand)       | Retrieves related resources.|[`/groups?$expand=members`][expand-example]
-| [$filter](#filter)       | Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
-| [$format](#format)       | Returns the results in the specified media format.|[`/users?$format=json`][format-example]
-| [$orderby](#orderby)     | Orders results.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search)       | Returns results based on search criteria. Currently supported on `messages` and `person` collections.|[`/me/messages?$search=pizza`][search-example]
-| [$select](#select)       | Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
-| [$top](#top)             | Sets the page size of results. |[`/users?$top=2`][top-example]
+| [$count](#count-parameter)         | Retrieves the total count of matching resources. | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand-parameter)       | Retrieves related resources.|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter-parameter)       | Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format-parameter)       | Returns the results in the specified media format.|[`/users?$format=json`][format-example]
+| [$orderby](#orderby-parameter)     | Orders results.|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search-parameter)       | Returns results based on search criteria. Currently supported on `messages` and `person` collections.|[`/me/messages?$search=pizza`][search-example]
+| [$select](#select-parameter)       | Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
+| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$top](#top-parameter)             | Sets the page size of results. |[`/users?$top=2`][top-example]
 
 
 
@@ -39,7 +39,7 @@ A properly encoded URL looks like this:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## count
+## count parameter
 
 Use the `$count` query parameter to include a count of the total number of items in a collection alongside the page of data values returned from Microsoft Graph. 
 
@@ -54,7 +54,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 >**Note:** `$count` is not supported for collections of resources that derive from [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) like collections of [users](../api-reference/v1.0/resources/user.md) or [groups](../api-reference/v1.0/resources/group.md).
 
-## expand
+## expand parameter
 
 Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships. 
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select) statement to limit the properties returned for the expanded child items to the `id` and `name` properties.
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the `id` and `name` properties.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > 
 > With Azure AD resources that derive from [directoryObject](../api-reference/v1.0/resources/directoryobject.md), like [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md), `$expand` is only supported for `beta` and  typically returns a maximum of 20 items for the expanded relationship.
 
-## filter
+## filter parameter
 
 Use the `$filter` query parameter to retrieve just a subset of a collection. 
 
@@ -120,7 +120,7 @@ The following table shows some examples that use the `$filter` query parameter.
 
 > **Note:** The following `$filter` operators are not supported for Azure AD resources:  `ne`, `gt`, `ge`, `lt`, `le`, and `not`. The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
-## format
+## format parameter
 
 Use the `$format` query parameter to specify the media format of the items returned from Microsoft Graph.
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 > **Note:** The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
 
-## orderby
+## orderby parameter
 
 Use the `$orderby` query parameter to specify the sort order of the items returned from Microsoft Graph.
 
@@ -165,11 +165,11 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
  > **Note:** With Azure AD resources that derive from [directoryObject](../api-reference/v1.0/resources/directoryobject.md), like [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md), you cannot combine `$orderby` with `$filter` expressions. 
 
-## search 
+## search parameter
 
 Use the `$search` query parameter to restrict the results of a request to match a search criterion.
 
-> **Note:** You can currently search **only** [message](../api-reference/v1.0/resources/message.md) and [person](../api-reference/v1.0/resources/person.md) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter) or [`$orderby`](#orderby) in a search request.
+> **Note:** You can currently search **only** [message](../api-reference/v1.0/resources/message.md) and [person](../api-reference/v1.0/resources/person.md) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter-parameter) or [`$orderby`](#orderby-parameter) in a search request.
 
 ### Using $search on `message` collections
 
@@ -237,7 +237,7 @@ This request essentially conducts two searches: a fuzzy search against `displayN
 
 To learn more about the People API, see [Get information about relevant people](./people_example.md).  
 
-## select
+## select parameter
 
 Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With $select, you can specify a subset or a superset of the default properties.
 
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 >
 > In `v1.0`, some Azure AD resources that derive from [directoryObject](../api-reference/v1.0/resources/directoryobject.md), like [user](../api-reference/v1.0/resources/user.md) and [group](../api-reference/v1.0/resources/group.md), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
 
-## skip
+## skip parameter
 
 Use the `$skip` query parameter to set the number of items to skip at the start of a collection.
 For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
@@ -265,12 +265,12 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 > **Note:** Some Microsoft Graph APIs, like Outlook Mail and Calendars (`message`, `event`, and `calendar`), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
 
-## skipToken
+## skipToken parameter
 
-Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result. The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
+Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result. The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
 
 
-## top
+## top parameter
 
 Use the `$top` query parameter to specify the page size of the result set. 
 

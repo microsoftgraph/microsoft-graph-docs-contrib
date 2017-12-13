@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /managedDevices
 GET /users/{usersId}/managedDevices
 GET /deviceManagement/managedDevices
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
@@ -42,7 +41,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/managedDevices
+GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices
 ```
 
 ### Response
@@ -50,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6027
+Content-Length: 6795
 
 {
   "value": [
@@ -84,7 +83,13 @@ Content-Length: 6027
             "dataQuota": 9,
             "dataUsed": 8
           }
-        ]
+        ],
+        "tpmSpecificationVersion": "Tpm Specification Version value",
+        "operatingSystemEdition": "Operating System Edition value",
+        "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
+        "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
+        "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
+        "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
       },
       "ownerType": "company",
       "deviceActionResults": [
@@ -122,6 +127,7 @@ Content-Length: 6027
       "exchangeAccessState": "unknown",
       "exchangeAccessStateReason": "unknown",
       "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+      "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
       "isEncrypted": true,
       "userPrincipalName": "User Principal Name value",
       "model": "Model value",
@@ -174,12 +180,15 @@ Content-Length: 6027
         "codeIntegrityPolicy": "Code Integrity Policy value",
         "bootRevisionListInfo": "Boot Revision List Info value",
         "operatingSystemRevListInfo": "Operating System Rev List Info value",
-        "healthStatusMismatchInfo": "Health Status Mismatch Info value"
+        "healthStatusMismatchInfo": "Health Status Mismatch Info value",
+        "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
       },
       "subscriberCarrier": "Subscriber Carrier value",
       "meid": "Meid value",
       "totalStorageSpaceInBytes": 8,
-      "freeStorageSpaceInBytes": 7
+      "freeStorageSpaceInBytes": 7,
+      "managedDeviceName": "Managed Device Name value",
+      "partnerReportedThreatState": "activated"
     }
   ]
 }
