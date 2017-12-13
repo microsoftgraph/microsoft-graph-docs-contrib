@@ -72,11 +72,8 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 ```
 ##### Response
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.profilePhoto"
-} -->
+
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Cache-Control: private
