@@ -1285,6 +1285,23 @@
 			<Item text="Grade submission" url="/en-us/api-reference/beta/api/educationsubmission_update" />
 			<Item text="Release submission" url="/en-us/api-reference/beta/api/educationsubmission_release" />
 		</Item>
+		<Item text="Synchronization profile" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile" >
+			<Item text="List profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
+			<Item text="Create profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_post" />
+			<Item text="Get profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_get" />
+			<Item text="Delete profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_delete" />
+			<Item text="Start sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_start" />
+			<Item text="Pause sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_pause" />
+			<Item text="Resume sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="Reset sync" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="Get upload URL" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_uploadurl" />
+		</Item>
+		<Item text="Synchronization profile status" url="/en-us/api-reference/beta/resources/educationsynchronizationprofilestatus" >
+			<Item text="Get sync status" url="/en-us/api-reference/beta/api/educationsynchronizationprofilestatus_get" />
+		</Item>
+		<Item text="Synchronization errors" url="/en-us/api-reference/beta/resources/educationsynchronizationerror" >
+			<Item text="Get sync errors" url="/en-us/api-reference/beta/api/educationsynchronizationerrors_get" />
+		</Item>
 		</Item>
 	<Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="Workbook" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
