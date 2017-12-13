@@ -1,5 +1,7 @@
 # educationSynchronizationDataProvider resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema. 
 
 > **Note:** This complex type is abstract. Refer to the specific types of data providers listed.

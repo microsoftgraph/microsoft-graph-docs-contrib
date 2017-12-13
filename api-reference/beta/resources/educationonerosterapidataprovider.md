@@ -1,5 +1,7 @@
 # educationOneRosterApiDataProvider resource
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Used to set up the school data synchronization profile when the [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) is used as the input source.
 
 Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).
