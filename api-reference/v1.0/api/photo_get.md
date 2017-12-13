@@ -71,7 +71,8 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ##### Response
 Here is an example of the response.
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response", "@odata.type": "stream" } -->
+
 ```http
 HTTP/1.1 200 OK
 Cache-Control: private
@@ -86,7 +87,7 @@ Duration: 125.9389
 Date: Wed, 13 Dec 2017 22:02:17 GMT
 Content-Length: 250526
 
-< binary image data >
+<binary image data>
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
