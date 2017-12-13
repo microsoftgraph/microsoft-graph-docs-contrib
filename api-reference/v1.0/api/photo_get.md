@@ -66,7 +66,7 @@ Here is an example of the request for the photo bytes.
   "name": "get_photo"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
+GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ```
 ##### Response
 Here is an example of the response.
