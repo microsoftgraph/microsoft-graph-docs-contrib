@@ -33,7 +33,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+Here is an example of the request for photo metadata.
 <!-- {
   "blockType": "request",
   "name": "get_photo"
