@@ -74,6 +74,7 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 Here is an example of the response.
 
 <!-- { "blockType": "response","@odata.type": "stream" } -->
+
 ```http
 HTTP/1.1 200 OK
 Cache-Control: private
