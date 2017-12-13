@@ -38,7 +38,7 @@ Represents a set of configurations used to synchronize education entities and ro
 | **profileStatus** | [educationSynchronizationProfileStatus](educationsynchronizationprofilestatus.md) | The synchronization status. |
 
 ## JSON representation
-The following is a JSON representation of a **synchronizationProfile**.
+The following is a JSON representation of the **educationSynchronizationProfile** resource.
 
 <!-- {
   "blockType": "resource",
