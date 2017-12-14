@@ -15,9 +15,9 @@ Represents a set of configurations used to synchronize education entities and ro
 | [Pause an ongoing sync](../api/educationsynchronizationprofile_pause.md) | None | Pause an ongoing synchronization. |
 | [Resume a paused sync](../api/educationsynchronizationprofile_resume.md) | None | Resume a paused synchronization. |
 | [Reset a sync](../api/educationsynchronizationprofile_reset.md) | None | Reset the state of the profile and restart synchronization. |
-| [Start sync for uploaded files](../api/educationsynchronizationprofile_start.md) | [educationSynchronizationVerificationMessage](educationsynchronizationverificationmessage.md) collection| Verify the uploaded source files and start synchronization. Applies only when the data provider is [educationCsvDataProvider](educationcsvdataprovider.md). |
+| [Start sync for uploaded files](../api/educationsynchronizationprofile_start.md) | [educationFileSynchronizationVerificationMessage](educationfilesynchronizationverificationmessage.md) collection| Verify the uploaded source files and start synchronization. Applies only when the data provider is [educationCsvDataProvider](educationcsvdataprovider.md). |
 | [Get an upload URL](../api/educationsynchronizationprofile_uploadurl.md) | string | Return the short-lived URL to upload CSV data files. Applies only when the data provider is [educationCsvDataProvider](educationcsvdataprovider.md). |
-| [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md) | [status](synchronizationprofilestatus.md) | Return the status of a specific synchronization profile. |
+| [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md) | [status](educationsynchronizationprofilestatus.md) | Return the status of a specific synchronization profile. |
 | [Get synchronization errors](../api/educationsynchronizationerrors_get.md) | [educationSynchronizationError](educationsynchronizationerror.md) collection| Get all the errors generated during synchronization. |
 
 ## Properties
