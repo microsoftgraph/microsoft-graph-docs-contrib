@@ -64,7 +64,7 @@ Content-length: 53
 ##### Request
 Here is an example of the request for the photo bytes.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_photo"
 }-->
 ```http
@@ -73,7 +73,8 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 ##### Response
 Here is an example of the response.
 
-<!-- { "blockType": "response","@odata.type": "stream" } -->
+<!-- { "blockType": "ignored","@odata.type": "stream" } -->
+
 ```http
 HTTP/1.1 200 OK
 Cache-Control: private
