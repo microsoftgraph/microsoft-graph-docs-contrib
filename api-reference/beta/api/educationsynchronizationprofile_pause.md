@@ -43,3 +43,11 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pau
 ##### Response
 
 There is no response body.
+
+<!-- {
+  "blockType": "response",
+  "name": "post_synchronizationProfile_pause"
+}-->
+```
+HTTP/1.1 200 OK
+```
