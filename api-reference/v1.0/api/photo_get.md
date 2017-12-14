@@ -62,7 +62,7 @@ Content-length: 53
 ##### Request
 Here is an example of the request for the photo bytes.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_photo"
 }-->
 ```http
