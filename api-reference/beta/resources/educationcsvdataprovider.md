@@ -26,6 +26,5 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 {
     "@odata.type": "#microsoft.graph.educationCsvDataProvider",
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
-    }
 }
 ```
