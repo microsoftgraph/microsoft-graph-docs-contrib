@@ -25,7 +25,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 }-->
 
 ```json
-"dataProvider": {
+{
     "@odata.type": "#microsoft.graph.educationoneRosterApiDataProvider",
     "connectionUrl": "String",
     "clientId": "String",

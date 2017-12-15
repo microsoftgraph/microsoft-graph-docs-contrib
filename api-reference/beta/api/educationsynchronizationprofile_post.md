@@ -93,7 +93,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
+  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -104,7 +104,7 @@ Content-type: application/json
     "state": "provisioning",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationcsvdataprovider",
+        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [

@@ -50,7 +50,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.verificationMessage",
+  "@odata.type": "microsoft.graph.educationFileSynchronizationVerificationMessage",
   "isCollection": true
 } -->
 ```http

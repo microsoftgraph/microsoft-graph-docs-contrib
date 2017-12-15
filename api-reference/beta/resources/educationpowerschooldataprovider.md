@@ -28,7 +28,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 }-->
 
 ```json
-"dataProvider": {
+{
     "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider",
     "connectionUrl": "String",
     "clientId": "String",

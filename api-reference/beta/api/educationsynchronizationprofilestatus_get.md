@@ -47,7 +47,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.educationsynchronizationprofilestatus",
+  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus",
 } -->
 ```http
 HTTP/1.1 200 OK

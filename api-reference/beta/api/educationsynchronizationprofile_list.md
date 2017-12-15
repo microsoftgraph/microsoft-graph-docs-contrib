@@ -51,7 +51,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationProfile",
+  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
   "isCollection": true
 } -->
 ```http
@@ -147,5 +147,6 @@ Content-length: 3296
             }
         ]
     }
+  ]
 }
 ```
