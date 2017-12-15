@@ -19,8 +19,10 @@ GET /groups/delta
 ```
 
 ### Query parameters
-Tracking changes in groups incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
-You only need to specify any desired query parameters once upfront. 
+Tracking changes in groups incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.
+
+You only need to specify any desired query parameters once upfront.
+
 In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
@@ -59,6 +61,7 @@ See:</br>
     
 ## Example
 #### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -68,6 +71,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
 #### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {

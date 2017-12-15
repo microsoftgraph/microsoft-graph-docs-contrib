@@ -1,8 +1,8 @@
-# group: removeFavorite
+# Update event
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.
+Update an [event](../resources/event.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,47 +16,63 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/removeFavorite
+PATCH /groups/{id}/events/{id}
+PATCH /groups/{id}/calendar/events/{id}
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 #### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "group_removefavorite"
+  "name": "update_group_event"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
+PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
+Content-type: application/json
+Content-length: 211
+
+{
+  "originalStartTimeZone": "originalStartTimeZone-value",
+  "originalEndTimeZone": "originalEndTimeZone-value",
+  "responseStatus": {
+    "response": "",
+    "time": "datetime-value"
+  },
+  "iCalUId": "iCalUId-value",
+  "reminderMinutesBeforeStart": 99,
+  "isReminderOn": true
+}
 ```
 
 #### Response
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "group: removeFavorite",
+  "description": "Update event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,5 +1,5 @@
 # group: removeFavorite
-Remove the group from the list of the current user's favorite groups. Supported for Office 365 groups only.
+Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -24,7 +24,7 @@ POST /groups/{id}/removeFavorite
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 The following is an example of how to call this API.
@@ -47,7 +47,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
