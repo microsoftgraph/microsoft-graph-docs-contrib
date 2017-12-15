@@ -22,6 +22,7 @@ POST /groups/{id}/resetUnseenCount
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Prefer | return=minimal. If minimal response header is included in the request header, then a successful response returns `204 No Content` code. Optional.  | 
 
 ## Request body
 Do not supply a request body for this method.
