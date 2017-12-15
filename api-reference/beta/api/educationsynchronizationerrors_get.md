@@ -47,7 +47,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.educationsynchronizationprofilenerror",
+  "@odata.type": "#microsoft.graph.educationSynchronizationError",
   "isCollection": true
 } -->
 ```http

@@ -22,7 +22,7 @@ Defines the settings for matching school data profile identities. These identiti
 }-->
 
 ```json
-"identitySynchronizationConfiguration": {
+{
     "@odata.type": "#microsoft.graph.educationIdentityMatchingConfiguration",
     "matchingOptions": [
         {

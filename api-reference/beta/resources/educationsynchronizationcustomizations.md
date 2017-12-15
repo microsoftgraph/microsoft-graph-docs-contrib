@@ -32,13 +32,12 @@ This resource is member of the following data providers:
 }-->
 
 ```json
-"customizations": {
-        "school": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-        "section": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-        "student": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-        "teacher": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-        "studentEnrollment": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-        "teacherRoster": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"}
-    }
+{
+  "school": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
+  "section": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
+  "student": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
+  "teacher": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
+  "studentEnrollment": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
+  "teacherRoster": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"}
 }
 ```

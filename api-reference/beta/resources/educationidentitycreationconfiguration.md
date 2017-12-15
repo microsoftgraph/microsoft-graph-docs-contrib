@@ -25,7 +25,7 @@ Derived from [educationIdentitySynchronizationConfiguration](educationIdentitySy
 }-->
 
 ```json
-"identitySynchronizationConfiguration": {
+{
     "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
     "userDomains": [
         {
