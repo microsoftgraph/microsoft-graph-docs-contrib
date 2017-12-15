@@ -66,7 +66,7 @@ Content-length: 3296
         "state": "provisioned",
         "id": "15e9b9fa-de85-492e-aa44-550c40de626e",
         "dataProvider": {
-            "@odata.type": "#microsoft.graph.educationcsvdataprovider",
+            "@odata.type": "#microsoft.graph.educationCsvDataProvider",
             "customizations": {
                 "school": {
                     "optionalPropertiesToSync": [
@@ -120,7 +120,7 @@ Content-length: 3296
             }
         },
         "identitySynchronizationConfiguration": {
-            "@odata.type": "#microsoft.graph.educationidentitycreationconfiguration",
+            "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
             "userDomains": [
                 {
                     "appliesTo": "student",
@@ -134,12 +134,14 @@ Content-length: 3296
         },
         "licensesToAssign": [
             {
+                "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",                
                 "appliesTo": "teacher",
                 "skuIds": [
                     "6fd2c87f-b296-42f0-b197-1e91e994b900"
                 ]
             },
             {
+                "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
                 "appliesTo": "student",
                 "skuIds": [
                     "6fd2c87f-b296-42f0-b197-1e91e994b900"
