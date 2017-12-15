@@ -35,7 +35,7 @@ If successful, this method returns a `202, Accepted` response code and a [synchr
 ##### Request
 Here is an example of the request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_synchronizationProfile"
 }-->
 ```http
@@ -91,7 +91,7 @@ Here is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
 } -->
