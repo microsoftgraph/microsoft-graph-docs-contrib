@@ -1,10 +1,8 @@
-# Create rejectedSender
+# Update conversation thread
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Add a new user or group to the rejectedSender list.
-
-Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
+Update a [thread](../resources/conversationthread.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -18,39 +16,49 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/rejectedSenders/$ref
+PATCH /groups/{id}/threads/{id}
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the id of a user or group object.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
-This method returns `204 No Content` response code and no response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 #### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_rejectedsender"
+  "name": "update_group_thread"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref
+PATCH https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/threads/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q==
 Content-type: application/json
-Content-length: 30
+Content-length: 655
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
+  "originalStartTimeZone": "originalStartTimeZone-value",
+  "originalEndTimeZone": "originalEndTimeZone-value",
+  "responseStatus": {
+    "response": "",
+    "time": "datetime-value"
+  },
+  "iCalUId": "iCalUId-value",
+  "reminderMinutesBeforeStart": 99,
+  "isReminderOn": true
 }
 ```
 
 #### Response
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -63,7 +71,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create rejectedSender",
+  "description": "Update group thread",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

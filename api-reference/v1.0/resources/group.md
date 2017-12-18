@@ -32,12 +32,12 @@ This resource supports:
 |**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.|
-|[List events](../api/group_list_events.md) |[event](event.md) collection| Get a event object collection.|
+|[List events](../api/group_list_events.md) |[event](event.md) collection| Get an event object collection.|
 |[Update event](../api/group_update_event.md) |None|Update the properties of an event object.|
 |[Delete event](../api/group_delete_event.md) |None|Delete event object.|
 |[List calendarView](../api/group_list_calendarview.md) |[event](event.md) collection| Get a collection of events in a specified time window.|
 |**Conversations**| | |
-|[Create conversation](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new Conversation by posting to the conversations collection.|
+|[Create conversation](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new conversation by posting to the conversations collection.|
 |[Get conversation](../api/group_get_conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|
 |[List conversations](../api/group_list_conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
 |[Delete conversation](../api/group_delete_conversation.md) |None|Delete conversation object.|
