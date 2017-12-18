@@ -1,5 +1,4 @@
 # group: resetUnseenCount
-
 Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for Office 365 groups only.
 
 ## Permissions
@@ -20,17 +19,15 @@ POST /groups/{id}/resetUnseenCount
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Prefer | return=minimal. If minimal response header is included in the request header, then a successful response returns `204 No Content` code. Optional.  | 
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
-The following is an example of how to call this API.
-
 #### Request
 The following is an example of the request.
 <!-- {
@@ -48,7 +45,7 @@ The following is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

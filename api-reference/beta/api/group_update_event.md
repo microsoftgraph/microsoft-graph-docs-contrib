@@ -1,54 +1,68 @@
-# Remove member
+# Update event
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Use this API to remove a member from an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.
+Update an [event](../resources/event.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/members/{id}/$ref
+PATCH /groups/{id}/events/{id}
+PATCH /groups/{id}/calendar/events/{id}
 ```
 
 ## Request headers
 | Name       | Type | Description|
-|:---------------|:--------|:----------|
+|:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 #### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "update_group_event"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/members/{id}/$ref
+PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
+Content-type: application/json
+Content-length: 211
+
+{
+  "originalStartTimeZone": "originalStartTimeZone-value",
+  "originalEndTimeZone": "originalEndTimeZone-value",
+  "responseStatus": {
+    "response": "",
+    "time": "datetime-value"
+  },
+  "iCalUId": "iCalUId-value",
+  "reminderMinutesBeforeStart": 99,
+  "isReminderOn": true
+}
 ```
-In the request, specify the `id` of the directory object you want to remove after the $ref segment.
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -58,7 +72,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create member",
+  "description": "Update event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
