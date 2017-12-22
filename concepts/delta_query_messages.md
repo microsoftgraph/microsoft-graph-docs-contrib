@@ -322,7 +322,7 @@ Prefer: odata.maxpagesize=2
 
 The response contains a `deltaLink`. This indicates that all changes in the remote mail folder are now synchronized. One message was deleted and the other message was changed.
 
->**Note:** Some of the properties of a message that can be changed by a user through the Microsoft Outlook client are not supported by the Microsoft Graph API v1.0. In this example, a message's followup status is not supported in the API. However, the changed message still appears in the response to a synchronization request.
+>**Note:** The Microsoft Graph API v1.0 does not support all of the message properties that a user can change using Microsoft Outlook. In this example, a message's followup status is not supported in the API. However, the changed message still appears in the response to a synchronization request.
 
 
 
