@@ -106,7 +106,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | string | The default time zone for events in the response. Optional. |
+| Prefer: outlook.timezone | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". Optional. |
 
 ## Request body
