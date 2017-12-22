@@ -190,6 +190,28 @@ more messages to get from the folder.
     "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
     "value":[
         {
+            "@odata.type": "#microsoft.graph.message",
+            "subject": "Microsoft Virtual Academy at Contoso",
+            "bodyPreview": "Hello Tegan,\r\n\r\n\r\n\r\nFor many at Contoso, the holiday break is a great time to sharpen your technical skills.  Microsoft's online training platform can help you do that.",
+            "importance": "normal",
+            "body": {
+                "contentType": "html",
+                "content": ""
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Elliot Hyde",
+                    "address": "elliot-hyde@tailspintoys.com"
+                }
+            },
+            "toRecipients": [{
+                "emailAddress": {
+                    "name": "Tegan Holland",
+                    "address": "tholland@contoso.com"
+                }
+            }]
+        },
+        {
             "@odata.type":"#microsoft.graph.message",
             "@odata.etag":"W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAAEfYB+\"",
             "subject":"New or modified user account information",
@@ -237,6 +259,7 @@ The third response returns the only remaining message in the folder, and a `delt
 synchronization is complete for the time being for this folder. Save and use the `deltaLink` URL to 
 [synchronize the same folder in the next round](#the-next-round).
 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -249,23 +272,38 @@ synchronization is complete for the time being for this folder. Save and use the
     "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
     "value":[
         {
-            "@odata.type":"#microsoft.graph.message",
-            "@odata.etag":"W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAAEfYB8\"",
-            "subject":"You've joined the Customer Manager group",
-            "sender":{
-                "emailAddress":{
-                    "name":"Customer Managers team",
-                    "address":"customer_managers@contoso.onmicrosoft.com"
+            "@odata.type": "#microsoft.graph.message",
+            "subject": "Fabric CDN now available",
+            "bodyPreview": "Hi everyone, the Fabric team pushed the CSS to their new CDN:",
+            "importance": "normal",
+            "body": {
+                "contentType": "html",
+                "content": "<html></html>\r\n"
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Jodie Sharp",
+                    "address": "Jodie.Sharp@contoso.com"
                 }
             },
-            "id":"AQMkADNkNAAAgWFAAAA"
-        }
-    ]
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "Violeta Rakus",
+                        "address": "Violeta.Rakus@contoso.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "id": "AAMkADk0MGFkODE3LWEAAA="
+        }]
 }
 ```
 
 
-### The next round
+### Sample incremental mail folder synchronization request.
 
 Using the `deltaLink` from the [last request](#sample-third-request) in the last round, 
 you will be able to get only those messages that have changed (by being added, deleted, or updated) in that folder since then.
@@ -280,7 +318,62 @@ GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messa
 Prefer: odata.maxpagesize=2
 ```
 
+### Sample incremental mail folder synchronization response
 
+The response contains a `deltaLink`. This indicates that all changes in the remote mail folder are now synchronized. One message was deleted and the other message was changed.
+
+>**Note:** Some of the properties of a message that can be changed by a user through the Microsoft Outlook client are not supported by the Microsoft Graph API v1.0. In this example, a message's followup status is not supported in the API. However, the changed message still appears in the response to a synchronization request.
+
+
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message",
+  "isCollection": true
+} -->
+```
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
+    "value":[
+        {
+            "@odata.type": "#microsoft.graph.message",
+            "id": "AAMkADk0MGFkODE3LWE4MmYtNDRhOS0Dh_6qB-pB2Sa2pUum19a6YAAKnLuxoAAA=",
+            "@removed": {
+                "reason": "deleted"
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.message",
+            "subject": "Fabric CDN now available",
+            "bodyPreview": "Hi everyone, the Fabric team pushed the CSS to their new CDN:",
+            "importance": "normal",
+            "body": {
+                "contentType": "html",
+                "content": "<html></html>\r\n"
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Jodie Sharp",
+                    "address": "Jodie.Sharp@contoso.com"
+                }
+            },
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "Violeta Rakus",
+                        "address": "Violeta.Rakus@contoso.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "id": "AAMkADk0MGFkODE3LWEAAA="
+        }]
+}
+```
 
 ## See also
 
