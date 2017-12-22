@@ -16,7 +16,7 @@ The following sections provide the reference documentation for the Intune Graph 
 - [Company terms and conditions](intune_company_conceptual.md)
 - [Enroll corporate-owned devices](intune_corporate_enrollment_conceptual.md)
 - [Device configuration](intune_device_configuration_conceptual.md)
-- [Device managmement](intune_devicefe_conceptual.md)
+- [Device management](intune_devicefe_conceptual.md)
 - [App protection](intune_app_protection_conceptual.md)
 - [Enroll devices for management](intune_onboarding_conceptual.md)
 - [Role-based access control](intune_rbac_conceptual.md)
