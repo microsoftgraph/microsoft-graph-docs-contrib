@@ -56,6 +56,8 @@ The following table shows the properties that are required when you create the [
 |appAvailability|String|The Application's availability. Inherited from [managedApp](../resources/intune_apps_managedapp.md) Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune_apps_managedapp.md)|
 |packageId|String|The app's package ID.|
+|appStoreUrl|String|The Android AppStoreUrl.|
+|minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum supported operating system.|
 
 
 
@@ -68,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 683
+Content-length: 1005
 
 {
   "displayName": "Display Name value",
@@ -89,7 +91,19 @@ Content-length: 683
   "uploadState": 11,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "packageId": "Package Id value"
+  "packageId": "Package Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+    "v4_0": true,
+    "v4_0_3": true,
+    "v4_1": true,
+    "v4_2": true,
+    "v4_3": true,
+    "v4_4": true,
+    "v5_0": true,
+    "v5_1": true
+  }
 }
 ```
 
@@ -98,7 +112,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 852
+Content-Length: 1174
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -122,7 +136,19 @@ Content-Length: 852
   "uploadState": 11,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
-  "packageId": "Package Id value"
+  "packageId": "Package Id value",
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+    "v4_0": true,
+    "v4_0_3": true,
+    "v4_1": true,
+    "v4_2": true,
+    "v4_3": true,
+    "v4_4": true,
+    "v5_0": true,
+    "v5_1": true
+  }
 }
 ```
 

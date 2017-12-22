@@ -16,12 +16,15 @@ Singleton entity that acts as a container for all device management functionalit
 |:---|:---|:---|
 |id|String|Unique Identifier|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
+|maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
+|intuneAccountId|Guid|Intune Account Id for given tenant|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deviceConfigurations|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) collection|The device configurations.|
 |deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) collection|The device compliance policies.|
+|deviceSetupConfigurations|[deviceSetupConfiguration](../resources/intune_deviceconfig_devicesetupconfiguration.md) collection|The device setup configurations.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|The software update status summary.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
@@ -29,6 +32,7 @@ Singleton entity that acts as a container for all device management functionalit
 |deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune_deviceconfig_deviceconfigurationuserstatesummary.md)|The device configuration user state summary for this account.|
 |cartToClassAssociations|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) collection|The Cart To Class Associations.|
 |iosUpdateStatuses|[iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) collection|The IOS software update installation statuses for this account.|
+|ndesConnectors|[ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) collection|The collection of Ndes connectors for this account.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -49,7 +53,9 @@ Here is a JSON representation of the resource.
     "deviceComplianceCheckinThresholdDays": 1024,
     "isScheduledActionEnabled": true,
     "secureByDefault": true
-  }
+  },
+  "maximumDepTokens": 1024,
+  "intuneAccountId": "<Unknown Primitive Type Edm.Guid>"
 }
 ```
 

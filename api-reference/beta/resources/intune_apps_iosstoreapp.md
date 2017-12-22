@@ -89,7 +89,8 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
     "v8_0": true,
     "v9_0": true,
-    "v10_0": true
+    "v10_0": true,
+    "v11_0": true
   }
 }
 ```

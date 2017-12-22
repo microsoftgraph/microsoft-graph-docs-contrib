@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /managedDevices/{managedDevicesId}
 PATCH /users/{usersId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
@@ -72,6 +71,7 @@ The following table shows the properties that are required when you create the [
 |exchangeAccessState|String|The Access State of the device in Exchange. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|String|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
+|remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects.|
 |isEncrypted|Boolean|Device encryption status|
 |userPrincipalName|String|Device user principal name|
 |model|String|Model of the device|
@@ -89,6 +89,8 @@ The following table shows the properties that are required when you create the [
 |meid|String|MEID|
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes|
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
+|managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
+|partnerReportedThreatState|String|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
 
 
 
@@ -99,9 +101,9 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
+PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 5386
+Content-length: 6114
 
 {
   "userId": "User Id value",
@@ -131,7 +133,13 @@ Content-length: 5386
         "dataQuota": 9,
         "dataUsed": 8
       }
-    ]
+    ],
+    "tpmSpecificationVersion": "Tpm Specification Version value",
+    "operatingSystemEdition": "Operating System Edition value",
+    "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
+    "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
+    "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
   },
   "ownerType": "company",
   "deviceActionResults": [
@@ -169,6 +177,7 @@ Content-length: 5386
   "exchangeAccessState": "unknown",
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+  "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
   "isEncrypted": true,
   "userPrincipalName": "User Principal Name value",
   "model": "Model value",
@@ -221,12 +230,15 @@ Content-length: 5386
     "codeIntegrityPolicy": "Code Integrity Policy value",
     "bootRevisionListInfo": "Boot Revision List Info value",
     "operatingSystemRevListInfo": "Operating System Rev List Info value",
-    "healthStatusMismatchInfo": "Health Status Mismatch Info value"
+    "healthStatusMismatchInfo": "Health Status Mismatch Info value",
+    "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
   },
   "subscriberCarrier": "Subscriber Carrier value",
   "meid": "Meid value",
   "totalStorageSpaceInBytes": 8,
-  "freeStorageSpaceInBytes": 7
+  "freeStorageSpaceInBytes": 7,
+  "managedDeviceName": "Managed Device Name value",
+  "partnerReportedThreatState": "activated"
 }
 ```
 
@@ -235,7 +247,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5487
+Content-Length: 6215
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -267,7 +279,13 @@ Content-Length: 5487
         "dataQuota": 9,
         "dataUsed": 8
       }
-    ]
+    ],
+    "tpmSpecificationVersion": "Tpm Specification Version value",
+    "operatingSystemEdition": "Operating System Edition value",
+    "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
+    "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
+    "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
   },
   "ownerType": "company",
   "deviceActionResults": [
@@ -305,6 +323,7 @@ Content-Length: 5487
   "exchangeAccessState": "unknown",
   "exchangeAccessStateReason": "unknown",
   "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+  "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
   "isEncrypted": true,
   "userPrincipalName": "User Principal Name value",
   "model": "Model value",
@@ -357,12 +376,15 @@ Content-Length: 5487
     "codeIntegrityPolicy": "Code Integrity Policy value",
     "bootRevisionListInfo": "Boot Revision List Info value",
     "operatingSystemRevListInfo": "Operating System Rev List Info value",
-    "healthStatusMismatchInfo": "Health Status Mismatch Info value"
+    "healthStatusMismatchInfo": "Health Status Mismatch Info value",
+    "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
   },
   "subscriberCarrier": "Subscriber Carrier value",
   "meid": "Meid value",
   "totalStorageSpaceInBytes": 8,
-  "freeStorageSpaceInBytes": 7
+  "freeStorageSpaceInBytes": 7,
+  "managedDeviceName": "Managed Device Name value",
+  "partnerReportedThreatState": "activated"
 }
 ```
 

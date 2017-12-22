@@ -43,6 +43,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |googlePlayStoreBlocked|Boolean|Indicates whether or not to block the Google Play store.|
 |kioskModeBlockSleepButton|Boolean|Indicates whether or not to block the screen sleep button while in Kiosk Mode.|
 |kioskModeBlockVolumeButtons|Boolean|Indicates whether or not to block the volume buttons while in Kiosk Mode.|
+|dateAndTimeBlockChanges|Boolean|Indicates whether or not to block changing date and time while in KNOX Mode.|
 |kioskModeApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|A list of apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |nfcBlocked|Boolean|Indicates whether or not to block Near-Field Communication.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
@@ -79,7 +80,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -127,6 +129,7 @@ Here is a JSON representation of the resource.
   "googlePlayStoreBlocked": true,
   "kioskModeBlockSleepButton": true,
   "kioskModeBlockVolumeButtons": true,
+  "dateAndTimeBlockChanges": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",

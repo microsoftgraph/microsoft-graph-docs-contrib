@@ -45,12 +45,14 @@ Inherits from [windowsVpnConfiguration](../resources/intune_deviceconfig_windows
 |trafficRules|[vpnTrafficRule](../resources/intune_deviceconfig_vpntrafficrule.md) collection|Traffic rules. This collection can contain a maximum of 1000 elements.|
 |routes|[vpnRoute](../resources/intune_deviceconfig_vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune_deviceconfig_vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
+|trustedNetworkDomains|String collection|Trusted Network Domains|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -169,6 +171,9 @@ Here is a JSON representation of the resource.
       ],
       "proxyServerUri": "String"
     }
+  ],
+  "trustedNetworkDomains": [
+    "String"
   ]
 }
 ```
