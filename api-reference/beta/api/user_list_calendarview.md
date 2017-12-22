@@ -53,6 +53,7 @@ This method also supports the [OData Query Parameters](http://developer.microsof
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}. Required.  |
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
