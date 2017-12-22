@@ -92,7 +92,7 @@ The following example shows a series of 3 requests to synchronize a specific fol
 - [Sample second request](#sample-second-request) and [response](#sample-second-response)
 - [Sample third request](#sample-third-request) and [final response](#sample-third-and-final-response)
 
-See also what you'll do in the [next round](#the-next-round).
+See also what you'll do in the [Sample incremental mail folder synchronization request](#synchronize-the-same-folder-in-the-next-round).
 
 
 ### Sample initial request
@@ -257,7 +257,7 @@ Prefer: odata.maxpagesize=2
 
 The third response returns the only remaining message in the folder, and a `deltaLink` URL which indicates 
 synchronization is complete for the time being for this folder. Save and use the `deltaLink` URL to 
-[synchronize the same folder in the next round](#the-next-round).
+[synchronize the same folder in the next round](#synchronize-the-same-folder-in-the-next-round).
 
 
 <!-- {
@@ -303,7 +303,7 @@ synchronization is complete for the time being for this folder. Save and use the
 ```
 
 
-### Sample incremental mail folder synchronization request.
+### Synchronize the same folder in the next round
 
 Using the `deltaLink` from the [last request](#sample-third-request) in the last round, 
 you will be able to get only those messages that have changed (by being added, deleted, or updated) in that folder since then.
