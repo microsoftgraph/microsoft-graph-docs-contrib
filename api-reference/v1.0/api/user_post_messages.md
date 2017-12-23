@@ -89,7 +89,7 @@ Content-type: application/json
     "receivedDateTime":"2017-07-22T01:53:57Z",
     "sentDateTime":"2017-07-22T01:53:57Z",
     "hasAttachments":false,
-    "internetMessageId":<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>,
+    "internetMessageId":"<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>",
     "subject":"Did you see last night's game?",
     "bodyPreview":"They were awesome!",
     "importance":"low",
