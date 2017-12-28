@@ -2,12 +2,17 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message. In particular, 
-**eventMessage** is derived from [message](message.md), and, 
-[eventMessageRequest](eventMessageRequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property identifies the type of event message.
+A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). 
 
-An **eventMessage** instance is typically found in the Inbox folder where it arrives as the result of either an event organizer creating a meeting or by an attendee 
-responding to a meeting request. You act on event messages in the same way that you act on messages with minor differences.
+The **eventMessage** entity is derived from [message](message.md), and, 
+[eventMessageRequest](eventMessageRequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property identifies the type of the event message.
+
+When an organizer or app sends a meeting request, the meeting request arrives in a prospective attendee's Inbox as an **eventMessage** instance with the **meetingMessageType** of **meetingRequest**. In addition, Outlook automatically creates an **event** instance in the attendee's calendar, with **tentative** as the **showAs** property. 
+
+To get the properties of the associated event in the attendee's mailbox, the app can use the **event** navigation property of the **eventMessage**, as shown in 
+this [get event message example](../api/eventmessage_get.md#request-2). The app can also respond to the event on behalf of the attendee programmatically, by [accepting](../api/event_accept.md), [tentatively accepting](../api/event_tentativelyaccept.md), or [declining](../api/event_decline.md)] the event.
+
+Aside from a meeting request, an **eventMessage** instance can be found in an attendee's Inbox folder as the result of an event organizer cancelling a meeting, or in the organizser's Inbox as a result of an attendee responding to the meeting request. An app can act on event messages in the same way as on messages with minor differences.
 
 ## JSON representation
 
