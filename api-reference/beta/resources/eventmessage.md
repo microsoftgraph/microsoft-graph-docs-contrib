@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
   "conversationId": "string",
   "conversationIndex": "binary",
   "createdDateTime": "String (timestamp)",
-  "endDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
@@ -64,7 +64,7 @@ Here is a JSON representation of the resource
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "String (timestamp)",
-  "startDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "type": "string",
@@ -88,7 +88,7 @@ Here is a JSON representation of the resource
 |conversationId|String|The ID of the conversation the email belongs to.|
 |conversationIndex|Binary|The Index of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
-|endDateTime|[DateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
+|endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
 |flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
@@ -112,7 +112,7 @@ Here is a JSON representation of the resource
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
 |sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
-|startDateTime|[DateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
+|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |type|String|The type of requested meeting: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
