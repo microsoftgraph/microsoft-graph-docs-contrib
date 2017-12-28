@@ -2,12 +2,17 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message. In particular, 
-**eventMessage** is derived from [message](message.md), and, 
-[eventMessageRequest](eventMessageRequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property identifies the type of event message.
+A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). 
 
-An **eventMessage** instance is typically found in the Inbox folder where it arrives as the result of either an event organizer creating a meeting or by an attendee 
-responding to a meeting request. You act on event messages in the same way that you act on messages with minor differences.
+The **eventMessage** entity is derived from [message](message.md), and, 
+[eventMessageRequest](eventmessagerequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property identifies the type of the event message.
+
+When an organizer or app sends a meeting request, the meeting request arrives in a prospective attendee's Inbox as an **eventMessage** instance with the **meetingMessageType** of **meetingRequest**. In addition, Outlook automatically creates an **event** instance in the attendee's calendar, with **tentative** as the **showAs** property. 
+
+To get the properties of the associated event in the attendee's mailbox, the app can use the **event** navigation property of the **eventMessage**, as shown in 
+this [get event message example](../api/eventmessage_get.md#request-2). The app can also respond to the event on behalf of the attendee programmatically, by [accepting](../api/event_accept.md), [tentatively accepting](../api/event_tentativelyaccept.md), or [declining](../api/event_decline.md)] the event.
+
+Aside from a meeting request, an **eventMessage** instance can be found in an attendee's Inbox folder as the result of an event organizer cancelling a meeting, or in the organizser's Inbox as a result of an attendee responding to the meeting request. An app can act on event messages in the same way as on messages with minor differences.
 
 ## JSON representation
 
@@ -22,7 +27,7 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 }-->
 
 ```json
@@ -36,7 +41,7 @@ Here is a JSON representation of the resource
   "conversationId": "string",
   "conversationIndex": "binary",
   "createdDateTime": "String (timestamp)",
-  "endDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
@@ -59,7 +64,7 @@ Here is a JSON representation of the resource
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "String (timestamp)",
-  "startDateTime": {"@odata.type": "microsoft.graph.datetimetimezone"},
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "type": "string",
@@ -83,7 +88,7 @@ Here is a JSON representation of the resource
 |conversationId|String|The ID of the conversation the email belongs to.|
 |conversationIndex|Binary|The Index of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
-|endDateTime|[DateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
+|endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
 |flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
@@ -107,7 +112,7 @@ Here is a JSON representation of the resource
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
 |sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
-|startDateTime|[DateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
+|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |type|String|The type of requested meeting: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
