@@ -138,7 +138,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessageRequest"
+  "@odata.type": "microsoft.graph.eventMessage"
 } -->
 ```http
 HTTP/1.1 200 OK

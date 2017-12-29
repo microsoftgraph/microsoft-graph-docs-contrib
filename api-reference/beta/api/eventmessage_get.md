@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "blockType": "response",
   "name": "get_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
