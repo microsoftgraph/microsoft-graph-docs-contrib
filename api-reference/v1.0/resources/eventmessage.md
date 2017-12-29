@@ -2,8 +2,7 @@
 
 A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).
 
-The **eventMessage** entity is derived from [message](message.md), and, 
-[eventMessageRequest](eventmessagerequest.md) is derived from **eventMessage** and represents a meeting request. The **meetingMessageType** property identifies the type of the event message.
+The **eventMessage** entity is derived from [message](message.md). The **meetingMessageType** property identifies the type of the event message.
 
 When an organizer or app sends a meeting request, the meeting request arrives in an attendee's Inbox as an **eventMessage** instance with the **meetingMessageType** of **meetingRequest**. In addition, Outlook automatically creates an **event** instance in the attendee's calendar, with the **showAs** property as **tentative**. 
 
