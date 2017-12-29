@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object. Apply the `$expand` parameter on the **event** 
-navigation property to get the [event](../resources/event.md) in a propspective attendee's calendar, associated with the event message.
+navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.
 
 ### Get the event message body in HTML or text format
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.
 ## Example
 ##### Request 1
-The first example shows how to get the properties of an event message, using the event message ID.
+The first example shows how to get the properties of an event message based on the event message ID.
 <!-- {
   "blockType": "request",
   "name": "get_eventmessage"
@@ -179,7 +179,7 @@ and apply an $expand parameter to get the the properties of the event.
 GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
 ```
 ##### Response 2
-Here is an example of the response. The properties of the associated event are returned toward the end of the response. 
+Here is an example of the response. The properties of the associated event are returned in the response. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
