@@ -42,7 +42,7 @@ a single-value extended property to get all the instances that have that propert
 
 When creating a single-value or multi-value extended property, you can specify the **id** property in one of two formats, 
 based on either a string name (**Name**) or numeric identifier (**Id**), and on the actual type of value or values of the property. 
-The next 2 tables below describe the supported formats to specify single and multi-value extended properties. {_type_} represents the type of the value or values of the property. Example types are string, integer, and GUID.
+The next 2 tables below describe the supported formats to specify single and multi-value extended properties. {_type_} represents the type of the value or values of the property. Shown in the examples are string, integer, and arrays of these types.
 
 Since extended properties are in most cases inter-operating with defined MAPI properties not exposed in the 
 Microsoft Graph API metadata, for simplicity, the format you choose should reflect whether the corresponding MAPI 
