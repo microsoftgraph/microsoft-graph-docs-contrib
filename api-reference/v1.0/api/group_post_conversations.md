@@ -1,4 +1,4 @@
-# Create Conversation
+# Create conversation
 Create a new [conversation](../resources/conversation.md) by including a thread and a post. 
 
 Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that conversation.
