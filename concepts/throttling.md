@@ -31,14 +31,14 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 3. If the request fails again with a 429 error code, you are still being throttled. Continue to use the recommended Retry-After delay and retry the request until it succeeds.
 
 The following resources currently provide a retry-after header:
-- [User](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)
-- [Photo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/profilephoto)
-- [Mail](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message)
-- [Calendar (users and groups)](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event)
-- [Contact](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact)
-- [Attachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/attachment)
-- [Group conversations](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/conversation)
-- [People and social](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/social_overview)
-- [Drive resources (OneDrive)](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/drive)
+- [User](../api-reference/v1.0/resources/user)
+- [Photo](../api-reference/v1.0/resources/profilephoto)
+- [Mail](../api-reference/v1.0/resources/message)
+- [Calendar (users and groups)](../api-reference/v1.0/resources/event)
+- [Contact](../api-reference/v1.0/resources/contact)
+- [Attachment](../api-reference/v1.0/resources/attachment)
+- [Group conversations](../api-reference/v1.0/resources/conversation)
+- [People and social](../api-reference/beta/resources/social_overview)
+- [Drive resources (OneDrive)](../api-reference/v1.0/resources/drive)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx).
