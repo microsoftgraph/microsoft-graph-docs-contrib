@@ -41,12 +41,12 @@ This resource lets you add your own data to custom properties using [extensions]
 |operatingSystemVersion|String| Operating system version of the device. Required. |
 |physicalIds|String collection| For internal use only. Not nullable. |
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br />**Workplace** - indicates *bring your own personal devices*<br />**AzureAd** - Cloud only joined devices<br />**ServerAd** - on-premises domain joined devices joined to Azure AD. For more details, see [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
-|Name| String | Friendly name of a device|
-|Status | String| Device is online or offline|
-|Platform |String|Platform of device|
-|Kind| String| Form factor of device|
-|Model| String| Model of device|
-|Manufacturer| String| Manufacturer of device|
+|Name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|Status | String| Device is online or offline. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|Platform |String|Platform of device. Only returned if user signs in with a Microsoft account as part of Project Rome. Only returned if user signs in with a Microsoft account as part of Project Rome.|
+|Kind| String| Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|Model| String| Model of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
+|Manufacturer| String| Manufacturer of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 
 ## Relationships
 | Relationship | Type	|Description|
