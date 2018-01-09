@@ -4,6 +4,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+### Directory APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | V1.0        | Added support for [restoring and permanently deleting users and groups](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directory). |
+
 ## December 2017
 
 ### Microsoft Intune APIs
