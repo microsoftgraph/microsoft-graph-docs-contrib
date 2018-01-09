@@ -1,28 +1,30 @@
 # Working with groups in Microsoft Graph
 
-Groups are collections of [users](user.md) and other principals who share access to resources in Microsoft services or in your app. Microsoft Graph provides you with APIs to create and manage a variety of different types of groups and group functionality to suit your scenario needs. All operations in Microsoft Graph on groups require administrator consent.
+Groups are collections of [users](user.md) and other principals who share access to resources in Microsoft services or in your app. Microsoft Graph provides APIs that you can use to create and manage different types of groups and group functionality according to your scenario. All group-related operations in Microsoft Graph require administrator consent.
 
-> **Note**: Groups can only be created through work or school accounts, and are not supported for personal Microsoft accounts.
+> **Note**: Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 
-| Type              | Use case | groupType | mail-enabled | security-enabled | Creation possible through API? |
+| Type              | Use case | groupType | mail-enabled | security-enabled | Can be created via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Office 365 groups](#office-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | true | false | yes | [user](user.md) |
-| [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | false | true | yes |
-| [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources, with a shared group mailbox. | `[]` | true | true | no |
-| Distribution groups | Distributing mail to the members of the group. It is recommended to use Office 365 groups due to the richer set of resources it provides. | `[]` | true | false | no |
+| [Office 365 groups](#office-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes | [user](user.md) |
+| [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | `false` | `true` | Yes |
+| [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources, with a shared group mailbox. | `[]` | `true` | `true` | No |
+| Distribution groups | Distributing mail to the members of the group. It is recommended to use Office 365 groups due to the richer set of resources it provides. | `[]` | `true` | `false` | No |
 
 ## Office 365 groups
-The power of Office 365 groups is in its collaborative nature, perfect for people who work together on a project or a team. They are created with resources that members of the group share including:
+The power of Office 365 groups is in its collaborative nature, perfect for people who work together on a project or a team. They are created with resources that members of the group share, including:
 
 - Outlook conversations
 - Outlook calendar
 - SharePoint files
 - OneNote notebook
 - SharePoint team site
-- Planner
+- Planner plans
 - Intune device management
 
-### Example of groups in Outlook
+### Group in Outlook example
+
+The following is a JSON representation of groups in Outlook. 
 
 ```http
 
@@ -50,7 +52,7 @@ The power of Office 365 groups is in its collaborative nature, perfect for peopl
     "visibility": "Public"
 }
 ```
-Learn more about Office 365 groups and the administrator experiences [here](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+To learn more about Office 365 groups and the administrator experiences, see [Learn about Office 365 Groups](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## Security groups and mail-enabled security groups
 
@@ -58,7 +60,9 @@ Security groups are for controlling user access to resources. By checking whethe
 
 Mail-enabled security groups are used in the same way as security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations will still work here. Learn more in the [Manage mail-enabled security groups Exchange article](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
 
-### Example of security group
+### Security group example
+
+The following is a JSON representation of a security group. 
 
 ```http
 {
