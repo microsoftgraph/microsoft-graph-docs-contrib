@@ -1,8 +1,8 @@
-# Get user
+# Get group
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the simple directory **user** that corresponds to this **educationUser**.
+Retrieve the Office 365 **group** that corresponds to this **educationClass**.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
 
@@ -11,15 +11,14 @@ A combination of permissions is required to call this API. To learn more, includ
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus either Directory.Read.All or User.Read|
+|Delegated (work or school account) |  One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus Directory.Read.All|
 |Delegated (personal Microsoft account) |  Not supported.  |
 |Application | EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All| 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/me/user
-GET /education/users/{id}/user
+GET /education/classes/{id}/group
 ```
 ## Request headers
 | Header       | Value |
@@ -29,7 +28,7 @@ GET /education/users/{id}/user
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [group](../resources/group.md) object in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -38,7 +37,7 @@ The following is an example of the request.
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/me/user
+GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8E36E966C7D9/group
 ```
 ##### Response
 The following is an example of the response. 
@@ -54,26 +53,30 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
+Content-length: xxx
 
 {
-  "businessPhones": [
-       "businessPhones-value"
+  "id": "id-value",
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "groupTypes": [
+    "groupTypes-value"
+  ],
+  "mail": "mail-value",
+  "mailEnabled": true,
+  "mailNickname": "mailNickname-value",
+  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
+  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+  "onPremisesSyncEnabled": true,
+  "proxyAddresses": [
+    "proxyAddresses-value"
    ],
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "securityEnabled": true,
+   "visibility": "visibility-value"
 }
 ```
 
-<!-- uuid: FC4AAF57-A0ED-4899-B104-A8B89B72AD5A
+<!-- uuid: 0087D9B3-1418-4C87-91C9-A18C6D93706B
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
