@@ -1,5 +1,4 @@
 # Create group
-
 Use this API to create a new group as specified in the request body. You can create one of three types of groups:
 
 * Office 365 group (unified group)
@@ -22,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /groups
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -48,12 +48,11 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ## Response
-
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of a request that creates an Office 365 group.
+#### Request
+The following is an example of a request that creates an Office 365 group.
 <!-- {
   "blockType": "request",
   "name": "create_group_from_groups"
@@ -75,8 +74,9 @@ Content-length: 244
 }
 ```
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
