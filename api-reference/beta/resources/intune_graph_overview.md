@@ -36,10 +36,10 @@
     <meta content="https://avatars3.githubusercontent.com/u/17304259?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="microsoftgraph/microsoft-graph-docs" property="og:title" /><meta content="https://github.com/microsoftgraph/microsoft-graph-docs" property="og:url" /><meta content="microsoft-graph-docs - Documentation for the Microsoft Graph REST API" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjE5MDEwNzc0OjIyN2U2YzY3MjVkZWM5ZTI1NDc0MmJmNWVjZThiZWE1YWEyYWFlMWExMzFkMjYyNmJlNWVkNjRjMjI0MGFlOWY=--ba7e12854e991ece93187b09d3b8959380cfcdaa">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjE5MDEwNzc0OjdiYjI3YzA2N2JlYTNjMTVkZmJjNDA1MDhmNTc2NDYxODRkYmQyZDQwOGUyZTExN2QyMWRjNzE4ZTEyYzFmNWQ=--35be2fe762cc74dc732e4d52ba5b025f2b6f4405">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="FFAC:636F:9F0DE9:1475D2A:5A567CAC" data-pjax-transient>
+  <meta name="request-id" content="FCA9:636D:9F28E1:111AEBE:5A56A282" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -49,7 +49,7 @@
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="FFAC:636F:9F0DE9:1475D2A:5A567CAC" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="12057488" name="octolytics-actor-id" /><meta content="BrucePerlerMS" name="octolytics-actor-login" /><meta content="cfc686455653e9aff999927f49dcb93d56231d70dee5bdaf34775b7a011931bd" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="FCA9:636D:9F28E1:111AEBE:5A56A282" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="12057488" name="octolytics-actor-id" /><meta content="BrucePerlerMS" name="octolytics-actor-login" /><meta content="cfc686455653e9aff999927f49dcb93d56231d70dee5bdaf34775b7a011931bd" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -64,13 +64,13 @@
   <meta name="user-login" content="BrucePerlerMS">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="Nzk5NTEyMjllM2M4MGJjODQ1ZWE2ODgyMmJjNDBhNWM5NWZjZGM2OWQ3NWEwZjc4MDNmZTcwY2IwMDg5YTNkNHx7InJlbW90ZV9hZGRyZXNzIjoiNzIuMTczLjIwLjc2IiwicmVxdWVzdF9pZCI6IkZGQUM6NjM2Rjo5RjBERTk6MTQ3NUQyQTo1QTU2N0NBQyIsInRpbWVzdGFtcCI6MTUxNTYxNzQ1MywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="YmFjMTAwMjllMWEzYmVmZjM4YjliZmY4NWMxZDkwNDFjOTVlOTBlZTU2MmYxZTY5OWNiOTc2ZDFlYzU1Y2NiNnx7InJlbW90ZV9hZGRyZXNzIjoiNzIuMTczLjIwLjc2IiwicmVxdWVzdF9pZCI6IkZDQTk6NjM2RDo5RjI4RTE6MTExQUVCRTo1QTU2QTI4MiIsInRpbWVzdGFtcCI6MTUxNTYyNzEzOSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS">
 
   <meta name="html-safe-nonce" content="79cb964e99b1d28cb5f03b408cdf30572463a3b6">
 
-  <meta http-equiv="x-pjax-version" content="d5a033af7bb24ba7f17b86971168a696">
+  <meta http-equiv="x-pjax-version" content="1a937d00f78a44812f060d68cfc8e096">
   
 
       <link href="https://github.com/microsoftgraph/microsoft-graph-docs/commits/master.atom" rel="alternate" title="Recent Commits to microsoft-graph-docs:master" type="application/atom+xml">
@@ -255,7 +255,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QNAh1d5SLq+oy5O2OaR2siAF6H566imJ7VTzALC9lFIizA2nQHLbkM6AYbMAv2WAZ6vGwl/TleERTH2ksoRnzA==" /></div>
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="gPIAM6jc6MUrkLK0aixtkfpUSEN1Kfw0EyfJt9lcDJ/i7ixBNvwd+k3bQLFTN36jvfpm/1AQQFzvP0cT22X/AQ==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -266,7 +266,7 @@
 </ul>
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="sINIZvQumlTfSUHB+c5wDD3yHdNVmp5Vr5RQ7fC+6fDSn2QUag5va7kCs8TA1WM+elwzb3CjIj1TjN5J8ocabg==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eeFG4jl2LLV45dCIiRMb9kjeq/l+XnlTZkzuXXMQHuAb/WqQp1bZih6uIo2wCAjED3CFRVtnxTuaVGD5cSntfg==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -303,7 +303,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="oDx57qhkxgvg8cEuZoi8XH6B48ajx27s+deFosEf4qFOjV0S5J6wL7/mj5M3afO6RLk9BsenLSQGcGGHk/0WbQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="45865171" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="W2gCcAi8qZZ4eOJVahRLL5fm/+cIxCIzrs04t7WboGW12SaMREbfsidvrOg79QTJrd4hJ2ykYftRatyS53lUqQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="45865171" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/microsoftgraph/microsoft-graph-docs/subscription"
@@ -383,7 +383,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TcAM3fSqVVQsSwOpUSAc4/Nau4dqqf7dKTaR1QaN36Wx9xUQI83x1C7jFsX0F5jeab69quufA5kAW+h3KxKWBg==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TkN3Ih+Xs3Zb+GJKm5dktM8qoJUWZScyM49lUR1kpuGydG7vyPAX9llQdyY+oOCJVc6muJdT2nYa4hzzMPvvQg==" /></div>
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -398,7 +398,7 @@
           190
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/star" class="unstarred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="8XnLqm0uqojiYIGga5e17YycwDsjllFdgyqHOmdPwbA0CT/5w8iKyBV7okAjmoxJXsPJDhXBMPIRaLIH4Rbk1Q==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/star" class="unstarred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="0RA9wOEIA7IY82eBMcPrPMv67LP2CLyDfRMtGuhrO5wUYMmTT+4j8u/oRGF5ztKYGaXlhsBf3SzvURgnbjIe+Q==" /></div>
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -914,12 +914,12 @@
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/edit/master/api-reference/beta/resources/intune_graph_overview.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="qk7xj/svi+OPVe4vq1HHVHvMApBd7ehwSsmi3xCD7iXc1e8nDl7tXFou3C6Cqpf8qM5sac7h6SVOzXZHgUd5Tg==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/edit/master/api-reference/beta/resources/intune_graph_overview.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="RxvkH3HTrsnre/XIBt5HuYWf4TEGynvkkYn3JH3qtJ8xgPq3hKLIdj4Ax8kvJRcRVp2PyJXGerGVjSO87C4j9A==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Edit the file in your fork of this project" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
-</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/delete/master/api-reference/beta/resources/intune_graph_overview.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="d7pzKuEKV0scnmqvNdbfl4230VDkz9pI36CVxYY0/ghxnOpQAHl/+mugC1E+piecZSCJ0IDD26Cmgo8/TgyNAQ==" /></div>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/delete/master/api-reference/beta/resources/intune_graph_overview.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="+SXniGDG4XOh4PJcj/6djSmS6PLa8Vn/OkXf1ZI2CP3/A37ygbXJwtbek6KEjmWGwQWwcr79WBdDZ8UvWg579A==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete the file in your fork of this project" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -1010,7 +1010,7 @@ You can browse the Table of Contents (in the left pane of the site) to find the 
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.20631s from unicorn-1245968991-x3rd2">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.20127s from unicorn-1123744456-5h1zn">GitHub</span>, Inc.</li>
         <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
@@ -1047,7 +1047,7 @@ You can browse the Table of Contents (in the left pane of the site) to find the 
     
     <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-7ad4386210c72170ce8e41e379487f2b8ab89431cd55547610cb6777dae65949.js"></script>
     
-    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-782d160b3bff379e11618261cf5ce4725f029ddff893963f88715ae9ee3deed1.js"></script>
+    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-ebee7220465cdb0698f5f0352ab24cbbcb44ede540da76742fc308637649493c.js"></script>
     
     
     
