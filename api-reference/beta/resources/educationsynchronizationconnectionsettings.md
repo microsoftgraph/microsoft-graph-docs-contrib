@@ -9,8 +9,8 @@ Represents the provider connection settings. This allows the system to know how 
 ## Derived types
 | Type | Description | 
 |:-|:-|
-| [**educationSynchronizationOAuth1ConnectionSettings**](educationSynchronizationOAuth1ConnectionSettings.md) | Use this type to provide OAuth1 connection settings. |
-| [**educationSynchronizationOAuth2ClientCredentialsConnectionSettings**](educationSynchronizationOAuth2ClientCredentialsConnectionSettings.md) | Use this type to provide OAuth2 Client Credentials Grant connection settings. |
+| [**educationSynchronizationOAuth1ConnectionSettings**](educationsynchronizationoauth1connectionsettings.md) | Use this type to provide OAuth1 connection settings. |
+| [**educationSynchronizationOAuth2ClientCredentialsConnectionSettings**](educationsynchronizationoauth2clientcredentialsconnectionsettings.md) | Use this type to provide OAuth2 Client Credentials Grant connection settings. |
 
 ## Properties
 
