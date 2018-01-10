@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>microsoft-graph-docs/intune_graph_overview.md at Staging · microsoftgraph/microsoft-graph-docs</title>
+  <title>microsoft-graph-docs/intune_graph_overview.md at master · microsoftgraph/microsoft-graph-docs</title>
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
@@ -36,10 +36,10 @@
     <meta content="https://avatars3.githubusercontent.com/u/17304259?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="microsoftgraph/microsoft-graph-docs" property="og:title" /><meta content="https://github.com/microsoftgraph/microsoft-graph-docs" property="og:url" /><meta content="microsoft-graph-docs - Documentation for the Microsoft Graph REST API" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjE5MDEwNzc0OmIxOTFhMDVjYWRkMjA5YzZlOGFhYjRmYTc0YzVjZTllZjVlMzVhOTU0MGEwMjYwMTZjNDFmMTVkYmM1ZGU5NWY=--df26495b15374651f348b2cf314d886667dc9241">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjE5MDEwNzc0OjIyN2U2YzY3MjVkZWM5ZTI1NDc0MmJmNWVjZThiZWE1YWEyYWFlMWExMzFkMjYyNmJlNWVkNjRjMjI0MGFlOWY=--ba7e12854e991ece93187b09d3b8959380cfcdaa">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="FE13:636D:8DB13B:F32915:5A5679B5" data-pjax-transient>
+  <meta name="request-id" content="FFAC:636F:9F0DE9:1475D2A:5A567CAC" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -49,7 +49,7 @@
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="FE13:636D:8DB13B:F32915:5A5679B5" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="12057488" name="octolytics-actor-id" /><meta content="BrucePerlerMS" name="octolytics-actor-login" /><meta content="cfc686455653e9aff999927f49dcb93d56231d70dee5bdaf34775b7a011931bd" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="FFAC:636F:9F0DE9:1475D2A:5A567CAC" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="12057488" name="octolytics-actor-id" /><meta content="BrucePerlerMS" name="octolytics-actor-login" /><meta content="cfc686455653e9aff999927f49dcb93d56231d70dee5bdaf34775b7a011931bd" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -64,7 +64,7 @@
   <meta name="user-login" content="BrucePerlerMS">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="OGZlMTNjMWJlNzAwOWQzODc1N2E4N2Y4YzRkMGQ5N2ViYzg2ZTU2YmU5MDMwMzIyZGM1NWE2MGU3MTY0ODg4MXx7InJlbW90ZV9hZGRyZXNzIjoiNzIuMTczLjIwLjc2IiwicmVxdWVzdF9pZCI6IkZFMTM6NjM2RDo4REIxM0I6RjMyOTE1OjVBNTY3OUI1IiwidGltZXN0YW1wIjoxNTE1NjE2Njk1LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+    <meta name="js-proxy-site-detection-payload" content="Nzk5NTEyMjllM2M4MGJjODQ1ZWE2ODgyMmJjNDBhNWM5NWZjZGM2OWQ3NWEwZjc4MDNmZTcwY2IwMDg5YTNkNHx7InJlbW90ZV9hZGRyZXNzIjoiNzIuMTczLjIwLjc2IiwicmVxdWVzdF9pZCI6IkZGQUM6NjM2Rjo5RjBERTk6MTQ3NUQyQTo1QTU2N0NBQyIsInRpbWVzdGFtcCI6MTUxNTYxNzQ1MywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS">
 
@@ -73,7 +73,7 @@
   <meta http-equiv="x-pjax-version" content="d5a033af7bb24ba7f17b86971168a696">
   
 
-      <link href="https://github.com/microsoftgraph/microsoft-graph-docs/commits/Staging.atom" rel="alternate" title="Recent Commits to microsoft-graph-docs:Staging" type="application/atom+xml">
+      <link href="https://github.com/microsoftgraph/microsoft-graph-docs/commits/master.atom" rel="alternate" title="Recent Commits to microsoft-graph-docs:master" type="application/atom+xml">
 
   <meta name="description" content="microsoft-graph-docs - Documentation for the Microsoft Graph REST API">
   <meta name="go-import" content="github.com/microsoftgraph/microsoft-graph-docs git https://github.com/microsoftgraph/microsoft-graph-docs.git">
@@ -81,7 +81,7 @@
   <meta content="17304259" name="octolytics-dimension-user_id" /><meta content="microsoftgraph" name="octolytics-dimension-user_login" /><meta content="45865171" name="octolytics-dimension-repository_id" /><meta content="microsoftgraph/microsoft-graph-docs" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="45865171" name="octolytics-dimension-repository_network_root_id" /><meta content="microsoftgraph/microsoft-graph-docs" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
 
 
-    <link rel="canonical" href="https://github.com/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_graph_overview.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_graph_overview.md" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -129,7 +129,7 @@
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/search" class="js-site-search-form" data-scoped-search-url="/microsoftgraph/microsoft-graph-docs/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_graph_overview.md" class="header-search-scope no-underline">This repository</a>
+        <a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_graph_overview.md" class="header-search-scope no-underline">This repository</a>
       <input type="text"
         class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s"
@@ -255,7 +255,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SLF/zNPVHN7EPPARRtg7rMBst9xDfkYzGZOKsw44JtYqrVO+TfXp4aJ3AhR/wyieh8KZYGZH+lvliwQXDAHVSA==" /></div>
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QNAh1d5SLq+oy5O2OaR2siAF6H566imJ7VTzALC9lFIizA2nQHLbkM6AYbMAv2WAZ6vGwl/TleERTH2ksoRnzA==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -266,7 +266,7 @@
 </ul>
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="OJD8kP7iaYTzXzesDAjnevzjugDWXT9JL+JDNCIkoDxajNDiYMKcu5UUxak1E/RIu02UvPNkgyHT+s2QIB1Tog==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="sINIZvQumlTfSUHB+c5wDD3yHdNVmp5Vr5RQ7fC+6fDSn2QUag5va7kCs8TA1WM+elwzb3CjIj1TjN5J8ocabg==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -303,7 +303,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="pvOGnw3EdFjzrSriDblPNd0B9vZUxFRsVxVB2LnZFalIQqJjQT4CfKy6ZF9cWADT5zkoNjCkF6SosqX96zvhZQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="45865171" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="oDx57qhkxgvg8cEuZoi8XH6B48ajx27s+deFosEf4qFOjV0S5J6wL7/mj5M3afO6RLk9BsenLSQGcGGHk/0WbQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="45865171" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/microsoftgraph/microsoft-graph-docs/subscription"
@@ -383,7 +383,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="uo557VRZ60D521HyYkhjXOhw1QNlqv8sQGtJRnscD0xGuWAggz5PwPtzRJ7Hf+dhcpTTLuScAmhpBjDkVoNG7w==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TcAM3fSqVVQsSwOpUSAc4/Nau4dqqf7dKTaR1QaN36Wx9xUQI83x1C7jFsX0F5jeab69quufA5kAW+h3KxKWBg==" /></div>
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -398,7 +398,7 @@
           190
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/star" class="unstarred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Xn/aOoDjc8NkR4piVYeBcRTOM41XpbTtCXWzQLgTwxibDy5pLgVTg5NcqYIdirjVxpE6uGHy1UKbN4Z9PkrmfQ==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/star" class="unstarred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="8XnLqm0uqojiYIGga5e17YycwDsjllFdgyqHOmdPwbA0CT/5w8iKyBV7okAjmoxJXsPJDhXBMPIRaLIH4Rbk1Q==" /></div>
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -459,7 +459,7 @@
      data-pjax="#js-repo-pjax-container">
 
   <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a href="/microsoftgraph/microsoft-graph-docs/tree/Staging" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /microsoftgraph/microsoft-graph-docs/tree/Staging" itemprop="url">
+    <a href="/microsoftgraph/microsoft-graph-docs" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /microsoftgraph/microsoft-graph-docs" itemprop="url">
       <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
       <span itemprop="name">Code</span>
       <meta itemprop="position" content="1">
@@ -505,7 +505,7 @@
   <div class="repository-content ">
 
     
-  <a href="/microsoftgraph/microsoft-graph-docs/blob/eaf38869cbe11fc36955389f9a8b277df33f4c3a/api-reference/beta/resources/intune_graph_overview.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+  <a href="/microsoftgraph/microsoft-graph-docs/blob/32cbb4466a4627df7117b7fc9a0481e062279954/api-reference/beta/resources/intune_graph_overview.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
   <!-- blob contrib key: blob_contributors:v21:4594f166133629ab4068822fe15af7a1 -->
 
@@ -516,7 +516,7 @@
     
     type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
       <i>Branch:</i>
-      <span class="js-select-button css-truncate-target">Staging</span>
+      <span class="js-select-button css-truncate-target">master</span>
   </button>
 
   <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
@@ -588,7 +588,7 @@
                 Linda-Editor-patch-11
               </span>
             </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+            <a class="select-menu-item js-navigation-item js-navigation-open "
                href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_graph_overview.md"
                data-name="Staging"
                data-skip-pjax="true"
@@ -688,7 +688,7 @@
                 lauragra-reports
               </span>
             </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
                href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_graph_overview.md"
                data-name="master"
                data-skip-pjax="true"
@@ -837,7 +837,7 @@
 </div>
 
     <div class="BtnGroup float-right">
-      <a href="/microsoftgraph/microsoft-graph-docs/find/Staging"
+      <a href="/microsoftgraph/microsoft-graph-docs/find/master"
             class="js-pjax-capture-input btn btn-sm BtnGroup-item"
             data-pjax
             data-hotkey="t">
@@ -846,7 +846,7 @@
       <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
     </div>
     <div class="breadcrumb js-zeroclipboard-target">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/microsoftgraph/microsoft-graph-docs/tree/Staging"><span>microsoft-graph-docs</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/microsoftgraph/microsoft-graph-docs/tree/Staging/api-reference"><span>api-reference</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/microsoftgraph/microsoft-graph-docs/tree/Staging/api-reference/beta"><span>beta</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/microsoftgraph/microsoft-graph-docs/tree/Staging/api-reference/beta/resources"><span>resources</span></a></span><span class="separator">/</span><strong class="final-path">intune_graph_overview.md</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/microsoftgraph/microsoft-graph-docs"><span>microsoft-graph-docs</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/microsoftgraph/microsoft-graph-docs/tree/master/api-reference"><span>api-reference</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/microsoftgraph/microsoft-graph-docs/tree/master/api-reference/beta"><span>beta</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/microsoftgraph/microsoft-graph-docs/tree/master/api-reference/beta/resources"><span>resources</span></a></span><span class="separator">/</span><strong class="final-path">intune_graph_overview.md</strong>
     </div>
   </div>
 
@@ -902,24 +902,24 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a href="/microsoftgraph/microsoft-graph-docs/raw/Staging/api-reference/beta/resources/intune_graph_overview.md" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
-        <a href="/microsoftgraph/microsoft-graph-docs/blame/Staging/api-reference/beta/resources/intune_graph_overview.md" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
-      <a href="/microsoftgraph/microsoft-graph-docs/commits/Staging/api-reference/beta/resources/intune_graph_overview.md" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+      <a href="/microsoftgraph/microsoft-graph-docs/raw/master/api-reference/beta/resources/intune_graph_overview.md" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/microsoftgraph/microsoft-graph-docs/blame/master/api-reference/beta/resources/intune_graph_overview.md" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/microsoftgraph/microsoft-graph-docs/commits/master/api-reference/beta/resources/intune_graph_overview.md" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
-           href="github-windows://openRepo/https://github.com/microsoftgraph/microsoft-graph-docs?branch=Staging&amp;filepath=api-reference%2Fbeta%2Fresources%2Fintune_graph_overview.md"
+           href="github-windows://openRepo/https://github.com/microsoftgraph/microsoft-graph-docs?branch=master&amp;filepath=api-reference%2Fbeta%2Fresources%2Fintune_graph_overview.md"
            aria-label="Open this file in GitHub Desktop"
            data-ga-click="Repository, open with desktop, type:windows">
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/edit/Staging/api-reference/beta/resources/intune_graph_overview.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="iyVGYuGwu1P0KLQdbKkMX2saXixDsRmPril3ATDIIuuK3YC4w8cKyXmvrBVt42CaxghjDyYJ4lCTwbo2VwZcJg==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/edit/master/api-reference/beta/resources/intune_graph_overview.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="qk7xj/svi+OPVe4vq1HHVHvMApBd7ehwSsmi3xCD7iXc1e8nDl7tXFou3C6Cqpf8qM5sac7h6SVOzXZHgUd5Tg==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Edit the file in your fork of this project" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
-</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/delete/Staging/api-reference/beta/resources/intune_graph_overview.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="IvGYIkzzEP6aWmfBiKp9F9QSFIt7IDOuGfgUjcwgrtQzo8js5OxzXvigKHAyKfobKI6uW9AXpNjZMM51cIxqdw==" /></div>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/microsoftgraph/microsoft-graph-docs/delete/master/api-reference/beta/resources/intune_graph_overview.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="d7pzKuEKV0scnmqvNdbfl4230VDkz9pI36CVxYY0/ghxnOpQAHl/+mugC1E+piecZSCJ0IDD26Cmgo8/TgyNAQ==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete the file in your fork of this project" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -947,15 +947,15 @@
 <h2><a href="#sections-of-the-intune-graph-api-documentation" aria-hidden="true" class="anchor" id="user-content-sections-of-the-intune-graph-api-documentation"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sections of the Intune Graph API documentation</h2>
 <p>The following sections provide the reference documentation for the Intune Graph API and resources:</p>
 <ul>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_apps_app_conceptual.md">Managed apps</a></li>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_company_conceptual.md">Company terms and conditions</a></li>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_corporate_enrollment_conceptual.md">Enroll corporate-owned devices</a></li>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_device_configuration_conceptual.md">Device configuration</a></li>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_devicefe_conceptual.md">Device managmement</a></li>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_app_protection_conceptual.md">App protection</a></li>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_onboarding_conceptual.md">Enroll devices for management</a></li>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_rbac_conceptual.md">Role-based access control</a></li>
-<li><a href="/microsoftgraph/microsoft-graph-docs/blob/Staging/api-reference/beta/resources/intune_tem_conceptual.md">Telecom expense management</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_apps_app_conceptual.md">Managed apps</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_company_conceptual.md">Company terms and conditions</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_corporate_enrollment_conceptual.md">Enroll corporate-owned devices</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_device_configuration_conceptual.md">Device configuration</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_devicefe_conceptual.md">Device managmement</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_app_protection_conceptual.md">App protection</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_onboarding_conceptual.md">Enroll devices for management</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_rbac_conceptual.md">Role-based access control</a></li>
+<li><a href="/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/beta/resources/intune_tem_conceptual.md">Telecom expense management</a></li>
 </ul>
 <h2><a href="#using-the-intune-graph-api" aria-hidden="true" class="anchor" id="user-content-using-the-intune-graph-api"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using the Intune Graph API</h2>
 <p>Intune provides data into the Microsoft Graph in the same way as other cloud services do, with rich entity information and relationship navigation.  Use Microsoft Graph to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     </p>
@@ -1010,7 +1010,7 @@ You can browse the Table of Contents (in the left pane of the site) to find the 
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.31562s from unicorn-2076310108-vcsjp">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.20631s from unicorn-1245968991-x3rd2">GitHub</span>, Inc.</li>
         <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
