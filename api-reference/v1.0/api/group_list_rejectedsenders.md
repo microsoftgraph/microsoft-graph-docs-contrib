@@ -1,9 +1,7 @@
 # List rejectedSenders
 Get a list of users or groups that are in the rejectedSenders list for this group. 
 
-Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
-Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise 
-you will get an error.
+Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
