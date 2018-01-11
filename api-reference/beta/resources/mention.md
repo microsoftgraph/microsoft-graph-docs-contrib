@@ -42,7 +42,7 @@ Here is a JSON representation of the resource.
   "application": "string",
   "clientReference": "string",
   "createdBy": {"@odata.type": "microsoft.graph.emailAddress"},
-  "createdDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "createdDateTime": "DateTimeOffset",
   "deepLink": "string",
   "id": "string (identifier)",
   "mentioned": {"@odata.type": "microsoft.graph.emailAddress"},
