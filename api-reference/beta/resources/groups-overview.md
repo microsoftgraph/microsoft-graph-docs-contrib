@@ -56,9 +56,9 @@ To learn more about Office 365 groups and the administrator experiences, see [Le
 
 ## Security groups and mail-enabled security groups
 
-Security groups are for controlling user access to resources. By checking whether or not a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users and other security groups as members.
+Security groups are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users and other security groups as members.
 
-Mail-enabled security groups are used in the same way as security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations will still work here. Learn more in the [Manage mail-enabled security groups Exchange article](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
+Mail-enabled security groups are used in the same way that security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations will still work here. Learn more in the [Manage mail-enabled security groups Exchange article](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
 
 ### Security group example
 
@@ -84,7 +84,7 @@ The following is a JSON representation of a security group.
 ```
 ## Dynamic membership 
 
-All types of groups can have dynamic membership rules which automatically add or remove members from the group based on user properties. For example, a "Marketing employees" group would include every user with the department property set to "Marketing", so that new marketing employees are automatically added to the group and employees who leave the department are automatically removed from the group. This rule can be specified in a "membershipRule" field during group creation as `"membershipRule": 'user.department -eq "Marketing"'` GroupType must also include `"DynamicMembership"`. The following request creates a new Office 365 group for the marketing employees: 
+All types of groups can have dynamic membership rules that automatically add or remove members from the group based on user properties. For example, a "Marketing employees" group would include every user with the department property set to "Marketing", so that new marketing employees are automatically added to the group and employees who leave the department are automatically removed from the group. This rule can be specified in a "membershipRule" field during group creation as `"membershipRule": 'user.department -eq "Marketing"'`. GroupType must also include `"DynamicMembership"`. The following request creates a new Office 365 group for the marketing employees: 
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -103,7 +103,7 @@ POST https://graph.microsoft.com/beta/groups
 }
 ```
 
-Learn more about formulating membershipRules in [advanced rules](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+To learn more about formulating membershipRules, see [Create attribute-based rules for dynamic group membership in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
 > **Note**: Dynamic membership rules requires the tenant to have a license at tier [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) or greater.
 
@@ -113,7 +113,7 @@ Office 365 groups in Yammer are used to facilitate user collaboration through Ya
 
 ## Common use cases
 
-Using Microsoft Graph, you can perform the these common operations and more:
+Using Microsoft Graph, you can perform the following common operations.
 
 | **Use cases**  | **REST resources** | **See also** |
 |:---------------|:--------|:----------|
@@ -121,5 +121,5 @@ Using Microsoft Graph, you can perform the these common operations and more:
 | Create new groups, get existing groups, update the properties on groups, and delete groups. Currently, only security groups and groups in Outlook can be created through the API. | [group](group.md) | [Create new groups](../api/group_post_groups.md) <br/> [List groups](../api/group_list.md) <br/> [Update groups](../api/group_update.md) <br/> [Delete groups](../api/group_delete.md) |
 | **Group membership methods** | | |
 | List the members of a group, and add or remove members. | [user](user.md) <br/> [group](group.md)| [List members](../api/group_list_members.md) <br/> [Add member](../api/group_post_members.md) <br/> [Remove member](../api/group_delete_members.md)|
-| Check if a user is a member of a group, get all the groups the user is a member of. | [user](user.md) <br/> [group](group.md)| [Check member groups](../api/group_checkmembergroups.md) <br/> [Get member groups](../api/group_getmembergroups.md)|
+| Determine whether a user is a member of a group, get all the groups the user is a member of. | [user](user.md) <br/> [group](group.md)| [Check member groups](../api/group_checkmembergroups.md) <br/> [Get member groups](../api/group_getmembergroups.md)|
 | List the owners of a group, and add or remove owners. | [user](user.md) <br/> [group](group.md)| [List owners](../api/group_list_members.md) <br/> [Add member](../api/group_post_members.md) <br/> [Remove member](../api/group_delete_members.md)|
