@@ -1583,14 +1583,14 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update"/>
         </Item>
-        <Item text="macOS LOB app" url="en-us/api-reference/beta/resources/intune_apps_macoslobapp">
+        <Item text="macOS LOB app" url="/en-us/api-reference/beta/resources/intune_apps_macoslobapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_get"/>
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_update"/>
         </Item>
-        <Item text="macOS office suite app" url="en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
+        <Item text="macOS office suite app" url="/en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_get"/>
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_create"/>
@@ -1628,7 +1628,7 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_update"/>
         </Item>
-        <Item text="Microsoft Store for Business app" url="en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp">
+        <Item text="Microsoft Store for Business app" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_get"/>
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_create"/>
@@ -2376,7 +2376,7 @@
         </Item>
         <Item text="App list item" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applistitem"/>
         <Item text="App compliance list item" url="/en-us/api-reference/beta/resources/intune_deviceconfig_appscompliancelistitem"/>
-        <Item text="Audit event" url="en-us/api-reference/beta/resources/intune_auditing_auditevent">
+        <Item text="Audit event" url="/en-us/api-reference/beta/resources/intune_auditing_auditevent">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get"/>
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create"/>
@@ -2583,18 +2583,18 @@
           <Item text="List device configuration user status" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list_deviceconfigurationuserstatus"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_update"/>
         </Item>
-        <Item text="Device management troubleshooting event" url="en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
+        <Item text="Device management troubleshooting event" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get"/>
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update"/>
         </Item>
-        <Item text="Device setup configuration" url="en-us/api-reference/beta/resources/intune_deviceconfig_devicesetupconfiguration">
+        <Item text="Device setup configuration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicesetupconfiguration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_get"/>
         </Item>
-        <Item text="Enrollment troubleshooting event" url="en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
+        <Item text="Enrollment troubleshooting event" url="/en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get"/>
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create"/>
