@@ -1,5 +1,7 @@
 ﻿# managedIOSLobApp resource type
 
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties and inherited properties for Managed iOS Line Of Business apps.
@@ -8,22 +10,16 @@ Inherits from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List managedIOSLobApps](../api/intune_apps_managedioslobapp_list.md)|[managedIOSLobApp](../resources/intune_apps_managedioslobapp.md) collection|List properties and relationships of the [managedIOSLobApp](../resources/intune_apps_managedioslobapp.md) objects.|
 |[Get managedIOSLobApp](../api/intune_apps_managedioslobapp_get.md)|[managedIOSLobApp](../resources/intune_apps_managedioslobapp.md)|Read properties and relationships of the [managedIOSLobApp](../resources/intune_apps_managedioslobapp.md) object.|
 |[Create managedIOSLobApp](../api/intune_apps_managedioslobapp_create.md)|[managedIOSLobApp](../resources/intune_apps_managedioslobapp.md)|Create a new [managedIOSLobApp](../resources/intune_apps_managedioslobapp.md) object.|
 |[Delete managedIOSLobApp](../api/intune_apps_managedioslobapp_delete.md)|None|Deletes a [managedIOSLobApp](../resources/intune_apps_managedioslobapp.md).|
 |[Update managedIOSLobApp](../api/intune_apps_managedioslobapp_update.md)|[managedIOSLobApp](../resources/intune_apps_managedioslobapp.md)|Update the properties of a [managedIOSLobApp](../resources/intune_apps_managedioslobapp.md) object.|
-|[List mobileAppCategories](../api/intune_apps_managedioslobapp_list_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Get the mobileAppCategories from the categories navigation property.|
-|[List mobileAppGroupAssignments](../api/intune_apps_managedioslobapp_list_mobileappgroupassignment.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Get the mobileAppGroupAssignments from the groupAssignments navigation property.|
-|[Get mobileAppInstallSummary](../api/intune_apps_managedioslobapp_get_mobileappinstallsummary.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Get the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) from the installSummary navigation property.|
-|[List mobileAppInstallStatuses](../api/intune_apps_managedioslobapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
-|[List userAppInstallStatuses](../api/intune_apps_managedioslobapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
-|[List mobileAppContents](../api/intune_apps_managedioslobapp_list_mobileappcontent.md)|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|Get the mobileAppContents from the contentVersions navigation property.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -48,12 +44,15 @@ Inherits from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |expirationDateTime|DateTimeOffset|The expiration time.|
+|versionNumber|String|The version number of managed iOS Line of Business (LoB) app.|
+|buildNumber|String|The build number of managed iOS Line of Business (LoB) app.|
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -67,7 +66,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.managedIOSLobApp"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
   "id": "String (identifier)",
@@ -104,9 +103,12 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
     "v8_0": true,
     "v9_0": true,
-    "v10_0": true
+    "v10_0": true,
+    "v11_0": true
   },
-  "expirationDateTime": "String (timestamp)"
+  "expirationDateTime": "String (timestamp)",
+  "versionNumber": "String",
+  "buildNumber": "String"
 }
 ```
 

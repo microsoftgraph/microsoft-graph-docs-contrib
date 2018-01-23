@@ -1,9 +1,16 @@
 # Update calendar
 
-Update the properties of calendar object.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Calendars.ReadWrite*
+Update the properties of of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+or the default calendar of an Office 365 [group](../resources/group.md).
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
+|Application | Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 A user's or group's default [calendar](../resources/calendar.md).
@@ -40,6 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 |name|String|The calendar name.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.
 ## Example
 ##### Request
@@ -51,12 +59,9 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/calendar
 Content-type: application/json
-Content-length: 48
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Social events"
 }
 ```
 ##### Response
@@ -69,14 +74,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/v1.0/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "id":"AAMkADJmMVAAA=",
+    "name":"Social events",
+    "color":"auto",
+    "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "canEdit":true,
+    "owner":{
+        "name":"Samantha Booth",
+        "address":"samanthab@adatum.onmicrosoft.com"
+    }
 }
 ```
 

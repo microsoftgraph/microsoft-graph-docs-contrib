@@ -1,47 +1,38 @@
 ﻿# deviceManagement resource type
 
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Singleton entity that acts as a container for all device management functionality.
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[Get deviceManagement](../api/intune_deviceconfig_devicemanagement_get.md)|[deviceManagement](../resources/intune_deviceconfig_devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.|
 |[Update deviceManagement](../api/intune_deviceconfig_devicemanagement_update.md)|[deviceManagement](../resources/intune_deviceconfig_devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.|
-|[List deviceConfigurations](../api/intune_deviceconfig_devicemanagement_list_deviceconfiguration.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) collection|Get the deviceConfigurations from the deviceConfigurations navigation property.|
-|[Create deviceConfiguration](../api/intune_deviceconfig_devicemanagement_create_deviceconfiguration.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|Create a new [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) by posting to the deviceConfigurations collection.|
-|[List deviceCompliancePolicies](../api/intune_deviceconfig_devicemanagement_list_devicecompliancepolicy.md)|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) collection|Get the deviceCompliancePolicies from the deviceCompliancePolicies navigation property.|
-|[Create deviceCompliancePolicy](../api/intune_deviceconfig_devicemanagement_create_devicecompliancepolicy.md)|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|Create a new [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) by posting to the deviceCompliancePolicies collection.|
-|[Get softwareUpdateStatusSummary](../api/intune_deviceconfig_devicemanagement_get_softwareupdatestatussummary.md)|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|Get the [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) from the softwareUpdateStatusSummary navigation property.|
-|[List cloudPkiSubscriptions](../api/intune_deviceconfig_devicemanagement_list_cloudpkisubscription.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) collection|Get the cloudPkiSubscriptions from the cloudPkiSubscriptions navigation property.|
-|[Create cloudPkiSubscription](../api/intune_deviceconfig_devicemanagement_create_cloudpkisubscription.md)|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md)|Create a new [cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) by posting to the cloudPkiSubscriptions collection.|
-|[Get deviceCompliancePolicyDeviceStateSummary](../api/intune_deviceconfig_devicemanagement_get_devicecompliancepolicydevicestatesummary.md)|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|Get the [deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) from the deviceCompliancePolicyDeviceStateSummary navigation property.|
-|[List complianceSettingStateSummaries](../api/intune_deviceconfig_devicemanagement_list_compliancesettingstatesummary.md)|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) collection|Get the complianceSettingStateSummaries from the complianceSettingStateSummaries navigation property.|
-|[Create complianceSettingStateSummary](../api/intune_deviceconfig_devicemanagement_create_compliancesettingstatesummary.md)|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md)|Create a new [complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) by posting to the complianceSettingStateSummaries collection.|
-|[List deviceCompliancePolicySettingStateSummaries](../api/intune_deviceconfig_devicemanagement_list_devicecompliancepolicysettingstatesummary.md)|[deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) collection|Get the deviceCompliancePolicySettingStateSummaries from the deviceCompliancePolicySettingStateSummaries navigation property.|
-|[Create deviceCompliancePolicySettingStateSummary](../api/intune_deviceconfig_devicemanagement_create_devicecompliancepolicysettingstatesummary.md)|[deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md)|Create a new [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) by posting to the deviceCompliancePolicySettingStateSummaries collection.|
-|[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_devicemanagement_get_deviceconfigurationdevicestatesummary.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Get the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) from the deviceConfigurationDeviceStateSummaries navigation property.|
-|[List cartToClassAssociations](../api/intune_deviceconfig_devicemanagement_list_carttoclassassociation.md)|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) collection|Get the cartToClassAssociations from the cartToClassAssociations navigation property.|
-|[Create cartToClassAssociation](../api/intune_deviceconfig_devicemanagement_create_carttoclassassociation.md)|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md)|Create a new [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) by posting to the cartToClassAssociations collection.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
-|id|String|Not yet documented|
-|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Not yet documented|
+|:---|:---|:---|
+|id|String|Unique Identifier|
+|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
+|maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
+|intuneAccountId|Guid|Intune Account Id for given tenant|
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |deviceConfigurations|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) collection|The device configurations.|
 |deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) collection|The device compliance policies.|
+|deviceSetupConfigurations|[deviceSetupConfiguration](../resources/intune_deviceconfig_devicesetupconfiguration.md) collection|The device setup configurations.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|The software update status summary.|
-|cloudPkiSubscriptions|[cloudPkiSubscription](../resources/intune_deviceconfig_cloudpkisubscription.md) collection|The Cloud Pki Subscriptions profile.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
-|complianceSettingStateSummaries|[complianceSettingStateSummary](../resources/intune_deviceconfig_compliancesettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
-|deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device compliance state summary for this account.|
+|deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device configuration device state summary for this account.|
+|deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune_deviceconfig_deviceconfigurationuserstatesummary.md)|The device configuration user state summary for this account.|
 |cartToClassAssociations|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) collection|The Cart To Class Associations.|
+|iosUpdateStatuses|[iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) collection|The IOS software update installation statuses for this account.|
+|ndesConnectors|[ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) collection|The collection of Ndes connectors for this account.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -51,15 +42,20 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.deviceManagement"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
   "id": "String (identifier)",
   "settings": {
     "@odata.type": "microsoft.graph.deviceManagementSettings",
+    "windowsCommercialId": "String",
+    "windowsCommercialIdLastModifiedTime": "String (timestamp)",
     "deviceComplianceCheckinThresholdDays": 1024,
-    "isScheduledActionEnabled": true
-  }
+    "isScheduledActionEnabled": true,
+    "secureByDefault": true
+  },
+  "maximumDepTokens": 1024,
+  "intuneAccountId": "<Unknown Primitive Type Edm.Guid>"
 }
 ```
 

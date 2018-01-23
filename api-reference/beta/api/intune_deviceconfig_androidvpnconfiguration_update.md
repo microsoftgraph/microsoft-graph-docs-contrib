@@ -1,35 +1,42 @@
 ﻿# Update androidVpnConfiguration
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [androidVpnConfiguration](../resources/intune_deviceconfig_androidvpnconfiguration.md) object.
 ## Prerequisites
-One of the following **scopes** is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementConfiguration.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-PATCH /deviceConfigurationAssignments/{deviceConfigurationAssignmentsId}/deviceConfiguration/
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
-|Authorization|Bearer {token}. Required.|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a [androidVpnConfiguration](../resources/intune_deviceconfig_androidvpnconfiguration.md) object.
-The following table shows the properties that are required when you create a [androidVpnConfiguration](../resources/intune_deviceconfig_androidvpnconfiguration.md).
+In the request body, supply a JSON representation for the [androidVpnConfiguration](../resources/intune_deviceconfig_androidvpnconfiguration.md) object.
+
+The following table shows the properties that are required when you create the [androidVpnConfiguration](../resources/intune_deviceconfig_androidvpnconfiguration.md).
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -53,10 +60,10 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 747
+Content-length: 782
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -72,6 +79,7 @@ Content-length: 747
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
       "ipAddressOrFqdn": "Ip Address Or Fqdn value",
+      "address": "Address value",
       "isDefaultServer": true
     }
   ],
@@ -89,10 +97,10 @@ Content-length: 747
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 917
+Content-Length: 952
 
 {
   "@odata.type": "#microsoft.graph.androidVpnConfiguration",
@@ -111,6 +119,7 @@ Content-Length: 917
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
       "ipAddressOrFqdn": "Ip Address Or Fqdn value",
+      "address": "Address value",
       "isDefaultServer": true
     }
   ],

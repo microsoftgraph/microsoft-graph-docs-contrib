@@ -1,12 +1,19 @@
 ﻿# Update managedDevice
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [managedDevice](../resources/intune_devicefe_manageddevice.md) object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementManagedDevices.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -14,15 +21,15 @@ One of the following **scopes** is required to execute this API:
 -->
 ```http
 PATCH /managedDevices/{managedDevicesId}
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice/
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/user//managedDevices/{managedDeviceId}
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runStates/{deviceManagementScriptStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
+PATCH /users/{usersId}/managedDevices/{managedDeviceId}
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice//detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -45,7 +52,6 @@ The following table shows the properties that are required when you create a [ma
 |deviceType|String|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `windowsBlue`, `windowsPhoneBlue`, `blackberry`, `palm`, `fakeDevice`, `unknown`.|
 |complianceState|String|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
-|managementAgents|Int32|Management channel of the device. Intune, EAS, etc.|
 |managementAgent|String|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configManagerClient`, `unknown`.|
 |osVersion|String|Operating system version of the device.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated.|
@@ -70,19 +76,21 @@ The following table shows the properties that are required when you create a [ma
 |manufacturer|String|Manufacturer of the device|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
-
-
+|serialNumber|String|SerialNumber|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune_devicefe_manageddevice.md) object in the response body.
 
 ## Example
-### Request
+
+##### Request
+
 Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}
 Content-type: application/json
-Content-length: 2802
+Content-length: 2818
 
 {
   "userId": "User Id value",
@@ -132,7 +140,6 @@ Content-length: 2802
   "deviceType": "windowsRT",
   "complianceState": "compliant",
   "jailBroken": "Jail Broken value",
-  "managementAgents": 0,
   "managementAgent": "mdm",
   "osVersion": "Os Version value",
   "easActivated": true,
@@ -156,16 +163,18 @@ Content-length: 2802
   "model": "Model value",
   "manufacturer": "Manufacturer value",
   "imei": "Imei value",
-  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
+  "serialNumber": "Serial Number value"
 }
 ```
 
-### Response
+##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2903
+Content-Length: 2919
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -217,7 +226,6 @@ Content-Length: 2903
   "deviceType": "windowsRT",
   "complianceState": "compliant",
   "jailBroken": "Jail Broken value",
-  "managementAgents": 0,
   "managementAgent": "mdm",
   "osVersion": "Os Version value",
   "easActivated": true,
@@ -241,7 +249,8 @@ Content-Length: 2903
   "model": "Model value",
   "manufacturer": "Manufacturer value",
   "imei": "Imei value",
-  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
+  "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
+  "serialNumber": "Serial Number value"
 }
 ```
 

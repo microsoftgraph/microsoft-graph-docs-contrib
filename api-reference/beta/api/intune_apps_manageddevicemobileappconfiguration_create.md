@@ -1,25 +1,32 @@
 ﻿# Create managedDeviceMobileAppConfiguration
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | DeviceManagementApps.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-POST /iosMobileAppConfigurations/
+POST /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## Request headers
 |Header|Value|
 |---|---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
@@ -29,16 +36,12 @@ The following table shows the properties that are required when you create a man
 |Property|Type|Description|
 |---|---|---|
 |id|String|Key of the entity.|
-|settingXml|String|mdm app configuration.|
-|settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items.|
 |targetedMobileApps|String collection|the associated app.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |description|String|Admin provided description of the Device Configuration.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
 |displayName|String|Admin provided name of the device configuration.|
 |version|Int32|Version of the device configuration.|
-
-
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) object in the response body.
@@ -47,21 +50,12 @@ If successful, this method returns a `201 Created` response code and a [managedD
 ### Request
 Here is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/iosMobileAppConfigurations/
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 594
+Content-length: 304
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfiguration",
-  "settingXml": "Setting Xml value",
-  "settings": [
-    {
-      "@odata.type": "microsoft.graph.appConfigurationSettingItem",
-      "appConfigKey": "App Config Key value",
-      "appConfigKeyType": "integerType",
-      "appConfigKeyValue": "App Config Key Value value"
-    }
-  ],
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],
@@ -77,20 +71,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 702
+Content-Length: 412
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfiguration",
   "id": "c60e7591-7591-c60e-9175-0ec691750ec6",
-  "settingXml": "Setting Xml value",
-  "settings": [
-    {
-      "@odata.type": "microsoft.graph.appConfigurationSettingItem",
-      "appConfigKey": "App Config Key value",
-      "appConfigKeyType": "integerType",
-      "appConfigKeyValue": "App Config Key Value value"
-    }
-  ],
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],

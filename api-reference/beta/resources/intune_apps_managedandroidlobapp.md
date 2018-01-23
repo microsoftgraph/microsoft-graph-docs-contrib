@@ -1,5 +1,7 @@
 ﻿# managedAndroidLobApp resource type
 
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties and inherited properties for Managed Android Line Of Business apps.
@@ -8,22 +10,16 @@ Inherits from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List managedAndroidLobApps](../api/intune_apps_managedandroidlobapp_list.md)|[managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md) collection|List properties and relationships of the [managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md) objects.|
 |[Get managedAndroidLobApp](../api/intune_apps_managedandroidlobapp_get.md)|[managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md)|Read properties and relationships of the [managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md) object.|
 |[Create managedAndroidLobApp](../api/intune_apps_managedandroidlobapp_create.md)|[managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md)|Create a new [managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md) object.|
 |[Delete managedAndroidLobApp](../api/intune_apps_managedandroidlobapp_delete.md)|None|Deletes a [managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md).|
 |[Update managedAndroidLobApp](../api/intune_apps_managedandroidlobapp_update.md)|[managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md)|Update the properties of a [managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md) object.|
-|[List mobileAppCategories](../api/intune_apps_managedandroidlobapp_list_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|Get the mobileAppCategories from the categories navigation property.|
-|[List mobileAppGroupAssignments](../api/intune_apps_managedandroidlobapp_list_mobileappgroupassignment.md)|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|Get the mobileAppGroupAssignments from the groupAssignments navigation property.|
-|[Get mobileAppInstallSummary](../api/intune_apps_managedandroidlobapp_get_mobileappinstallsummary.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Get the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) from the installSummary navigation property.|
-|[List mobileAppInstallStatuses](../api/intune_apps_managedandroidlobapp_list_mobileappinstallstatus.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|Get the mobileAppInstallStatuses from the deviceStatuses navigation property.|
-|[List userAppInstallStatuses](../api/intune_apps_managedandroidlobapp_list_userappinstallstatus.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|Get the userAppInstallStatuses from the userStatuses navigation property.|
-|[List mobileAppContents](../api/intune_apps_managedandroidlobapp_list_mobileappcontent.md)|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|Get the mobileAppContents from the contentVersions navigation property.|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -46,12 +42,15 @@ Inherits from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp
 |identityVersion|String|The identity version. Inherited from [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)|
 |identityName|String|The Identity Name.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|versionName|String|The version name of managed Android Line of Business (LoB) app.|
+|versionCode|String|The version code of managed Android Line of Business (LoB) app.|
 
 ## Relationships
 |Relationship|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |groupAssignments|[mobileAppGroupAssignment](../resources/intune_apps_mobileappgroupassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -65,7 +64,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.managedAndroidLobApp"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
   "id": "String (identifier)",
@@ -103,7 +102,9 @@ Here is a JSON representation of the resource.
     "v4_4": true,
     "v5_0": true,
     "v5_1": true
-  }
+  },
+  "versionName": "String",
+  "versionCode": "String"
 }
 ```
 
