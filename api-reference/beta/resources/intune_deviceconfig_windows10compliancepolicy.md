@@ -38,6 +38,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |requireHealthyDeviceReport|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |osMinimumVersion|String|Minimum Windows 10 version.|
 |osMaximumVersion|String|Maximum Windows 10 version.|
+|minimumUpdateAutoInstallClassification|String|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |mobileOsMinimumVersion|String|Minimum Windows Phone version.|
 |mobileOsMaximumVersion|String|Maximum Windows Phone version.|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is enabled.|
@@ -51,6 +52,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_deviceco
 |defenderVersion|String|Require Windows Defender Antimalware minimum version on Windows devices.|
 |signatureOutOfDate|Boolean|Require Windows Defender Antimalware Signature to be up to date on Windows devices.|
 |rtpEnabled|Boolean|Require Windows Defender Antimalware Real-Time Protection on Windows devices.|
+|validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune_deviceconfig_operatingsystemversionrange.md) collection|The valid operating system build ranges on Windows devices. This collection can contain a maximum of 10000 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -93,6 +95,7 @@ Here is a JSON representation of the resource.
   "requireHealthyDeviceReport": true,
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",
+  "minimumUpdateAutoInstallClassification": "String",
   "mobileOsMinimumVersion": "String",
   "mobileOsMaximumVersion": "String",
   "earlyLaunchAntiMalwareDriverEnabled": true,
@@ -105,7 +108,15 @@ Here is a JSON representation of the resource.
   "defenderEnabled": true,
   "defenderVersion": "String",
   "signatureOutOfDate": true,
-  "rtpEnabled": true
+  "rtpEnabled": true,
+  "validOperatingSystemBuildRanges": [
+    {
+      "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+      "description": "String",
+      "lowestVersion": "String",
+      "highestVersion": "String"
+    }
+  ]
 }
 ```
 

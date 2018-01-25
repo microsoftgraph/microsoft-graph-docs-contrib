@@ -8,7 +8,7 @@ The education APIs include rostering resources and assignments resources that yo
 
 ## Authorization
 
-To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](../../../concepts/permissions_reference.md#education-graph-permissions). 
+To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](../../../concepts/permissions_reference.md#education-permissions). 
 
 ### App permissions to enable school IT admins to consent 
 
@@ -89,6 +89,24 @@ The following are some common use cases for the assignment-related education API
 |Create assignments|An external system can create an assignment for the class and attach resources to the assignment.|[Create assignment](../api/educationassignment_post_resources.md)|
 |Read assignment information|An analytics application can get information about assignments and student submissions, including dates and grades.|[Get assignment](../api/educationassignment_get.md)|
 |Track student submissions|Your app can provide a teacher dashboard that shows how many submissions from students need to be graded.|[Submission resource](educationsubmission.md)|
+
+## School data sync management
+
+[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing roster data from student information systems with Azure Active Directory (Azure AD) and Office 365. You can use the school data sync management APIs in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
+
+The school data sync management APIs support the following scenarios:
+
+- [List synchronization profiles](../api/educationsynchronizationprofile_list.md)
+- [Get synchronization profile](../api/educationsynchronizationprofile_get.md)
+- [Create synchronization profile](../api/educationsynchronizationprofile_post.md)
+- [Delete synchronization profile](../api/educationsynchronizationprofile_delete.md)
+- [Pause an ongoing sync](../api/educationsynchronizationprofile_pause.md)
+- [Resume a paused sync](../api/educationsynchronizationprofile_resume.md)
+- [Reset a sync](../api/educationsynchronizationprofile_reset.md)
+- [Start sync for uploaded files](../api/educationsynchronizationprofile_start.md) 
+- [Get an upload URL](../api/educationsynchronizationprofile_uploadurl.md)
+- [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md)
+- [Get synchronization errors](../api/educationsynchronizationerrors_get.md)
 
 
 ## Next steps

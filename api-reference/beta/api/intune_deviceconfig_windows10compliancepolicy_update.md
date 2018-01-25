@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |requireHealthyDeviceReport|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |osMinimumVersion|String|Minimum Windows 10 version.|
 |osMaximumVersion|String|Maximum Windows 10 version.|
+|minimumUpdateAutoInstallClassification|String|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |mobileOsMinimumVersion|String|Minimum Windows Phone version.|
 |mobileOsMaximumVersion|String|Maximum Windows Phone version.|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is enabled.|
@@ -68,6 +69,7 @@ The following table shows the properties that are required when you create the [
 |defenderVersion|String|Require Windows Defender Antimalware minimum version on Windows devices.|
 |signatureOutOfDate|Boolean|Require Windows Defender Antimalware Signature to be up to date on Windows devices.|
 |rtpEnabled|Boolean|Require Windows Defender Antimalware Real-Time Protection on Windows devices.|
+|validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune_deviceconfig_operatingsystemversionrange.md) collection|The valid operating system build ranges on Windows devices. This collection can contain a maximum of 10000 elements.|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1143
+Content-length: 1484
 
 {
   "description": "Description value",
@@ -99,6 +101,7 @@ Content-length: 1143
   "requireHealthyDeviceReport": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
   "mobileOsMinimumVersion": "Mobile Os Minimum Version value",
   "mobileOsMaximumVersion": "Mobile Os Maximum Version value",
   "earlyLaunchAntiMalwareDriverEnabled": true,
@@ -111,7 +114,15 @@ Content-length: 1143
   "defenderEnabled": true,
   "defenderVersion": "Defender Version value",
   "signatureOutOfDate": true,
-  "rtpEnabled": true
+  "rtpEnabled": true,
+  "validOperatingSystemBuildRanges": [
+    {
+      "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+      "description": "Description value",
+      "lowestVersion": "Lowest Version value",
+      "highestVersion": "Highest Version value"
+    }
+  ]
 }
 ```
 
@@ -120,7 +131,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1315
+Content-Length: 1656
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -142,6 +153,7 @@ Content-Length: 1315
   "requireHealthyDeviceReport": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
   "mobileOsMinimumVersion": "Mobile Os Minimum Version value",
   "mobileOsMaximumVersion": "Mobile Os Maximum Version value",
   "earlyLaunchAntiMalwareDriverEnabled": true,
@@ -154,7 +166,15 @@ Content-Length: 1315
   "defenderEnabled": true,
   "defenderVersion": "Defender Version value",
   "signatureOutOfDate": true,
-  "rtpEnabled": true
+  "rtpEnabled": true,
+  "validOperatingSystemBuildRanges": [
+    {
+      "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+      "description": "Description value",
+      "lowestVersion": "Lowest Version value",
+      "highestVersion": "Highest Version value"
+    }
+  ]
 }
 ```
 
