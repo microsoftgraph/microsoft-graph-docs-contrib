@@ -2,16 +2,15 @@
 
 ## Properties
 
-| Property                    | Type   | Description                              |
-| :-------------------------  | :----- | ---------------------------------------- |
-| reportRefreshDate           | Date   | The latest date of the content.          |
-| productType                 | String | The product type such as "Office 365 ProPlus", "Project Client", "Visio Pro for Office 365". |
-| windows                     | Int64  | The activation count on Windows. This number includes every single activation on any Windows machine. |
-| mac                         | Int64  | The activation count on Mac OS.          |
-| android                     | Int64  | The activation count on Android device.  |
-| ios                         | Int64  | The activation count on iOS.             |
-| windows10Mobile             | Int64  | The activation count on Windows 10 mobile. |
-| activatedOnSharedComputer   | Boolean| True if the user used the product on shared computer before. |
+| Property          | Type   | Description                              |
+| :---------------- | :----- | ---------------------------------------- |
+| reportRefreshDate | Date   | The latest date of the content.          |
+| productType       | String | The product type such as "Office 365 ProPlus", "Project Client", "Visio Pro for Office 365". |
+| windows           | Int64  | The activation count on Windows. This number includes every single activation on any Windows machine. |
+| mac               | Int64  | The activation count on Mac OS.          |
+| android           | Int64  | The activation count on Android device.  |
+| ios               | Int64  | The activation count on iOS.             |
+| windows10Mobile   | Int64  | The activation count on Windows 10 mobile. |
 
 ## JSON representation
 
@@ -30,7 +29,6 @@ The following is a JSON representation of the resource.
   "mac": 1024, 
   "android": 1024, 
   "ios": 1024, 
-  "windows10Mobile": 1024,
-  "activatedOnSharedComputer": true
+  "windows10Mobile": 1024
 }
 ```

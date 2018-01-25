@@ -51,7 +51,6 @@ The CSV file has the following headers for columns.
 - Android
 - iOS
 - Windows 10 Mobile
-- Activated On Shared Computer
 
 ### JSON
 
@@ -100,7 +99,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Product Type,Windows,Mac,Android,iOS,Windows 10 Mobile, Activated On Shared Computer
+Report Refresh Date,Product Type,Windows,Mac,Android,iOS,Windows 10 Mobile
 ```
 
 ### JSON
@@ -147,8 +146,7 @@ Content-Length: 268
       "mac": 576, 
       "android": 358, 
       "ios": 1452, 
-      "windows10Mobile": 2309,
-      "activatedOnSharedComputer": true
+      "windows10Mobile": 2309
     }
   ]
 }
