@@ -23,6 +23,7 @@ The **plannerPlan** resource represents a plan in Office 365. A plan can be owne
 |owner|String|ID of the [Group](group.md) that owns the plan. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
 |title|String|Required. Title of the plan.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
+|contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Additional user experiences in which this plan is used, represented as [plannerPlanContext](plannerPlanContext.md) entries.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -45,6 +46,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "contexts": {"@odata.type": "microsoft.graph.plannerPlanContextCollection"},
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",

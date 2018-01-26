@@ -4,6 +4,18 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## February 2017
+
+### Microsoft Planner APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entities:<br/>[plannerPlanContext](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanContext)<br/>[plannerPlanContextDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanContextDetails)<br/>[plannerFavoritePlanReference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerFavoritePlanReference)<br/>[plannerRecentPlanReference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerRecentPlanReference)|
+|Addition|Beta|Added `favoritePlanReferences` and `recentPlanReferences` properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity |
+|Addition|Beta|Added `favoritePlans` and `recentPlans` navigation properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity |
+|Addition|Beta|Added `contexts` property to [plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) entity |
+|Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity |
+
 ## December 2017
 
 ### Microsoft Intune APIs
