@@ -34,7 +34,7 @@ If successful, this method returns a `200 OK` response code and an [administrati
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_administrativeUnit"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/education/schools/2961761D-8094-4183-A9F6-8E36E966C7D9/administrativeUnit
