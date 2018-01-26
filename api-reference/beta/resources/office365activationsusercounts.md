@@ -8,7 +8,7 @@
 | productType              | String | The product type such as "Office 365 ProPlus", "Project Client", "Visio Pro for Office 365". |
 | assigned                 | Int64  | The number of users have been assigned for the product license. |
 | activated                | Int64  | The number of users have activated the product. |
-| sharedComputerActivation | Int64  | The number of users have used the product on shared computer. |
+| sharedComputerActivation | Int64  | The number of users have used the product on a shared computer. |
 
 ## JSON representation
 
