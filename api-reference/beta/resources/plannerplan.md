@@ -46,7 +46,18 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "contexts": {"@odata.type": "microsoft.graph.plannerPlanContextCollection"},
+  "contexts": {
+    "48#19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype": {
+        "@odata.type": "#microsoft.graph.plannerPlanContext",
+        "associationType": "Board",
+        "createdDateTime": "2015-10-14T00:57:28.4698344Z",
+        "displayNameSegments": [
+            "Finance Team",
+            "Budget Plans"
+        ],
+        "ownerAppId": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346"
+    }
+  },
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",

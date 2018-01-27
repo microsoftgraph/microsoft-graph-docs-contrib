@@ -30,6 +30,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "associationType": "Board",
+  "createdDateTime": "2015-10-14T00:57:28.4698344Z",
   "displayNameSegments": [
     "Finance Team",
     "Budget Plans"

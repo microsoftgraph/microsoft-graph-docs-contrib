@@ -43,7 +43,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "favoritePlanReferences": {
-    "@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"
+    "@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection",
     "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
       "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
       "orderHint": "8586866870001551087",

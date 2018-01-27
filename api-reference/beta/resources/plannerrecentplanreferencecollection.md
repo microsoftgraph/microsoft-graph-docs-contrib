@@ -9,7 +9,35 @@ Adding new references to this collection will automatically remove oldest entrie
 
 ## Properties
 Properties of an Open Type can be defined by the client. In this case, the client should provide id values of [plannerPlan](plannerPlan.md) resources as properties and their values must be [plannerRecentPlanReference](plannerRecentPlanReference.md) objects. Example is shown below. To remove an item in the favorites list, set the value of the property to `null`.
-An example json structure is available in [plannerUser](planneruser.md) topic.
+
+
+## JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection"
+}-->
+
+```json
+{
+  "7oTB5aMIAE2rVo-1N-L7RmQAGX2q": {
+    "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+    "lastAccessedDateTime": "2017-12-02T22:49:46.155Z",
+    "planTitle": "Purchase Workflow"
+  },
+  "iKNMHkk3vEWpSF7F7iZWIGQAAMMw": {
+    "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+    "lastAccessedDateTime": "2017-12-03T21:59:28.975Z",
+    "planTitle": "New Year's Office Party"
+  }
+}
+```
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

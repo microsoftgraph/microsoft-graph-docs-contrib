@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a list of [plannerPlans](plannerPlan.md) recently viewed by a user. Recently viewed plans canbe updated by modifying the [plannerUser](plannerUser.md) resource.
+Retrieve a list of [plannerPlans](../resources/plannerPlan.md) recently viewed by a user. Recently viewed plans canbe updated by modifying the [plannerUser](../resources/plannerUser.md) resource.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -50,7 +50,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 918
+Content-length: 980
 
 {
   "value": [
@@ -71,6 +71,7 @@ Content-length: 918
         "48#19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype": {
           "@odata.type": "#microsoft.graph.plannerPlanContext",
             "associationType": "Board",
+            "createdDateTime": "2015-10-14T00:57:28.4698344Z",
             "displayNameSegments": [
               "Finance Team",
               "Budget Plans"
