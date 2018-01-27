@@ -50,31 +50,35 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 531
+Content-length: 918
 
 {
   "value": [
     {
+      "@odata.etag": "W/\"JzEtUGxhbiAgQEBAQEBAQEBAQEBAQEBDXCc=\"",
       "createdBy": {
-        "application": {
-          "id": "id-value",
-          "displayName": "displayName-value"
-        },
-        "device": {
-          "id": "id-value",
-          "displayName": "displayName-value"
-        },
         "user": {
-          "id": "id-value",
-          "displayName": "displayName-value"
+          "id": "dd8a8379-1ac1-4eee-861d-ec15f6fa3611"
+        },
+        "application": {
+          "id": "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3"
         }
       },
-      "createdDateTime": "datetime-value",
-      "owner": "owner-value",
-      "title": "title-value",
+      "createdDateTime": "2015-10-14T00:57:28.4698344Z",
+      "owner": "eacd01dd-84cc-4c12-bd8a-9a33e5aeed11",
+      "title": "Budget Planning (2016)",
       "contexts": {
+        "48#19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype": {
+          "@odata.type": "#microsoft.graph.plannerPlanContext",
+            "associationType": "Board",
+            "displayNameSegments": [
+              "Finance Team",
+              "Budget Plans"
+            ],
+            "ownerAppId": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346"
+        }
       },
-      "id": "id-value"
+      "id": "uZWtCtli30CGoWLIWSat1mQAC0ai"
     }
   ]
 }

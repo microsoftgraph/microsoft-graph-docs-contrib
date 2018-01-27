@@ -38,7 +38,8 @@ If successful, this method returns a `200 OK` response code and updated [planner
 This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
 ## Example
 ##### Request
-Here is an example of the request.
+Here is an example of the request. This request adds the plan "Next Release Discussion" with id "jd8S5gOaFk2S8aWCIAJz42QAAxtD" as a favorite for the user, and removes plan with id "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" from the favorite plans list.
+Additionally, it updates the last view time of the plan "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
 <!-- {
   "blockType": "request",
   "name": "update_planneruser"
@@ -46,12 +47,24 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/planner
 Content-type: application/json
-Content-length: 70
+Content-length: 504
+If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 
 {
   "favoritePlanReferences": {
+    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
+      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
+      "orderHint": " !",
+      "planTitle": "Next Release Discussion"
+    },
+    "7oTB5aMIAE2rVo-1N-L7RmQAGX2q": null
   },
   "recentPlanReferences": {
+    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
+      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+      "lastAccessedDateTime": "2018-01-02T22:49:46.155Z",
+      "planTitle": "Next Release Discussion"
+    }
   }
 }
 ```
@@ -65,14 +78,35 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 90
+Content-length: 983
 
 {
+  "@odata.etag": "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWDf=\"",
   "favoritePlanReferences": {
+    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
+      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
+      "orderHint": "8586866870001551087",
+      "planTitle": "Next Release Discussion"
+    },
+    "uZWtCtli30CGoWLIWSat1mQAC0ai": {
+      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
+      "orderHint": "8586888705198093378",
+      "planTitle": "Product Support"
+    }
   },
   "recentPlanReferences": {
+    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
+      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+      "lastAccessedDateTime": "2018-01-02T22:49:46.155Z",
+      "planTitle": "Next Release Discussion"
+    },
+    "XYE5pqNJu0uuRC2PM4ZQrmQAF2Pn": {
+      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+      "lastAccessedDateTime": "2018-01-01T19:39:17.57Z",
+      "planTitle": "Success Metrics"
+    }
   },
-  "id": "id-value"
+  "id": "-YPnMJRiIUSKFyaVjYEkBWQAAc47"
 }
 ```
 

@@ -42,9 +42,38 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "favoritePlanReferences": {"@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"},
-  "id": "String (identifier)",
-  "recentPlanReferences": {"@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection"}
+  "favoritePlanReferences": {
+    "@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"
+    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
+      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
+      "orderHint": "8586866870001551087",
+      "planTitle": "Customer reviews"
+    },
+    "uZWtCtli30CGoWLIWSat1mQAC0ai": {
+      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
+      "orderHint": "8586848705198093378",
+      "planTitle": "Order Management (December 2017)"
+    }
+  },
+  "id": "-YPnMJRiIUSKFyaVjYEkBWQAAc47",
+  "recentPlanReferences": {
+    "@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection",
+    "7oTB5aMIAE2rVo-1N-L7RmQAGX2q": {
+      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+      "lastAccessedDateTime": "2017-12-02T22:49:46.155Z",
+      "planTitle": "Purchase Workflow"
+    },
+    "iKNMHkk3vEWpSF7F7iZWIGQAAMMw": {
+      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+      "lastAccessedDateTime": "2017-12-03T21:59:28.975Z",
+      "planTitle": "New Year's Office Party"
+    },
+    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
+      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+      "lastAccessedDateTime": "2017-12-20T02:28:09.621Z",
+      "planTitle": "Customer reviews"
+    }
+  }
 }
 
 ```

@@ -29,10 +29,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "associationType": "String",
-  "createdDateTime": "String (timestamp)",
-  "displayNameSegments": ["String"],
-  "ownerAppId": "String"
+  "associationType": "Board",
+  "displayNameSegments": [
+    "Finance Team",
+    "Budget Plans"
+  ],
+  "ownerAppId": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346"
 }
 
 ```

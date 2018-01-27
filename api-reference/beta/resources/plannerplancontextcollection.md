@@ -9,7 +9,8 @@ It is part of the [plannerPlan](plannerPlan.md) object. The value in the propert
 
 ## Properties
 Properties of an Open Type can be defined by the client. In this case, the client should use a distinctive identifier that represents the external context as the property name. 
-The property values must be [plannerPlanContext](plannerPlanContext.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%` so they need to be encoded. Example is shown below. To remove an item in the favorites list, set the value of the property to `null`.
+The property values must be [plannerPlanContext](plannerPlanContext.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%` so they need to be encoded. To remove an item in the favorites list, set the value of the property to `null`.
+An example json structure is available in [plannerPlan](plannerplan.md) topic.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
