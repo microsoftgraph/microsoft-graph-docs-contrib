@@ -6,11 +6,13 @@ The **plannerFavoritePlanReference** resource type repesents a reference to a [p
 Clients should note that there can be **plannerFavoritePlanReference** entries can reference **plannerPlans** that are deleted, the user can no longer access, or have been updated with a different title.
 It is recommended for the clients to notify users when there are discrepancies and keep the entries up to date.
 
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner_order_hint_format.md).|
 |planTitle|String|Title of the plan at the time the user marked it as favorite.|
+
 
 ## JSON representation
 

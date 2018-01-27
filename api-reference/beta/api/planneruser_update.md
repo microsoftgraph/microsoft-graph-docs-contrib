@@ -29,8 +29,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|favoritePlanReferences|plannerFavoritePlanReferenceCollection|Changes to the collection containing the references to the plans that the user has marked as a favorite.|
-|recentPlanReferences|plannerRecentPlanReferenceCollection|Changes to the collection containing the references to the plans that the user has recently viewed.|
+|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|Changes to the collection containing the references to the plans that the user has marked as a favorite.|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerRecentPlanReferenceCollection.md)|Changes to the collection containing the references to the plans that the user has recently viewed.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [plannerUser](../resources/planneruser.md) object in the response body.
@@ -78,10 +78,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 983
+Content-length: 979
 
 {
-  "@odata.etag": "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWDf=\"",
   "favoritePlanReferences": {
     "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
       "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",

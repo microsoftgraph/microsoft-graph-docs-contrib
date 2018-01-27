@@ -26,12 +26,12 @@ Here is a JSON representation of the resource.
 ```json
 {
   "7oTB5aMIAE2rVo-1N-L7RmQAGX2q": {
-    "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+    "@odata.type": "microsoft.graph.plannerRecentPlanReference",
     "lastAccessedDateTime": "2017-12-02T22:49:46.155Z",
     "planTitle": "Purchase Workflow"
   },
   "iKNMHkk3vEWpSF7F7iZWIGQAAMMw": {
-    "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+    "@odata.type": "microsoft.graph.plannerRecentPlanReference",
     "lastAccessedDateTime": "2017-12-03T21:59:28.975Z",
     "planTitle": "New Year's Office Party"
   }

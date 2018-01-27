@@ -53,7 +53,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 980
+Content-length: 979
 
 {
   "value": [
@@ -70,18 +70,6 @@ Content-length: 980
       "createdDateTime": "2015-10-14T00:57:28.4698344Z",
       "owner": "eacd01dd-84cc-4c12-bd8a-9a33e5aeed11",
       "title": "Budget Planning (2016)",
-      "contexts": {
-        "48#19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype": {
-          "@odata.type": "#microsoft.graph.plannerPlanContext",
-            "associationType": "Board",
-            "createdDateTime": "2015-10-14T00:57:28.4698344Z",
-            "displayNameSegments": [
-              "Finance Team",
-              "Budget Plans"
-            ],
-            "ownerAppId": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346"
-        }
-      },
       "id": "uZWtCtli30CGoWLIWSat1mQAC0ai"
     }
   ]
