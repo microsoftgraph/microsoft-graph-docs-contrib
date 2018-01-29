@@ -11,6 +11,84 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:---|:---|:---|
 |Addition|Beta|Added extra navigation properties and improve filtering support for [roster API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/education-overview).|
 
+### Microsoft Intune APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new entities:<br/>[deviceManagementScriptAssignment](../api-reference/beta/resources/intune_devices_devicemanagementscriptassignment)<br/>[iosCertificateProfile](../resources/intune_deviceconfig_ioscertificateprofile)<br/>[windowsInformationProtectionNetworkLearningSummary](../api-reference/beta/resources/intune_wip_windowsinformationprotectionnetworklearningsummary)<br/>|
+|Addition|Beta|Added new complex types:<br/>[revokeAppleVppLicensesActionResult](../api-reference/beta/resources/intune_devices_revokeapplevpplicensesactionresult)<br/>[vppTokenRevokeLicensesActionResult](../api-reference/beta/resources/intune_onboarding_vpptokenrevokelicensesactionresult)<br/>|
+|Addition|Beta|Added the [revokeToken](../api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketoken.md) action on [androidForWorkEnrollmentProfile](../api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile) |
+|Addition|Beta|Added the [assign](../api-reference/beta/api/intune_apps_mobileapp_assign.md) action on [mobileApp](../api-reference/beta/resources/intune_apps_mobileapp) |
+|Addition|Beta|Added the [assign](../api-reference/beta/api/intune_devices_devicemanagementscript_assign.md) action on [deviceManagementScript](../api-reference/beta/resources/intune_devices_devicemanagementscript) |
+|Addition|Beta|Added the [revokeAppleVppLicenses](../api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses.md) action on [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Addition|Beta|Added the [assign](../api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign.md) action on [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy) |
+|Addition|Beta|Added the [revokeLicenses](../api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses.md) action on [vppToken](../api-reference/beta/resources/intune_onboarding_vpptoken) |
+|Addition|Beta|Added the [wipeManagedAppRegistrationsByDeviceTag](../api-reference/beta/api/intune_mam_user_wipemanagedappregistrationsbydevicetag.md) action on [user](../api-reference/beta/resources/intune_devices_user) |
+|Addition|Beta|Added the [assign](../api-reference/beta/api/intune_books_managedebook_assign.md) action on [managedEBook](../api-reference/beta/resources/intune_books_managedebook) |
+|Addition|Beta|Added the [getEffectiveDeviceEnrollmentConfigurations](../api-reference/beta/api/intune_onboarding_user_geteffectivedeviceenrollmentconfigurations.md) function on [user](../api-reference/beta/resources/intune_devices_user) |
+|Deletion|Beta|Removed the following entities:<br/>**appReportingOverviewStatus**<br/>**complianceSettingStateSummary**<br/>**deviceConfigurationUserStateSummary**<br/>**eBookGroupAssignment**<br/>**eBookVppGroupAssignment**<br/>**mobileAppGroupAssignment**<br/>**mobileAppVppGroupAssignment**<br/>|
+|Deletion|Beta|Removed the following complex types:<br/>**androidForWorkAppConfigurationExample**<br/>**androidForWorkAppConfigurationExampleJson**<br/>**appInstallationFailure**<br/>**appsComplianceListItem**<br/>**defaultDeviceEnrollmentRestrictions**<br/>**defaultDeviceEnrollmentWindowsHelloForBusinessSettings**<br/>**deviceEnrollmentPlatformRestrictions**<br/>|
+|Change|Beta|Added the **securityRequireVerifyApps**, **securityRequireSafetyNetAttestationBasicIntegrity**, **securityRequireSafetyNetAttestationCertifiedDevice**, **securityRequireGooglePlayServices**, **securityRequireUpToDateSecurityProviders** and **securityRequireCompanyPortalAppIntegrity** properties to the [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy) entity|
+|Change|Beta|Added the **packageId** property to the [androidForWorkApp](../api-reference/beta/resources/intune_apps_androidforworkapp) entity|
+|Change|Beta|Changed the type of the following properties on the [androidForWorkAppConfigurationSchema](../api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschema) entity:<br/>**exampleJson** from [androidForWorkAppConfigurationExample](../api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationexample.md) to Binary<br/>|
+|Change|Beta|Added the **securityRequireVerifyApps**, **securityRequireSafetyNetAttestationBasicIntegrity**, **securityRequireSafetyNetAttestationCertifiedDevice**, **securityRequireGooglePlayServices**, **securityRequireUpToDateSecurityProviders** and **securityRequireCompanyPortalAppIntegrity** properties to the [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy) entity|
+|Change|Beta|Added the **displayName**, **lastModifiedDateTime**, **enrolledDeviceCount**, **qrCodeContent** and **qrCodeImage** properties to the [androidForWorkEnrollmentProfile](../api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile) entity|
+|Change|Beta|Removed the **isTokenActive** property from the [androidForWorkEnrollmentProfile](../api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile) entity|
+|Change|Beta|Added the **innerAuthenticationProtocolForEapTtls**, **innerAuthenticationProtocolForPeap** and **outerIdentityPrivacyTemporaryValue** properties to the [androidForWorkEnterpriseWiFiConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration) entity|
+|Change|Beta|Added the **workProfileBlockCrossProfileCopyPaste** and **securityRequireVerifyApps** properties to the [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration) entity|
+|Change|Beta|Added the **securityRequireVerifyApps** property to the [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) entity|
+|Change|Beta|Added the **packageId** and **identityVersion** properties to the [androidLobApp](../api-reference/beta/resources/intune_apps_androidlobapp) entity|
+|Change|Beta|Added the **packageId** property to the [androidStoreApp](../api-reference/beta/resources/intune_apps_androidstoreapp) entity|
+|Change|Beta|Added the **faceIdBlocked** property to the [defaultManagedAppProtection](../api-reference/beta/resources/intune_mam_defaultmanagedappprotection) entity|
+|Change|Beta|Added the **members** property to the [deviceAndAppManagementRoleAssignment](../api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment) entity|
+|Change|Beta|Added the **macOSRestriction** property to the [deviceEnrollmentPlatformRestrictionsConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration) entity|
+|Change|Beta|Added the **whenPartnerDevicesWillBeRemovedDateTime** and **whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime** properties to the [deviceManagementPartner](../api-reference/beta/resources/intune_onboarding_devicemanagementpartner) entity|
+|Change|Beta|Changed the type of the following properties on the [deviceManagementScript](../api-reference/beta/resources/intune_devices_devicemanagementscript) entity:<br/>**scriptContent** from String to Binary<br/>|
+|Change|Beta|Added the **smimeEnablePerMessageSwitch** property to the [iosEasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_ioseasemailprofileconfiguration) entity|
+|Change|Beta|Added the **identityVersion** property to the [iosLobApp](../api-reference/beta/resources/intune_apps_ioslobapp) entity|
+|Change|Beta|Added the **faceIdBlocked** property to the [iosManagedAppProtection](../api-reference/beta/resources/intune_mam_iosmanagedappprotection) entity|
+|Change|Beta|Added the **packageId** and **identityVersion** properties to the [managedAndroidLobApp](../api-reference/beta/resources/intune_apps_managedandroidlobapp) entity|
+|Change|Beta|Added the **azureADDeviceId** and **remoteAssistanceSessionErrorDetails** properties to the [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice) entity|
+|Change|Beta|Removed the **legacyAppConfiguration** property from the [managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration) entity|
+|Change|Beta|Added the **identityVersion** property to the [managedIOSLobApp](../api-reference/beta/resources/intune_apps_managedioslobapp) entity|
+|Change|Beta|Removed the **identityVersion** property from the [managedMobileLobApp](../api-reference/beta/resources/intune_apps_managedmobilelobapp) entity|
+|Change|Beta|Added the **publishingState** property to the [mobileApp](../api-reference/beta/resources/intune_apps_mobileapp) entity|
+|Change|Beta|Added the **installState** property to the [mobileAppInstallStatus](../api-reference/beta/resources/intune_apps_mobileappinstallstatus) entity|
+|Change|Beta|Removed the **identityVersion** property from the [mobileLobApp](../api-reference/beta/resources/intune_apps_mobilelobapp) entity|
+|Change|Beta|Added the **allowPartnerToCollectIOSApplicationMetadata** property to the [mobileThreatDefenseConnector](../api-reference/beta/resources/intune_onboarding_mobilethreatdefenseconnector) entity|
+|Change|Beta|Removed the **members** property from the [roleAssignment](../api-reference/beta/resources/intune_rbac_roleassignment) entity|
+|Change|Beta|Added the **lastModifiedDateTime** property to the [termsAndConditions](../api-reference/beta/resources/intune_companyterms_termsandconditions) entity|
+|Change|Beta|Added the **deviceThreatProtectionEnabled** and **deviceThreatProtectionRequiredSecurityLevel** properties to the [windows10CompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy) entity|
+|Change|Beta|Removed the **minimumUpdateAutoInstallClassification** property from the [windows10CompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy) entity|
+|Change|Beta|Added the **privacyBlockPublishUserActivities** and **privacyBlockActivityFeed** properties to the [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) entity|
+|Change|Beta|Added the **configurationAccountType** property to the [windows10SecureAssessmentConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration) entity|
+|Change|Beta|Removed the **trustedNetworkDomains** property from the [windows10VpnConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10vpnconfiguration) entity|
+|Change|Beta|Removed the **minimumUpdateAutoInstallClassification** property from the [windows81CompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_windows81compliancepolicy) entity|
+|Change|Beta|Added the **identityVersion** property to the [windowsAppX](../api-reference/beta/resources/intune_apps_windowsappx) entity|
+|Change|Beta|Added the **daysWithoutContactBeforeUnenroll** property to the [windowsInformationProtectionPolicy](../api-reference/beta/resources/intune_mam_windowsinformationprotectionpolicy) entity|
+|Change|Beta|Added the **identityVersion** property to the [windowsMobileMSI](../api-reference/beta/resources/intune_apps_windowsmobilemsi) entity|
+|Change|Beta|Added the **identityVersion** property to the [windowsPhone81AppX](../api-reference/beta/resources/intune_apps_windowsphone81appx) entity|
+|Change|Beta|Added the **identityVersion** property to the [windowsPhoneXAP](../api-reference/beta/resources/intune_apps_windowsphonexap) entity|
+|Change|Beta|Added the **identityVersion** property to the [windowsUniversalAppX](../api-reference/beta/resources/intune_apps_windowsuniversalappx) entity|
+|Change|Beta|Added the **domainJoinConfiguration** navigation property to the [activeDirectoryWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile) entity|
+|Change|Beta|Removed the **notificationMessageTemplate** navigation property from the [deviceComplianceActionItem](../api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem) entity|
+|Change|Beta|Removed the **groupAssignments** navigation property from the [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy) entity|
+|Change|Beta|Added the **windowsInformationProtectionNetworkLearningSummaries** navigation property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Removed the **deviceConfigurationUserStateSummaries** navigation property from the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement) entity|
+|Change|Beta|Changed the type of the following properties on the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement) entity:<br/>**roleAssignments** from [roleAssignment](../api-reference/beta/resources/intune_rbac_roleassignment) collection to [deviceAndAppManagementRoleAssignment](../api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment) collection<br/>|
+|Change|Beta|Added the **assignments** navigation property to the [deviceManagementScript](../api-reference/beta/resources/intune_devices_devicemanagementscript) entity|
+|Change|Beta|Added the **smimeEncryptionCertificate** navigation property to the [iosEasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_ioseasemailprofileconfiguration) entity|
+|Change|Beta|Changed the type of the following properties on the [iosEasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_ioseasemailprofileconfiguration) entity:<br/>**smimeSigningCertificate** from [iosCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase) to [iosCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_ioscertificateprofile)<br/>|
+|Change|Beta|Removed the **vppToken** navigation property from the [iosVppApp](../api-reference/beta/resources/intune_apps_iosvppapp) entity|
+|Change|Beta|Removed the **groupAssignments** navigation property from the [managedEBook](../api-reference/beta/resources/intune_books_managedebook) entity|
+|Change|Beta|Removed the **groupAssignments** navigation property from the [mobileApp](../api-reference/beta/resources/intune_apps_mobileapp) entity|
+|Change|Beta|Removed the **depOnboardingSettings** and **appleVolumePurchaseProgramTokens** navigation properties from the [organization](../api-reference/beta/resources/intune_onboarding_organization) entity|
+|Change|Beta|Added the **deviceEnrollmentConfigurations** navigation property to the [user](../api-reference/beta/resources/intune_devices_user) entity|
+|Change|Beta|Removed the **windowsCommercialId** and **windowsCommercialIdLastModifiedTime** properties from the [deviceManagementSettings](../api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) complex type|
+|Change|Beta|Added the **showDisplayNameNextToLogo** property to the [intuneBrand](../api-reference/beta/resources/intune_onboarding_intunebrand) complex type|
+|Change|Beta|Added the **deviceUsageType** property to the [outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings) complex type|
+|Change|Beta|Added the **supportsUserLicensing** and **supportsDeviceLicensing** properties to the [vppLicensingType](../api-reference/beta/resources/intune_apps_vpplicensingtype) complex type|
+|Change|Beta|Removed the **actionMessage** property from the [vppTokenActionResult](../api-reference/beta/resources/intune_onboarding_vpptokenactionresult) complex type|
+
 ## December 2017
 
 ### Microsoft Intune APIs
