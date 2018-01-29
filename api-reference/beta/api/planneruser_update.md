@@ -41,7 +41,7 @@ This method can return any of the [HTTP status codes](../../../concepts/errors.m
 Here is an example of the request. This request adds the plan "Next Release Discussion" with id "jd8S5gOaFk2S8aWCIAJz42QAAxtD" as a favorite for the user, and removes plan with id "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" from the favorite plans list.
 Additionally, it updates the last view time of the plan "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_planneruser"
 }-->
 ```http
@@ -71,7 +71,7 @@ If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerUser"
 } -->
