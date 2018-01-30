@@ -5,6 +5,13 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 ## January 2018
 
+### JSON Batching
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|v1.0|Added [JSON batching](https://developer.microsoft.com/en-us/graph/docs/concepts/json_batching) support. Internal request limit set to 20.|
+|Change|Beta|Increased [JSON batching](https://developer.microsoft.com/en-us/graph/docs/concepts/json_batching) internal request limit from 5 to 20.|
+
 ### Education APIs
 
 |Change type|Version|Description|
