@@ -23,7 +23,6 @@ This resource supports:
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
 |[List groupLifecyclePolicies](../api/group_list_grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) collection| List group lifecycle policies. |
-|[Renew](../api/group_renew.md)|Boolean|Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.|
 |[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
 |[Add owner](../api/group_post_owners.md) |[directoryObject](directoryobject.md)| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
 |[Remove owner](../api/group_delete_owners.md) | None |Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the **owners** navigation property.|
