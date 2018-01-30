@@ -1,4 +1,4 @@
-# groupLifecyclePolicy: renewGroup
+# group: renew
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
@@ -10,29 +10,24 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All or Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Delegated (personal Microsoft account) | Not supported |
 |Application | Group.ReadWrite.All or Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groupLifecyclePolicies/renewGroup
-
+POST /groups/<id>/renew
 ```
 
 ## Request headers
-
-| Name | Description |
+| Name       | Description|
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json |
+| Authorization  | Bearer {token} |
+
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type | Description |
-|:---------------|:--------|:----------|
-|groupId|Guid| The id of the group to renew. |
+Do not supply a request body for this method.
 
 ## Response
 
@@ -44,24 +39,18 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 <!-- {
   "blockType": "request",
-  "name": "grouplifecyclepolicy_renewgroup"
+  "name": "group_renew"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies/renewGroup
-Content-type: application/json
-Content-length: 57
-
-{
-  "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
-}
+POST https://graph.microsoft.com/v1.0/groups/<id>/renew
 ```
 
 ##### Response
-
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "@odata.type": "Boolean"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -71,7 +60,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "groupLifecyclePolicy: renewgroup",
+  "description": "group: renew",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
