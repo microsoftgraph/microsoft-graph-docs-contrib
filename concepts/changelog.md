@@ -13,15 +13,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2017
 
-### Microsoft Planner APIs
+### Planner APIs
 
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added new complex types:<br/>[plannerPlanContext](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanContext)<br/>[plannerPlanContextDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanContextDetails)<br/>[plannerPlanContextCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanContextCollection)<br/>[plannerPlanContextDetailsCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanContextDetailsCollection)<br/>[plannerFavoritePlanReference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerFavoritePlanReference)<br/>[plannerRecentPlanReference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerRecentPlanReference)<br/>[plannerFavoritePlanReferenceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerFavoritePlanReferenceCollection)<br/>[plannerRecentPlanReferenceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerRecentPlanReferenceCollection)|
-|Addition|Beta|Added `favoritePlanReferences` and `recentPlanReferences` properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity |
-|Addition|Beta|Added `favoritePlans` and `recentPlans` navigation properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity |
-|Addition|Beta|Added `contexts` property to [plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) entity |
-|Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity |
+|Addition|Beta|Added `favoritePlanReferences` and `recentPlanReferences` properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity. |
+|Addition|Beta|Added `favoritePlans` and `recentPlans` navigation properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity. |
+|Addition|Beta|Added `contexts` property to [plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) entity. |
+|Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity. |
 
 ## December 2017
 
