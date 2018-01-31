@@ -2,17 +2,17 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **plannerUser** resource provide access to Planner resources for a [user](user.md). 
+The **plannerUser** resource provides access to Planner resources for a [user](user.md). 
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) collection| The [plannerTasks](plannertask.md) assigned to the user.|
-|[List favoritePlans](../api/planneruser_list_favoriteplans.md) |[plannerPlan](plannerplan.md) collection| The [plannerPlans](plannerplan.md) marked as favorite by the user.|
-|[List recentPlans](../api/planneruser_list_recentplans.md) |[plannerPlan](plannerplan.md) collection| The [plannerPlans](plannerplan.md) recently viewed by the user.|
-|[Update](../api/planneruser_update.md) | [plannerUser](planneruser.md)| Update **plannerUser** object. |
+|[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) assigned to the user.|
+|[List favoritePlans](../api/planneruser_list_favoriteplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) marked as favorite by the user.|
+|[List recentPlans](../api/planneruser_list_recentplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) recently viewed by the user.|
+|[Update](../api/planneruser_update.md) | [plannerUser](planneruser.md)| Update a **plannerUser** object. |
 
 
 ## Properties
@@ -20,7 +20,7 @@ The **plannerUser** resource provide access to Planner resources for a [user](us
 |:---------------|:--------|:----------|
 |id|String| Read-only. Identifier of the plannerUser|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| A collection containing the references to the plans that the user has marked as a favorite.|
-|recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| A collection containing references to the plans that have been recently viewed by the user in apps that support recent plans.|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| A collection containing references to the plans that were viewed recently by the user in apps that support recent plans.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -30,7 +30,7 @@ The **plannerUser** resource provide access to Planner resources for a [user](us
 |recentPlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that have been recently viewed by the user in apps that support recent plans. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
