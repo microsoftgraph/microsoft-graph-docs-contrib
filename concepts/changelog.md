@@ -3,7 +3,7 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
-## February 2017
+## February 2018
 
 ### Planner APIs
 
@@ -14,6 +14,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|Beta|Added `favoritePlans` and `recentPlans` navigation properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity. |
 |Addition|Beta|Added `contexts` property to [plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) entity. |
 |Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity. |## January 2018
+
+## January 2018
 
 ### JSON Batching
 
