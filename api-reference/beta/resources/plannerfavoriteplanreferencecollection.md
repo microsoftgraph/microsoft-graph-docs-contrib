@@ -2,17 +2,16 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as favorite by a user. It is an Open Type. 
-It is part of the [plannerUser](plannerUser.md) object. The value in the property-value pair is the [plannerFavoritePlanReference](plannerFavoritePlanReference.md) object, while the property name is the id of the corresponding plan.
+The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user. This resource is an open type and is part of the [plannerUser](plannerUser.md) object. The value in the property-value pair is the [plannerFavoritePlanReference](plannerFavoritePlanReference.md) object; the property name is the ID of the corresponding plan.
 
 
 ## Properties
-Properties of an Open Type can be defined by the client. In this case, the client should provide id values of [plannerPlan](plannerPlan.md) resources as properties and their values must be [plannerFavoritePlanReference](plannerFavoritePlanReference.md) objects. Example is shown below. To remove an item in the favorites list, set the value of the property to `null`.
+Properties of an open type can be defined by the client. In this case, the client should provide ID values of [plannerPlan](plannerPlan.md) resources as properties and their values must be [plannerFavoritePlanReference](plannerFavoritePlanReference.md) objects. To remove an item in the favorites list, set the value of the property to `null`.
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
