@@ -1,6 +1,6 @@
 # Get plannerUser
 
-Retrieve the properties and relationships of planneruser object.
+Retrieve the properties and relationships of a [plannerUser](../resources/planneruser.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -26,10 +26,10 @@ GET /drive/createdByUser/planner
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [plannerUser](../resources/planneruser.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [plannerUser](../resources/planneruser.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "get_planneruser"
@@ -38,7 +38,10 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/me/planner
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
