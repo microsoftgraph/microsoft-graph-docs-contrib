@@ -7,11 +7,11 @@ The **plannerPlanContextDetails** resource contains additional information about
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|url|String|Url of the user experience represented by the associated [plannerPlanContext](plannerPlanContext.md). |
+|url|String|URL of the user experience represented by the associated [plannerPlanContext](plannerPlanContext.md). |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
