@@ -1,8 +1,8 @@
-# Update planneruser
+# Update plannerUser
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of [plannerUser](../resources/plannerUser.md) object.
+Update the properties of a [plannerUser](../resources/plannerUser.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -25,7 +25,7 @@ PATCH /me/planner
 | If-Match  | Last known ETag value for the **plannerUser** to be updated. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -33,13 +33,13 @@ In the request body, supply the values for relevant fields that should be update
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerRecentPlanReferenceCollection.md)|Changes to the collection containing the references to the plans that the user has recently viewed.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [plannerUser](../resources/planneruser.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [plannerUser](../resources/planneruser.md) object in the response body.
 
 This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
 ## Example
 ##### Request
-Here is an example of the request. This request adds the plan "Next Release Discussion" with id "jd8S5gOaFk2S8aWCIAJz42QAAxtD" as a favorite for the user, and removes plan with id "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" from the favorite plans list.
-Additionally, it updates the last view time of the plan "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
+The following is an example of the request. This request adds the plan "Next Release Discussion" with ID "jd8S5gOaFk2S8aWCIAJz42QAAxtD" as a favorite for the user, and removes plan with ID "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" from the favorite plans list.
+It also updates the last view time of the plan "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
 <!-- {
   "blockType": "ignored",
   "name": "update_planneruser"
@@ -69,7 +69,10 @@ If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
