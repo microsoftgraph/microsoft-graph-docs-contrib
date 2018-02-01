@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user. This resource is an open type and is part of the [plannerUser](plannerUser.md) object. The value in the property-value pair is the [plannerFavoritePlanReference](plannerFavoritePlanReference.md) object; the property name is the ID of the corresponding plan.
+The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user. This resource is an open type and is part of the [plannerUser](plannerUser.md) object. The property name in the property-value pair is the ID of the corresponding plan; the value is the [plannerFavoritePlanReference](plannerFavoritePlanReference.md) object.
 
 
 ## Properties

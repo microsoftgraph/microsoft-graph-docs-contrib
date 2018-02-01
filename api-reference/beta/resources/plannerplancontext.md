@@ -10,7 +10,7 @@ The experience the **plannerPlanContext** entry reresents can be identified base
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|associationType|String|Nullable. App-defined type of association between the [plannerPlan](plannerPlan.md) and the app. The app can use this information to track different kinds of relationships to the same [plannerPlan](plannerPlan.md).|
+|associationType|String|Nullable. An app-defined type of association between the [plannerPlan](plannerPlan.md) and the app. The app can use this information to track different kinds of relationships to the same [plannerPlan](plannerPlan.md).|
 |createdDateTime|DateTimeOffset|Read-only. The date and time when the **plannerPlanContext** was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |displayNameSegments|String collection|The segments of the name of the external experience. Segments represent a hierarchical structure that allows other apps to display the relationship.|
 |ownerAppId|String|Read-only. ID of the app that created the **plannerPlanContext**.|

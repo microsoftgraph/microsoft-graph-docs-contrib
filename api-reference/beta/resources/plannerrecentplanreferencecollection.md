@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user. This resource is an open type and is part of the [plannerUser](plannerUser.md) object. The value in the property-value pair is the [plannerRecentPlanReference](plannerRecentPlanReference.md) object. The property name is the ID of the corresponding plan.
+The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user. This resource is an open type and is part of the [plannerUser](plannerUser.md) object. The property name is the ID of the corresponding plan. The value in the property-value pair is the [plannerRecentPlanReference](plannerRecentPlanReference.md) object.
 Adding new references to this collection will automatically remove the oldest entries when the size of the collection exceeds a predetermined maximum value.
 
 
