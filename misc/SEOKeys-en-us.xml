@@ -1886,6 +1886,16 @@
 	  </Item>
   </Item>
   <Item text="Reports" url="/en-us/api-reference/v1.0/resources/report" >
+	  <Item text="Microsoft Teams device usage" url="/en-us/api-reference/v1.0/resources/microsoft_teams_device_usage_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="Get distribution user counts" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Microsoft Teams user activity" url="/en-us/api-reference/v1.0/resources/microsoft_teams_user_activity_reports" >
+		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="Get user counts" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
 	  <Item text="Outlook activity" url="/en-us/api-reference/v1.0/resources/email_activity_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityuserdetail" />
 		<Item text="Get activity counts" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivitycounts" />
@@ -2170,8 +2180,8 @@
       <Item text="Conversation" url="/en-us/api-reference/beta/resources/conversation" SEOKeyword="conversation API, Microsoft Graph API, conversation API" SEODescription="">
         <Item text="List conversations" url="/en-us/api-reference/beta/api/group_list_conversations" SEOKeyword="List conversations, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of conversation objects." />
         <Item text="Create conversation" url="/en-us/api-reference/beta/api/group_post_conversations" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Conversation." />
-        <Item text="Get group conversation" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="Get group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversation object." />
-        <Item text="Delete group conversation" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="Delete group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversation." />
+        <Item text="Get conversation" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="Get group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Retrieve the properties and relationships of conversation object." />
+        <Item text="Delete conversation" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="Delete group conversation, Microsoft Graph API, Outlook conversation API" SEODescription="Delete conversation." />
         <Item text="List conversation threads" url="/en-us/api-reference/beta/api/conversation_list_threads" SEOKeyword="List threads, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of conversationthread objects." />
         <Item text="Create conversation thread" url="/en-us/api-reference/beta/api/conversation_post_threads" SEOKeyword="Create thread, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new thread." />
         <Item text="List accepted senders" url="/en-us/api-reference/beta/api/group_list_acceptedsenders" SEOKeyword="List acceptedSenders, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of directoryobject objects." />
