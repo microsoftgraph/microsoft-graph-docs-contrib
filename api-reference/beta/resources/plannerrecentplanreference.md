@@ -4,8 +4,8 @@
 
 The **plannerRecentPlanReference** resource type repesents a reference to a [plannerPlan](plannerPlan.md) that has recently been viewed by a user. 
 The **plannerRecentPlanReferences** for a user are explicitly maintained by apps. Any app that implements the recent plans feature should record when the user last viewed a plan, and update **plannerRecentPlanReference** entries accordingly.
-Clients should note that **plannerRecentPlanReference** entries can reference **plannerPlans** that are deleted, that the user can no longer access, or that have been updated with a different title.
-We recommend that clients notify users when there are discrepancies and keep the entries up to date.
+Apps should note that **plannerRecentPlanReference** entries can reference **plannerPlans** that are deleted, that the user can no longer access, or that have been updated with a different title.
+We recommend that apps notify users when there are discrepancies and keep the entries up to date.
 
 ## Properties
 | Property	   | Type	|Description|

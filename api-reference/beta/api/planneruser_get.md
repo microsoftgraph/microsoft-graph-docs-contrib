@@ -17,7 +17,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /me/planner
 GET /users/<id>/planner
-GET /drive/createdByUser/planner
 ```
 
 ## Request headers

@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a list of [plannerPlans](../resources/plannerPlan.md) recently viewed by a user. You can update recently viewed plans by modifying the [plannerUser](../resources/plannerUser.md) resource.
+Retrieve a list of [plannerPlans](../resources/plannerPlan.md) recently viewed by a user. You can update recently viewed plans by [updating the plannerUser resource](plannerUser_update.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -17,7 +17,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /me/planner/recentPlans
 GET /users/<id>/planner/recentPlans
-GET /drive/createdByUser/planner/recentPlans
 ```
 
 ## Request headers

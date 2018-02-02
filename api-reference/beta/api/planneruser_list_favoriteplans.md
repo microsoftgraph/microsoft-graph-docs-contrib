@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a list of [plannerPlans](../resources/plannerPlan.md) that are marked as favorite by a user. Plans can be marked as favorite by modifying the [plannerUser](../resources/plannerUser.md) resource.
+Retrieve a list of [plannerPlans](../resources/plannerPlan.md) that are marked as favorite by a user. You can mark a plan as favorite by [updating the plannerUser resource](plannerUser_update.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -18,7 +18,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /me/planner/favoritePlans
 GET /users/<id>/planner/favoritePlans
-GET /drive/createdByUser/planner/favoritePlans
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

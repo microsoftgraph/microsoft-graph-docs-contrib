@@ -7,7 +7,7 @@ Adding new references to this collection will automatically remove the oldest en
 
 
 ## Properties
-Properties of an open type can be defined by the client. In this case, the client should provide ID values of [plannerPlan](plannerPlan.md) resources as properties and their values must be [plannerRecentPlanReference](plannerRecentPlanReference.md) objects. To remove an item in the favorites list, set the value of the property to `null`.
+You can define the properties of this open type. The property names are `id` values of [plannerPlan](plannerPlan.md) resources and their values must be [plannerRecentPlanReference](plannerRecentPlanReference.md) objects. To remove an item in the favorites list, set the value of the property to `null`.
 
 
 ## JSON representation

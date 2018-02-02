@@ -19,14 +19,14 @@ The **plannerUser** resource provides access to Planner resources for a [user](u
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Identifier of the plannerUser|
-|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| A collection containing the references to the plans that the user has marked as a favorite.|
+|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| A collection containing the references to the plans that the user has marked as favorites.|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| A collection containing references to the plans that were viewed recently by the user in apps that support recent plans.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.|
-|favoritePlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that the user marked as favorite.|
+|favoritePlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that the user marked as favorites.|
 |recentPlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that have been recently viewed by the user in apps that support recent plans. |
 
 ## JSON representation
@@ -42,38 +42,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "favoritePlanReferences": {
-    "@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection",
-    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
-      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
-      "orderHint": "8586866870001551087",
-      "planTitle": "Customer reviews"
-    },
-    "uZWtCtli30CGoWLIWSat1mQAC0ai": {
-      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
-      "orderHint": "8586848705198093378",
-      "planTitle": "Order Management (December 2017)"
-    }
-  },
-  "id": "-YPnMJRiIUSKFyaVjYEkBWQAAc47",
-  "recentPlanReferences": {
-    "@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection",
-    "7oTB5aMIAE2rVo-1N-L7RmQAGX2q": {
-      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
-      "lastAccessedDateTime": "2017-12-02T22:49:46.155Z",
-      "planTitle": "Purchase Workflow"
-    },
-    "iKNMHkk3vEWpSF7F7iZWIGQAAMMw": {
-      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
-      "lastAccessedDateTime": "2017-12-03T21:59:28.975Z",
-      "planTitle": "New Year's Office Party"
-    },
-    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
-      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
-      "lastAccessedDateTime": "2017-12-20T02:28:09.621Z",
-      "planTitle": "Customer reviews"
-    }
-  }
+  "favoritePlanReferences": {"@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"},
+  "id": "String (identifier)",
+  "recentPlanReferences": {"@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection"}
 }
 
 ```
