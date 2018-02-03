@@ -2125,8 +2125,12 @@
         <Item text="Get photo" url="/en-us/api-reference/beta/api/profilephoto_get" />
         <Item text="Update photo" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
-      <Item text="Planner tasks" url="/en-us/api-reference/beta/resources/plannertask" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
-        <Item text="List tasks" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
+      <Item text="Planner" url="/en-us/api-reference/beta/resources/planneruser" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="Represents user specific settings in Planner.">
+        <Item text="Get user's settings" url="/en-us/api-reference/beta/api/planneruser_get" SEOKeyword="get settings, Microsoft Graph API, user API" SEODescription="Retrieve Planner settings for the user." />
+        <Item text="Update user's settings" url="/en-us/api-reference/beta/api/planneruser_update" SEOKeyword="update settings, Microsoft Graph API, user API" SEODescription="Update Planner settings for the user." />
+        <Item text="List user's favorite plans" url="/en-us/api-reference/beta/api/planneruser_list_favoriteplans" SEOKeyword="List favorite plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner plans favorited by the user." />
+        <Item text="List user's recent plans" url="/en-us/api-reference/beta/api/planneruser_list_recentplans" SEOKeyword="List recent plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner plans recently viewed by the user." />
+        <Item text="List user's assigned tasks" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner tasks assigned to the user." />
       </Item>
     </Item>
     <Item text="Groups" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
@@ -5123,24 +5127,26 @@
     </Item>
     <Item text="Planner" url="/en-us/api-reference/beta/resources/planner_overview" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
       <Item text="Plan" url="/en-us/api-reference/beta/resources/plannerplan" >
+        <Item text="List group's plans" url="/en-us/api-reference/beta/api/plannergroup_list_plans" />
         <Item text="Create plan" url="/en-us/api-reference/beta/api/planner_post_plans" />
-        <Item text="List plans for group" url="/en-us/api-reference/beta/api/plannergroup_list_plans" />
         <Item text="Get plan" url="/en-us/api-reference/beta/api/plannerplan_get" />
+        <Item text="Update plan" url="/en-us/api-reference/beta/api/plannerplan_update" />
         <Item text="List plan tasks" url="/en-us/api-reference/beta/api/plannerplan_list_tasks" />
         <Item text="List plan buckets" url="/en-us/api-reference/beta/api/plannerplan_list_buckets" />
-        <Item text="Update plan" url="/en-us/api-reference/beta/api/plannerplan_update" />
-	    </Item>
-        <Item text="Task" url="/en-us/api-reference/beta/resources/plannertask" >
+        <Item text="List user's favorite plans" url="/en-us/api-reference/beta/api/planneruser_list_favoriteplans" SEOKeyword="List favorite plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner plans favorited by the user." />
+        <Item text="List user's recent plans" url="/en-us/api-reference/beta/api/planneruser_list_recentplans" SEOKeyword="List recent plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner plans recently viewed by the user." />
+      </Item>
+      <Item text="Task" url="/en-us/api-reference/beta/resources/plannertask" >
         <Item text="Create task" url="/en-us/api-reference/beta/api/planner_post_tasks" />
-        <Item text="Get tasks for user" url="/en-us/api-reference/beta/api/planneruser_list_tasks" />
         <Item text="Get task" url="/en-us/api-reference/beta/api/plannertask_get" />
         <Item text="Update task" url="/en-us/api-reference/beta/api/plannertask_update" />
-        <Item text="Delete task" url="/en-us/api-reference/beta/api/plannertask_delete" />	  
-	    </Item>
-	    <Item text="Task details" url="/en-us/api-reference/beta/resources/plannertaskdetails" >
+        <Item text="Delete task" url="/en-us/api-reference/beta/api/plannertask_delete" />
+        <Item text="List user's tasks" url="/en-us/api-reference/beta/api/planneruser_list_tasks" />
+      </Item>
+      <Item text="Task details" url="/en-us/api-reference/beta/resources/plannertaskdetails" >
         <Item text="Get task details" url="/en-us/api-reference/beta/api/plannertaskdetails_get" />
         <Item text="Update task details" url="/en-us/api-reference/beta/api/plannertaskdetails_update" />	  
-	    </Item>
+      </Item>
       <Item text="Plan details" url="/en-us/api-reference/beta/resources/plannerplandetails" >
         <Item text="Get plan details" url="/en-us/api-reference/beta/api/plannerplandetails_get" />
         <Item text="Update plan details" url="/en-us/api-reference/beta/api/plannerplandetails_update" />	  
