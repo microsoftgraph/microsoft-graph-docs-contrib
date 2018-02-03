@@ -2,15 +2,18 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get resource instances that contain a single-value extended property by using `$expand` or `$filter`.
+You can get a single resource instance expanded with a specific extended property, or a collection of resource instances
+that contain a specific extended property.
 
-Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended 
-property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)
-object that represents an extended property.
+Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended 
+property. Use a `$filter` and `eq` operator on the **id** property to specify the extended property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) object that represents an extended property. 
 
-Using the query parameter `$filter` allows you to get all the instances of the specified resource that have
-an extended property matching a filter on the **id** and **value** properties. The filter is applied to all instances of the resource 
-in the signed-in user's mailbox. 
+Using the query parameter `$filter` allows you to get all the instances of the specified resource that contain a specific 
+extended property. The filter uses an `eq` operator on the **id** property, and a `eq` or `contains` operator on the **value** property. 
+The filter is applied to all instances of the resource in the signed-in user's mailbox. 
+
+Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive. Filtering the **value** property of an extended 
+property is case-insensitive.
 
 The following user resources are supported:
 
@@ -123,7 +126,7 @@ GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### GET resource instances using `$filter` and `eq` operator on the value property
+#### GET resource instances using `$filter` and `eq` operator 
 
 Get instances of a supported resource that have an extended property matching a filter. The filter uses an `eq` operator on the 
 **id** and **value** properties. Make sure you apply 
@@ -204,7 +207,7 @@ GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-#### GET resource instances using `$filter` and `contains` operator on the value property
+#### GET resource instances using `$filter`, and the `eq` and `contains` operators 
 
 Get instances of the **message** or **event** resource that have an extended property matching a filter. The filter uses an `eq` operator on the 
 **id** property, and a `contains` operator on the **value** property. Make sure you apply 
