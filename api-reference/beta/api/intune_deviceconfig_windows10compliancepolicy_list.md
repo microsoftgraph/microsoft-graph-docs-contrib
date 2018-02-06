@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1777
+Content-Length: 1888
 
 {
   "value": [
@@ -91,7 +91,9 @@ Content-Length: 1777
           "lowestVersion": "Lowest Version value",
           "highestVersion": "Highest Version value"
         }
-      ]
+      ],
+      "deviceThreatProtectionEnabled": true,
+      "deviceThreatProtectionRequiredSecurityLevel": "secured"
     }
   ]
 }

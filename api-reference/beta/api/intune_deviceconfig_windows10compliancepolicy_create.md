@@ -68,6 +68,8 @@ The following table shows the properties that are required when you create the w
 |signatureOutOfDate|Boolean|Require Windows Defender Antimalware Signature to be up to date on Windows devices.|
 |rtpEnabled|Boolean|Require Windows Defender Antimalware Real-Time Protection on Windows devices.|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune_deviceconfig_operatingsystemversionrange.md) collection|The valid operating system build ranges on Windows devices. This collection can contain a maximum of 10000 elements.|
+|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
+|deviceThreatProtectionRequiredSecurityLevel|String|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1476
+Content-length: 1579
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -120,7 +122,9 @@ Content-length: 1476
       "lowestVersion": "Lowest Version value",
       "highestVersion": "Highest Version value"
     }
-  ]
+  ],
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured"
 }
 ```
 
@@ -129,7 +133,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1584
+Content-Length: 1687
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -171,7 +175,9 @@ Content-Length: 1584
       "lowestVersion": "Lowest Version value",
       "highestVersion": "Highest Version value"
     }
-  ]
+  ],
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured"
 }
 ```
 

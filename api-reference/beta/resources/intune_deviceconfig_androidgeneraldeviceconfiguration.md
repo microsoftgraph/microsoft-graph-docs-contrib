@@ -43,11 +43,12 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |googlePlayStoreBlocked|Boolean|Indicates whether or not to block the Google Play store.|
 |kioskModeBlockSleepButton|Boolean|Indicates whether or not to block the screen sleep button while in Kiosk Mode.|
 |kioskModeBlockVolumeButtons|Boolean|Indicates whether or not to block the volume buttons while in Kiosk Mode.|
+|dateAndTimeBlockChanges|Boolean|Indicates whether or not to block changing date and time while in KNOX Mode.|
 |kioskModeApps|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|A list of apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |nfcBlocked|Boolean|Indicates whether or not to block Near-Field Communication.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 255|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
@@ -74,6 +75,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |appsLaunchBlockList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500 elements.|
 |appsHideList|[appListItem](../resources/intune_deviceconfig_applistitem.md) collection|List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.|
 |requireAppVerify|Boolean|Require the Android Verify apps feature is turned on.|
+|securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -128,6 +130,7 @@ Here is a JSON representation of the resource.
   "googlePlayStoreBlocked": true,
   "kioskModeBlockSleepButton": true,
   "kioskModeBlockVolumeButtons": true,
+  "dateAndTimeBlockChanges": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -190,7 +193,8 @@ Here is a JSON representation of the resource.
       "appId": "String"
     }
   ],
-  "requireAppVerify": true
+  "requireAppVerify": true,
+  "securityRequireVerifyApps": true
 }
 ```
 
