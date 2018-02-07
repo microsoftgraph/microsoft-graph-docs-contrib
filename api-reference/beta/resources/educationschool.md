@@ -6,11 +6,7 @@ A school. The **educationSchool** resource currently corresponds to an [administ
 
 This resource is a subtype of [educationOrganization](educationorganization.md).
 
->Note:  If your app consumes the **administrativeUnit** or **educationOrganization** resources, you will need to declare base request URLs as shown in the the following code block:
-```JavaScript
-var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
-```
+
 
 
 ## Methods

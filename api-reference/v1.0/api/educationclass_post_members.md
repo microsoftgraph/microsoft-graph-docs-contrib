@@ -37,12 +37,12 @@ The following is an example of the request.
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/V1.0/education/classes/11011/members/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/11011/members/$ref
 Content-type: application/json
 Content-length: 56
 
 {
-  "@odata.id":"https://graph.microsoft.com/V1.0/education/users/13015"
+  "@odata.id":"https://graph.microsoft.com/v1.0/education/users/13015"
 }
 ```
 

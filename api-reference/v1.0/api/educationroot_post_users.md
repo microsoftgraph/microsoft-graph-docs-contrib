@@ -39,7 +39,7 @@ The following is an example of the request.
   "name": "create_educationuser_from_educationroot"
 }-->
 ```http
-POST https://graph.microsoft.com/V1.0/education/users
+POST https://graph.microsoft.com/v1.0/education/users
 Content-type: application/json
 Content-length: 508
 

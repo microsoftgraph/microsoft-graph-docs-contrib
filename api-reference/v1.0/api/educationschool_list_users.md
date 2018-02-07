@@ -36,7 +36,7 @@ The following is an example of the request.
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/education/schools/10002/users
+GET https://graph.microsoft.com/v1.0/education/schools/10002/users
 ```
 ##### Response
 The following is an example of the response. 
