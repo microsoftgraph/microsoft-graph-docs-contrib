@@ -1,6 +1,6 @@
 # educationSchool resource type
 
-A school. The **educationSchool** resource currently corresponds to an [administrativeUnit](administrativeunit.md) resource and shares the same ID.  
+A school. The **educationSchool** resource currently corresponds to an [administrativeUnit](../../beta/resources/administrativeunit.md) resource and shares the same ID.  
 
 >**Note:**  The **administrativeUnit** and **educationOrganization** resources are /beta version resources. If using these resources, be sure to review the [change log](../../../concepts/changelog.md) periodically. When Microsoft Graph API resources are released to the /v1.0  endpoint, the release is noted in the change log. If your app consumes the **administrativeUnit** or **educationOrganization** resources, you will need to declare base request URLs as shown in the the following code block:  
 ```JavaScript
