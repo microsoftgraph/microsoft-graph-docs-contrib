@@ -8,7 +8,7 @@ var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
 var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
 ```
 
-This resource is a subtype of [educationOrganization](educationorganization.md).
+This resource is a subtype of [educationOrganization](../../beta/resources/educationorganization.md).
 
 
 ## Methods
