@@ -169,6 +169,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition    | v1.0    | Added the following APIs:<br>[getTeamsUserActivityUserDetail](../api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail.md)<br>[getTeamsUserActivityCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivitycounts.md)<br>[getTeamsUserActivityUserCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts.md)<br>[getTeamsDeviceUsageUserDetail](../api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail.md)<br>[getTeamsDeviceUsageUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts.md)<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts.md) |
 
 
+## February 2018
+
+### Reports APIs
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Addition    | Beta    | Added the **activatedOnSharedComputer** property to the [userActivationCounts](../api-reference/beta/resources/useractivationcounts.md) entity.|
+| Addition    | Beta    | Added the **sharedComputerActivation** property to the [office365ActivationsUserCounts](../api-reference/beta/resources/office365activationsusercounts.md) entity.|
+
 ## December 2017
 
 ### Microsoft Intune APIs
