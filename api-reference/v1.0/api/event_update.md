@@ -58,7 +58,9 @@ In the request body, supply the values for relevant fields that should be update
 |subject|String|The text of the event's subject line.|
 
 Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to 
-add, update, or delete your own app-specific data in custom properties of an extension in an existing **event** instance.
+add, update, or delete your own app-specific data in custom properties of an extension in an existing **event** instance.  
+  
+In the case the **event** you are updating is the master event of a recurring event, contains multiple attendees and some of the instances have been updated separatly before, multiple notification emails will be sent out: one for the master series as well as one per instance that has been previously updated.   
 
 ## Response
 
