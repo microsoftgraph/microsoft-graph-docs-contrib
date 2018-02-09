@@ -163,8 +163,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|Beta|Added the **supportsUserLicensing** and **supportsDeviceLicensing** properties to the [vppLicensingType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_vpplicensingtype) complex type|
 |Change|Beta|Removed the **actionMessage** property from the [vppTokenActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult) complex type|
 
-## January 2018
-
 ### Reports APIs
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
