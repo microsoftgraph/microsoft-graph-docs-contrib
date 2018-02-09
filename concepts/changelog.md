@@ -13,7 +13,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|Beta|Added `favoritePlanReferences` and `recentPlanReferences` properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity. |
 |Addition|Beta|Added `favoritePlans` and `recentPlans` navigation properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity. |
 |Addition|Beta|Added `contexts` property to [plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) entity. |
-|Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity. |## January 2018
+|Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity. |
 
 ## January 2018
 
