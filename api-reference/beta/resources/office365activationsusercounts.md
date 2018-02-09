@@ -5,10 +5,10 @@
 | Property                 | Type   | Description                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Date   | The latest date of the content.          |
-| productType              | String | The product type such as "Office 365 ProPlus", "Project Client", "Visio Pro for Office 365". |
+| productType              | String | The product type such as "Office 365 ProPlus", "Project Client", or "Visio Pro for Office 365". |
 | assigned                 | Int64  | The number of users have been assigned for the product license. |
-| activated                | Int64  | The number of users have activated the product. |
-| sharedComputerActivation | Int64  | The number of users have used the product on a shared computer. |
+| activated                | Int64  | The number of users who have activated the product. |
+| sharedComputerActivation | Int64  | The number of users who have used the product on a shared computer. |
 
 ## JSON representation
 
