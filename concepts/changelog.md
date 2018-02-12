@@ -178,7 +178,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ### Delta query
 
-| Change          | v1.0        | Add optional query filtering capability to [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Change      | v1.0    | Add optional query filtering capability to [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
 
 ### Microsoft Intune APIs
 
