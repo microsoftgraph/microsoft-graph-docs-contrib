@@ -23,13 +23,11 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Personal contact](contact.md) | GA |
 | [user](user.md) | GA |
 
-### Use open extensions (for Outlook resources) or extended properties?
+### Accessing custom data for Outlook MAPI properties not exposed through Microsoft Graph?
 
-Open extensions is the recommended solution for most scenarios involving storing and accessing custom data. If, however, 
-you need to access custom data for Outlook MAPI properties that are not already exposed through the 
-[Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api), you can use 
-[extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata 
-exposes at https://graph.microsoft.com/v1.0/$metadata.
+If you need to access custom data for Outlook MAPI properties that are not already exposed through the 
+[Microsoft Graph API metadata](https://graph.microsoft.com/v1.0/$metadata), you can use 
+[extended properties and its REST API](extended-properties-overview.md). 
 
 
 ## JSON representation
