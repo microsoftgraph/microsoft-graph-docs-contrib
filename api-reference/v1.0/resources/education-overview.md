@@ -12,7 +12,7 @@ To call the education APIs in Microsoft Graph, your app will need to acquire an 
 
 To deploy apps that are integrated with the Education APIs in Microsoft Graph, school IT admins must first grant consent to the permissions requested by the app. This consent has to be granted only once, unless the permissions change. After the admin consents, the app is provisioned for all users in the tenant.
 
-To trigger a consent dialog box, use the following REST call.
+To show a consent dialog box, use the following REST call.
 
 ```
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
