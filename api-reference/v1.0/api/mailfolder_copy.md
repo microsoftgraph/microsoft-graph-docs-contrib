@@ -28,11 +28,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|destinationId|String|The folder ID, or the *Inbox*, *Drafts*, *SentItems*, or *DeletedItems* well-known folder name.|
+|destinationId|String|The folder ID, or a well-known folder name such as *Inbox*, *Drafts*, *SentItems*, or *DeletedItems*. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).|
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `200 OK` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

@@ -21,6 +21,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -32,7 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.
+If successful, this method returns `200 OK` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

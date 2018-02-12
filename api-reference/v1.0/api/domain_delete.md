@@ -38,7 +38,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return a response body.
+If successful, this method returns `204 No Content` response code. It does not return a response body.
 
 ## Example
 ##### Request
@@ -48,7 +48,7 @@ If successful, this method returns `204, No Content` response code. It does not 
   "name": "delete_domain"
 }-->
 ```http
-DELETE https://graph.microsoft.com/V1.0/domains/contoso.com
+DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 
 ##### Response

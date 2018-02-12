@@ -6,30 +6,36 @@
 
 Create a new [iosVppEBook](../resources/intune_books_iosvppebook.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceAppManagement/managedEBooks
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a iosVppEBook object.
-The following table shows the properties that are required when you create a iosVppEBook.
+In the request body, supply a JSON representation for the iosVppEBook object.
+
+The following table shows the properties that are required when you create the iosVppEBook.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |displayName|String|Name of the eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
 |description|String|Description. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
@@ -49,13 +55,15 @@ The following table shows the properties that are required when you create a ios
 |totalLicenseCount|Int32|Total license count.|
 |usedLicenseCount|Int32|Used license count.|
 
+
+
 ## Response
 If successful, this method returns a `201 Created` response code and a [iosVppEBook](../resources/intune_books_iosvppebook.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks
 Content-type: application/json
 Content-length: 853
@@ -89,7 +97,7 @@ Content-length: 853
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 961

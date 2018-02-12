@@ -28,10 +28,11 @@ In the request URL, provide an optional query parameter.
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example that shows how to call this API.
@@ -43,8 +44,6 @@ Here is an example of the request.
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
-Content-type: application/json
-
 ```
 
 ##### Response
@@ -61,11 +60,7 @@ Content-length: 169
 
 {
   "address": "address-value",
-  "addressLocal": "addressLocal-value",
-  "cellCount": 99,
-  "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "addressLocal": "addressLocal-value"
 }
 ```
 

@@ -7,9 +7,15 @@ Get the MailTips of one or more recipients as available to the signed-in [user](
 Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Read.My*, *Mail.Read.Shared*  
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read, Mail.Read.Shared    |
+|Delegated (personal Microsoft account) | Mail.Read    |
+|Application | Mail.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

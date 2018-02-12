@@ -6,9 +6,14 @@ Assigns a [policy](../resources/policy.md) to an application or service principa
 
 >Note: Currently, policy assignment only applies to Token lifetime Policy. This type of policy is described in [policy](../resources/policy.md).
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -30,7 +35,7 @@ In the request body, provide a JSON representation of the policy object to be ad
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 The following example assigns a policy to an application.

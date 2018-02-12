@@ -4,9 +4,16 @@
 
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
-## Prerequisites
+## Permissions
 
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported |
+|Application | Not supported |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -27,7 +34,7 @@ In the request body, supply a JSON representation of [groupLifecyclePolicy](../r
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.
+If successful, this method returns `201 Created` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.
 
 ## Example
 

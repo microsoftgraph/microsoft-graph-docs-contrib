@@ -10,9 +10,15 @@ also sends a message to notify the organizer of the forwarding, and adds the rec
 copy of the meeting event. This convenience is not available when forwarding from an Outlook.com account.
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read    |
+|Delegated (personal Microsoft account) | Calendars.Read    |
+|Application | Calendars.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,7 +55,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

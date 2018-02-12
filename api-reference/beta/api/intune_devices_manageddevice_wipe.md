@@ -6,16 +6,20 @@
 
 Wipe a device
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementManagedDevices.PriviligedOperation.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-POST /managedDevices/{managedDevicesId}/wipe
+``` http
 POST /users/{usersId}/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/wipe
@@ -24,12 +28,22 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|keepEnrollmentData|Boolean|Not yet documented|
+|keepUserData|Boolean|Not yet documented|
+|macOsUnlockCode|String|Not yet documented|
+
+
 
 ## Response
 If successful, this action returns a `204 No Content` response code.
@@ -37,13 +51,22 @@ If successful, this action returns a `204 No Content` response code.
 ## Example
 ### Request
 Here is an example of the request.
-```http
-POST https://graph.microsoft.com/beta/managedDevices/{managedDevicesId}/wipe
+``` http
+POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/wipe
+
+Content-type: application/json
+Content-length: 109
+
+{
+  "keepEnrollmentData": true,
+  "keepUserData": true,
+  "macOsUnlockCode": "Mac Os Unlock Code value"
+}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 204 No Content
 ```
 

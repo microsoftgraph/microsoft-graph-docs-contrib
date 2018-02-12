@@ -6,30 +6,36 @@
 
 Create a new [iosStoreApp](../resources/intune_apps_iosstoreapp.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceAppManagement/mobileApps
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a iosStoreApp object.
-The following table shows the properties that are required when you create a iosStoreApp.
+In the request body, supply a JSON representation for the iosStoreApp object.
+
+The following table shows the properties that are required when you create the iosStoreApp.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -44,10 +50,13 @@ The following table shows the properties that are required when you create a ios
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
 |bundleId|String|The Identity Name.|
 |appStoreUrl|String|The Apple App Store URL|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+
+
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [iosStoreApp](../resources/intune_apps_iosstoreapp.md) object in the response body.
@@ -55,10 +64,10 @@ If successful, this method returns a `201 Created` response code and a [iosStore
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1016
+Content-length: 1072
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -78,6 +87,7 @@ Content-length: 1016
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "bundleId": "Bundle Id value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "applicableDeviceType": {
@@ -89,17 +99,18 @@ Content-length: 1016
     "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
     "v8_0": true,
     "v9_0": true,
-    "v10_0": true
+    "v10_0": true,
+    "v11_0": true
   }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1124
+Content-Length: 1180
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -121,6 +132,7 @@ Content-Length: 1124
   "developer": "Developer value",
   "notes": "Notes value",
   "uploadState": 11,
+  "publishingState": "processing",
   "bundleId": "Bundle Id value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "applicableDeviceType": {
@@ -132,7 +144,8 @@ Content-Length: 1124
     "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
     "v8_0": true,
     "v9_0": true,
-    "v10_0": true
+    "v10_0": true,
+    "v11_0": true
   }
 }
 ```

@@ -30,11 +30,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DestinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
+|destinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
+
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -50,7 +51,7 @@ Content-type: application/json
 Content-length: 44
 
 {
-  "DestinationId": "destinationId-value"
+  "destinationId": "destinationId-value"
 }
 ```
 

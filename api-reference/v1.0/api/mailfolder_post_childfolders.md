@@ -18,8 +18,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Specify the parent folder in the query URL as a folder ID, or the `Inbox`, `Drafts`, `SentItems`, or 
-`DeletedItems` well-known folder name.
+Specify the parent folder in the query URL as a folder ID, or a well-known folder name such as *Inbox*, *Drafts*, *SentItems*, or *DeletedItems*. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Request headers
 | Header       | Value |
@@ -37,7 +36,7 @@ In the request body, provide a JSON object with the following parameters. **disp
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `201 Created` response code and [MailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example
 ##### Request

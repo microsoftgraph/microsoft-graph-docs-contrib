@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/borders(<sideIndex>)
-GET /workbook/worksheets/{id|name}/range(<address>)/format/borders(<sideIndex>)
+GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders(<sideIndex>)
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
 ```
 ## Optional query parameters
@@ -24,6 +24,7 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 Do not supply a request body for this method.

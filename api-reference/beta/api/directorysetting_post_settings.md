@@ -6,8 +6,15 @@ Use this API to create a new setting, based on the templates available in direct
 
 > **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Create groupSettings*.
 
-## Prerequisites
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,7 +31,7 @@ In the request body, supply a JSON representation of [directorySetting](../resou
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
+If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
 ## Example
 ##### Request

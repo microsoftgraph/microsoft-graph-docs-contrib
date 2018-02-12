@@ -2,7 +2,11 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFolders can contain messages and child mailFolders.
+A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
+
+Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use 
+the following well-known folder names when accessing these folders in a **mailFolder** collection: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, 
+`Drafts`, `Inbox`, `JunkEmail`, `Outbox`, and `SentItems`.
 
 This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/mailfolder_delta.md) function.
@@ -51,6 +55,7 @@ MailFolders in Outlook can contain more than one type of items, for example, the
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
+|messageRules | [messageRule](messagerule.md) collection | The collection of rules that apply to the user's Inbox folder. |
 |messages|[Message](message.md) collection|The collection of messages in the mailFolder.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
@@ -63,6 +68,7 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
+    "messageRules",
     "messages",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
@@ -81,6 +87,7 @@ Here is a JSON representation of the resource
   "unreadItemCount": 1024,
 
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]

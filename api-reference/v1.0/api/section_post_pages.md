@@ -1,6 +1,7 @@
 # Create page
 
 Create a new [page](../resources/page.md) in the specified section.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

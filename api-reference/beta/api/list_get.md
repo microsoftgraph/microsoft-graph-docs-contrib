@@ -1,3 +1,9 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: Get a SharePoint list
+---
 # Get metadata for a list
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -6,12 +12,15 @@ Returns the metadata for a [list][].
 
 [list]: ../resources/list.md
 
-## Prerequisites
+## Permissions
 
-One of the following scopes are required to execute this request:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
 

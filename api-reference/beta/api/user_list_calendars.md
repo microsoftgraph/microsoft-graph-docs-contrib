@@ -3,9 +3,15 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Calendars.Read; Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
@@ -80,8 +86,8 @@ Content-type: application/json
             "isSharedWithMe":false,
             "canEdit":true,
             "owner":{
-                "name":"Fanny Downs",
-                "address":"fannyd@adatum.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@adatum.onmicrosoft.com"
             }
         }
     ]

@@ -6,21 +6,26 @@
 
 List properties and relationships of the [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) objects.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementManagedDevices.Read.All; DeviceManagementManagedDevices.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /deviceManagement/deviceManagementScripts
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
@@ -33,13 +38,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 615
@@ -54,7 +59,7 @@ Content-Length: 615
       "runSchedule": {
         "@odata.type": "microsoft.graph.runSchedule"
       },
-      "scriptContent": "Script Content value",
+      "scriptContent": "c2NyaXB0Q29udGVudA==",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "runAsAccount": "user",

@@ -9,26 +9,49 @@ In particular, you can filter on the messages and get only those that include a 
 Note that by default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
 to [find details of each mention in a message](../api/message_get.md#request-2).
 
-### List message bodies in HTML or text format
 
-Message bodies can be in HTML or text format.
+### Get messages in another user's message folder
 
-You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:
+If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get messages 
+from another user's message folder. This section focuses on scenarios that involve delegated permissions.
 
-- Specify `Prefer: outlook.body-content-type="text"` to get message bodies returned in text format.
-- Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return message bodies in HTML format.
+For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a message folder with John. 
+You can get the messages in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.
 
-<!--
-If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/messages
+```
 
-- For text format requests: `Preference-Applied: outlook.body-content-type="text"`
-- For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
+This capability applies to all the supported GET messages operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
+It also applies if Garth has delegated his entire mailbox to John.
 
--->
+If Garth has not shared his message folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
+will return an error. In such cases, specifying a user ID or user principal name only works for getting messages in the signed-in user’s own message folders, 
+and the query is equivalent to using the /me shortcut:
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Read; Mail.ReadWrite*
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages
+```
+
+This capability is available in only GET operations of:
+
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
+- The above resources in delegated mailboxes
+
+This capability is not available in other operations for contacts, events, messages, and their folders.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
+|Application | Mail.Read, Mail.ReadWrite |
+
 ## HTTP request
 
 To get all the messages in a user's mailbox:
@@ -62,10 +85,10 @@ You can use the `$filter` query parameter on the **mentionsPreview** property to
 the signed-in user.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
+| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -188,9 +211,8 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "name": "get_messages_in_text"
 }-->
 ```http
-Prefer: outlook.body-content-type="text"
-
 GET https://graph.microsoft.com/beta/me/messages?$select=subject,body,bodyPreview,uniqueBody
+Prefer: outlook.body-content-type="text"
 ```
 ##### Response 3
 Here is an example of the response. 
@@ -201,7 +223,7 @@ Note: The response includes a `Preference-Applied: outlook.body-content-type` he
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.message",
   "isCollection": true
 } -->

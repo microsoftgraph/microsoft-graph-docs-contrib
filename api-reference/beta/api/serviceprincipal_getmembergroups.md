@@ -4,8 +4,15 @@
 
 Get the list of groups that this service principal is a member of.  The check is transitive.
 
-## Prerequisites
-The following **scopes** are required to execute this API: *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -27,7 +34,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and String collection object in the response body.
+If successful, this method returns `200 OK` response code and String collection object in the response body.
 
 ## Example
 Here is an example of how to call this API.

@@ -4,9 +4,15 @@
 
 Return a list of calendar reminders within the specified start and end times. 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Calendars.Read; Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -33,7 +39,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
+If successful, this method returns `200 OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
 
 ## Example
 Here is an example of how to call this API.

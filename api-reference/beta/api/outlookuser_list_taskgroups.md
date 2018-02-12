@@ -5,8 +5,15 @@
 Get all the Outlook task groups in the user's mailbox.
 
 The response always includes the default task group `My Tasks`, and any other task groups that have been created in the mailbox.
-## Prerequisites
-The following **scopes** are required to execute this API: _Tasks.Read_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Tasks.Read    |
+|Delegated (personal Microsoft account) | Tasks.Read    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

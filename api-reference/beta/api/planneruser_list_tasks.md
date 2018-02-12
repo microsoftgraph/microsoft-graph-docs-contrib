@@ -3,16 +3,21 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve a list of **plannertask** objects assigned to a User.
-## Prerequisites
-The following **scopes** are required to execute this API: 
 
-*Group.Read.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/tasks
 GET /users/<id>/planner/tasks
-GET /drive/root/createdByUser/planner/tasks
 ```
 
 ## Request headers

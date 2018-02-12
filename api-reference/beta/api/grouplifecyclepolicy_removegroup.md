@@ -4,9 +4,16 @@
 
 Removes a group from a lifecycle policy.
 
-## Prerequisites
+## Permissions
 
-The following **scopes** are required to execute this API: *Directory.ReadWrite.All*
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported |
+|Application |  Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -30,16 +37,16 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code. If the group is removed from the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
+If successful, this method returns `200 OK` response code. If the group is removed from the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
 
 ## Example
 
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "grouplifecyclepolicy_removegroup"
-}-->
+} -->
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/removeGroup
 Content-type: application/json
@@ -51,12 +58,8 @@ Content-length: 57
 ```
 
 ##### Response
+<!-- { "blockType": "ignored" } -->
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

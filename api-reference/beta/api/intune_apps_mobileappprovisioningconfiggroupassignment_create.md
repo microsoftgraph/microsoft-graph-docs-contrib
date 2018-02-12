@@ -6,32 +6,40 @@
 
 Create a new [mobileAppProvisioningConfigGroupAssignment](../resources/intune_apps_mobileappprovisioningconfiggroupassignment.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/groupAssignments
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a mobileAppProvisioningConfigGroupAssignment object.
-The following table shows the properties that are required when you create a mobileAppProvisioningConfigGroupAssignment.
+In the request body, supply a JSON representation for the mobileAppProvisioningConfigGroupAssignment object.
+
+The following table shows the properties that are required when you create the mobileAppProvisioningConfigGroupAssignment.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |targetGroupId|String|The ID of the AAD group in which the app provisioning configuration is being targeted.|
 |id|String|Key of the entity.|
+
+
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [mobileAppProvisioningConfigGroupAssignment](../resources/intune_apps_mobileappprovisioningconfiggroupassignment.md) object in the response body.
@@ -39,7 +47,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/groupAssignments
 Content-type: application/json
 Content-length: 129
@@ -52,7 +60,7 @@ Content-length: 129
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 178

@@ -4,12 +4,19 @@
 
 Make the role assignment as permanent.
 
-## Prerequisites
-The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
 
 The requestor needs to have _Privileged Role Administrator_ role. 
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,7 +38,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
+If successful, this method returns `200 OK` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

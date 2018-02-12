@@ -6,21 +6,26 @@
 
 List properties and relationships of the [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) objects.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All; DeviceManagementApps.Read.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /deviceAppManagement/androidManagedAppProtections
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
@@ -33,16 +38,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1954
+Content-Length: 2065
 
 {
   "value": [
@@ -69,7 +74,8 @@ Content-Length: 1954
       "maximumPinRetries": 1,
       "simplePinBlocked": true,
       "minimumPinLength": 0,
-      "pinCharacterSet": "numeric",
+      "pinCharacterSet": "alphanumericAndSymbol",
+      "periodBeforePinReset": "PT3M29.6631862S",
       "allowedDataStorageLocations": [
         "sharePoint"
       ],
@@ -81,14 +87,13 @@ Content-Length: 1954
       "minimumWarningOsVersion": "Minimum Warning Os Version value",
       "minimumRequiredAppVersion": "Minimum Required App Version value",
       "minimumWarningAppVersion": "Minimum Warning App Version value",
-      "targetedSecurityGroupsCount": 11,
-      "targetedSecurityGroupIds": [
-        "Targeted Security Group Ids value"
-      ],
+      "isAssigned": true,
       "screenCaptureBlocked": true,
       "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
       "encryptAppData": true,
-      "deployedAppCount": 0
+      "deployedAppCount": 0,
+      "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+      "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
     }
   ]
 }

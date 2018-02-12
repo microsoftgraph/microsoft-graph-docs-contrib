@@ -11,7 +11,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | User.ReadWrite    |
 |Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
-When updating the passwordProfile property, the following scope is required: Directory.AccessAsUser.All.
+When updating the passwordProfile property, the following permission is required: Directory.AccessAsUser.All.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -96,8 +96,7 @@ Content-length: 491
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "city": "city-value"
 }
 ```
 ##### Response

@@ -6,9 +6,15 @@ Delete a message in the specified user's mailbox, or delete a relationship of th
 
 For example, you can delete a specific [mention](../resources/mention.md) of the current user's in the message.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Mail.ReadWrite* 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 
 To delete the specified message:
@@ -39,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request 1
