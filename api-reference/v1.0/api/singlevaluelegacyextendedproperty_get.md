@@ -1,13 +1,15 @@
 # Get singleValueLegacyExtendedProperty
 
 You can get a single resource instance expanded with a specific extended property, or a collection of resource instances
-that contain a specific extended property.
+that include extended properties matching a filter.
 
 Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended 
 property. Use a `$filter` and `eq` operator on the **id** property to specify the extended property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) object that represents an extended property. 
 
-Using the query parameter `$filter` allows you to get all the instances of the specified resource that contain a specific 
-extended property. The filter uses an `eq` operator on the **id** property, and a `eq` or `contains` operator on the **value** property. 
+To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator 
+on the **id** property. In addition, for numeric extended properties, apply one of the following operators on the **value** property: 
+`eq`, `ne`,`ge`, `gt`, `le`, or `lt`. For string-typed extended properties, apply a `contains` or `startswith` operator on **value**.
+
 The filter is applied to all instances of the resource in the signed-in user's mailbox. 
 
 Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive. Filtering the **value** property of an extended 
@@ -42,7 +44,7 @@ getting. To learn more, including how to choose permissions, see [Permissions](.
 
 ## HTTP request
 
-#### GET a resource instance using `$expand`
+#### GET a resource instance expanded with an extended property that matches a filter
 Get a resource instance expanded with the extended property which matches a filter on the 
 **id** property. Make sure you apply 
 [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
@@ -100,13 +102,16 @@ GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### GET resource instances using `$filter` and `eq` operator
+#### GET resource instances that include numeric extended properties matching a filter
 
-Get instances of a supported resource that have an extended property matching a filter. The filter uses an `eq` operator on the 
-**id** and **value** properties. Make sure you apply 
+Get instances of a supported resource that have a numeric extended property matching a filter. The filter uses an `eq` operator on the 
+**id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`. 
+Make sure you apply 
 [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
 forward slash, and space.
 
+The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value. You can substitute the 
+`eq` operator on the **value** by any one of the other operators (`ne`,`ge`, `gt`, `le`, or `lt`) that apply to numeric values.
 
 Get **message** instances:
 <!-- { "blockType": "ignored" } -->
@@ -161,10 +166,10 @@ GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-#### GET resource instances using `$filter`, and the `eq` and `contains` operators
+#### GET resource instances with string-typed extended properties matching a filter
 
-Get instances of the **message** or **event** resource that have an extended property matching a filter. The filter uses an `eq` operator on the 
-**id** property, and a `contains` operator on the **value** property. Make sure you apply 
+Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter. The filter uses an `eq` operator on the 
+**id** property, and a `contains` or `startswith` operator on the **value** property. Make sure you apply 
 [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
 forward slash, and space.
 
@@ -175,6 +180,9 @@ Get **message** instances:
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
 ```
 
 Get **event** instances:
@@ -182,12 +190,15 @@ Get **event** instances:
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
 ```
 
 Get group **event** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
 ```
 
 
@@ -210,10 +221,10 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code.
 
-#### GET resource instance using `$expand`
+#### GET resource instance expanded with a matching extended property
 The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
   
-#### GET resource instances using `$filter` and the `eq` or `contains` operator
+#### GET resource instances that contain string or numeric extended properties matching a filter
 The response body includes one or more objects representing the resource instances that contain the matching extended property. The response body does not include the extended property.
 
 ## Example
