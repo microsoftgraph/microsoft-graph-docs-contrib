@@ -318,8 +318,6 @@
 			<Item text="List members" url="/en-us/api-reference/v1.0/api/educationclass_list_members" />
 			<Item text="Add member" url="/en-us/api-reference/v1.0/api/educationclass_post_members" />
 			<Item text="Remove member" url="/en-us/api-reference/v1.0/api/educationclass_delete_members" />
-			<Item text="List assignments" url="/en-us/api-reference/v1.0/api/educationclass_list_assignments" />
-			<Item text="Create assignment" url="/en-us/api-reference/v1.0/api/educationclass_post_assignments" />	
 		</Item>
 		<Item text="Users" url="/en-us/api-reference/v1.0/resources/educationuser" >
 			<Item text="List schools" url="/en-us/api-reference/v1.0/api/educationuser_list_schools" />
