@@ -291,6 +291,43 @@
       <Item text="Get subscribedSku" url="/en-us/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
     </Item>
   </Item>
+  <Item text="Education" url="/en-us/api-reference/v1.0/resources/education-overview" >
+		<Item text="Schools" url="/en-us/api-reference/v1.0/resources/educationschool" >
+			<Item text="List schools" url="/en-us/api-reference/v1.0/api/educationroot_list_schools" />
+			<Item text="Create school" url="/en-us/api-reference/v1.0/api/educationroot_post_schools" />
+			<Item text="Get school" url="/en-us/api-reference/v1.0/api/educationschool_get" />
+			<Item text="Update school" url="/en-us/api-reference/v1.0/api/educationschool_update" />
+			<Item text="Delete school" url="/en-us/api-reference/v1.0/api/educationschool_delete" />
+			<Item text="List classes" url="/en-us/api-reference/v1.0/api/educationschool_list_classes" />
+			<Item text="Create class" url="/en-us/api-reference/v1.0/api/educationschool_post_classes" />
+			<Item text="Remove class" url="/en-us/api-reference/v1.0/api/educationschool_delete_classes" />
+			<Item text="List users" url="/en-us/api-reference/v1.0/api/educationschool_list_users" />
+			<Item text="Add user" url="/en-us/api-reference/v1.0/api/educationschool_post_users" />
+			<Item text="Remove user" url="/en-us/api-reference/v1.0/api/educationschool_delete_users" />
+		</Item>
+		<Item text="Classes" url="/en-us/api-reference/v1.0/resources/educationclass" >
+			<Item text="List schools" url="/en-us/api-reference/v1.0/api/educationclass_list_schools" />
+			<Item text="List classes" url="/en-us/api-reference/v1.0/api/educationroot_list_classes" />
+			<Item text="Create class" url="/en-us/api-reference/v1.0/api/educationroot_post_classes" />
+			<Item text="Get class" url="/en-us/api-reference/v1.0/api/educationclass_get" />
+			<Item text="Update class" url="/en-us/api-reference/v1.0/api/educationclass_update" />
+			<Item text="Delete class" url="/en-us/api-reference/v1.0/api/educationclass_delete" />
+			<Item text="List teachers" url="/en-us/api-reference/v1.0/api/educationclass_list_teachers" />
+			<Item text="Add teacher" url="/en-us/api-reference/v1.0/api/educationclass_post_teachers" />
+			<Item text="Remove teacher" url="/en-us/api-reference/v1.0/api/educationclass_delete_teachers" />
+			<Item text="List members" url="/en-us/api-reference/v1.0/api/educationclass_list_members" />
+			<Item text="Add member" url="/en-us/api-reference/v1.0/api/educationclass_post_members" />
+			<Item text="Remove member" url="/en-us/api-reference/v1.0/api/educationclass_delete_members" />
+			<Item text="List assignments" url="/en-us/api-reference/v1.0/api/educationclass_list_assignments" />
+			<Item text="Create assignment" url="/en-us/api-reference/v1.0/api/educationclass_post_assignments" />	
+		</Item>
+		<Item text="Users" url="/en-us/api-reference/v1.0/resources/educationuser" >
+			<Item text="List schools" url="/en-us/api-reference/v1.0/api/educationuser_list_schools" />
+			<Item text="List classes" url="/en-us/api-reference/v1.0/api/educationuser_list_classes" />
+			<Item text="Get user" url="/en-us/api-reference/v1.0/api/educationuser_get" />
+			<Item text="Delete user" url="/en-us/api-reference/v1.0/api/educationuser_delete" />
+		</Item>
+  </Item>
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="Workbook" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
       <Item text="Create session" url="/en-us/api-reference/v1.0/api/workbook_createsession" />
