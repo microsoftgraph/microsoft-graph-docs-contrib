@@ -1,14 +1,6 @@
 # educationSchool resource type
 
-A school. The **educationSchool** resource currently corresponds to an [administrativeUnit](../../beta/resources/administrativeunit.md) resource and shares the same ID.  
-
->**Note:**  The **administrativeUnit** and **educationOrganization** resources are /beta version resources. If using these resources, be sure to review the [change log](../../../concepts/changelog.md) periodically. When Microsoft Graph API resources are released to the /v1.0  endpoint, the release is noted in the change log. If your app consumes the **administrativeUnit** or **educationOrganization** resources, you will need to declare base request URLs as shown in the the following code block:  
-```JavaScript
-var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
-```
-
-This resource is a subtype of [educationOrganization](../../beta/resources/educationorganization.md).
+A resource representing a school and used to manage the classes, teachers, and students of the represented school.  
 
 
 ## Methods
@@ -22,7 +14,6 @@ This resource is a subtype of [educationOrganization](../../beta/resources/educa
 |[Add user](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the school by posting to the **users** navigation property.|
 |[List users](../api/educationschool_list_users.md) |[educationUser](educationuser.md) collection| Get the **educationUser** object collection.|
 |[Remove user](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the school through the **users** navigation property.|
-|[Get administrativeUnit](../api/educationschool_get_administrativeunit.md) |[administrativeUnit](../../beta/resources/administrativeunit.md)| Get the **administrativeUnit** that corresponds to this **educationSchool**.|
 |[Update](../api/educationschool_update.md) | [educationSchool](educationschool.md)	|Update an **educationSchool** object. |
 |[Delete](../api/educationschool_delete.md) | None |Delete an **educationSchool** object. |
 
