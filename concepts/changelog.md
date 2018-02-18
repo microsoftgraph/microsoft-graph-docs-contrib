@@ -13,7 +13,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|Beta|Added `favoritePlanReferences` and `recentPlanReferences` properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity. |
 |Addition|Beta|Added `favoritePlans` and `recentPlans` navigation properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity. |
 |Addition|Beta|Added `contexts` property to [plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) entity. |
-|Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity. |## January 2018
+|Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity. |
+
+### Reports APIs
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Addition    | Beta    | Added the **activatedOnSharedComputer** property to the [userActivationCounts](../api-reference/beta/resources/useractivationcounts.md) entity.|
+| Addition    | Beta    | Added the **sharedComputerActivation** property to the [office365ActivationsUserCounts](../api-reference/beta/resources/office365activationsusercounts.md) entity.|
 
 ## January 2018
 
@@ -163,15 +169,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|Beta|Added the **supportsUserLicensing** and **supportsDeviceLicensing** properties to the [vppLicensingType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_vpplicensingtype) complex type|
 |Change|Beta|Removed the **actionMessage** property from the [vppTokenActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult) complex type|
 
-## January 2018
-
 ### Reports APIs
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
 | Addition    | v1.0    | Added the following APIs:<br>[getTeamsUserActivityUserDetail](../api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail.md)<br>[getTeamsUserActivityCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivitycounts.md)<br>[getTeamsUserActivityUserCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts.md)<br>[getTeamsDeviceUsageUserDetail](../api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail.md)<br>[getTeamsDeviceUsageUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts.md)<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts.md) |
 
-
 ## December 2017
+
+### Delta query
+
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Change      | v1.0    | Add optional query filtering capability to [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
 
 ### Microsoft Intune APIs
 
@@ -821,7 +830,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Add delta function support to V1.0. Add to the following entities to perform [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Get incremental changes to users](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users) |
+| Addition        | v1.0        | Add delta function support to v1.0. Add to the following entities to perform [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Get incremental changes to users](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users) |
 | Change          | Beta        | Add additional optional query filtering capability (by id) to [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_delta). |
 
 ### Added user resource support for deleted items
@@ -849,13 +858,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | V1.0        | Added operations on [domains](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain).<br/>New entities:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>New actions:</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
+| Addition        | v1.0        | Added operations on [domains](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain).<br/>New entities:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>New actions:</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
 
 ### Added contracts to v1.0
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | V1.0        | New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
+| Addition        | v1.0        | New entity:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
 ### Added licenseDetails to v1.0
 
@@ -1701,7 +1710,7 @@ Added support for dynamic group membership through the public preview API, inclu
 
 | **Change type** | **Endpoint** | **Description**                          |
 | :-------------- | :----------- | :--------------------------------------- |
-| Addition        | v1.0         | Webhooks are now GA on V1.0 endpoint via the _/Subscriptions_ resource. Create, Read, Renew and Delete subscriptions to receive notifications on data from Outlook and Office 365 group conversations. |
+| Addition        | v1.0         | Webhooks are now GA on v1.0 endpoint via the _/Subscriptions_ resource. Create, Read, Renew and Delete subscriptions to receive notifications on data from Outlook and Office 365 group conversations. |
 
 ### User
 
