@@ -195,16 +195,20 @@ does not become part of the body of the resultant message draft.
 
 ## Query parameter limitations
 
-* **$expand** limitations:
-	* No support for `nextLink`
- 	* No support for more than 1 level of expand
- 	* No support with extra parameters (**$filter**, **$select**)
-* Multiple namespaces are not supported
+* Multiple namespaces are not supported.
 * GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the `Accepted` or `RejectedSenders` on a group.
-* `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata
-* Cross-workload filtering/search is not available. 
-* Full-text search (using **$search**) is only available for some entities, like messages.
+* `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
+* `$expand`:
+  * No support for `nextLink`
+  * No support for more than 1 level of expand
+  * No support with extra parameters (`$filter`, `$select`)
+* `$filter`:
+  * `/attachments` endpoint will silently ignore filters.
+  * Cross-workload filtering is no supported.
+* `$search`:
+  * Full-text search is only available for a subset of entities such as messages.
+  * Cross-workload searching is no supported.
 
 ## Delta query
 
