@@ -23,6 +23,8 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
+>Note: A Content-Length header with a value of `0` is required. If the `POST /me/messages/{id}/send` operation returns a 411 response code, your app is not sending a Content-Header with this POST request. 
+
 ## Request body
 
 ## Response
