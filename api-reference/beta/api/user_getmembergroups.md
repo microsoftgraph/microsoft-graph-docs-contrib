@@ -13,11 +13,11 @@ always direct.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type                        | Permissions (from least to most privileged)                                                                                                      |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                                                                                                          |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | ~~User.Read and Group.Read.All~~, ~~User.ReadBasic.All and Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                                                                                   |
-| Application                            | _Group.Read.All_, Directory.Read.All, Directory.ReadWrite.All                                                                                    |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                       |
+| Application                            | _Group.Read.All_, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
 
 > **Note:** This API currently requires the `Directory.Read.All` permission or higher. Using the Group.Read.All permission, either alone or in combination with a `User.` permission, will return an error. This is a known bug.
 
