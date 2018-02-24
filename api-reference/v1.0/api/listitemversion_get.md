@@ -6,8 +6,6 @@ title: Get a previous version of a list item - SharePoint API
 ---
 # Get a ListItemVersion resource (preview)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).
 
 ## Permissions

@@ -6,8 +6,6 @@ title: Download a previous version
 ---
 # Download contents of a DriveItemVersion resource (preview)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
 
 ## Permissions

@@ -6,8 +6,6 @@ title: PublicationFacet
 ---
 # PublicationFacet resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.
 
 ## JSON representation

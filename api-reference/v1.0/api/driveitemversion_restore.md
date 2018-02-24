@@ -6,8 +6,6 @@ title: Restore a previous version
 ---
 # Restore a previous version of a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
 ## Permissions

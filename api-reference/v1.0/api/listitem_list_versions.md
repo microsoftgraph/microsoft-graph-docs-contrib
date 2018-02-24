@@ -6,8 +6,6 @@ title: Get a previous version of a SharePoint list record
 ---
 # Listing versions of a ListItem (preview)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 SharePoint can be configured to retain the history for list items.
 
 Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.
