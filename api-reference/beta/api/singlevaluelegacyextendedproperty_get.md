@@ -10,7 +10,7 @@ property. Use a `$filter` and `eq` operator on the **id** property to specify th
 
 To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator 
 on the **id** property. In addition, for numeric extended properties, apply one of the following operators on the **value** property: 
-`eq`, `ne`,`ge`, `gt`, `le`, or `lt`. For string-typed extended properties, apply a `contains` or `startswith` operator on **value**. 
+`eq`, `ne`,`ge`, `gt`, `le`, or `lt`. For string-typed extended properties, apply a `contains`, `startswith`, `eq`, or `ne` operator on **value**. 
 
 Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive. Filtering the **value** property of an extended 
 property is case-insensitive.
@@ -213,7 +213,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 #### GET resource instances with string-typed extended properties matching a filter
 
 Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter. The filter uses an `eq` operator on the 
-**id** property, and a `contains` or `startswith` operator on the **value** property. Make sure you apply 
+**id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`. Make sure you apply 
 [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
 forward slash, and space.
 
@@ -224,9 +224,18 @@ Get **message** instances:
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
 Get **event** instances:
@@ -234,8 +243,15 @@ Get **event** instances:
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
 Get group **event** instances:
@@ -243,6 +259,8 @@ Get group **event** instances:
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
 
@@ -268,8 +286,8 @@ If successful, this method returns a `200 OK` response code.
 #### GET resource instance using `$expand`
 The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
   
-#### GET resource instances using `$filter` and the `eq` or `contains` operator
-The response body includes one or more objects representing the resource instances that contain the matching extended property. The response body does not include the extended property.
+#### GET resource instances that contain an extended property matching a filter
+The response body includes one or more objects representing the resource instances that contain a matching extended property. The response body does not include the extended property.
 
 ## Example
 #### Request 1
