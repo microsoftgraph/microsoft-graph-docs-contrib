@@ -1,6 +1,8 @@
 # patternedRecurrence resource type
 
-The recurrence pattern and range.
+The recurrence pattern and range.  
+
+**Note:** Updating a single instance of a recurrence to change it's `Start` and `End` properties might result in a `ErrorOccurrenceCrossingBoundary` error with the following error message `Modified occurrence is crossing or overlapping adjacent occurrence` if you have mutiple instances on the same patterned day. For example you can not have two event instances for a daily recurrence pattern on the same day.
 
 ## Properties
 | Property	   | Type	|Description|

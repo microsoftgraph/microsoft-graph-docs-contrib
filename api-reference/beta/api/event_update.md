@@ -2,7 +2,9 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of the [event](../resources/event.md) object.
+Update the properties of the [event](../resources/event.md) object.  
+
+**Note:** Updating a single instance of a recurrence to change it's `Start` and `End` properties might result in a `ErrorOccurrenceCrossingBoundary` error with the following error message `Modified occurrence is crossing or overlapping adjacent occurrence` if you have mutiple instances on the same patterned day. For example you can not have two event instances for a daily recurrence pattern on the same day.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
