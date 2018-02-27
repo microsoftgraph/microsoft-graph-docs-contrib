@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/activities/recent
+GET /me/activities
 ```
 
 ## Optional query parameters
@@ -48,7 +48,7 @@ No request body.
 
 ## Response
 
-If successful, this method returns the `20O OK` response code with the user's recent activities for your application.
+If successful, this method returns the `20O OK` response code with the user's activities for your application.
 
 ## Example
 
