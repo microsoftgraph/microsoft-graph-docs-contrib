@@ -193,6 +193,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [file]: file.md
 [fileSystemInfo]: fileSystemInfo.md
 [folder]: folder.md
+[getting previous versions]: ../api/driveitem_list_versions.md
 [getting thumbnails]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
 [image]: image.md

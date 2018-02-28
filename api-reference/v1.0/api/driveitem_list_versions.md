@@ -4,7 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: List versions of a file
 ---
-# Listing versions of a DriveItem (preview)
+# Listing versions of a DriveItem
 
 OneDrive and SharePoint can be configured to retain the history for files.
 Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.

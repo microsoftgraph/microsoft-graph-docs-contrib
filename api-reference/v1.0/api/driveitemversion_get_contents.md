@@ -4,7 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Download a previous version
 ---
-# Download contents of a DriveItemVersion resource (preview)
+# Download contents of a DriveItemVersion resource
 
 Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
 

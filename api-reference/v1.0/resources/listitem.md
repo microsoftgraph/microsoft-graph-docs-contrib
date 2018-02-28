@@ -95,6 +95,7 @@ The following properties are inherited from **[baseItem][]**.
 [fieldValueSet]: fieldValueSet.md
 [identitySet]: identitySet.md
 [list]: list.md
+[listItemVersion]: listItemVersion.md
 
 <!-- {
   "type": "#page.annotation",
