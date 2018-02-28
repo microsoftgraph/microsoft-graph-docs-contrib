@@ -35,7 +35,7 @@ If successful, this method returns a `200 OK` response code and a [user](../reso
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_user"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/education/me/user
@@ -49,7 +49,7 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.user",
-  "isCollection": true
+  "isCollection": false
 } -->
 ```http
 HTTP/1.1 200 OK
