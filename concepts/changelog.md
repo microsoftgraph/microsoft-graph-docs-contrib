@@ -8,7 +8,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Reports APIs
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|beta|Added the **siteId** property to the [sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md) entity.|
+|Addition|beta|Added the **siteId** property to the [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md) entity.|
 
 
 ## February 2018
