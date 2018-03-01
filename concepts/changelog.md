@@ -3,13 +3,6 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
-##March 2018
-
-### Reports APIs
-|Change type|Version|Description|
-|Addition|beta|Added the **siteId** property to the [sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md) entity.|
-
-
 ## February 2018
 
 ### Microsoft Intune APIs
