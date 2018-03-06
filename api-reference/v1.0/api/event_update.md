@@ -2,7 +2,8 @@
 
 Update the properties of the [event](../resources/event.md) object.  
 
-**Note:** Updating a single instance of a recurrence to change it's `Start` and `End` properties might result in a `ErrorOccurrenceCrossingBoundary` error with the following error message `Modified occurrence is crossing or overlapping adjacent occurrence` if you have mutiple instances on the same patterned day. For example you can not have two event instances for a daily recurrence pattern on the same day.
+**Note:** If you have multiple instances with the same daily pattern, and you update a single instance of a recurrence to change the `Start` and `End` properties, it might result in an `ErrorOccurrenceCrossingBoundary` error and the following error message: `Modified occurrence is crossing or overlapping adjacent occurrence`. For example, you can't have two event instances for a daily recurrence pattern on the same day.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
