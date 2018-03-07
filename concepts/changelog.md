@@ -66,6 +66,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition    | Beta    | Added the **activatedOnSharedComputer** property to the [userActivationCounts](../api-reference/beta/resources/useractivationcounts.md) entity.|
 | Addition    | Beta    | Added the **sharedComputerActivation** property to the [office365ActivationsUserCounts](../api-reference/beta/resources/office365activationsusercounts.md) entity.|
 
+## January 2018
 
 ### JSON Batching
 
