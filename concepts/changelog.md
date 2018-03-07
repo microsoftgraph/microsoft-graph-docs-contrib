@@ -3,6 +3,18 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
+
+## March 2018
+
+### Group lifecycle policy
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0        | Added [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy) |
+| Addition        | v1.0        | Added the following APIs for group lifecycle policy: [Create](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [List](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list), [Get](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get), [Update](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update), [Delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete), [Add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup), [Remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
+| Addition        | v1.0        | Added [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group) |
+| Change | V1.0 | Added renewedDateTime property and [renew](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_renew) to [group](../api-reference/v1.0/resources/group.md) | 
+
 ## February 2018
 
 ### Microsoft Intune APIs
@@ -250,7 +262,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|Beta|Added the **tpmSpecificationVersion**, **operatingSystemEdition**, **deviceFullQualifiedDomainName**, **deviceGuardVirtualizationBasedSecurityHardwareRequirementState**, **deviceGuardVirtualizationBasedSecurityState** and **deviceGuardLocalSystemAuthorityCredentialGuardState** properties to the [hardwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_hardwareinformation) complex type|
 |Change|Beta|Added the **vpnConfigurationId** property to the [iosVppAppAssignmentSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings) complex type|
 |Change|Beta|Added the **resourceActions** property to the [rolePermission](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_rbac_rolepermission) complex type|
-
 
 ### Reports APIs
 | Change type | Version | Description                              |
