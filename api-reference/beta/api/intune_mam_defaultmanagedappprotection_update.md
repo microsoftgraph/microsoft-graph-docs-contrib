@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the [
 |maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is wiped. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md) Possible values are: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device. Inherited from [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -77,6 +77,9 @@ The following table shows the properties that are required when you create the [
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
+|exemptedAppProtocols|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
+|exemptedAppPackages|[keyValuePair](../resources/intune_mam_keyvaluepair.md) collection|Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps.|
+|faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 
 
 
@@ -89,7 +92,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 1929
+Content-length: 2292
 
 {
   "displayName": "Display Name value",
@@ -111,7 +114,7 @@ Content-length: 1929
   "maximumPinRetries": 1,
   "simplePinBlocked": true,
   "minimumPinLength": 0,
-  "pinCharacterSet": "numeric",
+  "pinCharacterSet": "alphanumericAndSymbol",
   "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
@@ -138,7 +141,22 @@ Content-length: 1929
   ],
   "deployedAppCount": 0,
   "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+  "exemptedAppProtocols": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
+  "exemptedAppPackages": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
+  "faceIdBlocked": true
 }
 ```
 
@@ -147,7 +165,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2103
+Content-Length: 2466
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -172,7 +190,7 @@ Content-Length: 2103
   "maximumPinRetries": 1,
   "simplePinBlocked": true,
   "minimumPinLength": 0,
-  "pinCharacterSet": "numeric",
+  "pinCharacterSet": "alphanumericAndSymbol",
   "periodBeforePinReset": "PT3M29.6631862S",
   "allowedDataStorageLocations": [
     "sharePoint"
@@ -199,7 +217,22 @@ Content-Length: 2103
   ],
   "deployedAppCount": 0,
   "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-  "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+  "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+  "exemptedAppProtocols": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
+  "exemptedAppPackages": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
+  "faceIdBlocked": true
 }
 ```
 

@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5621
+Content-Length: 4867
 
 {
   "value": {
@@ -83,22 +83,14 @@ Content-Length: 5621
     "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
     "azureRightsManagementServicesAllowed": true,
     "iconsVisible": true,
-    "allowedApps": [
-      {
-        "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
-        "displayName": "Display Name value",
-        "description": "Description value",
-        "publisherName": "Publisher Name value",
-        "productName": "Product Name value"
-      }
-    ],
     "protectedApps": [
       {
         "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
         "displayName": "Display Name value",
         "description": "Description value",
         "publisherName": "Publisher Name value",
-        "productName": "Product Name value"
+        "productName": "Product Name value",
+        "denied": true
       }
     ],
     "exemptApps": [
@@ -107,7 +99,8 @@ Content-Length: 5621
         "displayName": "Display Name value",
         "description": "Description value",
         "publisherName": "Publisher Name value",
-        "productName": "Product Name value"
+        "productName": "Product Name value",
+        "denied": true
       }
     ],
     "enterpriseNetworkDomainNames": [
@@ -116,19 +109,6 @@ Content-Length: 5621
         "displayName": "Display Name value",
         "resources": [
           "Resources value"
-        ]
-      }
-    ],
-    "enterpriseCloudResources": [
-      {
-        "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResourceCollection",
-        "displayName": "Display Name value",
-        "resources": [
-          {
-            "@odata.type": "microsoft.graph.windowsInformationProtectionCloudResource",
-            "ipAddressOrFQDN": "Ip Address Or FQDN value",
-            "proxy": "Proxy value"
-          }
         ]
       }
     ],
@@ -197,9 +177,6 @@ Content-Length: 5621
         ]
       }
     ],
-    "targetedSecurityGroupIds": [
-      "Targeted Security Group Ids value"
-    ],
     "isAssigned": true,
     "revokeOnMdmHandoffDisabled": true,
     "mdmEnrollmentUrl": "https://example.com/mdmEnrollmentUrl/",
@@ -211,7 +188,8 @@ Content-Length: 5621
     "pinExpirationDays": 1,
     "numberOfPastPinsRemembered": 10,
     "passwordMaximumAttemptCount": 11,
-    "minutesOfInactivityBeforeDeviceLock": 3
+    "minutesOfInactivityBeforeDeviceLock": 3,
+    "daysWithoutContactBeforeUnenroll": 0
   }
 }
 ```

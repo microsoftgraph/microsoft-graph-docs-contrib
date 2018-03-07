@@ -21,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
-GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/groupAssignments/{deviceCompliancePolicyGroupAssignmentId}/deviceCompliancePolicy
 ```
 
 ## Optional query parameters
@@ -50,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1398
+Content-Length: 1790
 
 {
   "value": {
@@ -85,7 +84,17 @@ Content-Length: 1398
     "defenderEnabled": true,
     "defenderVersion": "Defender Version value",
     "signatureOutOfDate": true,
-    "rtpEnabled": true
+    "rtpEnabled": true,
+    "validOperatingSystemBuildRanges": [
+      {
+        "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+        "description": "Description value",
+        "lowestVersion": "Lowest Version value",
+        "highestVersion": "Highest Version value"
+      }
+    ],
+    "deviceThreatProtectionEnabled": true,
+    "deviceThreatProtectionRequiredSecurityLevel": "secured"
   }
 }
 ```

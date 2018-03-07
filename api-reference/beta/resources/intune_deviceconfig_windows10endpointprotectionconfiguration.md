@@ -26,6 +26,19 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|localSecurityOptionsBlockMicrosoftAccounts|Boolean|Prevent users from adding new Microsoft accounts to this computer.|
+|localSecurityOptionsEnableAdministratorAccount|Boolean|Determines whether the local Administrator account is enabled or disabled.|
+|defenderSecurityCenterDisableAppBrowserUI|Boolean|Used to disable the display of the app and browser protection area.|
+|defenderSecurityCenterDisableFamilyUI|Boolean|Used to disable the display of the family options area.|
+|defenderSecurityCenterDisableHealthUI|Boolean|Used to disable the display of the device performance and health area.|
+|defenderSecurityCenterDisableNetworkUI|Boolean|Used to disable the display of the firewall and network protection area.|
+|defenderSecurityCenterDisableVirusUI|Boolean|Used to disable the display of the virus and threat protection area.|
+|defenderSecurityCenterOrganizationDisplayName|String|The company name that is displayed to the users.|
+|defenderSecurityCenterHelpEmail|String|The email address that is displayed to users.|
+|defenderSecurityCenterHelpPhone|String|The phone number or Skype ID that is displayed to users.|
+|defenderSecurityCenterHelpURL|String|The help portal URL this is displayed to users.|
+|defenderSecurityCenterNotificationsFromApp|String|Notifications to show from the displayed areas of app Possible values are: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
+|defenderSecurityCenterITContactDisplay|String|Configure where to display IT contact information to end users. Possible values are: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
 |firewallPreSharedKeyEncodingMethod|String|Select the preshared key encoding to be used Possible values are: `deviceDefault`, `none`, `utF8`.|
@@ -46,8 +59,14 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |defenderOfficeMacroCodeAllowWin32ImportsType|String|Value indicating the behavior of Win32 imports from Macro code in Office Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderScriptObfuscatedMacroCodeType|String|Value indicating the behavior of obfuscated js/vbs/ps/macro code Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderScriptDownloadedPayloadExecutionType|String|Value indicating the behavior of js/vbs executing payload downloaded from Internet Possible values are: `userDefined`, `block`, `auditMode`.|
-|defenderEmailContentExecutionType|String|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email(webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
-|defenderGuardMyFoldersType|String|Value indicating the behavior of protected folders Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderPreventCredentialStealingType|String|Value indicating if credential stealing from the Windows local security authority subsystem is permitted Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderProcessCreationType|String|Value indicating response to process creations originating from PSExec and WMI commands Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedUSBProcessType|String|Value indicating response to untrusted and unsigned processes that run from USB Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedExecutableType|String|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderEmailContentExecutionType|String|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderPasswordProtectedEmailContentExecutionType|String|Value indicating if execution of password-protected executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderAdvancedRansomewareProtectionType|String|Value indicating use of advanced protection against ransomeware Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderGuardMyFoldersType|String|Value indicating the behavior of protected folders Possible values are: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
 |defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
 |defenderAdditionalGuardedFolders|String collection|List of folder paths to be added to the list of protected folders|
 |defenderNetworkProtectionType|String|Value indicating the behavior of NetworkProtection Possible values are: `userDefined`, `enable`, `auditMode`.|
@@ -67,6 +86,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |applicationGuardAllowPrintToXPS|Boolean|Allow printing to XPS from Container|
 |applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
+|applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
+|applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
 |bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
@@ -78,7 +99,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune_deviceconfig_deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation stauts by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -101,6 +123,19 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
+  "localSecurityOptionsBlockMicrosoftAccounts": true,
+  "localSecurityOptionsEnableAdministratorAccount": true,
+  "defenderSecurityCenterDisableAppBrowserUI": true,
+  "defenderSecurityCenterDisableFamilyUI": true,
+  "defenderSecurityCenterDisableHealthUI": true,
+  "defenderSecurityCenterDisableNetworkUI": true,
+  "defenderSecurityCenterDisableVirusUI": true,
+  "defenderSecurityCenterOrganizationDisplayName": "String",
+  "defenderSecurityCenterHelpEmail": "String",
+  "defenderSecurityCenterHelpPhone": "String",
+  "defenderSecurityCenterHelpURL": "String",
+  "defenderSecurityCenterNotificationsFromApp": "String",
+  "defenderSecurityCenterITContactDisplay": "String",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 1024,
   "firewallPreSharedKeyEncodingMethod": "String",
@@ -165,7 +200,13 @@ Here is a JSON representation of the resource.
   "defenderOfficeMacroCodeAllowWin32ImportsType": "String",
   "defenderScriptObfuscatedMacroCodeType": "String",
   "defenderScriptDownloadedPayloadExecutionType": "String",
+  "defenderPreventCredentialStealingType": "String",
+  "defenderProcessCreationType": "String",
+  "defenderUntrustedUSBProcessType": "String",
+  "defenderUntrustedExecutableType": "String",
   "defenderEmailContentExecutionType": "String",
+  "defenderPasswordProtectedEmailContentExecutionType": "String",
+  "defenderAdvancedRansomewareProtectionType": "String",
   "defenderGuardMyFoldersType": "String",
   "defenderGuardedFoldersAllowedAppPaths": [
     "String"
@@ -190,6 +231,8 @@ Here is a JSON representation of the resource.
   "applicationGuardAllowPrintToXPS": true,
   "applicationGuardAllowPrintToLocalPrinters": true,
   "applicationGuardAllowPrintToNetworkPrinters": true,
+  "applicationGuardAllowVirtualGPU": true,
+  "applicationGuardAllowFileSaveOnHost": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
