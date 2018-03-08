@@ -110,7 +110,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |kioskModeManagedAppId|String|Managed app id of the app to use for kiosk mode. If KioskModeManagedAppId is specified then KioskModeAppStoreUrl will be ignored.|
 |lockScreenBlockControlCenter|Boolean|Indicates whether or not to block the user from using control center on the lock screen.|
 |lockScreenBlockNotificationView|Boolean|Indicates whether or not to block the user from using the notification view on the lock screen.|
-|lockScreenBlockPassbook|Boolean|Indicates whether or not to block the user from using passbook when the device is locked.|
+|lockScreenBlockPassbook|Boolean|Indicates whether or not to block the user from using Wallet when the device is locked.|
 |lockScreenBlockTodayView|Boolean|Indicates whether or not to block the user from using the Today View on the lock screen.|
 |mediaContentRatingAustralia|[mediaContentRatingAustralia](../resources/intune_deviceconfig_mediacontentratingaustralia.md)|Media content rating settings for Australia|
 |mediaContentRatingCanada|[mediaContentRatingCanada](../resources/intune_deviceconfig_mediacontentratingcanada.md)|Media content rating settings for Canada|
