@@ -17,7 +17,7 @@ The following are a few common user-centric use cases in v1.0:
 3. [Access Lisa's files on OneDrive for Business](../api-reference/v1.0/api/driveitem_list_children.md), find the [identity](../api-reference/v1.0/resources/identityset.md) of the last person who modified a [file](../api-reference/v1.0/resources/driveitem.md) there, and navigate to that person's profile.
 4. [Access Lisa's calendar](../api-reference/v1.0/api/calendar_get.md) on Exchange Online and [determine the best time for Lisa to meet with her team](../api-reference/v1.0/api/user_findmeetingtimes.md) in the next two weeks.
 5. [Subscribe to](../api-reference/v1.0/api/subscription_post_subscriptions.md) and [track changes](../api-reference/v1.0/api/event_delta.md) in Lisa's calendar, tell Lisa when she is spending more than 80% of her time in meetings.
-6. [Set automatic replies](../api-reference/v1.0/api/mailboxsettings_update.md) when Lisa is away from the office.
+6. Set automatic replies when Lisa is away from the office. <!-- Deleted ../api-reference/v1.0/api/mailboxsettings_update.md link as file doesn't exist in repo. -->
 7. [Get the people who are most relevant to Lisa](../api-reference/v1.0/api/person_get.md), based on communication, collaboration, and business relationships.
 8. Get the latest sales projection from a [chart](../api-reference/v1.0/resources/chart.md) in an Excel file in Lisa's OneDrive for Business.
 9. [Find the tasks assigned to Lisa in Planner](../api-reference/v1.0/api/planneruser_list_tasks.md).
