@@ -143,7 +143,8 @@
       <Item text="Remove favorite" url="/en-us/api-reference/v1.0/api/group_removefavorite" />
       <Item text="Remove member" url="/en-us/api-reference/v1.0/api/group_delete_members" SEOKeyword="Remove member, Microsoft Graph API, Groups API" SEODescription="Use this API to remove member." />
       <Item text="Remove owner" url="/en-us/api-reference/v1.0/api/group_delete_owners" />
-      <Item text="Reset unseen count" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="group: resetUnseenCount, Microsoft Graph API, group API" SEODescription="" />
+      <Item text="Renew group" url="/en-us/api-reference/v1.0/api/group_renew" />
+	  <Item text="Reset unseen count" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="group: resetUnseenCount, Microsoft Graph API, group API" SEODescription="" />
       <Item text="Subscribe by mail" url="/en-us/api-reference/v1.0/api/group_subscribebymail" SEOKeyword="group: subscribeByMail, Microsoft Graph API, group API" SEODescription="" />
       <Item text="Unsubscribe by mail" url="/en-us/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail, Microsoft Graph API, group API" SEODescription="" />
       <Item text="Lifecycle policy" url="/en-us/api-reference/v1.0/resources/grouplifecyclepolicy" >
@@ -154,7 +155,6 @@
 		<Item text="Delete policy" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_delete" />
 		<Item text="Add group" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_addgroup" />
 		<Item text="Remove group" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_removegroup" />
-		<Item text="Renew group" url="/en-us/api-reference/v1.0/api/group_renew" />
 	  </Item>
 	</Item>
     <Item text="Attachment" url="/en-us/api-reference/v1.0/resources/attachment">
