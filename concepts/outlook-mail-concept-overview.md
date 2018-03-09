@@ -57,6 +57,6 @@ Learn about:
 - Ways to [organize messages](outlook-organize-messages.md)
 - How to [share message folders](outlook-share-messages-folders.md)
 
-Find out more about the mail API and [use cases](../api-reference/v1.0/resources/mail_api_overview#common-use-cases) supported in Microsoft Graph v1.0.
+Find out more about the mail API and [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) supported in Microsoft Graph v1.0.
 
 
