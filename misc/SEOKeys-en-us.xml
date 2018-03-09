@@ -154,7 +154,7 @@
 		<Item text="Delete policy" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_delete" />
 		<Item text="Add group" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_addgroup" />
 		<Item text="Remove group" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_removegroup" />
-		<Item text="Renew group" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_renewgroup" />
+		<Item text="Renew group" url="/en-us/api-reference/v1.0/api/group_renew" />
 	  </Item>
 	</Item>
     <Item text="Attachment" url="/en-us/api-reference/v1.0/resources/attachment">
