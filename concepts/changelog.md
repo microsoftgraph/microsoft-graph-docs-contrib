@@ -3,7 +3,7 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
-## February 2018
+## March 2018
 
 ### OneDrive
 |Change type|Version|Description|
@@ -16,6 +16,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|v1.0|Added the <b>root</b> property to the [siteCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/siteCollection) entity |
 |Addition|v1.0|Added the [restoreVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/driveitemversion_restore) action for the [driveItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItemVersion) entity |
 |Addition|v1.0|Added the [restoreVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/listitemversion_restore) action for the [listItemVersion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/listItemVersion) entity |
+
+## February 2018
 
 ### Microsoft Intune APIs
 |Change type|Version|Description|
