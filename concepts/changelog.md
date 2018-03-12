@@ -6,6 +6,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2018
 
+### Data Policy Operations 
+ 
+| **Change type** | **Version** | **Description**                          | 
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added new entity [dataPolicyOperation] (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/dataPolicyOperation)  
+| Addition        | beta        | Added the [exportPersonalData] (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_exportPersonalData) action on [users] (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/users) | 
+
 ### Group lifecycle policy
 
 | **Change type** | **Version** | **Description**                          |
