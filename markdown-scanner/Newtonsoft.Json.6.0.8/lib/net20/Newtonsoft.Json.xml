@@ -5155,13 +5155,13 @@
         </member>
         <member name="P:Newtonsoft.Json.JsonPropertyAttribute.ItemReferenceLoopHandling">
             <summary>
-            Gets or sets the the reference loop handling used when serializing the property's collection items.
+            Gets or sets reference loop handling used when serializing the property's collection items.
             </summary>
             <value>The collection's items reference loop handling.</value>
         </member>
         <member name="P:Newtonsoft.Json.JsonPropertyAttribute.ItemTypeNameHandling">
             <summary>
-            Gets or sets the the type name handling used when serializing the property's collection items.
+            Gets or sets type name handling used when serializing the property's collection items.
             </summary>
             <value>The collection's items type name handling.</value>
         </member>
@@ -8420,13 +8420,13 @@
         </member>
         <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ItemTypeNameHandling">
             <summary>
-            Gets or sets the the type name handling used when serializing the property's collection items.
+            Gets or sets type name handling used when serializing the property's collection items.
             </summary>
             <value>The collection's items type name handling.</value>
         </member>
         <member name="P:Newtonsoft.Json.Serialization.JsonProperty.ItemReferenceLoopHandling">
             <summary>
-            Gets or sets the the reference loop handling used when serializing the property's collection items.
+            Gets or sets reference loop handling used when serializing the property's collection items.
             </summary>
             <value>The collection's items reference loop handling.</value>
         </member>
