@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2018
 
+### Directory APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the onPremisesExtensionAttributes complex type, wrapping ExtensionAttributes 1-15, to the User entity. |
+
 ### Reports APIs
 |Change type|Version|Description|
 |:---|:---|:---|
