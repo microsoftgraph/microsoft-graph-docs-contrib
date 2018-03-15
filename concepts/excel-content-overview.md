@@ -1,6 +1,6 @@
 # Excel workbooks and charts overview
 
-Excel is an indispensable productivity tool. Users across all industries and roles embrace it as a tool for storing, tracking, and mainpulating all kinds of data. It is used for everything from simple task tracking and data management, to complex calculations and professional reporting. The Excel REST API can extend the value of your data, calculations, reporting and dashboards.
+Excel is a spreadsheet application that allows customers to organize, store, share, and manipulate data. It supports data activities of a wide range of complexity, from simple task tracking and data management, to CPU-heavy calculations and professional reporting. 
 
 ## Why integrate with Excel?
 
@@ -8,7 +8,7 @@ The Excel REST API can extend the value of your data, calculations, reporting an
 
 ### Perform calculations
 
-Users love the ease with which they can perform deep and complex calculations within Excel. Developers can now access Excel’s powerful calculation engine with instant results. For example, a mortgage calculator can take advantage of the PMT function from Excel by making a simple API call that includes principal, rate and number of payments. Excel does all the heavy lifting and returns the monthly payment instantly. With more than 300 Excel worksheet functions available, you have full access to the breadth of formulas supported by Excel today. Complex business models don’t need to be rebuilt repeatedly. Developers can leverage Excel to perform those calculations instantly and retrieve the results with simple API calls.
+Users love the ease with which they can perform deep and complex calculations within Excel. Developers can access Excel’s powerful calculation engine with instant results. For example, a mortgage calculator can take advantage of the PMT function from Excel by making a simple API call that includes principal, rate and number of payments. Excel does all the heavy lifting and returns the monthly payment instantly. With more than 300 Excel worksheet functions available, you have full access to the breadth of formulas supported by Excel today. Complex business models don’t need to be rebuilt repeatedly. Developers can leverage Excel to perform those calculations instantly and retrieve the results with simple API calls.
 
 ### Generate reports
 
@@ -20,7 +20,7 @@ Excel is also a great tool to store and track data. If your information is store
 
 **Note:** The Excel REST API supports only Office Open XML file formatted workbooks (files with the`.xlsx` extension). The `.xls` extension workbooks are not supported. 
 
-### Using the API
+## Using the API
 You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the Drive API by identifying the location of the file in the URL. For example:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
