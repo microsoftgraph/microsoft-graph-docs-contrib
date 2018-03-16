@@ -29,7 +29,7 @@ Here is a JSON representation of the resource
     "listItemUniqueId": "string",
     "siteId": "string",
     "siteUrl": "url",
-    "tenantId": string",
+    "tenantId": "string",
     "webId": "string"
 }
 ```
