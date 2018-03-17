@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an Azure AD terms of use agreement. Microsoft Graph provides API that you can use to create and manage [Azure Active Directory Terms of Use feature](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) according to your scenario.
+Represents an Azure Active Directory (Azure AD) terms of use agreement. Microsoft Graph provides APIa that you can use to create and manage the [Azure Active Directory Terms of Use feature](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) according to your scenario.
 
 ## Methods
 
@@ -15,7 +15,7 @@ Represents an Azure AD terms of use agreement. Microsoft Graph provides API that
 | [Delete](../api/agreement_delete.md) | None | Delete agreement object. |
 <!--
 | [Create agreementFile](../api/agreement_post_files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
-| [List files](../api/agreement_list_files.md) | [agreementFile](agreementfile.md) collection | Get a agreementFile object collection. |
+| [List files](../api/agreement_list_files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
 -->
 
 ## Properties
@@ -23,7 +23,7 @@ Represents an Azure AD terms of use agreement. Microsoft Graph provides API that
 |:-------------|:------------|:------------|
 |displayName|String|Display name of the agreement.|
 |id|String| Read-only.|
-|isViewingBeforeAcceptanceRequired|Boolean|Whether the user has to expand and view the agreement before accepting.|
+|isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand and view the agreement before accepting.|
 
 ## Relationships
 | Relationship | Type        | Description |
