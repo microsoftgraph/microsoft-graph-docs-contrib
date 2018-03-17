@@ -20,6 +20,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | v1.0        | Added [List groupLifecyclePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group) |
 | Change | V1.0 | Added renewedDateTime property and [renew](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_renew) to [group](../api-reference/v1.0/resources/group.md) | 
 
+### OneDrive
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new complex type:<br/>[itemPreviewInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemPreviewInfo)<br/> |
+|Addition|beta|Added the <b>name</b> property to the [contentTypeInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/contentTypeInfo) complex type |
+|Addition|beta|Added the <b>objectType</b> property to the [deleteAction](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/deleteAction) complex type |
+|Addition|beta|Added the <b>newName</b> property to the [renameAction](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/renameAction) complex type |
+|Addition|beta|Added the <b>tenantId</b> property to the [sharepointIds](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/renameAction) complex type |
+|Addition|beta|Added the <b>lastRecordedDateTime</b> property to the [itemActivityTimeSet](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivityTimeSet) complex type |
+|Addition|beta|Added the [preview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/driveitem_preview) action for the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveItem) entity |
+
+
 ## February 2018
 
 ### Microsoft Intune APIs
