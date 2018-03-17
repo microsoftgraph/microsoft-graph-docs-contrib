@@ -1,4 +1,4 @@
-a # Delete agreement
+# Delete agreement
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -16,12 +16,11 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /agreements/<id>
-
 ```
 ## Request headers
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Name         | Type        | Description |
+|:-------------|:------------|:------------|
+| Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -41,7 +40,7 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/agreements/<id>
 ```
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {

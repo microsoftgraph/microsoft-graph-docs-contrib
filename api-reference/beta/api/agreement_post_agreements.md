@@ -16,19 +16,18 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /agreements
-
 ```
 ## Request headers
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Name         | Type        | Description |
+|:-------------|:------------|:------------|
+| Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [agreement](../resources/agreement.md) object.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [agreement](../resources/agreement.md) object in the response body.
+If successful, this method returns a `201, Created` response code and [agreement](../resources/agreement.md) object in the response body.
 
 ## Example
 ##### Request
@@ -52,7 +51,9 @@ Content-length: 85
 ```
 In the request body, supply a JSON representation of [agreement](../resources/agreement.md) object.
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

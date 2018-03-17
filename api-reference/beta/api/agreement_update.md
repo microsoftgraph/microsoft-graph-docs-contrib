@@ -17,10 +17,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /agreements/<id>
 ```
-## Optional request headers
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {code} |
+## Request headers
+| Name         | Type        | Description |
+|:-------------|:------------|:------------|
+| Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -31,10 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 |isViewingBeforeAcceptanceRequired|Boolean|Whether the user has to expand and view the agreement before accepting.|
 
 ## Response
-<!--
 If successful, this method returns a `200 OK` response code and updated [agreement](../resources/agreement.md) object in the response body.
--->
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -53,7 +50,9 @@ Content-length: 85
 }
 ```
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
