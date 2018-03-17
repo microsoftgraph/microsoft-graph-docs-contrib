@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the user's agreement acceptances.
+Retrieve a list of user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
