@@ -17,14 +17,14 @@ Represents an Azure AD terms of use acceptance status.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|agreementFileId|String|Id of the agreement file accepted by the user.|
-|agreementId|String|Id of the agreement.|
+|agreementFileId|String|ID of the agreement file accepted by the user.|
+|agreementId|String|ID of the agreement.|
 |id|String| Read-only.|
 |recordedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |state|string| Possible values are: `accepted`, `declined`.|
 |userDisplayName|String|Display name of the user when the acceptance was recorded.|
 |userEmail|String|Email of the user when the acceptance was recorded.|
-|userId|String|Id of the user.|
+|userId|String|ID of the user.|
 |userPrincipalName|String|UPN of the user when the acceptance was recorded.|
 
 ## Relationships
