@@ -33,7 +33,6 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [agreement](../resources/agreement.md) objects in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_agreements"
@@ -42,8 +41,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/agreements
 ```
 ##### Response
-The following is an example of the response.
-
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

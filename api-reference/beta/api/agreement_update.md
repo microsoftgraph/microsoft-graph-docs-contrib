@@ -34,7 +34,6 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and updated [agreement](../resources/agreement.md) object in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_agreement"
@@ -50,8 +49,6 @@ Content-length: 85
 }
 ```
 ##### Response
-The following is an example of the response.
-
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {

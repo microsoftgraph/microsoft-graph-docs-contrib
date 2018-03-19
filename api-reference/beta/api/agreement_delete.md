@@ -31,7 +31,6 @@ If successful, this method returns a `204, No Content` response code. It does no
 
 ## Example
 ##### Request
-The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_agreement"
@@ -40,8 +39,6 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/agreements/<id>
 ```
 ##### Response
-The following is an example of the response.
-
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
