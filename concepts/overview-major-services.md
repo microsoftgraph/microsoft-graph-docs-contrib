@@ -68,7 +68,7 @@ Reports
 | Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote overview](../concepts/integrate_with_onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  |  |
 | To-do tasks (preview) | Outlook | Tracks the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. Available on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. |  |
-| Workbooks and charts | Excel | Spreadsheet client that lets users do complex calculations, track, analyze, and visualize data, and do professional reporting. | [Excel workbooks and charts overview](../concepts/excel-content-overview.md) |
+| Workbooks and charts | Excel | Spreadsheet client that lets users do complex calculations, track, analyze, and visualize data, and do professional reporting. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
 
 ## Collaboration
 
@@ -102,7 +102,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune device and mobbile app management overview](../concepts/intune-mobile-app-device-management-concept-overview.md) |
+|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune device and mobbile app management overview](../concepts/intune-concept-overview.md) |
 
 
 ## Usage reports and audit logs

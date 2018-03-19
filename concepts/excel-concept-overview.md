@@ -1,6 +1,6 @@
 # Excel workbooks and charts overview
 
-Excel is an indispensable productivity tool. Users across all industries and roles embrace it as a tool for storing, tracking, and mainpulating all kinds of data. It is used for everything from simple task tracking and data management, to complex calculations and professional reporting. The Excel REST API can extend the value of your data, calculations, reporting and dashboards.
+Excel is a spreadsheet application that allows customers to organize, store, share, and manipulate data. It supports data activities of a wide range of complexity, from simple task tracking and data management, to CPU-heavy calculations and professional reporting.
 
 ## Why integrate with Excel?
 
