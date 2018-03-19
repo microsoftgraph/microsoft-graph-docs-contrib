@@ -21,7 +21,7 @@ Represents an Azure Active Directory (Azure AD) terms of use agreement file. It 
 |fileName|String|Name of the agreement file (for example, TOU.pdf). Read-only.|
 |id|String|Read-only.|
 |isDefault|Boolean|Indicates whether this is the default agreement file if none of the culture matches the client preference. If none of the file is marked as default, the first one will be treated as default. Read-only.|
-|language|String|Culture of the agreement file (for example, en, fr, es). Read-only.|
+|language|String|Culture of the agreement file in the format languagecode2-country/regioncode2. languagecode2 is a lowercase two-letter code derived from ISO 639-1. country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US). Read-only.|
 
 ## Relationships
 None.
