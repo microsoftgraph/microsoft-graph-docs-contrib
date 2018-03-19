@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an Azure Active Directory (Azure AD) terms of use acceptance status.
+Represents the current status of a user within scope of a companies customizable terms of use powered by Azure Active Directory.
 
 <!--
 ## Methods
