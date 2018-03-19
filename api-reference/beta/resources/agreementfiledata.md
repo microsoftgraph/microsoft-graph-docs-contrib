@@ -7,7 +7,7 @@ Represents the blob of an Azure Active Directory (Azure AD) terms of use agreeme
 ## Properties
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|data|Binary|The blob representing the PDF document. Read-only.|
+|data|Binary|Data representing the terms of use the PDF document. Read-only.|
 
 ## JSON representation
 

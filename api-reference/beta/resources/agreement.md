@@ -9,10 +9,10 @@ Represents an Azure Active Directory (Azure AD) terms of use agreement. Microsof
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Create agreements](../api/agreement_post_agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
-| [List agreements](../api/agreement_list.md) | [agreement](agreement.md) collection | Get a agreement object collection. |
-| [Get agreement](../api/agreement_get.md) | [agreement](agreement.md) | Read properties and relationships of agreement object. |
-| [Update](../api/agreement_update.md) | [agreement](agreement.md) | Update agreement object. |
-| [Delete](../api/agreement_delete.md) | None | Delete agreement object. |
+| [List agreements](../api/agreement_list.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
+| [Get agreement](../api/agreement_get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
+| [Update agreement](../api/agreement_update.md) | [agreement](agreement.md) | Update an agreement object. |
+| [Delete agreement](../api/agreement_delete.md) | None | Delete an agreement object. |
 <!--
 | [Create agreementFile](../api/agreement_post_files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement_list_files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |

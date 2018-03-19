@@ -24,7 +24,7 @@ Represents an Azure Active Directory (Azure AD) terms of use acceptance status.
 |state|string| Possible values are: `accepted`, `declined`.|
 |userDisplayName|String|Display name of the user when the acceptance was recorded.|
 |userEmail|String|Email of the user when the acceptance was recorded.|
-|userId|String|ID of the user.|
+|userId|String|ID of the user that accepted the agreement.|
 |userPrincipalName|String|UPN of the user when the acceptance was recorded.|
 
 ## Relationships

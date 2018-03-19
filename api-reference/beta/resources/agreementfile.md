@@ -17,10 +17,10 @@ Represents an Azure Active Directory (Azure AD) terms of use agreement file. It 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|The blob representing the PDF document. Read-only.|
+|fileData|[agreementFileData](agreementfiledata.md)|Data representing the terms of use the PDF document. Read-only.|
 |fileName|String|Name of the agreement file (for example, TOU.pdf). Read-only.|
 |id|String|Read-only.|
-|isDefault|Boolean|Whether this is the default agreement file if none of the culture matches the client preference. If none of the file is marked as default, the first one will be treated as default. Read-only.|
+|isDefault|Boolean|Indicates whether this is the default agreement file if none of the culture matches the client preference. If none of the file is marked as default, the first one will be treated as default. Read-only.|
 |language|String|Culture of the agreement file (for example, en, fr, es). Read-only.|
 
 ## Relationships
