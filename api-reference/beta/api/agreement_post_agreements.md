@@ -38,13 +38,19 @@ If successful, this method returns a `201, Created` response code and [agreement
 ```http
 POST https://graph.microsoft.com/beta/agreements
 Content-type: application/json
-Content-length: 85
 
 {
-  "displayName": "displayName-value",
+  "displayName": "MSGraph Sample",
   "isViewingBeforeAcceptanceRequired": true,
   "files": [
-    {"@odata.type": "microsoft.graph.agreementFile"}
+    {
+      "fileName": "TOU.pdf",
+      "language": "en",
+      "isDefault": true,
+      "fileData": {
+        "data": "SGVsbG8gd29ybGQ="
+      }
+    }
   ]
 }
 ```
@@ -59,10 +65,9 @@ In the request body, supply a JSON representation of [agreement](../resources/ag
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 105
 
 {
-  "displayName": "displayName-value",
+  "displayName": "MSGraph Sample",
   "isViewingBeforeAcceptanceRequired": true,
   "id": "id-value"
 }

@@ -50,14 +50,18 @@ GET https://graph.microsoft.com/beta/agreements/<id>?$expand=files
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 105
 
 {
-  "displayName": "displayName-value",
+  "displayName": "MSGraph Sample",
   "isViewingBeforeAcceptanceRequired": true,
   "id": "id-value",
   "files": [
-    {"@odata.type": "microsoft.graph.agreementFile"}
+    {
+      "id": "id-value",
+      "language": "en",
+      "fileName": "TOU.pdf",
+      "isDefault": true
+    }
   ]
 }
 ```
