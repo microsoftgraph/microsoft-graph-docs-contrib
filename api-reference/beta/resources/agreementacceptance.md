@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents the current status of a user within scope of a companies customizable terms of use powered by Azure Active Directory.
+Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD).
 
 <!--
 ## Methods
@@ -10,8 +10,8 @@ Represents the current status of a user within scope of a companies customizable
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get agreementAcceptance](../api/agreementacceptance_get.md) | [agreementAcceptance](agreementacceptance.md) | Read properties and relationships of agreementAcceptance object. |
-| [Update](../api/agreementacceptance_update.md) | [agreementAcceptance](agreementacceptance.md) | Update agreementAcceptance object. |
-| [Delete](../api/agreementacceptance_delete.md) | None | Delete agreementAcceptance object. |
+| [Update](../api/agreementacceptance_update.md) | [agreementAcceptance](agreementacceptance.md) | Update an **agreementAcceptance** object. |
+| [Delete](../api/agreementacceptance_delete.md) | None | Delete an **agreementAcceptance** object. |
 -->
 
 ## Properties
@@ -24,7 +24,7 @@ Represents the current status of a user within scope of a companies customizable
 |state|string| Possible values are: `accepted`, `declined`.|
 |userDisplayName|String|Display name of the user when the acceptance was recorded.|
 |userEmail|String|Email of the user when the acceptance was recorded.|
-|userId|String|ID of the user that accepted the agreement.|
+|userId|String|ID of the user who accepted the agreement.|
 |userPrincipalName|String|UPN of the user when the acceptance was recorded.|
 
 ## Relationships
