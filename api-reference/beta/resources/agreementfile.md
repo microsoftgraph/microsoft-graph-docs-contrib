@@ -9,18 +9,18 @@ Represents an Azure Active Directory (Azure AD) terms of use agreement file. It 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile_get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of agreementFile object. |
-| [Update](../api/agreementfile_update.md) | [agreementFile](agreementfile.md) | Update agreementFile object. |
-| [Delete](../api/agreementfile_delete.md) | None | Delete agreementFile object. |
+| [Get agreementFile](../api/agreementfile_get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
+| [Update](../api/agreementfile_update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
+| [Delete](../api/agreementfile_delete.md) | None | Delete an **agreementFile** object. |
 -->
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|Data representing the terms of use the PDF document. Read-only.|
+|fileData|[agreementFileData](agreementfiledata.md)|Data representing the terms of use PDF document. Read-only.|
 |fileName|String|Name of the agreement file (for example, TOU.pdf). Read-only.|
 |id|String|Read-only.|
-|isDefault|Boolean|Indicates whether this is the default agreement file if none of the culture matches the client preference. If none of the file is marked as default, the first one will be treated as default. Read-only.|
+|isDefault|Boolean|Indicates whether this is the default agreement file if none of the cultures matches the client preference. If none of the files are marked as default, the first one will be treated as the default. Read-only.|
 |language|String|Culture of the agreement file in the format languagecode2-country/regioncode2. languagecode2 is a lowercase two-letter code derived from ISO 639-1. country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US). Read-only.|
 
 ## Relationships
