@@ -41,6 +41,8 @@ If successful, this method returns a `201, Created` response code and [agreement
 
 ## Example
 ##### Request
+In the request body, supply a JSON representation of the [agreement](../resources/agreement.md) object.
+
 <!-- {
   "blockType": "request",
   "name": "create_agreement_from_agreements"
@@ -64,7 +66,7 @@ Content-type: application/json
   ]
 }
 ```
-In the request body, supply a JSON representation of [agreement](../resources/agreement.md) object.
+
 ##### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
