@@ -23,6 +23,8 @@
     <Item text="Xamarin" url="/en-us/concepts/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
   </Item>
   
+  <Item text="horizontalline" url="/" IsSeparation="true" />
+  
   <Item text="LEARN" url="" />
   <Item text="Users and identity" url="/en-us/concepts/azuread-users-identity-concept-overview" />
   <Item text="Groups" url="/en-us/concepts/office365-groups-concept-overview" />
@@ -61,7 +63,10 @@
 	  <Item text="Update a range format" url="/en-us/concepts/update-range-format-in-excel-with-microsoft-graph" />
 	  <Item text="Write data to a workbook" url="/en-us/concepts/write-to-excel-workbook-with-microsoft-graph" />
   </Item>
-  <Item text="DEVELOP" url="" />
+
+ <Item text="horizontalline" url="/" IsSeparation="true" />  
+
+ <Item text="DEVELOP" url="" />
   <Item text="Get auth tokens" url="/en-us/concepts/auth_overview" SEODescription="Provides an overview of Microsoft Graph app authentication, including Azure AD and the Azure AD v2.0 endpoint." >
     <Item text="Register your app" url="/en-us/concepts/auth_register_app_v2" SEODescription="Register your app on the Microsoft App Registration Portal." />
     <Item text="Get access on behalf of a user" url="/en-us/concepts/auth_v2_user" />
@@ -93,6 +98,7 @@
   <Item text="horizontalline" url="/" IsSeparation="true" />
 
   <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
+  <Item text="v1.0 reference" url="/en-us/api-reference/v1.0/resources/v1-overview" >
   <Item text="Users" url="/en-us/api-reference/v1.0/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
     <Item text="User" url="/en-us/api-reference/v1.0/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
       <Item text="Create user" url="/en-us/api-reference/v1.0/api/user_post_users" SEOKeyword="Create User, Microsoft Graph API, user API" SEODescription="Use this API to create a new User." /><Item text="Delete user" url="/en-us/api-reference/v1.0/api/user_delete" SEOKeyword="Delete user, Microsoft Graph API, user API" SEODescription="Delete user." />
@@ -2112,6 +2118,7 @@
       <Item text="Update subscription" url="/en-us/api-reference/v1.0/api/subscription_update" />
       <Item text="Delete subscription" url="/en-us/api-reference/v1.0/api/subscription_delete" />
     </Item>
+  </Item>
   </Item>
   <Item text="horizontalline" url="/" IsSeparation="true" />
   <!--</Item>-->
