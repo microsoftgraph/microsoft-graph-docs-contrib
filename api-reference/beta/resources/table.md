@@ -1,7 +1,8 @@
 # Table resource type
-Represents an Excel table.
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Represents an Excel table.
 
 ## Methods
 
@@ -85,5 +86,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
