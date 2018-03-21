@@ -1,13 +1,13 @@
 <Menu>
   <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." >    
 	<Item text="Services in Microsoft Graph" url="/en-us/concepts/overview-major-services" />
-	<Item text="Users you can reach" url="" />
+	<Item text="Users you can reach" url="" >
+		<Item text="National cloud deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
+		<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
+	</Item>
+	<Item text="Versioning and support" url="/en-us/concepts/versioning_and_support" />
   </Item>
-  <Item text="Featured scenarios" url="/en-us/concepts/featured_scenarios" > 
-	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
-	  <Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
-  </Item>
-  <Item text="Build your first app" url="/en-us/concepts/get-started">
+  <Item text="Quick starts" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Android app" />
     <Item text="Angular" url="/en-us/concepts/angular" SEOKeyword="Angular, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an Angular app" />
     <Item text="ASP.NET MVC" url="/en-us/concepts/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, Walkthroughs" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in an ASP.NET MVC app" />
@@ -22,6 +22,46 @@
     <Item text="Visual Studio Connected Services" url="/en-us/concepts/office_365_connected_services" />
     <Item text="Xamarin" url="/en-us/concepts/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
   </Item>
+  
+  <Item text="LEARN" url="" />
+  <Item text="Users and identity" url="/en-us/concepts/azuread-users-identity-concept-overview" />
+  <Item text="Groups" url="/en-us/concepts/office365-groups-concept-overview" />
+  <Item text="Access management" url="/en-us/concepts/azuread-permissions-policies-concept-overview" />
+  <Item text="Calendar (Outlook)" url="/en-us/concepts/outlook-calendar-concept-overview" >
+	<Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
+  </Item>
+  <Item text="Cross devices (Project Rome)" url="/en-us/concepts/project-rome-concept-overview" />
+  <Item text="Education" url="/en-us/concepts/education-concept-overview" />
+  <Item text="Enterprise mobility (Intune)" url="/en-us/concepts/intune-concept-overview" />
+  <Item text="Files (OneDrive)" url="/en-us/concepts/onedrive-concept-overview" />
+  <Item text="Mail (Outlook)" url="/en-us/concepts/outlook-mail-concept-overview" >
+	<Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
+	<Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
+	<Item text="Share message folders" url="/en-us/concepts/outlook-share-messages-folders" />
+  </Item>
+   <Item text="Notes (OneNote)" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
+      <Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
+	  <Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
+      <Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
+      <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
+  </Item>
+  <Item text="Personal contacts (Outlook)" url="/en-us/concepts/outlook-contacts-concept-overview" />
+  <Item text="Plans and tasks (Planner)" url="/en-us/concepts/planner-concept-overview" />
+  <Item text="Security intelligence" url="/en-us/concepts/azuread-security-intel-concept-overview" />
+  <Item text="Shared sites (SharePoint)" url="/en-us/concepts/sharepoint-concept-overview" />
+  <Item text="Social intelligence" url="/en-us/concepts/social-intel-concept-overview" >
+	<Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
+  </Item>
+  <Item text="Teamwork (Microsoft Teams)" url="/en-us/concepts/teams-concept-overview" />
+  <Item text="To-do tasks (Outlook)" url="/en-us/concepts/outlook-tasks-concept-overview" />
+  <Item text="Workbooks and charts" url="/en-us/concepts/excel-concept-overview" >
+	  <Item text="Manage sessions" url="/en-us/concepts/manage-sessions-in-excel-with-microsoft-graph" />
+	  <Item text="Display a chart image" url="/en-us/concepts/display-a-chart-image-in-excel-with-microsoft-graph" />
+	  <Item text="Use workbook functions" url="/en-us/concepts/use-functions-in-excel-with-microsoft-graph" />
+	  <Item text="Update a range format" url="/en-us/concepts/update-range-format-in-excel-with-microsoft-graph" />
+	  <Item text="Write data to a workbook" url="/en-us/concepts/write-to-excel-workbook-with-microsoft-graph" />
+  </Item>
+  <Item text="DEVELOP" url="" />
   <Item text="Get auth tokens" url="/en-us/concepts/auth_overview" SEODescription="Provides an overview of Microsoft Graph app authentication, including Azure AD and the Azure AD v2.0 endpoint." >
     <Item text="Register your app" url="/en-us/concepts/auth_register_app_v2" SEODescription="Register your app on the Microsoft App Registration Portal." />
     <Item text="Get access on behalf of a user" url="/en-us/concepts/auth_v2_user" />
@@ -30,28 +70,25 @@
     <Item text="Manage app access (CSPs)" url="/en-us/concepts/auth_cloudsolutionprovider" SEODescription="Configure pre-consent for a Cloud Solution Provider CSP app and call the Microsoft Graph API." />
   </Item>
   <Item text="Use the API" url="/en-us/concepts/use_the_api" >
-    <Item text="Traverse the graph" url="/en-us/concepts/traverse_the_graph" />
     <Item text="Paging" url="/en-us/concepts/paging" SEOKeyword="Paging, Microsoft Graph API, Overview" SEODescription="Implementing paging in the Microsoft Graph." />
     <Item text="Use query parameters" url="/en-us/concepts/query_parameters" SEOKeyword="Query parameters, Microsoft Graph API, Overview" SEODescription="Microsoft Graph is OData v4 compliant, provides information about supported OData query parameters" />
     <Item text="Batch requests" url="/en-us/concepts/json_batching" />
     <Item text="Throttling" url="/en-us/concepts/throttling" />
-    <Item text="Versioning and support" url="/en-us/concepts/versioning_and_support" />
-    <Item text="Errors" url="/en-us/concepts/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
-  </Item>
-  <Item text="Track changes" url="/en-us/concepts/delta_query_overview" >
+    <Item text="Push notifications" url="" />
+	<Item text="Track changes" url="/en-us/concepts/delta_query_overview" >
     <Item text="Get changes to events (example)" url="/en-us/concepts/delta_query_events" />
     <Item text="Get changes to groups (example)" url="/en-us/concepts/delta_query_groups" />
     <Item text="Get changes to messages (example)" url="/en-us/concepts/delta_query_messages" />
     <Item text="Get changes to users (example)" url="/en-us/concepts/delta_query_users" />
-  </Item>
-  <Item text="Add custom data" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
+	</Item>
+	<Item text="Add custom data" url="/en-us/concepts/extensibility_overview" SEOKeyword="Custom data, extensibility, extensions, open extensions, schema extensions" SEODescription="Add custom data to Microsoft Graph using open extensions or schema extensions.">
     <Item text="Use open extensions (example)" url="/en-us/concepts/extensibility_open_users" />
     <Item text="Use schema extensions (example)" url="/en-us/concepts/extensibility_schema_groups" />
+	</Item>
+    <Item text="Known issues" url="/en-us/concepts/known_issues" SEODescription="Known issues with the Microsoft Graph API." />
+	<Item text="Changelog" url="/en-us/concepts/changelog" />
+	<Item text="Errors" url="/en-us/concepts/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
   </Item>
-  <Item text="National cloud deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
-  <Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
-  <Item text="Known issues" url="/en-us/concepts/known_issues" SEOKeyword="Release Notes, Microsoft Graph API, Overview" SEODescription="Known issues with the Microsoft Graph API." />
-  <Item text="Changelog" url="/en-us/concepts/changelog" />
  
   <Item text="horizontalline" url="/" IsSeparation="true" />
 
