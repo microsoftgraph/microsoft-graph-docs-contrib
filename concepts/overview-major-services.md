@@ -132,7 +132,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Education (preview) | Azure AD, Education | Supports schools, enrolments, and assignments, empowering educators to unlock creativity, promote teamwork, and provide a simple and safe experience for education. | [Education overview][Azure AD security intelligence overview](../concepts/education-concept-overview.md) |
+| Education (preview) | Azure AD, Education | Supports schools, enrolments, and assignments, empowering educators to unlock creativity, promote teamwork, and provide a simple and safe experience for education. | [Education overview](../concepts/education-concept-overview.md) |
 
 
 ## Next steps
