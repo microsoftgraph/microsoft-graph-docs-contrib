@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2018
 
+### Excel APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Change|v1.0|Added the **legacyId** property to the [Excel Table](../api-reference/v1.0/resources/table.md) entity. This will contain the numeric value identifier (string data type) that will remain constact for a given Excel table. This is provided as an additional metadata if the application relied on the legacy identifier used in older Excel client applications. Note: The `id` and `legacyId` property should be treated as an opaque string value and should not be parsed to any other type within your application. |
+
+
 ### Reports APIs
 |Change type|Version|Description|
 |:---|:---|:---|
