@@ -22,9 +22,9 @@ Are you working on repeated project types? Create a Plan and include a set of ta
  
 ## Top capabilities
 
-See all the plans for a group
-See tasks in a plan
-See all my tasks assigned to me across plans
+* See all the plans for a group
+* See tasks in a plan
+* See all my tasks assigned to me across plans
 
 
 
