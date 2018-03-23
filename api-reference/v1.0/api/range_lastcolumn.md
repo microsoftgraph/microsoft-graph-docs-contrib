@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/LastColumn
-GET /workbook/worksheets/{id|name}/range(<address>)/LastColumn
+GET /workbook/worksheets/{id|name}/range(address='<address>')/LastColumn
 GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 
 ```
@@ -22,6 +22,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 

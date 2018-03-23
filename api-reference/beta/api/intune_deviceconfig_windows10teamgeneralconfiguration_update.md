@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -49,7 +48,7 @@ The following table shows the properties that are required when you create the [
 |azureOperationalInsightsWorkspaceKey|String|The Azure Operational Insights Workspace key.|
 |connectAppBlockAutoLaunch|Boolean|Specifies whether to automatically launch the Connect app whenever a projection is initiated.|
 |maintenanceWindowBlocked|Boolean|Indicates whether or not to Block setting a maintenance window for device updates.|
-|maintenanceWindowDurationInHours|Int32|Maintenance window duration for device updates. Valid values 1 to 5|
+|maintenanceWindowDurationInHours|Int32|Maintenance window duration for device updates. Valid values 0 to 5|
 |maintenanceWindowStartTime|TimeOfDay|Maintenance window start time for device updates.|
 |miracastChannel|String|The channel. Possible values are: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
 |miracastBlocked|Boolean|Indicates whether or not to Block wireless projection.|
