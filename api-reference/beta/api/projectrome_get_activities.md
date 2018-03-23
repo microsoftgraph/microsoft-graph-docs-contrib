@@ -27,13 +27,19 @@ GET /me/activities
 This method supports some [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 The supported querying parameters are:
+
 $expand for the historyItems navigation property
+
 $top to limit the maximum number of items across pages
+
 $filter on the lastModifiedDateTime property for either activities or historyItems, if expanded
 
 Here are some examples of supported queries with URL encoding:
+
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
+
 /me/activities?$filter=lastModifiedDateTime%20lt%202018-01-16T01:03:21.347Z%20and%20lastModifiedDateTime%20gt%202018-01-03T01:03:21.347Z
+
 /me/activities?$top=5
 
 ## Request headers
@@ -48,7 +54,7 @@ No request body.
 
 ## Response
 
-If successful, this method returns the `20O OK` response code with the user's activities for your application.
+If successful, this method returns the `200 OK` response code with the user's activities for your application.
 
 ## Example
 
