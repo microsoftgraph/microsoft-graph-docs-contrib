@@ -62,8 +62,9 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users and identity management | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD users and identity management overview](../concepts/azuread-users-identity-concept-overview.md)  |
-| Policies and permissions | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD permissions and policies overview](../concepts/azuread-permissions-policies-concept-overview.md) |
+| Users | Azure AD | Supports user-centric functionality across Microsoft Graph. | [Microsoft Graph users overview](../concepts/azuread-users-concept-overview.md)|
+| Identities | Azure AD | Creates and manages directory resources such as users, groups, and applications. | [Azure AD identities overview](../concepts/azuread-identities-concept-overview.md)  |
+| Access control | Azure AD | Grants users, groups, and applications access to resources and data. | [Azure AD access control overview](../concepts/azuread-access-control-concept-overview.md) |
 
 
 ## Productivity
@@ -71,9 +72,9 @@ Reports
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Calendar | Outlook  | Calendaring client for users to set up appointments and meetings on the web, mobile and desktop devices. Calendar is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts. | [Outlook calendar overview](../concepts/outlook-calendar-concept-overview.md)  |
-| Files | OneDrive | Manage and share user files on OneDrive, OneDrive for Business, and SharePoint document libraries. | [OneDrive files overview](../concepts/onedrive-concept-overview.md) |
+| Files | OneDrive | Manage and share user files on OneDrive, OneDrive for Business, and SharePoint document libraries. | [OneDrive files storage overview](../concepts/onedrive-concept-overview.md) |
 | Mail | Outlook | Email client for users to communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. Mail is part of the Outlook messaging communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](../concepts/outlook-mail-concept-overview.md) |
-| Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote overview](../concepts/integrate_with_onenote.md) |
+| Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote API overview](../concepts/integrate_with_onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](../concepts/outlook-contacts-concept-overview.md) |
 | To-do tasks (preview) | Outlook | Tracks the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. Available on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. | [Outlook to-do tasks overview](../concepts/outlook-tasks-concept-overview.md)  |
 | Workbooks and charts | Excel | Spreadsheet client that lets users do complex calculations, track, analyze, and visualize data, and do professional reporting. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
@@ -103,22 +104,22 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune device and mobbile app management overview](../concepts/intune-concept-overview.md) |
+|Mobile app and device management | Intune | Manages your organization’s mobile applications, and enrolls and configures devices. | [Intune devices and apps   overview](../concepts/intune-concept-overview.md) |
 
 
 ## Security intelligence
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security intelligence: identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Azure AD security intelligence overview](../concepts/azuread-security-intel-concept-overview.md)  |
-| Security intelligence: security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Azure AD security intelligence overview](../concepts/azuread-security-intel-concept-overview.md) |
+| Security intelligence: identity risk detection | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Azure AD security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md)  |
+| Security intelligence: security | Azure AD | Provides a unified gateway to security insights and actions across Microsoft solutions. | [Azure AD security intelligence in Microsoft Graph](../concepts/azuread-security-intel-concept-overview.md) |
 
 
 ## Cross-device experiences
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Cross-device experiences (preview) | Project Rome, Windows | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Project Rome cross-device experiences overview](../concepts/project-rome-concept-overview.md) |
+| Cross-device experiences (preview) | Project Rome, Windows | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for Project Rome cross-device experiences](../concepts/project-rome-concept-overview.md) |
 
 
 ## Usage reports and audit logs

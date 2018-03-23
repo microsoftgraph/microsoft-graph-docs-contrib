@@ -1,8 +1,9 @@
-# Intune devices and apps API overview
+# Azure AD identities API overview
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
+{Tie users and identity management with directory objects.}
 
-## Why integrate with Intune?
+## Why use Azure AD to manage the identities of directory resources?
 
 {<=1.5 pages of value proposition for developers.}
 

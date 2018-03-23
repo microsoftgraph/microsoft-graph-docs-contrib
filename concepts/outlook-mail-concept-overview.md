@@ -1,4 +1,4 @@
-# Outlook mail overview
+# Outlook mail API overview
 
 Outlook is a messaging communication hub in Office 365. It also lets you manage contacts, schedule meetings, find information about users in an organization, 
 initiate online conversations, share files, and collaborate in groups.
@@ -57,6 +57,6 @@ Learn about:
 - Ways to [organize messages](outlook-organize-messages.md)
 - How to [share message folders](outlook-share-messages-folders.md)
 
-Find out more about the mail API and [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) supported in Microsoft Graph v1.0.
+Find out more about [using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
 
 

@@ -1,4 +1,4 @@
-# Planner plans and tasks overview
+# Planner plans and tasks API overview
 
 Planner provides a simple and visual way for teams to organize their work.  Customers can use Planner to create plans, organize and assign tasks, share progress, and collaborate on content.  Planner provides several interactive experiences including a task board, a charts page, and a schedule view, as well as integrations throughout Office 365.
 
@@ -29,3 +29,5 @@ Are you working on repeated project types? Create a Plan and include a set of ta
 
 
 ## Next steps
+{Include a link to the root node of your API set in the v1.0 reference section.}
+

@@ -1,4 +1,4 @@
-# OneNote overview
+# OneNote API overview
 
 OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they leave off, and collaborate on notes with others in real time.
 
@@ -37,7 +37,7 @@ To make OneNote API calls from the Graph Explorer, choose **Show more samples** 
 
 To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote.md).
 
-## See also
+## Next steps
 
 * [Branding guidelines](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
 * [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
@@ -45,4 +45,5 @@ To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference 
 * [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
 * [Extract data](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
 * [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+* [Use the OneNote REST API](../api-reference/v1.0/resources/onenote-api-overview.md)
 
