@@ -1,10 +1,24 @@
 # Changelog for Microsoft Graph
 
-This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
+This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
 ## March 2018
+
+### ActivityFeedService APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta       | Added [Get Recent Activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/projectrome_get_recent_activities) |
+| Addition        | beta       | Added [Get Activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/projectrome_get_activities) |
+| Change | beta | Added UserActivity.ReadWrite.CreatedByApp scope to [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_put_activity) |
+| Change | beta | Added UserActivity.ReadWrite.CreatedByApp scope to [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_put_historyitem) |
+| Change | beta | Added UserActivity.ReadWrite.CreatedByApp scope to [Delete Activity](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_delete_activity) |
+| Change | beta | Added UserActivity.ReadWrite.CreatedByApp scope to [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_delete_historyItem) |
+| Change | beta | Added status property to [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) |
+| Change | beta | Added activity navigation property to [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) |
+| Change | beta | Added new APIs to [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/project_rome_overview) |
 
 ### Group lifecycle policy
 
