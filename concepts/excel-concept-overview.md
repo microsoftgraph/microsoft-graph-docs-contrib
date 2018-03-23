@@ -1,6 +1,6 @@
-# Excel workbooks and charts overview
+# Excel workbooks and charts API overview
 
-Excel is a spreadsheet application that allows customers to organize, store, share, and manipulate data. It supports data activities of a wide range of complexity, from simple task tracking and data management, to CPU-heavy calculations and professional reporting.
+Excel is an indispensable productivity tool. Users across all industries and roles embrace it as a tool for storing, tracking, and mainpulating all kinds of data. It is used for everything from simple task tracking and data management, to complex calculations and professional reporting. The Excel REST API can extend the value of your data, calculations, reporting and dashboards.
 
 ## Why integrate with Excel?
 
@@ -29,10 +29,13 @@ You can use Microsoft Graph to allow web and mobile applications to read and mod
 
 You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook.
 
-## Topics in this section
+## Next steps
+Learn about: 
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md) 
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
 * [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
+* [Use the Excel REST API](../api-reference/v1.0/resources/excel.md)
+

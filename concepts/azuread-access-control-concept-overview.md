@@ -1,8 +1,8 @@
-# Intune devices and apps API overview
+# Azure AD access control API overview
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 
-## Why integrate with Intune?
+## Why use Azure AD for access management?
 
 {<=1.5 pages of value proposition for developers.}
 
