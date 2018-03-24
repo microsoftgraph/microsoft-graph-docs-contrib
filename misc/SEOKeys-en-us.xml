@@ -26,9 +26,9 @@
   <Item text="horizontalline" url="/" IsSeparation="true" />
   
   <Item text="LEARN" url="" />
-  <Item text="Users and identity" url="/en-us/concepts/azuread-users-identity-concept-overview" />
+  <Item text="Users" url="/en-us/concepts/azuread-users-concept-overview" />
   <Item text="Groups" url="/en-us/concepts/office365-groups-concept-overview" />
-  <Item text="Access management" url="/en-us/concepts/azuread-permissions-policies-concept-overview" />
+  <Item text="Access control" url="/en-us/concepts/azuread-access-control-concept-overview" />
   <Item text="Calendar (Outlook)" url="/en-us/concepts/outlook-calendar-concept-overview" >
 	<Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
   </Item>
@@ -36,6 +36,7 @@
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
   <Item text="Enterprise mobility (Intune)" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Files (OneDrive)" url="/en-us/concepts/onedrive-concept-overview" />
+  <Item text="Identities" url="/en-us/concepts/azuread-identities-concept-overview" />
   <Item text="Mail (Outlook)" url="/en-us/concepts/outlook-mail-concept-overview" >
 	<Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
 	<Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
@@ -48,12 +49,12 @@
       <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
   </Item>
   <Item text="Personal contacts (Outlook)" url="/en-us/concepts/outlook-contacts-concept-overview" />
-  <Item text="Plans and tasks (Planner)" url="/en-us/concepts/planner-concept-overview" />
   <Item text="Security intelligence" url="/en-us/concepts/azuread-security-intel-concept-overview" />
   <Item text="Shared sites (SharePoint)" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="Social intelligence" url="/en-us/concepts/social-intel-concept-overview" >
 	<Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
   </Item>
+  <Item text="Tasks and plans (Planner)" url="/en-us/concepts/planner-concept-overview" />
   <Item text="Teamwork (Microsoft Teams)" url="/en-us/concepts/teams-concept-overview" />
   <Item text="To-do tasks (Outlook)" url="/en-us/concepts/outlook-tasks-concept-overview" />
   <Item text="Workbooks and charts" url="/en-us/concepts/excel-concept-overview" >
