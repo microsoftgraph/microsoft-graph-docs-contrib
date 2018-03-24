@@ -1,10 +1,21 @@
 # Overview of Microsoft Graph
 
-You can use the Microsoft Graph API to interact with the data of millions of users in the Microsoft cloud. Use Microsoft Graph to build apps for organizations and consumers that connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
+Microsoft Graph is the gateway to data and intelligence in Microsoft 365. A unified programmability model enabling developers to take advantage of the tremendous amount of data in Office 365, Enterprise Mobility + Security and Windows 10. 
+
+You can use the Microsoft Graph API to interact with the data of millions of users and build apps for organizations and consumers that connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
 ## What's in the graph?
+Microsoft Graph exposes APIs for:
+- Azure Active Directory.
+- Office 365 services: SharePoint, OneDrive, Outlook/Exchange, Microsoft Teams, OneNote, Planner, and Excel.
+- Enterprise Security and Mobility services: Identity Manager, Intune, Information Protection, and Advanced Thread Protection.
+- Windows 10 services: Activities and Devices.
+- Education.
 
-Microsoft Graph is made up of resources connected by relationships. For example, a user can be connected to a group through a [memberOf](../api-reference/v1.0/api/user_list_memberof.md) relationship, and to another user through a [manager](../api-reference/v1.0/api/user_list_manager.md) relationship. Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
+Find more about 
+[Major services and features in Microsoft Graph](../concepts/overview-major-services.md).
+
+Microsoft Graph connects all the resources across these services using relationships. For example, a user can be connected to a group through a [memberOf](../api-reference/v1.0/api/user_list_memberof.md) relationship, and to another user through a [manager](../api-reference/v1.0/api/user_list_manager.md) relationship. Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
 
 You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](../api-reference/beta/resources/insights_trending.md) a particular user, or get the most relevant [people](../api-reference/beta/api/user_list_people.md) around a user.
 
@@ -26,17 +37,12 @@ You can do all this and more with the Microsoft Graph API.
 
 >**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](../misc/terms-of-use.md) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## Resources and services
-
-The vast resources in Microcosft Graph are backed by robust services. Find more about 
-[Major services and features in Microsoft Graph](../concepts/overview-major-services.md).
-
 ## Next steps
 
 - Check out some [Featured scenarios](../concepts/featured_scenarios.md).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
-- Look under **Learn** in the table of contents to read about services and features that you can leverage in your scenarios.  
+- Look under **Learn** in the table of contents to read about services and features that you can leverage in your scenarios. 
 - Find out how to [get an auth token](../concepts/auth_overview.md) in your app.
 - Start [using the API](../concepts/use_the_api.md).
 
