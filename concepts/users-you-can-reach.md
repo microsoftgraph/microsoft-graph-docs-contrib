@@ -2,13 +2,13 @@
 
 Microsoft offers services and solutions that expand modern work and modern life. 
 
-As a developer you can use Microsoft Graph API to build applications that connect to the millions of users that use Microsoft cloud products for their work, school and/or their personal productivity. 
+As a developer, you can use the Microsoft Graph API to build applications that connect to the millions of users that use Microsoft cloud products for work, school, and/or personal productivity. 
 
-## Microsoft Graph connecting to personal services.
+## Connect to personal services
 
-Use Microsoft Graph to reach users with Microsoft personal accounts, such as @outlook.com, @hotmail.com or @live.com accounts. You can use Microsoft Graph to access users' profiles, their Office services like OneDrive, Outlook mail, Outlook calendar, Outlook contacts, and their Windows 10 devices and activities.
+Use Microsoft Graph to reach users with Microsoft personal accounts, such as @outlook.com, @hotmail.com, or @live.com accounts. You can use Microsoft Graph to access users' profiles, their Office services like OneDrive and Outlook mail, calendar, and contacts, and their Windows 10 devices and activities.
 
-## Microsoft Graph connecting to work services.
+## Connect to work services
 
 Use Microsoft Graph to reach users and organizations that have licenses to Microsoft 365 services for business, enterprise or education. These Microsoft 365 services include:
 -	Office 365
@@ -25,7 +25,7 @@ The services mentioned above are part of the Microsoft worldwide cloud. In addit
 
 You can use Microsoft Graph to reach users and organizations whose services are in the world wide cloud, including organizations with multi-geo services, and you can also use Microsoft Graph to access users and organizations in national cloud deployments, but special considerations are required for cloud sovereignty. Find more about [National cloud deployments](../concepts/deployments.md).
 
-## Microsoft Graph connecting to school services.
+## Connect to school services
 
 Use Microsoft Graph to reach students, teachers and schools with licenses to Microsoft 365 services for education. You can use Microsoft Graph Education APIs that enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. 
 
