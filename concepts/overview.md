@@ -8,7 +8,7 @@ You can use the Microsoft Graph API to interact with the data of millions of use
 Microsoft Graph exposes APIs for:
 - Azure Active Directory.
 - Office 365 services: SharePoint, OneDrive, Outlook/Exchange, Microsoft Teams, OneNote, Planner, and Excel.
-- Enterprise Security and Mobility services: Identity Manager, Intune, Information Protection, and Advanced Thread Protection.
+- Enterprise Security and Mobility services: Identity Manager, Intune, Advanced Thread Analytics and Advanced Thread Protection.
 - Windows 10 services: Activities and Devices.
 - Education.
 
