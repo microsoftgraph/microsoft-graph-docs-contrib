@@ -6,14 +6,14 @@ As a developer you can use Microsoft Graph API to build applications that connec
 
 ## Microsoft Graph connecting to personal services.
 
-Use Microsoft Graph to reach users with Microsoft personal accounts, like @outlook.com, @hotmail.com or @live.com accounts, you can use Microsoft Graph to get access to the user's profile, their Office services like OneDrive, Outlook mail, Outlook calendar, Outlook contacts, and their Windows 10 devices and activities.
+Use Microsoft Graph to reach users with Microsoft personal accounts, such as @outlook.com, @hotmail.com or @live.com accounts. You can use Microsoft Graph to access users' profiles, their Office services like OneDrive, Outlook mail, Outlook calendar, Outlook contacts, and their Windows 10 devices and activities.
 
 ## Microsoft Graph connecting to work services.
 
-Use Microsoft Graph to reach users and organizations with licenses to Microsoft 365 services, for business, enterprise or education, including:
--	Office 365 services
--	Enterprise Security + Mobility services
--	Windows 10 services
+Use Microsoft Graph to reach users and organizations that have licenses to Microsoft 365 services for business, enterprise or education. These Microsoft 365 services include:
+-	Office 365
+-	Enterprise Mobility + Security 
+-	Windows 10 
 
 You can use Microsoft Graph to get access to users and organizational data according to the services they are licensed to and the services and features available in Microsoft Graph. 
 Find more about [major services and features in Microsoft Graph](../concepts/overview-major-services.md).
