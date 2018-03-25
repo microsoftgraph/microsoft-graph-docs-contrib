@@ -71,13 +71,13 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Calendar | Outlook  | Lets users to set up appointments and meetings on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings. | [Outlook calendar overview](../concepts/outlook-calendar-concept-overview.md)  |
-| Files | OneDrive | Manage and share user files on OneDrive, OneDrive for Business, and SharePoint document libraries. | [OneDrive files storage overview](../concepts/onedrive-concept-overview.md) |
-| Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings. | [Outlook mail overview](../concepts/outlook-mail-concept-overview.md) |
+| Calendar | Outlook  | Lets users set up appointments and meetings on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts. | [Outlook calendar overview](../concepts/outlook-calendar-concept-overview.md)  |
+| Files | OneDrive | Manages and shares user files on OneDrive, OneDrive for Business, and SharePoint document libraries. | [OneDrive files storage overview](../concepts/onedrive-concept-overview.md) |
+| Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](../concepts/outlook-mail-concept-overview.md) |
 | Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote API overview](../concepts/integrate_with_onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](../concepts/outlook-contacts-concept-overview.md) |
-| To-do tasks (preview) | Outlook | Lets users track the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. | [Outlook to-do tasks overview](../concepts/outlook-tasks-concept-overview.md)  |
-| Workbooks and charts | Excel | Lets users interact with Excel spreadsheets, to do complex calculations, track, analyze, and visualize data, and do professional reporting. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
+| To-do tasks (preview) | Outlook | Lets users track the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. It is part of the Outlook communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. | [Outlook to-do tasks overview](../concepts/outlook-tasks-concept-overview.md)  |
+| Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
 
 
 ## Collaboration
@@ -87,7 +87,7 @@ Reports
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 |Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups for users to share conversations, files, notes, calendar, and plans. | [Office 365 groups overview](../concepts/office365-groups-concept-overview.md) |
-| Shared sites and content  | SharePoint | Web-based platform for users and Office 365 groups to share, organize, manage and discover content (including lists, files, and notes). | [SharePoint sites and content overview](../concepts/sharepoint-concept-overview.md) | 
+| Shared sites and content  | SharePoint | Web-based platform for users and Office 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](../concepts/sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Office 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](../concepts/planner-concept-overview.md) |
 |Teamwork (preview) |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
 
@@ -144,4 +144,4 @@ Reports
 1. See examples of creative solutions built on top of services in Microsoft Graph that solve real customer problems.
 2. Look under **Learn** in the table of contents to read about services and features that _you_ can leverage in your scenarios.
 3. Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-4. Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
+4. Use [quick starts](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
