@@ -51,7 +51,7 @@ In the request body, supply the values for relevant fields that should be update
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 | onlineMeetingUrl|String|A URL for an online meeting.|
 | location|Location|The location of the event.|
-|locations|[Location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
+|locations|[Location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
 | recurrence|PatternedRecurrence|The recurrence pattern for the event.|
 | reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 | responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
