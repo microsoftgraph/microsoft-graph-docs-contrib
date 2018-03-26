@@ -1,6 +1,6 @@
 # message: move
 
-Move a message to a folder. This creates a new copy of the message in the destination folder.
+Move a message to a folder. This creates a new copy of the message in the destination folder and removes the orginal message.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
