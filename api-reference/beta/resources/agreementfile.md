@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an Azure Active Directory (Azure AD) terms of use agreement file. It contains metadata about the file (for example, the original file name uploaded by the user and the language of the file).
+Represents a tenants customizable terms of use agreement file managed with Azure AD. It contains metadata about the file (for example, the original file name uploaded by the user, the file uploaded by the user, and the language of the file).
 
 <!--
 ## Methods
