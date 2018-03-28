@@ -15,6 +15,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | v1.0        | Added [List groupLifecyclePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group) |
 | Change | V1.0 | Added renewedDateTime property and [renew](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_renew) to [group](../api-reference/v1.0/resources/group.md) | 
 
+### Terms of use
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the [agreement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/agreement) and [agreementAcceptance](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/agreementAcceptance) resources. |
+| Addition        | Beta        | Added the following APIs for [agreement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/agreement): [Create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/greement_post_agreements), [List](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/agreement_list), [Get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/agreement_get), [Update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/agreement_update), [Delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/agreement_delete). |
+| Addition        | Beta        | Added the [agreementAcceptance](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/agreementAcceptance) relationships to the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) resource. |
+
 ## February 2018
 
 ### Microsoft Intune APIs
