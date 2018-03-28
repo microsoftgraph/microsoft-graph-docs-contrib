@@ -1,0 +1,76 @@
+# UserSecurityProfile resource type
+
+Defines the relevant security properties of users to provide additional context for Alerts and targets for Actions.
+
+Security Profiles are populated by integrated solutions at their discretion.<br/> For example: - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. - A Provider will populate ipSecurityProfile for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring
+
+## Methods
+
+| Method   | Return Type |Description|
+|:---------------|:--------|:----------|
+|[Get UserSecurityProfile](../api/usersecurityprofile_get.md) | [UserSecurityProfile](usersecurityprofile.md) |Read properties and relationships of userSecurityProfile object.|
+|[Update](../api/usersecurityprofile_update.md) | [UserSecurityProfile](usersecurityprofile.md)|Update UserSecurityProfile object. |
+|[List userSecurityProfiles](../api/usersecurityprofile_list.md) |[UserSecurityProfile](usersecurityprofile.md) collection| Get a UserSecurityProfile object collection.|
+
+## Properties
+
+### ( \* = Mandatory Field )
+
+| Property   | Type |Description|
+|:---------------|:--------|:----------|
+|accountName|String|Account name of user account (without AD Domain or DNS Domain)|
+|azureSubscriptionId|String|Azure subscription ID of the entity, if this entity represents an Azure resource|
+|azureTenantId|String *|Azure Active Directory tenant ID of this resource|
+|createdDateTime|DateTimeOffset *|Time at which the userSecurityProfile was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|domainName|String|NetBIOS/AD Domain of user account  (i.e. domain\account format)|
+|id|String *|Provider-generated GUID/unique identifier. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|Time at which the userSecurityProfile was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|onPremisesSecurityIdentifier|String|AD (on premises) SID of the user|
+|riskScore|String|Provider-calculated risk score of the user account|
+|tags|String collection|User-definable labels that can be applied to an UserSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.) ([Supports Update](../api/usersecurityprofile_update.md))|
+|userPrincipalName|String|User login name internet format: (user account name)@(user account DNS domain name)|
+|vendorInformation|[SecurityVendorInformation](securityvendorinformation.md)*|Complex Type containing details about the Security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker)|
+
+## Relationships
+
+None
+
+## JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.UserSecurityProfile"
+}-->
+
+```json
+{
+  "accountName": "String",
+  "azureSubscriptionId": "String",
+  "azureTenantId": "String",
+  "createdDateTime": "String (timestamp)",
+  "domainName": "String",
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "onPremisesSecurityIdentifier": "String",
+  "riskScore": "String",
+  "tags": ["String"],
+  "userPrincipalName": "String",
+  "vendorInformation": {"@odata.type": "microsoft.graph.SecurityVendorInformation"}
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "UserSecurityProfile resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
