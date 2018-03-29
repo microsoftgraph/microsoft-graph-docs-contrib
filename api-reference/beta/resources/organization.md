@@ -36,6 +36,7 @@ Only the read and update operations are supported on tenants; create and delete 
 |objectType|String|A string that identifies the object type. For tenants the value is always “Company”. |
 |postalCode|String| Postal code of the address for the organization |
 |preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
+|privacyProfile|[PrivacyProfile](privacyprofile.md)| The privacy profile of an organization.            |
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection| Not nullable.            |
 |provisioningErrors|ProvisioningError collection| Not nullable.            |
 |securityComplianceNotificationMails|String collection||
@@ -76,6 +77,7 @@ Here is a JSON representation of the resource
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
+  "privacyProfile": {"@oadata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],
