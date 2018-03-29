@@ -50,6 +50,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
+|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String||
@@ -108,6 +109,7 @@ Here is a JSON representation of the resource
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "DateTimeOffset",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
