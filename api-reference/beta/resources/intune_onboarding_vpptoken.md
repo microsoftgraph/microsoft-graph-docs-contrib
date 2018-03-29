@@ -32,6 +32,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |lastSyncStatus|String|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
 |countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
+|dataSharingConsentGranted|Boolean|Consent granted for data sharing with the Apple Volume Purchase Program.|
 
 ## Relationships
 None
@@ -66,7 +67,8 @@ Here is a JSON representation of the resource.
   ],
   "lastSyncStatus": "String",
   "automaticallyUpdateApps": true,
-  "countryOrRegion": "String"
+  "countryOrRegion": "String",
+  "dataSharingConsentGranted": true
 }
 ```
 
