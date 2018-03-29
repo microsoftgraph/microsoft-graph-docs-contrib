@@ -10,8 +10,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added [Get Recent Activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/projectrome_get_recent_activities) |
-| Addition        | Beta       | Added [Get Activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/projectrome_get_activities) |
+| Addition        | Beta       | Added [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_recent_activities) |
+| Addition        | Beta       | Added [Get Activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_activities) |
 | Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/beta/api/projectrome_put_activity) |
 | Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_put_historyitem) |
 | Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Delete Activity](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_delete_activity) |
