@@ -11,6 +11,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **onPremisesExtensionAttributes** complex type to the [user](../api-reference/beta/resources/user.md) entity. This contains the on-premises extension attributes 1-15. |
+| Addition        | Beta        | Added the **privacyProfile** complex type to the [organization](../api-reference/beta/resources/organization.md) entity. |
 
 ### Excel APIs
 |Change type|Version|Description|
