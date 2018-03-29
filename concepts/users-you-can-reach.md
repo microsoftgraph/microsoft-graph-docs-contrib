@@ -6,7 +6,7 @@ As a developer, you can use the Microsoft Graph API to build applications that c
 
 ## Connect to personal services
 
-Use Microsoft Graph to reach users with Microsoft personal accounts, such as @outlook.com, @hotmail.com, or @live.com accounts. You can use Microsoft Graph to access users' profiles, their Office services like OneDrive and Outlook mail, calendar, and contacts, and their Windows 10 devices and activities.
+Use Microsoft Graph to reach users with Microsoft personal accounts, such as @outlook.com, @hotmail.com, or @live.com accounts. With their consent, you can use Microsoft Graph to access users' profiles, their Office services like OneDrive and Outlook mail, calendar, and contacts, and their Windows 10 devices and activities.
 
 ## Connect to work services
 
@@ -15,7 +15,7 @@ Use Microsoft Graph to reach users and organizations that have licenses to Micro
 -	Enterprise Mobility + Security 
 -	Windows 10 
 
-You can use Microsoft Graph to get access to users and organizational data according to the services they are licensed to and the services and features available in Microsoft Graph. 
+With their consent, you can use Microsoft Graph to get access to users and organizational data according to the services they are licensed to and the services and features available in Microsoft Graph. 
 Find more about [major services and features in Microsoft Graph](../concepts/overview-major-services.md).
 
 ### Worldwide, multi-geo and national clouds
@@ -23,11 +23,11 @@ The services mentioned above are part of the Microsoft worldwide cloud. In addit
 -	Multi-geo capabilities for multi-national organizations with multiple geographic regions and/or countries within their existing tenant.
 -	National cloud deployments for US government, Germany and Azure and Office 365 operated by 21Vianet in China.
 
-You can use Microsoft Graph to reach users and organizations whose services are in the world wide cloud, including organizations with multi-geo services, and you can also use Microsoft Graph to access users and organizations in national cloud deployments, but special considerations are required for cloud sovereignty. Find more about [National cloud deployments](../concepts/deployments.md).
+With their consent, you can use Microsoft Graph to reach users and organizations whose services are in the world wide cloud, including organizations with multi-geo services, and you can also use Microsoft Graph to access users and organizations in national cloud deployments, but special considerations are required for cloud sovereignty. Find more about [National cloud deployments](../concepts/deployments.md).
 
 ## Connect to school services
 
-Use Microsoft Graph to reach students, teachers and schools with licenses to Microsoft 365 services for education. You can use Microsoft Graph Education APIs that enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. 
+Use Microsoft Graph to reach students, teachers and schools with licenses to Microsoft 365 services for education. With their consent, you can use Microsoft Graph Education APIs that enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. 
 
 ## Next steps
 
