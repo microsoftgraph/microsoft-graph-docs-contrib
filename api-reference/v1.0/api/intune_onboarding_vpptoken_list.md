@@ -1,8 +1,8 @@
-﻿# List mobileThreatDefenseConnectors
+﻿# List vppTokens
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-List properties and relationships of the [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) objects.
+List properties and relationships of the [vppToken](../resources/intune_onboarding_vpptoken.md) objects.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/mobileThreatDefenseConnectors
+GET /deviceAppManagement/vppTokens
 ```
 
 ## Request headers
@@ -31,13 +31,13 @@ GET /deviceManagement/mobileThreatDefenseConnectors
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [vppToken](../resources/intune_onboarding_vpptoken.md) objects in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/mobileThreatDefenseConnectors
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens
 ```
 
 ### Response
@@ -45,21 +45,24 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 536
+Content-Length: 659
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
-      "id": "e4bede14-de14-e4be-14de-bee414debee4",
-      "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
-      "partnerState": "available",
-      "androidEnabled": true,
-      "iosEnabled": true,
-      "androidDeviceBlockedOnMissingPartnerData": true,
-      "iosDeviceBlockedOnMissingPartnerData": true,
-      "partnerUnsupportedOsVersionBlocked": true,
-      "partnerUnresponsivenessThresholdInDays": 6
+      "@odata.type": "#microsoft.graph.vppToken",
+      "id": "9ceb2f92-2f92-9ceb-922f-eb9c922feb9c",
+      "organizationName": "Organization Name value",
+      "vppTokenAccountType": "education",
+      "appleId": "Apple Id value",
+      "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+      "token": "Token value",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "state": "valid",
+      "lastSyncStatus": "inProgress",
+      "automaticallyUpdateApps": true,
+      "countryOrRegion": "Country Or Region value"
     }
   ]
 }
