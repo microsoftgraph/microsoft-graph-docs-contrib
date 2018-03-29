@@ -8,7 +8,7 @@ Using the REST API, you can [create](../api/outlookuser_post_mastercategories.md
 You can also [get this master list of categories](../api/outlookuser_list_mastercategories.md), [get a specific category](../api/outlookcategory_get.md), 
 [update](../api/outlookcategory_update.md) the color associated with a category, or [delete](../api/outlookcategory_delete.md) a category. 
 You can apply a category to an item by assigning the **displayName** property of the category to the **categories** collection of the item.
-Resources that can be assigned categories include [contact](contact.md), [event](event.md), [message](message.md), [outlookTask](outlooktask.md), and [post](post.md).   
+Resources that can be assigned categories include [contact](contact.md), [event](event.md), [message](message.md), and [post](post.md).   
 
 Each category is attributed by 2 properties: **displayName** and **color**. The **displayName** value must be unique in a user's master list. 
 The **color** however does not have to be unique; multiple categories in the master list can be mapped to the same color. You can map up 
