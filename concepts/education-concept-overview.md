@@ -2,7 +2,7 @@
 
 # Microsoft EDU Graph Overview
 
-The education APIs in Microsoft Graph enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, and enrollments. This makes it easy for application developers to build solutions that integrate with educational resources for various school and classroom scenarios.
+The education APIs in Microsoft Graph enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments and assignments information. This makes it easier for application developers to build solutions that integrate with educational resources that are globally available, in a secure and compliant way,  at no extra cost to the school or to the app developer. 
 
 Here is an overview of EDU Endpoints in Microsoft Graph
 
