@@ -1,10 +1,24 @@
 # Changelog for Microsoft Graph
 
-This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
+This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
 ## March 2018
+
+### ActivityFeedService APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta       | Added [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_recent_activities) |
+| Addition        | Beta       | Added [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_activities) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/beta/api/projectrome_put_activity) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_put_historyitem) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Delete Activity](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_delete_activity) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_delete_historyItem) |
+| Change | Beta | Added **status** property to [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) |
+| Change | Beta | Added **activity** navigation property to [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) |
+| Change | Beta | Added new APIs to [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/project_rome_overview) |
 
 ### Directory APIs
 
@@ -30,7 +44,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | v1.0        | Added [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy) |
 | Addition        | v1.0        | Added the following APIs for group lifecycle policy: [Create](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [List](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list), [Get](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get), [Update](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update), [Delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete), [Add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup), [Remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
 | Addition        | v1.0        | Added [List groupLifecyclePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group) |
-| Change | V1.0 | Added renewedDateTime property and [renew](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_renew) to [group](../api-reference/v1.0/resources/group.md) | 
+| Change | v1.0 | Added renewedDateTime property and [renew](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_renew) to [group](../api-reference/v1.0/resources/group.md) | 
 
 ### Terms of use
 
