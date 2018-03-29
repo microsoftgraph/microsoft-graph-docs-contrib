@@ -77,7 +77,7 @@ Here is a JSON representation of the resource
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
-  "privacyProfile": {"@oadata.type": "microsoft.graph.privacyProfile"},
+  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],

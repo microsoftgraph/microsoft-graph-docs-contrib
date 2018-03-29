@@ -28,11 +28,11 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Collection (String)|                                        **Notes**: not nullable.            |
+|marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
-|securityComplianceNotificationMails|Collection (String)||
-|securityComplianceNotificationPhones|Collection (String)||
-|technicalNotificationMails|Collection (String)|                                        **Notes**: not nullable.            |
+|securityComplianceNotificationMails|String collection||
+|securityComplianceNotificationPhones|String collection||
+|technicalNotificationMails|String collection|                                        **Notes**: not nullable.            |
 
 Since the **organization** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **organization** instance.
@@ -67,7 +67,11 @@ Content-length: 411
 ```
 ##### Response
 Here is an example of the response.
- 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.administrativeunit"
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
