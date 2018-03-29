@@ -29,7 +29,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|Collection (String)|                                        **Notes**: not nullable.            |
-|privacyProfile|[privacyProfile](privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
+|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|Collection (String)||
 |securityComplianceNotificationPhones|Collection (String)||
 |technicalNotificationMails|Collection (String)|                                        **Notes**: not nullable.            |
