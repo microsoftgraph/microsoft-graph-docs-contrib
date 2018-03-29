@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service will query for the most recent historyItems, and then pull those related activities. Activities will be sorted according to their most recent historyItem's lastModified. Because of this behavior, this means that activities without historyItems will not be included in the response. The scope UserActivity.ReadWrite.CreatedByApp will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering may lead to empty pages if the user is particularly active and other applications have created more recent activities. Using the nextLink to paginate should lead to your application's activities.
+Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service will query for the most recent [historyItems](../resources/projectrome_historyitem.md), and then pull those related activities. Activities will be sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** will not be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
 
 ## Permissions
 
@@ -24,23 +24,21 @@ GET /me/activities/recent
 
 ## Optional query parameters
 
-This method supports some [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports some [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response. The following query parameters are supported:
 
-The supported querying parameters are:
+- $expand for the **historyItems** navigation property.
+- $top to limit the maximum number of items across pages.
+- $filter on the **lastModifiedDateTime** property for either activities or **historyItems**, if expanded.
 
-$expand for the historyItems navigation property
+The following are some examples of supported queries with URL encoding.
 
-$top to limit the maximum number of items across pages
-
-$filter on the lastModifiedDateTime property for either activities or historyItems, if expanded
-
-Here are some examples of supported queries with URL encoding:
-
+```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
 
 /me/activities/recent?$filter=lastModifiedDateTime%20lt%202018-01-16T01:03:21.347Z%20and%20lastModifiedDateTime%20gt%202018-01-03T01:03:21.347Z
 
 /me/activities/recent?$top=5
+```
 
 ## Request headers
 
@@ -50,7 +48,7 @@ Here are some examples of supported queries with URL encoding:
 
 ## Request body
 
-No request body.
+Do not specify a request body.
 
 ## Response
 
@@ -60,7 +58,7 @@ If successful, this method returns the `200 OK` response code with the user's re
 
 ##### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -73,7 +71,7 @@ GET https://graph.microsoft.com/beta/me/activities/recent
 
 ##### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "ignored",
