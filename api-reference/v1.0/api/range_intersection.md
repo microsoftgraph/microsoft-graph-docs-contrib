@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/Intersection
-GET /workbook/worksheets/{id|name}/range(<address>)/Intersection
+GET /workbook/worksheets/{id|name}/range(address='<address>')/Intersection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 
 ```
@@ -22,6 +22,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

@@ -13,8 +13,8 @@ Contains properties for a single installer file that is associated with a given 
 |[Create mobileAppContentFile](../api/intune_apps_mobileappcontentfile_create.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Create a new [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
 |[Delete mobileAppContentFile](../api/intune_apps_mobileappcontentfile_delete.md)|None|Deletes a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
 |[Update mobileAppContentFile](../api/intune_apps_mobileappcontentfile_update.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Update the properties of a [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) object.|
-|[commit action](../api/intune_apps_mobileappcontentfile_commit.md)|None|Not yet documented|
-|[renewUpload action](../api/intune_apps_mobileappcontentfile_renewupload.md)|None|Not yet documented|
+|[commit action](../api/intune_apps_mobileappcontentfile_commit.md)|None|Commits a file of a given app.|
+|[renewUpload action](../api/intune_apps_mobileappcontentfile_renewupload.md)|None|Renews the SAS URI for an application file upload.|
 
 ## Properties
 |Property|Type|Description|
@@ -29,6 +29,8 @@ Contains properties for a single installer file that is associated with a given 
 |azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
 |manifest|Binary|The manifest information.|
 |uploadState|String|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|isFrameworkFile|Boolean|A value indicating whether the file is a framework file.|
+|isDependency|Boolean|Whether the content file is a dependency for the main content file.|
 
 ## Relationships
 None
@@ -52,7 +54,9 @@ Here is a JSON representation of the resource.
   "sizeEncrypted": 1024,
   "azureStorageUriExpirationDateTime": "String (timestamp)",
   "manifest": "binary",
-  "uploadState": "String"
+  "uploadState": "String",
+  "isFrameworkFile": true,
+  "isDependency": true
 }
 ```
 

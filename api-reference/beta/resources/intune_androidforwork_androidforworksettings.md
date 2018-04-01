@@ -10,10 +10,10 @@ Settings for Android For Work.
 |:---|:---|:---|
 |[Get androidForWorkSettings](../api/intune_androidforwork_androidforworksettings_get.md)|[androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md)|Read properties and relationships of the [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object.|
 |[Update androidForWorkSettings](../api/intune_androidforwork_androidforworksettings_update.md)|[androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md)|Update the properties of a [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object.|
-|[requestSignupUrl action](../api/intune_androidforwork_androidforworksettings_requestsignupurl.md)|String|Generates a sign-up URL that is used to enroll in Android for Work management.|
-|[completeSignup action](../api/intune_androidforwork_androidforworksettings_completesignup.md)|None|Completes the sign-up flow for Android for Work management.|
-|[syncApps action](../api/intune_androidforwork_androidforworksettings_syncapps.md)|None|Syncs approved applications for the Enterprise.|
-|[unbind action](../api/intune_androidforwork_androidforworksettings_unbind.md)|None|Disables Android for Work management for the Enterprise.|
+|[requestSignupUrl action](../api/intune_androidforwork_androidforworksettings_requestsignupurl.md)|String|Not yet documented|
+|[completeSignup action](../api/intune_androidforwork_androidforworksettings_completesignup.md)|None|Not yet documented|
+|[syncApps action](../api/intune_androidforwork_androidforworksettings_syncapps.md)|None|Not yet documented|
+|[unbind action](../api/intune_androidforwork_androidforworksettings_unbind.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -27,6 +27,7 @@ Settings for Android For Work.
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android for Work settings|
 |enrollmentTarget|String|Indicates which users can enroll devices in Android for Work device management Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
+|deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 
 ## Relationships
 None
@@ -51,7 +52,8 @@ Here is a JSON representation of the resource.
   "enrollmentTarget": "String",
   "targetGroupIds": [
     "String"
-  ]
+  ],
+  "deviceOwnerManagementEnabled": true
 }
 ```
 

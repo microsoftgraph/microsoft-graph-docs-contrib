@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -45,8 +44,11 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |advancedThreatProtectionOnboardingBlob|String|Windows Defender AdvancedThreatProtection Onboarding Blob.|
+|advancedThreatProtectionOnboardingFilename|String|Name of the file from which AdvancedThreatProtectionOnboardingBlob was obtained.|
 |allowSampleSharing|Boolean|Windows Defender AdvancedThreatProtection "Allow Sample Sharing" Rule|
+|enableExpeditedTelemetryReporting|Boolean|Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.|
 |advancedThreatProtectionOffboardingBlob|String|Windows Defender AdvancedThreatProtection Offboarding Blob.|
+|advancedThreatProtectionOffboardingFilename|String|Name of the file from which AdvancedThreatProtectionOffboardingBlob was obtained.|
 
 
 
@@ -59,7 +61,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 390
+Content-length: 648
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -67,8 +69,11 @@ Content-length: 390
   "displayName": "Display Name value",
   "version": 7,
   "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
+  "advancedThreatProtectionOnboardingFilename": "Advanced Threat Protection Onboarding Filename value",
   "allowSampleSharing": true,
-  "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value"
+  "enableExpeditedTelemetryReporting": true,
+  "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value",
+  "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
 
@@ -77,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 589
+Content-Length: 847
 
 {
   "@odata.type": "#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration",
@@ -88,8 +93,11 @@ Content-Length: 589
   "displayName": "Display Name value",
   "version": 7,
   "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
+  "advancedThreatProtectionOnboardingFilename": "Advanced Threat Protection Onboarding Filename value",
   "allowSampleSharing": true,
-  "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value"
+  "enableExpeditedTelemetryReporting": true,
+  "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value",
+  "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
 

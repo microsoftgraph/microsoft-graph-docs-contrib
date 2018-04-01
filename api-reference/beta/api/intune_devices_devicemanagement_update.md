@@ -40,6 +40,7 @@ The following table shows the properties that are required when you create the [
 |subscriptionState|String|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|String|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |adminConsent|[adminConsent](../resources/intune_devices_adminconsent.md)|Admin consent information.|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune_devices_deviceprotectionoverview.md)|Device protection overview.|
 
 
 
@@ -52,14 +53,27 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 191
+Content-length: 678
 
 {
   "subscriptionState": "active",
   "subscriptions": "intune",
   "adminConsent": {
     "@odata.type": "microsoft.graph.adminConsent",
-    "collectFullIOSAppInventory": "granted"
+    "shareAPNSData": "granted"
+  },
+  "deviceProtectionOverview": {
+    "@odata.type": "microsoft.graph.deviceProtectionOverview",
+    "totalReportedDeviceCount": 8,
+    "inactiveThreatAgentDeviceCount": 14,
+    "unknownStateThreatAgentDeviceCount": 2,
+    "pendingSignatureUpdateDeviceCount": 1,
+    "cleanDeviceCount": 0,
+    "pendingFullScanDeviceCount": 10,
+    "pendingRestartDeviceCount": 9,
+    "pendingManualStepsDeviceCount": 13,
+    "pendingOfflineScanDeviceCount": 13,
+    "criticalFailuresDeviceCount": 11
   }
 }
 ```
@@ -69,7 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 295
+Content-Length: 782
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
@@ -78,7 +92,20 @@ Content-Length: 295
   "subscriptions": "intune",
   "adminConsent": {
     "@odata.type": "microsoft.graph.adminConsent",
-    "collectFullIOSAppInventory": "granted"
+    "shareAPNSData": "granted"
+  },
+  "deviceProtectionOverview": {
+    "@odata.type": "microsoft.graph.deviceProtectionOverview",
+    "totalReportedDeviceCount": 8,
+    "inactiveThreatAgentDeviceCount": 14,
+    "unknownStateThreatAgentDeviceCount": 2,
+    "pendingSignatureUpdateDeviceCount": 1,
+    "cleanDeviceCount": 0,
+    "pendingFullScanDeviceCount": 10,
+    "pendingRestartDeviceCount": 9,
+    "pendingManualStepsDeviceCount": 13,
+    "pendingOfflineScanDeviceCount": 13,
+    "criticalFailuresDeviceCount": 11
   }
 }
 ```

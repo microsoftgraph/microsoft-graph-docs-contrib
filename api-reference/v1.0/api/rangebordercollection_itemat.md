@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders/ItemAt
-POST /workbook/worksheets/{id|name}/range(<address>)/format/borders/ItemAt
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
@@ -22,6 +22,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 536
+Content-Length: 764
 
 {
   "value": [
@@ -57,11 +57,16 @@ Content-Length: 536
       "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
       "partnerState": "available",
       "androidEnabled": true,
+      "iosEnabled": true,
+      "windowsEnabled": true,
+      "macEnabled": true,
       "androidDeviceBlockedOnMissingPartnerData": true,
       "iosDeviceBlockedOnMissingPartnerData": true,
+      "windowsDeviceBlockedOnMissingPartnerData": true,
+      "macDeviceBlockedOnMissingPartnerData": true,
       "partnerUnsupportedOsVersionBlocked": true,
-      "iosEnabled": true,
-      "partnerUnresponsivenessThresholdInDays": 6
+      "partnerUnresponsivenessThresholdInDays": 6,
+      "allowPartnerToCollectIOSApplicationMetadata": true
     }
   ]
 }

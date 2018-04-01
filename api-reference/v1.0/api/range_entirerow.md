@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/EntireRow
-GET /workbook/worksheets/{id|name}/range(<address>)/EntireRow
+GET /workbook/worksheets/{id|name}/range(address='<address>'/EntireRow
 GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 
 ```
@@ -22,6 +22,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 

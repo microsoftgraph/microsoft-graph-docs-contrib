@@ -19,11 +19,12 @@ actions such as copy, move, or send.
 
 Message bodies can be in HTML or text format.
 
-You can use well-known folder names such as `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users.
+You can use well-known folder names such as  `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` to identify certain mail folders that exist by default for all users.
 For example, you can get messages in the Outlook **Sent Items** folder of the signed-in user, without first getting the folder ID:
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Common use cases 
 
@@ -40,7 +41,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Focused Inbox](../resources/manage_focused_inbox.md) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
 | Get language and time zone choices for a user | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser_supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser_supportedtimezones.md) |
-| Get or update a user's automatic reply, locale or time zone | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
+| Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
 | Get MailTips of other recipients' special status, such as out-of-office (preview) | [user (preview)](../resources/user.md), <br> [mailTips (preview)](../resources/mailtips.md) | [Get MailTips](../api/user_getmailtips.md) |
 | Alert user if mentioned in other messages (preview) | [mention (preview)](../resources/mention.md) | [Get details of @-mentions in a message](../api/message_get.md#request-2) |
 | Unsubscribe user from an email distribution list (preview) | [message (preview)](../resources/message.md) | [Unsubscribe](../api/message_unsubscribe.md) |

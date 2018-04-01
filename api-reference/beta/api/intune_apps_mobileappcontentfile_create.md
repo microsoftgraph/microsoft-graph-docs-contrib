@@ -46,6 +46,8 @@ The following table shows the properties that are required when you create the m
 |azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
 |manifest|Binary|The manifest information.|
 |uploadState|String|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|isFrameworkFile|Boolean|A value indicating whether the file is a framework file.|
+|isDependency|Boolean|Whether the content file is a dependency for the main content file.|
 
 
 
@@ -58,7 +60,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 Content-type: application/json
-Content-length: 342
+Content-length: 395
 
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -69,7 +71,9 @@ Content-length: 342
   "sizeEncrypted": 13,
   "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
   "manifest": "bWFuaWZlc3Q=",
-  "uploadState": "transientError"
+  "uploadState": "transientError",
+  "isFrameworkFile": true,
+  "isDependency": true
 }
 ```
 
@@ -78,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 503
 
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -91,7 +95,9 @@ Content-Length: 450
   "sizeEncrypted": 13,
   "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
   "manifest": "bWFuaWZlc3Q=",
-  "uploadState": "transientError"
+  "uploadState": "transientError",
+  "isFrameworkFile": true,
+  "isDependency": true
 }
 ```
 

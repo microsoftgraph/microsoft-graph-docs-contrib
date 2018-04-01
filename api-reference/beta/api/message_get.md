@@ -8,19 +8,39 @@ For example, you can get a message and expand all the [mention](../resources/men
 
 Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
-### Get the message body in HTML or text format
 
-Message bodies can be in HTML or text format.
+### Get messages in another user's message folder
 
-You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:
+If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get messages 
+from another user's message folder. This section focuses on scenarios that involve delegated permissions.
 
-- Specify `Prefer: outlook.body-content-type="text"` to get a message body returned in text format.
-- Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the message body in HTML format.
+For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a message folder with John. 
+You can get a message in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.
 
-If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/messages/{id}
+```
 
-- For text format requests: `Preference-Applied: outlook.body-content-type="text"`
-- For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
+This capability applies to all the supported GET messages operations for an individual user, as listed in the [HTTP request](#http-request) section below. 
+It also applies if Garth has delegated his entire mailbox to John.
+
+If Garth has not shared his message folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
+will return an error. In such cases, specifying a user ID or user principal name only works for getting a message in the signed-in user’s own message folders, 
+and the query is equivalent to using the /me shortcut:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages/{id}
+```
+
+This capability is available in only GET operations of:
+
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
+- The above resources in delegated mailboxes
+
+This capability is not available in other operations for contacts, events, messages, and their folders.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -63,7 +83,7 @@ of each [mention](../resources/mention.md) in the message expanded.
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.

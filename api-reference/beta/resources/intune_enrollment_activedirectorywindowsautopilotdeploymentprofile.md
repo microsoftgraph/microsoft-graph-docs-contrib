@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Windows Auto Pilot Deployment Profile
+Windows Autopilot Deployment Profile
 
 Inherits from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)
 
@@ -31,6 +31,7 @@ Inherits from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment
 |Relationship|Type|Description|
 |:---|:---|:---|
 |assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) collection|The list of assigned devices for the profile. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
+|domainJoinConfiguration|[windowsDomainJoinConfiguration](../resources/intune_enrollment_windowsdomainjoinconfiguration.md)|Configuration to join Active Directory domain|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

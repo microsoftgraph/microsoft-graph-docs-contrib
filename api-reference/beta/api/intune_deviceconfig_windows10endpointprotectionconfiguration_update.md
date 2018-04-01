@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
 ```
 
 ## Request headers
@@ -44,6 +43,48 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|localSecurityOptionsBlockMicrosoftAccounts|Boolean|Prevent users from adding new Microsoft accounts to this computer.|
+|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|Enable Local accounts that are not password protected to log on from locations other than the physical device.Default is enabled|
+|localSecurityOptionsEnableAdministratorAccount|Boolean|Determines whether the Local Administrator account is enabled or disabled.|
+|localSecurityOptionsAdministratorAccountName|String|Define a different account name to be associated with the security identifier (SID) for the account “Administrator”.|
+|localSecurityOptionsEnableGuestAccount|Boolean|Determines if the Guest account is enabled or disabled.|
+|localSecurityOptionsGuestAccountName|String|Define a different account name to be associated with the security identifier (SID) for the account “Guest”.|
+|localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|Prevent a portable computer from being undocked without having to log in.|
+|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|Restrict installing printer drivers as part of connecting to a shared printer to admins only.|
+|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|Enabling this settings allows only interactively logged on user to access CD-ROM media.|
+|localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|String|Define who is allowed to format and eject removable NTFS media. Possible values are: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
+|localSecurityOptionsMachineInactivityLimit|Int32|Define maximum minutes of inactivity on the interactive desktop’s login screen until the screen saver runs.|
+|localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|Require CTRL+ALT+DEL to be pressed before a user can log on.|
+|localSecurityOptionsInformationDisplayedOnLockScreen|String|Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown Possible values are: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
+|localSecurityOptionsHideLastSignedInUser|Boolean|Do not display the username of the last person who signed in on this device.|
+|localSecurityOptionsHideUsernameAtSignIn|Boolean|Do not display the username of the person signing in to this device after credentials are entered and before the device’s desktop is shown.|
+|localSecurityOptionsLogOnMessageTitle|String|Set message title for users attempting to log in.|
+|localSecurityOptionsLogOnMessageText|String|Set message text for users attempting to log in.|
+|localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|Block PKU2U authentication requests to this device to use online identities.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Edit the default Security Descriptor Definition Language string to allow or deny users and groups to make remote calls to the SAM.|
+|localSecurityOptionsClearVirtualMemoryPageFile|Boolean|This security setting determines whether the virtual memory pagefile is cleared when the system is shut down.|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|This security setting determines whether a computer can be shut down without having to log on to Windows.|
+|localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|Allow UIAccess apps to prompt for elevation without using the secure desktop.|
+|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Boolean|Virtualize file and registry write failures to per user locations|
+|localSecurityOptionsOnlyElevateSignedExecutables|Boolean|Enforce PKI certification path validation for a given executable file before it is permitted to run.|
+|localSecurityOptionsAdministratorElevationPromptBehavior|String|Define the behavior of the elevation prompt for admins in Admin Approval Mode. Possible values are: `notConfigured`, `elevateWithoutPrompting`, `promptForCredentialsOnTheSecureDesktop`, `promptForConsentOnTheSecureDesktop`, `promptForCredentials`, `promptForConsent`, `promptForConsentForNonWindowsBinaries`.|
+|localSecurityOptionsStandardUserElevationPromptBehavior|String|Define the behavior of the elevation prompt for standard users. Possible values are: `notConfigured`, `automaticallyDenyElevationRequests`, `promptForCredentialsOnTheSecureDesktop`, `promptForCredentials`.|
+|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Boolean|Enable all elevation requests to go to the interactive user's desktop rather than the secure desktop. Prompt behavior policy settings for admins and standard users are used.|
+|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Boolean|App installations requiring elevated privileges will prompt for admin credentials.Default is enabled|
+|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Boolean|Allow UIAccess apps to prompt for elevation without using the secure desktop.Default is enabled|
+|localSecurityOptionsUseAdminApprovalMode|Boolean|Defines whether the built-in admin account uses Admin Approval Mode or runs all apps with full admin privileges.Default is enabled|
+|localSecurityOptionsUseAdminApprovalModeForAdministrators|Boolean|Define whether Admin Approval Mode and all UAC policy settings are enabled, default is enabled|
+|defenderSecurityCenterDisableAppBrowserUI|Boolean|Used to disable the display of the app and browser protection area.|
+|defenderSecurityCenterDisableFamilyUI|Boolean|Used to disable the display of the family options area.|
+|defenderSecurityCenterDisableHealthUI|Boolean|Used to disable the display of the device performance and health area.|
+|defenderSecurityCenterDisableNetworkUI|Boolean|Used to disable the display of the firewall and network protection area.|
+|defenderSecurityCenterDisableVirusUI|Boolean|Used to disable the display of the virus and threat protection area.|
+|defenderSecurityCenterOrganizationDisplayName|String|The company name that is displayed to the users.|
+|defenderSecurityCenterHelpEmail|String|The email address that is displayed to users.|
+|defenderSecurityCenterHelpPhone|String|The phone number or Skype ID that is displayed to users.|
+|defenderSecurityCenterHelpURL|String|The help portal URL this is displayed to users.|
+|defenderSecurityCenterNotificationsFromApp|String|Notifications to show from the displayed areas of app Possible values are: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
+|defenderSecurityCenterITContactDisplay|String|Configure where to display IT contact information to end users. Possible values are: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
 |firewallPreSharedKeyEncodingMethod|String|Select the preshared key encoding to be used Possible values are: `deviceDefault`, `none`, `utF8`.|
@@ -64,8 +105,13 @@ The following table shows the properties that are required when you create the [
 |defenderOfficeMacroCodeAllowWin32ImportsType|String|Value indicating the behavior of Win32 imports from Macro code in Office Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderScriptObfuscatedMacroCodeType|String|Value indicating the behavior of obfuscated js/vbs/ps/macro code Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderScriptDownloadedPayloadExecutionType|String|Value indicating the behavior of js/vbs executing payload downloaded from Internet Possible values are: `userDefined`, `block`, `auditMode`.|
-|defenderEmailContentExecutionType|String|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email(webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
-|defenderGuardMyFoldersType|String|Value indicating the behavior of protected folders Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderPreventCredentialStealingType|String|Value indicating if credential stealing from the Windows local security authority subsystem is permitted Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderProcessCreationType|String|Value indicating response to process creations originating from PSExec and WMI commands Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedUSBProcessType|String|Value indicating response to untrusted and unsigned processes that run from USB Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedExecutableType|String|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderEmailContentExecutionType|String|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client) Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderAdvancedRansomewareProtectionType|String|Value indicating use of advanced protection against ransomeware Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderGuardMyFoldersType|String|Value indicating the behavior of protected folders Possible values are: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
 |defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
 |defenderAdditionalGuardedFolders|String collection|List of folder paths to be added to the list of protected folders|
 |defenderNetworkProtectionType|String|Value indicating the behavior of NetworkProtection Possible values are: `userDefined`, `enable`, `auditMode`.|
@@ -73,10 +119,13 @@ The following table shows the properties that are required when you create the [
 |defenderExploitProtectionXmlFileName|String|Name of the file from which DefenderExploitProtectionXml was obtained.|
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indicates whether or not to block user from overriding Exploit Protection settings.|
 |appLockerApplicationControl|String|Enables the Admin to choose what types of app to allow on devices. Possible values are: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
+|deviceGuardLocalSystemAuthorityCredentialGuardSettings|String|Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Possible values are: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
+|deviceGuardEnableVirtualizationBasedSecurity|Boolean|Turns On Virtualization Based Security(VBS).|
+|deviceGuardEnableSecureBootWithDMA|Boolean|Specifies whether Platform Security Level is enabled at next reboot.|
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
-|applicationGuardBlockFileTransfer|String|Block clipboard to transfer image file, text file or neither of them Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`.|
+|applicationGuardBlockFileTransfer|String|Block clipboard to transfer image file, text file or neither of them Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
 |applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
 |applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
 |applicationGuardForceAuditing|Boolean|Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)|
@@ -85,6 +134,8 @@ The following table shows the properties that are required when you create the [
 |applicationGuardAllowPrintToXPS|Boolean|Allow printing to XPS from Container|
 |applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
+|applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
+|applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
 |bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
@@ -103,13 +154,55 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6437
+Content-length: 10050
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "localSecurityOptionsBlockMicrosoftAccounts": true,
+  "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
+  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
+  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
+  "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
+  "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
+  "localSecurityOptionsBlockRemoteOpticalDriveAccess": true,
+  "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser": "administrators",
+  "localSecurityOptionsMachineInactivityLimit": 10,
+  "localSecurityOptionsDoNotRequireCtrlAltDel": true,
+  "localSecurityOptionsInformationDisplayedOnLockScreen": "administrators",
+  "localSecurityOptionsHideLastSignedInUser": true,
+  "localSecurityOptionsHideUsernameAtSignIn": true,
+  "localSecurityOptionsLogOnMessageTitle": "Local Security Options Log On Message Title value",
+  "localSecurityOptionsLogOnMessageText": "Local Security Options Log On Message Text value",
+  "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
+  "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "Local Security Options Allow Remote Calls To Security Accounts Manager value",
+  "localSecurityOptionsClearVirtualMemoryPageFile": true,
+  "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
+  "localSecurityOptionsAllowUIAccessApplicationElevation": true,
+  "localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations": true,
+  "localSecurityOptionsOnlyElevateSignedExecutables": true,
+  "localSecurityOptionsAdministratorElevationPromptBehavior": "elevateWithoutPrompting",
+  "localSecurityOptionsStandardUserElevationPromptBehavior": "automaticallyDenyElevationRequests",
+  "localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation": true,
+  "localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation": true,
+  "localSecurityOptionsAllowUIAccessApplicationsForSecureLocations": true,
+  "localSecurityOptionsUseAdminApprovalMode": true,
+  "localSecurityOptionsUseAdminApprovalModeForAdministrators": true,
+  "defenderSecurityCenterDisableAppBrowserUI": true,
+  "defenderSecurityCenterDisableFamilyUI": true,
+  "defenderSecurityCenterDisableHealthUI": true,
+  "defenderSecurityCenterDisableNetworkUI": true,
+  "defenderSecurityCenterDisableVirusUI": true,
+  "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
+  "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
+  "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
+  "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
+  "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
+  "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
@@ -174,7 +267,12 @@ Content-length: 6437
   "defenderOfficeMacroCodeAllowWin32ImportsType": "block",
   "defenderScriptObfuscatedMacroCodeType": "block",
   "defenderScriptDownloadedPayloadExecutionType": "block",
+  "defenderPreventCredentialStealingType": "enable",
+  "defenderProcessCreationType": "block",
+  "defenderUntrustedUSBProcessType": "block",
+  "defenderUntrustedExecutableType": "block",
   "defenderEmailContentExecutionType": "block",
+  "defenderAdvancedRansomewareProtectionType": "enable",
   "defenderGuardMyFoldersType": "enable",
   "defenderGuardedFoldersAllowedAppPaths": [
     "Defender Guarded Folders Allowed App Paths value"
@@ -187,6 +285,9 @@ Content-length: 6437
   "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
   "defenderSecurityCenterBlockExploitProtectionOverride": true,
   "appLockerApplicationControl": "enforceComponentsAndStoreApps",
+  "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
+  "deviceGuardEnableVirtualizationBasedSecurity": true,
+  "deviceGuardEnableSecureBootWithDMA": true,
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -199,6 +300,8 @@ Content-length: 6437
   "applicationGuardAllowPrintToXPS": true,
   "applicationGuardAllowPrintToLocalPrinters": true,
   "applicationGuardAllowPrintToNetworkPrinters": true,
+  "applicationGuardAllowVirtualGPU": true,
+  "applicationGuardAllowFileSaveOnHost": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -255,7 +358,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6624
+Content-Length: 10237
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -265,6 +368,48 @@ Content-Length: 6624
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "localSecurityOptionsBlockMicrosoftAccounts": true,
+  "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
+  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
+  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
+  "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
+  "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
+  "localSecurityOptionsBlockRemoteOpticalDriveAccess": true,
+  "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser": "administrators",
+  "localSecurityOptionsMachineInactivityLimit": 10,
+  "localSecurityOptionsDoNotRequireCtrlAltDel": true,
+  "localSecurityOptionsInformationDisplayedOnLockScreen": "administrators",
+  "localSecurityOptionsHideLastSignedInUser": true,
+  "localSecurityOptionsHideUsernameAtSignIn": true,
+  "localSecurityOptionsLogOnMessageTitle": "Local Security Options Log On Message Title value",
+  "localSecurityOptionsLogOnMessageText": "Local Security Options Log On Message Text value",
+  "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
+  "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "Local Security Options Allow Remote Calls To Security Accounts Manager value",
+  "localSecurityOptionsClearVirtualMemoryPageFile": true,
+  "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
+  "localSecurityOptionsAllowUIAccessApplicationElevation": true,
+  "localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations": true,
+  "localSecurityOptionsOnlyElevateSignedExecutables": true,
+  "localSecurityOptionsAdministratorElevationPromptBehavior": "elevateWithoutPrompting",
+  "localSecurityOptionsStandardUserElevationPromptBehavior": "automaticallyDenyElevationRequests",
+  "localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation": true,
+  "localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation": true,
+  "localSecurityOptionsAllowUIAccessApplicationsForSecureLocations": true,
+  "localSecurityOptionsUseAdminApprovalMode": true,
+  "localSecurityOptionsUseAdminApprovalModeForAdministrators": true,
+  "defenderSecurityCenterDisableAppBrowserUI": true,
+  "defenderSecurityCenterDisableFamilyUI": true,
+  "defenderSecurityCenterDisableHealthUI": true,
+  "defenderSecurityCenterDisableNetworkUI": true,
+  "defenderSecurityCenterDisableVirusUI": true,
+  "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
+  "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
+  "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
+  "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
+  "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
+  "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
@@ -329,7 +474,12 @@ Content-Length: 6624
   "defenderOfficeMacroCodeAllowWin32ImportsType": "block",
   "defenderScriptObfuscatedMacroCodeType": "block",
   "defenderScriptDownloadedPayloadExecutionType": "block",
+  "defenderPreventCredentialStealingType": "enable",
+  "defenderProcessCreationType": "block",
+  "defenderUntrustedUSBProcessType": "block",
+  "defenderUntrustedExecutableType": "block",
   "defenderEmailContentExecutionType": "block",
+  "defenderAdvancedRansomewareProtectionType": "enable",
   "defenderGuardMyFoldersType": "enable",
   "defenderGuardedFoldersAllowedAppPaths": [
     "Defender Guarded Folders Allowed App Paths value"
@@ -342,6 +492,9 @@ Content-Length: 6624
   "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
   "defenderSecurityCenterBlockExploitProtectionOverride": true,
   "appLockerApplicationControl": "enforceComponentsAndStoreApps",
+  "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
+  "deviceGuardEnableVirtualizationBasedSecurity": true,
+  "deviceGuardEnableSecureBootWithDMA": true,
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -354,6 +507,8 @@ Content-Length: 6624
   "applicationGuardAllowPrintToXPS": true,
   "applicationGuardAllowPrintToLocalPrinters": true,
   "applicationGuardAllowPrintToNetworkPrinters": true,
+  "applicationGuardAllowVirtualGPU": true,
+  "applicationGuardAllowFileSaveOnHost": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,

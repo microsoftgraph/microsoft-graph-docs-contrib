@@ -4,9 +4,9 @@ Microsoft Graph exposes granular permissions that control the access that apps h
 ## Delegated permissions, Application permissions, and effective permissions
 Microsoft Graph has two types of permissions: **delegated permissions** and **application permissions**. 
 
-- **Delegated permissions** are used by apps that have a signed-in user present. For these apps either the user or an administrator consents to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require administrator consent.  
+- **Delegated permissions** are used by apps that have a signed-in user present. For these apps either the user or an administrator consents to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require [administrator consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons.  Application permissions can only be consented by an administrator. 
+- **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons.  Application permissions can only be [consented by an administrator](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 _Effective permissions_ are the permissions that your app will have when making requests to Microsoft Graph. It is important to understand the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to Microsoft Graph.
 
@@ -88,7 +88,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|Permission    |isplay String   |Description |Admin Consent Required |
+|Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Contacts.Read_ |Read user contacts  |Allows the app to read user contacts. |No |
 |_Contacts.Read.Shared_ |Read user and shared contacts |Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. |No |
@@ -203,7 +203,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Directory.Read.All_ |Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps. | Yes |
+| _Directory.Read.All_ |Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note**: Users may consent to applications that require this permission if the application is registered in their own organization’s tenant.| Yes |
 | _Directory.ReadWrite.All_ |Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups. It does not allow the app to delete users or groups, or reset user passwords. | Yes |
 | _Directory.AccessAsUser.All_ |Access directory as the signed-in user  | Allows the app to have the same access to information in the directory as the signed-in user. | Yes |
 
@@ -254,6 +254,43 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
+
+## Education permissions
+
+#### Delegated permissions
+
+|Permission |Display String |Description | Admin Consent Required |
+|:--------- |:------------- |:---------- | :--------------------- |
+|EduAdministration.Read | Read education app settings |  Allows the app to read education app settings on behalf of the user. | Yes |
+|EduAdministration.ReadWrite | Manage education app settings | Allows the app to manage education app settings on behalf of the user. | Yes |
+|EduAssignments.ReadBasic | Read users' class assignments without grades | Allows the app to read assignments without grades on behalf of the user | Yes |
+|EduAssignments.ReadWriteBasic | Read and write users' class assignments without grades | Allows the app to read and write assignments without grades on behalf of the user | Yes |
+|EduAssignments.Read | Read users' view of class assignments and their grades | Allows the app to read assignments and their grades on behalf of the user| Yes |
+|EduAssignments.ReadWrite | Read and write users' view of class assignments and their grades | Allows the app to read and write assignments and their grades on behalf of the user|Yes |
+|EduRostering.ReadBasic| Read a limited subset of users' view of the roster | Allows the app to read a limited subset of the data from the  structure of schools and classes in an organization's roster and  education-specific information about users to be read on behalf of the user.  | Yes  |
+
+
+#### Application permissions
+
+| Permission | Display String | Description | Admin Consent Required |
+| :--------- | :------------- | :---------- | :--------------------- |
+|EduAssignments.ReadBasic.All| Read class assignments without grades|Allows the app to read assignments without grades for all users| Yes |
+|EduAssignments.ReadWriteBasic.All | Read and write class assignments without grades | Allows the app to read and write assignments without grades for all users| Yes |
+|EduAssignments.Read.All| Read class assignments with grades | Allows the app to read assignments and their grades for all users | Yes |
+|EduAssignments.ReadWrite.All | Read and write class assignments with grades | Allows the app to read and write assignments and their grades for all users | Yes |
+|EduRostering.ReadBasic.All | Read a limited subset of the organization's roster. | Allows the app to read a limited subset of both the structure of schools and classes in an organization's roster and education-specific information about all users. | Yes |
+|EduRostering.Read.All | Read the organization's roster. | Allows the app to read the structure of schools and classes in the organization's roster and education-specific information about all users to be read. | Yes |
+|EduRostering.ReadWrite.All| Read and write the organization's roster. | Allows the app to read and write the structure of schools and classes in the organization's roster and education-specific information about all users to be read and written.  | Yes |
+
+### Example usage
+
+#### Delegated
+
+* _EduAssignments.Read_: Get the signed-in student's assignment information (`GET /education/classes/<id>/assignments/<id>`)
+* _EduAssignments.ReadWriteBasic_: Submit signed-in student assignment (`GET /education/classes/<id>/assignments/<id>submit`)
+* _EduRoster.ReadBasic_: Classes a signed-in user attends or teaches (`GET /education/classes/<id>/members`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ## Files permissions
 
@@ -687,6 +724,36 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 * _Tasks.Read_: Get all uncompleted tasks in a user's mailbox (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
 * _Tasks.ReadWrite_: Update a task in a user's mailbox (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
 * _Tasks.ReadWrite.Shared_: Complete a task on behalf of another user (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Terms of use permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Agreement.Read.All_ | Read all terms of use agreements | Allows the app to read terms of use agreements on behalf of the signed-in user. | Yes |
+| _Agreement.ReadWrite.All_ | Read and write all terms of use agreements | Allows the app to read and write terms of use agreements on behalf of the signed-in user. | Yes |
+| _AgreementAcceptance.Read_ | Read user terms of use acceptance statuses | Allows the app to read terms of use acceptance statuses on behalf of the signed-in user. | Yes |
+| _AgreementAcceptance.Read.All_ | Read terms of use acceptance statuses that user can access | Allows the app to read terms of use acceptance statuses on behalf of the signed-in user. | Yes |
+
+### Remarks
+
+All the permissions above are valid only for work or school accounts.
+
+For an app to read or write all agreements or agreement acceptances with delegated permissions, the signed-in user must be assigned the Global Administrator, Conditional Access Administrator or Security Administrator role. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+### Example usage
+
+#### Delegated
+The following usages are valid for both delegated permissions:
+
+* _Agreement.Read.All_: Read all terms of use agreements (`GET /beta/agreements`)
+* _Agreement.ReadWrite.All_: Read and write all terms of use agreements (`POST /beta/agreements`)
+* _AgreementAcceptance.Read_ Read user terms of use acceptance statuses (`GET /beta/me/agreementAcceptances`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
