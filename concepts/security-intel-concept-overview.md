@@ -1,8 +1,8 @@
-# Azure AD security intelligence in Microsoft Graph
+# Security intelligence in Microsoft Graph
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 
-## Why integrate with Azure AD security intelligence?
+## Why integrate with security intelligence?
 
 {<=1.5 pages of value proposition for developers.}
 
