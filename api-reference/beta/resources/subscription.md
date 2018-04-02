@@ -26,9 +26,11 @@ Here is a JSON representation of the resource.
   "changeType": "string",
   "notificationUrl": "string",
   "resource": "string",
+  "applicationId" : "string",
   "expirationDateTime": "String (timestamp)",
   "id": "string (identifier)",
   "clientState": "string",
+  "creatorUserId": "string"
 }
 
 ```
@@ -42,6 +44,9 @@ Here is a JSON representation of the resource.
 | expirationDateTime | DateTimeOffset | Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time.                                                                                                                              |
 | clientState        | string         | Specifies the value of the `clientState` property sent by the service in each notification. The maximum length is 255 characters. The client can check that the notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each notification. |
 | id                 | string         | Unique identifier for the subscription. Read-only.                                                                                                                                                                                                                                                                                                               |
+| applicationId      | string         | Identifier of the application used to create the subscription. |
+| creatorUserId      | string         | Identifier of the user that created the subscription. |
+
 
 ## Maximum length of subscription per resource type
 
@@ -63,6 +68,7 @@ None
 |:-----------------------------------------------------------------|:--------------------------------|:----------------------------------------------------------------------------------------------|
 | [Create subscription](../api/subscription_post_subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive notifications when Microsoft Graph data changes. |
 | [Update subscription](../api/subscription_update.md)             | [subscription](subscription.md) | Renew a subscription by updating its expiration time.                                         |
+| [List subscriptions](../api/subscription_list.md)                | [subscription](subscription.md) | Lists activie subscriptions. |
 | [Get subscription](../api/subscription_get.md)                   | [subscription](subscription.md) | Read properties and relationships of subscription object.                                     |
 | [Delete subscription](../api/subscription_delete.md)             | None                            | Delete a subscription object.                                                                 |
 

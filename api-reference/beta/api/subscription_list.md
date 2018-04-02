@@ -1,10 +1,8 @@
-# Update subscription
+# List subscriptions
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Renew a subscription by extending its expiry time.
-
-Subscriptions to resources expire at dates proscribed by the individual resource types.  In order not to miss notifications, subscriptions should be renewed well in advance of their expiry date.  See [subscription](../resources/subscription.md) for individual expiry dates.
+Retrieve the properties and relationships of a subscription.
 ## Permissions
 
 The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -25,13 +23,18 @@ The following table lists the suggested permission needed for each resource. To 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /subscriptions/{id}
+GET /subscriptions/
 ```
+## Optional query parameters
+This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+
+## Request body
+Do not supply a request body for this method.
 
 ## Response
 
@@ -41,17 +44,11 @@ If successful, this method returns a `200 OK` response code and [subscription](.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_subscription"
+  "name": "get_subscription"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/subscriptions/{id}
-Content-type: application/json
-
-{
-   "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
-}
+GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
-
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -67,19 +64,18 @@ Content-length: 252
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource":"me/messages",
-  "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType":"created,updated",
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
-  "creatorUserId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "expirationDateTime":"2016-11-20T18:23:45.9356913Z"
 }
 ```
 
-
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update subscription",
+  "description": "Get subscription",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
