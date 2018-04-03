@@ -48,6 +48,7 @@
       <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
   </Item>
   <Item text="Personal contacts (Outlook)" url="/en-us/concepts/outlook-contacts-concept-overview" />
+  <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Security intelligence" url="/en-us/concepts/security-intel-concept-overview" />
   <Item text="Sites and lists (SharePoint)" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="Social intelligence" url="/en-us/concepts/social-intel-concept-overview" >

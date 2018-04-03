@@ -1,4 +1,4 @@
-# API overview for Project Rome cross-device experiences (preview)
+# API overview for cross-device experiences
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 
