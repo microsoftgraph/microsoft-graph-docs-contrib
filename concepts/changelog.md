@@ -26,6 +26,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **onPremisesExtensionAttributes** complex type to the [user](../api-reference/beta/resources/user.md) entity. This contains the on-premises AD extension attributes 1-15. |
 | Addition        | Beta        | Added the **privacyProfile** complex type to the [organization](../api-reference/beta/resources/organization.md) entity. |
+| Addition        | V1.0        | Added support for [restoring and permanently deleting users and groups](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directory). |
 
 ### Excel APIs
 |Change type|Version|Description|
