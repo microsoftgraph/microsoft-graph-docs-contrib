@@ -1,16 +1,31 @@
 # Changelog for Microsoft Graph
 
-This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
+This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
 ## March 2018
 
+### ActivityFeedService APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta       | Added [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_recent_activities) |
+| Addition        | Beta       | Added [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_activities) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/beta/api/projectrome_put_activity) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_put_historyitem) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Delete Activity](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_delete_activity) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/beta/projectrome_delete_historyItem) |
+| Change | Beta | Added **status** property to [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) |
+| Change | Beta | Added **activity** navigation property to [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) |
+| Change | Beta | Added new APIs to [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/project_rome_overview) |
+
 ### Directory APIs
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Added the **onPremisesExtensionAttributes** complex type to the [user](../api-reference/beta/resources/user.md) entity. This contains the on-premises extension attributes 1-15. |
+| Addition        | Beta        | Added the **onPremisesExtensionAttributes** complex type to the [user](../api-reference/beta/resources/user.md) entity. This contains the on-premises AD extension attributes 1-15. |
+| Addition        | Beta        | Added the **privacyProfile** complex type to the [organization](../api-reference/beta/resources/organization.md) entity. |
 
 ### Excel APIs
 |Change type|Version|Description|
@@ -29,12 +44,24 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | v1.0        | Added [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy) |
 | Addition        | v1.0        | Added the following APIs for group lifecycle policy: [Create](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [List](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list), [Get](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get), [Update](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update), [Delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete), [Add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup), [Remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
 | Addition        | v1.0        | Added [List groupLifecyclePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) function to [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group) |
-| Change | V1.0 | Added renewedDateTime property and [renew](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_renew) to [group](../api-reference/v1.0/resources/group.md) | 
+| Change | v1.0 | Added renewedDateTime property and [renew](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_renew) to [group](../api-reference/v1.0/resources/group.md) | 
+
+### Terms of use
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the [agreement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/agreement) and [agreementAcceptance](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/agreementAcceptance) resources. |
+| Addition        | Beta        | Added the following APIs for [agreement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/agreement): [Create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/greement_post_agreements), [List](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/agreement_list), [Get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/agreement_get), [Update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/agreement_update), [Delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/agreement_delete). |
+| Addition        | Beta        | Added the [agreementAcceptance](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/agreementAcceptance) relationships to the [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) resource. |
 
 ### Microsoft Intune APIs
 
 |Change type|Version|Description|
 |:---|:---|:---|
+|Addition|v1.0|Added new entities:<br/>[iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_apps_iosmobileappconfiguration)<br/>[vppToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_onboarding_vpptoken)<br/>|
+|Addition|v1.0|Added new complex types:<br/>[appConfigurationSettingItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem)<br/>|
+|Addition|v1.0|Added the [syncLicenses](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses.md) action on [vppToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_onboarding_vpptoken) |
+|Addition|v1.0|Added the **vppTokens** navigation property to the [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_apps_deviceappmanagement) entity|
 |Addition|beta|Added new entities:<br/>[androidDeviceOwnerEnrollmentProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile)<br/>[androidDeviceOwnerGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_androiddeviceownergeneraldeviceconfiguration)<br/>[androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings)<br/>[androidManagedStoreAppConfigurationSchema](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschema)<br/>[dataSharingConsent](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_devices_datasharingconsent)<br/>[deviceConfigurationUserStateSummary](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuserstatesummary)<br/>[macOSEndpointProtectionConfiguration](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_macosendpointprotectionconfiguration)<br/>[macOSImportedPFXCertificateProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_macosimportedpfxcertificateprofile)<br/>[macOSLobApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_macoslobapp)<br/>[managedEBookCategory](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_books_managedebookcategory)<br/>[microsoftStoreForBusinessContainedApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesscontainedapp)<br/>[mobileContainedApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_mobilecontainedapp)<br/>[windowsUniversalAppXContainedApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappxcontainedapp)<br/>|
 |Addition|beta|Added new complex types:<br/>[androidManagedStoreAppConfigurationSchemaItem](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem)<br/>[deviceAndAppManagementData](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_onboarding_deviceandappmanagementdata)<br/>[loggedOnUser](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_devices_loggedonuser)<br/>[macOSFirewallApplication](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_macosfirewallapplication)<br/>[macOSLobChildApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_macoslobchildapp)<br/>[macOSMinimumOperatingSystem](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_macosminimumoperatingsystem)<br/>[windowsAppXAppAssignmentSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsappxappassignmentsettings)<br/>[windowsUniversalAppXAppAssignmentSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappxappassignmentsettings)<br/>|
 |Addition|beta|Added the [requestSignupUrl](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_requestsignupurl.md) action on [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) |
@@ -82,7 +109,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **containedApps** navigation property to the [microsoftStoreForBusinessApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp) entity|
 |Addition|beta|Added the **containedApps** navigation property to the [mobileAppContent](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_mobileappcontent) entity|
 |Addition|beta|Added the **committedContainedApps** navigation property to the [windowsUniversalAppX](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappx) entity|
-
 
 ## February 2018
 
