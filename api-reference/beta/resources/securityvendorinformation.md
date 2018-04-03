@@ -1,6 +1,6 @@
 # SecurityVendorInformation resource type
 
-Complex Type containing details about the Security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker)
+Complex Type containing details about the Security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).
 
 ## Properties
 
@@ -8,10 +8,10 @@ Complex Type containing details about the Security product/service vendor, provi
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|provider|String*|Specific provider (product/service - not vendor company) e.g. WindowsDefenderATP|
-|providerVersion|String|Version of the provider or subprovider, if exists, that generated the alert|
-|subProvider|String|Specific subprovider (under aggregating provider) e.g. WindowsDefenderATP.SmartScreen|
-|vendor|String*|Name of the alert vendor (e.g. Microsoft, Dell, FireEye)|
+|provider|String*|Specific provider (product/service - not vendor company) e.g. WindowsDefenderATP.|
+|providerVersion|String|Version of the provider or subprovider, if exists, that generated the alert.|
+|subProvider|String|Specific subprovider (under aggregating provider) e.g. WindowsDefenderATP.SmartScreen.|
+|vendor|String*|Name of the alert vendor (e.g. Microsoft, Dell, FireEye).|
 
 ## JSON representation
 

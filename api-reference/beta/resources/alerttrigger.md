@@ -6,9 +6,9 @@ Complex type containing information about the attribute(s) that triggered a dete
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|name|String|Name of the attribute serving as a detection trigger|
+|name|String|Name of the attribute serving as a detection trigger.|
 |type|String|Type of the attribute in the key:value pair for interpretation, e.g. String, Boolean, etc.|
-|value|String|Value of the attribute serving as a detection trigger|
+|value|String|Value of the attribute serving as a detection trigger.|
 
 ## JSON representation
 

@@ -6,11 +6,11 @@ Complex type containing stateful information about the application
 
 | Property  | Type|Description|
 |:---------------|:--------|:----------|
-|deploymentPackageUrl|String|URI to deployment package and/or type of deployment package (e.g. appx, MSI, etc.)|
-|name|String|Application name|
+|deploymentPackageUrl|String|URI to deployment package and/or type of deployment package. (e.g. appx, MSI, etc.)|
+|name|String|Application name.|
 |permissionsRequired|String|The level of permissions the application requires to function. Possible values are: `unknown`, `anonymous`, `guest`, `user`, `administrator`, `system`.|
-|publisher|String|The application publisher name. This helps distinguish between applications with the same AppX name|
-|riskScore|String|Provider-generated/calculated risk score of the application|
+|publisher|String|The application publisher name. This helps distinguish between applications with the same AppX name.|
+|riskScore|String|Provider-generated/calculated risk score of the application.|
 
 ## JSON representation
 

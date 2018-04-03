@@ -6,8 +6,8 @@ Complex type containing stateful information about the activity group
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|aliases|String collection|[STIX 2.0 standard] list of aliases for the activity group |
-|name|String|[STIX 2.0 standard] display name for the activity group|
+|aliases|String collection|[STIX 2.0 standard](https://oasis-open.github.io/cti-documentation/stix/intro) list of aliases for the activity group.|
+|name|String|[STIX 2.0 standard](https://oasis-open.github.io/cti-documentation/stix/intro) display name for the activity group.|
 
 ## JSON representation
 

@@ -6,12 +6,12 @@ Complex type containing stateful information about the network connection relate
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|destinationAddress|String|Destination IP address (of the network connection) as a string|
-|destinationPort|String|Destination port (of the network connection) as a string|
+|destinationAddress|String|Destination IP address (of the network connection).|
+|destinationPort|String|Destination port (of the network connection).|
 |protocol|String|Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
-|sourceAddress|String|Source (i.e. origin) IP address (of the network connection) as a string|
-|sourcePort|String|Source (i.e. origin) IP port (of the network connection) as a string|
-|uri|String|Network connection URI string|
+|sourceAddress|String|Source (i.e. origin) IP address (of the network connection).|
+|sourcePort|String|Source (i.e. origin) IP port (of the network connection).|
+|uri|String|Network connection URI string.|
 
 ## JSON representation
 

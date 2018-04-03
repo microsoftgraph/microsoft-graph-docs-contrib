@@ -6,11 +6,11 @@ Complex type containing information about the file (not process) related to the 
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|authenticodeHash256|String|Authenticode 256 hash of image file (used by AppLocker and others)|
-|name|String|File Name (without path)|
-|path|String|Full file path of the file/imageFile|
-|riskScore|String|Provider generated/calculated risk score of the alert file|
-|sha256|String|Sha256 cryptographic hash of the alert file|
+|authenticodeHash256|String|Authenticode 256 hash of image file (used by AppLocker and others).|
+|name|String|File Name (without path).|
+|path|String|Full file path of the file/imageFile.|
+|riskScore|String|Provider generated/calculated risk score of the alert file.|
+|sha256|String|Sha256 cryptographic hash of the alert file.|
 
 ## JSON representation
 
