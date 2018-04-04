@@ -1,6 +1,6 @@
 # Get alert
 
-Retrieve the properties and relationships of an **alert** object.
+Retrieve the properties and relationships of an [alert](../resources/alert.md) object.
 
 ## Permissions
 
@@ -32,13 +32,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [alert](../resources/alert.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an **alert** object in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -50,7 +50,7 @@ GET https://graph.microsoft.com/beta/security/alerts/{Alert_id}
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
