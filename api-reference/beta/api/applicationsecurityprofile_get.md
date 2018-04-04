@@ -1,6 +1,6 @@
 # Get applicationSecurityProfile
 
-Retrieve the properties and relationships of applicationSecurityProfile object.
+Retrieve the properties and relationships of an [applicationSecurityProfile](../resources/applicationsecurityprofile.md) object.
 
 ## Permissions
 
@@ -32,13 +32,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [applicationSecurityProfile](../resources/applicationsecurityprofile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an **applicationSecurityProfile** object in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_applicationsecurityprofile"
@@ -50,7 +50,9 @@ GET https://graph.microsoft.com/beta/security/applicationSecurityProfiles/{appli
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": false,
