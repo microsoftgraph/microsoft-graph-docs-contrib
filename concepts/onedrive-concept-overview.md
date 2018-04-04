@@ -1,7 +1,19 @@
 # OneDrive file storage API overview
 
-OneDrive is a file storage hub in Office 365.
-It gives users a place to store their own files as well as collaborate on shared files.
+OneDrive is the files hub in Office 365.
+
+People work with files across a variety of apps -- Microsoft Teams, SharePoint Team Sites, Groups, and more.
+OneDrive lets users access their files no matter where they are stored, and the OneDrive API in Microsoft Graph lets you use a single API to do it.
+
+The best place for files that belong to a team is a [SharePoint][] document library.
+Office 365 groups, Microsoft Teams, and Team Sites all use document libraries for their file storage.
+Files and folders in a library can be accessed by anyone in the team as well as shared with other people and groups.
+
+The best place for personal files is in a user's personal drive.
+Personal files start out private to the owner, but can also be shared with others.
+
+OneDrive's flexibility lets users collaborate on files however it works best for them.
+Users can share links to files in their personal drives, copy or move files to team drives, or even attach OneDrive files to mail messages in Outlook.
 
 ## Why integrate with OneDrive file storage in the cloud?
 
@@ -49,6 +61,7 @@ Use the [delta API][] to see what changed since the last time your app synchroni
 
 Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.
 
+[SharePoint]: sharepoint-concept-overview.md
 [file picker]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [file handler]: https://docs.microsoft.com/onedrive/developer/file-handlers
 [special folders]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/drive_get_specialfolder
