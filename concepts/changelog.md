@@ -3,6 +3,14 @@
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.  
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
+## April 2018
+
+### Reports APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Change|beta|Change permission for [reports](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report) APIs|
+|Change|v1.0|Change permission for [reports](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/report) APIs|
+
 ## February 2018
 
 ### Microsoft Intune APIs
