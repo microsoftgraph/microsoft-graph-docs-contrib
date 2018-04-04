@@ -88,9 +88,10 @@ HTTP/1.1 204 No Content
 
 ## Example 2
 
-### Request (using "prefer" request header)
+### Request 
 
-The following is an example of the request.
+The following example shows a request that includes the `Prefer` request header.
+
 <!-- {
   "blockType": "request",
   "name": "update_alert"
