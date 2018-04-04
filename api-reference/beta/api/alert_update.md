@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-This method must include the alertId as a parameter.
+This method must include the alert ID as a parameter.
 <!-- { "blockType": "ignored" } -->
 
 ```http
