@@ -26,9 +26,16 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## Optional query parameters
 
-This method supports the `$count, $filter, $orderby, $select, $skip, and $top` [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the following [OData query parameters](../../../concepts/query_parameters.md) to help customize the response:
 
-To return an alternative property set, you must specify the desired set of [alert](../resources/alert.md) properties using the OData `$select` query parameter. For example, to return _assignedTo_, _category_, and _severity_, you would add the following to your query `$select=assignedTo,category,severity`
+- `$count`
+- `$filter`
+- `$orderby`
+- `$select`
+- `$skip`
+- `$top`
+
+To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
 ## Request headers
 
@@ -42,13 +49,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [Alert](../resources/alert.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_alerts"
@@ -60,7 +67,9 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
