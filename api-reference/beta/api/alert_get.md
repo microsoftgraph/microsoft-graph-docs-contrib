@@ -1,6 +1,6 @@
-# Get Alert
+# Get alert
 
-Retrieve the properties and relationships of an alert object.
+Retrieve the properties and relationships of an **alert** object.
 
 ## Permissions
 
@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
-|Delegated (personal Microsoft account) |  Not supported  |
+|Delegated (personal Microsoft account) |  Not supported.  |
 |Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## HTTP request
@@ -32,7 +32,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [Alert](../resources/alert.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [alert](../resources/alert.md) object in the response body.
 
 ## Example
 
