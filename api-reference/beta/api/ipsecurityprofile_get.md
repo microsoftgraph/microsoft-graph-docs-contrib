@@ -1,6 +1,8 @@
 # Get ipSecurityProfile
 
-Retrieve the properties and relationships of ipSecurityProfile object.
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Retrieve the properties and relationships of an [ipSecurityProfile](../resources/ipsecurityprofile.md) object.
 
 ## Permissions
 
@@ -9,7 +11,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported  |
+|Delegated (personal Microsoft account) |  Not supported.  |
 |Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## HTTP request
@@ -24,7 +26,7 @@ GET /security/ipSecurityProfiles/{ipSecurityProfile_Id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code} (required)|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
 
@@ -38,7 +40,7 @@ If successful, this method returns a `200 OK` response code and [ipSecurityProfi
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_ipsecurityprofile"
@@ -50,11 +52,11 @@ GET https://graph.microsoft.com/beta/security/ipSecurityProfiles/{ipSecurityProf
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.IpSecurityProfile"
+  "@odata.type": "microsoft.graph.ipSecurityProfile"
 } -->
 
 ```http

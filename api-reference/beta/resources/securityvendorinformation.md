@@ -1,6 +1,8 @@
-# SecurityVendorInformation resource type
+# securityVendorInformation resource type
 
-Complex Type containing details about the Security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Contains details about the security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).
 
 ## Properties
 
@@ -22,7 +24,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.SecurityVendorInformation"
+  "@odata.type": "microsoft.graph.securityVendorInformation"
 }-->
 
 ```json
@@ -39,7 +41,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "SecurityVendorInformation resource",
+  "description": "securityVendorInformation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

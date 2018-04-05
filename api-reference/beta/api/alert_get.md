@@ -1,5 +1,7 @@
 # Get alert
 
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of an [alert](../resources/alert.md) object.
 
 ## Permissions
@@ -17,14 +19,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /security/alerts/{Alert_id}
+GET /security/alerts/{id}
 ```
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code} (required)|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
 
@@ -45,7 +47,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/alerts/{Alert_id}
+GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
 
 ### Response
@@ -54,7 +56,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.Alert"
+  "@odata.type": "microsoft.graph.alert"
 } -->
 
 ```http
@@ -198,7 +200,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Alert",
+  "description": "Get glert",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

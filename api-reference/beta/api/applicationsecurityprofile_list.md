@@ -1,6 +1,8 @@
 # List applicationSecurityProfiles
 
-Retrieve a list of applicationSecurityProfile objects.
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Retrieve a list of [applicationSecurityProfile](../resources/applicationsecurityprofile.md) objects.
 
 ## Permissions
 
@@ -9,7 +11,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported   |
+|Delegated (personal Microsoft account) | Not supported.   |
 |Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## HTTP request
@@ -26,13 +28,20 @@ GET /security/applicationSecurityProfiles?$filter={property} eq '{property-value
 
 ## Optional query parameters
 
-This method supports the `$count, $filter, $orderby, $select, $skip, and $top` [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the following [OData query parameters](../../../concepts/query_parameters.md) to help customize the response:
+
+- `$count`
+- `$filter`
+- `$orderby`
+- `$select`
+- `$skip`
+- `$top`
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code} (required)|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
 
@@ -46,7 +55,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_applicationsecurityprofiles"
@@ -58,11 +67,12 @@ GET https://graph.microsoft.com/beta/security/applicationSecurityProfiles
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ApplicationSecurityProfile",
+  "@odata.type": "microsoft.graph.applicationSecurityProfile",
   "isCollection": true
 } -->
 

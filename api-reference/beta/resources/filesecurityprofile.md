@@ -1,16 +1,18 @@
-# FileSecurityProfile resource type
+# fileSecurityProfile resource type
 
-Defines the relevant security properties of files to provide additional context for Alerts and targets for Actions.
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Security Profiles are populated by integrated solutions at their discretion.<br/> For example: - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. - A Provider will populate ipSecurityProfile for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring
+Defines the relevant security properties of files to provide additional context for alerts and targets for actions.
+
+Security profiles are populated by integrated solutions at their discretion.<br/> For example: - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. - A Provider will populate ipSecurityProfile for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring
 
 ## Methods
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get FileSecurityProfile](../api/filesecurityprofile_get.md) | [FileSecurityProfile](filesecurityprofile.md) |Read properties and relationships of fileSecurityProfile object.|
-|[Update](../api/filesecurityprofile_update.md) | [FileSecurityProfile](filesecurityprofile.md)|Update FileSecurityProfile object. |
-|[List FileSecurityProfiles](../api/filesecurityprofile_list.md) |[FileSecurityProfile](filesecurityprofile.md) collection| Get a FileSecurityProfile object collection.|
+|[Get fileSecurityProfile](../api/filesecurityprofile_get.md) | [fileSecurityProfile](filesecurityprofile.md) |Read properties and relationships of fileSecurityProfile object.|
+|[Update](../api/filesecurityprofile_update.md) | [fileSecurityProfile](filesecurityprofile.md)|Update fileSecurityProfile object. |
+|[List fileSecurityProfiles](../api/filesecurityprofile_list.md) |[fileSecurityProfile](filesecurityprofile.md) collection| Get a fileSecurityProfile object collection.|
 
 ## Properties
 
@@ -18,22 +20,22 @@ Security Profiles are populated by integrated solutions at their discretion.<br/
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|authenticodeHash256|String|Authenticode 256 hash of file (used by applocker and others)|
-|azureSubscriptionId|String|Azure subscription ID of the entity, if this entity represents an Azure resource|
-|azureTenantId|String *|Azure Active Directory tenant ID of this resource|
-|certificateThumbprint|String|Code sign certificate thumbprint|
-|createdDateTime|DateTimeOffset *|Time at which the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|authenticodeHash256|String|Authenticode 256 hash of file (used by applocker and others).|
+|azureSubscriptionId|String|Azure subscription ID of the entity, if this entity represents an Azure resource.|
+|azureTenantId|String *|Azure Active Directory tenant ID of this resource.|
+|certificateThumbprint|String|Code sign certificate thumbprint.|
+|createdDateTime|DateTimeOffset *|Time at which the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |id|String *|Provider-generated GUID/unique identifier. Read-only.|
-|lastModifiedDateTime|DateTimeOffset|Time at which the entity was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|md5|String|Md5 hash of file|
-|name|String|Filename without path|
-|path|String|The full path of the file|
-|riskScore|String|Provider-calculated risk score of the file|
-|sha1|String|Cryptographic (Sha1) hash of file|
-|sha256|String|Sha256 cryptographic hash of file|
-|size|Int64|File size|
-|tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (e.g. "HVA", "SAW", etc.) ([Supports Update](../api/filesecurityprofile_update.md))|
-|vendorInformation|[SecurityVendorInformation](securityvendorinformation.md)*|Complex Type containing details about the Security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker)|
+|lastModifiedDateTime|DateTimeOffset|Time at which the entity was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|md5|String|Md5 hash of file.|
+|name|String|Filename without path.|
+|path|String|The full path of the file.|
+|riskScore|String|Provider-calculated risk score of the file.|
+|sha1|String|Cryptographic (Sha1) hash of file.|
+|sha256|String|Sha256 cryptographic hash of file.|
+|size|Int64|File size.|
+|tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (e.g. "HVA", "SAW", etc.) ([Supports Update](../api/filesecurityprofile_update.md)).|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)*|Complex Type containing details about the Security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).|
 
 ## Relationships
 
@@ -48,7 +50,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.FileSecurityProfile"
+  "@odata.type": "microsoft.graph.fileSecurityProfile"
 }-->
 
 ```json
@@ -68,7 +70,7 @@ Here is a JSON representation of the resource.
   "sha256": "String",
   "size": 1024,
   "tags": ["String"],
-  "vendorInformation": {"@odata.type": "microsoft.graph.SecurityVendorInformation"}
+  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"}
 }
 
 ```
@@ -77,7 +79,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "FileSecurityProfile resource",
+  "description": "fileSecurityProfile resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

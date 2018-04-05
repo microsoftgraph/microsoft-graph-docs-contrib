@@ -1,8 +1,8 @@
 # Update alert
 
-Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions. This method updates any solution that has a record of the referenced alert ID. 
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
->**Note:** You must include the alert ID as a parameter with this method.
+Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions. This method updates any solution that has a record of the referenced alert ID.
 
 ## Permissions
 
@@ -11,23 +11,23 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |   SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported  |
+|Delegated (personal Microsoft account) |  Not supported.  |
 |Application | SecurityEvents.ReadWrite.All |
 
 ## HTTP request
 
-This method must include the alert ID as a parameter.
+> **Note:** You must include the **alert** ID as a parameter with this method.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /security/alerts/{Alert_id}
+PATCH /security/alerts/{id}
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code} (required)|
+| Authorization  | Bearer {code}. Required.|
 |Prefer | return=representation |
 
 ## Request body
@@ -37,7 +37,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |assignedTo|String|Name of the analyst the alert is assigned to for triage, investigation, or remediation.|
-|closedDateTime|DateTimeOffset|Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
+|closedDateTime|DateTimeOffset|Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |comments|String|Analyst comments on the alert (for customer alert management).|
 |feedback|string|Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|string|Alert lifecycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/alerts/{Alert_id}
+PATCH https://graph.microsoft.com/v1.0/security/alerts/{id}
 Content-type: application/json
 
 {
@@ -79,7 +79,7 @@ The following is an example of a successful response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Alert"
+  "@odata.type": "microsoft.graph.alert"
 } -->
 
 ```http
@@ -98,7 +98,7 @@ The following example shows a request that includes the `Prefer` request header.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/alerts/{Alert_id}
+PATCH https://graph.microsoft.com/v1.0/security/alerts/{id}
 Content-type: application/json
 Prefer: return=representation
 
@@ -114,13 +114,13 @@ Prefer: return=representation
 
 ### Response
 
-The following is an example of the response to a request that includes the optional `Prefer: return=representation` request header. 
+The following is an example of the response when the optional `Prefer: return=representation` request header is used.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Alert"
+  "@odata.type": "microsoft.graph.alert"
 } -->
 
 ```http

@@ -1,5 +1,7 @@
 # Get applicationSecurityProfile
 
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of an [applicationSecurityProfile](../resources/applicationsecurityprofile.md) object.
 
 ## Permissions
@@ -9,7 +11,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported  |
+|Delegated (personal Microsoft account) |  Not supported.  |
 |Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## HTTP request
@@ -24,7 +26,7 @@ GET /security/applicationSecurityProfiles/{applicationSecurityProfile_Id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code} (required)|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
 
@@ -50,13 +52,12 @@ GET https://graph.microsoft.com/beta/security/applicationSecurityProfiles/{appli
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.ApplicationSecurityProfile"
+  "@odata.type": "microsoft.graph.applicationSecurityProfile"
 } -->
 
 ```http

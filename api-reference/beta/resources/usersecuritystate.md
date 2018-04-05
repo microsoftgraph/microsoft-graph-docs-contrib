@@ -1,6 +1,8 @@
-# UserSecurityState resource type
+# userSecurityState resource type
 
-Complex Type containing stateful information about the User Account
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Contains stateful information about the User Account.
 
 ## Properties
 
@@ -27,7 +29,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.UserSecurityState"
+  "@odata.type": "microsoft.graph.userSecurityState"
 }-->
 
 ```json
@@ -51,7 +53,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "UserSecurityState resource",
+  "description": "userSecurityState resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

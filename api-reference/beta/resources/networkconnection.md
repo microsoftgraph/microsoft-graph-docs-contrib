@@ -1,6 +1,8 @@
-# NetworkConnection resource type
+# networkConnection resource type
 
-Complex type containing stateful information about the network connection related to the alert
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Contains stateful information about the network connection related to the alert.
 
 ## Properties
 
@@ -22,7 +24,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.NetworkConnection"
+  "@odata.type": "microsoft.graph.networkConnection"
 }-->
 
 ```json
@@ -41,7 +43,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "NetworkConnection resource",
+  "description": "networkConnection resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

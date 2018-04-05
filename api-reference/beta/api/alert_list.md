@@ -1,5 +1,7 @@
 # List alerts
 
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of [alert](../resources/alert.md) objects.
 
 ## Permissions
@@ -41,7 +43,7 @@ To return an alternative property set, use the OData `$select` query parameter t
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code} (required)|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
 
@@ -67,13 +69,13 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Alert",
+  "@odata.type": "microsoft.graph.alert",
   "isCollection": true
 } -->
 

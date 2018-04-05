@@ -1,6 +1,8 @@
 # Update hostSecurityProfile
 
-Update the user-editable properties of a hostSecurityProfile object. **This method must include the hostSecurityProfileId as a parameter.**
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Update the user-editable properties of a [hostSecurityProfile](../resources/hostsecurityprofile.md) object.
 
 ## Permissions
 
@@ -9,12 +11,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported  |
+|Delegated (personal Microsoft account) | Not supported.  |
 |Application |  SecurityEvents.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+> **Note:** You must include the hostSecurityProfile id as a parameter with this method.
 
 ```http
 PATCH /security/hostSecurityProfiles/{hostSecurityProfile_Id}
@@ -24,28 +27,28 @@ PATCH /security/hostSecurityProfiles/{hostSecurityProfile_Id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code} (required)|
+| Authorization  | Bearer {code}. Required.|
 |Prefer | return=representation |
 
 ## Request body
 
-In the request body, supply a JSON representation of the values for relevant fields that should be updated. Only the fields that can be updated for an hostSecurityProfile are listed below. Existing properties that are not included in the request body will maintain their previous values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply a JSON representation of the values for the relevant fields to update. The following table lists the fields that can be updated for an **hostSecurityProfile**. Existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|tags|String|User-definable labels that can be applied to an hostSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.)|
+|tags|String|User-definable labels that can be applied to an hostSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.).|
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
 
-If the optional  request header is used, then the method returns a `200 OK` response code and the updated [HostSecurityProfile](../resources/hostsecurityprofile.md) object in the response body.
+If the optional  request header is used, then the method returns a `200 OK` response code and the updated [hostSecurityProfile](../resources/hostsecurityprofile.md) object in the response body.
 
-## Example #1
+## Example 1
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_hostsecurityprofile"
@@ -62,22 +65,22 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.HostSecurityProfile"
+  "@odata.type": "microsoft.graph.hostSecurityProfile"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-## Example #2  (using "prefer" request header)
+## Example 2
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request using the `Prefer` request header.
 <!-- {
   "blockType": "request",
   "name": "update_hostsecurityprofile"
@@ -95,11 +98,13 @@ Prefer: return=representation
 
 ### Response
 
-Here is an example of the response if the optional `Prefer: return=representation` request header is used. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response if the optional `Prefer: return=representation` request header is used.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.HostSecurityProfile"
+  "@odata.type": "microsoft.graph.hostSecurityProfile"
 } -->
 
 ```http

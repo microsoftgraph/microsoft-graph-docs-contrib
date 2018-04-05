@@ -1,6 +1,8 @@
-# HostSecurityState resource type
+# hostSecurityState resource type
 
-Complex type containing stateful information about the host (includes devices, machines, etc.)
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Contains stateful information about the host (includes devices, machines, etc.)
 
 ## Properties
 
@@ -24,7 +26,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.HostSecurityState"
+  "@odata.type": "microsoft.graph.hostSecurityState"
 }-->
 
 ```json
@@ -45,7 +47,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "HostSecurityState resource",
+  "description": "hostSecurityState resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

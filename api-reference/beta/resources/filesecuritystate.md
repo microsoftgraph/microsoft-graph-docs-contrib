@@ -1,6 +1,8 @@
-# FileSecurityState resource type
+# fileSecurityState resource type
 
-Complex type containing information about the file (not process) related to the alert
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Contains information about the file (not process) related to the alert.
 
 ## Properties
 
@@ -21,7 +23,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.FileSecurityState"
+  "@odata.type": "microsoft.graph.fileSecurityState"
 }-->
 
 ```json
@@ -39,7 +41,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "FileSecurityState resource",
+  "description": "fileSecurityState resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
