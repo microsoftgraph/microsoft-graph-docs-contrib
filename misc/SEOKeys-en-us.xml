@@ -111,7 +111,13 @@
       <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
       <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
     </Item>
-    <Item text="Org hierarchy" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="user organizational structure, Microsoft Graph API, user API" SEODescription="Retrieve the user organizational structure.">
+    <Item text="Outlook settings" url="/en-us/api-reference/v1.0/resources/outlookuser" >
+		<Item text="Get language choices" url="/en-us/api-reference/v1.0/api/outlookuser_supportedlanguages" />
+		<Item text="Get time zone choices" url="/en-us/api-reference/v1.0/api/outlookuser_supportedtimezones" />
+		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/v1.0/api/outlookuser_post_mastercategories" />
+	</Item>
+	<Item text="Org hierarchy" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="user organizational structure, Microsoft Graph API, user API" SEODescription="Retrieve the user organizational structure.">
       <Item text="List direct reports" url="/en-us/api-reference/v1.0/api/user_list_directreports" SEOKeyword="List directReports, Microsoft Graph API, Users API" SEODescription="Retrieve a list of Directoryobject objects." />
       <Item text="Get manager" url="/en-us/api-reference/v1.0/api/user_list_manager" SEOKeyword="Get manager, Microsoft Graph API, Users API" SEODescription="Get manager." />
       <Item text="Assign manager" url="/en-us/api-reference/v1.0/api/user_post_manager" SEOKeyword="Create directReport, Microsoft Graph API, Users API" SEODescription="Use this API to create a new directReport." />
