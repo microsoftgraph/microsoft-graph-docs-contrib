@@ -49,7 +49,7 @@
   </Item>
   <Item text="Personal contacts (Outlook)" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
-  <Item text="Security intelligence" url="/en-us/concepts/security-intel-concept-overview" />
+  <Item text="Security" url="/en-us/concepts/security-concept-overview" />
   <Item text="Sites and lists (SharePoint)" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="Social intelligence" url="/en-us/concepts/social-intel-concept-overview" >
 	<Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
