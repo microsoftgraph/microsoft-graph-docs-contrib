@@ -1,8 +1,8 @@
-# Security intelligence in Microsoft Graph
+# Security in Microsoft Graph
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 
-## Why integrate with security intelligence?
+## Why integrate with Microsoft Graph APIs for security?
 
 {<=1.5 pages of value proposition for developers.}
 
