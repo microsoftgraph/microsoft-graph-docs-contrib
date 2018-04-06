@@ -111,6 +111,7 @@ Content-type: application/json
 
 {
   "azureSubscriptionId": "azureSubscriptionId-value",
+  "azureTenantId": "String",
   "certificateThumbprint": "certificateThumbprint-value",
   "createdDateTime": "datetime-value",
   "deploymentPackageUrl": "deploymentPackageUrl-value",

@@ -107,9 +107,7 @@ Content-type: application/json
       "azureSubscriptionId": "azureSubscriptionId-value",
       "category": "category-value",
       "closedDateTime": "datetime-value"
-      ...
     }
-    ...
   ]
 }
 ```

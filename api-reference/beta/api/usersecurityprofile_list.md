@@ -89,9 +89,7 @@ Content-type: application/json
       "domainName": "domainName-value",
       "id": "id-value",
       "lastModifiedDateTime": "datetime-value"
-      ...
     }
-    ...
   ]
 }
 ```

@@ -90,9 +90,7 @@ Content-type: application/json
       "createdDateTime": "datetime-value",
       "id": "id-value",
       "lastModifiedDateTime": "datetime-value"
-      ...
     }
-    ...
   ]
 }
 ```

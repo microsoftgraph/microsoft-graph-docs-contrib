@@ -56,7 +56,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.HostSecurityProfile"
+  "@odata.type": "microsoft.graph.hostSecurityProfile"
 } -->
 
 ```http

@@ -89,9 +89,7 @@ Content-type: application/json
       "deploymentPackageUrl": "deploymentPackageUrl-value",
       "id": "id-value",
       "isSigned": true
-      ...
     }
-    ...
   ]
 }
 ```

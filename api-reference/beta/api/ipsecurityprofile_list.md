@@ -90,9 +90,7 @@ Content-length: 269
       "city": "city-value",
       "countryOrRegionCode": "countryOrRegionCode-value",
       "createdDateTime": "datetime-value"
-      ...
     }
-    ...
   ]
 }
 ```

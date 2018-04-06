@@ -89,9 +89,7 @@ Content-type: application/json
       "id": "id-value",
       "isAzureAdJoined": true,
       "isAzureAdRegistered": true
-      ...
     }
-    ...
   ]
 }
 ```
