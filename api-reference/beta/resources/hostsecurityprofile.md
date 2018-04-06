@@ -2,9 +2,12 @@
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Defines the relevant security properties of a host (e.g. desktop, server, firewall, other endpoint) to provide additional context for alerts and targets for actions.
+Defines the relevant security properties of a host (for example, desktop, server, firewall, or other endpoint) to provide additional context for alerts and targets for actions.
 
- Security profiles are populated by integrated solutions at their discretion.<br/> For example: - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. - A Provider will populate ipSecurityProfile for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring
+ Security profiles are populated by integrated solutions at their discretion. For example: 
+ 
+ - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. 
+ - A provider will populate **ipSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
 
 ## Methods
 
@@ -42,11 +45,11 @@ Defines the relevant security properties of a host (e.g. desktop, server, firewa
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
