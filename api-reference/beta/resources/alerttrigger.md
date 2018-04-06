@@ -21,7 +21,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.AlertTrigger"
+  "@odata.type": "microsoft.graph.alertTrigger"
 }-->
 
 ```json
@@ -37,7 +37,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "AlertTrigger resource",
+  "description": "alertTrigger resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
