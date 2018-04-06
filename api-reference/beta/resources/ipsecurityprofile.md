@@ -4,15 +4,18 @@
 
 Defines the relevant security properties of an IP address to provide additional context for alerts and targets for actions.
 
-Security profiles are populated by integrated solutions at their discretion.<br/> For example: - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. - A Provider will populate ipSecurityProfile for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring
+Security profiles are populated by integrated solutions at their discretion. For example: 
+
+- A solution will populate **hostSecurityProfile** for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. 
+- A provider will populate **ipSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
 
 ## Methods
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get ipSecurityProfile](../api/ipsecurityprofile_get.md) | [ipSecurityProfile](ipsecurityprofile.md) |Read properties and relationships of ipSecurityProfile object.|
-|[Update](../api/ipsecurityprofile_update.md) | [ipSecurityProfile](ipsecurityprofile.md) |Update ipSecurityProfile object. |
-|[List ipSecurityProfiles](../api/ipsecurityprofile_list.md) |[ipSecurityProfile](ipsecurityprofile.md) collection| Get a ipSecurityProfile object collection.|
+|[Get ipSecurityProfile](../api/ipsecurityprofile_get.md) | [ipSecurityProfile](ipsecurityprofile.md) |Read properties and relationships of an ipSecurityProfile object.|
+|[Update](../api/ipsecurityprofile_update.md) | [ipSecurityProfile](ipsecurityprofile.md) |Update an ipSecurityProfile object. |
+|[List ipSecurityProfiles](../api/ipsecurityprofile_list.md) |[ipSecurityProfile](ipsecurityprofile.md) collection| Get an ipSecurityProfile object collection.|
 
 ## Properties
 
@@ -37,11 +40,11 @@ Security profiles are populated by integrated solutions at their discretion.<br/
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
