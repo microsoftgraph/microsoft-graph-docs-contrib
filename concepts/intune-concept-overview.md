@@ -5,6 +5,7 @@
 ## Why integrate with Intune?
 
 {<=1.5 pages of value proposition for developers.}
+{Please include some benefits of using the MS Graph endpoint for Intune.}
 
 ## Next steps
 
