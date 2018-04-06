@@ -5129,6 +5129,15 @@
 		<Item text="Update rule" url="/en-us/api-reference/beta/api/messagerule_update" />	  
 		<Item text="Delete rule" url="/en-us/api-reference/beta/api/messagerule_delete" />
 	  </Item>
+	  <Item text="Mail search folder" url="/en-us/api-reference/beta/resources/mailsearchfolder" SEODescription="">
+        <Item text="List mail search folders" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEODescription="Retrieve a list of mailfolder objects." />
+        <Item text="Create mail search folder" url="/en-us/api-reference/beta/api/mailsearchfolder_post" SEODescription="Use this API to create a new MailFolder." />
+        <Item text="Get mail search folder" url="/en-us/api-reference/beta/api/mailfolder_get" SEODescription="Retrieve the properties and relationships of mailfolder object." />
+        <Item text="Update mail search folder" url="/en-us/api-reference/beta/api/mailsearchfolder_update” SEODescription="Update the properties of mailfolder object." />
+        <Item text="Delete mail search folder" url="/en-us/api-reference/beta/api/mailfolder_delete" SEODescription="Delete mailFolder." />
+        <Item text="List messages in folder" url="/en-us/api-reference/beta/api/mailfolder_list_messages" SEODescription="Retrieve a list of message objects." />
+        <Item text="List child folders" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEODescription="Retrieve a list of mailfolder objects." />
+      </Item>
 	  <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
         <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
           <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
