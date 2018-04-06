@@ -36,7 +36,7 @@ In the request body, supply a JSON representation of the values for the relevant
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|tags|String|User-definable labels that can be applied to an fileSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.)|
+|tags|String|User-definable labels that can be applied to a fileSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.)|
 
 ## Response
 
@@ -80,7 +80,7 @@ HTTP/1.1 204 No Content
 
 ### Request
 
-The following is an example of the request using the `Prefer` request header
+The following is an example of the request using the `Prefer` request header.
 <!-- {
   "blockType": "request",
   "name": "update_filesecurityprofile"
@@ -98,7 +98,7 @@ Prefer: return=representation
 
 ### Response
 
-The following is an example of the response if the optional `Prefer: return=representation` request header is used.
+The following is an example of the response when the optional `Prefer: return=representation` request header is used.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {

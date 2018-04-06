@@ -98,7 +98,7 @@ Prefer: return=representation
 
 ### Response
 
-The following is an example of the response if the optional `Prefer: return=representation` request header is used. 
+The following is an example of the response when the optional `Prefer: return=representation` request header is used.
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
