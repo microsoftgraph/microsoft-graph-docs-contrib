@@ -2,24 +2,24 @@
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Contains stateful information about the host (includes devices, machines, etc.)
+Contains stateful information about the host (including devices, computers, and so on).
 
 ## Properties
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|fqdn|String|Host FQDN (Fully Qualified Domain Name) (e.g. ```machine.company.com```).|
+|fqdn|String|Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).|
 |isAzureAadJoined|Boolean|True if the host is domain joined to Azure Active Directory Domain Services.|
 |isAzureAadRegistered|Boolean|True if the host registered with Azure Active Directory Device Regsitration (e.g. BYOD devices - i.e. is not fully managed by enterprise).|
 |isHybridAzureDomainJoined|Boolean|True if the host is domain joined to an on-premise Active Directory Domain.|
 |netBiosName|String|Local host name - i.e. without DNS domain name.|
-|privateIpAddress|String|Private (not routable) IPv4 or IPv6 Address (see https://tools.ietf.org/html/rfc1918) at the time of the alert.|
-|publicIpAddress|String|Publicly routable IPv4 or IPv6 Address (see https://tools.ietf.org/html/rfc1918) at time of the alert.|
+|privateIpAddress|String|Private (not routable) IPv4 or IPv6 address (see https://tools.ietf.org/html/rfc1918) at the time of the alert.|
+|publicIpAddress|String|Publicly routable IPv4 or IPv6 address (see https://tools.ietf.org/html/rfc1918) at time of the alert.|
 |riskScore|String|Provider-generated/calculated risk score of the host.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
