@@ -4,7 +4,10 @@
 
 Defines the relevant security properties of applications to provide additional context for alerts and targets for actions.
 
- Security profiles are populated by integrated solutions at their discretion.<br/> For example: - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. - A Provider will populate ipSecurityProfile for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring
+Security profiles are populated by integrated solutions at their discretion. For example: 
+
+- A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. 
+- A provider will populate **ipSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
 
 ## Methods
 
@@ -40,11 +43,11 @@ Defines the relevant security properties of applications to provide additional c
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
