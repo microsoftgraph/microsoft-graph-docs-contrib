@@ -1,6 +1,4 @@
-# Microsoft Graph education API overview
-
-# Microsoft EDU Graph Overview
+# Microsoft Graph Education API overview
 
 The education APIs in Microsoft Graph enhance Office 365 resources with information that is relevant for education scenarios including information about schools, classes, users(students and teachers), assignments and submissions. This makes it easy for application developers to build solutions that integrate with educational resources for various school and classroom scenarios.
 
