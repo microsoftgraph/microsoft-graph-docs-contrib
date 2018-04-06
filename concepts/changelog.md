@@ -69,16 +69,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **onPremisesExtensionAttributes** complex type to the [user](../api-reference/beta/resources/user.md) entity. This contains the on-premises AD extension attributes 1-15. |
 | Addition        | Beta        | Added the **privacyProfile** complex type to the [organization](../api-reference/beta/resources/organization.md) entity. |
-| Addition        | V1.0        | Added support for [restoring and permanently deleting users and groups](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/directory). |
+| Addition        | V1.0        | Added support for [restoring and permanently deleting users and groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directory). |
 
 ### Excel APIs
-|Change type|Version|Description|
-|:---|:---|:---|
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |Change|v1.0|Added the **legacyId** property to the [Excel Table](../api-reference/v1.0/resources/table.md) entity. This will contain the numeric value identifier (string data type) that will remain constact for a given Excel table. This is provided as an additional metadata if the application relied on the legacy identifier used in older Excel client applications. Note: The `id` and `legacyId` property should be treated as an opaque string value and should not be parsed to any other type within your application. |
 
 ### Reports APIs
-|Change type|Version|Description|
-|:---|:---|:---|
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |Addition|beta|Added the **siteId** property to the [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md) entity.|
 
 ### Group lifecycle policy
