@@ -106,6 +106,8 @@
       <Item text="Send mail" url="/en-us/api-reference/v1.0/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
       <Item text="Get mailbox settings" url="/en-us/api-reference/v1.0/api/user_get_mailboxsettings" SEODescription="" />
       <Item text="Update mailbox settings" url="/en-us/api-reference/v1.0/api/user_update_mailboxsettings" SEODescription="" />
+	  <Item text="List rules" url="/en-us/api-reference/beta/v1.0/mailfolder_list_messagerules" />
+	  <Item text="Create rules" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
     </Item>
     <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
       <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
@@ -1784,7 +1786,14 @@
       <Item text="List calendars in calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_list_calendars" SEOKeyword="List calendars, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of calendar objects." />
       <Item text="Create calendar in calendar group" url="/en-us/api-reference/v1.0/api/calendargroup_post_calendars" SEOKeyword="Create calendar group, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Calendar." />
     </Item>
-    <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+    <Item text="Categories" url="/en-us/api-reference/v1.0/resources/outlookcategory" >
+		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/v1.0/api/outlookuser_post_mastercategories" />
+		<Item text="Get category" url="/en-us/api-reference/v1.0/api/outlookcategory_get" />
+		<Item text="Update category" url="/en-us/api-reference/v1.0/api/outlookcategory_update" />
+		<Item text="Delete category" url="/en-us/api-reference/v1.0/api/outlookcategory_delete" />
+	</Item>
+	<Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
       <Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
         <Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
         <Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -1843,7 +1852,21 @@
       <Item text="List child folders" url="/en-us/api-reference/v1.0/api/mailfolder_list_childfolders" SEOKeyword="List childFolders, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of mailfolder objects." />
       <Item text="Create mail child folder" url="/en-us/api-reference/v1.0/api/mailfolder_post_childfolders" SEOKeyword="Create mailFolder, Microsoft Graph API, Outlook Mail API" SEODescription="Use this API to create a new MailFolder." />
     </Item>
-    <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+    <Item text="Categories" url="/en-us/api-reference/v1.0/resources/outlookcategory" >
+		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/v1.0/api/outlookuser_post_mastercategories" />
+		<Item text="Get category" url="/en-us/api-reference/v1.0/api/outlookcategory_get" />
+		<Item text="Update category" url="/en-us/api-reference/v1.0/api/outlookcategory_update" />
+		<Item text="Delete category" url="/en-us/api-reference/v1.0/api/outlookcategory_delete" />
+	</Item>
+	<Item text="Rules" url="/en-us/api-reference/v1.0/resources/messagerule" >
+		<Item text="List rules" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
+		<Item text="Create rule" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
+		<Item text="Get rule" url="/en-us/api-reference/beta/v1.0/messagerule_get" />
+		<Item text="Update rule" url="/en-us/api-reference/v1.0/api/messagerule_update" />	  
+		<Item text="Delete rule" url="/en-us/api-reference/v1.0/api/messagerule_delete" />
+	  </Item>
+	<Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
       <Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
         <Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
         <Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -1881,7 +1904,14 @@
       <Item text="List contacts in folder" url="/en-us/api-reference/v1.0/api/contactfolder_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contact objects." />
       <Item text="Create contact in folder" url="/en-us/api-reference/v1.0/api/contactfolder_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new Contact." />
     </Item>
-    <Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
+    <Item text="Categories" url="/en-us/api-reference/v1.0/resources/outlookcategory" >
+		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
+		<Item text="Create category" url="/en-us/api-reference/v1.0/api/outlookuser_post_mastercategories" />
+		<Item text="Get category" url="/en-us/api-reference/v1.0/api/outlookcategory_get" />
+		<Item text="Update category" url="/en-us/api-reference/v1.0/api/outlookcategory_update" />
+		<Item text="Delete category" url="/en-us/api-reference/v1.0/api/outlookcategory_delete" />
+	</Item>
+	<Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
       <Item text="Single-value extended property" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="" >
         <Item text="Create single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
         <Item text="Get single-value property" url="/en-us/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
