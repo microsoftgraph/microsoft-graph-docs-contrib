@@ -1,4 +1,4 @@
-# Security in Microsoft Graph overview (preview) 
+# Overview of security in Microsoft Graph (preview) 
 
 Microsoft Graph lets you integrate with security capabilities in Azure Active Directory to detect identity risks. It also lets you connect with Microsoft Intelligent Security Graph to leverage Microsoft and security partner resources, and build better threat response solutions. 
 
