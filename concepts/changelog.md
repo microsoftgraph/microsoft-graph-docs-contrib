@@ -9,8 +9,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Reports APIs
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|beta| Added delegated access support for [reports](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report) APIs |
-|Addition|v1.0| Added delegated access support for [reports](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/report) APIs |
+|Addition|beta| Added delegated access support. |
+|Addition|v1.0| Added delegated access support. |
 
 ### Directory APIs
 
