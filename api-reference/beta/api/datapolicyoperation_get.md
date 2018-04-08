@@ -21,7 +21,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {accesstoken}|
 
 ## Request body
 Do not supply a request body for this method.
@@ -29,7 +29,6 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [DataPolicyOperation](../resources/datapolicyoperation.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_datapolicyoperation"
@@ -38,7 +37,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/dataPolicyOperations/<id>
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

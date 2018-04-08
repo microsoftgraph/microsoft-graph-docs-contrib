@@ -1,7 +1,6 @@
 # DataPolicyOperation resource type
 
-
-
+The resource represents a submitted data policy operation. It contains necessary information for tracking the status of an operation. 
 
 ## Methods
 
@@ -10,14 +9,15 @@
 |[Get DataPolicyOperation](../api/datapolicyoperation_get.md) | [DataPolicyOperation](datapolicyoperation.md) |Read properties and relationships of dataPolicyOperation object.|
 
 ## Properties
+Please note that all properties of this resource is read-only.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|completedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|completedDateTime|DateTimeOffset|The Timestamp type represents when the request for this data policy operation was completed. Is uses the ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Null until the operation completes.|
 |id|String| Read-only.|
 |status|string| Possible values are: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
-|storageLocation|String||
-|userId|String||
-|submittedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|storageLocation|String|The location to where data is being exported for export requests.|
+|userId|String|The ObjectId for the user on whom the operation is performed.|
+|submittedDateTime|DateTimeOffset|The Timestamp type represents when the request for this data operation was submitted. It uses the ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Relationships
 None

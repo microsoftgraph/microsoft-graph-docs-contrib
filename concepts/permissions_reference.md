@@ -833,6 +833,7 @@ This section shows some common scenarios that target [user](../api-reference/v1.
 | App wants to read and write complete user profile for signed in user	 | _User.ReadWrite_ | Read and write access to user profile |
 | App wants to read and write complete user profile all users	 | _User.ReadWrite.All_ | Read and write all user's full profiles |
 | App wants to read and write files, mail and calendar information for the signed in user	 | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Read and write access to user profile,  Read and write access to user profile,  Read and write access to user mail, Have full access to user calendars |
+| App wants to submit a data policy operation request to export personal data for a user | _User.Export.All | Export access to user personal data. |
    
 
 ### Access scenarios on the Group resource

@@ -1,5 +1,6 @@
 # user: exportPersonalData
 
+This action submits a data policy operation request to export personal data stored within Microsoft for a tenant user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -9,33 +10,31 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) |  User.Export  |
 |Delegated (personal Microsoft account) |  Not applicable  |
 |Application | User.Export | 
+Export can only be performed by a tenant administrator when using delegated flow.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/exportPersonalData
 POST /users/<id>/exportPersonalData
 
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {accesstoken}|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|storageLocation|String||
+|storageLocation|String|This is a SAS URL to where data should be exported.|
 
 ## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "user_exportpersonaldata"
@@ -51,7 +50,6 @@ Content-length: 48
 ```
 
 ##### Response
-Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,
