@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2018
 
+### Reports APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta| Added delegated access support. |
+|Addition|v1.0| Added delegated access support. |
+
 ### Directory APIs
 
 | **Change type** | **Version** | **Description**                          |
