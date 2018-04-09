@@ -1,8 +1,8 @@
-# Update mailFolder
+# Update mailSearchFolder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of [mailFolder](../resources/mailfolder.md) object.
+Update the writable properties of [mailSearchFolder](../resources/mailsearchfolder.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -31,7 +31,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String|The mailFolder's display name.|
+| displayName | String | The display name of the [mailFolder](../resources/mailfolder.md).|
+| includeNestedFolders | Boolean | How the mailbox folder hierarchy should be traversed. `true` means that a deep search should be done while `false` means a shallow search should be done instead. |
+| sourceFolderIDs | String collection | The mailbox folders that should be mined. |
+| filterQuery | String | The OData query to filter the messages. |
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [mailFolder](../resources/mailfolder.md) object in the response body.
@@ -41,7 +44,7 @@ If successful, this method returns a `200 OK` response code and updated [mailFol
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_mailfolder"
+  "name": "update_mailsearchfolder"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
@@ -49,7 +52,8 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
+  "@odata.type": "microsoft.graph.mailSearchFolder",
+  "filterQuery": "contains(subject, 'Analytics')))"
 }
 ```
 
@@ -59,7 +63,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailFolder"
+  "@odata.type": "microsoft.graph.mailSearchFolder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -67,13 +71,20 @@ Content-type: application/json
 Content-length: 179
 
 {
-    "id": "AAMkAGVmMDEzM",
-    "displayName": "displayName-value",
-    "parentFolderId": "AAMkAGVmMDEzI",
-    "childFolderCount": 2,
-    "unreadItemCount": 59,
-    "totalItemCount": 60,
-    "wellKnownName": "inbox"
+  "@odata.type": "#microsoft.graph.mailSearchFolder",
+  "id": "AAMkAGVmMDEzMx",
+  "displayName": "Get MyAnalytics",
+  "parentFolderId": "AAMkAGVmMDEzMy",
+  "childFolderCount": 0,
+  "unreadItemCount": 0,
+  "totalItemCount": 0,
+  "wellKnownName": null,
+  "isSupported": true,
+  "includeNestedFolders": true,
+  "sourceFolderIDs": [
+      "AAMkAGVmMDEzMi"
+  ],
+  "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
 
@@ -81,7 +92,7 @@ Content-length: 179
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update mailfolder",
+  "description": "Update mailSearchFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
