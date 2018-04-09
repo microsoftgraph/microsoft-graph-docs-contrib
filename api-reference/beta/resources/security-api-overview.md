@@ -28,22 +28,13 @@ Dive deep into related security-relevant inventory (like users, hosts, and apps)
 <!-- 
 Build and run investigation and remediation runbooks, automate security policy checks and rule enforcement, and orchestrate actions across security solutions.
 -->
-## Public Preview Features
+## Resources
 
-**For Public Preview/Beta, the security entities in Microsoft Graph will be supported by the following platforms and Providers. Additional support will be added during the Public Preview.**
+* [ASP.NET (C#) SDK](https://www.nuget.org/packages/Microsoft.Graph)
+* [ASP.NET (C#) sample](https://github.com/search?q=aspnet+sample+user:microsoftgraph&type=Repositories)
+* [Python sample](https://github.com/search?q=python+sample+user:microsoftgraph&type=Repositories)
 
-### Supported SDK
-
-* `ASP.NET (C#)`
-
-### Supported code samples
-
-* [ASP.NET (C#)](https://github.com/search?q=aspnet+sample+user:microsoftgraph&type=Repositories)
-* [Python](https://github.com/search?q=python+sample+user:microsoftgraph&type=Repositories)
-
-### Supported Providers
-
-**For Public Preview, Graph security solutions will receive alerts from the following data Providers (at Beta):**
+Microsoft Graph security solutions will receive alerts from the following data providers:
 
 * Azure Security Center (ASC)
 * Azure Active Directory Identity Protection (AADIP)
