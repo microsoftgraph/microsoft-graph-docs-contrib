@@ -35,8 +35,8 @@ Security profiles are populated by integrated solutions at their discretion. For
 |organization|String|Name of organization associated with IP address.|
 |riskScore|String|Provider-generated/calculated risk score of the IP Address.|
 |state|String|State code of originating state for IP address.|
-|tags|String collection|User-definable labels that can be applied to an IpSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.) ([Supports Update](../api/ipsecurityprofile_update.md)).|
-|vendorInformation|[SecurityVendorInformation](securityvendorinformation.md)*|Complex Type containing details about the security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).|
+|tags|String collection|User-definable labels that can be applied to an IpSecurityProfile and can serve as filter conditions (for example, HVA, SAW, and so on.) (Supports [update](../api/ipsecurityprofile_update.md)).|
+|vendorInformation|[SecurityVendorInformation](securityvendorinformation.md)*|Complex Type that contains details about the security product/service vendor, provider, and sub-provider (for example, vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).|
 
 ## Relationships
 
