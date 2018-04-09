@@ -13,8 +13,8 @@ Defines the relevant security properties of a host (for example, desktop, server
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get a host security profile](../api/hostsecurityprofile_get.md) | [hostSecurityProfile](hostsecurityprofile.md) |Read properties and relationships of a hostSecurityProfile object.|
-|[Update a host security profile](../api/hostsecurityprofile_update.md) | [hostSecurityProfile](hostsecurityprofile.md)|Update a hostSecurityProfile object. |
+|[Get host security profile](../api/hostsecurityprofile_get.md) | [hostSecurityProfile](hostsecurityprofile.md) |Read properties and relationships of a hostSecurityProfile object.|
+|[Update host security profile](../api/hostsecurityprofile_update.md) | [hostSecurityProfile](hostsecurityprofile.md)|Update a hostSecurityProfile object. |
 |[List host security profiles](../api/hostsecurityprofile_list.md) |[hostSecurityProfile](hostsecurityprofile.md) collection| Get a hostSecurityProfile object collection.|
 
 ## Properties

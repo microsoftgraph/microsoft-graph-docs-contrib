@@ -13,8 +13,8 @@ Security profiles are populated by integrated solutions at their discretion. For
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get an IP security profile](../api/ipsecurityprofile_get.md) | [ipSecurityProfile](ipsecurityprofile.md) |Read properties and relationships of an ipSecurityProfile object.|
-|[Update an IP security profile](../api/ipsecurityprofile_update.md) | [ipSecurityProfile](ipsecurityprofile.md) |Update an ipSecurityProfile object. |
+|[Get IP security profile](../api/ipsecurityprofile_get.md) | [ipSecurityProfile](ipsecurityprofile.md) |Read properties and relationships of an ipSecurityProfile object.|
+|[Update IP security profile](../api/ipsecurityprofile_update.md) | [ipSecurityProfile](ipsecurityprofile.md) |Update an ipSecurityProfile object. |
 |[List IP security profiles](../api/ipsecurityprofile_list.md) |[ipSecurityProfile](ipsecurityprofile.md) collection| Get an ipSecurityProfile object collection.|
 
 ## Properties

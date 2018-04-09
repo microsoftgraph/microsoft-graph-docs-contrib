@@ -13,8 +13,8 @@ Security profiles are populated by integrated solutions at their discretion. For
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get an application security profile](../api/applicationsecurityprofile_get.md) | [applicationSecurityProfile](applicationsecurityprofile.md) |Read properties and relationships of an applicationSecurityProfile object.|
-|[Update an application security profile](../api/applicationsecurityprofile_update.md) | [applicationSecurityProfile](applicationsecurityprofile.md) |Update an applicationSecurityProfile object. |
+|[Get application security profile](../api/applicationsecurityprofile_get.md) | [applicationSecurityProfile](applicationsecurityprofile.md) |Read properties and relationships of an applicationSecurityProfile object.|
+|[Update application security profile](../api/applicationsecurityprofile_update.md) | [applicationSecurityProfile](applicationsecurityprofile.md) |Update an applicationSecurityProfile object. |
 |[List application security profiles](../api/applicationsecurityprofile_list.md) | [applicationSecurityProfile](applicationsecurityprofile.md) collection|Get an applicationSecurityProfile object collection. |
 
 ## Properties

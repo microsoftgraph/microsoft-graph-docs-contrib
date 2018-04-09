@@ -13,8 +13,8 @@ Security profiles are populated by integrated solutions at their discretion. For
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get a file security profile](../api/filesecurityprofile_get.md) | [fileSecurityProfile](filesecurityprofile.md) |Read properties and relationships of a fileSecurityProfile object.|
-|[Update a file security profile](../api/filesecurityprofile_update.md) | [fileSecurityProfile](filesecurityprofile.md)|Update a fileSecurityProfile object. |
+|[Get file security profile](../api/filesecurityprofile_get.md) | [fileSecurityProfile](filesecurityprofile.md) |Read properties and relationships of a fileSecurityProfile object.|
+|[Update file security profile](../api/filesecurityprofile_update.md) | [fileSecurityProfile](filesecurityprofile.md)|Update a fileSecurityProfile object. |
 |[List file security profiles](../api/filesecurityprofile_list.md) |[fileSecurityProfile](filesecurityprofile.md) collection| Get a fileSecurityProfile object collection.|
 
 ## Properties
