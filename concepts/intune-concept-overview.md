@@ -1,6 +1,8 @@
 # Intune devices and apps API overview
 
-Microsoft Intune helps enterprises manage devices and apps within an organization.  Graph API for Intune helps administrators and developers use their preferred tools to manage devices, apps, and even Intune itself.  ISVs can use Graph API for Intune to manage client tenants.
+Microsoft Intune helps enterprises manage devices and apps within an organization.  Graph API for Intune helps administrators and developers use their preferred tools to manage devices, apps, and even Intune itself.  
+
+ISVs can use Graph API for Intune to manage client tenants.
 
 ## Why integrate with Intune?
 
@@ -10,7 +12,7 @@ Microsoft Graph API for Intune helps you manage devices, manage apps, and even a
 
 Define and enforce configuration policies, such as password complexity and duration, encryption, threat protection levels, and so on.  (Supported policies vary according to operating system and version).
 
-Protect data regardless of the device platform, whether Windows, Android, or MacOS devices.
+Protect data regardless of the device platform, whether Windows, Android, Mac, or iOS devices.
 
 Create and deploy access device configuration policies, including OS platform/versioning, domain membership, configuration setting management.
 

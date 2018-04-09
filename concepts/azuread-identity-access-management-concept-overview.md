@@ -1,12 +1,14 @@
 # Azure AD identity and access management API
 
-Microsoft Graph API for Azure Active Directory (Azure AD) helps centralize identity and access managament (IAM) to enable secure and productive access between apps, devices, services, and infrastructure.  Azure AD can manage identities and control access on-premises, in hybrid environments, and in the cloud.  
+Microsoft Graph API for Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure.  Azure AD can manage identities and control access on-premises, in hybrid environments, and in the cloud.  
+
+ISVs can use Graph API for Azure AD to create unique workflows between Azure AD directoryObjects and third-party services.
 
 ## Why use Azure AD to manage the identities and access of directory resources?
 
 By using Microsoft Graph to integrate with Azure AD, you can seamlessly access an application or service using a single identity or a partner identity from multiple devices and platforms, including Android, Mac, iOS devices, and Windows.
 
-Graph APIs are RESTFul APIs, which means you can easily integrate Azure AD into a variety of tools and development environments, including Angular, ASP.NET, JavaSCript, PHP, Python, Ruby, UWP, Xamarin, and even command-line utilities.
+Graph APIs are RESTFul APIs, which means you can easily integrate Azure AD into a variety of tools and development environments, including Angular, ASP.NET, JavaScript, PHP, Python, Ruby, UWP, Xamarin, and even command-line utilities.
 
 Because Microsoft Graph integrates with other Azure services, you can multiple services into a unique solution designed for your specific needs and requirements.
 
@@ -42,8 +44,8 @@ Secure access to resources by activating administrative privileges on-demand. Pr
 
 ## Next steps
 
-- Browse Graph API for Azure AD [1.0 reference](../api-reference/v1.0/resources/azure_ad_overview.md).
+- Browse Graph API for [Azure AD reference](../api-reference/v1.0/resources/azure_ad_overview.md).
+- Learn how to use [Azure AD to authenticate](auth_overview.md) to Microsoft Graph APIs. 
 - Learn how to integrate [Azure AD sign-on](https://azure.microsoft.com/en-us/develop/identity/signin/) into your app or website in five minutes.
-- Learn how [Azure AD B2C](https://azure.microsoft.com/en-us/services/active-directory-b2c/) helps you connect with any user on any platform through your own branded experience.
 - Learn what's new with [Microsoft Graph API](changelog.md).
 - Learn more [featured scenarios](featured_scenarios.md) supported by Microsoft Graph API. 
