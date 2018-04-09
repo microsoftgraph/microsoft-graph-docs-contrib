@@ -14,7 +14,7 @@ Represents an error during school data profile validation and/or sync. A unique 
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **entryType** | string |  Tepresents the sync entity (school, section, student, teacher).       |
+| **entryType** | string |  Represents the sync entity (school, section, student, teacher).       |
 | **errorCode** | string |  Represents the error code for this error.         |
 | **errorMessage** | string |  Contains a description of the error.        |
 | **joiningValue** | string |  The unique identifier for the entry.         |
