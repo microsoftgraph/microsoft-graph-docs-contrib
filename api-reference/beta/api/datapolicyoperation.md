@@ -1,23 +1,23 @@
 # DataPolicyOperation resource type
 
-The resource represents a submitted data policy operation. It contains necessary information for tracking the status of an operation. 
+Represents a submitted data policy operation. It contains necessary information for tracking the status of an operation. 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get DataPolicyOperation](../api/datapolicyoperation_get.md) | [DataPolicyOperation](datapolicyoperation.md) |Read properties and relationships of dataPolicyOperation object.|
+|[Get DataPolicyOperation](../api/datapolicyoperation_get.md) | [DataPolicyOperation](datapolicyoperation.md) |Read properties of the dataPolicyOperation object.|
 
 ## Properties
-Please note that all properties of this resource is read-only.
+Note that all properties of this resource are read-only.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|completedDateTime|DateTimeOffset|The Timestamp type represents when the request for this data policy operation was completed. Is uses the ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Null until the operation completes.|
-|id|String| Read-only.|
+|completedDateTime|DateTimeOffset|Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Null until the operation completes.|
+|id|String| Read-only. Unique key for this operation. |
 |status|string| Possible values are: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
-|storageLocation|String|The location to where data is being exported for export requests.|
-|userId|String|The ObjectId for the user on whom the operation is performed.|
-|submittedDateTime|DateTimeOffset|The Timestamp type represents when the request for this data operation was submitted. It uses the ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|storageLocation|String|The URL location to where data is being exported for export requests.|
+|userId|String|The id for the user on whom the operation is performed.|
+|submittedDateTime|DateTimeOffset|Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Relationships
 None
