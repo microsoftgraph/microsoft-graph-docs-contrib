@@ -1,51 +1,52 @@
-# Delete mailFolder
+# Delete messageRule
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Delete [mailFolder](../resources/mailfolder.md) or [mailSearchFolder](../resources/mailSearchFolder.md).
+Delete the specified [messageRule](../resources/messagerule.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+|Delegated (work or school account) | MailboxSettings.ReadWrite    |
+|Delegated (personal Microsoft account) | MailboxSettings.ReadWrite    |
+|Application | MailboxSettings.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/mailFolders/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}
+DELETE /me/mailFolders/inbox/messagerules/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
+
 
 ## Request body
 Do not supply a request body for this method.
+
 
 ## Response
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-#### Request
-The following is an example of the request.
+##### Request
+Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_mailfolder"
+  "name": "delete_messagerule"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
-```
+DELETE https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZp8=')
 
-#### Response
-The following is an example of the response. 
+```
+##### Response
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "isEmpty": true
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -55,7 +56,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete mailFolder",
+  "description": "Delete rule",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
