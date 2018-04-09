@@ -39,6 +39,6 @@ Manage telecom expenses.
 
 - Learn what's [required to use](https://docs.microsoft.com/intune/intune-graph-apis) Graph API for Intune.
 - Explore [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples) to learn how to perform common tasks using PowerShell and Graph API for Intune.
-- Use the [Graph API for Intune](api-reference/v1.0/resources/intune_graph_overview).
-- What's New with [Graph API for Intune](concepts/changelog).
-- Learn more [featured scenarios](/concepts/featured_scenarios) supported by Microsoft Graph API. 
+- Use the [Graph API for Intune](../api-reference/v1.0/resources/intune_graph_overview).
+- What's New with [Graph API for Intune](changelog).
+- Learn more [featured scenarios](featured_scenarios) supported by Microsoft Graph API. 
