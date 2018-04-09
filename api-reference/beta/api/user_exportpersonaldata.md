@@ -1,6 +1,6 @@
 # user: exportPersonalData
 
-This action submits a data policy operation request to export personal data stored within Microsoft for a tenant user.
+Submits a data policy operation request, made by a Company Administrator to export an organizational user's personal data.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -9,8 +9,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  User.Export  |
 |Delegated (personal Microsoft account) |  Not applicable  |
-|Application | User.Export | 
-Export can only be performed by a tenant administrator when using delegated flow.
+|Application | User.Export |
+
+>Note: Export can only be performed by a Company Administrator when using the delegated permission.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +29,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|storageLocation|String|This is a SAS URL to where data should be exported.|
+|storageLocation|String|This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.|
 
 ## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
