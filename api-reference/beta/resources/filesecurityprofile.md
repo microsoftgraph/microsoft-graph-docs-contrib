@@ -35,8 +35,8 @@ Security profiles are populated by integrated solutions at their discretion. For
 |sha1|String|Cryptographic (Sha1) hash of file.|
 |sha256|String|Sha256 cryptographic hash of file.|
 |size|Int64|File size.|
-|tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (e.g. "HVA", "SAW", etc.) (supports [update](../api/filesecurityprofile_update.md)).|
-|vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (e.g. vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
+|tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (for example "HVA", "SAW", etc.) (supports [update](../api/filesecurityprofile_update.md)).|
+|vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
 (\* Indicates a mandatory field.)
 
 ## Relationships

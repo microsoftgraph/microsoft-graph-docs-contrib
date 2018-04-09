@@ -30,7 +30,7 @@ Security profiles are populated by integrated solutions at their discretion. For
 |lastModifiedDateTime|DateTimeOffset|Time at which the userSecurityProfile was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |onPremisesSecurityIdentifier|String|Active Directory (on premises) SID of the user.|
 |riskScore|String|Provider-calculated risk score of the user account.|
-|tags|String collection|User-definable labels that can be applied to an userSecurityProfile and can serve as filter conditions (for example, "HVA", "SAW", and so on) (supports [update](../api/usersecurityprofile_update.md)).|
+|tags|String collection|User-definable labels that can be applied to a userSecurityProfile and can serve as filter conditions (for example, "HVA", "SAW", and so on) (supports [update](../api/usersecurityprofile_update.md)).|
 |userPrincipalName|String|User sign-in name internet format: (user account name)@(user account DNS domain name).|
 |vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
 
