@@ -2,23 +2,23 @@
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Contains stateful information about the User Account.
+Contains stateful information about the user account.
 
 ## Properties
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|accountName|String|Account name of user account (without AD Domain or DNS Domain) - (also called 'mailNickName').|
-|domainName|String|NetBIOS/AD domain of user account (that is, domain\account format).|
-|logonDateTime|DateTimeOffset|Time at which the logon occurred. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|logonId|String|User logon ID.|
-|logonIpAddress|String|IP Address the logon request originated from.|
-|logonLocation|String|Location (by IP address mapping) associated with a user logon event by this user.|
-|logonType|String|Method of user logon. Possible values are: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
-|onPremisesSecurityIdentifier|String|AD (on premises) Security Identifier (SID) of the user.|
+|accountName|String|Account name of user account (without Active Directory domain or DNS domain) - (also called `mailNickName`).|
+|domainName|String|NetBIOS/Active Directory domain of user account (that is, domain\account format).|
+|logonDateTime|DateTimeOffset|Time at which the sign in occurred. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|logonId|String|User sign-in ID.|
+|logonIpAddress|String|IP Address the sign-in request originated from.|
+|logonLocation|String|Location (by IP address mapping) associated with a user sign-in event by this user.|
+|logonType|String|Method of user signin. Possible values are: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|onPremisesSecurityIdentifier|String|Active Directory (on-premises) Security Identifier (SID) of the user.|
 |riskScore|String|Provider-generated/calculated risk score of the user account.|
-|userAccountType|String|User Account type (group membership), per Windows definition. Possible values are: `unknown`, `standard`, `power`, `administrator`.|
-|userPrincipalName|String|User login name - internet format: (user account name)@(user account DNS domain name).|
+|userAccountType|String|User account type (group membership), per Windows definition. Possible values are: `unknown`, `standard`, `power`, `administrator`.|
+|userPrincipalName|String|User sign-in name - internet format: (user account name)@(user account DNS domain name).|
 
 ## JSON representation
 
