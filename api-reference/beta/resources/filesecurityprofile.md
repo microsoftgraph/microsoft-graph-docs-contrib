@@ -4,31 +4,29 @@
 
 Defines the relevant security properties of files to provide additional context for alerts and targets for actions.
 
-Security profiles are populated by integrated solutions at their discretion. For example: 
+Security profiles are populated by integrated solutions at their discretion. For example:
 
-- A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. 
+- A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against.
 - A provider will populate **ipSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
 
 ## Methods
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get fileSecurityProfile](../api/filesecurityprofile_get.md) | [fileSecurityProfile](filesecurityprofile.md) |Read properties and relationships of fileSecurityProfile object.|
-|[Update](../api/filesecurityprofile_update.md) | [fileSecurityProfile](filesecurityprofile.md)|Update fileSecurityProfile object. |
-|[List fileSecurityProfiles](../api/filesecurityprofile_list.md) |[fileSecurityProfile](filesecurityprofile.md) collection| Get a fileSecurityProfile object collection.|
+|[Get a file security profile](../api/filesecurityprofile_get.md) | [fileSecurityProfile](filesecurityprofile.md) |Read properties and relationships of a fileSecurityProfile object.|
+|[Update a file security profile](../api/filesecurityprofile_update.md) | [fileSecurityProfile](filesecurityprofile.md)|Update a fileSecurityProfile object. |
+|[List file security profiles](../api/filesecurityprofile_list.md) |[fileSecurityProfile](filesecurityprofile.md) collection| Get a fileSecurityProfile object collection.|
 
 ## Properties
-
-### ( \* = Mandatory Field )
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |authenticodeHash256|String|Authenticode 256 hash of file (used by applocker and others).|
 |azureSubscriptionId|String|Azure subscription ID of the entity, if this entity represents an Azure resource.|
-|azureTenantId|String *|Azure Active Directory tenant ID of this resource.|
+|azureTenantId *|String|Azure Active Directory tenant ID of this resource.|
 |certificateThumbprint|String|Code sign certificate thumbprint.|
-|createdDateTime|DateTimeOffset *|Time at which the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|id|String *|Provider-generated GUID/unique identifier. Read-only.|
+|createdDateTime *|DateTimeOffset|Time at which the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|id *|String|Provider-generated GUID/unique identifier. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Time at which the entity was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |md5|String|Md5 hash of file.|
 |name|String|Filename without path.|
@@ -37,8 +35,9 @@ Security profiles are populated by integrated solutions at their discretion. For
 |sha1|String|Cryptographic (Sha1) hash of file.|
 |sha256|String|Sha256 cryptographic hash of file.|
 |size|Int64|File size.|
-|tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (e.g. "HVA", "SAW", etc.) ([Supports Update](../api/filesecurityprofile_update.md)).|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)*|Complex Type containing details about the Security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).|
+|tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (e.g. "HVA", "SAW", etc.) (supports [update](../api/filesecurityprofile_update.md)).|
+|vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (e.g. vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
+(\* Indicates a mandatory field.)
 
 ## Relationships
 

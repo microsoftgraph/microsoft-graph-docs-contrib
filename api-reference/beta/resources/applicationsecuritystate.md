@@ -8,7 +8,7 @@ Contains stateful information about the application.
 
 | Property  | Type|Description|
 |:---------------|:--------|:----------|
-|deploymentPackageUrl|String|URI to deployment package and/or type of deployment package. (e.g. appx, MSI, etc.)|
+|deploymentPackageUrl|String|URI to deployment package and/or type of deployment package. (for example, appx, MSI, and so on).|
 |name|String|Application name.|
 |permissionsRequired|String|The level of permissions the application requires to function. Possible values are: `unknown`, `anonymous`, `guest`, `user`, `administrator`, `system`.|
 |publisher|String|The application publisher name. This helps distinguish between applications with the same AppX name.|
@@ -16,7 +16,7 @@ Contains stateful information about the application.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -4,44 +4,43 @@
 
 Defines the relevant security properties of a host (for example, desktop, server, firewall, or other endpoint) to provide additional context for alerts and targets for actions.
 
- Security profiles are populated by integrated solutions at their discretion. For example: 
- 
- - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. 
- - A provider will populate **ipSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
+ Security profiles are populated by integrated solutions at their discretion. For example:
+
+- A solution will populate **hostSecurityProfile** for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against.
+- A provider will populate **hostSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
 
 ## Methods
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get hostSecurityProfile](../api/hostsecurityprofile_get.md) | [hostSecurityProfile](hostsecurityprofile.md) |Read properties and relationships of hostSecurityProfile object.|
-|[Update](../api/hostsecurityprofile_update.md) | [hostSecurityProfile](hostsecurityprofile.md)|Update hostSecurityProfile object. |
-|[List hostSecurityProfiles](../api/hostsecurityprofile_list.md) |[hostSecurityProfile](hostsecurityprofile.md) collection| Get a hostSecurityProfile object collection.|
+|[Get a host security profile](../api/hostsecurityprofile_get.md) | [hostSecurityProfile](hostsecurityprofile.md) |Read properties and relationships of a hostSecurityProfile object.|
+|[Update a host security profile](../api/hostsecurityprofile_update.md) | [hostSecurityProfile](hostsecurityprofile.md)|Update a hostSecurityProfile object. |
+|[List host security profiles](../api/hostsecurityprofile_list.md) |[hostSecurityProfile](hostsecurityprofile.md) collection| Get a hostSecurityProfile object collection.|
 
 ## Properties
-
-### ( \* = Mandatory Field )
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |azureSubscriptionId|String|Azure subscription ID of the entity, if this entity represents an Azure resource.|
-|azureTenantId|String *|Azure Active Directory tenant ID of this resource.|
-|createdDateTime|DateTimeOffset *|Time at which the alert was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|fqdn|String|Fully Qualified Domain Name - Hostname including the DNS domain name (e.g. machine.company.com).|
-|id|String *|Provider-generated GUID/unique identifier. Read-only.|
+|azureTenantId *|String|Azure Active Directory tenant ID of this resource.|
+|createdDateTime *|DateTimeOffset|Time at which the alert was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|fqdn|String|Fully Qualified Domain Name - Hostname including the DNS domain name (for example, `machine.company.com`).|
+|id *|String|Provider-generated GUID/unique identifier. Read-only.|
 |isAzureAdJoined|Boolean|True if the host is domain joined to Azure Active Directory Domain Services.|
-|isAzureAdRegistered|Boolean|True if the host registered with Azure Active Directory Device Regsitration (e.g. BYOD devices - i.e. is not fully managed by enterprise).|
-|isHybridAzureDomainJoined|Boolean|True if the host domain (on premise AD) joined.
+|isAzureAdRegistered|Boolean|True if the host registered with Azure Active Directory Device Registration (for example, BYOD devices - i.e. is not fully managed by enterprise).|
+|isHybridAzureDomainJoined|Boolean|True if the host is domain-joined (Active Directory on premises).
 |lastModifiedDateTime|DateTimeOffset|Time at which the alert was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|logicalName|String|A name for the host "collection".|
+|logicalName|String|A name for the host collection.|
 |logonUsers|[logonUser](logonuser.md) collection|Security-related stateful information pertaining to one or more user logons to this host.|
 |netBiosName|String|Local hostname - i.e. without the DNS domain name.|
 |networkInterfaces|[networkInterface](networkinterface.md) collection|Collection of the NICs and related data (IP addresses and MAC address) associated with each NIC.|
-|osVersion|String|Host OS version.|
+|osVersion|String|Host operating system version.|
 |parentHost|String|The parent host of this host.  Can be null.|
-|platform|String|Name of the Host OS.|
+|platform|String|Name of the host operating system.|
 |riskScore|String|Provider-calculated risk score of the host.|
-|tags|String collection|User-definable labels that can be applied to an hostSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.) ([Supports Update](../api/hostsecurityprofile_update.md)).|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)*|Complex Type containing details about the security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).|
+|tags|String collection|User-definable labels that can be applied to an hostSecurityProfile and can serve as filter conditions (for example "HVA", "SAW", and so on) (supports [update](../api/hostsecurityprofile_update.md)).|
+|vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Complex type that contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
+(\* Indicates a mandatory field.)
 
 ## Relationships
 

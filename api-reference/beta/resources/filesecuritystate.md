@@ -9,14 +9,14 @@ Contains information about the file (not process) related to the alert.
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |authenticodeHash256|String|Authenticode 256 hash of image file (used by AppLocker and others).|
-|name|String|File Name (without path).|
+|name|String|File name (without path).|
 |path|String|Full file path of the file/imageFile.|
 |riskScore|String|Provider generated/calculated risk score of the alert file.|
 |sha256|String|Sha256 cryptographic hash of the alert file.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

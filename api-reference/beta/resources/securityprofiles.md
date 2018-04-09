@@ -4,9 +4,9 @@
 
 Security profiles represent security properties and an inventory of related entities (hosts, users, IPs, and so on) to provide additional context for [alerts](alert.md) and targets for actions. Security profiles are populated by integrated solutions at their discretion.
 
-For example: 
+For example:
 
-- A solution will populate **hostSecurityProfile** for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. 
+- A solution will populate **hostSecurityProfile** for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against.
 - A provider will populate **ipSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
 
 ## Methods

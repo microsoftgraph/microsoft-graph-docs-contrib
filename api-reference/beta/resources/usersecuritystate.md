@@ -9,10 +9,10 @@ Contains stateful information about the User Account.
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |accountName|String|Account name of user account (without AD Domain or DNS Domain) - (also called 'mailNickName').|
-|domainName|String|NetBIOS/AD Domain of user account (i.e. domain\account format).|
+|domainName|String|NetBIOS/AD domain of user account (that is, domain\account format).|
 |logonDateTime|DateTimeOffset|Time at which the logon occurred. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |logonId|String|User logon ID.|
-|logonIpAddress|String|IP Address the logon request orginated from.|
+|logonIpAddress|String|IP Address the logon request originated from.|
 |logonLocation|String|Location (by IP address mapping) associated with a user logon event by this user.|
 |logonType|String|Method of user logon. Possible values are: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 |onPremisesSecurityIdentifier|String|AD (on premises) Security Identifier (SID) of the user.|
@@ -22,7 +22,7 @@ Contains stateful information about the User Account.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

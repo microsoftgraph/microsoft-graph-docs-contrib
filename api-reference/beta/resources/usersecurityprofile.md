@@ -4,34 +4,36 @@
 
 Defines the relevant security properties of users to provide additional context for alerts and targets for actions.
 
-Security profiles are populated by integrated solutions at their discretion.<br/> For example: - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. - A Provider will populate ipSecurityProfile for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring
+Security profiles are populated by integrated solutions at their discretion. For example:
+
+- A solution will populate **hostSecurityProfile** for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against.
+- A provider will populate **ipSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
 
 ## Methods
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get userSecurityProfile](../api/usersecurityprofile_get.md) | [userSecurityProfile](usersecurityprofile.md) |Read properties and relationships of userSecurityProfile object.|
-|[Update](../api/usersecurityprofile_update.md) | [userSecurityProfile](usersecurityprofile.md)|Update userSecurityProfile object. |
-|[List userSecurityProfiles](../api/usersecurityprofile_list.md) |[userSecurityProfile](usersecurityprofile.md) collection| Get a userSecurityProfile object collection.|
+|[Get a user security profile](../api/usersecurityprofile_get.md) | [userSecurityProfile](usersecurityprofile.md) |Read properties and relationships of a userSecurityProfile object.|
+|[Update a user security profile](../api/usersecurityprofile_update.md) | [userSecurityProfile](usersecurityprofile.md)|Update a userSecurityProfile object. |
+|[List user security profiles](../api/usersecurityprofile_list.md) |[userSecurityProfile](usersecurityprofile.md) collection| Get a userSecurityProfile object collection.|
 
 ## Properties
-
-### ( \* = Mandatory Field )
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |accountName|String|Account name of user account (without AD Domain or DNS Domain).|
 |azureSubscriptionId|String|Azure subscription ID of the entity, if this entity represents an Azure resource.|
-|azureTenantId|String *|Azure Active Directory tenant ID of this resource.|
-|createdDateTime|DateTimeOffset *|Time at which the userSecurityProfile was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|azureTenantId *|String|Azure Active Directory tenant ID of this resource.|
+|createdDateTime *|DateTimeOffset|Time at which the userSecurityProfile was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |domainName|String|NetBIOS/AD Domain of user account  (i.e. domain\account format).|
-|id|String *|Provider-generated GUID/unique identifier. Read-only.|
+|id *|String|Provider-generated GUID/unique identifier. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Time at which the userSecurityProfile was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |onPremisesSecurityIdentifier|String|AD (on premises) SID of the user.|
 |riskScore|String|Provider-calculated risk score of the user account.|
-|tags|String collection|User-definable labels that can be applied to an UserSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.) ([Supports Update](../api/usersecurityprofile_update.md)).|
+|tags|String collection|User-definable labels that can be applied to an UserSecurityProfile and can serve as filter conditions (for example, "HVA", "SAW", and so on) (supports [update](../api/usersecurityprofile_update.md)).|
 |userPrincipalName|String|User login name internet format: (user account name)@(user account DNS domain name).|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)*|Complex Type containing details about the security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).|
+|vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (e.g. vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
+(\* Indicates a mandatory field.)
 
 ## Relationships
 

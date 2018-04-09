@@ -17,7 +17,7 @@ Contains stateful information about the network connection related to the alert.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

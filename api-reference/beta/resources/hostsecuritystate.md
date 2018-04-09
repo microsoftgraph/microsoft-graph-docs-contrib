@@ -10,7 +10,7 @@ Contains stateful information about the host (including devices, computers, and 
 |:---------------|:--------|:----------|
 |fqdn|String|Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).|
 |isAzureAadJoined|Boolean|True if the host is domain joined to Azure Active Directory Domain Services.|
-|isAzureAadRegistered|Boolean|True if the host registered with Azure Active Directory Device Regsitration (BYOD devices - that is, is not fully managed by enterprise).|
+|isAzureAadRegistered|Boolean|True if the host registered with Azure Active Directory Device Regsitration (BYOD devices - that is, not fully managed by enterprise).|
 |isHybridAzureDomainJoined|Boolean|True if the host is domain joined to an on-premises Active Directory domain.|
 |netBiosName|String|The local host name, without the DNS domain name.|
 |privateIpAddress|String|Private (not routable) IPv4 or IPv6 address (see [RFC 1918](https://tools.ietf.org/html/rfc1918)) at the time of the alert.|

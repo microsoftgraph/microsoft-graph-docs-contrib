@@ -36,7 +36,7 @@ In the request body, supply a JSON representation of the values for the relevant
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|tags|String|User-definable labels that can be applied to an applicationSecurityProfile and can serve as filter conditions (for example: "HVA", "SAW", etc.).|
+|tags|String|User-definable labels that can be applied to an applicationSecurityProfile and can serve as filter conditions (for example: "HVA", "SAW").|
 
 ## Response
 

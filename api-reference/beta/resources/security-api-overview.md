@@ -28,6 +28,7 @@ Dive deep into related security-relevant inventory (like users, hosts, and apps)
 <!-- 
 Build and run investigation and remediation runbooks, automate security policy checks and rule enforcement, and orchestrate actions across security solutions.
 -->
+
 ## Resources
 
 * [ASP.NET (C#) SDK](https://www.nuget.org/packages/Microsoft.Graph)

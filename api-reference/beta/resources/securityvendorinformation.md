@@ -2,22 +2,21 @@
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Contains details about the security product/service vendor, provider, and sub-provider (e.g. vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).
+Contains details about the security product/service vendor, provider, and subprovider (e.g. vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).
 
 ## Properties
 
-### ( \* = Mandatory Field )
-
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|provider|String*|Specific provider (product/service - not vendor company) e.g. WindowsDefenderATP.|
+|provider *|String|Specific provider (product/service - not vendor company) e.g. WindowsDefenderATP.|
 |providerVersion|String|Version of the provider or subprovider, if exists, that generated the alert.|
 |subProvider|String|Specific subprovider (under aggregating provider) e.g. WindowsDefenderATP.SmartScreen.|
-|vendor|String*|Name of the alert vendor (e.g. Microsoft, Dell, FireEye).|
+|vendor *|String|Name of the alert vendor (e.g. Microsoft, Dell, FireEye).|
+(\* Indicates a mandatory field.)
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

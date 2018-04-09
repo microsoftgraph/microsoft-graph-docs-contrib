@@ -36,13 +36,13 @@ In the request body, supply a JSON representation of the values for the relevant
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|tags|String|User-definable labels that can be applied to a fileSecurityProfile and can serve as filter conditions (e.g. "HVA", "SAW", etc.)|
+|tags|String|User-definable labels that can be applied to a fileSecurityProfile and can serve as filter conditions (for example "HVA", "SAW")|
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
 
-If the optional  request header is used, then the method returns a `200 OK` response code and the updated [fileSecurityProfile](../resources/filesecurityprofile.md) object in the response body. See example 2,
+If the optional  request header is used, then the method returns a `200 OK` response code and the updated [fileSecurityProfile](../resources/filesecurityprofile.md) object in the response body. See example 2.
 
 ## Example 1
 

@@ -2,19 +2,19 @@
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Contains information about the attribute(s) that triggered a detection (attribute exists in the alert entity).
+Contains information about the properties that triggered a detection (properties exist in the alert entity).
 
 ## Properties
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|name|String|Name of the attribute serving as a detection trigger.|
-|type|String|Type of the attribute in the key:value pair for interpretation, e.g. String, Boolean, etc.|
-|value|String|Value of the attribute serving as a detection trigger.|
+|name|String|Name of the property serving as a detection trigger.|
+|type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean, and so on.|
+|value|String|Value of the property serving as a detection trigger.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

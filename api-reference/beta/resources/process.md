@@ -8,7 +8,7 @@ Contains stateful information about the process related to the alert.
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|accountName|String|User account identifier (user account context the process ran under) e.g. AccountName, SID, etc.|
+|accountName|String|User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.|
 |authenticodeHash256|String|Authenticode 256 hash of image file (used by AppLocker and others).|
 |commandLine|String|The full process invocation commandline including all parameters.|
 |createdDateTime|DateTimeOffset|Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
@@ -24,7 +24,7 @@ Contains stateful information about the process related to the alert.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
