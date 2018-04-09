@@ -42,8 +42,8 @@ Secure access to resources by activating administrative privileges on-demand. Pr
 
 ## Next steps
 
-- Browse Graph API for Azure AD [1.0 reference](../api-reference/v1.0/resources/azure_ad_overview).
+- Browse Graph API for Azure AD [1.0 reference](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Learn how to integrate [Azure AD sign-on](https://azure.microsoft.com/en-us/develop/identity/signin/) into your app or website in five minutes.
 - Learn how [Azure AD B2C](https://azure.microsoft.com/en-us/services/active-directory-b2c/) helps you connect with any user on any platform through your own branded experience.
-- Learn what's new with [Microsoft Graph API](changelog).
-- Learn more [featured scenarios](featured_scenarios) supported by Microsoft Graph API. 
+- Learn what's new with [Microsoft Graph API](changelog.md).
+- Learn more [featured scenarios](featured_scenarios.md) supported by Microsoft Graph API. 
