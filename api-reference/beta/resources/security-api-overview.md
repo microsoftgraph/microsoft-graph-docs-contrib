@@ -4,15 +4,15 @@
 
 Microsoft Intelligent Security Graph is a unified platform for combatting cyberthreats. It powers real-time threat protection for Microsoft products and services and supports an ecosystem of integrated solutions.
 
-The security API for the Microsoft Graph makes it easy to connect with and extend the Intelligent Security Graph. Leverage the Microsoft Graph to build security solutions that consolidate and correlate security alerts from multiple sources, unlock contextual data to inform investigations, and automate security operations for greater efficiency.
+The security API in Microsoft Graph makes it easy to connect with and extend Intelligent Security Graph. Use Microsoft Graph to build security solutions that consolidate and correlate security alerts from multiple sources, unlock contextual data to inform investigations, and automate security operations for greater efficiency.
 
 ## Why connect to the Intelligent Security Graph?
 
-By connecting with Microsoft and partner security solutions that are part of the Intelligent Security Graph, you can more readily realize and enrich the value of these solutions. Use the security API to:
+By using the security API to connect with Microsoft and partner security solutions that are part of the Intelligent Security Graph, you can more readily realize and enrich the value of these solutions. 
 
 ### Unify and standardize alert management
 
-Correlate alerts across security solutions more easily with a common alert schema, write code once to integrate alerts from any Microsoft Graph integrated security solution, and keep alert status and assignments in sync across all solutions. Also, stream alerts to security information and event management (SIEM) solutions such as Splunk and IBM QRadar via [Azure Monitor](https://blogs.msdn.microsoft.com/azuresecurity/2016/08/23/azure-log-siem-configuration-steps/).
+Correlate alerts across security solutions more easily with a common alert schema. Write code once to integrate alerts from any Microsoft Graph integrated security solution, and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions such as Splunk and IBM QRadar via [Azure Monitor](https://blogs.msdn.microsoft.com/azuresecurity/2016/08/23/azure-log-siem-configuration-steps/).
 
 ### Federated security aggregation service
 
@@ -20,12 +20,14 @@ Queries submitted to the Microsoft Graph security API are sent to all onboarded 
 
 ### Unlock security context to drive investigation
 
-Dive deep into related security-relevant inventory (like users, hosts, apps, etc.) then add organizational context from other Microsoft Graph providers (Azure Active Directory, Microsoft Intune, Office 365, etc.) to bring business and security context together and improve threat response.
+Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure Active Directory, Microsoft Intune, Office 365) to bring business and security context together and improve threat response.
 
+<!-- LG: Add this content when this functionality is available. 
 ### Automate SecOps for greater efficiency (coming soon)
-
-Build and execute investigation and remediation runbooks, automate security policy checks and rule enforcement, and orchestrate actions across security solutions.
-
+-->
+<!-- 
+Build and run investigation and remediation runbooks, automate security policy checks and rule enforcement, and orchestrate actions across security solutions.
+-->
 ## Public Preview Features
 
 **For Public Preview/Beta, the security entities in Microsoft Graph will be supported by the following platforms and Providers. Additional support will be added during the Public Preview.**
@@ -54,7 +56,7 @@ For more information about permissions, including delegated and application perm
 
 The following are some of the most popular requests for working with the security API:
 
-| **Use cases**   | **REST resources** | **See also** |
+| **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
 | Get alerts | [Get alerts](../api/alert_list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=testSecurity&GraphUrl=https://graph.microsoft.com) |
 | Update alerts | [Update alert](../api/alert_update.md) | `https://graph.microsoft.com/beta/security/alerts/{alert-id}` |
@@ -65,6 +67,6 @@ The following are some of the most popular requests for working with the securit
 The security API can open up new ways for you to engage with security solutions from Microsoft and partners. Follow these steps to get started:
 
 * Drill down into [alerts](../resources/alert.md) and [security profiles](../resources/securityprofiles.md).
-* Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). In Graph Explorer, Select “show more samples” and turn “on” the Security category.
+* Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
