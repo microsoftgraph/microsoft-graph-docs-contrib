@@ -50,7 +50,7 @@
   </Item>
   <Item text="Personal contacts (Outlook)" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
-  <Item text="Security" url="/en-us/concepts/security-concept-overview" />
+  <Item text="Security (preview)" url="/en-us/concepts/security-concept-overview" />
   <Item text="Sites and lists (SharePoint)" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="Social intelligence" url="/en-us/concepts/social-intel-concept-overview" >
 	<Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
@@ -96,10 +96,9 @@
 	<Item text="Errors" url="/en-us/concepts/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
   </Item>
  
-  <Item text="horizontalline" url="/" IsSeparation="true" />
-
+ 
   <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
-  <Item text="v1.0 reference" url="/en-us/api-reference/v1.0/resources/v1-overview" >
+  <Item text="v1.0 reference" url="/en-us/concepts/v1-overview" >
   <Item text="Users" url="/en-us/api-reference/v1.0/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
     <Item text="User" url="/en-us/api-reference/v1.0/resources/user" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
       <Item text="Create user" url="/en-us/api-reference/v1.0/api/user_post_users" SEOKeyword="Create User, Microsoft Graph API, user API" SEODescription="Use this API to create a new User." /><Item text="Delete user" url="/en-us/api-reference/v1.0/api/user_delete" SEOKeyword="Delete user, Microsoft Graph API, user API" SEODescription="Delete user." />
@@ -2158,7 +2157,7 @@
     </Item>
   </Item>
   </Item>
-  <Item text="horizontalline" url="/" IsSeparation="true" />
+  
   <!--</Item>-->
 
 
@@ -5241,7 +5240,7 @@
         <Item text="Delete item" url="/en-us/api-reference/beta/api/listitem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
       </Item>
     </Item>
-	<Item text="Social intelligence: People" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
+	<Item text="Social intelligence" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
         <Item text="Trending" url="/en-us/api-reference/beta/resources/insights_trending" >
           <Item text="List trending" url="/en-us/api-reference/beta/api/insights_list_trending" />
