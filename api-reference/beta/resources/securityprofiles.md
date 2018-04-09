@@ -2,17 +2,20 @@
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Security profiles represent security properties and an inventory of related entities (hosts, users, IPs, etc) to provide additional context for [alerts](alert.md) and targets for actions. Security profiles are populated by integrated solutions at their discretion.
+Security profiles represent security properties and an inventory of related entities (hosts, users, IPs, and so on) to provide additional context for [alerts](alert.md) and targets for actions. Security profiles are populated by integrated solutions at their discretion.
 
-For example: - A solution will populate hostSecurityProfile for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. - A Provider will populate ipSecurityProfile for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring
+For example: 
+
+- A solution will populate **hostSecurityProfile** for any desktop, laptop, server, firewall, or other endpoint that their service is responsible for monitoring, alerting, or taking threat remediation actions against. 
+- A provider will populate **ipSecurityProfile** for a collected set of IP addresses that their service is responsible for isolating, monitoring, or configuring.
 
 ## Methods
 
-None
+None.
 
 ## Properties
 
-None
+None.
 
 ## Relationships
 
