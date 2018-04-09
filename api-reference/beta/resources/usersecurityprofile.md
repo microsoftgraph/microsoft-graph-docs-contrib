@@ -25,23 +25,23 @@ Security profiles are populated by integrated solutions at their discretion. For
 |azureSubscriptionId|String|Azure subscription ID of the entity, if this entity represents an Azure resource.|
 |azureTenantId *|String|Azure Active Directory tenant ID of this resource.|
 |createdDateTime *|DateTimeOffset|Time at which the userSecurityProfile was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|domainName|String|NetBIOS/AD Domain of user account  (i.e. domain\account format).|
+|domainName|String|NetBIOS/AD Domain of user account  (that is, domain\account format).|
 |id *|String|Provider-generated GUID/unique identifier. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Time at which the userSecurityProfile was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |onPremisesSecurityIdentifier|String|AD (on premises) SID of the user.|
 |riskScore|String|Provider-calculated risk score of the user account.|
-|tags|String collection|User-definable labels that can be applied to an UserSecurityProfile and can serve as filter conditions (for example, "HVA", "SAW", and so on) (supports [update](../api/usersecurityprofile_update.md)).|
+|tags|String collection|User-definable labels that can be applied to a UserSecurityProfile and can serve as filter conditions (for example, "HVA", "SAW", and so on) (supports [update](../api/usersecurityprofile_update.md)).|
 |userPrincipalName|String|User login name internet format: (user account name)@(user account DNS domain name).|
-|vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (e.g. vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
+|vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
 (\* Indicates a mandatory field.)
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
