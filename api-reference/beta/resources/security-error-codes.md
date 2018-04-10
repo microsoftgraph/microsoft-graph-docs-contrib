@@ -1,36 +1,36 @@
-# Microsoft Security Graph error responses and resource types
+# Microsoft Graph security API error responses
 
-Errors in Microsoft Graph security API are returned using standard HTTP status codes.
+Errors in Microsoft Graph security API are returned using standard HTTP status codes and are delivered by way of a warning header.
 
-The security API is a federated service that receives multiple responses from all the onboarded data providers, when an http error is received by the security API it will send back a Warning header with following format:
+The security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the security API it will send back a warning header in the following format:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-This warning header is only sent back to consumers when one of the data providers (DP) returns or triggers the following errors:
+This warning header is only sent back to clients when one of the data providers returns an error code other than 2xx or 404. For example:
 
-- The status code is used in the warning unless it’s 2xx or 404. For example, HttpStatusCode.Forbidden (403).
-- If DP times out, HttpStatusCode.GatewayTimeout (504) is used in the warning header
-- If some other issues happen, HttpStatusCode.InternalServerError (500) is used in the warning header
+- HttpStatusCode.Forbidden (403) may be returned if the access to the resource is not granted.
+- If a provider times out, HttpStatusCode.GatewayTimeout (504) is returned in the warning header.
+- If an internal provider error happens, HttpStatusCode.InternalServerError (500) is used in the warning header.
 
-If a data provider returns 2xx or 404 then it’s not shown in the Warning header.
+If a data provider returns 2xx or 404 it’s not shown in the warning header because these codes are expected for success or when data is not found respectively. In a federated system, a 404 not found is expected as many times the data is only known to one or several providers, but not all providers.
 
 ## Scenario
 
-Users ask for /alerts/{id}.
+User asks for /alerts/{id}.
 
-    DP1: 404
-    DP2: timeout
-    DP3: 200
-    DP4: 403 since the tenant did not buy its service
+    Provider 1: 404 (provider does not have a record of this alert id)
+    Provider 2: 504 (provider timed out)
+    Provider 3: 200 (success)
+    Provider 4: 403 (customer has not licensed this provider)
 
-Warning header looks like:
+The warning header contains the following: (since both 404 and 200 are expected conditions)
 
 ```http
-{Vendor2}/{DP2}/504/29000    (usually we set timeout limit at 29 seconds)
-{Vendor4}/{DP4}/403/10       (assume DP4 rejected the request in 10 ms)
+{Vendor2}/{Provider 2}/504/29000    (usually we set timeout limit at 29 seconds)
+{Vendor4}/{Provider 4}/403/10       (Provider 4 rejected the request in 10 ms)
 ```
 
 > **Note:** Each HTTP header is a collection of sub items, so users can enumerate the Warning header and check above items.
