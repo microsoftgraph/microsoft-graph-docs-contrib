@@ -54,8 +54,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Change|Beta|Added reportableIdentifier property for [educationsynchronizationerror](../api-reference/beta/resources/educationsynchronizationerror.md).|
-|Change|Beta|Updated the response options for [uploadUrl](../api-reference/beta/api/educationsynchronizationprofile_uploadurl.md) API.|
+|Change|Beta|Added the reportableIdentifier property to [educationsynchronizationerror](../api-reference/beta/resources/educationsynchronizationerror.md).|
+|Change|Beta|Updated the response options for the [uploadUrl](../api-reference/beta/api/educationsynchronizationprofile_uploadurl.md) API.|
 |Change|Beta|Updated the text for description of the [educationSynchronizationError](../api-reference/beta/resources/educationsynchronizationerror.md) resource type.|
 |Change|Beta|Updated the text for description of the [get sync errors](../api-reference/beta/api/educationsynchronizationerrors_get.md) API.|
 
