@@ -52,13 +52,14 @@ The following are some of the most popular requests for working with the securit
 |:---------------|:--------|:----------|
 | Get alerts | [Get alerts](../api/alert_list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=testSecurity&GraphUrl=https://graph.microsoft.com) |
 | Update alerts | [Update alert](../api/alert_update.md) | `https://graph.microsoft.com/beta/security/alerts/{alert-id}` |
-| Get security profiles | [Security profiles](../resources/securityprofiles.md) | [https://graph.microsoft.com/beta/security/hostSecurityProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/hostSecurityProfiles&method=GET&version=testSecurity&GraphUrl=https://graph.microsoft.com) |
+
+<!-- (| Get security profiles | [Security profiles](../resources/securityprofiles.md) | [https://graph.microsoft.com/beta/security/hostSecurityProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/hostSecurityProfiles&method=GET&version=testSecurity&GraphUrl=https://graph.microsoft.com) | ) -->
 
 ## Next steps
 
 The security API can open up new ways for you to engage with security solutions from Microsoft and partners. Follow these steps to get started:
 
-* Drill down into [alerts](../resources/alert.md) and [security profiles](../resources/securityprofiles.md).
+* Drill down into [alerts](../resources/alert.md)<!-- and [security profiles](../resources/securityprofiles.md).-->
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
