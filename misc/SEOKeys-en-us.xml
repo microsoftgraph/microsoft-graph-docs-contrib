@@ -57,7 +57,7 @@
   </Item>
   <Item text="Tasks and plans (Planner)" url="/en-us/concepts/planner-concept-overview" />
   <Item text="Teamwork (Microsoft Teams)(preview)" url="/en-us/concepts/teams-concept-overview" />
-  <Item text="To-do tasks (Outlook)(preview)" url="/en-us/concepts/outlook-tasks-concept-overview" />
+  <Item text="To-do tasks (Outlook) (preview)" url="/en-us/concepts/outlook-tasks-concept-overview" />
   <Item text="Workbooks and charts (Excel)" url="/en-us/concepts/excel-concept-overview" >
 	  <Item text="Manage sessions" url="/en-us/concepts/manage-sessions-in-excel-with-microsoft-graph" />
 	  <Item text="Display a chart image" url="/en-us/concepts/display-a-chart-image-in-excel-with-microsoft-graph" />
@@ -1789,7 +1789,7 @@
 	<Item text="Rules" url="/en-us/api-reference/v1.0/resources/messagerule" >
 		<Item text="List rules" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
 		<Item text="Create rule" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
-		<Item text="Get rule" url="/en-us/api-reference/beta/v1.0/messagerule_get" />
+		<Item text="Get rule" url="/en-us/api-reference/v1.0/messagerule_get" />
 		<Item text="Update rule" url="/en-us/api-reference/v1.0/api/messagerule_update" />	  
 		<Item text="Delete rule" url="/en-us/api-reference/v1.0/api/messagerule_delete" />
 	  </Item>
@@ -2141,7 +2141,7 @@
     <Item text="Update open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_update" SEOKeyword="Update data extension, Microsoft Graph API, opentypeextension API" SEODescription="Update the properties of opentypeextension object." />
     <Item text="Delete open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_delete" SEOKeyword="Delete data extension, Microsoft Graph API, opentypeextension API" SEODescription="Delete data extension." />
   </Item>
-  <Item text="Schema Extensions" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
+  <Item text="Schema extensions" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
       <Item text="List schema extensions" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
       <Item text="Create schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
       <Item text="Get schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_get" SEOKeyword="Get schema extension, Microsoft Graph API" SEODescription="Retrieve the properties of a schema extension definition." />
@@ -5495,13 +5495,13 @@
       </Item>
     </Item>
 	<Item Label="UTILITIES" url="" />
-	<Item text="Open Extensions" url="/en-us/api-reference/beta/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, open extension API, open extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
+	<Item text="Open extensions" url="/en-us/api-reference/beta/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, open extension API, open extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
       <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create an open extension, Microsoft Graph API" SEODescription="Create an open extension." />
       <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API" SEODescription="Retrieve the properties and relationships of an open extension." />
       <Item text="Update open extension" url="/en-us/api-reference/beta/api/opentypeextension_update" SEOKeyword="Update open extension, Microsoft Graph API" SEODescription="Update the properties of an open extension." />
       <Item text="Delete open extension" url="/en-us/api-reference/beta/api/opentypeextension_delete" SEOKeyword="Delete open extension, Microsoft Graph API" SEODescription="Delete open extension." />
     </Item>
-	<Item text="Schema Extensions" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
+	<Item text="Schema extensions" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="extension API, Microsoft Graph API, schema extension API, schema extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
       <Item text="List schema extensions" url="/en-us/api-reference/beta/api/schemaextension_list" SEOKeyword="List schema extensions, Microsoft Graph API" SEODescription="Retrieves a collection of schema extension definitions and their properties." />
       <Item text="Create schema extension" url="/en-us/api-reference/beta/api/schemaextension_post_schemaextensions" SEOKeyword="Create an schema extension, Microsoft Graph API" SEODescription="API to create a schema extension definition." />
       <Item text="Get schema extension" url="/en-us/api-reference/beta/api/schemaextension_get" SEOKeyword="Get schema extension, Microsoft Graph API" SEODescription="Retrieve the properties of a schema extension definition." />
