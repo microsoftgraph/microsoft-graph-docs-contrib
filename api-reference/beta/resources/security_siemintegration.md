@@ -24,7 +24,7 @@ To begin, you need to create an Event Hubs namespace and event hub. This namespa
 - We recommend using the default consumer group for your event hub. There is no need to create other consumer groups or use a separate consumer group unless you plan to have two different tools consume the same data from the same event hub.
 - Typically, port 5671 and 5672 must be opened on the machine consuming data from the event hub.
 
-Also see the Azure Event Hubs FAQ.
+Also see the [Azure Event Hubs FAQ](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-faq).
 
 1. Log on to the [Azure portal](https://portal.azure.com/) and click **Create a resource** at the top left of the screen.
 
@@ -72,13 +72,10 @@ Security alerts are highly privileged data typically viewable only by security r
 
     Replace the values above as follows:
 
-    **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
-
-    **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
-
-    **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
-
-    **“days”:** 7 is the number of days you want to retain messages in your event hub.
+    - **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
+    - **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
+    - **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
+    - **“days”:** 7 is the number of days you want to retain messages in your event hub.
 
 3. Save the file as JSON to the directory where you will invoke ARMClient.exe. In this example we will name the file **AzMonConfig.json.**
 
