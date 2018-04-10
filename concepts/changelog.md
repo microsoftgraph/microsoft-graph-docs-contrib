@@ -6,6 +6,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2018
 
+### Reports APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta| Added delegated access support. |
+|Addition|v1.0| Added delegated access support. |
+
+### Directory APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | V1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
+
 ### Outlook calendar
 
 | **Change type** | **Version**   | **Description**                          |
@@ -48,7 +60,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | v1.0        | Added the new [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/outlookuser_supportedtimezones) function to the [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/outlookuser) entity. |
 |Addition | v1.0 | Added the new **workingHours** property to [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md). See [workingHours resource type](../api-reference/v1.0/resources/workinghours.md) for information on the supported use cases.|
 |Addition | v1.0 | Added the following new complex types: <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
-
 
 ## March 2018
 
@@ -111,6 +122,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|v1.0|Added new complex types:<br/>[appConfigurationSettingItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem)<br/>|
 |Addition|v1.0|Added the [syncLicenses](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses.md) action on [vppToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_onboarding_vpptoken) |
 |Addition|v1.0|Added the **vppTokens** navigation property to the [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_apps_deviceappmanagement) entity|
+|Addition|beta|Added the **managementCertificateExpirationDate** property to the [managedDevice](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_devices_manageddevice) entity|
+|Addition|beta|Added the **enhancedJailBreak** property to the [deviceManagementSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) complex type|
 |Addition|beta|Added new entities:<br/>[androidDeviceOwnerEnrollmentProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile)<br/>[androidDeviceOwnerGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_androiddeviceownergeneraldeviceconfiguration)<br/>[androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings)<br/>[androidManagedStoreAppConfigurationSchema](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschema)<br/>[dataSharingConsent](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_devices_datasharingconsent)<br/>[deviceConfigurationUserStateSummary](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuserstatesummary)<br/>[macOSEndpointProtectionConfiguration](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_macosendpointprotectionconfiguration)<br/>[macOSImportedPFXCertificateProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_macosimportedpfxcertificateprofile)<br/>[macOSLobApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_macoslobapp)<br/>[managedEBookCategory](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_books_managedebookcategory)<br/>[microsoftStoreForBusinessContainedApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesscontainedapp)<br/>[mobileContainedApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_mobilecontainedapp)<br/>[windowsUniversalAppXContainedApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappxcontainedapp)<br/>|
 |Addition|beta|Added new complex types:<br/>[androidManagedStoreAppConfigurationSchemaItem](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem)<br/>[deviceAndAppManagementData](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_onboarding_deviceandappmanagementdata)<br/>[loggedOnUser](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_devices_loggedonuser)<br/>[macOSFirewallApplication](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_macosfirewallapplication)<br/>[macOSLobChildApp](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_macoslobchildapp)<br/>[macOSMinimumOperatingSystem](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_macosminimumoperatingsystem)<br/>[windowsAppXAppAssignmentSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsappxappassignmentsettings)<br/>[windowsUniversalAppXAppAssignmentSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappxappassignmentsettings)<br/>|
 |Addition|beta|Added the [requestSignupUrl](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_requestsignupurl.md) action on [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) |
