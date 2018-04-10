@@ -11,7 +11,7 @@ The integration process is comprised of several steps:
 5. [Create an Azure Key vault to store the access key for the event hub](#Step-5:-Create-an-Azure-Key-vault-to-store-the-access-key-for-the-event-hub)
 6. [Configure the Splunk data inputs to consume security alerts stored in the event hub](#Step-6:-Configure-the-Splunk-data-inputs-to-consume-security-alerts-stored-in-the-event-hub)
 
-Once complete your Splunk Enterprise will consume security alerts from all the Microsoft Graph integrated security products for which your tenant is licensed. And any new security products you license will also send alerts through this same connection, in the same schema with no further integration work needed.
+Once complete, your Splunk Enterprise will consume security alerts from all the Microsoft Graph integrated security products for which your tenant is licensed. And any new security products you license will also send alerts through this same connection, in the same schema with no further integration work needed.
 
 ## Step 1: Set up an Event Hubs namespace in Azure to receive security alerts for your tenant
 
@@ -24,7 +24,7 @@ To begin, you need to create an Event Hubs namespace and event hub. This namespa
 - We recommend using the default consumer group for your event hub. There is no need to create other consumer groups or use a separate consumer group unless you plan to have two different tools consume the same data from the same event hub.
 - Typically, port 5671 and 5672 must be opened on the machine consuming data from the event hub.
 
-Please also see the Azure Event Hubs FAQ.
+Also see the Azure Event Hubs FAQ.
 
 1. Log on to the [Azure portal](https://portal.azure.com/) and click **Create a resource** at the top left of the screen.
 
@@ -32,7 +32,7 @@ Please also see the Azure Event Hubs FAQ.
 
 2. Select **Internet of Things** and choose **Event Hubs**.
 
-    ![eventhubs image](../../../concepts/images/eventHubs.png)
+    ![event hubs image](../../../concepts/images/eventHubs.png)
 
 3. In **Create namespace**, enter a namespace name. After making sure the namespace name is available, choose the pricing tier (Basic or Standard). Also, choose an Azure subscription, resource group, and location in which to create the resource. Click **Create** to create the namespace. You may have to wait a few minutes for the system to fully provision the resources.
 
