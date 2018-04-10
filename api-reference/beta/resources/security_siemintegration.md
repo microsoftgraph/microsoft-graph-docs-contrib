@@ -134,7 +134,7 @@ Splunk needs an application registration in your organization’s Azure Active D
 
     This will allow you to generate a new key, known as an Application Secret. Once generated, copy the **Application Secret** and save for later use configuring the Splunk data inputs.
 
-4. Next, grant the application the role of Reader in the Azure subscription containing the event hub with your organization’s security alerts.
+4. Next, grant the application the role of **Reader** in the Azure subscription containing the event hub with your organization’s security alerts.
 
     ![add azure sub](../../../concepts/images/addAzureSub.png)
 
