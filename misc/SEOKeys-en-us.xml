@@ -5122,13 +5122,6 @@
         <Item text="List child folders" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="List childFolders, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail child folder" url="/en-us/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="Create mailFolder, Microsoft Graph API, Outlook Mail API" SEODescription="Use this API to create a new MailFolder." />
       </Item>
-      <Item text="Rules" url="/en-us/api-reference/beta/resources/messagerule" >
-		<Item text="List rules" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
-		<Item text="Create rule" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
-		<Item text="Get rule" url="/en-us/api-reference/beta/api/messagerule_get" />
-		<Item text="Update rule" url="/en-us/api-reference/beta/api/messagerule_update" />	  
-		<Item text="Delete rule" url="/en-us/api-reference/beta/api/messagerule_delete" />
-	  </Item>
 	  <Item text="Mail search folder" url="/en-us/api-reference/beta/resources/mailsearchfolder" SEODescription="">
         <Item text="List mail search folders" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEODescription="Retrieve a list of mailfolder objects." />
         <Item text="Create mail search folder" url="/en-us/api-reference/beta/api/mailsearchfolder_post" SEODescription="Use this API to create a new MailFolder." />
@@ -5138,6 +5131,13 @@
         <Item text="List messages in folder" url="/en-us/api-reference/beta/api/mailfolder_list_messages" SEODescription="Retrieve a list of message objects." />
         <Item text="List child folders" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEODescription="Retrieve a list of mailfolder objects." />
       </Item>
+	  <Item text="Rules" url="/en-us/api-reference/beta/resources/messagerule" >
+		<Item text="List rules" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
+		<Item text="Create rule" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+		<Item text="Get rule" url="/en-us/api-reference/beta/api/messagerule_get" />
+		<Item text="Update rule" url="/en-us/api-reference/beta/api/messagerule_update" />	  
+		<Item text="Delete rule" url="/en-us/api-reference/beta/api/messagerule_delete" />
+	  </Item>
 	  <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
         <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
           <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
