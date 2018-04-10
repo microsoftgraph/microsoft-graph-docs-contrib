@@ -674,7 +674,7 @@ None.
 
 ### Remarks
 
-Secuirty permissions are valid only on work or school accounts that have integrated with one or more of the security APIs providers.
+Security permissions are valid only on work or school accounts that have integrated with one or more of the security API providers.
 
 ### Example usage
 
