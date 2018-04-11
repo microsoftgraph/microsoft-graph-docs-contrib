@@ -1,8 +1,8 @@
-# Microsoft Graph security API error responses
+# Security API error responses
 
-Errors in Microsoft Graph security API are returned using standard HTTP status codes and are delivered by way of a warning header.
+Errors in the security API in Microsoft Graph are returned using standard HTTP status codes and are delivered by way of a warning header.
 
-The security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the security API it will send back a warning header in the following format:
+The security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the security API, it will send back a warning header in the following format:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -11,26 +11,26 @@ The security API is a federated service that receives multiple responses from al
 
 This warning header is only sent back to clients when one of the data providers returns an error code other than 2xx or 404. For example:
 
-- HttpStatusCode.Forbidden (403) may be returned if the access to the resource is not granted.
+- HttpStatusCode.Forbidden (403) might be returned if the access to the resource is not granted.
 - If a provider times out, HttpStatusCode.GatewayTimeout (504) is returned in the warning header.
 - If an internal provider error happens, HttpStatusCode.InternalServerError (500) is used in the warning header.
 
-If a data provider returns 2xx or 404 it’s not shown in the warning header because these codes are expected for success or when data is not found respectively. In a federated system, a 404 not found is expected as many times the data is only known to one or several providers, but not all providers.
+If a data provider returns 2xx or 404, it’s not shown in the warning header because these codes are expected for success or when data is not found respectively. In a federated system, a 404 not found is expected as many times the data is only known to one or several, but not all, providers.
 
-## Scenario
+## Example
 
-User asks for /alerts/{id}.
+A user asks for `/alerts/{id}`.
 
-    Provider 1: 404 (provider does not have a record of this alert id)
+    Provider 1: 404 (provider does not have a record of this alert ID)
     Provider 2: 504 (provider timed out)
     Provider 3: 200 (success)
     Provider 4: 403 (customer has not licensed this provider)
 
-The warning header contains the following: (since both 404 and 200 are expected conditions)
+Because both 404 and 200 are expected conditions, the warning header contains the following: 
 
 ```http
-{Vendor2}/{Provider 2}/504/29000    (usually we set timeout limit at 29 seconds)
+{Vendor2}/{Provider 2}/504/29000    (usual timeout limit is set at 29 seconds)
 {Vendor4}/{Provider 4}/403/10       (Provider 4 rejected the request in 10 ms)
 ```
 
-> **Note:** Each HTTP header is a collection of sub items, so users can enumerate the Warning header and check above items.
+> **Note:** Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.
