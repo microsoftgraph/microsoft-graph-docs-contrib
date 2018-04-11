@@ -16,7 +16,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta       | Added [list alerts](../api-reference/beta/api/alert_list.md)
 | Addition        | Beta       | Added [update alert](../api-reference/beta/api/alert_update.md)
 | Addition        | Beta       | Added [errors](../api-reference/beta/resources/security-error-codes.md)
-| Addition        | Beta       | Added [SIEM integration instructions](../api-reference/beta/resources/security_siemintegration.md)
+| Addition        | Beta       | Added [SIEM integration instructions](../concepts/security_siemintegration.md)
 
 
 ## March 2018
