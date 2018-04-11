@@ -659,6 +659,35 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Security permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SecurityEvents.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security events on behalf of the signed-in user. | Yes  |
+| _SecurityEvents.ReadWrite.All_   | Read and update your organization’s security events | Allows the app to read your organization’s security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. | Yes  |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SecurityEvents.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security events. | Yes  |
+| _SecurityEvents.ReadWrite.All_   | Read and update your organization’s security events | Allows the app to read your organization’s security events. Also allows the app to update editable properties in security events. | Yes  |
+
+### Remarks
+
+Security permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated and Application
+
+- _SecurityEvents.Read.All_: Read the list of all security alerts from all licensed security providers avalible to your tenant (`GET /beta/security/alerts`)
+- _SecurityEvents.ReadWrite.All_: Update or read security alerts from all licensed security providers avalible to your tenant  (`PATCH /beta/security/alerts/{id}`)
+
+---
+
 ## Sites permissions
 
 #### Delegated permissions
