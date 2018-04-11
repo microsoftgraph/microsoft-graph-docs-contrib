@@ -28,9 +28,9 @@ A user asks for `/alerts/{id}`.
 
 Because both 404 and 200 are expected conditions, the warning header contains the following: 
 
-```http
-{Vendor2}/{Provider 2}/504/29000    (usual timeout limit is set at 29 seconds)
-{Vendor4}/{Provider 4}/403/10       (Provider 4 rejected the request in 10 ms)
+```HTTP
+Warning : 199 - "{Vendor2}/{Provider 2}/504/29000",    (usual timeout limit is set at 29 seconds)
+          199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 
 > **Note:** Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.
