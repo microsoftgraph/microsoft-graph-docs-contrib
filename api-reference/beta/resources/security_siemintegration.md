@@ -2,6 +2,8 @@
 
 The Microsoft Graph security API provides the ability to manage security alerts from many different security products, known as providers, through a single REST endpoint in Microsoft Graph. Some organizations may already ingest Azure specific log data through Azure Monitor into SIEM solutions. To facilitate ease of integration, the security alerts available through the REST API are also made available through Azure Monitor. If your organization has already configured Azure Monitor integration with your SIEM solution, you can now easily add your organization’s security alerts to the data available through Azure Monitor. This post will guide you through the steps to enable this integration.
 
+Azure Monitor supports several different SIEM connectors from various vendors. You can find a non-exhaustive list of SIEM tools with connectors for Azure Monitor data [here](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). The instructions found in Step 1 and Step 2 of this document are relevant for all Azure Monitor connectors supporting consumption via event hub. In this guide, we will walk through the end to end configuration for the Splunk SIEM connector.
+
 The integration process is comprised of several steps:
 
 1. [Set up Azure your event hub to receive security alerts for your tenant](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant)
