@@ -132,14 +132,14 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Cross-device app continuance | Cross-device experiences | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](../concepts/cross-device-concept-overview.md) |
+| Cross-device experiences | Activity feed, device relay | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](../concepts/cross-device-concept-overview.md) |
 
 
 ## Usage reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Reports | Azure AD, OneDrive, Outlook, SharePoint, and more | Gets activity and usage information of a supported service. | [Usage reports overview](../concepts/reportroot-concept-overview.md) |
+| Reports | Microsoft Teams, OneDrive, Outlook, SharePoint, Skype for Business, Yammer | Gets activity and usage information of a supporting service. | [Usage reports overview](../concepts/reportroot-concept-overview.md) |
 
 
 ## Education
