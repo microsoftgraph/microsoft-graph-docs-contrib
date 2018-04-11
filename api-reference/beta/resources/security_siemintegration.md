@@ -1,8 +1,8 @@
-# Using Azure Monitor stream Microsoft Graph security API alerts to Splunk Enterprise
+# Using Azure Monitor to stream security API alerts in Splunk Enterprise
 
-The Microsoft Graph security API provides the ability to manage security alerts from many different security products, known as providers, through a single REST endpoint in Microsoft Graph. Some organizations may already ingest Azure specific log data through Azure Monitor into SIEM solutions. To facilitate ease of integration, the security alerts available through the REST API are also made available through Azure Monitor. If your organization has already configured Azure Monitor integration with your SIEM solution, you can now easily add your organization’s security alerts to the data available through Azure Monitor. This post will guide you through the steps to enable this integration.
+The security API in Microsoft Graph provides the ability to manage security alerts from many different security products, known as providers, through a single REST endpoint. Some organizations might already ingest Azure-specific log data through Azure Monitor into security information and event management (SIEM) solutions. To facilitate ease of integration, the security alerts available through the REST API are also made available through Azure Monitor. If your organization has already configured Azure Monitor integration with your SIEM solution, you can now easily add your organization’s security alerts to the data available through Azure Monitor. This article will guide you through the steps to enable this integration.
 
-The integration process is comprised of several steps:
+The integration process involves the following steps:
 
 1. [Set up Azure your event hub to receive security alerts for your tenant](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant)
 2. [Configure Azure Monitor to send security alerts from your tenant to the event hub](#step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub)
