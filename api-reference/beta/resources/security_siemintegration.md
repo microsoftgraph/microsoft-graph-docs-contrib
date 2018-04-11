@@ -8,7 +8,7 @@ The integration process involves the following steps:
 
 1. [Set up Azure your event hub to receive security alerts for your tenant](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant)
 2. [Configure Azure Monitor to send security alerts from your tenant to the event hub](#step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub)
-3. [Download and install the Azure Monitor Add-on for Splunk which will allow Splunk to consume security alerts](#step-3-download-and-install-the-azure-monitor-addon-for-splunk-which-will-allow-splunk-to-consume-security-alerts)
+3. [Download and install the Azure Monitor Add-on for Splunk which will allow Splunk to consume security alerts](#step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts)
 4. [Register an application with your tenant Azure Active Directory which Splunk will use to read from the event hub](#step-4-register-an-application-with-your-tenant-azure-active-directory-which-splunk-will-use-to-read-from-the-event-hub )
 5. [Create an Azure Key vault to store the access key for the event hub](#step-5-create-an-azure-key-vault-to-store-the-access-key-for-the-event-hub)
 6. [Configure the Splunk data inputs to consume security alerts stored in the event hub](#step-6-configure-the-splunk-data-inputs-to-consume-security-alerts-stored-in-the-event-hub)
