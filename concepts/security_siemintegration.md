@@ -30,15 +30,15 @@ Also see the [Azure Event Hubs FAQ](https://docs.microsoft.com/en-us/azure/event
 
 1. Log on to the [Azure portal](https://portal.azure.com/) and choose **Create a resource** at the top left of the screen.
 
-    ![Create resource image](../concepts/images/createResource.png)
+    ![Create resource image](../concepts/images/create-resource.png)
 
 2. Select **Internet of Things** and choose **Event Hubs**.
 
-    ![event hubs image](../concepts/images/eventHubs.png)
+    ![event hubs image](../concepts/images/event-hubs.png)
 
 3. In **Create namespace**, enter a namespace name. After making sure the namespace name is available, choose the pricing tier (Basic or Standard). Also, choose an Azure subscription, resource group, and location in which to create the resource. Choose **Create** to create the namespace. You might have to wait a few minutes for the system to fully provision the resources.
 
-    ![create namespace image](../concepts/images/createNamespace.png)
+    ![create namespace image](../concepts/images/create-namespace.png)
 
 ## Step 2: Configure Azure Monitor to send security alerts from your tenant to the event hub
 
@@ -124,25 +124,25 @@ Splunk needs an application registration in your organization’s Azure Active D
 
 1. In the Azure portal, go to **App Registrations** and select **New application registration**.
 
-    ![app registration image](../concepts/images/appRegistration.png)
+    ![app registration image](../concepts/images/app-registration.png)
 
 2. Select a name for your application, choose **Web app / API** for the type, and **`http://localhost`** for the sign-on URL. Then select **Create**.
 
-    ![web api config](../concepts/images/appWebConfig.png)
+    ![web api config](../concepts/images/app-web-config.png)
 
 3. After the application is created, copy the **Application ID** and save for later use configuring the Splunk data inputs. Then go to the application settings and choose **Keys**.
 
-    ![web app id](../concepts/images/appId.png)
+    ![web app id](../concepts/images/app-id.png)
 
     This will allow you to generate a new key, known as an Application Secret. After it's generated, copy the **Application Secret** and save for later use configuring the Splunk data inputs.
 
 4. Grant the application the role of **Reader** in the Azure subscription containing the event hub with your organization’s security alerts.
 
-    ![add azure sub](../concepts/images/addAzureSub.png)
+    ![add azure sub](../concepts/images/add-azure-sub.png)
 
     Select your subscription, choose **Access control (IAM)**. Select **Add** to add permissions. Select your application and choose the **Role** of **Reader** for your application.
 
-    ![add reader perms](../concepts/images/addReaderPerms.png)
+    ![add reader perms](../concepts/images/add-reader-perms.png)
 
     Select **Save** to add the permissions granted to your application to the subscription.
 
@@ -152,25 +152,25 @@ Azure key vaults are used to store secrets such as identities, passwords, and ce
 
 1. In the Azure portal, go to **Key vaults** and select **Add**.
 
-    ![add key vaults](../concepts/images/addKeyVaults.png)
+    ![add key vaults](../concepts/images/add-key-vaults.png)
 
 2. When creating the new key vault, select **Access policies** to add a new access policy for the application you just registered in Step 4. Grant the **Get** secret permissions to your application. This will allow Splunk, acting as the registered application, to access the keys (secrets) stored in this Azure key vault.
 
-    ![add access policies](../concepts/images/addAccessPolicies.png)
+    ![add access policies](../concepts/images/add-access-policies.png)
 
     Select **Create** to complete the creation of your new Azure key vault.
 
 3. Generate a new secret in your key vault to store the access key to your event hub namespace. First, grab the access key to your event hub namespace by opening your event hub namespace and selecting **Shared access policies**. Select the **RootManageSharedAccessKey** policy from the list and copy the **Primary Key** from the list.
 
-    ![get shared access policies](../concepts/images/getSharedPolicies.png)
+    ![get shared access policies](../concepts/images/get-shared-policies.png)
 
 4. Open your key vault and select **Secrets**. Choose **Generate/Import** to add a new secret to the key vault. Paste in the **Primary key** from the event hub namespace **RootManageSharedAccessKey**.
 
-    ![generate new secret](../concepts/images/generateNewSecret.png)
+    ![generate new secret](../concepts/images/generate-new-secret.png)
 
 5. After it's created, select the secret and copy the **Secret Version** of the secret. This will be used later in Step 6 to configure Splunk data inputs.
 
-    ![secret version](../concepts/images/secretVersion.png)
+    ![secret version](../concepts/images/secret-version.png)
 
 ## Step 6: Configure the Splunk data inputs to consume security alerts stored in the event hub
 
@@ -179,6 +179,6 @@ The last step to complete the setup process is to configure Splunk data inputs t
 1. Follow the instructions in the [Configuration of Splunk](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration-of-Splunk) topic to open and configure Splunk data inputs for the Azure Monitor Add-on. Go to **Settings** and **Data Inputs**. Choose **Azure Monitor Diagnostic Logs**.
 2. Select **New** and input all the required fields using the values obtained in the previous steps. The following image shows all the required fields using the values from the previous examples in this article.
 
-    ![azure monitor fields](../concepts/images/azureMonitorFields.png)
+    ![azure monitor fields](../concepts/images/azure-monitor-fields.png)
 
 3. Select **Next** and begin searching your organization’s security alerts ingested from Azure Monitor.
