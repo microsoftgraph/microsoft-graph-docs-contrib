@@ -1,27 +1,19 @@
 # Overview of social intelligence and analytics in Microsoft Graph
 
-{1-2 sentences about the value of this feature/service to its target customers.} 
-{This topic is meant to include both insights doc-focused API, and people API.}
+The people API and insights API in Microsoft Graph let you leverage relevant people and document data about a user, and build smarter apps.
 
-Based on advanced analytics and machine learning, the Insights APIs provide the most relevant files you need throughout your workday. The APIs power Office 365 experiences you are familiar with, like Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and the Outlook Web App.
+The people API returns persons that are ordered by relevance to a user, and come from the user's contacts, social networks, organization directory, and recent communications on email and Skype. This is particularly useful in people-picking scenarios.
 
-## Why integrate with Microsoft Graph social intelligence and analytics?
+The insights API uses advanced analytics and machine learning to provide the most relevant files you need throughout your workday. The API powers Office 365 experiences that you are familiar with, including Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
+
+## Why integrate with people data in Microsoft Graph
 
 {<=1.5 pages of value proposition for developers.}
 
-The People API and insights API in Microsoft Graph enable you to leverage relevant people and document data about a user and build smarter apps. 
+ {Here we can have People API-specific value prop section}
 
-{Here we can have People API-specific value prop section}
 
-### People API
-
-The People API returns people that are ordered by relevance to a user, based on the user's contacts, social networks, organization directory, and recent communications on email and Skype. This is particularly useful in people-picking scenarios.
-
-...
-
-### Insights API (preview)
-
-The Insights APIs build on advanced analytics and machine learning to always surface the most relevant files to users.
+### Why integrate with document-based insights in Microsoft Graph (preview)
 
 #### Use intelligence to improve collaboration
 

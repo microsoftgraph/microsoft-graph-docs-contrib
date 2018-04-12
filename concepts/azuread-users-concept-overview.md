@@ -1,4 +1,4 @@
-# Microsoft Graph users API overview
+# Overview of users in Microsoft Graph
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 {Tie users and identity management with directory objects.}
