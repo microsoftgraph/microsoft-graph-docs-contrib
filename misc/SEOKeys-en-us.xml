@@ -1862,7 +1862,7 @@
 	<Item text="Rules" url="/en-us/api-reference/v1.0/resources/messagerule" >
 		<Item text="List rules" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
 		<Item text="Create rule" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
-		<Item text="Get rule" url="/en-us/api-reference/v1.0/messagerule_get" />
+		<Item text="Get rule" url="/en-us/api-reference/v1.0/api/messagerule_get" />
 		<Item text="Update rule" url="/en-us/api-reference/v1.0/api/messagerule_update" />	  
 		<Item text="Delete rule" url="/en-us/api-reference/v1.0/api/messagerule_delete" />
 	  </Item>
