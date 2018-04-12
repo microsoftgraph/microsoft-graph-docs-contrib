@@ -106,7 +106,7 @@
       <Item text="Send mail" url="/en-us/api-reference/v1.0/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
       <Item text="Get mailbox settings" url="/en-us/api-reference/v1.0/api/user_get_mailboxsettings" SEODescription="" />
       <Item text="Update mailbox settings" url="/en-us/api-reference/v1.0/api/user_update_mailboxsettings" SEODescription="" />
-	  <Item text="List rules" url="/en-us/api-reference/beta/v1.0/mailfolder_list_messagerules" />
+	  <Item text="List rules" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
 	  <Item text="Create rules" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
     </Item>
     <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
