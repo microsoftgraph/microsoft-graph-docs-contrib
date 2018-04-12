@@ -1,4 +1,4 @@
-# Office 365 groups API overview
+# Overview of Office 365 groups in Microsoft Graph
 
 {1-2 sentences about the value of this feature/service to its target customers.} 
 
