@@ -2,28 +2,40 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of a subscription.
+Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant.
+
 ## Permissions
 
-The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Resource type / Item        | Permission          |
-|-----------------------------|---------------------|
-| Contacts                    | Contacts.Read       |
-| Conversations               | Group.Read.All      |
-| Events                      | Calendars.Read      |
-| Messages                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
-| Drive  (User's OneDrive)    | Files.ReadWrite     |
-| Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
+| Permission type  | Permissions (from least to most privileged)  |
+|:---------------- |:-------------------------------------------- |
+| [Delegated](concepts/auth_v2_user) (work or school account) | Role required to [create subscription](subscription_get.md) or Subscriptions.Read.All (see below). |
+| [Delegated](concepts/auth_v2_user) (personal Microsoft account) | Role required to [create subscription](subscription_get.md) or Subscriptions.Read.All (see below). |
+| [Application](concepts/auth_v2_service) | Role required to [create subscription](subscription_get.md). |
 
-***Note:*** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
+Response results are based on the context of the calling app, which includes:
+
+- The permission type, e.g. whether the application is making request for itself (application permission) or a delegated request on behalf of a user.
+- For delegated permissions requiring admin access, whether the user has granted the app the Subscriptions.Read.All scope permission when requested.
+- Whether the user account is an Azure AD account (work or school) or a personal Microsoft account.
+- For Azure AD user accounts, whether the user is an administrator of the tenant (based on current role settings).
+
+The following table shows the context required for common tasks:
+
+| Task | Required Context |
+|:-----|:---------------- |
+| Retrieve the subscriptions the current app has made on behalf of the current user (work/school account). | Delegated permission.<br/><br/>Role required to [create subscription](subscription_get.md); user can be admin or non-admin.|
+| Retrieve the subscriptions the current app has made within a tenant for itself or for any user. | Application permission.<br /><br />Subscription.Read.All scope for admin work/school account. |
+| Retrieve the subscriptions that any app has made on behalf of the current user. | Delegated permission.<br /><br/>Subscriptions.Read.All permission required.|
+| Retrieve all subscriptions within a given tenant, regardless of app or user (highly privileged operation). | Application permission.<br /><br/>Subscription.Read.All required for admin work accounts. |
+| Retrieve subscriptions made by the current app for a personal account user. | Delegated permission.<br /><br/>Role required to [create subscription](subscription_get.md).| 
+| Retrieve all subscriptions for a personal Microsoft account, regardless of app. | Delegated permission.<br /><br/>Subscriptions.Read.All for personal account. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /subscriptions/
+GET /subscriptions
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -41,35 +53,39 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_subscription"
+  "name": "get_subscriptions"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/subscriptions/{id}
+GET https://graph.microsoft.com/beta/subscriptions
 ```
 ##### Response
-Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.subscription"
+  "@odata.type": "microsoft.graph.subscription",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 252
+Content-length: 586
 
 {
-  "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-  "resource":"me/messages",
-  "applicationId" : "string",
-  "changeType":"created,updated",
-  "clientState":"subscription-identifier",
-  "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-  "creatorUserId": "string"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions",
+    "value": [
+        {
+            "id": "0fc0d6db-0073-42e5-a186-853da75fb308",
+            "resource": "Users",
+            "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
+            "changeType": "updated,deleted",
+            "clientState": null,
+            "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
+            "expirationDateTime": "2018-03-12T05:00:00Z",
+            "creatorUserId": "8ee44408-0679-472c-bc2a-692812af3437"
+        }
+    ]
 }
 ```
 
@@ -77,7 +93,7 @@ Content-length: 252
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get subscription",
+  "description": "List subscriptions",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
