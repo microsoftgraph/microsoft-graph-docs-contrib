@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
     "attribution": {
         "@odata.type": "microsoft.graph.imageInfo",
         "iconUrl": "String (URL)",
-        "alternativeText": "String",
+        "alternateText": "String",
         "addImageQuery": "boolean"
     },
     "description": "String",

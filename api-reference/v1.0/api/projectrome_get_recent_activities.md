@@ -94,7 +94,7 @@ Content-Type: application/json
         "visualElements": {
             "attribution": {
               "iconUrl": "http://www.contoso.com/icon",
-              "alternativeText": "Contoso, Ltd.",
+              "alternateText": "Contoso, Ltd.",
               "addImageQuery": "false",
               },
             "displayText": "Contoso How-To: How to Tie a Reef Knot",
