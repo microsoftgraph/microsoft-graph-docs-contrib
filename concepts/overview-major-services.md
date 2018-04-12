@@ -12,8 +12,8 @@ Groups form the fundamental fabric enabling user collaboration, and integration 
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph with user-centric functionality across most services built around it. | [Microsoft Graph users overview](../concepts/azuread-users-concept-overview.md)|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups provide the fundamental collaborative unit for users to share conversations, files, notes, calendar, and plans. | [Office 365 groups overview](../concepts/office365-groups-concept-overview.md) |
+| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph with user-centric functionality across most services built around it. | [Overview of users in Microsoft Graph](../concepts/azuread-users-concept-overview.md)|
+|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups provide the fundamental collaborative unit for users to share conversations, files, notes, calendar, and plans. | [Overview of Office 365 groups in Microsoft Graph](../concepts/office365-groups-concept-overview.md) |
 
 
 ## Services and features
@@ -132,14 +132,14 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Cross-device app continuance | Cross-device experiences | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](../concepts/cross-device-concept-overview.md) |
+| Cross-device experiences | Activity feed, device relay | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](../concepts/cross-device-concept-overview.md) |
 
 
 ## Usage reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Reports | Azure AD, OneDrive, Outlook, SharePoint, and more | Gets activity and usage information of a supported service. | [Usage reports overview](../concepts/reportroot-concept-overview.md) |
+| Reports | Microsoft Teams, OneDrive, Outlook, SharePoint, Skype for Business, Yammer | Gets activity and usage information of a supporting service. | [Usage reports overview](../concepts/reportroot-concept-overview.md) |
 
 
 ## Education
