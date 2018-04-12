@@ -67,11 +67,12 @@ This resource supports:
 |:---------------|:--------|:------------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
 | accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
+|ageGroup|[ageGroup](legalAgeGroupClassification.md)|This property is used to set the age group of the user.||assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
 | companyName | String | The company name which the user is associated. Read-only.
+|consentProvidedForMinor|[consentProvidedForMinor](legalAgeGroupClassification.md)|This property is used to set the whether consent has been obtained for Minors.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
 |deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
@@ -82,6 +83,7 @@ This resource supports:
 |id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title. Supports $filter.|
+|legalAgeGroupClassification|[legalAgeGroupClassification](legalAgeGroupClassification.md)|This property is used by applications to determine the Legal Age Group of the user. This property is Read-only and calculated based on [ageGroup](legalAgeGroupClassification.md) and [consentProvidedForMinor](legalAgeGroupClassification.md) properties.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user_get_mailboxsettings.md) or [update](../api/user_update_mailboxsettings.md) settings for sending automatic replies to incoming messages, locale, and time zone.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
