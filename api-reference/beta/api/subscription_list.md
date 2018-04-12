@@ -61,6 +61,9 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
 GET https://graph.microsoft.com/beta/subscriptions
 ```
 ##### Response
+Here's an an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.
+
+When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](../../../concepts/paging). 
 <!-- {
   "blockType": "response",
   "truncated": false,
