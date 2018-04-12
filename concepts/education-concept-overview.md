@@ -1,28 +1,28 @@
-# Microsoft Graph Education API overview
+# Education API overview
 
-The education APIs in Microsoft Graph enhance Office 365 resources with information that is relevant for education scenarios including information about schools, classes, users(students and teachers), assignments and submissions. This makes it easy for application developers to build solutions that integrate with educational resources for various school and classroom scenarios.
+The education API in Microsoft Graph enhances Office 365 resources with information that is relevant for education scenarios, including information about schools, classes, users (students and teachers), assignments, and submissions. This makes it easy for you to build solutions that integrate with educational resources for various school and classroom scenarios.
 
-The education APIs in Microsoft Graph provide access to classes, schools, users, assignments,submissions and more.
+The education API in Microsoft Graph provides access to classes, schools, users, assignments, submissions and more.
 
 ![EDU Graph Overview](images/EDUGraph.PNG)
 
-# Why integrate with EDU Graph?
+## Why integrate with education scenarios?
 
-## Build applications that are aware of class Roster
+### Build applications that are aware of class roster
 
-Most education software developers learn early on that class roster is one of the key pieces of information that they need to run their application and its typically locked away inside a school Student Information System (SIS).  Anytime teachers bring a new application into their classroom they spend time manually importing roster data into the app. Many ISVs address this by connecting with various SIS to import roster data but with hundreds of Student Information Systems with proprietary formats this can easily become challenging. [Microsoft School Data Sync](https://sds.microsoft.com/) combined with roster APIs addresses this challenge for application developers and schools.
+Most education software developers learn early on that class roster is one of the key pieces of information they need to run their application, and it's typically locked away inside a school Student Information System (SIS). Any time teachers bring a new application into their classroom, they spend time manually importing roster data into the app. Many ISVs address this by connecting with a SIS to import roster data. With hundreds of Student Information Systems with proprietary formats, this can become a challenge. [Microsoft School Data Sync](https://sds.microsoft.com/) combined with roster APIs addresses this challenge for application developers and schools.
 
-Here are examples of a few scenarios enabled by rostering APIs :
+The following are some of the scenarios that the roster APIs enable:
 
 - [Get all classes in a school](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/educationschool_list_classes)
 - [Get all users in a class](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/educationclass_list_members)
 - [Get all the classes I teach](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/educationuser_list_classes)
 
 
-##  Enable your teachers to create assignments at the click of a buttion using Assignments APIs (preview)
-Microsoft Teams in Office 365 service is a digital hub that brings conversations, content, and apps together in one place for classrooms. Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview) for application developers including creating Tabs, Connectors, Bots and APIs in Microsoft Graph to work with assignments and submissions. 
+### Enable your teachers to create assignments at the click of a buttion using assignments APIs (preview)
+Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, Bots, and APIs in Microsoft Graph to work with assignments and submissions. 
 
-![Teams Assignments](images/AssignmentsInTeams.PNG)
+![Microsoft Teams assignments](images/AssignmentsInTeams.PNG)
 
 With assigment APIs your app can interact with the assignment service outside of Teams. Teams will handle distribution, due dates and grading while your system can provide a rich learning experience to students.
 Here are examples of a few scenarios enabled by assignments API:
