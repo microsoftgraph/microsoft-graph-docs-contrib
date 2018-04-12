@@ -35,7 +35,7 @@ This method supports the following [OData query parameters](../../../concepts/qu
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`
+- `$top` will return the aggregated top results from each security API provider.  
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
