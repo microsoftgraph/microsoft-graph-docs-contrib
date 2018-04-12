@@ -38,7 +38,7 @@ The following table shows the context required for common tasks:
 GET /subscriptions
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method does not support the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
@@ -63,7 +63,6 @@ GET https://graph.microsoft.com/beta/subscriptions
 ##### Response
 Here's an an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.
 
-When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](../../../concepts/paging). 
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -92,6 +91,7 @@ Content-length: 586
 }
 ```
 
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -101,3 +101,4 @@ Content-length: 586
   "section": "documentation",
   "tocPath": ""
 }-->
+When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](../../../concepts/paging.md). 
