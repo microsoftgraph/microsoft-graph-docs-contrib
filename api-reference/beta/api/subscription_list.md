@@ -10,9 +10,9 @@ This API supports the following permission scopes; to learn more, including how 
 
 | Permission type  | Permissions (from least to most privileged)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegated](concepts/auth_v2_user) (work or school account) | Role required to [create subscription](subscription_get.md) or Subscriptions.Read.All (see below). |
-| [Delegated](concepts/auth_v2_user) (personal Microsoft account) | Role required to [create subscription](subscription_get.md) or Subscriptions.Read.All (see below). |
-| [Application](concepts/auth_v2_service) | Role required to [create subscription](subscription_get.md). |
+| [Delegated](../../../concepts/auth_v2_user.md) (work or school account) | Role required to [create subscription](subscription_get.md) or Subscriptions.Read.All (see below). |
+| [Delegated](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Role required to [create subscription](./subscription_get.md) or Subscriptions.Read.All (see below). |
+| [Application](../../../concepts/auth_v2_service.md) | Role required to [create subscription](./subscription_get.md). |
 
 Response results are based on the context of the calling app, which includes:
 
