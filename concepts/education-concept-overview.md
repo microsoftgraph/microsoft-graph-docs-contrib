@@ -10,7 +10,7 @@ Here is an overview of EDU Endpoints in Microsoft Graph
 
 ## Build applications that are aware of class Roster
 
-Most education software developers learn early on that class Roster is one of the key pieces of information that they need to run their application and its typically locked away inside a school Student Information System (SIS).  Anytime teachers bring a new application into their classroom they spend time manually importing Roster data into the app. Many ISVs address this by connecting with various SIS to import Roster data but with hundreds of Student Information Systems with proprietary formats this can easily become challenging. [Microsoft School Data Sync](https://sds.microsoft.com/) combined with Roster APIs addresses this challenge for application developers and schools.
+Most education software developers learn early on that class roster is one of the key pieces of information that they need to run their application and its typically locked away inside a school Student Information System (SIS).  Anytime teachers bring a new application into their classroom they spend time manually importing roster data into the app. Many ISVs address this by connecting with various SIS to import roster data but with hundreds of Student Information Systems with proprietary formats this can easily become challenging. [Microsoft School Data Sync](https://sds.microsoft.com/) combined with roster APIs addresses this challenge for application developers and schools.
 
 Here are examples of a few scenarios enabled by rostering APIs :
 
@@ -20,12 +20,12 @@ Here are examples of a few scenarios enabled by rostering APIs :
 
 
 ##  Enable your teachers to create assignments at the click of a buttion using Assignments APIs (preview)
-Microsoft Teams in Office 365 service is a digital hub that brings conversations, content, and apps together in one place for classrooms. Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview) for application developers including creating Tabs, Connectors, Bots and APIs in Microsoft Graph to work with assignments and submissions within Teams. 
+Microsoft Teams in Office 365 service is a digital hub that brings conversations, content, and apps together in one place for classrooms. Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview) for application developers including creating Tabs, Connectors, Bots and APIs in Microsoft Graph to work with assignments and submissions. 
 
 ![Teams Assignments](images/AssignmentsInTeams.PNG)
 
-With Assigment APIs your app can interact with the assignment service outside of Teams. Teams will handle distribution, due dates and grading while your system can provide a rich learning experience to students.
-Here are examples of a few scenarios enabled by Assignments API:
+With assigment APIs your app can interact with the assignment service outside of Teams. Teams will handle distribution, due dates and grading while your system can provide a rich learning experience to students.
+Here are examples of a few scenarios enabled by assignments API:
 
 - [Add an Assignment that links to your application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationclass_post_assignments) . 
 - [Assign grades to individual students for assignments linked to your application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsubmission_update).
@@ -34,9 +34,9 @@ Here are examples of a few scenarios enabled by Assignments API:
 
 ## Enable school ITs to manage Identity and Roster sync using School Data Sync Management (preview)
 
-[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing student identity and roster data from student information systems with Azure Active Directory (Azure AD) and Office 365. Once the information is synchronized, app developers can use the Roster APIs to read the Roster information into the applications . If you are an system integrator setting up integration of a school's Student Information System with School Data Sync, you can use the [SDS management APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsynchronizationprofile) in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
+[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing student identity and roster data from student information systems with Azure Active Directory (Azure AD) and Office 365. Once the information is synchronized, app developers can use the Roster APIs to read the roster information into the applications . If you are an system integrator setting up integration of a school's Student Information System with School Data Sync, you can use the [SDS management APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/educationsynchronizationprofile) in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
 
-School Data Sync Management APIs support end to end scenarios for managing sync. Here are a few examples:
+School Data Sync management APIs support end to end scenarios for managing sync. Here are a few examples:
 
 - [Create a synchronization profile that automatically starts a sync](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_post)
 - Manage sync lifecycle with [Pause](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_pause), [Resume](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_resume) and [Reset](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsynchronizationprofile_reset) operations.
