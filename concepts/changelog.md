@@ -89,6 +89,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change | Beta | Added **activity** navigation property to [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) |
 | Change | Beta | Added new APIs to [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/project_rome_overview) |
 
+### Azure AD APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Change|beta|Added the **applicationID** and **creatorUserID** properties to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/subscription) resource. |
+|Change|beta|Added the [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/subscription_list) operation to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/subscription) entity. |
+
+
 ### Directory APIs
 
 | **Change type** | **Version** | **Description**                          |
