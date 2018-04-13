@@ -6,7 +6,8 @@ Today's security breaches often times start with attackers gaining access to a u
 
 However, the sophistication of security threats has generally continued to escalate, affecting the global economy. Damage is often done long before organizations even discover it. Microsoft Intelligent Security Graph brings together security intelligence from within Microsoft, security centers, and partners around the world to form an ecosystem of integrated security solutions. Using machine learning, bahavioral monitoring, and the scale of the cloud, the Intelligent Security Graph can better protect, detect, and respond to threats quickly and comprehensively. The [security API](security-api-overview.md) connects you to the Intelligent Security Graph, empowering you with solutions that are actionable and holistic.
 
-{Edward - please add a similar high-level background intro for the security API. One para is fine, no need to link to individual APIs as security-api-overview.md should be doing that. Avoid repeating what is in security-api-overview.md at length.}
+<!-- Edward - please add a similar high-level background intro for the security API. One para is fine, no need to link to individual APIs as security-api-overview.md should be doing that. Avoid repeating what is in security-api-overview.md at length.
+-->
 
 ## Next steps
 
