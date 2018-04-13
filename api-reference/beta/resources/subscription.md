@@ -4,9 +4,10 @@
 
 A subscription allows a client app to receive notifications about changes to data on the Microsoft Graph. Currently, subscriptions are enabled for the following datasets:
 
-1. Mail, events, and contacts from Outlook
+1. Mail, events, and contacts from Outlook.
 1. Conversations from Office Groups.
-1. Drive root items from OneDrive 
+1. Drive root items from OneDrive.
+1. Users and Groups from Azure Active Directory.
 
 
 ## JSON representation
