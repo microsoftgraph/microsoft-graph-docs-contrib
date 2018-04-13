@@ -1,4 +1,4 @@
-# Azure AD identity and access management API
+# Azure AD identity and access management API overview
 
 Microsoft Graph API for Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure.  Azure AD can manage identities and control access on-premises, in hybrid environments, and in the cloud.  
 
@@ -10,7 +10,7 @@ By using Microsoft Graph to integrate with Azure AD, you can seamlessly access a
 
 Graph APIs are RESTFul APIs, which means you can easily integrate Azure AD into a variety of tools and development environments, including Angular, ASP.NET, JavaScript, PHP, Python, Ruby, UWP, Xamarin, and even command-line utilities.
 
-Because Microsoft Graph integrates with other Azure services, you can multiple services into a unique solution designed for your specific needs and requirements.
+Because Microsoft Graph integrates with other Azure services, you can combine multiple services into unique solutions tailored to your needs and requirements.
 
 ### Access user profiles
 
@@ -48,4 +48,3 @@ Secure access to resources by activating administrative privileges on-demand. Pr
 - Learn how to use [Azure AD to authenticate](auth_overview.md) to Microsoft Graph APIs. 
 - Learn how to integrate [Azure AD sign-on](https://azure.microsoft.com/en-us/develop/identity/signin/) into your app or website in five minutes.
 - Learn what's new with [Microsoft Graph API](changelog.md).
-- Learn more [featured scenarios](featured_scenarios.md) supported by Microsoft Graph API. 
