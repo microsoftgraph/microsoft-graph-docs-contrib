@@ -3,13 +3,7 @@
 
 
 
-## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get bookingNamedEntity](../api/bookingnamedentity_get.md) | [bookingNamedEntity](bookingnamedentity.md) |Read properties and relationships of bookingNamedEntity object.|
-|[Update](../api/bookingnamedentity_update.md) | [bookingNamedEntity](bookingnamedentity.md)	|Update bookingNamedEntity object. |
-|[Delete](../api/bookingnamedentity_delete.md) | None |Delete bookingNamedEntity object. |
 
 ## Properties
 | Property	   | Type	|Description|

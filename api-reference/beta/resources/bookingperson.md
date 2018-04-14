@@ -3,13 +3,6 @@
 
 
 
-## Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get bookingPerson](../api/bookingperson_get.md) | [bookingPerson](bookingperson.md) |Read properties and relationships of bookingPerson object.|
-|[Update](../api/bookingperson_update.md) | [bookingPerson](bookingperson.md)	|Update bookingPerson object. |
-|[Delete](../api/bookingperson_delete.md) | None |Delete bookingPerson object. |
 
 ## Properties
 | Property	   | Type	|Description|
