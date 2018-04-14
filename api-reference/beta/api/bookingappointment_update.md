@@ -85,11 +85,11 @@ Content-length: 947
       "postalCode": "postalCode-value"
     },
     "coordinates": {
-      "altitude": 99,
-      "latitude": 99,
-      "longitude": 99,
-      "accuracy": 99,
-      "altitudeAccuracy": 99
+      "altitude": 99.0,
+      "latitude": 99.0,
+      "longitude": 99.0,
+      "accuracy": 99.0,
+      "altitudeAccuracy": 99.0
     },
     "locationUri": "locationUri-value",
     "locationType": "locationType-value",
