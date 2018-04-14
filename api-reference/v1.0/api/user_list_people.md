@@ -27,7 +27,7 @@ This method supports the [OData query parameters](../../../concepts/query_parame
 |:---------------|:--------|:-------| 
 |$filter|string|Limits the response to only those people whose record contains the specified criteria.| 
 |$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.| 
-|$search|string|Search for people by name or alias. Supports Fuzzy matching.| 
+|$search|string|Search for people by name or alias. Supports Fuzzy matching. Parameter only works for current user on the /me endpoint, not for other users. Also support the `topic` keyword to find people based on topics extracted from e-mail conversations with that person. See the *Perform a fuzzy search* section at [Get relevant information about people](../../../concepts/people_example.md#perform-a-fuzzy-search) for information and examples. | 
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.| 
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.| 
 |$top|int|Number of results to be returned.| 
