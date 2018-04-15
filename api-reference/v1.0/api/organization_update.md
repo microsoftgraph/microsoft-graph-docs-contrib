@@ -6,7 +6,7 @@ Update the properties of the currently authenticated organization.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
+|Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
@@ -33,6 +33,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
+|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |technicalNotificationMails|String collection|                                        **Notes**: not nullable.            |
@@ -56,9 +57,15 @@ Content-type: application/json
 Content-length: 411
 
 {
-  "technicalNotificationMails": [
-    "admin@contoso.com"
-  ]
+  "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "privacyProfile" :
+    {
+      "contactEmail":"alice@contoso.com",
+      "statementUrl":"https://contoso.com/privacyStatement"
+    },
+  "securityComplianceNotificationMails" : ["security@contoso.com"],
+  "securityComplianceNotificationPhones" : ["(123) 456-7890"],
+  "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
 
