@@ -1,15 +1,15 @@
 # user: exportPersonalData
 
-Submits a data policy operation request, made by a Company Administrator to export an organizational user's personal data.
+Submits a data policy operation request, made by a Company Administrator to export an organizational user's data.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  User.Export  |
+|Delegated (work or school account) |  User.Export.All  |
 |Delegated (personal Microsoft account) |  Not applicable  |
-|Application | User.Export |
+|Application | User.Export.All |
 
 >Note: Export can only be performed by a Company Administrator when using the delegated permission.
 
@@ -22,7 +22,7 @@ POST /users/<id>/exportPersonalData
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {accesstoken}|
+| Authorization  | Bearer {token}|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -41,7 +41,7 @@ If successful, this method returns `200, OK` response code. It does not return a
   "name": "user_exportpersonaldata"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/exportPersonalData
+POST https://graph.microsoft.com/beta/users/{id}/exportPersonalData
 Content-type: application/json
 Content-length: 48
 
@@ -54,7 +54,7 @@ Content-length: 48
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
