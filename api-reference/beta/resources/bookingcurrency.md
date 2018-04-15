@@ -1,21 +1,20 @@
 # bookingCurrency resource type
 
-
+Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.md).
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get bookingCurrency](../api/bookingcurrency_get.md) | [bookingCurrency](bookingcurrency.md) |Read properties and relationships of bookingCurrency object.|
-|[Update](../api/bookingcurrency_update.md) | [bookingCurrency](bookingcurrency.md)	|Update bookingCurrency object. |
-|[Delete](../api/bookingcurrency_delete.md) | None |Delete bookingCurrency object. |
+|[Get bookingCurrency](../api/bookingcurrency_get.md) | [bookingCurrency](bookingcurrency.md) |Get the properties of a **bookingCurrency** object.|
+
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
-|symbol|String||
+|id|String| A 3-character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD. Read-only.|
+|symbol|String| The currency symbol. For example, the currency symbol for the US dollar and for the Australian dollar is $.  |
 
 ## Relationships
 None

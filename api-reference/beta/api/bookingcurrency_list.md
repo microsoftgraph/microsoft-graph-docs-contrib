@@ -1,6 +1,6 @@
 # List bookingCurrencies
 
-Retrieve a list of bookingcurrency objects.
+Get a list of [bookingCurrency](../resources/bookingcurrency.md) objects available to a Microsoft Bookings business.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingCurrencies
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response, including $count, $filter, $select, $skip, and $top.
 
 ## Request headers
 | Name      |Description|
@@ -38,7 +38,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/bookingCurrencies
 ```
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here is truncated for brevity. All of the supported currencies and properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -48,15 +48,43 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 87
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "symbol": "symbol-value"
-    }
-  ]
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingCurrencies",
+    "value":[
+        {
+            "id":"AED",
+            "symbol":"د.إ.‏"
+        },
+        {
+            "id":"AFN",
+            "symbol":"؋"
+        },
+        {
+            "id":"ALL",
+            "symbol":"Lekë"
+        },
+        {
+            "id":"AMD",
+            "symbol":"֏"
+        },
+        {
+            "id":"USD",
+            "symbol":"$"
+        },
+        {
+            "id":"YER",
+            "symbol":"ر.ي.‏"
+        },
+        {
+            "id":"ZAR",
+            "symbol":"R"
+        },
+        {
+            "id":"ZMW",
+            "symbol":"K"
+        }
+    ]
 }
 ```
 

@@ -1,6 +1,7 @@
 # Get bookingCurrency
 
-Retrieve the properties and relationships of bookingcurrency object.
+Get the properties of a [bookingCurrency](../resources/bookingcurrency.md) object that is available to a Microsoft Bookings business. Use the **id** property, which is the currency code, to specify the currency.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -35,7 +36,7 @@ The following is an example of the request.
   "name": "get_bookingcurrency"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/bookingCurrencies/<id>
+GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -50,8 +51,9 @@ Content-type: application/json
 Content-length: 50
 
 {
-  "id": "id-value",
-  "symbol": "symbol-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingCurrencies/$entity",
+    "id": "USD",
+    "symbol": "$"
 }
 ```
 
