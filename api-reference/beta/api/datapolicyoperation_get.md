@@ -1,4 +1,4 @@
-# Get DataPolicyOperation
+# Get dataPolicyOperation
 
 Retrieve the properties of the dataPolicyOperation object.
 
@@ -40,7 +40,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.DataPolicyOperation"
+  "@odata.type": "microsoft.graph.dataPolicyOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -61,7 +61,7 @@ Content-length: 212
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get DataPolicyOperation",
+  "description": "Get dataPolicyOperation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
