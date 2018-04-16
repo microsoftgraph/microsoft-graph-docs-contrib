@@ -1,6 +1,6 @@
 # Get bookingBusiness
 
-Retrieve the properties and relationships of bookingbusiness object.
+Get the properties and relationships of a [bookingBusiness](../resources/bookingbusiness.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -35,7 +35,7 @@ The following is an example of the request.
   "name": "get_bookingbusiness"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/bookingBusinesses/<id>
+GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmicrosoft.com
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -47,23 +47,93 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 441
 
 {
-  "businessType": "businessType-value",
-  "address": {
-    "type": "type-value",
-    "postOfficeBox": "postOfficeBox-value",
-    "street": "street-value",
-    "city": "city-value",
-    "state": "state-value",
-    "countryOrRegion": "countryOrRegion-value",
-    "postalCode": "postalCode-value"
-  },
-  "phone": "phone-value",
-  "email": "email-value",
-  "webSiteUrl": "webSiteUrl-value",
-  "defaultCurrencyIso": "defaultCurrencyIso-value"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
+    "id":"Fabrikam@M365B489948.onmicrosoft.com",
+    "displayName":"Fabrikam",
+    "businessType":"",
+    "phone":"206-555-0100",
+    "email":"manager@fabrikam.com",
+    "webSiteUrl":"http://www.fabrikam.com/",
+    "defaultCurrencyIso":"USD",
+    "isPublished":false,
+    "publicUrl":null,
+    "address":{
+        "type":"home",
+        "postOfficeBox":"",
+        "street":"4567 Main Street",
+        "city":"Buffalo",
+        "state":"NY",
+        "countryOrRegion":"USA",
+        "postalCode":"98052"
+    },
+    "businessHours":[
+        {
+            "day":"monday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"tuesday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"wednesday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"thursday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"friday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"saturday",
+            "timeSlots":[
+
+            ]
+        },
+        {
+            "day":"sunday",
+            "timeSlots":[
+
+            ]
+        }
+    ],
+    "schedulingPolicy":{
+        "timeSlotInterval":"PT30M",
+        "minimumLeadTime":"P1D",
+        "maximumAdvance":"P365D",
+        "sendConfirmationsToOwner":true,
+        "allowStaffSelection":true
+    }
 }
 ```
 

@@ -1,6 +1,6 @@
 # Update bookingbusiness
 
-Update the properties of bookingbusiness object.
+Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -25,20 +25,20 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|physicalAddress||
-|businessHours|bookingWorkHours||
-|businessType|String||
-|defaultCurrencyIso|String||
-|displayName|String||
-|email|String||
-|isPublished|Boolean||
-|phone|String||
+|address|[physicalAddress](physicaladdress.md)|The street address of the business.|
+|businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
+|businessType|String|The type of business.|
+|defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
+|displayName|String|A name for the business that interfaces with customers.|
+|email|String|The email address for the business.|
+|isPublished|Boolean|The scheduling page has been made available to external customers. You can also use the **publish** and **unpublish** actions to set this property.|
+|phone|String|The telephone number for the business.|
 |publicUrl|String||
-|schedulingPolicy|bookingSchedulingPolicy||
-|webSiteUrl|String||
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
+|webSiteUrl|String|The URL of the business web site.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
+If successful, this method returns a `204, No Content` response code and updated [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -47,55 +47,21 @@ The following is an example of the request.
   "name": "update_bookingbusiness"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/<id>
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
 Content-type: application/json
-Content-length: 441
 
 {
-  "businessType": "businessType-value",
-  "address": {
-    "type": "type-value",
-    "postOfficeBox": "postOfficeBox-value",
-    "street": "street-value",
-    "city": "city-value",
-    "state": "state-value",
-    "countryOrRegion": "countryOrRegion-value",
-    "postalCode": "postalCode-value"
-  },
-  "phone": "phone-value",
-  "email": "email-value",
-  "webSiteUrl": "webSiteUrl-value",
-  "defaultCurrencyIso": "defaultCurrencyIso-value"
+  "email": "admin@fabrikam.com"
 }
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bookingBusiness"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 441
-
-{
-  "businessType": "businessType-value",
-  "address": {
-    "type": "type-value",
-    "postOfficeBox": "postOfficeBox-value",
-    "street": "street-value",
-    "city": "city-value",
-    "state": "state-value",
-    "countryOrRegion": "countryOrRegion-value",
-    "postalCode": "postalCode-value"
-  },
-  "phone": "phone-value",
-  "email": "email-value",
-  "webSiteUrl": "webSiteUrl-value",
-  "defaultCurrencyIso": "defaultCurrencyIso-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

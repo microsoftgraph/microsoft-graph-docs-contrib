@@ -1,5 +1,6 @@
 # bookingAppointment: cancel
 
+Cancel the specified [bookingAppointment](../resources/bookingappointment.md) and send a message to the involved customer and staff members.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -29,7 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 |cancellationMessage|String||
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `204 No content` response code. It does not return anything in the response body.
 
 ## Example
 The following is an example of how to call this API.

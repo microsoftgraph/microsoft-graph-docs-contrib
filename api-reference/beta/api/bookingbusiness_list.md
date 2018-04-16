@@ -1,6 +1,10 @@
 # List bookingBusinesses
 
-Retrieve a list of bookingbusiness objects.
+Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant. 
+
+This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, other properties are _returned_ as null even if they have been set. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness_get.md) operation.
+
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -51,24 +55,41 @@ Content-type: application/json
 Content-length: 526
 
 {
-  "value": [
-    {
-      "businessType": "businessType-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "phone": "phone-value",
-      "email": "email-value",
-      "webSiteUrl": "webSiteUrl-value",
-      "defaultCurrencyIso": "defaultCurrencyIso-value"
-    }
-  ]
+    "@odata.context":"https://graph.microsoft.com/testbookings/$metadata#bookingBusinesses",
+    "value":[
+        {
+            "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
+            "displayName":"Contoso lunch delivery",
+            "businessType":null,
+            "phone":null,
+            "email":null,
+            "webSiteUrl":null,
+            "defaultCurrencyIso":null,
+            "isPublished":null,
+            "publicUrl":null,
+            "address":null,
+            "schedulingPolicy":null,
+            "businessHours":[
+
+            ]
+        },
+        {
+            "id":"Fabrikam@M365B489948.onmicrosoft.com",
+            "displayName":"Fabrikam",
+            "businessType":null,
+            "phone":null,
+            "email":null,
+            "webSiteUrl":null,
+            "defaultCurrencyIso":null,
+            "isPublished":null,
+            "publicUrl":null,
+            "address":null,
+            "schedulingPolicy":null,
+            "businessHours":[
+
+            ]
+        }
+    ]
 }
 ```
 

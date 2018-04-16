@@ -1,6 +1,6 @@
 # Delete bookingBusiness
 
-Delete bookingBusiness.
+Delete a [bookingBusiness](../resources/bookingbusiness.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -36,7 +36,7 @@ The following is an example of the request.
   "name": "delete_bookingbusiness"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/<id>
+DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
