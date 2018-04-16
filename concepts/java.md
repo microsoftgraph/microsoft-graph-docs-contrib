@@ -26,7 +26,7 @@ After you register the application and [configure the sample](https://github.com
 
 ## Console-Java-Connect code 
 
-Before we look at the sample logic flow, you should take a few minutes to learn about the [sample project's structure](#sample-project-structure). When you're ready, lets step through the logic in the sample:
+Before we look at the sample logic flow, take a few minutes to learn about the [sample project's structure](#sample-project-structure). When you're ready, lets step through the logic in the sample:
 
 
    
@@ -34,6 +34,8 @@ Before we look at the sample logic flow, you should take a few minutes to learn 
 We'll look at the sample code at a high level and then dive into the details of creating an email message and sending it.
 
 #### The user experience
+
+This section takes a look at the logic that starts up the application and then shows you the sample output that the user sees when they run the sample.
 
 The [PublicClient](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/PublicClient.java) **main(String args[])** static method creates an instance of **PublicClient** and then kicks off the sign in and authentication process.  
 
@@ -104,7 +106,7 @@ The mail sending logic takes the following steps:
                     .post();
 
 ```
-4. **Replaces the contents of the HTML template anchor tag** with the **webUrl** for the sharing link in the previous step. 
+4. **Replace the contents of the HTML template anchor tag** with the **webUrl** for the sharing link in the previous step. 
 > **Note:** The body of the message sent by the application originates as an HTML template stored in [Constants.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/Constants.java) as a static string. When sent, the body of the message contains a public sharing hyperlink to a picture that the sample uploads to the user's OneDrive root folder. 
 5. **Create a draft message**: <br/>Calls **GraphServiceController.createDraftMail**, passing the recipient email address, subject text, and the updated HTML template. A draft message is created and POSTed to the user's draft message folder.
 
@@ -185,7 +187,7 @@ This package contains all of the logic that makes calls on Microsoft Graph.
    - **uploadPictureToOneDrive**: Uploads a picture as byte array to the user's OneDrive root folder.
    - **getPermissionSharingLink**: Requests OneDrive to create a public sharing link to a picture stored in OneDrive.
 
-   ## Other Microsoft Graph samples
+## Other Microsoft Graph samples
 
 If there's a particular sample you'd like to see, please let us know by [submitting an issue](https://github.com/microsoftgraph/console-java-connect-sample/issues). We're very interested in your feedback on any Microsoft Graph scenario you'd like to build in Java!
 
