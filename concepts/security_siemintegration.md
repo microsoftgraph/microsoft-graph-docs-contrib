@@ -48,7 +48,8 @@ Security alerts are highly privileged data typically viewable only by security r
 
 > **Note:** At this time, the Azure Monitor Diagnostic settings blade does not allow configuration of tenant-level resources. Because  security API alerts is a tenant-level resource, you have to use the Azure Resource Manager API to configure Azure Monitor for your organization’s security alerts.
 
-1. To configure Azure Monitor using the Azure Resource Manager API, obtain the ARMClient tool. This tool will be used to send REST API calls to the Azure portal from a command line.
+
+1. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
 
 2. Prepare a diagnostic setting request JSON file like the following:
 
@@ -74,10 +75,13 @@ Security alerts are highly privileged data typically viewable only by security r
 
     Replace the values in the JSON file as follows:
 
-    - **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
-    - **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
-    - **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
-    - **“days”:** 7 is the number of days you want to retain messages in your event hub.
+     **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
+     
+     **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
+     
+     **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
+     
+     **“days”:** 7 is the number of days you want to retain messages in your event hub.
 
 3. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
 
