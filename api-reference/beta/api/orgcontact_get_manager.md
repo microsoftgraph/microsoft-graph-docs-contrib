@@ -1,24 +1,26 @@
-# Get extension
+# orgContact: Get manager
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of extension object.
+Get the contact's manager
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /users/{id | userPrincipalName}/events/{id}/extensions/{id}
-GET /groups/{id}/events/{id}/extensions/{id}
-GET /users/{id | userPrincipalName}/contacts/{id}/extensions/{id}
+GET /contacts/{id}/manager
 ```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
@@ -32,31 +34,50 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [extension](../resources/extension.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
-##### Request
-Here is an example of the request.
+
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "get_extension"
+  "name": "get_manager"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/me/events/{id}/extensions/{id}
+GET https://graph.microsoft.com/beta/contacts/{id}/manager
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+#### Response
+
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.extension"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 22
+Content-length: 455
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
+    "@odata.type": "#microsoft.graph.user",
+    "id": "24fcbca3-c3e2-48bf-9ffc-c7f81b81483d",
+    "businessPhones": [
+        "+1 205 555 0108"
+    ],
+    "displayName": "Diego Siciliani",
+    "givenName": "Diego",
+    "jobTitle": "CVP Finance",
+    "mail": "DiegoS@contoso.com",
+    "mobilePhone": null,
+    "officeLocation": "14/1108",
+    "preferredLanguage": "en-US",
+    "surname": "Siciliani",
+    "userPrincipalName": "DiegoS@contoso.com"
 }
 ```
 
@@ -64,7 +85,7 @@ Content-length: 22
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get extension",
+  "description": "Get manager",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
