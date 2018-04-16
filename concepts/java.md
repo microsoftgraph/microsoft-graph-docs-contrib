@@ -22,7 +22,7 @@ When you register the application as covered in **Step 4** of the [README](https
 
 ![Java connect console sample permissions](../concepts/images/console-java-connnect-sample-permissions.JPG)
 
-After you complete the application registration and [configuring the sample](https://raw.githubusercontent.com/microsoftgraph/console-java-connect-sample/master/README.md#step-5:-configure-your-app-using-constants.java) for the **Application Id** you get from the application registration, you can build and run the sample.
+After you complete the application registration and [configuring the sample](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/README.md#step-5:-configure-your-app-using-constants.java) for the **Application Id** you get from the application registration, you can build and run the sample.
 
 ## Code walkthrough
 
