@@ -4,7 +4,7 @@ This article uses the [console-java-connect-sample](https://github.com/microsoft
 
 ## Choose an authentication library
 
-Microsoft Graph adopted the OAuth 2.0 and Open ID Connect standards, which lets you choose from many open source OAuth 2 Java libraries that are available. The Azure AD team recommends using [ScribeJava])(https://github.com/scribejava/scribejava), a simple OAuth2 library for Java.
+Microsoft Graph adopted the OAuth 2.0 and Open ID Connect standards, which lets you choose from many open source OAuth 2 Java libraries that are available. The Azure AD team recommends using [ScribeJava](https://github.com/scribejava/scribejava), a simple OAuth2 library for Java.
 
 The sample implements the Authorization Code Grant flow which is appropriate for an authorization scenario involving a client application, a user, and an OAuth 2 enabled endpoint. In production server-to-server Java applications, you would use the Client Credentials authorization flow. **ScribeJava** handles both of these authorization flows. To make this sample simple to configure as a Quick Start sample, we chose to demonstrate the most simple flow.
 
@@ -35,9 +35,9 @@ We'll look at the sample code at a high level and then dive into the details of 
 
 #### The user experience
 
-The [PublicClient.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/PublicClient.java) **main(String args[])** static method creates an instance of **PublicClient** and then kicks off the sign in and authentication process.  
+The [PublicClient](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/PublicClient.java) **main(String args[])** static method creates an instance of **PublicClient** and then kicks off the sign in and authentication process.  
 
-[AuthenticationManager.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/AuthenticationManager) provides a singleton instance which is used to connect the user to Microsoft Graph. **AuthenticationManager** exposes an **** access token as a string property. The access token is returned by **Azure AD** when the user is authenticated and gives the sample permission to access requested Microsoft Graph resources. 
+[AuthenticationManager](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/AuthenticationManager) provides a singleton instance which is used to connect the user to Microsoft Graph. **AuthenticationManager** exposes an **access token** as a string property. The access token is returned by **Azure AD** when the user is authenticated and gives the sample permission to access requested Microsoft Graph resources. 
 
 The **PublicClient.startSendMail** method performs the following steps:
 
@@ -65,6 +65,8 @@ The mail sending logic takes the following steps:
 
 1. **Get profile picture**:<br/> Calls **GraphServiceController.getUserProfilePicture()** to get an array of bytes representing the profile picture of the **Azure AD** user who signed into the sample.
 
+   **The API call**
+
 ```java
             photoStream = mGraphServiceClient
                     .me()
@@ -76,6 +78,8 @@ The mail sending logic takes the following steps:
 ```
 2. **Upload picture to OneDrive**:
 <br/>Calls **GraphServiceController.uploadPictureToOneDrive(byte[] bytes)** to POST the profile picture in the user's OneDrive root folder. A Microsoft Graph SDK **DriveItem** object is returned. 
+
+   **The API call**
 ```java
             driveItem = mGraphServiceClient
                     .me()
@@ -88,6 +92,8 @@ The mail sending logic takes the following steps:
 
 ```
 3. **Get the OneDrive sharing link for the picture**:<br/>Calls **GraphServiceController.getPermissionSharingLink** to create a new sharing link. A Microsoft Graph SDK **Permission** object is returned.
+
+   **The API call**
 ```java
             permission = mGraphServiceClient
                     .me()
@@ -101,6 +107,8 @@ The mail sending logic takes the following steps:
 4. **Replaces the contents of the HTML template anchor tag** with the **webUrl** for the sharing link in the previous step. 
 > **Note:** The body of the message sent by the application originates as an HTML template stored in [Constants.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/Constants.java) as a static string. When sent, the body of the message contains a public sharing hyperlink to a picture that the sample uploads to the user's OneDrive root folder. 
 5. **Create a draft message**: <br/>Calls **GraphServiceController.createDraftMail**, passing the recipient email address, subject text, and the updated HTML template. A draft message is created and POSTed to the user's draft message folder.
+
+   **The API call**
 ```java
             message = mGraphServiceClient
                     .me()
@@ -110,6 +118,8 @@ The mail sending logic takes the following steps:
 
 ```
 6. **Attach picture to draft message**: <br/>Calls **GraphServiceController.addPictureToDraftMessage** to get the draft message and add the picture to the message as an object attachment.
+
+   **The API call**
 ```java
             FileAttachment fileAttachment = new FileAttachment();
             fileAttachment.oDataType = "#microsoft.graph.fileAttachment";
@@ -128,6 +138,8 @@ The mail sending logic takes the following steps:
 
 ```
 7. **Send the draft message**:<br/>Calls **GraphServiceController.sendDraftMessage** to send the updated draft message to the intended user.
+
+   **The API call**
 ```java
             mGraphServiceClient
                     .me()
@@ -175,6 +187,6 @@ This package contains all of the logic that makes calls on Microsoft Graph.
 
    ## Other Microsoft Graph samples
 
-   If there's a particular sample you'd like to see, please let us know by [submitting an issue](https://github.com/microsoftgraph/console-java-connect-sample/issues). We're very interested in your feedback on any Microsoft Graph scenario you'd like to build in Java!
+If there's a particular sample you'd like to see, please let us know by [submitting an issue](https://github.com/microsoftgraph/console-java-connect-sample/issues). We're very interested in your feedback on any Microsoft Graph scenario you'd like to build in Java!
 
 The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [developer documentation](https://developer.microsoft.com/en-us/graph/docs/concepts/overview) or the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to explore what else you can accomplish with Microsoft Graph.
