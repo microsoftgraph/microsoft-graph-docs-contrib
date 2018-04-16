@@ -10,13 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added [Security API](../api-reference/beta/resources/security-api-overview.md)
-| Addition        | Beta       | Added [alert](../api-reference/beta/resources/alert.md) and its related entities
-| Addition        | Beta       | Added [get alert](../api-reference/beta/api/alert_get.md)
-| Addition        | Beta       | Added [list alerts](../api-reference/beta/api/alert_list.md)
-| Addition        | Beta       | Added [update alert](../api-reference/beta/api/alert_update.md)
-| Addition        | Beta       | Added [errors](../api-reference/beta/resources/security-error-codes.md)
-| Addition        | Beta       | Added [SIEM integration instructions](../concepts/security_siemintegration.md)
+| Addition        | Beta       | Added the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[alert](../api-reference/beta/resources/alert.md) (and related entities)<br/>[Get alert](../api-reference/beta/api/alert_get.md)<br/>[List alerts](../api-reference/beta/api/alert_list.md)<br/>[Update alert](../api-reference/beta/api/alert_update.md)<br/><br/>Added the following supporting documentation:<br/>[Errors](../api-reference/beta/resources/security-error-codes.md)<br/>[Integrate with a SIEM](../concepts/security_siemintegration.md)
 
 ### Reports APIs
 |Change type|Version|Description|
