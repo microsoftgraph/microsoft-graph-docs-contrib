@@ -62,14 +62,80 @@ The mail sending logic takes the following steps:
 
 
 1. **Get profile picture**:<br/> Calls **GraphServiceController.getUserProfilePicture()** to get an array of bytes representing the profile picture of the **AAD** user who signed into the sample.
+
+```java
+            photoStream = mGraphServiceClient
+                    .me()
+                    .photo()
+                    .content()
+                    .buildRequest()
+                    .get();
+
+```
 2. **Upload picture to OneDrive**:
 <br/>Calls **GraphServiceController.uploadPictureToOneDrive(byte[] bytes)** to POST the profile picture in the user's OneDrive root folder. A Microsoft Graph SDK **DriveItem** object is returned. 
+```java
+            driveItem = mGraphServiceClient
+                    .me()
+                    .drive()
+                    .root()
+                    .itemWithPath("me2.png")
+                    .content()
+                    .buildRequest()
+                    .put(picture);
+
+```
 3. **Get the OneDrive sharing link for the picture**:<br/>Calls **GraphServiceController.getPermissionSharingLink** to create a new sharing link. A Microsoft Graph SDK **Permission** object is returned.
+```java
+            permission = mGraphServiceClient
+                    .me()
+                    .drive()
+                    .items(id)
+                    .createLink("view", "organization")
+                    .buildRequest()
+                    .post();
+
+```
 4. **Replaces the contents of the HTML template anchor tag** with the **webUrl** for the sharing link in the previous step.
 5. **Create a draft message**: <br/>Calls **GraphServiceController.createDraftMail**, passing the recipient email address, subject text, and the updated HTML template. A draft message is created and POSTed to the user's draft message folder.
-6. **Attach picture to draft message**: <br/>Calls **GraphServiceController.addPictureToDraftMessage** to get the draft message and add the picture to the message as an object attachment.
-7. **Send the draft message**:<br/>Calls **GraphServiceController.sendDraftMessage** to send the updated draft message to the intended user.
+```java
+            message = mGraphServiceClient
+                    .me()
+                    .messages()
+                    .buildRequest()
+                    .post(message);
 
+```
+6. **Attach picture to draft message**: <br/>Calls **GraphServiceController.addPictureToDraftMessage** to get the draft message and add the picture to the message as an object attachment.
+```java
+            FileAttachment fileAttachment = new FileAttachment();
+            fileAttachment.oDataType = "#microsoft.graph.fileAttachment";
+            fileAttachment.contentBytes = attachementBytes;
+            fileAttachment.name = "me.png";
+            fileAttachment.size = attachementBytes.length;
+            fileAttachment.isInline = false;
+            fileAttachment.id = "my profile picture";
+
+            DebugLogger.getInstance().writeLog(Level.INFO, "attachement id " + fileAttachment.id);
+            attachment = mGraphServiceClient
+                    .me()
+                    .messages(messageId)
+                    .attachments()
+                    .buildRequest()
+                    .post(fileAttachment);
+
+```
+7. **Send the draft message**:<br/>Calls **GraphServiceController.sendDraftMessage** to send the updated draft message to the intended user.
+```java
+            mGraphServiceClient
+                    .me()
+                    .mailFolders("Drafts")
+                    .messages(messageId)
+                    .send()
+                    .buildRequest()
+                    .post();
+
+```
 
 > **Note:** The body of the message sent by the application originates as an HTML template stored in [Constants.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/Constants.java) as a static string. When sent, the body of the message contains a public sharing hyperlink to a picture that the sample uploads to the user's OneDrive root folder. 
 
