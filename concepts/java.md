@@ -24,7 +24,56 @@ After you complete the application registration and configuring the sample for t
 
 ## Code walkthrough
 
-Let's walk through the source code packages and files in the project:
+Before we walk through the flow of the sample, you should take a few minutes to learn about the [project structure](#sample-project-structure). When you're ready, lets step through the logic in the sample:
+
+
+   
+### Walk through the code
+We'll look at the sample code at a high level and then dive into the details of creating an email message and sending it.
+
+#### The sample app user experience
+
+The [PublicClient.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/PublicClient.java) **main(String args[])** static method creates an instance of **PublicClient** and kicks off the sign in and authentication process. [AuthenticationManager.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/AuthenticationManager) provides a singleton instance which is used to connect the user to Microsoft Graph. 
+
+**AuthenticationManager** exposes a string property whose value is the access token returned by **AAD** when the user is authenticated and gives the sample permission to access requested Microsoft Graph resources. 
+
+The **PublicClient.startSendMail** method performs the following steps:
+
+- Creates a new instance of the [GraphSendMail](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/msgraph/GraphSendMail.java) class. 
+- **GraphSendMail.getMeUser()** returns the **AAD** profile of the current user so that the sample console object can personalize the prompts that it displays to the user. 
+- The console displays:
+
+   `Hello, Laura Steele. Would you like to send an email to yourself or someone else?`
+
+   `Enter the address to which you'd like to send a message. If you enter nothing, the message will go to your address`
+
+- Calls the **GraphSendMail.sendMail** method which takes the user's input. If an email address is provided, **sendMail** sends a message to that address. Otherwise, the message is sent to the current user. 
+
+- Prompts the user to send another email or quit the console app.
+
+   `Email sent!`
+
+   `Want to send another message? Type 'y' for yes and any other key to exit.`
+
+#### Send the email message
+
+The mail sending logic takes the following steps:
+
+
+
+1. **Get profile picture**:<br/> Calls **GraphServiceController.getUserProfilePicture()** to get an array of bytes representing the profile picture of the **AAD** user who signed into the sample.
+2. **Upload picture to OneDrive**:
+<br/>Calls **GraphServiceController.uploadPictureToOneDrive(byte[] bytes)** to POST the profile picture in the user's OneDrive root folder. A Microsoft Graph SDK **DriveItem** object is returned. 
+3. **Get the OneDrive sharing link for the picture**:<br/>Calls **GraphServiceController.getPermissionSharingLink** to create a new sharing link. A Microsoft Graph SDK **Permission** object is returned.
+4. **Replaces the contents of the HTML template anchor tag** with the **webUrl** for the sharing link in the previous step.
+5. **Create a draft message**: <br/>Calls **GraphServiceController.createDraftMail**, passing the recipient email address, subject text, and the updated HTML template. A draft message is created and POSTed to the user's draft message folder.
+6. **Attach picture to draft message**: <br/>Calls **GraphServiceController.addPictureToDraftMessage** to get the draft message and add the picture to the message as an object attachment.
+7. **Send the draft message**:<br/>Calls **GraphServiceController.sendDraftMessage** to send the updated draft message to the intended user.
+
+
+> **Note:** The body of the message sent by the application originates as an HTML template stored in [Constants.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/Constants.java) as a static string. When sent, the body of the message contains a public sharing hyperlink to a picture that the sample uploads to the user's OneDrive root folder. 
+
+### Sample project structure
 
 ### connect package
 This package contains the OAuth2 authentication flow logic and the configuration that you'll be updating.
@@ -34,5 +83,24 @@ This package contains the OAuth2 authentication flow logic and the configuration
 - [Debug.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/Debug.java): Public debug level flag. Set it's value to change the logging behavior of the sample app.
 - [DebugLogger.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/DebugLogger.java): Logging utility that writes information to the console according to the debug level set.
 - [IConnectCallback](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/IConnectCallback.java): Defines the callback method that you'd use if you call the asynchronous overload of the **ScribeJava.getAccessToken** method.
+- [SendMailException](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/msgraph/SendMailException.java): A class that is derived from **Exception** and encapsulates Microsoft Graph-specific exception information. Classes in the **GraphSendMail** package can throw this type of exception.
 
 ### msgraph package
+
+This package contains all of the logic that makes calls on Microsoft Graph.
+
+- [GraphSendMail](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/msgraph/GraphSendMail.java): Chains together calls into **GraphServiceController** (a Microsoft Graph API sample helper class) to create and send an email message with a picture attachment.
+- [GraphServiceClientManager.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/msgraph/GraphServiceClientManager.java): Instantiates the Microsoft Graph SDK [GraphServiceClient](https://github.com/microsoftgraph/msgraph-sdk-java/blob/dev/src/main/java/com/microsoft/graph/requests/extensions/GraphServiceClient.java) and adds an access token to all outgoing API calls on the Microsoft Graph endpoint.
+
+- [GraphServiceController.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/msgraph/GraphServiceController.java): Uses the Microsoft Graph SDK to make all of the calls on the **GraphServiceClient**. Calls include:
+
+   - **createDraftMail**: creates a draft email message and saves it in your draft messages folder.
+   - **sendNewMessageAsync**: Creates and sends an email message.
+   - **addPictureToDraftMessage**: Posts a file attachment in a draft message by message Id
+   - **addAttachmentToDraftAsync**: Adds an attachment to a draft message.
+   - **sendDraftMessage**: Sends a message from the drafts folder.
+   - **getDraftMessage**: Gets a message from the user' message collection by message id.
+   - **getUser**: Gets the local user who is authenticated with the Microsoft Graph API endpoint.
+   - **getUserProfilePicture**: Gets the signed in user's profile picture from the Microsoft Graph.
+   - **uploadPictureToOneDrive**: Uploads a picture as byte array to the user's OneDrive root folder.
+   - **getPermissionSharingLink**: Requests OneDrive to create a public sharing link to a picture stored in OneDrive.
