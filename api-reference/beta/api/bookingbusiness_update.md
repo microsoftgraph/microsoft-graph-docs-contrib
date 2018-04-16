@@ -25,8 +25,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](physicaladdress.md)|The street address of the business.|
-|businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
+|address|[physicalAddress](../resources/physicaladdress.md)|The street address of the business.|
+|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
 |displayName|String|A name for the business that interfaces with customers.|
@@ -34,7 +34,7 @@ In the request body, supply the values for relevant fields that should be update
 |isPublished|Boolean|The scheduling page has been made available to external customers. You can also use the **publish** and **unpublish** actions to set this property.|
 |phone|String|The telephone number for the business.|
 |publicUrl|String||
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
 |webSiteUrl|String|The URL of the business web site.|
 
 ## Response
