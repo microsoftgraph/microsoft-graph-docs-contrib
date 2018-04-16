@@ -1,6 +1,6 @@
 # bookingStaffMember resource type
 
-
+Represents a staff member who provides services in a [bookingBusiness](bookingbusiness.md).
 
 
 ## Methods

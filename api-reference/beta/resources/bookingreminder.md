@@ -1,14 +1,14 @@
 # bookingReminder resource type
 
-
+Represents when and to whom to send an email reminder.
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|message|String||
-|offset|Duration||
-|recipients|String| Possible values are: `allAttendees`, `staff`, `customer`.|
+|message|String|The message in the reminder.|
+|offset|Duration|The amount of time before an appointment that the reminder should be sent.|
+|recipients|String| The persons who shouold receive the reminder. Possible values are: `allAttendees`, `staff`, `customer`.|
 
 ## JSON representation
 

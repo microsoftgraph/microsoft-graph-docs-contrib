@@ -1,15 +1,12 @@
 # bookingNamedEntity resource type
 
-
-
-
-
+This is a base type for Microsoft Bookings entities that provide a display name, for example, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String||
-|id|String| Read-only.|
+|displayName|String|A name for the derived entity, which interfaces with customers.|
+|id|String| The ID for the derived entity. Read-only.|
 
 ## Relationships
 None

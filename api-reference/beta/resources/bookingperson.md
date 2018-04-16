@@ -1,15 +1,13 @@
 # bookingPerson resource type
 
-
-
-
+This is a base type for a person in a Microsoft Bookings business, which can be a [bookingCustomer](bookingcustomer.md) or [bookingStaffMember](bookingstaffmember.md).
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String||
-|emailAddress|String||
-|id|String| Read-only.|
+|displayName|String|A name for the derived entity, which interfaces with customers.|
+|emailAddress|String|The email address of the person.|
+|id|String| The ID for the derived entity. Read-only.|
 
 ## Relationships
 None

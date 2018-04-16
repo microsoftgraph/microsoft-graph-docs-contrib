@@ -1,6 +1,6 @@
 # bookingService resource type
 
-
+Represents a service offered by a [bookingBusiness](bookingbusiness.md).
 
 
 ## Methods
@@ -18,7 +18,7 @@
 |defaultLocation|[location](location.md)||
 |defaultPrice|Double||
 |defaultPriceType|string| Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
-|defaultReminders|[bookingReminder](bookingreminder.md) collection||
+|defaultReminders|[bookingReminder](bookingreminder.md) collection|The default set of reminders for an appointment of this service. The value of this property is available only when reading this **bookingService** by its ID.|
 |description|String||
 |displayName|String||
 |emailAddress|String||

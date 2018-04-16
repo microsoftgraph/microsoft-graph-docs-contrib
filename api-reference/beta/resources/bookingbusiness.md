@@ -47,7 +47,7 @@ Add link in See Also section to concept topic and API overview.
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
-|displayName|String|A name for the business that interfaces with customers.|
+|displayName|String|A name for the business, which interfaces with customers.|
 |email|String|The email address for the business.|
 |id|String|A programmatic identifier for the business, which is an email address formed by **displayName** concatenated with the domain of the tenant. Read-only.|
 |isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property.|

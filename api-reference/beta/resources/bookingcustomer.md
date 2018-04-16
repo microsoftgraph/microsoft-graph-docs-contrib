@@ -1,6 +1,6 @@
 # bookingCustomer resource type
 
-
+Represents a customer of a [bookingBsiness](bookingbusiness.md).
 
 
 ## Methods
@@ -14,9 +14,9 @@
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String||
-|emailAddress|String||
-|id|String| Read-only.|
+|displayName|String|The name of the customer.|
+|emailAddress|String|The email address of the customer.|
+|id|String| The ID of the customer. Read-only.|
 
 ## Relationships
 None

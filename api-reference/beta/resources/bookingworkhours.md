@@ -1,13 +1,13 @@
 # bookingWorkHours resource type
 
-
+Represents the set of working hours in a single day of the week.
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|day|String| Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|timeSlots|[bookingWorkTimeSlot](bookingworktimeslot.md) collection||
+|day|String| The day of the week represented by this instance. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|timeSlots|[bookingWorkTimeSlot](bookingworktimeslot.md) collection|A list of start/end times during a day.|
 
 ## JSON representation
 

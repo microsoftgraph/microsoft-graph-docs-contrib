@@ -1,6 +1,6 @@
 # bookingAppointment resource type
 
-
+Represents a customer appointment for a service provided by a Microsoft Bookings business.
 
 
 ## Methods
@@ -8,18 +8,18 @@
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get bookingAppointment](../api/bookingappointment_get.md) | [bookingAppointment](bookingappointment.md) |Read properties and relationships of bookingAppointment object.|
-|[Update](../api/bookingappointment_update.md) | [bookingAppointment](bookingappointment.md)	|Update bookingAppointment object. |
-|[Delete](../api/bookingappointment_delete.md) | None |Delete bookingAppointment object. |
-|[Cancel](../api/bookingappointment_cancel.md)|None||
+|[Update](../api/bookingappointment_update.md) | [bookingAppointment](bookingappointment.md)	|Update **bookingAppointment** object. |
+|[Delete](../api/bookingappointment_delete.md) | None |Delete **bookingAppointment** object. |
+|[Cancel](../api/bookingappointment_cancel.md)|None| Cancel **bookingAppointment** object.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |customerEmailAddress|String||
-|customerId|String||
+|customerId|String|The id of the [bookingCustomer](bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the **customerId** immutable.|
 |customerLocation|[location](location.md)||
 |customerName|String||
-|customerNotes|String||
+|customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can initially set this property only when creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
 |customerPhone|String||
 |duration|Duration||
 |end|[dateTimeTimeZone](datetimetimezone.md)||
@@ -34,12 +34,12 @@
 |preBuffer|Duration||
 |price|Double||
 |priceType|string| Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
-|reminders|[bookingReminder](bookingreminder.md) collection||
+|reminders|[bookingReminder](bookingreminder.md) collection|The collection of customer reminders sent for this appointment. The value of this property is available only when reading this **bookingAppointment** by its ID.|
 |selfServiceAppointmentId|String||
-|serviceId|String||
+|serviceId|String|The ID of the [bookingService](bookingservice.md) associated with this appointment.|
 |serviceLocation|[location](location.md)||
-|serviceName|String||
-|serviceNotes|String||
+|serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the service id.|
+|serviceNotes|String|Notes from a [bookingStaffMember](bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
 |staffMemberIds|String collection||
 |start|[dateTimeTimeZone](datetimetimezone.md)||
 
