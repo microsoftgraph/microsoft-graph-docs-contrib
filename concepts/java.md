@@ -1,12 +1,14 @@
 # Get started with Microsoft Graph in a Java app
 
-This article uses the [console-java-connect-sample](https://github.com/microsoftgraph/console-java-connect-sample) to walk through sending mail via Microsoft Graph from a Java console application. The article shows you the code that you need to add to your Java app so that you can use the Microsoft Graph API. The article shows you how to access Microsoft Graph by using the [Microsoft Graph SDK for Java](https://github.com/microsoftgraph/msgraph-sdk-java).
+This article uses the [console-java-connect-sample](https://github.com/microsoftgraph/console-java-connect-sample) to walk through sending mail via Microsoft Graph from a Java console application. The article shows you the code that you need to add to your Java app so that you can use the Microsoft Graph API and how you access Microsoft Graph by using the [Microsoft Graph SDK for Java](https://github.com/microsoftgraph/msgraph-sdk-java).
 
 ## Choosing an authentication library
 
-Before your app can make calls on Microsoft Graph, the app must get an access token from Azure Active Directory (Azure AD). The token is to be passed in an HTTP header with each call to Microsoft Graph. The **Microsoft Graph SDK** takes care of creating the header and adding the token. To make this possible, your app passes an instance of the [IAuthenticationProvider](https://github.com/microsoftgraph/msgraph-sdk-java/blob/dev/src/main/java/com/microsoft/graph/authentication/IAuthenticationProvider.java) interface. Microsoft Graph adopted the OAuth 2.0 and Open ID Connect standards, which lets you choose from many open source OAuth 2 Java libraries that are available. The Azure AD team recommends using [ScribeJava])(https://github.com/scribejava/scribejava), a simple OAuth2 library for Java.
+Microsoft Graph adopted the OAuth 2.0 and Open ID Connect standards, which lets you choose from many open source OAuth 2 Java libraries that are available. The Azure AD team recommends using [ScribeJava])(https://github.com/scribejava/scribejava), a simple OAuth2 library for Java.
 
 The sample implements the Authorization Code Grant flow which is appropriate for an authorization scenario involving a client application, a user, and an OAuth 2 enabled endpoint. In production server-to-server Java applications, you would use the Client Credentials authorization flow. **ScribeJava** handles both of these authorization flows. To make this sample simple to configure as a Quick Start sample, we chose to demonstrate the most simple flow.
+
+Before your app can make calls on Microsoft Graph, the app must get an access token from Azure Active Directory (Azure AD). This token must be present in an HTTP authentication header with each call to Microsoft Graph. The **Microsoft Graph SDK** takes care of creating the header and adding the token on each call as long as you implement [IAuthenticationProvider](https://github.com/microsoftgraph/msgraph-sdk-java/blob/dev/src/main/java/com/microsoft/graph/authentication/IAuthenticationProvider.java). **ScribeJava** handles authentication and getting an access token. Your app provides the access token to the Microsoft Graph SDK via the **IAuthenticationProvider** interface.
 
 ## Installing and running the sample
 
@@ -20,7 +22,7 @@ When you register the application as covered in **Step 4** of the [README](https
 
 ![Java connect console sample permissions](../concepts/images/console-java-connnect-sample-permissions.JPG)
 
-After you complete the application registration and configuring the sample for the **Application Id** you get from the application registration, you can build and run the sample.
+After you complete the application registration and [configuring the sample](https://raw.githubusercontent.com/microsoftgraph/console-java-connect-sample/master/README.md#step-5:-configure-your-app-using-`Constants.java`) for the **Application Id** you get from the application registration, you can build and run the sample.
 
 ## Code walkthrough
 
