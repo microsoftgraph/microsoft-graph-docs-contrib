@@ -73,6 +73,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition | v1.0 | Added the new **workingHours** property to [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md). See [workingHours resource type](../api-reference/v1.0/resources/workinghours.md) for information on the supported use cases.|
 |Addition | v1.0 | Added the following new complex types: <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
 
+### Education APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Change|Beta|Added the reportableIdentifier property to [educationsynchronizationerror](../api-reference/beta/resources/educationsynchronizationerror.md).|
+|Change|Beta|Updated the response options for the [uploadUrl](../api-reference/beta/api/educationsynchronizationprofile_uploadurl.md) API.|
+|Change|Beta|Updated the text for description of the [educationSynchronizationError](../api-reference/beta/resources/educationsynchronizationerror.md) resource type.|
+|Change|Beta|Updated the text for description of the [get sync errors](../api-reference/beta/api/educationsynchronizationerrors_get.md) API.|
+
+
 ## March 2018
 
 ### Data Policy Operations 
@@ -95,6 +105,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change | Beta | Added **status** property to [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) |
 | Change | Beta | Added **activity** navigation property to [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) |
 | Change | Beta | Added new APIs to [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/project_rome_overview) |
+
+### Azure AD APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Change|beta|Added the **applicationID** and **creatorUserID** properties to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/subscription) resource. |
+|Change|beta|Added the [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/subscription_list) operation to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/subscription) entity. |
+
 
 ### Directory APIs
 
