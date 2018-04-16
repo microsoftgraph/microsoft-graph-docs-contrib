@@ -37,12 +37,12 @@ We'll look at the sample code at a high level and then dive into the details of 
 
 The [PublicClient.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/PublicClient.java) **main(String args[])** static method creates an instance of **PublicClient** and then kicks off the sign in and authentication process.  
 
-[AuthenticationManager.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/AuthenticationManager) provides a singleton instance which is used to connect the user to Microsoft Graph. **AuthenticationManager** exposes an **AAD** access token as a string property. The access token is returned by **AAD** when the user is authenticated and gives the sample permission to access requested Microsoft Graph resources. 
+[AuthenticationManager.java](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/AuthenticationManager) provides a singleton instance which is used to connect the user to Microsoft Graph. **AuthenticationManager** exposes an **** access token as a string property. The access token is returned by **Azure AD** when the user is authenticated and gives the sample permission to access requested Microsoft Graph resources. 
 
 The **PublicClient.startSendMail** method performs the following steps:
 
 - Creates a new instance of the [GraphSendMail](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/msgraph/GraphSendMail.java) class. 
-- Calls **GraphSendMail.getMeUser()** to return the **AAD** profile of the current user so that the sample console object can personalize the prompts that it displays to the user. 
+- Calls **GraphSendMail.getMeUser()** to return the **Azure AD** profile of the current user so that the sample console object can personalize the prompts that it displays to the user. 
 - The console displays:
 
    `Hello, Laura Steele. Would you like to send an email to yourself or someone else?`
@@ -63,7 +63,7 @@ The mail sending logic takes the following steps:
 
 
 
-1. **Get profile picture**:<br/> Calls **GraphServiceController.getUserProfilePicture()** to get an array of bytes representing the profile picture of the **AAD** user who signed into the sample.
+1. **Get profile picture**:<br/> Calls **GraphServiceController.getUserProfilePicture()** to get an array of bytes representing the profile picture of the **Azure AD** user who signed into the sample.
 
 ```java
             photoStream = mGraphServiceClient
