@@ -20,7 +20,7 @@ Create [groups](../api-reference/v1.0/resources/groups-overview.md) for projects
 
 With dynamic groups, such administration can happen automatically.
 
-Discover information about other [directory roles](..//api-reference/v1.0/resources/directoryrole.md). For example, you can check for [transitive membership](../api-reference/v1.0/api/directoryrole_list_members.md) in a list of groups, return all the groups and directory roles that a directory object is a transitive member of, or get all the resources of a specified type (like user or group) from a list of generic resource IDs.
+Discover information about other [directory roles](../api-reference/v1.0/resources/directoryrole.md). For example, you can check for [transitive membership](../api-reference/v1.0/api/directoryrole_list_members.md) in a list of groups, return all the groups and directory roles that a directory object is a transitive member of, or get all the resources of a specified type (like user or group) from a list of generic resource IDs.
 
 ### Manage directory roles
 
@@ -40,7 +40,7 @@ Get information about [partner tenants](../api-reference/v1.0/resources/contract
 
 Get information about an [organization](../api-reference/v1.0/resources/organization.md), such as its business address, technical and notification contacts, the service plans that it's subscribed to, and the domains associated with it.
 
-Get information about the [service SKUs](../v1.0/resources/subscribedsku.md) that a company is subscribed to.
+Get information about the [service SKUs](../api-reference/v1.0/resources/subscribedsku.md) that a company is subscribed to.
 
 [Invite external](../api-reference/v1.0/resources/invitation.md) (guest) users to an organization.
 

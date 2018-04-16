@@ -17,7 +17,7 @@ Create and deploy [device configuration](../api-reference/v1.0/resources/intune_
 
 Create and deploy device [access control](../api-reference/v1.0/resources/intune_onboarding_onpremisesconditionalaccesssettings.md) policies, including restricted download, network accessory access, and file transfer.
 
-Perform [remote actions](../v1.0/resources/intune_devices_manageddevice.md), such as locate device, change password, and wipe device.
+Perform [remote actions](../api-reference/v1.0/resources/intune_devices_manageddevice.md), such as locate device, change password, and wipe device.
 
 ### Manage apps 
 
