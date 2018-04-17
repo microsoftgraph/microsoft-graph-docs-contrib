@@ -8,13 +8,13 @@ Developers can use Microsoft Graph API for Azure AD to create unique workflows b
 
 More than 15 million organizations use Azure Active Directory (Azure AD) while subscribing to Microsoft cloud services like Office 365, Microsoft Azure, Enterprise Mobility Suite, or Microsoft 365.  
 
-Enterprise developers use Microsoft Graph to integrate Azure AD identity management with workflow automation, which in turn improves employee onboarding (and termination), maintains profiles, deploys licenses, and more.
+Enterprise developers use Microsoft Graph to integrate Azure AD identity management and other services to automate administrative workflows, such as employee onboarding (and termination), profile maintenance, license deployment, and more.
 
-When you use Microsoft Graph API for Azure AD, your application is integrated with Azure AD identity management and other access controls, such as group memberships and directory role permissions.  For many enterprise developers, Microsoft Graph and Azure AD help "life and shift" existing applications to the cloud, speeding an organization's digital transformation.
+For many enterprise developers, Microsoft Graph and Azure AD help "lift and shift" existing applications to the cloud, speeding an organization's digital transformation.  Azure AD also provides access control mechanisms to verify a user's group membership, directory role, or administrative unit membership.
 
 Application developers use Microsoft Graph and Azure AD as a way to quickly and easily reach more than 15 million organizations, including 90% of the Fortune 500 companies that already use Azure AD services.  Integrated applications feature seamless sign-in experiences and can leverage existing organizational data to create personalized experiences.  
 
-Use Microsoft Graph API to query the user's profile, to find other user, to manage organizational relationships, to track assignments, or to create original solutions incorporating existing organizational data.  
+Use Microsoft Graph API to query the user's profile, to find other users, to manage organizational relationships, to track assignments, or to create original solutions incorporating existing organizational data.  
 
 Microsoft Graph API for Azure AD provides a solid foundation to seamlessly integrate custom business applications into an organization's existing digital services.
 
