@@ -19,8 +19,10 @@ The following are some of the scenarios that the roster APIs enable:
 - [Get all the classes I teach](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/educationuser_list_classes)
 
 
-### Enable your teachers to create assignments at the click of a buttion using assignments APIs (preview)
-Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, Bots, and APIs in Microsoft Graph to work with assignments and submissions. 
+### Leverage Microsoft Teams to let your teachers create class assignments in a Teams assignments tab at the click of a button
+Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, Bots, and APIs in Microsoft Graph to work with assignments and submissions.
+
+For education, Teams custom Tab apps are opened in a classroom context where it makes sense to manage the end-to-end assignment flow from creation and distribution to grading and feedback. This is just one example of how Microsoft Teams save time and simplifies everyday logistics, leaving educators free to dedicate themselves to their students.
 
 ![Microsoft Teams assignments](images/AssignmentsInTeams.PNG)
 
