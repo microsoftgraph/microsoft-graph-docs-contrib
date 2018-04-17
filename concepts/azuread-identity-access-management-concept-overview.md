@@ -8,11 +8,9 @@ Developers can use Microsoft Graph API for Azure AD to create unique workflows b
 
 More than 15 million organizations use Azure Active Directory (Azure AD) while subscribing to Microsoft cloud services like Office 365, Microsoft Azure, Enterprise Mobility Suite, or Microsoft 365.  
 
-Enterprise developers use Microsoft Graph to integrate applications with Azure AD identity management and other available services to simplify common administration tasks, such as employee onboarding (and removal).  Apps can also provision devices, maintain profiles, deploy licenses, and more.
+Enterprise developers use Microsoft Graph to integrate Azure AD identity management with workflow automation, which in turn improves employee onboarding (and termination), maintains profiles, deploys licenses, and more.
 
-When you use Microsoft Graph API for Azure AD, your application is integrated with Azure AD identity management and other access controls, such as group memberships,  directory role permissions, and role-based access control.  
-
-For many enterprise developers, Microsoft Graph and Azure AD help "life and shift" existing applications to the cloud, speeding an organization's digital transformation.
+When you use Microsoft Graph API for Azure AD, your application is integrated with Azure AD identity management and other access controls, such as group memberships and directory role permissions.  For many enterprise developers, Microsoft Graph and Azure AD help "life and shift" existing applications to the cloud, speeding an organization's digital transformation.
 
 Application developers use Microsoft Graph and Azure AD as a way to quickly and easily reach more than 15 million organizations, including 90% of the Fortune 500 companies that already use Azure AD services.  Integrated applications feature seamless sign-in experiences and can leverage existing organizational data to create personalized experiences.  
 
