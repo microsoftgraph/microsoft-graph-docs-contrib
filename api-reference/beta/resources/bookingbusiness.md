@@ -37,8 +37,8 @@ Add link in See Also section to concept topic and API overview.
 |[Create bookingStaffMember](../api/bookingbusiness_post_staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Create a new bookingStaffMember by posting to the staffMembers collection.|
 |[List staffMembers](../api/bookingbusiness_list_staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Get a bookingStaffMember object collection.|
 |[getCalendarView](../api/bookingbusiness_getcalendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** that occurs in the specified date range.|
-|[publish](../api/bookingbusiness_publish.md)|None|Make the scheduling page of this business available to external customers.|
-|[unpublish](../api/bookingbusiness_unpublish.md)|None| Make the scheduling page of this business not available to external customers.|
+|[publish](../api/bookingbusiness_publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
+|[unpublish](../api/bookingbusiness_unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -50,9 +50,9 @@ Add link in See Also section to concept topic and API overview.
 |displayName|String|A name for the business, which interfaces with customers.|
 |email|String|The email address for the business.|
 |id|String|A programmatic identifier for the business, which is an email address formed by **displayName** concatenated with the domain of the tenant. Read-only.|
-|isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property.|
+|isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property. Read-only.|
 |phone|String|The telephone number for the business.|
-|publicUrl|String||
+|publicUrl|String|The URL for the scheduling page, which is set after you [publish](../api/bookingbusiness_publish.md) or [unpublish](../api/bookingbusiness_unpublish.md) the page. Read-only.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
 |webSiteUrl|String|The URL of the business web site.|
 
