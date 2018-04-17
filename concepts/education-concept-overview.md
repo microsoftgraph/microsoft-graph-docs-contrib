@@ -19,12 +19,17 @@ The following are some of the scenarios that the roster APIs enable:
 - [Get all the classes I teach](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/educationuser_list_classes)
 
 
-### Leverage Microsoft Teams to let your teachers create class assignments in a Teams assignments tab at the click of a button
-Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, Bots, and APIs in Microsoft Graph to work with assignments and submissions.
+### Leverage Microsoft Teams for creating class assignments in a Teams assignments tab
 
-For education, Teams custom Tab apps are opened in a classroom context where it makes sense to manage the end-to-end assignment flow from creation and distribution to grading and feedback. This is just one example of how Microsoft Teams save time and simplifies everyday logistics, leaving educators free to dedicate themselves to their students.
+You can create a web app that manages class assignments by using the Edu Assignements API and then integrate your app in Microsoft Teams by using a new custom Tab.  
 
-![Microsoft Teams assignments](images/AssignmentsInTeams.PNG)
+Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, and Bots. These extensibility points can call education APIs in Microsoft Graph to work with assignments and submissions. Build a more comprehensive experience by enabling your extension point with any other Microsoft Graph API along with assignment and submission APIs.
+
+For education, Teams custom Tab apps are opened in an education class (a team) context where it makes sense to manage the end-to-end assignment flow from creation and distribution to grading and feedback. This is just one example of how Microsoft Teams save time and simplifies everyday logistics, leaving educators free to dedicate themselves to their students.
+
+The following image shows that the **Science - Biology 1** class has a web app for managing assignments in an "Assignments" custom Tab.
+
+![Microsoft Teams assignments, Assignments web app in custom tab](images/AssignmentsInTeams.PNG)
 
 With assigment APIs your app can interact with the assignment service outside of Teams. Teams will handle distribution, due dates and grading while your system can provide a rich learning experience to students.
 Here are examples of a few scenarios enabled by assignments API:
