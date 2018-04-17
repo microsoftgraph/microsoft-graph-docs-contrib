@@ -6,7 +6,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2018
 
-### ActivityFeedService APIs
+### Project Rome APIs
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
