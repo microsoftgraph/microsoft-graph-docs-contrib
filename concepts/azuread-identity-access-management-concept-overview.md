@@ -10,7 +10,7 @@ More than 15 million organizations use Azure Active Directory (Azure AD) while s
 
 Enterprise developers use Microsoft Graph to integrate Azure AD identity management and other services to automate administrative workflows, such as employee onboarding (and termination), profile maintenance, license deployment, and more.
 
-For many enterprise developers, Microsoft Graph and Azure AD help "lift and shift" existing applications to the cloud, speeding an organization's digital transformation.  Azure AD also provides access control mechanisms to verify a user's group membership, directory role, or administrative unit membership.
+For many enterprise developers, Microsoft Graph and Azure AD help "lift and shift" existing applications to the cloud, speeding an organization's digital transformation.  DEvelopers can leverage Azure AD capabilities add access control mechanisms to applications, including verifying a user's group membership, directory role, or administrative unit membership.
 
 Application developers use Microsoft Graph and Azure AD as a way to quickly and easily reach more than 15 million organizations, including 90% of the Fortune 500 companies that already use Azure AD services.  Integrated applications feature seamless sign-in experiences and can leverage existing organizational data to create personalized experiences.  
 
