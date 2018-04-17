@@ -125,7 +125,7 @@ Reports
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Security integration (preview) | Azure AD Identity Protection, Azure Security Center | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](../concepts/security-concept-overview.md) |
-| Identity risk detection (preview) | Azure AD | Gets information about risk events in user accounts detected by adaptive machine learning. | [Security in Microsoft Graph](../concepts/security-concept-overview.md)  |
+| Identity protection (preview) | Azure AD | Gives access to sign-in and account risk data for users in Azure AD. | [Security in Microsoft Graph](../concepts/security-concept-overview.md)  |
 
 
 
