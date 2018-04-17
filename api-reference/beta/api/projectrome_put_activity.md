@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related historyItems in one request, you can use deep insert.
+Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome_put_activity.md#example-2).
 
 ## Permissions
 
@@ -39,7 +39,7 @@ In the request body, supply a JSON representation of an [activity](../resources/
 
 If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.
 
-## Example
+## Example 1
 
 #### Request
 
@@ -148,7 +148,9 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 }
 ```
 
-#### Deep Insert Request
+## Example 2 - Deep insert
+
+#### Request
 
 The following is an example of the request.
 
@@ -205,7 +207,7 @@ Content-length: 364
 }
 ```
 
-#### Deep Insert Response
+#### Response
 
 The following is an example of the response.
 
