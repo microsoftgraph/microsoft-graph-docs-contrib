@@ -4,7 +4,7 @@
 
 Update the properties of a [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) object.
 
-> **Note:** This is not supported and should not be used. Use [iOS managed app protection](../resources/intune_mam_iosmanagedappprotection.md) or [Android managed app protection](../resources/intune_mam_androidmanagedapppproction.md) instead.
+> **Note:** This is not supported and should not be used. Use [iOS managed app protection](../resources/intune_mam_iosmanagedappprotection.md) or [Android managed app protection](../resources/intune_mam_androidmanagedappprotection.md) instead.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).

@@ -4,7 +4,7 @@
 
 The type for deployment of groups or apps.
 
-> **Note:** This is not supported and should not be used. Use [iOS managed app protection](intune_mam_iosmanagedappprotection.md) or [Android managed app protection](intune_mam_androidmanagedapppproction.md) instead.
+> **Note:** This is not supported and should not be used. Use [iOS managed app protection](intune_mam_iosmanagedappprotection.md) or [Android managed app protection](intune_mam_androidmanagedappprotection.md) instead.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
