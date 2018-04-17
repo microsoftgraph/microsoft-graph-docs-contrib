@@ -37,7 +37,7 @@ We'll look at the sample code at a high level and then dive into the details of 
 
 This section takes a look at the logic that starts up the application and then shows you the sample output that the user sees when they run the sample.
 
-The [PublicClient](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/PublicClient.java) **main(String args[])** static method creates an instance of **PublicClient** and then kicks off the sign in and authentication process.  
+The [PublicClient](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/PublicClient.java) **main** static method creates an instance of **PublicClient** and then kicks off the sign in and authentication process.  
 
 [AuthenticationManager](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/src/main/java/com/microsoft/graphsample/connect/AuthenticationManager) provides a singleton instance which is used to connect the user to Microsoft Graph. **AuthenticationManager** exposes an **access token** as a string property. The access token is returned by **Azure AD** when the user is authenticated and gives the sample permission to access requested Microsoft Graph resources. 
 
@@ -79,7 +79,7 @@ The mail sending logic takes the following steps:
 
 ```
 2. **Upload picture to OneDrive**:
-<br/>Calls **GraphServiceController.uploadPictureToOneDrive(byte[] bytes)** to POST the profile picture in the user's OneDrive root folder. A Microsoft Graph SDK **DriveItem** object is returned. 
+<br/>Calls **GraphServiceController.uploadPictureToOneDrive(bytes)** to POST the profile picture in the user's OneDrive root folder. A Microsoft Graph SDK **DriveItem** object is returned. 
 
    **The API call**
 ```java
