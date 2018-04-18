@@ -133,7 +133,7 @@ To create or update OneNote pages, you'll need to request appropriate permission
 
 [!INCLUDE [Create perms](includes/patchPermission.txt)]
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md#notes-permissions).
 
 
 <a name="see-also"></a>
