@@ -18,7 +18,7 @@ You can use the Intune API to:
 
 ### Manage apps 
 
-You can use the Intune API to perform the following device management tasks:
+You can use the Intune API to perform the following app management tasks:
 
 - Deploy [apps to devices](../api-reference/v1.0/resources/intune_apps_mobileapp.md) or prevent apps from being deployed.
 - Manage access to [ebooks](../api-reference/v1.0/resources/intune_books_ebookinstallsummary.md) and related services.
