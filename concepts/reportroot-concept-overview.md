@@ -2,10 +2,10 @@
 
 Usage reports in the Office 365 admin center enable admins to understand their company's usage across Office 365 services. You can use the reports API in Microsoft Graph to integrate with Office 365 usage reports.
 
-## Why use the Microsoft Graph reports API?
+## Why use the reports API?
 
 ### Integrate Office 365 usage reporting into your organization's existing reporting solution
-Many companies have existing reporting solutions that use a reporting application or web portal. You can use the reports API to incorporate Office 365 usage data into your organization's existing reporting solution.  
+Many companies have existing reporting solutions that use a reporting application or web portal. You can use the reports API to incorporate Office 365 usage data into your organization's existing reporting solution so that all IT service reports are in a unified location.  
 
 ### Retain usage reports for historical analysis
 You can use the reports API to get the data that's available in all usage reports, including organization-level summaries per service, entity-level (user, sites, accounts) usage information for the last 7/30/90/180 days, and daily activity aggregates. This gives you the option to keep historical usage information for as long as required.
