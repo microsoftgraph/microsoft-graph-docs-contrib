@@ -1,8 +1,6 @@
-# Get recent user activities
+# Get user activities
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service will query for the most recent [historyItems](../resources/projectrome_historyitem.md), and then pull those related activities. Activities will be sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** will not be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
+Get activities for a given user. Unlike the **recent** OData function, activities without histories will be returned. The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
 
 ## Permissions
 
@@ -19,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/activities/recent
+GET /me/activities
 ```
 
 ## Optional query parameters
@@ -30,14 +28,14 @@ This method supports some [OData Query Parameters](http://developer.microsoft.co
 - $top to limit the maximum number of items across pages.
 - $filter on the **lastModifiedDateTime** property for either activities or **historyItems**, if expanded.
 
-The following are some examples of supported queries with URL encoding.
+The following are some examples of supported queries with URL encoding:
 
 ```
-/me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
+/me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
 
-/me/activities/recent?$filter=lastModifiedDateTime%20lt%202018-01-16T01:03:21.347Z%20and%20lastModifiedDateTime%20gt%202018-01-03T01:03:21.347Z
+/me/activities?$filter=lastModifiedDateTime%20lt%202018-01-16T01:03:21.347Z%20and%20lastModifiedDateTime%20gt%202018-01-03T01:03:21.347Z
 
-/me/activities/recent?$top=5
+/me/activities?$top=5
 ```
 
 ## Request headers
@@ -48,11 +46,11 @@ The following are some examples of supported queries with URL encoding.
 
 ## Request body
 
-Do not specify a request body.
+No request body.
 
 ## Response
 
-If successful, this method returns the `200 OK` response code with the user's recent activities for your application.
+If successful, this method returns the `200 OK` response code with the user's activities for your application.
 
 ## Example
 
@@ -62,11 +60,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_recent_activities"
+  "name": "get_activities"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/activities/recent
+GET https://graph.microsoft.com/v1.0/me/activities
 ```
 
 ##### Response
@@ -84,8 +82,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
         "@odata.type": "#microsoft.graph.activity",
         "activitySourceHost": "http://www.contoso.com",
@@ -133,7 +131,7 @@ Content-Type: application/json
 2017-06-07 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get recent activities",
+  "description": "Get activities",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
