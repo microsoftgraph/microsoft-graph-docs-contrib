@@ -1,0 +1,3 @@
+- Notes.Create
+- Notes.ReadWrite
+- Notes.ReadWrite.All  
