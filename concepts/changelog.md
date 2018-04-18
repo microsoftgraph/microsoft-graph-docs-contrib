@@ -6,6 +6,23 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2018
 
+### Project Rome APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_recent_activities) |
+| Addition | v1.0 | Added [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_activities) |
+| Addition | v1.0 | Added [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/v1.0/api/projectrome_put_activity) |
+| Addition | v1.0 | Added [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_put_historyitem) |
+| Addition | v1.0 | Added [Delete Activity](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_delete_activity) |
+| Addition | v1.0 | Added [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_delete_historyItem) |
+| Addition | v1.0 | Added [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) |
+| Addition | v.10 | Added [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_historyitem) |
+| Addition | v1.0 | Added [visualInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_visualinfo) |
+| Addition | v1.0 | Added [imageInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_imageinfo) |
+| Addition | v.10 | Added [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/project_rome_overview) |
+| Change | Beta | Added deep insert documentation to [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/beta/api/projectrome_put_activity) |
+
 ### Security APIs
 
 | **Change type** | **Version** | **Description**              |

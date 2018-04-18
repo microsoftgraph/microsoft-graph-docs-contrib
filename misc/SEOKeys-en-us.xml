@@ -1950,6 +1950,18 @@
       <Item text="Update progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
   </Item>
+  <Item text="Project Rome" url="/en-us/api-reference/v1.0/resources/project_rome_overview" > 
+		<Item text="Activity" url="/en-us/api-reference/v1.0/resources/projectrome_activity" >
+			<Item text="Create or replace activity" url="/en-us/api-reference/v1.0/api/projectrome_put_activity" />
+			<Item text="Get activities" url="/en-us/api-reference/v1.0/api/projectrome_get_activities" />
+			<Item text="Get recent activities" url="/en-us/api-reference/v1.0/api/projectrome_get_recent_activities" />
+			<Item text="Delete activity" url="/en-us/api-reference/v1.0/api/projectrome_delete_activity" />
+		</Item>
+		<Item text="History item" url="/en-us/api-reference/v1.0/resources/projectrome_historyitem" >
+			<Item text="Create or replace a history item" url="/en-us/api-reference/v1.0/api/projectrome_put_historyitem" />
+			<Item text="Delete a history item" url="/en-us/api-reference/v1.0/api/projectrome_delete_historyitem" />
+		</Item>
+	</Item>
   <Item text="Reports" url="/en-us/api-reference/v1.0/resources/report" >
 	  <Item text="Microsoft Teams device usage" url="/en-us/api-reference/v1.0/resources/microsoft_teams_device_usage_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail" />
