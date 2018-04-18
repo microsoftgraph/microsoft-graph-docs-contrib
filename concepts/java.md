@@ -1,14 +1,14 @@
 # Get started with Microsoft Graph in a Java app
 
-This article uses the [console-java-connect-sample](https://github.com/microsoftgraph/console-java-connect-sample) to walk through sending mail via Microsoft Graph from a Java console application. The article shows you the code that you need to add to your Java app so that you can use the Microsoft Graph API and how you access Microsoft Graph by using the [Microsoft Graph SDK for Java](https://github.com/microsoftgraph/msgraph-sdk-java).
+This article uses the [console-java-connect-sample](https://github.com/microsoftgraph/console-java-connect-sample) to walk through sending mail via Microsoft Graph from a Java console application. The article shows you the code that you need to add to your Java app so that you can use the Microsoft Graph API. The app accesses Microsoft Graph by using the [Microsoft Graph SDK for Java](https://github.com/microsoftgraph/msgraph-sdk-java).
 
 ## Choose an authentication library
 
-Microsoft Graph adopted the OAuth 2.0 and Open ID Connect standards, which lets you choose from many open source OAuth 2 Java libraries that are available. The Azure AD team recommends using [ScribeJava](https://github.com/scribejava/scribejava), a simple OAuth2 library for Java.
+Microsoft Graph adopted the OAuth 2.0 and Open ID Connect standards, which lets you choose from many available open source OAuth 2 Java libraries. The Azure AD team recommends using [ScribeJava](https://github.com/scribejava/scribejava), a simple OAuth2 library for Java.
 
-The sample implements the Authorization Code Grant flow which is appropriate for an authorization scenario involving a client application, a user, and an OAuth 2 enabled endpoint. In production server-to-server Java applications, you would use the Client Credentials authorization flow. **ScribeJava** handles both of these authorization flows. To make this sample simple to configure as a Quick Start sample, we chose to demonstrate the most simple flow.
+The sample implements the Authorization Code Grant flow which is the right choice for a client authorization scenario, a user, and an OAuth 2-enabled endpoint. In production server-to-server Java applications, the Client Credentials authorization flow is used. **ScribeJava** handles both of these authorization flows. To make this sample easy to register, authenticate, and run, we demonstrate the simplest flow.
 
-Before your app can make calls on Microsoft Graph, the app must get an access token from Azure Active Directory (Azure AD). This token must be present in an HTTP authentication header with each call to Microsoft Graph. The **Microsoft Graph SDK** takes care of creating the header and adding the token on each call as long as you implement [IAuthenticationProvider](https://github.com/microsoftgraph/msgraph-sdk-java/blob/dev/src/main/java/com/microsoft/graph/authentication/IAuthenticationProvider.java). **ScribeJava** handles authentication and getting an access token. Your app provides the access token to the Microsoft Graph SDK via the **IAuthenticationProvider** interface.
+Before your app can make calls on Microsoft Graph, the app must get an access token from Azure Active Directory (Azure AD). This token must be present in an HTTP authentication header with each call to Microsoft Graph. The **Microsoft Graph SDK** takes care of inserting the header and adding the token for each call when you implement [IAuthenticationProvider](https://github.com/microsoftgraph/msgraph-sdk-java/blob/dev/src/main/java/com/microsoft/graph/authentication/IAuthenticationProvider.java). **ScribeJava** handles authentication and getting an access token. Your app provides the access token to the Microsoft Graph SDK via the **IAuthenticationProvider** interface.
 
 ## Install and run the sample
 
@@ -18,7 +18,7 @@ To install and configure the sample app, follow the instructions in the [README]
 git@github.com:microsoftgraph/console-java-connect-sample.git
 ```
 
-When you register the application as covered in **Step 4** of the [README](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/README.md), you'll be assigning delegated scopes (permissions) to the sample. Be sure to scopes as shown in the following image:
+When you [register the Console Java Connect app](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/README.md#register-your-app), assign delegated scopes (permissions) to the sample. Be sure to scopes as shown in the following image:
 
 ![Java connect console sample permissions](../concepts/images/console-java-connnect-sample-permissions.JPG)
 
@@ -26,7 +26,7 @@ After you register the application and [configure the sample](https://github.com
 
 ## Console-Java-Connect code 
 
-Before we look at the sample logic flow, take a few minutes to learn about the [sample project's structure](#sample-project-structure). When you're ready, lets step through the logic in the sample:
+Before you look at the sample logic flow, take a few minutes to learn about the [sample project's structure](#sample-project-structure). When you're ready, lets step through the logic in the sample:
 
 
    
