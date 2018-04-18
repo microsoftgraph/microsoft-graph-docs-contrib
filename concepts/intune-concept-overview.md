@@ -26,7 +26,7 @@ You can use the Intune API to perform the following app management tasks:
 
 ### Automate Intune
 
-You can use the Intune API to perform the following administrative tasks:
+Automate Intune by using the Intune API to:
 
 - Define and assign [role based](../api-reference/v1.0/resources/intune_rbac_conceptual.md) access controls.
 - Audit and report compliance, usage, and access.
