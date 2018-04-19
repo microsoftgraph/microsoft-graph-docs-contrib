@@ -4,7 +4,7 @@
 
 Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.
 
-![Three note tags displayed on a OneNote page.](images/note-tags-example.png)
+![Three note tags displayed on a OneNote page.](images/note-tags-example.PNG)
 
 
 <a name="attributes"></a>
