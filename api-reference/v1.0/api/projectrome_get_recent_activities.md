@@ -1,7 +1,5 @@
 # Get recent user activities
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service will query for the most recent [historyItems](../resources/projectrome_historyitem.md), and then pull those related activities. Activities will be sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** will not be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
 
 ## Permissions
@@ -66,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/activities/recent
+GET https://graph.microsoft.com/v1.0/me/activities/recent
 ```
 
 ##### Response
@@ -84,8 +82,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
         "@odata.type": "#microsoft.graph.activity",
         "activitySourceHost": "http://www.contoso.com",

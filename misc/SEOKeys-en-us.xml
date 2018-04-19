@@ -1296,9 +1296,6 @@
         <Item text="Android managed app registration" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappregistration">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_update"/>
         </Item>
         <Item text="Android mobile app identifier" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmobileappidentifier"/>
         <Item text="Default managed app protection" url="/en-us/api-reference/v1.0/resources/intune_mam_defaultmanagedappprotection">
@@ -1329,9 +1326,6 @@
         <Item text="iOS managed app registration" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappregistration">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappregistration_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappregistration_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappregistration_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappregistration_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappregistration_update"/>
         </Item>
         <Item text="iOS mobile app identifier" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmobileappidentifier"/>
         <Item text="IP range" url="/en-us/api-reference/v1.0/resources/intune_mam_iprange"/>
@@ -1373,9 +1367,6 @@
         <Item text="Managed app status raw" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_update"/>
         </Item>
         <Item text="Managed app status" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatus">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_list"/>
@@ -1405,13 +1396,6 @@
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_update"/>
           <Item text="assign action" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_assign"/>
           <Item text="targetApps action" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_targetapps"/>
-        </Item>
-        <Item text="Targeted managed app policy assignment" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedapppolicyassignment">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_list"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_update"/>
         </Item>
         <Item text="Targeted managed app protection" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_list"/>
@@ -1966,6 +1950,18 @@
       <Item text="Update progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
   </Item>
+  <Item text="Project Rome" url="/en-us/api-reference/v1.0/resources/project_rome_overview" > 
+		<Item text="Activity" url="/en-us/api-reference/v1.0/resources/projectrome_activity" >
+			<Item text="Create or replace activity" url="/en-us/api-reference/v1.0/api/projectrome_put_activity" />
+			<Item text="Get activities" url="/en-us/api-reference/v1.0/api/projectrome_get_activities" />
+			<Item text="Get recent activities" url="/en-us/api-reference/v1.0/api/projectrome_get_recent_activities" />
+			<Item text="Delete activity" url="/en-us/api-reference/v1.0/api/projectrome_delete_activity" />
+		</Item>
+		<Item text="History item" url="/en-us/api-reference/v1.0/resources/projectrome_historyitem" >
+			<Item text="Create or replace a history item" url="/en-us/api-reference/v1.0/api/projectrome_put_historyitem" />
+			<Item text="Delete a history item" url="/en-us/api-reference/v1.0/api/projectrome_delete_historyitem" />
+		</Item>
+	</Item>
   <Item text="Reports" url="/en-us/api-reference/v1.0/resources/report" >
 	  <Item text="Microsoft Teams device usage" url="/en-us/api-reference/v1.0/resources/microsoft_teams_device_usage_reports" >
 		<Item text="Get user detail" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail" />
