@@ -4,7 +4,7 @@ The HTML that defines the page content and structure when you [create](../api-re
 
 The HTML that's returned when you [get page content](../api-reference/v1.0/api/page_get.md) is called *output HTML*. Output HTML won't be the same as input HTML.
 
-The OneNote APIs in Microsoft Graph preserve the semantic content and basic structure of the input HTML, but convert it to a set of [supported HTML elements and CSS properties](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-create-page#supported-html). The APIs also add custom attributes that support OneNote features.
+The OneNote APIs in Microsoft Graph preserve the semantic content and basic structure of the input HTML, but convert it to a set of [supported HTML elements and CSS properties](onenote-create-page.md#supported-html-and-css-for-onenote-pages). The APIs also add custom attributes that support OneNote features.
  
 This article describes the principal elements and attributes of input and output HTML. It can be helpful to understand input HTML when you're creating or updating page content, and output HTML when you're parsing returned page content. 
 
@@ -59,7 +59,8 @@ The OneNote APIs in Microsoft Graph wrap all body content in at least one div. T
 ### Non-contributing divs
 When a **div** element in the input HTML does not contribute to the page structure or carry information that OneNote uses, the API moves the div's content into the parent or default div. This is illustrated in the following examples.
 
-**Input HTML** that contains a non-contributing, nested div.
+#### Input HTML
+Contains a non-contributing, nested div.
 
 ```html
 <html>
@@ -77,7 +78,7 @@ When a **div** element in the input HTML does not contribute to the page structu
 </html>
 ```
 
-**Output HTML**
+#### Output HTML
 
 >**Note:** The div's content was moved to the parent div and the nested `<div>` tags have been removed. The div would have been preserved if it defined any semantic information, such as a **data-id** (example: `<div data-id="keep-me">`).
 

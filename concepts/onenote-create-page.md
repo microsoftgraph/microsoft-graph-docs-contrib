@@ -9,7 +9,7 @@ To create a OneNote page, you send a POST request to a *pages* endpoint. For exa
 Send the HTML that defines the page in the message body. If the request is successful, Microsoft Graph returns a 201 HTTP status code.
 
 
-> [!NOTE]
+> **Note:**
 > To learn about the POST requests you can send to create sections, section groups, and notebooks, see our [interactive REST reference](http://dev.onenote.com/docs).
 
 
@@ -42,7 +42,7 @@ Your full request URI will look like one of these examples:
 * `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
 * `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
-Learn more about the [service root URL](#root-url).
+Learn more about the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
 
 <a name="post-pages-section-name"></a>
 ### Using the *sectionName* URL parameter
@@ -61,14 +61,14 @@ The following rules apply when using the *sectionName* parameter to create a pag
 
 Because sections are created if they don't exist, it's safe to use this call with every page your app creates. Users might rename sections, but the API will create a new section with the section name that you supply. 
 
-> [!NOTE]
+> **Note:**
 > The links returned by the API for pages in a renamed section will still reach those older pages. 
 
 
 <a name="message-body"></a>
 ## Construct the message body
 
-The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#SupportedHTMLandCSSforOneNotepages), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](onenote_input_output_html.md).) 
+The HTML that defines page content is called *input HTML*. Input HTML supports a [subset of standard HTML and CSS](#supported-html-and-css-for-onenote-pages), with the addition of custom attributes. (Custom attributes, like **data-id** and **data-render-src**, are described in [Input and output HTML](onenote_input_output_html.md).) 
 
 Send the input HTML in the message body of the POST request. You can send the input HTML directly in the message body using the  `application/xhtml+xml` or `text/html` content type, or you can send it in the "Presentation" part of a multipart request. 
 
@@ -93,13 +93,13 @@ Content-Type: application/xhtml+xml
 </html>
 ```
 
-If you're sending binary data, you must use a [multipart request](#example). 
+If you're sending binary data, you must use a [multipart request](#example-request). 
 
 >To simplify programming and consistency in your app, you can use multipart requests to create all pages. It's a good idea to use a library to construct multipart messages. This reduces the risk of creating malformed payloads.
 
 
 <a name="input-html-rules"></a>
-### Requirements and limitations for input HTML in *POST pages* requests
+### Requirements and limitations for input HTML in POST pages requests
 
 When sending input HTML, be aware of these general requirements and limitations:  
 
@@ -109,7 +109,7 @@ When sending input HTML, be aware of these general requirements and limitations:
 
 - HTML forms are removed in their entirety.  
 
-- Microsoft Graph supports a [subset of HTML elements](#supported-html). 
+- Microsoft Graph supports a [subset of HTML elements](#supported-html-and-css-for-onenote-pages). 
 
 - Microsoft Graph supports a subset of common HTML attributes and a set of custom attributes, such as the **data-id** attribute used for updating pages. See [Input and output HTML](onenote_input_output_html.md) for supported attributes.
 
@@ -139,7 +139,7 @@ Microsoft Graph preserves the semantic content and basic structure of the input 
 ## Example request
 
 This example multipart request creates a page that contains images and an embedded file. The required **Presentation** part contains the input HTML that defines the page. The **imageBlock1** part contains the binary image data 
- and **fileBlock1** contains the binary file data. Data parts can also contain HTML, in which case Microsoft Graph [renders the HTML as an image](../howto/onenote-images-files.md#image-img-binary-data-render-src) on the OneNote page. 
+ and **fileBlock1** contains the binary file data. Data parts can also contain HTML, in which case Microsoft Graph [renders the HTML as an image](onenote_images_files.md#add-an-image-using-binary-data) on the OneNote page. 
 
 ```
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
@@ -181,12 +181,12 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](../howto/onenote-tutorial.md), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote-note-tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
+For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote_images_files.md), our [tutorials](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-tutorial), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote-note-tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
 
 Microsoft Graph is strict about some formats, such as CRLF newlines in a multipart message body. To reduce the risk of creating malformed payloads, you should use a library to construct multipart messages. 
  If you do receive a 400 status for a malformed payload, check the formatting of newlines and whitespaces, and check for encoding issues. For example, try using `charset=utf-8` (example: `Content-Type: text/html; charset=utf-8`).
 
-See [requirements and limitations for input HTML](#input-html-rules) and [size limits for POST requests](onenote_images_files.md#size-limits).
+See [requirements and limitations for input HTML](#requirements-and-limitations-for-input-html-in-post-pages-requests) and [size limits for POST requests](onenote_images_files.md#size-limitations-for-post-pages-requests).
 
 
 <a name="request-response-info"></a>
@@ -226,6 +226,9 @@ Choose from:
 
 For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions_reference.md).
 
+
+
+
 <a name="see-also"></a>
 ## Additional resources
 
@@ -233,5 +236,9 @@ For more information about permission scopes and how they work, see [Microsoft G
 - [Create absolute positioned elements](onenote-abs-pos.md)  
 - [Extract data](onenote-extract-data.md)
 - [Use note tags](onenote-note-tags.md)
-[!INCLUDE [additional resources](includes/additionalResources.txt)]
+- [Integrate with OneNote](integrate_with_onenote.md)
+- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+
 

@@ -3,7 +3,7 @@
 
 *__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*
 
-You can use **img**, **object**, and **iframe** elements to add images, videos, and files to a OneNote page when you're [creating](../howto/onenote-create-page.md) or [updating](../howto/onenote-update-page.md) the page. 
+You can use **img**, **object**, and **iframe** elements to add images, videos, and files to a OneNote page when you're [creating](onenote-create-page.md) or [updating](onenote_update_page.md) the page. 
 
 - Use **img** to render an image on the page.
 - Use **iframe** to embed a video on the page.
@@ -15,21 +15,21 @@ You can use **img**, **object**, and **iframe** elements to add images, videos, 
 
 Images can be added by URL reference or by sending raw data. Microsoft Graph supports the following methods of adding images, logos, and photos to OneNote pages. 
 
-[Add a public image from the web](#image-img-url-src)  
+[Add a public image from the web](#add-a-public-image-from-the-web)  
 Use `img` with `src="http://image-url"` and specify the URL of a publicly accessible image. Renders the image on the OneNote page.</p>
-[Add an image using binary data](#image-img-binary-src)</p>
+[Add an image using binary data](#add-an-image-using-binary-data)</p>
 Use `img` with `src="name:image-block-name"` and send the image file in a data part of a multipart request. Renders the image on the OneNote page.</p>
-[Add a webpage snapshot](#image-img-url-data-render-src)</p>
+[Add a webpage snapshot](#add-a-webpage-snapshot)</p>
 Use `img` with `data-render-src="http://webpage-url"` and specify the URL of a webpage. Renders a snapshot of the whole webpage on the OneNote page.</p>
-[Add an image rendered from HTML](#image-img-binary-data-render-src)</p>
+[Add an image rendered from HTML](#add-an-image-rendered-from-html)</p>
 Use `img` with `data-render-src="name:html-block-name"` and send HTML in the data part of a multipart request. Renders the HTML as an image on the OneNote page.</p>
-[Add images of PDF file contents](#file-img-binary-data-render-src)</p>
+[Add images of PDF file contents](#add-images-of-pdf-file-contents)</p>
 Use `<img data-render-src="name:part-name" />` and send the PDF file in the data part of a multipart request. Renders each PDF page as a separate image on the OneNote page.</p>
-[Add an image file as a file attachment](#image-object)</p>
+[Add an image file as a file attachment](#add-an-image-file-as-an-attachment)</p>
 Use `object` with `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` and send an image file in the data part of a multipart request. Adds a file attachment to the OneNote page and displays a file icon.</p>
 
-> [!NOTE]
-> To get images on a OneNote page, first send a [GET request for the page content](onenote-get-content.md#get-page-content). This returns the URLs to the image resources on the page. Then you separate [GET requests to the image resources](onenote-get-content.md#get-resource).
+> **Note:**
+> To get images on a OneNote page, first send a [GET request for the page content](onenote-get-content.md#page-html-content). This returns the URLs to the image resources on the page. Then you separate [GET requests to the image resources](onenote-get-content.md#image-or-other-file-resource).
 
 
 **Image attributes** 
@@ -38,12 +38,12 @@ An **img** element can optionally include **alt**, **height**, and **width** att
 
 **Image media types**
 
-Microsoft Graph supports TIFF, PNG, GIF, JPEG, and BMP image types. To capture an image that uses a different format that you don't want to convert, [send the binary data](#image-img-binary-src) in a multipart request. You don't need to use Base64 or otherwise encode the binary data that you send.
+Microsoft Graph supports TIFF, PNG, GIF, JPEG, and BMP image types. To capture an image that uses a different format that you don't want to convert, [send the binary data](#add-an-image-using-binary-data) in a multipart request. You don't need to use Base64 or otherwise encode the binary data that you send.
 
-> [!NOTE]
-> The API detects the original input image type, and returns it as the **data-fullres-src-type** attribute in the [output HTML](../howto/onenote-input-output-html.md#image-output). The API also returns the image type of the optimized image in **data-src-type**.
+> **Note:**
+> The API detects the original input image type, and returns it as the **data-fullres-src-type** attribute in the [output HTML](onenote_input_output_html.md#output-html). The API also returns the image type of the optimized image in **data-src-type**.
  
-See [limitations](#size-limits) that apply when creating pages that contain media.
+See [limitations](#size-limitations-for-post-pages-requests) that apply when creating pages that contain media.
 
 
 <a name="image-img-url-src"></a>
@@ -77,7 +77,7 @@ Content-Type: text/html
 <a name="image-img-binary-src"></a>
 ### Add an image using binary data
 
-In the input HTML of your request's **Presentation** part, include  `<img src="name:part-name" />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example) 
+In the input HTML of your request's **Presentation** part, include  `<img src="name:part-name" />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example-request) 
  that contains the binary image data. Just send the binary data, don't use Base64 or otherwise encode it.
 
 ```
@@ -145,7 +145,7 @@ Content-Type: text/html
 ### Add an image rendered from HTML
 When you pass the HTML as a data-block, be sure there is no active content that would require user credentials, or a pre-loaded browser plug-in. The engine that Microsoft Graph uses to render the HTML page into an image has no ability to log in a user, and doesn't include plug-ins like Adobe Flash, Apple QuickTime, and so-on. That also means that dynamically-loaded content, like might come with an AJAX script, won't appear if getting the data requires user login credentials or cookies.
 
-In the input HTML of your request's **Presentation** part, include  `<img data-render-src="name:part-name" />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example) 
+In the input HTML of your request's **Presentation** part, include  `<img data-render-src="name:part-name" />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example-request) 
  that contains the HTML.
 
 ```
@@ -188,7 +188,7 @@ it won't work. Instead, use URL-based real images like this:</p>
 <a name="image-object"></a>
 ### Add an image file as an attachment
 
-In the input HTML of your request's **Presentation** part, include  `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example) 
+In the input HTML of your request's **Presentation** part, include  `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example-request) 
  that contains the binary image data. Just send the binary data, don't use Base64 or otherwise encode it.
 
 ```
@@ -280,9 +280,9 @@ Content-Type: text/html
 
 You can add file attachments to OneNote pages using an **object** element in the input HTML. If you're adding a PDF file, you can use an **img** element to render the PDF pages as images. 
 
-[Add a file attachment](#file-object)</p>
+[Add a file attachment](#add-a-file-attachment)</p>
 Use `<object .../>` and send the file in a data part of a multipart request. Adds a file attachment that displays a file icon on the OneNote page.</p>
-[Add images of PDF file contents](#file-img-binary-data-render-src)</p>
+[Add images of PDF file contents](#add-images-of-pdf-file-contents)</p>
 Use `<img data-render-src="name:part-name" />` and send a PDF file in the data part of a multipart request. Renders each PDF page as a separate image on the OneNote page.</p>
 
 **File attributes**
@@ -298,7 +298,8 @@ The file media type, used to determine the file icon to use on the page, and whi
 
 
 <a name="file-media-types"></a>
-**File media types**  
+
+### File media types  
 Microsoft Graph uses predefined file-types icon for attached files, or a generic icon when the API doesn't recognize the file type. The following table shows some common file types that are recognized by the API.
 
 - application/pdf  
@@ -314,13 +315,13 @@ Microsoft Graph uses predefined file-types icon for attached files, or a generic
 - application/mspowerpoint
 - application/excel
 
-See [limitations](#size-limits) that apply when creating pages that contain media.
+See [limitations](#size-limitations-for-post-pages-requests) that apply when creating pages that contain media.
 
 
 <a name="file-object"></a>
 ### Add a file attachment
 
-In the input HTML of your request's **Presentation** part, include  `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />`, where *part-name* is the unique identifier for the data part in your [multipart request](../howto/onenote-create-page.md#example) 
+In the input HTML of your request's **Presentation** part, include  `<object data="name:part-name" data-attachment="file-name.file-ext" type="media-type/media-subtype" />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example-request) 
  that contains the binary file data. Just send the binary data, don't use Base64 or otherwise encode it.
 
 ```
@@ -355,7 +356,7 @@ Content-Type: image/jpeg
 <a name="file-binary-data-render-src"></a>
 ### Add images of PDF file contents
 
-In the input HTML of your request's **Presentation** part, include  `<img data-render-src="name:part-name" ... />`, where *part-name* is the unique identifier for the data part in your [multipart request](../howto/onenote-create-page.md#example) 
+In the input HTML of your request's **Presentation** part, include  `<img data-render-src="name:part-name" ... />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example-request) 
  that contains the binary file data. Just send the binary data, don't use Base64 or otherwise encode it.
 
 ```
@@ -388,7 +389,7 @@ Content-Type: application/pdf
 
 
 <a name="size-limits"></a>
-## Size limitations for *POST pages* requests
+## Size limitations for POST pages requests
 
 When sending image and file data, be aware of these limitations: <!--TODO: check these-->
 
@@ -402,7 +403,7 @@ When sending image and file data, be aware of these limitations: <!--TODO: check
 
 - Each request can contain up to five **img** elements that use **data-render-src** and one **object** elements that uses **data-render-src**. Additional image and file references are ignored.
 
-- The maximum number of images in a single POST is 30, no matter which method you use to send them to the API. Additional images are ignored. If you want to capture a webpage that contains a lot of images, consider [capturing the whole page as a snapshot](#image-img-url-data-render-src).
+- The maximum number of images in a single POST is 30, no matter which method you use to send them to the API. Additional images are ignored. If you want to capture a webpage that contains a lot of images, consider [capturing the whole page as a snapshot](#add-a-webpage-snapshot).
 
 
 ## When to use HTML versus *data-render-src* 
@@ -430,20 +431,22 @@ To create or update OneNote pages, you'll need to request appropriate permission
 
 **Permissions for _POST pages_**
 
-[!INCLUDE [Create perms](../includes/onenote/create-perms.txt)]
+- Notes.Create
+- Notes.ReadWrite
+- Notes.ReadWrite.All 
 
 **Permissions for _PATCH pages_**
 
-[!INCLUDE [Update perms](../includes/onenote/update-perms.txt)]
+- Notes.ReadWrite
+- Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md#notes-permissions).
 
 
 <a name="see-also"></a>
 ## Additional resources
 
-[!INCLUDE [Additional resources ](includes/additionalResources.txt)]
-
-
-[!INCLUDE [Enable filtering functionality ](../includes/controls/enablefiltering.xml)]
-
+- [Integrate with OneNote](integrate_with_onenote.md)
+- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  

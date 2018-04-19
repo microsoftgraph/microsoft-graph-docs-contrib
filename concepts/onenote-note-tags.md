@@ -16,7 +16,7 @@ In the HTML of a OneNote page, a note tag is represented by the `data-tag` attri
 - A checked to-do box:  `<p data-tag="to-do:completed">` 
 - A star:  `<h2 data-tag="important">` 
 
-A `data-tag` value is composed of a shape, and sometimes a status. (*see all [supported values](#built-in-tags)*)
+A `data-tag` value is composed of a shape, and sometimes a status. (*see all [supported values](#built-in-note-tags-for-onenote)*)
 
 | Property | Description |  
 |:------|:------|  
@@ -42,12 +42,12 @@ Separate multiple note tags with commas:
 You can define a `data-tag` on the following elements:
 
 - p 
-- ul, ol, li (*see more about [note tags on lists](#note-tags-lists)*)
+- ul, ol, li (*see more about [note tags on lists](#note-tags-on-lists)*)
 - img 
 - h1 - h6 
 - title 
 
-See [Built-in note tags](#built-in-tags) for a list of note tags that you can use with Microsoft Graph. Adding or updating custom tags using Microsoft Graph is not supported.
+See [Built-in note tags](#built-in-note-tags-for-onenote) for a list of note tags that you can use with Microsoft Graph. Adding or updating custom tags using Microsoft Graph is not supported.
  
 **Examples**
 
@@ -76,7 +76,7 @@ Authorization: Bearer {token}
 ]
 ```
 
-The following request creates a page that contains all [built-in note tags](#built-in-tags).
+The following request creates a page that contains all [built-in note tags](#built-in-note-tags-for-onenote).
 
 ``` 
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
@@ -147,7 +147,7 @@ Authorization: Bearer {token}
 </html>
 ``` 
 
-For more information about creating pages, see [Create OneNote pages](onenote-create-page.md). For more about updating pages, see [Update OneNote pages](onenote-update-page.md).
+For more information about creating pages, see [Create OneNote pages](onenote-create-page.md). For more about updating pages, see [Update OneNote pages](onenote_update_page.md).
 
 
 <a name="note-tags-lists"></a>
@@ -253,9 +253,9 @@ A `data-tag` attribute in the output HTML always includes a shape value, and it 
 </ul>
 ```
 
-Note that the `data-tag` attribute defined at the list level is pushed to its list items. For more information about using note tags with lists, see [Note tags on lists](#note-tags-lists).
+Note that the `data-tag` attribute defined at the list level is pushed to its list items. For more information about using note tags with lists, see [Note tags on lists](#note-tags-on-lists).
 
-> [!NOTE]
+> **Note:**
 > In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`. The `title` element doesn't return any note tag information.
 
 <a name="built-in-tags"></a>
@@ -269,16 +269,16 @@ The values you can assign to the `data-tag` attribute are shown below. Custom ta
 
 ||Tags||
 |:---|:---|:-----|
-| shape[:status] |to-do<br />to-do:completed|important|
-|question|definition|highlight|
-|contact|address|phone-number|
-|web-site-to-visit|idea|password|
-|critical|project-a|project-b|
-|remember-for-later|movie-to-see|book-to-read|
-|music-to-listen-to|source-for-article|remember-for-blog|
-|discuss-with-person-a<br />discuss-with-person-a:completed|discuss-with-person-b<br />discuss-with-person-b:completed|discuss-with-manager<br />discuss-with-manager:completed|
-|send-in-email|schedule-meeting<br />schedule-meeting:completed|call-back<br />call-back:completed|
-|to-do-priority-1<br />to-do-priority-1:completed|to-do-priority-2<br />to-do-priority-2:completed|client-request<br />client-request:completed|
+| `shape[:status]` |`to-do`<br />`to-do:completed`|`important`|
+|`question`|`definition`|`highlight`|
+|`contact`|`address`|`phone-number`|
+|`web-site-to-visit`|`idea`|`password`|
+|`critical`|`project-a`|`project-b`|
+|`remember-for-later`|`movie-to-see`|`book-to-read`|
+|`music-to-listen-to`|`source-for-article`|`remember-for-blog`|
+|`discuss-with-person-a`<br />`discuss-with-person-a:completed`|`discuss-with-person-b`<br />`discuss-with-person-b:completed`|`discuss-with-manager`<br />`discuss-with-manager:completed`|
+|`send-in-email`|`schedule-meeting`<br />`schedule-meeting:completed`|`call-back`<br />`call-back:completed`|
+|`to-do-priority-1`<br />`to-do-priority-1:completed`|`to-do-priority-2`<br />`to-do-priority-2:completed`|`client-request`<br />`client-request:completed`|
 
 
 <a name="request-response-info"></a>
@@ -298,20 +298,27 @@ To create or update OneNote pages, you'll need to request appropriate permission
 
 **Permissions for _POST pages_**
 
-[!INCLUDE [Create perms](includes/create-perms.txt)] 
+- Notes.Create
+- Notes.ReadWrite
+- Notes.ReadWrite.All  
 
 **Permissions for _PATCH pages_**
 
-[!INCLUDE [Update perms](includes/update-perms.txt)]
+- Notes.ReadWrite
+- Notes.ReadWrite.All  
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](../howto/onenote-auth.md).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md).
 
 
 <a name="see-also"></a>
 ## Additional resources
 
-- [Create OneNote pages](../howto/onenote-create-page.md)
-- [Update OneNote page content](../howto/onenote-update-page.md)
-[!INCLUDE [](includes/additionalResources.txt)] 
+- [Create OneNote pages](onenote-create-page.md)
+- [Update OneNote page content](onenote_update_page.md)
+- [Integrate with OneNote](integrate_with_onenote.md)
+- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+ 
 
 

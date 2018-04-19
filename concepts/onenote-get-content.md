@@ -18,7 +18,7 @@ To construct the request URI, start with the service root URL:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
-Then append the endpoint of the resource you want to retrieve. ([Resource paths](#resource-paths) are shown in the next section.)
+Then append the endpoint of the resource you want to retrieve. ([Resource paths](#resource-paths-for-get-requests) are shown in the next section.)
 
 
 Your full request URI will look like one of these examples:
@@ -26,18 +26,17 @@ Your full request URI will look like one of these examples:
 - `https://graph.microsoft.com/v1.0/me/onenote/notes/pages`</p>
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?select=title,self`</p>
 
-[!INCLUDE [service root url note](../includes/onenote/service-root-note.xml)]
-
+> **Note:** Learn more about the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
 
 <a name="resource-paths"></a>
 ## Resource paths for GET requests
 
 Use the following resource paths to get pages, sections, section groups, notebooks, and image or file resources.
 
-[Page collection](#get-pages)&nbsp;&nbsp;|&nbsp;&nbsp;[Page entity](#get-page)&nbsp;&nbsp;|&nbsp;&nbsp;[Page preview](#get-page-preview)&nbsp;&nbsp;|&nbsp;&nbsp;[Page HTML content](#get-page-content)&nbsp;&nbsp;|&nbsp;&nbsp;
-[Section collection](#get-sections)&nbsp;&nbsp;|&nbsp;&nbsp;[Section entity](#get-section)&nbsp;&nbsp;|&nbsp;&nbsp;[SectionGroup collection](#get-section-groups)&nbsp;&nbsp;|&nbsp;&nbsp;
-[SectionGroup entity](#get-section-group)&nbsp;&nbsp;|&nbsp;&nbsp;[Notebook collection](#get-notebooks)&nbsp;&nbsp;|&nbsp;&nbsp;[Notebook entity](#get-notebook)&nbsp;&nbsp;|&nbsp;&nbsp;
-[Image or other file resource](#get-resource)
+[Page collection](#page-collection)&nbsp;&nbsp;|&nbsp;&nbsp;[Page entity](#page-entity)&nbsp;&nbsp;|&nbsp;&nbsp;[Page preview](#page-preview)&nbsp;&nbsp;|&nbsp;&nbsp;[Page HTML content](#page-html-content)&nbsp;&nbsp;|&nbsp;&nbsp;
+[Section collection](#section-collection)&nbsp;&nbsp;|&nbsp;&nbsp;[Section entity](#section-entity)&nbsp;&nbsp;|&nbsp;&nbsp;[SectionGroup collection](#sectiongroup-collection)&nbsp;&nbsp;|&nbsp;&nbsp;
+[SectionGroup entity](#sectiongroup-entity)&nbsp;&nbsp;|&nbsp;&nbsp;[Notebook collection](#notebook-collection)&nbsp;&nbsp;|&nbsp;&nbsp;[Notebook entity](#notebook-entity)&nbsp;&nbsp;|&nbsp;&nbsp;
+[Image or other file resource](#image-or-other-file-resource)
 
 <a name="get-pages"></a>
 ### Page collection
@@ -105,7 +104,7 @@ The JSON response contains the preview content, which you can use to help users 
 
 The **previewText** property contains a text snippet from the page. Microsoft Graph returns complete phrases, up to a maximum of 300 characters. 
 
-If the page has an image that can be used to build a preview UI, the **href** property in the **previewImageUrl** object contains a link to a public, pre-authenticated [image resource](#get-resource). You can use this link in HTML,
+If the page has an image that can be used to build a preview UI, the **href** property in the **previewImageUrl** object contains a link to a public, pre-authenticated [image resource](#image-or-other-file-resource). You can use this link in HTML,
 
 **Example:** `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`. Otherwise, **href** returns null.
 
@@ -117,12 +116,12 @@ If the page has an image that can be used to build a preview UI, the **href** pr
 Get the HTML content of a page 
 `../pages/{page-id}/content[?includeIDs,preAuthenticated]`
 
-(*learn more about [returned HTML content](../howto/onenote-input-output-html.md)*) 
+(*learn more about [returned HTML content](onenote_input_output_html.md)*) 
 
  
-Use the **includeIDs=true** query string option to get generated IDs used to [update the page](../howto/onenote-update-page.md).
+Use the **includeIDs=true** query string option to get generated IDs used to [update the page](onenote_update_page.md).
 
-Use the **preAuthenticated=true** query string option to get public URLs to the [image resources](#get-resource) that are on the page. The public URLs are valid for one hour. 
+Use the **preAuthenticated=true** query string option to get public URLs to the [image resources](#image-or-other-file-resource) that are on the page. The public URLs are valid for one hour. 
 
 - - -
 
@@ -253,9 +252,9 @@ And an **object** tag includes the endpoint for the file resource in the **data*
     type="application/pdf" ... />
 ```
 
-To get public, pre-authenticated URLs to the image resources on a page, include **preAuthenticated=true** in the query string when you [retrieve the page content](#get-page-content) (**example:**  `GET ../pages/{page-id}/content?preAuthenticated=true`). The public URLs that are returned in the [output HTML](onenote_input_output_html.md#image-output-examples) are valid for one hour. Without this flag, retrieved images won't render directly in a browser because they are private and require authorization to retrieve them, like the rest of the page contents. 
+To get public, pre-authenticated URLs to the image resources on a page, include **preAuthenticated=true** in the query string when you [retrieve the page content](#page-html-content) (**example:**  `GET ../pages/{page-id}/content?preAuthenticated=true`). The public URLs that are returned in the [output HTML](onenote_input_output_html.md#output-html-examples-for-images) are valid for one hour. Without this flag, retrieved images won't render directly in a browser because they are private and require authorization to retrieve them, like the rest of the page contents. 
 
-> [!NOTE]
+> **Note:**
 > Getting a collection of resources is not supported. 
 
 When you get a file resource, you don't need to include an **Accept** content type in the request.
@@ -271,11 +270,11 @@ in the Microsoft Graph API REST reference.
 
 <a name="example"></a>
 ## Example GET requests
-You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#query-options) in GET requests to Microsoft Graph. 
+You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#supported-odata-query-string-options) in GET requests to Microsoft Graph. 
 
 **Remember:**
 
-- All GET requests start with the [service root URL](#request-uri).
+- All GET requests start with the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
 
   **Examples:** 
   - `https://www.onenote.com/api/v1.0/me/notes`
@@ -431,7 +430,7 @@ And the next five. (`search` is available for consumer notebooks only)
 [GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=10
 ```
 
-> [!NOTE]
+> **Note:**
 > If both **search** and **filter** are applied to the same request, the results include only those entities that match both criteria.
  
 **select**  
@@ -472,7 +471,7 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> [!NOTE]
+> **Note:**
 > GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **@odata.nextLink** link in the response that you can use to get the next 20 entries.
  
 
@@ -481,17 +480,17 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 
 When sending GET requests to Microsoft Graph, you can use OData query string options to customize your query and get just the information you need. They can also improve performance by reducing the number of calls to the service and the size of the response payload.
 
-> [!NOTE]
+> **Note:**
 > For readability, the examples in this article don't use the %20 percent-encoding required for spaces in the URL query string: `filter=isDefault%20eq%20true`
  
 | Query option | Example and description |  
 |------|------|  
 | count | <p>`count=true`</p><p>The count of entities in the collection. The value is returned in the **@odata.count** property in the response.</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>The navigation properties to return inline in the response. The following properties are supported for **expand** expressions:<br /> - Pages: **parentNotebook**, **parentSection**<br /> - Sections: **parentNotebook**, **parentSectionGroup**<br /> - Section groups: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> - Notebooks: **sections**, **sectionGroups**</p><p>By default, GET requests for pages expands **parentSection** and select the section's **id**, **name**, and **self** properties. Default GET requests for sections and section groups expand both **parentNotebook** and **parentSectionGroup**, and select the parents' **id**, **name**, and **self** properties. </p><p>Can be used for a single entity or a collection. Separate multiple properties with commas. Property names are case sensitive.</p> |   
-| filter | <p>`filter=isDefault eq true`</p><p>A Boolean expression for whether to include an entry in the result set. Supports the following OData operators and functions:<br /> - Comparison operators: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> - Logical operators: **and**, **or**, **not**<br /> - String functions: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>[Property](#properties) names and OData string comparisons are case sensitive. We recommend using the OData **tolower** function for string comparisons. Example: `filter=tolower(name) eq 'spring'`</p> |  
-| orderby | <p>`orderby=title,createdTime desc`</p><p>The [properties](#properties) to sort by, with an optional **asc** (default) or **desc** sort order. You can sort by any property of the entity in the requested collection.</p><p>The default sort order for notebooks, section groups, and sections is `name asc`, and for pages is `lastModifiedTime desc` (last modified page first).</p><p>Separate multiple properties with commas, and list them in the order that you want them applied. Property names are case sensitive.</p> |  
+| filter | <p>`filter=isDefault eq true`</p><p>A Boolean expression for whether to include an entry in the result set. Supports the following OData operators and functions:<br /> - Comparison operators: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> - Logical operators: **and**, **or**, **not**<br /> - String functions: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>[Property](#onenote-entity-properties) names and OData string comparisons are case sensitive. We recommend using the OData **tolower** function for string comparisons. Example: `filter=tolower(name) eq 'spring'`</p> |  
+| orderby | <p>`orderby=title,createdTime desc`</p><p>The [properties](#onenote-entity-properties) to sort by, with an optional **asc** (default) or **desc** sort order. You can sort by any property of the entity in the requested collection.</p><p>The default sort order for notebooks, section groups, and sections is `name asc`, and for pages is `lastModifiedTime desc` (last modified page first).</p><p>Separate multiple properties with commas, and list them in the order that you want them applied. Property names are case sensitive.</p> |  
 | search | <p>`search=cell div`</p><p>Available for consumer notebooks only.</p><p>The term or phrase to search for in the page title, page body, image alt text, and image OCR text. By default, search queries return results sorted by relevance.</p><p>OneNote uses Bing full-text search to support phrase search, stemming, spelling forgiveness, relevance and ranking, word breaking, multiple languages, and other full-text search features. Search strings are case insensitive.</p><p>Applies only to pages in notebooks owned by the user (not shared with the user). Indexed content is private and can only be accessed by the owner. Password-protected pages are not indexed. Applies only to the `pages` endpoint.</p> |  
-| select | <p>`select=id,title`</p><p>The [properties](#properties) to return. Can be used for a single entity or for a collection. Separate multiple properties with commas. Property names are case sensitive.</p> |  
+| select | <p>`select=id,title`</p><p>The [properties](#onenote-entity-properties) to return. Can be used for a single entity or for a collection. Separate multiple properties with commas. Property names are case sensitive.</p> |  
 | skip | <p>`skip=10`</p><p>The number of entries to skip in the result set. Typically used for paging results.</p> |  
 | top | <p>`top=50`</p><p>The number of entries to return in the result set, up to a maximum of 100. The default value is 20.</p> |  
 
@@ -542,7 +541,7 @@ Microsoft Graph supports the following OData operators and functions in **filter
  
 
 <a name="properties"></a>
-## Page, section, section group, and notebook properties
+## OneNote entity properties
 
 The **filter**, **select**, **expand**, and **orderby** query expressions can include properties of OneNote entities. 
 
@@ -610,7 +609,8 @@ For more information about permission scopes and how they work, see [Microsoft G
 <a name="see-also"></a>
 ## Additional resources
 
-- [Input and output HTML for OneNote pages](../howto/onenote-input-output-html.md)
-[!INCLUDE [additional resources](includes/additionalResources.txt)]
-
-[!INCLUDE [Enable filtering functionality ]( includes/enablefiltering.xml)]
+- [Input and output HTML for OneNote pages](onenote_input_output_html.md)
+- [Integrate with OneNote](integrate_with_onenote.md)
+- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  

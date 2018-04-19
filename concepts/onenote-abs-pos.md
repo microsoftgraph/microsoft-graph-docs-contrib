@@ -6,7 +6,7 @@ The body of a OneNote page can contain multiple direct `div`, `img`, and `object
 <a name="attributes"></a>
 ## Attributes and positioning behavior
 
-Use the `data-absolute-enabled` and [`style`](#style-attributes) attributes to create absolute positioned elements on a page, as follows:
+Use the `data-absolute-enabled` and [`style`](#supported-css-style-attributes) attributes to create absolute positioned elements on a page, as follows:
 
 - The body element must specify `data-absolute-enabled="true"`. If omitted or set to `false`, all body content is rendered inside a `_default` absolute positioned div that the API creates, and all position settings are ignored.
 
@@ -126,12 +126,15 @@ The OneNote API returns the following information in the response.
 To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
 
 ### Permissions for _POST pages_ 
-[!INCLUDE [Create perms](includes/postPermission.txt)]
+- Notes.Create
+- Notes.ReadWrite
+- Notes.ReadWrite.All  
 
 
 ### Permissions for _PATCH pages_ 
 
-[!INCLUDE [Create perms](includes/patchPermission.txt)]
+- Notes.ReadWrite
+- Notes.ReadWrite.All
 
 For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md#notes-permissions).
 
@@ -140,4 +143,9 @@ For more information about permission scopes and how they work, see [OneNote per
 ## Additional resources
 
 - [Create OneNote pages](onenote-create-page.md)
-- [Update OneNote page content](onenote-update-page.md)[!INCLUDE [additional resources](includes/additionalResources.txt)]
+- [Update OneNote page content](onenote_update_page.md)
+- [Integrate with OneNote](integrate_with_onenote.md)
+- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+

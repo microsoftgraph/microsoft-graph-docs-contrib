@@ -7,7 +7,7 @@ Use the OneNote API to extract business card data from an image, or recipe and p
 <a name="attributes"></a>
 ## Extraction attributes
 
-To extract and transform data, simply include a div that specifies the source content, extraction method, and fallback behavior in your [create-page](onenote-create-page.md) or [update-page](onenote-update-page.md) request. The API renders extracted data on the page in an easy-to-read format. 
+To extract and transform data, simply include a div that specifies the source content, extraction method, and fallback behavior in your [create-page](onenote-create-page.md) or [update-page](onenote_update_page.md) request. The API renders extracted data on the page in an easy-to-read format. 
 
 ```
 <div
@@ -93,7 +93,7 @@ Specify the `extract.businesscard` method and use the default `render` fallback.
 </div>
 ```
  
-For business card extractions, the image is sent as a named part in a multipart request. See [Add images and files](../howto/onenote-images-files.md) for examples that show how to send an image in a request.
+For business card extractions, the image is sent as a named part in a multipart request. See [Add images and files](onenote_images_files.md) for examples that show how to send an image in a request.
 
 
 <a name="recipe"></a>
@@ -219,7 +219,7 @@ Specify the `extract.product` method and the `none` fallback. Also send an `a` e
 
 If you don't know the content type (business card, recipe, or product) that you're sending, you can use the unqualified `extract` method and let the OneNote API automatically detect the type. You might want to do this if your app sends different capture types.
 
-> [!NOTE]
+> **Note:**
 > If you do know the content type that you're sending, you should use the `extract.businesscard`, `extract.recipe`, or `extract.product` method. In some cases, this can help to optimize the extraction results.
  
 ### Common scenarios for unknown extractions
@@ -252,11 +252,14 @@ To create or update OneNote pages, you'll need to request appropriate permission
 
 **Permissions for _POST pages_**
 
-[!INCLUDE [Create perms](includes/create-perms.txt)] 
+- Notes.Create
+- Notes.ReadWrite
+- Notes.ReadWrite.All  
 
 **Permissions for _PATCH pages_**
 
-[!INCLUDE [Update perms](includes/update-perms.txt)]
+- Notes.ReadWrite
+- Notes.ReadWrite.All
 
 For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions_reference.md).
 
@@ -264,9 +267,11 @@ For more information about permission scopes and how they work, see [Microsoft G
 <a name="see-also"></a>
 ## Additional resources
 
-- [Create OneNote pages](../howto/onenote-create-page.md)
-- [Update OneNote page content](../howto/onenote-update-page.md)
-- [Add images and files](../howto/onenote-images-files.md)
-[!INCLUDE [additional resources](includes/additionalResources.txt)] 
-
+- [Create OneNote pages](onenote-create-page.md)
+- [Update OneNote page content](onenote_update_page.md)
+- [Add images and files](onenote_images_files.md)
+- [Integrate with OneNote](integrate_with_onenote.md)
+- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
 
