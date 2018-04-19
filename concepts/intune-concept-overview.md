@@ -1,6 +1,8 @@
 # Intune devices and apps API overview
 
-Microsoft Intune helps enterprises manage devices and apps within an organization. You can use the Intune API in Microsoft Graph to manage devices, apps, and even Intune itself while using your preferred tools. If you're an ISV, you can also use the Intune API to manage client tenants.
+Microsoft Intune helps enterprises manage devices and apps within an organization. You can use the Intune API in Microsoft Graph to manage devices, apps, and even Intune itself while using your preferred tools. 
+
+If you're an ISV, you can also use the Intune API to manage client tenants.
 
 ## Why integrate with Intune?
 
