@@ -1,11 +1,8 @@
 # Overview of security in Microsoft Graph (preview) 
 
-Microsoft Graph lets you connect with Microsoft Intelligent Security Graph to leverage Microsoft and security partner resources, and build better threat response solutions. It also lets you integrate with security capabilities in Azure Active Directory to detect identity risks.
+Microsoft Graph lets you connect with Microsoft Intelligent Security Graph to leverage Microsoft and security partner resources, and build better threat response solutions. It also gives access to user and account risks detected by Azure Active Directory's Identity Protection service, allowing you to integrate account risk data into your security applications.
 
 ## Why use the security API and connect with Microsoft Intelligent Security Graph?
-
-<!-- Edward - please describe what Microsoft Intelligent Security Graph is, how the security API relates to it, and what value developers get out of using the security API.
--->
 
 Microsoft Intelligent Security Graph is a unified platform for combatting cyberthreats. It powers real-time threat protection for Microsoft products and services and supports an ecosystem of integrated solutions.
 
@@ -25,13 +22,11 @@ Dive deep into related security-relevant inventory (like users, hosts, and apps)
 
 ## Why use Azure Active Directory to protect identities in your organization?
 
-{Michael - Please start by describe why protecting identities is important to an organization. Extract from this [getting started](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection#getting-started) section which describes why all identities should be protected, and users identified to be at risk should be protected from further abuse. 
+Most security breaches are the result of attackers stealing a user’s identity, and attackers have become terrifyingly effective in leveraging third party breaches, password spray attacks, sophisticated phishing attacks. This means you need to protect all your user accounts from these attacks and proactively prevent compromised identities from being abused.
 
-Then list the kinds of identity risks that the ID protection API detects. 
+Azure Active Directory uses adaptive machine learning algorithms and heuristics to detect anomalies that indicate potentially compromised accounts. Using this data, Identity Protection protects your users with risk-based conditional access policies and generates reports and alerts on its detections.
 
-Then complete this section by recommending what can be done with the detected data - configure risk-based policies, and so on.}
-
-{<=1 pages of value proposition for developers.}
+Today, Microsoft Graph gives easy access to Azure AD Premium P1 and P2 customers to query risk detections made by Identity Protection and use those events in SIEM systems and security applications.
 
 ## Next steps
 
