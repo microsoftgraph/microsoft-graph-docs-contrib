@@ -1,4 +1,5 @@
 <Menu>
+  <Item Label="EXPLORE" url="" />
   <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." >    
 	<Item text="Services in Microsoft Graph" url="/en-us/concepts/overview-major-services" />
 	<Item text="Users you can reach" url="/en-us/concepts/users-you-can-reach" >
@@ -29,7 +30,7 @@
   <Item text="Calendar (Outlook)" url="/en-us/concepts/outlook-calendar-concept-overview" >
 	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
   </Item>
-  <Item text="Cross-device experiences" url="/en-us/concepts/cross-device-concept-overview" >
+  <Item text="Cross-device experiences (Project Rome)" url="/en-us/concepts/cross-device-concept-overview" >
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="Device relay (preview)" url="/en-us/concepts/device-relay-concept-overview" />
   </Item>
@@ -376,7 +377,7 @@
       </Item>
     </Item>
   </Item>
-  <Item text="Cross-device experiences" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
+  <Item text="Cross devices (Project Rome)" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
 		<Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
 		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
 		<Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
@@ -2487,7 +2488,7 @@
         </Item>
       </Item>
     </Item>
-	<Item text="Cross-device experiences" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
+	<Item text="Cross devices (Project Rome)" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
 		<Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
 		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
 		<Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
