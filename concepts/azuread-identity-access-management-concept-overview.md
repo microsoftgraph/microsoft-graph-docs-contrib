@@ -40,7 +40,7 @@ You can also [manage domains](../api-reference/v1.0/resources/domain.md) associa
 
 ### Tenant management
 
-You can use Azure AD APIs to:
+Azure AD APIs for tenant management allow you to:
 
 - Get information about an [organization](../api-reference/v1.0/resources/organization.md), such as its business address, technical and notification contacts, active service subscriptions, and the domains associated with it.
 - Get information about the [service SKUs](../api-reference/v1.0/resources/subscribedsku.md) that a company is subscribed to.
@@ -57,7 +57,7 @@ You can get secure access to resources by activating administrative privileges o
 
 ## Next steps
 
-- Find out how to [Use the Azure AD REST API](../api-reference/v1.0/resources/azure_ad_overview.md).
+- Find out how to [Use the Azure AD REST APIs](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Use Azure AD to [authenticate](auth_overview.md) to Microsoft Graph. 
 - Integrate [Azure AD sign-in](https://azure.microsoft.com/en-us/develop/identity/signin/) into your app or website.
 - See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
