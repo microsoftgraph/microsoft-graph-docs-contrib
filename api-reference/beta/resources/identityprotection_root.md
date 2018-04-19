@@ -32,5 +32,5 @@ Use the following operations to get these events and associated information:
 
 # See also
 
-[About Azure Active Directory Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
-[Get started with Azure Active Directory identity protection and Microsoft Graph](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
+* [About Azure Active Directory Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
+* [Get started with Azure Active Directory identity protection and Microsoft Graph](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
