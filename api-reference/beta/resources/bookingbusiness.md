@@ -36,7 +36,7 @@ Add link in See Also section to concept topic and API overview.
 |[List services](../api/bookingbusiness_list_services.md) |[bookingService](bookingservice.md) collection| Get a bookingService object collection.|
 |[Create bookingStaffMember](../api/bookingbusiness_post_staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Create a new bookingStaffMember by posting to the staffMembers collection.|
 |[List staffMembers](../api/bookingbusiness_list_staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Get a bookingStaffMember object collection.|
-|[getCalendarView](../api/bookingbusiness_getcalendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** that occurs in the specified date range.|
+|[getCalendarView](../api/bookingbusiness_getcalendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
 |[publish](../api/bookingbusiness_publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
 |[unpublish](../api/bookingbusiness_unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
 
