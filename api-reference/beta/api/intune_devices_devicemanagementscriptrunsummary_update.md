@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md) object.
+Update the properties of a [deviceManagementScriptRunSummary](../resources/intune_shared_devicemanagementscriptrunsummary.md) object.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -30,9 +30,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md) object.
+In the request body, supply a JSON representation for the [deviceManagementScriptRunSummary](../resources/intune_shared_devicemanagementscriptrunsummary.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md).
+The following table shows the properties that are required when you create the [deviceManagementScriptRunSummary](../resources/intune_shared_devicemanagementscriptrunsummary.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -45,7 +45,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptRunSummary](../resources/intune_shared_devicemanagementscriptrunsummary.md) object in the response body.
 
 ## Example
 ### Request

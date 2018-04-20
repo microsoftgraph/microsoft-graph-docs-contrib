@@ -9,15 +9,13 @@ The resource that represents an instance of a device or troubleshooting report, 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get reportRoot](../api/intune_shared_reportroot_get.md)|[reportRoot](../resources/intune_shared_reportroot.md)|Read properties and relationships of the [reportRoot](../resources/intune_deviceconfig_reportroot.md) object.|
-|[Update reportRoot](../api/intune_shared_reportroot_update.md)|[reportRoot](../resources/intune_shared_reportroot.md)|Update the properties of a [reportRoot](../resources/intune_deviceconfig_reportroot.md) object.|
+|[Get reportRoot](../api/intune_shared_reportroot_get.md)|[reportRoot](../resources/intune_shared_reportroot.md)|Read properties and relationships of the [reportRoot](../resources/intune_shared_reportroot.md) object.|
+|[Update reportRoot](../api/intune_shared_reportroot_update.md)|[reportRoot](../resources/intune_shared_reportroot.md)|Update the properties of a [reportRoot](../resources/intune_shared_reportroot.md) object.|
 |[deviceConfigurationUserActivity function](../api/intune_shared_report.md)|Metadata for the device configuration user activity report|
-|[deviceConfigurationDeviceActivity function](../api/intune_shared_report.md)|Metadata for the device configuration device activity report|
-|[managedDeviceEnrollmentFailureDetails function](../api/intune_shared_report.md)|Not yet documented|
-|[managedDeviceEnrollmentFailureDetails function](../api/intune_shared_report.md)|Not yet documented|
-|[managedDeviceEnrollmentFailureTrends function](../api/intune_shared_report.md)|Metadata for the enrollment failure trends report|
-|[managedDeviceEnrollmentTopFailures function](../api/intune_shared_report.md)|Not yet documented|
-|[managedDeviceEnrollmentTopFailures function](../api/intune_shared_report.md)|Not yet documented|
+|[deviceConfigurationDeviceActivity function](../api/intune_shared_report_deviceconfigurationdeviceactivity.md)|Metadata for the device configuration device activity report|
+|[managedDeviceEnrollmentFailureDetails function](../api/intune_shared_report_manageddeviceenrollmentfailuredetails.md)|Not yet documented|
+|[managedDeviceEnrollmentFailureTrends function](../api/intune_shared_report_manageddeviceenrollmentfailuretrends.md)|Metadata for the enrollment failure trends report|
+|[managedDeviceEnrollmentTopFailures function](../api/intune_shared_report_manageddeviceenrollmenttopfailures.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

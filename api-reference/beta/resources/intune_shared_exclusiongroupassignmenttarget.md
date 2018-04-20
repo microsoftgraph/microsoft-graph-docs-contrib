@@ -6,12 +6,12 @@
 
 Represents a group that should be excluded from an assignment.
 
-Inherits from [groupAssignmentTarget](../resources/intune_apps_groupassignmenttarget.md)
+Inherits from [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune_apps_groupassignmenttarget.md)|
+|groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)|
 
 ## Relationships
 None

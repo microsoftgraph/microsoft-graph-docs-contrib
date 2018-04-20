@@ -25,7 +25,7 @@ Contains properties for user run state of the device management script.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune_devices_devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices of specific user.|
+|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune_shared_devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices of specific user.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
