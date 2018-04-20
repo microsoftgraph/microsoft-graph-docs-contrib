@@ -13,7 +13,7 @@ Represents the set of conditions and exceptions that are available for a rule.
 | fromAddresses | Collection ([recipient](recipient.md)) | Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply. |
 | hasAttachments | Boolean | Indicates whether an incoming message must have attachments in order for the condition or exception to apply. |
 | headerContains | Collection (String) | Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply. |
-| importance | String | The importance that is stamped on an incoming message in order for the condition or exception to apply: `low`, `normal`, `high`. |
+| importance | String | The importance that is stamped on an incoming message or group post in order for the condition or exception to apply: `low`, `normal`, `high`. |
 | isApprovalRequest | Boolean | Indicates whether an incoming message must be an approval request in order for the condition or exception to apply. |
 | isAutomaticForward | Boolean | Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply. |
 | isAutomaticReply | Boolean | Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply. |
