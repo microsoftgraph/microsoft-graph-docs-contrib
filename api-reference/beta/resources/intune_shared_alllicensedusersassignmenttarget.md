@@ -6,7 +6,7 @@
 
 Represents an assignment to all licensed users in the tenant.
 
-Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune_apps_deviceandappmanagementassignmenttarget.md)
+Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)
 
 ## Properties
 |Property|Type|Description|
