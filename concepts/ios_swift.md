@@ -57,6 +57,14 @@ To get started, you'll need:
 
    You will receive confirmation that the pods have been imported into the project. For more information, see [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
+## Build the MSAL authentication framework
+
+The preview version of MSAL is distributed as source code using Carthage. To build the source code, do these steps:
+
+1. Open the Bash terminal and go to the app root folder.
+2. Create a **cartfile**: Copy `echo "github \"AzureAD/microsoft-authentication-library-for-objc\" \"master\"" > Cartfile`  into the terminal and run the command.
+3. Build the MSAL library: Copy `carthage update` into the terminal and run the command.
+
 
 ## Enable keychain sharing
  
