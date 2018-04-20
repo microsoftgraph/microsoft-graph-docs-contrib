@@ -16,8 +16,7 @@ GET /groups/{id}/planner/plans
 
 When [creating a new plan](../api/planner_post_plans.md), give the plan a group owner by setting the `owner` property on a plan object. A plan must be owned by a group. A group can own multiple plans.
 
-> **NOTE:**
->  The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using using [Create group](../api/group_post_groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group_post_members.md).
+> **NOTE:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using using [Create group](../api/group_post_groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group_post_members.md).
 
 ## Plans
 [Plans](plannerplan.md) are the containers of [tasks](plannertask.md). 
@@ -51,7 +50,7 @@ The custom columns in the bucket task board are represented by [bucket](plannerb
 
 All the ordering is controlled by the principles identified in [Planner order hints](planner_order_hint_format.md).
 
-## <a name="delta">Track Changes -Delta- </a>
+## <a name="delta">Track changes using delta query</a>
 
 Planner's delta query supports querying objects that the user is subscribed to.
 
@@ -71,7 +70,7 @@ Users are subscribed to the following objects:
 
 ### <a name="objectcache">Populate the object cache for delta queries</a>
 
-A developer looking to use the Planner delta query API should maintain a local cache of objects that the user is interested in observing, in order to apply the changes from the delta response feed.
+If you want to use the Planner delta query API, maintain a local cache of objects that the user is interested in observing in order to apply the changes from the delta response feed.
 
 The delta payload objects that the Planner delta query can currently return will be of the following types:
 
@@ -88,7 +87,7 @@ Use the corresponding `GET` methods on the resource to obtain the initial state 
 
 ### Differentiating between object creation and object modification
 
-In certain scenarios, the caller may wish to distinguish between object creation and object modification within Planner's delta query feed.
+In certain scenarios, the caller might want to distinguish between object creation and object modification within Planner's delta query feed.
 
 These guidelines can be used to infer object creation:
 
@@ -98,20 +97,20 @@ These guidelines can be used to infer object creation:
 
 ### Usage
 
-The caller is expected to have a cache containing subscribed objects. Read [Populate the object cache for delta queries](#populate-the-object-cache-for-delta-queries) to learn about filling a local cache of subscribed objects.
+The caller is expected to have a cache containing subscribed objects. For details about how to fill the local cache of subscribed objects, see [Populate the object cache for delta queries](#populate-the-object-cache-for-delta-queries).
 
 Planner's delta query call flow is as follows:
 
-1. The caller initiates a Delta Sync query, obtaining a nextLink and empty collection of changes.
+1. The caller initiates a delta sync query, obtaining a `nextLink` and an empty collection of changes.
 2. The caller must [populate the object cache for delta queries](#populate-the-object-cache-for-delta-queries) with objects that the user is subscribed to, updating its cache.
-3. The caller follows the nextLink provided in the initial Delta Sync query to obtain a new deltaLink any changes since previous step.
+3. The caller follows the `nextLink` provided in the initial delta sync query to obtain a new `deltaLink` to any changes since previous step.
 4. The caller applies the changes in the returned delta response to the objects in its cache.
-5. The caller follows the new deltaLink to obtain the next deltaLink and changes since the current deltaLink was generated.
-6. The caller applies the changes (if any) and waits a short duration before re-executing the previous step and this step.
+5. The caller follows the new deltaLink to obtain the next deltaLink and changes since the current `deltaLink` was generated.
+6. The caller applies the changes (if any) and waits a short time before rerunning the previous step and this step.
 
 ## Planner resource versioning
 
-Planner versions all resources using **etags**. These **etags** are returned with `@odata.etag` property on each resource. `PATCH` and `DELETE` requests require the last **etag** known by the client to be specified with `If-Match` header.
+Planner versions all resources using **etags**. These **etags** are returned with `@odata.etag` property on each resource. `PATCH` and `DELETE` requests require the last **etag** known by the client to be specified with a `If-Match` header.
 Planner allows changes to older versions of resources if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison. 
 Each resource has a unique **etag**. Etag values for different resources, including those with containment relationships, cannot be compared.
 The client apps are expected to handle versioning related [error codes](../../../concepts/errors.md) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
