@@ -81,9 +81,9 @@ To add the keychain group:
 
 ## Authenticating with Microsoft Graph
 
-To revisit the UI workflow, the app asks the user to authenticate. After authentication, the user can send a mail to another user. To make requests against Microsoft Graph, the sample uses the **MSAL** authentication library to authenticate HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's a class that implements the **MSAL** library. It's called **AuthenticationClass.swift.** We will review a function that requests and acquires an access token for calling the Microsoft Graph API.
+The UI workflow is as follows: The app asks the user to authenticate. After authentication, the user can send a mail to another user. To make requests against Microsoft Graph, the sample uses the **MSAL** authentication library to authenticate HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project the **AuthenticationClass.swift.** class implements the **MSAL** library and acquires the access token needed for Microsoft Graph REST operations.
 
-1. Open the Xcode project workspace (**Graph-iOS-Swift-Connect.xcworkspace**), and open the class file **AuthenticationClass.swift** Find the following code in that class.
+1. Open the **XCode** project workspace (**Graph-iOS-Swift-Connect.xcworkspace**), and open the class file **AuthenticationClass.swift** Find the following code in that class.
 
 
   ```swift
@@ -143,7 +143,7 @@ To revisit the UI workflow, the app asks the user to authenticate. After authent
   ```
 
 
-2. We'll call this method from **ConnectViewController.swift**. This controller is the default view that the app loads with a single button named **Connect** that the user taps to start authenticating. 
+2. We'll call the **connectToGraph** function from **ConnectViewController.swift**. This controller is the default view that the app loads with a single button named **Connect** that the user taps to start authenticating. 
 
   ```swift
 // MARK: Authentication
@@ -177,7 +177,9 @@ private extension ConnectViewController {
 
 ## Send an email with Microsoft Graph
 
-After configuring the project for authenticating, the sample gets the authenticated user's email address, display name, and profile photo. Then the sample uploads the profile picture to OneDrive and asks OneDrive for the sharing Url of the picture. Finally, the sample sends a mail message to a user by sending REST requests to Microsoft Graph. The message body contains the picture sharing link and the picture itself as an attached image file. The default recipient is the authenticated user, but the sample accepts the email address of any user. 
+After connecting the user to Microsoft Graph, the sample gets the authenticated user's email address, display name, and profile photo. The sample uploads the profile photo to the user's OneDrive root folder and asks OneDrive for the sharing Url of the picture. Finally, the sample posts a REST request to Microsoft Graph to send a mail message to the provided email address. 
+
+The message body contains the picture sharing link and the picture itself as an attached image file. The default recipient is the authenticated user, but the sample allows the user to provide the email address of any other user. 
 
 The code we'll work with here is in the class **SendMailViewController_WithPromise.swift.** The `viewDidLoad()` function reads the `self.emailTextField.text` value to get the mail recipient's email address and then starts a **promise chain** to get the authenticated user's profile picture. If the promise returns an error, the `sendMailButton` is not enabled.
 
