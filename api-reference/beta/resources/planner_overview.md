@@ -56,17 +56,11 @@ Planner's delta query supports querying objects that the user is subscribed to.
 
 Users are subscribed to the following objects:
 
-* Tasks:
-  * Created by the user
-  * Assigned to the user
-  * Belong to a plan that the user owns
-  * Shared with the user through the plan's **SharedWith** collection
-
-* Plans:
-  * Shared with the user through the plan's **SharedWith** collection
-
-* Buckets:
-  * Shared with the user through the plan's **SharedWith** collection
+|Planner resource type|Subscribed instances|
+|:--------------------|:-------------------|
+|Tasks | <ul><li>Created by the user</li><li>Assigned to the user</li><li>Belong to a plan that the user owns</li><li>Contained in a plan shared with the user through the plan's **SharedWith** collection</li> |
+|Plans | <ul><li>Shared with the user through the plan's **SharedWith** collection</li></ul> |
+|Buckets | <ul><li>Contained in a plan shared with the user through the plan's **SharedWith** collection</li></ul> | 
 
 ### <a name="objectcache">Populate the object cache for delta queries</a>
 
