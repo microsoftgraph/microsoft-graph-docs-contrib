@@ -183,11 +183,43 @@ The message body contains the picture sharing link and the picture itself as an 
 
 The code we'll work with here is in the class **SendMailViewController_WithPromise.swift.** The `viewDidLoad()` function reads the `self.emailTextField.text` value to get the mail recipient's email address and then starts a **promise chain** to get the authenticated user's profile picture. If the promise returns an error, the `sendMailButton` is not enabled.
 
-1. Open **SendMailViewController_WithPromise.swift.**. The following steps assume that you've opened this file in your code editor.
+1. Open **SendMailViewController_WithPromise.swift.** and find the `viewDidLoad` function.
+
+   ```swift
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //Get user state values before creating mail message to be sent
+        do
+        {
+            try self.userName = AuthenticationClass.sharedInstance?.authenticationProvider.users()[0].name!
+            try self.emailTextField.text = AuthenticationClass.sharedInstance?.authenticationProvider.users()[0].displayableId
+            self.userEmailAddress = self.emailTextField.text
+            self.headerLabel.text = "Hi, \(self.userName! )"
+            
+            updateUI(showActivityIndicator: true, statusText: "Getting picture", sendMail: true)
+
+            //Important: Break out of async promise chain by declaring result returns Void
+            _ = self.userPictureWork().then{
+                result -> Void in
+                    self.userPictureUrl = (result[1] as! String)
+                    self.userProfilePicture = (result[0] as! UIImage)
+                    self.updateUI(showActivityIndicator: false, statusText: "", sendMail: true)
+
+            }.catch{err -> Void  in
+                self.updateUI(showActivityIndicator: false, statusText: "", sendMail: false)
+
+            }
+        } catch _ as NSError{
+            self.updateUI(showActivityIndicator: false,
+                          statusText: "Error getting user profile picture.", sendMail: false)
+        }
+    }
+  
+   ```
 
 1. Find the mail request creation helper function in the class:
 
-  ```swift
+   ```swift
     /**
      Prepare mail content by loading the JSON request payload template and HTML message body template from resources and replacing placeholders in the templates with appropriate values.
      */
@@ -222,10 +254,10 @@ The code we'll work with here is in the class **SendMailViewController_WithPromi
         return nil
     }
 
-  ```
+   ```
 2. Find the following helper functions for getting the user's profile picture,  uploading the photograph to OneDrive, and requesting a sharing link for the picture:
 
-  ```swift
+   ```swift
     /**
       Async func. Get user's profile photo, upload photo to OneDrive, and get sharing link
      - returns:
@@ -335,11 +367,11 @@ The code we'll work with here is in the class **SendMailViewController_WithPromi
                 }
             }
         }
-  ```
+   ```
 
 3. Find the following send mail function in the class.  
-
-  ```swift
+ 
+   ```swift
     /**
      POSTS a new message to the sendmail resource
      - parameters:
@@ -389,7 +421,7 @@ The code we'll work with here is in the class **SendMailViewController_WithPromi
         return returnData;
     }
 
-  ```
+   ```
 
 
 ## Run the app
