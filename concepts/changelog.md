@@ -476,7 +476,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2017
 
-### Azure AD syncrhonization APIs
+### Azure AD synchronization APIs
 
 | Change type | Version | Description                              |
 | :---------- | :------ | :--------------------------------------- |
