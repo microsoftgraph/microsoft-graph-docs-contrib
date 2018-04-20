@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieves changes to objects that the user is [subscribed](../resources/planner_overview.md#track-changes--delta--) to.
+Retrieves changes to objects that the user is [subscribed](../resources/planner_overview.md#track-changes-using-delta-query) to.
 
 This method allows your application to track changes to objects that the user can access from within Planner over time.
 
