@@ -54,7 +54,7 @@ All the ordering is controlled by the principles identified in [Planner order hi
 
 Planner's delta query supports querying objects that the user is subscribed to.
 
-Users are subscribed to the following objects:
+Users are subscribed to the following objects.
 
 |Planner resource type|Subscribed instances|
 |:--------------------|:-------------------|
