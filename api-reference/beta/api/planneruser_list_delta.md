@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### Response
 Here is an example of the response.
 
-**Note:** The response object shown might be shortened for readability. All the changed properties will be returned from an actual call.
+>**Note:** The response object shown might be shortened for readability. All the changed properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
