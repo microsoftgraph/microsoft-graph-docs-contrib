@@ -1,6 +1,6 @@
-# Microsoft Graph security API overview (preview) 
+# Overview of security in Microsoft Graph (preview) 
 
-You can use Microsoft Graph to you connect with Intelligent Security Graph to take advantage of Microsoft and security partner resources, and build better threat response solutions. Microsoft Graph also provides access to user and account risks detected by the Identity Protection service in Azure Active Directory (Azure AD), enabling you to integrate account risk data into your security applications.
+You can use Microsoft Graph to connect with Intelligent Security Graph to take advantage of Microsoft and security partner resources, and build better threat response solutions. Microsoft Graph also provides access to user and account risks detected by the Identity Protection service in Azure Active Directory (Azure AD), enabling you to integrate account risk data into your security applications.
 
 ## Why use the security API and connect with Microsoft Intelligent Security Graph?
 
@@ -18,7 +18,7 @@ Use the security API as a federated security aggregation service to submit queri
 
 ### Unlock security context to drive investigation
 
-Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security context together and improve threat response.
+Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security contexts together and improve threat response.
 
 ## Why use Azure AD to protect identities in your organization?
 
