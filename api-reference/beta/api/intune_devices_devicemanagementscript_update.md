@@ -4,7 +4,7 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceManagementScript](../resources/intune_shared_devicemanagementscript.md) object.
+Update the properties of a [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) object.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -30,9 +30,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagementScript](../resources/intune_shared_devicemanagementscript.md) object.
+In the request body, supply a JSON representation for the [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagementScript](../resources/intune_shared_devicemanagementscript.md).
+The following table shows the properties that are required when you create the [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagementScript](../resources/intune_shared_devicemanagementscript.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) object in the response body.
 
 ## Example
 ### Request

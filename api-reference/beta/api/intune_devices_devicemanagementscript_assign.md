@@ -36,8 +36,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceManagementScriptGroupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune_shared_devicemanagementscriptgroupassignment.md) collection|Not yet documented|
-|deviceManagementScriptAssignments|[deviceManagementScriptAssignment](../resources/intune_shared_devicemanagementscriptassignment.md) collection|Not yet documented|
+|deviceManagementScriptGroupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) collection|Not yet documented|
+|deviceManagementScriptAssignments|[deviceManagementScriptAssignment](../resources/intune_devices_devicemanagementscriptassignment.md) collection|Not yet documented|
 
 
 
