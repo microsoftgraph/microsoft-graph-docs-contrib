@@ -132,6 +132,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2018
 
+### Data Policy Operations 
+ 
+| **Change type** | **Version** | **Description**                          | 
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added new entity [dataPolicyOperation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/dataPolicyOperation). This represents a submitted data policy operation for tracking purposes.
+| Addition        | beta        | Added the [exportPersonalData](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_exportPersonalData) action on [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/users). This action submits a data policy operation request to export personal data stored by Microsoft for a user. | 
+
 ### ActivityFeedService APIs
 
 | **Change type** | **Version** | **Description**              |
