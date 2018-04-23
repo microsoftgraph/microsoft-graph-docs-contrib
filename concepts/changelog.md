@@ -6,6 +6,23 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2018
 
+### Directory APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | V1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
+| Addition        | V1.0        | Added users and groups support to [webhook](../api-reference/v1.0/resources/webhooks.md) notification subscriptions. |
+
+### Education APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Change|Beta|Added the reportableIdentifier property to [educationsynchronizationerror](../api-reference/beta/resources/educationsynchronizationerror.md).|
+|Change|Beta|Updated the response options for the [uploadUrl](../api-reference/beta/api/educationsynchronizationprofile_uploadurl.md) API.|
+|Change|Beta|Updated the text for description of the [educationSynchronizationError](../api-reference/beta/resources/educationsynchronizationerror.md) resource type.|
+|Change|Beta|Updated the text for description of the [get sync errors](../api-reference/beta/api/educationsynchronizationerrors_get.md) API.|
+
+
 ### Microsoft Intune APIs
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -41,41 +58,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **paloAltoGlobalProtect** member to the [androidVpnConnectionType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidvpnconnectiontype) enum type|
 |Addition|beta|Added the **paloAltoGlobalProtect** member to the [appleVpnConnectionType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype) enum type|
 |Addition|beta|Added the **androidWorkProfile** member to the [policyPlatformType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_policyplatformtype) enum type|
-
-### Project Rome APIs
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_recent_activities) |
-| Addition | v1.0 | Added [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_activities) |
-| Addition | v1.0 | Added [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/v1.0/api/projectrome_put_activity) |
-| Addition | v1.0 | Added [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_put_historyitem) |
-| Addition | v1.0 | Added [Delete Activity](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_delete_activity) |
-| Addition | v1.0 | Added [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_delete_historyItem) |
-| Addition | v1.0 | Added [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) |
-| Addition | v.10 | Added [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_historyitem) |
-| Addition | v1.0 | Added [visualInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_visualinfo) |
-| Addition | v1.0 | Added [imageInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_imageinfo) |
-| Addition | v.10 | Added [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/project_rome_overview) |
-| Change | Beta | Added deep insert documentation to [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/beta/api/projectrome_put_activity) |
-
-### Security APIs
-
-| **Change type** | **Version** | **Description**              |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[alert](../api-reference/beta/resources/alert.md) (and related entities)<br/>[Get alert](../api-reference/beta/api/alert_get.md)<br/>[List alerts](../api-reference/beta/api/alert_list.md)<br/>[Update alert](../api-reference/beta/api/alert_update.md)<br/><br/>Added the following supporting documentation:<br/>[Errors](../api-reference/beta/resources/security-error-codes.md)<br/>[Integrate with a SIEM](../concepts/security_siemintegration.md)
-
-### Reports APIs
-|Change type|Version|Description|
-|:---|:---|:---|
-|Addition|beta| Added delegated access support. |
-|Addition|v1.0| Added delegated access support. |
-
-### Directory APIs
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | V1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
 
 ### Outlook calendar
 
@@ -120,14 +102,34 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition | v1.0 | Added the new **workingHours** property to [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md). See [workingHours resource type](../api-reference/v1.0/resources/workinghours.md) for information on the supported use cases.|
 |Addition | v1.0 | Added the following new complex types: <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
 
-### Education APIs
+### Project Rome APIs
 
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_recent_activities) |
+| Addition | v1.0 | Added [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_activities) |
+| Addition | v1.0 | Added [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/v1.0/api/projectrome_put_activity) |
+| Addition | v1.0 | Added [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_put_historyitem) |
+| Addition | v1.0 | Added [Delete Activity](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_delete_activity) |
+| Addition | v1.0 | Added [Upsert HistoryItem](https://developer.microsoft.com/en-us/graph/docs/v1.0/projectrome_delete_historyItem) |
+| Addition | v1.0 | Added [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) |
+| Addition | v.10 | Added [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_historyitem) |
+| Addition | v1.0 | Added [visualInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_visualinfo) |
+| Addition | v1.0 | Added [imageInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_imageinfo) |
+| Addition | v.10 | Added [Project Rome overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/project_rome_overview) |
+| Change | Beta | Added deep insert documentation to [Upsert Activity](https://developer.microsoft.com/en-us/graph/docs/beta/api/projectrome_put_activity) |
+
+### Reports APIs
 |Change type|Version|Description|
 |:---|:---|:---|
-|Change|Beta|Added the reportableIdentifier property to [educationsynchronizationerror](../api-reference/beta/resources/educationsynchronizationerror.md).|
-|Change|Beta|Updated the response options for the [uploadUrl](../api-reference/beta/api/educationsynchronizationprofile_uploadurl.md) API.|
-|Change|Beta|Updated the text for description of the [educationSynchronizationError](../api-reference/beta/resources/educationsynchronizationerror.md) resource type.|
-|Change|Beta|Updated the text for description of the [get sync errors](../api-reference/beta/api/educationsynchronizationerrors_get.md) API.|
+|Addition|beta| Added delegated access support. |
+|Addition|v1.0| Added delegated access support. |
+
+### Security APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta       | Added the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[alert](../api-reference/beta/resources/alert.md) (and related entities)<br/>[Get alert](../api-reference/beta/api/alert_get.md)<br/>[List alerts](../api-reference/beta/api/alert_list.md)<br/>[Update alert](../api-reference/beta/api/alert_update.md)<br/><br/>Added the following supporting documentation:<br/>[Errors](../api-reference/beta/resources/security-error-codes.md)<br/>[Integrate with a SIEM](../concepts/security_siemintegration.md)
 
 
 ## March 2018
