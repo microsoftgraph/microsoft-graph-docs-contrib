@@ -1,4 +1,5 @@
 <Menu>
+  <Item Label="EXPLORE" url="" />
   <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." >    
 	<Item text="Services in Microsoft Graph" url="/en-us/concepts/overview-major-services" />
 	<Item text="Users you can reach" url="/en-us/concepts/users-you-can-reach" >
@@ -29,7 +30,7 @@
   <Item text="Calendar (Outlook)" url="/en-us/concepts/outlook-calendar-concept-overview" >
 	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
   </Item>
-  <Item text="Cross-device experiences" url="/en-us/concepts/cross-device-concept-overview" >
+  <Item text="Cross-device experiences (Project Rome)" url="/en-us/concepts/cross-device-concept-overview" >
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="Device relay (preview)" url="/en-us/concepts/device-relay-concept-overview" />
   </Item>
@@ -376,6 +377,21 @@
       </Item>
     </Item>
   </Item>
+  <Item text="Cross-device experiences (Project Rome)" url="/en-us/api-reference/v1.0/resources/project_rome_overview" > 
+		<Item text="List user devices" url="/en-us/api-reference/v1.0/api/user_list_devices" />
+		<Item text="Send device command" url="/en-us/api-reference/v1.0/api/send_device_command" />
+		<Item text="Get device command status" url="/en-us/api-reference/v1.0/api/get_device_command_status" />
+		<Item text="Activity" url="/en-us/api-reference/v1.0/resources/projectrome_activity" >
+			<Item text="Create or replace activity" url="/en-us/api-reference/v1.0/api/projectrome_put_activity" />
+			<Item text="Get activities" url="/en-us/api-reference/v1.0/api/projectrome_get_activities" />
+			<Item text="Get recent activities" url="/en-us/api-reference/v1.0/api/projectrome_get_recent_activities" />
+			<Item text="Delete activity" url="/en-us/api-reference/v1.0/api/projectrome_delete_activity" />
+		</Item>
+		<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
+			<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
+			<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+		</Item>
+	</Item>
   <Item text="Devices and apps (Intune)" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
       <Item text="App management" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
         <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_apps_alldevicesassignmenttarget"/>
@@ -2472,7 +2488,7 @@
         </Item>
       </Item>
     </Item>
-	<Item text="Cross-device experiences" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
+	<Item text="Cross-device experiences (Project Rome)" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
 		<Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
 		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
 		<Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
@@ -5230,6 +5246,7 @@
 			<Item text="Update alert" url="/en-us/api-reference/beta/api/alert_update" />
 		</Item>
 		<Item text="Errors" url="/en-us/api-reference/beta/resources/security-error-codes" />
+	    <Item text="Integrate with a SIEM" url="/en-us/concepts/security_siemintegration" />
 	</Item>
 	<Item text="Sites and lists (SharePoint)" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >

@@ -6,7 +6,11 @@ The sophistication of security threats continues to escalate, affecting the glob
 
 Microsoft Intelligent Security Graph brings together security intelligence from within Microsoft, security operations centers, and partners from around the world to form an ecosystem of integrated security solutions. Using machine learning, behavioral monitoring, and the scale of the cloud, the Intelligent Security Graph can better protect, detect, and respond to threats quickly and comprehensively. The [security API](security-api-overview.md) connects you to the [Intelligent Security Graph](https://www.microsoft.com/en-us/security/intelligence-security-api), empowering you with solutions that are actionable and holistic.
 
-Today's security breaches often begin with attackers gaining access to a user's identity in an environment. Having access to even a low-privileged user account makes it possible for attackers to gain access to important organization resources. The [identity protection API](identityprotection_root.md) in Microsoft Graph lets you [integrate with Azure Active Directory Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started), and detect potential vulnerabilities affecting identities in your organization.
+Most security breaches are the result of attackers stealing a user’s identity, and attackers have become terrifyingly effective in leveraging third party breaches, password spray attacks, sophisticated phishing attacks. This means you need to protect all your user accounts from these attacks and proactively prevent compromised identities from being abused.
+
+Azure Active Directory uses adaptive machine learning algorithms and heuristics to detect anomalies that indicate potentially compromised accounts. Using this data, Identity Protection protects your users with risk-based conditional access policies and generates reports and alerts on its detections.
+
+The [identity protection risk events API](identityprotection_root.md) gives easy access for Azure AD Premium P1 and P2 customers to query [risk detections made by Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started) and use those events in SIEM systems and security applications.
 
 ## Next steps
 
