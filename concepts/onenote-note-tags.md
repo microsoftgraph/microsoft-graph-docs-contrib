@@ -1,4 +1,4 @@
-# Use note tags
+# Use note tags in OneNote pages
 
 *__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*
 

@@ -1,4 +1,4 @@
-# Extract data from captures
+# Use OneNote API div tags to extract data from captures 
 
 *__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*
 
