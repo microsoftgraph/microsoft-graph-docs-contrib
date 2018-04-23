@@ -1,7 +1,6 @@
 # Update event
 
 Update the properties of the [event](../resources/event.md) object.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
