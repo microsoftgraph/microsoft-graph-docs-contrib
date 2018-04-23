@@ -1,9 +1,8 @@
 # Use the OneNote REST API
 
-{Create one copy of this API overview for each of v1.0 and beta. The main content is the use cases for your API set - see mail_api_overview.md as an example.}
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-
-
+Microsoft Graph lets your app get authorized access to a user's OneNote notebooks, sections, and pages in a personal or organization account. With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md#notes-permissions), your app can access the OneNote data of the signed-in user or any user in a tenant. 
 ## Root URL
 The OneNote service root URL uses the following format for all calls to the OneNote API.
 ```
