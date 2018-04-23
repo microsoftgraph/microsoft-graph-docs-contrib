@@ -302,6 +302,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|Beta|Added `favoritePlans` and `recentPlans` navigation properties to [plannerUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerUser) entity. |
 |Addition|Beta|Added `contexts` property to [plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) entity. |
 |Addition|Beta|Added `contextDetails` property to [plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) entity. |
+|Addition|Beta|Added Planner [delta query](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/planneruser_list_delta.md) |
 
 ### Reports APIs
 | Change type | Version | Description                              |
