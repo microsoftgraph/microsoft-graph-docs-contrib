@@ -21,9 +21,9 @@ The following are some of the scenarios that the roster APIs enable:
 
 ### Leverage Microsoft Teams for creating class assignments in a Teams assignments tab
 
-You can create a web app that manages class assignments by using the Edu Assignements API and then integrate your app in Microsoft Teams by using a new custom Tab.  
+You can create a web app that manages class assignments by using the Edu Assignments API and then integrate your app in Microsoft Teams by using a new custom Tab.
 
-Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensbility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, and Bots. These extensibility points can call education APIs in Microsoft Graph to work with assignments and submissions. Build a more comprehensive experience by enabling your extension point with any other Microsoft Graph API along with assignment and submission APIs.
+Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensibility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, and Bots. These extensibility points can call education APIs in Microsoft Graph to work with assignments and submissions. Build a more comprehensive experience by enabling your extension point with any other Microsoft Graph API along with assignment and submission APIs.
 
 For education, Teams custom Tab apps are opened in an education class (a team) context where it makes sense to manage the end-to-end assignment flow from creation and distribution to grading and feedback. This is just one example of how Microsoft Teams save time and simplifies everyday logistics, leaving educators free to dedicate themselves to their students.
 
@@ -31,12 +31,12 @@ The following image shows that the **Science - Biology 1** class has a web app f
 
 ![Microsoft Teams assignments, Assignments web app in custom tab](images/AssignmentsInTeams.PNG)
 
-With assigment APIs your app can interact with the assignment service outside of Teams. Teams will handle distribution, due dates and grading while your system can provide a rich learning experience to students.
+With assignment APIs your app can interact with the assignment service outside of Teams. Teams will handle distribution, due dates and grading while your system can provide a rich learning experience to students.
 Here are examples of a few scenarios enabled by assignments API:
 
 - [Add an Assignment that links to your application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationclass_post_assignments) . 
 - [Assign grades to individual students for assignments linked to your application](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationsubmission_update).
-- [Create a student dashboard to show which assigments are due by when](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationclass_list_assignments).
+- [Create a student dashboard to show which assignments are due by when](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/educationclass_list_assignments).
 
 
 ## Enable school ITs to manage Identity and Roster sync using School Data Sync Management (preview)
