@@ -1,7 +1,6 @@
 # bookingService resource type
 
-Represents a service offered by a [bookingBusiness](bookingbusiness.md).
-
+Represents information about a particular service provided by a [bookingBusiness](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
 
 ## Methods
 
@@ -14,21 +13,21 @@ Represents a service offered by a [bookingBusiness](bookingbusiness.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|defaultDuration|Duration||
-|defaultLocation|[location](location.md)||
-|defaultPrice|Double||
-|defaultPriceType|string| Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
+|defaultLocation|[location](location.md)|The default physical location for the service.|
+|defaultPrice|Double|The default monetary price for the service.|
+|defaultPriceType|string|The default way the service is charged. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultReminders|[bookingReminder](bookingreminder.md) collection|The default set of reminders for an appointment of this service. The value of this property is available only when reading this **bookingService** by its ID.|
-|description|String||
-|displayName|String||
-|emailAddress|String||
+|description|String|A text description for the service.|
+|displayName|String|A service name.|
+|emailAddress|String|An email address|
 |id|String| Read-only.|
-|isHiddenFromCustomers|Boolean||
-|notes|String||
-|postBuffer|Duration||
-|preBuffer|Duration||
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)||
-|staffMemberIds|String collection||
+|isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
+|notes|String|Additional information about this service.|
+|postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
+|preBuffer|Duration|The time to buffer before an appointment for this service can start.|
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
+|staffMemberIds|String collection|Represents those [staff members](bookingstaffmembers.md) who provide this service. |
 
 ## Relationships
 None

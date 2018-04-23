@@ -8,9 +8,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  Bookings.Manage.All  |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported. | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

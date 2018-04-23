@@ -1,6 +1,6 @@
 # bookingAppointment resource type
 
-Represents a customer appointment for a service provided by a Microsoft Bookings business.
+Represents a customer appointment for a [bookingService](bookingservice.md), performed by a set of staff members, provided by a Microsoft Bookings business.
 
 
 ## Methods

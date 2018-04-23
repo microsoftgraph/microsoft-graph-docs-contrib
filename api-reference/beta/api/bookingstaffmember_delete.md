@@ -1,19 +1,19 @@
 # Delete bookingStaffMember
 
-Delete bookingStaffMember.
+Delete a [staff member](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/<id>/staffMembers/<id>
+DELETE /bookingBusinesses/{id}/staffMembers/{id}
 
 ```
 ## Request headers
@@ -36,10 +36,10 @@ The following is an example of the request.
   "name": "delete_bookingstaffmember"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/<id>/staffMembers/<id>
+DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/5fae928f-6d2d-417a-ad96-4b0caeb362d6
 ```
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

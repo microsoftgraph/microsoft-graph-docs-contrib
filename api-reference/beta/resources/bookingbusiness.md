@@ -2,23 +2,6 @@
 
 Represents a business in Microsoft Bookings. This is the top level object in the Microsoft Bookings API. It contains business information and related business objects such as appointments, customers, services, and staff members.
 
-<!--
-Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for small businesses and their customers. Any small business that provides service on an appointment basis, such as auto repair shops, consultants, dental offices, hair salons, and law firms, can benefit from having their bookings managed so as to free up time for the more important task to grow their business.
-
-Streamline appointment booking 
-Never miss a customer booking when you're away from the phone or your business is closed. Customers can book appontments any time directly on your company's web site, on Facebook, or on a mobile app.
-
-Reduce no-shows and increase productivity for your staff
-Customers can reschedule appointments within any lead time you specify for bookings and cancellations. Automated appointment confirmations and reminders can decrease no-shows, and let your staff make better use of their production hours. 
-
-Manage customer information and relationships
-Completing an appointment automatically checks to see if the customer is already on your customer list, and if not, adds the customer's name and email address to the list. This makes it convenient to stay in touch with your customers, and send periodic newsletters or other promotional material.
-
-Add link in See Also section to concept topic and API overview.
-
--->
-
-
 ## Methods
 
 | Method		   | Return Type	|Description|
@@ -47,7 +30,7 @@ Add link in See Also section to concept topic and API overview.
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
-|displayName|String|A name for the business, which interfaces with customers.|
+|displayName|String|The name of the business, which interfaces with customers.|
 |email|String|The email address for the business.|
 |id|String|A programmatic identifier for the business, which is an email address formed by **displayName** concatenated with the domain of the tenant. Read-only.|
 |isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property. Read-only.|

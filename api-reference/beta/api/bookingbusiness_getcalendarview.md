@@ -1,6 +1,6 @@
 # bookingBusiness: getCalendarView
 
-
+Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects that occurs in the specified date range.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/<id>/getCalendarView(start=start-value, end=end-value)
+POST /bookingBusinesses/{id}/getCalendarView(start=start-value, end=end-value)
 
 ```
 ## Request headers
@@ -27,8 +27,8 @@ In the request URL, provide following query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|start|DateTimeOffset||
-|end|DateTimeOffset||
+|start|DateTimeOffset|The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.|
+|end|DateTimeOffset|The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.|
 
 ## Response
 If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.

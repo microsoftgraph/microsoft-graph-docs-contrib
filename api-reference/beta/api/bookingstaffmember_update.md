@@ -1,19 +1,19 @@
 # Update bookingstaffmember
 
-Update the properties of bookingstaffmember object.
+Update the properties of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/<id>/staffMembers/<id>
+PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -25,76 +25,101 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean||
-|colorIndex|Int32||
-|displayName|String||
-|emailAddress|String||
-|role|string| Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|useBusinessHours|Boolean||
-|workingHours|bookingWorkHours||
+|availabilityIsAffectedByPersonalCalendar|Boolean|True means the staff member's availability is indicated in his or her personal calendar, and not necessarily in the business scheduling calendar.  |
+|colorIndex|Int32|Identifies a color to represent the staff member.|
+|displayName|String|The name of the staff member, as displayed to customers.|
+|emailAddress|String|The email address of the staff member. This can be in the same Office 365 tenant as the business, or in a different email domain.|
+|role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|useBusinessHours|Boolean|True means the staff member's work hours are the same as the **businessHours** property of the business.|
+|workingHours|[bookingWorkHours](bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.
+If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+The following example changes the staff member's schedule to have Mondays off.
 <!-- {
   "blockType": "request",
   "name": "update_bookingstaffmember"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/<id>/staffMembers/<id>
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
 Content-type: application/json
-Content-length: 309
 
 {
-  "availabilityIsAffectedByPersonalCalendar": true,
-  "colorIndex": 99,
-  "role": "role-value",
-  "useBusinessHours": true,
-  "workingHours": [
-    {
-      "day": "day-value",
-      "timeSlots": [
+    "workingHours":[
         {
-          "start": "datetime-value",
-          "end": "datetime-value"
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"monday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+   
+            ]
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"tuesday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"wednesday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"thursday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"friday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
 ```
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bookingStaffMember"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 329
-
-{
-  "availabilityIsAffectedByPersonalCalendar": true,
-  "colorIndex": 99,
-  "role": "role-value",
-  "useBusinessHours": true,
-  "workingHours": [
-    {
-      "day": "day-value",
-      "timeSlots": [
-        {
-          "start": "datetime-value",
-          "end": "datetime-value"
-        }
-      ]
-    }
-  ],
-  "id": "id-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,19 +1,19 @@
 # Create bookingStaffMember
 
-Use this API to create a new bookingStaffMember.
+Create a new [staff member](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/<id>/staffMembers
+POST /bookingBusinesses/{id}/staffMembers
 
 ```
 ## Request headers
@@ -36,26 +36,86 @@ The following is an example of the request.
   "name": "create_bookingstaffmember_from_bookingbusiness"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/<id>/staffMembers
+POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Content-type: application/json
 Content-length: 309
 
 {
-  "availabilityIsAffectedByPersonalCalendar": true,
-  "colorIndex": 99,
-  "role": "role-value",
-  "useBusinessHours": true,
-  "workingHours": [
-    {
-      "day": "day-value",
-      "timeSlots": [
+    "@odata.type":"#microsoft.graph.bookingStaffMember",
+    "colorIndex":1,
+    "displayName":"Dana Swope",
+    "emailAddress":"danas@contoso.com",
+    "role@odata.type":"#microsoft.graph.bookingStaffRole",
+    "role":"externalGuest",
+    "useBusinessHours":true,
+    "workingHours@odata.type":"#Collection(microsoft.graph.bookingWorkHours)",
+    "workingHours":[
         {
-          "start": "datetime-value",
-          "end": "datetime-value"
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"monday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"tuesday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"wednesday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"thursday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingWorkHours",
+            "day@odata.type":"#microsoft.graph.dayOfWeek",
+            "day":"friday",
+            "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
+            "timeSlots":[
+                {
+                    "@odata.type":"#microsoft.graph.bookingWorkTimeSlot",
+                    "end":"17:00:00.0000000",
+                    "start":"08:00:00.0000000"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
 ```
 In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object.
@@ -69,25 +129,63 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 329
 
 {
-  "availabilityIsAffectedByPersonalCalendar": true,
-  "colorIndex": 99,
-  "role": "role-value",
-  "useBusinessHours": true,
-  "workingHours": [
-    {
-      "day": "day-value",
-      "timeSlots": [
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers/$entity",
+    "id":"8ee1c803-a1fa-406d-8259-7ab53233f148",
+    "displayName":"Dana Swope",
+    "emailAddress":"danas@contoso.com",
+    "availabilityIsAffectedByPersonalCalendar":false,
+    "colorIndex":1,
+    "role":"externalGuest",
+    "useBusinessHours":true,
+    "workingHours":[
         {
-          "start": "datetime-value",
-          "end": "datetime-value"
+            "day":"monday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"tuesday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"wednesday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"thursday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day":"friday",
+            "timeSlots":[
+                {
+                    "start":"08:00:00.0000000",
+                    "end":"17:00:00.0000000"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "id": "id-value"
+    ]
 }
 ```
 

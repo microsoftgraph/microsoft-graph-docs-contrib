@@ -1,19 +1,19 @@
 # Get bookingStaffMember
 
-Retrieve the properties and relationships of bookingstaffmember object.
+Get the properties and relationships of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/<id>/staffMembers/<id>
+GET /bookingBusinesses/{id}/staffMembers/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -35,7 +35,7 @@ The following is an example of the request.
   "name": "get_bookingstaffmember"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/bookingBusinesses/<id>/staffMembers/<id>
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -47,25 +47,71 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 329
 
 {
-  "availabilityIsAffectedByPersonalCalendar": true,
-  "colorIndex": 99,
-  "role": "role-value",
-  "useBusinessHours": true,
-  "workingHours": [
-    {
-      "day": "day-value",
-      "timeSlots": [
+    "@odata.context": "https://graph.microsoft.com/testbookings/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers/$entity",
+    "id": "71d64d0e-7225-49b6-b0b1-070d476cda51",
+    "displayName": "Samantha Booth",
+    "emailAddress": "samanthab@M365B489948.OnMicrosoft.com",
+    "availabilityIsAffectedByPersonalCalendar": true,
+    "colorIndex": 0,
+    "role": "administrator",
+    "useBusinessHours": true,
+    "workingHours": [
         {
-          "start": "datetime-value",
-          "end": "datetime-value"
+            "day": "monday",
+            "timeSlots": [
+                {
+                    "start": "08:00:00.0000000",
+                    "end": "17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day": "tuesday",
+            "timeSlots": [
+                {
+                    "start": "08:00:00.0000000",
+                    "end": "17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day": "wednesday",
+            "timeSlots": [
+                {
+                    "start": "08:00:00.0000000",
+                    "end": "17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day": "thursday",
+            "timeSlots": [
+                {
+                    "start": "08:00:00.0000000",
+                    "end": "17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day": "friday",
+            "timeSlots": [
+                {
+                    "start": "08:00:00.0000000",
+                    "end": "17:00:00.0000000"
+                }
+            ]
+        },
+        {
+            "day": "saturday",
+            "timeSlots": []
+        },
+        {
+            "day": "sunday",
+            "timeSlots": []
         }
-      ]
-    }
-  ],
-  "id": "id-value"
+    ]
 }
 ```
 

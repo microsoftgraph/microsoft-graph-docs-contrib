@@ -1,19 +1,19 @@
 # List staffMembers
 
-Retrieve a list of bookingstaffmember objects.
+Get a list of [staff members](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/<id>/staffMembers
+GET /bookingBusinesses/{id}/staffMembers
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -35,7 +35,7 @@ The following is an example of the request.
   "name": "get_staffmembers"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/bookingBusinesses/<id>/staffMembers
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -48,29 +48,135 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 422
 
 {
-  "value": [
-    {
-      "availabilityIsAffectedByPersonalCalendar": true,
-      "colorIndex": 99,
-      "role": "role-value",
-      "useBusinessHours": true,
-      "workingHours": [
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers",
+    "value":[
         {
-          "day": "day-value",
-          "timeSlots": [
-            {
-              "start": "datetime-value",
-              "end": "datetime-value"
-            }
-          ]
+            "id":"8ee1c803-a1fa-406d-8259-7ab53233f148",
+            "displayName":"Dana Swope",
+            "emailAddress":"danas@contoso.com",
+            "availabilityIsAffectedByPersonalCalendar":false,
+            "colorIndex":1,
+            "role":"externalGuest",
+            "useBusinessHours":true,
+            "workingHours":[
+                {
+                    "day":"monday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"tuesday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"wednesday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"thursday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"friday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
+            "displayName":"Samantha Booth",
+            "emailAddress":"samanthab@M365B489948.OnMicrosoft.com",
+            "availabilityIsAffectedByPersonalCalendar":true,
+            "colorIndex":0,
+            "role":"administrator",
+            "useBusinessHours":true,
+            "workingHours":[
+                {
+                    "day":"monday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"tuesday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"wednesday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"thursday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"friday",
+                    "timeSlots":[
+                        {
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
+                        }
+                    ]
+                },
+                {
+                    "day":"saturday",
+                    "timeSlots":[
+
+                    ]
+                },
+                {
+                    "day":"sunday",
+                    "timeSlots":[
+
+                    ]
+                }
+            ]
         }
-      ],
-      "id": "id-value"
-    }
-  ]
+    ]
 }
 ```
 

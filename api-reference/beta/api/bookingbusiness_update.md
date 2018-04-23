@@ -6,9 +6,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,17 +31,15 @@ In the request body, supply the values for relevant fields that should be update
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
 |displayName|String|A name for the business that interfaces with customers.|
 |email|String|The email address for the business.|
-|isPublished|Boolean|The scheduling page has been made available to external customers. You can also use the **publish** and **unpublish** actions to set this property.|
 |phone|String|The telephone number for the business.|
-|publicUrl|String||
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
 |webSiteUrl|String|The URL of the business web site.|
 
 ## Response
-If successful, this method returns a `204, No Content` response code and updated [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
+If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.
 <!-- {
   "blockType": "request",
   "name": "update_bookingbusiness"
@@ -51,7 +49,14 @@ PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.on
 Content-type: application/json
 
 {
-  "email": "admin@fabrikam.com"
+  "email": "admin@fabrikam.com",
+  "schedulingPolicy": {
+      "timeSlotInterval": "PT60M",
+      "minimumLeadTime": "P1D",
+      "maximumAdvance": "P30D",
+      "sendConfirmationsToOwner": true,
+      "allowStaffSelection": true
+  }
 }
 ```
 ##### Response
