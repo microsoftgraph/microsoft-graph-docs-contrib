@@ -2,9 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of the [event](../resources/event.md) object.  
-
-**Note:** If you have multiple instances with the same daily pattern, and you update a single instance of a recurrence to change the `Start` and `End` properties, it might result in an `ErrorOccurrenceCrossingBoundary` error and the following error message: `Modified occurrence is crossing or overlapping adjacent occurrence`. For example, you can't have two event instances for a daily recurrence pattern on the same day.
+Update the properties of the [event](../resources/event.md) object. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -68,7 +66,9 @@ add, update, or delete your own app-specific data in custom properties of an ext
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.  
+
+**Note:** An HTTP 400 Bad Request response with an error code of `ErrorOccurrenceCrossingBoundary` and the following error message: `Modified occurrence is crossing or overlapping adjacent occurrence` indicates that the update violates an Outlook restriction on recurrence exceptions: an occurrence may not be moved to or before the day of the previous occurrence, nor may it be moved to or after the day of the following occurrence.
 
 ## Example
 
