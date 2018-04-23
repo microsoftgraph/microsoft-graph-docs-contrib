@@ -15,8 +15,11 @@ Business operators can specify minimum notice for bookings and cancellations, an
 ### Manage customer information and relationships from anywhere
 Completing an appointment automatically verifies if the customer is already on the customer list, adds the customer's name and email address to the list if necessary. This makes it convenient for business operators to stay in touch with their customers, and send periodic newsletters or other promotional material.
 
+<!-- 
+Link to overview-major-services.md after new-conceptual content is merged
+-->
 ### Integrate with productivity and team collaboration services in Microsoft Graph
-Using the same unified Microsoft Graph REST endpoint, you can access the Bookings API and [integrate with the best of Microsoft 365](overview-major-services.md) to support richer scenarios. For example, you can use Excel to track and analyze business financial data, and generate professional reports, or use SharePoint or Microsoft Teams to enhance team collaboration.
+Using the same unified Microsoft Graph REST endpoint, you can access the Bookings API and integrate with the best of Microsoft 365 to support richer scenarios. For example, you can use Excel to track and analyze business financial data, and generate professional reports, or use SharePoint or Microsoft Teams to enhance team collaboration.
 
 ## Next steps
 

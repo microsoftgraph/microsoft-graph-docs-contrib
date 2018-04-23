@@ -27,7 +27,7 @@ Represents information about a particular service provided by a [bookingBusiness
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
-|staffMemberIds|String collection|Represents those [staff members](bookingstaffmembers.md) who provide this service. |
+|staffMemberIds|String collection|Represents those [staff members](bookingstaffmember.md) who provide this service. |
 
 ## Relationships
 None

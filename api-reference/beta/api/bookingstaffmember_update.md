@@ -31,7 +31,7 @@ In the request body, supply the values for relevant fields that should be update
 |emailAddress|String|The email address of the staff member. This can be in the same Office 365 tenant as the business, or in a different email domain.|
 |role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
 |useBusinessHours|Boolean|True means the staff member's work hours are the same as the **businessHours** property of the business.|
-|workingHours|[bookingWorkHours](bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
+|workingHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
 
 ## Response
 If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
