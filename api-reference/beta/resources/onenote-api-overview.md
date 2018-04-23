@@ -19,7 +19,7 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 ```
 
 - `me` is for OneNote content that the current user can access (owned and shared).
-- `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog)
+- `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [users](users.md) API.
 > **Note:**
 > You can get user ids by making a GET request on `https://graph.microsoft.com/v1.0/users`.
 
