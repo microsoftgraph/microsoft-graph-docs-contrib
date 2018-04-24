@@ -38,7 +38,7 @@ Are you working on repeated process or project type? You can use the Planner API
 
 Learn about:
 
-- [Working with plans](../api-reference/v1.0/api/planner_post_plans.md#plans)
+- [Working with plans](../api-reference/v1.0/resources/planner_overview.md#plans)
 - [Working with tasks](../api-reference/v1.0/resources/planner_overview.md#tasks)
 
 
