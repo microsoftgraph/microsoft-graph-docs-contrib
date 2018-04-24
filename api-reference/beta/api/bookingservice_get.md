@@ -1,19 +1,19 @@
 # Get bookingService
 
-Retrieve the properties and relationships of bookingservice object.
+Get the properties and relationships of a [bookingService](../resources/bookingservice.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/<id>/services/<id>
+GET /bookingBusinesses/{id}/services/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -35,7 +35,7 @@ The following is an example of the request.
   "name": "get_bookingservice"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/bookingBusinesses/<id>/services/<id>
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -47,44 +47,58 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1003
 
 {
-  "defaultDuration": "datetime-value",
-  "defaultLocation": {
-    "displayName": "displayName-value",
-    "locationEmailAddress": "locationEmailAddress-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/services/$entity",
+    "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
+    "displayName": "Bento",
+    "defaultDuration": "PT30M",
+    "defaultPrice": 10,
+    "defaultPriceType": "fixedPrice",
+    "description": "Individual bento box lunch delivery",
+    "isHiddenFromCustomers": false,
+    "notes": "Home-cooked special",
+    "preBuffer": "PT5M",
+    "postBuffer": "PT10M",
+    "staffMemberIds": [],
+    "defaultLocation": {
+        "displayName": "Contoso Lunch Delivery",
+        "locationEmailAddress": null,
+        "locationUri": "",
+        "locationType": null,
+        "uniqueId": null,
+        "uniqueIdType": null,
+        "address": {
+            "type": "home",
+            "postOfficeBox": "",
+            "street": "4567 First Street",
+            "city": "Buffalo",
+            "state": "NY",
+            "countryOrRegion": "USA",
+            "postalCode": "98052"
+        },
+        "coordinates": {
+            "altitude": null,
+            "latitude": null,
+            "longitude": null,
+            "accuracy": null,
+            "altitudeAccuracy": null
+        }
     },
-    "coordinates": {
-      "altitude": 99.0,
-      "latitude": 99.0,
-      "longitude": 99.0,
-      "accuracy": 99.0,
-      "altitudeAccuracy": 99.0
-    },
-    "locationUri": "locationUri-value",
-    "locationType": "locationType-value",
-    "uniqueId": "uniqueId-value",
-    "uniqueIdType": "uniqueIdType-value"
-  },
-  "defaultPrice": 99,
-  "defaultPriceType": "defaultPriceType-value",
-  "defaultReminders": [
-    {
-      "offset": "datetime-value",
-      "recipients": "recipients-value",
-      "message": "message-value"
+    "defaultReminders": [
+        {
+            "offset": "P1D",
+            "recipients": "allAttendees",
+            "message": "Please be reminded that this service is tomorrow."
+        }
+    ],
+    "schedulingPolicy": {
+        "timeSlotInterval": "PT1H",
+        "minimumLeadTime": "PT10H",
+        "maximumAdvance": "P10D",
+        "sendConfirmationsToOwner": true,
+        "allowStaffSelection": true
     }
-  ],
-  "description": "description-value"
 }
 ```
 

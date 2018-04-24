@@ -6,9 +6,11 @@ Represents information about a particular service provided by a [bookingBusiness
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get bookingService](../api/bookingservice_get.md) | [bookingService](bookingservice.md) |Read properties and relationships of bookingService object.|
-|[Update](../api/bookingservice_update.md) | [bookingService](bookingservice.md)	|Update bookingService object. |
-|[Delete](../api/bookingservice_delete.md) | None |Delete bookingService object. |
+|[List services](../api/bookingbusiness_list_services.md) | [bookingService](bookingservice.md) collection | Get a list of bookingService objects in the specified bookingbusiness. |
+|[Create bookingService](../api/bookingbusiness_post_services.md) | [bookingService](bookingservice.md) | Create a bookingService for the specified bookingbusiness. |
+|[Get bookingService](../api/bookingservice_get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a bookingService object in the specified bookingbusiness.|
+|[Update](../api/bookingservice_update.md) | [bookingService](bookingservice.md)	|Update a bookingService object in the specified bookingbusiness. |
+|[Delete](../api/bookingservice_delete.md) | None |Delete a bookingService object in the specified bookingbusiness. |
 
 ## Properties
 | Property	   | Type	|Description|
