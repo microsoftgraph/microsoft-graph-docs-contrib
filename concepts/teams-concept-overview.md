@@ -6,8 +6,9 @@ Microsoft Teams is the ultimate hub for teamwork and intelligent communications.
 
 Integrating with Microsoft Teams makes it easy for you to build your own services and apps, reaching millions of enterprise users and helping people get work done together.  You can use Microsoft Graph to create and manage teams, channels, messages, and more.
 
-### Use Microsoft Graph with or without a Teams app
-You can call Microsoft Graph APIs from within a Teams app, such as a tab or bot app, running inside Microsoft Teams. You can also call Microsoft Graph outside of a Teams app, such as from a website or a web service.
+### Use Microsoft Graph in any kind of app 
+
+Microsoft Graph and Teams apps make a great combination. Users see great value in combinations such as a tab or bot app, running inside Microsoft Teams. You can also call Microsoft Graph outside of a Teams app, such as from a website or a web service.
 
 ![Call Teams API from Tabs, Bots, Web sites, and Services](images/Teams_GraphAPIUsage.png)
 
@@ -17,13 +18,9 @@ Allow your customers to create new [teams](../api-reference/beta/resources/team.
 
 ### Automate Team Lifecycles
 
-Use Microsoft Graph to create a new virtual team when a new business issue arises, [populate the team](../api-reference/v1.0/api/group_post_members.md) with the right people, and configure the team with channels. To start a team channel discussion around the new business issue, you can seed the channel with a new conversation thread carrying text appropriate for the business issue. If you want to get the new team together to discuss the business issue, add a new meeting to the team calendar and then invite the members of the team to the meeting.
+Use Microsoft Graph to create a new virtual team when a new business issue arises, [populate the team](../api-reference/v1.0/api/group_post_members.md) with the right people, and configure the team with channels. To start a team channel discussion around the new business issue, you can seed the channel with a new conversation thread to post a welcome message to new team members. If you want to get the new team together to discuss the business issue, add a new event to the team calendar and then invite the members of the team to the event.
 
 When the business issue is resolved and you no longer need the virtual team, use Microsoft Graph Teams API to tear down the team. If you know the maximum duration of the virtual team when you create it, set a lifecycle policy for the team that automatically removes the team according to the policy.
-
-### Read and write channel messages
-
-Start new conversations, reply to existing ones, or read what's already been said. To extend the virtual team business issue scenario, you can add an intelligent bot to a team channel that can send messages to team channel when business issue-related events transpire.
 
 ## Next steps
 
