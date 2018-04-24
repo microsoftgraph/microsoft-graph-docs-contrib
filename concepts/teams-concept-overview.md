@@ -8,7 +8,9 @@ Integrating with Microsoft Teams makes it easy for you to build your own service
 
 ### Use Microsoft Graph in any kind of app
 
-Microsoft Graph enabled Teams apps give work groups a powerful new collaboration tool to magnify the value of collaboration. Web sites, services, and native platform applications are not run within the Teams user experience but can be used to call the Microsoft Teams APIs that enable Teams automation scenarios.
+Microsoft Graph enabled Teams apps give work groups a new tool to make collaboration a more productive and compelling experience. Using Teams, work group users share assets, interact through chat, and schedule events on the team calendar. Enhance the value of Teams by adding team, channel, and conversation **automation** using Teams API-enabled apps.
+
+Web sites, services, and native platform applications are not run within the Teams user experience but can be used to call the Microsoft Teams APIs that enable Teams automation scenarios.
 
 **Figure 1:** Teams-enabled app types
 
