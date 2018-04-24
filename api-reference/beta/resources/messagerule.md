@@ -2,9 +2,9 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A rule that applies to messages or group posts in the Inbox of a user.
+A rule that applies to messages in the Inbox of a user.
 
-In Outlook, you can set up rules for incoming messages or group posts in the Inbox to carry out specific actions upon certain conditions. 
+In Outlook, you can set up rules for incoming messages in the Inbox to carry out specific actions upon certain conditions. 
 
 Programmatically, you can access rules through the **messageRules** navigation property of the Inbox [folder](mailfolder.md). 
 Each rule is represented by this **messageRule** resource, available rule actions are represented by the [messageRuleActions](messageruleactions.md) complex type, 
