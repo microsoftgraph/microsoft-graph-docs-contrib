@@ -46,7 +46,7 @@ When the business issue is resolved and you no longer need the virtual team, use
 
 The Teams API can open up new ways for you to engage with users:
 
-- [Teams API overview](../api-reference/beta/resources/teams_api_overview.md)
+- Learn about the capabilities of [Microsoft Graph Teams API](../api-reference/beta/resources/teams_api_overview.md)
 - Drill down on the methods, properties, and relationships of the [team](../api-reference/beta/resources/team.md), [channel](../api-reference/beta/resources/channel.md) , and [group](.../api-reference/v1.0/resources/group.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
