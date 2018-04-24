@@ -8,9 +8,11 @@ Integrating with Microsoft Teams makes it easy for you to build your own service
 
 ### Use Microsoft Graph in any kind of app
 
-Microsoft Graph enabled Teams apps give work groups a powerful new collaboration tool to magnify the value of collaboration. 
+Microsoft Graph enabled Teams apps give work groups a powerful new collaboration tool to magnify the value of collaboration. Web sites, services, and native platform applications are not run within the Teams user experience but can be used to call the Microsoft Teams APIs that enable Teams automation scenarios.
 
-![Call Teams API from Tabs, Bots, Web sites, and Services](images/Teams_GraphAPIUsage.png)
+**Figure 1:** Teams-enabled app types
+
+![Call Teams API from Tabs, Bots, Web sites, and Services](images/TeamsApps.png)
 
 These collaboration tools include Microsoft Graph-enabled tab or bot apps running inside Microsoft Teams. You can also call Microsoft Graph outside of a Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can leverage that work for Teams by using the [Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to create a Teams tab app that uses the existing web site code.
 
