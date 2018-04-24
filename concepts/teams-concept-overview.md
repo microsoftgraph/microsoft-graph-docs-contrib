@@ -6,11 +6,25 @@ Microsoft Teams is the ultimate hub for teamwork and intelligent communications.
 
 Integrating with Microsoft Teams makes it easy for you to build your own services and apps, reaching millions of enterprise users and helping people get work done together.  You can use Microsoft Graph to create and manage teams, channels, messages, and more.
 
-### Use Microsoft Graph in any kind of app 
+### Use Microsoft Graph in any kind of app
 
-Microsoft Graph and Teams apps make a great combination. Users see great value in combinations such as a tab or bot app, running inside Microsoft Teams. You can also call Microsoft Graph outside of a Teams app, such as from a website or a web service.
+Microsoft Graph enabled Teams apps give work groups a powerful new collaboration tool to magnify the value of collaboration. These collaboration tools include Microsoft Graph-enabled tab or bot apps running inside Microsoft Teams. You can also call Microsoft Graph outside of a Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can leverage that work for Teams by using the [Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to create a Teams tab app that uses the existing web site code.
 
 ![Call Teams API from Tabs, Bots, Web sites, and Services](images/Teams_GraphAPIUsage.png)
+
+If a Teams tab or bot app is not the ideal way to complete your Microsoft Graph Teams scenario, chose a Teams app type from the following table:
+
+|App type|Scenario description|Restrictions|
+|:-------|:-------------------|:-----------|
+|Tabs|Surface enhanced content within Teams| |
+|Connectors|Post enhanced updates to channels| |
+|Actionable Messaging|Add enhanced interaction to your connector cards||
+|Web sites|Surface enhanced content in your web pages|Requires [Teams JavaScript client SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client) to integrate with Teams client as a Tab app|
+|Bots|Help users get tasks done in conversations||
+|Activity Feed|Engage users via feed notifications||
+|Messaging Extensions|Allow users to query and share enhanced cards in conversations||
+|Services|Enhance your client applications with Microsoft Graph data via your web service|Must use client credential authentication flow|
+
 
 ### Create Multiple Teams and Channels
 
