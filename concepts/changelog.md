@@ -6,6 +6,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2018
 
+### Audit log API
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added the [directoryAudit](../api-reference/beta/resources/directoryaudit.md) and [signIn](../api-reference/beta/resources/signin.md) entities to support a new audit log API. |
+|Addition|Beta|Added the following resources to support the audit log API: [appIndentity](../api-reference/beta/resources/appidentity.md), [auditActivityInitiator](../api-reference/beta/resources/auditactivityinitiator.md), [conditionalAccessPolicy](../api-reference/beta/resources/conditionalaccesspolicy.md), [deviceDetail](../api-reference/beta/resources/devicedetail.md), [mfaDetail](../api-reference/beta/resources/mfadetail.md), [modifiedProperty](../api-reference/beta/resources/modifiedproperty.md), [signinLocation](../api-reference/beta/resources/signinlocation.md), [signinStatus](../api-reference/beta/resources/signinstatus.md), [targetResource](../api-reference/beta/resources/targetresource.md), [targetResourceApp](../api-reference/beta/resources/targetresourceapp.md), [targetResourceDevice](../api-reference/beta/resources/targetresourcedevice.md), [targetResourceDirectory](../api-reference/beta/resources/targetresourcedirectory.md), [targetResourceGroup](../api-reference/beta/resources/targetresourcegroup.md), [targetResourceOther](../api-reference/beta/resources/targetresourceother.md), [targetResourcePolicy](../api-reference/beta/resources/targetresourcepolicy.md), [targetResourceRole](../api-reference/beta/resources/targetresourcerole.md), [targetResourceServicePrincipal](../api-reference/beta/resources/targetresourceserviceprincipal.md), [targetResourceUser](../api-reference/beta/resources/targetresourceuser.md), [userIdentity](../api-reference/beta/resources/useridentity.md) |
+
 ### Directory APIs
 
 | **Change type** | **Version** | **Description**                          |
