@@ -49,4 +49,8 @@ The Teams API can open up new ways for you to engage with users:
 - Learn about the capabilities of [Microsoft Graph Teams API](../api-reference/beta/resources/teams_api_overview.md)
 - Drill down on the methods, properties, and relationships of the [team](../api-reference/beta/resources/team.md), [channel](../api-reference/beta/resources/channel.md) , and [group](.../api-reference/v1.0/resources/group.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Discover the [Teams developer model](https://developer.microsoft.com/en-us/microsoft-teams)
+- Read about the [concepts of Teams programming](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview)
+- Get a jump-start with [sample code for Teams/Graph](https://github.com/OfficeDev/microsoft-teams-sample-graph)
+
 
