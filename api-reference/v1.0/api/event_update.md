@@ -1,6 +1,6 @@
 # Update event
 
-Update the properties of event object.
+Update the properties of the [event](../resources/event.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -63,7 +63,9 @@ add, update, or delete your own app-specific data in custom properties of an ext
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.  
+
+>**Note:** This method can return an HTTP 400 Bad Request response with an error code of `ErrorOccurrenceCrossingBoundary` and the following error message: Modified occurrence is crossing or overlapping adjacent occurrence. This indicates that the update violates the following Outlook restriction on recurrence exceptions: an occurrence cannot be moved to or before the day of the previous occurrence, and cannot be moved to or after the day of the following occurrence.
 
 ## Example
 
