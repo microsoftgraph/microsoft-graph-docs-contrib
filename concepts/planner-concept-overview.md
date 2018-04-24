@@ -1,8 +1,9 @@
 # Planner tasks and plans API overview
 Planner provides a simple and visual way for teams to organize their work.  Customers can use Planner to create plans, organize and assign tasks, share progress, and collaborate on content.  Planner provides several interactive experiences including a task board, a charts page, and a schedule view, as well as integrations throughout Office 365.
 
-**Office 365 Planner task board**
-![alt text](https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs/2742019740c2e0bb851dcac3aa643bdc799f0baa/concepts/images/plannerboard.png "Image of Planner board")
+**Figure 1:** Office 365 Planner task board
+
+![alt text](images/plannerboard.png "Image of Planner board")
 
 
 ## Why integrate with Planner tasks?
@@ -25,12 +26,21 @@ Are you working on repeated process or project type? You can use the Planner API
 
 |Operation|URL|
 |:--------|:--|
-|See all the [plans](../api-reference/beta/resources/plannerplan.md) for a group|[https://graph.microsoft.com/v1.0/groups/{id}/planner/plans](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
-|See [tasks](../api-reference/beta/resources/plannertask.md) in a plan|[https://graph.microsoft.com/v1.0/planner/plans/{id}/tasks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=planner/plans/{id}/tasks&version=v1.0)|
-|See all [my tasks](../api-reference/beta/api/planneruser_list_tasks.md) assigned to me across plans|[https://graph.microsoft.com/v1.0/me/planner/tasks/](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/planner/tasks/&version=v1.0)|
-|[Create a new task](../api-reference/v1.0/api/planner_post_tasks.md)|[https://graph.microsoft.com/v1.0/planner/tasks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+|See all the [plans](../api-reference/beta/resources/plannerplan.md) for a group|GET [https://graph.microsoft.com/v1.0/groups/{id}/planner/plans](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+|See [tasks](../api-reference/beta/resources/plannertask.md) in a plan|GET [https://graph.microsoft.com/v1.0/planner/plans/{id}/tasks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=planner/plans/{id}/tasks&version=v1.0)|
+|See all [my tasks](../api-reference/beta/api/planneruser_list_tasks.md) assigned to me across plans|GET [https://graph.microsoft.com/v1.0/me/planner/tasks/](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/planner/tasks/&version=v1.0)|
+|[Create a new task](../api-reference/v1.0/api/planner_post_tasks.md)|POST [https://graph.microsoft.com/v1.0/planner/tasks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+|[Update a task](../api-reference/v1.0/api/plannertask_update.md)|PATCH [https://graph.microsoft.com/v1.0/planner/tasks/{task-id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+|[Delete a task](../api-reference/v1.0/api/plannertask_delete.md)|DELETE [https://graph.microsoft.com/v1.0/planner/tasks/<id>](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 
 
 ## Next steps
-{Include a link to the root node of your API set in the v1.0 reference section.}
-https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/planner_overview
+
+Learn about:
+
+- [Working with plans](../api-reference/v1.0/api/planner_post_plans.md#plans)
+- [Working with tasks](../api-reference/v1.0/resources/planner_overview.md#tasks)
+
+
+Find out more about: 
+[using the Planner API](../api-reference/v1.0/resources/planner_overview.md)
