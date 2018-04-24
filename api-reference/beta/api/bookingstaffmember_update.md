@@ -25,13 +25,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True means the staff member's availability is indicated in his or her personal calendar, and not necessarily in the business scheduling calendar.  |
-|colorIndex|Int32|Identifies a color to represent the staff member.|
+|availabilityIsAffectedByPersonalCalendar|Boolean|True means that if the staff member is an Office 365 user, the Bookings API uses the staff member's personal calendar in Office 365 as well as the **workingHours** property to determine availability. |
+|colorIndex|Int32|Identifies a color to represent the staff member. The color corresponds to the color palette in the **Staff details** page in the Bookings app.|
 |displayName|String|The name of the staff member, as displayed to customers.|
-|emailAddress|String|The email address of the staff member. This can be in the same Office 365 tenant as the business, or in a different email domain.|
+|emailAddress|String|The email address of the staff member. This can be in the same Office 365 tenant as the business, or in a different email domain. This email address is used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business.|
 |role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|useBusinessHours|Boolean|True means the staff member's work hours are the same as the **businessHours** property of the business.|
-|workingHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
+|useBusinessHours|Boolean|True means the staff member's availability is determined by the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHouse** property setting.|
+|workingHours|[bookingWorkHours](bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
 
 ## Response
 If successful, this method returns a `204 No content` response code. It does not return anything in the response body.

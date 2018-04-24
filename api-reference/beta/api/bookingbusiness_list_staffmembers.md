@@ -1,6 +1,6 @@
 # List staffMembers
 
-Get a list of [staff members](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
+Get a list of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

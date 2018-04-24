@@ -49,7 +49,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/testbookings/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers/$entity",
     "id": "71d64d0e-7225-49b6-b0b1-070d476cda51",
     "displayName": "Samantha Booth",
     "emailAddress": "samanthab@M365B489948.OnMicrosoft.com",

@@ -6,11 +6,11 @@ Represents information about a particular service provided by a [bookingBusiness
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List services](../api/bookingbusiness_list_services.md) | [bookingService](bookingservice.md) collection | Get a list of bookingService objects in the specified bookingbusiness. |
-|[Create bookingService](../api/bookingbusiness_post_services.md) | [bookingService](bookingservice.md) | Create a bookingService for the specified bookingbusiness. |
-|[Get bookingService](../api/bookingservice_get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a bookingService object in the specified bookingbusiness.|
-|[Update](../api/bookingservice_update.md) | [bookingService](bookingservice.md)	|Update a bookingService object in the specified bookingbusiness. |
-|[Delete](../api/bookingservice_delete.md) | None |Delete a bookingService object in the specified bookingbusiness. |
+|[List services](../api/bookingbusiness_list_services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [bookingbusiness](../resources/bookingbusiness.md).|
+|[Create bookingService](../api/bookingbusiness_post_services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Get bookingService](../api/bookingservice_get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md).|
+|[Update](../api/bookingservice_update.md) | [bookingService](bookingservice.md)	|Update a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Delete](../api/bookingservice_delete.md) | None |Delete a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -23,7 +23,7 @@ Represents information about a particular service provided by a [bookingBusiness
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |emailAddress|String|An email address|
-|id|String| Read-only.|
+|id|String|The ID of that service, in a GUID format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
