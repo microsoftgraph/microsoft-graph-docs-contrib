@@ -17,6 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | V1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
+| Addition        | V1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](../api-reference/v1.0/resources/user.md) entity. |
 
 ### Outlook calendar
 

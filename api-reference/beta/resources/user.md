@@ -67,13 +67,13 @@ This resource supports:
 |:---------------|:--------|:------------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
 | accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
-|ageGroup|String|This property is used to set the age group of the user. Allowed values: undefined, minor, notAdult and adult.  |
+|ageGroup|String|This property is used to set the age group of the user. Allowed values: undefined, minor, notAdult and adult. Refer to the [ legal age group property definitions](#Legal-age-group-property-definitions) for further information. |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
 | companyName | String | The company name which the user is associated. Read-only.
-|consentProvidedForMinor|String|This property is used to set the whether consent has been obtained for Minors. Allowed values: none, granted, denied and notRequired.|
+|consentProvidedForMinor|String|This property is used to set the whether consent has been obtained for Minors. Allowed values: none, granted, denied and notRequired. Refer to the [ legal age group property definitions](#Legal-age-group-property-definitions) for further information.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
 |deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
@@ -84,7 +84,7 @@ This resource supports:
 |id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title. Supports $filter.|
-|legalAgeGroupClassification|String|This property is used by applications to determine the legal age group of the user. This property is Read-only and calculated based on [ageGroup](legalAgeGroupClassification.md) and [consentProvidedForMinor](legalAgeGroupClassification.md) properties. Allowed values: undefined, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult.|
+|legalAgeGroupClassification|String|This property is used by applications to determine the legal age group of the user. This property is Read-only and calculated based on [ageGroup](legalAgeGroupClassification.md) and [consentProvidedForMinor](legalAgeGroupClassification.md) properties. Allowed values: undefined, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the [ legal age group property definitions](#Legal-age-group-property-definitions) for further information.)|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user_get_mailboxsettings.md) or [update](../api/user_update_mailboxsettings.md) settings for sending automatic replies to incoming messages, locale, and time zone.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
@@ -119,26 +119,30 @@ This resource supports:
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
-## Legal age group classification
+### Legal age group property definitions
+
+This section explains how the three age group properties (legalAgeGroup, ageGroup and consentProvidedForMinor) are used by Azure AD administrators and application developers to meet age-related regulations.
+
+#### Legal age group classification
 
 This  read-only property is used by application developers to ensure the correct handling of a user based on their legal age group. It is calculated based on the user's ageGroup and consentProvidedForMinor properties. The property is only available to applications in the same tenant as the user and Microsoft because each directory is generally considered a seperate regulatory boundary.
 
 | Value	   | #	|Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no ageGroup has been set for the user.|
-|MinorWithoutParentalConsent |1|(Reserved for future use) The user is considered a minor based on the age-related regulations of thir country or region but consent has not been obtained from a parent or guardian. Users in this state will be unable to Sign In.|
-|MinorWithParentalConsent|2| The user is considered a minor based on the age-related regulations of their country or region and the adminstrator of the account has obtained appropriate consent from a parent or guardian.|
+|minorWithoutParentalConsent |1|(Reserved for future use)|
+|minorWithParentalConsent|2| The user is considered a minor based on the age-related regulations of their country or region and the adminstrator of the account has obtained appropriate consent from a parent or guardian.|
 |adult|3|The user considered an adult based on the age-related regulations of their country or region.|
 |notAdult|4|The user is from a country or region that has additional age-related regulations (such as the United States, United Kingdom, European Union or South Korea), and the user's age is in between a minor and an adult age (as stipulated based on country or region). Generally, this means that teenagers are considered as notAdult in regulated countries.|
-|MinorWithParentalConsent|5|The user is a minor but is from a country or region that has no age-related regulations.|
+|minorNoParentalConsentRequired|5|The user is a minor but is from a country or region that has no age-related regulations.|
 
-## Age group and minor consent
+#### Age group and minor consent
 
 The age group and minor consent properties are optional properties used by Azure AD administrators to help ensure the use of an account is handled correctly based on the age-related regulatory rules governing the user's country or region.
 
 For example: Cameron is administrator of a directory for an elementary school in Holyport in the United Kingdom. At the beginning of the school year he uses the admissions paperwork to obtain consent from the minor's parents based on the age-related regulations of the United Kingdom. He then creates all the accounts and sets ageGroup to "minor" and consentProvidedForMinor to "granted". Applications used by his students are then able to supress features that are not suitable for minors.
 
-ageGroup property:
+##### ageGroup property
 
 | Value	   | #	|Description|
 |:---------------|:--------|:----------|
@@ -147,7 +151,7 @@ ageGroup property:
 |notAdult|2|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user’s age is more than the upper limit of kid age (as per country) and less than lower limit of Adult age (as stipulated based on country or region). So basically, teenagers are considered as notAdult in regulated countries.|
 |adult|3|The user should be a treated as an adult.|
 
- consentProvidedForMinor property:
+ ##### consentProvidedForMinor property
 
 | Value	   | #	|Description|
 |:---------------|:--------|:----------|
