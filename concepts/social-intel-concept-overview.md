@@ -6,14 +6,14 @@ The people API returns people ordered by relevance to a user, based on that user
 
 The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Office 365 experiences, including Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
 
-## Why integrate with people data in Microsoft Graph
+## Why integrate with people data in Microsoft Graph?
 
 {<=1.5 pages of value proposition for developers.}
 
  {Here we can have People API-specific value prop section}
 
 
-## Why integrate with document-based insights in Microsoft Graph (preview)
+## Why integrate with document-based insights in Microsoft Graph (preview)?
 
 ### Use intelligence to improve collaboration
 
