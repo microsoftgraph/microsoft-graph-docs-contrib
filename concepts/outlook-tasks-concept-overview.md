@@ -16,9 +16,9 @@ If your application creates a task for a user, it can also automate the update o
 
 ### Extend Task properties
 
-Microsoft Graph is designed to account for the unique task management requirements of any organization. For example, your organization may require a structured set of task details in all new tasks. Use the [openTypeExtension](../api-reference/beta/resources/opentypeextension.md) to access this flexibility for the most common customizations. If your organization needs to extend Tasks in a way that is not supported by **openTypeExtension**, you can use a [singleValueLegacyExtendedProperty](../api-reference/beta/resources/singlevalueextendedproperty.md) or a [multiValueExtendedPropety](../api-reference/beta/resources/multivaluelegacyextendedproperty.md). 
+Microsoft Graph is designed to account for the unique task management requirements of any organization. For example, your organization may require a structured set of task details in all new tasks. Use the [openTypeExtension](../api-reference/beta/resources/opentypeextension.md) to access this flexibility for the most common customizations. If your organization needs to extend Tasks in a way that is not supported by **openTypeExtension**, you can use a [singleValueLegacyExtendedProperty](../api-reference/beta/resources/singlevaluelegacyextendedproperty.md) or a [multiValueExtendedPropety](../api-reference/beta/resources/multivaluelegacyextendedproperty.md).
 
-Learn more about [adding custom data to resources using extensions](extensibility_overview.md) and how exensions are implemented as [Outlook extended properties](../api-references/beta/resources/extended-properties-overview.md).
+Learn more about [adding custom data to resources using extensions](extensibility_overview.md) and how extensions are implemented as [Outlook extended properties](../api-reference/beta/resources/extended-properties-overview.md).
 
 ### Automate Task organization
 
