@@ -37,8 +37,8 @@ This method supports the following OData Query Parameters to help customize the 
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |initiatedBy/app/appId| eq|
 |initiatedBy/app/appDisplayName| eq|
-|targetResources/any(t: t/id| eq|
-|targetResources/any(t:t/displayName| eq, startswith|
+|targetResources/any(t: t/id)| eq|
+|targetResources/any(t:t/displayName)| eq, startswith|
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
