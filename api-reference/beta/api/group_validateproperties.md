@@ -95,7 +95,7 @@ Content-length: 128
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "@odata.type": "microsoft.graph.group"
 } -->
 ```http
 HTTP/1.1 422 Unprocessable Entity
