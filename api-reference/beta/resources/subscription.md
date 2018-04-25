@@ -28,7 +28,7 @@ Here is a JSON representation of the resource.
   "notificationUrl": "string",
   "resource": "string",
   "applicationId" : "string",
-  "expirationDateTime": "String (timestamp)",
+  "expirationDateTime": "string (timestamp)",
   "id": "string (identifier)",
   "clientState": "string",
   "creatorUserId": "string"
@@ -53,11 +53,13 @@ Here is a JSON representation of the resource.
 
 | Resource            | Maximum Expiration Time |
 |:--------------------|:------------------------|
-| Mail                | 4230 minutes.           |
-| Calendar            | 4230 minutes.           |
-| Contacts            | 4230 minutes.           |
-| Group conversations | 4230 minutes.           |
-| Drive root items    | 43200 minutes. Existing applications and new applications should not exceed the supported value. Higher values won't be permitted in upcoming releases. |
+| Mail                | 4230 minutes (3 days)           |
+| Calendar            | 4230 minutes (3 days)           |
+| Contacts            | 4230 minutes (3 days)           |
+| Group conversations | 4230 minutes (3 days)           |
+| Drive root items    | 43200 minutes (30 days) |
+
+> **Note**: Existing applications and new applications should not exceed the supported value. Higher values won't be permitted in upcoming releases.
 
 ## Relationships
 None
