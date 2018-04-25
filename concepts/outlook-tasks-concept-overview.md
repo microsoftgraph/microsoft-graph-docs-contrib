@@ -1,8 +1,8 @@
-# Outlook to-do tasks API overview (preview)
+# Outlook Tasks API overview (preview)
 
 Outlook Tasks is a simple task manager feature of the OutLook web and desktop clients. It lets customers track their tasks in the same client that they use to manage email and their calendars. The integration with OutLook provides popular OutLook features such as forwarding, attaching files, Outlook messages, and calendar items. Tasks can be assigned to other Outlook users in the same way mail can be sent to other Outlook users and event invitations can be sent to Outlook Users. Tasks can be organized into folders and folders can be organized in groups. Tasks are integrated with OneNote to let a customer keep an extensive and rich set of Task-specific content in one place. All of these Task features are available on the Tasks tab of the Outlook Client.
 
-## Why integrate with Outlook to-do tasks?
+## Why integrate with Outlook tasks?
 
 By integrating your apps with Outlook Tasks, you can create empowering experiences across multiple platforms that reach millions of users worldwide. You can use Microsoft Graph to access tasks, task attachments, task folders, and task groups to create solutions that help your users track their daily tasks and even automate the creation, update and completion of tasks. With well designed Task automation, you can give users all of the benefits of task tracking while insuring that your organization's work flow is automatically tracked in user tasks.
 
@@ -13,6 +13,16 @@ If your line-of-business application (lob) generates the work flow that directs 
 ### Automate Task updates 
 
 If your application creates a task for a user, it can also automate the update of a task as work progresses on the task. The user can update the task within the Outlook client or your application can automate the update of the task - as long as the assigned user works in your application in the context of the task. Hours worked on the task can be updated, the status, and the completion date can be updated. The Microsoft Graph Outlook Tasks API gives access to the details of the task so your app can even add additional notes to the task as appropriate. 
+
+### Extend Task properties
+
+Microsoft Graph is designed to account for the unique task management requirements of any organization. For example, your organization may require a structured set of task details in all new tasks. Use the [openTypeExtension](../api-reference/beta/resources/opentypeextension.md) to access this flexibility for the most common customizations. If your organization needs to extend Tasks in a way that is not supported by **openTypeExtension**, you can use a [singleValueLegacyExtendedProperty](../api-reference/beta/resources/singlevalueextendedproperty.md) or a [multiValueExtendedPropety](../api-reference/beta/resources/multivaluelegacyextendedproperty.md). 
+
+Learn more about [adding custom data to resources using extensions](extensibility_overview.md) and how exensions are implemented as [Outlook extended properties](../api-references/beta/resources/extended-properties-overview.md).
+
+### Automate Task organization
+
+As your organization starts new projects or takes on new clients, use Microsoft Graph to create [task folders](../api-reference/beta/resources/outlooktaskfolder.md) and [task groups](../api-reference/beta/resources/outlooktaskgroup.md) to organize tasks by project or customer... or any other logical entity that your organization works with. Once you've created a task group and folder, you can use Microsoft Graph to create tasks in the new folder. 
 
 ### Report on Task progress across your organization
 
