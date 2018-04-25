@@ -1,6 +1,6 @@
 # Outlook To-do tasks API overview (preview)
 
-Outlook tasks is a simple task manager feature of the Outlook web and desktop clients. Outlook tasks lets customers track their tasks in the same client that they use to manage email and calendars. The integration with Outlook provides popular Outlook features such as forwarding and attaching Outlook items, files, and reference links. Tasks can be assigned to other Outlook users in the same way mail can be sent to other Outlook users and event invitations can be sent to Outlook Users. tasks can be organized into folders and folders can be organized in groups. Tasks are integrated with OneNote to let a customer keep an extensive and rich set of task-specific content in one place. All of these task features are available on the tasks tab of the Outlook Client.
+Outlook tasks is a simple task manager feature of the Outlook web and desktop clients. Outlook tasks lets customers track their tasks in the same client that they use to manage email and calendars. The integration with Outlook provides popular Outlook features such as forwarding and attaching Outlook items, files, and reference links. Tasks are organized by task folder and task folders can be organized in task groups. Tasks are integrated with OneNote to let a customer keep an extensive and rich set of task-specific content in one place. All of these task features are available on the tasks tab of the Outlook Client.
 
 ## Why integrate with Outlook To-do tasks?
 
