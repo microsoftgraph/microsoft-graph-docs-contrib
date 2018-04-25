@@ -37,7 +37,7 @@ st",
   "name": "get_signin"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/auditLogs/signIns/<id>
+GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
 ##### Response
 Here is an example of the response. 
