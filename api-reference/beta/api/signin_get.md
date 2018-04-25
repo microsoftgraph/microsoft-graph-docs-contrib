@@ -19,38 +19,6 @@ GET /auditLogs/signIns/{id}
 ## Optional query parameters
 This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) for how to use these parameters.
 
-|Name     |Description                            |Example|
-|:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
-|[$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter)|Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results.|`/auditLogs/signIns?$top=1&$skip=1`|
-|[$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
-
-## List of attributes supported by $filter parameter
-|Attribute Name |Supported operators|
-|:----------------|:------|
-|id|eq|
-|userId|eq|
-|appId|eq|
-|createdDateTime| eq, le, ge|
-|userDisplayName| eq, startswith|
-|userPrincipalName| eq, startswith|
-|appDisplayName| eq, startswith|
-|ipAddress| eq, startswith|
-|location/city| eq, startswith|
-|location/state| eq, startswith|
-|location/countryOrRegion| eq, startswith|
-|status/errorCode|eq|
-|initiatedBy/user/id|eq|
-|initiatedBy/user/displayName| eq|
-|initiatedBy/user/userPrincipalName| eq, startswith|
-|clientAppUsed| eq|
-|conditionalAccessStatus | eq|
-|deviceDetails/browser| eq, startswith|
-|deviceDetails/operatingSystem| eq, startswith|
-|correlationId| eq|
-|isRisky| eq|
-
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
