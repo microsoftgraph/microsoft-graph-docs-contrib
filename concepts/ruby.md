@@ -1,4 +1,4 @@
-# Get started with Microsoft Graph in a Ruby on Rails app
+﻿# Get started with Microsoft Graph in a Ruby on Rails app
 
 This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access Microsoft Graph by using direct REST calls.
 
@@ -19,7 +19,7 @@ To get started, you'll need:
 - Rails framework (the sample has been tested on Rails 4.2).
 - Bundler dependency manager.
 - Rack web server interface for Ruby.
-- A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - The Microsoft Graph Connect Starter Project for Ruby on Rails. Download the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample). The starter project is located in the _starter_ folder.
 
 
@@ -285,10 +285,7 @@ Finally, the code uses the HTTP response code returned to notify the user whethe
 3. Go to `http://localhost:3000` in your web browser.
 
 ## See also
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the REST API using the [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore our other [Microsoft Graph samples](https://github.com/microsoftgraph) on GitHub.
-- [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Get access on behalf of a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Get access without a user](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
 
 

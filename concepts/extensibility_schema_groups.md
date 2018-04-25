@@ -1,4 +1,4 @@
-# Add custom data to groups using schema extensions (example)
+# Add custom data to groups using schema extensions 
 
 We're going to walk you through an example to demonstrate how to use *schema extensions*. 
 
@@ -104,7 +104,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 Content-length: 420
 {
-    "id": "graphlearn_course",
+    "id": "graphlearn_courses",
     "description": "Graph Learn training courses extensions",
     "targetTypes": [
         "Group"
@@ -242,7 +242,7 @@ Content-length: 326
 ## See also
 
 - [Add custom data to resources using extensions](extensibility_overview.md)
-- [Add custom data to users using open extensions (example)](extensibility_open_users.md)
+- [Add custom data to users using open extensions (preview)](extensibility_open_users.md)
 - [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Adding and Verifying a Domain for the NEW Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension resource type](../api-reference/v1.0/resources/schemaextension.md)

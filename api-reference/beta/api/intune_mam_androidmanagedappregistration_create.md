@@ -1,35 +1,41 @@
 ﻿# Create androidManagedAppRegistration
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) object.
 ## Prerequisites
-One of the following [permission scopes](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) is required to execute this API:
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-*DeviceManagementApps.ReadWrite.All*
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-POST /managedAppRegistrations/
-POST /users/{usersId}/managedAppRegistrations/
-POST /deviceAppManagement/managedAppRegistrations/
+``` http
+POST /deviceAppManagement/managedAppRegistrations
 ```
 
 ## Request headers
 |Header|Value|
-|---|---|
+|:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation of a androidManagedAppRegistration object.
-The following table shows the properties that are required when you create a androidManagedAppRegistration.
+In the request body, supply a JSON representation for the androidManagedAppRegistration object.
+
+The following table shows the properties that are required when you create the androidManagedAppRegistration.
 
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |createdDateTime|DateTimeOffset|Date and time of creation Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |lastSyncDateTime|DateTimeOffset|Date and time of last the app synced with management service. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |applicationVersion|String|App version Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
@@ -38,7 +44,9 @@ The following table shows the properties that are required when you create a and
 |deviceType|String|Host device type Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceTag|String|App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceName|String|Host device name Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|String collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md) Possible values are: `none`, `rootedDevice`.|
+|managedDeviceId|String|The Managed Device identifier of the host device. Value could be empty even when the host device is managed. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|azureADDeviceId|String|The Azure Active Directory Device identifier of the host device. Value could be empty even when the host device is Azure Active Directory registered. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md). Possible values are: `none`, `rootedDevice`.|
 |userId|String|The user Id to who this app registration belongs. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
@@ -52,10 +60,10 @@ If successful, this method returns a `201 Created` response code and a [androidM
 ## Example
 ### Request
 Here is an example of the request.
-```http
-POST https://graph.microsoft.com/beta/managedAppRegistrations/
+``` http
+POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations
 Content-type: application/json
-Content-length: 645
+Content-length: 743
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -66,6 +74,8 @@ Content-length: 645
   "deviceType": "Device Type value",
   "deviceTag": "Device Tag value",
   "deviceName": "Device Name value",
+  "managedDeviceId": "Managed Device Id value",
+  "azureADDeviceId": "Azure ADDevice Id value",
   "flaggedReasons": [
     "rootedDevice"
   ],
@@ -80,10 +90,10 @@ Content-length: 645
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 753
+Content-Length: 851
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -95,6 +105,8 @@ Content-Length: 753
   "deviceType": "Device Type value",
   "deviceTag": "Device Tag value",
   "deviceName": "Device Name value",
+  "managedDeviceId": "Managed Device Id value",
+  "azureADDeviceId": "Azure ADDevice Id value",
   "flaggedReasons": [
     "rootedDevice"
   ],

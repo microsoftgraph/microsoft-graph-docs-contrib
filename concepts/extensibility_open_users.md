@@ -1,4 +1,4 @@
-# Add custom data to users using open extensions (example)
+# Add custom data to users using open extensions
 We're going to walk you through an example to demonstrate how to use *open extensions*. 
 
 Imagine you're building an application that is available on lots of different client platforms, such as desktop and mobile.  You want to let users 
@@ -114,7 +114,7 @@ HTTP/1.1 204 No content
 ## See also
 
 - [Add custom data to resources using extensions](extensibility_overview.md)
-- [Add custom data to groups using schema extensions (example)](extensibility_schema_groups.md)
+- [Add custom data to groups using schema extensions](extensibility_schema_groups.md)
 - [openTypeExtension resource type](../api-reference/v1.0/resources/opentypeextension.md)
 - [Create open extension](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 - [Get open extension](../api-reference/v1.0/api/opentypeextension_get.md)

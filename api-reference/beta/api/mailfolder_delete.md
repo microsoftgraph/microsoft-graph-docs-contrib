@@ -1,9 +1,18 @@
 # Delete mailFolder
 
-Delete mailFolder.
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Mail.ReadWrite*
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Delete [mailFolder](../resources/mailfolder.md) or [mailSearchFolder](../resources/mailSearchFolder.md).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,22 +27,22 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_mailfolder"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/mailFolders/{id}
+DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 ```
-##### Response
-Here is an example of the response. 
+
+#### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
