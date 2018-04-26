@@ -23,3 +23,4 @@ Below are some use cases of how developers could use these APIs:
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
 - [Learn more about the device relay API](../api-reference/beta/resources/project_rome_overview.md)
+- [Learn more about Project Rome](http://aka.ms/projectrome)
