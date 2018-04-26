@@ -1,12 +1,12 @@
 # modifiedProperty resource type
-Indicates all the modified properties with Old Value and new value for any resource in Azure AD that's changed
+Indicates all the modified properties with old value and new value for any resource in Azure AD that's changed
 
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String|Indicates the property name of the targe attribute that was changed.|
+|displayName|String|Indicates the property name of the target attribute that was changed.|
 |newValue|String|Indicates the updated value for the propery.|
 |oldValue|String|Indicates the previous value (before the update) for the property.|
 

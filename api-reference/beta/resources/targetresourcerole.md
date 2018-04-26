@@ -1,5 +1,5 @@
 # targetResourceRole resource type
-Indicates the role which was the target of the activity change.
+Indicates the role which was the target of the activity change. Derived from the [targetResource](targetresource.md) resource.
 
 
 

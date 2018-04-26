@@ -21,12 +21,11 @@ This method supports the following OData Query Parameters to help customize the 
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
-|[$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter)|Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results.|`/auditLogs/directoryAudits?$top=1&$skip=1`|
+|[$filter](../../../concepts/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
 |[$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](../../../concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-## List of attributes supported by $filter parameter
+### List of attributes supported by $filter parameter
 |Attribute Name |Supported operators|
 |:----------------|:------|
 |activityDisplayName| eq, startswith|

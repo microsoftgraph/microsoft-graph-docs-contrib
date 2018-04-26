@@ -1,6 +1,5 @@
 # targetResourceUser resource type
-Indicates the User Principal Name (UPN) that impacted the audit activity.
-
+Indicates the user object that was added, updated or deleted by admins as part of audit activity. Derived from the [targetResource](targetresource.md) resource.
 
 
 ## Properties

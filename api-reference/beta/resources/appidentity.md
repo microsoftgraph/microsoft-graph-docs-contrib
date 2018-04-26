@@ -1,5 +1,5 @@
 # appIdentity resource type
-Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the [directoryAudit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/directoryaudit/directoryaudit_get) API
+Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the [directoryAudit](../api/directoryaudit/directoryaudit_get) API
 
 
 

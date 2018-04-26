@@ -1,5 +1,5 @@
 # mfaDetail resource type
-Indicates MFA  details for a specific sign-in. It includes the auth method used for signing in as well as auth details (like Phone number for SMS or voicemail based auth) 
+Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in as well as auth details (for example: Phone, SMS or voicemail) 
 
 
 

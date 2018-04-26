@@ -1,26 +1,29 @@
 # targetResource resource type
-Indicates the target resource entiry that changed by the activity. Includes information like the display name of the resource, unique Id and any properties that was changed during the activity. 
+Indicates a collection of  target resource types associated with the audit activity. Each target resource type will inherit the properties outlined below from this resource.
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|Indicates the display name of the resources outlined under Target Resource Types below.|
-|id|String|Indicates the Unique Id of the resource (E.g. UserId, AppId, RoleId etc..).|
-|modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates Name, old value and new value of each attribute that changed. This is applicable for any "Update" activities|
+|id|String|Indicates the Unique Id of the resource (For example: UserId, AppId, RoleId.).|
+|modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. This is applicable for any "Update" activities|
 
 ### Target Resource Types
 
-|Resource Name| Reference
+The target resource type varies according to the underlying resource:
+
+|Resource Name| Reference|
 |-------------|----------|
-Device|targetresourcedevice.md
-Directory|targetresourcedirectory.md
-Group|targetresourcegroup.md
-Policy|targetresourcepolicy.md
-Role|targetresourcerole.md
-Service Principal|targetresourceserviceprincipal.md
-User|targetresourceuser.md
-Other|targetresourceother.md
+Device|[targetResourceDevice](targetresourcedevice.md)
+Directory|[targetResourceDirectory](targetresourcedirectory.md]
+Group|[targetResourceGroup](targetresourcegroup.md)
+Policy|[targetResourcePolicy](targetresourcepolicy.md)
+Role|[targetResourceRole](targetresourcerole.md)
+Service Principal|[targetResourceServicePrincipal](targetresourceserviceprincipal.md)
+User|[targetResourceUser](targetresourceuser.md)
+Other|[targetResourceOther](targetresourceother.md)
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
