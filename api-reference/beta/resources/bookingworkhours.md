@@ -1,7 +1,6 @@
 # bookingWorkHours resource type
 
-Represents the set of working hours in a single day of the week.
-
+Represents the set of working hours in a single day of the week, for a [bookingBusiness](#bookingbusiness.md) or [bookingStaffMember](#bookingstaffmember.md).
 
 ## Properties
 | Property	   | Type	|Description|

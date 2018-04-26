@@ -1,19 +1,19 @@
 # Delete bookingAppointment
 
-Delete bookingAppointment.
+Delete a [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/<id>/appointments/<id>
+DELETE /bookingBusinesses/{id}/appointments/{id}
 
 ```
 ## Request headers
@@ -36,7 +36,7 @@ The following is an example of the request.
   "name": "delete_bookingappointment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/<id>/appointments/<id>
+DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKqAAA=
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

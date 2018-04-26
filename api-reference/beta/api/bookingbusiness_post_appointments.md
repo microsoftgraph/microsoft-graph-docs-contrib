@@ -1,6 +1,6 @@
 # Create bookingAppointment
 
-Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified Microsoft Bookings business.
+Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -30,46 +30,120 @@ If successful, this method returns `201, Created` response code and [bookingAppo
 
 ## Example
 ##### Request
-The following is an example of the request.
+The following is an example of the request. This appointment does not involve booking specific staff members.
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/<id>/appointments
+POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
 Content-type: application/json
-Content-length: 947
 
 {
-  "selfServiceAppointmentId": "selfServiceAppointmentId-value",
-  "customerId": "customerId-value",
-  "customerName": "customerName-value",
-  "customerEmailAddress": "customerEmailAddress-value",
-  "customerPhone": "customerPhone-value",
-  "customerLocation": {
-    "displayName": "displayName-value",
-    "locationEmailAddress": "locationEmailAddress-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+    "@odata.type":"#microsoft.graph.bookingAppointment",
+    "customerEmailAddress":"jordanm@contoso.com",
+    "customerLocation":{
+        "@odata.type":"#microsoft.graph.location",
+        "address":{
+            "@odata.type":"#microsoft.graph.physicalAddress",
+            "city":"Buffalo",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "postOfficeBox":null,
+            "state":"NY",
+            "street":"123 First Avenue",
+            "type@odata.type":"#microsoft.graph.physicalAddressType",
+            "type":null
+        },
+        "coordinates":null,
+        "displayName":"Customer",
+        "locationEmailAddress":null,
+        "locationType@odata.type":"#microsoft.graph.locationType",
+        "locationType":null,
+        "locationUri":null,
+        "uniqueId":null,
+        "uniqueIdType@odata.type":"#microsoft.graph.locationUniqueIdType",
+        "uniqueIdType":null
     },
-    "coordinates": {
-      "altitude": 99.0,
-      "latitude": 99.0,
-      "longitude": 99.0,
-      "accuracy": 99.0,
-      "altitudeAccuracy": 99.0
+    "customerName":"Jordan Miller",
+    "customerNotes":"Please be on time.",
+    "customerPhone":"213-555-0199",
+    "end":{
+        "@odata.type":"#microsoft.graph.dateTimeTimeZone",
+        "dateTime":"2018-05-01T12:30:00.0000000+00:00",
+        "timeZone":"UTC"
     },
-    "locationUri": "locationUri-value",
-    "locationType": "locationType-value",
-    "uniqueId": "uniqueId-value",
-    "uniqueIdType": "uniqueIdType-value"
-  }
+    "invoiceAmount":10.0,
+    "invoiceDate":{
+        "@odata.type":"#microsoft.graph.dateTimeTimeZone",
+        "dateTime":"2018-05-01T12:30:00.0000000+00:00",
+        "timeZone":"UTC"
+    },
+    "invoiceId":"1001",
+    "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",
+    "invoiceStatus":"open",
+    "invoiceUrl":"theInvoiceUrl",
+    "optOutOfCustomerEmail":false,
+    "postBuffer":"PT10M",
+    "preBuffer":"PT5M",
+    "price":10.0,
+    "priceType@odata.type":"#microsoft.graph.bookingPriceType",
+    "priceType":"fixedPrice",
+    "reminders@odata.type":"#Collection(microsoft.graph.bookingReminder)",
+    "reminders":[
+        {
+            "@odata.type":"#microsoft.graph.bookingReminder",
+            "message":"This service is tomorrow",
+            "offset":"P1D",
+            "recipients@odata.type":"#microsoft.graph.bookingReminderRecipients",
+            "recipients":"allAttendees"
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingReminder",
+            "message":"Please be available to enjoy your lunch service.",
+            "offset":"PT1H",
+            "recipients@odata.type":"#microsoft.graph.bookingReminderRecipients",
+            "recipients":"customer"
+        },
+        {
+            "@odata.type":"#microsoft.graph.bookingReminder",
+            "message":"Please check traffic for next cater.",
+            "offset":"PT2H",
+            "recipients@odata.type":"#microsoft.graph.bookingReminderRecipients",
+            "recipients":"staff"
+        }
+    ],
+    "serviceId":"57da6774-a087-4d69-b0e6-6fb82c339976",
+    "serviceLocation":{
+        "@odata.type":"#microsoft.graph.location",
+        "address":{
+            "@odata.type":"#microsoft.graph.physicalAddress",
+            "city":"Buffalo",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "postOfficeBox":null,
+            "state":"NY",
+            "street":"123 First Avenue",
+            "type@odata.type":"#microsoft.graph.physicalAddressType",
+            "type":null
+        },
+        "coordinates":null,
+        "displayName":"Customer location",
+        "locationEmailAddress":null,
+        "locationType@odata.type":"#microsoft.graph.locationType",
+        "locationType":null,
+        "locationUri":null,
+        "uniqueId":null,
+        "uniqueIdType@odata.type":"#microsoft.graph.locationUniqueIdType",
+        "uniqueIdType":null
+    },
+    "serviceName":"Catered bento",
+    "serviceNotes":"Customer requires punctual service.",
+    "start":{
+        "@odata.type":"#microsoft.graph.dateTimeTimeZone",
+        "dateTime":"2018-05-01T12:00:00.0000000+00:00",
+        "timeZone":"UTC"
+    }
 }
 ```
 In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.
@@ -83,38 +157,107 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 947
 
 {
-  "selfServiceAppointmentId": "selfServiceAppointmentId-value",
-  "customerId": "customerId-value",
-  "customerName": "customerName-value",
-  "customerEmailAddress": "customerEmailAddress-value",
-  "customerPhone": "customerPhone-value",
-  "customerLocation": {
-    "displayName": "displayName-value",
-    "locationEmailAddress": "locationEmailAddress-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
+    "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
+    "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+    "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+    "customerName": "Jordan Miller",
+    "customerEmailAddress": "jordanm@contoso.com",
+    "customerPhone": "213-555-0199",
+    "customerNotes": null,
+    "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
+    "serviceName": "Catered bento",
+    "duration": "PT30M",
+    "preBuffer": "PT5M",
+    "postBuffer": "PT10M",
+    "priceType": "fixedPrice",
+    "price": 10,
+    "serviceNotes": "Customer requires punctual service.",
+    "optOutOfCustomerEmail": false,
+    "staffMemberIds": [],
+    "invoiceAmount": 10,
+    "invoiceId": "1001",
+    "invoiceStatus": "open",
+    "invoiceUrl": "theInvoiceUrl",
+    "customerLocation": {
+        "displayName": "Customer",
+        "locationEmailAddress": null,
+        "locationUri": "",
+        "locationType": null,
+        "uniqueId": null,
+        "uniqueIdType": null,
+        "address": {
+            "type": "home",
+            "postOfficeBox": "",
+            "street": "",
+            "city": "",
+            "state": "",
+            "countryOrRegion": "",
+            "postalCode": ""
+        },
+        "coordinates": {
+            "altitude": null,
+            "latitude": null,
+            "longitude": null,
+            "accuracy": null,
+            "altitudeAccuracy": null
+        }
     },
-    "coordinates": {
-      "altitude": 99.0,
-      "latitude": 99.0,
-      "longitude": 99.0,
-      "accuracy": 99.0,
-      "altitudeAccuracy": 99.0
+    "start": {
+        "dateTime": "2018-05-01T12:00:00.0000000Z",
+        "timeZone": "UTC"
     },
-    "locationUri": "locationUri-value",
-    "locationType": "locationType-value",
-    "uniqueId": "uniqueId-value",
-    "uniqueIdType": "uniqueIdType-value"
-  }
+    "end": {
+        "dateTime": "2018-05-01T12:30:00.0000000Z",
+        "timeZone": "UTC"
+    },
+    "serviceLocation": {
+        "displayName": "Customer location (123 First Avenue, Buffalo, NY 98052, USA)",
+        "locationEmailAddress": null,
+        "locationUri": "",
+        "locationType": null,
+        "uniqueId": null,
+        "uniqueIdType": null,
+        "address": {
+            "type": "home",
+            "postOfficeBox": "",
+            "street": "",
+            "city": "",
+            "state": "",
+            "countryOrRegion": "",
+            "postalCode": ""
+        },
+        "coordinates": {
+            "altitude": null,
+            "latitude": null,
+            "longitude": null,
+            "accuracy": null,
+            "altitudeAccuracy": null
+        }
+    },
+    "reminders": [
+        {
+            "offset": "P1D",
+            "recipients": "allAttendees",
+            "message": "This service is tomorrow"
+        },
+        {
+            "offset": "PT1H",
+            "recipients": "customer",
+            "message": "Please be available to enjoy your lunch service."
+        },
+        {
+            "offset": "PT2H",
+            "recipients": "staff",
+            "message": "Please check traffic for next cater."
+        }
+    ],
+    "invoiceDate": {
+        "dateTime": "2018-05-01T12:30:00.0000000Z",
+        "timeZone": "UTC"
+    }
 }
 ```
 

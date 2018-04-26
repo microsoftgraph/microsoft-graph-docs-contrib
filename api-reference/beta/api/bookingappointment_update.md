@@ -1,19 +1,19 @@
 # Update bookingappointment
 
-Update the properties of bookingappointment object.
+Update the properties of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |    |
-|Delegated (personal Microsoft account) |    |
-|Application |  | 
+|Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegated (personal Microsoft account) | Not supported.   |
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/<id>/appointments/<id>
+PATCH /bookingBusinesses/{id}/appointments/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -25,122 +25,74 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|customerEmailAddress|String||
-|customerId|String||
-|customerLocation|location||
-|customerName|String||
-|customerNotes|String||
-|customerPhone|String||
-|duration|Duration||
-|end|dateTimeTimeZone||
-|invoiceAmount|Double||
-|invoiceDate|dateTimeTimeZone||
-|invoiceId|String||
-|invoiceStatus|string| Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
-|invoiceUrl|String||
-|optOutOfCustomerEmail|Boolean||
-|postBuffer|Duration||
-|preBuffer|Duration||
-|price|Double||
-|priceType|string| Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
-|reminders|bookingReminder||
-|selfServiceAppointmentId|String||
-|serviceId|String||
-|serviceLocation|location||
-|serviceName|String||
-|serviceNotes|String||
-|staffMemberIds|String||
-|start|dateTimeTimeZone||
+|customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
+|customerId|String|The ID of the [bookingCustomer](bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the **customerId** immutable.|
+|customerLocation|[location](location.md)|Represents location information for the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
+|customerName|String|The customer's name.|
+|customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
+|customerPhone|String|The customer's phone number.|
+|duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
+|end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
+|invoiceAmount|Double|The billed amount on the invoice.|
+|invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
+|invoiceId|String|The ID of the invoice.|
+|invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
+|invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
+|optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
+|postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
+|preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
+|price|Double|The regular price for an appointment for the specified [bookingService](bookingservice.md).|
+|priceType|string| A setting to provide flexibility for the pricing structure of services. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|reminders|[bookingReminder](bookingreminder.md) collection|The collection of customer reminders sent for this appointment. The value of this property is available only when reading this **bookingAppointment** by its ID.|
+|selfServiceAppointmentId|String|An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.|
+|serviceId|String|The ID of the [bookingService](bookingservice.md) associated with this appointment.|
+|serviceLocation|[location](location.md)|The location where the service is delivered.|
+|serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the **serviceId** property.|
+|serviceNotes|String|Notes from a [bookingStaffMember](bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
+|staffMemberIds|String collection|The ID of each [bookingStaffMember](bookingstaffmember.md) who is scheduled in this appointment.|
+|start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
+
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [bookingAppointment](../resources/bookingappointment.md) object in the response body.
+If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+The following example changes the date of service by a day, and updated the invoice date as well.
 <!-- {
   "blockType": "request",
   "name": "update_bookingappointment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/<id>/appointments/<id>
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
 Content-type: application/json
-Content-length: 947
 
 {
-  "selfServiceAppointmentId": "selfServiceAppointmentId-value",
-  "customerId": "customerId-value",
-  "customerName": "customerName-value",
-  "customerEmailAddress": "customerEmailAddress-value",
-  "customerPhone": "customerPhone-value",
-  "customerLocation": {
-    "displayName": "displayName-value",
-    "locationEmailAddress": "locationEmailAddress-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+    "@odata.type":"#microsoft.graph.bookingAppointment",
+    "end":{
+        "@odata.type":"#microsoft.graph.dateTimeTimeZone",
+        "dateTime":"2018-05-06T12:30:00.0000000+00:00",
+        "timeZone":"UTC"
     },
-    "coordinates": {
-      "altitude": 99.0,
-      "latitude": 99.0,
-      "longitude": 99.0,
-      "accuracy": 99.0,
-      "altitudeAccuracy": 99.0
+    "invoiceDate":{
+        "@odata.type":"#microsoft.graph.dateTimeTimeZone",
+        "dateTime":"2018-05-06T12:30:00.0000000+00:00",
+        "timeZone":"UTC"
     },
-    "locationUri": "locationUri-value",
-    "locationType": "locationType-value",
-    "uniqueId": "uniqueId-value",
-    "uniqueIdType": "uniqueIdType-value"
-  }
+    "start":{
+        "@odata.type":"#microsoft.graph.dateTimeTimeZone",
+        "dateTime":"2018-05-06T12:00:00.0000000+00:00",
+        "timeZone":"UTC"
+    }
 }
 ```
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bookingAppointment"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 947
-
-{
-  "selfServiceAppointmentId": "selfServiceAppointmentId-value",
-  "customerId": "customerId-value",
-  "customerName": "customerName-value",
-  "customerEmailAddress": "customerEmailAddress-value",
-  "customerPhone": "customerPhone-value",
-  "customerLocation": {
-    "displayName": "displayName-value",
-    "locationEmailAddress": "locationEmailAddress-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "coordinates": {
-      "altitude": 99.0,
-      "latitude": 99.0,
-      "longitude": 99.0,
-      "accuracy": 99.0,
-      "altitudeAccuracy": 99.0
-    },
-    "locationUri": "locationUri-value",
-    "locationType": "locationType-value",
-    "uniqueId": "uniqueId-value",
-    "uniqueIdType": "uniqueIdType-value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

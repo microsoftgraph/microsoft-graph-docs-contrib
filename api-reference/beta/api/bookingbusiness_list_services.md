@@ -93,11 +93,11 @@ Content-type: application/json
         },
         {
             "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
-            "displayName": "Bento",
+            "displayName": "Catered bento",
             "defaultDuration": "PT30M",
             "defaultPrice": 10,
             "defaultPriceType": "fixedPrice",
-            "description": "Individual bento box lunch delivery",
+            "description": "Catered individual bento box lunch",
             "isHiddenFromCustomers": false,
             "notes": "Home-cooked special",
             "preBuffer": "PT5M",

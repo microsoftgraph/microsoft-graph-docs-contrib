@@ -8,8 +8,8 @@ Represents the set of policies that determine how appointments should be created
 |allowStaffSelection|Boolean|True if to allow customers to choose a specific person for the booking.|
 |maximumAdvance|Duration|Maximum number of days in advance that a booking can be made. It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |minimumLeadTime|Duration|The minimum amount of time before which bookings and cancellations must be made. It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
-|sendConfirmationsToOwner|Boolean| Notify the staff member via email when a booking for that staff member is created or changed.|
-|timeSlotInterval|Duration|Duration of each time slot.|
+|sendConfirmationsToOwner|Boolean| True to notify the business via email when a booking is created or changed. Use the email address specified in the **email** property of the **bookingBusiness** entity for the business. |
+|timeSlotInterval|Duration|Duration of each time slot, denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 
 ## JSON representation
 

@@ -4,6 +4,12 @@ Represents a staff member who provides services in a [bookingBusiness](bookingbu
 
 Staff members can be part of the Office 355 tenant where the booking business is configured, or they can use email services from other email providers.
 
+When booking appointments, the Bookings API considers the following settings to determine a staff member's availability: 
+
+1. By default, the hours of operation of the business (the **businessHours** property of the [bookingBusiness](bookingbusiness.md) entity) represents the general availability of the staff member.
+2. If **useBusinessHours** is false, then the staff member's specific work hours (**workingHours** property of the **bookingStaffmember** entity) represents that member's general availability.
+3. If **availabilityIsAffectedByPersonalCalendar** is true, then the Bookings API would first look at the staff member's generally available hours (as determined by either #1 or #2), and verify availability during those hours in the staff member's personal calendar, before making a booking.
+
 ## Methods
 
 | Method		   | Return Type	|Description|
@@ -17,14 +23,14 @@ Staff members can be part of the Office 355 tenant where the booking business is
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True means that if the staff member is an Office 365 user, the Bookings API uses the staff member's personal calendar in Office 365 as well as the **workingHours** property to determine availability. |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True means that if the staff member is an Office 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Office 365, before making a booking. |
 |colorIndex|Int32|Identifies a color to represent the staff member. The color corresponds to the color palette in the **Staff details** page in the Bookings app.|
 |displayName|String|The name of the staff member, as displayed to customers.|
 |emailAddress|String|The email address of the staff member. This can be in the same Office 365 tenant as the business, or in a different email domain. This email address can be used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business.|
 |id|String| The ID of the staff member, in a GUID format. Read-only.|
 |role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|useBusinessHours|Boolean|True means the staff member's availability is determined by the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHouse** property setting.|
-|workingHours|[bookingWorkHours](bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
+|useBusinessHours|Boolean|True means the staff member's availability is as specified in the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHours** property setting.|
+|workingHours|[bookingWorkHours](bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking. By default, they are initialized to be the same as the **businessHours** property of the business.|
 
 ## Relationships
 None

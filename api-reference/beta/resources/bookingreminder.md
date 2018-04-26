@@ -7,7 +7,7 @@ Represents when and to whom to send an email reminder.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |message|String|The message in the reminder.|
-|offset|Duration|The amount of time before an appointment that the reminder should be sent.|
+|offset|Duration|The amount of time before the start of an appointment that the reminder should be sent. It's denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |recipients|String| The persons who shouold receive the reminder. Possible values are: `allAttendees`, `staff`, `customer`.|
 
 ## JSON representation
