@@ -74,7 +74,7 @@ The following table lists the common operations for a business in the Bookings A
 | Add, get, update, or delete services | [bookingService](bookingservice.md) | [Methods of bookingService](bookingservice.md#methods)  |
 | Publish or unpublish the scheduling page | [bookingBusiness](bookingbusiness.md) | [publish](../api/bookingbusiness_publish.md) <br> [unpublish](../api/bookingbusiness_unpublish.md) |
 | Create, get, update, delete, or cancel an appointment | [bookingAppointment](bookingappointment.md) | [Methods of bookingAppointment](bookingappointment.md#methods)  |
-| Get appointments in a date range | [bookingBusiness](bookingbusiness.md) | [getCalendarView](../api/bookingbusiness_getcalendarview.md) |
+| Get appointments in a date range | [bookingBusiness](bookingbusiness.md) | [List Bookings calendarView](../api/bookingbusiness_list_calendarview.md) |
 | Get currency | [bookingCurrency](bookingcurrency.md) | [Methods of bookingCurrency](bookingcurrency.md#methods) |
 
 
