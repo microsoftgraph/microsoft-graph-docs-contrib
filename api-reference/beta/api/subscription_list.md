@@ -10,7 +10,7 @@ This API supports the following permission scopes; to learn more, including how 
 
 | Permission type  | Permissions (from least to most privileged)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegated](../../../concepts/auth_v2_user.md) (work or school account) | Role required to [get subscription](subscription_get.md) or Subscriptions.Read.All (see below). |
+| [Delegated](../../../concepts/auth_v2_user.md) (work or school account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscriptions.Read.All (see below). |
 | [Delegated](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Role required to [get subscription](./subscription_get.md) or Subscriptions.Read.All (see below). |
 | [Application](../../../concepts/auth_v2_service.md) | Role required to [get subscription](./subscription_get.md). |
 
@@ -25,11 +25,11 @@ The following table shows the context required for common tasks:
 
 | Task | Required Context |
 |:-----|:---------------- |
-| Retrieve the subscriptions the current app has made on behalf of the current user (work/school account). | Delegated permission.<br/><br/>Role required to [get subscription](subscription_get.md); user can be admin or non-admin.|
+| Retrieve the subscriptions the current app has made on behalf of the current user (work/school account). | Delegated permission.<br/><br/>Role required to [create subscription](subscription_post_subscriptions.md); user can be admin or non-admin.|
 | Retrieve the subscriptions the current app has made within a tenant for itself or for any user. | Application permission.<br /><br />Subscription.Read.All scope for admin work/school account. |
 | Retrieve the subscriptions that any app has made on behalf of the current user. | Delegated permission.<br /><br/>Subscriptions.Read.All permission required.|
 | Retrieve all subscriptions within a given tenant, regardless of app or user (highly privileged operation). | Delegated permission (requires admin user).<br /><br/>Subscription.Read.All required. |
-| Retrieve subscriptions made by the current app for a personal account user. | Delegated permission.<br /><br/>Role required to [get subscription](subscription_get.md).|
+| Retrieve subscriptions made by the current app for a personal account user. | Delegated permission.<br /><br/>Role required to [create subscription](subscription_post_subscriptions.md).|
 | Retrieve all subscriptions for a personal Microsoft account, regardless of app. | Delegated permission.<br /><br/>Subscriptions.Read.All for personal account. |
 
 ## HTTP request
