@@ -38,7 +38,7 @@ The following is an example of the request.
   "name": "bookingbusiness_unpublish"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/<id>/unpublish
+POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/unpublish
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

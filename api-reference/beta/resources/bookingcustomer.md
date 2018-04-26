@@ -7,15 +7,17 @@ Represents a customer of a [bookingBsiness](bookingbusiness.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get bookingCustomer](../api/bookingcustomer_get.md) | [bookingCustomer](bookingcustomer.md) |Read properties and relationships of bookingCustomer object.|
-|[Update](../api/bookingcustomer_update.md) | [bookingCustomer](bookingcustomer.md)	|Update bookingCustomer object. |
-|[Delete](../api/bookingcustomer_delete.md) | None |Delete bookingCustomer object. |
+|[List customers](../api/bookingbusiness_list_customers.md) | [bookingCustomer](bookingcustomer.md) collection | Get a list of **bookingCustomer** objects. |
+|[Create bookingCustomer](../api/bookingbusiness_post_customers.md) | [bookingCustomer](bookingcustomer.md) | Create a new **bookingCustomer** object. |
+|[Get bookingCustomer](../api/bookingcustomer_get.md) | [bookingCustomer](bookingcustomer.md) |Read the properties and relationships of a **bookingCustomer** object.|
+|[Update](../api/bookingcustomer_update.md) | [bookingCustomer](bookingcustomer.md)	|Update a **bookingCustomer** object. |
+|[Delete](../api/bookingcustomer_delete.md) | None |Delete a **bookingCustomer** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The name of the customer.|
-|emailAddress|String|The email address of the customer.|
+|emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
 
 ## Relationships
