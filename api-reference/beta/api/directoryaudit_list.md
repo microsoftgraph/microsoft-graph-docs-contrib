@@ -21,7 +21,7 @@ This method supports the following OData Query Parameters to help customize the 
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](../../../concepts/query_parameters.md#filter)|Filters results (rows). |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
+|[$filter](../../../concepts/query_parameters.md#filter-parameter)|Filters results (rows). |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
 |[$top](../../../concepts/query_parameters.md#top-parameter)|Sets the page size of results.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](../../../concepts/query_parameters.md#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
