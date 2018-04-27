@@ -81,7 +81,6 @@ This resource supports:
 |[subscribeByMail](../api/group_subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for Office 365 Groups only.|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for Office 365 Groups only.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for Office 365 Groups only.|
-|[validateProperties](../api/group_validateproperties.md)|None| Validate an Office 365 group's display name or mail nickname complies with naming policies. | 
 
 ## Properties
 | Property	   | Type	|Description|
