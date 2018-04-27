@@ -21,15 +21,17 @@ The following are some of the scenarios that the roster APIs enable:
 
 ### Use Microsoft Teams to create class assignments in an assignments tab
 
+
 You can use the assignments API to create a web app that manages class assignments and then integrate your app into Microsoft Teams on a new custom tab.  
 
-Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensibility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including tabs, bots, and Connectors. These extensibility points can call education APIs in Microsoft Graph to work with assignments and submissions. You can build a more comprehensive experience by enabling your extension point with any other Microsoft Graph API along with assignment and submission APIs.
+Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensibility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, and Bots. These extensibility points can call education APIs in Microsoft Graph to work with assignments and submissions. Build a more comprehensive experience by enabling your extension point with any other Microsoft Graph API along with assignment and submission APIs.
 
 For education, Microsoft Teams custom tab apps are opened in an education class (a team) context, where it makes sense to manage the end-to-end assignment flow, from creation and distribution to grading and feedback. This is just one example of how Microsoft Teams saves time and simplifies everyday logistics, leaving educators free to dedicate themselves to their students.
 
 The following image shows a web app for managing assignments in an Assignments custom Tab for a **Science - Biology 1** class.
 
 ![Screenshot of an Assignments tab in Microsoft Teams for a Science - Biology class](images/AssignmentsInTeams.PNG)
+
 
 With the assignment API, your app can interact with the assignment service outside of Microsoft Teams. Microsoft Teams will handle distribution, due dates, and grading while your system can provide a rich learning experience to students.
 The following are examples of a few scenarios enabled by the assignments API:
