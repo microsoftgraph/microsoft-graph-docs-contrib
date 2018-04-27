@@ -33,22 +33,6 @@ For such scenarios, a delegated permission Subscription.Read.All is required.
 | App is calling on behalf of the signed in user (delegated permission). *The user is a non-admin*. <br/>-and-<br/>App has the permission Subscription.Read.All  | Subscriptions created by **any app** for the signed in user only. |
 | App is calling on behalf of the signed in user (delegated permission). *The user is an admin*.<br/>-and-<br/>App has the permission Subscription.Read.All | All subscriptions in the entire tenant: **all apps, all users**. <br/><br/>Note: this is a highly privileged operation.|
 
-- The permission type, e.g. whether the application is making request for itself (application permission) or a delegated request on behalf of a user.
-- For delegated permissions requiring admin access, whether the user has granted the app the Subscriptions.Read.All scope permission when requested.
-- Whether the user account is an Azure AD account (work or school) or a personal Microsoft account.
-- For Azure AD user accounts, whether the user is an administrator of the tenant (based on current role settings).
-
-The following table shows the context required for common tasks:
-
-| Task | Required Context |
-|:-----|:---------------- |
-| Retrieve the subscriptions the current app has made on behalf of the current user (work/school account). | Delegated permission.<br/><br/>Permission required to [create subscription](subscription_post_subscriptions.md); user can be admin or non-admin.|
-| Retrieve the subscriptions the current app has made within a tenant for itself or for any user. | Application permission.<br /><br />Permission required to [create subscription](subscription_post_subscriptions.md) |
-| Retrieve the subscriptions that any app has made on behalf of the current user. | Delegated permission.<br /><br/>Subscriptions.Read.All permission required.|
-| Retrieve all subscriptions within a given tenant, regardless of app or user (highly privileged operation). | Delegated permission (requires admin user).<br /><br/>Subscription.Read.All required. |
-| Retrieve subscriptions made by the current app for a personal account user. | Delegated permission.<br /><br/>Permission required to [create subscription](subscription_post_subscriptions.md).|
-| Retrieve all subscriptions for a personal Microsoft account, regardless of app. | Delegated permission.<br /><br/>Subscriptions.Read.All for personal account. |
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -78,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
 GET https://graph.microsoft.com/beta/subscriptions
 ```
 ##### Response
-Here's an an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
