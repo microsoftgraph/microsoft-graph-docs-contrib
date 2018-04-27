@@ -39,16 +39,6 @@ The new Office 365 people cards tap into the used and shared insights to connect
 
 ![Screenshot of a people card for a user in Outlook on the web, showing recent files](images/peoplecard_concept.png)
 
-### What can I do with the insight APIs in Microsoft Graph?
-
-These are some of the most popular requests for working with insights.
-
-| Operation                 | URL                                                                                                                                                                      |
-| :------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GET my trending documents | [https://graph.microsoft.com/beta/me/insights/trending](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/insights/trending&method=GET&version=beta) |
-| GET my shared files       | [https://graph.microsoft.com/beta/me/insights/shared](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/insights/shared&method=GET&version=beta)     |
-| GET my used files         | [https://graph.microsoft.com/beta/me/insights/used](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/insights/used&method=GET&version=beta)         |
-
 ## Next steps
 
 * Use the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the insight API with your own files. Choose **Show more samples** in the column on the left. Use the menu to toggle Insights (beta) **On**.
