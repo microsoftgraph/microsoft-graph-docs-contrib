@@ -39,6 +39,32 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
 
 
+## Bookings permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Bookings.Read.All_ |     | Allows the app to read Bookings appointments, business information, customers, services and staff members. <br> Intended for read-only applications. Typical target user is the customer of a booking business. | No |
+| _Bookings.ReadWrite.Appointments_ |     | Allows the app to read and update Bookings appointments and customers, and read business information, services and staff members. <br> Intended for scheduling applications which need to manipulate appointments and customers. Cannot change fundamental information about the booking business, nor its services and staff members. Typical target user is the customer of a booking business.| No |
+| _Bookings.ReadWrite.All_ |     | Allows the app to read and update Bookings appointments, business information, customers, services and staff members, but not to create, delete, or publish Bookings businesses. <br>Intended for management applications that manipulate existing businesses, their services and staff members. Cannot create, delete, or change the publishing status of a booking business. Typical target user is the support staff of an organization.| No |
+| _Bookings.Manage_ |     | Allows the app to have full access - read, write and manage Bookings appointments, business information, customers, services and staff members.<br>Intended for a full management experience. Typical target user is the administrator of an organization.| No |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _Bookings.Read.All_: Get the ID and names of the collection of Bookings businesses that has been created for a tenant (`GET /bookingBusinesses`).
+* _Bookings.ReadWrite.Appointments_: Create a new customer for a Bookings business (`POST /bookingBusinesses/{id}/customers`).
+* _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
+* _Bookings.Manage_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
+
+---
+
 ## Calendars permissions
 
 #### Delegated permissions
