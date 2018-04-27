@@ -1,7 +1,7 @@
 # Use the activity feed API to resume a user's activity across devices and platforms
 
 ## Using the activity feed API
-Activity feed API requests are performed on behalf of a user through the use of [delegated permissions](../../../concepts/permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions), only using the [user activity permission](../../../concepts/permissions_reference.md#user-activity-permissions) which may be used with either personal or work and school accounts. 
+Activity feed API requests are performed on behalf of a user through the use of [delegated permissions](../../../concepts/permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions), only using the [user activity permission](permissions_reference.md) which may be used with either personal or work and school accounts. 
 
 User activities are represented by the [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) resource and organized in a time-based feed represented by the collection me/activities. Each activity represents a unique... 
 
@@ -59,4 +59,4 @@ The activity feed API helps you build experiences that span devices and platform
 
 **Looking for more ideas?** 
 - See [how Microsoft experiences are using activities](https://channel9.msdn.com/events/Build/2017/B8108).
-- Learn [about the activity feed API and pick up where I left off] (https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011)
+- Learn [about the activity feed API and pick up where I left off](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011)
