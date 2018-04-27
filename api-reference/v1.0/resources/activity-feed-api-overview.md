@@ -3,7 +3,7 @@
 ## Using the activity feed API
 Activity feed API requests are performed on behalf of a user through the use of [delegated permissions](../../../concepts/permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions), only using the [user activity permission](../../../concepts/permissions_reference.md#user-activity-permissions) which may be used with either personal or work and school accounts. 
 
-User activities are represented by the [activity](../resources/projectrome_activity.md) resource and organized in a time-based feed represented by the collection me/activities. Each activity represents a unique... 
+User activities are represented by the [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) resource and organized in a time-based feed represented by the collection me/activities. Each activity represents a unique... 
 
 ## What makes a great user activity?
 
@@ -20,7 +20,7 @@ Since every app is different, it's up to each app developer to understand the be
 **DO:** Record a single activity for a group of related user actions. 
 If your application is used for a sequence of related content, it probably makes sense to record a single activity for the entire engagement session.  
 
-*Playlist scenarios:* This is especially relevant for Music Playlists of TV Shows — A single user activity can be updated to show your progress. In this case, you will have a single user activity with multiple [history items](../resources/projectrome_historyitem.md) representing periods of engagement across multiple days or weeks.  
+*Playlist scenarios:* This is especially relevant for Music Playlists of TV Shows — A single user activity can be updated to show your progress. In this case, you will have a single user activity with multiple [history items](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_historyitem) representing periods of engagement across multiple days or weeks.  
 
 **DO:** Store user data to the cloud. 
 If you want to support cross-device activities, you need to make sure the content required to re-engage this activity is stored to a cloud location. For example, if you publish an activity each time a user edits a document, the document should be stored in the cloud as opposed to locally on the user's device in order to enable cross-device re-engagement.  
@@ -54,7 +54,7 @@ While every app is different, most apps will fall into one of the following inte
 ## Next steps
 The activity feed API helps you build experiences that span devices and platforms so users can pick up where they left off seamlessly: 
 
-- Review the [activity resource](../resources/projectrome_activity.md), define your app's activities to help users resume important tasks and explore the [Adaptive Card](http://adaptivecards.io/samples/) samples for ideas to make your activities **pop**  
+- Review the [activity resource](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity), define your app's activities to help users resume important tasks and explore the [Adaptive Card](http://adaptivecards.io/samples/) samples for ideas to make your activities **pop**  
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 **Looking for more ideas?** 
