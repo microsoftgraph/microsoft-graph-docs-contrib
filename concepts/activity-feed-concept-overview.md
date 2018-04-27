@@ -6,7 +6,7 @@ Activities make users more productive by helping them resume important tasks in 
 ### Enable experiences that flow seamlessly between Windows, Android, Linux and iOS devices 
 Great applications help users do great things — enabling a wide range of creative, productivity and entertainment scenarios. Returning to a task can be a challenge, especially when a person wants to continue the task on a different device or platform. By incorporating activities into applications, developers can help users return to recent tasks quickly using whatever screen is handy so they can move from web to mobile to desktop and back again without skipping a beat. With history items users can easily see which activities they used most recently, when and for how long.   
 
-Each user activity represents a single destination within your app: such as a product page, TV show, document or your current campaign in a game. All you need is a deep-link to resume the activity in your app. Use [get recent activities](../api-reference/v1.0/resources/projectrome_get_recent_activities.md) to create a list of recently viewed products for your shopping app or a currently-reading list for books & news articles. 
+Each user activity represents a single destination within your app: such as a product page, TV show, document or your current campaign in a game. All you need is a deep-link to resume the activity in your app. Use [get recent activities](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_recent_activities) to create a list of recently viewed products for your shopping app or a currently-reading list for books & news articles. 
 
 ### Create richer activities for any experience with Adaptive cards
 When activities are rendered in Microsoft experiences such as Windows Timeline, we display them using the [Adaptive Card](http://adaptivecards.io/) framework which allows you to create beautiful, rich cards to showcase your app's activities. You can use the Adaptive Card SDK to render rich cards in your own app too.  If you do not provide an adaptive card for each activity, we'll automatically create a simple activity card based on your application name and icon, the required Title field and optional Description field. 
@@ -20,5 +20,5 @@ Integrating with User Activities not only enables users to resume activities in 
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
 - [Use the activity feed API to resume a user's activity across devices](../api-reference/v1.0/resources/activity-feed-api-overview.md)
-- [Publish activities & history items with one request using deep insert](../api-reference/v1.0/api/projectrome_put_activity#example-2---deep-insert.md)
+- [Publish activities & history items with one request using deep insert](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_put_activity#example-2---deep-insert)
 - [Learn more about Project Rome](http://aka.ms/projectrome)
