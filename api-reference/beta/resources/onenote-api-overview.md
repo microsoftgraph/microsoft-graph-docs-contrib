@@ -37,4 +37,4 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use.
 - `v1.0` is for stable production code.
-- `beta` is to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code.
+- `beta` is to try out a feature that's in development. Features and functionality in the beta endpoint might change; we don't recommend that you use it in your production code.
