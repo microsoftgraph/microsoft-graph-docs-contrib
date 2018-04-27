@@ -1,7 +1,7 @@
 # Use the activity feed API to resume a user's activity across devices and platforms
 
 ## Using the activity feed API
-Activity feed API requests are performed on behalf of a user through the use of [delegated permissions](../../../concepts/permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions), only using the [user activity permission](../../../concepts/permissions_reference.md#user-activity-permissions) which may be used with either personal or work and school accounts. 
+Activity feed API requests are performed on behalf of a user through the use of [delegated permissions](../../concepts/permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions), only using the [user activity permission](../../concepts/permissions_reference.md#user-activity-permissions) which may be used with either personal or work and school accounts. 
 
 User activities are represented by the [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) resource and organized in a time-based feed represented by the collection me/activities. Each activity represents a unique... 
 
