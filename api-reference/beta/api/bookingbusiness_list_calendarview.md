@@ -58,15 +58,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/calendarView",
     "value": [
         {
-            "id": "AAMkADKoAAA=",
+            "id": "AAMkADKpAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
-            "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
-            "customerName": "Bob Kelly",
-            "customerEmailAddress": "bobk@tailspintoys.com",
-            "customerPhone": "213-555-0108",
+            "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
+            "customerName": "Adele Vance",
+            "customerEmailAddress": "adelev@proseware.com",
+            "customerPhone": "213-555-0156",
             "customerNotes": null,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
@@ -79,7 +79,7 @@ Content-type: application/json
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
             "invoiceAmount": 10,
-            "invoiceId": "1002",
+            "invoiceId": "1003",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",
             "customerLocation": {
@@ -107,15 +107,15 @@ Content-type: application/json
                 }
             },
             "start": {
-                "dateTime": "2018-04-30T13:00:00.0000000Z",
+                "dateTime": "2018-05-05T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
             "end": {
-                "dateTime": "2018-04-30T13:30:00.0000000Z",
+                "dateTime": "2018-05-05T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },
             "serviceLocation": {
-                "displayName": "Customer location (987 Third Avenue, Buffalo, NY 98052, USA)",
+                "displayName": "Customer location (876 Tenth Avenue, Buffalo, NY 98052, USA)",
                 "locationEmailAddress": null,
                 "locationUri": "",
                 "locationType": null,
@@ -140,7 +140,7 @@ Content-type: application/json
             },
             "reminders": [],
             "invoiceDate": {
-                "dateTime": "2018-04-30T13:30:00.0000000Z",
+                "dateTime": "2018-05-05T12:30:00.0000000Z",
                 "timeZone": "UTC"
             }
         },
@@ -191,11 +191,11 @@ Content-type: application/json
                 }
             },
             "start": {
-                "dateTime": "2018-05-01T12:00:00.0000000Z",
+                "dateTime": "2018-05-06T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
             "end": {
-                "dateTime": "2018-05-01T12:30:00.0000000Z",
+                "dateTime": "2018-05-06T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },
             "serviceLocation": {
@@ -224,7 +224,7 @@ Content-type: application/json
             },
             "reminders": [],
             "invoiceDate": {
-                "dateTime": "2018-05-01T12:30:00.0000000Z",
+                "dateTime": "2018-05-06T12:30:00.0000000Z",
                 "timeZone": "UTC"
             }
         }
