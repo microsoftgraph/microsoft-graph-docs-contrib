@@ -145,12 +145,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta       | Added the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[alert](../api-reference/beta/resources/alert.md) (and related entities)<br/>[Get alert](../api-reference/beta/api/alert_get.md)<br/>[List alerts](../api-reference/beta/api/alert_list.md)<br/>[Update alert](../api-reference/beta/api/alert_update.md)<br/><br/>Added the following supporting documentation:<br/>[Errors](../api-reference/beta/resources/security-error-codes.md)<br/>[Integrate with a SIEM](../concepts/security_siemintegration.md)
 
-### Validate group properties 
-
-|**Change type**|**Version**|**Description**|
-|:-------------|:-----------|:--------------|
-| Addition | Beta | Added [validateProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_validateproperties) function on [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) |
-| Addition | Beta | Added [validateProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/directoryobject_validateproperties) function on [directoryObject](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/directoryobject) |
 
 ## March 2018
 
