@@ -1,0 +1,51 @@
+# governanceRoleSetting
+
+Represents a set of configurations on each role definition that needs to be evaluated against when role assignments created or modified. For examples, role settings may include "maximum assignment duration", "MFA required on activation", and etc.
+
+### Methods
+
+| Method		  | Return Type	|Description|
+|:---------------|:--------|:--------|:----------|
+|[List](../api/governancerolesetting_list.md) | [governanceRoleSetting](governancerolesetting.md) collection|List a collection of role settings on a resource.Note: `$filter=resourceId+eq+'<resourceId>'` is required in the query.|
+|[Get](../api/governancerolesetting_get.md) |  [governanceRoleSetting](rolesetting.md) |Read properties and relationships of a role setting.|
+|[Update](../api/governancerolesetting_update.md) | [governanceRoleSetting](rolesetting.md)	|Update a role setting object. |
+
+### Properties
+| Key |Property	            |Type	                                   |Required |Description|
+|:----|:--------------------|:---------------------------------------|:------- |:----------|
+|✓    |id                   |String                                  |✓       |The id of the roleSetting.|
+|     |resourceId           |String                                  |✓        |The id of the resource that the role setting is associated with.|
+|     |roleDefinitionId     |String                                  |✓        |The id of the role definition that the role setting is associated with.|
+|     |isDefault            |Boolean                                 |         |Read-only. Indicate if the roleSetting is a default roleSetting|
+|     |lastUpdatedDateTime  |DateTimeOffset                          |         |Read-only. The time when the role setting was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|     |lastUpdatedBy        |String                                  |         |Read-only. The display name of the administrator who last updated the roleSetting.|
+|     |adminEligibleSettings|[governanceRuleSetting](governancerulesetting.md) collection|         |The rule settings that are evaluated when an administrator tries to add an eligible role assignment.|
+|     |adminMemberSettings  |[governanceRuleSetting](governancerulesetting.md) collection|         |The rule settings that are evaluated when an administrator tries to add a direct member role assignment.|
+|     |userEligibleSettings |[governanceRuleSetting](governancerulesetting.md) collection|         |The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now in the `pimforazurerbac` scenario.|
+|     |userMemberSettings   |[governanceRuleSetting](governancerulesetting.md) collection|         |The rule settings that are evaluated when a user tries to activate his role assignment.|
+
+### Relationships
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|resource|[governanceResource](governanceResource.md)|Read-only. The associated resource for this role setting.|
+|roleDefinition|[governanceRoleDefinition](governanceRoleDefinition.md)|Read-only. The role definition that is enforced with this role setting. |
+
+### JSON representation
+
+Here is a JSON representation of the resource.
+
+```json
+{
+  "id": "String (identifier)",
+  "resourceId": "String",
+  "roleDefinitionId": "String",
+  "isDefault": true,
+  "lastUpdatedDateTime": "String (timestamp)",
+  "lastUpdatedBy": "String",
+  "adminEligibleSettings": [{"@odata.type": "microsoft.graph.governancerulesetting"}],
+  "adminMemberSettings": [{"@odata.type": "microsoft.graph.governancerulesetting"}],
+  "userEligibleSettings": [{"@odata.type": "microsoft.graph.governancerulesetting"}],
+  "userMemberSettings": [{"@odata.type": "microsoft.graph.governancerulesetting"}]
+}
+
+```
