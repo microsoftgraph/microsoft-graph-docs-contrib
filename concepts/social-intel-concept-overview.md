@@ -42,4 +42,4 @@ The new Office 365 people cards tap into the used and shared insights to connect
 ## Next steps
 
 * Use the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the insight API with your own files. Choose **Show more samples** in the column on the left. Use the menu to toggle Insights (beta) **On**.
-* To get started with insights API in Microsoft Graph, see [Use the insights API](../api-reference/beta/resources/insights.md).
+* To get started with insights API, see [Use the insights API](../api-reference/beta/resources/insights.md).
