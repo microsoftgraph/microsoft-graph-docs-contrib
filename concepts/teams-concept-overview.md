@@ -8,7 +8,7 @@ Integrating with Microsoft Teams makes it easy for you to build your own service
 
 ### Use Microsoft Graph in any kind of app
 
-Microsoft Graph enabled Teams apps give work groups a new tool to make collaboration a more productive and compelling experience. Using Teams, work group users share assets, interact through chat, and schedule events on the team calendar. Enhance the value of Teams by adding team, channel, and conversation **automation** using Teams API-enabled apps.
+Microsoft Graph enabled Teams apps give work groups a new tool to make collaboration a more productive and compelling experience. Using Teams, work group users share assets, interact through chat, and schedule events on the team calendar. Enhance the value of Teams by adding team, channel, and conversation automation using Teams API-enabled apps.
 
 Web sites, services, and native platform applications are not run within the Teams user experience but can be used to call the Microsoft Teams APIs that enable Teams automation scenarios.
 
@@ -20,16 +20,16 @@ These collaboration tools include Microsoft Graph-enabled tab or bot apps runnin
 
 If a Teams tab or bot app is not the ideal way to complete your Microsoft Graph Teams scenario, chose a Teams app type from the following table:
 
-|App type|Scenario description|Restrictions|
-|:-------|:-------------------|:-----------|
-|Tabs|Surface enhanced content within Teams| |
-|Connectors|Post enhanced updates to channels| |
-|Actionable Messaging|Add enhanced interaction to your connector cards||
-|Web sites|Surface enhanced content in your web pages|Requires [Teams JavaScript client SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client) to integrate with Teams client as a Tab app|
-|Bots|Help users get tasks done in conversations||
-|Activity Feed|Engage users via feed notifications||
-|Messaging Extensions|Allow users to query and share enhanced cards in conversations||
-|Services|Enhance your client applications with Microsoft Graph data via your web service|Must use client credential authentication flow|
+|App type|Scenario description|
+|:-------|:-------------------|
+|Tabs|Surface enhanced content within Teams|
+|Connectors|Post enhanced updates to channels|
+|Actionable Messaging|Add enhanced interaction to your connector cards|
+|Web sites|Surface enhanced content in your web pages|
+|Bots|Help users get tasks done in conversations|
+|Activity Feed|Engage users via feed notifications|
+|Messaging Extensions|Allow users to query and share enhanced cards in conversations|
+|Services|Enhance your client applications with Microsoft Graph data via your web service|
 
 
 ### Create Multiple Teams and Channels
