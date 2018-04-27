@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role in the tenant.
+Retrieve a list of webhook subscriptions associated with app, user and tenant.
 
 ## Permissions
 
@@ -10,8 +10,8 @@ This API supports the following permission scopes; to learn more, including how 
 
 | Permission type  | Permissions (from least to most privileged)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegated](../../../concepts/auth_v2_user.md) (work or school account) | Permission required to [create subscription](subscription_post_subscriptions.md) or Subscriptions.Read.All (see below). |
-| [Delegated](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Permission required to [create subscription](subscription_post_subscriptions.md) or Subscriptions.Read.All (see below). |
+| [Delegated](../../../concepts/auth_v2_user.md) (work or school account) | Permission required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
+| [Delegated](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Permission required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
 | [Application](../../../concepts/auth_v2_service.md) | Permission required to [create subscription](subscription_post_subscriptions.md). |
 
 Response results are based on the context of the calling app. The following is a summary of the common scenarios:
