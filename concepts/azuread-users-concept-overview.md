@@ -1,8 +1,8 @@
-# Users overview
+# Overview of users in Microsoft Graph
 
-Users are the representation of an Azure Active Directory user account in Microsoft Graph. The Users entity in Microsoft Graph is a hub from which you can access the relationships and resources relevant to your users.
+Users are the representation of an Azure Active Directory (Azure AD) user account in Microsoft Graph. The Users entity in Microsoft Graph is a hub from which you can access the relationships and resources relevant to your users.
 
-![Users overview image](images/users.png)
+![Diagram showing a user connected to calendar, email, contacts, meetings, tasks, sites, and documents](images/users.png)
 
 ## Develop user-centric applications
 
