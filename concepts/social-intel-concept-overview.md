@@ -10,7 +10,7 @@ The insights API uses advanced analytics and machine learning to provide the mos
 
 {<=1.5 pages of value proposition for developers.}
 
- {Here we can have People API-specific value prop section}
+{Here we can have People API-specific value prop section}
 
 
 ## Why integrate with document-based insights (preview)?
