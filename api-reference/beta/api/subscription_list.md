@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant.
+Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role in the tenant.
 
 ## Permissions
 
@@ -14,7 +14,24 @@ This API supports the following permission scopes; to learn more, including how 
 | [Delegated](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Permission required to [create subscription](subscription_post_subscriptions.md) or Subscriptions.Read.All (see below). |
 | [Application](../../../concepts/auth_v2_service.md) | Permission required to [create subscription](subscription_post_subscriptions.md). |
 
-Response results are based on the context of the calling app, which includes:
+Response results are based on the context of the calling app. The following is a summary of the common scenarios:
+
+### Basic scenarios
+Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed in user, or for all users in a tenant (work/school accounts). These scenarios do not require any special permissions beyond the ones the app used originally to create its subscriptions.
+
+| Context of the calling app | Response contains |
+|:-----|:---------------- |
+| App is calling on behalf of the signed in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).  | Subscriptions created by **this app** for the signed in user only. |
+| App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).| Subscriptions created by **this app** for itself or for any user.|
+
+### Advanced scenarios
+In some cases, an app wants to retrieve subscriptions created by other apps. For example, a user wants to see all subscriptions created by any app on their behalf. Or, an administrator may want to see all subscriptions from all apps in the entire tenant.
+For such scenarios, a delegated permission Subscription.Read.All is required.
+
+| Context of the calling app | Response contains |
+|:-----|:---------------- |
+| App is calling on behalf of the signed in user (delegated permission). *The user is a non-admin*. <br/>-and-<br/>App has the permission Subscription.Read.All  | Subscriptions created by **any app** for the signed in user only. |
+| App is calling on behalf of the signed in user (delegated permission). *The user is an admin*.<br/>-and-<br/>App has the permission Subscription.Read.All | All subscriptions in the entire tenant: **all apps, all users**. <br/><br/>Note: this is a highly privileged operation.|
 
 - The permission type, e.g. whether the application is making request for itself (application permission) or a delegated request on behalf of a user.
 - For delegated permissions requiring admin access, whether the user has granted the app the Subscriptions.Read.All scope permission when requested.
