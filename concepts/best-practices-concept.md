@@ -24,7 +24,7 @@ To access the data in Microsoft Graph your application will need to acquire an O
 
 ## Consent and authorization
 
-1. **Use least privilege**: Only request permissions which are absolutely necessary, and only when you need them. For the APIs your app calls, check the permissions section in each of the associated resource method topics (for example, see [creating a user](../v1.0/api/user_post_users.md)), and choose the least privileged permissions.
+1. **Use least privilege**: Only request permissions which are absolutely necessary, and only when you need them. For the APIs your app calls, check the permissions section in each of the associated resource method topics (for example, see [creating a user](../api-reference/v1.0/api/user_post_users.md), and choose the least privileged permissions.
 
 2. **Use the correct permission type based on scenarios**: If you are building an interactive application where a signed in user is present, your app should use *delegated* permissions, where app is delegated permission to act as the signed-in user when making calls to Microsoft Graph. If however your app runs without a signed-in user, such as a background service or daemon, your app should use application permissions.
 
@@ -131,7 +131,7 @@ Webhooks and delta query are often used better together, because if you use delt
 
 JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. Combining individual requests into a single batch request can save the application significant network latency and can conserve connection resources.
 
-> Use [batching](json_batching) where significant network latency can have a big impact on the performance.
+> Use [batching](json_batching.md) where significant network latency can have a big impact on the performance.
 
 ### Data compression
 
