@@ -7,6 +7,7 @@ Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[List bookingCurrencies](../api/bookingcurrency_list.md) | [bookingCurrency](bookingcurrency.md) collection |Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.|
 |[Get bookingCurrency](../api/bookingcurrency_get.md) | [bookingCurrency](bookingcurrency.md) |Get the properties of a **bookingCurrency** object.|
 
 

@@ -6,7 +6,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.Manage.All   |
+|Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
 |Application | Not supported.  |
 
@@ -22,7 +22,11 @@ POST /bookingBusinesses/{id}/staffMembers
 | Authorization  | Bearer {code}|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object.
+In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object. You must include the following properties:
+
+- **displayName**
+- **emailAddress**
+- **role**
 
 
 ## Response

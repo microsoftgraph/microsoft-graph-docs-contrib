@@ -26,18 +26,18 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](physicaladdress.md)|The street address of the business.|
+|address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
-|displayName|String|The name of the business, which interfaces with customers.|
+|displayName|String|The name of the business, which interfaces with customers. This name appears at the top of the business scheduling page.|
 |email|String|The email address for the business.|
-|id|String|A programmatic identifier for the business, which is an email address formed by **displayName** concatenated with the domain of the tenant. Read-only.|
+|id|String|A unique programmatic identifier for the business. Read-only.|
 |isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property. Read-only.|
-|phone|String|The telephone number for the business.|
+|phone|String|The telephone number for the business. The **phone** property, together with **address** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |publicUrl|String|The URL for the scheduling page, which is set after you [publish](../api/bookingbusiness_publish.md) or [unpublish](../api/bookingbusiness_unpublish.md) the page. Read-only.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
-|webSiteUrl|String|The URL of the business web site.|
+|webSiteUrl|String|The URL of the business web site. The **webSiteUrl** property, together with **address**, **phone**, appear in the footer of a business scheduling page.|
 
 ## Relationships
 | Relationship | Type	|Description|

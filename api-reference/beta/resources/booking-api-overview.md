@@ -2,7 +2,7 @@
 
 Microsoft Bookings lets small business owners manage customer bookings and information with minimal setup. A business owner can create one or more businesses, with each business offering a set of services. The owner can set up staff members, and specify the services that each staff member performs. A customer can book an appointment for a specific service in that business in an online or mobile app. Bookings ensures that the appointment time is kept up-to-date for the business, staff members, and customers involved.
 
-Programmatically, a [bookingBusiness](bookingbusiness.md) in the Bookings API is involves the following objects:
+Programmatically, a [bookingBusiness](bookingbusiness.md) in the Bookings API involves the following objects:
  
 - One or more [bookingStaffMember](bookingstaffmember.md) objects
 - One or more [bookingService](bookingservice.md) objects
@@ -11,7 +11,7 @@ Programmatically, a [bookingBusiness](bookingbusiness.md) in the Bookings API is
 
 ## Using the Bookings REST API
 
-Walk through the following steps before booking customer appointments for a business the first time. Make sure you provide the appropriate [access tokans](../../../concepts/auth_overview.md) for the corresponding operations.
+Walk through the following steps before booking customer appointments for a business the first time. Make sure you provide the appropriate [access tokens](../../../concepts/auth_overview.md) for the corresponding operations.
 
 1. Make sure the business has an [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) subscription.
 2. Create a new **bookingBusiness** by sending a POST operation to the entity set. At minimum, you should specify a name for the new business that customers will see:
@@ -26,36 +26,39 @@ Content-Type: application/json
 }
 ```
 Use the **id** property of the new **bookingBusiness** returned in the POST response to continue to [customize](../api/bookingbusiness_update.md) business settings, and add staff members and services for the business.
+
 3. Add individual staff members for the business:
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/bookingbusiness/{id}/bookingstaffmembers
+POST https://graph.microsoft.com/beta/bookingbusiness/{id}/staffmembers
 Authorization: Bearer {access token}
 Content-Type: application/json
 
 {
-    "displayName":"Contoso"
+    "displayName":"Dana Swope",
+    "emailAddress": "danas@contoso.com",
+    "role": "externalGuest"
 }
 ```
 4. Define each service offered by the business:
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/bookingbusiness/{id}/bookingservices
+POST https://graph.microsoft.com/beta/bookingbusiness/{id}/services
 Authorization: Bearer {access token}
 Content-Type: application/json
 
 {
-    "displayName":"Contoso"
+    "displayName":"Bento"
 }
 ```
-5. Publish the appointment page for the business, to let customers and business operators start booking appointments:
+5. Publish the scheduling page for the business, to let customers and business operators start booking appointments:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingbusiness/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-6. In general, to list all the booking businesses in the Office 365 tenant:
+In general, to list all the booking businesses in the Office 365 tenant:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
