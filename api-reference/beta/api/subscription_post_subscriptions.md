@@ -110,12 +110,12 @@ Content-type: text/plain
 Content-length: 7
 <token>
 ```
-## Notification payload
-When the subscribed resource changes, the webhooks facility sends a notification to your notification URL with the following payload.  The notification endpoint must send a response of 200 or 204 with no response body within 30 seconds otherwise the notification attempt will be retried at exponentially increasing intervals.  Services that consistently take 30 seconds or more may be throttled and receive a sparser notification set.
+## Receiving a notification
+When the subscribed resource changes, Microsoft Graph sends a notification to your notification endpoint. The endpoint must respond with status code of 200 or 204 (with no response body) within 30 seconds; otherwise the notification will be resent at exponentially increasing time intervals. Services that consistently take more than 30 seconds to respond may be throttled and receive a sparser notification set.
 
-Services may also return a 422 response from a notification, in which case the subscription will be automatically deleted and the stream of notifications will come to a halt.
+You may also respond with the status code of 422, in which case your subscription will be automatically deleted and the stream of notifications will come to a halt.
 
-Depending on the subscribed resource, an additional resourceData field may provide additional information.
+Below is an example of a notification payload. For some types of resources, an additional `resourceData` field may include additional information.
 
 ```http
 {
@@ -132,7 +132,8 @@ Depending on the subscribed resource, an additional resourceData field may provi
   }
 }
 ```
-When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](driveitem_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
+
+Notifications from Drive subscriptions have a null value for the `resourceData` field; the [delta](driveitem_delta.md) API should be called to determine the changes that have occurred for this resource. Here is an example of a Drive notification:
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
