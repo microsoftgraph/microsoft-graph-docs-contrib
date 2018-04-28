@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
+Subscribes a listener application to receive notifications when data on a Microsoft Graph resource changes.
 
 ## Permissions
 Creating a subscription requires read permission to the resource for which the app will receive notifications. For example, to get notifications about Messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -96,12 +96,14 @@ Content-length: 252
   "creatorUserId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
-## Subscription validation
-In order to to avoid mistaken subscriptions directing notifications to arbitrary URLs, the subscription notification endpoint must be capable of responding to a validation request. During processing of the `POST` to the `/subscriptions` endpoint, the Microsoft Graph will send a `POST` request back to your `notificationUrl` in the following form:
+## Notification endpoint validation
+The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request; validation is required to make sure that subscriptions are not created pointing to invalid endpoints (e.g. due to misspelling of the URL in the request).
+
+When your subscription creation request is being processed, Microsoft Graph sends a `POST` request back to your `notificationUrl` endpoint, for example:
 ```http
 POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationToken=<token>
 ```
-The notification endpoint must send a 200 response with the value of `<token>` as its body and a content type of `text/plain`, as shown below, within 10 seconds otherwise the creation request will be discarded.
+The notification endpoint must respond with status code 200, content type of `text/plain` and body equal to the `<token>` value. If the response is not received within 10 seconds, the original subscription creation request will be discarded.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
