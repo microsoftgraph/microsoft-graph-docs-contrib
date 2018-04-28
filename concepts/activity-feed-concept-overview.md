@@ -12,7 +12,7 @@ Each user activity represents a single destination within your app: a product pa
 When activities are rendered in Microsoft experiences such as Windows Timeline, they're displayed using the [Adaptive Card](http://adaptivecards.io/) framework, which allows you to create beautiful, rich cards to showcase your app's activities. You can use the Adaptive Card SDK to render rich cards in your own app too. If you do not provide an adaptive card for each activity, we'll automatically create a simple activity card based on your application name and icon, the required Title field, and optional Description field. 
 
 ### Let Microsoft help drive app usage with features that reach hundreds of millions of customers
-Integrating with User Activities not only enables users to resume activities in your app seamlessly, it means tapping into a growing set of Microsoft experiences for Windows, iOS and Android designed to drive user productivity and help users engage with your app on all devices. Using Microsoft Graph, you can integrate with User Activities just once and reach hundreds of millions of consumers, and tens of millions of organization customers who use Windows as well as Microsoft products for iOS and Android devices.
+Integrating with user activities not only enables users to resume activities in your app seamlessly, it means tapping into a growing set of Microsoft experiences for Windows, iOS, and Android - experiences designed to drive user productivity and help users engage with your app on all devices. Using Microsoft Graph, you can integrate with user activities just once and reach hundreds of millions of consumers, and tens of millions of customers in organizations who use Windows as well as Microsoft products for iOS and Android devices.
 
 ![Windows Timeline screencap](https://winblogs.azureedge.net/win/2017/05/22-591a3ec9833f4.jpg)
 
@@ -20,5 +20,5 @@ Integrating with User Activities not only enables users to resume activities in 
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
 - [Use the activity feed API to resume a user's activity across devices](../api-reference/v1.0/resources/activity-feed-api-overview.md)
-- [Publish activities & history items with one request using deep insert](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_put_activity#example-2---deep-insert)
+- [Publish activities and history items with one request using deep insert](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_put_activity#example-2---deep-insert)
 - [Learn more about Project Rome](http://aka.ms/projectrome)
