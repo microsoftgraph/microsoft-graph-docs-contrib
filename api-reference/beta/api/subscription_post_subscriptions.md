@@ -5,7 +5,7 @@
 Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
 
 ## Permissions
-Creating a subscription requires read permission to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Creating a subscription requires read permission to the resource for which the app will receive notifications. For example, to get notifications about Messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|
@@ -39,7 +39,10 @@ If successful, this method returns `201 Created` response code and a [subscripti
 
 ## Example
 ##### Request
-Here is an example of the request to send a notification when the user receives a new mail.
+In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
+The *clientState* field is optional.
+
+This sample request creates a subscription for notifications about new mail received by the currently signed in user.
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -56,11 +59,8 @@ Content-type: application/json
    "clientState": "subscription-identifier"
 }
 ```
-In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
-The *clientState* field is optional.
 
-##### Resources examples
-The following are valid values for the resource property of the subscription:
+The following are valid values for the resource property:
 
 | Resource type | Examples |
 |:------ |:----- |
