@@ -6,73 +6,25 @@ Microsoft Graph enables you to integrate with the best of Office 365, Windows 10
 
 At the core of Microsoft Graph are the concepts of the user and group. 
 
-The user is the focal point whose identity is protected and access is well managed. It's the user's data that drives businesses. Microsoft Graph services makes this data available to businesses in rich contexts, real-time updates, and deep insights.
+A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. The user is the focal point whose identity is protected and access is well managed. It's the user's data that drives businesses. Microsoft Graph services makes this data available to businesses in rich contexts, real-time updates, and deep insights, always only with the appropriate permissions.
 
-Groups form the fundamental fabric enabling user collaboration, and integration with other services to support richer scenarios in task planning, teamwork, education, and more.
+_Group_ is the fundamental entity that enables users to collaborate. Its integration with other services supports richer scenarios in task planning, teamwork, education, and more.
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph with user-centric functionality across most services built around it. | [Overview of users in Microsoft Graph](../concepts/azuread-users-concept-overview.md)|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups provide the fundamental collaborative unit for users to share conversations, files, notes, calendar, and plans. | [Overview of Office 365 groups in Microsoft Graph](../concepts/office365-groups-concept-overview.md) |
+| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](../concepts/azuread-users-concept-overview.md)|
+|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups provide the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Office 365 groups in Microsoft Graph](../concepts/office365-groups-concept-overview.md) |
 
+## Connecting users' data, Microsoft 365 services, and your apps
 
-## Services and features
+Starting with users and groups at the core, Microsoft Graph forms a network of Microsoft 365 services and features that manage, protect, and extract data to support a wide range of scenarios. Microsoft Graph lets you access this wealth of user data while always respecting proper authorization.
 
-Some services in Microsoft Graph make their debut there, others have been well-known as standalone services and are now converging in Microsoft Graph. Their API sets follow a streamlined design as detailed in the [Microsoft REST API guidelines](https://github.com/Microsoft/api-guidelines), and are now accessible through the single Microsoft Graph REST endpoint `https://graph.microsoft.com`. The following are the major services and features, listed by category. 
+![Microsoft Graph connects you to users' data](images/microsoft-graph-connects-users-data.png)
 
-<!-- Per M365 enterprise categorization on https://www.microsoft.com/en-us/microsoft-365/enterprise/home
+### Services and features
 
-Office applications
-Workbooks and charts - Excel
-Email and calendar - Outlook
-Files - OneDrive
-Notes - OneNote
+Some services in Microsoft Graph make their debut there, others have been well-known as standalone services and are now converging in Microsoft Graph. Their API sets follow a streamlined design as detailed in the [Microsoft REST API guidelines](https://github.com/Microsoft/api-guidelines), and are now accessible through the single Microsoft Graph REST endpoint `https://graph.microsoft.com`. The rest of this article lists the major services and features by category. 
 
-Business applications
-(Bookings)
-
-Collaboration services
-Microsoft Teams
-SharePoint
-Planner
-(Yammer)
-
-Education
-(https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx)
-"Empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education."
-
-Identity and access management
-AAD
-Identity provider
-(https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/identityprovider)
-Invitation manager (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/invitation)
-Privileged Identity Management(https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/privilegedidentitymanagement_root)(https://docs.microsoft.com/en-us/azure/active-directory/active-directory-privileged-identity-management-configure)
-
-Security
-- Intelligent threat detection 
-AAD risk detection (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/identityriskevent)
-(https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events)
-
-Mobile device and app management
-(Slides in community call https://www.slideshare.net/OfficeDev/microsoft-graph-community-call-2618)
-Application, device, and data security
-Protects data whether employees use store apps, web apps, or LOB apps
-Protects data whether employees use Windows PC, Android, iOS or OSX devices
-... whether data is stored in the cloud, on device or on-premises.
-Microsoft Intune
-
-Cross-device experiences
-Project Rome
-
-Social intelligence (analytics)
-Insights
-People API
-
-Office 365 service usage reports
-Reports  
-
-
--->
 
 ## Identity and access management
 
@@ -88,7 +40,7 @@ Reports
 | Calendar | Outlook  | Lets users set up appointments and meetings on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts. | [Outlook calendar overview](../concepts/outlook-calendar-concept-overview.md)  |
 | Files | OneDrive and SharePoint | Manages and shares user files on OneDrive and SharePoint. | [OneDrive files storage overview](../concepts/onedrive-concept-overview.md) |
 | Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](../concepts/outlook-mail-concept-overview.md) |
-| Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote API overview](../concepts/integrate_with_onenote.md) |
+| Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote notes overview](../concepts/integrate_with_onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](../concepts/outlook-contacts-concept-overview.md) |
 | To-do tasks (preview) | Outlook | Lets users track the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. It is part of the Outlook communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. | [Outlook to-do tasks overview](../concepts/outlook-tasks-concept-overview.md)  |
 | Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
@@ -109,7 +61,7 @@ Reports
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Social intelligence: people | OneDrive, Outlook, SharePoint | Gets information about persons as ordered by their relevance to a user, determined by the user's communication and collaboration patterns, and business relationships.  | [Social intelligence in Microsoft Graph](../concepts/social-intel-concept-overview.md) |
+| Social intelligence: people | Azure AD, Outlook, SharePoint, and more | Gets information about persons as ordered by their relevance to a user, determined by the user's communication and collaboration patterns, and business relationships.  | [Social intelligence in Microsoft Graph](../concepts/social-intel-concept-overview.md) |
 | Social intelligence: document insights (preview) | Delve, OneDrive, Outlook, SharePoint | Uses advanced analytics and machine learning techniques to get documents trending around, viewed, modified, or shared by a user.  | [Social intelligence in Microsoft Graph](../concepts/social-intel-concept-overview.md)  |
 
 
@@ -149,6 +101,16 @@ Reports
 |:-----------|:--------------------|:-----------|:----------------|
 | Education | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](../concepts/education-concept-overview.md) |
 
+
+<!-- Include after confirming bookings API is ready for release and content is in the same branch
+## Business applications
+
+|Feature     |Supporting services  |Description |More information |
+
+| Customer booking (preview) | Microsoft Bookings | Targets small businesses to enable their customers to book services directly on the web or Facebook. Lets business operators manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](../concepts/booking-concept-overview.md) |
+
+
+-->
 
 ## Next steps
 
