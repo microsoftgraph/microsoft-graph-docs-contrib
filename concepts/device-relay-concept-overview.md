@@ -1,7 +1,7 @@
-# Using the device replay API in Microsoft Graph (preview)
+# Device replay API in Microsoft Graph (preview)
 
-Nowadays people have multiple devices they interact with on a daily basis. Furthermore, many of today's productivity tasks and entertainment activities are started on one device and continued on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. 
-The Device Relay APIs enable app developers to deliver seamless experiences to their users by making it possible for them to actively transfer an experience from one device to another or enhance it by using multiple devices at once. This is done via in-app actions (e.g. a button or selection in your app) that call the Device Relay APIs to discover the user's devices, and enables him/her to launch and message your app on those other devices.
+Today, people interact with multiple devices on a daily basis. Users oftent start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. 
+You can use the device relay APIs to deliver seamless experiences to your users by making it possible for them to actively transfer an experience from one device to another or enhance it by using multiple devices at once. This is done via in-app actions (a button or selection in your app) that call the device relay API to discover users' devices, and enable them to launch and message your app on those other devices.
 
 ## Why integrate with device relay?
 ### Empower your users to make the most of their experience with your app by launching it on other devices and enable cross-device messaging
@@ -11,7 +11,7 @@ You can use the device relay API for companion devices, or remote control scenar
 
 Your customers can also actively transfer an experience from one device to another by performing an action in your app. For example, a user might be watching a live broadcast on her phone while on the bus, but when she gets home she wants to transfer playback to the PC in her living room. Productivity scenarios are also supported by Device Relay. 
 
-Below are some use cases of how developers could use these APIs:  
+The following are some examples for how you can use the device relay API.
 
 **Extend the experience:** A developer could extend their app by providing UX to discover devices and to launch their app on those devices. For example, the user could be working on a purchase order on her phone, discover the PC in her office, and launch the app there to finish entering the purchase order.  
 
