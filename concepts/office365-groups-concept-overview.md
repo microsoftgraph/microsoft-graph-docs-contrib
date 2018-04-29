@@ -25,7 +25,7 @@ Using Microsoft Graph API, you can create, manage, or delete groups throughout t
  
 - Calendar [events](../api-reference/v1.0/resources/event.md) can be scheduled on the group calendar using Microsoft Graph. 
  
-- Each group has an associated [SharePoint site](../api-reference/v1.0/resources/sharepoint.md). Microsoft Graph can be used to retrieve information [about the site](../api-reference/v1.0/resources/site.md), such as document library [lists](../api-reference/v1.0/api/list_list.md) or [subsites](../api-reference/v1.0/api/subsites_list.md). 
+- Each group has an associated [SharePoint site](../api-reference/v1.0/resources/sharepoint.md). Microsoft Graph can be used to retrieve information [about the site](../api-reference/v1.0/resources/site.md), such as document library [lists](../api-reference/v1.0/api/list_list.md)<!-- No file found: "or [subsites](../api-reference/v1.0/api/subsites_list.md)"-->. 
  
 - Microsoft Graph can be used to [create a plan](../api-reference/v1.0/api/planner_post_buckets.md) in Microsoft Planner which is owned by a group. The plan provides a visual way to track teamwork by allowing you to [create tasks](../api-reference/v1.0/api/planner_post_tasks.md) that can be [organized across buckets](../api-reference/v1.0/api/planner_post_buckets.md). 
  
@@ -59,7 +59,7 @@ As the number of groups created within an organization begins to grow, Microsoft
  
 - Groups that are about to expire [can be renewed](../api-reference/v1.0/api/group_renew.md) to allow team members to continue with collaboration and accessing content. If the group is not renewed in line with the expiration policy established, the group is automatically deleted. 
  
-- Deleted groups [can be restored](../api-reference/v1.0/api/directory_deleteditems_restore.md) by using the **Restore deleted item** functionality in Microsoft Graph. 
+<!-- The following md file is not in v1.0, only in beta: - Deleted groups [can be restored](../api-reference/v1.0/api/directory_deleteditems_restore) by using the **Restore deleted item** functionality in Microsoft Graph. -->
  
 ## Next steps
 
