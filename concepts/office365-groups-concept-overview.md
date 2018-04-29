@@ -17,8 +17,7 @@ Using Microsoft Graph API, you can create, manage, or delete groups throughout t
  
     **Every Office 365 group is integrated with a default set of Office 365 services**
 
-    <!--Insert image here-->  
-
+    ![Related services infographic](images/office365-groups-concept-overview-related-services-infographic.png)  
 
 - Members can indicate a group is one of their [favorites](../../api-reference/v1.0/api/group_addfavorite.md), or [remove it from their favorites](../../api-reference/v1.0/api/group_removefavorite.md) if no longer needed. 
  
@@ -34,7 +33,7 @@ Using Microsoft Graph API, you can create, manage, or delete groups throughout t
   
     **Office 365 groups and conversations accessible in Outlook in the web**
 
-    <!--Insert image here-->
+    ![Groups in Outlook](images/office365-groups-concept-overview-groups-in-outlook.png) 
 
 - A [group can be enabled for Microsoft Teams](../../api-reference/beta/api/team_put_teams.md) (preview) to allow group members to engage in persistent chat.  
  
