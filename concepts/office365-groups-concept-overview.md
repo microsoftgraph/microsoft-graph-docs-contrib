@@ -11,7 +11,7 @@ Groups form the fundamental construct enabling user collaboration and integratio
  
 Using Microsoft Graph API, you can create, manage, or delete groups throughout the lifecycle of collaboration. Office 365 groups form the foundational container for all teamwork scenarios: 
  
-- You can use the [Create group](../../api-reference/v1.0/api/group_post_groups.md) API to provision a new group.  
+- You can use the [Create group](../../../api-reference/v1.0/api/group_post_groups.md) API to provision a new group.  
  
 - The group is then made available in a range of applications, such as Outlook, SharePoint, Teams, Planner, and even Microsoft Stream. Microsoft Graph makes sure membership is synchronized across these connected services to seamlessly provide access to all group members.  
  
@@ -19,7 +19,7 @@ Using Microsoft Graph API, you can create, manage, or delete groups throughout t
 
     ![Related services infographic](images/office365-groups-concept-overview-related-services-infographic.png)  
 
-- Members can indicate a group is one of their [favorites](../../api-reference/v1.0/api/group_addfavorite.md), or [remove it from their favorites](../../api-reference/v1.0/api/group_removefavorite.md) if no longer needed. 
+- Members can indicate a group is one of their [favorites](../api-reference/v1.0/api/group_addfavorite.md), or [remove it from their favorites](../../api-reference/v1.0/api/group_removefavorite.md) if no longer needed. 
  
 - Group conversations can be [created](../../api-reference/v1.0/api/group_post_conversations.md), [retrieved](../../api-reference/v1.0/api/group_get_conversation.md), or [deleted](../../api-reference/v1.0/api/group_delete_conversation.md) from your custom application. 
  
