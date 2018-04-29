@@ -14,9 +14,6 @@ With activities, you have a way to capture the unique tasks for users of your ap
 ### Build rich cross-device experiences by using the device relay API 
 In addition to Microsoft devices (PCs, Windows Phones, Xbox, IoT, HoloLens, and more), the device relay API also exposes Android and iOS devices. This enables you to truly break down boundaries between your users' devices. You can build apps that utilize the user’s environment and create rich experiences that transcend a single device in real-time. 
 
-### Deliver human-centric experiences by helping your users move easily across all their devices with Microsoft Graph 
-Recently, there has been a dramatic shift in the way users use their devices. Rather than substituting new devices, users are using additional form factors like phones and tablets, alongside their PCs. 
-
 ## Next steps
 
 - [Use the Microsoft Graph API to enable cross-device experiences](../api-reference/v1.0/resources/cross-device-reference-overview.md)
