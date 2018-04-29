@@ -12,8 +12,6 @@ You can use the device relay API for companion devices, or remote control scenar
 
 Your customers can also actively transfer an experience from one device to another by performing an action in your app. For example, a user might be watching a live broadcast on her phone while on the bus, but when she gets home she wants to transfer playback to the PC in her living room. Productivity scenarios are also supported by device relay. 
 
-The following are some examples for how you can use the device relay API.
-
 ### Extend the experience
 
 Extend your app by providing UX to discover devices and to launch your app on those devices. For example, the user could be working on a purchase order on her phone, discover the PC in her office, and launch the app there to finish entering the purchase order.  
