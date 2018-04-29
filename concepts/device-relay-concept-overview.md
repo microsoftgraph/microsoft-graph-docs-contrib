@@ -1,8 +1,8 @@
 # Device replay API in Microsoft Graph (preview)
 
-Today, people interact with multiple devices on a daily basis. Users oftent start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. 
+Today, people interact with multiple devices on a daily basis. Users often start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. 
 
-You can use the device relay APIs to deliver seamless experiences to your users by making it possible for them to actively transfer an experience from one device to another or enhance it by using multiple devices at once. This is done via in-app actions (a button or selection in your app) that call the device relay API to discover users' devices, and enable them to launch and message your app on those other devices.
+You can use the device relay APIs to deliver seamless experiences to your users. You can make it possible for them to actively transfer an experience from one device to another or enhance it by using multiple devices at once. This is done via in-app actions (a button or selection in your app) that call the device relay API to discover users' devices, and enable them to launch and message your app on those other devices.
 
 ## Why integrate with device relay?
 
@@ -14,11 +14,17 @@ Your customers can also actively transfer an experience from one device to anoth
 
 The following are some examples for how you can use the device relay API.
 
-**Extend the experience:** Extend your app by providing UX to discover devices and to launch your app on those devices. For example, the user could be working on a purchase order on her phone, discover the PC in her office, and launch the app there to finish entering the purchase order.  
+### Extend the experience
 
-**Augment the experience:** Create a companion experience for your app on another of the user’s devices. For example, the app could include UX to launch itself on other devices. In a game, the user could launch the app to a device with a larger screen (for example, from a PC to an Xbox). The Xbox could present a full view of the game (a first-person view), while the device with the smaller screen could present a different view with additional context (a top-level view of the game level showing the player and opponents' locations).  
+Extend your app by providing UX to discover devices and to launch your app on those devices. For example, the user could be working on a purchase order on her phone, discover the PC in her office, and launch the app there to finish entering the purchase order.  
 
-**Enrich the experience:** Add additional controlling abilities to your app. For example, provide remote control abilities for the main app from a companion device. When the user launches an app from one device to another, the target device could show the full experience (for example, a 3D model in a design app), while the source device could show a list of the most common actions given the state of the app on the target device (for example, rotate, resize, color palette).
+### Augment the experience
+
+Create a companion experience for your app on another of the user’s devices. For example, the app could include UX to launch itself on other devices. In a game, the user could launch the app to a device with a larger screen (for example, from a PC to an Xbox). The Xbox could present a full view of the game (a first-person view), while the device with the smaller screen could present a different view with additional context (a top-level view of the game level showing the player and opponents' locations).  
+
+### Enrich the experience
+
+Add additional controlling abilities to your app. For example, provide remote control abilities for the main app from a companion device. When the user launches an app from one device to another, the target device could show the full experience (for example, a 3D model in a design app), while the source device could show a list of the most common actions given the state of the app on the target device (for example, rotate, resize, color palette).
 
 ## See also
 
