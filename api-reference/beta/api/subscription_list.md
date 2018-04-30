@@ -17,11 +17,11 @@ This API supports the following permission scopes; to learn more, including how 
 Response results are based on the context of the calling app. The following is a summary of the common scenarios:
 
 ### Basic scenarios
-Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed in user, or for all users in a tenant (work/school accounts). These scenarios do not require any special permissions beyond the ones the app used originally to create its subscriptions.
+Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user, or for all users in a tenant (work/school accounts). These scenarios do not require any special permissions beyond the ones the app used originally to create its subscriptions.
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
-| App is calling on behalf of the signed in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed in user only. |
+| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed-in user only. |
 | App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to work/school accounts only.| Subscriptions created by **this app** for itself or for any user in the tenant.|
 
 ### Advanced scenarios
@@ -30,8 +30,8 @@ For such scenarios, a delegated permission Subscription.Read.All is required.
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
-| App is calling on behalf of the signed in user (delegated permission). *The user is a non-admin*. <br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **any app** for the signed in user only. |
-| App is calling on behalf of the signed in user (delegated permission). *The user is an admin*.<br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This applies to work/school accounts only. | Subscriptions created by **any app** for **any user** in the tenant. <br/><br/>Note: this is a highly privileged operation.|
+| App is calling on behalf of the signed-in user (delegated permission). *The user is a non-admin*. <br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **any app** for the signed-in user only. |
+| App is calling on behalf of the signed-in user (delegated permission). *The user is an admin*.<br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This applies to work/school accounts only. | Subscriptions created by **any app** for **any user** in the tenant. <br/><br/>Note: this is a highly privileged operation.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
