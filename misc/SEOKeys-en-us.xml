@@ -1,4 +1,5 @@
 <Menu>
+  <Item>
   <Item Label="EXPLORE" url="" />
   <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." >    
 	<Item text="Services in Microsoft Graph" url="/en-us/concepts/overview-major-services" />
@@ -381,15 +382,17 @@
 		<Item text="List user devices" url="/en-us/api-reference/v1.0/api/user_list_devices" />
 		<Item text="Send device command" url="/en-us/api-reference/v1.0/api/send_device_command" />
 		<Item text="Get device command status" url="/en-us/api-reference/v1.0/api/get_device_command_status" />
-		<Item text="Activity" url="/en-us/api-reference/v1.0/resources/projectrome_activity" >
-			<Item text="Create or replace activity" url="/en-us/api-reference/v1.0/api/projectrome_put_activity" />
-			<Item text="Get activities" url="/en-us/api-reference/v1.0/api/projectrome_get_activities" />
-			<Item text="Get recent activities" url="/en-us/api-reference/v1.0/api/projectrome_get_recent_activities" />
-			<Item text="Delete activity" url="/en-us/api-reference/v1.0/api/projectrome_delete_activity" />
-		</Item>
-		<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
-			<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
-			<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+		<Item text="Activity feed" url="/en-us/api-reference/v1.0/resources/activity-feed-api-overview" >
+			<Item text="Activity" url="/en-us/api-reference/v1.0/resources/projectrome_activity" >
+				<Item text="Create or replace activity" url="/en-us/api-reference/v1.0/api/projectrome_put_activity" />
+				<Item text="Get activities" url="/en-us/api-reference/v1.0/api/projectrome_get_activities" />
+				<Item text="Get recent activities" url="/en-us/api-reference/v1.0/api/projectrome_get_recent_activities" />
+				<Item text="Delete activity" url="/en-us/api-reference/v1.0/api/projectrome_delete_activity" />
+			</Item>
+			<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
+				<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
+				<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+			</Item>
 		</Item>
 	</Item>
   <Item text="Devices and apps (Intune)" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
@@ -1822,11 +1825,7 @@
       </Item>
     </Item>
   </Item>
-  <Item text="Notes (OneNote)" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
-      <Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
-	  <Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
-      <Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
-      <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
+  <Item text="Notes (OneNote)" url="/en-us/api-reference/v1.0/resources/onenote-api-overview" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
 	  <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
@@ -2492,17 +2491,19 @@
 		<Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
 		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
 		<Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
-		<Item text="Activity" url="/en-us/api-reference/beta/resources/projectrome_activity" >
-			<Item text="Create or replace an activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-			<Item text="Create or replace activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-			<Item text="Delete an activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
-			<Item text="Get activities" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
-			<Item text="Get recent activities" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
-			<Item text="Delete activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
-		</Item>	
-		<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
-			<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
-			<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+		<Item text="Activity feed" url="/en-us/api-reference/beta/resources/activity-feed-api-overview" >
+			<Item text="Activity" url="/en-us/api-reference/beta/resources/projectrome_activity" >
+				<Item text="Create or replace an activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
+				<Item text="Create or replace activity" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
+				<Item text="Delete an activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
+				<Item text="Get activities" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
+				<Item text="Get recent activities" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
+				<Item text="Delete activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
+			</Item>	
+			<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
+				<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
+				<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+			</Item>
 		</Item>
 	</Item>
 	<Item text="Devices and apps (Intune)" url="/en-us/api-reference/beta/resources/intune_graph_overview">
@@ -5019,12 +5020,7 @@
         </Item>
       </Item>
     </Item>
-	<Item text="Notes (OneNote)" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
-      <Item text="Input and Output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
-	  <Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
-      <Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
-      <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  
-      <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="notes API, Microsoft Graph API, notes API" SEODescription="">
+	<Item text="Notes (OneNote)" url="/en-us/api-reference/v1.0/resources/onenote-api-overview" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
         <Item text="List sections" url="/en-us/api-reference/beta/api/onenote_list_sections" SEOKeyword="List sections, Microsoft Graph API, notes API" SEODescription="Retrieve a list of section(../resources/section.md) objects." />
