@@ -2238,6 +2238,7 @@
         <Item text="Subscribe by mail" url="/en-us/api-reference/beta/api/group_subscribebymail" SEOKeyword="group: subscribeByMail, Microsoft Graph API, group API" SEODescription="" />
         <Item text="Unsubscribe by mail" url="/en-us/api-reference/beta/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail, Microsoft Graph API, group API" SEODescription="" />
         <Item text="Update group" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Update group, Microsoft Graph API, Groups API" SEODescription="Update the properties of group object." />
+        <Item text="Validate properties" url="/en-us/api-reference/beta/api/group_validateproperties" SEOKeyword="Validate group properties, Microsoft Graph API, Groups API" SEODescription="Validate the properties of group object." />
       </Item>
       <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
       <Item text="File attachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
@@ -2388,6 +2389,7 @@
         <Item text="Get member groups" url="/en-us/api-reference/beta/api/directoryobject_getmembergroups" SEOKeyword="directoryObject: getMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
         <Item text="Check member groups" url="/en-us/api-reference/beta/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
         <Item text="Get directoryObjects by ids" url="/en-us/api-reference/beta/api/directoryobject_getbyids" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
+        <Item text="Validate properties" url="/en-us/api-reference/beta/api/directoryobject_validateproperties" />
       </Item>
       <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
         <Item text="List directory roles" url="/en-us/api-reference/beta/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
