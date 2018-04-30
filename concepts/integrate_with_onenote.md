@@ -1,10 +1,10 @@
-# Use Microsoft Graph to integrate with OneNote
+# OneNote API overview
+
+OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they leave off, and collaborate on notes with others in real time.
+
+## Why integrate with OneNote?
 
 By integrating your apps with OneNote, you can create empowering experiences across multiple platforms that reach millions of users worldwide. You can use Microsoft Graph to access notebooks, sections, and pages in OneNote to create solutions that help your users plan and organize ideas and information.
-
-## Why create OneNote apps?
-
-You can use Microsoft Graph to create and manage notes, lists, pictures, files, and more in OneNote notebooks.
 
 ### Collect and organize notes and ideas  
 Use OneNote as a canvas where users can add and arrange their content. Microsoft Graph makes it easy to write apps that enable students to take notes and do research, families to share plans and ideas, or shoppers to share pictures. Your app can grab the information people want, send it to OneNote, and then help them organize it.
@@ -37,7 +37,7 @@ To make OneNote API calls from the Graph Explorer, choose **Show more samples** 
 
 To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote.md).
 
-## See also
+## Next steps
 
 * [Branding guidelines](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
 * [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
@@ -45,4 +45,5 @@ To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference 
 * [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
 * [Extract data](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
 * [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+* [Use the OneNote REST API](../api-reference/v1.0/resources/onenote-api-overview.md)
 
