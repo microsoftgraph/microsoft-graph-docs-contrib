@@ -7,19 +7,16 @@ initiate online conversations, share files, and collaborate in groups.
 
 ### Integrate with rich features and reach hundreds of millions of customers
 
-Integrating with Outlook means tapping into the rich experience that customers love - consistent, intuitive experience for mail, contacts, calendar, and tasks, available on all devices - mobile, web, and desktop.
-
-<!-- Change links to overviews of contacts, calendar, tasks when they exist.
--->
+Integrating with Outlook means tapping into the rich experience that customers love - consistent, intuitive experience for mail, [contacts](outlook-contacts-concept-overview.md), [calendar](outlook-calendar-concept-overview.md), and [tasks](outlook-tasks-concept-overview.md), available on all devices - mobile, web, and desktop.
 
 Using [Microsoft Graph](overview.md), you can integrate with Outlook by writing an app just once and reach more than 400 million consumers, 
 and tens of millions of organization customers who choose Outlook as their email client. You can write apps that focus on mail scenarios, or 
 connect to a wealth of other Outlook and non-Outlook relationships, resources, and intelligence, and realize scenarios supported by the Microsoft cloud.
 
+<!-- Change 2 links to v1.0 once branch is updated -->
+
 ### Automate message organization and processing
 
-<!-- Change API links to v1 once they GA in February
--->
 Customers like how Outlook help them stay organized. Microsoft Graph brings these features to app developers, enabling them to build customer workflows that optimize on discovery and improve efficiency and productivity: 
 
 - Customers organize their messages in different ways - some leave all messages in the Inbox and simply search for them, others file their messsages in folders. They like Outlook's flexible and intuitive approach that supports both flat and folder-based organizations. Apps can conveniently [filter, search, or sort](query_parameters.md) messages in specific folders or the user's entire mailbox.
