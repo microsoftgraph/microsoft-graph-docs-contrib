@@ -1,6 +1,14 @@
 # Update bookingservice
 
 Update the properties of a [bookingService](../resources/bookingservice.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).
+
+The following are some examples you can customize for a service:
+- Price
+- Typical length of an appointment
+- Reminders
+- Any time buffer to set up before or finish up after the service
+- [Scheduling policy](../resources/bookingschedulingpolicy.md) parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

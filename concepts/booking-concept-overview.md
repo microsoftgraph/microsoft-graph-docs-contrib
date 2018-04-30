@@ -5,15 +5,15 @@ Microsoft Bookings provides online and mobile apps that make appointment schedul
 ## Why integrate with Microsoft Bookings using Microsoft Graph?
 
 ### Streamline appointment booking
-A business operator may never miss a customer booking when away from the phone or the business is closed. Customers can see the available services and book appontments any time directly on the business web site or Facebook. 
+A business operator may never miss a customer booking when away from the phone or the business is closed. Customers can [see the available services](../api-reference/beta/api/bookingbusiness_list_services.md) and [book appontments](../api-reference/beta/api/bookingbusiness_post_appointments.md) any time directly on the scheduling page, on the business web site or Facebook. 
 
-Business operators can take bookings anywhere, on the web or a mobile app, in-person or on the phone. They can reschedule, cancel or re-assign an existing booking to another available staff member. 
+Business operators can take bookings anywhere, on the web or a mobile app, in-person or on the phone. They can [reschedule](../api-reference/beta//api/bookingappointment_update.md), [cancel](../api-reference/beta/api/bookingappointment_cancel.md), or [re-assign](../api-reference/beta/api/bookingappointment_update.md) an existing booking to another available staff member. 
 
 ### Reduce no-shows and increase productivity of the staff
-Business operators can specify minimum notice for bookings and cancellations, and customers can schedule or reschedule appointments themselves. Automated appointment confirmations and reminders decrease no-shows, and let the staff make better use of their production hours. 
+Business operators can specify [scheduling policies](../api-reference/beta/resources/bookingschedulingpolicy.md) that include minimum notice for bookings and cancellations, and customers can schedule or reschedule appointments themselves. Automated appointment confirmations and reminders decrease no-shows, and let the staff make better use of their production hours. 
 
 ### Manage customer information and relationships from anywhere
-Completing an appointment automatically verifies if the customer is already on the customer list, adds the customer's name and email address to the list if necessary. This makes it convenient for business operators to stay in touch with their customers, and send periodic newsletters or other promotional material.
+Completing an appointment automatically verifies if the customer is already on the [customer list](../api-reference/beta/api/bookingbusiness_list_customers.md), and [adds](../api-reference/beta/api/bookingbusiness_post_customers.md) the customer's name and email address to the list if necessary. This makes it convenient for business operators to stay in touch with their customers, and send periodic newsletters or other promotional material.
 
 <!-- 
 Link to overview-major-services.md after new-conceptual content is merged
