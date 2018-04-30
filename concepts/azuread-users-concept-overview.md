@@ -1,6 +1,6 @@
 # Overview of users in Microsoft Graph
 
-Users are the representation of a Azure Active Directory work or school user account or a Microsoft Account in Microsoft Graph. The `users` resource in Microsoft Graph is a hub from which you can access the relationships and resources relevant to your users.
+Users are the representation of an Azure Active Directory work or school user account or a Microsoft Account in Microsoft Graph. The `users` resource in Microsoft Graph is a hub from which you can access the relationships and resources relevant to your users.
 
 ![Diagram showing a user connected to calendar, email, contacts, meetings, tasks, sites, and documents](images/users.png)
 
@@ -8,7 +8,7 @@ Users are the representation of a Azure Active Directory work or school user acc
 
 Access the relationships, documents, contacts, and preferences contextually relevant to the signed-in user with `users` resource. Operations in the user resource provide an idiomatic way of accessing and manipulating user resources without having to perform additional calls look up specific authentication information and directly issue queries against other Graph resources.
 
-To get to access a user's information and data, you'll need to [get access on their behalf](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user) before using the 'users'resource. Authenticating your with application with [admin consent](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) enables you to work with and update  a wider range of entities associated with a user.
+To get to access a user's information and data, you'll need to [get access on their behalf](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user) before using the `users` resource. Authenticating your with application with [admin consent](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) enables you to work with and update  a wider range of entities associated with a user.
 
 ### Manage your organization
 
