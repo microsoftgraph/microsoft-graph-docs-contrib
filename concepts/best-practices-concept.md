@@ -84,7 +84,7 @@ By default, unknown members are not returned by Microsoft Graph.  If however, yo
 
 Your application should ideally make calls to Microsoft Graph to retrieve data in real-time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](../misc/terms-of-use.md). Your application should also implement proper retention and deletion policies.
 
-## Optimizations: get only the data you need
+## Optimizations
 
 The general theme here is that for performance and even security or privacy reasons, you should only get the data your application really needs, and nothing more.
 
@@ -122,19 +122,11 @@ Webhooks and delta query are often used better together, because if you use delt
 
 > Use [webhook notifications](../api-reference/v1.0/resources/webhooks.md) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
 
-## Optimizations: Efficient requests and data compression
-
 ### Batching
 
 JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. Combining individual requests into a single batch request can save the application significant network latency and can conserve connection resources.
 
 > Use [batching](json_batching.md) where significant network latency can have a big impact on the performance.
-
-### Data compression
-
-To minimize network traffic, it's recommended that applications request that response data is compressed.
-
-> Request compression of responses using an HTTP request header:  *Accept-Encoding: gzip*.
 
 ## Reliability and support
 
