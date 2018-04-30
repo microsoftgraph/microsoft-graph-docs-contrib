@@ -47,7 +47,7 @@ If **type** is not specified, the response will include a mixture of groups and 
 
 ## Response
 
-Sucessful requests return `200 OK` response codes; the response object includes [directorySetting](../resources/directorySetting) properties.
+Sucessful requests return `200 OK` response codes; the response object includes [directory (deleted items)](../resources/directory.md) properties.
 
 ## Example
 
