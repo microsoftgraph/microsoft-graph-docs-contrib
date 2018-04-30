@@ -97,7 +97,7 @@ Content-length: 252
 }
 ```
 ## Notification endpoint validation
-The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request; validation is required to make sure that subscriptions are not created pointing to invalid endpoints (e.g. due to misspelling of the URL in the request).
+The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request; validation is required to make sure that subscriptions are not created pointing to invalid endpoints (e.g. due to misspelling of the `notificationUrl` in the subscription request).
 
 When your subscription creation request is being processed, Microsoft Graph sends a `POST` request back to your `notificationUrl` endpoint, for example:
 ```http
@@ -111,7 +111,7 @@ Content-length: 7
 <token>
 ```
 ## Receiving a notification
-When the subscribed resource changes, Microsoft Graph sends a notification to your notification endpoint. The endpoint must respond with status code of 200 or 204 (with no response body) within 30 seconds; otherwise the notification will be resent at exponentially increasing time intervals. Services that consistently take more than 30 seconds to respond may be throttled and receive a sparser notification set.
+When the subscribed resource changes, Microsoft Graph sends a notification to your notification endpoint. The endpoint must respond with status code of 200 or 204 (with no response body) within 30 seconds, otherwise the notification will be resent at exponentially increasing time intervals. Services that consistently take more than 30 seconds to respond may be throttled and receive a sparser notification set.
 
 You may also respond with the status code of 422, in which case your subscription will be automatically deleted and the stream of notifications will come to a halt.
 
