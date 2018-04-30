@@ -7,10 +7,7 @@ initiate online conversations, share files, and collaborate in groups.
 
 ### Integrate with rich features and reach hundreds of millions of customers
 
-Integrating with Outlook means tapping into the rich experience that customers love - consistent, intuitive experience for mail, contacts, calendar, and tasks, available on all devices - mobile, web, and desktop.
-
-<!-- Change links to overviews of contacts, calendar, tasks when they exist.
--->
+Integrating with Outlook means tapping into the rich experience that customers love - consistent, intuitive experience for mail, [contacts](outlook-contacts-concept-overview.md), [calendar](outlook-calendar-concept-overview.md), and [tasks](outlook-tasks-concept-overview.md), available on all devices - mobile, web, and desktop.
 
 Using [Microsoft Graph](overview.md), you can integrate with Outlook by writing an app just once and reach more than 400 million consumers, 
 and tens of millions of organization customers who choose Outlook as their email client. You can write apps that focus on mail scenarios, or 
@@ -18,18 +15,16 @@ connect to a wealth of other Outlook and non-Outlook relationships, resources, a
 
 ### Automate message organization and processing
 
-<!-- Change API links to v1 once they GA in February
--->
 Customers like how Outlook help them stay organized. Microsoft Graph brings these features to app developers, enabling them to build customer workflows that optimize on discovery and improve efficiency and productivity: 
 
 - Customers organize their messages in different ways - some leave all messages in the Inbox and simply search for them, others file their messsages in folders. They like Outlook's flexible and intuitive approach that supports both flat and folder-based organizations. Apps can conveniently [filter, search, or sort](query_parameters.md) messages in specific folders or the user's entire mailbox.
 
-- Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](../api-reference/beta/api/outlookuser_post_mastercategories.md). More, that list is shared across Outlook messages, 
+- Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](../api-reference/v1.0/api/outlookuser_post_mastercategories.md). More, that list is shared across Outlook messages, 
 as well as events, contacts, tasks, and group posts, and opens up creative scenarios for app developers. For example, an online training provider can color-code the emails, course events, and follow-up assignments for each course a user has enrolled in.
 
 - Additionally, app users can change the importance of a message (event, or task), or flag (preview) a message for follow-up. 
 
-- The rules API takes message organization to the next level. Apps can set up [Inbox rules](../api-reference/beta/resources/messagerule.md) to promptly handle incoming messages and reduce email clutter. For example, an app can automatically move messages to another folder if their subject lines contain certain keywords, and assign categories and importance to make them easier for later follow-up.
+- The rules API takes message organization to the next level. Apps can set up [Inbox rules](../api-reference/v1.0/resources/messagerule.md) to promptly handle incoming messages and reduce email clutter. For example, an app can automatically move messages to another folder if their subject lines contain certain keywords, and assign categories and importance to make them easier for later follow-up.
 
 ### Write smarter apps that leverage intelligence 
 
