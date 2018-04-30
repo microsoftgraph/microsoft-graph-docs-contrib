@@ -53,7 +53,7 @@ The user activities that you create will vary based on the interaction pattern o
 
 ## Next steps
 
-- See the [activity resource](projectrome_activity.md) and define your app's activities to help users resume important tasks.
+- See the [activity resource](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity) and define your app's activities to help users resume important tasks.
 - Explore the [adaptive card samples](http://adaptivecards.io/samples/) samples for ideas to make your activities **pop**.  
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
