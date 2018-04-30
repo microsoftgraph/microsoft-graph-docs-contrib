@@ -1,5 +1,4 @@
 <Menu>
-  <Item>
   <Item Label="EXPLORE" url="" />
   <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." >    
 	<Item text="Services in Microsoft Graph" url="/en-us/concepts/overview-major-services" />
@@ -5540,6 +5539,5 @@
         <Item text="Delete subscription" url="/en-us/api-reference/beta/api/subscription_delete" />
       </Item>
     </Item>
-  </Item>
   </Item>
 </Menu>
