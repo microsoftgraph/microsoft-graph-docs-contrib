@@ -1,18 +1,18 @@
 # Overview of users in Microsoft Graph
 
-Users are the representation of an Azure Active Directory (Azure AD) user account in Microsoft Graph. The Users entity in Microsoft Graph is a hub from which you can access the relationships and resources relevant to your users.
+Users are the representation of a Azure Active Directory work or school user account or a Microsoft Account in Microsoft Graph. The `users` resource in Microsoft Graph is a hub from which you can access the relationships and resources relevant to your users.
 
 ![Diagram showing a user connected to calendar, email, contacts, meetings, tasks, sites, and documents](images/users.png)
 
 ## Develop user-centric applications
 
-Build applications that are aware of a user's relationships, information, and preferences by accessing the relationships and data associated with the current user. Your application can then act on returned Graph entities such as messages, contacts, and groups to make the experience relevant the user.
+Access the relationships, documents, contacts, and preferences contextually relevant to the signed-in user with `users` resource. Operations in the user resource provide an idiomatic way of accessing and manipulating user resources without having to perform additional calls look up specific authentication information and directly issue queries against other Graph resources.
 
-To get to access a user's information and data, you'll need to [get access on their behalf](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user) before using the Users resource. Authenticating your with application with [admin consent](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) enables you to work with and update  a wider range of entities associated with a user.
+To get to access a user's information and data, you'll need to [get access on their behalf](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user) before using the 'users'resource. Authenticating your with application with [admin consent](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) enables you to work with and update  a wider range of entities associated with a user.
 
 ### Manage your organization
 
-Create new users in your organization or update the resources and relationships for existing users with the Users endpoint. 
+Create new users in your organization or update the resources and relationships for existing users with the `users` resource. 
 
 - Create or delete users in your Azure AD organization.
 - List a user's group memberships and check if a user is a member of a group.
@@ -46,6 +46,8 @@ Maximize relevance in your application by promoting recently used or trending do
 
 ## Next steps
 
+- View the `users` [Microsoft Graph reference documentation](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users).
+- Explore your own data from the `users` resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Authenticate with Microsoft Graph [on behalf of a user](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user) or [as a daemon or service by consent of an administator](https://developer.microsoft.com/graph/docs/concepts/auth_v2_service).
 - Set access control and policies for users with the [Azure AD resource](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/azure_ad_overview)
 - Review the [permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) your app will need to access user data. 
