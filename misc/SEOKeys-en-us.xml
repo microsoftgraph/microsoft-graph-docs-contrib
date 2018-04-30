@@ -5068,7 +5068,6 @@
         <Item text="Get resource" url="/en-us/api-reference/beta/api/resource_get" SEOKeyword="Get resource, Microsoft Graph API, resource API" SEODescription="Retrieve the properties and relationships of a file or image resource(../resources/resource.md) object." />
       </Item>
 		</Item>
-	</Item>
     <Item text="Organizational contacts" url="/en-us/api-reference/beta/resources/orgcontact" SEOKeyword="orgcontact API, Microsoft Graph API, orgcontact API" SEODescription="">
       <Item text="Contact" url="/en-us/api-reference/beta/resources/orgcontact" SEOKeyword="orgcontact API, Microsoft Graph API, orgcontact API" SEODescription="">
         <Item text="List org contacts" url="/en-us/api-reference/beta/api/orgcontact_list" SEOKeyword="List contacts, Microsoft Graph API, Organizational contact API" SEODescription="Retrieve a list of orgcontact objects." />
@@ -5541,5 +5540,6 @@
         <Item text="Delete subscription" url="/en-us/api-reference/beta/api/subscription_delete" />
       </Item>
     </Item>
+  </Item>
   </Item>
 </Menu>
