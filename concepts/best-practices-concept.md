@@ -6,7 +6,7 @@ This topic describes a series of best practices that can help your applications 
 
 The easiest and best way to start exploring and navigating the data available through Microsoft Graph is by using [Microsoft Graph Explorer](https://aka.ms/ge). Microsoft Graph Explorer lets you craft REST requests (with full CRUD support), adapt the HTTP request headers, and see the data responses. To help you get started, Graph Explorer also provides a set of sample queries.
 
-> Experiment with new APIs before integrating them into your application. 
+> Experiment with new APIs before integrating them into your application.
 
 ## Authentication
 
@@ -64,14 +64,12 @@ Further in-depth details can be found in the [paging](paging.md) conceptual topi
 
 While your application should handle all error responses (in the 400 and 500 ranges), some special attention should be paid to certain expected errors and responses, which are highlighted below.
 
-| Topic   | HTTP error code	| Best practice | More information|
-|:-----------|:--------|:----------|:------|
-| User does not have access | 403 | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience.  In this case it's most likely that the signed-in user does not have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user. ||
-|Not found| 404 | In certain cases, a requested resource may not be found. For example a resource may not exist, because it has not yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *may* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account.||
-|Throttling|429|APIs may throttle at any time for a variety of reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling.| [Throttling](throttling.md) |
-|Service unavailable| 503 | This is likely because the services is busy. You should employ a back-off strategy similar to 429. Additionally, you should always make new retry requests over a new HTTP connection.|| 
-
-FOLLOW UP ON BEHAVIORS AROUND LACK OF SUBSCRIPTION OR LICENSE.
+| Topic   | HTTP error code    | Best practice|
+|:-----------|:--------|:----------|
+| User does not have access | 403 | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience.  In this case it's most likely that the signed-in user does not have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user. |
+|Not found| 404 | In certain cases, a requested resource may not be found. For example a resource may not exist, because it has not yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *may* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account.|
+|Throttling|429|APIs may throttle at any time for a variety of reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. Further information is available in this [throttling topic](throttling.md).|
+|Service unavailable| 503 | This is likely because the services is busy. You should employ a back-off strategy similar to 429. Additionally, you should **always** make new retry requests over a new HTTP connection.|
 
 ### Evolvable enums
 
