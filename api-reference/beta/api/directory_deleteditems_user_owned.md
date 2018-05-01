@@ -2,9 +2,9 @@
 
 Retrieves a list of recently deleted items owned by the specified user.  
 
-Currently, delete items functionality is supported only for [group](../resources/group.md) or [directory (deleted items)](../resources/directory.md) resources.
+Currently, delete items functionality is supported only for [group](../resources/group.md) resources owned by the user.
 
-This is a service action, which means it does not support pagination.  The API returns up to 1,000 deleted objects owned by the user, sorted by object ID.  Should the user own 1,000 or more deleted objects, the API returns nothing.
+This is a service action, which means it does not support pagination.  The API returns up to 1,000 deleted objects owned by the user, sorted by ID.  Should the user own 1,000 or more deleted objects, the API returns nothing.
 
 ## Permissions
 
@@ -14,18 +14,14 @@ more, including how to choose permissions, see
 
 | Permission type | Permissions (from least to most privileged) |
 | --- | --- |
-| Delegated (work or school account) | |
-| &nbsp; &nbsp;Group | Group.Read.All, Group.ReadWrite.All 
-| &nbsp; &nbsp;Directory | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All | 
+| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All |
 | Delegated (personal Microsoft account) |  Not supported. |
-| Application |  |
-| &nbsp; &nbsp;Group | Group.Read.All, Group.ReadWrite.All 
-| &nbsp; &nbsp;Directory | Directory.Read.All, Directory.ReadWrite.All | 
+| Application | Group.Read.All, Group.ReadWrite.All  |
 
 ## HTTP request
 
 ``` http
-POST /directory/deletedItems/getUserOwnedObjects/groups/{userId}
+POST /directory/deletedItems/getUserOwnedObjects
 ```
 
 ## Request headers
@@ -42,8 +38,6 @@ POST /directory/deletedItems/getUserOwnedObjects/groups/{userId}
   "type":"group"
 }
 ```
-
-If **type** is not specified, the response will include a mixture of groups and application object. The response includes up to 1,000 deleted objects owned by the specified user.
 
 ## Response
 
@@ -95,18 +89,12 @@ Content-length: 1249
               "mailNickname": "Test",
               "membershipRule": null,
               "membershipRuleProcessingState": null,
-              "onPremisesLastSyncDateTime": null,
-              "onPremisesProvisioningErrors": [],
-              "onPremisesSecurityIdentifier": null,
-              "onPremisesSyncEnabled": null,
               "preferredDataLocation": null,
               "preferredLanguage": null,
               "proxyAddresses": [
                   "SMTP:Test@contoso.com"
               ],
               "renewedDateTime": "2017-09-22T22:30:39Z",
-              "resourceBehaviorOptions": [],
-              "resourceProvisioningOptions": [],
               "securityEnabled": false,
               "theme": null,
               "visibility": "Public"
