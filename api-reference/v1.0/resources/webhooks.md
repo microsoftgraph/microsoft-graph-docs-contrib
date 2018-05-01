@@ -19,7 +19,7 @@ For instance, you can create a subscription to a specific mail folder:
 Or to a top-level resource:
 `me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
 
-Or to a specific object:
+Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
 Or to a SharePoint/OneDrive for Business drive:
