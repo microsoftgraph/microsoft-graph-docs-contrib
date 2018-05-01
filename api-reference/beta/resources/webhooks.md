@@ -105,8 +105,22 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
 The client should discard the validation token after providing it in the response.
 
+## Limitations
 
-## Renewing a subscription
+Certain limits apply to notifications for user and group resources:
+
+1) Maximum subscription quotas
+
+     Per app: 50,000 total subscriptions (across all tenants)
+     Per tenant: 35 total subscriptions (across all apps)
+     Per app and tenant pair: 7 total subscriptions
+
+2) Azure AD B2C tenants are not supported
+
+3) Notifications for user entity are not supported for personal Microsoft accounts
+
+
+# Renewing a subscription
 
 The client can renew a subscription with a specific expiration date of up to three days from the time of request. The expirationDateTime property is required.
 
