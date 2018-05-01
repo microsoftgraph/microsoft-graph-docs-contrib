@@ -1,9 +1,10 @@
 # Subscription Resource Type
-A subscription allows a client app to receive notifications about data on the Microsoft Graph. Currently, subscriptions are enabled for the following datasets:
+A subscription allows a client app to receive notifications about changes to data on the Microsoft Graph. Currently, subscriptions are enabled for the following datasets:
 
-1. Mail, events, and contacts from Outlook
+1. Mail, events, and contacts from Outlook.
 1. Conversations from Office Groups.
-1. Drive root items from OneDrive 
+1. Drive root items from OneDrive.
+1. Users and Groups from Azure Active Directory.
 
 
 ## JSON representation
@@ -40,13 +41,16 @@ Here is a JSON representation of the resource.
 |id|string|Unique identifier for the subscription. Read-only.|
 
 ## Maximum length of subscription per resource type
-| Resource | Maximum Expiration Time |
-|:---------------------|:--------------------|
-|Mail| 4230 minutes.|
-|Calendar| 4230 minutes.|
-|Contacts| 4230 minutes.|
-|Group conversations| 4230 minutes.|
-|Drive root items| 43200 minutes. Existing applications and new applications should not exceed the supported value. Higher values won't be permitted in upcoming releases. |
+
+| Resource            | Maximum Expiration Time |
+|:--------------------|:------------------------|
+| Mail                | 4230 minutes (3 days)           |
+| Calendar            | 4230 minutes (3 days)           |
+| Contacts            | 4230 minutes (3 days)           |
+| Group conversations | 4230 minutes (3 days)           |
+| Drive root items    | 43200 minutes* (30 days) |
+
+> \* **Note**: Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
 ## Relationships
 None
