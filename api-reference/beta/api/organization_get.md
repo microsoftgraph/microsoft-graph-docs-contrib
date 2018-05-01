@@ -1,11 +1,22 @@
 # Get organization
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of currently authenticated organization.
 
 Since the **organization** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type | Permissions (from least to most privileged) |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read, Directory.Read.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application | Directory.Read.All |
+
+> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,11 +28,13 @@ This method supports the [OData Query Parameters](http://developer.microsoft.com
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.
 ## Example
 ##### Request

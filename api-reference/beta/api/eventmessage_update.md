@@ -1,9 +1,17 @@
-# Update eventmessage
+# Update eventMessage
 
-Update the properties of eventmessage object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Update the properties of an [eventMessage](../resources/eventmessage.md) object.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -16,7 +24,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. Writable/Updatable properties are
@@ -31,6 +39,7 @@ In the request body, supply the values for relevant fields that should be update
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [eventMessage](../resources/eventmessage.md) object in the response body.
 ## Example
 ##### Request
@@ -53,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 } -->
 ```http
 HTTP/1.1 200 OK

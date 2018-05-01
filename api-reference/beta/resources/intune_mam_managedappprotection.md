@@ -1,5 +1,7 @@
 ﻿# managedAppProtection resource type
 
+> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Policy used to configure detailed management settings for a specified set of apps
@@ -8,40 +10,38 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 
 ## Methods
 |Method|Return Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |[List managedAppProtections](../api/intune_mam_managedappprotection_list.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md) collection|List properties and relationships of the [managedAppProtection](../resources/intune_mam_managedappprotection.md) objects.|
 |[Get managedAppProtection](../api/intune_mam_managedappprotection_get.md)|[managedAppProtection](../resources/intune_mam_managedappprotection.md)|Read properties and relationships of the [managedAppProtection](../resources/intune_mam_managedappprotection.md) object.|
-|[List mobileAppIdentifierDeployments](../api/intune_mam_managedappprotection_list_mobileappidentifierdeployment.md)|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|Get the mobileAppIdentifierDeployments from the mobileAppIdentifierDeployments navigation property.|
-|[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedappprotection_get_managedapppolicydeploymentsummary.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Get the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) from the deploymentSummary navigation property.|
+|[targetApps action](../api/intune_mam_managedappprotection_targetapps.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
-|---|---|---|
+|:---|:---|:---|
 |displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|lastModifiedTime|DateTimeOffset|DEPRECATED: Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|deployedAppCount|Int32|Count of apps to which the current policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|The period after which access is checked when the device is not connected to the internet.|
 |periodOnlineBeforeAccessCheck|Duration|The period after which access is checked when the device is connected to the internet.|
-|allowedInboundDataTransferSources|String|Sources from which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|
-|allowedOutboundDataTransferDestinations|String|Destinations to which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Sources from which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Destinations to which data is allowed to be transferred. Possible values are: `allApps`, `managedApps`, `none`.|
 |organizationalCredentialsRequired|Boolean|Indicates whether organizational credentials are required for app use.|
-|allowedOutboundClipboardSharingLevel|String|The level to which the clipboard may be shared between apps on the managed device. Possible values are: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|The level to which the clipboard may be shared between apps on the managed device. Possible values are: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
 |dataBackupBlocked|Boolean|Indicates whether the backup of a managed app's data is blocked.|
 |deviceComplianceRequired|Boolean|Indicates whether device compliance is required.|
 |managedBrowserToOpenLinksRequired|Boolean|Indicates whether internet links should be opened in the managed browser app.|
 |saveAsBlocked|Boolean|Indicates whether users may use the "Save As" menu item to save a copy of protected files.|
 |periodOfflineBeforeWipeIsEnforced|Duration|The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.|
 |pinRequired|Boolean|Indicates whether an app-level pin is required.|
-|maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is wiped.|
+|maximumPinRetries|Int32|Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.|
 |simplePinBlocked|Boolean|Indicates whether simplePin is blocked.|
 |minimumPinLength|Int32|Minimum pin length required for an app-level pin if PinRequired is set to True|
-|pinCharacterSet|String|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `any`, `numeric`, `alphanumeric`, `alphanumericAndSymbol`.|
-|allowedDataStorageLocations|String collection|Data storage locations where a user may store managed data.|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: `numeric`, `alphanumericAndSymbol`.|
+|periodBeforePinReset|Duration|TimePeriod before the all-level pin must be reset if PinRequired is set to True.|
+|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md) collection|Data storage locations where a user may store managed data.|
 |contactSyncBlocked|Boolean|Indicates whether contacts can be synced to the user's device.|
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps.|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.|
@@ -50,13 +50,13 @@ Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data.|
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app.|
+|minimumWipeOsVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data.|
+|minimumWipeAppVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data.|
+|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Possible values are: `block`, `wipe`.|
+|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune_mam_managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Possible values are: `block`, `wipe`.|
 
 ## Relationships
-|Relationship|Type|Description|
-|---|---|---|
-|mobileAppIdentifierDeployments|[mobileAppIdentifierDeployment](../resources/intune_mam_mobileappidentifierdeployment.md) collection|List of apps to which the policy is deployed. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Navigation property to deployment summary of the configuration. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -65,15 +65,13 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.managedAppProtection"
 }
 -->
-```json
+``` json
 {
   "@odata.type": "#microsoft.graph.managedAppProtection",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedTime": "String (timestamp)",
-  "deployedAppCount": 1024,
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -92,6 +90,7 @@ Here is a JSON representation of the resource.
   "simplePinBlocked": true,
   "minimumPinLength": 1024,
   "pinCharacterSet": "String",
+  "periodBeforePinReset": "String (duration)",
   "allowedDataStorageLocations": [
     "String"
   ],
@@ -102,7 +101,11 @@ Here is a JSON representation of the resource.
   "minimumRequiredOsVersion": "String",
   "minimumWarningOsVersion": "String",
   "minimumRequiredAppVersion": "String",
-  "minimumWarningAppVersion": "String"
+  "minimumWarningAppVersion": "String",
+  "minimumWipeOsVersion": "String",
+  "minimumWipeAppVersion": "String",
+  "appActionIfDeviceComplianceRequired": "String",
+  "appActionIfMaximumPinRetriesExceeded": "String"
 }
 ```
 

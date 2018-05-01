@@ -20,15 +20,14 @@ As well as the following group resources:
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 open extensions or extended properties, and how to specify extended properties.
 
-## Prerequisites
+## Permissions
+One of the following permissions is required to call this API, depending on the resource you're
+creating the extended property in. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-One of the following **scopes** is required to execute this API, depending on the resource you're
-creating the extended property in:
-
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
+- Mail.ReadWrite
+- Calendars.ReadWrite
+- Contacts.ReadWrite
+- Group.ReadWrite.All
  
 ## HTTP request
 You can create extended properties in a new or existing resource instance.
@@ -114,11 +113,10 @@ PATCH /groups/{id}/events/{id}
 |id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
 
-
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}. Required. |
 | Content-Type | application/json |
 
 ## Request body

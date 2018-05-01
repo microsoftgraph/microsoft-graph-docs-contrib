@@ -1,5 +1,7 @@
 # person resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 An aggregation of information about a person from across mail, contacts and social networks. People can be local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).
 
 ## Methods
@@ -7,7 +9,6 @@ An aggregation of information about a person from across mail, contacts and soci
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get person](../api/person_get.md) | [person](person.md) |Read properties and relationships of a person object.|
-
 
 ## Properties
 | Property	   | Type	|Description|
@@ -22,7 +23,7 @@ An aggregation of information about a person from across mail, contacts and soci
 |isFavorite|boolean|`true` if the user has flagged this person as a favorite.|
 |mailboxType|string|The type of mailbox that is represented by the person's email address.|
 |officeLocation|string|The location of the person's office.|
-|personNotes|string|Free-form notes that the the user has taken about this person.|
+|personNotes|string|Free-form notes that the user has taken about this person.|
 |personType|string|The type of person, for example distribution list.|
 |phones|[phone](phone.md) collection|The person's phone numbers.|
 |postalAddresses|[location](location.md) collection|The person's addresses.|

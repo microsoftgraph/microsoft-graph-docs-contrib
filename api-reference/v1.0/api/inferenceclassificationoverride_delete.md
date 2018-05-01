@@ -1,8 +1,15 @@
 # Delete inferenceClassificationOverride
 
 Delete an override specified by its ID.
-## Prerequisites
-The following **scopes** are required to execute this API: *Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,14 +19,14 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request

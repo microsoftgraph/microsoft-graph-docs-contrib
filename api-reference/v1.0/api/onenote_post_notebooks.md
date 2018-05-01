@@ -1,10 +1,14 @@
 # Create notebook
 
 Create a new OneNote [notebook](../resources/notebook.md).
-## Prerequisites
-One of the following **scopes** is required to execute this API:   
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite    |
+|Application | Notes.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -12,11 +16,12 @@ Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All
 POST /me/onenote/notebooks
 POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
+POST /sites/{id}/onenote/notebooks
 ```
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` A valid OAuth token provided to the app based on the user credentials and the user having authorized access. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string | `application/json` |
 
 ## Request body
@@ -24,8 +29,8 @@ In the request body, supply a name for the notebook.
 
 Notebook names must be unique. The name cannot contain more than 128 characters or contain the following characters:  ?*\/:<>|'"
 
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.
 
 ## Example

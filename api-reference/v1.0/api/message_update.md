@@ -1,9 +1,15 @@
 # Update message
 
 Update the properties of message object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,7 +21,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. Writable/Updatable properties are
@@ -42,6 +48,7 @@ Since the **message** resource supports [extensions](../../../concepts/extensibi
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **message** instance.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [message](../resources/message.md) object in the response body.
 ## Example
 ##### Request

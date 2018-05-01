@@ -6,6 +6,41 @@ Currently, this operation returns event bodies in only HTML format.
 
 Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
 
+
+### Get events in another user's calendar
+
+If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get events 
+from another user's calendar. This section focuses on scenarios that involve delegated permissions.
+
+For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a calendar with John. 
+You can get an event in that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/events/{id}
+```
+
+This capability applies to all the supported GET events operations for an individual user, as listed in the [HTTP request](#http-request) section below . 
+It also applies if Garth has delegated his entire mailbox to John.
+
+If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
+will return an error. In such cases, specifying a user ID or user principal name only works for getting an event in the signed-in user’s own calendars, 
+and the query is equivalent to using the /me shortcut:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events/{id}
+```
+
+This capability is available in only GET operations of:
+
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
+- The above resources in delegated mailboxes
+
+This capability is not available in other operations for contacts, events, messages, and their folders.
+
+
 ### Support various time zones
 
 For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response. 
@@ -23,9 +58,15 @@ You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties
 find out the time zone used when the event was created.
 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Calendars.Read*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read    |
+|Delegated (personal Microsoft account) | Calendars.Read    |
+|Application | Calendars.Read |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,17 +90,20 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
-| Prefer: outlook.timezone | string | The default time zone for events in the response. |
+| Name       | Type | Description |
+|:---------------|:--------|:--------|
+| Authorization  | string | Bearer {token}. Required.  |
+| Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
 ## Example
-##### Request
+##### Request 1
 The first example gets the specified event. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
@@ -75,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=su
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### Response
+##### Response 1
 
 Here is an example of the response. The **body** property is returned in the default format of HTML.
 
@@ -109,9 +153,19 @@ Content-length: 1928
         "dateTime":"2017-04-21T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
-    "location":{
-        "displayName":"Assembly Hall"
+    "location": {
+        "displayName": "Assembly Hall",
+        "locationType": "default",
+        "uniqueId": "Assembly Hall",
+        "uniqueIdType": "private"
     },
+    "locations": [
+        {
+            "displayName": "Assembly Hall",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
     "attendees":[
         {
             "type":"required",
@@ -120,8 +174,8 @@ Content-length: 1928
                 "time":"0001-01-01T00:00:00Z"
             },
             "emailAddress":{
-                "name":"Fanny Downs",
-                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
             }
         },
         {
@@ -138,20 +192,139 @@ Content-length: 1928
     ],
     "organizer":{
         "emailAddress":{
-            "name":"Fanny Downs",
-            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            "name":"Samantha Booth",
+            "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
         }
     }
 }
 ```
 
+
+##### Request 2
+
+The second example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
+to return specific properties. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_multiple_locations"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+```
+##### Response 2
+Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
+
+Because the request does not specify any `Prefer: outlook.timezone` header, 
+the **start** and **end** properties are displayed in the default UTC time zone. 
+
+The event body is in the default HTML format.  
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_multiple_locations",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject":"Plan summer company picnic",
+  "bodyPreview":"Let's kick-start this event planning!",
+  "body":{
+    "contentType":"html",
+    "content":"<html>\r\n<head>\r\n</head>\r\n<body>\r\nLet's kick-start this event planning!\r\n</body>\r\n</html>\r\n"
+  },
+  "start":{
+    "dateTime":"2017-08-30T11:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "end":{
+    "dateTime":"2017-08-30T12:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "location":{
+    "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+    "locationType":"default",
+    "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+    "uniqueIdType":"private"
+  },
+  "locations":[
+    {
+      "displayName":"Conf Room 3",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    },
+    {
+      "displayName":"Fourth Coffee",
+      "locationType":"default",
+      "uniqueId":"Fourth Coffee",
+      "uniqueIdType":"private",
+      "address":{
+        "type":"unknown",
+        "street":"4567 Main St",
+        "city":"Redmond",
+        "state":"WA",
+        "countryOrRegion":"US",
+        "postalCode":"32008"
+      },
+      "coordinates":{
+        "latitude":47.672,
+        "longitude":-102.103
+      }
+    },
+    {
+      "displayName":"Home Office",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    }
+  ],
+  "attendees":[
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Dana Swope",
+        "address":"DanaS@contoso.onmicrosoft.com"
+      }
+    },
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Alex Wilber",
+        "address":"AlexW@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "organizer":{
+    "emailAddress":{
+      "name":"Adele Vance",
+      "address":"AdeleV@contoso.onmicrosoft.com"
+    }
+  }
+}
+```
+
+
+
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

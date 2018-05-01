@@ -2,9 +2,15 @@
 
 Use this API to create a new User.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,7 +19,7 @@ POST /users
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## Request body
@@ -31,7 +37,8 @@ The following table shows the properties that are required when you create a use
 |userPrincipalName |string |The user principal name (someuser@contoso.com).|
 
 ## Response
-If successful, this method returns `201, Created` response code and [user](../resources/user.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.
 
 ## Example
 ##### Request

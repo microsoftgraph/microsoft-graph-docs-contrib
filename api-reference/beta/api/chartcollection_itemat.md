@@ -1,10 +1,16 @@
 # ChartCollection: ItemAt
 
-Gets a chart based on its position in the collection.
-## Prerequisites
-The following **scopes** are required to execute this API: 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-    * Files.ReadWrite
+Gets a chart based on its position in the collection.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Files.ReadWrite    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -15,8 +21,8 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
-
+| Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -26,7 +32,8 @@ In the request body, provide a JSON object with the following parameters.
 |index|number|Index value of the object to be retrieved. Zero-indexed.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [Chart](../resources/chart.md) object in the response body.
+
+If successful, this method returns `200 OK` response code and [Chart](../resources/chart.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

@@ -1,24 +1,36 @@
 # Update group
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update the properties of a [group](../resources/group.md) object.
-## Prerequisites
-The following **scope** is required to execute this API: *Group.ReadWrite.All*
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
+|allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.|
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
@@ -28,23 +40,21 @@ In the request body, supply the values for relevant fields that should be update
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter..|
 |visibility|Boolean|Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
 
-Since the **group** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to 
-add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
+Since the **group** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
 
 **Note**
 
 - You can update **autoSubscribeNewMembers** by specifying it in its own PATCH request, 
 without including the other properties in the table above.
 - Only a subset of the group API pertaining to core group administration and management support application 
-and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, 
-support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.
-
+and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes) for examples.
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [group](../resources/group.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
+
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -65,28 +75,16 @@ Content-length: 211
   "mailNickname": "mailNickname-value"
 }
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+#### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 211
-
-{
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 ## See also

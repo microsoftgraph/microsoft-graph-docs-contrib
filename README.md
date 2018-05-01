@@ -171,7 +171,7 @@ Any additional work requires a new branch.
 To delete your branch follow these steps:
 
 1. In GitBash type `git checkout master` at the command prompt.  This ensures that you aren't in the branch to be deleted (which isn't allowed).
-2. Next, type `git branch -d <branch name>` at the command prompt.  This deletes the branch on your local machine only if it has been successfully merged to the upstream repository. (You can override this behavior with the `–D` flag, but first be sure you want to do this.)
+2. Next, type `git branch -d <branch name>` at the command prompt.  This deletes the branch on your local machine only if it has been successfully merged to the upstream repository. (You can override this behavior with the `Â–D` flag, but first be sure you want to do this.)
 3. Finally, type `git push origin :<branch name>` at the command prompt (a space before the colon and no space after it).  This will delete the branch on your github fork.
 
 Congratulations, you have successfully contributed to the project.
@@ -234,3 +234,5 @@ By using references grouped at the bottom of your file, you can easily find, edi
 [Markdown Home]: http://daringfireball.net/projects/markdown/
 [Markdown Pad]: http://markdownpad.com/
 [microsoftgraph/microsoft-graph-docs issues]: https://github.com/microsoftgraph/microsoft-graph-docs/issues
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

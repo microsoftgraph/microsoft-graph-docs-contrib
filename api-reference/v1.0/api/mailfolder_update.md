@@ -1,9 +1,15 @@
 # Update mailfolder
 
 Update the properties of mailfolder object.
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,7 +19,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -24,6 +30,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|The mailFolder's display name.|
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and updated [mailFolder](../resources/mailfolder.md) object in the response body.
 ## Example
 ##### Request

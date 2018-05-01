@@ -2,9 +2,15 @@
 
 Move a message to a folder. This creates a new copy of the message in the destination folder.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -16,7 +22,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
@@ -24,10 +30,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DestinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
+|destinationId|String|The destination folder ID, or the `Inbox`, `Drafts`, `SentItems`, or `DeletedItems` well-known folder name.|
+
 
 ## Response
-If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.
+
+If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -43,7 +51,7 @@ Content-type: application/json
 Content-length: 44
 
 {
-  "DestinationId": "destinationId-value"
+  "destinationId": "destinationId-value"
 }
 ```
 

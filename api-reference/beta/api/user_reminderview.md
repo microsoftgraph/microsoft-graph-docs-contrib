@@ -1,9 +1,18 @@
 # user: reminderView
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Return a list of calendar reminders within the specified start and end times. 
 
-## Prerequisites
-One of the following **scopes** is required to execute this API: 
-*Calendars.Read; Calendars.ReadWrite*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.ReadWrite |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,19 +27,19 @@ In the request URL, provide the following function parameters with values.
 |startDateTime|String|The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".|
 
-
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type   | application/json |
-| Prefer | <Time-zone>. Optional, UTC assumed if absent.| 
+| Prefer | {Time-zone}. Optional, UTC assumed if absent.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
+
+If successful, this method returns `200 OK` response code and [reminder](../resources/reminder.md) collection object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -41,7 +50,7 @@ Here is an example of the request.
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/reminderView?startDateTime=startDateTime-value&endDateTime=endDateTime-value
+GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 
 ##### Response
@@ -58,31 +67,30 @@ Content-type: application/json
 Content-length: 673
 
 {
-  "value": [
-    {
-      "eventId": "eventId-value",
-      "eventStartTime": {
-        "dateTime": "2016-10-19T10:37:00Z",
-        "timeZone": "timeZone-value"
-      },
-      "eventEndTime": {
-        "dateTime": "2016-10-19T10:37:00Z",
-        "timeZone": "timeZone-value"
-      },
-      "changeKey": "changeKey-value",
-      "eventSubject": "eventSubject-value",
-      "eventLocation": {
-        "displayName": "displayName-value",
-        "address": {
-          "street": "street-value",
-          "city": "city-value",
-          "state": "state-value",
-          "countryOrRegion": "countryOrRegion-value",
-          "postalCode": "postalCode-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.reminder)",
+    "value": [
+        {
+            "eventId": "AAMkADNsvAAA=",
+            "changeKey": "SuFHwDRP1EeXJUopWbSLlgAAmBvk2g==",
+            "eventSubject": "Plan summer company picnic",
+            "eventWebLink": "https://outlook.office365.com/owa/?itemid=AAMkADNsvAAA%3D&exvsurl=1&path=/calendar/item",
+            "eventStartTime": {
+                "dateTime": "2017-06-09T18:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "eventEndTime": {
+                "dateTime": "2017-06-09T19:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "eventLocation": {
+                "displayName": "Conf Room 3"
+            },
+            "reminderFireTime": {
+                "dateTime": "2017-06-09T17:45:00.0000000",
+                "timeZone": "UTC"
+            }
         }
-      }
-    }
-  ]
+    ]
 }
 ```
 
