@@ -2,7 +2,7 @@
 
 Renew a subscription by extending its expiry time.
 
-Subscriptions to resources expire at dates proscribed by the individual resource types.  In order not to miss notifications, subscriptions should be renewed well in advance of their expiry date.  See [subscription](../resources/subscription.md) for individual expiry dates.
+Subscriptions expire after a length of time that varies by resource type. In order not to miss notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.
 
 ## Permissions
 
@@ -20,7 +20,7 @@ The following table lists the suggested permission needed for each resource. To 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /subscriptions/{subscriptionId}
+PATCH /subscriptions/{id}
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "update_subscription"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
+PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
 Content-type: application/json
 
 {
