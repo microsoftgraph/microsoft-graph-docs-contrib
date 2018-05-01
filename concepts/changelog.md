@@ -13,6 +13,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | V1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
 | Addition        | V1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](../api-reference/v1.0/resources/user.md) entity. |
 | Addition        | V1.0        | Added users and groups support to [webhook](../api-reference/v1.0/resources/webhooks.md) notification subscriptions. |
+| Addition        | beta        | Added [List deleted items owned by a user](../api-reference/beta/api/directory_deleteditems_user_owned.md) action to [directory (deleted items)](../api-reference/beta/resources/directory.md) resource | 
 
 ### Education APIs
 
