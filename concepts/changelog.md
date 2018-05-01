@@ -153,7 +153,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta       | Added the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[alert](../api-reference/beta/resources/alert.md) (and related entities)<br/>[Get alert](../api-reference/beta/api/alert_get.md)<br/>[List alerts](../api-reference/beta/api/alert_list.md)<br/>[Update alert](../api-reference/beta/api/alert_update.md)<br/><br/>Added the following supporting documentation:<br/>[Errors](../api-reference/beta/resources/security-error-codes.md)<br/>[Integrate with a SIEM](../concepts/security_siemintegration.md)
 
 
-
 ## March 2018
 
 ### Data Policy Operations 
