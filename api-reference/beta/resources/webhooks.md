@@ -185,13 +185,13 @@ Note the `value` field is an array of objects. When there are many queued notifi
 
 Each notification received by your app should be processed; the following are the minimum tasks that your app must perform to process a notification:
 
-1. Validate the value of the `clientState` property. It must match the value submitted originally in the subscription creation request.
-  > **Note**: If this isn't true, you shouldn't consider this a valid notification. It is possible that the notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should investigate where the notification came from and take appropriate action.
+1. Validate the value of the `clientState` property. It must match the value originally submitted in the subscription creation request.
+  > **Note**: If this is not true, you should not consider this a valid notification. It is possible that the notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should investigate where the notification came from and take appropriate action.
 
 2. Update your application based on your business logic.
 
 3. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry resending the notification a number of times.
-  > You should send a `202 - Accepted` status code even if the `clientState` property did not pass validation at step 1. This is a good practice as it prevents the potentially rogue actor from discovering the fact that you may not trust their notifications, and perhaps trying to use that information to guess the value of the `clientState` property.
+  > You should send a `202 - Accepted` status code even if the `clientState` property did not pass validation at step 1. This is a good practice as it prevents a potential rogue actor from discovering the fact that you may not trust their notifications, and perhaps using that information to guess the value of the `clientState` property.
 
 Repeat for other notifications in the request.
 
