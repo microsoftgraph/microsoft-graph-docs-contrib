@@ -4,6 +4,24 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## May 2018
+
+### Microsoft Bookings API
+
+<!--Add link to booking-concept-overview.md once that topic is in the same branch as this one.
+-->
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          | Added the [bookingBusiness](../api-reference/beta/resources/bookingbusiness.md) entity and the following CRUD methods and actions: <br> [List](../api-reference/beta/api/bookingbusiness_list.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_bookingbusinesses.md) <br> [Get](../api-reference/beta/api/bookingbusiness_get.md) <br> [Update](../api-reference/beta/api/bookingbusiness_update.md) <br> [Delete](../api-reference/beta/api/bookingbusiness_delete.md) <br> [Publish](../api-reference/beta/api/bookingbusiness_publish.md) <br> [Unpublish](../api-reference/beta/api/bookingbusiness_unpublish.md). <br> Find out more about integrating with the Microsoft Bookings API. |
+| Addition        | Beta          | Added the [bookingAppointment](../api-reference/beta/resources/bookingappointment.md) entity and the following CRUD methods and action: <br> [List](../api-reference/beta/api/bookingbusiness_list_appointments.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_appointments.md) <br> [Get](../api-reference/beta/api/bookingappointment_get.md) <br> [Update](../api-reference/beta/api/bookingappointment_update.md) <br> [Delete](../api-reference/beta/api/bookingappointment_delete.md) <br> [Cancel](../api-reference/beta/api/bookingappointment_cancel.md). |
+| Addition        | Beta          | Added the [bookingCurrency](../api-reference/beta/resources/bookingcurrency.md) entity and the following methods: <br> [List](../api-reference/beta/api/bookingcurrency_list.md) <br> [Get](../api-reference/beta/api/bookingcurrency_get.md). |
+| Addition        | Beta          | Added the [bookingCustomer](../api-reference/beta/resources/bookingcustomer.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_customers.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_customers.md) <br> [Get](../api-reference/beta/api/bookingcustomer_get.md) <br> [Update](../api-reference/beta/api/bookingcustomer_update.md) <br> [Delete](../api-reference/beta/api/bookingcustomer_delete.md).|
+| Addition        | Beta          | Added the [bookingService](../api-reference/beta/resources/bookingservice.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_services.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_services.md) <br> [Get](../api-reference/beta/api/bookingservice_get.md) <br> [Update](../api-reference/beta/api/bookingservice_update.md) <br> [Delete](../api-reference/beta/api/bookingservice_delete.md).|
+| Addition        | Beta          | Added the [bookingStaffMember](../api-reference/beta/resources/bookingstaffmember.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_staffmembers.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_staffmembers.md) <br> [Get](../api-reference/beta/api/bookingstaffmember_get.md) <br> [Update](../api-reference/beta/api/bookingstaffmember_update.md) <br> [Delete](../api-reference/beta/api/bookingstaffmember_delete.md).|
+| Addition        | Beta          | Added the following complex types: <br> [bookingNamedEntity](../api-reference/beta/resources/bookingnamedentity.md) <br> [bookingPerson](../api-reference/beta/resources/bookingperson.md) <br> [bookingReminder](../api-reference/beta/resources/bookingreminder.md) <br> [bookingWorkHours](../api-reference/beta/resources/bookingworkhours.md) <br> [bookingWorkTimeSlot](../api-reference/beta/resources/bookingworktimeslot.md).|
+
+
 ## April 2018
 
 ### Directory APIs
