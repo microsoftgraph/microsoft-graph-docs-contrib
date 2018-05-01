@@ -53,7 +53,7 @@ Content-type: application/json
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-   "clientState": "subscription-identifier"
+   "clientState": "secretClientValue"
 }
 ```
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
@@ -90,7 +90,7 @@ Content-length: 252
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType": "created,updated",
-  "clientState": "subscription-identifier",
+  "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorUserId": "8ee44408-0679-472c-bc2a-692812af3437"
@@ -121,7 +121,7 @@ Depending on the subscribed resource, an additional resourceData field may provi
       {
          "subscriptionId":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
          "subscriptionExpirationDateTime":"2015-11-20T18:23:45.9356913Z",
-         "clientState":"subscription-identifier",
+         "clientState":"secretClientValue",
          "changeType":"Created",
          "resource":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",
          "resourceData":{
@@ -138,7 +138,7 @@ When receiving notifications from Drive subscriptions the resourceData will be n
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
-  "clientState": "My client state",
+  "clientState": "secretClientValue",
   "changeType": "updated",
   "resource": "me/drive/root",
   "subscriptionExpirationDateTime": "2016-08-26T23:08:37.00+00:00",

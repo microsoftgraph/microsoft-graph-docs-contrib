@@ -73,7 +73,7 @@ Content-Type: application/json
   "notificationUrl": "https://webhook.azurewebsites.net/notificationClient",
   "resource": "/me/mailfolders('inbox')/messages",
   "expirationDateTime": "2016-03-20T11:00:00.0000000Z",
-  "clientState": "SecretClientState"
+  "clientState": "secretClientValue"
 }
 ```
 
@@ -175,7 +175,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
   {
     "subscriptionId":"<subscription_guid>",
     "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
-    "clientState":"secretClientState",
+    "clientState":"secretClientValue",
     "changeType":"created",
     "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
     "resourceData":
