@@ -20,7 +20,7 @@ Or to a top-level resource:
 `me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
 
 Or to a specific object:
-`users/{id}`, `groups/{id}`, `groups('{id}')/conversations`
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
 Or to a SharePoint/OneDrive for Business drive:
 `/drive/root`
@@ -65,7 +65,7 @@ The client must store the subscription ID to correlate notifications with the su
 ## Subscription request example
 This is an example of a request to create a subscription.
 
-``` 
+```
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body. The subscription object includes the new expirationDateTime value. 
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](subscription.md) object in the body. The subscription object includes the new expirationDateTime value.
 
 ## Deleting a subscription
 
@@ -194,7 +194,7 @@ Note the `value` field is an array of objects. When there are many queued notifi
 
 ## Processing the notification
 
-Each notification received by your app should be processed; the following are the minimum tasks that your app must perform to process a notification:
+Each notification received by your app should be processed; the following is the minimum set of tasks that your app must perform to process a notification:
 
 1. Validate the value of the `clientState` property. It must match the value originally submitted in the subscription creation request.
   > **Note**: If this is not true, you should not consider this a valid notification. It is possible that the notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should investigate where the notification came from and take appropriate action.
