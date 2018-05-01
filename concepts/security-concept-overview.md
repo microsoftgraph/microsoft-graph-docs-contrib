@@ -6,7 +6,7 @@ You can use Microsoft Graph to connect with Intelligent Security Graph to take a
 
 The Intelligent Security Graph is a unified platform for combatting cyberthreats. It powers real-time threat protection for Microsoft products and services, and supports an ecosystem of integrated solutions.
 
-The security API in Microsoft Graph makes it easy to connect with those solutions in the Intelligent Security Graph. It allows you to more readily realize and enrich the value of these solutions.
+The [security API in Microsoft Graph](https://aka.ms/graphsecuritydocs) makes it easy to connect with those solutions in the Intelligent Security Graph. It allows you to more readily realize and enrich the value of these solutions.
 
 ### Unify and standardize alert management
 
