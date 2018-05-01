@@ -10,6 +10,8 @@ Creating a subscription requires read scope to the resource. For example, to get
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
 
@@ -62,6 +64,8 @@ The following are valid values for the resource property of the subscription:
 |Mail|me/mailfolders('inbox')/messages<br />me/messages|
 |Contacts|me/contacts|
 |Calendars|me/events|
+|Users|users|
+|Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
 

@@ -11,13 +11,15 @@ The following table lists the suggested permission needed for each resource. To 
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /subscriptions/{subscriptionId}
+GET /subscriptions/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
@@ -41,7 +43,7 @@ Here is an example of the request.
   "name": "get_subscription"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
+GET https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 ##### Response
 Here is an example of the response.
