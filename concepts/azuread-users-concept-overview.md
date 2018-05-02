@@ -46,11 +46,11 @@ Maximize relevance in your application by promoting recently used or trending do
 
 ## Next steps
 
-- Learn more about how to [work with users](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users).
+- Learn more about how to [work with users](../api-reference/v1.0/resources/users.md).
 - Explore your own data from the **user** resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Authenticate with Microsoft Graph [on behalf of a user](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user) or [as a daemon or service by consent of an administator](https://developer.microsoft.com/graph/docs/concepts/auth_v2_service).
-- Set access control and policies for users with the [Azure AD API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/azure_ad_overview).
-- Review the [permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) your app will need to access user data. 
+- Authenticate with Microsoft Graph [on behalf of a user](auth_v2_user.md) or [as a daemon or service by consent of an administator](hauth_v2_service.md).
+- Set access control and policies for users with the [Azure AD API](../api-reference/v1.0/resources/azure_ad_overview).
+- Review the [permissions](permissions_reference.md) your app will need to access user data. 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
 - Stay up to date with the Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 -->
