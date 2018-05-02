@@ -1,6 +1,6 @@
 # Outlook To-do tasks API overview (preview)
 
-Outlook tasks is a simple task manager feature of the Outlook web and desktop clients. Outlook tasks lets customers track their tasks in the same client that they use to manage email and calendars. 
+Outlook tasks is a simple task manager feature of the Outlook web and desktop clients. Outlook tasks lets customers track their tasks in the same client that they use to manage email and calendars. These [Outlook To-do task features](#outlook-to-do-task-features) are a great reason to consider using Outlook To-do tasks in your organization.  
 
 
 
