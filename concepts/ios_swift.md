@@ -30,7 +30,7 @@ To get started, you'll need:
 * Installation of [Carthage](https://github.com/Carthage/Carthage) to import and build the **MSAL** library.
 * Installation of the [PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/Documentation/Installation.md) Cocoapod. 
 * A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
-* The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**ios-objectivec-connect-sample-swift.xcworkspace**).
+
 
 ## Register the app
  
@@ -59,9 +59,9 @@ To get started, you'll need:
 
    You will receive confirmation that the pods have been imported into the project. For more information, see [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
-## Build the MSAL authentication framework
+## Install the MSAL authentication framework
 
-The preview version of MSAL is distributed as source code using Carthage. To build the source code, do these steps:
+The preview version of MSAL is distributed as header and symbol files using Carthage. To install MSAL in the project, do these steps:
 
 1. Open the Bash terminal and go to the app root folder.
 2. Create a **cartfile**: Copy `echo "github \"AzureAD/microsoft-authentication-library-for-objc\" \"master\"" > Cartfile`  into the terminal and run the command.
@@ -73,7 +73,7 @@ The preview version of MSAL is distributed as source code using Carthage. To bui
 For Xcode8, you need to add the keychain group or your app will fail to access keychain. 
 To add the keychain group:
  
-1. Select the project on the project manager panel in Xcode. (⌘ + 1).
+1. Select the project on the project manager panel in XCode. (⌘ + 1).
  
 2. Select the **O365-iOS-Microsoft-Graph-Connect-swift** target.
 
@@ -85,7 +85,7 @@ To add the keychain group:
 
 ## Authenticating with Microsoft Graph
 
-The UI workflow is as follows: The app asks the user to authenticate. After authentication, the user can send a mail to another user. To make requests against Microsoft Graph, the sample uses the **MSAL** authentication library to authenticate HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project the **AuthenticationClass.swift.** class implements the **MSAL** library and acquires the access token needed for Microsoft Graph REST operations.
+The UI workflow is as follows: The app asks the user to authenticate. After authentication, the user can send a mail to another user. To make requests against Microsoft Graph, the sample uses the **MSAL** authentication library to authenticate HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project the **AuthenticationClass.swift.** class imports the **MSAL** library and acquires the access token needed for Microsoft Graph REST operations.
 
 1. Open the **XCode** project workspace (**Graph-iOS-Swift-Connect.xcworkspace**), and open the class file **AuthenticationClass.swift** Find the following code in that class.
 
@@ -185,9 +185,9 @@ After connecting the user to Microsoft Graph, the sample gets the authenticated 
 
 The message body contains the picture sharing link and the picture itself as an attached image file. The default recipient is the authenticated user, but the sample allows the user to provide the email address of any other user. 
 
-The code we'll work with here is in the class **SendMailViewController_WithPromise.swift.** The `viewDidLoad()` function reads the `self.emailTextField.text` value to get the mail recipient's email address and then starts a **promise chain** to get the authenticated user's profile picture. If the promise returns an error, the `sendMailButton` is not enabled.
+The code we'll work with here is in the class **SendMailViewController_WithPromise.swift.** The `viewDidLoad()` function reads the `self.emailTextField.text` value to get the mail recipient's email address and then starts a **promise chain** to get the authenticated user's profile picture. If the promise is rejected, the `sendMailButton` is not enabled.
 
-1. Open **SendMailViewController_WithPromise.swift.** and find the `viewDidLoad` function.
+1. Open **SendMailViewController_WithPromise.swift.** and find the `viewDidLoad` function. The `self.userPictureWork` function is called to start the promise chain.
 
    ```swift
     override func viewDidLoad() {
@@ -249,6 +249,7 @@ The code we'll work with here is in the class **SendMailViewController_WithPromi
                     .replacingOccurrences(of: "<IMAGE.TYPE>", with: "image\\/png")
                     .replacingOccurrences(of: "<CONTENTBYTES>", with: imageData.base64EncodedString())
                     .replacingOccurrences(of: "<NAME>", with: "me.png")
+                // Return JSON payload with mail body as HTML string and attached picture as a file attachment of type NSData
                 return emailPostContent.data(using: String.Encoding.utf8)
             }
             catch {
@@ -271,7 +272,7 @@ The code we'll work with here is in the class **SendMailViewController_WithPromi
      */
     func getUserPicture()->Promise<UIImage?>{
         return Promise{ fulfill, reject in
-            let urlRequest = buildRequest(operation: "GET", resource: "photo/$value") as URLRequest
+            let urlRequest = self.buildRequest(operation: "GET", resource: "photo/$value") as URLRequest
             let task = URLSession.shared.dataTask(with:urlRequest){ data , res , err in
                 if let err:Error = err {
                     print(err.localizedDescription)
@@ -483,7 +484,7 @@ The service calls used in this project, sending a mail to your mail account and 
 
 ## Next steps
 - Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
-- Find examples of common operations for both REST and SDK operations in the [Microsoft Graph iOS Objective C Snippets Sample](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
+- Find examples of common operations for SDK operations in the [Microsoft Graph iOS Objective C Snippets Sample](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## See also
 - [Azure AD v2.0 protocols](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
