@@ -10,6 +10,8 @@ By integrating your apps with Outlook tasks, you can create empowering experienc
 
 If your line-of-business application generates the work flow that directs users in their work, you can extend the application to create a task for each stage of the workflow and assign the task to a user along with task details, start dates, expected work effort, priority, associated customers, and recurrence. The new task appears in the assigned user's task list. 
 
+![Outlook Task pane view](images/OutlookTasks.png)
+
 ### Automate task updates
 
 If your application creates a task for a user, it can also automate the update of a task as work progresses on the task. The user can update the task within the Outlook client or your application can automate the update of the task - as long as the assigned user works in your application in the context of the task. Hours worked on the task can be updated, the status, and the completion date can be updated. The Microsoft Graph Outlook tasks API gives access to the details of the task so your app can even add additional notes to the task as appropriate. 
