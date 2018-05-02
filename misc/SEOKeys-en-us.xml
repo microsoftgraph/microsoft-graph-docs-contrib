@@ -38,7 +38,7 @@
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
   <Item text="Files" ProdTag="OneDrive" url="/en-us/concepts/onedrive-concept-overview" />
-  <Item text="Identity and access (Azure AD)" url="/en-us/concepts/azuread-identity-access-management-concept-overview" />
+  <Item text="Identity and access" ProdTag="Azure AD" url="/en-us/concepts/azuread-identity-access-management-concept-overview" />
   <Item text="Mail" ProdTag="Outlook" url="/en-us/concepts/outlook-mail-concept-overview" >
 	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
 	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
