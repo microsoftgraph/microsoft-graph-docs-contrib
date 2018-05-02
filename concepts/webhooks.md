@@ -39,7 +39,7 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type | Supported resource types in v1.0 |
 |:----------------|:---------------------------------|
-| Delegated - work or school account | [contact](../api-reference/v1.0/resources/contact.md), [conversation](../api-reference/v1.0/resources/conversation.md), [drive.md](../api-reference/v1.0/resources/drive), [event](../api-reference/v1.0/resources/event.md), [message](../api-reference/v1.0/resources/message.md) |
+| Delegated - work or school account | [contact](../api-reference/v1.0/resources/contact.md), [conversation](../api-reference/v1.0/resources/conversation.md), [drive](../api-reference/v1.0/resources/drive.md), [event](../api-reference/v1.0/resources/event.md), [message](../api-reference/v1.0/resources/message.md) |
 | Delegated - personal Microsoft account | None |
 | Application | [contact](../api-reference/v1.0/resources/contact.md), [conversation](../api-reference/v1.0/resources/conversation.md), [event](../api-reference/v1.0/resources/event.md), [message](../api-reference/v1.0/resources/message.md) |
 
