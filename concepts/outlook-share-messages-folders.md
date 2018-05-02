@@ -49,3 +49,10 @@ The same GET capabilities apply if Garth had delegated John further access to Ga
 
 If Garth has not shared his message folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error. 
 
+
+## Next steps
+
+Find out more about:
+
+- [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
+- [Using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.

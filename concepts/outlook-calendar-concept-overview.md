@@ -5,12 +5,18 @@ initiate online conversations, share files, and collaborate in groups.
 
 ## Why integrate with Outlook calendar?
 
-Work in progress. 
+Work in progress.
 
-Automate appointment organization and calendaring
+### Reach hundreds of millions of customers and build rich scenarios
 
-Close parity between the customer experience and automation
-- Flexibility to create separate calendars (e.g., personal and work calendars), at the user interface level, can overlay and view events in one or more calendars at the same time.
+Many millions of customers use Outlook calendar as part of an integrated communication hub to let them effectively communicate and get things done. They can set up meetings, manage emails, find information about contacts and other users, and initiate conversations or online meetings all in one place, be it on the web, mobile, or desktop. Microsoft Graph not only connects apps to the calendar, mail, and contacts data of these customers, it enables apps to [integrate with the best of Microsoft 365](overview-major-services.md) and support a wide range of scenarios that enhance productivity and collaboration.
+
+### Automate appointment organization and calendaring
+
+Customers like how Outlook lets them organize their time for work, family, and personal activities. Microsoft Graph REST API keeps close parity with the customer experience, letting apps create, manage, and respond to events just as naturally:
+
+- In Outlook, customers can create multiple calendars, organize them in calendar groups, or keep them separate for work, family, and so on. They can turn on the free **Birthdays** calendar to remind them of their contacts' birthdays, or the **Holiday** calendar of their local holidays. Customers can also add calendars that match their interests, and select from thousands of calendars for sport teams, TV programs, and other special events. 
+ at the user interface level, can overlay and view events in one or more calendars at the same time.
 - categories
 
 - calendar groups 
