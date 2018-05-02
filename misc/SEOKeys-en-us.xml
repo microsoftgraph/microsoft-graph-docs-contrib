@@ -82,7 +82,7 @@
     <Item text="Use query parameters" url="/en-us/concepts/query_parameters" SEOKeyword="Query parameters, Microsoft Graph API, Overview" SEODescription="Microsoft Graph is OData v4 compliant, provides information about supported OData query parameters" />
     <Item text="Batch requests" url="/en-us/concepts/json_batching" />
     <Item text="Throttling" url="/en-us/concepts/throttling" />
-    <Item text="Push notifications" url="" />
+    <Item text="Change notifications" url="/en-us/concepts/change-notifications" />
 	<Item text="Track changes" url="/en-us/concepts/delta_query_overview" >
     <Item text="Get changes to events (example)" url="/en-us/concepts/delta_query_events" />
     <Item text="Get changes to groups (example)" url="/en-us/concepts/delta_query_groups" />
@@ -94,6 +94,7 @@
     <Item text="Use schema extensions (example)" url="/en-us/concepts/extensibility_schema_groups" />
 	</Item>
 	<Item Label="RESOURCES" url="" />
+	<Item text="Best practices" url="/en-us/concepts/best-practices-concept" />
     <Item text="Known issues" url="/en-us/concepts/known_issues" SEODescription="Known issues with the Microsoft Graph API." />
 	<Item text="Changelog" url="/en-us/concepts/changelog" />
 	<Item text="Errors" url="/en-us/concepts/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
@@ -2009,7 +2010,7 @@
     <Item text="Sites" url="/en-us/api-reference/v1.0/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
       <Item text="Get site" url="/en-us/api-reference/v1.0/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />>
       <Item text="Get lists" url="/en-us/api-reference/v1.0/api/list_list" SEOKeyword="" SEODescription="" />>
-      <Item text="List subsites" url="/en-us/api-reference/v1.0/api/subsites_list" SEOKeyword="sharepoint, list subsites" SEODescription="" />
+      <Item text="List subsites" url="/en-us/api-reference/v1.0/api/site_list_subsites" SEOKeyword="sharepoint, list subsites" SEODescription="" />
     </Item>
     <Item text="Lists" url="/en-us/api-reference/v1.0/resources/list" SEOKeyword="" SEODescription="" >
       <Item text="Get list" url="/en-us/api-reference/v1.0/api/list_get" SEOKeyword="" SEODescription="" />>
@@ -2134,7 +2135,7 @@
 	  <Item text="List range" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
     </Item>
   </Item> 
-  <Item Label="UTILITIES" url="" />
+  <Item Label="TOOLS" url="" />
   <Item text="Open extensions" url="/en-us/api-reference/v1.0/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, extension API" SEODescription="">
     <Item text="Create open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
     <Item text="Get open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
@@ -2148,7 +2149,7 @@
       <Item text="Update schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
       <Item text="Delete schema extension" url="/en-us/api-reference/v1.0/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />
   </Item>
-   <Item text="Push notifications" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
+   <Item text="Change notifications" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
     <Item text="Subscription" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
       <Item text="Get subscription" url="/en-us/api-reference/v1.0/api/subscription_get" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
       <Item text="Create subscription" url="/en-us/api-reference/v1.0/api/subscription_post_subscriptions" />
@@ -5507,7 +5508,7 @@
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
         <Item text="Get lists" url="/en-us/api-reference/beta/api/lists_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
-        <Item text="List subsites" url="/en-us/api-reference/beta/api/subsites_list" SEOKeyword="sharepoint, list subsites" SEODescription="" />
+        <Item text="List subsites" url="/en-us/api-reference/beta/api/site_list_subsites" SEOKeyword="sharepoint, list subsites" SEODescription="" />
       </Item>
       <Item text="Lists" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint, list, lists, microsoft graph api, sharepoint list api">
         <Item text="Get list" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
@@ -5776,7 +5777,7 @@
 		<Item text="List range" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
       </Item>
     </Item>
-	<Item Label="UTILITIES" url="" />
+	<Item Label="TOOLS" url="" />
 	<Item text="Open extensions" url="/en-us/api-reference/beta/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, open extension API, open extensions" SEODescription="API to add custom data to resources in Microsoft Graph.">
       <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create an open extension, Microsoft Graph API" SEODescription="Create an open extension." />
       <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API" SEODescription="Retrieve the properties and relationships of an open extension." />
@@ -5790,7 +5791,7 @@
       <Item text="Update schema extension" url="/en-us/api-reference/beta/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
       <Item text="Delete schema extension" url="/en-us/api-reference/beta/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />
     </Item>  
-    <Item text="Push notifications" url="/en-us/api-reference/beta/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
+    <Item text="Change notifications" url="/en-us/api-reference/beta/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
       <Item text="Subscription" url="/en-us/api-reference/beta/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
         <Item text="Get subscription" url="/en-us/api-reference/beta/api/subscription_get" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
         <Item text="Create subscription" url="/en-us/api-reference/beta/api/subscription_post_subscriptions" />
