@@ -74,29 +74,14 @@ You can:
 
 Take advantage of the following common capabilities that are shared among Microsoft Graph entities:
 
-- Subscribe to [push notifications](../api-reference/v1.0/resources/webhooks.md) on messages when one or more types of changes occur, such as message creation or update.
+- Subscribe to [change notifications](../api-reference/v1.0/resources/webhooks.md) on messages when one or more types of changes occur, such as message creation or update.
 - [Track these incremental changes to messages in a folder](delta_query_messages.md).
 - Create [open extensions](extensibility_overview.md#open-extensions) or [schema extensions](extensibility_overview.md#schema-extensions) to add custom data to a message instance.
 - Create [extended properties](../api-reference/v1.0/resources/extended-properties-overview.md) in a message instance to store custom data for Outlook MAPI properties, when these properties are not already exposed in the Microsoft Graph API metadata.
 
-<!-- Notes for self, will be removed as more topics get built out
+## Next steps
 
-Attachments
-To get a message together with all its attachments (GET /messages/AAMkAGE1Mbs88AADUv0uFAAA=/?$expand=attachments)
-Use $select to GET only specific properties in each attachment, otherwise all the properties would be returned
-Can also expand to get the properties of the item that is attached to the message (https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/attachment_get#request-2)
-(GET /messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item )
+Find out more about:
 
-fileAttachment - A file (such as a text file or Word document) attached to a message, event, or task. The ContentBytes property 
-contains the base64-encoded contents of the file.
-itemattachment - A message, contact, or event that's attached to another message, event, or task
-
-referenceAttachment - A link to a file or folder, attached to a message, event, or task. Possible locations for the file or folder 
-includes OneDrive, OneDrive for Business, and DropBox.
-
-
-
-Mailbox
-GET at mailbox level (query parameters)
-mailboxsettings
--->
+- [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
+- [Using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
