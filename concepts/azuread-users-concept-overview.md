@@ -1,12 +1,12 @@
 # Overview of users in Microsoft Graph
 
-Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The `user` resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users.
+Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users.
 
 ![Diagram showing a user connected to calendar, email, contacts, meetings, tasks, sites, and documents](images/users.png)
 
 ## Develop user-centric applications
 
-You can use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user. The `user` resource provides straightforward way for you to access and manipulate user resources without having to perform additional calls, look up specific authentication information, and directly issue queries against other Microsoft Graph resources.
+You can use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user. The **user** resource provides straightforward way for you to access and manipulate user resources without having to perform additional calls, look up specific authentication information, and directly issue queries against other Microsoft Graph resources.
 
 To access a user's information and data, you'll need to [get access on their behalf](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Authenticating your application with [admin consent](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) enables you to work with and update a wider range of entities associated with a user.
 
@@ -47,7 +47,7 @@ Maximize relevance in your application by promoting recently used or trending do
 ## Next steps
 
 - Learn more about how to [work with users](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users).
-- Explore your own data from the `user` resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Explore your own data from the **user** resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Authenticate with Microsoft Graph [on behalf of a user](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user) or [as a daemon or service by consent of an administator](https://developer.microsoft.com/graph/docs/concepts/auth_v2_service).
 - Set access control and policies for users with the [Azure AD API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/azure_ad_overview).
 - Review the [permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) your app will need to access user data. 
