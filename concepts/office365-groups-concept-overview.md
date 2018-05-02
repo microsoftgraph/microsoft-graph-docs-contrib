@@ -51,8 +51,3 @@ As the number of groups created within an organization begins to grow, Microsoft
 
 - Try out some sample API requests in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer). 
 - Learn more about how to [use the groups API](../api-reference/v1.0/resources/groups-overview.md) in Microsoft Graph.
-<!-- These links go to other content/technologies; not sure that they are relevant next steps for working with groups.
-- Learn how to build and publish your app to make it available in [Microsoft Teams](https://dev.office.com/teams).
-- Research how your app can be integrated with [SharePoint](https://developer.microsoft.com/en-us/sharepoint) for document collaboration.  
-- Look at how [Office 365 Connectors](https://docs.microsoft.com/en-us/outlook/actionable-messages/) can be used to extend group functionality in Outlook. 
--->
