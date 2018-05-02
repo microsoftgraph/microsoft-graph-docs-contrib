@@ -1,21 +1,21 @@
 # Best practices for working with Microsoft Graph
 
-This topic describes a series of best practices that can help your applications get the best out of Microsoft Graph - whether that's through best ways to learn about using Microsoft Graph, performance improvements, or making your application more reliable for end-users.
+This topic describes a series of best practices that can help your applications get the best out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end-users.
 
 ## Using Graph Explorer to get to know the API
 
-The easiest and best way to start exploring and navigating the data available through Microsoft Graph is by using [Microsoft Graph Explorer](https://aka.ms/ge). Microsoft Graph Explorer lets you craft REST requests (with full CRUD support), adapt the HTTP request headers, and see the data responses. To help you get started, Graph Explorer also provides a set of sample queries.
+The easiest and best way to start exploring the data available through Microsoft Graph is by using [Graph Explorer](https://aka.ms/ge).  Graph Explorer lets you craft REST requests (with full CRUD support), adapt the HTTP request headers, and see the data responses. To help you get started, Graph Explorer also provides a set of sample queries.
 
-> Experiment with new APIs before integrating them into your application.
+Experiment with new APIs before integrating them into your application.
 
 ## Authentication
 
-To access the data in Microsoft Graph your application will need to acquire an OAuth 2.0 access token, and present it to Microsoft Graph:
+To access the data in Microsoft Graph, your application will need to acquire an OAuth 2.0 access token, and present it to Microsoft Graph in either of the following:
 
-- in the HTTP *Authorization* request header, as a *Bearer* token, or
-- in the graph client constructor when using a Microsoft Graph client library
+- The HTTP *Authorization* request header, as a *Bearer* token
+- The graph client constructor, when using a Microsoft Graph client library
 
-> Use the Microsoft Authentication Library API, [MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries) to acquire the access token to Microsoft Graph.
+Use the Microsoft Authentication Library API, [MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries) to acquire the access token to Microsoft Graph.
 
 ## Consent and authorization
 
