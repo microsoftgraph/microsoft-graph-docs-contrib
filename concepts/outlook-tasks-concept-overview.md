@@ -37,7 +37,7 @@ As your organization starts new projects or takes on new clients, use Microsoft 
 
 Use Microsoft Graph Outlook tasks API to capture information about the current state of all Outlook tasks that your application has permission to read. You can create reports in any report generation application that can be extended to connect to Microsoft Graph. Use the [OutlookTask](../api-reference/beta/resources/outlooktask.md) resource to get progress information about each task.
 
-## Relationship of Outlook To-do tasks with Tasks and To-Do apps
+## Tasks in Outlook To-do tasks, Tasks, and To-Do apps
 
 When your app creates a task with the Microsoft Graph API, it is available to the assigned user through the **Outlook** client tasks tab. The [Microsoft Office 365 Portal](https://www.office.com/) apps that give a user access to tasks created in Outlook include
  [Outlook](https://outlook.office365.com), [tasks](https://outlook.office365.com/owa/?realm=microsoft.com&modurl=3&exsvurl=1&ll-cc=1033&path=/tasks), and [To-Do](https://to-do.microsoft.com). Outlook, Tasks, and To-do access the same tasks but provide different features.
