@@ -10,6 +10,9 @@ By integrating your apps with Outlook tasks, you can create empowering experienc
 
 If your line-of-business application generates the work flow that directs users in their work, you can extend the application to create a task for each stage of the workflow and assign the task to a user along with task details, start dates, expected work effort, priority, associated customers, and recurrence. The new task appears in the assigned user's task list. 
 
+
+**Figure 1: Outlook client. Task pane with open task**
+
 ![Outlook Task pane view](images/OutlookTasks.png)
 
 ### Automate task updates
