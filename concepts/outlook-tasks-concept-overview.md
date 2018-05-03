@@ -35,7 +35,7 @@ As your organization starts new projects or takes on new clients, use Microsoft 
 
 ### Report on task progress across your organization
 
-Use Microsoft Graph Outlook tasks API to capture information about the current state of all Outlook tasks that your application has permission to read. You can create reports in any report generation application that can be extended to connect to Microsoft Graph. Use the [OutlookTask](../api-reference/beta/resources/outlooktask.md) resource to get progress information about each task.
+Use Microsoft Graph Outlook tasks API to capture information about the current state of all Outlook tasks that your application has permission to read. You can create reports in any report generation application that can be extended to connect to Microsoft Graph. Use the [outlookTask](../api-reference/beta/resources/outlooktask.md) resource to get progress information about each task.
 
 ## Tasks in Outlook To-do tasks, Tasks, and To-Do apps
 
