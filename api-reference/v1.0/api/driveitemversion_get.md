@@ -1,9 +1,3 @@
----
-author: rgregg
-ms.author: rgregg
-ms.date: 09/10/2017
-title: Get a previous version
----
 # Get a DriveItemVersion resource
 
 Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).
