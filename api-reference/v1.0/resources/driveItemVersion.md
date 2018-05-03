@@ -1,9 +1,3 @@
----
-author: rgregg
-ms.author: rgregg
-ms.date: 09/17/2017
-title: DriveItemVersion
----
 # DriveItemVersion resource type
 
 The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).
