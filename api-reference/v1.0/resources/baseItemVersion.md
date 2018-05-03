@@ -1,9 +1,3 @@
----
-author: rgregg
-ms.author: rgregg
-ms.date: 09/17/2017
-title: BaseItemVersion
----
 # BaseItemVersion resource type
 
 The **baseItemVersion** resource represents a previous version of an item or entity.
