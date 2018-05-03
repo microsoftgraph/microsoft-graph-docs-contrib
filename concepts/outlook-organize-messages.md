@@ -53,9 +53,9 @@ Programmatically, you can update the **inferenceClassification** property of a [
 
 ## Keeping messages and mail folders up to date in apps
 
-Apps often have to synchronize and keep a user's mail data up-to-date in the app local store. Microsoft Graph lets you subscribe to push notifications to get notified when data changes, and query for actual changes as soon as they happen.
+Apps often have to synchronize and keep a user's mail data up-to-date in the app local store. Microsoft Graph lets you subscribe to change notifications to get notified when data changes, and query for actual changes as soon as they happen.
 
-Notifications are delivered via [webhooks](../api-reference/v1.0/resources/webhooks.md) asynchronously when the changes happen, saving apps the overhead to poll frequently. You can [subscribe to push notifications](../api-reference/v1.0/api/subscription_post_subscriptions.md) about additions, 
+Notifications are delivered via [webhooks](../api-reference/v1.0/resources/webhooks.md) asynchronously when the changes happen, saving apps the overhead to poll frequently. You can [subscribe to change notifications](../api-reference/v1.0/api/subscription_post_subscriptions.md) about additions, 
 updates, or deletions to a user's mail data. For example, you can create a subscription to messages in a specific folder (i.e., `/me/mailFolders('{folderId'}')`),
 or at the root level (i.e., `/me/messages`). The subscription specifies a **notificationUrl** where Microsoft Graph notifies the app when the requested types of changes happen.
 
@@ -64,3 +64,9 @@ To initially synchronize a user's mailbox, first do [delta query for mail folder
 To find the exact entities that have been changed without reading the entire resource with every notification, you can use [delta query](delta_query_overview.md) to track those changes that matter to you, and synchronize your local store with those changes. You can [track changes to messages in a specific folder](delta_query_messages.md). You can also track changes to mail folders at the root level (i.e., `/me/mailfolders`). 
 
 
+## Next steps
+
+Find out more about:
+
+- [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
+- [Using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
