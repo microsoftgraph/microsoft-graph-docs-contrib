@@ -12,7 +12,7 @@ Microsoft Teams apps built on Microsoft Graph give work groups a new tool to mak
 
 Websites, services, and native platform applications are not run within the Microsoft Teams user experience but can be used to call the Microsoft Teams APIs that enable Microsoft Teams automation scenarios.
 
-Types of apps enabled for Microsoft Teams
+**Types of apps enabled for Microsoft Teams**
 
 ![Call the Microsoft Teams API from tabs, bots, websites, and services](images/TeamsAppEndpoints.png)
 
