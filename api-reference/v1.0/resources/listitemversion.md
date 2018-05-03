@@ -1,9 +1,3 @@
----
-author: rgregg
-ms.author: rgregg
-ms.date: 09/17/2017
-title: ListItemVersion
----
 # ListItemVersion resource type
 
 The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.
