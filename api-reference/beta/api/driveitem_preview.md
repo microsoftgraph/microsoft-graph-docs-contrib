@@ -1,9 +1,3 @@
----
-author: kevinlam
-ms.author: kevinlam
-ms.date: 2/23/2018
-title: Get short-lived embeddable link for preview purposes - OneDrive API
----
 # Embeddable file previews
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
