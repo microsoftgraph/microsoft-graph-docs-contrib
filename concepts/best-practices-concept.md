@@ -1,12 +1,12 @@
 # Best practices for working with Microsoft Graph
 
-This topic describes a series of best practices that can help your applications get the best out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end-users.
+This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users.
 
-## Using Graph Explorer to get to know the API
+## Use Graph Explorer to get to know the API
 
-The easiest and best way to start exploring the data available through Microsoft Graph is by using [Graph Explorer](https://aka.ms/ge).  Graph Explorer lets you craft REST requests (with full CRUD support), adapt the HTTP request headers, and see the data responses. To help you get started, Graph Explorer also provides a set of sample queries.
+The easiest way to start exploring the data available through Microsoft Graph is to use [Graph Explorer](https://aka.ms/ge). Graph Explorer lets you craft REST requests (with full CRUD support), adapt the HTTP request headers, and see the data responses. To help you get started, Graph Explorer also provides a set of sample queries.
 
-Experiment with new APIs before integrating them into your application.
+Experiment with new APIs before you integrate them into your application.
 
 ## Authentication
 
@@ -19,17 +19,19 @@ Use the Microsoft Authentication Library API, [MSAL](https://docs.microsoft.com/
 
 ## Consent and authorization
 
-1. **Use least privilege**: Only request permissions which are absolutely necessary, and only when you need them. For the APIs your application calls, check the permissions section in each of the associated resource method topics (for example, see [creating a user](../api-reference/v1.0/api/user_post_users.md), and choose the least privileged permissions.
+Apply the following best practices for consent and authorization in your app:
 
-2. **Use the correct permission type based on scenarios**: If you are building an interactive application where a signed in user is present, your application should use *delegated* permissions, where application is delegated permission to act as the signed-in user when making calls to Microsoft Graph. If however your application runs without a signed-in user, such as a background service or daemon, your application should use application permissions.
+- **Use least privilege**. Only request permissions that are absolutely necessary, and only when you need them. For the APIs your application calls, check the permissions section in the method topics (for example, see [creating a user](../api-reference/v1.0/api/user_post_users.md), and choose the least privileged permissions. For a full list of permissions, see [permissions reference](permissions_reference.md).
 
-    > Using application permissions for interactive scenarios can put your application at compliance and security risk. It may inadvertantly elevate a user's privileges to access data, circumnavigating policies configured by an administrator.
+- **Use the correct permission type based on scenarios**. If you're building an interactive application where a signed in user is present, your application should use *delegated* permissions, where the application is delegated permission to act as the signed-in user when making calls to Microsoft Graph. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use application permissions.
 
-3. **Be thoughtful when configuring your app**: This will directly affect end user and admin experiences, along with application adoption and security. For example:
+    >**Note:** Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertantly elevate a user's privileges to access data, circumnavigating policies configured by an administrator.
+<!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
+- **Be thoughtful when configuring your app**. This will directly affect end user and admin experiences, along with application adoption and security. For example:
 
     - Your application's privacy statement, terms of use, name, logo and domain will show up in consent and other experiences - so make sure to configure these carefully so they are understood by your end-users.
-    - Consider who will be consenting to your application - either end-users or administrators and configure your application to [request permissions appropriately](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes).
-    - Ensure you understand the difference between [static, dynamic and incremental consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+    - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes).
+    - Ensure that you understand the difference between [static, dynamic and incremental consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
 
 4. **Considerations for multi-tenant applications**: Expect customers to have various application and consent controls in different states. For example:
 
