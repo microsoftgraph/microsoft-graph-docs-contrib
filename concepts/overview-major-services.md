@@ -118,6 +118,6 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 -->
 
 - See [examples](https://developer.microsoft.com/en-us/graph/examples) of creative solutions built on top of services in Microsoft Graph that solve real customer problems.
-- Look under **Learn** in the table of contents to read about services and features that _you_ can leverage in your scenarios.
+- Look under **Learn** in the table of contents to read about services and features that _you_ can use in your scenarios.
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick starts](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
