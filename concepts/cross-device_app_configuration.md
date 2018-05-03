@@ -1,12 +1,12 @@
 # Delight users with cross-device apps, powered by Project Rome 
 
-Project Rome aims to help developers build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. In order for applications to share data across devices & platforms using Project Rome APIs an app developer can configure a cross-device app which includes information about your platform-specific apps. 
+Project Rome aims to help developers build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. In order for applications to share data across devices & platforms using Project Rome APIs an app developer can **configure a cross-device app which includes information about your platform-specific apps.** Let's learn why and how you should configure a cross-device app.  
 
 A cross-device app is required to take advantage of the following capabilities powered by Project Rome: 
 
-	1. Use the activity feed API on MSGraph  
-	2. Read & write user activities published by a group of platform-specific applications using the Project Rome SDK for Windows, Android, and/or iOS
-	3. Use the device relay capabilities to target apps using the Project Rome SDK for Android or iOS 
+1. Use the activity feed API on MSGraph  
+2. Read & write user activities published by a group of platform-specific applications using the Project Rome SDK for Windows, Android, and/or iOS
+3. Use the device relay capabilities to target apps using the Project Rome SDK for Android or iOS 
 
 Here are some examples of scenarios which can be enabled through Project Rome APIs with a cross-device app: 
 
@@ -25,37 +25,37 @@ For example, an app developer may configure a cross-device app with push notific
 By associating push notification credentials for each of the platforms where your app is available to your cross-device app, the user's app can send commands across devices so you can build experiences that leverage multiple screens or transition a workflow from one device to another in real-time. 
 
 # Select the right hosting method for your cross-device app configuration
-You can host your cross-device app configuration either as a JSON file hosted on your domain or as a profile configurable via Windows Dev Center. You should choose a hosting option based on the Project Rome capabilities you want to enable in your apps. 
+You can host your cross-device app configuration either as a JSON file hosted on your domain or as a profile configurable via [Windows Dev Center](https://developer.microsoft.com/en-us/windows). You should choose a hosting option based on the Project Rome capabilities you want to enable in your apps. 
 
-## Windows Dev Center profile - Recommended 
-You can use all Project Rome capabilities using a cross-device app managed in Windows Dev Center. The Windows Dev Center also offers the best way to manage any cross-device app configuration changes. You can save updates to an existing profile securely until you're ready to publish changes to production. When you publish changes to an existing cross-device app in the Dev Center the new profile will be effective after approximately one hour.
+## Windows Dev Center profile - *Recommended* 
+You can use all Project Rome capabilities using a cross-device app managed in [Windows Dev Center](https://developer.microsoft.com/en-us/windows). The Windows Dev Center also offers the *best* way to manage any cross-device app configuration changes. You can save updates to an existing profile securely until you're ready to publish changes to production. When you publish changes to an existing cross-device app in the Dev Center the new profile will be effective after approximately **one hour**.
 
-## Externally hosted JSON file - Limited
+## Externally hosted JSON file - *Limited*
 You can use the following Project Rome capabilities on all supported platforms using a cross-device app managed as an externally hosted JSON file:   
-* Read & write user activities from all platforms using the MSGraph Activity Feed API
+* Read & write user activities from all platforms using the MSGraph [Activity Feed API](../api-reference/v1.0/resources/activity-feed-api-overview.md)
 * Write user activities from all platforms (Windows, iOS, Android, web) using either the Project Rome SDK
-If you will only use the capabilities outlined above, you can host your cross-device app configuration externally on your domain as a JSON file. 
+If you will **only** use the capabilities outlined above, you can host your cross-device app configuration externally on your domain as a JSON file. 
 
 Once you've determined the method you'll use to manage your cross-device app, you're ready to get started collecting the information you'll need to configure it. 
 
-# Configure a cross-device app using Windows Dev Center
+## Configure a cross-device app using Windows Dev Center
 A cross-device app ID is represented as a domain which you own. The domain points to a mapping of your platform-specific app IDs stored either as a JSON file hosted on your domain or configurable via Windows Dev Center. Once you've identified the domain you'll use to represent your cross-device app ID, you'll need to collect information to configure the associated profile. Let's review how to configure and manage a cross-device app ID and associated profile.  
 
 ### Step 1: Select a secure domain for your cross-device app ID and enable domain verification
-A cross-device app ID is represented as a domain which you own. The domain used as your cross-device app ID must either be a top level domain or a sub domain and be protected via TLS. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique domain (or sub domain) per cross-device app. However, you decide which apps to associate into a single cross-device app based on the cross-platform behavior you want to support. 
+A cross-device app ID is represented as a domain which you own. The domain used as your cross-device app ID must either be a top level domain or a sub domain and be protected via TLS. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. **You must have a unique domain (or sub domain) per cross-device app.** However, you decide which apps to associate into a single cross-device app based on the cross-platform behavior you want to support. 
 
-For example, an app developer with a suite of game apps may use a separate sub-domain for each of these to ensure each app is only subscribed to the user activities it can resume when reading data across devices & platforms. By contrast, an app developer with a suite of productivity apps designed to work together may use a single domain for all of these so that any app is able to launch a member of the suite across devices.  
+For example, an app developer with a suite of game apps may use a separate sub-domain for each of these to ensure each app is only subscribed to the user activities it can resume when reading data across devices & platforms. *By contrast*, an app developer with a suite of productivity apps designed to work together may use a single domain for all of these so that any app is able to launch a member of the suite across devices.  
 
-#Assert domain ownership with Windows Dev Center#
-When using Windows Dev Center to manage your cross-device app configuration, the domain representing your cross-device app ID is stored as part of your cross-device app profile so Microsoft can verify you are the domain owner. Your domain ownership must be verified in order to finish publishing your cross-device app configuration so it's a good idea to tackle this first. If your domain is not yet verified, you can save your cross-device app details and rerun the verification once you’ve completed this step so you can complete the publish process.
+**Assert domain ownership with Windows Dev Center**
+When using Windows Dev Center to manage your cross-device app configuration, the domain representing your cross-device app ID is stored as part of your cross-device app profile so Microsoft can verify you are the domain owner. Your domain ownership **must be verified** in order to finish publishing your cross-device app configuration so it's a good idea to tackle this first. If your domain is not yet verified, you can save your cross-device app details and rerun the verification once you’ve completed this step so you can publish your cross-device app.
 
-To assert your domain ownership for your cross-device app, you'll need to add a DNS TXT entry for your domain with a unique value provided to you in the Dev Center. This value is unique per cross-device app. To find the unique value for your app, simply login to Windows Dev Center and choose Cross-device experiences from the menu at left to start configuring a new cross-device app. Once you've given your new cross-device app a name, select Verify your cross-device app domain from the sub-menu. This page will display instructions with a unique value inline (e.g. MS=95ff4557-813f-45a5-b2f6-1f94170b979f). Make sure to copy the entire value including 'MS='
+To assert your domain ownership for your cross-device app, you'll need to add a [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) entry for your domain with a unique value provided to you in the Dev Center. This value is unique per cross-device app. To find the unique value for your app, simply login to Windows Dev Center and choose **Cross-device experiences** from the menu at left to start configuring a new cross-device app. Once you've given your new cross-device app a name, select **Verify your cross-device app domain** from the sub-menu. This page will display instructions with a unique value **inline** (*e.g. MS=95ff4557-813f-45a5-b2f6-1f94170b979f*). Make sure to copy the entire value including 'MS='
 
 ### Step 2: Collect your platform-specific application IDs
-Collect the platform-specific application IDs for each application and platform which will use the Activity Feed and/or Device Relay API. 
-You'll need to collect each of the platform specific application IDs in order to associate them to your cross-device app identity. Using Windows Dev Center, you'll be able to select from Windows universal apps associated to your developer account, but you'll need to manually provide application ids for any of your win32 apps and/or apps available on iOS & Android and identify the primary URL for your web applications. If you're using an externally hosted JSON file you'll assemble these identifiers into the specified format outlined below. You can associate up to 10 ids per platform. 
+Collect the platform-specific application IDs for each application and platform which will use the [Activity Feed](../api-reference/v1.0/resources/activity-feed-api-overview.md) and/or [Device Relay API](../api-reference/v1.0/resources/device-relay-api-overview.md). 
+You'll need to collect each of the platform-specific application IDs in order to associate them to your cross-device app identity. Using Windows Dev Center, you'll be able to select from *Windows universal* apps associated to your developer account, but you'll need to manually provide application ids for any of your win32, iOS and/or Android apps and identify the primary URL for any associated web apps. You can associate up to 10 ids per platform. 
 
-#*Where do I find these ids?*#
+***Where do I find these ids?***
 windows_universal - Please provide an AUMID. You can refer to documentation here: 
 	• https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82) 
 	• https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application
