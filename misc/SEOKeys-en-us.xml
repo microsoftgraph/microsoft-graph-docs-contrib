@@ -403,7 +403,7 @@
 			</Item>
 		</Item>
 	</Item>
-   <Item text="Devices and apps" PordTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
+   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
       <Item text="App management" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
         <Item text="All devices assignment target" url="/en-us/api-reference/v1.0/resources/intune_apps_alldevicesassignmenttarget"/>
         <Item text="All licensed users assignment target" url="/en-us/api-reference/v1.0/resources/intune_books_alllicensedusersassignmenttarget"/>
