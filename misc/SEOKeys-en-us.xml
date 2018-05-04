@@ -2301,7 +2301,7 @@
       <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
       <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
     </Item>
-	  <Item text="Calendar" url="/en-us/api-reference/beta/resources/calendarkev" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
+	  <Item text="Calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create event" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
         <Item text="Get event" url="/en-us/api-reference/beta/api/group_get_event" />
