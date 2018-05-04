@@ -129,7 +129,7 @@ JSON batching allows you to optimize your application by combining multiple requ
 Use [batching](json_batching.md) where significant network latency can have a big impact on the performance.
 
 ## Reliability and support
-To ensure the reliability and facilitate support for your application:
+To ensure reliability and facilitate support for your application:
 
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
