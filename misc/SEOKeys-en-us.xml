@@ -45,18 +45,18 @@
 	  <Item text="Share message folders" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
-    <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
+    <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
+	<Item text="Branding guidelines" url="/en-us/concepts/onenote-branding" />
 	<Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />   
+	<Item text="Use note tags" url="/en-us/concepts/onenote-note-tags" />
+	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
+  <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
 	<Item text="Create pages" url="/en-us/concepts/onenote-create-page" />
 	<Item text="Update page content" url="/en-us/concepts/onenote_update_page" />
-	<Item text="Add images, videos, and files" url="/en-us/concepts/onenote_images_files" />
 	<Item text="Create absolute positioned elements" url="/en-us/concepts/onenote-abs-pos" />
+	<Item text="Add images, videos, and files" url="/en-us/concepts/onenote_images_files" />
 	<Item text="Extract data" url="/en-us/concepts/onenote-extract-data" />
-	<Item text="Use note tags" url="/en-us/concepts/onenote-note-tags" />
 	<Item text="Input and output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
-	<Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
-	<Item text="Branding guidelines" url="/en-us/concepts/onenote-branding" />
-	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
   </Item>
   <Item text="Personal contacts" ProdtTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
