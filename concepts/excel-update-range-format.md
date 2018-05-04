@@ -1,6 +1,5 @@
 # Update a range format in Excel with Microsoft Graph
 
-
 The following examples demonstrate how to update properties of the [RangeFormat](../api-reference/v1.0/resources/rangeformat.md), [RangeFill](../api-reference/v1.0/resources/rangefill.md), and [RangeFont](../api-reference/v1.0/resources/rangefont.md) properties of a specified range.
 
 The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
@@ -8,7 +7,7 @@ The result of this set of requests is a table with three cells formatted like th
 ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
 ##### Request
-This request updates the vertical alignment, row height, and column height of the first cell. 
+This request updates the vertical alignment, row height, and column height of the first cell.
 
 <!-- {
   "blockType": "request",
@@ -46,7 +45,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style, size, and color of the first cell. 
+This request updates the font style, size, and color of the first cell.
 
 <!-- {
   "blockType": "request",
@@ -84,7 +83,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the first cell. 
+This request updates the background color of the first cell.
 
 <!-- {
   "blockType": "request",
@@ -114,7 +113,7 @@ Content-type: application/json
 }
 ```
 ##### Request
-This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell. 
+This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.
 
 <!-- {
   "blockType": "request",
@@ -153,7 +152,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style and size of the second cell. 
+This request updates the font style and size of the second cell.
 
 <!-- {
   "blockType": "request",
@@ -190,7 +189,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the second cell. 
+This request updates the background color of the second cell.
 
 <!-- {
   "blockType": "request",
@@ -221,7 +220,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell. 
+This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.
 
 <!-- {
   "blockType": "request",
@@ -298,7 +297,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the third cell. 
+This request updates the background color of the third cell.
 
 <!-- {
   "blockType": "request",
@@ -327,3 +326,11 @@ Content-type: application/json
     "color": "#0000FF"
 }
 ```
+
+
+## See also
+* [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
+* [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
+* [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
+* [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
+* [Use the Excel REST API](../api-reference/v1.0/resources/excel.md)
