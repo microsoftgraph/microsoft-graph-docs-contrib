@@ -30,20 +30,34 @@ The following are some of the most popular requests for working with OneNote res
 |GET my sections|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
 |GET my pages|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
 
+## Learn more about OneNote APIs
+
+Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content updating capabilities. The topics in the following list show you how to create new OneNote pages and update existing pages with new content. You'll also learn about best practices in using Microsoft Graph to update OneNote notebooks. 
+
+
+**Work with OneNote**
+
+* [Use the OneNote REST API](../api-reference/v1.0/resources/onenote-api-overview.md)
+* [Best practices](onenote_best_practices.md)
+* [Branding guidelines](onenote-branding.md)
+* [Use note tags in OneNote pages](onenote-note-tags.md)
+* [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md)
+
+**Work with OneNote pages**
+* [Get OneNote content and structure with Microsoft Graph](onenote-get-content.md)
+* [Create OneNote pages](onenote-create-page.md)
+* [Update OneNote page content](onenote_update_page.md)
+
+**Work with OneNote page content**
+* [Create absolute positioned elements in OneNote pages](onenote-abs-pos.md)
+* [Add images, videos, and files to OneNote pages](onenote_images_files.md)
+* [Use OneNote API div tags to extract data from captures](onenote-extract-data.md)
+* [Input and output HTML in OneNote pages](onenote_input_output_html.md)
+
+
 ## Explore the OneNote APIs
 Use the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the OneNote APIs with your own OneNote notebooks.
 
 To make OneNote API calls from the Graph Explorer, choose **Show more samples** in the column on the left. Use the menu to toggle OneNote **On**. You will also need to enable the appropriate permissions. Under your account name in the menu on the left, choose **modify permissions**. For more information about OneNote permissions, see [Notes permissions](permissions_reference.md#notes-permissions).
 
 To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](../api-reference/v1.0/resources/onenote.md).
-
-## Next steps
-
-* [Branding guidelines](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
-* [Get OneNote content and structure](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-* [Add images, videos, and files](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)
-* [Create absolute positioned elements](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
-* [Extract data](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
-* [Use note tags](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
-* [Use the OneNote REST API](../api-reference/v1.0/resources/onenote-api-overview.md)
-
