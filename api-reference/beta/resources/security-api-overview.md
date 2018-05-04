@@ -8,7 +8,7 @@ The security API in Microsoft Graph makes it easy to connect with and extend Int
 
 ## Why connect to the Intelligent Security Graph?
 
-The security API provides a unified gateway to connect to security solutions from Microsoft and partners. Queries are federated to all security providers in Microsoft Graph and responses are aggregated. Use the security API to: 
+The security API provides a unified gateway to connect to security solutions from Microsoft and partners. Queries are federated to all security providers in Microsoft Graph and responses are aggregated.
 
 ### Unify and standardize alert management
 
