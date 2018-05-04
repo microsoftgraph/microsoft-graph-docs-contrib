@@ -5029,9 +5029,18 @@
           <Item text="Delete application" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="Delete application, Microsoft Graph API, application API" SEODescription="Delete application." />
           <Item text="List owners" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="List owners, Microsoft Graph API, application API" SEODescription="Retrieve a list of directoryobject objects." />
           <Item text="Assign owner" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Create owner, Microsoft Graph API, application API" SEODescription="Use this API to create a new owner." />
-          <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />
-                    
+          <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />           
         </Item>
+		<Item text="Audit logs">
+			<Item text="Directory audit" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit object, Microsoft Graph API, Azure AD, audit logs" SEODescription="">
+			<Item text="List directory audits" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a list of directoryAudit objects."/>
+			<Item text="Get directory audit" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a directoryAudit object."/>
+			</Item>
+			<Item text="Sign-in" url="/en-us/api-reference/beta/resources/signin" >
+			<Item text="List sign-ins" url="/en-us/api-reference/beta/api/signin_list" />
+			<Item text="Get sign-in" url="/en-us/api-reference/beta/api/signin_get" />
+			</Item>
+		</Item>
       <Item text="Contracts" url="/en-us/api-reference/beta/resources/contract" >
         <Item text="Get contract" url="/en-us/api-reference/beta/api/contract_get" />
         <Item text="List contracts" url="/en-us/api-reference/beta/api/contract_list" />
@@ -5820,5 +5829,4 @@
         <Item text="Delete subscription" url="/en-us/api-reference/beta/api/subscription_delete" />
       </Item>
     </Item>
-  </Item>
 </Menu>
