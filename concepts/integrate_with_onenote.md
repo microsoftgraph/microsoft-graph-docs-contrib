@@ -44,11 +44,13 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 * [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md)
 
 **Work with OneNote pages**
+
 * [Get OneNote content and structure with Microsoft Graph](onenote-get-content.md)
 * [Create OneNote pages](onenote-create-page.md)
 * [Update OneNote page content](onenote_update_page.md)
 
 **Work with OneNote page content**
+
 * [Create absolute positioned elements in OneNote pages](onenote-abs-pos.md)
 * [Add images, videos, and files to OneNote pages](onenote_images_files.md)
 * [Use OneNote API div tags to extract data from captures](onenote-extract-data.md)
