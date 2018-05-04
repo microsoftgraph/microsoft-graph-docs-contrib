@@ -33,14 +33,14 @@ Apply the following best practices for consent and authorization in your app:
     - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes).
     - Ensure that you understand the difference between [static, dynamic and incremental consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
 
-4. **Considerations for multi-tenant applications**: Expect customers to have various application and consent controls in different states. For example:
+- **Consider multi-tenant applications**. Expect customers to have various application and consent controls in different states. For example:
 
-    - Tenant administrators can disable the ability for end-users to consent to applications. In this case, an administrator would need to consent on behalf of their users.
+    - Tenant administrators can disable the ability for end users to consent to applications. In this case, an administrator would need to consent on behalf of their users.
     - Tenant administrators can set custom authorization policies such as blocking users from reading other user's profiles, or limiting self-service group creation to a limited set of users. In this case, your application should expect to handle 403 error response when acting on behalf of a user.
 
 ## Handle responses effectively
 
-Depending on the requests you make to Microsoft Graph your applications should be prepared to handle different types of responses. We highlight some of the most important ones here to ensure that your application behaves reliably and predictably for your end-users.
+Depending on the requests you make to Microsoft Graph, your applications should be prepared to handle different types of responses. The following are some of the most important practices to follow to ensure that your application behaves reliably and predictably for your end users.
 
 ### Pagination
 
@@ -58,43 +58,43 @@ Would return a response containing an `@odata.nextLink` property, if the result 
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$skip=23"
 ```
 
-> Your application should **always** handle the possibility that the responses are paged in nature, and use the `@odata.nextLink` property to obtain the next paged set of results, until all pages of the result set have been read. The final page will not contain an `@odata.nextLink` property. You should include the entire URL in the `@odata:nextLink` property in your request for the next page of results, treating the entire URL as an opaque string.
+>**Note:** Your application should **always** handle the possibility that the responses are paged in nature, and use the `@odata.nextLink` property to obtain the next paged set of results, until all pages of the result set have been read. The final page will not contain an `@odata.nextLink` property. You should include the entire URL in the `@odata:nextLink` property in your request for the next page of results, treating the entire URL as an opaque string.
 
-Further in-depth details can be found in the [paging](paging.md) conceptual topic.
+For more details, see [paging](paging.md).
 
 ### Handling expected errors
 
-While your application should handle all error responses (in the 400 and 500 ranges), some special attention should be paid to certain expected errors and responses, which are highlighted below.
+While your application should handle all error responses (in the 400 and 500 ranges), pay special attention to certain expected errors and responses, listed in the following table.
 
 | Topic   | HTTP error code    | Best practice|
 |:-----------|:--------|:----------|
-| User does not have access | 403 | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience.  In this case it's most likely that the signed-in user does not have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user. |
-|Not found| 404 | In certain cases, a requested resource may not be found. For example a resource may not exist, because it has not yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *may* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account.|
-|Throttling|429|APIs may throttle at any time for a variety of reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. Further information is available in this [throttling topic](throttling.md).|
+| User does not have access | 403 | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience.  In this case, it's most likely that the signed-in user does not have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user. |
+|Not found| 404 | In certain cases, a requested resource might not be found. For example a resource might not exist, because it has not yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *might* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account.|
+|Throttling|429|APIs might throttle at any time for a variety of reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. For more information, see [throttling](throttling.md).|
 |Service unavailable| 503 | This is likely because the services is busy. You should employ a back-off strategy similar to 429. Additionally, you should **always** make new retry requests over a new HTTP connection.|
 
 ### Evolvable enums
 
-Client applications can be broken by the addition of members to an existing enum. For some newer enums in Microsoft Graph, we've created a mechanism to allow for adding new members without incurring a breaking change. On these newer enums you'll see a common *sentinel* member called `unknownFutureValue` that demarcates known and unknown enum members. Known members will have a number less than the sentinel member, while unknown members will be greater in value.
-By default, unknown members are not returned by Microsoft Graph.  If however, your application is written to handle the appearance of unknown members, it can opt-in to recieve unknown enum members, using an HTTP *Prefer* request header.
+Client applications can be broken by the addition of members to an existing enum. For some newer enums in Microsoft Graph, a mechanism is available to allow for adding new members without incurring a breaking change. On these newer enums, you'll see a common *sentinel* member called `unknownFutureValue` that demarcates known and unknown enum members. Known members will have a number less than the sentinel member, while unknown members will be greater in value.
+By default, unknown members are not returned by Microsoft Graph. If, however, your application is written to handle the appearance of unknown members, it can opt-in to receive unknown enum members, using an HTTP *Prefer* request header.
 
-> If your application is prepared to handle unknown enum members it should opt-in by using an HTTP *prefer* request header: `Prefer: include-unknown-enum-members`.
+>**Note:** If your application is prepared to handle unknown enum members, it should opt-in by using an HTTP *prefer* request header: `Prefer: include-unknown-enum-members`.
 
 ## Storing data locally
 
-Your application should ideally make calls to Microsoft Graph to retrieve data in real-time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](../misc/terms-of-use.md). Your application should also implement proper retention and deletion policies.
+Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](../misc/terms-of-use.md). Your application should also implement proper retention and deletion policies.
 
 ## Optimizations
 
-The general theme here is that for performance and even security or privacy reasons, you should only get the data your application really needs, and nothing more.
+In general, for performance and even security or privacy reasons, you should only get the data your application really needs, and nothing more.
 
 ### Use projections
 
-Choose only the properties your application really needs and no more, since this saves unnecessary network traffic and data processing in your application (and in the service).
+Choose only the properties your application really needs and no more, because this saves unnecessary network traffic and data processing in your application (and in the service).
 
-> Use the `$select` query parameter to limit the properties returned by a query to those needed by your application.
+>**Note:** Use the `$select` query parameter to limit the properties returned by a query to those needed by your application.
 
-For example, when retrieving the messages of the signed-in user, you can specify that only the from and subject properties be returned:
+For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
@@ -102,36 +102,35 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 ### Getting minimal responses
 
-For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. NOTE: that some services already return a 204 No Content response for PUT and PATCH operations.
+For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Note that some services already return a 204 No Content response for PUT and PATCH operations.
 
-> Request minimal representation responses using an HTTP  request header where appropriate:  *Prefer: return=minimal*. NOTE: for creation operations, this may not be appropriate because your application may expect to get the service generated `id` for the newly created object in the response.
+>**Note:** Request minimal representation responses using an HTTP request header where appropriate: *Prefer: return=minimal*. Note that for creation operations, this might not be appropriate because your application may expect to get the service generated `id` for the newly created object in the response.
 
 ### Track changes: delta query and webhook notifications
 
-If your application needs to know about changes to data, you can get a webhook notification whenever data of interest has changed.  This is more efficient than simply polling on a regular basis.
+If your application needs to know about changes to data, you can get a webhook notification whenever data of interest has changed. This is more efficient than simply polling on a regular basis.
 
-> Use [webhook notifications](../api-reference/v1.0/resources/webhooks.md) to get push notifications when data changes.
+Use [webhook notifications](../api-reference/v1.0/resources/webhooks.md) to get push notifications when data changes.
 
-If your application is required to cache or store Microsoft Graph data locally, and keep that data up to date, or track changes to data for any other reasons, you should use delta query. This will avoid excessive computation by your application to retrieve data your application already has, minimizes network traffic, and reduces the likelihood of reaching a throttling threshold.
+If your application is required to cache or store Microsoft Graph data locally, and keep that data up to date, or track changes to data for any other reasons, you should use delta query. This will avoid excessive computation by your application to retrieve data your application already has, minimize network traffic, and reduce the likelihood of reaching a throttling threshold.
 
-> Use [delta query](delta_query_overview.md) to efficiently keep data up to date.
+Use [delta query](delta_query_overview.md) to efficiently keep data up to date.
 
 ### Using webhooks and delta query together
 
-Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this may lead to empty responses which wastes resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
+Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this might lead to empty responses which wastes resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
 
-> Use [webhook notifications](../api-reference/v1.0/resources/webhooks.md) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
+Use [webhook notifications](../api-reference/v1.0/resources/webhooks.md) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
 
 ### Batching
 
 JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. Combining individual requests into a single batch request can save the application significant network latency and can conserve connection resources.
 
-> Use [batching](json_batching.md) where significant network latency can have a big impact on the performance.
+Use [batching](json_batching.md) where significant network latency can have a big impact on the performance.
 
 ## Reliability and support
+To ensure the reliability and facilitate support for your application:
 
-1. Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
-
-2. Open connections to all advertised DNS answers.
-
-3. Always log the *request-id* and *timestamp* from the HTTP response header. This is required when escalating issues or reporting issues in StackOverflow or to Microsoft Customer Support.
+- Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
+- Open connections to all advertised DNS answers.
+- Always log the *request-id* and *timestamp* from the HTTP response header. This is required when escalating issues or reporting issues in Stack Overflow or to Microsoft Customer Support.
