@@ -7,7 +7,7 @@ initiate online conversations, share files, and collaborate in groups.
 
 ### Integrate with rich features and reach hundreds of millions of customers
 
-Integrating with Outlook means tapping into the rich experience that customers love - consistent, intuitive experience for mail, [contacts](outlook-contacts-concept-overview.md), [calendar](outlook-calendar-concept-overview.md), and [tasks](outlook-tasks-concept-overview.md), available on all devices - mobile, web, and desktop.
+Integrating with Outlook means tapping into the rich experience that customers love - consistent, intuitive experience for mail, [contacts](outlook-contacts-concept-overview.md), [calendar](outlook-calendar-concept-overview.md), available on all devices - mobile, web, and desktop.
 
 Using [Microsoft Graph](overview.md), you can integrate with Outlook by writing an app just once and reach more than hundreds of millions of consumers, 
 and tens of millions of organization customers who choose Outlook as their email client. You can write apps that focus on mail scenarios, or 
