@@ -31,7 +31,6 @@ Build and run investigation and remediation runbooks, automate security policy c
 
 ## Resources
 
-* [ASP.NET (C#) SDK](https://www.nuget.org/packages/Microsoft.Graph)
 * [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
 * [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
 
