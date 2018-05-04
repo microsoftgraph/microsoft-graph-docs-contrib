@@ -1,19 +1,19 @@
 # Major services and features in Microsoft Graph
 
-Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, you can take advantage of security and social intelligence to boost user productivity, creativity, and team collaboration, and to protect business resources and users' data. 
+Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. 
 
 ## Users and groups
 
 At the core of Microsoft Graph are the concepts of the user and group. 
 
-A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. The user is the focal point whose identity is protected and access is well managed. It's the user's data that drives businesses. Microsoft Graph services makes this data available to businesses in rich contexts, real-time updates, and deep insights, always only with the appropriate permissions.
+A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. It is the focal point whose identity is protected and access is well managed. The user's data is what drives businesses. Microsoft Graph services makes this data available to businesses in rich contexts, real-time updates, and deep insights, and, always only with the appropriate permissions.
 
-_Group_ is the fundamental entity that enables users to collaborate. Its integration with other services supports richer scenarios in task planning, teamwork, education, and more.
+An Office 365 _group_ is the fundamental entity that lets users collaborate. It integrates with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](../concepts/azuread-users-concept-overview.md)|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups provide the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Office 365 groups in Microsoft Graph](../concepts/office365-groups-concept-overview.md) |
+| Users | Azure AD and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](../concepts/azuread-users-concept-overview.md)|
+|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | An Office 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Office 365 groups in Microsoft Graph](../concepts/office365-groups-concept-overview.md) |
 
 ## Connecting users' data, Microsoft 365 services, and your apps
 
@@ -117,7 +117,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 <!-- Need to update the destination page titles and URLs as Matt's v-team finalize on the examples and featured scenarios content 
 -->
 
-1. See examples of creative solutions built on top of services in Microsoft Graph that solve real customer problems.
-2. Look under **Learn** in the table of contents to read about services and features that _you_ can leverage in your scenarios.
-3. Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-4. Use [quick starts](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
+- See [examples](https://developer.microsoft.com/en-us/graph/examples) of creative solutions built on top of services in Microsoft Graph that solve real customer problems.
+- Look under **Learn** in the table of contents to read about services and features that _you_ can use in your scenarios.
+- Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Use the [quick starts](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.

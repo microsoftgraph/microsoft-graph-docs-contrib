@@ -22,7 +22,7 @@ Customers like how Outlook help them stay organized. Microsoft Graph brings thes
 - Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](../api-reference/v1.0/api/outlookuser_post_mastercategories.md). More, that list is shared across Outlook messages, 
 as well as events, contacts, tasks, and group posts, and opens up creative scenarios for app developers. For example, an online training provider can color-code the emails, course events, and follow-up assignments for each course a user has enrolled in.
 
-- Additionally, app users can change the importance of a message (event, or task), or flag (preview) a message for follow-up. 
+- Additionally, app users can change the importance of a message (or event or task), or flag (preview) a message for follow-up. 
 
 - The rules API takes message organization to the next level. Apps can set up [Inbox rules](../api-reference/v1.0/resources/messagerule.md) to promptly handle incoming messages and reduce email clutter. For example, an app can automatically move messages to another folder if their subject lines contain certain keywords, and assign categories and importance to make them easier for later follow-up.
 
@@ -32,7 +32,7 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 - Integrate with [Focused Inbox](../api-reference/v1.0/resources/manage_focused_inbox.md) and [@-mentions (preview)](../api-reference/beta/api/message_get.md#request-2) and let your app users read and respond to what's relevant to them first. 
 
-- Check [mail tips (preview)](../api-reference/beta/resources/mailtips.md) while still composing a message to get useful status information about a recipient (such as the recipient sending an auto-reply or has a full mailbox). Mail tips can alert you of certain conditions so that your app can take more efficient follow-up actions instead. 
+- Check [mail tips (preview)](../api-reference/beta/resources/mailtips.md) while still composing a message to get useful status information about a recipient (such as the recipient sending an auto-reply or has a full mailbox). Mail tips can alert apps of certain conditions so to take more efficient follow-up actions instead. 
 
 - Make use of the [people API](people_example.md) to provide interactive controls such as a people picker in your app. The people API can suggest persons most relevant to a user, based on the user’s communication and collaboration patterns and business relationships. 
 
@@ -41,7 +41,7 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 ### Store app data in a resource or resource instance
 
-Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets your app simply [store custom data in individual resource instances](extensibility_open_users.md), or, if appropriate, extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility_schema_groups.md) discoverable and shareable. 
+Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets your app simply [store custom data in individual resource instances](extensibility_overview.md#open-extensions), or, if appropriate, extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility_overview.md#schema-extensions) discoverable and shareable. 
 
 
 ## Next steps
