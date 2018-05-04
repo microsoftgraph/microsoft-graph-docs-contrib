@@ -1,5 +1,7 @@
 # bookingBusiness: publish
 
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ 
 Make the scheduling page of this business available to external customers. 
 
 Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.

@@ -1,5 +1,7 @@
 # List bookingBusinesses
 
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ 
 Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant. 
 
 This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, other properties are _returned_ as null even if they have been set. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness_get.md) operation.

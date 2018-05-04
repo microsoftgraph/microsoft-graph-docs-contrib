@@ -1,5 +1,7 @@
 # bookingStaffMember resource type
 
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ 
 Represents a staff member who provides services in a [bookingBusiness](bookingbusiness.md).
 
 Staff members can be part of the Office 355 tenant where the booking business is configured, or they can use email services from other email providers.

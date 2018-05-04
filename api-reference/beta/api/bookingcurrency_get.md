@@ -1,5 +1,7 @@
 # Get bookingCurrency
 
+ > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ 
 Get the properties of a [bookingCurrency](../resources/bookingcurrency.md) object that is available to a Microsoft Bookings business. Use the **id** property, which is the currency code, to specify the currency.
 
 ## Permissions
