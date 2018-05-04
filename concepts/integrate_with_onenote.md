@@ -40,6 +40,7 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 * [Use the OneNote REST API](../api-reference/v1.0/resources/onenote-api-overview.md)
 * [Best practices](onenote_best_practices.md)
 * [Branding guidelines](onenote-branding.md)
+* [Open the OneNote client](open_onenote_client.md)
 * [Use note tags in OneNote pages](onenote-note-tags.md)
 * [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md)
 
