@@ -49,7 +49,7 @@ When querying a resource collection, you should expect that Microsoft Graph will
 For example, listing the signed-in users messages:
 
 ```http
-GET https://graph.microsoft.com/v1.0/messages
+GET https://graph.microsoft.com/v1.0/me/messages
 ```
 
 Would return a response containing an `@odata.nextLink` property, if the result set exceeds the server-side page size limit.
