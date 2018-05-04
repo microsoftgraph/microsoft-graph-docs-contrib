@@ -61,7 +61,6 @@
   </Item>
   <Item text="Tasks and plans" ProdTag="Planner" url="/en-us/concepts/planner-concept-overview" />
   <Item text="Teamwork (preview)" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" />
-  <Item text="To-do tasks (preview)" ProdTag="Outlook" url="/en-us/concepts/outlook-tasks-concept-overview" />
   <Item text="Workbooks and charts" ProdTag="Excel" url="/en-us/concepts/excel-concept-overview" >
 	  <Item text="Manage sessions" url="/en-us/concepts/manage-sessions-in-excel-with-microsoft-graph" />
 	  <Item text="Display a chart image" url="/en-us/concepts/display-a-chart-image-in-excel-with-microsoft-graph" />
@@ -223,7 +222,7 @@
 		<Item text="Get attachment" url="/en-us/api-reference/v1.0/api/attachment_get" />
 		<Item text="Delete attachment" url="/en-us/api-reference/v1.0/api/attachment_delete" />
 	</Item>
-	<Item text="Calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar">
+	<Item text="Calendar" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar">
       <Item text="List events" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
       <Item text="Create event" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
       <Item text="Get event" url="/en-us/api-reference/v1.0/api/group_get_event" />
@@ -390,9 +389,9 @@
 				<Item text="Get recent activities" url="/en-us/api-reference/v1.0/api/projectrome_get_recent_activities" />
 				<Item text="Delete activity" url="/en-us/api-reference/v1.0/api/projectrome_delete_activity" />
 			</Item>
-			<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
-				<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
-				<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+			<Item text="History item" url="/en-us/api-reference/v1.0/resources/projectrome_historyitem" >
+				<Item text="Create or replace a history item" url="/en-us/api-reference/v1.0/api/projectrome_put_historyitem" />
+				<Item text="Delete a history item" url="/en-us/api-reference/v.10/api/projectrome_delete_historyitem" />
 			</Item>
 		</Item>
 	</Item>
@@ -1659,6 +1658,7 @@
       <Item text="Resumable Upload" url="/en-us/api-reference/v1.0/api/driveitem_createuploadsession" SEOKeyword="large file upload, resumable upload, microsoft graph api, onedrive drive api, fragments, files" />
       <Item text="Search items" url="/en-us/api-reference/v1.0/api/driveitem_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
       <Item text="Track changes" url="/en-us/api-reference/v1.0/api/driveitem_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
+	  <Item text="List versions" url="/en-us/api-reference/v1.0/api/driveitem_list_versions" />
     </Item>
     <Item text="Permissions" url="/en-us/api-reference/v1.0/resources/permission" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
       <Item text="Create sharing link" url="/en-us/api-reference/v1.0/api/driveitem_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
@@ -2023,6 +2023,7 @@
         <Item text="Create item" url="/en-us/api-reference/v1.0/api/listitem_create" SEOKeyword="sharepoint, create item, create, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Update item" url="/en-us/api-reference/v1.0/api/listitem_update" SEOKeyword="sharepoint, update item, update, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Delete item" url="/en-us/api-reference/v1.0/api/listitem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
+		<Item text="List versions" url="/en-us/api-reference/v1.0/api/listitem_list_versions" />
       </Item>
   </Item>
   <Item text="Social intelligences: People" url="/en-us/api-reference/v1.0/resources/social_overview" >
@@ -2300,7 +2301,7 @@
       <Item text="Get attachment" url="/en-us/api-reference/beta/api/attachment_get" />
       <Item text="Delete attachment" url="/en-us/api-reference/beta/api/attachment_delete" />
     </Item>
-	  <Item text="Calendar" url="/en-us/api-reference/beta/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
+	  <Item text="Calendar" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
         <Item text="Create event" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="Create event, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new Event." />
         <Item text="Get event" url="/en-us/api-reference/beta/api/group_get_event" />
@@ -4972,6 +4973,8 @@
         <Item text="Resumable Upload" url="/en-us/api-reference/beta/api/driveitem_createuploadsession" SEOKeyword="large file upload, resumable upload, microsoft graph api, onedrive drive api, fragments, files" />
         <Item text="Search items" url="/en-us/api-reference/beta/api/driveitem_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="Track changes" url="/en-us/api-reference/beta/api/driveitem_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
+		<Item text="Get preview link" url="/en-us/api-reference/beta/api/driveitem_preview" />
+		<Item text="List versions" url="/en-us/api-reference/beta/api/driveitem_list_versions" />
       </Item>
       <Item text="Permissions" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
         <Item text="Create sharing link" url="/en-us/api-reference/beta/api/driveitem_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
@@ -5522,6 +5525,7 @@
         <Item text="Create item" url="/en-us/api-reference/beta/api/listitem_create" SEOKeyword="sharepoint, create item, create, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Update item" url="/en-us/api-reference/beta/api/listitem_update" SEOKeyword="sharepoint, update item, update, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Delete item" url="/en-us/api-reference/beta/api/listitem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
+		<Item text="List versions" url="/en-us/api-reference/beta/api/listitem_list_versions" />
       </Item>
     </Item>
 	<Item text="Social intelligence" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
