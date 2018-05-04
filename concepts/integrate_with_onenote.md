@@ -41,10 +41,9 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 * [Best practices](onenote_best_practices.md)
 * [Branding guidelines](onenote-branding.md)
 * [Use note tags in OneNote pages](onenote-note-tags.md)
-* [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.)
+* [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md)
 
 **Work with OneNote pages**
-
 * [Get OneNote content and structure with Microsoft Graph](onenote-get-content.md)
 * [Create OneNote pages](onenote-create-page.md)
 * [Update OneNote page content](onenote_update_page.md)
