@@ -46,6 +46,7 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 
 **Work with OneNote pages**
 
+* [Input and output HTML in OneNote pages](onenote_input_output_html.md)
 * [Get OneNote content and structure with Microsoft Graph](onenote-get-content.md)
 * [Create OneNote pages](onenote-create-page.md)
 * [Update OneNote page content](onenote_update_page.md)
@@ -55,7 +56,7 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 * [Create absolute positioned elements in OneNote pages](onenote-abs-pos.md)
 * [Add images, videos, and files to OneNote pages](onenote_images_files.md)
 * [Use OneNote API div tags to extract data from captures](onenote-extract-data.md)
-* [Input and output HTML in OneNote pages](onenote_input_output_html.md)
+
 
 
 ## Explore the OneNote APIs
