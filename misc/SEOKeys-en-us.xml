@@ -58,7 +58,7 @@
 	<Item text="Extract data" url="/en-us/concepts/onenote-extract-data" />
 	<Item text="Input and output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
   </Item>
-  <Item text="Personal contacts" ProdtTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
+  <Item text="Personal contacts" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Security (preview)" url="/en-us/concepts/security-concept-overview" >
 	<Item text="Integrate with a SIEM" url="/en-us/concepts/security_siemintegration" />
@@ -1872,7 +1872,7 @@
         <Item text="Get resource" url="/en-us/api-reference/v1.0/api/resource_get" SEOKeyword="Get resource, Microsoft Graph API, resource API" SEODescription="Retrieve the properties and relationships of a file or image resource(../resources/resource.md) object." />
       </Item>
   </Item>
-  <Item text="Personal contacts" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Personal contacts API">
+  <Item text="Personal contacts" ProdTag="Outlook" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Personal contacts API">
     <Item text="Contact" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="Contact">
       <Item text="List contacts" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
       <Item text="Create contact" url="/en-us/api-reference/v1.0/api/user_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Contact." />
@@ -2040,7 +2040,7 @@
 		<Item text="List versions" url="/en-us/api-reference/v1.0/api/listitem_list_versions" />
       </Item>
   </Item>
-  <Item text="Social intelligences: People" url="/en-us/api-reference/v1.0/resources/social_overview" >
+  <Item text="Social intelligence: People" url="/en-us/api-reference/v1.0/resources/social_overview" >
 	<Item text="Person" url="/en-us/api-reference/v1.0/resources/person" >
 		<Item text="List people" url="/en-us/api-reference/v1.0/api/user_list_people" />
 		<Item text="Get person" url="/en-us/api-reference/v1.0/api/person_get" />
@@ -5375,7 +5375,7 @@
         <Item text="Get member objects" url="/en-us/api-reference/beta/api/orgcontact_getmemberobjects" SEOKeyword="orgContact: getMemberObjects, Microsoft Graph API, Organizational contact API" SEODescription="" />
       </Item>
     </Item>
-	<Item text="Personal contacts" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
+	<Item text="Personal contacts" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
         <Item text="Contact" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
           <Item text="List contacts" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
           <Item text="Create contact" url="/en-us/api-reference/beta/api/user_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, Users API" SEODescription="Use this API to create a new Contact." />
