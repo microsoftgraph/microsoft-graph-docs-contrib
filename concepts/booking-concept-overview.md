@@ -15,11 +15,8 @@ Business operators can specify [scheduling policies](../api-reference/beta/resou
 ### Manage customer information and relationships from anywhere
 Completing an appointment automatically verifies if the customer is already on the [customer list](../api-reference/beta/api/bookingbusiness_list_customers.md), and [adds](../api-reference/beta/api/bookingbusiness_post_customers.md) the customer's name and email address to the list if necessary. This makes it convenient for business operators to stay in touch with their customers, and send periodic newsletters or other promotional material.
 
-<!-- 
-Link to overview-major-services.md after new-conceptual content is merged
--->
 ### Integrate with productivity and team collaboration services in Microsoft Graph
-Using the same unified Microsoft Graph REST endpoint, you can access the Bookings API and integrate with the best of Microsoft 365 to support richer scenarios. For example, you can use Excel to track and analyze business financial data, and generate professional reports, or use SharePoint or Microsoft Teams to enhance team collaboration.
+Using the same unified Microsoft Graph REST endpoint, you can access the Bookings API and [integrate with the best of Microsoft 365](overview-major-services.md) to support richer scenarios. For example, you can use [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) to track and analyze business financial data, and generate professional reports, or use [SharePoint](sharepoint-concept-overview.md) or [Microsoft Teams](teams-concept-overview.md) to enhance team collaboration.
 
 ## Next steps
 
