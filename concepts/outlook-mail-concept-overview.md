@@ -22,7 +22,7 @@ Customers like how Outlook help them stay organized. Microsoft Graph brings thes
 - Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](../api-reference/v1.0/api/outlookuser_post_mastercategories.md). More, that list is shared across Outlook messages, 
 as well as events, contacts, tasks, and group posts, and opens up creative scenarios for app developers. For example, an online training provider can color-code the emails, course events, and follow-up assignments for each course a user has enrolled in.
 
-- Additionally, app users can change the importance of a message (or event or task), or flag (preview) a message for follow-up. 
+- Additionally, app users can change the importance of a message (or event or task), or flag a message for follow-up. (Flagging is currently [in preview](versioning_and_support.md#beta-version) in Microsoft Graph.)
 
 - The rules API takes message organization to the next level. Apps can set up [Inbox rules](../api-reference/v1.0/resources/messagerule.md) to promptly handle incoming messages and reduce email clutter. For example, an app can automatically move messages to another folder if their subject lines contain certain keywords, and assign categories and importance to make them easier for later follow-up.
 
@@ -46,12 +46,13 @@ Often times apps have to store their data in an external data store and entail o
 
 ## Next steps
 
-Learn about:
+- Select and try Outlook mail sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0). Choose **Show more samples** in the column on the left. Use the menu to turn on **Outlook Mail**.
+- Learn about:
 
-- [Creating and sending messages](outlook-create-send-messages.md)
-- Ways to [organize messages](outlook-organize-messages.md)
-- How to [share message folders](outlook-share-messages-folders.md)
+  - [Creating and sending messages](outlook-create-send-messages.md)
+  - Ways to [organize messages](outlook-organize-messages.md)
+  - How to [share message folders](outlook-share-messages-folders.md)
 
-Find out more about [using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
+- Find out more about [using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
 
 

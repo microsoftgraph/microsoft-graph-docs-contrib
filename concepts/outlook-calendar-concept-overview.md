@@ -24,7 +24,7 @@ Customers like how Outlook lets them organize their time for work, family, and p
 
 The calendar API helps customers navigate their day and enhance productivity:
 
-<!-- change link to notifications to the concept topic once it's created. In general, try stay in the conceptual level in these overview topics, if conceptual topics are available for the link destination. 
+<!-- change link to notifications to the concept topic once it's created. In general, try staying in the conceptual level in these overview topics, if conceptual topics are available for the link destination. 
 -->
 
 - You can keep the app local store synchronized by subscribing to [change notifications](../api-reference/v1.0/resources/webhooks.md) and [tracking changes to events](delta_query_events.md) in a user's calendar.
