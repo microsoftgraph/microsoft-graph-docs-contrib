@@ -6,14 +6,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2018
 
-### Microsoft Bookings API
-
-<!--Add link to booking-concept-overview.md once that topic is in the same branch as this one.
--->
+### Groups
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | Beta          | Added the [bookingBusiness](../api-reference/beta/resources/bookingbusiness.md) entity and the following CRUD methods and actions: <br> [List](../api-reference/beta/api/bookingbusiness_list.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_bookingbusinesses.md) <br> [Get](../api-reference/beta/api/bookingbusiness_get.md) <br> [Update](../api-reference/beta/api/bookingbusiness_update.md) <br> [Delete](../api-reference/beta/api/bookingbusiness_delete.md) <br> [Publish](../api-reference/beta/api/bookingbusiness_publish.md) <br> [Unpublish](../api-reference/beta/api/bookingbusiness_unpublish.md). <br> Find out more about integrating with the Microsoft Bookings API. |
+| Addition        | v1.0 and beta | Added the **importance** property to the [post](../api-reference/v1.0/resources/post.md) entity. |
+
+### Microsoft Bookings API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          | Added the [bookingBusiness](../api-reference/beta/resources/bookingbusiness.md) entity and the following CRUD methods and actions: <br> [List](../api-reference/beta/api/bookingbusiness_list.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_bookingbusinesses.md) <br> [Get](../api-reference/beta/api/bookingbusiness_get.md) <br> [Update](../api-reference/beta/api/bookingbusiness_update.md) <br> [Delete](../api-reference/beta/api/bookingbusiness_delete.md) <br> [Publish](../api-reference/beta/api/bookingbusiness_publish.md) <br> [Unpublish](../api-reference/beta/api/bookingbusiness_unpublish.md). <br> Find out more about integrating with the [Microsoft Bookings API](booking-concept-overview.md). |
 | Addition        | Beta          | Added the [bookingAppointment](../api-reference/beta/resources/bookingappointment.md) entity and the following CRUD methods and action: <br> [List](../api-reference/beta/api/bookingbusiness_list_appointments.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_appointments.md) <br> [Get](../api-reference/beta/api/bookingappointment_get.md) <br> [Update](../api-reference/beta/api/bookingappointment_update.md) <br> [Delete](../api-reference/beta/api/bookingappointment_delete.md) <br> [Cancel](../api-reference/beta/api/bookingappointment_cancel.md). |
 | Addition        | Beta          | Added the [bookingCurrency](../api-reference/beta/resources/bookingcurrency.md) entity and the following methods: <br> [List](../api-reference/beta/api/bookingcurrency_list.md) <br> [Get](../api-reference/beta/api/bookingcurrency_get.md). |
 | Addition        | Beta          | Added the [bookingCustomer](../api-reference/beta/resources/bookingcustomer.md) entity and the following CRUD methods: <br> [List](../api-reference/beta/api/bookingbusiness_list_customers.md) <br> [Create](../api-reference/beta/api/bookingbusiness_post_customers.md) <br> [Get](../api-reference/beta/api/bookingcustomer_get.md) <br> [Update](../api-reference/beta/api/bookingcustomer_update.md) <br> [Delete](../api-reference/beta/api/bookingcustomer_delete.md).|
@@ -40,9 +43,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | V1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
-| Addition        | V1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](../api-reference/v1.0/resources/user.md) entity. |
-| Addition        | V1.0        | Added users and groups support to [webhook](../api-reference/v1.0/resources/webhooks.md) notification subscriptions. |
+| Addition        | v1.0        | Added the **privacyProfile** complex type to the [organization](../api-reference/v1.0/resources/organization.md) entity. |
+| Addition        | v1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](../api-reference/v1.0/resources/user.md) entity. |
+| Addition        | v1.0        | Added users and groups support to [webhook](../api-reference/v1.0/resources/webhooks.md) notification subscriptions. |
 | Addition        | beta        | Added [List deleted items owned by a user](../api-reference/beta/api/directory_deleteditems_user_owned.md) action to [directory (deleted items)](../api-reference/beta/resources/directory.md) resource | 
 
 ### Education APIs
@@ -220,7 +223,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **onPremisesExtensionAttributes** complex type to the [user](../api-reference/beta/resources/user.md) entity. This contains the on-premises AD extension attributes 1-15. |
 | Addition        | Beta        | Added the **privacyProfile** complex type to the [organization](../api-reference/beta/resources/organization.md) entity. |
-| Addition        | V1.0        | Added support for [restoring and permanently deleting users and groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directory). |
+| Addition        | v1.0        | Added support for [restoring and permanently deleting users and groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directory). |
 
 ### Excel APIs
 
