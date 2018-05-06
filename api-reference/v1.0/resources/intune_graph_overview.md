@@ -32,4 +32,4 @@ Microsoft Graph API controls access to resources using permission scopes. As a d
 ## Next Steps
 
 - Learn [how to use Azure AD](https://docs.microsoft.com/en-us/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
-- Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which shows how to use Graph API for Intune in context of working examples.
+- Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which show how to use Graph API for Intune in context of working examples.
