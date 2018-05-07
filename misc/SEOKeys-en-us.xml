@@ -2518,8 +2518,8 @@
 			<Item text="List" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
 			<Item text="Create" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
 			<Item text="Get" url="/en-us/api-reference/beta/api/bookingappointment_get" />
-			<Item text="Update" url="/en-us/api-reference/beta/api/bookingappointment _update" />
-			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingappointment _delete" />
+			<Item text="Update" url="/en-us/api-reference/beta/api/bookingappointment_update" />
+			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
 			<Item text="Cancel" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
 		</Item>
 		<Item text="Booking currency" url="/en-us/api-reference/beta/resources/bookingcurrency" >
