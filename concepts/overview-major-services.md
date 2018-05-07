@@ -101,15 +101,12 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Education | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](../concepts/education-concept-overview.md) |
 
 
-<!-- Include after confirming bookings API is ready for release and content is in the same branch
 ## Business applications
 
 |Feature     |Supporting services  |Description |More information |
-
+|:-----------|:--------------------|:-----------|:----------------|
 | Customer booking (preview) | Microsoft Bookings | Targets small businesses to enable their customers to book services directly on the web or Facebook. Lets business operators manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](../concepts/booking-concept-overview.md) |
 
-
--->
 
 ## Next steps
 
