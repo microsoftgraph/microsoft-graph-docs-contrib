@@ -387,9 +387,6 @@
     </Item>
   </Item>
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/api-reference/v1.0/resources/project_rome_overview" > 
-		<Item text="List user devices" url="/en-us/api-reference/v1.0/api/user_list_devices" />
-		<Item text="Send device command" url="/en-us/api-reference/v1.0/api/send_device_command" />
-		<Item text="Get device command status" url="/en-us/api-reference/v1.0/api/get_device_command_status" />
 		<Item text="Activity feed" url="/en-us/api-reference/v1.0/resources/activity-feed-api-overview" >
 			<Item text="Activity" url="/en-us/api-reference/v1.0/resources/projectrome_activity" >
 				<Item text="Create or replace activity" url="/en-us/api-reference/v1.0/api/projectrome_put_activity" />
