@@ -71,7 +71,7 @@
   <Item text="Teamwork (preview)" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" />
   <Item text="Workbooks and charts" ProdTag="Excel" url="/en-us/concepts/excel-concept-overview" >
 	  <Item text="Manage sessions" url="/en-us/concepts/excel-manage-sessions" />
-	  <Item text="Display a chart image" url="/en-us/concepts/excel-display-chart-imageh" />
+	  <Item text="Display a chart image" url="/en-us/concepts/excel-display-chart-image" />
 	  <Item text="Use workbook functions" url="/en-us/concepts/excel-use-functions" />
 	  <Item text="Update a range format" url="/en-us/concepts/excel-update-range-format" />
 	  <Item text="Write data to a workbook" url="/en-us/concepts/excel-write-to-workbook" />
