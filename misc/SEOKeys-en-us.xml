@@ -5865,7 +5865,8 @@
     </Item>  
     <Item text="Change notifications" url="/en-us/api-reference/beta/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
       <Item text="Subscription" url="/en-us/api-reference/beta/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Get subscription" url="/en-us/api-reference/beta/api/subscription_get" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
+        <Item text="List subscription" url="/en-us/api-reference/beta/api/subscription_list" /Item>
+		<Item text="Get subscription" url="/en-us/api-reference/beta/api/subscription_get" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
         <Item text="Create subscription" url="/en-us/api-reference/beta/api/subscription_post_subscriptions" />
         <Item text="Update subscription" url="/en-us/api-reference/beta/api/subscription_update" />
         <Item text="Delete subscription" url="/en-us/api-reference/beta/api/subscription_delete" />
