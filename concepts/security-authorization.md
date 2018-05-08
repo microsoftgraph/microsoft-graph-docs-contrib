@@ -77,7 +77,7 @@ To begin with, you can use the test client web app homepage.</br>
 1. Go to https://apps.dev.microsoft.com/ and sign in.</br>**Note**: there is no need to be a tenant admin. You will be redirected to “My applications” list.
 2. Click the “**Add an app**” button, and enter an Application Name to create a new application.
 3. It will navigate to the registration page for the new application.</br>Click “**Add Platform**”, choose “**Web**”. In the Redirect URL, enter the Redirect URL.
-4. Go to section “**Microsoft Graph Permissions**” and under “**Delegated Permissions**”, click the “**Add**” button. A popup dialog appears; choose required permissions (aka scopes).</br>See this [document](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) for detailed scopes. The Microsoft Graph Security API requires “SecurityEvents.Read.All” scope for GET queries, and “SecurityEvents.ReadWrite.All” scope for PATCH/POST queries.
+4. Go to section “**Microsoft Graph Permissions**” and under “**Delegated Permissions**”, click the “**Add**” button. A popup dialog appears; choose required permissions (aka scopes).</br>See this [document](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#security-permissions) for detailed scopes. The Microsoft Graph Security API requires “SecurityEvents.Read.All” scope for GET queries, and “SecurityEvents.ReadWrite.All” scope for PATCH/POST queries.
 5. Scroll down to the bottom of the page and click on the “**Save**” button
 
 ### What to save for future steps:
