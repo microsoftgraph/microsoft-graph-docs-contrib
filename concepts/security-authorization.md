@@ -1,11 +1,11 @@
-# Understanding authorization when calling the Microsoft Graph Security API
+# Authorization and the security API in Microsoft Graph
 
-**High-level summary:** Security data accessible via the Microsoft Graph Security API is very sensitive and is protected using both permissions (aka scopes) and Azure AD (AAD) roles.
+Security data that's accessible via the security API in Microsoft Graph is sensitive and is protected by both permissions and Azure Active Directory (Azure AD) roles.
 
-Microsoft Graph Security API supports two types of application authorization:
+The security API supports two types of authorization:
 
-- **Application-level authorization**, where there is no signed-in user (e.g. a SIEM scenario). </br> Here the permissions/scopes granted to the application determine authorization
-- **User delegated authorization**, where a user who is a member of the AAD tenant is signed in. </br>Here the user must be a member of the AAD Security Reader Limited Admin role, **in addition** to the application having been granted the required permissions.
+- **Application-level authorization**, where there is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization.
+- **User delegated authorization**, where a user who is a member of the Azure AD tenant is signed in. The user must be a member of the Azure AD Security Reader Limited Admin role, in addition to the application having been granted the required permissions.
 
 There are two types of client applications: the Microsoft Graph Explorer, and a custom client app. </br> If calling from Graph Explorer:
 
