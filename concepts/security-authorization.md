@@ -4,33 +4,31 @@ Security data that's accessible via the security API in Microsoft Graph is sensi
 
 The security API supports two types of authorization:
 
-- **Application-level authorization**, where there is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization.
-- **User delegated authorization**, where a user who is a member of the Azure AD tenant is signed in. The user must be a member of the Azure AD Security Reader Limited Admin role, in addition to the application having been granted the required permissions.
+- **Application-level authorization** - There is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization.
+- **User delegated authorization** - A user who is a member of the Azure AD tenant is signed in. The user must be a member of the Azure AD Security Reader Limited Admin role, in addition to the application having been granted the required permissions.
 
-There are two types of client applications: the Microsoft Graph Explorer, and a custom client app. </br> If calling from Graph Explorer:
+If you're calling the security API from Graph Explorer:
 
-- The AAD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
-- The user must be a member of the Security Reader Limited Admin role in AAD.
+- The Azure AD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
+- The user must be a member of the Security Reader Limited Admin role in Azure AD.
 
 > **Note**: Graph Explorer does not support application-level authorization.
 
-If calling from a custom/your own application:
+If you're calling the security API from a custom or your own application:
 
-- The AAD tenant admin must explicitly grant consent to your application. This is required both for application-level authorization as well as for user delegated authorization.
-- The user must be a member of the Security Reader Limited Admin role in AAD - if using user delegated authorization.
+- The Azure AD tenant admin must explicitly grant consent to your application. This is required both for application-level authorization and user delegated authorization.
+- The user must be a member of the Security Reader Limited Admin role in Azure AD, if you're using user delegated authorization.
 
-The following section contains a detailed technical explanation of using the Authorization mechanisms.
+## Managing authorization in security API client applications
 
-## Managing authorization in Microsoft Graph Security API client applications
-
-Security data provided via the Microsoft Graph Security API is sensitive and must be protected by appropriate authentication and authorization mechanisms. To register and create a client application that can access the Microsoft Graph Security API, the following steps must be performed:
+Security data provided via the ecurity API in Microsoft Graph is sensitive and must be protected by appropriate authentication and authorization mechanisms. The following table lists the steps to register and create a client application that can access the security API.
 
 | **Who** | **Action** |
 |:---------------------|:------------------|
-|Application developer or owner|Register application as an enterprise application|
-|Tenant Admin|Grant permissions to the application|
-|Tenant Admin|Assign roles to users|
-|Application developer|Sign in as the user and use application to access Graph Security API|
+|Application developer or owner|Register application as an enterprise application.|
+|Tenant admin|Grant permissions to the application.|
+|Tenant admin|Assign roles to users.|
+|Application developer|Sign in as the user and use the application to access the security API.|
 
 **To clarify:**
 
