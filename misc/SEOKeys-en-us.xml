@@ -5042,7 +5042,7 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-	<Item text="Identity and acess" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
+	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Administrative unit" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="An administrative unit provides a conceptual container for User and Group directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users and groups contained within or scoped to an administrative unit to a regional or departmental administrator.">
         <Item text="Create administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to create a new administrativeUnit." />
         <Item text="List administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_list" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to list administrativeUnit objects." />
