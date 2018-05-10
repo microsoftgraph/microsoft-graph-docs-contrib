@@ -9,3 +9,11 @@ For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Here is a
 ![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
 
 If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
+
+## See also
+
+* [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
+* [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
+* [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
+* [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
+* [Use the Excel REST API](../api-reference/v1.0/resources/excel.md)

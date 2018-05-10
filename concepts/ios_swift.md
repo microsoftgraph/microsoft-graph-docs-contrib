@@ -31,7 +31,6 @@ To get started, you'll need:
 * Installation of the [PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/Documentation/Installation.md) Cocoapod. 
 * A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 
-
 ## Register the app
  
 1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.

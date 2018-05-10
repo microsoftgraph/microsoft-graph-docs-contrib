@@ -1,19 +1,19 @@
 # Major services and features in Microsoft Graph
 
-Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, you can take advantage of security and social intelligence to boost user productivity, creativity, and team collaboration, and to protect business resources and users' data. 
+Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. 
 
 ## Users and groups
 
 At the core of Microsoft Graph are the concepts of the user and group. 
 
-A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. The user is the focal point whose identity is protected and access is well managed. It's the user's data that drives businesses. Microsoft Graph services makes this data available to businesses in rich contexts, real-time updates, and deep insights, always only with the appropriate permissions.
+A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. It is the focal point whose identity is protected and access is well managed. The user's data is what drives businesses. Microsoft Graph services makes this data available to businesses in rich contexts, real-time updates, and deep insights, and, always only with the appropriate permissions.
 
-_Group_ is the fundamental entity that enables users to collaborate. Its integration with other services supports richer scenarios in task planning, teamwork, education, and more.
+An Office 365 _group_ is the fundamental entity that lets users collaborate. It integrates with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD and most productivity, collaboration, intelligence, and education services | A core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](../concepts/azuread-users-concept-overview.md)|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | Office 365 groups provide the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Office 365 groups in Microsoft Graph](../concepts/office365-groups-concept-overview.md) |
+| Users | Azure AD and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](../concepts/azuread-users-concept-overview.md)|
+|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | An Office 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Office 365 groups in Microsoft Graph](../concepts/office365-groups-concept-overview.md) |
 
 ## Connecting users' data, Microsoft 365 services, and your apps
 
@@ -42,7 +42,6 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](../concepts/outlook-mail-concept-overview.md) |
 | Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote notes overview](../concepts/integrate_with_onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](../concepts/outlook-contacts-concept-overview.md) |
-| To-do tasks (preview) | Outlook | Lets users track the start, due, and actual completion dates of to-do work items, and their recurrence, reminders, and status. It is part of the Outlook communication hub in Office 365 that also lets users manage emails and contacts, and schedule meetings. | [Outlook to-do tasks overview](../concepts/outlook-tasks-concept-overview.md)  |
 | Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](../concepts/excel-concept-overview.md) |
 
 
@@ -102,15 +101,12 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Education | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](../concepts/education-concept-overview.md) |
 
 
-<!-- Include after confirming bookings API is ready for release and content is in the same branch
 ## Business applications
 
 |Feature     |Supporting services  |Description |More information |
-
+|:-----------|:--------------------|:-----------|:----------------|
 | Customer booking (preview) | Microsoft Bookings | Targets small businesses to enable their customers to book services directly on the web or Facebook. Lets business operators manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](../concepts/booking-concept-overview.md) |
 
-
--->
 
 ## Next steps
 

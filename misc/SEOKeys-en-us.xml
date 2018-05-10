@@ -46,18 +46,18 @@
 	  <Item text="Share message folders" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
-    <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
-	<Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />   
-	<Item text="Create pages" url="/en-us/concepts/onenote-create-page" />
-	<Item text="Update page content" url="/en-us/concepts/onenote-update-page" />
-	<Item text="Add images, videos, and files" url="/en-us/concepts/onenote-image-files" />
-	<Item text="Create absolute positioned elements" url="/en-us/concepts/onenote-abs-pos" />
-	<Item text="Extract data" url="/en-us/concepts/onenote-extract-date" />
-	<Item text="Use note tags" url="/en-us/concepts/onenote-note-tags" />
-	<Item text="Input and output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
-	<Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
+    <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
 	<Item text="Branding guidelines" url="/en-us/concepts/onenote-branding" />
+	<Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />   
+	<Item text="Use note tags" url="/en-us/concepts/onenote-note-tags" />
 	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
+  <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
+	<Item text="Create pages" url="/en-us/concepts/onenote-create-page" />
+	<Item text="Update page content" url="/en-us/concepts/onenote_update_page" />
+	<Item text="Create absolute positioned elements" url="/en-us/concepts/onenote-abs-pos" />
+	<Item text="Add images, videos, and files" url="/en-us/concepts/onenote_images_files" />
+	<Item text="Extract data" url="/en-us/concepts/onenote-extract-data" />
+	<Item text="Input and output HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="Understand input and output HTML when you're creating,updating, or parsing returned OneNote page content." />
   </Item>
   <Item text="Personal contacts" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
@@ -72,7 +72,7 @@
   <Item text="Teamwork (preview)" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" />
   <Item text="Workbooks and charts" ProdTag="Excel" url="/en-us/concepts/excel-concept-overview" >
 	  <Item text="Manage sessions" url="/en-us/concepts/excel-manage-sessions" />
-	  <Item text="Display a chart image" url="/en-us/concepts/excel-display-chart-imageh" />
+	  <Item text="Display a chart image" url="/en-us/concepts/excel-display-chart-image" />
 	  <Item text="Use workbook functions" url="/en-us/concepts/excel-use-functions" />
 	  <Item text="Update a range format" url="/en-us/concepts/excel-update-range-format" />
 	  <Item text="Write data to a workbook" url="/en-us/concepts/excel-write-to-workbook" />
@@ -5042,7 +5042,7 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-	<Item text="Identity and acess" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
+	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Administrative unit" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="An administrative unit provides a conceptual container for User and Group directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users and groups contained within or scoped to an administrative unit to a regional or departmental administrator.">
         <Item text="Create administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to create a new administrativeUnit." />
         <Item text="List administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_list" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to list administrativeUnit objects." />
