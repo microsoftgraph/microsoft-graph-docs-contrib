@@ -14,7 +14,7 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * User's personal OneDrive folders
 
 For instance, you can create a subscription to a specific folder:
-`me/mailfolders('inbox')/messages`
+`me/mailFolders('inbox')/messages`
 
 Or a specific ID:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
@@ -31,17 +31,18 @@ Or on a user's personal OneDrive:
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
-Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type).
+Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](./subscription.md#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting notifications.
 
-In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types. 
+In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types. 
 
-| Permission type                        | Supported resource types in v1.0                                                                                                                                                                                                                                                    |
-| :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegated - work or school account     | [contact](../api-reference/v1.0/resources/contact.md), [conversation](../api-reference/v1.0/resources/conversation.md), [drive](../api-reference/v1.0/resources/drive.md), [event](../api-reference/v1.0/resources/event.md), [message](../api-reference/v1.0/resources/message.md) |
-| Delegated - personal Microsoft account | None                                                                                                                                                                                                                                                                                |
-| Application                            | [contact](../api-reference/v1.0/resources/contact.md), [conversation](../api-reference/v1.0/resources/conversation.md), [event](../api-reference/v1.0/resources/event.md), [message](../api-reference/v1.0/resources/message.md)                                                    |
+| Permission type                        | Supported resource types in v1.0                                 |
+| :------------------------------------- | :--------------------------------------------------------------- |
+| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [message][] |
+| Delegated - personal Microsoft account | None                                                             |
+| Application                            | [contact][], [conversation][], [event][], [message][]            |
+
 
 ## Code samples
 
@@ -72,7 +73,7 @@ Microsoft Graph validates the notification URL in a subscription request before 
   POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
   ClientState: {Data sent in ClientState value in subscription request (if any)}
   ```
- 
+
 2. The client must provide a response with the following characteristics within 10 seconds:
 
   * A 200 (OK) status code.
@@ -95,9 +96,9 @@ Content-Type: application/json
 }
 ```
 
-The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](../api-reference/v1.0/resources/subscription.md) for property definitions and values. Although `clientState` is not required, you must include it to comply with our recommended notification handling process.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](./subscription.md) for property definitions and values. Although `clientState` is not required, you must include it to comply with our recommended notification handling process.
 
-If successful, Microsoft Graph returns a `201 Created` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body.
+If successful, Microsoft Graph returns a `201 Created` code and a [subscription](./subscription.md) object in the body.
 
 ### Azure AD Resource Limitations
 
@@ -119,7 +120,7 @@ The client can renew a subscription with a specific expiration date of up to thr
 
 ### Subscription renewal example
 
-```http
+``` http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id};
 Content-Type: application/json
 {
@@ -127,13 +128,13 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body. The subscription object includes the new expirationDateTime value. 
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](./subscription.md) object in the body. The subscription object includes the new expirationDateTime value. 
 
 ## Deleting a subscription
 
 The client can stop receiving notifications by deleting the subscription using its ID.
 
-```http
+``` http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 
@@ -164,7 +165,7 @@ The notification object has the following properties:
 
 When the user receives an email, Microsoft Graph sends a notification like the following:
 
-```json
+``` json
 {
   "value":[
   {
@@ -203,8 +204,14 @@ Repeat for other notifications in the request.
 
 ## See also
 
-* [Subscription resource type](../api-reference/v1.0/resources/subscription.md)
-* [Get subscription](../api-reference/v1.0/api/subscription_get.md)
-* [Create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md)
+* [Subscription resource type](./subscription.md)
+* [Get subscription](../api/subscription_get.md)
+* [Create subscription](../api/subscription_post_subscriptions.md)
 * [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
+
+[contact]: ./contact.md
+[conversation]: ./conversation.md
+[drive]: ./drive.md
+[event]: ./event.md
+[message]: ./message.md
