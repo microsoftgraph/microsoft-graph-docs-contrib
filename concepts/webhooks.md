@@ -14,7 +14,7 @@ Using the Microsoft Graph REST API, an app can subscribe to changes on the follo
 * User's personal OneDrive folders
 
 For instance, you can create a subscription to a specific folder:
-`me/mailfolders('inbox')/messages`
+`me/mailFolders('inbox')/messages`
 
 Or a specific ID:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
@@ -37,11 +37,12 @@ Apps can also unsubscribe at any time to stop getting notifications.
 
 In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types. 
 
-| Permission type                        | Supported resource types in v1.0                                                                                                                                                                                                                                                    |
-| :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegated - work or school account     | [contact](../api-reference/v1.0/resources/contact.md), [conversation](../api-reference/v1.0/resources/conversation.md), [drive](../api-reference/v1.0/resources/drive.md), [event](../api-reference/v1.0/resources/event.md), [message](../api-reference/v1.0/resources/message.md) |
-| Delegated - personal Microsoft account | None                                                                                                                                                                                                                                                                                |
-| Application                            | [contact](../api-reference/v1.0/resources/contact.md), [conversation](../api-reference/v1.0/resources/conversation.md), [event](../api-reference/v1.0/resources/event.md), [message](../api-reference/v1.0/resources/message.md)                                                    |
+| Permission type                        | Supported resource types in v1.0                                 |
+| :------------------------------------- | :--------------------------------------------------------------- |
+| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [message][] |
+| Delegated - personal Microsoft account | None                                                             |
+| Application                            | [contact][], [conversation][], [event][], [message][]            |
+
 
 ## Code samples
 
@@ -72,7 +73,7 @@ Microsoft Graph validates the notification URL in a subscription request before 
   POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
   ClientState: {Data sent in ClientState value in subscription request (if any)}
   ```
- 
+
 2. The client must provide a response with the following characteristics within 10 seconds:
 
   * A 200 (OK) status code.
@@ -119,7 +120,7 @@ The client can renew a subscription with a specific expiration date of up to thr
 
 ### Subscription renewal example
 
-```http
+``` http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id};
 Content-Type: application/json
 {
@@ -133,7 +134,7 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](../a
 
 The client can stop receiving notifications by deleting the subscription using its ID.
 
-```http
+``` http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 
@@ -164,7 +165,7 @@ The notification object has the following properties:
 
 When the user receives an email, Microsoft Graph sends a notification like the following:
 
-```json
+``` json
 {
   "value":[
   {
@@ -208,3 +209,9 @@ Repeat for other notifications in the request.
 * [Create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md)
 * [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
+
+[contact]: ../api-reference/v1.0/resources/contact.md
+[conversation]: ../api-reference/v1.0/resources/conversation.md
+[drive]: ../api-reference/v1.0/resources/drive.md
+[event]: ../api-reference/v1.0/resources/event.md
+[message]: ../api-reference/v1.0/resources/message.md
