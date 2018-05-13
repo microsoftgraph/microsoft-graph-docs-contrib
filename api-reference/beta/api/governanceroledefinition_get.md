@@ -1,27 +1,44 @@
-# governanceRoleDefinition: Get
+# Get governanceRoleDefinition
 
-Retrieve the properties and relationships of a role definition entity.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-### HTTP request
+Retrieve the properties and relationships of a [governanceRoleDefinition](../resources/governanceroledefinition.md).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleDefinition](../resources/governanceroledefinition.md) belongs to.
+
+## HTTP request
 
 ```http
-GET /privilegedAccess/<id>/roleDefinitions/<id>
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
+GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
+## Optional query parameters
+This method does **not** support the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-### Request body
+
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [governanceRoleDefinition](../resources/governanceroledefinition.md) object in the response body.
 ### Example : 
-Get details of role Definition "Azure Service Deploy Release Management Contributor" in subscription "Wingtip Toys - Prod"
+Get details of role Definition "DNS Zone Contributor" in subscription "Wingtip Toys - Prod"
 ##### Request
 ```http
-GET https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleDefinitions/21d96096-b162-414a-8302-d8354f9d91b2
+GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions/00efc9e0-1b96-4e9a-99a3-a3df0735cf88
 ```
 ##### Response
 ```http
@@ -30,10 +47,11 @@ Content-type: application/json
 Content-length: 174
 
 {
-  "@odata.context":"https://api.azrbac.mspim.azure.com/api/v1/$metadata#roleDefinitions/$entity",
-  "id":"21d96096-b162-414a-8302-d8354f9d91b2",
-  "resourceId":"85dfe48a-55d3-49fc-8f36-ee14b7f6f720",
-  "externalId":null,
-  "displayName":"Azure Service Deploy Release Management Contributor"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleDefinitions/$entity",
+    "id": "00efc9e0-1b96-4e9a-99a3-a3df0735cf88",
+    "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+    "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authorization/roleDefinitions/befefa01-2a29-4197-83a8-272ff33ce314",
+    "templateId": "befefa01-2a29-4197-83a8-272ff33ce314",
+    "displayName": "DNS Zone Contributor"
 }
 ```

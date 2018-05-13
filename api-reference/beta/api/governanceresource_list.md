@@ -1,29 +1,40 @@
-# List resources
+# List governanceResources
 
-Retrieve a collection of resources that the requestor has access to.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-### HTTP request
+Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor **has access to**.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+## HTTP request
 ```http
-GET /privilegedAccess/<id>/resources
+GET /privilegedAccess/azureResources/resources
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.
-### Examples
+## Examples
 
 List all resources I can currently access to
 ##### Request
 ```http
-GET https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/resources
+GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
 ##### Response
 
@@ -33,31 +44,32 @@ Content-type: application/json
 Content-Length: 1289
 
 {
-	"@odata.context":"https://graph.microsoft.com/beta/$metadata#resources",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceResources",
 	"value":[
-	{
-	"@odata.id":"https://graph.microsoft.com/beta/resources('ee33e978-dc0b-40ee-9db3-fb9a0dae41e8')",
-	"id":"ee33e978-dc0b-40ee-9db3-fb9a0dae41e8",
-	"externalId":"/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737a0",
-	"type":"subscription",
-	"displayName":"Microsoft Azure Internal Consumption",
-	"status":"Active"
- 	},
- 	{
-	"@odata.id":"https://graph.microsoft.com/beta/resources('93b5660d-a79a-40fc-951f-88ef2eac2608')",
-	"id":"93b5660d-a79a-40fc-951f-88ef2eac2608",
-	"externalId":"/subscriptions/20d27ca6-0bc7-4396-bc31-be959acf3d46",
-	"type":"subscription",
-	"displayName":"Subscription for debac@microsoft.com",
-	"status":"Active"
-	},
-	{
-	"@odata.id":"https://graph.microsoft.com/beta/resources('300c6d07-f908-46d4-b4c2-307f786a9832')",
-	"id":"300c6d07-f908-46d4-b4c2-307f786a9832",
-	"externalId":"/subscriptions/ad5b7423-de55-4d5c-b604-f5806571b3c1",
-	"type":"subscription",
-	"displayName":"Subscription5 for anujc@microsoft.com",
-	"status":"Active"
-	}]
+        {
+            "id": "fb016e3a-c3ed-4d9d-96b6-a54cd4f0b735",
+            "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/resourceGroups/AnujRG/providers/Microsoft.Storage/storageAccounts/anujstoragefimdev",
+            "type": "Microsoft.Storage/storageAccounts",
+            "displayName": "anujstoragefimdev",
+            "status": "Active",
+            "onboardDateTime": null
+        },
+        {
+            "id": "0e0e4461-0c46-4d13-bf69-7cacbec75471",
+            "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/resourceGroups/ARPJ-TESTRG-01/providers/Microsoft.Compute/virtualMachines/APRJ-VM-01-T",
+            "type": "Microsoft.Compute/virtualMachines",
+            "displayName": "APRJ-VM-01-T",
+            "status": "Active",
+            "onboardDateTime": null
+        },
+        {
+            "id": "c072eb85-e47b-4627-81cb-5af82a8fc9fb",
+            "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/resourceGroups/ARPJ-TESTRG-01/providers/Microsoft.Compute/virtualMachines/APRJ-VM-01-T/extensions/IaaSAntimalware",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "displayName": "APRJ-VM-01-T/IaaSAntimalware",
+            "status": "Active",
+            "onboardDateTime": null
+        }
+	]
 }
 ```

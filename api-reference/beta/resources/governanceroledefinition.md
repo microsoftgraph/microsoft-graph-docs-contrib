@@ -1,7 +1,9 @@
 # governanceRoleDefinition 
 Represents the role definitions. 
 
-* For `pimforazurerbac` scenario, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+* For scope of Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc.
 
 
 ### Methods

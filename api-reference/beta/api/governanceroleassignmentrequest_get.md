@@ -1,32 +1,47 @@
-# governanceRoleAssignmentRequest: Get
+# Get governanceRoleAssignmentRequest
 
-Get a role assignment request. 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-### HTTP request
+Get a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+Besides the permission scope, it requires the requestor 
+*   to have at least one role assignment on the resource; or
+*   is the subject of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+
+## HTTP request
 
 ```http
-GET /privilegedAccess/<id>/roleAssignmentRequests/<id>
+GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
 ### Response
 If successful, this method returns a `200 OK` response code and a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.
 
-### Example : 
+## Example : 
 Get a role assignment request
 ##### Request
 
 ```http
-GET https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee?$expand=subject,roleDefinition($expand=resource)
+GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/e68ff888-4af5-4ccb-8b74-39156090344b
 ```
 ##### Response
 
@@ -36,65 +51,23 @@ Content-type: application/json
 Content-length: 279
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleAssignmentRequests",
-    "value":
-        {
-            "id": "7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee",
-            "resourceId": "bc6f10e6-6dd9-4393-853e-09e13c036b17",
-            "roleDefinitionId": "7fd64851-3279-459b-b614-e2b2ba760f5b",
-            "subjectId": "795ed4a8-e4e5-48f5-b60c-ee9845a7a793",
-            "assignmentState": "Eligible",
-            "requestType": "AdminAdd",
-            "requestedDateTime": "2017-09-27T23:01:44.127Z",
-            "roleAssignmentStartDateTime": "2017-10-05T23:01:15.99Z",
-            "status": "Granted",
-            "reason": null,
-            "statusDetail": [
-                {
-                    "key": "AdminRequestRule",
-                    "value": "Grant"
-                },
-                {
-                    "key": "ExpirationRule",
-                    "value": "Grant"
-                },
-                {
-                    "key": "MfaRule",
-                    "value": "Grant"
-                }
-            ],
-            "schedule": {
-                "duration": "PT0S",
-                "type": "Once",
-                "details": null,
-                "startDateTime": "2017-10-05T23:01:15.99Z",
-                "isPermanent": false,
-                "stopDateTime": "2017-12-26T23:01:15.99Z"
-            },
-            "linkedEligibleRoleAssignmentId": null,
-            "subject@odata.context": "https://graph.microsoft.com/beta/$metadata#roleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/subject/$entity",
-            "subject": {
-                "id": "795ed4a8-e4e5-48f5-b60c-ee9845a7a793",
-                "displayName": "alpha",
-                "type": "User",
-                "principalName": "alpha@microsoft.com",
-                "email": "alpha@microsoft.com"
-            },
-            "roleDefinition@odata.context": "https://graph.microsoft.com/beta/$metadata#roleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/roleDefinition/$entity",
-            "roleDefinition": {
-                "id": "7fd64851-3279-459b-b614-e2b2ba760f5b",
-                "templateId": "7fd64851-3279-459b-b614-e2b2ba760f5b",
-                "displayName": "Office DevOps",
-                "ruleSettings": [],
-                "resource@odata.context": "https://graph.microsoft.com/beta/$metadata#roleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/roleDefinition/resource/$entity",
-                "resource": {
-                    "id": "bc6f10e6-6dd9-4393-853e-09e13c036b17",
-                    "externalId": "/subscriptions/b3797212-a671-4ab5-b866-d71fd4159334",
-                    "displayName": "alpha",
-                    "resourceType": "subscription",
-                    "status": "Active",
-                }
-            }
-        }
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
+  "id":"e68ff888-4af5-4ccb-8b74-39156090344b",
+  "resourceId":"ec3a00f7-81dc-43b3-bbe7-650d3a5f7d46",
+  "roleDefinitionId":"be0767b9-2c31-4b0d-b820-726228e7ff5c",
+  "subjectId":"a4c5a837-b546-4ec5-a7df-e61547a46a4b",
+  "linkedEligibleRoleAssignmentId":"",
+  "type":"AdminRemove",
+  "assignmentState":"Eligible",
+  "requestedDateTime":"2018-05-09T21:26:15.73-07:00",
+  "roleAssignmentStartDateTime":null,
+  "roleAssignmentEndDateTime":null,
+  "reason":null,
+  "status":{
+    "status":"Closed",
+    "subStatus":"Revoked",
+    "statusDetails":[]
+  },
+  "schedule":null
 }
 ```

@@ -1,11 +1,23 @@
-# List role definitions on a resource
+# List governanceRoleDefinitions
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get a collection of role definitions on a resource.
+Get a collection of [governanceRoleDefinition](../resources/governanceroledefinition.md) on a resource.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
 
 ### HTTP request
 ```http
-GET /privilegedAccess/<id>/resources/<id>/roleDefinitions
-GET /privilegedAccess/<id>/roleDefinitions?$filter=resourceId+eq+`<resourceId>`
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
+GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -24,7 +36,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
 Get all role definitions of subscription "Wingtip Toys - Prod"
 ##### Request
 ```http
-GET https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  
+GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  
 ```
 ##### Response
 ```http
@@ -33,51 +45,29 @@ Content-type: application/json
 Content-Length: 21906
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#resources('e5e7d29d-5465-45ac-885f-4716a5ee74b5')/roleDefinitions",
-    "value":[
-    {
-      "id":"25cbd04a-2ccf-4ec8-be64-e903c3a1ea91",
-      "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-      "externalId":null,
-      "templateId":"25cbd04a-2ccf-4ec8-be64-e903c3a1ea91",
-      "displayName":"Custom Role 3",
-    },
-    {
-      "id":"a67ab505-f28a-4d05-919f-e7ba1c9e126c",
-      "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-      "externalId":null,
-      "templateId":"a67ab505-f28a-4d05-919f-e7ba1c9e126c",
-      "displayName":"Custom View Role",
-    },
-    {
-      "id":"6e450c50-3f8d-4740-a2f5-35032016ae85",
-      "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-      "externalId":null,
-      "templateId":"6e450c50-3f8d-4740-a2f5-35032016ae85",
-      "displayName":"Custom View VM Role",
-    },
-    {
-      "id":"312a565d-c81f-4fd8-895a-4e21e48d571c",
-      "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-      "externalId":null,
-      "templateId":"312a565d-c81f-4fd8-895a-4e21e48d571c",
-      "displayName":"API Management Service Contributor",
-    },
-    {
-      "id":"e022efe7-f5ba-4159-bbe4-b44f577e9b61",
-      "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-      "externalId":null,
-      "templateId":"e022efe7-f5ba-4159-bbe4-b44f577e9b61",
-      "displayName":"API Management Service Operator Role",
-    },
-    ...
-    {
-      "id":"de139f84-1756-47ae-9be6-808fbbe84772",
-      "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-      "externalId":null,
-      "templateId":"de139f84-1756-47ae-9be6-808fbbe84772",
-      "displayName":"Website Contributor",
-    }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleDefinitions",
+    "value": [
+        {
+            "id": "00efc9e0-1b96-4e9a-99a3-a3df0735cf88",
+            "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+            "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authorization/roleDefinitions/befefa01-2a29-4197-83a8-272ff33ce314",
+            "templateId": "befefa01-2a29-4197-83a8-272ff33ce314",
+            "displayName": "DNS Zone Contributor"
+        },
+        {
+            "id": "051f7264-a992-429a-b345-90415af9f917",
+            "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+            "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authorization/roleDefinitions/c12c1c16-33a1-487b-954d-41c89c60f349",
+            "templateId": "c12c1c16-33a1-487b-954d-41c89c60f349",
+            "displayName": "Reader and Data Access"
+        },
+        {
+            "id": "0789c03d-445d-40ab-aed3-d110a98146c7",
+            "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+            "externalId": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d/providers/Microsoft.Authorization/roleDefinitions/5d28c62d-5b37-4476-8438-e587778df237",
+            "templateId": "5d28c62d-5b37-4476-8438-e587778df237",
+            "displayName": "New Relic APM Account Contributor"
+        },
   ]
 }
 ```

@@ -1,12 +1,14 @@
 # governanceRoleSetting
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents a set of configurations on each role definition that needs to be evaluated against when role assignments created or modified. For examples, role settings may include "maximum assignment duration", "MFA required on activation", and etc.
 
 ### Methods
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
-|[List](../api/governancerolesetting_list.md) | [governanceRoleSetting](governancerolesetting.md) collection|List a collection of role settings on a resource.Note: `$filter=resourceId+eq+'<resourceId>'` is required in the query.|
+|[List](../api/governancerolesetting_list.md) | [governanceRoleSetting](governancerolesetting.md) collection|List a collection of role settings on a resource.|
 |[Get](../api/governancerolesetting_get.md) |  [governanceRoleSetting](rolesetting.md) |Read properties and relationships of a role setting.|
 |[Update](../api/governancerolesetting_update.md) | [governanceRoleSetting](rolesetting.md)	|Update a role setting object. |
 

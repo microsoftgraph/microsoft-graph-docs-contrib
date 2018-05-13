@@ -1,20 +1,33 @@
-# Update
+# Update governanceRoleSetting
 
-Update the properties of a role setting object.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-### HTTP request
+Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+Besides the permission scope, this API requires the requestor to have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
+## HTTP request
 
 ```http
-PATCH /privilegedAccess/<id>/roleSettings/<id>
+PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-### Optional request headers
+## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
+| Content-type  | application/json|
 
 
-### Request body
-In the request body, supply the values for relevant fields that should be updated. 
+## Request body
+In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that needs to be updated. 
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -23,9 +36,17 @@ In the request body, supply the values for relevant fields that should be update
 |userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|The rule settings that are evaluated when a user tries to add an eligible role assignment. This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.|
 |userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|The rule settings that are evaluated when a user tries to activate his role assignment.|
 
-### Response
-If successful, this method returns a `204 No Cotent` response code.
-### Example : 
+## Response
+If successful, this method returns `204 NoContent` response code. It does not return anything in the response body. 
+
+## Error codes
+This API follows the standard of HTTP codes. Besides, the custom error codes are shown below.
+|Error code     | Error message              | Details
+|:--------------------| :---------------------|:--------------------|
+| 400 BadRequest | RoleSettingNotFound | The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.
+| 400 BadRequest | InvalidRoleSetting    | The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.
+
+## Example : 
 Update role setting for "Custom Role 3" in subscription "Wingtip Toys - Prod"
 ##### Request
 
@@ -35,10 +56,7 @@ Content-type: application/json
 Content-length: 350
 
 {
-  "adminEligibleSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"}],
-  "adminMemberSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":43200}"},{"ruleIdentifier":"MfaRule","setting":"{\"mfaRequired\":false}"},{"ruleIdentifier":"JustificationRule","setting":"{\"required\":true}"}],
-  "userEligibleSettings":[],
-  "userMemberSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":540}"},{"ruleIdentifier":"MfaRule","setting":"{\"mfaRequired\":false}"},{"ruleIdentifier":"JustificationRule","setting":"{\"required\":true}"},{"ruleIdentifier":"ApprovalRule","setting":"{\"enabled\":false,\"approvers\":[{\"id\":\"b080efb4-4720-4eca-b103-d507259069e0\",\"displayName\":\"Sankara Srinivas\",\"type\":\"User\",\"email\":\"v-savelp@fimdev.net\"}]}"}]
+  "adminEligibleSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"}]
 }
 ```
 ##### Response

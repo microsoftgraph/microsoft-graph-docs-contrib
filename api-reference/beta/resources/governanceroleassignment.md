@@ -1,16 +1,18 @@
 # governanceRoleAssignment
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents the assignment of a user or group to a role.
 In PIM there are two types of assignments supported:
 1) `Active assignment`: Represents the direct access of users/groups to resources.
-2) `Eligible assignment`: It represents an intermediate stage of previleged access to resource, in between of "no access", and "direct access". Administrators can temporarily park the users/groups at `eligible assignment` in advance. Whenever the access is needed for users/group members, they need to `activate` the `eligible assignment` to gain the instant/direct access to the resource for several hours. After `activation`, an `active assignment` will be created for the users/group members to indicate the activated status.
+2) `Eligible assignment`: It represents an intermediate stage of previleged access to resource, in between of "no access", and "direct access". Administrators can temporarily park the users/groups at `eligible assignment` in advance. Whenever the access is needed for users/group members, `activation` on the `eligible assignment` is needed to gain the instant access to the resource for several hours. After `activation`, an `active assignment` will be created for the users/group members to indicate the activated status.
 
 ### Methods
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
 |[Get](../api/governanceroleassignment_get.md) |  [governanceRoleAssignment](governanceroleassignment.md) |Read properties and relationships of a role assignment entity.|
-|[List](../api/governanceroleassignment_list.md) | [governanceRoleAssignment](governanceroleassignment.md) collection|List a collection of role assignments on a resource. Note: `$filter=resourceId+eq+'<resourceId>'` is required in the query.|
-|[Export](../api/governanceroleassignment_export.md) | octet-stream |Download a collection of role assignments on a resource and save as a `.csv` file. Note: `$filter=resourceId+eq+'<resourceId>'` is required in the query.|
+|[List](../api/governanceroleassignment_list.md) | [governanceRoleAssignment](governanceroleassignment.md) collection|List a collection of role assignments on a resource. |
+|[Export](../api/governanceroleassignment_export.md) | octet-stream |Download a collection of role assignments on a resource and save as a `.csv` file.|
 
 No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleAssignments` entity set. Any creation, update and deletion on `governanceRoleAssignment` are done by `governanceRoleAssignmentRequest`.
 

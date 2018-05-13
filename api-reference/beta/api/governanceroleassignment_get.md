@@ -1,27 +1,49 @@
-# Get a role assignment
+# Get governanceRoleAssignment
 
-Retrieve the properties and relationships of a role assignment.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-### HTTP request
+Retrieve the properties and relationships of a [governanceRoleAssignment](../resources/governanceroleassignment.md).
 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+## HTTP request
+
+1. Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on a resource
+
+    *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
 ```http
-GET /privilegedAccess/<id>/roleAssignments/<id>
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
+GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
+```
+2. Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) of mine
+```http
+GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'{myId}'
 ```
 
-### Request headers
+## Optional query parameters
+This method does **not** supports [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) other than `$filter` to help customize the response.
+
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 ### Response
 If successful, this method returns a `200 OK` response code and [governanceRoleAssignment](../resources/governanceroleassignment.md) object in the response body.
-### Example : 
-Get a single role assignment by id
+## Example : 
+Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on subscription "Wingtip Toys - Prod"
 ##### Request
 ```http
-GET https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleAssignments/9102e255-0f98-45d1-967d-00ddd0fd0200/?$expand=linkedEligibleRoleAssignment,subject,roleDefinition($expand=resource)
+GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
 ##### Response
 
@@ -31,37 +53,18 @@ Content-type: application/json
 Content-length: 182
 
 {
-  "id": "9102e255-0f98-45d1-967d-00ddd0fd0200",
-  "resourceId":"8575d82b-c7b6-4c69-8eee-1d452985a64e",
-  "roleDefinitionId":"312a565d-c81f-4fd8-895a-4e21e48d571c",
-  "subjectId":"795ed4a8-e4e5-48f5-b60c-ee9845a7a790",
-  "linkedEligibleAssignmentId":null,   
-  "externalId": "/subscriptions/f90f7b96-b06f-4ee4-bc38-a001deb2375f/providers/Microsoft.Authorization/roleAssignments/9102e255-0f98-45d1-967d-00ddd0fd0200",
-  "isPermanent": true,
-  "endDateTime": null,
-  "startDateTime": null,
-  "assignmentState": "Member",
-  "memberType": "Direct",
-  "linkedEligibleAssignment": null,
-  "subject": {
-    "id": "795ed4a8-e4e5-48f5-b60c-ee9845a7a790",
-    "displayName": "af",
-    "type": "User",
-    "principalName": "af@foo.com",
-    "email": "af@foo.com"
-  },
-  "roleDefinition": {
-    "id": "312a565d-c81f-4fd8-895a-4e21e48d571c",
-    "resourceId": "8575d82b-c7b6-4c69-8eee-1d452985a64e",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignments/$entity",
+    "id": "0ba78f41-ee7a-4227-adb9-1499431b2164",
+    "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+    "roleDefinitionId": "8b4d1d51-08e9-4254-b0a6-b16177aae376",
+    "subjectId": "74487eb5-1630-4fa8-9581-0bb076ea5de3",
+    "linkedEligibleRoleAssignmentId": null,
     "externalId": null,
-    "templateId": "312a565d-c81f-4fd8-895a-4e21e48d571c",
-    "displayName": "API Management Service Contributor",
-    "resource": {
-      "id": "8575d82b-c7b6-4c69-8eee-1d452985a64e",
-      "externalId": "/subscriptions/f90f7b96-b06f-4ee4-bc38-a001deb2375f",
-      "displayName": "Deep Dive",
-      "type": "subscription",
-    }
-  }
+    "isPermanent": false,
+    "startDateTime": "2018-01-22T23:47:19.687Z",
+    "endDateTime": "2018-07-21T23:47:02.887Z",
+    "memberType": "Direct",
+    "assignmentState": "Eligible",
+    "status": "Provisioned"
 }
 ```

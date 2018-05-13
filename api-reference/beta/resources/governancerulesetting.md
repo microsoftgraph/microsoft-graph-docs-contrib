@@ -1,5 +1,7 @@
 # governanceRuleSetting
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents the rules that compose the role settings. It is the type of each rule to evaluate role assignments.
 
 

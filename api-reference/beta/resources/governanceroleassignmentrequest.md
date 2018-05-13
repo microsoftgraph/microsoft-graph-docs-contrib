@@ -1,4 +1,7 @@
 # governanceRoleAssignmentRequest
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Represents the request for role assignment operations in Privilegd Identity Management.
 
 `governanceRoleAssignmentRequest` is a request-modeled entity used to manage the life cycle of role assignments. It represents the intention or decision of the users and administrators, and also provide flexibility to implement recurrent schduling, approval gates, and etc, comparing to directly expose `POST`, `PUT`, `DELETE` on `governanceRoleAssignment`.

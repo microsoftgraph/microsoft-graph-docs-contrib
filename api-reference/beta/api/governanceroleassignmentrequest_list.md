@@ -1,33 +1,60 @@
-# list role assignment requests on a resource
+# List governanceRoleAssignmentRequests
 
-Retrieve a collection of role assignment request on a single resource. 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-### HTTP request
+Retrieve a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+## HTTP request
+
+1.  List a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) on a resource
+    
+    *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
 ```http
-GET /privilegedAccess/<id>/roleAssignmentRequests?$filter=resourceId+eq+'<resourceId>'
-GET /privilegedAccess/<id>/resources/<id>/roleAssignmentRequests
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
+GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-### Optional query parameters
+2. List a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) of mine
+```http
+GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
+```
+
+3. List a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) that are pending for administrator decisions
+    
+    *Note: Besides the permission scope, it requires the requestor to have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.* 
+```http
+GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
+```
+
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
 
-### Response
-If successful, this method returns a `200 OK` response code and collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) objects in the response body.
+## Response
+If successful, this method returns a `200 OK` response code and a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) objects in the response body.
 
-### Example : 
-Administrators query all the pending role assignment requests for subscription "Wingtip Toys - Prod"
+### Example
+
+Administrators query pending role assignment requests for subscription "Wingtip Toys - Prod"
 ##### Request
 
 ```http
-GET https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleAssignmentRequests?$filter=resourceId+eq+'bc6f10e6-6dd9-4393-853e-09e13c036b17'&$expand=subject,roleDefinition($expand=resource)&$filter=(status+eq+'Accepted'+or+status+eq+'PendingEvaluation'+or+status+eq+'Granted'+or+status+eq+'PendingProvisioning')
+GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
 ##### Response
 
@@ -37,66 +64,77 @@ Content-type: application/json
 Content-length: 279
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleAssignmentRequests",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests",
     "value": [
         {
-            "id": "7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee",
-            "resourceId": "bc6f10e6-6dd9-4393-853e-09e13c036b17",
-            "roleDefinitionId": "7fd64851-3279-459b-b614-e2b2ba760f5b",
-            "subjectId": "795ed4a8-e4e5-48f5-b60c-ee9845a7a793",
-            "assignmentState": "Eligible",
-            "requestType": "AdminAdd",
-            "requestedDateTime": "2017-09-27T23:01:44.127Z",
-            "roleAssignmentStartDateTime": "2017-10-05T23:01:15.99Z",
-            "status": "Granted",
-            "reason": null,
-            "statusDetail": [
-                {
-                    "key": "AdminRequestRule",
-                    "value": "Grant"
-                },
-                {
-                    "key": "ExpirationRule",
-                    "value": "Grant"
-                },
-                {
-                    "key": "MfaRule",
-                    "value": "Grant"
-                }
-            ],
-            "schedule": {
-                "duration": "PT0S",
-                "type": "Once",
-                "details": null,
-                "startDateTime": "2017-10-05T23:01:15.99Z",
-                "isPermanent": false,
-                "stopDateTime": "2017-12-26T23:01:15.99Z"
-            },
-            "linkedEligibleRoleAssignmentId": null,
-            "subject@odata.context": "https://graph.microsoft.com/beta/$metadata#roleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/subject/$entity",
-            "subject": {
-                "id": "795ed4a8-e4e5-48f5-b60c-ee9845a7a793",
-                "displayName": "alpha",
-                "type": "User",
-                "principalName": "alpha@microsoft.com",
-                "email": "alpha@microsoft.com"
-            },
-            "roleDefinition@odata.context": "https://graph.microsoft.com/beta/$metadata#roleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/roleDefinition/$entity",
-            "roleDefinition": {
-                "id": "7fd64851-3279-459b-b614-e2b2ba760f5b",
-                "templateId": "7fd64851-3279-459b-b614-e2b2ba760f5b",
-                "displayName": "Office DevOps",
-                "ruleSettings": [],
-                "resource@odata.context": "https://graph.microsoft.com/beta/$metadata#roleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/roleDefinition/resource/$entity",
-                "resource": {
-                    "id": "bc6f10e6-6dd9-4393-853e-09e13c036b17",
-                    "externalId": "/subscriptions/b3797212-a671-4ab5-b866-d71fd4159334",
-                    "displayName": "alpha",
-                    "resourceType": "subscription",
-                    "status": "Active",
-                }
+            "id": "d75c65d8-9e66-44ff-b1cd-1ab0947fde1d",
+            "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+            "roleDefinitionId": "8b4d1d51-08e9-4254-b0a6-b16177aae376",
+            "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+            "linkedEligibleRoleAssignmentId": "",
+            "type": "UserRemove",
+            "assignmentState": "Active",
+            "requestedDateTime": "2018-01-09T23:41:34.367Z",
+            "roleAssignmentStartDateTime": null,
+            "roleAssignmentEndDateTime": null,
+            "reason": "Deactivation request",
+            "schedule": null,
+            "status": {
+                "status": "Closed",
+                "subStatus": "Revoked",
+                "statusDetails": []
             }
-        }
+        },
+        {
+            "id": "38f42071-3e81-4191-8c0b-11450fb6b547",
+            "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+            "roleDefinitionId": "8b4d1d51-08e9-4254-b0a6-b16177aae376",
+            "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+            "linkedEligibleRoleAssignmentId": "",
+            "type": "UserAdd",
+            "assignmentState": "Active",
+            "requestedDateTime": "2018-01-10T20:58:09.163Z",
+            "roleAssignmentStartDateTime": "2018-01-10T20:58:11.363Z",
+            "roleAssignmentEndDateTime": "2018-01-11T01:58:11.363914Z",
+            "reason": "test activations",
+            "status": {
+                "status": "Closed",
+                "subStatus": "Provisioned",
+                "statusDetails": [
+                    {
+                        "key": "EligibilityRule",
+                        "value": "Grant"
+                    },
+                    {
+                        "key": "ExpirationRule",
+                        "value": "Grant"
+                    },
+                    {
+                        "key": "MfaRule",
+                        "value": "Grant"
+                    },
+                    {
+                        "key": "JustificationRule",
+                        "value": "Grant"
+                    },
+                    {
+                        "key": "ActivationDayRule",
+                        "value": "Grant"
+                    },
+                    {
+                        "key": "ApprovalRule",
+                        "value": "Grant"
+                    }
+                ]
+            },
+            "schedule": {
+                "type": "Once",
+                "startDateTime": "2018-01-10T20:58:11.363914Z",
+                "endDateTime": "0001-01-01T00:00:00Z",
+                "duration": "PT5H"
+            }
+        },
+        ...
     ]
 }
 ```

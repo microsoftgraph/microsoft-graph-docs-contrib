@@ -1,29 +1,27 @@
-# governanceScenario
+# privilegedAccess
 
-An entity of `governanceScenario` represents a sub area of the `Governance` story.  It could be defined as "service + provider" (like `pimforazurerbac` stands for PIM service for Azure RBAC roles), or a "service" itself. In this set of API, we are onboarding an entity set of `governanceScenario` type, called `privilegedAccess`, indicating PIM service; and `privilegedAccess('pimforazurerbac')` as the specific scenario identifying PIM service for Azure RBAC roles.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-### Methods
-| Method		  | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get](../api/governancescenario_get.md) | [governanceScenario](governancescenario.md) |Read properties and relationships of a single governance scenario entity specified by id.|
+An entity of `privilegedAccess` represents a group of functionalities provided by privileged Identity Management service.  Different instance of `privilegedAccess` represents different providers managed by PIM, for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources.
 
-`governanceScenario` is read-only for now. No `POST`, `PUT`, `PATCH`, or `DELETE` on `privilegedAccess` entity set is supported.
+
+`privilegedAccess` is read-only for now. No `POST`, `PUT`, `PATCH`, or `DELETE` on `privilegedAccess` entity set is supported.
 
 ### Properties
 | Key | Property	| Type	    |Description|
 |:----|:----------|:----------|:----------|
-|✓    |id         |String     |The id of the scenario.|
-|     |displayName|String     |The display name of the scenario.|
+|✓    |id         |String     |The id of the provider managed by PIM.|
+|     |displayName|String     |The display name of the provider managed by PIM.|
 
 
 ### Relationships
 | Relationship   | Type	                                        |Description|
 |:---------------|:---------------------------------------------|:----------|
-|resources       |[governanceResource](governanceResource.md) collection            |A collection of resources for the scenario.|
-|roleAssignments |[governanceRoleAssignment](governanceroleassignment.md) collection|A collection of role assignments for the scenario.|
-|roleDefinitions |[governanceRoleDefinition](governanceroledefinition.md) collection|A collection of role defintions for the scenario.|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](roleassignmentrequest.md) collection|A collection of role assignment requests for the scenario.|
-|roleSettings |[governanceRoleSetting](governancerolesetting.md) collection|A collection of role settings for the scenario.|
+|resources       |[governanceResource](governanceResource.md) collection            |A collection of resources for the provider.|
+|roleAssignments |[governanceRoleAssignment](governanceroleassignment.md) collection|A collection of role assignments for the provider.|
+|roleDefinitions |[governanceRoleDefinition](governanceroledefinition.md) collection|A collection of role defintions for the provider.|
+|roleAssignmentRequests |[governanceRoleAssignmentRequest](roleassignmentrequest.md) collection|A collection of role assignment requests for the provider.|
+|roleSettings |[governanceRoleSetting](governancerolesetting.md) collection|A collection of role settings for the provider.|
 
 
 ### JSON representation

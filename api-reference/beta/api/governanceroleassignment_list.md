@@ -1,30 +1,51 @@
-# List role assignments on a resource
+# List governanceRoleAssignments
 
-Retrieve a collection of role assignments on a resource.
-### HTTP request
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
+Retrieve a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+
+## HTTP request
+
+1. List a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) on a resource
+
+    *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
 ```http
-GET /privilegedAccess/<id>/resources/<id>/roleAssignments
-GET /privilegedAccess/<id>/roleAssignments?$filter=resourceId+eq+'<resourceId>'
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
+GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-### Optional query parameters
+2. List a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) of mine
+```http
+GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
+```
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+
+## Response
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) objects in the response body.
 ### Example:
 Get my role assignments on subscription "Wingtip Toys - Prod"
 ##### Request
 
 ```http
-GET https://graph.microsoft.com/privilegedAccess/pimforazurerbac/roleAssignments?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'&$expand=subject,roleDefinition($expand=resource)
+GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'918e54be-12c4-4f4c-a6d3-2ee0e3661c51'
 ```
 ##### Response
 
@@ -34,44 +55,37 @@ Content-type: application/json
 Content-Length: 2062
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#roleAssignments",
-  "value":[
-    {
-      "id":"2d8bb67d-c8e8-4a89-9a60-3ddf6545c970",
-      "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-      "roleDefinitionId":"8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
-      "subjectId":"918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
-      "linkedEligibleRoleAssignmentId":null,      
-      "externalId":null,
-      "isPermanent":false,
-      "endDateTime":"2018-04-02T17:29:00.44Z",
-      "startDateTime":"2017-10-04T17:29:18.08Z",
-      "assignmentState":"Eligible",
-      "memberType":"Direct",
-      "subject@odata.context":"https://graph.microsoft.com/beta/$metadata#roleAssignments('2d8bb67d-c8e8-4a89-9a60-3ddf6545c970')/subject/$entity",
-      "subject":{
-        "id":"918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
-        "displayName":"nawu",
-        "type":"User",
-        "principalName":"nawu@fimdev.net",
-        "email":"nawu@microsoft.com"
-      },
-      "roleDefinition@odata.context":"https://graph.microsoft.com/beta/$metadata#roleAssignments('2d8bb67d-c8e8-4a89-9a60-3ddf6545c970')/roleDefinition/$entity",
-      "roleDefinition":{
-        "id":"8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
-        "resourceId":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-        "externalId": null,
-        "templateId":"8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
-        "displayName":"Owner","resource@odata.context":"https://graph.microsoft.com/beta/$metadata#roleAssignments('2d8bb67d-c8e8-4a89-9a60-3ddf6545c970')/roleDefinition/resource/$entity",
-        "resource":{
-          "id":"e5e7d29d-5465-45ac-885f-4716a5ee74b5",
-          "externalId":"/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",
-          "displayName":"Wingtip Toys - Prod",
-          "type":"subscription",
-          "status":"Active"
-        }
-      }
-    }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignments",
+    "value": [
+        {
+            "id": "20f4157d-5837-4356-9630-ebd3a832f227",
+            "resourceId": "fb016e3a-c3ed-4d9d-96b6-a54cd4f0b735",
+            "roleDefinitionId": "bc75b4e6-7403-4243-bf2f-d1f6990be122",
+            "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+            "linkedEligibleRoleAssignmentId": null,
+            "externalId": null,
+            "isPermanent": false,
+            "startDateTime": "2018-03-13T01:19:08.59Z",
+            "endDateTime": "2018-06-11T01:18:37.08Z",
+            "memberType": "Direct",
+            "assignmentState": "Eligible",
+            "status": "Provisioned"
+        },
+        {
+            "id": "e327f4be-42a0-47a2-8579-0a39b025b394",
+            "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
+            "roleDefinitionId": "8b4d1d51-08e9-4254-b0a6-b16177aae376",
+            "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
+            "linkedEligibleRoleAssignmentId": null,
+            "externalId": null,
+            "isPermanent": false,
+            "startDateTime": "2018-03-28T16:56:48.243Z",
+            "endDateTime": "2018-09-24T16:56:30.547Z",
+            "memberType": "Direct",
+            "assignmentState": "Eligible",
+            "status": "Provisioned"
+        },
+        ...
   ]
 }
 ```
