@@ -17,10 +17,10 @@ An entity of `privilegedAccess` represents a group of functionalities provided b
 ### Relationships
 | Relationship   | Type	                                        |Description|
 |:---------------|:---------------------------------------------|:----------|
-|resources       |[governanceResource](../resources/governanceResource.md) collection            |A collection of resources for the provider.|
+|resources       |[governanceResource](../resources/governanceresource.md) collection            |A collection of resources for the provider.|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) collection|A collection of role assignments for the provider.|
 |roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) collection|A collection of role defintions for the provider.|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/roleassignmentrequest.md) collection|A collection of role assignment requests for the provider.|
+|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) collection|A collection of role assignment requests for the provider.|
 |roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md) collection|A collection of role settings for the provider.|
 
 
