@@ -127,8 +127,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|Beta|Added new [teamFunSettings](../api-reference/beta/resources/teamFunSettings.md) entity.|
 |Addition|Beta|Added new [delete channel](../api-reference/beta/api/channel_delete.md) operation.|
 |Addition|Beta|Added new [patch channel](../api-reference/beta/api/channel_patch.md) operation.|
+|Addition|Beta|Added new webUrl property to [team resource](../api-reference/beta/resources/team.md) operation.|
 |Change|Beta|Updated the path to the [channel](../api-reference/beta/resources/channel.md) entity.|
-
 
 ### Project Rome APIs
 
