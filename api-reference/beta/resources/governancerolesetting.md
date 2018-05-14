@@ -9,8 +9,8 @@ Represents a set of configurations on each role definition that needs to be eval
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
 |[List](../api/governancerolesetting_list.md) | [governanceRoleSetting](../resources/governancerolesetting.md) collection|List a collection of role settings on a resource.|
-|[Get](../api/governancerolesetting_get.md) |  [governanceRoleSetting](../resources/rolesetting.md) |Read properties and relationships of a role setting.|
-|[Update](../api/governancerolesetting_update.md) | [governanceRoleSetting](../resources/rolesetting.md)	|Update a role setting object. |
+|[Get](../api/governancerolesetting_get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Read properties and relationships of a role setting.|
+|[Update](../api/governancerolesetting_update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)	|Update a role setting object. |
 
 ### Properties
 | Key |Property	            |Type	                                   |Required |Description|

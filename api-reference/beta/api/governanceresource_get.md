@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of a [governanceResource](../resources/goveranceresource.md) object.
+Retrieve the properties and relationships of a [governanceResource](../resources/governanceresource.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -31,7 +31,7 @@ This method **only** supports  `$select` and `$expand` [OData Query Parameters](
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [governanceResource](../resources/goveranceresource.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [governanceResource](../resources/governanceresource.md) object in the response body.
 
 ## Example
 Get details of subscription "Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5)"

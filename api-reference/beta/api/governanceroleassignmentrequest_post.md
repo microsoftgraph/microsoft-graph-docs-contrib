@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of [governanceRoleAssignmentRe
 |assignmentState|String|Yes|The state of assignment. The value can be ``Eligible`` and ``Active``.|
 |type|String|Yes|The request type. The value can be `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`and `AdminExtend`;|
 |reason|String| |The reason needs to be provided for the role assignment request for audit and review purpose.|
-|schedule|[governanceSchedule](governanceschedule.md)| | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required.|
+|schedule|[governanceSchedule](../resources/governanceschedule.md)| | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required.|
 
 ### Response
 If successful, this method returns `201, Created` response code and [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.
@@ -80,7 +80,7 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 |assignmentState|String|Yes| Eligible / Active|
 |type|String|Yes| AdminAdd|
 |reason|String| depends on role Settings||
-|schedule|[governanceSchedule](governanceschedule.md)|Yes|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
@@ -157,7 +157,7 @@ Content-length: 226
 |assignmentState|String|Yes| Active|
 |type|String|Yes| UserAdd|
 |reason|String| depends on role Settings||
-|schedule|[governanceSchedule](governanceschedule.md)|Yes|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
@@ -245,7 +245,7 @@ Content-type: application/json
 |assignmentState|String|Yes| Active|
 |type|String|Yes| UserRemove|
 |reason|String| No||
-|schedule|[governanceSchedule](governanceschedule.md)|No|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|No|        |
 ##### Request
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
@@ -299,7 +299,7 @@ Content-length: 226
 |assignmentState|String|Yes| Eligible / Active|
 |type|String|Yes| AdminRemove|
 |reason|String| No||
-|schedule|[governanceSchedule](governanceschedule.md)|No|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|No|        |
 ##### Request
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
@@ -352,7 +352,7 @@ Content-length: 226
 |assignmentState|String|Yes| Eligible / Active|
 |type|String|Yes| AdminUpdate|
 |reason|String| depends on roleSettings||
-|schedule|[governanceSchedule](governanceschedule.md)|Yes|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
@@ -423,7 +423,7 @@ Content-length: 226
 |assignmentState|String|Yes| Eligible / Active |
 |type|String|Yes| AdminExtend|
 |reason|String| depends on roleSettings||
-|schedule|[governanceSchedule](governanceschedule.md)|Yes|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
