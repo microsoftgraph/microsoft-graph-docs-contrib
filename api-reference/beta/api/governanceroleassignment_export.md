@@ -1,30 +1,53 @@
-# Download a list of role assignments
+# Export governanceRoleAssignmentRequests
 
-Query a list of role assignments on a resource and download as a `.csv` file.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-### HTTP request
+Retrieve a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) in format of `application/octet-stream`, which can be parsed as `.csv` file in browser.
 
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
+
+
+## HTTP request
+1. Export a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) on a resource
+    
+    *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
+    
 ```http
-GET /privilegedAccess/<id>/roleAssignments/export?$filter=resourceId+eq+'<resourceId>'
+GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
+```
+
+2. Export a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) of mine
+```http
+GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
-If successful, this method returns a `200 OK` response code and  content of type `application/octet-stream`.
+
+## Response
+If successful, this method returns a `200 OK` response code and content of type `application/octet-stream`.
+
 ### Example : 
-Save all role assignments as `.csv` file for role Website Contributor in subscription "Wingtip Toys - Prod" 
+Save all role assignments as `.csv` file in subscription "Wingtip Toys - Prod" 
+
 ##### Request
 
 ```http
-GET https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleAssignments/export?filter=resourceId+eq+'85dfe48a-55d3-49fc-8f36-ee14b7f6f720'&$expand=subject,roleDefinition($expand=resource)
+GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/export?filter=resourceId+eq+'85dfe48a-55d3-49fc-8f36-ee14b7f6f720'
 ```
 ##### Response
 Here is an example of the response. 
