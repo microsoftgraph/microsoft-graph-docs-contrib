@@ -18,7 +18,7 @@ Besides the permission scope, this API requires the requestor to have at least o
 ## HTTP request
 
 ```http
-POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
+POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
 ```
 
 ### Request headers
@@ -32,8 +32,8 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |The reason provided by the administrator for his decision.|
 |decision        |String                 |✓        |The administrator decision of the role assignment request. The value should be updated as `AdminApproved` or `AdminDenied`.|
-|schedule      |[governanceSchedule](governanceschedule.md)|         | The schedule of the role assignment request. For status of `AdminApproved`, it is required.|
-|assignmentState      |String|         | The state of assignment, and the values can be `Eligible` or `Active`. For decision of `AdminApproved`, it is required.|
+|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | The schedule of the role assignment request. For status of `AdminApproved`, it is required.|
+|assignmentState      |String|         | The state of assignment, and the values can be `Eligible` or `Active`. For decision of `AdminApproved`, it is required. |
 ### Response
 This method can only be applied to requests that are in status of `PendingAdminDecision`.
 
