@@ -10,8 +10,8 @@ In PIM there are two types of assignments supported:
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
-|[Get](../api/governanceroleassignment_get.md) |  [governanceRoleAssignment](governanceroleassignment.md) |Read properties and relationships of a role assignment entity.|
-|[List](../api/governanceroleassignment_list.md) | [governanceRoleAssignment](governanceroleassignment.md) collection|List a collection of role assignments on a resource. |
+|[Get](../api/governanceroleassignment_get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Read properties and relationships of a role assignment entity.|
+|[List](../api/governanceroleassignment_list.md) | [governanceRoleAssignment](../resources/governanceroleassignment.md) collection|List a collection of role assignments on a resource. |
 |[Export](../api/governanceroleassignment_export.md) | octet-stream |Download a collection of role assignments on a resource and save as a `.csv` file.|
 
 No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleAssignments` entity set. Any creation, update and deletion on `governanceRoleAssignment` are done by `governanceRoleAssignmentRequest`.
@@ -35,10 +35,10 @@ No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleAssignments` entity set
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|resource|[governanceResource](governanceresource.md)|Read-only. The resource associated with the role assignment. |
-|roleDefinition|[governanceRoleDefinition](governanceroledefinition.md)|Read-only. The role definition associated with the role assignment. |
-|subject|[governanceSubject](governancesubject.md)|Read-only. The subject associated with the role assignment. |
-|linkedEligibleRoleAssignment|[governanceRoleAssignment](governanceroleassignment.md)|Read-only. If this is an `active assignment` and created due to activation on an `eligible assignment`, it represents the object of that `eligible assignment`; Otherwise, the value is `null`. |
+|resource|[governanceResource](../resources/governanceresource.md)|Read-only. The resource associated with the role assignment. |
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Read-only. The role definition associated with the role assignment. |
+|subject|[governanceSubject](../resources/governancesubject.md)|Read-only. The subject associated with the role assignment. |
+|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|Read-only. If this is an `active assignment` and created due to activation on an `eligible assignment`, it represents the object of that `eligible assignment`; Otherwise, the value is `null`. |
 
 ### JSON representation
 

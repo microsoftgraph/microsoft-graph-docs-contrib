@@ -10,11 +10,11 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 
 | Method		  |Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
-|[Get](../api/governanceroleassignmentrequest_get.md) | [governanceRoleAssignmentRequest](governanceroleassignmentrequest.md)|Get a role assignment request specified by id.  
-|[List](../api/governanceroleassignmentrequest_list.md) | [governanceRoleAssignmentRequest](governanceroleassignmentrequest.md)  collection|Get role assignment requests on a resource.|
-|[Create](../api/governanceroleassignmentrequest_post.md)|  [governanceRoleAssignmentRequest](governanceroleassignmentrequest.md)|Create a request to manage the life cycle of existing or new role assignment.|
+|[Get](../api/governanceroleassignmentrequest_get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Get a role assignment request specified by id.  
+|[List](../api/governanceroleassignmentrequest_list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)  collection|Get role assignment requests on a resource.|
+|[Create](../api/governanceroleassignmentrequest_post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Create a request to manage the life cycle of existing or new role assignment.|
 |[Cancel](../api/governanceroleassignmentrequest_cancel.md)|  |Cancel a pending role assignment request.|
-|[UpdateRequest](../api/governanceroleassignmentrequest_updaterequest.md)| [governanceRoleAssignmentRequest](governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
+|[UpdateRequest](../api/governanceroleassignmentrequest_updaterequest.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
 
 ### Properties
 | Key | Property	                | Type	        |Required|Description|
@@ -39,9 +39,9 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 ### Relationships
 | Relationship | Type	                             |Description|
 |:-------------|:----------------------------------|:----------|
-|resource      |[governanceResource](governanceresource.md)            |Read-only. The resource that the request aims to. |
-|roleDefinition|[governanceRoleDefinition](governanceroledefinition.md)|Read-only. The role definition that the request aims to. |
-|subject       |[governanceSubject](governancesubject.md)|Read-only. The user/group principal.|
+|resource      |[governanceResource](../resources/governanceresource.md)            |Read-only. The resource that the request aims to. |
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Read-only. The role definition that the request aims to. |
+|subject       |[governanceSubject](../resources/governancesubject.md)|Read-only. The user/group principal.|
 
 ### JSON representation
 

@@ -10,8 +10,8 @@ Represents the role definitions.
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
-|[List](../api/governanceroledefinition_list.md) | [governanceRoleDefinition](governanceroledefinition.md) collection |List a collection of role definitions on a resource. Note: `$filter=resourceId+eq+'<resourceId>'` is required in the query.|
-|[Get](../api/governanceroledefinition_get.md) | [governanceRoleDefinition](governanceroledefinition.md) |Read properties and relationships of a role definition entity specified by id.|
+|[List](../api/governanceroledefinition_list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) collection |List a collection of role definitions on a resource. Note: `$filter=resourceId+eq+'<resourceId>'` is required in the query.|
+|[Get](../api/governanceroledefinition_get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Read properties and relationships of a role definition entity specified by id.|
 No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set for now.
 ### Properties
 | Key | Property	| Type	    |Description|
@@ -28,8 +28,8 @@ No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|resource|[governanceResource](governanceresource.md)|Read-only. The associated resource for the role definition.|
-|roleSetting|[governanceRoleSetting](governancerolesetting.md)|The associated role setting for the role definition.|
+|resource|[governanceResource](../resources/governanceresource.md)|Read-only. The associated resource for the role definition.|
+|roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|The associated role setting for the role definition.|
 
 ### JSON representation
 

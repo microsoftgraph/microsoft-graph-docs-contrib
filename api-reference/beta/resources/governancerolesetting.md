@@ -8,9 +8,9 @@ Represents a set of configurations on each role definition that needs to be eval
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
-|[List](../api/governancerolesetting_list.md) | [governanceRoleSetting](governancerolesetting.md) collection|List a collection of role settings on a resource.|
-|[Get](../api/governancerolesetting_get.md) |  [governanceRoleSetting](rolesetting.md) |Read properties and relationships of a role setting.|
-|[Update](../api/governancerolesetting_update.md) | [governanceRoleSetting](rolesetting.md)	|Update a role setting object. |
+|[List](../api/governancerolesetting_list.md) | [governanceRoleSetting](../resources/governancerolesetting.md) collection|List a collection of role settings on a resource.|
+|[Get](../api/governancerolesetting_get.md) |  [governanceRoleSetting](../resources/rolesetting.md) |Read properties and relationships of a role setting.|
+|[Update](../api/governancerolesetting_update.md) | [governanceRoleSetting](../resources/rolesetting.md)	|Update a role setting object. |
 
 ### Properties
 | Key |Property	            |Type	                                   |Required |Description|
@@ -21,16 +21,16 @@ Represents a set of configurations on each role definition that needs to be eval
 |     |isDefault            |Boolean                                 |         |Read-only. Indicate if the roleSetting is a default roleSetting|
 |     |lastUpdatedDateTime  |DateTimeOffset                          |         |Read-only. The time when the role setting was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |     |lastUpdatedBy        |String                                  |         |Read-only. The display name of the administrator who last updated the roleSetting.|
-|     |adminEligibleSettings|[governanceRuleSetting](governancerulesetting.md) collection|         |The rule settings that are evaluated when an administrator tries to add an eligible role assignment.|
-|     |adminMemberSettings  |[governanceRuleSetting](governancerulesetting.md) collection|         |The rule settings that are evaluated when an administrator tries to add a direct member role assignment.|
-|     |userEligibleSettings |[governanceRuleSetting](governancerulesetting.md) collection|         |The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now in the `pimforazurerbac` scenario.|
-|     |userMemberSettings   |[governanceRuleSetting](governancerulesetting.md) collection|         |The rule settings that are evaluated when a user tries to activate his role assignment.|
+|     |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|         |The rule settings that are evaluated when an administrator tries to add an eligible role assignment.|
+|     |adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md) collection|         |The rule settings that are evaluated when an administrator tries to add a direct member role assignment.|
+|     |userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md) collection|         |The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now in the `pimforazurerbac` scenario.|
+|     |userMemberSettings   |[governanceRuleSetting](../resources/governancerulesetting.md) collection|         |The rule settings that are evaluated when a user tries to activate his role assignment.|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|resource|[governanceResource](governanceResource.md)|Read-only. The associated resource for this role setting.|
-|roleDefinition|[governanceRoleDefinition](governanceRoleDefinition.md)|Read-only. The role definition that is enforced with this role setting. |
+|resource|[governanceResource](../resources/governanceResource.md)|Read-only. The associated resource for this role setting.|
+|roleDefinition|[governanceRoleDefinition](../resources/governanceRoleDefinition.md)|Read-only. The role definition that is enforced with this role setting. |
 
 ### JSON representation
 

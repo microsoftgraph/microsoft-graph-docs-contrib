@@ -10,8 +10,8 @@ Represents resources that could be managed by Privileged Identity Management (PI
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/governanceresource_list.md) | [governanceResource](governanceresource.md) collection|List a collection of resources the requestor has access to.|
-|[Get](../api/governanceresource_get.md) | [governanceResource](governanceresource.md) |Read properties and relationships of a resource entity specified by id.|
+|[List](../api/governanceresource_list.md) | [governanceResource](../resources/governanceresource.md) collection|List a collection of resources the requestor has access to.|
+|[Get](../api/governanceresource_get.md) | [governanceResource](../resources/governanceresource.md) |Read properties and relationships of a resource entity specified by id.|
 
 No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `resources` entity set for now.
 
@@ -25,16 +25,16 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `resources` entity set for 
 |     |status             |String     |The status of a given resource. For example, it could represent whether the resource is locked or not (values: `Active`/`Locked`). Note: This property may be extended in the future to support more scenarios.|
 |     |roleAssignmentCount|Int32      |Optional. The number of role assignments for the given resource. To get the property, please explictly use `$select=roleAssignmentCount` in the query.|
 |     |roleDefinitionCount|Int32      |Optional. The number of role definitions for the given resource. To get the property, please explictly use `$select=roleDefinitionCount` in the query.|
-|     |permissions|[governancePermission](governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource.To get the property, please explictly use `$select=permissions` in the query.|
+|     |permissions|[governancePermission](../resources/governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource.To get the property, please explictly use `$select=permissions` in the query.|
 
 ### Relationships
 | Relationship   | Type	                                        |Description|
 |:---------------|:---------------------------------------------|:----------|
-|roleAssignments |[governanceRoleAssignment](governanceroleassignment.md) collection|The collection of role assignments for the resource.|
-|roleDefinitions |[governanceRoleDefinition](governanceroledefinition.md) collection|The collection of role defintions for the resource.|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](governanceroleassignmentrequest.md) collection|The collection of role assignment requests for the resource.|
-|roleSettings |[governanceRoleSetting](governancerolesetting.md) collection|The collection of role settings for the resource.|
-|parent          |[governanceResource](governanceresource.md)           |Read-only. The parent resource. for `pimforazurerbac` scenario, it can represent the subscription the resource belongs to.|
+|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) collection|The collection of role assignments for the resource.|
+|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) collection|The collection of role defintions for the resource.|
+|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) collection|The collection of role assignment requests for the resource.|
+|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md) collection|The collection of role settings for the resource.|
+|parent          |[governanceResource](../resources/governanceresource.md)           |Read-only. The parent resource. for `pimforazurerbac` scenario, it can represent the subscription the resource belongs to.|
 
 ### JSON representation
 
