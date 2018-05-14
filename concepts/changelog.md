@@ -30,6 +30,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          | Added the [settings](../api-reference/beta/resources/user_settings.md) entity and the following CRUD methods: <br> [Get](../api-reference/beta/api/user_get_settings.md) <br> [Update](../api-reference/beta/api/user_update_settings.md) |
 
+### Microsoft Teams 
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|Beta|Added new webUrl property to [team](../api-reference/beta/resources/team.md) resource.|
+
+
 ## April 2018
 
 ### Audit log API
@@ -98,14 +105,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **paloAltoGlobalProtect** member to the [androidVpnConnectionType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidvpnconnectiontype) enum type|
 |Addition|beta|Added the **paloAltoGlobalProtect** member to the [appleVpnConnectionType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype) enum type|
 |Addition|beta|Added the **androidWorkProfile** member to the [policyPlatformType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_policyplatformtype) enum type|
-
-
-
-### Microsoft Teams 
-
-|Change type|Version|Description|
-|:---|:---|:---|
-|Addition|Beta|Added new webUrl property to [team](../api-reference/beta/resources/team.md) resource.|
 
 ### Outlook calendar
 
