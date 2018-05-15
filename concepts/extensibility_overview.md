@@ -122,7 +122,7 @@ The following limits apply to directory resources (such as **user**, **group**, 
 
 The following limits apply to Outlook resources (such as **message**, **event**, and **contact**):
 
-- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](..\api_reference\v1.0\resources\opentypeextension.md).
+- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](../api-reference/v1.0/resources/opentypeextension.md).
 
 ### Schema extension limits
 
