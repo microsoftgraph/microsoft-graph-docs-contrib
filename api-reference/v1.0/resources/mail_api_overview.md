@@ -1,4 +1,4 @@
-# Use the Microsoft Graph API to integrate with Outlook mail
+# Use the Outlook mail REST API
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account. 
 With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of 
@@ -22,7 +22,6 @@ For example, you can get messages in the Outlook **Sent Items** folder of the si
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
-For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
 
 ## Common use cases 
 
@@ -38,7 +37,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Setting the **from** and **sender** properties in a [message](../resources/message.md) |
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Focused Inbox](../resources/manage_focused_inbox.md) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
-| Get or update a user's automatic reply, locale or time zone | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
+| Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
 | **Mail and folder management** | | |
 | Organize messages in a mail folder hierarchy | [mailFolder](../resources/mailfolder.md)  | [Methods of mailFolder](../resources/mailfolder.md#methods) |
 | Search and filter messages | [message](../resources/message.md) | [Query parameters](../../../concepts/query_parameters.md)  |
@@ -51,6 +50,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 ## Next steps
 The mail API can open up new ways for you to engage with users: 
 
+- [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) 
 of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
