@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2018
 
+### Education API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change          | v1.0 and beta | The scope **Members.Read.Hidden** is required to read or update the **Members** collection on an [educationClass](../api-reference/v1.0/resources/educationclass.md) entity using app-only tokens. |
+
 ### Groups
 
 | **Change type** | **Version**   | **Description**                          |
