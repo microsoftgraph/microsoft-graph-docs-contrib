@@ -21,14 +21,14 @@ workbook-session-id: {session-id}
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| workbook-session-id | Workbook session Id to be refreshd |
+| workbook-session-id | Workbook session Id to be refreshed |
 
 ## Request body
 This API does not require any request body.
 
 ## Response
 
-If successful, this method returns `204, No content` response code.
+If successful, this method returns `204 No Content` response code.
 
 ## Example
 ##### Request
@@ -43,6 +43,9 @@ Content-type: application/json
 workbook-session-id: {session-id}
 Content-length: 0
 
+{
+
+}
 ```
 
 Note that workbook-session-id header is required. 

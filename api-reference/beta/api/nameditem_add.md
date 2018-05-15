@@ -24,6 +24,7 @@ POST /workbook/worksheets({id|name})/names/add
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -36,7 +37,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
+If successful, this method returns `200 OK` response code and [NamedItem](../resources/NamedItem.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

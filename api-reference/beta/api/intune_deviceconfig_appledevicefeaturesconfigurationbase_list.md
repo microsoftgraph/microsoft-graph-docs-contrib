@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 630
+Content-Length: 681
 
 {
   "value": [
@@ -63,7 +64,9 @@ Content-Length: 630
         {
           "@odata.type": "microsoft.graph.airPrintDestination",
           "ipAddress": "Ip Address value",
-          "resourcePath": "Resource Path value"
+          "resourcePath": "Resource Path value",
+          "port": 4,
+          "forceTls": true
         }
       ]
     }

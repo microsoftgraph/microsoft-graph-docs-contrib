@@ -23,12 +23,13 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/HeaderRow
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

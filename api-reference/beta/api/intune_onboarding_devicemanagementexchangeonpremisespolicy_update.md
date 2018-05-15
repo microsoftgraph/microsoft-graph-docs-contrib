@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/exchangeOnPremisesPolicy
+PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPremisesPolicyId}
 ```
 
 ## Request headers
@@ -38,7 +39,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Not yet documented|
 |notificationContent|Binary|Notification text that will be sent to users quarantined by this policy. This is UTF8 encoded byte array HTML.|
-|defaultAccessLevel|String|Default access state in Exchange. This rule applies globally to the entire Exchange organization Possible values are: `none`, `allow`, `block`, `quarantine`.|
+|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune_onboarding_devicemanagementexchangeaccesslevel.md)|Default access state in Exchange. This rule applies globally to the entire Exchange organization. Possible values are: `none`, `allow`, `block`, `quarantine`.|
 |accessRules|[deviceManagementExchangeAccessRule](../resources/intune_onboarding_devicemanagementexchangeaccessrule.md) collection|The list of device access rules in Exchange. The access rules apply globally to the entire Exchange organization|
 |knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune_onboarding_devicemanagementexchangedeviceclass.md) collection|The list of device classes known to Exchange|
 

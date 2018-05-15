@@ -45,6 +45,7 @@ by providing a [delta](../api/contact_delta.md) function.
 |department|String|The contact's department.|
 |displayName|String|The contact's display name.|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
+|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |fileAs|String|The name the contact is filed under.|
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
@@ -64,7 +65,7 @@ by providing a [delta](../api/contact_delta.md) function.
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
 |profession|String|The contact's profession.|
-|spouseName|String|The name of the contact's spouse.|
+|spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
 |title|String|The contact's title.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact.|
@@ -110,6 +111,7 @@ Here is a JSON representation of the resource
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",

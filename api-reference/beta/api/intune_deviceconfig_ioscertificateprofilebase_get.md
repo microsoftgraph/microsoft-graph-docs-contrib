@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosVpnConfiguration/identityCertificate
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEasEmailProfileConfiguration/identityCertificate
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEasEmailProfileConfiguration/smimeSigningCertificate
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosDeviceFeaturesConfiguration/identityCertificateForClientAuthentication
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 602
+Content-Length: 597
 
 {
   "value": {
@@ -65,7 +65,7 @@ Content-Length: 602
     "version": 7,
     "renewalThresholdPercentage": 10,
     "subjectNameFormat": "commonNameAsEmail",
-    "subjectAlternativeNameType": "userPrincipalName",
+    "subjectAlternativeNameType": "emailAddress",
     "certificateValidityPeriodValue": 14,
     "certificateValidityPeriodScale": "months"
   }

@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windows10GeneralConfiguration/privacyAccessControls/{windowsPrivacyDataAccessControlItemId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Request headers
@@ -45,14 +45,13 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |connectionName|String|Connection name displayed to the user.|
-|connectionType|String|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
+|connectionType|[androidForWorkVpnConnectionType](../resources/intune_deviceconfig_androidforworkvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `paloAltoGlobalProtect`.|
 |role|String|Role when connection type is set to Pulse Secure.|
 |realm|String|Realm when connection type is set to Pulse Secure.|
 |servers|[vpnServer](../resources/intune_deviceconfig_vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
 |fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
-|customData|[keyValue](../resources/intune_deviceconfig_keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
-|enableSplitTunneling|Boolean|Send all network traffic through VPN.|
-|authenticationMethod|String|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
+|customData|[keyValue](../resources/keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune_deviceconfig_vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
 
 
 
@@ -65,7 +64,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 815
+Content-length: 728
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -80,7 +79,6 @@ Content-length: 815
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     }
@@ -93,7 +91,6 @@ Content-length: 815
       "value": "Value value"
     }
   ],
-  "enableSplitTunneling": true,
   "authenticationMethod": "usernameAndPassword"
 }
 ```
@@ -103,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 992
+Content-Length: 905
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkVpnConfiguration",
@@ -121,7 +118,6 @@ Content-Length: 992
     {
       "@odata.type": "microsoft.graph.vpnServer",
       "description": "Description value",
-      "ipAddressOrFqdn": "Ip Address Or Fqdn value",
       "address": "Address value",
       "isDefaultServer": true
     }
@@ -134,7 +130,6 @@ Content-Length: 992
       "value": "Value value"
     }
   ],
-  "enableSplitTunneling": true,
   "authenticationMethod": "usernameAndPassword"
 }
 ```

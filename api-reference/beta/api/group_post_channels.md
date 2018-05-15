@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/channels
+POST /groups/{id}/team/channels
 ```
 ## Request headers
 | Header       | Value |
@@ -32,7 +32,7 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [channel](../resources/channel.md) object in the response body.
+If successful, this method returns `201 Created` response code and [channel](../resources/channel.md) object in the response body.
 
 ## Example
 ##### Request
@@ -42,7 +42,7 @@ Here is an example of the request.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/channels
+POST https://graph.microsoft.com/beta/groups/{id}/team/channels
 Content-type: application/json
 
 {

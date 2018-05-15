@@ -11,8 +11,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | UserTimelineActivity.Write.CreatedByApp    |
+|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
 |Application | Not supported. |
 
 ## HTTP request
@@ -35,7 +35,7 @@ No request body.
 
 ## Response
 
-If successful, this method returns the `204, No Content` response code if the activity was deleted.
+If successful, this method returns the `204 No Content` response code if the activity was deleted.
 
 ## Example
 

@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11301
+Content-Length: 12467
 
 {
   "value": [
@@ -59,6 +60,13 @@ Content-Length: 11301
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "enableAutomaticRedeployment": true,
+      "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
+      "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
+      "microsoftAccountSignInAssistantSettings": "disabled",
+      "authenticationAllowSecondaryDevice": true,
+      "authenticationAllowFIDODevice": true,
+      "cryptographyAllowFipsAlgorithmPolicy": true,
       "displayAppListWithGdiDPIScalingTurnedOn": [
         "Display App List With Gdi DPIScaling Turned On value"
       ],
@@ -74,6 +82,11 @@ Content-Length: 11301
       "messagingBlockSync": true,
       "messagingBlockMMS": true,
       "messagingBlockRichCommunicationServices": true,
+      "printerNames": [
+        "Printer Names value"
+      ],
+      "printerDefaultName": "Printer Default Name value",
+      "printerBlockAddition": true,
       "searchBlockDiacritics": true,
       "searchDisableAutoLanguageDetection": true,
       "searchDisableIndexingEncryptedItems": true,
@@ -82,6 +95,13 @@ Content-Length: 11301
       "searchDisableIndexerBackoff": true,
       "searchDisableIndexingRemovableDrive": true,
       "searchEnableAutomaticIndexSizeManangement": true,
+      "searchBlockWebResults": true,
+      "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+      "diagnosticsDataSubmissionMode": "none",
+      "oneDriveDisableFileSync": true,
+      "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+      "inkWorkspaceAccess": "enabled",
+      "inkWorkspaceBlockSuggestedApps": true,
       "smartScreenEnableAppInstallControl": true,
       "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
       "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
@@ -107,6 +127,8 @@ Content-Length: 11301
       "edgeDisableFirstRunPage": true,
       "edgeBlockLiveTileDataCollection": true,
       "edgeSyncFavoritesWithInternetExplorer": true,
+      "edgeFavoritesListLocation": "Edge Favorites List Location value",
+      "edgeBlockEditFavorites": true,
       "cellularBlockDataWhenRoaming": true,
       "cellularBlockVpn": true,
       "cellularBlockVpnWhenRoaming": true,
@@ -149,6 +171,8 @@ Content-Length: 11301
       "defenderScanType": "disabled",
       "defenderScheduledScanTime": "11:59:10.9990000",
       "defenderScheduledQuickScanTime": "11:58:49.3840000",
+      "defenderCloudBlockLevel": "high",
+      "defenderCloudExtendedTimeout": 12,
       "lockScreenAllowTimeoutConfiguration": true,
       "lockScreenBlockActionCenterNotifications": true,
       "lockScreenBlockCortana": true,
@@ -167,6 +191,8 @@ Content-Length: 11301
       "privacyAdvertisingId": "blocked",
       "privacyAutoAcceptPairingAndConsentPrompts": true,
       "privacyBlockInputPersonalization": true,
+      "privacyBlockPublishUserActivities": true,
+      "privacyBlockActivityFeed": true,
       "startBlockUnpinningAppsFromTaskbar": true,
       "startMenuAppListVisibility": "collapse",
       "startMenuHideChangeAccountSettings": true,
@@ -236,8 +262,6 @@ Content-Length: 11301
       "cortanaBlocked": true,
       "deviceManagementBlockFactoryResetOnMobile": true,
       "deviceManagementBlockManualUnenroll": true,
-      "diagnosticsDataSubmissionMode": "none",
-      "oneDriveDisableFileSync": true,
       "safeSearchFilter": "strict",
       "edgeBlockPopups": true,
       "edgeBlockSearchSuggestions": true,

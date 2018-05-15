@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/channels/{id}/chatthreads
+POST /groups/{id}/team/channels/{id}/chatthreads
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -30,7 +30,7 @@ In the request body, supply a JSON representation of a [chatThread](../resources
 
 ## Response
 
-If successful, this method returns `204, No content` response code with an empty reponse body.
+If successful, this method returns `204 No Content` response code with an empty reponse body.
 
 ## Example
 ##### Request
@@ -40,7 +40,7 @@ Here is an example of the request.
   "name": "create_chatthread_from_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/channels/{id}/chatthreads
+POST https://graph.microsoft.com/beta/groups/{id}/team/channels/{id}/chatthreads
 Content-type: application/json
 
 {

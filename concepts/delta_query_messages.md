@@ -52,7 +52,7 @@ _id_ property is always returned.
 ### Optional request header
 
 Each delta query GET request returns a collection of one or more messages in the response. You can optionally specify 
-the request header, _Prefer: odata.maxpagesize={x}_, to set the maximum number of messages in a response.
+the request header, `Prefer: odata.maxpagesize={x}`, to set the maximum number of messages in a response.
 
 <!--
 ### Iterative process 

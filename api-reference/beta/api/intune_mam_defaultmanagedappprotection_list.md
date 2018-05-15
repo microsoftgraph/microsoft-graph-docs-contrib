@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2132
+Content-Length: 3411
 
 {
   "value": [
@@ -74,7 +74,8 @@ Content-Length: 2132
       "maximumPinRetries": 1,
       "simplePinBlocked": true,
       "minimumPinLength": 0,
-      "pinCharacterSet": "numeric",
+      "pinCharacterSet": "alphanumericAndSymbol",
+      "periodBeforePinReset": "PT3M29.6631862S",
       "allowedDataStorageLocations": [
         "sharePoint"
       ],
@@ -86,6 +87,10 @@ Content-Length: 2132
       "minimumWarningOsVersion": "Minimum Warning Os Version value",
       "minimumRequiredAppVersion": "Minimum Required App Version value",
       "minimumWarningAppVersion": "Minimum Warning App Version value",
+      "minimumWipeOsVersion": "Minimum Wipe Os Version value",
+      "minimumWipeAppVersion": "Minimum Wipe App Version value",
+      "appActionIfDeviceComplianceRequired": "wipe",
+      "appActionIfMaximumPinRetriesExceeded": "wipe",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -98,7 +103,30 @@ Content-Length: 2132
           "value": "Value value"
         }
       ],
-      "deployedAppCount": 0
+      "deployedAppCount": 0,
+      "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+      "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+      "exemptedAppProtocols": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "exemptedAppPackages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "faceIdBlocked": true,
+      "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
+      "minimumWipePatchVersion": "Minimum Wipe Patch Version value",
+      "allowedIosDeviceModels": "Allowed Ios Device Models value",
+      "appActionIfIosDeviceModelNotAllowed": "wipe",
+      "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
+      "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe"
     }
   ]
 }

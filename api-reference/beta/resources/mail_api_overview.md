@@ -1,4 +1,4 @@
-# Use the Microsoft Graph API to integrate with Outlook mail
+# Use the Outlook mail REST API
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -40,7 +40,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Focused Inbox](../resources/manage_focused_inbox.md) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
 | Get language and time zone choices for a user | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser_supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser_supportedtimezones.md) |
-| Get or update a user's automatic reply, locale or time zone | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
+| Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
 | Get MailTips of other recipients' special status, such as out-of-office (preview) | [user (preview)](../resources/user.md), <br> [mailTips (preview)](../resources/mailtips.md) | [Get MailTips](../api/user_getmailtips.md) |
 | Alert user if mentioned in other messages (preview) | [mention (preview)](../resources/mention.md) | [Get details of @-mentions in a message](../api/message_get.md#request-2) |
 | Unsubscribe user from an email distribution list (preview) | [message (preview)](../resources/message.md) | [Unsubscribe](../api/message_unsubscribe.md) |
@@ -59,6 +59,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 ## Next steps
 The mail API can open up new ways for you to engage with users: 
 
+- [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) 
 of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).

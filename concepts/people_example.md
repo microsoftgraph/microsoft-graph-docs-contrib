@@ -8,7 +8,7 @@ To call the People API in Microsoft Graph, your app will need the appropriate pe
 * People.Read - Use to make general People API calls; for example, https://graph.microsoft.com/v1.0/me/people/. People.Read requires end user consent.
 * People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (https://graph.microsoft.com/v1.0/users('{id}')/people) calls. People.Read.All requires admin consent.
 ## Browse people
-The requests in this section get the people most relevant to the signed-in user (`/me`). These requests require the People.Read permission. By default, each response returns 10 records, but you can change this by using the *$top* query parameter. 
+The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user’s organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter. 
 ### Get a collection of relevant people 
 The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships. 
 
@@ -655,178 +655,11 @@ Content-type: application/json
     ]
 }
 ```
-## Search people
-The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter. 
-### Use search to select people 
-Use the *$search* parameter to select people who meet a particular set of criteria. 
 
-The following search query returns people relevant to `/me` whose **displayName** has a word that begins with the letter "j".
+### Browse another user’s relevant people
+The following request gets the people most relevant to another person in the signed-in user's organization. This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
 
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search=j
-```
-
-The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-        {
-            "id": "E3C5B235-DE15-4566-B7B1-7A8E32426540",
-            "displayName": "Jan Travis",
-            "givenName": "Jan",
-            "surname": "Travis",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "VP Sales",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Sales & Marketing",
-            "officeLocation": "19/3123",
-            "profession": "",
-            "userPrincipalName": "jant@contoso.onmicrosoft.com",
-            "imAddress": "sip:jant@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "jant@contoso.onmicrosoft.com",
-                    "relevanceScore": -12.297347783416837
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 732 555 0102"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
-        },
-        {
-            "id": "C43BF05E-5B6B-4DCF-B2FC-0837B09E0FA9",
-            "displayName": "Jacob Cazares (TAILSPIN)",
-            "givenName": null,
-            "surname": null,
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": null,
-            "companyName": null,
-            "yomiCompany": "",
-            "department": null,
-            "officeLocation": null,
-            "profession": "",
-            "userPrincipalName": "",
-            "imAddress": null,
-            "scoredEmailAddresses": [
-                {
-                    "address": "jacobc@tailspintoys.com",
-                    "relevanceScore": -12.298154282019846
-                }
-            ],
-            "phones": [],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "PersonalContact"
-            }
-        },
-        {
-            "id": "6BB9CC1F-418D-4DDF-AB0C-6A1C4ABCDBF4",
-            "displayName": "Jewell Montgomery",
-            "givenName": "Jewell",
-            "surname": "Montgomery",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": null,
-            "companyName": null,
-            "yomiCompany": "",
-            "department": null,
-            "officeLocation": null,
-            "profession": "",
-            "userPrincipalName": "jewellm@contoso.onmicrosoft.com",
-            "imAddress": null,
-            "scoredEmailAddresses": [
-                {
-                    "address": "jewellm@contoso.onmicrosoft.com",
-                    "relevanceScore": -12.531408487977451
-                }
-            ],
-            "phones": [],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
-        }
-    ]
-}
-```
-### Perform a fuzzy search 
-The following request does a search for a person named "Irene McGowen". Because a person named "Irene McGowan" is relevant to the signed-in user, the information for "Irene McGowan" is returned.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
-```
-
-The following example shows the response. 
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
-       }
-   ]
-}
-```
-### Search other user’s relevant people
-The following request gets the people most relevant to another person in the signed-in user's organization. This request requires the People.Read.All permission. In this example, Roscoe Seidel's relevant people are displayed.
+In this example, Roscoe Seidel's relevant people are displayed.
 
 ```http
 GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
@@ -948,3 +781,158 @@ Content-type: application/json
     ]
 }
 ```
+
+## Search people
+The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter. 
+### Use search to select people 
+Use the *$search* parameter to select people who meet a particular set of criteria. 
+
+The following search query returns people relevant to `/me` whose **displayName** or *emailAddress" has a word that begins with the letter "j".
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search=j
+```
+
+The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "E3C5B235-DE15-4566-B7B1-7A8E32426540",
+            "displayName": "Jan Travis",
+            "givenName": "Jan",
+            "surname": "Travis",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": "VP Sales",
+            "companyName": null,
+            "yomiCompany": "",
+            "department": "Sales & Marketing",
+            "officeLocation": "19/3123",
+            "profession": "",
+            "userPrincipalName": "jant@contoso.onmicrosoft.com",
+            "imAddress": "sip:jant@contoso.onmicrosoft.com",
+            "scoredEmailAddresses": [
+                {
+                    "address": "jant@contoso.onmicrosoft.com",
+                    "relevanceScore": -12.297347783416837
+                }
+            ],
+            "phones": [
+                {
+                    "type": "Business",
+                    "number": "+1 732 555 0102"
+                }
+            ],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        },
+        {
+            "id": "C43BF05E-5B6B-4DCF-B2FC-0837B09E0FA9",
+            "displayName": "Jacob Cazares (TAILSPIN)",
+            "givenName": null,
+            "surname": null,
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": null,
+            "companyName": null,
+            "yomiCompany": "",
+            "department": null,
+            "officeLocation": null,
+            "profession": "",
+            "userPrincipalName": "",
+            "imAddress": null,
+            "scoredEmailAddresses": [
+                {
+                    "address": "jacobc@tailspintoys.com",
+                    "relevanceScore": -12.298154282019846
+                }
+            ],
+            "phones": [],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "PersonalContact"
+            }
+        },
+        {
+            "id": "6BB9CC1F-418D-4DDF-AB0C-6A1C4ABCDBF4",
+            "displayName": "Jewell Montgomery",
+            "givenName": "Jewell",
+            "surname": "Montgomery",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": null,
+            "companyName": null,
+            "yomiCompany": "",
+            "department": null,
+            "officeLocation": null,
+            "profession": "",
+            "userPrincipalName": "jewellm@contoso.onmicrosoft.com",
+            "imAddress": null,
+            "scoredEmailAddresses": [
+                {
+                    "address": "jewellm@contoso.onmicrosoft.com",
+                    "relevanceScore": -12.531408487977451
+                }
+            ],
+            "phones": [],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        }
+    ]
+}
+```
+### Perform a fuzzy search 
+
+Searches implement a fuzzy matching algorithm. They will return results based on an exact match and also on inferences about the intent of the search. For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the **people** collection of the signed-in user. All of the following searches will return this user Tyler as one of the results.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+```
+
+You can also perform searches for people who are relevant to the signed-in user and have expressed an interest in communicating with that user over topics such as 
+pizzas in the following example:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+```
+
+Topics in this context are just words that have been used most by users in email conversations. Microsoft extracts such words and creates an index 
+for this data to facilitate fuzzy searches. 
+
+Note that the search phrase is enclosed in quotes, and topics in this data are extracted free of their contexts. As an example, searching for "windows" in the following query:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:windows" 
+```
+is a fuzzy search in the topic data index, and the results can include instances that mean the Windows operating system, an opening in a building wall, or other definitions.
+
+Finally, you can combine both people searches and topic searches in the same request by combining the two types of search expression.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+
+This request essentially conducts two searches: a fuzzy search against **displayName** and **emailAddress** properties of the signed-in user's relevant people, and a topic search for "pizza" against the user's relevant people. The results are then ranked, ordered, and returned. Note that the search is not restrictive; you might get results that contain people that fuzzy match "tyl", or that are interested in "pizza", or both.
+

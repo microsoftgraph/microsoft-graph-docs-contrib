@@ -2,7 +2,8 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of calendar object.
+Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+or the default calendar of an Office 365 [group](../resources/group.md).
 
 ### Get another user's calendar
 
@@ -31,12 +32,11 @@ GET /me/calendar
 
 This capability is available in only GET operations of:
 
-- Shared contact folders
-- Shared calendars
-- Contacts and events in shared folders
+- Shared contact folders, calendars, and message folders 
+- Contacts, events, and messages in shared folders
 - The above resources in delegated mailboxes
 
-This capability is not available in other operations for contacts, events, and their folders.
+This capability is not available in other operations for contacts, events, messages, and their folders.
 
 
 ## Permissions

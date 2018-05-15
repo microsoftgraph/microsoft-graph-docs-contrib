@@ -6,6 +6,9 @@ Use this API to create a new setting, based on the templates available in direct
 
 > **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Create groupSettings*.
 
+For a list of templates and the properties they support in beta, use a [directorySettingTemplate query](https://developer.microsoft.com/en-us/graph/graph-explorer?request=directorySettingTemplates&version=beta). (For v1.0 endpoints, call [groupSettingTemplates](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)
+
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -31,7 +34,7 @@ In the request body, supply a JSON representation of [directorySetting](../resou
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
+If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
 ## Example
 ##### Request

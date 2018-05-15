@@ -2,7 +2,11 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFolders can contain messages and child mailFolders.
+A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
+
+Outlook creates certain folders for users by default. Instead of using the corresponding folder **id** value, for convenience, you can use 
+the following well-known folder names when accessing these folders in a **mailFolder** collection: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, 
+`Drafts`, `Inbox`, `JunkEmail`, `Outbox`, and `SentItems`.
 
 This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/mailfolder_delta.md) function.
@@ -57,8 +61,7 @@ MailFolders in Outlook can contain more than one type of items, for example, the
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
 
 ## JSON representation
-
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

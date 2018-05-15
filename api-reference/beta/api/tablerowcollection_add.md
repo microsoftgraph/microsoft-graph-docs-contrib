@@ -3,6 +3,10 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Adds a new row to the table.
+
+## Error Handling
+
+This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -23,6 +27,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -34,7 +39,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `200 OK` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

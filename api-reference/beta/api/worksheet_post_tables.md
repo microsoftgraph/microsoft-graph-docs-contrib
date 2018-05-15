@@ -22,6 +22,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, supply following parameters. 
@@ -34,7 +35,7 @@ In the request body, supply following parameters.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [Table](../resources/table.md) object in the response body.
+If successful, this method returns `201 Created` response code and [Table](../resources/table.md) object in the response body.
 
 ## Example
 ##### Request
