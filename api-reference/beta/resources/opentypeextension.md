@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Open extensions (formerly known as Office 365 data extensions) gives you an easy way to directly add untyped properties to a resource in Microsoft Graph.
+Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph.
 Open extensions are represented by the **openTypeExtension** resource. Any open extension added to a resource shows up in the **extensions** navigation property,
 which is derived from the [extension](extension.md) abstract type.  Each extension has an **extensionName** property which is the only pre-defined,
 writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS)
@@ -27,9 +27,9 @@ Open extensions are supported by the following resources in the corresponding ve
 
 ## Outlook-specific considerations
 
-Each open extension present on an Outlook resource (event, message, or personal contact) is stored in a [MAPI named property](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx). MAPI named properties are a finite resource in a user's mailbox, so care must be taken when creating open extensions. Once a user's named property quota is exhausted, no more named properties can be created for that user. This can result in unexpected behavior from clients that rely on named properties to function.
+Each open extension present on an Outlook resource (event, message, or personal contact) is stored in a [MAPI named property](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx). When you create open extensions for Outlook, consider that MAPI named properties are a finite resource in a user's mailbox. When a user's named property quota is exhausted, you can't create any more named properties for that user. This can result in unexpected behavior from clients that rely on named properties to function.
 
-When creating open extensions on Outlook resources, developers should follow these guidelines:
+Apply the following guidelines when you create open extensions on Outlook resources:
 
 - Create the minimum number of extensions required. Most applications should require no more than one extension. Extensions have no set defined properties or structure, so you can store multiple values in a single extension.
 - Avoid naming extensions in a variable manner (such as based on user input, etc.). Each time an open extension is created with a new name that has not been used in a user's mailbox before, a new MAPI named property is created. Removing the extension does not remove the named property.

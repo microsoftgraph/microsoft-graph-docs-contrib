@@ -2,7 +2,7 @@
 
 Create an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties in a new or existing instance of a resource.
 
-> **Note:** Developers should follow the guidelines in the **Outlook-specific considerations** section in [openTypeExtension resource type](../resources/opentypeextension.md) when creating open extensions on Outlook resources.
+> **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## Permissions
 
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API, depending on the 
 
 ### Create an extension in a new resource instance
 
-Use the same REST request as creating the instance.
+Use the same REST request that you use to create the instance.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,7 +31,7 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Note:** The above syntax shows some common ways to create the supported resource instances. All other POST syntax
+>**Note:** This syntax shows some common ways to create the supported resource instances. All other POST syntaxes
 that allows you to create these resource instances supports creating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.
@@ -53,8 +53,8 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Note:** The above syntax shows some common ways to identify a resource instance, in order to create an
-extension in it. All other syntax that allows you to identify these resource instances supports creating open extensions in them in a similar way.
+>**Note:** This syntax shows some common ways to identify a resource instance, in order to create an
+extension in it. All other syntaxes that allows you to identify these resource instances supports creating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
 
@@ -92,8 +92,7 @@ new **openTypeExtension** object, provide a JSON representation of the relevant 
 
 Depending on the operation, the response code can be `201 Created` or `202 Accepted`.
 
-When creating an extension in the same operation as creating a resource instance, a successful
-operation returns the same response code as when the operation is used to create only the resource instance without the extension.
+When you create an extension using the same operation that you use to create a resource instance, the operation returns the same response code that it returns when you use the operation to create the resource instance without the extension.
 Refer to the corresponding topics for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).
 
 ### Response body
@@ -115,7 +114,7 @@ The first example creates a message and an extension in the same call. The reque
 
   - The type `Microsoft.Graph.OpenTypeExtension`.
   - The extension name "Com.Contoso.Referral".
-  - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.
+  - Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.
 
 <!-- {
   "blockType": "request",

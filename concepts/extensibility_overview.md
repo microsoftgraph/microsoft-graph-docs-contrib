@@ -1,6 +1,6 @@
 # Add custom data to resources using extensions
 
-Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as [user](../api-reference/v1.0/resources/user.md) and [message](../api-reference/v1.0/resources/message.md). There's now a way for you to _**extend**_ Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store.
+Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as [user](../api-reference/v1.0/resources/user.md) and [message](../api-reference/v1.0/resources/message.md). You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store.
 
 For example, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource. Alternatively, you might want to retain your app’s existing user profile store, and simply add an app-specific store identifier to the **user** resource.
 
@@ -28,7 +28,7 @@ The following table lists the resources that support open and schema extensions,
 | [Personal contact](../api-reference/v1.0/resources/contact.md)| GA | GA |
 | [User](../api-reference/v1.0/resources/user.md) | GA | GA |
 
-You can use extensions on all these resources when signed-in with a work or school account. In addition, you can use extensions on these resources—**event**, **post**, **group**, **message**, **contact**, and **user**—when signed in with a personal account.
+You can use extensions on all these resources when signed in with a work or school account. In addition, you can use extensions on the **event**, **post**, **group**, **message**, **contact**, and **user** resources when signed in with a personal account.
 
 ## Open extensions
 
