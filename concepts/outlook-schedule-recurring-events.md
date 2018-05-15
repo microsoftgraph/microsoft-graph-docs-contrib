@@ -154,7 +154,7 @@ The relative monthly pattern causes an event to repeat on the same day of the we
 
 ### Absolute yearly
 
-The absolute yearly pattern causes an event to repeat on the same month and day (for example, April 15th), based on the number of years between each occurrence.
+The absolute yearly pattern causes an event to repeat on the same month and day (for example, April 15), based on the number of years between each occurrence.
 
 #### Relevant properties
 
