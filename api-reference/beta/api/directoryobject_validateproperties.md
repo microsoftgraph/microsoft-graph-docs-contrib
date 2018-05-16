@@ -98,8 +98,7 @@ Content-length: 164
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.publicError"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 422 
