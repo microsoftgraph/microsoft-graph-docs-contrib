@@ -63,6 +63,7 @@
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Security (preview)" url="/en-us/concepts/security-concept-overview" >
 	<Item text="Integrate with a SIEM" url="/en-us/concepts/security_siemintegration" />
+	<Item text="Authorization" url="/en-us/concepts/security-authorization" />
   </Item>
   <Item text="Sites and lists" ProdTag="SharePoint" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="Social intelligence" url="/en-us/concepts/social-intel-concept-overview" >
@@ -5573,7 +5574,6 @@
 			<Item text="Update alert" url="/en-us/api-reference/beta/api/alert_update" />
 		</Item>
 		<Item text="Errors" url="/en-us/api-reference/beta/resources/security-error-codes" />
-	    <Item text="Integrate with a SIEM" url="/en-us/concepts/security_siemintegration" />
 	</Item>
 	<Item text="Sites and lists" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
