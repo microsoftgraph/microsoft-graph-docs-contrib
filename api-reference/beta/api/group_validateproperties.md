@@ -13,6 +13,7 @@ This API returns with the first failure encountered. If one or more properties f
 The following **permission** is required to execute this API: *Group.Read.All*
 
 ## HTTP request
+<!-- { "blockType": "ignored" } -->
 ``` http
 POST /groups/<id>/validateProperties
 ```
@@ -46,6 +47,10 @@ If there is a validation error. The method returns `422 Unprocessable Entity` re
 This is an example of a successful validation request.
 
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "group_validateproperties"
+}-->
 ``` http
 POST https://graph.microsoft.com/beta/groups/{id}/validateProperties
 Content-type: application/json
@@ -59,8 +64,12 @@ Content-length: 132
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+} -->
 ```http
-HTTP/1.1 200 
+HTTP/1.1 204 No Content
 ```
 
 This is an example of a request with validation errors.
@@ -79,7 +88,7 @@ Content-length: 128
 
 ### Response
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 422
 Content-type: application/json
 Content-length: 223
 
