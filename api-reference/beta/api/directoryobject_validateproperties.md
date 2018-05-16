@@ -78,10 +78,6 @@ HTTP/1.1 204 No Content
 This is an example of a request with validation errors.
 
 ### Request
-<!-- {
-  "blockType": "request",
-  "name": "directoryobject_validateproperties_error"
-}-->
 ```http
 POST https://graph.microsoft.com/directoryObjects/validateProperties
 Content-type: application/json
@@ -96,10 +92,6 @@ Content-length: 164
 ```
 
 ### Response
-<!-- {
-  "blockType": "response",
-  "expectError": true
-} -->
 ```http
 HTTP/1.1 422 
 Content-Type: application/json
