@@ -20,7 +20,7 @@ If you're calling the security API from a custom or your own application:
 - The Azure AD tenant admin must explicitly grant consent to your application. This is required both for application-level authorization and user delegated authorization.
 - If you're using user delegated authorization, the user must be a member of the Security Reader or Security Administrator Limited Admin role in Azure AD.
 
-## Managing authorization in security API client applications
+## Manage authorization in security API client applications
 
 Security data provided via the security API in Microsoft Graph is sensitive and must be protected by appropriate authentication and authorization mechanisms. The following table lists the steps to register and create a client application that can access the security API.
 
@@ -77,7 +77,7 @@ Save the following information:
 
 For more information, see [Register your app with the Azure AD v2.0 endpoint](../concepts/auth_register_app_v2.md).
 
-## Granting permissions to an application
+## Grant permissions to an application
 
 Application registration only defines which permission the application requires - it does not grant these permissions to the application. An Azure AD tenant administrator must explicitly grant these permissions by making a call to the admin consent endpoint. For details, see [Using the admin consent endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
 
@@ -97,7 +97,7 @@ Choose **OK** to grant the application these permissions.
 
 > **Note:** This step grants permissions to the application - not to users. This means that all users belonging to the Azure AD tenant that use this application will be granted these permissions - even non-admin users.
 
-## Assigning Azure AD roles to users
+## Assign Azure AD roles to users
 
 After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to adminstrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
