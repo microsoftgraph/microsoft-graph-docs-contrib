@@ -98,7 +98,7 @@ Content-length: 164
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "expectError": true
 } -->
 ```http
 HTTP/1.1 422 
