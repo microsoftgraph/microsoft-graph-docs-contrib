@@ -14,6 +14,7 @@ This API returns with the first failure encountered. If one or more properties f
 The following **permission** is required to execute this API: *Group.Read.All*
 
 ## HTTP request
+<!-- { "blockType": "ignored" } -->
 ``` http
 POST /directoryObjects/validateProperties
 ```
@@ -48,6 +49,10 @@ If there is a validation error, the method returns `422 Unprocessable Entity` re
 This is an example of a successful validation request.
 
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "directoryobject_validateproperties"
+}-->
 ``` http
 POST https://graph.microsoft.com/directoryObjects/validateProperties
 Content-type: application/json
@@ -62,6 +67,10 @@ Content-length: 164
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -69,6 +78,10 @@ HTTP/1.1 204 No Content
 This is an example of a request with validation errors.
 
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "directoryobject_validateproperties_error"
+}-->
 ```http
 POST https://graph.microsoft.com/directoryObjects/validateProperties
 Content-type: application/json
@@ -83,8 +96,13 @@ Content-length: 164
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.publicError"
+} -->
 ```http
-HTTP/1.1 200 
+HTTP/1.1 422 
 Content-Type: application/json
 
 {
