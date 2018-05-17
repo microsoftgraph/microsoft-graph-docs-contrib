@@ -22,7 +22,7 @@ Or a specific ID:
 Or to a top-level resource:
 `me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
 
-Or on a Sharepoint / OneDrive for Business drive:
+Or on a SharePoint / OneDrive for Business drive:
 `/drive/root`
 
 Or on a user's personal OneDrive:
@@ -35,14 +35,13 @@ Apps need to renew their subscriptions before the expiration time. Otherwise, th
 
 Apps can also unsubscribe at any time to stop getting notifications.
 
-In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types. 
+In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
 
 | Permission type                        | Supported resource types in v1.0                                 |
 | :------------------------------------- | :--------------------------------------------------------------- |
 | Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [message][] |
 | Delegated - personal Microsoft account | None                                                             |
 | Application                            | [contact][], [conversation][], [event][], [message][]            |
-
 
 ## Code samples
 
@@ -56,10 +55,13 @@ The following code samples are available on GitHub.
 Creating a subscription is the first step to start receiving notifications for a resource. The subscription process is as follows:
 
 1. The client sends a subscription (POST) request for a specific resource.
-2. Microsoft Graph verifies the request.
-  * If the request is valid, Microsoft Graph sends a validation token to the notification URL.
-  * If the request is invalid, Microsoft Graph sends an error response with code and details.
-3. The client sends the validation token back to Microsoft Graph.
+
+1. Microsoft Graph verifies the request.
+
+    * If the request is valid, Microsoft Graph sends a validation token to the notification URL.
+    * If the request is invalid, Microsoft Graph sends an error response with code and details.
+
+1. The client sends the validation token back to Microsoft Graph.
 
 Client must store the subscription ID to correlate a notification with the corresponding subscription.
 
@@ -74,11 +76,11 @@ Microsoft Graph validates the notification URL in a subscription request before 
   ClientState: {Data sent in ClientState value in subscription request (if any)}
   ```
 
-2. The client must provide a response with the following characteristics within 10 seconds:
+1. The client must provide a response with the following characteristics within 10 seconds:
 
-  * A 200 (OK) status code.
-  * The content type must be text/plain. 
-  * The body must include the validation token provided by Microsoft Graph.
+    * A 200 (OK) status code.
+    * The content type must be text/plain.
+    * The body must include the validation token provided by Microsoft Graph.
 
 The client should discard the validation token after providing it in the response.
 
@@ -128,7 +130,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body. The subscription object includes the new expirationDateTime value. 
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body. The subscription object includes the new expirationDateTime value.
 
 ## Deleting a subscription
 
@@ -152,14 +154,14 @@ The notification object has the following properties:
 * subscriptionExpirationDateTime - The expiration time for the subscription.
 * clientState - The clientState property specified in the subscription request.
 * changeType - The event type that caused the notification. For example, *created* on mail receive, or *updated* on marking a message read.
-* resource - The URI of the resource relative to `https://graph.microsoft.com`. 
+* resource - The URI of the resource relative to `https://graph.microsoft.com`.
 * resourceData - The object dependent on the resource being subscribed to.  For example, for Outlook resources:
   * @odata.type - The OData entity type in Microsoft Graph that describes the represented object.
   * @odata.id - The OData identifier of the object.
   * @odata.etag - The HTTP entity tag that represents a version of the object.
   * id - The identifier of the object.
 
-> Note: The Id value provided in resourceData is valid at the time the notification was queued. Some actions, such as moving a message to another folder, may result in a resource's Id being changed. 
+> Note: The Id value provided in resourceData is valid at the time the notification was queued. Some actions, such as moving a message to another folder, may result in a resource's Id being changed.
 
 ### Notification example
 
@@ -195,9 +197,9 @@ After your application starts receiving notifications it must process them. The 
 1. Validate the `clientState` property. The clientState property in the notification must match the one submitted with the subscription request.
   > Note: If this isn't true, you shouldn't consider this a valid notification. You should also investigate where the notification comes from and take appropriate action.
 
-2. Update your application based on your business logic.
+1. Update your application based on your business logic.
 
-3. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry resending the notification a number of times.
+1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry the notification a number of times.
   > You should send a `202 - Accepted` status code even if the clientState property doesn't match the one submitted with the subscription request.
 
 Repeat for other notifications in the request.
