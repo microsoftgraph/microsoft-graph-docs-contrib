@@ -105,7 +105,7 @@ After an application is granted permissions, everyone with access to the applica
 
 To assign roles to users:
 
-- Sign in to the [azure portal](https://portal.azure.com/#@isgdemodev.onmicrosoft.com/dashboard/private/76e81922-1bdf-455e-bdbb-33ff73765011) (http://portal.azure/com).
+- Sign in to the [azure portal](https://portal.azure.com) (http://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the user.
 - Select **Manage** > **Directory role**.
