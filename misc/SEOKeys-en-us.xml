@@ -1,6 +1,6 @@
 <Menu>
   <Item Label="EXPLORE" url="" />
-  <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." >    
+  <Item text="Overview" url="/en-us/concepts/overview" SEOKeyword="Overview, Microsoft Graph API, Overview" SEODescription="Microsoft Graph allows applications to access digital work and digital life data across the intelligent Microsoft cloud. Big advantages for developers: A Unified Microsoft API endpoint for accessing data, intelligence and insights coming from the Microsoft cloud." >
 	<Item text="Services in Microsoft Graph" url="/en-us/concepts/overview-major-services" />
 	<Item text="Users you can reach" url="/en-us/concepts/users-you-can-reach" >
 		<Item text="National cloud deployments" url="/en-us/concepts/deployments" SEOKeyword="Sovereign deployments" SEODescription="Sovereign deployments" />
@@ -23,7 +23,7 @@
     <Item text="Visual Studio Connected Services" url="/en-us/concepts/office_365_connected_services" />
     <Item text="Xamarin" url="/en-us/concepts/xamarin" SEODescription="Get Started with Microsoft Graph to access Microsoft cloud data in a Xamarin app." />
   </Item>
-  
+
   <Item Label="LEARN" url="" />
   <Item text="Users" url="/en-us/concepts/azuread-users-concept-overview" />
   <Item text="Groups" url="/en-us/concepts/office365-groups-concept-overview" />
@@ -48,7 +48,7 @@
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
     <Item text="Best practices" url="/en-us/concepts/onenote_best_practices" SEODescription="Use best practices when working with OneNote APIs in Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
 	<Item text="Branding guidelines" url="/en-us/concepts/onenote-branding" />
-	<Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />   
+	<Item text="Open the OneNote client" url="/en-us/concepts/open_onenote_client" SEODescription="Open a OneNote application to a particular page or notebook." />
 	<Item text="Use note tags" url="/en-us/concepts/onenote-note-tags" />
 	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
   <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
@@ -63,6 +63,7 @@
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Security (preview)" url="/en-us/concepts/security-concept-overview" >
 	<Item text="Integrate with a SIEM" url="/en-us/concepts/security_siemintegration" />
+	<Item text="Authorization" url="/en-us/concepts/security-authorization" />
   </Item>
   <Item text="Sites and lists" ProdTag="SharePoint" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="Social intelligence" url="/en-us/concepts/social-intel-concept-overview" >
@@ -108,8 +109,8 @@
 	<Item text="Changelog" url="/en-us/concepts/changelog" />
 	<Item text="Errors" url="/en-us/concepts/errors" SEOKeyword="Errors, Microsoft Graph API, Overview" SEODescription="Errors in the Microsoft Graph API service are returned using standard HTTP status codes, as well as a JSON error response object." />
   </Item>
- 
- 
+
+
   <!--<Item text="/v1.0 reference" url="/en-us/api-reference/v1.0/">-->
   <Item text="v1.0 reference" url="/en-us/concepts/v1-overview" >
   <Item text="Users" url="/en-us/api-reference/v1.0/resources/users" SEOKeyword="Users API, Microsoft Graph API, Users API" SEODescription="Represents an Azure AD user account. Inherits from DirectoryObject.">
@@ -118,7 +119,7 @@
       <Item text="Get user" url="/en-us/api-reference/v1.0/api/user_get" SEOKeyword="Get user, Microsoft Graph API, user API" SEODescription="Retrieve the properties and relationships of user object." ></Item>
       <Item text="List users" url="/en-us/api-reference/v1.0/api/user_list" SEOKeyword="List users, Microsoft Graph API, user API" SEODescription="Retrieve a list of user objects." />
       <Item text="Update user" url="/en-us/api-reference/v1.0/api/user_update" SEOKeyword="Update user, Microsoft Graph API, user API" SEODescription="Update the properties of user object." />
-      
+
     </Item>
     <Item text="Calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar API">
       <Item text="List events" url="/en-us/api-reference/v1.0/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
@@ -189,7 +190,7 @@
     </Item>
     <Item text="Planner tasks" url="/en-us/api-reference/v1.0/resources/plannertask" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
         <Item text="List tasks" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve a list of plan objects." />
-    </Item>  
+    </Item>
   </Item>
   <Item text="Groups" url="/en-us/api-reference/v1.0/resources/groups-overview" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
     <Item text="Group" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="user groups, Microsoft Graph API, user API" SEODescription="Groups API">
@@ -387,7 +388,7 @@
       </Item>
     </Item>
   </Item>
-  <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/api-reference/v1.0/resources/project_rome_overview" > 
+  <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/api-reference/v1.0/resources/project_rome_overview" >
 		<Item text="Activity feed" url="/en-us/api-reference/v1.0/resources/activity-feed-api-overview" >
 			<Item text="Activity" url="/en-us/api-reference/v1.0/resources/projectrome_activity" >
 				<Item text="Create or replace activity" url="/en-us/api-reference/v1.0/api/projectrome_put_activity" />
@@ -1748,7 +1749,7 @@
       <Item text="List subscribedSkus" url="/en-us/api-reference/v1.0/api/subscribedsku_list" SEOKeyword="List subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve a list of subscribedsku objects." />
       <Item text="Get subscribedSku" url="/en-us/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
     </Item>
-  </Item> 
+  </Item>
   <Item text="Mail" ProdTag="Outlook" url="/en-us/api-reference/v1.0/resources/mail_api_overview" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Outlook Mail APIs">
     <Item text="Message" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="Mail APIs">
       <Item text="List messages" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
@@ -1808,7 +1809,7 @@
 		<Item text="List rules" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
 		<Item text="Create rule" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
 		<Item text="Get rule" url="/en-us/api-reference/v1.0/messagerule_get" />
-		<Item text="Update rule" url="/en-us/api-reference/v1.0/api/messagerule_update" />	  
+		<Item text="Update rule" url="/en-us/api-reference/v1.0/api/messagerule_update" />
 		<Item text="Delete rule" url="/en-us/api-reference/v1.0/api/messagerule_delete" />
 	  </Item>
 	<Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
@@ -2041,7 +2042,6 @@
   <Item text="Social intelligence: People" url="/en-us/api-reference/v1.0/resources/social_overview" >
 	<Item text="Person" url="/en-us/api-reference/v1.0/resources/person" >
 		<Item text="List people" url="/en-us/api-reference/v1.0/api/user_list_people" />
-		<Item text="Get person" url="/en-us/api-reference/v1.0/api/person_get" />
 	</Item>
   </Item>
   <Item text="Tasks and plans" ProdTag="Planner" url="/en-us/api-reference/v1.0/resources/planner_overview" SEOKeyword="user tasks, Microsoft Graph API, user API" SEODescription="">
@@ -2058,15 +2058,15 @@
 		  <Item text="Get tasks for user" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" />
 		  <Item text="Get task" url="/en-us/api-reference/v1.0/api/plannertask_get" />
 		  <Item text="Update task" url="/en-us/api-reference/v1.0/api/plannertask_update" />
-		  <Item text="Delete task" url="/en-us/api-reference/v1.0/api/plannertask_delete" />	  
+		  <Item text="Delete task" url="/en-us/api-reference/v1.0/api/plannertask_delete" />
 	  </Item>
 	  <Item text="Task details" url="/en-us/api-reference/v1.0/resources/plannertaskdetails" >
 		  <Item text="Get task details" url="/en-us/api-reference/v1.0/api/plannertaskdetails_get" />
-		  <Item text="Update task details" url="/en-us/api-reference/v1.0/api/plannertaskdetails_update" />	  
+		  <Item text="Update task details" url="/en-us/api-reference/v1.0/api/plannertaskdetails_update" />
 	  </Item>
 	  <Item text="Plan details" url="/en-us/api-reference/v1.0/resources/plannerplandetails" >
 		<Item text="Get plan details" url="/en-us/api-reference/v1.0/api/plannerplandetails_get" />
-		<Item text="Update plan details" url="/en-us/api-reference/v1.0/api/plannerplandetails_update" />	  
+		<Item text="Update plan details" url="/en-us/api-reference/v1.0/api/plannerplandetails_update" />
 	  </Item>
 	  <Item text="Bucket" url="/en-us/api-reference/v1.0/resources/plannerbucket" >
 		  <Item text="Create bucket" url="/en-us/api-reference/v1.0/api/planner_post_buckets" />
@@ -2077,11 +2077,11 @@
 	  </Item>
 	  <Item text="Assigned to task board format" url="/en-us/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat" >
 		  <Item text="Get assigned to task board format" url="/en-us/api-reference/v1.0/api/plannerassignedtotaskboardtaskformat_get" />
-		  <Item text="Update assigned to task board format" url="/en-us/api-reference/v1.0/api/plannerassignedtotaskboardtaskformat_update" />	  
+		  <Item text="Update assigned to task board format" url="/en-us/api-reference/v1.0/api/plannerassignedtotaskboardtaskformat_update" />
 	  </Item>
 	  <Item text="Bucket task board task format" url="/en-us/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat" >
       <Item text="Get bucket task board format" url="/en-us/api-reference/v1.0/api/plannerbuckettaskboardtaskformat_get" />
-      <Item text="Update bucket task board format" url="/en-us/api-reference/v1.0/api/plannerbuckettaskboardtaskformat_update" />	  
+      <Item text="Update bucket task board format" url="/en-us/api-reference/v1.0/api/plannerbuckettaskboardtaskformat_update" />
 	  </Item>
 	  <Item text="Progress task board task format" url="/en-us/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat" >
       <Item text="Get progress task board format" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_get" />
@@ -2148,7 +2148,7 @@
 	  <Item text="Add named item" url="/en-us/api-reference/v1.0/api/nameditem_add" />
 	  <Item text="List range" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
     </Item>
-  </Item> 
+  </Item>
   <Item Label="TOOLS" url="" />
   <Item text="Open extensions" url="/en-us/api-reference/v1.0/resources/opentypeextension" SEOKeyword="extension API, Microsoft Graph API, extension API" SEODescription="">
     <Item text="Create open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
@@ -2172,7 +2172,7 @@
     </Item>
   </Item>
   </Item>
-  
+
   <!--</Item>-->
 
 
@@ -2260,7 +2260,7 @@
 		<Item text="Get mailbox settings" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" />
 		<Item text="Update mailbox settings" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" />
 		<Item text="List categories" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
-		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />		
+		<Item text="Create category" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
 	  </Item>
 	  <Item text="People" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
         <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
@@ -2371,7 +2371,7 @@
 		<Item text="Delete policy" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_delete" />
 		<Item text="Add group" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_addgroup" />
 		<Item text="Remove group" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_removegroup" />
-		<Item text="Renew group" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />	  
+		<Item text="Renew group" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />
 	  </Item>
 	  <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
@@ -2432,7 +2432,7 @@
         <Item text="List attachments" url="/en-us/api-reference/beta/api/eventmessage_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
         <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
         <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
-      </Item> 
+      </Item>
 	  <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
 		  <Item text="File attachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
 		  <Item text="Item attachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
@@ -2453,7 +2453,7 @@
 		<Item text="Find meeting times" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="Meeting times, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
 		<Item text="Find room lists" url="/en-us/api-reference/beta/api/user_findroomlists" />
 		<Item text="Find rooms" url="/en-us/api-reference/beta/api/user_findrooms" />
-      </Item>  
+      </Item>
 	  <Item text="Calendar group" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="A group of calendars.">
         <Item text="List calendar groups" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="List calendarGroups, Microsoft Graph API, Users API" SEODescription="Retrieve a list of calendargroup objects." />
         <Item text="Create calendar group" url="/en-us/api-reference/beta/api/user_post_calendargroups" SEOKeyword="Create CalendarGroup, Microsoft Graph API, Users API" SEODescription="Use this API to create a new CalendarGroup." />
@@ -2473,7 +2473,7 @@
 		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
 		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
 		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-	  </Item>      
+	  </Item>
 	  <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
         <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
           <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
@@ -2485,7 +2485,7 @@
         </Item>
       </Item>
     </Item>
-	<Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/api-reference/beta/resources/project_rome_overview" > 
+	<Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/api-reference/beta/resources/project_rome_overview" >
 		<Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
 		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
 		<Item text="Get device command status" url="/en-us/api-reference/beta/api/get_device_command_status" />
@@ -2497,7 +2497,7 @@
 				<Item text="Get activities" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
 				<Item text="Get recent activities" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
 				<Item text="Delete activity" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
-			</Item>	
+			</Item>
 			<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
 				<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
 				<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
@@ -4952,7 +4952,7 @@
 			<Item text="Add member" url="/en-us/api-reference/beta/api/educationclass_post_members" />
 			<Item text="Remove member" url="/en-us/api-reference/beta/api/educationclass_delete_members" />
 			<Item text="List assignments" url="/en-us/api-reference/beta/api/educationclass_list_assignments" />
-			<Item text="Create assignment" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />	
+			<Item text="Create assignment" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />
 		</Item>
 		<Item text="Users" url="/en-us/api-reference/beta/resources/educationuser" >
 			<Item text="List schools" url="/en-us/api-reference/beta/api/educationuser_list_schools" />
@@ -5071,7 +5071,7 @@
           <Item text="Delete application" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="Delete application, Microsoft Graph API, application API" SEODescription="Delete application." />
           <Item text="List owners" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="List owners, Microsoft Graph API, application API" SEODescription="Retrieve a list of directoryobject objects." />
           <Item text="Assign owner" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Create owner, Microsoft Graph API, application API" SEODescription="Use this API to create a new owner." />
-          <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />           
+          <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />
         </Item>
 	  <Item text="Audit logs"  url="/en-us/api-reference/beta/resources/directoryaudit">
 			<Item text="Directory audit" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit object, Microsoft Graph API, Azure AD, audit logs" SEODescription="">
@@ -5093,8 +5093,8 @@
         <Item text="Permanently delete item" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Restore deleted item" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
 		<Item text="List deleted items owner by user" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
-       </Item>	       
-    
+       </Item>
+
       <Item text="Device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
         <Item text="Create device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
@@ -5265,7 +5265,7 @@
         <Item text="Delete agreement" url="/en-us/api-reference/beta/api/agreement_delete" SEODescription="Use this Microsoft Graph API to delete a terms of use agreement object." />
         <Item text="List acceptance status" url="/en-us/api-reference/beta/api/user_list_agreementacceptances" SEODescription="Use this Microsoft Graph API to list terms of use acceptance statuses of user." />
 	  </Item>
-    </Item> 
+    </Item>
     <Item text="Mail" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/mail_api_overview" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
       <Item text="Message" url="/en-us/api-reference/beta/resources/message" SEOKeyword="user mail, Microsoft Graph API, user API" SEODescription="">
         <Item text="List messages" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="List messages, Microsoft Graph API, Users API" SEODescription="Retrieve a list of message objects." />
@@ -5303,7 +5303,7 @@
 		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
 		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
 		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-	  </Item>    
+	  </Item>
 	  <Item text="Focused Inbox" url="/en-us/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="">
         <Item text="Create Override" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="Create an override for a sender identified by an SMTP address." />
         <Item text="List Overrides" url="/en-us/api-reference/beta/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph, Focused inbox" SEODescription="List the overrides for a sender identified by an SMTP address." />
@@ -5331,14 +5331,14 @@
 		<Item text="Delete mail search folder" url="/en-us/api-reference/beta/api/mailfolder_delete" SEODescription="Delete mailFolder." />
 		<Item text="List messages in folder" url="/en-us/api-reference/beta/api/mailfolder_list_messages" SEODescription="Retrieve a list of message objects." />
 		<Item text="List child folders" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEODescription="Retrieve a list of mailfolder objects." />
-	  </Item> 
+	  </Item>
 	  <Item text="Rules" url="/en-us/api-reference/beta/resources/messagerule" >
 		<Item text="List rules" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
 		<Item text="Create rule" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
 		<Item text="Get rule" url="/en-us/api-reference/beta/api/messagerule_get" />
-		<Item text="Update rule" url="/en-us/api-reference/beta/api/messagerule_update" />	  
+		<Item text="Update rule" url="/en-us/api-reference/beta/api/messagerule_update" />
 		<Item text="Delete rule" url="/en-us/api-reference/beta/api/messagerule_delete" />
-	  </Item>	  
+	  </Item>
 	  <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="" >
         <Item text="Single-value extended property" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="" >
           <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
@@ -5433,7 +5433,7 @@
 			<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
 			<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
 			<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-	  </Item>    
+	  </Item>
 		<Item text="Contact folder" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="A folder that contains contacts.">
           <Item text="List contact folders" url="/en-us/api-reference/beta/api/user_list_contactfolders" SEOKeyword="List contactFolders, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contactfolder objects." />
           <Item text="Create contact folder" url="/en-us/api-reference/beta/api/user_post_contactfolders" SEOKeyword="Create ContactFolder, Microsoft Graph API, Users API" SEODescription="Use this API to create a new ContactFolder." />
@@ -5573,7 +5573,6 @@
 			<Item text="Update alert" url="/en-us/api-reference/beta/api/alert_update" />
 		</Item>
 		<Item text="Errors" url="/en-us/api-reference/beta/resources/security-error-codes" />
-	    <Item text="Integrate with a SIEM" url="/en-us/concepts/security_siemintegration" />
 	</Item>
 	<Item text="Sites and lists" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, microsoft graph api, sharepoint sites api" >
@@ -5609,7 +5608,6 @@
       </Item>
 	    <Item text="Person" url="/en-us/api-reference/beta/resources/person" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
         <Item text="List people" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="List people, Microsoft Graph API, user API" SEODescription="Retrieve a list of person objects." />
-        <Item text="Get person" url="/en-us/api-reference/beta/api/person_get" SEOKeyword="Get person, Microsoft Graph API, person API" SEODescription="Retrieve the properties and relationships of person object." />
       </Item>
       <Item text="Mention" url="/en-us/api-reference/beta/resources/mention" SEODescription="Represents a notification to a person based on the person's email address." />
 	  </Item>
@@ -5633,11 +5631,11 @@
       </Item>
       <Item text="Task details" url="/en-us/api-reference/beta/resources/plannertaskdetails" >
         <Item text="Get task details" url="/en-us/api-reference/beta/api/plannertaskdetails_get" />
-        <Item text="Update task details" url="/en-us/api-reference/beta/api/plannertaskdetails_update" />	  
+        <Item text="Update task details" url="/en-us/api-reference/beta/api/plannertaskdetails_update" />
       </Item>
       <Item text="Plan details" url="/en-us/api-reference/beta/resources/plannerplandetails" >
         <Item text="Get plan details" url="/en-us/api-reference/beta/api/plannerplandetails_get" />
-        <Item text="Update plan details" url="/en-us/api-reference/beta/api/plannerplandetails_update" />	  
+        <Item text="Update plan details" url="/en-us/api-reference/beta/api/plannerplandetails_update" />
       </Item>
       <Item text="Bucket" url="/en-us/api-reference/beta/resources/plannerbucket" >
         <Item text="Create bucket" url="/en-us/api-reference/beta/api/planner_post_buckets" />
@@ -5648,11 +5646,11 @@
       </Item>
       <Item text="Assigned to task board format" url="/en-us/api-reference/beta/resources/plannerassignedtotaskboardtaskformat" >
         <Item text="Get assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_get" />
-        <Item text="Update assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_update" />	  
+        <Item text="Update assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_update" />
       </Item>
       <Item text="Bucket task board task format" url="/en-us/api-reference/beta/resources/plannerbuckettaskboardtaskformat" >
         <Item text="Get bucket task board format" url="/en-us/api-reference/beta/api/plannerbuckettaskboardtaskformat_get" />
-        <Item text="Update bucket task board format" url="/en-us/api-reference/beta/api/plannerbuckettaskboardtaskformat_update" />	  
+        <Item text="Update bucket task board format" url="/en-us/api-reference/beta/api/plannerbuckettaskboardtaskformat_update" />
       </Item>
       <Item text="Progress task board task format" url="/en-us/api-reference/beta/resources/plannerprogresstaskboardtaskformat" >
         <Item text="Get progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_get" />
@@ -5776,7 +5774,7 @@
 		<Item text="Get category" url="/en-us/api-reference/beta/api/outlookcategory_get" />
 		<Item text="Update category" url="/en-us/api-reference/beta/api/outlookcategory_update" />
 		<Item text="Delete category" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
-	  </Item>    
+	  </Item>
       <Item text="Extended properties" url="/en-us/api-reference/beta/resources/extended-properties-overview" >
         <Item text="Single-value extended properties" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" >
           <Item text="Create single-value property" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" />
@@ -5787,7 +5785,7 @@
           <Item text="Get multivalue property" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" />
         </Item>
       </Item>
-    </Item>   
+    </Item>
 	<Item text="Workbooks and charts" ProdTag="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="Workbook" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="" >
         <Item text="Create session" url="/en-us/api-reference/beta/api/workbook_createsession" />
@@ -5862,7 +5860,7 @@
       <Item text="Get schema extension" url="/en-us/api-reference/beta/api/schemaextension_get" SEOKeyword="Get schema extension, Microsoft Graph API" SEODescription="Retrieve the properties of a schema extension definition." />
       <Item text="Update schema extension" url="/en-us/api-reference/beta/api/schemaextension_update" SEOKeyword="Update schema extension, Microsoft Graph API" SEODescription="Update the properties of a schema extension definition." />
       <Item text="Delete schema extension" url="/en-us/api-reference/beta/api/schemaextension_delete" SEOKeyword="Delete schema extension, Microsoft Graph API" SEODescription="Delete a schema extension definition." />
-    </Item>  
+    </Item>
     <Item text="Change notifications" url="/en-us/api-reference/beta/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
       <Item text="Subscription" url="/en-us/api-reference/beta/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
         <Item text="List subscription" url="/en-us/api-reference/beta/api/subscription_list" />
