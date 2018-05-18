@@ -7,13 +7,13 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 ## Common use cases  
 | Use cases                             | REST resources                                               | See also                                                     |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Create and delete teams               | [team](team.md) | [Create team](../api/team_put_teams) |
-| Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members), [Remove member](../api/group_delete_members) |
-| Add and remove channels               | [channel](../resources/channel) | [Create channel](../api/group_post_channels) |
+| Create and delete teams               | [team](team.md) | [Create team](../api/team_put_teams.md) |
+| Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members.md), [Remove member](../api/group_delete_members.md) |
+| Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
 | Post a message                        | [chatMessage](../resources/chatmessage.md) | [Post a message](../api/channel_post_chatthreads.md) |
-| Change team settings                  | [teamMemberSettings](../resources/teammembersettings), [teamGuestSettings](../resources/teamGuestSettings), [teamMessagingSettings](../resources/teammessagingsettings), [teamFunSettings](../resources/teamGuestSettings) |                                                              |
-| Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get) |                                                              |
-| List notebooks for a Team             | [Notebook](../../v1.0/resources/notebook) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks) |
+| Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamGuestSettings.md) |                                                              |
+| Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
+| List notebooks for a Team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |
 
 ## Membership changes in Microsoft Teams
 
