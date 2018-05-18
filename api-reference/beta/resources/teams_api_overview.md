@@ -15,7 +15,20 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 | Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get) |                                                              |
 | List notebooks for a Team             | [Notebook](../../v1.0/resources/notebook) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks) |
 
-##Teams and groups
+## Membership changes in Microsoft Teams
+
+When adding or removing members to a team through Graph, it can take up to 24 hours for the Teams application to reflect the changes. 
+This can be sped up to under a minute by changing from the v1.0 to the beta Graph endpoint for adding and removing members. Ie:
+
+| Use case      | Verb      | URL |
+| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Add member	| POST	    | https://graph.microsoft.com/**beta**/groups/{id}/members/$ref  |
+| Remove member	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/members/{userId}/$ref |
+| Add owner     | POST	    | https://graph.microsoft.com/**beta**/groups/{id}/owners/$ref |
+| Remove owner	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/owners/{userId}/$ref |
+| Update team	| PATCH     | https://graph.microsoft.com/**beta**/groups/{id}/team |
+
+## Teams and groups
 
 In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address 
 the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and 
@@ -23,7 +36,7 @@ Office 365 groups, such as group calendar, files, notes, photo, plans, and so on
 between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, 
 which are email conversations that occur in the context of a group in Outlook.
 
-The following are the differences at the API level: 
+The following are the differences at the API level between teams and groups: 
 
 - Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the 
 [channel](../resources/channel.md), [chatThread](../resources/chatthread.md), and [chatMessage](../resources/chatmessage.md) resources.
