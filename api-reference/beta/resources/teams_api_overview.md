@@ -22,11 +22,12 @@ This can be sped up to under a minute by changing from the v1.0 to the beta Grap
 
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Add member	| POST	    | https://graph.microsoft.com/**beta**/groups/{id}/members/$ref  |
-| Remove member	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/members/{userId}/$ref |
-| Add owner     | POST	    | https://graph.microsoft.com/**beta**/groups/{id}/owners/$ref |
-| Remove owner	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/owners/{userId}/$ref |
-| Update team	| PATCH     | https://graph.microsoft.com/**beta**/groups/{id}/team |
+| [Add member](../api/group_post_members.md)	| POST	    | https://graph.microsoft.com/**beta**/groups/{id}/members/$ref  |
+| [Remove member](../api/group_delete_members.md)	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/members/{userId}/$ref |
+| [Add owner](../api/group_post_owners.md)     | POST	    | https://graph.microsoft.com/**beta**/groups/{id}/owners/$ref |
+| [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/owners/{userId}/$ref |
+| [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/**beta**/groups/{id}/team |
+
 
 ## Teams and groups
 
