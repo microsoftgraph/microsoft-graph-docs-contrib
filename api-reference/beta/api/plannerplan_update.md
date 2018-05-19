@@ -17,7 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /planner/plans/<id>
 ```
-## Optional request headers
+
+## Request headers
+
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}. Required. |
