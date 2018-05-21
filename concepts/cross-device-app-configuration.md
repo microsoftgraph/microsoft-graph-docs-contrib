@@ -8,14 +8,16 @@ A cross-device app enables you to:
 - Read and  write user activities published by a group of platform-specific applications by using the Project Rome SDK for Windows, Android, and/or iOS.
 -  Target apps via the device relay capabilities in Project Rome by using the Project Rome SDK for Android or iOS.
 
-### Pick up where you left off across devices with the activity feed API
+**Pick up where you left off across devices with the activity feed API**
+
 You can configure a cross-device app to associate your apps for Windows, iOS, Android, and the web so that the app on each platform can read and write user activities that are published by any app in the group. 
 
 For example, a user is finishing up a press release on her PC at work before dinner with friends. At the restaurant, she gets a notification from her boss about a typo that needs to be fixed asap. She opens the app on her Android phone and sees a card showing the press release she was editing earlier. She taps the card to open it so she can fix the release immediately and get back to her friends. 
  
 With this cross-device app configuration in place, the user's activity feed is synchronized across devices and platforms effortlessly so you can build experiences that help users pick up important tasks where they left off from any app surface. 
 
-### Choose the right screen at the right time with the device relay API
+**Choose the right screen at the right time with the device relay API**
+
 You can configure a cross-device app with push notification credentials for each of the platforms your app is available on so that a command or notification can be delivered to you on any device where you use the app, regardless of platform. 
 
 For example, a user is watching a video on the bus ride home from work. When she arrives home, she taps the app to launch the video on her Xbox One so she can continue watching on the big screen. 
