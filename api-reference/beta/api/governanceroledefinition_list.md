@@ -14,31 +14,41 @@ One of the following permissions is required to call this API. To learn more, in
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
 
-### HTTP request
+## HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
 GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-### Request headers
+## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-### Request body
+## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleDefinition](../resources/governanceroledefinition.md) objects in the response body.
-### Example
-
+## Example
+<!-- {
+  "blockType": "request",
+  "name": "get_governanceroledefinitions"
+}-->
 Get all role definitions of subscription "Wingtip Toys - Prod"
 ##### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  
 ```
 ##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.governanceRoleDefinition",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -71,3 +81,14 @@ Content-Length: 21906
   ]
 }
 ```
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List governanceRoleDefinitions",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

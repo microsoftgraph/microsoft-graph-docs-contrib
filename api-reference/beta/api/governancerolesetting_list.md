@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
@@ -36,11 +36,21 @@ If successful, this method returns a `200 OK` response code and collection of [g
 
 ## Example
 An administrator lists role settings for resource "Wingtip Toys - Prod" 
+<!-- {
+  "blockType": "request",
+  "name": "get_governancerolesettings"
+}-->
 ##### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleSettings
 ```
 ##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.governanceRoleSetting",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -147,3 +157,13 @@ Content-length: 463
     ]
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List governanceRoleSettings",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

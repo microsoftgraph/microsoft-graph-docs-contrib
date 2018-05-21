@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 Besides the permission scope, this API requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource, which the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) belongs to. 
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
 ```
@@ -41,6 +41,10 @@ If successful, this method returns `204, No Content` response code. It does not 
 
 ### Example
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "updaterequest_governanceroleassignmentrequest"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/updateRequest
 ```
@@ -59,7 +63,21 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ```
 
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "UpdateRequest governanceRoleAssignmentRequest",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleDefinition](../resources/governanceroledefinition.md) belongs to.
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
@@ -32,15 +32,24 @@ This method does **not** support the [OData Query Parameters](http://graph.micro
 
 ## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [governanceRoleDefinition](../resources/governanceroledefinition.md) object in the response body.
-### Example : 
+## Example
 Get details of role Definition "DNS Zone Contributor" in subscription "Wingtip Toys - Prod"
+<!-- {
+  "blockType": "request",
+  "name": "get_governanceroledefinition"
+}-->
 ##### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions/00efc9e0-1b96-4e9a-99a3-a3df0735cf88
 ```
 ##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleDefinition"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -55,3 +64,13 @@ Content-length: 174
     "displayName": "DNS Zone Contributor"
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get governanceRoleDefinition",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

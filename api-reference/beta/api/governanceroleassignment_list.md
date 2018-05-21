@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 1. List a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) on a resource
 
     *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
@@ -40,15 +40,24 @@ Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) objects in the response body.
-### Example:
+## Example
 Get my role assignments on subscription "Wingtip Toys - Prod"
+<!-- {
+  "blockType": "request",
+  "name": "get_governanceroleassignments"
+}-->
 ##### Request
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'918e54be-12c4-4f4c-a6d3-2ee0e3661c51'
 ```
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.governanceRoleAssignment",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -89,3 +98,13 @@ Content-Length: 2062
   ]
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List roleAssignments",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

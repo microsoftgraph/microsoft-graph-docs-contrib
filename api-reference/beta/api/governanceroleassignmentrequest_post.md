@@ -27,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
@@ -82,6 +83,10 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 |reason|String| depends on role Settings||
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
 Content-type: application/json
@@ -100,7 +105,11 @@ Content-type: application/json
 }
 ```
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -159,6 +168,10 @@ Content-length: 226
 |reason|String| depends on role Settings||
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
 Content-type: application/json
@@ -178,7 +191,11 @@ Content-type: application/json
 }
 ```
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -247,6 +264,10 @@ Content-type: application/json
 |reason|String| No||
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|No|        |
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
 Content-type: application/json
@@ -261,7 +282,11 @@ Content-type: application/json
 }
 ```
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -301,6 +326,10 @@ Content-length: 226
 |reason|String| No||
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|No|        |
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
 Content-type: application/json
@@ -314,7 +343,11 @@ Content-type: application/json
 }
 ```
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -354,6 +387,10 @@ Content-length: 226
 |reason|String| depends on roleSettings||
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
 Content-type: application/json
@@ -372,7 +409,11 @@ Content-type: application/json
 }
 ```
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -425,6 +466,10 @@ Content-length: 226
 |reason|String| depends on roleSettings||
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests
 Content-type: application/json
@@ -444,7 +489,11 @@ Content-type: application/json
 }
 ```
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
+} -->
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -483,3 +532,13 @@ Content-length: 226
   }
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Post roleAssignmentRequest",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

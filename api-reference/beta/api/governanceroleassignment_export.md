@@ -15,6 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 ## HTTP request
+<!-- { "blockType": "ignored" } -->
 1. Export a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) on a resource
     
     *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
@@ -27,7 +28,7 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+e
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
-### Optional query parameters
+## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
@@ -41,17 +42,25 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and content of type `application/octet-stream`.
 
-### Example : 
+## Example
 Save all role assignments as `.csv` file in subscription "Wingtip Toys - Prod" 
 
 ##### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "governanceroleassignmentrequest_export"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/export?filter=resourceId+eq+'85dfe48a-55d3-49fc-8f36-ee14b7f6f720'
 ```
 ##### Response
 Here is an example of the response. 
-
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "String",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type:application/octet-stream
@@ -60,3 +69,13 @@ Content-Length:126
 77u/77u/QXNzaWdubWVudCBMZXZlbCxVc2VyIEdyb3VwIE5hbWUsUm9sZSBOYW1lLEVtYWlsLEFzc2lnbm1lbnQgVHlwZSxBc3NpZ25tZW43IFN0YXJ0IFRpbWUgKFVUQyksQXNzaWdubWVudCBFbmQgVGltZdAoVVRDKQ0K
 
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Export governanceRoleAssignmentRequests",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

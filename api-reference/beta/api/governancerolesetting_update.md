@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Besides the permission scope, this API requires the requestor to have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
@@ -49,7 +49,10 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 ## Example : 
 Update role setting for "Custom Role 3" in subscription "Wingtip Toys - Prod"
 ##### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "update_governancerolesetting"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
 Content-type: application/json
@@ -60,4 +63,18 @@ Content-length: 350
 }
 ```
 ##### Response
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.None"
+} -->
 None.
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update governanceRoleSetting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

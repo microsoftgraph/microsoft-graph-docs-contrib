@@ -17,6 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 This method does **not** support [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters).
 
 ### HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ```
@@ -43,11 +44,30 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 ## Example
 ##### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "cancel_governanceroleassignmentrequest"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/cancel
 ```
 
 ##### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Cancel governanceRoleAssignmentRequest",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

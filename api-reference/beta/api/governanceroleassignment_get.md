@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 1. Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on a resource
 
     *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
@@ -37,16 +37,24 @@ This method does **not** supports [OData Query Parameters](http://developer.micr
 
 ## Request body
 Do not supply a request body for this method.
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and [governanceRoleAssignment](../resources/governanceroleassignment.md) object in the response body.
-## Example : 
+## Example
+<!-- {
+  "blockType": "request",
+  "name": "get_governanceroleassignment"
+}-->
 Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on subscription "Wingtip Toys - Prod"
 ##### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.governanceRoleAssignment"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -68,3 +76,13 @@ Content-length: 182
     "status": "Provisioned"
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get governanceRoleAssignment",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
