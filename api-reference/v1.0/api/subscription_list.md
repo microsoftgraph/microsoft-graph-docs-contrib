@@ -1,7 +1,5 @@
 # List subscriptions
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant.
 
 ## Permissions
@@ -58,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
   "name": "get_subscriptions"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/subscriptions
+GET https://graph.microsoft.com/v1.0/subscriptions
 ```
 ##### Response
 Here's an an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.
@@ -75,7 +73,7 @@ Content-type: application/json
 Content-length: 586
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions",
     "value": [
         {
             "id": "0fc0d6db-0073-42e5-a186-853da75fb308",
