@@ -1,6 +1,6 @@
 # Microsoft Graph API Terms of Use 
 
-Last revised in December 2017
+Last revised in May 2018
 
 Thank you for developing with Microsoft!
 
