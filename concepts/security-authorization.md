@@ -105,7 +105,7 @@ After an application is granted permissions, everyone with access to the applica
 
 To assign roles to users:
 
-- Sign in to the [azure portal](https://portal.azure.com/#@isgdemodev.onmicrosoft.com/dashboard/private/76e81922-1bdf-455e-bdbb-33ff73765011) (http://portal.azure/com).
+- Sign in to the [azure portal](https://portal.azure.com) (http://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the user.
 - Select **Manage** > **Directory role**.
@@ -157,4 +157,4 @@ To view claims contained in the returned token, use NuGet library System.Identit
 `JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();`</br>
 `var securityToken = tokenHandler.ReadToken(accessToken) as JwtSecurityToken;`
 
-The response from Microsoft Graph contains a header called client-request-id, which is a GUID. If access is denied, please specify this GUID when seeking support, so we can help investigate the cause of this authentication failure.
+The response from Microsoft Graph contains a header called client-request-id, which is a GUID. If access is denied, please specify this GUID when seeking support at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Graph-Security-API/ct-p/SecurityGraphAPI), so we can help investigate the cause of this authentication failure.

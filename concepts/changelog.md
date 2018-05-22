@@ -6,6 +6,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2018
 
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta          | Added the [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) function to the [directory](../api-reference/beta/resources/directory.md) resource to list the deleted groups owned by a given user. |
+
+
+### Drive API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta          | Added the [socketIo subscription](../api-reference/beta/api/driveItem_subscriptions_socketIo.md) function to the [driveItem](../api-reference/beta/resources/driveitem.md) resource. |
+
 ### Groups
 
 | **Change type** | **Version**   | **Description**                          |
@@ -29,6 +42,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          | Added the [settings](../api-reference/beta/resources/user_settings.md) entity and the following CRUD methods: <br> [Get](../api-reference/beta/api/user_get_settings.md) <br> [Update](../api-reference/beta/api/user_update_settings.md) |
+
+### Azure AD APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change           | Beta          | Renamed the **creatorUserId** property of the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/subscription) entity to **creatorId** to better reflect its meaning. |
+|Change|v1.0 |Added the [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/subscription_list) operation to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/subscription) entity. |
+|Change|v1.0 |Added the **applicationID** and **creatorId** properties to the [subscription](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/subscription) entity. |
 
 ## April 2018
 
