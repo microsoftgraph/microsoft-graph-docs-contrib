@@ -11,6 +11,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | beta          | Added the [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) function to the [directory](../api-reference/beta/resources/directory.md) resource to list the deleted groups owned by a given user. |
+| Deletion        | beta          | Removed the **renew** action from the [group](../api-reference/beta/resources/group.md) resource. |
 
 
 ### Drive API
