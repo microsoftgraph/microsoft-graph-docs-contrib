@@ -46,7 +46,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.governanceResources",
+  "@odata.type": "microsoft.graph.governanceResource",
   "isCollection": true
 } -->
 ```http

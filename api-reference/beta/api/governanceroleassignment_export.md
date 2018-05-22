@@ -57,9 +57,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "String",
-  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
