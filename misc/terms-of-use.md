@@ -105,9 +105,12 @@ In the event of a data breach by you resulting from any aspect of the Graph API 
 You must comply with all laws and regulations applicable to your use of the data accessed through Graph API, including without limitation laws related to privacy, biometric data, data protection, and confidentiality of communications. Your use of the Graph API is conditioned upon implementing and maintaining appropriate protections and measures for your service and Application, and that includes your responsibility to the data obtained through the use of the Graph APIs. For the data you obtained through the Graph API, you must: 
 
 a)	obtain all necessary consents before processing data and obtain additional consent if the processing changes, 
-b)	In the event you’re storing data locally, ensure that data is kept up to date and implement corrections, restrictions to data, or the deletion of data as reflected in the data obtained through your use of the Graph API, 
-c)	implement proper retention and deletion policies, including deleting all data when your user abandons your Application, uninstalls your Application, closes its account with you, or abandons the account, and, 
-d)	maintain and comply with a written statement available to Customers and users that describes your privacy practices regarding data and information you collect and use, and that statement must be as protective as the Microsoft Privacy Statement. 
+
+b)	In the event you’re storing data locally, ensure that data is kept up to date and implement corrections, restrictions to data, or the deletion of data as reflected in the data obtained through your use of the Graph API,
+
+c)	implement proper retention and deletion policies, including deleting all data when your user abandons your Application, uninstalls your Application, closes its account with you, or abandons the account, and,
+
+d)	maintain and comply with a written statement available to Customers and users that describes your privacy practices regarding data and information you collect and use, and that statement must be as protective as the Microsoft Privacy Statement.
 
 Nothing in the Agreement shall be construed as creating a joint controller or processor- subprocessor relationship between you and Microsoft.
 
