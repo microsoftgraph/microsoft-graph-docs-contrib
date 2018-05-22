@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
 } -->
 ```http
 HTTP/1.1 200 OK

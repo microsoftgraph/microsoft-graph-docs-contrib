@@ -199,6 +199,7 @@ Content-type: application/json
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
     "id": "3ad49a7c-918e-4d86-9f84-fab28f8658c0",
@@ -291,6 +292,7 @@ Content-type: application/json
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 226
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
     "id": "abfcdb57-8e5d-42a0-ae67-7598b96fddb1",
@@ -352,6 +354,7 @@ Content-type: application/json
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 226
+
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
   "id":"c934fcb9-cf53-42ac-a8b4-6246f6726299",
@@ -418,6 +421,7 @@ Content-type: application/json
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 226
+
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
   "id":"4f6d4802-b3ac-4f5a-86d7-a6a4edd7d383",
@@ -498,6 +502,7 @@ Content-type: application/json
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 226
+
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#governanceRoleAssignmentRequests/$entity",
   "id":"486f0c05-47c8-4498-9c06-086a78c83004",
