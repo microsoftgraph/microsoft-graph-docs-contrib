@@ -11,7 +11,7 @@ Before you get started with Planner API, it is worth understanding how the main 
 Office 365 groups are the owners of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup_list_plans.md), make the following HTTP request.
 
-```http
+``` http
 GET /groups/{id}/planner/plans
 ```
 
@@ -26,7 +26,7 @@ To [create a task in a plan](../api/planner_post_tasks.md), set the `planId` pro
 Tasks currently cannot be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan_list_tasks.md), make the following HTTP request.
 
-```http
+``` http
 GET /planner/plans/{id}/tasks
 ```
 
