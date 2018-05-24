@@ -2165,6 +2165,7 @@
   </Item>
    <Item text="Change notifications" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
     <Item text="Subscription" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="insights, Microsoft Graph API, user API" SEODescription="">
+	  <Item text="List subscription" url="/en-us/api-reference/v1.0/api/subscription_list" />
       <Item text="Get subscription" url="/en-us/api-reference/v1.0/api/subscription_get" SEOKeyword="List subscriptions, Microsoft Graph API, webhoooks API" SEODescription="Retrieve a list of subscription." />
       <Item text="Create subscription" url="/en-us/api-reference/v1.0/api/subscription_post_subscriptions" />
       <Item text="Update subscription" url="/en-us/api-reference/v1.0/api/subscription_update" />
