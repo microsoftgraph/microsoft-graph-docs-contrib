@@ -30,7 +30,6 @@ Here is a JSON representation of the resource.
   "expirationDateTime": "String (timestamp)",
   "id": "string (identifier)",
   "clientState": "string",
-  "applicationId": "string",
   "creatorId": "string"
 }
 ```
