@@ -1,4 +1,4 @@
-# Working with webhooks in Microsoft Graph
+# Set up notifications for changes in user data
 
 The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
 
@@ -52,16 +52,6 @@ Certain limits apply to Azure AD based resources (users, groups) and may generat
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting notifications.
-
-## Permissions
-
-In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
-
-| Permission type | Supported resource types in v1.0 |
-| :-------------- | :------------------------------- |
-| Delegated - work or school account | [contact][], [conversation][], [drive][], [event][], [message][] |
-| Delegated - personal Microsoft account | None |
-| Application | [contact][], [conversation][], [event][], [message][] |
 
 ## Managing subscriptions
 
@@ -157,21 +147,21 @@ The notification object has the following properties:
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| `subscriptionId` | string | The ID for the subscription to which this notification belongs. |
-| `subscriptionExpirationDateTime` | [dateTime](http://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
-| `clientState` | string | The `clientState` property specified in the subscription request (if any). |
-| `changeType` | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
-| `resource` | string | The URI of the resource relative to `https://graph.microsoft.com`. |
-| `resourceData` | object | The object dependent on the resource being subscribed to. |
+| subscriptionId | string | The ID for the subscription to which this notification belongs. |
+| subscriptionExpirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
+| clientState | string | The `clientState` property specified in the subscription request (if any). |
+| changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
+| resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
+| resourceData | object | The object dependent on the resource being subscribed to. |
 
 For example, for Outlook resources, `resourceData` contains the following fields:
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| `@odata.type` | string | The OData entity type in Microsoft Graph that describes the represented object. |
-| `@odata.id` | string | The OData identifier of the object. |
-| `@odata.etag` | string | The HTTP entity tag that represents a version of the object. |
-| `id` | string | The identifier of the object. |
+| @odata.type | string | The OData entity type in Microsoft Graph that describes the represented object. |
+| @odata.id | string | The OData identifier of the object. |
+| @odata.etag | string | The HTTP entity tag that represents a version of the object. |
+| id | string | The identifier of the object. |
 
 > **Note:** The `id` value provided in `resourceData` is valid at the time the notification was queued. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the notification is processed.
 
@@ -224,6 +214,7 @@ The following code samples are available on GitHub.
 
 - [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
+- [Microsoft Graph User Webhooks Sample using WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
 
 ## See also
 
