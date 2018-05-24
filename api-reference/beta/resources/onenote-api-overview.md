@@ -17,7 +17,7 @@ The `version` segment in the URL represents the version of Microsoft Graph that 
 
 The location can be user notebooks on Office 365 or consumer OneDrive, group notebooks, or SharePoint site-hosted team notebooks on Office 365. 
 
-![OneNote API development stack](../../../concepts/images/onenote-dev-diagram.png)
+![OneNote API development stack](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
 ### User notebooks
 To access personal notebooks on consumer OneDrive or OneDrive for Business, use one of the following URLs:
