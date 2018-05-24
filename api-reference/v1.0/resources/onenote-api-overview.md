@@ -44,8 +44,3 @@ To access notebooks that are owned by a SharePoint team site, use the following 
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
-
-
-
-
-
