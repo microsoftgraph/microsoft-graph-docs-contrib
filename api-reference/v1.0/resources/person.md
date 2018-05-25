@@ -4,13 +4,13 @@ An aggregation of information about a person from across mail, contacts, and soc
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method | Return Type | Description |
 |:---------------|:--------|:----------|
 |[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
-|[Get person](../api/person_get.md) | **person** |Get properties and relationships of a person object.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property | Type | Description |
 |:---------------|:--------|:----------|
 |birthday|String|The person's birthday.|
 |companyName|String|The name of the person's company.|
@@ -23,7 +23,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 |isFavorite|Boolean|`true` if the user has flagged this person as a favorite.|
 |jobTitle|String|The person's job title.|
 |officeLocation|String|The location of the person's office.|
-|personNotes|String|Free-form notes that the the user has taken about this person.|
+|personNotes|String|Free-form notes that the user has taken about this person.|
 |personType|[personType](persontype.md) collection|The type of person.|
 |phones|[phone](phone.md) collection|The person's phone numbers.|
 |postalAddresses|[location](location.md) collection|The person's addresses.|
@@ -34,8 +34,8 @@ An aggregation of information about a person from across mail, contacts, and soc
 |yomiCompany|String|The phonetic Japanese name of the person's company.|
 
 ## Relationships
-None.
 
+None.
 
 ## JSON representation
 
