@@ -12,7 +12,7 @@ Column values in the list are available through the `fieldValueSet` dictionary.
 ## Tasks on a listItem
 
 The following tasks are available for **listItem** resources.
-All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
+All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
 
 | Common task                    | HTTP method
 |:-------------------------------|:------------------------
@@ -43,6 +43,7 @@ Here is a JSON representation of a **listItem** resource.
 
   /* relationships */
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string",
@@ -83,9 +84,10 @@ The following properties are inherited from **[baseItem][]**.
 
  The **listItem** resource has the following relationships to other resources.
 
-| Relationship name | Type                        | Description
-|:------------------|:----------------------------|:-------------------------------
-| driveItem         | [driveItem][]               | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
+| Relationship name | Type                           | Description
+|:------------------|:-------------------------------|:-------------------------------
+| driveItem         | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
+| versions          | [listItemVersion][] collection | The list of previous versions of the list item.
 
 [baseItem]: baseItem.md
 [contentTypeInfo]: contentTypeInfo.md
@@ -93,6 +95,7 @@ The following properties are inherited from **[baseItem][]**.
 [fieldValueSet]: fieldValueSet.md
 [identitySet]: identitySet.md
 [list]: list.md
+[listItemVersion]: listItemVersion.md
 
 <!-- {
   "type": "#page.annotation",

@@ -7,7 +7,29 @@ Create an [event](../resources/event.md) in the user's default calendar or speci
 You can specify the time zone for each of the start and end times of the event as part of these values, as the 
 **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. 
 
-When the event is created, the server send invitations to all attendees.
+When an event is sent, the server sends invitations to all the attendees.
+
+**Setting the location in an event**
+
+An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment 
+like a projector. Users can then invite the resource as an attendee to a meeting. On behalf of the resource, the server accepts or rejects 
+the meeting request based on the free/busy schedule of the resource. 
+If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar. If the meeting is rescheduled, 
+the server automatically updates the event in the resource's calendar.
+
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives
+or their delegates can book a private meeting room.
+
+If you're organizing an event that involves a meeting location:
+
+1. Set the **location** property of the **event** accordingly. 
+2. Set the optional **locationEmailAddress** property if the meeting location has an email address.
+
+Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
+
+3. Invite the resource as an [attendee](../resources/attendee.md).
+4. Set the attendee **type** property as `resource`.
+5. Set the attendee **emailAddress** as the resource email address.
 
 
 ## Permissions
@@ -561,8 +583,8 @@ Content-type: application/json
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

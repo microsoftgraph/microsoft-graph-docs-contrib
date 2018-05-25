@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6795
+Content-Length: 7492
 
 {
   "value": [
@@ -92,6 +92,7 @@ Content-Length: 6795
         "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
       },
       "ownerType": "company",
+      "managedDeviceOwnerType": "company",
       "deviceActionResults": [
         {
           "@odata.type": "microsoft.graph.deviceActionResult",
@@ -115,12 +116,14 @@ Content-Length: 6795
       "easDeviceId": "Eas Device Id value",
       "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
       "aadRegistered": true,
+      "azureADRegistered": true,
       "deviceEnrollmentType": "userEnrollment",
       "lostModeState": "enabled",
       "activationLockBypassCode": "Activation Lock Bypass Code value",
       "emailAddress": "Email Address value",
       "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-      "deviceRegistrationState": "smsidConflict",
+      "azureADDeviceId": "Azure ADDevice Id value",
+      "deviceRegistrationState": "registered",
       "deviceCategoryDisplayName": "Device Category Display Name value",
       "isSupervised": true,
       "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
@@ -128,6 +131,7 @@ Content-Length: 6795
       "exchangeAccessStateReason": "unknown",
       "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
       "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
+      "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
       "isEncrypted": true,
       "userPrincipalName": "User Principal Name value",
       "model": "Model value",
@@ -188,7 +192,18 @@ Content-Length: 6795
       "totalStorageSpaceInBytes": 8,
       "freeStorageSpaceInBytes": 7,
       "managedDeviceName": "Managed Device Name value",
-      "partnerReportedThreatState": "activated"
+      "partnerReportedThreatState": "activated",
+      "usersLoggedOn": [
+        {
+          "@odata.type": "microsoft.graph.loggedOnUser",
+          "userId": "User Id value",
+          "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
+        }
+      ],
+      "preferMdmOverGroupPolicyAppliedDateTime": "2016-12-31T23:57:34.4649887-08:00",
+      "isAutopilotEnrolled": true,
+      "requestUserEnrollmentApproval": true,
+      "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00"
     }
   ]
 }

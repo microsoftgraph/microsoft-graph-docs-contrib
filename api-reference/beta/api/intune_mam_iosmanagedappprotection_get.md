@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1811
+Content-Length: 2477
 
 {
   "value": {
@@ -88,10 +88,26 @@ Content-Length: 1811
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
     "minimumWarningAppVersion": "Minimum Warning App Version value",
+    "minimumWipeOsVersion": "Minimum Wipe Os Version value",
+    "minimumWipeAppVersion": "Minimum Wipe App Version value",
+    "appActionIfDeviceComplianceRequired": "wipe",
+    "appActionIfMaximumPinRetriesExceeded": "wipe",
     "isAssigned": true,
+    "targetedAppManagementLevels": "unmanaged",
     "appDataEncryptionType": "afterDeviceRestart",
     "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
-    "deployedAppCount": 0
+    "deployedAppCount": 0,
+    "faceIdBlocked": true,
+    "exemptedAppProtocols": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ],
+    "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
+    "allowedIosDeviceModels": "Allowed Ios Device Models value",
+    "appActionIfIosDeviceModelNotAllowed": "wipe"
   }
 }
 ```

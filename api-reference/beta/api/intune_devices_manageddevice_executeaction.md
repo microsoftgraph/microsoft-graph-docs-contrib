@@ -38,7 +38,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionName|String|Not yet documented|
+|actionName|[managedDeviceRemoteAction](../resources/intune_devices_manageddeviceremoteaction.md)|Not yet documented|
 |deviceIds|String collection|Not yet documented|
 
 
@@ -53,10 +53,10 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 89
+Content-length: 78
 
 {
-  "actionName": "Action Name value",
+  "actionName": "delete",
   "deviceIds": [
     "Device Ids value"
   ]

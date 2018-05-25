@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Not supported.                           |
+| Delegated (work or school account)     | Reports.Read.All                         |
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
@@ -24,7 +24,7 @@ GET /reports/getMailboxUsageStorage(period='{period_value}')
 
 ## Request parameters
 
-In the request URL, provide the following query parameter with a valid value.
+In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |

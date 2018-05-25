@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Not supported.                           |
+| Delegated (work or school account)     | Reports.Read.All                         |
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
@@ -25,7 +25,7 @@ GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 
 ## Request parameters
 
-In the request URL, provide the chosen query parameter with a valid value.
+In the request URL, provide the query parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
@@ -36,9 +36,9 @@ In the request URL, provide the chosen query parameter with a valid value.
 
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                              |
+| :------------ | :--------------------------------------- |
+| Authorization | Bearer {token}. Required.                |
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response

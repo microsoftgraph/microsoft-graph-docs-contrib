@@ -49,12 +49,11 @@ The following table shows the properties that are required when you create the w
 |passwordExpirationDays|Int32|The password expiration in days.|
 |passwordMinimumLength|Int32|The minimum password length.|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
-|passwordRequiredType|String|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|The number of previous passwords to prevent re-use of.|
 |requireHealthyDeviceReport|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
 |osMinimumVersion|String|Minimum Windows 10 version.|
 |osMaximumVersion|String|Maximum Windows 10 version.|
-|minimumUpdateAutoInstallClassification|String|The minimum update classification to install automatically. Possible values are: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |mobileOsMinimumVersion|String|Minimum Windows Phone version.|
 |mobileOsMaximumVersion|String|Maximum Windows Phone version.|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is enabled.|
@@ -69,6 +68,8 @@ The following table shows the properties that are required when you create the w
 |signatureOutOfDate|Boolean|Require Windows Defender Antimalware Signature to be up to date on Windows devices.|
 |rtpEnabled|Boolean|Require Windows Defender Antimalware Real-Time Protection on Windows devices.|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune_deviceconfig_operatingsystemversionrange.md) collection|The valid operating system build ranges on Windows devices. This collection can contain a maximum of 10000 elements.|
+|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 
 
 
@@ -81,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1548
+Content-length: 1579
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -101,7 +102,6 @@ Content-length: 1548
   "requireHealthyDeviceReport": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
-  "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
   "mobileOsMinimumVersion": "Mobile Os Minimum Version value",
   "mobileOsMaximumVersion": "Mobile Os Maximum Version value",
   "earlyLaunchAntiMalwareDriverEnabled": true,
@@ -122,7 +122,9 @@ Content-length: 1548
       "lowestVersion": "Lowest Version value",
       "highestVersion": "Highest Version value"
     }
-  ]
+  ],
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured"
 }
 ```
 
@@ -131,7 +133,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1656
+Content-Length: 1687
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -153,7 +155,6 @@ Content-Length: 1656
   "requireHealthyDeviceReport": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
-  "minimumUpdateAutoInstallClassification": "recommendedAndImportant",
   "mobileOsMinimumVersion": "Mobile Os Minimum Version value",
   "mobileOsMaximumVersion": "Mobile Os Maximum Version value",
   "earlyLaunchAntiMalwareDriverEnabled": true,
@@ -174,7 +175,9 @@ Content-Length: 1656
       "lowestVersion": "Lowest Version value",
       "highestVersion": "Highest Version value"
     }
-  ]
+  ],
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured"
 }
 ```
 

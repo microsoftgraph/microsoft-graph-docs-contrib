@@ -1,4 +1,4 @@
-# Use the Microsoft Graph API to integrate with Outlook mail
+# Use the Outlook mail REST API
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -59,6 +59,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 ## Next steps
 The mail API can open up new ways for you to engage with users: 
 
+- [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) 
 of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).

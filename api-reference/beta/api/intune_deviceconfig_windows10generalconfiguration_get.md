@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11539
+Content-Length: 11923
 
 {
   "value": {
@@ -83,6 +84,11 @@ Content-Length: 11539
     "messagingBlockSync": true,
     "messagingBlockMMS": true,
     "messagingBlockRichCommunicationServices": true,
+    "printerNames": [
+      "Printer Names value"
+    ],
+    "printerDefaultName": "Printer Default Name value",
+    "printerBlockAddition": true,
     "searchBlockDiacritics": true,
     "searchDisableAutoLanguageDetection": true,
     "searchDisableIndexingEncryptedItems": true,
@@ -91,6 +97,7 @@ Content-Length: 11539
     "searchDisableIndexerBackoff": true,
     "searchDisableIndexingRemovableDrive": true,
     "searchEnableAutomaticIndexSizeManangement": true,
+    "searchBlockWebResults": true,
     "securityBlockAzureADJoinedDevicesAutoEncryption": true,
     "diagnosticsDataSubmissionMode": "none",
     "oneDriveDisableFileSync": true,
@@ -122,6 +129,8 @@ Content-Length: 11539
     "edgeDisableFirstRunPage": true,
     "edgeBlockLiveTileDataCollection": true,
     "edgeSyncFavoritesWithInternetExplorer": true,
+    "edgeFavoritesListLocation": "Edge Favorites List Location value",
+    "edgeBlockEditFavorites": true,
     "cellularBlockDataWhenRoaming": true,
     "cellularBlockVpn": true,
     "cellularBlockVpnWhenRoaming": true,
@@ -184,6 +193,8 @@ Content-Length: 11539
     "privacyAdvertisingId": "blocked",
     "privacyAutoAcceptPairingAndConsentPrompts": true,
     "privacyBlockInputPersonalization": true,
+    "privacyBlockPublishUserActivities": true,
+    "privacyBlockActivityFeed": true,
     "startBlockUnpinningAppsFromTaskbar": true,
     "startMenuAppListVisibility": "collapse",
     "startMenuHideChangeAccountSettings": true,

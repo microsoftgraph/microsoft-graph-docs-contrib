@@ -19,15 +19,12 @@ Scheduled Action Configuration
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced. Valid values 0 to 8760|
-|actionType|String|What action to take Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
+|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|What action to take. Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
 |notificationTemplateId|String|What notification Message template to use|
 |notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|notificationMessageTemplate|[notificationMessageTemplate](../resources/intune_deviceconfig_notificationmessagetemplate.md)|Notification message template.|
-
+None
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
