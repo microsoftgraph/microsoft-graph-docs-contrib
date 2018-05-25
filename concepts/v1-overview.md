@@ -1,14 +1,14 @@
 # Microsoft Graph REST API v1.0 reference
 
-Welcome to Microsoft Graph REST API reference for the v1.0 endpoint. 
+Welcome to Microsoft Graph REST API reference for the v1.0 endpoint.
 
-API sets on the v1.0 endpoint (`https://graph.microsoft.com/v1.0`) are in general availability (GA) status, and have gone through a rigorous review-and-feedback process with customers to meet practical, production needs. Updates to APIs on this endpoint are additive in nature and do not break existing app scenarios. 
+API sets on the v1.0 endpoint (`https://graph.microsoft.com/v1.0`) are in general availability (GA) status, and have gone through a rigorous review-and-feedback process with customers to meet practical, production needs. Updates to APIs on this endpoint are additive in nature and do not break existing app scenarios.
 
 ## Common use cases
 
-The power of Microsoft Graph lies in easy navigation of entities and relationships across different services exposed on a single Microsoft Graph REST endpoint. 
+The power of Microsoft Graph lies in easy navigation of entities and relationships across different services exposed on a single Microsoft Graph REST endpoint.
 
-A number of these services are designed to enable rich scenarios around a [user](../api-reference/v1.0/resources/user.md) and around a [group](../api-reference/v1.0/resources/group.md). 
+A number of these services are designed to enable rich scenarios around a [user](../api-reference/v1.0/resources/user.md) and around a [group](../api-reference/v1.0/resources/group.md).
 
 ### User-centric use cases in v1.0
 
@@ -18,7 +18,7 @@ A number of these services are designed to enable rich scenarios around a [user]
 4. [Access Lisa's calendar](../api-reference/v1.0/api/calendar_get.md) on Exchange Online and [determine the best time for Lisa to meet with her team](../api-reference/v1.0/api/user_findmeetingtimes.md) in the next two weeks.
 5. [Subscribe to](../api-reference/v1.0/api/subscription_post_subscriptions.md) and [track changes](../api-reference/v1.0/api/event_delta.md) in Lisa's calendar, tell Lisa when she is spending more than 80% of her time in meetings.
 6. [Set automatic replies](../api-reference/v1.0/api/user_update_mailboxsettings.md#example) when Lisa is away from the office.
-7. [Get the people who are most relevant to Lisa](../api-reference/v1.0/api/person_get.md), based on communication, collaboration, and business relationships.
+7. [Get the people who are most relevant to Lisa](../api-reference/v1.0/api/user_list_people.md), based on communication, collaboration, and business relationships.
 8. Get the latest sales projection from a [chart](../api-reference/v1.0/resources/chart.md) in an Excel file in Lisa's OneDrive for Business.
 9. [Find the tasks assigned to Lisa in Planner](../api-reference/v1.0/api/planneruser_list_tasks.md).
 
@@ -30,17 +30,16 @@ A number of these services are designed to enable rich scenarios around a [user]
 4. [Get the default notebook](../api-reference/v1.0/api/notebook_get.md) for the group and [create a page](../api-reference/v1.0/api/section_post_pages.md) to note the outcome of the investigation.
 
 ## Other API versions
+
 There are currently 2 versions of Microsoft Graph REST APIs - v1.0 and beta.
-If you're interested in new or enhanced APIs that are still in preview status, see [Microsoft Graph beta endpoint reference](../api-reference/beta/beta-overview.md). Be aware that APIs in preview status are subject to change, and may break existing scenarios without notice. Don't take a production dependency on APIs in the beta endpoint. 
+If you're interested in new or enhanced APIs that are still in preview status, see [Microsoft Graph beta endpoint reference](../api-reference/beta/beta-overview.md). Be aware that APIs in preview status are subject to change, and may break existing scenarios without notice. Don't take a production dependency on APIs in the beta endpoint.
 
 Find more information about [versioning and support](versioning_and_support.md).
 
 ## Connect with us
-Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632). 
 
-Have feedback for existing Microsoft Graph APIs? Connect with us on [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues). 
+Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).
 
-For questions or help with your code using Microsoft Graph, join us on [Stackoverflow](https://stackoverflow.com/questions/tagged/microsoftgraph).
+Have feedback for existing Microsoft Graph APIs? Connect with us on [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
 
-
-
+For questions or help with your code using Microsoft Graph, join us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph).

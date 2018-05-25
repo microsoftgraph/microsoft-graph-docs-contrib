@@ -67,9 +67,9 @@ None
 
 | Method                                                           | Return Type                     | Description                                                                                   |
 |:-----------------------------------------------------------------|:--------------------------------|:----------------------------------------------------------------------------------------------|
-| [Create subscription](../api/subscription_post_subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive notifications when Microsoft Graph data changes. |
+| [Create subscription](../api/subscription_post_subscriptions.md) | [subscription](subscription.md) | Subscribe a listener application to receive notifications when Microsoft Graph data changes. |
 | [Update subscription](../api/subscription_update.md)             | [subscription](subscription.md) | Renew a subscription by updating its expiration time.                                         |
-| [List subscriptions](../api/subscription_list.md)                | [subscription](subscription.md) | Lists active subscriptions. |
+| [List subscriptions](../api/subscription_list.md)                | [subscription](subscription.md) | List active subscriptions. |
 | [Get subscription](../api/subscription_get.md)                   | [subscription](subscription.md) | Read properties and relationships of subscription object.                                     |
 | [Delete subscription](../api/subscription_delete.md)             | None                            | Delete a subscription object.                                                                 |
 
