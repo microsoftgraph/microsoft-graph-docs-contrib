@@ -241,7 +241,7 @@ Prefer: odata.maxpagesize=2
 
 The third response returns the only remaining message in the folder, and a `deltaLink` URL which indicates
 synchronization is complete for the time being for this folder. Save and use the `deltaLink` URL to
-[synchronize the same folder in the next round](#synchronize-the-same-folder-in-the-next-round).
+[synchronize the same folder in the next round](#synchronize-messages-in-the-same-folder-in-the-next-round).
 
 <!-- {
   "blockType": "response",
