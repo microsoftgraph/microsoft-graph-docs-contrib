@@ -141,6 +141,8 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 The client starts receiving notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when changes happen to the resource. The client only gets notifications according to the specified change type, such as `created`.
 
+> **Note:** When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple notifications with different subscription IDs. There is no guarantee that all notifications in the POST will belong to a single subscription.
+
 ### Notification properties
 
 The notification object has the following properties:
@@ -190,7 +192,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
 }
 ```
 
-Note the value object contains a list. If there are many queued notifications, Microsoft Graph sends them in a single request.
+Note the value object contains a list. If there are many queued notifications, Microsoft Graph sends them in a single request. Notifications from different subscriptions can be included in the same notification request.
 
 ### Processing the notification
 
