@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A subscription allows a client app to receive notifications about changes to data on the Microsoft Graph. Currently, subscriptions are enabled for the following resources:
+A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
 1. Mail, events, and contacts from Outlook.
 1. Conversations from Office Groups.

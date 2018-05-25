@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe for and handle incoming notifications, see [Set up notifications for changes in user data](../../../concepts/webhooks.md).
+The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](../../../concepts/webhooks.md).
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
@@ -12,8 +12,8 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Users
 - Groups
 - Group conversations
-- Content shared on OneDrive including drives associated with SharePoint sites
-- User's personal OneDrive folders
+- Content shared on OneDrive, including drives associated with SharePoint sites
+- Users' personal OneDrive folders
 
 ## Permissions
 

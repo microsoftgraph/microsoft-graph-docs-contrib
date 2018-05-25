@@ -33,19 +33,19 @@ Or on a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-### Azure AD Resource Limitations
+### Azure AD resource limitations
 
 Certain limits apply to Azure AD based resources (users, groups) and may generate errors when exceeded:
 
 - Maximum subscription quotas:
 
-  - Per App: 50,000 total subscriptions
-  - Per Tenant: 35 total subscriptions across all apps
-  - Per App and Tenant combination: 7 total subscriptions
+  - Per app: 50,000 total subscriptions
+  - Per tenant: 35 total subscriptions across all apps
+  - Per app and tenant combination: 7 total subscriptions
 
-- Azure AD B2C tenants are not supported
+- Azure AD B2C tenants are not supported.
 
-- Consumer account Users not supported
+- Consumer account users not supported.
 
 ## Subscription lifetime
 
