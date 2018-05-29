@@ -77,7 +77,7 @@ Content-Type: application/json
      "displayName": "Library Assist",
      "description": "Self help community for library",
      "mailNickname": "libassist",
-     “partsToClone”: [ “apps”, "tabs", “settings”, "channels", "members" ],
+     "partsToClone": "apps,tabs,settings,channels,members",
      "visibility": "public"
 }
 ```
