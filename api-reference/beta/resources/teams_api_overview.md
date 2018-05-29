@@ -26,7 +26,7 @@ This can be sped up to under a minute by changing from the v1.0 to the beta Grap
 | [Remove member](../api/group_delete_members.md)	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/members/{userId}/$ref |
 | [Add owner](../api/group_post_owners.md)     | POST	    | https://graph.microsoft.com/**beta**/groups/{id}/owners/$ref |
 | [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/owners/{userId}/$ref |
-| [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/**beta**/groups/{id}/team |
+| [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/**beta**/teams/{id} |
 
 
 ## Teams and groups
