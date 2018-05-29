@@ -3,25 +3,21 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Cloning a team clones the corresponding group as well as the team. 
-You get to specify which parts of the team you want to clone (apps, tabs, members & owners, channels, settings):
+You get to specify which parts of the team you want to clone:
 - **apps** - Teams apps that are installed in the team. 
 - **channels** – copies the channel structure (but not the messages in the channel).
 - **members** – copies the members and owners of the group.
 - **settings** – copies all settings within the /group/{id}/team, along with key group settings.
 - **tabs** – copies the tabs within channels.
 
-When tabs are cloned, they are put into an un-configured state 
--- they are displayed on the tab bar, and the first time you open them, you'll go through the configuration screen. 
-(Assuming the person opening it has permission to configure apps -- otherwise they get some text explaining the tab hasn't been configured. )
+When tabs are cloned, they are put into an unconfigured state 
+-- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. 
+(Assuming the person opening it has permission to configure apps -- otherwise they get some text explaining the tab hasn't been configured.)
 
 Cloning is a long-running operation.
 After the POST clone returns you need to GET the operation to see if it's "running" or "succeeded" or "failed". 
 You should continue to GET until the status is not "running". 
 The recommended delay between GETs is 5 seconds.
-
-The classification, displayName, description, mailNickname, and visibility properties are passed straight to the Group resource. 
-displayName is required, the others can be omitted. 
-If omitted, classification and visibility will be copied from the prototype group, mailNickname will be computed from the displayName, and description will be left blank.
 
 
 ## Permissions
@@ -53,13 +49,13 @@ In the request body, supply a JSON representation of [team](../resources/team.md
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorySetting.md) value, based on the [template definition](directorySettingTemplate.md).|
-|description|String|An optional description for the group.|
+|classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorySetting.md) value, based on the [template definition](directorySettingTemplate.md). If classification is not specified, the classification will be copied from the original team/group.|
+|description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter.|
+|mailNickname|String (optional)|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName.|
 |partsToClone|String|A comma-seperated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
 The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter.|
-|visibility|String| Specifies the visibility of the group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
+|visibility|String (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group.|
 
 ## Response
 
