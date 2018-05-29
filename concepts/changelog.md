@@ -6,6 +6,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2018
 
+### ActivityFeedService APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Change      | v1.0     | Added back in examples for nested filter to [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_recent_activities) |
+| Change       | v1.0   | Added back in examples for nested filter to [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_activities) |
+| Change      | v1.0     | Added back in examples for nested filter to [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_recent_activities) |
+| Change       | v1.0     | Added back in examples for nested filter to [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_activities) |
+
 ### Education API
 
 | **Change type** | **Version**   | **Description**                          |
