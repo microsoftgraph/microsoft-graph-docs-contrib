@@ -12,6 +12,8 @@ A team is a collection of [channels](channel.md). A channel represents a topic, 
 |[Get team](../api/team_get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team_update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](../../v1.0/api/group_delete.md) | None |Delete the team and its associated group. |
+|[Clone team](../../v1.0/api/team_clone.md) | None |Copy the team and its associated group. |
+
 
 ## Properties
 
