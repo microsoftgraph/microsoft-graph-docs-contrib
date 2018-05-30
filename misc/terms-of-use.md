@@ -1,6 +1,6 @@
 # Microsoft Graph API Terms of Use 
 
-Last revised in December 2017
+Last revised in May 2018
 
 Thank you for developing with Microsoft!
 
@@ -100,7 +100,7 @@ You must have a process to respond to any vulnerabilities in your Application, a
 
 In the event of a data breach by you resulting from any aspect of the Graph API involving your Application or any data collected through your Application, you will promptly contact the Microsoft Security Response Center ([secure@microsoft.com](mailto:secure@microsoft.com)) and provide details of the data breach. You agree to refrain from making public statements (e.g. press, blogs, social media, bulletin boards, etc.) without prior written and express permission from Microsoft in each instance as it relates to the Graph API.
 
-#### 5.	**Deletion of Customer Data; Your compliance with Privacy and Data Protection Laws**
+#### 5.	**Your compliance with Privacy and Data Protection Laws**
 
 You must comply with all laws and regulations applicable to your use of the data accessed through Graph API, including without limitation laws related to privacy, biometric data, data protection, and confidentiality of communications. Your use of the Graph API is conditioned upon implementing and maintaining appropriate protections and measures for your service and Application, and that includes your responsibility to the data obtained through the use of the Graph APIs. For the data you obtained through the Graph API, you must: 
 
