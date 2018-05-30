@@ -21,8 +21,6 @@ The audit logs activity report provides you with access to the history of every 
 
 - How passwords resets have there been within the tenant?
 
-The audit logs reports are available for features that you've licensed.  If you have a license for a specific feature, you also have access to its audit logs.
-
 ### Sign in logs
 
 The sign-ins activity report helps you determine who performed the tasks reported by audit log reports. The sign-ins activity report helps you answer questions like:
@@ -30,8 +28,6 @@ The sign-ins activity report helps you determine who performed the tasks reporte
 - What is the sign-in pattern of a user?
 - How many users have signed in during the last week?
 - What's the status of these sign-ins?
-
-Sign in reports require an Azure AD Premium license.
 
 ## What can I do with audit log APIs in Microsoft Graph?
 
@@ -41,6 +37,14 @@ Operation | URL
 :----------|:----
 GET tenant user activities | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
 GET tenant user sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
+
+## What licenses do I need?
+
+Audit log reports are available for features that you've licensed.  If you have a license for a specific feature, you also have access to its audit logs.
+
+Sign-in reports require an Azure AD Premium license.
+
+To learn more, see [Azure AD pricing](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 ## Next Steps
 
