@@ -9,21 +9,21 @@ Represents an Azure Active Directory user object.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List users](../api/intune_shared_user.md) objects.|
-|[Get user](../api/intune_shared_user.md) object.|
-|[Create user](../api/intune_shared_user.md) object.|
+|[List users](../api/intune_shared_user_list.md) objects.|
+|[Get user](../api/intune_shared_user_get.md) object.|
+|[Create user](../api/intune_shared_user_create.md) object.|
 |[Delete user](../api/intune_shared_user_delete.md).|
-|[Update user](../api/intune_shared_user.md) object.|
+|[Update user](../api/intune_shared_user_update.md) object.|
 |**Device management**|
 |[getLoggedOnManagedDevices function](../api/intune_shared_user_getloggedonmanageddevices.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|Not yet documented|
 |[removeAllDevicesFromManagement action](../api/intune_shared_user_removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
 |**Mobile application management (MAM)**|
-|[getManagedAppDiagnosticStatuses function](../api/intune_mam_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
-|[getManagedAppPolicies function](../api/intune_mam_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Gets app restrictions for a given user.|
-|[wipeManagedAppRegistrationByDeviceTag action](../api/intune_mam_user_wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
-|[wipeManagedAppRegistrationsByDeviceTag action](../api/intune_mam_user_wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
+|[getManagedAppDiagnosticStatuses function](../api/intune_shared_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
+|[getManagedAppPolicies function](../api/intune_shared_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Gets app restrictions for a given user.|
+|[wipeManagedAppRegistrationByDeviceTag action](../api/intune_shared_user_wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
+|[wipeManagedAppRegistrationsByDeviceTag action](../api/intune_shared_user_wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
 |**On-boarding**|
-|[exportDeviceAndAppManagementData function](../api/intune_onboarding_user_exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune_onboarding_deviceandappmanagementdata.md)|Not yet documented|
+|[exportDeviceAndAppManagementData function](../api/intune_shared_user_exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune_onboarding_deviceandappmanagementdata.md)|Not yet documented|
 |[getEffectiveDeviceEnrollmentConfigurations function](../api/intune_shared_user_geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|Not yet documented|
 
 ## Properties

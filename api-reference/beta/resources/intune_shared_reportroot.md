@@ -9,8 +9,8 @@ The resource that represents an instance of a device or troubleshooting report, 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get reportRoot](../api/intune_shared_reportroot.md)|Read properties and relationships of the [reportRoot](../resources/intune_shared_reportroot.md) object.|
-|[Update reportRoot](../api/intune_shared_reportroot.md)|Update the properties of a [reportRoot](../resources/intune_shared_reportroot.md) object.|
+|[Get reportRoot](../api/intune_shared_reportroot_get.md)|Read properties and relationships of the [reportRoot](../resources/intune_shared_reportroot.md) object.|
+|[Update reportRoot](../api/intune_shared_reportroot_update.md)|Update the properties of a [reportRoot](../resources/intune_shared_reportroot.md) object.|
 |**Device configuration**|
 |[deviceConfigurationUserActivity function](../api/intune_shared_reportroot_deviceconfigurationuseractivity.md)|Metadata for the device configuration user activity report|
 |[deviceConfigurationDeviceActivity function](../api/intune_shared_reportroot_deviceconfigurationdeviceactivity.md)|Metadata for the device configuration device activity report|
