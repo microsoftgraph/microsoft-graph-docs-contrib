@@ -2,7 +2,7 @@
 
 The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
 
-After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
+After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
 
 ## Supported resources
 
@@ -17,19 +17,19 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content shared on OneDrive including drives associated with SharePoint sites
 - User's personal OneDrive folders
 
-For instance, you can create a subscription to a specific folder:
+For instance, you can create a subscription to a specific mail folder:
 `me/mailFolders('inbox')/messages`
-
-Or a specific ID:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
 Or to a top-level resource:
 `me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
 
-Or on a SharePoint / OneDrive for Business drive:
+Or to a specific resource instance:
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`
+
+Or to a SharePoint/OneDrive for Business drive:
 `/drive/root`
 
-Or on a user's personal OneDrive:
+Or to a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
@@ -45,7 +45,7 @@ Certain limits apply to Azure AD based resources (users, groups) and may generat
 
 - Azure AD B2C tenants are not supported.
 
-- Consumer account users not supported.
+- Notification for user entities are not supported for personal Microsoft accounts.
 
 ## Subscription lifetime
 
@@ -72,25 +72,7 @@ Creating a subscription is the first step to start receiving notifications for a
 
 1. The Microsoft Graph sends a response back to the client.
 
-Client must store the subscription ID to correlate a notification with the corresponding subscription.
-
-#### Notification URL validation
-
-Microsoft Graph validates the notification URL in a subscription request before creating the subscription. The validation process occurs as follows:
-
-1. Microsoft Graph sends a POST request to the notification URL:
-
-  ``` http
-  POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
-  ```
-
-1. The client must provide a response with the following characteristics within 10 seconds:
-
-    - A 200 (OK) status code.
-    - The content type must be `text/plain`.
-    - The body must include the validation token provided by Microsoft Graph.
-
-The client should discard the validation token after providing it in the response.
+The client must store the subscription ID to correlate notifications with the subscription.
 
 #### Subscription request example
 
@@ -106,9 +88,29 @@ Content-Type: application/json
 }
 ```
 
-The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](../api-reference/v1.0/resources/subscription.md) for property definitions and values. Although `clientState` is not required, you must include it to comply with our recommended notification handling process.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](../api-reference/v1.0/resources/subscription.md) for property definitions and values.
+
+Although `clientState` is not required, you must include it to comply with our recommended notification handling process. Setting this property will allow you to confirm that notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body.
+
+#### Notification endpoint validation
+
+Microsoft Graph validates the notification endpoint provided in the `notificationUrl` property of the subscription request before creating the subscription. The validation process occurs as follows:
+
+1. Microsoft Graph sends a POST request to the notification URL:
+
+  ``` http
+  POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
+  ```
+
+1. The client must provide a response with the following characteristics within 10 seconds:
+
+    - A 200 (OK) status code.
+    - The content type must be `text/plain`.
+    - The body must include the validation token provided by Microsoft Graph.
+
+The client should discard the validation token after providing it in the response.
 
 ### Renewing a subscription
 
@@ -139,7 +141,7 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 ## Notifications
 
-The client starts receiving notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when changes happen to the resource. The client only gets notifications according to the specified change type, such as `created`.
+The client starts receiving notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when the resource changes. Notification are sent only for the changes of the type specified in the subscription, for example, `created`.
 
 > **Note:** When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple notifications with different subscription IDs. There is no guarantee that all notifications in the POST will belong to a single subscription.
 
@@ -149,12 +151,12 @@ The notification object has the following properties:
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| subscriptionId | string | The ID for the subscription to which this notification belongs. |
+| subscriptionId | string | The ID of the subscription that generated the notification. |
 | subscriptionExpirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
 | clientState | string | The `clientState` property specified in the subscription request (if any). |
 | changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
-| resourceData | object | The object dependent on the resource being subscribed to. |
+| resourceData | object | The content of this property depends on the type of resource being subscribed to. |
 
 For example, for Outlook resources, `resourceData` contains the following fields:
 
@@ -162,10 +164,10 @@ For example, for Outlook resources, `resourceData` contains the following fields
 |:---------|:-----|:------------|
 | @odata.type | string | The OData entity type in Microsoft Graph that describes the represented object. |
 | @odata.id | string | The OData identifier of the object. |
-| @odata.etag | string | The HTTP entity tag that represents a version of the object. |
+| @odata.etag | string | The HTTP entity tag that represents the version of the object. |
 | id | string | The identifier of the object. |
 
-> **Note:** The `id` value provided in `resourceData` is valid at the time the notification was queued. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the notification is processed.
+> **Note:** The `id` value provided in `resourceData` is valid at the time the notification was generated. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the notification is processed.
 
 ### Notification example
 
@@ -177,9 +179,9 @@ When the user receives an email, Microsoft Graph sends a notification like the f
     {
       "subscriptionId":"<subscription_guid>",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
-      "clientState":"SecretClientState",
-      "changeType":"Created",
-      "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
+      "clientState":"secretClientValue",
+      "changeType":"created",
+      "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
@@ -192,21 +194,21 @@ When the user receives an email, Microsoft Graph sends a notification like the f
 }
 ```
 
-Note the value object contains a list. If there are many queued notifications, Microsoft Graph sends them in a single request. Notifications from different subscriptions can be included in the same notification request.
+Note the `value` field is an array of objects. When there are many queued notifications, Microsoft Graph may send multiple items in a single request. Notifications from different subscriptions can be included in the same notification request.
 
 ### Processing the notification
 
-After your application starts receiving notifications it must process them. The following are the minimum tasks that your app must perform to process a notification:
+Each notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a notification:
 
-1. Validate the `clientState` property. The `clientState` property in the notification must match the one submitted with the subscription request.
+1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
-    > **Note:** If this isn't true, you shouldn't consider this a valid notification. You should also investigate where the notification comes from and take appropriate action.
+    > **Note:** If this isn't true, you should not consider this a valid notification. It is possible that the notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the notification comes from and take appropriate action.
 
 1. Update your application based on your business logic.
 
 1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry the notification a number of times.
 
-    > **Note:** You should send a `202 - Accepted` status code even if the `clientState` property doesn't match the one submitted with the subscription request.
+    > **Note:** You should send a `202 - Accepted` status code even if the `clientState` property doesn't match the one submitted with the subscription request. This is a good practice as it prevents a potential rogue actor from discovering the fact that you may not trust their notifications, and perhaps using that information to guess the value of the `clientState` property.
 
 Repeat for other notifications in the request.
 
