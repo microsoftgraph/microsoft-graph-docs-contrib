@@ -9,13 +9,13 @@ A Microsoft Teams async operation is an operation that transcends the lifetime o
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
 |id|string |Unique operation id.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes which type of teams-specific operation is being described.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes which type of operation is being described.|
 |createdDateTime|DateTimeOffset |Time when the operation was created.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
 |lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
 |attemptsCount|Int32|Number of times the operation was attempted before being marked successful or failed.|
-|targetResourceId|string |Target resource id that will reflect the result of this async operation.|
-|targetResourceLocation|string |Location of the target resource.|
+|targetResourceId|string |The ID of the object that's created or modified as result of this async operation.|
+|targetResourceLocation|string|The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.|
 |error|[operationError](operationerror.md)|Any error that causes the async operation to fail.|
 
 ## JSON representation
