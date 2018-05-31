@@ -11,7 +11,7 @@ A Microsoft Teams async operation is an operation that transcends the lifetime o
 |id|string |Unique operation id.|
 |operationType|[teamsAsyncOperationType](teamsAsyncOperationType.md) |Denotes which type of teams-specific operation is being described.|
 |createdDateTime|DateTimeOffset |Time when the operation was created.|
-|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
+|status|[teamsAsyncOperationStatus](teamsAsyncOperationStatus.md)| Operation status.|
 |lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
 |attemptsCount|Int32|Number of times the operation was attempted before being marked successful or failed.|
 |targetResourceId|string |Target resource id that will reflect the result of this async operation.|
