@@ -4,6 +4,17 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## June 2018
+
+### Microsoft Teams APIs
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition         | Beta          | Added team [archive](../api-reference/beta/api/team_archive.md) and [unarchive](../api-reference/beta/api/team_unarchive.md) APIs.|
+|Addition         | Beta          | Added team [clone](../api-reference/beta/api/team_clone.md) operation. |
+|Addition         | Beta          | Added APIs to add and remove [apps](../api-reference/beta/resources/team_app.md) to teams. |
+|Change|Beta|Updated the path to the [team](../api-reference/beta/resources/team.md) entity.|
+|Change|Beta|Updated the path to the [channel](../api-reference/beta/resources/channel.md) entity.|
+
 ## May 2018
 
 ### Education API
