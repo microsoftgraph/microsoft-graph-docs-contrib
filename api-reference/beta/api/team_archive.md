@@ -2,7 +2,9 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Archive the specified Microsoft Teams team. An archived team prevents all users from sending or liking messages on any channel in the team, from editing the team's name, description, and other settings, and from most mutations to the team in general. Membership changes to the team continue to be allowed.
+Archive the specified Microsoft Teams team. 
+An archived team prevents all users from sending or liking messages on any channel in the team, from editing the team's name, description, and other settings, and in general from most changes to the team. 
+Membership changes to the team continue to be allowed.
 
 Archiving is an async operation. A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
