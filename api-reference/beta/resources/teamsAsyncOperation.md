@@ -2,7 +2,12 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. These operations are long-running or too expensive to complete within the timeframe of their originating request.
+A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. 
+These operations are long-running or too expensive to complete within the timeframe of their originating request.
+
+When an async operation is initiated, the method returns a 202 Accepted response code. 
+The response will also contain a Location header, which contains the location of the teamsAsyncOperation. 
+Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks.
 
 ## Properties
 
