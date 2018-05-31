@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/team/archive
+POST /teams/{id}/archive
 ```
 ## Request headers
 | Header       | Value |
@@ -50,7 +50,7 @@ The following is an example of a request.
   "name": "archive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/team/archive
+POST https://graph.microsoft.com/beta/teams/{id}/archive
 ```
 #### Response
 The following is an example of a response.

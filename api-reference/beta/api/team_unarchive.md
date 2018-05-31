@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/team/unarchive
+POST /teams/{id}/unarchive
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ The following is an example of a request.
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/team/unarchive
+POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
 
 #### Response

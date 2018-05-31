@@ -1,8 +1,8 @@
-# Get team
+# List apps in team
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of the specified team.
+Retrieve the list of apps installed in the specified team.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,10 +16,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}
+GET /teams/{id}/apps
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+None.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -29,55 +30,39 @@ This method supports the [OData Query Parameters](../../../concepts/query_parame
 Do not supply a request body for this method.
 
 ## Response
+If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsApp.md) objects in the response body.
 
-If successful, this method returns a `200 OK` response code and [team](../resources/team.md) object in the response body.
 ## Example
 #### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "get_owners"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}
+GET https://graph.microsoft.com/beta/teams/{id}/apps
 ```
+
 #### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
+Content-length: 55
 
 {
-  "memberSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true,
-    "allowAddRemoveApps": true,
-    "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
-  },
-  "guestSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
-  },
-  "messagingSettings": {
-    "allowUserEditMessages": true,
-    "allowUserDeleteMessages": true,
-    "allowOwnerDeleteMessages": true,
-    "allowTeamMentions": true,
-    "allowChannelMentions": true    
-  },
-  "funSettings": {
-    "allowGiphy": true,
-    "giphyContentRating": "strict",
-    "allowStickersAndMemes": true,
-    "allowCustomMemes": true
-  }
+  "value": [
+    {
+      "id": "id-value"
+    }
+  ]
 }
 ```
 
@@ -85,7 +70,7 @@ Content-length: 401
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "List owners",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
