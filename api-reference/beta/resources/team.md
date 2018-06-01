@@ -4,7 +4,8 @@
 
 A team is a collection of [channels](channel.md). A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
-Every team is associated with a group. The group has the same id as the team -- ie, /groups/{id}/team is the same as /teams/{id}.
+Every team is associated with a [group](../resources/group.md).
+The group has the same id as the team -- ie, /groups/{id}/team is the same as /teams/{id}.
 
 ## Methods
 
