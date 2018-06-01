@@ -5,6 +5,10 @@
 An application installed in a [team](team.md). 
 Any bots that are part of the app will become part of any team the app is added to.
 
+To find the appid of an app you wish to install, 
+use the [Teams Client UI](http://teams.microsoft.com) to add that app to a test team, 
+then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to [List apps](../api/teams_apps_list.md) in that test team.
+
 ## Methods
 
 | Method       | Return Type  |Description|

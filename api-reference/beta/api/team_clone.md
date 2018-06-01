@@ -2,12 +2,12 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Cloning a team clones the corresponding group as well as the team. 
+Cloning a [team](../resources/team.md) clones the corresponding [group](../resources/group.md) as well as the team. 
 You get to specify which parts of the team you want to clone:
 - **apps** - Teams apps that are installed in the team. 
 - **channels** – copies the channel structure (but not the messages in the channel).
 - **members** – copies the members and owners of the group.
-- **settings** – copies all settings within the /group/{id}/team, along with key group settings.
+- **settings** – copies all settings within the team, along with key group settings.
 - **tabs** – copies the tabs within channels.
 
 When tabs are cloned, they are put into an unconfigured state 
