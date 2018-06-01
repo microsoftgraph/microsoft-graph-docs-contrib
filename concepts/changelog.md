@@ -11,7 +11,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition         | Beta          | Added team [archive](../api-reference/beta/api/team_archive.md) and [unarchive](../api-reference/beta/api/team_unarchive.md) APIs.|
 |Addition         | Beta          | Added team [clone](../api-reference/beta/api/team_clone.md) operation. |
-|Addition         | Beta          | Added APIs to add and remove [apps](../api-reference/beta/resources/team_app.md) to teams. |
+|Addition         | Beta          | Added APIs to add and remove [apps](../api-reference/beta/resources/teams_app.md) to teams. |
 |Change|Beta|Updated the path to the [team](../api-reference/beta/resources/team.md) entity.|
 |Change|Beta|Updated the path to the [channel](../api-reference/beta/resources/channel.md) entity.|
 
