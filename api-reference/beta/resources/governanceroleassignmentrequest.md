@@ -30,8 +30,7 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |     |roleAssignmentEndDateTime|DateTimeOffset   |        |The end time for the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |     |schedule                   |[governanceSchedule](governanceschedule.md)||The schedule object of the role assignment request.|
 |     |reason                     |String         |        |A message provided by users and administrators when create the request about why it is needed.|
-|     |status                     |String         |        |The status of the role assignment request. The value can be ``Accepted``, ``PendingEvaluation``, ``Granted``, ``Denied``, ``PendingProvisioning``, ``Provisioned``, `` PendingRevocation``, ``Revoked``, ``Canceled``, ``Failed``, ``PendingApprovalProvisioning``, ``PendingApproval``,`PendingAdminDecision`, `AdminApproved` and `AdminDenied`.|
-|     |statusDetail               |`KeyValue` collection||Read-only. The details of the request status.|
+|     |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |        |The status of the role assignment request.|
 |     |linkedEligibleRoleAssignmentId|String        |        |If this is a request for role activation, it represents the id of the `eligible assignment` being referred; Otherwise, the value is `null`. |
 
 
@@ -68,8 +67,7 @@ Here is a JSON representation of the resource.
   "roleAssignmentStartDateTime": "String (timestamp)",
   "roleAssignmentEndDateTime": "String (timestamp)",
   "schedule": {"@odata.type": "microsoft.graph.governanceSchedule"},
-  "status": "String",
-  "statusDetail": [{"@odata.type": "microsoft.graph.KeyValuePair"}],
+  "status": {"@odata.type": "microsoft.graph.governanceRoleAssignmentRequestStatus"},
   "linkedEligibleRoleAssignmentId": "String"
 }
 

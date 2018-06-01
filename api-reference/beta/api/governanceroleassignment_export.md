@@ -46,18 +46,11 @@ If successful, this method returns a `200 OK` response code and content of type 
 Save all role assignments as `.csv` file in subscription "Wingtip Toys - Prod" 
 
 ##### Request
-<!-- {
-  "blockType": "request",
-  "name": "governanceroleassignmentrequest_export"
-}-->
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/export?filter=resourceId+eq+'85dfe48a-55d3-49fc-8f36-ee14b7f6f720'
 ```
 ##### Response
 Here is an example of the response. 
-<!-- {
-  "blockType": "ignored",
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type:application/octet-stream

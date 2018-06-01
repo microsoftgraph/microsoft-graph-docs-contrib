@@ -52,10 +52,10 @@ Here is a JSON representation of the resource.
   "isDefault": true,
   "lastUpdatedDateTime": "String (timestamp)",
   "lastUpdatedBy": "String",
-  "adminEligibleSettings": [{"@odata.type": "microsoft.graph.governancerulesetting"}],
-  "adminMemberSettings": [{"@odata.type": "microsoft.graph.governancerulesetting"}],
-  "userEligibleSettings": [{"@odata.type": "microsoft.graph.governancerulesetting"}],
-  "userMemberSettings": [{"@odata.type": "microsoft.graph.governancerulesetting"}]
+  "adminEligibleSettings": [{"@odata.type": "microsoft.graph.governanceRuleSetting"}],
+  "adminMemberSettings": [{"@odata.type": "microsoft.graph.governanceRuleSetting"}],
+  "userEligibleSettings": [{"@odata.type": "microsoft.graph.governanceRuleSetting"}],
+  "userMemberSettings": [{"@odata.type": "microsoft.graph.governanceRuleSetting"}]
 }
 
 ```
