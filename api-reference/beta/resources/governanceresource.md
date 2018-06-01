@@ -23,6 +23,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `resources` entity set for 
 |     |type               |String     |Resource type. For example, for `pimforazurerbac` scenario, the type could be "Subscription", "ResourceGroup", "Microsoft.Sql/server", etc.|
 |     |displayName        |String     |The display name of the resource.|
 |     |status             |String     |The status of a given resource. For example, it could represent whether the resource is locked or not (values: `Active`/`Locked`). Note: This property may be extended in the future to support more scenarios.|
+|     |onboardDateTime|DateTimeOffset      |It represents the date time when the resource starts to be managed by PIM.|
 |     |roleAssignmentCount|Int32      |Optional. The number of role assignments for the given resource. To get the property, please explictly use `$select=roleAssignmentCount` in the query.|
 |     |roleDefinitionCount|Int32      |Optional. The number of role definitions for the given resource. To get the property, please explictly use `$select=roleDefinitionCount` in the query.|
 |     |permissions|[governancePermission](../resources/governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource.To get the property, please explictly use `$select=permissions` in the query.|

@@ -26,7 +26,7 @@ Here is a JSON representation of the resource.
 {
   "status": "String",
   "subStatus": "String",
-  "statusDetail": [{"@odata.type": "microsoft.graph.KeyValue"}],
+  "statusDetails": [{"@odata.type": "microsoft.graph.keyvalue"}],
 }
 
 ```
