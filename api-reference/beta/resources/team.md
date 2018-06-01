@@ -32,6 +32,7 @@ A team is a collection of [channels](channel.md). A channel represents a topic, 
 
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
+|apps|[teamsApp](teamsApp.md) collection|The collection of apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels associated with the team.|
 
 ## JSON representation

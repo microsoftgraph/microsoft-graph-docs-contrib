@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/apps
+POST /teams/{id}/apps/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
@@ -26,11 +26,15 @@ This method supports the [OData Query Parameters](../../../concepts/query_parame
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Supply an empty request body for this method:
+
+```http
+{ }
+```
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [team](../resources/team.md) object in the response body.
+If successful, this method returns a `200 OK` response code.
 ## Example
 #### Request
 The following is an example of the request.
@@ -39,7 +43,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}
+POST https://graph.microsoft.com/beta/teams/{id}/apps/{id}
 ```
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -54,30 +58,6 @@ Content-type: application/json
 Content-length: 401
 
 {
-  "memberSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true,
-    "allowAddRemoveApps": true,
-    "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
-  },
-  "guestSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
-  },
-  "messagingSettings": {
-    "allowUserEditMessages": true,
-    "allowUserDeleteMessages": true,
-    "allowOwnerDeleteMessages": true,
-    "allowTeamMentions": true,
-    "allowChannelMentions": true    
-  },
-  "funSettings": {
-    "allowGiphy": true,
-    "giphyContentRating": "strict",
-    "allowStickersAndMemes": true,
-    "allowCustomMemes": true
-  }
 }
 ```
 
