@@ -2,7 +2,8 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A team is a collection of [channels](channel.md). A channel represents a topic, and therefore a logical isolation of discussion, within a team.
+A team in Microsoft Teams is a collection of [channels](channel.md). 
+A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
 Every team is associated with a [group](../resources/group.md).
 The group has the same id as the team -- ie, /groups/{id}/team is the same as /teams/{id}.
