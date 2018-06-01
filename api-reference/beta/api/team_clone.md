@@ -69,7 +69,7 @@ The following is an example of the request.
   "name": "create_team"
 }-->
 ```http
-POST /groups/87b95f27-ef32-4146-9750-76a468780997/team/clone
+POST /teams/{id}/clone
 Content-Type: application/json
 
 {  
