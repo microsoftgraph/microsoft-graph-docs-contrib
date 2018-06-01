@@ -53,8 +53,8 @@ In the request body, supply a JSON representation of [team](../resources/team.md
 |description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |mailNickname|String (optional)|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName.|
-|partsToClone|clonableTeamParts|A comma-seperated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
-|visibility|teamVisibilityType (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group.|
+|partsToClone| [clonableTeamParts](../resources/clonableTeamParts.md) |A comma-seperated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
+|visibility|[teamVisibilityType](../resources/teamVisibilityType.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group.|
 
 ## Response
 
