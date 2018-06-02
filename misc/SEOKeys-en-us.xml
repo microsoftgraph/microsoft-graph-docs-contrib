@@ -5017,11 +5017,11 @@
 			<Item text="Delete submission resource" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
 			<Item text="Get submission" url="/en-us/api-reference/beta/api/educationsubmission_get" />
 			<Item text="Submit submission" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
-			<Item text="Recall submission" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="Unsubmit submission" url="/en-us/api-reference/beta/api/educationsubmission_unsubmit" />
 			<Item text="List submitted resources" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
 			<Item text="Get submitted resource" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
 			<Item text="Grade submission" url="/en-us/api-reference/beta/api/educationsubmission_update" />
-			<Item text="Release submission" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+			<Item text="Return submission" url="/en-us/api-reference/beta/api/educationsubmission_return" />
 		</Item>
 		<Item text="Synchronization profile" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile" >
 			<Item text="List profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
