@@ -242,8 +242,6 @@
       <Item text="Update event" url="/en-us/api-reference/v1.0/api/group_update_event" />
       <Item text="Delete event" url="/en-us/api-reference/v1.0/api/group_delete_event" />
       <Item text="List calendar view" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
-      <Item text="List attachments" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
-      <Item text="Add attachment" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
       <Item text="Create open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
       <Item text="Get open extension" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Get data extension, Microsoft Graph API, opentypeextension API" SEODescription="Retrieve the properties and relationships of opentypeextension object." />
     </Item>
@@ -1812,7 +1810,7 @@
 		<Item text="List rules" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
 		<Item text="Create rule" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
 		<Item text="Get rule" url="/en-us/api-reference/v1.0/api/messagerule_get" />
-		<Item text="Update rule" url="/en-us/api-reference/v1.0/api/messagerule_update" />	  
+		<Item text="Update rule" url="/en-us/api-reference/v1.0/api/messagerule_update" />
 		<Item text="Delete rule" url="/en-us/api-reference/v1.0/api/messagerule_delete" />
 	  </Item>
 	<Item text="Extended properties" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="" >
@@ -2324,8 +2322,6 @@
         <Item text="Update event" url="/en-us/api-reference/beta/api/group_update_event" />
         <Item text="Delete event" url="/en-us/api-reference/beta/api/group_delete_event" />
         <Item text="List calendar view" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
-        <Item text="List attachments" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="List attachments, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of attachment objects." />
-        <Item text="Add attachment" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Create Attachment, Microsoft Graph API, Outlook Calendar API" SEODescription="Use this API to create a new Attachment." />
         <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
         <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
@@ -2843,10 +2839,7 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update"/>
         </Item>
         <Item text="Microsoft store for business app assignment settings" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings"/>
-        <Item text="Microsoft store for business contained app" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesscontainedapp">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_update"/>
         </Item>
@@ -4567,11 +4560,7 @@
       <Item text="Mobile app protection" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
         <Item text="Android managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_list"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_get"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_create"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_update"/>
-        </Item>
         <Item text="Android managed app registration" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappregistration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappregistration_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappregistration_get"/>
@@ -4899,21 +4888,21 @@
         <Item text="Compliance status" url="/en-us/api-reference/beta/resources/intune_shared_compliancestatus"/>
         <Item text="Device and app management assignment target" url="/en-us/api-reference/beta/resources/intune_shared_deviceandappmanagementassignmenttarget"/>
         <Item text="Device app management" url="/en-us/api-reference/beta/resources/intune_shared_deviceappmanagement">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_update"/>
           <Item text="syncMicrosoftStoreForBusinessApps action" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps"/>
         </Item>
         <Item text="Device category" url="/en-us/api-reference/beta/resources/intune_shared_devicecategory">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_update"/>
         </Item>
         <Item text="Device enrollment type" url="/en-us/api-reference/beta/resources/intune_shared_deviceenrollmenttype"/>
         <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_update"/>
         </Item>
         <Item text="Device type" url="/en-us/api-reference/beta/resources/intune_shared_devicetype"/>
         <Item text="Enrollment state" url="/en-us/api-reference/beta/resources/intune_shared_enrollmentstate"/>
@@ -4929,29 +4918,29 @@
         <Item text="Proxied domain" url="/en-us/api-reference/beta/resources/intune_shared_proxieddomain"/>
         <Item text="Report" url="/en-us/api-reference/beta/resources/intune_shared_report"/>
         <Item text="Report root" url="/en-us/api-reference/beta/resources/intune_shared_reportroot">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_reportroot"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_reportroot"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_reportroot_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_reportroot_update"/>
         </Item>
         <Item text="Resultant app state" url="/en-us/api-reference/beta/resources/intune_shared_resultantappstate"/>
         <Item text="Run state" url="/en-us/api-reference/beta/resources/intune_shared_runstate"/>
         <Item text="Saved UI state generation options" url="/en-us/api-reference/beta/resources/intune_shared_saveduistategenerationoptions"/>
         <Item text="URI" url="/en-us/api-reference/beta/resources/intune_shared_uri"/>
         <Item text="User" url="/en-us/api-reference/beta/resources/intune_shared_user">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_user"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_user"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_user_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_user_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_shared_user_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_user"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_user_update"/>
           <Item text="removeAllDevicesFromManagement action" url="/en-us/api-reference/beta/api/intune_shared_user_removealldevicesfrommanagement"/>
-          <Item text="wipeManagedAppRegistrationByDeviceTag action" url="/en-us/api-reference/beta/api/intune_mam_user_wipemanagedappregistrationbydevicetag"/>
-          <Item text="wipeManagedAppRegistrationsByDeviceTag action" url="/en-us/api-reference/beta/api/intune_mam_user_wipemanagedappregistrationsbydevicetag"/>
+          <Item text="wipeManagedAppRegistrationByDeviceTag action" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationbydevicetag"/>
+          <Item text="wipeManagedAppRegistrationsByDeviceTag action" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationsbydevicetag"/>
         </Item>
         <Item text="VPP token account type" url="/en-us/api-reference/beta/resources/intune_shared_vpptokenaccounttype"/>
         <Item text="Windows domain join configuration" url="/en-us/api-reference/beta/resources/intune_shared_windowsdomainjoinconfiguration">
-          <Item text="List" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration"/>
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration"/>
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_update"/>
         </Item>
       </Item>
       <Item text="Telecom expenses" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
@@ -5021,11 +5010,11 @@
 			<Item text="Delete submission resource" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
 			<Item text="Get submission" url="/en-us/api-reference/beta/api/educationsubmission_get" />
 			<Item text="Submit submission" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
-			<Item text="Recall submission" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="Unsubmit submission" url="/en-us/api-reference/beta/api/educationsubmission_unsubmit" />
 			<Item text="List submitted resources" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
 			<Item text="Get submitted resource" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
 			<Item text="Grade submission" url="/en-us/api-reference/beta/api/educationsubmission_update" />
-			<Item text="Release submission" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+			<Item text="Return submission" url="/en-us/api-reference/beta/api/educationsubmission_return" />
 		</Item>
 		<Item text="Synchronization profile" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile" >
 			<Item text="List profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
@@ -5912,3 +5901,4 @@
     </Item>
 	</Item>
 	</Menu>
+
