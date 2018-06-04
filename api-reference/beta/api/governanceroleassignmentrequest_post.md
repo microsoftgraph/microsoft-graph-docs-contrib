@@ -181,7 +181,7 @@ Content-type: application/json
 "subjectId":"918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
 "assignmentState":"Active",
 "type":"UserAdd",
-"reason": "Activate the owner role"
+"reason": "Activate the owner role",
 "schedule":{
   "type":"Once",
   "startDateTime":"2018-05-12T23:28:43.537Z",
