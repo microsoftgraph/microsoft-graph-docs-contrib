@@ -2838,7 +2838,7 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update"/>
         </Item>
-        <Item text="Microsoft store for business app assignment settings" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings">
+        <Item text="Microsoft store for business app assignment settings" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_get"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_update"/>
