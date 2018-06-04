@@ -35,6 +35,12 @@ Here's the beta APIs to use:
 | [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/owners/{userId}/$ref |
 | [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/**beta**/teams/{id} |
 
+When adding owners, regardless of which endpoint use, you will generally want to add that user as a member as well. 
+If you have an owner that's not also a member, different apps and APIs will handle that differently. 
+For instance, Teams Client will show teams that the user is either a member or an owner of, 
+while the Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of. 
+To avoid confusion, consider having all owners also be on the members list.
+
 
 ## Teams and groups
 
