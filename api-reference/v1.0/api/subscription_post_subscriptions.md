@@ -10,10 +10,12 @@ Creating a subscription requires read scope to the resource. For example, to get
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
 
- ***Note:*** The /v1.0 endpoint allows Application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.
+ ***Note:*** The /v1.0 endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +50,7 @@ Content-type: application/json
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-   "clientState": "subscription-identifier"
+   "clientState": "secretClientValue"
 }
 ```
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
@@ -62,6 +64,8 @@ The following are valid values for the resource property of the subscription:
 |Mail|me/mailfolders('inbox')/messages<br />me/messages|
 |Contacts|me/contacts|
 |Calendars|me/events|
+|Users|users|
+|Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
 
@@ -74,14 +78,19 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 ```http
 HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 252
 
 {
-  "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-  "resource":"me/mailFolders('Inbox')/messages",
-  "changeType":"created, updated",
-  "clientState":"subscription-identifier",
-  "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "expirationDateTime":"2016-11-20T18:23:45.9356913Z"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+  "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
+  "resource": "me/mailFolders('Inbox')/messages",
+  "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
+  "changeType": "created,updated",
+  "clientState": "secretClientValue",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+  "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
 ## Subscription validation
@@ -109,7 +118,7 @@ Depending on the subscribed resource, an additional resourceData field may provi
       {
          "subscriptionId":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
          "subscriptionExpirationDateTime":"2015-11-20T18:23:45.9356913Z",
-         "clientState":"subscription-identifier",
+         "clientState":"secretClientValue",
          "changeType":"Created",
          "resource":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",
          "resourceData":{
@@ -126,7 +135,7 @@ When receiving notifications from Drive subscriptions the resourceData will be n
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
-  "clientState": "My client state",
+  "clientState": "secretClientValue",
   "changeType": "updated",
   "resource": "me/drive/root",
   "subscriptionExpirationDateTime": "2016-08-26T23:08:37.00+00:00",

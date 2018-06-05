@@ -2,7 +2,7 @@
 
 Renew a subscription by extending its expiry time.
 
-Subscriptions to resources expire at dates proscribed by the individual resource types.  In order not to miss notifications, subscriptions should be renewed well in advance of their expiry date.  See [subscription](../resources/subscription.md) for individual expiry dates.
+Subscriptions expire after a length of time that varies by resource type. In order not to miss notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.
 
 ## Permissions
 
@@ -14,13 +14,15 @@ The following table lists the suggested permission needed for each resource. To 
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /subscriptions/{subscriptionId}
+PATCH /subscriptions/{id}
 ```
 
 ## Request headers
@@ -39,7 +41,7 @@ Here is an example of the request.
   "name": "update_subscription"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
+PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
 Content-type: application/json
 
 {
@@ -62,10 +64,12 @@ Content-length: 252
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource":"me/messages",
+  "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType":"created,updated",
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
+  "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
 

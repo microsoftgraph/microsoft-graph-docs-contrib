@@ -66,10 +66,10 @@ Content-length: 252
   "resource":"me/messages",
   "applicationId" : "string",
   "changeType":"created,updated",
-  "clientState":"subscription-identifier",
+  "clientState":"secretClientValue",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-  "creatorUserId": "string"
+  "creatorId": "string"
 }
 ```
 
