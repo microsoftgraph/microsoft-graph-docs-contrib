@@ -5,6 +5,7 @@
 Subscribes a listener application to receive notifications when data on a Microsoft Graph resource changes.
 
 ## Permissions
+
 Creating a subscription requires read permission to the resource for which the app will receive notifications. For example, to get notifications about Messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Resource type / Item        | Permission          |
@@ -16,19 +17,20 @@ Creating a subscription requires read permission to the resource for which the a
 | Groups                      | Group.Read.All      |
 | Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
-| Drives (Sharepoint shared content and drives) | Files.ReadWrite.All |
+| Drives (SharePoint shared content and drives) | Files.ReadWrite.All |
 
-***Note:*** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
+> **Note:** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /subscriptions
-
 ```
 
 ## Request headers
+
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
@@ -38,15 +40,18 @@ POST /subscriptions
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
-The *clientState* field is optional.
+The `clientState` field is optional.
 
 This sample request creates a subscription for notifications about new mail received by the currently signed in user.
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
@@ -73,12 +78,14 @@ The following are valid values for the resource property:
 |Drives|me/drive/root|
 
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -96,58 +103,11 @@ Content-length: 252
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
+
 ## Notification endpoint validation
-The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request; validation is required to make sure that subscriptions are not created pointing to invalid endpoints (e.g. due to misspelling of the `notificationUrl` in the subscription request).
 
-When your subscription creation request is being processed, Microsoft Graph sends a `POST` request back to your `notificationUrl` endpoint, for example:
-```http
-POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationToken=<token>
-```
-The notification endpoint must respond with status code 200, content type of `text/plain` and body equal to the `<token>` value. If the response is not received within 10 seconds, the original subscription creation request will be discarded.
-```http
-HTTP/1.1 200 OK
-Content-type: text/plain
-Content-length: 7
-<token>
-```
-## Receiving a notification
-When the subscribed resource changes, Microsoft Graph sends a notification to your notification endpoint. The endpoint must respond with status code of 200 or 204 (with no response body) within 30 seconds, otherwise the notification will be resent at exponentially increasing time intervals. Services that consistently take more than 30 seconds to respond may be throttled and receive a sparser notification set.
+The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](..\..\..\concepts\webhooks.md#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 
-You may also respond with the status code of 422, in which case your subscription will be automatically deleted and the stream of notifications will come to a halt.
-
-Below is an example of a notification payload. For some types of resources, an additional `resourceData` field may include additional information.
-
-```http
-{
-   "value":[
-      {
-         "subscriptionId":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
-         "subscriptionExpirationDateTime":"2015-11-20T18:23:45.9356913Z",
-         "clientState":"secretClientValue",
-         "changeType":"Created",
-         "resource":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",
-         "resourceData":{
-            "@odata.type":"#Microsoft.Graph.Message",
-            "@odata.id":"Users/ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4/messages/AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA=",
-            "@odata.etag":"W/\"CQAAABYAAACoeN6SYXGLRrvRm+CYrrfQAACvvGdb\"",
-            "Id":"AAMkADMxZmEzMDM1LTFjODQtNGVkMC04YzY3LTBjZTRlNDFjNGE4MwBGAAAAAAAr-q_ZG7oXSaqxum7oZW5RBwCoeN6SYXGLRrvRm_CYrrfQAAAAAAEMAACoeN6SYXGLRrvRm_CYrrfQAACvtMe6AAA="
-         }
-      }
-   ]
-}
-```
-
-Notifications from Drive subscriptions have a null value for the `resourceData` field; the [delta](driveitem_delta.md) API should be called to determine the changes that have occurred for this resource. Here is an example of a Drive notification:
-```http
-{
-  "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
-  "clientState": "secretClientValue",
-  "changeType": "updated",
-  "resource": "me/drive/root",
-  "subscriptionExpirationDateTime": "2016-08-26T23:08:37.00+00:00",
-  "resourceData": null
-}
-```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
