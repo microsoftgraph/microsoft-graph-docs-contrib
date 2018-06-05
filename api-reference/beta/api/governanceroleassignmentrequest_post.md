@@ -2,8 +2,9 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a role assignment request to represent the operation you want on a role assignment. The operations can be:
-| Operation       | type | 
+Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations.
+
+| Operation       | Type | 
 |:---------------|:----------|
 | Assign a role assignment| AdminAdd | |
 | Activate an eligible role assignment| UserAdd | 
@@ -15,9 +16,8 @@ Create a role assignment request to represent the operation you want on a role a
 | Request to renew my expired role assignment| UserRenew | 
 | Renew an expired role assignment| AdminRenew | 
 
-Detailed examples are shown below.
  
- ## Permissions
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions              |
@@ -33,7 +33,8 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
 ## Optional query parameters
-This method does **not** support [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters).
+This method does **not** support [OData query parameters](http://graph.microsoft.io/docs/overview/query_parameters).
+
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -45,19 +46,20 @@ In the request body, supply a JSON representation of [governanceRoleAssignmentRe
 
 | Property	   | Type	 |Required|  Description|
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Yes|The id of the resource.|
-|roleDefinitionId|String|Yes|The id of the role definition.|
-|subjectId|String|Yes|The id of the subject.|
+|resourceId|String|Yes|The ID of the resource.|
+|roleDefinitionId|String|Yes|The ID of the role definition.|
+|subjectId|String|Yes|The ID of the subject.|
 |assignmentState|String|Yes|The state of assignment. The value can be ``Eligible`` and ``Active``.|
-|type|String|Yes|The request type. The value can be `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`and `AdminExtend`;|
+|type|String|Yes|The request type. The value can be `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`and `AdminExtend`.|
 |reason|String| |The reason needs to be provided for the role assignment request for audit and review purpose.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)| | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required.|
 
 ### Response
-If successful, this method returns `201, Created` response code and [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.
+If successful, this method returns a `201, Created` response code and a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.
 
 ## Error codes
-This API follows the standard of HTTP codes. Besides, the custom error codes are shown below.
+This API follows the standard of HTTP codes, in addition to the error codes listed in the following table.
+
 |Error code     | Error message              | Details
 |:--------------------| :---------------------|:--------------------|
 | 400 BadRequest | RoleNotFound    | The `roleDefinitionId` provided in the request body cannot be found.
@@ -69,9 +71,9 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | The [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) does not meet internal policies and cannot be created.
 
 ## Example 1
-### Administrators assign user "nawu@fimdev.net" to role "Billing Reader"
+In this example, administrators assign user nawu@fimdev.net to the Billing Reader role.
 
- *Note: Besides the permission scope, it requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.* 
+ >**Note:** Besides the permission, this example requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource. 
 
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
@@ -156,7 +158,7 @@ Content-length: 226
 ```
 
 ## Example 2
-### User "nawu@fimdev.net" activates the eligible role "Billing Reader"
+In this example, the user nawu@fimdev.net activates the eligible Billing Reader role.
 
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
@@ -253,7 +255,7 @@ Content-type: application/json
 ```
 
 ## Example 3
-### User "nawu@fimdev.net" deactivates the active role "Billing Reader"
+In this example, the user nawu@fimdev.net deactivates the active Billing Reader role.
 
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
@@ -316,8 +318,10 @@ Content-length: 226
 ```
 
 ### Example 4
-#### Administrators remove user "nawu@fimdev.net" from role "Billing Reader"
- *Note: Besides the permission scope, it requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.* 
+In this example, administrators remove the user nawu@fimdev.net from the Billing Reader role.
+
+ >**Note:** Besides the permission scope, this example requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.
+ 
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|Yes|\<resourceId\>|
@@ -378,8 +382,9 @@ Content-length: 226
 ```
 
 ### Example 5
-#### Administrators update role assignment for user "nawu@fimdev.net" to role "Owner"
- *Note: Besides the permission scope, it requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.* 
+In this example, administrators update the role assignment for the user nawu@fimdev.net to Owner.
+
+ >**Note:** Besides the permission scope, this example requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource. 
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|Yes|\<resourceId\>|
@@ -458,8 +463,10 @@ Content-length: 226
 ```
 
 ### Example 6
-#### Extend expiring role assignment for user ANUJCUSER to role "API Management Service Contributor"
- *Note: Besides the permission scope, it requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.* 
+This example extends the expiring role assignment for user ANUJCUSER to API Management Service Contributor.
+
+ >**Note:** Besides the permission scope, this example requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.
+ 
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|Yes|\<resourceId\>|
