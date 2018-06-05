@@ -2,7 +2,7 @@
 
 Renew a subscription by extending its expiry time.
 
-Subscriptions to resources expire at dates proscribed by the individual resource types.  In order not to miss notifications, subscriptions should be renewed well in advance of their expiry date.  See [subscription](../resources/subscription.md) for individual expiry dates.
+Subscriptions expire after a length of time that varies by resource type. In order not to miss notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.
 
 ## Permissions
 
