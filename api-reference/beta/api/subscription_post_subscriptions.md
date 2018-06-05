@@ -2,10 +2,10 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
+Subscribes a listener application to receive notifications when data on a Microsoft Graph resource changes.
 
 ## Permissions
-Creating a subscription requires read permission to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Creating a subscription requires read permission to the resource for which the app will receive notifications. For example, to get notifications about Messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|
@@ -39,7 +39,10 @@ If successful, this method returns `201 Created` response code and a [subscripti
 
 ## Example
 ##### Request
-Here is an example of the request to send a notification when the user receives a new mail.
+In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
+The *clientState* field is optional.
+
+This sample request creates a subscription for notifications about new mail received by the currently signed in user.
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -56,11 +59,8 @@ Content-type: application/json
    "clientState": "secretClientValue"
 }
 ```
-In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
-The *clientState* field is optional.
 
-##### Resources examples
-The following are valid values for the resource property of the subscription:
+The following are valid values for the resource property:
 
 | Resource type | Examples |
 |:------ |:----- |
@@ -96,24 +96,26 @@ Content-length: 252
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
-## Subscription validation
-In order to to avoid mistaken subscriptions directing notifications to arbitrary URLs, the subscription notification endpoint must be capable of responding to a validation request. During processing of the `POST` to the `/subscriptions` endpoint, the Microsoft Graph will send a `POST` request back to your `notificationUrl` in the following form:
+## Notification endpoint validation
+The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request; validation is required to make sure that subscriptions are not created pointing to invalid endpoints (e.g. due to misspelling of the `notificationUrl` in the subscription request).
+
+When your subscription creation request is being processed, Microsoft Graph sends a `POST` request back to your `notificationUrl` endpoint, for example:
 ```http
 POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationToken=<token>
 ```
-The notification endpoint must send a 200 response with the value of `<token>` as its body and a content type of `text/plain`, as shown below, within 10 seconds otherwise the creation request will be discarded.
+The notification endpoint must respond with status code 200, content type of `text/plain` and body equal to the `<token>` value. If the response is not received within 10 seconds, the original subscription creation request will be discarded.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
 Content-length: 7
 <token>
 ```
-## Notification payload
-When the subscribed resource changes, the webhooks facility sends a notification to your notification URL with the following payload.  The notification endpoint must send a response of 200 or 204 with no response body within 30 seconds otherwise the notification attempt will be retried at exponentially increasing intervals.  Services that consistently take 30 seconds or more may be throttled and receive a sparser notification set.
+## Receiving a notification
+When the subscribed resource changes, Microsoft Graph sends a notification to your notification endpoint. The endpoint must respond with status code of 200 or 204 (with no response body) within 30 seconds, otherwise the notification will be resent at exponentially increasing time intervals. Services that consistently take more than 30 seconds to respond may be throttled and receive a sparser notification set.
 
-Services may also return a 422 response from a notification, in which case the subscription will be automatically deleted and the stream of notifications will come to a halt.
+You may also respond with the status code of 422, in which case your subscription will be automatically deleted and the stream of notifications will come to a halt.
 
-Depending on the subscribed resource, an additional resourceData field may provide additional information.
+Below is an example of a notification payload. For some types of resources, an additional `resourceData` field may include additional information.
 
 ```http
 {
@@ -134,7 +136,8 @@ Depending on the subscribed resource, an additional resourceData field may provi
    ]
 }
 ```
-When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](driveitem_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:
+
+Notifications from Drive subscriptions have a null value for the `resourceData` field; the [delta](driveitem_delta.md) API should be called to determine the changes that have occurred for this resource. Here is an example of a Drive notification:
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
