@@ -2,10 +2,10 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-An entity of `privilegedAccess` represents a group of functionalities provided by privileged Identity Management service.  Different instance of `privilegedAccess` represents different providers managed by PIM, for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources.
+Represents a group of functionalities provided by the Privileged Identity Management (PIM) service. Different instances of `privilegedAccess` represent different providers managed by PIM; for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources.
 
 
-`privilegedAccess` is read-only for now. No `POST`, `PUT`, `PATCH`, or `DELETE` on `privilegedAccess` entity set is supported.
+`privilegedAccess` is read-only for now. No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `privilegedAccess` entity set.
 
 ### Properties
 | Key | Property	| Type	    |Description|
