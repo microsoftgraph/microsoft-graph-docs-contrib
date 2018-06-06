@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a set of configurations on each role definition that needs to be evaluated against when role assignments created or modified. For examples, role settings may include "maximum assignment duration", "MFA required on activation", and etc.
+Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified. For example, role settings might include "maximum assignment duration", "MFA required on activation", and so on.
 
 ### Methods
 
