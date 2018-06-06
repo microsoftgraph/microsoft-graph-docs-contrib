@@ -4,15 +4,15 @@
 
 Represents the request for role assignment operations in Privilegd Identity Management.
 
-`governanceRoleAssignmentRequest` is a request-modeled entity used to manage the life cycle of role assignments. It represents the intention or decision of the users and administrators, and also provide flexibility to implement recurrent schduling, approval gates, and etc, comparing to directly expose `POST`, `PUT`, `DELETE` on `governanceRoleAssignment`.
+`governanceRoleAssignmentRequest` is a request-modeled entity used to manage the lifecycle of role assignments. It represents the intention or decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent schduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `governanceRoleAssignment`.
 
 ### Methods
 
 | Method		  |Return Type	|Description|
-|:---------------|:--------|:--------|:----------|
-|[Get](../api/governanceroleassignmentrequest_get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Get a role assignment request specified by id.  
+|:------------|:--------|:--------|
+|[Get](../api/governanceroleassignmentrequest_get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Get a role assignment request specified by ID.  
 |[List](../api/governanceroleassignmentrequest_list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)  collection|Get role assignment requests on a resource.|
-|[Create](../api/governanceroleassignmentrequest_post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Create a request to manage the life cycle of existing or new role assignment.|
+|[Create](../api/governanceroleassignmentrequest_post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Create a request to manage the lifecycle of existing or new role assignment.|
 |[Cancel](../api/governanceroleassignmentrequest_cancel.md)|  |Cancel a pending role assignment request.|
 |[UpdateRequest](../api/governanceroleassignmentrequest_updaterequest.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
 
