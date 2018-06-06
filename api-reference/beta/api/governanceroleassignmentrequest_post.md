@@ -1,15 +1,15 @@
-# Post governanceRoleAssignmentRequest
+# Create governanceRoleAssignmentRequest
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a role assignment request to represent the operation you want on a role assignment. The operations can be:
 | Operation       | type | 
 |:---------------|:----------|
-| Assign a role assignment| AdminAdd | |
+| Assign a role assignment| AdminAdd |
 | Activate an eligible role assignment| UserAdd | 
 | Deactivate an activated role assignment| UserRemove | 
-| Remove a role assignment| AdminRemove | |
-| Update a role assignment| AdminUpdate | |
+| Remove a role assignment| AdminRemove |
+| Update a role assignment| AdminUpdate |
 | Request to extend my role assignment| UserExtend | 
 | Extend a role assignment| AdminExtend | 
 | Request to renew my expired role assignment| UserRenew | 
