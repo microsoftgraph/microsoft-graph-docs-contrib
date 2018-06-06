@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
+Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -15,27 +15,30 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-1.  List a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) on a resource
+List a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) on a resource.
     
-    *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
+>**Note:** Besides the permission scope, the request requires the requestor to have at least one role assignment on the resource.
+
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-2. List a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) of mine
+List a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) of mine.
+
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-3. List a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) that are pending for administrator decisions
+List a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) that are pending administrator decisions.
     
-    *Note: Besides the permission scope, it requires the requestor to have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.* 
+>**Note:** Besides the permission scope, this request requires the requestor to have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
+
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData query parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -53,14 +56,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-Administrators query pending role assignment requests for subscription "Wingtip Toys - Prod"
+Administrators query pending role assignment requests for subscription Wingtip Toys - Prod.
 ##### Request
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
