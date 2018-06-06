@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents the schedule for a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . For a role assignment request, schedule controls when to perform the role assignment operation, when to stop the role assignment, and how frequent to do the role assignment operation for the recurrent scenario. 
+Represents the schedule for a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). For a role assignment request, the schedule controls when to perform the role assignment operation, when to stop the role assignment, and how frequently to do the role assignment operation. 
 
 
 
