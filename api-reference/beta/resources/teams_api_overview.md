@@ -28,7 +28,7 @@ the change will not be reflected until an hour after one of them logs in.
 
 The beta endpoint is faster -- under a minute in most cases,
 regardless of whether the user is logged in or not.
-Here's the beta APIs to use:
+Here are the beta APIs to use:
 
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
