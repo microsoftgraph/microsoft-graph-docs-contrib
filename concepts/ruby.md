@@ -19,7 +19,7 @@ To get started, you'll need:
 - Rails framework (the sample has been tested on Rails 4.2).
 - Bundler dependency manager.
 - Rack web server interface for Ruby.
-- A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
+- A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - The Microsoft Graph Connect Starter Project for Ruby on Rails. Download the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample). The starter project is located in the _starter_ folder.
 
 
@@ -285,7 +285,7 @@ Finally, the code uses the HTTP response code returned to notify the user whethe
 3. Go to `http://localhost:3000` in your web browser.
 
 ## See also
-- Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).
+- Try out the REST API using the [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore our other [Microsoft Graph samples](https://github.com/microsoftgraph) on GitHub.
 
 

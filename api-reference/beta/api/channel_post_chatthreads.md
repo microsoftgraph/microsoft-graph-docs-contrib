@@ -1,17 +1,24 @@
 # Create chat thread
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Create a new chat thread in the specified channel by supplying the root messages.
 
-## Prerequisites
-The following **scopes** are required to execute this API:
-*Group.ReadWrite.All*
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-> Currrently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+> Currently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/channels/{id}/threads
+POST /groups/{id}/team/channels/{id}/chatthreads
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -22,7 +29,8 @@ POST /groups/{id}/channels/{id}/threads
 In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.
 
 ## Response
-If successful, this method returns `204, No content` response code with an empty reponse body.
+
+If successful, this method returns `204 No Content` response code with an empty reponse body.
 
 ## Example
 ##### Request
@@ -32,7 +40,7 @@ Here is an example of the request.
   "name": "create_chatthread_from_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/channels/{id}/chatthreads
+POST https://graph.microsoft.com/beta/groups/{id}/team/channels/{id}/chatthreads
 Content-type: application/json
 
 {

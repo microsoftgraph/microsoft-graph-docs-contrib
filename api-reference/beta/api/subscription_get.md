@@ -1,42 +1,75 @@
 # Get subscription
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve the properties and relationships of a subscription.
-## Prerequisites
-One of the following **scopes**, depending on the target resource, are required to execute this API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite*, or *Files.ReadWrite.All*
+
+## Permissions
+
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+| Resource type / Item        | Permission          |
+|-----------------------------|---------------------|
+| Contacts                    | Contacts.Read       |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
+| Drive  (User's OneDrive)    | Files.ReadWrite     |
+| Drives (SharePoint shared content and drives) | Files.ReadWrite.All |
+
+***Note:*** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /subscriptions/{id}
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 
 ## Request headers
+
 | Name       | Type | Description|
-|:-----------|:------|:----------|
+|:-----------|:-----|:-----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
+
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_subscription"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
+
 ##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "microsoft.graph.subscription"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -45,10 +78,12 @@ Content-length: 252
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource":"me/messages",
+  "applicationId" : "string",
   "changeType":"created,updated",
-  "clientState":"subscription-identifier",
+  "clientState":"secretClientValue",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "expirationDateTime":"2016-11-20T18:23:45.9356913Z"
+  "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
+  "creatorId": "string"
 }
 ```
 

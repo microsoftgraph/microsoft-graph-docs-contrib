@@ -55,7 +55,7 @@ See the [example](#example-to-synchronize-events-in-a-calendar-view) below to le
 ### Optional request header
 
 Each delta query GET request returns a collection of one or more events in the response. You can optionally specify 
-the request header, _Prefer: odata.maxpagesize={x}_, to set the maximum number of events in a response.
+the request header, `Prefer: odata.maxpagesize={x}`, to set the maximum number of events in a response.
 
 
 ## Example to synchronize events in a calendar view
@@ -133,8 +133,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },      
             "id":"AAMkADNVxRAAA="
@@ -160,8 +160,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxSAAA="
@@ -224,8 +224,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxTAAA="
@@ -251,8 +251,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxUAAA="
@@ -321,8 +321,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADj1HuAAA="
@@ -364,6 +364,13 @@ Content-type: application/json
     "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
+            "@odata.type": "#microsoft.graph.event",
+            "id": "AAMkADk0MGFkODE3LWE4MmYtNDRhOS04OGQLkRkXbBznTvAADb6ytyAAA=",
+            "@removed": {
+                "reason": "deleted"
+            }
+        },
+        {
             "@odata.type":"#microsoft.graph.event",
             "@odata.etag":"W/\"EZ9r3czxY0m2jz8c45czkwAALZu97w==\"",
             "subject":"Attend service",
@@ -399,8 +406,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADj1HvAAA="

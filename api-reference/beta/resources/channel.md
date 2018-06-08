@@ -1,5 +1,7 @@
 # channel resource type
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 A channel is a collection of [chatThreads](chatthread.md) within a Microsoft Team.  A channel represents a topic, and therefore a logical isolation of discussion, within a Team. Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" channel.
 
 
@@ -8,9 +10,11 @@ A channel is a collection of [chatThreads](chatthread.md) within a Microsoft Tea
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List channels](../api/group_list_channels.md) | [channel](channel.md) collection | Get the list of channels in this team.|
-|[Create](../api/group_post_channels.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
+|[Create channel](../api/group_post_channels.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
 |[Get channel](../api/channel_get.md) | [channel](channel.md) | Read properties and relationships of channel object.|
+|[Delete channel](../api/channel_delete.md) | None | Delete a channel.|
 |[Create chat thread](../api/channel_post_chatthreads.md) | [chatThread](chatthread.md) collection| Create a chat thread in the specified channel.|
+
 
 > Future beta API releases will support updating and deleting channels, and reading existing chat threads in a channel.
 

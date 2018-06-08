@@ -1,35 +1,53 @@
 # message: send
 
-Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or
 a forward draft. The message is then saved in the Sent Items folder.
 
-## Prerequisites
-One of the following **scopes** is required to execute this API:
-*Mail.Send*
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Send    |
+|Delegated (personal Microsoft account) | Mail.Send    |
+|Application | Mail.Send |
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/send
 POST /users/{id | userPrincipalName}/messages/{id}/send
 ```
+
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+| Content-Length | number | 0. Required. |
 
 ## Request body
 
 ## Response
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
+
 Here is an example of how to call this API.
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "message_send"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/messages/{id}/send
 ```
@@ -41,6 +59,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```

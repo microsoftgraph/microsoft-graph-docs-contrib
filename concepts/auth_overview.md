@@ -4,6 +4,8 @@ To call Microsoft Graph, your app must acquire an access token from Azure Active
 
 This topic provides an overview of access tokens, Azure AD, and how your app can get access tokens. If you are already familiar with integrating an app with Azure AD to get tokens, then you can skip ahead to [Next Steps](#next-steps) for information and samples specific to Microsoft Graph. 
 
+> **Important:**  How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+
 ## What is an access token and how do I use it?
 
 Access tokens issued by Azure AD are base 64 encoded JSON Web Tokens (JWT). They contain information (claims) that web APIs secured by Azure AD, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque. You should always transmit access tokens over a secure channel, such as transport layer security (HTTPS).
@@ -12,7 +14,7 @@ Here's an example of an Azure AD access token:
 
 `EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/oeJX6U8nnL9nJ5pHLVuPWD0aNnTPTJD8Y4oQTp5zLhDIIfaJCaGcQperULVF7K6yX8MhHxIBwek418rKIp11om0SWBXOYSGOM0rNNN59qNiKwLNK+MPUf7ObcRBN5I5vg8jB7IMoz66jrNmT2uiWCyI8MmYDZgAACPoaZ9REyqke+AE1/x1ZX0w7OamUexKF8YGZiw+cDpT/BP1GsONnwI4a8M7HsBtDgZPRd6/Hfqlq3HE2xLuhYX8bAc1MUr0gP9KuH6HDQNlIV4KaRZWxyRo1wmKHOF5G5wTHrtxg8tnXylMc1PKOtaXIU4JJZ1l4x/7FwhPmg9M86PBPWr5zwUj2CVXC7wWlL/6M89Mlh8yXESMO3AIuAmEMKjqauPrgi9hAdI2oqnLZWCRL9gcHBida1y0DTXQhcwMv1ORrk65VFHtVgYAegrxu3NDoJiDyVaPZxDwTYRGjPII3va8GALAMVy5xou2ikzRvJjW7Gm3XoaqJCTCExN4m5i/Dqc81Gr4uT7OaeypYTUjnwCh7aMhsOTDJehefzjXhlkn//2eik+NivKx/BTJBEdT6MR97Wh/ns/VcK7QTmbjwbU2cwLngT7Ylq+uzhx54R9JMaSLhnw+/nIrcVkG77Hi3neShKeZmnl5DC9PuwIbtNvVge3Q+V0ws2zsL3z7ndz4tTMYFdvR/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==`
 
-To call Microsoft Graph, you attach the access token as a Bearer token to the Authorization header in an HTML request. For example, here's a call that returns the profile information of the signed-in user (the access token has been truncated for readability):
+To call Microsoft Graph, you attach the access token as a Bearer token to the Authorization header in an HTTP request. For example, here's a call that returns the profile information of the signed-in user (the access token has been truncated for readability):
 
 ```
 HTTP/1.1
@@ -68,18 +70,18 @@ You can call Microsoft Graph from the following kinds of apps:
 - **Web apps**: Apps that run on a server and interact with the signed-in user through a user-agent, usually a web browser. Most of the presentation layer is handled on the server, and calls to Microsoft Graph are made from the server-side on behalf of a user.
 - **Single Page Apps (SPA)**: Web apps with rich user experiences that handle much of the presentation layer through client-side scripting in the browser. Calls to Microsoft Graph are made from client-side script using technologies like AJAX and frameworks like Angular.js. Calls are made on behalf of a user.
 - **Background Services/Daemons**: Background services and daemons that run on a server without the presence of a user and make calls to Microsoft Graph under their own identity.
-- **Web APIs**: A client app calls a web API (secured by Azure AD), which then calls Microsoft Graph, all on behalf of a user. Supported by the Azure AD endpoint. For the Azure AD v2.0 endpoint, only supported if the client and the web API have the same Application Id; for example, a native app that calls a web API back end. 
+- **Web APIs**: A client app calls a web API (secured by Azure AD), which then calls Microsoft Graph, all on behalf of a user. Supported by the Azure AD endpoint. For the Azure AD v2.0 endpoint, only supported if the client and the web API have the same Application ID; for example, a native app that calls a web API back end. 
 
 ## How do I get my app talking to Azure AD and Microsoft Graph?
 Before your app can get a token from Azure AD, it must be registered. For the Azure AD v2.0 endpoint, you use the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) to register your app. For the Azure AD endpoint, you use the [Azure portal](https://portal.azure.com/). Registration integrates your app with Azure AD and establishes the coordinates and identifiers that it uses to get tokens. These are:
 
-- **Application Id**: A unique identifier assigned by Azure AD. 
+- **Application ID**: A unique identifier assigned by Azure AD. 
 - **Redirect URI/URL**: One or more endpoints at which your app will receive responses from Azure AD. (For native and mobile apps this is a URI assigned by Azure AD.)
 - **Application Secret**: A password or a public/private key pair that your app uses to authenticate with Azure AD. (Not needed for native or mobile apps.)
 
 For apps that use the Azure AD endpoint, you'll also pre-configure the Microsoft Graph permissions that your app needs during registration. For apps that use the Azure AD v2.0 endpoint, you may or may not need to pre-configure permissions. 
 
-The properties configured during registration are used on the wire. For example, in the following token request: *client_id* is the *Application Id*, *redirect_uri* is one of your app's registered *Redirect URIs*, and *client_secret* is the *Application Secret*. 
+The properties configured during registration are used on the wire. For example, in the following token request: *client_id* is the *Application ID*, *redirect_uri* is one of your app's registered *Redirect URIs*, and *client_secret* is the *Application Secret*. 
 
 ```
 // Line breaks for legibility only
@@ -125,7 +127,7 @@ The main difference between Azure AD and Azure AD v2.0 is that:
 
 There are some additional advantages with Azure AD v2.0. For example:
 
-* Your app can use a single Application Id for multiple platforms. This simplifies app management for both developers and administrators.
+* Your app can use a single Application ID for multiple platforms. This simplifies app management for both developers and administrators.
 * [Support for dynamic and incremental consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent). With this feature your app can request additional permissions during runtime, pairing the request for the user's consent  with the functionality that requires it. This provides a much more comfortable experience for users than having to consent to a long list of permissions when they sign-in for the first time.  
 
 Because Azure AD v2.0 is newer than Azure AD and features are still being added, there are some limitations with the v2.0 endpoint that you need to factor into your decision. For example:
