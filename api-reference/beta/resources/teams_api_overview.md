@@ -20,8 +20,9 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 ## Membership changes in Microsoft Teams
 
 When adding or removing members to a team using the Graph v1.0 endpoint, 
-it can take up to an hour for the membership change to show up in the Teams application.
-If the user is not logged into the Teams application, it will take an hour after they log in.
+it can take up to an hour for the membership change to show up in the Teams application or web site.
+If no current or future team members are logged into the Teams application or web site, 
+the change will happen within an hour of when one of them logs in.
 
 The beta endpoint is faster -- under a minute in most cases,
 regardless of whether the user is logged in or not.
