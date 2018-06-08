@@ -21,7 +21,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 When adding or removing members to a team using the Graph v1.0 endpoint, 
 there is a delay before the membership changes are reflected in the Teams application/web site.
-If a current or future team member or owner is logged into the Teams application/web site,
+If a current team member or owner is logged into the Teams application/web site,
 the change will be reflected within an hour.
 If none of those users are logged into the Teams application/web site,
 the change will not be reflected until an hour after one of them logs in.
