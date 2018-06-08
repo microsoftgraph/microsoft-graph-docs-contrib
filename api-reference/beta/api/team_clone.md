@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of [team](../resources/team.md
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorySetting.md) value, based on the [template definition](directorySettingTemplate.md). If classification is not specified, the classification will be copied from the original team/group.|
+|classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](../resources/directorySetting.md) value, based on the [template definition](../resources/directorySettingTemplate.md). If classification is not specified, the classification will be copied from the original team/group.|
 |description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |mailNickname|String (optional)|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName.|
