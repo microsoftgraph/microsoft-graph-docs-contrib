@@ -31,7 +31,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If unarchiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsAsyncOperation.md) that was created to handle unarchiving of the team. Check the status of the unarchiving operation by making a GET request to this location.
+If unarchiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the team. Check the status of the unarchiving operation by making a GET request to this location.
 
 ## Example
 #### Request

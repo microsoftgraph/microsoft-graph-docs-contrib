@@ -40,7 +40,7 @@ This optional parameter defines whether to set permissions for team members to r
 
 ## Response
 
-If archiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsAsyncOperation.md) that was created to handle archiving of the team. Check the status of the archiving operation by making a GET request to this location.
+If archiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the team. Check the status of the archiving operation by making a GET request to this location.
 
 ## Example
 #### Request
