@@ -27,11 +27,11 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
+In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [Contact](../resources/contact.md) object in the response body.
+If successful, this method returns `201 Created` response code and [contact](../resources/contact.md) object in the response body.
 
 ## Example
 ##### Request
@@ -50,7 +50,14 @@ Content-type: application/json
   "emailAddresses": [
     {
       "address": "pavelb@fabrikam.onmicrosoft.com",
-      "name": "Pavel Bansky"
+      "name": "Pavel Bansky",
+      "type": "personal"
+    },
+    {
+      "address": "pavelb@fabrikam.onmicrosoft.com",
+      "name": "Pavel Bansky",
+      "type": "other",
+      "otherLabel": "Volunteer work"
     }
   ],
   "phones" : [

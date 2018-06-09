@@ -128,7 +128,13 @@ Content-length: 1977
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com"
+      "address": "garth@a830edad9050849NDA1.onmicrosoft.com",
+      "type": "unknown"
+    },
+    {
+      "name": "Garth",
+      "address": "garth@contoso.onmicrosoft.com",
+      "type": "personal"
     }
   ],
   "imAddresses": [

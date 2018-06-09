@@ -48,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 |companyName|String|The name of the contact's company.|
 |department|String|The contact's department.|
 |displayName|String|The contact's display name.|
-|emailAddresses|[EmailAddress](../resources/emailaddress.md) collection|The contact's email addresses.|
+|emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
 |gender |String |The contact's gender. |
 |generation|String|The contact's generation.|
@@ -140,7 +140,13 @@ Content-length: 1977
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com"
+      "address": "garth@a830edad9050849NDA1.onmicrosoft.com",
+      "type": "unknown"
+    },
+    {
+      "name": "Garth",
+      "address": "garth@contoso.onmicrosoft.com",
+      "type": "personal"
     }
   ],
   "imAddresses": [
