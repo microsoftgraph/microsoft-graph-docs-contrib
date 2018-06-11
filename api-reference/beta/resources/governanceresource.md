@@ -5,7 +5,7 @@
 Represents resources that could be managed by Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, a SQL database, etc.
 
 
-### Methods
+## Methods
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:----------|
@@ -14,7 +14,7 @@ Represents resources that could be managed by Privileged Identity Management (PI
 
 No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `resources` entity set for now.
 
-### Properties
+## Properties
 | Key | Property	        |Type	      |Description|
 |:----|:------------------|:----------|:----------|
 |✓    |id                 |String     |The id of the resource. It is in GUID format.|
@@ -27,7 +27,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `resources` entity set for 
 |     |roleDefinitionCount|Int32      |Optional. The number of role definitions for the given resource. To get the property, please explictly use `$select=roleDefinitionCount` in the query.|
 |     |permissions|[governancePermission](../resources/governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource.To get the property, please explictly use `$select=permissions` in the query.|
 
-### Relationships
+## Relationships
 | Relationship   | Type	                                        |Description|
 |:---------------|:---------------------------------------------|:----------|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) collection|The collection of role assignments for the resource.|
@@ -36,7 +36,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `resources` entity set for 
 |roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md) collection|The collection of role settings for the resource.|
 |parent          |[governanceResource](../resources/governanceresource.md)           |Read-only. The parent resource. for `pimforazurerbac` scenario, it can represent the subscription the resource belongs to.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

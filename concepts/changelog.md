@@ -4,6 +4,28 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## June 2018
+
+### Privileged Identity Management APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [privilegedAccess](../api-reference/beta/resources/privilegedaccess.md) entity|
+| Addition | beta | Added the [governanceResource](../api-reference/beta/resources/governanceresource.md) entity, and methods and actions below: <br> [List](../api-reference/beta/api/governanceresource_list.md) <br> [Get](../api-reference/beta/api/governanceresource_get.md)<br>|
+| Addition | beta | Added the [governanceSubject](../api-reference/beta/resources/governancesubject.md) entity|
+| Addition | beta | Added the [governanceSubject](../api-reference/beta/resources/governancesubject.md) entity|
+| Addition | beta | Added the [governanceRoleDefinition](../api-reference/beta/resources/governanceroledefinition.md) entity, and methods and actions below:<br> [List](../api-reference/beta/api/governanceroledefinition_list.md) <br> [Get](../api-reference/beta/api/governanceroledefinition_get.md) |
+| Addition | beta | Added the [governanceRoleAssignment](../api-reference/beta/resources/governanceroleassignment.md) entity, and methods and actions below:<br> [List](../api-reference/beta/api/governanceroleassignment_list.md) <br> [Get](../api-reference/beta/api/governanceroleassignment_get.md) <br> [Export](../api-reference/beta/api/governanceroleassignment_export.md) |
+| Addition | beta | Added the [governanceRoleAssignmentRequest](../api-reference/beta/resources/governanceroleassignmentrequest.md) entity, and methods and actions below:<br> [List](../api-reference/beta/api/governanceroleassignmentrequest_list.md) <br> [Get](../api-reference/beta/api/governanceroleassignmentrequest_get.md) <br> [Create](../api-reference/beta/api/governanceroleassignmentrequest_post.md) <br> [Cancel](../api-reference/beta/api/governanceroleassignmentrequest_cancel.md) <br> [Update](../api-reference/beta/api/governanceroleassignmentrequest_update.md) |
+| Addition | beta | Added the [governanceRoleSetting](../api-reference/beta/resources/governancerolesetting.md) entity, and methods and actions below:<br> [List](../api-reference/beta/api/governancerolesetting_list.md) <br> [Get](../api-reference/beta/api/governancerolesetting_get.md) <br> [Update](../api-reference/beta/api/governancerolesetting_update.md) |
+| Addition | beta | Added the complex types below: <br> [governancePermission](../api-reference/beta/resources/governancepermission.md) <br> [governanceRoleAssignmentRequestStatus](../api-reference/beta/resources/governanceroleassignmentrequeststatus.md) <br> [governanceRuleSetting](../api-reference/beta/resources/governancerulesetting.md) <br> [governanceSchedule](../api-reference/beta/resources/governanceschedule.md)|
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) function to the [directory](../api-reference/beta/resources/directory.md) resource to list the deleted groups owned by a given user. |
+
 ## May 2018
 
 ### Directory APIs

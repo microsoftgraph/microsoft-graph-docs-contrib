@@ -14,7 +14,7 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |[List](../api/governanceroleassignmentrequest_list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)  collection|Get role assignment requests on a resource.|
 |[Create](../api/governanceroleassignmentrequest_post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Create a request to manage the lifecycle of existing or new role assignment.|
 |[Cancel](../api/governanceroleassignmentrequest_cancel.md)|  |Cancel a pending role assignment request.|
-|[UpdateRequest](../api/governanceroleassignmentrequest_updaterequest.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
+|[Update](../api/governanceroleassignmentrequest_update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
 
 ## Properties
 | Key | Property	                | Type	        |Required|Description|
