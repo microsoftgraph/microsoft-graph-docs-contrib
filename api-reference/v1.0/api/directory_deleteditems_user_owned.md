@@ -2,7 +2,7 @@
 
 Retrieves a list of recently deleted items owned by the specified user.  
 
-Currently, delete items functionality is supported only for [group](../resources/group.md) resources owned by the user.
+Currently, list deleted items functionality is supported only for [group](../resources/group.md) resources owned by the user.
 
 This is a service action, which means it does not support pagination.  The API returns up to 1,000 deleted objects owned by the user, sorted by ID.
 
@@ -35,13 +35,21 @@ POST /directory/deletedItems/getUserOwnedObjects
 ```json
 {
   "userId":"{id}",
-  "type":"group"
+  "type":"Group"
 }
 ```
 
+The request body supports the following optional parameters:
+
+| Parameter    | Type |Description|
+|:---------------|:--------|:----------|
+|userId|String|ID of the owner.|
+|type|String|Type of owned objects to return; `Group` is currently the only supported value.|
+
+
 ## Response
 
-Sucessful requests return `200 OK` response codes; the response object includes [directory (deleted items)](../resources/directory.md) properties.
+Successful requests return `200 OK` response codes; the response object includes [directory (deleted items)](../resources/directory.md) properties.
 
 ## Example
 
@@ -56,7 +64,7 @@ Content-type: application/json
 
 ``` json
 {
-  "userId":"{id}",
+  "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
   "type":"group"
 }
 ```
@@ -75,8 +83,8 @@ Content-length: 1249
 "value": [
           {
               "@odata.type": "#microsoft.graph.group",
-              "id": "",
-              "deletedDateTime": null,
+              "id": "55ac777c-109e-4022-b58c-470c8fcb6892",
+              "deletedDateTime": 2018-04-01T12:39:16Z,
               "classification": null,
               "createdDateTime": "2017-03-22T12:39:16Z",
               "description": null,
