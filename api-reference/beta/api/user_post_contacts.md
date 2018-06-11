@@ -25,6 +25,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
+| Prefer | exchange.behavior=ContactTypedEmailAddressProperty |
 
 ## Request body
 In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
@@ -43,13 +44,14 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/contacts
 Content-type: application/json
+Prefer: exchange.behavior=ContactTypedEmailAddressProperty
 
 {
   "givenName": "Pavel",
   "surname": "Bansky",
   "emailAddresses": [
     {
-      "address": "pavelb@fabrikam.onmicrosoft.com",
+      "address": "pavelb@contoso.onmicrosoft.com",
       "name": "Pavel Bansky",
       "type": "personal"
     },
@@ -82,10 +84,74 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "createdDateTime": "2015-11-09T02:14:32Z",
-  "lastModifiedDateTime": "2015-11-09T02:14:32Z",
-   "displayName": "Pavel Bansky"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('c3e1fcd2-db78-42a8-aec5-1f2cd59abb5c')/contacts/$entity",
+    "@odata.etag":"W/\"EQAAABYAAACv7At+UNVFRLhGciJGF6v5AAAve7fW\"",
+    "id":"AAMkADh6v5AAAvgTCEAAA=",
+    "createdDateTime":"2018-06-11T19:56:07Z",
+    "lastModifiedDateTime":"2018-06-11T19:56:07Z",
+    "changeKey":"EQAAABYAAACv7At+UNVFRLhGciJGF6v5AAAve7fW",
+    "categories":[
+
+    ],
+    "parentFolderId":"AAMkADh6v5AAAAAAEOAAA=",
+    "birthday":null,
+    "fileAs":"",
+    "displayName":"Pavel Bansky",
+    "givenName":"Pavel",
+    "initials":null,
+    "middleName":null,
+    "nickName":null,
+    "surname":"Bansky",
+    "title":null,
+    "yomiGivenName":null,
+    "yomiSurname":null,
+    "yomiCompanyName":null,
+    "generation":null,
+    "imAddresses":[
+
+    ],
+    "jobTitle":null,
+    "companyName":null,
+    "department":null,
+    "officeLocation":null,
+    "profession":null,
+    "assistantName":null,
+    "manager":null,
+    "spouseName":null,
+    "personalNotes":"",
+    "children":[
+
+    ],
+    "gender":null,
+    "isFavorite":null,
+    "emailAddresses":[
+        {
+            "type":"personal",
+            "name":"Pavel Bansky",
+            "address":"pavelb@contoso.onmicrosoft.com"
+        },
+        {
+            "otherLabel": "Volunteer work",
+            "type":"other",
+            "name":"Pavel Bansky",
+            "address":"pavelb@fabrikam.onmicrosoft.com"
+        }
+    ],
+    "websites":[
+
+    ],
+    "phones":[
+        {
+            "type":"business",
+            "number":"+1 732 555 0102"
+        }
+    ],
+    "postalAddresses":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
+    }
 }
 ```
 

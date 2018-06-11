@@ -35,6 +35,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
+| Prefer | exchange.behavior=ContactTypedEmailAddressProperty |
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
@@ -82,27 +83,30 @@ add, update, or delete your own app-specific data in custom properties of an ext
 If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example updates the personal email address of the specified contact.
 <!-- {
   "blockType": "request",
   "name": "update_contact"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/contacts/{id}
+PATCH https://graph.microsoft.com/beta/me/contacts/AAMkADh6v5AAAvgTCEAAA=
 Content-type: application/json
-Content-length: 1977
+Prefer: exchange.behavior=ContactTypedEmailAddressProperty
 
 {
-  "postalAddresses": [{
-    "type": "business",
-    "postOfficeBox": "P.O. Box 100",
-    "street": "123 Some street",
-    "city": "Seattle",
-    "state": "WA",
-    "countryOrRegion": "USA",
-    "postalCode": "98121"
-  }],
-  "birthday": "1974-07-22"
+    "emailAddresses":[
+        {
+            "type":"personal",
+            "name":"Pavel Bansky",
+            "address":"pavelb@adatum.onmicrosoft.com"
+        },
+        {
+          "address": "pavelb@fabrikam.onmicrosoft.com",
+          "name": "Pavel Bansky",
+          "type": "other",
+          "otherLabel": "Volunteer work"
+        }
+    ]
 }
 ```
 ##### Response
@@ -115,73 +119,76 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1977
 
 {
-  "id": "AAMkAGI2THk0AAA=",
-  "createdDateTime": "2014-10-19T23:08:24Z",
-  "lastModifiedDateTime": "2014-10-19T23:08:24Z",
-  "changeKey": "EQAAABYAAACd9nJ/tVysQos2hTfspaWRAAADTIa4",
-  "categories": [],
-  "parentFolderId": "AAMkAGI2AAEOAAA=",
-  "birthday": "1974-07-22",
-  "fileAs": "Fort, Garth",
-  "displayName": "Garth Fort",
-  "givenName": "Garth",
-  "initials": "G.F.",
-  "middleName": null,
-  "nickName": "Garth",
-  "surname": "Fort",
-  "title": null,
-  "yomiGivenName": null,
-  "yomiSurname": null,
-  "yomiCompanyName": null,
-  "generation": null,
-  "emailAddresses": [
-    {
-      "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com",
-      "type": "unknown"
-    },
-    {
-      "name": "Garth",
-      "address": "garth@contoso.onmicrosoft.com",
-      "type": "personal"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('c3e1fcd2-db78-42a8-aec5-1f2cd59abb5c')/contacts/$entity",
+    "@odata.etag":"W/\"EQAAABYAAACv7At+UNVFRLhGciJGF6v5AAAve7fh\"",
+    "id":"AAMkADh6v5AAAvgTCEAAA=",
+    "createdDateTime":"2018-06-11T19:56:07Z",
+    "lastModifiedDateTime":"2018-06-11T20:26:23Z",
+    "changeKey":"EQAAABYAAACv7At+UNVFRLhGciJGF6v5AAAve7fh",
+    "categories":[
+
+    ],
+    "parentFolderId":"AAMkADh6v5AAAAAAEOAAA=",
+    "birthday":null,
+    "fileAs":"",
+    "displayName":"Pavel Bansky",
+    "givenName":"Pavel",
+    "initials":null,
+    "middleName":null,
+    "nickName":null,
+    "surname":"Bansky",
+    "title":null,
+    "yomiGivenName":null,
+    "yomiSurname":null,
+    "yomiCompanyName":null,
+    "generation":null,
+    "imAddresses":[
+
+    ],
+    "jobTitle":null,
+    "companyName":null,
+    "department":null,
+    "officeLocation":null,
+    "profession":null,
+    "assistantName":null,
+    "manager":null,
+    "spouseName":null,
+    "personalNotes":"",
+    "children":[
+
+    ],
+    "gender":null,
+    "isFavorite":null,
+    "emailAddresses":[
+        {
+            "type":"personal",
+            "name":"Pavel Bansky",
+            "address":"pavelb@adatum.onmicrosoft.com"
+        },
+        {
+            "type":"other",
+            "otherLabel":"Volunteer work",
+            "name":"Pavel Bansky",
+            "address":"pavelb@fabrikam.onmicrosoft.com"
+        }
+    ],
+    "websites":[
+
+    ],
+    "phones":[
+        {
+            "type":"business",
+            "number":"+1 732 555 0102"
+        }
+    ],
+    "postalAddresses":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
     }
-  ],
-  "imAddresses": [
-    "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
-  ],
-  "jobTitle": "Web Marketing Manager",
-  "companyName": "Contoso, Inc.",
-  "department": "Sales & Marketing",
-  "officeLocation": "20/1101",
-  "profession": null,
-  "assistantName": null,
-  "manager": null,
-  "phones": [{
-    "type": "business",
-    "number": "+1 918 555 0101"
-  }],
-  "postalAddresses": [{
-    "type": "business",
-    "postOfficeBox": "P.O. Box 100",
-    "street": "123 Some street",
-    "city": "Seattle",
-    "state": "WA",
-    "countryOrRegion": "USA",
-    "postalCode": "98121"
-  }],
-  "spouseName": null,
-  "personalNotes": null,
-  "children": [], 
-  "gender": null,
-  "websites": [{
-      "type": "work",
-      "address": "http://www.contoso.com",
-      "name": "Contoso"
-  }],
-  "weddingAnniversary": null
 }
 ```
 
